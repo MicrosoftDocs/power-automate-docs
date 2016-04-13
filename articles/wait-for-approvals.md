@@ -4,7 +4,7 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="stepsic-microsoft-com"
+    authors="merwanhade"
     manager="dwrede"
     editor=""
     tags=""/>
@@ -16,7 +16,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/08/2016"
-   ms.author="stepsic"/>
+   ms.author="mhade"/>
 
 # Wait for approval in a flow #
 
