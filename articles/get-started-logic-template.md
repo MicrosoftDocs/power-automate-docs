@@ -1,11 +1,11 @@
 <properties
-    pageTitle="Create flows from a template | Microsoft Flow"
-    description="Create flows from any of several built-in templates."
+    pageTitle="Create a flow from a template | Microsoft Flow"
+    description="Create a flow from any of several built-in templates."
     services=""
     suite="flow"
     documentationCenter="na"
     authors="aftowen"
-    manager="dwrede"
+    manager="erikre"
     editor=""
     tags=""
  />
@@ -17,12 +17,12 @@
     ms.tgt_pltfrm="na"
     ms.workload="na"
    ms.date="04/08/2016"
-   ms.author="aftowen"/>
+   ms.author="anneta"/>
 
-# Create a flow from a template #
+# Create a flow from a template in Microsoft Flow #
 Create a flow from one of many built-in templates that can, for example, send you an email message when anyone sends a tweet that includes a particular keyword.
 
-**Note:** [Create a flow from scratch](get-started-logic-flow.md) if you want to start from a blank canvas.
+**Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
 **Prerequisites**
 
