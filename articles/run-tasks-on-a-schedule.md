@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="stepsic-microsoft-com"
-    manager="dwrede"
+    manager="erikre"
     editor=""
     tags=""/>
 
@@ -15,16 +15,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/08/2016"
+   ms.date="04/15/2016"
    ms.author="stepsic"/>
 
 # Run flows on a schedule #
-Create a flow that performs the same task or tasks, such as sending reports in email, every day, hour, or minute. As an alternative, create a flow that waits a certain number of minutes or until a certain date before performing a task or tasks.
+Create a flow that performs the same task or tasks, such as sending a report in email, every day, hour, or minute. As an alternative, create a flow that waits a certain number of minutes or until a certain date before performing a task or tasks.
 
 ## Prerequisites ##
 - An account on [flow.microsoft.com](https://flow.microsoft.com)
 
-## Create a recurring flow
+## Create a recurring flow ##
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.
 
@@ -58,7 +58,7 @@ Create a flow that performs the same task or tasks, such as sending reports in e
 
 1. Specify an event as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
-1. Select the plus icon, and then select **Add action**.
+1. Select the plus icon, and then select **Add an action**.
 
 	![Option to add an action to a flow](./media/run-tasks-on-a-schedule/add-action.png)
 
