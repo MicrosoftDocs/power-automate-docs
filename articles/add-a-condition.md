@@ -40,20 +40,20 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
     ![Icon to add an action or a condition](./media/add-a-condition/plus-button.png)
 
-1. Select **Add condition**.
+1. Select **Add a condition**.
 
     ![Condition button](./media/add-a-condition/add-condition.png)
 
-1. Select an empty area of **OBJECT NAME**, and then select the **Retweet count** parameter to add it to the box.
+1. Select an empty area in **Object name**, and then select the **Retweet count** parameter to add it to the box.
 
-1. In the **RELATIONSHIP** box, select **is greater than or equal to**.
+1. In the **Relationship** box, select **is greater than or equal to**.
 
-1. In the **VALUE** box, type **10**.
+1. In the **Value** box, type **10**.
 
     ![The OBJECT NAME box with a parameter in it](./media/add-a-condition/specify-condition.png)
 
-1. Select **Add action inside**, and then type **send email**.
+1. Select **Add an action**, and then type **send email**.
 
     ![Add action inside](./media/add-a-condition/ifyes.png)
 
-1. Specify what the email should contain, just as you did when you created the flow, and then select **Done**.
+1. Specify what the email should contain, just as you did when you created the flow, and then select **Update flow**.
