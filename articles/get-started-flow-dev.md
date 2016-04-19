@@ -4,15 +4,15 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="barathb"
-    manager="stepsic"
+    authors="bbarath"
+    manager="erikre"
     editor=""
     tags=""
  />
 <tags
     ms.service="flow"
     ms.devlang="na"
-    ms.topic="get-started-article"
+    ms.topic="sarticle"
     ms.tgt_pltfrm="na"
     ms.workload="na"
    ms.date="04/19/2016"
