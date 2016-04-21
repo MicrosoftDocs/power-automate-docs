@@ -32,15 +32,11 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 ## Choose a template
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Browse** in the top navigation bar.
-
-	![Browse option in the top navigation bar](./media/get-started-logic-template/create-logic-flow.png)
-
-1. Select a template, such as **Get Email Notification for Tweets**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Browse** in the top navigation bar, and then select a template, such as **Get Email Notification for Tweets**.
 
 	![New option in the left navigation bar](./media/get-started-logic-template/select-template.png)
 
-1. If prompted, connect to one or more data sources, such as Twitter, by selecting **Add new connection** in the drop-down list and then following the prompts.
+1. If prompted, connect to Office, Twitter, or both by selecting **Add new connection** in the drop-down list for each connection and then following the prompts.
 
 	![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
 
@@ -58,23 +54,15 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 1. Expand and customize the template's action or actions.
 
-	For example, expand the **Send Email** action, and then customize the subject line, the body, and the recipient fields.
+	For example, expand the **Send Email** action, and then customize the subject line, the body, and the recipient fields. By default, the message will be sent to you, the subject will include the name of the person who sent the tweet, and the body will include the content of the tweet, the date/time when it was sent, and other information.
 
-	Customize the subject line and the body by following either or both of these steps:
-
-	- Type any text that you want to appear in every message that this flow sends.
-	- Select one or more placeholders to add information that's specific to each tweet. (Select the button with the ellipsis to show more placeholders.)
-
-	![Customize the subject line of the notification mail](./media/get-started-logic-template/customize-subject.png)
-
-	In the **To** field, leave your address as the default, or specify one or more other addresses in addition to or instead of your own.
-
-1. Near the bottom of the screen, specify a name for your flow, and then select **Done**.
+1. Near the bottom of the screen, specify a name for your flow, and then select **Create flow**.
 
 	![Done button](./media/get-started-logic-template/done.png)
 
-When a tweet is sent with the keyword that you specified, you'll receive email notification according to the information that you specified.
+When a tweet is sent with the keyword that you specified, you'll receive an email message that contains the information that you specified.
 
 ## Next steps ##
 
-- [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
+- [Test your flow](testing-flows.md)
+- [Publish your own template](publish-a-template.md)
