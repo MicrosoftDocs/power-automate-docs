@@ -19,7 +19,7 @@
    ms.author="stepsic"/>
 
 # Get started with Microsoft Flow #
-Welcome to Microsoft Flow! After you [sign up](sign-up-sign-in.md), you can quickly start to automate your work.
+Welcome to Microsoft Flow! Microsoft Flow is a *preview* product to help you set up automated workflows between your favorites apps and services to synchronize files, get notifications, collect data and more. After you [sign up](sign-up-sign-in.md), you can quickly start to automate your work.
 
 ## Discover possibilities ##
 If you [visit the home page](https://flow.microsoft.com) for Microsoft Flow, you can [explore a diverse set of templates](https://flow.microsoft.com/templates). Without even signing in, you can get a quick sense of what's possible and how Microsoft Flow could help your business and your life.
@@ -56,4 +56,4 @@ With creating from scratch, the entire flow comes straight from your brain to th
 - [Publish a template](publish-a-template.md)
 
 ## Questions? Ideas? We're here to help ##
-We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](link tbd) to ask questions and share your ideas. [Contact support](link tbd) if you run into any issues.
+We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](link tbd) to ask questions and share your ideas. [Contact support](link tbd) if you run into any issues. Note that Microsoft Flow is currently in preview.
