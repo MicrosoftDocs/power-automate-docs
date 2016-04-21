@@ -105,6 +105,8 @@ Create a flow to perform one or more tasks automatically when you want an event 
 	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, type the full name of your flow into the confirmation dialog box, and then select **Delete**.  
 
 		![Delete icon](./media/get-started-logic-flow/delete-icon.png)  
+		
+Note that you can only have up to **25** different flows in your account. If you already have 25, you will need to delete one to create another.
 
 ## Next steps ##
 
