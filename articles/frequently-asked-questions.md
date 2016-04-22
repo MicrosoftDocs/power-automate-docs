@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Frequently asked questions | Microsoft Flow"
-	description="Answers to all of the common questions about Microsoft Flow"
+	pageTitle="Support | Microsoft Flow"
+	description="Get support for Microsoft Flow"
 	services=""
 	suite="powerapps"
 	documentationCenter="na"
@@ -18,69 +18,26 @@
    ms.date="04/20/2016"
    ms.author="stepsic"/>
    
-# Frequently asked questions
+# Support
 
-## What is Microsoft Flow?
-Microsoft Flow is a preview, cloud-based, business automation service that enables anyone to build simple processes that make their business move more quickly and efficiently, with less effort. It connects users to a broad range of services through easy-to-use templates, and enables users to create their own custom-tailored processes.
+## Self help
 
-## How is Flow is related to Logic apps?
-Flow provides all sorts of features to help you get started with automation in a whole new way. Logic apps is an Azure service that provides all of the same great features in Flow, plus additional features like integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, more connectors, and more. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
-   
-## How much does Flow cost?
-The current version of Microsoft Flow  is free to use. In the future we may offer additional functionality, services and capabilities for a fee. 
+[**Videos**](http://go.microsoft.com/fwlink/?LinkID=786359&clcid=0x409)
+Watch our videos and articles that walk you through how to accomplish common tasks with Microsoft Flow.
 
-## What do I need to use Flow?
-Just a web browser and work email address.
+[**Documentation**](http://go.microsoft.com/fwlink/?LinkID=786358&clcid=0x409)
+View in-depth articles for all of Microsoft Flow's tools and features, from getting started to advanced techniques.
 
-Note: Work email addresses ending in **.gov** and **.mil** aren't currently supported.
+[**Frequently asked questions**](frequently-asked-questions.md)
+See answers to some of the top questions and issues for Microsoft Flow.
 
-## Why do I have to sign up with my work email?
-We do not support email addresses provided by consumer email services or telecommunications providers. [Learn more about the Flow sign-up process](sign-up-sign-in.md).
+## Ask for help
 
-## Which work email addresses are supported?
-Work email addresses ending in .edu and .org are supported.
+[**Community**](http://go.microsoft.com/fwlink/?LinkID=787467&clcid=0x409)
+Visit the Microsoft Flow community website to get answers and tips directly from other Microsoft Flow users.
 
-Those ending in .gov and .mil aren’t currently supported.
+[**Submit an idea**](http://go.microsoft.com/fwlink/?LinkID=787474&clcid=0x409)
+Do you have a great idea that will make Microsoft Flow even better? We would love to hear from you!
 
-## Is Flow available on-premises?
-No, it is not available as a private, internal cloud service. In the future you will be able to securely connect to your own on-premises services.
-
-## What are templates?
-Templates are pre-built flows for popular and common scenarios.  Using a template only requires you to have access to the services in the template and to fill out any required settings.
-
-## What data sources will I be able to connect to?
-During the preview period, you'll see built-in data connectors to 35+ different services, including Office 365, Twitter, OneDrive, Dropbox, Google Drive, Slack, Mailchimp, Facebook, Dynamics CRM, SharePoint, Salesforce, SQL and more. More connections will be added as the preview progresses.
-
-## How do I connect to a REST API in my flow?
-You can connect to any existing or new REST API, as long as that API supports at least one of 10+ authentication methods and uses JSON.
-
-## How do I connect to SQL Server and other on-premises data sources?
-It is not possible today to connect to on-premises services, although that capability will be available in the future.
-
-## What do I need to install in order to use Microsoft Flow?
-To use Microsoft Flow for free, you just need a Web browser and email.
-
-## Can I share the flows I create?
-Yes, you can publish any flow you create as a template. Once it has been approved by our reviewers, you can then share that template with anyone.
-
-## Can I share flows with a specific person or my organization?
-Not today. Support for sharing flows within an organization or with a specific person will be available in the future.
-
-## How many flows can I have?
-You can have up to 25 different flows.
-
-## Where do I get started with Flow?
-The following resources are available to help get your started:
-- Microsoft Flow Blog  https://flow.microsoft.com
-- Getting started videos on our YouTube Channel
-- Get started with Microsoft Flow article
-- Join our community and ask questions  http://powerusers.microsoft.com  
-
-## What browsers does Flow support?
-We support Microsoft Flow in these browsers:
-- Microsoft Edge
-- Chrome latest version
-- Safari latest version
-
-## What regions and languages does Microsoft Flow support?
-Microsoft Flow is currently available in English.
+[**Contact support**](http://go.microsoft.com/fwlink/?LinkID=787475&clcid=0x409)
+Work with Microsoft directly, up to 10 hours of support. We provide email support for platform and service issues (English only). 
