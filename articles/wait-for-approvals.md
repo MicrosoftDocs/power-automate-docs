@@ -1,11 +1,11 @@
 <properties
     pageTitle="Wait for approval in a flow | Microsoft Flow"
-    description="Flows can wait for external events, such as users indicating approval in email or SharePoint."
+    description="Flows can wait for external events, such as users indicating approval in email."
     services=""
     suite="flow"
     documentationCenter="na"
     authors="merwanhade"
-    manager="dwrede"
+    manager="stepsic"
     editor=""
     tags=""/>
 
@@ -15,43 +15,32 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/08/2016"
-   ms.author="mhade"/>
+   ms.date="04/18/2016"
+   ms.author="merwanhade"/>
 
 # Wait for approval in a flow #
 
-Create a flow that performs one or more tasks only after a user indicates approval by either clicking a link in email or updating an item in a SharePoint list.
+Create a flow that performs one or more tasks only after a user indicates either approval or declension in email. This tutorial uses a simple SharePoint list as a trigger action, which can be substituted with other services such as Dropbox or OneDrive. 
 
-**Prerequisites**
+**Prerequisites
+- Create a simple SharePoint Online list with two columns - Title (default) and a Person or Group column called **Assigned To**. This tutorial uses a list called **Project Tracker**.
 
-- [Create a flow from scratch](get-started-logic-flow.md)
-
+## Request approval in email ##
 ## Request approval in email ##
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.
-
-	![Flows option in top navigation bar](./media/wait-for-approvals/nav-flows.png)
-
-1. In the list of flows, select the edit icon for the flow that you created from scratch.
-
-	![Icon to edit a flow](./media/wait-for-approvals/edit-flow.png)
-
-1. Select the plus icon after the action, and then select **Add action**.
-
-	![Option to add an action](./media/wait-for-approvals/add-action.png)
-
-1. In the box that shows **What would you like to do next?**, type or paste **approval**, and then select **Office 365 Outlook - Send approval email**.
-
-	![Search for approval](./media/wait-for-approvals/approval-search.png)
-
-1. (optional) Edit the subject line, the approval options, or both.
-
-    ![Options](./media/wait-for-approvals/approval-mail.png)
-
-1. In the **TO** box, type or paste the email address of the approver.
-
-1. Drag the approval action so it appears between the Twitter event and the other email action, and then save your flow.
-
-	![Move the approval action between the trigger and the other action](./media/wait-for-approvals/flow-sequence.png)
-
-If you send a tweet with the keyword, an email message is sent to the approver you specified in the first action. If the approver selects **Approve** in that message, a message is sent to the person you specified in the second action.
+1. In the **My flows** page, select the **Create new flow** button.  
+1. In the box that shows **How would you like to start?**, type in or paste **when a new item is created** , and then select **SharePoint Online - when a new item is created**. 
+1. In the **Site url** field, type in or paste the site url of where your list is located. 
+1. In the **List name** field, select a list such as **Project Tracker**. 
+1. Select the **+** buton and then select **Add an action.**
+1. In the box that shows **What would you like to do next?**, type in or paste **Send approval email** and then select **Office 365 Outlook - Send approval email**. 
+1. In the **To** field, select the output **Assigned to EMail** from the list of **Outputs from When a new item is created**. 
+1. Select the **+** button and then select **Add a condition**. 
+1. In the **Object Name** field, select the output **Selected Option** from the list of **Outputs from Send approval email**. In the **Value field** type in or paste **Approve**.
+1. In the box that shows **If yes** select **Add an action**. 
+1. In the box that shows **What would you like to do next?**, type in or paste **Send email**
+1. In the **Subject** field, enter a subject such as **Assigned to Title** has accepted the **Title** project. 
+1. In the **Body** field, enter an email body such as **Ready to proceed with the next phase of the project.**
+1. In the **To** field, enter a recipient such as **Created by EMail**
+1. Follow steps 12-15 in the box that shows **If no**. Remember to change the **Subject** and **Body** to reflect that the project assignee has declined the project. 
