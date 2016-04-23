@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/20/2016"
+   ms.date="04/22/2016"
    ms.author="stepsic"/>
    
 # Frequently asked questions
@@ -26,8 +26,8 @@ Microsoft Flow is a preview, cloud-based, business automation service that enabl
 ## How is Flow is related to Logic apps?
 Flow provides all sorts of features to help you get started with automation in a whole new way. Logic apps is an Azure service that provides all of the same great features in Flow, plus additional features like integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, more connectors, and more. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
    
-## How much does Flow cost?
-The current version of Microsoft Flow  is free to use. In the future we may offer additional functionality, services and capabilities for a fee. 
+## What pricing plans do you offer?
+Microsoft Flow is currently in preview and available at no cost. Free and paid service levels are planned for when the service is in general release, with details to follow closer to the release date. Features that are available at no cost during the preview period may be discontinued or become part of a paid tier at general availability.
 
 ## What do I need to use Flow?
 Just a web browser and work email address.
