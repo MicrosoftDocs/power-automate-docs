@@ -15,7 +15,7 @@
     ms.topic="get-started-article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="04/08/2016"
+   ms.date="04/23/2016"
     ms.author="anneta"/>
 
 # Create a flow in Microsoft Flow#
@@ -31,6 +31,8 @@ Create a flow to perform one or more tasks automatically when you want an event 
 - Office 365 credentials
 
 ## Specify an event
+
+First, you will need to select what starting action, or *trigger*, will start your flow.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My Flows** in the top navigation bar, and then select **Create new flow**.
 
@@ -75,11 +77,11 @@ Create a flow to perform one or more tasks automatically when you want an event 
 
 1. In the **Body** box, select the **Tweet text** parameter to add a placeholder for it, and then type the end of your message, including any other parameters you want to include.
 
-1.  Near the bottom of the screen, name your flow, and then select **Create**.
+1.  Near the bottom of the screen, name your flow, and then select **Create Flow**.
 
 	![Select the done button](./media/get-started-logic-flow/done-button.png)
 
-	The list of your flows reflects your changes.
+1. Finally, you can select **Done**, and the list of your flows will reflect your changes.
 
 1. Send a tweet with the keyword that you indicated.
 
@@ -102,7 +104,7 @@ Create a flow to perform one or more tasks automatically when you want an event 
 
 	![Edit icon](./media/get-started-logic-flow/edit-icon.png)  
 
-	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, type the full name of your flow into the confirmation dialog box, and then select **Delete**.  
+	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, and then select **OK**.  
 
 		![Delete icon](./media/get-started-logic-flow/delete-icon.png)  
 		
