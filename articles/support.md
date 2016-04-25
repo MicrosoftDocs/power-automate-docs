@@ -34,4 +34,4 @@
 
 [**Submit an idea**](http://go.microsoft.com/fwlink/?LinkID=787474&clcid=0x409) - Do you have a great idea that will make Microsoft Flow even better? We would love to hear from you!
 
-[**Contact support**](http://go.microsoft.com/fwlink/?LinkID=787475&clcid=0x409) - ßWork with Microsoft directly, up to 10 hours of support. We provide email support for platform and service issues (English only). 
+[**Contact support**](http://go.microsoft.com/fwlink/?LinkID=787475&clcid=0x409) - Work with Microsoft directly, up to 10 hours of support. We provide email support for platform and service issues (English only). 

@@ -15,7 +15,7 @@
     ms.topic="get-started-article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="04/23/2016"
+   ms.date="04/24/2016"
     ms.author="anneta"/>
 
 # Create a flow in Microsoft Flow#
@@ -56,8 +56,6 @@ First, you will need to select what starting action, or *trigger*, will start yo
 	![Plus icon](./media/get-started-logic-flow/add-action-icon.png)
 
 2. Select **Add an action**.
-
-	![Add action bar](./media/get-started-logic-flow/add-action-bar.png)
 
 3. In the box that shows **What would you like to do next?**, type or paste **send email**, and then select **Office 365 Outlook - Send Email**.
 
@@ -104,9 +102,9 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	![Edit icon](./media/get-started-logic-flow/edit-icon.png)  
 
-	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, and then select **OK**.  
-
-		![Delete icon](./media/get-started-logic-flow/delete-icon.png)  
+	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, and then select **OK**.
+	
+	![Delete icon](./media/get-started-logic-flow/delete-icon.png)  
 		
 Note that you can only have up to **25** different flows in your account. If you already have 25, you will need to delete one to create another.
 
