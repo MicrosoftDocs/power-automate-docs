@@ -59,4 +59,4 @@ When you create a flow from scratch, the entire flow comes straight from your br
 - [Publish a template](publish-a-template.md)
 
 ## Questions? Ideas? We're here to help ##
-We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](linktbd.md) to ask questions and share your ideas. [Contact support](linktbd.md) if you run into any issues. Note that Microsoft Flow is currently in preview.
+We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues. Note that Microsoft Flow is currently in preview.
