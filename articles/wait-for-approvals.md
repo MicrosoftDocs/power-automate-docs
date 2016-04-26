@@ -13,7 +13,7 @@
 
 	![Image of add an action](./media/wait-for-approvals/add-an-action.png)
 1. In the **What would you like to do next?** box, type or paste **send email**, and then select **Office 365 Outlook - Send approval email**.
-	![Image of send approval email](./media/wait-for-approvals/send-approval-mail.png)1. If prompted, sign in to Office 365 Outlook.1. Select the **To** field, and then select **Assigned to EMail**.	**Note**: You can customize the **Subject** and **User Options** fields to suit your needs.	![Image of send approval email to field](./media/wait-for-approvals/send-approval-email-to.png)## Add a condition ##1. Select the **+** button, and then select **Add a condition**.
+	![Image of send approval email](./media/wait-for-approvals/send-approval-mail.png)1. If prompted, sign in to Office 365 Outlook.1. Select the **To** field, and then select **Assigned to EMail**.	The user in the **Assigned To** column will receive the mail to approve or reject the item. When you create an item to test the flow, you'll specify yourself in this field. That way, you'll not only approve or reject the item but also receive the notification mail. 	**Note**: You can customize the **Subject** and **User Options** fields to suit your needs.	![Image of send approval email to field](./media/wait-for-approvals/send-approval-email-to.png)## Add a condition ##1. Select the **+** button, and then select **Add a condition**.
 
 	![Image of add a condition](./media/wait-for-approvals/add-a-condition.png)
 1. In the **Object Name** field, select **SelectedOption**.
