@@ -103,19 +103,19 @@ First, you will need to select what starting action, or *trigger*, will start yo
 	![Edit icon](./media/get-started-logic-flow/edit-icon.png)  
 
 	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, and then select **OK**.
-	
-	![Delete icon](./media/get-started-logic-flow/delete-icon.png) 
-	
-	- To view flow history, select the icon that looks like an i enclosed in a circle.
-	
-	![Info icon](./media/get-started-logic-flow/info-icon.png) 
-		
-	Select a flow run from the list of flows to see the inputs and outputs of each step. 
-			
-	![Flow run](./media/get-started-logic-flow/flow-run.png) 
-			
-		
-Note that you can only have up to **25** different flows in your account. If you already have 25, you will need to delete one to create another.
+
+	![Delete icon](./media/get-started-logic-flow/delete-icon.png)
+
+	- To view flow history, select the **List runs** icon.
+
+	![Info icon](./media/get-started-logic-flow/info-icon.png)
+
+	Select a flow run from the list of flows to see the inputs and outputs of each step.
+
+	![Flow run](./media/get-started-logic-flow/flow-run.png)
+
+
+**Note**: You can have up to 25 flows in your account. If you already have 25, delete one before you can create another.
 
 ## Next steps ##
 
