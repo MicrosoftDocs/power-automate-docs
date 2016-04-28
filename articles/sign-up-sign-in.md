@@ -19,19 +19,25 @@
    ms.author="anjlic"/>
 
 # Sign up and sign in for Microsoft Flow #
-Before you can create a flow, sign up by using an email address from your work or school. If you've never used an online Microsoft product with that account, you'll need to take a few moments to register it. After signing up, start to discover the power of flows.
+Before you can create a flow, sign up by using an email address from your work or school. If you've never used an online Microsoft product with that account, you'll need to take a few moments to register it. Select **Sign up free**. After signing up, start to discover the power of flows.
 
-If you've used an online Microsoft product with your account, select **Sign in**. 
+If you've used an online Microsoft product with your account, select **Sign in**.
 
 **Note**: As of this writing, Microsoft Flow doesn't support personal email addresses, such as those that end in **@outlook** or **@gmail**. If you really want to use that kind of account, [tell us why](address).
 
 ## Sign up ##
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign up free**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign up free** in the upper-right corner of the website.
+
+	![Sign-up link](./media/sign-up-sign-in/signup.png)
+
 1. Enter your work or school email address, and then select **Go**.
 
 ## Sign in ##
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign in**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign in** in the upper-right corner of the website.
+
+	![Sign-in link](./media/sign-up-sign-in/signin.png)
+
 1. Provide your work or school credentials.
 
 ## Next steps ##
