@@ -76,8 +76,8 @@ Get started with the following resources:
 - [Topic](getting-started.md)
 - [Community](http://powerusers.microsoft.com)
 
-## What browsers does Flow support?
+## What browsers does Microsoft Flow support?
 Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
-## What rlanguages does Microsoft Flow support?
+## What languages does Microsoft Flow support?
 Microsoft Flow is currently available in English.
