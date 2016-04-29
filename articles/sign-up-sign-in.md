@@ -4,7 +4,7 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="stepsic-microsoft-com"
+    authors="anjlic"
     manager="erikre"
     editor=""
     tags=""/>
