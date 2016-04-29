@@ -23,7 +23,7 @@ Before you can create a flow, sign up by using an email address from your work o
 
 If you've used an online Microsoft product with your account, select **Sign in**.
 
-**Note**: As of this writing, Microsoft Flow doesn't support personal email addresses, such as those that end in **@outlook** or **@gmail**. If you really want to use that kind of account, [tell us why](address).
+**Note**: As of this writing, Microsoft Flow doesn't support personal email addresses, such as those that end in **@outlook** or **@gmail**. If you really want to use that kind of account, [tell us why](http://go.microsoft.com/fwlink/?LinkID=787467).
 
 ## Sign up ##
 
