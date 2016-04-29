@@ -31,7 +31,7 @@ Each template is designed for a specific purpose such as sending you a text mess
 ## Create your first flow ##
 When you're ready, [sign in](https://flow.micosoft.com/signin) on your tablet, your desktop computer, or even your phone. 
 
-![Flow templates](./media/getting-started/browse-templates.png)
+![Flow templates](./media/getting-started/365-to-slack.png)
 
 Now you can [use a template](get-started-logic-template.md) to get started. To use a specific template, sign in to whatever services that type of template uses.
 
