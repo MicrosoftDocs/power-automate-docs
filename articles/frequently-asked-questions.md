@@ -24,12 +24,12 @@
 Microsoft Flow is a preview, cloud-based, business-automation service with which you can build simple processes that make your business move more quickly and efficiently with less effort. You can connect to a broad range of services through easy-to-use templates and create your own processes that are tailored to your goals.
 
 ## How do Flow and Logic apps relate to each other?
-Flow provides all sorts of features to help you get started with automation in a whole new way. Logic apps is an Azure service that provides all of the same great features in Flow, plus additional features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, more connectors, and more. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
+Microsoft Flow is a stand-alone SaaS Service that is designed for broad usage, including business users that want to automate day-to-day tasks. Logic Apps is an Azure service available through the Azure Portal. It is targeted at IT Professionals that need to tackle more complex integration problems, it includes the great features available in Microsoft Flow, plus additional capability like integration with Azure Resource Manager and the Azure Portal, PowerShell and the Azure Command-Line Interface (Azure CLI), Visual Studio, more advance connectors. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ## What pricing plans do you offer?
 Microsoft Flow is currently in preview and available at no cost. Free and paid service levels are planned for when the service is in general release, with details to follow closer to the release date. Features that are available at no cost during the preview period may be discontinued or become part of a paid tier at general availability.
 
-## What do I need to use Flow?
+## What do I need to use Microsoft Flow?
 Just a web browser and a work email address.
 
 **Note:** Addresses that end in **.gov** and **.mil** aren't currently supported.
@@ -79,5 +79,5 @@ Get started with the following resources:
 ## What browsers does Flow support?
 Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
-## What regions and languages does Microsoft Flow support?
+## What rlanguages does Microsoft Flow support?
 Microsoft Flow is currently available in English.
