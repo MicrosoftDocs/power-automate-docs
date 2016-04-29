@@ -1,0 +1,41 @@
+<properties
+	pageTitle="Preview Release Notes | Microsoft Flow"
+	description="Release notes and known issues for the Microsoft Flow Preview"
+	services=""
+	suite="powerapps"
+	documentationCenter="na"
+	authors="stepsic-microsoft-com"
+	manager="erikre"
+	editor=""
+	tags=""/>
+
+<tags
+   ms.service="flow"
+   ms.devlang="na"
+   ms.topic="hero-article"
+   ms.tgt_pltfrm="na"
+   ms.workload="na"
+   ms.date="04/28/2016"
+   ms.author="stepsic"/>
+
+
+# Release Notes #
+
+## Preview Features ##
+If you have previously used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), there are a number of new features available in the Microsoft Flow Preview release.
+
+- You can now browse a gallery of 100+ templates and sort by Popularity, Name or Date published
+- You can [publish your own templates](publish-a-template.md) into the gallery once you've completed customizing a flow
+- You can see the history for every single check and run of your flow
+- When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action
+- We have [new community](http://go.microsoft.com/fwlink/?LinkID=78746) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474)
+
+## Known issues ##
+
+1. When you click on certain templates, such as those that use **Dynamics**, **SharePoint** or **Salesforce** the parameter tokens in the text boxes do not render properly. If you save the flow and re-open it they should render.
+
+2. When you view the history of a flow and try to leave the page, you'll will be prompted for unsaved changes even when you have not made any changes.
+
+## Next steps ##
+
+If you have any issues not already covered in these release notes or on the [FAQ](frequently-asked-questions.md) please [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or, [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).

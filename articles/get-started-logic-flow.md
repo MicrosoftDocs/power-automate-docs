@@ -20,8 +20,6 @@
 
 # Create a flow in Microsoft Flow#
 
-[AZURE.VIDEO nb:cid:UUID:b95d313a-0d00-80c4-bb62-f1e5920004d6]
-
 Create a flow to perform one or more tasks automatically when you want an event to kick off an action. For example, create a flow that notifies you by mail as soon as someone sends a tweet that contains a keyword you specify. In this example, sending a tweet is the event, and sending mail is the action.
 
 **Prerequisites**
@@ -111,6 +109,7 @@ First, you will need to select what starting action, or *trigger*, will start yo
 	![Info icon](./media/get-started-logic-flow/info-icon.png)
 
 	Select a flow run from the list of flows to see the inputs and outputs of each step.
+
 
 	![Flow run](./media/get-started-logic-flow/flow-run.png)
 
