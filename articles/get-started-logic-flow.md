@@ -18,8 +18,7 @@
    ms.date="04/24/2016"
     ms.author="anneta"/>
 
-# Create a flow in Microsoft Flow#
-
+# Create a flow in Microsoft Flow #
 Create a flow to perform one or more tasks automatically when you want an event to kick off an action. For example, create a flow that notifies you by mail as soon as someone sends a tweet that contains a keyword you specify. In this example, sending a tweet is the event, and sending mail is the action.
 
 **Prerequisites**
@@ -110,16 +109,12 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	Select a flow run from the list of flows to see the inputs and outputs of each step.
 
-
 	![Flow run](./media/get-started-logic-flow/flow-run.png)
-
 
 **Note**: You can have up to 25 flows in your account. If you already have 25, delete one before you can create another.
 
 ## Next steps ##
 
-- [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
-
-- [Run tasks on a schedule](run-tasks-on-a-schedule.md), when you want an action to occur every day, on a certain date, or after a certain number of minutes.
-
-- [Add a flow to an app](https://powerapps.microsoft.com/en-us/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
+- [Add steps](https://flow.microsoft.com/documentation/multi-step-logic-flow/), such as different ways to be notified, to your flow.
+- [Run tasks on a schedule](https://flow.microsoft.com/documentation/run-tasks-on-a-schedule/), when you want an action to occur every day, on a certain date, or after a certain number of minutes.
+- [Add a flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.

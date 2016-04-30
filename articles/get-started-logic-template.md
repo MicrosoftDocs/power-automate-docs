@@ -22,7 +22,7 @@
 # Create a flow from a template in Microsoft Flow #
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
-**Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
+**Note:** [Create a flow from scratch](https://flow.microsoft.com/documentation/get-started-logic-flow/) if you already have a process in mind and can't find a template for it.
 
 **Prerequisites**
 
@@ -37,7 +37,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 1. You'll see only templates related to Slack, so you can now select **Send a message on Slack when my manager emails me**.
 
 	![New option in the left navigation bar](./media/get-started-logic-template/select-template.png)
-	
+
 1. If prompted, connect to Office, Slack, or both by selecting **Add new connection** in the drop-down list for each connection and then following the prompts.
 
 	![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
@@ -49,9 +49,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 	![Default events and actions from template](./media/get-started-logic-template/template-default.png)
 
 ## Customize your flow ##
-
 1. Select the title bar for an event to expand it, and then customize it (for example, by specifying a filter on the email that interests you).
-
 
 1. Actions that require input from you will automatically be expanded.
 
@@ -61,13 +59,12 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 1. Near the bottom of the screen, specify a name for your flow, and then select **Create Flow**.
 
-1. Finally, if you're happy with your Flow you can select **Done**.
+1. Finally, if you're happy with your flow, select **Done**.
 
 	![Done button](./media/get-started-logic-template/done.png)
 
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
 ## Next steps ##
-
-- [Test your flow](testing-flows.md)
-- [Publish your own template](publish-a-template.md)
+- [Watch your flow in action](https://flow.microsoft.com/documentation/see-a-flow-run/)
+- [Publish your own template](https://flow.microsoft.com/documentation/publish-a-template/)

@@ -41,5 +41,5 @@ If you've used an online Microsoft product with your account, select **Sign in**
 1. Provide your work or school credentials.
 
 ## Next steps ##
-- [Start with a template](get-started-logic-template.md), which is a pre-built flow that's set up for you.
-- [Start from blank](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
+- [Start with a template](https://flow.microsoft.com/documentation/get-started-logic-template/), which is a pre-built flow that's set up for you.
+- [Start from blank](https://flow.microsoft.com/documentation/get-started-logic-flow/) if you already have a process in mind and can't find a template for it.
