@@ -71,6 +71,7 @@ You can have up to 25 flows.
 
 ## Where do I get started with Microsoft Flow?
 Get started with the following resources:
+
 - [Blog](https://flow.microsoft.com)
 - YouTube channel
 - [Topic](https://flow.microsoft.com/documentation/getting-started/)
