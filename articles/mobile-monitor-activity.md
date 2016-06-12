@@ -42,7 +42,7 @@ When the flow runs, it sends a message in Slack:
 
 	This tab shows data organized by day, with today's data at the top.
 
-	![Activity organized by day](./media/mobile-monitor-activity/activity-day.png)
+	![Activity organized by day](./media/mobile-monitor-activity/activity-day3.png)
 
 	Each entry shows the name of a flow with icons that correspond to its trigger events and actions.
 
