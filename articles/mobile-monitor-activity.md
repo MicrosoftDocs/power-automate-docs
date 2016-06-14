@@ -31,9 +31,9 @@ The flow in this tutorial runs when you receive mail from a specific address:
 
 You could configure such a flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
-When the flow runs, it sends a message in Slack:
+When the flow runs, it sends a push notification to your phone:
 
-![Send message to Slack](./media/mobile-monitor-activity/create-event.png)
+![Send push notification](./media/mobile-monitor-activity/create-event.png)
 
 ## Display a summary of activity ##
 1. If your flow hasn't run before, trigger a run to generate data.
