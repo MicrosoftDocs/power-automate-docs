@@ -58,5 +58,11 @@ When you create a flow from scratch, the entire flow comes straight from your br
 - [Watch a flow in action](https://flow.microsoft.com/documentation/see-a-flow-run/)
 - [Publish a template](https://flow.microsoft.com/documentation/publish-a-template/)
 
+## Work with flows from your phone ##
+Download our mobile app to your iPhone, where you can:
+
+- [monitor flow activity](https://flow.microsoft.com/documentation/mobile-monitor-activity/), such as successes, failures, and the time when each flow ran most recently
+- [manage each flow](https://flow.microsoft.com/documentation/mobile-manage-flows/), such as enabling or disabling it and viewing its events and actions
+
 ## Questions? Ideas? We're here to help ##
 We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues. Note that Microsoft Flow is currently in preview.

@@ -1,10 +1,10 @@
 <properties
     pageTitle="Manage flows from your phone | Microsoft Flow"
-    description=""
+    description="View a list of your flows, enable or disable them, and view each flow's event/s, action/s, and run history"
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="AFTOwen"
+    authors="adiregev"
     manager="erikre"
     editor=""
     tags=""/>
@@ -16,14 +16,14 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="06/11/2016"
-   ms.author="anneta"/>
+   ms.author="adiregev"/>
 
 # Manage flows in Microsoft Flow from your phone #
-Show a list of all flows that you created and, for each flow, show its events and actions, enable or disable it, and show its run history.
+View a list of all flows that you created and, for each flow, view its events and actions, enable or disable it, and explore its run history.
 
 **Prerequisites**
 - Install the mobile app for Flow.
-- If you don't already have a flow, create one. For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+- If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/en-us/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
@@ -31,14 +31,16 @@ The flow in this tutorial runs when you receive mail from a specific address:
 
 You could configure such a flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
-When the flow runs, it sends a message in Slack:
+When the flow runs, it sends a custom push notification, with this syntax, to your phone:
 
 ![Send message to Slack](./media/mobile-manage-flows/create-event.png)
+
+**Note**: You can also [monitor flow activity](https://flow.microsoft.com/documentation/mobile-monitor-activity/) from the mobile app.
 
 ## Manage a flow ##
 1. Open the mobile app, and then tap **My flows** at the bottom of the screen to list all your flows.
 
-	Each entry shows the name of the flow, icons for its events and actions, and the time when it ran most recently, and an icon that indicates whether the most recent run succeeded.
+	Each entry shows the name of the flow, icons for its events and actions, the time when it ran most recently, and an icon that indicates whether the most recent run succeeded.
 
 	![List of flows](./media/mobile-manage-flows/flow-list.png)
 
@@ -59,7 +61,3 @@ When the flow runs, it sends a message in Slack:
 1. Tap a run to show whether each event and action succeeded and, if so, how much time (in seconds) it took.
 
 	![Run details](./media/mobile-manage-flows/flow-run.png)
-
-1. If you want to create a flow, tap **Back** three times, and then tap the plus icon in the upper-right corner.
-
-	The website for Microsoft Flow opens in your browser, where you can select a template and create a flow from it.
