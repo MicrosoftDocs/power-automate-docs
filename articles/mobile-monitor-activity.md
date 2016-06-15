@@ -22,8 +22,8 @@
 View a summary of how many times each flow succeeded or failed today, yesterday, and previous days. Explore details about each run, such as when it ran, how long each step took and, if it failed, why.
 
 **Prerequisites**
-- Install the mobile app for Flow.
-- If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/en-us/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+- Install the mobile app for Flow on a [supported device](getting-started.md#work-with-flows-from-your-phone).
+- If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
@@ -35,7 +35,7 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 
 ![Send push notification](./media/mobile-monitor-activity/create-event.png)
 
-**Note:** You can also [manage your flows](https://flow.microsoft.com/documentation/mobile-manage-flows/) from the mobile app.
+**Note:** You can also [manage your flows](mobile-manage-flows.md) from the mobile app.
 
 ## Display a summary of activity ##
 1. If your flow hasn't run before, trigger a run to generate data.
