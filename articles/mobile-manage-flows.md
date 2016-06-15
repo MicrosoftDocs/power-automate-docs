@@ -22,8 +22,8 @@
 View a list of all flows that you created and, for each flow, view its events and actions, enable or disable it, and explore its run history.
 
 **Prerequisites**
-- Install the mobile app for Flow.
-- If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/en-us/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+- Install the mobile app for Flow on a [supported device](getting-started.md#work-with-flows-from-your-phone).
+- If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
@@ -35,7 +35,7 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 
 ![Send message to Slack](./media/mobile-manage-flows/create-event.png)
 
-**Note**: You can also [monitor flow activity](https://flow.microsoft.com/documentation/mobile-monitor-activity/) from the mobile app.
+**Note**: You can also [monitor flow activity](mobile-monitor-activity.md) from the mobile app.
 
 ## Manage a flow ##
 1. Open the mobile app, and then tap **My flows** at the bottom of the screen to list all your flows.
