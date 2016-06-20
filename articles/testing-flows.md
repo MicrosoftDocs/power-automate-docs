@@ -4,7 +4,7 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="merwanhade"
+    authors="AFTOwen"
     manager="erikre"
     editor=""
     tags=""/>
@@ -16,7 +16,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/08/2016"
-   ms.author="mhade"/>
+   ms.author="anneta"/>
 
 # Test a flow with Microsoft Flow #
 Before you finish creating a flow, test it to verify whether it runs as you expect.

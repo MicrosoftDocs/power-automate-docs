@@ -22,6 +22,7 @@
 View a summary of how many times each flow succeeded or failed today, yesterday, and previous days. Explore details about each run, such as when it ran, how long each step took and, if it failed, why.
 
 **Prerequisites**
+
 - Install the mobile app for Flow on a [supported device](getting-started.md#work-with-flows-from-your-phone).
 - If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
