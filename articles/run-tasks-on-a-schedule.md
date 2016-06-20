@@ -56,7 +56,7 @@ Create a flow that performs the same task or tasks, such as sending a report in 
 
 	![Create a flow from blank](./media/run-tasks-on-a-schedule/create-from-blank.png)
 
-1. Specify an event as [Create a flow from scratch](https://flow.microsoft.com/documentation/get-started-logic-flow/) describes.
+1. Specify an event as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
 1. Select the plus icon, and then select **Add an action**.
 

@@ -22,7 +22,7 @@
 # Create a flow from a template in Microsoft Flow #
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
-**Note:** [Create a flow from scratch](https://flow.microsoft.com/documentation/get-started-logic-flow/) if you already have a process in mind and can't find a template for it.
+**Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
 **Prerequisites**
 
@@ -66,5 +66,5 @@ Create a flow from one of many built-in templates that can, for example, send yo
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
 ## Next steps ##
-- [Watch your flow in action](https://flow.microsoft.com/documentation/see-a-flow-run/)
-- [Publish your own template](https://flow.microsoft.com/documentation/publish-a-template/)
+- [Watch your flow in action](see-a-flow-run.md)
+- [Publish your own template](publish-a-template.md)

@@ -30,9 +30,9 @@ For example, you can use connections to:
 
 You can create connections in Microsoft Flow in multiple scenarios, such as:
 
-- Creating a [flow from a template](https://flow.microsoft.com/documentation/get-started-logic-template/)
+- Creating a [flow from a template](get-started-logic-template.md)
 
-- Creating a [flow from blank](https://flow.microsoft.com/documentation/get-started-logic-flow/) or updating an existing flow
+- Creating a [flow from blank](get-started-logic-flow.md) or updating an existing flow
 
 - Creating a connection in the [Microsoft Flow portal][1]
 

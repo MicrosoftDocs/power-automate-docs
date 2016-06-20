@@ -115,6 +115,6 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 ## Next steps ##
 
-- [Add steps](https://flow.microsoft.com/documentation/multi-step-logic-flow/), such as different ways to be notified, to your flow.
-- [Run tasks on a schedule](https://flow.microsoft.com/documentation/run-tasks-on-a-schedule/), when you want an action to occur every day, on a certain date, or after a certain number of minutes.
+- [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
+- [Run tasks on a schedule](run-tasks-on-a-schedule.md), when you want an action to occur every day, on a certain date, or after a certain number of minutes.
 - [Add a flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.

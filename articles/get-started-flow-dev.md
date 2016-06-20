@@ -32,7 +32,7 @@ Extend Microsoft Flow in these ways, among others:
 - Office 365 credentials
 
 ## Create a custom API ##
-Create a custom API, and then [register it](https://powerapps.microsoft.com/en-us/tutorials/register-custom-api/) so that it can contribute to a larger experience.
+Create a custom API, and then [register it](https://powerapps.microsoft.com/tutorials/register-custom-api/) so that it can contribute to a larger experience.
 
 ## Share a custom API with all Microsoft Flow users ##
 After you fully test your API, start the review process by sending this information to flowdev@service.microsoft.com.
