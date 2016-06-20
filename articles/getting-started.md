@@ -58,8 +58,8 @@ When you create a flow from scratch, the entire flow comes straight from your br
 - [Watch a flow in action](see-a-flow-run.md)
 - [Publish a template](publish-a-template.md)
 
-## Work with flows from your phone ##
-Download our mobile app to your iPhone, where you can:
+## Use the mobile app ##
+Download the mobile app to your iPhone, where you can:
 
 - [monitor flow activity](mobile-monitor-activity.md), such as successes, failures, and the time when each flow ran most recently
 - [manage each flow](mobile-manage-flows.md), such as enabling or disabling it and viewing its events and actions
