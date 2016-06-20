@@ -44,7 +44,7 @@ Create a flow that performs the same task or tasks, such as sending a report in 
 
 	![Recurrence dialog box](./media/run-tasks-on-a-schedule/specify-recurrence.png)
 
-1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](https://flow.microsoft.com/documentation/get-started-logic-flow/) describes.
+1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
 ## Schedule a flow ##
 

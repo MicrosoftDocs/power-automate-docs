@@ -12,7 +12,7 @@
 <tags
     ms.service="flow"
     ms.devlang="na"
-    ms.topic="sarticle"
+    ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
    ms.date="04/19/2016"
