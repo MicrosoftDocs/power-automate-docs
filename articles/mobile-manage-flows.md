@@ -22,6 +22,7 @@
 View a list of all flows that you created and, for each flow, view its events and actions, enable or disable it, and explore its run history.
 
 **Prerequisites**
+
 - Install the mobile app for Flow on a [supported device](getting-started.md#work-with-flows-from-your-phone).
 - If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
