@@ -23,7 +23,7 @@ To ensure that your flows run as you expect, perform the starting action, and re
 
 1. Create or update a flow, but leave the designer open after you select **Create flow** or **Update flow**.
 
- 	For example, [create a flow](https://flow.microsoft.com/documentation/get-started-logic-flow/) that sends mail whenever someone tweets using the **#azure** hashtag.
+ 	For example, [create a flow](get-started-logic-flow.md) that sends mail whenever someone tweets using the **#azure** hashtag.
 
 1. Perform the starting action for your flow.
 
