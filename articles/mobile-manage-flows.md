@@ -23,7 +23,7 @@ View a list of all flows that you created and, for each flow, view its events an
 
 **Prerequisites**
 
-- Install the mobile app for Flow on a [supported device](getting-started.md#use-the-mobile-app).
+- Install the mobile app for Flow on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect an iPhone, but the app looks similar on an Android device.
 - If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
