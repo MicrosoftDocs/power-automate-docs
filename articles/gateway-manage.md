@@ -31,17 +31,19 @@ Install and manage an on-premises data gateway to securely integrate a variety o
 ## View accessible gateways ##
 In the top header of [Flow](https://flow.microsoft.com), click or tap the **Account menu**, and then click or tap **My gateways**.
 
-Graphic: Gateways under Manage section
+![Gateway under manage][1]
 
 **Note**: If you've been granted access to a gateway in PowerApps, that gateway will also show up in this list.
 
 ## Install a gateway ##   
-If you don't have a gateway, click or tap **Add a gateway** in the upper-right corner (or [download the installer](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) directly), and then run the installation wizard. When the wizard finishes, your new gateway shows up in the list.
+If you don't have a gateway, click or tap **Add a gateway** in the upper-right corner (or [download the installer](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) directly), and then run the installation wizard. Once you have registered and configured your gateway successfully, it should show up in this list. 
 
-Graphic: Gateway installation
+**Note**: Be sure to use the same credentials you use to sign in to Flow, to register your gateway. 
+
+![Gateway installation][2]
 
 For details about how to install and configure a gateway, see [Understand gateways](gateway-reference.md).
 
 <!-- Image references -->
-[1]: TODO
-[2]: TODO
+[1]: ./media/manage-gateway/view-gateways.png
+[2]: ./media/manage-gateway/list-gateways.png

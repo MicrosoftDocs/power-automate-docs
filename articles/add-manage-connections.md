@@ -61,7 +61,7 @@ As of this writing, SQL Server and SharePoint are the two services that support 
 
 1. In the list of **Available connections**, select the connection that you want to set up (for example, SQL Server). Then select the **Connect via on-premise data gateway** checkbox as shown here.
 
-	Graphic: create a connection using an on-premises data gateway
+	![Select gateway][2]
 
 1. Configure the connection credentials, and select the gateway that you want to use. For details about how to install a gateway, see [Understanding gateways](gateway-reference.md).
 
@@ -84,4 +84,4 @@ When you update a connection, it's updated for both Microsoft PowerApps and Micr
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com
-[2]: TODO
+[2]: ./media/connections/select-gateway.png
