@@ -55,6 +55,19 @@ This topic shows you how to manage connections in the [Microsoft Flow portal][1]
 
 1. Once the connection is setup, it's listed in **My Connections**.
 
+## Connect to your data via on-premise data gateway
+
+As of this writing SQL Server and SharePoint are the two services that support the on-premises data gateway. To create connection that uses a gateway - 
+
+1. Follow the steps to add a connection
+
+1. From the list of **Available connections**, select the connection you want to set up eg. SQL Server. Then, select the "Connect via on-premise data gateway" checkbox as shown here.
+  ![Create a connection using on-premise data gateway][2]
+
+1. Configure the connection credentials and select the gateway you want to use. For details about how to install a gateway, see [Understanding gateways](gateway-reference.md). 
+
+1. Once the connection is setup, it's listed in **My Connections**.
+
 ## Delete a connection
 1. Go to the **My Connections** page, and select the connection you want to delete.
 
@@ -72,3 +85,4 @@ When you update a connection, it will be updated for both Microsoft PowerApps an
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com
+[2]: TODO
