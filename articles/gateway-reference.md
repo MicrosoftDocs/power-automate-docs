@@ -1,3 +1,23 @@
+<properties
+    pageTitle="Understand gateways | Microsoft Flow"
+    description="Reference information for on-premises data gateways in Microsoft Flow"
+    services=""
+    suite="flow"
+    documentationCenter="na"
+    authors="sunaysv"
+    manager="erikre"
+    editor=""
+    tags=""/>
+
+<tags
+   ms.service="flow"
+   ms.devlang="na"
+   ms.topic="article"
+   ms.tgt_pltfrm="na"
+   ms.workload="na"
+   ms.date="07/05/2016"
+   ms.author="sunayv"/>
+
 # Understand on-premises data gateways for Microsoft Flow ##
 
 ## Installation and configuration ##
