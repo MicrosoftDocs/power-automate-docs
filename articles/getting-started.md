@@ -59,7 +59,7 @@ When you create a flow from scratch, the entire flow comes straight from your br
 - [Publish a template](publish-a-template.md)
 
 ## Use the mobile app ##
-Download the mobile app to your [iPhone](https://itunes.apple.com/us/app/microsoft-flow/id1094928825?ls=1&mt=8) or [Android](http://go.microsoft.com/fwlink/?LinkID=820841) device, where you can:
+Download the mobile app to your [iPhone](https://itunes.apple.com/us/app/microsoft-flow/id1094928825?ls=1&mt=8)<!--or [Android](http://go.microsoft.com/fwlink/?LinkID=820841) device-->, where you can:
 
 - [monitor flow activity](mobile-monitor-activity.md), such as successes, failures, and the time when each flow ran most recently
 - [manage each flow](mobile-manage-flows.md), such as enabling or disabling it and viewing its events and actions
