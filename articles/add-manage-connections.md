@@ -59,7 +59,7 @@ As of this writing, SQL Server supports the on-premises data gateway. To create 
 
 1. Follow the steps earlier in this topic to add a connection.
 
-1. In the list of **Available connections**, select **SQL Server, and then select the **Connect via on-premise data gateway** checkbox as shown here.
+1. In the list of **Available connections**, select **SQL Server**, and then select the **Connect via on-premise data gateway** checkbox as shown here.
 
 	![Select gateway][2]
 
