@@ -55,15 +55,15 @@ This topic shows you how to manage connections in the [Microsoft Flow portal][1]
 
 ## Connect to your data through an on-premises data gateway
 
-As of this writing, SQL Server and SharePoint are the two services that support the on-premises data gateway. To create a connection that uses a gateway:
+As of this writing, SQL Server supports the on-premises data gateway. To create a connection that uses a gateway:
 
 1. Follow the steps earlier in this topic to add a connection.
 
-1. In the list of **Available connections**, select the connection that you want to set up (for example, SQL Server). Then select the **Connect via on-premise data gateway** checkbox as shown here.
+1. In the list of **Available connections**, select **SQL Server**, and then select the **Connect via on-premise data gateway** checkbox as shown here.
 
 	![Select gateway][2]
 
-1. Configure the connection credentials, and select the gateway that you want to use. For details about how to install a gateway, see [Understanding gateways](gateway-reference.md).
+1. Configure the connection credentials, and select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
 
 	When the connection is set up, it's listed in **My Connections**.
 
