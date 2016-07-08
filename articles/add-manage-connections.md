@@ -63,7 +63,7 @@ As of this writing, SQL Server supports the on-premises data gateway. To create 
 
 	![Select gateway][2]
 
-1. Configure the connection credentials, and select the gateway that you want to use. For details about how to install a gateway, see [Understanding gateways](gateway-reference.md).
+1. Configure the connection credentials, and select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
 
 	When the connection is set up, it's listed in **My Connections**.
 
