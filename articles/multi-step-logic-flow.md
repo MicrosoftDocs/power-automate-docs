@@ -23,7 +23,7 @@ Customize a flow by adding one or more advanced parameters and multiple actions 
 
 **Prerequisites**
 
-- [Create a flow](https://flow.microsoft.com/documentation/get-started-logic-flow/)
+- [Create a flow](get-started-logic-flow.md)
 
 ## Add another action ##
 

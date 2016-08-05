@@ -26,7 +26,7 @@
 
 [**Documentation**](http://go.microsoft.com/fwlink/?LinkID=786358&clcid=0x409) - View in-depth articles for all of Microsoft Flow's tools and features, from getting started to advanced techniques.
 
-[**Frequently asked questions**](http://flow.microsoft.com/documentation/frequently-asked-questions/) - See answers to some of the top questions and issues for Microsoft Flow.
+[**Frequently asked questions**](frequently-asked-questions.md) - See answers to some of the top questions and issues for Microsoft Flow.
 
 ## Ask for help
 

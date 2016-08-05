@@ -18,18 +18,16 @@
    ms.date="04/28/2016"
    ms.author="stepsic"/>
 
-
 # Release notes #
 
 ## Preview features ##
 If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), the Microsoft Flow Preview release offers several new features:
 
-
 - You can now browse a gallery of dozens of templates and sort by Popularity, Name, or Date published.
-- You can [publish your own templates](https://flow.microsoft.com/documentation/publish-a-template/) into the gallery after you customize a flow.
+- You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.
 
 - You can see the history for every check and run of your flow.
-- When you save a flow, you can [watch it in action immediately](https://flow.microsoft.com/documentation/see-a-flow-run/) by just performing the trigger action.
+- When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
 - We have a [new community](http://go.microsoft.com/fwlink/?LinkID=78746) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## Known issues ##
@@ -37,7 +35,7 @@ If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.micro
 
 2. When you view the history of a flow and try to leave the page, you'll be prompted for unsaved changes even if you haven't made any.
 
-3. There is no button to add a Custom API. However, if you add a Custom API in [web.powerapps.com](https://web.powerapps.com), you will be able to use it  in Microsoft Flow.
+3. There is no button to add a custom API. However, if you add a custom API on [powerapps.com](https://web.powerapps.com), you can use it in Microsoft Flow.
 
 ## Next steps ##
-If you have any issues not already covered in these release notes or in the [FAQ](https://flow.microsoft.com/documentation/frequently-asked-questions/), please [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).
+If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).

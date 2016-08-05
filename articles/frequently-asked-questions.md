@@ -35,7 +35,7 @@ Just a web browser and a work email address.
 **Note:** Addresses that end in **.gov** and **.mil** aren't currently supported.
 
 ## Why do I have to sign up with my work email?
-We don't support email addresses from consumer email services or telecommunications providers. [Learn more about the Flow sign-up process](https://flow.microsoft.com/documentation/sign-up-sign-in/).
+We don't support email addresses from consumer email services or telecommunications providers. [Learn more about the Flow sign-up process](sign-up-sign-in.md).
 
 ## Which work email addresses are supported?
 Work email addresses ending in .com, .edu, and .org are supported.
@@ -71,9 +71,10 @@ You can have up to 25 flows.
 
 ## Where do I get started with Microsoft Flow?
 Get started with the following resources:
+
 - [Blog](https://flow.microsoft.com)
 - YouTube channel
-- [Topic](https://flow.microsoft.com/documentation/getting-started/)
+- [Topic](getting-started.md)
 - [Community](http://powerusers.microsoft.com)
 
 ## What browsers does Microsoft Flow support?
