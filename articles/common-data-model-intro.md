@@ -121,7 +121,7 @@ Now you have a flow that listens to the data and performs the approval, but you 
 
 1. You should now have a PowerApp that you can use to do the approval. If you update the Status field now the flow should execute the correct logic. 
 
-	![Document rejected](./media/common-data-model-intro/document-approval.png)
+	![Document rejected](./media/common-data-model-intro/document-rejected.png)
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com
