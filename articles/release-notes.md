@@ -28,7 +28,7 @@ If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.micro
 
 - You can see the history for every check and run of your flow.
 - When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
-- We have a [new community](http://go.microsoft.com/fwlink/?LinkID=78746) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+- We have a [new community](http://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## Known issues ##
 1. When you use certain templates (such as those that use **Dynamics**, **SharePoint**, or **Salesforce**), the parameter tokens in the text boxes don't render properly. If you save the flow and re-open it, they should render.
