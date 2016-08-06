@@ -32,7 +32,7 @@ You can move data into or out of the Common Data Model by creating a flow either
 
 1. In powerapps.com, [open the Entities tab](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
-1. In the [Microsoft Flow portal][https://flow.microsoft.com], sign in with your work or organization account.
+1. In the [Microsoft Flow portal](https://flow.microsoft.com), sign in with your work or organization account.
 
 1. At the top of the screen, type **common data** into the search box to find templates that can import data into the Common Data Model.
 
@@ -75,7 +75,7 @@ In this example, you'll build an approval on top of a file added to Dropbox *fro
 	![Entity fields](./media/common-data-model-intro/entity-fields.png)
 
 ### Build your flow ###
-1.  On the [Microsoft Flow portal][https://flow.microsoft.com], click or tap **Create a flow**.
+1.  On the [Microsoft Flow portal](https://flow.microsoft.com), click or tap **Create a flow**.
 
 1. Add a **When a file is created** trigger, and specify the folder that you want to watch.
 
