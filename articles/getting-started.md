@@ -47,6 +47,7 @@ Now that you have some idea of what a flow can do and a bit of experience, [crea
 - a SharePoint list
 - Salesforce or Microsoft Dynamics CRM Online with custom entities
 - a SQL Azure table
+- [the Microsoft Common Data Model](common-data-model-intro.md)
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 
