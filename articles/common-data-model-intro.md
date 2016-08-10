@@ -61,26 +61,30 @@ You can take actions on changes in the Common Data Model. For example, you can c
 ## Building approvals in your application ##
 The Common Data Model can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in the Common Data Model, your flow can work on top of it.
 
-In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, mail notifies the user who added the file, and rejected files are deleted from Dropbox.
+In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.
 
 By following the steps in this section, you'll build:
 
 - [a custom entity](common-data-model-intro.md#build-the-entity) that will contain information about each file added to Dropbox and whether the file's status is approved, rejected, or pending.
 
-- [an app](common-data-model-intro.md#build-the-app) in which a reviewer can approve or reject files added to Dropbox. You'll use PowerApps to generate this app automatically based on the fields in the custom entity.
+- [a flow](common-data-model-intro.md#build-the-flow) that adds information to the custom entity when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a flow from scratch, but you can create a similar flow from a template.
 
-- [a flow](common-data-model-intro.md#build-the-flow) that adds information to the custom entity when a file is added, sends mail when the change is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a flow from scratch, but you can create a similar flow from a template.
+- [an app](common-data-model-intro.md#build-the-app) in which a reviewer can approve or reject files added to Dropbox. You'll use PowerApps to generate this app automatically based on the fields in the custom entity.
 
 **Prerequisites**
 
 - Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ### Build the entity ###
-1. In [powerapps.com](https://web.powerapps.com), click or tap **Manage** in the left navigation bar, and then click or tap **Entities**.
+1. Sign in to [powerapps.com](https://web.powerapps.com).
+
+1. In the left navigation bar, click or tap **Manage**, and then click or tap **Entities**.
 
 	![Manage entities](./media/common-data-model-intro/manage-entities.png)
 
 1. If prompted, click or tap **Create my database**.
+
+	![Create database](./media/common-data-model-intro/create-database.png)
 
 1. Near the upper-right corner, click or tap **New entity**.
 
@@ -104,7 +108,7 @@ By following the steps in this section, you'll build:
 
 	![Add field](./media/common-data-model-intro/add-field.png)
 
-1. In the blank row that appears at the bottom, set the properties of an **Approver** field:
+1. In the blank row that appears at the bottom of the list of fields, set the properties of an **Approver** field:
 
 	- In the **Display Name** column, type **Approver**.
 	- In the **Name** column, type **ApproverEmail**.
@@ -113,7 +117,7 @@ By following the steps in this section, you'll build:
 
 	![Approver field](./media/common-data-model-intro/approver-field.png)
 
-1. In the blank row that appears at the bottom, set the properties of a **Status** field:
+1. In the next row, set the properties of a **Status** field:
 
 	- In the **Display Name** column, type **Status**.
 	- In the **Name** column, type **Status**.
@@ -123,7 +127,7 @@ By following the steps in this section, you'll build:
 
 	![Status field](./media/common-data-model-intro/status-field.png)
 
-1. In the blank row that appears at the bottom, set the properties of a **FileID** field:
+1. In the next row, set the properties of a **FileID** field:
 
 	- In the **Display Name** column, type **File identifier**.
 	- In the **Name** column, type **FileID**.
@@ -142,18 +146,22 @@ By following the steps in this section, you'll build:
 
 	![Create an entity](./media/common-data-model-intro/create-button.png)
 
+1. (optional) When the list of entities reappears, click or tap the **Type** column header. The list is sorted with the custom entities, such as the one you just created, appear at the top.
+
 ### Build the flow ###
 
 #### Sign in and create a flow ####
-1.  Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** near the upper-left corner.
+1.  Open the [Microsoft Flow portal](https://flow.microsoft.com).
+
+1. Near the upper-right corner, click or tap **Sign in**.
 
 	![Sign-in button for Microsoft Flow](./media/common-data-model-intro/signin-flow.png)
 
-1. Near the upper-right corner, click or tap **My flows**.
+1. Near the upper-left corner, click or tap **My flows**.
 
 	![My flows button](./media/common-data-model-intro/myflows-button.png)
 
-1. Near the upper-left corner, click or tap **Create new flow**.
+1. Near the upper-right corner, click or tap **Create new flow**.
 
 	![Create new flow button](./media/common-data-model-intro/create-flow.png)
 
@@ -163,6 +171,8 @@ By following the steps in this section, you'll build:
 	![Create trigger](./media/common-data-model-intro/create-trigger.png)
 
 1. If prompted, click or tap **Sign in**, and then provide the credentials for your Dropbox account.
+
+	![Sign in to Dropbox](./media/common-data-model-intro/signin-flow.png)
 
 1. Under **Folder**, type a slash if files will be added to the root folder of the Dropbox account.
 
