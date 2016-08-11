@@ -104,6 +104,8 @@ By following the steps in this section, you'll build:
 
 	![Next button](./media/common-data-model-intro/next-button.png)
 
+### Add fields to the entity ###
+
 1. Near the upper-right corner, click or tap **Add field**.
 
 	![Add field](./media/common-data-model-intro/add-field.png)
