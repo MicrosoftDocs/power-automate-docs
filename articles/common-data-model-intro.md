@@ -170,11 +170,7 @@ By following the steps in this section, you'll build:
 
 	![Create trigger](./media/common-data-model-intro/create-trigger.png)
 
-1. If prompted, click or tap **Sign in**, and then provide the credentials for your Dropbox account.
-
-	![Sign in to Dropbox](./media/common-data-model-intro/signin-flow.png)
-
-1. Under **Folder**, type a slash if files will be added to the root folder of the Dropbox account.
+1. Under **Folder**, type a slash if the files to review will be added to the root folder of the Dropbox account.
 
 	![Choose folder](./media/common-data-model-intro/choose-folder.png)
 
@@ -191,17 +187,17 @@ By following the steps in this section, you'll build:
 
 1. Under **The namespace**, click or tap the database that contains the custom entity that you created earlier.
 
-1. Under **The entity**, type **Review**, and then click or tap **Review Dropbox files**.
+1. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
 
 	![Choose the entity](./media/common-data-model-intro/choose-entity-flow.png)
 
-1. Under **Title**, click or tap in the box, and then click or tap **File name** in the list of parameter tokens to add it to the field.
+1. Under **Title**, click or tap in the box, and then click or tap **File name** in the list of parameter tokens to add that token to the field.
 
 	![Add File name token](./media/common-data-model-intro/add-filename-token.png)
 
 1. Under **Approver**, type or paste the e-mail address of the person who will review the files.
 
-	**Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
+	**Note**: To make testing the flow easier, specify your own address. You can change it later, when the flow is ready for actual use.
 
 	![Add approver](./media/common-data-model-intro/add-approver.png)
 
@@ -209,12 +205,11 @@ By following the steps in this section, you'll build:
 
 	![Add default status](./media/common-data-model-intro/add-default-status.png)
 
-1. Under **File identifier**, click or tap in the box, and then click or tap **File identifier** in the list of parameter tokens to add it to the field.
+1. Under **File Identifier**, click or tap in the box, and then click or tap **File identifier** in the list of parameter tokens to add that token to the field.
 
 	![Add File identifier token](./media/common-data-model-intro/add-file-identifier.png)
 
 #### Check whether the file has been reviewed ####
-
 1. Click or tap **New step**, click or tap **More**, and then click or tap **Add a do until**.
 
 	![Add do until](./media/common-data-model-intro/add-do-until.png)
@@ -328,7 +323,7 @@ Add at least two files to your Dropbox account: one to test approval and one to 
 
 	![Search for an entity](./media/common-data-model-intro/search-entities.png)
 
-1. Under **Choose an entity**, click or tap **ReviewDropboxFiles**.
+1. Under **Choose an entity**, click or tap **Review Dropbox Files**.
 
 	![Choose an entity](./media/common-data-model-intro/choose-entity.png)
 
@@ -336,12 +331,79 @@ Add at least two files to your Dropbox account: one to test approval and one to 
 
 	![Connect button](./media/common-data-model-intro/connect-button.png)
 
+1. If the opening screen of intro tour appears, take the tour to get familiar with PowerApps (or click or tap **Skip**).
+
+	![Intro tour](./media/common-data-model-intro/quick-tour.png)
+
+	You can always take the tour later by clicking or tapping the question-mark icon near the upper-left corner and then clicking or tapping **Take the intro tour**.
+
+1. (optional) Near the bottom of the screen, drag the slider to increase the zoom so the app is easier to see.
+
+	![Zoom control](./media/common-data-model-intro/zoom-control.png)
+
+### Customize the app ###
+
 1. In the right navigation bar, click or tap the layout that includes a header and a description.
 
 	![Connect button](./media/common-data-model-intro/choose-layout.png)
 
-1. On the **BrowseScreen**, click or tap just under the search bar to select the text-box control.
+1. On the **BrowseScreen**, click or tap just under the search bar to select the larger text-box control.
 
 	![Select header](./media/common-data-model-intro/select-header.png)
 
-1. In the right-hand pane, click or tap **Title** in the highlighted list.
+1. In the right-hand pane, open the lower list by clicking or tapping its down arrow.
+
+	![Open dropdown](./media/common-data-model-intro/open-dropdown.png)
+
+1. In the lower list, click or tap **Title** so show the file name of the added files.
+
+	![Set heading data](./media/common-data-model-intro/set-heading.png)
+
+1. In the right-hand pane, open the upper list, and then click or tap **Status** to show the status of each file.
+
+	![Set body data](./media/common-data-model-intro/set-body.png)
+
+### Test the solution ###
+1. In PowerApps, open Preview mode by clicking or tapping the play button near the upper-left corner.
+
+	![Open Preview mode](./media/common-data-model-intro/open-preview.png)
+
+1. For the first file in the list, click or tap the arrow to show details about that file.
+
+	![Open Details screen](./media/common-data-model-intro/open-details.png)
+
+1. In the upper-right corner, click or tap the pencil icon to change details about the file.
+
+	![Open Edit screen](./media/common-data-model-intro/edit-record.png)
+
+1. In the **Status** box, type or paste **Approved**.
+
+	![Approve a file](./media/common-data-model-intro/change-status.png)
+
+1. In the upper-right corner, click or tap the checkmark icon to save your changes and return to the details screen.
+
+	![Save changes](./media/common-data-model-intro/save-record.png)
+
+	In a few minutes, you'll receive email stating that the file was approved.
+
+1. In the upper-right corner, click or tap the back button to return to the browse screen.
+
+	![Return to browse screen](./media/common-data-model-intro/back-arrow.png)
+
+1. For the other file in the list, click or tap the arrow to show details about that file.
+
+	![Open Details screen](./media/common-data-model-intro/open-details.png)
+
+1. In the upper-right corner, click or tap the pencil icon to change details about the file.
+
+	![Open Edit screen](./media/common-data-model-intro/edit-record.png)
+
+1. In the **Status** box, type or paste **Rejected**.
+
+	![Reject file](./media/common-data-model-intro/reject-file.png)
+
+1. In the upper-right corner, click or tap the checkmark icon to save your changes and return to the details screen.
+
+	![Save changes](./media/common-data-model-intro/save-record.png)
+
+	In a few minutes, you'll receive email stating that the file was rejected, and the file will be deleted from Dropbox.
