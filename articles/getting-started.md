@@ -19,6 +19,9 @@
    ms.author="stepsic"/>
 
 # Get started with Microsoft Flow #
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+
 Welcome! Microsoft Flow is a *preview* product to help you set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. After you [sign up](sign-up-sign-in.md), you can quickly start to automate your work.
 
 ## Check out some templates ##
