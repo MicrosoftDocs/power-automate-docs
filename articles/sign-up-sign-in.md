@@ -19,6 +19,9 @@
    ms.author="anjlic"/>
 
 # Sign up and sign in for Microsoft Flow #
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc" frameborder="0" allowfullscreen></iframe>
+
 Before you can create a flow, sign up by using an email address from your work or school. If you've never used an online Microsoft product with that account, you'll need to take a few moments to register it. Select **Sign up free**. After signing up, start to discover the power of flows.
 
 If you've used an online Microsoft product with your account, select **Sign in**.
