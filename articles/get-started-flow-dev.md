@@ -1,6 +1,6 @@
 <properties
     pageTitle="Start to build | Microsoft Flow"
-    description="Create a custom API, share it, embed a flow, and much more."
+    description="Create a custom API, share it, embed a flow, and do much more."
     services=""
     suite="flow"
     documentationCenter="na"
