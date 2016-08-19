@@ -286,11 +286,11 @@ By following the steps in this section, you'll build:
 1. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
 
 ## Build the app ##
-1. In [powerapps.com](https://web.powerapps.com), click or tap **New app** near the bottom of the left navigation bar.
+1. Sign in to [powerapps.com](https://web.powerapps.com), and then click or tap **New app** near the bottom of the left navigation bar.
 
 	![Create an app in a browser](./media/common-data-model-approve/new-app-button.png)
 
-1. In the dialog box that appears, click or tap either option if you have PowerApps Studio for Windows. Otherwise, click or tap the option to open PowerApps Studio for the web.
+1. In the dialog box that appears, click or tap the option to open either PowerApps Studio for Windows or PowerApps Studio for the web.
 
 1. If you opened PowerApps Studio for Windows, click or tap **New** in the left navigation bar.
 
@@ -298,7 +298,7 @@ By following the steps in this section, you'll build:
 
 	![Create app](./media/common-data-model-approve/afd-cdm.png)
 
-1. Near the upper-right corner, type or paste **Review** in the search bar.
+1. In the **Search** box, type or paste **Review**.
 
 	![Search for an entity](./media/common-data-model-approve/search-entities.png)
 
@@ -376,7 +376,7 @@ By following the steps in this section, you'll build:
 
 	![Open Edit screen](./media/common-data-model-approve/edit-record.png)
 
-1. In the **Status** box, type or paste **Rejected**.
+1. In the **Status** box, type or paste **Rejected** (or anything except **Approved**, including **Aproved** or **Approoved**).
 
 	![Reject file](./media/common-data-model-approve/reject-file.png)
 
