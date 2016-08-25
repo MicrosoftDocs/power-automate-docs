@@ -31,13 +31,15 @@ For example, leverage the Common Data Model within Microsoft Flow in these key w
 
 	For detailed steps, see [Build an approval loop with the Common Data Model](common-data-model-approve.md).
 
-## Open a template ##
-1. If you haven't already, sign up for [Microsoft Flow](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
+**Prerequisites**
+
+- Sign up for [Microsoft Flow](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
 
 	If you have trouble, verify whether [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 
-1. If you're new to the Common Data Model, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
+- If you haven't used the Common Data Model before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
+## Open a template ##
 1. Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
 
 	**Note**: you might need to maximize your browser window to show the **Sign in** button.
