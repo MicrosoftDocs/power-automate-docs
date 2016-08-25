@@ -1,6 +1,6 @@
 <properties
     pageTitle="Microsoft Common Data Model| Microsoft Flow"
-    description="Use the Microsoft Common Data Model inside of Microsoft Flow to import data, export data, or build approvals."
+    description="Create a flow to import data, export data, or build approvals with the Microsoft Common Data Model."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -18,104 +18,78 @@
    ms.date="08/05/2016"
    ms.author="stepsic"/>
 
-# Use the Microsoft Common Data Model in a flow
-The [Microsoft Common Data Model](https://powerapps.microsoft.com/tutorials/data-platform-intro/) is a secure business database that comprises well-formed standard business entities that you can deploy for use in your organization. With the Common Data Model, you can improve operational efficiency with a unified view of business data. The Common Data Model provides standard entities common across most industry domains – Sales, Purchase, Customer Service, and Productivity among others. You can also store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
+# Create a flow that uses the Microsoft Common Data Model #
+Improve operational efficiency with a unified view of business data by creating flow that uses the [Microsoft Common Data Model](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
-Microsoft Flow and the Common Data Model work well together in two key ways:
+For example, leverage the Common Data Model within Microsoft Flow in these key ways:
 
-1. If you already use the Common Data Model to [build an app in PowerApps](https://powerapps.microsoft.com/tutorials/data-platform-create-app/), you can use flows to import that data, export that data, or take action on top of it (such as sending a notification).
+- Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
 
-1. You can also use the Common Data Model as a store for state in flows. You don't need the Common Data Model to [create an approval flow through email](wait-for-approvals.md). But you can more easily use another mechanism, such as a custom app that you build in PowerApps if you store approval state in the Common Data Model.
+	For detailed steps, see the procedures later in this topic.
 
-## Import data into the Common Data Model and take action ##
-You can move data into or out of the Common Data Model by creating a flow either from a template or from scratch. Note that this approach isn't a full synchronization service - it simply allows you to move data in or out on a per-entity basis.
+- Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in the Common Data Model, and build a custom app in which users can approve or reject items.
 
-1. In powerapps.com, [open the Entities tab](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
+	For detailed steps, see [Build an approval loop with the Common Data Model](common-data-model-approve.md).
 
-1. In the [Microsoft Flow portal](https://flow.microsoft.com), sign in with your work or organization account.
+## Open a template ##
+1. If you haven't already, sign up for [Microsoft Flow](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
 
-1. At the top of the screen, type **common data** into the search box to find templates that can import data into the Common Data Model.
+	If you have trouble, verify whether [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 
-	![Search results](./media/common-data-model-intro/templatesearch.png)
+1. If you're new to the Common Data Model, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
-1. In the list of templates, click or tap the template for the data source from which you want to import data and the entity (or *object*) that you want to import.
+1. Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
 
-1. If this template does what you want, click or tap **Use this template**.
+	**Note**: you might need to maximize your browser window to show the **Sign in** button.
 
-1. If prompted, provide your credentials to connect to the services that the template uses.
+	![Sign in](./media/common-data-model-intro/signin-flow.png)
+
+1. In the **Search templates** box at the top of the screen, type or paste **common**, and then press Enter.
+
+	![Search for templates](./media/common-data-model-intro/template-search.png)
+
+1. In the list of templates, click or tap the template that imports data from the source you want into the entity (or *object*) that you want.
+
+	For example, click or tap the template that copies contact information from Dynamics CRM into the Common Data Model.
+
+	![Choose a template](./media/common-data-model-intro/choose-template.png)
+
+1. Click or tap **Use this template**.
+
+	![Use template](./media/common-data-model-intro/use-template.png)
+
+1. If you haven't already created a connection from Microsoft Flow to Dynamics CRM, click or tap **Sign in**, and then provide your credentials if prompted.
+
+	![Sign in to Dynamics CRM](./media/common-data-model-intro/dynamics-signin.png)
 
 1. Click or tap **Continue**.
 
-	![Connect](./media/common-data-model-intro/connect.png)
+	![Confirm accounts](./media/common-data-model-intro/confirm-accounts.png)
 
-1. In the first card (the *trigger*), you may need to fill out required settings. For example, for Dynamics CRM, specify the instance from which you want to import data.
+## Build your flow ##
 
-1. Select the database that you set up earlier in this topic.
+1. In the first card, specify the event that will trigger the flow.
 
-	![Configure](./media/common-data-model-intro/configure.png)
+	For example, you're building a flow that will copy new contacts from an instance of Dynamics CRM to the Common Data Model. Under **When a record is created**, specify the instance by clicking or tapping the down arrow and then clicking or tapping an option in the list that appears.
+
+	![Specify instance of Dynamics CRM](./media/common-data-model-intro/specify-instance.png)
+
+1. Under **Create object**, click or tap the down arrow, and then click or tap the database into which you want to import data.
+
+	![Specify database](./media/common-data-model-intro/specify-database.png)
+
+1. (optional) Near the top of the screen, specify a different name for the flow that you're creating.
+
+	**Note**: If your browser window isn't maximized, the UI might look slightly different.
+
+	![Name flow](./media/common-data-model-intro/name-flow.png)
 
 1. Click or tap **Create flow**.
 
+	**Note**: If your browser window isn't maximized, only the checkmark may appear.
+
+	![Create flow](./media/common-data-model-intro/create-flow.png)
+
 Now, whenever that object is created in the source system, it will be imported into the Common Data Model. If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of the Common Data Model.
 
-You can take actions on changes in the Common Data Model. For example, you can create a notification whenever the data model changes.
-
-## Building approvals in your application ##
-The Common Data Model can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status (for example, pending, approved, or rejected) in the Common Data Model, your flow can work on top of it.
-
-In this example, you'll build a flow to approve or reject a file added to Dropbox. This topic describes how to build the flow from scratch, but you can also create one from a template.
-
-### Build the entity ###
-1. [Open the Entities tab of powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
-
-1. Click or tap **New entity** under **Entities** to create a custom entity in which you'll store the approval data, and provide the required details.
-
-	![Add entity](./media/common-data-model-intro/entity-properties.png)
-
-1. Add fields to the entity, such as **AssignedTo** and **Status**. For this flow, we'll also use the **FileID** field so that we know which file is being approved.
-
-	![Entity fields](./media/common-data-model-intro/entity-fields.png)
-
-### Build your flow ###
-1.  On the [Microsoft Flow portal](https://flow.microsoft.com), click or tap **Create a flow**.
-
-1. Add a **When a file is created** trigger, and specify the folder that you want to watch.
-
-	![Dropbox trigger](./media/common-data-model-intro/dropbox-trigger.png)
-
-1. Add a **Create an Object** action for the Common Data Model, select the database that you created earlier, and select the **Approval** entity.
-
-	![Create object](./media/common-data-model-intro/create-object.png)
-
-1. Add a **Do-until** to check on the status of the approval.
-
-	![Add do until](./media/common-data-model-intro/add-do-until.png)
-
-1. In the **Do-until**, add an action, and select **Get Object**. This allows you to check the status. You need to pass the **FileID** into the **Object ID** field. After you add this step, you can populate the condition in the Do-until card.
-
-	![Get object](./media/common-data-model-intro/get-object.png)
-
-1. **Add a condition** below the **Do-until** card. For the condition, get the **Status**, and check whether it's approved or rejected.
-
-    ![Check status](./media/common-data-model-intro/check-status.png)
-
-1. In the condition box, you can add the two steps for Approval and Rejection. For example, on Rejection you can **Delete the file**.
-
-	![Delete rejected](./media/common-data-model-intro/delete-rejected.png)
-
-### Build the app to do the approval  ###
-Now you have a flow that listens to the data and responds to an approval or rejection, but you still need a way for a reviewer to approve or reject the files added to Dropbox. You can do that inside of an app that you create in PowerApps.
-
-1. In [powerapps.com](https://web.powerapps.com), click or tap **New app**.
-
-1. Under **Create an app from your data**, click or tap the **Common Data Model** tile.
-
-	![Create app](./media/common-data-model-intro/create-app.png)
-
-1. Under **Choose an entity**, click or tap the entity that you created.
-
-	![Document approval](./media/common-data-model-intro/document-approval.png)
-
-1. You should now have an app with which a reviewer can approve or reject a file. If you update the Status field now, the flow should execute the correct logic.
-
-	![Document rejected](./media/common-data-model-intro/document-rejected.png)
+You can take actions on changes in the Common Data Model. For example, you can send notification mail whenever data changes.
