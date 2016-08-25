@@ -1,6 +1,6 @@
 <properties
     pageTitle="Microsoft Common Data Model| Microsoft Flow"
-    description="Use the Microsoft Common Data Model inside of Microsoft Flow to import data, export data, or build approvals."
+    description="Create a flow to import data, export data, or build approvals with the Microsoft Common Data Model."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -18,16 +18,16 @@
    ms.date="08/05/2016"
    ms.author="stepsic"/>
 
-# Use the Microsoft Common Data Model in a flow #
-The [Microsoft Common Data Model](https://powerapps.microsoft.com/tutorials/data-platform-intro/) is a secure business database that comprises well-formed standard business entities that you can deploy for use in your organization. With the Common Data Model, you can improve operational efficiency with a unified view of business data. The Common Data Model provides standard entities common across most industry domains – Sales, Purchase, Customer Service, and Productivity among others. You can also store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
+# Create a flow that uses the Microsoft Common Data Model #
+Improve operational efficiency with a unified view of business data by creating flow that uses the [Microsoft Common Data Model](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
-Microsoft Flow and the Common Data Model work well together in two key ways:
+For example, leverage the Common Data Model within Microsoft Flow in these key ways:
 
-- If you already use the Common Data Model to [build an app in PowerApps](https://powerapps.microsoft.com/tutorials/data-platform-create-app/), you can use flows to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
+- Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
 
 	For detailed steps, see the procedures later in this topic.
 
-- As an alternative to [creating an approval loop through email](wait-for-approvals.md), you can now create a custom app in which users can approve or reject items. To store the approval state, you build a flow that updates an entity in the Common Data Model when the approval loop starts and ends.
+- Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in the Common Data Model, and build a custom app in which users can approve or reject items.
 
 	For detailed steps, see [Build an approval loop with the Common Data Model](common-data-model-approve.md).
 
