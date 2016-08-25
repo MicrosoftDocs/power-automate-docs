@@ -19,6 +19,9 @@
    ms.author="mhade"/>
 
 # Watch your flows in action #
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3wPoUCGm7Yg" frameborder="0" allowfullscreen></iframe>
+
 To ensure that your flows run as you expect, perform the starting action, and review the inputs and outputs that each step in your flow generates.
 
 1. Create or update a flow, but leave the designer open after you select **Create flow** or **Update flow**.
