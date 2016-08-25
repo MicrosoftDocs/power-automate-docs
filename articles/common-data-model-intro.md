@@ -34,7 +34,7 @@ For example, leverage the Common Data Model within Microsoft Flow in these key w
 ## Open a template ##
 1. If you haven't already, sign up for [Microsoft Flow](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
 
-	If you have trouble, verify whether [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](signup-for-powerapps.md) supports the type of account that you have and your organization hasn't blocked signup.
+	If you have trouble, verify whether [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 
 1. If you're new to the Common Data Model, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 

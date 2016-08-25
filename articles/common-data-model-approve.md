@@ -32,7 +32,7 @@ By following the steps in this section, you'll build:
 - an **app** in which a reviewer can approve or reject files added to Dropbox. You'll use PowerApps to generate this app automatically based on the fields in the custom entity.
 
 **Prerequisites**
-- Sign up for [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](signup-for-powerapps.md).
+- Sign up for [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/).
 - Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ## Build the entity ##
