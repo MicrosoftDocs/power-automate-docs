@@ -32,9 +32,11 @@ For example, leverage the Common Data Model within Microsoft Flow in these key w
 	For detailed steps, see [Build an approval loop with the Common Data Model](common-data-model-approve.md).
 
 ## Open a template ##
-1. If you haven't already, sign up for [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](signup-for-powerapps.md).
+1. If you haven't already, sign up for [Microsoft Flow](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
 
-1. If you're new to the Common Data Model, [open the Entities tab](https://web.powerapps.com/#/entities) of powerapps.com, and then click or tap **Create my database**.
+	If you have trouble, verify whether [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](signup-for-powerapps.md) supports the type of account that you have and your organization hasn't blocked signup.
+
+1. If you're new to the Common Data Model, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
 1. Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
 
@@ -42,13 +44,13 @@ For example, leverage the Common Data Model within Microsoft Flow in these key w
 
 	![Sign in](./media/common-data-model-intro/signin-flow.png)
 
-1. In the **Search templates** box at the top of the screen, type or paste **common** and then press Return.
+1. In the **Search templates** box at the top of the screen, type or paste **common**, and then press Enter.
 
 	![Search for templates](./media/common-data-model-intro/template-search.png)
 
 1. In the list of templates, click or tap the template that imports data from the source you want into the entity (or *object*) that you want.
 
-	For example, click or tap the template that imports contact information from Dynamics CRM into the Common Data Model.
+	For example, click or tap the template that copies contact information from Dynamics CRM into the Common Data Model.
 
 	![Choose a template](./media/common-data-model-intro/choose-template.png)
 
@@ -56,7 +58,7 @@ For example, leverage the Common Data Model within Microsoft Flow in these key w
 
 	![Use template](./media/common-data-model-intro/use-template.png)
 
-1. If you haven't already created a connection from Microsoft Flow to Dynamics CRM, click or tap **Sign in**, and then provide your credentials.
+1. If you haven't already created a connection from Microsoft Flow to Dynamics CRM, click or tap **Sign in**, and then provide your credentials if prompted.
 
 	![Sign in to Dynamics CRM](./media/common-data-model-intro/dynamics-signin.png)
 
