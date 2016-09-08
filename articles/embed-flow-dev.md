@@ -34,21 +34,31 @@ The fastest way to get started is to embed a view of possible flow templates for
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={seach term}&pagesize={number of templates}&appid={application id}&destination={destination}"></iframe>
 ```
 
-| Parameter           | Description                   |
-|---------------------|-------------------------------|
-| locale              | The four-letter language and region code for the template view. For example `en-us` for American English or `de-de` for German.  |
-| search term         | The search term for the templates you want to show in the view. For example, if you want templates about wunderlist, search `wunderlist` |
-| number of templates | How many templates you want to show in the view |
-| application id      | Send a mail to flowdev@service.microsoft.com to get a unique application ID |
-| destination         | For now, the template details page is the only possible destination. Use `details` as the value |
-
-For example, to show the top 4 templates about wunderlist in German you can do:
-
-```
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&appid=XXXXXXXXXXXXXX&destination=details"></iframe>
-```
+| Query string parameter  | Description                                                                                                                      |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| locale                  | The four-letter language and region code for the template view. For example `en-us` for American English or `de-de` for German.  |
+| search term             | The search term for the templates you want to show in the view. For example, if you want templates about wunderlist, search `wunderlist` |
+| number of templates     | How many templates you want to show in the view |
+| application id          | Send a mail to flowdev@service.microsoft.com to get a unique application ID |
+| destination             | For now, the template details page is the only possible destination. Use `details` as the value |
+| parameters.{name}       | Additional context to pass into the flow |
 
 When your users click on the template they will be taken to Microsoft Flow and be able to create a flow. See the next section if you want to have the full experience work from inside of the app.
+
+### Passing additonal parameters to the flow ###
+
+There may be cases where the user is in a certain context in your web site or application and you want to pass that context to the flow. For example, imagine the user is looking at a certain list in Wunderlist, and there was a template for *Notify me when an item is added to a list*. You can pass in the list ID as a *parameter* to the Flow. This requires two steps:
+
+1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`. 
+2. Pass the parameter in the iframe src. For example, if you have a parameter called **listName**, then add `&parameters.{parameter_name}={the name of the list}`. 
+
+### Full sample ###
+
+In summary, to show the top 4 templates about wunderlist in German, and to start the user with **myCoolList**, you can do:
+
+```
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&appid=XXXXXXXXXXXXXX&destination=details&parameters.listName=myCoolList"></iframe>
+```
 
 ## Embed the management of flows ##
 
@@ -134,7 +144,7 @@ Here is a full example that demonstrates all of these pieces together:
     <script>
         window.msFlowSdkLoaded = function() {
             var sdk = new MsFlowSdk({
-                appId: '0BB97B4F1901437BB5D97B58AEDEDBDE',
+                appId: 'XXXXXXXXXXXXXX',
                 hostName: 'https://flow.microsoft.com'
             });
             var widget = sdk.renderWidget('flows', {
