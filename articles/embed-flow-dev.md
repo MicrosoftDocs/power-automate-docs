@@ -21,6 +21,8 @@
 # Extend your application or web site by integrating with Microsoft Flow #
 Microsoft Flow makes it easy for anyone to automate tasks in their life. If you have an application or a web site that may need a way to give your users a simple way to build automation, then you can now embed Microsoft Flow right into your experience.
 
+Emebedding Microsoft Flow means that your users will need to either create a **Microsoft Account** or a work or school account in **Azure Active Directory**. We do not support, for example, a whitelabel solution where you could embed Microsoft Flow and your users would be able to use whatever identity your system (unless your service or web site already uses Microsoft Accounts or AAD).
+
 **Prerequisites**
 
 1. Before you embed you will probably want to build an API inside flow that connects to your service. [Read more here](get-started-flow-dev.md) about how to expose your API to Microsoft Flow.
@@ -40,7 +42,7 @@ The fastest way to get started is to embed a view of possible flow templates for
 | search term             | The search term for the templates you want to show in the view. For example, if you want templates about wunderlist, search `wunderlist` |
 | number of templates     | How many templates you want to show in the view |
 | application id          | Send a mail to flowdev@service.microsoft.com to get a unique application ID |
-| destination             | For now, the template details page is the only possible destination. Use `details` as the value |
+| destination             | Where the user is navigated to when they click the template. Either `details` to go to the template details, page, or `new` to be taken directly to the Flow designer. |
 | parameters.{name}       | Additional context to pass into the flow |
 
 When your users click on the template they will be taken to Microsoft Flow and be able to create a flow. See the next section if you want to have the full experience work from inside of the app.
@@ -62,7 +64,7 @@ In summary, to show the top 4 templates about wunderlist in German, and to start
 
 ## Embed the management of flows ##
 
-If you want your users to be able to create and manage flows directly from your web site or app without navigating to the flow portal, you can use the authenticated Flow SDK. 
+If you want your users to be able to create and manage flows directly from your web site or app without ever having to navigate to the flow portal, you can use the authenticated Flow SDK. You will need to sign the user in to Microsoft Account or Azure Active Directory to use the autenticated SDK.
 
 ### Include the JavaScript for the authenticated SDK ###
 Include the flow sdk in your HTML code like this. You may also download, minify and package the SDK with your product. We will version the SDK in the coming months before GA.
@@ -93,6 +95,8 @@ We recommend that you style this container so that it appears with appropriate d
 </head>
 ```
 
+Note that the iframe will not render properly below 320 pixels in width, and will no longer fill content above 1200 pixels in width. Any height should work. 
+
 ### Authentication against the SDK ###
 For listing flows that the user have already authored and also to create flows from templates, you will need to provide an authToken from the AAD.
 
@@ -110,7 +114,7 @@ For listing flows that the user have already authored and also to create flows f
        {
             var authCallback = function(token) {
                 widgetDoneCallback(null, {
-                    token: token // Get access token from your backend system
+                    token: token // Get AAD access token from your backend system
                 });
             };
         }
