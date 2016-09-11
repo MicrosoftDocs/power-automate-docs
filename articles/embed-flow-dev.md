@@ -1,6 +1,6 @@
 <properties
     pageTitle="Embed the Flow experience | Microsoft Flow"
-    description="Embed the Microsoft Flow experiences into your web site or application"
+    description="Embed the Microsoft Flow experiences into your website or app"
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,66 +15,61 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="09/07/2016"
+    ms.date="09/07/2016"
     ms.author="barathb"/>
 
-# Extend your application or web site by integrating with Microsoft Flow #
-Microsoft Flow makes it easy for anyone to automate tasks in their life. If you have an application or a web site that may need a way to give your users a simple way to build automation, then you can now embed Microsoft Flow right into your experience.
+# Extend your app or website by integrating with Microsoft Flow #
+Embed Microsoft Flow right into your app or website to give users a simple way to automate their personal or professional tasks.
 
-Emebedding Microsoft Flow means that your users will need to either create a **Microsoft Account** or a work or school account in **Azure Active Directory**. We do not support, for example, a whitelabel solution where you could embed Microsoft Flow and your users would be able to use whatever identity your system (unless your service or web site already uses Microsoft Accounts or AAD).
+To create flows, users will need either a **Microsoft Account** or a work or school account in **Azure Active Directory**. Microsoft Flow doesn't support, for example, a whitelabel solution that supports whatever identity your system  uses (unless it already uses Microsoft Accounts or AAD).
 
-**Prerequisites**
+## Prerequisites ##
+- [Build an API](get-started-flow-dev.md) that connects your service to Microsoft Flow.
+- [Create and publish one or more templates](publish-a-template.md) that use your API.
 
-1. Before you embed you will probably want to build an API inside flow that connects to your service. [Read more here](get-started-flow-dev.md) about how to expose your API to Microsoft Flow.
-2. Second, you will want to publish one or more templates that use your API. [Read more here](publish-a-template.md) to see how you can publish a template.
-
-## Show flow templates for your scenarios ##
-
-The fastest way to get started is to embed a view of possible flow templates for your users. Once you have some templates you can show them directly in your website:
+## Show templates for your scenarios ##
+To start, add this code to show the flow templates directly in your website:
 
 ```
-<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={seach term}&pagesize={number of templates}&appid={application id}&destination={destination}"></iframe>
+<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}&pagesize={number of templates}&appid={application id}&destination={destination}"></iframe>
 ```
 
-| Query string parameter  | Description                                                                                                                      |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| locale                  | The four-letter language and region code for the template view. For example `en-us` for American English or `de-de` for German.  |
-| search term             | The search term for the templates you want to show in the view. For example, if you want templates about wunderlist, search `wunderlist` |
-| number of templates     | How many templates you want to show in the view |
-| application id          | Send a mail to flowdev@service.microsoft.com to get a unique application ID |
-| destination             | Where the user is navigated to when they click the template. Either `details` to go to the template details, page, or `new` to be taken directly to the Flow designer. |
-| parameters.{name}       | Additional context to pass into the flow |
+| Parameter  | Description |
+|-------------------------|-----------|
+| locale | The four-letter language and region code for the template view. For example, `en-us` represents American English, and `de-de` represents German.  |
+| search term | The search term for the templates that you want to show in the view. For example, search `wunderlist` to show templates for Wunderlist. |
+| number of templates | The number of templates that you want to show in the view. |
+| application id | Send mail to flowdev@service.microsoft.com to get a unique application ID. |
+| destination | The page that opens when users click the template. Specify `details` to show the details about the template, or specify `new` to open the Microsoft Flow designer. |
+| parameters.{name} | Additional context to pass into the flow. |
 
-When your users click on the template they will be taken to Microsoft Flow and be able to create a flow. See the next section if you want to have the full experience work from inside of the app.
+If the destination parameter is `new`, Microsoft Flow opens when users click a template, and they can create a flow in the designer. See the next section if you want to have the full experience work from inside of the app.
 
-### Passing additonal parameters to the flow ###
+### Passing additional parameters to the flow ###
+If the user is in a certain context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *Notify me when an item is added to a list* while looking at a certain list in Wunderlist. By following these steps, you can pass in the list ID as a *parameter* to the flow:
 
-There may be cases where the user is in a certain context in your web site or application and you want to pass that context to the flow. For example, imagine the user is looking at a certain list in Wunderlist, and there was a template for *Notify me when an item is added to a list*. You can pass in the list ID as a *parameter* to the Flow. This requires two steps:
-
-1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`. 
-2. Pass the parameter in the iframe src. For example, if you have a parameter called **listName**, then add `&parameters.{parameter_name}={the name of the list}`. 
+1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`.
+2. Pass the parameter in the iframe src. For example, add `&parameters.listName={the name of the list}` if you have a parameter called **listName**.
 
 ### Full sample ###
-
-In summary, to show the top 4 templates about wunderlist in German, and to start the user with **myCoolList**, you can do:
+To show the top four templates about Wunderlist in German and to start the user with **myCoolList**:
 
 ```
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&appid=XXXXXXXXXXXXXX&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Embed the management of flows ##
-
-If you want your users to be able to create and manage flows directly from your web site or app without ever having to navigate to the flow portal, you can use the authenticated Flow SDK. You will need to sign the user in to Microsoft Account or Azure Active Directory to use the autenticated SDK.
+Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to the Microsoft Flow portal). You'll need to sign the user in to Microsoft Account or Azure Active Directory to use the authenticated SDK.
 
 ### Include the JavaScript for the authenticated SDK ###
-Include the flow sdk in your HTML code like this. You may also download, minify and package the SDK with your product. We will version the SDK in the coming months before GA.
+Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product. The SDK isn't versioned yet, but that change is in our near-term backlog.
 
 ```
 <script src="https://flow.microsoft.com/content/msflowsdk.js" async defer></script>
 ```
 
 ### Create a container to contain the view ###
-Add a HTML div with like this:
+Add an HTML div:
 
 ```
 <div id="flowDiv" class="flowContainer"></div>
@@ -95,10 +90,10 @@ We recommend that you style this container so that it appears with appropriate d
 </head>
 ```
 
-Note that the iframe will not render properly below 320 pixels in width, and will no longer fill content above 1200 pixels in width. Any height should work. 
+Note that the iframe won't render properly below 320 pixels in width and won't fill content above 1200 pixels in width. Any height should work.
 
 ### Authentication against the SDK ###
-For listing flows that the user have already authored and also to create flows from templates, you will need to provide an authToken from the AAD.
+For listing flows that the user has already authored and also to create flows from templates, provide an authToken from the AAD.
 
 ```
 <script>
@@ -118,12 +113,11 @@ For listing flows that the user have already authored and also to create flows f
                 });
             };
         }
-    } 
+    }
 </script>
 ```
 
 ### Full sample ###
-
 Here is a full example that demonstrates all of these pieces together:
 
 ```
@@ -142,9 +136,9 @@ Here is a full example that demonstrates all of these pieces together:
 <body>
     <h1>Sample FLOW IFRAME</h1>
     <div id="flowDiv" class="flowContainer"></div>
-    <!-- this authHelper is only example only. Replace it with your own AAD library -->
+    <!-- this authHelper is an example only. Replace it with your own AAD library -->
     <script src="sdk/authHelper.js"></script>
-    <script src="https://flow.microsoft.com/content/msflowsdk.js" asycn defer></script>
+    <script src="https://flow.microsoft.com/content/msflowsdk.js" async defer></script>
     <script>
         window.msFlowSdkLoaded = function() {
             var sdk = new MsFlowSdk({
@@ -162,7 +156,7 @@ Here is a full example that demonstrates all of these pieces together:
                     });
                 };
 
-                // this auth helper is only example only. replace it with your own login logic
+                // this auth helper is an example only. replace it with your own login logic
                 authHelper.getToken(requestParam.data.resource, authCallback);
             }
         }
