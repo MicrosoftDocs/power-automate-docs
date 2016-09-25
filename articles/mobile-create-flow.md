@@ -19,13 +19,13 @@
    ms.author="adiregev"/>
 
 # Create a flow from your phone by using Microsoft Flow #
-Create a flow from your phone by using a template or starting from scratch. Find a template by searching through a list of services, browsing categories, or specifying keywords. Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your manager.
+Create a flow from your phone by using a template, which you can find by searching through a list of services, browsing categories, or specifying keywords. Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your manager.
 
 If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
 
 ## Prerequisites ##
 - An [account for Microsoft Flow](sign-up-sign-in.md).
-- The mobile app for Microsoft Flow installed on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but they resemble the interface on an Android device.
+- The mobile app for Microsoft Flow installed on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device is similar.
 - To use the template demonstrated in this topic, you'll also need:
 
 	- Office 365 credentials.
@@ -36,11 +36,11 @@ If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
 
 	![Browse icon](./media/mobile-create-flow/browse-icon.png)
 
-	You can find a template by following any of these steps:
+	You can find a template in any of these ways:
 
 	- Specify a keyword in the search box at the top of the screen.
 	- Tap an option in the list of services.
-	- Scroll down to show a variety of categories, and tap a template in any of them.
+	- Scroll down to show a variety of categories, and then tap a template in any category.
 
 	    ![Browse tab](./media/mobile-create-flow/browse-tab.png)
 
@@ -50,7 +50,7 @@ If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
 
 	![Show list of services](./media/mobile-create-flow/list-services.png)
 
-1. Tap the icon for **Push notifications**.
+1. Tap the icon for **Push notification**.
 
 	![Push notifications](./media/mobile-create-flow/push-notifications.png)
 
@@ -63,7 +63,7 @@ If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
 	![Confirm template](./media/mobile-create-flow/confirm-template.png)
 
 ## Finish the flow ##
-1. If prompted, tap **Sign in** and provide your credentials for Office 365 Outlook, Office 365 Users, or both.
+1. If prompted, tap **Sign in**, and provide your credentials for Office 365 Outlook, Office 365 Users, or both.
 
 	![Sign in to Office 365](./media/mobile-create-flow/office-signin.png)
 
