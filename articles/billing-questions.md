@@ -19,7 +19,7 @@
    ms.author="casoper"/>
 
 # Billing and metering questions
-test test
+
 This article answers frequently asked questions regarding billing and metering in Microsoft Flow.
 
 ## Where can I find out what pricing plans are available?
