@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="sunaysv"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""/>
 
