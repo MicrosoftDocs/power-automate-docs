@@ -28,9 +28,9 @@ Now, let's say you want to create a flow that inserts data somewhere. Your optio
 
 - Insert data into an Excel file, and store the Excel file in a cloud storage account, such as OneDrive.
 - Create your own SQL Database, and store your data in it.
-- Use the Common Data Model to store your data.
+- Use the common data model to store your data.
 
-Every environment can have zero or one databases in the Common Data Model, which is basically storage for your flows. Access to the Common Data Model depends on the license you purchase; it is not included with the Free license.
+Every environment can have zero or one databases in the common data model, which is basically storage for your flows. Access to the common data model depends on the license you purchase; it is not included with the Free license.
 
 ## Use the default environment
 
@@ -56,7 +56,7 @@ A *Preview user* is someone who was using Microsoft Flow before it's release to 
 |--- | --- |
 | Name | Enter the name of your environment, such as `Dev/Test`, or `Sandbox`. |
 | Region | Choose the location to host your environment. For the best performance, we recommend using a region closest to your users. For example, if your Flow app users are in London, then choose the Europe region. If your Flow app users are in New York, then choose the United States region. |
-| Create database automatically | Check this setting to create the Common Data Model database. The Common Data Model is available with some licenses. So if you don't see this property, then it's not included with your license. |
+| Create database automatically | Check this setting to create the common data model database. The common data model is available with some licenses. So if you don't see this property, then it's not included with your license. |
 
 3. Select **Create**. Your new environment is listed. 
 
@@ -92,11 +92,11 @@ Next, add users to the environment.
 ##### Can I migrate a Flow in my U.S. environment, to a Europe environment?
 No, flows cannot be moved between environments. Currently, recreate the flow in the new environment.
 
-##### Which license includes Common Data Model?
+##### Which license includes the common data model?
 Office 365 Business Premium (Plan P2)
 
-##### Can the Common Data Model be used outside of an environment?
-No. Common Data Model requires an environment.
+##### Can the common data model be used outside of an environment?
+No. The common data model requires an environment.
 
 ##### What regions include Microsoft Flow?
 Microsoft Flow supports all the same regions that Office 365 supports. Microsoft does not publicly advertise all datacenters, but the [Office 365 datacenter map](http://o365datacentermap.azurewebsites.net/) provides more information.
