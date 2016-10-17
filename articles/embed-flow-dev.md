@@ -31,7 +31,7 @@ To create flows, users will need either a **Microsoft Account** or a work or sch
 To start, add this code to show the flow templates directly in your website:
 
 ```
-<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}&pagesize={number of templates}&appid={application id}&destination={destination}"></iframe>
+<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}&pagesize={number of templates}&destination={destination}"></iframe>
 ```
 
 | Parameter  | Description |
@@ -39,7 +39,6 @@ To start, add this code to show the flow templates directly in your website:
 | locale | The four-letter language and region code for the template view. For example, `en-us` represents American English, and `de-de` represents German.  |
 | search term | The search term for the templates that you want to show in the view. For example, search `wunderlist` to show templates for Wunderlist. |
 | number of templates | The number of templates that you want to show in the view. |
-| application id | Send mail to flowdev@service.microsoft.com to get a unique application ID. |
 | destination | The page that opens when users click the template. Specify `details` to show the details about the template, or specify `new` to open the Microsoft Flow designer. |
 | parameters.{name} | Additional context to pass into the flow. |
 
@@ -55,7 +54,7 @@ If the user is in a certain context in your website or app, you might want to pa
 To show the top four templates about Wunderlist in German and to start the user with **myCoolList**:
 
 ```
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&appid=XXXXXXXXXXXXXX&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Embed the management of flows ##
@@ -99,8 +98,7 @@ For listing flows that the user has already authored and also to create flows fr
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
-            appId: 'XXXXXXXXXXXXXX', // get one from Flow team
-            hostName: 'https://flow.microsoft.com'
+            appId: 'XXXXXXXXXXXXXX' // get one from Flow team by emailing flowdev at service dot microsoft dot com
         });
         var widget = sdk.renderWidget('flows', {
             container: 'flowDiv'
@@ -117,50 +115,19 @@ For listing flows that the user has already authored and also to create flows fr
 </script>
 ```
 
-### Full sample ###
-Here is a full example that demonstrates all of these pieces together:
+In this example, `requestParam` is defined as:
 
 ```
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        .flowContainer iframe {
-            width: 400px;
-            height: 1000px;
-            border: none;
-            overflow: hidden;
-        }
-    </style>
-</head>
-<body>
-    <h1>Sample FLOW IFRAME</h1>
-    <div id="flowDiv" class="flowContainer"></div>
-    <!-- this authHelper is an example only. Replace it with your own AAD library -->
-    <script src="sdk/authHelper.js"></script>
-    <script src="https://flow.microsoft.com/content/msflowsdk.js" async defer></script>
-    <script>
-        window.msFlowSdkLoaded = function() {
-            var sdk = new MsFlowSdk({
-                appId: 'XXXXXXXXXXXXXX',
-                hostName: 'https://flow.microsoft.com'
-            });
-            var widget = sdk.renderWidget('flows', {
-                container: 'flowDiv'
-            });
-            var authHelper = new window.AuthHelper();
-            widget.callbacks.GET_ACCESS_TOKEN = function(requestParam, widgetDoneCallback) {
-                var authCallback = function(token) {
-                    widgetDoneCallback(null, {
-                        token: token
-                    });
-                };
+export interface IRpcRequestParam {
+    callInfo: IRpcCallInfo,
+    data?: any;
+}
+```
 
-                // this auth helper is an example only. replace it with your own login logic
-                authHelper.getToken(requestParam.data.resource, authCallback);
-            }
-        }
-    </script>
-</body>
-</html>
+Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this fuction are (errorResult: any, successResult: any). The successResult will depend on the callback type. For GetAccessToken the type is:
+
+```
+export interface IGetAccessTokenResult {
+    token: string;
+}
 ```
