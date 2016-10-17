@@ -124,11 +124,10 @@ export interface IRpcRequestParam {
 }
 ```
 
-Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token aquisition is likely an async process. The parameters that need to be passed in when calling this fuction are (errorResult: any, successResult: any). The successResult will depend on the callback type. For GetAccessToken the type is:
+Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this fuction are (errorResult: any, successResult: any). The successResult will depend on the callback type. For GetAccessToken the type is:
 
 ```
 export interface IGetAccessTokenResult {
     token: string;
 }
 ```
-
