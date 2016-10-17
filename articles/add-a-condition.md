@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="stepsic-microsoft-com"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""/>
 
