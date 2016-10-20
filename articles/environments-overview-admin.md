@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/19/2016"
+   ms.date="10/20/2016"
    ms.author="sunayv"/>
 
 # Using environments within Microsoft Flow
@@ -52,19 +52,19 @@ The **Default** environment is available for every user, and is shared by all us
 
 > [!TIP] If you're a Preview user, all existing flows reside in the default environment. A *Preview user* is someone who was using Microsoft Flow before its release to General Availability (GA). 
 
-## Use the Administrator portal
-Administrators use the Administrator Portal to create environments, add users to these environments, and other similar tasks. There are two ways to open the Administrator Portal:
+## Use the administrator center
+Administrators use the administrator center to create environments, add users to these environments, and other similar tasks. There are two ways to open the administrator center:
 
 #### Option 1: Select Settings
 
 1. Sign in to [flow.microsoft.com](https://flow.microsoft.com).
 2. Select the Settings gear, and choose **Administrator Portal** from the list:  
 ![Settings and Administrator Portal](./media/environments-overview-admin/settings.png)
-3. The Administrator Portal opens.
+3. The administrator center opens.
 
 #### Option 2: Open admin.flow.microsoft.com
 
-Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in with your work account. The Administrator Portal opens.
+Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in with your work account. The administrator center opens.
 
 
 ## Create an environment
@@ -140,6 +140,6 @@ Microsoft Flow supports all the same regions that Office 365 supports. Microsoft
 ##### What is needed to create my own custom environment?
 Office 365 Business (Plan P1) and Office 365 Business Premium (Plan P2) license users can create their own environments, in addition to the default environment. Other Office 365 licenses, such as Free, cannot create their own environments. 
 
-You also need to be an Administrator to create the environments in the Administrator portal. 
+You also need to be an Administrator to create the environments in the administrator center. 
 
 
