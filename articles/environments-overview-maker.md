@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Switching environments when creating a Flow | Microsoft Flow"
-    description="How to use different environments when creating a Flow"
+    pageTitle="Switching environments when creating a Microsoft Flow | Microsoft Flow"
+    description="How a maker uses different environments when creating a Microsoft Flow"
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,34 +15,42 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/13/2016"
+   ms.date="10/19/2016"
    ms.author="sunayv"/>
 
 # Choosing an environment
 
-When you create a Flow, you can choose which environment to host the flow. For example, you are creating a new Flow that will be tested in a non-production manner. In this scenario, you can create your flow in a *Dev/Test* environment.
+Environments provide an isolation boundary for your flows, connections, gateways, and other resources. When you create a flow, you choose which environment to host the flow, and the resources used by that flow. You can use different environments for different scenarios. 
 
-When this new flow has been tested, and is ready to be used publicly, you can then create this flow in a different environment. 
+Some examples: 
 
-Environments are created by Flow administrators. Flow administrators also control who has access to the different environments. 
+- You are creating a flow that uses a SharePoint connection. In this scenario, the flow and the SharePoint connection reside in the same environment. This ensures all the resources are isolated within that environment (isolation boundary).
+- You are creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow. For example, you don't want your Sales group to use the flow. In this scenario, you can use a separate environment, which only the HR users have permissions, to host the flow, and any resources the flow uses, including gateways or connections. 
+- There are users in Europe that use a flow to show SharePoint data. In this scenario, create an environment in Europe that hosts the flow, and the SharePoint connection. This Europe environment gives the European users the best performance, as all resources are local to Europe (data locality). 
+
+Environments are created by Microsoft Flow administrators. These administrators also control who has access to the different environments. 
 
 This topic shows you how to navigate between different environments. 
 
+## What you need to know
+
+- Gateways are created in the Default environment. Gateways cannot be created in other environments. 
+- Flows can use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a SharePoint connection. This SharePoint connection must be in the same environment as the flow. 
+
+
 ## Switching environments
 
-Flow makes it pretty easy to switch between environments. When you do switch, you are seeing all the items in that specific environment; you are not seeing items in any other environment. 
+Microsoft Flow makes it pretty easy to switch between environments. When you do switch, you are seeing all the items in that specific environment; you are not seeing items in any other environment. 
 
 Here's an example. 
 
-You create a flow named *NewMember* in the *Sandbox* environment. In [flow.microsoft.com](http://flow.microsoft.com), you open the *Dev/Test* environment. The *NewMember* flow is not listed. To see the *NewMember* flow, open the *Sandbox* environment.
-
-This applies to any items you create in the environment, including connections, gateways, PowerApps, and more.
+You create a flow named *NewEmployee* in the *Human Resources* environment. In [flow.microsoft.com](http://flow.microsoft.com), you open the *Sales* environment. The *NewEmployee* flow is not listed. To see the *NewEmployee* flow, open the *Human Resources* environment. Remember, this applies to any items you create in the environment, including connections, gateways, PowerApps, and more.
 
 1. Open [flow.microsoft.com](http://flow.microsoft.com).
 2. In the top right corner, you see your name, and the environment you're in:  
 ![](./media/environments-overview-maker/default-environment.png)
 
-	In the image, notice the notifications. These notifications are specific to my flow in this default environment.
+	In the image, notice the notifications. These notifications are specific to the flow in this default environment.
 
 3. Select your name. In the drop-down list, all the environments available to you are listed. Your current environment is checked:  
 ![](./media/environments-overview-maker/all-environments.png)
@@ -55,7 +63,9 @@ This applies to any items you create in the environment, including connections, 
 
 	In the image, notice there are no notifications. The new Europe environment has no notifications. 
 
-Now, create your flow. 
+
+## What you did
+Using these steps, you switch between environments that you have permissions to use. Now, go start creating your flows. 
 
 ## Next steps
 
