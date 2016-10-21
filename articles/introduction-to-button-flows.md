@@ -25,7 +25,7 @@
 There are many repetitive tasks that we all wish we could execute with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Online build of your code base after you've been notified that there are no more checkins planned for the day. Button flows allows you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
 **Note** You can create button flows either from your mobile device or from the Flow portal.  
-  ![Overview image](./media/introduction-to-button-flows/button-1.png)  
+  ![Overview image](./media/introduction-to-button-flows/buttons-montage.png)  
 
 ## Why create buttons?
 Create buttons so that you can easily execute repetitive tasks from anyplace, at anytime via your mobile device. Executing buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
@@ -137,6 +137,6 @@ On the **My flows** tab of the Flow app:
 ![Overview image](./media/introduction-to-button-flows/manage-flow-5.png)  
 
 ## Next steps
-[Buttons blog post]() - todo
-[Install the Flow app for Android]() - todo
-[Install the Flow app for iOS]()   - todo
+- [Buttons blog post]() - todo
+- [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
+- [Install the Flow app for iOS]()   - todo
