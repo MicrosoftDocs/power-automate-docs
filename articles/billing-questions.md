@@ -54,7 +54,7 @@ Any runs triggered after your usage exceeds the limits of your plan will fail.
 
 ## What happens if I try to execute runs too frequently? 
 
-Runs are queued until they are able to be executed according to your plan.  For example, if you are on the free plan, your flows may only be run every 15 minutes.  Flows triggered more frequently than that will queue until the current 15-minute period expires, at which time all queued flows will run.  Checks for new data does not count as a run.
+Runs are queued until they are able to be executed according to your plan.  For example, if you are on the free plan, your flows may only be run every 15 minutes.  Flows triggered more frequently than that will queue until the current 15-minute period expires, at which time all queued flows will run.  Checks for new data do not count as runs.
 
 ## What counts as a run?
 
