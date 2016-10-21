@@ -49,7 +49,7 @@ No, it's unavailable as a private, internal cloud service. In the future, you'll
 Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
 ## What data sources will I be able to connect to?
-During the preview period, you'll see built-in data connectors to more than 35 services, including Office 365, Twitter, OneDrive, Dropbox, Google Drive, Slack, MailChimp, Facebook, Dynamics CRM, SharePoint, Salesforce, and SQL. Connections will be added as the preview progresses.
+During the preview period, you'll see built-in data connectors to more than 35 services, including Office 365, Twitter, OneDrive, Dropbox, Google Drive, Slack, MailChimp, Facebook, Dynamics 365, SharePoint, Salesforce, and SQL. Connections will be added as the preview progresses.
 
 ## How do I connect to a REST API in my flow?
 You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods.

@@ -29,7 +29,7 @@ If you [visit the home page](https://flow.microsoft.com) for Microsoft Flow, you
 
 ![Flow homepage](./media/getting-started/home-page.png)
 
-Each template is designed for a specific purpose such as sending you a text message when your boss emails you, adding Twitter leads to CRM, or backing up your files. These templates are just the tip of the iceberg and are intended to inspire you to create flows that are customized to the exact processes that you need.
+Each template is designed for a specific purpose such as sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg and are intended to inspire you to create flows that are customized to the exact processes that you need.
 
 ## Create your first flow ##
 When you're ready, [sign in](https://flow.microsoft.com/signin) on your tablet, your desktop computer, or even your phone.
@@ -48,9 +48,9 @@ Now that you have some idea of what a flow can do and a bit of experience, [crea
 - an Excel file in a cloud-storage account such as Dropbox, OneDrive, or Google Drive
 - a Google sheet
 - a SharePoint list
-- Salesforce or Microsoft Dynamics CRM Online with custom entities
+- Salesforce or Microsoft Dynamics 365 with custom entities
 - a SQL Azure table
-- [the Microsoft Common Data Model](common-data-model-intro.md)
+- [the Microsoft Common Data Service](common-data-model-intro.md)
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 

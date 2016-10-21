@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="aftowen"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""
  />
@@ -71,4 +71,4 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 ## Next steps ##
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
-- [Use a template for the Microsoft Common Data Model](common-data-model-intro.md)
+- [Use a template for the Common Data Service](common-data-model-intro.md)
