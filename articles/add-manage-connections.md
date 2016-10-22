@@ -64,7 +64,7 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
 
 1. In the list of **Available connections**, select **SQL Server**, and then select the **Connect via on-premise data gateway** checkbox as shown here.
 
-    ![Select gateway][(./media/add-manage-connections/select-gateway.png)]
+    ![Select gateway](./media/add-manage-connections/select-gateway.png)
 
 1. Configure the connection credentials, and select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
 
