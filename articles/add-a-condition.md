@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/08/2016"
+   ms.date="10/22/2016"
    ms.author="stepsic"/>
 
 # Add a condition to a flow #
@@ -24,21 +24,15 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
 **Prerequisites**
 
-- [Create a flow](get-started-logic-template.md) from a template
+- [Create a flow](get-started-logic-template.md) from a template - this tutorial will [use this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example
 
 ## Add a condition ##
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My Flows** in the top navigation bar.
 
-1. In the list of flows, select the edit icon next to the flow that you created from a template.
+1. In the list of flows, select a flow that you have created. This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
-    ![Icon to edit the azuretweets flow](./media/add-a-condition/edit-flow.png)
-
-1. In the title bar of the action, select the ellipsis icon (...), and then select **Delete**.
-
-1. Under the trigger, select the plus button.
-
-    ![Icon to add an action or a condition](./media/add-a-condition/plus-button.png)
+1. Under the last action, select the **New step** button.
 
 1. Select **Add a condition**.
 
@@ -52,8 +46,12 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
     ![The OBJECT NAME box with a parameter in it](./media/add-a-condition/specify-condition.png)
 
-1. Select **Add an action**, and then type **send email**.
+1. Click on the header of action you want inside of condition (such as **Create item**) and drag it underneath the text that reads **IF YES**. When you release the cursor, the action should move into that box.
 
-    ![Add action inside](./media/add-a-condition/ifyes.png)
+    ![Drag action(./media/add-a-condition/drag-action.png)
 
-1. Specify what the email should contain, just as you did when you created the flow, and then select **Update flow**.
+1. Save the flow.
+
+## Edit in advanced mode ##
+
+You can also select the **Edit in advanced mode** link to write more advanced conditions. You can use any expression from the *Workflow definition language* here. [Learn more about](https://msdn.microsoft.com/en-us/library/azure/mt643789.aspx) what functions are available.

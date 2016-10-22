@@ -38,6 +38,8 @@
 
 1. Flows cannot write to Lookup, Choice, People and Groups, and Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
 
+1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
+
 ## What's new ##
 
 ### Release 2016-10-16 ###
