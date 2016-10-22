@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="stepsic-microsoft-com"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""/>
 
@@ -24,7 +24,7 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
 **Prerequisites**
 
-- [Create a flow](https://flow.microsoft.com/documentation/get-started-logic-template/) from a template
+- [Create a flow](get-started-logic-template.md) from a template
 
 ## Add a condition ##
 

@@ -1,6 +1,6 @@
 <properties
     pageTitle="Start to build | Microsoft Flow"
-    description="Create a custom API, share it, embed a flow, and much more."
+    description="Create a custom API, share it, embed a flow, and do much more."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -12,40 +12,43 @@
 <tags
     ms.service="flow"
     ms.devlang="na"
-    ms.topic="sarticle"
+    ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="04/19/2016"
+   ms.date="09/09/2016"
     ms.author="barathb"/>
 
 # Start to build with Microsoft Flow #
-Extend Microsoft Flow in these ways, among others:
+Extend your application with Microsoft Flow in these ways, among others:
 
 - create and connect to a custom API
 - share that API with all users of Microsoft Flow
 - embed the flow experience from within an app
 - leverage all the developer APIs so that users can interact with Microsoft Flow in the best way for them
 
-**Prerequisites**
-
+## Prerequisites ##
 - An account on [flow.microsoft.com](https://flow.microsoft.com)
-- Office 365 credentials
+- A work or school email address
 
 ## Create a custom API ##
-Create a custom API, and then [register it](https://powerapps.microsoft.com/en-us/tutorials/register-custom-api/) so that it can contribute to a larger experience.
+When you have a web service that you want to be able to automate with Microsoft Flow, you'll first need to build a custom API. By registering a custom API, you teach Microsoft Flow about the characteristics of your web API, including the authentication that it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
+
+Follow [this tutorial](https://powerapps.microsoft.com/tutorials/register-custom-api/) to register a custom API. After you register it, you can share it inside of your organization so that others can help you test it.
 
 ## Share a custom API with all Microsoft Flow users ##
-After you fully test your API, start the review process by sending this information to flowdev@service.microsoft.com.
+After you fully test your custom API, start the review process by sending this information to flowdev@service.microsoft.com:
 
-- A swagger file that represents your API
+- A Swagger file that represents your API and any authentication information
 - An icon for your connector
 - A description of your API
 - Approximately 10 ideas for how your API could benefit other users through templates
 
-## Embed a flow ##
-Embed Microsoft Flow from within your app to enable deep integration between it and all the other services that Microsoft Flow supports. You can use these APIs:
+After you submit this information, Microsoft will start to assess your API's function in Microsoft Flow and Microsoft PowerApps.
 
-- Create/Read/Update/Delete operations on a flow
-- Read operation on the list of flow templates
+## Embed the flow experience in your website or app ##
+Finally, you can embed Microsoft Flow from within your app to enable deep, in-context integration between your app and all the other services that Microsoft Flow supports. For example, you can:
 
-Send mail to flowdev@service.microsoft.com for more information about how to embed Microsoft Flow within an app.
+- Browse all of the templates that relate to your service and let users select a template
+- Manage the flows that users have related to your app
+
+Follow [this tutorial](embed-flow-dev.md) for more information about how to embed Microsoft Flow within an app.
