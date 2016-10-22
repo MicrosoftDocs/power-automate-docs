@@ -24,7 +24,7 @@
 
 Welcome! Microsoft Flow is a product to help you set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
-The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft you can directly [sign in](https://flow.microsoft.com/signin) on your tablet, your desktop computer, or even your phone.
+The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsof, you can directly [sign in](https://flow.microsoft.com/signin) on your tablet, your desktop computer, or even your phone.
 
 ## Check out the home page ##
 [On the home page](https://flow.microsoft.com) for Microsoft Flow, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and read about some key features for Microsoft Flow. You can get a quick sense of what's possible and how Microsoft Flow could help your business and your life.
@@ -39,13 +39,13 @@ You will need to find a flow template that would be useful for you. A very simpl
 
 ![Flow templates](./media/getting-started/template-details.png)
 
-Using templates is very easy: first, select **Use this template**.
+Using this template is very easy: first, select **Use this template**.
 
 Then select **Create** and accept the terms and conditions.
 
 ![Create connection](./media/getting-started/create-connection.png)
 
-Now you can explore the events that trigger the flow and the actions that result from those events. Play around with the settings to make the flow your own, and even add or delete actions. Finally, select **Create flow**, and then verify that your flow is running as expected (or just select **Done**).
+Now you can explore the conditions that trigger the flow and the action that result from that event. Play around with the settings to make the flow your own, and even add or delete actions. Finally, select **Create flow**, and then verify that your flow is running as expected (or just select **Done**).
 
 Explore other templates, and [follow this tutorial](get-started-logic-template.md) to get details of how to create more flows from templates.
 

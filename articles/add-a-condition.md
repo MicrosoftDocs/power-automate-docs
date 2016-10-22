@@ -48,7 +48,7 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
 1. Click on the header of action you want inside of condition (such as **Create item**) and drag it underneath the text that reads **IF YES**. When you release the cursor, the action should move into that box.
 
-    ![Drag action(./media/add-a-condition/drag-action.png)
+    ![Drag action](./media/add-a-condition/drag-action.png)
 
 1. Save the flow.
 
