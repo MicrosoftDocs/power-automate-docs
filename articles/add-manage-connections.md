@@ -64,7 +64,7 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
 
 1. In the list of **Available connections**, select **SQL Server**, and then select the **Connect via on-premise data gateway** checkbox as shown here.
 
-	![Select gateway][2]
+    ![Select gateway][(./media/add-manage-connections/select-gateway.png)]
 
 1. Configure the connection credentials, and select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
 
@@ -89,6 +89,11 @@ If a connection is not working because your account details or password have cha
 
 When you update a connection, it's updated for both Microsoft PowerApps and Microsoft Flow.
 
+## Troubleshooting connections
+
+If, while logged in as one account, you are unable to create a new connection to a service that is owned by your organization, such as SharePoint, Office 365 or OneDrive for Business with a different set of credentials, your organization may have configured a policy that requires you to sign in to Microsoft Flow with the same account as connecting to services. 
+
+For example, if you log in to Microsoft Flow with *yourname@outlook.com*, but you try to connect to SharePoint with *yourname@contoso.com*, and you are blocked, you can instead log in to Microsoft Flow with *yourname@contoso.com* and will be able to connect.
+
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com
-[2]: ./media/add-manage-connections/select-gateway.png

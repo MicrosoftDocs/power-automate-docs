@@ -38,13 +38,19 @@ Environments are new feature in Microsoft Flow, and include the following benefi
 
 - **Isolation boundary for all resources**: Any flows, gateways, connections, custom APIs, and so on reside in that specific environment. They do not exist in any other environments. 
 
-- **Common data model**: You want to create a flow that inserts data somewhere. Your options are:
+- **Common data service**: You want to create a flow that inserts data somewhere. Your options are:
 
 	- Insert data into an Excel file, and store the Excel file in a cloud storage account, such as OneDrive.
 	- Create your own SQL Database, and store your data in it.
-	- Use the common data model to store your data.
+	- Use the common data service to store your data.
 
-	Every environment can have zero or one database storage for your flows in the common data model. Access to the common data model depends on the license you purchase; it is not included with the Free license.
+	Every environment can have zero or one database storage for your flows in the common data service. Access to the common data service depends on the license you purchase; it is not included with the Free license.
+
+## Limitations
+
+Although, environments provide many benefits, they also introduce new limitations. The fact that environments are an isolation boundary means that you can never have resources that reference other resources *across* environments. For example, it's impossible to create a Custom API in one environment and create a flow that uses both that Custom API and a gateway in a different environment.
+
+Thus, it is important that environments are only created when necessary. Creating too many environments will make it very difficult for users across your organization to share resources.
 
 ## Use the default environment
 
@@ -78,7 +84,7 @@ Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in 
 |--- | --- |
 | Environment Name | Enter the name of your environment, such as `Human Resources`, or `Europe flows`. |
 | Region | Choose the location to host your environment. For the best performance, use a region closest to your users. For example, if your flow users are in London, then choose the Europe region. If your flow users are in New York, then choose the United States region. |
-| Provision database for this environment | Create a database in this environment. This database can be used by all users within the environment. The database is part of the common data model, which is available with some licenses. So if you don't see this property, then it's not included with your license. |
+| Provision database for this environment | Create a database in this environment. This database can be used by all users within the environment. The database is part of the common data service, which is available with some licenses. So if you don't see this property, then it's not included with your license. |
 | I do not want to provide full access to all users | Use this settings to prevent users in the environment from using the database. |
 
 3. Select **Create**. Your new environment is listed. 
@@ -98,6 +104,8 @@ Next, add users to the environment.
 	![](./media/environments-overview-admin/environment-roles.png)
 
 	A **Maker** can create new resources in an environment, such as flows, data connections, and gateways. 
+
+	> [!NOTE] A user does not need to be a **Maker** to *edit* resources in an environment, only to create *net-new* resources. Each resource creator can determine who can edit that resource, and can grant edit permissions to users who are not environment Makers.
 
 	An **Admin** can create data loss prevention policies, and also complete administrative tasks, such as create environments, add users to an environment, and assign admin/maker privileges.  
 
@@ -128,18 +136,14 @@ Next, add users to the environment.
 ##### Can I migrate a Microsoft Flow in my U.S. environment, to a Europe environment?
 No, flows cannot be moved between environments. Recreate the flow in the different environment.
 
-##### Which license includes the common data model?
-Office 365 Business Premium (Plan P2) includes the common data model, which includes the database for storage.
+##### Which license includes the common data service?
+Only Microsoft PowerApps Plan 2 includes rights to create databases with the common data service. However, all paid plans (Microsoft Flow plans 1 and 2, and Microsoft PowerApps plans 1 and 2) have the rights to use the common data service.
 
-##### Can the common data model be used outside of an environment?
-No. The common data model requires an environment.
+##### Can the common data service be used outside of an environment?
+No. The common data service requires an environment.
 
 ##### What regions include Microsoft Flow?
-Microsoft Flow supports all the same regions that Office 365 supports. Microsoft does not publicly advertise all datacenters, but the [Office 365 datacenter map](http://o365datacentermap.azurewebsites.net/) provides more information.
+Microsoft Flow supports most of the regions that Office 365 supports, see [the regions overview](regions-overview.md) for more details.
 
 ##### What is needed to create my own custom environment?
-Office 365 Business (Plan P1) and Office 365 Business Premium (Plan P2) license users can create their own environments, in addition to the default environment. Other Office 365 licenses, such as Free, cannot create their own environments. 
-
-You also need to be an Administrator to create the environments in the administrator center. 
-
-
+All users with the Microsoft Flow Plan 2 license can create their own environments, in addition to the default environment. All Microsoft Flow users, including Office 365 and Free, can use the environments created by Plan 2 administrators, but they cannot create their own environments. 
