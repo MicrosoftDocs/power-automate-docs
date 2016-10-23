@@ -24,7 +24,7 @@ Environments provide an isolation boundary for your flows, connections, gateways
 
 Some examples: 
 
-- You are creating a flow that uses a connection to the Microsoft Common Data Service. In this scenario, the flow and the common data service reside in the same environment. This ensures all the data is isolated within that environment (isolation boundary).
+- You are creating a flow that uses a connection to the Microsoft Common Data Service. In this scenario, the flow and the Common Data Service reside in the same environment. This ensures all the data is isolated within that environment (isolation boundary).
 - You are creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow. For example, you don't want your Sales group to use the flow. In this scenario, you can use a separate environment, which only the HR users have permissions, to host the flow, and any resources the flow uses, including gateways or connections. 
 - There are users in Europe that use a flow to show SharePoint data. In this scenario, create an environment in Europe that hosts the flow, and the SharePoint connection. This Europe environment gives the European users the best performance, as all resources are local to Europe (data locality). 
 
@@ -36,7 +36,7 @@ This topic shows you how to navigate between different environments.
 
 - Gateways are created in the Default environment. Gateways cannot be created in other environments. 
 - Flows can use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a SharePoint connection. This SharePoint connection must be in the same environment as the flow. 
-- The Microsoft Common Data Service database is always tied to exactly one environment. That means if you ever want to work with the common data service data you must select the same environment that the database is in. 
+- The Microsoft Common Data Service database is always tied to exactly one environment. That means if you ever want to work with the Common Data Service data you must select the same environment that the database is in. 
 - You will see all environments that you can edit resources in. This does not mean you can create new resources in all environments, however. Thus, in some environments you may be unable to create new flows. You need to ask the administrator to add you as a **Maker** to that environment, or, pick a different environment to create the flow in (you will always be able to create flows in the default environment).
 
 ## Switching environments

@@ -63,4 +63,4 @@ Microsoft does not publicly advertise all datacenters, but the [Office 365 datac
 No, Microsoft Flow is not currently available in the US Gov, Germany or China regions. Availability for national clouds is planned for 2017.
 
 ### Question: What is the "First Release" region?
-This is a special region in the United States that gets new features before any other region. So when a new feature or new functionality is added, these changes are first deployed to this "First Release" region. There is typically a week between availablity in First Release and full golbal rollout, but it can vary from feature-to-feature.
+This is a special region in the United States that gets new features before any other region. So when a new feature or new functionality is added, these changes are first deployed to this "First Release" region. There is typically a week between availablity in First Release and full global rollout, but it can vary from feature-to-feature.

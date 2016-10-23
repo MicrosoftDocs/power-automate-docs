@@ -22,7 +22,7 @@
 
 ## Common issues and resolutions ##
 
-1. If you have an Office 365 subscription, it may take some time for you to get the features of Flow for Office 365, and will be told you are using the Flow Free plan. As a workaround, you can sign up for the Flow Plan 1 trial for 90 days.
+1. If you have an Office 365 subscription, it may take some time for you to get the features of Flow for Office 365, and will be told you are using the Flow Free plan. As a workaround, you can sign up for the Microsoft Flow Plan 1 trial for 90 days.
 
 1. Flows created during preview that use the Microsoft Common Data Service:
 	- Have been moved to an environment dedicated to that database. Select the environment for that database in the top-right of the screen. [Learn more](environments-overview-maker.md). 
@@ -52,12 +52,12 @@
 
 ### Release 2016-09-25 ###
 
-Flow creation now available from your mobile phones. Browse our rich template gallery, navigate through our services list, or select a various template category to drill into. [Read more and ask questions](https://flow.microsoft.com/blog/mobile-creation/) about this release.
+Flow creation now available from your mobile phones. Browse our rich template gallery, navigate through our services list, or select a template category to drill into. [Read more and ask questions](https://flow.microsoft.com/blog/mobile-creation/) about this release.
 
 ### Release 2016-09-22 ###
 
 - **Microsoft Graph People Picker** - A new Microsoft Graph people picker is integrated directly into the Microsoft Flow UI to help you choose the right contact or email address. 
-- **Mircosoft Dynamics AX support** -  From inside your flows you can now take action on your Dynamics AX Online operations data, from creating new records to querying for data.
+- **Microsoft Dynamics AX support** -  From inside your flows you can now take action on your Dynamics AX Online operations data, from creating new records to querying for data.
 - **Two new services from partners** - Now use appFigures or Insightly from your flows.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/more-september-updates/) about this release.
@@ -79,15 +79,15 @@ Microsoft Flow now available for everyone - we initially opened up the preview t
 - **Nested conditionals** - Now you can add a second (or third, etc…) condition inside of another.
 - **Apply to each** -  An apply to each loop makes it possible to control the list that you repeat over.
 - **Do-until** - A do-until loop allows you to repeat a step until a certain condition is met. 
-- **Filter arrays** - There is a single native filter step that can make sure that every item in the list matches some expression that you define
-- **Compose string variables** -  You can now compose a string variable
-- **Scopes** - Scopes are a simple way to group two or more actions together
+- **Filter arrays** - There is a single native filter step that can make sure that every item in the list matches some expression that you define.
+- **Compose string variables** -  You can now compose a string variable.
+- **Scopes** - Scopes are a simple way to group two or more actions together.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/build-advanced-flows/) about this release.
 
 ### Release 2016-08-27 ###
 
-- **Comments on steps** - Comments make it easy to annotate each individual action with notes to that you can easily remember what the flow needs
+- **Comments on steps** - Comments make it easy to annotate each individual action with notes so that you can easily remember what the flow needs
 - **Smartsheet support** -  This week we added support to connect to Smartsheet. Smartsheet is a service that makes it easy to collaborate on sheets in the cloud. 
 - **UI refinements when authoring flows** - We have made the flow name front-and-center and moved the save button to the top of the page for easy access.
 
@@ -108,7 +108,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 
 ### Release 2016-08-08 ###
 
-Public preview of the Microsoft Common Data Model integrated in Microsoft Flow. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of the Microsoft Common Data Service integrated in Microsoft Flow. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05 ###
 
@@ -133,8 +133,8 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 ### Release 2016-07-02 ###
 
 - **Google Sheets support** - In the past, we have had both the ability to use Excel, as well as Google Drive, but this week we are adding native Google Sheets support.
-- **Get started more quickly from templates** - We have also made same optimizations to the way you can start from templates. Now, you can select what accounts you want to use for a template right inline on the template page.
-- **No expiring authorization for SharePoint and Office 365** -  Now, Microsoft Flow will automatically renew your for Azure Active Directory-based services, so all of your flows will continue working across password changes.
+- **Get started more quickly from templates** - We have also made some optimizations to the way you can start from templates. Now, you can select what accounts you want to use for a template right inline on the template page.
+- **No expiring authorization for SharePoint and Office 365** -  Now, Microsoft Flow will automatically renew your access to Azure Active Directory-based services, so all of your flows will continue working across password changes.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/more-june-updates/) about this release.
 
