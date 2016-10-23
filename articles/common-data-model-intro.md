@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="08/05/2016"
+   ms.date="10/22/2016"
    ms.author="stepsic"/>
 
 # Create a flow that uses the Common Data Service #
@@ -39,12 +39,21 @@ For example, leverage the Common Data Service within Microsoft Flow in these key
 
 - If you haven't used the Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
-## Open a template ##
+## Sign in to your Environment ##
+
 1. Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
 
-	**Note**: you might need to maximize your browser window to show the **Sign in** button.
+	**Note**: you might need to open the top-left menu to show the **Sign in** button.
 
 	![Sign in](./media/common-data-model-intro/signin-flow.png)
+
+1. In the top right menu you select the environment that you created the database in powerapps.com.
+
+	**Note**: if you do not select the same environment then you will not see your entities.
+
+	![Select environment](./media/common-data-model-intro/select-environment.png)
+
+## Open a template ##
 
 1. In the **Search templates** box at the top of the screen, type or paste **common**, and then press Enter.
 
@@ -75,10 +84,6 @@ For example, leverage the Common Data Service within Microsoft Flow in these key
 	For example, you're building a flow that will copy new contacts from an instance of Dynamics 365 to the Common Data Service. Under **When a record is created**, specify the instance by clicking or tapping the down arrow and then clicking or tapping an option in the list that appears.
 
 	![Specify instance of Dynamics 365](./media/common-data-model-intro/specify-instance.png)
-
-1. Under **Create object**, click or tap the down arrow, and then click or tap the database into which you want to import data.
-
-	![Specify database](./media/common-data-model-intro/specify-database.png)
 
 1. (optional) Near the top of the screen, specify a different name for the flow that you're creating.
 

@@ -60,6 +60,14 @@ Runs are queued until they are able to be executed according to your plan.  For 
 
 Whenever a flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. 
 
+## Are there differences between Microsoft Accounts and work or school accounts for billing?
+
+Yes. If you sign in with a Microsoft Account (such as accounts that end in @outlook.com or @gmail.com), then you will only be able to use the free plan. To take advantage of the features of the paid plan, you will need to sign in with a work or school email ID.
+
+## I'm trying to upgrade, but I'm told my account is not eligible
+
+If you have signed in using a Microsoft Account, to upgrade you need to use the email provided by your work or school. If you do not have an email from your work or school that you can use then you can create a new Office 365 trial following the instructions in this [Power BI article](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
+
 ## Other limits and caveats
 
 - Microsoft Flow accounts may have up to 50 flows each.

@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="08/19/2016"
+   ms.date="10/22/2016"
    ms.author="stepsic"/>
 
 # Build an approval loop by using Microsoft Flow and the Microsoft Common Data Service #
@@ -123,6 +123,10 @@ By following the steps in this section, you'll build:
 
 	![Sign-in button for Microsoft Flow](./media/common-data-model-approve/signin-flow.png)
 
+1. In the top right menu you select the environment that you created the database in powerapps.com.
+
+	**Note**: if you do not select the same environment then you will not see your entity.
+
 1. Near the upper-left corner, click or tap **My flows**.
 
 	![My flows button](./media/common-data-model-approve/myflows-button.png)
@@ -148,8 +152,6 @@ By following the steps in this section, you'll build:
 1. In the box that contains **Search for more actions**, type or paste **Common Data Service**, and then click or tap **Common Data Service - Create object**.
 
 	![Create an object in the Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
-
-1. Under **The namespace**, click or tap the database that contains the custom entity that you created earlier.
 
 1. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
 

@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/23/2016"
+   ms.date="10/22/2016"
    ms.author="stepsic"/>
 
 # Run flows on a schedule #
@@ -30,7 +30,7 @@ Create a flow that performs the same task or tasks, such as sending a report in 
 
 	![Create a flow from blank](./media/run-tasks-on-a-schedule/create-flow.png)
 
-1. Select **Create a flow**.
+1. Select **Create from blank**.
 
 	![Create a flow from blank](./media/run-tasks-on-a-schedule/create-from-blank.png)
 
@@ -46,13 +46,13 @@ Create a flow that performs the same task or tasks, such as sending a report in 
 
 1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
-## Schedule a flow ##
+## Delay a flow ##
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.
 
 	![Create a flow from blank](./media/run-tasks-on-a-schedule/create-flow.png)
 
-1. Select **Create a flow**.
+1. Select **Create from blank**.
 
 	![Create a flow from blank](./media/run-tasks-on-a-schedule/create-from-blank.png)
 

@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="09/07/2016"
+    ms.date="10/22/2016"
     ms.author="barathb"/>
 
 # Extend your app or website by integrating with Microsoft Flow #
