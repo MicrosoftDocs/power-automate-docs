@@ -54,4 +54,4 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
 ## Edit in advanced mode ##
 
-You can also select the **Edit in advanced mode** link to write more advanced conditions. You can use any expression from the *Workflow definition language* here. [Learn more about](https://msdn.microsoft.com/en-us/library/azure/mt643789.aspx) what functions are available.
+You can also select the **Edit in advanced mode** link to write more advanced conditions. You can use any expression from the *Workflow definition language* here. [Learn more about](https://msdn.microsoft.com/library/azure/mt643789.aspx) what functions are available.
