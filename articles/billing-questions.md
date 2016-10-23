@@ -68,6 +68,13 @@ Yes. If you sign in with a Microsoft Account (such as accounts that end in @outl
 
 If you have signed in using a Microsoft Account, to upgrade you need to use the email provided by your work or school. If you do not have an email from your work or school that you can use then you can create a new Office 365 trial following the instructions in this [Power BI article](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
+
+## Why did I run out of runs when my flow only ran a few time?
+
+Certain flows may run more frequently than you expect. For example, a flow that sends you a push notification when your manager emails you will run every time you get a new email. This is because there is a condition inside the flow to check if your manager sent it -- but even if this condition isn't met the flow is still counted as ran.
+
+You can work around this issue by putting all the filtering you need into the trigger.
+
 ## Other limits and caveats
 
 - Microsoft Flow accounts may have up to 50 flows each.

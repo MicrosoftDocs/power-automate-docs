@@ -38,7 +38,9 @@ Specify that a flow performs one or more tasks only if a particular condition is
 
     ![Condition button](./media/add-a-condition/add-condition.png)
 
-1. Select an empty area in **Object name**, and then select the **Retweet count** parameter to add it to the box.
+1. Select an empty area in **Object name**, and select **Add dynamic content** to open the dynamic content menu.
+
+1. Select the **Retweet count** parameter to add it to the box.
 
 1. In the **Relationship** box, select **is greater than or equal to**.
 
