@@ -15,7 +15,7 @@
     ms.topic="get-started-article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="4/24/2016"
+   ms.date="04/24/2016"
     ms.author="anneta"/>
 
 # Create a flow in Microsoft Flow #
