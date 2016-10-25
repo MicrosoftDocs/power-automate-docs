@@ -15,10 +15,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/19/2016"
+   ms.date="10/24/2016"
    ms.author="sunayv"/>
 
 # Choosing an environment
+
+With Microsoft Flow, you can work in different environments and easily switch among them. The scope of this article will cover the following topics on environment:
+
+- Background of what environments provide
+- Switching environments
+- How to create a flow in the right environment
+
+## Environments overview
 
 Environments provide an isolation boundary for your flows, connections, gateways, and other resources. When you create a flow, you choose which environment to host the flow, and the resources used by that flow. You can use different environments for different scenarios. 
 
@@ -30,14 +38,7 @@ Some examples:
 
 Environments are created by Microsoft Flow administrators. These administrators also control who has access to the different environments. 
 
-This topic shows you how to navigate between different environments. 
-
-## What you need to know
-
-- Gateways are created in the Default environment. Gateways cannot be created in other environments. 
-- Flows can use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a SharePoint connection. This SharePoint connection must be in the same environment as the flow. 
-- The Microsoft Common Data Service database is always tied to exactly one environment. That means if you ever want to work with the Common Data Service data you must select the same environment that the database is in. 
-- You will see all environments that you can edit resources in. This does not mean you can create new resources in all environments, however. Thus, in some environments you may be unable to create new flows. You need to ask the administrator to add you as a **Maker** to that environment, or, pick a different environment to create the flow in (you will always be able to create flows in the default environment).
+This topic shows you how to navigate between different environments. For details on how you can create and manage them, see [administer environments](environments-overview-admin.md).
 
 ## Switching environments
 
@@ -64,6 +65,16 @@ You create a flow named *NewEmployee* in the *Human Resources* environment. In [
 
 	In the image, notice there are no notifications. The new Europe environment has no notifications. 
 
+## Create flows in the right environment
+
+Before you create a flow, always make sure you select the environment you want to flow to be in. Otherwise, you will have delete and recreate the flow in the correct environment.
+
+Consider the following factors when choosing which environment to create your flows in:
+
+- Gateways are created in the Default environment. Gateways cannot be created in other environments, so if you want to connect to On-premises data you'll need to use the Default environment.
+- Flows can only use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a Custom API. This Custom API must be in the same environment as the flow. 
+- The Microsoft Common Data Service database is always tied to exactly one environment. That means if you ever want to work with the Common Data Service data you must select the same environment that the database is in. 
+- You will see all environments that you can edit resources in. This does not mean you can create new resources in all environments, however. Thus, in some environments you may be unable to create new flows. You need to ask the administrator to add you as a **Maker** to that environment, or, pick a different environment to create the flow in (you will always be able to create flows in the default environment).
 
 ## What you did
 Using these steps, you switch between environments that you have permissions to use. Now, go start creating your flows. 

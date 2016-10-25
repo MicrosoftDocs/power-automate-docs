@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/20/2016"
+   ms.date="10/24/2016"
    ms.author="mandia"/>
 
 # Regions overview in Microsoft Flow
@@ -34,15 +34,15 @@ The Microsoft Flow administrator center shows you the region. This admin center 
 ### Question: What regions are available?
 The following regions are available, or will be available: 
 
-- United States
-- United States (First Release)
-- Europe
-- Asia
-- Australia
-- India
-- Japan
-- Canada (available after General Availability (GA)) 
-- United Kingdom (available after General Availability (GA))  
+- **United States**
+- **Europe**
+- **Asia**
+- **Australia**
+- **India**
+- **Japan**
+- **United States (First Release)** (available after General Availability (GA)) 
+- **Canada** (available after General Availability (GA)) 
+- **United Kingdom** (available after General Availability (GA))  
 
 ### Question: What features are specific to a given region?
 
