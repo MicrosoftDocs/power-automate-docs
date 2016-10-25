@@ -48,7 +48,7 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 ![Overview image](./media/introduction-to-button-flows/create-button-3.png)  
 4. If you aren't signed in, you'll be prompted to do so at this point:  
 ![Overview image](./media/introduction-to-button-flows/create-button-4.png)  
-5. After you've signed into Flow, you'll be prompted to sign into the connectors used in the template you've selected. In this example, in step 2 above we selected the **Trigger a new build in VSO** template, so we have to sign into VSO (and any other connectors you are working with), if you're not already signed in:   
+5. After you've signed into Flow, you'll be prompted to sign into the connectors used in the template you've selected. In this example, in step 2 above we selected the **Trigger a new build in VSO** template, so we have to sign into VSO (and any other connectors you are working with), if you're not already signed in:  
 ![Overview image](./media/introduction-to-button-flows/create-button-pre-req-1.png)    
 6. Select the  **Accept** button if you agree to authorize Flow to access your VSO account.  
 ![Overview image](./media/introduction-to-button-flows/create-button-5.png)   
