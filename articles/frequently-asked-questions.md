@@ -80,7 +80,7 @@ By default, you can have up to 50 flows. You can request additional flows.
 Get started with the following resources:
 
 - [Blog](https://flow.microsoft.com)
-- YouTube channel
+- [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 - [Topic](getting-started.md)
 - [Community](http://powerusers.microsoft.com)
 
