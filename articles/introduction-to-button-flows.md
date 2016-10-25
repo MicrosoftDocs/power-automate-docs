@@ -44,7 +44,7 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 ![Overview image](./media/introduction-to-button-flows/create-button-1.png)   
 2. Select the **Trigger a new build in VSO** template from the list of templates.  
 ![Overview image](./media/introduction-to-button-flows/create-button-2.png)  
-3. Select the **Use this template** button on the **Trigger a new build in VSO** page.  
+3. Select the **Use this template** button on the **Trigger a new build in VSO** page.   
 ![Overview image](./media/introduction-to-button-flows/create-button-3.png)  
 4. If you aren't signed in, you'll be prompted to do so at this point:  
 ![Overview image](./media/introduction-to-button-flows/create-button-4.png)  
