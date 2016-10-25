@@ -64,17 +64,23 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	![Blank email message](./media/get-started-logic-flow/blank-email.png)
 
-1. In the **Subject** box, type or paste **New tweet from:**, type a space, and then select the **Tweeted by** parameter to add a placeholder for it.
+1. In the **Subject** box, type or paste **New tweet from:**, type a space, and then click or tap **Add dynamic content**.
 
 	![Subject line with placeholder](./media/get-started-logic-flow/message-token.png)
 
-1. In the **Body** box, select the **Tweet text** parameter to add a placeholder for it, and then type the end of your message, including any other parameters you want to include.
+1. in the list of parameters, select the **Tweeted by** parameter to add a placeholder for it.
+
+	![Add parameter](./media/get-started-logic-flow/add-parameter.png)
+
+1. Click or tap in the **Body** box, click or tap **Add dynamic content**, and click or tap the **Tweet text** parameter to add a placeholder for it.
+
+1. (optional) Add more parameters, other content, or both to the body of the email.
 
 1.  Near the top of the screen, name your flow, and then select **Create flow**.
 
 	![Select the Create flow button](./media/get-started-logic-flow/create-button.png)
 
-1. Finally, you can select **Done**, and the list of your flows will reflect your changes.
+1. Select **Done** to update the list of your flows.
 
 	![Select the done button](./media/get-started-logic-flow/done-button.png)
 
