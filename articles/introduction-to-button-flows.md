@@ -137,6 +137,5 @@ On the **My flows** tab of the Flow app:
 ![Overview image](./media/introduction-to-button-flows/manage-flow-5.png)  
 
 ## Next steps
-- [Buttons blog post]() - todo
-- [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
-- [Install the Flow app for iOS]()   - todo
+- [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)  
+- [Install the Flow app for iOS](https://appsto.re/us/5M0qbb.i)  
