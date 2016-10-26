@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/22/2016"
+   ms.date="10/26/2016"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -41,6 +41,14 @@
 1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
 
 ## What's new ##
+
+### Release 2016-10-26 ##
+
+- **Button flows** - There are countless operations we wish we could trigger anytime and anywhere. Now, with Button Flows, you can get those done at just a click of a button, from your mobile device.
+- **Announcing environments** - Environments are distinct spaces to store and manage your organization's flows. Environments are geo-located, which means that the flows, apps and business data that lives within an environment will be in the region where the environment is located.
+- **Six new services** - Adding support for Bit.ly, Cognitive Services Text Analytics, Dynamics NAV, Dynamics 365 for Financials, Instapaper, and Pinterest.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/environments-for-makers/) about this release.
 
 ### Release 2016-10-16 ###
 
