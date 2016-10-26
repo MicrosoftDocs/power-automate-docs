@@ -2,14 +2,14 @@
 	pageTitle="Create a custom Web API for Microsoft Flow | Microsoft Flow"
 	description="Learn how to create an ASP.NET Web API with Azure Active Directory authentication in Microsoft Flow"
 	services=""
-    suite="powerapps"
+    suite="flow"
 	documentationCenter=""
 	authors="camsoper"
 	manager="AFTOwen"
 	editor=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"

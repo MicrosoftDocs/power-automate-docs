@@ -2,14 +2,14 @@
 	pageTitle="Register Custom APIs in Microsoft Flow | Microsoft PowerApps"
 	description="Register Custom APIs in Microsoft Flow using Swagger and OAuth."
 	services=""
-    suite="powerapps"
+    suite="flow"
 	documentationCenter=""
 	authors="camsoper"
 	manager="AFTOwen"
 	editor=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"

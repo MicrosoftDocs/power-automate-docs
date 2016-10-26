@@ -2,14 +2,14 @@
 	pageTitle="Create a custom API using Azure Resource Manager | Microsoft Flow"
 	description="Learn how to create a custom API using Azure Resource Manager and add the API to Microsoft Flow"
 	services=""
-    suite="powerapps"
+    suite="flow"
 	documentationCenter=""
 	authors="camsoper"
 	manager="AFTOwen"
 	editor=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"

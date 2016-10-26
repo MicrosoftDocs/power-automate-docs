@@ -2,14 +2,14 @@
 	pageTitle="Customize your Swagger definition for Microsoft Flow | Microsoft Flow"
 	description="View the schema extensions required by Swagger to work with Microsoft Flow"
 	services=""
-    suite="powerapps"
+    suite="flow"
 	documentationCenter=""
 	authors="camsoper"
 	manager="AFTOwen"
 	editor=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"
