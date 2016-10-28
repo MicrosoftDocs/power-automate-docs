@@ -35,7 +35,7 @@ Microsoft Flow (Flow) is administered via the [Flow portal](http://admin.flow.co
 Learn more about how [environments](./environments-overview-admin.md) are used to manage users, permissions and roles.  
 
 ## Data loss prevention (DLP) policies 
-Learn more about how [data loss prevention policies](./introduction-to-data-loss-prevention-policies.md) are used to create rules that manage how business data is shared between services in flows.  
+Learn more about how [data loss prevention policies](./prevent-data-loss.md) are used to create rules that manage how business data is shared between services in flows.  
 
 ## Next steps
 - [Learn more about environments](./environments-overview-admin.md)   

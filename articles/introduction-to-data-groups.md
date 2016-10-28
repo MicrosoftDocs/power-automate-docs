@@ -60,5 +60,5 @@ In this walk-through, we will change the default data group from the **no busine
 ![change default group](./media/introduction-to-data-groups/default-data-group-2.png)   
 
 ## Next steps
-- [Learn more about data loss prevention (DLP) policies](./introduction-to-data-loss-prevention-policies.md)
+- [Learn more about data loss prevention (DLP) policies](./prevent-data-loss.md)
 - [Learn more about environments](./environments-overview-admin.md)   
