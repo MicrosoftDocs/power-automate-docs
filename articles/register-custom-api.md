@@ -130,9 +130,7 @@ Now that the Swagger file (JSON file) is generated for the custom API, add the c
 
 Now you're ready to use the custom API with your flow. To illustrate, we'll use a custom weather API.
 
->[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](https://flow.microsoft.com/en-us/documentation/get-started-logic-flow/).
-
-#### Add the custom API to your flow
+>[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](./get-started-logic-flow.md).
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), at the top of the page, select **My flows**, and then select **Create from blank**.
 
