@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/20/2016"
+   ms.date="10/27/2016"
    ms.author="sunayv"/>
 
 # Using environments within Microsoft Flow
@@ -64,7 +64,7 @@ Administrators use the administrator center to create environments, add users to
 #### Option 1: Select Settings
 
 1. Sign in to [flow.microsoft.com](https://flow.microsoft.com).
-2. Select the Settings gear, and choose **Administrator Portal** from the list:  
+2. Select the Settings gear, and choose **Administrator Center** from the list:  
 ![Settings and Administrator Portal](./media/environments-overview-admin/settings.png)
 3. The administrator center opens.
 
@@ -84,10 +84,8 @@ Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in 
 |--- | --- |
 | Environment Name | Enter the name of your environment, such as `Human Resources`, or `Europe flows`. |
 | Region | Choose the location to host your environment. For the best performance, use a region closest to your users. For example, if your flow users are in London, then choose the Europe region. If your flow users are in New York, then choose the United States region. |
-| Provision database for this environment | Create a database in this environment. This database can be used by all users within the environment. The database is part of the Common Data Service, which is available with some licenses. So if you don't see this property, then it's not included with your license. |
-| I do not want to provide full access to all users | Use this settings to prevent users in the environment from using the database. |
 
-3. Select **Create**. Your new environment is listed. 
+3. Select **Create an environment**. Your new environment is listed. 
 
 Next, add users to the environment.
 
@@ -128,7 +126,7 @@ Next, add users to the environment.
 
 	Select **New permission set** to create a new one. 
 
-7. In **Resources**, all the items within the environment are listed, including flows, connections, custom APIs, gateways, and PowerApps. 
+7. In **Database**, you can choose to create a database to store your data. This database is part of the Common Data Service.
 
 
 ## Commonly asked questions
@@ -139,8 +137,12 @@ No, flows cannot be moved between environments. Recreate the flow in the differe
 ##### Which license includes the Common Data Service?
 Only Microsoft PowerApps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Microsoft Flow plans 1 and 2, and Microsoft PowerApps plans 1 and 2) have the rights to use the Common Data Service.
 
+[Flow pricing](https://flow.microsoft.com/pricing/) can help you choose a plan that rights for you.  
+
+[Billing questions](billing-questions.md) also helps navigate some of the common questions we've received. 
+
 ##### Can the Common Data Service be used outside of an environment?
-No. The Common Data Service requires an environment.
+No. The Common Data Service requires an environment. [Read more](common-data-model-intro.md) about it.
 
 ##### What regions include Microsoft Flow?
 Microsoft Flow supports most of the regions that Office 365 supports, see [the regions overview](regions-overview.md) for more details.
