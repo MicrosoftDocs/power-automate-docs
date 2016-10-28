@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId=""
-   courseDuration="5m"/>
+   courseDuration="8m"/>
 
 <tags
    ms.service="flow"
@@ -22,7 +22,7 @@
 
 # A quick look at creating flows in Microsoft Flow
 
-Now that you know the basics of Microsoft Flow, let's jump into **a tour of how to create flows**. We'll quickly look at creating flows from templates and creating flows from scratch. In the next topic, we will get more hands-on with flow creation.
+Now that you know the basics of Microsoft Flow, let's jump into **a tour of Microsoft Flow**. We'll quickly look at creating flows from templates and creating flows from scratch.
 
 ## Check out the templates
 
@@ -30,7 +30,7 @@ At flow.microsoft.com, if you click the **Templates** link on the top of the pag
 
 ![Flow templates](./media/learning-quick-look-flow/template-list.png)
 
-Each template app is designed for a specific purpose, such as receiving notifications when something happens, copying a new file from one service to another, or tracking SharePoint approvals. These templates are **ready to be used.**  You just have to **configure the templates** to add flows to your account. You do this by clicking **Use this template**, signing into the required services, and then completing the forms that follow.  For example, this is a flow, created from a template, to send email notifications when a SharePoint list is modified. 
+Each template flow is designed for a specific purpose, such as receiving notifications when something happens, copying a new file from one service to another, or tracking SharePoint approvals. These templates are **ready to be used**.  You just have to **configure the templates** to add flows to your account. You do this by clicking **Use this template**, signing into the required services, and then completing the forms that follow.  For example, this is a flow created from a template to send email notifications when a SharePoint list is modified. 
 
 ![Flow SharePoint template](./media/learning-quick-look-flow/sharepoint-template.png)
 
@@ -45,3 +45,7 @@ You've seen how to create a flow using a template, but what if there's a task yo
 ![Blank flow](./media/learning-quick-look-flow/flow-from-blank.png)
 
 **The easiest way to learn about Microsoft Flow is to start with a template** and connect it to services you already use.  Then you can branch out and let your creativity take over!  In the next topic, you will learn the building blocks of Flow.
+
+## Next Steps
+
+In this topic, we took a look around Microsoft Flow.  We browsed **templates**, and we talked about **creating a flow from scratch**.  Next, we'll look at the **building blocks** of Microsoft Flow.
