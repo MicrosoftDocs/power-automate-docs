@@ -39,7 +39,7 @@ Congratulations! You have finished the first section of Microsoft Flow Guided Le
 In the meantime, here are some resources you should find useful on your journey.
 
 ## Community and documentation
-- Dig deeper with the [Microsoft Flow documentation](https://flow.microsoft.com/documentation/getting-started/)
+- Dig deeper with the [Microsoft Flow documentation](https://aka.ms/q2613b)
 - Stay current with the [Microsoft Flow blog](https://flow.microsoft.com/blog/)
 - Join the [Microsoft Flow community](https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity)
 - Improve Microsoft Flow by submitting an [idea](https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas)
