@@ -34,12 +34,16 @@ Microsoft Flow has two distinct audiences:
 Flow provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Flow, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ### How does Microsoft Flow fit in Microsoft’s overall business application platform strategy?
-Fundamental to enabling innovation in any business application platform is the ability to automate and orchestrate business processes. Microsoft Flow allows business users who are closest to business processes to build and orchestrate workflows that don’t require upfront applications, but can be seamlessly triggered by specified events. In addition, Flow works in concert with PowerApps to enable users to easily build and deploy apps for the front-end of workflows when needed. Learn more about [Microsoft’s Business Platform Strategy](http://businessplatform.microsoft.com/).
+Flow is part of a powerful and adaptable business application platform that includes PowerApps, the Common Data Service, Dynamics 365 and Office 365. This platform allows our customers, our partners, our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service and Logic Apps. API connectors, gateways and the Microsoft Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
 ## Functionality
 
 ### What do I need to use Microsoft Flow?
 To use Flow, all you need is a web browser and an email address. 
+
+
+### What browsers does Microsoft Flow support?
+Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
 ### Which email addresses are supported?
 Flow supports email addresses ending in .com, .edu, and .org. It does not currently support email addresses ending in .gov and .mil.  
@@ -83,7 +87,7 @@ You can connect to services on your local network using the [on-premises data ga
 Not today. Support for sharing flows within an organization or with a specific person will be available before the end of 2016.
 
 ### How many flows can I have?
-By default, you can have up to 50 flows. You can request additional flows.
+Flow comes with up to 25 flows. If you need more, you can request them.
 
 ### Where do I get started with Microsoft Flow?
 Get started with the following resources:
@@ -93,11 +97,8 @@ Get started with the following resources:
 - [Topic](getting-started.md)
 - [Community](http://powerusers.microsoft.com)
 
-### What browsers does Microsoft Flow support?
-Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
-
 ### What mobile operating systems does the Flow mobile app support?
-The Flow mobile app will support iOS and Android mobile operating systems 
+The Flow mobile app will support iOS and Android.
 
 ### What regions and languages does Microsoft Flow support?
 At General Availability Microsoft Flow is will be available in 42 languages and be available in [6 regions](regions-overview.md).

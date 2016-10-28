@@ -42,6 +42,17 @@
 
 ## What's new ##
 
+### Release 2016-10-31 - General Availability ##
+
+- **Pricing and licensing** - Now available in both Free and paid plans, as well as included in Office 365 and Dynamics 365.
+- **Microsoft Flow Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
+- **Data loss prevention policies** - Administrators can create data loss prevention policies to control the flow of data between services. 
+- **Android availability** - The Microsoft Flow phone app is now available for both iOS and Android. The app enables you to get notifications, monitor activity, and start flows with the tap of a button.
+- **New designer experiences** - You can now search over the dynamic content passed from step to step, making it much quicker to reference the data you want to.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/announcing-ga/) about this release.
+
+
 ### Release 2016-10-26 ##
 
 - **Button flows** - There are countless operations we wish we could trigger anytime and anywhere. Now, with Button Flows, you can get those done at just a click of a button, from your mobile device.
@@ -173,7 +184,7 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 
 Added two new services: Microsoft Project Online and Mandrill by Mailchimp. [Read more and ask questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) about this release.
 
-### Release 2016-04-27 ###
+### Release 2016-04-27 - Public Preview ###
 
 If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), the Microsoft Flow Preview release offers several new features:
 
