@@ -115,8 +115,6 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	Select a flow run from the list of flows to see the inputs and outputs of each step.
 
-	![Flow run](./media/get-started-logic-flow/flow-run.png)
-
 **Note**: You can have up to 25 flows in your account. If you already have 25, delete one before you can create another.
 
 ## Next steps ##
