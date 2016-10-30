@@ -4,7 +4,7 @@
 	services=""
 	suite="powerapps"
 	documentationCenter="na"
-	authors="stepsic-microsoft-com"
+	authors="aftowen"
 	manager="erikre"
 	editor=""
 	tags=""/>
@@ -16,7 +16,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/23/2016"
-   ms.author="stepsic"/>
+   ms.author="anneta"/>
 
 # Support
 

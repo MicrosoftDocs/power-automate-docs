@@ -15,12 +15,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="10/27/2016"
    ms.author="sunayv"/>
 
 # Choosing an environment
 
-With Microsoft Flow, you can work in different environments and easily switch among them. The scope of this article will cover the following topics on environment:
+With Microsoft Flow, you can work in different environments, and easily switch among them. The scope of this article covers the following topics on environment:
 
 - Background of what environments provide
 - Switching environments
@@ -37,6 +37,8 @@ Some examples:
 - There are users in Europe that use a flow to show SharePoint data. In this scenario, create an environment in Europe that hosts the flow, and the SharePoint connection. This Europe environment gives the European users the best performance, as all resources are local to Europe (data locality).
 
 Environments are created by Microsoft Flow administrators. These administrators also control who has access to the different environments.
+
+This topic shows you how to navigate between different environments. For details on how you can create and manage them, see [administer environments](environments-overview-admin.md).
 
 ## Switching environments
 
@@ -80,4 +82,5 @@ Using these steps, you switch between environments that you have permissions to 
 ## Next steps
 
 [Create a flow from a template](get-started-logic-template.md)  
-[Create a flow](get-started-logic-flow.md)
+[Create a flow](get-started-logic-flow.md)  
+[Environment overview for Administrators](environments-overview-admin.md)

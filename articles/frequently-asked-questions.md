@@ -2,7 +2,7 @@
 	pageTitle="Frequently asked questions | Microsoft Flow"
 	description="Answers to several common questions about Microsoft Flow"
 	services=""
-	suite="powerapps"
+	suite="flow"
 	documentationCenter="na"
 	authors="stepsic-microsoft-com"
 	manager="erikre"
@@ -15,70 +15,104 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/22/2016"
+   ms.date="10/26/2016"
    ms.author="stepsic"/>
 
-# Frequently asked questions ##
+# Frequently asked questions
 
-## What is Microsoft Flow?
-Microsoft Flow is a preview, cloud-based, business-automation service with which you can build simple processes that make your business move more quickly and efficiently with less effort. You can connect to a broad range of services through easy-to-use templates and create your own processes that are tailored to your goals.
+## Audience and strategy
 
-## How do Flow and Logic apps relate to each other?
-Microsoft Flow is a stand-alone SaaS Service that is designed for broad usage, including business users that want to automate day-to-day tasks. Logic Apps is an Azure service available through the Azure Portal. It is targeted at IT Professionals that need to tackle more complex integration problems, it includes the great features available in Microsoft Flow, plus additional capability like integration with Azure Resource Manager and the Azure Portal, PowerShell and the Azure Command-Line Interface (Azure CLI), Visual Studio, more advanced connectors. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
+### What is Microsoft Flow?
+Microsoft Flow is a cloud-based service that makes it practical and simple for line of business users to build workflows that automate time-consuming business tasks and processes across applications and services.
 
-## What pricing plans do you offer?
-Microsoft Flow is currently in preview and available at no cost. Free and paid service levels are planned for when the service is in general release, with details to follow closer to the release date. Features that are available at no cost during the preview period may be discontinued or become part of a paid tier at general availability.
+### Who is the intended audience for Microsoft Flow?
+Microsoft Flow has two distinct audiences: 
+- Line-of-business “Citizen Integrators” in enterprise organizations who partner with IT to move responsibility for business solutions closer to the business itself.
+- IT decision makers who want to empower line of business partners to create their own solutions so IT professionals and integration specialists can focus their expertise on more advanced integration tools, such as Azure Logic Apps.
 
-## What do I need to use Microsoft Flow?
-Just a web browser and a work email address.
+### How do Flow and Logic apps relate to each other?
+Flow provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Flow, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic apps](https://azure.microsoft.com/services/app-service/logic/).
 
-**Note:** Addresses that end in **.gov** and **.mil** aren't currently supported.
+### How does Microsoft Flow fit in Microsoft’s overall business application platform strategy?
+Flow is part of a powerful and adaptable business application platform that includes PowerApps, the Common Data Service, Dynamics 365 and Office 365. This platform allows our customers, our partners, our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service and Logic Apps. API connectors, gateways and the Microsoft Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
-## Why do I have to sign up with my work email?
-We don't support email addresses from consumer email services or telecommunications providers. [Learn more about the Flow sign-up process](sign-up-sign-in.md).
+## Functionality
 
-## Which work email addresses are supported?
-Work email addresses ending in .com, .edu, and .org are supported.
+### What do I need to use Microsoft Flow?
+To use Flow, all you need is a web browser and an email address. 
 
-Those ending in .gov and .mil aren’t currently supported.
 
-## Is Flow available on-premises?
-No, it's unavailable as a private, internal cloud service. In the future, you'll be able to securely connect to your own on-premises services.
+### What browsers does Microsoft Flow support?
+Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
-## What are templates?
+### Which email addresses are supported?
+Flow supports email addresses ending in .com, .edu, and .org. It does not currently support email addresses ending in .gov and .mil.  
+
+### Is Flow available on-premises?
+Microsoft Flow is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
+
+### What services can Microsoft Flow connect to? 
+Microsoft Flow connects to a range of data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following: 
+- SharePoint
+- Dynamics 365
+- OneDrive 
+- OneDrive for Business 
+- Google drive
+- Google Sheets
+- Trello
+- Twitter
+- Box
+- Facebook
+- SalesForce.com
+- Mailchimp
+- Customer APIs
+
+You can find a full list of available connectors [here](https://flow.microsoft.com/services/).
+
+You can access data sources in your own IT infrastructure through the [on-premises data gateway](gateway-manage.md).
+
+### What are templates?
 Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
-## What data sources will I be able to connect to?
-During the preview period, you'll see built-in data connectors to more than 35 services, including Office 365, Twitter, OneDrive, Dropbox, Google Drive, Slack, MailChimp, Facebook, Dynamics CRM, SharePoint, Salesforce, and SQL. Connections will be added as the preview progresses.
+### What data sources will I be able to connect to?
+You can connect to over 50 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL and more. You can also connect to premium services such as Salesforce and the Common Data Service for PowerApps.
 
-## How do I connect to a REST API in my flow?
-You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods.
+### How do I connect to a REST API in my flow?
+You can connect to any REST API that uses JSON and supports at least one of more than ten authentication methods by creating [a Custom API](get-started-flow-dev.md).
 
-## How do I connect to SQL Server and other on-premises data sources?
-Currently, you can't connect to an on-premises service, but that capability will be available in the future.
+### How do I connect to SQL Server and other on-premises data sources?
+You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md). 
 
-## What do I need to install before I can use Microsoft Flow?
-To use Microsoft Flow for free, you need just a web browser and email.
+### Can I share the flows I create?
+Not today. Support for sharing flows within an organization or with a specific person will be available before the end of 2016.
 
-## Can I share the flows I create?
-You can publish, as a template, any flow that you create. After our reviewers approve it, you can then share that template with anyone.
+### How many flows can I have?
+Flow comes with up to 25 flows. If you need more, you can request them.
 
-## Can I share flows with a specific person or my organization?
-Not today. Support for sharing flows within an organization or with a specific person will be available in the future.
-
-## How many flows can I have?
-You can have up to 25 flows.
-
-## Where do I get started with Microsoft Flow?
+### Where do I get started with Microsoft Flow?
 Get started with the following resources:
 
 - [Blog](https://flow.microsoft.com)
-- YouTube channel
+- [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 - [Topic](getting-started.md)
 - [Community](http://powerusers.microsoft.com)
 
-## What browsers does Microsoft Flow support?
-Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
+### What mobile operating systems does the Flow mobile app support?
+The Flow mobile app will support iOS and Android.
 
-## What languages does Microsoft Flow support?
-Microsoft Flow is currently available in English.
+### What regions and languages does Microsoft Flow support?
+At General Availability Microsoft Flow is will be available in 42 languages and be available in [6 regions](regions-overview.md).
+
+### How does Microsoft Flow compare to SharePoint Designer 2013? 
+Microsoft Flow is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
+
+### How does Microsoft Flow ensure that corporate data is not accidentally released to social media services? 
+Administrators can create rules with Microsoft Flow’s [data loss prevention policies](prevent-data-loss.md) to ensure only sanctioned services can be used. 
+
+##Licensing
+
+### Will Microsoft Flow still have a Free or Trial option?
+Yes. You can use our free offering, which has limited user rights, or you can sign-up for a free 90-day trial of Microsoft Flow. You can activate your subscription at any time during your trial.
+
+### What pricing plans do you offer?
+Microsoft Flow offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
