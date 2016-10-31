@@ -23,10 +23,9 @@ Install and manage an on-premises data gateway to securely integrate a variety o
 
 **Prerequisites**
 
-- the user name and password that you used to [sign up](sign-up-sign-in.md) for Microsoft Flow
-- administrative permissions on a gateway.
-
-	You have these permissions by default for each gateway that you install, and an administrator of another gateway can grant you these permissions for that gateway.
+- The user name and password that you used to [sign up](sign-up-sign-in.md) for Microsoft Flow.
+- Administrative permissions on a gateway. (You have these permissions by default for each gateway that you install, and an administrator of another gateway can grant you these permissions for that gateway.)
+- Gateways and on-premises connections can only be created and used in the user's [default environment](environments-overview-maker.md).
 
 ## View accessible gateways
 In the top header of [Flow](https://flow.microsoft.com), click or tap the account menu, and then click or tap **My gateways**.
