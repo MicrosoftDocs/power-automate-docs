@@ -1,6 +1,6 @@
 <properties
    pageTitle="Review this section | Microsoft Flow"
-   description="Review what you learned in this introduction to Flow"
+   description="Review what you learned in this introduction to Microsoft Flow"
    services=""
    suite="flow"
    documentationCenter="na"
@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId=""
-   courseDuration="5m"/>
+   courseDuration="3m"/>
 
 <tags
    ms.service="flow"
@@ -30,7 +30,7 @@ Let's do a quick review of what you learned in the first section.
 
 There are several building blocks to **Microsoft Flow**, including **connectors**, **triggers**, **actions**, and **conditions**.  In combination with more advanced components, like **loops**, you can create robust, intelligent automation that connects your various data sources and destinations.
 
-The easiest way to get started with Flow is to use the templates, and play around with some blank flows. 
+The easiest way to get started with Flow is to **use the templates**.  Once you're comfortable with templates, you should also **play around with some blank flows**. 
 
 
 ## What's next?
@@ -39,9 +39,12 @@ Congratulations! You have finished the first section of Microsoft Flow Guided Le
 In the meantime, here are some resources you should find useful on your journey.
 
 ## Community and documentation
-- Dig deeper with the [Microsoft Flow documentation](https://flow.microsoft.com/documentation/getting-started/)
+- Dig deeper with the [Microsoft Flow documentation](https://aka.ms/q2613b)
 - Stay current with the [Microsoft Flow blog](https://flow.microsoft.com/blog/)
 - Join the [Microsoft Flow community](https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity)
 - Improve Microsoft Flow by submitting an [idea](https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas)
 
-
+## Get the apps
+[iOS](https://itunes.apple.com/us/app/microsoft-flow/id1094928825)
+[Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
+**Windows** coming soon.

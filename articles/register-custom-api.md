@@ -123,16 +123,15 @@ Now that the Swagger file (JSON file) is generated for the custom API, add the c
 
 	![Available APIs](./media/register-custom-api/list-custom-apis.png)  
 
-
 5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete any necessary steps to sign in to your API's data source.  For **OAuth** authentication, that might be a sign-in screen.  For API Key authentication, you might get prompted for a key value.
 
 ### Step 3: Add the custom API to a flow
 
 Now you're ready to use the custom API with your flow. To illustrate, we'll use a custom weather API.
 
->[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](get-started-logic-flow.md).
-
 #### Add the custom API to your flow
+
+>[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](./get-started-logic-flow.md).
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), at the top of the page, select **My flows**, and then select **Create from blank**.
 
