@@ -74,7 +74,7 @@ Download the [iPhone](https://itunes.apple.com/us/app/microsoft-flow/id109492882
 
 - [monitor flow activity](mobile-monitor-activity.md), such as successes, failures, and the time when each flow ran most recently
 - [manage each flow](mobile-manage-flows.md), such as enabling or disabling it and viewing its events and actions
-- [create a flow from a template](mobile-create-flow), such as one for getting a push notification when you receive mail from a sender that you specify
+- [create a flow from a template](mobile-create-flow.md), such as one for getting a push notification when you receive mail from a sender that you specify
 
 ## Questions? Ideas? We're here to help ##
 We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues. Note that Microsoft Flow is currently in preview.
