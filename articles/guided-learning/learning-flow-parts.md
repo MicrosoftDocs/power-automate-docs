@@ -32,9 +32,9 @@ We've seen how to start creating a flow using templates or from a blank flow. No
 
 We don't expect you to take a ton of time just to learn what Microsoft Flow _is_, but we think it's helpful to flesh things out a bit more.
 
-## Connectors
+## Services
 
-**Connectors** are the **applications and services** that you use to build a flow.  Some example connectors are **Twitter**, **Github**, **Office 365**, and **Google Docs**.  These are the **sources** that provide data to Microsoft Flow as well as providing **destinations** for the work done by Microsoft Flow.  You can view the entire list of connectors by clicking the **Services** link at the top of **flow.microsoft.com**.
+Microsoft flow can connect to many different **applications and services**.  Some example services are **Twitter**, **Github**, **Office 365**, and **Google Docs**.  These are the **sources** that provide data to Microsoft Flow as well as providing **destinations** for the work done by Microsoft Flow.  You can view the entire list of services by clicking the **Services** link at the top of **flow.microsoft.com**.
 
 ![Flow connectors](./media/learning-flow-parts/flow-connectors.png)
 
@@ -46,7 +46,7 @@ Every flow starts with a **trigger**.  There are many different types of trigger
 
 ## Actions
 
-An **action** represents what you want to actually **happen** after the flow is triggered.  This might be a **notification**, **copying data or files** from a source to a destination, or some other action, like **posting to social media** or **delaying for a period of time**.  You can also use actions to **retrieve data from a connector** to use with other actions.
+An **action** represents what you want to actually **happen** after the flow is triggered.  This might be a **notification**, **copying data or files** from a source to a destination, or some other action, like **posting to social media** or **delaying for a period of time**.  You can also use actions to **retrieve data from a service** to use with other actions.
 
 ![Flow actions](./media/learning-flow-parts/flow-actions.png) 
 
@@ -62,7 +62,7 @@ An **action** represents what you want to actually **happen** after the flow is 
 
 ## Next Steps
 
-In this topic, we took a look at the components that make a flow.  We build flows using **connectors** to apps and services, **triggers** to launch the flow, **actions** to make something happen in the flow, **conditions** to make decisions, and **loops** to iterate in a flow.  Next, we'll review what we've learned so far in this Guided Learning course.
+In this topic, we took a look at the components that make a flow.  We build flows by connecting to apps and services, **triggers** to launch the flow, **actions** to make something happen in the flow, **conditions** to make decisions, and **loops** to iterate in a flow.  Next, we'll review what we've learned so far in this Guided Learning course.
 
 
 
