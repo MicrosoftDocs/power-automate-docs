@@ -39,7 +39,7 @@ Microsoft Flow **isn't limited to applications on the internet**.  You can inclu
 
 ## What you can do with Microsoft Flow
 
-The [list of applications and services you can use with Microsoft Flow](https://flow.microsoft.com/services/) (we call them **connectors**) is constantly expanding.  Some examples of tasks you can automate with Microsoft Flow are:
+The [list of applications and services you can use with Microsoft Flow](https://flow.microsoft.com/services/) is constantly expanding.  Some examples of tasks you can automate with Microsoft Flow are:
 
 - Instantaneously respond to critical notifications or emails.
 - Inform the whole team whenever a work item is updated.

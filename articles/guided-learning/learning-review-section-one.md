@@ -28,7 +28,7 @@ Let's do a quick review of what you learned in the first section.
 
 **Flow** provides many **pre-built templates** to get up and running quickly, or you **create your own flows from scratch**.   
 
-There are several building blocks to **Microsoft Flow**, including **connectors**, **triggers**, **actions**, and **conditions**.  In combination with more advanced components, like **loops**, you can create robust, intelligent automation that connects your various data sources and destinations.
+There are several building blocks to **Microsoft Flow**, including **services**, **triggers**, **actions**, and **conditions**.  In combination with more advanced components, like **loops**, you can create robust, intelligent automation that connects your various data sources and destinations.
 
 The easiest way to get started with Flow is to **use the templates**.  Once you're comfortable with templates, you should also **play around with some blank flows**. 
 
