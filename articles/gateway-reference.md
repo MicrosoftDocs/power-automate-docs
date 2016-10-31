@@ -166,7 +166,7 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 **Answer:** No. The Windows service must have a valid Windows account. By default, it will run with the Service SID, *NT SERVICE\PBIEgwService*.
 
 **Question:** How are results sent back to the cloud?  
-**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](gateway-reference#how-the-gateway-works).
+**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](gateway-reference.md#how-the-gateway-works).
 
 **Question:** Where are my credentials stored?  
 **Answer:** The credentials that you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
