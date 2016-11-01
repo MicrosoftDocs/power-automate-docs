@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="07/01/2016"
+   ms.date="10/22/2016"
    ms.author="anneta"/>
 
 # Understand on-premises data gateways for Microsoft Flow ##
@@ -137,7 +137,7 @@ This isn't the account used to connect to on-premises data sources or the work o
 ## Frequently asked questions ##
 #### General ####
 **Question:** What data sources does the gateway support?  
-**Answer:** As of this writing, SQL Server.
+**Answer:** As of this writing, SQL Server and SharePoint.
 
 **Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?  
 **Answer:** No. A gateway connects to on-premises data sources only.
@@ -166,7 +166,7 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 **Answer:** No. The Windows service must have a valid Windows account. By default, it will run with the Service SID, *NT SERVICE\PBIEgwService*.
 
 **Question:** How are results sent back to the cloud?  
-**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](gateway-reference#how-the-gateway-works).
+**Answer:** This is done by way of the Azure Service Bus. For more information, see [how it works](gateway-reference.md#how-the-gateway-works).
 
 **Question:** Where are my credentials stored?  
 **Answer:** The credentials that you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.

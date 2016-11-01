@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="aftowen"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""
  />
@@ -16,11 +16,10 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="04/23/2016"
+   ms.date="10/22/2016"
    ms.author="anneta"/>
 
 # Create a flow from a template in Microsoft Flow #
-
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
 **Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
@@ -35,19 +34,23 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJK8cYdjAic?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Browse** in the top navigation bar, and then search for a template, such as by typing **Slack**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Templates** in the top navigation bar.
+
+1. In the search bar, type **Slack**, and then select the search icon.
 
 1. You'll see only templates related to Slack, so you can now select **Send a message on Slack when my manager emails me**.
 
 	![New option in the left navigation bar](./media/get-started-logic-template/select-template.png)
 
-1. If prompted, connect to Office, Slack, or both by selecting **Add new connection** in the drop-down list for each connection and then following the prompts.
+1. Confirm that this template will do what you want, and then select **Use this template**.
+
+1. If prompted, connect to Office, Slack, or both by selecting **Sign in** and then following the prompts.
 
 	![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
 
-1. Select **Open flow**.
+1. After you confirm your connections, select **Continue**.
 
-	Your flow appears, showing each action with a orange or blue title bar.
+	Your flow appears, showing each action with an orange title bar.
 
 	![Default events and actions from template](./media/get-started-logic-template/template-default.png)
 
@@ -60,7 +63,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 	![Specify channel for slack](./media/get-started-logic-template/specify-keyword.png)
 
-1. Near the bottom of the screen, specify a name for your flow, and then select **Create Flow**.
+1. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
 
 1. Finally, if you're happy with your flow, select **Done**.
 
@@ -71,4 +74,4 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 ## Next steps ##
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
-- [Use a template for the Microsoft Common Data Model](common-data-model-intro.md)
+- [Use a template for the Common Data Service](common-data-model-intro.md)

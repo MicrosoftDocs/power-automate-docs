@@ -118,17 +118,18 @@ Now that the Swagger file (JSON file) is generated for the custom API, add the c
 	>[AZURE.TIP] If the JSON file does not use the ```securityDefintions``` object, then no additional values may be needed.
 
 	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom API.
-	
-4. Your custom API is now displayed under **Custom APIs**.
-	
-	![Available APIs](./media/register-custom-api/list-custom-apis.png)  
 
+4. Your custom API is now displayed under **Custom APIs**.
+
+	![Available APIs](./media/register-custom-api/list-custom-apis.png)  
 
 5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete any necessary steps to sign in to your API's data source.  For **OAuth** authentication, that might be a sign-in screen.  For API Key authentication, you might get prompted for a key value.
 
 ### Step 3: Add the custom API to a flow
 
 Now you're ready to use the custom API with your flow. To illustrate, we'll use a custom weather API.
+
+#### Add the custom API to your flow
 
 >[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](./get-started-logic-flow.md).
 
@@ -149,7 +150,7 @@ Now you're ready to use the custom API with your flow. To illustrate, we'll use 
 	![Your custom API](./media/register-custom-api/logicflow.png)
 
 6. Select the operation you want to call from your custom API.  For this example, the API gets the current temperature, and then sends an email using Office 365.
-	
+
 	![Weather example](./media/register-custom-api/logicflowexample.png)
 
 7. Name your flow, and then select the check mark (**&#x2713;**) to save your flow.

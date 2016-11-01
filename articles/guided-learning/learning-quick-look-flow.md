@@ -40,7 +40,7 @@ There are hundreds of templates avaiable, and you can find them in **Microsoft F
 
 ## Create a flow from scratch
 
-You've seen how to create a flow using a template, but what if there's a task you want to automate but you can't find an appropriate template? You can **build a flow from scratch**.  When you create a flow from scratch, you start from a blank canvas and add **connectors, triggers, and actions** to build your flow.  
+You've seen how to create a flow using a template, but what if there's a task you want to automate but you can't find an appropriate template? You can **build a flow from scratch**.  When you create a flow from scratch, you start from a blank canvas and add **services, triggers, and actions** to build your flow.  
 
 ![Blank flow](./media/learning-quick-look-flow/flow-from-blank.png)
 

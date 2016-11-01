@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="09/09/2016"
+   ms.date="10/22/2016"
     ms.author="barathb"/>
 
 # Start to build with Microsoft Flow #
@@ -28,7 +28,6 @@ Extend your application with Microsoft Flow in these ways, among others:
 
 ## Prerequisites ##
 - An account on [flow.microsoft.com](https://flow.microsoft.com)
-- A work or school email address
 
 ## Create a custom API ##
 When you have a web service that you want to be able to automate with Microsoft Flow, you'll first need to build a custom API. By registering a custom API, you teach Microsoft Flow about the characteristics of your web API, including the authentication that it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.

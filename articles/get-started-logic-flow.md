@@ -5,7 +5,7 @@
     suite="flow"
     documentationCenter="na"
     authors="aftowen"
-    manager="dwrede"
+    manager="anneta"
     editor=""
     tags=""
  />
@@ -33,11 +33,11 @@ Create a flow to perform one or more tasks automatically when you want an event 
 
 First, you will need to select what starting action, or *trigger*, will start your flow.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **My Flows** in the top navigation bar, and then select **Create new flow**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **My Flows** in the top navigation bar, and then select **Create from blank**.
 
 	![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png)
 
-1. In the box that says **How would you like to start?**, type or paste **Twitter**, and then select **Twitter - When a new tweet appears**.
+1. In the box that says **Search for more triggers**, type or paste **Twitter**, and then select **Twitter - When a new tweet is posted**.
 
 	![Twitter event](./media/get-started-logic-flow/twitter-search.png)
 
@@ -50,35 +50,39 @@ First, you will need to select what starting action, or *trigger*, will start yo
 	![Twitter keyword](./media/get-started-logic-flow/twitter-keyword.png)
 
 ## Specify an action ##
-1. Under the event that you created in the previous procedure, select the "+" button.
+1. Under the event that you created in the previous procedure, select **New step**, and then select **Add an action**.
 
-	![Plus icon](./media/get-started-logic-flow/add-action-icon.png)
+	![Add action](./media/get-started-logic-flow/add-action-icon.png)
 
-2. Select **Add an action**.
-
-3. In the box that shows **What would you like to do next?**, type or paste **send email**, and then select **Office 365 Outlook - Send Email**.
+3. In the box that shows **Search for more actions**, type or paste **send email**, and then select **Office 365 Outlook - Send an email**.
 
 	![List of actions](./media/get-started-logic-flow/send-email.png)
 
 4. If prompted, select the sign-in button, and then provide your credentials.
 
-	![Sign in to Office](./media/get-started-logic-flow/sign-in-office.png)
-
 5. In the form that appears, type or paste your email address in the **To** box.
 
 	![Blank email message](./media/get-started-logic-flow/blank-email.png)
 
-1. In the **Subject** box, type or paste **New tweet from:**, type a space, and then select the **Tweeted by** parameter to add a placeholder for it.
+1. In the **Subject** box, type or paste **New tweet from:**, type a space, and then click or tap **Add dynamic content**.
 
 	![Subject line with placeholder](./media/get-started-logic-flow/message-token.png)
 
-1. In the **Body** box, select the **Tweet text** parameter to add a placeholder for it, and then type the end of your message, including any other parameters you want to include.
+1. in the list of parameters, select the **Tweeted by** parameter to add a placeholder for it.
 
-1.  Near the bottom of the screen, name your flow, and then select **Create Flow**.
+	![Add parameter](./media/get-started-logic-flow/add-parameter.png)
+
+1. Click or tap in the **Body** box, click or tap **Add dynamic content**, and click or tap the **Tweet text** parameter to add a placeholder for it.
+
+1. (optional) Add more parameters, other content, or both to the body of the email.
+
+1.  Near the top of the screen, name your flow, and then select **Create flow**.
+
+	![Select the Create flow button](./media/get-started-logic-flow/create-button.png)
+
+1. Select **Done** to update the list of your flows.
 
 	![Select the done button](./media/get-started-logic-flow/done-button.png)
-
-1. Finally, you can select **Done**, and the list of your flows will reflect your changes.
 
 1. Send a tweet with the keyword that you indicated.
 
@@ -89,19 +93,19 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 2. In the list of flows, do any of the following:
 
-	- To pause your flow, select the icon that looks like a pause button next to the flow that you want to pause.
+	- To pause a flow, set its toggle to **Off**.
 
-	![Pause icon](./media/get-started-logic-flow/pause-icon.png)
+	![Pause flow](./media/get-started-logic-flow/pause-flow.png)
 
-	- To resume a flow, select the icon that looks like a play button next to the flow that you want to resume.  
+	- To resume a flow, set its toggle to **On**.  
 
-	![Resume icon](./media/get-started-logic-flow/resume-icon.png)  
+	![Resume flow](./media/get-started-logic-flow/resume-flow.png)  
 
-	- To change a flow, select the icon that looks like a pencil next to the flow that you want to change.  
+	- To change a flow, select its pencil icon.  
 
 	![Edit icon](./media/get-started-logic-flow/edit-icon.png)  
 
-	- To delete a flow, select the icon that looks like a trash can next to the flow that you want to delete, and then select **OK**.
+	- To delete a flow, select its trash-can icon, and then select **OK**.
 
 	![Delete icon](./media/get-started-logic-flow/delete-icon.png)
 
@@ -110,8 +114,6 @@ First, you will need to select what starting action, or *trigger*, will start yo
 	![Info icon](./media/get-started-logic-flow/info-icon.png)
 
 	Select a flow run from the list of flows to see the inputs and outputs of each step.
-
-	![Flow run](./media/get-started-logic-flow/flow-run.png)
 
 **Note**: You can have up to 25 flows in your account. If you already have 25, delete one before you can create another.
 
