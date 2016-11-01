@@ -71,6 +71,8 @@ Congratulations, you've created a button flow! You can now execute this button f
 
 #### Android or iOS
 
+**Note**: While this walk-through displays screens from an Android device, the screens and experience on an iOS device are similar.  
+
 In the Flow app:  
 1. Select the **Browse** tab and scroll to the **Buttons** category.  
 ![Overview image](./media/introduction-to-button-flows/create-button-from-mobile-1.png)  
