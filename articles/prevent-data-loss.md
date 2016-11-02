@@ -67,7 +67,7 @@ Congratulations, you have now created a DLP policy that allows app to share data
 
 ## Data sharing violations
 
-Assuming your admin has created the DLP policy outlined above, if a user creates a flow that shares data between Salesforce (which is in the **business data only** data group) and Twitter (which is in the ** no business data allowed** data group), the user will be informed that the flow is **suspended** due a conflict with your organization's [data loss prevention]() policy.  
+Assuming your admin has created the DLP policy outlined above, if a user creates a flow that shares data between Salesforce (which is in the **business data only** data group) and Twitter (which is in the **no business data allowed** data group), the user will be informed that the flow is **suspended** due a conflict with your organization's [data loss prevention]() policy.  
 ![create flow](./media/prevent-data-loss/10.png)  
 
 In this case, you have a few choices:
