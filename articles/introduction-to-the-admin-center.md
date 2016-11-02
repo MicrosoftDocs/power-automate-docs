@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="11/01/2016"
    ms.author="deonhe"/>
 
 
@@ -25,8 +25,6 @@
 
 ## What is the Admin center?
 The admin center is the central location where both tenant admins and environment admins manage data loss prevention (DLP) polices and environments for an organization. Any changes you make in the admin center are immediately available to users within the organization.  
-
-Microsoft Flow (Flow) is administered via the [Flow portal](http://admin.flow.com).   
 
 ## Access the Admin center
 - The Flow admin center is accessed by browsing to https://admin.flow.microsoft.com.   
