@@ -65,6 +65,18 @@ Follow these steps to create a DLP policy that prevents data that is stored in y
 
 Congratulations, you have now created a DLP policy that allows app to share data between SharePoint and Saleforce and blocks the sharing of data with any other services.  
 
+## Data sharing violations
+
+Assuming your admin has created the DLP policy outlined above, if a user creates a flow that shares data between Salesforce (which is in the **business data only** data group) and Twitter (which is in the ** no business data allowed** data group), the user will be informed that the flow is **suspended** due a conflict with your organization's [data loss prevention]() policy.  
+![create flow](./media/prevent-data-loss/10.png)  
+
+In this case, you have a few choices:
+
+1. If you feel there is a valid business reason to share business data between SharePoint and Twitter, consult your administrator and convince her that the DLP policy should be changed.  
+2. Edit your flow to comply with the DLP policy.  
+3. Leave the flow in the suspended state until you decide what to do with it.  
+If you want to modify an existing flow, you can easily find all your flows on the My flows tab after you log into Flow.  
+
 ##	Find a DLP policy
 ### Admins
 Admins can use the search feature from the Admin center to find specific DLP policies.  
