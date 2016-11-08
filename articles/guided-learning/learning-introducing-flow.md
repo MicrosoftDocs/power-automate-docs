@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introduction to Microsoft Flow | Microsoft Flow"
-   description="An introduction to Microsoft Flow.  Understand what Microsoft Flow is and its terminology."
+   description="Understand what Microsoft Flow is and what you can do with it."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId=""
-   courseDuration="4m"/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="flow"
