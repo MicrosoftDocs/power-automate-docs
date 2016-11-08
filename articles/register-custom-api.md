@@ -32,8 +32,10 @@ Microsoft Flow can leverage any RESTful APIs hosted anywhere.  This tutorial dem
 
 Custom APIs in Microsoft Flow can use any of several authentication mechanisms.
 
+- API Key
 - Basic Authentication
-- OAuth 2.0. The specific implementations below are currently supported, with more coming soon.
+- Generic OAuth 2.0. 
+- OAuth 2.0 for the the following identity providers is supported out of the box.
 
 	- Azure Active Directory
 	- Box
