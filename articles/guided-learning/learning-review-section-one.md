@@ -1,6 +1,6 @@
 <properties
    pageTitle="Review this section | Microsoft Flow"
-   description="Review what you learned in this introduction to Microsoft Flow"
+   description="Review what you learned in this introduction to Microsoft Flow."
    services=""
    suite="flow"
    documentationCenter="na"
