@@ -46,7 +46,7 @@ Follow these steps to create a DLP policy that prevents data that is stored in y
 ![Sign in](./media/prevent-data-loss/create-policy-1.png)    
 2. Enter the name of the DLP policy as *Secure Data Access for Contoso* in the **Data Policy Name** label at the top of the page that opens:   
 ![Sign in](./media/prevent-data-loss/create-policy-2.png)  
-3. Select the [environment]() on the **Applies to** tab.  
+3. Select the [environment](./environments-overview-admin.md) on the **Applies to** tab.  
 **Note:** As an environment admin, you can create policies that apply to only a single environment. As a tenant admin, you can create a policy that applies to all environments, one or more selected environments, or all environments except a selected set:  
 ![Sign in](./media/prevent-data-loss/create-policy-3.png)  
 4. Select the **Data groups** tab:  
@@ -64,6 +64,18 @@ Follow these steps to create a DLP policy that prevents data that is stored in y
 10. **Optional** Send an email or other communication to your team, alerting them that a new DLP policy is now available.
 
 Congratulations, you have now created a DLP policy that allows app to share data between SharePoint and Saleforce and blocks the sharing of data with any other services.  
+
+## Data sharing violations
+
+Assuming you have created the DLP policy outlined above, if a user creates a flow that shares data between Salesforce (which is in the **business data only** data group) and Twitter (which is in the **no business data allowed** data group), the user will be informed that the flow is **suspended** due to a conflict with the data loss prevention policy you created.  
+![create flow](./media/prevent-data-loss/10.png)  
+
+If your users contact you about suspended flows, here a few things to consider:  
+
+1. In this example, if there is a valid business reason to share business data between SharePoint and Twitter, you can edit the the DLP policy.  
+2. Ask the user to edit the flow to comply with the DLP policy.  
+3. Ask the user to leave the flow in the suspended state until a decision is made regarding the sharing of data between these two entities.  
+
 
 ##	Find a DLP policy
 ### Admins
