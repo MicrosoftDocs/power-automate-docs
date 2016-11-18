@@ -32,7 +32,7 @@ At flow.microsoft.com, if you click the **Templates** link on the top of the pag
 
 Each template flow is designed for a specific purpose, such as receiving notifications when something happens, copying a new file from one service to another, or tracking SharePoint approvals. These templates are **ready to be used**.  You just have to **configure the templates** to add flows to your account. You do this by clicking **Use this template**, signing into the required services, and then completing the forms that follow.  For example, this is a flow created from a template to send email notifications when a SharePoint list is modified. 
 
-![Flow SharePoint template](./media/learning-flow-parts/example-template.png)
+![Flow example template](./media/learning-flow-parts/example-template.png)
 
 There are hundreds of templates avaiable, and you can find them in **Microsoft Flow for web** or **Microsoft Flow for mobile**.
 
