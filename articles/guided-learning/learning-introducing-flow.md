@@ -8,7 +8,7 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="kZs7lqgp4LU"
    courseDuration="5m"/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="11/22/2016"
    ms.author="casoper"/>
 
 # Guided Learning for Microsoft Flow
@@ -56,6 +56,6 @@ To create and administer flows, you can use the web app, or you can use the mobi
 - Review detailed run history reports.
 - View and filter runs by notification type. 
 
-## Next Steps
+## Next lesson
 
 Now that you've gotten a taste of what Microsoft Flow is and what it can do, let's take a look at what makes a flow. 

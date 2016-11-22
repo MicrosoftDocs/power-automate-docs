@@ -8,7 +8,7 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="9U8jMRO-Jv0"
    courseDuration="9m"/>
 
 <tags
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="11/22/2016"
    ms.author="casoper"/>
 
 # Building blocks of Microsoft Flow
@@ -82,7 +82,7 @@ An **action** represents what you want to actually **happen** after the flow is 
 
 **Loops** allow you to execute an action more than once, like if an action needs to occur repeatedly, or once per item in a collection of items.
 
-## Next Steps
+## Next lesson
 
 In this topic, we took a look around Microsoft Flow.  We browsed **templates**, and we talked about **creating a flow from scratch**.  We build flows by connecting to apps and services, **triggers** to launch the flow, **actions** to make something happen in the flow, **conditions** to make decisions, and **loops** to iterate in a flow.  **The easiest way to learn about Microsoft Flow is to start with a template** and connect it to apps and services you already use. 
 
