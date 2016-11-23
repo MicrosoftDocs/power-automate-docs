@@ -57,7 +57,7 @@ If your API endpoint allows unauthenticated access, you should remove the ```sec
   "securityDefinitions": {
     "AAD": {
       "type": "oauth2",
-      "flow": "implicit",
+      "flow": "accessCode",
       "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
       "scopes": {}
     }
