@@ -15,14 +15,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="11/22/2016"
    ms.author="stepsic"/>
 
 # Release notes #
 
 ## Common issues and resolutions ##
-
-1. If you have an Office 365 subscription, it may take some time for you to get the features of Flow for Office 365, and will be told you are using the Flow Free plan. As a workaround, you can sign up for the Microsoft Flow Plan 1 trial for 90 days.
 
 1. Flows created during preview that use the Microsoft Common Data Service:
 	- Have been moved to an environment dedicated to that database. Select the environment for that database in the top-right of the screen. [Learn more](environments-overview-maker.md). 
@@ -41,6 +39,21 @@
 1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
 
 ## What's new ##
+
+### Release 2016-11-23 ## 
+
+- **Power BI alert support in Flow** - Turn insights into action by triggering flows from Power BI data alerts.
+- **Mobile application improvements** - Added the ability to create new flows from blank, in addition to the already existing experience of creation from templates. We also improved performance when viewing flow runs.
+- **Eight new services** - You can now connect to Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure DocumentDB, Cognitive Services Face API, HipChat and Wordpress.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) about this release.
+
+### Release 2016-11-15 ##
+
+- **Microsoft Flow Partner Program** - Microsoft Flow now has a certified partner program to make connections, and take advantage of different company’s talents and experience with Microsoft Flow around the world.
+- **Six new services** - We are also releasing six new services this week: Asana, Campfire, EasyRedmine, JIRA, Redmine, and Vimeo.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/partner-program-six-new-services/) about this release.
 
 ### Release 2016-10-31 - General Availability ##
 
