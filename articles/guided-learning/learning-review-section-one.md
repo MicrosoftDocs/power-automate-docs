@@ -36,7 +36,7 @@ The easiest way to get started with Flow is to **use the templates**.  Once you'
 ## What's next?
 Congratulations! You have finished the first section of Microsoft Flow Guided Learning. Regardless of how much experience you began with, we hope you now have a very clear picture of what Microsoft Flow is and how you can start creating flows. 
 
-As you continuing learning about Microsoft Flow, here are some resources you should find useful on your journey.
+As you continue learning about Microsoft Flow, here are some resources you should find useful on your journey.
 
 ## Community and documentation
 - Dig deeper with the [Microsoft Flow documentation](https://aka.ms/q2613b)

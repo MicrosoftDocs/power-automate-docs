@@ -28,6 +28,8 @@ This  **Guided Learning**  course currently has a Getting Started section, and w
 
 If you're a **beginner** with Microsoft Flow, this course will get you going, and if you're a Microsoft Flow **veteran** this course will tie concepts together, and fill in the gaps. We hope you enjoy the course, and look forward to including more content in the future.
 
+This Guided Learning course is an ongoing **work in progress**.  Please **let us know** how we're doing, and **other topics you want to see** in this course.
+
 
 ## What is Microsoft Flow?
 
