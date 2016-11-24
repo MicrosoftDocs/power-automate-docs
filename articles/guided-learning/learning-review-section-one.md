@@ -45,6 +45,6 @@ As you continue learning about Microsoft Flow, here are some resources you shoul
 - Improve Microsoft Flow by submitting an [idea](https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas)
 
 ## Get the apps
-[iOS](https://itunes.apple.com/us/app/microsoft-flow/id1094928825)
-[Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
-**Windows** coming soon.
+- [iOS](https://itunes.apple.com/us/app/microsoft-flow/id1094928825)
+- [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
+- **Windows** coming soon.

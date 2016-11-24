@@ -21,7 +21,7 @@
    ms.author="casoper"/>
 
 
-# Approval Requests
+# Approval requests
 
 In addition to helping you **receive notifications**, **copy files**, and **collect data**, Microsoft Flow can also help you **streamline your approval processes**.
 
