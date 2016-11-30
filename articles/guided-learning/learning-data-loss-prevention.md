@@ -62,6 +62,6 @@ Here's what it would look like if you decided to create a policy not allow any m
 ![business data only](./media/learning-data-loss-prevention/sharepoint-only-no-sharing-guided-learning.png)  
 
 ## Next steps  
-- [Flow parts](./learning-flow-parts.md)
-- 
+- [Learning - Flow parts](./learning-flow-parts.md)
+- [Learning - introduction to Flow](./learning-introducing-flow.md)
 
