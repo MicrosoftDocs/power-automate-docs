@@ -64,9 +64,9 @@ You create environments from the [flow admin center](https://admin.flow.microsof
 ## Add users to an environment
 After you create an environment, you can add users to either the environment admin role or the environment maker role. As with all other administrative tasks, you do this from the admin center.  
 
-After you've created the environment and added users, you may also want to [create a data loss prevention (DLP) policy](../data-loss-prevention.md) to help manage the use of your business data.  
+After you've created the environment and added users, you may also want to [create a data loss prevention (DLP) policy](../prevent-data-loss.md) to help manage the use of your business data.  
 
 ## Next steps  
 - [Learning - Flow parts](./learning-flow-parts.md)
 - [Learning - Introduction to Flow](./learning-introducing-flow.md)  
-- [Introduction to Microsoft Flow environments](./getting-started.md)  
+- [Introduction to Microsoft Flow environments](../getting-started.md)  
