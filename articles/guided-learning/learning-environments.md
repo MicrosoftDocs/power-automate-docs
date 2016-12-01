@@ -8,7 +8,7 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId=""
+   featuredVideoId="wnScBLz7css"
    courseDuration="5m"/>
 
 <tags
@@ -22,8 +22,6 @@
 
 
 # Learn all about Microsoft Flow environments
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/wnScBLz7css?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 ## What is an environment:
 A virtual space used to store, manage and share apps, flows and business data within the [common data service](https://powerapps.microsoft.com/blog/powerapps-cds-ga/). Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
@@ -72,4 +70,4 @@ After you've created the environment and added users, you may also want to [crea
 ## Next steps  
 - [Learning - Flow parts](./learning-flow-parts.md)
 - [Learning - Introduction to Flow](./learning-introducing-flow.md)  
-- [Introduction to Microsoft Flow environments](../getting-started.md)  
+- [Introduction to data loss prevention](../prevent-data-loss.md)  
