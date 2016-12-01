@@ -8,7 +8,7 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId="wnScBLz7css"
+   featuredVideoId=""
    courseDuration="5m"/>
 
 <tags
@@ -23,6 +23,8 @@
 
 # Learn all about Microsoft Flow environments
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/wnScBLz7css?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+
 ## What is an environment:
 A virtual space used to store, manage and share apps, flows and business data within the [common data service](https://powerapps.microsoft.com/blog/powerapps-cds-ga/). Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
 
@@ -36,6 +38,7 @@ Term|Description
 
 
 ## Purposes for an environment
+
 You can use environments to:  
 - Separate apps that may have different roles, security requirements or users.  
 - Manage test and production environments.  
