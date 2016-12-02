@@ -57,6 +57,7 @@ Here's a quick overview of how to create a DLP policy:
 1. Give the policy a name
 2. Select the environment to which the policy will apply
 3. Add the services to one of the two data groups. Remember, only services located in a specific group can share data so any flow that's created to share data between services located in the two data groups will be automatically blocked when the maker saves it.  
+
 There is also a more [detailed walk-through](../prevent-data-loss.md) on DLP policies available.  
 
 ## Examples
