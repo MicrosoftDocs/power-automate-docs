@@ -65,6 +65,8 @@ Follow these steps to create a DLP policy that prevents data that is stored in y
 
 Congratulations, you have now created a DLP policy that allows app to share data between SharePoint and Saleforce and blocks the sharing of data with any other services.  
 
+**Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the business data only data group.  
+
 ## Data sharing violations
 
 Assuming you have created the DLP policy outlined above, if a user creates a flow that shares data between Salesforce (which is in the **business data only** data group) and Twitter (which is in the **no business data allowed** data group), the user will be informed that the flow is **suspended** due to a conflict with the data loss prevention policy you created.  
