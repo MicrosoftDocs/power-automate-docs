@@ -56,11 +56,14 @@ Here's a quick overview of how to create a DLP policy:
 
 1. Give the policy a name
 2. Select the environment to which the policy will apply
-3. Add the services to one of the two data groups. Remember, any flow that's created to share data between services located in the two data groups will be automatically blocked when the maker saves it.  
+3. Add the services to one of the two data groups. Remember, only services located in a specific group can share data so any flow that's created to share data between services located in the two data groups will be automatically blocked when the maker saves it.  
+There is also a more [detailed walk-through](../prevent-data-loss.md) on DLP policies available.  
 
-There is also a more [detailed walk-through](../prevent-data-loss.md) on DLP policies available. 
+## Examples
 
-Here's what it would look like if you decided to create a policy to not allow any members of a specific environment to create a flow that shares SharePoint data. Notice that SharePoint is the only service in the **business data only** data group:  
+- If you were to create a policy that restricts flows to share business data only among SharePoint, Office 365 users, Office 365 Outlook, OneDrive for Business, Dynamics 365, SQL Server and Salesforce, it would look like this:  
+![](./media/learning-data-loss-prevention/a-few-business-centric-services.png)  
+- Here's what it would look like if you decided to create a policy to not allow any members of a specific environment to create a flow that shares SharePoint data. Notice that SharePoint is the only service in the **business data only** data group:  
 ![business data only](./media/learning-data-loss-prevention/sharepoint-only-no-sharing-guided-learning.png)  
 
 ## Next steps  
