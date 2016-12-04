@@ -20,7 +20,7 @@
    ms.date="11/22/2016"
    ms.author="casoper"/>
 
-# Review the second section
+# Review the fourth section
 
 Let's review what we've learned in this section.
 
