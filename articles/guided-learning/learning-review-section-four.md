@@ -30,4 +30,5 @@ Let's review what we've learned in this section.
 * With Microsoft Flow, you can easily create **data loss prevention** (DLP) policies to tightly control which consumer services your business data can be shared with when your users create flows.
 
 ## What's next?
-Congratulations! You have finished Microsoft Flow Guided Learning!
+
+Congratulations! You have finished Microsoft Flow Guided Learning!  For more detail on any of the topics you learned, see the in-depth [Microsoft Flow documentation](https://aka.ms/q2613b).
