@@ -42,7 +42,7 @@ Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com),
 
 ### Can I block another person from signing up for Flow?
 
-Microsoft Flow is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Microsoft Flow there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using the free features (as everyone in the world can, irrespective of their email address).
+Microsoft Flow is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Microsoft Flow there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Flow (as everyone in the world can, irrespective of their email address).
 
 However, if a person signs up for Microsoft Flow, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Microsoft Flow, that is a relationship between that individual and Microsoft directly, like any many public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not in any way imply that the service is provided by your organization.
 
@@ -60,7 +60,7 @@ Individuals can gain access to the paid features of Microsoft Flow in three diff
 
 Any individual can try out the paid features of Microsoft Flow for 90 days, and incur no costs. However, you can fully manage the assignment of the perpetual paid licenses inside of your organization through the Office 365 admin portal.
 
-As with the free offerings, if an individual chooses to sign up for the trial that is a direct relationship between the individual and Microsoft, not nessisarily endorsed by your company.
+As with the free offerings, if an individual chooses to sign up for the trial that is a direct relationship between the individual and Microsoft, not necessarily endorsed by your company.
 
 ## Administration of Flow ##
 
@@ -86,7 +86,7 @@ If a user was assigned a Flow Plan 1 or Flow Plan 2 license then you can take th
 
   ![](./media/organization-q-and-a/remove-license.png)
 
-If a user has access to Flow through their Office 365 and Dynamics 365 plan license, then you can disable their access to the Flow service by taking the following steps:
+If a user has access to Flow through their Office 365 and Dynamics 365 plan license, then you can disable their access to the additional features included in this plan by taking the following steps:
 
 1. Go to the [Office 365 Admin Portal](https://portal.microsoftonline.com/).
 
@@ -102,7 +102,7 @@ If a user has access to Flow through their Office 365 and Dynamics 365 plan lice
 
 Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
 
-Removing of the Flow license or service for a user in your organization will also result in the removal of the Flow icon from the following locations for that user:
+Removing of the Flow license or service for a user in your organization will result in the removal of the Flow icon from the following locations for that user:
 
 1. [Office.com](https://office.com)
 
@@ -116,7 +116,7 @@ Note that this will only remove the Flow tile by default. A user may still choos
 
 ### Why did 10,000 licenses for Microsoft Flow show up in my Office 365 tenant?
 
-Any person is the world can try out Microsoft Flow Plan 2 for 90 days, and these trial licenses represent the available capacity for new Flow users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Flow showing up in the Office 365 admin portal:
+Any person is the world can try out Microsoft Flow Plan 1 or 2 for 90 days, and these trial licenses represent the available capacity for new Flow users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Flow showing up in the Office 365 admin portal:
 
 1. If at least one user in your tenant participated in the Flow public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft PowerApps and Logic flows"
 
@@ -130,7 +130,7 @@ You can choose to assign additional licenses to users yourself through the Offic
 
 ### Is this free? Will I be charged for these licenses?
 
-No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotals, such as run quotas.
+No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
 
 ### I removed the Microsoft Flow Free license and users can still access Flow?
 

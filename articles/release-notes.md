@@ -40,7 +40,7 @@
 
 ## What's new ##
 
-### Release 2016-12-06 ## 
+### Release 2016-12-06
 
 - **Introducing Guided Learning** - Get started with a sequenced collection of courses that pair videos with documentation to help you understand the extensive and powerful capabilities of Flow.
 - **Two new services** - Flows can now use Freshdesk, a customer support solution, and GoToMeeting, an online meeting tool.
@@ -48,7 +48,7 @@
 
 [Read more and ask questions](https://flow.microsoft.com/blog/guided-learning-and-two-services/) about this release.
 
-### Release 2016-11-23 ## 
+### Release 2016-11-23
 
 - **Power BI alert support in Flow** - Turn insights into action by triggering flows from Power BI data alerts.
 - **Mobile application improvements** - Added the ability to create new flows from blank, in addition to the already existing experience of creation from templates. We also improved performance when viewing flow runs.
@@ -56,14 +56,14 @@
 
 [Read more and ask questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) about this release.
 
-### Release 2016-11-15 ##
+### Release 2016-11-15
 
 - **Microsoft Flow Partner Program** - Microsoft Flow now has a certified partner program to make connections, and take advantage of different company’s talents and experience with Microsoft Flow around the world.
 - **Six new services** - We are also releasing six new services this week: Asana, Campfire, EasyRedmine, JIRA, Redmine, and Vimeo.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/partner-program-six-new-services/) about this release.
 
-### Release 2016-10-31 - General Availability ##
+### Release 2016-10-31 - General Availability
 
 - **Pricing and licensing** - Now available in both Free and paid plans, as well as included in Office 365 and Dynamics 365.
 - **Microsoft Flow Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
