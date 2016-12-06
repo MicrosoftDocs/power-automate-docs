@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/5/2016"
+   ms.date="12/05/2016"
    ms.author="stepsic"/>
 
 # Release notes #
