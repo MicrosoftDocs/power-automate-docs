@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="11/22/2016"
+   ms.date="12/5/2016"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -39,6 +39,14 @@
 1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
 
 ## What's new ##
+
+### Release 2016-12-06 ## 
+
+- **Introducing Guided Learning** - Get started with a sequenced collection of courses that pair videos with documentation to help you understand the extensive and powerful capabilities of Flow.
+- **Two new services** - Flows can now use Freshdesk, a customer support solution, and GoToMeeting, an online meeting tool.
+- **HTTP Webhook support** - A flow can now be an endpoint for webhooks that will automatically register and unregister itself.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/guided-learning-and-two-services/) about this release.
 
 ### Release 2016-11-23 ## 
 
