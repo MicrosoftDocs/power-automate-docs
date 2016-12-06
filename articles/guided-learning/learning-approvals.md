@@ -8,7 +8,7 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId="U54cdN0tXEI"
+   featuredVideoId="o-pgEBW3fOI"
    courseDuration="14m"/>
 
 <tags
