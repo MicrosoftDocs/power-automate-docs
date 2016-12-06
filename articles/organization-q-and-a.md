@@ -38,6 +38,8 @@ Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com),
 #### Option 2
 Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign in**, signing in with their work, school or personal email, and accepting the Flow terms of use.    
 
+When a user in your organization signs up for Flow with Option 2, that user will be assigned a Microsoft Flow Free license automatically.
+
 [Sign up for Flow](sign-up-sign-in.md) includes more details.
 
 ### Can I block another person from signing up for Flow?
