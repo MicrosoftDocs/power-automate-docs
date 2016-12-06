@@ -1,6 +1,6 @@
 <properties
 	pageTitle="Using webhooks with Microsoft Flow | Microsoft Flow"
-	description="Learn how to create an flows that interact with webhooks in Microsoft Flow"
+	description="Learn how to create flows that interact with webhooks in Microsoft Flow"
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -143,7 +143,7 @@ The API sending the webhook request to Flow will usually have some form of authe
 
 1. Navigate to [GitHub](https://www.github.com) and sign in if you haven't already.
 
-2. In the upper right, click your **profile picture**, and in the menu, click **Settings**.
+2. In the upper right, click your **profile picture**, and then, in the menu, click **Settings**.
 
     ![Settings](./media/customapi-webhooks/github-settings.png)
 
@@ -175,7 +175,7 @@ Now we've got everything we need to add the webhook to Flow as a custom API.
 
 1. Navigate to the [Microsoft Flow web portal](https://flow.microsoft.com) and sign in if you haven't already.
 
-2. Click the **settings** icon, and click **Custom APIs**.
+2. Click the **settings** icon, and then click **Custom APIs**.
 
     ![Custom APIs](./media/customapi-webhooks/custom-apis.png)
 
