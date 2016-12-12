@@ -18,11 +18,11 @@
    ms.date="12/12/2016"
    ms.author="deonhe"/>
 
-# Get started with trigger button tokens
+# Get started with button trigger tokens
 
 
-## What are trigger button tokens?
-Trigger button tokens are data points that are known and available to the device on which a [button flow](./introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.  
+## What are button trigger tokens?
+Button trigger tokens are data points that are known and available to the device on which a [button flow](./introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.  
 
 For example, if you are running a button flow on a smart phone, it is likely that the **phone knows the time** at your current location as well as the date and your current address. In this context, the time, date and address where the phone is located are all determined at the time the button flow runs. They are automatically available for use in any button flows that are executed on the device. You can use these trigger tokens to build useful apps that will minimize repetitive tasks such as providing your location to someone or tracking how much time you spent on a particular job/service call.
 
@@ -52,17 +52,20 @@ In this walk-through, we will create a button flow on an Android device. The but
 
 In this walk-through, you will see screen-shots from an Android device, however, the experience is similar on iOS devices as well.
 
-### Prerequisites 
+### Prerequisites
+
+
 
 - A work or school account with access to Microsoft Flow  
 - An Android or iOS device with the Microsoft Flow app installed  
 
 
+
 1. Launch Flow and select **Browse**   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/1.png)  
-1. Select the **Send a 'Working from home today' email to your manager** service under the **Button** section   
+2. Select the **Send a 'Working from home today' email to your manager** service under the **Button** section   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/2.png)  
-1. Select **USE THIS TEMPLATE**  
+3. Select **USE THIS TEMPLATE**  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/3.png)  
 4. Select **Edit** on the **Send an email** card  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/3-5.png)  
