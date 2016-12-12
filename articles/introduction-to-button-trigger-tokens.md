@@ -60,6 +60,8 @@ In this walk-through, you will see screen-shots from an Android device, however,
 - An Android or iOS device with the Microsoft Flow app installed  
 
 
+Let's get started:  
+
 
 1. Launch Flow and select **Browse**   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/1.png)  
