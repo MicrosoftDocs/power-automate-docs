@@ -55,7 +55,8 @@ In this walk-through, you will see screen-shots from an Android device, however,
 ### Prerequisites 
 
 - A work or school account with access to Microsoft Flow  
-- An Android or iOS device with the Microsoft Flow app installed
+- An Android or iOS device with the Microsoft Flow app installed  
+
 
 1. Launch Flow and select **Browse**   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/1.png)  
@@ -69,7 +70,7 @@ In this walk-through, you will see screen-shots from an Android device, however,
 ![button trigger token](./media/introduction-to-button-trigger-tokens/4.png)  
 6. With the cursor still in the subject text box, scroll to the **manual** list of parameters and tap **Date**. Notice the date parameter is now in the **Subject** text box:  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/6.png)  
-7. Scroll to the **Body** text box and tap after the default message so that additional tokens can be included there.
+7. Scroll to the **Body** text box and tap after the default message so that additional tokens can be included there.  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/7.png)  
 8. Tap the **Full address** parameter, then tap **Create**  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/8.png)  
