@@ -58,34 +58,34 @@ In this walk-through, you will see screen-shots from an Android device, however,
 - An Android or iOS device with the Microsoft Flow app installed
 
 1. Launch Flow and select **Browse**   
-![Implicit flow](./media/introduction-to-button-trigger-tokens/1.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/1.png)  
 1. Select the **Send a 'Working from home today' email to your manager** service under the **Button** section   
-![Implicit flow](./media/introduction-to-button-trigger-tokens/2.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/2.png)  
 1. Select **USE THIS TEMPLATE**  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/3.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/3.png)  
 4. Select **Edit** on the **Send an email** card  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/3-5.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/3-5.png)  
 5. Tap the **Subject** text box and enter: " **today -** " into the text box after the "WFH" text. Notice that when you tapped on the text box, a list of parameters/tokens also opened up. We'll use one of these tokens in the next step to add the date to the subject of the email.  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/4.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/4.png)  
 6. With the cursor still in the subject text box, scroll to the **manual** list of parameters and tap **Date**. Notice the date parameter is now in the **Subject** text box:  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/6.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/6.png)  
 7. Scroll to the **Body** text box and tap after the default message so that additional tokens can be included there.
-![Implicit flow](./media/introduction-to-button-trigger-tokens/7.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/7.png)  
 8. Tap the **Full address** parameter, then tap **Create**  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/8.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/8.png)  
 1. Tap **Done**. Your button flow is now created.  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/9.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## Run the button flow
 
 **NOTE**: This button flow will send your current location via email.  
 
 1. Tap the **Buttons** category at the bottom of the screen. You will see a list of the buttons that you have permissions to use. Tap the button that represents the button flow you just created:  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/10.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/10.png)  
 1. Tap **ALLOW** to indicate that it's OK for the button flow to access your device's location information:  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/11.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/11.png)  
 1. Within a few moments, notice that the email was sent to your boss:  
-![Implicit flow](./media/introduction-to-button-trigger-tokens/12.png)  
+![button trigger token](./media/introduction-to-button-trigger-tokens/12.png)  
 
 Congratulations, you've just created a button flow that uses both the date and full address trigger tokens. 
 
