@@ -24,7 +24,7 @@
 ## What are button trigger tokens?
 Button trigger tokens are data points that are known and available to the device on which a [button flow](./introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.  
 
-For example, if you are running a button flow on a smart phone, it is likely that the **phone knows the time** at your current location as well as the date and your current address. In this context, the time, date and address where the phone is located are all determined at the time the button flow runs. They are automatically available for use in any button flows that are executed on the device. You can use these trigger tokens to build useful apps that will minimize repetitive tasks such as providing your location to someone or tracking how much time you spent on a particular job/service call.
+For example, if you are running a button flow on a smart phone, it is likely that the **phone knows the time** at your current location as well as the date and your current address. In this context, the time, date and address where the phone is located are all determined at the time the button flow runs. They are automatically available for use in any button flows that are executed on the device. You can use these trigger tokens to build useful flows that will minimize repetitive tasks such as providing your location to someone or tracking how much time you spent on a particular job/service call.
 
 ### List of button trigger tokens
 Here's the list of the button trigger tokens that are available for you to use when creating your button flows.
@@ -56,7 +56,7 @@ In this walk-through, you will see screen-shots from an Android device, however,
 
 
 
-- A work or school account with access to Microsoft Flow  
+- A work or school email address or a [Microsoft Account](https://account.microsoft.com/about?refd=www.microsoft.com) with access to Microsoft Flow  
 - An Android or iOS device with the Microsoft Flow app installed  
 
 
@@ -65,7 +65,7 @@ Let's get started:
 
 1. Launch Flow and select **Browse**   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/1.png)  
-2. Select the **Send a 'Working from home today' email to your manager** service under the **Button** section   
+2. Select the **Send a 'Working from home today' email to your manager** service under the **Button** category   
 ![button trigger token](./media/introduction-to-button-trigger-tokens/2.png)  
 3. Select **USE THIS TEMPLATE**  
 ![button trigger token](./media/introduction-to-button-trigger-tokens/3.png)  
