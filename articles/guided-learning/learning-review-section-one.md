@@ -1,6 +1,6 @@
 <properties
    pageTitle="Review this section | Microsoft Flow"
-   description="Review what you learned in this introduction to Microsoft Flow"
+   description="Review what you learned in this introduction to Microsoft Flow."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="11/22/2016"
    ms.author="casoper"/>
 
 # Review the first section
@@ -34,9 +34,9 @@ The easiest way to get started with Flow is to **use the templates**.  Once you'
 
 
 ## What's next?
-Congratulations! You have finished the first section of Microsoft Flow Guided Learning. Regardless of how much experience you began with, we hope you now have a very clear picture of what Microsoft Flow is and how you can start creating flows. We will add more sections in the near future, so please stay tuned.
+Congratulations! You have finished the first section of Microsoft Flow Guided Learning. Regardless of how much experience you began with, we hope you now have a very clear picture of what Microsoft Flow is and how you can start creating flows. 
 
-In the meantime, here are some resources you should find useful on your journey.
+As you continue learning about Microsoft Flow, here are some resources you should find useful on your journey.
 
 ## Community and documentation
 - Dig deeper with the [Microsoft Flow documentation](https://aka.ms/q2613b)
@@ -45,6 +45,6 @@ In the meantime, here are some resources you should find useful on your journey.
 - Improve Microsoft Flow by submitting an [idea](https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas)
 
 ## Get the apps
-[iOS](https://itunes.apple.com/us/app/microsoft-flow/id1094928825)
-[Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
-**Windows** coming soon.
+- [iOS](https://itunes.apple.com/us/app/microsoft-flow/id1094928825)
+- [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
+- **Windows** coming soon.

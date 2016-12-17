@@ -5,7 +5,7 @@
     suite="flow"
 	documentationCenter=""
 	authors="camsoper"
-	manager="AFTOwen"
+	manager="anneta"
 	editor=""/>
 
 <tags
@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="12/06/2016"
    ms.author="casoper"/>
 
 # Register Custom APIs in Microsoft Flow
@@ -57,7 +57,7 @@ If your API endpoint allows unauthenticated access, you should remove the ```sec
   "securityDefinitions": {
     "AAD": {
       "type": "oauth2",
-      "flow": "implicit",
+      "flow": "accessCode",
       "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
       "scopes": {}
     }

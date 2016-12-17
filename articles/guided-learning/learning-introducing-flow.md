@@ -1,6 +1,6 @@
 <properties
    pageTitle="Introduction to Microsoft Flow | Microsoft Flow"
-   description="An introduction to Microsoft Flow.  Understand what Microsoft Flow is and its terminology."
+   description="Understand what Microsoft Flow is and what you can do with it."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -8,8 +8,8 @@
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId=""
-   courseDuration="4m"/>
+   featuredVideoId="kZs7lqgp4LU"
+   courseDuration="5m"/>
 
 <tags
    ms.service="flow"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="11/22/2016"
    ms.author="casoper"/>
 
 # Guided Learning for Microsoft Flow
@@ -27,6 +27,8 @@ Welcome to **Guided Learning** for Microsoft Flow. This self-paced online course
 This  **Guided Learning**  course currently has a Getting Started section, and we will add content over the next few weeks. The course is designed to provide guidance in understandable chunks, with a logical flow that helps you learn concepts, details, and examples. It includes lots of visuals to help you learn, too. 
 
 If you're a **beginner** with Microsoft Flow, this course will get you going, and if you're a Microsoft Flow **veteran** this course will tie concepts together, and fill in the gaps. We hope you enjoy the course, and look forward to including more content in the future.
+
+This Guided Learning course is an ongoing **work in progress**.  Please **let us know** how we're doing, and **other topics you want to see** in this course.
 
 
 ## What is Microsoft Flow?
@@ -56,6 +58,6 @@ To create and administer flows, you can use the web app, or you can use the mobi
 - Review detailed run history reports.
 - View and filter runs by notification type. 
 
-## Next Steps
+## Next lesson
 
 Now that you've gotten a taste of what Microsoft Flow is and what it can do, let's take a look at what makes a flow. 

@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/25/2016"
+   ms.date="12/12/2016"
    ms.author="deonhe"/>
 
 
@@ -62,7 +62,7 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 ![Overview image](./media/introduction-to-button-flows/create-button-9.png)  
 10. Select the **Create flow** button to save your button flow:
 ![Overview image](./media/introduction-to-button-flows/create-button-10.png)  
-11. You should see this success message within a few moments:    
+11. You should see this success message within a few moments:  
 ![Overview image](./media/introduction-to-button-flows/create-button-11.png)  
 
 Congratulations, you've created a button flow! You can now execute this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is available on Android and iOS mobile devices.  
@@ -74,7 +74,7 @@ Congratulations, you've created a button flow! You can now execute this button f
 **Note**: While this walk-through displays screens from an Android device, the screens and experience on an iOS device are similar.  
 
 In the Flow app:  
-1. Select the **Browse** tab and scroll to the **Buttons** category.  
+1. Select the **Browse** tab and scroll to the **Button** category.  
 ![Overview image](./media/introduction-to-button-flows/create-button-from-mobile-1.png)  
 2. Select the **See all** link. This displays all ready-to-go button templates.     
 ![Overview image](./media/introduction-to-button-flows/create-button-from-mobile-2.png)  
@@ -141,3 +141,4 @@ On the **My flows** tab of the Flow app:
 ## Next steps
 - [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)  
 - [Install the Flow app for iOS](https://appsto.re/us/5M0qbb.i)  
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed
