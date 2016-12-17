@@ -46,7 +46,7 @@ To use Flow, all you need is a web browser and an email address.
 Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
 ### Which email addresses are supported?
-Flow supports email addresses ending in .com, .edu, and .org. It does not currently support email addresses ending in .gov and .mil.  
+Flow supports email addresses ending anything except .gov and .mil.  
 
 ### Is Flow available on-premises?
 Microsoft Flow is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
