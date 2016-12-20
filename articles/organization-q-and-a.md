@@ -138,6 +138,14 @@ No user can incur any cost to your organization without your express consent, so
 
 The Microsoft Flow Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Microsoft Flow for individual purposes. Thus, the presence of a Microsoft Flow Free license does not actually grant or remove any capabilities.
 
+### Why can't I see all Flow licenses in the Office 365 Admin portal?
+
+Users can use Microsoft Flow either as individuals or as a part of their organization. Licenses at the organization level will always be visible in the Office 365 portal. However, if a user signs up for a trial as an individual then that is not managed by their Office 365 admin and will not show up in the portal.
+
+### How does an individual find out what plan they are on?
+
+Anyone can see the plan they have by visiting the Flow pricing page at [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). The plan or trial they are currently on will be shown there.
+
 ### Will Microsoft Flow sign up impact the identities in my organization?
 
 If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management is not impacted.
