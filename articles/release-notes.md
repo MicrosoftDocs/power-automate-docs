@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/05/2016"
+   ms.date="12/20/2016"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -39,6 +39,19 @@
 1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
 
 ## What's new ##
+
+### Release 2016-12-20
+
+- **Run now** - You can now fire off a recurring trigger on demand - for example, if you have a scheduled report every day, but you need the report to run **now** too.
+- **Six new services** - Build flows that connect to MSN Weather, Medium, Google Contacts, Buffer, Harvest and TypeForm. 
+
+[Read more and ask questions](https://flow.microsoft.com/blog/run-now-and-six-more-services/) about this release.
+
+### Release 2016-12-14
+
+You can now leverage valuable information when triggering a button flow, such as Where the button was triggered from, by whom, at what time, and more.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-trigger-tokens/) about this release.
 
 ### Release 2016-12-06
 
