@@ -40,6 +40,12 @@
 
 ## What's new ##
 
+### Release 2016-12-29
+
+Microsoft Flow now supports DocuSign, to handle eSignatures and Digital Transaction Management, SurveyMonkey, for web-based surveys, and the OneNote note-taking app (business accounts only).
+
+[Read more and ask questions](https://flow.microsoft.com/blog/final-2016-services/) about this release.
+
 ### Release 2016-12-20
 
 - **Run now** - You can now fire off a recurring trigger on demand - for example, if you have a scheduled report every day, but you need the report to run **now** too.
