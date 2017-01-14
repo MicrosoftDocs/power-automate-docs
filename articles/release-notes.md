@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/20/2016"
+   ms.date="01/14/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -39,6 +39,15 @@
 1. File triggers will not fire for files being added inside of nested folders inside the folder you select. 
 
 ## What's new ##
+
+### Release 2017-01-14
+
+- **Resubmit runs** - If you have a flow that failed and you want to try fix it and run again, you can resubmit the failed run.
+- **Cancel runs** - When a flow gets stuck you can now explictly cancel the run.
+- **Two new services** - Adding GoToTraining and GoToWebinar support.
+- **Mobile links** - You can now share templates right from the mobile app, and we've added a quick download link for the apps at the top of the website.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/managing-runs/) about this release.
 
 ### Release 2016-12-29
 
