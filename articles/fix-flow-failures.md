@@ -1,5 +1,5 @@
 <properties
-	pageTitle="Fix flow failures | Microsoft Flow"
+	pageTitle="Fix Flow Failures | Microsoft Flow"
 	description="How to fix some of the most common flow failures"
 	services=""
 	suite="flow"
@@ -18,7 +18,7 @@
    ms.date="01/17/2017"
    ms.author="stepsic"/>
 
-# Fix flow failures #
+# Fix Flow Failures #
 
 ## Identify the error ##
 
@@ -36,11 +36,19 @@ One of the most common reasons that a flow can fail is an *authentication* failu
 
 1. Select the **Settings** menu in the top of the web portal. It looks like a gear. Choose **Connections**.
 2. Scroll to the connection that you saw the **Unauthorized** error message for.
-3. Next to the conncetion you should see a message saying: *This connection is not authenticated. Verify password.* Select the **Verify password** link.
+3. Next to the connection you should see a message saying: *This connection is not authenticated. Verify password.* Select the **Verify password** link.
 4. Follow the instructions in the pop-up window to verify your credentials.
 
 Finally, you can return to your flow run failure and select the **Resubmit** button. It should now run as expected. 
 
 ## Action configuration ##
 
-Another common failure is when you have settings in the actions of the flow that do not function as expected.
+Another common failure is when you have settings in the actions of the flow that do not function as expected. This is often accompanied by error messages for **Bad request** or **Not found**, or an error code **400** or **404**.
+
+The error message should contain exactly what you need to do to correct the failure. You will need to select the **Edit** button and then correct the problem inside the flow definition. Once you have saved the updated flow you can select **Resubmit** and the run will try again with the updated configuration. 
+
+## Other failures ##
+
+If you encounter a failure of error code **500** or **502** that is a temporary or *transient* failure. You should be able to try selecting **Resubmit** directly to try the flow again. 
+
+Finally, if there is some other problem that you are encountering, [please ask on our community](https://go.microsoft.com/fwlink/?LinkID=787467) and others may have encountered similar problems.

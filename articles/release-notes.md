@@ -24,9 +24,7 @@
 
 1. My flow failed, how do I fix it?
 	- You first should identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
-		![Notifications](./media/release-notes/notifications-toolbar.png)
 	- You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
-		![Error message](./media/release-notes/flow-run-failure.png)
 	- Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
 
 1. How do I use advanced conditions, or formulas?
