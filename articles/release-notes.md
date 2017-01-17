@@ -15,12 +15,30 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/14/2017"
+   ms.date="01/17/2017"
    ms.author="stepsic"/>
 
 # Release notes #
 
-## Common issues and resolutions ##
+## Top questions ##
+
+1. My flow failed, how do I fix it?
+	- You first should identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
+		![Notifications](./media/release-notes/notifications-toolbar.png)
+	- You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
+		![Error message](./media/release-notes/flow-run-failure.png)
+	- Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
+
+1. How do I use advanced conditions, or formulas?
+	- Read about [adding conditions here](add-a-condition.md).
+	- If you want to have multiple cases inside of your flows, you can simply select **Add condition** from inside of an existing condition.
+	- If you want to create an advanced formula you can reference [Logic apps functions](https://docs.microsoft.com/en-us/rest/api/logic/definition-language).
+
+1. How does licensing work with Office 365?
+	- If you are a user with Office 365 you get full access to the Flow for Office 365 plan. [See this page for more details](https://flow.microsoft.com/pricing/) about the different pricing plans for Flow.
+	- If you are an administrator and would like to understand how licensing works for Microsoft Flow, including with Office 365, [read this topic about Flow in your organization](organization-q-and-a.md).
+
+## Known issues and resolutions ##
 
 1. Flows created during preview that use the Microsoft Common Data Service:
 	- Have been moved to an environment dedicated to that database. Select the environment for that database in the top-right of the screen. [Learn more](environments-overview-maker.md). 
