@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="01/19/2017"
    ms.author="mandia"/>
 
 # Regions overview in Microsoft Flow
@@ -40,7 +40,7 @@ The following regions are available, or will be available:
 - **Australia**
 - **India**
 - **Japan**
-- **United States (First Release)** (available after General Availability (GA)) 
+- **United States (Early Access)** (available after General Availability (GA)) 
 - **Canada** (available after General Availability (GA)) 
 - **United Kingdom** (available after General Availability (GA))  
 
@@ -51,7 +51,7 @@ Environments can be created in different regions, and are bound to that geograph
 For the optimal performance, if your users are in Europe, then create and use the environment in the Europe region. If your users are in the United States, then create and use the environment in the U.S. 
 
 **Gateways**: 
-- Currently not available in the **India** or **United States (First Release)** regions.
+- Currently not available in the **India** or **United States (Early Access)** regions.
 - Currently supported in the default environment. They are not supported in custom environments.
 
 ### Question: Where exactly are the datacenters located?
@@ -62,5 +62,9 @@ Microsoft does not publicly advertise all datacenters, but the [Office 365 datac
 
 No, Microsoft Flow is not currently available in the US Gov, Germany or China regions. Availability for national clouds is planned for 2017.
 
-### Question: What is the "First Release" region?
-This is a special region in the United States that gets new features before any other region. So when a new feature or new functionality is added, these changes are first deployed to this "First Release" region. There is typically a week between availablity in First Release and full global rollout, but it can vary from feature-to-feature.
+### Question: What IP addresses are used in each region?
+
+See the [limits and configuration document](limits-and-config.md) for details on the outbound IP addresses for each region.
+
+### Question: What is the "Early Access" region?
+This is a special region in the United States that gets new features before any other region. So when a new feature or new functionality is added, these changes are first deployed to this "Early Access" region. There is typically a week between availablity in Early Access and full global rollout, but it can vary from feature-to-feature.
