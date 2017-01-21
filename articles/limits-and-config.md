@@ -1,11 +1,11 @@
 <properties
-	pageTitle="Limits and Configuration | Microsoft Flow"
-	description="Limits and Configuration"
+	pageTitle="Limits and configuration | Microsoft Flow"
+	description="Limits and configuration"
 	services=""
 	suite="flow"
 	documentationCenter="na"
 	authors="stepsic-microsoft-com"
-	manager="erikre"
+	manager="anneta"
 	editor=""
 	tags=""/>
 
@@ -18,9 +18,8 @@
    ms.date="01/19/2017"
    ms.author="stepsic"/>
 
-# Flow limits and configuration
-
-Below are information on the current limits and configuration details for flows.
+# Limits and configuration in Microsoft Flow #
+This topic contains information about the current limits and configuration details for flows.
 
 ## Limits
 
@@ -38,8 +37,8 @@ These are limits for a single outgoing request.
 
 |Name|Limit|Notes|
 |----|----|----|
-|Message size|50 MB|Some APIs may not support the full 50MB |
-|Expression evaluation limit|131,072 characters|`@concat()`, `@base64()`, `string` cannot be longer than this|
+|Message size|50 MB|Not all APIs support the full 50MB. |
+|Expression evaluation limit|131,072 characters|`@concat()`, `@base64()`, `string` can't exceed this limit.|
 
 #### Retry policy
 
@@ -54,7 +53,7 @@ These are the limits for a single flow run.
 |Name|Limit|Notes|
 |----|----|----|
 |Run duration|90 days||
-|Storage retention|90 days|This is from the run start time|
+|Storage retention|90 days|This is from the run start time.|
 |Min recurrence interval|1 minute||
 |Max recurrence interval|500 days||
 
@@ -65,7 +64,7 @@ These are limits for a single flow run.
 
 |Name|Limit|Notes|
 |----|----|----|
-|ForEach items|5,000|You can use the filter action to filter larger arrays as needed|
+|ForEach items|5,000|You can use the filter action to filter larger arrays as needed.|
 |Until iterations|5,000||
 |SplitOn items|5,000||
 |ForEach Parallelism|20||
@@ -76,21 +75,20 @@ These are limits for a single flow.
 
 |Name|Limit|Notes|
 |----|----|----|
-|Actions per workflow|250|You can add nested workflows to extend this as needed|
-|Allowed action nesting depth|5|You can add nested workflows to extend this as needed|
+|Actions per workflow|250|You can add nested workflows to extend this as needed.|
+|Allowed action nesting depth|5|You can add nested workflows to extend this as needed.|
 |Max characters per expression|8,192||
 |`action`/`trigger` name limit|80||
 |`description` length limit|256||
 
 ## Configuration
 
-### IP Address
+### IP address
 
-The IP Address of requests from Flows depends on the region that the Enviornment which contains the flow is in. [Read about Enviornments here](environments-overview-admin.md).
+The IP address of requests from flows depends on the region that the [environment](environments-overview-admin.md) that contains the flow is in.
 
 #### Logic App Service
-
-Calls made from a flow directly go through the Azure Logic App service. Some examples of these inclue HTTP or HTTP + Swagger. These will come from the following IPs:
+Calls made from a flow directly go through the Azure Logic App service. Some examples of these include HTTP or HTTP + Swagger. These will come from the following IP addresses:
 
 |Region|Outbound IP|
 |-----|----|
@@ -103,7 +101,7 @@ Calls made from a flow directly go through the Azure Logic App service. Some exa
 
 #### Services
 
-Calls made from an API connected through a flow (for example the SQL API or the SharePoint API) will come from the IP Address specified below:
+Calls made from an API connected through a flow (for example, the SQL API or the SharePoint API) will come from the IP address specified below:
 
 |Region|Outbound IP|
 |-----|----|
@@ -116,4 +114,4 @@ Calls made from an API connected through a flow (for example the SQL API or the 
 |United States|104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191|
 |United States (Early Access)|52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29|
 
-For example, if you need to whitelist IP addresses for your Azure SQL DB, you should use these addresses.
+For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
