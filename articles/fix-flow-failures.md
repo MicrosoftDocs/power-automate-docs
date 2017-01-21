@@ -1,11 +1,11 @@
 <properties
-	pageTitle="Fix Flow Failures | Microsoft Flow"
-	description="How to fix some of the most common flow failures"
+	pageTitle="Troubleshooting a flow | Microsoft Flow"
+	description="Resolve some of the most common reasons why flows fail"
 	services=""
 	suite="flow"
 	documentationCenter="na"
 	authors="stepsic-microsoft-com"
-	manager="erikre"
+	manager="anneta"
 	editor=""
 	tags=""/>
 
@@ -18,37 +18,36 @@
    ms.date="01/17/2017"
    ms.author="stepsic"/>
 
-# Fix Flow Failures #
+# Troubleshooting a flow #
 
 ## Identify the error ##
-
-Before you can fix your flow, you first need to identify the reason that it failed. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
+Before you can fix a flow, you must identify why it failed. Click or tap the notifications icon at the top of the web portal (or open the **Activity** tab in the mobile app), and then click or tap your flow in the list that appears.
 
 ![Notifications](./media/fix-flow-failures/notifications-toolbar.png)
 
-You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
+Details about the flow appear, and at least one step shows a red exclamation icon. Open that step, and review the error message.
 
 ![Error message](./media/fix-flow-failures/flow-run-failure.png)
 
 ## Authentication failures ##
+In many cases, flows fail because of an authentication error. If you have this type of error, the error message contains **Unauthorized** or an error code of **401** or **403** appears. You can usually fix an authentication error by updating the connection:
 
-One of the most common reasons that a flow can fail is an *authentication* failure. You have an authentication failure if you see **Unauthorized** in the error message, or, if you see an error code of **401** or **403**. You can usually fix an authentication failure by updating the **Connection**. To update your connection:
+1. At the top of the web portal, click or tap the gear icon to open the  **Settings** menu, and then click or tap **Connections**.
 
-1. Select the **Settings** menu in the top of the web portal. It looks like a gear. Choose **Connections**.
-2. Scroll to the connection that you saw the **Unauthorized** error message for.
-3. Next to the connection you should see a message saying: *This connection is not authenticated. Verify password.* Select the **Verify password** link.
-4. Follow the instructions in the pop-up window to verify your credentials.
+1. Scroll to the connection for which you saw the **Unauthorized** error message.
 
-Finally, you can return to your flow run failure and select the **Resubmit** button. It should now run as expected. 
+1. Next to the connection, click or tap the **Verify password** link in the message about the connection not being authenticated.
+
+1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
+
+	The flow should now run as expected.
 
 ## Action configuration ##
+Flows also fail if a setting in an action of the flow doesn't function as expected. In this case, the error message contains **Bad request** or **Not found**, or an error code of **400** or **404** appears.
 
-Another common failure is when you have settings in the actions of the flow that do not function as expected. This is often accompanied by error messages for **Bad request** or **Not found**, or an error code **400** or **404**.
-
-The error message should contain exactly what you need to do to correct the failure. You will need to select the **Edit** button and then correct the problem inside the flow definition. Once you have saved the updated flow you can select **Resubmit** and the run will try again with the updated configuration. 
+The error message should specify how to correct the failure. You'll need to click or tap the **Edit** button and then correct the problem inside the flow definition. Save the updated flow, and then click or tap **Resubmit** to try the run again with the updated configuration.
 
 ## Other failures ##
+If the error code **500** or **502** appears, the failure is temporary or transient. Click or tap **Resubmit** to try the flow again.
 
-If you encounter a failure of error code **500** or **502** that is a temporary or *transient* failure. You should be able to try selecting **Resubmit** directly to try the flow again. 
-
-Finally, if there is some other problem that you are encountering, [please ask on our community](https://go.microsoft.com/fwlink/?LinkID=787467) and others may have encountered similar problems.
+If you encounter some other problem, [please ask our community](https://go.microsoft.com/fwlink/?LinkID=787467) because others may have encountered a similar problem.
