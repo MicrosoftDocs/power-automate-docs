@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Data loss prevention policies | Microsoft Flow"
-   description="Learn about data loss prevention polices in Microsoft Flow"
+   pageTitle="Learn how to control which services can share data and prevent data loss when using Microsoft Flow | Microsoft Flow"
+   description="Learn how to use data loss prevention polices to control which services can share data when automating tasks using Microsoft Flow."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="11/24/2016"
+   ms.date="01/24/2016"
    ms.author="deonhe"/>
 
 # All about Data loss prevention (DLP) policies
