@@ -56,6 +56,15 @@
 
 ## What's new ##
 
+### Release 2017-01-23
+
+- **Search by service** - Browse by service when you add a trigger or action to see all the actions for each service.
+- **Switch case** - Add Switch blocks to have several branches of parallel logic.
+- **More email actions** - New functionality in the Office 365 Outlook and Outlook.com services to work with flagged mails.
+- **Two new services** - Connect to Local or Network File Systems and the payment service Stripe.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/search-by-service/) about this release.
+
 ### Release 2017-01-14
 
 - **Resubmit runs** - If you have a flow that failed and you want to try fix it and run again, you can resubmit the failed run.
