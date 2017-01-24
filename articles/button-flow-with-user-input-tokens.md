@@ -73,15 +73,15 @@ After launching the flow app:
 1. Tap the **Buttons** tab  
 2. Tap the **Create bug report with steps** button  
 ![](./media/button-flow-with-user-input-tokens/runmt1.png)  
-1. Enter the title for the bug you are reporting. For example:  
+3. Enter the title for the bug you are reporting. For example:  
 ![](./media/button-flow-with-user-input-tokens/runmt2.png)  
-1. Enter the steps to reproduce the bug you are reporting. For example:  
+4. Enter the steps to reproduce the bug you are reporting. For example:  
 ![](./media/button-flow-with-user-input-tokens/runmt3.png)  
-1. Tap the **Done**. This will execute the flow, creating a bug with the title and repro steps you provided:  
+5. Tap the **Done**. This will execute the flow, creating a bug with the title and repro steps you provided:  
 ![](./media/button-flow-with-user-input-tokens/runmt3-5.png)  
-1. The flow runs. You can see the results on the **Activity** tab:
+6. The flow runs. You can see the results on the **Activity** tab:  
 ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
-1. See the detailed results of the flow run on the **Activity** tab by tapping the **Create a new work item** step:  
+7. See the detailed results of the flow run on the **Activity** tab by tapping the **Create a new work item** step:  
 ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
 
 ## Next steps
