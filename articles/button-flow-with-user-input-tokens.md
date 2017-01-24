@@ -21,11 +21,12 @@
 
 # Introducing button flows with user input 
 
-Button flows are used to run routine tasks by simply tapping a button. Sometimes, you may want to customize a button flow by allowing the consumer to provide specific details that will be used when the button flow executes. Button flows that take user input at run time allow the user to provide additional information before the button flow executes.  
+Button flows are used to run routine tasks by simply tapping a button. Sometimes, you may want to customize a button flow by allowing the user to provide specific details that will be used when the button flow executes. This document walks you through the creation and execution of a button flow that takes user input at run time. 
 
-**Note:** All screenshots in this document are taken from an Android mobile device, however, you can use an iOS device as well. The experience is similar on both devices.  
 
 ## Create a button flow with user input  
+
+**Note:** All screenshots in this document are taken from an Android mobile device, however, you can use an iOS device as well. Your experience will be similar on either device.  
 
 1. Launch the flow app on your mobile device and tap **Browse**  
 ![](./media/button-flow-with-user-input-tokens/mt0.png)  
@@ -87,4 +88,5 @@ After launching the flow app:
 ## Next steps
 
 - [Learn about button flows](./introduction-to-button-flows.md)  
+- [Learn about button flows with trigger tokens](./introduction-to-button-trigger-tokens.md)  
 - [Learn about flows](./guided-learning/learning-introducing-flow.md)  
