@@ -46,9 +46,9 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 ![](./media/button-flow-with-user-input-tokens/mt7.png)  
 7. Enter **ReproSteps** into the **Enter token label** field  
 ![](./media/button-flow-with-user-input-tokens/mt8.png)  
-8. Tap **+ New step**
+8. Tap **+ New step**  
 ![](./media/button-flow-with-user-input-tokens/mt9.png)  
-9. Tap **Add an action**
+9. Tap **Add an action**  
 ![](./media/button-flow-with-user-input-tokens/mt9-addaction.png)  
 10. Type **work item** into the search box to filter the actions list to display only actions that contain **work item** in the 
 ![](./media/button-flow-with-user-input-tokens/mt10.png)  
@@ -61,9 +61,9 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 ![](./media/button-flow-with-user-input-tokens/mt12.png)  
 14. Select the **ReproSteps** token  
 ![](./media/button-flow-with-user-input-tokens/mt13.png)  
-15. Tap **Create** to save your flow
+15. Tap **Create** to save your flow  
 ![](./media/button-flow-with-user-input-tokens/mt13-save.png)  
-16. You flow is saved and you can now run it from the **Buttons** tab of the Flow app.
+16. You flow is saved and you can now run it from the **Buttons** tab of the Flow app.  
 ![](./media/button-flow-with-user-input-tokens/mt14.png)  
 
 ## Run a button flow with user input
