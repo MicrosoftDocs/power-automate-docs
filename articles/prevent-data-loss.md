@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Data loss prevention (DLP) policies for Microsoft Flow| Microsoft Flow"
+    pageTitle="Introduction to data loss prevention (DLP) policies. | Microsoft Flow"
     description="Introduction to data loss prevention policies for Microsoft Flow."
     services=""
     suite="flow"
@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="01/24/2016"
    ms.author="deonhe"/>
 
 

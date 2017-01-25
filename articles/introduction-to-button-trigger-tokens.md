@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Button trigger tokens for Microsoft button flows | Microsoft Flow"
+    pageTitle="Introduction to button trigger tokens | Microsoft Flow"
     description="Introduction to button trigger tokens for Microsoft button flows."
     services=""
     suite="flow"

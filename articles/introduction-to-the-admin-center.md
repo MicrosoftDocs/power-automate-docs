@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Flow Admin center | Microsoft Flow"
-    description="Introduction to the Flow Admin center."
+    pageTitle="Learn how to use the admin center to manage environments and data loss prevention policies. | Microsoft Flow"
+    description="The Flow admin center is used by tenant and environment admins to manage data loss prevention polices and environments for Microsoft Flow deployments."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="11/01/2016"
+   ms.date="01/24/2016"
    ms.author="deonhe"/>
 
 

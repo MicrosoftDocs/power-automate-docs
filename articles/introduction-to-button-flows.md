@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Button flows | Microsoft Flow"
-    description="Introduction to the button flows for Microsoft Flow."
+    pageTitle="Learn how to automate and run repetitive tasks with button flows | Microsoft Flow"
+    description="Introduction to button flows."
     services=""
     suite="flow"
     documentationCenter="na"
