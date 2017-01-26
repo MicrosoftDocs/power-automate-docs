@@ -65,7 +65,7 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 13. Type **work item** into the search box to filter the actions list to display only actions that contain **work item** in the name.  
 
 ![flow with user input image](./media/button-flow-with-user-input-tokens/mt10.png)  
-14. Tap **Visual studio Team Services - Create a new work item**.  
+14. Tap **Visual Studio Team Services - Create a new work item**.  
 
 ![flow with user input image](./media/button-flow-with-user-input-tokens/mt11-create-item.png)  
 15. Select an **Account name**, **Project name**, **Type** and select the **BugTitle** token as the **Title**.  
