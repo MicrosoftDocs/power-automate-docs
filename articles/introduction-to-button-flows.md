@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/12/2016"
+   ms.date="01/30/2016"
    ms.author="deonhe"/>
 
 
@@ -132,6 +132,7 @@ You can monitor button flows from the **Activity** tab of the flow app:
 You have full control of your button flows so you can enable/disable, edit or delete a button anytime, anyplace. From the mobile app or from the flow portal, select **My flows** to get started managing your flows.    
 
 On the **My flows** tab of the Flow app:
+
 1. Select the flow you wish to manage:    
 ![Overview image](./media/introduction-to-button-flows/trigger-button-4.png)   
 2. You can tap any of these options, based on what you'd like to accomplish:    
