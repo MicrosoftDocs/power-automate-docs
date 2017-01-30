@@ -89,10 +89,7 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 In this walk-through, you will see how to provide user input in a run of the button flow.  
 
 After launching the flow app:  
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 1. Tap the **Buttons** tab.  
 2. Tap the **Create bug report with steps** button.  
 
