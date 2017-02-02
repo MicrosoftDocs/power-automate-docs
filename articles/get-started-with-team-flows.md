@@ -20,17 +20,16 @@
 
 # Get started with team flows
 
-Now you can invite others on your team to collaborate with you to design and manage flows. Simply add any user or group from your organization as an owner of your flow and you can all participate in the design and management of the flow. 
+Now you can invite others on your team to collaborate with you to design and manage flows. Simply add any user or group from your organization as an owner of your flow and you can all participate in the design and management of the flow.
 
 After you add at least one other owner, your flow becomes a **Team Flow** and, you can find all team flows that you have access to on the **Team flows** tab of the [Microsoft Flow portal](https://flow.microsoft.com).
-
 
 When you create a team flow, all owners will have the ability to perform these actions:
 
 Action | Description
 ----|----
 Delete |Co-owners can delete the flow
-Edit | Co-owners can edit the flow by changing how the flow works. 
+Edit | Co-owners can edit the flow by changing how the flow works.
 Update | Make design changes to the flow such as adding or removing other [services](https://flow.microsoft.com/services/).
 Change permissions | Co-owners can add and remove other owners, but cannot remove the flow's creator.
 View run history | Co-owners can view the history of all runs of the flow.
@@ -88,21 +87,20 @@ Let's get started:
      ![manage flow owners](./media/get-started-with-team-flows/removeowner2.png)
 3. Select the **Remove this owner** button to indicate you are sure you want to remove this owner:
      ![manage flow owners](./media/get-started-with-team-flows/removeowner3.png)
-4. Congratulations, the user or group you just removed is no longer listed as an owner of the flow: 
-     ![manage flow owners](./media/get-started-with-team-flows/removeowner4.png) 
+4. Congratulations, the user or group you just removed is no longer listed as an owner of the flow:
+     ![manage flow owners](./media/get-started-with-team-flows/removeowner4.png)
 
 ## Embedded and other connections
 
 Connections used in a flow can fall into two categories:
 
 - Embedded - embedded connections are connections that are currently being used in the flow.
-- Other - other connections are connections that have been defined for a specific flow, but are not being used in that flow currently. 
+- Other - other connections are connections that have been defined for a specific flow, but are not being used in that flow currently.
 
-If an owner removes a connection from a flow, that flow will be displayed in the *Other* connections list, where it remains until an owner includes it in the flow again. 
+If an owner removes a connection from a flow, that flow will be displayed in the *Other* connections list, where it remains until an owner includes it in the flow again.
 
-You can see the list of connections below the **Owners** list of a flow's properties:  
-     ![manage flow users](./media/get-started-with-team-flows/embeddedconnections.png)  
-
+You can see the list of connections below the **Owners** list of a flow's properties:
+     ![manage flow users](./media/get-started-with-team-flows/embeddedconnections.png)
 
 ## Next steps
 
