@@ -31,17 +31,17 @@ Action | Description
 ----|----
 Delete |Co-owners can delete the flow
 Edit | Co-owners can edit the flow by changing how the flow works. 
-Update | Make design changes to the flow such as adding or removing other [services]().
+Update | Make design changes to the flow such as adding or removing other [services](https://flow.microsoft.com/services/).
 Change permissions | Co-owners can add and remove other owners, but cannot remove the flow's creator.
 View run history | Co-owners can view the history of all runs of the flow.
 
-Note: Co-owners cannot remove the original creator from the list of owners of a flow.
+>[AZURE.NOTE] Co-owners cannot remove the original creator from the list of owners of a flow.
 
-While all owners can use all existing [connections]() in a specific flow, the co-owner is not allowed to modify the credentials used in any connection that was created by another owner. A co-owner can use connections only in the flow that the connection was created in.
+While all owners can use all existing services in a specific flow, the co-owner is not allowed to modify the credentials used in any connection that was created by another owner. A co-owner can use connections only in the flow that the connection was created in.
 
 ## Prerequisites
 
-In order to create **team flows**, you must have access to a [paid Microsoft Flow plan](https://flow.microsoft.com/en-us/pricing/).
+In order to create **team flows**, you must have access to a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/).
 
 ## Create a team flow by adding an owner
 
@@ -52,7 +52,7 @@ In this walk-through, you will create a **team flow** by adding an owner to an e
 In order to create a team flow or add an owner to an existing team flow, you must:
 
 - be an owner or the creator of the flow
-- use a [paid Microsoft Flow plan](https://flow.microsoft.com/en-us/pricing/)
+- use a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/)
 
 Let's get started:
 
@@ -69,14 +69,14 @@ Let's get started:
 
 ## Remove a flow owner
 
-Warning: If you remove an owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly.
-
-Note: An owner cannot remove the creator of the flow.
+>[AZURE.IMPORTANT] If you remove an owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly. Also note that an owner cannot remove the creator of the flow.
 
 ### Prerequisites
 
+In order to create a team flow or add an owner to an existing team flow, you must:
+
 - be an owner or the creator of the flow
-- use a [paid Microsoft Flow plan](https://flow.microsoft.com/en-us/pricing/)
+- use a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/)
 
 Follow these steps to remove an owner from a flow:
 
@@ -106,6 +106,4 @@ You can see the list of connections below the **Owners** list of a flow's proper
 
 ## Next steps
 
-- dfdfdf
-- dfdfdf
-- dfdfdf
+- [Get started with Microsoft Flow](./getting-started.md)
