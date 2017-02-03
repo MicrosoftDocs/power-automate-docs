@@ -34,9 +34,9 @@ Update | Make design changes to the flow such as adding or removing other [servi
 Change permissions | Co-owners can add and remove other owners, but cannot remove the flow's creator.
 View run history | Co-owners can view the history of all runs of the flow.
 
->[AZURE.NOTE] Co-owners cannot remove the original creator from the list of owners of a flow.
+>[AZURE.NOTE] Shared connections can **only** be used in the flow in which it was originally created.
 
-While all owners can use all existing services in a specific flow, the co-owner is not allowed to modify the credentials used in any connection that was created by another owner. A co-owner can use connections only in the flow that the connection was created in.
+While all owners can use all existing services in a specific flow, the co-owner is not allowed to modify the credentials used in any connection that was created by another owner.
 
 ## Prerequisites
 
@@ -97,7 +97,7 @@ Connections used in a flow can fall into two categories:
 - Embedded - embedded connections are connections that are currently being used in the flow.
 - Other - other connections are connections that have been defined for a specific flow, but are not being used in that flow currently.
 
-If an owner removes a connection from a flow, that flow will be displayed in the *Other* connections list, where it remains until an owner includes it in the flow again.
+If a connection is no longer being used in a flow, that connection will be displayed in the *Other* connections list, where it remains until an owner includes it in the flow again.
 
 You can see the list of connections below the **Owners** list of a flow's properties:
      ![manage flow users](./media/get-started-with-team-flows/embeddedconnections.png)
