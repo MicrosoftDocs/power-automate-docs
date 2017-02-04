@@ -1,10 +1,10 @@
 <properties
     pageTitle="Learn how to add other owners to a flow and create team flows | Microsoft Flow"
-    description="Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with the to design and manage your flows."
+    description="Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage your flows."
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="msftman"
+    authors="aftowen"
     manager="anneta"
     editor=""
     tags=""/>
@@ -16,91 +16,81 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="02/03/2017"
-   ms.author="deonhe"/>
+   ms.author="anneta"/>
 
-# Get started with team flows
+# Create team flows #
+Create a team flow by specifying one or more other people in your organization as co-owners, who can perform these actions:
 
-Now you can invite others on your team to collaborate with you to design and manage flows. Simply add any user or group from your organization as an owner of your flow and you can all participate in the design and management of the flow.
+- View the flow's history (that is, each run).
+- Edit the flow to change how it works (for example, adding or removing [services](https://flow.microsoft.com/services/)).
+- Add and remove other co-owners (but not the flow's creator).
+- Delete the flow.
 
-After you add at least one other owner, your flow becomes a **Team Flow** and, you can find all team flows that you have access to on the **Team flows** tab of the [Microsoft Flow portal](https://flow.microsoft.com).
+If you create a team flow or are added as a co-owner of a flow, the [Microsoft Flow portal](https://flow.microsoft.com) shows it on the **Team flows** tab and adds a designation to it on the **My Flows** tab:
 
-When you create a team flow, all owners will have the ability to perform these actions:
+![](./media/create-team-flows/addowner5.png)
 
-Action | Description
-----|----
-Delete |Co-owners can delete the flow
-Edit | Co-owners can edit the flow by changing how the flow works.
-Update | Make design changes to the flow such as adding or removing other [services](https://flow.microsoft.com/services/).
-Change permissions | Co-owners can add and remove other owners, but cannot remove the flow's creator.
-View run history | Co-owners can view the history of all runs of the flow.
+>[AZURE.NOTE] Shared connections can be used **only** in the flow in which they were created.
 
->[AZURE.NOTE] Shared connections can **only** be used in the flow in which it was originally created.
+Co-owners can use services in a flow, but co-owners can't modify the credentials for a connection that another co-owner created.
 
-While all owners can use all existing services in a specific flow, the co-owner is not allowed to modify the credentials used in any connection that was created by another owner.
+## Prerequisites ##
+To create a team flow or add/remove a co-owner from a team flow, you must have a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/) and be the creator or a co-owner of a flow.
 
-## Prerequisites
+## Create a team flow ##
+Follow these steps to create a team flow or to add more one or more co-owners to a team flow.
 
-In order to create **team flows**, you must have access to a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/).
+1. Sign in to the [Microsoft Flow portal](https://flow.microsoft.com), and then select **My Flows**.
 
-## Create a team flow by adding an owner
+1. Select the people icon for the flow that you want to modify:
 
-In this walk-through, you will create a **team flow** by adding an owner to an existing flow. If you already have a team flow, you can use this process to add other owners to it as well.
+     ![](./media/create-team-flows/addowner1.png)
 
-### Prerequisites
+1. Enter the name, the email address, or the phone number of the person or group that you want to add as a co-owner:
 
-In order to create a team flow or add an owner to an existing team flow, you must:
+     ![](./media/create-team-flows/addowner2.png)
 
-- be an owner or the creator of the flow
-- use a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/)
+1. In the list that appears, select the user whom you want to make a co-owner:
 
-Let's get started:
+     ![](./media/create-team-flows/addowner3.png)
 
-1. Select the **people** icon for the flow you wish to add an owner to:
-     ![manage flow owners](./media/get-started-with-team-flows/addowner1.png)
-2. Enter the name, email address, or phone number of the person or group you're adding as an owner:
-     ![manage flow owners](./media/get-started-with-team-flows/addowner2.png)
-3. Select the appropriate user from the filtered list displayed:
-     ![manage flow owners](./media/get-started-with-team-flows/addowner3.png)
-4. Notice the user or group you just selected is now an owner of the flow:
-     ![manage flow owners](./media/get-started-with-team-flows/addowner4.png)
-5. Congratulations, your **team flow** has been created:
-     ![manage flow owners](./media/get-started-with-team-flows/addowner5.png)
+	 The user or group that you specified becomes a co-owner of the flow:
 
-## Remove a flow owner
+     ![](./media/create-team-flows/addowner4.png)
 
->[AZURE.IMPORTANT] If you remove an owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly. Also note that an owner cannot remove the creator of the flow.
+	 Congratulations &mdash; your team flow has been created!
 
-### Prerequisites
+## Remove a co-owner ##
 
-In order to create a team flow or add an owner to an existing team flow, you must:
+>[AZURE.IMPORTANT] If you remove a co-owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly.
 
-- be an owner or the creator of the flow
-- use a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/)
+1. Select the people icon for the flow that you want to modify:
 
-Follow these steps to remove an owner from a flow:
+     ![](./media/create-team-flows/removeowner1.png)
 
-Let's get started:
+2. Select the **Delete** icon for the co-owner that you want to remove:
 
-1. Select the **people** icon for the flow from which you wish to remove the owner:
-     ![manage flow owners](./media/get-started-with-team-flows/removeowner1.png)
-2. Select the **Delete** icon that corresponds to the owner you wish to remove:
-     ![manage flow owners](./media/get-started-with-team-flows/removeowner2.png)
-3. Select the **Remove this owner** button to indicate you are sure you want to remove this owner:
-     ![manage flow owners](./media/get-started-with-team-flows/removeowner3.png)
-4. Congratulations, the user or group you just removed is no longer listed as an owner of the flow:
-     ![manage flow owners](./media/get-started-with-team-flows/removeowner4.png)
+     ![](./media/create-team-flows/removeowner2.png)
+
+3. In the confirmation dialog box, select **Remove this owner**:
+
+     ![](./media/create-team-flows/removeowner3.png)
+
+4. Congratulations &mdash; the user or group that you just removed is no longer listed as a co-owner of the flow:
+
+     ![](./media/create-team-flows/removeowner4.png)
 
 ## Embedded and other connections
+Connections used in a flow fall into two categories:
 
-Connections used in a flow can fall into two categories:
+- **Embedded** &mdash; These connections are used in the flow.
+- **Other** &mdash; These connections have been defined for a specific flow but aren't used in it.
 
-- Embedded - embedded connections are connections that are currently being used in the flow.
-- Other - other connections are connections that have been defined for a specific flow, but are not being used in that flow currently.
+If a connection is no longer being used in a flow, that connection will appear in the list of **Other** connections, where it remains until a co-owner includes it in the flow again.
 
-If a connection is no longer being used in a flow, that connection will be displayed in the *Other* connections list, where it remains until an owner includes it in the flow again.
+The list of connections appears under the list of owners in a flow's properties:
 
-You can see the list of connections below the **Owners** list of a flow's properties:
-     ![manage flow users](./media/get-started-with-team-flows/embeddedconnections.png)
+![](./media/create-team-flows/embeddedconnections.png)
 
 ## Next steps
 
