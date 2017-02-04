@@ -4,7 +4,7 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="aftowen"
+    authors="msftman"
     manager="anneta"
     editor=""
     tags=""/>
@@ -16,7 +16,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="02/03/2017"
-   ms.author="anneta"/>
+   ms.author="deonhe"/>
 
 # Create team flows #
 Create a team flow by specifying one or more other people in your organization as co-owners, who can perform these actions:
