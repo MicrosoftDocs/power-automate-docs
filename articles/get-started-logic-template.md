@@ -75,4 +75,4 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
 - [Use a template for the Common Data Service](common-data-model-intro.md)
-- [Get started with team flows](./get-started-with-team-flows.md) and invite others to collaborate with you to design flows.
+- [Get started with team flows](./create-team-flows.md and invite others to collaborate with you to design flows.
