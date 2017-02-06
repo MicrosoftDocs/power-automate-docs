@@ -15,7 +15,7 @@
     ms.topic="get-started-article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="04/24/2016"
+   ms.date="02/03/2017"
     ms.author="anneta"/>
 
 # Create a flow in Microsoft Flow #
@@ -122,3 +122,4 @@ First, you will need to select what starting action, or *trigger*, will start yo
 - [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 - [Run tasks on a schedule](run-tasks-on-a-schedule.md), when you want an action to occur every day, on a certain date, or after a certain number of minutes.
 - [Add a flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
+- [Get started with team flows](./create-team-flows.md) and invite others to collaborate with you to design flows.
