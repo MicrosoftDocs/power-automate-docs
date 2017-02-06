@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/17/2017"
+   ms.date="02/06/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -55,6 +55,21 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-02-06
+
+- **Team flows** - Team flows make it possible for multiple people to own and manage a flow together, and, if someone leaves an organization, the flows they created can continue to run.
+- **Sharing custom APIs** - Custom APIs, like Team flows, can be shared and collectively managed inside an organization.
+- **Gmail and LUIS support** - Connect to Gmail and Azure Cognitive Services' Language Understanding Intelligent Service.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/team-flows/) about this release.
+
+### Release 2017-01-30
+
+- **Flow button inputs** - Flow buttons can now receive user inputs at run time, so flow authors can define information that is passed in when the button is tapped.
+- **Outlook Tasks and HelloSign** - Outlook Tasks service lets you manage tasks, and HelloSign enables secure electronic signatures.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-user-inputs/) about this release.
 
 ### Release 2017-01-23
 
