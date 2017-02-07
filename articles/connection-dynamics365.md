@@ -29,6 +29,7 @@ You can create a flow using one of the many templates available. Here are a few 
 * Copy Dynamics 365 accounts to customers in Dynamics 365 for Operations.
 
 To create a flow from a template, follow these steps.
+
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
 
 2. Click **Services**, and then click **Dynamics 365**.
@@ -37,6 +38,7 @@ To create a flow from a template, follow these steps.
 
 ## Walkthrough 1: Create a task whenever a new lead is created in Dynamics 365
 If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a new lead is created in Dynamics 365.
+
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
 
 2. Click **My flows**, and then click **Create from blank**.
