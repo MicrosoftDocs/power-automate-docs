@@ -113,7 +113,7 @@ To find a record's ID, see [Find the record ID](#Find the record ID).
 1. To view the status of flow runs, click **My flows**, and then in the list of flows, click ![Flow info icon](./media/connection-dynamics365/flow-info-icon.png) next to the flow.
 2. Next, click a row, such as a failed run that you want to view.
 
-  ![Flow run status](./media/connection-dynamics365/flow-run-status.PNG)
+  ![Flow run status](./media/connection-dynamics365/flow-run-status.png)
 
 3. Click the flow component that indicates the failure, such as this example that failed during the **When a record is created** trigger.
 
