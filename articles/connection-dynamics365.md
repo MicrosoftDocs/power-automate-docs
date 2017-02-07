@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="02/6/2017"
+   ms.date="02/06/2017"
    ms.author="matp"/>
 
 # Create a flow using Dynamics 365 (online)
@@ -30,47 +30,68 @@ You can create a flow using one of the many templates available. Here are a few 
 
 To create a flow from a template, follow these steps.
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
+
 2. Click **Services**, and then click **Dynamics 365**.
+
 3. Several templates are available. To get started, select the template that you want.
 
 ## Walkthrough 1: Create a task whenever a new lead is created in Dynamics 365
 If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a new lead is created in Dynamics 365.
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
+
 2. Click **My flows**, and then click **Create from blank**.
+
 3. In the list of flow triggers, click **Dynamics 365 - When a record is created**.
+
 You may be prompted to sign-in to Dynamics 365.
+
 4. Enter the following information.
   * **Organization Name**. Select the Dynamics 365 instance where you want the flow to listen.
   * **Entity Name**. Select the entity that you want to listen to, which will act as a trigger initiating the flow. In this walkthrough **Leads** is selected.
 
     ![Flow details](./media/connection-dynamics365/flow-details.png)
 5.	Click **New step**, and then click **Add an action**.
+
 6.	Click **Dynamics 365 – Create a new record**.
+
 7.	Enter the following information.
   * **Organization Name**. Select the Dynamics 365 instance where you want the flow to create the record. Notice that it doesn’t have to be the same instance where the event is triggered from.
   * **Entity Name**. Select the entity that will create a record when the event occurs. In this walkthrough, **Tasks** is selected.
+
 8.	A Subject box appears. When you click the box, a dynamic content pane appears where you can select either of the following fields.
+
   * **Last Name**. Selecting this field will insert the last name of the lead in to the Subject field of the task, when the task record is created.
   * **Topic**. Selecting this field will insert Topic field for the lead in to the Subject field of the task, when the task record is created.
 
   For this walkthrough, **Topic** is selected.
 
   ![Flow add topic](./media/connection-dynamics365/flow-addtopic.png)
->[**Tip**]    On the dynamic content pane, click **See more** to display more fields that are  associated with the entity. For example **Company Name**, **Customer**, **Description**, or **Email**, that can be used to populate the subject field in a task.
+
+  >[**Tip**]    On the dynamic content pane, click **See more** to display more fields that are  associated with the entity. For example **Company Name**, **Customer**, **Description**, or **Email**, that can be used to populate the subject field in a task.
 
 9.	Click **Create flow**.
 
 ## Walkthrough 2: Create a flow that creates a task in Wunderlist whenever a task is created in Dynamics 365
+
 This walkthrough shows you how to create a task in Dynamics 365 whenever a task is created in [Wunderlist](http://www.wunderlist.com). Wunderlist is an internet-based service that you can use to create to-do lists, reminders, or track errands.
+
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
+
 2. Click **My flows**, and then click **Create from blank**.
+
 3. In the list of flow triggers, click **Dynamics 365 - When a record is created**.
+
 4. Enter the following information.
+
   * **Organization Name**. Select the Dynamics 365 instance that you want the flow to listen to.
   * **Entity Name**. Select the entity that you want to listen to, which will act as a trigger to initiate the flow. In this walkthrough, **Tasks** is selected.
+
 5.	Click **New step**, and then click **Add an action**.
+
 6.	Type *create a task*, and then click **Wunderlist – Create a task**.
+
 7.	In the List ID box select the list where you want to create the task, such as your **inbox** or **Work**.
+
 8.	Click **Create flow**.  
 
 ## Working with advanced options
@@ -105,12 +126,13 @@ This example also assigns the task to a specific user based on the user's record
 
   ![Flow recordId and type user](./media/connection-dynamics365/flow-recordid-user.png)
 
-To find a record's ID, see [Find the record ID](#Find the record ID).
+To find a record's ID, see [Find the record ID](#find-the-record-id).
 
 > [**Important**]   Fields that have a description of "For internal use only," such as Traversed path, Additional Parameters, and Time Zone Rule Version Number, should not contain a value.
 
 ## Troubleshooting flows
 1. To view the status of flow runs, click **My flows**, and then in the list of flows, click ![Flow info icon](./media/connection-dynamics365/flow-info-icon.png) next to the flow.
+
 2. Next, click a row, such as a failed run that you want to view.
 
   ![Flow run status](./media/connection-dynamics365/flow-run-status.png)
@@ -118,20 +140,23 @@ To find a record's ID, see [Find the record ID](#Find the record ID).
 3. Click the flow component that indicates the failure, such as this example that failed during the **When a record is created** trigger.
 
   ![Flow failed run](./media/connection-dynamics365/flow-failedrun.png)
+
 4. Details of the flow component are displayed. This information can help you determine the reason for the failure.
 
   ![Flow failed run details](./media/connection-dynamics365/flow-failedrun-details.png)
 
 ## Find the record ID
 1. In the Dynamics 365 web application, open a record, such as an account record.
+
 2. On the actions toolbar, click **Pop Out**
 ![popout record](./media/connection-dynamics365/popout.png).
 Alternatively, on the actions toolbar click **EMAIL A LINK** to copy the full URL in to your default email program.
+
 3. Notice the URL that is displayed in the address bar of the web browser. The record ID is in between the %7b and %7d encoding characters of the URL.
 
   ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
-[Flow in your organization Q&A](https://flow.microsoft.com/documentation/organization-q-and-a/)
+[Flow in your organization Q&A](organization-q-and-a.md)
 
-[Frequently asked questions](https://flow.microsoft.com/documentation/frequently-asked-questions/)
+[Frequently asked questions](frequently-asked-questions.md)
