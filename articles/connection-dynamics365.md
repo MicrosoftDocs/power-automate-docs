@@ -43,9 +43,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
 2. Click **My flows**, and then click **Create from blank**.
 
-3. In the list of flow triggers, click **Dynamics 365 - When a record is created**.
-
-You may be prompted to sign-in to Dynamics 365.
+3. In the list of flow triggers, click **Dynamics 365 - When a record is created**. You may be prompted to sign-in to Dynamics 365.
 
 4. Enter the following information.
   * **Organization Name**. Select the Dynamics 365 instance where you want the flow to listen.
