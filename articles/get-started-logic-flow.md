@@ -103,7 +103,7 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	- To edit a flow, select it from the list of flows.  
 
-	![Resume flow](./media/get-started-logic-flow/select-flow.png)  
+	![Select flow](./media/get-started-logic-flow/select-flow.png)  
 
 	- To delete a flow, select the **...** icon, select its trash-can icon, and then select **OK**.  
 
