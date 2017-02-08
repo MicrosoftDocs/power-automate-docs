@@ -1,6 +1,6 @@
 <properties
     pageTitle="Learn how to add other owners to a flow and create team flows | Microsoft Flow"
-    description="Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage your flows."
+    description="Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,18 +15,20 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="02/03/2017"
+   ms.date="02/07/2017"
    ms.author="deonhe"/>
 
 # Create team flows #
+
 Create a team flow by specifying one or more other people in your organization as owners, who can perform these actions:
 
 - View the flow's history (that is, each run).
-- Edit the flow to change how it works (for example, adding or removing [services](https://flow.microsoft.com/services/)).
-- Add and remove other co-owners (but not the flow's creator).
+- Manage the properties of the flow (for example, start or stop the flow, add owners or update credentials for a connection).
+- Edit the definition of the flow (for example, add or remove an action or condition).
+- Add and remove other owners (but not the flow's creator).
 - Delete the flow.
 
-If are the creator or an owner of a flow, the [Microsoft Flow portal](https://flow.microsoft.com) shows it on the **Team flows** tab and adds a designation to it on the **My Flows** tab:
+If you are the creator or an owner of a flow, you will find it listed on the **Team flows** tab of the [Microsoft Flow portal](https://flow.microsoft.com). Team flows are also tagged with **Team Flow**, so you can easily find them among your other flows on the **My flows** tab of the Microsoft Flow portal:
 
 ![](./media/create-team-flows/addowner5.png)
 
@@ -60,7 +62,7 @@ Follow these steps to create a team flow or to add more one or more owners to a 
 
 	 Congratulations &mdash; your team flow has been created!
 
-## Remove a co-owner ##
+## Remove an owner ##
 
 >[AZURE.IMPORTANT] If you remove an owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly.
 
