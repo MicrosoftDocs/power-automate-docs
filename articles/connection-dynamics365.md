@@ -130,21 +130,6 @@ To find a record's ID, see [Find the record ID](#find-the-record-id).
 
 > [**Important**]   Fields that have a description of "For internal use only," such as Traversed path, Additional Parameters, and Time Zone Rule Version Number, should not contain a value.
 
-## Troubleshooting flows
-1. To view the status of flow runs, click **My flows**, and then in the list of flows, click ![Flow info icon](./media/connection-dynamics365/flow-info-icon.png) next to the flow.
-
-2. Next, click a row, such as a failed run that you want to view.
-
-  ![Flow run status](./media/connection-dynamics365/flow-run-status.png)
-
-3. Click the flow component that indicates the failure, such as this example that failed during the **When a record is created** trigger.
-
-  ![Flow failed run](./media/connection-dynamics365/flow-failedrun.png)
-
-4. Details of the flow component are displayed. This information can help you determine the reason for the failure.
-
-  ![Flow failed run details](./media/connection-dynamics365/flow-failedrun-details.png)
-
 ## Find the record ID
 1. In the Dynamics 365 web application, open a record, such as an account record.
 
@@ -157,6 +142,8 @@ Alternatively, on the actions toolbar click **EMAIL A LINK** to copy the full UR
   ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
+[Troubleshooting a flow](fix-flow-failures)
+
 [Flow in your organization Q&A](organization-q-and-a.md)
 
 [Frequently asked questions](frequently-asked-questions.md)
