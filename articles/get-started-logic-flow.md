@@ -95,22 +95,23 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	- To pause a flow, set its toggle to **Off**.
 
-	![Pause flow](./media/get-started-logic-flow/pause-flow.png)
+	![Pause flow](./media/get-started-logic-flow/pause-flow.png)  
 
 	- To resume a flow, set its toggle to **On**.  
 
 	![Resume flow](./media/get-started-logic-flow/resume-flow.png)  
 
 	- To edit a flow, select it from the list of flows.  
-	
+
+	![Resume flow](./media/get-started-logic-flow/select-flow.png)  
 
 	- To delete a flow, select the **...** icon, select its trash-can icon, and then select **OK**.  
 
 	![Delete icon](./media/get-started-logic-flow/delete-icon.png)  
 
-	- To view flow history, select the **List runs** icon.
+	- To view flow history, select the **List runs** icon.  
 
-	![Info icon](./media/get-started-logic-flow/info-icon.png)
+	![Info icon](./media/get-started-logic-flow/info-icon.png)  
 
 	Select a flow run from the list of runs to see the inputs and outputs of each step.
 
