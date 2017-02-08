@@ -18,8 +18,7 @@
    ms.date="02/07/2017"
    ms.author="deonhe"/>
 
-# Create team flows #
-
+# Create team flows (Preview) #
 Create a team flow by specifying one or more other people in your organization as owners, who can perform these actions:
 
 - View the flow's history (that is, each run).
