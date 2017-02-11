@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/24/2017"
+   ms.date="02/10/2017"
    ms.author="deonhe"/>
 
 
@@ -25,7 +25,7 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 
 ## Create a button flow with user input  
 
-1. Enter **Visual Studio** in the search box then tap the search icon to find all templates related to Visual Studio:  
+1. Enter **Visual Studio** in the search box and then tap the search icon to find all templates related to Visual Studio:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/1.png)  
 
 2. Select the **Open a Priority 2 Bug in Visual Studio** template:  
@@ -55,17 +55,19 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 16. Tap the **Create a new work item** card's title bar:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/9.png)  
 
-18. Make the selections that are appropriate for your VSTS environment then, select **Edit**:  
+18. Make the selections that are appropriate for your VSTS environment and then select **Edit**:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/10.png)  
 
 20. Select **Show advanced options** to reveal the other fields for this card:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/11.png)  
 
-22. Place the cursor before the **Bug title** token then enter "Severity: " into the **Title** text field. Next, with the cursor still in the title text field, select the **Bug severity** token then enter " -- ".  
-23. In the **Description** text field, place your cursor just after the **Bug description** token and press the **Enter** key to start a new line. Place your cursor on the new line then select the **Bug Repro steps** token:  
+22. Place the cursor before the **Bug title** token and then enter "Severity: " into the **Title** text field.  
+23. With the cursor still in the title text field, select the **Bug severity** token and then enter " -- ".  
+23. In the **Description** text field, place your cursor just after the **Bug description** token and press the **Enter** key to start a new line. Place your cursor on the new line and then select the **Bug Repro steps** token:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/12.png)  
 
-24. Tap the title bar on the **Send a push notification** card to expand it then place the **Description** token into the **Link** text field then place the **Bug title** token into the **Link label** text field:  
+24. Tap the title bar on the **Send a push notification** card to expand it and then place the **Description** token into the **Link** text field.  
+25. Place the **Bug title** token into the **Link label** text field:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/13.png)  
 
 14. Tap **Create flow** on the menu to create your flow:  
