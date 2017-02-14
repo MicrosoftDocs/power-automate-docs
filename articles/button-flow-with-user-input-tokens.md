@@ -25,7 +25,12 @@ Button flows are used to run routine tasks by simply tapping a button. Sometimes
 
 ## Create a button flow with user input
 
-1. Enter **Visual Studio** in the search box and then tap the search icon to find all templates related to Visual Studio:  
+Here, we'll use the Microsoft Flow portal to create a button flow app, however, you can also perform these steps using the Microsoft Flow mobile app.
+
+### Prerequisites
+You need to have an account on [Microsoft Flow portal](https://flow.microsoft.com) in order to create or execute flows.  
+
+1. After you've signed into the Microsoft Flow portal, enter **Visual Studio** in the search box and then tap the search icon to find all templates related to Visual Studio:  
 	![flow with user input image](./media/button-flow-with-user-input-tokens/1.png)  
 
 2. Select the **Open a Priority 2 Bug in Visual Studio** template:  
