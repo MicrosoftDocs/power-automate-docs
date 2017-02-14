@@ -15,7 +15,7 @@
     ms.topic="get-started-article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="02/07/2017"
+   ms.date="02/14/2017"
     ms.author="anneta"/>
 
 # Create a flow in Microsoft Flow #
@@ -115,7 +115,7 @@ First, you will need to select what starting action, or *trigger*, will start yo
 
 	Select a flow run from the list of runs to see the inputs and outputs of each step.
 
-**Note**: You can have up to 25 flows in your account. If you already have 25, delete one before you can create another.
+**Note**: You can have up to 50 flows in your account. If you already have 50, delete one before you can create another.
 
 ## Next steps ##
 
