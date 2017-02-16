@@ -16,7 +16,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-   ms.date="02/03/2017"
+   ms.date="02/07/2017"
    ms.author="anneta"/>
 
 # Create a flow from a template in Microsoft Flow #
@@ -44,7 +44,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 
 1. Confirm that this template will do what you want, and then select **Use this template**.
 
-1. If prompted, connect to Office, Slack, or both by selecting **Sign in** and then following the prompts.
+1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
 
 	![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
 
