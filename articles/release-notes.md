@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="02/06/2017"
+   ms.date="02/15/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -55,6 +55,14 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-02-16
+
+- **View enviornment flows** - Environment administrators can now view the full list of all the flows inside a given environment, as well as enable, disable or delete flows.
+- **Three new services** - Added support for Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite and Pipedrive.
+- **Custom HTTP authentication** - In the flow designer it's now possible to use authentication with custom HTTP endpoints.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
 
 ### Release 2017-02-06
 
