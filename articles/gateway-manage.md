@@ -37,7 +37,7 @@ In the top right side of [the Microsoft Flow portal](https://flow.microsoft.com)
 
 ## Install a gateway
 
->[AZURE.IMPORTANT] Data gateways only support HTTP traffic; they do not support HTTPS traffic.
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
 
 To create a gateway, click or tap **Create gateway** in the upper-right corner of the **My gateways** page (or [download the installer](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) directly). This downloads the GatewayInstall.exe installation wizard package. Execute the installation wizard, providing all required information. After you register and configure your gateway successfully, it shows up in the **My gateways** list in Microsoft Flow.
 

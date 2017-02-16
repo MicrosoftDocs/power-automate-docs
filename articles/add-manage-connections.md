@@ -67,7 +67,7 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
 
     ![Select gateway](./media/add-manage-connections/select-gateway.png)
 
->[AZURE.IMPORTANT] Data gateways only support HTTP traffic; they do not support HTTPS traffic.
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
 
 1. Provide the connection's credentials, and then select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
 
