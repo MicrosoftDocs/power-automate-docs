@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/19/2017"
+   ms.date="02/16/2017"
    ms.author="deonhe"/>
 
 # Regions overview in Microsoft Flow
