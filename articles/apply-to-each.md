@@ -31,7 +31,7 @@ Sometimes you need to confirm a condition on each item in an array and then take
 
 
 ## Use the apply to each action
-After you have signed into the [Microsoft Flow portal](https://flow.microsoft.com), 
+After you have signed into the [Microsoft Flow portal](https://flow.microsoft.com):  
 1. Select the **My flows** tab and then create a flow from a blank template:  
 ![](./media/apply-to-each/foreach-1.png)  
 2. Enter "schedule" into the search box to search for all services and triggers that are related to scheduling.  
@@ -51,11 +51,13 @@ So far, you have created a simple flow that gets some emails from your inbox. Th
 ![](./media/apply-to-each/foreach-7.png)  
 10. Select **Add a condition**:  
 ![](./media/apply-to-each/foreach-8.png)  
-11. Configure the **Condition** card to search the subject of each email for the words "meet now":
+11. Configure the **Condition** card to search the subject of each email for the words "meet now":  
 - Insert the **Subject** token into the **Object name** control.
 - Select **Contains** in the **Relationship** drop down list box.
 - Enter **meet now** into the  **Value** control.  
-12. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition is true:    
+
+
+12. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition is true:  
 ![](./media/apply-to-each/foreach-9.png)  
 13. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:  
 ![](./media/apply-to-each/foreach-10.png)  
