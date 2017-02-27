@@ -20,14 +20,15 @@
 
 # Using the apply to each action in Microsoft Flow
 
-Sometimes you need to confirm a condition on each item in an array and then take a particular action if the condition is met. Microsoft Flow makes this simple by providing the **apply to each** action that can be used with a *condition*. In this walk-through, we'll create a flow that does the following periodically:
-1. Get the last 10 messages in your Office365 Outlook email inbox
-2. Check each of the 10 messages to determine if it unread and has **meet now** in the subject. If both conditions are met, the flow will send a push notification to your mobile device, letting you know that you need to attend a meeting.
-3. Mark the email as *read*.
+Sometimes you need to confirm a condition on each item in an array and then take a particular action if the condition is met. Microsoft Flow makes this simple by providing the **apply to each** action that can be used with a *condition*. In this walk-through, we'll create a flow that does the following periodically:  
+1. Get the last 10 messages in your Office365 Outlook email inbox  
+2. Check each of the 10 messages to determine if it unread and has **meet now** in the subject. If both conditions are met, the flow will send a push notification to your mobile device, letting you know that you need to attend a meeting.  
+3. Mark the email as *read*.  
 
 ### Prerequisites
-To use the **apply to each** action, your flow must provide an array of items.
-
+- To use the **apply to each** action, your flow must provide an array of items.
+- You will also need to configure connections to Office 365 Outlook and the push notification service.
+- 
 ## Use the apply to each action
 After you have signed into the [Microsoft Flow portal](https://flow.microsoft.com), 
 1. Select the **My flows** tab and then create a flow from a blank template:  
@@ -67,7 +68,7 @@ So far, you have created a simple flow that gets some emails from your inbox. Th
 ![](./media/apply-to-each/foreach-14.png)  
 
 ## Run the flow
-1. Send an email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email. 
+1. Send an email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.  
 1. Confirm the email is in your inbox and it is unread.  
 1. Run the flow you just created from the **My flows** tab of the Microsoft Flow portal by selecting **Run now**:  
 ![](./media/apply-to-each/foreach-run-1.png)  
@@ -83,6 +84,5 @@ Now that you've run the flow successfully, you should receive the push notificat
 1. To see the full contents of the notification, you may have to select the notification. You will see the full notification, similar to this:  
 ![](./media/apply-to-each/foreach-notification-2.png)  
 
->[AZURE.NOTE] If you don't receive the push notification, confirm that your mobile device has a working data connection. 
-
+>[AZURE.NOTE] If you don't receive the push notification, confirm that your mobile device has a working data connection.  
 ## Learn more
