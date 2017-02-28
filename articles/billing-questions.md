@@ -46,7 +46,7 @@ Additionally, if you are on a free plan or a trial plan, your current usage agai
 
 ![Settings button](./media/billing-questions/settings.png)
 
-For customers with plans other than free or trial runs are pooled across all user in the company. We are currently working on features to expose available quota and usage across the company.
+For customers with plans other than free or trial runs are pooled across all users in the company. We are currently working on features to expose available quota and usage across the company.
 
 ## What happens if my usage exceeds the limits?
 
