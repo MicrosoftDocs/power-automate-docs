@@ -28,9 +28,7 @@ Pricing information for Microsoft Flow can be found [here](https://flow.microsof
 
 ## Where can I find out what my plan is?
 
-Information about your current plan can be found by clicking the **Settings** menu in the top navigation bar.
-
-![Settings button](./media/billing-questions/settings.png)
+Information about your current plan can be found [here](https://flow.microsoft.com/pricing/).
 
 ## How do I switch plans?
 
@@ -44,13 +42,18 @@ Logs of your runs, along with notifications and failures, can be found by clicki
 
 ![Activity link](./media/billing-questions/activity-link.png)
 
-Additionally, your current usage against your plan can be found by clicking the **Settings** menu in the top navigation bar.   
+Additionally, if you are on a free plan or a trial plan, your current usage against your plan can be found by clicking the **Settings** menu in the top navigation bar.   
 
 ![Settings button](./media/billing-questions/settings.png)
 
+For customers with plans other than free or trial runs are pooled across all user in the company. We are currently working on features to expose available quota and usage across the company.
+
 ## What happens if my usage exceeds the limits?
 
-Any runs triggered after your usage exceeds the limits of your plan will fail.
+Microsoft Flow may start throttling any runs triggered after your usage exceeds the limits of your plan. User will not be charged for any runs that happen to exceed the quota.
+
+## Where can I find more information regarding the usage limits?
+Please check the **FAQ** section on the [pricing page](https://flow.microsoft.com/pricing/).
 
 ## What happens if I try to execute runs too frequently? 
 
@@ -58,18 +61,19 @@ Runs are queued until they are able to be executed according to your plan.  For 
 
 ## What counts as a run?
 
-Whenever a flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. 
+Whenever a flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run.
 
 ## Are there differences between Microsoft Accounts and work or school accounts for billing?
 
 Yes. If you sign in with a Microsoft Account (such as accounts that end in @outlook.com or @gmail.com), then you will only be able to use the free plan. To take advantage of the features of the paid plan, you will need to sign in with a work or school email ID.
+
 
 ## I'm trying to upgrade, but I'm told my account is not eligible
 
 If you have signed in using a Microsoft Account, to upgrade you need to use the email provided by your work or school. If you do not have an email from your work or school that you can use then you can create a new Office 365 trial following the instructions in this [Power BI article](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
 
-## Why did I run out of runs when my flow only ran a few time?
+## Why did I run out of runs when my flow only ran a few times?
 
 Certain flows may run more frequently than you expect. For example, a flow that sends you a push notification when your manager emails you will run every time you get a new email. This is because there is a condition inside the flow to check if your manager sent it -- but even if this condition isn't met the flow is still counted as ran.
 
