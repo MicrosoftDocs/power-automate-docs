@@ -50,7 +50,7 @@ For customers with plans other than free or trial runs are pooled across all use
 
 ## What happens if my usage exceeds the limits?
 
-Microsoft Flow may start throttling any runs triggered after your usage exceeds the limits of your plan. User will not be charged for any runs that happen to exceed the quota.
+Microsoft Flow may start throttling any runs triggered after your usage exceeds the limits of your plan.
 
 ## Where can I find more information regarding the usage limits?
 Please check the **FAQ** section on the [pricing page](https://flow.microsoft.com/pricing/).
@@ -70,14 +70,14 @@ Yes. If you sign in with a Microsoft Account (such as accounts that end in @outl
 
 ## I'm trying to upgrade, but I'm told my account is not eligible
 
-If you have signed in using a Microsoft Account, to upgrade you need to use the email provided by your work or school. If you do not have an email from your work or school that you can use then you can create a new Office 365 trial following the instructions in this [Power BI article](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
+To updgrade, you must use your work or school account. If you do not have an email from your work or school that you can use then you can create a new Office 365 trial following the instructions in this [Power BI article](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
 
 ## Why did I run out of runs when my flow only ran a few times?
 
 Certain flows may run more frequently than you expect. For example, a flow that sends you a push notification when your manager emails you will run every time you get a new email. This is because there is a condition inside the flow to check if your manager sent it -- but even if this condition isn't met the flow is still counted as ran.
 
-You can work around this issue by putting all the filtering you need into the trigger.
+You can work around this issue by putting all the filtering you need into the trigger. In the example above, expand the Advanced Options menu and specify your manager's email address in the From field.
 
 ## Other limits and caveats
 
