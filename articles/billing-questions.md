@@ -84,5 +84,5 @@ You can work around this issue by putting all the filtering you need into the tr
 - Microsoft Flow accounts may have up to 50 flows each.
 - Microsoft Flow accounts may have up to 15 custom APIs.
 - Microsoft Flow accounts may have up to 20 connections per API and 100 connections total.
-- A gateway can only be installed in the default environment.   
+- Gateways can be installed onlyn in the default environment.   
 - Certain external connectors, such as Twitter, implement connection throttling to control quality of service.  When throttling is in effect, your flows will fail.  You can see the details of this throttling by clicking on the flow run history and selecting that failed run.
