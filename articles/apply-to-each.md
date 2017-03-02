@@ -53,7 +53,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
      ![](./media/apply-to-each/foreach-3.png)
 
-1. Select **Add an action** and then type **outlook** into the search box to search for all actions related to Microsoft Outlook.
+1. Select **+ New step**, **Add an action** and then type **outlook** into the search box to search for all actions related to Microsoft Outlook.
 
 1. Select the **Office 365 Outlook - Get emails** action:
 
@@ -65,11 +65,11 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
    >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
 
-1. Select the **add an apply to each** action:
+1. Select **+ New step**, **More** and then  **Add an apply to each** action:
 
      ![](./media/apply-to-each/foreach-6.png)
 
-1. Insert the **Body** token into the **Select an output from previous steps** control on the **Apply to each** card. This pulls in the body of the emails to be used in the *apply to each* operation:
+1. Insert the **Body** token into the **Select an output from previous steps** control on the **Apply to each** card. This pulls in the body of the emails to be used in the **apply to each** action:
 
      ![](./media/apply-to-each/foreach-7.png)
 
@@ -79,7 +79,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
 1. Configure the **Condition** card to search the subject of each email for the words "meet now":
 
-     - Insert the **Subject** token into the **Object name** control.
+     - Insert the **Subject** token into the **Object Name** control.
      - Select **Contains** in the **Relationship** drop down list box.
      - Enter **meet now** into the  **Value** control.
 
@@ -87,13 +87,13 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
 1. Select **... More** and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
 
-     - Insert the **Importance** token into the **Object name** control.
+     - Insert the **Importance** token into the **Object Name** control.
      - Select **is equal to** in the **Relationship** drop down list box.
-     - Enter **High* into the  **Value** control.
+     - Enter **High** into the  **Value** control.
 
           ![](./media/apply-to-each/foreach-importance-condition.png)
 
-1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
 
      ![](./media/apply-to-each/foreach-9.png)
 
@@ -103,7 +103,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now":
 
      ![](./media/apply-to-each/foreach-11.png)
-1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
+1. Select **Add an action**, enter **read** as the search term and then select the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
 1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
@@ -116,29 +116,29 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
           ![](./media/apply-to-each/foreach-get-manager.png)
 
-1. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure that card like this:
-     - Insert the **From** token into the **Object name** control.
+1. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
+     - Insert the **From** token into the **Object Name** control.
      - Select **contains** in the **Relationship** drop down list box.
-     - Enter **Email* token into the  **Value** control.
+     - Enter **Email** token into the  **Value** control.
 
      ![condition 3 ](./media/apply-to-each/foreach-condition3-card.png)
 
-1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent from your boss) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section of the **Condition 3** card. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent from your boss) is true:
 
-     ![](./media/apply-to-each/foreach-9.png)
+     ![](./media/apply-to-each/foreah-condition3-add-action.png)
 
 1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
 1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss:
 
-     ![](./media/apply-to-each/foreach-11.png)
+     ![](./media/apply-to-each/foreach-boss-notification.png)
 1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
-1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
+1. Add the **Message id** token to the **Mark as read 2** card. This indicates the Id of the message that will be marked as read:
 
-     ![](./media/apply-to-each/foreach-13.png)
+     ![](./media/apply-to-each/foreach-mark-as-read2.png)
 
 1. Name your flow and then create it:
 
