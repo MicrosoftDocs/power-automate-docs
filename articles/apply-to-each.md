@@ -20,18 +20,19 @@
 
 # Using the apply to each action in Microsoft Flow
 
-Sometimes you need to confirm a condition on each item in an array and then take a particular action if the condition is met. Microsoft Flow makes this simple by providing the **apply to each** action that can be used with a *condition*. In this walk-through, we'll create a flow that does the following periodically:
+Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to iterate thru a given list of items.
 
-1. Get the last 10 unread messages in your Office365 Outlook email Inbox.
-1. Check each of the 10 messages has **meet now** in the subject.
-1. Check if the email is from your boss.
-1. Check the importance flag to see if it is a high importance email.
-1. Send a push notification if the email meets certain conditions.
-1. Mark the email as *read*.
+In this walk-through, we'll create a flow that runs every fifteen minutes and does the following:
+
+1. Gets the last 10 unread messages in your Office 365 Outlook email Inbox.
+1. Checks each of the 10 messages to confirm if it has **meet now** in the subject.
+1. Checks if the email is from your boss or if the email was sent with high importance.
+1. Sends a push notification if the email has **meet now** in the subject and is either from your boss or was sent with high importance.
+1. Marks the email as *read* if a push notification was sent for it.
 
 ## Prerequisites
 
-Here are the requirements that must be met to perform the steps in this walk-thorugh:
+Here are the requirements that must be met to perform the steps in this walk-through:
 
      - To use the **apply to each** action, your flow must provide an array of items.
      - You will also need to configure connections to Office 365 Outlook and the push notification service.
@@ -45,7 +46,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
      ![](./media/apply-to-each/foreach-1.png)
 
 1. Enter "schedule" into the search box to search for all services and triggers that are related to scheduling.
-1. Select the  the **Schedule - Recurrence** trigger to indicate that your flow will run on a schedule that you will provide next:
+1. Select the **Schedule - Recurrence** trigger to indicate that your flow will run on a schedule that you will provide next:
 
      ![](./media/apply-to-each/foreach-2.png)
 
@@ -65,7 +66,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
    >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
 
-1. Select **+ New step**, **More** and then  **Add an apply to each** action:
+1. Select **+ New step**, **More** and then **Add an apply to each** action:
 
      ![](./media/apply-to-each/foreach-6.png)
 
@@ -81,7 +82,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
      - Insert the **Subject** token into the **Object Name** control.
      - Select **Contains** in the **Relationship** drop down list box.
-     - Enter **meet now** into the  **Value** control.
+     - Enter **meet now** into the **Value** control.
 
           ![](./media/apply-to-each/foreach-subject-condition.png)
 
@@ -89,7 +90,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 
      - Insert the **Importance** token into the **Object Name** control.
      - Select **is equal to** in the **Relationship** drop down list box.
-     - Enter **High** into the  **Value** control.
+     - Enter **High** into the **Value** control.
 
           ![](./media/apply-to-each/foreach-importance-condition.png)
 
@@ -119,7 +120,7 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
      - Insert the **From** token into the **Object Name** control.
      - Select **contains** in the **Relationship** drop down list box.
-     - Enter **Email** token into the  **Value** control.
+     - Enter **Email** token into the **Value** control.
 
      ![condition 3 ](./media/apply-to-each/foreach-condition3-card.png)
 
@@ -170,5 +171,3 @@ Now that you've run the flow successfully, you should receive the push notificat
      ![](./media/apply-to-each/foreach-notification-2.png)
 
 >[AZURE.NOTE] If you don't receive the push notification, confirm that your mobile device has a working data connection.
-
-## Learn more
