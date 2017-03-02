@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Learn how to parse an array of items and take an action based on a condition by using the Apply to each action.| Microsoft Flow"
-    description="Use Microsoft Flow to loop through an array of items."
+    pageTitle="Learn how to parse an array of items and take an action based on a condition by using the apply to each action.| Microsoft Flow"
+    description="Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,18 +15,23 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="02/30/2017"
+   ms.date="03/06/2017"
    ms.author="deonhe"/>
 
 # Using the apply to each action in Microsoft Flow
 
 Sometimes you need to confirm a condition on each item in an array and then take a particular action if the condition is met. Microsoft Flow makes this simple by providing the **apply to each** action that can be used with a *condition*. In this walk-through, we'll create a flow that does the following periodically:
 
-1. Get the last 10 messages in your Office365 Outlook email Inbox
-1. Check each of the 10 messages to determine if it unread and has **meet now** in the subject. If both conditions are met, the flow will send a push notification to your mobile device, letting you know that you need to attend a meeting.
+1. Get the last 10 unread messages in your Office365 Outlook email Inbox.
+1. Check each of the 10 messages has **meet now** in the subject.
+1. Check if the email is from your boss.
+1. Check the importance flag to see if it is a high importance email.
+1. Send a push notification if the email meets certain conditions.
 1. Mark the email as *read*.
 
-### Prerequisites
+## Prerequisites
+
+Here are the requirements that must be met to perform the steps in this walk-thorugh:
 
      - To use the **apply to each** action, your flow must provide an array of items.
      - You will also need to configure connections to Office 365 Outlook and the push notification service.
@@ -57,7 +62,8 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. This will open the **Get emails** card. Configure the **Get emails** card to select the top 10 unread emails from the Inbox folder. Do not include attachments because they won't be used in the flow:
 
      ![](./media/apply-to-each/foreach-5.png)
-So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
+
+   >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
 
 1. Select the **add an apply to each** action:
 
@@ -77,13 +83,15 @@ So far, you have created a simple flow that gets some emails from your inbox. Th
      - Select **Contains** in the **Relationship** drop down list box.
      - Enter **meet now** into the  **Value** control.
 
+          ![](./media/apply-to-each/foreach-subject-condition.png)
+
 1. Select **... More** and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
 
      - Insert the **Importance** token into the **Object name** control.
      - Select **is equal to** in the **Relationship** drop down list box.
      - Enter **High* into the  **Value** control.
 
-     ![](./media/apply-to-each/foreach-condition2-card.png)
+          ![](./media/apply-to-each/foreach-importance-condition.png)
 
 1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
 
@@ -102,39 +110,39 @@ So far, you have created a simple flow that gets some emails from your inbox. Th
 
      ![](./media/apply-to-each/foreach-13.png)
 1. Going back to the **Condition 2** card, on the **IF NO, DO NOTHING** branch:
-     - Select **Add an action** and then type **get manager** into the search box
-     - Select8 for the **Office 365 Users - Get manager** action from the search results list
-     - Enter your *full* email address into the **User** control of the **Get Manager** card
+     - Select **Add an action** and then type **get manager** into the search box.
+     - Select the **Office 365 Users - Get manager** action from the search results list.
+     - Enter your *full* email address into the **User** control of the **Get Manager** card.
+
+          ![](./media/apply-to-each/foreach-get-manager.png)
 
 1. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure that card like this:
      - Insert the **From** token into the **Object name** control.
      - Select **contains** in the **Relationship** drop down list box.
      - Enter **Email* token into the  **Value** control.
 
-     ![](./media/apply-to-each/foreach-condition3-card.png)
+     ![condition 3 ](./media/apply-to-each/foreach-condition3-card.png)
 
-20. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent from your boss) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent from your boss) is true:
 
      ![](./media/apply-to-each/foreach-9.png)
 
-21. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
+1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
-22. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss:
+1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss:
 
      ![](./media/apply-to-each/foreach-11.png)
-23. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
+1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
-24. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
+1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
 
      ![](./media/apply-to-each/foreach-13.png)
 
-
-25. Name your flow and then create it:
+1. Name your flow and then create it:
 
      ![](./media/apply-to-each/foreach-14.png)
-
 
 ## Run the flow
 
