@@ -28,8 +28,8 @@ Sometimes you need to confirm a condition on each item in an array and then take
 
 ### Prerequisites
 
-- To use the **apply to each** action, your flow must provide an array of items.
-- You will also need to configure connections to Office 365 Outlook and the push notification service.
+     - To use the **apply to each** action, your flow must provide an array of items.
+     - You will also need to configure connections to Office 365 Outlook and the push notification service.
 
 ## Use the apply to each action
 
@@ -73,42 +73,43 @@ So far, you have created a simple flow that gets some emails from your inbox. Th
 
 1. Configure the **Condition** card to search the subject of each email for the words "meet now":
 
-- Insert the **Subject** token into the **Object name** control.
-- Select **Contains** in the **Relationship** drop down list box.
-- Enter **meet now** into the  **Value** control.
-12. Select **... More** and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
+     - Insert the **Subject** token into the **Object name** control.
+     - Select **Contains** in the **Relationship** drop down list box.
+     - Enter **meet now** into the  **Value** control.
 
-- Insert the **Importance** token into the **Object name** control.
-- Select **is equal to** in the **Relationship** drop down list box.
-- Enter **High* into the  **Value** control.
+1. Select **... More** and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
+
+     - Insert the **Importance** token into the **Object name** control.
+     - Select **is equal to** in the **Relationship** drop down list box.
+     - Enter **High* into the  **Value** control.
 
      ![](./media/apply-to-each/foreach-condition2-card.png)
 
-13. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
 
      ![](./media/apply-to-each/foreach-9.png)
 
-14. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
+1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
-15. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now":
+1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now":
 
      ![](./media/apply-to-each/foreach-11.png)
-16. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
+1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
-17. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
+1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
 
      ![](./media/apply-to-each/foreach-13.png)
 1. Going back to the **Condition 2** card, on the **IF NO, DO NOTHING** branch:
-- Select **Add an action** and then type **get manager** into the search box
-- Select8 for the **Office 365 Users - Get manager** action from the search results list
-- Enter your *full* email address into the **User** control of the **Get Manager** card
+     - Select **Add an action** and then type **get manager** into the search box
+     - Select8 for the **Office 365 Users - Get manager** action from the search results list
+     - Enter your *full* email address into the **User** control of the **Get Manager** card
 
-19. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure that card like this:
-- Insert the **From** token into the **Object name** control.
-- Select **contains** in the **Relationship** drop down list box.
-- Enter **Email* token into the  **Value** control.
+1. Select **... More** and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure that card like this:
+     - Insert the **From** token into the **Object name** control.
+     - Select **contains** in the **Relationship** drop down list box.
+     - Enter **Email* token into the  **Value** control.
 
      ![](./media/apply-to-each/foreach-condition3-card.png)
 
