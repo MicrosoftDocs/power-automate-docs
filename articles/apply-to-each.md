@@ -20,7 +20,7 @@
 
 # Using the apply to each action in Microsoft Flow
 
-Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to iterate thru a given list of items.
+Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to iterate through a given list of items.
 
 In this walk-through, we'll create a flow that runs every fifteen minutes and does the following:
 
@@ -29,6 +29,10 @@ In this walk-through, we'll create a flow that runs every fifteen minutes and do
 1. Checks if the email is from your boss or if the email was sent with high importance.
 1. Sends a push notification if the email has **meet now** in the subject and is either from your boss or was sent with high importance.
 1. Marks the email as *read* if a push notification was sent for it.
+
+The following diagram shows the details of the flow we will create in this walk-through:
+
+![](./media/apply-to-each/foreach-flow-visio.png)
 
 ## Prerequisites
 
@@ -101,10 +105,10 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
-1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now":
+1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now" and then select **Add an action**:
 
      ![](./media/apply-to-each/foreach-11.png)
-1. Select **Add an action**, enter **read** as the search term and then select the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
+1. Enter **read** as the search term and then select the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
 1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
@@ -144,6 +148,10 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. Name your flow and then create it:
 
      ![](./media/apply-to-each/foreach-14.png)
+
+If you followed along, your flow should look similar to this diagram:
+
+![](./media/apply-to-each/foreach-flow-finished.png)
 
 ## Run the flow
 
