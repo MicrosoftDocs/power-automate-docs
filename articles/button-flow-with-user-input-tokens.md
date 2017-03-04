@@ -50,7 +50,7 @@ You can create a button flow in the Microsoft Flow website or the mobile app for
 
 	![](./media/button-flow-with-user-input-tokens/5.png)
 
-## Customize the flow ##
+## Customize the user input ##
 1. In the trigger card, select **Edit**:
 
 	![](./media/button-flow-with-user-input-tokens/6.png)  
@@ -63,7 +63,9 @@ You can create a button flow in the Microsoft Flow website or the mobile app for
 
 	In this example, you'll create two custom input fields (**Bug repro steps** and **Bug severity**) so that anyone who uses this flow can enter the steps to reproduce the bug and rate the bug's severity:  
 
-	![](./media/button-flow-with-user-input-tokens/8.png)  
+	![](./media/button-flow-with-user-input-tokens/8.png)
+
+## Customize the bug ##
 
 1. Tap the **Create a new work item** card's title bar:
 
@@ -87,7 +89,9 @@ You can create a button flow in the Microsoft Flow website or the mobile app for
 
 1. Place your cursor on the new line, and then select the **Bug Repro steps** token:
 
-	![](./media/button-flow-with-user-input-tokens/12.png)  
+	![](./media/button-flow-with-user-input-tokens/12.png)
+
+## Customize the push notification ##
 
 1. Tap the title bar on the **Send a push notification** card to expand it.
 
@@ -101,11 +105,9 @@ You can create a button flow in the Microsoft Flow website or the mobile app for
 	![](./media/button-flow-with-user-input-tokens/14.png)  
 
 ## Run your flow ##
-In this walk-through, you'll use the Microsoft Flow mobile app to run the button flow you just created. You'll provide all the user input that's needed to create a bug with a title, a description, repro steps, and severity level.  
+In this walk-through, you'll use the mobile app for Microsoft Flow to run the button flow you just created. You'll provide all the user input that's needed to create a bug with a title, a description, repro steps, and a severity level.  
 
-In the Microsoft Flow mobile app:  
-
-1. Tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
+1. In the mobile app for Microsoft Flow, tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
 
 	![](./media/button-flow-with-user-input-tokens/runmt1.png)  
 
