@@ -18,7 +18,7 @@
    ms.date="03/06/2017"
    ms.author="deonhe"/>
 
-# Using the apply to each action in Microsoft Flow
+# Use the apply to each action in Microsoft Flow to iterate over a list of emails periodically
 
 Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to iterate through a given list of items.
 
@@ -38,12 +38,12 @@ The following diagram shows the details of the flow we will create in this walk-
 
 Here are the requirements that must be met to perform the steps in this walk-through:
 
-     - To use the **apply to each** action, your flow must provide an array of items.
-     - You will also need to configure connections to Office 365 Outlook and the push notification service.
+- To use the **apply to each** action, your flow must provide an array of items.
+- You will also need to configure connections to Office 365 Outlook and the push notification service.
 
 ## Use the apply to each action
 
-After you have signed into the [Microsoft Flow portal](https://flow.microsoft.com):
+After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
 1. Select the **My flows** tab and then create a flow from a blank template:
 
@@ -105,15 +105,19 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
+
 1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now" and then select **Add an action**:
 
      ![](./media/apply-to-each/foreach-11.png)
+
 1. Enter **read** as the search term and then select the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
+
 1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
 
      ![](./media/apply-to-each/foreach-13.png)
+
 1. Going back to the **Condition 2** card, on the **IF NO, DO NOTHING** branch:
      - Select **Add an action** and then type **get manager** into the search box.
      - Select the **Office 365 Users - Get manager** action from the search results list.
@@ -135,12 +139,15 @@ After you have signed into the [Microsoft Flow portal](https://flow.microsoft.co
 1. Search for **notification** and then select the **Notifications - Send me a mobile notification** action:
 
      ![](./media/apply-to-each/foreach-10.png)
+
 1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss:
 
      ![](./media/apply-to-each/foreach-boss-notification.png)
+
 1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
 
      ![](./media/apply-to-each/foreach-12.png)
+
 1. Add the **Message id** token to the **Mark as read 2** card. This indicates the Id of the message that will be marked as read:
 
      ![](./media/apply-to-each/foreach-mark-as-read2.png)
@@ -157,12 +164,14 @@ If you followed along, your flow should look similar to this diagram:
 
 1. Send an email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
 1. Confirm the email is in your inbox and it is unread.
-1. Run the flow you just created from the **My flows** tab of the Microsoft Flow portal by selecting **Run now**:
+1. Sign into Microsoft Flow, select **My flows**, and then select **run now**:
 
      ![](./media/apply-to-each/foreach-run-1.png)
+
 1. Select **Run flow** to confirm you really want to run the flow:
 
      ![](./media/apply-to-each/foreach-run-2.png)
+
 1. After a few moments you should see the results of the successful run:
 
      ![](./media/apply-to-each/foreach-run-3.png)
@@ -171,9 +180,10 @@ If you followed along, your flow should look similar to this diagram:
 
 Now that you've run the flow successfully, you should receive the push notification on your mobile device.
 
-1. Open your Microsoft Flow app on your mobile device and then select the **Activity** tab. You will see the push notification about the meeting:
+1. Open the Microsoft Flow app on your mobile device and then select the **Activity** tab. You will see the push notification about the meeting:
 
      ![](./media/apply-to-each/foreach-notification-1.png)
+
 1. To see the full contents of the notification, you may have to select the notification. You will see the full notification, similar to this:
 
      ![](./media/apply-to-each/foreach-notification-2.png)
