@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Manage connections | Microsoft Flow"
-    description="Add or manage connections to SharePoint, SQL, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive, and more"
+    pageTitle="Learn to connect to your data using connections and on-premises data gateways| Microsoft Flow"
+    description="Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive, and more"
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/22/2016"
+   ms.date="02/15/2017"
    ms.author="stepsic"/>
 
 # Manage connections in Microsoft Flow
@@ -52,9 +52,10 @@ This topic shows you how to manage connections in the [Microsoft Flow portal][1]
 
 1. Select **Create connection**.
 
-1. In the list of **Available connections**, select the connection that you want to set up, such as SharePoint Online. Then, enter your credentials to set up the connection.
+1. In the list of **Available connections**, select the connection that you want to set up, such as SharePoint.
+2. Select the **Create connection** button and then enter your credentials to set up the connection.
 
-When the connection is set up, it's listed in **Connections**.
+When the connection is set up, it's listed in **My connections**.
 
 ## Connect to your data through an on-premises data gateway
 
@@ -66,14 +67,20 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
 
     ![Select gateway](./media/add-manage-connections/select-gateway.png)
 
-1. Configure the connection credentials, and select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
 
-	When the connection is set up, it's listed in **Connections**.
+1. Provide the connection's credentials, and then select the gateway that you want to use. For more information, see [Manage gateways](gateway-manage.md) and [Understand gateways](gateway-reference.md).
+
+	When the connection is set up, it's listed in **My connections**.
 
 ## Delete a connection
-1. Go to the **Connections** page, and select the connection that you want to delete.
+1. Go to the **My connections** page, and select the trash can icon for the connection you wish to delete.
 
-1. In the details view of the connection, select **Delete**.
+	![Verify password](./media/add-manage-connections/delete-connection.png)
+
+1. Select the **OK** button to confirm you would like to delete the connection.
+
+	![Verify password](./media/add-manage-connections/delete-confirmation.png)
 
 When you delete a connection, it's removed from both Microsoft PowerApps and Microsoft Flow.
 
@@ -81,7 +88,7 @@ When you delete a connection, it's removed from both Microsoft PowerApps and Mic
 
 If a connection is not working because your account details or password have changed, you can update it.
 
-1. Go to the **Connections** page, and then select the **Verify password** link for the connection that you want to update.
+1. Go to the **My connections** page, and then select the **Verify password** link for the connection that you want to update.
 
 	![Verify password](./media/add-manage-connections/verify-password.png)
 
@@ -93,7 +100,7 @@ When you update a connection, it's updated for both Microsoft PowerApps and Micr
 
 If, while logged in as one account, you are unable to create a new connection to a service that is owned by your organization, such as SharePoint, Office 365 or OneDrive for Business with a different set of credentials, your organization may have configured a policy that requires you to sign in to Microsoft Flow with the same account as connecting to services. 
 
-For example, if you log in to Microsoft Flow with *yourname@outlook.com*, but you try to connect to SharePoint with *yourname@contoso.com*, and you are blocked, you can instead log in to Microsoft Flow with *yourname@contoso.com* and will be able to connect.
+For example, if you log in to Microsoft Flow with *yourname@outlook.com*, but you try to connect to SharePoint with *yourname@contoso.com*, and you are blocked, you can instead log in to Microsoft Flow with *yourname@contoso.com* and you will be able to connect to SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com
