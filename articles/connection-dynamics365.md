@@ -32,7 +32,7 @@ To create a flow from a template, follow these steps.
 
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
 
-2. Click **Services**, and then click **Dynamics 365**.
+2. Click or tap **Services**, and then click or tap **Dynamics 365**.
 
 3. Several templates are available. To get started, select the template that you want.
 
@@ -41,24 +41,24 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
 
-2. Click **My flows**, and then click **Create from blank**.
+2. Click or tap **My flows**, and then click or tap **Create from blank**.
 
-3. In the list of flow triggers, click **Dynamics 365 - When a record is created**. You may be prompted to sign-in to Dynamics 365.
+3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**. You may be prompted to sign-in to Dynamics 365.
 
-4. Enter the following information.
+4. Click or tap the following information.
   * **Organization Name**. Select the Dynamics 365 instance where you want the flow to listen.
   * **Entity Name**. Select the entity that you want to listen to, which will act as a trigger initiating the flow. In this walkthrough **Leads** is selected.
 
     ![Flow details](./media/connection-dynamics365/flow-details.png)
-5.	Click **New step**, and then click **Add an action**.
+5.	Click or tap **New step**, and then click or tap **Add an action**.
 
-6.	Click **Dynamics 365 – Create a new record**.
+6.	Click or tap **Dynamics 365 – Create a new record**.
 
-7.	Enter the following information.
+7.	Click or tap the following information.
   * **Organization Name**. Select the Dynamics 365 instance where you want the flow to create the record. Notice that it doesn’t have to be the same instance where the event is triggered from.
   * **Entity Name**. Select the entity that will create a record when the event occurs. In this walkthrough, **Tasks** is selected.
 
-8.	A Subject box appears. When you click the box, a dynamic content pane appears where you can select either of the following fields.
+8.	A Subject box appears. When you click or tap the box, a dynamic content pane appears where you can select either of the following fields.
 
   * **Last Name**. Selecting this field will insert the last name of the lead in to the Subject field of the task, when the task record is created.
   * **Topic**. Selecting this field will insert Topic field for the lead in to the Subject field of the task, when the task record is created.
@@ -67,9 +67,9 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
   ![Flow add topic](./media/connection-dynamics365/flow-addtopic.png)
 
-  >[**Tip**]    On the dynamic content pane, click **See more** to display more fields that are  associated with the entity. For example **Company Name**, **Customer**, **Description**, or **Email**, that can be used to populate the subject field in a task.
+  >[**Tip**]    On the dynamic content pane, click or tap **See more** to display more fields that are  associated with the entity. For example **Company Name**, **Customer**, **Description**, or **Email**, that can be used to populate the subject field in a task.
 
-9.	Click **Create flow**.
+9.	Click or tap **Create flow**.
 
 ## Walkthrough 2: Create a flow that creates a task in Wunderlist whenever a task is created in Dynamics 365
 
@@ -77,25 +77,25 @@ This walkthrough shows you how to create a task in Dynamics 365 whenever a task 
 
 1. Sign in to [https://flow.microsoft.com/](https://flow.microsoft.com/).
 
-2. Click **My flows**, and then click **Create from blank**.
+2. Click or tap **My flows**, and then click or tap **Create from blank**.
 
-3. In the list of flow triggers, click **Dynamics 365 - When a record is created**.
+3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
 
-4. Enter the following information.
+4. Click or tap the following information.
 
   * **Organization Name**. Select the Dynamics 365 instance that you want the flow to listen to.
   * **Entity Name**. Select the entity that you want to listen to, which will act as a trigger to initiate the flow. In this walkthrough, **Tasks** is selected.
 
-5.	Click **New step**, and then click **Add an action**.
+5.	Click or tap **New step**, and then click or tap **Add an action**.
 
-6.	Type *create a task*, and then click **Wunderlist – Create a task**.
+6.	Type *create a task*, and then click or tap **Wunderlist – Create a task**.
 
-7.	In the List ID box select the list where you want to create the task, such as your **inbox** or **Work**.
+7.	In the List ID box select **inbox** for where you want to create the task.
 
-8.	Click **Create flow**.  
+8.	Click or tap **Create flow**.  
 
 ## Working with advanced options
-When you add a step to a flow, clicking **Show advanced options** allows you to control how the data is filtered in the flow by adding a filter or order by query.
+When you add a step to a flow, clicking or tapping **Show advanced options** allows you to control how the data is filtered in the flow by adding a filter or order by query.
 
 For example, you can use a filter query to retrieve only active contacts and order by the contact last name.  To do this, enter the OData filter query *statuscode eq 1* and select **Last Name** from the dynamic content pane. For more information about filter and order by queries, see [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) and [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
@@ -133,9 +133,9 @@ To find a record's ID, see [Find the record ID](#find-the-record-id).
 ## Find the record ID
 1. In the Dynamics 365 web application, open a record, such as an account record.
 
-2. On the actions toolbar, click **Pop Out**
+2. On the actions toolbar, click or tap **Pop Out**
 ![popout record](./media/connection-dynamics365/popout.png).
-Alternatively, on the actions toolbar click **EMAIL A LINK** to copy the full URL in to your default email program.
+Alternatively, on the actions toolbar click or tap **EMAIL A LINK** to copy the full URL in to your default email program.
 
 3. Notice the URL that is displayed in the address bar of the web browser. The record ID is in between the %7b and %7d encoding characters of the URL.
 
