@@ -142,7 +142,7 @@ Alternatively, on the actions toolbar click or tap **EMAIL A LINK** to copy the 
   ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
-[Troubleshooting a flow](fix-flow-failures)
+[Troubleshooting a flow](fix-flow-failures.md)
 
 [Flow in your organization Q&A](organization-q-and-a.md)
 
