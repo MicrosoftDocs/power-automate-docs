@@ -20,7 +20,9 @@
 
 # Create a flow by using Dynamics 365 (online)
 
-Microsoft Flow is a service that lets you set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service.   
+By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service.
+
+In Microsoft Flow, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Microsoft Flow](getting-started.md).
 
 ## Create a flow from a template
 You can create a flow using one of the many templates available, such as these examples:
@@ -36,7 +38,7 @@ To create a flow from a template, follow these steps.
 
 3. Several templates are available. To get started, select the template that you want.
 
-## Walkthrough 1: Create a task whenever a lead is created in Dynamics 365
+## Create a task from a lead
 If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
 
 1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com/).
@@ -78,7 +80,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
 9.	Click or tap **Create flow**.
 
-## Walkthrough 2: Create a task in Wunderlist whenever a task is created in Dynamics 365
+## Create a Wunderlist task from a Dynamics 365 task
 
 This walkthrough shows you how to create a task in [Wunderlist](http://www.wunderlist.com) whenever a task is created in Dynamics 365. Wunderlist is an Internet-based service that you can use to create to-do lists, add reminders, or track errands.
 
@@ -116,24 +118,25 @@ When you add a value to a field, you must match the field type whether you type 
 
 Field type  |How to use  |Where to find  |Name  |Data type  
 ---------|---------|---------|---------|---------
-Text fields|Text fields require a single line of text or dynamic content that is a text type field. Examples include the **Category** and **Sub-Category** fields.|**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**category** |**Single Line of Text**.       
+Text fields|Text fields require a single line of text or dynamic content that is a text type field. Examples include the **Category** and **Sub-Category** fields.|**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**category** |**Single Line of Text**       
 Integer fields | Some fields require integer or dynamic content that is an integer type field. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**percentcomplete** |**Whole Number**         
 Date fields | Some fields require a date entered in mm/dd/yyyy format or dynamic content that is a date type field. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. | **Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**createdon** |**Date and Time**         
 Fields that require both a record ID and lookup type |Some fields that reference another entity record require both the record ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields**  | **accountid**   | **Primary Key**
 
 ### More examples of fields that require both a record ID and lookup type
-Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in PowerApps.  
-*  **Owner** and **Owner Type**.
+Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in PowerApps.
+
+-  **Owner** and **Owner Type**.
 
 	- The **Owner** field must be a valid user or team record ID.
 	- The **Owner Type** must be either **systemusers** or **teams**.
 
-* **Customer** and **Customer Type**.
+- **Customer** and **Customer Type**.
 
 	- The **Customer** field must be a valid account or contact record ID.
 	- The **Customer Type** must be either **accounts** or **contacts**.
 
-* **Regarding** and **Regarding Type**.
+- **Regarding** and **Regarding Type**.
 
 	- The **Regarding** field must be a valid record ID, such as an account or contact record ID.
 	- The **Regarding Type** must be the lookup type for the record, such as **accounts** or **contacts**.
