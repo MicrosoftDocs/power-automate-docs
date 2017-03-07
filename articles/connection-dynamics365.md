@@ -43,7 +43,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
 2. Click or tap **My flows**, and then click or tap **Create from blank**.
 
-3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**. You may be prompted to sign
+3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
 
 1. If prompted, sign in to Dynamics 365.
 
@@ -65,7 +65,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 
 	For this walkthrough, select **Tasks**.
 
-8.	A **Subject** box appears. When you click or tap the box, a dynamic content pane appears where you can select either of these fields.
+8.	A **Subject** box appears. When you click or tap it, a dynamic content pane appears where you can select either of these fields.
 
   - **Last Name**. If you select this field, the last name of the lead will be inserted in the **Subject** field of the task when it's created.
   - **Topic**. If you select this field, the **Topic** field for the lead will be inserted in the **Subject** field of the task when it's created.
@@ -88,7 +88,7 @@ This walkthrough shows you how to create a task in [Wunderlist](http://www.wunde
 
 3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
 
-4. Under **Organization Name**, select the Dynamics 365 instance that you want the flow to listen to.
+4. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.
 
 1. Under **Entity Name**, select the entity that you want to listen to, which will act as a trigger to initiate the flow.
 
