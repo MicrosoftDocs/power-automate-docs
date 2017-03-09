@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="01/19/2017"
    ms.author="stepsic"/>
 
 # Frequently asked questions
@@ -46,7 +46,7 @@ To use Flow, all you need is a web browser and an email address.
 Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
 
 ### Which email addresses are supported?
-Flow supports email addresses ending in .com, .edu, and .org. It does not currently support email addresses ending in .gov and .mil.  
+Flow supports email addresses ending anything except .gov and .mil.  
 
 ### Is Flow available on-premises?
 Microsoft Flow is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
@@ -84,7 +84,7 @@ You can connect to any REST API that uses JSON and supports at least one of more
 You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md). 
 
 ### Can I share the flows I create?
-Not today. Support for sharing flows within an organization or with a specific person will be available before the end of 2016.
+Not today. Support for sharing flows within an organization or with a specific person will be available early in 2017.
 
 ### How many flows can I have?
 Flow comes with up to 25 flows. If you need more, you can request them.

@@ -15,87 +15,148 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/30/2016"
+   ms.date="12/05/2016"
    ms.author="stepsic"/>
 
 # Flow in your organization Q&A
+
 This topic describes how users in your organization can use Flow, and how you can control the Flow service.
 
-## Sign up for Flow
+## Signing up for Flow ##
 
-### How do users sign up for Flow?
+### What is Microsoft Flow?
 
-There are two possible ways for individual users in your organization to sign up for Flow through the website:
+Microsoft Flow is a public cloud service to help individuals and teams to set up automated workflows between their favorite apps and services to synchronize, get notifications, collect data, and more. 
 
-##### Option 1
-Users can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for Flow through [portal.office.com](https://portal.office.com/Start?sku=flow_free).
+### How do people sign up for Flow?
 
-##### Option 2
-Users can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign in**, signing in with their work or school accounts, and accepting the Flow terms of use.    
+There are two possible ways for individuals to sign up for Flow through the web portal:
 
-When a user in your organization signs up for Flow, that user is assigned a Flow license automatically.
+#### Option 1
+Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for Flow through [portal.office.com](https://portal.office.com/Start?sku=flow_free) or [signup.live.com](https://signup.live.com).
+
+#### Option 2
+Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign in**, signing in with their work, school or personal email, and accepting the Flow terms of use.    
+
+When a user in your organization signs up for Flow with Option 2, that user will be assigned a Microsoft Flow Free license automatically.
 
 [Sign up for Flow](sign-up-sign-in.md) includes more details.
 
-### How do individual users in my organization sign up?
+### Can I block another person from signing up for Flow?
 
-There are three scenarios that might apply to users in your organization:
+Microsoft Flow is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Microsoft Flow there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Flow (as everyone in the world can, irrespective of their email address).
 
-##### Scenario 1: Your organization already has an existing Office 365 environment and the user signing up for Flow already has an Office 365 account
+However, if a person signs up for Microsoft Flow, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Microsoft Flow, the relationship is between that individual and Microsoft, which is like many other cloud services from Microsoft such as Bing, Wunderlist, OneDrive, or Outlook.com. An individual's use of Microsoft Flow does not in any way imply that the service is provided by your organization.
 
-In this scenario, if a user already has a work or school account in the tenant (for example, contoso.com) but does not yet have Flow, then Microsoft activates the plan for that account, and the user is automatically notified of how to use Flow.
+Finally, if your company wishes to restrict the use of organizational-only data inside of Microsoft Flow, that is possible through Data loss prevention (DLP) policies.
 
-##### Scenario 2: Your organization has an existing Office 365 environment and the user signing up for Flow doesn’t have an Office 365 account
+### How can people gain access to the paid features of Microsoft Flow?
 
-In this scenario, the user has an email address in your organization’s domain (for example, contoso.com) but does not yet have an Office 365 account. In this case, the user can sign up for Flow, and is automatically given an account. This lets the user access Flow.
+Individuals can gain access to the paid features of Microsoft Flow in three different ways:
 
-For example, if an employee named Nancy uses her work email address (for example, Nancy@contoso.com) to sign up, Microsoft automatically adds Nancy as a user in Contoso’s Office 365 environment, and activates Flow for that account.
+1. They can individually sign up for a Flow Plan 1 or Flow Plan 2 trial 90 days for free
+1. You can assign a Flow license to them within the Office 365 admin portal.
+1. The user has been assigned an Office 365 and Dynamics 365 plans that includes access to the Flow service. See the [Flow pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Flow capabilities.
 
-##### Scenario 3: Your organization does not have an Office 365 environment connected to your email domain
+### Can I block another person from using the paid features of Flow?
 
-There are no administrative actions your organization needs to take to use Flow.
+Any individual can try out the paid features of Microsoft Flow for 90 days, and incur no costs. However, you can fully manage the assignment of the perpetual paid licenses inside of your organization through the Office 365 admin portal.
 
-**IMPORTANT**: If your organization has multiple email domains, and you prefer all email address extensions to be in the same tenant, then before any users create your primary tenant, add all email address domains to that tenant before any users create your primary tenant. There is no automated mechanism to move users across tenants after they have been created. For more information on this process, see [If I have multiple domains](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) (in this topic) and [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) online.
+As with the free offerings, if an individual chooses to sign up for the trial that is a direct relationship between the individual and Microsoft, not necessarily endorsed by your company.
 
-### How can I prevent users from joining my existing Office 365 tenant?
+## Administration of Flow ##
 
-As an admin, there are steps you can take to prevent users from signing up for Flow with certain email addresses. If you do block this, users’ attempts to sign in fail, although they will be able to sign in with a different email. If you have previously disabled automatic license distribution (e.g., Office 365 for Education for Students, Faculty, and Staff), then you do not need to repeat this process.
+### Why has the Flow icon appeared in the Office 365 app launcher?
 
-These steps require the use of Windows PowerShell. To get started with Windows PowerShell, see the [PowerShell getting started guide](http://go.microsoft.com/fwlink/p/?LinkID=286814).
+As announced in August, Microsoft Flow is now a fundamental part of the Office 365 suite. Three months after this announcement Microsoft Flow was enabled as a service as a part of all existing Office 365 SKU's. As users everywhere in the world can now use Microsoft Flow, it has appeared in the app launcher for them.
 
-To perform the following steps, you must download and install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297). After you select the link, select **Install** or **Run** to install the package.
+See the following section if you'd like to remove the Flow tile from the app launcher by default.
 
-**Disable automatic tenant join** : Use the following Windows PowerShell commands to prevent new users from joining a managed tenant:
+### How do I remove Microsoft Flow from the app launcher for my organization?
 
-To disable automatic tenant join for new users:  
-`Set-MsolCompanySettings -AllowEmailVerifiedUsers $false`
+If a user was assigned a Flow Plan 1 or Flow Plan 2 license then you can take the following steps to remove the Flow license for that user, which will remove the Flow icon from the app launcher:
 
-### How can I allow users to join my existing Office 365 tenant?
-To allow users to join your tenant, run the opposite command as described in the previous question:  
-`Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
+1. Go to the [Office 365 Admin Portal](https://portal.microsoftonline.com/).
 
-### How do I verify if I have the block on in the tenant?
-Use the following PowerShell script:  
-`Get-MsolCompanyInformation | fl allow*`
+2. In the left navigation bar, select **Users**, and then select **Active Users**.
 
-### How can I prevent my existing users from starting to use Flow?
+3. Find the user you want to remove the license for, and then select their name.
 
-Microsoft Flow is a service that has both free and paid plans. With the free plans for Microsoft Flow, everyone in the world can sign up and use it to automate their day-to-day tasks. To use Microsoft Flow for free there’s no requirements that end users have or use an Office 365 account. Because of this, there’s no mechanism at this time to block a person from using the free features (as everyone in the world can, irrespective of the identity).
+4. On the user details pane, in the **Product licenses** section select **Edit**.
 
-## Administration of Flow
+5. Find the license called **Microsoft Flow Plan 1** or **Microsoft Flow Plan 2**, set the toggle to **Off** and then select **Save**.
 
-### How will this change the way I manage identities for users in my organization today?
+  ![](./media/organization-q-and-a/remove-license.png)
 
-If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management does not change.
+If a user has access to Flow through their Office 365 and Dynamics 365 plan license, then you can disable their access to the additional features included in this plan by taking the following steps:
+
+1. Go to the [Office 365 Admin Portal](https://portal.microsoftonline.com/).
+
+2. In the left navigation bar, select **Users**, and then select **Active Users**.
+
+3. Find the user you want to remove access for, and then select their name.
+
+4. On the user details pane, in the **Product licenses** section select **Edit**.
+
+5. Expand the user's Office 365 or Dynamics 365 license, disable access to the service called **Flow for Office 365** or **Flow for Dynamics 365** and then select **Save**.
+
+  ![](./media/organization-q-and-a/remove-service-plan.png)
+
+Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
+
+Removing of the Flow license or service for a user in your organization will result in the removal of the Flow icon from the following locations for that user:
+
+1. [Office.com](https://office.com)
+
+   ![](./media/organization-q-and-a/office-home.png)
+
+1. Office 365 App Launcher
+
+   ![](./media/organization-q-and-a/office-waffle.png)
+
+Note that this will only remove the Flow tile by default. A user may still choose to use Microsoft Flow as an individual.
+
+### Why did 10,000 licenses for Microsoft Flow show up in my Office 365 tenant?
+
+Any person is the world can try out Microsoft Flow Plan 1 or 2 for 90 days, and these trial licenses represent the available capacity for new Flow users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Flow showing up in the Office 365 admin portal:
+
+1. If at least one user in your tenant participated in the Flow public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft PowerApps and Logic flows"
+
+    ![](./media/organization-q-and-a/licenses2.png)
+
+1. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for PowerApps](#how-do-users-sign-up-for-powerapps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
+
+    ![](./media/organization-q-and-a/licenses1.png)
+
+You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but please note that these are trial licenses for Microsoft Flow Plan 2 and they will expire after 90 days of being assigned to a user.
+
+### Is this free? Will I be charged for these licenses?
+
+No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
+
+### I removed the Microsoft Flow Free license and users can still access Flow?
+
+The Microsoft Flow Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Microsoft Flow for individual purposes. Thus, the presence of a Microsoft Flow Free license does not actually grant or remove any capabilities.
+
+### Why can't I see all Flow licenses in the Office 365 Admin portal?
+
+Users can use Microsoft Flow either as individuals or as a part of their organization. Licenses at the organization level will always be visible in the Office 365 portal. However, if a user signs up for a trial as an individual then that is not managed by their Office 365 admin and will not show up in the portal.
+
+### How does an individual find out what plan they are on?
+
+Anyone can see the plan they have by visiting the Flow pricing page at [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). The plan or trial they are currently on will be shown there.
+
+### Will Microsoft Flow sign up impact the identities in my organization?
+
+If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management is not impacted.
 
 If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user’s work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
 
 If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the tenant admin and manage them.
 
+### A new tenant was created by Microsoft Flow, how do I manage this?
 
-### What is the process to manage a tenant created by Microsoft for my users?
-
-If a tenant was created by Microsoft, then you can claim and manage that tenant using the following steps:
+If a new tenant was created by Microsoft Flow, then you can claim and manage that tenant using the following steps:
 
 1. Join the tenant by signing up for Flow using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
 
@@ -109,7 +170,6 @@ If a tenant was created by Microsoft, then you can claim and manage that tenant 
 
 		**NOTE**: If this option doesn’t appear, an Office 365 administrator is already in place.
 
-
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 
 If you do nothing, a tenant is created for each user email domain and subdomain.
@@ -120,25 +180,8 @@ If you want all users to be in the same tenant regardless of their email address
 
 **IMPORTANT**: There is no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
+### How can I restrict my users' ability to access my organization's business data?
 
-### How do I remove Flow for users that already signed up?
+Microsoft Flow allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Flow that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-There is no mechanism to remove users from using Microsoft Flow since there is no mechanism to prevent users from starting to use Flow for free.
-
-### How do I know when new users have joined my tenant?
-
-Users who have joined your tenant as part of this program are assigned a unique license that you can filter on within your active user pane in the admin dashboard.
-
-To create this new view, in the Office 365 admin center, go to **Users** > **Active Users**. On the **Select a View** menu, select **New View**. Name your new view, and under **Assigned license**, select **Microsoft Flow**. Once the new view has been created, you can see all the users in your tenant who have enrolled in this program.
-
-
-### Are there any additional things I should be prepared for?
-
-You might experience an increase in password-reset requests. For information about this process, see [Reset a user's password](https://support.office.com/article/Reset-a-users-password-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c).
-
-You can remove a user from your tenant via the standard process in the Office 365 admin center. However, if the user still has an active email address from your organization, they can rejoin unless you block all users from joining.
-
-
-### Is this free? Will I be charged for these licenses?
-
-All users start out with a free license for Flow.
+  ![](./media/organization-q-and-a/data-loss-prevention-policy.png)

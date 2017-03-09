@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Data loss prevention (DLP) policies for Microsoft Flow| Microsoft Flow"
+    pageTitle="Introduction to data loss prevention (DLP) policies. | Microsoft Flow"
     description="Introduction to data loss prevention policies for Microsoft Flow."
     services=""
     suite="flow"
@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/26/2016"
+   ms.date="01/24/2016"
    ms.author="deonhe"/>
 
 
@@ -64,6 +64,8 @@ Follow these steps to create a DLP policy that prevents data that is stored in y
 10. **Optional** Send an email or other communication to your team, alerting them that a new DLP policy is now available.
 
 Congratulations, you have now created a DLP policy that allows app to share data between SharePoint and Saleforce and blocks the sharing of data with any other services.  
+
+**Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the business data only data group.  
 
 ## Data sharing violations
 
