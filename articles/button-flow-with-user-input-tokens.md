@@ -15,102 +15,128 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/24/2017"
+   ms.date="02/15/2017"
    ms.author="deonhe"/>
 
 
-# Introducing button flows with user input 
+# Introducing button flows with user input
+Create a button flow to run routine tasks by simply tapping a button. Customize your flow by allowing the user to provide specific details that will be used when the flow runs. This topic walks you through creating a button flow that takes input from the user and then running the button flow, highlighting how to provide the user input.
 
-Button flows are used to run routine tasks by simply tapping a button. Sometimes, you may want to customize a button flow by allowing the user to provide specific details that will be used when the button flow executes. This document walks you through the creation and execution of a button flow that takes user input at run time. 
+You can create a button flow in the Microsoft Flow website or the mobile app for Microsoft Flow. For this topic, you'll use the website.
 
+### Prerequisites
+- An account on the Microsoft Flow website.
 
-## Create a button flow with user input  
+## Open the template ##
+1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com), enter **Visual Studio** in the search box, and then click or tap the search icon to find all templates that relate to Visual Studio:
 
-**Note:** All screenshots in this document are taken from an Android mobile device, however, you can use an iOS device as well. Your experience will be similar on either device.  
+	![](./media/button-flow-with-user-input-tokens/1.png)  
 
-1. Launch the flow app on your mobile device and tap **Browse**.  
+2. Select the **Open a Priority 2 Bug in Visual Studio** template:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt0.png)  
-2. Tap **+ Create a flow from scratch**.  
+	![](./media/button-flow-with-user-input-tokens/2.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt1.png)  
-3. Tap the white space below **Flow name**  and enter a name for your flow. In this example, I've given my flow the name **Create bug report with steps**. You can name yours anything that you prefer.  
+3. Select **Use this template** button:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt2.png)  
-4. Tap the **Manually trigger a flow** trigger.  
+	![](./media/button-flow-with-user-input-tokens/3.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt3.png)  
-5. Tap **Add text input**.  
+	This template uses the Visual Studio Team Services (VSTS) and the Push notification services. You'll need to sign into these services if you don't have a connection to either of them. The **Sign in** button will appear only if you need to sign into a service.
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt6.png)  
-6. Enter **Title of bug** in the **Label for text input** field  
-7. Enter **BugTitle** into the **Enter token label** field.  
+4. After you sign into all required services, select the **Continue** button:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt4.png)  
-8. Tap **Add text input**.  
+	![](./media/button-flow-with-user-input-tokens/4.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt6.png)  
-9. Enter **Give detailed steps to reproduce** in the **Label for text input** field.  
+5. (optional) Change the name of the flow by typing a name of your choice into the box at the top of the portal:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt7.png)  
-10. Enter **ReproSteps** into the **Enter token label** field.  
+	![](./media/button-flow-with-user-input-tokens/5.png)
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt8.png)  
-11. Tap **+ New step**.  
+## Customize the user input ##
+1. In the trigger card, select **Edit**:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt9.png)  
-12. Tap **Add an action**.  
+	![](./media/button-flow-with-user-input-tokens/6.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt9-addaction.png)  
-13. Type **work item** into the search box to filter the actions list to display only actions that contain **work item** in the name.  
+1. Select the **+** icon to expand the page so that you can add custom input fields:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt10.png)  
-14. Tap **Visual Studio Team Services - Create a new work item**.  
+	![](./media/button-flow-with-user-input-tokens/7.png)
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt11-create-item.png)  
-15. Select an **Account name**, **Project name**, **Type** and select the **BugTitle** token as the **Title**.  
-**Note:** Your options will vary based on what's available for the logged in account.  
+1. Enter the **Input title** and **Input description** for each custom field that you want to make available when someone runs your flow.  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt11.png)  
-16. Tap in the **Description** field.  
+	In this example, you'll create two custom input fields (**Bug repro steps** and **Bug severity**) so that anyone who uses this flow can enter the steps to reproduce the bug and rate the bug's severity:  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt12.png)  
-17. Select the **ReproSteps** token  
+	![](./media/button-flow-with-user-input-tokens/8.png)
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt13.png)  
-18. Tap **Create** to save your flow.  
+## Customize the bug ##
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt13-save.png)  
-19. Your flow is saved and you can now run it from the **Buttons** tab of the flow app.  
+1. Tap the **Create a new work item** card's title bar:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/mt14.png)  
+	![](./media/button-flow-with-user-input-tokens/9.png)  
 
-## Run a button flow with user input
-In this walk-through, you will see how to provide user input in a run of the button flow.  
+1. Make the selections that are appropriate for your VSTS environment, and then select **Edit**:
 
-After launching the flow app:  
+	For example, connect to myinstance.visualstudio.com by typing **myinstance**.
 
-1. Tap the **Buttons** tab.  
-2. Tap the **Create bug report with steps** button.  
+	![](./media/button-flow-with-user-input-tokens/10.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt1.png)  
-3. Enter the title for the bug you are reporting. For example:  
+1. Select **Show advanced options** to reveal the other fields for this card:
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt2.png)  
-4. Enter the steps to reproduce the bug you are reporting. For example:  
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt3.png)  
-5. Tap **Done**. This will execute the flow, creating a bug with the title and repro steps you provided.  
+	![](./media/button-flow-with-user-input-tokens/11.png)  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt3-5.png)  
-6. The flow runs. You can see the results on the **Activity** tab.  
+1. Place the cursor before the **Bug title** token, and then enter "Severity: " into the **Title** text field.
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt5.png)  
-7. See the detailed results of the flow run on the **Activity** tab by tapping the **Create a new work item** step.  
+1. With the cursor still in the title text field, select the **Bug severity** token, and then enter " -- ".  
 
-	![flow with user input image](./media/button-flow-with-user-input-tokens/runmt6.png)  
+1. In the **Description** text field, place your cursor just after the **Bug description** token, and then press Enter to start a new line.
+
+1. Place your cursor on the new line, and then select the **Bug Repro steps** token:
+
+	![](./media/button-flow-with-user-input-tokens/12.png)
+
+## Customize the push notification ##
+
+1. Tap the title bar on the **Send a push notification** card to expand it.
+
+1. In the list of dynamic content tokens, select **See more**, and then add the **URL** token in the **Link** text field.
+
+1. In the **Link label** text field, add the **Id** token:
+
+	![](./media/button-flow-with-user-input-tokens/13.png)  
+
+1. Tap **Create flow** on the menu to create your flow:
+	![](./media/button-flow-with-user-input-tokens/14.png)  
+
+## Run your flow ##
+In this walk-through, you'll use the mobile app for Microsoft Flow to run the button flow you just created. You'll provide all the user input that's needed to create a bug with a title, a description, repro steps, and a severity level.  
+
+1. In the mobile app for Microsoft Flow, tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
+
+	![](./media/button-flow-with-user-input-tokens/runmt1.png)  
+
+3. Enter the title for the bug you are reporting, and then tap **Next**. For example:
+
+	![](./media/button-flow-with-user-input-tokens/runmt2.png)  
+
+4. Enter the description of the bug you are reporting, and then tap **Next**. For example:
+
+	![](./media/button-flow-with-user-input-tokens/runmt3.png)  
+
+5. Enter the steps to reproduce the bug you are reporting, and then tap **Next**. For example:
+
+	![](./media/button-flow-with-user-input-tokens/runmt3-1.png)  
+
+6. Enter the severity of the bug you are reporting, and then tap **Done**:  
+	![](./media/button-flow-with-user-input-tokens/runmt3-2.png)  
+
+	The flow runs.
+
+7. (optional) Tap the **Activity** tab to show the results.
+
+	![](./media/button-flow-with-user-input-tokens/runmt5.png)  
+
+8. (optional) Show the detailed results of the flow's run by tapping the **Create a new work item** step.
+
+	![](./media/button-flow-with-user-input-tokens/runmt6.png)  
 
 ## Next steps
-
+- [Learn about flows](./guided-learning/learning-introducing-flow.md)  
 - [Learn about button flows](./introduction-to-button-flows.md)  
 - [Learn about button flows with trigger tokens](./introduction-to-button-trigger-tokens.md)  
-- [Learn about flows](./guided-learning/learning-introducing-flow.md)  

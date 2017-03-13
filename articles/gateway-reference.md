@@ -42,6 +42,8 @@ Related considerations:
 
 **Install a gateway**
 
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
+
 1. [Download the installer](http://go.microsoft.com/fwlink/?LinkID=820931), and then run it.
 
 	![Run the installer](./media/gateway-reference/run-installer.png)
@@ -192,7 +194,7 @@ You can also look at tools that your data source has for tracing queries. For ex
 
 ## How the gateway works ##
 
-![How it works](./media/gateway-reference/how-it-works.png)
+![How it works](./media/gateway-reference/gateway-arch.png)
 
 When a user interacts with an element that's connected to an on-premises data source:  
 
