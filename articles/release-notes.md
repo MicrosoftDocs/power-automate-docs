@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="02/15/2017"
+   ms.date="03/12/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -56,11 +56,34 @@
 
 ## What's new ##
 
+### Release 2017-03-10
+
+- **Improved Custom API experience** - You can now use a Postman collection to create a Custom API, and edit, add and test actions. 
+- **Two new services** - Added PowerApps Notifications and PivotalTracker support.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
+
+### Release 2017-02-27
+
+- **Trigger your flow buttons** - You can now trigger Flow buttons right from the Flow web portal. When looking at your list of flows, simply select the "..." menu and choose the Run now command. 
+- **Five new services** - Added Oracle Database, Intercom, FreshBooks, LeanKit and WebMerge support.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) about this release.
+
+### Release 2017-02-21
+
+- **View environment flows** - Environment administrators can now view the full list of all the flows inside a given environment, as well as enable, disable or delete flows.
+- **Two new services** - Added Azure Automation and Basecamp 3 support.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
+
+
 ### Release 2017-02-16
 
-- **View enviornment flows** - Environment administrators can now view the full list of all the flows inside a given environment, as well as enable, disable or delete flows.
-- **Three new services** - Added support for Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite and Pipedrive.
+- **Five new services** - Added support for Azure Data Late, Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite, Infusionsoft and Pipedrive.
 - **Custom HTTP authentication** - In the flow designer it's now possible to use authentication with custom HTTP endpoints.
+- **Parse JSON messages** - You can parse JSON data from the HTTP Request trigger or that's returned from the HTTP action.
+- **Flow run filtering** - Improved filtering for flow runs, with more specific options including seeing Running flows or Cancelled runs. 
 
 [Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
 
