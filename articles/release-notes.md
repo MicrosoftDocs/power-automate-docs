@@ -56,6 +56,13 @@
 
 ## What's new ##
 
+### Release 2017-03-14
+
+- **Share buttons with co-workers** -
+- **Trigger buttons from widgets** -
+
+[Read more and ask questions]() about this release.
+
 ### Release 2017-03-10
 
 - **Improved Custom API experience** - You can now use a Postman collection to create a Custom API, and edit, add and test actions. 
@@ -80,7 +87,7 @@
 
 ### Release 2017-02-16
 
-- **Five new services** - Added support for Azure Data Late, Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite, Infusionsoft and Pipedrive.
+- **Five new services** - Added support for Azure Data Lake, Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite, Infusionsoft and Pipedrive.
 - **Custom HTTP authentication** - In the flow designer it's now possible to use authentication with custom HTTP endpoints.
 - **Parse JSON messages** - You can parse JSON data from the HTTP Request trigger or that's returned from the HTTP action.
 - **Flow run filtering** - Improved filtering for flow runs, with more specific options including seeing Running flows or Cancelled runs. 
