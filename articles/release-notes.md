@@ -80,7 +80,7 @@
 ### Release 2017-02-21
 
 - **View environment flows** - Environment administrators can now view the full list of all the flows inside a given environment, as well as enable, disable or delete flows.
-- **Two new services** - Added Azure Automation and Basecamp 3 support.
+- **Two new services** - Added Azure Automation and Basecamp 2 support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
 
