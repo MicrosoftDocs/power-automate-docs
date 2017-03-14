@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Learn how to parse an array of items and take an action based on a condition by using the apply to each action.| Microsoft Flow"
+    pageTitle="Use the apply to each action to loop through an array of items.| Microsoft Flow"
     description="Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions."
     services=""
     suite="flow"
@@ -18,9 +18,9 @@
    ms.date="03/06/2017"
    ms.author="deonhe"/>
 
-# Use the apply to each action in Microsoft Flow to iterate over a list of emails periodically
+# Use the apply to each action in Microsoft Flow to process a list of items periodically
 
-Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to iterate through a given list of items.
+Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update a number of records from a database or list of items from Microsoft SharePoint.
 
 In this walk-through, we'll create a flow that runs every fifteen minutes and does the following:
 
@@ -43,7 +43,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 - An Android or iOS mobile device with the Microsoft Flow app installed
 - You'll also need to configure connections to Office 365 Outlook and the push notification service.
 
-## Use the apply to each action
+## Create a flow
 
 After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
@@ -70,7 +70,9 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![configure email card](./media/apply-to-each/foreach-5.png)
 
-   >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
+     >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
+
+## Add actions and conditions
 
 1. Select **+ New step**, **More**, and then **Add an apply to each** action:
 
@@ -116,7 +118,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
 
-1. Add the **Message id** token to the **Mark as read** card. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Message Id** control of the **Mark as read** card. Seach for "message" on the **Add dynamic content from the apps and services used in this flow** card to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
 
      ![add message id](./media/apply-to-each/foreach-13.png)
 
@@ -142,7 +144,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![search for notification action](./media/apply-to-each/foreach-10.png)
 
-1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss:
+1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss, and then select **Add an action**:
 
      ![configure notification card](./media/apply-to-each/foreach-boss-notification.png)
 
@@ -150,7 +152,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
 
-1. Add the **Message id** token to the **Mark as read 2** card. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Mark as read 2** card. Seach for "message" on the **Add dynamic content from the apps and services used in this flow** card to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
 
      ![configure mark as read action](./media/apply-to-each/foreach-mark-as-read2.png)
 
@@ -166,7 +168,7 @@ If you followed along, your flow should look similar to this diagram:
 
 1. Send an email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
 1. Confirm the email is in your inbox and it's unread.
-1. Sign into Microsoft Flow, select **My flows**, and then select **run now**:
+1. Sign into Microsoft Flow, select **My flows**, and then select **Run now**:
 
      ![run now](./media/apply-to-each/foreach-run-1.png)
 
@@ -178,7 +180,7 @@ If you followed along, your flow should look similar to this diagram:
 
      ![run results](./media/apply-to-each/foreach-run-3.png)
 
-## View results
+## View results of the run
 
 Now that you've run the flow successfully, you should receive the push notification on your mobile device.
 
@@ -190,4 +192,4 @@ Now that you've run the flow successfully, you should receive the push notificat
 
      ![notification details](./media/apply-to-each/foreach-notification-2.png)
 
->[AZURE.NOTE] If you don't receive the push notification, confirm that your mobile device has a working data connection.
+     >[AZURE.NOTE] If you don't receive the push notification, confirm that your mobile device has a working data connection.
