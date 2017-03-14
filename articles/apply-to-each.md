@@ -94,7 +94,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
           ![configure condition](./media/apply-to-each/foreach-subject-condition.png)
 
-1. Select **... More**, and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
+1. Select **More**, and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
 
      - Insert the **Importance** token into the **Object Name** control.
      - Select **is equal to** in the **Relationship** drop down list box.
@@ -118,7 +118,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
 
-1. Add the **Message Id** token to the **Message Id** control of the **Mark as read** card. Seach for "message" on the **Add dynamic content from the apps and services used in this flow** card to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Message Id** control of the **Mark as read** card. You may need to select **See more** to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
 
      ![add message id](./media/apply-to-each/foreach-13.png)
 
@@ -129,7 +129,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
           ![add and configure get manager action](./media/apply-to-each/foreach-get-manager.png)
 
-1. Select **... More**, and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
+1. Select **More**, and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
      - Insert the **From** token into the **Object Name** control.
      - Select **contains** in the **Relationship** drop down list box.
      - Enter **Email** token into the **Value** control.
@@ -152,7 +152,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
 
-1. Add the **Message Id** token to the **Mark as read 2** card. Seach for "message" on the **Add dynamic content from the apps and services used in this flow** card to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Mark as read 2** card. You may need to select **See more** to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
 
      ![configure mark as read action](./media/apply-to-each/foreach-mark-as-read2.png)
 
