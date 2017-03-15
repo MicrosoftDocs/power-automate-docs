@@ -150,6 +150,7 @@ On the **My flows** tab of the Flow app:
 
 ## Next steps
 
+- [Share button flows](./share-buttons.md)
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed
 - [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
 - [Install the Flow app for iOS](https://appsto.re/us/5M0qbb.i)
-- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed
