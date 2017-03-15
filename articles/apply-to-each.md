@@ -88,7 +88,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 1. Configure the **Condition** card to search the subject of each email for the words "meet now":
 
      - Insert the **Subject** token into the **Object Name** box.
-     - Select **contains** in the **Relationship** drop-down list box.
+     - Select **contains** in the **Relationship** list.
      - Enter **meet now** into the **Value** box.
 
           ![configure condition](./media/apply-to-each/foreach-subject-condition.png)
@@ -96,7 +96,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 1. Select **More**, and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
 
      - Insert the **Importance** token into the **Object Name** box.
-     - Select **is equal to** in the **Relationship** drop-down list box.
+     - Select **is equal to** in the **Relationship** list.
      - Enter **High** into the **Value** box.
 
           ![add condition](./media/apply-to-each/foreach-importance-condition.png)
@@ -130,7 +130,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 1. Select **More**, and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
      - Insert the **From** token into the **Object Name** box.
-     - Select **contains** in the **Relationship** drop-down list box.
+     - Select **contains** in the **Relationship** list.
      - Enter **Email** token into the **Value** box.
 
      ![configure search condition](./media/apply-to-each/foreach-condition3-card.png)
