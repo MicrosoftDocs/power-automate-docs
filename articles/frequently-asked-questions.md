@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/19/2017"
+   ms.date="03/15/2017"
    ms.author="stepsic"/>
 
 # Frequently asked questions
@@ -52,7 +52,7 @@ Flow supports email addresses ending anything except .gov and .mil.
 Microsoft Flow is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
 
 ### What services can Microsoft Flow connect to? 
-Microsoft Flow connects to a range of data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following: 
+Microsoft Flow connects to over a hundred different data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following: 
 - SharePoint
 - Dynamics 365
 - OneDrive 
@@ -67,7 +67,7 @@ Microsoft Flow connects to a range of data sources out of the box, and we’re a
 - Mailchimp
 - Customer APIs
 
-You can find a full list of available connectors [here](https://flow.microsoft.com/services/).
+You can find a full list of available APIs [here](https://flow.microsoft.com/services/).
 
 You can access data sources in your own IT infrastructure through the [on-premises data gateway](gateway-manage.md).
 
@@ -75,7 +75,7 @@ You can access data sources in your own IT infrastructure through the [on-premis
 Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
 ### What data sources will I be able to connect to?
-You can connect to over 50 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL and more. You can also connect to premium services such as Salesforce and the Common Data Service for PowerApps.
+You can connect to over a hundred standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL and more. You can also connect to premium services such as Salesforce and the Common Data Service for PowerApps.
 
 ### How do I connect to a REST API in my flow?
 You can connect to any REST API that uses JSON and supports at least one of more than ten authentication methods by creating [a Custom API](get-started-flow-dev.md).
@@ -84,10 +84,12 @@ You can connect to any REST API that uses JSON and supports at least one of more
 You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md). 
 
 ### Can I share the flows I create?
-Not today. Support for sharing flows within an organization or with a specific person will be available early in 2017.
+Yes. There are two types of sharing:
+1. You can add co-workers or groups in your organization as owners on your flows, so they can edit and manage the flow too.
+1. For flows that can be run manually, you can also share permissions to just run the flow with other people or groups in your organization.
 
 ### How many flows can I have?
-Flow comes with up to 25 flows. If you need more, you can request them.
+Flow comes with up to 50 flows. If you need more, you can request them.
 
 ### Where do I get started with Microsoft Flow?
 Get started with the following resources:
