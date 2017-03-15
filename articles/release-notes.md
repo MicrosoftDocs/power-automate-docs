@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/12/2017"
+   ms.date="03/15/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -38,10 +38,6 @@
 	- If you're an administrator, see information about [licensing for Microsoft Flow](organization-q-and-a.md), including with Office 365.
 
 ## Known issues and resolutions ##
-1. Flows created during preview that use the Microsoft Common Data Service:
-	- Have been moved to an environment dedicated to that database. Select the environment for that database in the top-right of the screen. [Learn more](environments-overview-maker.md).
-	- In the flow designer, these flows will display a long string of numbers and letters in any actions that use it. Your flow should continue to function as you expect.
-
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
 
 1. SQL stored procedures can't be run on on-premises SQL Servers. Only SQL Azure supports stored procedures at this time.
@@ -56,12 +52,13 @@
 
 ## What's new ##
 
-### Release 2017-03-14
+### Release 2017-03-15
 
-- **Share buttons with co-workers** -
-- **Trigger buttons from widgets** -
+- **Share buttons with co-workers** - Flow buttons can now be shared with other people, making it easy for any business user to perform quick tasks.
+- **Trigger buttons from the home screen** - Shortcuts to flow buttons from the home and lock screens of mobile devices make it quicker than ever to trigger a flow.
+- **Team flows in the Flow app** - You can now see the flows that have other owners in the Flow app for iOS or Android.
 
-[Read more and ask questions]() about this release.
+[Read more and ask questions](https://flow.microsoft.com/blog/button-sharing/) about this release.
 
 ### Release 2017-03-10
 
