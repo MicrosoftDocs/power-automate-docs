@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Use the apply to each action to loop through an array of items.| Microsoft Flow"
+    pageTitle="Use the apply to each action to loop through an array of items. | Microsoft Flow"
     description="Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions."
     services=""
     suite="flow"
@@ -15,22 +15,21 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/06/2017"
+   ms.date="03/16/2017"
    ms.author="deonhe"/>
 
 # Use the apply to each action in Microsoft Flow to process a list of items periodically
 
-Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update a number of records from a database or list of items from Microsoft SharePoint.
+Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
-In this walk-through, we'll create a flow that runs every fifteen minutes and does the following:
+In this walk-through, we'll create a flow that runs every 15 minutes and does the following:
 
-1. Gets the last 10 unread messages in your Office 365 Outlook email Inbox.
-1. Checks each of the 10 messages to confirm if it has **meet now** in the subject.
-1. Checks if the email is from your boss or if the email was sent with high importance.
-1. Sends a push notification if the email has **meet now** in the subject and is either from your boss or was sent with high importance.
-1. Marks the email as *read* if a push notification was sent for it.
+1. Gets the last 10 unread messages in your Office 365 Outlook Inbox.
+1. Checks each of the 10 messages to confirm if any has **meet now** in the subject.
+1. Checks if the email is from your boss or was sent with high importance.
+1. Sends a push notification and marks as read any email that has **meet now** in the subject and is either from your boss or was sent with high importance.
 
-The following diagram shows the details of the flow we will create in this walk-through:
+This diagram shows the details of the flow we'll create in this walk-through:
 
 ![overview of the flow being built](./media/apply-to-each/foreach-flow-visio.png)
 
@@ -38,16 +37,16 @@ The following diagram shows the details of the flow we will create in this walk-
 
 Here are the requirements for successfully performing the steps in this walk-through:
 
-- Have an account that's registered to use [Microsoft Flow](https://flow.microsoft.com).
+- An account that's registered to use [Microsoft Flow](https://flow.microsoft.com).
 - An Office 365 Outlook account.
-- An Android or iOS mobile device with the Microsoft Flow app installed
-- You'll also need to configure connections to Office 365 Outlook and the push notification service.
+- An Android or iOS mobile device with the Microsoft Flow app installed.
+- Connections to Office 365 Outlook and the push notification service.
 
 ## Create a flow
 
-After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
+1. Sign into the [Microsoft Flow](https://flow.microsoft.com):
 
-1. Select the **My flows** tab, and then create a flow from a blank template:
+1. Select the **My flows** tab, and then create a flow from a blank:
 
      ![create from blank](./media/apply-to-each/foreach-1.png)
 
@@ -70,7 +69,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![configure email card](./media/apply-to-each/foreach-5.png)
 
-     >[AZURE.NOTE] So far, you have created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **apply to each** action requires an array, so this is exactly what is needed.
+     >[AZURE.NOTE] So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array; the **Apply to each** action requires an array, so this is exactly what's needed.
 
 ## Add actions and conditions
 
@@ -78,7 +77,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![select apply to each](./media/apply-to-each/foreach-6.png)
 
-1. Insert the **Body** token into the **Select an output from previous steps** control on the **Apply to each** card. This pulls in the body of the emails to be used in the **apply to each** action:
+1. Insert the **Body** token into the **Select an output from previous steps** box on the **Apply to each** card. This pulls in the body of the emails to be used in the **apply to each** action:
 
      ![add body token](./media/apply-to-each/foreach-7.png)
 
@@ -88,21 +87,21 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
 1. Configure the **Condition** card to search the subject of each email for the words "meet now":
 
-     - Insert the **Subject** token into the **Object Name** control.
-     - Select **Contains** in the **Relationship** drop down list box.
-     - Enter **meet now** into the **Value** control.
+     - Insert the **Subject** token into the **Object Name** box.
+     - Select **contains** in the **Relationship** drop-down list box.
+     - Enter **meet now** into the **Value** box.
 
           ![configure condition](./media/apply-to-each/foreach-subject-condition.png)
 
 1. Select **More**, and then select **Add a condition** from the **IF YES, DO NOTHING** branch. This opens the **Condition 2** card; configure that card like this:
 
-     - Insert the **Importance** token into the **Object Name** control.
-     - Select **is equal to** in the **Relationship** drop down list box.
-     - Enter **High** into the **Value** control.
+     - Insert the **Importance** token into the **Object Name** box.
+     - Select **is equal to** in the **Relationship** drop-down list box.
+     - Enter **High** into the **Value** box.
 
           ![add condition](./media/apply-to-each/foreach-importance-condition.png)
 
-1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the email was sent with high importance) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the meet now email was sent with high importance) is true:
 
      ![add action](./media/apply-to-each/foreach-9.png)
 
@@ -110,7 +109,7 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![seach and select notification](./media/apply-to-each/foreach-10.png)
 
-1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now" and then select **Add an action**:
+1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now", and then select **Add an action**:
 
      ![configure notification](./media/apply-to-each/foreach-11.png)
 
@@ -118,21 +117,21 @@ After you have signed into the [Microsoft Flow](https://flow.microsoft.com):
 
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
 
-1. Add the **Message Id** token to the **Message Id** control of the **Mark as read** card. You may need to select **See more** to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Message Id** box of the **Mark as read** card. You may need to select **See more** to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
 
      ![add message id](./media/apply-to-each/foreach-13.png)
 
 1. Going back to the **Condition 2** card, on the **IF NO, DO NOTHING** branch:
      - Select **Add an action**, and then type **get manager** into the search box.
      - Select the **Office 365 Users - Get manager** action from the search results list.
-     - Enter your *full* email address into the **User** control of the **Get Manager** card.
+     - Enter your *full* email address into the **User** box of the **Get Manager** card.
 
           ![add and configure get manager action](./media/apply-to-each/foreach-get-manager.png)
 
 1. Select **More**, and then select **Add a condition** from the **IF NO** branch. This opens the **Condition 3** card; configure the card to check if the email sender's email address (the From token) is the same as your boss' email address (the Email token):
-     - Insert the **From** token into the **Object Name** control.
-     - Select **contains** in the **Relationship** drop down list box.
-     - Enter **Email** token into the **Value** control.
+     - Insert the **From** token into the **Object Name** box.
+     - Select **contains** in the **Relationship** drop-down list box.
+     - Enter **Email** token into the **Value** box.
 
      ![configure search condition](./media/apply-to-each/foreach-condition3-card.png)
 
@@ -166,7 +165,7 @@ If you followed along, your flow should look similar to this diagram:
 
 ## Run the flow
 
-1. Send an email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
+1. Send a high-importance email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
 1. Confirm the email is in your inbox and it's unread.
 1. Sign into Microsoft Flow, select **My flows**, and then select **Run now**:
 
