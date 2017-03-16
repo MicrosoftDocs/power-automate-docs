@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Use the apply to each action to loop through an array of items. | Microsoft Flow"
+    pageTitle="Use the Apply to each action to loop through an array of items. | Microsoft Flow"
     description="Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions."
     services=""
     suite="flow"
@@ -44,7 +44,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 ## Create a flow
 
-1. Sign into the [Microsoft Flow](https://flow.microsoft.com):
+1. Sign into [Microsoft Flow](https://flow.microsoft.com):
 
 1. Select the **My flows** tab, and then create a flow from a blank:
 
@@ -73,11 +73,11 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 ## Add actions and conditions
 
-1. Select **+ New step**, **More**, and then **Add an apply to each** action:
+1. Select **+ New step**, **More**, and then **Add an Apply to each** action:
 
      ![select apply to each](./media/apply-to-each/foreach-6.png)
 
-1. Insert the **Body** token into the **Select an output from previous steps** box on the **Apply to each** card. This pulls in the body of the emails to be used in the **apply to each** action:
+1. Insert the **Body** token into the **Select an output from previous steps** box on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action:
 
      ![add body token](./media/apply-to-each/foreach-7.png)
 
@@ -101,7 +101,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
           ![add condition](./media/apply-to-each/foreach-importance-condition.png)
 
-1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the meet now email was sent with high importance) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the **meet now** email was sent with high importance) is true:
 
      ![add action](./media/apply-to-each/foreach-9.png)
 
