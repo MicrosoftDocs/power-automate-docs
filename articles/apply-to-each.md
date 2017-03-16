@@ -73,7 +73,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 ## Add actions and conditions
 
-1. Select **+ New step**, **More**, and then **Add an Apply to each** action:
+1. Select **+ New step**, **More**, and then **Add an apply to each** action:
 
      ![select apply to each](./media/apply-to-each/foreach-6.png)
 
