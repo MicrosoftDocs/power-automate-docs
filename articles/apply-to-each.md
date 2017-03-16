@@ -165,7 +165,7 @@ If you followed along, your flow should look similar to this diagram:
 
 ## Run the flow
 
-1. Send a high-importance email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
+1. Send yourself a high-importance email that includes **meet now** in the subject (or have someone in your organization send you such an email).
 1. Confirm the email is in your inbox and it's unread.
 1. Sign into Microsoft Flow, select **My flows**, and then select **Run now**:
 
