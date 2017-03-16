@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Use the Apply to each action to loop through an array of items. | Microsoft Flow"
+    pageTitle="Use the apply to each action to loop through an array of items. | Microsoft Flow"
     description="Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions."
     services=""
     suite="flow"
