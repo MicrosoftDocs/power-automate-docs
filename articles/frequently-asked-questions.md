@@ -103,7 +103,7 @@ Get started with the following resources:
 The mobile app for Microsoft Flow supports iOS and Android.
 
 ### What regions and languages does Microsoft Flow support?
-Microsoft Flow is available in 42 languages [six regions](regions-overview.md).
+Microsoft Flow is available in 42 languages and [six regions](regions-overview.md).
 
 ### How does Microsoft Flow compare to SharePoint Designer 2013?
 Microsoft Flow is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
