@@ -97,20 +97,21 @@ Example:
 
 ```json
 {
-  "name": "item",
-  "in": "body",
-  "required": true,
-  "schema": {
-    "type": "object",
-    "properties": {},
-  "x-ms-dynamic-schema": {
-    "operationId": "Metadata_GetTableSchema",
-    "parameters": {
-      "tablename": "{table}"              // the value that the user has selected from the above parameter
-    },
-    "value-path": "Schema"                // the field that contains the JSON schema
-  }
-  }
+   "name":"item",
+   "in":"body",
+   "required":true,
+   "schema":{
+      "type":"object",
+      "properties":{
+      },
+      "x-ms-dynamic-schema":{
+         "operationId":"Metadata_GetTableSchema",
+         "parameters":{
+            "tablename":"{table}"            // the value that the user has selected from the above parameter
+         },
+         "value-path":"Schema"         // the field that contains the JSON schema
+      }
+   }
 },
 ```
 
