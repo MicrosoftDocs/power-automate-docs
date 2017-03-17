@@ -44,7 +44,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 ## Create a flow
 
-1. Sign into the [Microsoft Flow](https://flow.microsoft.com):
+1. Sign into [Microsoft Flow](https://flow.microsoft.com):
 
 1. Select the **My flows** tab, and then create a flow from a blank:
 
@@ -77,7 +77,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
      ![select apply to each](./media/apply-to-each/foreach-6.png)
 
-1. Insert the **Body** token into the **Select an output from previous steps** box on the **Apply to each** card. This pulls in the body of the emails to be used in the **apply to each** action:
+1. Insert the **Body** token into the **Select an output from previous steps** box on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action:
 
      ![add body token](./media/apply-to-each/foreach-7.png)
 
@@ -101,7 +101,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
           ![add condition](./media/apply-to-each/foreach-importance-condition.png)
 
-1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the meet now email was sent with high importance) is true:
+1. Select **Add an action** under the **IF YES, DO NOTHING** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the **meet now** email was sent with high importance) is true:
 
      ![add action](./media/apply-to-each/foreach-9.png)
 
@@ -165,7 +165,7 @@ If you followed along, your flow should look similar to this diagram:
 
 ## Run the flow
 
-1. Send a high-importance email to yourself or have someone in your organization send you an email with **meet now** in the subject of the email.
+1. Send yourself a high-importance email that includes **meet now** in the subject (or have someone in your organization send you such an email).
 1. Confirm the email is in your inbox and it's unread.
 1. Sign into Microsoft Flow, select **My flows**, and then select **Run now**:
 
