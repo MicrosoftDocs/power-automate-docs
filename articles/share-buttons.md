@@ -103,9 +103,9 @@ Optionally, from the **Flows** tab:
 
       ![share button](./media/share-buttons/share-button-flows-tab-run-only.png)
 
-1. After you've tapped **Share as run-only** from either the **Flows** or **Buttons** tab, you'll see the **Button users** page; this page shows the list of groups or users with whom the specific button is shared.
+After you've tapped **Share as run-only** from either the **Flows** or **Buttons** tab, you'll see the **Button users** page; this page shows the list of groups or users with whom the specific button is shared.
 
-     ![share button](./media/share-buttons/share-button-flows-button-users-list.png)
+  ![share button](./media/share-buttons/share-button-flows-button-users-list.png)
 
 ## Stop sharing a button
 
@@ -163,9 +163,11 @@ You can find buttons that have been shared with you by going to the **Add button
 
      ![new button shared with me](./media/share-buttons/share-button-flows-banner.png)
 
-1. Select the **New buttons are available** banner, you will then see the list of all buttons that have been shared with you.
+1. Select the **New buttons are available** banner, and then you will see the **Add buttons** list, which shows all button flows that have been shared with you.
 
      ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+
+1. Tap any button flow and it will immediately be added to the **Buttons** tab of the Microsoft Flow app. You can then use the button flow from the **Buttons** tab, just like any other button flow that's listed there.
 
 ### From **GET MORE**
 
@@ -173,11 +175,11 @@ You can find buttons that have been shared with you by going to the **Add button
 
      ![new button shared with me](./media/share-buttons/share-button-flows-buttons-tab-get-more.png)
 
-1. You will now see the list of button flows that have been shared with you.
+1. You will now see the **Add buttons** list, which shows all button flows that have been shared with you.
 
       ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
-To use a button flow from this list, just tap it and it will immediately be added to the **Buttons** tab of the Microsoft Flow app. You can then use the button flow from the **Buttons** tab, just like any other button flow that's listed there.
+1. Tap any button flow and it will immediately be added to the **Buttons** tab of the Microsoft Flow app. You can then use the button flow from the **Buttons** tab, just like any other button flow that's listed there.
 
 ## Remove a shared button
 
