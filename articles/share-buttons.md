@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Share button flows with others. | Microsoft Flow"
-    description="Share button flows with others so they can save time by using your buttons."
+    pageTitle="Share your button flows with others. | Microsoft Flow"
+    description="Share your button flows with others so they can use your buttons and save time."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,14 +15,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/15/2017"
+   ms.date="03/22/2017"
    ms.author="deonhe"/>
 
 # Share button flows from your mobile app
 
-You can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button flow, the person or group you share with can trigger and run your flow, the same way they run their own flows. You can stop sharing your flows at any time. You manage all button flow sharing activities from the Microsoft Flow mobile app.
+You can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button flow, the person or group with whom you share can trigger and run your flow, the same way they run their own flows. You can stop sharing your flows at any time. You manage all button flow sharing activities from the Microsoft Flow mobile app.
 
->[AZURE.NOTE]All shared buttons run using the *connections* that the button creator used to design the button flow. However, persons or groups with whom a button flow has been shared can neither access the credentials used in these *connections*, nor reuse these *connections* in any other flow.
+>[AZURE.NOTE]All shared buttons run using the *connections* that the button creator used to design the button. However, persons or groups with whom a button has been shared can neither access the credentials used in these *connections*, nor reuse these *connections* in any other flow.
 
 ## What you need to share button flows
 
@@ -35,7 +35,7 @@ To share button flows, you need:
 
 ## Share a button flow
 
-Sharing a button flow requires only a few steps from either the **Buttons** or **Flows** tab of the Microsoft Flow app.
+Share a button from either the **Buttons** or **Flows** tab of the Microsoft Flow app.
 
 From the **Buttons** tab:
 
@@ -81,7 +81,7 @@ After you've tapped **Share as run-only** from either the **Flows** or **Buttons
 
 ## View the list of button users
 
-You can view the list of groups or users with whom you have shared your buttons. You can view the list of button users from the **Buttons** or **Flows** tab.
+View the list of button users from the **Buttons** or **Flows** tab.
 
 From the **Buttons** tab:
 
@@ -149,11 +149,11 @@ Use these steps from the **Button users** page to stop sharing a button flow wit
 
      ![stop sharing button](./media/share-buttons/share-button-flows-remove-user-result.png)
 
-## Monitor the run history of a shared button
+## Monitor the run history
 
 All run history, including the runs initiated by a person with whom a button flow was shared, appear only on the **Activity** tab of the button flow creator's Microsoft Flow mobile app.
 
-## Use buttons shared with me
+## Use shared buttons
 
 You can find buttons that have been shared with you by going to the **Add buttons** list. You get to this list by tapping either the **New buttons are available** banner or **GET MORE**.
 
@@ -195,4 +195,4 @@ If you no longer want to use a button that was shared with you, remove it from t
 
 That's it. The button will no longer appear on the **Buttons** tab of the Microsoft Flow app.
 
->[AZURE.NOTE]After you remove a shared button, if you need to, add it back into the **Buttons** tab later by selecting **GET MORE** from the **Buttons** tab.
+>[AZURE.NOTE]After you remove a shared button, you can add it back into the **Buttons** tab later by selecting **GET MORE** from the **Buttons** tab.
