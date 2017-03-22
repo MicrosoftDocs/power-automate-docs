@@ -22,9 +22,9 @@
 
 You can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button flow, the person or group with whom you share can trigger and run your flow, the same way they run their own flows. You can stop sharing your flows at any time. You manage all button flow sharing activities from the Microsoft Flow mobile app.
 
-If someone has shared a button with you, and you want to learn how to use or it, take a look at [these steps](share-buttons.md/#use-shared-buttons).
+If someone has shared a button with you, and you want to learn how to use it, take a look at [these steps](share-buttons.md/#use-shared-buttons).
 
->All shared buttons run using the *connections* that the button creator used to design the button. However, persons or groups with whom a button has been shared can neither access the credentials used in these *connections*, nor reuse these *connections* in any other flow.
+>[AZURE.NOTE]All shared buttons run using the *connections* that the button creator used to design the button. However, persons or groups with whom a button has been shared can neither access the credentials used in these *connections*, nor reuse these *connections* in any other flow.
 
 ## What you need to share button flows
 
