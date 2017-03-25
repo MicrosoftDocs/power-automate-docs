@@ -1,11 +1,11 @@
 <properties
     pageTitle="Sign up and sign in | Microsoft Flow"
-    description="Sign up and sign in to Microsoft Flow, and troubleshoot issues with this process."
+    description="Sign up and sign into Microsoft Flow, and troubleshoot issues with this process."
     services=""
     suite="flow"
     documentationCenter="na"
     authors="anjlic"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""/>
 
@@ -30,9 +30,11 @@ If you haven't used other online Microsoft products then you will need to sign u
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign up free** in the upper-right corner.
 
-	![Sign-up link](./media/sign-up-sign-in/signup.png)
+1. Enter your email address.
 
-1. Specify your email address, and then click or tap **Go**.
+1. Click or tap the **right arrow**.
+
+     ![Sign-up link](./media/sign-up-sign-in/signup.png)
 
 ## Sign in ##
 
@@ -40,19 +42,20 @@ If you have used other Microsoft online products, either for work or yourself, t
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
 
-	![Sign-in link](./media/sign-up-sign-in/signin.png)
+     ![Sign-in link](./media/sign-up-sign-in/signin.png)
 
-1. Specify your email address.
+1. Enter your email address.
 
-1. On the sign-in page for your organization or for Microsoft Accounts, specify your address and password.
+1. On the sign-in page enter your email address and password.
 
 ## Using paid features ##
 
-Anyone can sign up and get a free plan for Microsoft Flow. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Microsoft Flow. You can also start a 90 day free trial or purchase Microsoft Flow Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md). 
+Anyone can sign up and get a free plan for Microsoft Flow. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Microsoft Flow. You can also start a 90 day free trial or purchase Microsoft Flow Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md).
 
 For administration information, see [Flows in your organization Q&A](organization-q-and-a.md).
 
 ## Troubleshooting ##
+
 In many cases, you can register for Microsoft Flow by following the simple process described earlier in this topic. However, this table summarizes the most common reasons why you may not be able to sign up and describes available workarounds.
 
 | Symptom / Error Message | Cause and Workaround |
@@ -63,5 +66,7 @@ In many cases, you can register for Microsoft Flow by following the simple proce
 | **Email address is not an Office 365 ID**<br><br>You receive a message like the following during signup:<br>*We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services, and those IDs differ from your email address. For example, your email address might be Nancy.Smith@contoso.com, but your ID might be nancys@contoso.com. To complete signup, use the ID that your organization has assigned to you for signing in to Office 365 or other Microsoft services. |
 
 ## Next steps ##
+
 - [Start with a template](get-started-logic-template.md), which is a pre-built flow that's set up for you.
+
 - [Start from blank](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
