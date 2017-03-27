@@ -89,4 +89,3 @@ Start with a flow that has a **Send an email** action.
 1. Select **Update flow**, which is located on the menu at the top of the screen. 
 
      This step saves your changes.
-
