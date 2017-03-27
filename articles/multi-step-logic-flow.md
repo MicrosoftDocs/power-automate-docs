@@ -20,9 +20,9 @@
 
 # Add multiple actions and advanced options to a flow #
 
-Customize a flow by adding one or more advanced parameters and multiple actions for the same trigger. For example, add an advanced parameter that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
+Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced parameter that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
 
-### Prerequisites ###
+## Prerequisites ##
 
 - [Create a flow](get-started-logic-flow.md)
 
@@ -44,17 +44,17 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 1. If prompted, provide your Dropbox credentials.
 
-1. Select the folder icon that's located on the right side of the **Folder path** box.
-1. Find, and then select the folder in which you want to place the new file.
+1. Select the folder icon on the right side of the **Folder path** box.
+1. Find and then select the folder in which you want to place the new file.
 
     ![search create file](./media/multi-step-logic-flow/create-file-folder.png)
 
-1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files.
+1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
 1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
 
-    ![file name and contents](./media/multi-step-logic-flow/create-file-name-and-contents.png)
+     ![file name and contents](./media/multi-step-logic-flow/create-file-name-and-contents.png)
 
->[AZURE.IMPORTANT]If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
+     >[AZURE.IMPORTANT]If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
 
 1. Send a tweet that contains the keyword you specified.
 
@@ -78,11 +78,15 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 Start with a flow that has a **Send an email** action.
 
-1. Select **Show advanced options**, which is located at the bottom of the **Send an email** card. You will then see the advanced options for sending an email.
+1. Select **Show advanced options**, which is located at the bottom of the **Send an email** card.
+
+     You'll then see the advanced options for sending an email.
 
     ![Sharepoint triggers](./media/multi-step-logic-flow/advanced.png)
 
 1. Select **High** from the **Importance** list, and then select **Hide advanced options** to hide the advanced options.
 
-1. Select **Update flow**, which is located on the menu at the top of the screen. This saves your changes.
+1. Select **Update flow**, which is located on the menu at the top of the screen. 
+
+     This step saves your changes.
 
