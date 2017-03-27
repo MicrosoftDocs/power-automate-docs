@@ -32,13 +32,13 @@ If you haven't used other online Microsoft products then you will need to sign u
 
 1. Enter your email address.
 
-1. Click or tap the **right arrow**.
+1. Click or tap the right arrow.
 
      ![Sign-up link](./media/sign-up-sign-in/signup.png)
 
 ## Sign in ##
 
-If you have used other Microsoft online products, either for work or yourself, then all you need to do is Sign in.
+If you've used other Microsoft online products, either for work or yourself, then all you need to do is sign in.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
 
@@ -46,11 +46,11 @@ If you have used other Microsoft online products, either for work or yourself, t
 
 1. Enter your email address.
 
-1. On the sign-in page enter your email address and password.
+1. On the sign-in page, enter your email address and password.
 
 ## Using paid features ##
 
-Anyone can sign up and get a free plan for Microsoft Flow. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Microsoft Flow. You can also start a 90 day free trial or purchase Microsoft Flow Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md).
+Anyone can sign up and get a free plan for Microsoft Flow. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Microsoft Flow. You can also start a 90-day free trial or purchase Microsoft Flow Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md).
 
 For administration information, see [Flows in your organization Q&A](organization-q-and-a.md).
 
