@@ -1,6 +1,6 @@
 <properties
    pageTitle="Get started | Microsoft Flow"
-   description="Quick ways to get started automating your work and life with Microsoft Flow"
+   description="Quick ways to start automating your work and life with Microsoft Flow"
    services=""
    suite="flow"
    documentationCenter="na"
@@ -15,7 +15,7 @@
    ms.topic="hero-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="03/27/2017"
    ms.author="stepsic"/>
 
 # Get started with Microsoft Flow #
@@ -87,4 +87,4 @@ Download the [iPhone](https://itunes.apple.com/us/app/microsoft-flow/id109492882
 
 ## Questions? Ideas? We're here to help ##
 
-We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues. Note that Microsoft Flow is currently in preview.
+We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
