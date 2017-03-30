@@ -119,7 +119,7 @@ Before you can run a button that someone has shared with you, you must add it to
 
 1. Tap the button you want to use.
 
-   The tapped button will be immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
+    The tapped button will be immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
 
      ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
