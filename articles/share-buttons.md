@@ -18,9 +18,9 @@
    ms.date="03/22/2017"
    ms.author="deonhe"/>
 
-# Share button flows from your mobile app
+# Share button flows in Microsoft Flow
 
-You can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your flow, the same way they run their own flows. You can stop sharing your flows at any time. You manage all button sharing activities from the Microsoft Flow mobile app.
+In the mobile app for Microsoft Flow you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your button, the same way they run their own buttons. You can stop sharing your buttons at any time.
 
 >The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently but the functionality is the same.
 
@@ -59,7 +59,7 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
       ![share button](./media/share-buttons/share-button-flows-invite-others-send.png)
 
-      >[AZURE.NOTE]Shared buttons run with their creator's connections. However, nobody else can access these credentials nor reuse them in any other flow.
+      >[AZURE.NOTE]Shared buttons run with their creator's connections. However, nobody else can access these credentials, nor reuse them in any other flow.
 
 1. Tap **OK** to acknowledge that your button will use the *connections* that exist in the button whenever the person or group you've shared it with runs it.
 
@@ -73,13 +73,7 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
 You can view all groups or users with whom a button is shared by following these steps from the **Buttons** tab:
 
-1. Tap **...** next to the button in which you're interested.
-
-     ![view button users](./media/share-buttons/share-button-flows-buttons-tab.png)
-
-1. Tap **Share as run-only**.
-
-      ![view button users](./media/share-buttons/share-button-flows-run-only.png)
+1. Tap **...** next to the button in which you're interested, and then tap **Share as run-only**.
 
       You'll then see the **Button users** page, which displays all groups or users with whom a button is shared.
 
@@ -89,9 +83,7 @@ You can view all groups or users with whom a button is shared by following these
 
 You can stop sharing a button by following these steps from the **Buttons** tab:
 
-1. Tap **...** next to the button you no longer want to share.
-
-1. Tap **Share as run-only**.
+1. Tap **...** next to the button you no longer want to share, and then tap **Share as run-only**.
 
 1. On the **Button users** page, tap the user or group with whom you want to stop sharing the button.
 
