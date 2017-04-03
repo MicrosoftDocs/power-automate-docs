@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="10/24/2016"
+   ms.date="04/04/2017"
    ms.author="anjlic"/>
 
 # Sign up and sign in for Microsoft Flow #
@@ -26,7 +26,7 @@ Starting with Microsoft Flow, as an individual, is easy! Before you can create a
 
 ## Sign up free ##
 
-If you haven't used other online Microsoft products then you will need to sign up.
+If you haven't used other online Microsoft products, you'll need to sign up.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign up free** in the upper-right corner.
 
@@ -38,7 +38,7 @@ If you haven't used other online Microsoft products then you will need to sign u
 
 ## Sign in ##
 
-If you've used other Microsoft online products, either for work or yourself, then all you need to do is sign in.
+If you've used other Microsoft online products, either for work or yourself, all you need to do is sign in.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
 
