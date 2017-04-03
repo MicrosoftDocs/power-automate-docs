@@ -54,22 +54,22 @@
 
 ### Release 2017-03-15
 
-- **Share buttons with co-workers** - Flow buttons can now be shared with other people, making it easy for any business user to perform quick tasks.
+- **Share buttons with co-workers** - You can now share flow buttons with other people, making it easy for any business user to perform quick tasks.
 - **Trigger buttons from the home screen** - Shortcuts to flow buttons from the home and lock screens of mobile devices make it quicker than ever to trigger a flow.
-- **Team flows in the Flow app** - You can now see the flows that have other owners in the Flow app for iOS or Android.
+- **Team flows in the Microsoft Flow app** - You can now see the flows that have other owners in the Microsoft Flow app for iOS or Android.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/button-sharing/) about this release.
 
 ### Release 2017-03-10
 
-- **Improved Custom API experience** - You can now use a Postman collection to create a Custom API, and edit, add and test actions. 
+- **Improved custom API experience** - You can now use a Postman collection to create a custom API, and edit, add, and test actions.
 - **Two new services** - Added PowerApps Notifications and PivotalTracker support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
 
 ### Release 2017-02-27
 
-- **Trigger your flow buttons** - You can now trigger Flow buttons right from the Flow web portal. When looking at your list of flows, simply select the "..." menu and choose the Run now command. 
+- **Trigger your flow buttons** - You can now trigger flow buttons right from the Microsoft Flow website. When looking at your list of flows, simply select the "..." menu and choose the Run now command. 
 - **Five new services** - Added Oracle Database, Intercom, FreshBooks, LeanKit and WebMerge support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) about this release.
@@ -87,7 +87,7 @@
 - **Five new services** - Added support for Azure Data Lake, Bitbucket (a web based hosting service for projects that use GIT revision control), Eventbrite, Infusionsoft and Pipedrive.
 - **Custom HTTP authentication** - In the flow designer it's now possible to use authentication with custom HTTP endpoints.
 - **Parse JSON messages** - You can parse JSON data from the HTTP Request trigger or that's returned from the HTTP action.
-- **Flow run filtering** - Improved filtering for flow runs, with more specific options including seeing Running flows or Cancelled runs. 
+- **Flow run filtering** - Improved filtering for flow runs, with more specific options including seeing Running flows or Cancelled runs.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
 

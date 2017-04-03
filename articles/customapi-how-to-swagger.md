@@ -4,7 +4,7 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="camsoper"
+	authors="msftman"
 	manager="anneta"
 	editor=""/>
 
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="12/06/2016"
-   ms.author="casoper"/>
+   ms.author="deonhe"/>
 
 # Customize your Swagger definition for Microsoft Flow
 
@@ -97,16 +97,21 @@ Example:
 
 ```json
 {
-  "name": "item",
-  "in": "body",
-  "required": true,
-  "x-ms-dynamic-schema": {
-    "operationId": "Metadata_GetTableSchema",
-    "parameters": {
-      "tablename": "{table}"              // the value that the user has selected from the above parameter
-    },
-    "value-path": "Schema"                // the field that contains the JSON schema
-  }
+   "name":"item",
+   "in":"body",
+   "required":true,
+   "schema":{
+      "type":"object",
+      "properties":{
+      },
+      "x-ms-dynamic-schema":{
+         "operationId":"Metadata_GetTableSchema",
+         "parameters":{
+            "tablename":"{table}"            // the value that the user has selected from the above parameter
+         },
+         "value-path":"Schema"         // the field that contains the JSON schema
+      }
+   }
 },
 ```
 
