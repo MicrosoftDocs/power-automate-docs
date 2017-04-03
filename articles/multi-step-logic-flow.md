@@ -56,6 +56,8 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
      >[AZURE.IMPORTANT]If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
 
+1. Select **Update flow**, which is located on the menu at the top of the screen.
+
 1. Send a tweet that contains the keyword you specified.
 
     Within a minute, a file is created in your Dropbox account.
@@ -86,6 +88,6 @@ Start with a flow that has a **Send an email** action.
 
 1. Select **High** from the **Importance** list, and then select **Hide advanced options** to hide the advanced options.
 
-1. Select **Update flow**, which is located on the menu at the top of the screen. 
+1. Select **Update flow**, which is located on the menu at the top of the screen.
 
      This step saves your changes.
