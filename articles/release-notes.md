@@ -52,6 +52,19 @@
 
 ## What's new ##
 
+### Release 2017-04-03
+
+- **Windows Phone Beta** - The Windows Phone App beta program is available to get a preview of the app on your Windows Phone. [Read more](https://flow.microsoft.com/blog/windows-phone-app-beta-is-now-available/).
+- **Muhimbi PDF** - You can now convert Microsoft Word files to PDF, add watermarks, merge documents and more with Muhimbi PDF. [Read more](https://flow.microsoft.com/blog/convert-files-using-muhimbi/).
+- **Trigger flows from physical buttons** - Announcing partnerships with two of the leading products in the physical button space: Flic by Shortcut Labs, and Bttn by The Button Corporation. [Read more](https://flow.microsoft.com/blog/physical-buttons/)
+
+### Release 2017-03-22
+
+- **Make a copy of your flow** - You can now make a copy of your flow to work on draft versions or duplicate a flow that you've created in the past.
+- **Two new services** - Adding support for Toodledo - manage your to-do list by creating and updating tasks, and Zendesk, which provides a customer service and support ticketing platform.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/make-a-copy/) about this release.
+
 ### Release 2017-03-15
 
 - **Share buttons with co-workers** - You can now share flow buttons with other people, making it easy for any business user to perform quick tasks.
