@@ -22,7 +22,7 @@
 
 In the mobile app for Microsoft Flow you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your button, the same way they run their own buttons. You can stop sharing your buttons at any time.
 
->The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently but the functionality is the same.
+>The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
 
 Follow [these steps](share-buttons.md/#use-shared-buttons) to use a button that someone shared with you.
 
@@ -75,7 +75,7 @@ You can view all groups or users with whom a button is shared by following these
 
 1. Tap **...** next to the button in which you're interested, and then tap **Share as run-only**.
 
-      You'll then see the **Button users** page, which displays all groups or users with whom a button is shared.
+1. On the **Button users** page, view all groups or users with whom the button is shared.
 
       ![view button users](./media/share-buttons/share-button-flows-button-users-list.png)
 
