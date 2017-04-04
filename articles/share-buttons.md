@@ -20,7 +20,7 @@
 
 # Share button flows in Microsoft Flow
 
-In the mobile app for Microsoft Flow you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your button, the same way they run their own buttons. You can stop sharing your buttons at any time.
+In the mobile app for Microsoft Flow, you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your button, the same way they run their own buttons. You can stop sharing your buttons at any time.
 
 >The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
 
