@@ -90,9 +90,9 @@ Ok, let's get started:
 
 1. Add the **MessageId** token into the **Message Id** box on the **Mark as read** card.
 
-   If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
+     If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
 
-     ![message id](./media/email-triggers/email-triggers-6.png)
+      ![message id](./media/email-triggers/email-triggers-6.png)
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
@@ -112,19 +112,19 @@ In this walk-through, we'll create a flow that sends a push notification to your
 
 1. Search for "email", and then select **Office 365 Outlook - When a new email arrives** from the list of triggers.
 
-   This trigger runs each time an email arrives.
+     This trigger runs each time an email arrives.
 
-     ![search for email](./media/email-triggers/email-triggers-1.png)
+      ![search for email](./media/email-triggers/email-triggers-1.png)
 
 1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
 
-   To display all your email folders, you may have to first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
+     To display all your email folders, you may have to first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
 
-     ![select folder](./media/email-triggers/email-triggers-sender-folder.png)
+      ![select folder](./media/email-triggers/email-triggers-sender-folder.png)
 
 1. Enter the email address of the sender into **From**.
 
-   This flow will take action on any emails sent from this address.
+     This flow will take action on any emails sent from this address.
 
       ![email property](./media/email-triggers/email-triggers-from.png)
 
@@ -146,9 +146,9 @@ In this walk-through, we'll create a flow that sends a push notification to your
 
 1. Add the **MessageId** token into the **Message Id** box on the **Mark as read** card.
 
-   If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
+     If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
 
-     ![message id](./media/email-triggers/email-triggers-6.png)
+      ![message id](./media/email-triggers/email-triggers-6.png)
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
@@ -194,9 +194,9 @@ Let's get started:
 
 1. Add the **MessageId** token into the **Message Id** box on the **Mark as read** card.
 
-   If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
+     If the **Message Id** token isn't visible, search for it by entering **Message Id** in the search box.
 
-     ![message id](./media/email-triggers/email-triggers-6.png)
+      ![message id](./media/email-triggers/email-triggers-6.png)
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
