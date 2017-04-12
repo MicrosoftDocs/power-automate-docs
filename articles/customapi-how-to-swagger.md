@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/11/2017"
-   ms.author="msftman"/>
+   ms.author="deonhe"/>
 
 # Customize your Swagger definition for Microsoft Flow
 
@@ -78,7 +78,7 @@ Applies to:
 #### Usage: 
 Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
->[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details. 
+>[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
 
 #### Properties:  
 * `operationID` [Required] - Specifies the operation to invoke to populate the dropdown
@@ -87,20 +87,21 @@ Annotate a parameter by using the x-ms-dynamic-values object within the paramete
 * `value-collection` [Optional] - A path string that evaluates to an array of objects in the response payload
 * `parameters` [Optional] - Object whose properties specify the input parameters required to invoke a dynamic-values operation
 
-Example: 
+Example:
+
 ```json
-      "x-ms-dynamic-values": {
-        "operationId": "PopulateDropdown",
-        "value-path": "name",
-        "value-title": "properties/displayName",
-        "value-collection": "value",
-        "parameters": {
-          "staticParameter": "<value>",
-          "dynamicParameter": {
-            "parameter": "<value_to_pass_to_dynamicParameter>"
-          }
-        }
+  "x-ms-dynamic-values": {
+    "operationId": "PopulateDropdown",
+    "value-path": "name",
+    "value-title": "properties/displayName",
+    "value-collection": "value",
+    "parameters": {
+      "staticParameter": "<value>",
+      "dynamicParameter": {
+        "parameter": "<value_to_pass_to_dynamicParameter>"
       }
+    }
+  }
 ```
 
 Sample code from swagger: 
@@ -144,7 +145,7 @@ Notice how the outputs change based on the dropdown selection
 
 #### Usage:
 Annotate a request parameter or a response body with x-ms-dynamic-schema object. 
->[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details
+>[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
 
 #### Properties: 
 * `operationID` [Required] - Specifies the operation to invoke to fetch the schema
@@ -154,23 +155,23 @@ Annotate a request parameter or a response body with x-ms-dynamic-schema object.
 Sample code for dynamic parameters: 
 
 ```json
-{
-            "name": "dynamicListSchema",
-            "in": "body",
-            "description": "Dynamic Schema of items in selected list",
-            "schema": {
-              "type": "object",
-              "x-ms-dynamic-schema": {
-                "operationId": "GetListSchema",
-                "parameters": {
-                  "listID": {
-                    "parameter": "listID-dynamic"
-                  }
-                },
-                "value-path": "items"
-              }
-            }
+  {
+    "name": "dynamicListSchema",
+    "in": "body",
+    "description": "Dynamic Schema of items in selected list",
+    "schema": {
+      "type": "object",
+      "x-ms-dynamic-schema": {
+        "operationId": "GetListSchema",
+        "parameters": {
+          "listID": {
+            "parameter": "listID-dynamic"
           }
+        },
+        "value-path": "items"
+      }
+    }
+  }
 ```
 
 Sample code for dynamic response:
