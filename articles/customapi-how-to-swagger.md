@@ -87,7 +87,8 @@ Annotate a parameter by using the x-ms-dynamic-values object within the paramete
 * `value-collection` [Optional] - A path string that evaluates to an array of objects in the response payload
 * `parameters` [Optional] - Object whose properties specify the input parameters required to invoke a dynamic-values operation
 
-Example: 
+Example:
+
 ```json
       "x-ms-dynamic-values": {
         "operationId": "PopulateDropdown",
