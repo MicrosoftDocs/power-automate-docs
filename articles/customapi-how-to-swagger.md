@@ -90,18 +90,18 @@ Annotate a parameter by using the x-ms-dynamic-values object within the paramete
 Example:
 
 ```json
-      "x-ms-dynamic-values": {
-        "operationId": "PopulateDropdown",
-        "value-path": "name",
-        "value-title": "properties/displayName",
-        "value-collection": "value",
-        "parameters": {
-          "staticParameter": "<value>",
-          "dynamicParameter": {
-            "parameter": "<value_to_pass_to_dynamicParameter>"
-          }
-        }
+  "x-ms-dynamic-values": {
+    "operationId": "PopulateDropdown",
+    "value-path": "name",
+    "value-title": "properties/displayName",
+    "value-collection": "value",
+    "parameters": {
+      "staticParameter": "<value>",
+      "dynamicParameter": {
+        "parameter": "<value_to_pass_to_dynamicParameter>"
       }
+    }
+  }
 ```
 
 Sample code from swagger: 
@@ -155,23 +155,23 @@ Annotate a request parameter or a response body with x-ms-dynamic-schema object.
 Sample code for dynamic parameters: 
 
 ```json
-{
-            "name": "dynamicListSchema",
-            "in": "body",
-            "description": "Dynamic Schema of items in selected list",
-            "schema": {
-              "type": "object",
-              "x-ms-dynamic-schema": {
-                "operationId": "GetListSchema",
-                "parameters": {
-                  "listID": {
-                    "parameter": "listID-dynamic"
-                  }
-                },
-                "value-path": "items"
-              }
-            }
+  {
+    "name": "dynamicListSchema",
+    "in": "body",
+    "description": "Dynamic Schema of items in selected list",
+    "schema": {
+      "type": "object",
+      "x-ms-dynamic-schema": {
+        "operationId": "GetListSchema",
+        "parameters": {
+          "listID": {
+            "parameter": "listID-dynamic"
           }
+        },
+        "value-path": "items"
+      }
+    }
+  }
 ```
 
 Sample code for dynamic response:
