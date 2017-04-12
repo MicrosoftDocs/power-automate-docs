@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/11/2017"
-   ms.author="msftman"/>
+   ms.author="deonhe"/>
 
 # Customize your Swagger definition for Microsoft Flow
 
@@ -78,7 +78,7 @@ Applies to:
 #### Usage: 
 Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
->[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details. 
+>[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
 
 #### Properties:  
 * `operationID` [Required] - Specifies the operation to invoke to populate the dropdown
@@ -144,7 +144,7 @@ Notice how the outputs change based on the dropdown selection
 
 #### Usage:
 Annotate a request parameter or a response body with x-ms-dynamic-schema object. 
->[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details
+>[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
 
 #### Properties: 
 * `operationID` [Required] - Specifies the operation to invoke to fetch the schema
