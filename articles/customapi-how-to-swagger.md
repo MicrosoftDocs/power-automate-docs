@@ -6,7 +6,7 @@
 	documentationCenter=""
 	authors="msftman"
 	manager="anneta"
-	editor=""/>
+	editor="sunaysv"/>
 
 <tags
    ms.service="flow"
@@ -14,8 +14,8 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
-   ms.author="deonhe"/>
+   ms.date="04/11/2017"
+   ms.author="msftman"/>
 
 # Customize your Swagger definition for Microsoft Flow
 
@@ -23,99 +23,172 @@
 
 To use custom APIs in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a custom API for Microsoft Flow.
 
-## x-ms-summary
+## summary 
+Title of the operation. Example - 'When a task is created" or "Create new lead'. 
 
-Defines the display names for entities that do not have the `summary` field defined in the Swagger definition.
+Applies to: 
+* Operations
+
+![summary-annotation](./media/customapi-how-to-swagger/figure_1.png)
+
+It is recommended that you use **sentence case** for the summary of your operations.
+
+## x-ms-summary
+Title of the entity. Example - 'Task Name', 'Due Date', etc. 
+
+Applies to:
+* Parameters
+* Response Schema
+
+![x-ms-summary-annotation](./media/customapi-how-to-swagger/figure_2.png)
+
+It is recommended that you use **title case** in x-ms-summary.
+ 
+## description
+A verbose explanation of the operation's functionality or an entity's format and function. Example - 'This operation triggers when a task is added to your project'.
+
+Applies to:
+* Operations
+* Parameters
+* Response Schema
+
+![description-annotation](./media/customapi-how-to-swagger/figure_3.jpg)
+
+It is recommended that you use **sentence case** in the description.
+
 
 ## x-ms-visibility
+Determines the user facing visibility of the entity. The possible values are ‘important’, ‘advanced’ and ‘internal’. Entities marked as ‘internal’ do not show up in the Flow UI.
 
-Defines whether the entity is displayed in the Microsoft Flow designer. The following values are available:
+Applies to:
+* Operations
+* Parameters
+* Schemas
 
-- “none” (default)
-- “advanced”
-- “internal” - Microsoft Flow designer does not show these operations
+![visibility-annotation](./media/customapi-how-to-swagger/figure_4.jpg)
 
-If an operation is marked as "important", the Microsoft Flow client is expected to highlight these operations.
+## x-ms-dynamicvalues
+Enables populating a dropdown for collecting input parameters to an operation
 
-## x-ms-trigger
+Applies to: 
+* Parameters
 
-Defines whether this operation can be used as a trigger in a flow. Options include:
+![dynamic-values](./media/customapi-how-to-swagger/figure_5.png)
 
-- none (default): The operation cannot be used as a trigger.
-- single: This operation can also be used as a trigger.
-- batched: This operation can be used as a trigger.  In addition, this operation responds with a JSON array of objects, and the flow fires a trigger for each item in the array.
+#### Usage: 
+Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
+>[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details. 
 
-## x-ms-dynamic-values
+#### Properties:  
+* `operationID` [Required] - Specifies the operation to invoke to populate the dropdown
+* `value-path` [Required] - A path string in the object inside "value-collection" that refers to the value for the parameter, if value-collection is not specified, the response is evaluated as an array
+* `value-title` [Optional] - A path string in the object inside "value-collection" that refers to a description for the value, if value-collection is not specified, the response is evaluated as an array
+* `value-collection` [Optional] - A path string that evaluates to an array of objects in the response payload
+* `parameters` [Optional] - Object whose properties specify the input parameters required to invoke a dynamic-values operation
 
-This is a hint to the Microsoft Flow designer that the API provides a list of dynamically allowed values for this parameter. The Microsoft Flow designer can invoke an operation as defined by the value of this field, and extract the possible values from the result.  The Microsoft Flow designer can then display these values as options to the end user.  
-
-The value is an object that contains the following properties:
-
-- `operationId`: A string that matches the operationId for the operation that is invoked
-- `parameters`: An object whose properties define the parameters required for the operation
-- `value-collection`: A path string that evaluates to an array of objects in the response payload
-- `value-path`: A path string in the object inside "value-collection" that refers to the value for the parameter.
-- `value-title`: A path string in the object inside "value-collection" that refers to a description for the value.
-
-
-Example:
-
+Example: 
 ```json
-"/api/tables/{table}/items": {
-  "post": {
-    "operationId": "TableData_CreateItem",
-    "summary": "Create an object in {Salesforce}",
-    "parameters": [
-      {
-        "name": "table",
-        "x-ms-summary": "Object Type",
-        "x-ms-dynamic-values": {
-          "operationId": "TableMetadata_ListTables",      // operation that needs to be invoked
-          "parameters": { },                              // parameters for the above operation, if any
-          "value-collection": "values",                   // field that contains the collection
-          "value-path": "Name",                           // field that contains the value
-          "value-title": "DisplayName"                    // field that contains a display name for the value
+      "x-ms-dynamic-values": {
+        "operationId": "PopulateDropdown",
+        "value-path": "name",
+        "value-title": "properties/displayName",
+        "value-collection": "value",
+        "parameters": {
+          "staticParameter": "<value>",
+          "dynamicParameter": {
+            "parameter": "<value_to_pass_to_dynamicParameter>"
+          }
+        }
       }
-      // ...
-    ]
-    // ...
-  }
-  // ...
-}
 ```
 
-In this example, the Swagger defines the `TableData_CreateItem` operation that creates a new object in Salesforce.
+Sample code from swagger: 
 
-Salesforce has a lot of built-in objects. `x-ms-dynamic-values` is used here to help the designer figure out the list of the built-in Salesforce objects. It obtains the list by calling `TableMetadata_ListTables`.
+```json
+"/api/lists/{listID-dynamic}": {
+      "get": {
+        "description": "Get items from a single list - uses dynamic Values and outputs dynamic-schema",
+        "summary": "Get's items from the selected list ",
+        "operationId": "GetListItems",
+        "parameters": [
+          {
+            "name": "listID-dynamic",
+            "type": "string",
+            "in": "path",
+            "description": "Select List you want outputs from",
+            "required": true,
+            "x-ms-summary": "Select List",
+            "x-ms-dynamic-values": {
+              "operationId": "GetLists",
+              "value-path": "id",
+              "value-title": "name"
+            }
+          }
+        ]
+```
 
 ## x-ms-dynamic-schema
+This is a hint to the flow designer that the schema for this parameter or response is dynamic in nature. It can invoke an operation as defined by the value of this field, and discover the schema dynamically. It can then display an appropriate UI to take inputs from the user or display available fields.
 
-This is a hint to the flow designer that the schema for this parameter (or response) is dynamic in nature.  It can invoke an operation as defined by the value of this field, and discover the schema dynamically.  It can then display an appropriate UI to take inputs from the user or display available fields.
+Applies to:
+* Parameters
+* Response
 
-Example:
+
+Notice how input form changes based on the dropdown selection
+![dynamic-schema-request](./media/customapi-how-to-swagger/figure_6.png)
+
+Notice how the outputs change based on the dropdown selection
+![dynamic-schema-response](./media/customapi-how-to-swagger/figure_7.png)
+
+#### Usage:
+Annotate a request parameter or a response body with x-ms-dynamic-schema object. 
+>[AZURE.NOTE] See sample [swagger](./media/customapi-how-to-swagger/sampleDynamicSwagger.json) for more details
+
+#### Properties: 
+* `operationID` [Required] - Specifies the operation to invoke to fetch the schema
+* `parameters` [Required] - Object whose properties specify the input parameters required to invoke a dynamic-schema operation
+* `value-path` [Optional] - A path string that refers to the property holding the schema, if not specified, the response is assumed to contain the schema in the properties of the root object
+
+Sample code for dynamic parameters: 
 
 ```json
 {
-   "name":"item",
-   "in":"body",
-   "required":true,
-   "schema":{
-      "type":"object",
-      "properties":{
-      },
-      "x-ms-dynamic-schema":{
-         "operationId":"Metadata_GetTableSchema",
-         "parameters":{
-            "tablename":"{table}"            // the value that the user has selected from the above parameter
-         },
-         "value-path":"Schema"         // the field that contains the JSON schema
-      }
-   }
-},
+            "name": "dynamicListSchema",
+            "in": "body",
+            "description": "Dynamic Schema of items in selected list",
+            "schema": {
+              "type": "object",
+              "x-ms-dynamic-schema": {
+                "operationId": "GetListSchema",
+                "parameters": {
+                  "listID": {
+                    "parameter": "listID-dynamic"
+                  }
+                },
+                "value-path": "items"
+              }
+            }
+          }
 ```
 
-This is useful in scenarios where the inputs to an operation are dynamic. For example, in the case of SQL, the schema for each table is different. When a user selects a particular table, the flow designer needs to understand the structure of the table so that it can display the column names. In this context, if the Swagger definition has `x-ms-dynamic-schema`, it calls the corresponding operation to fetch the schema.
+Sample code for dynamic response:
+
+```json
+"DynamicResponseGetListSchema": {
+      "type": "object",
+      "x-ms-dynamic-schema": {
+        "operationId": "GetListSchema",
+        "parameters": {
+          "listID": {
+            "parameter": "listID-dynamic"
+          }
+        },
+        "value-path": "items"
+      }
+    }
+```
 
 ## Next steps
 
