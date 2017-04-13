@@ -28,13 +28,13 @@ You can create a flow that integrates with SharePoint and manages the approval o
 
 - Access to [Microsoft Flow](https://flow.microsoft.com).
 
-- Access to SharePoint Online. You'll need to create a list in SharePoint.
+- Access to a SharePoint Online list.
 
 - Access to Office 365 email and Office 365 Users account.
 
 ## Create an approval flow
 
-In this walk-through, we'll create a flow that defines a vacation request-approval workflow. This type of workflow is typically used in organizations to approve employee vacations. Each vacation request is created in a SharePoint list. The flow monitors the SharePoint list and sends an approval request to a group or user whenever a new item appears in the list. After the group or user makes a decision, the flow sends an email to the person who requested vacation. Finally, the flow updates the SharePoint list with the decision, and any comments from the decision-maker.
+In this walk-through, we'll create a flow that defines a vacation request-approval workflow. This type of workflow is typically used in organizations to approve employee vacations. Each vacation request is created in a SharePoint list. The flow monitors the SharePoint list and sends an approval request to a group or user whenever a new item appears in the list. After the group or user decides, the flow sends an email to the person who requested vacation. Finally, the flow updates the SharePoint list with the decision, and any comments from the decision-maker.
 
 This diagram shows the details of the flow we'll create in this walk-through:
 
@@ -48,7 +48,7 @@ Make note of the name and URL of the SharePoint list. You'll need these items la
 
 ### Create your flow from the blank template
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com):
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
      ![sign in](./media/sharepoint-approvals/sign-in.png)
 
@@ -70,9 +70,9 @@ Make note of the name and URL of the SharePoint list. You'll need these items la
 
      ![](./media/sharepoint-approvals/select-sharepoint-new-item.png)
 
-1. Select the **Site Address** and the **List Name** for the list that your flow monitors for new items.
+1. Select the **Site Address** and the **List Name** for the SharePoint list that your flow monitors for new items.
 
-     The site address and list name are the items you made a note of earlier in this walk-through.
+     The **Site Address** and the **List Name** are the items you noted earlier in this walk-through.
 
      ![sharepoint info](./media/sharepoint-approvals/select-sharepoint-site-info.png)
 
@@ -158,7 +158,7 @@ Follow these steps to send an email if the vacation request is approved:
 
      Note: **To**, **Subject**, and **Body** are required.
 
-     This card configures the email that will be sent to the person who requested the vacation if the request is approved.
+     This card is the email template for approved vacation requests.
 
      ![](./media/sharepoint-approvals/yes-email-config.png)
 
@@ -174,7 +174,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 1. Select **SharePoint - Update item**.
 
-     ![](./media/sharepoint-approvals/select-update-item.png)
+     ![update item](./media/sharepoint-approvals/select-update-item.png)
 
 1. Configure the **Update item** card to suit your needs.
 
@@ -200,7 +200,7 @@ Follow these steps to send an email if the vacation request is rejected:
 
      Note: **To**, **Subject**, and **Body** are required.
 
-     This card configures the email that will be sent to the person who requested the vacation if the request is rejected.
+     This card is the email template for rejected vacation requests.
 
      ![](./media/sharepoint-approvals/configure-rejected-email.png)
 
@@ -216,7 +216,7 @@ Follow these steps to send an email if the vacation request is rejected:
 
 1. Select **SharePoint - Update item**.
 
-     ![](./media/sharepoint-approvals/select-update-item-no.png)
+     ![update item](./media/sharepoint-approvals/select-update-item-no.png)
 
 1. Configure the **Update item 2** card to suit your needs.
 
@@ -228,7 +228,7 @@ Follow these steps to send an email if the vacation request is rejected:
 
      ![](./media/sharepoint-approvals/update.png)
 
-If you've followed along, your flow should look similar to the screenshot:
+If you've followed along, your flow should look like this screenshot:
 
 ![](./media/sharepoint-approvals/completed-flow.png)
 
