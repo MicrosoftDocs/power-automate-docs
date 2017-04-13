@@ -20,9 +20,17 @@
 
 # Manage approvals with Microsoft Flow
 
-## Overview
+You can create a flow that manages the approval of documents or process by integrating with SharePoint, Dynamics CRM, Salesforce, One Drive for Business, Zendesk, or Wordpress.
 
-You can create a flow that integrates with SharePoint and manages the approval of documents or processes. For example, a document approval flow can be created to approve or reject invoices, work orders or sales quotations. You can create a process approval flow to approve or reject vacation time for an employee, a request to work overtime or for travel plans.
+For example, a document approval flow can be created to approve or reject invoices, work orders or sales quotations. You can create a process approval flow that approves or rejects vacation requests, overtime work or travel plans.
+
+## Create an approval flow
+
+In this walk-through, we'll create a flow that defines a vacation request-approval workflow. Each vacation request is created in a SharePoint Online list. The flow monitors the SharePoint Online list and sends an approval request to a group or user when a new item appears in the list. After the group or user decides, the flow sends an email to the person who requested vacation. Finally, the flow updates the SharePoint Online list with the decision, and any comments from the decision-maker.
+
+This diagram shows the details of the flow we'll create in this walk-through:
+
+   ![](./media/sharepoint-approvals/create-flow-overview.png)
 
 ## Prerequisites
 
@@ -32,19 +40,11 @@ You can create a flow that integrates with SharePoint and manages the approval o
 
 - Access to Office 365 email and Office 365 Users account.
 
-## Create an approval flow
-
-In this walk-through, we'll create a flow that defines a vacation request-approval workflow. This type of workflow is typically used in organizations to approve employee vacations. Each vacation request is created in a SharePoint list. The flow monitors the SharePoint list and sends an approval request to a group or user whenever a new item appears in the list. After the group or user decides, the flow sends an email to the person who requested vacation. Finally, the flow updates the SharePoint list with the decision, and any comments from the decision-maker.
-
-This diagram shows the details of the flow we'll create in this walk-through:
-
-   ![](./media/sharepoint-approvals/create-flow-overview.png)
-
-Before we create the flow, create a [SharePoint online list](https://support.office.com/article/Training-Create-and-set-up-a-list-1DDC1F5A-A908-478B-BB6D-608F34B71F94); we'll use this list to request approval for vacations. The list must include the following fields:
+Before you create the flow, create a [SharePoint Online list](https://support.office.com/article/Training-Create-and-set-up-a-list-1DDC1F5A-A908-478B-BB6D-608F34B71F94); we'll use this list to request approval for vacations. The list must include the following fields:
 
    ![](./media/sharepoint-approvals/sharepoint-list-fields.png)
 
-Make note of the name and URL of the SharePoint list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
+Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
 
 ### Create your flow from the blank template
 
@@ -162,7 +162,7 @@ Follow these steps to send an email if the vacation request is approved:
 
      ![](./media/sharepoint-approvals/yes-email-config.png)
 
-### Add an update action
+### Add an update action for approved requests
 
 1. Select **Add an action**.
 
@@ -204,7 +204,7 @@ Follow these steps to send an email if the vacation request is rejected:
 
      ![](./media/sharepoint-approvals/configure-rejected-email.png)
 
-### Add an update action
+### Add update action for rejected requests
 
 1. Select **Add an action**.
 
@@ -280,7 +280,6 @@ You can request an approval from a SharePoint document library or a SharePoint d
 
      ![create from blank](./media/sharepoint-approvals/blank-template.png)
 
-
 ## Approve a request
 
 If you're the approver in a flow, you'll receive an email or a push notification whenever an approval request is sent to you. The approval request is also sent to the approvals center. You can approve or reject the request from within the email, push notification, or approvals center. The push notification and email show a subset of the approval request's details. Select the link within the push notification or email to launch the approvals center where you can view all details about the approval request.
@@ -306,6 +305,3 @@ To approve a request:
      ![](./media/sharepoint-approvals/1.png)
 
 ## More information
-
-
-
