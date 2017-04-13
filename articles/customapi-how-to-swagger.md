@@ -26,7 +26,8 @@ To use custom APIs in Microsoft Flow, you must provide a Swagger definition, whi
 ## summary 
 Title of the operation. Example - 'When a task is created" or "Create new lead'. 
 
-Applies to: 
+Applies to:
+
 * Operations
 
 ![summary-annotation](./media/customapi-how-to-swagger/figure_1.png)
@@ -37,6 +38,7 @@ It is recommended that you use **sentence case** for the summary of your operati
 Title of the entity. Example - 'Task Name', 'Due Date', etc. 
 
 Applies to:
+
 * Parameters
 * Response Schema
 
@@ -48,6 +50,7 @@ It is recommended that you use **title case** in x-ms-summary.
 A verbose explanation of the operation's functionality or an entity's format and function. Example - 'This operation triggers when a task is added to your project'.
 
 Applies to:
+
 * Operations
 * Parameters
 * Response Schema
@@ -61,6 +64,7 @@ It is recommended that you use **sentence case** in the description.
 Determines the user facing visibility of the entity. The possible values are ‘important’, ‘advanced’ and ‘internal’. Entities marked as ‘internal’ do not show up in the Flow UI.
 
 Applies to:
+
 * Operations
 * Parameters
 * Schemas
@@ -70,17 +74,19 @@ Applies to:
 ## x-ms-dynamicvalues
 Enables populating a dropdown for collecting input parameters to an operation
 
-Applies to: 
+Applies to:
+
 * Parameters
 
 ![dynamic-values](./media/customapi-how-to-swagger/figure_5.png)
 
-#### Usage: 
+#### Usage:
 Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
 >[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
 
-#### Properties:  
+#### Properties:
+
 * `operationID` [Required] - Specifies the operation to invoke to populate the dropdown
 * `value-path` [Required] - A path string in the object inside "value-collection" that refers to the value for the parameter, if value-collection is not specified, the response is evaluated as an array
 * `value-title` [Optional] - A path string in the object inside "value-collection" that refers to a description for the value, if value-collection is not specified, the response is evaluated as an array
@@ -133,6 +139,7 @@ Sample code from swagger:
 This is a hint to the flow designer that the schema for this parameter or response is dynamic in nature. It can invoke an operation as defined by the value of this field, and discover the schema dynamically. It can then display an appropriate UI to take inputs from the user or display available fields.
 
 Applies to:
+
 * Parameters
 * Response
 
@@ -144,10 +151,12 @@ Notice how the outputs change based on the dropdown selection
 ![dynamic-schema-response](./media/customapi-how-to-swagger/figure_7.png)
 
 #### Usage:
-Annotate a request parameter or a response body with x-ms-dynamic-schema object. 
+Annotate a request parameter or a response body with x-ms-dynamic-schema object.
+
 >[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
 
-#### Properties: 
+#### Properties:
+
 * `operationID` [Required] - Specifies the operation to invoke to fetch the schema
 * `parameters` [Required] - Object whose properties specify the input parameters required to invoke a dynamic-schema operation
 * `value-path` [Optional] - A path string that refers to the property holding the schema, if not specified, the response is assumed to contain the schema in the properties of the root object
