@@ -234,37 +234,39 @@ If you've followed along, your flow should look like this screenshot:
 
 ## Request an approval
 
+<!-- I need to update the images in this section and review the text -->
+
 You can request an approval from a SharePoint document library or a SharePoint document list by following these steps:
 
 1. Select the document from the **Flow and approvals** list.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Select **Get started** from the **Flow and approvals** list.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Select **Send for approval**:
 
      You need to accept the terms and conditions if you haven't done so previously. To do so, select the **Accept** button on the **APPROVAL MADE EASY** page.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Provide the name, email address, or group alias for the approver whom you want to approve the request.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Optionally, provide a message for the approver.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Select the **Send for approval** button.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 1. Confirm that the **Approval status** for the document now shows **Awaiting approval**.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/save.png)
 
 ## View pending approval requests
 
@@ -286,22 +288,41 @@ If you're the approver in a flow, you'll receive an email or a push notification
 
 To approve a request:
 
-### From email or push notification
+### From email
 
-1. Select the **Approve** button.
+1. Select the **Approve** button in the email you receive when a new item is added to the SharePoint list.
 
-     ![](./media/sharepoint-approvals/1.png)
+     ![](./media/sharepoint-approvals/email-approval-request.png)
+
+1. Enter a comment, and then select the **Confirm** button.
+
+     ![](./media/sharepoint-approvals/request-in-approval-center.png)
+
 
 ### From the approvals center
 
-1. Select the **Approve** button
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
-![](./media/sharepoint-approvals/1.png)
+     ![sign in](./media/sharepoint-approvals/sign-in.png)
+
+1. Select the **Approvals** tab.
+
+     ![create from blank](./media/sharepoint-approvals/approvals-tab.png)
+
+1. Select **Approve** on the request you want to approve.
+
+     ![create from blank](./media/sharepoint-approvals/approvals-cards.png)
+
+1. Add a note, and then select the **Confirm** button
+
+     ![](./media/sharepoint-approvals/approval-selection-card.png)
+
+### From the Microsoft Flow mobile app
+
+!--I need to do this section -->
 
 ## Reject a request
 
-1. Select the **Reject** button, and optionally provide a reason why you are rejecting the request.
-
-     ![](./media/sharepoint-approvals/1.png)
+You can reject a request via email, the approvals center or the Microsoft Flow mobile app. Simply follow the steps used for approving a request, but, select **Reject**, instead of **Approve**.
 
 ## More information
