@@ -52,6 +52,14 @@
 
 ## What's new ##
 
+### Release 2017-04-11
+
+- **New actions to build tables and lists** - New Create HTML Table, Create CSV Table and Join actions that can process lists of items (instead of the previous Apply-to-each only).
+- **Insert steps anywhere** - You can now insert a new step anywhere in the workflow without needing to drag-and-drop.
+- **Four new services** - Flow now supports 10 to 8 Scheduling, Act!, Inoreader and the Computer Vision API. With the Computer Vision API you can process images to get the text content (known as OCR), or automatically tag images based on their content.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) about this release.
+
 ### Release 2017-04-03
 
 - **Windows Phone Beta** - The Windows Phone App beta program is available to get a preview of the app on your Windows Phone. [Read more](https://flow.microsoft.com/blog/windows-phone-app-beta-is-now-available/).
