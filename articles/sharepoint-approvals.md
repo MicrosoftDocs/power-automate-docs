@@ -188,7 +188,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 1. Select **SharePoint - Update item**.
 
-     ![update item](./media/sharepoint-approvals/select-update-item.png)
+     ![update item](./media/sharepoint-approvals/select-update-item-yes.png)
 
 1. Configure the **Update item** card to suit your needs.
 
