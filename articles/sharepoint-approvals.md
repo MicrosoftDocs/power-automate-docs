@@ -22,13 +22,13 @@
 
 You can create a flow that manages the approval of documents or processes by adding the **Approvals - Start an approval** action to your flow. Any flow that includes the **Approvals - Start an approval** action can easily integrate with services, including SharePoint, Dynamics CRM, Salesforce, One Drive for Business, Zendesk, or WordPress.
 
-You can approve requests from email, the approvals center or the Microsoft Flow mobile app.
+For example, you can create a document approval flow that approves or rejects invoices, work orders, or sales quotations. You can also create a process approval flow that approves or rejects vacation requests, overtime work, or travel plans.
 
-<!For example, you can create a document approval flow that approves or rejects invoices, work orders or sales quotations. You can create a process approval flow that approves or rejects vacation requests, overtime work or travel plans.
+You can approve requests from email, the approvals center, or the Microsoft Flow mobile app.
 
 ## Create an approval flow
 
-In this walk-through, we'll create a flow that does the following:
+In this walk-through, we'll create a flow that performs the following steps:
 
 1. Gets triggered when a vacation request is created in a SharePoint Online list.
 
@@ -50,7 +50,7 @@ This diagram shows the details of the flow we'll create in this walk-through:
 
 - Access to Office 365 Outlook and Office 365 Users account.
 
->[AZURE.NOTE]While we're using SharePoint Online and Office 365 Outlook in this walk-through, you can use other services such as Zendesk, Salesforce or Gmail.
+>[AZURE.NOTE]While we're using SharePoint Online and Office 365 Outlook in this walk-through, you can use other services such as Zendesk, Salesforce, or Gmail.
 
 Before you create the flow, create a [SharePoint Online list](https://support.office.com/article/Training-Create-and-set-up-a-list-1DDC1F5A-A908-478B-BB6D-608F34B71F94); we'll use this list to request approval for vacations. The list must include the following columns:
 
@@ -248,9 +248,9 @@ If you've followed along, your flow should look like this screenshot:
 
 ## Request an approval
 
-Create a new vacation request in the SharePoint Online list you created earlier in this walk-through.
+Create a vacation request in the SharePoint Online list you created earlier in this walk-through.
 
-Your request should look like this:
+Your request should look like this image:
 
 ![vacation request](./media/sharepoint-approvals/vacation-request.png)
 
@@ -278,15 +278,15 @@ View all pending approval requests by following these steps:
 
 ## Approve a request
 
-If you're the approver in an approval flow, you'll receive an email whenever someone creates a new request. The approval request is also sent to the approvals center. You can approve or reject requests from the email, approvals center or Microsoft Flow mobile app.
+If you're the approver in an approval flow, you receive an email whenever someone creates a request. The approval request is also sent to the approvals center. You can approve or reject requests from the email, approvals center, or Microsoft Flow mobile app.
 
 To approve a request:
 
 ### From email
 
-1. Select **Approve** from the email you receive when a new item is added to the SharePoint list.
+1. Select **Approve** from the email you receive when an item is added to the SharePoint list.
 
-     Note: If you're on an Android or iOS mobile phone with the Microsoft Flow app installed, the Microsoft Flow mobile app will launch, otherwise, the approvals center will open in your browser.
+     Note: If you're on an Android or iOS mobile phone with the Microsoft Flow app installed, the Microsoft Flow mobile app launches, otherwise, the approvals center opens in your browser.
 
      ![](./media/sharepoint-approvals/email-approval-request.png)
 
@@ -329,11 +329,11 @@ Note: The screens on Android and iOS may differ slightly, however, the functiona
 
 ## Reject a request
 
-You can reject a request via email, the approvals center or the Microsoft Flow mobile app. Simply follow the steps used for approving a request, but, select **Reject**, instead of **Approve**.
+You can reject a request via email, the approvals center, or the Microsoft Flow mobile app. To reject a request, follow the steps for approving a request, but, select **Reject**, instead of **Approve**.
 
-After you confirm the decision (either approve or reject the request), the flow does the following:
+After you confirm the approval decision (either approve or reject the request), the flow runs the following steps:
 
-1. Sends an email to the person who requested vacation approval.
+1. Sends an email to the person who requested vacation.
 
 1. Updates the SharePoint list with the decision and the comments from the approver.
 
