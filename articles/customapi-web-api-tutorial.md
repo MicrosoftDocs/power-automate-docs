@@ -4,7 +4,7 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="camsoper"
+	authors="msftman"
 	manager="anneta"
 	editor=""/>
 
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="12/06/2016"
-   ms.author="casoper"/>
+   ms.author="deonhe"/>
 
 # Create a custom Web API for Microsoft Flow
 
