@@ -64,7 +64,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 ## Reorder or delete an action ##
 
-- To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action, and then release the Dropbox action when the cursor indicates that it's OK.
+- To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action (towards the center of the **When a new tweet is posted** action's down arrow), and then release the Dropbox action when the cursor indicates that it's OK.
 
      **Note:** You can't move a step before another if you're using any outputs from that step.
 
