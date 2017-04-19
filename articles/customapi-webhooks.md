@@ -4,8 +4,8 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="camsoper"
-	manager="msftman"
+	authors="msftman"
+	manager="anneta"
 	editor=""/>
 
 <tags
