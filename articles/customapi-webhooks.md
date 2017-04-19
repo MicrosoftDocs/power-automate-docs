@@ -5,7 +5,7 @@
     suite="flow"
 	documentationCenter=""
 	authors="camsoper"
-	manager="anneta"
+	manager="msftman"
 	editor=""/>
 
 <tags
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="12/06/2016"
-   ms.author="casoper"/>
+   ms.author="deonhe"/>
 
 # Using webhooks with Microsoft Flow
 

@@ -5,7 +5,7 @@
    suite="flow"
    documentationCenter="na"
    authors="camsoper"
-   manager="anneta"
+   manager="msftman"
    editor=""
    tags=""
    featuredVideoId="U54cdN0tXEI"
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="11/22/2016"
-   ms.author="casoper"/>
+   ms.author="deonhe"/>
 
 # Collecting data
 
