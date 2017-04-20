@@ -76,7 +76,7 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
      ![select delete](./media/create-team-flows/removeowner2.png)
 
-1. In the confirmation dialog box, select **Remove this owner**:
+1. On the confirmation dialog box, select **Remove this owner**:
 
      ![confirm removal](./media/create-team-flows/removeowner3.png)
 
