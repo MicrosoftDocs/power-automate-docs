@@ -20,7 +20,7 @@
 
 # Create team flows (Preview) #
 
-Create a team flow by choosing others in your organization as owners. All owners of a team flow can perform these actions:
+Create a team flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
 - View the flow's history (that is, each run).
 - Manage the properties of the flow (for example, start or stop the flow, add owners or update credentials for a connection).
@@ -34,7 +34,7 @@ If you're the creator or an owner of a team flow, you'll find it listed on the *
 
 >[AZURE.NOTE] Shared connections can be used **only** in the flow in which they were created.
 
-Owners can use services in a flow, but can't modify the credentials for a connection that another owner created.
+Owners can use services in a flow but can't modify the credentials for a connection that another owner created.
 
 ## Prerequisites ##
 
@@ -52,7 +52,7 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
 1. Enter the name, email address, or group name for the person or group that you want to add as an owner:
 
-     ![serch for the user](./media/create-team-flows/addowner2.png)
+     ![search for the user](./media/create-team-flows/addowner2.png)
 
 1. In the list that appears, select the user whom you want to make an owner:
 
