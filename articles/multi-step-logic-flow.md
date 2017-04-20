@@ -15,12 +15,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/26/2017"
+   ms.date="04/20/2017"
    ms.author="stepsic"/>
 
 # Add multiple actions and advanced options to a flow #
 
-Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced parameter that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
+Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
 
 ## Prerequisites ##
 
@@ -64,7 +64,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 ## Reorder or delete an action ##
 
-- To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action (towards the center of the **When a new tweet is posted** action's down arrow), and then release the Dropbox action when the cursor indicates that it's OK.
+To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
 
      **Note:** You can't move a step before another if you're using any outputs from that step.
 
