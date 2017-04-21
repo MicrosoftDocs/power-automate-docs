@@ -38,7 +38,7 @@ Owners can use services in a flow but can't modify the credentials for a connect
 
 ## Prerequisites ##
 
-To create a team flow or add/remove an owner from a team flow, you must have a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/) and be the creator or an owner of a flow.
+You must have a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/) to create a team flow. Additionally, you must be the creator or owner to add/remove owners from a team flow.
 
 ## Create a team flow ##
 
@@ -66,7 +66,7 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
 ## Remove an owner ##
 
->[AZURE.IMPORTANT] If you remove an owner whose credentials are being used to access one or more services in the flow, you may need to update the credentials for those services so that the flow continues to run properly.
+>[AZURE.IMPORTANT] When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly.
 
 1. Select the people icon for the flow that you want to modify:
 
@@ -80,7 +80,7 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
      ![confirm removal](./media/create-team-flows/removeowner3.png)
 
-1. Congratulations &mdash; the user or group that you just removed is no longer listed as an owner of the flow:
+1. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow:
 
      ![user removed](./media/create-team-flows/removeowner4.png)
 
@@ -91,7 +91,7 @@ Connections used in a flow fall into two categories:
 - **Embedded** &mdash; These connections are used in the flow.
 - **Other** &mdash; These connections have been defined for a flow but aren't used in it.
 
-If a connection is no longer being used in a flow, that connection appears in the list of **Other** connections, where it remains until an owner includes it in the flow again.
+If you stop using a connection in a flow, that connection appears in the **Other** connections list, where it remains until an owner includes it in the flow again.
 
 The list of connections appears under the list of owners in a flow's properties:
 
