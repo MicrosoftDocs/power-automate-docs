@@ -18,7 +18,7 @@
    ms.date="04/21/2017"
    ms.author="deonhe"/>
 
-# Create team flows (Preview) #
+# Create team flows #
 
 Create a team flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
