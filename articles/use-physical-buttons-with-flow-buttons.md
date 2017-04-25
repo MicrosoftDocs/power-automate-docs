@@ -20,7 +20,9 @@
 
 # Start button flows with physical buttons
 
-It's easy to trigger Microsoft Flow buttons from the Microsoft Flow mobile app on [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) and [iOS](https://appsto.re/us/5M0qbb.i), or from [Microsoft Flow](https://flow.microsoft.com). Now, you can also trigger your flows by touching a physical button. That's right, you can call your helpdesk, send an email to your team, block your calendar, reorder supplies, or even order a pizza, by pressing a physical button that executes a flow. Any button flow can be launched using a physical button from one of the two leading physical button manufacturers. Currently, Microsoft Flow partners with [bttn](https://my.bt.tn/) and [Flic](https://flic.io/), two of the leading physical button manufacturers. Visit their websites to learn more about their products, and then integrate your phsical buttons with your button flows.
+It's easy to trigger Microsoft Flow buttons from the Microsoft Flow mobile app on [Android](https://aka.ms/flowmobiledocsandroid) and [iOS](https://aka.ms/flowmobiledocsios), or from [Microsoft Flow](https://flow.microsoft.com).
+
+We've now added new triggers that allow you to create flows that can be triggered by touching a physical button. That's right, you can call your helpdesk, send an email to your team, block your calendar, or reorder supplies by pressing a physical button that executes a flow. Currently, Microsoft Flow partners with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn) and [Flic by Shortcut Labs](https://flic.io/) (flic), two of the leading physical button manufacturers. Visit their websites to learn more about their products, and then integrate your physical buttons with your button flows.
 
 ## Prerequisites
 
@@ -28,29 +30,33 @@ To use physical buttons with Microsoft Flow, you must have:
 
 - Access to [Microsoft Flow](https://flow.microsoft.com).
 
-- Access to [bttn](https://my.bt.tn/) or [Flic](https://flic.io/)
+- Access to [bttn](https://my.bt.tn/) or [Flic](https://flic.io/).
 
-- Registered one or more physical buttons on [bttn](https://my.bt.tn/) or [Flic](https://flic.io/).
+- [Registered](https://my.bt.tn/) one or more bttns on bttn's website, or
 
-Note: You must register your physical buttons and follow the instructions provided by the physical button's manufacturer before you can create flows that use the connectors from bttn and flic.
+- Paired one or more Flic buttons by using Flic's [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobile app.
+
+Note: Configure your physical buttons by following the manufacturer's instructions, and then create flows that use the bttn or flic triggers.
 
 ## Create a flow that uses a bttn physical button
 
-In this walk-through, we use a helpdesk template to create a flow that's triggered by a signle touch of a [bttn](https://my.bt.tn/). When the flow gets triggered, it generates a support request to the helpdesk. The support request provides the helpdesk with location information about the room where help is needed.
+In this walk-through, we use a helpdesk template to create a flow that's triggered by a single touch of a [bttn](https://my.bt.tn/). When the flow triggers, it generates a support request to the helpdesk. The support request provides the helpdesk with location information about the room where help is needed.
 
-Note: While we use a template to create this flow, you are free to use the blank template, which gives you full control over all aspects of your flow.
+Note: While we use a preconfigured template in this walk-through, you are free to use the blank template, which gives you full control over all aspects of your flow.
 
 This screenshot displays some of the bttn templates that are available for you to get started quickly building flows for your bttn. Templates are available for your flows to easily connect to Zendesk, Google, and SharePoint, among others:
 
 ![bttn templates](./media/use-physical-buttons-with-flow-buttons/bttn-templates.png)
 
-Before you get started creating your flow, you must register, and then configure your bttn on the bttn website. For the purposes of this walk-throuh, give your bttn a name that represents a conference room in a typical office building.
+>[AZURE.NOTE]Configure all bttn properties, including name, location, email address, and so on, on the [bttn website](https://my.bt.tn/) before you create your flow.
+
+For the purposes of this walkthrough, give your bttn a name that represents a conference room in a typical office building.
 
 The settings for your bttn should resemble this screenshot (from the bttn website):
 
 ![bttn templates](./media/use-physical-buttons-with-flow-buttons/bttn-config.png)
 
-Now that you've configured your bttn, let's get started creating our flow.
+Now that you've registered and configured your bttn, let's get started creating our flow.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
@@ -64,7 +70,7 @@ Now that you've configured your bttn, let's get started creating our flow.
 
    ![search](./media/use-physical-buttons-with-flow-buttons/bttn-search-template.png)
 
-1. Select a template to create your flow.
+1. Select a template.
 
    Here, I have selected the **Use Bttn to call technical support for meeting room** template.
 
@@ -74,13 +80,13 @@ Now that you've configured your bttn, let's get started creating our flow.
 
      ![credentials](./media/use-physical-buttons-with-flow-buttons/bttn-provide-credentials.png)
 
-     You must provide valid credentails to connect to the Office 365 Outlook and the bttn services in order to use this template.
+     Provide valid credentials to connect to the Office 365 Outlook and the bttn services to use this template.
 
 1. Enter **bttn** into the search box, and then select the **bttn - When a bttn is pressed** trigger.
 
      ![search](./media/use-physical-buttons-with-flow-buttons/bttn-trigger.png)
 
-1. Select the **bttn ID** list, and then select the **bttn ID** of the bttn you want to use from the **When a bttn is pressed** card.
+1. Select the **bttn ID** list, and then select the **bttn ID** you want to use from the **When a bttn is pressed** card.
 
      ![](./media/use-physical-buttons-with-flow-buttons/bttn-id.png)
 
@@ -88,7 +94,9 @@ Now that you've configured your bttn, let's get started creating our flow.
 
      ![](./media/use-physical-buttons-with-flow-buttons/bttn-done.png)
 
-1. Now, just press the button on your bttn, and then confirm that your flow ran as expected by viewing its run history on the Microsoft Flow website or on your mobile device.
+1. Press the button on your bttn.
+
+1. View your flow's run history to confirm that it ran successfully. You can check history on the Microsoft Flow website or on your mobile device.
 
 ## Create a flow that uses a flic physical button
 
@@ -104,13 +112,13 @@ Create flows that integrate with flic physical buttons by using an existing temp
 
      ![](./media/use-physical-buttons-with-flow-buttons/flic-templates.png)
 
-1. Select a template to create your flow.
+1. Select a template.
 
      ![](./media/use-physical-buttons-with-flow-buttons/flic-templates.png)
 
 1. Provide your credentials for the services that your selected template uses.
 
-For example, if you select a template that uses Zendesk, you must provide valid credentails to connect to the Zendesk service.
+For example, if you select a template that uses Zendesk, you must provide valid credentials to connect to the Zendesk service.
 
      ![](./media/use-physical-buttons-with-flow-buttons/flic-templates.png)
 
