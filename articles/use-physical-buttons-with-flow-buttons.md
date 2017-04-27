@@ -36,7 +36,7 @@ To use physical buttons with Microsoft Flow, you must have:
 
 - Paired one or more Flic buttons by using Flic's [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobile app.
 
-Note: Configure your physical buttons by following the manufacturer's instructions, and then create flows that use the bttn or flic triggers.
+Note: Configure your physical buttons by following the manufacturer's instructions, and then create flows that use the bttn or Flic triggers.
 
 ## Create a flow that uses a bttn physical button
 
@@ -97,89 +97,6 @@ Now that you've registered and configured your bttn, let's get started creating 
 1. Press the button on your bttn.
 
 1. View your flow's run history to confirm that it ran successfully. You can check history on the Microsoft Flow website or on your mobile device.
-
-## Create a flow that uses a flic physical button
-
-In this walkthrough, we use a [Flic by Shortcut Labs](https://flic.io/) (flic) physical button to track the amount of time a consultant spends at each client. The consultant will need to push the button when she arrives, and then when she leaves a client. The flow gets triggered with each push of the button, and then saves the time information in Google Sheets. ******************
-
-Note: While we use a preconfigured template in this walk-through, you are free to use the blank template, which gives you full control over all aspects of your flow.
-
-This screenshot displays some of the flic templates that are available for you to get started quickly building flows to use with flic buttons.
-
-![flic templates](./media/use-physical-buttons-with-flow-buttons/flic-templates.png)
-
-### Configure Flic button properties
-
-Configure all flic button properties by using flic's mobile app for [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) before you create your flow.
-
-You can program Flic buttons for clicks, double-clicks, and hold. This screenshot shows a sample of what your Flic configuration process might be like:
-
-![configure flics](./media/use-physical-buttons-with-flow-buttons/configure-flic-actions.png)
-
-Ater you've configured the properties for a flic button, you can access your registered Flics by signing into the Flic service through [Microsoft Flow](https://flow.microsoft.com).
-
-## Create a flow that uses Flic buttons
-
-Now that you've registered and configured your flic, let's get started creating our flow.
-
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
-
-     ![](./media/use-physical-buttons-with-flow-buttons/sign-into-flow.png)
-
-1. Enter **flic** into the search box, and then select the search icon.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/search-flic.png)
-
-1. Select the **Track your working hours with Flic smart button** template.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/flic-templates.png)
-
-1. Review the template's details, and then create a Google Sheet with a **ClickType** column, and a **Timestamp** column.
-
-   ![ddfdf](./media/use-physical-buttons-with-flow-buttons/flic-template-details.png)
-
-     You will use this Google Sheet later in this walkthrough.
-
-    You name columns in Google Sheets by entering the column name at the top of the column. So, your Google Sheet should appear like this:
-
-    ![ddfdf](./media/use-physical-buttons-with-flow-buttons/flic-google-sheet.png)
-
-1. Provide your credentials for the services that your selected template uses, and then select **Continue**.
-
-     **Continue** is enabled after you sign into all required services for the template.
-
-     ![ddfdf](./media/use-physical-buttons-with-flow-buttons/flic-template-services-sign-in.png)
-
-1. Enter **flic** into the search box, and then select the **Flic - When a Flic is pressed** trigger.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/flic-search-trigger.png)
-
-1. Select the Flic you want to use in the flow from the **Flic button** list on the **Flic - When a Flic is pressed** card.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/select-flic.png)
-
-   On the **Insert row** card:
-
-1. Select the Google Sheet you created earlier from the **File** list.
-
-1. Select the worksheet from the **Worksheet** list.
-
-   Note: Two boxes will appear on the **Insert row** card after you select the worksheet. These boxes represent each of the two columns in the Google Sheet you created earlier.
-
-1. Select the **ClickType** box, and then enter select the **Click type** token.
-
-1. Select the **Timestamp** box, and then enter select the **Click time** token.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/flick-insert-row-card.png)
-
-1. Confirm that the **Send me an email notification** card looks like this screenshot.
-
-     ![](./media/use-physical-buttons-with-flow-buttons/flick-insert-row-card.png)
-
-Congrats, you've configure your flic successfully.
-
-For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic button is pressed.
-
 
 ## More information
 
