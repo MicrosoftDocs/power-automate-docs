@@ -64,8 +64,8 @@
 
 - **Modern approval experiences** - Create workflows where approvers can approve securely from inside the Microsoft Flow mobile app or the unified approvals center on the Microsoft Flow website.
 - **Team flows general availability** - Multiple people can own and manage a flow together with team flows, which are now generally available.
-- **Build connectors for Flow** - Anyone can submit their own Microsoft Flow connector for free for the rest of the world to use.
-- **A "diet" designer** - For certain templates, a new version of the designer presents just the fields that are required to create a flow, which simplifies the experience. 
+- **Build connectors for Microsoft Flow** - Anyone can submit their own Microsoft Flow connector for free for the rest of the world to use.
+- **A "diet" designer** - For certain templates, a new version of the designer presents just the fields that are required to create a flow, which simplifies the experience.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/q1-2017-update/) about this release.
 
