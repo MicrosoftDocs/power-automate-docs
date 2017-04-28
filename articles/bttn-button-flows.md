@@ -46,7 +46,7 @@ Note: While we use a preconfigured template in this walk-through, you are free t
 
 This screenshot displays some of the bttn templates that are available for you to get started quickly building flows for your bttn. Templates are available for your flows to easily connect to Zendesk, Google, and SharePoint, among others:
 
-![bttn templates](./media/use-physical-buttons-with-flow-buttons/bttn-templates.png)
+![bttn templates](./media/bttn-button-flows/bttn-templates.png)
 
 >[AZURE.NOTE]Configure all bttn properties, including name, location, email address, and so on, on the [bttn website](https://my.bt.tn/) before you create your flow.
 
@@ -54,13 +54,13 @@ For the purposes of this walkthrough, give your bttn a name that represents a co
 
 The settings for your bttn should resemble this screenshot (from the bttn website):
 
-![bttn templates](./media/use-physical-buttons-with-flow-buttons/bttn-config.png)
+![bttn templates](./media/bttn-button-flows/bttn-config.png)
 
 Now that you've registered and configured your bttn, let's get started creating our flow.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
-     ![sign in](./media/use-physical-buttons-with-flow-buttons/sign-into-flow.png)
+     ![sign in](./media/bttn-button-flows/sign-into-flow.png)
 
      Note: Alternatively, you can create your flow from the Microsoft Flow mobile app, which is available on Android, iOS and Windows Phone (Beta).
 
@@ -68,31 +68,31 @@ Now that you've registered and configured your bttn, let's get started creating 
 
    After you select the search icon, all templates that use bttn are displayed.
 
-   ![search](./media/use-physical-buttons-with-flow-buttons/bttn-search-template.png)
+   ![search](./media/bttn-button-flows/bttn-search-template.png)
 
 1. Select a template.
 
    Here, I have selected the **Use Bttn to call technical support for meeting room** template.
 
-   ![support template](./media/use-physical-buttons-with-flow-buttons/bttn-select-template.png)
+   ![support template](./media/bttn-button-flows/bttn-select-template.png)
 
 1. Provide your credentials for the services that your selected template uses.
 
-     ![credentials](./media/use-physical-buttons-with-flow-buttons/bttn-provide-credentials.png)
+     ![credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
 
      Provide valid credentials to connect to the Office 365 Outlook and the bttn services to use this template.
 
 1. Enter **bttn** into the search box, and then select the **bttn - When a bttn is pressed** trigger.
 
-     ![search](./media/use-physical-buttons-with-flow-buttons/bttn-trigger.png)
+     ![search](./media/bttn-button-flows/bttn-trigger.png)
 
 1. Select the **bttn ID** list, and then select the **bttn ID** you want to use from the **When a bttn is pressed** card.
 
-     ![](./media/use-physical-buttons-with-flow-buttons/bttn-id.png)
+     ![](./media/bttn-button-flows/bttn-id.png)
 
 1. Your flow should now resemble this screenshot.
 
-     ![](./media/use-physical-buttons-with-flow-buttons/bttn-done.png)
+     ![](./media/bttn-button-flows/bttn-done.png)
 
 1. Press the button on your bttn.
 

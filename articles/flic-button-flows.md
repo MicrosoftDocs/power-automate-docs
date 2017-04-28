@@ -1,6 +1,6 @@
 <properties
     pageTitle="Start button flows with physical buttons from Flic by Shortcut Labs.| Microsoft Flow"
-    description="Start button flows with physical buttons from Flic by Shortcut Labs."
+    description="Easily start button flows with physical buttons from Flic by Shortcut Labs."
     services=""
     suite="flow"
     documentationCenter="na"
