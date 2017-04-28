@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/15/2017"
+   ms.date="04/28/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -51,6 +51,23 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-04-27
+
+- **Build flows with parallel steps** - Create flows with parallel execution: meaning you can have two or more steps that run at the exact same time.
+- **Five new services supported** - Five new services: Approvals, Benchmark Email, Capsule CRM, LiveChat and Outlook Customer Manager.
+- **Monitor retries for actions** - Flow will retry when there are failures with services, now see how many automatic retries occurred, and the details of what happened.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/parallel-actions/) about this release.
+
+### Release 2017-04-17 - Q1 Update for Flow
+
+- **Modern approval experiences** - Create workflows where approvers can approve securely from inside the flow mobile app, or, the all-new unified approvals center on the Microsoft Flow website.
+- **Team flows general availability** - Multiple people to own and manage a flow together with team flows, which are now generally available.
+- **Build connectors for Flow** - It’s now possible for anyone to submit their own Microsoft Flow connector for free for the rest of the world to use.
+- **A "diet" designer** - For certain templates there is a new version of the designer presents just the fields that required to create a flow, which simplifies the experience. 
+
+[Read more and ask questions](https://flow.microsoft.com/blog/q1-2017-update/) about this release.
 
 ### Release 2017-04-11
 
