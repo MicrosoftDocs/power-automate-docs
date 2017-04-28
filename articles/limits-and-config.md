@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/19/2017"
+   ms.date="04/27/2017"
    ms.author="stepsic"/>
 
 # Limits and configuration in Microsoft Flow #
@@ -31,13 +31,13 @@ These are limits for a single outgoing request.
 
 |Name|Limit|
 |----|----|
-|Request Timeout|90 Seconds|
+|Request Timeout|120 Seconds|
 
 #### Message size
 
 |Name|Limit|Notes|
 |----|----|----|
-|Message size|50 MB|Not all APIs support the full 50MB. |
+|Message size|100 MB|Not all APIs support the full 50MB. |
 |Expression evaluation limit|131,072 characters|`@concat()`, `@base64()`, `string` can't exceed this limit.|
 
 #### Retry policy
@@ -52,8 +52,8 @@ These are the limits for a single flow run.
 
 |Name|Limit|Notes|
 |----|----|----|
-|Run duration|90 days||
-|Storage retention|90 days|This is from the run start time.|
+|Run duration|30 days|Includes workflows with pending steps like approvals. After 30 days the pending steps will Time Out.|
+|Storage retention|30 days|This is from the run start time.|
 |Min recurrence interval|1 minute||
 |Max recurrence interval|500 days||
 
@@ -67,7 +67,7 @@ These are limits for a single flow run.
 |ForEach items|5,000|You can use the filter action to filter larger arrays as needed.|
 |Until iterations|5,000||
 |SplitOn items|5,000||
-|ForEach Parallelism|20||
+|ForEach Parallelism|1||
 
 ### Definition limits
 
@@ -94,6 +94,7 @@ Calls made from a flow directly go through the Azure Logic App service. Some exa
 |-----|----|
 |Asia|168.63.200.173, 13.75.89.159, 23.97.68.172, 13.75.94.173, 40.83.127.19, 52.175.33.254, 52.163.93.214, 52.187.65.81, 52.187.65.155, 13.76.133.155, 52.163.228.93, 52.163.230.166|
 |Australia|13.75.153.66, 104.210.89.222, 104.210.89.244, 13.75.149.4, 104.210.91.55, 104.210.90.241, 13.73.115.153, 40.115.78.70, 40.115.78.237, 13.73.114.207, 13.77.3.139, 13.70.159.205|
+|Canada|52.233.29.92, 52.228.39.241, 52.228.39.244, 52.232.128.155, 52.229.120.45, 52.229.126.25|
 |Europe|13.79.173.49, 52.169.218.253, 52.169.220.174, 40.113.12.95, 52.178.165.215, 52.178.166.21, 13.95.155.53, 52.174.54.218, 52.174.49.6, 40.68.222.65, 40.68.209.23, 13.95.147.65|
 |India|52.172.157.194, 52.172.184.192, 52.172.191.194, 52.172.154.168, 52.172.186.159, 52.172.185.79, 52.172.9.47, 52.172.49.43, 52.172.51.140, 52.172.50.24, 52.172.55.231, 52.172.52.0|
 |Japan|13.71.146.140, 13.78.84.187, 13.78.62.130, 13.71.158.3, 13.73.4.207, 13.71.158.120, 40.74.140.173, 40.74.81.13, 40.74.85.215, 40.74.140.4, 104.214.137.243, 138.91.26.45|
