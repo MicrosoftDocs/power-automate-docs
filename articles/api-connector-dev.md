@@ -28,15 +28,15 @@ To build the triggers and actions for your connector, switch to the **Definition
 
 ![Definition Diagram](./media/api-connectors/definition.png)
 
-Using the wizard, you can add new operations or edit the schema and response for existing ones. The general properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
+Using the wizard, you can add new operations or edit the schema and response for existing ones. The **general** properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
 - [Triggers](https://ms.flow.microsoft.com/en-us/documentation/customapi-webhooks/)
 - [Actions](https://ms.flow.microsoft.com/en-us/documentation/register-custom-api/)
 
-To implement advanced functionality, refer to the [swagger extensions guide](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
+To implement advance functionality, refer to the [swagger extensions guide](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
 
 Finally, click on **Create API** to register the Custom API.
 
-For additional features not available in Custom API, please contact [support](#support).
+For additional features not available in Custom API, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
 
 ## Test
 

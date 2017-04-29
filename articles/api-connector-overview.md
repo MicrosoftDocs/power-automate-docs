@@ -2,10 +2,10 @@
 
 An **API connector** is a swagger based wrapper around a REST API that allows the underlying service to talk to [Microsoft Flow](https://ms.flow.microsoft.com/en-us/), [PowerApps](https://powerapps.microsoft.com/en-us/) and [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/). It provides a way for users to connect their accounts and leverage a set of pre-built **triggers** and **actions** to build their apps and workflows.
 
-**Independent software vendors (ISVs)** can build API connectors to enable a wide range of business and productivity scenarios for their users. Connectors support them to go beyond a definite set of integrations and increase the reach, discoverability and usage of their service.
+**Independent software vendors (ISVs)** can build API connectors to enable a wide range of business and productivity scenarios for their users. A connector helps them to go beyond a definite set of integrations and increase the reach, discoverability and usage of their service.
 
 #### Microsoft Flow
-Using Flow, users can automate tasks and build workflows in conjunction with other social and business applications. 
+Through Flow, users can automate tasks and build workflows in conjunction with other social and business applications. 
 
 
 ![Flow Diagram](./media/api-connectors/Flow.png)
@@ -29,12 +29,12 @@ PowerApps enables users to build **cloud connected** and **cross platform** busi
 
 ![Power Apps Diagram](./media/api-connectors/PowerApps.png)
 
-Using PowerApps, users can build simple apps for line of business scenarios, that read and write data to multiple cloud sources. Some examples of such apps include survey forms, timesheets, expense reporting, etc. Users can securely publish and share these apps to mobile or web for use within their organization.
+Through PowerApps, users can build simple apps for line of business scenarios, that read and write data to multiple cloud sources. Some examples of such apps include survey forms, timesheets, expense reporting, etc. Users can securely publish and share these apps to mobile or web for use within their organization.
 
 
 ## Requirements
 
-To build and submit an API connector, you must meet the following requirements:
+To build and submit an API connector, your service must meet the following requirements:
 - Business user or pro developer scenario that fits well with Flow, PowerApps and Logic Apps
 - Publicly available service with stable REST APIs
 
@@ -46,15 +46,15 @@ The general process to build a Custom API involves multipile steps.
 
 ![Custom API Authoring Steps](./media/api-connectors/authoring_steps.png)
 
-[Learn more](api-connector-dev.md) about how to build a Custom API.
+[Learn more](api-connector-dev.md) about how to develop a Custom API.
  
 ## Submit for Certification
 
 As part of our 3rd party certification process, Microsoft will review the Custom API before publishing as a Connector.
 
-This process validates the functionality of your Custom API (in Flow and PowerApps), and checks for technical and content compliance.
+This process validates the functionality of your Custom API in Flow and PowerApps, and checks for technical and content compliance.
 
-[Learn more](api-connector-submission.md) about the process to submit your connector and specific artifacts required.
+[Learn more](api-connector-submission.md) about the process to submit your connector for publishing.
 
 ## Support
 
