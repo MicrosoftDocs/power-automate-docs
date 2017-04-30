@@ -18,7 +18,7 @@
    ms.date="04/24/2017"
    ms.author="deonhe"/>
 
-# Run your flows by using physical buttons
+# Run your flows with buttons from Flic by Shortcut Labs
 
 It's easy to trigger Microsoft Flow buttons from the Microsoft Flow mobile app on [Android](https://aka.ms/flowmobiledocsandroid) and [iOS](https://aka.ms/flowmobiledocsios), or from [Microsoft Flow](https://flow.microsoft.com).
 
