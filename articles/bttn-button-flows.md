@@ -60,7 +60,7 @@ Now that you've registered and configured your bttn, let's get started creating 
 
      ![sign in](./media/bttn-button-flows/sign-into-flow.png)
 
-     Note: Alternatively, you can create your flow from the Microsoft Flow mobile app, which is available on Android, iOS and Windows Phone (Beta).
+     Note: Alternatively, you can create flows from the Microsoft Flow [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) mobile app.
 
 1. Enter **bttn** into the search box, and then select the search icon.
 
@@ -76,6 +76,8 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 1. Provide your credentials for the services that your selected template requires.
 
+   The **Use Bttn to call technical support for meeting room** template uses the bttn and the Office 365 Outlook services. The **Continue** button becomes enabled after you sign into both services.
+
      ![credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
 
 1. Be sure to authorize Microsoft Flow to access to bttn when you sign into the bttn service.
@@ -88,15 +90,17 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 1. Select the **bttn ID** box, and then select the bttn you want to use from the **When a bttn is pressed** card.
 
-     ![select bttn](./media/bttn-button-flows/select-bttn.png)
+     ![select bttn](./media/bttn-button-flows/bttn-id.png)
 
 1. Your flow should now resemble this screenshot.
 
-     ![](./media/bttn-button-flows/bttn-done.png)
+     ![overview of flow](./media/bttn-button-flows/bttn-done.png)
 
-1. Select **Create flow** to save your flow.
+1. Five your flow a name, and then select **Create flow** to save it.
 
-     ![](./media/bttn-button-flows/save.png)
+     ![save flow](./media/bttn-button-flows/save.png)
+
+## Test your flow
 
 1. Press the button on your bttn.
 
@@ -104,7 +108,8 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 ## More information
 
-- [Share button flows](./share-buttons.md)
-- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed
-- [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
-- [Install the Flow app for iOS](https://appsto.re/us/5M0qbb.i)
+- Use [Flic by Shortcut Labs](./flic-button-flows.md) to trigger flows.
+- [Share button flows](./share-buttons.md).
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed.
+- [Install the Flow app for Android](https://aka.ms/flowmobiledocsandroid)
+- [Install the Flow app for iOS](https://aka.ms/flowmobiledocsios)
