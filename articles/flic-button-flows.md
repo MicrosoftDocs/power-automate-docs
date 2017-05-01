@@ -15,16 +15,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/24/2017"
+   ms.date="04/30/2017"
    ms.author="deonhe"/>
 
 # Run your flows with buttons from Flic by Shortcut Labs
 
-It's easy to trigger Microsoft Flow buttons from the Microsoft Flow mobile app on [Android](https://aka.ms/flowmobiledocsandroid) and [iOS](https://aka.ms/flowmobiledocsios), or from [Microsoft Flow](https://flow.microsoft.com).
+Microsoft Flow has partnered with [Flic by Shortcut Labs](https://flic.io/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a flic to track your working hours, block your calendar, count visitors and guests at an event, or keep track of geographical locations.
 
-Taking this a step further, we've now added triggers that you can use to start your flows touching a physical button. For example, you can call your helpdesk, send an email to your team, block your calendar, or reorder supplies by pressing a physical button that starts a flow. Currently, Microsoft Flow partners with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn) and [Flic by Shortcut Labs](https://flic.io/) (flic), two of the leading physical button manufacturers. Visit their websites to learn more about their products, and then integrate your physical buttons with your button flows.
+>[AZURE.IMPORTANT]Configure all Flic properties by using Flic's mobile app for [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) before you create your flow.
 
-We discuss Flic buttons (Flics) in this document. See the [bttn topic](./bttn-button-flows.md) if you're interested in integrating your bttns with Microsoft Flow.
+Microsoft Flow also partners with [Bttn by The Button Corporation](./bttn-button-flows.md), another leading manufacturer that allows you to run your flows with a bttn.
 
 ## Prerequisites
 
@@ -34,19 +34,17 @@ To use Flics with Microsoft Flow, you must have:
 
 - Downloaded Flic's [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobile app, and used it to pair one or more Flics.
 
-## Configure Flic button properties
+## Configure Flic properties
 
-Configure all Flic properties by using Flic's mobile app for [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) before you create your flow.
-
-You can program Flic for clicks, double-clicks, and hold. This screenshot shows a sample of what your Flic configuration process might be like:
+You can program Flic for a single push, double-pushes, and hold (long press). This screenshot shows a sample of what your Flic configuration process might be like:
 
 ![configure Flics](./media/flic-button-flows/configure-flic-actions.png)
 
-Ater you've configured the properties for a Flic button, you can access your registered Flics when you sign into the Flic service through [Microsoft Flow](https://flow.microsoft.com).
+Ater you've configured the properties for a Flic, you can access your registered Flics by signing into the Flic service through [Microsoft Flow](https://flow.microsoft.com).
 
-## Create a flow that uses Flic buttons
+## Create a flow that's triggered by a Flic
 
-In this walkthrough, we use a Flic to track the amount of time a consultant spends at each client. The consultant pushes the button when she arrives, and then pushes it again, when she leaves a client. Each push of the button starts a run of the flow to which it's connected. The flow then saves the time information in Google Sheets, and then sends a push notification that contains details about the flow run.
+In this walkthrough, we use a Flic to run a flow that records the amount of time a consultant spends at each client. The consultant pushes the button when she arrives, and then pushes it again, when she leaves a client. Each push of the button starts a run of the flow to which it's connected. The flow saves the time information in Google Sheets, and then sends a push notification that contains details about the flow run.
 
 Now that you've paired and configured your Flic, let's get started creating our flow.
 
@@ -74,7 +72,7 @@ Now that you've paired and configured your Flic, let's get started creating our 
 
     ![ddfdf](./media/flic-button-flows/flic-google-sheet.png)
 
-### Add a trigger to your flow
+### Add the flic trigger to your flow
 
 1. Provide your credentials for the services that your selected template uses, and then select **Continue**.
 
@@ -112,9 +110,11 @@ Now that you've paired and configured your Flic, let's get started creating our 
 
      ![save your flow](./media/flic-button-flows/flick-insert-row-card.png)
 
-Run your flow, and then review the results in the Google Sheet and in your inbox.
+## Use the Flic to test your flow
 
-For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic button is pressed.
+****************Run your flow, and then review the results in the Google Sheet and in your inbox.**************************
+
+For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic is pressed.
 
 ## More information
 
