@@ -35,7 +35,7 @@ When you have a web service that you want to be able to automate with Microsoft 
 Follow [this tutorial](https://powerapps.microsoft.com/tutorials/register-custom-api/) to register a custom API. After you register it, you can share it inside of your organization so that others can help you test it.
 
 ## Share a custom API with all Microsoft Flow users ##
-After you fully test your custom API, start the review process by sending this information to flowdev@service.microsoft.com:
+After you fully test your custom API, start the review process as established in [this blog post](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/):
 
 - A Swagger file that represents your API and any authentication information
 - An icon for your connector
