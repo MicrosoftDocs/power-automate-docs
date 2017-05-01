@@ -4,8 +4,8 @@
     services=""
     suite="flow"
     documentationCenter="na"
-    authors="AFTOwen"
-    manager="erikre"
+    authors="MSFTMan"
+    manager="anneta"
     editor=""
     tags=""/>
 
@@ -16,13 +16,13 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="10/22/2016"
-   ms.author="anneta"/>
+   ms.author="deonhe"/>
 
 # Understand on-premises data gateways for Microsoft Flow ##
 
 ## Installation and configuration ##
 
-**Prerequisites**
+## Prerequisites ##
 
 Minimum:
 
@@ -40,7 +40,7 @@ Related considerations:
 - You can't install a gateway on a domain controller.
 - You shouldn't install a gateway on a computer, such a laptop, that may be turned off, asleep, or not connected to the Internet because the gateway can't run under any of those circumstances. In addition, gateway performance might suffer over a wireless network.
 
-**Install a gateway**
+## Install a gateway ##
 
 >[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
 
@@ -74,7 +74,7 @@ Related considerations:
 
         ![Recover an existing gateway](./media/gateway-reference/recover-existing.png)
 
-**Restart the gateway**
+## Restart the gateway ##
 
 The gateway runs as a Windows service and, as with any other Windows service, you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running, and then run either of these commands:
 
@@ -84,7 +84,7 @@ The gateway runs as a Windows service and, as with any other Windows service, yo
 - To start the service, run this command:<br>
 **net start PBIEgwService**
 
-**Configure a firewall or proxy**
+## Configure a firewall or proxy ##
 
 For information about how to provide proxy information for your gateway, see [Configure proxy settings](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/).
 
@@ -107,7 +107,7 @@ If you want to be exhaustive, substitute the **ComputerName** and **Port** value
 
 The firewall may also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that is the case, you'll want to whitelist (unblock) all of the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/download/details.aspx?id=41653).
 
-**Configure ports**
+## Configure ports ##
 
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354. The gateway doesn't require inbound ports.
 
@@ -126,20 +126,29 @@ Learn more about [hybrid solutions](https://azure.microsoft.com/documentation/ar
 
 If you need to white list IP addresses instead of the domains, you can download and use the [Microsoft Azure Datacenter IP ranges list](https://www.microsoft.com/download/details.aspx?id=41653). In some cases, the Azure Service Bus connections will be made with IP Address instead of the fully qualified domain names.
 
-**Sign-in account**
+## Sign-in account ##
 
 Users will sign in with either a work or school account. This is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email, it may look like nancy@contoso.onmicrosoft.com. Your account, within a cloud service, is stored within a tenant in Azure Active Directory (AAD). In most cases, your AAD account’s UPN will match the email address.
 
-**Windows Service account**
+## Windows Service account ##
 
 The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the Windows service logon credential. By default, it has the right of Log on as a service. This is in the context of the machine on which you're installing the gateway.
 
 This isn't the account used to connect to on-premises data sources or the work or school account with which you sign in to cloud services.
 
 ## Frequently asked questions ##
-#### General ####
-**Question:** What data sources does the gateway support?  
-**Answer:** As of this writing, SQL Server and SharePoint.
+
+### General ###
+
+**Question:** What data sources does the gateway support?
+**Answer:**
+
+- SQL Server
+- SharePoint
+- Oracle
+- Informix
+- Filesystem
+- DB2
 
 **Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?  
 **Answer:** No. A gateway connects to on-premises data sources only.
@@ -173,7 +182,8 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 **Question:** Where are my credentials stored?  
 **Answer:** The credentials that you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
 
-#### High availability/disaster recovery ####
+### High availability/disaster recovery ###
+
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  
 **Answer:** This is on the roadmap, but we don’t have a timeline yet.
 
@@ -183,7 +193,8 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 **Question:** What is the benefit of the recovery key?  
 **Answer:** It provides a way to migrate or recover your gateway settings after a disaster.
 
-#### Troubleshooting ####
+### Troubleshooting ###
+
 **Question:** Where are the gateway logs?  
 **Answer:** See [Tools](gateway-reference.md#tools) later in this topic.
 
@@ -219,6 +230,7 @@ A lot of issues can surface when the gateway version is out of date.  It is a g
 You may receive this error if you are trying to install the gateway on a domain controller, which isn't supported. You'll need to deploy the gateway on a machine that isn't a domain controller.
 
 ## Tools ##
+
 #### Collecting logs from the gateway configurator ####
 You can collect several logs for the gateway. Always start with the logs!
 
@@ -241,4 +253,5 @@ The **On-premises data gateway service** event logs are present under **Applicat
 ![Event logs](./media/gateway-reference/event-logs.png)
 
 #### Fiddler Trace ####
+
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.

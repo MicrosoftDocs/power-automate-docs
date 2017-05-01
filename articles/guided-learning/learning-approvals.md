@@ -4,7 +4,7 @@
    services=""
    suite="flow"
    documentationCenter="na"
-   authors="camsoper"
+   authors="msftman"
    manager="anneta"
    editor=""
    tags=""
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="11/22/2016"
-   ms.author="casoper"/>
+   ms.author="deonhe"/>
 
 
 # Approval requests
