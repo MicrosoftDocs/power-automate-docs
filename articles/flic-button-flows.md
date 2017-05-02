@@ -40,7 +40,7 @@ Use Flic's mobile app to program the Flic's events. The events are click (single
 
 ![configure Flics](./media/flic-button-flows/configure-flic-actions.png)
 
-After you've configured the properties for a Flic, you can select your Flics as triggers for your flows. You will see how to do this later in this document.
+After you've configured the properties for a Flic, you can select your Flics as triggers for your flows. You select triggers later in this document.
 
 ## Create a flow that's triggered by a Flic
 
@@ -78,7 +78,7 @@ Let's get started creating our flow.
 
    ![google sheet](./media/flic-button-flows/flic-google-sheet.png)
 
-   Note: You will use this Google Sheet later in this walkthrough.
+   Note: You use this Google Sheet later in this walkthrough.
 
 ### Add the Flic trigger to your flow
 
@@ -98,7 +98,7 @@ Let's get started creating our flow.
 
      ![select flic action](./media/flic-button-flows/select-flic.png)
 
-   Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow. **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long press on the Flic triggers the flow. You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **click** event to record the time you arrive at a client, and the **double-click** event to record the time you leave a client.
+   Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow. **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long squeeze on the Flic triggers the flow. You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to record the time you leave a client.
 
 ### Configure the Google Sheet settings
 
@@ -108,7 +108,7 @@ Let's get started creating our flow.
 
 1. Select the worksheet from the **Worksheet** list.
 
-   Note: Two boxes will appear on the **Insert row** card after you select the worksheet. These boxes represent each of the two columns in the Google Sheet you created earlier.
+   Note: Two boxes will appear on the **Insert row** card after you select the worksheet. These boxes represent the two columns in the Google Sheet you created earlier.
 
 1. Select the **ClickType** box, and then select the **Click type** token.
 
