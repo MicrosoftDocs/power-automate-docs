@@ -20,9 +20,9 @@
 
 # Run your flows with buttons from Bttn by The Button Corporation
 
-Microsoft Flow has partnered with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a bttn to call your helpdesk with relevant infomation about the location of a problem, send an email to your team, block your calendar, or reorder supplies.
+Microsoft Flow has partnered with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a bttn to call your helpdesk with location information, send an email to your team, block your calendar, or reorder supplies.
 
->[AZURE.IMPORTANT]You must [register](https://my.bt.tn/) your bttns before you can use them in flows.
+>[AZURE.IMPORTANT][Register](https://my.bt.tn/) your bttns before you can use them in flows.
 
 Microsoft Flow also partners with [Flic by Shortcut Labs](./flic-button-flows.md), another leading manufacturer that allows you to run your flows with a physical button.
 
@@ -108,8 +108,8 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 ## More information
 
-- Use [Flic by Shortcut Labs](./flic-button-flows.md) to trigger flows.
+- Use [Flics](./flic-button-flows.md) to trigger flows.
 - [Share button flows](./share-buttons.md).
-- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed.
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
 - [Install the Flow app for Android](https://aka.ms/flowmobiledocsandroid)
 - [Install the Flow app for iOS](https://aka.ms/flowmobiledocsios)
