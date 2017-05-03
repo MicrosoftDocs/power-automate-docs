@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Create a custom API using Azure Resource Manager | Microsoft Flow"
-	description="Learn how to create a custom API using Azure Resource Manager and add the API to Microsoft Flow"
+	pageTitle="Create a custom API for Azure Resource Manager | Microsoft Flow"
+	description="Learn how to create a custom API for Azure Resource Manager, then add the API to Microsoft Flow."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -14,13 +14,13 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
+   ms.date="05/03/2016"
    ms.author="deonhe"/>
 
 
-# Create a custom API using Azure Resource Manager in Microsoft Flow
+# Create a custom API for Azure Resource Manager in Microsoft Flow
 
-This tutorial demonstrates how to register a Swagger file describing an [Azure Resource Manager (ARM) API](https://msdn.microsoft.com/library/azure/dn790568.aspx) and then connect to it in Microsoft Flow.
+Azure Resource Manager (ARM) enables you to manage the components of a solution on Azure - components like databases, virtual machines, and web apps. This tutorial demonstrates how to enable authentication in Azure Active Directory, register one of the ARM APIs as a custom API, and then connect to it in Microsoft Flow. This would be useful if you want to manage Azure resources as part of a flow. For more information about ARM, see [Azure Resource Manager Overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
 ## Prerequisites
 
@@ -133,3 +133,5 @@ Now that the AAD application is configured, let's add the custom API.
 ## Next steps
 
 For more detailed information about how to create a flow, see [Start to build with Microsoft Flow](get-started-logic-flow.md).
+
+To ask questions or make comments about custom APIs, [join our community](https://aka.ms/flow-community).
