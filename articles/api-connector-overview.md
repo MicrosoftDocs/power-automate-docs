@@ -2,7 +2,7 @@
 
 An **API connector** is a swagger based wrapper around a REST API that allows the underlying service to talk to [Microsoft Flow](https://ms.flow.microsoft.com/en-us/), [PowerApps](https://powerapps.microsoft.com/en-us/) and [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/). It provides a way for users to connect their accounts and leverage a set of pre-built **triggers** and **actions** to build their apps and workflows.
 
-**Independent software vendors (ISVs)** can build API connectors to enable a wide range of business and productivity scenarios for their users. A connector helps them to go beyond a definite set of integrations and increase the reach, discoverability and usage of their service.
+**Independent software vendors (ISVs)** and **SaaS service owners** can build API connectors to enable a wide range of business and productivity scenarios for their users. A connector helps them to go beyond a definite set of integrations and increase the reach, discoverability and usage of their service.
 
 #### Microsoft Flow
 Through Flow, users can automate tasks and build workflows in conjunction with other social and business applications. 
@@ -38,7 +38,7 @@ To build and submit an API connector, your service must meet the following requi
 - Business user or pro developer scenario that fits well with Flow, PowerApps and Logic Apps
 - Publicly available service with stable REST APIs
 
-## Develop using Custom API
+## Build using Custom API Tools
 
 The first step to building a connector is to build a fully functional **Custom API**. A Custom API operates like a connector but it is limited in availability to its author and specific users within the author's tenant.
 
