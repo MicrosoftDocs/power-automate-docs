@@ -1,8 +1,8 @@
 <properties
-   pageTitle="PowerApps for enterprise developers | Microsoft PowerApps"
-   description="An introduction for enterprise developers to developing apps in PowerApps."
+   pageTitle="Microsoft Flow for enterprise developers | Microsoft Flow"
+   description="An introduction for enterprise developers to developing for Microsoft Flow."
    services=""
-   suite="powerapps"
+   suite="flow"
    documentationCenter="na"
    authors="mgblythe"
    manager="anneta"
@@ -10,7 +10,7 @@
    tags=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"
@@ -18,13 +18,13 @@
    ms.date="05/01/2016"
    ms.author="mblythe"/>
 
-# PowerApps for enterprise developers
+# Microsoft Flow for enterprise developers
 
-As an enterprise developer, empower your organization to build robust tailored solutions on PowerApps. Use custom APIs that connect to your data and web services; embed apps in your organization's websites; and work with data in the Common Data Service.
+As an enterprise developer, empower your organization to build robust tailored solutions on Microsoft Flow. Use custom APIs that connect to your data and web services; embed apps in your organization's websites; and work with data in the Common Data Service.
 
-## Build Custom APIs
+## Build Custom Connectors
 
-Develop custom APIs to connect to your organization's data and web services through PowerApps. [Learn more](register-custom-api.md)
+Develop custom connectors to connect to your organization's data and web services through Microsoft Flow. [Learn more](register-custom-api.md)
 
 
 ## Build Azure Functions
@@ -34,9 +34,4 @@ Craft Azure Functions to extend apps with custom server-side logic. [Learn more]
 
 ## Embed apps
 
-Embed apps directly into your website experiences to create integrated solutions, surfacing apps where people in your organization already do their work. [Learn more](dev-embed-apps.md)
-
-
-## Work with data using the Common Data Service SDK
-
-Use the CDS SDK with Azure Functions to extend your query and data manipulation capabilities in PowerApps. [Learn more](https://aka.ms/whgr2w)
+Embed Microsoft Flow directly into your website experiences to create integrated solutions, surfacing workflows or processes where people in your organization already do their work. [Learn more](embed-flow-dev.md)
