@@ -1,8 +1,8 @@
 <properties
-   pageTitle="PowerApps for ISVs and Microsoft partners | Microsoft PowerApps"
-   description="An introduction for ISVs and Microsoft partners to developing apps in PowerApps."
+   pageTitle="Microsoft Flow for ISVs and Microsoft partners | Microsoft Flow"
+   description="An introduction for ISVs and Microsoft partners to leveraging Microsoft Flow."
    services=""
-   suite="powerapps"
+   suite="flow"
    documentationCenter="na"
    authors="mgblythe"
    manager="anneta"
@@ -10,7 +10,7 @@
    tags=""/>
 
 <tags
-   ms.service="powerapps"
+   ms.service="flow"
    ms.devlang="na"
    ms.topic="article"
    ms.tgt_pltfrm="na"
@@ -18,22 +18,26 @@
    ms.date="05/01/2016"
    ms.author="mblythe"/>
 
-# PowerApps for ISVs and Microsoft partners
+# Microsoft Flow for ISVs and Microsoft partners
 
-As a Microsoft partner or ISV, you can accelerate customer adoption by extending your products to integrate with your customer's data and business processes. Work with data stored in the Common Data Service, and build connectors that enable your customers to connect to your products through the apps they build in PowerApps. Generate new leads for your business by building an app with PowerApps and publishing it to AppSource for new customers to test-drive.
-
-## Build apps on the Common Data Model using the Common Data Service SDK
-
-Build custom apps, or enhance your product with deeper data integration by connecting to your customer's data in the Common Data Service. [Learn more](https://aka.ms/eek20s)
+As a Microsoft partner or ISV, you can accelerate customer adoption by extending your products to integrate with your customer's data and business processes. Build connectors that enable your customers to connect to your products through Microsoft Flow. You can generate new leads for your business by building apps and publishing them to AppSource for new customers to test-drive.
 
 ## Build a connector
 
-Bring your product into the Microsoft cloud by building a connector that enables PowerApps to talk to your service. [Learn more](api-connector-overview.md)
+Bring your product into the Microsoft cloud by building a connector that enables Microsoft Flow to talk to your service. [Learn more](api-connector-overview.md)
+
+## Publish templates
+
+Once you have a connector, you should publish templates that demonstrate how to use your service. These templates will serve as examples that users can use to learn and then extend to their own unique workflows. [Learn more](publish-a-template.md)
+
+## Embed the flow experience in your website or app ##
+Next, you can embed Microsoft Flow from within your app to enable deep, in-context integration between your app and all the other services that Microsoft Flow supports. For example, you can:
+
+- Browse all of the templates that relate to your service and let users select a template
+- Manage the flows that users have related to your app
+
+Follow [this tutorial](embed-flow-dev.md) for more information about how to embed Microsoft Flow within an app.
 
 ## List your solution on AppSource
 
-Generate new leads for your business by building an app with PowerApps and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
-
-## Get started today for free
-
-Sign-up for the PowerApps commuity plan for free, and start building apps in a dedicated personal environment. [Learn more](dev-community-plan.md)
+Generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
