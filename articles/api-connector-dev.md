@@ -1,12 +1,12 @@
-# Develop using Custom API
+# Build a connector using Custom API Tools
 
-The general process to build a Custom API involves multipile steps.
+The general process to build the functionality of a connector involves multipile steps.
 
 In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click **Custom APIs**.
 
 ![Finding Custom APIs](./media/api-connectors/finding-custom-apis.png)
 
-## Define your API
+## Describe your API
 
 Custom APIs are described using [Swagger](https://swagger.io/), an open standard for defining the interface of an HTTP API. You can start building using an existing Swagger(JSON) file. Alternately, you can import a [Postman Collection](https://www.getpostman.com/docs/collections) which auto generates the Swagger for you. 
 
