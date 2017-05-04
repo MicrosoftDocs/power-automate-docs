@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Start your flows with a bttn| Microsoft Flow|Microsoft Flow"
+    pageTitle="Start your flows with a bttn|Microsoft Flow"
     description="Learn how to start your flows with a bttn"
     services=""
     suite="flow"
@@ -20,11 +20,11 @@
 
 # Run your flows with buttons from Bttn by The Button Corporation
 
-Microsoft Flow has partnered with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a bttn to call your helpdesk with location information, send an email to your team, block your calendar, or reorder supplies.
+Microsoft Flow has partnered with [Bttn by The Button Corporation](https://my.bt.tn/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a bttn (physical button made by Bttn by The Button Corporation. For example, you can press a bttn that triggers a flow that contacts your helpdesk with location information, sends an email to your team, blocks your calendar, or reorders supplies.
 
 >[AZURE.IMPORTANT][Register](https://my.bt.tn/) your bttns before you can use them in flows.
 
-Microsoft Flow also partners with [Flic by Shortcut Labs](./flic-button-flows.md), another leading manufacturer that allows you to run your flows with a physical button.
+Microsoft Flow also partners with [Flic by Shortcut Labs](./flic-button-flows.md), another leading manufacturer that allows you to trigger your flows with a physical button.
 
 ## Prerequisites
 
