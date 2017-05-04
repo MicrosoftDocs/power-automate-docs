@@ -24,8 +24,6 @@ Microsoft Flow has partnered with [Flic by Shortcut Labs](https://flic.io/) (btt
 
 >[AZURE.IMPORTANT]Configure all Flic properties by using Flic's mobile app for [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) before you create your flow.
 
-<!-- Microsoft Flow also partners with [Bttn by The Button Corporation](./bttn-button-flows.md), another leading manufacturer that allows you to run your flows with a bttn. -->
-
 ## Prerequisites
 
 To use Flics with Microsoft Flow, you must have:
@@ -147,8 +145,6 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
 For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic is pressed.
 
 ## More information
-
-<!-- - Use [bttns](./bttn-button-flows.md) to trigger flows. -->
 
 - [Share button flows](./share-buttons.md).
 - Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
