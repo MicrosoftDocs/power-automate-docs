@@ -15,12 +15,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/30/2017"
+   ms.date="05/05/2017"
    ms.author="deonhe"/>
 
-# Run your flows with buttons from Flic by Shortcut Labs
+# Run your flows by pressing a Flic smart button (Preview)
 
-Microsoft Flow has partnered with [Flic by Shortcut Labs](https://flic.io/) (bttn), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a flic to track your working hours, block your calendar, count visitors and guests at an event, or save geographical locations.
+Microsoft Flow has partnered with [Flic by Shortcut Labs](https://flic.io/), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a flic to track your working hours, block your calendar, count visitors and guests at an event, or save geographical locations.
 
 >[AZURE.IMPORTANT]Configure all Flic properties by using Flic's mobile app for [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) before you create your flow.
 
@@ -38,11 +38,11 @@ Use Flic's mobile app to program the Flic's events. The events are click (single
 
 ![configure Flics](./media/flic-button-flows/configure-flic-actions.png)
 
-After you've configured the properties for a Flic, you can select your Flics as triggers for your flows. You select triggers later in this document.
+After you've linked a Flic event to Microsoft Flow, you can then select that Flic as a trigger for your flows. You select triggers later in this document.
 
 ## Create a flow that's triggered by a Flic
 
-In this walkthrough, we use a Flic to run a flow that records the amount of time a consultant spends at each client. The consultant pushes the Flic once upon arrival, and then pushes it again, just before departure from a client. Each push starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification that contains details about the flow run.
+In this walkthrough, we use a Flic to run a flow that records the time a consultant spends at each client. The consultant pushes the Flic once upon arrival, and then pushes it again, just before departure from the client. Each push of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
 Note: Be sure you've used the Flic mobile app to pair, and configure at least one Flic's **click** action to trigger Microsoft Flow. In this screenshot, I've configured the **click** action to trigger Microsoft Flow. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
 
@@ -96,7 +96,11 @@ Let's get started creating our flow.
 
      ![select flic action](./media/flic-button-flows/select-flic.png)
 
-   Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow. **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long squeeze on the Flic triggers the flow. You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to record the time you leave a client.
+   Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow. 
+
+   **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long squeeze on the Flic triggers the flow.
+
+   You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to record the time you leave a client.
 
 ### Configure the Google Sheet settings
 
@@ -106,7 +110,7 @@ Let's get started creating our flow.
 
 1. Select the worksheet from the **Worksheet** list.
 
-   Note: Two boxes will appear on the **Insert row** card after you select the worksheet. These boxes represent the two columns in the Google Sheet you created earlier.
+   Note: Two additional boxes appear on the **Insert row** card after you select the worksheet. These boxes represent the two columns in the Google Sheet you created earlier.
 
 1. Select the **ClickType** box, and then select the **Click type** token.
 
@@ -122,7 +126,7 @@ Let's get started creating our flow.
 
 ### Save your flow and test it
 
-1. Give your flow a name, and then save your flow.
+1. Give your flow a name, and then save it.
 
      ![save your flow](./media/flic-button-flows/save.png)
 
@@ -134,11 +138,11 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
 
      ![see run results](./media/flic-button-flows/flic-google-sheet-after-run.png)
 
-1. You can also see the results of the run from the Microsoft Flow website or the Microsoft Flow mobile app. Here's a screenshot of my test run.
+1. You can also see the results of the run from the Microsoft Flow website or from the Microsoft Flow mobile app. Here's a screenshot of my test run.
 
      ![save your flow](./media/flic-button-flows/flic-test-run-results-portal.png)
 
-1. Here's what the body of the notification email looks like.
+1. Here's what the body of the notification email that I received from the run of the flow looks like.
 
      ![save your flow](./media/flic-button-flows/flic-email-body.png)
 
