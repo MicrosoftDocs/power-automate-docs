@@ -46,7 +46,7 @@ In this walkthrough, we use a Flic to run a flow that records the time a consult
 
 Note: Be sure you've used the Flic mobile app to pair, and configure at least one Flic's **click** action to trigger Microsoft Flow. In this screenshot, I've configured the **click** action to trigger Microsoft Flow. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
 
-     ![sign in](./media/flic-button-flows/flic-configured-for-flow.png)
+   ![flic config](./media/flic-button-flows/flic-configured-for-flow.png)
 
 Let's get started creating our flow.
 
