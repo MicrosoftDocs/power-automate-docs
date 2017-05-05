@@ -4,41 +4,13 @@ An **API connector** is a swagger based wrapper around a REST API that allows th
 
 **Independent software vendors (ISVs)** and **SaaS service owners** can build API connectors to enable a wide range of business and productivity scenarios for their users. A connector helps them to go beyond a definite set of integrations and increase the reach, discoverability and usage of their service.
 
-#### Microsoft Flow
-Through Flow, users can automate tasks and build workflows in conjunction with other social and business applications. 
-
-
-![Flow Diagram](./media/api-connectors/Flow.png)
-
-
-The possible workflows span across a wide variety of possibilities, for example:
-- Send email, text and push notifications 
-- Copy files between data sources
-- Automatically collect and organize business data
-- Streamline approvals and send instant alerts
-
-
-#### Logic Apps
-
-![Logic Apps Diagram](./media/api-connectors/Logic_Apps.png)
-
-Logic Apps is the workflow engine for Flow. It enables pro-developers to visually create or programmatically configure workflows in Azure. A connector in Logic Apps can enable users to automate EAI, Business to business (B2B) and Business to consumer (B2C) scenarios while reaping the benefits of source control, testing, support, and operations. 
-
-#### PowerApps
-PowerApps enables users to build **cloud connected** and **cross platform** business apps using clicks and minimal code. 
-
-![Power Apps Diagram](./media/api-connectors/PowerApps.png)
-
-Through PowerApps, users can build simple apps for line of business scenarios, that read and write data to multiple cloud sources. Some examples of such apps include survey forms, timesheets, expense reporting, etc. Users can securely publish and share these apps to mobile or web for use within their organization.
-
-
 ## Requirements
 
 To build and submit an API connector, your service must meet the following requirements:
 - Business user or pro developer scenario that fits well with Flow, PowerApps and Logic Apps
 - Publicly available service with stable REST APIs
 
-## Build a Custom Connector
+## Build your Connector
 
 The first step to building an API Connector is to build a fully functional **Custom Connector**. A custom connector operates exactly like an API connector but it is limited in availability to its author and specific users within the author's tenant.
 
