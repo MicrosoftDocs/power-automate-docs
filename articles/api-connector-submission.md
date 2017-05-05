@@ -1,7 +1,5 @@
 # Submit for Certification
 
-
-
 Nominations to build a connector are collected through the Microsoft Azure Certified program.
 
 [https://azure.microsoft.com/marketplace/programs/certified/apply/](https://azure.microsoft.com/marketplace/programs/certified/apply/)

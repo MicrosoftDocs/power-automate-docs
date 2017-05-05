@@ -38,23 +38,23 @@ To build and submit an API connector, your service must meet the following requi
 - Business user or pro developer scenario that fits well with Flow, PowerApps and Logic Apps
 - Publicly available service with stable REST APIs
 
-## Build using Custom API Tools
+## Build a Custom Connector
 
-The first step to building a connector is to build a fully functional **Custom API**. A Custom API operates like a connector but it is limited in availability to its author and specific users within the author's tenant.
+The first step to building an API Connector is to build a fully functional **Custom Connector**. A custom connector operates exactly like an API connector but it is limited in availability to its author and specific users within the author's tenant.
 
-The general process to build a Custom API involves multipile steps.
+The general process to build a connector involves multipile steps:
 
 ![Custom API Authoring Steps](./media/api-connectors/authoring_steps.png)
 
-[Learn more](api-connector-dev.md) about how to develop a Custom API.
+[Learn more](api-connector-dev.md) about how to develop a custom connector.
  
 ## Submit for Certification
 
-As part of our 3rd party certification process, Microsoft will review the Custom API before publishing as a Connector.
+As part of our 3rd party certification process, Microsoft will review the connector before publishing.
 
-This process validates the functionality of your Custom API in Flow and PowerApps, and checks for technical and content compliance.
+This process validates the functionality of your connector in Flow and PowerApps, and checks for technical and content compliance.
 
-[Learn more](api-connector-submission.md) about the process to submit your connector for publishing.
+[Learn more](api-connector-submission.md) about the process to submit your custom connector for publishing.
 
 ## Support
 

@@ -1,14 +1,14 @@
-# Build a connector using Custom API Tools
+# Building a Custom Connector
 
 The general process to build the functionality of a connector involves multipile steps.
 
-In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click **Custom APIs**.
+In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click on **Custom Connector**.
 
 ![Finding Custom APIs](./media/api-connectors/finding-custom-apis.png)
 
 ## Describe your API
 
-Custom APIs are described using [Swagger](https://swagger.io/), an open standard for defining the interface of an HTTP API. You can start building using an existing Swagger(JSON) file. Alternately, you can import a [Postman Collection](https://www.getpostman.com/docs/collections) which auto generates the Swagger for you. 
+Custom connectors are described using [Swagger](https://swagger.io/), an open standard for defining the interface of an HTTP API. You can start building using an existing Swagger(JSON) file. Alternately, you can import a [Postman Collection](https://www.getpostman.com/docs/collections) which auto generates the Swagger for you. 
 
 ![Define your API diagram](./media/api-connectors/build_your_api.png)
 
@@ -20,7 +20,7 @@ Pick the authentication type supported by your service and provide additional de
 
 ![Security Diagram](./media/api-connectors/security.png)
 
-[Learn more](https://ms.flow.microsoft.com/en-us/documentation/register-custom-api/) about the Security setup for your Custom API.
+[Learn more](https://ms.flow.microsoft.com/en-us/documentation/register-custom-api/) about the Security setup.
 
 ## Build Triggers and Actions
 
@@ -34,15 +34,15 @@ Using the wizard, you can add new operations or edit the schema and response for
 
 To implement advance functionality, refer to the [swagger extensions guide](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
 
-Finally, click on **Create API** to register the Custom API.
+Finally, click on **Create API** to register the custom connector.
 
-For additional features not available in Custom API, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
+For additional features not available in the wizard, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
 
 ## Test
 
-Prior to submission, test your custom API in multiple ways: 
+Prior to submission, test your custom connector in multiple ways: 
 
-- Using the custom API [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/) in Flow, you can call each operation associated with your connector to verify its functionality and the response schema.
+- Using the custom connector [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/) in Flow, you can call each operation to verify its functionality and the response schema.
 
-- In the Flow designer, you can visually build flows using your Custom API. This method of testing gives you visibility into the user interfacing functionality and features of your integration. 
+- In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interfacing functionality and features of your connector. 
 

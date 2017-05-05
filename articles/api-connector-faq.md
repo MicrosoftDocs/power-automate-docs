@@ -3,10 +3,10 @@
 #### Requirements
 
 ###### If I am not an ISV, can I still build a connector?
-To release a connector publicly, we require that you either own the underlying service or present explicit rights to use the APIs.
+To release a connector publicly, we require that you either own the underlying service or present explicit rights to use the API.
 
 ###### Can I build a connector without REST APIs ?
-No. In order to build a Custom API, you are required to support stable HTTP REST APIs for your service.
+No. In order to build a Custom API, you are required to support stable HTTP REST APIs.
 
 ###### What are the supported authentication types ?
 We support the following standards of authentication:
@@ -17,13 +17,13 @@ We support the following standards of authentication:
 #### Triggers
 
 ###### Can I build triggers without Webhooks ? 
-Custom APIs allow you to build Webhook based triggers only.
+Custom Connectors can only use Webhook based triggers.
 If you have a request for other forms of implementation, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com) along with more details about your API.
 
 #### Miscellaneous
 
 ###### My APIs use a dynamic host. How do I implement this in the swagger ?
-Custom API feature in Flow does not support dynamic hosts. Please use a static host for development and testing purposes. During submission, request your Microsoft contact for more details about the dynamic implementation.
+The Custom Connector feature in Flow does not support dynamic hosts. Please use a static host for development and testing purposes. During submission, request your Microsoft contact for more details about the dynamic implementation.
 
 ###### Do you support Postman Collection V2 ?
 No, Postman V2 is currently unsupported.
