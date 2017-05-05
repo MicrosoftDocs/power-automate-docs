@@ -6,8 +6,8 @@ Publish your connector to extend your service and reach new customers.
 
 | Capability | Details | Required or Recommended |
 |------------|---------|-------------------------|
-| Authentication Type | Your API must support OAuth2, API Key or Basic Auth as the method of authentication. | Required |
-| Software as a Service (SaaS) app for business |  Business user or pro developer scenario that fits well with Flow, Logic Apps and PowerApps | Required |
+| Authentication Type | Your API must support OAuth2, API Key or Basic Authentication. | Required |
+| Software as a Service (SaaS) app for business |  Business user or pro developer scenario that fits well with Flow, Logic Apps and PowerApps. | Required |
 | Availability / Uptime | Your app must have an uptime of at least 99.9% | Recommended |
 | Support | Your app must include a support link where customers can find help. | Required
 
@@ -16,9 +16,9 @@ Publish your connector to extend your service and reach new customers.
 Certify your connector for Flow, PowerApps and Logic Apps in three simple steps:
 
 1. **Nomination**
-    - [Submit a nomination]() to onboard your connector.
+    - [Submit a nomination]()
     - You will receive a mutual Non-Disclosure Agreement and Partner Agreement. The signed contracts are required in order to proceed.
-    - We'll check if your app meets the criteria. If approved, we'll notify you along with instructions for onboarding.
+    - We'll check if your app meets the criteria. Once approved, we'll notify you along with instructions for onboarding.
     
 2. **Review**
     
