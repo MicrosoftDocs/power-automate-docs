@@ -60,6 +60,8 @@ To show the top four templates about Wunderlist in German and to start the user 
 ## Embed the management of flows ##
 Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to the Microsoft Flow portal). You'll need to sign the user in to Microsoft Account or Azure Active Directory to use the authenticated SDK.
 
+   >[AZURE.NOTE] All users who use Microsoft Flow in your application will be Microsoft Flow users. There is no way to hide the Microsoft Flow branding.
+
 ### Include the JavaScript for the authenticated SDK ###
 Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product. The SDK isn't versioned yet, but that change is in our near-term backlog.
 

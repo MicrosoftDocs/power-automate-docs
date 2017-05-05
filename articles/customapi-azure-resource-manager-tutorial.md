@@ -1,6 +1,7 @@
 <properties
-	pageTitle="Create a custom API using Azure Resource Manager | Microsoft Flow"
-	description="Learn how to create a custom API using Azure Resource Manager and add the API to Microsoft Flow"
+
+	pageTitle="Create a custom connector for Azure Resource Manager | Microsoft Flow"
+	description="Learn how to create a custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -14,19 +15,18 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
+   ms.date="05/03/2016"
    ms.author="deonhe"/>
 
+# Create a custom connector for Azure Resource Manager in Microsoft Flow
 
-# Create a custom API using Azure Resource Manager in Microsoft Flow
-
-This tutorial demonstrates how to register a Swagger file describing an [Azure Resource Manager (ARM) API](https://msdn.microsoft.com/library/azure/dn790568.aspx) and then connect to it in Microsoft Flow.
+Azure Resource Manager (ARM) enables you to manage the components of a solution on Azure - components like databases, virtual machines, and web apps. This tutorial demonstrates how to enable authentication in Azure Active Directory, register one of the ARM APIs as a custom connector, and then connect to it in Microsoft Flow. This would be useful if you want to manage Azure resources as part of a flow. For more information about ARM, see [Azure Resource Manager Overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
 ## Prerequisites
 
 - An [Azure subscription](https://azure.microsoft.com/en-us/free/).
 - A [Microsoft Flow account](https://flow.microsoft.com).
-- The [sample Swagger file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json) used in this tutorial.
+- The [sample OpenAPI file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json) used in this tutorial.
 
 ## Enable authentication in Azure Active Directory
 
@@ -90,46 +90,48 @@ First, we need to create an Azure Active Directory (AAD) application that will p
 
 ## Add the connection in Microsoft Flow
 
-Now that the AAD application is configured, let's add the custom API.
+Now that the AAD application is configured, let's add the custom connector.
 
-1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom APIs**.
+1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **custom connectors**.
 
-	![Find custom APIs](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
+	![Find custom connectors](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
 
-2. Click **Create custom API**.  
+2. Click **Create custom connector**.  
 
 	You will be prompted for the properties of your API.  
 
 	| Property | Description |
 	|----------|-------------|
 	| Name | At the top of the page, click **Untitled** and give your flow a name. |
-	| Swagger file | Browse to the [sample ARM Swagger file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
+	| OpenAPI file | Browse to the [sample ARM OpenAPI file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
 	| Upload API icon | Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
-	| Description | Type a description of your custom API (optional). |
+	| Description | Type a description of your custom connector (optional). |
 
-	![Create custom API](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
+	![Create custom connector](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
 
 	Select **Continue**.
 
-3. On the next screen, because the Swagger file uses our AAD application for authentication, we need to give Flow some information about our application.  Under **Client id**, type the AAD **Application ID** you noted earlier.  For client secret, use the **key**.  And finally, for **Resource URL**, type `https://management.core.windows.net/`.
+3. On the next screen, because the OpenAPI file uses our AAD application for authentication, we need to give Flow some information about our application.  Under **Client id**, type the AAD **Application ID** you noted earlier.  For client secret, use the **key**.  And finally, for **Resource URL**, type `https://management.core.windows.net/`.
 
     >[AZURE.IMPORTANT] Be sure to include the Resource URL exactly as written above, including the trailing slash.
 
     ![OAuth settings](./media/customapi-azure-resource-manager-tutorial/oauth-settings.png)
 
-	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom API.
+	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom connector.
 	
-4. Your custom API is now displayed under **Custom APIs**.
+4. Your custom connector is now displayed under **custom connectors**.
 	
 	![Available APIs](./media/customapi-azure-resource-manager-tutorial/list-custom-apis.png)  
 
 
-5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete complete the sign-on screen.
+5. Now that the custom connector is registered, you must create a connection to the custom connector so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom connector and then complete complete the sign-on screen.
 
->[AZURE.NOTE] The sample Swagger does not define the full set of ARM operations and currently only contains the [List all subscriptions](https://msdn.microsoft.com/library/azure/dn790531.aspx) operation.  You can edit this Swagger or create another Swagger file using the [online Swagger editor](http://editor.swagger.io/).
+>[AZURE.NOTE] The sample OpenAPI does not define the full set of ARM operations and currently only contains the [List all subscriptions](https://msdn.microsoft.com/library/azure/dn790531.aspx) operation.  You can edit this OpenAPI or create another OpenAPI file using the [online OpenAPI editor](http://editor.swagger.io/).
 >
 >This process can be used to access any RESTful API authenticated using AAD.
 
 ## Next steps
 
 For more detailed information about how to create a flow, see [Start to build with Microsoft Flow](get-started-logic-flow.md).
+
+To ask questions or make comments about custom connectors, [join our community](https://aka.ms/flow-community).

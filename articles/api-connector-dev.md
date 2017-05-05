@@ -4,7 +4,8 @@ The general process to build the functionality of a connector involves multipile
 
 In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click on **Custom Connector**.
 
-![Finding Custom APIs](./media/api-connectors/finding-custom-apis.png)
+
+![Finding custom connectors](./media/api-connectors/finding-custom-apis.png)
 
 ## Describe your API
 
@@ -47,4 +48,3 @@ Prior to submission, test your custom connector in multiple ways:
 - In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interfacing functionality and features of your connector.
 
 - In the PowerApps studio, you can call each operation using the formula bar and bind the response to controls on your screen.
-

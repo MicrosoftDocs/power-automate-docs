@@ -19,7 +19,7 @@
    ms.author="sunayv"/>
 
 # Submit a flow template to the Microsoft Flow gallery #
-Create a template by creating a flow from scratch or modifying an existing flow template. Submit your flow template to the Microsoft Flow gallery so that other users can create their own flows from your template. You cannot publish a template that uses a Custom API.
+Create a template by creating a flow from scratch or modifying an existing flow template. Submit your flow template to the Microsoft Flow gallery so that other users can create their own flows from your template. You cannot publish a template that uses a custom connector.
 
 1. Create a flow or modify an existing flow template, and then select **Submit to gallery** on the confirmation page.
 

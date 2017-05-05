@@ -24,6 +24,7 @@ Certify your connector for Flow, PowerApps and Logic Apps in three simple steps:
     
     Submit the following information to your nomination contact for review:
     - Swagger 
+
 	- icon.png (~160px logo inside a 230px square, white on a colored background is preferred)
 	- Brand color in hex (matching the colored background in the icon file)
 	- A test account for validation
