@@ -9,7 +9,7 @@ Publish your connector to extend your service and reach new customers.
 | Authentication Type | Your API must support OAuth2, API Key or Basic Authentication. | Required |
 | Software as a Service (SaaS) app for business |  Business user or pro developer scenario that fits well with Flow, Logic Apps and PowerApps. | Required |
 | Availability / Uptime | Your app must have an uptime of at least 99.9% | Recommended |
-| Support | Your app must include a support link where customers can find help. | Required
+| Support | Your app must include a support link where customers can find help. | Required |
 
 ### Submitting your Connector
 
