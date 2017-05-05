@@ -81,9 +81,9 @@ The first AAD application is used to secure the Web API. Name it **webAPI**.  Fo
 - There is no need to delegate any permissions.
 - **Important!** Note the application ID.  You will need it later.
 
-### Second AAD application: Securing the Custom connector and delegated access
+### Second AAD application: Securing the custom connector and delegated access
 
-The second AAD application is used to secure the Custom connector registration and acquire delegated access to the Web API protected by the first application. Name this one **webAPI-customAPI** .
+The second AAD application is used to secure the custom connector registration and acquire delegated access to the Web API protected by the first application. Name this one **webAPI-customAPI** .
 
 - Sign-on URL: `https://login.windows.net`
 - Reply URL: `https://msmanaged-na.consent.azure-apim.net/redirect`
@@ -100,7 +100,7 @@ The second AAD application is used to secure the Custom connector registration a
 
 You should now be able to use AAD to authenticate your web application.
 
-## Add the Custom connector to Microsoft Flow
+## Add the custom connector to Microsoft Flow
 
 1. Modify your Swagger to add the `securityDefintions` object and AAD authentication used for the Web App. The section of your Swagger with the **host** property should look like this:
 
@@ -127,14 +127,14 @@ You should now be able to use AAD to authenticate your web application.
 
 3. Once you have uploaded your Swagger, the wizard auto-detects that you are using AAD authentication for your Web API.
 
-4. Configure the AAD authentication for the Custom connector.  
+4. Configure the AAD authentication for the custom connector.  
 
   - **Client ID**: *Client ID of webAPI-CustomAPI*
   - **Secret**: *Client key of webAPI-CustomAPI*
   - **Login URL**: `https://login.windows.net`
   - **ResourceUri**: *Client ID of webAPI*
 
-5. Click **Create** and creating a connection to the Custom connector.
+5. Click **Create** and creating a connection to the custom connector.
 
 ## Next Steps
 

@@ -1,7 +1,7 @@
 <properties
 
 	pageTitle="Create a custom connector for Azure Resource Manager | Microsoft Flow"
-	description="Learn how to create a Custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
+	description="Learn how to create a custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -90,13 +90,13 @@ First, we need to create an Azure Active Directory (AAD) application that will p
 
 ## Add the connection in Microsoft Flow
 
-Now that the AAD application is configured, let's add the Custom connector.
+Now that the AAD application is configured, let's add the custom connector.
 
-1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom connectors**.
+1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **custom connectors**.
 
-	![Find Custom connectors](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
+	![Find custom connectors](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
 
-2. Click **Create Custom connector**.  
+2. Click **Create custom connector**.  
 
 	You will be prompted for the properties of your API.  
 
@@ -105,9 +105,9 @@ Now that the AAD application is configured, let's add the Custom connector.
 	| Name | At the top of the page, click **Untitled** and give your flow a name. |
 	| Swagger file | Browse to the [sample ARM Swagger file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
 	| Upload API icon | Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
-	| Description | Type a description of your Custom connector (optional). |
+	| Description | Type a description of your custom connector (optional). |
 
-	![Create Custom connector](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
+	![Create custom connector](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
 
 	Select **Continue**.
 
@@ -117,14 +117,14 @@ Now that the AAD application is configured, let's add the Custom connector.
 
     ![OAuth settings](./media/customapi-azure-resource-manager-tutorial/oauth-settings.png)
 
-	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the Custom connector.
+	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom connector.
 	
-4. Your Custom connector is now displayed under **Custom connectors**.
+4. Your custom connector is now displayed under **custom connectors**.
 	
 	![Available APIs](./media/customapi-azure-resource-manager-tutorial/list-custom-apis.png)  
 
 
-5. Now that the Custom connector is registered, you must create a connection to the Custom connector so it can be used in your apps and flows.  Click the **+** to the right of the name of your Custom connector and then complete complete the sign-on screen.
+5. Now that the custom connector is registered, you must create a connection to the custom connector so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom connector and then complete complete the sign-on screen.
 
 >[AZURE.NOTE] The sample Swagger does not define the full set of ARM operations and currently only contains the [List all subscriptions](https://msdn.microsoft.com/library/azure/dn790531.aspx) operation.  You can edit this Swagger or create another Swagger file using the [online Swagger editor](http://editor.swagger.io/).
 >

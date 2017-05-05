@@ -100,7 +100,7 @@
 
 ### Release 2017-03-10
 
-- **Improved Custom connector experience** - You can now use a Postman collection to create a Custom connector, and edit, add, and test actions.
+- **Improved custom connector experience** - You can now use a Postman collection to create a custom connector, and edit, add, and test actions.
 - **Two new services** - Added PowerApps Notifications and PivotalTracker support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
@@ -132,7 +132,7 @@
 ### Release 2017-02-06
 
 - **Team flows** - Team flows make it possible for multiple people to own and manage a flow together, and, if someone leaves an organization, the flows they created can continue to run.
-- **Sharing Custom connectors** - Custom connectors, like team flows, can be shared and collectively managed inside an organization.
+- **Sharing custom connectors** - custom connectors, like team flows, can be shared and collectively managed inside an organization.
 - **Gmail and LUIS support** - Connect to Gmail and Azure Cognitive Services' Language Understanding Intelligent Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/team-flows/) about this release.
@@ -337,7 +337,7 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 ### Release 2016-05-27 ###
 
 - **Browse templates by service** - There is a now a way to see all of the services that we support (without having to log in). From this page you can see a description of each of the services, and check out the templates that we have for that service.
-- **Create and use your Custom connectors** - Just like you can create Custom connectors in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
+- **Create and use your custom connectors** - Just like you can create custom connectors in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
 - **Test your flows before finishing** - Whenever you save a flow you can now see the results of the flow run live in the page, if you perform the starting action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) about this release.

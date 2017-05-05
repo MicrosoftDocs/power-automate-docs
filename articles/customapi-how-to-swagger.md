@@ -204,7 +204,7 @@ Sample code for dynamic response:
 
 ## Next steps
 
-[Register a Custom connector](register-custom-api.md).
+[Register a custom connector](register-custom-api.md).
 
 [Use an ASP.NET Web API](customapi-web-api-tutorial.md).
 

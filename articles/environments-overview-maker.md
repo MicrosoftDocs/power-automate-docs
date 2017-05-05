@@ -72,7 +72,7 @@ Before you create a flow, always make sure you select the environment you want t
 Consider the following factors when choosing which environment to create your flows in:
 
 - Gateways are created in the Default environment. Gateways cannot be created in other environments, so if you want to connect to On-premises data you'll need to use the Default environment.
-- Flows can only use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a Custom connector. This Custom connector must be in the same environment as the flow.
+- Flows can only use connections, and other resources within the same environment. They cannot use resources in other environment. For example, you are creating a flow that uses a custom connector. This custom connector must be in the same environment as the flow.
 - The Microsoft Common Data Service database is always tied to exactly one environment. That means if you ever want to work with the Common Data Service data you must select the same environment that the database is in.
 - You will see all environments that you can edit resources in. This does not mean you can create new resources in all environments, however. Thus, in some environments you may be unable to create new flows. You need to ask the administrator to add you as a **Maker** to that environment, or, pick a different environment to create the flow in (you will always be able to create flows in the default environment).
 
