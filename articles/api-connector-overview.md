@@ -42,7 +42,7 @@ To build and submit an API connector, your service must meet the following requi
 
 The first step to building an API Connector is to build a fully functional **Custom Connector**. A custom connector operates exactly like an API connector but it is limited in availability to its author and specific users within the author's tenant.
 
-The general process to build a connector involves multipile steps:
+The general process to build a connector involves multiple steps:
 
 ![Custom API Authoring Steps](./media/api-connectors/authoring_steps.png)
 
