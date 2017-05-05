@@ -37,7 +37,7 @@ Follow [this tutorial](https://powerapps.microsoft.com/tutorials/register-custom
 ## Share a custom connector with all Microsoft Flow users ##
 After you fully test your custom connector, start the review process as established in [this blog post](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/):
 
-- A Swagger file that represents your API and any authentication information
+- An OpenAPI file that represents your API and any authentication information
 - An icon for your connector
 - A description of your API
 - Approximately 10 ideas for how your API could benefit other users through templates

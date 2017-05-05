@@ -30,11 +30,11 @@ To complete the tutorial, you will need:
  - Basic understanding of [webhooks](http://www.webhooks.org/).
  - Basic understanding of the [OpenAPI Specification](http://swagger.io/specification/) (Swagger).
  - A [GitHub](https://www.github.com) account.
- - The [sample Swagger JSON file](http://pwrappssamples.blob.core.windows.net/samples/githubWebhookSample.json) for this tutorial.
+ - The [sample OpenAPI JSON file](http://pwrappssamples.blob.core.windows.net/samples/githubWebhookSample.json) for this tutorial.
 
-## The Swagger file
+## The OpenAPI file
 
-Webhooks are implemented in Microsoft Flow as a type of [custom connector](./customapi-web-api-tutorial.md), so we'll need to provide a Swagger JSON file to define the shape of our webhook.  The Swagger contains three definitions critical to making the webhook work:
+Webhooks are implemented in Microsoft Flow as a type of [custom connector](./customapi-web-api-tutorial.md), so we'll need to provide an OpenAPI JSON file to define the shape of our webhook.  The OpenAPI contains three definitions critical to making the webhook work:
 
 1. Creating the webhook
 2. Defining the incoming hook request from the API (in this case, GitHub)
@@ -42,7 +42,7 @@ Webhooks are implemented in Microsoft Flow as a type of [custom connector](./cus
 
 ### Creating the webhook
 
-The webhook is created on the GitHub side by an HTTP POST to `/repos/{owner}/{repo}/hooks`.  Flow will need to post to this URL when a new flow is created using the trigger defined in the Swagger, or whenever the trigger is modified.  In the sample below, the `post` property contains the schema of the request that will be posted to GitHub.
+The webhook is created on the GitHub side by an HTTP POST to `/repos/{owner}/{repo}/hooks`.  Flow will need to post to this URL when a new flow is created using the trigger defined in the OpenAPI, or whenever the trigger is modified.  In the sample below, the `post` property contains the schema of the request that will be posted to GitHub.
 
 ```json
 "/repos/{owner}/{repo}/hooks": {
@@ -101,7 +101,7 @@ The shape of the incoming hook request (the notification from GitHub to Flow) is
 
 ### Deleting the webhook
 
-It's very important to include a definition in the Swagger that tells Flow how to delete the webhook.  Flow will try to delete the webhook every time you update the trigger in your flow, or when you delete your flow.
+It's very important to include a definition in the OpenAPI that tells Flow how to delete the webhook.  Flow will try to delete the webhook every time you update the trigger in your flow, or when you delete your flow.
 
 ```json
 "/repos/{owner}/{repo}/hooks/{hook_Id}": {
@@ -181,13 +181,13 @@ Now we've got everything we need to add the webhook to Flow as a custom connecto
 
 3. Click the **Create custom connector** button.
 
-4. Click the file folder icon in the **Import Swagger** box and then select the sample Swagger file.
+4. Click the file folder icon in the **Import OpenAPI** box and then select the sample OpenAPI file.
 
 5. Click **Upload icon** in the **General information** section and then select an image file to use as an icon.
 
 6. Click **Continue**.
 
-    ![Import Swagger](./media/customapi-webhooks/import-swagger.png)
+    ![Import OpenAPI](./media/customapi-webhooks/import-swagger.png)
     
 7. On the next screen, we'll configure security settings.  Under **Authentication type**, select **Basic authentication**.
 
@@ -221,7 +221,7 @@ Now that we've got everything configured, we can use the webhook in a flow.  Let
 
     Click **Create**.
 
-5. Now we need to give Flow information about the repo we want to monitor.  You might recognize the fields from the **WebhookRequestBody** object in the Swagger file.  For **owner** and **repo**, enter the owner and repo name of a GitHub repo you want to monitor.
+5. Now we need to give Flow information about the repo we want to monitor.  You might recognize the fields from the **WebhookRequestBody** object in the OpenAPI file.  For **owner** and **repo**, enter the owner and repo name of a GitHub repo you want to monitor.
 
     ![Repo info](./media/customapi-webhooks/repo-info.png)
 
@@ -233,7 +233,7 @@ Now that we've got everything configured, we can use the webhook in a flow.  Let
 
     ![Push notification](./media/customapi-webhooks/push-notification.png)
 
-8. Enter some text in the the **Text** field.  Note that the **WebhookPushResponse** object in the Swagger file defines the list of parameters you can use.
+8. Enter some text in the the **Text** field.  Note that the **WebhookPushResponse** object in the OpenAPI file defines the list of parameters you can use.
     
     ![Push notification details](./media/customapi-webhooks/push-details.png)
 

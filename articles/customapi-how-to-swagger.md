@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Customize your Swagger definition for Microsoft Flow | Microsoft Flow"
-	description="View the schema extensions required by Swagger to work with Microsoft Flow"
+	pageTitle="Customize your OpenAPI definition for Microsoft Flow | Microsoft Flow"
+	description="View the schema extensions required by OpenAPI to work with Microsoft Flow"
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -17,11 +17,11 @@
    ms.date="04/11/2017"
    ms.author="deonhe"/>
 
-# Customize your Swagger definition for Microsoft Flow
+# Customize your OpenAPI definition for Microsoft Flow
 
 ## Introduction
 
-To use custom connectors in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a custom API for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
+To use custom connectors in Microsoft Flow, you must provide a OpenAPI definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box OpenAPI specification, there are some extensions available when creating a custom connector for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
 
 ## summary 
 Title of the operation. Example - 'When a task is created" or "Create new lead'. 
@@ -110,7 +110,7 @@ Example:
   }
 ```
 
-Sample code from Swagger: 
+Sample code from OpenAPI: 
 
 ```json
 "/api/lists/{listID-dynamic}": {
