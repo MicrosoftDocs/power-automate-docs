@@ -77,7 +77,7 @@ Templates are pre-built flows for popular and common scenarios. Using a template
 You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and the Common Data Service for PowerApps.
 
 ### How do I connect to a REST API in my flow?
-You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom API](get-started-flow-dev.md).
+You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](get-started-flow-dev.md).
 
 ### How do I connect to SQL Server and other on-premises data sources?
 You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md).

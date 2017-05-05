@@ -70,7 +70,7 @@ You can work around this issue by putting all the filtering you need into the tr
 ## Other limits and caveats
 - Each account may have as many as:
 	- 50 flows
-	- 15 custom APIs
+	- 15 Custom Connectors
 	- 20 connections per API and 100 connections total.
 - You can install a gateway only in the default environment.   
 - Certain external connectors, such as Twitter, implement connection throttling to control quality of service. When throttling is in effect, your flows will fail. You can review details of this throttling by viewing the run that failed in the flow's run history.

@@ -100,7 +100,7 @@
 
 ### Release 2017-03-10
 
-- **Improved custom API experience** - You can now use a Postman collection to create a custom API, and edit, add, and test actions.
+- **Improved custom connector experience** - You can now use a Postman collection to create a custom connector, and edit, add, and test actions.
 - **Two new services** - Added PowerApps Notifications and PivotalTracker support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
@@ -132,7 +132,7 @@
 ### Release 2017-02-06
 
 - **Team flows** - Team flows make it possible for multiple people to own and manage a flow together, and, if someone leaves an organization, the flows they created can continue to run.
-- **Sharing custom APIs** - Custom APIs, like team flows, can be shared and collectively managed inside an organization.
+- **Sharing custom connectors** - custom connectors, like team flows, can be shared and collectively managed inside an organization.
 - **Gmail and LUIS support** - Connect to Gmail and Azure Cognitive Services' Language Understanding Intelligent Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/team-flows/) about this release.
@@ -225,7 +225,7 @@ You can now leverage valuable information when triggering a button flow, such as
 
 ### Release 2016-10-16 ###
 
-- **Custom APIs support more authentication types** - Custom APIs now support API Key authentication and can authenticate against any service that supports the full OAuth 2.0 specification.
+- **Custom connectors support more authentication types** - Custom connectors now support API Key authentication and can authenticate against any service that supports the full OAuth 2.0 specification.
 - **Three new services supported** -  We've added support for Basecamp 3, Blogger and PagerDuty.
 - **Designer improvements** - Improved performance, you can now update and repair your connections right from the "..." menu for every action, and we have added a new step called Terminate that you can use to end a flow's run.
 
@@ -337,7 +337,7 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 ### Release 2016-05-27 ###
 
 - **Browse templates by service** - There is a now a way to see all of the services that we support (without having to log in). From this page you can see a description of each of the services, and check out the templates that we have for that service.
-- **Create and use your custom APIs** - Just like you can create custom APIs in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
+- **Create and use your custom connectors** - Just like you can create custom connectors in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
 - **Test your flows before finishing** - Whenever you save a flow you can now see the results of the flow run live in the page, if you perform the starting action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) about this release.
