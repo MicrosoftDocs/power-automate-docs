@@ -21,7 +21,7 @@
 
 ## Introduction
 
-To use Custom connectors in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a Custom connector for Microsoft Flow.
+To use custom connectors in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a custom API for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
 
 ## summary 
 Title of the operation. Example - 'When a task is created" or "Create new lead'. 
@@ -71,8 +71,8 @@ Applies to:
 
 ![visibility-annotation](./media/customapi-how-to-swagger/figure_4.jpg)
 
-## x-ms-dynamicvalues
-Enables populating a dropdown for collecting input parameters to an operation
+## x-ms-dynamic-values
+Enables populating a dropdown for collecting input parameters to an operation.
 
 Applies to:
 
@@ -83,7 +83,7 @@ Applies to:
 #### Usage:
 Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
->[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
+>[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
 
 #### Properties:
 
@@ -110,7 +110,7 @@ Example:
   }
 ```
 
-Sample code from swagger: 
+Sample code from Swagger: 
 
 ```json
 "/api/lists/{listID-dynamic}": {
@@ -144,16 +144,18 @@ Applies to:
 * Response
 
 
-Notice how input form changes based on the dropdown selection
+Notice how the input form changes based on the dropdown selection
+
 ![dynamic-schema-request](./media/customapi-how-to-swagger/figure_6.png)
 
 Notice how the outputs change based on the dropdown selection
+
 ![dynamic-schema-response](./media/customapi-how-to-swagger/figure_7.png)
 
 #### Usage:
-Annotate a request parameter or a response body with x-ms-dynamic-schema object.
+Annotate a request parameter or a response body with the x-ms-dynamic-schema object.
 
->[AZURE.NOTE] See sample [swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
+>[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
 
 #### Properties:
 
