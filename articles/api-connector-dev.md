@@ -12,7 +12,7 @@ Custom connectors are described using [Swagger](https://swagger.io/), an open st
 
 ![Define your API diagram](./media/api-connectors/build_your_api.png)
 
-If you start from either of these data sources, the meta data fields in the wizard will be auto-populated for you. You can edit these at any time.  
+If you start from either of these data sources, the meta data fields in the wizard will be auto-populated. You can edit these at any time.  
 
 ## Security
 
@@ -46,5 +46,5 @@ Prior to submission, test your custom connector in multiple ways:
 
 - In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interfacing functionality and features of your connector.
 
-- In the PowerApps studio, you can call each operation using the formula bar and bind the response to screen controls.
+- In the PowerApps studio, you can call each operation using the formula bar and bind the response to controls on your screen.
 

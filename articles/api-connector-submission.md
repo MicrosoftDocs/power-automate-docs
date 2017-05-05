@@ -1,14 +1,14 @@
 # Submit for Certification
 
-As part of our 3rd party certification process, Microsoft will review the connector before publishing. By getting your connector certified, it becomes available to all users of Flow, PowerApps and Logic Apps. Enlisted are the steps for certification.
+As part of our 3rd party certification process, we will review your connector before publishing. By certifying as an API Connector, it becomes available to all users of Flow, PowerApps and Logic Apps. Enlisted are the steps for certification.
 
 ### Criteria
 
 | Capability | Details | Required or Recommended |
 |------------|---------|-------------------------|
-| Software as a Service (SaaS) app for business |  Business user scenario that fits well with Flow, Logic Apps and PowerApps. | Required |
-| Authentication Type | Your API must support OAuth2, API key or Basic authentication. | Required |
-| Support | Your must provide a support contact where customers can find help. | Required |
+| Software as a Service (SaaS) app for business |  Business user scenario that fits well with Flow, Logic Apps and PowerApps | Required |
+| Authentication Type | Your API must support OAuth2, API key or Basic authentication | Required |
+| Support | You must provide a support contact where customers can find help | Required |
 | Availability / Uptime | Your app must have an uptime of at least 99.9% | Recommended |
 
 ### Submitting your Connector

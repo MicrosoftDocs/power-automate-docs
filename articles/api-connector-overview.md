@@ -7,7 +7,7 @@ An **API connector** is a swagger based wrapper around a REST API that allows th
 ## Requirements
 
 To build and submit an API connector, your service must meet the following requirements:
-- Business user or pro developer scenario that fits well with Flow, PowerApps and Logic Apps
+- Business user scenario that fits well with Flow, PowerApps and Logic Apps
 - Publicly available service with stable REST APIs
 
 ## Build your Connector
@@ -26,7 +26,7 @@ As part of our 3rd party certification process, Microsoft will review the connec
 
 This process validates the functionality of your connector in Flow and PowerApps, and checks for technical and content compliance.
 
-[Learn more](api-connector-submission.md) about the process to submit your custom connector for publishing.
+[Learn more](api-connector-submission.md) about the process to submit your custom connector for certification and publishing.
 
 ## Support
 
