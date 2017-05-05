@@ -36,7 +36,7 @@ Environments are new feature in Microsoft Flow, and include the following benefi
 
 	> [!NOTE] Data loss prevention is available with some license skus, including the P2 license. 
 
-- **Isolation boundary for all resources**: Any flows, gateways, connections, custom APIs, and so on reside in that specific environment. They do not exist in any other environments. 
+- **Isolation boundary for all resources**: Any flows, gateways, connections, Custom connectors, and so on reside in that specific environment. They do not exist in any other environments. 
 
 - **Common Data Service**: You want to create a flow that inserts data somewhere. Your options are:
 
@@ -48,7 +48,7 @@ Environments are new feature in Microsoft Flow, and include the following benefi
 
 ## Limitations
 
-Although, environments provide many benefits, they also introduce new limitations. The fact that environments are an isolation boundary means that you can never have resources that reference other resources *across* environments. For example, it's impossible to create a Custom API in one environment and create a flow that uses both that Custom API and a gateway in a different environment.
+Although, environments provide many benefits, they also introduce new limitations. The fact that environments are an isolation boundary means that you can never have resources that reference other resources *across* environments. For example, it's impossible to create a Custom connector in one environment and create a flow that uses both that Custom connector and a gateway in a different environment.
 
 Thus, it is important that environments are only created when necessary. Creating too many environments will make it very difficult for users across your organization to share resources.
 

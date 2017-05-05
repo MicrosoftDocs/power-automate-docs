@@ -21,7 +21,7 @@
 
 ## Introduction
 
-To use custom APIs in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a custom API for Microsoft Flow.
+To use Custom connectors in Microsoft Flow, you must provide a Swagger definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box Swagger specification, there are some extensions available when creating a Custom connector for Microsoft Flow.
 
 ## summary 
 Title of the operation. Example - 'When a task is created" or "Create new lead'. 
@@ -202,7 +202,7 @@ Sample code for dynamic response:
 
 ## Next steps
 
-[Register a custom API](register-custom-api.md).
+[Register a Custom connector](register-custom-api.md).
 
 [Use an ASP.NET Web API](customapi-web-api-tutorial.md).
 

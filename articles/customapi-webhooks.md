@@ -34,7 +34,7 @@ To complete the tutorial, you will need:
 
 ## The Swagger file
 
-Webhooks are implemented in Microsoft Flow as a type of [custom API](./customapi-web-api-tutorial.md), so we'll need to provide a Swagger JSON file to define the shape of our webhook.  The Swagger contains three definitions critical to making the webhook work:
+Webhooks are implemented in Microsoft Flow as a type of [Custom connector](./customapi-web-api-tutorial.md), so we'll need to provide a Swagger JSON file to define the shape of our webhook.  The Swagger contains three definitions critical to making the webhook work:
 
 1. Creating the webhook
 2. Defining the incoming hook request from the API (in this case, GitHub)
@@ -171,15 +171,15 @@ The API sending the webhook request to Flow will usually have some form of authe
 
 ## Adding the webhook to Flow
 
-Now we've got everything we need to add the webhook to Flow as a custom API.
+Now we've got everything we need to add the webhook to Flow as a Custom connector.
 
 1. Navigate to the [Microsoft Flow web portal](https://flow.microsoft.com) and sign in if you haven't already.
 
-2. Click the **settings** icon, and then click **Custom APIs**.
+2. Click the **settings** icon, and then click **Custom connectors**.
 
-    ![Custom APIs](./media/customapi-webhooks/custom-apis.png)
+    ![Custom connectors](./media/customapi-webhooks/custom-apis.png)
 
-3. Click the **Create custom API** button.
+3. Click the **Create Custom connector** button.
 
 4. Click the file folder icon in the **Import Swagger** box and then select the sample Swagger file.
 
@@ -199,7 +199,7 @@ Now we've got everything we need to add the webhook to Flow as a custom API.
 
     ![Create API](./media/customapi-webhooks/create-api.png)
 
-The new custom API should now appear in the list on the Custom APIs page.
+The new Custom connector should now appear in the list on the Custom connectors page.
 
 ## Using the webhook as a trigger
 
@@ -209,13 +209,13 @@ Now that we've got everything configured, we can use the webhook in a flow.  Let
 
 2. Click **Create from blank**.
 
-3. In the flow designer, search for the custom API we registered earlier.
+3. In the flow designer, search for the Custom connector we registered earlier.
 
     ![New trigger](./media/customapi-webhooks/new-trigger.png)
 
     Click on the item in the list to use it as a trigger.
 
-4. Since this is the first time we've used this custom API, we have to connect to it.  For **Connection name**, enter a descriptive name.  For **User name**, use your GitHub username.  For **Password**, use the **personal access token** you created earlier.
+4. Since this is the first time we've used this Custom connector, we have to connect to it.  For **Connection name**, enter a descriptive name.  For **User name**, use your GitHub username.  For **Password**, use the **personal access token** you created earlier.
 
     ![New connection](./media/customapi-webhooks/new-connection.png)
 
@@ -251,7 +251,7 @@ If everything is correctly configured, you will now receive push notifications i
 
 ## Next steps
 
-- [Register a custom API](./register-custom-api.md).
+- [Register a Custom connector](./register-custom-api.md).
 - [Use an ASP.NET Web API](./customapi-web-api-tutorial.md).
 - [Register an Azure Resource Manager API](./customapi-azure-resource-manager-tutorial.md).
 

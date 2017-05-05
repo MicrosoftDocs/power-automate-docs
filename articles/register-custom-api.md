@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Register Custom APIs in Microsoft Flow | Microsoft PowerApps"
-	description="Register Custom APIs in Microsoft Flow using Swagger and OAuth."
+	pageTitle="Register Custom connectors in Microsoft Flow | Microsoft PowerApps"
+	description="Register Custom connectors in Microsoft Flow using Swagger and OAuth."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -17,20 +17,20 @@
    ms.date="12/06/2016"
    ms.author="deonhe"/>
 
-# Register Custom APIs in Microsoft Flow
+# Register Custom connectors in Microsoft Flow
 
-Microsoft Flow can leverage any RESTful APIs hosted anywhere.  This tutorial demonstrates registering and using a custom API.
+Microsoft Flow can leverage any RESTful APIs hosted anywhere.  This tutorial demonstrates registering and using a Custom connector.
 
 ## Prerequisites
 
 - A [Microsoft Flow account](https://flow.microsoft.com).
-- A Swagger file (JSON) for your custom API. If you don't have one, we'll show you several options to create the Swagger file.
-- An image to use as an icon for your custom API (optional).
+- A Swagger file (JSON) for your Custom connector. If you don't have one, we'll show you several options to create the Swagger file.
+- An image to use as an icon for your Custom connector (optional).
 
 
 ## Authentication
 
-Custom APIs in Microsoft Flow can use any of several authentication mechanisms.
+Custom connectors in Microsoft Flow can use any of several authentication mechanisms.
 
 - API Key
 - Basic Authentication
@@ -68,7 +68,7 @@ If your API endpoint allows unauthenticated access, you should remove the ```sec
 * [Azure Resource Manager](customapi-azure-resource-manager-tutorial.md) with AAD authentication.
 * [Azure WebApp](customapi-web-api-tutorial.md) with AAD authentication.
 
-## Register a custom API
+## Register a Custom connector
 
 ### Step 1: Create a Swagger file
 
@@ -92,15 +92,15 @@ When you create the Swagger file, a JSON file is created.  You'll need this is S
 
 - To customize your Swagger document to work with Microsoft Flow, see [Customize your Swagger definition](customapi-how-to-swagger.md).
 
-### Step 2: Add a connection to the custom API
+### Step 2: Add a connection to the Custom connector
 
-Now that the Swagger file (JSON file) is generated for the custom API, add the connection to Microsoft Flow.
+Now that the Swagger file (JSON file) is generated for the Custom connector, add the connection to Microsoft Flow.
 
-1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom APIs**.
+1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom connectors**.
 
-	![Find custom APIs](./media/register-custom-api/finding-custom-apis.png)  
+	![Find Custom connectors](./media/register-custom-api/finding-custom-apis.png)  
 
-2. Click **Create custom API**.  
+2. Click **Create Custom connector**.  
 
 	You will be prompted for the properties of your API.  
 
@@ -109,9 +109,9 @@ Now that the Swagger file (JSON file) is generated for the custom API, add the c
 	| Name | At the top of the page, click **Untitled** and give your flow a name. |
 	| Swagger file | Browse to the JSON file created from Swagger. |
 	| Upload API icon | Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
-	| Description | Type a description of your custom API (optional). |
+	| Description | Type a description of your Custom connector (optional). |
 
-	![Create custom API](./media/register-custom-api/create-custom-api.png)  
+	![Create Custom connector](./media/register-custom-api/create-custom-api.png)  
 
 	Select **Continue**.
 
@@ -119,27 +119,27 @@ Now that the Swagger file (JSON file) is generated for the custom API, add the c
 
 	>[AZURE.TIP] If the JSON file does not use the ```securityDefintions``` object, then no additional values may be needed.
 
-	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom API.
+	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the Custom connector.
 
-4. Your custom API is now displayed under **Custom APIs**.
+4. Your Custom connector is now displayed under **Custom connectors**.
 
 	![Available APIs](./media/register-custom-api/list-custom-apis.png)  
 
-5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete any necessary steps to sign in to your API's data source.  For **OAuth** authentication, that might be a sign-in screen.  For API Key authentication, you might get prompted for a key value.
+5. Now that the Custom connector is registered, you must create a connection to the Custom connector so it can be used in your apps and flows.  Click the **+** to the right of the name of your Custom connector and then complete any necessary steps to sign in to your API's data source.  For **OAuth** authentication, that might be a sign-in screen.  For API Key authentication, you might get prompted for a key value.
 
-### Step 3: Add the custom API to a flow
+### Step 3: Add the Custom connector to a flow
 
-Now you're ready to use the custom API with your flow. To illustrate, we'll use a custom weather API.
+Now you're ready to use the Custom connector with your flow. To illustrate, we'll use a custom weather API.
 
-#### Add the custom API to your flow
+#### Add the Custom connector to your flow
 
->[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](./get-started-logic-flow.md).
+>[AZURE.NOTE] This example creates a very simple flow to show you how to add your Custom connector. For more information, see [Get started with flows](./get-started-logic-flow.md).
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), at the top of the page, select **My flows**, and then select **Create from blank**.
 
 	>[AZURE.TIP] If you don't see a **My flows** link, it might be hidden under a hamburger button in the upper-left corner in mobile browsers.
 
-2. You are presented several templates already representing some common scenarios. You can use any of these and add your custom API to it, or you can choose **Create from blank** to create a flow from scratch.  Select **Create from blank**.
+2. You are presented several templates already representing some common scenarios. You can use any of these and add your Custom connector to it, or you can choose **Create from blank** to create a flow from scratch.  Select **Create from blank**.
 
 	![New flow](./media/register-custom-api/createfromblank.png)   
 
@@ -147,11 +147,11 @@ Now you're ready to use the custom API with your flow. To illustrate, we'll use 
 
 	![Recurrence](./media/register-custom-api/logicrecurrence.png)  	
 
-5. Select **+ New Step**, and then select **Add an action**. In the list, your custom API is listed.
+5. Select **+ New Step**, and then select **Add an action**. In the list, your Custom connector is listed.
 
-	![Your custom API](./media/register-custom-api/logicflow.png)
+	![Your Custom connector](./media/register-custom-api/logicflow.png)
 
-6. Select the operation you want to call from your custom API.  For this example, the API gets the current temperature, and then sends an email using Office 365.
+6. Select the operation you want to call from your Custom connector.  For this example, the API gets the current temperature, and then sends an email using Office 365.
 
 	![Weather example](./media/register-custom-api/logicflowexample.png)
 
@@ -159,9 +159,9 @@ Now you're ready to use the custom API with your flow. To illustrate, we'll use 
 
 ## Quota and throttling
 
-- You can create up to five custom APIs in a Microsoft Flow account.
-- For each connection created on a custom API, users can make up to 500 requests per minute.
-- Keep in mind that deleting a custom API deletes all the connections created to the API.
+- You can create up to five Custom connectors in a Microsoft Flow account.
+- For each connection created on a Custom connector, users can make up to 500 requests per minute.
+- Keep in mind that deleting a Custom connector deletes all the connections created to the API.
 
 ## Next steps
 

@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Create a custom API using Azure Resource Manager | Microsoft Flow"
-	description="Learn how to create a custom API using Azure Resource Manager and add the API to Microsoft Flow"
+	pageTitle="Create a Custom connector using Azure Resource Manager | Microsoft Flow"
+	description="Learn how to create a Custom connector using Azure Resource Manager and add the API to Microsoft Flow"
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -18,7 +18,7 @@
    ms.author="deonhe"/>
 
 
-# Create a custom API using Azure Resource Manager in Microsoft Flow
+# Create a Custom connector using Azure Resource Manager in Microsoft Flow
 
 This tutorial demonstrates how to register a Swagger file describing an [Azure Resource Manager (ARM) API](https://msdn.microsoft.com/library/azure/dn790568.aspx) and then connect to it in Microsoft Flow.
 
@@ -90,13 +90,13 @@ First, we need to create an Azure Active Directory (AAD) application that will p
 
 ## Add the connection in Microsoft Flow
 
-Now that the AAD application is configured, let's add the custom API.
+Now that the AAD application is configured, let's add the Custom connector.
 
-1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom APIs**.
+1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom connectors**.
 
-	![Find custom APIs](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
+	![Find Custom connectors](./media/customapi-azure-resource-manager-tutorial/finding-custom-apis.png)  
 
-2. Click **Create custom API**.  
+2. Click **Create Custom connector**.  
 
 	You will be prompted for the properties of your API.  
 
@@ -105,9 +105,9 @@ Now that the AAD application is configured, let's add the custom API.
 	| Name | At the top of the page, click **Untitled** and give your flow a name. |
 	| Swagger file | Browse to the [sample ARM Swagger file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
 	| Upload API icon | Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
-	| Description | Type a description of your custom API (optional). |
+	| Description | Type a description of your Custom connector (optional). |
 
-	![Create custom API](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
+	![Create Custom connector](./media/customapi-azure-resource-manager-tutorial/create-custom-api.png)  
 
 	Select **Continue**.
 
@@ -117,14 +117,14 @@ Now that the AAD application is configured, let's add the custom API.
 
     ![OAuth settings](./media/customapi-azure-resource-manager-tutorial/oauth-settings.png)
 
-	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom API.
+	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the Custom connector.
 	
-4. Your custom API is now displayed under **Custom APIs**.
+4. Your Custom connector is now displayed under **Custom connectors**.
 	
 	![Available APIs](./media/customapi-azure-resource-manager-tutorial/list-custom-apis.png)  
 
 
-5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete complete the sign-on screen.
+5. Now that the Custom connector is registered, you must create a connection to the Custom connector so it can be used in your apps and flows.  Click the **+** to the right of the name of your Custom connector and then complete complete the sign-on screen.
 
 >[AZURE.NOTE] The sample Swagger does not define the full set of ARM operations and currently only contains the [List all subscriptions](https://msdn.microsoft.com/library/azure/dn790531.aspx) operation.  You can edit this Swagger or create another Swagger file using the [online Swagger editor](http://editor.swagger.io/).
 >
