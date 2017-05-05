@@ -11,6 +11,7 @@ Publish your connector to extend your service and reach new customers.
 | Availability / Uptime | Your app must have an uptime of at least 99.9% | Recommended |
 | Support | Your app must include a support link where customers can find help. | Required
 
+### Submitting your Connector
 
 Certify your connector for Flow, PowerApps and Logic Apps in three simple steps:
 
