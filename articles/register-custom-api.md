@@ -68,9 +68,9 @@ Assuming you have an API with some type of authenticated access, you need a way 
 - A custom line-of-business API deployed on your network as long as the API is exposed on the public internet.
 
 OpenAPI 2.0 (formerly known as Swagger) and Postman Collections use different formats, but both are language-agnostic machine-readable documents that describe your API's operations and parameters:
-- You can generate these documents using a variety of tools depending on the language and platform that your API is built on. See the [Text Analytics API documentation](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/export?DocumentFormat=Swagger&ApiName=Azure) for an example of a OpenAPI file.
+- You can generate these documents using a variety of tools depending on the language and platform that your API is built on. See the [Text Analytics API documentation](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/export?DocumentFormat=Swagger&ApiName=Azure) for an example of an OpenAPI file.
 - If you don't already have an OpenAPI file for your API and don't want to create one, you can still easily create a custom connector by using a Postman Collection. See [Create a Postman Collection](postman-collection.md) for more information.
-- Microsoft Flow ultimately uses OpenAPI behind the scenes, so a Postman Collection is parsed and translated into a OpenAPI definition file. 
+- Microsoft Flow ultimately uses OpenAPI behind the scenes, so a Postman Collection is parsed and translated into an OpenAPI definition file. 
 
 **Note**: Your file size must be less than 1MB.
 

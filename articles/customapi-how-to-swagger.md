@@ -21,7 +21,7 @@
 
 ## Introduction
 
-To use custom connectors in Microsoft Flow, you must provide a OpenAPI definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box OpenAPI specification, there are some extensions available when creating a custom connector for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
+To use custom connectors in Microsoft Flow, you must provide an OpenAPI definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box OpenAPI specification, there are some extensions available when creating a custom connector for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
 
 ## summary 
 Title of the operation. Example - 'When a task is created" or "Create new lead'. 
