@@ -3,9 +3,10 @@
 #### Requirements
 
 ###### If I am not an ISV, can I still build a connector?
-To release a connector publicly, we require that you either own the underlying service or present explicit rights to use the APIs.
+To release a connector publicly, we require that you either own the underlying service or present explicit rights to use the API.
 
 ###### Can I build a connector without REST APIs ?
+
 No. In order to build a custom connector, you are required to support stable HTTP REST APIs for your service.
 
 ###### What are the supported authentication types ?
