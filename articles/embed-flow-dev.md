@@ -24,7 +24,7 @@ Embed Microsoft Flow right into your app or website to give users a simple way t
 To create flows, users will need either a **Microsoft Account** or a work or school account in **Azure Active Directory**. Microsoft Flow doesn't support, for example, a whitelabel solution that supports whatever identity your system  uses (unless it already uses Microsoft Accounts or AAD).
 
 ## Prerequisites ##
-- [Build an API](get-started-flow-dev.md) that connects your service to Microsoft Flow.
+- [Build a custom connector](register-custom-api.md) that connects your service to Microsoft Flow.
 - [Create and publish one or more templates](publish-a-template.md) that use your API.
 
 ## Show templates for your scenarios ##

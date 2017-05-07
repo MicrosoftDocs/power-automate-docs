@@ -86,7 +86,7 @@ OpenAPI 2.0 (formerly known as Swagger) and Postman Collections use different fo
 
 You will now use the OpenAPI file or Postman Collection to register your custom connector in Microsoft Flow.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), in the top bar, select the gear to open the settings menu. Select the **Custom connectors** option.
+1. In [flow.microsoft.com](https://flow.microsoft.com), in the top bar, select the gear to open the settings menu. Select the **Custom Connectors** option.
 
 	![Create custom connector](./media/register-custom-api/managecustomapi.png)  
 
@@ -164,11 +164,15 @@ Now that you have a custom connector, you can share it with other users in your 
 
 	![New connection](./media/register-custom-api/managecustomapi.png)
 
-2. Select your connector, select **Share**, and then enter the users or groups to whom you want to grant access to your connector.  
+2. Select the ellipsis (**. . .**) button for your connector, then select **View properties**.  
+
+	![View connector properties](./media/register-custom-api/view-properties.png)
+
+3. Select **Share**, and then enter the users or groups to whom you want to grant access to your connector.  
 
 	![Share custom connector](./media/register-custom-api/sharecustomapi.png)
 
-3. Select **Save**.
+4. Select **Save**.
 
 ## Next steps
 
