@@ -1,6 +1,6 @@
 <properties
 	pageTitle="Register and use custom connectors | Microsoft Flow"
-	description="Register and use custom connectors in Microsoft Flow, using Swagger and Postman."
+	description="Register and use custom connectors in Microsoft Flow, using OpenAPI and Postman."
 	services=""
     suite="flow"
 	documentationCenter=""
