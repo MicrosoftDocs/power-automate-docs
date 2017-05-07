@@ -1,50 +1,72 @@
-# Building an API Connector
+<properties
+    pageTitle=" Develop custom connectors for certification | Microsoft Flow"
+    description="Describe your API, specify authentication type, build triggers and actions, and test."
+    services=""
+    suite="flow"
+    documentationCenter="na"
+    authors="asavaritayal"
+    manager="anneta"
+    editor=""
+    tags=""/>
 
-The general process to build the functionality of a connector involves multipile steps.
+<tags
+   ms.service="flow"
+   ms.devlang="na"
+   ms.topic="article"
+   ms.tgt_pltfrm="na"
+   ms.workload="na"
+   ms.date="05/06/2017"
+   ms.author="astay"/>
 
-In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click on **Custom Connector**.
+# Develop custom connectors for certification in Microsoft Flow
 
+Building a connector involves multiple steps. This topic provides an overview; for more information, see [Register and use a custom connector](register-custom-api.md).
 
-![Finding custom connectors](./media/api-connectors/finding-custom-apis.png)
+To get started - in [Microsoft Flow](https://ms.flow.microsoft.com/en-us/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
+
+![Finding custom connectors](./media/api-connectors-dev/finding-custom-apis.png)
+
 
 ## Describe your API
 
-Custom connectors are described using [Swagger](https://swagger.io/), an open standard for defining the interface of an HTTP API. You can start building using an existing Swagger(JSON) file. Alternately, you can import a [Postman Collection](https://www.getpostman.com/docs/collections) which auto generates the Swagger for you. 
+Custom connectors are described using the [OpenAPI standard](https://swagger.io/) for defining the interface of an HTTP API. You can start building with an existing OpenAPI file, or you can import a [Postman Collection](https://www.getpostman.com/docs/collections), which auto-generates the OpenAPI file for you. 
 
-![Define your API diagram](./media/api-connectors/build_your_api.png)
+![Define your API diagram](./media/api-connectors-dev/build-your-api.png)
 
-If you start from either of these data sources, the meta data fields in the wizard will be auto-populated. You can edit these at any time.  
+If you start from either of these API descriptions, the metadata fields in the wizard are auto-populated. You can edit these at any time.  
 
-## Security
 
-Pick the authentication type supported by your service and provide additional details to enable the identity flow. 
+## Specify the authenication type and security details
 
-![Security Diagram](./media/api-connectors/security.png)
+Pick the authentication type supported by your service, and provide additional details to enable identity to flow appropriately between your service and any clients. 
 
-[Learn more](register-custom-api.md) about the Security setup.
+![Security Diagram](./media/api-connectors-dev/security.png)
 
-## Build Triggers and Actions
+[Learn more](register-custom-api.md) about the connector security.
 
-To build the triggers and actions for your connector, switch to the **Definition** tab. 
 
-![Definition Diagram](./media/api-connectors/definition.png)
+## Build triggers and actions
 
-Using the wizard, you can add new operations or edit the schema and response for existing ones. The **general** properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
-- [Triggers](customapi-webhooks.md)
-- [Actions](register-custom-api.md)
+1. To build the triggers and actions for your connector, switch to the **Definition** tab. 
 
-To implement advance functionality, refer to the [swagger extensions guide](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
+    ![Definition Diagram](./media/api-connectors-dev/definition.png)
 
-Finally, click on **Create API** to register the custom connector.
+2. Using the wizard, you can add new operations or edit the schema and response for existing ones. The **General** properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
+
+    - [Triggers for Flow](customapi-webhooks.md)
+    - [Actions for Flow and PowerApps](register-custom-api.md)
+
+    To implement advanced functionality for Flow, refer to the [OpenAPI extensions for custom connectors](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
+
+3. Finally, click or tap **Create connector** to register the custom connector.
 
 For additional features not available in the wizard, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
 
-## Test
 
-Prior to submission, test your custom connector in multiple ways: 
+## Test the connector
 
-- Using the Custom Connector [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/), you can call each operation to verify its functionality and the response schema.
+Prior to submission, test your custom connector in one or more ways: 
 
-- In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interfacing functionality and features of your connector.
-
-- In the PowerApps studio, you can call each operation using the formula bar and bind the response to controls on your screen.
+- Using the custom connector [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/), you can call each operation to verify its functionality and the response schema.
+- In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interface functionality and features of your connector.
+- In the PowerApps studio, you can call each operation using the formula bar, and bind the response to controls on your screen.
