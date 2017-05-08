@@ -158,7 +158,7 @@ You will now use the OpenAPI file or Postman Collection to register your custom 
 - For each connection created on a custom connector, users can make up to 500 requests per minute.
 
 ## Share your custom connector
-Now that you have a custom connector, you can share it with other users in your organization (but not publicly using Microsoft Flow). Keep in mind that when you share an custom connector, others might start to depend on it, and deleting a custom connector deletes all the connections to the connector.
+Now that you have a custom connector, you can share it with other users in your organization. Keep in mind that when you share an custom connector, others might start to depend on it, and deleting a custom connector deletes all the connections to the connector. If you want to provide a connector for users outside your organization, see [Overview of certifying custom connectors in Microsoft Flow](api-connector-overview.md).
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), in the top bar, select the gear to open the settings menu. Select the **Custom connectors** option.
 

@@ -1,13 +1,12 @@
 <properties
-
-	pageTitle="Create a custom connector for Azure Resource Manager | Microsoft Flow"
-	description="Learn how to create a custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
-	services=""
-    suite="flow"
-	documentationCenter=""
-	authors="msftman"
-	manager="anneta"
-	editor=""/>
+   pageTitle="Create a custom connector for Azure Resource Manager | Microsoft Flow"
+   description="Learn how to create a custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
+   services=""
+   suite="flow"
+   documentationCenter=""
+   authors="msftman"
+   manager="anneta"
+   editor=""/>
 
 <tags
    ms.service="flow"
