@@ -22,7 +22,7 @@
 
 Building a connector involves multiple steps. This topic provides an overview; for more information, see [Register and use a custom connector](register-custom-api.md).
 
-To get started - in [Microsoft Flow](https://ms.flow.microsoft.com/en-us/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
+To get started - in [Microsoft Flow](https://ms.flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
 
 ![Finding custom connectors](./media/api-connectors-dev/finding-custom-apis.png)
 
@@ -56,7 +56,7 @@ Pick the authentication type supported by your service, and provide additional d
     - [Triggers for Flow](customapi-webhooks.md)
     - [Actions for Flow and PowerApps](register-custom-api.md)
 
-    To implement advanced functionality for Flow, refer to the [OpenAPI extensions for custom connectors](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
+    To implement advanced functionality for Flow, refer to the [OpenAPI extensions for custom connectors](https://ms.flow.microsoft.com/documentation/customapi-how-to-swagger/). 
 
 3. Finally, click or tap **Create connector** to register the custom connector.
 
@@ -67,6 +67,6 @@ For additional features not available in the wizard, please contact [condevhelp@
 
 Prior to submission, test your custom connector in one or more ways: 
 
-- Using the custom connector [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/), you can call each operation to verify its functionality and the response schema.
+- Using the custom connector [Testing wizard](https://flow.microsoft.com/blog/new-updates-custom-api/), you can call each operation to verify its functionality and the response schema.
 - In the Flow designer, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interface functionality and features of your connector.
 - In the PowerApps studio, you can call each operation using the formula bar, and bind the response to controls on your screen.
