@@ -18,7 +18,7 @@
    ms.date="05/05/2017"
    ms.author="deonhe"/>
 
-# Run your flows by pressing a Flic smart button (Preview)
+# Run your flows by pressing a Flic smart button
 
 Microsoft Flow has partnered with [Flic by Shortcut Labs](https://flic.io/), one of the leading physical button manufacturers. With this partnership, you can trigger your flows by touching a physical button. For example, you can press a flic to track your working hours, block your calendar, count visitors and guests at an event, or save geographical locations.
 
