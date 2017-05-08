@@ -31,6 +31,7 @@ To complete the tutorial, you will need:
  - Basic understanding of the [OpenAPI Specification](http://swagger.io/specification/) (Swagger).
  - A [GitHub](https://www.github.com) account.
  - The [sample OpenAPI JSON file](http://pwrappssamples.blob.core.windows.net/samples/githubWebhookSample.json) for this tutorial.
+ - Alternatively you can also use the [triggers UI](https://flow.microsoft.com/en-us/documentation/customapi-webhooks/#creating-webhook-triggers-from-the-UI) to define webhook triggers, in case you don’t want to hand write the OpenAPI file.
 
 ## The OpenAPI file
 
@@ -200,6 +201,31 @@ Now we've got everything we need to add the webhook to Flow as a custom connecto
     ![Create API](./media/customapi-webhooks/create-api.png)
 
 The new custom connector should now appear in the list on the custom connectors page.
+
+## Creating webhook triggers from the UI
+
+1. After uploading / creating your base Open API file, navigate to the **Definition** tab of the custom connector wizard
+
+2. In the left hand pane, click on + New trigger and fill out the description of your trigger. In this example, we are creating a trigger that fires when a pull request is made to a repository.
+
+![Create Trigger-1](./media/customapi-webhooks/create-new-trigger-1.png)
+
+3. Next, define the request to create the webhook trigger. You can do this by importing a sample create webhook trigger request. [Github API reference](https://developer.github.com/v3/repos/hooks/#create-a-hook) for creating a webhook. 
+
+4. Flow automatically adds standard ```content-type``` and security headers, so we don’t need to define those while importing from a sample. 
+
+![Create Trigger-2](./media/customapi-webhooks/create-new-trigger-2.png)
+
+5. After importing the create webhook request, next we will define the **Webhook response** by importing from a sample response. [API reference](https://developer.github.com/v3/activity/events/types/#pullrequestevent) for a pull request event. 
+**Note**: You don’t have to paste in the full response. Only the fields that you need should be defined.
+For this example, we are extracting only the PR url and information of the user who made the PR.
+
+![Create Trigger-3](./media/customapi-webhooks/create-new-trigger-3.png)
+
+6. The final step for you is to select a parameter in the Webhook creation request, in the value of which Flow should populate a callback URL for Github to populate. For us this is the url property in the ```config``` object.
+
+![Create Trigger-4](./media/customapi-webhooks/create-new-trigger-4.png)
+
 
 ## Using the webhook as a trigger
 
