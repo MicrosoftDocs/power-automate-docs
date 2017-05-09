@@ -20,7 +20,7 @@
 # Register and use custom connectors in Microsoft Flow
 Microsoft Flow enables you to build workflows with no code. But in some cases, you need to extend Microsoft Flow capabilites, and web services are a natual fit for this. Your flow can connect to a service, perform operations, and get data back. When you have a web service you want to connect to with Microsoft Flow, you register the service as a custom connector. This process enables Microsoft Flow to understand the characteristics of your web API, including the authentication that it requires, the operations that it supports, and the parameters and outputs for each of those operations.
 
-In this topic, we'll look at the steps required to register and use a custom connector, and we'll use the Azure Cognitive Services [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api). This API identifies the language, sentiment, and key phrases in text that you pass to it. Below is a graphic that shows the interaction between the service, the custom connector we create from it, and the app that calls the API.
+In this topic, we'll look at the steps required to register and use a custom connector, and we'll use the Azure Cognitive Services [Text Analytics API](https://www.microsoft.com/cognitive-services/text-analytics-api). This API identifies the language, sentiment, and key phrases in text that you pass to it. Below is a graphic that shows the interaction between the service, the custom connector we create from it, and the app that calls the API.
 
 {TODO: add graphic}
 

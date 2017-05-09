@@ -1,5 +1,5 @@
 <properties
-	pageTitle="Using webhooks with Microsoft Flow | Microsoft Flow"
+	pageTitle="Use webhooks with Microsoft Flow | Microsoft Flow"
 	description="Learn how to create flows that interact with webhooks in Microsoft Flow"
 	services=""
     suite="flow"
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
+   ms.date="05/08/2017"
    ms.author="deonhe"/>
 
-# Using webhooks with Microsoft Flow
+# Use webhooks with Microsoft Flow
 
 [Webhooks](http://www.webhooks.org/) are simple HTTP callbacks used to provide event notifications.  Microsoft Flow allows you to use webhooks to trigger flows.  This tutorial demonstrates how to create a flow triggered by a webhook.
 
@@ -31,11 +31,11 @@ To complete the tutorial, you will need:
  - Basic understanding of the [OpenAPI Specification](http://swagger.io/specification/) (Swagger).
  - A [GitHub](https://www.github.com) account.
  - The [sample OpenAPI JSON file](http://pwrappssamples.blob.core.windows.net/samples/githubWebhookSample.json) for this tutorial.
- - Alternatively you can also use the [triggers UI](https://flow.microsoft.com/en-us/documentation/customapi-webhooks/#creating-webhook-triggers-from-the-UI) to define webhook triggers, in case you don’t want to hand write the OpenAPI file.
+ - Alternatively you can also use the [triggers UI](customapi-webhooks.md#creating-webhook-triggers-from-the-UI) to define webhook triggers, in case you don’t want to hand write the OpenAPI file.
 
 ## The OpenAPI file
 
-Webhooks are implemented in Microsoft Flow as a type of [custom connector](./customapi-web-api-tutorial.md), so we'll need to provide an OpenAPI JSON file to define the shape of our webhook.  The OpenAPI contains three definitions critical to making the webhook work:
+Webhooks are implemented in Microsoft Flow as a type of [custom connector](register-custom-api.md), so we'll need to provide an OpenAPI JSON file to define the shape of our webhook.  The OpenAPI contains three definitions critical to making the webhook work:
 
 1. Creating the webhook
 2. Defining the incoming hook request from the API (in this case, GitHub)
