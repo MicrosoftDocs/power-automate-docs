@@ -1,5 +1,5 @@
 <properties
-   pageTitle="AppSource Test Drive | Microsoft PowerApps"
+   pageTitle="Let customers test drive your flows on AppSource | Microsoft PowerApps"
    description="Use AppSource to share apps with customers, and generate leads for your business."
    services=""
    suite="flow"
@@ -19,7 +19,7 @@
    ms.author="litran"/>
 
 
-# AppSource Test Drive #
+# Let customers test drive your flows on AppSource #
 
 Do you want to show off how your app integrates with Microsoft Flow? We now Test Drive solutions on [AppSource.com](https://appsource.microsoft.com) as a way for you to share Microsoft Flow integration with customers, and generate leads for your business.
 

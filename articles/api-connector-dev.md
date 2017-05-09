@@ -1,48 +1,72 @@
-# Develop using Custom API
+<properties
+    pageTitle="Develop custom connectors for certification | Microsoft Flow"
+    description="Describe your API, specify authentication type, build triggers and actions, and test."
+    services=""
+    suite="flow"
+    documentationCenter="na"
+    authors="asavaritayal"
+    manager="anneta"
+    editor=""
+    tags=""/>
 
-The general process to build a Custom API involves multipile steps.
+<tags
+   ms.service="flow"
+   ms.devlang="na"
+   ms.topic="article"
+   ms.tgt_pltfrm="na"
+   ms.workload="na"
+   ms.date="05/06/2017"
+   ms.author="astay"/>
 
-In the [Microsoft Flow web app](https://ms.flow.microsoft.com/en-us/), click the **Settings** button at the upper right of the page (it looks like a gear). Then click **Custom APIs**.
+# Develop custom connectors for certification in Microsoft Flow
 
-![Finding Custom APIs](./media/api-connectors/finding-custom-apis.png)
+Building a connector involves multiple steps. This topic provides an overview; for more information, see [Register and use a custom connector](register-custom-api.md).
 
-## Define your API
+To get started - in [Microsoft Flow](https://flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
 
-Custom APIs are described using [Swagger](https://swagger.io/), an open standard for defining the interface of an HTTP API. You can start building using an existing Swagger(JSON) file. Alternately, you can import a [Postman Collection](https://www.getpostman.com/docs/collections) which auto generates the Swagger for you. 
+![Finding custom connectors](./media/api-connectors-dev/finding-custom-apis.png)
 
-![Define your API diagram](./media/api-connectors/build_your_api.png)
 
-If you start from either of these data sources, the meta data fields in the wizard will be auto-populated for you. You can edit these at any time.  
+## Describe your API
 
-## Security
+Custom connectors are described using the [OpenAPI standard](https://swagger.io/) for defining the interface of an HTTP API. You can start building with an existing OpenAPI file, or you can import a [Postman Collection](https://www.getpostman.com/docs/collections), which auto-generates the OpenAPI file for you. 
 
-Pick the authentication type supported by your service and provide additional details to enable the identity flow. 
+![Define your API diagram](./media/api-connectors-dev/build-your-api.png)
 
-![Security Diagram](./media/api-connectors/security.png)
+If you start from either of these API descriptions, the metadata fields in the wizard are auto-populated. You can edit these at any time.  
 
-[Learn more](https://ms.flow.microsoft.com/en-us/documentation/register-custom-api/) about the Security setup for your Custom API.
 
-## Build Triggers and Actions
+## Specify the authentication type and security details
 
-To build the triggers and actions for your connector, switch to the **Definition** tab. 
+Pick the authentication type supported by your service, and provide additional details to enable identity to flow appropriately between your service and any clients. 
 
-![Definition Diagram](./media/api-connectors/definition.png)
+![Security Diagram](./media/api-connectors-dev/security.png)
 
-Using the wizard, you can add new operations or edit the schema and response for existing ones. The **general** properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
-- [Triggers](https://ms.flow.microsoft.com/en-us/documentation/customapi-webhooks/)
-- [Actions](https://ms.flow.microsoft.com/en-us/documentation/register-custom-api/)
+[Learn more](register-custom-api.md) about the connector security.
 
-To implement advance functionality, refer to the [swagger extensions guide](https://ms.flow.microsoft.com/en-us/documentation/customapi-how-to-swagger/). 
 
-Finally, click on **Create API** to register the Custom API.
+## Build triggers and actions
 
-For additional features not available in Custom API, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
+1. To build the triggers and actions for your connector, switch to the **Definition** tab. 
 
-## Test
+    ![Definition Diagram](./media/api-connectors-dev/definition.png)
 
-Prior to submission, test your custom API in multiple ways: 
+2. Using the wizard, you can add new operations or edit the schema and response for existing ones. The **General** properties for each operation enable you to control the end-user experience for your connector. Learn more about the different types of operations using the links below:
 
-- Using the custom API [Testing wizard](https://flow.microsoft.com/en-us/blog/new-updates-custom-api/) in Flow, you can call each operation associated with your connector to verify its functionality and the response schema.
+    - [Triggers for Microsoft Flow](customapi-webhooks.md)
+    - [Actions for Microsoft Flow and PowerApps](register-custom-api.md)
 
-- In the Flow designer, you can visually build flows using your Custom API. This method of testing gives you visibility into the user interfacing functionality and features of your integration. 
+    To implement advanced functionality for Microsoft Flow, refer to the [OpenAPI extensions for custom connectors](https://flow.microsoft.com/documentation/customapi-how-to-swagger/). 
 
+3. Finally, click or tap **Create connector** to register the custom connector.
+
+For additional features not available in the wizard, please contact [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com).
+
+
+## Test the connector
+
+Prior to submission, test your custom connector in one or more ways: 
+
+- Using the custom connector [Testing wizard](https://flow.microsoft.com/blog/new-updates-custom-api/), you can call each operation to verify its functionality and the response schema.
+- In the designer for Microsoft Flow, you can visually build flows using your custom connector. This method of testing gives you visibility into the user interface functionality and features of your connector.
+- In the PowerApps Studio, you can call each operation using the formula bar, and bind the response to controls on your screen.
