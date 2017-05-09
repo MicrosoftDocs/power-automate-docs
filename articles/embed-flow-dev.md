@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="10/22/2016"
+    ms.date="05/09/2017"
     ms.author="barathb"/>
 
 # Extend your app or website by integrating with Microsoft Flow #
@@ -100,10 +100,12 @@ For listing flows that the user has already authored and also to create flows fr
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
-            appId: 'XXXXXXXXXXXXXX' // get one from Flow team by emailing flowdev at service dot microsoft dot com
+            hostName:'https:/flow.microsoft.com'
         });
         var widget = sdk.renderWidget('flows', {
             container: 'flowDiv'
+            environmentId: 'XXXXXXXXX'         // find environment id from browser URL when you click on 'my flows'
+                                                                          // ex: https://flow.microsoft.com/manage/environments/<environmentId/flows
         });
         widget.callbacks.GET_ACCESS_TOKEN = function(requestParam, widgetDoneCallback)
        {
@@ -116,6 +118,14 @@ For listing flows that the user has already authored and also to create flows fr
     }
 </script>
 ```
+
+You can find the `environmentId` by making the following api call which returns the list of environments user has access to:
+
+```
+GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01 
+```
+
+This returns a JSON response with list of environments, for which you can pick any environment. You can look for default user enviroment by checking the property properties.isDefault=true.
 
 In this example, `requestParam` is defined as:
 

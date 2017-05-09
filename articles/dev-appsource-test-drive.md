@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/28/2016"
+   ms.date="05/09/2016"
    ms.author="litran"/>
 
 
@@ -31,7 +31,9 @@ A Test Drive solution enables your customers to try out a real app without insta
 
 Building an app for a Test Drive solution is just like building any app, but you need to use a data source that the user can be granted access to with a read-only user. Using a data source that's already set up will mean there is zero friction for them to try it out. The full solution that you ultimately distribute to customers will include writable data, but read-only data works well for a Test Drive solution.
 
-{TODO: Describe embedding and some examples for read-only scenarios.}
+### Embed flow into your product ###
+
+Once you have a data source that you can grant the user read-only access to, you can embed Microsoft Flow into your application. [Read more about embedding here](embed-flow-dev.md). You will likely want to use the search functionality to highlight templates that are unique to your application. For example, if your application creates data in Dynamics 365, you can highlight a Dynamics 365 template that pulls data and then sends an email to the user. 
 
 ## How do I list my Test Drive solution on AppSource.com? ##
 
