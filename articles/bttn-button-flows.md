@@ -18,7 +18,7 @@
    ms.date="04/30/2017"
    ms.author="deonhe"/>
 
-# Run your flows with physical buttons (bttns) from The Button Corporation
+# Run your flows with physical buttons (bttns) from The Button Corporation (Preview)
 
 Microsoft Flow has partnered with [The Button Corporation](https://my.bt.tn/), one of the leading physical button manufacturers. This partnership enables you to trigger flows by touching a bttn (a physical button made by The Button Corporation). For example, you can press a bttn that triggers a flow that contacts your helpdesk with location information, sends an email to your team, blocks your calendar, or reorders supplies.
 
