@@ -1,5 +1,5 @@
 <properties
-    pageTitle=" Overview of certifying custom connectors | Microsoft Flow"
+    pageTitle="Overview of certifying custom connectors | Microsoft Flow"
     description="ISVs and SaaS service owners can build connectors and have them certified by Microsoft."
     services=""
     suite="flow"

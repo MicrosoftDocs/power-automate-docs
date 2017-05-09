@@ -1,5 +1,5 @@
 <properties
-    pageTitle=" Develop custom connectors for certification | Microsoft Flow"
+    pageTitle="Develop custom connectors for certification | Microsoft Flow"
     description="Describe your API, specify authentication type, build triggers and actions, and test."
     services=""
     suite="flow"
