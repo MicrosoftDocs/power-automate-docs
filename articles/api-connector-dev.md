@@ -22,7 +22,7 @@
 
 Building a connector involves multiple steps. This topic provides an overview; for more information, see [Register and use a custom connector](register-custom-api.md).
 
-To get started - in [Microsoft Flow](https://ms.flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
+To get started - in [Microsoft Flow](https://flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connector**.
 
 ![Finding custom connectors](./media/api-connectors-dev/finding-custom-apis.png)
 
@@ -56,7 +56,7 @@ Pick the authentication type supported by your service, and provide additional d
     - [Triggers for Flow](customapi-webhooks.md)
     - [Actions for Flow and PowerApps](register-custom-api.md)
 
-    To implement advanced functionality for Flow, refer to the [OpenAPI extensions for custom connectors](https://ms.flow.microsoft.com/documentation/customapi-how-to-swagger/). 
+    To implement advanced functionality for Flow, refer to the [OpenAPI extensions for custom connectors](https://flow.microsoft.com/documentation/customapi-how-to-swagger/). 
 
 3. Finally, click or tap **Create connector** to register the custom connector.
 

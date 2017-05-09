@@ -21,7 +21,7 @@
 
 # Overview of certifying custom connectors in Microsoft Flow
 
-A **custom connector** is an OpenAPI (Swagger) based wrapper around a REST API that allows the underlying service to talk to [Microsoft Flow](https://ms.flow.microsoft.com), [PowerApps](https://powerapps.microsoft.com), and [Logic Apps](https://azure.microsoft.com/services/logic-apps). It provides a way for users to connect their accounts and leverage a set of pre-built **triggers** and **actions** to build their apps and workflows.
+A **custom connector** is an OpenAPI (Swagger) based wrapper around a REST API that allows the underlying service to talk to [Microsoft Flow](https://flow.microsoft.com), [PowerApps](https://powerapps.microsoft.com), and [Logic Apps](https://azure.microsoft.com/services/logic-apps). It provides a way for users to connect their accounts and leverage a set of pre-built **triggers** and **actions** to build their apps and workflows.
 
 As an **Independent software vendor (ISV)** or **SaaS service owner**, you can build connectors to enable a wide range of business and productivity scenarios for your users. A connector helps you to go beyond a definite set of integrations, and increase the reach, discoverability, and usage of your service.
 
