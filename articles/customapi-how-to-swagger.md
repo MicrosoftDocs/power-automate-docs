@@ -1,5 +1,5 @@
 <properties
-	pageTitle="Customize your OpenAPI definition for Microsoft Flow | Microsoft Flow"
+	pageTitle="OpenAPI extensions for custom connectors in Microsoft Flow | Microsoft Flow"
 	description="View the schema extensions required by OpenAPI to work with Microsoft Flow"
 	services=""
     suite="flow"
@@ -17,7 +17,7 @@
    ms.date="04/11/2017"
    ms.author="deonhe"/>
 
-# Customize your OpenAPI definition for Microsoft Flow
+# OpenAPI extensions for custom connectors in Microsoft Flow
 
 ## Introduction
 

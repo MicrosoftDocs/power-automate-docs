@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Using webhooks with Microsoft Flow | Microsoft Flow"
-	description="Learn how to create flows that interact with webhooks in Microsoft Flow"
+	pageTitle="Use webhooks with Microsoft Flow | Microsoft Flow"
+	description="Learn how to create flows that interact with webhooks in Microsoft Flow."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -14,10 +14,10 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
+   ms.date="05/08/2017"
    ms.author="deonhe"/>
 
-# Using webhooks with Microsoft Flow
+# Use webhooks with Microsoft Flow
 
 [Webhooks](http://www.webhooks.org/) are simple HTTP callbacks used to provide event notifications.  Microsoft Flow allows you to use webhooks to trigger flows.  This tutorial demonstrates how to create a flow triggered by a webhook.
 
@@ -106,7 +106,7 @@ It's very important to include a definition in the OpenAPI that tells Flow how t
 ```json
 "/repos/{owner}/{repo}/hooks/{hook_Id}": {
     "delete": {
-    "description": "Creates a Github webhook",
+    "description": "Deletes a Github webhook",
     "operationId": "DeleteTrigger",
     "parameters": [
         {

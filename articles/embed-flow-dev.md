@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Embed the Flow experience | Microsoft Flow"
-    description="Embed the Microsoft Flow experiences into your website or app"
+    pageTitle="Integrate Microsoft Flow with websites and apps | Microsoft Flow"
+    description="Embed the Microsoft Flow experiences into your website or app."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -18,7 +18,7 @@
     ms.date="10/22/2016"
     ms.author="barathb"/>
 
-# Extend your app or website by integrating with Microsoft Flow #
+# Integrate Microsoft Flow with websites and apps #
 Embed Microsoft Flow right into your app or website to give users a simple way to automate their personal or professional tasks.
 
 To create flows, users will need either a **Microsoft Account** or a work or school account in **Azure Active Directory**. Microsoft Flow doesn't support, for example, a whitelabel solution that supports whatever identity your system  uses (unless it already uses Microsoft Accounts or AAD).

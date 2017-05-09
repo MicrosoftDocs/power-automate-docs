@@ -1,6 +1,6 @@
 <properties
-	pageTitle="Create a custom Web API for Microsoft Flow | Microsoft Flow"
-	description="Learn how to create an ASP.NET Web API with Azure Active Directory authentication in Microsoft Flow"
+	pageTitle="Build a custom connector for a Web API | Microsoft Flow"
+	description="Learn how to create an ASP.NET Web API with Azure Active Directory authentication in Microsoft Flow."
 	services=""
     suite="flow"
 	documentationCenter=""
@@ -17,13 +17,13 @@
    ms.date="12/06/2016"
    ms.author="deonhe"/>
 
-# Create a custom Web API for Microsoft Flow
+# Build a custom connector for a Web API in Microsoft Flow
 
 This tutorial shows you how to start bulding an ASP.NET Web API, host it on Azure Web Apps, enable Azure Active Directory authentication, and then register the ASP.NET Web API in Microsoft Flow. After the API is registered, you can connect to it and call it from your flow. 
 
 ## Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/en-us/free/).
+- An [Azure subscription](https://azure.microsoft.com/free/).
 - A [PowerApps account](https://powerapps.microsoft.com).
 - [Visual Studio](https://www.visualstudio.com/vs/) 2013 or higher.
 
