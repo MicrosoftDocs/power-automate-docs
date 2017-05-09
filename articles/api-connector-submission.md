@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Submit custom connectors for certification | Microsoft Flow"
+    pageTitle="Submit API connectors for certification | Microsoft Flow"
     description="By certifying a connector, it becomes available to all users of Microsoft Flow, PowerApps and Logic Apps."
     services=""
     suite="flow"
@@ -19,7 +19,7 @@
    ms.author="astay"/>
 
 
-# Submit custom connectors for certification in Microsoft Flow
+# Submit API connectors for certification in Microsoft Flow
 
 As part of our third party certification process, we review your connector before publishing. By certifying a connector, it becomes available to all users of Microsoft Flow, PowerApps, and Logic Apps. Following are the criteria and steps for certification.
 
