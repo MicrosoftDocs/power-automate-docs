@@ -26,7 +26,7 @@ Microsoft Flow has partnered with [The Button Corporation](https://my.bt.tn/), o
 
 Configure all bttn properties, including name, location, email address, and so on, on the [bttn website](https://my.bt.tn/) before you create your flow.
 
-Microsoft Flow also partners with [Flic by Shortcut Labs](./flic-button-flows.md), another leading physical button manufacturer that allows you to trigger your flows with a physical button.
+Microsoft Flow also partners with Shortcut Labs, another leading physical button manufacturer that allows you to trigger your flows with a Flic (physical button).
 
 ## Prerequisites
 
@@ -125,7 +125,6 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 ## More information
 
-- Use [Flics](./flic-button-flows.md) to trigger flows.
 - [Share button flows](./share-buttons.md).
 - Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
 - [Install the Flow app for Android](https://aka.ms/flowmobiledocsandroid)
