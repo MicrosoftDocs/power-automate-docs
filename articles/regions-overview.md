@@ -36,7 +36,7 @@ Administrators can identify the region by if they sign in to the Microsoft Flow 
 - Japan
 
 ## What features are specific to a given region? ##
-Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom APIs.
+Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom connectors.
 
 For optimal performance, if your users are in Europe, create and use the environment in the Europe region. If your users are in the United States, create and use the environment in the U.S. region.
 
