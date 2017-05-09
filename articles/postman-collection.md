@@ -29,7 +29,7 @@
 
 ## Create a Postman Collection
 
-Let's build a Postman Collection for the Azure Cognitive Services [Text Analytics API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api). This API identifies the language, sentiment, and key phrases in text that you pass to it.
+Let's build a Postman Collection for the Azure Cognitive Services [Text Analytics API](https://www.microsoft.com/cognitive-services/text-analytics-api). This API identifies the language, sentiment, and key phrases in text that you pass to it.
 
 1. The first step in creating a Postman Collection is to create a request. When creating the request, you can set the HTTP verb, the request URL, query or path parameters, headers, and the body. For more information, see [Sending Requests](https://www.getpostman.com/docs/requests) in the Postman documentation. For the Detect Language API endpoint, set the values as follows:
 

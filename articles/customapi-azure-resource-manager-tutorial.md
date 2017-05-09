@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a custom connector for Azure Resource Manager | Microsoft Flow"
-   description="Learn how to create a custom connector for Azure Resource Manager, then add the API to Microsoft Flow."
+   pageTitle="Use Azure Active Directory with a custom connector | Microsoft Flow"
+   description="Learn how to create a custom connector for Azure Resource Manager, with Azure Active Directory authentication."
    services=""
    suite="flow"
    documentationCenter=""
@@ -17,13 +17,13 @@
    ms.date="05/03/2016"
    ms.author="deonhe"/>
 
-# Create a custom connector for Azure Resource Manager in Microsoft Flow
+# Use Azure Active Directory with a custom connector in Microsoft Flow
 
-Azure Resource Manager (ARM) enables you to manage the components of a solution on Azure - components like databases, virtual machines, and web apps. This tutorial demonstrates how to enable authentication in Azure Active Directory, register one of the ARM APIs as a custom connector, and then connect to it in Microsoft Flow. This would be useful if you want to manage Azure resources as part of a flow. For more information about ARM, see [Azure Resource Manager Overview](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
+Azure Resource Manager (ARM) enables you to manage the components of a solution on Azure - components like databases, virtual machines, and web apps. This tutorial demonstrates how to enable authentication in Azure Active Directory, register one of the ARM APIs as a custom connector, and then connect to it in Microsoft Flow. This would be useful if you want to manage Azure resources as part of a flow. For more information about ARM, see [Azure Resource Manager Overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/en-us/free/).
+- An [Azure subscription](https://azure.microsoft.com/free/).
 - A [Microsoft Flow account](https://flow.microsoft.com).
 - The [sample OpenAPI file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json) used in this tutorial.
 
