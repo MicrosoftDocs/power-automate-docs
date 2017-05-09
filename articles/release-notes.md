@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/28/2017"
+   ms.date="05/09/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -51,6 +51,18 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-05-09
+
+- **Azure AD connector** - There is a new connector for performing administrator actions from Microsoft Flow, including creating users or adding them to groups.
+- **Office 365 Outlook improvements** - Flows can now be triggered by Shared Mailboxes and send mail to a Shared Mailbox. They can also set or read automatic replies.
+- **Available in Canada** - You can now create your flows in Canada. 
+- **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
+- **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Microsoft Flow admin center.
+- **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](https://docs.microsoft.com/Connectors/).
+- **Two partner services** - Two new partner services were released: Nexmo and Paylocity.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/canada-mailboxes-aad) about this release.
 
 ### Release 2017-04-27
 
