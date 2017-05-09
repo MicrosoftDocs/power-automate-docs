@@ -110,4 +110,4 @@ Create a flow that, if you create an item in SharePoint, sends approval mail and
 
 1. Create an item in your SharePoint list.
 
-	An approval mail is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that mail, you receive email that indicates the response.
+	An approval mail is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that mail, you receive email that indicates the response. 
