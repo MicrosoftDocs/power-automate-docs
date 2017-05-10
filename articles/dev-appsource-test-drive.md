@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/09/2016"
+   ms.date="05/09/2017"
    ms.author="litran"/>
 
 
@@ -29,7 +29,7 @@ A Test Drive solution enables your customers to try out a real app without insta
 
 ## How do I build a Test Drive solution? ##
 
-Building an app for a Test Drive solution is just like building any app, but you need to use a data source that the user can be granted access to with a read-only user. Using a data source that's already set up will mean there is zero friction for them to try it out. The full solution that you ultimately distribute to customers will include writable data, but read-only data works well for a Test Drive solution.
+Building an app for a Test Drive solution is just like building any app, but you need to use a data source that the user can be granted access to as a read-only user. Using a data source that's already set up will mean there is zero friction for them to try it out. The full solution that you ultimately distribute to customers will include writable data, but read-only data works well for a Test Drive solution.
 
 ### Embed flow into your product ###
 
@@ -37,4 +37,4 @@ Once you have a data source that you can grant the user read-only access to, you
 
 ## How do I list my Test Drive solution on AppSource.com? ##
 
-Now that your app is ready, it's time to publish it to AppSource.com. Follow the step-by-step instructions on how to complete this proces in the [Publishing Guide for Cloud Solutions Apps](https://aka.ms/publishinguideforwebapps). After you have entered the app metadata through the publishing portal, click or tap **PUSH TO STAGING**, and we will circle back to the next steps.
+Now that your app is ready, it's time to publish it to AppSource.com. In order to start this process, please complete the [application form](https://flow.microsoft.com/partners/get-listed/) on flow.microsoft.com. Once you apply you will receive an email with instructions on how to submit your app to be published on AppSource.com.

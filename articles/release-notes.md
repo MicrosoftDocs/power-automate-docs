@@ -25,8 +25,8 @@
 1. My flow failed. How do I fix it?
 
 	1. Identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
-	- You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
-	- Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
+	2. You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
+	3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
 
 1. How do I use an advanced condition or a formula?
 	- Read about [adding conditions](add-a-condition.md).
