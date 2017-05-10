@@ -31,8 +31,11 @@ To create flows, users will need either a **Microsoft Account** or a work or sch
 To start, add this code to show the flow templates directly in your website:
 
 ```
-<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}&pagesize={number of templates}&destination={destination}"></iframe>
+<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
+&pagesize={number of templates}&destination={destination}"></iframe>
 ```
+
+**Note**: We added a line break so the code displays better on the page.
 
 | Parameter  | Description |
 |-------------------------|-----------|
@@ -54,7 +57,8 @@ If the user is in a certain context in your website or app, you might want to pa
 To show the top four templates about Wunderlist in German and to start the user with **myCoolList**:
 
 ```
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
+&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Embed the management of flows ##
@@ -104,8 +108,9 @@ For listing flows that the user has already authored and also to create flows fr
         });
         var widget = sdk.renderWidget('flows', {
             container: 'flowDiv'
-            environmentId: 'XXXXXXXXX'          // find environment id from browser URL when you click on 'my flows'
-                                                // ex: https://flow.microsoft.com/manage/environments/<environmentId/flows
+            environmentId: '[environmentId]'    // find environment id from browser URL when you 
+                                                // click on 'my flows'
+                                                //ex: https://flow.microsoft.com/manage/environments/[environmentId]/flows
         });
         widget.callbacks.GET_ACCESS_TOKEN = function(requestParam, widgetDoneCallback)
        {
@@ -122,7 +127,8 @@ For listing flows that the user has already authored and also to create flows fr
 You can find the `environmentId` by making the following api call, which returns the list of environments user has access to:
 
 ```
-GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01 
+GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
+?api-version=2016-11-01 
 ```
 
 This returns a JSON response with list of environments, from which you can pick any environment. You can look for the default user enviroment by checking the property `properties.isDefault=true`.
