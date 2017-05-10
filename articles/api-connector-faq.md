@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Frequently Asked Questions for certifying API connectors | Microsoft Flow"
+    pageTitle="API connector FAQ | Microsoft Flow"
     description="Find answers to questions about requirements, triggers, and other areas."
     services=""
     suite="flow"
@@ -18,7 +18,7 @@
    ms.date="05/06/2017"
    ms.author="astay"/>
 
-# Frequently Asked Questions for certifying API connectors in Microsoft Flow
+# API connector FAQ (Microsoft Flow)
 
 
 ## Requirements

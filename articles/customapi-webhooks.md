@@ -31,7 +31,7 @@ To complete the tutorial, you will need:
  - Basic understanding of the [OpenAPI Specification](http://swagger.io/specification/) (Swagger).
  - A [GitHub](https://www.github.com) account.
  - The [sample OpenAPI JSON file](http://pwrappssamples.blob.core.windows.net/samples/githubWebhookSample.json) for this tutorial.
- - Alternatively you can also use the [triggers UI](customapi-webhooks.md#creating-webhook-triggers-from-the-UI) to define webhook triggers, in case you don’t want to hand write the OpenAPI file.
+ - Alternatively you can also use the [triggers UI](customapi-webhooks.md#creating-webhook-triggers-from-the-ui) to define webhook triggers, in case you don’t want to hand write the OpenAPI file.
 
 ## The OpenAPI file
 

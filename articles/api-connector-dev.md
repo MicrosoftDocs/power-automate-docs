@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Develop API connectors for certification | Microsoft Flow"
+    pageTitle="Develop an API connector | Microsoft Flow"
     description="Describe your API, specify authentication type, build triggers and actions, and test."
     services=""
     suite="flow"
@@ -18,9 +18,9 @@
    ms.date="05/06/2017"
    ms.author="astay"/>
 
-# Develop API connectors for certification in Microsoft Flow
+# Develop an API connector (Microsoft Flow)
 
-Building a connector involves multiple steps. To get started - in [Microsoft Flow](https://flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **API connector**.
+Building a connector involves multiple steps. To get started - in [Microsoft Flow](https://flow.microsoft.com/), click or tap the **Settings** button (the gear icon) at the upper right of the page. Then click or tap **Custom Connectors**.
 
 ![Finding API connectors](./media/api-connectors-dev/finding-custom-apis.png)
 
