@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/28/2017"
+   ms.date="05/09/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -25,8 +25,8 @@
 1. My flow failed. How do I fix it?
 
 	1. Identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
-	- You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
-	- Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
+	2. You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
+	3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
 
 1. How do I use an advanced condition or a formula?
 	- Read about [adding conditions](add-a-condition.md).
@@ -51,6 +51,18 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-05-09
+
+- **Azure AD connector** - There is a new connector for performing administrator actions from Microsoft Flow, including creating users or adding them to groups.
+- **Office 365 Outlook improvements** - Flows can now be triggered by Shared Mailboxes and send mail to a Shared Mailbox. They can also set or read automatic replies.
+- **Available in Canada** - You can now create your flows in Canada. 
+- **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
+- **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Microsoft Flow admin center.
+- **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](https://docs.microsoft.com/Connectors/).
+- **Two partner services** - Two new partner services were released: Nexmo and Paylocity.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/canada-mailboxes-aad) about this release.
 
 ### Release 2017-04-27
 
@@ -100,7 +112,7 @@
 
 ### Release 2017-03-10
 
-- **Improved custom API experience** - You can now use a Postman collection to create a custom API, and edit, add, and test actions.
+- **Improved custom connector experience** - You can now use a Postman collection to create a custom connector, and edit, add, and test actions.
 - **Two new services** - Added PowerApps Notifications and PivotalTracker support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
@@ -132,7 +144,7 @@
 ### Release 2017-02-06
 
 - **Team flows** - Team flows make it possible for multiple people to own and manage a flow together, and, if someone leaves an organization, the flows they created can continue to run.
-- **Sharing custom APIs** - Custom APIs, like team flows, can be shared and collectively managed inside an organization.
+- **Sharing custom connectors** - custom connectors, like team flows, can be shared and collectively managed inside an organization.
 - **Gmail and LUIS support** - Connect to Gmail and Azure Cognitive Services' Language Understanding Intelligent Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/team-flows/) about this release.
@@ -225,7 +237,7 @@ You can now leverage valuable information when triggering a button flow, such as
 
 ### Release 2016-10-16 ###
 
-- **Custom APIs support more authentication types** - Custom APIs now support API Key authentication and can authenticate against any service that supports the full OAuth 2.0 specification.
+- **Custom connectors support more authentication types** - Custom connectors now support API Key authentication and can authenticate against any service that supports the full OAuth 2.0 specification.
 - **Three new services supported** -  We've added support for Basecamp 3, Blogger and PagerDuty.
 - **Designer improvements** - Improved performance, you can now update and repair your connections right from the "..." menu for every action, and we have added a new step called Terminate that you can use to end a flow's run.
 
@@ -337,7 +349,7 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 ### Release 2016-05-27 ###
 
 - **Browse templates by service** - There is a now a way to see all of the services that we support (without having to log in). From this page you can see a description of each of the services, and check out the templates that we have for that service.
-- **Create and use your custom APIs** - Just like you can create custom APIs in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
+- **Create and use your custom connectors** - Just like you can create custom connectors in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
 - **Test your flows before finishing** - Whenever you save a flow you can now see the results of the flow run live in the page, if you perform the starting action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) about this release.

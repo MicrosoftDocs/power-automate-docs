@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Embed the Flow experience | Microsoft Flow"
-    description="Embed the Microsoft Flow experiences into your website or app"
+    pageTitle="Integrate Microsoft Flow with websites and apps | Microsoft Flow"
+    description="Embed the Microsoft Flow experiences into your website or app."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,16 +15,16 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="10/22/2016"
+    ms.date="05/09/2017"
     ms.author="barathb"/>
 
-# Extend your app or website by integrating with Microsoft Flow #
+# Integrate Microsoft Flow with websites and apps #
 Embed Microsoft Flow right into your app or website to give users a simple way to automate their personal or professional tasks.
 
 To create flows, users will need either a **Microsoft Account** or a work or school account in **Azure Active Directory**. Microsoft Flow doesn't support, for example, a whitelabel solution that supports whatever identity your system  uses (unless it already uses Microsoft Accounts or AAD).
 
 ## Prerequisites ##
-- [Build an API](get-started-flow-dev.md) that connects your service to Microsoft Flow.
+- [Build a custom connector](register-custom-api.md) that connects your service to Microsoft Flow.
 - [Create and publish one or more templates](publish-a-template.md) that use your API.
 
 ## Show templates for your scenarios ##
@@ -63,10 +63,10 @@ Use the authenticated Flow SDK to allow users to create and manage flows directl
    >[AZURE.NOTE] All users who use Microsoft Flow in your application will be Microsoft Flow users. There is no way to hide the Microsoft Flow branding.
 
 ### Include the JavaScript for the authenticated SDK ###
-Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product. The SDK isn't versioned yet, but that change is in our near-term backlog.
+Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product.
 
 ```
-<script src="https://flow.microsoft.com/content/msflowsdk.js" async defer></script>
+<script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### Create a container to contain the view ###
@@ -94,16 +94,18 @@ We recommend that you style this container so that it appears with appropriate d
 Note that the iframe won't render properly below 320 pixels in width and won't fill content above 1200 pixels in width. Any height should work.
 
 ### Authentication against the SDK ###
-For listing flows that the user has already authored and also to create flows from templates, provide an authToken from the AAD.
+For listing flows that the user has already authored and also to create flows from templates, provide an authToken from AAD.
 
 ```
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
-            appId: 'XXXXXXXXXXXXXX' // get one from Flow team by emailing flowdev at service dot microsoft dot com
+            hostName:'https:/flow.microsoft.com'
         });
         var widget = sdk.renderWidget('flows', {
             container: 'flowDiv'
+            environmentId: 'XXXXXXXXX'          // find environment id from browser URL when you click on 'my flows'
+                                                // ex: https://flow.microsoft.com/manage/environments/<environmentId/flows
         });
         widget.callbacks.GET_ACCESS_TOKEN = function(requestParam, widgetDoneCallback)
        {
@@ -117,6 +119,14 @@ For listing flows that the user has already authored and also to create flows fr
 </script>
 ```
 
+You can find the `environmentId` by making the following api call, which returns the list of environments user has access to:
+
+```
+GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01 
+```
+
+This returns a JSON response with list of environments, from which you can pick any environment. You can look for the default user enviroment by checking the property `properties.isDefault=true`.
+
 In this example, `requestParam` is defined as:
 
 ```
@@ -126,7 +136,7 @@ export interface IRpcRequestParam {
 }
 ```
 
-Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this fuction are (errorResult: any, successResult: any). The successResult will depend on the callback type. For GetAccessToken the type is:
+Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this function are `(errorResult: any, successResult: any)`. The successResult will depend on the callback type. For `GetAccessToken` the type is:
 
 ```
 export interface IGetAccessTokenResult {

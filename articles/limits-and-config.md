@@ -88,7 +88,7 @@ These are limits for a single flow.
 The IP address of requests from flows depends on the region that the [environment](environments-overview-admin.md) that contains the flow is in. We don't currently publish FQDNs available for flow scenarios.
 
 #### Logic App Service
-Calls made from a flow directly go through the Azure Logic App service. Some examples of these include HTTP or HTTP + Swagger. These will come from the following IP addresses:
+Calls made from a flow directly go through the Azure Logic App service. Some examples of these include HTTP or HTTP + OpenAPI. These will come from the following IP addresses:
 
 |Region|Outbound IP|
 |-----|----|

@@ -40,7 +40,7 @@ Administrators can identify the region that hosts an environment by singing into
 
 ## What features are specific to a given region? ##
 
-Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom APIs.
+Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom connectors.
 
 For optimal performance, create your environment in the region that's closest to your users. For example, if your users are in Europe, create your environments in the Europe region. If your users are in the United States, create your environments in the United States region.
 
