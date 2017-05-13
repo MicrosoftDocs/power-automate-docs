@@ -15,14 +15,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/01/2016"
+   ms.date="05/01/2017"
    ms.author="mblythe"/>
 
 # Microsoft Flow for ISVs and Microsoft partners
 
-As a Microsoft partner or ISV, you can accelerate customer adoption by extending your products to integrate with your customer's data and business processes. Build connectors that enable your customers to connect to your products through Microsoft Flow. You can generate new leads for your business by building apps and publishing them to AppSource for new customers to test-drive.
+As a Microsoft partner or ISV, you can accelerate customer adoption by extending your products to integrate with your customers' data and business processes. Build connectors that enable your customers to connect to your products through Microsoft Flow. You can generate new leads for your business by building apps and publishing them to AppSource for new customers to test-drive.
 
-## Build a connector
+## Build an API connector
 
 Bring your product into the Microsoft cloud by building a connector that enables Microsoft Flow to talk to your service. [Learn more](api-connector-overview.md)
 

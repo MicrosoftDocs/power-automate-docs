@@ -31,8 +31,11 @@ To create flows, users will need either a **Microsoft Account** or a work or sch
 To start, add this code to show the flow templates directly in your website:
 
 ```
-<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}&pagesize={number of templates}&destination={destination}"></iframe>
+<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
+&pagesize={number of templates}&destination={destination}"></iframe>
 ```
+
+**Note**: We added a line break so the code displays better on the page.
 
 | Parameter  | Description |
 |-------------------------|-----------|
@@ -54,7 +57,8 @@ If the user is in a certain context in your website or app, you might want to pa
 To show the top four templates about Wunderlist in German and to start the user with **myCoolList**:
 
 ```
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
+&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Embed the management of flows ##
@@ -63,10 +67,10 @@ Use the authenticated Flow SDK to allow users to create and manage flows directl
    >[AZURE.NOTE] All users who use Microsoft Flow in your application will be Microsoft Flow users. There is no way to hide the Microsoft Flow branding.
 
 ### Include the JavaScript for the authenticated SDK ###
-Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product. The SDK isn't versioned yet, but that change is in our near-term backlog.
+Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product.
 
 ```
-<script src="https://flow.microsoft.com/content/msflowsdk.js" async defer></script>
+<script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### Create a container to contain the view ###
@@ -94,7 +98,7 @@ We recommend that you style this container so that it appears with appropriate d
 Note that the iframe won't render properly below 320 pixels in width and won't fill content above 1200 pixels in width. Any height should work.
 
 ### Authentication against the SDK ###
-For listing flows that the user has already authored and also to create flows from templates, provide an authToken from the AAD.
+For listing flows that the user has already authored and also to create flows from templates, provide an authToken from AAD.
 
 ```
 <script>
@@ -104,8 +108,9 @@ For listing flows that the user has already authored and also to create flows fr
         });
         var widget = sdk.renderWidget('flows', {
             container: 'flowDiv'
-            environmentId: 'XXXXXXXXX'         // find environment id from browser URL when you click on 'my flows'
-                                                                          // ex: https://flow.microsoft.com/manage/environments/<environmentId/flows
+            environmentId: '[environmentId]'    // find environment id from browser URL when you 
+                                                // click on 'my flows'
+                                                //ex: https://flow.microsoft.com/manage/environments/[environmentId]/flows
         });
         widget.callbacks.GET_ACCESS_TOKEN = function(requestParam, widgetDoneCallback)
        {
@@ -119,13 +124,14 @@ For listing flows that the user has already authored and also to create flows fr
 </script>
 ```
 
-You can find the `environmentId` by making the following api call which returns the list of environments user has access to:
+You can find the `environmentId` by making the following api call, which returns the list of environments user has access to:
 
 ```
-GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01 
+GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
+?api-version=2016-11-01 
 ```
 
-This returns a JSON response with list of environments, for which you can pick any environment. You can look for default user enviroment by checking the property properties.isDefault=true.
+This returns a JSON response with list of environments, from which you can pick any environment. You can look for the default user enviroment by checking the property `properties.isDefault=true`.
 
 In this example, `requestParam` is defined as:
 
@@ -136,7 +142,7 @@ export interface IRpcRequestParam {
 }
 ```
 
-Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this fuction are (errorResult: any, successResult: any). The successResult will depend on the callback type. For GetAccessToken the type is:
+Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this function are `(errorResult: any, successResult: any)`. The successResult will depend on the callback type. For `GetAccessToken` the type is:
 
 ```
 export interface IGetAccessTokenResult {
