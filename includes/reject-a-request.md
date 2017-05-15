@@ -1,0 +1,9 @@
+## Reject a request
+
+You can reject a request via email, the approvals center, or the Microsoft Flow app. To reject a request, follow the steps above for approving a request, but, select **Reject**, instead of **Approve**.
+
+After you confirm your decision (rejection of the request), the flow runs the following steps:
+
+1. Sends an email to the person who requested vacation.
+
+1. Updates the SharePoint Online list with the decision, and the comments from the approver.
