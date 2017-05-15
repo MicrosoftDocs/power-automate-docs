@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/09/2017"
+   ms.date="05/15/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -52,6 +52,15 @@
 
 ## What's new ##
 
+### Release 2017-05-12
+
+- **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
+- **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
+- **Admin view of licenses** - Administrators can see all of the Microsoft Flow and PowerApps licenses (both trial and paid) in the Microsoft Flow Admin Center.
+- **PowerApps Community Plan** -  The PowerApps Community plan is a free plan for individuals to explore, learn, and build skills for PowerApps, Microsoft Flow, and Common Data Service.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
+
 ### Release 2017-05-09
 
 - **Azure AD connector** - There is a new connector for performing administrator actions from Microsoft Flow, including creating users or adding them to groups.
@@ -69,7 +78,7 @@
 - **Build flows with parallel steps** - Create flows with parallel execution: meaning you can have two or more steps that run at exactly the same time.
 - **Five new services supported** - Five new services: Approvals, Benchmark Email, Capsule CRM, LiveChat, and Outlook Customer Manager.
 - **Monitor retries for actions** - Microsoft Flow will retry when there are failures with services. Now see how many automatic retries occurred and the details of what happened.
-
+	
 [Read more and ask questions](https://flow.microsoft.com/blog/parallel-actions/) about this release.
 
 ### Release 2017-04-17 - Q1 Update for Microsoft Flow
