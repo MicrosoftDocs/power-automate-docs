@@ -60,8 +60,6 @@ The SharePoint Online list that you create must include the following columns:
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
 
-[AZURE.INCLUDE [INCLUDEDCONTENT](../includes/modern-approvals-setup.md)]
-
 ### Create your flow from the blank template
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
