@@ -1,4 +1,4 @@
-### Create your flow from the blank template
+<!--### Create your flow from the blank template-->
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 

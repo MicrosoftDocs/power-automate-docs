@@ -1,6 +1,4 @@
-### Add an email action for approvals
-
-Follow these steps to send an email if the vacation request is approved:
+<!--### Add an email action for approvals-->
 
 1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
 
@@ -14,12 +12,13 @@ Follow these steps to send an email if the vacation request is approved:
 
      ![select send and email action](./media/modern-approvals/select-send-email-yes.png)
 
-1. Configure the **Send an email** card to suit your needs.
+1. Configure the email card to suit your needs.
 
      Note: **To**, **Subject**, and **Body** are required.
 
-     This card is the email template for approved vacation requests.
-
-     ![configure approved email template](./media/modern-approvals/yes-email-config.png)
+     This card is a template for the email that is sent when the status of the vacation request changes.
 
      Note: In the **Body** box on the **Send an email** card, use the **Comments** token from the **Approvals - Start an approval** action.
+
+
+

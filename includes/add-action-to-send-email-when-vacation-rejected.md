@@ -1,6 +1,4 @@
-### Add an email action for rejections
-
-Follow these steps to configure the email template that is used if the vacation request is rejected:
+<!--### Add an email action for rejections-->
 
 1. Select **Add an action** on the **IF NO, DO NOTHING** branch of the condition.
 
@@ -16,6 +14,4 @@ Follow these steps to configure the email template that is used if the vacation 
 
      Note: **To**, **Subject**, and **Body** are required.
 
-     This card is the email template for rejected vacation requests.
-
-     ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+     This card represents the template for the email that's sent when the status of the vacation requests change.

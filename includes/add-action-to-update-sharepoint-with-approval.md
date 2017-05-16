@@ -1,4 +1,4 @@
-### Add an update action for approved requests
+<!--### Add an update action for approved requests-->
 
 1. Select **Add an action**.
 
@@ -16,4 +16,4 @@
 
      Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-     ![update item configuration](./media/modern-approvals/configure-update-item.png)
+     <!--![update item configuration](./media/modern-approvals/configure-update-item.png)-->

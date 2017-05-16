@@ -1,3 +1,4 @@
+
 1. Select **New step**, and then select **Add an action**.
 
      ![new step](./media/modern-approvals/select-sharepoint-add-action.png)
