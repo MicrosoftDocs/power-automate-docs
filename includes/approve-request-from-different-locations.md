@@ -1,6 +1,6 @@
-## Approve a request
+<!--## Approve a request-->
 
-If you're the approver in an approval flow, you'll receive an email whenever someone creates a request. The approval request is also sent to the approvals center. You can approve or reject requests from the email, the approvals center, or the Microsoft Flow app.
+If you're an approver in an approval flow, you receive an email whenever someone creates a request. The approval request is also sent to the approvals center. You can then approve or reject requests from the email, the approvals center, or the Microsoft Flow app.
 
 To approve a request:
 

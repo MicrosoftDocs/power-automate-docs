@@ -1,4 +1,4 @@
-## View pending approval requests
+<!--## View pending approval requests-->
 
 View all pending approval requests by following these steps:
 

@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Regions overview for Microsoft Flow | Microsoft Flow"
-    description="Overview with question and answer about regions in Microsoft Flow"
+    pageTitle="Create a modern approval workflow with multiple approvers | Microsoft Flow"
+    description="Create a modern approval workflow with multiple approvers "
     services=""
     suite="flow"
     documentationCenter="na"
@@ -20,19 +20,19 @@
 
 # Create a sequential approval with Microsoft Flow
 
-In this walk-through, we create a flow that requires pre-approval from one person (the pre-approver) before the final approver receives the request to approve or reject the request. If pre-approver rejects the request, final approver does not receive the request.
+In this walkthrough, we create a flow that requires pre-approval from one person (the pre-approver) before the final approver receives the request to approve or reject the request. If pre-approver rejects the request, final approver does not receive the request.
 
-Note: Go to the [modern approvals walk-through](./modern-approvals.md) if you want to see a detailed walk-through to create, and test a singler approver flow.
+Note: Go to the [modern approvals walkthrough](./modern-approvals.md) if you want to see a detailed walkthrough to create, and test a single approver flow.
 
 ## Create an approval flow
 
-In this walk-through, we'll create a flow that performs the following steps:
+In this walkthrough, we'll create a flow that performs the following steps:
 
 1. Starts when a vacation request is created in a SharePoint Online list.
 
 1. Adds the vacation request to the approval center, and then emails the request to the pre-approver.
 
-1. Sends the pre-approver's decision via email to the person who requested vacation, after the pre-approver makes a decision.
+1. Sends the pre-approver's decision via email to the person who requested vacation, after the pre-approver decides.
 
 1. Updates the SharePoint Online list with the pre-approver's decision, and any comments from the pre-approver.
 
@@ -96,7 +96,7 @@ Follow these steps to send an email if the vacation request is pre-approved:
 ### Add an update action for pre-approved requests
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
-<!--Need to update this to update the pre-approved elelement-->
+<!--Need to update this to update the pre-approved element-->
    [update item configuration](./media/modern-approvals/configure-update-item.png)
 
 ### Add an email action for pre-approval rejections
@@ -185,8 +185,13 @@ Now that we've created the flow, it's time to test it.
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/request-vacation-approval.md)]
 
+Your request should resemble this image:
+<!--update this image -->
+![vacation request](./media/modern-approvals/vacation-request.png)
+
 ## View pending approval requests
 
+<!--update last image -->
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/view-pending-approvals.md)]
 
 ## Pre-approve a request
@@ -195,15 +200,10 @@ Now that we've created the flow, it's time to test it.
 
 ## Approve the request
 
+The steps to approve a request are identical to the steps to [pre-approve a request](modern-approvals-sequential.md/#Pre-approve-a-request)
+
+Note: The final approver gets the vacation request only after the request has been pre-approved.
+
 ## Reject a request
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/reject-a-request.md)]
-
-
-
-
-
-
-
-
-
