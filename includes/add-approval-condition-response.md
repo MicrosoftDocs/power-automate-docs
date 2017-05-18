@@ -12,7 +12,7 @@
 
 1. Select the **Value** box, and then enter **Approve** into the box.
 
-> [AZURE.NOTE]The valid responses to the SharePoint Online list requests are "Approve" and "Reject". These responses are case-sensitive.
+> [AZURE.NOTE]The valid responses to the **Approvals - Start an approval** action are "Approve" and "Reject". These responses are case-sensitive.
 
 1. Your **Condition** card should now resemble this image:
 

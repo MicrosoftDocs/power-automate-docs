@@ -12,6 +12,4 @@
 
 1. Configure the **Send an email 2** card to suit your needs.
 
-     Note: **To**, **Subject**, and **Body** are required.
-
-     This card represents the template for the email that's sent when the status of the vacation requests change.
+     This card represents the template for the email that's sent when the status of vacation requests change.

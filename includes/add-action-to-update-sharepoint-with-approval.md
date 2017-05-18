@@ -1,8 +1,6 @@
 <!--### Add an update action for approved requests-->
 
-1. Select **Add an action**.
-
-     ![add new action](./media/modern-approvals/configure-approved-email.png)
+1. Select **Add an action** from the **IF YES** branch.
 
 1. Enter **update** into the search box on the **Choose an action** card.
 
