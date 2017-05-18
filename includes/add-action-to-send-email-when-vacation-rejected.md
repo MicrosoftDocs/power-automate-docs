@@ -1,6 +1,6 @@
 <!--### Add an email action for rejections-->
 
-1. Select **Add an action** on the **IF NO, DO NOTHING** branch of the condition.
+1. Select **Add an action** on the **IF NO, DO NOTHING** branch of the pre-approval condition.
 
 1. Enter **Send email** into the search box of the **Choose an action** card.
 
@@ -10,6 +10,6 @@
 
      ![select the send email action](./media/modern-approvals/select-send-email-no.png)
 
-1. Configure the **Send an email 2** card to suit your needs.
+1. Configure the **Send an email 3** card to suit your needs.
 
      This card represents the template for the email that's sent when the status of vacation requests change.

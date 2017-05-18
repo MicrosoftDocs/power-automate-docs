@@ -128,68 +128,65 @@ This action sends an email to the *final approver* so be sure to use an email ad
 
 ## Add email action for final approval
 
-1. Use the steps from [Add an email action for pre-approvals](modern-approvals-sequential.md/#Add-an-email-action-for-pre-approvals) earlier in the walkthrough to add, and then configure a an action that sends an email when the vacation request is approved.
+1. Use the steps from [Add an email action for pre-approvals](modern-approvals-sequential.md/#Add-an-email-action-for-pre-approvals) earlier in the walkthrough to add, and then configure an action that sends an email when the vacation request is approved.
 
-1. Your card should resemble this image:
+1. When you're finished, your card should resemble this image:
 
-<!--update this image -->
-<!--update the card name? -->
+   ![final approval email template](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
 
 ## Add action to update SharePoint with approval
 
-1. Use the steps from [Add an update action for approved requests](modern-approvals-sequential.md/#Add-an-update-action-for-pre-approved-requests) earlier in the walkthrough to add, and then configure an action that updates SharePoint when the vacation request is approved.
+1. Use the steps from [Add an update action for pre-approved requests](modern-approvals-sequential.md/#Add-an-update-action-for-pre-approved-requests) earlier in the walkthrough to add, and then configure an action that updates SharePoint when the vacation request is approved.
 
-1. The card should resemble this image:
+1. When you're finished, the card should resemble this image:
 
-<!--update this image -->
-     ![update item configuration](./media/modern-approvals/configure-update-item.png)
+     ![update item configuration](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
 ### Add email action for final rejection
 
-1. Use the steps from [Add an email action for rejections](modern-approvals-sequential.md/#Add-an-email-action-for-pre-approval-rejections) earlier in the walkthrough to add, and then configure an action that sends an email when the vacation request is rejected.
+1. Use the steps from [Add an email action for pre-approval rejections](modern-approvals-sequential.md/#Add-an-email-action-for-pre-approval-rejections) earlier in the walkthrough to add, and then configure an action that sends an email when the vacation request is rejected.
 
-1. The card should resemble this image:
+1. When you're finished, the card should resemble this image:
 
-<!--update this image -->
-   ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+   ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
 
 ## Add action to update SharePoint with rejection
 
-1. Use the steps from [Add update action for rejected requests](modern-approvals-sequential.md/#Add-update-action-for-rejected-requests) earlier in the walkthrough to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
+<!--the section that this section refers to comes after this one...swap who referencing who :-))-->
 
-1. The card should resemble this image:
+1. Use the steps from [Add an update action for rejected requests](modern-approvals-sequential.md/#Add-an-update-action-for-rejected-requests) earlier in the walkthrough to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
 
-<!--update this image -->
+1. When you're finished, the card should resemble this image:
+
+   ![update sharepoint for rejected requests](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
 ### Add an email action for pre-approval rejections
 
-Follow these steps to configure the email template that is used if the pre-approval is rejected:
+Follow these steps to configure the email template that is used if the vacation request is rejected by the pre-approver:
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-<!--update this image -->
-   ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+   ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-### Add update action for rejected requests
+### Add an update action for rejected requests
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   ![update item card](./media/modern-approvals/configure-update-item-no.png)
+   ![update item card](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
 
-Now that we've created the flow, it's time to test it.
+Now that we've created the flow, let's see it in action.
 
 ## Request an approval
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/request-vacation-approval.md)]
 
 Your request should resemble this image:
-<!--update this image -->
-![vacation request](./media/modern-approvals/vacation-request.png)
+
+![vacation request](./media/sequential-modern-approvals/vacation-request.png)
 
 ## View pending approval requests
 
-<!--update last image -->
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/view-pending-approvals.md)]
 
 ## Pre-approve a request

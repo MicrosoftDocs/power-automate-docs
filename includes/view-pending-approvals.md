@@ -10,6 +10,6 @@ View all pending approval requests by following these steps:
 
      ![approvals tab](./media/modern-approvals/approvals-tab.png)
 
-1. View all **Received requests**.
+1. Fina all pending approval requests under **Received requests**.
 
      ![pending requests](./media/modern-approvals/pending-requests.png)
