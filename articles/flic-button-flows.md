@@ -50,7 +50,7 @@ After you've linked a Flic event to Microsoft Flow, you can then select that Fli
 
 In this walkthrough, we use a Flic to run a flow that records the time a consultant spends at each client. The consultant presses the Flic once upon arrival, and then presses it again, just before departure from the client. Each press of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
-Note: Be sure you've used the Flic mobile app to pair, and configure at least one Flic's **click** action to trigger Microsoft Flow. In this screenshot, I've configured the **click** action to trigger Microsoft Flow. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
+Note: Be sure you've used the Flic mobile app to pair, and configure at least one **click** action to trigger Microsoft Flow. In this screenshot, I've configured the **click** action to trigger Microsoft Flow. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
 
    ![flic config](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -58,7 +58,7 @@ Let's get started creating our flow.
 
 ### Start with a template
 
-1. Go to [Microsoft Flow](https://flow.microsoft.com), select **Sign in**, and then provide your credentials.
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
      ![sign in](./media/flic-button-flows/sign-into-flow.png)
 
@@ -70,19 +70,19 @@ Let's get started creating our flow.
 
      ![select template](./media/flic-button-flows/flic-templates.png)
 
-### Create a Google Sheet
+### Create a spreadsheet in Google Sheets
 
-1. Review the template's details and note that this template requires a Google Sheet.
+1. Review the template's details and note that this template requires a spreadsheet in Google Sheets.
 
    ![review template details](./media/flic-button-flows/flic-template-details.png)
 
-1. Create a Google Sheet with two columns named **ClickType** and **Timestamp**.
+1. In Google Sheets, create a spreadsheet that contains a sheet with columns named **ClickType** and **TimeStamp**.
 
-      Tip: You name columns in Google Sheets by entering the column name at the top of the column. So, your Google Sheet should appear like this screenshot:
+      Tip: You name columns in Google Sheets by entering the column name at the top of the column. So, your sheet should appear like this screenshot:
 
-   ![google sheet](./media/flic-button-flows/flic-google-sheet.png)
+   ![Google Sheet](./media/flic-button-flows/flic-google-sheet.png)
 
-   Note: You use this Google Sheet later in this walkthrough.
+   Note: You use this sheet later in this walkthrough.
 
 ### Add the Flic trigger to your flow
 
@@ -104,25 +104,25 @@ Let's get started creating our flow.
 
    Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow.
 
-   **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long squeeze on the Flic triggers the flow.
+   **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long press on the Flic triggers the flow.
 
    You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to record the time you leave a client.
 
-### Configure the Google Sheet settings
+### Configure the sheet
 
    On the **Insert row** card:
 
-1. Select the Google Sheet you created earlier from the **File** list.
+1. Select the spreadsheet you created earlier from the **File** list.
 
-1. Select the worksheet from the **Worksheet** list.
+1. Select the sheet from the **Worksheet** list.
 
-   Note: Two additional boxes appear on the **Insert row** card after you select the worksheet. These boxes represent the two columns in the Google Sheet you created earlier.
+   Note: Two additional boxes appear on the **Insert row** card after you select the sheet. These boxes represent the two columns in the sheet you created earlier.
 
 1. Select the **ClickType** box, and then select the **Click type** token.
 
 1. Select the **Timestamp** box, and then select the **Click time** token.
 
-     ![configure google sheets data](./media/flic-button-flows/flick-insert-row-card.png)
+     ![configure Google Sheets data](./media/flic-button-flows/flick-insert-row-card.png)
 
 ### Confirm the email settings are correct
 
@@ -136,7 +136,7 @@ Let's get started creating our flow.
 
      ![save your flow](./media/flic-button-flows/save.png)
 
-If you've followed along, pressing the Flic once triggers the flow. The flow then records the click type and the current time in the Google Sheet, and then sends an email to you.
+If you've followed along, pressing the Flic once triggers the flow. The flow then records the click type and the current time in the sheet, and then sends an email to you.
 
 1. Press your Flic once.
 
