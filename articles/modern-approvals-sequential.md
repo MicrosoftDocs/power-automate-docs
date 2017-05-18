@@ -68,13 +68,14 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
 
+<!--update image-->
    ![sharepoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ### Add a profile action
 
 [AZURE.INCLUDE [INCLUDEDCONTENT](../includes/add-get-profile-action.md)]
 
-   ![save flow](./media/modern-approvals/save.png)
+   ![save flow](./media/sequential-modern-approvals/save.png)
 
 ### Add an approval action for pre-approvals
 
@@ -108,7 +109,7 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 If you've followed along, your flow should resemble this screenshot:
 <!--update this image -->
-![overview of flow](./media/modern-approvals/completed-flow.png)
+![overview of flow](./media/sequential-modern-approvals/completed-flow.png)
 
 <!--add save step-->
 
