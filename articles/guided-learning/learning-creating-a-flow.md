@@ -45,7 +45,7 @@ To highlight that, let’s go ahead and start with one of these templates that I
 
 We are going to use this template that will put all my email attachments into a folder in my OneDrive. I don’t know about you guys, but searching for attachments through email is a nightmare for me and this Flow saves me time as I have one central location for all my incoming documents.
 
-2. I click the **Save Office 365 email attachments to OneDrive for business** template.
+Click the **Save Office 365 email attachments to OneDrive for business** template.
 
 ![Office 365 email](./media/learning-creating-a-flow/learning-office-365-email.png)
 
