@@ -14,7 +14,7 @@
 <tags
    ms.service="flow"
    ms.devlang="na"
-   ms.topic="create-a-flow-article"
+   ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="05/11/2017"
