@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Start flows with Flic buttons| Microsoft Flow"
+    pageTitle="Start flows with Flic buttons | Microsoft Flow"
     description="Easily start button flows with physical buttons from Flic by Shortcut Labs."
     services=""
     suite="flow"
@@ -136,11 +136,11 @@ Let's get started creating our flow.
 
      ![save your flow](./media/flic-button-flows/save.png)
 
-If you've followed along, pressing the Flic once triggers the flow. The flow then records the click type and the current time in the sheet, and then sends an email to you.
+If you've followed along, pressing the Flic once triggers the flow. The flow then records the click type and the current time in the sheet and then sends an email to you.
 
 1. Press your Flic once.
 
-1. Open your Google sheet. You should see the **ClickType** and the **Timestamp** columns populated with the "click" and the time, respectively.
+1. Open your worksheet in Google Sheets. You should see the **ClickType** and the **Timestamp** columns populated with the "click" and the time, respectively.
 
      ![see run results](./media/flic-button-flows/flic-google-sheet-after-run.png)
 
