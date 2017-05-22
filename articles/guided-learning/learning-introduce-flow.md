@@ -41,7 +41,20 @@ In this course, we'll introduce Microsoft Flow and its concepts, show you how yo
 
 Microsoft Flow isn't limited to **applications on the internet**.  You can include **on-premise data** in your flows, too, like from SharePoint and SQL Server.
 
-## What you can do with Microsoft Flow
+## What you can do with Microsoft Flow?
+
+### Create and administer with web app or mobile app
+
+To create and administer flows, you can use the **web app**, or you can use the **mobile app** (**iOS** and **Android**, **Windows** ).  Whichever platform you choose, it’s easy to diagnose issues, synchronize data, and more:
+
+![flow ios mobile](./media/learning-introduce-flow/ios-mobile.png)
+
+- Turn flows on or off from wherever you are.
+- See when a flow has failed.
+- Review detailed run history reports.
+- View and filter runs by notification type.
+
+### Create automated workflows
 
  You can use Microsoft Flow to create **automated workflows** between your favorite applications and services, to synchronize files, get notifications, collect data, and more.  The list of applications and services you can use with Microsoft Flow is constantly expanding. 
 
@@ -60,7 +73,6 @@ A common use of Microsoft Flow is to **recieve notifications**. For example, whe
 
 ![dynamics 365 salesforce](./media/learning-introduce-flow/dynamics-365-salesforce.png)
 
-
 You can also use Microsoft Flow to copy files. For example, whenever a file is added to a folder in DropBox, you can automatically copy it to a folder in SharePoint to **inform your team** when the file is there.
 
 ![Dropbox to SharePoint](./media/learning-introduce-flow/dropbox-to-sharepoint.png)
@@ -74,33 +86,30 @@ And finally, one of the most popular ways that people use Flow is to **automate 
 Let's jump into the tool and I'll show you around briefly.
 We have tons of information for you to learn about using Microsoft Flow.
 
-![Dropbox to SharePoint](./media/learning-introduce-flow/start-of-tour.png) 
+![Start of tour](./media/learning-introduce-flow/start-of-tour.png) 
 
-You see we have menus for My flows, Templates, Approvals Services and Learn. For now, let's focus on Learn.
+Here on the home page, you see we have menus for: 
+- **My flows**, where our flows live. 
+- **Templates**, which is a great place to start. 
+- **Approvals center**, where you can automate and streamline your approvals process. 
+- **Services** where you can connect from one service to another. 
+- **Learn**, where you can learn about Microsoft Flow. 
+
+![What you can do](./media/learning-introduce-flow/what-you-can-do.png)
+
+For now, let's focus on **Learn**.
 
 Here we have:
-- Guided Learning to walk you through how to use  Microsoft Flow - all the way from beginning techniques to advanced scenarios.
-- Documentation, which is where our advanced features live. For problems understanding a feature or function,  you can really do a deep dive here to figure things out.
-- Support is a great place to find help.
-- Community is a place to get plugged into and find out how other people are using Microsoft Flow.
-
-![Dropbox to SharePoint](./media/learning-introduce-flow/what-you-can-do.png) 
+- **Guided Learning**, to walk you through how to use  Microsoft Flow - all the way from beginning techniques to advanced scenarios.
+- **Documentation**, which is where our advanced topics live. For problems understanding a feature or function,  you can really do a deep dive here to figure things out.
+- **Support** is a great place to find help.
+- **Community** is a place to get plugged into and find out how other people are using Microsoft Flow. 
 
 You can have a look at some of our most popular Templates when you browse the **Template Landing** page. Click the **Templates** menu to see the list.  
 
-![Dropbox to SharePoint](./media/learning-introduce-flow/template-page.png)
+![Template landing page](./media/learning-introduce-flow/template-page.png)
 The templates list should give you some great ideas for flows you might like to try.  Got a great idea for a flow you don't see in that list?  No problem!  You can **create your own** from scratch and, if you want, **share** it with the community! We'll talk more on that in the next section.
 
-## Creating and Administering Flows
-
-To create and administer flows, you can use the web app, or you can use the mobile app (**iOS** and **Android**, **Windows** ).  Whichever platform you choose, it’s easy to diagnose issues, synchronize data, and more:
-
-![flow ios mobile](./media/learning-introduce-flow/ios-mobile.png)
-
-- Turn flows on or off from wherever you are.
-- See when a flow has failed.
-- Review detailed run history reports.
-- View and filter runs by notification type.
  
 
 ## Next Session
