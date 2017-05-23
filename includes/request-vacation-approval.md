@@ -1,5 +1,3 @@
-<!--## Request an approval-->
-
 Create a vacation request in the SharePoint Online list you created earlier.
 
 After you save this request, the flow triggers, and then:
