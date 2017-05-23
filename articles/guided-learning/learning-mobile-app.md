@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/13/2017"
+   ms.date="05/23/2017"
    ms.author="v-joaloh"/>
 
 # Guided Learning for the mobile app for Microsoft Flow
