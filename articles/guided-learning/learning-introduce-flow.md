@@ -22,14 +22,13 @@
 
 # Guided Learning for Microsoft Flow
 
-Welcome to **Guided Learning** for Microsoft Flow. This self-paced online course that explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
+Welcome to **Guided Learning** for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
 
-This  **Guided Learning**  course currently has a Getting Started section, and we will add content over the next few weeks. The course is designed to provide guidance in understandable chunks, with a logical flow that helps you learn concepts, details, and examples. It includes lots of visuals to help you learn, too. 
+The  **Guided Learning** course is designed to provide guidance in understandable chunks, with a logical flow that helps you **learn concepts and details by example**. It includes lots of visuals to help you learn, too. 
 
 If you're a **beginner** with Microsoft Flow, this course will get you going, and if you're a Microsoft Flow **veteran** this course will tie concepts together, and fill in the gaps. We hope you enjoy the course, and look forward to including more content in the future.
 
 This Guided Learning course is an ongoing **work in progress**.  Please **let us know** how we're doing, and **other topics you want to see** in this course.
-
 
 ## What is Microsoft Flow?
 
@@ -49,10 +48,10 @@ To create and administer flows, you can use the **web app**, or you can use the 
 
 ![flow ios mobile](./media/learning-introduce-flow/ios-mobile.png)
 
-- Turn flows on or off from wherever you are.
-- See when a flow has failed.
-- Review detailed run history reports.
-- View and filter runs by notification type.
+- **Turn flows on or off** from wherever you are.
+- **See** when a flow has **failed**.
+- **Review** detailed run history **reports**.
+- **View** and **filter** runs by notification type.
 
 ### Create automated workflows
 
@@ -60,16 +59,15 @@ To create and administer flows, you can use the **web app**, or you can use the 
 
  ![Flow services](./media/learning-introduce-flow/services.png)
 
- Some examples of tasks you can automate with Microsoft Flow are:
+ Some examples of tasks you can **automate** with Microsoft Flow are:
 
-- Instantaneously receive and respond to critical notifications or emails.
-- Capture, track, and follow-up with new sales leads.
-- Copy files from one service to another.
-- Collect data about your business and inform your team.
-- Automate approvals.
+- Instantaneously **receive and respond** to critical notifications or emails.
+- **Capture, track, and follow-up** with new sales leads.
+- **Copy files** from one service to another.
+- **Collect data** about your business and inform your team.
+- **Automate** approvals.
 
-
-A common use of Microsoft Flow is to **recieve notifications**. For example, whenever a sales lead is added in Dynamics 365 or Sales Force, you can instantly receive an email about the lead, or receive a push notification to the mobile app on your phone. A great way to follow-up with **new sales leads**.
+A common use of Microsoft Flow is to **recieve notifications**. For example, whenever a sales lead is added in Dynamics 365 or Sales Force, you can instantly **receive an email** about the lead, or **receive a push notification** to the mobile app on your phone. A great way to follow-up with **new sales leads**.
 
 ![dynamics 365 salesforce](./media/learning-introduce-flow/dynamics-365-salesforce.png)
 
@@ -83,7 +81,7 @@ And finally, one of the most popular ways that people use Flow is to **automate 
 
 ## A brief tour of Microsoft Flow
 
-Let's jump into the tool and I'll show you around briefly.
+Let's jump into the tool and I'll show you around.
 We have tons of information for you to learn about using Microsoft Flow.
 
 ![Start of tour](./media/learning-introduce-flow/start-of-tour.png) 
@@ -92,26 +90,31 @@ Here on the home page, you see we have menus for:
 - **My flows**, where our flows live. 
 - **Templates**, which is a great place to start. 
 - **Approvals center**, where you can automate and streamline your approvals process. 
-- **Services** where you can connect from one service to another. 
-- **Learn**, where you can learn about Microsoft Flow. 
+- **Services**, where you can connect from one service to another. 
+- **Learn**, where you can gain information that will help you ramp-up quickly on Microsoft Flow. 
 
-![What you can do](./media/learning-introduce-flow/what-you-can-do.png)
+![What you can do](./media/learning-introduce-flow/what-you-can-do.png) 
 
 For now, let's focus on **Learn**.
 
 Here we have:
-- **Guided Learning**, to walk you through how to use  Microsoft Flow - all the way from beginning techniques to advanced scenarios.
-- **Documentation**, which is where our advanced topics live. For problems understanding a feature or function,  you can really do a deep dive here to figure things out.
-- **Support** is a great place to find help.
-- **Community** is a place to get plugged into and find out how other people are using Microsoft Flow. 
+- **Guided Learning** can walk you through using  Microsoft Flow - all the way from beginning techniques to advanced scenarios.
+- **Documentation** is where our advanced topics live. For problems understanding a feature or function,  you can really do a deep dive here to figure things out.
+- **Support** is a great landing place to find help.
+- **Community** is a place to plug into and find out how other people are using Microsoft Flow.
+- **Give feedback** taps into a power users community and allows you to **send comments and questions** to developers and users of Microsoft Flow.
+- **Blog** keeps you up to date on the latest developments and releases in the Microsoft Flow ecosystem.
+- **Pricing** can help you choose the right plan for you or your business.
 
-You can have a look at some of our most popular Templates when you browse the **Template Landing** page. Click the **Templates** menu to see the list.  
+You can have a look at some of our most popular Templates when you browse the **Template Landing** page. 
+
+**Click** the **Templates** menu to see the list.  
 
 ![Template landing page](./media/learning-introduce-flow/template-page.png)
 The templates list should give you some great ideas for flows you might like to try.  Got a great idea for a flow you don't see in that list?  No problem!  You can **create your own** from scratch and, if you want, **share** it with the community! We'll talk more on that in the next section.
 
  
 
-## Next Session
+## Next Lesson
 
 Now that you've gotten a taste of what Microsoft Flow is and what it can do, let's take a look at what makes a flow. 
