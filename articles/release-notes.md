@@ -52,6 +52,19 @@
 
 ## What's new ##
 
+### Release 2017-05-23
+
+- **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that bring together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
+- **Widgets on iOS and Android** - Flow widgets are button shortcuts which provide you an easier & faster way for button triggering straight from your home screen.
+- **Create "error handling" steps** -  Define any number of steps to run after the failure of an action, for example, get a notification immediately if your flow fails to create a record in Dynamics 365.
+- **Integer and float variables** -  Initialize and increment or decrement counters inside of a flow run to count how many times a certain set of logic runs.
+- **Flow details page** - When you go to your My flows list and select a flow you'll see a new flow details page with everything that is relevant for your flow, such as who has access and the run history.
+- **Flow run quotas for admins** - Admins can now monitor flow run usage across an organization against the common company run quota, and, get a quota breakdown to understand what licenses contribute to their quota.
+- **HTTP request trigger improvements** - Use different HTTP methods and add path segments for the Request trigger.
+- **Two partner connectors** - Microsoft Flow can now connect to Parserr, and email parsing service, and Cognito Forms, an online forms service.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/error-handling/) about this release.
+
 ### Release 2017-05-12
 
 - **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
