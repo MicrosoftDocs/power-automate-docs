@@ -2,11 +2,11 @@
 
      ![new step](../includes/media/modern-approvals/select-sharepoint-add-action.png)
 
-1. Enter **profile** into the **Choose an action** search box.
+1. Enter **get manager** into the **Choose an action** search box.
 
      ![search for profile](../includes/media/modern-approvals/search-for-profile.png)
 
-1. Find, and then select the **Office 365 Users - Get my profile** action.
+1. Find, and then select the **Office 365 Users - Get manager** action.
 
      ![select office users](../includes/media/modern-approvals/select-my-profile.png)
 

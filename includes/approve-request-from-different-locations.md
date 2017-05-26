@@ -40,7 +40,7 @@ To approve a request:
 
      ![select confirm](../includes/media/modern-approvals/mobile-approval.png)
 
-1. The success page shows; this page indicates that your approval has been recorded.
+1. The success page shows, indicating that your approval has been recorded.
 
      ![success page](../includes/media/modern-approvals/mobile-approval-confirmation.png)
 

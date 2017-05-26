@@ -4,7 +4,7 @@
 
 1. Select **New step**, and then select **Add an action**.
 
-     ![new step](../includes/media/modern-approvals/select-profile-add-action.png)
+     ![new step](../includes/media/modern-approvals/select-sharepoint-add-action.png)
 
 1. Enter **approval** into the **Choose an action** search box.
 
