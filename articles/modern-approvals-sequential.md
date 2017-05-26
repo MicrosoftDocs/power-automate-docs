@@ -110,7 +110,7 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
-   [update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
+   ![update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
 
 ## Get the pre-approver's manager
 
@@ -118,7 +118,7 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 1. The **Get manager 2** card should look like this when you are finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
 
-   [get pre-approver's manager](./media/sequential-modern-approvals/get-pre-approver-manager.png)
+   ![get pre-approver's manager](../includes/media/modern-approvals/get-pre-approver-manager.png)
 
 ## Add the final approval action
 
@@ -150,7 +150,7 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 ## Send email with pre-approval rejection
 
-Follow these steps to configure the email template that is used if the vacation request is rejected by the pre-approver:
+Expand the **Condition** card, and then perform the following steps:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
@@ -168,15 +168,15 @@ Follow these steps to configure the email template that is used if the vacation 
 
 1. When you're finished, the card should resemble this image:
 
-   ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
+   ![configuration for rejected requests](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 ## Update SharePoint with final rejection
 
-1. Use the steps from [Update SharePoint with final rejection](modern-approvals-sequential.md/#Update-SharePoint-with-final-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
+1. Use the steps from [Update SharePoint with pre-approval rejection](modern-approvals-sequential.md/#Update-SharePoint-with-pre-approval-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
 
 1. When you're finished, the card should resemble this image:
 
-   ![update item card](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
+   ![update item card](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
 
 1. Select **Update flow** to save the work we've done.
 

@@ -150,7 +150,7 @@ After you save your flow, select **Edit flow** from the top of the screen, and t
 
 This approval action sends vacation requests to the pre-approver's email address that's entered into the **Assigned To** box.
 
-Note: Here, I've used the **Email** token from **Get manager** in the **Assigned To** box.
+Note: Here, I've used a static email address in the **Assigned To** box. However, you may want to use the email address of the employee's manager as the pre-approver. If your organization uses Office 365, you can use the [Office 365 Users](https://flow.microsoft.com/services/shared_office365users/office-365-users/) service to dynamically get the email address for person's manager while the flow runs.
 
 ## Add a condition
 
@@ -216,13 +216,19 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
      Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   [update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
+    ![update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
+
+## Get the pre-approver's manager
+
+1. Use the [Get the manager for the person who created the vacation request](modern-approvals-sequential.md/#Get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
+
+1. The **Get manager 2** card should look like this when you are finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
+
+   ![get pre-approver's manager](../includes/media/modern-approvals/get-pre-approver-manager.png)
 
 ## Add the final approval action
 
 1. Use the [add an approval action for pre-approvals](modern-approvals-sequential.md/#Add-an-approval-action-for-pre-approvals) steps we did earlier to add, and then configure another **Start an approval** action. This action sends an email request for final approval.
-
-Note: Here, I've used a static email address in the **Assigned To** box. However, you may want to use the email address of the pre-approver's manager as the final approver. If your organization uses Office 365, you can use the [Office 365 Users](https://flow.microsoft.com/services/shared_office365users/office-365-users/) service to dynamically get the email address for person's manager while the flow runs.
 
 1. When you're done, the card should resemble this image:
 
@@ -250,9 +256,9 @@ Note: Here, I've used a static email address in the **Assigned To** box. However
 
 ## Send email with pre-approval rejection
 
-Follow these steps to configure the email template that is used if the vacation request is rejected by the pre-approver:
+Expand the **Condition** card, and then perform the following steps:
 
-1. Select **Add an action** on the **IF NO, DO NOTHING** branch of the pre-approval condition.
+1. Select **Add an action** on the **IF NO, DO NOTHING** branch.
 
 1. Enter **Send email** into the search box of the **Choose an action** card.
 
@@ -288,15 +294,17 @@ Follow these steps to configure the email template that is used if the vacation 
 
 ## Send email with final rejection
 
+Expand the **Condition 2** card, and then perform the following steps:
+
 1. Use the steps from [Send email with pre-approval rejection](modern-approvals-sequential.md/#Send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
 
 1. When you're finished, the card should resemble this image:
 
-   ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
+   ![configuration for rejected requests](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 ## Update SharePoint with final rejection
 
-1. Use the steps from [Update SharePoint with final rejection](modern-approvals-sequential.md/#Update-SharePoint-with-final-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
+1. Use the steps from [Update SharePoint with pre-approval rejection](modern-approvals-sequential.md/#Update-SharePoint-with-pre-approval-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
 
 1. When you're finished, the card should resemble this image:
 
@@ -386,7 +394,7 @@ To approve a request:
 
      ![select confirm](../includes/media/modern-approvals/mobile-approval.png)
 
-1. The success page shows; this page indicates that your approval has been recorded.
+1. The success page shows, indicating that your approval has been recorded.
 
      ![success page](../includes/media/modern-approvals/mobile-approval-confirmation.png)
 
