@@ -25,8 +25,8 @@
 1. My flow failed. How do I fix it?
 
 	1. Identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
-	2. You are now looking at the flow details. Find the step with the red exclamation icon and you should see the error message for your flow there.
-	3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more here about how to fix common flow failures](fix-flow-failures.md).
+	2. You are now looking at the flow details. Find the step with the red exclamation icon, and you should see the error message for your flow there.
+	3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more about how to fix common flow failures](fix-flow-failures.md).
 
 1. How do I use an advanced condition or a formula?
 	- Read about [adding conditions](add-a-condition.md).
@@ -34,7 +34,7 @@
 	- Create an advanced formula by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 
 1. How does licensing work with Office 365?
-	- If you're an Office 365 user, you get full access through the Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
+	- If you're an Office 365 user, you get full access through the Microsoft Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
 	- If you're an administrator, see information about [licensing for Microsoft Flow](organization-q-and-a.md), including with Office 365.
 
 ## Known issues and resolutions ##
@@ -54,14 +54,14 @@
 
 ### Release 2017-05-23
 
-- **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that bring together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
-- **Widgets on iOS and Android** - Flow widgets are button shortcuts which provide you an easier & faster way for button triggering straight from your home screen.
-- **Create "error handling" steps** -  Define any number of steps to run after the failure of an action, for example, get a notification immediately if your flow fails to create a record in Dynamics 365.
+- **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that brings together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
+- **Widgets on iOS and Android** - Microsoft Flow widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
+- **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a record in Dynamics 365.
 - **Integer and float variables** -  Initialize and increment or decrement counters inside of a flow run to count how many times a certain set of logic runs.
-- **Flow details page** - When you go to your My flows list and select a flow you'll see a new flow details page with everything that is relevant for your flow, such as who has access and the run history.
-- **Flow run quotas for admins** - Admins can now monitor flow run usage across an organization against the common company run quota, and, get a quota breakdown to understand what licenses contribute to their quota.
-- **HTTP request trigger improvements** - Use different HTTP methods and add path segments for the Request trigger.
-- **Two partner connectors** - Microsoft Flow can now connect to Parserr, and email parsing service, and Cognito Forms, an online forms service.
+- **Flow details page** - When you select a flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
+- **Flow run quotas for admins** - Administrators can now monitor flow run usage across an organization against the common company run quota and get a quota breakdown to understand what licenses contribute to their quota.
+- **HTTP request trigger improvements** - Use different HTTP methods, and add path segments for the Request trigger.
+- **Two partner connectors** - Microsoft Flow can now connect to Parserr, an email-parsing service, and Cognito Forms, an online-forms service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/error-handling/) about this release.
 
@@ -78,7 +78,7 @@
 
 - **Azure AD connector** - There is a new connector for performing administrator actions from Microsoft Flow, including creating users or adding them to groups.
 - **Office 365 Outlook improvements** - Flows can now be triggered by Shared Mailboxes and send mail to a Shared Mailbox. They can also set or read automatic replies.
-- **Available in Canada** - You can now create your flows in Canada. 
+- **Available in Canada** - You can now create your flows in Canada.
 - **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
 - **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Microsoft Flow admin center.
 - **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](https://docs.microsoft.com/Connectors/).
@@ -91,7 +91,7 @@
 - **Build flows with parallel steps** - Create flows with parallel execution: meaning you can have two or more steps that run at exactly the same time.
 - **Five new services supported** - Five new services: Approvals, Benchmark Email, Capsule CRM, LiveChat, and Outlook Customer Manager.
 - **Monitor retries for actions** - Microsoft Flow will retry when there are failures with services. Now see how many automatic retries occurred and the details of what happened.
-	
+
 [Read more and ask questions](https://flow.microsoft.com/blog/parallel-actions/) about this release.
 
 ### Release 2017-04-17 - Q1 Update for Microsoft Flow
