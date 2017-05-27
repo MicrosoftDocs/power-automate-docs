@@ -1,4 +1,4 @@
-1. Enter **Sharepoint** into the search box.
+1. Enter **SharePoint** into the search box.
 
      ![search for sharepoint triggers](../includes/media/modern-approvals/search-for-sharepoint.png)
 

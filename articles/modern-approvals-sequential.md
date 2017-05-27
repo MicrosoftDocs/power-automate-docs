@@ -56,7 +56,7 @@ This diagram summarizes the preceding steps:
 
 The SharePoint Online list that you create must include the following columns:
 
-   ![](./media/sequential-modern-approvals/sharepoint-columns.png)
+   ![SharePoint list columns](./media/sequential-modern-approvals/sharepoint-columns.png)
 
 Make note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
 
@@ -82,15 +82,13 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
    ![select update action](./media/sequential-modern-approvals/update.png)
 
-After you save your flow, select **Edit flow** from the top of the screen, and then continue making changes.
+After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
 
 ## Add an approval action for pre-approvals
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
 
-This approval action sends vacation requests to the pre-approver's email address that's entered into the **Assigned To** box.
-
-Note: Here, I've used a static email address in the **Assigned To** box. However, you may want to use the email address of the employee's manager as the pre-approver. If your organization uses Office 365, you can use the [Office 365 Users](https://flow.microsoft.com/services/shared_office365users/office-365-users/) service to dynamically get the email address for person's manager while the flow runs.
+Note: This action sends the pre-approval request to the email address in the **Assigned To** box.
 
 ## Add a condition
 
@@ -99,8 +97,6 @@ Note: Here, I've used a static email address in the **Assigned To** box. However
 >[AZURE.NOTE]This condition checks the response from the **Start an approval** action.
 
 ## Add an email action for pre-approvals
-
-Follow these steps to send an email when vacation requests are pre-approved:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -116,7 +112,7 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 1. Use the [Get the manager for the person who created the vacation request](modern-approvals-sequential.md/#Get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
 
-1. The **Get manager 2** card should look like this when you are finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
+1. The **Get manager 2** card should look like this screenshot when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
 
    ![get pre-approver's manager](../includes/media/modern-approvals/get-pre-approver-manager.png)
 
@@ -150,11 +146,11 @@ Follow these steps to send an email when vacation requests are pre-approved:
 
 ## Send email with pre-approval rejection
 
-Expand the **Condition** card, and then perform the following steps:
-
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
    ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
+
+Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
 
 ## Update SharePoint with pre-approval rejection
 
@@ -165,6 +161,8 @@ Expand the **Condition** card, and then perform the following steps:
 ## Send email with final rejection
 
 1. Use the steps from [Send email with pre-approval rejection](modern-approvals-sequential.md/#Send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
+
+Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
 
 1. When you're finished, the card should resemble this image:
 

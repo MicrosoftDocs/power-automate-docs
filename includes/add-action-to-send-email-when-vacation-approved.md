@@ -8,7 +8,7 @@
 
 1. Select the **Office 365 Outlook - Send an email** action.
 
-     ![select send and email action](../includes/media/modern-approvals/select-send-email-yes.png)
+     ![select send an email action](../includes/media/modern-approvals/select-send-email-yes.png)
 
 1. Configure the email card to suit your needs.
 

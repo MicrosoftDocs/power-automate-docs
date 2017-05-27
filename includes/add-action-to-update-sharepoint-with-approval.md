@@ -9,5 +9,3 @@
      ![select update item](../includes/media/modern-approvals/select-update-item-yes.png)
 
 1. Configure the **Update item** card to suit your needs.
-
-     Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
