@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Start a flow based on properties such as the subject, from address, or the recipient of an email. | Microsoft Flow"
+    pageTitle="Run flows based on email properties. | Microsoft Flow"
     description="Start a flow based on properties such as the subject, from address, or the recipient of an email."
     services=""
     suite="flow"
@@ -15,12 +15,12 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/16/2016"
+   ms.date="05/30/2017"
    ms.author="deonhe"/>
 
 # Trigger a flow based on email properties
 
-Use the **When a new email arrives** trigger to create a flow that runs when one or more of these email properties match criteria that you provide:
+Use the **When a new email arrives** trigger to create a flow that runs when one or more of these email properties match criteria you provide:
 
 Property|When to use
 ----|----
