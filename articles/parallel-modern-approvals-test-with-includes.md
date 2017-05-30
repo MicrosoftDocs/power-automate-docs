@@ -26,26 +26,52 @@ This flow automates an employee vacation request process that requires approval 
 
 ## Prerequisites
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
+- [Microsoft Flow](https://flow.microsoft.com).
+
+- A SharePoint Online list.
+
+- Office 365 Outlook and Office 365 Users account.
+
+>[AZURE.NOTE]While we use SharePoint Online and Office 365 Outlook in this walk-through, you can use other services such as Zendesk, Salesforce, or Gmail.
+
+Before you create the flow, create a [SharePoint Online list](https://support.office.com/article/Training-Create-and-set-up-a-list-1DDC1F5A-A908-478B-BB6D-608F34B71F94); later, we'll use this list to request approval for vacations.
 
 
 The SharePoint Online list that you create must include the following columns:
 
-<!-- update the sharepoint list 
+<!-- update the sharepoint list    -->
 
    ![SharePoint list columns](./media/parallel-modern-approvals/sharepoint-columns.png)
 
-   -->
+
 
 Make note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
 
 ## Create your flow from the blank template
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+
+     ![sign in](../includes/media/modern-approvals/sign-in.png)
+
+1. Select the **My flows** tab.
+
+     ![select my flows](../includes/media/modern-approvals/select-my-flows.png)
+
+1. Select **Create from blank**.
+
+     ![create from blank](../includes/media/modern-approvals/blank-template.png)
 
 ## Add a trigger
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
+1. Enter **SharePoint** into the search box.
+
+     ![search for sharepoint triggers](../includes/media/modern-approvals/search-for-sharepoint.png)
+
+1. Find, and then select the **SharePoint - When a new item is created** trigger.
+
+     ![select sharepoint trigger](../includes/media/modern-approvals/select-sharepoint-new-item.png)
+
+1. Select the **Site Address** and the **List Name** for the SharePoint list that your flow monitors for new items.
 
 <!--update this image... the name of the list needs updating-->
 
@@ -53,31 +79,65 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Get the manager for the person who created the vacation request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-get-manager-action.md)]
+1. Select **New step**, and then select **Add an action**.
+
+     ![new step](../includes/media/modern-approvals/select-sharepoint-add-action.png)
+
+1. Enter **get manager** into the **Choose an action** search box.
+
+1. Find, and then select the **Office 365 Users - Get manager** action.
+
+     ![select office users](../includes/media/modern-approvals/add-get-manager-action.png)
+
+1. Insert the **Created By Email** token into the **User** box on the **Get manager** card.
+
+   This action gets the manger for the person who created the vacation request in SharePoint.
+
+   ![get manager config](../includes/media/modern-approvals/get-manager-card.png)
 
 ## Name and save your flow
 
 1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
 
-<!--update image
+<!--update image    -->
 
    ![save flow](./media/parallel-modern-approvals/save.png)
 
-    -->
+
 
 >[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
 
-<!--update image
+<!--update image    -->
 
    ![select update action](./media/parallel-modern-approvals/update.png)
 
-    -->
+
 
 After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
 
 ## Add an approval action for immediate manager
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
+1. Select **Edit flow**.
+
+     ![edit flow](../includes/media/modern-approvals/edit-flow.png)
+
+1. Select **New step**, and then select **Add an action**.
+
+     ![new step](../includes/media/modern-approvals/select-sharepoint-add-action.png)
+
+1. Enter **approval** into the **Choose an action** search box.
+
+     ![search for approval](../includes/media/modern-approvals/search-approvals.png)
+
+1. Select the **Approvals - Start an approval** action.
+
+     ![select the approvals action](../includes/media/modern-approvals/select-approvals.png)
+
+1. Configure the **Start an approval** card to suit your needs.
+
+     Note: **Title** and **Assigned To** are required.
+
+     ![configure the approval](../includes/media/modern-approvals/provide-approval-config-info.png)
 
 Note: This action sends the vacation request to the email address in the **Assigned To** box, so ensure you use the **Email** token from the **Get manager** list.
 
@@ -144,7 +204,25 @@ Perform these steps on the **IF YES, DO NOTHING** side of the **Condition** bran
 
    Note: Your flow uses these steps to send an email when the request is approved:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
+1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
+
+     ![add new step](../includes/media/modern-approvals/add-action-after-condition.png)
+
+1. Enter **send email** into the search box on the **Choose an action** card.
+
+     ![search for email actions](../includes/media/modern-approvals/search-send-email-yes.png)
+
+1. Select the **Office 365 Outlook - Send an email** action.
+
+     ![select send an email action](../includes/media/modern-approvals/select-send-email-yes.png)
+
+1. Configure the email card to suit your needs.
+
+     Note: **To**, **Subject**, and **Body** are required.
+
+     This card is a template for the email that is sent when the status of the vacation request changes.
+
+     Note: In the **Body** box on the **Send an email** card, use the **Comments** token from the **Approvals - Start an approval** action.
 
 <!--add the png to includes to make this work    -->
    ![configure pre-approved email template](../includes/media/parallel-modern-approvals/yes-email-config.png)
@@ -160,11 +238,21 @@ Perform these steps to update SharePoint when decisions are made.
 
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
+1. Select **Add an action** from the **IF YES** branch.
 
-<!-- confirm this image works in this context
+1. Enter **update** into the search box on the **Choose an action** card.
+
+     ![search for update action](../includes/media/modern-approvals/search-update-item.png)
+
+1. Select the **SharePoint - Update item** action.
+
+     ![select update item](../includes/media/modern-approvals/select-update-item-yes.png)
+
+1. Configure the **Update item** card to suit your needs.
+
+<!-- confirm this image works in this context   -->
    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
-   -->
+
 
 ## Complete branch actions
 
@@ -184,4 +272,4 @@ Perform these steps to update SharePoint when decisions are made.
 
 ## Learn more about modern approval
 
-[Introduction to modern approvals](./modern-approvals.md)
+- [introduction to modern approvals](./modern-approvals.md)
