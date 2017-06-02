@@ -19,34 +19,47 @@
    ms.author="deonhe"/>
 
 # Manage an on-premises data gateway in Microsoft Flow #
+
 Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Microsoft Flow.
 
->[AZURE.IMPORTANT] Microsoft SharePoint data gateways support HTTP traffic but not HTTPS traffic.
+With a gateway, you can connect to on-premises data over these connections:
 
-**Prerequisites**
+- SharePoint
+- SQL Server
+- Oracle
+- Informix
+- Filesystem
+- DB2
+
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways support HTTP traffic, but not HTTPS traffic.
+
+## Prerequisites ##
 
 - The user name and password that you used to [sign up](sign-up-sign-in.md) for Microsoft Flow.
 - Administrative permissions on a gateway.
-<br>You have these permissions by default for each gateway that you install, and an administrator of another gateway can grant you these permissions for that gateway.
-- A license that supports gateways.
-<br>For more information, see the “Connectivity” section of the [pricing page](https://flow.microsoft.com/pricing/).
+
+  You have these permissions by default for each gateway that you install, and an administrator of another gateway can grant you these permissions for that gateway.
+- A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://flow.microsoft.com/pricing/).
+
 - You can create a gateway and an on-premises connection only in your [default environment](environments-overview-maker.md).
 
-## View your gateways
+## View your gateways ##
+
 In the upper-right corner of the [Microsoft Flow website](https://flow.microsoft.com), click or tap the gear icon, and then click or tap **Gateways**.
 
 ![Gateway under manage][1]
 
 **Note**: If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
 
-## Install a gateway
-1. Download [GatewayInstall.exe](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409), the wizard for installing gateways.
+## Install a gateway ##
 
-	You can also download this wizard by clicking or tapping the gear icon in the upper-right corner of the [Microsoft Flow website](https://flow.microsoft.com), clicking or tapping **Gateways**, and then clicking or tapping **Create gateway** .
+1. Download the [gateway-installation wizard](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+	You can also download this wizard by clicking or tapping the gear icon in the upper-right corner of the [Microsoft Flow website](https://flow.microsoft.com), clicking or tapping **Gateways**, and then clicking or tapping **Create gateway**.
 
 	![Gateway installation][2]
 
-1. Run this wizard, providing the same credentials with which you sign in to Microsoft Flow.
+1. Run the wizard, providing the same credentials with which you signed into Microsoft Flow.
 
 	After you register and configure your gateway successfully, it shows up in the **My gateways** list in Microsoft Flow.
 
