@@ -1,10 +1,10 @@
 <properties
-	pageTitle="Register Custom APIs in Microsoft Flow | Microsoft PowerApps"
-	description="Register Custom APIs in Microsoft Flow using Swagger and OAuth."
+	pageTitle="Register and use custom connectors | Microsoft Flow"
+	description="Register and use custom connectors in Microsoft Flow, using OpenAPI and Postman."
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="msftman"
+	authors="archnair"
 	manager="anneta"
 	editor=""/>
 
@@ -14,158 +14,165 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="12/06/2016"
-   ms.author="deonhe"/>
+   ms.date="05/09/2017"
+   ms.author="archanan"/>
 
-# Register Custom APIs in Microsoft Flow
+# Register and use custom connectors in Microsoft Flow
+Microsoft Flow enables you to build workflows with no code. But in some cases, you need to extend Microsoft Flow capabilites, and web services are a natual fit for this. Your flow can connect to a service, perform operations, and get data back. When you have a web service you want to connect to with Microsoft Flow, you register the service as a custom connector. This process enables Microsoft Flow to understand the characteristics of your web API, including the authentication that it requires, the operations that it supports, and the parameters and outputs for each of those operations.
 
-Microsoft Flow can leverage any RESTful APIs hosted anywhere.  This tutorial demonstrates registering and using a custom API.
+In this topic, we'll look at the steps required to register and use a custom connector, and we'll use the Azure Cognitive Services [Text Analytics API](https://www.microsoft.com/cognitive-services/text-analytics-api). This API identifies the language, sentiment, and key phrases in text that you pass to it. 
 
 ## Prerequisites
 
 - A [Microsoft Flow account](https://flow.microsoft.com).
-- A Swagger file (JSON) for your custom API. If you don't have one, we'll show you several options to create the Swagger file.
-- An image to use as an icon for your custom API (optional).
+- An OpenAPI 2.0 (formerly known as Swagger) file in JSON format, a URL to an OpenAPI definition, or a Postman Collection for your API. If you don't have any of these, we'll provide guidance for you.
+- An image to use as an icon for your custom connector (optional).
 
+## Steps in the custom connector process
 
-## Authentication
+The custom connector process has several steps, which we describe briefly below. This article assumes you already have a RESTful API with some type of authenticated access, so we'll focus on steps 3-6 in the rest of the article. For an example of steps 1 and 2, see [Create a custom Web API for Microsoft Flow](customapi-web-api-tutorial.md).
 
-Custom APIs in Microsoft Flow can use any of several authentication mechanisms.
+1. **Build a RESTful API** in the language and platform of your choice. For Microsoft technologies, we recommend one of the following (but you can use any platform):
 
-- API Key
-- Basic Authentication
-- Generic OAuth 2.0. 
-- OAuth 2.0 for the the following identity providers is supported out of the box.
+	- Azure Functions
+	- Azure Web Apps
+	- Azure API Apps
+
+2. **Secure your API** using one of the following authentication mechanisms. You can allow unauthenticated access to your connectors, but we don't recommend it.
 
 	- Azure Active Directory
-	- Box
-	- Dropbox
-	- Facebook
-	- Google
-	- Instagram
-	- OneDrive
-	- SalesForce
-	- Slack
-	- Yammer
+	- OAuth 2.0 for specific services like Dropbox, Facebook, and SalesForce
+	- Generic OAuth 2.0
+	- API Key
+	- Basic Authentication
 
+3. **Describe your API** in one of two industry-standard ways, so that Microsoft Flow can connect to it.
 
-The [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#securityDefinitionsObject) describes how to specify authentication within a Swagger.
+	- An OpenAPI file
+	- A Postman Collection
 
-If your API endpoint allows unauthenticated access, you should remove the ```securityDefintions``` object from the OpenAPI (Swagger) file. In the following example, remove all of the following ```securityDefintions``` object:
+	You can also build an OpenAPI file in step 4 as part of the registration process.
 
-```
-  "securityDefinitions": {
-    "AAD": {
-      "type": "oauth2",
-      "flow": "accessCode",
-      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
-      "scopes": {}
-    }
-  },
-```
+4. **Register your custom connector** using a wizard in Microsoft Flow, where you specify an API description, security details, and other information.
+5. **Use your custom connector** in an app. Create a connection to the connector in your app, and call any operations that the API provides, just like you call standard connections in Microsoft Flow.
+6. **Share your custom connector** like you do other resources in Microsoft Flow. This step is optional, but it often makes sense to share custom connectors across multiple app creators.
 
-### Examples
-* [Azure Resource Manager](customapi-azure-resource-manager-tutorial.md) with AAD authentication.
-* [Azure WebApp](customapi-web-api-tutorial.md) with AAD authentication.
+## Describe your API
 
-## Register a custom API
+Assuming you have an API with some type of authenticated access, you need a way to describe the API so that Microsoft Flow can connect to it. To do this, you create an OpenAPI file or a Postman Collection – which you can do from _any_ REST API endpoint, including:
 
-### Step 1: Create a Swagger file
-
-You can create a Swagger file from *any* API endpoint, including:
-
-- Publicly available APIs. Some examples include [Spotify](https://developer.spotify.com/), [Uber](https://developer.uber.com/), [Slack](https://api.slack.com/), [Rackspace](http://docs.rackspace.com/), and more.
-- An API that you create and deploy to any cloud hosting provider, including Amazon Web Services (AWS), Heroku, Azure Web Apps, Google Cloud, and more.  
+- Publicly available connectors. Some examples include [Spotify](https://developer.spotify.com/), [Uber](https://developer.uber.com/), [Slack](https://api.slack.com/), [Rackspace](http://docs.rackspace.com/), and more.
+- An API that you create and deploy to any cloud hosting provider, including Azure, Amazon Web Services (AWS), Heroku, Google Cloud, and more.
 - A custom line-of-business API deployed on your network as long as the API is exposed on the public internet.
 
-When you create the Swagger file, a JSON file is created.  You'll need this is Step 2.
+OpenAPI 2.0 (formerly known as Swagger) and Postman Collections use different formats, but both are language-agnostic machine-readable documents that describe your API's operations and parameters:
+- You can generate these documents using a variety of tools depending on the language and platform that your API is built on. See the [Text Analytics API documentation](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/export?DocumentFormat=Swagger&ApiName=Azure) for an example of an OpenAPI file.
+- If you don't already have an OpenAPI file for your API and don't want to create one, you can still easily create a custom connector by using a Postman Collection. See [Create a Postman Collection](postman-collection.md) for more information.
+- Microsoft Flow ultimately uses OpenAPI behind the scenes, so a Postman Collection is parsed and translated into an OpenAPI definition file. 
 
-#### Getting help with Swagger files
+**Note**: Your file size must be less than 1MB.
 
-- If you're new to Swagger, you should visit the [Getting Started pages on Swagger.io](http://swagger.io/getting-started/).
 
--  There's a Swagger [Hello World example](https://github.com/OAI/OpenAPI-Specification/wiki/Hello-World-Sample) on GitHub.
+### Getting started with OpenAPI and Postman
 
-- To create your own API, deploy it to Azure, create a Swagger file based off this new API, and then register it in Microsoft Flow, see the [Web API tutorial](customapi-web-api-tutorial.md).
+- If you're new to OpenAPI, see [Getting Started with OpenAPI](http://swagger.io/getting-started/) on the swagger.io site.
+- If you're new to Postman, install the [Postman app](https://www.getpostman.com/apps) from their site.
+- If your API is built with Azure API Apps or Azure Functions, see [Exporting an Azure hosted API to Microsoft Flow and Microsoft Flow](https://docs.microsoft.com/azure/app-service/app-service-export-api-to-powerapps-and-flow) for more information.
 
-- To validate your Swagger files, use the [Swagger editor](http://editor.swagger.io/#/). You can paste your JSON data, and validation automatically occurs.
 
-- To customize your Swagger document to work with Microsoft Flow, see [Customize your Swagger definition](customapi-how-to-swagger.md).
+## Register your custom connector
 
-### Step 2: Add a connection to the custom API
+You will now use the OpenAPI file or Postman Collection to register your custom connector in Microsoft Flow.
 
-Now that the Swagger file (JSON file) is generated for the custom API, add the connection to Microsoft Flow.
+1. In [flow.microsoft.com](https://flow.microsoft.com), in the top bar, select the gear to open the settings menu. Select the **Custom Connectors** option.
 
-1. In the [Microsoft Flow web app](https://flow.microsoft.com/), click the **Settings** button at the upper right of the page (it looks like a gear).  Then click **Custom APIs**.
+	![Create custom connector](./media/register-custom-api/managecustomapi.png)  
 
-	![Find custom APIs](./media/register-custom-api/finding-custom-apis.png)  
+2. Select **Create custom connector**.
 
-2. Click **Create custom API**.  
+	![Custom connector properties](./media/register-custom-api/newcustomapi.png)
 
-	You will be prompted for the properties of your API.  
+3. In the **General** tab, choose how you want to create the custom connector.
+	- Upload OpenAPI
+	- Paste OpenAPI URL
+	- Upload a Postman Collection V1
 
-	| Property | Description |
-	|----------|-------------|
-	| Name | At the top of the page, click **Untitled** and give your flow a name. |
-	| Swagger file | Browse to the JSON file created from Swagger. |
-	| Upload API icon | Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
-	| Description | Type a description of your custom API (optional). |
+	![How to create custom connector](./media/register-custom-api/choosehowtocreate.png)
 
-	![Create custom API](./media/register-custom-api/create-custom-api.png)  
+	Upload an icon for your custom connector. Description, Host, and Base URL fields are typically auto-populated with the information from the OpenAPI file. If they are not auto-populated, you can add information to those fields. Select **Continue**.
 
-	Select **Continue**.
+4. In the **Security** tab, enter any authentication properties. 
 
-3. If the JSON file contains a ```securityDefintions``` object, you will be prompted to enter security information, such as OAuth2 or API Key values.
+	![Authentication types](./media/register-custom-api/authenticationtypes.png)
+	
+	- The authentication type is auto-populated based on what is defined in your OpenAPI `securityDefinitions` object. Below is an OAuth2.0 example.
+		
+		```
+		"securityDefinitions": {
+			"AAD": {
+			"type": "oauth2",
+			"flow": "accessCode",
+			"authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+			"scopes": {}
+			}
+		},
+		```
 
-	>[AZURE.TIP] If the JSON file does not use the ```securityDefintions``` object, then no additional values may be needed.
+	- If the OpenAPI file does not use the `securityDefintions` object, then no additional values are needed.
+	- When using a Postman Collection, authentication type is auto-populated only when using supported authentication types, such as OAuth 2.0 or Basic.
+	- For an example of setting up Azure Active Directory (AAD) authenthication, see [Create a custom Web API for Microsoft Flow](customapi-web-api-tutorial.md#set-up-azure-active-directory-authentication).
 
-	After entering security information, click the check mark (**&#x2713;**) next to the flow name at the top of the page to create the custom API.
+5. In the **Definitions** tab, all the operations defined in your OpenAPI file or Postman Collection, along with request and response values, are auto-populated. If all your required operations are defined, you can go to step 6 in the registration process without making changes on this screen.
 
-4. Your custom API is now displayed under **Custom APIs**.
+	![Definition tab](./media/register-custom-api/definitiontab.png)
 
-	![Available APIs](./media/register-custom-api/list-custom-apis.png)  
+	If you want to edit existing actions or add new actions to your custom connector, continue reading below.
 
-5. Now that the custom API is registered, you must create a connection to the custom API so it can be used in your apps and flows.  Click the **+** to the right of the name of your custom API and then complete any necessary steps to sign in to your API's data source.  For **OAuth** authentication, that might be a sign-in screen.  For API Key authentication, you might get prompted for a key value.
+	1. If you want to add a new action that was not already in your OpenAPI file or Postman Collection, select **New action** in the left pane and fill in the **General** section with the name, description, and visibility of your operation.
 
-### Step 3: Add the custom API to a flow
+	2. In the **Request** section, select **Import from sample** on the top right. In the form on the right, paste in a sample request. Sample requests are usually available in the API documentation, where you can get information to fill out the **Verb**, **Request URL**, **Headers**, and **Body** fields. See the [Text Analytics API documentation](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c6) for an example.
 
-Now you're ready to use the custom API with your flow. To illustrate, we'll use a custom weather API.
+		![Import from sample](./media/register-custom-api/importfromsample.png)
 
-#### Add the custom API to your flow
+	3. Select **Import** to complete the request definition. Define the response in a similar way.
 
->[AZURE.NOTE] This example creates a very simple flow to show you how to add your custom API. For more information, see [Get started with flows](./get-started-logic-flow.md).
+6. Once you have all your operations defined, select **Create** to create your custom connector.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), at the top of the page, select **My flows**, and then select **Create from blank**.
+7. Once you have created your custom connector, go to the **Test** tab to test the operations defined in the API. Choose a connection, and provide input parameters to test an operation.
 
-	>[AZURE.TIP] If you don't see a **My flows** link, it might be hidden under a hamburger button in the upper-left corner in mobile browsers.
+	![Test custom connector](./media/register-custom-api/testcustomapi.png)
 
-2. You are presented several templates already representing some common scenarios. You can use any of these and add your custom API to it, or you can choose **Create from blank** to create a flow from scratch.  Select **Create from blank**.
+	If the call is successful, you get a valid response.
 
-	![New flow](./media/register-custom-api/createfromblank.png)   
+	![Test connector Response](./media/register-custom-api/testapiresponse.png)
 
-4. Select **Recurrence**, and set the frequency to 1 minute.
+### Quota and throttling
 
-	![Recurrence](./media/register-custom-api/logicrecurrence.png)  	
+- See the [Microsoft Flow Pricing](https://flow.microsoft.com/pricing/) page for details about custom connector creation quotas. Custom connectors that are shared with you don't count against this quota.
+- For each connection created on a custom connector, users can make up to 500 requests per minute.
 
-5. Select **+ New Step**, and then select **Add an action**. In the list, your custom API is listed.
+## Share your custom connector
+Now that you have a custom connector, you can share it with other users in your organization. Keep in mind that when you share an custom connector, others might start to depend on it, and deleting a custom connector deletes all the connections to the connector. If you want to provide a connector for users outside your organization, see [Overview of certifying custom connectors in Microsoft Flow](api-connector-overview.md).
 
-	![Your custom API](./media/register-custom-api/logicflow.png)
+1. In [flow.microsoft.com](https://flow.microsoft.com), in the top bar, select the gear to open the settings menu. Select the **Custom connectors** option.
 
-6. Select the operation you want to call from your custom API.  For this example, the API gets the current temperature, and then sends an email using Office 365.
+	![New connection](./media/register-custom-api/managecustomapi.png)
 
-	![Weather example](./media/register-custom-api/logicflowexample.png)
+2. Select the ellipsis (**. . .**) button for your connector, then select **View properties**.  
 
-7. Name your flow, and then select the check mark (**&#x2713;**) to save your flow.
+	![View connector properties](./media/register-custom-api/view-properties.png)
 
-## Quota and throttling
+3. Select **Share**, and then enter the users or groups to whom you want to grant access to your connector.  
 
-- You can create up to five custom APIs in a Microsoft Flow account.
-- For each connection created on a custom API, users can make up to 500 requests per minute.
-- Keep in mind that deleting a custom API deletes all the connections created to the API.
+	![Share custom connector](./media/register-custom-api/sharecustomapi.png)
+
+4. Select **Save**.
 
 ## Next steps
 
-[Learn about custom Swagger extensions](customapi-how-to-swagger.md).
+[Learn how to create a Postman Collection](postman-collection.md)
+
+[Learn about custom OpenAPI extensions](customapi-how-to-swagger.md).
 
 [Use an ASP.NET Web API](customapi-web-api-tutorial.md).
 
