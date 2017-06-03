@@ -4,7 +4,7 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="msftman"
+	authors="sunaysv"
 	manager="anneta"
 	editor="sunaysv"/>
 
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="04/11/2017"
-   ms.author="deonhe"/>
+   ms.author="sunayv"/>
 
 # OpenAPI extensions for custom connectors in Microsoft Flow
 
@@ -61,7 +61,14 @@ It is recommended that you use **sentence case** in the description.
 
 
 ## x-ms-visibility
-Determines the user facing visibility of the entity. The possible values are ‘important’, ‘advanced’ and ‘internal’. Entities marked as ‘internal’ do not show up in the Flow UI.
+Determines the user facing visibility of the entity. The possible values are ‘important’, ‘advanced’ and ‘internal’. 
+
+Operations and parameters marked **important** will be always be shown to the user first. 
+Operations and parameters marked **advanced** will be hidden under the advanved menu.
+Operations and parameters marked **internal** will be completely hidden from the user. 
+
+>[AZURE.NOTE] If a parameter is marked **internal** and **required**, a default value **MUST** be provided for this parameter. 
+
 
 Applies to:
 
@@ -72,7 +79,7 @@ Applies to:
 ![visibility-annotation](./media/customapi-how-to-swagger/figure_4.jpg)
 
 ## x-ms-dynamic-values
-Enables populating a dropdown for collecting input parameters to an operation.
+Enables populating a dropdown for collecting input parameters to an operation. 
 
 Applies to:
 
@@ -83,7 +90,7 @@ Applies to:
 #### Usage:
 Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
 
->[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. 
+>[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. Custom connector UI now also supports configuring dropdowns.  
 
 #### Properties:
 

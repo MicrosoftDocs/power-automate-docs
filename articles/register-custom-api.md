@@ -4,7 +4,7 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="archnair"
+	authors="sunaysv"
 	manager="anneta"
 	editor=""/>
 
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="05/09/2017"
-   ms.author="archanan"/>
+   ms.author="sunayv"/>
 
 # Register and use custom connectors in Microsoft Flow
 Microsoft Flow enables you to build workflows with no code. But in some cases, you need to extend Microsoft Flow capabilites, and web services are a natual fit for this. Your flow can connect to a service, perform operations, and get data back. When you have a web service you want to connect to with Microsoft Flow, you register the service as a custom connector. This process enables Microsoft Flow to understand the characteristics of your web API, including the authentication that it requires, the operations that it supports, and the parameters and outputs for each of those operations.
@@ -113,6 +113,7 @@ You will now use the OpenAPI file or Postman Collection to register your custom 
 			"type": "oauth2",
 			"flow": "accessCode",
 			"authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+			"tokenUrl": "https://login.windows.net/common/oauth2/token"
 			"scopes": {}
 			}
 		},
@@ -131,6 +132,8 @@ You will now use the OpenAPI file or Postman Collection to register your custom 
 	1. If you want to add a new action that was not already in your OpenAPI file or Postman Collection, select **New action** in the left pane and fill in the **General** section with the name, description, and visibility of your operation.
 
 	2. In the **Request** section, select **Import from sample** on the top right. In the form on the right, paste in a sample request. Sample requests are usually available in the API documentation, where you can get information to fill out the **Verb**, **Request URL**, **Headers**, and **Body** fields. See the [Text Analytics API documentation](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c6) for an example.
+
+	>[AZURE.IMPORTANT] Make sure you remove the `Content-type` header from actions, as this will be automatically added by Flow. Authentication headers that have been defined in the **Security** section should also be removed from actions and triggers. 
 
 		![Import from sample](./media/register-custom-api/importfromsample.png)
 
