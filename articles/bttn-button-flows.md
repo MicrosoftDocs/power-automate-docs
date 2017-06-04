@@ -1,54 +1,55 @@
 <properties
-    pageTitle="Start flows with bttns | Microsoft Flow"
-    description="Learn how to start your flows with a bttn"
-    services=""
-    suite="flow"
-    documentationCenter="na"
-    authors="msftman"
-    manager="anneta"
-    editor=""
-    tags=""/>
+	pageTitle="Start flows with bttns | Microsoft Flow"
+	description="Learn how to start your flows with a bttn"
+	services=""
+	suite="flow"
+	documentationCenter="na"
+	authors="msftman"
+	manager="anneta"
+	editor=""
+	tags=""/>
 
 <tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="05/30/2017"
-   ms.author="deonhe"/>
+	ms.service="flow"
+	ms.devlang="na"
+	ms.topic="article"
+	ms.tgt_pltfrm="na"
+	ms.workload="na"
+	ms.date="05/30/2017"
+	ms.author="deonhe"/>
 
 # Run your flows with physical buttons (bttns) from The Button Corporation (Preview)
 
-Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a flow that contacts your helpdesk with location information, sends an email to your team, blocks your calendar, or reorders supplies.
+Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a flow to perform these tasks:
 
->[AZURE.IMPORTANT]You must [register](https://my.bt.tn/) your bttns before you can use them in flows.
+- contacts your helpdesk with location information
+- sends an email to your team
+- blocks your calendar
+- reorders supplies
 
->[AZURE.TIP]Configure all bttn properties, including name, location, email address, and so on, on the [bttn website](https://my.bt.tn/) before you create your flow.
+>[AZURE.IMPORTANT]You must [register](https://my.bt.tn/) your bttn before you can use it in a flow.
 
-You may also use [Flic physical buttons](./flic-button-flows.md) to run your flows.
+>[AZURE.TIP]Configure all bttn properties such as name, location, and email address on the [bttn website](https://my.bt.tn/) before you create your flow.
+
+You can also trigger a flow by using a [Flic physical button](./flic-button-flows.md).
 
 ## Prerequisites
 
-To use bttns with Microsoft Flow, you must have:
-
 - Access to [Microsoft Flow](https://flow.microsoft.com).
-
-- Access to [bttn](https://my.bt.tn/).
 
 - At least one [registered bttn](https://my.bt.tn/).
 
 ## Create a flow that's triggered from a bttn
 
-In this walk-through, we use a helpdesk template to create a flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow triggers, it generates a support request, and then sends it to the helpdesk. The support request provides the helpdesk with location information about the room where help is needed. While we use a preconfigured template in this walk-through, you're free to use the blank template, which gives you full control over all aspects of your flow.
+In this walk-through, we use a helpdesk template to create a flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
 
-Here are some of the bttn templates available for you to quickly create flows for your bttn. Notice that bttn templates are available to connect to Zendesk, Google, and SharePoint, among others:
+You can use any of these templates to quickly create flows for your bttn and connect to Zendesk, Google, and SharePoint, among others:
 
 ![bttn templates](./media/bttn-button-flows/bttn-templates.png)
 
-Tip: For the purposes of this walk-through, give your bttn a name that represents a conference room in a typical office building.
+Tip: For the purposes of this walkthrough, give your bttn a name that represents a conference room in a typical office building.
 
-The settings for your bttn should resemble this screenshot (from the bttn website):
+The settings for your bttn should resemble this example (from the bttn website):
 
 ![bttn templates](./media/bttn-button-flows/bttn-config.png)
 
@@ -58,49 +59,45 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
-     ![sign in](./media/bttn-button-flows/sign-into-flow.png)
+	![sign in](./media/bttn-button-flows/sign-into-flow.png)
 
-     Note: Alternatively, you can create flows from the Microsoft Flow [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) mobile app.
+	Note: As an alternative, you can create flows in the mobile app for Microsoft Flow, which is available on [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) devices.
 
 1. Enter **bttn** into the search box, and then select the search icon.
 
-   After you select the search icon, you see all templates that you can use with bttns.
+	![search](./media/bttn-button-flows/bttn-search-template.png)
 
-   ![search](./media/bttn-button-flows/bttn-search-template.png)
+	After you select the search icon, all templates that you can use with bttns appear.
 
-1. Select a template.
+1. Select the **Use Bttn to call technical support for meeting room** template.
 
-   Here, I've selected the **Use Bttn to call technical support for meeting room** template.
-
-   ![support template](./media/bttn-button-flows/bttn-select-template.png)
+	![support template](./media/bttn-button-flows/bttn-select-template.png)
 
 ### Authorize Microsoft Flow to connect to your bttn
 
-1. Sign into the template's services.
+1. If prompted, sign into the bttn and the Office 365 Outlook services, which will enable the **Continue** button.
 
-   The **Use Bttn to call technical support for meeting room** template uses the bttn and the Office 365 Outlook services. The **Continue** button becomes enabled after you sign into both services.
+	![credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
 
-     ![credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
+1. When you sign into the bttn service, authorize Microsoft Flow to use your bttns.
 
-1. Be sure to authorize Microsoft Flow to use your bttns when you sign into the bttn service.
+	**Important**: If you don't authorize Microsoft Flow to use your bttns, you can't see or connect to them from Microsoft Flow.
 
-   This step is crtical. If you don't authorize Microsoft Flow to use your bttns, you cannot see, or connect to your bttns from Microsoft Flow.
+	![authorize](./media/bttn-button-flows/authorize-bttn.png)
 
-     ![authorize](./media/bttn-button-flows/authorize-bttn.png)
+1. After you sign into both services, select **Continue**.
 
-1. Select **Continue** after you've signed into the services your flow uses.
-
-     ![Continue](./media/bttn-button-flows/continue.png)
+	![Continue](./media/bttn-button-flows/continue.png)
 
 ### Select the bttn that triggers the flow
 
-1. Select the **bttn ID** box, and then select the bttn you want to use from the **When a bttn is pressed** card.
+1. in the **When a bttn is pressed** card, open the list of bttn IDs, and then select the bttn that you want to use.
 
-     ![select bttn](./media/bttn-button-flows/bttn-id.png)
+	![select bttn](./media/bttn-button-flows/bttn-id.png)
 
-1. Your flow should now resemble this screenshot.
+	Your flow should now resemble this example.
 
-     ![overview of flow](./media/bttn-button-flows/bttn-done.png)
+	![overview of flow](./media/bttn-button-flows/bttn-done.png)
 
 1. Give your flow a name, and then select **Create flow** to save it.
 
@@ -110,24 +107,26 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 1. Press the button on your bttn.
 
-1. View your flow's run history to confirm that it ran successfully. You can check run history on the Microsoft Flow website, or on your mobile device.
+1. View your flow's run history to confirm that it ran successfully.
 
-   Note: The run status is set to **running** until someone selects **Acknowledge** in the support request email.
+	You can check run history on the Microsoft Flow website or on your mobile device.
+
+	Note: The run status is set to **running** until someone selects **Acknowledge** in the support-request email.
 
 1. You can also confirm that the email was sent to the support team.
 
-   If you've followed along, the support email looks similar to this one:
+	If you've followed along, the support email looks similar to this example:
 
-   ![save flow](./media/bttn-button-flows/support-request-email.png)
+	![](./media/bttn-button-flows/support-request-email.png)
 
 ## Troubleshooting
 
-- If your flow did not get triggered, log into The Button Corporation's site and confirm if the button activity (presses) are being recorded.
-- You can also drill into the run activity on the Microsoft Flow site to see if there are any clues from the run.
+- If your flow wasn't triggered, sign into The Button Corporation's site and confirm whether the button activity (presses) are being recorded.
+- You can also drill into the run activity on the Microsoft Flow site and check for error messages.
 
 ## More information
 
 - [Share button flows](./share-buttons.md).
-- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
-- [Install the Microsoft Flow app for Android](https://aka.ms/flowmobiledocsandroid)
-- [Install the Microsoft Flow app for iOS](https://aka.ms/flowmobiledocsios)
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send current data when your button flows run.
+- [Install the Microsoft Flow app for Android](https://aka.ms/flowmobiledocsandroid).
+- [Install the Microsoft Flow app for iOS](https://aka.ms/flowmobiledocsios).
