@@ -41,7 +41,7 @@ You can also trigger a flow by using a [Flic physical button](./flic-button-flow
 
 ## Create a flow that's triggered from a bttn
 
-In this walk-through, we use a helpdesk template to create a flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
+In this walkthrough, we use a helpdesk template to create a flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
 
 You can use any of these templates to quickly create flows for your bttn and connect to Zendesk, Google, and SharePoint, among others:
 
@@ -91,7 +91,7 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 ### Select the bttn that triggers the flow
 
-1. in the **When a bttn is pressed** card, open the list of bttn IDs, and then select the bttn that you want to use.
+1. In the **When a bttn is pressed** card, open the list of bttn IDs, and then select the bttn that you want to use.
 
 	![select bttn](./media/bttn-button-flows/bttn-id.png)
 
