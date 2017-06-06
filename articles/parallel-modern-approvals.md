@@ -22,17 +22,17 @@
 
 In a parallel approval workflow, multiple persons are required to approve items including invoices, purchase orders, vacation requests, etc. Each person's approval is independent of all other approvers.
 
-In this walk-through, we use Microsoft Flow to create a flow that automates a parallel approval workflow. This flow automates an employee vacation request process that requires approval from all persons (or teams) that the employee supports regularly. Employees use a SharePoint list to request vacation. Vacation approvals are required from the employee's direct manager, the Sales team, and the Human Resources. Each vacation request is routed each approver for a decision. The flow sends email with status changes, and then updates SharePoint with the decisions.
+In this walkthrough, we use Microsoft Flow to create a flow that automates a parallel approval workflow. This flow automates an employee vacation request process that requires approval from all persons (or teams) that the employee supports regularly. Employees use a [SharePoint list](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) to request vacation. Vacation approvals are required from the employee's direct manager, the Sales team, and the Human Resources team. Each vacation request is routed to each approver for a decision. The flow sends email with status changes and then updates SharePoint with the decisions.
 
 ## Prerequisites
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
 
-The SharePoint Online list that you create must include the following columns:
+The SharePoint Online list you create must include the following columns:
 
    ![SharePoint list columns](./media/parallel-modern-approvals/sharepoint-columns.png)
 
-Make note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
+Make note of the name and URL of the SharePoint Online list. We use these items later to configure the **SharePoint - When a new item is created** trigger.
 
 ## Create your flow from the blank template
 
@@ -42,7 +42,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
 
-   ![sharepoint info](../includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
+   ![SharePoint info](../includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
 
@@ -58,7 +58,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
    ![select update action](./media/parallel-modern-approvals/update.png)
 
-To continue making changes after you save or update the flow, select **Edit flow** from the top of the screen, and then continue making changes.
+To continue making changes after you save or update your flow, select **Edit flow** from the top of the screen, and then continue making changes.
 
 ## Add an approval action for immediate manager
 
@@ -74,7 +74,7 @@ To continue making changes after you save or update the flow, select **Edit flow
 
 1. Select **Add a parallel branch**.
 
-1. Select ** **Add an action**.
+1. Select **Add an action**.
 
    ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
 
@@ -88,7 +88,7 @@ To continue making changes after you save or update the flow, select **Edit flow
 
 >[AZURE.IMPORTANT]Use the human resources team's email address in the **Assigned To** box of the **Start an approval** action.
 
-If you've followed along, your flow should resemble this image:
+If you've followed along, your flow should resemble this example:
 
    ![flow with parallel branches](./media/parallel-modern-approvals/flow-with-parallel-branches.png)
 
@@ -96,11 +96,11 @@ If you've followed along, your flow should resemble this image:
 
 After you've added actions to parallel branches, you have two options for adding more steps to your flow:
 
-- Use the small **Insert a new step** button (the circular plus button that appears when you select any white space on a branch or the area immediately below a branch). This button adds a step to that **specific branch**. With this approach, steps run in parallel and sequence in multiple branches.
+- Use the small **Insert a new step** button (the circular plus button that appears when you select any white space on a branch or the area immediately below a branch). This button adds a step to that **specific branch**. Steps you add with this button run after this specific branch completes.
 
-- Use the larger **New step** button at the bottom of the entire workflow. This button adds an action that runs after **all branches** complete. When you use this button, you're merging the flow into sequential steps, after it branched.
+- Use the larger **New step** button at the bottom of the entire workflow. This button adds an action that runs after **all branches** complete. Steps you add with this button run after all branches complete.
 
-In the following sections, we use the small **Insert a new step** button to perform these steps on each branch:
+In the following sections, we use the small **Insert a new step** button to perform the following steps on each branch:
 
 - Add a condition that checks if the vacation request was approved or rejected.
 
@@ -108,7 +108,7 @@ In the following sections, we use the small **Insert a new step** button to perf
 
 - Update the vacation request in SharePoint with the approval decision.
 
-Then, we use the larger **New step** button to send an email that summarizes all the decisions made on the vacation request.
+Then, we use the larger **New step** button to send an email that summarizes all decisions made on the vacation request.
 
 Let's continue:
 
@@ -123,17 +123,17 @@ Let's continue:
 
 1. Confirm the list (in the middle of the **Condition card**) is set to **is equal to**.
 1. Enter **Approve** (this text is case-sensitive) into the last box.
-1. Your condition card should now resemble this image:
+1. Your condition card should now resemble this example:
 
    ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
 
 >[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
 
-Repeat the preceding steps on the **Start an approval 2** (sales) and **Start an approval 3** (human resources) branches.
+Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
 
 ## Add email actions to each branch
 
-Perform these steps on the **IF YES, DO NOTHING** side of the **Condition** branch.
+Perform the following steps on the **IF YES, DO NOTHING** side of the **Condition** branch.
 
    Note: Your flow uses these steps to send an email when the request is approved:
 
@@ -141,15 +141,13 @@ Perform these steps on the **IF YES, DO NOTHING** side of the **Condition** bran
 
    ![configure pre-approved email template](../includes/media/parallel-modern-approvals/yes-email-config.png)
 
-To report a rejection, use the **IF NO, DO NOTHING** side of the **Condition** branch, and then repeat these steps to add a template for the rejection email.
+To send an email when a request is rejected, use the **IF NO, DO NOTHING** side of the **Condition** branch, and then repeat the preceding steps to add a template for the rejection email.
 
-   Note: Your flow uses the preceding steps (on the **IF NO, DO NOTHING** branch) to send an email when the vacation request is rejected.
-
-Repeat the preceding steps on the **Start an approval 2** (sales) and **Start an approval 3** (human resources) branches.
+Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
 
 ## Update the vacation request with the decision
 
-Perform these steps to update SharePoint when decisions are made.
+Perform the following steps to update SharePoint when decisions are made.
 
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
@@ -157,7 +155,7 @@ Perform these steps to update SharePoint when decisions are made.
 
    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
-Repeat the preceding steps on the **Start an approval 2** (sales) and **Start an approval 3** (human resources) branches.
+Repeat the preceding steps on the **Start an approval 2** and **Start an approval 3** branches.
 
 ## Complete the flow
 
@@ -165,12 +163,10 @@ Repeat the preceding steps on the **Start an approval 2** (sales) and **Start an
 
    ![update item configuration](../includes/media/parallel-modern-approvals/add-an-action-2-step.png)
 
-1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this image:
+1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
    ![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
 
-   Note: This email is sent after each approver gives their decision.
-
-## Learn more about modern approval
+## Learn more about modern approvals
 
 [Introduction to modern approvals](./modern-approvals.md)
