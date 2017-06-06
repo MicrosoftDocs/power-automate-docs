@@ -10,29 +10,27 @@
     tags=""/>
 
 <tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="05/25/2017"
-   ms.author="deonhe"/>
+    ms.service="flow"
+    ms.devlang="na"
+    ms.topic="article"
+    ms.tgt_pltfrm="na"
+    ms.workload="na"
+    ms.date="06/08/2017"
+    ms.author="deonhe"/>
 
 # Manage sequential approvals with Microsoft Flow
 
-You can use Microsoft Flow to automate almost any workflow. Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
+Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
 
-In this walkthrough, we create a sequential approval flow that manages employee vacation requests. The flow starts after an employee creates a request for vacation in SharePoint. The flow then routes the request to someone for pre-approval. If the vacation request is pre-approved, the flow sends it to another person for final approval. If the pre-approver rejects the request, the final approver doesn't receive it. The flow also sends email to the employee whenever the status of the vacation request is changed by the pre-approver or the approver.
-
-Note: Go to the [modern approvals walkthrough](./modern-approvals.md) if you want to create, and then test a single approver flow.
+In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
 
 ## Detailed steps in the flow
 
 The flow:
 
-1. Starts when an employee creates vacation request in a SharePoint Online list.
+1. Starts when an employee creates vacation request in a [SharePoint Online list](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
 
-1. Adds the vacation request to the approval center, and then emails the request to the pre-approver.
+1. Adds the vacation request to the approval center and then emails the request to the pre-approver.
 
 1. Emails the pre-approval decision to the employee.
 
@@ -44,9 +42,9 @@ The flow:
 
 1. Emails the final decision to the employee.
 
-1. Updates SharePoint list with the final decision.
+1. Updates the SharePoint list with the final decision.
 
-This diagram summarizes the preceding steps:
+This image summarizes the preceding steps:
 
    ![visio diagram of the flow](./media/sequential-modern-approvals/visio-overview.png)
 
@@ -112,7 +110,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md/#Get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
 
-1. The **Get manager 2** card should look like this screenshot when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
+1. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow.** card.
 
    ![get pre-approver's manager](../includes/media/modern-approvals/get-pre-approver-manager.png)
 
@@ -180,7 +178,7 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
 
    ![select update action](./media/sequential-modern-approvals/update.png)
 
-If you've followed along, your flow should resemble this screenshot:
+If you've followed along, your flow should resemble this image:
 
 ![overview of flow](./media/sequential-modern-approvals/completed-flow.png)
 
@@ -211,3 +209,7 @@ Note: The final approver gets the vacation request only after the request has be
 ## Reject a request
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/reject-a-request.md)]
+
+## More information
+
+[Single approver modern approvals walkthrough](./modern-approvals.md)
