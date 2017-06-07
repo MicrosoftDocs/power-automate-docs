@@ -10,13 +10,13 @@
     tags=""/>
 
 <tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="05/30/2017"
-   ms.author="deonhe"/>
+    ms.service="flow"
+    ms.devlang="na"
+    ms.topic="article"
+    ms.tgt_pltfrm="na"
+    ms.workload="na"
+    ms.date="05/30/2017"
+    ms.author="deonhe"/>
 
 # Trigger a flow based on email properties
 
@@ -44,9 +44,9 @@ In the walk-throughs below, we check all properties in the **When a new email ar
 
 ## Trigger a flow based on an email's subject
 
-In this walk-through, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
+In this walkthrough, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
-Note: While this walk-through sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as a Google Sheet or a Microsoft Excel file stored on Dropbox.
+Note: While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as a Google Sheet or a Microsoft Excel file stored on Dropbox.
 
 Ok, let's get started:
 
@@ -74,7 +74,7 @@ Congratulations, you receive a push notification each time you receive an email 
 
 ## Trigger a flow based on an email's sender
 
-In this walk-through, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
+In this walkthrough, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -122,4 +122,4 @@ Let's get started:
 
      ![save flow](./media/email-triggers/email-triggers-7.png)
 
-Test the flow by sending an email that gets routed to the folder you selected earlier in this walk-through.
+Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
