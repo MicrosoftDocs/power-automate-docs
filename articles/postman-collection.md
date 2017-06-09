@@ -24,7 +24,7 @@
 
 ## Prerequisites
 
-- Install the [Postman app](https://www.getpostman.com/apps)
+- Install the [Postman app](https://www.getpostman.com/apps).
 
 
 ## Create a Postman Collection
@@ -72,6 +72,6 @@ Let's build a Postman Collection for the Azure Cognitive Services [Text Analytic
 
 You can now use this Postman collection to create a custom connector in Microsoft Flow.
 
->[AZURE.IMPORTANT] When creating a custom connector from a Postman collection, be sure to remove the `Content-type` header from actions and triggers, as this will be automatically added by Flow. Authentication headers eg: `Ocp-Apim-Subscription-Key`should be defined in the **Security** section and must be removed from actions and triggers. 
+>[AZURE.IMPORTANT] When creating a custom connector from a Postman collection, be sure to remove the `Content-type` header from actions and triggers, as this will be automatically added by Microsoft Flow. Authentication headers (for example, `Ocp-Apim-Subscription-Key`) should be defined in the **Security** section and must be removed from actions and triggers. 
 
-For more information, see [Register and use custom connectors in Microsoft Flow](register-custom-api.md). 
+For more information, see [Register and use custom connectors in Microsoft Flow](register-custom-api.md).

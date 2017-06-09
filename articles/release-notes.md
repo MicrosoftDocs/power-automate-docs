@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/15/2017"
+   ms.date="06/06/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -51,6 +51,17 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-06-04
+
+- **GA for Windows Phone** - [The Microsoft Flow mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
+- **Emails on flow failures** - Get notified via email when you have a flow that fails. These failure emails will only be sent out once a week, and can be turned on or off by the user.
+- **Select action for tables** -  Use the new Select action to change the set of columns that will be included in tables.
+- **Microsoft Forms connector** -  Microsoft Forms is a new part of Office 365 Education that allows teachers and students to create custom quizzes quickly and easily, surveys, questionnaires, registrations and more.
+- **Office 365 Enterprise K1 plan** - PowerApps and Microsoft Flow are now included with the Office 365 Enterprise K1 plan with certain quotas.
+- **HTTP headers are easier** - Just like the Select action you can provide a header name and header value by just filling out the text boxes on the action.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) about this release.
 
 ### Release 2017-05-23
 

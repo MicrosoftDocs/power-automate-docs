@@ -23,8 +23,8 @@
 
 To use custom connectors in Microsoft Flow, you must provide an OpenAPI definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box OpenAPI specification, there are some extensions available when creating a custom connector for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
 
-## summary 
-Title of the operation. Example - 'When a task is created" or "Create new lead'. 
+## summary
+Title of the operation. Example - 'When a task is created" or "Create new lead'.
 
 Applies to:
 
@@ -35,7 +35,7 @@ Applies to:
 It is recommended that you use **sentence case** for the summary of your operations.
 
 ## x-ms-summary
-Title of the entity. Example - 'Task Name', 'Due Date', etc. 
+Title of the entity. Example - 'Task Name', 'Due Date', etc.
 
 Applies to:
 
@@ -45,7 +45,7 @@ Applies to:
 ![x-ms-summary-annotation](./media/customapi-how-to-swagger/figure_2.png)
 
 It is recommended that you use **title case** in x-ms-summary.
- 
+
 ## description
 A verbose explanation of the operation's functionality or an entity's format and function. Example - 'This operation triggers when a task is added to your project'.
 
@@ -61,13 +61,13 @@ It is recommended that you use **sentence case** in the description.
 
 
 ## x-ms-visibility
-Determines the user facing visibility of the entity. The possible values are ‘important’, ‘advanced’ and ‘internal’. 
+Determines the user facing visibility of the entity. The possible values are **important**, **advanced** and **internal**.
 
-Operations and parameters marked **important** will be always be shown to the user first. 
-Operations and parameters marked **advanced** will be hidden under the advanved menu.
-Operations and parameters marked **internal** will be completely hidden from the user. 
+Operations and parameters marked **important** will be always be shown to the user first.
+Operations and parameters marked **advanced** will be hidden under the advanced menu.
+Operations and parameters marked **internal** will be completely hidden from the user.
 
->[AZURE.NOTE] If a parameter is marked **internal** and **required**, a default value **MUST** be provided for this parameter. 
+>[AZURE.NOTE] If a parameter is marked **internal** and **required**, a default value **MUST** be provided for this parameter.
 
 
 Applies to:
@@ -79,7 +79,7 @@ Applies to:
 ![visibility-annotation](./media/customapi-how-to-swagger/figure_4.jpg)
 
 ## x-ms-dynamic-values
-Enables populating a dropdown for collecting input parameters to an operation. 
+Enables populating a dropdown for collecting input parameters to an operation.
 
 Applies to:
 
@@ -88,9 +88,9 @@ Applies to:
 ![dynamic-values](./media/customapi-how-to-swagger/figure_5.png)
 
 #### Usage:
-Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition. 
+Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition.
 
->[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. Custom connector UI now also supports configuring dropdowns.  
+>[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. Custom connector UI also supports configuring dropdowns.  
 
 #### Properties:
 
@@ -117,7 +117,7 @@ Example:
   }
 ```
 
-Sample code from OpenAPI: 
+Sample code from OpenAPI:
 
 ```json
 "/api/lists/{listID-dynamic}": {
@@ -170,7 +170,7 @@ Annotate a request parameter or a response body with the x-ms-dynamic-schema obj
 * `parameters` [Required] - Object whose properties specify the input parameters required to invoke a dynamic-schema operation
 * `value-path` [Optional] - A path string that refers to the property holding the schema, if not specified, the response is assumed to contain the schema in the properties of the root object
 
-Sample code for dynamic parameters: 
+Sample code for dynamic parameters:
 
 ```json
   {
@@ -216,4 +216,3 @@ Sample code for dynamic response:
 [Use an ASP.NET Web API](customapi-web-api-tutorial.md).
 
 [Register an Azure Resource Manager API](customapi-azure-resource-manager-tutorial.md).
-
