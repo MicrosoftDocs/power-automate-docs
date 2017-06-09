@@ -20,7 +20,7 @@
 
 # Mobile approvals with Microsoft Flow
 
-When you create an approval flow, it sends approval requests:
+When you create an [approval flow](./modern-approvals.md), it sends approval requests:
 
 - [Via email](./modern-approvals.md/#from-email).
 - To the [approval center](./modern-approvals.md/#from-the-approvals-center).
@@ -34,13 +34,13 @@ You can use any of the preceding methods to manage your approval requests. Howev
 
 To complete this walkthrough, you need:
 
-- A mobile device running the [Microsoft Flow](https://flow.microsoft.com) [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) mobile app.
+- A mobile device running the Microsoft Flow [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) mobile app.
 - To be designated as the approver in an approval flow.
 - At least two pending approval requests.
 
 ## Mobile approvals
 
-The Microsoft flow mobile app has an approval center that's similar to the [approval center](https://flow.microsoft.com/manage/approvals/received) on the Microsoft Flow [website](https://flow.microsoft.com). Use the mobile approval center to view, approve, or reject approval requests.
+The mobile app's approval center is similar to the [approval center](https://flow.microsoft.com/manage/approvals/received) on the Microsoft Flow [website](https://flow.microsoft.com). Use the approval center from your mobile device to view, approve, or reject approval requests.
 
 # View pending approval requests
 
@@ -48,15 +48,15 @@ The Microsoft flow mobile app has an approval center that's similar to the [appr
 
     ![](./media/mobile-approvals/open-app.png)
 
-1. Select **APPROVALS** from the top right of the app.
+1. Select **APPROVALS** from the top right corner of the screen.
 
     ![](./media/mobile-approvals/select-approvals.png)
 
-All pending approvals are displayed:
+1. View all pending approvals:
 
-   ![](./media/mobile-approvals/show-pending-approval-requests.png)
+   ![see pending approval requests](./media/mobile-approvals/show-pending-approval-requests.png)
 
-If you don't see any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow.
+If there aren't any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
 # Approve request and leave an optional comment
 
@@ -64,23 +64,21 @@ If you don't see any pending approval requests, create an approval flow, set you
 
 1. Select **APPROVE** on the request you want to approve.
 
-    ![](./media/mobile-approvals/select-approve.png)
+    ![select approve](./media/mobile-approvals/select-approve.png)
 
 1. (Optional) select **Add comment (optional)**.
 
-    ![](./media/mobile-approvals/select-add-comment.png)
+    ![select add a comment](./media/mobile-approvals/select-add-comment.png)
 
     Enter a comment on the **Add comment** screen.
 
-    ![](./media/mobile-approvals/enter-comment-for-approval.png)
+    ![enter your comment](./media/mobile-approvals/enter-comment-for-approval.png)
 
-1. Select **CONFIRM** in the top right corner of the app.
+1. Select **CONFIRM** in the top right corner of the screen.
 
-    ![](./media/mobile-approvals/tap-confirm-button.png)
+    ![confirm your are finished](./media/mobile-approvals/tap-confirm-button.png)
 
-The success screen displays:
-
-![](./media/mobile-approvals/success-screen.png)
+The success screen displays after the flow records your decision.
 
 ## Reject request and leave an optional comment
 
@@ -88,5 +86,5 @@ Follow the steps to approve a request, but select **REJECT** in the second step.
 
 ## Learn more
 
-- [Learn to create modern approval flow](./modern-approvals.md).
-- Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) or [Windows Phone](https://aka.ms/flowmobilewindows).
+- Learn to [create modern approval flows](./modern-approvals.md).
+- Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
