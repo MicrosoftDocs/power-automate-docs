@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/02/2017"
+   ms.date="06/08/2017"
    ms.author="deonhe"/>
 
 # Create parallel approval workflows with Microsoft Flow
