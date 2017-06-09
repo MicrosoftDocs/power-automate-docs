@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Create a Button Flow | Microsoft Flow"
+   pageTitle="Create a button flow | Microsoft Flow"
    description="Create a button flow and team flow for Contoso Flooring."
    services=""
    suite="flow"
