@@ -332,7 +332,7 @@ Note: The screens on Android and iOS may differ slightly, however, the functiona
 
 ## Reject a request
 
-You can reject a request via email, the approvals center, or the Microsoft Flow app. To reject a request, follow the steps above for approving a request, but, select **Reject**, instead of **Approve**.
+You can reject a request via email, the approvals center, or the [Microsoft Flow app](./mobile-approvals.md). To reject a request, follow the steps above for approving a request, but, select **Reject**, instead of **Approve**.
 
 After you confirm your decision (rejection of the request), the flow runs the following steps:
 
@@ -340,3 +340,8 @@ After you confirm your decision (rejection of the request), the flow runs the fo
 
 1. Updates the SharePoint Online list with the decision, and the comments from the approver.
 
+## More information
+
+- Approve requests from mobile devices with the [Microsoft Flow mobile app](./mobile-approvals.md).
+- Create [sequential modern approval flows](./sequential-modern-approvals.md)
+- Create [parallel modern approval flows](./parallel-modern-approvals.md)

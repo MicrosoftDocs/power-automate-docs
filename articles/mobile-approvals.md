@@ -42,7 +42,7 @@ To complete this walkthrough, you need:
 
 The mobile app's approval center is similar to the [approval center](https://flow.microsoft.com/manage/approvals/received) on the Microsoft Flow [website](https://flow.microsoft.com). Use the approval center from your mobile device to view, approve, or reject approval requests.
 
-# View pending approval requests
+## View pending approval requests
 
 1. Open the Microsoft Flow mobile app.
 
@@ -58,7 +58,7 @@ The mobile app's approval center is similar to the [approval center](https://flo
 
 If there aren't any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
-# Approve request and leave an optional comment
+## Approve request and leave an optional comment
 
 1. Follow the preceding steps to [display all pending approval requests](./mobile-approvals.md/#View-pending-approval-requests).
 
