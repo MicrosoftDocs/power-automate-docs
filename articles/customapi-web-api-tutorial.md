@@ -4,7 +4,7 @@
 	services=""
     suite="flow"
 	documentationCenter=""
-	authors="msftman"
+	authors="sunaysv"
 	manager="anneta"
 	editor=""/>
 
@@ -15,7 +15,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="12/06/2016"
-   ms.author="deonhe"/>
+   ms.author="sunayv"/>
 
 # Build a custom connector for a Web API in Microsoft Flow
 
@@ -114,8 +114,9 @@ You should now be able to use AAD to authenticate your web application.
 "securityDefinitions": {
     "AAD": {
         "type": "oauth2",
-        "flow": "implicit",
+        "flow": "accessCode",
         "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+        "tokenUrl" : "https://login.windows.net/common/oauth2/token",
         "scopes": {}
     }
 },

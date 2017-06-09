@@ -24,7 +24,7 @@
 
 Your flow is deployed in the region that hosts the environment. For example, if your environment is created in the Europe region, your flow is deployed in Europe data centers.
 
-Administrators can identify the region if they sign in to the Microsoft Flow [admin center](https://admin.flow.microsoft.com). The **Environments** tab lists all existing environments and the regions where your flows are deployed.
+Administrators can identify the region if they sign in to the Microsoft Flow [admin center](https://admin.flow.microsoft.com). The **Environments** tab lists all existing environments and their regions.
 
 ![view environments](media/regions-overview/environments-list.png)
 
