@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="05/30/2017"
+    ms.date="06/08/2017"
     ms.author="deonhe"/>
 
 # Trigger a flow based on email properties
@@ -46,7 +46,7 @@ In the walk-throughs below, we check all properties in the **When a new email ar
 
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
-Note: While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as a Google Sheet or a Microsoft Excel file stored on Dropbox.
+Note: While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as Google Sheets or a Microsoft Excel file stored on Dropbox.
 
 Ok, let's get started:
 
