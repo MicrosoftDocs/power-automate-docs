@@ -37,9 +37,9 @@ When you sign up, you can **connect to more than 100 services and manage data in
 ![List of services](./media/learning-introduce-flow/services.png)
 
 ## What you can do with Microsoft Flow? ##
-You can use Microsoft Flow to **automate workflows between your favorite applications and services**, synchronize files, get notifications, collect data, and more. For example, you can automate these tasks:
+You can use Microsoft Flow to **automate workflows between your favorite applications and services**, synchronize files, get notifications, collect data, and more. 
 
-Some examples of tasks you can **automate** with Microsoft Flow are:
+For example, you can **automate** these tasks:
 
 - Instantly respond to high-priority notifications or emails.
 - Capture, track, and follow up with new sales leads.
@@ -49,34 +49,37 @@ Some examples of tasks you can **automate** with Microsoft Flow are:
 
 **A common use of Microsoft Flow is to receive notifications**. For example, you can instantly receive an email or a push notification on your phone whenever a sales lead is added to Dynamics 365 or Salesforce.
 
-![example of a notification mail or a push notification]()
+![Example of a notification mail or a push notification](./media/learning-introduce-flow/sales-lead.png)
 
 **You can also use Microsoft Flow to copy files**. For example, you can ensure that any file that's added to Dropbox gets automatically copied to SharePoint where your team can find it.
 
-![a list of files in Dropbox alongside the same list in SharePoint]()
+![List of files in Dropbox](./media/learning-introduce-flow/dropbox-files.png) 
+
+![List of same files in SharePoint](./media/learning-introduce-flow/sharepoint-files.png) 
 
 **You can monitor what people are saying about your business** by creating a flow that runs whenever someone sends a tweet with a certain hashtag. The flow could put details about that tweet into a SQL Server database, a SharePoint list, or even an Excel file hosted on OneDrive--whichever service works for you. With the data that you collect, you can create actions to connect it to Power BI, spot trends, and ask questions about the data.
 
-![a list of tweets in Excel]()
+![List of tweets in Excel](./media/learning-introduce-flow/tweets-to-excel.png)
+
+![List of tweets in Excel](./media/learning-introduce-flow/excel-tweets.png)
 
 And finally, **you can automate approval loops** for, as an example, vacation requests in a SharePoint list.
 
-![a list of vacation requests--some approved, some not--in SharePoint]
+![List of vacation requests--some approved, some not--in SharePoint](./media/learning-introduce-flow/vacation-requests.png)
 
 For more ideas, **browse our list of templates**, which help you build flows in just a few steps. For example, you can easily build flows to send yourself weather forecasts, reminders at regular intervals, or phone notifications whenever your manager sends you mail.
 
-![list of templates]()
+![List of templates](./media/learning-introduce-flow/templates-you-might-use.png)
 
 Got an idea for a flow that you don't see in the list? Create your own from scratch and, if you want, share it with the community!
 
 ## Where can I create and administer a flow? ##
 
-You can create a flow and perform administrative tasks in a browser or on your phone if you download the mobile app for Microsoft Flow.
+You can create a flow and perform administrative tasks **in a browser** or **on your phone** - if you download the mobile app for Microsoft Flow.
 
-![screen shot of mobile app]()
+![Screen shot of mobile app](./media/learning-introduce-flow/screen-mobile-app.png)  
 
 You can perform these tasks, among others:
-
 - Turn flows on or off from wherever you are.
 - See when a flow has failed.
 - Review detailed run-history reports.
@@ -87,7 +90,7 @@ Let's jump into the tool, and I'll show you around. We have tons of information 
 
 ![Start of tour](./media/learning-introduce-flow/start-of-tour.png)
 
-On the home page, you see we have menus for:
+On the home page, we have menus for:
 
 - **My flows**, where our flows live.
 - **Templates**, which is a great place to start.
