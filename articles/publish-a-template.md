@@ -1,11 +1,11 @@
 <properties
     pageTitle="Submit a flow template | Microsoft Flow"
-    description="Submit a Microsoft Flow template so that others can use the flow you created."
+    description="Submit your flow as a template so that other organizations can find it in the template gallery and use the flow that you created."
     services=""
     suite="flow"
     documentationCenter="na"
     authors="sunaysv"
-    manager="erikre"
+    manager="anneta"
     editor=""
     tags=""/>
 
@@ -15,19 +15,24 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/25/2016"
+   ms.date="06/10/2017"
    ms.author="sunayv"/>
 
-# Submit a flow template to the Microsoft Flow gallery #
+# Submit a template to the Microsoft Flow gallery #
+Submit a flow template to the gallery of templates for Microsoft Flow. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow. 
 
-A flow template can be submitted to be showcased in the Microsoft Flow template gallery. Templates can help other users of Microsoft Flow to easily create flows and be inspired to automate scenarios showcased by templates. 
+1. On the **My Flows** page, select the ellipsis (...) for a flow.
 
-1. In order to submit a flow as a template, click on the "..." context menu and select "Submit as a template"
+	![Ellipsis button](./media/publish-a-template/ellipsis-button.png)
 
-	![Confirmation page](./media/publish-a-template/submit-to-gallery.png)
+1. In the menu that appears, select **Submit as a template**.
 
-1. Next, provide a meaningful title, a clear description of the scenario your template will help automate and select the categories that apply for the template. Clicking "Submit" will send your template to Microsoft Flow for verification and approval, if your template is approved - it will show up in the Microsoft Flow gallery.
+	![Context menu](./media/publish-a-template/context-menu.png)
 
-	![Submit your template](./media/publish-a-template/submit-to-gallery-confirmation.png)
+1. Specify a meaningful title, a clear description of the scenario that your template will help automate, and the categories that apply for the template.
 
-**Note**: Microsoft may modify your template before publishing it to the gallery.
+	![Template options](./media/publish-a-template/template-options.png)
+
+1. Select **Submit**.
+
+ 	The Microsoft Flow team will verify and *possibly modify* your template. If the team approves your template, it will appear in the gallery of templates for Microsoft Flow.
