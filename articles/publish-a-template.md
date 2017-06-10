@@ -19,16 +19,15 @@
    ms.author="sunayv"/>
 
 # Submit a flow template to the Microsoft Flow gallery #
-Create a template by creating a flow from scratch or modifying an existing flow template. Submit your flow template to the Microsoft Flow gallery so that other users can create their own flows from your template. You cannot publish a template that uses a custom connector.
 
-1. Create a flow or modify an existing flow template, and then select **Submit to gallery** on the confirmation page.
+A flow template can be submitted to be showcased in the Microsoft Flow template gallery. Templates can help other users of Microsoft Flow to easily create flows and be inspired to automate scenarios showcased by templates. 
+
+1. In order to submit a flow as a template, click on the "..." context menu and select "Submit as a template"
 
 	![Confirmation page](./media/publish-a-template/submit-to-gallery.png)
 
-1. Provide a meaningful title and a clear description of what your template does. That way, others can more easily understand and use your flow template.  
+1. Next, provide a meaningful title, a clear description of the scenario your template will help automate and select the categories that apply for the template. Clicking "Submit" will send your template to Microsoft Flow for verification and approval, if your template is approved - it will show up in the Microsoft Flow gallery.
 
 	![Submit your template](./media/publish-a-template/submit-to-gallery-confirmation.png)
-
-	If your template is approved, it will immediately be available in the Microsoft Flow gallery.
 
 **Note**: Microsoft may modify your template before publishing it to the gallery.
