@@ -1,6 +1,6 @@
 <properties
     pageTitle="Use mobile devices to approve requests | Microsoft Flow"
-    description="Use mobile devices to approve requests created in Microsoft Flow"
+    description="Use mobile devices to approve requests created in Microsoft Flow."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,7 +15,7 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="06/10/2017"
+    ms.date="06/14/2017"
     ms.author="deonhe"/>
 
 # Mobile approvals with Microsoft Flow
@@ -78,7 +78,9 @@ If there aren't any pending approval requests, create an approval flow, set your
 
     ![confirm your are finished](./media/mobile-approvals/tap-confirm-button.png)
 
-The success screen displays after the flow records your decision.
+1. The success screen displays after the flow records your decision.
+
+    ![success screen](./media/mobile-approvals/approved.png)
 
 ## Reject request and leave an optional comment
 
