@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Easily Automate approval workflows. | Microsoft Flow"
+    pageTitle="Easily Automate approval workflows. | Microsoft Flow" 
     description="Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress."
     services=""
     suite="flow"
@@ -28,7 +28,7 @@ Approvers manage requests from their email inbox, [the approvals center](https:/
 
 ## Create an approval flow
 
-Here's an overview of the the flow we'll create:
+Here's an overview of the flow we'll create:
 
    ![overview of flow](./media/modern-approvals/create-flow-overview.png)
 
@@ -64,7 +64,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
      The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-     ![sharepoint info](./media/modern-approvals/select-sharepoint-site-info.png)
+     ![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ### Add a profile action
 
