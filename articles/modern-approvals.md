@@ -1,6 +1,6 @@
 <properties
-    pageTitle="Automate approval workflows. | Microsoft Flow"
-    description="Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, One Drive for Business, Zendesk, or WordPress."
+    pageTitle="Easily Automate approval workflows. | Microsoft Flow"
+    description="Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -18,37 +18,39 @@
    ms.date="06/15/2017"
    ms.author="deonhe"/>
 
-# Manage approvals with Microsoft Flow
+# Create and test an approval workflow with Microsoft Flow
 
-Add the Microsoft Flow **Approvals - Start an approval** action to flows to manage the approval of documents or processes. These flows can leverage several services, including SharePoint, Dynamics CRM, Salesforce, One Drive for Business, Zendesk, or WordPress.
+To automate an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
-For example, you can create a document approval flow that approves or rejects invoices, work orders, or sales quotations. You can also create a process approval flow that approves or rejects vacation requests, overtime work, or travel plans.
+Approval flows can leverage several services, including SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
-Approvers can manage requests from their email inbox, the approvals center on the Microsoft Flow website, or the Microsoft Flow app.
+Approvers manage requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Microsoft Flow website, or the Microsoft Flow app.
 
 ## Create an approval flow
 
-In this walk-through, we'll create a flow that performs the following steps:
+Here's an overview of the the flow we'll create:
 
-1. Starts when a vacation request is created in a SharePoint Online list.
+   ![overview of flow](./media/modern-approvals/create-flow-overview.png)
 
-1. Adds the vacation request to the approval center, and then emails the request to the approver.
+The flow performs the following steps:
 
-1. Sends an email to the person who requested vacation, after the approver makes a decision.
+1. Starts when someone creates a vacation request in a SharePoint Online list.
 
-1. Updates the SharePoint Online list with the decision, and any comments from the approver.
+1. Adds the vacation request to the approval center, and then emails it to the approver.
 
-This diagram shows the details of the flow we'll create:
+1. Sends an email with the approver's decision to the person who requested vacation.
 
-   ![](./media/modern-approvals/create-flow-overview.png)
+1. Updates the SharePoint Online list with the approver's decision comments.
 
 ## Prerequisites
 
-To complete this walk-through, you must have access to:
+To complete this walkthrough, you must have access to:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
 
-   ![](./media/modern-approvals/sharepoint-list-fields.png)
+Create these columns in your SharePoint Online list:
+
+   ![SharePoint Online list columns](./media/modern-approvals/sharepoint-list-fields.png)
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
 
@@ -60,7 +62,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
 
-     The **Site Address** and the **List Name** are the items you noted earlier in this walk-through.
+     The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
      ![sharepoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
@@ -98,7 +100,6 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
-<!--check pic-->
    ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
 ### Add an update action for approved requests
@@ -107,15 +108,12 @@ Follow these steps to send an email if the vacation request is approved:
 
      Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-<!--check pic-->
-
    ![update item configuration](./media/modern-approvals/configure-update-item.png)
 
 ### Add an email action for rejections
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-<!--check pic-->
    ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
 
 ### Add update action for rejected requests
@@ -123,8 +121,6 @@ Follow these steps to send an email if the vacation request is approved:
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
-
-   <!-- check pic  -->
 
    ![update item card](./media/modern-approvals/configure-update-item-no.png)
 
@@ -153,3 +149,11 @@ Now that we've created the flow, it's time to test it!
 ## Reject a request
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/reject-a-request.md)]
+
+Now that you've created and tested your flow, be sure to let others know how to use it.
+
+## Learn more
+
+- Create [sequential approval flows.](./sequential-modern-approvals.md)
+- Create [parallel approval flows.](./parallel-modern-approvals.md)
+- Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
