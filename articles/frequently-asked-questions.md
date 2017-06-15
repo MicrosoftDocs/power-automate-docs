@@ -100,7 +100,7 @@ Get started with the following resources:
 - [Community](http://powerusers.microsoft.com)
 
 ### What operating systems does the mobile app for Microsoft Flow support?
-The mobile app for Microsoft Flow supports iOS and Android.
+The Microsoft Flow mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### What regions and languages does Microsoft Flow support?
 Microsoft Flow is available in 42 languages and [six regions](regions-overview.md).

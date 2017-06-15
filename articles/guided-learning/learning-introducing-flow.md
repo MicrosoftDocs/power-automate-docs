@@ -51,7 +51,7 @@ For more ideas, you should browse our list of **pre-made templates** (we'll talk
 
 ## Creating and administering flows
 
-To create and administer flows, you can use the web app, or you can use the mobile app (**iOS** and **Android**, **Windows** coming soon).  Whichever platform you choose, it’s easy to diagnose issues, synchronize data, and more:
+To create and administer flows, you can use the web app, or the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). Whichever platform you choose, it’s easy to diagnose issues, synchronize data, and more:
 
 - Turn flows on or off from wherever you are.
 - See when a flow has failed.
