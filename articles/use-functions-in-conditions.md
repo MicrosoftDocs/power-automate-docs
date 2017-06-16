@@ -20,7 +20,7 @@
 
 # Use functions in conditions
 
-You can use the **Condition** card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of two columns in a spreadsheet or a database table. To compare multiple values, edit the **Condition** card in **Advanced mode** and use logical functions.
+You can use the **Condition** card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of two columns in a spreadsheet or a database table. To compare multiple values, edit the **Condition** card in **Advanced mode** and use any combination of the following logical functions.
 
 <table>
 <tr>
@@ -113,14 +113,15 @@ Your **Condition** card resembles this image when you use the OR function:
 
 ## Use the AND function
 
-Assume you have a spreadsheet table with two columns, Status and Completed. If you want to take an action on each row only when the Status column's value is "ready" and the Completed column's value is "yes", edit the **Condition** card in advanced mode and use the AND function. Here is what your condition card would resemble in this scenario:
+Assume you have a table with two columns in a spreadsheet. The column names are Status and Completed. If you want to take an action on each row only when the Status column's value is "ready" and the Completed column's value is "yes", edit the **Condition** card in advanced mode and use the AND function. Here is what your condition card would resemble in this scenario:
 
-<!--fix image 
+The and function should appear as shown here:
+
+````@and(equals(item()?['Status'], 'ready'), equals(item()?['Completed'], 'yes'))````
+
+Your **Condition** card resembles this image when you use the OR function:
 
    ![notification details](./media/use-functions-in-conditions/and-function.png)
-
--->
-
 
 ## Use the GREATER THAN function
 
