@@ -22,7 +22,9 @@
 
 # Create a button flow #
 
-Welcome to the Guided Learning session where you will learn how to **build a flow** for the Contoso Flooring Company. This is the first flow for the company to use in their working environment.
+Welcome to the Guided Learning session where you will learn how to **build a button flow** for the Contoso Flooring Company. 
+
+Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members of the team.  
 
 First, go to the flow website and sign into the [ Microsoft Flow website.](https://ms.flow.microsoft.com/en-us/)
 
@@ -69,7 +71,7 @@ When the **button is pressed**, an email is sent to the **whole Contoso Warehous
 
 ![Send email](./media/learning-create-button-flow/10-send-email.png)
 
-Go ahead and expand the fields and customize this to work for Contoso flooring.
+Go ahead and **expand the fields** and customize this to work for Contoso flooring.
 
 In the To field, type the Contoso Warehouse distribution list, **Warehouse@Contoso.com**.
 
@@ -89,17 +91,17 @@ Press **Create flow**, to send the email.
 
 ## Create a team flow ##
 
-You can use this button Flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if she leaves the company? You want to make sure that this flow keeps running. To do that -- add co-owners!
+You can use this button flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if she leaves the company? You want to make sure that this flow keeps running. To do that,  **add co-owners**.
 
 Click the **team icon** on your flow to add a co-owner.
 
 ![Create team flow](./media/learning-create-button-flow/13-create-team-flow.png) 
 
-Enter names, email addresses, or user groups to add co-owners.
+Enter **names**, **email addresses**, or **user groups** to add co-owners.
 
 ![Add co-owners](./media/learning-create-button-flow/14-add-co-owners.png)
 
-To **remove co-owners** click the trash can where  their name is shown.
+To **remove co-owners**, click the trash can where  their name is shown.
 
 ![Remove co-owners](./media/learning-create-button-flow/15-remove-co-owners.png)
 

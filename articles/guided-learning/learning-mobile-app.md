@@ -22,7 +22,7 @@
 
 # Guided Learning for the Microsoft Flow Mobile app #
 
-In this lesson, you will be covering the Microsoft Flow Mobile App and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
+In this lesson, you will be covering the **Microsoft Flow Mobile App** and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
 First, you’ll need to **download** and **install** the Microsoft Flow App from your app store.
 
@@ -30,18 +30,16 @@ First, you’ll need to **download** and **install** the Microsoft Flow App from
 
 Once it's installed, **open it** and **sign in**.
 
-As you can see, when you open the app, you land on the **Activity Feed**.
+When you open the app, you land on the **Activity Feed**.
 
-![Activity Feed](./media/learning-mobile-app/see-all-activity.png)
-
-
-
-
-The Activity Feed is the spot to see what’s happening with your flows **while you are on the go** and may not have **access to your computer** for a full experience.
+The Activity Feed is the spot to see what’s happening with your flows, **while you are on the go** and may not have **access to your computer** for a full experience.
 
 For instance, if you click any of these flows, you can **get a closer look** at that flows **last activity**, whether it succeeded or failed to run, and if it failed, which step it failed on.
 
-As you can see, this flow succeded in both steps.
+![Activity Feed](./media/learning-mobile-app/see-all-activity.png)
+
+As you can see, this flow succeeded in both steps.
+
 From here, go ahead and click the **Buttons** icon.
 
 ![Activity details](./media/learning-mobile-app/activity-details.png)
@@ -69,24 +67,23 @@ and click **Create**.
 
 ![Create complete](./media/learning-mobile-app/create-complete.png)
 
-
+The flow is **saved**, **created**,
 
 ![Completed reminder](./media/learning-mobile-app/complete-reminder.png)
 
-The flow is **saved**, **created**, 
+and here it is in **your collection**. 
 
 ![In your collection](./media/learning-mobile-app/here-it-is.png)
 
-and here it is in **your collection**.
+Here it is in **your buttons**. 
 
 ![In our buttons](./media/learning-mobile-app/button-send-reminder.png)
 
-Here it is in **your buttons**, and you can go ahead and **click it**, and in 10 minutes, you'll **get a reminder**.
+You can go ahead and **click it**, and in 10 minutes, you'll **get a reminder**.
 
 ![In your buttons](./media/learning-mobile-app/in-your-collection.png)
 
-
-It is simple to **add additional buttons** to your collection.
+It's simple to **add additional buttons** to your collection.
 
 ## Modify or delete a flow ##
 
@@ -98,15 +95,15 @@ Click the **Flows** button, which is essentially the **mobile management area** 
 ![Click flows icon](./media/learning-mobile-app/click-flows-button.png)
 
 
-Now, click on this flow as you don’t really want this one anymore, and you see that there are a few options.
+Now, click on this flow as you **don’t really want this one anymore**, and you see that there are a few options.
 
 ![Unwanted flow](./media/learning-mobile-app/send-a-reminder.png)
 
 To enable or disable the flow, **touch the Enable flow** toggle switch.
 
-And you can always **edit the flow**, in case you want to **make it useful** to yourself again. 
+You can always **edit the flow**, in case you want to **make it useful** to yourself again. 
 
-You can see the **run history** of the flow, to get an idea of its **successful and unsuccessful** runs.
+And you can see the **run history** of the flow, to get an idea of its **successful and unsuccessful** runs.
 
 You can also delete it by **touching the Delete flow** button.
 
@@ -122,4 +119,4 @@ You can also delete it by **touching the Delete flow** button.
 
 ## Next Lesson ##
 
-The next lesson covers **how to create a  button flow** for a team. 
+The next lesson covers **how to create a button flow** for a team. 
