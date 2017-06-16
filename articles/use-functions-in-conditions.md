@@ -96,32 +96,30 @@ Sometimes your workflow needs to take an action if the value of an item is value
 - **Unnecessary**
 - **In progress**
 
-You want to regularly remove any rows with a *status* column value of *completed* or *unnecessary*. To identify the rows that have its status column set to "completed" or "unnecessary":
+You want to regularly remove any rows with a *status* column value of *completed* or *unnecessary*. To identify rows with their status column set to "completed" or "unnecessary":
 
-1. Use the **Get rows** action for the spreadsheet service you're using. Microsoft flow supports Excel and Google Sheets.
-1. Use **Apply to each** on each row of the spreadsheet table that has your data.
-1. Add a **Condition** to the **Apply to each** card.
-1. Edit the **Condition** card in advanced mode, and then add an **OR** function. This function checks the the value of each row (a row is known as an item when accessed in a function. If the value of the status column is *completed* or *unnecessary*, the or function evaluates to "true".
+1. Use the **Get rows** action for the spreadsheet service you're using. Microsoft Flow supports Excel and Google Sheets.
+1. Use the **Apply to each** action on each row of the spreadsheet table.
+1. Add a **Condition** to the **Apply to each** action.
+1. Edit the **Condition** in advanced mode, and then add an **or** function. This function checks the value of each row (a row is known as an item when accessed in a function). If the value of the status column is *completed* or *unnecessary*, the **or** function evaluates to "true".
 
-The or function should appear as shown here:
+The **or** function should appear as shown here:
 
 ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
 
-Your **Condition** card resembles this image when you use the OR function:
+Your **Condition** card resembles this image when you use the **or** function to check the existence of one of two possible values:
 
-   ![notification details](./media/use-functions-in-conditions/or-function.png)
+   ![or function image](./media/use-functions-in-conditions/or-function.png)
 
 ## Use the AND function
 
-Assume you have a table with two columns in a spreadsheet. The column names are Status and Completed. If you want to take an action on each row only when the Status column's value is "ready" and the Completed column's value is "yes", edit the **Condition** card in advanced mode and use the AND function. Here is what your condition card would resemble in this scenario:
-
-The and function should appear as shown here:
+Assume you have a spreadsheet table with two columns. The column names are Status and Completed. If you want to take an action on rows only when **both** the Status column's value is "ready" and the Completed column's value is "yes", edit the **Condition** card in advanced mode and use the **and** function. In this scenario, the and function appears as shown here:
 
 ````@and(equals(item()?['Status'], 'ready'), equals(item()?['Completed'], 'yes'))````
 
-Your **Condition** card resembles this image when you use the OR function:
+Your **Condition** card resembles this image when you use the **and** function to check the existence of two values:
 
-   ![notification details](./media/use-functions-in-conditions/and-function.png)
+   ![and function image](./media/use-functions-in-conditions/and-function.png)
 
 ## Use the GREATER THAN function
 
