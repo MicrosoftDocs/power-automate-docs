@@ -86,30 +86,101 @@ if(equals(1, 1), 'yes', 'no')</td>
 </tr>
 </table>
 
+## Prerequisites
+
+- Access to Microsoft Flow.
+- A spreadsheet with a table described later in this walkthrough.
+- Access to SharePoint (you can use any service in your own flows).
 
 ## Use the OR function
 
-Sometimes your workflow needs to take an action if the value of an item is valueA or valueB. For example, you may be tracking the status of tasks in a spreadsheet table. The table has a column named *status*. The possible values in the *status* column are:
+Sometimes your workflow needs to take an action if the value of an item is valueA or valueB. For example, you may be tracking the status of tasks in a spreadsheet table. The table has a column named *Status*. The possible values in the *Status* column are:
 
-- **Completed**
+- **completed**
 - **Blocked**
 - **Unnecessary**
 - **In progress**
 
-You want to regularly remove any rows with a *status* column value of *completed* or *unnecessary*. To identify rows with their status column set to "completed" or "unnecessary":
+Here's a example of what the spreadsheet might look like:
 
-1. Use the **Get rows** action for the spreadsheet service you're using. Microsoft Flow supports Excel and Google Sheets.
-1. Use the **Apply to each** action on each row of the spreadsheet table.
-1. Add a **Condition** to the **Apply to each** action.
-1. Edit the **Condition** in advanced mode, and then add an **or** function. This function checks the value of each row (a row is known as an item when accessed in a function). If the value of the status column is *completed* or *unnecessary*, the **or** function evaluates to "true".
+![sample spreadsheet](./media/use-functions-in-conditions/spreadsheet-table.png)
 
-The **or** function should appear as shown here:
+You want to remove any rows with a *Status* column that's set to *completed* or *unnecessary*.
+
+Let's create the flow.
+
+## Start with a blank flow
+
+1. [!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+
+## Add a trigger to your flow
+
+1. Search for **Schedule**, and then select the **Schedule - Recurrence** trigger
+
+    ![schedule trigger](../includes/media/schedule-trigger/schedule-trigger.png)
+
+1. Set the schedule to run once daily.
+
+    ![set schedule](../includes/media/schedule-trigger/set-schedule.png)
+
+## Select the spreadsheet and get all rows
+
+1. Select **New step** > **Add an action**.
+
+   ![new step](../includes/media/new-step/action.png)
+
+1. Search for **rows**, and then select **Excel - Get rows**.
+
+    Note: Select the "get rows" action that corresponds to the spreadsheet that you are using. For example, if you are using Google Sheets, select **Google Sheets - Get rows**.
+
+   ![get Rows](../includes/media/new-step/get-excel-rows.png)
+
+1. Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
+
+   ![select spreadsheet](../includes/media/new-step/select-spreadsheet.png)
+
+1. Select the table that contains your data from the **Table name** list.
+
+   ![select table](../includes/media/new-step/select-table.png)
+
+
+## Check the status column of each row
+
+1. Select **New step** > **More** > **Add an apply to each**.
+
+   ![select table](../includes/media/new-step/apply-to-each.png)
+
+1. Add the **Value** token to the **Select an output from previous steps** box.
+
+   ![select table](../includes/media/apply-to-each/add-value-token.png)
+
+1. Select **Add a condition** > **Edit in advanced mode**.
+
+1. Add the **or** function. This function checks the value of each row (a row is known as an item when accessed in a function). If the value of the status column is *completed* or *unnecessary*, the **or** function evaluates to "true".
+
+The **or** function appears as shown here:
 
 ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
 
-Your **Condition** card resembles this image when you use the **or** function to check the existence of one of two possible values:
+Your **Condition** card resembles this image:
 
    ![or function image](./media/use-functions-in-conditions/or-function.png)
+
+### Delete matching rows from spreadsheet
+
+1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
+1. Search for **Delete row**, and then select **Excel - Delete row**.
+
+   ![or function image](../includes/media/new-step/select-delete-excel-row.png)
+1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
+
+   ![or function image](../includes/media/new-step/delete-excel-row.png)
+
+## Name the flow and save it
+
+1. Give your flow a name and then select the **Create flow** button.
+
+   ![or function image](./media/use-functions-in-conditions/name-and-save.png)
 
 ## Use the AND function
 
