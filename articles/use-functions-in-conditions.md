@@ -111,7 +111,17 @@ Let's create the flow.
 
 ## Start with a blank flow
 
-1. [!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+
+     ![sign in](../includes/media/modern-approvals/sign-in.png)
+
+1. Select the **My flows** tab.
+
+     ![select my flows](../includes/media/modern-approvals/select-my-flows.png)
+
+1. Select **Create from blank**.
+
+     ![create from blank](../includes/media/modern-approvals/blank-template.png)
 
 ## Add a trigger to your flow
 
@@ -142,7 +152,6 @@ Let's create the flow.
 1. Select the table that contains your data from the **Table name** list.
 
    ![select table](../includes/media/new-step/select-table.png)
-
 
 ## Check the status column of each row
 
@@ -226,7 +235,7 @@ After your flow runs, the spreadsheet resembles this image:
 
    ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
 
-   Notice the extra lines have been removed.
+   Notice extra lines are removed from the table.
 
 ## Use the GREATER function
 
