@@ -1,6 +1,6 @@
 <properties
     pageTitle="Use functions inside conditions. | Microsoft Flow"
-    description="Use advanced functions such as ""and"", ""or"", and ""Greater than"" with Microsoft Flow conditions."
+    description="Use advanced functions such as ""and"", ""or"",  “empty” and ""greater"" with Microsoft Flow conditions."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -29,14 +29,14 @@ You can use the **Condition** card in basic mode to quickly compare a single val
     <th>Example</th>
 </tr>
 <tr>
-    <td>and</td>
+    <td>[and](./use-functions-in-conditions.md/#Use-the-AND-function)</td>
     <td>Returns true if both values are true.<br><b>Note</b>: Both arguments need to be Booleans.</td>
     <td>For example, this function returns false:
 and(greater(1,10),equals(0,0))</td>
 
 </tr>
 <tr>
-    <td>or</td>
+    <td>[or](./use-functions-in-conditions.md/#Use-the-or-function)</td>
     <td>Returns true if either parameter is true. <br><b>Note</b>: Both arguments need to be Booleans.</td>
     <td>For example, this function returns true:
 or(greater(1,10),equals(0,0))</td>
@@ -89,7 +89,7 @@ if(equals(1, 1), 'yes', 'no')</td>
 ## Prerequisites
 
 - Access to Microsoft Flow.
-- A spreadsheet with a table described later in this walkthrough.
+- A spreadsheet with a table described later in this walkthrough. Save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Microsoft Flow can access it.
 - Access to SharePoint (you can use any service in your own flows).
 
 ## Use the OR function
@@ -158,15 +158,15 @@ Let's create the flow.
 
 1. Add the **or** function. This function checks the value of each row (a row is known as an item when accessed in a function). If the value of the status column is *completed* or *unnecessary*, the **or** function evaluates to "true".
 
-The **or** function appears as shown here:
+    The **or** function appears as shown here:
 
-````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
+    ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
 
-Your **Condition** card resembles this image:
+    Your **Condition** card resembles this image:
 
    ![or function image](./media/use-functions-in-conditions/or-function.png)
 
-### Delete matching rows from spreadsheet
+## Delete matching rows from the spreadsheet
 
 1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
 1. Search for **Delete row**, and then select **Excel - Delete row**.
@@ -182,18 +182,63 @@ Your **Condition** card resembles this image:
 
    ![or function image](./media/use-functions-in-conditions/name-and-save.png)
 
+## Run the flow with the OR function
+
+The flow runs after you save it. If you created the spreadsheet shown earlier in this walkthrough, here's what the it looks like after the run completes:
+
+   ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
+
+   Notice all rows that had "completed" or "unnecessary" in the Status column have been deleted.
+
 ## Use the AND function
 
-Assume you have a spreadsheet table with two columns. The column names are Status and Completed. If you want to take an action on rows only when **both** the Status column's value is "ready" and the Completed column's value is "yes", edit the **Condition** card in advanced mode and use the **and** function. In this scenario, the and function appears as shown here:
+Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if **both** the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** function. In this scenario, the and function appears as shown here:
 
-````@and(equals(item()?['Status'], 'ready'), equals(item()?['Completed'], 'yes'))````
+````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
-Your **Condition** card resembles this image when you use the **and** function to check the existence of two values:
+Your **Condition** card resembles this image:
 
    ![and function image](./media/use-functions-in-conditions/and-function.png)
 
-## Use the GREATER THAN function
+## Run the flow with the AND function
+
+If you followed along, your spreadsheet resembles this image:
+
+   ![before and runs](./media/use-functions-in-conditions/spreadsheet-table-before-and-function-runs.png)
+
+After your flow runs, your spreadsheet resembles this image:
+
+   ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-and-function-runs.png)
 
 ## Check empty values
 
-## Additional information
+Notice that there are several empty rows in the spreadsheet now. To remove them, use the **empty** function to identify all rows that don't have any text in the Assigned and Status columns.
+
+To accomplish this task, follow all steps listed in **Use the AND function** section this walkthrough, however, when you edit the **Condition** card in advanced mode, use the empty function:
+
+````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
+
+Your **Condition** card resembles this image:
+
+   ![and function image](./media/use-functions-in-conditions/empty-function.png)
+
+After your flow runs, the spreadsheet resembles this image:
+
+   ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
+
+   Notice the extra lines have been removed.
+
+## Use the GREATER function
+
+Imagine you've bought baseball tickets for your co-workers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a flow that sends a daily email to each person who hasn't paid the full amount.
+
+Use the **greater** function to identify the employees who haven't paid the full amount. You can then automatically send a friendly reminder email to those who haven't paid in full.
+
+Here's a view of the spreadsheet:
+
+   ![view of spreadsheet](./media/use-functions-in-conditions/tickets-spreadsheet-table.png)
+
+Here's the implementation of the **greater** function that identifies all persons who have paid less than the amount due from them:
+
+````@greater(item()?['Due'], item()?['Paid'])````
+
