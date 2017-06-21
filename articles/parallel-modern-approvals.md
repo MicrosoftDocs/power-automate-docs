@@ -40,7 +40,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Add a trigger
 
-[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/add-trigger-when-sharepoint-item-created.md)]
 
    ![SharePoint info](../includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
 
