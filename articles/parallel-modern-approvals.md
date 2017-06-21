@@ -36,17 +36,17 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Create your flow from the blank template
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[AZURE.INCLUDE [sign-in-and-create-flow-from-blank-template](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
+[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
    ![SharePoint info](../includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-get-manager-action.md)]
+[AZURE.INCLUDE [add-get-manager-action](../includes/add-get-manager-action.md)]
 
 ## Name and save your flow
 
@@ -62,7 +62,8 @@ To continue making changes after you save or update your flow, select **Edit flo
 
 ## Add an approval action for immediate manager
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
+[AZURE.INCLUDE [add-an-approval-action](../includes/add-an-approval-action.md)]
+
 
 >[AZURE.IMPORTANT]This action sends the vacation request to the email address in the **Assigned To** box, so insert the **Email** token from the **Get manager** list.
 
@@ -137,7 +138,7 @@ Perform the following steps on the **IF YES, DO NOTHING** side of the **Conditio
 
    Note: Your flow uses these steps to send an email when the request is approved:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-approved](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure pre-approved email template](../includes/media/parallel-modern-approvals/yes-email-config.png)
 
@@ -151,7 +152,7 @@ Perform the following steps to update SharePoint when decisions are made.
 
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-approval](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
