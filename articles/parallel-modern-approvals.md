@@ -26,7 +26,7 @@ In this walkthrough, we use Microsoft Flow to create a flow that automates a par
 
 ## Prerequisites
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
+[AZURE.INCLUDE [record-scope](../includes/prerequisites-for-modern-approvals.md)]
 
 The SharePoint Online list you create must include the following columns:
 
