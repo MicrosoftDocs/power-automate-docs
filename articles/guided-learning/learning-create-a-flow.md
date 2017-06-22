@@ -56,7 +56,7 @@ If you use both services regularly, you will already be signed into them.
 
 ![Save Office 365 email](./media/learning-create-a-flow/save-flow-office-description.png)
 
-Click **Create Flow**, and Voila! You have the results of the create. 
+Click **Create Flow**, and you have the results of the create. 
 
 ![Click create flow](./media/learning-create-a-flow/click-create-flow.png)
 
@@ -96,7 +96,7 @@ You can think of the **trigger** as the starting action for the flow, which can 
 
 
 
-Other actions could be,  send an **email**, post a **Tweet**, start an **Approval** or many others.
+Other actions could be, send an **email**, post a **Tweet**, start an **Approval** or many others.
 These will all come into play later, as you build your own flows from scratch. 
 
 

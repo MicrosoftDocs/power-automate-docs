@@ -20,9 +20,9 @@
    ms.date="06/07/2017"
    ms.author="v-joaloh"/>
 
-# Guided Learning for the Microsoft Flow Mobile app #
+# Microsoft Flow Mobile app #
 
-In this lesson, you will be covering the **Microsoft Flow Mobile App** and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
+In this lesson, you will be covering the Microsoft Flow Mobile App and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
 First, you’ll need to **download** and **install** the Microsoft Flow App from your app store.
 
@@ -47,8 +47,8 @@ From here, go ahead and click the **Buttons** icon.
 
 ## How Flows are Kicked Off ##
    
-   Buttons are flows that are started with a manual action. One popular button is **Send a Working from Home email to your Manager**.
-   You could use this one if you live far away and on days the traffic is a mess!
+   Buttons are flows that are started with a manual action. One popular button is **Send a "Working from home today" email to your manager**.
+   You could use this one if you live far away and on days when the traffic is a mess!
 
 Use the **Browse** button to check out templates for **more button flows** to add to your collection.
 
