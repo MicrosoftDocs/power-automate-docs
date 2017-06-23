@@ -76,7 +76,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
    ![save flow](./media/sequential-modern-approvals/save.png)
 
->[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
+    >[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
 
    ![select update action](./media/sequential-modern-approvals/update.png)
 
@@ -160,7 +160,7 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
 
 1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md/#Send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
 
-Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
+    Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
 
 1. When you're finished, the card should resemble this image:
 
