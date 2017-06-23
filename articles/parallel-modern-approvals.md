@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/08/2017"
+   ms.date="06/24/2017"
    ms.author="deonhe"/>
 
 # Create parallel approval workflows with Microsoft Flow
@@ -77,7 +77,7 @@ To continue making changes after you save or update your flow, select **Edit flo
 
 1. Select **Add an action**.
 
-   ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
+    ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
 
 1. Search for, select, and then configure a **Start an approval** action that sends the vacation request to the sales team. See the [steps used to Add an approval action for immediate manager](parallel-modern-approvals.md/#Add-an-approval-action-for-immediate-manager) if you're not sure how to add the **Start an approval** action.
 
@@ -128,9 +128,9 @@ Let's continue:
 
    ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
 
->[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
+    >[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
 
-Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
+1. Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
 
 ## Add email actions to each branch
 
