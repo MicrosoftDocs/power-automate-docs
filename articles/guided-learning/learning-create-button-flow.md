@@ -22,41 +22,42 @@
 
 # Create a button flow #
 
-Welcome to the Guided Learning session where you will learn how to **build a button flow** for the Contoso Flooring Company. 
+Welcome to Guided Learning, where you will learn how to **build a button flow** for the Contoso Flooring Company. 
 
 Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members of the team.  
 
-First, go to the flow website and sign into the [ Microsoft Flow website.](https://ms.flow.microsoft.com/en-us/)
+  
+First, go to the [ Microsoft Flow website](https://ms.flow.microsoft.com/en-us/) and sign-in.
 
-
-Once you are done with the sign-in, click on **My Flows**, and then **Create from blank**.
+Once you are done with the sign-in, select **My Flows**, and then **Create from blank**.
 
 ![Create from blank](./media/learning-create-button-flow/2-create-from-blank.png)
 
-The first thing  you'll need is a **trigger**. The **button flow** is a convenient one to use. If it's not there in your list, simply search for **button**, in the top field, and it will pop up for you. Select **Flow button for mobile**.
+The first thing you'll need is a **trigger**. The **button flow** is a convenient one to use. 
+
+If it's not there in your list, enter **button in the top field**, and it will pop up for you. 
+
+Select **Flow button for mobile**.
 
 ![Search button](./media/learning-create-button-flow/3-button-flow.png) 
 
-The button flow when pressed, will **manually trigger** a flow.
-So, press on it...
+Select **Flow button for mobile -- Manually Trigger a flow**.
 
 ![Select manual trigger](./media/learning-create-button-flow/4-press-it.png)
 
-and you can enter **input text**.
-
-
+On the input screen, enter **input text**,
 
 ![Add input](./media/learning-create-button-flow/5-add-input.png)
 
-Make the input title say **Delivery Arrived**,
+and enter **Delivery Arrived** for a title.
 
 ![Add input](./media/learning-create-button-flow/6-text-for-flow.png)
 
-add a **New step**, 
+Select **New step**, 
 
 ![Input text](./media/learning-create-button-flow/7-input-description.png)
 
-and in the new step, **add an action**. 
+and then select **Add an action**. 
 
 ![Add action](./media/learning-create-button-flow/8-add-an-action.png)
 
@@ -101,11 +102,11 @@ Enter **names**, **email addresses**, or **user groups** to add co-owners.
 
 ![Add co-owners](./media/learning-create-button-flow/14-add-co-owners.png)
 
-To **remove co-owners**, click the trash can where  their name is shown.
+To **remove co-owners**, click the trash can to the right of their name.
 
 ![Remove co-owners](./media/learning-create-button-flow/15-remove-co-owners.png)
 
-And verify you want to **Remove this owner**.
+Verify you want to **Remove this owner**.
 
 ![Remove co-owners](./media/learning-create-button-flow/16-agree-to-remove.png)
 
