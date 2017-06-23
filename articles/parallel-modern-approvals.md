@@ -120,13 +120,13 @@ Let's continue:
 1. Select **Add a condition** from the menu that appears.
 1. Select the first box on the **Condition** card, and then select the **Response** token from the **Start an approval** category in the dynamic content list.
 
-   ![flow with parallel branches condition](./media/parallel-modern-approvals/configure-approval-condition.png)
+    ![flow with parallel branches condition](./media/parallel-modern-approvals/configure-approval-condition.png)
 
 1. Confirm the list (in the middle of the **Condition card**) is set to **is equal to**.
 1. Enter **Approve** (this text is case-sensitive) into the last box.
 1. Your condition card should now resemble this example:
 
-   ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
+    ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
 
     >[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
 
@@ -162,7 +162,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 
 1. Select **New step** > **Add an action**
 
-   ![update item configuration](../includes/media/parallel-modern-approvals/add-an-action-2-step.png)
+    ![update item configuration](../includes/media/parallel-modern-approvals/add-an-action-2-step.png)
 
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
