@@ -20,11 +20,11 @@
    ms.date="06/07/2017"
    ms.author="v-joaloh"/>
 
-# Microsoft Flow Mobile app #
+# Microsoft Flow mobile app #
 
-In this lesson, you will be covering the Microsoft Flow Mobile App and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
+In this lesson, you will be covering the Microsoft Flow mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
-First, you’ll need to **download** and **install** the Microsoft Flow App from your app store.
+First, you’ll need to **download** and **install** the Microsoft Flow app from your app store.
 
 ![Mobile app](./media/learning-mobile-app/open-mobile-app.png)
 
