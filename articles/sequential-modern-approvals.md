@@ -74,11 +74,11 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
 
-   ![save flow](./media/sequential-modern-approvals/save.png)
+    ![save flow](./media/sequential-modern-approvals/save.png)
 
     >[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
 
-   ![select update action](./media/sequential-modern-approvals/update.png)
+    ![select update action](./media/sequential-modern-approvals/update.png)
 
 After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
 
