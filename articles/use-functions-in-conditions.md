@@ -239,7 +239,7 @@ After your flow runs, the spreadsheet resembles this image:
 
 ## Use the GREATER function
 
-Imagine you've bought baseball tickets for your co-workers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a flow that sends a daily email to each person who hasn't paid the full amount.
+Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a flow that sends a daily email to each person who hasn't paid the full amount.
 
 Use the **greater** function to identify the employees who haven't paid the full amount. You can then automatically send a friendly reminder email to those who haven't paid in full.
 
@@ -250,4 +250,41 @@ Here's a view of the spreadsheet:
 Here's the implementation of the **greater** function that identifies all persons who have paid less than the amount due from them:
 
 ````@greater(item()?['Due'], item()?['Paid'])````
+
+## Use the LESS function
+
+Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a flow that sends a reminder email to each person who hasn't paid the full amount if it's less than one day before the due date.
+
+Use the **and** function since there are two conditions to validate:
+
+<table>
+<tr>
+    <th>Condition to validate</th>
+    <th>Function to use</th>
+    <th>Example</th>
+</tr>
+<tr>
+    <td>Has the full amount due been paid?</td>
+    <td>greater</td>
+    <td>@greater(item()?['Due'], item()?['Paid'])</td>
+</tr>
+<tr>
+    <td>Is the due date less than one day away?</td>
+    <td>less</td>
+    <td>@less(item()?['DueDate'], addDays(utcNow(),1))</td>
+</tr>
+</table>
+
+## Combine the greater and less functions in an and function
+
+Use the **greater** function to identify the employees who have paid less than the full amount due and use the **less** function to determine if the payment due date is less than one day away from the current date. You can then the **Send an email** action to send friendly reminder email to those who haven't paid in full if the due date is less than one day away.
+
+Here's a view of the spreadsheet table:
+
+   ![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
+
+Here's the implementation of the **and** function that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current utc time:
+
+````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
+
 
