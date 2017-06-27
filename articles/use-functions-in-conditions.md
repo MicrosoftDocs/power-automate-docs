@@ -24,8 +24,6 @@ You can use the [**Condition**](https://flow.microsoft.com/documentation/add-a-c
 
 You can use any combination of the following logical functions in your conditions.
 
-[and](./use-functions-in-conditions.md/#use-the-and-function)
-
 <table>
 <tr>
     <th>Function</th>
@@ -40,7 +38,7 @@ and(greater(1,10),equals(0,0))</td>
 
 </tr>
 <tr>
-    <td><a href="./use-functions-in-conditions.md/#Use-the-or-function">or</a></td>
+    <td><a href="./use-functions-in-conditions.md/#use-the-or-function">or</a></td>
     <td>Returns true if either parameter is true. <br><b>Note</b>: Both arguments need to be Booleans.</td>
     <td>For example, this function returns true:
 or(greater(1,10),equals(0,0))</td>
@@ -53,7 +51,7 @@ or(greater(1,10),equals(0,0))</td>
 
 </tr>
 <tr>
-    <td><a href="./use-functions-in-conditions.md/#Use-the-or-function">less</a></td>
+    <td><a href="./use-functions-in-conditions.md/#use-the-less-function">less</a></td>
     <td>Returns true if the first argument is less than the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
     <td>For example, this function returns true:
 less(10,100)</td>
@@ -65,7 +63,7 @@ less(10,100)</td>
 lessOrEquals(10,10)</td>
 </tr>
 <tr>
-    <td><a href="./use-functions-in-conditions.md/#Use-the-greater-function">greater</a></td>
+    <td><a href="./use-functions-in-conditions.md/#use-the-greater-function">greater</a></td>
     <td>Returns true if the first argument is greater than the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
     <td>For example, this function returns false:
 greater(10,10)</td>
@@ -77,7 +75,7 @@ greater(10,10)</td>
 greaterOrEquals(10,100)</td>
 </tr>
 <tr>
-    <td><a href="./use-functions-in-conditions.md/#Use-the-empty-function">empty</td>
+    <td><a href="./use-functions-in-conditions.md/#use-the-empty-function">empty</a></td>
     <td>Returns true if object, array, or string is empty.</td>
     <td>For example, this function returns true:
 empty('')</td>
@@ -219,7 +217,7 @@ Your **Condition** card resembles this image:
 
    ![and function image](./media/use-functions-in-conditions/and-function.png)
 
-### Run the flow with the AND function
+### Run the flow with the and function
 
 If you followed along, your spreadsheet resembles this image:
 
