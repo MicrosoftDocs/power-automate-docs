@@ -1,6 +1,6 @@
 <properties
     pageTitle="Use functions with conditions. | Microsoft Flow"
-    description="Use advanced functions such as ""and"", ""or"",  “empty”, ""less"" and ""greater"" with Microsoft Flow conditions."
+    description="Use advanced functions such as ""and"", ""or"", “empty”, ""less"" and ""greater"" with Microsoft Flow conditions."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -97,23 +97,23 @@ if(equals(1, 1), 'yes', 'no')</td>
 ## Prerequisites
 
 - Access to Microsoft Flow.
-- A spreadsheet with a table described later in this walkthrough. Save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Microsoft Flow can access it.
-- Access to SharePoint (you can use any service in your own flows).
+- A spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Microsoft Flow can access it.
+- Microsoft Office 365 Outlook (While we use Office 365 Outlook, you can use any supported email service in your flows.)
 
 ## Use the or function
 
 Sometimes your workflow needs to take an action if the value of an item is valueA **or** valueB. For example, you may be tracking the status of tasks in a spreadsheet table. The table has a column named *Status*. The possible values in the *Status* column are:
 
 - **completed**
-- **Blocked**
-- **Unnecessary**
-- **In progress**
+- **blocked**
+- **unnecessary**
+- **not started**
 
 Here's a example of what the spreadsheet might look like:
 
 ![sample spreadsheet](./media/use-functions-in-conditions/spreadsheet-table.png)
 
-You want to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
+You want to use Microsoft Flow to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
 
 Let's create the flow.
 
@@ -173,7 +173,7 @@ Let's create the flow.
 
 1. Select **Add a condition** > **Edit in advanced mode**.
 
-1. Add the **or** function. This function checks the value of each row (a row is known as an item when accessed in a function). If the value of the status column is *completed* or *unnecessary*, the **or** function evaluates to "true".
+1. Add the following **or** function. This **or** function checks the value of each row in the table (a row is known as an item when accessed in a function). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** function evaluates to "true".
 
     The **or** function appears as shown here:
 
@@ -188,16 +188,20 @@ Let's create the flow.
 1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
 1. Search for **Delete row**, and then select **Excel - Delete row**.
 
-   ![or function image](../includes/media/new-step/select-delete-excel-row.png)
+   ![delete row image](../includes/media/new-step/select-delete-excel-row.png)
 1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
 
-   ![or function image](../includes/media/new-step/delete-excel-row.png)
+1. In the **Table name** list, select the table that contains your data.
+
+1. Place the **Row id** token in the **Row id** box.
+
+   ![spreadsheet file](../includes/media/new-step/delete-excel-row.png)
 
 ### Name the flow and save it
 
 1. Give your flow a name and then select the **Create flow** button.
 
-   ![or function image](./media/use-functions-in-conditions/name-and-save.png)
+   ![save your flow](./media/use-functions-in-conditions/name-and-save.png)
 
 ### Run the flow with the or function
 
@@ -205,11 +209,11 @@ The flow runs after you save it. If you created the spreadsheet shown earlier in
 
    ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
 
-   Notice all rows that had "completed" or "unnecessary" in the Status column have been deleted.
+   Notice all rows that had "completed" or "unnecessary" in the Status column were deleted.
 
 ## Use the and function
 
-Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if **both** the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** function. In this scenario, the and function appears as shown here:
+Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** function shown below:
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
@@ -231,7 +235,7 @@ After your flow runs, your spreadsheet resembles this image:
 
 Notice that there are several empty rows in the spreadsheet now. To remove them, use the **empty** function to identify all rows that don't have any text in the Assigned and Status columns.
 
-To accomplish this task, follow all steps listed in **Use the and function** section this walkthrough, however, when you edit the **Condition** card in advanced mode, use the empty function:
+To accomplish this task, follow all steps listed in **Use the and function** section earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the empty function this way:
 
 ````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
 
@@ -261,9 +265,9 @@ Here's the implementation of the **greater** function that identifies all person
 
 ## Use the less function
 
-Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a flow that sends a reminder email to each person who hasn't paid the full amount if it's less than one day before the due date.
+Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
 
-Use the **and** function since there are two conditions to validate:
+Use the **and** function along with the **less** function since there are two conditions being validated:
 
 <table>
 <tr>
@@ -285,18 +289,16 @@ Use the **and** function since there are two conditions to validate:
 
 ## Combine the greater and less functions in an and function
 
-Use the **greater** function to identify the employees who have paid less than the full amount due and use the **less** function to determine if the payment due date is less than one day away from the current date. You can then the **Send an email** action to send friendly reminder email to those who haven't paid in full if the due date is less than one day away.
+Use the **greater** function to identify the employees who have paid less than the full amount due and use the **less** function to determine if the payment due date is less than one day away from the current date. You can then the **Send an email** action to send friendly reminder email to those who haven't paid in full and the due date is less than one day away.
 
 Here's a view of the spreadsheet table:
 
    ![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
 
-Here's the implementation of the **and** function that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current utc time:
+Here's the implementation of the **and** function that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current date:
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
 ## Learn more
 
 Learn about other types of [functions](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
-
-
