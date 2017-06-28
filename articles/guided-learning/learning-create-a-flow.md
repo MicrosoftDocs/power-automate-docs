@@ -17,14 +17,14 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/11/2017"
+   ms.date="06/23/2017"
    ms.author="v-joaloh"/>
 
 # Create a flow from a template #
 
-Welcome back to Guided Learning for Microsoft Flow. In this session, you will see more of the Microsoft Flow environment, and you can build your first flow.
+Welcome back to Guided Learning for Microsoft Flow. In this lesson, you will see more of the Microsoft Flow environment, and you can **build your first flow**.
 
-Getting started with Microsoft Flow is easy, as there are a HUGE number of templates for you to choose from which will help you connect the services you are already using in more meaningful ways.  
+Getting started with Microsoft Flow is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  
 
 ## Microsoft Flow templates ##
 Take a look at the [ Microsoft Flow website.](https://ms.flow.microsoft.com/en-us/)
@@ -47,7 +47,7 @@ Click the **Save Office 365 email attachments to OneDrive for Business** templat
 
 ## Create and administer a flow ##
 
-This is one of our new, **one click** templates, where you only answer relevant questions **necessary to build the flow**.
+This is one of our **one click** templates, where you only answer relevant questions **necessary to build the flow**.
 
 On the template graphic, there is a **description** of what the template **does and needs** to succeed.
 
@@ -56,15 +56,15 @@ If you use both services regularly, you will already be signed into them.
 
 ![Save Office 365 email](./media/learning-create-a-flow/save-flow-office-description.png)
 
-Click **Create Flow**, and Voila! You have the results of the create. 
+Click **Create Flow**, and... 
 
 ![Click create flow](./media/learning-create-a-flow/click-create-flow.png)
 
- 
+ you see the results of the create. 
 
 ![Create successful](./media/learning-create-a-flow/create-successful.png)
 
-Flow has **created a folder** in your OneDrive where it will now automatically place **every attachment** that gets emailed to your work email.
+Flow has **created a folder** on your OneDrive, where it will now automatically place **every attachment** that gets emailed to your work email.
 
 Open **My Flows**, and...
 
@@ -74,7 +74,9 @@ select the **flow you just made** to see how it works.
 
 ![Select the flow](./media/learning-create-a-flow/click-the-flow.png)
 
-You see a message that the **flow succeeded**. Click **Succeeded** to see the run history and the results.
+You see a **green check mark**, indicating that the **flow succeeded**. 
+
+Click **Succeeded** to see the run history and the results.
 
 ![Flow successful](./media/learning-create-a-flow/flow-successful.png)
 
@@ -88,7 +90,7 @@ You see a message that the **flow succeeded**. Click **Succeeded** to see the ru
 Some things to know about when building flows. 
 Every flow has two key parts, a **trigger**, and **one or more actions**. 
  
-You can think of the **trigger** as the starting action for the flow, which can be things like **On new Email** that you have here or, **when a new item is added**, if you happened to be using SharePoint. It can also be a fixed schedule, if you use a trigger called **Recurrence** which you'll learn about  later.
+You can think of the **trigger** as the starting action for the flow, which can be things like **On new Email** that you have here or, **when a new item is added**, if you happened to be using SharePoint. It can also be a fixed schedule, if you use a trigger called **Recurrence** which you'll learn about later.
 
 **Actions are the activities** you want to happen when **a trigger is invoked**. For example, **Create file** will recreate the file in OneDrive.
 
@@ -96,7 +98,7 @@ You can think of the **trigger** as the starting action for the flow, which can 
 
 
 
-Other actions could be,  send an **email**, post a **Tweet**, start an **Approval** or many others.
+Other actions could be, send an **email**, post a **Tweet**, start an **approval** or many others.
 These will all come into play later, as you build your own flows from scratch. 
 
 
