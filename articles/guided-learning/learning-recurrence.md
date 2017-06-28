@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="6/26/2017"
+   ms.date="06/26/2017"
    ms.author="v-brbene"/>
 
 # Using Scheduled Flows in Microsoft Flow 
