@@ -6,12 +6,12 @@
 
 1. Select the **Response** token.
 
-     ![select response token](../includes/media/modern-approvals/search-for-response.png)
+    ![select response token](../includes/media/modern-approvals/search-for-response.png)
 
 1. Select the **Value** box, and then enter **Approve** into the box.
 
-> [AZURE.NOTE]The valid responses to the **Approvals - Start an approval** action are "Approve" and "Reject". These responses are case-sensitive.
+    > [AZURE.NOTE]The valid responses to the **Approvals - Start an approval** action are "Approve" and "Reject". These responses are case-sensitive.
 
 1. Your **Condition** card should now resemble this image:
 
-     ![](../includes/media/modern-approvals/response-condition-test.png)
+    ![](../includes/media/modern-approvals/response-condition-test.png)
