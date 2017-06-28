@@ -32,15 +32,15 @@ You can use any combination of the following logical functions in your condition
 </tr>
 <tr>
     <td><a href="./use-functions-in-conditions.md/#use-the-and-function">and</a></td>
-    <td>Returns true if both values are true.<br><b>Note</b>: Both arguments need to be Booleans.</td>
-    <td>For example, this function returns false:
+    <td>Returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.</td>
+    <td>This function returns false:
 and(greater(1,10),equals(0,0))</td>
 
 </tr>
 <tr>
     <td><a href="./use-functions-in-conditions.md/#use-the-or-function">or</a></td>
-    <td>Returns true if either parameter is true. <br><b>Note</b>: Both arguments need to be Booleans.</td>
-    <td>For example, this function returns true:
+    <td>Returns true if either parameter is true. <br><b>Note</b>: Both arguments must be Booleans.</td>
+    <td>This function returns true:
 or(greater(1,10),equals(0,0))</td>
 
 </tr>
@@ -52,44 +52,44 @@ or(greater(1,10),equals(0,0))</td>
 </tr>
 <tr>
     <td><a href="./use-functions-in-conditions.md/#use-the-less-function">less</a></td>
-    <td>Returns true if the first argument is less than the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
-    <td>For example, this function returns true:
+    <td>Returns true if the first argument is less than the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
+    <td>This function returns true:
 less(10,100)</td>
 </tr>
 <tr>
     <td>lessOrEquals</td>
-    <td>Returns true if the first argument is less than or equal to the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
-    <td>For example, this function returns true:
+    <td>Returns true if the first argument is less than or equal to the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
+    <td>This function returns true:
 lessOrEquals(10,10)</td>
 </tr>
 <tr>
     <td><a href="./use-functions-in-conditions.md/#use-the-greater-function">greater</a></td>
-    <td>Returns true if the first argument is greater than the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
-    <td>For example, this function returns false:
+    <td>Returns true if the first argument is greater than the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
+    <td>This function returns false:
 greater(10,10)</td>
 </tr>
 <tr>
     <td>greaterOrEquals</td>
-    <td>Returns true if the first argument is greater than or equal to the second. <br><b>Note</b>: Values can only be of type integer, float, or string.</td>
-    <td>For example, this function returns false:
+    <td>Returns true if the first argument is greater than or equal to the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
+    <td>This function returns false:
 greaterOrEquals(10,100)</td>
 </tr>
 <tr>
     <td><a href="./use-functions-in-conditions.md/#use-the-empty-function">empty</a></td>
     <td>Returns true if object, array, or string is empty.</td>
-    <td>For example, this function returns true:
+    <td>This function returns true:
 empty('')</td>
 </tr>
 <tr>
     <td>not</td>
-    <td>Returns true if the parameters are false. <br><b>Note</b>: Both arguments need to be Booleans.</td>
-    <td>For example, this function returns true:
+    <td>Returns true if the parameters are false. <br><b>Note</b>: Both arguments must be Booleans.</td>
+    <td>This function returns true:
 not(contains('200 Success','Fail'))</td>
 </tr>
 <tr>
     <td>if</td>
     <td>Returns a specified value based on whether the expression resulted in true or false.</td>
-    <td>For example, this function returns "yes":
+    <td>This function returns "yes":
 if(equals(1, 1), 'yes', 'no')</td>
 </tr>
 </table>
