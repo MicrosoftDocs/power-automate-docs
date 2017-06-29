@@ -59,9 +59,9 @@ Use the approval center on your mobile device to view, approve, or reject approv
 
 If there aren't any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
-## Approve request and leave an optional comment
+## Approve requests and leave an optional comment
 
-1. Follow the preceding steps to [display all pending approval requests](./mobile-approvals.md/#View-pending-approval-requests).
+1. If you haven't done sone, follow the preceding steps to [display all pending approval requests](./mobile-approvals.md/#View-pending-approval-requests).
 
 1. Select **APPROVE** on the request you want to approve.
 
@@ -85,7 +85,7 @@ If there aren't any pending approval requests, create an approval flow, set your
 
 ## Reject request and leave an optional comment
 
-Follow the steps to approve a request, but select **REJECT** in the second step.
+Follow the [steps to approve a request](./mobile-approvals.md/#approve-requests-and-leave-an-optional-comment), but select **REJECT** in the second step.
 
 ## Learn more
 
