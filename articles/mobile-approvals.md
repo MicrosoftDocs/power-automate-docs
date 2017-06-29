@@ -24,23 +24,24 @@ When you create an [approval flow](./modern-approvals.md), it sends approval req
 
 - [Via email](./modern-approvals.md/#from-email).
 - To the [approval center](./modern-approvals.md/#from-the-approvals-center).
-- To the Microsoft Flow mobile app.
+
+Your flows also send push notifications to the Microsoft Flow mobile app whenever someone creates a new approval request.
 
 You can use any of the preceding methods to manage your approval requests. However, this article focuses on using the Microsoft Flow mobile app to manage approval requests.
 
->[AZURE.NOTE]The images presented here are from an Android phone, however, the experience on iOS and Windows Phone is similar.
+>[AZURE.NOTE]The images presented here are from an Android phone, however, the experience on iOS is similar.
 
 ## Prerequisites
 
 To complete this walkthrough, you need:
 
-- A mobile device running the Microsoft Flow [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) mobile app.
+- A mobile device running the Microsoft Flow [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) mobile app.
 - To be designated as the approver in an approval flow.
-- At least two pending approval requests.
+- Pending approval requests.
 
 ## Mobile approvals
 
-The mobile app's approval center is similar to the [approval center](https://flow.microsoft.com/manage/approvals/received) on the Microsoft Flow [website](https://flow.microsoft.com). Use the approval center from your mobile device to view, approve, or reject approval requests.
+Use the approval center on your mobile device to view, approve, or reject approval requests.
 
 ## View pending approval requests
 
