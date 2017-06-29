@@ -20,14 +20,15 @@
    ms.date="06/24/2017"
    ms.author="v-joaloh"/>
 
-# Use recurrence in Microsoft Flow 
+# Use Recurrence in Microsoft Flow 
 
 In this lesson, you will see how to run Flows on a **Schedule** using a **trigger called Recurrence**.
 
 ## Prerequisites for this lesson ##
 
 Before you get into the lesson, there are a couple of items that you'll need to create to build the flow: 
-- An Excel workbook with customer data in a table. Include a **first name**, **last name**, and an **email address** in the file
+- An Excel workbook with customer data in a table. Include a **first name**, **last name**, and an **email address** in the file.
+- Store the Excel workbook on your OneDrive for Business.
 
 ![Create from blank](./media/learning-use-recurrence/1-blur-excel.png)
 
@@ -41,13 +42,13 @@ If you don't already have a MailChimp account, you can **sign up for an eFree tr
 
 As in the previous topic, if you are using a service that's new to you, then you may need to connect the new service in Microsoft Flow
 
-Follow the instructions in the Guided Learning topic, Create Push Notifications in Microsoft Flow.
+Follow the instructions in the Guided Learning topic, **Create Push Notifications in Microsoft Flow**.
 
-## A sample flow for you to build
+## Build a sample flow 
 
 Let’s go ahead and build a flow for the Contoso marketing team. The flow **grabs customer emails from an excel table** on OneDrive for Business that the sales guy Dave uses when meeting new customers and **building quotes** for them.
 
-The flow can be built so that daily, the email addresses that were **added to the spreadsheet** are then **added to a MailChimp customer list**. That list will then **receive** Contoso Flooring **marketing emails**.
+The flow is built so that daily, the email addresses that were **added to the spreadsheet** are then **added to a MailChimp customer list**. That list will then **receive** Contoso Flooring **marketing emails**.
 
  
 ## Build the flow from blank
@@ -58,7 +59,6 @@ Go ahead and get into Microsoft Flow, select **My flows**, and then select **+ C
 
 To schedule a recurrence, look for the **Schedule service** in the list. If you don't see it, **enter schedule** in the search box, and it pops right up.
 
-And then use the **trigger recurrence**.
 
 Select **Schedule**...
 
@@ -67,20 +67,18 @@ Select **Schedule**...
 and then select **Schedule - Recurrence**.
 
 ![Select schedule recurrence](./media/learning-use-recurrence/3-select-schedule-recurr.png)
-What you want to do is **set the Interval** for 1 time and the **Frequency for each Day**.
-
+**Set the Interval** for 1 time, and the **Frequency** for each **Day**.
 
 ![Set frequency](./media/learning-use-recurrence/4-set-frequency.png)
 
+Go ahead and create another step to **get the Excel rows** that Dave the sales guy is adding in daily. 
 
-Go ahead and create another step to get the Excel rows that Dave the sales guy is adding in daily. 
-
-**Note:** This is the Excel file that you created in the beginning of this lesson, for Dave the sales guy to fill with sales leads.
+**Note:** This is the Excel file that you created in the beginning of this lesson, and placed on your OneDrive for Business.
 
 Select **+ New step** and then **Add an action**.
 
 ![Add step](./media/learning-use-recurrence/5-add-step.png) 
-Enter **Excel in the search bar**, choose the service.
+Enter **Excel in the search bar**, and choose the service.
 
 
 ![Excel connect](./media/learning-use-recurrence/6-excel-connect.png)
@@ -95,7 +93,7 @@ To show flow where your file lives,  select the folder on the **OneDrive for Bus
 
 ![Get onedrive file](./media/learning-use-recurrence/8-get-onedrive-file.png)
 
-Select **Contoso-mailing-list** file from the list and select the Table 1 name.
+Select **Contoso-mailing-list** file from the list and select the **Table 1** name.
 
 
 ![Mailing list](./media/learning-use-recurrence/9-mailing-list.png)
@@ -106,7 +104,7 @@ Select **+ New step** and then **Add an action**.
 
 ![Add step](./media/learning-use-recurrence/10-add-step.png)
 
-Enter **MailChimp** in the search bar.
+Enter **chimp** in the search bar.
 
 Add the action **MailChimp - Add member to list** by selecting **PREMIUM**.
 
@@ -116,13 +114,12 @@ Select **Contoso Flooring Monthly Mailer**.
 
 Enter **Status** as **subscribed**.
 
-When you do this for real, you'll need permission from your contacts, to send them emails. You don't want your customers receiving emails they didn't sign up for.
 
 Now, you need to tell MailChimp what information is going to be passed to it: an email address, first name, and last name.
 
 Enter the **ContactEmail** from **dynamic content**.
 
-Microsoft Flow did something interesting here. When you chose the **ContactEmail field**, it went ahead and put in an output parameter for you, which is, **apply to each**. Microsoft Flow was smart, and saw that **you were gonna set an action**, that needed an **additional action on top of it**. So now, what it will do as it grabs one of these is, it will **create a new action** for **each row it grabs**.
+When you chose the **ContactEmail field**, flow sensed that **you were going to set an action** that needed an **additional action** on top of it.  So it went ahead and added another action for you, which is, **apply to each**. Whenever it reads one of these new records, it will **create a new action** for **each new row** in the file.
 
 ![Flow does smart](./media/learning-use-recurrence/12-flow-does-smart.png)
 
@@ -140,4 +137,4 @@ You see that your flow is updated and running.
 
 ## Next lesson
 
-In the next lesson we will cover...
+In the next lesson, you will learn how Contoso Flooring is **securing** all of their **completed customer jobs**, and then storing that information in SharePoint online for safe keeping in the cloud.
