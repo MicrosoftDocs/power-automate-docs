@@ -20,7 +20,7 @@
 
 # Use functions in conditions
 
-You can use the [**Condition**](https://flow.microsoft.com/documentation/add-a-condition/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table. In this walkthrough, you will learn how to use functions and  **Conditions** to compare multiple values in **Advanced mode**.
+You can use the [**Condition**](./add-a-condition.md/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table. In this walkthrough, you will learn how to use functions and  **Conditions** to compare multiple values in **Advanced mode**.
 
 You can use any combination of the following logical functions in your conditions.
 
