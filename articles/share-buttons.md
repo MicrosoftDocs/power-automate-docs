@@ -32,7 +32,7 @@ To share buttons, you need:
 
 - An account with access to [Microsoft Flow](https://flow.microsoft.com).
 - A flow to share.
-- A mobile device with the Microsoft Flow app installed. This app is available for [iOS](https://itunes.apple.com/app/microsoft-flow/id1094928825) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) devices.
+- A mobile device with the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 - A group or user within your organization with whom to share your button.
 
 ## Share a button
