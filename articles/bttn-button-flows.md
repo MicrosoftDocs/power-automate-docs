@@ -61,7 +61,7 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 	![sign in](./media/bttn-button-flows/sign-into-flow.png)
 
-	Note: As an alternative, you can create flows in the mobile app for Microsoft Flow, which is available on [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) devices.
+	Note: As an alternative, you can create flows in the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 1. Enter **bttn** into the search box, and then select the search icon.
 

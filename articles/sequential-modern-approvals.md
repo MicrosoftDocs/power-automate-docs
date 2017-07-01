@@ -50,7 +50,7 @@ This image summarizes the preceding steps:
 
 ## Prerequisites
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
+[AZURE.INCLUDE [prerequisites-for-modern-approvals](../includes/prerequisites-for-modern-approvals.md)]
 
 The SharePoint Online list that you create must include the following columns:
 
@@ -60,49 +60,49 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Create your flow from the blank template
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[AZURE.INCLUDE [sign-in-and-create-flow-from-blank-template](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
+[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/add-trigger-when-sharepoint-item-created.md)]
 
    ![sharepoint info](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-get-manager-action.md)]
+[AZURE.INCLUDE [add-get-manager-action](../includes/add-get-manager-action.md)]
 
 1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
 
-   ![save flow](./media/sequential-modern-approvals/save.png)
+    ![save flow](./media/sequential-modern-approvals/save.png)
 
->[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
+    >[AZURE.NOTE] Select **Update flow** from the top of the screen periodically to save the changes to your flow.
 
-   ![select update action](./media/sequential-modern-approvals/update.png)
+    ![select update action](./media/sequential-modern-approvals/update.png)
 
 After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
 
 ## Add an approval action for pre-approvals
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
+[AZURE.INCLUDE [add-an-approval-action](../includes/add-an-approval-action.md)]
 
 Note: This action sends the pre-approval request to the email address in the **Assigned To** box.
 
 ## Add a condition
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-approval-condition-response.md)]
+[AZURE.INCLUDE [add-approval-condition-response](../includes/add-approval-condition-response.md)]
 
 >[AZURE.NOTE]This condition checks the response from the **Start an approval** action.
 
 ## Add an email action for pre-approvals
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-approved](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure pre-approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## Add an update action for pre-approved requests
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-approval](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
    ![update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
 
@@ -144,7 +144,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 ## Send email with pre-approval rejection
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-rejected](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
    ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
 
@@ -152,7 +152,7 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
 
 ## Update SharePoint with pre-approval rejection
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-rejection.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-rejection](../includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    ![update sharepoint for rejected requests](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
@@ -160,7 +160,7 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
 
 1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md/#Send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
 
-Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
+    Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
 
 1. When you're finished, the card should resemble this image:
 
@@ -186,7 +186,7 @@ Now that we've created the flow, let's see it in action.
 
 ## Request an approval
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/request-vacation-approval.md)]
+[AZURE.INCLUDE [request-vacation-approval](../includes/request-vacation-approval.md)]
 
 Your request should resemble this image:
 
@@ -194,11 +194,11 @@ Your request should resemble this image:
 
 ## View pending approval requests
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/view-pending-approvals.md)]
+[AZURE.INCLUDE [view-pending-approvals](../includes/view-pending-approvals.md)]
 
 ## Pre-approve a request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/approve-request-from-different-locations.md)]
+[AZURE.INCLUDE [approve-request-from-different-locations](../includes/approve-request-from-different-locations.md)]
 
 ## Approve the request
 
@@ -208,7 +208,7 @@ Note: The final approver gets the vacation request only after the request has be
 
 ## Reject a request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/reject-a-request.md)]
+[AZURE.INCLUDE [reject-a-request](../includes/reject-a-request.md)]
 
 ## More information
 

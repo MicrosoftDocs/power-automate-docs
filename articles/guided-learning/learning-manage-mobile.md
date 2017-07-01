@@ -23,7 +23,7 @@
 
 # Manage flows with the mobile app
 
-The **Microsoft Flow** mobile app, available for iOS and Android (Windows coming soon), has much of the same functionality as the web portal.
+The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) has much of the same functionality as the web portal.
 
 At the bottom of the screen is a **toolbar** where you'll find the app's functions.
 

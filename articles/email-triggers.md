@@ -39,7 +39,7 @@ In the walk-throughs below, we check all properties in the **When a new email ar
 
 - An account with access to [Microsoft Flow](https://flow.microsoft.com).
 - An Office 365 Outlook account.
-- An Android or iOS mobile device with the Microsoft Flow app installed.
+- The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 - Connections to Office 365 Outlook and the push notification service.
 
 ## Trigger a flow based on an email's subject
@@ -50,7 +50,7 @@ Note: While this walkthrough sends a push notification, you're free to use any o
 
 Ok, let's get started:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+[AZURE.INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](../includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
 
@@ -58,13 +58,13 @@ Ok, let's get started:
 
       ![advanced options](./media/email-triggers/email-triggers-subject-text.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mobile-notification-action.md)]
+[AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email that matches the **Subject Filter** you specified earlier arrives.
 
      ![notification details](./media/email-triggers/email-triggers-4.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mark-as-read-action.md)]
+[AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
@@ -76,7 +76,7 @@ Congratulations, you receive a push notification each time you receive an email 
 
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+[AZURE.INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](../includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. Enter the email address of the sender into **From**.
 
@@ -84,13 +84,13 @@ In this walkthrough, we create a flow that sends a push notification to your mob
 
       ![email property](./media/email-triggers/email-triggers-from.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mobile-notification-action.md)]
+[AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address you entered earlier.
 
      ![notification details](./media/email-triggers/email-triggers-sender-notification.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mark-as-read-action.md)]
+[AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
@@ -104,19 +104,19 @@ Let's get started:
 
 >[AZURE.NOTE]If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
+[AZURE.INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](../includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
 1. Select the folder to which you've created the rule to route specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
 
      ![select folder](./media/email-triggers/email-triggers-2.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mobile-notification-action.md)]
+[AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email arrives into the folder you've selected earlier. If you haven't already, enter the credentials for the notifications service.
 
      ![notification details](./media/email-triggers/email-triggers-folder-notification.png)
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-mark-as-read-action.md)]
+[AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
