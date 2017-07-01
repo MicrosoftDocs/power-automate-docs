@@ -52,6 +52,26 @@
 
 ## What's new ##
 
+### Release 2017-06-28
+
+- **Five new connectors**
+- **Configure timeouts**-
+- **Include comments in outlook for Approvals ** 
+
+### Release 2017-06-19
+
+- Sent requests
+- 
+
+### Release 2017-06-15
+
+- **HTML to plaintext** 
+- **Three read-only database connectos** -
+- **Three other connectors** - 
+- **Better visualization for error handling**
+- **Helpful debug pane** 
+
+
 ### Release 2017-06-04
 
 - **GA for Windows Phone** - [The Microsoft Flow mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
