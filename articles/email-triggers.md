@@ -39,7 +39,7 @@ In the walk-throughs below, we check all properties in the **When a new email ar
 
 - An account with access to [Microsoft Flow](https://flow.microsoft.com).
 - An Office 365 Outlook account.
-- An Android or iOS mobile device with the Microsoft Flow app installed.
+- The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 - Connections to Office 365 Outlook and the push notification service.
 
 ## Trigger a flow based on an email's subject
