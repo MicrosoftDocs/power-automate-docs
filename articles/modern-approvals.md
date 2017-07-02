@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Easily Automate approval workflows. | Microsoft Flow" 
+    pageTitle="Easily Automate approval workflows. | Microsoft Flow"
     description="Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress."
     services=""
     suite="flow"
@@ -62,9 +62,9 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
 
-     The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-     ![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
+![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ### Add a profile action
 
@@ -106,15 +106,15 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
-     Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
+Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item configuration](./media/modern-approvals/configure-update-item.png)
+![update item configuration](./media/modern-approvals/configure-update-item.png)
 
 ### Add an email action for rejections
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-   ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
 
 ### Add update action for rejected requests
 
@@ -122,7 +122,7 @@ Follow these steps to send an email if the vacation request is approved:
 
    Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item card](./media/modern-approvals/configure-update-item-no.png)
+![update item card](./media/modern-approvals/configure-update-item-no.png)
 
 1. Select **Update flow** to save the work we've done.
 
