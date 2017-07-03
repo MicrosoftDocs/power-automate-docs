@@ -28,9 +28,9 @@ A common use of **Microsoft Flow** is to get a **notification** when something h
 
 ## Required app
 
-It's easy to create a flow that sends push notifications to your **mobile device**.  You can create the flow in the **mobile app** or on the **flow.microsoft.com** web app, but you'll need the **mobile app** to receive push notifications.  The app is available for **iOS** and **Android**, and a **Windows** app is coming soon.
+It's easy to create a flow that sends push notifications to your **mobile device**.  You can create the flow in the **mobile app** or on the **flow.microsoft.com** web app, but you'll need the **mobile app** to receive push notifications. The Microsoft Flow mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
-If you are using an unsupported mobile device, consider using **SMS messages** (texts) to receive notifications instead of push notifications.  
+If you are using an unsupported mobile device, consider using **SMS messages** (texts) to receive notifications instead of push notifications.
 
 ## Creating flows that send notifications
 

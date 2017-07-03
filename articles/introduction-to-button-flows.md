@@ -23,14 +23,14 @@
 
 ## What are button flows?
 
-There are many repetitive tasks that we all wish we could execute with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Online build of your code base after you've been notified that there are no more checkins planned for the day. Button flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
+There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Online build of your code base after you've been notified that there are no more checkins planned for the day. Button flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
 **Note** You can create button flows either from your mobile device or from the Flow portal.  
   ![Overview image](./media/introduction-to-button-flows/buttons-montage.png)  
 
 ## Why create buttons?
 
-Create buttons so that you can easily execute repetitive tasks from anyplace, at anytime via your mobile device. Executing buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
+Create buttons so that you can easily run repetitive tasks from anyplace, at anytime via your mobile device. Executing buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
 
 ## Create a button
 
@@ -70,13 +70,11 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 11. You should see this success message within a few moments:  
 ![Overview image](./media/introduction-to-button-flows/create-button-11.png)  
 
-Congratulations, you've created a button flow! You can now execute this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is available on Android and iOS mobile devices.  
+Congratulations, you've created a button flow! You can now run this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Microsoft Flow mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### From your mobile device
 
-#### Android or iOS
-
-**Note**: While this walk-through displays screens from an Android device, the screens and experience on an iOS device are similar.  
+**Note**: While this walk-through displays screens from an Android device, the screens and experience on an iOS device are similar.
 
 In the Flow app:
 
@@ -99,7 +97,7 @@ In the Flow app:
 9. View all your flows on the **My flows** tab  
 ![Overview image](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
 
-Congratulations, you've created a button flow! You can now execute this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
+Congratulations, you've created a button flow! You can now run this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
 
 ![Overview image](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
 
@@ -150,7 +148,6 @@ On the **My flows** tab of the Flow app:
 
 ## Next steps
 
-- [Share button flows](./share-buttons.md)
-- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are executed
-- [Install the Flow app for Android](https://play.google.com/store/apps/details?id=com.microsoft.flow)
-- [Install the Flow app for iOS](https://appsto.re/us/5M0qbb.i)
+- [Share button flows](./share-buttons.md).
+- Learn to use [button trigger tokens](./introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are run.
+- Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).

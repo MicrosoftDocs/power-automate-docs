@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/08/2017"
+   ms.date="06/24/2017"
    ms.author="deonhe"/>
 
 # Create parallel approval workflows with Microsoft Flow
@@ -26,7 +26,7 @@ In this walkthrough, we use Microsoft Flow to create a flow that automates a par
 
 ## Prerequisites
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
+[AZURE.INCLUDE [prerequisites-for-modern-approvals](../includes/prerequisites-for-modern-approvals.md)]
 
 The SharePoint Online list you create must include the following columns:
 
@@ -36,17 +36,17 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Create your flow from the blank template
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[AZURE.INCLUDE [sign-in-and-create-flow-from-blank-template](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
+[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/add-trigger-when-sharepoint-item-created.md)]
 
    ![SharePoint info](../includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-get-manager-action.md)]
+[AZURE.INCLUDE [add-get-manager-action](../includes/add-get-manager-action.md)]
 
 ## Name and save your flow
 
@@ -62,7 +62,8 @@ To continue making changes after you save or update your flow, select **Edit flo
 
 ## Add an approval action for immediate manager
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
+[AZURE.INCLUDE [add-an-approval-action](../includes/add-an-approval-action.md)]
+
 
 >[AZURE.IMPORTANT]This action sends the vacation request to the email address in the **Assigned To** box, so insert the **Email** token from the **Get manager** list.
 
@@ -76,7 +77,7 @@ To continue making changes after you save or update your flow, select **Edit flo
 
 1. Select **Add an action**.
 
-   ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
+    ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
 
 1. Search for, select, and then configure a **Start an approval** action that sends the vacation request to the sales team. See the [steps used to Add an approval action for immediate manager](parallel-modern-approvals.md/#Add-an-approval-action-for-immediate-manager) if you're not sure how to add the **Start an approval** action.
 
@@ -119,17 +120,17 @@ Let's continue:
 1. Select **Add a condition** from the menu that appears.
 1. Select the first box on the **Condition** card, and then select the **Response** token from the **Start an approval** category in the dynamic content list.
 
-   ![flow with parallel branches condition](./media/parallel-modern-approvals/configure-approval-condition.png)
+    ![flow with parallel branches condition](./media/parallel-modern-approvals/configure-approval-condition.png)
 
 1. Confirm the list (in the middle of the **Condition card**) is set to **is equal to**.
 1. Enter **Approve** (this text is case-sensitive) into the last box.
 1. Your condition card should now resemble this example:
 
-   ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
+    ![flow with parallel branches condition](../includes/media/parallel-modern-approvals/condition-card.png)
 
->[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
+    >[AZURE.NOTE]This condition checks the response from the **Start an approval** action that goes to the employee's manager.
 
-Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
+1. Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
 
 ## Add email actions to each branch
 
@@ -137,7 +138,7 @@ Perform the following steps on the **IF YES, DO NOTHING** side of the **Conditio
 
    Note: Your flow uses these steps to send an email when the request is approved:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-approved](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure pre-approved email template](../includes/media/parallel-modern-approvals/yes-email-config.png)
 
@@ -151,7 +152,7 @@ Perform the following steps to update SharePoint when decisions are made.
 
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-approval](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
@@ -161,7 +162,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 
 1. Select **New step** > **Add an action**
 
-   ![update item configuration](../includes/media/parallel-modern-approvals/add-an-action-2-step.png)
+    ![update item configuration](../includes/media/parallel-modern-approvals/add-an-action-2-step.png)
 
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
