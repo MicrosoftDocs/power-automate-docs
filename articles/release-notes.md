@@ -52,6 +52,35 @@
 
 ## What's new ##
 
+### Release 2017-06-28
+
+- **Update your language settings** - You can customize both the Language and Region that Microsoft Flow uses through the Settings menu.
+- **Five new connectors** - Added support for Adobe Creative Cloud, Bing Maps, Bing Search, JotForm and Freshservice.
+- **Configure timeouts** - Change the time long-running actions, such as approvals, run before they "timeout" and the flow continues.
+- **Include comments in Outlook for approvals** - 
+- **Custom connector brand colors** - You can now enter a color for your Custom Connectors that will be used for the backgrounds.
+- **Save As for team flows** - Make copies of any flows, including Team flows
+- **Delete flow information** - When you delete a flow, you'll be shown the list of all pending runs for that flow.
+- **Filtering on the Connectors page** - Search for the connectors you want on the Connectors page, and filter by type of connector.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/language-settings-3-connectors/) about this release.
+
+### Release 2017-06-19
+
+You can now view the status of all of the pending approval requests you have sent. Additionally, you can browse and act on all your pending approvals directly from your mobile device.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/sent-requests-flow-mobile/) about this release.
+
+### Release 2017-06-15
+
+- **Content conversion** -  A new connector that can convert HTML content to plain text, useful for handling HTML formatted emails.
+- **Three new database connectors** - Added read-only support for MySQL, PostgreSQL and Teradata. These connectors connect via the On-premises data gateway.
+- **Three other connectors** - Connect to Azure Application Insights, Calendly and Teamwork Projects.
+- **Better visualization for error handling** - Steps that run after errors are now shown with red dotted arrows so you can easily identify them.
+- **Run details pane** - When a flow fails there is now a new right-hand pane that contains some helpful steps for how to correct your flow.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/seven-connectors-and-html/) about this release.
+
 ### Release 2017-06-04
 
 - **GA for Windows Phone** - [The Microsoft Flow mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
