@@ -25,7 +25,7 @@ If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
 
 ## Prerequisites ##
 - An [account for Microsoft Flow](sign-up-sign-in.md).
-- The mobile app for Microsoft Flow installed on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device is similar.
+- The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
 - To use the template demonstrated in this topic, you'll also need:
 
 	- Office 365 credentials.

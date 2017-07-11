@@ -46,21 +46,21 @@ User email|The email address of the person signed into the device that's running
 
 
 ## Create a button flow that uses trigger tokens
-When you create a button, you can use trigger tokens to add rich functionality to your button. 
+When you create a button, you can use trigger tokens to add rich functionality to your button.
 
-In this walk-through, we will create a button flow on an Android device. The button flow will use trigger tokens to send the date and your full address in a "**Working from home**" email to your boss.  
+In this walk-through, we will create a button flow on an Android device. The button flow will use trigger tokens to send the date and your full address in a "**Working from home**" email to your boss.
 
-In this walk-through, you will see screen-shots from an Android device, however, the experience is similar on iOS devices as well.
+In this walk-through, you will see screen-shots from an Android device, however, the experience is similar on iOS and Windows Phone devices as well.
 
 ### Prerequisites
 
 
 
-- A work or school email address or a [Microsoft Account](https://account.microsoft.com/about?refd=www.microsoft.com) with access to Microsoft Flow  
-- An Android or iOS device with the Microsoft Flow app installed  
+- A work or school email address or a [Microsoft Account](https://account.microsoft.com/about?refd=www.microsoft.com) with access to Microsoft Flow.
+- The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 
-Let's get started:  
+Let's get started:
 
 
 1. Launch Flow and select **Browse**   
