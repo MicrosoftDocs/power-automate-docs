@@ -55,7 +55,7 @@ Use the approval center on your mobile device to view, approve, or reject approv
 
 1. View all pending approvals:
 
-   ![see pending approval requests](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![see pending approval requests](./media/mobile-approvals/show-pending-approval-requests.png)
 
 If there aren't any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
