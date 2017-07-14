@@ -28,7 +28,7 @@ Approvers manage requests from their email inbox, [the approvals center](https:/
 
 ## Create an approval flow
 
-Here's an overview of the flow we'll create:
+Here's an overview of the flow we'll create and test:
 
    ![overview of flow](./media/modern-approvals/create-flow-overview.png)
 
@@ -54,11 +54,11 @@ Create these columns in your SharePoint Online list:
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
 
-### Create your flow from the blank template
+## Create your flow from the blank template
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
-### Add a trigger
+## Add a trigger
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
 
@@ -66,7 +66,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
      ![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
-### Add a profile action
+## Add a profile action
 
 1. Select **New step**, and then select **Add an action**.
 
@@ -84,17 +84,17 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
      ![save flow](./media/modern-approvals/save.png)
 
-### Add an approval action
+## Add an approval action
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
 
 Note: This action sends the approval request to the email address in the **Assigned To** box.
 
-### Add a condition
+## Add a condition
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-approval-condition-response.md)]
 
-### Add an email action for approvals
+## Add an email action for approvals
 
 Follow these steps to send an email if the vacation request is approved:
 
@@ -102,7 +102,7 @@ Follow these steps to send an email if the vacation request is approved:
 
    ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
-### Add an update action for approved requests
+## Add an update action for approved requests
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
@@ -110,13 +110,13 @@ Follow these steps to send an email if the vacation request is approved:
 
    ![update item configuration](./media/modern-approvals/configure-update-item.png)
 
-### Add an email action for rejections
+## Add an email action for rejections
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
    ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
 
-### Add update action for rejected requests
+## Add update action for rejected requests
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-rejection.md)]
 
@@ -138,17 +138,9 @@ Now that we've created the flow, it's time to test it!
 
 [!INCLUDE [INCLUDEDCONTENT](../includes/request-vacation-approval.md)]
 
-## View pending approval requests
+## View and manage pending approval requests
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/view-pending-approvals.md)]
-
-## Approve a request
-
-[!INCLUDE [INCLUDEDCONTENT](../includes/approve-request-from-different-locations.md)]
-
-## Reject a request
-
-[!INCLUDE [INCLUDEDCONTENT](../includes/reject-a-request.md)]
+[Manage approval requests](./approve-deny-requests.md)
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
