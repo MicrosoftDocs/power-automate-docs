@@ -140,7 +140,7 @@ Now that we've created the flow, it's time to test it!
 
 ## View and manage pending approval requests
 
-[AZURE.INCLUDE [approve-deny-requests](../includes/approve-deny-requests.md)]
+[AZURE.INCLUDE [approve-reject-requests](../includes/approve-reject-requests.md)]
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
