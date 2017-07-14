@@ -1,5 +1,5 @@
 <properties
-    pageTitle="Easily Automate approval workflows. | Microsoft Flow" 
+    pageTitle="Easily Automate approval workflows. | Microsoft Flow"
     description="Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress."
     services=""
     suite="flow"
@@ -46,7 +46,7 @@ The flow performs the following steps:
 
 To complete this walkthrough, you must have access to:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/prerequisites-for-modern-approvals.md)]
+[AZURE.INCLUDE [prerequisites-for-modern-approvals](../includes/prerequisites-for-modern-approvals.md)]
 
 Create these columns in your SharePoint Online list:
 
@@ -56,15 +56,15 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 ## Create your flow from the blank template
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[AZURE.INCLUDE [sign-in-and-create-flow-from-blank-template](../includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-trigger-when-sharepoint-item-created.md)]
+[AZURE.INCLUDE [add-trigger-when-sharepoint-item-created](../includes/add-trigger-when-sharepoint-item-created.md)]
 
-     The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-     ![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
+![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## Add a profile action
 
@@ -86,43 +86,43 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 ## Add an approval action
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-an-approval-action.md)]
+[AZURE.INCLUDE [add-an-approval-action](../includes/add-an-approval-action.md)]
 
 Note: This action sends the approval request to the email address in the **Assigned To** box.
 
 ## Add a condition
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-approval-condition-response.md)]
+[AZURE.INCLUDE [add-approval-condition-response](../includes/add-approval-condition-response.md)]
 
 ## Add an email action for approvals
 
 Follow these steps to send an email if the vacation request is approved:
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-approved.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-approved](../includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-approval.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-approval](../includes/add-action-to-update-sharepoint-with-approval.md)]
 
-     Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
+Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item configuration](./media/modern-approvals/configure-update-item.png)
+![update item configuration](./media/modern-approvals/configure-update-item.png)
 
 ## Add an email action for rejections
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-send-email-when-vacation-rejected.md)]
+[AZURE.INCLUDE [add-action-to-send-email-when-vacation-rejected](../includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-   ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
 
 ## Add update action for rejected requests
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/add-action-to-update-sharepoint-with-rejection.md)]
+[AZURE.INCLUDE [add-action-to-update-sharepoint-with-rejection](../includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item card](./media/modern-approvals/configure-update-item-no.png)
+![update item card](./media/modern-approvals/configure-update-item-no.png)
 
 1. Select **Update flow** to save the work we've done.
 
@@ -136,11 +136,11 @@ Now that we've created the flow, it's time to test it!
 
 ## Request an approval
 
-[!INCLUDE [INCLUDEDCONTENT](../includes/request-vacation-approval.md)]
+[AZURE.INCLUDE [request-vacation-approval](../includes/request-vacation-approval.md)]
 
 ## View and manage pending approval requests
 
-[Manage approval requests](./approve-deny-requests.md)
+[AZURE.INCLUDE [approve-deny-requests](../includes/approve-deny-requests.md)]
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
