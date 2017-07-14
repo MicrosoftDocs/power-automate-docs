@@ -24,15 +24,15 @@ Microsoft Flow makes it easy to automate [approval workflow processes](./modern-
 
 ## View pending approval requests
 
-[!INCLUDE [pending approvals](../includes/view-pending-approvals.md)]
+[!INCLUDE [view-pending-approvals](../includes/view-pending-approvals.md)]
 
 ## Approve a request
 
-[!INCLUDE [approve from multiple sources](../includes/approve-request-from-different-locations.md)]
+[!INCLUDE [approve-request-from-different-locations](../includes/approve-request-from-different-locations.md)]
 
 ## Reject a request
 
-[!INCLUDE [reject requests](../includes/reject-a-request.md)]
+[!INCLUDE [reject-a-request](../includes/reject-a-request.md)]
 
 ## Learn more
 
