@@ -211,7 +211,7 @@ The flow runs after you save it. If you created the spreadsheet shown earlier in
 
 ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
 
-    Notice all data from rows that had "completed" or "unnecessary" in the Status column were deleted.
+Notice all data from rows that had "completed" or "unnecessary" in the Status column were deleted.
 
 ## Use the and function
 
@@ -249,7 +249,7 @@ After your flow runs, the spreadsheet resembles this image:
 
 ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
 
-    Notice extra lines are removed from the table.
+Notice extra lines are removed from the table.
 
 ## Use the greater function
 
