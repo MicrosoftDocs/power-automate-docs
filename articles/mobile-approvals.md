@@ -15,21 +15,16 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="06/14/2017"
+    ms.date="07/20/2017"
     ms.author="deonhe"/>
 
-# Mobile approvals with Microsoft Flow
+# Approve requests on your Mobile device with Microsoft Flow
 
-When you create an [approval flow](./modern-approvals.md), it sends approval requests:
+If you’re an approver with the Microsoft Flow mobile app installed, you receive a push notification whenever a new approval request is created.
 
-- [Via email](./modern-approvals.md/#from-email).
-- To the [approval center](./modern-approvals.md/#from-the-approvals-center).
+This article walks you through a few common scenarios you’re likely to encounter while using the Microsoft Flow mobile app to manage approval requests.
 
-Your flows also send push notifications to the Microsoft Flow mobile app whenever someone creates a new approval request.
-
-You can use any of the preceding methods to manage your approval requests. However, this article focuses on using the Microsoft Flow mobile app to manage approval requests.
-
->[AZURE.NOTE]The images presented here are from an Android phone, however, the experience on iOS is similar.
+>[AZURE.NOTE]The images presented here are from an Android device, however, the experience on iOS is similar.
 
 ## Prerequisites
 
@@ -39,29 +34,25 @@ To complete this walkthrough, you need:
 - To be designated as the approver in an approval flow.
 - Pending approval requests.
 
-## Mobile approvals
-
-Use the approval center on your mobile device to view, approve, or reject approval requests.
-
 ## View pending approval requests
 
 1. Open the Microsoft Flow mobile app.
 
-    ![](./media/mobile-approvals/open-app.png)
+    ![start the mobile app](./media/mobile-approvals/open-app.png)
 
 1. Select **APPROVALS** from the top right corner of the screen.
 
-    ![](./media/mobile-approvals/select-approvals.png)
+    ![select approvals](./media/mobile-approvals/select-approvals.png)
 
 1. View all pending approvals:
 
     ![see pending approval requests](./media/mobile-approvals/show-pending-approval-requests.png)
 
-If there aren't any pending approval requests, create an approval flow, set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
+If there aren't any pending approval requests, create an [approval flow](./modern-approvals.md), set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
 ## Approve requests and leave an optional comment
 
-1. If you haven't done sone, follow the preceding steps to [display all pending approval requests](./mobile-approvals.md/#View-pending-approval-requests).
+1. If you haven't done so, follow the preceding steps to [display all pending approval requests](./mobile-approvals.md/#View-pending-approval-requests).
 
 1. Select **APPROVE** on the request you want to approve.
 
@@ -77,13 +68,13 @@ If there aren't any pending approval requests, create an approval flow, set your
 
 1. Select **CONFIRM** in the top right corner of the screen.
 
-    ![confirm your are finished](./media/mobile-approvals/tap-confirm-button.png)
+    ![confirm you are finished](./media/mobile-approvals/tap-confirm-button.png)
 
 1. The success screen displays after the flow records your decision.
 
     ![success screen](./media/mobile-approvals/approved.png)
 
-## Reject request and leave an optional comment
+## Reject requests and leave optional comments
 
 Follow the [steps to approve a request](./mobile-approvals.md/#approve-requests-and-leave-an-optional-comment), but select **REJECT** in the second step.
 
