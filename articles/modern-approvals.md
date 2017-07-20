@@ -15,14 +15,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/15/2017"
+   ms.date="07/20/2017"
    ms.author="deonhe"/>
 
 # Create and test an approval workflow with Microsoft Flow
 
 With Microsoft Flow, you can manage the approval of documents or processes accross several services, including SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
- To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
+To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
 Approvers manage requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Microsoft Flow website, or the Microsoft Flow app.
 
@@ -138,14 +138,11 @@ Now that we've created the flow, it's time to test it!
 
 [AZURE.INCLUDE [request-vacation-approval](../includes/request-vacation-approval.md)]
 
-## View and manage pending approval requests
-
-[AZURE.INCLUDE [approve-reject-requests](../includes/approve-reject-requests.md)]
-
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
 ## Learn more
 
+- View and manage [pending approval requests](./approve-reject-requests.md)
 - Create [sequential approval flows.](./sequential-modern-approvals.md)
 - Create [parallel approval flows.](./parallel-modern-approvals.md)
 - Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).

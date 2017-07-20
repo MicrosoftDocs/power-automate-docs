@@ -36,7 +36,7 @@ Microsoft Flow makes it easy to automate [approval workflow processes](./modern-
 
 ## Learn more
 
-- Create [approval flows.](./modern-approvals.md)
-- Create [sequential approval flows.](./sequential-modern-approvals.md)
-- Create [parallel approval flows.](./parallel-modern-approvals.md)
+- Create [approval flows.](../articles/modern-approvals.md)
+- Create [sequential approval flows.](../articles/sequential-modern-approvals.md)
+- Create [parallel approval flows.](../articles/parallel-modern-approvals.md)
 - Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
