@@ -1,6 +1,6 @@
 <properties
     pageTitle="Use functions with conditions. | Microsoft Flow"
-    description="Use advanced functions such as ""and"", ""or"", “empty”, ""less"" and ""greater"" with Microsoft Flow conditions."
+    description="Use advanced functions such as ""and"", ""or"", ""empty"", ""less"" and ""greater"" with Microsoft Flow conditions."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,12 +15,14 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="06/27/2017"
+    ms.date="07/20/2017"
     ms.author="deonhe"/>
 
-# Use functions in conditions
+# Use functions in conditions to check multiple values
 
-You can use the [**Condition**](./add-a-condition.md/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table. In this walkthrough, you will learn how to use functions and  **Conditions** to compare multiple values in **Advanced mode**.
+In this walkthrough, you will learn how to use functions and **Conditions** to compare multiple values in **Advanced mode**.
+
+When you create a flow, you can use the [**Condition**](./add-a-condition.md/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical functions in your conditions.
 
@@ -102,7 +104,7 @@ if(equals(1, 1), 'yes', 'no')</td>
 
 ## Use the or function
 
-Sometimes your workflow needs to take an action if the value of an item is valueA **or** valueB. For example, you may be tracking the status of tasks in a spreadsheet table. The table has a column named *Status*. The possible values in the *Status* column are:
+Sometimes your workflow needs to take an action if the value of an item is valueA **or** valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named *Status* and the possible values in the *Status* column are:
 
 - **completed**
 - **blocked**
@@ -113,7 +115,7 @@ Here's a example of what the spreadsheet might look like:
 
 ![sample spreadsheet](./media/use-functions-in-conditions/spreadsheet-table.png)
 
-You want to use Microsoft Flow to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
+Given the preceding spreadsheet, you want to use Microsoft Flow to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
 
 Let's create the flow.
 
@@ -121,15 +123,15 @@ Let's create the flow.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
-     ![sign in](../includes/media/modern-approvals/sign-in.png)
+    ![sign in](../includes/media/modern-approvals/sign-in.png)
 
 1. Select the **My flows** tab.
 
-     ![select my flows](../includes/media/modern-approvals/select-my-flows.png)
+    ![select my flows](../includes/media/modern-approvals/select-my-flows.png)
 
 1. Select **Create from blank**.
 
-     ![create from blank](../includes/media/modern-approvals/blank-template.png)
+    ![create from blank](../includes/media/modern-approvals/blank-template.png)
 
 ### Add a trigger to your flow
 
@@ -145,31 +147,31 @@ Let's create the flow.
 
 1. Select **New step** > **Add an action**.
 
-   ![new step](../includes/media/new-step/action.png)
+    ![new step](../includes/media/new-step/action.png)
 
 1. Search for **rows**, and then select **Excel - Get rows**.
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you are using. For example, if you are using Google Sheets, select **Google Sheets - Get rows**.
 
-   ![get Rows](../includes/media/new-step/get-excel-rows.png)
+    ![get Rows](../includes/media/new-step/get-excel-rows.png)
 
 1. Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
 
-   ![select spreadsheet](../includes/media/new-step/select-spreadsheet.png)
+    ![select spreadsheet](../includes/media/new-step/select-spreadsheet.png)
 
 1. Select the table that contains your data from the **Table name** list.
 
-   ![select table](../includes/media/new-step/select-table.png)
+    ![select table](../includes/media/new-step/select-table.png)
 
 ### Check the status column of each row
 
 1. Select **New step** > **More** > **Add an apply to each**.
 
-   ![select table](../includes/media/new-step/apply-to-each.png)
+    ![select table](../includes/media/new-step/apply-to-each.png)
 
 1. Add the **Value** token to the **Select an output from previous steps** box.
 
-   ![select table](../includes/media/apply-to-each/add-value-token.png)
+    ![select table](../includes/media/apply-to-each/add-value-token.png)
 
 1. Select **Add a condition** > **Edit in advanced mode**.
 
@@ -181,35 +183,35 @@ Let's create the flow.
 
     Your **Condition** card resembles this image:
 
-   ![or function image](./media/use-functions-in-conditions/or-function.png)
+    ![or function image](./media/use-functions-in-conditions/or-function.png)
 
 ### Delete matching rows from the spreadsheet
 
 1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
 1. Search for **Delete row**, and then select **Excel - Delete row**.
 
-   ![delete row image](../includes/media/new-step/select-delete-excel-row.png)
+    ![delete row image](../includes/media/new-step/select-delete-excel-row.png)
 1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
 
 1. In the **Table name** list, select the table that contains your data.
 
 1. Place the **Row id** token in the **Row id** box.
 
-   ![spreadsheet file](../includes/media/new-step/delete-excel-row.png)
+    ![spreadsheet file](../includes/media/new-step/delete-excel-row.png)
 
 ### Name the flow and save it
 
 1. Give your flow a name and then select the **Create flow** button.
 
-   ![save your flow](./media/use-functions-in-conditions/name-and-save.png)
+    ![save your flow](./media/use-functions-in-conditions/name-and-save.png)
 
 ### Run the flow with the or function
 
 The flow runs after you save it. If you created the spreadsheet shown earlier in this walkthrough, here's what the it looks like after the run completes:
 
-   ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
+    ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
 
-   Notice all rows that had "completed" or "unnecessary" in the Status column were deleted.
+    Notice all rows that had "completed" or "unnecessary" in the Status column were deleted.
 
 ## Use the and function
 
@@ -219,17 +221,17 @@ Assume you have a spreadsheet table with two columns. The column names are Statu
 
 Your **Condition** card resembles this image:
 
-   ![and function image](./media/use-functions-in-conditions/and-function.png)
+    ![and function image](./media/use-functions-in-conditions/and-function.png)
 
 ### Run the flow with the and function
 
 If you followed along, your spreadsheet resembles this image:
 
-   ![before and runs](./media/use-functions-in-conditions/spreadsheet-table-before-and-function-runs.png)
+    ![before and runs](./media/use-functions-in-conditions/spreadsheet-table-before-and-function-runs.png)
 
 After your flow runs, your spreadsheet resembles this image:
 
-   ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-and-function-runs.png)
+    ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-and-function-runs.png)
 
 ## Use the empty function
 
@@ -241,13 +243,13 @@ To accomplish this task, follow all steps listed in **Use the and function** sec
 
 Your **Condition** card resembles this image:
 
-   ![and function image](./media/use-functions-in-conditions/empty-function.png)
+    ![and function image](./media/use-functions-in-conditions/empty-function.png)
 
 After your flow runs, the spreadsheet resembles this image:
 
-   ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
+    ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
 
-   Notice extra lines are removed from the table.
+    Notice extra lines are removed from the table.
 
 ## Use the greater function
 
@@ -257,7 +259,7 @@ Use the **greater** function to identify the employees who haven't paid the full
 
 Here's a view of the spreadsheet:
 
-   ![view of spreadsheet](./media/use-functions-in-conditions/tickets-spreadsheet-table.png)
+    ![view of spreadsheet](./media/use-functions-in-conditions/tickets-spreadsheet-table.png)
 
 Here's the implementation of the **greater** function that identifies all persons who have paid less than the amount due from them:
 
@@ -293,7 +295,7 @@ Use the **greater** function to identify the employees who have paid less than t
 
 Here's a view of the spreadsheet table:
 
-   ![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
+    ![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
 
 Here's the implementation of the **and** function that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current date:
 
@@ -301,4 +303,4 @@ Here's the implementation of the **and** function that identifies all persons wh
 
 ## Learn more
 
-Learn about other types of [functions](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+Learn about other [functions](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
