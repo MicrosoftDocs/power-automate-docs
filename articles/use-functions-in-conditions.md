@@ -209,9 +209,9 @@ Let's create the flow.
 
 The flow runs after you save it. If you created the spreadsheet shown earlier in this walkthrough, here's what the it looks like after the run completes:
 
-    ![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
+![or function completes](./media/use-functions-in-conditions/spreadsheet-table-after-or-function-runs.png)
 
-    Notice all rows that had "completed" or "unnecessary" in the Status column were deleted.
+    Notice all data from rows that had "completed" or "unnecessary" in the Status column were deleted.
 
 ## Use the and function
 
@@ -221,17 +221,17 @@ Assume you have a spreadsheet table with two columns. The column names are Statu
 
 Your **Condition** card resembles this image:
 
-    ![and function image](./media/use-functions-in-conditions/and-function.png)
+![and function image](./media/use-functions-in-conditions/and-function.png)
 
 ### Run the flow with the and function
 
 If you followed along, your spreadsheet resembles this image:
 
-    ![before and runs](./media/use-functions-in-conditions/spreadsheet-table-before-and-function-runs.png)
+![before and runs](./media/use-functions-in-conditions/spreadsheet-table-before-and-function-runs.png)
 
 After your flow runs, your spreadsheet resembles this image:
 
-    ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-and-function-runs.png)
+![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-and-function-runs.png)
 
 ## Use the empty function
 
@@ -243,11 +243,11 @@ To accomplish this task, follow all steps listed in **Use the and function** sec
 
 Your **Condition** card resembles this image:
 
-    ![and function image](./media/use-functions-in-conditions/empty-function.png)
+![and function image](./media/use-functions-in-conditions/empty-function.png)
 
 After your flow runs, the spreadsheet resembles this image:
 
-    ![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
+![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
 
     Notice extra lines are removed from the table.
 
@@ -259,7 +259,7 @@ Use the **greater** function to identify the employees who haven't paid the full
 
 Here's a view of the spreadsheet:
 
-    ![view of spreadsheet](./media/use-functions-in-conditions/tickets-spreadsheet-table.png)
+![view of spreadsheet](./media/use-functions-in-conditions/tickets-spreadsheet-table.png)
 
 Here's the implementation of the **greater** function that identifies all persons who have paid less than the amount due from them:
 
@@ -295,7 +295,7 @@ Use the **greater** function to identify the employees who have paid less than t
 
 Here's a view of the spreadsheet table:
 
-    ![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
+![view of spreadsheet](./media/use-functions-in-conditions/spreadsheet-table-due-date.png)
 
 Here's the implementation of the **and** function that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current date:
 
