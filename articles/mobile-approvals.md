@@ -52,7 +52,7 @@ If there aren't any pending approval requests, create an [approval flow](./moder
 
 ## Approve requests and leave an optional comment
 
-1. If you haven't done so, follow the preceding steps to [display all pending approval requests](mobile-approvals.md/#view-pending-approval-requests).
+1. If you haven't done so, follow the preceding steps to [display all pending approval requests](mobile-approvals.md#view-pending-approval-requests).
 
 1. Select **APPROVE** on the request you want to approve.
 
@@ -76,7 +76,7 @@ If there aren't any pending approval requests, create an [approval flow](./moder
 
 ## Reject requests and leave optional comments
 
-Follow the [steps to approve a request](mobile-approvals.md/#approve-requests-and-leave-an-optional-comment), but select **REJECT** in the second step.
+Follow the [steps to approve a request](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), but select **REJECT** in the second step.
 
 ## Learn more
 
