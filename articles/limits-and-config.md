@@ -86,10 +86,11 @@ These are limits for a single flow.
 
 ### IP address
 
-The IP address from which flow requests are sent depends on the [region](./regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
+The IP address from which Microsoft Flow requests are sent depends on the [region](./regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
 #### Logic App Service
-Calls made from a flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + OpenAPI. These calls come come from the following IP addresses:
+
+Calls made from a flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + OpenAPI. These calls come from the following IP addresses:
 
 |Region|Outbound IP|
 |-----|----|
