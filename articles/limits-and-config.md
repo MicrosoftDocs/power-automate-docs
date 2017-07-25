@@ -15,10 +15,11 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/27/2017"
+   ms.date="07/27/2017"
    ms.author="stepsic"/>
 
-# Limits and configuration in Microsoft Flow #
+# Limits and configuration in Microsoft Flow
+
 This topic contains information about the current limits and configuration details for flows.
 
 ## Limits
@@ -37,7 +38,7 @@ These are limits for a single outgoing request.
 
 |Name|Limit|Notes|
 |----|----|----|
-|Message size|100 MB|Not all APIs support the full 50MB. |
+|Message size|100 MB|Not all APIs support the full 100MB. |
 |Expression evaluation limit|131,072 characters|`@concat()`, `@base64()`, `string` can't exceed this limit.|
 
 #### Retry policy
@@ -85,10 +86,10 @@ These are limits for a single flow.
 
 ### IP address
 
-The IP address of requests from flows depends on the region that the [environment](environments-overview-admin.md) that contains the flow is in. We don't currently publish FQDNs available for flow scenarios.
+The IP address from which flow requests are sent depends on the [region](./regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
 #### Logic App Service
-Calls made from a flow directly go through the Azure Logic App service. Some examples of these include HTTP or HTTP + OpenAPI. These will come from the following IP addresses:
+Calls made from a flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + OpenAPI. These calls come come from the following IP addresses:
 
 |Region|Outbound IP|
 |-----|----|
@@ -116,3 +117,7 @@ Calls made from an API connected through a flow (for example, the SQL API or the
 |United States (Early Access)|52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29|
 
 For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
+
+## Limits for SharePoint and Microsoft Flow
+
+Learn about [Microsoft SharePoint Limits](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) with Microsoft Flow.
