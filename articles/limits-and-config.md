@@ -119,6 +119,6 @@ Calls made from an API connected through a flow (for example, the SQL API or the
 
 For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
 
-## Limits for SharePoint and Microsoft Flow
+## Limits for using SharePoint with Microsoft Flow
 
-Learn about [Microsoft SharePoint Limits](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) with Microsoft Flow.
+There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Microsoft Flow and PowerApps.
