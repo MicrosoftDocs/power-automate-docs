@@ -20,9 +20,11 @@
 
 # Understand on-premises data gateways for Microsoft Flow #
 
+Use the on-premises data gateway with Microsoft Flow to establish secure connections to your on-premises data sources such as Microsoft SQL Server.
+
 ## Installation and configuration ##
 
-## Prerequisites ##
+### Prerequisites ###
 
 Minimum:
 
@@ -43,15 +45,15 @@ Related considerations:
 
 ## Install a gateway ##
 
->[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways now support both HTTP and HTTPS traffic.
 
 1. [Download the installer](http://go.microsoft.com/fwlink/?LinkID=820931), and then run it.
 
-	![Run the installer](./media/gateway-reference/run-installer.png)
+    ![Run the installer](./media/gateway-reference/run-installer.png)
 
 1. On the first screen of the installation wizard, select **Next** to acknowledge the reminder about installing a gateway on a laptop.
 
-	![Reminder screen](./media/gateway-reference/laptop-reminder.png)
+    ![Reminder screen](./media/gateway-reference/laptop-reminder.png)
 
 1. Select the installation location.
 
@@ -59,7 +61,7 @@ Related considerations:
 
 1. Select **Install**.
 
-	![location screen](./media/gateway-reference/location.png)
+    ![location screen](./media/gateway-reference/location.png)
 
 1. In the **User Account Control** dialog boxes, select **Yes** to continue.
 
@@ -149,7 +151,7 @@ This isn't the account used to connect to on-premises data sources or the work o
 
 ## Frequently asked questions ##
 
-### General ###
+### General questions###
 
 **Question:** What data sources does the gateway support?
 **Answer:**
@@ -161,10 +163,10 @@ This isn't the account used to connect to on-premises data sources or the work o
 - Filesystem
 - DB2
 
-**Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?  
+**Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?
 **Answer:** No. A gateway connects to on-premises data sources only.
 
-**Question:** What is the actual Windows service called?  
+**Question:** What is the actual Windows service called?
 **Answer:** In Services, the gateway is called **Power BI Enterprise Gateway Service**.
 
 **Question:** Are there any inbound connections to the gateway from the cloud?
@@ -204,7 +206,7 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 **Question:** What is the benefit of the recovery key?
 **Answer:** It provides a way to migrate or recover your gateway settings.
 
-### Troubleshooting ###
+### Troubleshooting questions ###
 
 **Question:** Where are the gateway logs?
 **Answer:** See [Tools](gateway-reference.md#tools) later in this topic.
@@ -234,35 +236,38 @@ When a user interacts with an element that's connected to an on-premises data so
 
 ## Troubleshooting ##
 
-#### Update to the latest version ####
+### Update to the latest version ###
+
 Many issues can surface when the gateway version is out of date. Ensure you're on the latest version.  If you haven't updated the gateway recently, consider installing the latest version and see if you can reproduce the issue.
 
 #### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   ) ####
+
 You may receive this error if you're trying to install the gateway on a domain controller, which isn't supported. You'll need to install the gateway on a machine that isn't a domain controller.
 
 ## Tools ##
 
-#### Collecting logs from the gateway configurator ####
+### Collecting logs from the gateway configurator ###
+
 You can collect several logs for the gateway. Always start with the logs!
 
-**Installer logs**
+1. Installer logs
 
     %localappdata%\Temp\On-premises_data_gateway_*.log
 
-**Configuration logs**
+1. Configuration logs
 
     %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
-**Enterprise gateway service logs**
+1. Enterprise gateway service logs
 
     C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
-**Event logs**
+1. Event logs
 
 The **On-premises data gateway service** event logs are present under **Applications and Services Logs**.
 
 ![Event logs](./media/gateway-reference/event-logs.png)
 
-#### Fiddler Trace ####
+### Fiddler Trace ###
 
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
