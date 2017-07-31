@@ -42,7 +42,7 @@ Related considerations:
 
 ## Install a gateway ##
 
->[AZURE.IMPORTANT] Microsoft SharePoint data gateways only support HTTP traffic; they do not support HTTPS traffic.
+>[AZURE.IMPORTANT] Microsoft SharePoint data gateways support HTTP and HTTPS traffic.
 
 1. [Download the installer](http://go.microsoft.com/fwlink/?LinkID=820931), and then run it.
 
