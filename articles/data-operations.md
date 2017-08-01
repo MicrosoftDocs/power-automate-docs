@@ -20,7 +20,7 @@
 
 # Use data operations with Microsoft Flow
 
-In this walkthrough, you learn about some of the Microsoft Flow’s popular data operations, such as compose, join, select, filter, create table, and parse JSON that are available to manipulate data when you create flows.
+In this walkthrough, you learn about some of the Microsoft Flow’s popular data operations, such as compose, join, select, filter array, create table, and parse JSON that are available to manipulate data when you create flows.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ and you’d like to convert it to this array:
 
 Use **Data Operations -- Filter array** (filter array) to reduce the number of objects in an array to a subset that matches the criteria you provide.
 
->[AZURE.NOTE]Filter array cannot be used to change the shape of the objects in an array.
+>[AZURE.NOTE]Filter array cannot be used to change the shape of the objects in an array. Also, filter text is case sensitive.
 
 For example, you can use **Data Operations -- Filter array** to filter this array:
 
