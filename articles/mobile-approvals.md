@@ -30,9 +30,9 @@ This article walks you through a few common scenarios that you’re likely to en
 
 To complete this walkthrough, you need:
 
-- A device running the mobile app for Microsoft Flow on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- An [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) device running the mobile app for Microsoft Flow.
 - To be designated as the approver in an approval flow.
-- Pending approval requests.
+- Pending requests for approval.
 
 ## View pending requests
 
