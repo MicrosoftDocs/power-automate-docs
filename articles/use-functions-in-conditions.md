@@ -15,86 +15,29 @@
     ms.topic="article"
     ms.tgt_pltfrm="na"
     ms.workload="na"
-    ms.date="07/20/2017"
+    ms.date="08/01/2017"
     ms.author="deonhe"/>
 
 # Use functions in conditions to check multiple values
 
-In this walkthrough, you will learn how to use functions and **Conditions** to compare multiple values in **Advanced mode**.
+In this walkthrough, you'll learn to use functions and **Conditions** to compare multiple values in **Advanced mode**.
 
 When you create a flow, you can use the [**Condition**](./add-a-condition.md/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical functions in your conditions.
 
-<table>
-<tr>
-    <th>Function</th>
-    <th>Description</th>
-    <th>Example</th>
-</tr>
-<tr>
-    <td><a href="./use-functions-in-conditions.md/#use-the-and-function">and</a></td>
-    <td>Returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.</td>
-    <td>This function returns false:
-and(greater(1,10),equals(0,0))</td>
-
-</tr>
-<tr>
-    <td><a href="./use-functions-in-conditions.md/#use-the-or-function">or</a></td>
-    <td>Returns true if either parameter is true. <br><b>Note</b>: Both arguments must be Booleans.</td>
-    <td>This function returns true:
-or(greater(1,10),equals(0,0))</td>
-
-</tr>
-<tr>
-    <td>equals</td>
-    <td>Returns true if two values are equal.</td>
-    <td>For example, if parameter1 is someValue, this function returns true:</td>
-
-</tr>
-<tr>
-    <td><a href="./use-functions-in-conditions.md/#use-the-less-function">less</a></td>
-    <td>Returns true if the first argument is less than the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
-    <td>This function returns true:
-less(10,100)</td>
-</tr>
-<tr>
-    <td>lessOrEquals</td>
-    <td>Returns true if the first argument is less than or equal to the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
-    <td>This function returns true:
-lessOrEquals(10,10)</td>
-</tr>
-<tr>
-    <td><a href="./use-functions-in-conditions.md/#use-the-greater-function">greater</a></td>
-    <td>Returns true if the first argument is greater than the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
-    <td>This function returns false:
-greater(10,10)</td>
-</tr>
-<tr>
-    <td>greaterOrEquals</td>
-    <td>Returns true if the first argument is greater than or equal to the second. <br><b>Note</b>: The supported types are integer, float, or string.</td>
-    <td>This function returns false:
-greaterOrEquals(10,100)</td>
-</tr>
-<tr>
-    <td><a href="./use-functions-in-conditions.md/#use-the-empty-function">empty</a></td>
-    <td>Returns true if object, array, or string is empty.</td>
-    <td>This function returns true:
-empty('')</td>
-</tr>
-<tr>
-    <td>not</td>
-    <td>Returns true if the parameters are false. <br><b>Note</b>: Both arguments must be Booleans.</td>
-    <td>This function returns true:
-not(contains('200 Success','Fail'))</td>
-</tr>
-<tr>
-    <td>if</td>
-    <td>Returns a specified value based on whether the expression resulted in true or false.</td>
-    <td>This function returns "yes":
-if(equals(1, 1), 'yes', 'no')</td>
-</tr>
-</table>
+Function|Description|Example
+--------|-----------|-------
+|<a href="use-functions-in-conditions.md/#use-the-and-function">and</a>|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This function returns false: <br>and(greater(1,10),equals(0,0))
+|<a href="use-functions-in-conditions.md/#use-the-or-function">or</a>|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This function returns true:<br>or(greater(1,10),equals(0,0))
+|equals|Returns true if two values are equal.|For example, if parameter1 is someValue, this function returns true:<br>equals(parameters('parameter1'), 'someValue')
+|<a href="use-functions-in-conditions.md/#use-the-less-function">less</a>|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns true:<br>less(10,100)
+|lessOrEquals|Takes two arguments and returns true if the first argument is less than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns true:<br>lessOrEquals(10,10)
+|<a href="use-functions-in-conditions.md/#use-the-greater-function">greater</a>|Takes two arguments and returns true if the first argument is greater than the second arument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns false:<br>greater(10,10)
+|greaterOrEquals|Takes two arguments and returns true if the first argument is greater than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns false:<br>greaterOrEquals(10,100)
+|<a href="use-functions-in-conditions.md/#use-the-empty-function">empty</a>|Returns true if the object, array, or string is empty.|This function returns true:<br>empty('')
+|not|Takes two arguments and returns true if the arguments are false. <br><b>Note</b>: Both arguments must be Booleans.|This function returns true:<br>not(contains('200 Success','Fail'))
+|if|Returns a specific value if the expression results in true or false.|This function returns "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## Prerequisites
 
@@ -243,11 +186,11 @@ To accomplish this task, follow all steps listed in **Use the and function** sec
 
 Your **Condition** card resembles this image:
 
-![and function image](./media/use-functions-in-conditions/empty-function.png)
+![empty function image](./media/use-functions-in-conditions/empty-function.png)
 
 After your flow runs, the spreadsheet resembles this image:
 
-![after and runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
+![after empty runs](./media/use-functions-in-conditions/spreadsheet-table-after-empty-function-runs.png)
 
 Notice extra lines are removed from the table.
 
@@ -271,23 +214,11 @@ Imagine you've bought baseball tickets for your coworkers, and you're using a sp
 
 Use the **and** function along with the **less** function since there are two conditions being validated:
 
-<table>
-<tr>
-    <th>Condition to validate</th>
-    <th>Function to use</th>
-    <th>Example</th>
-</tr>
-<tr>
-    <td>Has the full amount due been paid?</td>
-    <td>greater</td>
-    <td>@greater(item()?['Due'], item()?['Paid'])</td>
-</tr>
-<tr>
-    <td>Is the due date less than one day away?</td>
-    <td>less</td>
-    <td>@less(item()?['DueDate'], addDays(utcNow(),1))</td>
-</tr>
-</table>
+
+Condition to validate|Function to use|Example
+------|-----|-----
+Has the full amount due been paid?|greater|@greater(item()?['Due'], item()?['Paid'])
+Is the due date less than one day away?|less|@less(item()?['DueDate'], addDays(utcNow(),1))
 
 ## Combine the greater and less functions in an and function
 
