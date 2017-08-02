@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="07/27/2017"
+   ms.date="08/02/2017"
    ms.author="stepsic"/>
 
 # Limits and configuration in Microsoft Flow
@@ -28,26 +28,26 @@ This topic contains information about the current limits and configuration detai
 
 These are limits for a single outgoing request.
 
-#### Timeout
+### Timeout
 
 |Name|Limit|
 |----|----|
 |Request Timeout|120 Seconds|
 
-#### Message size
+### Message size
 
 |Name|Limit|Notes|
 |----|----|----|
 |Message size|100 MB|Not all APIs support the full 100MB. |
 |Expression evaluation limit|131,072 characters|`@concat()`, `@base64()`, `string` can't exceed this limit.|
 
-#### Retry policy
+### Retry policy
 
 |Name|Limit|
 |----|----|
 |Retry attempts|4|
 
-### Run duration and retention
+## Run duration and retention
 
 These are the limits for a single flow run.
 
@@ -58,8 +58,7 @@ These are the limits for a single flow run.
 |Min recurrence interval|1 minute||
 |Max recurrence interval|500 days||
 
-
-### Looping and debatching limits
+## Looping and debatching limits
 
 These are limits for a single flow run.
 
@@ -70,7 +69,7 @@ These are limits for a single flow run.
 |SplitOn items|5,000||
 |ForEach Parallelism|1||
 
-### Definition limits
+## Definition limits
 
 These are limits for a single flow.
 
@@ -82,13 +81,15 @@ These are limits for a single flow.
 |`action`/`trigger` name limit|80||
 |`description` length limit|256||
 
-## Configuration
+## SharePoint limits
 
-### IP address
+There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Microsoft Flow and PowerApps.
+
+## IP address configuration
 
 The IP address from which Microsoft Flow requests are sent depends on the [region](./regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
-#### Logic App Service
+### Logic App Service
 
 Calls made from a flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + OpenAPI. These calls come from the following IP addresses:
 
@@ -102,7 +103,7 @@ Calls made from a flow go directly through the Azure Logic App service. Some exa
 |Japan|13.71.146.140, 13.78.84.187, 13.78.62.130, 13.71.158.3, 13.73.4.207, 13.71.158.120, 40.74.140.173, 40.74.81.13, 40.74.85.215, 40.74.140.4, 104.214.137.243, 138.91.26.45|
 |United States|137.135.106.54, 40.117.99.79, 40.117.100.228, 13.92.98.111, 40.121.91.41, 40.114.82.191, 52.160.90.237, 138.91.188.137, 13.91.252.184, 52.160.92.112, 40.118.244.241, 40.118.241.243|
 
-#### Services
+### Services
 
 Calls made from an API connected through a flow (for example, the SQL API or the SharePoint API) will come from the IP address specified below:
 
@@ -119,6 +120,3 @@ Calls made from an API connected through a flow (for example, the SQL API or the
 
 For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
 
-## Limits for using SharePoint with Microsoft Flow
-
-There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Microsoft Flow and PowerApps.
