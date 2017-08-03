@@ -25,6 +25,7 @@ In this walkthrough, you learn about some of the Microsoft Flow’s popular data
 ## Prerequisites
 
 - Access to Microsoft Flow.
+- A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
 ## Use the compose action
 
@@ -32,11 +33,11 @@ Use the **Data Operations - Compose** (compose) action to save yourself from ent
 
 1. Search for **Compose**, and then select the **Data Operations - Compose** (compose) action.
 
-    ![Choose new or existing](./media/data-operations/search-select-compose.png)
+    ![search for and select the compose action](./media/data-operations/search-select-compose.png)
 
 1. Enter the array into the **Inputs** box you want to reference later:
 
-    ![Choose new or existing](./media/data-operations/add-array-compose.png)
+    ![configure the compose action](./media/data-operations/add-array-compose.png)
 
 >[AZURE.TIP]For easier reference later, rename the **Compose** card by clicking on the text "Compose" on the title bar of the **Compose** card.
 
@@ -50,7 +51,7 @@ When you need to access the contents of the compose action, do so via the **Outp
 
 1. On the **Add dynamic content from the apps and connectors used in this flow**, select the **Output** token that’s under the **Compose** category of the **Dynamic content** tab.
 
-    ![Choose new or existing](./media/data-operations/use-compose-output.png)
+    ![use output from compose action](./media/data-operations/use-compose-output.png)
 
 ## Use the join action
 
@@ -58,19 +59,19 @@ Use the **Data Operations - Join** action (Join) to delimit an array with a sepa
 
 1. Add a new action, search for **Join**, and then select **Data Operations - Join** (join).
 
-    ![Choose new or existing](./media/data-operations/search-select-join.png)
+    ![search for and select the join action](./media/data-operations/search-select-join.png)
 
 1. Enter the array into the **From** box, and then enter the new delimiter that you want to use into the **Join with** box.
 
     Here, I’ve used the semicolon (;) as the new delimiter.
 
-    ![Choose new or existing](./media/data-operations/add-array-join.png)
+    ![configure the join action](./media/data-operations/add-array-join.png)
 
 1. Save your flow, and then run it.
 
 1. After your flow runs, the output of the **Data Operations – Join** action will be:
 
-    ![Choose new or existing](./media/data-operations/join-output.png)
+    ![join output](./media/data-operations/join-output.png)
 
 ## Use the select action
 
@@ -96,13 +97,14 @@ To do this:
 
 1. Add the **Data Operations – Select** (select) action, and then configure it like the following image.
 
-    ![Choose new or existing](./media/data-operations/select-card.png)
+    ![configure the select action](./media/data-operations/select-card.png)
 
-    >[AZURE.NOTE]The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such compose discussed earlier.
+    >[AZURE.TIP]The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as **Compose**, discussed earlier.
+
 
 ## Use the filter array action
 
-Use **Data Operations -- Filter array** (filter array) to reduce the number of objects in an array to a subset that matches the criteria you provide.
+Use **Data Operations - Filter array** (filter array) to reduce the number of objects in an array to a subset that matches the criteria you provide.
 
 >[AZURE.NOTE]Filter array cannot be used to change the shape of the objects in an array. Also, the text on which you filter is case sensitive.
 
@@ -118,7 +120,7 @@ Let's do this.
 
 1. Configure the filter array action like the following image.
 
-    ![Choose new or existing](./media/data-operations/add-configure-filter-array.png)
+    ![configure filter array action](./media/data-operations/add-configure-filter-array.png)
 
 1. Save, and then run your flow.
 
@@ -128,9 +130,10 @@ Let's do this.
 
     ````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````,
 
-the output looks like this array (notice that only objects in which *first* is set to “Deon” are included in the output of the action):
+    the output looks like this array (notice that only objects in which *first* is set to “Deon” are included in the output of the action):
 
-````[ { "first": "Deon", "last": "Herb" } ]````
+    ````[ { "first": "Deon", "last": "Herb" } ]````
+
 
 ## Use the create csv table action
 
@@ -140,14 +143,15 @@ Use the **Data Operations - Create CSV table** (create csv table) to change a JS
 
 1. Find, add, and then configure the **Data Operations - Create CSV table** action to resemble the following image.
 
-    ![Choose new or existing](./media/data-operations/create-csv-table.png)
+    ![configure create csv table action](./media/data-operations/create-csv-table.png)
 
     Note: The **Body** token in this image comes from a **Request / Response – Response** action, however, you could get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly into the **From** box.
 1. Save, and then run your flow.
 
     When your flow runs, the **Create CSV table** output looks like this image:
 
-    ![Choose new or existing](./media/data-operations/create-csv-table-output.png)
+    ![create csv table output](./media/data-operations/create-csv-table-output.png)
+
 
 ## Use the create html table action
 
@@ -155,4 +159,5 @@ Use **Data Operations - Create HTML table** to change a JSON array input into an
 
 To do this, follow the steps in the [create csv table section](#use-the-create-csv-table-action) for a detailed example. Be sure to use the **Data Operations - Create HTML table** action, instead of the **Data Operations - Create CSV table** action.
 
->[AZURE.TIP]If you plan to send the HTML table via email, remember to select "IsHtml" in the email action. 
+>[AZURE.TIP]If you plan to send the HTML table via email, remember to select "IsHtml" in the email action.
+
