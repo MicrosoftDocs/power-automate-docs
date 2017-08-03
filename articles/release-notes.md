@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/06/2017"
+   ms.date="08/02/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -40,24 +40,48 @@
 ## Known issues and resolutions ##
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
 
-1. SQL stored procedures can't be run on on-premises SQL Servers. Only SQL Azure supports stored procedures at this time.
-
-1. Do-until cards have rendering errors that make it difficult to reference content from arrays.
-
 1. Document Metadata isn't returned from triggers on SharePoint document libraries.
 
-1. Flows can't write to Lookup, Choice, People and Groups, and Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
+1. Flows can't write to Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
 
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-08-02
+
+- **Write to Person, Choice and Lookup fields** - 
+- **More action settings** - 
+- **Four new connectors** - 
+
+[Read more and ask questions]() about this release.
+
+### Release 2017-07-27 - Q2 Update for Microsoft Flow
+
+- **Import and export** - 
+- **Use expressions in actions** - 
+- **Grow up to Azure Logic Apps** - 
+- **Admin visibility** - 
+- **Flows in Dynamics 365** - 
+- **Find scenarios more easily** - 
+
+[Read more and ask questions](https://flow.microsoft.com/blog/q2-2017-update/) about this release.
+
+### Release 2017-07-13
+
+- **Improved template publishing** - 
+- **Get events on your Outlook Calendar** - 
+- **New mobile functionality** -
+- **Dynamic dropdowns in Custom connectors** - 
+
+[Read more and ask questions]() about this release.
 
 ### Release 2017-06-28
 
 - **Update your language settings** - You can customize both the Language and Region that Microsoft Flow uses through the Settings menu.
 - **Five new connectors** - Added support for Adobe Creative Cloud, Bing Maps, Bing Search, JotForm and Freshservice.
 - **Configure timeouts** - Change the time long-running actions, such as approvals, run before they "timeout" and the flow continues.
-- **Include comments in Outlook for approvals** - 
+- **Include comments in Outlook for approvals** - When you receive an approval request you can provide comments without ever leaving Outlook.
 - **Custom connector brand colors** - You can now enter a color for your Custom Connectors that will be used for the backgrounds.
 - **Save As for team flows** - Make copies of any flows, including Team flows
 - **Delete flow information** - When you delete a flow, you'll be shown the list of all pending runs for that flow.
