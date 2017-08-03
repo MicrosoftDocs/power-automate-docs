@@ -1,6 +1,6 @@
 <properties
     pageTitle="Understand data operations | Microsoft Flow"
-    description="Learn to perform operations, such as create HTML table, create CSV table, compose, join, selectm and filter array"
+    description="Learn to perform operations, such as create HTML table, create CSV table, compose, join, select, and filter array with Microsoft Flow."
     services=""
     suite="flow"
     documentationCenter="na"
@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="07/27/2017"
+   ms.date="08/02/2017"
    ms.author="deonhe"/>
 
 # Use data operations with Microsoft Flow
@@ -38,6 +38,8 @@ Use the **Data Operations - Compose** (compose) action to save yourself from ent
 
     ![Choose new or existing](./media/data-operations/add-array-compose.png)
 
+>[AZURE.TIP]For easier reference later, rename the **Compose** card by clicking on the text "Compose" on the title bar of the **Compose** card.
+
 When you need to access the contents of the compose action, do so via the **Output** token on the **Add dynamic content from the apps and connectors used in this flow** list by following these steps:
 
 1. Add an action such as **Data Operations – Join**.
@@ -52,7 +54,7 @@ When you need to access the contents of the compose action, do so via the **Outp
 
 ## Use the join action
 
-Use the **Data Operations - Join** action (Join) to delimit an array with a separator of your choice. For example, assume your flow receives a web request that includes the following array of email addresses: ````[d@example.com, k@example.com, dal@example.com]```` that’s delimited with commas (,). However, your email program requires addresses to be separated with a semicolon. To do this, use the **Data Operations - Join** (join) action to change the comma delimiter to a semicolon “;“ by following these steps:
+Use the **Data Operations - Join** action (Join) to delimit an array with a separator of your choice. For example, assume your flow receives a web request that includes the following array of email addresses: ````["d@example.com", "k@example.com", "dal@example.com"]````. However, your email program requires addresses to be a single string that's separated with semicolons. To do this, use the **Data Operations - Join** (join) action to change the comma delimiter to a semicolon “;“ by following these steps:
 
 1. Add a new action, search for **Join**, and then select **Data Operations - Join** (join).
 
@@ -151,4 +153,6 @@ Use the **Data Operations - Create CSV table** (create csv table) to change a JS
 
 Use **Data Operations - Create HTML table** to change a JSON array input into an HTML table. Optionally, you can keep the headers visible in the HTML output.
 
-To do this, follow the steps in the [create csv table section](data-operations.md/#use-the-create-csv-table-action) for a detailed example. Be sure to use the **Data Operations - Create HTML table** action, instead of the **Data Operations - Create CSV table** action.
+To do this, follow the steps in the [create csv table section](#use-the-create-csv-table-action) for a detailed example. Be sure to use the **Data Operations - Create HTML table** action, instead of the **Data Operations - Create CSV table** action.
+
+>[AZURE.TIP]If you plan to send the HTML table via email, remember to select "IsHtml" in the email action. 
