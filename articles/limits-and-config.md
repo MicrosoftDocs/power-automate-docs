@@ -22,9 +22,7 @@
 
 This topic contains information about the current limits and configuration details for flows.
 
-## Limits
-
-### Request limits
+## Request limits
 
 These are limits for a single outgoing request.
 
@@ -47,6 +45,7 @@ These are limits for a single outgoing request.
 |----|----|
 |Retry attempts|4|
 
+
 ## Run duration and retention
 
 These are the limits for a single flow run.
@@ -58,6 +57,7 @@ These are the limits for a single flow run.
 |Min recurrence interval|1 minute||
 |Max recurrence interval|500 days||
 
+
 ## Looping and debatching limits
 
 These are limits for a single flow run.
@@ -68,6 +68,7 @@ These are limits for a single flow run.
 |Until iterations|5,000||
 |SplitOn items|5,000||
 |ForEach Parallelism|1||
+
 
 ## Definition limits
 
@@ -81,9 +82,11 @@ These are limits for a single flow.
 |`action`/`trigger` name limit|80||
 |`description` length limit|256||
 
+
 ## SharePoint limits
 
 There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Microsoft Flow and PowerApps.
+
 
 ## IP address configuration
 
