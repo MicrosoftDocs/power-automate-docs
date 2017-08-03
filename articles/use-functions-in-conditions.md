@@ -28,14 +28,14 @@ You can use any combination of the following logical functions in your condition
 
 Function|Description|Example
 --------|-----------|-------
-|<a href="use-functions-in-conditions.md/#use-the-and-function">and</a>|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This function returns false: <br>and(greater(1,10),equals(0,0))
-|<a href="use-functions-in-conditions.md/#use-the-or-function">or</a>|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This function returns true:<br>or(greater(1,10),equals(0,0))
+|<a href="#use-the-and-function">and</a>|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This function returns false: <br>and(greater(1,10),equals(0,0))
+|<a href="#use-the-or-function">or</a>|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This function returns true:<br>or(greater(1,10),equals(0,0))
 |equals|Returns true if two values are equal.|For example, if parameter1 is someValue, this function returns true:<br>equals(parameters('parameter1'), 'someValue')
-|<a href="use-functions-in-conditions.md/#use-the-less-function">less</a>|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns true:<br>less(10,100)
+|<a href="#use-the-less-function">less</a>|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns true:<br>less(10,100)
 |lessOrEquals|Takes two arguments and returns true if the first argument is less than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns true:<br>lessOrEquals(10,10)
-|<a href="use-functions-in-conditions.md/#use-the-greater-function">greater</a>|Takes two arguments and returns true if the first argument is greater than the second arument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns false:<br>greater(10,10)
+|<a href="#use-the-greater-function">greater</a>|Takes two arguments and returns true if the first argument is greater than the second arument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns false:<br>greater(10,10)
 |greaterOrEquals|Takes two arguments and returns true if the first argument is greater than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This function returns false:<br>greaterOrEquals(10,100)
-|<a href="use-functions-in-conditions.md/#use-the-empty-function">empty</a>|Returns true if the object, array, or string is empty.|This function returns true:<br>empty('')
+|<a href="#use-the-empty-function">empty</a>|Returns true if the object, array, or string is empty.|This function returns true:<br>empty('')
 |not|Takes two arguments and returns true if the arguments are false. <br><b>Note</b>: Both arguments must be Booleans.|This function returns true:<br>not(contains('200 Success','Fail'))
 |if|Returns a specific value if the expression results in true or false.|This function returns "yes":<br>if(equals(1, 1), 'yes', 'no')
 
