@@ -6,7 +6,7 @@ To approve a request:
 
 1. Select **Approve** from the email you receive when an item is added to the SharePoint Online list.
 
-     Note: If you're using an Android or iOS mobile phone with the Microsoft Flow app installed, the Microsoft Flow app launches, otherwise, the approvals center opens in your browser.
+     Note: If you're using a mobile device with the Microsoft Flow app installed, the Microsoft Flow app launches, otherwise, the approvals center opens in your browser.
 
      ![request email](../includes/media/modern-approvals/email-approval-request.png)
 
@@ -44,4 +44,4 @@ To approve a request:
 
      ![success page](../includes/media/modern-approvals/mobile-approval-confirmation.png)
 
-Note: The screens on Android and iOS may differ slightly, however, the functionality is the same on both devices.
+Note: The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
