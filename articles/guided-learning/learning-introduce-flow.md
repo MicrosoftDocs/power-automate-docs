@@ -17,13 +17,13 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/15/2017"
+   ms.date="08/15/2017"
    ms.author="v-joaloh"/>
 
 # Introduction to Microsoft Flow #
 Welcome to Guided Learning for Microsoft Flow. This **self-paced online course** explains Microsoft Flow in a sequential way so that you can build your knowledge from the ground up. The course is designed to provide **guidance in understandable chunks** with lots of **visuals and examples**, following a logical progression to help you learn principles and details.
 
-In this course, you'll learn about Microsoft Flow and its concepts, see how to **build flows**, **manage them**, and **administer them** in your environment. You'll be presented with information and scenarios for a fake company, called Contoso Flooring, but you'll see how to use the same scenarios in your business or your clients' businesses.
+In this course, you'll learn about Microsoft Flow and its concepts, see how to **build flows**, **manage them**, and **administer them** in your environment. You'll be presented with information and scenarios for a fictional company called Contoso Flooring, but you'll see how to use the same scenarios in your business or your clients' businesses.
 
 If you're a beginner with Microsoft Flow, this course will get you going. If you already have some experience, this course will tie concepts together and fill in the gaps. This course is a work in progress, so **please let us know how we're doing** and what other topics you want to see in this course.
 
@@ -36,7 +36,7 @@ When you sign up, you can **connect to more than 100 services** and **manage dat
 
 ![List of services](./media/learning-introduce-flow/services.png)
 
-## What you can do with Microsoft Flow? ##
+## What can you do with Microsoft Flow? ##
 You can use Microsoft Flow to **automate workflows** between your favorite **applications and services**, synchronize files, get notifications, collect data, and more. 
 
 For example, you can **automate** these tasks:
@@ -45,7 +45,7 @@ For example, you can **automate** these tasks:
 - Capture, track, and follow up with new sales leads.
 - Copy files from one service to another.
 - Collect data about your business, and share that information with your team.
-- Automate approvals.
+- Automate approval workflows.
 
 A common use of Microsoft Flow is to **receive notifications**. For example, you can instantly receive an email or a push notification on your phone whenever a sales lead is added to Dynamics 365 or Salesforce.
 
@@ -85,8 +85,8 @@ You can perform these tasks, among others:
 - Review detailed run-history reports.
 - View and filter runs by notification type.
 
-## A brief tour ##
-Let's jump into the tool, and I'll show you around. We have tons of information for you to learn about how to use Microsoft Flow.
+## A brief tour of Microsoft Flow ##
+Let's jump into the tool, and we'll show you around. We have tons of information for you to learn about how to use Microsoft Flow.
 
 ![Start of tour](./media/learning-introduce-flow/start-of-tour.png)
 
@@ -95,7 +95,7 @@ On the home page, there are menus for:
 - **My flows**, where your flows live.
 - **Templates**, which is a great place to start.
 - **Approvals**, where you can automate and streamline your approval process.
-- **Services**, where you can connect from one service to another.
+- **Connectors** (formerly **Services**), where you can connect from one service to another.
 - **Learn**, where you can gain information that will help you ramp up quickly on Microsoft Flow.
 
 ![What you can do](./media/learning-introduce-flow/what-you-can-do.png)
