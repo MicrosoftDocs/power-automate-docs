@@ -27,13 +27,8 @@ Welcome back to Guided Learning for Microsoft Flow. In this lesson, you will see
 Getting started with Microsoft Flow is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  
 
 ## Microsoft Flow templates ##
-Take a look at the [ Microsoft Flow website](https://ms.flow.microsoft.com).
- 
-Open the **Templates** menu.
+Take a look at the [ Microsoft Flow website](https://ms.flow.microsoft.com), and open the **Templates** menu. As you scroll through the list, you see that Microsoft Flow allows you to connect to many services.
 
-As you scroll through the list, you see that Microsoft Flow allows you to connect to many services.
-
- 
 ![Flow Website -> Template list](./media/learning-create-a-flow/template-list.png)
 
 ## Choose a template ##
@@ -51,8 +46,7 @@ This is one of our **one click** templates, where you only answer relevant quest
 
 On the template graphic, there is a **description** of what the template **does and needs** to succeed.
 
-You are asked to **provide credentials** for the **Office 365 Outlook** and **SharePoint** services. 
-If you use both services regularly, you will already be signed into them.
+You are asked to **provide credentials** for the **Office 365 Outlook** and **SharePoint** services. If you use both services regularly, you will already be signed into them.
 
 ![Save Office 365 email](./media/learning-create-a-flow/save-flow-office-description.png)
 

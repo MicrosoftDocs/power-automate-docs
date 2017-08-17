@@ -28,9 +28,7 @@ First, you’ll need to **download** and **install** the Microsoft Flow app from
 
 ![Mobile app](./media/learning-mobile-app/open-mobile-app.png)
 
-Once it's installed, **open it** and **sign in**.
-
-When you open the app, you land on the **Activity Feed**.
+Once it's installed, **open it** and **sign in**. When you open the app, you land on the **Activity Feed**.
 
 The Activity Feed is the spot to see what’s happening with your flows, **while you are on the go** and may not have **access to your computer** for a full experience.
 
@@ -67,29 +65,25 @@ To see how that works, we'll use the **Send myself a reminder in 10 minutes** bu
 
     ![Create complete](./media/learning-mobile-app/create-complete.png)
 
-The flow is **saved**.
+    The flow is **saved**.
 
-![Completed reminder](./media/learning-mobile-app/complete-reminder.png)
+    ![Completed reminder](./media/learning-mobile-app/complete-reminder.png)
 
-You can see it in **your collection**. 
+1. Tap **Buttons** to see the new flow. 
 
-![In your collection](./media/learning-mobile-app/here-it-is.png)
+    ![In our buttons](./media/learning-mobile-app/button-send-reminder.png)
 
-You can also see it in **your buttons**. 
+1. Go ahead and tap it, and in 10 minutes, you'll **get a reminder**.
 
-![In our buttons](./media/learning-mobile-app/button-send-reminder.png)
+    ![In your buttons](./media/learning-mobile-app/in-your-collection.png)
 
-Go ahead and tap it, and in 10 minutes, you'll **get a reminder**.
-
-![In your buttons](./media/learning-mobile-app/in-your-collection.png)
-
-It's simple to **add additional buttons** to your collection.
+It's simple to add additional buttons to your collection.
 
 ## Modify or delete a flow ##
 
 If you decide that you want to modify or delete one of your flows, it's easy.
 
-1. Tap the **Flows** button, which is essentially the **mobile management area** for your flows.
+1. Tap the **Flows** button, which is essentially the mobile management area for your flows.
 
     ![Click flows icon](./media/learning-mobile-app/click-flows-button.png)
 
@@ -99,13 +93,13 @@ If you decide that you want to modify or delete one of your flows, it's easy.
 
     You can see that there are a few options:
   
-    - To enable or disable the flow, **tap the Enable flow** toggle switch.
+    - To enable or disable the flow, tap the **Enable flow** toggle switch.
 
-    - You can always **edit the flow**, in case you want to **make it useful** to yourself again. 
+    - You can always edit the flow, in case you want to make it useful to yourself again. 
 
-    - And you can see the **run history** of the flow, to get an idea of its **successful and unsuccessful** runs.
+    - And you can see the run history of the flow, to get an idea of its successful and unsuccessful runs.
 
-    - You can also delete it by tapping the **Delete flow** button.
+    - You can also delete the flow by tapping the **Delete flow** button.
 
     ![Disable or delete](./media/learning-mobile-app/disable-delete.png)
 
