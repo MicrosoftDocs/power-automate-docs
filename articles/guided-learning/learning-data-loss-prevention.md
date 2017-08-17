@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="01/24/2016"
+   ms.date="08/16/2017"
    ms.author="deonhe"/>
 
 # All about Data loss prevention (DLP) policies
@@ -40,15 +40,15 @@ A DLP policy is simply a named rule that places each service into one of two mut
 
 |**Data group name**|**Description of data group**|
 |-----|-----|
-|**Business data only**|All services in this group can share data among themselves. They cannot share data with the no business data allowed data group.|
-|**No Business data allowed**|All services in this group can share data among themselves. They cannot share data with the business data only data group.|
+|**Business data only**|All services in this group can share data among themselves. They cannot share data with the **no business data allowed** data group.|
+|**No Business data allowed**|All services in this group can share data among themselves. They cannot share data with the **business data only** data group.|
 
-**Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the business data only data group.
+**Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the **business data only** data group.
   
 ## Here's what you need to create a DLP
 
-- Access to the Flow [admin center](https://admin.flow.microsoft.com)  
-- An account with the environment admin role  
+- Access to the Microsoft Flow [admin center](https://admin.flow.microsoft.com)  
+- An account in the Environment Admin role  
 - An environment with users assigned to it  
 
 ## Create a DLP policy
@@ -65,9 +65,5 @@ There is also a more [detailed walk-through](../prevent-data-loss.md) on DLP pol
 - If you were to create a policy that restricts flows to share business data only among SharePoint, Office 365 users, Office 365 Outlook, OneDrive for Business, Dynamics 365, SQL Server and Salesforce, it would look like this:  
 ![](./media/learning-data-loss-prevention/a-few-business-centric-services.png)  
 - Here's what it would look like if you decided to create a policy to not allow any members of a specific environment to create a flow that shares SharePoint data. Notice that SharePoint is the only service in the **business data only** data group:  
-![business data only](./media/learning-data-loss-prevention/sharepoint-only-no-sharing-guided-learning.png)  
-
-## Next steps  
-- [Learning - Flow parts](./learning-flow-parts.md)
-- [Learning - Introduction to Flow](./learning-introducing-flow.md)
+![business data only](./media/learning-data-loss-prevention/sharepoint-only-no-sharing-guided-learning.png)
 

@@ -17,171 +17,156 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/20/2016"
+   ms.date="08/16/2017"
    ms.author="v-joaloh"/>
 
 # Create Push Notifications in Microsoft Flow #
 
-This session of **Guided Learning** for Microsoft Flow will teach you how to create push notifications. For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** will store their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
+This topic teaches you how to create push notifications. For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
 
 ## Connect Microsoft Flow Services
 
-If you are using a service that's new to you, then you'll need to connect the new service. 
+In this topic, you'll be using the **SharePoint** and **Twitter** services. If you are using a service that's new to you, then you'll first need to connect to the new service. 
 
-In this lesson, you'll be using the **SharePoint** and **Twitter** services.
+1. In Microsoft Flow, select the **gear icon**, then **Connections**,
 
-In Microsoft Flow, select the **Gear icon**, and **Connections**,
+    ![Get connection](./media/learning-push-notifications/2-get-connection.png) 
 
-![Get connection](./media/learning-push-notifications/2-get-connection.png) 
+1. Select **+ Create connection**.
 
-and **+ Create connection**.
+    ![Create connection](./media/learning-push-notifications/3-create-connection.png) 
 
-![Create connection](./media/learning-push-notifications/3-create-connection.png) 
+1. Scroll down the list, find Twitter, and select **+**.
 
-Scroll down the list, **find Twitter**, and select **the +** 
+    ![Click plus](./media/learning-push-notifications/4-click-plus.png)
 
-![Click plus](./media/learning-push-notifications/4-click-plus.png)
+1. To authorize a Twitter account, enter your username or email, and your password, and then select **Authorize app**.
 
-To authorize a Twitter account, enter **your Username or email**, **your password** and select **Authorize app**.
+    ![Create ID and password](./media/learning-push-notifications/5-create-id-pswd.png)
 
-![Create id-pswd](./media/learning-push-notifications/5-create-id-pswd.png)
+1. To check your connections,  select the **gear icon** and **Connections**.
 
-To check your connections,  select the **gear icon** > **Connections** and ... 
+    ![My connections](./media/learning-push-notifications/6-my-connections.png)
 
-![My connections](./media/learning-push-notifications/6-my-connections.png)
+    You should see your new Twitter connection and any other connections you have created. 
 
-You should see a list of **your connections with Twitter** there. 
-
-![Twitter connect](./media/learning-push-notifications/7-twitter-connection.png)
+    ![Twitter connect](./media/learning-push-notifications/7-twitter-connection.png)
 
 
 ## Build a SharePoint List ##
 
-Use the SharePoint service to build a list for Contoso.
+The first thing you need to do is create a new SharePoint Online list for Contoso Flooring. 
 
-The first thing you need to do is create a new SharePoint list. 
+1. In SharePoint Online, select **New**, and then **List**.
 
-Select **New**, and then **List**.
+    ![Create new list](./media/learning-push-notifications/1-new-list.png)
 
-![Create new list](./media/learning-push-notifications/1-new-list.png)
+1. Name the list **Contoso Tweets**. 
 
-Go ahead and name it **Contoso Tweets**. 
-
-Clear the **Show in site navigation** check box, and press **Create**.
+1. Clear the **Show in site navigation** check box, and select **Create**.
  
+    ![Create list](./media/learning-push-notifications/2-name-create-list.png)
 
-![Create list](./media/learning-push-notifications/2-name-create-list.png)
+    When you select **Create**, SharePoint takes you to your new list.
 
-When you press Create, SharePoint drops you into your new list.
+1. By default, the list has a single column - **Title**. Add another column and name it **Tweet Contents**. The things that you’ll say in your tweets will go here. 
 
-By default you are given **one column with title**.
+    1. Select the plus sign, then select **More...**
 
-Add another column and name it **Tweet Contents**. The things that you’ll say in the tweets will go here. 
+        ![Create list](./media/learning-push-notifications/3-add-more-column-types.png)
 
-Press the plus sign and move down to **More Column Types...**
+    1. Select **Multiple lines of text**, then select **OK**.
 
-![Create list](./media/learning-push-notifications/3-add-more-column-types.png)
+        ![Create list](./media/learning-push-notifications/4-add-column.png)
 
-There, check **Multiple lines of text**. 
+1. Add a column for the tweet date and time, and name it **Tweet Date**.
 
-![Create list](./media/learning-push-notifications/4-add-column.png)
+    1. As with **Tweet Contents** above, select the plus sign, then select **More...**
 
+        ![Date time column](./media/learning-push-notifications/5-date-time-col.png)
 
-Add a column for the tweet **Date and Time**, and name it **Tweet Date**.
+    1. Scroll down to **Date and Time Format**. Select **Date & Time**, so that both are included.
 
-As with **Tweet Contents** above, press the plus sign and move down to **More Column Types...**
+        ![Date and time](./media/learning-push-notifications/6-date-time-must-do.png)
 
-![Date time column](./media/learning-push-notifications/5-date-time-col.png)
-
-**Important!** Scroll down to **Date and Time Format:**, you want to select **Date & Time**, so that both are included.
-
-![Date and time](./media/learning-push-notifications/6-date-time-must-do.png)
-
-Click **OK**.
-
-![Contoso tweets](./media/learning-push-notifications/7-contoso-tweets.png)
-
-You see the **Contoso Tweets** list in your SharePoint site, and you can add new items or edit the list.
+    1. Select **OK**. You see the **Contoso Tweets** list in your SharePoint site, and you can add new items to the list.
 
 ## Build the flow ##
 
 Your list is built, so now you can build the flow.
 
-In Microsoft Flow, go to **My Flows**, and press **Create from blank**.
+### Choose a trigger ###
 
-![Create from blank](./media/learning-push-notifications/8-create-from-blank.png)
+1. In Microsoft Flow, go to **My Flows**, then select **Create from blank**.
 
-Make the trigger a SharePoint list – click the **SharePoint connector**.
+    ![Create from blank](./media/learning-push-notifications/8-create-from-blank.png)
 
-If its not there in your list, type **SharePoint** in the search bar to bring up the connector.
+1. Select **When an item is created**.
 
-![Add trigger](./media/learning-push-notifications/9-add-trigger.png)
+    ![Add trigger](./media/learning-push-notifications/9-add-trigger.png)
 
-## Choose a trigger ##
-In the list, select **SharePoint - When a new item is created**. 
+    We want our trigger to fire when a new row is added with tweet content.
 
-We want our trigger to be when a **new row is added** with Tweet content, the **flow checks for it** automatically.
+1. Select your SharePoint site, then select the list that you set up earlier, **Contoso Tweets**.
 
-![New item created](./media/learning-push-notifications/10-new-item-created.png)
+    ![New item created](./media/learning-push-notifications/11-set-trigger.png)
 
-Pick your SharePoint site -- If it **won’t load**  for you --  **enter a part** of the address, and click **OK**. 
+Okay, that’s it for the trigger.
 
-You can see the list that you set up earlier, **Contoso Tweets**.
+### Add an action to delay posting ###
 
+1. Select **+ New step**, then select **Add an action**. 
 
-![New item created](./media/learning-push-notifications/11-set-trigger.png)
+    ![Add step and action](./media/learning-push-notifications/12-add-step-and-action.png)
 
-Okay, that’s it – the trigger is done.
+1. Under the **Schedule** service, select **Delay until**. 
 
- ## Choose a new action ##
+    ![Delay until](./media/learning-push-notifications/13-delay-until-schedule.png)  
 
-Select **+ New step**, and **Add an action**. 
+1. Set the delay value.
 
-![Add step and action](./media/learning-push-notifications/12-add-step-and-action.png)
+    1. Click or tap in the **Timestamp** field. 
 
-Click, **Delay until**. 
+    1. When the dynamic content box opens, scroll down to the bottom, and you see the three columns from the SharePoint list: **Title**,  **Tweet Date**, and **Tweet Content**.
 
-You'll see, it lives under the Schedule service, and the action itself is called Delay until.
+    1. Select **Tweet Date**. 
 
-![Delay until](./media/learning-push-notifications/13-delay-until-schedule.png)  
+        ![Delay until timestamp](./media/learning-push-notifications/14-delay-until-timestamp.png)
 
-When the dynamic content pops up, scroll down to the bottom, and you see that there are the three columns you set up in the list, Title,  Tweet Date, and Tweet Content. Use the dynamic content of **Tweet Date** for the **Delay until** schedule. 
+        Now, when someone adds something to your SharePoint list, it will delay any action until the date and time you set in the **Tweet Date** column.
 
-![Delay until timestamp](./media/learning-push-notifications/14-delay-until-timestamp.png)
+        ![Dynamic time stamp](./media/learning-push-notifications/15-dynamic-timestamp.png)
 
-Now, when someone **adds something** to your SharePoint list, it will **delay any action** until the Date and Time you set in the **Tweet Date** column.
+### Add an action to post a Tweet ### 
 
-![Dynamic time stamp](./media/learning-push-notifications/15-dynamic-timestamp.png) 
+Now you'll add another action for the flow to take at the date and time specified in the **Tweet Date** column.
 
-Add **another action** for the flow to take **at the date and time** you have it delayed until.
+1. Select **+ New step**, **Add an action**, then search for **Twitter**.
 
-![Add tweet](./media/learning-push-notifications/16-add-tweet.png) 
+    ![Add tweet](./media/learning-push-notifications/16-add-tweet.png) 
 
-Now, you'll add a final step which will use the Twitter service.
+1. Choose the action, **Twitter - Post a tweet**.
 
-Choose the action, **Twitter - Post a tweet**.
+    ![Post a tweet](./media/learning-push-notifications/17-post-tweet.png) 
 
-![Post a tweet](./media/learning-push-notifications/17-post-tweet.png) 
-Open the dynamic content again, and select **Tweet Content**. 
+1. Click or tap in the **Tweet text** field, and in the dynamic content box, select **Tweet Contents**. Here's the sequence you have created. 
 
-Here's the sequence you have created. 
+    ![Tweet date content](./media/learning-push-notifications/18-tweet-date-content.png)
 
-When a **new item is created** in your SharePoint list, you will **delay it until** the pre-set date, and once that date is met, you'll **post it** with the Tweet Content column that you previously set up.
+1. Select **Create flow...**
 
-![Tweet date content](./media/learning-push-notifications/18-tweet-date-content.png)
+    ![Create flow](./media/learning-push-notifications/19-tiny-create.png) 
 
-Select **Create flow...**
+1. Select **Done**.
 
-![Create flow](./media/learning-push-notifications/19-tiny-create.png) 
+    ![Click done](./media/learning-push-notifications/19-click-done.png)
 
-Click **Done**,
+    Now the flow is complete.
 
-![Click done](./media/learning-push-notifications/19-click-done.png)
+    ![Flow is done](./media/learning-push-notifications/20-flow-is-done.png)
 
-and the flow is done.
-
-![Flow is done](./media/learning-push-notifications/20-flow-is-done.png)
+    When a new item is created in your SharePoint list, the flow will delay posting until the pre-set date. When that date is met, the flow will post to Twitter with the text from the **Tweet Content** column in your list.
 
 ## Next lesson ##
 
-In the next lesson, you'll learn how to **run flows on a schedule** using a trigger called **Recurrence**. You'll also create a sample flow for the Contoso Flooring Marketing team.
+In the next lesson, you'll learn how to **run flows on a schedule** using a trigger called **Recurrence**.

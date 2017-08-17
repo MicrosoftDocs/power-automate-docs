@@ -17,7 +17,7 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="11/22/2016"
+   ms.date="08/16/2017"
    ms.author="deonhe"/>
 
 # Copying files

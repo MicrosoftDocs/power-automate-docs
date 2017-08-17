@@ -17,98 +17,94 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="06/08/2017"
+   ms.date="08/16/2017"
    ms.author="v-joaloh"/>
 
 # Create a button flow #
 
-Welcome to Guided Learning, where you will learn how to **build a button flow** for the Contoso Flooring Company. 
+In this topic, you will learn how to **build a button flow** for the Contoso Flooring Company. 
 
-Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members of the team.  
+Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members on a team.  
 
-  
-First, go to the [ Microsoft Flow website](https://ms.flow.microsoft.com/en-us/) and sign-in.
+1. First, go to the [Microsoft Flow website](https://ms.flow.microsoft.com) and sign-in.
 
-Once you are done with the sign-in, select **My Flows**, and then **Create from blank**.
+1. Once you are done with the sign-in, select **My Flows**, and then **Create from blank**.
 
-![Create from blank](./media/learning-create-button-flow/2-create-from-blank.png)
+    ![Create from blank](./media/learning-create-button-flow/2-create-from-blank.png)
 
-The first thing you'll need is a **trigger**. The **button flow** is a convenient one to use. 
+    The first thing you'll need is a trigger. The button flow is a convenient one to use. 
 
-If it's not there in your list, enter **button in the top field**, and it will pop up for you. 
+1. If it's not there in your list, select **Search hundreds of connectors and triggers** at the bottom of the page, enter **button**, and it will pop up for you. 
 
-Select **Flow button for mobile**.
+1. Select **Flow button for mobile**.
 
-![Search button](./media/learning-create-button-flow/3-button-flow.png) 
+    ![Search button](./media/learning-create-button-flow/3-button-flow.png) 
 
-Select **Flow button for mobile -- Manually Trigger a flow**.
+1. Select **Flow button for mobile - Manually trigger a flow**.
 
-![Select manual trigger](./media/learning-create-button-flow/4-press-it.png)
+    ![Select manual trigger](./media/learning-create-button-flow/4-press-it.png)
 
-On the input screen, enter **input text**,
+1. On the input screen, select **Add input text**,
 
-![Add input](./media/learning-create-button-flow/5-add-input.png)
+    ![Add input](./media/learning-create-button-flow/5-add-input.png)
 
-and enter **Delivery Arrived** for a title.
+1. Enter **Contoso Flooring** in the first text box, and **Warehouse delivery email** in the second text box.
 
-![Add input](./media/learning-create-button-flow/6-text-for-flow.png)
+    ![Add input](./media/learning-create-button-flow/6-text-for-flow.png)
 
-Select **New step**, 
+1. Select **New step**. 
 
-![Input text](./media/learning-create-button-flow/7-input-description.png)
+    ![Input text](./media/learning-create-button-flow/7-input-description.png)
 
-and then select **Add an action**. 
+1. Select **Add an action**. 
 
-![Add action](./media/learning-create-button-flow/8-add-an-action.png)
+    ![Add action](./media/learning-create-button-flow/8-add-an-action.png)
 
-If you didn't have it pre-populated, just **search outlook**, and there it is.
+1. Select the **Office 365 Outlook** connector. If it isn't there, search for **outlook**.
 
-![Search outlook](./media/learning-create-button-flow/9-search-outlook.png)
+    ![Search outlook](./media/learning-create-button-flow/9-search-outlook.png)
 
+1. Select **Office 365 Outlook - Send an email**.
 
-The action that you want to use is **send an email**.
+    ![Send email](./media/learning-create-button-flow/10-send-email.png)
 
-When the **button is pressed**, an email is sent to the **whole Contoso Warehouse team**, no matter where they are in the building, letting them know that the delivery has arrived.
+    When the button is pressed, an email is sent to the whole Contoso Warehouse team, no matter where they are in the building, letting them know that the delivery has arrived.
 
-![Send email](./media/learning-create-button-flow/10-send-email.png)
+1. Expand the fields and customize the email to work for Contoso Flooring.
 
-Go ahead and **expand the fields** and customize this to work for Contoso flooring.
+    1. In the **To** field, enter an email address that is valid in your organization.
 
-In the To field, type the Contoso Warehouse distribution list, **Warehouse@Contoso.com**.
+    1. In the **Subject** field, enter **Delivery Arrived**. 
 
-Make the subject of the email say, **Delivery Arrived**. 
+    1. To the right, notice a **Dynamic content** box popped up. To show, in the subject line, the exact date and time the button was pressed, select **Date** and **Timestamp**. 
 
-To the right, notice a **dynamic content** box popped up. To show, in the Subject line, the exact date and time the **button was pressed**, click **Date** and **Timestamp**. 
+        ![Email date time](./media/learning-create-button-flow/11-email-date-time.png)
 
-![Email date time](./media/learning-create-button-flow/11-email-date-time.png)
+1. Now, enter a simple **Body** for the email saying something like, **Warehouse Team, please come to the unload bay as todays delivery has arrived**.
 
+1. Select **Create flow** to save the flow.
 
-Now, type a simple **Body** of the email saying something like, **Warehouse Team, please come to the unload bay as todays delivery has arrived**.
-
-Press **Create flow**, to send the email.
-
-![Create flow](./media/learning-create-button-flow/12-create-flow.png)
-
+    ![Create flow](./media/learning-create-button-flow/12-create-flow.png)
 
 ## Create a team flow ##
 
-You can use this button flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if she leaves the company? You want to make sure that this flow keeps running. To do that,  **add co-owners**.
+You can use this button flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if she leaves the company? You want to make sure that this flow keeps running. To do that,  add co-owners.
 
-Click the **team icon** on your flow to add a co-owner.
+1. Select the **team icon** on your flow to add a co-owner.
 
-![Create team flow](./media/learning-create-button-flow/13-create-team-flow.png) 
+    ![Create team flow](./media/learning-create-button-flow/13-create-team-flow.png) 
 
-Enter **names**, **email addresses**, or **user groups** to add co-owners.
+1. Enter names, email addresses, or user groups to add co-owners.
 
-![Add co-owners](./media/learning-create-button-flow/14-add-co-owners.png)
+    ![Add co-owners](./media/learning-create-button-flow/14-add-co-owners.png)
 
-To **remove co-owners**, click the trash can to the right of their name.
+1. To remove co-owners, select the trash can to the right of their name.
 
-![Remove co-owners](./media/learning-create-button-flow/15-remove-co-owners.png)
+    ![Remove co-owners](./media/learning-create-button-flow/15-remove-co-owners.png)
 
-Verify you want to **Remove this owner**.
+1. Select **Remove this owner** to finish the removal.
 
-![Remove co-owners](./media/learning-create-button-flow/16-agree-to-remove.png)
+    ![Remove co-owners](./media/learning-create-button-flow/16-agree-to-remove.png)
 
 ## Summary ##
 
@@ -120,4 +116,4 @@ The worker then shared that button out to her team, so others could trigger the 
 
 ## Next lesson ##
 
-Check out the next lesson to see how to create a flow that uses **push notifications**. 
+Check out the next lesson to see how to create a flow that uses **push notifications**.
