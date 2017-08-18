@@ -2,11 +2,11 @@
 
 1. Enter **Send email** into the search box of the **Choose an action** card.
 
-     ![search for email action](../includes/media/modern-approvals/search-send-email-no.png)
+    ![search for email action](../includes/media/modern-approvals/search-send-email-no.png)
 
 1. Select the **Office 365 Outlook - Send an email** action.
 
-     ![select the send email action](../includes/media/modern-approvals/select-send-email-no.png)
+    ![select the send email action](../includes/media/modern-approvals/select-send-email-no.png)
 
 1. Configure the email card to suit your needs.
 

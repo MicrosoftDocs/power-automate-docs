@@ -48,19 +48,19 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
 1. Select the people icon for the flow that you want to modify:
 
-     ![team icon](./media/create-team-flows/addowner1.png)
+    ![team icon](./media/create-team-flows/addowner1.png)
 
 1. Enter the name, email address, or group name for the person or group that you want to add as an owner:
 
-     ![search for the user](./media/create-team-flows/addowner2.png)
+    ![search for the user](./media/create-team-flows/addowner2.png)
 
 1. In the list that appears, select the user whom you want to make an owner:
 
-     ![select the user](./media/create-team-flows/addowner3.png)
+    ![select the user](./media/create-team-flows/addowner3.png)
 
      The user or group you've selected becomes an owner of the flow:
 
-     ![new owner](./media/create-team-flows/addowner4.png)
+    ![new owner](./media/create-team-flows/addowner4.png)
 
      Congratulations &mdash; your team flow has been created!
 
@@ -70,19 +70,19 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 
 1. Select the people icon for the flow that you want to modify:
 
-     ![select people icon](./media/create-team-flows/removeowner1.png)
+    ![select people icon](./media/create-team-flows/removeowner1.png)
 
 1. Select the **Delete** icon for the owner that you want to remove:
 
-     ![select delete](./media/create-team-flows/removeowner2.png)
+    ![select delete](./media/create-team-flows/removeowner2.png)
 
 1. On the confirmation dialog box, select **Remove this owner**:
 
-     ![confirm removal](./media/create-team-flows/removeowner3.png)
+    ![confirm removal](./media/create-team-flows/removeowner3.png)
 
 1. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow:
 
-     ![user removed](./media/create-team-flows/removeowner4.png)
+    ![user removed](./media/create-team-flows/removeowner4.png)
 
 ## Embedded and other connections ##
 

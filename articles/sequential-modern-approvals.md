@@ -120,7 +120,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 1. When you're done, the card should resemble this image:
 
-     ![configure the approval](./media/sequential-modern-approvals/provide-approval-config-info.png)
+    ![configure the approval](./media/sequential-modern-approvals/provide-approval-config-info.png)
 
 ## Add the final approval condition
 
@@ -140,7 +140,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 1. When you're finished, the card should resemble this image:
 
-     ![update item configuration](./media/sequential-modern-approvals/configure-update-item-approved.png)
+    ![update item configuration](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
 ## Send email with pre-approval rejection
 
