@@ -60,15 +60,15 @@ Let's get started creating our flow.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
 
-     ![sign in](./media/flic-button-flows/sign-into-flow.png)
+    ![sign in](./media/flic-button-flows/sign-into-flow.png)
 
 1. Enter **flic** into the search box, and then select the search icon.
 
-     ![search flic](./media/flic-button-flows/search-flic.png)
+    ![search flic](./media/flic-button-flows/search-flic.png)
 
 1. Select the **Track your working hours with Flic smart button** template.
 
-     ![select template](./media/flic-button-flows/flic-templates.png)
+    ![select template](./media/flic-button-flows/flic-templates.png)
 
 ### Create a spreadsheet in Google Sheets
 
@@ -90,17 +90,17 @@ Let's get started creating our flow.
 
      **Continue** is enabled after you sign into all required services for the template.
 
-     ![provide credentials](./media/flic-button-flows/flic-template-services-sign-in.png)
+    ![provide credentials](./media/flic-button-flows/flic-template-services-sign-in.png)
 
 1. Enter **flic** into the search box, and then select the **Flic - When a Flic is pressed** trigger.
 
-     ![search for flic trigger](./media/flic-button-flows/flic-search-trigger.png)
+    ![search for flic trigger](./media/flic-button-flows/flic-search-trigger.png)
 
 1. Select the Flic you want to use from the **Flic button** list on the **Flic - When a Flic is pressed** card.
 
 1. Select **click** from the **Events** list to indicate that you want to trigger the flow when the Flic is pressed once.
 
-     ![select flic action](./media/flic-button-flows/select-flic.png)
+    ![select flic action](./media/flic-button-flows/select-flic.png)
 
    Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow.
 
@@ -122,19 +122,19 @@ Let's get started creating our flow.
 
 1. Select the **Timestamp** box, and then select the **Click time** token.
 
-     ![configure Google Sheets data](./media/flic-button-flows/flick-insert-row-card.png)
+    ![configure Google Sheets data](./media/flic-button-flows/flick-insert-row-card.png)
 
 ### Confirm the email settings are correct
 
 1. Confirm the **Send me an email notification** card looks like this screenshot.
 
-     ![confirm email notification](./media/flic-button-flows/email-settings.png)
+    ![confirm email notification](./media/flic-button-flows/email-settings.png)
 
 ### Save your flow and test it
 
 1. Give your flow a name, and then save it.
 
-     ![save your flow](./media/flic-button-flows/save.png)
+    ![save your flow](./media/flic-button-flows/save.png)
 
 If you've followed along, pressing the Flic once triggers the flow. The flow then records the click type and the current time in the sheet and then sends an email to you.
 
@@ -142,15 +142,15 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
 
 1. Open your worksheet in Google Sheets. You should see the **ClickType** and the **Timestamp** columns populated with the "click" and the time, respectively.
 
-     ![see run results](./media/flic-button-flows/flic-google-sheet-after-run.png)
+    ![see run results](./media/flic-button-flows/flic-google-sheet-after-run.png)
 
 1. You can also see the results of the run from the Microsoft Flow website or from the Microsoft Flow mobile app. Here's a screenshot of my test run.
 
-     ![save your flow](./media/flic-button-flows/flic-test-run-results-portal.png)
+    ![save your flow](./media/flic-button-flows/flic-test-run-results-portal.png)
 
 1. Here's what the body of the notification email that I received from the run of the flow looks like.
 
-     ![save your flow](./media/flic-button-flows/flic-email-body.png)
+    ![save your flow](./media/flic-button-flows/flic-email-body.png)
 
 For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic is pressed.
 

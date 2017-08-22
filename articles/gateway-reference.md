@@ -77,13 +77,13 @@ Related considerations:
 
     - To configure a new gateway, enter a name in the **New on-premises data gateway name** box, enter a recovery key in the **Recovery key** box, enter the same recovery key into the **Confirm recovery key** box. Select **Configure**, and then select **Close**.
 
-        ![Configure a new gateway](./media/gateway-reference/configure-new.png)
+    ![Configure a new gateway](./media/gateway-reference/configure-new.png)
 
-        Specify a recovery key that contains at least eight characters, and keep it in a safe place. You'll need this key if you want to migrate, restore, or take over its gateway.
+    Specify a recovery key that contains at least eight characters, and keep it in a safe place. You'll need this key if you want to migrate, restore, or take over its gateway.
 
     - To migrate, restore, or take over an existing gateway, provide the name of the gateway and its recovery key, select **Configure**, and then follow any additional prompts.
 
-        ![Recover an existing gateway](./media/gateway-reference/recover-existing.png)
+    ![Recover an existing gateway](./media/gateway-reference/recover-existing.png)
 
 ## Restart the gateway ##
 

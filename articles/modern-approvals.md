@@ -70,19 +70,19 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Select **New step**, and then select **Add an action**.
 
-     ![new step](./media/modern-approvals/select-sharepoint-add-action.png)
+    ![new step](./media/modern-approvals/select-sharepoint-add-action.png)
 
 1. Enter **profile** into the **Choose an action** search box.
 
-     ![search for profile](./media/modern-approvals/search-for-profile.png)
+    ![search for profile](./media/modern-approvals/search-for-profile.png)
 
 1. Find, and then select the **Office 365 Users - Get my profile** action.
 
-     ![select office users](./media/modern-approvals/select-my-profile.png)
+    ![select office users](./media/modern-approvals/select-my-profile.png)
 
 1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
 
-     ![save flow](./media/modern-approvals/save.png)
+    ![save flow](./media/modern-approvals/save.png)
 
 ## Add an approval action
 
@@ -126,7 +126,7 @@ Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
 
 1. Select **Update flow** to save the work we've done.
 
-     ![select update action](./media/modern-approvals/update.png)
+    ![select update action](./media/modern-approvals/update.png)
 
 If you've followed along, your flow should resemble this screenshot:
 

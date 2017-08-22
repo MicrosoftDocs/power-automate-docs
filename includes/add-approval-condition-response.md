@@ -1,6 +1,6 @@
 1. Select **New step**, and then select **Add a condition**.
 
-     ![add condition](../includes/media/modern-approvals/add-response-condition.png)
+    ![add condition](../includes/media/modern-approvals/add-response-condition.png)
 
 1. Select the **Object Name** box, and then enter **response** into the search box on the **Add dynamic content from the apps and services used in this flow** card.
 
