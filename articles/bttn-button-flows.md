@@ -101,7 +101,7 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 1. Give your flow a name, and then select **Create flow** to save it.
 
-     ![save flow](./media/bttn-button-flows/save.png)
+    ![save flow](./media/bttn-button-flows/save.png)
 
 ## Test your flow and confirm results
 
