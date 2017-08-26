@@ -56,19 +56,19 @@ Ok, let's get started:
 
      In this example I'm interested in any email that has the word "lottery" in the subject.
 
-      ![advanced options](./media/email-triggers/email-triggers-subject-text.png)
+    ![advanced options](./media/email-triggers/email-triggers-subject-text.png)
 
 [AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email that matches the **Subject Filter** you specified earlier arrives.
 
-     ![notification details](./media/email-triggers/email-triggers-4.png)
+    ![notification details](./media/email-triggers/email-triggers-4.png)
 
 [AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-     ![save flow](./media/email-triggers/email-triggers-subject-notification.png)
+    ![save flow](./media/email-triggers/email-triggers-subject-notification.png)
 
 Congratulations, you receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
@@ -82,19 +82,19 @@ In this walkthrough, we create a flow that sends a push notification to your mob
 
      Your flow takes action on any emails sent from this address.
 
-      ![email property](./media/email-triggers/email-triggers-from.png)
+    ![email property](./media/email-triggers/email-triggers-from.png)
 
 [AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address you entered earlier.
 
-     ![notification details](./media/email-triggers/email-triggers-sender-notification.png)
+    ![notification details](./media/email-triggers/email-triggers-sender-notification.png)
 
 [AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-     ![save flow](./media/email-triggers/email-triggers-sender-5.png)
+    ![save flow](./media/email-triggers/email-triggers-sender-5.png)
 
 ## Trigger a flow when emails arrive in a specific folder
 
@@ -108,18 +108,18 @@ Let's get started:
 
 1. Select the folder to which you've created the rule to route specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
 
-     ![select folder](./media/email-triggers/email-triggers-2.png)
+    ![select folder](./media/email-triggers/email-triggers-2.png)
 
 [AZURE.INCLUDE [add-mobile-notification-action](../includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email arrives into the folder you've selected earlier. If you haven't already, enter the credentials for the notifications service.
 
-     ![notification details](./media/email-triggers/email-triggers-folder-notification.png)
+    ![notification details](./media/email-triggers/email-triggers-folder-notification.png)
 
 [AZURE.INCLUDE [add-mark-as-read-action](../includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-     ![save flow](./media/email-triggers/email-triggers-7.png)
+    ![save flow](./media/email-triggers/email-triggers-7.png)
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.

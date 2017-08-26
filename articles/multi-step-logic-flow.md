@@ -52,9 +52,9 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
 1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
 
-     ![file name and contents](./media/multi-step-logic-flow/create-file-name-and-contents.png)
+    ![file name and contents](./media/multi-step-logic-flow/create-file-name-and-contents.png)
 
-     >[AZURE.IMPORTANT]If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
+    >[AZURE.IMPORTANT]If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
 
 1. Select **Update flow**, which is located on the menu at the top of the screen.
 

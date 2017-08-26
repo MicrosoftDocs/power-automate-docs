@@ -34,7 +34,7 @@ If you haven't used other online Microsoft products, you'll need to sign up.
 
 1. Click or tap the right arrow.
 
-     ![Sign-up link](./media/sign-up-sign-in/signup.png)
+    ![Sign-up link](./media/sign-up-sign-in/signup.png)
 
 ## Sign in ##
 
@@ -42,7 +42,7 @@ If you've used other Microsoft online products, either for work or yourself, all
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
 
-     ![Sign-in link](./media/sign-up-sign-in/signin.png)
+    ![Sign-in link](./media/sign-up-sign-in/signin.png)
 
 1. Enter your email address.
 

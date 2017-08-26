@@ -135,7 +135,7 @@ You will now use the OpenAPI file or Postman Collection to register your custom 
 
 	>[AZURE.IMPORTANT] Make sure you remove the `Content-type` header from actions, as this will be automatically added by Microsoft Flow. Authentication headers that have been defined in the **Security** section should also be removed from actions and triggers. 
 
-		![Import from sample](./media/register-custom-api/importfromsample.png)
+	![Import from sample](./media/register-custom-api/importfromsample.png)
 
 	3. Select **Import** to complete the request definition. Define the response in a similar way.
 
