@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="08/05/2017"
+   ms.date="08/25/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -47,6 +47,17 @@
 1. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new ##
+
+### Release 2017-08-25
+
+- **Document properties and more for SharePoint** - [Read and set SharePoint document library properties](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), and use additional fields like links to the SharePoint item.
+- **Flow collections** - Flow collections are a set of template collections organized by role or by vertical.
+- **Button resharing** - When you share buttons with your co-workers they can reshare them with other people too.
+- **Collect lists from buttons** - Define dropdowns of options for users to choose from when they tap the button.
+- **Seven new connectors** - AWeber, Azure Log Analytics, Azure Tables, DocFusion365, Azure Event Grid, Azure Event Hubs, and StaffHub. 
+- **Improvements to Slack and MySQL** - Create or join channels in Slack, and you can write to MySQL databases.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-updates-seven-connectors/) about this release.
 
 ### Release 2017-08-02
 
