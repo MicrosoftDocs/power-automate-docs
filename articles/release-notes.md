@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="08/05/2017"
+   ms.date="08/25/2017"
    ms.author="stepsic"/>
 
 # Release notes #
@@ -50,6 +50,7 @@
 
 ### Release 2017-08-25
 
+- **Document properties and more for SharePoint** - [Read and set SharePoint document library properties](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), and use additional fields like links to the SharePoint item.
 - **Flow collections** - Flow collections are a set of template collections organized by role or by vertical.
 - **Button resharing** - When you share buttons with your co-workers they can reshare them with other people too.
 - **Collect lists from buttons** - Define dropdowns of options for users to choose from when they tap the button.
