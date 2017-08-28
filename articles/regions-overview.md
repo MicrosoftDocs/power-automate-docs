@@ -55,7 +55,7 @@ Gateways are:
 
 ## Is Microsoft Flow available in national clouds? ##
 
-No, Microsoft Flow is not currently available in the US Gov, Germany or China regions. Availability for national clouds is planned for 2017.
+No, Microsoft Flow isn't available in national clouds. Support for national clouds in planned for 2018.
 
 ## What outbound IP addresses are used in each region? ##
 
