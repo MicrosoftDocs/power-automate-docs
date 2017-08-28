@@ -15,14 +15,16 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/11/2017"
+   ms.date="08/28/2017"
    ms.author="deonhe"/>
 
 # FAQ for regions in Microsoft Flow #
 
+This document provides a list of frequently asked questions about Microsft Flow.
+
 ## How do I find out where my flow is deployed? ##
 
-Your flow is deployed in the region that hosts the environment. For example, if your environment is created in the Europe region, your flow is deployed in Europe data centers.
+Your flow is deployed in the [region](https://azure.microsoft.com/regions/) that hosts the [environment](https://flow.microsoft.com/documentation/environments-overview-admin/). For example, if your environment is created in the Europe region, your flow is deployed in Europe data centers.
 
 Administrators can identify the region if they sign in to the Microsoft Flow [admin center](https://admin.flow.microsoft.com). The **Environments** tab lists all existing environments and their regions.
 
