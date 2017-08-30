@@ -55,7 +55,7 @@ Gateways are:
 
 ## Is Microsoft Flow available in national clouds? ##
 
-No, Microsoft Flow isn't available in national clouds. Support for national clouds in planned for 2018.
+No, Microsoft Flow isn't available in national clouds. Support for national clouds is planned for 2018.
 
 ## What outbound IP addresses are used in each region? ##
 
