@@ -20,7 +20,7 @@
 
 # FAQ for regions in Microsoft Flow #
 
-This document provides a list of frequently asked questions about Microsft Flow.
+This document provides a list of frequently asked questions about Microsoft Flow.
 
 ## How do I find out where my flow is deployed? ##
 
