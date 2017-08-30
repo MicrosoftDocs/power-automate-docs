@@ -34,7 +34,7 @@ Environments are new feature in Microsoft Flow, and include the following benefi
 
 	For example, you can add the *SharePoint* and *OneDrive for Business* services to a business data-only policy. Any flows created in this environment can use these *SharePoint* and *OneDrive for Business* services. Only services you add are available. 
 
-	> [!NOTE] Data loss prevention is available with some license skus, including the P2 license. 
+	>[AZURE.NOTE] Data loss prevention is available with some license skus, including the P2 license. 
 
 - **Isolation boundary for all resources**: Any flows, gateways, connections, custom connectors, and so on reside in that specific environment. They do not exist in any other environments. 
 
@@ -56,7 +56,7 @@ Thus, it is important that environments are only created when necessary. Creatin
 
 The **Default** environment is available for every user, and is shared by all users. Every user can create flows in this environment.
 
-> [!TIP] If you're a Preview user, all existing flows reside in the default environment. A *Preview user* is someone who was using Microsoft Flow before its release to General Availability (GA). 
+>[AZURE.TIP] If you're a Preview user, all existing flows reside in the default environment. A *Preview user* is someone who was using Microsoft Flow before its release to General Availability (GA). 
 
 ## Use the administrator center
 Administrators use the administrator center to create environments, add users to these environments, and other similar tasks. There are two ways to open the administrator center:
@@ -103,7 +103,7 @@ Next, add users to the environment.
 
 	A **Maker** can create new resources in an environment, such as flows, data connections, and gateways. 
 
-	> [!NOTE] A user does not need to be a **Maker** to *edit* resources in an environment, only to create *net-new* resources. Each resource creator can determine who can edit that resource, and can grant edit permissions to users who are not environment Makers.
+	>[AZURE.NOTE] A user does not need to be a **Maker** to *edit* resources in an environment, only to create *net-new* resources. Each resource creator can determine who can edit that resource, and can grant edit permissions to users who are not environment Makers.
 
 	An **Admin** can create data loss prevention policies, and also complete administrative tasks, such as create environments, add users to an environment, and assign admin/maker privileges.  
 
