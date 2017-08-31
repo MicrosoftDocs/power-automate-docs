@@ -64,9 +64,9 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 ## Reorder or delete an action ##
 
-To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
+- To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
 
-     **Note:** You can't move a step before another if you're using any outputs from that step.
+    >[AZURE.NOTE]You can't move a step before another if you're using any outputs from that step.
 
     ![Delete the menu](./media/multi-step-logic-flow/draggingaction.png)
 
