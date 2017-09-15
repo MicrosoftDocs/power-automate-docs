@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="07/27/2017"
+   ms.date="09/15/2017"
    ms.author="deonhe"/>
 
 # Understand on-premises data gateways for Microsoft Flow #
@@ -28,7 +28,7 @@ Use the on-premises data gateway with Microsoft Flow to establish secure connect
 
 Minimum:
 
-- .NET Framework 4.5
+- [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
 - 64-bit version of Windows 7 or Windows Server 2008 R2 (or later)
 
 Recommended:
@@ -75,13 +75,13 @@ Related considerations:
 
     ![Choose new or existing](./media/gateway-reference/new-existing.png)
 
-    - To configure a new gateway, enter a name in the **New on-premises data gateway name** box, enter a recovery key in the **Recovery key** box, enter the same recovery key into the **Confirm recovery key** box. Select **Configure**, and then select **Close**.
+1. To configure a new gateway, enter a name in the **New on-premises data gateway name** box, enter a recovery key in the **Recovery key** box, enter the same recovery key into the **Confirm recovery key** box. Select **Configure**, and then select **Close**.
 
     ![Configure a new gateway](./media/gateway-reference/configure-new.png)
 
-    Specify a recovery key that contains at least eight characters, and keep it in a safe place. You'll need this key if you want to migrate, restore, or take over its gateway.
+1. Specify a recovery key that contains at least eight characters, and keep it in a safe place. You'll need this key if you want to migrate, restore, or take over its gateway.
 
-    - To migrate, restore, or take over an existing gateway, provide the name of the gateway and its recovery key, select **Configure**, and then follow any additional prompts.
+1. To migrate, restore, or take over an existing gateway, provide the name of the gateway and its recovery key, select **Configure**, and then follow any additional prompts.
 
     ![Recover an existing gateway](./media/gateway-reference/recover-existing.png)
 
