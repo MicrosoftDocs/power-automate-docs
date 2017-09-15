@@ -64,7 +64,7 @@ Here are the detailed steps to create a flow that copies data from a Microsoft S
 
     ![configure sharepoint trigger](media/odata-filters/configure-sharepoint-trigger.png)
 
-## Search the destination for the changed item
+## Search the destination for the new or changed item
 
 We use the **SQL Server - Get rows** action to search the destination for the new or changed item.
 
@@ -119,8 +119,8 @@ When your flow "gets" items from the destination, there are two possible outcome
 
 |Outcome|Next step|
 |-------|---------|
-|The item exists|[Update the item](odata-filters.md#update-the-item)|
-|The item doesn't exist|[Create a new item](odata-filters.md#create-the-item)|
+|The item exists|[Update the item](odata-filters.md#update-the-item-in-the-destination)|
+|The item doesn't exist|[Create a new item](odata-filters.md#create-the-item-in-the-destination)|
 
 ## Create the item in the destination
 
@@ -149,7 +149,7 @@ On the **If yes** branch of the **Condition**:
 If the item exists in the destination, update it with the changes.
 
 1. Add the **SQL Server - Update row** action to the **If no** branch of the **Condition**.
-1. Follow the steps in the [create the item](odata-filters.md#create-the-item) section of this document to populate the fields of the table.
+1. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the fields of the table.
 
     ![view environments](media/odata-filters/update-row.png)
 
