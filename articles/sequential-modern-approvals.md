@@ -136,7 +136,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 ## Update SharePoint with approval
 
-1. Use the steps from [Add an update action for pre-approved requests](sequential-modern-approvals.md#Add-an-update-action-for-pre-approved-requests) to add, and then configure an action that updates SharePoint when the vacation request is approved.
+1. Use the steps from [Add an update action for pre-approved requests](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) to add, and then configure an action that updates SharePoint when the vacation request is approved.
 
 1. When you're finished, the card should resemble this image:
 
