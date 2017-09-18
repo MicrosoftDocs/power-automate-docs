@@ -43,14 +43,21 @@ Create a flow that performs one or more tasks (such as sending a report in email
 
 1. In the **Recurrence** dialog box, specify how often you want the flow to run.
 
-	For example, specify **Day** under **Frequency** and **2** under **Interval** if you want the flow to run every two days.
+	For example, specify **2** under **Interval** and **Weeks** under **Frequency** if you want the flow to run every two weeks.
 
 	![Specify recurrence](./media/run-tasks-on-a-schedule/specify-recurrence.png)
 
-1. (optional) Select **Show advanced options**, and then specify a **Time zone**, a **Start time**, or both.
+1. Specify when you want the flow to run:
 
-	![Open advanced options](./media/run-tasks-on-a-schedule/select-advanced.png)
-	![Specify advanced options](./media/run-tasks-on-a-schedule/advanced-options.png)
+	1. Select **Show advanced options**.
+	1. Select a **Time zone** to specify whether the **Start time** reflects a local time zone, Universal Coordinated Time (UTC), etc.
+	1. Specify a **Start time** in this format:<br>YYYY-MM-DDTHH:MM:SSZ
+	1. If you specified **Day** under **Frequency**, specify the time of day when the flow should run.
+	1. If you specified **Week** under **Frequency**, specify the day or days of the week on which the flow should run and the time or times of day when the flow should run.
+
+	For example, configure the options as shown to start a flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
+
+		![Specify advanced options](./media/run-tasks-on-a-schedule/advanced-options.png)
 
 1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
