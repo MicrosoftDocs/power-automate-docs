@@ -79,13 +79,13 @@ To continue making changes after you save or update your flow, select **Edit flo
 
     ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
 
-1. Search for, select, and then configure a **Start an approval** action that sends the vacation request to the sales team. See the [steps used to Add an approval action for immediate manager](parallel-modern-approvals.md/#Add-an-approval-action-for-immediate-manager) if you're not sure how to add the **Start an approval** action.
+1. Search for, select, and then configure a **Start an approval** action that sends the vacation request to the sales team. See the [steps used to Add an approval action for immediate manager](parallel-modern-approvals.md#add-an-approval-action-for-immediate-manager) if you're not sure how to add the **Start an approval** action.
 
 >[AZURE.IMPORTANT]Use the sales team's email address in the **Assigned To** box of the **Start an approval** action.
 
 ## Insert a parallel branch approval action for the human resources team
 
-1. Repeat the steps to [insert a parallel branch for the sales team](parallel-modern-approvals.md/#Insert-a-parallel-branch-approval-action-for-the-sales-team) to add, and then configure a **Start an approval** action to send vacation requests to human resources.
+1. Repeat the steps to [insert a parallel branch for the sales team](parallel-modern-approvals.md#insert-a-parallel-branch-approval-action-for-the-sales-team) to add, and then configure a **Start an approval** action to send vacation requests to human resources.
 
 >[AZURE.IMPORTANT]Use the human resources team's email address in the **Assigned To** box of the **Start an approval** action.
 

@@ -24,7 +24,7 @@ In the mobile app for Microsoft Flow, you can share [button flows](./introductio
 
 >The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
 
-Follow [these steps](share-buttons.md/#use-shared-buttons) to use a button that someone shared with you.
+Follow [these steps](share-buttons.md#use-shared-buttons) to use a button that someone shared with you.
 
 ## Prerequisites
 

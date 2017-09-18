@@ -33,7 +33,7 @@ Subject Filter|Search for the presence of specific words in the subject of an em
 
 >[AZURE.IMPORTANT]Each [Microsoft Flow plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible, doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition you defined isn't met. For example, if you check an email's *from* address in a condition, each run counts against your plan's run quota, even if it's not *from* the address that interests you.
 
-In the walk-throughs below, we check all properties in the **When a new email arrives** trigger. You can learn more by visiting the [frequently asked billing questions](billing-questions.md/#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
+In the walk-throughs below, we check all properties in the **When a new email arrives** trigger. You can learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
 
