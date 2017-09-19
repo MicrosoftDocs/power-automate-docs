@@ -21,192 +21,266 @@
 
 ## Introduction
 
-To use custom connectors in Microsoft Flow, you must provide an OpenAPI definition, which is a language-agnostic machine-readable document describing the API's operations and parameters.  In addition to the out-of-the-box OpenAPI specification, there are some extensions available when creating a custom connector for Microsoft Flow: summary, x-ms-summary, description, x-ms-visibility, x-ms-dynamic-values, and x-ms-dynamic-schema.
+To create custom connectors for Microsoft Flow, Azure Logic Apps, 
+or Microsoft PowerApps, you must provide an OpenAPI definition file, 
+which is a language-agnostic machine-readable document that describes 
+your API's operations and parameters. 
+Along with OpenAPI's out-of-the-box functionality, you can also 
+include these OpenAPI extensions when you create custom connectors 
+for Logic Apps and Flow:
+
+* `summary`
+* `x-ms-summary`
+* `description`
+* `x-ms-visibility`
+* `x-ms-dynamic-values`
+* `x-ms-dynamic-schema`
+
+Here are more details about these extensions:
+
+<a name="summary"></a>
 
 ## summary
-Title of the operation. Example - 'When a task is created" or "Create new lead'.
 
-Applies to:
+Specifies the title for the action (operation). </br>
+Applies to: Operations </br>
+Recommended: Use *sentence case* for `summary`. </br>
+Example: "When an event is added to calendar" or "Send an email"
 
-* Operations
+!["summary" for each operation](./media/custom-connector-openapi-extensions/summary.png)
 
-![summary-annotation](./media/customapi-how-to-swagger/figure_1.png)
-
-It is recommended that you use **sentence case** for the summary of your operations.
-
-## x-ms-summary
-Title of the entity. Example - 'Task Name', 'Due Date', etc.
-
-Applies to:
-
-* Parameters
-* Response Schema
-
-![x-ms-summary-annotation](./media/customapi-how-to-swagger/figure_2.png)
-
-It is recommended that you use **title case** in x-ms-summary.
-
-## description
-A verbose explanation of the operation's functionality or an entity's format and function. Example - 'This operation triggers when a task is added to your project'.
-
-Applies to:
-
-* Operations
-* Parameters
-* Response Schema
-
-![description-annotation](./media/customapi-how-to-swagger/figure_3.jpg)
-
-It is recommended that you use **sentence case** in the description.
-
-
-## x-ms-visibility
-Determines the user facing visibility of the entity. The possible values are **important**, **advanced** and **internal**.
-
-Operations and parameters marked **important** will be always be shown to the user first.
-Operations and parameters marked **advanced** will be hidden under the advanced menu.
-Operations and parameters marked **internal** will be completely hidden from the user.
-
->[AZURE.NOTE] If a parameter is marked **internal** and **required**, a default value **MUST** be provided for this parameter.
-
-
-Applies to:
-
-* Operations
-* Parameters
-* Schemas
-
-![visibility-annotation](./media/customapi-how-to-swagger/figure_4.jpg)
-
-## x-ms-dynamic-values
-Enables populating a dropdown for collecting input parameters to an operation.
-
-Applies to:
-
-* Parameters
-
-![dynamic-values](./media/customapi-how-to-swagger/figure_5.png)
-
-#### Usage:
-Annotate a parameter by using the x-ms-dynamic-values object within the parameter definition.
-
->[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details. Custom connector UI also supports configuring dropdowns.  
-
-#### Properties:
-
-* `operationID` [Required] - Specifies the operation to invoke to populate the dropdown
-* `value-path` [Required] - A path string in the object inside "value-collection" that refers to the value for the parameter, if value-collection is not specified, the response is evaluated as an array
-* `value-title` [Optional] - A path string in the object inside "value-collection" that refers to a description for the value, if value-collection is not specified, the response is evaluated as an array
-* `value-collection` [Optional] - A path string that evaluates to an array of objects in the response payload
-* `parameters` [Optional] - Object whose properties specify the input parameters required to invoke a dynamic-values operation
-
-Example:
-
-```json
-  "x-ms-dynamic-values": {
-    "operationId": "PopulateDropdown",
-    "value-path": "name",
-    "value-title": "properties/displayName",
-    "value-collection": "value",
-    "parameters": {
-      "staticParameter": "<value>",
-      "dynamicParameter": {
-        "parameter": "<value_to_pass_to_dynamicParameter>"
-      }
-    }
+``` json
+"actions" {
+  "Send_an_email": {
+    /// Other action properties here...
+    "summary": "Send an email",
+    /// Other action properties here...
   }
+},
 ```
 
-Sample code from OpenAPI:
+## x-ms-summary
 
-```json
+Specifies the title for an entity. </br>
+Applies to: Parameters, Response Schema </br>
+Recommended: Use *title case* for `x-ms-summary`. </br>
+Example: "Calendar ID", "Subject", "Event Description", and so on
+
+!["x-ms-summary" for each entity](./media/custom-connector-openapi-extensions/x-ms-summary.png)
+
+``` json
+"actions" {
+  "Send_an_email": {
+    /// Other action properties here...
+    "parameters": [ 
+      {
+        /// Other parameters here...
+        "x-ms-summary": "Subject",
+        /// Other parameters here...
+      }
+    ]
+  }
+},
+```
+<a name="description"></a>
+
+## description
+
+Specifies a verbose explanation about the operation's 
+functionality or an entity's format and function. </br>
+Applies to: Operations, Parameters, Response Schema </br>
+Recommended: Use *sentence case* for `description`. </br>
+Example: "This operation triggers when a new event is added to the calendar", 
+"Specify the subject of the mail.", and so on
+
+!["description" for each operation or entity](./media/custom-connector-openapi-extensions/description.png)
+
+``` json
+"actions" {
+  "Send_an_email": {
+     "description": "Specify the subject of the mail",
+     /// Other action properties here...
+  }
+},
+```
+
+<a name="visibility"></a>
+
+## x-ms-visibility
+
+Specifies the user-facing visibility for an entity. </br>
+Possible values: `important`, `advanced`, and `internal` </br>
+Applies to: Operations, Parameters, Schemas
+
+* `important` operations and parameters are always shown to the user first.
+* `advanced` operations and parameters are hidden under an additional menu.
+* `internal` operations and parameters are hidden from the user.
+
+> [!NOTE] 
+> For parameters that are `internal` and `required`, 
+> you **must** provide default values for these parameters.
+
+Example: The **See more** menu and **Show advanced options** menu 
+are hiding `advanced` operations and parameters.
+
+!["x-ms-visibility" for showing or hiding operations and parameters](./media/custom-connector-openapi-extensions/x-ms-visibility.png)
+
+``` json
+"actions" {
+  "Send_an_email": {
+     /// Other action properties here...
+     "parameters:": [
+         {
+           "name": "Subject",
+           "type": "string",
+           "description": "Specify the subject of the mail",
+           "x-ms-summary": "Subject",
+           "x-ms-visibility": "important",
+           /// Other parameter properties here
+         }
+     ]
+     /// Other action properties here...
+  }
+},
+```
+
+## x-ms-dynamic-values
+
+Shows a populated list for the user so they can 
+select input parameters for an operation. </br>
+Applies to: Parameters </br>
+How to use: Add the `x-ms-dynamic-values` object 
+to the parameter's definition. For example, see this [OpenAPI sample](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json).
+
+!["x-ms-dynamic-values" for showing lists](./media/custom-connector-openapi-extensions/x-ms-dynamic-values.png)
+
+### Properties for x-ms-dynamic-values
+
+| Name | Required or optional | Description | 
+| ---- | -------------------- | ----------- | 
+| **operationID** | Required | The operation to call for populating the list | 
+| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
+| **value-title** | Optional |A path string in the object inside `value-collection` that refers to the value's description. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
+| **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload | 
+| **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation | 
+|||| 
+
+Here's an example that shows the properties in `x-ms-dynamic-values`:
+
+``` json
+"x-ms-dynamic-values": {
+  "operationId": "PopulateDropdown",
+  "value-path": "name",
+  "value-title": "properties/displayName",
+  "value-collection": "value",
+  "parameters": {
+     "staticParameter": "{value}",
+     "dynamicParameter": {
+        "parameter": "{value-to-pass-to-dynamicParameter}"
+     }
+  }
+}
+```
+
+## Example: All the OpenAPI extensions up to this point
+
+``` json
 "/api/lists/{listID-dynamic}": {
-      "get": {
-        "description": "Get items from a single list - uses dynamic Values and outputs dynamic-schema",
-        "summary": "Get's items from the selected list ",
-        "operationId": "GetListItems",
+    "get": {
+        "description": "Get items from a single list - uses dynamic values and outputs dynamic schema",
+        "summary": "Gets items from the selected list",
+        "operationID": "GetListItems",
         "parameters": [
-          {
-            "name": "listID-dynamic",
-            "type": "string",
-            "in": "path",
-            "description": "Select List you want outputs from",
-            "required": true,
-            "x-ms-summary": "Select List",
-            "x-ms-dynamic-values": {
-              "operationId": "GetLists",
-              "value-path": "id",
-              "value-title": "name"
-            }
-          }
+           {
+             "name": "listID-dynamic",
+             "type": "string",
+             "in": "path",
+             "description": "Select the list from where you want outputs",
+             "required": true,
+             "x-ms-summary": "Select List",
+             "x-ms-dynamic-values": {
+                "operationID": "GetLists",
+                "value-path": "id",
+                "value-title": "name"
+             }
+           }
         ]
+    }
+}
 ```
 
 ## x-ms-dynamic-schema
-This is a hint to the flow designer that the schema for this parameter or response is dynamic in nature. It can invoke an operation as defined by the value of this field, and discover the schema dynamically. It can then display an appropriate UI to take inputs from the user or display available fields.
 
-Applies to:
+Indicates that the schema for the current parameter or response is dynamic. 
+This object can invoke an operation that's defined by the value of this field, dynamically discover the schema, and display the appropriate UI 
+for collecting user inputs or show available fields. 
 
-* Parameters
-* Response
+Applies to: Parameters, Response
 
+How to use: Add the `x-ms-dynamic-schema` object to a request parameter 
+or response body definition. For an example, see this [OpenAPI sample](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json).
 
-Notice how the input form changes based on the dropdown selection
+This example shows how the input form changes, 
+based on the item that the user selects from the drop-down list:
 
-![dynamic-schema-request](./media/customapi-how-to-swagger/figure_6.png)
+!["x-ms-dynamic-schema" for dynamic parameters](./media/custom-connector-openapi-extensions/x-ms-dynamic-schema.png)
 
-Notice how the outputs change based on the dropdown selection
+And this example shows how the outputs change, 
+based on the item that the user selects from the drop-down list. 
+In this version, the user selects "Cars":
 
-![dynamic-schema-response](./media/customapi-how-to-swagger/figure_7.png)
+!["x-ms-dynamic-schema-response" for selected item "Cars"](./media/custom-connector-openapi-extensions/x-ms-dynamic-schema-output1.png)
 
-#### Usage:
-Annotate a request parameter or a response body with the x-ms-dynamic-schema object.
+In this version, the user selects "Food":
 
->[AZURE.NOTE] See sample [Swagger](https://procsi.blob.core.windows.net/blog-images/sampleDynamicSwagger.json) for more details
+!["x-ms-dynamic-schema-response" for selected item "Food"](./media/custom-connector-openapi-extensions/x-ms-dynamic-schema-output2.png)
 
-#### Properties:
+### Properties for x-ms-dynamic-schema
 
-* `operationID` [Required] - Specifies the operation to invoke to fetch the schema
-* `parameters` [Required] - Object whose properties specify the input parameters required to invoke a dynamic-schema operation
-* `value-path` [Optional] - A path string that refers to the property holding the schema, if not specified, the response is assumed to contain the schema in the properties of the root object
+| Name | Required or optional | Description | 
+| ---- | -------------------- | ----------- | 
+| **operationID** | Required | The operation to call for fetching the schema | 
+| **parameters** | Required | An object whose properties specify the input parameters required to invoke a dynamic-schema operation | 
+| **value-path** |Optional | A path string that refers to the property that has the schema. </br>If not specified, the response is assumed to contain the schema in the root object's properties. | 
+|||| 
 
-Sample code for dynamic parameters:
+Here's an example for a dynamic parameter:
 
-```json
-  {
-    "name": "dynamicListSchema",
-    "in": "body",
-    "description": "Dynamic Schema of items in selected list",
-    "schema": {
-      "type": "object",
-      "x-ms-dynamic-schema": {
-        "operationId": "GetListSchema",
+``` json
+{
+  "name": "dynamicListSchema",
+  "in": "body",
+  "description": "Dynamic schema for items in the selected list",
+  "schema": {
+    "type": "object",
+    "x-ms-dynamic-schema": {
+        "operationID": "GetListSchema",
         "parameters": {
           "listID": {
             "parameter": "listID-dynamic"
           }
         },
         "value-path": "items"
-      }
     }
   }
+}
 ```
 
-Sample code for dynamic response:
+Here's an example for a dynamic response:
 
-```json
+``` json
 "DynamicResponseGetListSchema": {
-      "type": "object",
-      "x-ms-dynamic-schema": {
-        "operationId": "GetListSchema",
-        "parameters": {
-          "listID": {
+   "type": "object",
+   "x-ms-dynamic-schema": {
+      "operationID": "GetListSchema",
+      "parameters": {
+         "listID": {
             "parameter": "listID-dynamic"
-          }
-        },
-        "value-path": "items"
-      }
+         }
+      },
+      "value-path": "items"
     }
+}
 ```
 
 ## Next steps
