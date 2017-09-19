@@ -60,7 +60,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
 
 	For example, configure the options as shown to start a flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
 
-		![Specify advanced options](./media/run-tasks-on-a-schedule/advanced-options.png)
+	![Specify advanced options](./media/run-tasks-on-a-schedule/advanced-options.png)
 
 1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
