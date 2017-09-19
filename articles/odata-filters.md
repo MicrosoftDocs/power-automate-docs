@@ -39,7 +39,7 @@ While this walkthrough copies data from a Microsoft SharePoint [list](https://su
 If you're comfortable with Microsoft Flow, use these quick steps to copy data from one data source to another:
 
 1. Identify the source you'll monitor and the destination to which you'll copy changed data. Confirm you've access to both.
-1. Identify at least one column that uniquely identifies items in the source and destination. In the example below, we use the **Title** column, but you could use any column(s) you want.
+1. Identify at least one column that uniquely identifies items in the source and destination. In the example that follows, we use the **Title** column, but you could use any column(s) you want.
 1. Set up a trigger that monitors the source for changes.
 1. Search the destination to determine if the changed item exists.
 1. Use a **Condition** like this:
@@ -55,7 +55,7 @@ Here are the detailed steps to create the flow.
 
 ## Monitor the source for changes
 
->[AZURE.IMPORTANT]If you aren't familiar with the basics of creating flows, review how to add [actions, triggers](multi-step-logic-flow.md/#add-another-action), and [conditions](add-a-condition.md). The steps below assume you know how to perform these actions.
+>[AZURE.IMPORTANT]If you aren't familiar with the basics of creating flows, review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions] (add-a-condition.md). The following steps assume that you know how to perform these actions.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com), select **My flows** > **Create from blank**.
 1. Search for **SharePoint** > select the **SharePoint - When an item is created or modified** trigger from the list of triggers.
