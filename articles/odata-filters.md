@@ -55,7 +55,7 @@ Here are the detailed steps to create the flow.
 
 ## Monitor the source for changes
 
->[AZURE.IMPORTANT]If you aren't familiar with the basics of creating flows, review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions] (add-a-condition.md). The following steps assume that you know how to perform these actions.
+>[AZURE.IMPORTANT]If you aren't familiar with the basics of creating flows, review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com), select **My flows** > **Create from blank**.
 1. Search for **SharePoint** > select the **SharePoint - When an item is created or modified** trigger from the list of triggers.
