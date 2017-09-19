@@ -50,6 +50,9 @@ Create a flow that performs one or more tasks (such as sending a report in email
 1. Specify when you want the flow to run:
 
 	1. Select **Show advanced options**.
+
+	**Note**: These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
+
 	1. Select a **Time zone** to specify whether the **Start time** reflects a local time zone, Universal Coordinated Time (UTC), etc.
 	1. Specify a **Start time** in this format:<br>YYYY-MM-DDTHH:MM:SSZ
 	1. If you specified **Day** under **Frequency**, specify the time of day when the flow should run.
