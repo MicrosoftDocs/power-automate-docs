@@ -65,7 +65,7 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
 ## Require users to use their own connections
 
-    >[AZURE.NOTE]When you share a button, you can allow persons with whom you've shared the button to use all connections that your button uses. You can also require them to use their own connections. If you allow others to use your connections, they can't access the credentials in your connection, or reuse them in any other flow.
+>[AZURE.NOTE]When you share a button, you can allow persons with whom you've shared the button to use all connections that your button uses. You can also require them to use their own connections. If you allow others to use your connections, they can't access the credentials in your connection, or reuse them in any other flow.
 
 Follow these steps to require persons with whom you've share your buttons to use their own connections.
 
@@ -152,3 +152,4 @@ If you no longer want to use a button that was shared with you, remove it from t
 That's it. The button will no longer appear on the **Buttons** tab of the Microsoft Flow app.
 
 >[AZURE.NOTE]After you remove a shared button, you can add it back by selecting **GET MORE** from the **Buttons** tab.
+
