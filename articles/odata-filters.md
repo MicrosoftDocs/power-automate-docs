@@ -15,14 +15,14 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="09/18/2017"
+   ms.date="09/21/2017"
    ms.author="deonhe"/>
 
 # Filter and copy data with Microsoft Flow
 
 This walkthrough shows you how to create a flow that monitors a source for new or changed items and then copies those changes to a destination. You may create a flow like this one if your users enter data in one location, but your team needs it in a different location or format.
 
-While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [150 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.
+While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [150 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.
 
 >[AZURE.IMPORTANT]Changes you make in the destination aren't copied to the source because two-way syncs aren't supported. If you attempt to set up a two-way sync, you'll create an infinite loop where changes are sent endlessly between the source and destination.
 
@@ -31,6 +31,7 @@ While this walkthrough copies data from a Microsoft SharePoint [list](https://su
 - Access to a data source and a destination. This walkthrough doesn’t include steps to create the source and destination.
 - Access to [Microsoft Flow](https://flow.microsoft.com).
 - A basic understanding of how your data is stored.
+- Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
 
 >[AZURE.TIP]Every column name in the source and destination don't need to match, but you must provide data for all *required* columns when you insert or update an item. Microsoft Flow identifies the required fields for you.
 
@@ -51,11 +52,9 @@ That's it.
 
 Here are the detailed steps to create the flow.
 
->[AZURE.NOTE]If you haven't created a connection to SharePoint or Azure SQL previously, follow the instructions when you're prompted to sign in.
+>[AZURE.NOTE]If you haven't created a connection to SharePoint or Azure SQL Database previously, follow the instructions when you're prompted to sign in.
 
 ## Monitor the source for changes
-
->[AZURE.IMPORTANT]If you aren't familiar with the basics of creating flows, review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
 
 1. Sign into [Microsoft Flow](https://flow.microsoft.com), select **My flows** > **Create from blank**.
 1. Search for **SharePoint** > select the **SharePoint - When an item is created or modified** trigger from the list of triggers.
@@ -120,7 +119,7 @@ When your flow "gets" items from the destination, there're two possible outcomes
 |The item exists|[Update the item](odata-filters.md#update-the-item-in-the-destination)|
 |The item doesn't exist|[Create a new item](odata-filters.md#create-the-item-in-the-destination)|
 
->[AZURE.NOTE]The images of the **Insert row** and **Update row** cards shown next may differ from yours because these cards show the names of the columns in the Azure SQL table that's being used in the flow.
+>[AZURE.NOTE]The images of the **Insert row** and **Update row** cards shown next may differ from yours because these cards show the names of the columns in the Azure SQL Database table that's being used in the flow.
 
 ## Create the item in the destination
 
@@ -157,7 +156,7 @@ If the item exists in the destination, update it with the changes.
 
     ![name your flow](media/odata-filters/give-the-flow-a-name.png)
 
-Now, whenever an item in your SharePoint list (source) changes, your flow triggers and either inserts a new item or updates an existing item in your Azure SQL database (destination).
+Now, whenever an item in your SharePoint list (source) changes, your flow triggers and either inserts a new item or updates an existing item in your Azure SQL Database (destination).
 
 >[AZURE.NOTE]Your flow isn't triggered when an item is deleted from the source. If this is an important scenario, consider adding a separate column that indicates when an item is no longer needed.
 
