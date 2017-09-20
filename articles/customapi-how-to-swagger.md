@@ -14,7 +14,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="04/11/2017"
+   ms.date="09/19/2017"
    ms.author="sunayv"/>
 
 # OpenAPI extensions for custom connectors in Microsoft Flow
@@ -29,12 +29,12 @@ Along with OpenAPI's out-of-the-box functionality, you can also
 include these OpenAPI extensions when you create custom connectors 
 for Logic Apps and Flow:
 
-* `summary`
-* `x-ms-summary`
-* `description`
-* `x-ms-visibility`
-* `x-ms-dynamic-values`
-* `x-ms-dynamic-schema`
+- `summary`
+- `x-ms-summary`
+- `description`
+- `x-ms-visibility`
+- `x-ms-dynamic-values`
+- `x-ms-dynamic-schema`
 
 Here are more details about these extensions:
 
@@ -116,7 +116,7 @@ Applies to: Operations, Parameters, Schemas
 * `advanced` operations and parameters are hidden under an additional menu.
 * `internal` operations and parameters are hidden from the user.
 
-> [!NOTE] 
+> [!AZURE.NOTE] 
 > For parameters that are `internal` and `required`, 
 > you **must** provide default values for these parameters.
 
@@ -160,10 +160,10 @@ to the parameter's definition. For example, see this [OpenAPI sample](https://pr
 | ---- | -------------------- | ----------- | 
 | **operationID** | Required | The operation to call for populating the list | 
 | **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
-| **value-title** | Optional |A path string in the object inside `value-collection` that refers to the value's description. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
+| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
 | **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload | 
 | **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation | 
-|||| 
+
 
 Here's an example that shows the properties in `x-ms-dynamic-values`:
 

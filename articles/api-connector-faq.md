@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/06/2017"
+   ms.date="09/19/2017"
    ms.author="astay"/>
 
 # API connector FAQ (Microsoft Flow)

@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="05/06/2017"
+   ms.date="09/19/2017"
    ms.author="astay"/>
 
 
@@ -55,9 +55,9 @@ To be certified, your connector is reviewed in two phases:
 2. Content Validation
     
     A well written connector uses friendly names and descriptions for each entity. We evaluate your swagger to ensure that each operation, input parameter and response attribute contains:
-    * [Summary](../logic-apps/custom-connector-openapi-extensions.md#summary)
-    * [Description](../logic-apps/custom-connector-openapi-extensions.md#description)
-    * [Visibility information](../logic-apps/custom-connector-openapi-extensions.md#visibility)
+    - [Summary](../logic-apps/custom-connector-openapi-extensions.md#summary)
+    - [Description](../logic-apps/custom-connector-openapi-extensions.md#description)
+    - [Visibility information](../logic-apps/custom-connector-openapi-extensions.md#visibility)
 
 ## Nominate and submit your connector to Microsoft for certification
 
@@ -78,17 +78,14 @@ To apply for certification, follow these steps:
 
    1. Send this information to your nomination contact for review:
 
-      * The OpenAPI file that describes your API
-	  * The icon file (.png or .jpg) that represents your connector 
-      
-        Your icon should have a ~160 pixel logo inside a 230 pixel square. 
-        A white logo on a colored background is preferred.
+      - The OpenAPI file that describes your API
+	  - The icon file (.png or .jpg) that represents your connector. (Your icon should have a ~160 pixel logo inside a 230 pixel square. A white logo on a colored background is preferred.)
 	  
-      * Your icon's brand color in hexadecimal format, 
+      - Your icon's brand color in hexadecimal format, 
       which should match the colored background in the icon file
 
-	  * A test account for validation
-      * A support contact
+	  - A test account for validation
+      - A support contact
 
    2. If we need more information, 
    we will contact you.
@@ -96,7 +93,7 @@ To apply for certification, follow these steps:
 
 3. **Publish**
 
-    After we validate your connector's functionality and content, we stage the connector for deployment across all products and regions. Typically, it takes upto 3 weeks for the certification and deployment process.
+    After we validate your connector's functionality and content, we stage the connector for deployment across all products and regions. Typically, it takes up to 3 weeks for the certification and deployment process.
     
     By default, all connectors are published as "premium." 
     If you built your app with Azure, you can apply for 
