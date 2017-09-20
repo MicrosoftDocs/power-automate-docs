@@ -20,7 +20,7 @@
 
 # Share button flows in Microsoft Flow
 
-In the mobile app for Microsoft Flow, you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can trigger and run your button, the same way they run their own buttons. You can stop sharing your buttons at any time.
+In the Microsoft Flow mobile app, you can share [button flows](./introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can run your button, the same way they run their own buttons. You can also [share a link](share-buttons.md#re-share-a-button) to buttons that another person shared with you. You can [stop sharing](share-buttons.md#stop-sharing-a-button) your buttons at any time.
 
 >The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
 
@@ -69,17 +69,15 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
 Follow these steps to require persons with whom you've share your buttons to use their own connections.
 
-1. Select **MANAGE CONNECTIONS** on the sceen that's displayed immediately after you successfully share a button.
+1. Select **MANAGE CONNECTIONS** on the screen that's displayed immediately after you share a button.
 
-1. Select **Provided by user**
+1. Select **Provided by user**.
 
     ![share button](./media/share-buttons/share-button-select-connection-provided-by-user.png)
 
- You can view or change your selections from the **Flows** tab. To do so, select the flow you shared > **Users and connections** > **CONNECTIONS** tab > **EDIT**.
+    You can view or change your selections from the **Flows** tab. To do so, select the flow you shared > **Users and connections** > **CONNECTIONS** tab > **EDIT**.
 
-![share button](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
-
-Optionally, you can change these options from the **CONNECTIONS** tab of the mobile app.
+    ![share button](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
 ## View the list of button users
 
@@ -126,6 +124,18 @@ Before you can run a button that someone has shared with you, you must add it to
     The tapped button will be immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
 
     ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+
+## Re-share a button
+
+You can share a link to a button that's been shared with you.
+
+1. Select **...** next to the button you want to share.
+
+1. Select **Share button link**.
+
+    ![re-share button link](./media/share-buttons/re-share-button.png)
+
+1. Select the app that you'd like to use to share the button, and then follow the steps to send the button to the person with whom you want to share.
 
 ## Stop using a shared button
 
