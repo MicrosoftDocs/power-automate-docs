@@ -59,15 +59,27 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
     ![share button](./media/share-buttons/share-button-flows-invite-others-send.png)
 
-    >[AZURE.NOTE]Shared buttons run with their creator's connections. However, nobody else can access these credentials, nor reuse them in any other flow.
-
-1. Tap **OK** to acknowledge that your button will use the *connections* that exist in the button whenever the person or group you've shared it with runs it.
-
-    ![share button](./media/share-buttons/share-button-flows-invite-others-ok.png)
-
 1. Tap **DONE** on the page that indicates the button sharing operation completed successfully.
 
     ![share button](./media/share-buttons/share-button-flows-invite-others-done.png)
+
+## Require users to use their own connections
+
+    >[AZURE.NOTE]When you share a button, you can allow persons with whom you've shared the button to use all connections that your button uses. You can also require them to use their own connections. If you allow others to use your connections, they can't access the credentials in your connection, or reuse them in any other flow.
+
+Follow these steps to require persons with whom you've share your buttons to use their own connections.
+
+1. Select **MANAGE CONNECTIONS** on the sceen that's displayed immediately after you successfully share a button.
+
+1. Select **Provided by user**
+
+    ![share button](./media/share-buttons/share-button-select-connection-provided-by-user.png)
+
+ You can view or change your selections from the **Flows** tab. To do so, select the flow you shared > **Users and connections** > **CONNECTIONS** tab > **EDIT**.
+
+![share button](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
+
+Optionally, you can change these options from the **CONNECTIONS** tab of the mobile app.
 
 ## View the list of button users
 
