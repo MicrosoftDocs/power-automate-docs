@@ -22,7 +22,7 @@
 
 In this walkthrough, you'll learn to use functions and **Conditions** to compare multiple values in **Advanced mode**.
 
-When you create a flow, you can use the [**Condition**](./add-a-condition.md/) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
+When you create a flow, you can use the [**Condition**](add-a-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical functions in your conditions.
 
@@ -54,7 +54,7 @@ Sometimes your workflow needs to take an action if the value of an item is value
 - **unnecessary**
 - **not started**
 
-Here's a example of what the spreadsheet might look like:
+Here's an example of what the spreadsheet might look like:
 
 ![sample spreadsheet](./media/use-functions-in-conditions/spreadsheet-table.png)
 
@@ -94,7 +94,7 @@ Let's create the flow.
 
 1. Search for **rows**, and then select **Excel - Get rows**.
 
-    Note: Select the "get rows" action that corresponds to the spreadsheet that you are using. For example, if you are using Google Sheets, select **Google Sheets - Get rows**.
+    Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
     ![get Rows](../includes/media/new-step/get-excel-rows.png)
 
@@ -158,7 +158,7 @@ Notice all data from rows that had "completed" or "unnecessary" in the Status co
 
 ## Use the and function
 
-Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** function shown below:
+Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** function shown here:
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
