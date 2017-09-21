@@ -116,7 +116,7 @@ Applies to: Operations, Parameters, Schemas
 * `advanced` operations and parameters are hidden under an additional menu.
 * `internal` operations and parameters are hidden from the user.
 
-> [!AZURE.NOTE] 
+> [AZURE.NOTE] 
 > For parameters that are `internal` and `required`, 
 > you **must** provide default values for these parameters.
 
@@ -156,13 +156,13 @@ to the parameter's definition. For example, see this [OpenAPI sample](https://pr
 
 ### Properties for x-ms-dynamic-values
 
-| Name | Required or optional | Description | 
+| Name | Required or optional | Description |
 | ---- | -------------------- | ----------- | 
-| **operationID** | Required | The operation to call for populating the list. | 
-| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. If `value-collection` isn't specified, the response is evaluated as an array. | 
-| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. If `value-collection` isn't specified, the response is evaluated as an array. | 
-| **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload | 
-| **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation | 
+| **operationID** | Required | The operation to call for populating the list. |
+| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. If `value-collection` isn't specified, the response is evaluated as an array. |
+| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. If `value-collection` isn't specified, the response is evaluated as an array. |
+| **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload |
+| **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation |
 
 
 Here's an example that shows the properties in `x-ms-dynamic-values`:
@@ -237,12 +237,12 @@ In this version, the user selects "Food":
 
 ### Properties for x-ms-dynamic-schema
 
-| Name | Required or optional | Description | 
+| Name | Required or optional | Description |
 | ---- | -------------------- | ----------- | 
-| **operationID** | Required | The operation to call for fetching the schema | 
-| **parameters** | Required | An object whose properties specify the input parameters required to invoke a dynamic-schema operation | 
-| **value-path** |Optional | A path string that refers to the property that has the schema. </br>If not specified, the response is assumed to contain the schema in the root object's properties. | 
-|||| 
+| **operationID** | Required | The operation to call for fetching the schema |
+| **parameters** | Required | An object whose properties specify the input parameters required to invoke a dynamic-schema operation |
+| **value-path** |Optional | A path string that refers to the property that has the schema. </br>If not specified, the response is assumed to contain the schema in the root object's properties. |
+||||
 
 Here's an example for a dynamic parameter:
 
