@@ -48,8 +48,6 @@ If you're comfortable with Microsoft Flow, use these quick steps to copy data fr
     - If the new or changed item exists in the destination, update it.
 1. Trigger your flow, and then confirm that new or changed items are being copied from the source to the destination.
 
-That's it.
-
 >[AZURE.NOTE]If you haven't created a connection to SharePoint or Azure SQL Database previously, follow the instructions when you're prompted to sign in.
 
 Here are the detailed steps to create the flow.
