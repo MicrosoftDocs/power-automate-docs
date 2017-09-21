@@ -15,7 +15,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="03/22/2017"
+   ms.date="09/21/2017"
    ms.author="deonhe"/>
 
 # Share button flows in Microsoft Flow
@@ -39,13 +39,9 @@ To share buttons, you need:
 
 You can share a button from the **Buttons** tab of the Microsoft Flow mobile app.
 
-1. Tap **...** next to the button you want to share.
+1. Tap the small icon next to the button you want to share.
 
     ![share button](./media/share-buttons/share-button-flows-buttons-tab.png)
-
-1. Tap **Share as run-only**.
-
-    ![share button](./media/share-buttons/share-button-flows-run-only.png)
 
 1. Tap **Invite others** from the **Button users** page.
 
@@ -67,15 +63,19 @@ You can share a button from the **Buttons** tab of the Microsoft Flow mobile app
 
 >[AZURE.NOTE]When you share a button, you can allow persons with whom you've shared the button to use all connections that your button uses. You can also require them to use their own connections. If you allow others to use your connections, they can't access the credentials in your connection, or reuse them in any other flow.
 
-Follow these steps to require persons with whom you've share your buttons to use their own connections.
+Follow these steps to require persons with whom you've shared your buttons to use their own connections.
 
 1. Select **MANAGE CONNECTIONS** on the screen that's displayed immediately after you share a button.
 
-1. Select **Provided by user**.
+1. Select **EDIT** on the button you want to manage.
+
+1. Select **Provided by user** or your email address.
+
+    Your choice indicates whose connections must be used in the shared button.
 
     ![share button](./media/share-buttons/share-button-select-connection-provided-by-user.png)
 
-    You can view or change your selections from the **Flows** tab. To do so, select the flow you shared > **Users and connections** > **CONNECTIONS** tab > **EDIT**.
+    You can view or change your choice any time. To do so, select the **Flows** tab > the flow you shared > **Users and connections** > the **CONNECTIONS** tab > **EDIT** on the button you want to manage.
 
     ![share button](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
@@ -83,7 +83,7 @@ Follow these steps to require persons with whom you've share your buttons to use
 
 You can view all groups or users with whom a button is shared by following these steps from the **Buttons** tab:
 
-1. Tap **...** next to the button in which you're interested, and then tap **Share as run-only**.
+1. Tap the small icon next to the button in which you're interested.
 
 1. On the **Button users** page, view all groups or users with whom the button is shared.
 
@@ -93,7 +93,7 @@ You can view all groups or users with whom a button is shared by following these
 
 You can stop sharing a button by following these steps from the **Buttons** tab:
 
-1. Tap **...** next to the button you no longer want to share, and then tap **Share as run-only**.
+1. Tap the small icon next to the button you no longer want to share.
 
 1. On the **Button users** page, tap the user or group with whom you want to stop sharing the button.
 
@@ -121,7 +121,7 @@ Before you can run a button that someone has shared with you, you must add it to
 
 1. Tap the button you want to use.
 
-    The tapped button will be immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
+    The tapped button is immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
 
     ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
@@ -147,9 +147,6 @@ If you no longer want to use a button that was shared with you, remove it from t
 
 1. Tap **Remove** from the menu that appears.
 
-    ![remove button](./media/share-buttons/share-button-flows-share-no-more.png)
-
-That's it. The button will no longer appear on the **Buttons** tab of the Microsoft Flow app.
+That's it. The button no longer appears on the **Buttons** tab of the Microsoft Flow app.
 
 >[AZURE.NOTE]After you remove a shared button, you can add it back by selecting **GET MORE** from the **Buttons** tab.
-
