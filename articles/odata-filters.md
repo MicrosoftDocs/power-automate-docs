@@ -50,9 +50,9 @@ If you're comfortable with Microsoft Flow, use these quick steps to copy data fr
 
 That's it.
 
-Here are the detailed steps to create the flow.
-
 >[AZURE.NOTE]If you haven't created a connection to SharePoint or Azure SQL Database previously, follow the instructions when you're prompted to sign in.
+
+Here are the detailed steps to create the flow.
 
 ## Monitor the source for changes
 
