@@ -158,9 +158,9 @@ to the parameter's definition. For example, see this [OpenAPI sample](https://pr
 
 | Name | Required or optional | Description | 
 | ---- | -------------------- | ----------- | 
-| **operationID** | Required | The operation to call for populating the list | 
-| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
-| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. </br>If `value-collection` isn't specified, the response is evaluated as an array. | 
+| **operationID** | Required | The operation to call for populating the list. | 
+| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. If `value-collection` isn't specified, the response is evaluated as an array. | 
+| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. If `value-collection` isn't specified, the response is evaluated as an array. | 
 | **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload | 
 | **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation | 
 
