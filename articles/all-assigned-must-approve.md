@@ -84,7 +84,7 @@ Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the fol
 
     ![send an email](media/all-assigned-must-approve/send-an-email-card.png)
 
->[AZURE.NOTE]Any action that follows the **Start an approval** action is executed based on your selection in the **Approval type** list on the **Start an approval** card. The following table lists the behavior based on your selection.
+>[AZURE.NOTE]Any action that follows the **Start an approval** action runs based on your selection in the **Approval type** list on the **Start an approval** card. The following table lists the behavior based on your selection.
 
 Approval type|Behavior
 -------------|------------
