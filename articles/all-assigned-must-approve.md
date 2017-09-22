@@ -72,7 +72,7 @@ Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the fol
     Item link|A URL to the approval item. In this example, this is a link to the item in SharePoint.
     Item link description|A text description for the **Item link**.
 
-    [AZURE.TIP]The **Start an approval** action provides several tokens, including **Response** and **Response Summary**. Use these tokens in your flow to provide rich reporting of the results of an approval request.
+    [AZURE.TIP]The **Start an approval** action provides several tokens, including **Response** and **Response summary**. Use these tokens in your flow to provide rich reporting of the results from a run of an approval request flow.
 
     The **Start an approval** card is a template for the approval request that's sent to approvers. Configure it in a way that's useful for your organization. Here's an example.
 
