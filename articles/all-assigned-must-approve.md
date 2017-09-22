@@ -89,7 +89,7 @@ Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the fol
 Approval type|Behavior
 -------------|------------
 Anyone from the assigned list|Actions that follow the **Start an approval** action run after any one of the approvers decides.
-Everyone from the assigned list|Actions that follow the **Start an approval** action run after some declines or everyone approves the request.
+Everyone from the assigned list|Actions that follow the **Start an approval** action run after an approver declines or everyone approves the request.
 
 At the top of the screen, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
 
@@ -109,6 +109,6 @@ Here's an example of what a response and a response summary may look like after 
 
 ## Learn more about approvals
 
-- [Single approver modern approvals walkthrough](./modern-approvals.md)
+- [Single approver modern approvals](./modern-approvals.md)
 - [Sequential modern approvals](./sequential-modern-approvals.md)
 - [Parallel modern approvals](./sequential-modern-approvals.md)
