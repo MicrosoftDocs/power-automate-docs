@@ -59,7 +59,7 @@ Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the fol
 
 1. Add the **Start an approval** action, and then select **Everyone from the assigned list** from the **Approval type** list.
 
-    [AZURE.IMPORTANT] If any approver rejects, the approval request is considered rejected for all approvers.
+    >[AZURE.IMPORTANT] If any approver rejects, the approval request is considered rejected for all approvers.
 
 1. Use the following table as a guide to complete the **Start an approval** card.
 
@@ -72,7 +72,7 @@ Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the fol
     Item link|A URL to the approval item. In this example, this is a link to the item in SharePoint.
     Item link description|A text description for the **Item link**.
 
-    [AZURE.TIP]The **Start an approval** action provides several tokens, including **Response** and **Response summary**. Use these tokens in your flow to provide rich reporting of the results from a run of an approval request flow.
+    >[AZURE.TIP]The **Start an approval** action provides several tokens, including **Response** and **Response summary**. Use these tokens in your flow to provide rich reporting of the results from a run of an approval request flow.
 
     The **Start an approval** card is a template for the approval request that's sent to approvers. Configure it in a way that's useful for your organization. Here's an example.
 
