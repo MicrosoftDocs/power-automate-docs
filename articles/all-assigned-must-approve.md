@@ -65,26 +65,26 @@ After you sign into [Microsoft Flow](https://flow.microsoft.com), perform the fo
     Item link|A URL to the approval item. This would be the link to the item in SharePoint, for example.
     Item link description|A text description of the **Item link**
 
-Here's an example of what the **Start an approval** card may look like:
+    Here's an example of what the **Start an approval** card may look like:
 
-<!-- ![start an approval](media/odata-filters/give-the-flow-a-name.png) -->
+    <!-- ![start an approval](media/odata-filters/give-the-flow-a-name.png) -->
 
 1. Add the **Office 365 Outlook - Send an email** action, and then configure it to send an email with the results of the request.
 
-Here's an example of what the **Send an email** card might look like:
+    Here's an example of what the **Send an email** card might look like:
 
-<!-- ![send an email](media/odata-filters/give-the-flow-a-name.png) -->
+    <!-- ![send an email](media/odata-filters/give-the-flow-a-name.png) -->
 
 >[AZURE.NOTE]Any action that follows the **Start an approval** action is executed based on your selection in the **Approval type** list on the **Start an approval** card. The following table lists the behavior based on your selection.
 
-    Approval type|Behavior
-    -------------|------------
-    Anyone from the assigned list|Actions that follow the **Start an approval** action run after anyone of the approvers makes a decision.
-    Everyone from the assigned list|Actions that follow the **Start an approval** action run after some declines or everyone approves the request.
+Approval type|Behavior
+-------------|------------
+Anyone from the assigned list|Actions that follow the **Start an approval** action run after anyone of the approvers makes a decision.
+Everyone from the assigned list|Actions that follow the **Start an approval** action run after some declines or everyone approves the request.
 
-1. At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
+At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
 
-    <!-- ![name your flow](media/odata-filters/give-the-flow-a-name.png) -->
+<!-- ![name your flow](media/odata-filters/give-the-flow-a-name.png) -->
 
 Congratulations!
 
