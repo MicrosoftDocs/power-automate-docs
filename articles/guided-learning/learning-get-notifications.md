@@ -24,7 +24,7 @@
 
 A common use of **Microsoft Flow** is to get a **notification** when something happens.  Notifications can be **emails**, **text messages**, or **push notifications on your phone**.
 
-![From a template](./media-v2/learning-get-notifications/template-notifications.png)
+![From a template](./media/learning-get-notifications/template-notifications.png)
 
 ## Required app
 
@@ -36,7 +36,7 @@ If you are using an unsupported mobile device, consider using **SMS messages** (
 
 You can **use a template**, like in the video above, or you can use the *Send a push notification* **action** when creating a flow **from scratch**.  You can include **dynamic content** from other actions or triggers.
 
-![From scratch](./media-v2/learning-get-notifications/notification-action.png)
+![From scratch](./media/learning-get-notifications/notification-action.png)
 
 ## Next lesson
 

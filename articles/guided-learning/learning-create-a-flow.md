@@ -29,7 +29,7 @@ Getting started with Microsoft Flow is easy, as there are a huge number of **tem
 ## Microsoft Flow templates ##
 Take a look at the [ Microsoft Flow website](https://ms.flow.microsoft.com), and open the **Templates** menu. As you scroll through the list, you see that Microsoft Flow allows you to connect to many services.
 
-![Flow Website -> Template list](./media-v2/learning-create-a-flow/template-list.png)
+![Flow Website -> Template list](./media/learning-create-a-flow/template-list.png)
 
 ## Choose a template ##
 
@@ -37,7 +37,7 @@ Take a look at the [ Microsoft Flow website](https://ms.flow.microsoft.com), and
 
 Select the **Save Office 365 email attachments to OneDrive for Business** template.
 
-![Office 365 email](./media-v2/learning-create-a-flow/office-365-email.png)
+![Office 365 email](./media/learning-create-a-flow/office-365-email.png)
 
 
 ## Create and administer a flow ##
@@ -48,33 +48,33 @@ On the template graphic, there is a **description** of what the template **does 
 
 You are asked to **provide credentials** for the **Office 365 Outlook** and **SharePoint** services. If you use both services regularly, you will already be signed into them.
 
-![Save Office 365 email](./media-v2/learning-create-a-flow/save-flow-office-description.png)
+![Save Office 365 email](./media/learning-create-a-flow/save-flow-office-description.png)
 
 1. Select **Create Flow**.
 
-    ![Click create flow](./media-v2/learning-create-a-flow/click-create-flow.png)
+    ![Click create flow](./media/learning-create-a-flow/click-create-flow.png)
 
     Then you'll see the results. 
 
-    ![Create successful](./media-v2/learning-create-a-flow/create-successful.png)
+    ![Create successful](./media/learning-create-a-flow/create-successful.png)
 
     Flow has **created a folder** on your OneDrive, where it will now automatically place **every attachment** that gets emailed to your work email.
 
 1. Open **My Flows**.
 
-    ![Open my flows](./media-v2/learning-create-a-flow/click-my-flows.png)
+    ![Open my flows](./media/learning-create-a-flow/click-my-flows.png)
 
 1. Select the **flow you just made** to see how it works.
 
-    ![Select the flow](./media-v2/learning-create-a-flow/click-the-flow.png)
+    ![Select the flow](./media/learning-create-a-flow/click-the-flow.png)
 
 1. You see a **green check mark**, indicating that the **flow succeeded**. Select **Succeeded** to see the run history and the results.
 
-    ![Flow successful](./media-v2/learning-create-a-flow/flow-successful.png)
+    ![Flow successful](./media/learning-create-a-flow/flow-successful.png)
 
     **All parts of the flow** were successful. 
 
-    ![Run history](./media-v2/learning-create-a-flow/run-history.png)
+    ![Run history](./media/learning-create-a-flow/run-history.png)
 
 
 ## Important concepts in Microsoft Flow ##
@@ -86,7 +86,7 @@ You can think of the **trigger** as the starting action for the flow, which can 
 
 **Actions are the activities** you want to happen when **a trigger is invoked**. For example, **Create file** will recreate the file in OneDrive.
 
-![Actions on new email](./media-v2/learning-create-a-flow/trigger-or-action.png)
+![Actions on new email](./media/learning-create-a-flow/trigger-or-action.png)
 
 
 
