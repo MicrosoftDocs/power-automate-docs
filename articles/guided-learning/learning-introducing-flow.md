@@ -4,11 +4,11 @@
    services=""
    suite="flow"
    documentationCenter="na"
-   authors="v-joaloh"
+   authors="msftman"
    manager="anneta"
    editor=""
    tags=""
-   featuredVideoId="CYR-fZc5Maw"
+   featuredVideoId="kZs7lqgp4LU"
    courseDuration="5m"/>
 
 <tags
@@ -17,101 +17,57 @@
    ms.topic="get-started-article"
    ms.tgt_pltfrm="na"
    ms.workload="na"
-   ms.date="08/15/2017"
-   ms.author="v-joaloh"/>
+   ms.date="11/22/2016"
+   ms.author="deonhe"/>
 
-# Introduction to Microsoft Flow #
-Welcome to Guided Learning for Microsoft Flow. This **self-paced online course** explains Microsoft Flow in a sequential way so that you can build your knowledge from the ground up. The course is designed to provide **guidance in understandable chunks** with lots of **visuals and examples**, following a logical progression to help you learn principles and details.
+# Guided Learning for Microsoft Flow
 
-In this course, you'll learn about Microsoft Flow and its concepts, see how to **build flows**, **manage them**, and **administer them** in your environment. You'll be presented with information and scenarios for a fictional company called Contoso Flooring, but you'll see how to use the same scenarios in your business or your clients' businesses.
+Welcome to **Guided Learning** for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
 
-If you're a beginner with Microsoft Flow, this course will get you going. If you already have some experience, this course will tie concepts together and fill in the gaps. This course is a work in progress, so **please let us know how we're doing** and what other topics you want to see in this course.
+This  **Guided Learning**  course currently has a Getting Started section, and we will add content over the next few weeks. The course is designed to provide guidance in understandable chunks, with a logical flow that helps you learn concepts, details, and examples. It includes lots of visuals to help you learn, too.
 
-## What is Microsoft Flow? ##
-Microsoft Flow is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a flow that adds a lead to **Dynamics 365** and a record in **MailChimp** whenever someone with more than 100 followers tweets about your company.
+If you're a **beginner** with Microsoft Flow, this course will get you going, and if you're a Microsoft Flow **veteran** this course will tie concepts together, and fill in the gaps. We hope you enjoy the course, and look forward to including more content in the future.
 
-![Flow conceptual sketch](./media/learning-introduce-flow/conceptual.png)
+This Guided Learning course is an ongoing **work in progress**.  Please **let us know** how we're doing, and **other topics you want to see** in this course.
 
-When you sign up, you can **connect to more than 100 services** and **manage data in either the cloud or on-premises sources** such as SharePoint and SQL Server. The list of applications and services that you can use with Microsoft Flow grows constantly.
 
-![List of services](./media/learning-introduce-flow/services.png)
+## What is Microsoft Flow?
 
-## What can you do with Microsoft Flow? ##
-You can use Microsoft Flow to **automate workflows** between your favorite **applications and services**, synchronize files, get notifications, collect data, and more. 
+Microsoft Flow is an online **workflow service** that enables you to work smarter and more efficiently by automating workflows across the most common apps and services.  Microsoft Flow can connect to over one hundred services all ready to use when you sign up. Microsoft Flow also has a mobile application that helps you track your workflows on the go, administration experiences for use in the enterprise, and you can even embed Microsoft Flow into your own applications.
 
-For example, you can **automate** these tasks:
+In this course, we'll introduce Microsoft Flow and its concepts, show you how you can build flows, manage them, and, as an administrator, control them in your environment. We'll be presenting information and scenarios for use at a made up company called the Contoso Flooring Company.  We'll do this to show you how the senarios we are building could be useful in your business or in your client's businesses.
 
-- Instantly respond to high-priority notifications or emails.
-- Capture, track, and follow up with new sales leads.
+![Flow conceptual sketch](./media/learning-introducing-flow/flow-conceptual.png)
+
+Microsoft Flow isn't limited to **applications on the internet**.  You can include **on-premise data** in your flows, too, like from SharePoint and SQL Server.
+
+## What you can do with Microsoft Flow
+
+ You can use Microsoft Flow to create **automated workflows** between your favorite applications and services, to synchronize files, get notifications, collect data, and more.  The [list of applications and services you can use with Microsoft Flow](https://flow.microsoft.com/services/) is constantly expanding.  Some examples of tasks you can automate with Microsoft Flow are:
+
+- Instantaneously receive and respond to critical notifications or emails.
+- Capture, track, and follow-up with new sales leads.
 - Copy files from one service to another.
-- Collect data about your business, and share that information with your team.
-- Automate approval workflows.
+- Collect data about your business and inform your team.
+- Automate approvals.
 
-A common use of Microsoft Flow is to **receive notifications**. For example, you can instantly receive an email or a push notification on your phone whenever a sales lead is added to Dynamics 365 or Salesforce.
+A common use of Microsoft Flow is to **recieve notifications**. For example, whenever a sales lead is added in Dynamics 365 or Sales Force, you can instantly receive an email about the lead, or receive a push notification to the mobile app on your phone. A great way to follow-up with **new sales leads**.
 
-![Example of a notification mail or a push notification](./media/learning-introduce-flow/sales-lead.png)
+You can also use Microsoft Flow to copy files. For example, whenever a file is added to a folder in DropBox, you can automatically copy it to a folder in SharePoint to **inform your team** when the file is there.
 
-You can also **use Microsoft Flow to copy files**. For example, you can ensure that any file that's added to Dropbox gets **automatically copied** to SharePoint where your team can find it.
+If you want to see what people are saying about your business, you can **create a flow** that will **trigger** whenever a Tweet with a certain hashtag is posted. The flow will copy those Tweet details, put them into a SQL database, a SharePoint list, or even an Excel file hosted on OneDrive. Whichever works for you. With the data you collected, you can create **actions** to connect it to Power BI, spot trends, and ask questions about the data.
 
-![List of files in Dropbox](./media/learning-introduce-flow/dropbox-files.png) 
+And finally, one of the most popular ways that people use Flow is to **automate approvals**. For example, if you are using a SharePoint list to track approvals in your company, you could trigger an approval work flow.
 
-![List of same files in SharePoint](./media/learning-introduce-flow/sharepoint-files.png) 
+For more ideas, browse our list of **templates** on the **Template Landing** page (we'll talk more on that in the next section). Got a great idea for a flow you don't see in that list?  No problem!  You can create your own from scratch and, if you want, share it with the community!
 
-You can **monitor what people are saying** about your business by creating a flow that runs whenever **someone sends a tweet** with a certain hashtag. The flow could put details about that tweet into a SQL Server database, a SharePoint list, or even an Excel file hosted on OneDrive--whichever service works for you. With the data that you collect, you can create actions to connect it to Power BI, spot trends, and ask questions about the data.
-
-![List of tweets in Excel](./media/learning-introduce-flow/tweets-to-excel.png)
-
-![List of tweets in Excel](./media/learning-introduce-flow/excel-tweets.png)
-
-And finally, **you can automate approval loops** for, as an example, vacation requests in a SharePoint list.
-
-![List of vacation requests in SharePoint](./media/learning-introduce-flow/vacation-requests.png)
-
-For more ideas, **browse our list of templates**, which help you build flows in just a few steps. For example, you can easily build flows to **send yourself weather forecasts**, reminders at regular intervals, or phone notifications whenever your manager sends you mail.
-
-![List of templates](./media/learning-introduce-flow/templates-you-might-use.png)
-
-Got an idea for a flow that you don't see in the list? Create your own from scratch and, if you want, share it with the community!
-
-## Where can I create and administer a flow? ##
-
-You can create a flow and perform administrative tasks **in a browser** or **on your phone** - if you download the mobile app for Microsoft Flow.
-
-![Screen shot of mobile app](./media/learning-introduce-flow/screen-mobile-app.png)  
-
-You can perform these tasks, among others:
+## Creating and administering flows
+To create and administer flows, you can use the web app, or the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). Whichever platform you choose, it’s easy to diagnose issues, synchronize data, and more:
 - Turn flows on or off from wherever you are.
 - See when a flow has failed.
-- Review detailed run-history reports.
+- Review detailed run history reports.
 - View and filter runs by notification type.
 
-## A brief tour of Microsoft Flow ##
-Let's jump into the tool, and we'll show you around. We have tons of information for you to learn about how to use Microsoft Flow.
+## Next lesson
 
-![Start of tour](./media/learning-introduce-flow/start-of-tour.png)
-
-On the home page, there are menus for:
-
-- **My flows**, where your flows live.
-- **Templates**, which is a great place to start.
-- **Approvals**, where you can automate and streamline your approval process.
-- **Connectors** (formerly **Services**), where you can connect from one service to another.
-- **Learn**, where you can gain information that will help you ramp up quickly on Microsoft Flow.
-
-![What you can do](./media/learning-introduce-flow/what-you-can-do.png)
-
-For now, let's focus on **Learn**, which contains:
-- **Guided Learning** can walk you through using Microsoft Flow, all the way from beginning techniques to advanced scenarios.
-- **Documentation** is where our advanced topics live. If you want to really understand a feature or a function, you can do a deep dive here to figure things out.
-- **Support** is a great landing place to find help.
-- **Community** is a place to plug into and find out how other people use Microsoft Flow.
-- **Give feedback** taps into a community of power users, where you can **send comments and questions** to developers and other users.
-- **Blog** keeps you up to date on the most recent developments and releases in the Microsoft Flow ecosystem.
-- **Pricing** can help you choose the right plan for you or your business.
-
-On the **Templates** page, you can have a look at some of the most popular templates, which should give you great ideas for flows you want to try.
-
-![Template landing page](./media/learning-introduce-flow/template-page.png)
-
-## Next lesson ##
 Now that you've gotten a taste of what Microsoft Flow is and what it can do, let's take a look at what makes a flow.

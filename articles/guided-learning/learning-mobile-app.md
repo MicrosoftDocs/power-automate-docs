@@ -4,12 +4,12 @@
    services=""
    suite="flow"
    documentationCenter="na"
-   authors="v-joaloh"
+   authors="msftman"
    manager="anneta"
    editor=""
    tags=""
    featuredVideoId="o80hRMpb0_4"
-   courseDuration="5m"/>
+   courseDuration="8m"/>
 
 <tags
    ms.service="flow"
@@ -18,7 +18,7 @@
    ms.tgt_pltfrm="na"
    ms.workload="na"
    ms.date="08/15/2017"
-   ms.author="v-joaloh"/>
+   ms.author="deonhe"/>
 
 # Microsoft Flow mobile app #
 
@@ -26,7 +26,7 @@ In this lesson, we'll be covering the Microsoft Flow mobile app and its capabili
 
 First, you’ll need to **download** and **install** the Microsoft Flow app from your app store.
 
-![Mobile app](./media/learning-mobile-app/open-mobile-app.png)
+![Mobile app](./media-v2/learning-mobile-app/open-mobile-app.png)
 
 Once it's installed, **open it** and **sign in**. When you open the app, you land on the **Activity Feed**.
 
@@ -34,11 +34,11 @@ The Activity Feed is the spot to see what’s happening with your flows, **while
 
 For instance, if you select any of these flows, you can **get a closer look** at that flow's **last activity**, whether it succeeded or failed to run, and if it failed, which step it failed on.
 
-![Activity Feed](./media/learning-mobile-app/see-all-activity.png)
+![Activity Feed](./media-v2/learning-mobile-app/see-all-activity.png)
 
 As you can see, this flow succeeded in both steps. From here, go ahead and select the **Buttons** icon.
 
-![Activity details](./media/learning-mobile-app/activity-details.png)
+![Activity details](./media-v2/learning-mobile-app/activity-details.png)
 
 
 ## How flows are started ##
@@ -48,7 +48,7 @@ As you can see, this flow succeeded in both steps. From here, go ahead and selec
 
 Use the **Browse** button to check out templates for **more button flows** to add to your collection.
 
-![Last activity](./media/learning-mobile-app/click-browse-button.png)
+![Last activity](./media-v2/learning-mobile-app/click-browse-button.png)
 
 To see how that works, we'll use the **Send myself a reminder in 10 minutes** button flow.
  
@@ -59,23 +59,23 @@ To see how that works, we'll use the **Send myself a reminder in 10 minutes** bu
 
 1. Tap **Use this template**.
 
-    ![Use this template](./media/learning-mobile-app/use-this-template.png)
+    ![Use this template](./media-v2/learning-mobile-app/use-this-template.png)
 
 1. Tap **Create**.
 
-    ![Create complete](./media/learning-mobile-app/create-complete.png)
+    ![Create complete](./media-v2/learning-mobile-app/create-complete.png)
 
     The flow is **saved**.
 
-    ![Completed reminder](./media/learning-mobile-app/complete-reminder.png)
+    ![Completed reminder](./media-v2/learning-mobile-app/complete-reminder.png)
 
 1. Tap **Buttons** to see the new flow. 
 
-    ![In our buttons](./media/learning-mobile-app/button-send-reminder.png)
+    ![In our buttons](./media-v2/learning-mobile-app/button-send-reminder.png)
 
 1. Go ahead and tap it, and in 10 minutes, you'll **get a reminder**.
 
-    ![In your buttons](./media/learning-mobile-app/in-your-collection.png)
+    ![In your buttons](./media-v2/learning-mobile-app/in-your-collection.png)
 
 It's simple to add additional buttons to your collection.
 
@@ -85,11 +85,11 @@ If you decide that you want to modify or delete one of your flows, it's easy.
 
 1. Tap the **Flows** button, which is essentially the mobile management area for your flows.
 
-    ![Click flows icon](./media/learning-mobile-app/click-flows-button.png)
+    ![Click flows icon](./media-v2/learning-mobile-app/click-flows-button.png)
 
 1. Now, tap one of your flows.
 
-    ![Unwanted flow](./media/learning-mobile-app/send-a-reminder.png)
+    ![Unwanted flow](./media-v2/learning-mobile-app/send-a-reminder.png)
 
     You can see that there are a few options:
   
@@ -101,11 +101,11 @@ If you decide that you want to modify or delete one of your flows, it's easy.
 
     - You can also delete the flow by tapping the **Delete flow** button.
 
-    ![Disable or delete](./media/learning-mobile-app/disable-delete.png)
+    ![Disable or delete](./media-v2/learning-mobile-app/disable-delete.png)
 
     Here, you see the **flow has been deleted**.
 
-    ![Disabled flow](./media/learning-mobile-app/disabled-flow.png)
+    ![Disabled flow](./media-v2/learning-mobile-app/disabled-flow.png)
 
 
 
