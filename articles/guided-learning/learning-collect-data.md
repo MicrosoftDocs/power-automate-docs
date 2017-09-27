@@ -9,7 +9,7 @@
    editor=""
    tags=""
    featuredVideoId="U54cdN0tXEI"
-   courseDuration="6m"/>
+   courseDuration="5m"/>
 
 <tags
    ms.service="flow"
