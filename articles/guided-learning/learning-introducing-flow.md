@@ -51,7 +51,7 @@ Microsoft Flow isn't limited to **applications on the internet**.  You can inclu
 - Collect data about your business and inform your team.
 - Automate approvals.
 
-A common use of Microsoft Flow is to **recieve notifications**. For example, whenever a sales lead is added in Dynamics 365 or Sales Force, you can instantly receive an email about the lead, or receive a push notification to the mobile app on your phone. A great way to follow-up with **new sales leads**.
+A common use of Microsoft Flow is to **receive notifications**. For example, whenever a sales lead is added in Dynamics 365 or Sales Force, you can instantly receive an email about the lead, or receive a push notification to the mobile app on your phone. A great way to follow-up with **new sales leads**.
 
 You can also use Microsoft Flow to copy files. For example, whenever a file is added to a folder in DropBox, you can automatically copy it to a folder in SharePoint to **inform your team** when the file is there.
 
