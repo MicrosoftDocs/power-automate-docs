@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Creating an Approval Request | Microsoft Flow"
-   description="Creating an Approval Request in Microsoft Flow"
+   pageTitle="Create an approval request | Microsoft Flow"
+   description="Learn how to manage manage the approval of documents and processes."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -20,7 +20,8 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Creating an Approval Request Flow in Microsoft Flow 
+# Create an approval request 
+
 In a previous topic, you saw how to power your Twitter feed with a SharePoint list in a  simple way. In this topic, you’ll learn how to build a more business-friendly scenario using approvals. This way, anyone with access to the SharePoint list can contribute tweets, and the social media team can approve or reject those tweets. The team maintains control of the account and the content that goes out to customers. 
 
 ## Create an approval request flow

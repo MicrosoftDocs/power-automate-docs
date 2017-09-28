@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Collecting Data with Microsoft Flow | Microsoft Flow"
+   pageTitle="Collect data in a flow | Microsoft Flow"
    description="Learn how to use Microsoft Flow to collect data from services for use in your flows."
    services=""
    suite="flow"
@@ -20,7 +20,7 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Collecting data
+# Collect data in a flow
 
 In addition to being able to **get notifications** and **copy files**, **Microsoft Flow** also enables you to **collect data**.  This can be useful for **analytics**, like with **Power BI**.  
 
@@ -32,4 +32,4 @@ Some **common destinations** you can store data in include **Excel**, **SQL Serv
 
 ## Next lesson
 
-Now let's learn how to create push notifications with **Microsoft Flow**. 
+Now let's learn how to post tweets based on data in a SharePoint list. 

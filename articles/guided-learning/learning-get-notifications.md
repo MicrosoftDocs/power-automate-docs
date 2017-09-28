@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Getting Notifications with Microsoft Flow | Microsoft Flow"
+   pageTitle="Get notifications | Microsoft Flow"
    description="Learn how to get notifications on your mobile device with Microsoft Flow."
    services=""
    suite="flow"
@@ -20,7 +20,7 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Getting notifications
+# Get notifications from a flow
 
 A common use of **Microsoft Flow** is to get a **notification** when something happens.  Notifications can be **emails**, **text messages**, or **push notifications on your phone**.
 
