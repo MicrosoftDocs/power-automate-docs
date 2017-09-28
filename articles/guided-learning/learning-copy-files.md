@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Copying Files with Microsoft Flow | Microsoft Flow"
+   pageTitle="Copy files | Microsoft Flow"
    description="Learn how to use Microsoft Flow to copy files between services."
    services=""
    suite="flow"
@@ -20,7 +20,7 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Copying files
+# Copy files
 
 Today, it's very common to use a **file storage service**, such as **OneDrive** or **Google Drive**.  Have you ever needed to **copy files from one storage service to another**?  Microsoft Flow makes it easy to automatically move and copy files between two services.
 

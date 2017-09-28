@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Learn how to control which services can share data and prevent data loss | Microsoft Flow"
+   pageTitle="Use data loss prevention (DLP) policies | Microsoft Flow"
    description="Learn how to use data loss prevention polices to control which services can share data when automating tasks using Microsoft Flow."
    services=""
    suite="flow"
@@ -20,7 +20,7 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# All about Data loss prevention (DLP) policies
+# Use data loss prevention (DLP) policies
 
 With an expanding list of [services](https://flow.microsoft.com/services) available to build workflows with [Microsoft Flow](https://flow.microsoft.com), you may need to safeguard sensitive or critical business data stored in enterprise services such as SharePoint or Salesforce. You may find that your organization needs to create a policy which ensures that sensitive business data isn't published to consumer services like Twitter and Facebook. With Microsoft Flow, you can easily create **data loss prevention** (DLP) policies to tightly control which consumer services your business data can be shared with when your users create flows.  
 

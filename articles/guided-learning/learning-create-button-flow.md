@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create a button flow | Microsoft Flow"
-   description="Create a button flow and team flow for Contoso Flooring."
+   description="Learn how to create a flow that you trigger from a button."
    services=""
    suite="flow"
    documentationCenter="na"

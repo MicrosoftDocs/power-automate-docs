@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Microsoft Flow Mobile App | Microsoft Flow"
-   description="How to use the Microsoft Flow mobile app to create and manage flows."
+   pageTitle="Use the Microsoft Flow mobile app | Microsoft Flow"
+   description="Learn how to use the Microsoft Flow mobile app to create and manage flows."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -20,7 +20,7 @@
    ms.date="08/15/2017"
    ms.author="deonhe"/>
 
-# Microsoft Flow mobile app #
+# Use the Microsoft Flow mobile app #
 
 In this lesson, we'll be covering the Microsoft Flow mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 

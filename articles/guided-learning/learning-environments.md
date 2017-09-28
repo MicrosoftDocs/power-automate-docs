@@ -1,6 +1,6 @@
 <properties
-   pageTitle="All about environments | Microsoft Flow"
-   description="Learn about environments in Microsoft Flow"
+   pageTitle="Use environments to manage flows | Microsoft Flow"
+   description="Learn about using environments to separate and manage flows."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -21,7 +21,7 @@
    ms.author="deonhe"/>
 
 
-# Learn all about Microsoft Flow environments
+# Use environments to manage flows
 
 ## What is an environment:
 An environment is a virtual space used to store, manage and share apps, flows, and business data in the Common Data Service. Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  

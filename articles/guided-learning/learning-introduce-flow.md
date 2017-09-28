@@ -1,5 +1,5 @@
 <properties
-   pageTitle="Introduction to Microsoft Flow | Microsoft Flow"
+   pageTitle="Guided Learning for Microsoft Flow | Microsoft Flow"
    description="Understand what Microsoft Flow is and what you can do with it."
    services=""
    suite="flow"
@@ -20,7 +20,8 @@
    ms.date="08/15/2017"
    ms.author="deonhe"/>
 
-# Introduction to Microsoft Flow #
+# Guided Learning for Microsoft Flow #
+
 Welcome to Guided Learning for Microsoft Flow. This **self-paced online course** explains Microsoft Flow in a sequential way so that you can build your knowledge from the ground up. The course is designed to provide **guidance in understandable chunks** with lots of **visuals and examples**, following a logical progression to help you learn principles and details.
 
 In this course, you'll learn about Microsoft Flow and its concepts, see how to **build flows**, **manage them**, and **administer them** in your environment. You'll be presented with information and scenarios for a fictional company called Contoso Flooring, but you'll see how to use the same scenarios in your business or your clients' businesses.

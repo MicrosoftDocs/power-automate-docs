@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Processing an Approval Request | Microsoft Flow"
-   description="Processing an Approval Request in Microsoft Flow"
+   pageTitle="Process an approval request | Microsoft Flow"
+   description="Learn how to approve or reject an approval request."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -20,7 +20,8 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Processing an Approval Request in Microsoft Flow 
+# Process an approval request
+
 In a previous topic, you saw how to build an approval process around tweets that are stored in a SharePoint list.  In this topic, you'll see what the experience looks like when an approver receives a new approval request. 
 
 ## Create and process a request

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Push notifications in Microsoft Flow | Microsoft Flow"
-   description="Create push notifications from SharePoint to Twitter using Microsoft Flow."
+   pageTitle="Post tweets from a flow | Microsoft Flow"
+   description="Learn how to post tweets based on data in a SharePoint list."
    services=""
    suite="flow"
    documentationCenter="na"
@@ -20,9 +20,9 @@
    ms.date="08/16/2017"
    ms.author="deonhe"/>
 
-# Create Push Notifications in Microsoft Flow #
+# Post tweets from a flow #
 
-This topic teaches you how to create push notifications. For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
+For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
 
 ## Connect Microsoft Flow Services
 

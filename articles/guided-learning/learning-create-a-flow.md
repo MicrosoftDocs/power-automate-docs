@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a Flow from a Template | Microsoft Flow"
-   description="Create a flow from a list of templates, manage, and administer the flow."
+   pageTitle="Create a flow from a template | Microsoft Flow"
+   description="Learn how to create and manage a flow based on a template."
    services=""
    suite="flow"
    documentationCenter="na"
