@@ -1,6 +1,6 @@
 <properties
    pageTitle="Create an approval request | Microsoft Flow"
-   description="Learn how to manage manage the approval of documents and processes."
+   description="Learn how to manage the approval of documents and processes."
    services=""
    suite="flow"
    documentationCenter="na"
