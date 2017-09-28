@@ -32,7 +32,7 @@ Term|Description
 **Data group**|A logical grouping of services. You put services that are allowed to share data in the same data group. There are two data groups: **business data only** and the **no business data allowed** data group.
 **Environment**|A DLP is applied to an [environment](../environments-overview-admin.md). An environment contains users.
 **Users**|Users are members of your organization to whom a DLP policy will apply, based on their membership in an environment. 
-**Flow**|A [flow](./learning-introducing-flow.md) is a workflow app that uses any combination of the available services.
+**Flow**|A flow is a workflow app that uses any combination of the available services.
 
 ## All about how DLP policies work
 
