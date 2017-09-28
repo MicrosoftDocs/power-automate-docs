@@ -34,7 +34,7 @@ Each template flow is designed for a specific purpose, such as receiving notific
 
 ![Flow example template](./media/learning-flow-parts/example-template.png)
 
-There are hundreds of templates avaiable, and you can find them in **Microsoft Flow for web** or **Microsoft Flow for mobile**.
+There are hundreds of templates available, and you can find them in **Microsoft Flow for web** or **Microsoft Flow for mobile**.
 
 ![Flow web and mobile](./media/learning-flow-parts/flow-web-mobile.png)
 
