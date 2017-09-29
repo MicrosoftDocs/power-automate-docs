@@ -1,1 +1,3 @@
-# Welcome to flow!
+---
+redirect_url: getting-started
+---
