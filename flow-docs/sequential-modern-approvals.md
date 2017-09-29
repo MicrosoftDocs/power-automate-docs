@@ -41,7 +41,7 @@ This image summarizes the preceding steps:
    ![visio diagram of the flow](./media/sequential-modern-approvals/visio-overview.png)
 
 ## Prerequisites
-[!INCLUDE [prerequisites-for-modern-approvals](../includes/prerequisites-for-modern-approvals.md)]
+[!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
 The SharePoint Online list that you create must include the following columns:
 
@@ -50,15 +50,15 @@ The SharePoint Online list that you create must include the following columns:
 Make note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
 
 ## Create your flow from the blank template
-[!INCLUDE [sign-in-and-create-flow-from-blank-template](../includes/sign-in-and-create-flow-from-blank-template.md)]
+[!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
-[!INCLUDE [add-trigger-when-sharepoint-item-created](../includes/add-trigger-when-sharepoint-item-created.md)]
+[!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
    ![sharepoint info](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
-[!INCLUDE [add-get-manager-action](../includes/add-get-manager-action.md)]
+[!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
 1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
    
@@ -74,12 +74,12 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
 
 ## Add an approval action for pre-approvals
-[!INCLUDE [add-an-approval-action](../includes/add-an-approval-action.md)]
+[!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 Note: This action sends the pre-approval request to the email address in the **Assigned To** box.
 
 ## Add a condition
-[!INCLUDE [add-approval-condition-response](../includes/add-approval-condition-response.md)]
+[!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]
 > This condition checks the response from the **Start an approval** action.
@@ -87,12 +87,12 @@ Note: This action sends the pre-approval request to the email address in the **A
 > 
 
 ## Add an email action for pre-approvals
-[!INCLUDE [add-action-to-send-email-when-vacation-approved](../includes/add-action-to-send-email-when-vacation-approved.md)]
+[!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure pre-approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## Add an update action for pre-approved requests
-[!INCLUDE [add-action-to-update-sharepoint-with-approval](../includes/add-action-to-update-sharepoint-with-approval.md)]
+[!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
    ![update item configuration](./media/sequential-modern-approvals/configure-update-item.png)
 
@@ -100,7 +100,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
 2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow** card.
    
-   ![get pre-approver's manager](../includes/media/modern-approvals/get-pre-approver-manager.png)
+   ![get pre-approver's manager](includes/media/modern-approvals/get-pre-approver-manager.png)
 
 ## Add the final approval action
 1. Use the [add an approval action for pre-approvals](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) steps we did earlier to add, and then configure another **Start an approval** action. This action sends an email request for final approval.
@@ -124,14 +124,14 @@ Note: This action sends the pre-approval request to the email address in the **A
     ![update item configuration](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
 ## Send email with pre-approval rejection
-[!INCLUDE [add-action-to-send-email-when-vacation-rejected](../includes/add-action-to-send-email-when-vacation-rejected.md)]
+[!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
    ![configuration for rejected requests](./media/sequential-modern-approvals/configure-rejected-email.png)
 
 Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
 
 ## Update SharePoint with pre-approval rejection
-[!INCLUDE [add-action-to-update-sharepoint-with-rejection](../includes/add-action-to-update-sharepoint-with-rejection.md)]
+[!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    ![update sharepoint for rejected requests](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
@@ -159,17 +159,17 @@ If you've followed along, your flow should resemble this image:
 Now that we've created the flow, let's see it in action.
 
 ## Request an approval
-[!INCLUDE [request-vacation-approval](../includes/request-vacation-approval.md)]
+[!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Your request should resemble this image:
 
 ![vacation request](./media/sequential-modern-approvals/vacation-request.png)
 
 ## View pending approval requests
-[!INCLUDE [view-pending-approvals](../includes/view-pending-approvals.md)]
+[!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
 ## Pre-approve a request
-[!INCLUDE [approve-request-from-different-locations](../includes/approve-request-from-different-locations.md)]
+[!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
 ## Approve the request
 The steps to approve a request are identical to the steps to [pre-approve a request](sequential-modern-approvals.md#pre-approve-a-request)
@@ -177,7 +177,7 @@ The steps to approve a request are identical to the steps to [pre-approve a requ
 Note: The final approver gets the vacation request only after the request has been pre-approved.
 
 ## Reject a request
-[!INCLUDE [reject-a-request](../includes/reject-a-request.md)]
+[!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
 ## More information
 [Single approver modern approvals walkthrough](modern-approvals.md)

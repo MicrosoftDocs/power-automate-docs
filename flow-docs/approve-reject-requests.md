@@ -22,13 +22,13 @@ ms.author: deonhe
 Microsoft Flow makes it easy to automate [approval workflow processes](modern-approvals.md). In this walkthrough, you learn how to view, approve, and reject approval requests sent from Microsoft Flow.
 
 ## View pending approval requests
-[!INCLUDE [view-pending-approvals](../includes/view-pending-approvals.md)]
+[!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
 ## Approve a request
-[!INCLUDE [approve-request-from-different-locations](../includes/approve-request-from-different-locations.md)]
+[!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
 ## Reject a request
-[!INCLUDE [reject-a-request](../includes/reject-a-request.md)]
+[!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
 ## Learn more
 * Create [approval flows.](modern-approvals.md)
