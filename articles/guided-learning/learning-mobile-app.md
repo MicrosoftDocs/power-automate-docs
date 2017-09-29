@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Use the Microsoft Flow mobile app | Microsoft Flow"
-   description="Learn how to use the Microsoft Flow mobile app to create and manage flows."
-   services=""
-   suite="flow"
-   documentationCenter="na"
-   authors="msftman"
-   manager="anneta"
-   editor=""
-   tags=""
-   featuredVideoId="o80hRMpb0_4"
-   courseDuration="8m"/>
+---
+title: Use the Microsoft Flow mobile app | Microsoft Docs
+description: Learn how to use the Microsoft Flow mobile app to create and manage flows.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: anneta
+editor: ''
+tags: ''
+featuredvideoid: o80hRMpb0_4
+courseduration: 8m
 
-<tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="08/15/2017"
-   ms.author="deonhe"/>
+ms.service: flow
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 08/15/2017
+ms.author: deonhe
 
-# Use the Microsoft Flow mobile app #
-
+---
+# Use the Microsoft Flow mobile app
 In this lesson, we'll be covering the Microsoft Flow mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
 First, you’ll need to **download** and **install** the Microsoft Flow app from your app store.
@@ -40,9 +39,7 @@ As you can see, this flow succeeded in both steps. From here, go ahead and selec
 
 ![Activity details](./media/learning-mobile-app/activity-details.png)
 
-
-## How flows are started ##
-   
+## How flows are started
    Buttons are flows that are started with a manual action. For example, you could create a button like **Send a "Working from home today" email to your manager**.
    You could use this one if you live far away and on days when the traffic is a mess!
 
@@ -51,64 +48,51 @@ Use the **Browse** button to check out templates for **more button flows** to ad
 ![Last activity](./media/learning-mobile-app/click-browse-button.png)
 
 To see how that works, we'll use the **Send myself a reminder in 10 minutes** button flow.
- 
 
 1. Select **Buttons**, then **Browse templates**.
-
-1. Select the reminder button flow.
-
-1. Tap **Use this template**.
-
+2. Select the reminder button flow.
+3. Tap **Use this template**.
+   
     ![Use this template](./media/learning-mobile-app/use-this-template.png)
-
-1. Tap **Create**.
-
+4. Tap **Create**.
+   
     ![Create complete](./media/learning-mobile-app/create-complete.png)
-
+   
     The flow is **saved**.
-
+   
     ![Completed reminder](./media/learning-mobile-app/complete-reminder.png)
-
-1. Tap **Buttons** to see the new flow. 
-
+5. Tap **Buttons** to see the new flow. 
+   
     ![In our buttons](./media/learning-mobile-app/button-send-reminder.png)
-
-1. Go ahead and tap it, and in 10 minutes, you'll **get a reminder**.
-
+6. Go ahead and tap it, and in 10 minutes, you'll **get a reminder**.
+   
     ![In your buttons](./media/learning-mobile-app/in-your-collection.png)
 
 It's simple to add additional buttons to your collection.
 
-## Modify or delete a flow ##
-
+## Modify or delete a flow
 If you decide that you want to modify or delete one of your flows, it's easy.
 
 1. Tap the **Flows** button, which is essentially the mobile management area for your flows.
-
+   
     ![Click flows icon](./media/learning-mobile-app/click-flows-button.png)
-
-1. Now, tap one of your flows.
-
+2. Now, tap one of your flows.
+   
     ![Unwanted flow](./media/learning-mobile-app/send-a-reminder.png)
-
+   
     You can see that there are a few options:
-  
-    - To enable or disable the flow, tap the **Enable flow** toggle switch.
+   
+   * To enable or disable the flow, tap the **Enable flow** toggle switch.
+   * You can always edit the flow, in case you want to make it useful to yourself again. 
+   * And you can see the run history of the flow, to get an idea of its successful and unsuccessful runs.
+   * You can also delete the flow by tapping the **Delete flow** button.
+     
+     ![Disable or delete](./media/learning-mobile-app/disable-delete.png)
+     
+     Here, you see the **flow has been deleted**.
+     
+     ![Disabled flow](./media/learning-mobile-app/disabled-flow.png)
 
-    - You can always edit the flow, in case you want to make it useful to yourself again. 
-
-    - And you can see the run history of the flow, to get an idea of its successful and unsuccessful runs.
-
-    - You can also delete the flow by tapping the **Delete flow** button.
-
-    ![Disable or delete](./media/learning-mobile-app/disable-delete.png)
-
-    Here, you see the **flow has been deleted**.
-
-    ![Disabled flow](./media/learning-mobile-app/disabled-flow.png)
-
-
-
-## Next Lesson ##
-
+## Next Lesson
 The next lesson covers **how to create a button flow** for a team. 
+

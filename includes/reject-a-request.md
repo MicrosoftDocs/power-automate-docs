@@ -3,5 +3,5 @@ You can reject a request via email, the approvals center, or the Microsoft Flow 
 After you confirm your decision (rejection of the request), the flow runs the following steps:
 
 1. Sends an email to the person who requested vacation.
+2. Updates the SharePoint Online list with the decision, and the comments from the approver.
 
-1. Updates the SharePoint Online list with the decision, and the comments from the approver.

@@ -1,38 +1,34 @@
-<properties
-   pageTitle="Manage Flows in the Microsoft Flow Portal | Microsoft Flow"
-   description="Learn how to use the Microsoft Flow web portal to manage your flows."
-   services=""
-   suite="flow"
-   documentationCenter="na"
-   authors="msftman"
-   manager="anneta"
-   editor=""
-   tags=""
-   featuredVideoId="Mg67quraCYs"
-   courseDuration="3m"/>
+---
+title: Manage Flows in the Microsoft Flow Portal | Microsoft Docs
+description: Learn how to use the Microsoft Flow web portal to manage your flows.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: anneta
+editor: ''
+tags: ''
+featuredvideoid: Mg67quraCYs
+courseduration: 3m
 
-<tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="11/22/2016"
-   ms.author="deonhe"/>
+ms.service: flow
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 11/22/2016
+ms.author: deonhe
 
-
+---
 # Manage flows with the web portal
-
 The **Microsoft Flow** web portal located at **flow.microsoft.com** provides everything you need to administer your flows in a **web browser**.  The portal will work both with **desktop** and **mobile** browsers, but for the best **mobile experience**, you may want to use the **mobile app**.
 
 ## Getting to the web portal
-
 If you browse to **flow.microsoft.com** and sign in, you can view your list of flows by clicking **My flows** at the top of the page.
 
 ![My flows](./media/learning-manage-portal/my-flows.png)
 
 ## Managing flows
-
 To the right of your flow's name and last modified time, you'll see some a **toggle switch** and some **icons**.
 
 ![Flow options](./media/learning-manage-portal/flow-options.png)
@@ -52,6 +48,5 @@ Clicking a history item will drill down to a **detailed log** where you can see 
 ![Flow log](./media/learning-manage-portal/flow-log.png)
 
 ## Next lesson
-
 Now that we've learned about the **Microsoft Flow web portal**, let's see how we can manage our flows with the **mobile app**.
 

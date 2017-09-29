@@ -1,27 +1,26 @@
-<properties
-   pageTitle="Review this section | Microsoft Flow"
-   description="Review what you learned in this section of the Guided Learning for Microsoft Flow."
-   services=""
-   suite="flow"
-   documentationCenter="na"
-   authors="msftman"
-   manager="anneta"
-   editor=""
-   tags=""
-   featuredVideoId=""
-   courseDuration="3m"/>
+---
+title: Review this section | Microsoft Docs
+description: Review what you learned in this section of the Guided Learning for Microsoft Flow.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: anneta
+editor: ''
+tags: ''
+featuredvideoid: ''
+courseduration: 3m
 
-<tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="get-started-article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="11/22/2016"
-   ms.author="deonhe"/>
+ms.service: flow
+ms.devlang: na
+ms.topic: get-started-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 11/22/2016
+ms.author: deonhe
 
+---
 # Review the third section
-
 Let's review what we've learned in this section.
 
 You can administer **Microsoft Flow** through two interfaces: 

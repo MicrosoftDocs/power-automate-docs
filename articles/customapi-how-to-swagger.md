@@ -1,26 +1,24 @@
-<properties
-	pageTitle="OpenAPI extensions for custom connectors in Microsoft Flow | Microsoft Flow"
-	description="View the schema extensions required by OpenAPI to work with Microsoft Flow"
-	services=""
-    suite="flow"
-	documentationCenter=""
-	authors="sunaysv"
-	manager="anneta"
-	editor="sunaysv"/>
+---
+title: OpenAPI extensions for custom connectors in Microsoft Flow | Microsoft Docs
+description: View the schema extensions required by OpenAPI to work with Microsoft Flow
+services: ''
+suite: flow
+documentationcenter: ''
+author: sunaysv
+manager: anneta
+editor: sunaysv
 
-<tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="09/19/2017"
-   ms.author="sunayv"/>
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 09/19/2017
+ms.author: sunayv
 
+---
 # OpenAPI extensions for custom connectors in Microsoft Flow
-
 ## Introduction
-
 To create custom connectors for Microsoft Flow, Azure Logic Apps, 
 or Microsoft PowerApps, you must provide an OpenAPI definition file, 
 which is a language-agnostic machine-readable document that describes 
@@ -29,19 +27,18 @@ Along with OpenAPI's out-of-the-box functionality, you can also
 include these OpenAPI extensions when you create custom connectors 
 for Logic Apps and Flow:
 
-- `summary`
-- `x-ms-summary`
-- `description`
-- `x-ms-visibility`
-- `x-ms-dynamic-values`
-- `x-ms-dynamic-schema`
+* `summary`
+* `x-ms-summary`
+* `description`
+* `x-ms-visibility`
+* `x-ms-dynamic-values`
+* `x-ms-dynamic-schema`
 
 Here are more details about these extensions:
 
 <a name="summary"></a>
 
 ## summary
-
 Specifies the title for the action (operation). </br>
 Applies to: Operations </br>
 Recommended: Use *sentence case* for `summary`. </br>
@@ -60,7 +57,6 @@ Example: "When an event is added to calendar" or "Send an email"
 ```
 
 ## x-ms-summary
-
 Specifies the title for an entity. </br>
 Applies to: Parameters, Response Schema </br>
 Recommended: Use *title case* for `x-ms-summary`. </br>
@@ -85,7 +81,6 @@ Example: "Calendar ID", "Subject", "Event Description", and so on
 <a name="description"></a>
 
 ## description
-
 Specifies a verbose explanation about the operation's 
 functionality or an entity's format and function. </br>
 Applies to: Operations, Parameters, Response Schema </br>
@@ -107,7 +102,6 @@ Example: "This operation triggers when a new event is added to the calendar",
 <a name="visibility"></a>
 
 ## x-ms-visibility
-
 Specifies the user-facing visibility for an entity. </br>
 Possible values: `important`, `advanced`, and `internal` </br>
 Applies to: Operations, Parameters, Schemas
@@ -116,9 +110,11 @@ Applies to: Operations, Parameters, Schemas
 * `advanced` operations and parameters are hidden under an additional menu.
 * `internal` operations and parameters are hidden from the user.
 
-> [AZURE.NOTE] 
+> [!NOTE]
 > For parameters that are `internal` and `required`, 
 > you **must** provide default values for these parameters.
+> 
+> 
 
 Example: The **See more** menu and **Show advanced options** menu 
 are hiding `advanced` operations and parameters.
@@ -145,7 +141,6 @@ are hiding `advanced` operations and parameters.
 ```
 
 ## x-ms-dynamic-values
-
 Shows a populated list for the user so they can 
 select input parameters for an operation. </br>
 Applies to: Parameters </br>
@@ -155,15 +150,13 @@ to the parameter's definition. For example, see this [OpenAPI sample](https://pr
 !["x-ms-dynamic-values" for showing lists](./media/custom-connector-openapi-extensions/x-ms-dynamic-values.png)
 
 ### Properties for x-ms-dynamic-values
-
 | Name | Required or optional | Description |
-| ---- | -------------------- | ----------- | 
-| **operationID** | Required | The operation to call for populating the list. |
-| **value-path** | Required | A path string in the object inside `value-collection` that refers to the parameter value. If `value-collection` isn't specified, the response is evaluated as an array. |
-| **value-title** | Optional | A path string in the object inside `value-collection` that refers to the value's description. If `value-collection` isn't specified, the response is evaluated as an array. |
-| **value-collection** | Optional | A path string that evaluates to an array of objects in the response payload |
-| **parameters** | Optional | An object whose properties specify the input parameters required to invoke a dynamic-values operation |
-
+| --- | --- | --- |
+| **operationID** |Required |The operation to call for populating the list. |
+| **value-path** |Required |A path string in the object inside `value-collection` that refers to the parameter value. If `value-collection` isn't specified, the response is evaluated as an array. |
+| **value-title** |Optional |A path string in the object inside `value-collection` that refers to the value's description. If `value-collection` isn't specified, the response is evaluated as an array. |
+| **value-collection** |Optional |A path string that evaluates to an array of objects in the response payload |
+| **parameters** |Optional |An object whose properties specify the input parameters required to invoke a dynamic-values operation |
 
 Here's an example that shows the properties in `x-ms-dynamic-values`:
 
@@ -183,7 +176,6 @@ Here's an example that shows the properties in `x-ms-dynamic-values`:
 ```
 
 ## Example: All the OpenAPI extensions up to this point
-
 ``` json
 "/api/lists/{listID-dynamic}": {
     "get": {
@@ -210,7 +202,6 @@ Here's an example that shows the properties in `x-ms-dynamic-values`:
 ```
 
 ## x-ms-dynamic-schema
-
 Indicates that the schema for the current parameter or response is dynamic. 
 This object can invoke an operation that's defined by the value of this field, dynamically discover the schema, and display the appropriate UI 
 for collecting user inputs or show available fields. 
@@ -236,13 +227,12 @@ In this version, the user selects "Food":
 !["x-ms-dynamic-schema-response" for selected item "Food"](./media/custom-connector-openapi-extensions/x-ms-dynamic-schema-output2.png)
 
 ### Properties for x-ms-dynamic-schema
-
 | Name | Required or optional | Description |
-| ---- | -------------------- | ----------- | 
-| **operationID** | Required | The operation to call for fetching the schema |
-| **parameters** | Required | An object whose properties specify the input parameters required to invoke a dynamic-schema operation |
-| **value-path** |Optional | A path string that refers to the property that has the schema. </br>If not specified, the response is assumed to contain the schema in the root object's properties. |
-||||
+| --- | --- | --- |
+| **operationID** |Required |The operation to call for fetching the schema |
+| **parameters** |Required |An object whose properties specify the input parameters required to invoke a dynamic-schema operation |
+| **value-path** |Optional |A path string that refers to the property that has the schema. </br>If not specified, the response is assumed to contain the schema in the root object's properties. |
+|  | | |
 
 Here's an example for a dynamic parameter:
 
@@ -284,9 +274,9 @@ Here's an example for a dynamic response:
 ```
 
 ## Next steps
-
 [Register a custom connector](register-custom-api.md).
 
 [Use an ASP.NET Web API](customapi-web-api-tutorial.md).
 
 [Register an Azure Resource Manager API](customapi-azure-resource-manager-tutorial.md).
+
