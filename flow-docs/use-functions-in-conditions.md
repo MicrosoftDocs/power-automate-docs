@@ -72,45 +72,45 @@ Let's create the flow.
 ### Start with a blank flow
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
    
-    ![sign in](includes/media/modern-approvals/sign-in.png)
+    ![sign in](media/modern-approvals/sign-in.png)
 2. Select the **My flows** tab.
    
-    ![select my flows](includes/media/modern-approvals/select-my-flows.png)
+    ![select my flows](media/modern-approvals/select-my-flows.png)
 3. Select **Create from blank**.
    
-    ![create from blank](includes/media/modern-approvals/blank-template.png)
+    ![create from blank](media/modern-approvals/blank-template.png)
 
 ### Add a trigger to your flow
 1. Search for **Schedule**, and then select the **Schedule - Recurrence** trigger
    
-    ![schedule trigger](includes/media/schedule-trigger/schedule-trigger.png)
+    ![schedule trigger](media/schedule-trigger/schedule-trigger.png)
 2. Set the schedule to run once daily.
    
-    ![set schedule](includes/media/schedule-trigger/set-schedule.png)
+    ![set schedule](media/schedule-trigger/set-schedule.png)
 
 ### Select the spreadsheet and get all rows
 1. Select **New step** > **Add an action**.
    
-    ![new step](includes/media/new-step/action.png)
+    ![new step](media/new-step/action.png)
 2. Search for **rows**, and then select **Excel - Get rows**.
    
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
    
-    ![get Rows](includes/media/new-step/get-excel-rows.png)
+    ![get Rows](media/new-step/get-excel-rows.png)
 3. Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
    
-    ![select spreadsheet](includes/media/new-step/select-spreadsheet.png)
+    ![select spreadsheet](media/new-step/select-spreadsheet.png)
 4. Select the table that contains your data from the **Table name** list.
    
-    ![select table](includes/media/new-step/select-table.png)
+    ![select table](media/new-step/select-table.png)
 
 ### Check the status column of each row
 1. Select **New step** > **More** > **Add an apply to each**.
    
-    ![select table](includes/media/new-step/apply-to-each.png)
+    ![select table](media/new-step/apply-to-each.png)
 2. Add the **Value** token to the **Select an output from previous steps** box.
    
-    ![select table](includes/media/apply-to-each/add-value-token.png)
+    ![select table](media/apply-to-each/add-value-token.png)
 3. Select **Add a condition** > **Edit in advanced mode**.
 4. Add the following **or** function. This **or** function checks the value of each row in the table (a row is known as an item when accessed in a function). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** function evaluates to "true".
    
@@ -126,12 +126,12 @@ Let's create the flow.
 1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
 2. Search for **Delete row**, and then select **Excel - Delete row**.
    
-    ![delete row image](includes/media/new-step/select-delete-excel-row.png)
+    ![delete row image](media/new-step/select-delete-excel-row.png)
 3. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
 4. In the **Table name** list, select the table that contains your data.
 5. Place the **Row id** token in the **Row id** box.
    
-    ![spreadsheet file](includes/media/new-step/delete-excel-row.png)
+    ![spreadsheet file](media/new-step/delete-excel-row.png)
 
 ### Name the flow and save it
 1. Give your flow a name and then select the **Create flow** button.

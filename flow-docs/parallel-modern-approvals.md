@@ -38,7 +38,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 ## Add a trigger
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-   ![SharePoint info](includes/media/parallel-modern-approvals/select-sharepoint-site-info.png)
+   ![SharePoint info](media/parallel-modern-approvals/select-sharepoint-site-info.png)
 
 ## Get the manager for the person who created the vacation request
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
@@ -118,7 +118,7 @@ Let's continue:
 6. Enter **Approve** (this text is case-sensitive) into the last box.
 7. Your condition card should now resemble this example:
    
-    ![flow with parallel branches condition](includes/media/parallel-modern-approvals/condition-card.png)
+    ![flow with parallel branches condition](media/parallel-modern-approvals/condition-card.png)
    
    > [!NOTE]
    > This condition checks the response from the **Start an approval** action that goes to the employee's manager.
@@ -133,7 +133,7 @@ Perform the following steps on the **IF YES, DO NOTHING** side of the **Conditio
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure pre-approved email template](includes/media/parallel-modern-approvals/yes-email-config.png)
+   ![configure pre-approved email template](media/parallel-modern-approvals/yes-email-config.png)
 
 To send an email when a request is rejected, use the **IF NO, DO NOTHING** side of the **Condition** branch, and then repeat the preceding steps to add a template for the rejection email.
 
@@ -153,7 +153,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 ## Complete the flow
 1. Select **New step** > **Add an action**
    
-    ![update item configuration](includes/media/parallel-modern-approvals/add-an-action-2-step.png)
+    ![update item configuration](media/parallel-modern-approvals/add-an-action-2-step.png)
 2. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
    
    ![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
