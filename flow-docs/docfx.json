@@ -21,11 +21,12 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/includes/media/**"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/*.md"
         ]
       }
     ],
