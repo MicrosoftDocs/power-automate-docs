@@ -22,7 +22,7 @@
 ## [Sequential approvals](sequential-modern-approvals.md)
 ## [Parallel approvals](parallel-modern-approvals.md)
 ## [Integrated approvals](common-data-model-approve.md)
-## [Use the mobile app](.md)
+## Use the mobile app
 ## [Create a flow](mobile-create-flow.md)
 ## [Create a button flow](introduction-to-button-flows.md)
 ## [Create a button flow with trigger tokens](introduction-to-button-trigger-tokens.md)
