@@ -100,7 +100,7 @@ Note: This action sends the pre-approval request to the email address in the **A
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
 2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow** card.
    
-   ![get pre-approver's manager](includes/media/modern-approvals/get-pre-approver-manager.png)
+   ![get pre-approver's manager](media/modern-approvals/get-pre-approver-manager.png)
 
 ## Add the final approval action
 1. Use the [add an approval action for pre-approvals](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) steps we did earlier to add, and then configure another **Start an approval** action. This action sends an email request for final approval.

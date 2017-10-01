@@ -7,33 +7,33 @@ To approve a request:
    
      Note: If you're using a mobile device with the Microsoft Flow app installed, the Microsoft Flow app launches, otherwise, the approvals center opens in your browser.
    
-    ![request email](includes/media/modern-approvals/email-approval-request.png)
+    ![request email](media/modern-approvals/email-approval-request.png)
 2. Enter a comment, and then select the **Confirm** button.
    
-    ![enter comment](includes/media/modern-approvals/request-in-approval-center.png)
+    ![enter comment](media/modern-approvals/request-in-approval-center.png)
 
 ### From the approvals center
 1. Sign into [Microsoft Flow](https://flow.microsoft.com).
    
-    ![sign in](includes/media/modern-approvals/sign-in.png)
+    ![sign in](media/modern-approvals/sign-in.png)
 2. Select the **Approvals** tab.
    
-    ![create from blank](includes/media/modern-approvals/approvals-tab.png)
+    ![create from blank](media/modern-approvals/approvals-tab.png)
 3. Select **Approve** on the request you want to approve.
    
-    ![create from blank](includes/media/modern-approvals/approvals-cards.png)
+    ![create from blank](media/modern-approvals/approvals-cards.png)
 4. Add a note, and then select the **Confirm** button.
    
-    ![add note then confirm](includes/media/modern-approvals/approval-selection-card.png)
+    ![add note then confirm](media/modern-approvals/approval-selection-card.png)
 
 ### From the Microsoft Flow app
 1. On your mobile phone with the Microsoft Flow app installed, select **Approve** from the request approval email.
 2. Select **Confirm** in the upper right corner of the screen.
    
-    ![select confirm](includes/media/modern-approvals/mobile-approval.png)
+    ![select confirm](media/modern-approvals/mobile-approval.png)
 3. The success page shows, indicating that your approval has been recorded.
    
-    ![success page](includes/media/modern-approvals/mobile-approval-confirmation.png)
+    ![success page](media/modern-approvals/mobile-approval-confirmation.png)
 
 Note: The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
 
