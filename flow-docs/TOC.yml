@@ -82,7 +82,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Develop: enterprise developers
+- name: "Develop: enterprise developers"
   items:
   - name: Microsoft Flow for enterprise developers
     href: dev-enterprise-intro.md
