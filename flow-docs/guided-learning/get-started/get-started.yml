@@ -43,6 +43,8 @@ items:
     * Copy files from one service to another.
     * Collect data about your business, and share that information with your team.
     * Automate approval workflows.
+    
+    [!INCLUDE [include-test.md](include-test.md)]
 - title: Create a flow from a template
   durationInMinutes: 9
   content: |
