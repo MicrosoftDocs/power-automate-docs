@@ -1,0 +1,29 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Work with approvals
+metadata:
+  title: Work with approvals
+  description: Learn how to manage the approval of documents and processes in Microsoft Flow.
+  audience: Developer
+  level: Beginner
+  nextTutorialHref: administer-flows.yml
+  nextTutorialTitle: Administer flows
+  displayType: one-column
+items:
+- durationInMinutes: 1
+  content: |
+    Learn how to manage the approval of documents and processes in Microsoft Flow.
+- title: Create an approval request
+  durationInMinutes: 4
+  content: |
+    > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+
+    Add content here
+- title: Process an approval request
+  durationInMinutes: 7
+  content: |
+    > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+    Add content here
+- content: |
+    You've completed the **Work with approvals** section of Microsoft Flow Guided Learning.

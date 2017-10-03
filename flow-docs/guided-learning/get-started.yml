@@ -6,45 +6,19 @@ metadata:
   description: Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
   audience: Developer
   level: Beginner
-  nextTutorialHref: http://www.bing.com
+  nextTutorialHref: build-flows.yml
   nextTutorialTitle: Build flows
   displayType: one-column
 items:
 - durationInMinutes: 1
   content: |
     Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
-- title: Guided Learning for Microsoft Flow
+- title: Understand Microsoft Flow basics
   durationInMinutes: 14
   content: |
     > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
 
-    Welcome to Guided Learning for Microsoft Flow. This **self-paced online course** explains Microsoft Flow in a sequential way so that you can build your knowledge from the ground up. The course is designed to provide **guidance in understandable chunks** with lots of **visuals and examples**, following a logical progression to help you learn principles and details.
-    
-    In this course, you'll learn about Microsoft Flow and its concepts, see how to **build flows**, **manage them**, and **administer them** in your environment. You'll be presented with information and scenarios for a fictional company called Contoso Flooring, but you'll see how to use the same scenarios in your business or your clients' businesses.
-    
-    If you're a beginner with Microsoft Flow, this course will get you going. If you already have some experience, this course will tie concepts together and fill in the gaps. This course is a work in progress, so **please let us know how we're doing** and what other topics you want to see in this course.
-    
-    ## What is Microsoft Flow?
-    Microsoft Flow is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a flow that adds a lead to **Dynamics 365** and a record in **MailChimp** whenever someone with more than 100 followers tweets about your company.
-    
-    ![Flow conceptual sketch](./media/learning-introduce-flow/conceptual.png)
-    
-    When you sign up, you can **connect to more than 100 services** and **manage data in either the cloud or on-premises sources** such as SharePoint and SQL Server. The list of applications and services that you can use with Microsoft Flow grows constantly.
-    
-    ![List of services](./media/learning-introduce-flow/services.png)
-    
-    ## What can you do with Microsoft Flow?
-    You can use Microsoft Flow to **automate workflows** between your favorite **applications and services**, synchronize files, get notifications, collect data, and more. 
-    
-    For example, you can **automate** these tasks:
-    
-    * Instantly respond to high-priority notifications or emails.
-    * Capture, track, and follow up with new sales leads.
-    * Copy files from one service to another.
-    * Collect data about your business, and share that information with your team.
-    * Automate approval workflows.
-    
-    [!INCLUDE [include-test.md](include-test.md)]
+    Add content here
 - title: Create a flow from a template
   durationInMinutes: 9
   content: |
@@ -58,4 +32,4 @@ items:
 
     Add content here
 - content: |
-    You've completed the "Get Started" section of Microsoft Flow Guided Learning.
+    You've completed the **Get started** section of Microsoft Flow Guided Learning.
