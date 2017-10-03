@@ -1,26 +1,3 @@
----
-title: Create scheduled flows | Microsoft Docs
-description: Learn how to create flows that run on a schedule.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: hh4nmS_M8Co
-courseduration: 9m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Create scheduled flows
 In this topic, you’ll see how to run pre-scheduled flows using a trigger called **Recurrence**.  You’ll build a flow for the Contoso marketing team that automatically pulls customer email addresses from an Excel table on OneDrive. You’ll configure the flow so that once per day, new email addresses that were added to the spreadsheet are then added to a MailChimp customer list. 
 
 ## Create a scheduled flow

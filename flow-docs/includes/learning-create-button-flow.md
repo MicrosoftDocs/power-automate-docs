@@ -1,26 +1,3 @@
----
-title: Create a button flow | Microsoft Docs
-description: Learn how to create a flow that you trigger from a button.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: s8ozmlVRV-Q
-courseduration: 11m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Create a button flow
 In this topic, you will learn how to **build a button flow** for the Contoso Flooring Company. 
 
 Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members on a team.  

@@ -1,26 +1,3 @@
----
-title: Use the Microsoft Flow mobile app | Microsoft Docs
-description: Learn how to use the Microsoft Flow mobile app to create and manage flows.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: o80hRMpb0_4
-courseduration: 8m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/15/2017
-ms.author: deonhe
-
----
-# Use the Microsoft Flow mobile app
 In this lesson, we'll be covering the Microsoft Flow mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
 First, you’ll need to **download** and **install** the Microsoft Flow app from your app store.

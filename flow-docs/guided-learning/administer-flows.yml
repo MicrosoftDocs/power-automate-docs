@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Administer flows
+title: Administer flows | Microsoft Flow
 metadata:
   title: Administer flows
   description: Learn about using environments and data protection policies to manage data sources and flows.
@@ -16,12 +16,12 @@ items:
   content: |
     > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-environments](../includes/learning-environments.md)]
 - title: Use data loss prevention policies
   durationInMinutes: 6
   content: |
     > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
 - content: |
     You've completed the **Administer flows** section of Microsoft Flow Guided Learning.
