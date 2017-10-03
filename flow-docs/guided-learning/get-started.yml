@@ -6,7 +6,7 @@ metadata:
   description: Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
   audience: Developer
   level: Beginner
-  nextTutorialHref: build-flows.yml
+  nextTutorialHref: build-flows
   nextTutorialTitle: Build flows
   displayType: one-column
 items:
