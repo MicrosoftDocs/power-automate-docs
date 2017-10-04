@@ -66,9 +66,9 @@ sections:
 - items:
   - type: list
     style: cards
-    className: Work with approvals
+    className: cardsF
     items:
-    - title: Manage flows
+    - title: Work with approvals
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-1">Create an approval request</a>
