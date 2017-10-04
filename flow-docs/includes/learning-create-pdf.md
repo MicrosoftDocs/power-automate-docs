@@ -1,26 +1,3 @@
----
-title: Convert and store documents | Microsoft Docs
-description: Learn how to create a flow for document conversion.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: ukRhuJGC9A0
-courseduration: 14m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Convert and store documents
 In this topic, you’ll see how Contoso Flooring uses Microsoft Flow to automatically convert documents to a standard format and then store them in SharePoint Online for safekeeping in the cloud. You'll create a flow that detects when a new file has been added to a OneDrive for Business folder, and then converts that file to PDF and stores it to a SharePoint Online folder. 
 
 ## Prerequisites

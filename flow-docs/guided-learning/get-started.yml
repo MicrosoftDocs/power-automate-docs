@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Get Started
+title: Get Started | Microsoft Flow
 metadata:
   title:  Get Started
   description: Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
@@ -18,18 +18,18 @@ items:
   content: |
     > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
 - title: Create a flow from a template
   durationInMinutes: 9
   content: |
     > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
 - title: Use the Microsoft Flow mobile app
   durationInMinutes: 8
   content: |
     > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
 - content: |
     You've completed the **Get started** section of Microsoft Flow Guided Learning.

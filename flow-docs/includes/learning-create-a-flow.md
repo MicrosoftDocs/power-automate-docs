@@ -1,26 +1,3 @@
----
-title: Create a flow from a template | Microsoft Docs
-description: Learn how to create and manage a flow based on a template.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: D46qE7FuShM
-courseduration: 9m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/15/2017
-ms.author: deonhe
-
----
-# Create a flow from a template
 Welcome back to Guided Learning for Microsoft Flow. In this lesson, you will see more of the Microsoft Flow environment, and you can **build your first flow**.
 
 Getting started with Microsoft Flow is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  

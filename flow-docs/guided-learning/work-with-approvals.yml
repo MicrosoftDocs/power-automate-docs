@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Work with approvals
+title: Work with approvals | Microsoft Flow
 metadata:
   title: Work with approvals
   description: Learn how to manage the approval of documents and processes in Microsoft Flow.
@@ -18,12 +18,12 @@ items:
   content: |
     > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
 - title: Process an approval request
   durationInMinutes: 7
   content: |
     > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
 - content: |
     You've completed the **Work with approvals** section of Microsoft Flow Guided Learning.

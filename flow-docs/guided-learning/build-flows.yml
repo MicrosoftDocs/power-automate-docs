@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Build flows
+title: Build flows | Microsoft Flow
 metadata:
   title:  Build flows
   description: Learn how to build flows that copy and collect data, as well as flows that send notifications. Run your flows based on a schedule or on-demand from a button. 
@@ -18,42 +18,42 @@ items:
   content: |
     > [!Video https://www.youtube.com/embed/s8ozmlVRV-Q?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-create-button-flow](../includes/learning-create-button-flow.md)]
 - title: Get notifications
   durationInMinutes: 6
   content: |
     > [!Video https://www.youtube.com/embed/VEHKGLY0hq4?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-get-notifications](../includes/learning-get-notifications.md)]
 - title: Copy files
   durationInMinutes: 4
   content: |
     > [!Video https://www.youtube.com/embed/liL0IWNcRcc?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-copy-files](../includes/learning-copy-files.md)]
 - title: Collect data
   durationInMinutes: 5
   content: |
     > [!Video https://www.youtube.com/embed/U54cdN0tXEI?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-collect-data](../includes/learning-collect-data.md)]
 - title: Post tweets from a flow
   durationInMinutes: 15
   content: |
     > [!Video https://www.youtube.com/embed/y1iDal8XPAo?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-push-notifications](../includes/learning-push-notifications.md)]
 - title: Create scheduled flows
   durationInMinutes: 9
   content: |
     > [!Video https://www.youtube.com/embed/hh4nmS_M8Co?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-recurrence](../includes/learning-recurrence.md)]
 - title: Convert and store documents
   durationInMinutes: 14
   content: |
     > [!Video https://www.youtube.com/embed/ukRhuJGC9A0?rel=0]
 
-    Add content here
+    [!INCLUDE [learning-create-pdf](../includes/learning-create-pdf.md)]
 - content: |
     You've completed the **Build flows** section of Microsoft Flow Guided Learning.

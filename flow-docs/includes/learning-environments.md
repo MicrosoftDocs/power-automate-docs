@@ -1,26 +1,3 @@
----
-title: Use environments to manage flows | Microsoft Docs
-description: Learn about using environments to separate and manage flows.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: wnScBLz7css
-courseduration: 8m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Use environments to manage flows
 ## What is an environment:
 An environment is a virtual space used to store, manage and share apps, flows, and business data in the Common Data Service. Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
 

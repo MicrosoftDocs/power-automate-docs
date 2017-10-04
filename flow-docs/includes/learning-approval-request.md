@@ -1,26 +1,3 @@
----
-title: Process an approval request | Microsoft Docs
-description: Learn how to approve or reject an approval request.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: -0r5ZKVEIS4
-courseduration: 7m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Process an approval request
 In a previous topic, you saw how to build an approval process around tweets that are stored in a SharePoint list.  In this topic, you'll see what the experience looks like when an approver receives a new approval request. 
 
 ## Create and process a request

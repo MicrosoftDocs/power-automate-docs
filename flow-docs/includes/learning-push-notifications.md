@@ -1,26 +1,3 @@
----
-title: Post tweets from a flow | Microsoft Docs
-description: Learn how to post tweets based on data in a SharePoint list.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: y1iDal8XPAo
-courseduration: 15m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Post tweets from a flow
 For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
 
 ## Connect Microsoft Flow Services

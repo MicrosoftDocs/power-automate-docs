@@ -1,26 +1,3 @@
----
-title: Get notifications | Microsoft Docs
-description: Learn how to get notifications on your mobile device with Microsoft Flow.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: anneta
-editor: ''
-tags: ''
-featuredvideoid: VEHKGLY0hq4
-courseduration: 6m
-
-ms.service: flow
-ms.devlang: na
-ms.topic: get-started-article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/16/2017
-ms.author: deonhe
-
----
-# Get notifications from a flow
 A common use of **Microsoft Flow** is to get a **notification** when something happens.  Notifications can be **emails**, **text messages**, or **push notifications on your phone**.
 
 ![From a template](./media/learning-get-notifications/template-notifications.png)
