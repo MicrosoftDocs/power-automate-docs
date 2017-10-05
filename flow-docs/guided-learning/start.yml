@@ -1,9 +1,14 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Guided Learning
+title: Microsoft Flow Guided Learning
 metadata:
-  title: Guided Learning
+  title: Microsoft Flow Guided Learning
   description: Start your learning journey through Flow with this sequenced collection of courses, and understand the extensive and powerful capabilities of Flow.
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.date: 10/04/2017
+  ms.author: deonhe
 sections:
 - items:
   - type: markdown

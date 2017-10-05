@@ -1,14 +1,19 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Work with approvals | Microsoft Flow
+title: Work with approvals
 metadata:
-  title: Work with approvals
+  title: Work with approvals | Microsoft Flow
   description: Learn how to manage the approval of documents and processes in Microsoft Flow.
   audience: Developer
   level: Beginner
   nextTutorialHref: administer-flows
   nextTutorialTitle: Administer flows
   displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.date: 10/04/2017
+  ms.author: deonhe
 items:
 - durationInMinutes: 1
   content: |
