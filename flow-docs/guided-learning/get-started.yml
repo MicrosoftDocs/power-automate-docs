@@ -1,14 +1,19 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Get Started | Microsoft Flow
+title: Get Started
 metadata:
-  title:  Get Started
+  title:  Get Started | Microsoft Flow
   description: Welcome to Guided Learning for Microsoft Flow. This self-paced online course explains Microsoft Flow in a sequential way, so you can build your knowledge from the ground up.
   audience: Developer
   level: Beginner
   nextTutorialHref: build-flows
   nextTutorialTitle: Build flows
   displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.date: 10/04/2017
+  ms.author: deonhe
 items:
 - durationInMinutes: 1
   content: |

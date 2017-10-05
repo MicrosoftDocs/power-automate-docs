@@ -1,14 +1,19 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Build flows | Microsoft Flow
+title: Build flows
 metadata:
-  title:  Build flows
+  title:  Build flows | Microsoft Flow
   description: Learn how to build flows that copy and collect data, as well as flows that send notifications. Run your flows based on a schedule or on-demand from a button. 
   audience: Developer
   level: Beginner
   nextTutorialHref: work-with-approvals
   nextTutorialTitle: Work with approvals
   displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.date: 10/04/2017
+  ms.author: deonhe
 items:
 - durationInMinutes: 1
   content: |
