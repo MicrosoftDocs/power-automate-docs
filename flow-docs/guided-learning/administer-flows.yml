@@ -1,12 +1,17 @@
 ### YamlMime:YamlDocument
 documentType: Tutorial
-title: Administer flows | Microsoft Flow
+title: Administer flows
 metadata:
-  title: Administer flows
+  title: Administer flows | Microsoft Flow
   description: Learn about using environments and data protection policies to manage data sources and flows.
   audience: Developer
   level: Beginner
   displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.date: 10/04/2017
+  ms.author: deonhe
 items:
 - durationInMinutes: 1
   content: |
