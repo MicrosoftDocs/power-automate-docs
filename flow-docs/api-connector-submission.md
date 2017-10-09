@@ -52,9 +52,9 @@ To be certified, your connector is reviewed in two phases:
    
     A well written connector uses friendly names and descriptions for each entity. We evaluate your swagger to ensure that each operation, input parameter and response attribute contains:
    
-   * [Summary](/azure/logic-apps/custom-connector-openapi-extensions#summary)
-   * [Description](../azure/logic-apps/custom-connector-openapi-extensions.md#description)
-   * [Visibility information](../logic-apps/custom-connector-openapi-extensions.md#visibility)
+   * [Summary](https://docs.microsoft.com/azure/logic-apps/custom-connector-openapi-extensions#summary)
+   * [Description](https://docs.microsoft.com/azure/logic-apps/custom-connector-openapi-extensions#description)
+   * [Visibility information](https://docs.microsoft.com/azure/logic-apps/custom-connector-openapi-extensions#visibility)
 
 ## Nominate and submit your connector to Microsoft for certification
 To apply for certification, follow these steps:
