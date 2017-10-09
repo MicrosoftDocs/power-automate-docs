@@ -52,7 +52,7 @@ To be certified, your connector is reviewed in two phases:
    
     A well written connector uses friendly names and descriptions for each entity. We evaluate your swagger to ensure that each operation, input parameter and response attribute contains:
    
-   * [Summary](../logic-apps/custom-connector-openapi-extensions.md#summary)
+   * [Summary](azure/logic-apps/custom-connector-openapi-extensions#summary)
    * [Description](../logic-apps/custom-connector-openapi-extensions.md#description)
    * [Visibility information](../logic-apps/custom-connector-openapi-extensions.md#visibility)
 
