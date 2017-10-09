@@ -1,3 +1,7 @@
-- name: Microsoft Flow
-  tocHref: /flow
-  topicHref: /flow
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Flow
+    tocHref: /flow
+    topicHref: /flow/index
