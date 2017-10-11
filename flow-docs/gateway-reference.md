@@ -94,7 +94,7 @@ For information about how to provide proxy information for your gateway, see [Co
 
 You can verify whether your firewall, or proxy, may be blocking connections by running the following command from a PowerShell prompt. This command tests connectivity to the Azure Service Bus. This command only tests network connectivity and doesn't impact the cloud server service or the gateway. It helps to determine whether your machine has connectivity to the Internet.
 
-```batchfile
+```powershell
 Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
 ```
 
