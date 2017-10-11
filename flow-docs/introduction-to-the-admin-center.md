@@ -1,5 +1,5 @@
 ---
-title: Learn how to use the admin center to manage environments and data loss prevention policies. | Microsoft Docs
+title: Use the admin center to manage environments and data loss prevention. | Microsoft Docs
 description: The Flow admin center is used by tenant and environment admins to manage data loss prevention polices and environments for Microsoft Flow deployments.
 services: ''
 suite: flow
