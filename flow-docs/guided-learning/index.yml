@@ -22,7 +22,8 @@ sections:
     items:
     - title: Get Started
       image: 
-        src: https://docs.microsoft.com/media/logos/logo_pluralsight.svg
+        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
+        height: 30
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
@@ -42,6 +43,9 @@ sections:
     className: cardsA
     items:
     - title: Build flows
+      image: 
+        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
+        height: 30
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-1">Create a button flow</a>
@@ -77,6 +81,9 @@ sections:
     className: cardsA
     items:
     - title: Work with approvals
+      image: 
+        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
+        height: 30
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-1">Create an approval request</a>
@@ -92,6 +99,9 @@ sections:
     className: cardsA
     items:
     - title: Administer flows
+      image: 
+        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
+        height: 30
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-1">Use environments to manage flows</a>
