@@ -20,7 +20,7 @@ sections:
     style: cards
     className: cardsA
     items:
-    - title: 1. Get Started
+    - title: Get Started
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
@@ -39,7 +39,7 @@ sections:
     style: cards
     className: cardsA
     items:
-    - title: 2. Build flows
+    - title: Build flows
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-1">Create a button flow</a>
@@ -74,7 +74,7 @@ sections:
     style: cards
     className: cardsA
     items:
-    - title: 3. Work with approvals
+    - title: Work with approvals
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-1">Create an approval request</a>
@@ -89,7 +89,7 @@ sections:
     style: cards
     className: cardsA
     items:
-    - title: 4. Administer flows
+    - title: Administer flows
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-1">Use environments to manage flows</a>
@@ -102,9 +102,9 @@ sections:
 - items:
   - type: list
     style: cards
-    className: cardsA
+    className: cardsC
     items:
-    - title: 1. Get Started
+    - title: Get Started
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
@@ -118,7 +118,7 @@ sections:
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-3">Use the Microsoft Flow mobile app</a>
           <span style="float: right">8m</span>
         </p>
-    - title: 2. Build flows
+    - title: Build flows
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-1">Create a button flow</a>
@@ -151,9 +151,9 @@ sections:
 - items:
   - type: list
     style: cards
-    className: cardsA
+    className: cardsC
     items:
-    - title: 3. Work with approvals
+    - title: Work with approvals
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-1">Create an approval request</a>
@@ -163,8 +163,7 @@ sections:
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-2">Process an approval request</a>
           <span style="float: right">7m</span>
         </p>
-    items:
-    - title: 4. Administer flows
+    - title: Administer flows
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-1">Use environments to manage flows</a>
