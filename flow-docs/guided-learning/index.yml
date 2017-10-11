@@ -21,6 +21,8 @@ sections:
     className: cardsA
     items:
     - title: Get Started
+      image: 
+        src: https://docs.microsoft.com/media/logos/logo_pluralsight.svg
       html: |
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
@@ -88,90 +90,6 @@ sections:
   - type: list
     style: cards
     className: cardsA
-    items:
-    - title: Administer flows
-      html: |
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-1">Use environments to manage flows</a>
-          <span style="float: right">8m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-2">Use data loss prevention policies</a>
-          <span style="float: right">6m</span>
-        </p>
-- items:
-  - type: list
-    style: cards
-    className: cardsC
-    items:
-    - title: Get Started
-      html: |
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
-          <span style="float: right">14m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-2">Create a flow from a template</a>
-          <span style="float: right">9m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-3">Use the Microsoft Flow mobile app</a>
-          <span style="float: right">8m</span>
-        </p>
-- items:
-  - type: list
-    style: cards
-    className: cardsC
-    items:
-    - title: Build flows
-      html: |
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-1">Create a button flow</a>
-          <span style="float: right">11m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-2">Get notifications</a>
-          <span style="float: right">6m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-3">Copy files</a>
-          <span style="float: right">4m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-4">Collect data</a>
-          <span style="float: right">5m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-5">Post tweets from a flow</a>
-          <span style="float: right">15m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-6">Create scheduled flows</a>
-          <span style="float: right">9m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/build-flows?branch=master#step-7">Convert and store documents</a>
-          <span style="float: right">14m</span>
-        </p>
-- items:
-  - type: list
-    style: cards
-    className: cardsC
-    items:
-    - title: Work with approvals
-      html: |
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-1">Create an approval request</a>
-          <span style="float: right">4m</span>
-        </p>
-        <p>
-          <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/work-with-approvals?branch=master#step-2">Process an approval request</a>
-          <span style="float: right">7m</span>
-        </p>
-- items:
-  - type: list
-    style: cards
-    className: cardsC
     items:
     - title: Administer flows
       html: |
