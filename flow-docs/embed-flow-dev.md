@@ -30,7 +30,7 @@ To create flows, users will need either a **Microsoft Account** or a work or sch
 ## Show templates for your scenarios
 To start, add this code to show the flow templates directly in your website:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
@@ -56,7 +56,7 @@ If the user is in a certain context in your website or app, you might want to pa
 ### Full sample
 To show the top four templates about Wunderlist in German and to start the user with **myCoolList**:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
 &pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
@@ -72,20 +72,20 @@ Use the authenticated Flow SDK to allow users to create and manage flows directl
 ### Include the JavaScript for the authenticated SDK
 Include the SDK in your HTML code by following this example. You may also download, minify, and package the SDK with your product.
 
-```
+```javascript
 <script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### Create a container to contain the view
 Add an HTML div:
 
-```
+```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
 We recommend that you style this container so that it appears with appropriate dimensions in your experience:
 
-```
+```html
 <head>
     <style>
         .flowContainer iframe {
@@ -103,7 +103,7 @@ Note that the iframe won't render properly below 320 pixels in width and won't f
 ### Authentication against the SDK
 For listing flows that the user has already authored and also to create flows from templates, provide an authToken from AAD.
 
-```
+```javascript
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
@@ -129,7 +129,7 @@ For listing flows that the user has already authored and also to create flows fr
 
 You can find the `environmentId` by making the following api call, which returns the list of environments user has access to:
 
-```
+```http
 GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
@@ -138,7 +138,7 @@ This returns a JSON response with list of environments, from which you can pick 
 
 In this example, `requestParam` is defined as:
 
-```
+```javascript
 export interface IRpcRequestParam {
     callInfo: IRpcCallInfo,
     data?: any;
@@ -147,7 +147,7 @@ export interface IRpcRequestParam {
 
 Next, the `widgetDoneCallback` is a callback function that needs to be called once the host has the token. This is done because token acquisition is likely an async process. The parameters that need to be passed in when calling this function are `(errorResult: any, successResult: any)`. The successResult will depend on the callback type. For `GetAccessToken` the type is:
 
-```
+```javascript
 export interface IGetAccessTokenResult {
     token: string;
 }

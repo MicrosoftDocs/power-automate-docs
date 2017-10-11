@@ -78,18 +78,25 @@ Related considerations:
 The gateway runs as a Windows service and, as with any other Windows service, you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running, and then run either of these commands:
 
 * To stop the service, run this command:
-  
-    ````net stop PBIEgwService````
+
+```batchfile
+    net stop PBIEgwService
+```
+
 * To start the service, run this command:
-  
-    ````net start PBIEgwService````
+
+```batchfile
+    net start PBIEgwService
+```
 
 ## Configure a firewall or proxy
 For information about how to provide proxy information for your gateway, see [Configure proxy settings](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/).
 
 You can verify whether your firewall, or proxy, may be blocking connections by running the following command from a PowerShell prompt. This command tests connectivity to the Azure Service Bus. This command only tests network connectivity and doesn't impact the cloud server service or the gateway. It helps to determine whether your machine has connectivity to the Internet.
 
-````Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350````
+```batchfile
+Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+```
 
 The results should look like the output below. If **TcpTestSucceeded** is not *true*, you may be blocked by a firewall.
 
