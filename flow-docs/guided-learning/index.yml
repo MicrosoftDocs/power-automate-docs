@@ -99,7 +99,7 @@ sections:
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/administer-flows?branch=master#step-2">Use data loss prevention policies</a>
           <span style="float: right">6m</span>
         </p>
-        - items:
+- items:
   - type: list
     style: cards
     className: cardsE
