@@ -96,7 +96,7 @@ You will now use the OpenAPI file or Postman Collection to register your custom 
    
    * The authentication type is auto-populated based on what is defined in your OpenAPI `securityDefinitions` object. Below is an OAuth2.0 example.
      
-       ```
+       ```json
        "securityDefinitions": {
            "AAD": {
            "type": "oauth2",
