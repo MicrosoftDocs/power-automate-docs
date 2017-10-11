@@ -23,45 +23,45 @@ sections:
     - title: Get Started
       html: |
         <p>
-          <a href="get-started.yml#step-1">Understand Microsoft Flow basics</a>
+          <a href="get-started#step-1">Understand Microsoft Flow basics</a>
           <span style="float: right">14m</span>
         </p>
         <p>
-          <a href="get-started.yml#step-2">Create a flow from a template</a>
+          <a href="get-started#step-2">Create a flow from a template</a>
           <span style="float: right">9m</span>
         </p>
         <p>
-          <a href="get-started.yml#step-3">Use the Microsoft Flow mobile app</a>
+          <a href="get-started#step-3">Use the Microsoft Flow mobile app</a>
           <span style="float: right">8m</span>
         </p>
     - title: Build flows
       html: |
         <p>
-          <a href="build-flows.yml#step-1">Create a button flow</a>
+          <a href="build-flows#step-1">Create a button flow</a>
           <span style="float: right">11m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-2">Get notifications</a>
+          <a href="build-flows#step-2">Get notifications</a>
           <span style="float: right">6m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-3">Copy files</a>
+          <a href="build-flows#step-3">Copy files</a>
           <span style="float: right">4m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-4">Collect data</a>
+          <a href="build-flows#step-4">Collect data</a>
           <span style="float: right">5m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-5">Post tweets from a flow</a>
+          <a href="build-flows#step-5">Post tweets from a flow</a>
           <span style="float: right">15m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-6">Create scheduled flows</a>
+          <a href="build-flows#step-6">Create scheduled flows</a>
           <span style="float: right">9m</span>
         </p>
         <p>
-          <a href="build-flows.yml#step-7">Convert and store documents</a>
+          <a href="build-flows#step-7">Convert and store documents</a>
           <span style="float: right">14m</span>
         </p>
 - items:
@@ -72,20 +72,20 @@ sections:
     - title: Work with approvals
       html: |
         <p>
-          <a href="work-with-approvals.yml#step-1">Create an approval request</a>
+          <a href="work-with-approvals#step-1">Create an approval request</a>
           <span style="float: right">4m</span>
         </p>
         <p>
-          <a href="work-with-approvals.yml#step-2">Process an approval request</a>
+          <a href="work-with-approvals#step-2">Process an approval request</a>
           <span style="float: right">7m</span>
         </p>
     - title: Administer flows
       html: |
         <p>
-          <a href="administer-flows.yml#step-1">Use environments to manage flows</a>
+          <a href="administer-flows#step-1">Use environments to manage flows</a>
           <span style="float: right">8m</span>
         </p>
         <p>
-          <a href="administer-flows.yml#step-2">Use data loss prevention policies</a>
+          <a href="administer-flows#step-2">Use data loss prevention policies</a>
           <span style="float: right">6m</span>
         </p>
