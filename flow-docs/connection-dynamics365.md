@@ -126,7 +126,7 @@ This example also assigns the task to a specific user based on the user's record
 
   ![Flow recordId and type user](./media/connection-dynamics365/flow-recordid-user.png)
 
-To find a record's ID, see [Find the record ID](#find-the-record-id) later in this topic.
+To find a record's ID, see [Find the record ID](#find-the-records-id) later in this topic.
 
 > **Important:** Fields shouldn't contain a value if they have a description of "For internal use only." These fields include **Traversed path**, **Additional Parameters**, and **Time Zone Rule Version Number.**
 > 

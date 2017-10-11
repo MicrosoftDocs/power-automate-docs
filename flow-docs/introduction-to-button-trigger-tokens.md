@@ -89,5 +89,5 @@ Congratulations, you've just created a button flow that uses both the date and f
 ## Next steps
 * [Share button flows](share-buttons.md)
 * [Learn about button flows](introduction-to-button-flows.md)  
-* [Learn about flows](guided-learning/learning-introducing-flow.md)
+* [Learn about flows](guided-learning/get-started.yml#step-1)
 

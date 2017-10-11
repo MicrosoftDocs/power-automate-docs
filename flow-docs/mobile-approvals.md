@@ -49,7 +49,7 @@ To complete this walkthrough, you need:
 If you don't have any pending approval requests, create an [approval flow](modern-approvals.md), set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
 ## Approve requests and leave an optional comment
-1. If you haven't done so, follow the preceding steps to [display all pending approval requests](mobile-approvals.md#view-pending-approval-requests).
+1. If you haven't done so, follow the preceding steps to [view pending requests](mobile-approvals.md#view-pending-requests).
 2. Select **APPROVE** on the request that you want to approve.
    
     ![select approve](./media/mobile-approvals/select-approve.png)

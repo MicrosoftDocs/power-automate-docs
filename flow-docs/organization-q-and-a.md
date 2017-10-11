@@ -98,12 +98,12 @@ Removing of the Flow license or service for a user in your organization will res
 Note that this will only remove the Flow tile by default. A user may still choose to use Microsoft Flow as an individual.
 
 ### Why did 10,000 licenses for Microsoft Flow show up in my Office 365 tenant?
-Any person is the world can try out Microsoft Flow Plan 1 or 2 for 90 days, and these trial licenses represent the available capacity for new Flow users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Flow showing up in the Office 365 admin portal:
+Any person can try out Microsoft Flow Plan 1 or 2 for 90 days, and these trial licenses represent the available capacity for new Flow users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Flow showing up in the Office 365 admin portal:
 
 1. If at least one user in your tenant participated in the Flow public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft PowerApps and Logic flows"
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for PowerApps](#how-do-users-sign-up-for-powerapps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
+2. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for PowerApps](#how-do-people-sign-up-for-flow) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
    
     ![](./media/organization-q-and-a/licenses1.png)
 
