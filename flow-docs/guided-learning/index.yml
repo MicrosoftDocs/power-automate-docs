@@ -20,11 +20,10 @@ sections:
     style: cards
     className: cardsA
     items:
-    - title: Get Started
-      image: 
-        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
-        height: 30
       html: |
+        <p>
+            <img src="https://docs.microsoft.com/media/logos/logo_power-bi.svg" height="30"> <b>Get Started</b>
+        </p>
         <p>
           <a href="https://review.docs.microsoft.com/en-us/flow/guided-learning/get-started?branch=master#step-1">Understand Microsoft Flow basics</a>
           <span style="float: right">14m</span>
@@ -44,7 +43,7 @@ sections:
     items:
     - title: Build flows
       image: 
-        src: https://docs.microsoft.com/media/logos/logo_power-bi.svg
+        src: 
         height: 30
       html: |
         <p>
