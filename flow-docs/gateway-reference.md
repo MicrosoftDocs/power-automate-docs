@@ -11,7 +11,7 @@ tags: ''
 
 ms.service: flow
 ms.devlang: na
-ms.topic: article
+ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
@@ -154,7 +154,7 @@ This isn't the account used to connect to on-premises data sources or the work o
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
 
 **Question:** What if I block outbound connections? What do I need to open?
-**Answer:** See the [ports](gateway-reference.md#ports) and hosts that the gateway uses.
+**Answer:** See the [ports](gateway-reference.md#configure-ports) and hosts that the gateway uses.
 
 **Question:** Does the gateway have to be installed on the same machine as the data source?
 **Answer:** No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
