@@ -33,7 +33,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "extendBreadcrumb": "false",
+      "contributors_to_exclude": ["openpublishingbuild","sudeepku"],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "searchScope": ["Flow"],
       "uhfHeaderId": "MSFlowHeader"
