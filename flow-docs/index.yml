@@ -64,7 +64,7 @@ sections:
     - html: <a href="/en-us/azure/app-service/app-service-web-tutorial-custom-domain">Map an existing custom domain to your application </a>
     - html: <a href="/en-us/azure/app-service/app-service-web-tutorial-custom-SSL">Bind an existing SSL certificate to your application</a>
     - html: <a href="/en-us/azure/app-service/app-service-web-tutorial-content-delivery-network">Add a CDN to your application</a>
-- title: Free Pluralsight Video Training
+- title: Video Training on YouTube
   items:
   - type: list
     style: cards
@@ -80,7 +80,7 @@ sections:
       image: 
         src: https://docs.microsoft.com/media/logos/logo_pluralsight.svg
         href: https://www.pluralsight.com/courses/developing-nodejs-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
-- title: Samples
+- title: Other Heading 1
   items:
   - type: paragraph
     text: Find scripts to manage common tasks.
@@ -90,7 +90,7 @@ sections:
     items:
     - html: <a href="/en-us/powershell/azureps-cmdlets-docs">Azure PowerShell</a>
     - html: <a href="/cli/azure/appservice">Azure CLI</a>
-- title: Reference
+- title: Other Heading 2
   items:
   - type: list
     style: cards
