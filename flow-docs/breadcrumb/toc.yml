@@ -6,6 +6,6 @@
     tocHref: /flow
     topicHref: /flow/index
     items:
-    -name: Guided Learning
-     tocHref: /flow/guided-learning
-     topicHref: /flow/guided-learning/index
+    - name: Guided Learning
+      tocHref: /flow/guided-learning
+      topicHref: /flow/guided-learning/index
