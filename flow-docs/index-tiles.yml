@@ -81,7 +81,7 @@ sections:
     - href: https://review.docs.microsoft.com/flow/share-buttons 
       title: Let others use your buttons
       image: 
-        src: https://docs.microsoft.com/azure/media/common/i_setup.svg
+        src: https://docs.microsoft.com/media/common/i_setup.svg
     - href: https://review.docs.microsoft.com/flow/create-team-flows
       title: Share ownership of your flows
       image:
@@ -114,4 +114,5 @@ sections:
     - html: <a href="https://review.docs.microsoft.com/flow/environments-overview-admin">Manage Microsoft Flow for an organization</a>
     - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
     - html: <a href="https://review.docs.microsoft.com/flow/customapi-web-api-tutorial">Create a custom connector</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">View past events on demand</a>
     - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
