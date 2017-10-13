@@ -94,18 +94,6 @@ sections:
   items:
   - type: markdown
     text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
-- title: Free Node.js and Azure Video Training on Pluralsight
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: https://www.pluralsight.com/courses/developing-nodejs-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
-      image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: 'Get Started: Node.js on Azure'
-- title: Samples
   items:
   - type: list
     style: unordered
@@ -115,7 +103,7 @@ sections:
     - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/">Getting started with Azure Blob Service in a Node.js app</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/">Integrating Azure AD into a Node.js app</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/key-vault-node-getting-started">Getting started with Key Vault using Azure</a>
-- title: Advanced Step-by-Step Tutorials
+- title: Advanced Tutorials
   items:
   - type: paragraph
     text: Learn how to use expressions, the REST API, and how to create custom connectors, and more...
@@ -124,7 +112,6 @@ sections:
     items:
     - html: <a href="https://review.docs.microsoft.com/flow/">Fine tune your flows with expressions</a>
     - html: <a href="https://review.docs.microsoft.com/flow/environments-overview-admin">Manage Microsoft Flow for an organization</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">Learn to use REST APIs with your flows</a>
+    - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
     - html: <a href="https://review.docs.microsoft.com/flow/customapi-web-api-tutorial">Create a custom connector</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">View past events on demand</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">Expand your flows with Logic Apps</a>
+    - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
