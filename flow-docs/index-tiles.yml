@@ -4,18 +4,16 @@ title: Microsoft Flow Docs
 metadata:
   title: Microsoft Flow docs, videos, reference and more
   description: Get started creating, sharing and managing flows using the resources here. You can start with a simple button, or create your own approval flows.
-  keywords: flow, workflow, azure
-  author: msftman
-  ms.author: deonhe
+  author: MSFTMan
   manager: anneta
+  layout: LandingPage
+  ms.assetid: 
+  ms.service: flow
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
   ms.date: 10/18/2017
-  ms.topic: article
-  ms.prod: azure
-  featureFlags:
-  - clicktale
-  ms.technology: azure
-  ms.devlang: nodejs
-  ms.service: Microsoft Flow
+  ms.author: deonhe
 sections:
 - items:
   - type: markdown
@@ -27,8 +25,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: https://flow.microsoft.com/guided-learning/learning-introduce-flow/
-      html: <p>Take the Guided Learning tour</p>
+      html: <p><a href="/guided-learning/get-started#step-1">Take the Guided Learning tour</a></p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Take a tour
