@@ -25,7 +25,8 @@ sections:
     className: cardsM
     columns: 2
     items:
-      html: <p><a href="/guided-learning/get-started#step-1">Take the Guided Learning tour</a></p>
+    - href: https://review.docs.microsoft.com/flow/guided-learning/get-started#step-1/
+      html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Take a tour
