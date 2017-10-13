@@ -1,52 +1,62 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Azure for Node.js developers
+title: Microsoft Flow Docs
 metadata:
-  title: Azure for Node.js developers - Tutorials, API Reference
-  description: Get started developing apps with Azure using the resources below to find great quickstarts, tutorials, and tools for Node.js developers.
-  keywords: Azure, Node.js, SDK, API, npm
-  author: tomarcher
-  ms.author: tarcher
-  manager: douge
-  ms.date: 07/14/2017
+  title: Microsoft Flow docs, videos, reference and more
+  description: Get started creating, sharing and managing flows using the resources here. You can start with a simple button, or create your own approval flows.
+  keywords: flow, workflow, azure
+  author: msftman
+  ms.author: deonhe
+  manager: anneta
+  ms.date: 10/18/2017
   ms.topic: article
   ms.prod: azure
   featureFlags:
   - clicktale
   ms.technology: azure
   ms.devlang: nodejs
-  ms.service: multiple
+  ms.service: Microsoft Flow
 sections:
 - items:
   - type: markdown
     text: |
-      Get started developing apps with Azure using the resources below to find great tutorials and tools for Node.js developers.
+      Get started creating, sharing and managing flows using the resources here. You can start with a simple button, or create your own approval flows.
 - items:
   - type: list
     style: cards
     className: cardsM
     columns: 2
     items:
-    - href: https://docs.microsoft.com/azure/app-service/containers/quickstart-nodejs
-      html: <p>Deploy your first Node.js app to Azure</p>
+    - href: https://flow.microsoft.com/en-us/guided-learning/learning-introduce-flow/
+      html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: Get Started
-    - href: https://azure.microsoft.com/resources/samples/?platform=nodejs
-      html: <p>Azure code samples using Node.js</p>
+      title: Take a tour
+    - href: https://review.docs.microsoft.com/flow/getting-started
+      html: <p>Get an overview of Microsoft Flow</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: Code Samples
-    - href: https://docs.microsoft.com/nodejs/azure/node-azure-tools
-      html: <p>Developer tools</p>
+      title: Get Started
+    - href: https://review.docs.microsoft.com/en-us/flow/mobile-create-flow
+      html: <p>Create flows on any mobile device</p>
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
-      title: Tools
-    - href: https://docs.microsoft.com/nodejs/api/overview/azure/?view=azure-node-2.0.0
-      html: <p>npm packages for Azure services</p>
+      title: Get to know the mobile app
+    - href: https://review.docs.microsoft.com/flow/introduction-to-button-flows
+      html: <p>Create a button flow in 2 minutes</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
-      title: API Reference
+      title: Learn about buttons
+    - href: https://preview.flow.microsoft.com/en-us/blog/automation-for-recruiters
+      html: <p>Get inspired by the flow of the week</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: Flow of the week
+    - href: https://docs.microsoft.com/en-us/flow/support
+      html: <p>Get help and support</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: We're here to help
 - title: 5-Minute Quickstarts
   items:
   - type: paragraph
