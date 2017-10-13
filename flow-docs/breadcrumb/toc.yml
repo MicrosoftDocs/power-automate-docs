@@ -4,11 +4,11 @@
   items:
   - name: Flow
     tocHref: /flow
-    topicHref: /flow/index
+    topicHref: /flow
     items:
     - name: Guided Learning
       tocHref: /flow/guided-learning
-      topicHref: /flow/guided-learning/index
+      topicHref: /flow/guided-learning/
       items:
       - name: Get Started
         tocHref: /flow/guided-learning/get-started 
