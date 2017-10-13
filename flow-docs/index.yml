@@ -30,7 +30,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Take a tour
-    - href: https://review.docs.microsoft.com/flow/getting-started
+    - href: getting-started
       html: <p>Get an overview of Microsoft Flow</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -101,5 +101,5 @@ sections:
     items:
     - html: <a href="environments-overview-admin">Manage Microsoft Flow for an organization</a>
     - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/customapi-web-api-tutorial">Create a custom connector</a>
+    - html: <a href="customapi-web-api-tutorial">Create a custom connector</a>
     - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
