@@ -94,15 +94,6 @@ sections:
   items:
   - type: markdown
     text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
-  items:
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/meanjs/">Developing a MEAN app using Azure Cosmos DB</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-graph-nodejs-getting-started/">Developing a Node.js app with Gremlin Graph data using Azure Cosmos DB</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/">Getting started with Azure Blob Service in a Node.js app</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/">Integrating Azure AD into a Node.js app</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/key-vault-node-getting-started">Getting started with Key Vault using Azure</a>
 - title: Advanced Tutorials
   items:
   - type: paragraph
@@ -110,9 +101,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="https://review.docs.microsoft.com/flow/">Fine tune your flows with expressions</a>
     - html: <a href="https://review.docs.microsoft.com/flow/environments-overview-admin">Manage Microsoft Flow for an organization</a>
     - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
     - html: <a href="https://review.docs.microsoft.com/flow/customapi-web-api-tutorial">Create a custom connector</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">View past events on demand</a>
     - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
