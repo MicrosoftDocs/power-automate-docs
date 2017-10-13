@@ -27,12 +27,12 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: https://flow.microsoft.com/en-us/guided-learning/learning-introduce-flow/
+    - href: <a href="/en-us/guided-learning/learning-introduce-flow"></a>
       html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Take a tour
-    - href: https://review.docs.microsoft.com/flow/getting-started
+    - href: "getting-started"
       html: <p>Get an overview of Microsoft Flow</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
@@ -52,22 +52,22 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Flow of the week
-    - href: https://docs.microsoft.com/en-us/flow/support
+    - href: https://preview.flow.microsoft.com/support/
       html: <p>Get help and support</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: We're here to help
-- title: 5-Minute Quickstarts
+- title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: 'Learn how to build Node.js apps with Azure services.'
+    text: 'Learn to create different types of flows.'
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items: 
-    - href: https://docs.microsoft.com/azure/app-service/containers/quickstart-nodejs
-      title: Create a Node.js app
+    - href: <a href="get-started-logic-template">Template</a> <a href="/en-us/flow/get-started-logic-flow">from scratch</a>
+      title: Create a flow from a template
       image: 
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     - href: http://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function
