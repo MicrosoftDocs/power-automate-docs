@@ -27,12 +27,12 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: <a href="/en-us/guided-learning/learning-introduce-flow"></a>
+    - href: https://flow.microsoft.com/en-us/guided-learning/learning-introduce-flow/
       html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Take a tour
-    - href: "getting-started"
+    - href: https://review.docs.microsoft.com/flow/getting-started
       html: <p>Get an overview of Microsoft Flow</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
@@ -66,23 +66,31 @@ sections:
     className: cardsM
     columns: 3
     items: 
-    - href: <a href="get-started-logic-template">Template</a> <a href="/en-us/flow/get-started-logic-flow">from scratch</a>
+    - href: https://review.docs.microsoft.com/en-us/flow/get-started-logic-template
       title: Create a flow from a template
       image: 
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: http://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function
-      title: Create a Node.js serverless function
+    - href: https://review.docs.microsoft.com/en-us/flow/get-started-logic-flow
+      title: Create a flow from scratch
       image:
         src: https://docs.microsoft.com/azure/media/index/azurefunctions.svg
-    - href: https://docs.microsoft.com/azure/cosmos-db/create-mongodb-nodejs
-      title: Build a MEAN app with Cosmos DB
+    - href: https://review.docs.microsoft.com/en-us/flow/modern-approvals
+      title: Create approval flows
       image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-    - href: https://docs.microsoft.com/azure/postgresql/connect-nodejs 
-      title: Connect to Azure Database for PostgreSQL
+    - href: https://review.docs.microsoft.com/en-us/flow/share-buttons 
+      title: Let others use your buttons
       image: 
         src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
-    - href: https://docs.microsoft.com/azure/container-service/kubernetes/container-service-kubernetes-walkthrough
+    - href: https://review.docs.microsoft.com/en-us/flow/create-team-flows
+      title: Share ownership of your flows
+      image:
+        src: media/k8s_logo.svg
+    - href: https://review.docs.microsoft.com/en-us/flow/fix-flow-failures
+      title: Troubleshoot flows
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
+    - href: https://review.docs.microsoft.com/en-us/flow
       title: Deploy to Linux and Kubernetes
       image:
         src: media/k8s_logo.svg
