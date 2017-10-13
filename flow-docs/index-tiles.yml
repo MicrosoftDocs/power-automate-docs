@@ -35,12 +35,12 @@ sections:
     - href: https://review.docs.microsoft.com/flow/getting-started
       html: <p>Get an overview of Microsoft Flow</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Get Started
     - href: https://review.docs.microsoft.com/flow/mobile-create-flow
       html: <p>Create flows on any mobile device</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_download-install.svg
+        src: https://docs.microsoft.com/media/common/i_mobileapp.svg
       title: Get to know the mobile app
     - href: https://review.docs.microsoft.com/flow/introduction-to-button-flows
       html: <p>Create a button flow in 2 minutes</p>
@@ -55,7 +55,7 @@ sections:
     - href: https://preview.flow.microsoft.com/support/
       html: <p>Get help and support</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+        src: https://docs.microsoft.com/media/common/i_support.svg
       title: We're here to help
 - title: Step-by-Step Tutorials
   items:
@@ -69,27 +69,27 @@ sections:
     - href: https://review.docs.microsoft.com/flow/get-started-logic-template
       title: Create a flow from a template
       image: 
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_guide.svg
     - href: https://review.docs.microsoft.com/flow/get-started-logic-flow
       title: Create a flow from scratch
       image:
-        src: https://docs.microsoft.com/azure/media/index/azurefunctions.svg
+        src: https://docs.microsoft.com/media/common/i_build.svg
     - href: https://review.docs.microsoft.com/flow/modern-approvals
       title: Create approval flows
       image:
-        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
     - href: https://review.docs.microsoft.com/flow/share-buttons 
       title: Let others use your buttons
       image: 
-        src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
+        src: https://docs.microsoft.com/azure/media/common/i_setup.svg
     - href: https://review.docs.microsoft.com/flow/create-team-flows
       title: Share ownership of your flows
       image:
-        src: media/k8s_logo.svg
+        src: https://docs.microsoft.com/media/common/i_configure-teams.svg
     - href: https://review.docs.microsoft.com/flow/fix-flow-failures
       title: Troubleshoot flows
       image: 
-        src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
 - title: Video overview of Microsoft Flow
   items:
   - type: markdown
@@ -103,7 +103,7 @@ sections:
     items:
     - href: https://www.pluralsight.com/courses/developing-nodejs-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
       image:
-        src: https://docs.microsoft.com/media/logos/logo_pluralsight.svg
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: 'Get Started: Node.js on Azure'
 - title: Samples
   items:
@@ -123,8 +123,8 @@ sections:
     style: unordered
     items:
     - html: <a href="https://review.docs.microsoft.com/flow/">Fine tune your flows with expressions</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">Manage Microsoft Flow for an organization</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/environments-overview-admin">Manage Microsoft Flow for an organization</a>
     - html: <a href="https://review.docs.microsoft.com/flow/">Learn to use REST APIs with your flows</a>
-    - html: <a href="https://review.docs.microsoft.com/flow/">Create a custom connector</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/customapi-web-api-tutorial">Create a custom connector</a>
     - html: <a href="https://review.docs.microsoft.com/flow/">View past events on demand</a>
     - html: <a href="https://review.docs.microsoft.com/flow/">Expand your flows with Logic Apps</a>
