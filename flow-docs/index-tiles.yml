@@ -27,7 +27,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: https://flow.microsoft.com/en-us/guided-learning/learning-introduce-flow/
+    - href: https://flow.microsoft.com/guided-learning/learning-introduce-flow/
       html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -37,7 +37,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
       title: Get Started
-    - href: https://review.docs.microsoft.com/en-us/flow/mobile-create-flow
+    - href: https://review.docs.microsoft.com/flow/mobile-create-flow
       html: <p>Create flows on any mobile device</p>
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
@@ -47,7 +47,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Learn about buttons
-    - href: https://preview.flow.microsoft.com/en-us/blog/automation-for-recruiters
+    - href: https://preview.flow.microsoft.com/blog/automation-for-recruiters
       html: <p>Get inspired by the flow of the week</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
@@ -66,38 +66,34 @@ sections:
     className: cardsM
     columns: 3
     items: 
-    - href: https://review.docs.microsoft.com/en-us/flow/get-started-logic-template
+    - href: https://review.docs.microsoft.com/flow/get-started-logic-template
       title: Create a flow from a template
       image: 
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://review.docs.microsoft.com/en-us/flow/get-started-logic-flow
+    - href: https://review.docs.microsoft.com/flow/get-started-logic-flow
       title: Create a flow from scratch
       image:
         src: https://docs.microsoft.com/azure/media/index/azurefunctions.svg
-    - href: https://review.docs.microsoft.com/en-us/flow/modern-approvals
+    - href: https://review.docs.microsoft.com/flow/modern-approvals
       title: Create approval flows
       image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-    - href: https://review.docs.microsoft.com/en-us/flow/share-buttons 
+    - href: https://review.docs.microsoft.com/flow/share-buttons 
       title: Let others use your buttons
       image: 
         src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
-    - href: https://review.docs.microsoft.com/en-us/flow/create-team-flows
+    - href: https://review.docs.microsoft.com/flow/create-team-flows
       title: Share ownership of your flows
       image:
         src: media/k8s_logo.svg
-    - href: https://review.docs.microsoft.com/en-us/flow/fix-flow-failures
+    - href: https://review.docs.microsoft.com/flow/fix-flow-failures
       title: Troubleshoot flows
       image: 
         src: https://docs.microsoft.com/azure/media/index/postgreSQL.svg
-    - href: https://review.docs.microsoft.com/en-us/flow
-      title: Deploy to Linux and Kubernetes
-      image:
-        src: media/k8s_logo.svg
-- title: Get Started with Node.js on Azure
+- title: Video overview of Microsoft Flow
   items:
   - type: markdown
-    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-Node-Developers/Welcome-to-the-Azure-for-Nodejs-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 - title: Free Node.js and Azure Video Training on Pluralsight
   items:
   - type: list
@@ -119,12 +115,16 @@ sections:
     - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-node-getting-started/">Getting started with Azure Blob Service in a Node.js app</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/active-directory-node-webapp-openidconnect/">Integrating Azure AD into a Node.js app</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/key-vault-node-getting-started">Getting started with Key Vault using Azure</a>
-- title: Step-by-Step Tutorials
+- title: Advanced Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Learn how to use Azure services and tools in your Node.js apps.
+    text: Learn how to use expressions, the REST API, and how to create custom connectors, and more...
   - type: list
     style: unordered
     items:
-    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-nodejs-mongodb-app">Build a Node.js and MongoDB app in Azure</a>
-    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-nodejs-api-app">Build a Node.js RESTful API and deploy it to an API App in Azure</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">Fine tune your flows with expressions</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">Manage Microsoft Flow for an organization</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">Learn to use REST APIs with your flows</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">Create a custom connector</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">View past events on demand</a>
+    - html: <a href="https://review.docs.microsoft.com/flow/">Expand your flows with Logic Apps</a>
