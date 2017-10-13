@@ -25,7 +25,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: https://review.docs.microsoft.com/flow/guided-learning/get-started#step-1/
+    - href: guided-learning/get-started#step-1/
       html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -35,12 +35,12 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Get Started
-    - href: https://review.docs.microsoft.com/flow/mobile-create-flow
+    - href: mobile-create-flow
       html: <p>Create flows on any mobile device</p>
       image:
         src: https://docs.microsoft.com/media/common/i_mobileapp.svg
       title: Get to know the mobile app
-    - href: https://review.docs.microsoft.com/flow/introduction-to-button-flows
+    - href: introduction-to-button-flows
       html: <p>Create a button flow in 2 minutes</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
@@ -64,27 +64,27 @@ sections:
     className: cardsM
     columns: 3
     items: 
-    - href: https://review.docs.microsoft.com/flow/get-started-logic-template
+    - href: get-started-logic-template
       title: Create a flow from a template
       image: 
         src: https://docs.microsoft.com/media/common/i_guide.svg
-    - href: https://review.docs.microsoft.com/flow/get-started-logic-flow
+    - href: get-started-logic-flow
       title: Create a flow from scratch
       image:
         src: https://docs.microsoft.com/media/common/i_build.svg
-    - href: https://review.docs.microsoft.com/flow/modern-approvals
+    - href: modern-approvals
       title: Create approval flows
       image:
         src: https://docs.microsoft.com/media/common/i_tasks.svg
-    - href: https://review.docs.microsoft.com/flow/share-buttons 
+    - href: share-buttons 
       title: Let others use your buttons
       image: 
         src: https://docs.microsoft.com/media/common/i_setup.svg
-    - href: https://review.docs.microsoft.com/flow/create-team-flows
+    - href: create-team-flows
       title: Share ownership of your flows
       image:
         src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-    - href: https://review.docs.microsoft.com/flow/fix-flow-failures
+    - href: fix-flow-failures
       title: Troubleshoot flows
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
