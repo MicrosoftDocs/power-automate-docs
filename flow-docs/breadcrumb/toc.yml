@@ -4,7 +4,7 @@
   items:
   - name: Flow
     tocHref: /flow
-    topicHref: /flow/index
+    topicHref: /flow
     items:
     - name: Guided Learning
       tocHref: /flow/guided-learning
