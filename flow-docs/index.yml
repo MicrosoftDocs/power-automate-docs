@@ -25,7 +25,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: guided-learning/get-started#step-1/
+    - href: guided-learning/index
       html: <p>Take the Guided Learning tour</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
@@ -45,12 +45,12 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Learn about buttons
-    - href: https://preview.flow.microsoft.com/blog/automation-for-recruiters
+    - href: https://flow.microsoft.com/blog/automation-for-recruiters
       html: <p>Get inspired by the flow of the week</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Flow of the week
-    - href: https://preview.flow.microsoft.com/support/
+    - href: https://flow.microsoft.com/support/
       html: <p>Get help and support</p>
       image:
         src: https://docs.microsoft.com/media/common/i_support.svg
