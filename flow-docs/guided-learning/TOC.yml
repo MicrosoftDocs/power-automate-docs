@@ -1,8 +1,8 @@
 - name: Get started
-  href: get-started.yml
+  href: get-started.yml#step-1
 - name: Build flows
-  href: build-flows.yml
+  href: build-flows.yml#step-1
 - name: Work with approvals
-  href: work-with-approvals.yml
+  href: work-with-approvals.yml#step-1
 - name: Administer flows
-  href: administer-flows.yml
+  href: administer-flows.yml#step-1
