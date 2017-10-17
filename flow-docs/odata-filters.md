@@ -32,7 +32,7 @@ While this walkthrough copies data from a Microsoft SharePoint [list](https://su
 * Access to a data source and a destination. This walkthrough doesn’t include steps to create the source and destination.
 * Access to [Microsoft Flow](https://flow.microsoft.com).
 * A basic understanding of how your data is stored.
-* Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
+* Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!TIP]
 > Every column name in the source and destination don't need to match, but you must provide data for all *required* columns when you insert or update an item. Microsoft Flow identifies the required fields for you.

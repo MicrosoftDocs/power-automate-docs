@@ -31,16 +31,16 @@ Specify that a flow performs one or more tasks only if a particular condition is
 3. Under the last action, select the **New step** button.
 4. Select **Add a condition**.
    
-    ![Condition button](./media/add-a-condition/add-condition.png)
+    ![Condition button](./media/add-condition/add-condition.png)
 5. Select an empty area in **Object name**, and select **Add dynamic content** to open the dynamic content menu.
 6. Select the **Retweet count** parameter to add it to the box.
 7. In the **Relationship** box, select **is greater than or equal to**.
 8. In the **Value** box, type **10**.
    
-    ![The OBJECT NAME box with a parameter in it](./media/add-a-condition/specify-condition.png)
+    ![The OBJECT NAME box with a parameter in it](./media/add-condition/specify-condition.png)
 9. Click on the header of action you want inside of condition (such as **Create item**) and drag it underneath the text that reads **IF YES**. When you release the cursor, the action should move into that box.
    
-    ![Drag action](./media/add-a-condition/drag-action.png)
+    ![Drag action](./media/add-condition/drag-action.png)
 10. Save the flow.
 
 ## Edit in advanced mode

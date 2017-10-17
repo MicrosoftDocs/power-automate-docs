@@ -27,7 +27,7 @@ ms.author: stepsic
    3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more about how to fix common flow failures](fix-flow-failures.md).
 2. How do I use an advanced condition or a formula?
    
-   * Read about [adding conditions](add-a-condition.md).
+   * Read about [adding conditions](add-condition.md).
    * If you want multiple cases in a flow, click or tap **Add condition** from inside of an existing condition.
    * Create an advanced formula by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
