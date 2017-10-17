@@ -1,9 +1,0 @@
-flow-docs\add-condition.md:34:    ![Condition button](./media/add-a-condition/add-condition.png)
-flow-docs\add-condition.md:40:    ![The OBJECT NAME box with a parameter in it](./media/add-a-condition/specify-condition.png)
-flow-docs\add-condition.md:43:    ![Drag action](./media/add-a-condition/drag-action.png)
-flow-docs\all-assigned-must-approve.md:33:    You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
-flow-docs\odata-filters.md:35:* Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
-flow-docs\release-notes.md:30:   * Read about [adding conditions](add-a-condition.md).
-flow-docs\sequential-modern-approvals.md:112:1. Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-condition) to add, and then configure a **Condition** that checks the final approver's decision.
-flow-docs\use-expressions-in-conditions.md:34:When you create a flow, you can use the [**Condition**](add-a-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
-flow-docs\wait-for-approvals.md:66:    ![Image of add a condition](./media/wait-for-approvals/add-a-condition.png)
