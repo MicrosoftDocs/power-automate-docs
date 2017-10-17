@@ -3,25 +3,25 @@
   topicHref: /
   items:
   - name: Flow
-    tocHref: /flow
-    topicHref: /flow
+    tocHref: /flow/
+    topicHref: /flow/
     items:
     - name: Guided Learning
-      tocHref: /flow/guided-learning
+      tocHref: /flow/guided-learning/
       topicHref: /flow/guided-learning/
       items:
       - name: Get Started
-        tocHref: /flow/guided-learning/get-started 
-        tocHref: /flow/guided-learning/get-started 
+        tocHref: /flow/guided-learning/get-started/
+        topicHref: /flow/guided-learning/get-started/
       - name: Build flows
-        tocHref: /flow/guided-learning/build-flows 
-        tocHref: /flow/guided-learning/build-flows 
+        tocHref: /flow/guided-learning/build-flows/
+        topicHref: /flow/guided-learning/build-flows/
       - name: Work with approvals
-        tocHref: /flow/guided-learning/work-with-approvals 
-        tocHref: /flow/guided-learning/work-with-approvals
+        tocHref: /flow/guided-learning/work-with-approvals/
+        topicHref: /flow/guided-learning/work-with-approvals/
       - name: Administer flows
-        tocHref: /flow/guided-learning/administer-flows 
-        tocHref: /flow/guided-learning/administer-flows
+        tocHref: /flow/guided-learning/administer-flows/
+        topicHref: /flow/guided-learning/administer-flows/
 
         
         
