@@ -31,7 +31,7 @@ ms.author: deonhe
 # Use expressions in conditions to check multiple values
 In this walkthrough, you'll learn to use expressions and **Conditions** to compare multiple values in **Advanced mode**.
 
-When you create a flow, you can use the [**Condition**](add-a-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
+When you create a flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical expressions in your conditions.
 

@@ -30,7 +30,7 @@ This type of approval workflow is useful in an organization that requires a pers
     This walkthrough assumes you've already created a SharePoint Online list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in depth example that details what your SharePoint list might look like.
 * Familiarity with the basics of creating flows.
   
-    You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-a-condition.md). The following steps assume that you know how to perform these actions.
+    You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
 > While we use SharePoint Online and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [150 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.

@@ -19,7 +19,7 @@
   - name: Add an action
     href: multi-step-logic-flow.md
   - name: Add a condition
-    href: add-a-condition.md
+    href: add-condition.md
   - name: Run a flow on a schedule
     href: run-tasks-on-a-schedule.md
   - name: Trigger a flow with email
