@@ -121,7 +121,7 @@
   - name: Pricing
     href: billing-questions.md
   - name: Introduction to the admin center
-    href: introduction-to-the-admin-center.md
+    href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
   - name: Set a policy to help prevent data loss
