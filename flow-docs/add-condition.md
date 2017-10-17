@@ -1,6 +1,6 @@
 ---
 title: Add a condition to a flow | Microsoft Docs
-description: Specify that a flow performs one or more tasks only if a particular condition is true.
+description: Specify that a flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,35 +14,62 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 10/17/2017
 ms.author: stepsic
 
 ---
 # Add a condition to a flow
-Specify that a flow performs one or more tasks only if a particular condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
-**Prerequisites**
+Specify that a flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
-* [Create a flow](get-started-logic-template.md) from a template - this tutorial will [use this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example
+## Prerequisites
+
+* [Create a flow](get-started-logic-template.md) from a template - this tutorial [uses this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example
 
 ## Add a condition
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **My Flows** in the top navigation bar.
-2. In the list of flows, select a flow that you have created. This tutorial uses an example with a Twitter trigger and a SharePoint action.
-3. Under the last action, select the **New step** button.
-4. Select **Add a condition**.
-   
+
+1. In [Microsoft Flow](https://flow.microsoft.com), select **My flows** in the top navigation bar.
+
+    You might need to sign in if you're not already signed in.
+
+1. In the list of flows, select one of the flows that you've created.
+
+    This tutorial uses an example with a Twitter trigger and a SharePoint action.
+
+1. Select **Edit flow**.
+
+1. Under the last action, select **New step**.
+
+1. Select **Add a condition**.
+
     ![Condition button](./media/add-condition/add-condition.png)
-5. Select an empty area in **Object name**, and select **Add dynamic content** to open the dynamic content menu.
-6. Select the **Retweet count** parameter to add it to the box.
-7. In the **Relationship** box, select **is greater than or equal to**.
-8. In the **Value** box, type **10**.
-   
+
+1. On the **Condition** card, select an empty area in box on the left.
+
+    The **Dynamic content** list opens.
+
+1. Select the **Retweet count** parameter to add it to the box.
+
+1. In the box in the middle of the **Condition** card, select **is greater than or equal to**.
+
+1. In the box on the right, enter **10**.
+
     ![The OBJECT NAME box with a parameter in it](./media/add-condition/specify-condition.png)
-9. Click on the header of action you want inside of condition (such as **Create item**) and drag it underneath the text that reads **IF YES**. When you release the cursor, the action should move into that box.
-   
+
+1. Select the header of the action you want to use inside the condition (such as **Create item**) and drag it underneath the text that reads **If yes**.
+
+    When you release the cursor, the action moves into that box.
+
     ![Drag action](./media/add-condition/drag-action.png)
-10. Save the flow.
+
+1. Configure the action as necessary.
+
+1. Save the flow.
 
 ## Edit in advanced mode
-You can also select the **Edit in advanced mode** link to write more advanced conditions. You can use any expression from the *Workflow definition language* here. [Learn more about](https://msdn.microsoft.com/library/azure/mt643789.aspx) what functions are available.
 
+You can also select **Edit in advanced mode** to write more advanced conditions. You can use any expression from the *Workflow definition language* in advanced mode. Learn about all available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+
+## Next steps
+
+Learn how to [use expressions](use-expressions-in-conditions.md) in conditions in advanced mode.
