@@ -68,7 +68,7 @@ Now that you have some idea of what a flow can do and a bit of experience, [crea
 When you create a flow from scratch, the entire flow comes straight from your brain to the screen. You're also free to explore different approaches such as the ones in these topics:
 
 * [Flows with many steps](multi-step-logic-flow.md)
-* [Run tasks on a schedule](run-tasks-on-a-schedule.md)
+* [Run tasks on a schedule](run-scheduled-tasks.md)
 * [Create an approval flow](wait-for-approvals.md)
 * [Watch a flow in action](see-a-flow-run.md)
 * [Publish a template](publish-a-template.md)

@@ -21,7 +21,7 @@
   - name: Add a condition
     href: add-condition.md
   - name: Run a flow on a schedule
-    href: run-tasks-on-a-schedule.md
+    href: run-scheduled-tasks.md
   - name: Trigger a flow with email
     href: email-triggers.md
   - name: Process a list of items
