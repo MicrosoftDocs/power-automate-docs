@@ -19,7 +19,7 @@ ms.author: deonhe
 
 ---
 # The Admin Center
-![overview](./media/introduction-to-the-admin-center/overview.png)  
+![overview](./media/admin-center-introduction/overview.png)  
 
 ## What is the Admin center?
 The admin center is the central location where both tenant admins and environment admins manage data loss prevention (DLP) polices and environments for an organization. Any changes you make in the admin center are immediately available to users within the organization.  
