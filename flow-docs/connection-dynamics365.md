@@ -70,7 +70,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 12. Click or tap **Create flow**.
 
 ## Create a Wunderlist task from a Dynamics 365 task
-This walkthrough shows you how to create a task in [Wunderlist](http://www.wunderlist.com) whenever a task is created in Dynamics 365. Wunderlist is an Internet-based service that you can use to create to-do lists, add reminders, or track errands.
+This walkthrough shows you how to create a task in [Wunderlist](https://www.wunderlist.com) whenever a task is created in Dynamics 365. Wunderlist is an Internet-based service that you can use to create to-do lists, add reminders, or track errands.
 
 1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com/).
 2. Click or tap **My flows**, and then click or tap **Create from blank**.

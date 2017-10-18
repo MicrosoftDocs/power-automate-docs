@@ -96,7 +96,7 @@ Get started with the following resources:
 * [Blog](https://flow.microsoft.com)
 * [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Topic](getting-started.md)
-* [Community](http://powerusers.microsoft.com)
+* [Community](https://powerusers.microsoft.com)
 
 ### What operating systems does the mobile app for Microsoft Flow support?
 The Microsoft Flow mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).

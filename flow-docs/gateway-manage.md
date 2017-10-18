@@ -51,7 +51,7 @@ In the upper-right corner of the [Microsoft Flow website](https://flow.microsoft
 **Note**: If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
 
 ## Install a gateway
-1. Download the [gateway-installation wizard](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+1. Download the [gateway-installation wizard](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
    
     You can also download this wizard by clicking or tapping the gear icon in the upper-right corner of the [Microsoft Flow website](https://flow.microsoft.com), clicking or tapping **Gateways**, and then clicking or tapping **Create gateway**.
    

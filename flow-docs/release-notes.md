@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2017
+ms.date: 10/03/2017
 ms.author: stepsic
 
 ---
@@ -42,6 +42,40 @@ ms.author: stepsic
 4. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2017-10-03
+
+- **All must approve** - Require an approval request sent to more than one person to have everyone who received the request to approve it.
+- **New OneDrive for Business actions** - Generate PDFs for files stored on OneDrive for Business and four other new actions.
+- **Apache Impala connector** - Apache Impala (incubating) is the open source, native analytic database for Apache Hadoop.
+- **Add flow descriptions** - Give your flows descriptions so when you share them so your co-workers can see a summary of the flow does.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/all-must-approve-and-onedrive/) about this release.
+
+### Release 2017-09-25 - Q3 Update for Microsoft Flow
+
+- **Deeper SharePoint integration** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow.
+- **Dynamics 365 for Customer Engagement** - Flow is now integrated in the UI for Dynamics 365 for Customer Engagement.
+- **Microsoft Trust Center** - Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
+- **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
+- **Audit Logging** - All flow management events are logged in the Office 365 Security and Compliance center.
+- **Six new connectors** - Added LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy, and Azure Log Analytics Data Collection.
+- **SQL triggers** - Run flows when a new row is added or a row is updated in a SQL table.
+- **On-prem custom connectors** - Custom connectors can now use the On-premises Data gateway to connect to internal endpoints on your network.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/q3-2017-update/) about this release.
+
+### Release 2017-09-21
+
+- **Download Flow History** - Download the run history of a Flow as a CSV file to open in Excel.
+- **Advanced recurrence** - Build recurring schedules to trigger your flows, for example, only trigger on weekdays.
+- **IntelliSense** - When typing in expressions, IntelliSense will provide suggestions for parameters.
+- **Four new connectors** - Added connectors for Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish and FlowForma.
+- **Sharing links** - A new action to generate sharable links for OneDrive files or Azure Storage Blobs.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/download-history-recurrence/) about this release.
+
+
 ### Release 2017-08-25
 * **Document properties and more for SharePoint** - [Read and set SharePoint document library properties](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/), and use additional fields like links to the SharePoint item.
 * **Flow collections** - Flow collections are a set of template collections organized by role or by vertical.
@@ -403,8 +437,8 @@ If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.micro
 * You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.
 * You can see the history for every check and run of your flow.
 * When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
-* We have a [new community](http://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+* We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## Next steps
-If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).
+If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).
 
