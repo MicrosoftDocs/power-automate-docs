@@ -43,9 +43,9 @@ Microsoft Flow makes it pretty easy to switch between environments. When you do 
 
 Here's an example.
 
-You create a flow named *NewEmployee* in the *Human Resources* environment. In [flow.microsoft.com](http://flow.microsoft.com), you open the *Sales* environment. The *NewEmployee* flow is not listed. To see the *NewEmployee* flow, open the *Human Resources* environment. Remember, this applies to any items you create in the environment, including connections, gateways, PowerApps, and more.
+You create a flow named *NewEmployee* in the *Human Resources* environment. In [flow.microsoft.com](https://flow.microsoft.com), you open the *Sales* environment. The *NewEmployee* flow is not listed. To see the *NewEmployee* flow, open the *Human Resources* environment. Remember, this applies to any items you create in the environment, including connections, gateways, PowerApps, and more.
 
-1. Open [flow.microsoft.com](http://flow.microsoft.com).
+1. Open [flow.microsoft.com](https://flow.microsoft.com).
 2. In the top right corner, you see your name, and the environment you're in:  
    ![](./media/environments-overview-maker/default-environment.png)
    

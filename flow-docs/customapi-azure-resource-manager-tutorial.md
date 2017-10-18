@@ -23,7 +23,7 @@ Azure Resource Manager (ARM) enables you to manage the components of a solution 
 ## Prerequisites
 * An [Azure subscription](https://azure.microsoft.com/free/).
 * A [Microsoft Flow account](https://flow.microsoft.com).
-* The [sample OpenAPI file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json) used in this tutorial.
+* The [sample OpenAPI file](https://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json) used in this tutorial.
 
 ## Enable authentication in Azure Active Directory
 First, we need to create an Azure Active Directory (AAD) application that will perform the authentication when calling the ARM API endpoint.
@@ -85,7 +85,7 @@ Now that the AAD application is configured, let's add the custom connector.
    | Property | Description |
    | --- | --- |
    | Name |At the top of the page, click **Untitled** and give your flow a name. |
-   | OpenAPI file |Browse to the [sample ARM OpenAPI file](http://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
+   | OpenAPI file |Browse to the [sample ARM OpenAPI file](https://pwrappssamples.blob.core.windows.net/samples/AzureResourceManager.json). |
    | Upload API icon |Cick **Upload icon** to select an image file for the icon. Any PNG or JPG image less than 1 MB in size will work. |
    | Description |Type a description of your custom connector (optional). |
    

@@ -81,5 +81,5 @@ Download the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledo
 * [create a flow from a template](mobile-create-flow.md), such as one for getting a push notification when you receive mail from a sender that you specify
 
 ## Questions? Ideas? We're here to help
-We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
 

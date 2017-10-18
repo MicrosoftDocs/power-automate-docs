@@ -25,7 +25,7 @@ Use the on-premises data gateway with Microsoft Flow to establish secure connect
 ### Prerequisites
 Minimum:
 
-* [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)
 * 64-bit version of Windows 7 or Windows Server 2008 R2 (or later)
 
 Recommended:
@@ -46,7 +46,7 @@ Related considerations:
 > 
 > 
 
-1. [Download the installer](http://go.microsoft.com/fwlink/?LinkID=820931), and then run it.
+1. [Download the installer](https://go.microsoft.com/fwlink/?LinkID=820931), and then run it.
    
     ![Run the installer](./media/gateway-reference/run-installer.png)
 2. On the first screen of the installation wizard, select **Next** to acknowledge the reminder about installing a gateway on a laptop.

@@ -43,7 +43,7 @@ This tutorial shows you how to start bulding an ASP.NET Web API, host it on Azur
 5. Create your Web API.
    
    > [!NOTE]
-   > If you don't already have code ready for a Web API, try the tutorial [Getting Started with ASP.NET Web API 2 (C#)](http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api).
+   > If you don't already have code ready for a Web API, try the tutorial [Getting Started with ASP.NET Web API 2 (C#)](https://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api).
    > 
    > 
 6. To connect our Web API to PowerApps, we'll need a [Swagger](http://swagger.io/) file that describes its operations.  You could write an OpenAPI of our own using the [online editor](http://editor.swagger.io/), but for this tutorial, you'll use an open-source tool named [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle/blob/master/README.md).  Install the Swashbuckle Nuget package in your Visual Studio project by clicking **Tools** > **NuGet Package Manager** > **Package Manager Console**, and then, in the Package Manager Console, type the command `Install-Package Swashbuckle`.
@@ -60,7 +60,7 @@ This tutorial shows you how to start bulding an ASP.NET Web API, host it on Azur
    > [!IMPORTANT]
    > An OpenAPI document with duplicate operation IDs is invalid. If you are using the sample C# template, the operation ID `Values_Get` is repeated twice. You can correct this by changing one instance to `Value_Get` and re-publishing.
    > 
-   > You can also download a [sample OpenAPI](http://pwrappssamples.blob.core.windows.net/samples/webAPI.json) from this tutorial. Be sure to remove the comments (starting with `//`) before using it.
+   > You can also download a [sample OpenAPI](https://pwrappssamples.blob.core.windows.net/samples/webAPI.json) from this tutorial. Be sure to remove the comments (starting with `//`) before using it.
    > 
    > 
 
