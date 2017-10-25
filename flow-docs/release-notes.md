@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/03/2017
+ms.date: 10/21/2017
 ms.author: stepsic
 
 ---
@@ -42,6 +42,22 @@ ms.author: stepsic
 4. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2017-10-19
+
+- **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each containers.
+- **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
+- **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
+- **Improved connection experience** - Notifications in the Flow portal when a connection is broken and richer connection details.
+- **On-the-go collection** - A new template collection for [on-the-go workers](https://flow.microsoft.com/collections/onthego/).
+- **Email address button inputs** - Collect email addresses from users when they run buttons.
+- **File button inputs** - Get uploaded files, such as photos, from users when they run buttons.
+- **First run and auto sign-in** - Improved first run experiences on the mobile app, including automatic sign-in.
+- **Faster Microsoft Forms triggers** - Forms will trigger flows much more quickly than before (previously once an hour).
+- **Button inputs across sessions** - Buttons triggered on your mobile phone will remember previous inputs.
+- **Mobile activity feed** - Improved activity feed to include more detailed run summaries and troubleshooting details.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/nested-apply-to-each/) about this release.
 
 ### Release 2017-10-03
 
