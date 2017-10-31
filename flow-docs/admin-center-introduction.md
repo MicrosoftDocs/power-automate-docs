@@ -26,15 +26,15 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Access the Admin center
 
-* The Microsoft Flow admin center is accessed by browsing to https://admin.flow.microsoft.com.
+* Browse to https://admin.flow.microsoft.com to access the Microsoft Flow admin center.
 
 ## Environments
 
-Learn more about how to use [environments](environments-overview-admin.md) to manage users, permissions and roles.
+Learn more about using [environments](environments-overview-admin.md) to manage users, permissions and roles.
 
 ## Data policies
 
-Learn more about how to use [data policies](prevent-data-loss.md) to create rules that manage how business data is shared between services in flows.
+Learn more about using [data policies](prevent-data-loss.md) to create rules that manage how business data is shared between services in flows.
 
 ## Next steps
 
