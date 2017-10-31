@@ -1,22 +1,23 @@
-<properties
-   pageTitle="Get started | Microsoft Flow"
-   description="Quick ways to start automating your work and life with Microsoft Flow"
-   services=""
-   suite="flow"
-   documentationCenter="na"
-   authors="stepsic-microsoft-com"
-   manager="anneta"
-   editor=""
-   tags=""/>
+---
+title: Get started | Microsoft Docs
+description: Quick ways to start automating your work and life with Microsoft Flow
+services: ''
+suite: flow
+documentationcenter: na
+author: stepsic-microsoft-com
+manager: anneta
+editor: ''
+tags: ''
 
-<tags
-   ms.service="flow"
-   ms.devlang="na"
-   ms.topic="hero-article"
-   ms.tgt_pltfrm="na"
-   ms.workload="na"
-   ms.date="10/31/2017"
-   ms.author="stepsic"/>
+ms.service: flow
+ms.devlang: na
+ms.topic: hero-article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 03/27/2017
+ms.author: stepsic
+
+---
 
 # Get started with Microsoft Flow #
 
@@ -75,7 +76,7 @@ Now that you've created your first flow from a template, use any of the more tha
 When you create a flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
 - [Flows with many steps](multi-step-logic-flow.md).
-- [Run tasks on a schedule](run-tasks-on-a-schedule.md).
+- [Run tasks on a schedule](run-scheduled-tasks.md).
 - [Create an approval flow](wait-for-approvals.md).
 - [Watch a flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
