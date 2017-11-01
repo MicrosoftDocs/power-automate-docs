@@ -14,72 +14,78 @@ ms.devlang: na
 ms.topic: hero-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/27/2017
+ms.date: 10/31/2017
 ms.author: stepsic
 
 ---
-# Get started with Microsoft Flow
+
+# Get started with Microsoft Flow #
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Welcome! Microsoft Flow is a product to help you set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+Welcome! Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
-The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft, you can directly [sign in](https://flow.microsoft.com/signin) on your tablet, your desktop computer, or even your phone.
+The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft Flow, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
 
-## Check out the home page
-[On the home page](https://flow.microsoft.com) for Microsoft Flow, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and read about some key features for Microsoft Flow. You can get a quick sense of what's possible and how Microsoft Flow could help your business and your life.
+## Check out the start page ##
 
-![Flow homepage](./media/getting-started/flowhome1.png)
+[On the start page](https://flow.microsoft.com) for Microsoft Flow, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Microsoft Flow. You can get a quick sense of what's possible and how Microsoft Flow could help your business and your life.
 
-![Flow homepage](./media/getting-started/flowhome2.png)
+With Microsoft Flow, you can:
 
-![Flow homepage](./media/getting-started/flowhome3.png)
+- Easily search for templates and services.
 
-Each template is designed for a specific purpose such as sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg and are intended to inspire you to create flows that are customized to the exact processes that you need.
+    ![Flow start page 1](./media/getting-started/flowhome1.png)
 
-## Create your first flow
-You will need to find a flow template that would be useful for you. A very simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) :
+- Choose from the most popular services.
 
-![Flow templates](./media/getting-started/template-details.png)
+    ![Flow start page 2](./media/getting-started/flowhome2.png)
 
-Using this template is very easy: first, select **Continue**.
+- See an overview of each flow.
 
-![Create connection](./media/getting-started/create-connection.png)
+    ![Flow start page 3](./media/getting-started/flowhome3.png)
 
-Now, enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, select **Create flow**, and then verify that your flow is running as expected.
+Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
-![Create connection](./media/getting-started/configure-email-details.png)
+## Create your first flow ##
 
-Note: You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own, and even add or delete actions. (or just select **Done**).
+1. Select a template that's useful for you. A simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
-Explore other templates, and [follow this tutorial](get-started-logic-template.md) to get details of how to create more flows from templates.
+    ![daily reminder template](./media/getting-started/template-details.png)
 
-## Get creative
-Now that you have some idea of what a flow can do and a bit of experience, [create a flow from scratch](get-started-logic-flow.md) based on these data sources and others:
+1. Select **Continue**.
 
-* an Excel file in a cloud-storage account such as Dropbox, OneDrive, or Google Drive
-* a Google sheet
-* a SharePoint list
-* Salesforce or Microsoft Dynamics 365 with custom entities
-* a SQL Azure table
-* [the Microsoft Common Data Service](common-data-model-intro.md)
+    ![Create connection](./media/getting-started/create-connection.png)
+
+1. Enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, select **Create flow**, and then verify that your flow is running as expected.
+
+    ![Provide credentials for the connection](./media/getting-started/configure-email-details.png)
+
+    > [!NOTE]
+    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+
+1. Select **Done**.
+
+[Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
+
+## Get creative ##
+
+Now that you've created your first flow from a template, use any of the more than [150 data sources](https://flow.microsoft.com/connectors/) that Microsoft Flow supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 
-When you create a flow from scratch, the entire flow comes straight from your brain to the screen. You're also free to explore different approaches such as the ones in these topics:
+When you create a flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
-* [Flows with many steps](multi-step-logic-flow.md)
-* [Run tasks on a schedule](run-scheduled-tasks.md)
-* [Create an approval flow](wait-for-approvals.md)
-* [Watch a flow in action](see-a-flow-run.md)
-* [Publish a template](publish-a-template.md)
+- [Flows with many steps](multi-step-logic-flow.md).
+- [Run tasks on a schedule](run-scheduled-tasks.md).
+- [Create an approval flow](wait-for-approvals.md).
+- [Watch a flow in action](see-a-flow-run.md).
+- [Publish a template](publish-a-template.md).
 
-## Use the mobile app
-Download the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) version to your mobile device, where you can:
+## Use the mobile app ##
 
-* [monitor flow activity](mobile-monitor-activity.md), such as successes, failures, and the time when each flow ran most recently
-* [manage each flow](mobile-manage-flows.md), such as enabling or disabling it and viewing its events and actions
-* [create a flow from a template](mobile-create-flow.md), such as one for getting a push notification when you receive mail from a sender that you specify
+Download the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
 
-## Questions? Ideas? We're here to help
-We're excited to see what you can do with Microsoft Flow, and we want to make sure that you have a great experience. Check out the detailed tutorials here for more help, and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+## We're here to help ##
 
+We're excited to see what you do with Microsoft Flow, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](http://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](http://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
