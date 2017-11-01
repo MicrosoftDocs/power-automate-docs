@@ -1,5 +1,5 @@
 ---
-title: Watch a flow run | Microsoft Docs
+title: Watch a flow run - Microsoft Flow | Microsoft Docs
 description: View the inputs and outputs for each step of a flow before you finish it to verify that it behaves as you expect.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Understand data operations | Microsoft Docs
+title: Understand data operations - Microsoft Flow | Microsoft Docs
 description: Learn to perform operations, such as create HTML table, create CSV table, compose, join, select, and filter array with Microsoft Flow.
 services: ''
 suite: flow

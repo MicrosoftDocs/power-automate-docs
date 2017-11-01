@@ -1,5 +1,5 @@
 ---
-title: Approve requests on a mobile device | Microsoft Docs
+title: Approve requests on a mobile device - Microsoft Flow | Microsoft Docs
 description: Use a mobile device to approve requests created in Microsoft Flow.
 services: ''
 suite: flow

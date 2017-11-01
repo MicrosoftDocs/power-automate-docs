@@ -1,5 +1,5 @@
 ---
-title: Start flows with Flic buttons | Microsoft Docs
+title: Start flows with Flic buttons - Microsoft Flow | Microsoft Docs
 description: Easily start button flows with physical buttons from Flic by Shortcut Labs.
 services: ''
 suite: flow

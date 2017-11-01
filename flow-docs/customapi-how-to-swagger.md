@@ -1,5 +1,5 @@
 ---
-title: OpenAPI extensions for custom connectors in Microsoft Flow | Microsoft Docs
+title: OpenAPI extensions for custom connectors in Microsoft Flow - Microsoft Flow | Microsoft Docs
 description: View the schema extensions required by OpenAPI to work with Microsoft Flow
 services: ''
 suite: flow

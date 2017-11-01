@@ -1,5 +1,5 @@
 ---
-title: Let customers test drive your flows on AppSource | Microsoft Docs
+title: Let customers test drive your flows on AppSource - Microsoft Flow | Microsoft Docs
 description: Use AppSource to share apps with customers, and generate leads for your business.
 services: ''
 suite: flow

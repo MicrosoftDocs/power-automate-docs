@@ -1,5 +1,5 @@
 ---
-title: Data groups for Microsoft Flow | Microsoft Docs
+title: Data groups for Microsoft Flow - Microsoft Flow | Microsoft Docs
 description: Introduction to Data groups for Microsoft PowerApps and Microsoft Flow.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Learn to manage on-premises data gateways | Microsoft Docs
+title: Learn to manage on-premises data gateways - Microsoft Flow | Microsoft Docs
 description: View and install an on-premises data gateway in Microsoft Flow
 services: ''
 suite: flow
