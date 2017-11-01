@@ -25,7 +25,7 @@ ms.author: stepsic
 
 Welcome! Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
-The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
+The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft Flow, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
 
 ## Check out the start page ##
 
@@ -61,7 +61,8 @@ Each template is designed for a specific purpose. For example, there are templat
 
     ![Provide credentials for the connection](./media/getting-started/configure-email-details.png)
 
-    >[AZURE.NOTE]You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+    > [!NOTE]
+    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
 
 1. Select **Done**.
 
