@@ -1,5 +1,5 @@
 ---
-title: Learn to connect to your data using connections and on-premises data gateways | Microsoft Docs
+title: Learn to connect to your data using connections and on-premises data gateways - Microsoft Flow | Microsoft Docs
 description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive, and more
 services: ''
 suite: flow

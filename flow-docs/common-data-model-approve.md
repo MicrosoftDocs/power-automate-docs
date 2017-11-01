@@ -1,5 +1,5 @@
 ---
-title: Build an approval loop with the Common Data Service | Microsoft Docs
+title: Build an approval loop with the Common Data Service - Microsoft Flow | Microsoft Docs
 description: Create an entity, a flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
 services: ''
 suite: flow

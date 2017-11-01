@@ -1,5 +1,5 @@
 ---
-title: Release notes | Microsoft Docs
+title: Release notes - Microsoft Flow | Microsoft Docs
 description: Common issues and what's new for Microsoft Flow releases
 services: ''
 suite: flow

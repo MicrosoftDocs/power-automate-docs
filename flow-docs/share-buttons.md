@@ -1,5 +1,5 @@
 ---
-title: Share your buttons with others. | Microsoft Docs
+title: Share your buttons with others. - Microsoft Flow | Microsoft Docs
 description: Share your buttons with others so they can use your buttons and save time.
 services: ''
 suite: flow

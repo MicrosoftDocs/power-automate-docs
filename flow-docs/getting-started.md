@@ -1,5 +1,5 @@
 ---
-title: Get started | Microsoft Docs
+title: Get started - Microsoft Flow | Microsoft Docs
 description: Quick ways to start automating your work and life with Microsoft Flow
 services: ''
 suite: flow

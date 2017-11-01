@@ -1,5 +1,5 @@
 ---
-title: Learn how to add other owners to a flow and create team flows | Microsoft Docs
+title: Learn how to add other owners to a flow and create team flows - Microsoft Flow | Microsoft Docs
 description: Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows.
 services: ''
 suite: flow

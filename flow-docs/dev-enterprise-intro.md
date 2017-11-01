@@ -1,5 +1,5 @@
 ---
-title: Microsoft Flow for enterprise developers | Microsoft Docs
+title: Microsoft Flow for enterprise developers - Microsoft Flow | Microsoft Docs
 description: An introduction for enterprise developers to developing for Microsoft Flow.
 services: ''
 suite: flow

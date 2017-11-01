@@ -1,5 +1,5 @@
 ---
-title: Develop an API connector | Microsoft Docs
+title: Develop an API connector - Microsoft Flow | Microsoft Docs
 description: Describe your API, specify authentication type, build triggers and actions, and test.
 services: ''
 suite: flow
