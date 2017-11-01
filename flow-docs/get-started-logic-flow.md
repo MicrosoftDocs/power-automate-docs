@@ -1,5 +1,5 @@
 ---
-title: Automate tasks by creating a flow | Microsoft Docs
+title: Automate tasks by creating a flow - Microsoft Flow | Microsoft Docs
 description: Create a flow to automatically perform one or more actions, such as sending mail, when events occur, such as someone adding a row to a SharePoint list.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Flow sign-up Q&A in your organization | Microsoft Docs
+title: Flow sign-up Q&A in your organization - Microsoft Flow | Microsoft Docs
 description: Common questions and answers about licenses, administration, and users signing up for Flow in your Office 365 tenant
 services: ''
 suite: flow

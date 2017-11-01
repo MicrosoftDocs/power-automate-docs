@@ -1,5 +1,5 @@
 ---
-title: Create a flow from a template | Microsoft Docs
+title: Create a flow from a template - Microsoft Flow | Microsoft Docs
 description: Create a flow from any of several built-in templates.
 services: ''
 suite: flow

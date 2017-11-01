@@ -1,5 +1,5 @@
 ---
-title: Microsoft Flow for ISVs and Microsoft partners | Microsoft Docs
+title: Microsoft Flow for ISVs and Microsoft partners - Microsoft Flow | Microsoft Docs
 description: An introduction for ISVs and Microsoft partners to leveraging Microsoft Flow.
 services: ''
 suite: flow

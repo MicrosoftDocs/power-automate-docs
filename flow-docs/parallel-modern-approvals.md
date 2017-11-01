@@ -1,5 +1,5 @@
 ---
-title: Create a parallel modern approval workflow | Microsoft Docs
+title: Create a parallel modern approval workflow - Microsoft Flow | Microsoft Docs
 description: Create a parallel modern approval workflow
 services: ''
 suite: flow
