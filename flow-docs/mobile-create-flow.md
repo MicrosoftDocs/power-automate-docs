@@ -1,5 +1,5 @@
 ---
-title: Create a flow from your phone - Microsoft Flow | Microsoft Docs
+title: Create a flow from your phone | Microsoft Docs
 description: Create a flow from a template that, for example, sends a push notification when you receive mail from an address that you specify
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Learn how to automate and run repetitive tasks with button flows - Microsoft Flow | Microsoft Docs
+title: Learn how to automate and run repetitive tasks with button flows | Microsoft Docs
 description: Introduction to button flows.
 services: ''
 suite: flow

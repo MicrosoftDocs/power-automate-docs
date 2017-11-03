@@ -1,5 +1,5 @@
 ---
-title: Create a modern approval workflow with multiple approvers - Microsoft Flow | Microsoft Docs
+title: Create a modern approval workflow with multiple approvers | Microsoft Docs
 description: 'Create a modern approval workflow with multiple approvers '
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: API connector overview  - Microsoft Flow | Microsoft Docs
+title: API connector overview  | Microsoft Docs
 description: ISVs and SaaS service owners can build connectors and have them certified by Microsoft.
 services: ''
 suite: flow

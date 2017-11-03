@@ -1,5 +1,5 @@
 ---
-title: API connector FAQ - Microsoft Flow | Microsoft Docs
+title: API connector FAQ | Microsoft Docs
 description: Find answers to questions about requirements, triggers, and other areas.
 services: ''
 suite: flow

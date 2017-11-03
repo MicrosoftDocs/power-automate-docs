@@ -1,5 +1,5 @@
 ---
-title: Understand on-premises data gateways - Microsoft Flow | Microsoft Docs
+title: Understand on-premises data gateways | Microsoft Docs
 description: Reference, installation and troubleshooting information for on-premises data gateways
 services: ''
 suite: flow

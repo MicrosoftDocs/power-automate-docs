@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions - Microsoft Flow | Microsoft Docs
+title: Frequently asked questions | Microsoft Docs
 description: Answers to several common questions about Microsoft Flow
 services: ''
 suite: flow

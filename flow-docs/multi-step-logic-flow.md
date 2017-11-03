@@ -1,5 +1,5 @@
 ---
-title: Add an advanced option and multiple actions - Microsoft Flow | Microsoft Docs
+title: Add an advanced option and multiple actions | Microsoft Docs
 description: Expand a flow to include an advanced option, such as setting email to high priority, and add another action for the same event.
 services: ''
 suite: flow

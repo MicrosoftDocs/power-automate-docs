@@ -1,5 +1,5 @@
 ---
-title: Filter and copy data - Microsoft Flow | Microsoft Docs
+title: Filter and copy data | Microsoft Docs
 description: Learn to filter and copy data from a source to a destination with Microsoft Flow
 services: ''
 suite: flow

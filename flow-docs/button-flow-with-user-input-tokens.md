@@ -1,5 +1,5 @@
 ---
-title: Learn how to automate repetitive tasks with button flows that take user input - Microsoft Flow | Microsoft Docs
+title: Learn how to automate repetitive tasks with button flows that take user input | Microsoft Docs
 description: Microsoft Flow makes it easy automate repetitive tasks. Your flows can even take user input when running a repetitive task.
 services: ''
 suite: flow

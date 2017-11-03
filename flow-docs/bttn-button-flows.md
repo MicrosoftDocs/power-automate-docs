@@ -1,5 +1,5 @@
 ---
-title: Start flows with bttns - Microsoft Flow | Microsoft Docs
+title: Start flows with bttns | Microsoft Docs
 description: Learn how to start your flows with a bttn
 services: ''
 suite: flow

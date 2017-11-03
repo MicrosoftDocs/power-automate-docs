@@ -1,5 +1,5 @@
 ---
-title: View, approve, or reject approval requests. - Microsoft Flow | Microsoft Docs
+title: View, approve, or reject approval requests. | Microsoft Docs
 description: Learn how to view, approve, or reject approval requests in Microsoft Flow.
 services: ''
 suite: flow
