@@ -1,5 +1,5 @@
 ---
-title: Submit for certification as an API Connector - Microsoft Flow | Microsoft Docs
+title: Submit for certification as an API Connector | Microsoft Docs
 description: By certifying a connector, it becomes available to all users of Microsoft Flow, PowerApps and Logic Apps.
 services: ''
 suite: flow

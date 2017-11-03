@@ -1,5 +1,5 @@
 ---
-title: Introduction to button trigger tokens - Microsoft Flow | Microsoft Docs
+title: Introduction to button trigger tokens | Microsoft Docs
 description: Introduction to button trigger tokens for Microsoft button flows.
 services: ''
 suite: flow

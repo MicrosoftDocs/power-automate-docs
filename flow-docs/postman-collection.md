@@ -1,5 +1,5 @@
 ---
-title: Describe a custom connector with Postman - Microsoft Flow | Microsoft Docs
+title: Describe a custom connector with Postman | Microsoft Docs
 description: Create a Postman Collection for registering custom connectors
 services: ''
 suite: flow

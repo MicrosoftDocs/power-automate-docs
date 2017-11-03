@@ -1,5 +1,5 @@
 ---
-title: Use the apply to each action to loop through an array of items. - Microsoft Flow | Microsoft Docs
+title: Use the apply to each action to loop through an array of items. | Microsoft Docs
 description: Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions.
 services: ''
 suite: flow

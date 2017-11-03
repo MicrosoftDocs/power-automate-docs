@@ -1,5 +1,5 @@
 ---
-title: Use Azure Active Directory with a custom connector - Microsoft Flow | Microsoft Docs
+title: Use Azure Active Directory with a custom connector | Microsoft Docs
 description: Learn how to create a custom connector for Azure Resource Manager, with Azure Active Directory authentication.
 services: ''
 suite: flow

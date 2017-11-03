@@ -1,5 +1,5 @@
 ---
-title: Run flows on a schedule - Microsoft Flow | Microsoft Docs
+title: Run flows on a schedule | Microsoft Docs
 description: Automate recurring tasks by running flows on a schedule, such as every day or every hour.
 services: ''
 suite: flow

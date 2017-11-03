@@ -1,5 +1,5 @@
 ---
-title: Add a condition to a flow - Microsoft Flow | Microsoft Docs
+title: Add a condition to a flow | Microsoft Docs
 description: Specify that a flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow

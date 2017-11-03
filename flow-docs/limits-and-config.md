@@ -1,5 +1,5 @@
 ---
-title: Limits and configuration - Microsoft Flow | Microsoft Docs
+title: Limits and configuration | Microsoft Docs
 description: Limits and configuration
 services: ''
 suite: flow

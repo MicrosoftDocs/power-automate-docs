@@ -1,5 +1,5 @@
 ---
-title: Wait for approval in a flow - Microsoft Flow | Microsoft Docs
+title: Wait for approval in a flow | Microsoft Docs
 description: Flows can wait for an external event to occur, such as a user approving or rejecting a change, before performing an action, such as sending notification of the decision.
 services: ''
 suite: flow

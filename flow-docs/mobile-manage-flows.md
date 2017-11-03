@@ -1,5 +1,5 @@
 ---
-title: Manage flows from your phone - Microsoft Flow | Microsoft Docs
+title: Manage flows from your phone | Microsoft Docs
 description: View a list of your flows, enable or disable them, and view each flow's event/s, action/s, and run history
 services: ''
 suite: flow

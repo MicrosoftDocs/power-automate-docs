@@ -1,5 +1,5 @@
 ---
-title: Monitor activity from your phone - Microsoft Flow | Microsoft Docs
+title: Monitor activity from your phone | Microsoft Docs
 description: View how many times each flow succeeded or failed, when each run occurred, and how long it took
 services: ''
 suite: flow

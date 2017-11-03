@@ -1,5 +1,5 @@
 ---
-title: Register and use custom connectors - Microsoft Flow | Microsoft Docs
+title: Register and use custom connectors | Microsoft Docs
 description: Register and use custom connectors in Microsoft Flow, using OpenAPI and Postman.
 services: ''
 suite: flow

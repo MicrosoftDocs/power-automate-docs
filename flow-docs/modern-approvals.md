@@ -1,5 +1,5 @@
 ---
-title: Easily Automate approval workflows. - Microsoft Flow | Microsoft Docs
+title: Easily Automate approval workflows. | Microsoft Docs
 description: Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 services: ''
 suite: flow
