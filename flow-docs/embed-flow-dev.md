@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft Flow with websites and apps - Microsoft Flow | Microsoft Docs
+title: Integrate Microsoft Flow with websites and apps | Microsoft Docs
 description: Embed the Microsoft Flow experiences into your website or app.
 services: ''
 suite: flow

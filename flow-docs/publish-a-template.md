@@ -1,5 +1,5 @@
 ---
-title: Submit a flow template - Microsoft Flow | Microsoft Docs
+title: Submit a flow template | Microsoft Docs
 description: Submit your flow as a template so that other organizations can find it in the template gallery and use the flow that you created.
 services: ''
 suite: flow

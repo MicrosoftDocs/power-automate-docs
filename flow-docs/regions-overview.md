@@ -1,5 +1,5 @@
 ---
-title: Regions overview for Microsoft Flow - Microsoft Flow | Microsoft Docs
+title: Regions overview for Microsoft Flow | Microsoft Docs
 description: Overview with question and answer about regions in Microsoft Flow
 services: ''
 suite: flow

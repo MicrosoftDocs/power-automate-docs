@@ -1,5 +1,5 @@
 ---
-title: Use webhooks with Microsoft Flow - Microsoft Flow | Microsoft Docs
+title: Use webhooks with Microsoft Flow | Microsoft Docs
 description: Learn how to create flows that interact with webhooks in Microsoft Flow
 services: ''
 suite: flow

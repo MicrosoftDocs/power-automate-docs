@@ -1,5 +1,5 @@
 ---
-title: Use the admin center to manage environments and data policies. - Microsoft Flow | Microsoft Docs
+title: Use the admin center to manage environments and data policies. | Microsoft Docs
 description: The Microsoft Flow admin center is used by tenant and environment admins to manage data policies and environments for Microsoft Flow deployments.
 services: ''
 suite: flow

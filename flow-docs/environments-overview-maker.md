@@ -1,5 +1,5 @@
 ---
-title: Switching environments when creating a Microsoft Flow - Microsoft Flow | Microsoft Docs
+title: Switching environments when creating a Microsoft Flow | Microsoft Docs
 description: How a maker uses different environments when creating a Microsoft Flow
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Create a flow with Dynamics 365 (online) - Microsoft Flow | Microsoft Docs
+title: Create a flow with Dynamics 365 (online) | Microsoft Docs
 description: Create useful workflows by using a Dynamics 365 connection and Microsoft Flow
 services: ''
 suite: flow
