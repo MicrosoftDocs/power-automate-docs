@@ -30,6 +30,8 @@
     href: data-operations.md
   - name: Filter and copy data
     href: odata-filters.md
+  - name: Use expressions in conditions
+    href: use-expressions-in-conditions.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
   - name: Add data to the Common Data Service
