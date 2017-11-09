@@ -47,8 +47,8 @@ ms.author: stepsic
 - **OneDrive for Business integration** - There's [now a Flow button inside of OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) that can create or trigger flows on selected files or folders.
 - **Planner triggers** - Start flows when a new task is created, when a task is assigned to you or when one is completed.
 - **SharePoint attachments** - Work with attachments on SharePoint List items: list, download, add or delete attachments.
-- **Flow management connector** - Create flows that automate the management of other flows in your environment.
-- **Four new connector** - Added Azure Custom Vision Service, D&B Optimizer, Enadoc, and Derdak SIGNL4. 
+- **Flow management connector** - Create flows that automate the management of other flows in your environment, for example, add permissions to flows automatically.
+- **Four new connectors** - Added Azure Custom Vision Service, D&B Optimizer, Enadoc, and Derdak SIGNL4. 
 - **More connector actions** - Run SQL queries, get faster email triggers, use any method with HTTP with Azure AD and more.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-triggers-connector-improvements/) about this release.
