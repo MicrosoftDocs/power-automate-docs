@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/21/2017
+ms.date: 11/09/2017
 ms.author: stepsic
 
 ---
@@ -25,11 +25,11 @@ ms.author: stepsic
    1. Identify the failure. Start by going to the notifications icon at the top of the web portal, or selecting the **Activity** tab in the mobile app. You should see your flow there, and you can select it.
    2. You are now looking at the flow details. Find the step with the red exclamation icon, and you should see the error message for your flow there.
    3. Depending on the error message, you should be able to **Edit** the flow and fix it. [Read more about how to fix common flow failures](fix-flow-failures.md).
-2. How do I use an advanced condition or a formula?
+2. How do I use an advanced condition or an expression?
    
    * Read about [adding conditions](add-condition.md).
    * If you want multiple cases in a flow, click or tap **Add condition** from inside of an existing condition.
-   * Create an advanced formula by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
+   * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
    * If you're an Office 365 user, you get full access through the Microsoft Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
@@ -37,11 +37,28 @@ ms.author: stepsic
 
 ## Known issues and resolutions
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
-2. Document Metadata isn't returned from triggers on SharePoint document libraries.
-3. Flows can't write to Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
-4. File triggers won't fire for files being added inside of nested folders inside the folder you select.
+2. Flows can't write to Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
+3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2017-11-09
+
+- **OneDrive for Business integration** - There's [now a Flow button inside of OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) that can create or trigger flows on selected files or folders.
+- **Planner triggers** - Start flows when a new task is created, when a task is assigned to you or when one is completed.
+- **SharePoint attachments** - Work with attachments on SharePoint List items: list, download, add or delete attachments.
+- **Flow management connector** - Create flows that automate the management of other flows in your environment.
+- **Four new connector** - Added Azure Custom Vision Service, D&B Optimizer, Enadoc, and Derdak SIGNL4. 
+- **More connector actions** - Run SQL queries, get faster email triggers, use any method with HTTP with Azure AD and more.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/planner-triggers-connector-improvements/) about this release.
+
+### Release 2017-11-02
+
+- **Audit Logging** - Microsoft Flow audit events are now available in Office 365 Security & Compliance Center for all tenants.
+- **Flow widget fixes** - Fixed an issue in the Flow mobile app that caused buttons to not load in the widget.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/security-and-compliance-center/) about this release.
 
 ### Release 2017-10-19
 
@@ -70,11 +87,11 @@ ms.author: stepsic
 
 ### Release 2017-09-25 - Q3 Update for Microsoft Flow
 
-- **Deeper SharePoint integration** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow.
+- **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
 - **Dynamics 365 for Customer Engagement** - Flow is now integrated in the UI for Dynamics 365 for Customer Engagement.
 - **Microsoft Trust Center** - Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
-- **Audit Logging** - All flow management events are logged in the Office 365 Security and Compliance center.
+- **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
 - **Six new connectors** - Added LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy, and Azure Log Analytics Data Collection.
 - **SQL triggers** - Run flows when a new row is added or a row is updated in a SQL table.
 - **On-prem custom connectors** - Custom connectors can now use the On-premises Data gateway to connect to internal endpoints on your network.
