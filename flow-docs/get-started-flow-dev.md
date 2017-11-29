@@ -23,9 +23,9 @@ ms.author: barathb
 Here are some of the ways you can extend your application with Microsoft Flow:
 
 * Create and connect to a custom connector.
-* Share that API with all Microsoft Flow users.
-* Embed the flow experience from within an app.
-* Leverage all the developer APIs so that users can interact with Microsoft Flow in the best way for them.
+* Share your custom connector with all Microsoft Flow users.
+* Embed the flow experience within an app.
+* Highlight all custom connectors so that users can interact with Microsoft Flow in the best way for them.
 
 ## Prerequisites
 
@@ -33,9 +33,9 @@ Here are some of the ways you can extend your application with Microsoft Flow:
 
 ## Create a custom connector
 
-If you have a web service that you want to be able to automate with Microsoft Flow, you'll first need to build a custom connector. By registering a custom connector, you teach Microsoft Flow about the characteristics of your web service, including the authentication it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
+If you have a web service to which you want to connect from Microsoft Flow, you'll first need to create a custom connector. When you register a custom connector, you teach Microsoft Flow about the characteristics of your web service, including the authentication it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
 
-Follow this tutorial to learn how to [Register and use custom connectors](https://powerapps.microsoft.com/tutorials/register-custom-api/). After you register your custom connector, you can share it inside your organization so that others can use it.
+Follow this tutorial to learn how to [Register and use custom connectors](https://powerapps.microsoft.com/tutorials/register-custom-api/). After you register your custom connector, you can share it within your organization for testing.
 
 ## Share a custom connector with all Microsoft Flow users
 
@@ -45,14 +45,14 @@ Here's what you'll need for the review process:
 
 * An OpenAPI file that represents your API and any authentication information.
 * An icon for your connector.
-* A description of your API.
-* Approximately 10 ideas for how your API could benefit other users through templates.
+* A description of your connector.
+* Approximately 10 ideas for how your connector could benefit other users through templates.
 
 After you submit this information, Microsoft starts assessing your API's functionality in Microsoft Flow and Microsoft PowerApps.
 
-## Embed the flow experience in your website or app
+## Embed the flow experience into your website or app
 
-You can embed Microsoft Flow into your app to enable deep, in-context integration between your app and all the other services that Microsoft Flow supports. For example, you can:
+You can embed Microsoft Flow into your app to enable deep, in-context integration between your app and all other services that Microsoft Flow supports. For example, you can:
 
 * Browse all templates that relate to your service and let users select a template.
 * Manage the flows that users have related to your app.
