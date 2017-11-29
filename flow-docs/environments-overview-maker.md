@@ -36,7 +36,7 @@ When you create a flow, you choose an environment to host the flow and the resou
 
 Scenario|Recommendation
 -----|-----
-You want to create a flow that uses a connection to the Microsoft Common Data Service.|Place your flow flow and the Common Data Service into the same environment. This ensures all the data is isolated within that environment (isolation boundary).
+You want to create a flow that uses a connection to the Microsoft Common Data Service.|Place your flow and the Common Data Service into the same environment. This ensures all the data is isolated within that environment (isolation boundary).
 You're creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow.|Create an environment and add only the HR users to it. Place the flow and any other resources the flow uses into this environment.
 There're users in Europe who use a flow to show SharePoint data.|Create an environment in Europe, and then create your flow and the SharePoint connection in it. This Europe environment gives the European users the best performance, since all resources are local to Europe (data locality).
 
