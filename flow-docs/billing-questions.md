@@ -38,10 +38,6 @@ In the top navigation menu, select **Learn** > **Pricing**, and then select the 
 
 ## How do I know how much I've used?
 
-<!-- Click or tap **Activity** to show logs of your runs, along with notifications and failures.
-
-![Activity link](./media/billing-questions/activity-link.png) -->
-
 If you're on a free plan or a trial plan, click or tap the gear icon in the top navigation bar to show your current usage against your plan. 
 
 ![Settings button](./media/billing-questions/settings.png)
