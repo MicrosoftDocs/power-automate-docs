@@ -28,7 +28,8 @@ Environments provide the following benefits:
 
     If your users are in Europe, create and use the environment in the Europe region. If your users are in the United States, create and use the environment in the U.S. 
 
-    >[AZURE.IMPORTANT]If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, PowerApps, and more.
+    > [!IMPORTANT]
+    > If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, PowerApps, and more.
 * **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use data loss prevention to control which services can share data within your Microsoft Flow deployment.
 
     For example, you can add the *SharePoint* and *OneDrive for Business* services to a business data only policy. Any flows created in this environment can use *SharePoint* and *OneDrive for Business* services. However, they won't be able to share data with other services that aren't included in the business data only policy.
@@ -43,7 +44,7 @@ Environments provide the following benefits:
   * Create a SQL Database, and then store your data in it.
   * Use the Common Data Service to store your data.
 
-    Every environment can have a maximum of one database for your flows in the Common Data Service. Access to the Common Data Service depends on the license you've purchased; The Common Data Service isn't included with the Free license.
+    Every environment can have a maximum of one database for your flows in the Common Data Service. Access to the Common Data Service depends on the license you've purchased; the Common Data Service isn't included with the Free license.
 
 ## Limitations
 
