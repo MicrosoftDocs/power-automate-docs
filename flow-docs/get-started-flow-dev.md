@@ -1,5 +1,5 @@
 ---
-title: Create custom connectors to Microsoft Flow | Microsoft Docs
+title: Create custom connectors and embed flows| Microsoft Docs
 description: Create a custom connector, share it, embed a flow, and do much more.
 services: ''
 suite: flow
@@ -52,7 +52,7 @@ After you submit this information, Microsoft starts assessing your API's functio
 
 ## Embed the flow experience into your website or app
 
-You can embed Microsoft Flow into your app to enable deep, in-context integration between your app and all other services that Microsoft Flow supports. For example, you can:
+You can [embed](embed-flow-dev.md) Microsoft Flow into your app to enable deep, in-context integration between your app and all other services that Microsoft Flow supports. For example, you can:
 
 * Browse all templates that relate to your service and let users select a template.
 * Manage the flows that users have related to your app.
