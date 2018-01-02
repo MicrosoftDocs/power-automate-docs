@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/09/2017
+ms.date: 01/01/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,38 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2017-12-20
+
+Microsoft Flow Analytics is now available in all Microsoft Flow regions, meaning you can get more insight into the health of flows running within your environment.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/) about this release.
+
+
+### Release 2017-12-14
+
+- **Outlook connector improvements** - You can save an email as a ".eml" file, respond to calendar invitations automatically, and trigger flows when you are mentioned in an email thread.
+- **Connections improvements** - Flow remembers your most recently used connections, and shows you all of the newly added connectors.
+- **Five new connectors** - Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do, and Plumsail Documents.
+- **HTTP improvements** - The HTTP action now supports chunked encoding.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/outlook-connector-more/) about this release.
+
+### Release 2017-12-05
+
+The Microsoft Flow Launch Panel is now available in all regions. This panel allows you to add values to a flow when you run it inside of your SharePoint list or document library.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) about this release.
+
+
+### Release 2017-11-28
+
+- **Managed Metadata** - Read data from, and write into, columns in SharePoint that use the Managed Metadata (aka. Taxonomy) type.
+- **Append to Arrays** - Add items to the end of arrays using a new Append to array variable action.
+- **Tago** - A new connector to Tago, which provides easy connection of electronic devices with external data to drive smarter decisions using contextual analysis.
+- **iPhone X** - A new version of the Flow app that uses the full screen on the iPhone X, and that has a speed improvement for image uploads.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/managed-metadata-tago/) about this release.
 
 ### Release 2017-11-09
 
