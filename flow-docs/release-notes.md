@@ -52,8 +52,8 @@ Microsoft Flow Analytics is now available in all Microsoft Flow regions, meaning
 ### Release 2017-12-14
 
 - **Outlook connector improvements** - You can save an email as a ".eml" file, respond to calendar invitations automatically, and trigger flows when you are mentioned in an email thread.
-- **Connections improvements** - Flow remembers your most recently used connections, and shows you all of the newly added connectors.
-- **Five new connectors** - Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do, and Plumsail Documents.
+- **Connections improvements** - Microsoft Flow remembers your most recently used connections, and shows you all of the newly added connectors.
+- **Five new connectors** - Added Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do, and Plumsail Documents.
 - **HTTP improvements** - The HTTP action now supports chunked encoding.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/outlook-connector-more/) about this release.
@@ -70,7 +70,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 - **Managed Metadata** - Read data from, and write into, columns in SharePoint that use the Managed Metadata (aka. Taxonomy) type.
 - **Append to Arrays** - Add items to the end of arrays using a new Append to array variable action.
 - **Tago** - A new connector to Tago, which provides easy connection of electronic devices with external data to drive smarter decisions using contextual analysis.
-- **iPhone X** - A new version of the Flow app that uses the full screen on the iPhone X, and that has a speed improvement for image uploads.
+- **iPhone X** - A new version of the Microsoft Flow app that uses the full screen on the iPhone X, and that has a speed improvement for image uploads.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/managed-metadata-tago/) about this release.
 
