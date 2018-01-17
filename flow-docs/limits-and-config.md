@@ -111,11 +111,11 @@ The following table lists the services to which Microsoft Flow connects. Ensure 
 Domains | Protocols | Uses
 --------|  ---------| -----
 management.azure.com|https|RP
-msmanaged-na.azure-apim.net|https|Runtime of Connectors/Apis
+msmanaged-na.azure-apim.net|https|Access to the Runtime for Connectors.
 login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Access to Active Directory Authentication Library (ADAL).
-graph.microsoft.com </br>graph.windows.net</br>|https|Azure Graph - for getting user information such as a profile photo.
+graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph API - for getting user information such as a profile photo.
 *.azure-apim.net|https|Api Hubs - sub-domains for each locale
-*.flow.microsoft.com|https|Microsoft Flow site
-*.powerapps.com|https|PowerApps site
-psux.azureedge.net|https|Microsoft Flow CDN
+*.flow.microsoft.com|https|Access to the Microsoft Flow site
+*.powerapps.com|https|Access to the PowerApps site
+psux.azureedge.net|https|Access to the Microsoft Flow CDN
 
