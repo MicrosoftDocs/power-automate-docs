@@ -106,3 +106,15 @@ Calls made from an API connected through a flow (for example, the SQL API or the
 
 For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
 
+The following table lists the services to which Microsoft Flow connects. Ensure none of these services are blocked on your network.
+
+Domains | Protocols | Uses
+--------|  ---------| -----
+management.azure.com|https|Access to the Azure Resource Manager.
+login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Access to Active Directory Authentication Library (ADAL).
+graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph API - for getting user information such as a profile photo.
+*.azure-apim.net|https|Access to the Runtime for Connectors.
+*.flow.microsoft.com|https|Access to the Microsoft Flow site.
+*.powerapps.com|https|Access to the PowerApps site.
+psux.azureedge.net|https|Access to the Microsoft Flow CDN.
+
