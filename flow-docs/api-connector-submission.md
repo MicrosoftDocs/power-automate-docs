@@ -4,7 +4,7 @@ description: By certifying a connector, it becomes available to all users of Mic
 services: ''
 suite: flow
 documentationcenter: na
-author: asavaritayal
+author: mgblythe
 manager: anneta
 editor: ''
 tags: ''
@@ -15,7 +15,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/19/2017
-ms.author: astay
+ms.author: mblythe
 
 ---
 # Submit your connectors for Microsoft certification

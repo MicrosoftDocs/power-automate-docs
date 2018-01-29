@@ -4,7 +4,7 @@ description: Learn how to create a custom connector for Azure Resource Manager, 
 services: ''
 suite: flow
 documentationcenter: ''
-author: msftman
+author: mgblythe
 manager: anneta
 editor: ''
 
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/03/2016
-ms.author: deonhe
+ms.author: mblythe
 
 ---
 # Use Azure Active Directory with a custom connector in Microsoft Flow

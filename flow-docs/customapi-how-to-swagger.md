@@ -4,7 +4,7 @@ description: View the schema extensions required by OpenAPI to work with Microso
 services: ''
 suite: flow
 documentationcenter: ''
-author: sunaysv
+author: mgblythe
 manager: anneta
 editor: sunaysv
 
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/19/2017
-ms.author: sunayv
+ms.author: mblythe
 
 ---
 # OpenAPI extensions for custom connectors in Microsoft Flow
