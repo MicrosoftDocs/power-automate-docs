@@ -84,34 +84,12 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: "Develop: enterprise developers"
+- name: Develop for Microsoft Flow
   items:
-  - name: Microsoft Flow for enterprise developers
+  - name: Microsoft Flow for enterprise developers, partners, and ISVs
     href: dev-enterprise-intro.md
   - name: Register and use custom connectors
     href: register-custom-api.md
-  - name: Describe a custom connector with Postman
-    href: postman-collection.md
-  - name: OpenAPI extensions for custom connectors
-    href: customapi-how-to-swagger.md
-  - name: Use Azure Active Directory with a custom connector
-    href: customapi-azure-resource-manager-tutorial.md
-  - name: Build a custom connector for a Web API
-    href: customapi-web-api-tutorial.md
-  - name: Use a webhook to trigger a flow
-    href: customapi-webhooks.md
-- name: "Develop: partners and ISVs"
-  items:
-  - name: Microsoft Flow for Microsoft partners and ISVs
-    href: dev-isv-partner-intro.md
-  - name: Overview of certifying API connectors
-    href: api-connector-overview.md
-  - name: Develop API connectors for certification
-    href: api-connector-dev.md
-  - name: Submit API connectors for certification
-    href: api-connector-submission.md
-  - name: FAQ for certifying API connectors
-    href: api-connector-faq.md
   - name: Integrate with websites and other technologies
     href: embed-flow-dev.md
   - name: Let customers test drive your flows
