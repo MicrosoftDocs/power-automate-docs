@@ -4,7 +4,7 @@ description: Learn how to create flows that interact with webhooks in Microsoft 
 services: ''
 suite: flow
 documentationcenter: ''
-author: msftman
+author: mgblythe
 manager: anneta
 editor: ''
 
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
-ms.author: deonhe
+ms.author: mblythe
 
 ---
 # Use webhooks with Microsoft Flow

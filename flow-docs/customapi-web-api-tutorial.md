@@ -4,7 +4,7 @@ description: Learn how to create an ASP.NET Web API with Azure Active Directory 
 services: ''
 suite: flow
 documentationcenter: ''
-author: sunaysv
+author: mgblythe
 manager: anneta
 editor: ''
 
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
-ms.author: sunayv
+ms.author: mblythe
 
 ---
 # Build a custom connector for a Web API in Microsoft Flow
