@@ -88,7 +88,7 @@
   items:
   - name: Microsoft Flow for enterprise developers, partners, and ISVs
     href: dev-enterprise-intro.md
-  - name: Register and use custom connectors
+  - name: Build and certify custom connectors
     href: register-custom-api.md
   - name: Integrate with websites and other technologies
     href: embed-flow-dev.md
