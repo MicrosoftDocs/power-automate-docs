@@ -45,7 +45,7 @@ These are the limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days the pending steps will Time Out. |
+| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days the pending steps will time out. |
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
