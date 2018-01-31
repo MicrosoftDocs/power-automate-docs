@@ -77,7 +77,7 @@ You can work around this issue by putting all the filtering you need into the tr
 ## Other limits and caveats
 
 * Each account may have as many as:
-  * 50 flows.
+  * 250 flows.
   * 15 Custom Connectors.
   * 20 connections per API and 100 connections total.
 * You can install a gateway only in the default environment.
