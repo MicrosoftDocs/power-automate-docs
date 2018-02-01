@@ -45,7 +45,7 @@ These are the limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days the pending steps will time out. Any pending approval will be removed from the approvals center. If someone attemps to approve a time-out request, they’ll receive an error message. |
+| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days, any pending steps time-out. Timed-out approvals are removed from the approvals center. If someone attemps to approve a timed-out request, they’ll receive an error message. |
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
