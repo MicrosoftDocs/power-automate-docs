@@ -48,15 +48,15 @@ As a Microsoft partner or ISV, accelerate customer adoption by extending your pr
 
 ### 1. Connecting to your ISV's APIs
 
-ISVs often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+ISVs often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
 
-Once created, the custom connectors will have to be deployed into the customer’s tenant via REST APIs or PowerShell, or you can go through the certification process to list a Connector in the public list.
+Once created, there are two ways to make the connector available to your customers:
+1. The connector can be deployed into the customer’s tenant via REST APIs or PowerShell.
+2. To make the custom connector publicly available for all users, you can submit your connector for certification. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/submit-certification).
 
 ### 2. Authentication 
 
-The ISV Cloud Embed program works for any ISV that allows Azure Active Directory federated single sign-on its end users or customers. The user interface embedding, as well as programmatic access to deployment, both require the use of Azure AD authentication on behalf of the end users.
-
-We do not have support unauthenticated access, or access with identity providers other than Azure AD.  
+In order to call REST APIs and embed authenticated UI, your application needs to use Azure Active Directory federated single sign-on its end users or customers. [Go here](https://identity.microsoft.com/) for information on how to enable AAD federated SSO. We do not have support for unauthenticated access, or access with identity providers other than Azure AD. 
 
 ### 3. Embedding UI Components
 
@@ -68,19 +68,14 @@ Once you have a connector, you should publish templates that demonstrate how to 
 
 ### 5. Deployment
 
-For your end users to have flows that they can use automatically, you can deploy them into the Azure AD tenant of the user. To create a Package for deployment [see this article](https://docs.microsoft.com/powerapps/export-import-packages).
-
-Then, you can deploy it using either the REST APIs, or PowerShell.
+For your end users to have flows that they can use automatically, you can deploy them into the Azure AD tenant of the user. To create a Package for deployment [see this article](https://docs.microsoft.com/powerapps/export-import-packages). Then, you can deploy it using either the REST APIs, or PowerShell.
 
 ### 6. Licensing
 
 If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for you. However, if your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Microsoft Flow, so that they are licensed to leverage those embedded components in your application.
 
-We offer the Microsoft Cloud Solution Provider program to acquire licenses on behalf of your customers. [Read more about becoming a CSP here](https://partner.microsoft.com/en-US/cloud-solution-provider).
-
-There are two different plans available for Microsoft Flow, you can [read more about the different plans here](https://flow.microsoft.com/pricing/).  
+We offer the Microsoft Cloud Solution Provider program to acquire licenses on behalf of your customers. [Read more about becoming a CSP here](https://partner.microsoft.com/en-US/cloud-solution-provider). There are two different plans available for Microsoft Flow, you can [read more about the different plans here](https://flow.microsoft.com/pricing/).  
 
 ### 7. List on AppSource
 
 Once you have integrated Microsoft Flow into your application, you can list it on Microsoft App Source. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md).
-
