@@ -48,11 +48,11 @@ As a Microsoft partner or ISV, accelerate customer adoption by extending your pr
 
 ### 1. Connecting to your ISV's APIs
 
-ISV's often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
+ISV's often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
 
 Once created, there are two ways to make the connector available to your customers:
 1. The connector can be deployed into the customer’s tenant via REST APIs or PowerShell.
-2. To make the custom connector publicly available for all users, you can submit your connector for certification. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/submit-certification).
+2. To make the custom connector publicly available for all users, you can submit your connector for certification. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
 ### 2. Authentication 
 
@@ -78,4 +78,4 @@ We offer the Microsoft Cloud Solution Provider program to acquire licenses on be
 
 ### 7. List on AppSource
 
-Once you have integrated Microsoft Flow into your application, you can list it on Microsoft App Source. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md).
+Once you have integrated Microsoft Flow into your application, you can list it on Microsoft AppSource. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
