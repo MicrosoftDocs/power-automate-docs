@@ -34,11 +34,11 @@ As an enterprise developer, empower your organization to build robust tailored s
 
 ## Microsoft Flow for ISVs and Microsoft partners
 
-As a Microsoft partner or ISV, accelerate customer adoption by extending your products to integrate with your customers' data and business processes, and add and customize workflows to automate business processes as part of your application. After you have completed the below seven steps, your application will have the ability to leverage flows that can connect to 200+ different services.
+As a Microsoft partner or ISV, accelerate customer adoption by extending your products to integrate with your customers' data and business processes, and add and customize workflows to automate business processes as part of your application. After you have completed the below seven steps, your application will have the ability to leverage a robust cloud-scale workflow engine that can connect to 200+ different services.
 
 | Phase | Step | When needed? |
 | --- | --- | --- |
-| Development | 1. Build a Custom Connector to your ISV’s data | If you want to expose your own ISV data to the PowerApps or flows |
+| Development | 1. Build a Custom Connector to your ISV's data | If you want to expose your own ISV data to the PowerApps or flows |
 | Development | 2. Add support for your application to authenticate users with Azure AD | If you want to embed Microsoft Flow UI or list in App Source | 
 | Development | 3. Embed the Microsoft Flow UI into your application using our web-based iframe | If you want to include flow creation or management into your application | 
 | Development | 4. Create and publish flow templates | If you want to pre-build flows for your customers | 
@@ -48,7 +48,7 @@ As a Microsoft partner or ISV, accelerate customer adoption by extending your pr
 
 ### 1. Connecting to your ISV's APIs
 
-ISVs often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
+ISV's often have proprietary data that you want to be able to access from inside of the flows that you want your customers to use. You can expose access to any of your data through a Custom Connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/).
 
 Once created, there are two ways to make the connector available to your customers:
 1. The connector can be deployed into the customer’s tenant via REST APIs or PowerShell.
