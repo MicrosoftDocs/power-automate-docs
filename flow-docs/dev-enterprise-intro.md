@@ -56,7 +56,7 @@ Once created, there are two ways to make the connector available to your custome
 
 ### 2. Authentication 
 
-ITo call REST APIs and embed authenticated UI, your application needs to use Azure AD federated single sign-on to authenticate end users and customers. [Go here](https://identity.microsoft.com/) for information on how to enable AAD federated SSO. We do not have support for unauthenticated access, or access with identity providers other than Azure AD. 
+To call REST APIs and embed authenticated UI, your application needs to use Azure AD federated single sign-on to authenticate end users and customers. [Go here](https://identity.microsoft.com/) for information on how to enable AAD federated SSO. We do not have support for unauthenticated access, or access with identity providers other than Azure AD. 
 
 ### 3. Embedding UI components
 
