@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
 
 ---
@@ -45,7 +45,7 @@ These are the limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days the pending steps will Time Out. |
+| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days, any pending steps time-out. Timed-out approvals are removed from the approvals center. If someone attemps to approve a timed-out request, they’ll receive an error message. |
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
@@ -104,7 +104,7 @@ Calls made from an API connected through a flow (for example, the SQL API or the
 | United States |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | United States (Early Access) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-For example, if you must whitelist IP addresses for your Azure SQL database, you should use these addresses.
+For example, if you must authorize IP addresses for your Azure SQL database, you should use these addresses.
 
 The following table lists the services to which Microsoft Flow connects. Ensure none of these services are blocked on your network.
 
