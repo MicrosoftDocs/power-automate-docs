@@ -95,6 +95,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 ### Release 2017-10-19
 
 - **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each containers.
+<!---Loc Commet: Could you help to explain what you mean in the string above?--->
 - **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
 - **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
 - **Improved connection experience** - Notifications in the Flow portal when a connection is broken and richer connection details.
