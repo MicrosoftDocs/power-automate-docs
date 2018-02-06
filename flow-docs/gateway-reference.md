@@ -25,7 +25,7 @@ Use the on-premises data gateway with Microsoft Flow to establish secure connect
 ### Prerequisites
 Minimum:
 
-* [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)
 * 64-bit version of Windows 7 or Windows Server 2008 R2 (or later)
 
 Recommended:
