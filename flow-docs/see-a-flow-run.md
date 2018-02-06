@@ -16,13 +16,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/15/2018
+ms.date: 02/05/2018
 ms.author: mhade
 
 ---
 # Watch your flows in action
 
-<iframe width="560" height="315" src="<https://www.youtube.com/embed/3wPoUCGm7Yg>" frameborder="0" allowfullscreen></iframe>
+>[!VIDEO https://www.youtube.com/embed/3wPoUCGm7Yg]
 
 To ensure that your flows run as you expect, perform the trigger, and then review the inputs and outputs that each step in your flow generates.
 
