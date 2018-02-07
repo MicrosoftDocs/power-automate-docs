@@ -43,8 +43,8 @@ With a gateway, you can connect to on-premises data over these connections:
   You have these permissions by default for each gateway that you install. Also, an administrator of another gateway can grant you these permissions for that gateway.
 * A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://flow.microsoft.com/pricing/).
 
-[!NOTE]
-You can create a gateway and an on-premises connection only in your [default environment](environments-overview-maker.md).
+>[!NOTE]
+>You can create a gateway and an on-premises connection only in your [default environment](environments-overview-maker.md).
 
 ## View your gateways
 
@@ -52,8 +52,8 @@ In the upper-right corner of the [Microsoft Flow website](https://flow.microsoft
 
 ![Gateway under manage][1]
 
-[!NOTE]
-If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
+>[!NOTE]
+>If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
 
 ## Install a gateway
 
