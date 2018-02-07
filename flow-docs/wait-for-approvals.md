@@ -14,14 +14,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/21/2017
+ms.date: 02/07/2018
 ms.author: merwanhade
 
 ---
 # Wait for approval in Microsoft Flow
 
-> [!VIDEO]
-> https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF
+> [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
 
@@ -44,7 +43,7 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 
 1. Under **List Name**, select the list you created earlier. If you're following along, the name is **Project Tracker**.
 
-    ![Image of SPO listname](./media/wait-for-approvals/SPO-list-name.png)
+    ![Image of SPO list name](./media/wait-for-approvals/SPO-list-name.png)
 
 ## Add the resulting action
 
@@ -101,4 +100,4 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
      ![Image of create-flow](./media/wait-for-approvals/create-flow.png)
 1. Create an item in your SharePoint list.
 
-    An approval email is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that mail, you receive email that indicates the response. 
+    An approval email is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that email, you receive email that indicates the response.
