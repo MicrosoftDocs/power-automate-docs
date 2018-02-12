@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/2018
+ms.date: 02/12/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,30 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-02-09
+
+- **Gateway High Availability** - Create highly available clusters of on-premises data gateways, to keep connections up when single machines go down.
+- **Improved Apply to each** - With Flow Plan 1 or Flow Plan 2 process up to 100,000 items in a single run and 50 actions in parallel in Apply to each loops. 
+
+[Read more and ask questions](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each/) about this release.
+
+### Release 2018-01-29
+
+- **Flow inside of Microsoft Teams** - From Teams, you can create and manage flows, review your received and sent approvals, and launch flows directly within the Teams desktop app or on teams.microsoft.com - [learn more here](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
+- **Shared edit notifications** - Whenever a flow you own is changed by a co-worker, you'll get an email notification informing you who changed what flow.
+- **New expressions** - Added two new sets of expressions: one to parse URLs and another to work with JSON objects.
+- **Three new connectors** - This week there are two new Plumsail connectors: Plumsail SP and Plumsail Forms, and a new connector to kintone.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/shared-notifications-and-expressions/) about this release.
+
+### Release 2018-01-17
+
+- **Office 365 profile info** - We have added new actions to the Office 365 Users connector that work with user profiles and photos.
+- **Append to string variables** - You can add to strings inside of loops to build up tables or other lists.
+- **Infobip connector** - Infobip is a service that enables enterprise grade communication, including voice calls and triggering on inbound SMS.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/o365-profile-infobip/) about this release.
 
 ### Release 2017-12-20
 
