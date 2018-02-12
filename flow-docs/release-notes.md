@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/07/2018
+ms.date: 02/12/2018
 ms.author: stepsic
 
 ---
@@ -42,11 +42,10 @@ ms.author: stepsic
 
 ## What's new
 
-### Release 2018-02-07
+### Release 2018-02-09
 
-- **Set Content Approval Status** - Update content approval status for an item in a list or library that has content approval turned on.
 - **Gateway High Availability** - Create highly available clusters of on-premises data gateways, to keep connections up when single machines go down.
-- **Improved Apply to each** - With Flow Plan 1 or Flow Plan 2 process up to 100,000 items at a single time in Apply to each loops. 
+- **Improved Apply to each** - With Flow Plan 1 or Flow Plan 2 process up to 100,000 items in a single run and 50 actions in parallel in Apply to each loops. 
 
 [Read more and ask questions](https://flow.microsoft.com/blog/content-approval-gateway-ha/) about this release.
 
