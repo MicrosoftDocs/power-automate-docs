@@ -47,7 +47,7 @@ ms.author: stepsic
 - **Gateway High Availability** - Create highly available clusters of on-premises data gateways, to keep connections up when single machines go down.
 - **Improved Apply to each** - With Flow Plan 1 or Flow Plan 2 process up to 100,000 items in a single run and 50 actions in parallel in Apply to each loops. 
 
-[Read more and ask questions](https://flow.microsoft.com/blog/content-approval-gateway-ha/) about this release.
+[Read more and ask questions](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each/) about this release.
 
 ### Release 2018-01-29
 
