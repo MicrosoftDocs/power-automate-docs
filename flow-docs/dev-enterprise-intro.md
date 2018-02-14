@@ -48,7 +48,7 @@ As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer
 
 ### 1. Connecting to your APIs OR Enabling customers to connect to your APIs
 
-As an ISV, you often have proprietary data that you would like customers to access through your flows. You can expose access to any of your data through a custom connector. [Learn more](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+As an ISV, you often have proprietary data that you would like customers to access through your flows. You can expose access to any of your data through a custom connector. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
 
 Once created, there are two ways to make the connector available to your customers:
 - The connector can be deployed into the customer’s tenant via REST APIs or PowerShell.
@@ -74,7 +74,7 @@ To give end users access to flows that they can use automatically, deploy the fl
 
 If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for you. However, if your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Microsoft Flow, so that they are licensed to leverage those embedded components in your application.
 
-We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/en-US/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Microsoft Flow, which you should check for plan and feature details.
+We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Microsoft Flow, which you should check for plan and feature details.
 
 ### 7. List on AppSource
 
