@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/07/2018
+ms.date: 02/15/2018
 ms.author: merwanhade
 
 ---
@@ -101,3 +101,10 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 1. Create an item in your SharePoint list.
 
     An approval email is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that email, you receive email that indicates the response.
+
+## Learn more
+
+* [Single approver modern approvals walkthrough](modern-approvals.md)
+* Create [sequential approvals](sequential-modern-approvals.md)
+* Create [parallel approvals](parallel-modern-approvals.md)
+* Approve [requests on the go](mobile-approvals.md)
