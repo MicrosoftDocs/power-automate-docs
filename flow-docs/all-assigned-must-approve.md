@@ -26,13 +26,15 @@ This type of approval workflow is useful in an organization that requires a pers
 
 > ![NOTE]
 > While this walkthrough highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
+>
+>
 
 ## Prerequisites
 
 * Access to [Microsoft Flow](https://flow.microsoft.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
 * A SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
-    This walkthrough assumes you've already created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in depth example that details what your SharePoint list might look like.
+    This walkthrough assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
 * Familiarity with the basics of creating flows.
 
     You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
@@ -46,8 +48,8 @@ This type of approval workflow is useful in an organization that requires a pers
 
 > [!NOTE]
 > If you haven't created a connection to SharePoint or Office 365 previously, follow the instructions when you're prompted to sign in.
-> 
-> 
+>
+>
 
 This walkthrough uses tokens. To display the list of tokens, tap or click any input control, and then search for the token in the **Dynamic content** list that opens.
 
@@ -113,7 +115,7 @@ Congratulations, your flow is complete! If you followed along, your flow resembl
 
 ![overall flow image](media/all-assigned-must-approve/overall-flow.png)
 
-Now, whenever an item is added to your SharePoint list, or if an item change, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Microsoft Flow mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
+Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Microsoft Flow mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
 
 Here's an example of the approval request that's sent to each approver.
 
