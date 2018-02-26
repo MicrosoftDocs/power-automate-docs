@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/25/2018
+ms.date: 02/27/2018
 ms.author: deonhe
 
 ---
@@ -24,7 +24,7 @@ This walkthrough shows you how to create an approval workflow that requires ever
 
 This type of approval workflow is useful in an organization that requires a person's manager and the manager's manager, to both agree to a vacation request for it to be approved. However, either manager can decline the request without the other person's input.
 
-> ![NOTE]
+> [!NOTE]
 > While this walkthrough highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
 >
 >
