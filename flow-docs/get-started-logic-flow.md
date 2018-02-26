@@ -37,7 +37,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar, and then select **Create from blank**.
 
     ![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png)
-1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, and then enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
+1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
 
     ![Twitter event](./media/get-started-logic-flow/twitter-search.png)
 
@@ -68,12 +68,12 @@ First, you will need to select what event, or *trigger*, starts your flow.
 1. In the list of tokens, select the **Tweeted by** token to add a placeholder for it.
 
     ![Add parameter](./media/get-started-logic-flow/add-parameter.png)
-1. Click or tap in the **Body** box then click or tap the **Tweet text** token to add a placeholder for it.
+1. Select the **Body** box, and then select the **Tweet text** token to add a placeholder for it.
 1. (optional) Add more tokens, other content, or both to the body of the email.
 1. Near the top of the screen, name your flow, and then select **Create flow**.
 
     ![Select the Create flow button](./media/get-started-logic-flow/create-button.png)
-1. Select **Done** to update the list of your flows.
+1. Select **Done** to update the list of flows.
 
      ![Select the done button](./media/get-started-logic-flow/done-button.png)
 1. Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
@@ -91,7 +91,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
    * To resume a flow, set its toggle to **On**.
 
        ![Resume flow](./media/get-started-logic-flow/resume-flow.png)
-   * To edit a flow, select the pencil icon that coresponds to the flow you want to edit.
+   * To edit a flow, select the pencil icon that corresponds to the flow you want to edit.
 
        ![Select flow](./media/get-started-logic-flow/select-flow.png)
    * To delete a flow, select the **...** icon, select **Delete**, and then select **Delete** on the message box that appears.
