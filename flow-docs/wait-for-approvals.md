@@ -47,7 +47,7 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 
 ## Add the resulting action
 
-1. Select the **+ New step** button, and then select **Add an action.**
+1. Select the **New step** button, and then select **Add an action.**
 
 1. In the **Search all connectors and actions** box, type or paste **send email**, and then select **Office 365 Outlook - Send email with options**.
 
@@ -64,7 +64,7 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 
 ## Add a condition
 
-1. Select the ****+ New step**** button, and then select **Add a condition**.
+1. Select the **New step** button, and then select **Add a condition**.
 
     ![Image of add a condition](./media/wait-for-approvals/add-a-condition.png)
 1. Select the first box, and then select the **SelectedOption** token.
