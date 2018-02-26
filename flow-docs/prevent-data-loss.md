@@ -20,10 +20,10 @@ ms.author: deonhe
 ---
 # Data loss prevention (DLP) policies
 ## What is a data loss prevention policy?
-An organization's data is critical to its success. Its data needs to be readily available for decision-making but it needs to be protected so that it isn't shared with audiences that should not have access to it. To protect this data, Microsoft Flow (Flow) provides you with the ability to create and enforce policies that define which consumer services/connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
+An organization's data is critical to its success. Its data needs to be readily available for decision-making but it needs to be protected so that it isn't shared with audiences that should not have access to it. To protect this data, Microsoft Flow (Flow) provides you with the ability to create and enforce policies that define which connectors specific business data can be shared with. These policies that define how data can be shared, are referred to as data loss prevention (DLP) policies.
 
 ## Why create a DLP policy?
-You would create DLP policy to clearly define which consumer services business data may be shared with. For example, an organization that uses Flow may not want its business data that's stored in SharePoint to be automatically published to its Twitter feed. To prevent this, you can create a DLP policy that blocks SharePoint data from being used as the source for tweets.
+You would create DLP policy to clearly define which connectors business data may be shared with. For example, an organization that uses Flow may not want its business data that's stored in SharePoint to be automatically published to its Twitter feed. To prevent this, you can create a DLP policy that blocks SharePoint data from being used as the source for tweets.
 
 ## Benefits of a DLP policy
 * Ensures that data is managed in a uniform manner across the organization  
@@ -75,13 +75,13 @@ If your users contact you about suspended flows, here a few things to consider:
 
 1. In this example, if there is a valid business reason to share business data between SharePoint and Twitter, you can edit the the DLP policy.  
 2. Ask the user to edit the flow to comply with the DLP policy.  
-3. Ask the user to leave the flow in the suspended state until a decision is made regarding the sharing of data between these two entities.  
+3. The flow will remain in a suspended state until the flow has been modified to conform with DLP policies, or the DLP policy, that is blocking the current flow, is modified to support the combination of connectors included in flow.  
 
 ## Find a DLP policy
 ### Admins
 Admins can use the search feature from the Admin center to find specific DLP policies.  
 
-**NOTE** Admins should publish all DLP policies so that users in the organization are aware of the policies prior to creating flows.
+**NOTE** Admins should communicate all DLP policy rules to users to avoid delays in publishing flows.
 
 ### Makers
 If you don't have admin permissions and you wish to learn more about the DLP policies in your organization, contact your administrator. You can also learn more from the [maker environments topic](environments-overview-maker.md)  
