@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2017
+ms.date: 02/28/2018
 ms.author: deonhe
 
 ---
@@ -84,7 +84,7 @@ Follow these steps to create a DLP policy that prevents data in your company’s
 
    ![select connectors](./media/prevent-data-loss/create-policy-6.png)
 
-1. Select the **Add connectors** button to add the connectors that can share business data:
+1. Select the **Add connectors** button to add the connectors that can share business data.
 
 1. Select **Save Policy** in the top right corner of the screen.
 
@@ -156,7 +156,7 @@ If you don't have admin permissions and you wish to learn more about the DLP pol
 
 ## Delete a DLP policy
 
-1. Launch the [Admin center](https://admin.flow.microsoft.com)
+1. Launch the [Admin center](https://admin.flow.microsoft.com).
 
 1. Select the **Data polices** tab on the left side.
 
