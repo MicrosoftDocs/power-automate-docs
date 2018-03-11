@@ -101,6 +101,17 @@ Get started with the following resources:
 ### What operating systems does the mobile app for Microsoft Flow support?
 The Microsoft Flow mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+### Can flows be turned off or disabled?
+
+Yes, each flow has an on/off switch that enables you to stop the flow from processing requests.
+
+See the following table to understand how your flow responds when it's turned back on.
+
+Trigger type|Description
+-------|--------
+Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed.
+Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
+
 ### What regions and languages does Microsoft Flow support?
 Microsoft Flow is available in 42 languages and [six regions](regions-overview.md).
 
