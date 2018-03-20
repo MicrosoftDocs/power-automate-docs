@@ -150,6 +150,7 @@ sections:
     #   image: 
     #     src: https://docs.microsoft.com/media/common/i_investigate.svg
 - title: I'm an expert
+  items:
   - type: paragraph
     text: If you've built a flow or a few, these topics might interest you.
   - type: list
