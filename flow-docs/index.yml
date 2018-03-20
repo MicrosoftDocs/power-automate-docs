@@ -183,7 +183,7 @@ sections:
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
 
-title: Video overview of Microsoft Flow
+- title: Video overview of Microsoft Flow
   items:
   - type: markdown
     text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
