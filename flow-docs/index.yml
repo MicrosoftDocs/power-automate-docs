@@ -5,14 +5,14 @@ metadata:
   title: Microsoft Flow docs, videos, reference and more
   description: Get started creating, sharing and managing flows using the resources here. You can start with a simple button, or create your own approval flows.
   author: MSFTMan
-  manager: anneta
+  manager: kfile
   layout: LandingPage
   ms.assetid: 
   ms.service: flow
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 10/18/2017
+  ms.date: 03/18/2018
   ms.author: deonhe
 sections:
 - items:
@@ -55,7 +55,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_support.svg
       title: We're here to help
-- title: Step-by-Step Tutorials
+- title: I'm new here
   items:
   - type: paragraph
     text: 'Learn to create different types of flows.'
@@ -64,31 +64,125 @@ sections:
     className: cardsM
     columns: 3
     items: 
+    - href: guided-learning/index
+      title: Take a guided learning tour
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
     - href: get-started-logic-template
-      title: Create a flow from a template
+      title: Get started with the basics
       image: 
         src: https://docs.microsoft.com/media/common/i_guide.svg
+      href: get-started-logic-template
+      title: Get to know the mobile app
+      image: 
+        src: https://docs.microsoft.com/media/common/i_guide.svg
+    - href: introduction-to-button-flows
+      title: Create a button flow in less than a minute
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
+    - href: https://aka.ms/flowoftheweek
+      title: Catch up on the Flow of the Week
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
+    - href: https://flow.microsoft.com/support/
+      title: Get help 
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+- title: I’m familiar with Microsoft Flow concepts
+  items:
+  - type: paragraph
+    text: 'Learn to create different types of flows.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: get-started-logic-template
+      title: Create flows from templates
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg 
     - href: get-started-logic-flow
       title: Create a flow from scratch
       image:
         src: https://docs.microsoft.com/media/common/i_build.svg
-    - href: modern-approvals
-      title: Create approval flows
+    - href: create-team-flows
+      title: Collaborate with a team flow
       image:
         src: https://docs.microsoft.com/media/common/i_tasks.svg
-    - href: share-buttons 
+    - href: share-buttons
+      title: Let others use your flows
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
+    # - href: frequently-asked-questions
+    #   title: Share ownership of your flows
+    #   image:
+    #     src: https://docs.microsoft.com/media/common/i_tasks.svg
+    - href: fix-flow-failures
+      title: Troubleshoot your flows
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+    - href: share-buttons
       title: Let others use your buttons
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+    # - href: get-started-logic-flow
+    #   title: Create a flow from scratch
+    #   image:
+    #     src: https://docs.microsoft.com/media/common/i_build.svg
+    # - href: modern-approvals
+    #   title: Create approval flows
+    #   image:
+    #     src: https://docs.microsoft.com/media/common/i_tasks.svg
+    # - href: modern-approvals
+    #   title: Create approval flows
+    #   image:
+    #     src: https://docs.microsoft.com/media/common/i_tasks.svg
+    # - href: share-buttons 
+    #   title: Let others use your buttons
+    #   image: 
+    #     src: https://docs.microsoft.com/media/common/i_setup.svg
+    # - href: create-team-flows
+    #   title: Share ownership of your flows
+    #   image:
+    #     src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    # - href: fix-flow-failures
+    #   title: Troubleshoot flows
+    #   image: 
+    #     src: https://docs.microsoft.com/media/common/i_investigate.svg
+- title: I'm an expert
+  - type: paragraph
+    text: If you've built a flow or a few, these topics might interest you.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: use-expressions-in-conditions
+      title: Fine-tune your flows with expressions
+      image: 
+        src: https://docs.microsoft.com/media/common/i_guide.svg
+    - href: environments-overview-admin
+      title: Manage Microsoft Flow for your organization
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+    - href: modern-approvals
+      title: ----------Learn to use REST APIs with your flows
+      image:
+        src: https://docs.microsoft.com/media/common/i_tasks.svg
+    - href: register-custom-api 
+      title: Create a custom connector
       image: 
         src: https://docs.microsoft.com/media/common/i_setup.svg
     - href: create-team-flows
-      title: Share ownership of your flows
+      title: ----------View past events on demand
       image:
         src: https://docs.microsoft.com/media/common/i_configure-teams.svg
     - href: fix-flow-failures
-      title: Troubleshoot flows
+      title: -------Expand your flows with Logic Apps
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
-- title: Video overview of Microsoft Flow
+
+title: Video overview of Microsoft Flow
   items:
   - type: markdown
     text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
