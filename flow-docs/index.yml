@@ -22,7 +22,7 @@ sections:
 # - items:
 #   - type: list
     style: cards
-    className: cardsM
+    className: cardsC
     columns: 2
     items:
     - href: guided-learning/index
