@@ -60,7 +60,7 @@ sections:
   - type: paragraph
     text: 'Learn to create different types of flows.'
   - type: list
-    style: cards
+    style: icon48
     className: cardsM
     columns: 3
     items: 
