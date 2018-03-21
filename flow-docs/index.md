@@ -30,18 +30,18 @@ ms.reviewer:
                     <a href="#start-all"></a>
                     <ul id="start-all" class="cardsC">
                         <li>
-                            <a href="what-is-nuget.md">
+                            <a href="guided-learning/index">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-what-is-nuget.svg" alt="What is NuGet? Learn how NuGet, the package manager for .NET, allows developers to create, share, and consume libraries." />        
+                                                <img src="media/index/getting_started_basics.png" alt="Take a guided learning tour." />        
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>What is NuGet?</h3>
-                                            <p>Learn how NuGet, the package manager for .NET, allows developers to create, share, and consume libraries.</p>
+                                            <h3>Take a guided learning tour.</h3>
+                                            <p>Take a guided learning tour..</p>
                                         </div>
                                     </div>
                                 </div>
@@ -49,18 +49,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="quickstart/install-and-use-a-package-using-the-dotnet-cli.md">
+                            <a href="getting-started.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-quickstarts.svg" alt="Quickstarts: Experience NuGet with focused walkthroughs for creating a simple package and using a package." />
+                                                <img src="media/index/getting_started_basics.png" alt="Get started with the basics." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Quickstart: Using a package</h3>
-                                            <p>Learn how to install and use a NuGet package within a project (walkthroughs are available for both the dotnet CLI and Visual Studio).</p>
+                                            <h3>Get started with the basics</h3>
+                                            <p>Learn the basics of building flows.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,18 +68,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="quickstart/create-and-publish-a-package-using-the-dotnet-cli.md">
+                            <a href="mobile-create-flow.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-guides.svg" alt="Guides: experience NuGet's tools and capabilities for creating a package." />
+                                                <img src="media/index/get_to_know_mobile_app1.png" alt="Get to know the mobile app." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Quickstart: Creating a package</h3>
-                                            <p>Experience NuGet's tools and capabilities for package creation (walkthroughs are available for both the dotnet CLI and Visual Studio).</p>
+                                            <h3>Get to know the mobile app</h3>
+                                            <p>Create, monitor, and run flows on any mobile device.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -87,18 +87,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="create-packages/overview-and-workflow.md">
+                            <a href="introduction-to-button-flows.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-create-packages.svg" alt="Create Packages: Everything you need to know about creating NuGet packages, from overall workflow to versioning, pre-release, and other specialized packages." />
+                                                <img src="media/index/create_button_in_minute.png" alt="Create a button flow in less than a minute." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Create packages</h3>
-                                            <p>Everything you need to know about creating NuGet packages, from overall workflow to versioning, pre-release, &amp; other specialized packages.</p>
+                                            <h3>Create a button flow in less than a minute</h3>
+                                            <p>Button flows are quick and easy to create.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -106,18 +106,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="consume-packages/overview-and-workflow.md">
+                            <a href="https://aka.ms/flowoftheweek">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-consume-packages.svg" alt="Consume Packages: Everything you need to know about using NuGet packages, from finding and choosing good packages to restoration updates, and caching." />
+                                                <img src="media/index/create_button_in_minute.png" alt="Catch up on the flow of the week." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Consume packages</h3>
-                                            <p>Everything you need to know about using NuGet packages, from finding and choosing good packages to restoration updates, and caching.</p>
+                                            <h3>Catch up on the Flow of the Week</h3>
+                                            <p>Learn new tricks directly from the Microsoft Flow team.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -125,18 +125,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="hosting-packages/overview.md">
+                            <a href="https://flow.microsoft.com/support/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-get-started-host-packages.svg" alt="Host Packages: Learn how to host packages on your own servers or galleries to make them available to only a limited audience." />
+                                                <img src="media/index/get_help.png" alt="Get help." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Host packages</h3>
-                                            <p>Learn how to host packages on your own servers or galleries to make them available to only a limited audience.</p>
+                                            <h3>Get help</h3>
+                                            <p>We're always here to help. What's on your mind?</p>
                                         </div>
                                     </div>
                                 </div>
