@@ -19,8 +19,8 @@ sections:
   - type: markdown
     text: |
       Get started creating, sharing and managing flows using the resources here. You can start with a simple button, or create your own approval flows.
-- items:
-  - type: list
+# - items:
+#   - type: list
     style: cards
     className: cardsM
     columns: 2
@@ -68,18 +68,18 @@ sections:
       title: Take a guided learning tour
       image:
         src: https://docs.microsoft.com/media/common/i_tasks.svg
-    - href: get-started-logic-template
+    - href: getting-started
       title: Get started with the basics
       image: 
         src: https://docs.microsoft.com/media/common/i_guide.svg
-      href: get-started-logic-template
+    - href: mobile-create-flow
       title: Get to know the mobile app
       image: 
         src: https://docs.microsoft.com/media/common/i_guide.svg
     - href: introduction-to-button-flows
       title: Create a button flow in less than a minute
       image:
-        src: https://docs.microsoft.com/media/common/i_tasks.svg
+        src: ./media/index/create_button_in_minute.png
     - href: https://aka.ms/flowoftheweek
       title: Catch up on the Flow of the Week
       image:
@@ -152,7 +152,7 @@ sections:
 - title: I'm an expert
   items:
   - type: paragraph
-    text: If you've built a flow or a few, these topics might interest you.
+    text: 'I've built a flow or a few, I'm ready for the big leagues.''
   - type: list
     style: cards
     className: cardsM
@@ -166,11 +166,11 @@ sections:
       title: Manage Microsoft Flow for your organization
       image:
         src: https://docs.microsoft.com/media/common/i_build.svg
-    - href: modern-approvals
-      title: ----------Learn to use REST APIs with your flows
+    - href: https://flow.microsoft.com/blog/call-flow-restapi/
+      title: Learn to use REST APIs with your flows
       image:
         src: https://docs.microsoft.com/media/common/i_tasks.svg
-    - href: register-custom-api 
+    - href: customapi-web-api-tutorial 
       title: Create a custom connector
       image: 
         src: https://docs.microsoft.com/media/common/i_setup.svg
@@ -178,8 +178,8 @@ sections:
       title: ----------View past events on demand
       image:
         src: https://docs.microsoft.com/media/common/i_configure-teams.svg
-    - href: fix-flow-failures
-      title: -------Expand your flows with Logic Apps
+    - href: https://flow.microsoft.com/blog/grow-up-to-logic-apps/
+      title: Expand your flows with Logic Apps
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
 
@@ -187,14 +187,14 @@ sections:
   items:
   - type: markdown
     text: <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
-- title: Advanced Tutorials
-  items:
-  - type: paragraph
-    text: Learn how to use expressions, the REST API, and how to create custom connectors, and more...
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="environments-overview-admin">Manage Microsoft Flow for an organization</a>
-    - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
-    - html: <a href="customapi-web-api-tutorial">Create a custom connector</a>
-    - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
+# - title: Advanced Tutorials
+#   items:
+#   - type: paragraph
+#     text: Learn how to use expressions, the REST API, and how to create custom connectors, and more...
+#   - type: list
+#     style: unordered
+#     items:
+#     - html: <a href="environments-overview-admin">Manage Microsoft Flow for an organization</a>
+#     - html: <a href="https://flow.microsoft.com/blog/call-flow-restapi/">Learn to use REST APIs with your flows</a>
+#     - html: <a href="customapi-web-api-tutorial">Create a custom connector</a>
+#     - html: <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Expand your flows with Logic Apps</a>
