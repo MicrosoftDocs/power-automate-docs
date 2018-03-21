@@ -152,7 +152,7 @@ sections:
 - title: I'm an expert
   items:
   - type: paragraph
-    text: 'I've built a flow or a few, I'm ready for the big leagues.'
+    text: I have built a flow or a few, I'm ready for the big leagues.
   - type: list
     style: cards
     className: cardsM
