@@ -30,18 +30,18 @@ ms.reviewer:
                     <a href="#start-all"></a>
                     <ul id="start-all" class="cardsC">
                         <li>
-                            <a href="guided-learning/index">
+                            <a href="./guided-learning/index.yml">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/getting_started_basics.png" alt="Take a guided learning tour." />        
+                                                <img src="media/index/guidedlearningtour.png" alt="Take a guided learning tour." />        
                                             </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Take a guided learning tour.</h3>
-                                            <p>Take a guided learning tour..</p>
+                                            <p>Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -55,12 +55,12 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/getting_started_basics.png" alt="Get started with the basics." />
+                                                <img src="media/index/get_started_basics.png" alt="Get started with the basics." />
                                             </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Get started with the basics</h3>
-                                            <p>Learn the basics of building flows.</p>
+                                            <p>Quick ways to start automating your work and life with Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get to know the mobile app</h3>
-                                            <p>Create, monitor, and run flows on any mobile device.</p>
+                                            <p>Create a flow from a template that, for example, sends a push notification when you receive mail from an address that you specify.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Create a button flow in less than a minute</h3>
-                                            <p>Button flows are quick and easy to create.</p>
+                                            <p>Learn how to automate and run repetitive tasks with button flows.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_button_in_minute.png" alt="Catch up on the flow of the week." />
+                                                <img src="media/index/flow_of_the_week.png" alt="Catch up on the flow of the week." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -148,24 +148,24 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#tools">Tools &amp; Reference</a>
-            <ul id="tools">
+            <a href="#intermediate">I know what I'm doing</a>
+            <ul id="intermediate">
                 <li>
-                    <a href="#tools-all"></a>
-                    <ul id="tools-all" class="cardsC">
+                    <a href="#intermediate-all"></a>
+                    <ul id="intermediate-all" class="cardsC">
                         <li>
-                            <a href="tools/nuget-exe-cli-reference.md">
+                            <a href="get-started-logic-template.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-tools-tools.svg" alt="Tools: The complete guides to the nuget.exe command-line tool, and the Package Manager UI and Package Manager Console in Visual Studio." />
+                                                <img src="media/index/create_from_template.png" alt="Create flows from templates." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Tools</h3>
-                                            <p>The complete guides to the nuget.exe command-line tool, and the Package Manager UI and Package Manager Console in Visual Studio.</p>
+                                            <h3>Create flows from templates</h3>
+                                            <p>Create a flow from any of several predefined templates.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -173,18 +173,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="reference/nuspec.md">
+                            <a href="get-started-logic-flow.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-tools-reference.svg" alt="Reference: Details about artifacts and formats NuGet cares about, supported frameworks, and errors and warnings." />
+                                                <img src="media/index/create_from_scratch.png" alt="Create a flow from scratch." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Reference</h3>
-                                            <p>Details about artifacts and formats NuGet uses, supported frameworks, and errors and warnings.</p>
+                                            <h3>Create a flow from scratch</h3>
+                                            <p>Let your imagination lead you to amazing flows.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -192,18 +192,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="api/overview.md">
+                            <a href="create-team-flows.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-tools-api.svg" alt="API: Details about the NuGet API" />
+                                                <img src="media/index/collaborate_on_flows.png" alt="Collaborate on a team flow." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>API</h3>
-                                            <p>Details about the NuGet HTTP protocol and programmatically interacting with package sources.</p>
+                                            <h3>Collaborate on a team flow</h3>
+                                            <p>Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -211,18 +211,18 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="visual-studio-extensibility/nuget-api-in-visual-studio.md">
+                            <a href="share-buttons.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-tools-vs-extensibility.svg" alt="Visual Studio Extensibility: Details about the API to the NuGet Package Manager UI and Console in Visual Studio, project system support, and integrating into Visual Studio templates." />
+                                                <img src="media/index/share_buttons.png" alt="Let others use your button flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Visual Studio extensibility</h3>
-                                            <p>Details about the API to the NuGet Package Manager UI and Console in Visual Studio, project system support, and integrating into Visual Studio templates.</p>
+                                            <h3>Let others use your button flows</h3>
+                                            <p>Share your buttons with others so they can use them to save time.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -230,18 +230,142 @@ ms.reviewer:
                             </a>
                         </li>
                         <li>
-                            <a href="policies/nuget-faq.md">
+                            <a href="fix-flow-failures.md">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/hub/nuget-tools-policies.svg" alt="Policies: Frequently-asked questions along with information about NuGet as an open-source project, deleting packages, and resolving disputes." />
+                                                <img src="media/index/troubleshoot.png" alt="Troubleshoot your flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Policies</h3>
-                                            <p>Frequently-asked questions along with information about NuGet as an open-source project, deleting packages, and resolving disputes.</p>
+                                            <h3>Troubleshoot your flows</h3>
+                                            <p>Here're a few tips for when things need a closer look.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#expert">I'm an expert</a>
+            <ul id="expert">
+                <li>
+                    <a href="#expert-all"></a>
+                    <ul id="expert-all" class="cardsC">
+                        <li>
+                            <a href="use-expressions-in-conditions.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/use_expressions.png" alt="Fine-tune your flows with expressions." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Fine-tune your flows with expressions</h3>
+                                            <p>Learn to use expressions and conditions to compare multiple values.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="environments-overview-admin.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.png" alt="Manage Microsoft Flow for your organization." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Manage Microsoft Flow for your organization</h3>
+                                            <p>Learn how to create, use, and manage environments in Microsoft Flow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/call-flow-restapi/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/use_rest_apis.png" alt="Learn to use REST APIs with your flows." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Learn to use REST APIs with your flows</h3>
+                                            <p>Call Microsoft Flow from your own applications.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/connectors/custom-connectors/create-web-api-connector">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/create_custom_connector.png" alt="Create a custom connector." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Create a custom connector</h3>
+                                            <p>Build a custom connector that you can use in Azure Logic Apps, Microsoft Flow, or Microsoft PowerApps.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="share-buttons.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/share_buttons.png" alt="Let others use your button flows." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Let others use your button flows</h3>
+                                            <p>You've built in, now let others enjoy your flow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/expand_to_logic_apps.png" alt="Expand your flows with Logic Apps." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Expand your flows with Logic Apps</h3>
+                                            <p>Expand your flows with Logic Apps.</p>
                                         </div>
                                     </div>
                                 </div>
