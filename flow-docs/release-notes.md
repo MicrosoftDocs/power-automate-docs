@@ -388,7 +388,7 @@ You can now leverage valuable information when triggering a button flow, such as
 ### Release 2016-11-23
 * **Power BI alert support in Flow** - Turn insights into action by triggering flows from Power BI data alerts.
 * **Mobile application improvements** - Added the ability to create flows from blank, in addition to the already existing experience of creation from templates. We also improved performance when viewing flow runs.
-* **Eight new services** - You can now connect to Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure DocumentDB, Cognitive Services Face API, HipChat, and Wordpress.
+* **Eight new services** - You can now connect to Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure Cosmos DB, Cognitive Services Face API, HipChat, and Wordpress.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) about this release.
 
