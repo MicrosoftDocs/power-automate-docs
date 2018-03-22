@@ -136,7 +136,7 @@ You can now add users to the environment.
 
 ### Can I move a flow between environments?
 
-No, flows cannot be moved between environments. Recreate the flow in the different environment.
+Yes, flows can be exported from one environment and imported into a different environment from within the flow maker portal.
 
 ### Which license includes the Common Data Service?
 
