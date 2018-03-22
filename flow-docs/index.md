@@ -148,7 +148,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#intermediate">I know what I'm doing</a>
+            <a href="#intermediate">I'm intermediate</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -346,7 +346,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Let others use your button flows</h3>
-                                            <p>You've built in, now let others enjoy your flow.</p>
+                                            <p>Share your buttons with others so they can use them to save time</p>
                                         </div>
                                     </div>
                                 </div>
