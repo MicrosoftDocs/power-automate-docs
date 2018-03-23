@@ -41,7 +41,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Take a guided learning tour</h3>
-                                            <p>Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Flow.</p>
+                                            <p>Start your learning journey with this sequenced collection of courses to understand the extensive and powerful capabilities of Microsoft Flow.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get to know the mobile app</h3>
-                                            <p>Create a flow from a template that, for example, sends a push notification when you receive mail from an address that you specify.</p>
+                                            <p>Manage, track, and explore your automated workflows anytime and from anywhere.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ ms.reviewer:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Create a button flow in less than a minute</h3>
+                                            <h3>Create a button flow in 2 minutes</h3>
                                             <p>Learn how to automate and run repetitive tasks with button flows.</p>
                                         </div>
                                     </div>
