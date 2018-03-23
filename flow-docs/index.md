@@ -36,7 +36,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.png" alt="Take a guided learning tour" />        
+                                                <img src="https://www.dropbox.com/s/txkg2aq6ve69z2o/FLOW_GUIDED-TOUR_400x140.svg?dl=0" alt="Take a guided learning tour" />        
                                             </div>
                                         </div>
                                         <div class="cardText">
