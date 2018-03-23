@@ -36,11 +36,11 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.png" alt="Take a guided learning tour" />        
+                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" />        
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Take a guided learning tour.</h3>
+                                            <h3>Take a guided learning tour</h3>
                                             <p>Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Flow.</p>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Expand your flows with Logic Apps</h3>
-                                            <p>Expand your flows with Logic Apps.</p>
+                                            <p>Azure Logic Apps provides a richer set of capabilities than what’s included in Microsoft Flow. Simply save any flow as a Logic Apps template, and then manage it like any other Logic Apps resource. You can even deploy the template through Visual Studio or directly in the Azure portal.</p>
                                         </div>
                                     </div>
                                 </div>
