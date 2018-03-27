@@ -12,7 +12,7 @@ keywords:
 author: msftman
 ms.author: deonhe
 manager: kfile
-ms.date: 03/25/2018
+ms.date: 03/28/2018
 ms.topic: hub-page
 ms.prod: flow
 ms.technology: null
@@ -55,7 +55,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_started_basics.png" alt="Get started with the basics." />
+                                                <img src="media/index/get_started_basics.svg" alt="Get started with the basics." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -74,7 +74,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_to_know_mobile_app1.png" alt="Get to know the mobile app." />
+                                                <img src="media/index/get_to_know_mobile_app1.svg" alt="Get to know the mobile app." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -93,7 +93,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_button_in_minute.png" alt="Create a button flow in less than a minute." />
+                                                <img src="media/index/create_button_in_minute.svg" alt="Create a button flow in less than a minute." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -112,7 +112,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/flow_of_the_week.png" alt="Catch up on the flow of the week." />
+                                                <img src="media/index/flow_of_the_week.svg" alt="Catch up on the flow of the week." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -131,7 +131,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_help.png" alt="Get help." />
+                                                <img src="media/index/get_help.svg" alt="Get help." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -160,7 +160,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_from_template.png" alt="Create a flow from a template." />
+                                                <img src="media/index/create_from_template.svg" alt="Create a flow from a template." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -179,7 +179,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_from_scratch.png" alt="Create a flow from scratch." />
+                                                <img src="media/index/create_from_scratch.svg" alt="Create a flow from scratch." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -198,7 +198,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_approval_flows.png" alt="Create approval flows." />
+                                                <img src="media/index/create_approval_flows.svg" alt="Create approval flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -217,7 +217,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/collaborate_on_flows.png" alt="Collaborate on a team flow." />
+                                                <img src="media/index/collaborate_on_flows.svg" alt="Collaborate on a team flow." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -236,7 +236,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/share_buttons.png" alt="Let others use your button flows." />
+                                                <img src="media/index/share_buttons.svg" alt="Let others use your button flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -255,7 +255,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/troubleshoot.png" alt="Troubleshoot your flows." />
+                                                <img src="media/index/troubleshoot.svg" alt="Troubleshoot your flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -284,7 +284,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/use_expressions.png" alt="Fine-tune your flows with expressions." />
+                                                <img src="media/index/use_expressions.svg" alt="Fine-tune your flows with expressions." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -303,7 +303,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/environments_dlp.png" alt="Manage Microsoft Flow for your organization." />
+                                                <img src="media/index/environments_dlp.svg" alt="Manage Microsoft Flow for your organization." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -322,7 +322,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/use_rest_apis.png" alt="Learn to use REST APIs with your flows." />
+                                                <img src="media/index/use_rest_apis.svg" alt="Learn to use REST APIs with your flows." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -341,31 +341,12 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_custom_connector.png" alt="Create a custom connector." />
+                                                <img src="media/index/create_custom_connector.svg" alt="Create a custom connector." />
                                             </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Create a custom connector</h3>
                                             <p>Build a custom connector that you can use in Azure Logic Apps, Microsoft Flow, or Microsoft PowerApps.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="share-buttons.md">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/share_buttons.png" alt="Let others use your button flows." />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Let others use your button flows</h3>
-                                            <p>Share your buttons with others so they can use them to save time</p>
                                         </div>
                                     </div>
                                 </div>
@@ -379,7 +360,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/expand_to_logic_apps.png" alt="Expand your flows with Logic Apps." />
+                                                <img src="media/index/expand_to_logic_apps.svg" alt="Expand your flows with Logic Apps." />
                                             </div>
                                         </div>
                                         <div class="cardText">
