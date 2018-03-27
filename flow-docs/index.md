@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: Microsoft Flow Documentation | Microsoft Docs
-description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more..
+description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 keywords:
 - "Microsoft Flow"
 - "workflow"
