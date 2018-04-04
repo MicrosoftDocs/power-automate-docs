@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/04/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,30 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-04-04
+
+- **Approvals on the Common Data Service** - Modern approvals are built on the latest version of the Common Data Service for Apps. This means that you can build flows that read the status of the approvals you send or receive with the CDS connector.
+- **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
+- **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
+- **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
+- **See details of flow buttons** - When you run a flow that has been shared with you, you can now see all the actions that the flow uses.
+- **United Kingdom region** - Environments can now be created to store their data in the United Kingdom.
+- **Two new connectors** - Added support for AtBot Admin and Marketing Content Hub.
+- **New documentation landing page** - Updated the documentation landing page to have content grouped by who you are: either a beginner, an intermediate user or an expert. 
+
+[Read more and ask questions](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/) about this release.
+
+### Release 2018-03-13
+
+- **Approval history** - See all the approval requests you've sent out, including the responses, the comments that were sent, and the exact time they happened.
+- **Four new connectors** - Added Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse, and Pitney Bowes Tax Calculator.
+- **Dynamic content tooltips** - Hover over dynamic content to see where it came from inside of actions, and preview expressions without opening the full expression editor.
+- **Concurrency control** - Enable concurrency control to have a given flow have only one run at a time.
+- **Exponential retry** - A new type of retry policy that spaces out retries exponentially over time.
+- **Accessibility conformance** - Released new conformance documents that describe how Microsoft Flow meet accessibility standards.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/approval-history-accessibility/) about this release.
 
 ### Release 2018-02-09
 
