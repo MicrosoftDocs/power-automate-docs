@@ -24,7 +24,7 @@ ms.reviewer:
     <h1>Microsoft Flow Documentation</h1>
     <ul class="pivots">
         <li>
-            <a href="#start">I'm a beginner</a>
+            <a href="#start">I&#39;m a beginner</a>
             <ul id="start">
                 <li>
                     <a href="#start-all"></a>
@@ -36,8 +36,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" />        
-                                            </div>
+                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Take a guided learning tour</h3>
@@ -136,7 +135,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get help</h3>
-                                            <p>We're always here to help. What's on your mind?</p>
+                                            <p>We&#39;re always here to help. What&#39;s on your mind?</p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +147,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#intermediate">I'm intermediate</a>
+            <a href="#intermediate">I&#39;m intermediate</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -272,7 +271,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#expert">I'm an expert</a>
+            <a href="#expert">I&#39;m an expert</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>

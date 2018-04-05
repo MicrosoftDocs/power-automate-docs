@@ -77,18 +77,20 @@ Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in 
 
 1. In the [Microsoft Flow admin center](https://admin.flow.microsoft.com), select **Environments**. You'll see all existing environments:
    ![Environments](./media/environments-overview-admin/environments-list.png)
-1. Select **New environment** and then provide the required information:
+2. Select **New environment** and then provide the required information:
 
-   | Property | Description |
-   | --- | --- |
-   | Environment Name |Enter the name of your environment, such as `Human Resources`, or `Europe flows`. |
-   | Region |Choose the location to host your environment. For the best performance, use a region closest to your users.|
-   |Environment Type | Choose an environment type based upon your license: Production or Trial.| 
+
+   |     Property     |                                                 Description                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Environment Name |              Enter the name of your environment, such as `Human Resources`, or `Europe flows`.              |
+   |      Region      | Choose the location to host your environment. For the best performance, use a region closest to your users. |
+   | Environment Type |                  Choose an environment type based upon your license: Production or Trial.                   |
+
      ![environment settings](./media/environments-overview-admin/new-environment-dialog.png)
-1. Click **Create environment**.
-1. You now have an option to **Create database** or **Skip**.
-1. If you choose to **Create Database**, you will be prompted for a **Currency** and **Language** for the Database. In addition, you can also choose to have sample apps and data deployed.
-   
+3. Click **Create environment**.
+4. You now have an option to **Create database** or **Skip**.
+5. If you choose to **Create Database**, you will be prompted for a **Currency** and **Language** for the Database. In addition, you can also choose to have sample apps and data deployed.
+
    ![database configuration settings](./media/environments-overview-admin/create-database-dialog2.png)
 
 
