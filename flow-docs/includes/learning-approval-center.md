@@ -54,7 +54,7 @@ By default, this template starts an approval process whenever a new item is crea
 12. Select **ApprovalStatus** and set the value to **Yes**, then select **ApproverComments** and set the value to **Comments** from the dynamic content list. 
     
      ![Status and comments](./media/learning-approval-center/approver-status.png)
-13. Near the bottom of the <strong>IF NO, *DO NOTHING</strong>* box, select <strong>Add an action</strong>.
+13. Near the bottom of the **IF NO, DO NOTHING** box, select **Add an action**.
     
      ![Add a no action](./media/learning-approval-center/add-a-no-action.png)
 14. Using the same steps that you used for the **IF YES** configuration, create a **SharePoint – Update item** action and configure the fields with the same values, with the exception of setting **ApprovalStatus** to **No**. 
