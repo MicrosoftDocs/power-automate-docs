@@ -51,7 +51,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 1. Select the title bar for an event to expand it, and then customize it (for example, by specifying a filter on the email that interests you).
 2. Actions that require input from you will automatically be expanded.
    
-    For example, the <strong>Post message</strong> action is expanded because you need to enter a channel, such as your <em>@username</em>. You can also customize the message content. By default, the message will contain just the subject, but you can include other information.
+    For example, the **Post message** action is expanded because you need to enter a channel, such as your *\@username*. You can also customize the message content. By default, the message will contain just the subject, but you can include other information.
    
     ![Specify channel for slack](./media/get-started-logic-template/specify-keyword.png)
 3. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
