@@ -103,7 +103,7 @@ On the condition card:
     ![configure a condition](media/odata-filters/configure-condition.png)
 5. Select **Edit in advanced mode**.
    
-    When advanced mode opens, you see **@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
+    When advanced mode opens, you see **\@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
    
     The **Condition** card now resembles this image:
    
