@@ -2,6 +2,7 @@
 An environment is a virtual space used to store, manage and share apps, flows, and business data in the Common Data Service. Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
 
 ## Terms you should get familiar with
+
 | **Term** | **Description** |
 | --- | --- |
 | **Admin center** |The admin center is a [Web portal](https://admin.flow.microsoft.com) for managing all your environments and data loss prevention policies. |

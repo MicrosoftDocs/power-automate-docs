@@ -36,8 +36,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" />        
-                                            </div>
+                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Take a guided learning tour</h3>
@@ -136,7 +135,7 @@ ms.reviewer:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get help</h3>
-                                            <p>We're always here to help. What's on your mind?</p>
+                                            <p>We&#39;re always here to help. What&#39;s on your mind?</p>
                                         </div>
                                     </div>
                                 </div>
