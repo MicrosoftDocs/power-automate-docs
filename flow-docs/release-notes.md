@@ -45,7 +45,7 @@ ms.author: stepsic
 ### Release 2018-04-12
 
 - **Return data to PowerApps from a flow** - Build flows that can be called from an app built with PowerApps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
-- **Add multiple records array inputs** - Added a list builder into Microsoft Flow that can be used for adding multiple attachments to an email, for example.
+- **Add multiple records to array inputs** - Added a list builder into Microsoft Flow that can be used for adding multiple attachments to an email, for example.
 - **Test flows with previous run data** - Added a new Test flow button to the designer that lets you test your flow with trigger data from previous flow runs.
 - **New workflow() fields** - You can now access environment name and flow display name with the workflow() expression.
 
