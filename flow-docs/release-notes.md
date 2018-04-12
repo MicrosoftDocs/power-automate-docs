@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/04/2018
+ms.date: 04/12/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,15 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-04-12
+
+- **Return data to PowerApps from a flow** - Build flows that can be called from an app built with PowerApps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
+- **Add multiple records to array inputs** - Added a list builder into Microsoft Flow that can be used for adding multiple attachments to an email, for example.
+- **Test flows with previous run data** - Added a new Test flow button to the designer that lets you test your flow with trigger data from previous flow runs.
+- **New workflow() fields** - You can now access environment name and flow display name with the workflow() expression.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/return-data-to-powerapps/) about this release.
 
 ### Release 2018-04-04
 
