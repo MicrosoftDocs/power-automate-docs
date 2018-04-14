@@ -1,5 +1,5 @@
 ---
-title: Microsoft Flow GDPR Data Subject Requests Summary | Microsoft Docs
+title: Microsoft Flow GDPR Data Subject Requests Discovery | Microsoft Docs
 description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Requests.  
 services: ''
 suite: flow
