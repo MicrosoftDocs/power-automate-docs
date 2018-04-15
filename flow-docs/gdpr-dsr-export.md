@@ -76,6 +76,29 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
 ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Users can copy the results and then paste them into a document editor, such as Microsoft Word.
 
+**Export a list of a user’s connection permissions**
+
+A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the PowerApps PowerShell cdmlets:
+![Export connection permissions](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+**Export a list of a user’s Custom connectors**
+Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. Custom Connector ownership may need to be transferred to other users in the organization or the Custom Connector can be deleted. To export a list of customer connectors, a user should:
+
+1. Navigate to the [Microsoft Flow website](https://flow.microsoft.com).
+1. Click on the settings **gear** icon.
+1. Click on **Custom Connectors**.
+1. Copy and paste the list of custom connectors into a text editor, such as Microsoft Word.
+![Export custom connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
+
+In addition to the experience provided in the Microsoft Flow website, a Powershell cmdlets is also available to export all custom connectors they have created to via the Get-Connector function in the PowerApps PowerShell cdmlets:
+
+![Export custom connectors powershell](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+
+**Export a list of a user’s Custom connector permissions**
+A user can export all custom connector permissions they have created to via the Get-ConnectorRoleAssignment function in the PowerApps PowerShell cdmlets:
+
+![Export custom connector permissions powershell](./media/gdpr-dsr-export/export-connector-permissions.png)
+
 **Export approval history**
 
 Microsoft Flow Approvals History captures a historical record of approvals that have been received or sent for a user. Any user can view their approval history by:
@@ -83,5 +106,9 @@ Microsoft Flow Approvals History captures a historical record of approvals that 
 ![View approval history](./media/gdpr-dsr-export/view-approval-history.png)
 1. A list shows approvals that the user received. The users can show approvals that they sent by selecting the down arrow next to **Received** and then selecting **Sent**.
 ![View approvals received](./media/gdpr-dsr-export/view-received-approvals.png)
+
+**Export user details from Microsoft Flow**
+
+User details can be exported by calling a Powershell cmdlet which will be available soon. 
 
 

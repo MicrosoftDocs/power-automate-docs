@@ -85,3 +85,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 ![Enable flow](./media/gdpr-dsr-delete/delete-approval-history.png)
 
 1. In Microsoft Excel, search, filter and delete approval data as required.
+
+**Delete user details from Microsoft Flow**
+
+Once all re-assignment and delete actions have been performed, there is a final step to delete remaining system data. This action is accomplished by calling a Powershell cmdlet which will be available soon. Automation
