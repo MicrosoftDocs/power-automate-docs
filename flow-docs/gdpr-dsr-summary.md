@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/18/2018
 ms.author: keweare
 
 ---
@@ -31,6 +31,7 @@ The guide discusses how to use Microsoft's products, services and administrative
 1.	Discover—Use search and discovery tools to more easily find customer data that may be the subject of a DSR. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organization’s guidelines for responding to DSRs. [Microsoft Flow DSR Discovery documentation](gdpr-dsr-discovery.md)
 
 1. Access—Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
+
 1.	Rectify—Make changes or implement other requested actions on the personal data, where applicable. [Microsoft Flow DSR Rectify documentation](gdpr-dsr-rectify)
 
 1. Restrict—Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location. [Microsoft Flow DSR Restrict documentation](gdpr-dsr-restrict) 
@@ -40,3 +41,18 @@ The guide discusses how to use Microsoft's products, services and administrative
 1. Export—Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in Microsoft's cloud.	[Microsoft Flow DSR Export documentation](gdpr-dsr-export.md)
 	
+## Executing DSRs against Microsoft Flow Customer Data Prerequisites
+
+The following prerequisites exist in order to perform the actions suggested in this documentation.  They have been separated into two personas: user and administrator.
+
+### User Requirements
+
+In order for a user to perform the actions described within this document, they need to have an active Azure Active Directory account with [Microsoft Flow license](https://preview.flow.microsoft.com/en-us/pricing/). In the event, a user does not meet these requirements, an administrator must perform these actions.
+
+### Administrator Requirements
+You can perform the operations, that require administration privileges, this document outlines if you sign in to the [Microsoft Flow Admin center](https://admin.flow.microsoft.com/)  or [PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
+1. A paid or trial license for PowerApps Plan 2.
+If you [sign up for a trial license](http://web.powerapps.com/trial), it will expire after 30 days.
+
+1. [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) .
+

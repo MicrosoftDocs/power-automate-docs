@@ -1,6 +1,6 @@
 ---
 title: Microsoft Flow GDPR Data Subject Delete Requests | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Requests.  
+description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Delete Requests.  
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,9 +20,8 @@ ms.author: keweare
 ---
 # Responding to GDPR Data Subject Delete Requests for Microsoft Flow
 
-## Introduction
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
-Microsoft Flow allows users to build automation workflows that are a critical part of your organization’s day-to-day operations, so when a user leaves your organization you will need to manually review and determine whether or not to delete certain data and resources that they have created.   here is other customer data that will be automatically deleted whenever the user’s account deleted from Azure Active Directory. 
+Microsoft Flow allows users to build automation workflows that are a critical part of your organization’s day-to-day operations, so when a user leaves your organization you will need to manually review and determine whether or not to delete certain data and resources that they have created. There is other customer data that will be automatically deleted whenever the user’s account deleted from Azure Active Directory. 
 Here is the breakdown between which customer data will be automatically deleted and which data will require your manual review and deletion:
 
 |Requires manual review and deletion|Automatically deleted when the user is deleted from Azure Active Directory|
@@ -37,8 +36,9 @@ Here is the breakdown between which customer data will be automatically deleted 
 |Custom connector*||
 |Custom connector permissions||
 
-* Each of these resources contain “Created By” and “Modified By” records that include personal data. For security reasons, these records will be retained until the resource is deleted.
-** For environments that include a Common Data Service For Apps database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles?) stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
+*Each of these resources contain “Created By” and “Modified By” records that include personal data. For security reasons, these records will be retained until the resource is deleted.
+
+**For environments that include a Common Data Service For Apps database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
 
 For the data and resources that requires manual review, Microsoft Flow offers the following experiences to find or change personal data for a specific user:
 
@@ -46,9 +46,9 @@ For the data and resources that requires manual review, Microsoft Flow offers th
 
 * **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-Here is the breakdown of which experiences are available for an admin to delete each types of customer data:
+Here is the breakdown of experiences that are available for an administrator to delete each types of customer data:
 
-|System-generated logs|Website access|PowerShell access|Automated Deletion|
+|Customer data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
 |Environment|Microsoft Flow Admin Center|PowerApps cmdlets||
@@ -57,14 +57,16 @@ Here is the breakdown of which experiences are available for an admin to delete 
 |Activity feed |||Deleted through 28 day retention policy|
 |User jobs||Coming soon||
 |Flows|Microsoft Flow Maker Portal**|||
-|Flow permissions|Microsoft Flow Maker Portal**|||
-|User details||PowerApps cmdlets||
-|Connections|Microsoft Flow Maker Portal**|Coming soon||
-|Connection permissions|Microsoft Flow Maker Portal**|Coming soon||
-|Custom connector|Microsoft Flow Maker Portal**|Coming soon||
-|Custom connector permissions|Microsoft Flow Maker Portal**|Coming soon||
+|Flow permissions|Microsoft Flow Maker Portal|||
+|User details||Coming soon||
+|Connections|Microsoft Flow Maker Portal|Coming soon||
+|Connection permissions|Microsoft Flow Maker Portal|Coming soon||
+|Custom connector|Microsoft Flow Maker Portal|Coming soon||
+|Custom connector permissions|Microsoft Flow Maker Portal|Coming soon||
+|Approval History|Microsoft PowerApps Maker Portal*|||
 
-* With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
+*With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
+
 ** An admin will only be able to access these resources from the Microsoft Flow Maker Portal if the administrator has assigned themselves access from the Microsoft Flow Admin Center.  
 
 
@@ -73,13 +75,10 @@ The steps below describe how administrative functions exist to serve delete requ
 
 Important: To avoid data corruption, follow these steps in order.
 
-**System-generated logs**
 
-System-generated logs can be deleted from the [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/). The tenant admin is the only person within your organization who can access system-generated logs associated with a particular user’s use of Microsoft Flow. The data retrieved for an access request will be provided in a machine-readable format and will be provided in files that will allow the user to know which services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security of the service.
+### List and re-assign flows 
 
-**List and re-assign flows** 
-
-These steps copy existing flows for a departing user. If you assign new ownership to the copies, these flows can continue to support existing business processes. Copying these flows is important because new connections must be established for the flow to connect with other APIs and SaaS applications.
+These steps copy existing flows for a departing user. If you assign new ownership to the copies, these flows can continue to support existing business processes. Copying these flows is important to delete personal identifier linkages to the departing user and  new connections must be established for the flow to connect with other APIs and SaaS applications.
 
 1. Sign in to the [Microsoft Flow admin center](https://admin.flow.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
 ![View environments](./media/gdpr-dsr-delete/view-environments.png)
@@ -107,7 +106,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 1. This new version of the flow appears in **My flows**, where you can share it with additional users if you want.
 ![Team flows](./media/gdpr-dsr-delete/team-flows.png)
 
-1.	Delete the original flow by selecting the ellipsis **(…)** for it, selecting **Delete**, and then select **Delete** again when prompted. This step will also remove underlying system dependencies between the user and Microsoft Flow.
+1.	Delete the original flow by selecting the ellipsis **(…)** for it, selecting **Delete**, and then select **Delete** again when prompted. This step will also remove underlying personal identifiers that are included in system dependencies between the user and Microsoft Flow.
 ![Delete flow confirmation](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Enable the copy of the flow, by opening **My flows** and then turning the toggle control to **On**.
@@ -115,7 +114,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
  1. The copy will now perform the same workflow logic as the original version.
 
-**Delete approval history from Microsoft Flow**
+### Delete approval history from Microsoft Flow
 
  Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service for Apps. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
  
@@ -130,6 +129,86 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users that use the Common Data Service.
 
-**Delete user details from Microsoft Flow**
+### Delete connections created by a user 
 
-Once all re-assignment and delete actions have been performed, there is a final step to delete remaining system data. This system data includes references to a user’s organization id (OID). This action is accomplished by calling a PowerShell cmdlet which will be available soon.  
+Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems.  Connections do include references to the user who created them and as a result, can be deleted to remove any references to the user. 
+
+PowerApps Maker PowerShell cmdlets
+
+A user can delete all of their connections the Remove-Connection function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448)::
+```PowerShell
+Add-PowerAppsAccount 
+
+#Retrieves all connections for the calling user and deletes them
+Get-Connection | Remove-Connection
+```
+
+PowerApps Admin PowerShell cmdlets
+
+The function to allow an admin to find and delete a user’s connections using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+
+### Delete the user’s permissions to shared connections
+
+PowerApps Maker PowerShell cmdlets
+
+A user can delete all of their connection role assignments for shared connections Remove-ConnectionRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+```PowerShell
+Add-PowerAppsAccount 
+
+#Retrieves all connection role assignments for the calling users and deletes them
+Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
+```
+
+NOTE: Owner role assignments cannot be deleted without deleting the connection resource.
+
+PowerApps Admin PowerShell cmdlets
+
+The function to allow an admin to find and delete a user’s connection role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+
+### Delete custom connectors created by the user 
+Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. Custom Connectors do include references to the user who created them and as a result, can be deleted to remove any references to the user.
+
+PowerApps Maker PowerShell cmdlets
+
+A user can delete all of their custom connectors the Remove-Connector function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448)::
+```PowerShell
+Add-PowerAppsAccount 
+
+#Retrieves all custom connectors	for the calling user and deletes them
+Get-Connector -FilterNonCustomConnectors | Remove-Connector
+```
+PowerApps Admin PowerShell cmdlets
+
+The function to allow an admin to find and delete a user’s custom connectors using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+
+### Delete the user’s permissions to shared custom connectors 
+
+PowerApps Maker PowerShell cmdlets
+
+A user can delete all of their connector role assignments for shared custom conector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+```PowerShell
+Add-PowerAppsAccount 
+
+#Retrieves all connector role assignments for the calling users and deletes them
+Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
+```
+
+NOTE: Owner role assignments cannot be deleted without deleting the connection resource.
+
+PowerApps Admin PowerShell cmdlets
+
+The function to allow an admin to find and delete a user’s connector role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+
+### Delete or reassign all environments created by the user
+As an admin you have two decisions to make when processing a DSR delete request for a user for each of the environments that has been created by the user:
+1.	If you determine that the environment is not being used by anyone else in your organization then you can choose to delete the environment 
+2.	If you determine that the environment is still required, then you can choose to not delete the environment and add yourself (or another user in your organization) as an Environment Admin.
+> **Important**: Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc., so please review the contents of an environment before deletion. 
+### Give access to a user’s environments from the Microsoft Flow Admin Center
+An admin can grant Admin access to an environment created by a specific user from the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
+
+### Delete the user’s permissions to all other environments 
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Microsoft Flow service as a “role assignment.” 
+With the introduction of the Common Data Service for Apps, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service for Apps database instance.
+
+ For more information on removing a user's permission in an  environment, please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
