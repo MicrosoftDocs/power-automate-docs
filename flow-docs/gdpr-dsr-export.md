@@ -25,19 +25,32 @@ ms.author: keweare
 As part of our commitment to partner with you on your journey to the GDPR, we’ve developed  documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using  Microsoft Flow.
 
 ## Manage export requests
-The steps below describe how both user and administrative functions exist to serve export requests for GDPR.
+The “right of data portability” allows a data subject to request a copy of their personal data in an electronic format (that’s a “structured, commonly used, machine read-able and interoperable format”) that may be transmitted to another data controller. 
 
-## Prerequisites
-You can perform the administrative operations that this document outlines if you sign in to the [PowerApps Admin Center](https://admin.powerapps.com/), sign in to the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/), or run [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has these permissions:
-*	A paid or trial license for Flow/PowerApps Plan 2.
-If you [sign up for a trial license](http://web.powerapps.com/trial), it will expire after 30 days.
+Microsoft Flow offers the following experiences to find or export personal data for a specific user:
 
-*	[Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+* **Website access:** sign in to the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/)
 
+* **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+
+|**Customer data**|**Website access**|**PowerShell access**|
+|-----------------|------------------|-------------------|
+|System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
+|Run history|Microsoft Flow Maker Portal||
+|User jobs||Coming soon|
+|Flows|Microsoft Flow Maker Portal||
+|Flow permissions| Microsoft Flow Maker Portal and Microsoft Flow Admin Center||
+|User details||Coming soon|
+|Connections|Microsoft Flow Maker Portal|Coming soon|
+|Connection permissions|Microsoft Flow Maker Portal|Coming soon|
+|Custom connectors|Microsoft Flow Maker Portal|Coming soon|
+|Custom connector permissions|Microsoft Flow Maker Portal|Coming soon|
+|Gateway|Microsoft Flow Maker Portal|On-premise gateway PowerShell cmdlets|
+|Gateway permissions|Microsoft Flow Maker Portal|
 
 **Export a flow** 
 
-Either an end user or an administrator can export a flow by following these steps:
+Either an end user or an administrator, who has granted themselves access to the flow through the Microsoft Flow Admin Center,  can export a flow by following these steps:
 1. Sign in to the [Microsoft Flow site](https://flow.microsoft.com/).
 1. Select the **My flows** link, and then select the flow to export.
 1. Select **… More**, and then select **Export**.
@@ -50,7 +63,7 @@ Your flow will now be available as a zipped package. For more information, see t
 
 Run history includes a list of all executions that have occurred for a specific flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
-Either an end user or an administrator can export this data by following these steps:
+Either an end user or an administrator, who has granted themselves access to the flow through the Microsoft Flow Admin Center, can export this data by following these steps:
 
 1.	Sign in to the [Microsoft Flow site](https://flow.microsoft.com/).
 1.	Select the **My flows** link, and then select the flow for which you wan to export the run history.

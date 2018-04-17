@@ -75,7 +75,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 **Delete approval history from Microsoft Flow**
 
- Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service for Apps. Administrators can access this data by following these steps:
+ Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service for Apps. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
  
  1. Sign in to the [PowerApps site](https://web.powerapps.com/).
 
@@ -85,6 +85,8 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 ![Enable flow](./media/gdpr-dsr-delete/delete-approval-history.png)
 
 1. In Microsoft Excel, search, filter and delete approval data as required.
+
+Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users that use the Common Data Service.
 
 **Delete user details from Microsoft Flow**
 
