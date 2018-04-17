@@ -54,7 +54,7 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Environment|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Environment permissions*|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
-|Activity feed |||Deleted through 28 day retention policy|
+|Activity feed ||PowerApps cmdlets||
 |User jobs||Coming soon||
 |Flows|Microsoft Flow Maker Portal**|||
 |Flow permissions|Microsoft Flow Maker Portal|||
