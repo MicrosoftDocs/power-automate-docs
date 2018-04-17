@@ -32,9 +32,9 @@ The guide discusses how to use Microsoft's products, services and administrative
 
 1. Access—Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
 
-1.	Rectify—Make changes or implement other requested actions on the personal data, where applicable. [Microsoft Flow DSR Rectify documentation](gdpr-dsr-rectify)
+1.	Rectify—Make changes or implement other requested actions on the personal data, where applicable. [Microsoft Flow DSR Rectify documentation](gdpr-dsr-rectify.md)
 
-1. Restrict—Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location. [Microsoft Flow DSR Restrict documentation](gdpr-dsr-restrict) 
+1. Restrict—Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location. [Microsoft Flow DSR Restrict documentation](gdpr-dsr-restrict.md) 
 
 1. Delete—Permanently remove personal data that resided in Microsoft's cloud. [Microsoft Flow DSR Delete documentation](gdpr-dsr-delete.md)
 
