@@ -48,6 +48,11 @@ Microsoft Flow offers the following experiences to find or export personal data 
 |Gateway|Microsoft Flow Maker Portal|On-premise gateway PowerShell cmdlets|
 |Gateway permissions|Microsoft Flow Maker Portal|
 
+**System-generated logs**
+
+System-generated logs can be retrieved from the Office 365 Service Trust Portal. The tenant admin is the only person within your organization who can access system-generated logs associated with a particular user’s use of Microsoft Flow. The data retrieved for an access request will be provided in a machine-readable format and will be provided in files that will allow the user to know which services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security of the service.
+
+
 **Export a flow** 
 
 Either an end user or an administrator, who has granted themselves access to the flow through the Microsoft Flow Admin Center,  can export a flow by following these steps:
