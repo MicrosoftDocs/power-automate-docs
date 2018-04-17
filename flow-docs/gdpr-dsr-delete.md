@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Del
 services: ''
 suite: flow
 documentationcenter: na
-author: keweare
+author: KentWeareMSFT
 manager: anneta
 editor: ''
 tags: ''
@@ -135,7 +135,7 @@ Connections are used in conjunction with connectors when establishing connectivi
 
 PowerApps Maker PowerShell cmdlets
 
-A user can delete all of their connections the Remove-Connection function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448)::
+A user can delete all of their connections the Remove-Connection function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 ```PowerShell
 Add-PowerAppsAccount 
 
@@ -170,7 +170,7 @@ Custom Connectors supplement the existing out of box connectors and allow for co
 
 PowerApps Maker PowerShell cmdlets
 
-A user can delete all of their custom connectors the Remove-Connector function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448)::
+A user can delete all of their custom connectors the Remove-Connector function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 ```PowerShell
 Add-PowerAppsAccount 
 

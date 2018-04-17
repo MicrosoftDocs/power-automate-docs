@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Res
 services: ''
 suite: flow
 documentationcenter: na
-author: keweare
+author: KentWeareMSFT
 manager: anneta
 editor: ''
 tags: ''
