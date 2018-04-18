@@ -21,8 +21,9 @@ ms.author: keweare
 # Responding to GDPR Data Subject Delete Requests for Microsoft Flow
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
-Microsoft Flow allows users to build automation workflows that are a critical part of your organization’s day-to-day operations, so when a user leaves your organization you will need to manually review and determine whether or not to delete certain data and resources that they have created. There is other customer data that will be automatically deleted whenever the user’s account deleted from Azure Active Directory. 
-Here is the breakdown between which customer data will be automatically deleted and which data will require your manual review and deletion:
+Microsoft Flow allows users to build automation workflows that are a critical part of your organization’s day-to-day operations, so when a user leaves your organization, an administrator will need to manually review and determine whether or not to delete certain data and resources that they have created. There is other personal data that will be automatically deleted whenever the user’s account is deleted from Azure Active Directory. 
+
+Here is the breakdown between which personal data will be automatically deleted and which data will require an administrator manual review and deletion:
 
 |Requires manual review and deletion|Automatically deleted when the user is deleted from Azure Active Directory|
 |------|------|
@@ -38,7 +39,7 @@ Here is the breakdown between which customer data will be automatically deleted 
 
 *Each of these resources contain “Created By” and “Modified By” records that include personal data. For security reasons, these records will be retained until the resource is deleted.
 
-**For environments that include a Common Data Service For Apps database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
+**For environments that include a Common Data Service For Apps database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users that use the Common Data Service.
 
 For the data and resources that requires manual review, Microsoft Flow offers the following experiences to find or change personal data for a specific user:
 
@@ -46,9 +47,9 @@ For the data and resources that requires manual review, Microsoft Flow offers th
 
 * **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-Here is the breakdown of experiences that are available for an administrator to delete each types of customer data:
+Here is the breakdown of experiences that are available for an administrator to delete each types of personal data within each types of resources:
 
-|Customer data|Website access|PowerShell access|Automated Deletion|
+|Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
 |Environment|Microsoft Flow Admin Center|PowerApps cmdlets||

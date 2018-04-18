@@ -41,7 +41,7 @@ The guide discusses how to use Microsoft's products, services and administrative
 1. Export—Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in Microsoft's cloud.	[Microsoft Flow DSR Export documentation](gdpr-dsr-export.md)
 	
-## Executing DSRs against Microsoft Flow Customer Data Prerequisites
+## Responding to DSRs for Microsoft Flow Customer Data 
 
 The following prerequisites exist in order to perform the actions suggested in this documentation.  They have been separated into two personas: user and administrator.
 
@@ -50,7 +50,7 @@ The following prerequisites exist in order to perform the actions suggested in t
 In order for a user to perform the actions described within this document, they need to have an active Azure Active Directory account with [Microsoft Flow license](https://preview.flow.microsoft.com/en-us/pricing/). In the event, a user does not meet these requirements, an administrator must perform these actions.
 
 ### Administrator Requirements
-You can perform the operations, that require administration privileges, this document outlines if you sign in to the [Microsoft Flow Admin center](https://admin.flow.microsoft.com/)  or [PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
+You can perform the operations, that require administration privileges, outlined by this document if you sign in to the [Microsoft Flow Admin center](https://admin.flow.microsoft.com/)  or [PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
 1. A paid or trial license for PowerApps Plan 2.
 If you [sign up for a trial license](http://web.powerapps.com/trial), it will expire after 30 days.
 

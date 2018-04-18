@@ -24,7 +24,7 @@ The first step in responding to a DSR is finding personal data that is the subje
 
 Below is a summary of the types of Microsoft Flow resources that contain personal data for a specific user. 
 
-|**Customer data**|**Purpose**|
+|**Resources containing personal data**|**Purpose**|
 |-----|-----|
 |System-generated logs|Telemetry that captures system events and history.|
 |Run history|The history of each flow execution for the past 28 days. This data includes the start time, end time, status and all input/output information for the flow. [Learn more](https://flow.microsoft.com/en-us/blog/download-history-recurrence/)|

@@ -33,7 +33,9 @@ Microsoft Flow offers the following experiences to find or export personal data 
 
 * **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-|**Customer data**|**Website access**|**PowerShell access**|
+Below is a summary of the types of personal data that can be stored by Microsoft Flow for a specific user and which experiences you can use to find and export it.
+
+|**Resources containing personal data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Microsoft Flow Maker Portal||
