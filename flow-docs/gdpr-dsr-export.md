@@ -123,8 +123,6 @@ Microsoft Flow Approvals History captures a historical record of approvals that 
 1. A list shows approvals that the user received. The users can show approvals that they sent by selecting the down arrow next to **Received** and then selecting **Sent**.
 ![View approvals received](./media/gdpr-dsr-export/view-received-approvals.png)
 
-### Export System-generated logs
-For information related to exporting System-generated logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 
 

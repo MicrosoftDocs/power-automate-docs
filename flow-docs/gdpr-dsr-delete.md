@@ -214,5 +214,3 @@ With the introduction of the Common Data Service for Apps, if a database is crea
  For more information on removing a user's permission in an  environment, please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
 
 
-### Delete System-generated logs
-For information related to deleting System-generated logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs).

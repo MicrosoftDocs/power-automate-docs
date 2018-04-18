@@ -40,6 +40,9 @@ The guide discusses how to use Microsoft's products, services and administrative
 
 1. Export—Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in Microsoft's cloud.	[Microsoft Flow DSR Export documentation](gdpr-dsr-export.md)
+
+## System-generated logs
+For information related to Microsoft Flow system-generated logs, please refer to the following [guide](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs).
 	
 ## Responding to DSRs for Microsoft Flow Customer Data 
 
