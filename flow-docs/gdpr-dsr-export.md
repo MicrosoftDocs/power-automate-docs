@@ -115,6 +115,10 @@ A user can export all custom connector permissions they have created via the Get
 
 ![Export custom connector permissions powershell](./media/gdpr-dsr-export/export-connector-permissions.png)
 
+### Gateway PowerShell cmdlets 
+There are PowerShell cmdlets that allow you to retrieve, manage and delete your personal gateways.  For more information see [On-premise gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
+
+
 ### Export approval history
 
 Microsoft Flow Approvals History captures a historical record of approvals that have been received or sent for a user. Any user can view their approval history by:
