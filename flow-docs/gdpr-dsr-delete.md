@@ -30,7 +30,7 @@ Here is the breakdown between which personal data will be automatically deleted 
 |Environment*|System-generated logs|
 |Environment permissions**|Run history|
 |Flows|User jobs|
-|Flow permissions|Gateway *|
+|Flow permissions|Gateway|
 |User details|Gateway permissions |
 |Connections*||
 |Connection permissions||
