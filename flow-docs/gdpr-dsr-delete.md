@@ -51,7 +51,6 @@ Here is the breakdown of experiences that are available for an administrator to 
 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
-|System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
 |Environment|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Environment permissions*|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
@@ -213,3 +212,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 With the introduction of the Common Data Service for Apps, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service for Apps database instance.
 
  For more information on removing a user's permission in an  environment, please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
+
+
+### Delete System-generated logs
+For information related to deleting System-generated Logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs).

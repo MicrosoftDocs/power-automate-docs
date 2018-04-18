@@ -37,7 +37,6 @@ Below is a summary of the types of personal data that can be stored by Microsoft
 
 |**Resources containing personal data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
-|System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Microsoft Flow Maker Portal||
 |User jobs||Coming soon|
 |Flows|Microsoft Flow Maker Portal||
@@ -123,6 +122,9 @@ Microsoft Flow Approvals History captures a historical record of approvals that 
 ![View approval history](./media/gdpr-dsr-export/view-approval-history.png)
 1. A list shows approvals that the user received. The users can show approvals that they sent by selecting the down arrow next to **Received** and then selecting **Sent**.
 ![View approvals received](./media/gdpr-dsr-export/view-received-approvals.png)
+
+### Export System-generated logs
+For information related to exporting System-generated Logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 
 
