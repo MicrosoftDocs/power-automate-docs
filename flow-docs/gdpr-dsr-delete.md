@@ -215,4 +215,4 @@ With the introduction of the Common Data Service for Apps, if a database is crea
 
 
 ### Delete System-generated logs
-For information related to deleting System-generated Logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs).
+For information related to deleting System-generated logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs).

@@ -124,7 +124,7 @@ Microsoft Flow Approvals History captures a historical record of approvals that 
 ![View approvals received](./media/gdpr-dsr-export/view-received-approvals.png)
 
 ### Export System-generated logs
-For information related to exporting System-generated Logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+For information related to exporting System-generated logs, please refer to the following [documentation](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 
 
