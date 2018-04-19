@@ -90,6 +90,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
     ![View flows](./media/gdpr-dsr-delete/admin-view-flows.png)
 
 1. Select **Manage sharing**.
+
     ![Manage sharing](./media/gdpr-dsr-delete/admin-manage-sharing.png)
 
 1. In the **Share** panel that appears near the right edge, add yourself as an owner, and then select **Save**.
@@ -224,7 +225,7 @@ As an admin you have two decisions to make when processing a DSR delete request 
 
 ### Give access to a user’s environments from the Microsoft Flow Admin Center
 
-An admin can grant Admin access to an environment created by a specific user from the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
+An admin can grant Admin access to an environment created by a specific user from the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ### Delete the user’s permissions to all other environments
 
@@ -232,4 +233,4 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 
 With the introduction of the Common Data Service for Apps, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service for Apps database instance.
 
-For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/en-us/flow/environments-overview-admin).
+For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).

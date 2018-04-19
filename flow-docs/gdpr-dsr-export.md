@@ -63,7 +63,7 @@ Either an end user or an administrator, who has granted themselves access to the
 
 1. Select **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 ### Export run history
 
