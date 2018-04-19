@@ -31,7 +31,7 @@ The following table shows which personal data is automatically deleted and which
 |Environment*|System-generated logs|
 |Environment permissions**|Run history|
 |Flows|User jobs|
-|Flow permissions|Gateway *|
+|Flow permissions|Gateway |
 |User details|Gateway permissions |
 |Connections*||
 |Connection permissions||
