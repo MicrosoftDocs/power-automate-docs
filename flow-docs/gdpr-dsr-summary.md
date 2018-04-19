@@ -38,9 +38,11 @@ This guide discusses how to use Microsoft's products, services and administrativ
 
 1. Delete—Permanently remove personal data that resides in Microsoft's cloud. [Microsoft Flow DSR Delete documentation](gdpr-dsr-delete.md)
 
-1. Export—Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+1. Export—Provide an electronic copy (in a machine-readable format) of personal data to the data subject. Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in Microsoft's cloud. [Microsoft Flow DSR Export documentation](gdpr-dsr-export.md)
 
-Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in Microsoft's cloud. [Microsoft Flow DSR Export documentation](gdpr-dsr-export.md)
+## System-generated logs
+
+Refer to this [guide](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) for more information on system-generated logs for Microsoft Flow.
 
 ## Responding to DSRs for Microsoft Flow Customer Data
 
