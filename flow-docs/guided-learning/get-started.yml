@@ -9,7 +9,7 @@ metadata:
   nextTutorialTitle: Build flows
   displayType: one-column
   author: MSFTMan
-  manager: anneta
+  manager: KFile
   ms.service: flow
   ms.topic: get-started-article
   ms.date: 10/04/2017
@@ -27,7 +27,7 @@ items:
 - title: Create a flow from a template
   durationInMinutes: 9
   content: |
-    > [!Video https://www.youtube.com/watch?v=NeCu5VnL4s0
+    > [!Video https://www.youtube.com/watch?v=NeCu5VnL4s0]
 
     [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
 - title: Use the Microsoft Flow mobile app
