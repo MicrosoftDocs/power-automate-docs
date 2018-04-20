@@ -57,14 +57,14 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Environment permissions*|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed ||PowerApps cmdlets||
-|User jobs||Coming soon||
+|User jobs||Under development||
 |Flows|Microsoft Flow Maker Portal**|||
 |Flow permissions|Microsoft Flow Maker Portal|||
-|User details||Coming soon||
-|Connections|Microsoft Flow Maker Portal|Coming soon||
-|Connection permissions|Microsoft Flow Maker Portal|Coming soon||
-|Custom connector|Microsoft Flow Maker Portal|Coming soon||
-|Custom connector permissions|Microsoft Flow Maker Portal|Coming soon||
+|User details||Under development||
+|Connections|Microsoft Flow Maker Portal|Under development||
+|Connection permissions|Microsoft Flow Maker Portal|Under development||
+|Custom connector|Microsoft Flow Maker Portal|Under development||
+|Custom connector permissions|Microsoft Flow Maker Portal|Under development||
 |Approval History|Microsoft PowerApps Maker Portal*|||
 
 *With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
@@ -108,8 +108,6 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. Configure connections as required, and then select **Continue**.
 
-    ![Establish connections](./media/gdpr-dsr-delete/establish-connections.png)
-
 1. Provide a new name, and then select **Save**.
 
     ![Create copy of flow](./media/gdpr-dsr-delete/create-copy-flow.png)
@@ -136,8 +134,6 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 1. Select **Data**, and then select **Entities**.
 
 1. Select the ellipsis **(…)** for the **Flow Approval** entity, and then open the data in Microsoft Excel.
-
-    ![Enable flow](./media/gdpr-dsr-delete/delete-approval-history.png)
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
