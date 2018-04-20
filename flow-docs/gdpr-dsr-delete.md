@@ -75,9 +75,12 @@ Here is the breakdown of experiences that are available for an administrator to 
 
 The steps below describe how administrative functions exist to serve delete requests for GDPR.
 
-Important: To avoid data corruption, follow these steps in order.
+> [!IMPORTANT]
+> To avoid data corruption, follow these steps in order.
+>
+>
 
-### List and re-assign flows
+## List and re-assign flows
 
 These steps copy existing flows for a departing user. If you assign new ownership to the copies, these flows can continue to support existing business processes. Copying these flows is important to delete personal identifier linkages to the departing user and new connections must be established for the flow to connect with other APIs and SaaS applications.
 
@@ -124,7 +127,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. The copy now performs the same workflow logic as the original version.
 
-### Delete approval history from Microsoft Flow
+## Delete approval history from Microsoft Flow
 
  Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service for Apps. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
@@ -140,7 +143,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use the Common Data Service.
 
-### Delete connections created by a user
+## Delete connections created by a user
 
 Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems.  Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
@@ -159,7 +162,7 @@ PowerApps Admin PowerShell cmdlets
 
 The function to allow an admin to find and delete a user’s connections using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
 
-### Delete the user’s permissions to shared connections
+## Delete the user’s permissions to shared connections
 
 PowerApps Maker PowerShell cmdlets
 
@@ -172,13 +175,17 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
-NOTE: Owner role assignments cannot be deleted without deleting the connection resource.
+> [!NOTE]
+> Owner role assignments cannot be deleted without deleting the connection resource.
+>
+>
 
 PowerApps Admin PowerShell cmdlets
 
 The function to allow an admin to find and delete a user’s connection role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
 
-### Delete custom connectors created by the user 
+## Delete custom connectors created by the user
+
 Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. Custom Connectors do include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
 PowerApps Maker PowerShell cmdlets
@@ -196,7 +203,7 @@ PowerApps Admin PowerShell cmdlets
 
 The function that allows an admin to find, and then delete a user’s custom connectors using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
 
-### Delete the user’s permissions to shared custom connectors
+## Delete the user’s permissions to shared custom connectors
 
 PowerApps Maker PowerShell cmdlets
 
@@ -209,25 +216,31 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
-NOTE: Owner role assignments cannot be deleted without deleting the connection resource.
+> [!NOTE]
+> Owner role assignments cannot be deleted without deleting the connection resource.
+>
+>
 
 PowerApps Admin PowerShell cmdlets
 
 The function to allow an admin to find and delete a user’s connector role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
 
-### Delete or reassign all environments created by the user
+## Delete or reassign all environments created by the user
 
 As an admin you have two decisions to make when processing a DSR delete request for a user for each of the environments that has been created by the user:
 
 1. If you determine that the environment is not being used by anyone else in your organization then you can choose to delete the environment
 1. If you determine that the environment is still required, then you can choose to not delete the environment and add yourself (or another user in your organization) as an Environment Admin.
-> **Important**: Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc., so please review the contents of an environment before deletion.
+    > [!IMPORTANT]
+    > Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc., so please review the contents of an environment before deletion.
+    >
+    >
 
-### Give access to a user’s environments from the Microsoft Flow Admin Center
+## Give access to a user’s environments from the Microsoft Flow Admin Center
 
 An admin can grant Admin access to an environment created by a specific user from the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
-### Delete the user’s permissions to all other environments
+## Delete the user’s permissions to all other environments
 
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Microsoft Flow service as a “role assignment.”
 

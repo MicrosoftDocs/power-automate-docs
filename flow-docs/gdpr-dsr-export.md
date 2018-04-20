@@ -20,8 +20,6 @@ ms.author: keweare
 ---
 # Responding to GDPR Data Subject Export Requests for Microsoft Flow
 
-## Introduction
-
 As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Microsoft Flow.
 
 ## Manage Export requests
@@ -38,18 +36,18 @@ Microsoft Flow offers the following experiences to find or export personal data 
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Microsoft Flow Maker Portal||
-|User jobs||Coming soon|
+|User jobs||Under development|
 |Flows|Microsoft Flow Maker Portal||
 |Flow permissions| Microsoft Flow Maker Portal and Microsoft Flow Admin Center||
-|User details||Coming soon|
-|Connections|Microsoft Flow Maker Portal|Coming soon|
-|Connection permissions|Microsoft Flow Maker Portal|Coming soon|
-|Custom connectors|Microsoft Flow Maker Portal|Coming soon|
-|Custom connector permissions|Microsoft Flow Maker Portal|Coming soon|
+|User details||Under development|
+|Connections|Microsoft Flow Maker Portal|Under development|
+|Connection permissions|Microsoft Flow Maker Portal|Under development|
+|Custom connectors|Microsoft Flow Maker Portal|Under development|
+|Custom connector permissions|Microsoft Flow Maker Portal|Under development|
 |Gateway|Microsoft Flow Maker Portal|On-premises gateway PowerShell cmdlets|
 |Gateway permissions|Microsoft Flow Maker Portal|
 
-### Export a flow
+## Export a flow
 
 Either an end user or an administrator, who has granted themselves access to the flow, can export the flow by following these steps:
 
@@ -65,7 +63,7 @@ Either an end user or an administrator, who has granted themselves access to the
 
 Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
-### Export run history
+## Export run history
 
 Run history includes a list of all executions that have occurred for a flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
@@ -83,7 +81,7 @@ Either an end user or an administrator, who has been granted access to the flow 
 
 The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and further analyze the results.
 
-### Export a user's activity feed
+## Export a user's activity feed
 
 In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Any user can view their activity feed by following these steps:
 
@@ -95,7 +93,7 @@ In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user
 
     ![Show activity feed](./media/gdpr-dsr-export/export-activity-feed.png)
 
-### Export a user’s connections
+## Export a user’s connections
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
@@ -104,12 +102,12 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
-### Export a list of a user’s connection permissions
+## Export a list of a user’s connection permissions
 
 A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 ![Export connection permissions](./media/gdpr-dsr-export/export-connection-permissions.png)
 
-### Export a user’s custom connectors
+## Export a user’s custom connectors
 
 Custom connectors supplement the out of box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems. You can transfer ownership of a custom connector or delete it.
 
@@ -126,13 +124,13 @@ In addition to the experience provided in Microsoft Flow, you can use the Get-Co
 
 ![Export custom connectors powershell](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
 
-### Export a user’s custom connector permissions
+## Export a user’s custom connector permissions
 
 A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ![Export custom connector permissions powershell](./media/gdpr-dsr-export/export-connector-permissions.png)
 
-### Export approval history
+## Export approval history
 
 Microsoft Flow Approvals History captures a historical record of approvals that have been received or sent for a user. Any user can view their approval history by:
 
