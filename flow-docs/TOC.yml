@@ -110,6 +110,15 @@
     href: prevent-data-loss.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
+    name: Respond to a DSR request
+    href: gdpr-dsr-summary.md
+    items:
+    - name: Discover requests
+      href: gdpr-dsr-discovery.md
+      name: Export requests
+      href: gdpr-dsr-export.md
+      name: Delete requests
+      href: gdpr-dsr-delete.md
 - name: Reference
   items:
   - name: Regions overview
