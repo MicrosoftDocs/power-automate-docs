@@ -27,7 +27,7 @@ items:
 - title: Create a flow from a template
   durationInMinutes: 9
   content: |
-    > [!Video https://www.youtube.com/embed/CYR-fZc5Maw?rel=0]
+    > [!Video https://www.youtube.com/embed/NeCu5VnL4s0]
 
     [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
 - title: Use the Microsoft Flow mobile app
