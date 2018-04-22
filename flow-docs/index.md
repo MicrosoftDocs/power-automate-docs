@@ -14,8 +14,6 @@ ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.prod: flow
-ms.technology: null
 ms.reviewer:  
 - karann-msft
 ---
