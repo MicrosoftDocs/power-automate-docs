@@ -54,6 +54,8 @@
     href: all-assigned-must-approve.md
   - name: Integrated approvals
     href: common-data-model-approve.md
+  - name: Format approval requests
+    href: approvals-markdown-support.md
 - name: Use the mobile app
   items:
   - name: Create a flow
