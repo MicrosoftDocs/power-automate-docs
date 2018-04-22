@@ -29,9 +29,9 @@ Structure your comments using headers. Headers segment longer comments, making t
 
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
 
-**Example:**   
+**Example:**
 
-```
+```Markdown
 # This is a H1 header
 ## This is a H2 header
 ### This is a H3 header
@@ -79,36 +79,44 @@ Organize related items with lists. You can add ordered lists with numbers, or un
 Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `*`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
 ### Ordered or numbered lists
-**Example:**  
-```
+
+**Example:**
+
+```Markdown
 0. First item.
 0. Second item.
 0. Third item.
 ```
 
-**Result:**  
+**Result:**
+
 1. First item.
 2. Second item.
 3. Third item.
 
 ### Bullet lists
 
-**Example:**  
+**Example:**
+
 <pre>
+
 - Item 1
 - Item 2
 - Item 3
+
 </pre>
 
-**Result:**  
+**Result:**
+
 - Item 1
 - Item 2
 - Item 3
 
 ### Nested lists
 
-**Example:**  
+**Example:**
 <pre>
+
 1. First item.
    - Item 1
    - Item 2
@@ -116,19 +124,21 @@ Ordered lists start with a number followed by a period for each list item. Unord
 1. Second item.
    - Nested item 1
    - Nested item 2
-   - Nested item 3 
+   - Nested item 3
+
 </pre>
 
 **Result:**  
 
 1. First item.
-	- Item 1
-	- Item 2
-	- Item 3
+
+    - Item 1
+    - Item 2
+    - Item 3
 2. Second item.
-	- Nested item 1
-	- Nested item 2
-	- Nested item 3
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## Links
@@ -137,22 +147,22 @@ HTTP and HTTPS URLs are automatically formatted as links.
 
 You can set text hyperlinks for your URL using the standard markdown link syntax:
 
-```
+```Markdown
 [Link Text](Link URL)
 ```
 
-**Example:**  
+**Example:**
 <pre>
 &#91;Microsoft Flow](https://flow.microsoft.com)
 </pre>
 
-**Result:**   
+**Result:**
 
 [Microsoft Flow](https://flow.microsoft.com)
 
 ### Anchor links
 
-Anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. 
+Anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case.
 
 **Example:**
 
@@ -161,7 +171,8 @@ Anchor IDs are assigned to all headings when rendered as HTML. The ID is the hea
 </pre>
 
 <br/>
-**Result:** 
+
+**Result:**
 
 The syntax for an anchor link to a section...
 
@@ -193,6 +204,7 @@ Organize structured data with tables.
 </pre> 
 
 <br/>
+
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -219,7 +231,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 </pre>
 
 <br/>
-**Result:**  
+
+**Result:**
+
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
 **_Bold, italicized text_**   
 **~~Bold, strike-through text~~**  
