@@ -30,6 +30,7 @@ Structure your comments using headers. Headers segment longer comments, making t
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
 
 **Example:**   
+
 ```
 # This is a H1 header
 ## This is a H2 header
@@ -39,7 +40,8 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 ```
 
 **Result:**
-    ![Export flow](./media/approvals-markdown-support/mrkdown-headers.png)
+
+![Export flow](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## Paragraphs and line breaks
 
