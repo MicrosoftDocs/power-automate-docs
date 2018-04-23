@@ -110,8 +110,8 @@
     href: prevent-data-loss.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
-- name: Respond to a DSR request
-   items:
+- name: Respond to DSR requests
+  items:
   - name: Summary
     href: gdpr-dsr-summary.md
   - name: Discover requests
