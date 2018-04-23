@@ -36,14 +36,14 @@ Microsoft Flow offers the following experiences to find or export personal data 
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Microsoft Flow Maker Portal||
-|User jobs||Under development|
+|User jobs|| |
 |Flows|Microsoft Flow Maker Portal||
 |Flow permissions| Microsoft Flow Maker Portal and Microsoft Flow Admin Center||
-|User details||Under development|
-|Connections|Microsoft Flow Maker Portal|Under development|
-|Connection permissions|Microsoft Flow Maker Portal|Under development|
-|Custom connectors|Microsoft Flow Maker Portal|Under development|
-|Custom connector permissions|Microsoft Flow Maker Portal|Under development|
+|User details|| |
+|Connections|Microsoft Flow Maker Portal| |
+|Connection permissions|Microsoft Flow Maker Portal| |
+|Custom connectors|Microsoft Flow Maker Portal| |
+|Custom connector permissions|Microsoft Flow Maker Portal| |
 |Gateway|Microsoft Flow Maker Portal|On-premises gateway PowerShell cmdlets|
 |Gateway permissions|Microsoft Flow Maker Portal|
 

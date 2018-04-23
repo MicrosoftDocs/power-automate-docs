@@ -57,14 +57,14 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Environment permissions*|Microsoft Flow Admin Center|PowerApps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed ||PowerApps cmdlets||
-|User jobs||Under development||
+|User jobs|| ||
 |Flows|Microsoft Flow Maker Portal**|||
 |Flow permissions|Microsoft Flow Maker Portal|||
-|User details||Under development||
-|Connections|Microsoft Flow Maker Portal|Under development||
-|Connection permissions|Microsoft Flow Maker Portal|Under development||
-|Custom connector|Microsoft Flow Maker Portal|Under development||
-|Custom connector permissions|Microsoft Flow Maker Portal|Under development||
+|User details|| ||
+|Connections|Microsoft Flow Maker Portal| ||
+|Connection permissions|Microsoft Flow Maker Portal| ||
+|Custom connector|Microsoft Flow Maker Portal| ||
+|Custom connector permissions|Microsoft Flow Maker Portal| ||
 |Approval History|Microsoft PowerApps Maker Portal*|||
 
 *With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
@@ -156,7 +156,7 @@ Get-Connection | Remove-Connection
 
 PowerApps Admin PowerShell cmdlets
 
-The function to allow an admin to find and delete a user’s connections using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+Not available.
 
 ## Delete the user’s permissions to shared connections
 
@@ -178,7 +178,7 @@ Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 
 PowerApps Admin PowerShell cmdlets
 
-The function to allow an admin to find and delete a user’s connection role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+Not available.
 
 ## Delete custom connectors created by the user
 
@@ -197,7 +197,7 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 
 PowerApps Admin PowerShell cmdlets
 
-The function that allows an admin to find, and then delete a user’s custom connectors using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+Not available.
 
 ## Delete the user’s permissions to shared custom connectors
 
@@ -219,7 +219,7 @@ Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 
 PowerApps Admin PowerShell cmdlets
 
-The function to allow an admin to find and delete a user’s connector role assignments using the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) is under development.
+Not available.
 
 ## Delete or reassign all environments created by the user
 
