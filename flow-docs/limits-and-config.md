@@ -120,4 +120,5 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph A
 *.flow.microsoft.com|https|Access to the Microsoft Flow site.
 *.powerapps.com|https|Access to the PowerApps site.
 psux.azureedge.net|https|Access to the Microsoft Flow CDN.
+nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 
