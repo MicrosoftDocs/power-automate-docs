@@ -447,7 +447,7 @@ ms.reviewer:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Get deep insights into your flows</h3>
+                                            <h3>Get insights into your flows</h3>
                                             <p>Gain insights into the health of your flows from the analytics dashboard.</p>
                                         </div>
                                     </div>
