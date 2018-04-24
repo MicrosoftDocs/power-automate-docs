@@ -386,12 +386,12 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_from_template.svg" alt="Manage environments." />
+                                                <img src="media/index/environments_dlp.svg" alt="Manage environments." />
                                             </div>
                                         </div>
                                         <div class="cardText">
                                             <h3>Manage environments</h3>
-                                            <p>All you need to manage environments in your organization.</p>
+                                            <p>Manage your organization's environments.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -405,7 +405,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_from_scratch.svg" alt="Define data policies." />
+                                                <img src="media/index/environments_dlp.svg" alt="Define data policies." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -424,7 +424,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/create_approval_flows.svg" alt="Manage flow runs." />
+                                                <img src="media/index/manage_runs.svg" alt="Manage flow runs." />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -443,7 +443,7 @@ ms.reviewer:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/collaborate_on_flows.svg" alt="Gain insights into you flows" />
+                                                <img src="media/index/analytics_reporting.svg" alt="Gain insights into your flows" />
                                             </div>
                                         </div>
                                         <div class="cardText">
