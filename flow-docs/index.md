@@ -145,7 +145,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#intermediate">I'm intermediate</a>
+            <a href="#intermediate">I'm an intermediate</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -374,7 +374,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#admin">I'm an Admin</a>
+            <a href="#admin">I'm an admin</a>
             <ul id="admin">
                 <li>
                     <a href="#admin-all"></a>
