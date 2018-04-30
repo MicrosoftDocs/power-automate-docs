@@ -21,7 +21,7 @@ ms.author: gcorvera
 
 # Use Markdown in Microsoft Flow approval requests
 
-This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting, tables, and images to your approval requests.
+This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting and tables to your approval requests.
 
 ## Headers
 
