@@ -42,6 +42,14 @@ ms.author: stepsic
 
 ## What's new
 
+### Release 2014-05-01
+
+- **Rich text in Approval messages** - Use Markdown to format the approval details that you send.
+- **Buttons with multiple selection inputs** - Build flow buttons that use a multiple selection list to collect more than one value at once.
+- **Work with wider flows** - The Microsoft Flow mobile app now supports landscape view and the web designer has a horizontal scrollbar.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) about this release.
+
 ### Release 2018-04-12
 
 - **Return data to PowerApps from a flow** - Build flows that can be called from an app built with PowerApps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
