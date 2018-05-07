@@ -46,7 +46,7 @@ Create these columns in your SharePoint Online list:
 
    ![SharePoint Online list columns](./media/modern-approvals/sharepoint-list-fields.png)
 
-Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
+Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
 ## Create your flow from the blank template
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
