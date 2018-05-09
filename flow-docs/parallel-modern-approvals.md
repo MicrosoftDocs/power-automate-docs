@@ -50,7 +50,7 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Name and save your flow
 
-1. Provide a name for your flow, and then select **Save** icon to save the work we've done so far.
+1. Provide a name for your flow, and then select the **Save** icon to save the work we've done so far.
 
    ![save flow](./media/parallel-modern-approvals/save.png)
 
