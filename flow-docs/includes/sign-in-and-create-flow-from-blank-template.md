@@ -8,3 +8,5 @@
    
     ![create from blank](media/modern-approvals/blank-template.png)
 
+4. Select the **Create from blank** button.
+
