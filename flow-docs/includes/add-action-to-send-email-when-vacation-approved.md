@@ -1,4 +1,4 @@
-1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
+1. Select **Add an action** on the **IF YES** branch of the condition.
    
     ![add new step](media/modern-approvals/add-action-after-condition.png)
 2. Enter **send email** into the search box on the **Choose an action** card.
@@ -9,7 +9,10 @@
     ![select send an email action](media/modern-approvals/select-send-email-yes.png)
 4. Configure the email card to suit your needs.
    
-     Note: **To**, **Subject**, and **Body** are required.
+     >[!NOTE]
+     > **To**, **Subject**, and **Body** are required.
+     >
+     >
    
      This card is a template for the email that is sent when the status of the vacation request changes.
    

@@ -19,6 +19,7 @@ ms.author: deonhe
 
 ---
 # Create and test an approval workflow with Microsoft Flow
+
 With Microsoft Flow, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
 To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
@@ -46,12 +47,13 @@ Create these columns in your SharePoint Online list:
 
    ![SharePoint Online list columns](./media/modern-approvals/sharepoint-list-fields.png)
 
-Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When a new item is created** trigger.
+Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
 ## Create your flow from the blank template
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
+
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
 The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
@@ -59,6 +61,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 ![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## Add a profile action
+
 1. Select **New step**, and then select **Add an action**.
    
     ![new step](./media/modern-approvals/select-sharepoint-add-action.png)
@@ -73,14 +76,20 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
     ![save flow](./media/modern-approvals/save.png)
 
 ## Add an approval action
+
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Note: This action sends the approval request to the email address in the **Assigned To** box.
+> [!NOTE]
+> This action sends the approval request to the email address in the **Assigned To** box.
+>
+>
 
 ## Add a condition
+
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 ## Add an email action for approvals
+
 Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
@@ -88,21 +97,30 @@ Follow these steps to send an email if the vacation request is approved:
    ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
+
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
+> [!NOTE]
+> **Site Address**, **List Name**, **Id**, and **Title** are required.
+>
+>
 
 ![update item configuration](./media/modern-approvals/configure-update-item.png)
 
 ## Add an email action for rejections
+
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
 
 ## Add update action for rejected requests
+
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   Note: **Site Address**, **List Name**, **Id**, and **Title** are required.
+   > [!NOTE]
+   > **Site Address**, **List Name**, **Id**, and **Title** are required.
+   >
+   >
 
 ![update item card](./media/modern-approvals/configure-update-item-no.png)
 
@@ -117,11 +135,13 @@ If you've followed along, your flow should resemble this screenshot:
 Now that we've created the flow, it's time to test it!
 
 ## Request an approval
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
 ## Learn more
+
 * View and manage [pending approval requests](approve-reject-requests.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)
 * Create [parallel approval flows.](parallel-modern-approvals.md)
