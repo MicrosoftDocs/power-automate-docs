@@ -25,7 +25,7 @@ The “right to erasure” by the removal of personal data is a key protection i
 The following table shows resources containing personal data that will be automatically deleted when a Microsoft Account is closed.
 
 |Resources containing personal data|
-|------|------|
+|------|
 |Product and service activity|
 |Run history|
 |Flows|
