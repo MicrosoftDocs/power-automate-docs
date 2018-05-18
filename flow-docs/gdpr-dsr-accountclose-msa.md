@@ -26,11 +26,11 @@ The following table shows resources containing personal data that will be automa
 
 |Resources containing personal data|
 |------|------|
-|Product and service activity
-|Run history
-|Flows
+|Product and service activity|
+|Run history|
+|Flows|
 |Activity Feed|
-|User details
+|User details|
 |Connections|
 
 **Website access:** The following website provides support to close your Microsoft Account.
