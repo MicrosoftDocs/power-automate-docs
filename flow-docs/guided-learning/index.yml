@@ -23,19 +23,19 @@ sections:
     className: cardsF
     columns: 2
     items:
-    - html: <p><a href="get-started#step-1">Understand Microsoft Flow basics</a> - 14 min</p><p><a href="get-started#step-2">Create a flow from a template</a> - 9 min</p><p><a href="get-started#step-3">Use the Microsoft Flow mobile app</a> - 8 min</p>
+    - html: <p><a href="get-started?tutorial-step=1">Understand Microsoft Flow basics</a> - 14 min</p><p><a href="get-started?tutorial-step=2">Create a flow from a template</a> - 9 min</p><p><a href="get-started?tutorial-step=3">Use the Microsoft Flow mobile app</a> - 8 min</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Get Started
-    - html: <p><a href="build-flows#step-1">Create a button flow</a> - 11 min</p><p><a href="build-flows#step-2">Get notifications</a> - 6 min</p><p><a href="build-flows#step-3">Copy files</a> - 4 min</p><p><a href="build-flows#step-4">Collect data</a> - 5 min</p><p><a href="build-flows#step-5">Post tweets from a flow</a> - 15 min</p><p><a href="build-flows#step-6">Create scheduled flows</a> - 9 min</p><p><a href="build-flows#step-7">Convert and store documents</a> - 14 min</p>
+    - html: <p><a href="build-flows?tutorial-step=1">Create a button flow</a> - 11 min</p><p><a href="build-flows?tutorial-step=2">Get notifications</a> - 6 min</p><p><a href="build-flows?tutorial-step=3">Copy files</a> - 4 min</p><p><a href="build-flows?tutorial-step=4">Collect data</a> - 5 min</p><p><a href="build-flows?tutorial-step=5">Post tweets from a flow</a> - 15 min</p><p><a href="build-flows?tutorial-step=6">Create scheduled flows</a> - 9 min</p><p><a href="build-flows?tutorial-step=7">Convert and store documents</a> - 14 min</p>
       image: 
         src: https://docs.microsoft.com/media/common/i_build.svg
       title: Build Flows
-    - html: <p><a href="work-with-approvals#step-1">Create an approval request</a> - 4 min</p><p><a href="work-with-approvals#step-2">Process an approval request</a> - 7 min</p>
+    - html: <p><a href="work-with-approvals?tutorial-step=1">Create an approval request</a> - 4 min</p><p><a href="work-with-approvals?tutorial-step=2">Process an approval request</a> - 7 min</p>
       image: 
         src: https://docs.microsoft.com/media/common/i_tasks.svg
       title: Work with approvals
-    - html: <p><a href="administer-flows#step-1">Use environments to manage flows</a> - 8 min</p><p><a href="administer-flows#step-2">Use data loss prevention policies</a> - 6 min</p>
+    - html: <p><a href="administer-flows?tutorial-step=1">Use environments to manage flows</a> - 8 min</p><p><a href="administer-flows?tutorial-step=2">Use data loss prevention policies</a> - 6 min</p>
       image: 
         src: https://docs.microsoft.com/media/common/i_management.svg
       title: Administer flows
