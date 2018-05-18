@@ -69,7 +69,7 @@ Connections are used in conjunction with connectors to establish connectivity wi
  ![Delete Event](./media/gdpr-dsr-delete-msa/deleteconnections.png)
 
 1. Select the connection that you would like to delete by clicking on it. Next, click on the **...** and then click on **Delete** link.
-![Delete Event](./media/gdpr-dsr-delete-msa/deleteconnection.png)
+![Delete Event](./media/gdpr-dsr-delete-msa/delete-connection.png)
 
 1. A confirmation prompt will appear, click on **Delete** icon to remove connection.
 ![Delete Event](./media/gdpr-dsr-delete-msa/confirmdelete.png)
