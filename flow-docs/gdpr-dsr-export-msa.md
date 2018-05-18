@@ -32,7 +32,7 @@ Microsoft Flow offers the following experiences to find or export personal data 
 
 
 |**Customer data**|**Website access**
-|-----------------|------------------|-------------------|
+|------------------------------------|
 |Product and service activity|Microsoft Privacy Dashboard|
 |Flows|Microsoft Flow Maker Portal|
 |Run history|Microsoft Flow Maker Portal|
