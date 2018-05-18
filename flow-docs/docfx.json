@@ -20,6 +20,7 @@
       {
         "files": [
           "**/*.png",
+          "**/*.svg",
           "**/*.jpg",
           "**/*.gif",
           "**/includes/media/**"
@@ -34,13 +35,20 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-MSFlow",
-      "contributors_to_exclude": ["openpublishingbuild","sudeepku","v-thepet"],
+      "contributors_to_exclude": [
+        "openpublishingbuild",
+        "sudeepku",
+        "v-thepet"
+      ],
       "breadcrumb_path": "breadcrumb/toc.yml",
-      "searchScope": ["Flow"],
+      "searchScope": [
+        "Flow"
+      ],
       "titleSuffix": "Microsoft Flow"
-     },
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "flow"
+    "dest": "flow",
+    "markdownEngineName": "markdig"
   }
 }

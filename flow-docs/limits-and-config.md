@@ -25,17 +25,20 @@ This topic contains information about the current limits and configuration detai
 These are limits for a single outgoing request.
 
 ### Timeout
+
 | Name | Limit |
 | --- | --- |
 | Request Timeout |120 Seconds |
 
 ### Message size
+
 | Name | Limit | Notes |
 | --- | --- | --- |
 | Message size |100 MB |Not all APIs support the full 100MB. |
 | Expression evaluation limit |131,072 characters |`@concat()`, `@base64()`, `string` can't exceed this limit. |
 
 ### Retry policy
+
 | Name | Limit |
 | --- | --- |
 | Retry attempts |4 |
@@ -117,4 +120,5 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph A
 *.flow.microsoft.com|https|Access to the Microsoft Flow site.
 *.powerapps.com|https|Access to the PowerApps site.
 psux.azureedge.net|https|Access to the Microsoft Flow CDN.
+nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 

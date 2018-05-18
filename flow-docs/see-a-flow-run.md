@@ -1,5 +1,3 @@
-
-
 ---
 title: Watch a flow run | Microsoft Docs
 description: View the inputs and outputs for each step of a flow to verify that it behaves as expected.
