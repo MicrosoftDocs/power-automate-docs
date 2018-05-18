@@ -49,7 +49,7 @@ Microsoft Flow offers the following experiences to find or export personal data 
  ![Download your data](./media/gdpr-dsr-export-msa/downloaddata.png)
 
  1. Check **App & service usage** and then click **Create archive** button.
- ![Download your data](./media/gdpr-dsr-export-msa/createarchive.png)
+ ![Download your data](./media/gdpr-dsr-export-msa/create-archive.png)
 1. A new archive will get created. Click on **Download** link to obtain your exported Product and Service Activity data.
 ![Download](./media/gdpr-dsr-export-msa/download.png)
 
