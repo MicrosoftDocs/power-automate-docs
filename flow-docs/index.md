@@ -18,6 +18,28 @@ ms.reviewer:
 - karann-msft
 ---
 <div id="main" class="v2">
+    <div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="/vsts/user-guide">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">View all docs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 <div class="container">
     <h1>Microsoft Flow Documentation</h1>
     <ul class="pivots">
