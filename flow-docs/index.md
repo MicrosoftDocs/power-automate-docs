@@ -21,13 +21,13 @@ ms.reviewer:
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/vsts/user-guide">
+                <a href="getting-started.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                        <img src="media/index/get_started_basics.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
