@@ -189,7 +189,7 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 
 ### High availability/disaster recovery
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?
-**Answer:** This is on the roadmap, but we don’t have a timeline yet.
+**Answer:** Yes, high availability is [now available](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Question:** What options are available for disaster recovery?
 **Answer:** You can use the recovery key to restore or move a gateway.
