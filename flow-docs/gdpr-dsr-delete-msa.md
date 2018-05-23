@@ -24,7 +24,7 @@ The “right to erasure” by the removal of personal data is a key protection i
 
 Microsoft Flow allows users to build automation workflows. When a user decides to delete their personal data from Microsoft Flow, they have the ability to manually review and determine whether or not to delete certain data and resources that they have created. 
 
-The following table shows which personal data is automatically deleted and which data requires an administrator to manually review and delete:
+The following table shows which personal data is automatically deleted and which data requires a MSA user to manually review and delete:
 
 |Requires manual review and deletion|Automatically deleted|
 |------|------|

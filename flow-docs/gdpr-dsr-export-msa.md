@@ -31,7 +31,7 @@ Microsoft Flow offers the following experiences to find or export personal data 
 * **Website access:** sign into the [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy/), or the [Microsoft Flow Website](https://flow.microsoft.com/).
 
 
-|**Customer data**|**Website access**|
+|**Personal data**|**Website access**|
 |-----------------|-------------------|
 |Product and service activity|Microsoft Privacy Dashboard|
 |Flows|Microsoft Flow Maker Portal|
