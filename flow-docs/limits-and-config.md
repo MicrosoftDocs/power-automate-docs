@@ -28,7 +28,8 @@ These are limits for a single outgoing request.
 
 | Name | Limit |
 | --- | --- |
-| Request Timeout |120 Seconds |
+| Request Timeout for synchronous calls |120 Seconds |
+| Request Timeout for Async calls|Configurable. Max is 30 days. |
 
 ### Message size
 
