@@ -27,7 +27,7 @@ ms.reviewer:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="media/index/get_started_basics.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
