@@ -28,7 +28,8 @@ These are limits for a single outgoing request.
 
 | Name | Limit |
 | --- | --- |
-| Request Timeout |120 Seconds |
+| Request Timeout for synchronous calls |120 Seconds |
+| Request Timeout for Async calls|Configurable. Max is 30 days. |
 
 ### Message size
 
@@ -52,6 +53,7 @@ These are the limits for a single flow run.
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
+| Max run history retention |28 days, per GDPR rules. | |
 
 ## Looping and debatching limits
 These are limits for a single flow run.
