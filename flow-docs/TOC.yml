@@ -131,7 +131,7 @@
   - name: Export requests
     href: gdpr-dsr-export-msa.md
   - name: Delete requests
-    href: gdpr-dsr-delete.md
+    href: gdpr-dsr-delete-msa.md
 - name: Reference
   items:
   - name: Regions overview
