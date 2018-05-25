@@ -122,7 +122,7 @@
     href: gdpr-dsr-export.md
   - name: Delete requests
     href: gdpr-dsr-delete.md
- - name: DSR requests for Microsoft Accounts
+- name: DSR requests for Microsoft Accounts
   items:
   - name: Summary
     href: gdpr-dsr-summary-msa.md
