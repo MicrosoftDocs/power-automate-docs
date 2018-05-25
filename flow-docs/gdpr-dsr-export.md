@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/24/2018
 ms.author: keweare
 
 ---
@@ -36,16 +36,15 @@ Microsoft Flow offers the following experiences to find or export personal data 
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Microsoft Flow Maker Portal||
-|User jobs|| |
 |Flows|Microsoft Flow Maker Portal||
 |Flow permissions| Microsoft Flow Maker Portal and Microsoft Flow Admin Center||
-|User details|| |
-|Connections|Microsoft Flow Maker Portal| |
-|Connection permissions|Microsoft Flow Maker Portal| |
-|Custom connectors|Microsoft Flow Maker Portal| |
-|Custom connector permissions|Microsoft Flow Maker Portal| |
-|Gateway|Microsoft Flow Maker Portal|On-premises gateway PowerShell cmdlets|
-|Gateway permissions|Microsoft Flow Maker Portal|
+|User details||PowerApps cmdlets|
+|Connections|Microsoft Flow Maker Portal|PowerApps cmdlets |
+|Connection permissions|Microsoft Flow Maker Portal|PowerApps cmdlets |
+|Custom connectors|Microsoft Flow Maker Portal|PowerApps cmdlets |
+|Custom connector permissions|Microsoft Flow Maker Portal|PowerApps cmdlets |
+|Gateway|Microsoft Flow Maker Portal|On-premises Data Gateway PowerShell cmdlets|
+|Gateway permissions|Microsoft Flow Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 
 ## Export a flow
 
@@ -102,10 +101,35 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
+PowerApps Admin PowerShell cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connections for the user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "UserConnections.txt"
+```
+
 ## Export a list of a user’s connection permissions
 
 A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
-![Export connection permissions](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
+```
+PowerApps Admin PowerShell cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt" 
+```
 
 ## Export a user’s custom connectors
 
@@ -122,13 +146,41 @@ Follow these steps to export a list of customer connectors:
 
 In addition to the experience provided in Microsoft Flow, you can use the Get-Connector function from the [PowerApps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
 
-![Export custom connectors powershell](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+~~~~
+Add-PowerAppsAccount
+Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
+~~~~
+
+PowerApps Admin PowerShell cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserCustomConnectors.txt"  
+```
 
 ## Export a user’s custom connector permissions
 
 A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
-![Export custom connector permissions powershell](./media/gdpr-dsr-export/export-connector-permissions.png)
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
+```
+
+PowerApps Admin PowerShell cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"   
+```
 
 ## Export approval history
 
@@ -141,3 +193,18 @@ Microsoft Flow Approvals History captures a historical record of approvals that 
 1. A list shows approvals that the user received. The users can show approvals that they sent by selecting the down arrow next to **Received** and then selecting **Sent**.
 
     ![View approvals received](./media/gdpr-dsr-export/view-received-approvals.png)
+
+## Export User Details
+User details provide a linkage between a user and a specific tenant. An administrator can export this information by calling the **Get-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
+
+PowerApps Admin PowerShell cmdlets
+
+```PowerShell
+Add-PowerAppsAccount
+
+Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+## Export Gateway Settings
+Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+
