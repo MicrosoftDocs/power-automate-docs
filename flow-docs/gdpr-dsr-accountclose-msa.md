@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/26/2018
+ms.date: 5/25/2018
 ms.author: keweare
 
 ---
@@ -24,7 +24,7 @@ The **right to erasure** of personal data is a key protection in the GDPR. This 
 
 These resources contain personal data that are automatically deleted when a user closes an MSA:
 
-|Resource|
+|Resources containing personal data|
 |------|
 |Product and service activity|
 |Run history|
@@ -47,8 +47,6 @@ These steps describe how to self-serve Account Close requests for GDPR.
     ![Cancel subscriptions](./media/gdpr-dsr-delete-msa/accountclose.png)
 
 1. Acknowledge that you understand the impact of closing your MSA, and then select **Mark account for closure**.
-
-    ![Acknowledge Event](./media/gdpr-dsr-delete-msa/markaccountforclosure.png)
 
     A notification appears, indicating that your account will be closed in 30 days. You may reopen this account at any time during this 30-day period.
 
