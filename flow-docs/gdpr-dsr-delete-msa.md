@@ -81,3 +81,8 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
 > If other flows use the connection, you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.
 >
 >
+
+## Learn more
+
+* Get started with [Microsoft Flow](getting-started.md)
+* Learn [what's new](release-notes.md) with Microsoft Flow

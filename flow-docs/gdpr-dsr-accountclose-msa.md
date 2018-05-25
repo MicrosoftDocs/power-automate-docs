@@ -53,3 +53,8 @@ These steps describe how to self-serve Account Close requests for GDPR.
     ![Account Closed](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
     At the end of this 30-day window, the process to delete all Microsoft Flow resources for this MSA begins.
+
+## Learn more
+
+* Get started with [Microsoft Flow](getting-started.md)
+* Learn [what's new](release-notes.md) with Microsoft Flow
