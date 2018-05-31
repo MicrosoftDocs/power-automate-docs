@@ -1,3 +1,4 @@
+
 ---
 title: Create a flow with Dynamics 365 (online) | Microsoft Docs
 description: Create useful workflows by using a Dynamics 365 connection and Microsoft Flow
@@ -22,6 +23,9 @@ ms.author: matp
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
 In Microsoft Flow, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Microsoft Flow](getting-started.md).
+
+> [!IMPORTANT] 
+> To invoke a flow trigger, the Dynamics 365 customer engagement entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## Create a flow from a template
 You can create a flow using one of the many templates available, such as these examples:
