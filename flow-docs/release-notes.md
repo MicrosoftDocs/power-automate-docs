@@ -42,7 +42,7 @@ ms.author: stepsic
 
 ## What's new
 
-### Release 2014-05-01
+### Release 2018-05-01
 
 - **Rich text in Approval messages** - Use Markdown to format the approval details that you send.
 - **Buttons with multiple selection inputs** - Build flow buttons that use a multiple selection list to collect more than one value at once.
