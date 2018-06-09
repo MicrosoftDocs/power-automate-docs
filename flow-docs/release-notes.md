@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 06/08/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,17 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-06-08
+
+- **PowerShell Cmdlets** - Both flow makers, and tenant admins, can now use PowerShell to manage their Flows programmatically.
+- **Improvements to the Teams Flow bot** - The Flow bot in Microsoft Teams can run flow buttons and describe your flows.
+- **Three new connectors** - Added support for Marketo, ElasticOCR, and DynamicSignal. 
+- **Additional Sharing Info** - Added additional information when you share -- or run shared -- flows, so you know exactly what permissions other people will receive.
+- **Automatic trimming SharePoint URLs** - When you copy and paste a SharePoint URL in the browser it could contain additional text beyond the site, this text will be automatically removed so you can connect to just the site.
+- **Documentation on GDPR requests** - We have created a comprehensive guide and toolset for enterprise organizations to handle Data Subject Rights requests.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) about this release.
 
 ### Release 2018-05-21
 
