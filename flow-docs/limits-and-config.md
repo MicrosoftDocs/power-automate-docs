@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 06/19/2018
 ms.author: stepsic
 
 ---
@@ -38,7 +38,9 @@ These are limits for a single outgoing request.
 ### Retry policy
 | Name | Limit |
 | --- | --- |
-| Retry attempts |4 |
+| Retry attempts |90 | The default is 4. To change the default use action settings | 
+| Retry max delay |1 day | |
+| Retry min delay |5 seconds | |
 
 ## Run duration and retention
 These are the limits for a single flow run.
@@ -55,10 +57,12 @@ These are limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| ForEach items |5,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items |100,000 |100,000 is only available for the premium plans. Otherwise, you are limited to 5,000. You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
-| SplitOn items |5,000 | |
-| ForEach Parallelism |1 | |
+| SplitOn items |100,000 |Like Apply to each, the limit is 5,000 unless you are on a premium plan. |
+| Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
+| Actions executions per 5 minutes | 100,000 | Also, you can distribute a workload across more than one flow as needed. |
+| Actions concurrent outgoing calls | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
 ## Definition limits
 These are limits for a single flow.
