@@ -61,6 +61,10 @@ Follow these steps to create a team flow or to add more owners to a team flow.
    
      Congratulations &mdash; your team flow has been created!
 
+##Add a list as a co-owner
+
+Let’s suppose you have a flow that runs when an item is created or modified in a SharePoint list – say Turbine Energy Distribution, this flow also does a Get item from another list called Turbines. You can add both lists as co-owners to the flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow has been shared, you can simply distribute a link to it.
+
 ## Remove an owner
 > [!IMPORTANT]
 > When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly.
