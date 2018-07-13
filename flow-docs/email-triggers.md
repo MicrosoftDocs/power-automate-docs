@@ -23,7 +23,7 @@ Use the **When a new email arrives** trigger to create a flow that runs when one
 
 | Property | When to use |
 | --- | --- |
-| Folder |Trigger a flow whenever emails arrive into a specific folder. This property can be useful if you have rules that route emails to different folders. |
+| Folder |Trigger a flow whenever emails arrive in a specific folder. This property can be useful if you have rules that route emails to different folders. |
 | To |Trigger a flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
 | From |Trigger a flow based on the sender's email address. |
 | Importance |Trigger a flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
@@ -37,7 +37,7 @@ For example, if you check an email's *from* address in a condition, each run cou
 > 
 > 
 
-In the following walk-throughs, we check all properties in the **When a new email arrives** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
+In the following walkthroughs, we check all properties in the **When a new email arrives** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
 * An account with access to [Microsoft Flow](https://flow.microsoft.com)
@@ -57,13 +57,13 @@ Ok, let's get started:
 
 1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
    
-     In this example, I'm interested in any email that has the word "lottery" in the subject.
+     In this example, we're interested in any email that has the word "lottery" in the subject.
    
     ![Advanced options](./media/email-triggers/email-triggers-subject-text.png)
 
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you'd like to receive when an email that matches the **Subject Filter** you specified earlier arrives.
+1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
    
     ![Notification details](./media/email-triggers/email-triggers-4.png)
 
@@ -71,7 +71,7 @@ Ok, let's get started:
 
 1. Give your flow a name. Then save it by selecting **Create flow** at the top of the page.
    
-    ![save flow](./media/email-triggers/email-triggers-subject-notification.png)
+    ![Save flow](./media/email-triggers/email-triggers-subject-notification.png)
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 

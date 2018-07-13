@@ -7,7 +7,8 @@
     ![email trigger](media/email-triggers/email-triggers-1.png)
 4. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
    
-     Note: To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
+     >[!NOTE]
+     > To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
    
     ![folder property](media/email-triggers/email-triggers-subject-folder.png)
 
