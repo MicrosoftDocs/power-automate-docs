@@ -53,7 +53,7 @@ In this walkthrough, we create a flow that sends a push notification to your mob
 
 Ok, let's get started:
 
-    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+[!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
    
@@ -78,7 +78,7 @@ Congratulations! You now receive a push notification each time you receive an em
 ## Trigger a flow based on an email's sender
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
-    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+[!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. Enter the email address of the sender in the **From** box.
    
@@ -108,7 +108,7 @@ Let's get started:
 > 
 > 
 
-    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
+[!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
 1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
    
