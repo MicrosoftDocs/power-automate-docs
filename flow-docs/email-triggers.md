@@ -53,7 +53,7 @@ In this walkthrough, we create a flow that sends a push notification to your mob
 
 Ok, let's get started:
 
-[!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
    
@@ -61,13 +61,13 @@ Ok, let's get started:
    
     ![Advanced options](./media/email-triggers/email-triggers-subject-text.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
    
     ![Notification details](./media/email-triggers/email-triggers-4.png)
 
-[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name. Then save it by selecting **Create flow** at the top of the page.
    
@@ -78,7 +78,7 @@ Congratulations! You now receive a push notification each time you receive an em
 ## Trigger a flow based on an email's sender
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
-[!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
+    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
 1. Enter the email address of the sender in the **From** box.
    
@@ -86,7 +86,7 @@ In this walkthrough, we create a flow that sends a push notification to your mob
    
     ![Email property](./media/email-triggers/email-triggers-from.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
    
@@ -108,19 +108,19 @@ Let's get started:
 > 
 > 
 
-[!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
+    [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Select the folder to which you've created the rule to route specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
+1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
    
     ![Select folder](./media/email-triggers/email-triggers-2.png)
 
-[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you'd like to receive when an email arrives into the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
+1. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
    
     ![Notification details](./media/email-triggers/email-triggers-folder-notification.png)
 
-[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
    
