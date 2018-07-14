@@ -27,7 +27,7 @@ Use the **When a new email arrives** trigger to create a flow that runs when one
 | To |Trigger a flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
 | From |Trigger a flow based on the sender's email address. |
 | Importance |Trigger a flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
-| Has Attachment |Trigger a flow based on the presence of attachments on incoming emails. |
+| Has Attachment |Trigger a flow based on the presence of attachments in incoming emails. |
 | Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs *actions* that are based on the results of your search. |
 
 > [!IMPORTANT]
@@ -80,7 +80,7 @@ In this walkthrough, we create a flow that sends a push notification to your mob
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. Enter the email address of the sender in the **From** box.
+1. In the **From** box, enter the email address of the sender. 
    
      Your flow takes action on any emails that are sent from this address.
    
