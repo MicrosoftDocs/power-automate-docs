@@ -254,10 +254,10 @@ As an admin you have two decisions to make when processing a DSR delete request 
 
 1. If you determine that the environment is not being used by anyone else in your organization then you can choose to delete the environment
 1. If you determine that the environment is still required, then you can choose to not delete the environment and add yourself (or another user in your organization) as an Environment Admin.
-    > [!IMPORTANT]
-    > Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc., so please review the contents of an environment before deletion.
-    >
-    >
+> [!IMPORTANT]
+> Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc., so please review the contents of an environment before deletion.
+>
+>
 
 ## Give access to a user’s environments from the Microsoft Flow Admin Center
 
