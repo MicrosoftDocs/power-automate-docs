@@ -42,6 +42,24 @@ ms.author: stepsic
 
 ## What's new
 
+### Release 2018-07-23
+
+- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Flow on your table data in Excel. Automate data processing or the copying/importing of data.
+- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service for Apps. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
+- **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
+- **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
+- **Four new connectors** - Added Azure IoT Central - a highly scalable IoT software-as-a-service (SaaS) solution - Survey 123, LMS365 and ProjectWise Design Integration.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) about this release.
+
+### Release 2018-06-29
+
+- **Request for sign-off flow built into SharePoint** - When you select a file or item in SharePoint, you’ll see a new **Request for sign-off** flow. This flow doesn't require any configuration or setup, and sends a sign-off request with a single click.
+- **Four new connectors** - Added Cloud Connect Studio, Dynamic Signal, ElasticOCR, and PoliteMail.
+- **History and create page improvements** - We are refreshing the Run history list by including exact run times, and the create page by added a new walkthrough video.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) about this release.
+
 ### Release 2018-06-08
 
 - **PowerShell Cmdlets** - Both flow makers, and tenant admins, can now use PowerShell to manage their Flows programmatically.
