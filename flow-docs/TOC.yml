@@ -6,7 +6,7 @@
     href: getting-started.md
   - name: Guided learning
     href: guided-learning/index
- - name: Button flows
+- name: Button flows
   items:
   - name: Create a flow
     href: mobile-create-flow.md
@@ -22,11 +22,11 @@
     href: mobile-monitor-activity.md
   - name: Manage your flows
     href: mobile-manage-flows.md
- - name: Schedule flows
+- name: Schedule flows
   items:
   - name: Run a flow on a schedule
     href: run-scheduled-tasks.md
- - name: Automated flows
+- name: Automated flows
   items:
   - name: Create a flow from a template
     href: get-started-logic-template.md
@@ -62,7 +62,7 @@
     href: flic-button-flows.md
   - name: Use a bttn
     href: bttn-button-flows.md
- - name: Business process flows
+- name: Business process flows
   items:
   - name: Business process flows overview
     href: business-process-flows-overview.md
@@ -72,7 +72,7 @@
     href: enhance-business-process-flows-branching.md
   - name: Create a mobile task flow
     href: create-mobile-task-flow.md
- - name: How to
+- name: How to
   items:
   - name: Add an action
     href: multi-step-logic-flow.md
@@ -98,7 +98,7 @@
     href: publish-a-template.md
   - name: Troubleshoot a flow
     href: fix-flow-failures.md
- - name: Reference
+- name: Reference
   items:
   - name: Available connections
     href: https://go.microsoft.com/fwlink/?linkid=832211
@@ -120,7 +120,7 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
- - name: Administration
+- name: Administration
   items:
   - name: Flows in your organization Q&A
     href: organization-q-and-a.md
@@ -134,9 +134,9 @@
     href: prevent-data-loss.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
- - name: Frequently asked questions
+- name: Frequently asked questions
   href: frequently-asked-questions.md
- - name: Road map
+- name: Road map
   items:
   - name: Release notes
     href: release-notes.md
