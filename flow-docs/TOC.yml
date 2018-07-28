@@ -137,12 +137,6 @@
 - name: Frequently asked questions
   href: frequently-asked-questions.md
 - name: Road map
-    name: L1
-      items:
-      - name: Release notes
-        href: release-notes.md
-    name: L1
-      items:
-      - name: Release notes
-        href: release-notes.md
-
+  items:
+  - name: Release notes
+    href: release-notes.md
