@@ -23,6 +23,9 @@ By using a Dynamics 365 connector, you can create flows that initiate when an ev
 
 In Microsoft Flow, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Microsoft Flow](getting-started.md).
 
+> [!IMPORTANT] 
+> To invoke a flow trigger, the Dynamics 365 customer engagement entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+
 ## Create a flow from a template
 You can create a flow using one of the many templates available, such as these examples:
 
@@ -87,6 +90,11 @@ This walkthrough shows you how to create a task in [Wunderlist](https://www.wund
 8. Under **List ID**, select **inbox**.
 9. Under **Title**, select **Subject** in the dynamic content pane.
 10. Click or tap **Create flow**.  
+
+## Trigger based logic
+Triggers like **When a record is created**, **When a record is updated**, and **When a record is deleted** initiate your flow within a few minutes of the event occuring.  In rare cases, your flow can take up to 2 hours to trigger.
+
+When the trigger occurs, the flow receives a notification, but the flow runs on data that exists at the time the action runs.  For example, if your flow triggers when a new record is created, and you update the record twice before the flow runs, your flow runs only once with the latest data.
 
 ## Specify advanced options
 When you add a step to a flow, you can click or tap **Show advanced options** to add a filter or order by query that controls how the data is filtered in the flow.
