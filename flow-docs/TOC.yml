@@ -34,18 +34,6 @@
     href: get-started-logic-flow.md
   - name: Create a team flow
     href: create-team-flows.md
-  - name: Use Workflow processes to automate processes that don't require user interaction
-    href: workflow-processes.md
-  - name: Configure workflow stages and steps
-    href: configure-workflow-steps.md
-  - name: Best practices for workflow processes
-    href: best-practices-workflow-processes.md
-  - name: Invoke custom actions from a workflow
-    href: invoke-custom-actions-workflow-dialog.md
-  - name: Monitor and manage workflow processes
-    href: monitor-manage-processes.md
-  - name: Create custom business logic through processes
-    href: guide-staff-through-common-tasks-processes.md
   - name: Single approvals
     href: modern-approvals.md
   - name: Sequential approvals
@@ -72,6 +60,20 @@
     href: enhance-business-process-flows-branching.md
   - name: Create a mobile task flow
     href: create-mobile-task-flow.md
+- name: Other flows
+  items:
+  - name: Use Workflow processes to automate processes that don't require user interaction
+    href: workflow-processes.md
+  - name: Configure workflow stages and steps
+    href: configure-workflow-steps.md
+  - name: Best practices for workflow processes
+    href: best-practices-workflow-processes.md
+  - name: Invoke custom actions from a workflow
+    href: invoke-custom-actions-workflow-dialog.md
+  - name: Monitor and manage workflow processes
+    href: monitor-manage-processes.md
+  - name: Create custom business logic through processes
+    href: guide-staff-through-common-tasks-processes.md 
 - name: How to
   items:
   - name: Add an action
