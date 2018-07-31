@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: KFile
 editor: ''
 tags: ''
 
@@ -139,6 +139,10 @@ The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for
 
 This isn't the account used to connect to on-premises data sources or the work or school account with which you sign into cloud services.
 
+## Tenant level administration
+
+There is currently no single place where tenant administrators  can manage all the gateways that other users have installed and configured.  If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
+
 ## Frequently asked questions
 ### General questions
 **Question:** What data sources does the gateway support?
@@ -185,7 +189,7 @@ You can use the third-party tool [Azure Speed Test app](http://azurespeedtest.az
 
 ### High availability/disaster recovery
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?
-**Answer:** This is on the roadmap, but we don’t have a timeline yet.
+**Answer:** Yes, high availability is [now available](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Question:** What options are available for disaster recovery?
 **Answer:** You can use the recovery key to restore or move a gateway.

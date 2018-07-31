@@ -128,3 +128,7 @@ Yes. You can use our free offering, which has limited user rights, or you can si
 ### What pricing plans do you offer?
 Microsoft Flow offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
 
+## Learn more
+
+* Take a [guided learning tour](guided-learning/index.yml) of Microsoft Flow
+* Learn the basics of Microsoft Flow in the [getting started guide](getting-started.md)

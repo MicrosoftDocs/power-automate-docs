@@ -14,12 +14,32 @@ ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.prod: flow
-ms.technology: null
 ms.reviewer:  
 - karann-msft
 ---
 <div id="main" class="v2">
+    <div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="getting-started.md">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">View all docs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 <div class="container">
     <h1>Microsoft Flow Documentation</h1>
     <ul class="pivots">
@@ -147,7 +167,7 @@ ms.reviewer:
             </ul>
         </li>
         <li>
-            <a href="#intermediate">I'm intermediate</a>
+            <a href="#intermediate">I'm an intermediate</a>
             <ul id="intermediate">
                 <li>
                     <a href="#intermediate-all"></a>
@@ -365,6 +385,92 @@ ms.reviewer:
                                         <div class="cardText">
                                             <h3>Expand your flows with Logic Apps</h3>
                                             <p>Azure Logic Apps provides a richer set of capabilities than what’s included in Microsoft Flow. Simply save any flow as a Logic Apps template, and then manage it like any other Logic Apps resource.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#admin">I'm an admin</a>
+            <ul id="admin">
+                <li>
+                    <a href="#admin-all"></a>
+                    <ul id="admin-all" class="cardsC">
+                        <li>
+                            <a href="environments-overview-admin.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Manage environments." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Manage environments</h3>
+                                            <p>Manage your organization's environments.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prevent-data-loss.md">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/environments_dlp.svg" alt="Define data policies." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Prevent data loss</h3>
+                                            <p>Define policies to protect your organization's data.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/manage_runs.svg" alt="Manage flow runs." />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Manage flow runs</h3>
+                                            <p>Investigate and manage each run of your flows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/analytics_reporting.svg" alt="Gain insights into your flows" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get insights into your flows</h3>
+                                            <p>Gain insights into the health of your flows from the analytics dashboard.</p>
                                         </div>
                                     </div>
                                 </div>
