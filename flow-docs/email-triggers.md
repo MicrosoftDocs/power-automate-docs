@@ -1,6 +1,6 @@
 ---
 title: Run flows based on email properties | Microsoft Docs
-description: Start a flow based on properties such as the subject, the sender, or the recipient of an email.
+description: Start a flow based on properties such as the subject, the sender's address, or the recipient's address of an email.
 services: ''
 suite: flow
 documentationcenter: na
