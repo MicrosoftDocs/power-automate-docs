@@ -41,7 +41,7 @@ Workflows have numerous capabilities supporting business scenarios. Calling basi
   
  Before you can invoke the action from a workflow, you have to activate it. After you have activated the action, you can view its properties by choosing **View properties**.  
   
- ![Activate custom action &#45; approval process](../common-data-service/media/enable-custom-action-approval-process-activate-action.png "Activate custom action - approval process")  
+ ![Activate custom action &#45; approval process](media/enable-custom-action-approval-process-activate-action.png "Activate custom action - approval process")  
   
 <a name="workflow"></a>   
 ## Invoke a custom action from a workflow  

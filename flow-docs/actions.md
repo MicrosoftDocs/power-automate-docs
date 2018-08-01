@@ -59,4 +59,4 @@ Developers can learn more in this topic:  [Create your own actions](https://docs
 
 [Workflow processes overview](workflow-processes.md)   
 
-[Business process flows overview](../model-driven-apps/business-process-flows-overview.md)   
+[Business process flows overview](business-process-flows-overview.md)   

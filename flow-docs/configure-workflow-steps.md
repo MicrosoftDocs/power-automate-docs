@@ -102,6 +102,6 @@ When you design workflows you have the option to contain the logic you want to p
   
 ## Next steps  
  [Create custom business logic with processes](guide-staff-through-common-tasks-processes.md)   
- [Workflow processes overview](../common-data-service/workflow-processes.md)   
+ [Workflow processes overview](workflow-processes.md)   
  [Monitor and manage workflow processes](monitor-manage-processes.md)   
  [Best practices for workflow processes](best-practices-workflow-processes.md)

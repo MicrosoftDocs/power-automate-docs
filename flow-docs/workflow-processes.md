@@ -144,5 +144,5 @@ Developers can create workflows using information in the [Dynamics 365 Customer 
   
 ## Next steps  
  [Configuring workflow processes](configure-workflow-steps.md)  <br/>
-[Add an on-demand workflow to a business process flow](../model-driven-apps/bpf-add-on-demand-workflow.md) 
+[Add an on-demand workflow to a business process flow](bpf-add-on-demand-workflow.md) 
 
