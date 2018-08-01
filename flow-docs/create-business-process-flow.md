@@ -197,9 +197,9 @@ Before anyone can use the business process flow, you must activate it. In the co
 The Dynamics 365 (online), version 9.0 update introduces a new business process flow feature: business process flow automation with Action Steps. You can add a button to a business process flow that will trigger an action or workflow.
 
 > [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](/includes/cc-preview-features-definition.md)]
+> [!INCLUDE [cc-preview-features-definition](includes/cc-preview-features-definition.md)]
 
-> [!INCLUDE [cc-preview-features-no-ms-support](/includes/cc-preview-features-no-ms-support.md)]
+> [!INCLUDE [cc-preview-features-no-ms-support](includes/cc-preview-features-no-ms-support.md)]
 
 ### Enable Action Step support for business process flows 
 
