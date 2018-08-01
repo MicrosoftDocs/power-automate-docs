@@ -32,7 +32,7 @@ This tutorial shows you how to create a business process flow with PowerApps. To
 <a name="BKMK_Createbusinessprocessflows"></a>   
 ## Create a business process flow  
   
-1. Open [solution explorer](advanced-navigation.md#solution-explorer).
+1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
   
 2. On the left navigation pane, select **Processes**. 
   
@@ -197,13 +197,13 @@ Before anyone can use the business process flow, you must activate it. In the co
 The Dynamics 365 (online), version 9.0 update introduces a new business process flow feature: business process flow automation with Action Steps. You can add a button to a business process flow that will trigger an action or workflow.
 
 > [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> [!INCLUDE [cc-preview-features-definition](/includes/cc-preview-features-definition.md)]
 
-> [!INCLUDE [cc-preview-features-no-ms-support](../../includes/cc-preview-features-no-ms-support.md)]
+> [!INCLUDE [cc-preview-features-no-ms-support](/includes/cc-preview-features-no-ms-support.md)]
 
 ### Enable Action Step support for business process flows 
 
-1.	Go to **[Settings](advanced-navigation.md#settings)** > **Administration** > **System Settings**.
+1.	Go to **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Administration** > **System Settings**.
 2.	Select the **Preview** tab.
 3.	Review, and if you agree, accept the license terms.
 4.	Select **Enable Action Step Support for Business Process Flows Preview**, and then select **OK**.
