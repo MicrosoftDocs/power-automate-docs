@@ -163,7 +163,7 @@ You can also interact with business process flow entities from a workflow. For e
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [Add solution components](../common-data-service/create-solution.md#add-solution-components)
+- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [Add solution components](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 
 ### Next steps  
  [Watch a short video (4:49) about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   
@@ -171,5 +171,5 @@ You can also interact with business process flow entities from a workflow. For e
  [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
  [Create custom business logic through processes](guide-staff-through-common-tasks-processes.md)</br>
- [Workflow Processes](../common-data-service/workflow-processes.md)   
- [Actions - Overview](../common-data-service/actions.md)
+ [Workflow Processes](workflow-processes.md)   
+ [Actions - Overview](actions.md)
