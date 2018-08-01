@@ -32,7 +32,7 @@ PowerApps includes several  types of processes, each designed for a different pu
   
 -   Actions  
   
- Similar to processes, you can also create  business rules and recommendations. For more information, see [Create business rules and recommendations to apply logic in a form](create-business-rules-recommendations-apply-logic-form.md)  
+ Similar to processes, you can also create  business rules and recommendations. For more information, see [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
 >  Using processes can impact the license requirements for PowerApps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-entity-licenses). 
@@ -45,13 +45,6 @@ PowerApps includes several  types of processes, each designed for a different pu
  Your environment includes several ready-to-use business process flows for common sales, service, and marketing tasks that you can use with little or no changes required. Or, you can create your own. See the following topic for more information on business process flows:  
   
 -   [Create a business process flow](create-business-process-flow.md)  
-  
-  
-<a name="BKMK_TF"></a>   
-## When to use mobile task flows  
- You can also design a type of business process flow called a task flow in Dynamics 365 for phones or Dynamics 365 for tablets based on common tasks your users perform. For example, if they need to regularly perform a series of follow-up steps after client meetings, create a task flow. When users tap the new task in their mobile app, it will lead them through from start to finish so they don't forget an important step. For more information on task flows, see the following topics:  
-  
--   [Create a mobile task flow](../common-data-service/create-mobile-task-flow.md)   
   
 <a name="BKMK_WF"></a>   
 ## When to use workflows  
@@ -69,9 +62,9 @@ PowerApps includes several  types of processes, each designed for a different pu
 ## Where do I go to create processes?  
  There are two paths to navigate to processes:  
   
-- Open [solution explorer](advanced-navigation.md#solution-explorer) and go to **Components > Processes.** This path provides convenient access when you are doing other customization work in the customization tools.  
+- Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and go to **Components > Processes.** This path provides convenient access when you are doing other customization work in the customization tools.  
 
-- **[Settings](advanced-navigation.md#settings) > Processes.** This path allows you to use views defined for the Process entity, including any custom views.  
+- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Processes.** This path allows you to use views defined for the Process entity, including any custom views.  
   
  Individual business process flows can also be edited using the **Edit Process** button in the command bar for the form where the business process flow is active.  
   
@@ -127,5 +120,5 @@ For more information for developers, see the Developer Guide topic [Automate you
   
 ## Next steps  
  [Business process flows overview](business-process-flows-overview.md)   
- [Workflow processes overview](../common-data-service/workflow-processes.md)   
- [Actions overview](../common-data-service/actions.md)
+ [Workflow processes overview](workflow-processes.md)   
+ [Actions overview](actions.md)

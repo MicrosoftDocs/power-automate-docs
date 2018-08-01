@@ -25,7 +25,7 @@ To monitor and manage processes, you must locate the process, evaluate the statu
 ## Monitoring background workflows  
  Background workflows generate System Job records to track their status. You can access information about these system jobs in several places within the application:  
   
- **[Settings](../model-driven-apps/advanced-navigation.md#settings) > System Jobs**  
+ **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > System Jobs**  
  This will include all types of system jobs. You will need to filter records to those where **System Job Type** is **Workflow**.  
   
  **From the Workflow Process**  

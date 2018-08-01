@@ -56,7 +56,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
  First, we’ll create a new process named **Car Sales Process**.  
   
-1.  [Open solution explorer](advanced-navigation.md#solution-explorer) and then in the left navigation pane select **Processes**.  
+1.  [Open solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and then in the left navigation pane select **Processes**.  
   
 2.  Select **New** to create a new process.  
   
