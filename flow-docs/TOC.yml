@@ -70,6 +70,8 @@
      href: workflow-processes.md
   -  name: Best practices for workflow processes
      href: best-practices-workflow-processes.md
+  -  name: Replace dialogs
+     href: replace-dialogs.md
 - name: Classic CDS actions
   items:
   - name: Configure custom actions from a workflow
@@ -210,6 +212,14 @@
       href: gdpr-dsr-delete-msa.md
     - name: Close requests
       href: gdpr-dsr-accountclose-msa.md
+- name: Learn from others
+  items:
+  - name: Webinars
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/en-us/blog/
+  - name: Forums
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
 - name: Frequently asked questions
   href: frequently-asked-questions.md
 
