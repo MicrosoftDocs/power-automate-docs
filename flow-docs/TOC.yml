@@ -75,13 +75,13 @@
 - name: Classic CDS actions
   items:
   - name: Configure custom actions from a workflow
-    href: tododf
+    href: todo
   - name: Invoke custom actions from a workflow
     href: invoke-custom-actions-workflow-dialog.md
 - name: Classic CDS task flows
   items:
   - name: Create mobile task flows
-    href: todo
+    href: create-mobile-task-flow.md
 - name: How to
   items:
   - name: Add an action
@@ -149,33 +149,33 @@
   - name: Let customers test drive your flows
     href: dev-appsource-test-drive.md
   - name: Automate your business processes in Customer Engagement
-    href: automate-business-processes-customer-engagement.md
+    href: /dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement.md
   - name: Process architecture
-    href: process-architecture.md
+    href: /dynamics365/customer-engagement/developer/process-architecture.md
   - name: Process categories
-    href: process-categories.md
-  - name: Workflow and process entities
+    href: /dynamics365/customer-engagement/developer/process-categories.md
+  - name: /dynamics365/customer-engagement/developer/Workflow and process entities
     href: workflow-process-entities.md
   - name: Supported types, triggers, entities, and actions for processes
-    href: supported-types-triggers-entities-actions-processes.md
+    href: /dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes.md
 - name: Custom workflow activities (workflow assemblies)
   href: /dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies.md
 - name: Model business process flows
   items:
   - name: Sample - Work with business process flows
-    href: sample-work-business-process-flows.md
+    href: /dynamics365/customer-engagement/developer/sample-work-business-process-flows.md
 - name: Use dialogs in Dynamics 365 for guided processes
-  href: use-dialogs-guided-processes.md
+  href: /dynamics365/customer-engagement/developer/use-dialogs-guided-processes.md
   items:
   - name: Understand dialogs
-    href: understand-dialogs.md
+    href: /dynamics365/customer-engagement/developer/understand-dialogs.md
   - name: Actions on dialogs
-    href: actions-dialogs.md
+    href: /dynamics365/customer-engagement/developer/actions-dialogs.md
 - name: Sample code for Dynamics 365 processes
-  href: sample-code-processes.md
+  href: /dynamics365/customer-engagement/developer/sample-code-processes.md
   items:
   - name: Sample - Create a process using a template
-    href: sample-create-process-using-template.md
+    href: /dynamics365/customer-engagement/developer/sample-create-process-using-template.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
