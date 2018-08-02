@@ -52,6 +52,7 @@
     href: create-business-process-flow.md
   - name: Tutorial - Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
+<<<<<<< HEAD
   - name: Create a mobile task flow
     href: create-mobile-task-flow.md
 - name: Common Data Service for apps
@@ -74,6 +75,18 @@
   items:
   - name: Configure custom actions from a workflow
     href: tododf
+=======
+- name: Other flows
+  items:
+  - name: Use Workflow processes to automate processes that don't require user interaction
+    href: workflow-processes.md
+  - name: Configure workflow stages and steps
+    href: configure-workflow-steps.md
+  - name: Best practices for workflow processes
+    href: best-practices-workflow-processes.md
+  - name: Actions overview
+    href: actions.md  
+>>>>>>> 702808438a3398e79100edaef3919ffebf259a97
   - name: Invoke custom actions from a workflow
     href: invoke-custom-actions-workflow-dialog.md
 - name: Classic CDS task flows
