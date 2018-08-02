@@ -80,20 +80,6 @@
   items:
   - name: Create mobile task flows
     href: todo
-
-
-  # - name: Use Workflow processes to automate processes that don't require user interaction
-  #   href: workflow-processes.md
-  # - name: Configure workflow stages and steps
-  #   href: configure-workflow-steps.md
-  # - name: Best practices for workflow processes
-  #   href: best-practices-workflow-processes.md
-  # - name: Invoke custom actions from a workflow
-  #   href: invoke-custom-actions-workflow-dialog.md
-  # - name: Monitor and manage workflow processes
-  #   href: monitor-manage-processes.md
-  # - name: Create custom business logic through processes
-  #   href: guide-staff-through-common-tasks-processes.md 
 - name: How to
   items:
   - name: Add an action
@@ -150,6 +136,48 @@
     href: limits-and-config.md
   - name: Release notes
     href: release-notes.md
+- name: For developers
+  items:
+  - name: Microsoft Flow for enterprise developers, partners, and ISVs
+    href: dev-enterprise-intro.md
+  - name: Build and certify custom connectors
+    href: register-custom-api.md
+  - name: Integrate with websites and other technologies
+    href: embed-flow-dev.md
+  - name: Let customers test drive your flows
+    href: dev-appsource-test-drive.md
+  - name: Automate your business processes in Customer Engagement
+    href: automate-business-processes-customer-engagement.md
+  - name: Process architecture
+    href: process-architecture.md
+  - name: Process categories
+    href: process-categories.md
+  - name: Workflow and process entities
+    href: workflow-process-entities.md
+  - name: Supported types, triggers, entities, and actions for processes
+    href: supported-types-triggers-entities-actions-processes.md
+- name: Custom workflow activities (workflow assemblies)
+  href: custom-workflow-activities-workflow-assemblies.md
+- name: Model business process flows
+  items:
+  - name: Sample - Work with business process flows
+    href: sample-work-business-process-flows.md
+- name: Use dialogs in Dynamics 365 for guided processes
+  href: use-dialogs-guided-processes.md
+  items:
+  - name: Understand dialogs
+    href: understand-dialogs.md
+  - name: Actions on dialogs
+    href: actions-dialogs.md
+- name: Sample code for Dynamics 365 processes
+  href: sample-code-processes.md
+  items:
+  - name: Sample - Create a process using a template
+    href: sample-create-process-using-template.md
+  - name: 
+    href: 
+  - name:
+    href: 
 - name: Administration
   items:
   - name: Flows in your organization Q&A
@@ -164,9 +192,28 @@
     href: prevent-data-loss.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
+  - name: Respond to DSR requests
+    items:
+  - name: Summary
+    href: gdpr-dsr-summary.md
+  - name: Discover requests
+    href: gdpr-dsr-discovery.md
+  - name: Export requests
+    href: gdpr-dsr-export.md
+  - name: Delete requests
+    href: gdpr-dsr-delete.md
+  - name: DSR requests for Microsoft Accounts
+    items:
+  - name: Summary
+    href: gdpr-dsr-summary-msa.md
+  - name: Discover requests
+    href: gdpr-dsr-discovery-msa.md
+  - name: Export requests
+    href: gdpr-dsr-export-msa.md
+  - name: Delete requests
+    href: gdpr-dsr-delete-msa.md
+  - name: Close requests
+    href: gdpr-dsr-accountclose-msa.md
 - name: Frequently asked questions
   href: frequently-asked-questions.md
-- name: Road map
-  items:
-  # - name: Release notes
-  #   href: release-notes.md
+
