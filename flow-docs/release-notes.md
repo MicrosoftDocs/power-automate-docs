@@ -55,7 +55,7 @@ ms.author: stepsic
 ### Release 2018-06-29
 
 - **Request for sign-off flow built into SharePoint** - When you select a file or item in SharePoint, you’ll see a new **Request for sign-off** flow. This flow doesn't require any configuration or setup, and sends a sign-off request with a single click.
-- **Four new connectors** - Added Cloud Connect Studio, Dynamic Signal, ElasticOCR, and PoliteMail.
+- **Two new connectors** - Added Cloud Connect Studio and PoliteMail.
 - **History and create page improvements** - We are refreshing the Run history list by including exact run times, and the create page by added a new walkthrough video.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) about this release.
