@@ -27,7 +27,7 @@ Design a flow in Dynamics 365 for phones or Dynamics 365 for tablets based on co
   
 1. Make sure that you have the System Administrator, or System Customizer security role or equivalent permissions. If you use Dynamics 365 customer engagement, Manager, Vice President, or CEO-Business Manager, security roles can also create mobile task flows. 
   
-2. Open [solution explorer](../model-driven-apps/advanced-navigation.md#solution-explorer) and select **Processes**.  
+2. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and select **Processes**.  
   
 3.  On the **Actions** toolbar, select **New**.  
   
@@ -70,5 +70,5 @@ Design a flow in Dynamics 365 for phones or Dynamics 365 for tablets based on co
 > -  You can make the images on the screen larger or smaller by selecting the **Increase the zoom level** or **Decrease the zoom level** buttons in the upper-right corner of the screen. Select the **Fit to canvas** button to blow the images up to the largest size that fits on the screen.  
   
 ## Next steps  
- [Create a business process flow](../model-driven-apps/create-business-process-flow.md)   
+ [Create a business process flow](create-business-process-flow.md)   
 
