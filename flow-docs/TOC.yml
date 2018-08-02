@@ -174,10 +174,6 @@
   items:
   - name: Sample - Create a process using a template
     href: sample-create-process-using-template.md
-  - name: 
-    href: 
-  - name:
-    href: 
 - name: Administration
   items:
   - name: Flows in your organization Q&A
@@ -194,26 +190,26 @@
     href: introduction-to-data-groups.md
   - name: Respond to DSR requests
     items:
-  - name: Summary
-    href: gdpr-dsr-summary.md
-  - name: Discover requests
-    href: gdpr-dsr-discovery.md
-  - name: Export requests
-    href: gdpr-dsr-export.md
-  - name: Delete requests
-    href: gdpr-dsr-delete.md
+    - name: Summary
+      href: gdpr-dsr-summary.md
+    - name: Discover requests
+      href: gdpr-dsr-discovery.md
+    - name: Export requests
+      href: gdpr-dsr-export.md
+    - name: Delete requests
+      href: gdpr-dsr-delete.md
   - name: DSR requests for Microsoft Accounts
     items:
-  - name: Summary
-    href: gdpr-dsr-summary-msa.md
-  - name: Discover requests
-    href: gdpr-dsr-discovery-msa.md
-  - name: Export requests
-    href: gdpr-dsr-export-msa.md
-  - name: Delete requests
-    href: gdpr-dsr-delete-msa.md
-  - name: Close requests
-    href: gdpr-dsr-accountclose-msa.md
+    - name: Summary
+      href: gdpr-dsr-summary-msa.md
+    - name: Discover requests
+      href: gdpr-dsr-discovery-msa.md
+    - name: Export requests
+      href: gdpr-dsr-export-msa.md
+    - name: Delete requests
+      href: gdpr-dsr-delete-msa.md
+    - name: Close requests
+      href: gdpr-dsr-accountclose-msa.md
 - name: Frequently asked questions
   href: frequently-asked-questions.md
 
