@@ -6,9 +6,27 @@
     href: getting-started.md
   - name: Guided learning
     href: guided-learning/index
+- name: Automated flows
+  items:
+  - name: Create a flow in the browser
+    href: get-started-logic-template.md
+  - name: Create a flow from scratch
+    href: get-started-logic-flow.md
+  - name: Create a team flow
+    href: create-team-flows.md
+  - name: Trigger a flow with email
+    href: email-triggers.md
+  - name: Create a flow with Dynamics 365
+    href: connection-dynamics365.md
+  - name: Filter and copy data
+    href: odata-filters.md
+  - name: Use a Flic
+    href: flic-button-flows.md
+  - name: Use a bttn
+    href: bttn-button-flows.md
 - name: Button flows
   items:
-  - name: Create a flow
+  - name: Create a flow on a phone
     href: mobile-create-flow.md
   - name: Create a button flow
     href: introduction-to-button-flows.md
@@ -20,36 +38,12 @@
     href: share-buttons.md
   - name: Monitor flow activity
     href: mobile-monitor-activity.md
-  - name: Manage your flows
-    href: mobile-manage-flows.md
-- name: Schedule flows
+- name: Scheduled flows
   items:
   - name: Run a flow on a schedule
     href: run-scheduled-tasks.md
-- name: Automated flows
-  items:
-  - name: Create a flow from a template
-    href: get-started-logic-template.md
-  - name: Create a flow from scratch
-    href: get-started-logic-flow.md
-  - name: Create a team flow
-    href: create-team-flows.md
-  - name: Single approvals
-    href: modern-approvals.md
-  - name: Sequential approvals
-    href: sequential-modern-approvals.md
-  - name: Parallel approvals
-    href: parallel-modern-approvals.md
-  - name: Everyone must approve
-    href: all-assigned-must-approve.md
-  - name: Integrated approvals
-    href: common-data-model-approve.md
-  - name: Format approval requests
-    href: approvals-markdown-support.md
-  - name: Use a Flic
-    href: flic-button-flows.md
-  - name: Use a bttn
-    href: bttn-button-flows.md
+  - name: Process a list of items
+    href: apply-to-each.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -58,44 +52,76 @@
     href: create-business-process-flow.md
   - name: Tutorial - Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
-- name: Other flows
+  - name: Create a mobile task flow
+    href: create-mobile-task-flow.md
+- name: Common Data Service for apps
   items:
-  - name: Use Workflow processes to automate processes that don't require user interaction
-    href: workflow-processes.md
-  - name: Configure workflow stages and steps
-    href: configure-workflow-steps.md
-  - name: Best practices for workflow processes
-    href: best-practices-workflow-processes.md
-  - name: Actions overview
-    href: actions.md  
+  - name: Add data to the Common Data Service
+    items:
+  -  name: Classic CDS workflows
+     href: todo
+  -  name: Create custom business logic through processes
+     href: guide-staff-through-common-tasks-processes.md
+  -  name: Configure workflow stages and steps
+     href: configure-workflow-steps.md
+  -  name: Monitor and manage workflow processes
+     href: monitor-manage-processes.md
+  -  name: Use Workflow processes to automate processes that don't require user interaction
+     href: workflow-processes.md
+  -  name: Best practices for workflow processes
+     href: best-practices-workflow-processes.md
+- name: Classic CDS actions
+  items:
+  - name: Configure custom actions from a workflow
+    href: tododf
   - name: Invoke custom actions from a workflow
     href: invoke-custom-actions-workflow-dialog.md
-  - name: Monitor and manage workflow processes
-    href: monitor-manage-processes.md
-  - name: Create custom business logic through processes
-    href: guide-staff-through-common-tasks-processes.md 
+- name: Classic CDS task flows
+  items:
+  - name: Create mobile task flows
+    href: todo
+
+
+  # - name: Use Workflow processes to automate processes that don't require user interaction
+  #   href: workflow-processes.md
+  # - name: Configure workflow stages and steps
+  #   href: configure-workflow-steps.md
+  # - name: Best practices for workflow processes
+  #   href: best-practices-workflow-processes.md
+  # - name: Invoke custom actions from a workflow
+  #   href: invoke-custom-actions-workflow-dialog.md
+  # - name: Monitor and manage workflow processes
+  #   href: monitor-manage-processes.md
+  # - name: Create custom business logic through processes
+  #   href: guide-staff-through-common-tasks-processes.md 
 - name: How to
   items:
   - name: Add an action
     href: multi-step-logic-flow.md
   - name: Add a condition
     href: add-condition.md
-  - name: Trigger a flow with email
-    href: email-triggers.md
-  - name: Process a list of items
-    href: apply-to-each.md
   - name: Use data operations
     href: data-operations.md
-  - name: Filter and copy data
-    href: odata-filters.md
   - name: Use expressions in conditions
     href: use-expressions-in-conditions.md
-  - name: Create a flow with Dynamics 365
-    href: connection-dynamics365.md
-  - name: Add data to the Common Data Service
-    href: common-data-model-intro.md
+  - name: Approval flows
+    items:
+  -   name: Single approvals
+      href: modern-approvals.md
+  -   name: Sequential approvals
+      href: sequential-modern-approvals.md
+  -   name: Parallel approvals
+      href: parallel-modern-approvals.md
+  -   name: Everyone must approve
+      href: all-assigned-must-approve.md
+  -   name: Integrated approvals
+      href: common-data-model-approve.md
+  -   name: Format approval requests
+      href: approvals-markdown-support.md
   - name: Watch a flow
     href: see-a-flow-run.md
+  - name: Manage flows on a phone
+    href: mobile-manage-flows.md
   - name: Publish a template
     href: publish-a-template.md
   - name: Troubleshoot a flow
@@ -122,6 +148,8 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
+  - name: Release notes
+    href: release-notes.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
@@ -140,5 +168,5 @@
   href: frequently-asked-questions.md
 - name: Road map
   items:
-  - name: Release notes
-    href: release-notes.md
+  # - name: Release notes
+  #   href: release-notes.md
