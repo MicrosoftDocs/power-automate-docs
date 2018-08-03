@@ -59,7 +59,7 @@
   - name: Add data to the Common Data Service
     items:
   -  name: Classic CDS workflows
-     href: todo
+     href: /common-data-service/entity-reference/introduction.md
   -  name: Create custom business logic through processes
      href: guide-staff-through-common-tasks-processes.md
   -  name: Configure workflow stages and steps
@@ -154,8 +154,8 @@
     href: /dynamics365/customer-engagement/developer/process-architecture.md
   - name: Process categories
     href: /dynamics365/customer-engagement/developer/process-categories.md
-  - name: /dynamics365/customer-engagement/developer/Workflow and process entities
-    href: workflow-process-entities.md
+  - name: Workflow and process entities
+    href: /dynamics365/customer-engagement/developer/workflow-process-entities.md
   - name: Supported types, triggers, entities, and actions for processes
     href: /dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes.md
 - name: Custom workflow activities (workflow assemblies)
@@ -222,4 +222,14 @@
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
 - name: Frequently asked questions
   href: frequently-asked-questions.md
+- name: Troubleshoot
+  items:
+  - name: Watch a flow
+    href: see-a-flow-run.md
+  - name: Monitor flow activity on a phone
+    href: mobile-monitor-activity.md
+  - name: Troubleshoot a flow
+    href: fix-flow-failures.md
+
+
 
