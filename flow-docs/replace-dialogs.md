@@ -37,7 +37,7 @@ This table lists the set of dialog capabilities and the equivalent capabilities 
 |Variables   |  No     |  Yes       |
 |Query variables    |  No     |  Yes     |
 |Conditional branching logic    |  Yes     | Yes <br/>  (navigate to any screen within app)    |
-|Reuse <br/> (Launch as a child dialog)   |  No     | Yes <br/> (Navigate to any screen within app, launch a different app in a new window)     |
+|Reuse <br/> (launch as a child dialog)   |  No     | Yes <br/> (navigate to any screen within app, launch a different app in a new window)     |
 |Run workflows on start/end    |   Yes      |  No <br/> (use a flow instead)  |
 |Run workflows on input    | Yes    | No <br/> (use a flow instead)   |
 |Run workflows on page transition   |  Yes       | No <br/> (use a flow instead)    |
@@ -69,7 +69,7 @@ Imagine you have a dialog that, over a series of pages, requests key pieces of i
 
 To replace the dialog, you begin by identifying the key stages in the process. These might include a *Prepare Content* stage to ensure all the products are listed and discounts are applied, a *Generate Quote* stage to create the quote and review it for accuracy of format, a *Primary Review* stage to send the quote for review and approval, a *Secondary Review* stage to review the quote under certain circumstances and finally, a *Deliver Quote* stage to send the quote to the customer.
 
-Next, identify the key steps that users must follow in the process. For instance, the *Prepare Content* stage might contain a simple true or false step for the user to double check the products to be quoted, a mandatory lookup step to select a price list, and a numeric step to enter a discount before moving on to the next stage. The *Generate Quote* stage might have a an [action step](create-business-process-flow.md#preview-feature-add-an-on-demand-action-to-a-business-process-flow) to create a quote based on all the information previously captured in the *Prepare Content* stage and its related Dynamics 365 record. The *Primary Review* and *Secondary Review* stages might have several true or false steps to guide quote review, along with a required step to capture the approval status, and ensure the process can only be moved to the next stage once approval is received. Configure [field level security](/customer-engagement/admin/field-level-security) on this step to make sure that only authorized reviewers can provide approval on the quote.  Additionally, one can add a workflow to the *Primary Review* and *Secondary Review* stages, such that on enter, an email notification is sent to all reviewers. 
+Next, identify the key steps that users must follow in the process. For instance, the *Prepare Content* stage might contain a simple true or false step for the user to double check the products to be quoted, a mandatory lookup step to select a price list, and a numeric step to enter a discount before moving on to the next stage. The *Generate Quote* stage might have an [action step](create-business-process-flow.md#preview-feature-add-an-on-demand-action-to-a-business-process-flow) to create a quote based on all the information previously captured in the *Prepare Content* stage and its related Dynamics 365 record. The *Primary Review* and *Secondary Review* stages might have several true or false steps to guide quote review, along with a required step to capture the approval status, and ensure the process can only be moved to the next stage once approval is received. Configure [field level security](/customer-engagement/admin/field-level-security) on this step to make sure that only authorized reviewers can provide approval on the quote.  Additionally, one can add a workflow to the *Primary Review* and *Secondary Review* stages, such that on enter, an email notification is sent to all reviewers. 
 
 Finally, configure your business process flow stages and steps, along with the conditional logic to guide the process flow. For this example, you might add a [conditional branch](enhance-business-process-flows-branching.md) following the *Primary Review* stage, such that, if a step indicates the need for a second level of review, the next stage in the process is the *Secondary Review* stage, else, it’s the *Deliver Quote* stage.
 
@@ -84,11 +84,11 @@ Suppose you have a dialog, which follows a call script that guides sales reps th
 Begin with connecting to the data sources you’ll need to read and write data. In this example, a [connection to Dynamics 365](/powerapps/maker/canvas-apps/connections/connection-dynamics-crmonline) is used for lead, account, and contact information.
 
 Begin by identifying the number of screens needed. For this example, you may decide to have five screens. 
--	Screen 1. Used to select a lead from a list to call.
--	Screen 2. Used for introductions, checking availability for a conversation, and scheduling a call-back at a later date. 
--	Screen 3. Used for determining BANT (budget, authority, need, and timeline). 
--	Screen 4. Use to capture next steps and schedule follow-up calls. 
--	Screen 5. Used to thank the lead for their time at the end of the call.
+-	Screen 1. To select a lead from a list to call.
+-	Screen 2. For introductions, checking availability for a conversation, and scheduling a call-back at a later date. 
+-	Screen 3. For determining BANT (budget, authority, need, and timeline). 
+-	Screen 4. To capture next steps and schedule follow-up calls. 
+-	Screen 5. Thank the lead for their time at the end of the call.
 
 Next, build each screen. In the first screen, [build a gallery](/powerapps/maker/canvas-apps/customize-layout-sharepoint) of leads that need to be called. In the second, use labels to title the screen and provide the call script, while using controls like radio buttons to capture whether it is a good time for the person to talk. If it is, use conditional logic to enable a button to navigate to the next screen and if not, reveal a script on the same screen to attempt to schedule a call back with the customer. Similarly, define your call script across subsequent screens.
 
@@ -110,6 +110,10 @@ Can I launch a canvas app as a popup from a button in the command bar?
 
 Can workflows be called from a canvas app?
 - This is not supported. We recommend using a flow instead. More information: [Introducing button flows with user input](button-flow-with-user-input-tokens.md)
+
+Can I automatically convert dialogs to business process flows or canvas apps?
+- There is no automated way to convert dialogs to business process flows or canvas apps.
+
 
 ## See also
 [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) </br>
