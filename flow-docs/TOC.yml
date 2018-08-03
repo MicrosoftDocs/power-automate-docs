@@ -5,7 +5,7 @@
   - name: Get started
     href: getting-started.md
   - name: Guided learning
-    href: guided-learning/index
+    href: /guided-learning/index.yml
 - name: Automated flows
   items:
   - name: Create a flow in the browser
@@ -59,7 +59,7 @@
   - name: Add data to the Common Data Service
     items:
   -  name: Classic CDS workflows
-     href: /common-data-service/entity-reference/introduction.md
+     href: /dynamics365/customer-engagement/customize/workflow-processes.md
   -  name: Create custom business logic through processes
      href: guide-staff-through-common-tasks-processes.md
   -  name: Configure workflow stages and steps
@@ -75,7 +75,7 @@
 - name: Classic CDS actions
   items:
   - name: Configure custom actions from a workflow
-    href: todo
+    href: /dynamics365/customer-engagement/customize/configure-actions.md
   - name: Invoke custom actions from a workflow
     href: invoke-custom-actions-workflow-dialog.md
 - name: Classic CDS task flows
