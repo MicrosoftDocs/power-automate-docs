@@ -54,17 +54,17 @@
   items:
   - name: Add data to the Common Data Service
     items:
-  -  name: Classic CDS workflows
-     href: /dynamics365/customer-engagement/customize/workflow-processes.md
-     items:
-  -  name: Create custom business logic through processes
-     href: guide-staff-through-common-tasks-processes.md
-  -  name: Configure workflow stages and steps
-     href: configure-workflow-steps.md
-  -  name: Monitor and manage workflow processes
-     href: monitor-manage-processes.md
-  -  name: Best practices for workflow processes
-     href: best-practices-workflow-processes.md
+  - name: Classic CDS workflows
+    href: /dynamics365/customer-engagement/customize/workflow-processes.md
+    items:
+    - name: Create custom business logic through processes
+      href: guide-staff-through-common-tasks-processes.md
+    - name: Configure workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for workflow processes
+      href: best-practices-workflow-processes.md
   - name: Classic CDS actions
     items:
     - name: Configure custom actions from a workflow
@@ -101,8 +101,6 @@
       href: common-data-model-approve.md
     - name: Format approval requests
       href: approvals-markdown-support.md
-  - name: Watch a flow
-    href: see-a-flow-run.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template
