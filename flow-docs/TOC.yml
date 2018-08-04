@@ -5,7 +5,7 @@
   - name: Get started
     href: getting-started.md
   - name: Guided learning
-    href: /guided-learning/index.yml
+    href: ./guided-learning/index
   - name: Create a flow in the browser
     href: get-started-logic-template.md
   - name: Create a flow on a phone
@@ -167,7 +167,7 @@
   - name: Sample - Run a workflow
     href: /dynamics365/customer-engagement/developer/sample-run-workflow.md
   - name: Sample - Create, retrieve, update, and delete a dialog
-    href: dynamics365/customer-engagement/developer/sample-create-retrieve-update-delete-dialog.md
+    href: /dynamics365/customer-engagement/developer/sample-create-retrieve-update-delete-dialog.md
   - name: Sample - Create a workflow in code
     href: /dynamics365/customer-engagement/developer/sample-create-workflow-code.md
   - name: Sample - Create a real-time workflow in code
