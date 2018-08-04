@@ -5,7 +5,7 @@
   - name: Get started
     href: getting-started.md
   - name: Guided learning
-    href: ./guided-learning/index
+    href: ./guided-learning/index.yml
   - name: Create a flow in the browser
     href: get-started-logic-template.md
   - name: Create a flow on a phone
