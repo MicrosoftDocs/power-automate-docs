@@ -1,22 +1,16 @@
 ---
-title: "Workflow processes | MicrosoftDocs"
+title: "Classic Common Data Service (CDS) for Apps workflows | MicrosoftDocs"
 ms.custom: ""
-ms.date: 06/12/2018
-ms.reviewer: ""
-ms.service: "crm-online"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 08/06/2018
+ms.reviewer: "matp"
+ms.service: "flow"
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "PowerApps"
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5
-caps.latest.revision: 20
-ms.author: "matp"
+author: msftman
+ms.author: "deonhe"
 manager: "kvivek"
 ---
-# Use Workflow processes to automate processes that don't require user interaction
+# Classic Common Data Service (CDS) for Apps workflows 
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.  
   

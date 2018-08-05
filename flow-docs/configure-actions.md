@@ -1,20 +1,13 @@
 ---
 title: "Configure actions for workflows in PowerApps | MicrosoftDocs"
 ms.custom: ""
-ms.date: 06/27/2018
-ms.reviewer: ""
-ms.service: "crm-online"
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 08/06/2018
+ms.reviewer: "matp"
+ms.service: "flow"
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "PowerApps"
-author: "Mattp123"
+author: "msftman"
 ms.assetid: 6dbc0f10-7ac5-4685-ab74-22d24bf7102d
-caps.latest.revision: 19
-ms.author: "matp"
+ms.author: "deonhe"
 manager: "kvivek"
 ---
 # Configure custom actions from a workflow
