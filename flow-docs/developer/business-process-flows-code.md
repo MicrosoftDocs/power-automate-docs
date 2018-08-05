@@ -37,7 +37,7 @@ To enable an entity for the business process flow, set the <xref:Microsoft.Xrm.S
 <a name="DefineBPF"></a>   
 ## Define business process flow
   
-Use the visual business process flow designer to define a business process flow. More information: [Create a business process flow](../customize/create-business-process-flow.md)
+Use the visual business process flow designer to define a business process flow. More information: [Create a business process flow](../create-business-process-flow.md)
 
 By default, a business process flow record is created in the `Draft` state.  
 
@@ -154,8 +154,8 @@ At this point, you might not get any instances in your response as there are non
 Create a business process flow entity record (process instance) programmatically if you want to switch to another business process flow for an entity record without using the UI. 
 
 To create a business process flow entity record, you need to specify the following values: 
-- Associate the business process flow entity record to a primary entity record by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name that points to the primary entity record for your business process flow definition, use the [CSDL $metadata document](webapi/web-api-types-operations.md#csdl-metadata-document). 
-- Associate the business process flow entity record to a valid stage specified in the business process flow definition by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name (typically `activestageid`) that points to the stage record for your business process flow definition, use the [CSDL $metadata document](webapi/web-api-types-operations.md#csdl-metadata-document).
+- Associate the business process flow entity record to a primary entity record by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name that points to the primary entity record for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
+- Associate the business process flow entity record to a valid stage specified in the business process flow definition by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name (typically `activestageid`) that points to the stage record for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
 
     Also, you can retrieve information about all the stages for a business process flow definition by using the following Web API request assuming that the ID of your business process flow definition is 2669927e-8ad6-4f95-8a9a-f1008af6956f:
 
@@ -334,7 +334,7 @@ Each business process flow instance record returned for an entity record as a re
   
  Once you have the active stage and the active path information for a business process flow instance, you can use the information to move to a previous or next stage in the active path. Forward navigation of stages must be done in sequence, that is, you should only move forward to the next stage in the active path.   
   
- For the complete sample that code demonstrates the usage of these two methods and stage navigation using the [Organization service](use-microsoft-dynamics-365-organization-service.md), see [Sample: Work with business process flows](sample-work-business-process-flows.md). 
+ For the complete sample that code demonstrates the usage of these two methods and stage navigation using the [Organization service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), see [Sample: Work with business process flows](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
 ## Apply business process flow while creating an entity record
