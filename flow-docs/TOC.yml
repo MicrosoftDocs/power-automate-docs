@@ -132,30 +132,25 @@
     href: embed-flow-dev.md
   - name: Let customers test drive your flows
     href: dev-appsource-test-drive.md
-- name: Model business process flows
-  items:
-  - name: Sample - Work with business process flows
-    href: /dynamics365/customer-engagement/developer/sample-work-business-process-flows.md
-- name: Classic automation in CDS
-  href: /dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement.md
-  items:
-  - name: Process architecture
-    href: /dynamics365/customer-engagement/developer/process-architecture.md
-  - name: Process categories
-    href: /dynamics365/customer-engagement/developer/process-categories.md
-  - name: Workflow and process entities
-    href: /dynamics365/customer-engagement/developer/workflow-process-entities.md
-  - name: Supported types, triggers, entities, and actions for processes
-    href: /dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes.md
-  - name: Custom workflow activities (workflow assemblies)
-    href: /dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies.md
-- name: Use classic CDS dialogs
-  href: /dynamics365/customer-engagement/developer/use-dialogs-guided-processes.md
-  items:
-  - name: Understand dialogs
-    href: /dynamics365/customer-engagement/developer/understand-dialogs.md
-  - name: Actions on dialogs
-    href: /dynamics365/customer-engagement/developer/actions-dialogs.md
+  - name: Work with business process flows using code
+    href: ./developer/business-process-flows-code.md
+    items:
+    - name: "Sample: Work with business process flows"
+      href: ./developer/sample-work-business-process-flows.md
+-   name: Classic automation in CDS for Apps
+    href: /dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement.md
+    items:
+    - name: Process architecture
+      href: /dynamics365/customer-engagement/developer/process-architecture.md
+    - name: Process categories
+      href: /dynamics365/customer-engagement/developer/process-categories.md
+    - name: Workflow and process entities
+      href: /dynamics365/customer-engagement/developer/workflow-process-entities.md
+    - name: Supported types, triggers, entities, and actions for processes
+      href: /dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes.md
+    - name: Custom workflow activities (workflow assemblies)
+      href: /dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies.md
+
 - name: Sample code for classic CDS workflows
   href: /dynamics365/customer-engagement/developer/sample-code-processes.md
   items:
