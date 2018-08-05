@@ -50,13 +50,12 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
-- name: Common Data Service for apps
+- name: Common Data Service (CDS) for Apps
   items:
-  - name: Add data to the Common Data Service
+  - name: Add data to CDS for Apps
     items:
-  - name: Classic CDS workflows
-    href: /dynamics365/customer-engagement/customize/workflow-processes.md
-    items:
+    - name: Classic CDS for Apps workflows
+      href: workflow-processes.md
     - name: Create custom business logic through processes
       href: guide-staff-through-common-tasks-processes.md
     - name: Configure workflow stages and steps
@@ -65,17 +64,17 @@
       href: monitor-manage-processes.md
     - name: Best practices for workflow processes
       href: best-practices-workflow-processes.md
-  - name: Classic CDS actions
+  - name: Classic CDS for Apps actions
     items:
     - name: Configure custom actions from a workflow
-      href: /dynamics365/customer-engagement/customize/configure-actions.md
+      href: configure-actions.md
     - name: Invoke custom actions from a workflow
       href: invoke-custom-actions-workflow-dialog.md
-  - name: Classic CDS task flows
+  - name: Classic CDS for Apps task flows
     items:
     - name: Create mobile task flows
       href: create-mobile-task-flow.md
-  - name: Replace classic CDS dialogs
+  - name: Replace classic CDS for Apps dialogs
     href: replace-dialogs.md
 - name: How to
   items:
