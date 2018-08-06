@@ -41,13 +41,7 @@ shutdown and restart.
 
 [Process Architecture](process-architecture.md) 
 
-[Choose a Process (Workflow) tpe for your automation](process-categories.md)  
-  
 [Workflow and Process Entities](workflow-process-entities.md)  
-  
-[Supported Types, Triggers, and Entities for Process](supported-types-triggers-entities-actions-processes.md)  
-  
-[Sample Code for CDS for Apps Workflow](workflow-samples.md)  
   
 ## Related topics
 
