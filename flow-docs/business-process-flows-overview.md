@@ -170,6 +170,3 @@ You can also interact with business process flow entities from a workflow. For e
  [Create a business process flow](create-business-process-flow.md)   
  [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
- [Create custom business logic through processes](guide-staff-through-common-tasks-processes.md)</br>
- [Workflow Processes](workflow-processes.md)   
- [Actions - Overview](actions.md)
