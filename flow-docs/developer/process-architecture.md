@@ -82,7 +82,7 @@ The state of asynchronous operations can also be changed by the user. For exampl
 
 A dialog life cycle is as follows:  
   
-1. When you create a dialog, it is in the Draft state. You must activate the dialog before it can be run. A dialog can be run from its primary entity form and grid, or directly by using the URL of the dialog. For more information, see [Start a dialog by using a URL](actions-dialogs.md#StartDialog).  
+1. When you create a dialog, it is in the Draft state. You must activate the dialog before it can be run. A dialog can be run from its primary entity form and grid, or directly by using the URL of the dialog. .  
   
 1. Every time that you run a dialog, a process session instance is created for the dialog. As you progress with running the dialog, the process session entity is updated with the actions performed during the running of the dialog.  
   

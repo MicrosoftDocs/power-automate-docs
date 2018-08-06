@@ -47,7 +47,7 @@ shutdown and restart.
   
 [Supported Types, Triggers, and Entities for Process](supported-types-triggers-entities-actions-processes.md)  
   
-[Sample Code for Process and Workflow](sample-code-processes.md)  
+[Sample Code for CDS for Apps Workflow](workflow-samples.md)  
   
 ## Related topics
 
