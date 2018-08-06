@@ -138,33 +138,18 @@
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
   - name: Classic automation in CDS for Apps
-    href: /dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement.md
+    href: ./developer/classic-automation-cds-for-apps.md
     items:
     - name: Process architecture
-      href: /dynamics365/customer-engagement/developer/process-architecture.md
+      href: ./developer/process-architecture.md
     - name: Process categories
-      href: /dynamics365/customer-engagement/developer/process-categories.md
+      href: ./developer/process-categories.md
     - name: Workflow and process entities
-      href: /dynamics365/customer-engagement/developer/workflow-process-entities.md
+      href: ./developer/workflow-process-entities.md
     - name: Supported types, triggers, entities, and actions for processes
-      href: /dynamics365/customer-engagement/developer/supported-types-triggers-entities-actions-processes.md
-    - name: Custom workflow activities (workflow assemblies)
-      href: /dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies.md
+      href: ./developer/supported-types-triggers-entities-actions-processes.md
     - name: Sample code for classic CDS for Apps workflows
-      href: /dynamics365/customer-engagement/developer/sample-code-processes.md
-      items:
-      - name: Sample - Create a process using a template
-        href: /dynamics365/customer-engagement/developer/sample-create-process-using-template.md
-      - name: Sample - Run a workflow
-        href: /dynamics365/customer-engagement/developer/sample-run-workflow.md
-      - name: Sample - Create, retrieve, update, and delete a dialog
-        href: /dynamics365/customer-engagement/developer/sample-create-retrieve-update-delete-dialog.md
-      - name: Sample - Create a workflow in code
-        href: /dynamics365/customer-engagement/developer/sample-create-workflow-code.md
-      - name: Sample - Create a real-time workflow in code
-        href: /dynamics365/customer-engagement/developer/sample-create-real-time-workflow-code.md
-      - name: Sample - Set the state of a workflow
-        href: /dynamics365/customer-engagement/developer/sample-set-state-workflow.md
+      href: ./developer/workflow-samples.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
