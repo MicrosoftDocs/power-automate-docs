@@ -56,8 +56,6 @@
     items:
     - name: Classic CDS for Apps workflows
       href: workflow-processes.md
-    - name: Create custom business logic through processes
-      href: guide-staff-through-common-tasks-processes.md
     - name: Configure workflow stages and steps
       href: configure-workflow-steps.md
     - name: Monitor and manage workflow processes
