@@ -66,16 +66,20 @@
       href: best-practices-workflow-processes.md
   - name: Classic CDS for Apps actions
     items:
-    - name: Configure custom actions from a workflow
-      href: configure-actions.md
+    - name: Create a custom action
+      href: create-actions.md
     - name: Invoke custom actions from a workflow
       href: invoke-custom-actions-workflow-dialog.md
   - name: Classic CDS for Apps task flows
     items:
     - name: Create mobile task flows
       href: create-mobile-task-flow.md
-  - name: Replace classic CDS for Apps dialogs
-    href: replace-dialogs.md
+  - name: Classic CDS for Apps dialogs
+    items:
+    - name: Use classic CDS for Apps dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic CDS for Apps dialogs
+      href: replace-dialogs.md
 - name: How to
   items:
   - name: Add an action
@@ -134,8 +138,6 @@
     items:
     - name: Process architecture
       href: ./developer/process-architecture.md
-    - name: Process categories
-      href: ./developer/process-categories.md
     - name: Workflow and process entities
       href: ./developer/workflow-process-entities.md
     - name: Supported types, triggers, entities, and actions for processes

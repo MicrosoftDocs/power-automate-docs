@@ -39,6 +39,12 @@ If a workflow was created in the web application and the workflow definition has
 
 There are two messages you can use to work with processes. <xref:Microsoft.Crm.Sdk.Messages.SetStateRequest> is used to set the state of the process: draft or activated. <xref:Microsoft.Crm.Sdk.Messages.CreateWorkflowFromTemplateRequest> is used to create a process from a process template.
 
+## Distributing workflows using solutions
+
+You can include workflows and custom workflow activities in a solution that is imported into another CDS for Apps environment. However, if you refer to specific entity instances in a workflow and the workflow is moved into another system, problems will arise because the unique IDs of the entity instances in the workflow will differ from those in the target system. CDS for Apps automatically resolves system user and currency entity records based on the full name property, but it won't automatically resolve records for other entity types.
+
+More information: Work with solutions.
+
 ### See also
 
  [WorkFlow Entity](/powerapps/developer/common-data-service/reference/entities/workflow)<br />
