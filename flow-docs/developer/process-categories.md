@@ -54,14 +54,10 @@ Most operations that can be accomplished by using workflows can also be accompli
 
 Use plug-ins when you need the best performance possible from your custom business logic. Plug-ins can start quicker and therefore typically run faster that even a real-time workflow. However, the benefit in performance may be outweighed by the ease of use in creating and maintaining workflows where only a non-developer, for example a business analyst, is required to do the work.  
 
-For more information about plug-ins, see [Write plug-ins to extend business processes](write-plugin-extend-business-processes.md).  
+For more information about plug-ins, see [Create a plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in).  
 
 ## Distributing workflows in solutions
 
-You can include workflows and custom workflow activities in a solution that is imported into another CDS for Apps environment. However, if you refer to specific entity instances in a workflow and the workflow is moved into another system, problems will arise because the unique IDs of the entity instances in the workflow will differ from those in the target system.  Dynamics 365 automatically resolves system user and currency entity records based on the full name property, but it won't automatically resolve records for other entity types.  
+You can include workflows and custom workflow activities in a solution that is imported into another CDS for Apps environment. However, if you refer to specific entity instances in a workflow and the workflow is moved into another system, problems will arise because the unique IDs of the entity instances in the workflow will differ from those in the target system. CDS for Apps automatically resolves system user and currency entity records based on the full name property, but it won't automatically resolve records for other entity types.  
 
-More information: [Package and Distribute Extensions with Dynamics 365 Solutions](package-distribute-extensions-use-solutions.md).  
-
-### See also
-
-[Automate your business processes in Customer Engagement](automate-business-processes-customer-engagement.md)
+More information: [Work with solutions](/powerapps/maker/common-data-service/solutions-overview).  
