@@ -1,5 +1,5 @@
 ---
-title: "Invoke custom actions from a workflow with PowerApps | MicrosoftDocs"
+title: "Invoke custom actions from a workflow | MicrosoftDocs"
 description: "Learn how to invoke a custom action from a workflow"
 ms.custom: ""
 ms.date: 06/27/2018
@@ -58,8 +58,6 @@ Workflows have numerous capabilities supporting business scenarios. Calling basi
   
  ![Set input parameters for ApprovalProcess action](media/enable-customaction-workflow-set-properties.png "Set input parameters for ApprovalProcess action")  
   
-  
-## Next steps  
- [Configure custom actions from a workflow](configure-actions.md)
+
 
 

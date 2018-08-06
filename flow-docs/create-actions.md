@@ -80,8 +80,8 @@ Actions also have something that workflow processes don’t – input and output
  **Define Process Arguments**  
  In this area, you’ll specify any data that the action expects to start and what data will be passed out of the action. More information: [Define process arguments](#define-process-arguments)  
   
- **Add Stages, Conditions and Actions**  
- Like other processes, you specify what actions to perform and when to perform them. More information: [Add stages, conditions and actions](configure-actions.md#BKMK_AddStagesConditionsAndActions)
+ **Add Stages and steps**  
+ Like other processes, you specify what actions to perform and when to perform them. More information: [Add stages and steps](#add-stages-and-steps)
 
 <a name="BKMK_DefineProcessArgs"></a>   
 ## Define process arguments  
