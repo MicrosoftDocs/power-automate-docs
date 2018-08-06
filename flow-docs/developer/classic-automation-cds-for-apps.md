@@ -1,6 +1,6 @@
 ---
 title: "Automate your business processes in Customer Engagement (Developer Guide for Dynamics 365 Customer Engagement)| MicrosoftDocs"
-description: "Learn about automating your business processess. A business process can be of two types: automated processes that rely solely on communication among applications based on a set of rules, and interactive processes that also rely on people to initiate and run the process, and to make the appropriate decisions during the running of the process."
+description: "Learn about automating your business processes. A business process can be of two types: automated processes that rely solely on communication among applications based on a set of rules, and interactive processes that also rely on people to initiate and run the process, and to make the appropriate decisions during the running of the process."
 ms.custom: ""
 ms.date: 10/31/2017
 ms.reviewer: ""
@@ -20,8 +20,6 @@ ms.author: "jdaly"
 manager: "amyla"
 ---
 # Classic automation in CDS for Apps
-
-[!INCLUDE[](../includes/cc_applies_to_update_9_0_0.md)]
 
 Business processes are an integral part of any enterprise software application. A business process can be of two types: *automated* processes that rely solely on 
 communication among applications based on a set of rules, and *interactive* processes that also rely on people to initiate and run the process, and to make the 
@@ -48,12 +46,6 @@ shutdown and restart.
 [Workflow and Process Entities](workflow-process-entities.md)  
   
 [Supported Types, Triggers, and Entities for Process](supported-types-triggers-entities-actions-processes.md)  
-  
-[Model the business process flow](model-business-process-flows.md)  
-  
-[Create real-time workflows](create-real-time-workflows.md)  
-  
-[Create Your Own Custom Operations](create-own-actions.md)  
   
 [Sample Code for Process and Workflow](sample-code-processes.md)  
   
