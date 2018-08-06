@@ -18,9 +18,7 @@ manager: "amyla"
 ---
 # Supported types, triggers, entities, and actions for processes
 
-[!INCLUDE[](../includes/cc_applies_to_update_9_0_0.md)]
-
-This topic provides information about the supported types and entities for processes in [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] Customer Engagement, supported triggers for workflows, entities that are supported for the <xref:Microsoft.Xrm.Sdk.Workflow.Activities.CreateEntity> activity, and supported actions for workflows.  
+This topic provides information about the supported types and entities for processes in Common Data Service (CDS) for Apps, supported triggers for workflows, entities that are supported for the <xref:Microsoft.Xrm.Sdk.Workflow.Activities.CreateEntity> activity, and supported actions for workflows.  
 
 <a name="bkmk_triggersWorkflows"></a>   
 ## Supported triggers for workflows  
@@ -74,9 +72,9 @@ This topic provides information about the supported types and entities for proce
 
 <a name="bkmk_typesProcesses"></a>   
 ## Supported types for processes  
- This topic provides the supported types that you can use in your code for processes in[!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)].  
+ This topic provides the supported types that you can use in your code for processes in CDS for Apps.  
 
-### Microsoft .NET Framework 4.5.2  
+### Microsoft .NET Framework 4.6.2  
 
 |Namespace|Type name|  
 |---------------|---------------|  
@@ -111,7 +109,7 @@ This topic provides information about the supported types and entities for proce
 
 -   [System.ServiceModel.Activities.Presentation.Factories](https://msdn.microsoft.com/library/system.servicemodel.activities.presentation.factories.aspx)  
 
-### [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)]  
+### CDS for Apps  
 
 |Namespace|Type name|  
 |---------------|---------------|  
@@ -196,7 +194,7 @@ This topic provides information about the supported types and entities for proce
 
 <a name="BKMK_Actions"></a>   
 ## Supported actions for processes  
- You can choose to perform following actions using workflows in [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)]. Use the `sdkmessage.workflowsdkstepenabled` attribute to find the list of supported actions available under a workflow step. You can use the following Web API query to retrieve the list of supported actions:  
+ You can choose to perform following actions using workflows in CDS for Apps. Use the `sdkmessage.workflowsdkstepenabled` attribute to find the list of supported actions available under a workflow step. You can use the following Web API query to retrieve the list of supported actions:  
 
 ```
 [Organization URI]/api/data/v9.0/sdkmessages?$select=name&$filter=workflowsdkstepenabled%20eq%20true  
@@ -220,12 +218,7 @@ This topic provides information about the supported types and entities for proce
 |             ResolveQuote             |                                                                          <xref:Microsoft.Crm.Sdk.Messages.CloseQuoteRequest>                                                                           |
 |             ReviseQuote              |                                                                          <xref:Microsoft.Crm.Sdk.Messages.ReviseQuoteRequest>                                                                          |
 |              SetProcess              |                                                                          <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>                                                                           |
-|           SetWordTemplate            | Custom action to create a word template. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Using Word templates in Dynamics 365](../admin/using-word-templates-dynamics-365.md) |
+|           SetWordTemplate            | Custom action to create a word template. More information: [Using Word templates in Dynamics 365](/dynamics365/customer-engagement/admin/using-word-templates-dynamics-365) |
 |         UnlockInvoicePricing         |                                                                     <xref:Microsoft.Crm.Sdk.Messages.UnlockInvoicePricingRequest>                                                                      |
 |       UnlockSalesOrderPricing        |                                                                    <xref:Microsoft.Crm.Sdk.Messages.UnlockSalesOrderPricingRequest>                                                                    |
 
-### See also  
- [Create your own actions](create-own-actions.md)   
- [Processes in Dynamics 365 (formerly Workflows)](automate-business-processes-customer-engagement.md)   
- [Custom workflow activities (workflow assemblies)](custom-workflow-activities-workflow-assemblies.md)   
- <xref:Microsoft.Xrm.Sdk.Workflow.Activities.CreateEntity>
