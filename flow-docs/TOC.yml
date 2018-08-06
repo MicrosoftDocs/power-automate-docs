@@ -114,14 +114,6 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Troubleshoot
-  items:
-  - name: Watch a flow
-    href: see-a-flow-run.md
-  - name: Monitor flow activity on a phone
-    href: mobile-monitor-activity.md
-  - name: Troubleshoot a flow
-    href: fix-flow-failures.md
 - name: For developers
   items:
   - name: Microsoft Flow for enterprise developers, partners, and ISVs
@@ -186,14 +178,6 @@
       href: gdpr-dsr-delete-msa.md
     - name: Close requests
       href: gdpr-dsr-accountclose-msa.md
-- name: Learn from others
-  items:
-  - name: Webinars
-    href: https://flow.microsoft.com/blog/category/webinars/
-  - name: Blog
-    href: https://flow.microsoft.com/en-us/blog/
-  - name: Forums
-    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
 - name: Reference
   items:
   - name: Regions overview
@@ -204,6 +188,21 @@
     href: release-notes.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md
-
+- name: Learn from others
+  items:
+  - name: Webinars
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/en-us/blog/
+  - name: Forums
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
+- name: Troubleshoot
+  items:
+  - name: Watch a flow
+    href: see-a-flow-run.md
+  - name: Monitor flow activity on a phone
+    href: mobile-monitor-activity.md
+  - name: Troubleshoot a flow
+    href: fix-flow-failures.md
 
 
