@@ -52,10 +52,9 @@
     href: enhance-business-process-flows-branching.md
 - name: Common Data Service (CDS) for Apps
   items:
-  - name: Add data to CDS for Apps
+  - name: Classic CDS for Apps workflows
+    href: workflow-processes.md
     items:
-    - name: Classic CDS for Apps workflows
-      href: workflow-processes.md
     - name: Configure workflow stages and steps
       href: configure-workflow-steps.md
     - name: Monitor and manage workflow processes
