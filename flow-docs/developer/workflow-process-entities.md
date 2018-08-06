@@ -18,9 +18,8 @@ manager: "amyla"
 ---
 # Workflow and process entities
 
-[!INCLUDE[](../includes/cc_applies_to_update_9_0_0.md)]
 
-The [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] Customer Engagement workflow object model is a set of classes that uses the [!INCLUDE[pn_Windows_Workflow_Foundation](../includes/pn-windows-workflow-foundation.md)] object model and exposes [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] workflow activities. These classes are found in the `Microsoft.Xrm.Sdk.Workflow` assembly. For more information, see <xref:Microsoft.Xrm.Sdk.Workflow>.
+The Common Data Service (CDS) for Apps workflow object model is a set of classes that uses the Windows Workflow Foundation object model and exposes CDS for Apps workflow activities. These classes are found in the `Microsoft.Xrm.Sdk.Workflow` assembly. For more information, see <xref:Microsoft.Xrm.Sdk.Workflow>.
 
  Workflow activities are the elemental units of a workflow (process). They are added to a workflow (process) to form a hierarchical tree structure. When all activities in a given path are finished running, the workflow (process) instance is completed.
 
@@ -42,10 +41,6 @@ There are two messages you can use to work with processes. <xref:Microsoft.Crm.S
 
 ### See also
 
- [Supported Types, Triggers, and Entities for Processes](supported-types-triggers-entities-actions-processes.md)<br />
- [Processes in Dynamics 365 (formerly Workflows)](automate-business-processes-customer-engagement.md)<br />
- [WorkFlow Entity](entities/workflow.md)<br />
- [WorkFlowLog Entity](entities/workflowlog.md)<br />
-  <!-- Bug 700905 
- [ProcessSession Entity](entities/processsession.md)
- -->
+ [WorkFlow Entity](/powerapps/developer/common-data-service/reference/entities/workflow)<br />
+ [WorkFlowLog Entity](/powerapps/developer/common-data-service/reference/entities/workflowlog)<br />
+
