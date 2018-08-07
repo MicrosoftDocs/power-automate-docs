@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "workflow"
 ms.assetid: 3ef415ed-d815-45de-8a7c-398b80d23cbd
 caps.latest.revision: 51
-author: "JimDaly"
-ms.author: "jdaly"
-manager: "amyla"
+author: "msftman"
+ms.author: "deonhe"
+manager: "kvivek"
 ---
 # Classic automation in CDS for Apps
 

@@ -8,9 +8,9 @@ ms.service: "crm-online"
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-author: "JimDaly"
-ms.author: "jdaly"
-manager: "amyla"
+author: "msftman"
+ms.author: "deonhe"
+manager: "kvivek"
 ---
 # Process architecture
 
