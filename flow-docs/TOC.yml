@@ -105,6 +105,14 @@
     href: mobile-manage-flows.md
   - name: Publish a template
     href: publish-a-template.md
+- name: Troubleshoot
+  items:
+  - name: Watch a flow
+    href: see-a-flow-run.md
+  - name: Monitor flow activity on a phone
+    href: mobile-monitor-activity.md
+  - name: Troubleshoot a flow
+    href: fix-flow-failures.md
 - name: Connect to data
   items:
   - name: Available connections
@@ -195,13 +203,6 @@
     href: https://flow.microsoft.com/en-us/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-- name: Troubleshoot
-  items:
-  - name: Watch a flow
-    href: see-a-flow-run.md
-  - name: Monitor flow activity on a phone
-    href: mobile-monitor-activity.md
-  - name: Troubleshoot a flow
-    href: fix-flow-failures.md
+
 
 
