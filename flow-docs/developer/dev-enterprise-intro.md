@@ -64,7 +64,7 @@ Embed Microsoft Flow within your app to enable deep, in-context integration betw
 
 ### 4. Create and publish flow templates
 
-Once you have a connector, you should publish templates that demonstrate how to use your service. These templates will serve as examples that users can use to learn and then extend to their own unique workflows. [Learn more](publish-a-template.md)
+Once you have a connector, you should publish templates that demonstrate how to use your service. These templates will serve as examples that users can use to learn and then extend to their own unique workflows. [Learn more](../publish-a-template.md)
 
 ### 5. Deployment
 

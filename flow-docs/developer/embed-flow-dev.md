@@ -25,7 +25,7 @@ To create flows, users will need either a **Microsoft Account** or a work or sch
 
 ## Prerequisites
 * [Build a custom connector](register-custom-api.md) that connects your service to Microsoft Flow.
-* [Create and publish one or more templates](publish-a-template.md) that use your API.
+* [Create and publish one or more templates](../publish-a-template.md) that use your API.
 
 ## Show templates for your scenarios
 To start, add this code to show the flow templates directly in your website:

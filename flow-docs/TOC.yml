@@ -1,65 +1,33 @@
-- name: Get started
+- name: Overview
   items:
-  - name: Get started
-    href: getting-started.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: Create a flow from a template
+  - name: Get started
+    href: getting-started.md
+  - name: Guided learning
+    href: ./guided-learning/index.yml
+  - name: Create a flow in the browser
     href: get-started-logic-template.md
-  - name: Create a flow from scratch
-    href: get-started-logic-flow.md
+  - name: Create a flow on a phone
+    href: mobile-create-flow.md
   - name: Create a team flow
     href: create-team-flows.md
-  - name: Overview of environments
-    href: environments-overview-maker.md
-  - name: Frequently asked questions
-    href: frequently-asked-questions.md
-- name: Build a flow
+- name: Automated flows
   items:
-  - name: Add an action
-    href: multi-step-logic-flow.md
-  - name: Add a condition
-    href: add-condition.md
-  - name: Run a flow on a schedule
-    href: run-scheduled-tasks.md
+  - name: Create a flow from scratch
+    href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
-  - name: Process a list of items
-    href: apply-to-each.md
-  - name: Use data operations
-    href: data-operations.md
-  - name: Filter and copy data
-    href: odata-filters.md
-  - name: Use expressions in conditions
-    href: use-expressions-in-conditions.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
-  - name: Add data to the Common Data Service
-    href: common-data-model-intro.md
-  - name: Watch a flow
-    href: see-a-flow-run.md
-  - name: Publish a template
-    href: publish-a-template.md
-  - name: Troubleshoot a flow
-    href: fix-flow-failures.md
-- name: Create approval flows
+  - name: Filter and copy data
+    href: odata-filters.md
+  - name: Use a Flic
+    href: flic-button-flows.md
+  - name: Use a bttn
+    href: bttn-button-flows.md
+- name: Button flows
   items:
-  - name: Single approvals
-    href: modern-approvals.md
-  - name: Sequential approvals
-    href: sequential-modern-approvals.md
-  - name: Parallel approvals
-    href: parallel-modern-approvals.md
-  - name: Everyone must approve
-    href: all-assigned-must-approve.md
-  - name: Integrated approvals
-    href: common-data-model-approve.md
-  - name: Format approval requests
-    href: approvals-markdown-support.md
-- name: Use the mobile app
-  items:
-  - name: Create a flow
-    href: mobile-create-flow.md
   - name: Create a button flow
     href: introduction-to-button-flows.md
   - name: Create a button flow with trigger tokens
@@ -68,17 +36,84 @@
     href: button-flow-with-user-input-tokens.md
   - name: Share a button
     href: share-buttons.md
-  - name: Monitor flow activity
-    href: mobile-monitor-activity.md
-  - name: Manage your flows
-    href: mobile-manage-flows.md
-- name: Use physical devices
+- name: Scheduled flows
   items:
-  - name: Use a Flic
-    href: flic-button-flows.md
-  - name: Use a bttn
-    href: bttn-button-flows.md
-- name: Connections
+  - name: Run a flow on a schedule
+    href: run-scheduled-tasks.md
+  - name: Process a list of items
+    href: apply-to-each.md
+- name: Business process flows
+  items:
+  - name: Business process flows overview
+    href: business-process-flows-overview.md
+  - name: Create a business process flow to standardize processes
+    href: create-business-process-flow.md
+  - name: Enhance business process flows with branching
+    href: enhance-business-process-flows-branching.md
+- name: Common Data Service (CDS) for Apps
+  items:
+  - name: Classic CDS for Apps workflows
+    href: workflow-processes.md
+    items:
+    - name: Configure workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for workflow processes
+      href: best-practices-workflow-processes.md
+  - name: Classic CDS for Apps actions
+    items:
+    - name: Create a custom action
+      href: create-actions.md
+    - name: Invoke custom actions from a workflow
+      href: invoke-custom-actions-workflow-dialog.md
+  - name: Classic CDS for Apps task flows
+    items:
+    - name: Create mobile task flows
+      href: create-mobile-task-flow.md
+  - name: Classic CDS for Apps dialogs
+    items:
+    - name: Use classic CDS for Apps dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic CDS for Apps dialogs
+      href: replace-dialogs.md
+- name: How to
+  items:
+  - name: Add an action
+    href: multi-step-logic-flow.md
+  - name: Add a condition
+    href: add-condition.md
+  - name: Use data operations
+    href: data-operations.md
+  - name: Use expressions in conditions
+    href: use-expressions-in-conditions.md
+  - name: Approval flows
+    items:
+    - name: Single approvals
+      href: modern-approvals.md
+    - name: Sequential approvals
+      href: sequential-modern-approvals.md
+    - name: Parallel approvals
+      href: parallel-modern-approvals.md
+    - name: Everyone must approve
+      href: all-assigned-must-approve.md
+    - name: Integrated approvals
+      href: common-data-model-approve.md
+    - name: Format approval requests
+      href: approvals-markdown-support.md
+  - name: Manage flows on a phone
+    href: mobile-manage-flows.md
+  - name: Publish a template
+    href: publish-a-template.md
+- name: Troubleshoot
+  items:
+  - name: Watch a flow
+    href: see-a-flow-run.md
+  - name: Monitor flow activity on a phone
+    href: mobile-monitor-activity.md
+  - name: Troubleshoot a flow
+    href: fix-flow-failures.md
+- name: Connect to data
   items:
   - name: Available connections
     href: https://go.microsoft.com/fwlink/?linkid=832211
@@ -88,16 +123,23 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Develop for Microsoft Flow
+- name: For developers
   items:
   - name: Microsoft Flow for enterprise developers, partners, and ISVs
-    href: dev-enterprise-intro.md
+    href: ./developer/dev-enterprise-intro.md
   - name: Build and certify custom connectors
-    href: register-custom-api.md
+    href: ./developer/register-custom-api.md
   - name: Integrate with websites and other technologies
-    href: embed-flow-dev.md
+    href: ./developer/embed-flow-dev.md
   - name: Let customers test drive your flows
-    href: dev-appsource-test-drive.md
+    href: ./developer/dev-appsource-test-drive.md
+  - name: Work with business process flows using code
+    href: ./developer/business-process-flows-code.md
+    items:
+    - name: "Sample: Work with business process flows"
+      href: ./developer/sample-work-business-process-flows.md
+  - name: Custom CDS for Apps workflow activities
+    href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
@@ -112,28 +154,28 @@
     href: prevent-data-loss.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
-- name: Respond to DSR requests
-  items:
-  - name: Summary
-    href: gdpr-dsr-summary.md
-  - name: Discover requests
-    href: gdpr-dsr-discovery.md
-  - name: Export requests
-    href: gdpr-dsr-export.md
-  - name: Delete requests
-    href: gdpr-dsr-delete.md
-- name: DSR requests for Microsoft Accounts
-  items:
-  - name: Summary
-    href: gdpr-dsr-summary-msa.md
-  - name: Discover requests
-    href: gdpr-dsr-discovery-msa.md
-  - name: Export requests
-    href: gdpr-dsr-export-msa.md
-  - name: Delete requests
-    href: gdpr-dsr-delete-msa.md
-  - name: Close requests
-    href: gdpr-dsr-accountclose-msa.md
+  - name: Respond to DSR requests
+    items:
+    - name: Summary
+      href: gdpr-dsr-summary.md
+    - name: Discover requests
+      href: gdpr-dsr-discovery.md
+    - name: Export requests
+      href: gdpr-dsr-export.md
+    - name: Delete requests
+      href: gdpr-dsr-delete.md
+  - name: DSR requests for Microsoft Accounts
+    items:
+    - name: Summary
+      href: gdpr-dsr-summary-msa.md
+    - name: Discover requests
+      href: gdpr-dsr-discovery-msa.md
+    - name: Export requests
+      href: gdpr-dsr-export-msa.md
+    - name: Delete requests
+      href: gdpr-dsr-delete-msa.md
+    - name: Close requests
+      href: gdpr-dsr-accountclose-msa.md
 - name: Reference
   items:
   - name: Regions overview
@@ -142,3 +184,16 @@
     href: limits-and-config.md
   - name: Release notes
     href: release-notes.md
+  - name: Frequently asked questions
+    href: frequently-asked-questions.md
+- name: Learn from others
+  items:
+  - name: Webinars
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/en-us/blog/
+  - name: Forums
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
+
+
+
