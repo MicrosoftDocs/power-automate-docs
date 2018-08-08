@@ -126,13 +126,13 @@
 - name: For developers
   items:
   - name: Microsoft Flow for enterprise developers, partners, and ISVs
-    href: ./dev-enterprise-intro.md
+    href: ./developer/dev-enterprise-intro.md
   - name: Build and certify custom connectors
-    href: ./register-custom-api.md
+    href: ./developer/register-custom-api.md
   - name: Integrate with websites and other technologies
-    href: ./embed-flow-dev.md
+    href: ./developer/embed-flow-dev.md
   - name: Let customers test drive your flows
-    href: ./dev-appsource-test-drive.md
+    href: ./developer/dev-appsource-test-drive.md
   - name: Work with business process flows using code
     href: ./developer/business-process-flows-code.md
     items:
