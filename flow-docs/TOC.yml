@@ -63,6 +63,8 @@
       href: best-practices-workflow-processes.md
   - name: Classic CDS for Apps actions
     items:
+    - name: Use actions
+      href: actions.md
     - name: Create a custom action
       href: create-actions.md
     - name: Invoke custom actions from a workflow
