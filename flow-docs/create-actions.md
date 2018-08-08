@@ -1,5 +1,6 @@
 ---
-title: "Configure actions for workflows in PowerApps | MicrosoftDocs"
+title: "Create a custom action | MicrosoftDocs"
+description: "Use custom actions when you want to automate a series of commands in the system. Actions expand the vocabulary available for developers to express business processes."
 ms.custom: ""
 ms.date: 08/06/2018
 ms.reviewer: "matp"

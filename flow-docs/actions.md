@@ -26,7 +26,12 @@ Actions provide the ability to define a single verb (or message) that matches an
  Workflow processes and plug-ins continue to provide similar capabilities for defining automation. Workflow processes still provide the capability for a non-developer to apply changes. But the difference is in how the business processes are composed and how a developer can write their code. An action is a message that operates on the same level as any of the messages provided by the platform. Developers can register plug-ins for Actions.  
   
 <a name="BKMK_GlobalMessages"></a>   
-## Global messages  
- Unlike workflow processes or plug-ins, an action doesn’t have to be associated with a specific entity. You can define ”global” Actions that can be called on their own.  
+## Global messages 
+ 
+ Unlike CDS for Apps workflows or [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), an action doesn’t have to be associated with a specific entity. You can define ”global” Actions that can be called on their own.
+
+## Next steps
+
+[Create a custom action](create-actions.md)  
   
 
