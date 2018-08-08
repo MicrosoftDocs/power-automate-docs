@@ -5,7 +5,7 @@ metadata:
   description: Learn how to build flows that copy and collect data, as well as flows that send notifications. Run your flows based on a schedule or on-demand from a button. 
   audience: Business User
   level: Beginner
-  nextTutorialHref: work-with-approvals
+  nextTutorialHref: work-with-approvals.yml
   nextTutorialTitle: Work with approvals
   displayType: one-column
   author: MSFTMan
