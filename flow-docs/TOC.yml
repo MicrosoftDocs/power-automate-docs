@@ -64,6 +64,8 @@
   - name: Classic CDS for Apps actions
     href: actions.md
     items:
+    - name: Use actions
+      href: actions.md
     - name: Create a custom action
       href: create-actions.md
     - name: Configure custom actions from a workflow
