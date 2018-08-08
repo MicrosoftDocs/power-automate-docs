@@ -19,9 +19,7 @@ manager: "kvivek"
 ---
 # Replace dialogs with business process flows or canvas apps
 
-A dialog process creates an interactive step-by-step data entry form that requires user input to start and run to completion. When the user starts the dialog process, a wizard-like interface is presented. Then, users make selections or enter data as they progress through each page of the wizard.
-
-[Dialogs are deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Dialogs should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
+[Dialogs are deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
 
 ## Feature capability comparison
 
