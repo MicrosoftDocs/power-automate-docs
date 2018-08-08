@@ -5,7 +5,7 @@ metadata:
   description: Learn how to manage the approval of documents and processes in Microsoft Flow.
   audience: Business User
   level: Beginner
-  nextTutorialHref: administer-flows
+  nextTutorialHref: administer-flows.yml
   nextTutorialTitle: Administer flows
   displayType: one-column
   author: MSFTMan
