@@ -69,7 +69,7 @@ Here is the breakdown of experiences that are available for an administrator to 
 
 *With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
-** An admin will only be able to access these resources from the Microsoft Flow Maker Portal if the administrator has been assigned access from the Microsoft Flow Admin Center.
+\*\* An admin will only be able to access these resources from the Microsoft Flow Maker Portal if the administrator has been assigned access from the Microsoft Flow Admin Center.
 
 ## Manage Delete requests
 
