@@ -44,7 +44,10 @@
       "searchScope": [
         "Flow"
       ],
-      "titleSuffix": "Microsoft Flow"
+      "titleSuffix": "Microsoft Flow",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/flow-docs",
+      "feedback_product_url": "https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas/"
     },
     "fileMetadata": {},
     "template": [],

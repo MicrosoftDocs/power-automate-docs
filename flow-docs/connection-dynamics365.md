@@ -52,6 +52,9 @@ If a template isn’t available for what you need, create a flow from scratch. T
      For this walkthrough, select **Leads**.
    
     ![Flow details](./media/connection-dynamics365/flow-details.png)
+    > [IMPORTANT]
+    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition should have Change Tracking enabled. See [Enable change tracking to control data synchronization](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    
 7. Click or tap **New step**, and then click or tap **Add an action**.
 8. Click or tap **Dynamics 365 – Create a new record**.
 9. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to create the record. Notice that it doesn’t have to be the same instance where the event is triggered from.
