@@ -62,7 +62,6 @@
     - name: Best practices for workflow processes
       href: best-practices-workflow-processes.md
   - name: Classic CDS for Apps actions
-    href: actions.md
     items:
     - name: Use actions
       href: actions.md
