@@ -62,9 +62,12 @@
     - name: Best practices for workflow processes
       href: best-practices-workflow-processes.md
   - name: Classic CDS for Apps actions
+    href: actions.md
     items:
     - name: Create a custom action
       href: create-actions.md
+    - name: Configure custom actions from a workflow
+      href: configure-actions.md    
     - name: Invoke custom actions from a workflow
       href: invoke-custom-actions-workflow-dialog.md
   - name: Classic CDS for Apps task flows
