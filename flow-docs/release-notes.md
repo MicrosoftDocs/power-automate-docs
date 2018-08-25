@@ -42,6 +42,22 @@ ms.author: stepsic
 
 ## What's new
 
+### Release 2018-08-24
+
+- **New calendar sync templates** - New calendar templates that copy events between Google Calendar and Office 365 or Outlook.com.
+- **Multiple value support for SharePoint** - Read and write for multiple-value fields in SharePoint that are Choice, Person or Lookup types.
+- **Send approvals on behalf of other users in your organization** - Send approvals on behalf of other users in your organization - for example, the person who uploaded the file in the SharePoint list, instead of the person who created the flow.
+- **More button input types** - Buttons have two new input types: Number and Yes/No.
+- **Connector updates** - A new NetDocuments connector, improvements to Azure connectors and more.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-types-more/) about this release.
+
+### Release 2018-08-02
+
+The Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. All you need to do is to create an environment in Preview region, and you will get early access to the newest features.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/flow-preview-program/) about this release.
+
 ### Release 2018-07-23
 
 - **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Flow on your table data in Excel. Automate data processing or the copying/importing of data.
