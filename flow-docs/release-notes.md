@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
 
 ---
@@ -41,6 +41,13 @@ ms.author: stepsic
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-08-31
+
+- **Test your flow by using real example data** - Use real, example, data from connectors to test your flow as you build it, right inside of the Flow portal, so you can know that the flow will run as expected.
+- **Five new connectors** - Added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and, one other new connector: Microsoft School Data Sync.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
 ### Release 2018-08-24
 
