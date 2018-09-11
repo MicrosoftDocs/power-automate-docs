@@ -8,7 +8,6 @@ author: linhtranms
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Let customers test drive your flows on AppSource
 Do you want to show off how your app integrates with Microsoft Flow? We now Test Drive solutions on [AppSource.com](https://appsource.microsoft.com) as a way for you to share Microsoft Flow integration with customers, and generate leads for your business.

@@ -1,6 +1,6 @@
 ---
 title: Use markdown to format Microsoft Flow approvals | Microsoft Docs
-description: Learn to use markdown to format Microsoft Flow approval requests.  
+description: Learn to use markdown to format Microsoft Flow approval requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: gcorvera
 manager: kfile
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/23/2018
 ms.author: gcorvera
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 
 # Use Markdown in Microsoft Flow approval requests

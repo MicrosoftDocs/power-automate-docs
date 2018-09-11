@@ -3,19 +3,24 @@ layout: HubPage
 hide_bc: true
 title: Microsoft Flow Documentation | Microsoft Docs
 description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
-keywords:
-- "Microsoft Flow"
-- "workflow"
-- "flow"
-- "approval workflow"
-- "sharepoint workflow"
+keywords: 
+  - "Microsoft Flow"
+  - "workflow"
+  - "flow"
+  - "approval workflow"
+  - "sharepoint workflow"
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.reviewer:  
-- karann-msft
+ms.reviewer: 
+  - karann-msft
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 <div id="main" class="v2">
     <div class="container">

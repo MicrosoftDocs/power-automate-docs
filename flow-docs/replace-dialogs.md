@@ -16,6 +16,11 @@ caps.latest.revision: 12
 author: "Mattp123"
 ms.author: "matp"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Replace dialogs with business process flows or canvas apps
 

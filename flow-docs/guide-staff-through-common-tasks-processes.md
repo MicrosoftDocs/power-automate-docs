@@ -17,6 +17,11 @@ caps.latest.revision: 44
 author: "Mattp123"
 ms.author: "matp"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Create custom business logic through processes
 

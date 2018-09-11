@@ -17,6 +17,11 @@ caps.latest.revision: 39
 author: "Mattp123"
 ms.author: "matp"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Tutorial: Create a business process flow to standardize processes
 
