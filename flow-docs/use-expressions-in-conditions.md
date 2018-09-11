@@ -1,16 +1,6 @@
 ---
 title: Use expressions with conditions. | Microsoft Docs
-description: 'Use advanced expressions such as '
-"\"and\"\",": ''
-"\"\"or\"\",": ''
-"\"\"empty\"\",": ''
-"\"\"less\"\"": ''
-and: ''
-"\"\"greater\"\"": ''
-with: ''
-microsoft: ''
-flow: ''
-conditions.": ''
+description: 'Use advanced expressions such as "and", "or", "empty", "less" and "greater" with Microsoft Flow Conditions.'
 services: ''
 suite: flow
 documentationcenter: na
