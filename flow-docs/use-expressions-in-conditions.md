@@ -1,12 +1,12 @@
 ---
 title: Use expressions with conditions. | Microsoft Docs
 description: 'Use advanced expressions such as '
-"and"",: 
-""or"",: 
-""empty"",: 
-""less"": 
+"\"and\"\",": ''
+"\"\"or\"\",": ''
+"\"\"empty\"\",": ''
+"\"\"less\"\"": ''
 and: ''
-""greater"": 
+"\"\"greater\"\"": ''
 with: ''
 microsoft: ''
 flow: ''
@@ -18,6 +18,7 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
+
 ms.service: flow
 ms.devlang: na
 ms.topic: article
