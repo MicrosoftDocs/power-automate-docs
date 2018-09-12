@@ -402,7 +402,7 @@ ms.reviewer:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Drive data collection and workflow consistency.</h3>
+                                            <h3>Drive data collection and workflow consistency</h3>
                                             <p>Drive data collection and workflow consistency by using business process flows.</p>
                                         </div>
                                     </div>
@@ -421,7 +421,7 @@ ms.reviewer:
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Use Common Data Service (CDS) for apps.</h3>
+                                            <h3>Use Common Data Service (CDS) for apps</h3>
                                             <p>Use Common Data Service (CDS) for apps with workflow processes.</p>
                                         </div>
                                     </div>
