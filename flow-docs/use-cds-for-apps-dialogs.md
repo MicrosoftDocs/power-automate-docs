@@ -10,6 +10,11 @@ caps.latest.revision: 25
 author: "msftman"
 ms.author: "deonhe"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Use CDS for Apps dialogs for guided processes (Deprecated)
 

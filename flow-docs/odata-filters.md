@@ -8,7 +8,6 @@ author: MSFTMan
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Filter and copy data with Microsoft Flow
 This walkthrough shows you how to create a flow that monitors a source for new or changed items and then copies those changes to a destination. You may create a flow like this one if your users enter data in one location, but your team needs it in a different location or format.

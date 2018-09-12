@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: erikre
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Flow in your organization Q&A
 This topic describes how users in your organization can use Flow, and how you can control the Flow service.

@@ -14,6 +14,10 @@ ms.assetid: 7d378504-b4b2-4a09-838c-69ee094072ef
 caps.latest.revision: 15
 author: "msftman"
 ms.author: "deonhe"
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Sample: Work with business process flows
 

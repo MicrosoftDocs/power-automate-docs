@@ -7,7 +7,6 @@ documentationcenter: ''
 author: sunaysv
 manager: anneta
 editor: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,7 +14,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/29/2018
 ms.author: sunayv
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Custom connectors in Microsoft Flow
 

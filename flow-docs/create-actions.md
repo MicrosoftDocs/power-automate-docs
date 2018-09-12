@@ -10,6 +10,11 @@ author: "msftman"
 ms.assetid: 6dbc0f10-7ac5-4685-ab74-22d24bf7102d
 ms.author: "deonhe"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Create a custom action
 
