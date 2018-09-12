@@ -10,6 +10,10 @@ caps.latest.revision: 51
 author: "msftman"
 ms.author: "deonhe"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Custom CDS for Apps workflow activities (workflow assemblies)
 

@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/19/2018
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Limits and configuration in Microsoft Flow
 This topic contains information about the current limits and configuration details for flows.

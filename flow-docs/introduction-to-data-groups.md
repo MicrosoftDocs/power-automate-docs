@@ -8,7 +8,6 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/26/2016
 ms.author: deonhe
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Learn all about data groups
 ## What is a data group?

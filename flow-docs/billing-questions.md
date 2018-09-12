@@ -8,7 +8,6 @@ author: msftman
 manager: aftowen
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/21/2017
 ms.author: deonhe
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Billing and metering questions
 

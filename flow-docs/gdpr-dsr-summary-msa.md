@@ -1,6 +1,6 @@
 ---
 title: GDPR Data Subject Requests Summary for Microsoft Accounts (MSA)| Microsoft Docs
-description: Learn how to respond to GPDR Data Subject Requests for Microsoft Flow.  
+description: Learn how to respond to GPDR Data Subject Requests for Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: KentWeareMSFT
 manager: KFile
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/16/2018
 ms.author: keweare
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Respond to GDPR Data Subject Rights (DSRs) requests
 

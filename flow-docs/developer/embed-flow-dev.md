@@ -8,7 +8,6 @@ author: bbarath
 manager: erikre
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: barathb
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Integrate Microsoft Flow with websites and apps
 Embed Microsoft Flow right into your app or website to give users a simple way to automate their personal or professional tasks.

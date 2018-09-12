@@ -1,6 +1,6 @@
 ---
 title: Microsoft Flow GDPR Data Subject Export Requests  | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Export Requests.  
+description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Export Requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: KentWeareMSFT
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
 ms.author: keweare
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Responding to GDPR Data Subject Export Requests for Microsoft Flow
 

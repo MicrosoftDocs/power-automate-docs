@@ -12,6 +12,11 @@ ms.assetid: 1475985f-d3c4-429d-beac-cb455965e792
 caps.latest.revision: 20
 ms.author: "matp"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Use actions
 

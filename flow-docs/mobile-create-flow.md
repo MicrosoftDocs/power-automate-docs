@@ -8,7 +8,6 @@ author: adiregev
 manager: erikre
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Create a flow from your phone by using Microsoft Flow
 Create a flow from your phone by using a template, which you can find by searching through a list of services, browsing categories, or specifying keywords. Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your manager.

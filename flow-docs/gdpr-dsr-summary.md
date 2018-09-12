@@ -1,6 +1,6 @@
 ---
 title: GDPR Data Subject Requests Summary | Microsoft Docs
-description: Learn how to respond to GPDR Data Subject Requests for Microsoft Flow.  
+description: Learn how to respond to GPDR Data Subject Requests for Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: KentWeareMSFT
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
 ms.author: keweare
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Responding to GDPR Data Subject Requests for Microsoft Flow
 

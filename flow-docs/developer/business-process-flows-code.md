@@ -10,6 +10,10 @@ ms.assetid: 67d8cf80-9f77-4804-97a1-cf9f61417e83
 author: "msftman"
 ms.author: "deonhe"
 manager: "kvivek"
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 
 # Work with business process flows using code

@@ -8,7 +8,6 @@ author: mgblythe
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: mblythe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - developer
 ---
 # Microsoft Flow for enterprise developers, ISVs, and partners
 
