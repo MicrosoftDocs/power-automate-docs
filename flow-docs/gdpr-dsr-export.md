@@ -209,5 +209,5 @@ Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 ## Export Gateway Settings
-Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
