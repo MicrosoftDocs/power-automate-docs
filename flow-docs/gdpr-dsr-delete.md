@@ -275,7 +275,7 @@ With the introduction of the Common Data Service for Apps, if a database is crea
 For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## Delete Gateway Settings
-Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## Delete User Details
 User details provide a linkage between a user and a specific tenant. Before running this command, ensure that all flows for this user have been re-assigned and/or deleted. Once that has been completed, an administrator can delete user details by calling the **Remove-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
