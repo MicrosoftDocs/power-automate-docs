@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Add multiple actions and advanced options to a flow
 Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.

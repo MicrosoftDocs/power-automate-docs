@@ -8,7 +8,6 @@ author: MSFTMan
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Manage sequential approvals with Microsoft Flow
 Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.

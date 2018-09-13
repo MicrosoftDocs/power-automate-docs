@@ -8,7 +8,6 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/28/2018
 ms.author: deonhe
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Data loss prevention (DLP) policies
 

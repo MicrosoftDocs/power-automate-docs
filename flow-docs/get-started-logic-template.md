@@ -8,7 +8,6 @@ author: aftowen
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Create a flow from a template in Microsoft Flow
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.

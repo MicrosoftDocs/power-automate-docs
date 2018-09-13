@@ -1,16 +1,6 @@
 ---
 title: Use expressions with conditions. | Microsoft Docs
-description: 'Use advanced expressions such as '
-"\"and\"\",": ''
-"\"\"or\"\",": ''
-"\"\"empty\"\",": ''
-"\"\"less\"\"": ''
-and: ''
-"\"\"greater\"\"": ''
-with: ''
-microsoft: ''
-flow: ''
-conditions.": ''
+description: 'Use advanced expressions such as "and", "or", "empty", "less" and "greater" with Microsoft Flow Conditions.'
 services: ''
 suite: flow
 documentationcenter: na
@@ -26,7 +16,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/01/2017
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Use expressions in conditions to check multiple values
 In this walkthrough, you'll learn to use expressions and **Conditions** to compare multiple values in **Advanced mode**.

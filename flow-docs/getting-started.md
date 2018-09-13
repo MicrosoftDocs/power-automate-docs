@@ -5,10 +5,9 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: hero-article
@@ -16,14 +15,22 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 
 # Get started with Microsoft Flow #
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Welcome! Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+Welcome! Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+
+The main types of flows are [automated](get-started-logic-flow.md), [button](introduction-to-button-flows.md), [scheduled](run-scheduled-tasks.md), and [business process](business-process-flows-overview.md) flows.
+
+If you are a Dynamics 365 customer engagement customizer, you may also be familiar with Classic Common Data Service for Apps processes which include, [workflows](configure-workflow-steps.md), [actions](create-actions.md), [mobile task flows](create-mobile-task-flow.md), and [dialogs](use-cds-for-apps-dialogs.md).
 
 The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft Flow, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
 

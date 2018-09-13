@@ -8,7 +8,6 @@ author: MSFTMan
 manager: KFile
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Understand on-premises data gateways for Microsoft Flow
 Use the on-premises data gateway with Microsoft Flow to establish secure connections to your on-premises data sources such as Microsoft SQL Server.
