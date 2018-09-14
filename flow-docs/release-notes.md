@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
 search.app: 
   - Flow
@@ -44,6 +44,29 @@ search.audienceType:
 3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+### Release 2018-08-31
+
+- **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Microsoft Flow designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
+- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and Microsoft School Data Sync.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
+
+### Release 2018-08-24
+
+- **New calendar sync templates** - New calendar templates that copy events between Google Calendar and Office 365 or Outlook.com.
+- **Multiple value support for SharePoint** - Read and write for multiple-value fields in SharePoint that are Choice, Person or Lookup types.
+- **Send approvals on behalf of other users in your organization** - Send approvals on behalf of other users in your organization - for example, the person who uploaded the file in the SharePoint list, instead of the person who created the flow.
+- **More button input types** - Buttons have two new input types: Number and Yes/No.
+- **Connector updates** - A new NetDocuments connector, improvements to Azure connectors and more.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-types-more/) about this release.
+
+### Release 2018-08-02
+
+The Microsoft Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. To get early access to the newest features, just create, and then use, an environment in the Preview region.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/flow-preview-program/) about this release.
 
 ### Release 2018-07-23
 
