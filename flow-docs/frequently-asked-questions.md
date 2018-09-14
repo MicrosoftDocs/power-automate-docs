@@ -124,6 +124,10 @@ Microsoft Flow is the successor to SharePoint Designer for many common business 
 ### How does Microsoft Flow ensure that corporate data isn't accidentally released to social media services?
 Administrators can create [data loss prevention policies](prevent-data-loss.md) to ensure that only sanctioned services are used in Microsoft Flow.
 
+### Does Microsoft Flow support service accounts?
+
+While you can create flows with a service account, we don't recommend doing so if the credentials for the service account are shared.
+
 ## Licensing
 ### Will Microsoft Flow still have a free or trial option?
 Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Microsoft Flow. You can activate your subscription at any time during your trial.
