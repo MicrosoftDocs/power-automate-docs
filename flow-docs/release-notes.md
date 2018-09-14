@@ -44,8 +44,8 @@ ms.author: stepsic
 
 ### Release 2018-08-31
 
-- **Test your flow by using real example data** - Use real, example, data from connectors to test your flow as you build it, right inside of the Flow portal, so you can know that the flow will run as expected.
-- **Five new connectors** - Added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and, one other new connector: Microsoft School Data Sync.
+- **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Microsoft Flow designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
+- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and Microsoft School Data Sync.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
@@ -61,7 +61,7 @@ ms.author: stepsic
 
 ### Release 2018-08-02
 
-The Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. All you need to do is to create an environment in Preview region, and you will get early access to the newest features.
+The Microsoft Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. To get early access to the newest features, just create, and then use, an environment in the Preview region.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/flow-preview-program/) about this release.
 
