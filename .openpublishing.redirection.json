@@ -56,7 +56,7 @@
             "redirect_document_id": true
           },
           {
-            "source_path": "flow-docs/guided-learning/build-flows",
+            "source_path": "flow-docs/guided-learning/build-flows.md",
             "redirect_url": "https://review.docs.microsoft.com/en-us/learn/modules/get-started-with-flow/2-create-first-flow",
             "redirect_document_id": true
           }
