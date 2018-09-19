@@ -49,7 +49,17 @@
         "source_path": "flow-docs/customapi-webhooks.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/create-webhook-trigger",
         "redirect_document_id": true
-        }
+        },
+        {
+            "source_path": "flow-docs/guided-learning/get-started.yml",
+            "redirect_url": "https://review.docs.microsoft.com/en-us/learn/modules/get-started-with-flow/1-introduction",
+            "redirect_document_id": true
+          },
+          {
+            "source_path": "flow-docs/guided-learning/build-flows",
+            "redirect_url": "https://review.docs.microsoft.com/en-us/learn/modules/get-started-with-flow/2-create-first-flow",
+            "redirect_document_id": true
+          }
     ]
 }
 
