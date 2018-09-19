@@ -42,8 +42,23 @@ Microsoft Flow is part of a powerful and adaptable business application platform
 ### What do I need to use Microsoft Flow?
 To use Microsoft Flow, all you need is a web browser and an email address.
 
-### What browsers does Microsoft Flow support?
-Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
+### What browsers and devices can I use with Microsoft Flow?
+
+You can run Microsoft Flow on all modern devices, and browsers.
+
+#### Supported devices
+
+Microsoft Flow runs great on modern devices. If you need to manage Microsoft Flow from a mobile device, try the Microsoft Flow mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+
+#### Supported browsers
+
+We recommend that you use the most up-to-date browser that's compatible with your operating system. We support the following browsers:
+
+* Microsoft Edge (latest version)
+* Internet Explorer 11
+* Safari (latest version, Mac and iOS)
+* Chrome (latest version)
+* Firefox (latest version)
 
 ### Which email addresses are supported?
 Microsoft Flow supports email addresses that end with anything except .gov and .mil.  
