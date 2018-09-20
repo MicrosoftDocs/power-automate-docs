@@ -54,11 +54,11 @@ Microsoft Flow runs great on modern devices. If you need to manage Microsoft Flo
 
 We recommend that you use the most up-to-date browser that's compatible with your operating system. We support the following browsers:
 
-* Microsoft Edge (latest version)
+* Microsoft Edge
 * Internet Explorer 11
-* Safari (latest version, Mac and iOS)
-* Chrome (latest version)
-* Firefox (latest version)
+* Safari
+* Chrome
+* Firefox
 
 ### Which email addresses are supported?
 Microsoft Flow supports email addresses that end with anything except .gov and .mil.  
