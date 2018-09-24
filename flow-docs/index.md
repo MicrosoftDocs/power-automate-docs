@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: Microsoft Flow Documentation | Microsoft Docs
-description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and much more.
 keywords: 
   - "Microsoft Flow"
   - "workflow"
@@ -55,16 +55,16 @@ search.audienceType:
                     <a href="#start-all"></a>
                     <ul id="start-all" class="cardsC">
                         <li>
-                            <a href="./guided-learning/index.yml">
+                            <a href="https://docs.microsoft.com/learn/paths/automate-process-using-flow">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.svg" alt="Take a guided learning tour" /><br/>                                            </div>
+                                                <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Take a guided learning tour</h3>
+                                            <h3>Learn Microsoft Flow</h3>
                                             <p>Start your learning journey with this sequenced collection of courses to understand the extensive and powerful capabilities of Microsoft Flow.</p>
                                         </div>
                                     </div>

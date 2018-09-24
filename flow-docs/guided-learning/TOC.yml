@@ -1,8 +1,8 @@
 - name: Get started
-  href: get-started.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/1-introduction
 - name: Build flows
-  href: build-flows.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/2-create-first-flow
 - name: Work with approvals
-  href: work-with-approvals.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request
 - name: Administer flows
   href: administer-flows.yml?tutorial-step=1
