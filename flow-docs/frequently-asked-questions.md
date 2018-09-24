@@ -152,5 +152,5 @@ Microsoft Flow offers both free and paid service levels. [Learn more about prici
 
 ## Learn more
 
-* Take a [guided learning tour](guided-learning/index.yml) of Microsoft Flow
+* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Microsoft Flow
 * Learn the basics of Microsoft Flow in the [getting started guide](getting-started.md)
