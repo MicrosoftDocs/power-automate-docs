@@ -12,6 +12,8 @@
     href: mobile-create-flow.md
   - name: Create a team flow
     href: create-team-flows.md
+  - name: Create a flow that uses Common Data Service
+    href: common-data-model-intro.md
 - name: Automated flows
   items:
   - name: Create a flow from scratch
