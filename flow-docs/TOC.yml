@@ -12,6 +12,8 @@
     href: mobile-create-flow.md
   - name: Create a team flow
     href: create-team-flows.md
+  - name: Create a flow that uses Common Data Service
+    href: common-data-model-intro.md
 - name: Automated flows
   items:
   - name: Create a flow from scratch
@@ -195,7 +197,7 @@
   - name: Webinars
     href: https://flow.microsoft.com/blog/category/webinars/
   - name: Blog
-    href: https://flow.microsoft.com/en-us/blog/
+    href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
 
