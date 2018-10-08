@@ -39,7 +39,7 @@ Expression|Description|Example
 |[greater](#use-the-greater-expression)|Takes two arguments and returns true if the first argument is greater than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>greater(10,10)
 |greaterOrEquals|Takes two arguments and returns true if the first argument is greater than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Returns true if the object, array, or string is empty.|This expression returns true:<br>empty('')
-|not|Takes two arguments and returns true if the arguments are false. <br><b>Note</b>: Both arguments must be Booleans.|This expression returns true:<br>not(contains('200 Success','Fail'))
+|not|Returns the oposite of a boolean value. |This expression returns true:<br>not(contains('200 Success','Fail'))
 |if|Returns a specific value if the expression results in true or false.|This expression returns "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## Prerequisites
