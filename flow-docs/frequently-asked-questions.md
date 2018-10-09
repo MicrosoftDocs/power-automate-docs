@@ -127,7 +127,7 @@ See the following table to understand how your flow responds when it's turned ba
 
 Trigger type|Description
 -------|--------
-Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed.
+Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed. Delete your flow if you don't want to process pending items.
 Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
 
 ### What regions and languages does Microsoft Flow support?
