@@ -28,6 +28,7 @@ Install and manage an on-premises data gateway to securely integrate a variety o
 With a gateway, you can connect to on-premises data over these connections:
 
 * Apache Impala
+* Custom connectors that you create
 * DB2
 * File System
 * Http with Azure AD
