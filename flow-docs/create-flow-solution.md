@@ -30,9 +30,7 @@ Flows you create in a solution are known as *solution-aware* flows. Follow these
 
 You need to have at least one solution before you can create a solution-aware flow.
 
-
-<!--from editor: Does the prerequisites section consist only of the sentence above? It would be good to add another heading here to indicate this is the start of the steps to create the flow. Otherwise, it looks like the whole section is part of the prerequisites.-->
-
+## Create the flow 
 
 1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
 1. Select **Solutions** from the navigation bar.
