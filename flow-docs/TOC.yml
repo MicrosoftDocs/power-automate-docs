@@ -111,6 +111,18 @@
     href: mobile-manage-flows.md
   - name: Publish a template
     href: publish-a-template.md
+  - name: olution-aware flows overview
+    href: overview-solution-flows.md
+  - name: Create a flow in a solution
+    href: create-flow-solution.md
+  - name: Export a flow from a solution
+    href: export-flow-solution.md
+  - name: Import a flow into a solution
+    href: import-flow-solution.md
+  - name: Edit a solution-aware flow
+    href: edit-solution-aware-flow.md
+  - name: Remove a solution-aware flow
+    href: remove-solution-aware-flow.md
 - name: Troubleshoot
   items:
   - name: Watch a flow
