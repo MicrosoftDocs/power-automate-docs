@@ -22,13 +22,11 @@ search.audienceType:
   - enduser
 ---
 
-#
-
-## Create a flow in a solution
+# Create a flow in a solution
 
 Flows you create in a solution are known as *solution-aware* flows. Follow these steps to create a solution-aware flow.
 
-### Prerequisites
+## Prerequisites
 
 You need to have at least one solution before you can create a solution-aware flow.
 
