@@ -49,11 +49,11 @@ Follow these steps to create a solution:
 
    ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
 
-1. Select **+ New Solution**.
+1. Select **+ New solution**.
 
    ![](./media/overview-solution-flows/select-new-solution.png)
 
-1. Provide all required information for your new solution, including **Display name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
+1. Provide all required information for your new solution, including **Display Name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
 
    ![](./media/overview-solution-flows/new-solution.png)
 
