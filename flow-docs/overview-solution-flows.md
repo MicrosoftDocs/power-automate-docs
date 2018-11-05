@@ -24,7 +24,7 @@ search.audienceType:
 
 # Overview
 
-When you host your flows in a [solution](), they become portable, making it effortless to move them, and all their components from one environment to another environment. A typical use case is for an Independent Software Vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment at clients who purchase these flows. This process is much easier when you create your flows in solutions, and the move the solutions and their contents.
+When you host your flows in a [solution](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), they become portable, making it effortless to move them, and all their components from one environment to another environment. A typical use case is for an Independent Software Vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment at clients who purchase these flows. This process is much easier when you create your flows in solutions, and the move the solutions and their contents.
 
 Flows you create inside a solution are known as *solution-aware* flows. You can add multiple flows in a single solution.
 
@@ -35,7 +35,9 @@ Flows you create inside a solution are known as *solution-aware* flows. You can 
 You must have the following components to create solutions, and solution-aware flows:
 
 * [CDS 2.0](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-* [XRM 9.1]()
+* An environment with version 9.1.0.267 or later.
+
+    To check your version, go to [Microsoft Flow Admin center](https://admin.flow.microsoft.com), select **Environments**, select the environment you are interested in, and then select the **Details** tab.
 
 ## Create a solution
 
@@ -61,7 +63,8 @@ Follow these steps to create a solution:
 
     ![](./media/overview-solution-flows/new-solution-created.png)
 
-    > [!TIP] Select **Solutions** to refresh the list of soltuons if your new solution doesn't appear.
+    > [!TIP]
+    > Select **Solutions** to refresh the list of soltuons if your new solution doesn't appear.
 
 ## Learn more
 

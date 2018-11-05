@@ -46,7 +46,8 @@ After you've exported your solution, you can import it into any environment that
 
     If there are no errors, the importation completes within a few moments.
 
-> [!NOTE] You cannot import a solution into an environment in which the solution already exists.
+> [!NOTE]
+>  You cannot import a solution into an environment in which the solution already exists.
 
 ## Learn more
 
