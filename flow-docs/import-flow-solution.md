@@ -30,6 +30,9 @@ After you've exported your solution, you can import it into any environment that
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
+
+<!--from editor: I don't think you need the symbols on the left of Import, below. They don't look like the arrow icon, and I think Import is clear enough. -->
+
 1. Select **<- Import**.
 
    ![](./media/import-flow-solution/select-import.png)
@@ -37,6 +40,9 @@ After you've exported your solution, you can import it into any environment that
 1. Select **Browse** from the **Import Solution** page that opens.
 1. Find and then select the solution that you want to import.
 1. Select **Open**.
+
+
+<!--from editor: The following screenshot says Select Solution Package, which differs from the sentence below. That might be confusing for readers. Also, "deonhe" is visible in the screenshot. We need to keep PII out of images. Can you blur that?--> 
 
    You should now see the **Import Solution Package** page similar to this image:
 
