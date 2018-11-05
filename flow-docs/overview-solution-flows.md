@@ -70,10 +70,8 @@ Follow these steps to create a solution:
 
 ## Learn more
 
-
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
-
 - [Create a flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+- [Remove a solution-aware flow](./remove-solution-aware-flow.md)
