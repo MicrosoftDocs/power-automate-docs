@@ -41,10 +41,7 @@ After you've exported your solution, you can import it into any environment that
 1. Find and then select the solution that you want to import.
 1. Select **Open**.
 
-
-<!--from editor: The following screenshot says Select Solution Package, which differs from the sentence below. That might be confusing for readers. Also, "deonhe" is visible in the screenshot. We need to keep PII out of images. Can you blur that?--> 
-
-   You should now see the **Import Solution Package** page similar to this image:
+   You should now see the **Select Solution Package** page similar to this image:
 
    ![](./media/import-flow-solution/import-solution.png)
 
