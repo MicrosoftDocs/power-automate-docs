@@ -31,12 +31,12 @@ Follow these steps to edit a solution-aware flow.
 1. Sign into Microsoft Flow, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains that flow you want to edit.
 
-    ![](./media/flows-solutions/new-flow-inside-solution.png)
+    ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
 
 1. Select **...** (More Commands) for your flow, and then select **Turn off**.
 1. Select **...** (More Commands) for your flow, and then select **Edit**.
 
-    ![](./media/flows-solutions/edit-flow.png)
+    ![](./media/edit-solution-aware-flow/edit-flow.png)
 1. Make your edits in the Microsoft Flow designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.
 
