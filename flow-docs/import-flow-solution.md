@@ -26,32 +26,32 @@ search.audienceType:
 
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
 
-1. Sign into Microsoft Flow, and then select **Solutions** from the navigation bar.
+1. Sign in to Microsoft Flow, and then select **Solutions** from the navigation bar.
 
-    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
+   ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
 1. Select **<- Import**.
 
-    ![](./media/import-flow-solution/select-import.png)
+   ![](./media/import-flow-solution/select-import.png)
 
 1. Select **Browse** from the **Import Solution** page that opens.
-1. Find, and then select the solution that you want to import.
+1. Find and then select the solution that you want to import.
 1. Select **Open**.
 
-    You should now see the **Import Solution Package** page similar to this image:
+   You should now see the **Import Solution Package** page similar to this image:
 
-    ![](./media/import-flow-solution/import-solution.png)
+   ![](./media/import-flow-solution/import-solution.png)
 
 1. Select **Next**.
 
-    If there are no errors, the importation completes within a few moments.
+   If there are no errors, the importation completes within a few moments.
 
 > [!NOTE]
->  You cannot import a solution into an environment in which the solution already exists.
+> You cannot import a solution into an environment in which the solution already exists.
 
 ## Learn more
 
-* [Create a solution](./overview-solution-flows.md)
-* [Create a flow in a solution](./create-flow-solution.md)
-* [Export a solution](./export-flow-solution.md)
-* [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+[Create a solution](./overview-solution-flows.md)
+[Create a flow in a solution](./create-flow-solution.md)
+[Export a solution](./export-flow-solution.md)
+[Edit a solution-aware flow](./edit-solution-aware-flow.md)
