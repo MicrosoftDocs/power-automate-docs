@@ -41,7 +41,7 @@ Delete from this environment|The flow is deleted; it is not available in the env
 
 ## Learn more
 
-* [Create a solution](./create-solution.md)
+* [Create a solution](./overview-solution-flows.md)
 * [Create a flow in a solution](./create-flow-solution.md)
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)

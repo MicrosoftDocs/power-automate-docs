@@ -50,7 +50,7 @@ After you've exported your solution, you can import it into any environment that
 
 ## Learn more
 
-* [Create a solution](./create-solution.md)
+* [Create a solution](./overview-solution-flows.md)
 * [Create a flow in a solution](./create-flow-solution.md)
 * [Export a solution](./export-flow-solution.md)
 * [Edit a solution-aware flow](./edit-solution-aware-flow.md)

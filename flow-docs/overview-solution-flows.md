@@ -65,7 +65,6 @@ Follow these steps to create a solution:
 
 ## Learn more
 
-* [Create a solution](./create-solution.md)
 * [Create a flow in a solution](./create-flow-solution.md)
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)

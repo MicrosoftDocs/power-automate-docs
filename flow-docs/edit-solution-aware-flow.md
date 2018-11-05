@@ -42,7 +42,7 @@ Follow these steps to edit a solution-aware flow.
 
 ## Learn more
 
-* [Create a solution](create-solution.md)
-* [Create a flow in a solution](create-flow-solution.md)
-* [Import a solution](import-flow-solution.md)
-* [Remove a solution-aware flow](remove-solution-aware-flow.md)
+* [Create a solution](./overview-solution-flows.md)
+* [Export a solution](./export-flow-solution.md)
+* [Import a solution](./import-flow-solution.md)
+* [Remove a solution-aware flow](./remove-solution-aware-flow.md)

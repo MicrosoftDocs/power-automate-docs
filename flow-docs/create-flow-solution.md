@@ -66,7 +66,8 @@ You need to have at least one solution before you can create a solutiuon-aware f
 
 ## Learn more
 
-* [Create a solution](./create-solution.md)
+* [Create a solution](./overview-solution-flows.md)
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)
 * [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+* [Remove a solution-aware flow](./remove-solution-aware-flow.md)
