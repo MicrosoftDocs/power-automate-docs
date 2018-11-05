@@ -31,12 +31,12 @@ Follow these steps to move your solution and its dependencies to a new environme
 1. Select **|->Export** from the menu at the top.
 1. Select **As unmanaged**.
 
-    ![](./media/export-flow-solution/flow-export-options.png)
+   ![](./media/export-flow-solution/flow-export-options.png)
 
 1. Save the solution with a name of your choice.
 
-    > [!NOTE]
-    >  **As managed** is not supported currently.
+   > [!NOTE]
+   > **As managed** is not supported currently.
 
 ## Learn more
 
