@@ -28,17 +28,22 @@ Follow these steps to move your solution and its dependencies to a new environme
 
 1. Select **Solutions** from the navigation bar.
 1. Select the solution you want to export.
+
+<!--from editor: I think you could just say **Export** below and not have the symbols on the left. They don't really look like the icon in the image and Export is clear enough.-->
+
 1. Select **|->Export** from the menu at the top.
 1. Select **As unmanaged**.
 
-    ![](./media/export-flow-solution/flow-export-options.png)
+   ![](./media/export-flow-solution/flow-export-options.png)
 
 1. Save the solution with a name of your choice.
 
-    > [!NOTE]
-    >  **As managed** is not supported currently.
+   > [!NOTE]
+   > **As managed** is not supported currently.
 
 ## Learn more
+
+<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
 * [Create a solution](./overview-solution-flows.md)
 * [Create a flow in a solution](./create-flow-solution.md)
