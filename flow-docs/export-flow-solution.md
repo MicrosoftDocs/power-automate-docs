@@ -28,10 +28,7 @@ Follow these steps to move your solution and its dependencies to a new environme
 
 1. Select **Solutions** from the navigation bar.
 1. Select the solution you want to export.
-
-<!--from editor: I think you could just say **Export** below and not have the symbols on the left. They don't really look like the icon in the image and Export is clear enough.-->
-
-1. Select **|->Export** from the menu at the top.
+1. Select **Export** from the menu at the top.
 1. Select **As unmanaged**.
 
    ![](./media/export-flow-solution/flow-export-options.png)
