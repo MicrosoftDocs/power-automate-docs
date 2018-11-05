@@ -26,7 +26,7 @@ search.audienceType:
 
 Follow these steps to edit a solution-aware flow.
 
-[!IMPORTANT] Stop your flow before you begin editing it, or you might lose your changes.
+> [!IMPORTANT] Stop your flow before you begin editing it, or you might lose your changes.
 
 1. Sign into Microsoft Flow, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains that flow you want to edit.
