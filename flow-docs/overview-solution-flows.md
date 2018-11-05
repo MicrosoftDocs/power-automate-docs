@@ -61,7 +61,7 @@ Follow these steps to create a solution:
 
     ![](./media/overview-solution-flows/new-solution-created.png)
 
-    ![TIP] Select **Solutions** to refresh the list of soltuons if your new solution doesn't appear.
+    [!TIP] Select **Solutions** to refresh the list of soltuons if your new solution doesn't appear.
 
 ## Learn more
 
