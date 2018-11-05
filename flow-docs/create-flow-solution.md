@@ -53,7 +53,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
 1. Use the available connectors and triggers to build your flow.
 
-   In this example, we'll build a simple flow that sends a notification when an email arrives into my inbox.
+   In this example, we'll build a simple flow that sends a notification when an email arrives in your inbox.
 1. Search for and then select **Office 365 Outlook**.
 1. Select the **When a new email arrives** trigger.
 1. Select **+ New step**.
@@ -61,11 +61,11 @@ You need to have at least one solution before you can create a solution-aware fl
 1. Add the **Subject** dynamic token to the **Text** field of the **Send me a mobile notification** box.
 1. Give your flow a name and then save the flow.
 
-   If you're following along, your flow should appear like this image:
+   Your flow should appear like this:
 
    ![](./media/create-flow-solution/new-email-notification-flow.png)
    
-1. Select **Solutions** and see your flow in the solution:
+1. Select **Solutions** to see your flow in the solution:
 
    ![](./media/create-flow-solution/new-flow-inside-solution.png)
 
