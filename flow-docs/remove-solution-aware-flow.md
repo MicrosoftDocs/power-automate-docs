@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Delete a solution-aware flow
+# Remove a solution-aware flow
 
 You can either remove a flow from a solution, or delete the flow from an environment entirely.
 
