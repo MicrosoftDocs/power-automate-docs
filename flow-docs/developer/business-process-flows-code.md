@@ -92,7 +92,7 @@ You can retrieve the name of your business process flow entity using any of the 
          }
       ]
     }
-
+    ```
 - **Using the Organization service**: Use the following code sample:
 
     ```c#
@@ -114,7 +114,7 @@ You can retrieve the name of your business process flow entity using any of the 
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
 > The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
 > ```http
