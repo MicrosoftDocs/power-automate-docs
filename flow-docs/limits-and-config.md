@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/04/2018
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Limits and configuration in Microsoft Flow
 This topic contains information about the current limits and configuration details for flows.
@@ -25,17 +28,21 @@ This topic contains information about the current limits and configuration detai
 These are limits for a single outgoing request.
 
 ### Timeout
+
 | Name | Limit |
 | --- | --- |
-| Request Timeout |120 Seconds |
+| Request Timeout for synchronous calls |120 Seconds |
+| Request Timeout for Async calls|Configurable. Max is 30 days. |
 
 ### Message size
+
 | Name | Limit | Notes |
 | --- | --- | --- |
 | Message size |100 MB |Not all APIs support the full 100MB. |
 | Expression evaluation limit |131,072 characters |`@concat()`, `@base64()`, `string` can't exceed this limit. |
 
 ### Retry policy
+
 | Name | Limit |
 | --- | --- |
 | Retry attempts |90 | The default is 4. To change the default use action settings | 
@@ -51,6 +58,7 @@ These are the limits for a single flow run.
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
+| Max run history retention |28 days, per GDPR rules. | |
 
 ## Looping and debatching limits
 These are limits for a single flow run.
@@ -114,4 +122,4 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph A
 *.flow.microsoft.com|https|Access to the Microsoft Flow site.
 *.powerapps.com|https|Access to the PowerApps site.
 *.azureedge.net|https|Access to the Microsoft Flow CDN.
-
+nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).

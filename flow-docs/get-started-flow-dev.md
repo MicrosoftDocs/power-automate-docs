@@ -8,7 +8,6 @@ author: bbarath
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Start to build with Microsoft Flow
 
@@ -52,11 +55,11 @@ After you submit this information, Microsoft starts assessing your API's functio
 
 ## Embed the flow experience into your website or app
 
-You can [embed](embed-flow-dev.md) Microsoft Flow into your app to enable deep, in-context integration between your app and all other services that Microsoft Flow supports. For example, you can:
+You can [embed](developer/embed-flow-dev.md) Microsoft Flow into your app to enable deep, in-context integration between your app and all other services that Microsoft Flow supports. For example, you can:
 
 * Browse all templates that relate to your service and let users select a template.
 * Manage the flows that users have related to your app.
 
 ## Next steps
 
-Learn how to [embed](embed-flow-dev.md) Microsoft Flow into your app.
+Learn how to [embed](developer/embed-flow-dev.md) Microsoft Flow into your app.

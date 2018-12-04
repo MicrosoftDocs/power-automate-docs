@@ -1,4 +1,4 @@
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
    
     ![sign in](media/modern-approvals/sign-in.png)
 2. Select the **My flows** tab.
@@ -7,4 +7,6 @@
 3. Select **Create from blank**.
    
     ![create from blank](media/modern-approvals/blank-template.png)
+
+4. Select the **Create from blank** button.
 

@@ -1,5 +1,3 @@
-
-
 ---
 title: Watch a flow run | Microsoft Docs
 description: View the inputs and outputs for each step of a flow to verify that it behaves as expected.
@@ -10,7 +8,6 @@ author: merwanhade
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -18,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
 ms.author: mhade
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Watch your flows in action
 

@@ -8,7 +8,6 @@ author: sunaysv
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/10/2017
 ms.author: sunayv
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Submit a template to the Microsoft Flow gallery
 Submit a flow template to the gallery of templates for Microsoft Flow. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow. 

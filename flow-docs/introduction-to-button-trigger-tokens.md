@@ -8,7 +8,6 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Get started with button trigger tokens
 ## What are button trigger tokens?
@@ -88,6 +91,4 @@ Congratulations, you've just created a button flow that uses both the date and f
 
 ## Next steps
 * [Share button flows](share-buttons.md)
-* [Learn about button flows](introduction-to-button-flows.md)  
-* [Learn about flows](guided-learning/get-started.yml#step-1)
-
+* [Learn about button flows](introduction-to-button-flows.md)

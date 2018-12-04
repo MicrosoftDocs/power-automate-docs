@@ -8,7 +8,6 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
 ms.author: deonhe
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Manage an on-premises data gateway in Microsoft Flow
 
@@ -24,16 +27,21 @@ Install and manage an on-premises data gateway to securely integrate a variety o
 
 With a gateway, you can connect to on-premises data over these connections:
 
+* Apache Impala
+* Custom connectors that you create
+* DB2
+* File System
+* Http with Azure AD
+* Informix
+* MySQL
+* Oracle Database
+* PostgreSQL
 * SharePoint
 * SQL Server
-* Oracle
-* Informix
-* Filesystem
-* DB2
+* Teradata (Preview)
 
 > [!IMPORTANT]
 > Microsoft SharePoint data gateways now support both HTTP and HTTPS traffic.
-
 
 ## Prerequisites
 

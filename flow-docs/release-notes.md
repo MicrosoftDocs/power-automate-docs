@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/31/2018
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Release notes
 ## Top questions
@@ -221,7 +224,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-10-19
 
-- **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each containers.
+- **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each container actions.
 - **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
 - **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
 - **Improved connection experience** - Notifications in the Flow portal when a connection is broken and richer connection details.
@@ -491,7 +494,7 @@ You can now leverage valuable information when triggering a button flow, such as
 ### Release 2016-11-23
 * **Power BI alert support in Flow** - Turn insights into action by triggering flows from Power BI data alerts.
 * **Mobile application improvements** - Added the ability to create flows from blank, in addition to the already existing experience of creation from templates. We also improved performance when viewing flow runs.
-* **Eight new services** - You can now connect to Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure DocumentDB, Cognitive Services Face API, HipChat, and Wordpress.
+* **Eight new services** - You can now connect to Azure Resource Manager, Azure Queues, Chatter, Disqus, Azure Cosmos DB, Cognitive Services Face API, HipChat, and Wordpress.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) about this release.
 

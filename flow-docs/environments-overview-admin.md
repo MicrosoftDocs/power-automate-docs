@@ -8,7 +8,6 @@ author: sunaysv
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-
+search.app: 
+  - Flow
+  - Powerplatform
+search.audienceType: 
+  - admin
 ---
 # Using environments within Microsoft Flow
 
@@ -77,13 +80,22 @@ Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in 
 
 1. In the [Microsoft Flow admin center](https://admin.flow.microsoft.com), select **Environments**. You'll see all existing environments:
    ![Environments](./media/environments-overview-admin/environments-list.png)
-1. Select **New environment** and then provide the required information:
+2. Select **New environment** and then provide the required information:
 
-   | Property | Description |
-   | --- | --- |
-   | Environment Name |Enter the name of your environment, such as `Human Resources`, or `Europe flows`. |
-   | Region |Choose the location to host your environment. For the best performance, use a region closest to your users.|
-1. Select **Create environment**.
+
+   |     Property     |                                                 Description                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Environment Name |              Enter the name of your environment, such as `Human Resources`, or `Europe flows`.              |
+   |      Region      | Choose the location to host your environment. For the best performance, use a region closest to your users. |
+   | Environment Type |                  Choose an environment type based upon your license: Production or Trial.                   |
+
+     ![environment settings](./media/environments-overview-admin/new-environment-dialog.png)
+3. Click **Create environment**.
+4. You now have an option to **Create database** or **Skip**.
+5. If you choose to **Create Database**, you will be prompted for a **Currency** and **Language** for the Database. In addition, you can also choose to have sample apps and data deployed.
+
+   ![database configuration settings](./media/environments-overview-admin/create-database-dialog2.png)
+
 
 You can now add users to the environment.
 
@@ -98,7 +110,7 @@ You can now add users to the environment.
    ![details tab](./media/environments-overview-admin/open-environment.png)
 1. Select **Security**.
 
-    In **Environment roles**, there're two options: **Environment Admin** and **Environment Maker**:
+    If you did not select **Create Database** in previous steps, in **Environment roles**, there're two options: **Environment Admin** and **Environment Maker**:
 
     ![the admin roles](./media/environments-overview-admin/environment-roles.png)
 
@@ -130,13 +142,31 @@ You can now add users to the environment.
     You'll see all existing permission sets and options to edit or delete roles.
 
     Select **New permission set** to create a new permission set.
-1. In **Database**, create a database to store your data. This database is part of the Common Data Service.
+1. If you did choose to **Create Database**, to store your data, this database is part of the Common Data Service. When you click on the **Security** tab you will be prompted to navigate to the **Dynamics 365 instance management center** where role-based security can be applied.
+![dynamics security settings](./media/environments-overview-admin/Security-Link-D365.png)
+
+1. Select the user from the list of users in the environment / instance.
+  ![dynamics security settings](./media/environments-overview-admin/D365-Select-User.png)
+
+1. Assign the role to the user.
+
+   ![assign role to user](./media/environments-overview-admin/D365-Assign-Role.png)
+
+> [!NOTE]
+> Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. 
+>
+>
+
+### Database security
+The ability to create and modify a database schema and to connect to the data stored within a database that is provisioned in your environment is controlled by the database's user roles and permission sets. You can manage the user roles and permission sets for your environment's database from the **User roles** and **Permission sets** section of the **Security** tab. 
+
+   ![assign role to user](./media/environments-overview-admin/D365-Assign-Role.png)
 
 ## Frequently asked questions
 
 ### Can I move a flow between environments?
 
-No, flows cannot be moved between environments. Recreate the flow in the different environment.
+Yes, flows can be exported from one environment and imported into another environment.
 
 ### Which license includes the Common Data Service?
 

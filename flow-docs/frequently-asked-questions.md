@@ -8,7 +8,6 @@ author: stepsic-microsoft-com
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Frequently asked questions
 ## Audience and strategy
@@ -39,8 +42,23 @@ Microsoft Flow is part of a powerful and adaptable business application platform
 ### What do I need to use Microsoft Flow?
 To use Microsoft Flow, all you need is a web browser and an email address.
 
-### What browsers does Microsoft Flow support?
-Microsoft Flow supports Microsoft Edge and the current versions of Chrome and Safari.
+### What browsers and devices can I use with Microsoft Flow?
+
+You can run Microsoft Flow on all modern devices, and browsers.
+
+#### Supported devices
+
+Microsoft Flow runs great on modern devices. If you need to manage Microsoft Flow from a mobile device, try the Microsoft Flow mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+
+#### Supported browsers
+
+We recommend that you use the most up-to-date browser that's compatible with your operating system. We support the following browsers:
+
+* Microsoft Edge
+* Internet Explorer 11
+* Safari
+* Chrome
+* Firefox
 
 ### Which email addresses are supported?
 Microsoft Flow supports email addresses that end with anything except .gov and .mil.  
@@ -76,7 +94,7 @@ Templates are pre-built flows for popular and common scenarios. Using a template
 You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and the Common Data Service for PowerApps.
 
 ### How do I connect to a REST API in my flow?
-You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](register-custom-api.md).
+You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](developer/register-custom-api.md).
 
 ### How do I connect to SQL Server and other on-premises data sources?
 You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md).
@@ -101,6 +119,17 @@ Get started with the following resources:
 ### What operating systems does the mobile app for Microsoft Flow support?
 The Microsoft Flow mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+### Can flows be turned off or disabled?
+
+Yes, each flow has an on/off switch that enables you to stop the flow from processing requests.
+
+See the following table to understand how your flow responds when it's turned back on.
+
+Trigger type|Description
+-------|--------
+Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed. Delete your flow if you don't want to process pending items.
+Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
+
 ### What regions and languages does Microsoft Flow support?
 Microsoft Flow is available in 42 languages and [six regions](regions-overview.md).
 
@@ -110,6 +139,10 @@ Microsoft Flow is the successor to SharePoint Designer for many common business 
 ### How does Microsoft Flow ensure that corporate data isn't accidentally released to social media services?
 Administrators can create [data loss prevention policies](prevent-data-loss.md) to ensure that only sanctioned services are used in Microsoft Flow.
 
+### Does Microsoft Flow support service accounts?
+
+While you can create flows with a service account, we don't recommend doing so if the credentials for the service account are shared.
+
 ## Licensing
 ### Will Microsoft Flow still have a free or trial option?
 Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Microsoft Flow. You can activate your subscription at any time during your trial.
@@ -117,3 +150,7 @@ Yes. You can use our free offering, which has limited user rights, or you can si
 ### What pricing plans do you offer?
 Microsoft Flow offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
 
+## Learn more
+
+* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Microsoft Flow
+* Learn the basics of Microsoft Flow in the [getting started guide](getting-started.md)

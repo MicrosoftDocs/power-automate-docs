@@ -8,7 +8,6 @@ author: sunaysv
 manager: anneta
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,7 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Choosing an environment
 
@@ -70,7 +73,7 @@ Follow these steps to switch environments:
 Before you create a flow, select the environment into which you'll add the flow and its resources.
 
 > [!NOTE]
-If you create a flow in the wrong environment, you'll have to delete it, and then create it in the correct environment.
+> If you create a flow in the wrong environment, you'll have to delete it, and then create it in the correct environment.
 
 Consider the following factors when choosing an environment to host your flows:
 
@@ -79,7 +82,7 @@ Consider the following factors when choosing an environment to host your flows:
 * You'll see all environments in which you can edit resources. However, you'll need to ask an administrator to add you as a maker to all environments in which you want to create flows.
 
 > [!NOTE]
-You'll always be able to create flows in the default environment.
+> You'll always be able to create flows in the default environment.
 
 ## Next steps
 

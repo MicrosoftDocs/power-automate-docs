@@ -7,7 +7,11 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "xref_query_tags": [
+        "/dotnet",
+        "/dynamics365/customer-engagement/web-api"
+      ],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
