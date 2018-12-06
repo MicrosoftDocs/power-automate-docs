@@ -60,7 +60,7 @@ A business process flow definition is stored in the <xref:Microsoft.Dynamics.CRM
   
  For example, if you specified "My Custom BPF" as the name of the business process flow definition and are using the default publisher (new) for your active solution, the name of the custom entity created for storing process instances will be "new_mycustombpf".  
   
- If the `uniquename` value isn't available for a business process flow definition, for example if the business process flow was imported as part of solution from an earlier version, the default name of the custom entity will be "*\<activesolutionprefix>*\_bpf\_*<GUID_BPF_Definition>*:  
+ If the `uniquename` value isn't available for a business process flow definition, for example if the business process flow was imported as part of solution from an earlier version, the default name of the custom entity will be "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
 >  The sample business process flow records use system entities to store the corresponding business process flow instance records.  
