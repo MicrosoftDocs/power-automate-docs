@@ -136,7 +136,7 @@ GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
 
-This returns a JSON response with list of environments, from which you can pick any environment. You can look for the default user enviroment by checking the property `properties.isDefault=true`.
+This returns a JSON response with list of environments, from which you can pick any environment. You can look for the default user environment by checking the property `properties.isDefault=true`.
 
 In this example, `requestParam` is defined as:
 
