@@ -124,7 +124,7 @@ Learn more about [hybrid solutions](https://azure.microsoft.com/documentation/ar
 | Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
