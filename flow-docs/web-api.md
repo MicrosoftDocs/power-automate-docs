@@ -1,20 +1,22 @@
 # Microsoft Flow Web API
 
-Going forward, all flows will be stored in the Common Data Service and leverage [the rich Web API that is documented here](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api). This documentation covers the management of flows included on the **Solutions** tab in the Microsoft Flow portal. Flows under **My Flows** will not yet appear under these apis, but they will soon.
+Going forward, all flows will be stored in the Common Data Service (CDS) and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
 
-## Compose the HTTP requests
+This content covers the management of flows included on the **Solutions** tab in Microsoft Flow. Currently, flows under **My Flows** are not supported by these APIs.
 
-To get started with creating requests you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
+## Compose HTTP requests
 
-The **Organization ID** is a unique name for the environment that your Flows are stored in. You can see the Organization ID by copying it from the environment switcher at the top-right of the Flow portal. Please note this is different from the **Environment ID** (which is the GUID that appears in the url of the flow).
+To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
+
+The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Microsoft Flow. Please note, the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the url of the flow).
 
 ![Environment switcher](media/web-api/get-organization-id.png)
 
-The **Regional Subdomain** depends on the location of your environment. When you log in to the Flow portal you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the table below:
+The **Regional Subdomain** depends on the location of your environment. When you log in to Microsoft Flow you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the table below:
 
 ![Flow URL](media/web-api/get-region-name.png)
 
-| Region         | Subdomain   | 
+| Region         | Subdomain   |
 | -------------- | ----------- |
 | United States  | crm         |
 | South America  | crm2        |
