@@ -38,12 +38,31 @@ search.audienceType:
    * If you're an Office 365 user, you get full access through the Microsoft Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
    * If you're an administrator, see information about [licensing for Microsoft Flow](organization-q-and-a.md), including with Office 365.
 
-## Known issues and resolutions
+## Known issues
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
-2. Flows can't write to Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
-3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
+2. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
+
+> [!IMPORTANT]
+>
+> **Announcing the release notes**
+>
+> Wondering about upcoming and recently released capabilities in Microsoft Flow?
+>[View the October 2018 release notes](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We've captured all the details, end to end, top to bottom, which you can use for planning. For more details, review [each weekly release](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) with the features and enhancements that it contains.
+>
+> The release notes prior to the October 2018 release will remain here for future reference, but all new releases will only be included in the above locations and not on this page.
+
+### Release 2018-09-24
+
+- **Admin access to help and support** - Open support tickets for Microsoft Flow in the Power platform admin center and provide additional details about your workflow failure.
+- **Redesigned Flow Community** - Finding what you need just got easier in the Flow Community.
+- **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a flow when there are new messages in a channel.
+- **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
+- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform Admin center.
+- **Power Query integration** - A Power Query experience is being built that will allow makers to shape data mashups from SQL Server.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) about this release.
 
 ### Release 2018-08-31
 
