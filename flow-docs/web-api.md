@@ -178,6 +178,21 @@ Authorization: Bearer ey...
 
 The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Relpace the workflow id in the above example. It will return:
 
+```
+{
+    "@odata.context": "https://org00000000.crm0.dynamics.com/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse",
+    "PrincipalAccesses": [
+        {
+            "AccessMask": "ReadAccess",
+            "Principal": {
+                "@odata.type": "#Microsoft.Dynamics.CRM.systemuser",
+                "ownerid": "00000000-0000-0000-0000-000000000005"
+            }
+        }
+    ]
+}
+```
+
 ## Share or unshare a flow
 
 You can share a flow using the `GrantAccess` action.
