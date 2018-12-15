@@ -1,10 +1,6 @@
 # Microsoft Flow Web API
 
-
-<!--from editor: Should it be Common Data Service (CDS) for Apps?-->
-
-
-Going forward, all flows will be stored in Common Data Service (CDS) and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
+Going forward, all flows will be stored in Common Data Service (CDS) for Apps and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
 
 This content covers the management of flows included on the **Solutions** tab in Microsoft Flow. Currently, flows under **My Flows** are not supported by these APIs.
 
@@ -126,10 +122,6 @@ The most important section is the `clientdata`, which contains the connectionRef
 
 There are three properties:
 
-
-<!--from editor: Shouldn't id be capitalized - ID?-->
-
-
 | Property name  | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
@@ -198,8 +190,6 @@ Authorization: Bearer ey...
 
 The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It will return:
 <!--what does it return-->
-
-<!--from editor: something seems to be missing above, as noted by another reviewer.-->
 
 ## Share or unshare a flow
 
