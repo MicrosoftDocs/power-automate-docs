@@ -66,7 +66,7 @@ The response contains the list of flows from within that environment:
 }
 ```
 
-## Listing flows
+## List flows
 
 As shown above, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are:
 
@@ -87,7 +87,6 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
 
-<!--in the table above, type is described as indicating if the flow is a real flow or a template. But, there are 3 numbered options??-->
 You can also request specific properties, filter the list of flows, and much more, as described in the [CDS for Apps API documentation for querying data](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
 ```http
@@ -96,7 +95,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## Creating a flow
+## Create a flow
 
 Call `POST` on the `workflows` collection to create a flow. The required properties for automated, instant, and scheduled flows are: category, name, type, primaryentity, and clientdata. Use `none` for the primaryentity for these types of flows.
 
@@ -128,11 +127,9 @@ There are three properties:
 | source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
 | id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
-<!--Does the id always include Microsoft.PowerApps even for flows?-->
-
 Once you execute the `POST` request, you'll receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
 
-## Updating a flow
+## Update a flow
 
 You can call `PATCH` on the workflow to update, turn on, or turn off a flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
 
@@ -162,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-### Deleting a flow
+### Delete a flow
 
 Delete a flow with a simple `DELETE` call:
 
@@ -175,10 +172,7 @@ Authorization: Bearer ey...
 > [!NOTE]
 > You cannot delete a flow that's turned on. You must first turn off the flow (see **Updating a flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
 
-
-<!--from editor: The following heading is awkwardly worded; I'm not sure how to rewrite it.-->
-
-## Get users a flow is shared with
+## Get all users with whom a flow is shared
 
 Listing the users with access uses a *function* in CDS for Apps. This function takes a single parameter of `Target`:
 
@@ -188,8 +182,22 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It will return:
-<!--what does it return-->
+The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It returns:
+
+```http
+{
+    "@odata.context": "https://org00000000.crm0.dynamics.com/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse",
+    "PrincipalAccesses": [
+        {
+            "AccessMask": "ReadAccess",
+            "Principal": {
+                "@odata.type": "#Microsoft.Dynamics.CRM.systemuser",
+                "ownerid": "00000000-0000-0000-0000-000000000005"
+            }
+        }
+    ]
+}
+```
 
 ## Share or unshare a flow
 
