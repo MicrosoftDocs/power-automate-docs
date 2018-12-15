@@ -8,13 +8,13 @@ This content covers the management of flows included on the **Solutions** tab in
 
 To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Microsoft Flow. Please note, the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the url of the flow).
+- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Microsoft Flow. Note that the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the URL of the flow).
 
-     ![Environment switcher](media/web-api/get-organization-id.png)
+     ![Environment switcher](media/web-api/get-organization-id.png "Environment switcher")
 
-- The **Regional Subdomain** depends on the location of your environment. When you log in to Microsoft Flow you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the table below:
+- The **Regional Subdomain** depends on the location of your environment. When you sign in to Microsoft Flow, you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the following table:
 
-     ![Flow URL](media/web-api/get-region-name.png)
+     ![Flow URL](media/web-api/get-region-name.png "Flow URL")
 
      | Region         | Subdomain   |
      | -------------- | ----------- |
@@ -31,7 +31,7 @@ To get started creating requests, you'll need to first construct the URL. The fo
 
 You can also programmatically get the list of instances available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the Online Management API.
 
-Each request to the Web API mut  have the `Accept` and `Content-type` headers set to `application/json`.
+Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
 Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) how to acquire an Azure AD Bearer token for CDS for Apps. For example, this request:
 
@@ -125,7 +125,7 @@ There are three properties:
 | Property name  | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
-| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end-user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded` that means that the connectionName you specify is always used. |
+| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
 | id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
 <!--Does the id always include Microsoft.PowerApps even for flows?-->
@@ -134,7 +134,7 @@ Once you execute the `POST` request, you'll receive the `OData-EntityId` header,
 
 ## Updating a flow
 
-You can call `PATCH` on the workflow to update, turn on or turn off a flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
+You can call `PATCH` on the workflow to update, turn on, or turn off a flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -148,7 +148,7 @@ Content-type: application/json
 ```
 
 > [!NOTE]
-> The syntax for changing the owner uses the `odata.bind` format. This means instead of patching the _ownerid_value field directly, you append `@odata.bind` to the property name and then wrap the id with `systemusers()`.
+> The syntax for changing the owner uses the `odata.bind` format. This means instead of patching the \_ownerid_value field directly, you append `@odata.bind` to the property name and then wrap the ID with `systemusers()`.
 
 In another example, you can turn a flow on with this call:
 
@@ -173,7 +173,10 @@ Authorization: Bearer ey...
 ```
 
 > [!NOTE]
-> You cannot delete a flow that's turned on. You must first turn off the flow (see **Updating a flow** above) or else you will see the error: `Cannot delete an active workflow definition.`
+> You cannot delete a flow that's turned on. You must first turn off the flow (see **Updating a flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
+
+
+<!--from editor: The following heading is awkwardly worded; I'm not sure how to rewrite it.-->
 
 ## Get users a flow is shared with
 
@@ -185,7 +188,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Relpace the workflow id in the above example. It will return:
+The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It will return:
 <!--what does it return-->
 
 ## Share or unshare a flow
@@ -223,7 +226,7 @@ The `AccessMask` parameter is a field with the following values for different pe
 | ShareAccess  | The right to share the flow.                         |
 | AssignAccess | The right to change the owner of the flow.           |
 
-You can combine permissions with a comma, for example, provide the ability to both read and update a flow by passing `ReadAccess,WriteAccess`.
+You can combine permissions with a comma; for example, provide the ability to both read and update a flow by passing `ReadAccess,WriteAccess`.
 
 You can *unshare* a flow with the `RevokeAccess` action. Here's an example:
 
@@ -306,6 +309,6 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-This call returns the status of the import operation including, `progress` (the percentage of completion), `startedon` and `completedon` (if import finished).
+This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
-Once import has completed successfully you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Microsoft Flow designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Microsoft Flow designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
