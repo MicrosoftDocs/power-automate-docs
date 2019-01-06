@@ -204,6 +204,8 @@
     href: limits-and-config.md
   - name: Release notes
     href: release-notes.md
+  - name: Microsoft Flow Web API
+    href: web-api.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md
 - name: Learn from others
