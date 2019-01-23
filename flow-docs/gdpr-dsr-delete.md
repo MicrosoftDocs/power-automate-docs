@@ -169,6 +169,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## Delete the user’s permissions to shared connections
 
 PowerApps Maker PowerShell cmdlets
@@ -275,11 +276,12 @@ With the introduction of the Common Data Service for Apps, if a database is crea
 For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## Delete Gateway Settings
+
 Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## Delete User Details
-User details provide a linkage between a user and a specific tenant. Before running this command, ensure that all flows for this user have been re-assigned and/or deleted. Once that has been completed, an administrator can delete user details by calling the **Remove-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
 
+User details provide a linkage between a user and a specific tenant. Before running this command, ensure that all flows for this user have been re-assigned and/or deleted. Once that has been completed, an administrator can delete user details by calling the **Remove-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
 
 PowerApps Admin PowerShell cmdlets
 ```PowerShell
@@ -291,14 +293,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > If a user still owns individual or team flows, this command will return an error. To resolve, delete all remaining flows or team flows for this user and run command again.
 >
 >
+
 ## Delete the user from Azure Active Directory
+
 Once the above steps have been completed, the final step is to delete the user’s account for Azure Active Directory by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## Delete the user from Unmanaged Tenant
+
 In the event you are a member of an unmanaged tenant, you need perform an **Account close** action from the [Work and School Privacy portal](https://go.microsoft.com/fwlink/?linkid=873123).
 
 To determine whether or not you are a user of a managed or unmanaged tenant, perform the following actions:
-1. Open the following URL in a browser, making sure to replace your email address in the URL:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Open the following URL in a browser, making sure to replace your email address in the URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. If you are a member of an **unmanaged tenant** then you will see an `"IsViral": true` in the response.
 
     {
@@ -312,4 +318,3 @@ To determine whether or not you are a user of a managed or unmanaged tenant, per
     }
 
 1. Otherwise, you belong to a managed tenant.
-

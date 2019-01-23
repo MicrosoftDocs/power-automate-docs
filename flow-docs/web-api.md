@@ -1,47 +1,49 @@
 # Microsoft Flow Web API
 
-Going forward, all flows will be stored in the Common Data Service and leverage [the rich Web API that is documented here](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api). This documentation covers the management of flows included on the **Solutions** tab in the Microsoft Flow portal. Flows under **My Flows** will not yet appear under these apis, but they will soon.
+Going forward, all flows will be stored in Common Data Service (CDS) for Apps and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
 
-## Compose the HTTP requests
+This content covers the management of flows included on the **Solutions** tab in Microsoft Flow. Currently, flows under **My Flows** are not supported by these APIs.
 
-To get started with creating requests you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
+## Compose HTTP requests
 
-The **Organization ID** is a unique name for the environment that your Flows are stored in. You can see the Organization ID by copying it from the environment switcher at the top-right of the Flow portal. Please note this is different from the **Environment ID** (which is the GUID that appears in the url of the flow).
+To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-![Environment switcher](media/web-api/get-organization-id.png)
+- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Microsoft Flow. Note that the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the URL of the flow).
 
-The **Regional Subdomain** depends on the location of your environment. When you log in to the Flow portal you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the table below:
+     ![Environment switcher](media/web-api/get-organization-id.png "Environment switcher")
 
-![Flow URL](media/web-api/get-region-name.png)
+- The **Regional Subdomain** depends on the location of your environment. When you sign in to Microsoft Flow, you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the following table:
 
-| Region         | Subdomain   | 
-| -------------- | ----------- |
-| United States  | crm         |
-| South America  | crm2        |
-| Canada         | crm3        |
-| Europe         | crm4        |
-| Asia Pacific   | crm5        |
-| Australia      | crm6        |
-| Japan          | crm7        |
-| India          | crm8        |
-| US Government  | crm9        |
-| United Kingdom | crm11       | 
+     ![Flow URL](media/web-api/get-region-name.png "Flow URL")
+
+     | Region         | Subdomain   |
+     | -------------- | ----------- |
+     | United States  | crm         |
+     | South America  | crm2        |
+     | Canada         | crm3        |
+     | Europe         | crm4        |
+     | Asia Pacific   | crm5        |
+     | Australia      | crm6        |
+     | Japan          | crm7        |
+     | India          | crm8        |
+     | US Government  | crm9        |
+     | United Kingdom | crm11       |
 
 You can also programmatically get the list of instances available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the Online Management API.
 
-Each request to the Web API should have the `Accept` and `Content-type` headers set to `application/json`.
+Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
-Finally, you will need to populate the `Authorization` header with an Azure AD Bearer token. [Start here](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) to learn how to acquire an Azure AD token for the Common Data Service. For example, this request:
+Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) how to acquire an Azure AD Bearer token for CDS for Apps. For example, this request:
 
-```
+```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
 Accept: application/json
 Authorization: Bearer ey...
 ```
 
-This will respond with the list of flows inside of that environment:
+The response contains the list of flows from within that environment:
 
-```
+```http
 {
 	"@odata.context": "https://org00000000.crm0.dynamics.com/api/data/v9.1/$metadata#workflows",
 	"value": [{
@@ -58,48 +60,48 @@ This will respond with the list of flows inside of that environment:
 		"_modifiedby_value": "00000000-0000-0000-0000-000000000003",
 		"_createdby_value": "00000000-0000-0000-0000-000000000003",
 		"type": 1,
-		"description": "This flow updates some data in the Common Data service.",
+		"description": "This flow updates some data in CDS for Apps.",
 		"clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"source\":\"NotSpecified\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\",\"tier\":\"NotSpecified\"}},\"definition\":{...}},\"schemaVersion\":\"1.0.0.0\"}"
 	}]
 }
 ```
 
-## Listing flows
+## List flows
 
-As shown above, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many different properties, but the most relevant are:
+As shown above, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are:
 
 | Property name     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | The category of flow. The different types are: 0 - classic CDS workflows,  1 - classic CDS dialogs, 2 - business rules, 3 - classic CDS actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
-| statecode         | Whether or not the flow is currently on or off: 0 - off, or 1 - on. |
-| workflowuniqueid  | An identifier for this installation of this flow. |
-| workflowid        | The unique identifier for this flow across all imports. |
-| createdon         | When the flow was created. |
-| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in the Common Data Service. |
-| modifiedon        | The last time that the flow was updated. |
-| ismanaged         | Whether or not the flow was installed via a managed solution. |
+| category          | The category of the flow. The different types are: 0 - classic CDS for Apps workflows,  1 - classic CDS for Apps dialogs, 2 - business rules, 3 - classic CDS for Apps actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
+| statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
+| workflowuniqueid  | The unique identifier for this installation of the flow. |
+| workflowid        | The unique identifier for a flow across all imports. |
+| createdon         | The date when the flow was created. |
+| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in CDS for Apps. |
+| modifiedon        | The last time the flow was updated. |
+| ismanaged         | Indicates if the flow was installed via a managed solution. |
 | name              | The display name that you have given the flow. |
-| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers entity in the Common Data Service. |
-| _createdby_value  | The user who created the flow. This is an id from the systemusers entity in the Common Data Service. |
-| type              | If the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
-| description       | User-provided description of the flow. | 
+| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers entity in CDS for Apps. |
+| _createdby_value  | The user who created the flow. This is an id from the systemusers entity in CDS for Apps. |
+| type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
+| description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
 
-You can also request specific properties, filter the list of flows and much more, as described in the [Common Data Service API documentation for querying data](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). For example, this query will return only the automated, instant or scheduled flows that are currently on:
+You can also request specific properties, filter the list of flows, and much more, as described in the [CDS for Apps API documentation for querying data](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
-```
+```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
 Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## Creating a flow
+## Create a flow
 
-A flow can be created by calling `POST` on the `workflows` collection. For automated, instant and scheduled flows the required properties are: category, name, type, primaryentity, and clientdata. For these types of flows use `none` for the primaryentity.
+Call `POST` on the `workflows` collection to create a flow. The required properties for automated, instant, and scheduled flows are: category, name, type, primaryentity, and clientdata. Use `none` for the primaryentity for these types of flows.
 
-You can also provide a description and statecode. 
+You can also provide a description and statecode.
 
-```
+```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
 Accept: application/json
 Authorization: Bearer ey...
@@ -109,27 +111,29 @@ Content-type: application/json
 		"statecode": 0,
 		"name": "Sample flow name",
 		"type": 1,
-		"description": "This flow reads some data from the Common Data service.",
+		"description": "This flow reads some data from CDS for Apps.",
 		"primaryentity":"none",
 		"clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"connectionName\":\"shared-commondataser-00000000-0000-0000-0000-000000000004\",\"source\":\"Invoker\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\"}},\"definition\":{\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": {\"defaultValue\": {},\"type\": \"Object\"},\"$authentication\": {\"defaultValue\": {},\"type\": \"SecureObject\"}},\"triggers\": {\"Recurrence\": {\"recurrence\": {\"frequency\": \"Minute\",\"interval\": 1},\"type\": \"Recurrence\"}},\"actions\": {\"List_records\": {\"runAfter\": {},\"metadata\": {\"flowSystemMetadata\": {\"swaggerOperationId\": \"GetItems_V2\"}},\"type\": \"ApiConnection\",\"inputs\": {\"host\": {\"api\": {\"runtimeUrl\": \"https:\/\/firstrelease-001.azure-apim.net\/apim\/commondataservice\"},\"connection\": {\"name\": \"@parameters('$connections')['shared_commondataservice']['connectionId']\"}},\"method\": \"get\",\"path\": \"\/v2\/datasets\/@{encodeURIComponent(encodeURIComponent('default.cds'))}\/tables\/@{encodeURIComponent(encodeURIComponent('accounts'))}\/items\",\"queries\": {\"$top\": 1},\"authentication\": \"@parameters('$authentication')\"}}},\"outputs\": {}}},\"schemaVersion\":\"1.0.0.0\"}"
 }
 ```
 
-The most important section is the `clientdata` which contains the connectionReferences that the flow uses, and the definition of the flow.  [See this documentation](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language) to read about how to construct the definition. The connectionReferences are the mappings to each connection used by the flow. There are three properties:
+The most important section is the `clientdata`, which contains the connectionReferences that the flow uses, and the [definition](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language) of the flow. The connectionReferences are the mappings to each connection that the flow uses.
+
+There are three properties:
 
 | Property name  | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
-| connectionName | The identifier of the connection. You can see this by going to the **Connections** page and then copying it from the URL of the connection once you select it. |
-| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end-user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded` that means that the connectionName you specify will always be used. |
-| id             | The identifier of the connector. It always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. | 
+| connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
+| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
+| id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
-Once you execute the `POST` request you will receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
+Once you execute the `POST` request, you'll receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
 
-## Updating a flow
+## Update a flow
 
-A flows can be updated, as well as turned on or off, by calling `PATCH` on the workflow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
+You can call `PATCH` on the workflow to update, turn on, or turn off a flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
 
-```
+```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
 Accept: application/json
 Authorization: Bearer ey...
@@ -140,11 +144,12 @@ Content-type: application/json
 }
 ```
 
-Note the syntax for changing the owner uses the `odata.bind` format. This means instead of patching the _ownerid_value field directly, you append `@odata.bind` to the property name and wrap the id with `systemusers()`. 
+> [!NOTE]
+> The syntax for changing the owner uses the `odata.bind` format. This means instead of patching the \_ownerid_value field directly, you append `@odata.bind` to the property name and then wrap the ID with `systemusers()`.
 
 In another example, you can turn a flow on with this call:
 
-```
+```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
 Accept: application/json
 Authorization: Bearer ey...
@@ -154,29 +159,45 @@ Content-type: application/json
 }
 ```
 
-### Deleting a flow
+### Delete a flow
 
-A flow can be deleted with a simple `DELETE` call:
+Delete a flow with a simple `DELETE` call:
 
-```
+```http
 DELETE https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
 Accept: application/json
 Authorization: Bearer ey...
 ```
 
-Note that you cannot delete a flow that is on. You must first turn off the flow (see **Updating a flow** above) or else you will see the error: `Cannot delete an active workflow definition.`
+> [!NOTE]
+> You cannot delete a flow that's turned on. You must first turn off the flow (see **Updating a flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
 
-## List users flow is shared with
+## Get all users with whom a flow is shared
 
-Listing the users with access uses a *function* in CDS. This function takes a single parameter of `Target`:
+Listing the users with access uses a *function* in CDS for Apps. This function takes a single parameter of `Target`:
 
-```
+```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
 Accept: application/json
 Authorization: Bearer ey...
 ```
 
-The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Relpace the workflow id in the above example. It will return:
+The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It returns:
+
+```http
+{
+    "@odata.context": "https://org00000000.crm0.dynamics.com/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccessResponse",
+    "PrincipalAccesses": [
+        {
+            "AccessMask": "ReadAccess",
+            "Principal": {
+                "@odata.type": "#Microsoft.Dynamics.CRM.systemuser",
+                "ownerid": "00000000-0000-0000-0000-000000000005"
+            }
+        }
+    ]
+}
+```
 
 ```
 {
@@ -197,7 +218,7 @@ The `Target` parameter is a JSON-like string with a single property called `@oda
 
 You can share a flow using the `GrantAccess` action.
 
-```
+```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/GrantAccess
 Accept: application/json
 Authorization: Bearer ey...
@@ -228,11 +249,11 @@ The `AccessMask` parameter is a field with the following values for different pe
 | ShareAccess  | The right to share the flow.                         |
 | AssignAccess | The right to change the owner of the flow.           |
 
-You can combine permissions with a comma, for example, provide the ability to both read and update a flow by passing `ReadAccess,WriteAccess`.
+You can combine permissions with a comma; for example, provide the ability to both read and update a flow by passing `ReadAccess,WriteAccess`.
 
-You can *unshare* a flow with the `RevokeAccess` action, which looks very similar:
+You can *unshare* a flow with the `RevokeAccess` action. Here's an example:
 
-```
+```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
 Accept: application/json
 Authorization: Bearer ey...
@@ -249,15 +270,15 @@ Content-type: application/json
 }
 ```
 
-This will remove all permissions granted in the `AccessMask`.
+`RevokeAccess` removes all permissions granted in the `AccessMask`.
 
-## Exporting flows
+## Export flows
 
-You can programmatically export flows to a .zip file by using the `ExportSolution` action. First, add the flows that you want to the solution. You can read more about solutions [here](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/). 
+Use the `ExportSolution` action to export flows to a .zip file. First, add the flows that you want to a [solution](https://flow.microsoft.com/blog/solutions-in-microsoft-flow/).
 
 Once your flow is in a solution, call the following action:
 
-```
+```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/ExportSolution
 Accept: application/json
 Authorization: Bearer ey...
@@ -268,9 +289,9 @@ Content-type: application/json
 }
 ```
 
-This will return a base 64-encoded string in the `ExportSoutionFile` property.
+`ExportSolution` returns a base 64-encoded string in the `ExportSoutionFile` property.
 
-```
+```http
 {
     "@odata.context": "https://org00000000.crm0.dynamics.com/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.ExportSolutionResponse",
     "ExportSolutionFile": "UEsDBBQAAgAI..."
@@ -279,19 +300,18 @@ This will return a base 64-encoded string in the `ExportSoutionFile` property.
 
 You can then save this file into source control and/or use whatever version management or distribution system you want.
 
-## Importing flows
+## Import flows
 
-To import a solution you will call the `ImportSolution` action.
+Call the `ImportSolution` action to import a solution.
 
-| Property name                    | Description                               | 
+| Property name                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in the Common Data Service, this flag needs to be set to `true` to import them. Otherwise they will not be overwritten. |
-| PublishWorkflows                 | Whether or not classic CDS workflows will be activated on import. This setting does not apply to other types of flows. |
-| ImportJobId                      | Provide a new, unique GUID to be used to track the import job. |
-| CustomizationFile                | Base 64-encoded zip file of the import solution. |
+| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in CDS for Apps, this flag needs to be set to `true` to import them. Otherwise they will not be overwritten. |
+| PublishWorkflows                 | Indicates if classic CDS for Apps workflows will be activated on import. This setting doesn't apply to other types of flows. |
+| ImportJobId                      | Provides a new, unique GUID to track the import job. |
+| CustomizationFile                | A base 64-encoded zip file that contains the solution. |
 
-
-```
+```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/ImportSolution
 Accept: application/json
 Authorization: Bearer ey...
@@ -304,14 +324,14 @@ Content-type: application/json
 }
 ```
 
-Since import is a long-running operation, the response to the ImportSolution action will be a `204 No content`. To track the progress, call a `GET` on the `importjobs` object, providing the `ImportJobId` that you included in the original `ImportSolution` action. 
+Since import is a long-running operation, the response to the ImportSolution action will be a `204 No content`. To track the progress, call a `GET` on the `importjobs` object, providing the `ImportJobId` that you included in the original `ImportSolution` action.
 
-```
+```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/importjobs(00000000-0000-0000-0000-000000000006)
 Accept: application/json
 Authorization: Bearer ey...
 ```
 
-This will return back the details of the import operation including `progress` (the percentage of completion), `startedon` and `completedon` (if import has finished).
+This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
-Once import has completed successfully you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must explicitly navigate to the UI of the flow designer and create each connection. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Microsoft Flow designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
