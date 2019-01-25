@@ -31,7 +31,7 @@ search.audienceType:
 2. How do I use an advanced condition or an expression?
    
    * Read about [adding conditions](add-condition.md).
-   * If you want multiple cases in a flow, click or tap **Add condition** from inside of an existing condition.
+   * If you want multiple cases in a flow, select **Add condition** from inside of an existing condition.
    * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
@@ -89,7 +89,7 @@ The Microsoft Flow Preview program is the way to get early access to the upcomin
 
 ### Release 2018-07-23
 
-- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Flow on your table data in Excel. Automate data processing or the copying/importing of data.
+- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Microsoft Flow on your table data in Excel. Automate data processing or the copying/importing of data.
 - **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service for Apps. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
 - **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
@@ -246,7 +246,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 - **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each container actions.
 - **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
 - **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
-- **Improved connection experience** - Notifications in the Flow portal when a connection is broken and richer connection details.
+- **Improved connection experience** - Notifications in the Microsoft Flow portal when a connection is broken and richer connection details.
 - **On-the-go collection** - A new template collection for [on-the-go workers](https://flow.microsoft.com/collections/onthego/).
 - **Email address button inputs** - Collect email addresses from users when they run buttons.
 - **File button inputs** - Get uploaded files, such as photos, from users when they run buttons.
@@ -270,7 +270,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 - **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
 - **Dynamics 365 for Customer Engagement** - Flow is now integrated in the UI for Dynamics 365 for Customer Engagement.
-- **Microsoft Trust Center** - Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
+- **Microsoft Trust Center** - Microsoft Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
 - **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
 - **Six new connectors** - Added LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy, and Azure Log Analytics Data Collection.
@@ -281,7 +281,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-09-21
 
-- **Download Flow History** - Download the run history of a Flow as a CSV file to open in Excel.
+- **Download Flow History** - Download the run history of a flow as a CSV file to open in Excel.
 - **Advanced recurrence** - Build recurring schedules to trigger your flows, for example, only trigger on weekdays.
 - **IntelliSense** - When typing in expressions, IntelliSense will provide suggestions for parameters.
 - **Four new connectors** - Added connectors for Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish and FlowForma.
@@ -439,7 +439,7 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
 
 ### Release 2017-02-27
-* **Trigger your flow buttons** - You can now trigger flow buttons right from the Microsoft Flow website. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
+* **Trigger your flow buttons** - You can now trigger flow buttons right from Microsoft Flow. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
 * **Five new services** - Added Oracle Database, Intercom, FreshBooks, LeanKit and WebMerge support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) about this release.
