@@ -109,6 +109,8 @@ Connections used in a flow fall into two categories:
 
 If you stop using a connection in a flow, that connection appears in the **Other** connections list, where it remains until an owner includes it in the flow again.
 
+Follow the steps to [update a connection owner](./create-team-flows.md/#update-connection-owner) to make changes to embedded connections.
+
 The list of connections appears under the list of owners in a flow's properties:
 
 ![embedded connections](./media/create-team-flows/embeddedconnections.png)
