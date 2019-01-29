@@ -69,8 +69,9 @@ Follow these steps to create a team flow or to add more owners to a team flow.
 You can add SharePoint lists as co-owners to a flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow is shared, you can simply distribute a link to it.
 
 ## Remove an owner
+
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly.
+> When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly. Go to 
 > 
 > 
 
@@ -87,7 +88,20 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
    
     ![user removed](./media/create-team-flows/removeowner4.png)
 
+
+## Update connection owner
+
+You might need to change the owner of a connection in a flow if you remove the existing owner. Follow these steps to switch the owner of a flow:
+
+1. Select the flow that contains the connection you want to update from the **Team flows** list.
+1. Select **See all** from the **OWNERS** list.
+1. Select **Manage connections** from the **Connections in use** list.
+1. Search for the connection you want to update, and then select it.
+1. Select **...** (more commands), and then select **Switch account**.
+1. Follow the steps to use a different account for the connection.
+
 ## Embedded and other connections
+
 Connections used in a flow fall into two categories:
 
 * **Embedded** &mdash; These connections are used in the flow.
