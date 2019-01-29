@@ -71,7 +71,7 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 ## Remove an owner
 
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly. Go to 
+> When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly.
 > 
 > 
 
