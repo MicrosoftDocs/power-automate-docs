@@ -29,8 +29,8 @@ The flow widgets are iframes in a host document that points to a page in the Mic
 
 Widgets can be simple, for example - a widget that renders a list of templates with no communication between the host and iframe. Or they can be more complex - like a widget that can provision a flow from a template and trigger the flow via two-way communication between the host and widget.
 
-## Unauthenticated widget
-Templates widget can be embedded in the host application in iframe directly without using any JS SDK or user acess token.
+## Use the unauthenticated widget
+Templates widget can be embedded in the host application in iframe directly without using any JS SDK or user access token.
 
 ### Show templates for your scenarios
 To start, add this code to show the flow templates directly in your website:
@@ -39,8 +39,6 @@ To start, add this code to show the flow templates directly in your website:
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
-
-**Note**: We added a line break so the code displays better on the page.
 
 | Parameter | Description |
 | --- | --- |
@@ -53,7 +51,7 @@ To start, add this code to show the flow templates directly in your website:
 
 If the destination parameter is `new`, Microsoft Flow opens when users click a template, and they can create a flow in the designer. See the next section if you want to have the full experience work from inside of the widget.
 
-### Passing additional parameters to the flow temtplate
+### Passing additional parameters to the flow template
 If the user is in a certain context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *Notify me when an item is added to a list* while looking at a certain list in Wunderlist. By following these steps, you can pass in the list ID as a *parameter* to the flow:
 
 1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`.
@@ -68,7 +66,7 @@ To show the top four templates about Wunderlist in German and to start the user 
 ```
 
 ## Use the authenticated flow widgets
-Following table shows list of flow widgets that support full experience within the widget using user authentication access token. You will need to use Flow's Javascript Software Developer Kit (JS SDK) to embedd the widgets and provide the required user access token.
+Following table shows list of flow widgets that support full experience within the widget using user authentication access token. You will need to use Flow's Javascript Software Developer Kit (JS SDK) to embed the widgets and provide the required user access token.
 
 | Widget type    | Supported feature                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
@@ -87,7 +85,7 @@ Use the authenticated Flow SDK to allow users to create and manage flows directl
 
 Flow widgets work by embedding an iframe in the host application then loading the Flow feature in the iframe. The host provides the access token that's required by the Flow widget. Flow's JS SDK enables the host application to initialize and manage the widget life cycle.
 
-![widget architecture](./media/embed-flow-dev/Architecture.png)
+![widget architecture](../media/embed-flow-dev/Architecture.png)
 
 ### JS SDK details
 
@@ -154,7 +152,7 @@ These are the parameters for `renderWidget()`:
 | Parameter        | Required/Optional | Description                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
 | `container`        | Required          | Id of a DIV element on the host page where the widget will be embedded                      | 
-| `environmentId`    | Optional          | Widgets need an environment Id. If the Id doesnâ€™t pass, a default environment will be used. | 
+| `environmentId`    | Optional          | Widgets need an environment Id. If the Id doesn’t pass, a default environment will be used. | 
 | `flowsSettings`    | Optional          | Flow settings object                                                                        | 
 | `templateSettings` | Optional          | Template settings object                                                                    | 
 | `approvalSettings` | Optional          | Approval settings object                                                                    | 
@@ -311,7 +309,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 ### Example
 
-Call widgetDoneCallback passing a JSON object with key-value pairs of string key and text to override the default value.
+Call `widgetDoneCallback` passing a JSON object with key-value pairs of string key and text to override the default value.
 
 ```javascript
 widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
@@ -324,9 +322,9 @@ widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
 
 ## Widget actions
 
-The host uses widget actions to send a specific action or message to the widget. Widget JS SDK provides notify() method to send a message or a JSON payload to the widget. Each widget action supports a specific payload signature.
+The host uses widget actions to send a specific action or message to the widget. Widget JS SDK provides `notify()` method to send a message or a JSON payload to the widget. Each widget action supports a specific payload signature.
 
-## Usage
+### Usage
 
 ```javascript
 widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
@@ -339,7 +337,7 @@ widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
 Invoke a flow by sending the following command to a runtime widget 
 
 ```javascript
-widget.notify(\'triggerFlow\', { flowName: flowName, implicitData:implicitData });  
+widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });  
  ```
 
 ### Runtime widget
@@ -365,12 +363,9 @@ widget.notify(\'triggerFlow\', { flowName: flowName, implicitData:implicitData }
 |----------------|---------------------------------------------------|----------------------| 
 | `closeInfoPane`  | Closes the info-pane displaying approval details  | N/A                  | 
 
-## Configuring Client application with Flow Service Scopes (Delegated Permissions)
+## Configuring your client application
 
-If the Azure Active Directory (AAD) app used for the widget integration
-uses a 'code grant' authorization flow, the AAD app needs to be
-preconfigured with delegated permissions that are supported by the Flow
-service. This provides delegated permissions that let the application:
+You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Azure Active Directory (AAD) app used for the widget integration uses a 'code grant' authorization flow, the AAD app needs to be preconfigured with delegated permissions that are supported by the Flow service. This provides delegated permissions that let the application:
 
 -   Manage approvals
 -   Read approvals
@@ -385,14 +380,14 @@ Follow these steps to select one or more delegated permissions:
 3.  Select **App registrations** under **Manage**.
 4.  Enter the third-party application to be configured for Flow service scopes.
 5.  Select **Settings**.
-      ![widget architecture](./media/embed-flow-dev/AAD-App-Settings.png)
+      ![widget architecture](../media/embed-flow-dev/AAD-App-Settings.png)
 6. Select **Required permissions** under **API access**/
 7. Select **Add**.
 8. Choose **Select an API**.
-      ![widget architecture](./media/embed-flow-dev/AAD-App-Select-an-API.png)
+      ![widget architecture](../media/embed-flow-dev/AAD-App-Select-an-API.png)
 9. Search for **Microsoft Flow service** and select it. Note: Before you can see Microsoft Flow service, your tenant needs to  have at least one AAD user signed into the Flow portal (<https://flow.microsoft.com>)
 10. Choose the required Flow scopes for your application then select **Save**.
-      ![widget architecture](./media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
+      ![widget architecture](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
 After configuring, your application will get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
 
@@ -406,7 +401,7 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 2.  In the left navigation pane, select **Azure Active Directory**, then select **App registrations** (Preview) \> New registration.
 3.  When the **Register an application** page appears, enter a name for your application.
 4.  Under **Supported account types**, select **Accounts** in any organizational directory.
-5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server. Configure this value to <http://localhost:30662/> to run the sample app.
+5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server. Configure this value to http://localhost:30662/ to run the sample app.
 6.  When finished, select **Register**.
 7.  On the app **Overview** page, note the application (client) ID value.
 8.  The sample requires [implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
@@ -417,20 +412,20 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 ### Running the sample
 
 1.  Download the sample and copy it to a local folder on your machine.
-2.  Open the file index.html under FlowSDKSample folder and modify the applicaionConfig to update the **clientID** to the application ID register above.
-    ![widget architecture](./media/embed-flow-dev/SampleApp-ApplicationConfig.png)
+2.  Open the file index.html under FlowSDKSample folder and modify the `applicaionConfig` to update the `clientID` to the application ID register above.
+    ![widget architecture](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
 3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** Additional scopes can be added by updating the **flowScopes** property in **applicationConfig** object.
 4.  Run these commands to install the dependency and run the sample app:
     > \> npm install 
     > \> node server.js
-5. Open the browser and type <http://localhost:30662>
+5. Open the browser and type http://localhost:30662
 6. Select the **Sign in** button to authenticate to AAD and acquire a flow access token.
 7. The **Access Token** text box will be populated with the access token.
-    ![widget architecture](./media/embed-flow-dev/SampleApp-AccessToken.png)
+    ![widget architecture](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
-    ![widget architecture](./media/embed-flow-dev/SampleApp-TemplatesWidget.png)
+    ![widget architecture](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
-Sample application [download link](./media/embed-flow-dev/FlowWidgetSampleApp.zip).
+Sample application [download link](../media/embed-flow-dev/FlowWidgetSampleApp.zip).
 
 ## Resources
 
@@ -489,4 +484,4 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | th-th      | Thai (Thailand)            | 
 | tr-tr      | Turkish (Turkey)           | 
 | uk-ua      | Ukrainian (Ukraine)        | 
-| vi-vn      | Vietnamese (Viet Nam)      | 
+| vi-vn      | Vietnamese (Viet Nam)      |
