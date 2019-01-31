@@ -25,10 +25,6 @@ search.audienceType:
 ---
 # Tutorial: Create a business process flow to standardize processes
 
-## Prerequisites
-
-You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to create business process flows. Some Dynamics 365 license plans include Flow Plan 2.
-
 This tutorial shows you how to create a business process flow with PowerApps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
@@ -38,7 +34,12 @@ This tutorial shows you how to create a business process flow with PowerApps. To
  > [!TIP]
  >  After you create a business process flow definition, you can provide control over who can create, read, update, or delete the business process flow instance. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so they can monitor post-sales activities for their customers. To set security for a business process flow definition you create, select **Enable Security Roles** on the action bar.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## Prerequisites
+
+You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to create business process flows. Some Dynamics 365 license plans include Flow Plan 2.
+
 ## Create a business process flow  
   
 1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
