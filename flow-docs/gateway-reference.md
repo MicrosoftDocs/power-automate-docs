@@ -161,6 +161,9 @@ There is currently no single place where tenant administrators  can manage all t
 **Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?
 **Answer:** No. A gateway connects to on-premises data sources only.
 
+**Question:** Do I have to install my gateway in the default environment?
+**Answer:** Yes, Microsoft Flow only supports gateways that are installed in the default environment.
+
 **Question:** What is the actual Windows service called?
 **Answer:** In Services, the gateway is called **Power BI Enterprise Gateway Service**.
 
