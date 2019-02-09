@@ -255,6 +255,8 @@ Applies to ApprovalCenter widgets.
 | `showSimpleEmptyPage`| Optional | Shows an empty page when there are no approvals | 
 | `hideInfoPaneCloseButton` | Optional | Hides the info-pane Close button (or the host already has a Close button) | 
 
+<!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
+
 ## Widget events
 
 The Microsoft Flow widget supports events that let the host listen to widget life-cycle events. The Microsoft Flow widget supports two types of events: one-way notification events (for example, Widget\_Ready) and events raised from the widget to fetch data from the host (Get\_Access\_Token). The host needs to use the widget.listen() method to listen to specific events raised from the widget.
@@ -328,7 +330,7 @@ widget.listen("GET_STRINGS", function(requestParam, widgetDoneCallback) {
 
 ## Widget actions
 
-The host uses widget actions to send a specific action or message to the widget. Widget JS SDK provides `notify()` method to send a message or a JSON payload to the widget. Each widget action supports a specific payload signature.
+The host uses widget actions to send a specific action or message to the widget. Widget JS SDK provides the `notify()` method to send a message or a JSON payload to the widget. Each widget action supports a specific payload signature.
 
 ### Usage
 
@@ -371,7 +373,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ## Configuring your client application
 
-You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Azure Active Directory (AAD) app used for the widget integration uses a 'code grant' authorization flow, the AAD app needs to be preconfigured with delegated permissions that are supported by the Flow service. This provides delegated permissions that let the application:
+You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Azure Active Directory (AAD) app used for the widget integration uses a 'code grant' authorization flow, the AAD app needs to be preconfigured with delegated permissions that are supported by Microsoft Flow. This provides delegated permissions that let the application:
 
 -   Manage approvals
 -   Read approvals
@@ -381,7 +383,7 @@ You will need to configure your client application with Flow Service Scopes (Del
 
 Follow these steps to select one or more delegated permissions:
 
-1.  Go to https://flow.microsoft.com 
+1.  Go to https://portal.azure.com 
 2.  Select **Azure Active Directory**.
 3.  Select **App registrations** under **Manage**.
 4.  Enter the third-party application to be configured for Flow service scopes.
@@ -395,7 +397,7 @@ Follow these steps to select one or more delegated permissions:
 10. Choose the required Flow scopes for your application then select **Save**.
       ![widget architecture](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
-After configuring, your application will get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
+Your application will now get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
 
 ## Sample application embedding flow widgets 
 
@@ -407,26 +409,27 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 2.  In the left navigation pane, select **Azure Active Directory**, then select **App registrations** (Preview) \> New registration.
 3.  When the **Register an application** page appears, enter a name for your application.
 4.  Under **Supported account types**, select **Accounts** in any organizational directory.
-5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server. Configure this value to http://localhost:30662/ to run the sample app.
-6.  When finished, select **Register**.
+5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server.  Configure this value to http://localhost:30662/ to run the sample app.
+6.  Select **Register**.
 7.  On the app **Overview** page, note the application (client) ID value.
-8.  The sample requires [implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
+8.  The sample requires [implicit grant flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
 9.  In **Advanced settings**, under **Implicit grant**, enable both **ID tokens** and **Access tokens** checkboxes. ID tokens and access
     tokens are required since this app needs to sign in users and call Flow API.
 10. Select **Save**.
 
 ### Running the sample
-
-1.  Download the sample and copy it to a local folder on your machine.
-2.  Open the file index.html under FlowSDKSample folder and modify the `applicaionConfig` to update the `clientID` to the application ID register above.
+<!-- todo where should I download from? -->
+<!-- todo is this a misspelling: applicaionConfig -->
+1.  Download the sample and copy it to a local folder on your device.
+2.  Open the index.html file under the FlowSDKSample folder and modify the `applicaionConfig` to update the `clientID` to the application ID you registered earlier.
     ![widget architecture](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** Additional scopes can be added by updating the **flowScopes** property in **applicationConfig** object.
+3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** You can configure additional scopes by updating the **flowScopes** property in **applicationConfig** object.
 4.  Run these commands to install the dependency and run the sample app:
     > \> npm install 
     > \> node server.js
-5. Open the browser and type http://localhost:30662
+5. Open the browser and then enter http://localhost:30662
 6. Select the **Sign in** button to authenticate to AAD and acquire a flow access token.
-7. The **Access Token** text box will be populated with the access token.
+7. The **Access Token** text box contains the access token.
     ![widget architecture](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![widget architecture](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
