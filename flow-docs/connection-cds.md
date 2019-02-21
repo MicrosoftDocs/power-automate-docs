@@ -24,9 +24,6 @@ search.audienceType:
 # Create an automated flow by using Common Data Service for Apps
 With the Common Data Service for Apps connector, you can create flows that are initiated by create and update  events within your Common Data Service database.  Additionally, you can perform create, update, retrieve and delete actions on records within the Common Data Service database.
 
-###Prerequisites
-* Familiar with the previous documentation (Common-data-model-intro.md)
-
 # Initiating a Flow from the Common Data Service:
 You will find a set of triggers that can initiate your flow.
 - When a record is selected
@@ -60,7 +57,7 @@ This Flow will trigger any time a contact that is owned by the Flow user has the
 ![Filter Attributes](./media/cds-connector/FilterAttributes.png)
 
 ## Trigger Privileges
-To create a Flow that triggers based on create, update, or delete of a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity.  Additionally, depending on the scopes defined, the user will need at least that level of read on the same entity.  Learn more about environment security here: https://docs.microsoft.com/en-us/power-platform/admin/database-security.
+To create a Flow that triggers based on create, update, or delete of a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity.  Additionally, depending on the scopes defined, the user will need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/en-us/power-platform/admin/database-security) about environment security.
 
 
 # Writing data into the Common Data Service
