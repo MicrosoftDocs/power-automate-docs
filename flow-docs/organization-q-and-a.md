@@ -41,6 +41,10 @@ When a user in your organization signs up for Flow with Option 2, that user will
 
 [Sign up for Flow](sign-up-sign-in.md) includes more details.
 
+### What is the Microsoft Flow Free Plan?
+
+The Microsoft Flow Free Plan is used only for tracking purposes. Enabling or disabling it has no effect on a user's ability to create flows. If you disable the Microsoft Flow Free Plan, it becomes enabled again when a user logs in. This is the expected behavior.
+
 ### Can I block another person from signing up for Flow?
 Microsoft Flow is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Microsoft Flow there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Flow (as everyone in the world can, irrespective of their email address).
 
