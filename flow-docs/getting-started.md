@@ -88,6 +88,7 @@ When you create a flow from scratch, you control the entire workflow. Here are a
 - [Create an approval flow](wait-for-approvals.md).
 - [Watch a flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
+- [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 ## Use the mobile app ##
 
