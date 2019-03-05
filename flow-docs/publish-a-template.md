@@ -32,7 +32,8 @@ Submit a flow template to the gallery of templates for Microsoft Flow. Templates
 1. Select **More**, and then select **Submit as a template** in the menu that appears.
 
     ![Context menu](./media/publish-a-template/context-menu.png)
-    >[!NOTE]>  You can only submit flows that have run successfully at least once since the last save:
+
+   You can only submit flows that have run successfully at least once since the last save:
 
      ![Ellipsis button](./media/publish-a-template/need-successful-run-warning.png)
 1. Specify a meaningful title, a clear description of the scenario that your template will help automate, the biggest benefit, the number of users, number of runs, and the categories that apply for the template.
