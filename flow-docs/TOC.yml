@@ -20,6 +20,8 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
+  - name: Create a flow with Common Data Service
+    href: connection-cds.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
   - name: Filter and copy data
