@@ -4,7 +4,7 @@ description: "Learn how to create a business process flow"
 ms.custom: ""
 ms.date: 08/17/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
