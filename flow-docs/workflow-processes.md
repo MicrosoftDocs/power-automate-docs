@@ -3,7 +3,7 @@ title: "Classic Common Data Service (CDS) for Apps workflows | MicrosoftDocs"
 ms.custom: ""
 ms.date: 08/06/2018
 ms.reviewer: "matp"
-ms.service: "flow"
+ms.service: flow
 ms.topic: "article"
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5
 author: msftman
