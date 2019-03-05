@@ -29,7 +29,7 @@ Submit a flow template to the gallery of templates for Microsoft Flow. Templates
 
     ![Ellipsis button](./media/publish-a-template/ellipsis-button.png)
 1. Select **Details** in the menu that appears.
-1. Select **More**, and then select **Submit as a template** in the menu that appears.
+1. Select **More**, and then select **Submit as template** in the menu that appears.
 
     ![Context menu](./media/publish-a-template/context-menu.png)
 
