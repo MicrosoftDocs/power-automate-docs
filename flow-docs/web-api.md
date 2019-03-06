@@ -1,3 +1,18 @@
+---
+title: Flows are now stored in Common Data Service for Apps and use the rich Web API
+description: Flows are now stored in Common Data Service for Apps and use the rich Web API.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: 
+ms.service: business-applications
+ms.technology: 
+ms.author: stepsic
+audience: Power user
+
+---
+
 # Microsoft Flow Web API
 
 Going forward, all flows will be stored in Common Data Service (CDS) for Apps and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
