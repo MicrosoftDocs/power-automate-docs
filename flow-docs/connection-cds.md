@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/06/2019
+ms.date: 03/06/2019
 ms.author: brandonsimons
 search.app: 
   - Flow
@@ -23,26 +23,30 @@ search.audienceType:
 ---
 # Create an automated flow by using Common Data Service for Apps
 
-With the Common Data Service for Apps connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve and delete actions on records within the Common Data Service database.
+With the Common Data Service for Apps connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service for Apps database.
 
-## Initiate a flow from the Common Data Service
+## Initiate a flow from Common Data Service for Apps
 
-You can use any of the following triggers to initiate your flow
+You can use any of the following triggers to initiate your flow:
 
 - When a record is selected
 - When a record is created
-- When a record is updated
 - When a record is deleted
+- When a record is updated
 
-![Select a trigger](./media/cds-connector/Triggers.png)
 
-If the selected trigger requires an environment to be selected, then you can choose `(Current)` which will always use the database within the environment in which Microsoft Flow runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
+> [!div class="mx-imgBorder"]
+> ![Select a trigger](./media/cds-connector/Triggers.png)
 
-![Choose environment](./media/cds-connector/Environments.png)
+If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Microsoft Flow runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
+
+> [!div class="mx-imgBorder"]
+> ![Choose environment](./media/cds-connector/Environments.png)
 
 You can use scopes to determine if your flow runs if you create a new record, if a new record is created by a user within your business unit, or if a new record is created by any user in your organization.
 
-![Choose scope](./media/cds-connector/Scopes.png)
+> [!div class="mx-imgBorder"]
+> ![Choose scope](./media/cds-connector/Scopes.png)
 
 |Scope|Trigger timing|
 | --- | --- |
@@ -51,41 +55,43 @@ You can use scopes to determine if your flow runs if you create a new record, if
 |Parent: Child business unit|Action is taken on a record owned by your business unit or a child business unit|
 |User|Action is taken on a record owned by you|
 
-Triggers that run when a record is updated can also use filtering attributes. This ensures that the flow only runs when any of the defined attributes dare updated.
+Triggers that run when a record is updated can also use filtering attributes. This ensures that the flow only runs when any of the defined attributes are updated.
 
 > [!IMPORTANT]
 > Use filter attributes to prevent your flow from unnecessarily running.
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
-![Filter attributes](./media/cds-connector/FilterAttributes.png)
+> [!div class="mx-imgBorder"]
+> ![Filter attributes](./media/cds-connector/FilterAttributes.png)
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user may need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
 
-## Write data into the Common Data Service
+## Write data into Common Data Service for Apps
 
-Use any of the following actions to write data into the Common Data Service.
+Use any of the following actions to write data into Common Data Service for Apps:
 
 - Create a new record
 - Update a record
 
-Here's an example of creating a follow up task when the given user creates a new account record.  
+Here's an example of creating a followup task when the given user creates a new account record.  
 
-![Follow up task](./media/cds-connector/Regarding.png)
+> [!div class="mx-imgBorder"]
+> ![Followup task](./media/cds-connector/Regarding.png)
 
 ## Advanced concepts
 
-### Write data into customer, owner and regarding fields
+### Write data into customer, owner, and regarding fields
 
-To write data into customer, owner and regarding fields, two fields must be populated.
+To write data into customer, owner, and regarding fields, two fields must be populated.
 
 | Field category | Example settings |
 | --- | --- |
-| Regarding | Regarding = Id of the record (for example account id) and Regarding Type as selected from the list. |
-| Customer | Represents the Id of the record and the customer type as selected from the list. |
-| Owner | Represents the Id of the system user or team, and owner type as selected from the list. |
+| Regarding | Regarding = ID of the record (for example, account ID) and Regarding Type as selected from the list. |
+| Customer | Represents the ID of the record and the customer type as selected from the list. |
+| Owner | Represents the ID of the system user or team, and owner type as selected from the list. |
 
 ### Enable upsert behavior
 
