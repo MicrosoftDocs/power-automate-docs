@@ -4,7 +4,7 @@ description: "With Actions, you can perform operations, such as Create, Update, 
 ms.custom: ""
 ms.date: 08/07/2018
 ms.reviewer: ""
-ms.service: "flow"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
