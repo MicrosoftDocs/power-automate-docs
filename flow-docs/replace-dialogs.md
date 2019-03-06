@@ -3,7 +3,7 @@ title: "Replace dialogs with business process flows or canvas apps  | MicrosoftD
 ms.custom: ""
 ms.date: 08/02/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

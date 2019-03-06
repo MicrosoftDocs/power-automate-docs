@@ -3,7 +3,7 @@ title: "Monitor and manage workflow processes with PowerApps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 05/06/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

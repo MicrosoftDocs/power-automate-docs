@@ -4,7 +4,7 @@ description: "Learn about the different types of business logic you can use in y
 ms.custom: ""
 ms.date: 05/01/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
