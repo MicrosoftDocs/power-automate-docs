@@ -109,10 +109,10 @@ For listing flows that the user has already authored and also to create flows fr
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
-            hostName:'https:/flow.microsoft.com'
+            hostName:'https://flow.microsoft.com'
         });
         var widget = sdk.renderWidget('flows', {
-            container: 'flowDiv'
+            container: 'flowDiv',
             environmentId: '[environmentId]'    // find environment id from browser URL when you 
                                                 // click on 'my flows'
                                                 //ex: https://flow.microsoft.com/manage/environments/[environmentId]/flows
