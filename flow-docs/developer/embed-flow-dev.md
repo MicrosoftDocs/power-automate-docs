@@ -265,7 +265,7 @@ The Microsoft Flow widget supports events that let the host listen to widget lif
 
 ```javascript
 widget.listen("<WIDGET_EVENT>", function() {
-    console.log("The flow widget raised event");
+    console.log("The flow widget raised event");
 });
 ```
 
