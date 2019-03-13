@@ -118,7 +118,7 @@ var sdk = new MsFlowSdk({
 | Name     | Required/Optional | Description                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
 | `hostName` | Optional          | Microsoft Flow host name, for example, https://flow.microsoft.com        | 
-| `locale`   | Optional          | Client locale for the widget (defaults to en-Us if not passed) | 
+| `locale`   | Optional          | Client locale for the widget (defaults to `en-Us` if not passed) | 
 
 
 Once the JS SDK instance is created you can initialize and embed a Microsoft Flow widget in a parent element in the host application. To do so, add an HTML div:
