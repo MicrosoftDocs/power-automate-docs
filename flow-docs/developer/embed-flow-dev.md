@@ -309,7 +309,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 | String key                     | Use in the widget                                                                                                                  | 
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| `FLOW_CREATION_CREATE_BUTTON`    | Text displayed on the â€˜create flowâ€™ button in both flow creation and runtime widget                                                | 
+| `FLOW_CREATION_CREATE_BUTTON`    | Text displayed on the create flow button in both flow creation and runtime widget                                                | 
 | `FLOW_CREATION_CUSTOM_FLOW_NAME` | The initial value to use for the flow name in the flow creation widget. Only used when the allowCustomFlowName setting is enabled. | 
 | `FLOW_CREATION_HEADER`           | Header to use when creating a flow in both the flow creation and runtime widget                                                    | 
 | `INVOKE_FLOW_HEADER`             | Header to use when invoking a flow in the runtime widget                                                                           | 
