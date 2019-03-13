@@ -302,7 +302,7 @@ widget.listen("<WIDGET_EVENT>", function() {
 
 | Widget event                      | Details                             | 
 |-----------------------------------|-------------------------------------| 
-| `RECEIVED_APPROVAL_STATUS_CHANGED`  | â€˜Receivedâ€™ approval status changed  | 
+| `RECEIVED_APPROVAL_STATUS_CHANGED`  | Received approval status changed  | 
 | `SENT_APPROVAL_STATUS_CHANGED`      | â€˜Sentâ€™ approval status changed      | 
 
 **GET\_STRINGS** event lets you customize text for some of the UI elements shown in the widget. The following strings can be customized:
