@@ -1,20 +1,15 @@
 ---
-title: Microsoft Flow for United States Government customers - Overview
+title: Microsoft Flow US Government
 description: For US Government customers, learn about the features and limitations for the Flow US Government service
 services: ''
 suite: flow
-documentationcenter: na
 author: msftman
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/1/2019
+ms.date: 03/15/2019
 ms.author: deonhe
+ms.manager: kvivek
 search.app: 
   - Flow
   - Powerplatform
@@ -24,11 +19,11 @@ search.audienceType:
 
 # Microsoft Flow US Government
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Flow US Government plans (or Flow US Government). This section provides an overview of features that are specific to Microsoft Flow US Government. We recommend that you read this supplementary section as well as the Microsoft Flow service [getting started guide](https://docs.microsoft.com/flow/getting-started). For brevity, this service is commonly referred to as *Flow GCC*.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Flow US Government plans. This section provides an overview of features that are specific to Microsoft Flow US Government. We recommend that you read this supplementary section as well as the Microsoft Flow service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as *Flow GCC*.
 
-The Microsoft Flow US Government Service Description serves as an overlay to the general Microsoft Flow Service Description. It defines the unique commitments and differences compared to the general Microsoft Flow offerings that have been available to our customers since Fall, 2016.
+The Microsoft Flow US Government Service Description serves as an overlay to the general Microsoft Flow Service Description. It defines the unique commitments and differences compared to the general Microsoft Flow offerings that have been available to our customers since October, 2016.
 
-## About Flow US Government environments and Plans
+## About Microsoft Flow US Government environments and plans
 
 Microsoft Flow US Government plans are monthly subscriptions and it can be licensed to an unlimited number of users.
 
@@ -36,8 +31,7 @@ The Microsoft Flow GCC environment is compliant with the Federal requirements fo
 
 In addition to the features and capabilities of Microsoft Flow, organizations that use Microsoft Flow US Government benefit from the following unique features:
 
-- Your organization's customer content is physically separated from customer
-content in commercial offering of Microsoft Flow.
+- Your organization's customer content is physically separated from customer content in commercial offering of Microsoft Flow.
 
 - Your organization's customer content is stored within the United States.
 
@@ -49,13 +43,9 @@ content in commercial offering of Microsoft Flow.
 
 Microsoft Flow US Government is available to:
 
-1. US federal, state, local, tribal, and
-territorial government entities, and
-1. Other entities which handle data that
-is subject to government regulations and requirements and
-1. Where use of Microsoft Flow US
-Government is appropriate to meet these requirements, subject to validation of
-eligibility.
+- US federal, state, local, tribal, and territorial government entities
+- Other entities which handle data that is subject to government regulations and requirements
+- Where use of Microsoft Flow US Government is appropriate to meet these requirements, subject to validation of eligibility.
 
 Microsoft's validation of eligibility includes confirmation of:
 
@@ -65,29 +55,29 @@ Microsoft's validation of eligibility includes confirmation of:
 
 Entities with questions about eligibility for Microsoft Flow US Government should consult their account team. Microsoft re-validates eligibility when it renews customer contracts for Microsoft Flow US Government.
 
-## Microsoft Flow US Government Plans
+## Microsoft Flow US Government plans
 
 Access to Microsoft Flow US Government plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Microsoft Flow / PowerApps Plan 1 US Government
+- Microsoft Flow/PowerApps Plan 1 US Government
 
-- Microsoft Flow / PowerApps Plan 2 US Government
+- Microsoft Flow/PowerApps Plan 2 US Government
 
 - In addition to the standalone plans, Microsoft Flow and PowerApps capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with Microsoft Flow and PowerApps capabilities.
 
 > [!NOTE]
 > Licensing is available in customer tenants from mid-April 2019.
 
-Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail on the [Microsoft Flow licensing information](https://flow.microsoft.com/pricing/).
+Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Microsoft Flow licensing information](https://flow.microsoft.com/pricing/).
 
 Microsoft Flow US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
 ## Differences between customer data and customer content
 
-Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of an Online Service.
+Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software that are provided to Microsoft by, or on behalf of, customers through the use of an Online Service.
 
 Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-entities (e.g. contact information). Content is generally considered
+entities (for example, contact information). Content is generally considered
 confidential information, and in normal service operations, is not sent through the Internet without encryption.
 
 For more information on how Microsoft Flow protects customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
@@ -137,7 +127,7 @@ As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cy
 
 Microsoft Flow US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Please visit the Microsoft Flow US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
-## Flow US Government and other Microsoft services
+## Microsoft Flow US Government and other Microsoft services
 
 Microsoft Flow US Government includes several features that allow users to connect to, and integrate with, other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and PowerApps US Government.
 
@@ -149,11 +139,11 @@ Microsoft Flow US Government maintains the actual resources, information flow, a
 
 If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be located in the United States.
 
-## Flow US Government and third-party services
+## Microsoft Flow US Government and third-party services
 
-Flow US Government provides the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Microsoft Flow US Government infrastructure and therefore are not covered by the Microsoft Flow US Government compliance and data protection commitments.
+Microsoft Flow US Government provides the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Microsoft Flow US Government infrastructure and therefore are not covered by the Microsoft Flow US Government compliance and data protection commitments.
 
->[!TIP]
+> [!TIP]
 > Review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 ## Microsoft Flow US Government and Azure Services
@@ -174,7 +164,7 @@ You can find full details of the Azure AD security architecture and control impl
 
 The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
-## Microsoft Flow US Government Service URLs
+## Microsoft Flow US Government service URLs
 
 There are a different set of URLs to access Microsoft Flow US Government. Refer to the following table for a cross reference:
 
@@ -210,7 +200,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - Trigger Microsoft Flow US Government flow *from* SharePoint Lists
 
-- Trigger Microsoft Flow US Government flow *from* Dynamics 365 CE GCC
+- Trigger Microsoft Flow US Government flow *from* Dynamics 365 for Customer Engagement GCC
 
 - [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
 
@@ -223,7 +213,11 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Unified Power Platform Admin Center](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals)
+- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals)
 
 > [!NOTE]
-> You can use the Unified Power Platform Admin Center to open support tickets, but other functionality is currently not available in US Government Tenants.
+> You can use the Power Platform admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+
+### See also
+
+[PowerApps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
