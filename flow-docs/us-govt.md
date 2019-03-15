@@ -208,15 +208,15 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Submitting Templates](https://docs.microsoft.com/flow/publish-a-template)
 
-> [!NOTE]
-> Submitting templates is disabled in GCC to address enterprise data governance and data flow concerns.
+    > [!NOTE]
+    > Submitting templates is disabled in GCC to address enterprise data governance and data flow concerns.
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
 - [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals)
 
-> [!NOTE]
-> You can use the Power Platform admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+    > [!NOTE]
+    > You can use the Power Platform admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 
 ### See also
 
