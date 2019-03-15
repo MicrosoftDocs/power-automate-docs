@@ -89,7 +89,7 @@ Access to Microsoft Flow US Government customer content by Microsoft administrat
 
 Microsoft Flow support and service engineering staff do not have standing access to customer content hosted in Microsoft Flow US Government. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
-|Microsoft Personnel Screening and Background Checks 1| Description|
+|Microsoft Personnel Screening and Background Checks <sup>1</sup>| Description|
 |---------------------------------------------------------------|-----------------------------------|
 | U.S. citizenship| Verification of U.S. citizenship |
 | Employment history check| Verification of seven (7) year employment history|
@@ -102,7 +102,7 @@ Microsoft Flow support and service engineering staff do not have standing access
 | Fingerprinting check| Fingerprint background check against FBI databases|
 | CJIS background screening| State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
 
-1 applies only to personnel with temporary or standing access to customer
+<sup>1</sup> Applies only to personnel with temporary or standing access to customer
 content hosted in Microsoft Flow US Government (GCC).
 
 ## Certifications and accreditations
