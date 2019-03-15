@@ -1,6 +1,6 @@
 ---
 title: Microsoft Flow US Government
-description: For US Government customers, learn about the features and limitations for the Flow US Government service
+description: Provides information about Microsoft Flow US Government service description, plans, and limitations
 services: ''
 suite: flow
 author: msftman
@@ -9,7 +9,6 @@ ms.devlang: na
 ms.topic: article
 ms.date: 03/15/2019
 ms.author: deonhe
-ms.manager: kvivek
 search.app: 
   - Flow
   - Powerplatform
@@ -41,17 +40,7 @@ In addition to the features and capabilities of Microsoft Flow, organizations th
 
 ## Customer eligibility
 
-Microsoft Flow US Government is available to:
-
-- US federal, state, local, tribal, and territorial government entities
-- Other entities which handle data that is subject to government regulations and requirements
-- Where use of Microsoft Flow US Government is appropriate to meet these requirements, subject to validation of eligibility.
-
-Microsoft's validation of eligibility includes confirmation of:
-
-- Handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data.
-
-- Validation may require sponsorship by a government entity with specific requirements for the handling of data.
+Microsoft Flow US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of Microsoft Flow US Government is appropriate to meet these requirements, subject to validation of eligibility. Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
 
 Entities with questions about eligibility for Microsoft Flow US Government should consult their account team. Microsoft re-validates eligibility when it renews customer contracts for Microsoft Flow US Government.
 
@@ -188,13 +177,13 @@ Please refer to the [Azure IP Ranges and Service Tags – US Government
 Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document,
 focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required for your end-users to have access to the service URLs.
 
-## On-premises Data Gateway Configuration
+## On-premises Data Gateway configuration
 
 Install an [On-Premises Data Gateway](https://docs.microsoft.com/flow/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Microsoft Flow and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
 If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization executed to enable that will also enable on-premises connectivity for Microsoft Flow. However, if you are unable to connect to your tenant, then you may need to go through a “whitelisting” process, which enables this capability for your tenant. Should this occur, you can open a support ticket to address your needs. The support team follows an established process to address your request.
 
-## Microsoft Flow US Government Feature Limitations
+## Microsoft Flow US Government feature limitations
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
@@ -213,10 +202,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/wp-work-with-admin-portals)
-
-    > [!NOTE]
-    > You can use the Power Platform admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation): You can use the admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 
 ### See also
 
