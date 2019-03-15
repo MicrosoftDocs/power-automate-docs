@@ -198,8 +198,6 @@
       href: gdpr-dsr-delete-msa.md
     - name: Close requests
       href: gdpr-dsr-accountclose-msa.md
-  - name: Microsoft Flow US Government
-    href: us-govt.md
 - name: Reference
   items:
   - name: Regions overview
