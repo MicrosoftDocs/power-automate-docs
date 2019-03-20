@@ -434,7 +434,7 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![widget architecture](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
-Sample application [download link](../media/embed-flow-dev/FlowWidgetSampleApp.zip).
+Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
 ## Resources
 
