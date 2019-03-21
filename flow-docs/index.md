@@ -422,12 +422,12 @@ search.audienceType:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Use Common Data Service (CDS) for apps</h3>
-                                            <p>Use Common Data Service (CDS) for apps with workflow processes.</p>
+                                            <h3>Use Common Data Service</h3>
+                                            <p>Use Common Data Service with workflow processes.</p>
                                         </div>
                                     </div>
                                 </div>
