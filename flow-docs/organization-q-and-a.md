@@ -32,7 +32,7 @@ Microsoft Flow is a public cloud service to help individuals and teams to set up
 There are two possible ways for individuals to sign up for Flow through the web portal:
 
 #### Option 1
-Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for Flow through [portal.office.com](https://portal.office.com/Start?sku=flow_free) or [signup.live.com](https://signup.live.com).
+Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for Flow through [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) or [signup.live.com](https://signup.live.com).
 
 #### Option 2
 Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com), selecting **Sign in**, signing in with their work, school or personal email, and accepting the Flow terms of use.    
@@ -141,7 +141,7 @@ If a new tenant was created by Microsoft Flow, then you can claim and manage tha
 1. Join the tenant by signing up for Flow using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
 2. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:    
    
-   1. Go to [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Select the app launcher icon in the upper-left and choose Admin.
    3. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
       
