@@ -15,7 +15,7 @@ audience: Power user
 
 # Microsoft Flow Web API
 
-Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
+Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 This content covers the management of flows included on the **Solutions** tab in Microsoft Flow. Currently, flows under **My Flows** are not supported by these APIs.
 
@@ -48,7 +48,7 @@ You can also programmatically get the list of instances available to you via the
 
 Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
-Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) how to acquire an Azure AD Bearer token for Common Data Service. For example, this request:
+Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) how to acquire an Azure AD Bearer token for Common Data Service. For example, this request:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -102,7 +102,7 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
 
-You can also request specific properties, filter the list of flows, and much more, as described in the [Common Data Service API documentation for querying data](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
+You can also request specific properties, filter the list of flows, and much more, as described in the [Common Data Service API documentation for querying data](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
