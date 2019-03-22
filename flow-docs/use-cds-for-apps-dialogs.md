@@ -1,5 +1,5 @@
 ---
-title: "Use CDS for Apps dialogs for guided processes (Deprecated) | MicrosoftDocs"
+title: "Use Common Data Service dialogs for guided processes (Deprecated) | MicrosoftDocs"
 description: "Dialogs are the synchronous or interactive processes that collect and process information by using step-by-step scripts to direct users through a process"
 ms.custom: ""
 ms.date: 10/31/2017
@@ -16,15 +16,15 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use CDS for Apps dialogs for guided processes (Deprecated)
+# Use Common Data Service dialogs for guided processes (Deprecated)
 
 [Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). You should replace dialogs with business process flows or canvas apps. More information: [Replace dialogs with business process flows or canvas apps](replace-dialogs.md) 
 
-Dialogs are the synchronous or interactive processes in Common Data Service (CDS) for Apps that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring. For more information, see [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) in the Dynamics 365 Customer Engagement Developer Guide.
+Dialogs are the synchronous or interactive processes in Common Data Service that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring. For more information, see [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) in the Dynamics 365 Customer Engagement Developer Guide.
 
 ## Differences between workflows and dialogs
 
-The following table provides information about the differences between CDS for Apps workflows and dialogs.  
+The following table provides information about the differences between Common Data Service workflows and dialogs.  
 
 
 | Workflows     |    Dialogs      |

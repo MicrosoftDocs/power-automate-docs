@@ -43,7 +43,7 @@ The following table shows which personal data is automatically deleted and which
 
 *Each of these resources contains “Created By” and “Modified By” records that include personal data. For security reasons, these records are retained until the resource is deleted.
 
-**For environments that include a Common Data Service For Apps database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
+**For environments that include a Common Data Service database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
 For the data and resources that require manual review, Microsoft Flow offers the following experiences to find or change personal data for a specific user:
 
@@ -70,7 +70,7 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Custom connector permissions|Microsoft Flow Maker Portal| ||
 |Approval History|Microsoft PowerApps Maker Portal*|||
 
-*With the introduction of the Common Data Service for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service for Apps database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
+*With the introduction of the Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
 \*\* An admin will only be able to access these resources from the Microsoft Flow Maker Portal if the administrator has been assigned access from the Microsoft Flow Admin Center.
 
@@ -131,7 +131,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 ## Delete approval history from Microsoft Flow
 
- Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service for Apps. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
+ Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
 1. Sign into [PowerApps](https://web.powerapps.com/).
 
@@ -271,7 +271,7 @@ An admin can grant Admin access to an environment created by a specific user fro
 
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Microsoft Flow service as a “role assignment.”
 
-With the introduction of the Common Data Service for Apps, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service for Apps database instance.
+With the introduction of the Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service database instance.
 
 For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
