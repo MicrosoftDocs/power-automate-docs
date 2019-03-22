@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Common Data Service for Apps| Microsoft Docs
-description: Create workflows by using a Common Data Service for Apps connection and Microsoft Flow
+title: Create an automated flow with Common Data Service| Microsoft Docs
+description: Create workflows by using a Common Data Service connection and Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an automated flow by using Common Data Service for Apps
+# Create an automated flow by using Common Data Service
 
-With the Common Data Service for Apps connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service for Apps database.
+With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service database.
 
-## Initiate a flow from Common Data Service for Apps
+## Initiate a flow from Common Data Service
 
 You can use any of the following triggers to initiate your flow:
 
@@ -69,9 +69,9 @@ This flow triggers any time the first or last name of contact that the flow user
 
 To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
 
-## Write data into Common Data Service for Apps
+## Write data into Common Data Service
 
-Use any of the following actions to write data into Common Data Service for Apps:
+Use any of the following actions to write data into Common Data Service:
 
 - Create a new record
 - Update a record
