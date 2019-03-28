@@ -52,10 +52,8 @@ Make your text easier to read by breaking it up with paragraphs or line breaks. 
    
 **Example**
 
-<pre>
 Add lines between your text with the Enter key.
 This spaces your text better and makes it easier to read.
-</pre>
 
 **Result:**   
 Add lines between your text with the Enter key.      
@@ -64,10 +62,8 @@ This spaces your text better and makes it easier to read.
 
 **Example 2**
 
-<pre>
 Add two spaces prior to the end of the line.(space, space)     
 This adds space in between paragraphs.
-</pre>
 
 **Result:**  
 Add two spaces prior to the end of the line.   
