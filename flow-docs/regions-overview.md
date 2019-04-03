@@ -39,6 +39,7 @@ Administrators can identify the region if they sign in to the Microsoft Flow [ad
 * India
 * Japan
 * Canada
+* US Government (GCC)
 
 ## What features are specific to a given region?
 Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom connectors.
