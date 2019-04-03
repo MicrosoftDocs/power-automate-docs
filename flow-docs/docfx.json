@@ -38,7 +38,8 @@
       "contributors_to_exclude": [
         "openpublishingbuild",
         "sudeepku",
-        "v-thepet"
+        "v-thepet",
+        "buck1ey"
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "searchScope": [
@@ -47,7 +48,8 @@
       "titleSuffix": "Microsoft Flow",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/flow-docs",
-      "feedback_product_url": "https://powerusers.microsoft.com/t5/Flow-Ideas/idb-p/FlowIdeas/"
+      "feedback_product_url": "https://ideas.flow.microsoft.com",
+      "search.appverid": "met150"
     },
     "fileMetadata": {},
     "template": [],

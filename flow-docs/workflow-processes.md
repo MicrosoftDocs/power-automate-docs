@@ -1,9 +1,9 @@
 ---
-title: "Classic Common Data Service (CDS) for Apps workflows | MicrosoftDocs"
+title: "Classic Common Data Service workflows | MicrosoftDocs"
 ms.custom: ""
 ms.date: 08/06/2018
 ms.reviewer: "matp"
-ms.service: "flow"
+ms.service: flow
 ms.topic: "article"
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5
 author: msftman
@@ -15,7 +15,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Classic Common Data Service (CDS) for Apps workflows 
+# Classic Common Data Service workflows 
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.  
   

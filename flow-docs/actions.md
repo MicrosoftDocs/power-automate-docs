@@ -4,7 +4,7 @@ description: "With Actions, you can perform operations, such as Create, Update, 
 ms.custom: ""
 ms.date: 08/07/2018
 ms.reviewer: ""
-ms.service: "flow"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -33,7 +33,7 @@ Actions provide the ability to define a single verb (or message) that matches an
 <a name="BKMK_GlobalMessages"></a>   
 ## Global messages 
  
- Unlike CDS for Apps workflows or [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), an action doesn’t have to be associated with a specific entity. You can define ”global” Actions that can be called on their own.
+ Unlike Common Data Service workflows or [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in), an action doesn’t have to be associated with a specific entity. You can define ”global” Actions that can be called on their own.
 
 ## Next steps
 

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
 search.app: 
   - Flow
@@ -31,24 +31,66 @@ search.audienceType:
 2. How do I use an advanced condition or an expression?
    
    * Read about [adding conditions](add-condition.md).
-   * If you want multiple cases in a flow, click or tap **Add condition** from inside of an existing condition.
+   * If you want multiple cases in a flow, select **Add condition** from inside of an existing condition.
    * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
    * If you're an Office 365 user, you get full access through the Microsoft Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
    * If you're an administrator, see information about [licensing for Microsoft Flow](organization-q-and-a.md), including with Office 365.
 
-## Known issues and resolutions
+## Known issues
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
-2. Flows can't write to Taxonomy fields in SharePoint lists. We recommend using a simple string field until this is corrected.
-3. File triggers won't fire for files being added inside of nested folders inside the folder you select.
+2. File triggers won't fire for files being added inside of nested folders inside the folder you select.
 
 ## What's new
 
+> [!IMPORTANT]
+>
+> **Announcing the release notes**
+>
+> Wondering about upcoming and recently released capabilities in Microsoft Flow?
+>[View the October 2018 release notes](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We've captured all the details, end to end, top to bottom, which you can use for planning. For more details, review [each weekly release](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) with the features and enhancements that it contains.
+>
+> The release notes prior to the October 2018 release will remain here for future reference, but all new releases will only be included in the above locations and not on this page.
+
+### Release 2018-09-24
+
+- **Admin access to help and support** - Open support tickets for Microsoft Flow in the Power platform admin center and provide additional details about your workflow failure.
+- **Redesigned Flow Community** - Finding what you need just got easier in the Flow Community.
+- **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a flow when there are new messages in a channel.
+- **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
+- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform Admin center.
+- **Power Query integration** - A Power Query experience is being built that will allow makers to shape data mashups from SQL Server.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) about this release.
+
+### Release 2018-08-31
+
+- **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Microsoft Flow designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
+- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and Microsoft School Data Sync.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
+
+### Release 2018-08-24
+
+- **New calendar sync templates** - New calendar templates that copy events between Google Calendar and Office 365 or Outlook.com.
+- **Multiple value support for SharePoint** - Read and write for multiple-value fields in SharePoint that are Choice, Person or Lookup types.
+- **Send approvals on behalf of other users in your organization** - Send approvals on behalf of other users in your organization - for example, the person who uploaded the file in the SharePoint list, instead of the person who created the flow.
+- **More button input types** - Buttons have two new input types: Number and Yes/No.
+- **Connector updates** - A new NetDocuments connector, improvements to Azure connectors and more.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/button-types-more/) about this release.
+
+### Release 2018-08-02
+
+The Microsoft Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. To get early access to the newest features, just create, and then use, an environment in the Preview region.
+
+[Read more and ask questions](https://flow.microsoft.com/blog/flow-preview-program/) about this release.
+
 ### Release 2018-07-23
 
-- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Flow on your table data in Excel. Automate data processing or the copying/importing of data.
-- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service for Apps. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
+- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Microsoft Flow on your table data in Excel. Automate data processing or the copying/importing of data.
+- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
 - **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
 - **Four new connectors** - Added Azure IoT Central - a highly scalable IoT software-as-a-service (SaaS) solution - Survey 123, LMS365 and ProjectWise Design Integration.
@@ -103,7 +145,7 @@ search.audienceType:
 
 ### Release 2018-04-04
 
-- **Approvals on the Common Data Service** - Modern approvals are built on the latest version of the Common Data Service for Apps. This means that you can build flows that read the status of the approvals you send or receive with the CDS connector.
+- **Approvals on the Common Data Service** - Modern approvals are built on the latest version of the Common Data Service. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
@@ -204,7 +246,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 - **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each container actions.
 - **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
 - **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
-- **Improved connection experience** - Notifications in the Flow portal when a connection is broken and richer connection details.
+- **Improved connection experience** - Notifications in the Microsoft Flow portal when a connection is broken and richer connection details.
 - **On-the-go collection** - A new template collection for [on-the-go workers](https://flow.microsoft.com/collections/onthego/).
 - **Email address button inputs** - Collect email addresses from users when they run buttons.
 - **File button inputs** - Get uploaded files, such as photos, from users when they run buttons.
@@ -228,7 +270,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 - **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
 - **Dynamics 365 for Customer Engagement** - Flow is now integrated in the UI for Dynamics 365 for Customer Engagement.
-- **Microsoft Trust Center** - Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
+- **Microsoft Trust Center** - Microsoft Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
 - **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
 - **Six new connectors** - Added LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy, and Azure Log Analytics Data Collection.
@@ -239,7 +281,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-09-21
 
-- **Download Flow History** - Download the run history of a Flow as a CSV file to open in Excel.
+- **Download Flow History** - Download the run history of a flow as a CSV file to open in Excel.
 - **Advanced recurrence** - Build recurring schedules to trigger your flows, for example, only trigger on weekdays.
 - **IntelliSense** - When typing in expressions, IntelliSense will provide suggestions for parameters.
 - **Four new connectors** - Added connectors for Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish and FlowForma.
@@ -397,7 +439,7 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
 
 ### Release 2017-02-27
-* **Trigger your flow buttons** - You can now trigger flow buttons right from the Microsoft Flow website. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
+* **Trigger your flow buttons** - You can now trigger flow buttons right from Microsoft Flow. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
 * **Five new services** - Added Oracle Database, Intercom, FreshBooks, LeanKit and WebMerge support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) about this release.

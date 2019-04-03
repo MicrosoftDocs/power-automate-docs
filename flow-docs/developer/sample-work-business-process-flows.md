@@ -29,7 +29,7 @@ This sample demonstrates how to programmatically work with business process flow
 ## Prerequisites  
  Before you can run the sample:  
 
-1. Have access to a Common Data Service for Apps environment.  
+1. Have access to a Common Data Service environment.  
 
 2. Have appropriate privileges on the Lead, Opportunity, and Workflow entities and business process  flow definition entity records used in this sample.  
 

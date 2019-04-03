@@ -4,7 +4,7 @@ description: "Learn about the different types of business logic you can use in y
 ms.custom: ""
 ms.date: 05/01/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
@@ -40,7 +40,7 @@ PowerApps includes several  types of processes, each designed for a different pu
  Similar to processes, you can also create  business rules and recommendations. For more information, see [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
->  Using processes can impact the license requirements for PowerApps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-entity-licenses). 
+>  Using processes can impact the license requirements for PowerApps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
 
 
 <a name="BKMK_BP"></a>   
@@ -61,7 +61,8 @@ PowerApps includes several  types of processes, each designed for a different pu
   
 <a name="useMSFlow"></a>   
 ## When to use Microsoft Flow  
- Use Microsoft Flow when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, and SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Microsoft Flow to automate processes across services](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
+ Use Microsoft Flow when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, and SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Microsoft Flow to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+)  
   
 <a name="BKMK_Where"></a>   
 ## Where do I go to create processes?  
@@ -121,6 +122,7 @@ PowerApps includes several  types of processes, each designed for a different pu
 |**Stop Workflow**|Workflow, Action|Stops the current workflow or action. You can set a status of either **Succeeded** or **Canceled** and specify a status message.|  
 |**Custom Step**|Workflow, Action|Provides extensions to the logical elements available by default. Steps can include conditions, actions, other steps, or a combination of these elements. Developers can create custom workflow steps. By default, there are no custom steps available.|
 
-For more information for developers, see the Developer Guide topic [Automate your business processes in Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement).
+For more information for developers, see the Developer Guide topic [Automate your business processes in Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/developer/automate-business-processes-customer-engagement
+).
   
 

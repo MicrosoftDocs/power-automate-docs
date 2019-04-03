@@ -124,7 +124,7 @@ Learn more about [hybrid solutions](https://azure.microsoft.com/documentation/ar
 | Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -160,6 +160,9 @@ There is currently no single place where tenant administrators  can manage all t
 
 **Question:** Do I need a gateway for data sources in the cloud, such as SQL Azure?
 **Answer:** No. A gateway connects to on-premises data sources only.
+
+**Question:** Do I have to install my gateway in the default environment?
+**Answer:** Yes, Microsoft Flow only supports gateways that are installed in the default environment.
 
 **Question:** What is the actual Windows service called?
 **Answer:** In Services, the gateway is called **Power BI Enterprise Gateway Service**.

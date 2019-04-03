@@ -56,7 +56,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
    
     ![Flow details](./media/connection-dynamics365/flow-details.png)
     > [IMPORTANT]
-    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition should have Change Tracking enabled. See [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Click or tap **New step**, and then click or tap **Add an action**.
 8. Click or tap **Dynamics 365 – Create a new record**.
@@ -95,7 +95,7 @@ This walkthrough shows you how to create a task in [Wunderlist](https://www.wund
 10. Click or tap **Create flow**.  
 
 ## Trigger based logic
-Triggers like **When a record is created**, **When a record is updated**, and **When a record is deleted** initiate your flow within a few minutes of the event occuring.  In rare cases, your flow can take up to 2 hours to trigger.
+Triggers like **When a record is created**, **When a record is updated**, and **When a record is deleted** initiate your flow within a few minutes of the event occurring.  In rare cases, your flow can take up to 2 hours to trigger.
 
 When the trigger occurs, the flow receives a notification, but the flow runs on data that exists at the time the action runs.  For example, if your flow triggers when a new record is created, and you update the record twice before the flow runs, your flow runs only once with the latest data.
 
@@ -115,6 +115,7 @@ When you add a value to a field, you must match the field type whether you type 
 | Integer fields |Some fields require integer or dynamic content that is an integer type field. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**percentcomplete** |**Whole Number** |
 | Date fields |Some fields require a date entered in mm/dd/yyyy format or dynamic content that is a date type field. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**createdon** |**Date and Time** |
 | Fields that require both a record ID and lookup type |Some fields that reference another entity record require both the record ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields** |**accountid** |**Primary Key** |
+|Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of fields that require both a record ID and lookup type
 Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in PowerApps.

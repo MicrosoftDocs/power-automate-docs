@@ -5,19 +5,23 @@
   - name: Get started
     href: getting-started.md
   - name: Guided learning
-    href: ./guided-learning/index.yml
+    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
   - name: Create a flow in the browser
     href: get-started-logic-template.md
   - name: Create a flow on a phone
     href: mobile-create-flow.md
   - name: Create a team flow
     href: create-team-flows.md
+  - name: Create a flow that uses Common Data Service
+    href: common-data-model-intro.md
 - name: Automated flows
   items:
   - name: Create a flow from scratch
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
+  - name: Create a flow with Common Data Service
+    href: connection-cds.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
   - name: Filter and copy data
@@ -50,9 +54,23 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
-- name: Common Data Service (CDS) for Apps
+- name: Solutions
   items:
-  - name: Classic CDS for Apps workflows
+  - name: Overview
+    href: overview-solution-flows.md
+  - name: Create a flow in a solution
+    href: create-flow-solution.md
+  - name: Export solution
+    href: export-flow-solution.md
+  - name: Import solution
+    href: import-flow-solution.md
+  - name: Edit a solution-aware flow
+    href: edit-solution-aware-flow.md
+  - name: Remove a solution-aware flow
+    href: remove-solution-aware-flow.md
+- name: Common Data Service
+  items:
+  - name: Classic Common Data Service workflows
     href: workflow-processes.md
     items:
     - name: Configure workflow stages and steps
@@ -61,7 +79,7 @@
       href: monitor-manage-processes.md
     - name: Best practices for workflow processes
       href: best-practices-workflow-processes.md
-  - name: Classic CDS for Apps actions
+  - name: Classic Common Data Service actions
     items:
     - name: Use actions
       href: actions.md
@@ -71,15 +89,15 @@
       href: configure-actions.md    
     - name: Invoke custom actions from a workflow
       href: invoke-custom-actions-workflow-dialog.md
-  - name: Classic CDS for Apps task flows
+  - name: Classic Common Data Service task flows
     items:
     - name: Create mobile task flows
       href: create-mobile-task-flow.md
-  - name: Classic CDS for Apps dialogs
+  - name: Classic Common Data Service dialogs
     items:
-    - name: Use classic CDS for Apps dialogs
+    - name: Use classic Common Data Service dialogs
       href: use-cds-for-apps-dialogs.md
-    - name: Replace classic CDS for Apps dialogs
+    - name: Replace classic Common Data Service dialogs
       href: replace-dialogs.md
 - name: How to
   items:
@@ -142,7 +160,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom CDS for Apps workflow activities
+  - name: Custom Common Data Service workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
@@ -180,6 +198,8 @@
       href: gdpr-dsr-delete-msa.md
     - name: Close requests
       href: gdpr-dsr-accountclose-msa.md
+  - name: Microsoft Flow US Government
+    href: us-govt.md
 - name: Reference
   items:
   - name: Regions overview
@@ -188,6 +208,8 @@
     href: limits-and-config.md
   - name: Release notes
     href: release-notes.md
+  - name: Microsoft Flow Web API
+    href: web-api.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md
 - name: Learn from others
@@ -195,9 +217,6 @@
   - name: Webinars
     href: https://flow.microsoft.com/blog/category/webinars/
   - name: Blog
-    href: https://flow.microsoft.com/en-us/blog/
+    href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-
-
-

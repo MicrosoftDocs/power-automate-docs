@@ -2,9 +2,9 @@
 title: "Invoke custom actions from a workflow | MicrosoftDocs"
 description: "Learn how to invoke a custom action from a workflow"
 ms.custom: ""
-ms.date: 06/27/2018
+ms.date: 11/22/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -25,7 +25,7 @@ search.audienceType:
 ---
 # Invoke custom actions from a workflow
 
-Workflows have numerous capabilities supporting business scenarios. Calling basic SDK actions for a record, such as create, update, and delete, from within a workflow solves quite a few business scenarios. However, if you couple the capabilities of the workflows with the power of the custom actions invoked directly from within a workflow you add a whole new range of business scenarios to your application without needing to write code.  
+Workflows have numerous capabilities supporting business scenarios. Calling basic data operation actions for a record, such as create, update, and delete, from within a workflow solves quite a few business scenarios. However, if you couple the capabilities of the workflows with the power of the custom actions invoked directly from within a workflow you add a whole new range of business scenarios to your application without needing to write code.  
   
  Let’s look at the scenario in which a custom action is invoked from a workflow. We’ll invoke a custom action to request the manager’s approval when a discount for a particular opportunity exceeds 20%.  
   

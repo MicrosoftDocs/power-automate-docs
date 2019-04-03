@@ -39,6 +39,8 @@ Administrators can identify the region if they sign in to the Microsoft Flow [ad
 * India
 * Japan
 * Canada
+* South America
+* United Kingdom
 * US Government (GCC)
 
 ## What features are specific to a given region?

@@ -3,7 +3,7 @@ title: "Configure actions for workflows in PowerApps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/27/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

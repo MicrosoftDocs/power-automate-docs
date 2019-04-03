@@ -60,7 +60,7 @@ A business process flow definition is stored in the <xref:Microsoft.Dynamics.CRM
   
  For example, if you specified "My Custom BPF" as the name of the business process flow definition and are using the default publisher (new) for your active solution, the name of the custom entity created for storing process instances will be "new_mycustombpf".  
   
- If the `uniquename` value isn't available for a business process flow definition, for example if the business process flow was imported as part of solution from an earlier version, the default name of the custom entity will be "*\<activesolutionprefix>*\_bpf\_*<GUID_BPF_Definition>*:  
+ If the `uniquename` value isn't available for a business process flow definition, for example if the business process flow was imported as part of solution from an earlier version, the default name of the custom entity will be "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
 >  The sample business process flow records use system entities to store the corresponding business process flow instance records.  
@@ -92,7 +92,7 @@ You can retrieve the name of your business process flow entity using any of the 
          }
       ]
     }
-
+    ```
 - **Using the Organization service**: Use the following code sample:
 
     ```c#
@@ -114,7 +114,7 @@ You can retrieve the name of your business process flow entity using any of the 
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
 > The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
 > ```http
@@ -126,7 +126,7 @@ You can retrieve the name of your business process flow entity using any of the 
 
 The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Customer Engagement. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
 
-The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his/her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
+The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his or her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
 
 ![](media/bpf-privileges.png)
 
