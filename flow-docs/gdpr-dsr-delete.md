@@ -156,7 +156,7 @@ A user can delete all of their connections by using the Remove-Connection functi
 Add-PowerAppsAccount
 
 #Retrieves all connections for the calling user and deletes them
-Get-Connection | Remove-Connection
+Get-AdminPowerAppConnection | Remove-Connection
 ```
 
 PowerApps Admin PowerShell cmdlets
@@ -166,7 +166,7 @@ Add-PowerAppsAccount
 
 $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 #Retrieves all connections for the DSR user and deletes them 
-Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
 
