@@ -49,7 +49,18 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/flow-docs",
       "feedback_product_url": "https://ideas.flow.microsoft.com",
-      "search.appverid": "met150"
+      "search.appverid": "met150",
+      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
+      "featureFlags": {
+        "**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+	      "**/*.md": [
+          "flow"
+        ]
+      }
     },
     "fileMetadata": {},
     "template": [],
