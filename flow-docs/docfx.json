@@ -50,19 +50,20 @@
       "feedback_github_repo": "MicrosoftDocs/flow-docs",
       "feedback_product_url": "https://ideas.flow.microsoft.com",
       "search.appverid": "met150",
-      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
+      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi"
+    },
+    "fileMetadata": {
       "featureFlags": {
         "**/*.md": [
           "show_learn_banner"
         ]
       },
       "learn_banner_products": {
-	      "**/*.md": [
+        "**/*.md": [
           "flow"
         ]
       }
     },
-    "fileMetadata": {},
     "template": [],
     "dest": "flow",
     "markdownEngineName": "markdig"
