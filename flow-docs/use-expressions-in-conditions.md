@@ -24,9 +24,6 @@ In this walkthrough, you'll learn to use expressions and **Conditions** to compa
 
 When you create a flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
-> [!IMPORTANT]
-> Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
-
 You can use any combination of the following logical expressions in your conditions.
 
 Expression|Description|Example
@@ -209,6 +206,6 @@ Here's the implementation of the **and** expression that identifies all persons 
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## Learn more
-Learn about other [expressions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference))
+## Use functions in expressions
 
+Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
