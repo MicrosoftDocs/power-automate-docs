@@ -62,7 +62,8 @@
         "**/*.md": [
           "flow"
         ]
-      }
+      },
+      "toc_preview": true
     },
     "template": [],
     "dest": "flow",
