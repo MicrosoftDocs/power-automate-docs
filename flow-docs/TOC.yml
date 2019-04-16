@@ -149,7 +149,7 @@
     href: gateway-reference.md
 - name: For developers
   items:
-  - name: Microsoft Flow for enterprise developers, partners, and ISVs
+  - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
