@@ -52,7 +52,18 @@
       "search.appverid": "met150",
       "toc_preview": true
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "featureFlags": {
+        "**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+        "**/*.md": [
+          "flow"
+        ]
+      }
+    },
     "template": [],
     "dest": "flow",
     "markdownEngineName": "markdig"
