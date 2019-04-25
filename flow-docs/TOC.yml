@@ -54,6 +54,8 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
+  - name: Best practices for business process flow attributes
+    href: best-practices-entity-attributes.md
 - name: Solutions
   items:
   - name: Overview
