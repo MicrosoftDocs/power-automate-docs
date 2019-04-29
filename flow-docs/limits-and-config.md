@@ -67,14 +67,14 @@ These are limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Apply to each items - Free and Plan 1 license|5,000 |You can use the filter action to filter larger arrays as needed. |
-| Apply to each items - Plan 2 license|100,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Plan 1 and Plan 2 license|100,000 |You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
-| SplitOn items - Free and Plan 1 license |5,000 ||
-| SplitOn items - Plan 2 license |100,000 ||
+| SplitOn items - Free license |5,000 ||
+| SplitOn items - Plan 1 and Plan 2 license |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
 | Actions executions per 5 minutes - Free and Plan 1 license | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
-|Actions executions per 5 minutes - Plan 2 license|100,000|
+|Actions executions per 5 minutes - Plan 2 license|100,000|Also, you can distribute a workload across more than one flow as needed.|
 | Actions concurrent outgoing calls - Free and Plan 1 license | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
 | Actions concurrent outgoing calls - Free and Plan 1 license | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
