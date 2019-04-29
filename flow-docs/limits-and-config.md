@@ -59,18 +59,37 @@ These are the limits for a single flow run.
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
 | Max run history retention |28 days, per GDPR rules. | |
+|Minimum postone interval - Free and Plan 1 license|5 seconds||
+|Minimum postpone interval - Plan 2 license|1 second||
 
 ## Looping and debatching limits
 These are limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Apply to each items |100,000 |100,000 is only available for the premium plans. Otherwise, you are limited to 5,000. You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Plan 1 and Plan 2 license|100,000 |You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
-| SplitOn items |100,000 |Like Apply to each, the limit is 5,000 unless you are on a premium plan. |
+| SplitOn items - Free license |5,000 ||
+| SplitOn items - Plan 1 and Plan 2 license |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
-| Actions executions per 5 minutes | 100,000 | Also, you can distribute a workload across more than one flow as needed. |
-| Actions concurrent outgoing calls | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
+| Actions executions per 5 minutes - Free and Plan 1 license | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
+|Actions executions per 5 minutes - Plan 2 license|100,000|Also, you can distribute a workload across more than one flow as needed.|
+| Actions concurrent outgoing calls - Free and Plan 1 license | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
+| Actions concurrent outgoing calls - Free and Plan 1 license | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
+
+## Throughput limits
+
+|Name|Limit|Notes|
+|---|---|---|
+|Runtime endpoint - Number of read calls allowed per 5 minutes - Free and Plan 1 license|6,000||
+|Runtime endpoint - Number of read calls allowed per 5 minutes - Plan 2 license|60,000||
+|Runtime endpoint: Invoke calls per 5 minutes - Free and Plan 1 license|4,500||
+|Runtime endpoint: Number of invoke calls per 5 minutes - Plan 2 license|45,000||
+|Amount of throughput allowed per 5 minutes - Free and Plan 1 license|600 MB||
+|Amount of throughput allowed per 5 minutes - Plan 2 license|6 GB||
+|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Plan 1 and Plan 2 license|200 GB||
+
 
 ## Definition limits
 These are limits for a single flow.
