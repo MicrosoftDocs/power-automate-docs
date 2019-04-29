@@ -86,9 +86,9 @@ These are limits for a single flow run.
 |Runtime endpoint - Number of read calls allowed per 5 minutes - Plan 2 license|60,000||
 |Runtime endpoint: Invoke calls per 5 minutes - Free and Plan 1 license|4,500||
 |Runtime endpoint: Number of invoke calls per 5 minutes - Plan 2 license|45,000||
-|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free and Plan 2 license|200 GB||
 |Amount of throughput allowed per 5 minutes - Free and Plan 1 license|600 MB||
 |Amount of throughput allowed per 5 minutes - Free and Plan 1 license|6 GB||
+|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Plan 1 and Plan 2 license|200 GB||
 
 
 ## Definition limits
