@@ -1,5 +1,5 @@
 ---
-title: Create a reminder flow for SharePoint items. | Microsoft Docs
+title: Create a reminder flow for SharePoint items | Microsoft Docs
 description: Create flows that remind you of due dates for SharePoint items.
 services: ''
 suite: flow
@@ -14,44 +14,48 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2019
+ms.date: 04/30/2019
 ms.author: deonhe
 ---
 
 # SharePoint remind me
 
-SharePoint lists and libraries allowed you to define custom metadata columns to track dates. With Microsoft Flow's integration with SharePoint, you can easily create reminder flows, based on DateTime columns in SharePoint. With reminder flows, you receive a personal email alert x day(s) in advance of a date on any document or item in SharePoint.
+SharePoint lists and libraries allowed you to define custom metadata columns to track dates. With Microsoft Flow's integration with SharePoint, you can easily create reminder flows, based on DateTime columns in SharePoint. With reminder flows, you receive a personal email alert a predetermined number of days in advance of a date on any document or item in SharePoint.
 
 ## Prerequisites
 - Access to Microsoft SharePoint Online.
-- A SharePoint List or list or library with a DateTime column.
+- A SharePoint list, list, or library with a DateTime column.
 - Access to Microsoft Flow.
+
+
+<!--from editor: In the second point above, is it correct to have both "SharePoint list" and "list"?-->
+
 
 ## Create a reminder flow
 
  1. Create a [SharePoint list](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) with at least one DateTime column in the current view. 
  1. Select **Flow** > **Set a reminder** > **Date deactivated** (this is the column with the DateTime for the reminder).
 
-     ![select reminder flow](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
+     ![Select reminder flow](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
 
-1. Provide a **Flow name**, and the number of days prior to the DateTime column entry when you want to receive the reminder alert on the **Set a reminder** card.
+1. Provide a **Flow name** and the number of days prior to the DateTime column entry when you want to receive the reminder alert on the **Set a reminder** card.
 
-    ![set reminder flow details](media/create-sharepoint-reminder-flows/set-reminder-details.png)
+    ![Set reminder flow details](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
 1. Select **Create** on the **Set a reminder** card.
 
-1. You receive the following message, indicating that the flow was created:
+1. You'll receive the following message, indicating that the flow was created:
 
-    ![reminder flow created](media/create-sharepoint-reminder-flows/success.png)
+    ![Reminder flow created](media/create-sharepoint-reminder-flows/success.png)
     
 
 ## Confirm reminders received
 
-You will receive a reminder via email, based on the **Remind me this many day(s) in advance** entry you made on the **Set a reminder** flow you created earlier. 
+You'll receive a reminder via email, based on the **Remind me this many day(s) in advance** entry you made on the **Set a reminder** flow you created earlier. 
 
 ## Edit your flow
 
-The reminder flow is like any other flow, so you can access and edit it through [Microsoft Flow](https://flow.microsoft.com)
+The reminder flow is like any other flow, so you can access and edit it through [Microsoft Flow](https://flow.microsoft.com).
 
 ## Learn more
 
