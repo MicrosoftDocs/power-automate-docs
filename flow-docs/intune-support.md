@@ -18,13 +18,23 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ---
 
+
+<!--The title and description do not look correct.-->
+
+
+
+
 # Microsoft Flow mobile app supports Microsoft Intune
 
- The Microsoft Flow mobile app for iOS and Android supports Intune's Microsoft Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
+
+<!--Are you sure MAM isn't "mobile application management"? https://worldready.cloudapp.net/StyleGuide/Read?id=2696&topicid=33595 -->
+
+
+The Microsoft Flow mobile app for iOS and Android supports Intune's Microsoft Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
 
 ## Why Intune support is important
 
-Organizations are looking for more control over the data that resides on employee mobile devices. Organizations may want to restrict how that data moves to the device and ensure the data is removed, should the employee leave the organization.
+Organizations are looking for more control over the data that resides on employee mobile devices. Organizations might want to restrict how that data moves to the device and ensure the data is removed, should the employee leave the organization.
 
 ## What is Microsoft Application Management (MAM)
 
@@ -33,11 +43,11 @@ MAM allows organizations to create policies that govern how apps are used within
 ### Prerequisites
 
 - An Intune [app protection policy](https://docs.microsoft.com/intune/app-protection-policies).
-- An Azure AD group.
-- Company Portal - One key benefit of using MAM is that devices don't need to be enrolled in Intune MAM. All that's required in the Company Portal, which is available from the App Store and the Google Play store.
+- An Azure Active Directory (Azure AD) group.
+- Company Portal. One key benefit of using MAM is that devices don't need to be enrolled in Intune MAM. All that's required is the Company Portal, which is available from the App Store and the Google Play store.
 - Version 2.31.0 of the Microsoft Flow mobile app for iOS, Android, or Windows Phone.
 
-## Create an app protection policy, assign apps to the policy, define the settings, and add users to an Azure AD group.
+## Create an app protection policy, assign apps to the policy, define settings, and add users to an Azure AD group
 
 For the Microsoft Flow mobile app to be managed, you must:
 
@@ -50,14 +60,14 @@ For the Microsoft Flow mobile app to be managed, you must:
 Follow these steps to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies) that requires Microsoft Flow mobile app users to enter a PIN before they can access the app. 
 
 
-## Test the app protection policy.
+## Test the app protection policy
 
 After you've created the app protection policy and assigned users to the Azure AD group, it's time to use the Microsoft Flow mobile app and confirm the policy works.
 
 To confirm the policy works, follow these steps:
 
 1. Install the Microsoft Flow mobile app on a device whose platform matches one of the platforms you defined in the app protection policy.
-1. Sign into the mobile app with an account that's in the Azure AD group that restricts use of the mobile app to users who have a PIN.
+1. Sign in to the mobile app with an account that's in the Azure AD group that restricts use of the mobile app to users who have a PIN.
 
 You'll then be prompted to:
 1. Install the Company Portal.
@@ -66,5 +76,5 @@ You'll then be prompted to:
 
 ## Learn more
 
-Learn to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies)
+Learn to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies).
 
