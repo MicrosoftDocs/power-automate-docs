@@ -1,6 +1,6 @@
 ---
-title: Learn to create and manage flows in Microsoft Teams. | Microsoft Docs
-description: Create and manage flows to post messages on-demand, @mention users and channels, and post cards with response options, and more.
+title: Learn to create and manage flows in Microsoft Teams | Microsoft Docs
+description: Create and manage flows to post messages on-demand, @mention users and channels, post cards with response options, and more.
 services: ''
 suite: flow
 documentationcenter: na
@@ -29,43 +29,43 @@ ms.author: deonhe
 
 Follow these steps to install the Microsoft Flow app in Microsoft Teams.
 
-1. Sign into Microsoft Teams.
+1. Sign in to Microsoft Teams.
 
-1. Tap the **Apps** icon at the bottom left of the Teams navigation bar.
+1. Tap the **Apps** icon at the lower left of the Teams navigation bar.
 
-    ![select apps](media/flows-teams/apps.png)
+    ![Select apps](media/flows-teams/apps.png)
 
 1. Select the **Flow** app. You might need to search for **Flow** if you don't see it.
 
-    ![select flow app](media/flows-teams/select-flow-app.png)
+    ![Select flow app](media/flows-teams/select-flow-app.png)
 
-1. Select the **Install** button.
+1. Select **Install**.
 
-    ![install button](media/flows-teams/select-install.png)
+    ![Install button](media/flows-teams/select-install.png)
 
 1. Microsoft Flow is now installed.
 
-    ![installed](media/flows-teams/flow-installed.png)
+    ![Installed](media/flows-teams/flow-installed.png)
 
 
-## Create a flow in teams
+## Create a flow in Teams
 
-1. Sign into Microsoft Teams.
+1. Sign in to Microsoft Teams.
 
-1. Select the **More added apps** link (three dots) on the navigation bar.
+1. Select the **More added apps** link (...) on the navigation bar.
 
-    ![added apps icon](media/flows-teams/added-apps-icon.png)
+    ![Added apps icon](media/flows-teams/added-apps-icon.png)
 
 1. Select the **Flow** app.
 
-1. If you haven't done so before, you might need sign in and  grant permissions:.
+1. If you haven't done so before, you might need to sign in and grant permissions.
 
-    ![sign in](media/flows-teams/grant-permissions-sign-in.png)
+    ![Sign in](media/flows-teams/grant-permissions-sign-in.png)
 
 
-    Notice the following tabs
+    Notice the following tabs:
 
-    ![flow landing page](media/flows-teams/flow-landing-page.png)
+    ![Flow landing page](media/flows-teams/flow-landing-page.png)
 
     Name|Purpose
     ----|-----|
@@ -77,18 +77,22 @@ Follow these steps to install the Microsoft Flow app in Microsoft Teams.
 
     You now see all flows you've created from the Microsoft Flow designer (if any). 
 
-    You can also create flows from a [custom template]() or from [blank template](), just like you do from the Microsoft Flow designer. 
+    You can also create flows from a [custom template]() or from a [blank template](), just like you do from the Microsoft Flow designer. 
+
+
+<!--from editor: Are custom template and blank template (above) supposed to be links?-->
+
 
 ## Manage approvals
 
 You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like you would do in Microsoft Flow. Follow these steps to manage your approvals:
 
-1. Sign into Microsoft Teams.
+1. Sign in to Microsoft Teams.
 1. Select the **Approvals** tab.
 
-    ![approvals tab](media/flows-teams/approvals-tab.png)
+    ![Approvals tab](media/flows-teams/approvals-tab.png)
 
-    You'll notice the following sub-tabs:
+    You'll notice the following subtabs:
 
     Tab|Purpose
     ----|-----|
@@ -99,11 +103,11 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 1. Select the **Received**, **Sent**, or **History** tabs to learn more.
 
-    ![approvals tab](media/flows-teams/approvals-tab-2.png)
+    ![Approvals tab](media/flows-teams/approvals-tab-2.png)
 
-1. Select the **Create approval flow** to create an approval flow.
+1. Select **Create approval flow** to create an approval flow.
 
-    ![approvals tab](media/flows-teams/approvals-tab-3.png)
+    ![Approvals tab](media/flows-teams/approvals-tab-3.png)
 
 ## Use the bot with flows
 
@@ -111,32 +115,35 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 > [!TIP]
 > The bot lists and runs flows that are triggered by a schedule, or manually triggered without user input.
-1. Sign into Microsoft Teams.
-1. Select the **More added apps** link (three dots) on the navigation bar.
 
-    ![added apps icon](media/flows-teams/added-apps-icon.png)
-1. Select the **Flow** app
+1. Sign in to Microsoft Teams.
+1. Select the **More added apps** link (...) on the navigation bar.
+
+    ![Added apps icon](media/flows-teams/added-apps-icon.png)
+    
+1. Select the **Flow** app.
 
 1. Select the **Conversation** tab.
 
-    ![conversation tab](media/flows-teams/conversations-tab.png)
+    ![Conversation tab](media/flows-teams/conversations-tab.png)
 
-On the **Conversation** tab, you can send commands to the bot, which responds by performing the actions you command it to run. For example, to list my flows and run the flow with index 1, run the following commands:
+On the **Conversation** tab, you can send commands to the bot, which responds by performing the actions you command it to run. For example, to list your flows and run the flow with index 1, run the following commands:
+
 - ```List flows``` - The bot displays a list of your flows, prefixed by an index number.
 - ```Run flow 1``` - Runs flow number 1. Here, *1* is the index number of the flow you want to run.
 
-   ![bot commands](media/flows-teams/bot-commands.png)
+   ![Bot commands](media/flows-teams/bot-commands.png)
 
 ### Get the description for flows
 
-To get the description for the flow with index 1 from your list of flows, run ```describe flow 1```. The bot responds similar to this image:
+To get the description for the flow with index 1 from your list of flows, run ```describe flow 1```. The bot response will be similar to this image:
 
-   ![describe flows](media/flows-teams/bot-describe.png)
+   ![Describe flows](media/flows-teams/bot-describe.png)
 
 ### Get the list of commands for the bot
 
-To get the list of commands the bot handles, just ask it with this command:
+To get the list of commands the bot handles, ask it with this command: ```learn more``` 
 
-```learn more```. The bot responds like this image:
+The bot response will be similar to this image:
 
-   ![describe flows](media/flows-teams/bot-learn-more.png) 
+![Describe flows](media/flows-teams/bot-learn-more.png) 
