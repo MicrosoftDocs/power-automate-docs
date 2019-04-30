@@ -52,11 +52,9 @@ Follow these steps to install the Microsoft Flow app in Microsoft Teams.
 
 1. Sign in to Microsoft Teams.
 
-1. Select the **More added apps** link (...) on the navigation bar.
+1. Select the **More added apps** link (...) on the navigation bar and then select the **Flow** app.
 
     ![Added apps icon](media/flows-teams/added-apps-icon.png)
-
-1. Select the **Flow** app.
 
 1. If you haven't done so before, you might need to sign in and grant permissions.
 
@@ -117,12 +115,10 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 > The bot lists and runs flows that are triggered by a schedule, or manually triggered without user input.
 
 1. Sign in to Microsoft Teams.
-1. Select the **More added apps** link (...) on the navigation bar.
+1. Select the **More added apps** link (...) on the navigation bar and then select the **Flow** app.
 
     ![Added apps icon](media/flows-teams/added-apps-icon.png)
     
-1. Select the **Flow** app.
-
 1. Select the **Conversation** tab.
 
     ![Conversation tab](media/flows-teams/conversations-tab.png)
