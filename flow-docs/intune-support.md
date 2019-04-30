@@ -1,6 +1,6 @@
 ---
-title: Learn to create flows that posts adaptive cards to Microsoft Teams. | Microsoft Docs
-description: Learn to create flows that posts richly formatted content with adaptive cards to Microsoft Teams.
+title: Microsoft Flow mobile app now supports Microsoft Intune's Mobile Application Management. | Microsoft Docs
+description: Microsoft Flow mobile app now supports Microsoft Intune's Mobile Application Management.
 services: ''
 suite: flow
 documentationcenter: na
@@ -18,19 +18,9 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ---
 
-
-<!--The title and description do not look correct.-->
-
-
-
-
 # Microsoft Flow mobile app supports Microsoft Intune
 
-
-<!--Are you sure MAM isn't "mobile application management"? https://worldready.cloudapp.net/StyleGuide/Read?id=2696&topicid=33595 -->
-
-
-The Microsoft Flow mobile app for iOS and Android supports Intune's Microsoft Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
+The Microsoft Flow mobile app for iOS and Android supports Intune's Mobile Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
 
 ## Why Intune support is important
 
