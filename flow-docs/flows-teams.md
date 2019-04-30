@@ -75,11 +75,7 @@ Follow these steps to install the Microsoft Flow app in Microsoft Teams.
 
     You now see all flows you've created from the Microsoft Flow designer (if any). 
 
-    You can also create flows from a [custom template]() or from a [blank template](), just like you do from the Microsoft Flow designer. 
-
-
-<!--from editor: Are custom template and blank template (above) supposed to be links?-->
-
+    You can also create flows from a custom template or from a blank template, just like you do from the Microsoft Flow designer. 
 
 ## Manage approvals
 
