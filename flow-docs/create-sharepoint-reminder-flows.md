@@ -24,12 +24,8 @@ SharePoint lists and libraries allowed you to define custom metadata columns to 
 
 ## Prerequisites
 - Access to Microsoft SharePoint Online.
-- A SharePoint list, list, or library with a DateTime column.
+- A SharePoint list, or library with a DateTime column.
 - Access to Microsoft Flow.
-
-
-<!--from editor: In the second point above, is it correct to have both "SharePoint list" and "list"?-->
-
 
 ## Create a reminder flow
 
