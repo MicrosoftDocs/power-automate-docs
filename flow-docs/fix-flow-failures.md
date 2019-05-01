@@ -25,7 +25,7 @@ search.audienceType:
 
 ## Repair tips in email
 
-Repair tips are sent to flow owners via email whenever a flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure AD. If this, or several other conditions cause your flow to fail, you get a repair tips email like this one:
+Repair tips are sent to flow owners via email whenever a flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
 
 ![Repair tips](media/fix-flow-failures/repair-tips-email.png)
 
@@ -38,10 +38,9 @@ What happened|Provides a description of the problem that caused the failure in t
 How do I fix|Provides tips for resolving the issue that cause the failure in the flow.
 Troubleshooting Tips|Provides details including the number of times the flow failed, and a link to retry the flow with the same input data.
 
-
 To fix the reported errors, select **Fix my flow** and follow the steps in the repair tips email.
 
-Repair tips emails are optional. If you don't want to receive them, just turn off from the properties menu for the specific flow.
+Repair tips emails are optional. If you don't want to receive them, just turn them off from the properties menu for the specific flow.
 
 If your flow fails, you can also troubleshoot it directly in Microsoft Flow.  Here are a few common failure scenarios and tips on how to fix them.
 
