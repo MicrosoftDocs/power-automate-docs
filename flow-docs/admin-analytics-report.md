@@ -1,6 +1,6 @@
 ---
-title: Introduction to Sharing and Connectors Admin Analytics Reports. | Microsoft Docs
-description: Introduction to Sharing and Connectors Admin Analytics Reports for Microsoft Flow.
+title: Introduction to the Sharing and Connectors Admin Analytics Reports. | Microsoft Docs
+description: Introduction to the Sharing and Connectors Admin Analytics Reports for Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
