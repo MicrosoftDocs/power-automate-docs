@@ -118,7 +118,7 @@ In this walk-through, you'll use the mobile app for Microsoft Flow to run the bu
 
 ## Use different input types
 
-Your button flows can also pass rich data to button flows. Here's the list of the different types of data input types that button flows can accept. 
+Your button flows can also accept rich data types. Here's the list of data input types that button flows accept: 
 
 - Text
 - Drop-downs (like radio buttons)
