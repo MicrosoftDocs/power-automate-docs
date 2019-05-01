@@ -27,7 +27,7 @@ search.audienceType:
 
 Repair tips are sent to flow owners via email whenever a flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure AD. If this, or several other conditions cause your flow to fail, you get a repair tips email like this one:
 
-![](media/fix-flow-failures/repair-tips-email.png)
+![Repair tips](media/fix-flow-failures/repair-tips-email.png)
 
 The repair tips email contains the following sections:
 
@@ -73,5 +73,28 @@ The error message should specify how to correct the failure. You'll need to clic
 ## Other failures
 If the error code **500** or **502** appears, the failure is temporary or transient. Click or tap **Resubmit** to try the flow again.
 
-If you encounter some other problem, [please ask our community](https://go.microsoft.com/fwlink/?LinkID=787467) because others may have encountered a similar problem.
+## Getting help from support or the community
+
+When you need help, you can use our **Self Help** options, or you can **Ask for help** from others.
+
+### Self help 
+
+1. Go to the [support site](https://flow.microsoft.com/support/).
+1. Go to the **Self Help** category and select one of the self-help options.
+
+    ![Ask for help section. Contact support.](media/fix-flow-failures/self-help-section.png)
+### Ask for help from others:
+
+1. Go to the [support site](https://flow.microsoft.com/support/).
+1. Select **Contact Support** in the **Ask for help** section.
+    
+    ![Ask for help section. Contact support.](media/fix-flow-failures/ask-for-help.png)
+
+1. Complete the **Problem type**, **Category**, and the **Tell us what you need help with** fields, and then select **See solutions**. 
+
+1. Notice that the **Solutions** section displays after you select **See solutions**. It contains a list of results that you can use to help address the issue you're facing. 
+
+    ![Integrated helper details](media/fix-flow-failures/integrated-helper-details.png)
+
+If you need help with an issue, help is available from our [community](https://go.microsoft.com/fwlink/?LinkID=787467) and Microsoft. 
 
