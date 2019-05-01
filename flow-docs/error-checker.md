@@ -1,6 +1,6 @@
 ---
-title: Find and fix errors with the Microsoft Flow Checker. | Microsoft Docs
-description: Find and fix errors with the Microsoft Flow Checker quickly.
+title: Find and fix errors with the Microsoft Flow checker. | Microsoft Docs
+description: Find and fix errors with the Microsoft Flow checker quickly.
 services: ''
 suite: flow
 documentationcenter: na
@@ -35,11 +35,13 @@ The checker is always active, appearing in the command bar in the designer. The 
 
 ## View errors in the checker
 
-While designing you flow, 
+While designing your flow, you can select this button to open the checker to view errors and warnings. 
 
-Select this button to open the checker to view errors and warnings. 
+The checker also opens automatically when you save the flow if there are errors or warnings.  Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
 
-The checker also opens automatically when you save the flow if there are errors or warning.  Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. Expand each section to learn more details on how to fix an error.
+## Learn to fix errors and warnings
+
+Expand each section to learn more details on how to fix an error.
 
 ![Checker details](media/checker/checker-detail.png)
 
