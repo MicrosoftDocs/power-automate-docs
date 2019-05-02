@@ -27,7 +27,7 @@ As part of our commitment to partner with you on your journey to the General Dat
 
 ## Manage export requests
 
-The *right of data portability* allows a data subject to request a copy of his or her personal data in an electronic format (that’s a “structured, commonly used, machine readable, and interoperable format”) that may be transmitted to another data controller.
+The *right of data portability* allows data subjects to request a copy of their personal data in an electronic format (that’s a “structured, commonly used, machine readable, and interoperable format”) that may be transmitted to another data controller.
 
 Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), or [Microsoft Flow](https://flow.microsoft.com/) to find or export personal data for a specific user.
 
@@ -93,7 +93,7 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 ## Export a user's activity feed
 
-In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. A user can view his or her activity feed by following these steps:
+In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Users can view their activity feed by following these steps:
 
 1. Sign into [Microsoft Flow](http://flow.microsoft.com/), select the bell icon near the upper-right corner, and then select **Show all activity**.
 
