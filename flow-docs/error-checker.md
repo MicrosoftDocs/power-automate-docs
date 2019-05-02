@@ -35,7 +35,7 @@ The checker is always active, appearing in the command bar in the designer. The 
 
 ## View errors in the checker
 
-While designing your flow, you can select this button to open the checker to view errors and warnings. 
+While designing your flow, you can select the Flow Checker button to open the checker to view errors and warnings. 
 
 The checker also opens automatically when you save the flow if there are errors or warnings.  Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
 
@@ -47,7 +47,7 @@ Expand each section to learn more about how to fix an error.
 
 ## Learn more
 
-[Getting started with Microsoft Flow](getting-started.md)
+[Get started with Microsoft Flow](getting-started.md)
 
 
 
