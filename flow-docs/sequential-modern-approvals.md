@@ -46,7 +46,7 @@ This image summarizes the preceding steps:
 ## Prerequisites
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-The SharePoint Online list that you create must include the following columns:
+For the purposes of this walkthrough, the SharePoint Online list that you create must include the following columns:
 
    ![SharePoint list columns](./media/sequential-modern-approvals/sharepoint-columns.png)
 
