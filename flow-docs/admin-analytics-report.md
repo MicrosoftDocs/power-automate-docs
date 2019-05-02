@@ -62,7 +62,7 @@ The results in these reports are based on the environment you've selected. To ch
 
 ## Learn more
 
-- [Get started](getting-started.md) with Microsoft Flow.
+[Get started with Microsoft Flow](getting-started.md)
 
 
 
