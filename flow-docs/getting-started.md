@@ -105,7 +105,7 @@ Use the Microsoft Flow notification center (located at the top right of the desi
 
 From the notification center, you can navigate to the **Activity** page of Microsoft Flow to see all your flows that recently ran, sent notifications, or failed.
 
-[Notification center](media/getting-started/notification-center.png)
+![Notification center](media/getting-started/notification-center.png)
 
 ## Use the mobile app ##
 
