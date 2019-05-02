@@ -1,6 +1,6 @@
 ---
-title: Find and fix errors with the Microsoft Flow checker. | Microsoft Docs
-description: Find and fix errors with the Microsoft Flow checker quickly.
+title: Find and fix errors with the Microsoft Flow checker | Microsoft Docs
+description: Find and fix errors quickly with the Microsoft Flow checker.
 services: ''
 suite: flow
 documentationcenter: na
@@ -24,13 +24,13 @@ search.audienceType:
 
 # The Microsoft Flow checker
 
-The Microsoft Flow checker promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights to questions like - which areas of my flow's implementation pose a performance or reliability risk?
+The Microsoft Flow checker promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights into questions like "which areas of my flow's implementation pose a performance or reliability risk?"
 
 For each issue the checker identifies, the checker points to specific occurrences within the flow where you should consider making improvements. And, you learn how to implement these improvements by following detailed guidance.
 
 The checker is always active, appearing in the command bar in the designer. The checker shows a red dot when it finds one or more errors or potential errors in your flow.
 
-![Checker](media/checker/checker-in-designer.png)
+![Checker](media/checker/checker-in-designer.png "Checker")
 
 
 ## View errors in the checker
@@ -41,13 +41,13 @@ The checker also opens automatically when you save the flow if there are errors 
 
 ## Learn to fix errors and warnings
 
-Expand each section to learn more details on how to fix an error.
+Expand each section to learn more about how to fix an error.
 
-![Checker details](media/checker/checker-detail.png)
+![Checker details](media/checker/checker-detail.png "Checker details")
 
 ## Learn more
 
-- [Getting started](getting-started.md) with Microsoft Flow
+[Getting started with Microsoft Flow](getting-started.md)
 
 
 
