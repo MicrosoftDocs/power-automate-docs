@@ -113,7 +113,28 @@ In this walk-through, you'll use the mobile app for Microsoft Flow to run the bu
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (optional) Show the detailed results of the flow's run by tapping the **Create a new work item** step.
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## Use different input types
+
+Your button flows can also accept rich data types. Here's the list of data input types that button flows accept: 
+
+- Text
+- Drop-downs (like radio buttons)
+- Email address
+- File (for example, a photo on your phone)
+- Yes or No check box
+- Number
+- Date (with a calendar picker)
+
+To use these input types, add the **Manually trigger a flow** trigger, and then add any of these types to your flow:
+
+![Input options](media/button-flow-with-user-input-tokens/input-options.png)
+
+Additionally, you might want to designate some inputs as required and others as optional. Use the action menu (... at the right side) on each input field. There's a limit of five inputs per button.
+
+![Select optional tokens](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## Next steps
 * [Share button flows](share-buttons.md)
