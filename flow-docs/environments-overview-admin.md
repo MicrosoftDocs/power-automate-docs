@@ -117,7 +117,7 @@ You can now add users to the environment.
     A **Maker** can create new resources such as flows, data connections, and gateways in an environment.
 
    > [!NOTE]
-   > A user doesn't need to be a **Maker** to *edit* resources in an environment. Each Maker determines who can edit her or his resources by granting permissions to users who aren't environment Makers.
+   > A user doesn't need to be a **Maker** to *edit* resources in an environment. Each Maker determines who can edit their resources by granting permissions to users who aren't environment Makers.
    > 
    > 
 
