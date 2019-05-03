@@ -39,10 +39,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
     ![Create from blank option](media/create-approval-response-options/create-approval-response-options.png)
 
-
-<!--Because they're selecting Create from blank again, would it be correct to say "In the dialog box that opens, select **Create from blank**."?-->
-
-1. Select **Create from blank**. 
+1. On the screen that opens, select **Create from blank**. 
 
     ![Select Create from blank](media/create-approval-response-options/create-from-blank.png)
 
@@ -63,10 +60,6 @@ Let’s say you want to send an approval request each time an employee uploads a
     Next, you will create the custom responses that your approvers will use when they respond to an approval request for an employee expense.
 
 
-
-<!--In looking at the screenshots, it seems like selecting Add new item should be in previous steps. Please see changes below.-->
-
-
 1. In the **Response options Item - 1** box, enter **Accept** and then select **Add new item**. 
 
     ![Custom response 1](media/create-approval-response-options/enter-response-1.png)
@@ -77,10 +70,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 1. In the **Response options Item - 3** box, enter **Need more info**.
 
-    ![Custom response 3](media/create-approval-response-options/enter-response-3.png)
-    
-    
-<!--Does the following box open after you enter Need more info? No sure where it came from.-->    
+    ![Custom response 3](media/create-approval-response-options/enter-response-3.png)   
     
 
 1. Enter a **Title**, **Assigned to** (email for the approver), and **Details** (the details to be contained in the approval request).
@@ -89,14 +79,13 @@ Let’s say you want to send an approval request each time an employee uploads a
 
     ![Custom responses details](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
-<!--Is there any final step to take, such as pressing a Save button? -->
+
+Now that you've created your custom responses, you might want to do different things in your flow, depending on the response from the approver.
 
 
 ## Use approval responses 
 
-Now that you've created your custom responses, you might want to do different things in your flow, depending on the response from the approver.
-
-For instance, if the response to the request is **Accept**, you might want to send an email to the accounting department, asking them to reimburse the employee for the expense. 
+If the response to the request is **Accept**, you might want to send an email to the accounting department, asking them to reimburse the employee for the expense. 
 
 If the response is **Reject**, you might want to send an email to the employee, letting them know that the request was rejected.
 
@@ -107,6 +96,8 @@ To do any of these in the flow, add a [**Condition**](add-condition.md) or a **S
 ## Respond to approval requests with a custom response
 
 Approvers receive approval requests in email. The requests are also displayed in the approval center on Microsoft Flow. 
+
+![Approval request email](media/create-approval-response-options/approval-request-email.png)
 
 ## Learn more
 - Create [single approver flows](modern-approvals.md)
