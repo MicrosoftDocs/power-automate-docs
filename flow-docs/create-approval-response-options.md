@@ -1,5 +1,5 @@
 ---
-title: Create approval flows with custom responses. | Microsoft Docs
+title: Create approval flows with custom responses | Microsoft Docs
 description: Create approval flows with custom responses.
 services: ''
 suite: flow
@@ -22,33 +22,37 @@ search.audienceType:
   - maker
 ---
 
-## Create custom response options for approval flows
+# Create custom response options for approval flows
 
-Let’s say we want to send an approval request each time an employee uploads an expense report to SharePoint and then allow the approver to respond with one of three options: Accept, Need more info, or Reject.
+Let’s say you want to send an approval request each time an employee uploads an expense report to SharePoint and then allow the approver to respond with one of three options: Accept, Need more info, or Reject.
 
 
 ## Prerequisites
 
-- An Microsoft Flow account with a Plan 2 license (Plan 2 is needed to use premium features. Approvals is a premium feature.)
+- A Microsoft Flow account with a Plan 2 license (Plan 2 is needed to use premium features. Approvals is a premium feature.)
 - A SharePoint list for employees to enter their expense reports.
 
 ## Create approval flow
-1. Sign into [Microsoft Flow](Https://flow.microsoft.com).
-1. Select **My flows** from the navigation bar on the left side.
-1. Select **New**, and then **Create from blank**.
+1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
+1. Select **My flows** from the left navigation bar.
+1. Select **New** > **Create from blank**.
 
-    ![Create from blank](media/create-approval-response-options/create-approval-response-options.png)
+    ![Create from blank option](media/create-approval-response-options/create-approval-response-options.png)
+
+
+<!--Because they're selecting Create from blank again, would it be correct to say "In the dialog box that opens, select **Create from blank**."?-->
+
 1. Select **Create from blank**. 
 
-    ![Create from blank](media/create-approval-response-options/create-from-blank.png)
+    ![Select Create from blank](media/create-approval-response-options/create-from-blank.png)
 
-1. Search for **sharepoint**, and then select **When an item is created** from the list of triggers. 
+1. Search for **sharepoint** and then select **When an item is created** from the list of triggers. 
 
 1. Provide the SharePoint **Site Address** and **List Name**. 
 
 1. Select **New step**, search for **Approval**, and then select **Start and wait for an approval (V2)**.
 
-1. Select the **Approval type** list on the **Start and wait for an approval (V2)** card.
+1. On the **Start and wait for an approval (V2)** card, select the **Approval type** list.
 
     ![Approval type](media/create-approval-response-options/select-approval-type.png)
 
@@ -58,34 +62,45 @@ Let’s say we want to send an approval request each time an employee uploads an
 
     Next, you will create the custom responses that your approvers will use when they respond to an approval request for an employee expense.
 
-1. Enter **Accept** into the **Response options Item - 1** box. 
 
-    ![ Custom response 1](media/create-approval-response-options/enter-response-1.png)
 
-1. Select **Add new item**, and then enter **Reject** into the **Response options Item - 2** box
+<!--In looking at the screenshots, it seems like selecting Add new item should be in previous steps. Please see changes below.-->
 
-    ![ Custom response 2](media/create-approval-response-options/enter-response-2.png)
 
-1. Select **Add new item**, and then enter **Need more info** into the **Response options Item - 3** box
+1. In the **Response options Item - 1** box, enter **Accept** and then select **Add new item**. 
 
-    ![ Custom response 3](media/create-approval-response-options/enter-response-3.png)
+    ![Custom response 1](media/create-approval-response-options/enter-response-1.png)
 
-1. Enter a **Title**, **Assigned to**, (email for the approver), and **Details** (the details to be contained in the approval request).
+1. In the **Response options Item - 2** box, enter **Reject** and then select **Add new item**.
+
+    ![Custom response 2](media/create-approval-response-options/enter-response-2.png)
+
+1. In the **Response options Item - 3** box, enter **Need more info**.
+
+    ![Custom response 3](media/create-approval-response-options/enter-response-3.png)
+    
+    
+<!--Does the following box open after you enter Need more info? No sure where it came from.-->    
+    
+
+1. Enter a **Title**, **Assigned to** (email for the approver), and **Details** (the details to be contained in the approval request).
 
     Here's an example of what you might include for your organization.
 
-    ![ Custom responses details](media/create-approval-response-options/enter-title-assigned-to-details.png)
+    ![Custom responses details](media/create-approval-response-options/enter-title-assigned-to-details.png)
+
+<!--Is there any final step to take, such as pressing a Save button? -->
 
 
 ## Use approval responses 
 
 Now that you've created your custom responses, you might want to do different things in your flow, depending on the response from the approver.
 
-For instance, if the response to the request is **Accept**, you might want to send an email to the Accounting department, asking them to reimburse the employee for the expense. 
+For instance, if the response to the request is **Accept**, you might want to send an email to the accounting department, asking them to reimburse the employee for the expense. 
 
-If the response is **Reject**, you want to send an email to the employee, letting them know that the request was rejected.
+If the response is **Reject**, you might want to send an email to the employee, letting them know that the request was rejected.
 
-And finally, if the response from the approver is **Need more info**, you might want to send an email to the employee, requesting that the employee provides more information.
+And finally, if the response from the approver is **Need more info**, you might want to send an email to the employee, requesting the employee to provide more information.
 
 To do any of these in the flow, add a [**Condition**](add-condition.md) or a **Switch** action to your flow, and then select the **Outcome** field of the approval request from the dynamic content picker. Be sure to confirm whether the value is Accept, Need more info, or Reject.
 
