@@ -27,7 +27,7 @@
   - name: Create a flow in Teams
     href: flows-teams.md
   - name: Create adaptive card flows in Teams
-    href: flows-teams.md
+    href: create-adaptive-cards-teams.md
   - name: Create a flow with Common Data Service
     href: connection-cds.md
   - name: Create a flow with Dynamics 365
