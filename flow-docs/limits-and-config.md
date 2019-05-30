@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/04/2018
+ms.date: 05/30/2019
 ms.author: stepsic
 search.app: 
   - Flow
@@ -54,12 +54,12 @@ These are the limits for a single flow run.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days, any pending steps time-out. Timed-out approvals are removed from the approvals center. If someone attemps to approve a timed-out request, they’ll receive an error message. |
+| Run duration |30 days |Includes workflows with pending steps like approvals. After 30 days, any pending steps time-out. Timed-out approvals are removed from the approvals center. If someone attempts to approve a timed-out request, they’ll receive an error message. |
 | Storage retention |30 days |This is from the run start time. |
 | Min recurrence interval |1 minute | |
 | Max recurrence interval |500 days | |
 | Max run history retention |28 days, per GDPR rules. | |
-|Minimum postone interval - Free and Plan 1 license|5 seconds||
+|Minimum postpone interval - Free and Plan 1 license|5 seconds||
 |Minimum postpone interval - Plan 2 license|1 second||
 
 ## Looping and debatching limits
