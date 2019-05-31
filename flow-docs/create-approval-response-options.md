@@ -29,7 +29,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 ## Prerequisites
 
-- A Microsoft Flow account with a Plan 2 license (Plan 2 is needed to use premium features. Approvals is a premium feature.)
+- A Microsoft Flow account with a Plan 1 license (Plan 1 is needed to use premium connectors. Approvals is a premium connector.)
 - A SharePoint list for employees to enter their expense reports.
 
 ## Create approval flow
