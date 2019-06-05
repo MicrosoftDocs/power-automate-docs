@@ -141,7 +141,7 @@ The Microsoft Flow US Government services are deployed to Microsoft Azure Govern
 
 When a user of an organization employing ADFS attempts to access Microsoft Flow US Government, the user is redirected to a login page hosted on the organization’s ADFS server.
 
-The user provides his or her credentials to their organization's ADFS server. The organization's ADFS server attempts to authenticate the credentials using the organization’s Active Directory infrastructure.
+The user provides credentials to their organization's ADFS server. The organization's ADFS server attempts to authenticate the credentials using the organization’s Active Directory infrastructure.
 
 If authentication is successful, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
 

@@ -83,6 +83,11 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
      Within a minute after the tweet is posted, an email message notifies you of the new tweet.
 
+> [!TIP]
+> Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
+
+![Rich edit email](media/get-started-logic-flow/email-rich-text.png)
+
 ## Manage a flow
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.

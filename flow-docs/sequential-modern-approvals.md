@@ -26,6 +26,10 @@ Some workflows require pre-approval before the final approver is required to sig
 
 In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
 
+> [!NOTE]
+> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Microsoft Flow integrates to drive your flows.
+
+
 ## Detailed steps in the flow
 The flow:
 
@@ -46,7 +50,7 @@ This image summarizes the preceding steps:
 ## Prerequisites
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-The SharePoint Online list that you create must include the following columns:
+For the purposes of this walkthrough, the SharePoint Online list that you create must include the following columns:
 
    ![SharePoint list columns](./media/sequential-modern-approvals/sharepoint-columns.png)
 

@@ -6,15 +6,12 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -209,6 +206,6 @@ Here's the implementation of the **and** expression that identifies all persons 
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## Learn more
-Learn about other [expressions](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## Use functions in expressions
 
+Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)

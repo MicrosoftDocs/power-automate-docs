@@ -90,6 +90,38 @@ When you create a flow from scratch, you control the entire workflow. Here are a
 - [Publish a template](publish-a-template.md).
 - [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
+
+## Peek at the code
+
+You don't need to be a developer to create flows, however, Microsoft Flow does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Microsoft Flow designer: 
+
+1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
+1. Select **Peek code**.
+
+    ![Peek code](media/getting-started/peek-code.png)
+
+1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
+
+    ![Peek code](media/getting-started/peek-code-details.png)
+   
+
+## Find your flows easily
+
+When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
+
+![Filter or search flows](media/getting-started/filter-search-box.png)
+ 
+> [!NOTE]
+> The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
+
+## Get notifications when something's wrong
+
+Use the Microsoft Flow notification center (located at the top right of the designer) to quickly see a list of flows have failed recently. The notification center displays a number that indicates the number of flows that failed recently.
+
+From the notification center, you can navigate to the **Activity** page of Microsoft Flow to see all your flows that recently ran, sent notifications, or failed.
+
+![Notification center](media/getting-started/notification-center.png)
+
 ## Use the mobile app ##
 
 Download the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).

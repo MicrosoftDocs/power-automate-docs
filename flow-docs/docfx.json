@@ -49,9 +49,21 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/flow-docs",
       "feedback_product_url": "https://ideas.flow.microsoft.com",
-      "search.appverid": "met150"
+      "search.appverid": "met150",
+      "toc_preview": true
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "featureFlags": {
+        "**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+        "**/*.md": [
+          "flow"
+        ]
+      }
+    },
     "template": [],
     "dest": "flow",
     "markdownEngineName": "markdig"

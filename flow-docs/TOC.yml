@@ -20,6 +20,14 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
+  - name: Create a SharePoint reminder flow
+    href: create-sharepoint-reminder-flows.md
+  - name: Create flow to customize SharePoint page approvals
+    href: customize-sharepoint-page-approvals.md
+  - name: Create a flow in Teams
+    href: flows-teams.md
+  - name: Create adaptive card flows in Teams
+    href: create-adaptive-cards-teams.md
   - name: Create a flow with Common Data Service
     href: connection-cds.md
   - name: Create a flow with Dynamics 365
@@ -54,6 +62,8 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
+  - name: Best practices for business process flow attributes
+    href: best-practices-entity-attributes.md
 - name: Solutions
   items:
   - name: Overview
@@ -109,6 +119,8 @@
     href: data-operations.md
   - name: Use expressions in conditions
     href: use-expressions-in-conditions.md
+  - name: "Reference: Use functions in expressions"
+    href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
   - name: Approval flows
     items:
     - name: Single approvals
@@ -123,6 +135,8 @@
       href: common-data-model-approve.md
     - name: Format approval requests
       href: approvals-markdown-support.md
+    - name: Custom approval response options
+      href: create-approval-response-options.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template
@@ -135,6 +149,8 @@
     href: mobile-monitor-activity.md
   - name: Troubleshoot a flow
     href: fix-flow-failures.md
+  - name: Find and fix errors with the error checker
+    href: error-checker.md
 - name: Connect to data
   items:
   - name: Available connections
@@ -147,7 +163,7 @@
     href: gateway-reference.md
 - name: For developers
   items:
-  - name: Microsoft Flow for enterprise developers, partners, and ISVs
+  - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
@@ -174,8 +190,12 @@
     href: environments-overview-admin.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
+  - name: Support Intune in mobile apps
+    href: intune-support.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
+  - name: View sharing and connectors analytics reports
+    href: admin-analytics-report.md
   - name: Respond to DSR requests
     items:
     - name: Summary
