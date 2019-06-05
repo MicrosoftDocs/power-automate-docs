@@ -14,8 +14,7 @@ ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
-ms.reviewer: 
-  - karann-msft
+ms.reviewer: karann-msft
 search.app: 
   - Flow
 search.audienceType: 
