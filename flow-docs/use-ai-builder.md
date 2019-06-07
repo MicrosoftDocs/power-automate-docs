@@ -32,6 +32,6 @@ You can build AI models by using the new AI Builder (preview) option in the left
 ![Use AI builder in Microsoft Flow](./media/use-ai-builder/ai_builder.png "AI Builder in Microsoft Flow")
 
 
-You can use AI models created using AI Builder in canvas and model-driven apps to add intelligence to your apps. More information: [Use AI Builder in Microsoft Flow](/ai-builder/use-in-flow-overview)
+You can use AI models created using AI builder in your flows to add intelligence. More information: [Use AI Builder in Microsoft Flow](/ai-builder/use-in-flow-overview)
 
 
