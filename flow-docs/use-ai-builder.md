@@ -30,6 +30,6 @@ AI Builder (preview) is a new Power Platform capability for teams with the busin
 You can build AI models by using the new AI Builder (preview) option in the left navigation pane of [Microsoft Flow](https://flow.microsoft.com). More information: [AI model types](https:/docs.microsoft.com/ai-builder/model-types)
 
 
-You can use AI models created using AI Builder in canvas and model-driven apps to add intelligence to your apps. More information: [Use AI Builder in PowerApps](https://docs.microsoft.com/ai-builder/use-in-powerapps-overview)
+You can use AI models created using AI Builder in canvas and model-driven apps to add intelligence to your apps. More information: [Use AI Builder in Microsoft Flow](/ai-builder/use-in-flow-overview)
 
 
