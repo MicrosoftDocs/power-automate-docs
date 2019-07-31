@@ -191,6 +191,8 @@ Some of the features available in the commercial version of Flow are not availab
 
 - Trigger Microsoft Flow US Government flow *from* Dynamics 365 for Customer Engagement GCC
 
+- [Approvals](./modern-approvals.md) – Although  US Government customers may use Microsoft Flow approvals, they will not be able to send actionable emails, and will need to direct approvers to the Approval Center. As a workaround, Microsoft Flow makers can leverage standard email connectors to notify someone that an approval pending. In that case, they would also include the hyperlink, within the email, which points to the Approval Center where US Government customers may act on the approvals.
+
 - [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
 
 - [Microsoft Flow Mobile Application](https://docs.microsoft.com/flow/mobile-manage-flows)
@@ -202,7 +204,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation): You can use the admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 
 ### See also
 
