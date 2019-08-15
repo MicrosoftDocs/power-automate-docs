@@ -1,8 +1,0 @@
-- name: Get started
-  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/1-introduction
-- name: Build flows
-  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/2-create-first-flow
-- name: Work with approvals
-  href: https://docs.microsoft.com/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request
-- name: Administer flows
-  href: administer-flows.yml?tutorial-step=1
