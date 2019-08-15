@@ -1,11 +1,6 @@
 {
     "redirections": [
         {
-        "source_path": "flow-docs/guided-learning/index.md",
-        "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
-        "redirect_document_id": false
-        },
-        {
         "source_path": "flow-docs/guided-learning/administer-flows.yml",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
         "redirect_document_id": false
