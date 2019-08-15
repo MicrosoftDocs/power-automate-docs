@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+        "source_path": "flow-docs/guided-learning/administer-flows.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
+        "redirect_document_id": false
+        },
+        {
         "source_path": "flow-docs/postman-collection.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/define-postman-collection",
         "redirect_document_id": true
@@ -67,7 +72,7 @@
         },
         {
             "source_path": "flow-docs/guided-learning/index.md",
-            "redirect_url": ": https://docs.microsoft.com/learn/paths/automate-process-using-flow",
+            "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
             "redirect_document_id": true
         }
     ]
