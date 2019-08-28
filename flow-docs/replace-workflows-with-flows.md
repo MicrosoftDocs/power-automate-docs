@@ -1,20 +1,12 @@
 ---
-title: Sign up and sign in | Microsoft Docs
-description: Sign up and sign into Microsoft Flow, and troubleshoot issues with this process.
-services: ''
-suite: flow
-documentationcenter: na
-author: anjlic
-manager: anneta
-editor: ''
-tags: ''
+title: Replace classic Common Data Service workflows with Microsoft Flow | Microsoft Docs
+description: Describes Microsoft Flow capabilities and recommended patterns to use flow instead of a classic workflow.
+author: msftman
+manager: kvivek
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/04/2017
-ms.author: anjlic
+ms.date: 08/27/2019
+ms.author: karansr
 search.app: 
   - Flow
 search.audienceType: 
@@ -22,24 +14,20 @@ search.audienceType:
   - enduser
 ---
 
-# Replace classic Common Data Service workflows with Microsoft Flow
+# Replace classic Common Data Service workflows with flows
 
-It is recommended to replace classic Common Data Service Workflows with
-Microsoft Flow because Microsoft Flow has significant advantages over the classic workflow model. This topic describes Microsoft Flow capabilities and recommended patterns to consider when
-automation is implemented as a flow instead of a classic workflow. 
+Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow capabilities and recommended patterns while automating your processes using flow instead of  classic workflow.
 
-You should build any new automation processes using Microsoft Flow instead of continuing to utilize classic workflows.
+This topic provides you information about the Microsoft Flow capabilities in comparison to the classic workflow. 
 
-Take time to also review your existing classic workflow processes. We see
-    Mirosoft Flow as capable of replacing Classic Workflows for many patterns. Depending
-    on the requirement alternative options utilizing our technology could also
-    be identified to solve business requirements.
-
+It is recommended that you use flows instead of classic Common Data Service workflows to build any new automation processes. YOu should also review your existing classic workflow processes and consider replacing them with flows.
 
 
 ## Feature capability comparison
 
-This table summarizes a comparison between Microsoft Flow and classic workflows capabilities.
+This table summarizes a comparison between Microsoft Flow and classic workflows capabilities. 
+
+*We are continuously adding new capabilities to Microsoft Flow so that it's at par and even better than classic workflow capabilities. We will update information in this table as Microsoft Flow gains capabilities; check back often!*
 
 <table>
 <tr>
@@ -82,7 +70,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -156,7 +144,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -173,7 +161,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -190,7 +178,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -207,7 +195,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -281,7 +269,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -298,7 +286,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                 </td>
                 <td>
                     
-   Available Oct &#8216;19
+   No
                     
                 </td>
                 <td>
@@ -329,7 +317,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
                     
    Run-as scopes
    <br/>
-   (e.g., org., business unit, user)
+   (for example, organization, business unit, user)
                     
                 </td>
                 <td>
@@ -537,25 +525,25 @@ We now have the approval structure created so the approver has all of the
 information they need to make a decision on next steps. The entire example
 on-demand flow to request approval is shown below:
 
-![Define your flow](media/define-flow-3.png "Define your flow")
+![Approval flow structure](media/approval-flow-structure.png "Approval flow structure")
 
 To execute, run this flow on-demand against your quote. The flow summarizes
 quote line items for that quote and sends an approval request that the approver
 can respond to from the flow portal, or the actionable email they receive. An
 example of the display is below:
 
-![](media/662126f05cce2a3540780b9f2dde4b59.png)
+![Flow in action](media/flow-in-action.png "Flow in action")
 
 ## Recommended patterns
 
 
--   Workflows with complex else-if conditional logic  
+-   **Workflows with complex else-if conditional logic**  
     
     Instead of using conditions, we recommend using the [switch
     action](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-switch-statement#add-switch-statement)
     instead.
 
--   Workflows that run from plug-in/code  
+-   **Workflows that run from plug-in/code**  
     
     It is recommend redesigning the flow to run off triggers.
 
@@ -575,7 +563,7 @@ example of the display is below:
         trigger](https://docs.microsoft.com/en-us/azure/connectors/connectors-native-reqres#use-the-http-request-trigger)
         to invoke the flow
 
--   Workflows that run recursively  
+-   **Workflows that run recursively**  
     
     Use the
     [do-until](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop)
@@ -583,30 +571,28 @@ example of the display is below:
     each](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop)
     loop in Flows instead
 
--   Workflows that need a list of records  
+-   **Workflows that need a list of records**  
     
     Use the **list records** action instead. When using this action, it is
     recommended to define record filtering criteria using OData syntax to
     optimize the action by minimizing the number of records that need to
     retrieved.
 
--   Workflows that sleep to run on a schedule  
+-   **Workflows that sleep to run on a schedule**  
     
     Use the **recurrence** trigger to run business logic at periodic time
     intervals. For workflows that need to be triggered at a specific time, or
     when a condition is met, define these triggering criteria in the trigger,
     available in Oct ‘19
 
--   Workflows for which runs were managed to ensure activities were executed in
-    a single transaction  
-    [Use the changeset action, available in Oct
-    ‘19](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service).
-    The changeset action ensures that all actions within it are performed as a
-    single, atomic unit that either all succeed, or fail as a group. If any one
-    of the actions in a change set fails, changes made by completed operations
+-   **Workflows for which runs were managed to ensure activities were executed in
+    a single transaction**  
+    
+    [Use the [changeset action](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to  ensures that all actions within it are performed as a single, atomic unit that either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations
     are rolled back.
 
--   Monitor workflow runs for failures  
+-   **Monitor workflow runs for failures**  
+    
     In flow, use the **run-after setting** on an action to configure it to run
     when the previous action fails. E.g. send a flow mobile notification when
     the update a record action fails, or times out.
@@ -614,13 +600,11 @@ example of the display is below:
 ## FAQs
 
 
--   I have a Dynamics 365 license. Can I use Microsoft Flow?
+-   **I have a Dynamics 365 license. Can I use Microsoft Flow?**
 
-    Every user of Dynamics 365 is already entitled to use Microsoft Flow. Please
-    review our licensing information available:
-    <https://flow.microsoft.com/pricing/>
+    Every user of Dynamics 365 is already entitled to use Microsoft Flow. Review our licensing information available at: <https://flow.microsoft.com/pricing/>
 
--   How often can my Flows be triggered?
+-   **How often can my Flows be triggered?**
 
     -   Dynamics 365 (or Common Data Service) flows run near real-time of
         trigger due to the fact they use webhooks (no polling required)
@@ -635,24 +619,28 @@ example of the display is below:
 
     -   Maximum of 6GB of throughput per 5 minutes
 
--   How long can a single flow run for?  
-    A single flow run times out after 30 days. However, flow runs for 365 days
-    for Common Data Service only flows. This is due in Oct ’19.
+-   **How long can a single flow run for?**  
+    
+    A single flow run times out after 30 days.
 
--   How do I move my Flows between environments?  
+-   **How do I move my Flows between environments?**  
+    
     Just like classic workflows, Flows can be created in solutions to support
     the full application lifecycle for processes.
 
--   Are Flow dependencies tracked in the Common Data Service?  
+-   **Are Flow dependencies tracked in the Common Data Service?**  
+    
     Just as with any other component in a solution, all dependencies for Flows
     in solutions are tracked
 
--   Do I have to rebuild all workflows from scratch as I move to Flows?  
+-   **Do I have to rebuild all workflows from scratch as I move to Flows?**
+  
     Moving to Flows will not require building most workflows from scratch.
     Starting Oct’19, it will be possible to generate Flow templates from
     existing workflows
 
--   What about synchronous workflows?  
+-   **What about synchronous workflows?** 
+ 
     It is recommended to re-evaluate the need for synchronous workflows to
     identify whether the objective, or parts of the workflow can be built using
     a Flow. In particular, we see from our telemetry that synchronous workflows
@@ -661,13 +649,13 @@ example of the display is below:
     actions out as asynchronous so that the user can continue with their
     activity while Flow continues to ensure completion of the action.
 
--   Using flow, will my data stay within region (i.e. the same region as my
-    Dynamics 365/Common Data Service environment)  
+-   **Using flow, will my data stay within region (that is, the same region as my
+    Dynamics 365/Common Data Service environment)?**  
     
-    Yes, Flow will always use the exact same region as the Common Data Service
-    instance.
+    Yes, Microsoft Flow will always use the exact same region as the Common Data Service
+    environment.
 
--   Do I need to make proxy/firewall changes?  
+-   **Do I need to make proxy/firewall changes?**  
     
     Refer to the [IP address configuration reference](limits-and-config#ip-address-configuration.md)
     to determine whether you need to make any proxy/firewall changes.
