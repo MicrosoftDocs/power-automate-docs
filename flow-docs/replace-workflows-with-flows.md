@@ -16,11 +16,9 @@ search.audienceType:
 
 # Replace classic Common Data Service workflows with flows
 
-Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow capabilities and recommended patterns while automating your processes using flow instead of  classic workflow.
+Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow capabilities and recommended patterns while automating your processes using flow instead of classic workflow. This topic provides information about the Microsoft Flow capabilities in comparison to the classic workflow. 
 
-This topic provides you information about the Microsoft Flow capabilities in comparison to the classic workflow. 
-
-It is recommended that you use flows instead of classic Common Data Service workflows to build any new automation processes. YOu should also review your existing classic workflow processes and consider replacing them with flows.
+It is recommended that you use flows instead of classic Common Data Service workflows to build any new automation processes. You should also review your existing classic workflow processes and consider replacing them with flows.
 
 
 ## Feature capability comparison
