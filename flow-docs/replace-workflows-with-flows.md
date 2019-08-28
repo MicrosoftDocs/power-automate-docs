@@ -655,5 +655,5 @@ example of the display is below:
 
 -   **Do I need to make proxy/firewall changes?**  
     
-    Refer to the [IP address configuration reference](limits-and-config#ip-address-configuration.md)
+    Refer to the [IP address configuration reference](limits-and-config.md#ip-address-configuration)
     to determine whether you need to make any proxy/firewall changes.
