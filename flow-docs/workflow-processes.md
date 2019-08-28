@@ -20,7 +20,7 @@ search.audienceType:
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
 
 > [!IMPORTANT]
-> It is recommended to use flows instead of classic workflows to automate your business processes. More information: [Replace classic Common Data Service workflows with flows](replace-workflows-with-flows)  
+> It is recommended to use flows instead of classic workflows to automate your business processes. More information: [Replace classic Common Data Service workflows with flows](replace-workflows-with-flows.md)  
   
  Each workflow process is associated with a single entity. When configuring workflows you have four major areas to consider:  
   
