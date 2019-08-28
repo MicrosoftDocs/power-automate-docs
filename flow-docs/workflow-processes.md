@@ -1,7 +1,7 @@
 ---
 title: "Classic Common Data Service workflows | MicrosoftDocs"
 ms.custom: ""
-ms.date: 08/06/2018
+ms.date: 08/27/2019
 ms.reviewer: "matp"
 ms.service: flow
 ms.topic: "article"
@@ -17,7 +17,10 @@ search.audienceType:
 ---
 # Classic Common Data Service workflows 
 
-Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.  
+Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
+
+> [!IMPORTANT]
+> It is recommended to use flows instead of classic workflows to automate your business processes. More information: [Replace classic Common Data Service workflows with flows](replace-workflows-with-flows)  
   
  Each workflow process is associated with a single entity. When configuring workflows you have four major areas to consider:  
   
