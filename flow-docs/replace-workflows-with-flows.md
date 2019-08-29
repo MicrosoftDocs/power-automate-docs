@@ -1,7 +1,7 @@
 ---
 title: Replace classic Common Data Service workflows with Microsoft Flow | Microsoft Docs
 description: Describes Microsoft Flow capabilities and recommended patterns to use flow instead of a classic workflow.
-author: msftman
+author: KaransId
 manager: kvivek
 ms.service: flow
 ms.topic: article
@@ -16,16 +16,17 @@ search.audienceType:
 
 # Replace classic Common Data Service workflows with flows
 
-Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow capabilities and recommended patterns while automating your processes using flow instead of classic workflow. This topic provides information about the Microsoft Flow capabilities, comparing it with classic workflow. 
+This topic compares Microsoft Flow capabilities with classic workflow.
 
-It is recommended that you use flows instead of classic Common Data Service workflows to build any new automation processes. You should also review your existing classic workflow processes and consider replacing them with flows.
+Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow to automate your processes instead of classic workflow. 
 
+Create flows instead of classic Common Data Service workflows to build new automation processes. Additionally, you should review your existing classic workflow processes and consider replacing them with flows.
 
 ## Feature capability comparison
 
 This table summarizes a comparison between Microsoft Flow and classic workflows capabilities. 
 
-*We are continuously adding new capabilities to Microsoft Flow so that it's at par and even better than classic workflow capabilities. We will update information in this table as Microsoft Flow gains capabilities; check back often!*
+*We are continuously adding new capabilities to Microsoft Flow so that it's at par and even better than classic workflow capabilities. We'll update information in this table as Microsoft Flow gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic workflow with flow, see [What's new and planned for Microsoft Flow](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) in the April 2019 Release Notes!*
 
 <table>
 <tr>
@@ -171,7 +172,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
             <tr>
                 <td>
                     
-   Run Common Data Service actions (incl. custom)
+   Run Common Data Service actions (including custom)
                     
                 </td>
                 <td>
@@ -261,7 +262,7 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
             <tr>
                 <td>
                     
-   Trigger conditionally on field values (e.g., on a
+   Trigger conditionally on field values (For example, on a
    certain date in a date field)
                     
                 </td>
@@ -451,13 +452,13 @@ This table summarizes a comparison between Microsoft Flow and classic workflows 
 ## Example scenario: Replace workflow with a flow
 
 Imagine a sales scenario where you have put together a quotation for a customer
-and now need to request approval from your management team prior to send. With
-classic workflows, this wouldn’t have been particularly easy to do and most
-solutions to this would require a developer to write custom workflow activities
+and now need to request approval from your management team prior to sending the quotation to the customer. With
+classic workflows, this wouldn’t have been easy to do and most
+solutions to this require a developer to write custom workflow activities
 to retrieve quote line items.
 
-With flows, this is much easier to build as demonstrated in the walkthrough later that will cover 
-some of the Flow capabilities to support the scenario. This
+With flows, this is easier to build as demonstrated in the walkthrough later that covers 
+some of the Microsoft Flow capabilities to support the scenario. This
 includes:
 
 -   Creating a flow that runs on demand
@@ -470,33 +471,31 @@ includes:
 
 To allow the sales person to trigger the approval request on demand:
 
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com/) and create a new
-flow in a solution. More information: [Create a flow in a solution](create-flow-solution.md). 
+1. Sign in to [Microsoft Flow](https://flow.microsoft.com/) and create a flow in a solution. More information: [Create a flow in a solution](create-flow-solution.md). 
 
-1. From the list of flow triggers, select **Common Data Service (Current Environment) – When a
+1. From the list of triggers, select **Common Data Service (Current Environment) – When a
 record is selected** and select **Quotes** as the entity. This trigger allows a
-flow to be run on-demand on a record or list of records from the Flow menu.
+flow to be run on-demand on a record or list of records.
 
 1. With the trigger configured, add actions to run in our flow. This will
-provide the approver with the summary detail they need to identify the quote
+provide the approver with the summary detail they need to identify the quoted
 items and values. Begin by adding the **Common Data Service (Current
 Environment) – List records** action. Because we want to get individual line
-items from a Quote, set the entity to **Quote lines**. To make sure we only list
-those quote line items that belong to the Quote that the flow has been triggered
-for, we’ll specify an OData style filter criterion. In the **Filter Query** field,
+items from a Quote, set the entity to **Quote lines**. To ensure we only list
+those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field,
 type *\_quoteid_value eq* and then select *Quote* from the list of dynamic
 values that appear.
 
     ![Define your flow](media/define-flow-1.png "Define your flow")
 
 1. As we want to summarize quote line items for the approval, add the
-**Initialize variable** action. Set the Name field to *Quote line summary* and
-the Type to String (from the dropdown), and leave the Value field empty.
+**Initialize variable** action. Set the **Name** field to *Quote line summary* and
+the **Type** to String (from the dropdown), and leave the **Value** field empty.
 
-1. Add the **Append to string variable** action and select the *Quote line
-summary* variable we had previously created. In the **Value** field, select *Quantity,
+1. Add the **Append to string variable** action and then select the *Quote line
+summary* variable we created earlier. In the **Value** field, select *Quantity,
 Name, Price per unit, Extended amount and Manual amount* from the list of
-dynamic values. The Microsoft Flow designer intelligently identifies that these values are
+dynamic values. The Microsoft Flow designer identifies that these values are
 from a list of quote line items, and adds this action in an **Apply to each**
 loop to ensure information from each line item is added to this summary.
 
@@ -504,30 +503,30 @@ loop to ensure information from each line item is added to this summary.
 
 1. To request approval on the quote summary we’ve created, add the **Approval –
 Start and wait for an approval** action. Select an Approval type (for example,
-Approve/Reject – First to respond), give the Approval request a Title (for example, the
+Approve/Reject – First to respond), give the Approval request a **Title** (for example, the
 Name of the Quote for which approval is being requested, picked from the list of
-dynamic values), enter the email address of the person who needs to review and
-approve the quote in the Assigned to field. In the details field, add the *Quote
+dynamic values), enter the email address for the person who needs to review and
+approve the quote in the **Assigned to** field. In the details field, add the *Quote
 line summary* variable, along with any other information that might be relevant
 using the dynamic value picker (for example, Total Amount).
 
-1. To determine what happens once an approval has been accepted/rejected, add the
+1. To determine what happens once an approval is accepted or rejected, add the
 **Condition** action. Select *Outcome* from the list of dynamic values from the
 first field in the condition, *Contains* from the dropdown in the second field,
-and type *Accept* in the third field of the condition. Finally, add actions
-based on the outcome of the approval (e.g., send a notification email)
+and enter *Accept* in the third field of the condition. Finally, add actions
+based on the outcome of the approval (For example, send a notification email).
 
     ![Define your flow](media/define-flow-3.png "Define your flow")
 
 We now have the approval structure created so the approver has all of the
-information they need to make a decision on next steps. The entire example
-on-demand flow to request approval is shown below:
+information needed to make a decision on next steps. Here's the full example
+on-demand flow to request approval:
 
 ![Approval flow structure](media/approval-flow-structure.png "Approval flow structure")
 
-To execute, run this flow on-demand against your quote. The flow summarizes
+When you run this flow against your quote, it summarizes
 quote line items for that quote and sends an approval request that the approver
-can respond to from the flow portal, or the actionable email they receive. An
+can respond to from Microsoft Flow, or the actionable email they receive. An
 example of the display is below:
 
 ![Flow in action](media/flow-in-action.png "Flow in action")
@@ -538,27 +537,27 @@ example of the display is below:
 -   **Workflows with complex else-if conditional logic**  
     
     Instead of using conditions, we recommend using the [switch
-    action](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-control-flow-switch-statement#add-switch-statement)
+    action](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-switch-statement#add-switch-statement)
     instead.
 
 -   **Workflows that run from plug-in/code**  
     
-    It is recommend redesigning the flow to run off triggers.
+    We recommend redesigning the flow to start with triggers.
 
-    -   Use the Common Data Service triggers to run flows based on events in it.
+    -   Use Common Data Service triggers to run flows based on events in it.
 
     -   To run flows based on events in an external service, leverage more than 260
         out-of-box connectors.
 
     -   For scenarios where a connector you need isn’t available out-of-the-box,
-        easily create your own custom connector ([learn to create custom
-        connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/define-blank))
+        easily create your own custom connector [learn to create custom
+        connectors](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
 
     -   Finally, if there are scenarios where you cannot trigger your flow using
-        the Common Data Service connector, one of our out-of-box connectors, or
-        create your own custom connector, leverage the [When a HTTP request is
+        Common Data Service connector, one of the out-of-box connectors, or
+        create a custom connector, leverage the [When a HTTP request is
         received
-        trigger](https://docs.microsoft.com/en-us/azure/connectors/connectors-native-reqres#use-the-http-request-trigger)
+        trigger](https://docs.microsoft.com/azure/connectors/connectors-native-reqres#use-the-http-request-trigger)
         to invoke the flow
 
 -   **Workflows that run recursively**  
@@ -571,49 +570,45 @@ example of the display is below:
 
 -   **Workflows that need a list of records**  
     
-    Use the **list records** action instead. When using this action, it is
-    recommended to define record filtering criteria using OData syntax to
-    optimize the action by minimizing the number of records that need to
-    retrieved.
+    Use the **list records** action. When using this action, define the record filtering criteria using OData syntax to
+    optimize the action by minimizing the number of records you want to
+    retrieve.
 
 -   **Workflows that sleep to run on a schedule**  
     
-    Use the **recurrence** trigger to run business logic at periodic time
-    intervals. For workflows that need to be triggered at a specific time, or
+    Use the **recurrence** trigger to run business logic at periodic intervals. For workflows that need to be triggered at a specific time, or
     when a condition is met, define these triggering criteria in the trigger,
     available in Oct ‘19
 
 -   **Workflows for which runs were managed to ensure activities were executed in
     a single transaction**  
     
-    [Use the [changeset action](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to  ensures that all actions within it are performed as a single, atomic unit that either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations
+    [Use the [changeset action](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to ensure that all actions within it are performed as a single, atomic unit in which either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations
     are rolled back.
 
 -   **Monitor workflow runs for failures**  
     
-    In flow, use the **run-after setting** on an action to configure it to run
-    when the previous action fails. E.g. send a flow mobile notification when
-    the update a record action fails, or times out.
+    In Microsoft Flow, use the **run-after setting** on an action to configure it to run
+    when the previous action fails. For example, send a Microsoft Flow mobile notification when
+    the **update a record** action fails, or times out.
 
 ## FAQs
 
 
 -   **I have a Dynamics 365 license. Can I use Microsoft Flow?**
 
-    Every user of Dynamics 365 is already entitled to use Microsoft Flow. Review our licensing information available at: <https://flow.microsoft.com/pricing/>
+    Every Dynamics 365 user is entitled to use Microsoft Flow. Review our licensing information: <https://flow.microsoft.com/pricing/>
 
--   **How often can my Flows be triggered?**
+-   **How often can my flows be triggered?**
 
-    -   Dynamics 365 (or Common Data Service) flows run near real-time of
-        trigger due to the fact they use webhooks (no polling required)
+    -   Dynamics 365 (or Common Data Service) flows run near real-time after the trigger because they use webhooks (no polling required)
 
     -   As with direct API access, there are throttles/limits in the system,
         fully documented here:
         <https://docs.microsoft.com/flow/limits-and-config>
 
     -   Specifically, there is a limit of 100k actions per 5 minutes, per flow –
-        and a single loop in a flow cannot process more than 100k items at a
-        time
+        and a single loop in a flow cannot process more than 100k items at once
 
     -   Maximum of 6GB of throughput per 5 minutes
 
@@ -621,37 +616,36 @@ example of the display is below:
     
     A single flow run times out after 30 days.
 
--   **How do I move my Flows between environments?**  
+-   **How do I move my flows between environments?**  
     
-    Just like classic workflows, Flows can be created in solutions to support
+    Just like classic workflows, you can create flows in solutions to support
     the full application lifecycle for processes.
 
--   **Are Flow dependencies tracked in the Common Data Service?**  
+-   **Are Microsoft Flow dependencies tracked in Common Data Service?**  
     
-    Just as with any other component in a solution, all dependencies for Flows
-    in solutions are tracked
+    Similar to other components in a solution, all dependencies for flows
+    in solutions are tracked in Common Data Service.
 
--   **Do I have to rebuild all workflows from scratch as I move to Flows?**
+-   **Do I have to rebuild all workflows from scratch as I move to Microsoft Flow?**
   
-    Moving to Flows will not require building most workflows from scratch.
-    Starting Oct’19, it will be possible to generate Flow templates from
-    existing workflows
+    Moving to Microsoft Flow doesn't mean you'll have to rebuild most workflows from scratch.
+    Starting Oct’19, it will be possible to generate Microsoft Flow templates from
+    existing workflows.
 
 -   **What about synchronous workflows?** 
  
-    It is recommended to re-evaluate the need for synchronous workflows to
+    You should re-evaluate the need for synchronous workflows to
     identify whether the objective, or parts of the workflow can be built using
-    a Flow. In particular, we see from our telemetry that synchronous workflows
+    a flow. In particular, we see from our telemetry that synchronous workflows
     are a significant contributor to overall end user poor performance
     experience. For many uses though it would be preferable to split these
     actions out as asynchronous so that the user can continue with their
-    activity while Flow continues to ensure completion of the action.
+    activity while Microsoft Flow continues to ensure completion of the action.
 
--   **Using flow, will my data stay within region (that is, the same region as my
-    Dynamics 365/Common Data Service environment)?**  
+-   **Using Microsoft Flow, will my data stay within region (that is, the same region as my
+    Dynamics 365 or Common Data Service environment)?**  
     
-    Yes, Microsoft Flow will always use the exact same region as the Common Data Service
-    environment.
+    Yes, Microsoft Flow always uses the same region as Common Data Service.
 
 -   **Do I need to make proxy/firewall changes?**  
     
