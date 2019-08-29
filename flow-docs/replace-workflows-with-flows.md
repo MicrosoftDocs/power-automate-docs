@@ -576,9 +576,7 @@ example of the display is below:
 
 -   **Workflows that sleep to run on a schedule**  
     
-    Use the **recurrence** trigger to run business logic at periodic intervals. For workflows that need to be triggered at a specific time, or
-    when a condition is met, define these triggering criteria in the trigger,
-    available in Oct ‘19
+    Use the **recurrence** trigger to run business logic at periodic intervals.
 
 -   **Workflows for which runs were managed to ensure activities were executed in
     a single transaction**  
@@ -625,12 +623,6 @@ example of the display is below:
     
     Similar to other components in a solution, all dependencies for flows
     in solutions are tracked in Common Data Service.
-
--   **Do I have to rebuild all workflows from scratch as I move to Microsoft Flow?**
-  
-    Moving to Microsoft Flow doesn't mean you'll have to rebuild most workflows from scratch.
-    Starting Oct’19, it will be possible to generate Microsoft Flow templates from
-    existing workflows.
 
 -   **What about synchronous workflows?** 
  
