@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/21/2017
+ms.date: 08/30/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,6 +24,8 @@ search.audienceType:
 # Billing and metering questions
 
 This article answers frequently asked questions regarding billing and metering in Microsoft Flow.
+
+>[!NOTE]PowerApps and Microsoft Flow will use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) starting in October, 2019. 
 
 ## Where can I find out what pricing plans are available?
 
