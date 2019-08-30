@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: hero-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
