@@ -165,9 +165,9 @@ You use a different set of URLs to access Microsoft Flow US Government environme
 
 Commercial version|US Government version
 ---|---
-https://flow.microsoft.com|https://gov.flow.microsoft.us (GCC) </br> https://high.flow.microsoft.us (GCC High)
-https://admin.flow.microsoft.com|https://gov.admin.flow.microsoft.us (GCC) </b> https://high.admin.flow.microsoft.us (GCC High)
-https://flow.microsoft.com/connectors| https://gov.flow.microsoft.us/connectors (GCC) </b> https://high.flow.microsoft.us/connectors (GCC High)
+https://flow.microsoft.com|https://gov.flow.microsoft.us (GCC) <br /> https://high.flow.microsoft.us (GCC High)
+https://admin.flow.microsoft.com|https://gov.admin.flow.microsoft.us (GCC) <br /> https://high.admin.flow.microsoft.us (GCC High)
+https://flow.microsoft.com/connectors| https://gov.flow.microsoft.us/connectors (GCC) <br /> https://high.flow.microsoft.us/connectors (GCC High)
 
 For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
 
