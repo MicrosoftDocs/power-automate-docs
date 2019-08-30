@@ -7,7 +7,7 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 03/15/2019
+ms.date: 08/30/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -202,7 +202,9 @@ Some of the features available in the commercial version of Flow are not availab
     > [!NOTE]
     > Submitting templates is disabled in GCC to address enterprise data governance and data flow concerns.
 
-- [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
+- [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request.
+
+- [Power BI](https://docs.microsoft.com/connectors/powerbi/) – Microsoft Flow US Government doesn’t support Power BI at this time.
 
 - [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 
