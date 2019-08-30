@@ -38,6 +38,10 @@ In addition to the features and capabilities of Microsoft Flow, organizations th
 
 - Microsoft Flow US Government complies with all certifications and accreditations that US Public Sector customers require.
 
+Beginning September 2019, eligible customers can choose to deploy Microsoft Flow US Government to the **GCC High** environment, which enables single sign-on and seamless integration with Microsoft Office 365 GCC High deployments. 
+
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Microsoft Flow US Government GCC High deployment option. This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
+
 ## Customer eligibility
 
 Microsoft Flow US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of Microsoft Flow US Government is appropriate to meet these requirements, subject to validation of eligibility. Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
@@ -116,6 +120,8 @@ As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cy
 
 Microsoft Flow US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Please visit the Microsoft Flow US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
+Microsoft designed this platform and its operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. Microsoft anticipates that the US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft Office 365 GCC High to use the Microsoft Flow US Government GCC High deployment option, which enables and requires customers to leverage Azure AD Government for customer identities, in contrast to GCC which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
+
 ## Microsoft Flow US Government and other Microsoft services
 
 Microsoft Flow US Government includes several features that allow users to connect to, and integrate with, other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and PowerApps US Government.
@@ -155,12 +161,42 @@ The Azure AD account management services are hosted on physical servers managed 
 
 ## Microsoft Flow US Government service URLs
 
-There are a different set of URLs to access Microsoft Flow US Government. Refer to the following table for a cross reference:
+You use a different set of URLs to access Microsoft Flow US Government environments, as shown in the following table. The table includes the commercial URLs too for contextual reference, in case they are more readily familiar to you.
 
-| Commercial version URL| US Government version URL|
-|------------------------------------|---------------------|
-| <https://flow.microsoft.com>| <https://gov.flow.microsoft.us>|
-| <https://admin.flow.microsoft.com> | <https://gov.admin.flow.microsoft.us> |
+Commercial version|US Government version
+---|---
+https://flow.microsoft.com|https://gov.flow.microsoft.us (GCC) </br> https://high.flow.microsoft.us (GCC High)
+https://admin.flow.microsoft.com|https://gov.admin.flow.microsoft.us (GCC) </b> https://high.admin.flow.microsoft.us (GCC High)
+https://flow.microsoft.com/connectors| https://gov.flow.microsoft.us/connectors (GCC) </b> https://high.flow.microsoft.us/connectors (GCC High)
+
+For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
+
+### GCC Customers:
+* .microsoft.us
+* .azure-apihub.us
+* .azure.us
+* .usgovcloudapi.net
+* .microsoftonline.com
+* . microsoft.com
+* .windows.net
+* . azureedge.net
+* . azure.net
+* .crm9.dynamics.com
+
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+
+### GCC High Customers:
+* .microsoft.us
+* .azure-apihub.us
+* .azure.us
+* .usgovcloudapi.net
+* .microsoftonline.us
+* .azureedge.net
+* .azure.net
+* .crm.microsoftdynamics.us
+
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+
 
 ## Connectivity between Microsoft Flow US Government and Public Azure Cloud services
 
