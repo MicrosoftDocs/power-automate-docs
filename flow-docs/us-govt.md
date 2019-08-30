@@ -163,11 +163,13 @@ The Azure AD account management services are hosted on physical servers managed 
 
 You use a different set of URLs to access Microsoft Flow US Government environments, as shown in the following table. The table includes the commercial URLs too for contextual reference, in case they are more readily familiar to you.
 
-Commercial version|US Government version
----|---
-https://flow.microsoft.com|https://gov.flow.microsoft.us (GCC) and  https://high.flow.microsoft.us (GCC High)
-https://admin.flow.microsoft.com|https://gov.admin.flow.microsoft.us (GCC) and https://high.admin.flow.microsoft.us (GCC High)
-https://flow.microsoft.com/connectors| https://gov.flow.microsoft.us/connectors (GCC) and https://high.flow.microsoft.us/connectors (GCC High)
+
+Commercial version | US Government version
+------ | --------
+https://flow.microsoft.com | https://gov.flow.microsoft.us (GCC) and  https://high.flow.microsoft.us (GCC High)
+https://admin.flow.microsoft.com | https://gov.admin.flow.microsoft.us (GCC) and https://high.admin.flow.microsoft.us (GCC High)
+https://flow.microsoft.com/connectors | https://gov.flow.microsoft.us/connectors (GCC) and https://high.flow.microsoft.us/connectors (GCC High)
+
 
 For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
 
