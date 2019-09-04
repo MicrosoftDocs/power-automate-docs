@@ -112,7 +112,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
      Select a flow run from the list of runs to see the inputs and outputs of each step.
 
 > [!NOTE]
-> You can have up to 600 flows in your account. If you already have 50, delete one before you can create another.
+> You can have up to 600 flows in your account. If you already have 600 flows, delete one before you create another flow.
 >
 >
 
