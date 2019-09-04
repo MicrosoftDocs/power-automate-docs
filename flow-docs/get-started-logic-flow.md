@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 09/04/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -112,7 +112,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
      Select a flow run from the list of runs to see the inputs and outputs of each step.
 
 > [!NOTE]
-> You can have up to 50 flows in your account. If you already have 50, delete one before you can create another.
+> You can have up to 600 flows in your account. If you already have 50, delete one before you can create another.
 >
 >
 
