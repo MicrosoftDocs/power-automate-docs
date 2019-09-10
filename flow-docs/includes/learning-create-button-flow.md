@@ -48,7 +48,7 @@ Button flows can be used to **send email** to a team and **alert them of tasks**
      ![Create flow](./media/learning-create-button-flow/12-create-flow.png)
 
 ## Create a team flow
-You can use this button flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if she leaves the company? You want to make sure that this flow keeps running. To do that,  add co-owners.
+You can use this button flow as an example of how to create a team flow. What if the creator of this flow is out sick? What if that person leaves the company? You want to make sure that this flow keeps running. To do that,  add co-owners.
 
 1. Select the **team icon** on your flow to add a co-owner.
    
@@ -66,9 +66,9 @@ You can use this button flow as an example of how to create a team flow. What if
 ## Summary
 In this lesson, you've seen how to **create a button flow**. 
 
-In minutes, the flow gave a warehouse worker the ability to **alert her team** to a **delivery arrival**, so that the team didn’t have to stand around and wait, wasting valuable time they could spend on other tasks. 
+In minutes, the flow gave a warehouse worker the ability to **alert the team** to a **delivery arrival**, so that the team didn’t have to stand around and wait, wasting valuable time they could spend on other tasks. 
 
-The worker then shared that button out to her team, so others could trigger the same flow if she wasn’t around.
+The worker then shared that button out to the team, so others could trigger the same flow if that person wasn’t around.
 
 ## Next lesson
 Check out the next lesson to see how to create a flow that uses **push notifications**.

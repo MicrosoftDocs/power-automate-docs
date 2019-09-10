@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -176,6 +176,36 @@ If you don't have admin permissions and you wish to learn more about the DLP pol
 ## DLP policy permissions
 
 Only tenant and environment admins can create and modify DLP policies. Learn more about permissions in the [environments](environments-overview-admin.md) article.
+
+
+## Custom and HTTP connectors
+
+Custom and HTTP connectors must be added to DLPs using either a Microsoft Flow template or a PowerShell.
+
+> [!TIP]
+> You can't downgrade from schema version 2018-11-01. HTTP support cannot be removed from a policy. If you attempt to remove HTTP support, the DLP policy might be corrupted. Further, if a DLP policy is updated to support HTTP connectors, current flows using these HTTP capabilities might be shut off.
+
+Here are the HTTP connectors that you can add to a policy:
+
+- HTTP (and HTTP + Swagger)
+- HTTP Webhook
+- HTTP Request
+
+## Add connectors custom and HTTP connectors with templates
+
+To add a custom connector to a policy using a [template](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), enter the policy name, the group to which to add the connector, and the connector’s name, ID, and type. Run the flow once to add the custom connector to the policy and group given.
+
+To add the HTTP connectors to an existing policy via the [template](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), enter the name of the policy you’d like to add them to and then run the flow.
+
+## Add custom and HTTP connectors with PowerShell
+
+To add support for custom connectors and/or HTTP connectors to a policy using the PowerShell, [download](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) and import the latest PowerApps PowerShell scripts and then use these cmdlets:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’, and ‘Remove-CustomConnectorFromPolicy’ to modify the policy. Use the ‘Get-Help -detailed’ cmdlet as a reference.
+
+
+> [!IMPORTANT]
+> Use the schema version 2018-11-01 when creating or updating a DLP policy to include HTTP connectors. Adding HTTP support using the template or PowerShell will only affect the specified policy. New policies created via the Admin Center will not contain the HTTP connectors.
+
+
 
 ## Next steps
 

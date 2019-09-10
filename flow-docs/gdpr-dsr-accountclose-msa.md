@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Responding to GDPR Data Subject Account Close Requests for Microsoft Flow
 
-The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When a user decides to close her or his Microsoft Account (MSA), the user's underlying data is also deleted.
+The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When users decide to close their Microsoft Account (MSA), the user's underlying data is also deleted.
 
 These resources contain personal data that are automatically deleted when a user closes an MSA:
 

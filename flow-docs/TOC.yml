@@ -20,6 +20,14 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
+  - name: Create a SharePoint reminder flow
+    href: create-sharepoint-reminder-flows.md
+  - name: Create flow to customize SharePoint page approvals
+    href: customize-sharepoint-page-approvals.md
+  - name: Create a flow in Teams
+    href: flows-teams.md
+  - name: Create adaptive card flows in Teams
+    href: create-adaptive-cards-teams.md
   - name: Create a flow with Common Data Service
     href: connection-cds.md
   - name: Create a flow with Dynamics 365
@@ -75,14 +83,17 @@
 - name: Common Data Service
   items:
   - name: Classic Common Data Service workflows
-    href: workflow-processes.md
     items:
+    - name: Overview
+      href: workflow-processes.md
     - name: Configure workflow stages and steps
       href: configure-workflow-steps.md
     - name: Monitor and manage workflow processes
       href: monitor-manage-processes.md
     - name: Best practices for workflow processes
       href: best-practices-workflow-processes.md
+    - name: Replace workflows with flows
+      href: replace-workflows-with-flows.md
   - name: Classic Common Data Service actions
     items:
     - name: Use actions
@@ -103,6 +114,10 @@
       href: use-cds-for-apps-dialogs.md
     - name: Replace classic Common Data Service dialogs
       href: replace-dialogs.md
+- name: AI Builder
+  items:
+  - name: Use AI Builder in Microsoft Flow
+    href: use-ai-builder.md
 - name: How to
   items:
   - name: Add an action
@@ -115,6 +130,8 @@
     href: use-expressions-in-conditions.md
   - name: Use Visio to model flows
     href: visio-flows.md
+  - name: "Reference: Use functions in expressions"
+    href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
   - name: Approval flows
     items:
     - name: Single approvals
@@ -129,6 +146,8 @@
       href: common-data-model-approve.md
     - name: Format approval requests
       href: approvals-markdown-support.md
+    - name: Custom approval response options
+      href: create-approval-response-options.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template
@@ -141,6 +160,8 @@
     href: mobile-monitor-activity.md
   - name: Troubleshoot a flow
     href: fix-flow-failures.md
+  - name: Find and fix errors with the error checker
+    href: error-checker.md
 - name: Connect to data
   items:
   - name: Available connections
@@ -153,7 +174,7 @@
     href: gateway-reference.md
 - name: For developers
   items:
-  - name: Microsoft Flow for enterprise developers, partners, and ISVs
+  - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
@@ -180,8 +201,12 @@
     href: environments-overview-admin.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
+  - name: Support Intune in mobile apps
+    href: intune-support.md
   - name: Introduction to data groups
     href: introduction-to-data-groups.md
+  - name: View sharing and connectors analytics reports
+    href: admin-analytics-report.md
   - name: Respond to DSR requests
     items:
     - name: Summary
