@@ -4,8 +4,8 @@ description: An introduction to developing solutions for Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: mgblythe
-manager: anneta
+author: MSFTMan
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
-ms.author: mblythe
+ms.author: Deonhe
 search.app: 
   - Flow
 search.audienceType: 
