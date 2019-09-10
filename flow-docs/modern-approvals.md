@@ -141,6 +141,33 @@ Now that we've created the flow, it's time to test it!
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
+
+## Create long-running approvals
+
+If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action.
+
+>[!TIP]
+> If you use modern email clients, you don't have to wonder if a request is still required because Microsoft Flow automatically updates the email to indicate that the approval is completed.
+
+## Cancel an approval requests
+
+Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can Cancel it by following these steps:
+
+1. Select the approval
+1. Select **Cancel approval** in the side pane.
+
+>[!TIP]
+>You can always select the **History** tab to view the approval requests that you've canceled.
+
+>[!NOTE]
+> The cancel feature is supported on the **Create an approval (v2)** action.
+
+## Request approvals from guest users
+
+You can send approvals requests to persons outside your organization. To do this, use Azure Active Directory (Azure AD) guest users by [inviting users from other tenants as guests](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
+
+When you assign a role to a guest, this gives the guest the permission required to participate in the approval process.
+
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
 ## Learn more

@@ -52,6 +52,9 @@ After you've exported your solution, you can import it into any environment that
 > [!NOTE]
 > You cannot import a solution into an environment in which the solution already exists.
 
+> [!TIP]
+> If you want to have your flows start automatically after you import a solution, use Common Data Service (Current Environment) connector in your flow.
+
 ## Learn more
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->

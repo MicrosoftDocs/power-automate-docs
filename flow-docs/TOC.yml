@@ -24,6 +24,8 @@
     href: connection-cds.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
+  - name: Create a flow with OneDrive for Business
+    href: onedrive-business-launch-panel.md
   - name: Filter and copy data
     href: odata-filters.md
   - name: Use a Flic
@@ -111,6 +113,8 @@
     href: data-operations.md
   - name: Use expressions in conditions
     href: use-expressions-in-conditions.md
+  - name: Use Visio to model flows
+    href: visio-flows.md
   - name: Approval flows
     items:
     - name: Single approvals

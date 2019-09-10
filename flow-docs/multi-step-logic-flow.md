@@ -72,6 +72,20 @@ In this procedure, you'll add an action in the middle of the flow. This action w
   
      **Note:** You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
 
+
+## Copy and paste actions
+
+If you want to duplicate actions while designing a flow, you can copy and paste them. For example, if you are building a condition and want similar actions in the **If yes** side and the **If no** side, instead of creating both actions from scratch you can build the first action in one side and then copy it to the other side.
+
+
+### To copy an action
+1. Select the action menu (the ... at the top-right of the action).
+1. Select **Copy to my clipboard**. 
+1. Select **New step** where you want your action to go. 
+
+     Notice the **My clipboard** tab that lets you choose from all of the actions that you've copied.
+1. Select the item you want to paste.
+
 ## Add advanced options
 Start with a flow that has a **Send an email** action.
 
