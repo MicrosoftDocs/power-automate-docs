@@ -51,7 +51,7 @@ The Microsoft Flow designer is a rich tool in which you can configure every deta
 
      ![Select a Visio Template](./media/visio-flows/visio-templates.png) 
 
-     >[IMPORTANT]
+     >[!IMPORTANT]
      >Visio warns you that files from the Internet could harm your device. If you are comfortable, select **YES** on the warning message.
 
      ![Note warning about files from the Internet](./media/visio-flows/visio-warning.png)
