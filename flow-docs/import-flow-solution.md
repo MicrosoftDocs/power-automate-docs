@@ -24,16 +24,16 @@ search.audienceType:
 
 # Import a solution
 
+> [!TIP]
+> If you want to have your flows start automatically after you import a solution, use Common Data Service (Current Environment) connector in your flow when you create it.
+
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
 
 1. Sign in to Microsoft Flow, and then select **Solutions** from the navigation bar.
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
-
-<!--from editor: I don't think you need the symbols on the left of Import, below. They don't look like the arrow icon, and I think Import is clear enough. -->
-
-1. Select **<- Import**.
+1. Select **Import**.
 
    ![](./media/import-flow-solution/select-import.png)
 
@@ -51,6 +51,7 @@ After you've exported your solution, you can import it into any environment that
 
 > [!NOTE]
 > You cannot import a solution into an environment in which the solution already exists.
+
 
 ## Learn more
 
