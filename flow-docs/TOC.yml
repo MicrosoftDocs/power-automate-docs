@@ -71,9 +71,9 @@
   - name: RPA overview
     href: ./rpa/overview.md
   - name: Set up Codename RPA
-    href: ./rpa/setup-rpa.md
+    href: ./rpa/setup.md
   - name: Create a Windows app RPA Codename
-    href: ./rpa/create-windows-rpa-app.md
+    href: ./rpa/create-windows.md
     items:
     - name: Define input
       href: ./rpa/define-input.md
@@ -95,7 +95,7 @@
     href: ./rpa/create-web.md
     items:
     - name: Define name and URL
-      href: ./rpa/define-web-url.md
+      href: ./rpa/define-name-url.md
     - name: Record in Selenium
       href: ./rpa/record-selinium.md
     - name: Edit in Selenium
