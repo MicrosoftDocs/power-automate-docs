@@ -66,6 +66,44 @@
     href: enhance-business-process-flows-branching.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
+- name: Codename RPA
+  items:
+  - name: RPA overview
+    href: ./rpa/overview.md
+  - name: Set up Codename RPA
+    href: ./rpa/setup-rpa.md
+  - name: Create a Windows app RPA Codename
+    href: ./rpa/create-windows-rpa-app.md
+    items:
+    - name: Define input
+      href: ./rpa/define-input.md
+    - name: Launch a record
+      href: ./rpa/launch-record.md
+    - name: Add a scope
+      href: ./rpa/add-scope.md
+    - name: Add a manual action
+      href: ./rpa/add-manual-action.md
+    - name: Add a condition
+      href: ./rpa/add-condition.md
+    - name: Add a record
+      href: ./rpa/add-record.md
+    - name: Define outputs
+      href: ./rpa/define-outputs.md
+    - name: Test an RPA codename app
+      href: ./rpa/test-windows-app.md
+  - name: Create a Web Codename RPA app
+    href: ./rpa/create-web.md
+    items:
+    - name: Define name and URL
+      href: ./rpa/define-web-url.md
+    - name: Record in Selenium
+      href: ./rpa/record-selinium.md
+    - name: Edit in Selenium
+      href: ./rpa/edit-selinium.md
+  - name: Create a UI flow in a flow?????
+    href: ./rpa/create-ui.md
+  - name: Best practices for business process flow attributes
+    href: best-practices-entity-attributes.md
 - name: Solutions
   items:
   - name: Overview
