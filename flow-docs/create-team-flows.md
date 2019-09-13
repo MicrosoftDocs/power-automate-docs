@@ -97,11 +97,10 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 
 You might need to change the owner of a connection in a flow if you remove the existing owner. Follow these steps to switch the owner of a flow:
 
-1. Select the flow that contains the connection you want to update from the **Team flows** list.
-1. Select **See all** from the **OWNERS** list.
-1. Select **Manage connections** from the **Connections in use** list.
+1. Select **Data** from the left side panel.
+1. Select **Connections**.
 1. Search for the connection you want to update, and then select it.
-1. Select **...** (more commands), and then select **Switch account**.
+1. Select **...** (more commands) on the connection you selected and then select **Switch account**.
 1. Follow the steps to use a different account for the connection.
 
 ## Embedded and other connections
