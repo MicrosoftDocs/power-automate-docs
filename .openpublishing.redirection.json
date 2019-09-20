@@ -1,5 +1,26 @@
 {
     "redirections": [
+    {
+      "source_path": "flow-docs/dev-appsource-test-drive.md",
+      "redirect_url": "/flow/developer/dev-appsource-test-drive",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/dev-enterprise-intro.md",
+      "redirect_url": "/flow/developer/dev-enterprise-intro",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/embed-flow-dev.md",
+      "redirect_url": "/flow/developer/embed-flow-dev",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/register-custom-api.md",
+      "redirect_url": "/flow/developer/register-custom-api",
+      "redirect_document_id": "false"
+    },
+
         {
         "source_path": "flow-docs/guided-learning/administer-flows.yml",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
@@ -8,72 +29,72 @@
         {
         "source_path": "flow-docs/postman-collection.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/define-postman-collection",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/customapi-how-to-swagger.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/openapi-extensions",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/customapi-azure-resource-manager-tutorial.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/azure-active-directory-authentication",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/dev-isv-partner-intro.md",
         "redirect_url": "https://docs.microsoft.com/flow/dev-enterprise-intro",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/customapi-web-api-tutorial.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/create-web-api-connector",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/api-connector-overview.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/api-connector-dev.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/api-connector-submission.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/api-connector-faq.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/faq",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
         "source_path": "flow-docs/customapi-webhooks.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/create-webhook-trigger",
-        "redirect_document_id": true
+        "redirect_document_id": false
         },
         {
             "source_path": "flow-docs/guided-learning/build-flows.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-with-flow/2-create-first-flow",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "flow-docs/guided-learning/get-started.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-with-flow/1-introduction",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "flow-docs/guided-learning/work-with-approvals.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "flow-docs/guided-learning/index.md",
             "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }
     ]
 }
