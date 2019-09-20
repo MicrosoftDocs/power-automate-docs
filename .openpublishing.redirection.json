@@ -1,5 +1,25 @@
 {
-    "redirections": [
+    "redirections": [    {
+      "source_path": "flow-docs/dev-appsource-test-drive.md",
+      "redirect_url": "/flow/developer/dev-appsource-test-drive",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/dev-enterprise-intro.md",
+      "redirect_url": "/flow/developer/dev-enterprise-intro",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/embed-flow-dev.md",
+      "redirect_url": "/flow/developer/embed-flow-dev",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "flow-docs/register-custom-api.md",
+      "redirect_url": "/flow/developer/register-custom-api",
+      "redirect_document_id": "false"
+    },
+
         {
         "source_path": "flow-docs/guided-learning/administer-flows.yml",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
