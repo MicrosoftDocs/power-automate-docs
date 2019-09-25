@@ -1,5 +1,5 @@
 ---
-title: "Sample: Work with business process flows (Developer Guide for Dynamics 365 Customer Engagement) | MicrosoftDocs"
+title: "Sample: Work with business process flows | MicrosoftDocs"
 description: "The sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for an entity record, retrieving active path for a business process flow instance and its process stages, and changing the active stage."
 ms.custom: ""
 ms.date: 04/05/2018
