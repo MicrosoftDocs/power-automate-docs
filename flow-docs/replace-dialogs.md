@@ -99,7 +99,7 @@ Finally, [define navigation across screens](/powerapps/maker/canvas-apps/functio
 
 To make this app available to users, publish the app. Consider how such a scenario might be transformed through the availability of a standalone app that provides call scripts and supports quick data entry.
 
-Imagine you want to embed this experience in Dynamics 365 for Sales. To do this, begin with creating an iframe on a Dynamics 365 for Sales form. Next, navigate to the **Apps** section from the PowerApps menu, select the app you just published, copy the web link under the **Details** tab and paste it as the URL for the iframe. 
+Imagine you want to embed this experience in Dynamics 365 Sales. To do this, begin with creating an iframe on a Dynamics 365 Sales form. Next, navigate to the **Apps** section from the PowerApps menu, select the app you just published, copy the web link under the **Details** tab and paste it as the URL for the iframe. 
 
 Taking this a step further, suppose you’d like for this app to be available right within the lead main form, and be in the context of the lead so that the app doesn’t require the user to select a lead in the first screen. To pass relevant information to the app, you simply modify the iframe URL to append a query string containing this information, such as lead or account Ids, using JavaScript that runs on a certain event, such as on form load. Next, update the app to remove the first screen (for lead selection) and instead access the values passed to the app via the query string using the [Param function](/powerapps/maker/canvas-apps/functions/function-param).
 
