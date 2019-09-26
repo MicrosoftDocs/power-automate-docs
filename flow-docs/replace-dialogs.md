@@ -106,7 +106,7 @@ Taking this a step further, suppose you’d like for this app to be available ri
 ## Dialog replacement FAQ
 
 Are dependencies on canvas apps be tracked? 
-- Dependencies on canvas apps are tracked in the same way as dependencies in Dynamics 365 customer engagement.
+- Dependencies on canvas apps are tracked in the same way as dependencies in Dynamics 365 apps.
 
 Can I launch a canvas app as a popup from a button in the command bar?
 - Yes. To do this, simply set the target URL to that of your canvas app, obtained from the app's **Details** section as described earlier.

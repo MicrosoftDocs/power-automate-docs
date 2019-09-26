@@ -30,7 +30,7 @@ Design a flow in Dynamics 365 for phones or Dynamics 365 for tablets based on co
   
 ## Create a task flow
   
-1. Make sure that you have the System Administrator, or System Customizer security role or equivalent permissions. If you use Dynamics 365 customer engagement, Manager, Vice President, or CEO-Business Manager, security roles can also create mobile task flows. 
+1. Make sure that you have the System Administrator, or System Customizer security role or equivalent permissions. The Manager, Vice President, or CEO-Business Manager, security roles can also create mobile task flows. 
   
 2. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and select **Processes**.  
   
