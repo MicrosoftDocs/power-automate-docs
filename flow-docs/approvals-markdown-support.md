@@ -27,7 +27,7 @@ search.audienceType:
 This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting and tables to your approval requests.
 
 > [!IMPORTANT]
-> Approvals send an actionable message, and the actionable message renders Markdown depending on the Outlook client version. For a list of Outlook clients that support actionable messages, see [Outlook version requirements for actionable messages](https://docs.microsoft.com/en-us/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages)
+> Approvals send an actionable message, and the actionable message renders Markdown depending on the Outlook client version. For a list of Outlook clients that support actionable messages, see [Outlook version requirements for actionable messages](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages)
 > 
 > If an Outlook client doesn’t support actionable messages, the messages are rendered in HTML format. So, in this case, Markdown is transformed into HTML and rendered in the HTML format. The Outlook client needs to be able to render HTML messages to display correctly.
 
