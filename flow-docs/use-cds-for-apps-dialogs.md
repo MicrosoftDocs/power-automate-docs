@@ -20,7 +20,7 @@ search.audienceType:
 
 [Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). You should replace dialogs with business process flows or canvas apps. More information: [Replace dialogs with business process flows or canvas apps](replace-dialogs.md) 
 
-Dialogs are the synchronous or interactive processes in Common Data Service that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring. For more information, see [Use dialogs for guided processes](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) in the Dynamics 365 Customer Engagement Developer Guide.
+Dialogs are the synchronous or interactive processes in Common Data Service that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring.
 
 ## Differences between workflows and dialogs
 

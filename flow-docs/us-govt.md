@@ -227,7 +227,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - Trigger Microsoft Flow US Government flow *from* SharePoint Lists
 
-- Trigger Microsoft Flow US Government flow *from* Dynamics 365 for Customer Engagement GCC
+- Trigger Microsoft Flow US Government flow *from* Dynamics 365 GCC
 
 - [Approvals](./modern-approvals.md) – Although  US Government customers may use Microsoft Flow approvals, they will not be able to send actionable emails, and will need to direct approvers to the Approval Center. As a workaround, Microsoft Flow makers can leverage standard email connectors to notify someone that an approval pending. In that case, they would also include the hyperlink, within the email, which points to the Approval Center where US Government customers may act on the approvals.
 
