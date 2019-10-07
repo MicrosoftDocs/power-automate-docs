@@ -4,8 +4,8 @@ description: Use AppSource to share apps with customers, and generate leads for 
 services: ''
 suite: flow
 documentationcenter: na
-author: linhtranms
-manager: anneta
+author: MSFTMAN
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
-ms.author: lintran
+ms.author: Deonhe
 search.app: 
   - Flow
 search.audienceType: 
