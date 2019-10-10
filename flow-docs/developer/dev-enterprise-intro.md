@@ -30,7 +30,7 @@ As an enterprise developer, empower your organization to build robust tailored s
 
 - **Build custom connectors**: Develop custom connectors to connect to your organization's data and web services through Microsoft Flow. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Build Azure Functions**: Craft Azure Functions to extend apps with custom server-side logic. [Learn more](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Build Azure Functions**: Craft Azure Functions to extend apps with custom server-side logic. [Learn more](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
 - **Embed Microsoft Flow**: Embed Microsoft Flow directly into your website experiences to create integrated solutions, surfacing workflows or processes where people in your organization already do their work. [Learn more](embed-flow-dev.md)
 
