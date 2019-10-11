@@ -66,42 +66,42 @@
     href: enhance-business-process-flows-branching.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
-- name: Codename RPA
+- name: UI flows
   items:
-  - name: RPA overview
-    href: ./rpa/overview.md
-  - name: Set up Codename RPA
-    href: ./rpa/setup.md
-  - name: Create a Windows app RPA Codename
-    href: ./rpa/create-windows.md
+  - name: UI flows overview
+    href: ./ui-flows/overview.md
+  - name: Set up UI flows
+    href: ./ui-flows/setup.md
+  - name: Create a Windows UI flow
+    href: ./ui-flows/create-windows.md
     items:
     - name: Define input
-      href: ./rpa/define-input.md
+      href: ./ui-flows/define-input.md
     - name: Launch a record
-      href: ./rpa/launch-record.md
+      href: ./ui-flows/launch-record.md
     - name: Add a scope
-      href: ./rpa/add-scope.md
+      href: ./ui-flows/add-scope.md
     - name: Add a manual action
-      href: ./rpa/add-manual-action.md
+      href: ./ui-flows/add-manual-action.md
     - name: Add a condition
-      href: ./rpa/add-condition.md
+      href: ./ui-flows/add-condition.md
     - name: Add a record
-      href: ./rpa/add-record.md
+      href: ./ui-flows/add-record.md
     - name: Define outputs
-      href: ./rpa/define-outputs.md
-    - name: Test an RPA codename app
-      href: ./rpa/test-windows-app.md
-  - name: Create a Web Codename RPA app
-    href: ./rpa/create-web.md
+      href: ./ui-flows/define-outputs.md
+    - name: Test a UI flow
+      href: ./ui-flows/test-windows.md
+  - name: Create a Web UI flow
+    href: ./ui-flows/create-web.md
     items:
     - name: Define name and URL
-      href: ./rpa/define-name-url.md
+      href: ./ui-flows/define-name-url.md
     - name: Record in Selenium
-      href: ./rpa/record-selinium.md
+      href: ./ui-flows/record-selinium.md
     - name: Edit in Selenium
-      href: ./rpa/edit-selinium.md
+      href: ./ui-flows/edit-selinium.md
   - name: Create a UI flow in a flow?????
-    href: ./rpa/create-ui.md
+    href: ./ui-flows/create-ui.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
 - name: Solutions
