@@ -227,7 +227,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 PowerApps Maker PowerShell cmdlets
 
-A user can delete all of their connector role assignments for shared custom conector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
