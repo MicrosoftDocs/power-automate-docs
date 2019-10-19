@@ -4,8 +4,9 @@ description: Flows can wait for an external event to occur, such as a user appro
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2018
-ms.author: merwanhade
 search.app: 
   - Flow
 search.audienceType: 

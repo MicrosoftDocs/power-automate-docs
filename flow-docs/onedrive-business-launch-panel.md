@@ -5,7 +5,8 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVivek
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/25/2019
-ms.author: MSFTMAN
 search.app: 
   - Flow
 search.audienceType: 
