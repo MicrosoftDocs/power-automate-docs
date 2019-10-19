@@ -1,12 +1,12 @@
 ---
 title: Replace classic Common Data Service workflows with Microsoft Flow | Microsoft Docs
 description: Describes Microsoft Flow capabilities and recommended patterns to use flow instead of a classic workflow.
-author: KaransId
-manager: kvivek
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 ms.service: flow
 ms.topic: article
 ms.date: 08/27/2019
-ms.author: karansr
 search.app: 
   - Flow
 search.audienceType: 
