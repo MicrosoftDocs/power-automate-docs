@@ -4,8 +4,9 @@ description: Create a custom connector, share it, embed a flow, and do much more
 services: ''
 suite: flow
 documentationcenter: na
-author: bbarath
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
-ms.author: barathb
 search.app: 
   - Flow
 search.audienceType: 

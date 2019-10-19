@@ -1,11 +1,12 @@
 ---
 title: Add an on-demand workflow to a business process flow
 description: 
-author: Mattp123
-ms.author: matp
+author: MSFTMAN
+ms.author: Deonhe
 manager: kvivek
 ms.date: 07/12/2018
 ms.topic: article
+ms.service: Flow
 applies_to: 
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
