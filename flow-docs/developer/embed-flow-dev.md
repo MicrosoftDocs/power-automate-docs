@@ -4,8 +4,8 @@ description: Embed the Microsoft Flow experiences into your website or app.
 services: ''
 suite: flow
 documentationcenter: na
-author: bbarath
-manager: erikre
+author: MSFTMAN
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2019
-ms.author: barathb
+ms.author: Deonhe
 search.app: 
   - Flow
 search.audienceType: 

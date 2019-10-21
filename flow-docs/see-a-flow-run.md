@@ -4,8 +4,9 @@ description: View the inputs and outputs for each step of a flow to verify that 
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
-ms.author: mhade
 search.app: 
   - Flow
 search.audienceType: 

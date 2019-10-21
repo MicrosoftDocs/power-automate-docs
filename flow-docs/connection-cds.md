@@ -4,8 +4,8 @@ description: Create workflows by using a Common Data Service connection and Micr
 services: ''
 suite: flow
 documentationcenter: na
-author: brandonsimons
-manager: ryjones
+author: MSFTMAN
+manager: KVIVEK
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2019
-ms.author: bsimons
+ms.author: Deonhe
 search.app: 
   - Flow
 search.audienceType: 
