@@ -1,6 +1,6 @@
 ---
 title: Learn to manage on-premises data gateways | Microsoft Docs
-description: View and install an on-premises data gateway in Microsoft Flow
+description: View and install an on-premises data gateway in Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/05/2018
+ms.date: 10/16/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,6 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Manage an on-premises data gateway in Microsoft Flow
 
 Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Microsoft Flow.
@@ -56,11 +57,7 @@ With a gateway, you can connect to on-premises data over these connections:
 
 ## Install a gateway
 
-1. Download the [gateway-installation wizard](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
-
-1. Run the wizard and provide the same credentials with which you signed into Microsoft Flow.
-
-    After you register and configure your gateway successfully, it shows up in the **Gateways** list in Microsoft Flow.
+To install a gateway, follow the steps in [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install). Install the gateway in standard mode because the _on-premises data gateway (personal mode)_ is available only for Power BI.
 
 ## View your gateways
 
@@ -71,14 +68,13 @@ In the upper-right corner of the [Microsoft Flow website](https://flow.microsoft
 > [!NOTE]
 > If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
 
-
 ## Cluster your gateways
 
-You can create *high availability clusters of on-premises data gateway installations* to avoid single points of failure in accessing on-premises data resources. 
+You can create [high availability clusters of on-premises data gateway installations](/data-integration/gateway/service-gateway-high-availability-clusters) to avoid single points of failure in accessing on-premises data resources.
 
 By default, Microsoft Flow uses the primary gateway in the cluster. If the primary gateway isn't available, the service switches to the next gateway in the cluster, and so on.
 
-Once you've set up a gateway cluster, you can allow traffic to be distributed across all gateways in the cluster. 
+Once you've set up a gateway cluster, you can allow traffic to be distributed across all gateways in the cluster.
 
 Follow these steps to distribute your traffic across your gateways:
 
@@ -87,7 +83,6 @@ Follow these steps to distribute your traffic across your gateways:
 1. Select any of your gateways.
 1. Select **Distribute requests across all active gateways in this cluster**.
 1. Select **Apply** to save your changes.
-
 
 For more information, see [Understand gateways](gateway-reference.md).
 
