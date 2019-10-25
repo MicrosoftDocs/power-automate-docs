@@ -74,12 +74,12 @@
     href: ./ui-flows/setup.md
   - name: Create a Windows UI flow
     href: ./ui-flows/create-windows.md
+  - name: Create a Web UI flow
+    href: ./ui-flows/create-web.md
   - name: Run UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Create a Web UI flow
-    href: ./ui-flows/create-web.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
 - name: Solutions
