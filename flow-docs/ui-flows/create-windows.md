@@ -22,8 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-Create your first desktop UI flow
-------------------------------------------
+# Create your first desktop UI flow
 
 In the following steps, we'll demonstrate how to automate the calculator app to add two numbers and then store the result for later use. You can automate other apps by following a similar pattern.
 
