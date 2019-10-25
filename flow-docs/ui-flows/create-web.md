@@ -51,8 +51,6 @@ Follow these steps to create a simple Web UI flow:
 
    ![](../media/create-web-ui-flow/6746864a114406a90affc5c375f2b157.png)
 
-   ![](../media/create-web-ui-flow/888bfc6a030fcb07ee4c25015118d244.png)
-
 1. In Selenium IDE, select the red **REC** button in the top right side of the screen to launch the recorder.
 
    The the URL you chose in the previous step opens.
