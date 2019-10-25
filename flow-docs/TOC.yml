@@ -74,34 +74,12 @@
     href: ./ui-flows/setup.md
   - name: Create a Windows UI flow
     href: ./ui-flows/create-windows.md
-    items:
-    - name: Define input
-      href: ./ui-flows/define-input.md
-    - name: Launch a record
-      href: ./ui-flows/launch-record.md
-    - name: Add a scope
-      href: ./ui-flows/add-scope.md
-    - name: Add a manual action
-      href: ./ui-flows/add-manual-action.md
-    - name: Add a condition
-      href: ./ui-flows/add-condition.md
-    - name: Add a record
-      href: ./ui-flows/add-record.md
-    - name: Define outputs
-      href: ./ui-flows/define-outputs.md
-    - name: Test a UI flow
-      href: ./ui-flows/test-windows.md
+  - name: Run UI flows
+    href: ./ui-flows/run-ui-flow.md
+  - name: Manage UI flows
+    href: ./ui-flows/manage-ui-flows.md
   - name: Create a Web UI flow
     href: ./ui-flows/create-web.md
-    items:
-    - name: Define name and URL
-      href: ./ui-flows/define-name-url.md
-    - name: Record in Selenium
-      href: ./ui-flows/record-selinium.md
-    - name: Edit in Selenium
-      href: ./ui-flows/edit-selinium.md
-  - name: Create a UI flow in a flow?????
-    href: ./ui-flows/create-ui.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
 - name: Solutions
