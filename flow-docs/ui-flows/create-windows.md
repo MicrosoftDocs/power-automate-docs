@@ -1,6 +1,6 @@
 ---
-title: Learn to create UI flows | Microsoft Docs
-description: Learn to automate legacy apps with UI flows.
+title: Learn to create Windows UI flows | Microsoft Docs
+description: Learn to automate legacy Windows apps with UI flows.
 services: ''
 suite: flow
 documentationcenter: na

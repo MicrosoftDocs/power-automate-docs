@@ -1,6 +1,6 @@
 ---
-title: Codename RPA | Microsoft Docs
-description: Codename RPA.
+title: Learn to create UI flows for Websites | Microsoft Docs
+description: Learn to automate Web apps with UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -31,12 +31,12 @@ Follow these steps to create a simple Web UI flow:
 
 1.  Sign in with your work or school account if needed.
 
-2.  Navigate to **My flows** then **UI flows (preview)** and click **+ New**  
+1.  Navigate to **My flows** then **UI flows (preview)** and click **+ New**  
     
 
     ![](../media/create-web-ui-flow/c02652b754123b651f14cd09b1b36c29.png)
 
-3.  Select **Web app**  > **Next**
+1.  Select **Web app**  > **Next**
     
     ![](../media/create-web-ui-flow/5bb2857f2b7400c26e0bd77a274e8a2d.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Codename RPA | Microsoft Docs
-description: Codename RPA.
+title: UI flows overview | Microsoft Docs
+description: Overview of UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,40 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Add a condition to a flow
+# Introduction to UI flows
 
-Specify that a flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
+UI flows provides a quick and easy way to automate user interface actions (clicks, keyboard input, etc.) applications that don't have simple, easy-to-use, or complete APIs availabe. You can use UI flows to automate user interface actions in Windows and Web applications. 
 
-## Prerequisites
+APIs are not available, incomplete or too complex to use. UI flows records your actions on the User Interface
+of an application or website. 
+
+<!--todo: thie overview seems repetitive with the Intro section-->
+
+<!--## UI flows overview
+
+UI flows bring Robotic Process Automation to Microsoft Flow. You now can automate repetitive tasks performed through the user interface of Windows or Web apps. UI flows enables recording and automated replay of your actions such as mouse clicks, keyboard inputs, copy, paste, and more.
+
+You will find your UI flows alongside Automated, Button, Scheduled and Business Process flows in **My flows** tab. -->
+
+You can get a [quick start](#quick-start-create-your-first-desktop-ui-flow) or
+watch a [brief
+video](https://microsoft.sharepoint.com/:v:/t/PARIS/ERHYhdoIoGZPkDOFOPU-8-kBuC5hLz75cA1VfKkPFnjx6w)
+of how UI flow works with the calculator!  
+
+
+![](media/4b8017d4074862ae72aa96bbd60ec476.png) 
+
+<!--todo: needs tob be updated -->
+
+#### UI flows or API?
+
+With Microsoft Flow, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes int a UI flolw.
+
+| **Application type**      | **Microsoft Flow feature** | **Benefits**     |
+|---------------------------|----------------------------|------------------|
+| Modern apps with APIs| Connectors                 | High reliability |
+| Legacy apps (no APIs)          | UI Flow                    | Easy to create   |
+
 
 
 ## Next steps
