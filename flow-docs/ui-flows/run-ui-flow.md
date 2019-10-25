@@ -25,21 +25,20 @@ search.audienceType:
 # Run UI flows
 
 
-Once your UI flow is created and tested, you can from it an event, schedule or button. For that you will add your UI flow within an [Automated
+After you've created and tested a UI flow, you can run it from an event, schedule, or button. To make this possible, add your UI flow to an [Automated
 flow](https://docs.microsoft.com/flow/get-started-logic-flow), a [Button flow](https://docs.microsoft.com/flow/introduction-to-button-flows), a
-[Scheduled flow](https://docs.microsoft.com/flow/run-scheduled-tasks) or a[Business process flows](https://docs.microsoft.com/flow/business-process-flows-overview).
+[Scheduled flow](https://docs.microsoft.com/flow/run-scheduled-tasks), or a[Business process flows](https://docs.microsoft.com/flow/business-process-flows-overview).
 
-## Pre-requisites: install the On-premises data Gateway
+## Prerequisites
 
-The gateway is an enterprise-grade secure connection between Microsoft Flow and
-your device. It enables UI flows to be triggered by Microsoft Flow from an
-event, schedule or button.
-
-[Download the gateway
-installer](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your
+You need the the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your
 device to have the UI flow triggered by Microsoft Flow.
 
-![](../media/run-ui-flow/3ae74b6c16e297854ff672a5061b693b.png)
+The gateway is an enterprise-grade secure connection between Microsoft Flow and your device (where your UI flow runs). Microsoft Flow uses the gateway access your on-premises device to trigger your UI flows from an event, schedule or button.
+
+<!--To do, no need for this here... it duplicates gateway content-->
+
+<!-- ![](../media/run-ui-flow/3ae74b6c16e297854ff672a5061b693b.png)
 
 You need to use the same work or school account in the gateway as on your
 Windows device and Microsoft Flow.
@@ -80,14 +79,17 @@ documentation](https://docs.microsoft.com/data-integration/gateway/service-gatew
 and the [gateway
 management](https://docs.microsoft.com/flow/gateway-manage) documentation.
 
+-->
+
 ## Run your UI flow from an event, button, schedule or business process
 
-In this example we will use an automated flow that triggers the UI flow when a
-new email arrives;
+In this example we will use an automated flow to trigger a UI flow when a
+new email arrives.
 
-1. Navigate to [flow.microsoft.com,](https://flow.microsoft.com/) select **My
-    flows** in the left navigation bar, select **+ New** then **+Automated-from
-    blank** (but you can choose any other type of flow).
+1. Navigate to [Microsoft Flow,](https://flow.microsoft.com/) select **My flows** in the left navigation bar, select **New**, and then select **Automated-from blank**.
+
+   >[!TIP]
+   >You can choose any other type of flow to suit your needs.
 
 1. Give it a name then choose a service for which you have an account for such
     as Outlook.com, Microsoft Teams or Gmail. In this example we will use “When
