@@ -77,7 +77,7 @@
   - name: Run UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
-    href: ./ui-flows/manage-ui-flows.md
+    href: ./ui-flows/manage.md
   - name: Create a Web UI flow
     href: ./ui-flows/create-web.md
   - name: Best practices for business process flow attributes
