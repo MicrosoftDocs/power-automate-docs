@@ -21,14 +21,15 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-Run UI flows
-------------
+
+# Run UI flows
+
 
 Once your UI flow is created and tested, you can from it an event, schedule or button. For that you will add your UI flow within an [Automated
 flow](https://docs.microsoft.com/flow/get-started-logic-flow), a [Button flow](https://docs.microsoft.com/flow/introduction-to-button-flows), a
 [Scheduled flow](https://docs.microsoft.com/flow/run-scheduled-tasks) or a[Business process flows](https://docs.microsoft.com/flow/business-process-flows-overview).
 
-#### Pre-requisites: install the On-premises data Gateway
+## Pre-requisites: install the On-premises data Gateway
 
 The gateway is an enterprise-grade secure connection between Microsoft Flow and
 your device. It enables UI flows to be triggered by Microsoft Flow from an
@@ -75,11 +76,11 @@ Windows device and Microsoft Flow.
    ![](../media/run-ui-flow/15de4d8c977e2427376c6aead13b0bbe.png)
 
 For more information you can look at the [on-premises data gateway installer
-documentation](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app)
+documentation](https://docs.microsoft.com/data-integration/gateway/service-gateway-app)
 and the [gateway
-management](https://docs.microsoft.com/en-us/flow/gateway-manage) documentation.
+management](https://docs.microsoft.com/flow/gateway-manage) documentation.
 
-#### Run your UI flow from an event, button, schedule or business process
+## Run your UI flow from an event, button, schedule or business process
 
 In this example we will use an automated flow that triggers the UI flow when a
 new email arrives;
@@ -119,11 +120,11 @@ new email arrives;
     -  **Gateway**: select the gateway that you created during the
         installation.
 
-   ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
+     ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
 
 1.  Next, select the UI flow that you previously created
 
-   ![](../media/run-ui-flow/a00455ae03a71ea477cfa32a632896f0.png)
+    ![](../media/run-ui-flow/a00455ae03a71ea477cfa32a632896f0.png)
 
 1.  Save it and test it out by sending yourself an email! You will see UI flow
     automation playing back the steps you recorded. **Please do not interact
@@ -134,17 +135,17 @@ new email arrives;
 Once you defined inputs and outputs within a UI flow, you can pass information
 from and to them.
 
-1.  When you add a UI flow in a flow, you can see the list of inputs that have
+1. When you add a UI flow in a flow, you can see the list of inputs that have
     defined during the creation phase
 
-![](../media/run-ui-flow/05c87e0bfc4e994c00fc1ad253c17749.png)
+   ![](../media/run-ui-flow/05c87e0bfc4e994c00fc1ad253c17749.png)
 
-1.  You can bind each input with previous steps of the Flow by selecting an
+1. You can bind each input with previous steps of the Flow by selecting an
     input from the token picker
 
-![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
+   ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
 
-1.  You can also bind outputs of you UI flow with inputs of next steps.
+1. You can also bind outputs of you UI flow with inputs of next steps.
 
 ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
 
