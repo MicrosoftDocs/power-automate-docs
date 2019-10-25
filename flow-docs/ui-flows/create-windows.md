@@ -65,9 +65,9 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1.  Select **Record** from the recorder control.
 1.  Select the first number, select **+**, select the second number, and then select **=**.
 
-     >[!NOTE] <!--todo Is this really necessary?-->
-     >unsupported apps will be blocked so that you don’t unintentionally
-    record them.
+     <!--todo Is this really necessary?-->
+     >[!NOTE] 
+     >Unsupported apps will be blocked so that you don’t unintentionally record them.
 
     ![](../media/create-windows-ui-flow/aca3847b2a1104f3757b755a15019215.png)
 
@@ -90,7 +90,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
     >[!TIP]
     >It's always a great idea to test your UI flow. To do this, select the **Test now** button, and then watch your UI flow run.
     
-    >[!IMPORTANT]For best results, do not interact with your device for the duration of playback.
+    >[!IMPORTANT]
+    >For best results, do not interact with your device for the duration of playback.
 
 1.  Select **Save and exit** to save your flow and exit the UI flows feature.
 
