@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-## Setup UI flows on your device
+# Setup UI flows on your device
 
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
@@ -112,7 +112,7 @@ browser to activate the extension.
     -   Click each warning icons in the top right  
         
 
-        ![e New ta b CD p I Welcome to Microsoft Edge Bet) X For quick access, place your favorites here on the favorites bar. 1m rt favorites now Flash Player Will no longer be supported after December 2020. Tum off Search the web Microsoft Flow (Preview) extension has been added. Selenium IDE extension has been added. New tab New window ew Inprivate window Zoom rites History Downloads O Ctrl+T Ctrl \*N Ctrl\* Shift\* N 105% + Ctrl\*J ](../ui-flows-setup/ui-flows-setup/8a4ea389fcad965781274f463f382b84.png)
+        ![e New ta b CD p I Welcome to Microsoft Edge Bet) X For quick access, place your favorites here on the favorites bar. 1m rt favorites now Flash Player Will no longer be supported after December 2020. Tum off Search the web Microsoft Flow (Preview) extension has been added. Selenium IDE extension has been added. New tab New window ew Inprivate window Zoom rites History Downloads O Ctrl+T Ctrl \*N Ctrl\* Shift\* N 105% + Ctrl\*J ](../media/ui-flows-setup/8a4ea389fcad965781274f463f382b84.png)
 
     -   Then click on **Enable extension**
 
@@ -123,7 +123,7 @@ browser to activate the extension.
 -   On Google Chrome select **Enable extension** when prompted.  
     
 
-    !["Microsoft Flow (Preview)" added Another program on your computer added an extension that may change the way Chrome works. It can: • Read and change your data on all flow.microsoft.com sites and flow.microsoft.com • Communicate with cooperating websites • Communicate with cooperating native applications Enabk Remove from Chrome ](..media/ui-flows-setup//1301c0086aa1ef031b2505df7f5b2cae.png)
+    !["Microsoft Flow (Preview)" added Another program on your computer added an extension that may change the way Chrome works. It can: • Read and change your data on all flow.microsoft.com sites and flow.microsoft.com • Communicate with cooperating websites • Communicate with cooperating native applications Enabk Remove from Chrome ](../media/ui-flows-setup/1301c0086aa1ef031b2505df7f5b2cae.png)
 
 ## Install Selenium IDE for web automation
 
@@ -139,9 +139,9 @@ Microsoft Edge or Google Chrome.
 On Microsoft Edge (Chromium) you will need to **Allow extensions from other
 stores** then select **Add to Chrome**
 
-![](..media/ui-flows-setup//62a1f2e69c21b089922f3f92fcd26560.png)
+![](../media/ui-flows-setup/62a1f2e69c21b089922f3f92fcd26560.png)
 
-![](../ui-flows-setup/ui-flows-setup/7e7b7a0a45b876b036980eaebf728d52.png)
+![](../media/ui-flows-setup/7e7b7a0a45b876b036980eaebf728d52.png)
 
 ## On-premises data Gateway
 
