@@ -149,9 +149,10 @@ stores** then select **Add to Chrome**
 
 The gateway is not required if you only want to create, edit and test your UI flow.
 
-You will need the gateway to trigger your UI flow from an [event, schedule or button flow.](#automation-capabilities)
+You will need the gateway to trigger your UI flow from an [event, schedule or button flow.](../getting-started.md/#types-of-flows)
 
-The gateway setup is covered in the following section: [install the On-premises data Gateway](#pre-requisites-install-the-on-premises-data-gateway)
+<!--todo: confirm that -->
+The gateway setup is covered in the following section: [install the On-premises data Gateway](../gateway-reference.md/#install-a-gateway)
 
 ## Uninstall UI Flows
 
