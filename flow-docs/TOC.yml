@@ -73,7 +73,7 @@
   - name: Set up UI flows
     href: ./ui-flows/setup.md
   - name: Create and test Desktop UI flows
-    href: ./ui-flows/create-windows.md
+    href: ./ui-flows/create-desktop.md
   - name: Edit Desktop UI flows
     href: ./ui-flows/edit-desktop.md
   - name: Use inputs and outputs in Desktop UI flows
