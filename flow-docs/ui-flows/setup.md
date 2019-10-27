@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Setup UI flows on your device
+# Setup UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 

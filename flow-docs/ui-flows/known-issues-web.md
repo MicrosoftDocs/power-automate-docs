@@ -1,6 +1,6 @@
 ---
-title: List of known issues is the Preview release of Web UI flows | Microsoft Docs
-description: List of known issues is the Preview release of Web UI flows.
+title: List of known issues in the Preview release of Web UI flows | Microsoft Docs
+description: List of known issues in the Preview release of Web UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# List of known issues is the Preview release of Web UI flows
+# List of known issues in the Preview release of Web UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -31,7 +31,7 @@ Limitations and known issues for Web UI flows
 **Passwords in Selenium IDE are stored in plain text**  
 
 
-**UI flows no longer records or playbacks Windows applications after installing a new version.**
+**UI flows no longer records or plays back Windows applications after installing a new version.**
 
 You need to uninstall the previous version before installing a new one.
 

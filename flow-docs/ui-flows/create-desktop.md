@@ -1,6 +1,6 @@
 ---
-title: Learn to create Windows UI flows | Microsoft Docs
-description: Learn to automate legacy Windows apps with UI flows.
+title: Learn to create desktop UI flows | Microsoft Docs
+description: Learn to create desktop UI flows for Windows applications.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create your first desktop UI flow
+# Create and test desktop UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 

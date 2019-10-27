@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage your UI flow
+# Manage UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 

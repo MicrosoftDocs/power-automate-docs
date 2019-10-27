@@ -70,15 +70,15 @@
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
-  - name: Set up UI flows
+  - name: Setup UI flows
     href: ./ui-flows/setup.md
-  - name: Create and test Desktop UI flows
+  - name: Create and test desktop UI flows
     href: ./ui-flows/create-desktop.md
-  - name: Edit Desktop UI flows
+  - name: Edit desktop UI flows
     href: ./ui-flows/edit-desktop.md
-  - name: Use inputs and outputs in Desktop UI flows
+  - name: Use inputs and outputs in desktop UI flows
     href: ./ui-flows/inputs-outputs-desktop.md
-  - name: Known issues in Desktop UI flows
+  - name: Known issues in desktop UI flows
     href: ./ui-flows/known-issues-desktop.md
   - name: Create and test Web UI flows
     href: ./ui-flows/create-web.md

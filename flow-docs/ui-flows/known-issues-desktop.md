@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# List of known issues is the Preview release of Desktop UI flows
+# Known issues in the Preview release of desktop UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 
