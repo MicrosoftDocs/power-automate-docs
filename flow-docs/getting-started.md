@@ -44,9 +44,7 @@ Microsoft Flow is one of the three pillars of the Power Platform. It provides a 
 
 You can create and manage all flows from the **My flows** tab in Microsoft Flow.
 
-
-
-If you are a Dynamics 365 customer engagement customizer, you may also be familiar with Classic Common Data Service processes which include, [workflows](configure-workflow-steps.md), [actions](create-actions.md), [mobile task flows](create-mobile-task-flow.md), and [dialogs](use-cds-for-apps-dialogs.md).
+If you are a Dynamics 365 user, you may also be familiar with Classic Common Data Service processes which include, [workflows](configure-workflow-steps.md), [actions](create-actions.md), [mobile task flows](create-mobile-task-flow.md), and [dialogs](use-cds-for-apps-dialogs.md).
 
 The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft Flow, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
 

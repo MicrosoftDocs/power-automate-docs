@@ -42,6 +42,7 @@ Administrators can identify the region if they sign in to the Microsoft Flow [ad
 * South America
 * United Kingdom
 * US Government (GCC)
+* France
 
 ## What features are specific to a given region?
 Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including the common data model, flows, connections, gateways, apps, and custom connectors.
@@ -55,7 +56,7 @@ Gateways are:
 * Supported in the default environment only, not in custom environments.
 
 ## Is Microsoft Flow available in national clouds?
-Yes. [Learn more](./us-govt.md)
+Yes. [Learn more](./us-govt.md).
 
 ## What outbound IP addresses are used in each region?
 See [Limits and configuration](limits-and-config.md).

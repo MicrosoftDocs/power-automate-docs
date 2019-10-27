@@ -269,7 +269,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 ### Release 2017-09-25 - Q3 Update for Microsoft Flow
 
 - **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
-- **Dynamics 365 for Customer Engagement** - Flow is now integrated in the UI for Dynamics 365 for Customer Engagement.
+- **Dynamics 365 apps** - Flow is now integrated in the UI for Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 - **Microsoft Trust Center** - Microsoft Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
 - **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
