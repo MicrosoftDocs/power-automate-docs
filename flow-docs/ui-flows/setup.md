@@ -1,6 +1,6 @@
 ---
-title: Codename RPA | Microsoft Docs
-description: Codename RPA.
+title: Set up UI flows on your device | Microsoft Docs
+description: Set up UI flows on your device
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Setup UI flows on your device
+# Set up UI flows on your device
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -45,7 +45,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
     or Google Chrome.
 
 -   An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview)
-    with a [CDS database](https://docs.microsoft.com/power-platform/admin/create-database).
+    with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
 
 
 
