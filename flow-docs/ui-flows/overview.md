@@ -1,6 +1,6 @@
 ---
-title: UI flows overview | Microsoft Docs
-description: Overview of UI flows.
+title: Introduction to UI flows | Microsoft Docs
+description: Introduction to UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,19 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Introduction to UI flows
+# Preview: Introduction to UI flows
+
+[This topic is pre-release documentation and is subject to change.]
+
 
 UI flows provides a quick and easy way to automate user interface actions (clicks, keyboard input, etc.) applications that don't have simple, easy-to-use, or complete APIs availabe. You can use UI flows to automate user interface actions in Windows and Web applications. 
 
 APIs are not available, incomplete or too complex to use. UI flows records your actions on the User Interface
 of an application or website. 
+
+>[!IMPORTANT]
+> - This is a preview feature.
+> - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
 
 <!--todo: thie overview seems repetitive with the Intro section-->
 
