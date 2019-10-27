@@ -3,14 +3,13 @@ title: "Enhance business process flows with branching with PowerApps | Microsoft
 description: "Learn how to use branching in a business process flow"
 ms.custom: ""
 ms.date: 06/27/2018
-ms.reviewer: ""
-ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-author: "Mattp123"
+ms.service: flow
+author: "MSFTMAN"
 ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9
-ms.author: "matp"
+ms.author: "Deonhe"
 manager: "kvivek"
 search.app: 
   - Flow
@@ -55,7 +54,7 @@ Business process flows guide you through various stages of sales, marketing, or 
 >   In another example, suppose a process is currently in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal presented to the customer requires more research to identify customer needs, users can simply select the **Identify Needs** stage of your process and choose **Set Active**.  
   
 <a name="CarSelling365"></a>   
-## Dynamics 365 customer engagement example: Car selling process flow with two branches
+## Example: Car selling process flow with two branches
  
 Let’s look at the example of the business process flow with two branches, for selling new and pre-owned cars.  
   

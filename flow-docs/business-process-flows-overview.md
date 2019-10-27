@@ -4,6 +4,7 @@ ms.custom: ""
 ms.date: 06/27/2018
 ms.reviewer: ""
 ms.service: flow
+author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -13,7 +14,7 @@ applies_to:
   - "PowerApps"
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
-ms.author: "matp"
+ms.author: "DEONHE"
 manager: "kvivek"
 search.app: 
   - Flow
