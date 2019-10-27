@@ -152,7 +152,7 @@ from and to them.
 
 ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
 
-## Limitations and knowns issues
+## Limitations and known issues
 
 -   Gateway clusters are unsupported
 

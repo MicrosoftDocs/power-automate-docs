@@ -84,9 +84,7 @@ Follow these steps to create a simple Web UI flow:
 
 <!--Todo: fix links-->
 - To trigger the UI Flow you just created you can learn how to [run UI
-flows](#run-ui-flows).
+flows](run-ui-flow.md).
 
-- If you want to do more with UI flows, you can also try out UI flows with
-[input](#define-inputs-for-a-web-ui-flow) and
-[output](#define-outputs-for-a-web-ui-flow) parameters.
+- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 

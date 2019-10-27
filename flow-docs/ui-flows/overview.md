@@ -43,7 +43,7 @@ UI flows bring Robotic Process Automation to Microsoft Flow. You now can automat
 
 You will find your UI flows alongside Automated, Button, Scheduled and Business Process flows in **My flows** tab. -->
 
-You can get a [quick start](#quick-start-create-your-first-desktop-ui-flow) or
+You can get a [quick start](create-desktop.md) or
 watch a [brief video](https://microsoft.sharepoint.com/:v:/t/PARIS/ERHYhdoIoGZPkDOFOPU-8-kBuC5hLz75cA1VfKkPFnjx6w)
 of how UI flow works with the calculator!  
 
