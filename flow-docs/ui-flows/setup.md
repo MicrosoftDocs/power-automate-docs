@@ -1,6 +1,6 @@
 ---
-title: Set up UI flows on your device | Microsoft Docs
-description: Set up UI flows on your device
+title: Setup UI flows on your device | Microsoft Docs
+description: Setup UI flows on your device
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set up UI flows on your device
+# Setup UI flows on your device
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -147,14 +147,11 @@ stores** then select **Add to Chrome**
 
 ## On-premises data Gateway
 
-The gateway is not required if you only want to create, edit and test your UI
-flow.
+The gateway is not required if you only want to create, edit and test your UI flow.
 
-You will need the gateway to trigger your UI flow from an [event, schedule or
-button flow.](#automation-capabilities)
+You will need the gateway to trigger your UI flow from an [event, schedule or button flow.](#automation-capabilities)
 
-The gateway setup is covered in the following section: [install the On-premises
-data Gateway](#pre-requisites-install-the-on-premises-data-gateway)
+The gateway setup is covered in the following section: [install the On-premises data Gateway](#pre-requisites-install-the-on-premises-data-gateway)
 
 ## Uninstall UI Flows
 

@@ -64,5 +64,7 @@ With Microsoft Flow, you can automate both modern applications with APIs, or leg
 
 ## Next steps
 
+- Learn more about the [different types of flows](..\getting-started.md#types-of-flows) you can use to automate your workflows.
+
 <!--Todo-->
 
