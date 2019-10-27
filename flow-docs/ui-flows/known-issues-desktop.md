@@ -27,30 +27,26 @@ search.audienceType:
 [This topic is pre-release documentation and is subject to change.]
 
 
-It is recommended to have the apps that you want to record already launched and
-in a maximized state before you start recording.
+It is recommended to have the apps that you want to record already launched and in a maximized state before you start recording.
 
-UI flows will launch a new instance of the applications upon each test or run.
-It is recommended to add a **Close** action at the end of your UI flow.
+UI flows will launch a new instance of the applications upon each test or run. It is recommended to add a **Close** action at the end of your UI flow.
 
-Duplicate actions may be created depending on the type of application and the
-speed of your recording. You can review and delete actions by selecting “**…**”.
+Duplicate actions may be created depending on the type of application and the speed of your recording. You can review and delete actions by selecting “**…**”.
 
 ![](../media/known-issues-desktop/60755d5ba679a56d7d2ca2ede5a19103.png)
 
-Right clicks may not played back correctly. In such case, while recording, click
-left to focus UI flows on the target User Interface element then right click.
+Right clicks may not played back correctly. In such case, while recording, click left to focus UI flows on the target User Interface element then right click.
 
-If UI flows no longer records or playbacks Windows applications after installing
-a new version, [uninstall](#uninstall-ui-flows) the previous version before
-installing a new one.
+
+<!--Todo: link to uninstall instructions-->
+If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version before installing a new one.
 
 ## Unsupported application types
 
 -   Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
 -   Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
-    Please instead refer to [Create a Web UI flow](#edit-a-web-ui-flow) to
+    Please instead refer to [Create a Web UI flow](edit-web.md) to
     automate websites.
 
 -   Java applications
