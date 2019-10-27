@@ -1,6 +1,6 @@
 ---
-title: Learn to create Windows UI flows | Microsoft Docs
-description: Learn to automate legacy Windows apps with UI flows.
+title: Use inputs and outputs in Desktop UI flows | Microsoft Docs
+description: Use inputs and outputs in Desktop UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,11 +22,10 @@ search.audienceType:
   - enduser
 ---
 
-# Create your first desktop UI flow
+# Use inputs and outputs in Desktop UI flows
+
 
 [This topic is pre-release documentation and is subject to change.]
-
-# Use inputs and outputs for Desktop UI flows
 
 
 ## Define inputs

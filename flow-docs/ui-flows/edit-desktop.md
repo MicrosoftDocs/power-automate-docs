@@ -26,9 +26,7 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-Desktop UI flows automate Windows applications. Please refer to the [Known
-limitations and troubleshooting](#_Desktop_recording_&) to learn more about
-which types of applications are currently unsupported.
+Desktop UI flows automate Windows applications. Please refer to the [Known limitations and troubleshooting](known-issues-desktop.md) to learn more about which types of applications are currently unsupported.
 
 ## Edit actions
 
