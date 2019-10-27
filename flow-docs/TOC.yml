@@ -68,14 +68,26 @@
     href: best-practices-entity-attributes.md
 - name: UI flows (Preview)
   items:
-  - name: UI flows overview
+  - name: Introduction to UI flows
     href: ./ui-flows/overview.md
   - name: Set up UI flows
     href: ./ui-flows/setup.md
-  - name: Create a Windows UI flow
+  - name: Create and test Desktop UI flows
     href: ./ui-flows/create-windows.md
-  - name: Create a Web UI flow
+  - name: Edit Desktop UI flows
+    href: ./ui-flows/edit-desktop.md
+  - name: Use inputs and outputs in Desktop UI flows
+    href: ./ui-flows/inputs-outputs-desktop.md
+  - name: Known issues in Desktop UI flows
+    href: ./ui-flows/known-issues-desktop.md
+  - name: Create and test Web UI flows
     href: ./ui-flows/create-web.md
+  - name: Edit Web UI flows
+    href: ./ui-flows/edit-web.md
+  - name: Use inputs and outputs in Web UI flows
+    href: ./ui-flows/inputs-outputs-web.md
+  - name: Known issues in Web UI flows
+    href: ./ui-flows/known-issues-web.md
   - name: Run UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
