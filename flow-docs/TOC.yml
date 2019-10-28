@@ -92,8 +92,6 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Best practices for business process flow attributes
-    href: best-practices-entity-attributes.md
 - name: Solutions
   items:
   - name: Overview
