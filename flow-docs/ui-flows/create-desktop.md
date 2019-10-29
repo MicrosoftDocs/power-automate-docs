@@ -26,81 +26,86 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-In the following steps, we'll demonstrate how to automate the calculator app to add two numbers and then store the result for later use. You can automate other apps by following a similar pattern.
+In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
+
+>[!TIP]
+>You can automate other apps by following a similar pattern.
+
+## Create a desktop UI flow
 
 1. Ensure your [device is ready]() to create UI flows. <!--Todo: link to the prereqs section-->
-1.  Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in.
+1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in.
 
-1. Select  **My flows**, and then select **UI flows (preview)**.
-1. Select **+ New** from the top of the screen.    
+1. Select  **My flows** > **UI flows (preview)** > **New**.
 
-   ![dfdfdf](../media/create-windows-ui-flow/a3b2b3c31c9b2a87c703e0299fd4b225.png "ddfdf")
+   ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
-1.  Choose **Desktop app** and then select **Next**.
+1. Choose **Desktop app** and then select **Next**.
 
-    ![](../media/create-windows-ui-flow/5bb2857f2b7400c26e0bd77a274e8a2d.png) 
+   ![Select desktop](../media/create-windows-ui-flow/select-desktop.png "Select desktop") 
 
-1.  Enter a name for your UI flow into the **Flow name** field, and then select **Next**.
+1. Enter a name for your UI flow into the **Flow name** field, and then select **Next**.
 
-1.  Select **Next** at the bottom to skip the optional **Set up inputs** screen.
+   ![Select desktop](../media/create-windows-ui-flow/give-a-name.png "Select desktop") 
 
-    ![](../media/create-windows-ui-flow/d1ba306e26af36c769b9110c538e1ba3.png)
+1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
 
-1.  Select the **Record app** card to expand it.
+1. Select the **Record app** card to expand it.
 
-     ![](../media/create-windows-ui-flow/96b2612205e69dd8e8df8e63e1aed312.png)
+   ![Select record app](../media/create-windows-ui-flow/select-record-app.png "Select record app")
 
-1.  Select **Launch recorder**.
+1. Select **Launch recorder**.
 
-    ![](../media/create-windows-ui-flow/9f75c46661c5dd3d33ad280f95c874f9.png)
+   ![Select launch recorder](../media/create-windows-ui-flow/select-launch-recorder.png "Select launch recorder")
 
-    The recorder control displays at the top of your screen.
+   The recorder control displays at the top of your screen.
 
-1.  Start the calculator app.
+   ![The recorder-control](../media/create-windows-ui-flow/recorder-control.png "The recorder-control")
+
+1. Start the calculator app.
 
      >[!TIP]
      >As your mouse hovers over controls in the app, you'll notice that a blue outline highlights each control. Always wait for the blue highlight before you select a control.
      >
-     >If the blue highlight doesn't display around the element, it might not be
-    recorded properly.
+     >If the blue highlight doesn't display around the element, it might not be recorded properly.
 
-1.  Select **Record** from the recorder control.
-1.  Select the first number, select **+**, select the second number, and then select **=**.
+1. Select **Record** from the recorder control.
+1. Select the first number, select **+**, select the second number, and then select **=**.
+
+    ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
 
      <!--todo Is this really necessary?-->
      >[!NOTE] 
      >Unsupported apps will be blocked so that you don’t unintentionally record them.
 
-    ![](../media/create-windows-ui-flow/aca3847b2a1104f3757b755a15019215.png)
+1. Select **Done** on the recorder control after you complete the actions you want to record.
 
-1.  Select **Done** after you complete the actions you want to record, and then close the app that you recorded.
+1. Close the app that you recorded.
 
-    ![](../media/create-windows-ui-flow/b700fb5100e0de146ba3325573d3f0af.png)
-
-1.  Select the card that starts with "Run <app name> script" to view the screenshot list of recorded steps.
+1. Select the card that starts with "Run <app name> script" to view  screenshots of the recorded steps.
 
      >[!TIP]
-     >Select **...** > **Delete** to remove any extra steps that you may want to remove. 
-1.  Select **Next**. 
+     >Select **...** > **Delete** to remove any extra steps that you may want to remove.
+     
+1. Select **Next**. 
 
     ![](../media/create-windows-ui-flow/5af823232153f97ecb638284e654f86b.png)
 
-1.  Select **Next** to skip the optional **Set up outputs** step.
+1. Select **Next** to skip the optional **Set up outputs** step.
 
     ![](../media/create-windows-ui-flow/ac88c713a644864c4d6eafef598431f8.png)
 
-    >[!TIP]
-    >It's always a great idea to test your UI flow. To do this, select the **Test now** button, and then watch your UI flow run.
-    
-    >[!IMPORTANT]
-    >For best results, do not interact with your device for the duration of playback.
+## Test your UI flow
 
-1.  Select **Save and exit** to save your flow and exit the UI flows feature.
+It's always a great idea to test your UI flow. To do this, select the **Test now** button, and then watch your UI flow run.
+    
+ >[!IMPORTANT]
+ >For best results, do not interact with your device for the duration of playback.
+
+1. Select **Save and exit** to save your flow and exit the UI flows feature.
 
 
 ## Known issues in the Preview release of desktop UI flows
-
-[This topic is pre-release documentation and is subject to change.]
 
 
 It is recommended to have the apps that you want to record already launched and in a maximized state before you start recording.
