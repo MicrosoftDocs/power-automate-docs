@@ -117,7 +117,7 @@ Right clicks may not played back correctly. In such case, while recording, click
 <!--Todo: link to uninstall instructions-->
 If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version before installing a new one.
 
-## Unsupported application types
+### Unsupported application types
 
 -   Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
@@ -133,7 +133,7 @@ If UI flows no longer records or plays back Windows applications after installin
 
 -   Office 2016 and earlier
 
-## Unsupported configurations
+### Unsupported configurations
 
 -   Multi-screen
 
@@ -164,7 +164,7 @@ If UI flows no longer records or plays back Windows applications after installin
 -   Recording on a device or Windows session while the Browser with Microsoft
     Flow is on a different device or Windows session.
 
-## Unsupported action types & behaviors (will not be recorded)
+### Unsupported action types & behaviors (will not be recorded)
 
 -   Double click
 
