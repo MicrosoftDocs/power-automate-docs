@@ -86,14 +86,12 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
      >[!TIP]
      >Select **...** > **Delete** to remove any extra steps that you may want to remove.
-     
+
+    ![Show recorded steps](../media/create-windows-ui-flow/show-recorded-steps.png "Show recorded steps")
+
 1. Select **Next**. 
 
-    ![](../media/create-windows-ui-flow/5af823232153f97ecb638284e654f86b.png)
-
-1. Select **Next** to skip the optional **Set up outputs** step.
-
-    ![](../media/create-windows-ui-flow/ac88c713a644864c4d6eafef598431f8.png)
+1. Select **Next** to skip the optional **Set up outputs** step since we aren't using outputs in this walkthrough.
 
 ## Test your UI flow
 
