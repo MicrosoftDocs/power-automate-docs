@@ -26,103 +26,99 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-Desktop UI flows automate Windows applications. Please refer to the [Known issues](known-issues-desktop.md) to learn more about which types of applications are currently unsupported.
+Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
+
+## Prerequisites
+A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
 
 ## Edit actions
 
 ![](../media/edit-desktop/6cf654d01545940eeae6053d9e5c5430.png)
 
-You can edit your record to:
+You can edit your recording to:
 
--   modify the value for actions that support it
-
--   delete a step from the recording
-
--   delete the entire recording
-
--   change the order of actions with drag and drop (exercise caution with this
-    as it may break the consistency of your recording)
+-   Modify the value for actions that support it.
+-   Delete a step.
+-   Delete the entire recording.
+-   Change the order of actions with drag and drop. Do exercise caution with this
+    as it may break the consistency of your recording.
 
 Advanced parameters let you change:
 
--   The delay after the action is performed. E.g.: change PT0S into PT1S to add
-    1 second delay. This can be useful when the target application has a slow
-    response time that not complete before the next step of your UI flow.
+-  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn't  complete before the next step of your UI flow.
+-   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
--   The Selector for the target User Interface element. See below for more
-    information.
+## Add a recording
 
-## Add a Recording
+You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
 
-You may want to record your UI flow in multiple sessions. In such case after a
-first recording you can proceed as follows:
+1. Select either **+** or **New step**.
 
-1.  Select either the “**+**” button or the “**+ New step**” button
+   ![](../media/edit-desktop/aeb6ce473d308fd671f3e9499a611bd5.png)
 
-![](../media/edit-desktop/aeb6ce473d308fd671f3e9499a611bd5.png)
+1. Select **Record UI actions** from the list of actions.
 
-1.  Select “Record UI actions” in the list of actions
+   ![](../media/edit-desktop/ba0fb033b555ce5b4690ca5d00668c4e.png)
 
-![](../media/edit-desktop/ba0fb033b555ce5b4690ca5d00668c4e.png)
+   A new recording card is added to your UI flow. 
 
-1.  A new recording card is added to your UI flow. You can now start a new
-    recording from this action card (see Launch a record documentation)
+1. Start a new recording from this action card. 
 
-## Add a Manual action
+## Add a manual action
 
-Once you recorded an application with at least an action, you can manually add
+Once you've recorded an application with at least one action, you can manually add
 any of the following actions for that application.
 
 | **Action**          | **Comment**                                                       |
 |---------------------|-------------------------------------------------------------------|
 | Close application   |                                                                   |
 | Right click         |                                                                   |
-| Send keys           | Send keys and combos such as CTRL + C                             |
+| Send keys           | Send keys and key combinations, such as CTRL + C.                             |
 | Left click          |                                                                   |
-| Get text            | Read the text from a User Interface element and use as an output. |
+| Get text            | Read the text from a user interface element and then use it as an output. |
 | Enter text          |                                                                   |
-| Get element enabled | Check if a User Interface element is enabled or disabled.         |
-| Clear element       | Clear the value in an editable User Interface element             |
-| Wait for seconds    | Wait before continuing to the next step                           |
+| Get element enabled | Check if a user interface element is enabled or disabled.         |
+| Clear element       | Clear the value in an editable user interface element.             |
+| Wait for seconds    | Wait before continuing to the next step.                           |
 
 Once the action is added, you will need to set the **Selector** in the action’s
 advanced parameters.
 
-The Selector identifies the User Interface element onto which the action is
-performed during playback . It is recommended to copy/paste this information
-from a separate step targeting the same User Interface element.
+### Set the selector
+
+The selector identifies the user interface element onto which the action is performed during playback. We recommend that you copy/paste this information from a separate step targeting the same user interface element, if possible.
 
 ![](../media/edit-desktop/c31b48dd5877db03d809c748a43a98ed.png)
 
-The format of the Selector is:
+The format of the selector is:
 
-{
+```json
+{  
+   "type":"WinUIA",
+   "parameters":{  
+      "elementStack":[  
 
-“type”: “WinUIA”,
-
-“parameters”: {
-
-“elementStack”: [],
-
-“elementXPath”: “”
-
+      ],
+      "elementXPath":""
+   }
 }
+```
 
-You need to fill the elemementStack and elementXPath fields.
+You need to provide the data for the the **elemementStack** and **elementXPath** fields.
 
 ![](../media/edit-desktop/e32e0480692a0983f77715086cb4ccf0.png)
 
-**CAP only**
+<!--todo-->
+<!-- **CAP only** -->
 
-You can capture the ementXPath using the [WinAppDriver UI
-Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/).
+You can capture the elementXPath using the [WinAppDriver UI
+Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/.
 
 ![](../media/edit-desktop/5f48fb9d63229653996093db3174ca57.png)
 
-Remove the first element (everything before /Window) before using the result in
-the Selector elementXPath.
+Remove the first element (everything before /Window) before using the result in the selector elementXPath.
 
-Test your UI flow to make sure that your Selector works correctly.
+Test your UI flow to confirm that your selector works correctly.
 
 
 

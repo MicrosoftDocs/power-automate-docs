@@ -26,12 +26,33 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
+Create desktop UI flows to automate Windows desktop applications. 
+
+Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
+
 
 >[!TIP]
->You can automate other apps by following a similar pattern.
+>You can automate other Windows desktop apps by following a similar pattern.
+
+## Prerequisites
+
+To be able to use UI flows you need the following:
+
+-   A paid [Flow plan](https://flow.microsoft.com/pricing/) or
+    [trial](https://flow.microsoft.com/manage/).
+-   A work or school account signed in on both Microsoft Flow and your Windows
+    device
+-   A physical device with:
+    -   Windows 10, Windows Server 2016, or Windows Server 2019.
+    -   A US (QWERTY) keyboard.
+-   The [next version of Microsoft Edge](https://www.microsoftedgeinsider.com)
+    or Google Chrome.
+-   An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
+
 
 ## Create a desktop UI flow
+
+In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
 
 1. Ensure your [device is ready]() to create UI flows. <!--Todo: link to the prereqs section-->
 1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in with a work or school email account.
