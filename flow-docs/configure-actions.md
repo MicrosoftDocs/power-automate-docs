@@ -23,6 +23,7 @@ search.audienceType:
   - enduser
 ---
 # Configure custom actions from a workflow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 You can enable a custom action from a workflow without writing code. More information: [Invoke custom actions from a workflow](invoke-custom-actions-workflow-dialog.md).  
   

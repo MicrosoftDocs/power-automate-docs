@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -19,6 +18,7 @@ ms.author: deonhe
 ---
 
 # Microsoft Flow in Teams
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 ### Prerequisites
 

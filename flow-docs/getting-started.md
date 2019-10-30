@@ -22,7 +22,10 @@ search.audienceType:
   - enduser
 ---
 
-# Get started with Microsoft Flow #
+# Get started with Microsoft Flow
+
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 

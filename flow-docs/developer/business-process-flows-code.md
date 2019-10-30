@@ -17,6 +17,7 @@ search.audienceType:
 ---
 
 # Work with business process flows using code
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 A *business process flow* lets you create more efficient and streamlined sales, service, and other business processes. It creates a visualization of your business process by placing special controls at the top of the entity forms. Users are guided through various stages of sales, marketing, or service processes towards completion. Each process supports multiple stages and steps. You can add or remove steps, change the order of stages, or add new entities to the business process flow.  
   

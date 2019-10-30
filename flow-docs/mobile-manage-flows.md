@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Manage flows in Microsoft Flow from your phone
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 View a list of all flows that you created and, for each flow, view its events and actions, enable or disable it, and explore its run history.
 
 **Prerequisites**

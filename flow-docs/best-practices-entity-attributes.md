@@ -22,6 +22,7 @@ manager: kvivek
 ---
 
 # Best practices in using business process flow attributes
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
 Legacy process-related attributes in entities is deprecated. Here are some best practices for using the *Active Stage* (activestageid) attribute on the business process flow entity. 

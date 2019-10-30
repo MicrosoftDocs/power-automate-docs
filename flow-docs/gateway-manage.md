@@ -23,6 +23,7 @@ search.audienceType:
 ---
 
 # Manage an on-premises data gateway in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Microsoft Flow.
 

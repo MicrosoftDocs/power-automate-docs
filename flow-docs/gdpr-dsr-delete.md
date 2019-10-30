@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Delete Requests for Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 

@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Using environments within Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 ## Benefits
 
