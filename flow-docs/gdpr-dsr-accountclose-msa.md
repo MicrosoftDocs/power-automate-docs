@@ -41,7 +41,7 @@ These resources contain personal data that are automatically deleted when a user
 
 These steps describe how to self-serve Account Close requests for GDPR.
 
-1. Sign into the [Microsoft Account Close Portal](http://go.microsoft.com/fwlink/?LinkId=523898) using your Microsoft Account, and then select **Next**.
+1. Sign into the [Microsoft Account Close Portal](https://go.microsoft.com/fwlink/?LinkId=523898) using your Microsoft Account, and then select **Next**.
 
     > [!NOTE]
     > You're reminded to cancel existing subscriptions or to export data from existing services to which you may have subscribed.

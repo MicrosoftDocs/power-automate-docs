@@ -96,7 +96,7 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Users can view their activity feed by following these steps:
 
-1. Sign into [Microsoft Flow](http://flow.microsoft.com/), select the bell icon near the upper-right corner, and then select **Show all activity**.
+1. Sign into [Microsoft Flow](https://flow.microsoft.com/), select the bell icon near the upper-right corner, and then select **Show all activity**.
 
     ![Show activity feed](./media/gdpr-dsr-export/show-activity-feed.png)
 
@@ -108,7 +108,7 @@ In [Microsoft Flow](https://flow.microsoft.com/), the activity feed shows a user
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign into [Microsoft Flow](http://flow.microsoft.com/), select the gear icon near the upper-right corner, and then select **Connections**.
+1. Sign into [Microsoft Flow](https://flow.microsoft.com/), select the gear icon near the upper-right corner, and then select **Connections**.
 
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
