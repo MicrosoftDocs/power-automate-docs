@@ -34,7 +34,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 ## Create a desktop UI flow
 
 1. Ensure your [device is ready]() to create UI flows. <!--Todo: link to the prereqs section-->
-1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in.
+1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in with a work or school email account.
 
 1. Select  **My flows** > **UI flows (preview)** > **New**.
 
