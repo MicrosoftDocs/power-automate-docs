@@ -103,22 +103,18 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 1. Select **Save and exit** to save your flow and exit the UI flows feature.
 
 
-## Known issues in the Preview release of desktop UI flows
+## Known issues and solutions
 
+- Open and maximize the apps your want to record before *before* you start recording.
 
-It is recommended to have the apps that you want to record already launched and in a maximized state before you start recording.
+- Add a **Close** action at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
-UI flows will launch a new instance of the applications upon each test or run. It is recommended to add a **Close** action at the end of your UI flow.
+- Select **..** > **Delete** on the recorded actions card to remove any unnecessary/duplicate actions. Duplicate actions may be created depending on the type and the speed of you are recording. 
 
-Duplicate actions may be created depending on the type of application and the speed of your recording. You can review and delete actions by selecting “**…**”.
-
-![](../media/known-issues-desktop/60755d5ba679a56d7d2ca2ede5a19103.png)
-
-Right clicks may not played back correctly. In such case, while recording, click left to focus UI flows on the target User Interface element then right click.
-
+- Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
 <!--Todo: link to uninstall instructions-->
-If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version before installing a new one.
+If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version and then install a new version.
 
 ### Unsupported application types
 
@@ -128,20 +124,20 @@ If UI flows no longer records or plays back Windows applications after installin
     Please instead refer to [Create a Web UI flow](edit-web.md) to
     automate websites.
 
--   Java applications
+-   Java applications.
 
--   Click once applications
+-   Click once applications.
 
--   Applications with a web view such as Electron applications
+-   Applications with a Web view such as Electron applications.
 
--   Office 2016 and earlier
+-   Office 2016 and earlier.
 
 ### Unsupported configurations
 
--   Multi-screen
+-   Multi-screen.
 
 -   Recording through a virtual machine client (Remote Desktop, Citrix, etc.),
-    either with the UI flow app running on the host device or on the virtual
+    either with the UI flows app running on the host device or on the virtual
     machine. None are supported.
 
 -   Moving an application to another screen during a recording session.
@@ -149,45 +145,43 @@ If UI flows no longer records or plays back Windows applications after installin
 -   Multiple instances of an application where the main window titles are
     identical.
 
--   Application windows with identical titles – e.g. for Microsoft Outlook:
-    multiple “Untitled – Message (HTML)” new mail windows active at the same
-    time.
+-   Application windows with identical titles, for example, Microsoft Outlook with multiple **Untitled – Message (HTML)** new mail windows active at the same time.
 
--   Applications that span across multiple monitors.
+-   Applications that span multiple monitors.
 
 -   Concurrent recording sessions on a given device.
 
 -   Concurrent playback sessions on a given device. In case of simultaneous UI
-    flow run, the first one will take precedence and the subsequent ones fill
-    fail until the first one is completed.
+    flow runs, the first one takes precedence and the subsequent ones 
+    fail until the first one  completes.
 
--   Playback on a machine with different keyboard layout than the one it was
-    initially recorded on.
+-   Playback on a device with a different keyboard layout than the device on which it was recorded.
 
--   Recording on a device or Windows session while the Browser with Microsoft
+-   Recording on a device or Windows session while the browser with Microsoft
     Flow is on a different device or Windows session.
 
-### Unsupported action types & behaviors (will not be recorded)
+### Unsupported action types and behaviors
 
--   Double click
+The following actions will not be recorded:
 
--   Mouse move
+-   Double click.
 
--   Mouse hover
+-   Mouse move.
 
--   Click and drag
+-   Mouse hover.
 
--   Touch or pen input
+-   Click and drag.
 
--   Open app before recording
+-   Touch or pen input.
 
--   Closed app before playback starts
+-   Open app before recording.
+
+-   Closed app before playback starts.
 
 ## Next steps
 
 <!--Todo: fix links-->
-- To trigger the UI Flow you just created you can learn how to [run UI
-flows](run-ui-flow.md).
+- Learn how to trigger the UI flow you just created [run UI flows](run-ui-flow.md).
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
