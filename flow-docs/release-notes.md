@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Release notes
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## Top questions
 1. My flow failed. How do I fix it?
    

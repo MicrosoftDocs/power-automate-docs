@@ -21,6 +21,7 @@ search.audienceType:
   - developer
 ---
 # Integrate Microsoft Flow with websites and apps
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Embed Microsoft Flow into your app or website using *flow widgets* to give your users a simple way to automate their personal or professional tasks.
 

@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Flow in your organization Q&A
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 This topic describes how users in your organization can use Flow, and how you can control the Flow service.
 
 ## Signing up for Flow

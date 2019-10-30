@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Sign up and sign in for Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Starting with Microsoft Flow, as an individual, is easy! Before you can create a flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
