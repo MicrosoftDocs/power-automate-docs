@@ -109,7 +109,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 - Add a **Close** action at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
-- Select **..** > **Delete** on the recorded actions card to remove any unnecessary/duplicate actions. Duplicate actions may be created depending on the type and the speed of you are recording. 
+- Select **...** > **Delete** on the recorded actions card to remove any unnecessary/duplicate actions. Duplicate actions may be created depending on the type and the speed of you are recording. 
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 

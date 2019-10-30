@@ -26,6 +26,8 @@ search.audienceType:
 [This topic is pre-release documentation and is subject to change.]
 
 
+## Introduction
+
 UI flows provides a quick and easy way to automate user interface actions (clicks, keyboard input, etc.) applications that don't have simple, easy-to-use, or complete APIs availabe. You can use UI flows to automate user interface actions in Windows and Web applications. 
 
 APIs are not available, incomplete or too complex to use. UI flows records your actions on the User Interface
