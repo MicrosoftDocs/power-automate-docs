@@ -201,8 +201,7 @@ The following actions will not be recorded:
 
 ## Next steps
 
-<!--Todo: fix links-->
-- Learn how to trigger the UI flow you just created [run UI flows](run-ui-flow.md).
+- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 

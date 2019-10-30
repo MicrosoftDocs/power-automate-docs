@@ -33,7 +33,7 @@ A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-t
 
 ## Edit actions
 
-![](../media/edit-desktop/6cf654d01545940eeae6053d9e5c5430.png)
+![Edit actions](../media/edit-desktop/edit-actions.png "Edit actions")
 
 You can edit your recording to:
 
@@ -52,17 +52,38 @@ Advanced parameters let you change:
 
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
 
-1. Select either **+** or **New step**.
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Select **My flows** > **UI flows(preview)**.
+1. Select the UI flow that you want to edit.
+   ![](../media/edit-desktop/select-ui-flow.png)
+1. Select **Edit**. 
+1. Select **New step**.
 
-   ![](../media/edit-desktop/aeb6ce473d308fd671f3e9499a611bd5.png)
+   ![New step](../media/edit-desktop/new-step.png "New step")
 
-1. Select **Record UI actions** from the list of actions.
+1. Select **Record app** from the list of actions.
 
-   ![](../media/edit-desktop/ba0fb033b555ce5b4690ca5d00668c4e.png)
+   ![Record app](../media/edit-desktop/select-record-ui-actions.png "Record app")
 
-   A new recording card is added to your UI flow. 
+1. Select **Launch recorder**.
 
-1. Start a new recording from this action card. 
+   ![Select launch recorder](../media/create-windows-ui-flow/select-launch-recorder.png "Select launch recorder")
+
+   The recorder control displays at the top of your screen.
+
+   ![The recorder-control](../media/create-windows-ui-flow/recorder-control.png "The recorder-control")
+
+1. Start the app that you want to record.
+
+     >[!TIP]
+     >As your mouse hovers over controls in the app, you'll notice that a blue outline highlights each control. Always wait for the blue highlight before you select a control.
+     >
+     >If the blue highlight doesn't display around the element, it might not be recorded properly.
+
+1. Select **Record** from the recorder control.
+
+1. Perform the steps in the user interface of the app your are recording, and then select **Done** on the recorder control.
+1. Select **Save**, and then test your UI flow.
 
 ## Add a manual action
 
@@ -81,14 +102,35 @@ any of the following actions for that application.
 | Clear element       | Clear the value in an editable user interface element.             |
 | Wait for seconds    | Wait before continuing to the next step.                           |
 
+Follow these steps to add a manual action:
+
+1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Select **My flows** > **UI flows(preview)**.
+1. Select the UI flow that you want to edit.
+   ![](../media/edit-desktop/select-ui-flow.png)
+1. Select **Edit**. 
+1. Select the recording card that contains the steps to which you want to add a new step.
+   The card expands and displays the recorded steps.
+
+   ![Select recording card](../media/edit-desktop/manual-select-recording-card.png)
+
+1. Select **Add an action** on the recording card, just below the last recorded step.
+   You'll see the list of manual actions listed earlier in the walkthrough. 
+
+1. Select the action you want to add. Here, I've selected **Get element enabled**, but you can select any action that makes sense for your scenario.
+
+   ![Select action to add.png](../media/edit-desktop/select-action-to-add.png)
+
 Once the action is added, you will need to set the **Selector** in the action’s
-advanced parameters.
+advanced options.
+
+![Action advanced options](../media/edit-desktop/action-advanced-options.png "Action advanced options")
 
 ### Set the selector
 
 The selector identifies the user interface element onto which the action is performed during playback. We recommend that you copy/paste this information from a separate step targeting the same user interface element, if possible.
 
-![](../media/edit-desktop/c31b48dd5877db03d809c748a43a98ed.png)
+<!-- ![](../media/edit-desktop/c31b48dd5877db03d809c748a43a98ed.png) --> 
 
 The format of the selector is:
 
@@ -104,21 +146,30 @@ The format of the selector is:
 }
 ```
 
-You need to provide the data for the the **elemementStack** and **elementXPath** fields.
+You need to provide the data for the the **elemementStack** and **elementXPath** fields of the  selector element.
 
-![](../media/edit-desktop/e32e0480692a0983f77715086cb4ccf0.png)
+Here is an example of what the **elemementStack** might look like.
+
+![Element stack](../media/edit-desktop/elementstack.png "Element stack")
 
 <!--todo-->
 <!-- **CAP only** -->
 
-You can capture the elementXPath using the [WinAppDriver UI
+You can capture the **elementXPath** using the [WinAppDriver UI
 Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/.
 
-![](../media/edit-desktop/5f48fb9d63229653996093db3174ca57.png)
+![WAD tool](../media/edit-desktop/wad-tool.png "WAD tool")
 
-Remove the first element (everything before /Window) before using the result in the selector elementXPath.
+Remove the first element (everything before /Window) before using the result in **elementXPath** of the selector.
 
 Test your UI flow to confirm that your selector works correctly.
+
+## Next steps
+
+- Learn how to [run the UI flow](run-ui-flow.md) you just edited.
+
+- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
+
 
 
 
