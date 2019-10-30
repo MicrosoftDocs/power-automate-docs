@@ -139,8 +139,10 @@ Testing UI flows lets you validate your changes and the appropriate playback beh
 
    ![](../media/inputs-outputs-desktop/85056d7942d12a5408005f5b683d432b.png)
 
-## Next steps
+## Learn more
 
 - Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+
+- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
 

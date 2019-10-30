@@ -26,7 +26,7 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-## Define inputs for a web UI flow­
+## Define inputs for a Web UI flow­
 
 Inputs of a UI flow let you pass information from an external source such as a database or another UI flow to the target legacy software that you will automate.
 
@@ -44,7 +44,7 @@ You can use variable directly in some commands, e.g. forEach command's target/va
 
 Please consult [Selenium Commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) reference to determine which commands takes variable name directly.
 
-## Define outputs for a web UI flow
+## Define outputs for a Web UI flow
 
 Any variable defined in the selenium script automatically becomes an output value. Variable declaration is usually done via the following commands:
 
@@ -68,4 +68,5 @@ script)
 
 ## Next steps
 
+- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
 

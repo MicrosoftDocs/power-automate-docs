@@ -146,7 +146,7 @@ stores** then select **Add to Chrome**
 
 ![](../media/ui-flows-setup/7e7b7a0a45b876b036980eaebf728d52.png)
 
-## On-premises data Gateway
+## On-premises data gateway
 
 The gateway is not required if you only want to create, edit and test your UI flow.
 
@@ -155,11 +155,14 @@ You will need the gateway to trigger your UI flow from an [event, schedule or bu
 <!--todo: confirm that -->
 The gateway setup is covered in the following section: [install the On-premises data Gateway](../gateway-reference.md/#use-a-gateway)
 
-## Uninstall UI Flows
+## Uninstall UI flows
 
-1. Open the Start menu > **Settings** > **Apps & features**.
+1. Open the Start menu > **Settings** > **Apps**.
 1. Search for **UI flows (preview)**, and then select it.
 1. Select **Uninstall**.
 
 ## Next steps
+
+- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+
 

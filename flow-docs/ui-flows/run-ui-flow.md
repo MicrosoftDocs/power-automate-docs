@@ -27,14 +27,11 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-After you've created and tested a UI flow, you can run it from an event, schedule, or button. To make this possible, add your UI flow to an [Automated
-flow](https://docs.microsoft.com/flow/get-started-logic-flow), a [Button flow](https://docs.microsoft.com/flow/introduction-to-button-flows), a
-[Scheduled flow](https://docs.microsoft.com/flow/run-scheduled-tasks), or a[Business process flows](https://docs.microsoft.com/flow/business-process-flows-overview).
+After you've created and tested a UI flow, you can run it from an event, schedule, or button. To make this possible, add your UI flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a[Business process flows](../business-process-flows-overview.md).
 
 ## Prerequisites
 
-You need the the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your
-device to have the UI flow triggered by Microsoft Flow.
+You need the the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the UI flow triggered by Microsoft Flow.
 
 The gateway is an enterprise-grade secure connection between Microsoft Flow and your device (where your UI flow runs). Microsoft Flow uses the gateway access your on-premises device to trigger your UI flows from an event, schedule or button.
 
@@ -83,19 +80,16 @@ management](https://docs.microsoft.com/flow/gateway-manage) documentation.
 
 -->
 
-## Run your UI flow from an event, button, schedule or business process
+## Run your UI flow from an event, button, schedule, or business process
 
-In this example we will use an automated flow to trigger a UI flow when a
-new email arrives.
+In this example we will use an automated flow to trigger a UI flow when a new email arrives.
 
-1. Navigate to [Microsoft Flow,](https://flow.microsoft.com/) select **My flows** in the left navigation bar, select **New**, and then select **Automated-from blank**.
+1. Navigate to [Microsoft Flow](https://flow.microsoft.com/), select **My flows** in the left navigation bar, select **New**, and then select **Automated-from blank**.
 
    >[!TIP]
    >You can choose any other type of flow to suit your needs.
 
-1. Give it a name then choose a service for which you have an account for such
-    as Outlook.com, Microsoft Teams or Gmail. In this example we will use “When
-    a new email arrives” from Office 365 Outlook.  
+1. Give it a name then choose a service for which you have an account for such as Outlook.com, Microsoft Teams or Gmail. In this example we will use “When a new email arrives” from Office 365 Outlook.  
     
     ![](../media/run-ui-flow/2d4ec17d239169a46905cef1829fa3a1.png)
 
@@ -105,60 +99,49 @@ new email arrives.
   
     ![](../media/run-ui-flow/949b72d28a1233a7c76b7fe92ac50c11.png)
 
-1. Select **Run a UI flow for Desktop (preview)** or **Run a UI flow for web
-    (preview)**
+1. Select **Run a UI flow for desktop (preview)** or **Run a UI flow for web (preview)**
 
      ![](../media/run-ui-flow/4e66da4e12a1235d06d94f00b806793e.png)
 
-1.  Provide the gateway information and device credentials. You will only have
-    to do this once per device:
+1. Provide the gateway information and device credentials. You will only have to do this once per device:
 
-    -  **Connection name**: choose a name for the device to Flow connection. It
-        can be different than the Gateway name.
+    -  **Connection name**: choose a name for the device to Flow connection. It can be  different than the Gateway name.
 
-    -  **Username**: provide your device’s Work or School account on your
-        device.
+    -  **Username**: provide your device’s Work or School account on your device.
 
     -  **Password**: your Work or School account’s password.
 
-    -  **Gateway**: select the gateway that you created during the
-        installation.
+    -  **Gateway**: select the gateway that you created during the installation.
 
-     ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
+   ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
 
-1.  Next, select the UI flow that you previously created
+1. Next, select the UI flow that you previously created
 
-    ![](../media/run-ui-flow/a00455ae03a71ea477cfa32a632896f0.png)
+   ![](../media/run-ui-flow/a00455ae03a71ea477cfa32a632896f0.png)
 
-1.  Save it and test it out by sending yourself an email! You will see UI flow
-    automation playing back the steps you recorded. **Please do not interact
-    with your device for the duration of playback.**
+1. Save it and test it out by sending yourself an email! You will see UI flow automation playing back the steps you recorded. **Please do not interact with your device for the duration of playback.**
 
-## Use inputs & outputs
+## Use inputs and outputs
 
-Once you defined inputs and outputs within a UI flow, you can pass information
-from and to them.
+Once you defined inputs and outputs within a UI flow, you can pass information from and to them.
 
-1. When you add a UI flow in a flow, you can see the list of inputs that have
-    defined during the creation phase
+1. When you add a UI flow in a flow, you can see the list of inputs that have defined during the creation phase
 
    ![](../media/run-ui-flow/05c87e0bfc4e994c00fc1ad253c17749.png)
 
-1. You can bind each input with previous steps of the Flow by selecting an
-    input from the token picker
+1. You can bind each input with previous steps of the Flow by selecting an input from the token picker
 
    ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
 
 1. You can also bind outputs of you UI flow with inputs of next steps.
 
-![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
+   ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
 
 ## Limitations and known issues
 
--   Gateway clusters are unsupported
+-   Gateway clusters are not supported.
 
 -   Playback of an input step where the key sequence was recorded from a non US
     (QWERTY) keyboard will result in key strokes in US (QWERTY).
 
-## Next steps
 
