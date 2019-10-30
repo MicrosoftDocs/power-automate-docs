@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # FAQ for regions in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 This document provides a list of frequently asked questions about Microsoft Flow.
 
 ## How do I find out where my flow is deployed?

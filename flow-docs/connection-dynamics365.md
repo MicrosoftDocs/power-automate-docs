@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow by using Dynamics 365 (online)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
 In Microsoft Flow, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Microsoft Flow](getting-started.md).

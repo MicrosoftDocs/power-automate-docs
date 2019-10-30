@@ -20,6 +20,7 @@ search.audienceType:
   - enduser
 ---
 # Use actions
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Actions open a range of possibilities for composing business logic. With Actions, you can perform operations, such as Create, Update, Delete, Assign, or Perform Action. Internally, an action creates a custom message. Developers refer to these actions as ”messages”. Each of these messages is based on actions taken on an entity record. If the goal of a process is to create a record, then update it, and then assign it, there are three separate steps. Each step is defined by the capabilities of the entity – not necessarily your business process.  
   

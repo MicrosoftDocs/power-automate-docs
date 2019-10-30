@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Preview: Introduction to UI flows
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
 

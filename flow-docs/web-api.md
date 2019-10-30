@@ -10,10 +10,10 @@ ms.service: business-applications
 ms.technology: 
 ms.author: stepsic
 audience: Power user
-
 ---
 
 # Microsoft Flow Web API
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 

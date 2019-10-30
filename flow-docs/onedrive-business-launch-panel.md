@@ -24,6 +24,7 @@ search.audienceType:
 
 
 # Create flows from the OneDrive for Business launch panel
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Similar to the Microsoft Flow [Launch Panel in SharePoint](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), you can run flows on specific files in OneDrive for Business. 
 

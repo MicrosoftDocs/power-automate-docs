@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -19,6 +18,7 @@ ms.author: deonhe
 ---
 
 # Microsoft Flow mobile app supports Microsoft Intune
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The Microsoft Flow mobile app for iOS and Android supports Intune's Mobile Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
 
