@@ -27,32 +27,34 @@ search.audienceType:
 
 [This topic is pre-release documentation and is subject to change.]
 
-
+After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows (preview)** tab.
 
 ## List of UI flows
 
-You can manage your UI flows on the **UI flows (preview)** tab of **My flows**.
+1. Sign into Microsoft Flow.
+1. Select **My flows** > **UI flows (preview)**.
 
-![](../media/manage-ui-flows/71580bf4e2057f98bceb715eb0098771.png)
+   ![View all UI flows](../media/manage-ui-flows/view-all.png "View all UI flows")
 
-From this section, you can create a new UI flow and edit or delete all your
-existing UI flows (web and desktop)
-
-![](../media/manage-ui-flows/096f65478c34e94e02bf0ab56bcdb598.png)
+From this section, you can create a new UI flow and edit or delete your existing UI flows.
 
 ## Details page
 
-![](../media/manage-ui-flows/dcc6b542e35a62ccc9ad6b3e335a8ae0.png)
+For each of your UI flows, you can see its details by selecting its name from the list of UI flows. You then see details including:
 
-For each of your UI flows, you can see its details by clicking on its name from
-the list of UI flows.
+-   The run history with details of each run.
+-   The applications or Websites used in the UI flow.
 
--   the details of your UI flow
+Follow these steps to see the details for a UI flow:
 
--   The run history with details
+1. Sign into Microsoft Flow.
+1. Select **My flows** > **UI flows (preview)**.
+1. Select any of your UI flows.
 
--   the applications or websites used in the UI flow.
+   ![View details](../media/manage-ui-flows/view-details.png "View details")
 
+## Learn more
 
-## Next steps
-
+- Learn to [create desktop UI flows](create-desktop.md).
+- Learn to [create Web UI flows](create-web.md).
+- Learn how to run [UI flows](run-ui-flow.md).
