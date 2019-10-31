@@ -29,10 +29,7 @@ search.audienceType:
 
 ## Introduction
 
-UI flows provides a quick and easy way to automate user interface actions (clicks, keyboard input, etc.) applications that don't have simple, easy-to-use, or complete APIs availabe. You can use UI flows to automate user interface actions in Windows and Web applications. 
-
-APIs are not available, incomplete or too complex to use. UI flows records your actions on the User Interface
-of an application or website. 
+UI flows provides Robotic Process Automation (RPA) to Microsoft Flow. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and playbacks user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 >[!IMPORTANT]
 > - This is a preview feature.
@@ -41,8 +38,6 @@ of an application or website.
 <!--todo: thie overview seems repetitive with the Intro section-->
 
 <!--## UI flows overview
-
-UI flows bring Robotic Process Automation to Microsoft Flow. You now can automate repetitive tasks performed through the user interface of Windows or Web apps. UI flows enables recording and automated replay of your actions such as mouse clicks, keyboard inputs, copy, paste, and more.
 
 You will find your UI flows alongside Automated, Button, Scheduled and Business Process flows in **My flows** tab. -->
 
