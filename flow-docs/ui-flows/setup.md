@@ -81,7 +81,7 @@ Install the following components to create and run UI flows:
 |   | [Selenium IDE](https://go.microsoft.com/fwlink/?linkid=2107665) | Record and playback Web applications                                 |  |
 |   | [Gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)                              | Used to enable events, scheduled flows, or button flows to connect to, trigger your UI flows (running inside your organization), and run them.              |  |
 
-## Run the UI flows app
+## Install the UI flows app
 
 The UI flows installer contains all the components needed to record, edit and test UI flows.
 
