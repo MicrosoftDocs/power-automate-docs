@@ -134,13 +134,13 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 ## Use inputs and outputs
 
-Once you defined inputs and outputs within a UI flow, you can pass information from and to them.
+When you define inputs and outputs within a UI flow, you can pass information from and to those inputs.
 
-1. When you add a UI flow in a flow, you can see the list of inputs that have defined during the creation phase
+1. When you add a UI flow to a flow, you can see the list of inputs that were defined in the UI flow.
 
    ![](../media/run-ui-flow/05c87e0bfc4e994c00fc1ad253c17749.png)
 
-1. You can bind each input with previous steps of the Flow by selecting an input from the token picker
+1. You can bind each input from the UI flow with previous steps in the flow by selecting an input from the token picker.
 
    ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
 
@@ -151,7 +151,7 @@ Once you defined inputs and outputs within a UI flow, you can pass information f
 ## Limitations and known issues
 
 - Gateway clusters are not supported.
-- Playback of an input step where the key sequence was recorded from a non US
+- Playback of an input step where the key sequence was recorded from a non US 
     (QWERTY) keyboard will result in key strokes in US (QWERTY).
 
 ## Learn more
