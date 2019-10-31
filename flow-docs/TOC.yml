@@ -70,7 +70,7 @@
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
-  - name: Setup UI flows
+  - name: Set up UI flows
     href: ./ui-flows/setup.md
   - name: Create and test desktop UI flows
     href: ./ui-flows/create-desktop.md

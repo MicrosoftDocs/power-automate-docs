@@ -1,6 +1,6 @@
 ---
-title: Setup UI flows on your device | Microsoft Docs
-description: Setup UI flows on your device
+title: Set up UI flows on your device | Microsoft Docs
+description: Set up UI flows on your device
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Setup UI flows
+# Set up UI flows
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
@@ -156,7 +156,7 @@ The gateway is not required if you only want to create, edit and test your UI fl
 You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md/#types-of-flows)
 
 <!--todo: confirm that -->
-The gateway setup is covered in the following section: [install the On-premises data Gateway](../gateway-reference.md/#use-a-gateway)
+The gateway set up is covered in the following section: [install the On-premises data Gateway](../gateway-reference.md/#use-a-gateway)
 
 ### Uninstall UI flows
 
