@@ -31,7 +31,7 @@ After you've created and tested a UI flow, you can run it from an event, schedul
 
 ## Prerequisites
 
-You need the the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the UI flow triggered by Microsoft Flow.
+You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the UI flow triggered by Microsoft Flow.
 
 The gateway is an enterprise-grade secure connection between Microsoft Flow and your device (where your UI flow runs). Microsoft Flow uses the gateway access your on-premises device to trigger your UI flows from an event, schedule or button.
 
