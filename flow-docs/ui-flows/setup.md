@@ -50,8 +50,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-UI flows (preview) is available in the English language and requires a US (QWERTY)
-keyboard.
+UI flows (preview) is available in English.
 
 The following are not supported:
 
@@ -68,6 +67,8 @@ The following are not supported:
     -   User session information (e.g.: cookies) will not be reused during
         playback. You will have to edit the script to embed sign in information
         when required by websites.
+
+UI flows is a preview feature and additional limitations are covered at the bottom of each section of the documentation.
 
 ## Get your device ready
 
