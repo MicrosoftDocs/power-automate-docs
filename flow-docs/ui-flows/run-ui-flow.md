@@ -95,29 +95,31 @@ In this example we will use an automated flow to trigger a UI flow when a new em
    >[!TIP]
    >You can choose any other type of flow to suit your needs.
 
-1. Give your flow a name and then choose a service for which you have an account,  such as Outlook.com, Microsoft Teams, or Gmail. In this example we will use **When a new email arrives** from Office 365 Outlook.  
+1. Give your flow a name in the **Flow name** box.
+1. Search for "new email", and then select **When a new email arrives (V3)** from the list of triggers. 
     
-    ![](../media/run-ui-flow/2d4ec17d239169a46905cef1829fa3a1.png)
+   ![Select a trigger](../media/run-ui-flow/2d4ec17d239169a46905cef1829fa3a1.png "Select a trigger")
 
-1. Select **Create**, and then select **Add a new step**.
+1. Select **Create**, and then select **New step**.
 
-1. Search for **UI flows** and then select it. 
+1. Search for **UI flows**, and then select **Execute Desktop UI flow** from the list of **Actions**. 
   
-    ![](../media/run-ui-flow/949b72d28a1233a7c76b7fe92ac50c11.png)
+   <!--![](../media/run-ui-flow/949b72d28a1233a7c76b7fe92ac50c11.png) -->
 
-1. Select **Run a UI flow for desktop (preview)** or **Run a UI flow for web (preview)**.
+    <!-- todo: I see above text in tip 1. Is it different in prod? -->
+    <!-- 1. Select **Run a UI flow for desktop (preview)** or **Run a UI flow for web (preview)**. -->
 
-     ![](../media/run-ui-flow/4e66da4e12a1235d06d94f00b806793e.png)
+   ![](../media/run-ui-flow/4e66da4e12a1235d06d94f00b806793e.png)
 
-1. Provide the gateway information and device credentials. You will only have to do this once per device:
+1. Provide the gateway information and device credentials. 
 
-    -  **Connection name**: choose a name for the device to Flow connection. It can be  different than the Gateway name.
+   You will only have to do this once per device:
 
-    -  **Username**: provide your device’s work or school account on your device.
-
-    -  **Password**: your work or school account’s password.
-
-    -  **Gateway**: select the gateway that you created during the installation.
+    - **Connection name**: choose a name for the device to Flow connection. It can be different than the Gateway name.
+    - **Username**: provide your device’s work or school account on your device.
+    - **Authentication type**: select Windows.
+    - **Password**: your work or school account’s password.
+    - **Gateway**: select the gateway that you created during the installation.
 
       ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
 
@@ -144,7 +146,7 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
    ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
 
-1. You can also bind outputs of you UI flow with inputs of next steps.
+1. You can also bind outputs of your UI flow with inputs of next steps.
 
    ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
 
