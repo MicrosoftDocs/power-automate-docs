@@ -127,7 +127,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
    ![Select UI flow](../media/run-ui-flow/select-ui-flow.png "Select UI flow")
 
-1. Save your automated flow.
+1. Select **Save** to save your automated flow.
 
 1. Test your flow by sending an email to trigger it. You will see your UI flow  playing back the steps you recorded. 
 
@@ -146,17 +146,17 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can populate each input field in the UI flow with values from previous steps in the flow. To do this, select the input field, and then select an input from the token picker.
 
-   ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
+   <!--todo: add image here-->
 
-1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow..
+1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
-   ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
+   <!--todo: add image here-->
 
 ## Limitations and known issues
 
 - Gateway clusters are not supported.
-- Playback of an input step where the key sequence was recorded from a non US 
-    (QWERTY) keyboard will result in key strokes in US (QWERTY).
+- Since non US 
+    (QWERTY) keyboards are not supported in this realease, playback of an input step where the key sequence was recorded from a non US (QWERTY) keyboard will result in key strokes in US (QWERTY).
 
 ## Learn more
 
