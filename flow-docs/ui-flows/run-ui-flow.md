@@ -158,6 +158,6 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 ## Learn more
 
- - How to install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
+ - Install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
  - [Use the on-premises data gateway app](https://docs.microsoft.com/flow/gateway-manage) documentation.
-- [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+ - [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
