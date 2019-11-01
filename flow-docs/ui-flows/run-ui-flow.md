@@ -102,34 +102,36 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 1. Select **Create**, and then select **New step**.
 
-1. Search for **UI flows**, and then select **Execute Desktop UI flow** from the list of **Actions**. 
-  
-   <!--![](../media/run-ui-flow/949b72d28a1233a7c76b7fe92ac50c11.png) -->
+1. Search for **UI flows**, and then select **Run a UI flow for desktop** from the list of **Actions**. 
 
-    <!-- todo: I see above text in tip 1. Is it different in prod? -->
-    <!-- 1. Select **Run a UI flow for desktop (preview)** or **Run a UI flow for web (preview)**. -->
-
-   ![](../media/run-ui-flow/4e66da4e12a1235d06d94f00b806793e.png)
+   ![Search action](../media/run-ui-flow/search-action.png "Search action")
 
 1. Provide the gateway information and device credentials. 
 
-   You will only have to do this once per device:
+   You'll have to do this once per device:
 
-    - **Connection name**: choose a name for the device to Flow connection. It can be different than the Gateway name.
-    - **Username**: provide your device’s work or school account on your device.
-    - **Authentication type**: select Windows.
-    - **Password**: your work or school account’s password.
-    - **Gateway**: select the gateway that you created during the installation.
+    - **Connection name**: Choose a name for the device to Flow connection. It can be different than the gateway name.
+    - **Username**: Provide your device’s work or school account.
+    - **Authentication type**: Select Windows.
+    - **Password**: Your work or school account’s password.
+    - **Gateway**: Select the gateway that you created during the installation.
 
-      ![](../media/run-ui-flow/f253eebbddcc90c7d2c65c4d2523ec14.png)
+      ![Connection settings](../media/run-ui-flow/connection-settings.png "Connection settings")
+
+      >[!TIP]
+      >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop (preview)** card, and then select the connection you want to use from **My connections**.
+
+      ![Select a new connection](../media/run-ui-flow/select-new-connection.png "Select a new connection")
 
 1. Select the UI flow that you previously created.
 
-   ![](../media/run-ui-flow/a00455ae03a71ea477cfa32a632896f0.png)
+   ![Select UI flow](../media/run-ui-flow/select-ui-flow.png "Select UI flow")
 
 1. Save your automated flow.
 
 1. Test your flow by sending an email to trigger it. You will see your UI flow  playing back the steps you recorded. 
+
+![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
 
 >[!TIP]
 >Do not interact with your device while the flow runs.
@@ -140,13 +142,13 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. When you add a UI flow to a flow, you can see the list of inputs that were defined in the UI flow.
 
-   ![](../media/run-ui-flow/05c87e0bfc4e994c00fc1ad253c17749.png)
+   ![UI flow inputs](../media/run-ui-flow/inputs.png "UI flow inputs")
 
-1. You can bind each input from the UI flow with previous steps in the flow by selecting an input from the token picker.
+1. You can populate each input field in the UI flow with values from previous steps in the flow. To do this, select the input field, and then select an input from the token picker.
 
    ![](../media/run-ui-flow/7b2d9c3d9a9ad3bbb8a612497e484aa7.png)
 
-1. You can also bind outputs of your UI flow with inputs of next steps.
+1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow..
 
    ![](../media/run-ui-flow/d0c4bd1796298d1ea694cb381a0a26db.png)
 
