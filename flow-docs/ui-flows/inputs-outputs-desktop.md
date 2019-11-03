@@ -64,7 +64,7 @@ For example, you can use customer information from a SharePoint list as a source
 
    ![](../media/inputs-outputs-desktop/de36baa0f85d5a19304e1606de25aa3e.png)
 
-1. Select the location where you want to use the input. The sample value you defined is  automatically used. In the below example “Hello world” is the sample value for the input name “My input” and is added to the page within Microsoft Word.  
+1. Select the location where you want to use the input. The sample value you defined is automatically used. In the below example “Hello world” is the sample value for the input name “My input” and is added to the page within Microsoft Word.  
     
     ![](../media/inputs-outputs-desktop/d6b74dc86f38c51cf1daa0582ff0cc33.png)
 

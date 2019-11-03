@@ -53,14 +53,21 @@ To be able to use UI flows you need the following:
 -   An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
 
 
+## Best practices
+
+- When possible, use keyboard entry instead of using the mouse. This increases the reliability of playback.
+- Always bring the windows you are recording into the foreground. For example, when composing a new email from Outlook, select the new email window prior to starting keyboard input.
+- Before you start recording, do a dry run of your steps so that recording is faster and more efficient.
+- Do test your recording to confirm all steps were captured correctly.
+
 ## Create a desktop UI flow
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
 
-1. Ensure your [device is ready]() to create UI flows. <!--Todo: link to the prereqs section-->
+1. Ensure your [device is ready](setup.md/#get-your-device-ready) to create UI flows. 
 1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in with a work or school email account.
 
-1. Select  **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows (preview)** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
@@ -98,15 +105,11 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
     ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
 
-     <!--todo Is this really necessary?-->
-     >[!NOTE] 
-     >Unsupported apps will be blocked so that you don’t unintentionally record them.
-
 1. Select **Done** on the recorder control after you complete the actions you want to record.
 
 1. Close the app that you recorded.
 
-1. Select the card that starts with "Run <app name> script" to view  screenshots of the recorded steps.
+1. Select the card that starts with "Run <app name> script" to view screenshots of the recorded steps.
 
      >[!TIP]
      >Select **...** > **Delete** to remove any extra steps that you may want to remove.
@@ -129,7 +132,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 ## Known issues and solutions
 
-- Open and maximize the apps your want to record before *before* you start recording.
+- Open and maximize the apps you want to record before *before* you start recording.
 
 - Add a **Close** action at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
@@ -137,8 +140,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
-<!--Todo: link to uninstall instructions-->
-If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version and then install a new version.
+If UI flows no longer records or plays back Windows applications after installing a new version, [uninstall](setup.md/#uninstall-ui-flows) the previous version and then install a new version.
 
 ### Unsupported application types
 
@@ -177,7 +179,7 @@ If UI flows no longer records or plays back Windows applications after installin
 
 -   Concurrent playback sessions on a given device. In case of simultaneous UI
     flow runs, the first one takes precedence and the subsequent ones 
-    fail until the first one  completes.
+    fail until the first one completes.
 
 -   Playback on a device with a different keyboard layout than the device on which it was recorded.
 

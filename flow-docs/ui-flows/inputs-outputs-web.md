@@ -47,7 +47,7 @@ Please consult [Selenium Commands](https://www.seleniumhq.org/selenium-ide/docs/
 
 ## Define outputs for a Web UI flow
 
-Any variable defined in the selenium script automatically becomes an output value. Variable declaration is usually done via the following commands:
+Any variable defined in the selenium script automatically becomes an output value. Use the following commands to declare variables:
 
 [Store](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/#store)
 
@@ -69,5 +69,5 @@ script)
 
 ## Next steps
 
-- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+- Learn how to [trigger UI flows](run-ui-flow.md).
 
