@@ -80,11 +80,11 @@ Install the following components to create and run UI flows:
 |   | UI flows browser extension           | Record and test desktop Windows applications. Record Web applications. |                                                                                              |
 |   | Webdriver                            | Test and run desktop Windows applications                            |                                                                                              |
 |   | [Selenium IDE](https://go.microsoft.com/fwlink/?linkid=2107665) | Record and playback Web applications                                 |  |
-|   | [Gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)                              | Used to enable events, scheduled flows, or button flows to connect to, trigger your UI flows (running inside your organization), and run them.              |  |
+|   | [Gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)                              | Used to enable events, scheduled flows, or button flows to connect to, trigger your UI flows (running inside your organization), and run them.              |  | 
 
 ## Install the UI flows app
 
-The UI flows installer contains all the components needed to record, edit and test UI flows.
+The UI flows installer contains all the components needed to record, edit, and test UI flows for desktop.
 
 Follow these steps to install the UI flows app:
 
@@ -112,7 +112,7 @@ With UI flows, you can run Selenium IDE scripts from Microsoft Flow and keep the
 
 Follow these steps to install Selenium IDE:
 
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665)  the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
+1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
 
 1. On Microsoft Edge (Chromium), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 

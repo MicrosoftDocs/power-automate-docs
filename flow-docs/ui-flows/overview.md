@@ -39,14 +39,10 @@ UI flows provides Robotic Process Automation (RPA) to Microsoft Flow. You can us
 
 You will find your UI flows alongside automated, button, scheduled and business process flows in **My flows** tab. -->
 
-You can get a [quick start](create-desktop.md) or
-watch a [brief video](https://microsoft.sharepoint.com/:v:/t/PARIS/ERHYhdoIoGZPkDOFOPU-8-kBuC5hLz75cA1VfKkPFnjx6w)
-of how UI flow works with the calculator!  
+You can get a [quick start creating and testing UI flows for desktop](create-desktop.md), [UI flows for Web applications](create-web.md), or watch a [brief video](https://youtu.be/hCuxuUaGC6Y) of how UI flows works!  
 
+<!-- ![UI flows overview](../media/overview-ui-flows/4b8017d4074862ae72aa96bbd60ec476.png "UI flows overview")  -->
 
-![](../media/overview-ui-flows/4b8017d4074862ae72aa96bbd60ec476.png) 
-
-<!--todo: needs tob be updated -->
 
 #### UI flows or API?
 
