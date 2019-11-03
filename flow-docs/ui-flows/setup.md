@@ -23,15 +23,15 @@ search.audienceType:
 ---
 
 # Set up UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
 
-
->[!TIP]
->Before you create a UI flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also build your [own connector](https://docs.microsoft.com/connectors/custom-connectors/).
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
+
+> [!TIP]
+> Before you create a UI flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also build your [own connector](https://docs.microsoft.com/connectors/custom-connectors/).
 
 ## Prerequisites
 
