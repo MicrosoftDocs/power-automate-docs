@@ -27,7 +27,7 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-UI flows provides Robotic Process Automation (RPA) to Microsoft Flow. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+UI flows provides Robotic Process Automation (RPA) capabilities to Microsoft Flow. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 >[!IMPORTANT]
 > - This is a preview feature.
@@ -41,7 +41,7 @@ You can get a [quick start creating and testing UI flows for desktop](create-des
 
 #### UI flows or API?
 
-With Microsoft Flow, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes int a UI flow.
+With Microsoft Flow, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes in a single automation.
 
 | **Application type**      | **Microsoft Flow feature** | **Benefits**     |
 |---------------------------|----------------------------|------------------|
