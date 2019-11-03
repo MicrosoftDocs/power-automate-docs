@@ -68,7 +68,7 @@ The following are not supported:
         playback. You will have to edit the script to embed sign in information
         when required by websites.
 
-UI flows is a preview feature and additional limitations are covered at the bottom of each section of the documentation.
+You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Get your device ready
 
