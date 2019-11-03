@@ -158,7 +158,7 @@ Here is an example of what the **elemementStack** might look like.
 <!-- **CAP only** -->
 
 You can capture the **elementXPath** using the [WinAppDriver UI
-Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/.
+Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/).
 
 ![WAD tool](../media/edit-desktop/wad-tool.png "WAD tool")
 
