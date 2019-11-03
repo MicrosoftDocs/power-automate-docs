@@ -156,7 +156,9 @@ If UI flows no longer records or plays back Windows applications after installin
 
 -   Applications with a Web view such as Electron applications.
 
--   Office 2016 and earlier.
+-   Microsoft Office 2016 and earlier. 
+
+-   Microsoft Office online.
 
 ### Unsupported configurations
 
@@ -203,6 +205,11 @@ The following actions will not be recorded:
 -   Open app before recording.
 
 -   Closed app before playback starts.
+
+## Unreliable behaviors and workarounds for Microsoft Office (desktop)
+- Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
+- Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
+- Some elements may not work correctly in UI flows (preview) for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
 
 ## Next steps
 
