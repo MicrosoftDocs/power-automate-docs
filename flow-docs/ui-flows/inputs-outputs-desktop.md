@@ -23,11 +23,10 @@ search.audienceType:
 ---
 
 # Use inputs and outputs in desktop UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
 
 [This topic is pre-release documentation and is subject to change.]
 
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 ## Define inputs
 

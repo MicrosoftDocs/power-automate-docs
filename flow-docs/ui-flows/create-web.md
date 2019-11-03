@@ -21,10 +21,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create your first Web UI flow
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+# Create and test your Web UI flows
 
 [This topic is pre-release documentation and is subject to change.]
+
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Follow these steps to create a simple Web UI flow:
 

@@ -23,9 +23,10 @@ search.audienceType:
 ---
 
 # Manage UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
+
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows (preview)** tab.
 

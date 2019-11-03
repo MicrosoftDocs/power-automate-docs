@@ -22,9 +22,11 @@ search.audienceType:
   - enduser
 ---
 # Edit Web UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
+
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+
 
 Web UI flows automate websites running in the [next version of Microsoft
 Edge](https://www.microsoftedgeinsider.com/) or Google Chrome

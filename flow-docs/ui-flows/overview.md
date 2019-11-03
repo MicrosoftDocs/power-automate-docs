@@ -22,12 +22,10 @@ search.audienceType:
   - enduser
 ---
 # Preview: Introduction to UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
 
-
-## Introduction
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 UI flows provides Robotic Process Automation (RPA) to Microsoft Flow. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
@@ -56,7 +54,7 @@ With Microsoft Flow, you can automate both modern applications with APIs, or leg
 
 ## Next steps
 
+- Learn how to [set up UI flows](setup.md). 
 - Learn more about the [different types of flows](..\getting-started.md#types-of-flows) you can use to automate your workflows.
 
-<!--Todo-->
 

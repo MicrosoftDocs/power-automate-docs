@@ -23,9 +23,11 @@ search.audienceType:
 ---
 
 # Create and test desktop UI flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 [This topic is pre-release documentation and is subject to change.]
+
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+
 
 Create desktop UI flows to automate Windows desktop applications. 
 
