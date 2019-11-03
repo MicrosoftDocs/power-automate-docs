@@ -154,7 +154,9 @@ If UI flows no longer records or plays back Windows applications after installin
 
 -   Applications with a Web view such as Electron applications.
 
--   Office 2016 and earlier.
+-   Microsoft Office 2016 and earlier. 
+
+-   Microsoft Office online.
 
 ### Unsupported configurations
 
@@ -201,6 +203,15 @@ The following actions will not be recorded:
 -   Open app before recording.
 
 -   Closed app before playback starts.
+
+## Unreliable behaviors and workarounds for Microsoft Office (desktop)
+-   Pinning the ribbon when working with ribbon controls such as the ‘Text to Columns’ control on the Data tab in Excel is required to avoid playback issues due to auto-hiding of ribbon controls
+-   Insert chart functionality in Excel is unavailable
+-   Selecting by clicking and dragging using a mouse is not supported. This would include things like:
+-   Selecting cells in Excels by clicking or clicking and shift-clicking in Excel
+-   Selecting text in Word or PowerPoint by dragging moue selection
+-   Some elements may not work correctly in preview for Word and PowerPoint Desktop applications. For instance, File page options such as starting from Blank, or right click controls like adding a new paragraph in Word or changing slide layout in PowerPoint
+
 
 ## Next steps
 
