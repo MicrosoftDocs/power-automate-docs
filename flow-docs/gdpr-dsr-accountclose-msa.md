@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Account Close Requests for Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When users decide to close their Microsoft Account (MSA), the user's underlying data is also deleted.
 
@@ -40,7 +41,7 @@ These resources contain personal data that are automatically deleted when a user
 
 These steps describe how to self-serve Account Close requests for GDPR.
 
-1. Sign into the [Microsoft Account Close Portal](http://go.microsoft.com/fwlink/?LinkId=523898) using your Microsoft Account, and then select **Next**.
+1. Sign into the [Microsoft Account Close Portal](https://go.microsoft.com/fwlink/?LinkId=523898) using your Microsoft Account, and then select **Next**.
 
     > [!NOTE]
     > You're reminded to cancel existing subscriptions or to export data from existing services to which you may have subscribed.

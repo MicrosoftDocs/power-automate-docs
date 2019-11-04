@@ -66,6 +66,28 @@
     href: enhance-business-process-flows-branching.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
+- name: UI flows (Preview)
+  items:
+  - name: Introduction to UI flows
+    href: ./ui-flows/overview.md
+  - name: Set up UI flows
+    href: ./ui-flows/setup.md
+  - name: Create and test desktop UI flows
+    href: ./ui-flows/create-desktop.md
+  - name: Edit desktop UI flows
+    href: ./ui-flows/edit-desktop.md
+  - name: Use inputs and outputs in desktop UI flows
+    href: ./ui-flows/inputs-outputs-desktop.md
+  - name: Create and test Web UI flows
+    href: ./ui-flows/create-web.md
+  - name: Edit Web UI flows
+    href: ./ui-flows/edit-web.md
+  - name: Use inputs and outputs in Web UI flows
+    href: ./ui-flows/inputs-outputs-web.md
+  - name: Run UI flows
+    href: ./ui-flows/run-ui-flow.md
+  - name: Manage UI flows
+    href: ./ui-flows/manage.md
 - name: Solutions
   items:
   - name: Overview

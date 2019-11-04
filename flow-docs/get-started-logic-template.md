@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow from a template in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
 **Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.

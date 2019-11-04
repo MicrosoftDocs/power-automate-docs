@@ -17,6 +17,7 @@ search.audienceType:
 ---
 
 # Microsoft Flow US Government
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Flow US Government plans. This section provides an overview of features that are specific to Microsoft Flow US Government. We recommend that you read this supplementary section as well as the Microsoft Flow service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as *Flow GCC*.
 

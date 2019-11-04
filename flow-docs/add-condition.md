@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Add a condition to a flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Specify that a flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 

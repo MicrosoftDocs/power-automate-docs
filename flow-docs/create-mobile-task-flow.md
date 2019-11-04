@@ -23,6 +23,7 @@ search.audienceType:
   - enduser
 ---
 # Create a mobile task flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Design a flow in Dynamics 365 for phones or Dynamics 365 for tablets based on common tasks your users perform. For example, if they need to regularly perform a series of follow-up steps after client meetings, create a task flow. When users tap the new task in their mobile app, it will lead them through from start to finish so they don't forget an important step.  
   

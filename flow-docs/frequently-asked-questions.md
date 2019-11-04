@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Frequently asked questions
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## Audience and strategy
 ### What is Microsoft Flow?
 Microsoft Flow is a cloud-based service that makes it practical and simple for line-of-business users to build workflows that automate time-consuming business tasks and processes across applications and services.
