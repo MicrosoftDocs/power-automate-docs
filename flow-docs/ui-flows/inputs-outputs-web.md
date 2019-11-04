@@ -31,19 +31,17 @@ search.audienceType:
 
 Inputs of a UI flow let you pass information from an external source such as a database or another UI flow to the target legacy software that you will automate.
 
-Any variable that is used (read) before initialization (usually done via **store** commands) will be automatically treated as input variable and it will be displayed on the "Run a UI Flow for web" action card.
+Any variable that is used (read) before initialization (usually done via **store** commands) will be automatically treated as an input variable and it will be displayed on the **Run a UI Flow for web** action card.
 
-You can use variable via string interpolation, e.g. change click command's target field to "id=\${elementId}". Or change type command's value field to "\${inputText}".
+You can use variables via string interpolation, for example, change the click command's target field to "id=\${elementId}". Or change the type command's value field to "\${inputText}".
 
-For example, the command “set window size” and command “type” in the screenshot below uses uninitialized variables \${Width}, \${Height} and \${search}. These variables will become input values.
+The command, **set window size** and the command **type** in the following screenshots use uninitialized variables \${Width}, \${Height}, and \${search}. These variables will become input values.
 
-![](../media/inputs-outputs-web/f05cb445dad212aaf395b66ba969622c.png)
+![Set window size and type](../media/inputs-outputs-web/f05cb445dad212aaf395b66ba969622c.png "Set window size and type")
 
-![](../media/inputs-outputs-web/0cf0cf2146763ebb56fe5864938fea65.png)
+You can use variables directly in some commands, for example, forEach command's target/value fields are both variables, you don't need to surround it with "\${}".
 
-You can use variable directly in some commands, e.g. forEach command's target/value fields are both variables, you don't need \${} around it.
-
-Please consult [Selenium Commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) reference to determine which commands takes variable name directly.
+Please consult [Selenium commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) reference to determine which commands take variable name directly.
 
 ## Define outputs for a Web UI flow
 
@@ -63,11 +61,11 @@ Any variable defined in the selenium script automatically becomes an output valu
 
 [Store xpath count](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/#store-xpath-count)
 
-[Execute script](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/#execute-script)
-(add 'return' syntax to return the object you want to store at the end of the
+[Execute script](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/#execute-script)(add 'return' syntax to return the object you want to store at the end of the
 script)
 
 ## Next steps
 
+- Learn how to [create Web UI flows](create-web.md).
 - Learn how to [trigger UI flows](run-ui-flow.md).
 
