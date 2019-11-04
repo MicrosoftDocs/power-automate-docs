@@ -94,31 +94,30 @@ Now that you've created a Web UI flow, use it in your other flows.
 
 You need to uninstall the previous version before installing a new one.
 
-For that, open the Start menu, go to “Settings”, then “Apps & features”, search for “RPA” in the list of apps, select "Microsoft Flow RPA" and click "Uninstall". The uninstaller wizard will guide you through the uninstallation.
+For that, open the Start menu, go to **Settings** > **Apps**, search for **UI flows** in the list of apps > **UI flows (Preview)**, and then select "Uninstall". The wizard will guide you through the process.
 
 **Temporary user profile for playback**
 
-Selenium IDE recordings are done with current user's profile, but playback is done using a temporary user profile. This means that websites that need authentication may not ask for credentials during a recording session, but the authentication steps will be needed during playback. 
+Selenium IDE recordings are done with the current user's profile, but playback is done using a temporary user profile. This means that websites that need authentication may not ask for credentials during a recording session, but the authentication steps will be needed during playback. 
 
 To address this, the user needs to manually edit the script to insert the commands needed for the login process.
 
 **Other limitations**
 
--   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create two separate UI flows for each type and combine them in a flow.
+-   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flows for each type and then combine them in a flow.
 
--   Multi-Factor Authentication (MFA) is not supported, please use a tenant that doesn't require MFA.
+-   Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
 
 -   These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
 -   Right click is not supported. 
 
--   Additional Web UI flow input is generated when you use Foreach commands.
-    To work around this issue, input any value into the extra fields. It doesn't impact the playback.
+-   Additional Web UI flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
 
--   If the .side file contains multiple test projects, only the first one that was created is runs. 
+-   If the .side file contains multiple test projects, only the first one that was created runs. 
 
      >[!TIP]
-     >Note that Selenium IDE orders the tests by name, not by creation date, so the first created may not be the first one in the list.
+     >Note that the Selenium IDE orders the tests by name, not by creation date, so the first test created may not be the first one in the list.
 
 -   Playback directly in the Selenium IDE might not behave as intended. However, playback at runtime through the UI flow infrastructure behaves correctly.
 
