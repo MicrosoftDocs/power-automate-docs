@@ -28,28 +28,28 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 
-Web UI flows automate websites running in the [next version of Microsoft
-Edge](https://www.microsoftedgeinsider.com/) or Google Chrome
-
-## Record your actions on the Web
-
-Recording is documented in the [quick start for creating Web UI flows](create-web.md).
+Web UI flows automate websites running in the [next version of Microsoft Edge](https://www.microsoftedgeinsider.com/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Web UI flows.
 
 ## Edit in Selenium IDE
 
-Edition is done in Selenium IDE. Edition in Selenium IDE is aimed at advanced users and developers.
+Use the Selenium IDE to edit your Web UI flows.
 
-You can refer to the [Selenium Commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) to edit the script.
+>[!NOTE]
+>Editing in the Selenium IDE is aimed at advanced users and developers.
 
-Selenium IDE will suggest different selectors and a default one when targeting a User Interface element. You can also define a new selector if none of the proposed selectors are appropriate. This usually happens when the website’s HTML structure is highly dynamic.
+You can refer to the [Selenium Commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) to learn how to edit the script.
 
-Below is an example of possible selectors that Selenium IDE identified:
+The Selenium IDE suggests different selectors and a default one when targeting a user interface element. You can also define a new selector if none of the proposed selectors are appropriate. This usually happens when the website’s HTML structure is highly dynamic.
 
-![](../media/edit-web/33cb0d934dcf386163edcb1ef2fe8310.png)
+Here is an example of possible selectors that the Selenium IDE identified:
+
+![Possible selectors](../media/edit-web/possible-selectors.png "Possible selectors")
 
 ## Accessing a property of an object variable or item of an array variable**
 
-This advanced capability lets you use syntax like \${foo.bar} to access the bar property of the foo object. You can also write to the bar property of foo by using foo.bar as the value property in a store commands. You can also use syntax such as \${foo[0]} to access the item in specific index of foo array.
+This advanced capability lets you use syntax like \${foo.bar} to access the bar property of the foo object. You can also write to the bar property of foo by using foo.bar as the value property in a store command. You can also use syntax such as \${foo[0]} to access the item at index 0 in the foo array.
 
 ## Next steps
 
+- [Create Web UI flows](create-web.md)
+- [Run UI flows](run-ui-flows.md)
