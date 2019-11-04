@@ -32,7 +32,7 @@ Follow these steps to create a simple Web UI flow:
 ## Create a Web UI flow
 
 1. Open the [next version of Microsoft
-   Edge](https://www.microsoftedgeinsider.com/) or Google Chrome, and then navigate to [Microsoft Flow](https://flow.microsoft.com/).
+   Edge](https://www.microsoftedgeinsider.com/) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
 
 1. Sign in with your work or school account if needed.
 

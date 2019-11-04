@@ -68,7 +68,7 @@ For example, you can use customer information from a SharePoint list as a source
     
     ![](../media/inputs-outputs-desktop/d6b74dc86f38c51cf1daa0582ff0cc33.png)
 
-1. In Microsoft Flows’ **Record and edit steps**, expand actions that use inputs to view which one as selected.
+1. In Power Automate **Record and edit steps**, expand actions that use inputs to view which one as selected.
 
    ![](../media/inputs-outputs-desktop/340aa71942b618431b0455b632f76f52.png)
 

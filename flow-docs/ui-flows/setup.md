@@ -35,9 +35,9 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Prerequisites
 
-- Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) Microsoft Flow plan.
+- Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) Power Automate plan.
 
-- A work or school account to sign into both Microsoft Flow and your Windows device.
+- A work or school account to sign into both Power Automate and your Windows device.
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
 - A US (QWERTY) keyboard attached.
@@ -110,7 +110,7 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
-With UI flows, you can run Selenium IDE scripts from Microsoft Flow and keep them stored securely (with appropriate IT governance) in Common Data Service.
+With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Common Data Service.
 
 Follow these steps to install Selenium IDE:
 

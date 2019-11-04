@@ -54,7 +54,7 @@ Advanced parameters let you change:
 
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows(preview)**.
 1. Select the UI flow that you want to edit.
    ![](../media/edit-desktop/select-ui-flow.png)
@@ -106,7 +106,7 @@ any of the following actions for that application.
 
 Follow these steps to add a manual action:
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows(preview)**.
 1. Select the UI flow that you want to edit.
    ![](../media/edit-desktop/select-ui-flow.png)
