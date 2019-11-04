@@ -27,13 +27,17 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
+<br>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/bZrrdoytTH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 UI flows provides Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
 
-Get started by watching a [brief video](https://www.youtube.com/watch?v=bZrrdoytTH0) of how UI flows works. You can also jump right in: 
+You can jump right in:
+
 - [Create and test UI flows for desktop](create-desktop.md) 
 - [Create and test UI flows for Web applications](create-web.md)  
 
@@ -47,7 +51,7 @@ With Power Automate, you can automate both modern applications with APIs, or leg
 | Legacy apps (no APIs)          | UI Flow                    | Easy to create   |
 
 
-You will find your UI flows alongside automated, button, scheduled and business process flows in **My flows** tab.
+You will find your UI flows alongside automated, button, scheduled, and business process flows in the **My flows** tab.
 
 ## Next steps
 
