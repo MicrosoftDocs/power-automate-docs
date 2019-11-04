@@ -26,7 +26,7 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-
+<br>
 <iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Welcome! Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
