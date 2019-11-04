@@ -36,11 +36,11 @@ Follow these steps to create a simple Web UI flow:
 
 1. Sign in with your work or school account if needed.
 
-1. Select  **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows (preview)** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
-1. Select **Web app**  > **Next**
+1. Select **Web app** > **Next**
     
    ![Select Web app](../media/create-web-ui-flow/select-web-app.png "Select Web app")
 
@@ -98,13 +98,13 @@ For that, open the Start menu, go to “Settings”, then “Apps & features”,
 
 **Temporary user profile for playback**
 
-Selenium IDE recordings are done with current user's profile, but playback is done using a temporary user profile. This means that websites that need authentication may not ask for credentials during a recording session, but the authentication steps will be needed during playback. 
+Selenium IDE recordings are done with current user's profile, but playback is done using a temporary user profile. This means that websites that need authentication may not ask for credentials during a recording session, but the authentication steps will be needed during playback. 
 
 To address this, the user needs to manually edit the script to insert the commands needed for the login process.
 
 **Other limitations**
 
--   Recording desktop applications during a Web recording session . If you need to automate both Web and Desktop applications, you can create two separate UI flows for each type and combine them in a flow.
+-   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create two separate UI flows for each type and combine them in a flow.
 
 -   Multi-Factor Authentication (MFA) is not supported, please use a tenant that doesn't require MFA.
 
@@ -113,7 +113,7 @@ To address this, the user needs to manually edit the script to insert the comman
 -   Right click is not supported. 
 
 -   Additional Web UI flow input is generated when you use Foreach commands.
-    To workaround this issue, input any value into the extra fields. It doesn't impact the playback.
+    To work around this issue, input any value into the extra fields. It doesn't impact the playback.
 
 -   If the .side file contains multiple test projects, only the first one that was created is runs. 
 
@@ -124,7 +124,6 @@ To address this, the user needs to manually edit the script to insert the comman
 
 ## Next steps
 
-<!--Todo: fix links-->
 - Learn how to [run UI flows](run-ui-flow.md).
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.

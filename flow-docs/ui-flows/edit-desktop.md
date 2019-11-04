@@ -47,7 +47,7 @@ You can edit your recording to:
 
 Advanced parameters let you change:
 
--  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn't  complete before the next step of your UI flow.
+-  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
 ## Add a recording
@@ -84,7 +84,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 1. Select **Record** from the recorder control.
 
-1. Perform the steps in the user interface of the app your are recording, and then select **Done** on the recorder control.
+1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
 1. Select **Save**, and then test your UI flow.
 
 ## Add a manual action
@@ -101,7 +101,7 @@ any of the following actions for that application.
 | Get text            | Read the text from a user interface element and then use it as an output. |
 | Enter text          |                                                                   |
 | Get element enabled | Check if a user interface element is enabled or disabled.         |
-| Clear element       | Clear the value in an editable user interface element.             |
+| Clear element       | Clear the value in an editable user interface element.             |
 | Wait for seconds    | Wait before continuing to the next step.                           |
 
 Follow these steps to add a manual action:
@@ -132,8 +132,6 @@ advanced options.
 
 The selector identifies the user interface element onto which the action is performed during playback. We recommend that you copy/paste this information from a separate step targeting the same user interface element, if possible.
 
-<!-- ![](../media/edit-desktop/c31b48dd5877db03d809c748a43a98ed.png) --> 
-
 The format of the selector is:
 
 ```json
@@ -154,11 +152,8 @@ Here is an example of what the **elemementStack** might look like.
 
 ![Element stack](../media/edit-desktop/elementstack.png "Element stack")
 
-<!--todo-->
-<!-- **CAP only** -->
-
 You can capture the **elementXPath** using the [WinAppDriver UI
-Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/.
+Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/).
 
 ![WAD tool](../media/edit-desktop/wad-tool.png "WAD tool")
 
@@ -171,9 +166,4 @@ Test your UI flow to confirm that your selector works correctly.
 - Learn how to [run the UI flow](run-ui-flow.md) you just edited.
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
-
-
-
-
-
 

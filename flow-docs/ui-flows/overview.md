@@ -33,9 +33,6 @@ UI flows provides Robotic Process Automation (RPA) capabilities to Microsoft Flo
 > - This is a preview feature.
 > - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
 
-<!--## UI flows overview
-
-You will find your UI flows alongside automated, button, scheduled and business process flows in **My flows** tab. -->
 
 You can get a [quick start creating and testing UI flows for desktop](create-desktop.md), [UI flows for Web applications](create-web.md), or watch a [brief video](https://youtu.be/hCuxuUaGC6Y) of how UI flows works!  
 
@@ -51,6 +48,8 @@ With Microsoft Flow, you can automate both modern applications with APIs, or leg
 | Modern apps with APIs| Connectors                 | High reliability |
 | Legacy apps (no APIs)          | UI Flow                    | Easy to create   |
 
+
+You will find your UI flows alongside automated, button, scheduled and business process flows in **My flows** tab.
 
 ## Next steps
 

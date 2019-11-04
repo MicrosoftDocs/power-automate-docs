@@ -31,18 +31,21 @@ search.audienceType:
 
 Create desktop UI flows to automate Windows desktop applications. 
 
-Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
+Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
 
 
->[!TIP]
->You can automate other Windows desktop apps by following a similar pattern.
+> [!TIP]
+> You can automate other Windows desktop apps by following a similar pattern.
+
+## Create a desktop UI flow
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
 
 1. Ensure your [device is ready](setup.md) to create UI flows. <!--Todo: link to the prereqs section-->
+
 1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Microsoft Flow](https://flow.microsoft.com), and then sign in with a work or school email account.
 
-1. Select  **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows (preview)** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
@@ -80,15 +83,11 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
     ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
 
-     <!--todo Is this really necessary?-->
-     >[!NOTE] 
-     >Unsupported apps will be blocked so that you don’t unintentionally record them.
-
 1. Select **Done** on the recorder control after you complete the actions you want to record.
 
 1. Close the app that you recorded.
 
-1. Select the card that starts with "Run <app name> script" to view  screenshots of the recorded steps.
+1. Select the card that starts with "Run <app name> script" to view screenshots of the recorded steps.
 
      >[!TIP]
      >Select **...** > **Delete** to remove any extra steps that you may want to remove.
@@ -111,7 +110,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 ## Known issues and solutions
 
-- Open and maximize the apps your want to record before *before* you start recording.
+- Open and maximize the apps you want to record before *before* you start recording.
 
 - You may want to add a [**Close** action](edit-desktop.md#add-a-manual-action) at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
@@ -119,8 +118,8 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
-<!--Todo: link to uninstall instructions-->
 - If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version and then install a new version.
+
 
 ### Unsupported application types
 
@@ -136,7 +135,9 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 -   Applications with a Web view such as Electron applications.
 
--   Office 2016 and earlier.
+-   Microsoft Office 2016 and earlier. 
+
+-   Microsoft Office online.
 
 ### Unsupported configurations
 
@@ -155,7 +156,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 -   Concurrent playback sessions on a given device. In case of simultaneous UI
     flow runs, the first one takes precedence and the subsequent ones 
-    fail until the first one  completes.
+    fail until the first one completes.
 
 -   Playback on a device with a different keyboard layout than the device on which it was recorded.
 
@@ -179,6 +180,11 @@ The following actions will not be recorded:
 -   Open app before recording.
 
 -   Closed app before playback starts.
+
+## Unreliable behaviors and workarounds for Microsoft Office (desktop)
+- Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
+- Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
+- Some elements may not work correctly in UI flows (preview) for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
 
 ## Next steps
 

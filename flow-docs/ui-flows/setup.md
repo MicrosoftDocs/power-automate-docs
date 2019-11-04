@@ -84,25 +84,24 @@ Install the following components to create and run UI flows:
 
 ## Install the UI flows app
 
-The UI flows installer contains all the components needed to record, edit, and test UI flows for desktop.
+The UI flows installer contains all the components needed to record, edit, and test UI flows for desktop. 
+
+>[!IMPORTANT]
+>The UI flows installer installs the Webdriver component and the UI flows browser extension. Both of these are needed to record, test, and run UI flows for desktop.
 
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows app installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after your download it in the previous step.
+1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
 
 ## Activate the UI flows browser extension 
 
 Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
 
-- On Microsoft Edge (Chromium), select each warning icon in the top right  of the browser, and then select **Enable extension**.
-
-    <!--Update the this pic     
-        ![](../media/ui-flows-setup/8a4ea389fcad965781274f463f382b84.png) -->
+- On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
-    
-    <!--![ ](../media/ui-flows-setup/1301c0086aa1ef031b2505df7f5b2cae.png)-->
+
 
 ## Install Selenium IDE
 
@@ -116,20 +115,14 @@ Follow these steps to install Selenium IDE:
 
 1. On Microsoft Edge (Chromium), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
-<!-- ![](../media/ui-flows-setup/62a1f2e69c21b089922f3f92fcd26560.png)
-
-![](../media/ui-flows-setup/7e7b7a0a45b876b036980eaebf728d52.png)
--->
-
 ## Install the on-premises data gateway
 
 You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md/#types-of-flows).
 
 >[!TIP]
->The gateway is not required if you only want to create, edit, and test your UI flows on your device.
+>The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
 
-<!--todo: confirm that -->
-[Install the on-premises data gateway](../gateway-reference.md/#use-a-gateway), if you need it.
+[Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
 
 ## Uninstall UI flows
 
@@ -143,3 +136,5 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 - Learn to [create Web UI flows](create-web.md).
 - Learn how to run [UI flows](run-ui-flow.md).
 - Learn to [manage UI flows](manage.md).
+- Learn more about the [on-premises gateway](../gateway-reference.md/#use-a-gateway)
+

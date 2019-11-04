@@ -39,51 +39,7 @@ After you've created and tested a UI flow, you can run it from an event, schedul
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Microsoft Flow, and to log into your Windows device.
-
-<!--To do, no need for this here... it duplicates gateway content-->
-
-<!-- ![](../media/run-ui-flow/3ae74b6c16e297854ff672a5061b693b.png)
-
-You need to use the same work or school account in the gateway as on your
-Windows device and Microsoft Flow.
-
-1. Accept the terms of use and privacy statement  
-    
-    ![](../media/run-ui-flow/d95126d0056d250ea37211ee19466a6c.png)
-
-1.  You will be prompted multiple times by Windows to accept changes made to
-    your computer
-
-1. Enter the email address for your work or school account that is used with
-    Microsoft Flow and your Windows device and select **sign in**.
-
-   ![](../media/run-ui-flow/d558e4a710057996e0ac1da52bb5e8e8.png)
-
-1. Sign in with your account. You may see a different screen at this stage
-    depending on your account configuration.  
-    
-    ![](../media/run-ui-flow/0d7bbbce4401278aa3137cb004cc7970.png)
-
-1. Register a new gateway if this is the first time that you do so  
-    
-
-    ![](../media/run-ui-flow/855da551b31c1878bd69d0cc679b59af.png)
-
-1. Choose a name for the gateway, set a recovery key of your choice and select
-    **Configure.**  
-  
-    ![](../media/run-ui-flow/2876dc7a67a1dc8c8216b7639524bc1f.png)
-
-1. You are done and can close the summary screen
-
-   ![](../media/run-ui-flow/15de4d8c977e2427376c6aead13b0bbe.png)
-
-For more information you can look at the [on-premises data gateway installer
-documentation](https://docs.microsoft.com/data-integration/gateway/service-gateway-app)
-and the [gateway
-management](https://docs.microsoft.com/flow/gateway-manage) documentation.
-
--->
+   
 
 ## Run your UI flow from an event, button, schedule, or business process flow
 
@@ -147,17 +103,14 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can populate each input field in the UI flow with values from previous steps in the flow. To do this, select the input field, and then select an input from the token picker.
 
-   <!--todo: add image here-->
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
-
-   <!--todo: add image here-->
 
 ## Limitations and known issues
 
 - Gateway clusters are not supported.
-- Since non US 
-    (QWERTY) keyboards are not supported in this realease, playback of an input step where the key sequence was recorded from a non US (QWERTY) keyboard will result in key strokes in US (QWERTY).
+- Since non-US 
+    (QWERTY) keyboards are not supported in this realease, playback of an input step where the key sequence was recorded from a non-US (QWERTY) keyboard will result in key strokes in US (QWERTY).
 
 ## Learn more
 
