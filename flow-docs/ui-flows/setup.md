@@ -48,7 +48,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
 
 > [!IMPORTANT]
-> UI flows is currently rolling out across regions. If you don't see the preview feature or cannot create new UI flows, please retry tomorrow.
+> UI flows is currently rolling out across regions. If you don't see the preview feature or cannot create new UI flows, please retry later.
 
 
 ## Limitations
