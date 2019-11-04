@@ -1,6 +1,6 @@
 ---
 title: Get started | Microsoft Docs
-description: Quick ways to start automating your work and life with Microsoft Flow
+description: Quick ways to start automating your work and life with Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,20 +22,20 @@ search.audienceType:
   - enduser
 ---
 
-# Get started with Microsoft Flow
+# Get started with Power Automate
 
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Welcome! Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+Welcome! Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
 
 The main types of flows are [automated](get-started-logic-flow.md), [button](introduction-to-button-flows.md), [scheduled](run-scheduled-tasks.md), and [business process](business-process-flows-overview.md) flows.
 
 ## Types of flows
 
-Microsoft Flow is one of the three pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
+Power Automate is one of the three pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
@@ -45,17 +45,17 @@ Microsoft Flow is one of the three pillars of the Power Platform. It provides a 
 | [Business process flows](business-process-flows-overview.md) | Define a set of steps for people to follow to take them to a desired outcome.                 | Human processes                                                                        |
 | [UI flows (Preview)](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
-You can create and manage all flows from the **My flows** tab in Microsoft Flow.
+You can create and manage all flows from the **My flows** tab in Power Automate.
 
 If you are a Dynamics 365 user, you may also be familiar with Classic Common Data Service processes which include, [workflows](configure-workflow-steps.md), [actions](create-actions.md), [mobile task flows](create-mobile-task-flow.md), and [dialogs](use-cds-for-apps-dialogs.md).
 
-The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Microsoft Flow, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
+The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
 
 ## Check out the start page ##
 
-[On the start page](https://flow.microsoft.com) for Microsoft Flow, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Microsoft Flow. You can get a quick sense of what's possible and how Microsoft Flow could help your business and your life.
+[On the start page](https://flow.microsoft.com) for Power Automate, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
-With Microsoft Flow, you can:
+With Power Automate, you can:
 
 - Easily search for templates and services.
 
@@ -94,7 +94,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative ##
 
-Now that you've created your first flow from a template, use any of the more than [150 data sources](https://flow.microsoft.com/connectors/) that Microsoft Flow supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [150 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 
@@ -110,7 +110,7 @@ When you create a flow from scratch, you control the entire workflow. Here are a
 
 ## Peek at the code
 
-You don't need to be a developer to create flows, however, Microsoft Flow does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Microsoft Flow designer: 
+You don't need to be a developer to create flows, however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
 1. Select **Peek code**.
@@ -133,16 +133,16 @@ When your creative juices start *flowing*, you might create many flows. Don't wo
 
 ## Get notifications when something's wrong
 
-Use the Microsoft Flow notification center (located at the top right of the designer) to quickly see a list of flows have failed recently. The notification center displays a number that indicates the number of flows that failed recently.
+Use the Power Automate notification center (located at the top right of the designer) to quickly see a list of flows have failed recently. The notification center displays a number that indicates the number of flows that failed recently.
 
-From the notification center, you can navigate to the **Activity** page of Microsoft Flow to see all your flows that recently ran, sent notifications, or failed.
+From the notification center, you can navigate to the **Activity** page of Power Automate to see all your flows that recently ran, sent notifications, or failed.
 
 ![Notification center](media/getting-started/notification-center.png)
 
 ## Use the mobile app ##
 
-Download the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
+Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
 
 ## We're here to help ##
 
-We're excited to see what you do with Microsoft Flow, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
