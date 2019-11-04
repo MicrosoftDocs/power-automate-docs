@@ -39,9 +39,9 @@ Get started by watching a [brief video](https://www.youtube.com/watch?v=bZrrdoyt
 
 ### UI flows or API?
 
-With Microsoft Flow, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes in a single automation.
+With Power Automate, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes in a single automation.
 
-| **Application type**      | **Microsoft Flow feature** | **Benefits**     |
+| **Application type**      | **Power Automate feature** | **Benefits**     |
 |---------------------------|----------------------------|------------------|
 | Modern apps with APIs| Connectors                 | High reliability |
 | Legacy apps (no APIs)          | UI Flow                    | Easy to create   |

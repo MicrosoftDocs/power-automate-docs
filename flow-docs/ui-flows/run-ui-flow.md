@@ -32,20 +32,20 @@ After you've created and tested a UI flow, you can run it from an event, schedul
 
 ## Prerequisites
 
-- You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the UI flow triggered by Microsoft Flow.
+- You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the UI flow triggered by Power Automate.
    
-   The gateway is an enterprise-grade secure connection between Microsoft Flow and your device (where your UI flow runs). Microsoft Flow uses the gateway to access your on-premises device so that it can trigger your UI flows from an event, schedule, or button.
+   The gateway is an enterprise-grade secure connection between Power Automate and your device (where your UI flow runs). Power Automate uses the gateway to access your on-premises device so that it can trigger your UI flows from an event, schedule, or button.
 - A work or school account. 
 
    >[!IMPORTANT]
-   >You must use the same work or school account to set up the gateway, to sign into Microsoft Flow, and to log into your Windows device.
+   >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
    
 
 ## Run your UI flow from an event, button, schedule, or business process flow
 
 In this example we will use an automated flow to trigger a UI flow when a new email arrives.
 
-1. Navigate to [Microsoft Flow](https://flow.microsoft.com/).
+1. Navigate to [Power Automate](https://flow.microsoft.com/).
 1. Select **My flows** in the left navigation bar.
 1. Select **New**, and then select **Automated-from blank**.
 
