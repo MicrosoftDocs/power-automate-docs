@@ -27,7 +27,7 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-UI flows provides Robotic Process Automation (RPA) capabilities to Microsoft Flow. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+UI flows provides Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 > [!IMPORTANT]
 > - This is a preview feature.
