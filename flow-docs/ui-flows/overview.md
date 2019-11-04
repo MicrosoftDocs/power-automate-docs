@@ -33,7 +33,7 @@ UI flows provides Robotic Process Automation (RPA) capabilities to Microsoft Flo
 > - This is a preview feature.
 > - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
 
-Get started by watching a [brief video](https://youtu.be/hCuxuUaGC6Y) of how UI flows works. You can also jump right in: 
+Get started by watching a [brief video](https://www.youtube.com/watch?v=bZrrdoytTH0) of how UI flows works. You can also jump right in: 
 - [Create and test UI flows for desktop](create-desktop.md) 
 - [Create and test UI flows for Web applications](create-web.md)  
 
