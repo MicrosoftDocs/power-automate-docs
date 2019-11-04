@@ -24,6 +24,7 @@ search.audienceType:
   - enduser
 ---
 # Best practices for workflow processes
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 This topic contains best practices for creating and managing workflow processes.  
   

@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -19,6 +18,7 @@ ms.author: deonhe
 ---
 
 # Manage SharePoint page approvals with Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 SharePoint site admins can use Microsoft Flow to require new or updated site pages to be approved before being published.
 

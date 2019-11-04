@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Respond to GDPR Data Subject Delete Requests
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The **right to erasure** by the removal of personal data is a key protection in the GDPR. Removing personal data includes removing all personal data except audit log information.
 

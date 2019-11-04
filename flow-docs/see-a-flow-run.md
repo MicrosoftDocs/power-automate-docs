@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Watch your flows in action
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 >[!VIDEO https://www.youtube.com/embed/3wPoUCGm7Yg]
 

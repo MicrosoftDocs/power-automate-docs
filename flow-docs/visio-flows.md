@@ -24,6 +24,7 @@ search.audienceType:
 
 
 # Design flows in Microsoft Visio
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The Microsoft Flow designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Microsoft Flow.
 

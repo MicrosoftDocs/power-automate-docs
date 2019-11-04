@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Run your flows with physical buttons (bttns) from The Button Corporation (Preview)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a flow to perform these tasks:
 
 * contacts your helpdesk with location information

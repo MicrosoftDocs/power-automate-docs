@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Release notes
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## Top questions
 1. My flow failed. How do I fix it?
    
@@ -654,5 +655,5 @@ If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.micro
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## Next steps
-If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](http://go.microsoft.com/fwlink/?LinkID=787479).
+If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
 

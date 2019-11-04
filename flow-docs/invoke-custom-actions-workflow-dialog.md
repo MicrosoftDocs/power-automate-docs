@@ -24,6 +24,7 @@ search.audienceType:
   - enduser
 ---
 # Invoke custom actions from a workflow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Workflows have numerous capabilities supporting business scenarios. Calling basic data operation actions for a record, such as create, update, and delete, from within a workflow solves quite a few business scenarios. However, if you couple the capabilities of the workflows with the power of the custom actions invoked directly from within a workflow you add a whole new range of business scenarios to your application without needing to write code.  
   

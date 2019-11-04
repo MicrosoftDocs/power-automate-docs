@@ -23,6 +23,7 @@ search.audienceType:
 ---
 
 # Sharing and connectors admin analytics reports
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Organizations need insights into how apps are used and who's using them. The Admin analytics sharing and connectors reports provide insight into how Microsoft Flow is being used within your tenant. 
 

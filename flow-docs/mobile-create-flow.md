@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow from your phone by using Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Create a flow from your phone by using a template, which you can find by searching through a list of services, browsing categories, or specifying keywords. Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your manager.
 
 If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).

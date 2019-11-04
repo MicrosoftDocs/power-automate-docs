@@ -89,26 +89,7 @@ search.audienceType:
                                 </div>
                             </div>
                             </a>
-                        </li>
-                        <li>
-                            <a href="mobile-create-flow.md">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/get_to_know_mobile_app1.svg" alt="Get to know the mobile app." />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Get to know the mobile app</h3>
-                                            <p>Manage, track, and explore your automated workflows anytime and from anywhere.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="introduction-to-button-flows.md">
                             <div class="cardSize">
@@ -122,6 +103,25 @@ search.audienceType:
                                         <div class="cardText">
                                             <h3>Create a button flow in 2 minutes</h3>
                                             <p>Learn how to automate and run repetitive tasks with button flows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/flow/ui-flows/overview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage  bgdAccent1">
+                                                <img src="media/index/ui_flows.svg" alt="Get started with UI flows (Preview)" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get started with UI flows (Preview)</h3>
+                                            <p>Automate repetitive tasks in applications that don't have easy-to-use or complete APIs available.</p>
                                         </div>
                                     </div>
                                 </div>

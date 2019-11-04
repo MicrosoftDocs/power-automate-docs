@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Filter and copy data with Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 This walkthrough shows you how to create a flow that monitors a source for new or changed items and then copies those changes to a destination. You may create a flow like this one if your users enter data in one location, but your team needs it in a different location or format.
 
 While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [150 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.

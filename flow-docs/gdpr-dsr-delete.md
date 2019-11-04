@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Delete Requests for Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
@@ -227,7 +228,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 PowerApps Maker PowerShell cmdlets
 
-A user can delete all of their connector role assignments for shared custom conector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount

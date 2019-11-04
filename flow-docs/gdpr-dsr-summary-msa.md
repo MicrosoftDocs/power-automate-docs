@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Respond to GDPR Data Subject Rights (DSRs) requests
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 This article describes the European Union's General Data Protection Regulation (GDPR) and provides steps you can take to support GDPR compliance for Microsoft Flow users who authenticate with Microsoft Accounts (MSA).
 
