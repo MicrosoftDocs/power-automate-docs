@@ -41,17 +41,17 @@ You can jump right in:
 - [Create and test UI flows for desktop](create-desktop.md) 
 - [Create and test UI flows for Web applications](create-web.md)  
 
-### UI flows or API?
+### UI flows or Connectors?
 
 With Power Automate, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes in a single automation.
 
-| **Application type**      | **Power Automate feature** | **Benefits**     |
+| **Application type**      | **Feature** | **Benefits**     |
 |---------------------------|----------------------------|------------------|
-| Modern apps with APIs| Connectors                 | High reliability |
-| Legacy apps (no APIs)          | UI Flow                    | Easy to create   |
+| Modern apps with APIs| Connectors                 | High reliability incl. with software UI updates |
+| Legacy apps (no APIs)          | UI Flow                    | Easy to create. Works if no API is available.   |
 
 
-You will find your UI flows alongside automated, button, scheduled, and business process flows in the **My flows** tab.
+You will find your UI flows alongside automated, button, scheduled, and business process flows in [**My flows**](manage.md).
 
 ## Next steps
 
