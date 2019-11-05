@@ -1,6 +1,6 @@
 ---
 title: Use the apply to each action to loop through an array of items. | Microsoft Docs
-description: Use Microsoft Flow to loop through an array of items to check multiple conditions and take actions based on those conditions.
+description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use the apply to each action in Microsoft Flow to process a list of items periodically
+# Use the apply to each action in Power Automate to process a list of items periodically
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
@@ -41,7 +41,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 * An account that's registered to use [Power Automate](https://flow.microsoft.com).
 * An Office 365 Outlook account.
-* The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * Connections to Office 365 Outlook and the push notification service.
 
 ## Create a flow
@@ -148,7 +148,7 @@ If you followed along, your flow should look similar to this diagram:
 ## Run the flow
 1. Send yourself a high-importance email that includes **meet now** in the subject (or have someone in your organization send you such an email).
 2. Confirm the email is in your inbox and it's unread.
-3. Sign into Microsoft Flow, select **My flows**, and then select **Run now**:
+3. Sign into Power Automate, select **My flows**, and then select **Run now**:
    
     ![run now](./media/apply-to-each/foreach-run-1.png)
 4. Select **Run flow** to confirm you really want to run the flow:
@@ -161,7 +161,7 @@ If you followed along, your flow should look similar to this diagram:
 ## View results of the run
 Now that you've run the flow successfully, you should receive the push notification on your mobile device.
 
-1. Open the Microsoft Flow app on your mobile device, and then select the **Activity** tab. You'll see the push notification about the meeting:
+1. Open the Power Automate app on your mobile device, and then select the **Activity** tab. You'll see the push notification about the meeting:
    
     ![select the activity tab](./media/apply-to-each/foreach-notification-1.png)
 2. To see the full contents of the notification, you may have to select the notification. You'll see the full notification, similar to this:

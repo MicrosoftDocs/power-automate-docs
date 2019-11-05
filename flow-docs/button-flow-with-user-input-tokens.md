@@ -1,6 +1,6 @@
 ---
 title: Learn how to automate repetitive tasks with button flows that take user input | Microsoft Docs
-description: Microsoft Flow makes it easy automate repetitive tasks. Your flows can even take user input when running a repetitive task.
+description: Power Automate makes it easy automate repetitive tasks. Your flows can even take user input when running a repetitive task.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,13 +25,13 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Create a button flow to run routine tasks by simply tapping a button. Customize your flow by allowing the user to provide specific details that will be used when the flow runs. This topic walks you through creating a button flow that takes input from the user and then running the button flow, highlighting how to provide the user input.
 
-You can create a button flow in the Microsoft Flow website or the mobile app for Microsoft Flow. For this topic, you'll use the website.
+You can create a button flow in the Power Automate website or the mobile app for Power Automate. For this topic, you'll use the website.
 
 ### Prerequisites
-* An account on the Microsoft Flow website.
+* An account on the Power Automate website.
 
 ## Open the template
-1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com), enter **Visual Studio** in the search box, and then click or tap the search icon to find all templates that relate to Visual Studio:
+1. Sign in to the [Power Automate website](https://flow.microsoft.com), enter **Visual Studio** in the search box, and then click or tap the search icon to find all templates that relate to Visual Studio:
    
     ![](./media/button-flow-with-user-input-tokens/1.png)  
 2. Select the **Open a Priority 2 Bug in Visual Studio** template:
@@ -91,9 +91,9 @@ You can create a button flow in the Microsoft Flow website or the mobile app for
     ![](./media/button-flow-with-user-input-tokens/14.png)  
 
 ## Run your flow
-In this walk-through, you'll use the mobile app for Microsoft Flow to run the button flow you just created. You'll provide all the user input that's needed to create a bug with a title, a description, repro steps, and a severity level.  
+In this walk-through, you'll use the mobile app for Power Automate to run the button flow you just created. You'll provide all the user input that's needed to create a bug with a title, a description, repro steps, and a severity level.  
 
-1. In the mobile app for Microsoft Flow, tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
+1. In the mobile app for Power Automate, tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
    
     ![](./media/button-flow-with-user-input-tokens/runmt1.png)  
 2. Enter the title for the bug you are reporting, and then tap **Next**. For example:

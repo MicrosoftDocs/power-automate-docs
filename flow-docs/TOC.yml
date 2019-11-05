@@ -138,7 +138,7 @@
       href: replace-dialogs.md
 - name: AI Builder
   items:
-  - name: Use AI Builder in Microsoft Flow
+  - name: Use AI Builder in Power Automate
     href: use-ai-builder.md
 - name: How to
   items:
@@ -251,7 +251,7 @@
       href: gdpr-dsr-delete-msa.md
     - name: Close requests
       href: gdpr-dsr-accountclose-msa.md
-  - name: Microsoft Flow US Government
+  - name: Power Automate US Government
     href: us-govt.md
 - name: Reference
   items:
@@ -261,7 +261,7 @@
     href: limits-and-config.md
   - name: Release notes
     href: release-notes.md
-  - name: Microsoft Flow Web API
+  - name: Power Automate Web API
     href: web-api.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md

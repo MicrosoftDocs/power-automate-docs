@@ -1,10 +1,10 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Microsoft Flow Documentation | Microsoft Docs
-description: Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and much more.
+title: Power Automate Documentation | Microsoft Docs
+description: Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and much more.
 keywords: 
-  - "Microsoft Flow"
+  - "Power Automate"
   - "workflow"
   - "flow"
   - "approval workflow"
@@ -45,7 +45,7 @@ search.audienceType:
         </ul>
     </div>
 <div class="container">
-    <h1>Microsoft Flow Documentation</h1>
+    <h1>Power Automate Documentation</h1>
     <ul class="pivots">
         <li>
             <a href="#start">I'm a beginner</a>
@@ -60,11 +60,11 @@ search.audienceType:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/guidedlearningtour.svg" alt="Learn Microsoft Flow" /><br/>                                            </div>
+                                                <img src="media/index/guidedlearningtour.svg" alt="Learn Power Automate" /><br/>                                            </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Learn Microsoft Flow</h3>
-                                            <p>Start your learning journey with this sequenced collection of courses to understand the extensive and powerful capabilities of Microsoft Flow.</p>
+                                            <h3>Learn Power Automate</h3>
+                                            <p>Start your learning journey with this sequenced collection of courses to understand the extensive and powerful capabilities of Power Automate.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Get started with the basics</h3>
-                                            <p>Quick ways to start automating your work and life with Microsoft Flow.</p>
+                                            <p>Quick ways to start automating your work and life with Power Automate.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Catch up on the Flow of the Week</h3>
-                                            <p>Learn new tricks directly from the Microsoft Flow team.</p>
+                                            <p>Learn new tricks directly from the Power Automate team.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +245,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Collaborate on a team flow</h3>
-                                            <p>Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners, and then collaborate with them to design and manage flows.</p>
+                                            <p>Power Automate makes it easy automate repetitive tasks. You can add users or groups as owners, and then collaborate with them to design and manage flows.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -326,12 +326,12 @@ search.audienceType:
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/environments_dlp.svg" alt="Manage Microsoft Flow for your organization." />
+                                                <img src="media/index/environments_dlp.svg" alt="Manage Power Automate for your organization." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Manage Microsoft Flow for your organization</h3>
-                                            <p>Learn how to create, use, and manage environments in Microsoft Flow.</p>
+                                            <h3>Manage Power Automate for your organization</h3>
+                                            <p>Learn how to create, use, and manage environments in Power Automate.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Learn to use REST APIs with your flows</h3>
-                                            <p>Call Microsoft Flow from your own applications.</p>
+                                            <p>Call Power Automate from your own applications.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Create a custom connector</h3>
-                                            <p>Build a custom connector that you can use in Azure Logic Apps, Microsoft Flow, or Microsoft PowerApps.</p>
+                                            <p>Build a custom connector that you can use in Azure Logic Apps, Power Automate, or Microsoft PowerApps.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -388,7 +388,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Expand your flows with Logic Apps</h3>
-                                            <p>Azure Logic Apps provides a richer set of capabilities than what’s included in Microsoft Flow. Simply save any flow as a Logic Apps template, and then manage it like any other Logic Apps resource.</p>
+                                            <p>Azure Logic Apps provides a richer set of capabilities than what’s included in Power Automate. Simply save any flow as a Logic Apps template, and then manage it like any other Logic Apps resource.</p>
                                         </div>
                                     </div>
                                 </div>

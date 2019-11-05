@@ -1,7 +1,7 @@
 In this topic, you’ll see how to run pre-scheduled flows using a trigger called **Recurrence**.  You’ll build a flow for the Contoso marketing team that automatically pulls customer email addresses from an Excel table on OneDrive. You’ll configure the flow so that once per day, new email addresses that were added to the spreadsheet are then added to a MailChimp customer list. 
 
 ## Create a scheduled flow
-1. Open **Microsoft Flow**, select **My flows**, and then select **Create from blank**. 
+1. Open **Power Automate**, select **My flows**, and then select **Create from blank**. 
    
     ![](./media/learning-recurrence/flow-create-blank.png)
 2. Select **Search hundreds of connectors and triggers**.
@@ -26,7 +26,7 @@ In this topic, you’ll see how to run pre-scheduled flows using a trigger calle
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Note:** MailChimp is a *premium* connector. Depending on your Microsoft Flow license, you might need to sign up for a trial to use this connector.
+    **Note:** MailChimp is a *premium* connector. Depending on your Power Automate license, you might need to sign up for a trial to use this connector.
 9. Add the **List Id** and **Status** fields from the dropdown menus:
    
    * **List Id** – Select your desired MailChimp mailing list

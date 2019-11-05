@@ -1,4 +1,4 @@
-With an expanding list of [services](https://flow.microsoft.com/services) available to build workflows with [Power Automate](https://flow.microsoft.com), you may need to safeguard sensitive or critical business data stored in enterprise services such as SharePoint or Salesforce. You may find that your organization needs to create a policy which ensures that sensitive business data isn't published to consumer services like Twitter and Facebook. With Microsoft Flow, you can easily create **data loss prevention** (DLP) policies to tightly control which consumer services your business data can be shared with when your users create flows.  
+With an expanding list of [services](https://flow.microsoft.com/services) available to build workflows with [Power Automate](https://flow.microsoft.com), you may need to safeguard sensitive or critical business data stored in enterprise services such as SharePoint or Salesforce. You may find that your organization needs to create a policy which ensures that sensitive business data isn't published to consumer services like Twitter and Facebook. With Power Automate, you can easily create **data loss prevention** (DLP) policies to tightly control which consumer services your business data can be shared with when your users create flows.  
 
 ## Terms you should get familiar with
 
@@ -22,7 +22,7 @@ A DLP policy is simply a named rule that places each service into one of two mut
 **Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the **business data only** data group.
 
 ## Here's what you need to create a DLP
-* Access to the Microsoft Flow [admin center](https://admin.flow.microsoft.com)  
+* Access to the Power Automate [admin center](https://admin.flow.microsoft.com)  
 * An account in the Environment Admin role  
 * An environment with users assigned to it  
 

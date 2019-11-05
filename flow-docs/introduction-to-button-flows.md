@@ -65,7 +65,7 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 11. You should see this success message within a few moments:  
     ![Overview image](./media/introduction-to-button-flows/create-button-11.png)  
 
-Congratulations, you've created a button flow! You can now run this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Microsoft Flow mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+Congratulations, you've created a button flow! You can now run this button flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### From your mobile device
 **Note**: While this walk-through displays screens from an Android device, the screens and experience on an iOS device are similar.
@@ -141,5 +141,5 @@ On the **My flows** tab of the Flow app:
 ## Next steps
 * [Share button flows](share-buttons.md).
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send real-time data when your button flows are run.
-* Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 

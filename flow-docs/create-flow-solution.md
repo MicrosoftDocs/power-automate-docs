@@ -46,7 +46,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
    ![](./media/create-flow-solution/select-new-flow.png)
 
-   Microsoft Flow opens.
+   Power Automate opens.
 
 1. Use the available connectors and triggers to build your flow.
 

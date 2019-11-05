@@ -1,6 +1,6 @@
 ---
-title: Replace classic Common Data Service workflows with Microsoft Flow | Microsoft Docs
-description: Describes Microsoft Flow capabilities and recommended patterns to use flow instead of a classic workflow.
+title: Replace classic Common Data Service workflows with Power Automate | Microsoft Docs
+description: Describes Power Automate capabilities and recommended patterns to use flow instead of a classic workflow.
 author: MSFTMAN
 manager: KVIVEK
 ms.author: Deonhe
@@ -17,22 +17,22 @@ search.audienceType:
 # Replace classic Common Data Service workflows with flows
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This topic compares Microsoft Flow capabilities with classic workflow.
+This topic compares Power Automate capabilities with classic workflow.
 
-Microsoft Flow has significant advantages over the classic workflow model; you should consider using Microsoft Flow to automate your processes instead of classic workflow. 
+Power Automate has significant advantages over the classic workflow model; you should consider using Power Automate to automate your processes instead of classic workflow. 
 
 Create flows instead of classic Common Data Service workflows to build new automation processes. Additionally, you should review your existing classic workflow processes and consider replacing them with flows.
 
 ## Feature capability comparison
 
-This table summarizes a comparison between Microsoft Flow and classic workflows capabilities. 
+This table summarizes a comparison between Power Automate and classic workflows capabilities. 
 
-*We are continuously adding new capabilities to Microsoft Flow so that it's at par and even better than classic workflow capabilities. We'll update information in this table as Microsoft Flow gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic workflow with flow, see [What's new and planned for Microsoft Flow](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) in the April 2019 Release Notes!*
+*We are continuously adding new capabilities to Power Automate so that it's at par and even better than classic workflow capabilities. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) in the April 2019 Release Notes!*
 
 <table>
 <tr>
 <th colspan="2">Capability</th>
-<th>Microsoft Flow</th>
+<th>Power Automate</th>
 <th>Classic Workflow</th>
 </tr>
 <tr>
@@ -459,7 +459,7 @@ solutions to this require a developer to write custom workflow activities
 to retrieve quote line items.
 
 With flows, this is easier to build as demonstrated in the walkthrough later that covers 
-some of the Microsoft Flow capabilities to support the scenario. This
+some of the Power Automate capabilities to support the scenario. This
 includes:
 
 -   Creating a flow that runs on demand
@@ -496,7 +496,7 @@ the **Type** to String (from the dropdown), and leave the **Value** field empty.
 1. Add the **Append to string variable** action and then select the *Quote line
 summary* variable we created earlier. In the **Value** field, select *Quantity,
 Name, Price per unit, Extended amount and Manual amount* from the list of
-dynamic values. The Microsoft Flow designer identifies that these values are
+dynamic values. The Power Automate designer identifies that these values are
 from a list of quote line items, and adds this action in an **Apply to each**
 loop to ensure information from each line item is added to this summary.
 
@@ -527,7 +527,7 @@ on-demand flow to request approval:
 
 When you run this flow against your quote, it summarizes
 quote line items for that quote and sends an approval request that the approver
-can respond to from Microsoft Flow, or the actionable email they receive. An
+can respond to from Power Automate, or the actionable email they receive. An
 example of the display is below:
 
 ![Flow in action](media/flow-in-action.png "Flow in action")
@@ -587,16 +587,16 @@ example of the display is below:
 
 -   **Monitor workflow runs for failures**  
     
-    In Microsoft Flow, use the **run-after setting** on an action to configure it to run
-    when the previous action fails. For example, send a Microsoft Flow mobile notification when
+    In Power Automate, use the **run-after setting** on an action to configure it to run
+    when the previous action fails. For example, send a Power Automate mobile notification when
     the **update a record** action fails, or times out.
 
 ## FAQs
 
 
--   **I have a Dynamics 365 license. Can I use Microsoft Flow?**
+-   **I have a Dynamics 365 license. Can I use Power Automate?**
 
-    Every Dynamics 365 user is entitled to use Microsoft Flow. Review our licensing information: <https://flow.microsoft.com/pricing/>
+    Every Dynamics 365 user is entitled to use Power Automate. Review our licensing information: <https://flow.microsoft.com/pricing/>
 
 -   **How often can my flows be triggered?**
 
@@ -620,7 +620,7 @@ example of the display is below:
     Just like classic workflows, you can create flows in solutions to support
     the full application lifecycle for processes.
 
--   **Are Microsoft Flow dependencies tracked in Common Data Service?**  
+-   **Are Power Automate dependencies tracked in Common Data Service?**  
     
     Similar to other components in a solution, all dependencies for flows
     in solutions are tracked in Common Data Service.
@@ -633,12 +633,12 @@ example of the display is below:
     are a significant contributor to overall end user poor performance
     experience. For many uses though it would be preferable to split these
     actions out as asynchronous so that the user can continue with their
-    activity while Microsoft Flow continues to ensure completion of the action.
+    activity while Power Automate continues to ensure completion of the action.
 
--   **Using Microsoft Flow, will my data stay within region (that is, the same region as my
+-   **Using Power Automate, will my data stay within region (that is, the same region as my
     Dynamics 365 or Common Data Service environment)?**  
     
-    Yes, Microsoft Flow always uses the same region as Common Data Service.
+    Yes, Power Automate always uses the same region as Common Data Service.
 
 -   **Do I need to make proxy/firewall changes?**  
     

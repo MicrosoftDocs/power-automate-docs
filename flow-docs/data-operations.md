@@ -1,6 +1,6 @@
 ---
 title: Understand data operations | Microsoft Docs
-description: Learn to perform operations, such as create HTML table, create CSV table, compose, join, select, and filter array with Microsoft Flow.
+description: Learn to perform operations, such as create HTML table, create CSV table, compose, join, select, and filter array with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,12 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use data operations with Microsoft Flow
+# Use data operations with Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-In this walkthrough, you learn about some of the Microsoft Flow’s popular data operations, such as compose, join, select, filter array, create table, and parse JSON that are available to manipulate data when you create flows.
+In this walkthrough, you learn about some of the Power Automate’s popular data operations, such as compose, join, select, filter array, create table, and parse JSON that are available to manipulate data when you create flows.
 
 ## Prerequisites
-* Access to Microsoft Flow.
+* Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
 ## Use the compose action

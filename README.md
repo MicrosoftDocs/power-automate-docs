@@ -1,6 +1,6 @@
-# Microsoft Flow Documentation
+# Power Automate Documentation
 
-This is the GitHub repository for the technical product documentation for **Microsoft Flow**. This documentation is published to  [https://docs.microsoft.com/flow](https://docs.microsoft.com/flow).
+This is the GitHub repository for the technical product documentation for **Power Automate**. This documentation is published to  [https://docs.microsoft.com/flow](https://docs.microsoft.com/flow).
 
 ## How to contribute
 

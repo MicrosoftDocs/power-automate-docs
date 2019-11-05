@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Monitor activity in Microsoft Flow from your phone
+# Monitor activity in Power Automate from your phone
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 View a summary of how many times each flow succeeded or failed today, yesterday, and previous days. Explore details about each run, such as when it ran, how long each step took and, if it failed, why.
 
@@ -29,8 +29,8 @@ View a summary of how many times each flow succeeded or failed today, yesterday,
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZuYZ64K3tI?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-* Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
-* If you don't already have a flow, create one on [the website for Microsoft Flow](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
+* If you don't already have a flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
