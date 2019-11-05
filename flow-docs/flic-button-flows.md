@@ -33,7 +33,7 @@ Trigger your flows by pressing a physical button, known as a Flic, from Shortcut
 ## Prerequisites
 To use Flics with Microsoft Flow, you must have:
 
-* Access to [Microsoft Flow](https://flow.microsoft.com).
+* Access to [Power Automate](https://flow.microsoft.com).
 * Downloaded Flic's [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobile app, and used it to pair one or more Flics.
 
 ## Configure Flic properties
@@ -59,7 +59,7 @@ Note: Be sure you've used the Flic mobile app to pair, and configure at least on
 Let's get started creating our flow.
 
 ### Start with a template
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
    
     ![sign in](./media/flic-button-flows/sign-into-flow.png)
 2. Enter **flic** into the search box, and then select the search icon.

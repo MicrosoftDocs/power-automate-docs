@@ -38,7 +38,7 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 
 ## Add an event to trigger the flow
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com), select **My flows** in the top navigation bar, and then select **Create from blank**.
+1. Sign into [Power Automate](https://flow.microsoft.com), select **My flows** in the top navigation bar, and then select **Create from blank**.
 
 1. Select the **Search hundreds of connectors and triggers** box, enter **new item**, and then navigate to **SharePoint - when an item is created**.
 

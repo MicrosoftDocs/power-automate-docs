@@ -39,13 +39,13 @@ This diagram shows the details of the flow we'll create in this walk-through:
 ## Prerequisites
 Here are the requirements for successfully performing the steps in this walk-through:
 
-* An account that's registered to use [Microsoft Flow](https://flow.microsoft.com).
+* An account that's registered to use [Power Automate](https://flow.microsoft.com).
 * An Office 365 Outlook account.
 * The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * Connections to Office 365 Outlook and the push notification service.
 
 ## Create a flow
-1. Sign into [Microsoft Flow](https://flow.microsoft.com):
+1. Sign into [Power Automate](https://flow.microsoft.com):
 2. Select the **My flows** tab, and then create a flow from a blank:
    
     ![create from blank](./media/apply-to-each/foreach-1.png)

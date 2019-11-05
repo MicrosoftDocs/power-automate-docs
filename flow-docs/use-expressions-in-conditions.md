@@ -62,7 +62,7 @@ Given the preceding spreadsheet, you want to use Microsoft Flow to remove all ro
 Let's create the flow.
 
 ### Start with a blank flow
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 
     ![sign in](includes/media/modern-approvals/sign-in.png)
 2. Select the **My flows** tab.

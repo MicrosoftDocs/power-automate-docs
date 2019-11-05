@@ -31,7 +31,7 @@ Create a team flow by adding others in your organization as owners. All owners o
 * Add and remove other owners (but not the flow's creator).
 * Delete the flow.
 
-If you're the creator or an owner of a team flow, you'll find it listed on the **Team flows** tab on [Microsoft Flow](https://flow.microsoft.com).
+If you're the creator or an owner of a team flow, you'll find it listed on the **Team flows** tab on [Power Automate](https://flow.microsoft.com).
 
 ![team flows tab](./media/create-team-flows/addowner5.png)
 
@@ -48,7 +48,7 @@ You must have a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/) 
 ## Create a team flow
 Follow these steps to create a team flow or to add more owners to a team flow.
 
-1. Sign into the [Microsoft Flow](https://flow.microsoft.com), and then select **My flows**.
+1. Sign into the [Power Automate](https://flow.microsoft.com), and then select **My flows**.
 2. Select the people icon for the flow that you want to modify:
    
     ![team icon](./media/create-team-flows/addowner1.png)

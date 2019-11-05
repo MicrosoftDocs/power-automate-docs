@@ -52,11 +52,11 @@ Microsoft Flow makes it easy to switch between environments. When you switch env
 
 Here's an example.
 
-You’ve created a flow named *NewEmployee* in the *Human Resources* environment. In [Microsoft Flow](https://flow.microsoft.com), you open the *Sales* environment. The *NewEmployee* flow isn’t listed. To see the *NewEmployee* flow, open the *Human Resources* environment. Remember, the same rules apply to any other items you created in the environment, including connections, gateways, flows, and more.
+You’ve created a flow named *NewEmployee* in the *Human Resources* environment. In [Power Automate](https://flow.microsoft.com), you open the *Sales* environment. The *NewEmployee* flow isn’t listed. To see the *NewEmployee* flow, open the *Human Resources* environment. Remember, the same rules apply to any other items you created in the environment, including connections, gateways, flows, and more.
 
 Follow these steps to switch environments:
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 1. In the top right corner, you see an image that represents your profile.
 
    ![profile image](./media/environments-overview-maker/default-environment.png)
