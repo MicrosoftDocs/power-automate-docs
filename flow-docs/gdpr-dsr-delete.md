@@ -104,7 +104,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
     ![Share flow](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
+1. Sign into [Power Automate](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
 
 1. Select the ellipsis **(… )** for the flow you want to copy, and then select **Save As**.
 

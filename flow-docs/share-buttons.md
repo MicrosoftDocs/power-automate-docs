@@ -34,7 +34,7 @@ Follow [these steps](share-buttons.md#use-shared-buttons) to use a button that s
 ## Prerequisites
 To share buttons, you need:
 
-* An account with access to [Microsoft Flow](https://flow.microsoft.com).
+* An account with access to [Power Automate](https://flow.microsoft.com).
 * A flow to share.
 * A mobile device with the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * A group or user within your organization with whom to share your button.

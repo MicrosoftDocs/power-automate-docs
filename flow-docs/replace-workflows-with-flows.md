@@ -472,7 +472,7 @@ includes:
 
 To allow the sales person to trigger the approval request on demand:
 
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com/) and create a flow in a solution. More information: [Create a flow in a solution](create-flow-solution.md). 
+1. Sign in to [Power Automate](https://flow.microsoft.com/) and create a flow in a solution. More information: [Create a flow in a solution](create-flow-solution.md). 
 
 1. From the list of triggers, select **Common Data Service (Current Environment) – When a
 record is selected** and select **Quotes** as the entity. This trigger allows a

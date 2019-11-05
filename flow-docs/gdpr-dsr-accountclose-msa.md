@@ -60,5 +60,5 @@ These steps describe how to self-serve Account Close requests for GDPR.
 
 ## Learn more
 
-* Get started with [Microsoft Flow](getting-started.md)
+* Get started with [Power Automate](getting-started.md)
 * Learn [what's new](release-notes.md) with Microsoft Flow

@@ -39,7 +39,7 @@ The Microsoft Flow designer is a rich tool in which you can configure every deta
 
 ## Design a workflow in Visio
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **Templates** from the left side panel.
 
      ![Select templates from the left panel](./media/visio-flows/templates-from-left-panel.png)

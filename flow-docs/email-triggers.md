@@ -44,7 +44,7 @@ For example, if you check an email's *from* address in a condition, each run cou
 In the following walkthroughs, we check all properties in the **When a new email arrives** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
-* An account with access to [Microsoft Flow](https://flow.microsoft.com)
+* An account with access to [Power Automate](https://flow.microsoft.com)
 * An Office 365 Outlook account
 * The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connections to Office, Outlook, and the push notification service

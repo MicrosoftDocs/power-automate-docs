@@ -33,7 +33,7 @@ Here are some of the ways you can extend your application with Microsoft Flow:
 
 ## Prerequisites
 
-* A [Microsoft Flow](https://flow.microsoft.com) account.
+* A [Power Automate](https://flow.microsoft.com) account.
 
 ## Create a custom connector
 

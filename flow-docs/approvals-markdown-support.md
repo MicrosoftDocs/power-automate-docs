@@ -158,7 +158,7 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 **Result:**
 
-[Microsoft Flow](https://flow.microsoft.com)
+[Power Automate](https://flow.microsoft.com)
 
 ### Anchor links
 

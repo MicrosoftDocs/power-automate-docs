@@ -34,7 +34,7 @@ While this walkthrough copies data from a Microsoft SharePoint [list](https://su
 
 ## Prerequisites
 * Access to a data source and a destination. This walkthrough doesn’t include steps to create the source and destination.
-* Access to [Microsoft Flow](https://flow.microsoft.com).
+* Access to [Power Automate](https://flow.microsoft.com).
 * A basic understanding of how your data is stored.
 * Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
@@ -63,7 +63,7 @@ If you're comfortable with Microsoft Flow, use these quick steps to copy data fr
 Here are the detailed steps to create the flow.
 
 ## Monitor the source for changes
-1. Sign into [Microsoft Flow](https://flow.microsoft.com), select **My flows** > **Create from blank**.
+1. Sign into [Power Automate](https://flow.microsoft.com), select **My flows** > **Create from blank**.
 2. Search for **SharePoint** > select the **SharePoint - When an item is created or modified** trigger from the list of triggers.
 3. Enter the **Site Address** and then select the **List Name** on the **When an item is created or modified** card.
    

@@ -51,11 +51,11 @@ You'll receive a reminder via email, based on the **Remind me this many day(s) i
 
 ## Edit your flow
 
-The reminder flow is like any other flow, so you can access and edit it through [Microsoft Flow](https://flow.microsoft.com).
+The reminder flow is like any other flow, so you can access and edit it through [Power Automate](https://flow.microsoft.com).
 
 ## Learn more
 
-- Getting started with [Microsoft Flow](https://flow.microsoft.com).
+- Getting started with [Power Automate](https://flow.microsoft.com).
 - Set a [reminder flow](https://support.office.com/article/set-a-reminder-flow-23c0e172-1fc1-4ac8-a9db-cd0b81d634d8) in SharePoint.
 
 

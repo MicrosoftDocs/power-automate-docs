@@ -35,7 +35,7 @@ By following the steps in this section, you'll build:
 
 **Prerequisites**
 
-* Sign up for [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
+* Sign up for [Power Automate](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ## Build the entity
