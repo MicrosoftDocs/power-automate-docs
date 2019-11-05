@@ -21,14 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage sequential approvals with Microsoft Flow
+# Manage sequential approvals with Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
 
 In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
 
 > [!NOTE]
-> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Microsoft Flow integrates to drive your flows.
+> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows.
 
 
 ## Detailed steps in the flow

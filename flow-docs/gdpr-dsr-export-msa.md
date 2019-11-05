@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Export Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Export Requests for Microsoft Accounts.
+title: Power Automate GDPR Data Subject Export Requests for Microsoft Accounts (MSA) | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Export Requests for Microsoft Accounts.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,10 +21,10 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Export Requests for Microsoft Flow
+# Responding to GDPR Data Subject Export Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Microsoft Flow.
+As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Power Automate.
 
 ## Manage export requests
 
@@ -35,10 +35,10 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 |Personal data|Location|
 |-----------------|-------------------|
 |Product and service activity|Microsoft privacy dashboard|
-|Flows|Microsoft Flow maker portal|
-|Run history|Microsoft Flow maker portal|
-|Activity Feed|Microsoft Flow maker portal|
-|Connections|Microsoft Flow maker portal|
+|Flows|Power Automate maker portal|
+|Run history|Power Automate maker portal|
+|Activity Feed|Power Automate maker portal|
+|Connections|Power Automate maker portal|
 
 ## Export product and service activity
 

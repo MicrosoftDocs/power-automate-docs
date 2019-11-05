@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions | Microsoft Docs
-description: Answers to several common questions about Microsoft Flow
+description: Answers to several common questions about Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -24,32 +24,32 @@ search.audienceType:
 # Frequently asked questions
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## Audience and strategy
-### What is Microsoft Flow?
-Microsoft Flow is a cloud-based service that makes it practical and simple for line-of-business users to build workflows that automate time-consuming business tasks and processes across applications and services.
+### What is Power Automate?
+Power Automate is a cloud-based service that makes it practical and simple for line-of-business users to build workflows that automate time-consuming business tasks and processes across applications and services.
 
-### Who is the intended audience for Microsoft Flow?
-Microsoft Flow has two distinct audiences:
+### Who is the intended audience for Power Automate?
+Power Automate has two distinct audiences:
 
 * Line-of-business “Citizen Integrators” in enterprise organizations who partner with IT to move responsibility for business solutions closer to the business itself.
 * IT decision makers who want to empower line-of-business partners to create their own solutions so IT professionals and integration specialists can focus their expertise on more advanced integration tools, such as Azure Logic Apps.
 
-### How do Microsoft Flow and Logic Apps relate to each other?
-Microsoft Flow provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Microsoft Flow, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
+### How do Power Automate and Logic Apps relate to each other?
+Power Automate provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Power Automate, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
 
-### How does Microsoft Flow fit in Microsoft’s overall business application platform strategy?
-Microsoft Flow is part of a powerful and adaptable business application platform that includes PowerApps, the Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways and the Microsoft Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
+### How does Power Automate fit in Microsoft’s overall business application platform strategy?
+Power Automate is part of a powerful and adaptable business application platform that includes PowerApps, the Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways and the Microsoft Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
 ## Functionality
-### What do I need to use Microsoft Flow?
-To use Microsoft Flow, all you need is a web browser and an email address.
+### What do I need to use Power Automate?
+To use Power Automate, all you need is a web browser and an email address.
 
-### What browsers and devices can I use with Microsoft Flow?
+### What browsers and devices can I use with Power Automate?
 
-You can run Microsoft Flow on all modern devices, and browsers.
+You can run Power Automate on all modern devices, and browsers.
 
 #### Supported devices
 
-Microsoft Flow runs great on modern devices. If you need to manage Microsoft Flow from a mobile device, try the Microsoft Flow mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+Power Automate runs great on modern devices. If you need to manage Power Automate from a mobile device, try the Power Automate mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
 
 #### Supported browsers
 
@@ -62,13 +62,13 @@ We recommend that you use the most up-to-date browser that's compatible with you
 * Firefox
 
 ### Which email addresses are supported?
-Microsoft Flow supports email addresses that end with anything except .gov and .mil.  
+Power Automate supports email addresses that end with anything except .gov and .mil.  
 
-### Is Microsoft Flow available on-premises?
-Microsoft Flow is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
+### Is Power Automate available on-premises?
+Power Automate is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
 
-### What services can Microsoft Flow connect to?
-Microsoft Flow connects to more than 100 data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following:
+### What services can Power Automate connect to?
+Power Automate connects to more than 100 data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following:
 
 * SharePoint
 * Dynamics 365
@@ -107,9 +107,9 @@ You can share flows in either of these ways:
 * For flows that can be run manually, you can also grant other people or groups in your organization permission to just run the flow.
 
 ### How many flows can I have?
-Microsoft Flow comes with up to 50 flows. If you need more, you can request them.
+Power Automate comes with up to 50 flows. If you need more, you can request them.
 
-### Where do I get started with Microsoft Flow?
+### Where do I get started with Power Automate?
 Get started with the following resources:
 
 * [Blog](https://flow.microsoft.com)
@@ -117,8 +117,8 @@ Get started with the following resources:
 * [Topic](getting-started.md)
 * [Community](https://powerusers.microsoft.com)
 
-### What operating systems does the mobile app for Microsoft Flow support?
-The Microsoft Flow mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+### What operating systems does the mobile app for Power Automate support?
+The Power Automate mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### Can flows be turned off or disabled?
 
@@ -131,27 +131,27 @@ Trigger type|Description
 Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed. Delete your flow if you don't want to process pending items.
 Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
 
-### What regions and languages does Microsoft Flow support?
-Microsoft Flow is available in 42 languages and [six regions](regions-overview.md).
+### What regions and languages does Power Automate support?
+Power Automate is available in 42 languages and [six regions](regions-overview.md).
 
-### How does Microsoft Flow compare to SharePoint Designer 2013?
-Microsoft Flow is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
+### How does Power Automate compare to SharePoint Designer 2013?
+Power Automate is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
 
-### How does Microsoft Flow ensure that corporate data isn't accidentally released to social media services?
-Administrators can create [data loss prevention policies](prevent-data-loss.md) to ensure that only sanctioned services are used in Microsoft Flow.
+### How does Power Automate ensure that corporate data isn't accidentally released to social media services?
+Administrators can create [data loss prevention policies](prevent-data-loss.md) to ensure that only sanctioned services are used in Power Automate.
 
-### Does Microsoft Flow support service accounts?
+### Does Power Automate support service accounts?
 
 While you can create flows with a service account, we don't recommend doing so if the credentials for the service account are shared.
 
 ## Licensing
-### Will Microsoft Flow still have a free or trial option?
-Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Microsoft Flow. You can activate your subscription at any time during your trial.
+### Will Power Automate still have a free or trial option?
+Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Power Automate. You can activate your subscription at any time during your trial.
 
 ### What pricing plans do you offer?
-Microsoft Flow offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
+Power Automate offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
 
 ## Learn more
 
-* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Microsoft Flow
-* Learn the basics of Microsoft Flow in the [getting started guide](getting-started.md)
+* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Power Automate
+* Learn the basics of Power Automate in the [getting started guide](getting-started.md)

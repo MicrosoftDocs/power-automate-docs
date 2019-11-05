@@ -1,6 +1,6 @@
 ---
 title: Introduction to the sharing and connectors admin analytics reports | Microsoft Docs
-description: Introduction to the sharing and connectors admin analytics reports for Microsoft Flow.
+description: Introduction to the sharing and connectors admin analytics reports for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ search.audienceType:
 # Sharing and connectors admin analytics reports
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Organizations need insights into how apps are used and who's using them. The Admin analytics sharing and connectors reports provide insight into how Microsoft Flow is being used within your tenant. 
+Organizations need insights into how apps are used and who's using them. The Admin analytics sharing and connectors reports provide insight into how Power Automate is being used within your tenant. 
 
 From a sharing perspective, you can learn who your app champions are and then empower them to provide even more automated solutions for your organization. The connectors report identifies Microsoft, third-party, and custom connectors that are in use within your organization.
 
@@ -63,7 +63,7 @@ The results in these reports are based on the environment you've selected. To ch
 
 ## Learn more
 
-[Get started with Microsoft Flow](getting-started.md)
+[Get started with Power Automate](getting-started.md)
 
 
 

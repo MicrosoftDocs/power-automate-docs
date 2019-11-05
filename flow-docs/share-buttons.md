@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share button flows in Microsoft Flow
+# Share button flows in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-In the Microsoft Flow mobile app, you can share [button flows](introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can run your button, the same way they run their own buttons. You can also [share a link](share-buttons.md#re-share-a-button) to buttons that another person shared with you. You can [stop sharing](share-buttons.md#stop-sharing-a-button) your buttons at any time.
+In the Power Automate mobile app, you can share [button flows](introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can run your button, the same way they run their own buttons. You can also [share a link](share-buttons.md#re-share-a-button) to buttons that another person shared with you. You can [stop sharing](share-buttons.md#stop-sharing-a-button) your buttons at any time.
 
 > The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
 > 
@@ -36,11 +36,11 @@ To share buttons, you need:
 
 * An account with access to [Power Automate](https://flow.microsoft.com).
 * A flow to share.
-* A mobile device with the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* A mobile device with the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * A group or user within your organization with whom to share your button.
 
 ## Share a button
-You can share a button from the **Buttons** tab of the Microsoft Flow mobile app.
+You can share a button from the **Buttons** tab of the Power Automate mobile app.
 
 1. Tap the small icon next to the button you want to share.
    
@@ -101,7 +101,7 @@ You can stop sharing a button by following these steps from the **Buttons** tab:
     ![stop sharing button](./media/share-buttons/share-button-flows-remove-user-result.png)
 
 ## Monitor the run history
-All run history, including the runs initiated by a person with whom a button is shared, appear only on the **Activity** tab of the button creator's Microsoft Flow mobile app.
+All run history, including the runs initiated by a person with whom a button is shared, appear only on the **Activity** tab of the button creator's Power Automate mobile app.
 
 ## Use shared buttons
 Before you can run a button that someone has shared with you, you must add it to your **Buttons** tab from the **Add buttons** page.
@@ -111,7 +111,7 @@ Before you can run a button that someone has shared with you, you must add it to
     ![new button shared with me](./media/share-buttons/share-button-flows-banner.png)
 2. Tap the button you want to use.
    
-    The tapped button is immediately added to the **Buttons** tab of the Microsoft Flow app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
+    The tapped button is immediately added to the **Buttons** tab of the Power Automate app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
    
     ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
@@ -132,7 +132,7 @@ If you no longer want to use a button that was shared with you, remove it from t
     ![remove button](./media/share-buttons/share-button-flows-added-shared-button.png)
 2. Tap **Remove** from the menu that appears.
 
-That's it. The button no longer appears on the **Buttons** tab of the Microsoft Flow app.
+That's it. The button no longer appears on the **Buttons** tab of the Power Automate app.
 
 > [!NOTE]
 > After you remove a shared button, you can add it back by selecting **GET MORE** from the **Buttons** tab.

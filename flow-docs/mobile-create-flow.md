@@ -21,15 +21,15 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow from your phone by using Microsoft Flow
+# Create a flow from your phone by using Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Create a flow from your phone by using a template, which you can find by searching through a list of services, browsing categories, or specifying keywords. Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your manager.
 
-If you're unfamiliar with Microsoft Flow, [get an overview](getting-started.md).
+If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
 
 ## Prerequisites
-* An [account for Microsoft Flow](sign-up-sign-in.md).
-* The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
+* An [account for Power Automate](sign-up-sign-in.md).
+* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
 * To use the template demonstrated in this topic, you'll also need:
   
   * Office 365 credentials.

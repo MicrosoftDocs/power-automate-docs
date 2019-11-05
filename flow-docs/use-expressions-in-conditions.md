@@ -1,6 +1,6 @@
 ---
 title: Use expressions with conditions. | Microsoft Docs
-description: 'Use advanced expressions such as "and", "or", "empty", "less" and "greater" with Microsoft Flow Conditions.'
+description: 'Use advanced expressions such as "and", "or", "empty", "less" and "greater" with Power Automate Conditions.'
 services: ''
 suite: flow
 documentationcenter: na
@@ -41,8 +41,8 @@ Expression|Description|Example
 |if|Returns a specific value if the expression results in true or false.|This expression returns "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## Prerequisites
-* Access to Microsoft Flow.
-* A spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Microsoft Flow can access it.
+* Access to Power Automate.
+* A spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft Office 365 Outlook (While we use Office 365 Outlook, you can use any supported email service in your flows.)
 
 ## Use the or expression
@@ -57,7 +57,7 @@ Here's an example of what the spreadsheet might look like:
 
 ![sample spreadsheet](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
-Given the preceding spreadsheet, you want to use Microsoft Flow to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
+Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
 
 Let's create the flow.
 
@@ -209,4 +209,4 @@ Here's the implementation of the **and** expression that identifies all persons 
 
 ## Use functions in expressions
 
-Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)

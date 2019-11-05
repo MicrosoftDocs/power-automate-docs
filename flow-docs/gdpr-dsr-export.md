@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Export Requests  | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Export Requests.
+title: Power Automate GDPR Data Subject Export Requests  | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Export Requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,34 +21,34 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Export Requests for Microsoft Flow
+# Responding to GDPR Data Subject Export Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Microsoft Flow.
+As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Power Automate.
 
 ## Manage Export requests
 
 The *right of data portability* allows a data subject to request a copy of their personal data in an electronic format (that’s a “structured, commonly used, machine readable, and interoperable format”) that may be transmitted to another data controller.
 
-Microsoft Flow offers the following experiences to find or export personal data for a specific user:
+Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/).
+* **Website access:** sign into the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/).
 
 * **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Customer data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
-|Run history|Microsoft Flow Maker Portal||
-|Flows|Microsoft Flow Maker Portal||
-|Flow permissions| Microsoft Flow Maker Portal and Microsoft Flow Admin Center||
+|Run history|Power Automate Maker Portal||
+|Flows|Power Automate Maker Portal||
+|Flow permissions| Power Automate Maker Portal and Power Automate Admin Center||
 |User details||PowerApps cmdlets|
-|Connections|Microsoft Flow Maker Portal|PowerApps cmdlets |
-|Connection permissions|Microsoft Flow Maker Portal|PowerApps cmdlets |
-|Custom connectors|Microsoft Flow Maker Portal|PowerApps cmdlets |
-|Custom connector permissions|Microsoft Flow Maker Portal|PowerApps cmdlets |
-|Gateway|Microsoft Flow Maker Portal|On-premises Data Gateway PowerShell cmdlets|
-|Gateway permissions|Microsoft Flow Maker Portal|On-premises Data Gateway PowerShell cmdlets|
+|Connections|Power Automate Maker Portal|PowerApps cmdlets |
+|Connection permissions|Power Automate Maker Portal|PowerApps cmdlets |
+|Custom connectors|Power Automate Maker Portal|PowerApps cmdlets |
+|Custom connector permissions|Power Automate Maker Portal|PowerApps cmdlets |
+|Gateway|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
+|Gateway permissions|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 
 ## Export a flow
 
@@ -70,7 +70,7 @@ Your flow will now be available as a zipped package. For more information, see t
 
 Run history includes a list of all executions that have occurred for a flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
-Either an end user or an administrator, who has been granted access to the flow through the Microsoft Flow Admin Center, can follow these steps to export this data:
+Either an end user or an administrator, who has been granted access to the flow through the Power Automate Admin Center, can follow these steps to export this data:
 
 1. Sign into [Power Automate](https://flow.microsoft.com/).
 1. Select the **My flows** link, and then select the flow for which you want to export the run history.
@@ -148,7 +148,7 @@ Follow these steps to export a list of customer connectors:
 
     ![Export custom connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
 
-In addition to the experience provided in Microsoft Flow, you can use the Get-Connector function from the [PowerApps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
+In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [PowerApps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
 
 ~~~~
 Add-PowerAppsAccount
@@ -188,7 +188,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## Export approval history
 
-Microsoft Flow Approvals History captures a historical record of approvals that have been received or sent for a user. Any user can view their approval history by:
+Power Automate Approvals History captures a historical record of approvals that have been received or sent for a user. Any user can view their approval history by:
 
 1. Signing into [Power Automate](https://flow.microsoft.com/), selecting **Approvals**, and then selecting **History**.
 

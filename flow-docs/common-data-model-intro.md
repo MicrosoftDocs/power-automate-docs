@@ -25,7 +25,7 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Improve operational efficiency with a unified view of business data by creating flow that uses the [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
-For example, leverage the Common Data Service within Microsoft Flow in these key ways:
+For example, leverage the Common Data Service within Power Automate in these key ways:
 
 * Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
   
@@ -42,7 +42,7 @@ For example, leverage the Common Data Service within Microsoft Flow in these key
 * If you haven't used the Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
 ## Sign in to your Environment
-1. Open the [Microsoft Flow portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
+1. Open the [Power Automate portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
    
     **Note**: you might need to open the top-left menu to show the **Sign in** button.
    
@@ -65,7 +65,7 @@ For example, leverage the Common Data Service within Microsoft Flow in these key
 3. Click or tap **Use this template**.
    
     ![Use template](./media/common-data-model-intro/use-template.png)
-4. If you haven't already created a connection from Microsoft Flow to Dynamics 365, click or tap **Sign in**, and then provide your credentials if prompted.
+4. If you haven't already created a connection from Power Automate to Dynamics 365, click or tap **Sign in**, and then provide your credentials if prompted.
    
     ![Sign in to Dynamics 365](./media/common-data-model-intro/dynamics-signin.png)
 5. Click or tap **Continue**.
