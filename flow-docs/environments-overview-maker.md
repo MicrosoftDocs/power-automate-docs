@@ -1,5 +1,5 @@
 ---
-title: Learn about Microsoft Flow environments| Microsoft Docs
+title: Learn about Power Automate environments| Microsoft Docs
 description: Learn how to use environments to isolate your flows
 services: ''
 suite: flow
@@ -24,7 +24,7 @@ search.audienceType:
 # Choosing an environment
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This article introduces you to Microsoft Flow **environments** in which you can create, and securely isolate your flows, gateways, connections, and other resources.
+This article introduces you to Power Automate **environments** in which you can create, and securely isolate your flows, gateways, connections, and other resources.
 
 You'll learn about:
 
@@ -44,11 +44,11 @@ You want to create a flow that uses a connection to the Microsoft Common Data Se
 You're creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow.|Create an environment and add only the HR users to it. Place the flow and any other resources the flow uses into this environment.
 There are users in Europe who use a flow to show SharePoint data.|Create an environment in Europe, and then create your flow and the SharePoint connection in it. This Europe environment gives the European users the best performance, since all resources are local to Europe (data locality).
 
-To create environments, you must be a Microsoft Flow administrator. Administrators control who has access to environments. For details on how you can create and manage environments, see the [administer environments](environments-overview-admin.md) topic.
+To create environments, you must be a Power Automate administrator. Administrators control who has access to environments. For details on how you can create and manage environments, see the [administer environments](environments-overview-admin.md) topic.
 
 ## Switching environments
 
-Microsoft Flow makes it easy to switch between environments. When you switch environments, you see only items that are created in that specific environment; you won't see or have access to items in any other environment.
+Power Automate makes it easy to switch between environments. When you switch environments, you see only items that are created in that specific environment; you won't see or have access to items in any other environment.
 
 Here's an example.
 
@@ -67,7 +67,7 @@ Follow these steps to switch environments:
 1. To switch to another environment, select that environment in the list:
 
    ![select an environment to switch to](./media/environments-overview-maker/select-europe.png)
-1. Microsoft Flow switches to the new environment.
+1. Power Automate switches to the new environment.
 
 ## Create flows in the right environment
 

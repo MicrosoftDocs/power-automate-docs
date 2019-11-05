@@ -31,7 +31,7 @@ Trigger your flows by pressing a physical button, known as a Flic, from Shortcut
 > 
 
 ## Prerequisites
-To use Flics with Microsoft Flow, you must have:
+To use Flics with Power Automate, you must have:
 
 * Access to [Power Automate](https://flow.microsoft.com).
 * Downloaded Flic's [Android](https://play.google.com/store/apps/details?id=io.flic.app) or [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) mobile app, and used it to pair one or more Flics.
@@ -47,12 +47,12 @@ This screenshot shows a sample of what your Flic configuration process might be 
 
 ![configure Flics](./media/flic-button-flows/configure-flic-actions.png)
 
-After you've linked a Flic event to Microsoft Flow, you can then select that Flic as a trigger for your flows. You select triggers later in this walkthrough.
+After you've linked a Flic event to Power Automate, you can then select that Flic as a trigger for your flows. You select triggers later in this walkthrough.
 
 ## Create a flow that's triggered by a Flic
 In this walkthrough, we use a Flic to run a flow that records the time a consultant spends at each client. The consultant presses the Flic once upon arrival, and then presses it again, just before departure from the client. Each press of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
-Note: Be sure you've used the Flic mobile app to pair, and configure at least one **click** action to trigger Microsoft Flow. In this screenshot, I've configured the **click** action to trigger Microsoft Flow. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
+Note: Be sure you've used the Flic mobile app to pair, and configure at least one **click** action to trigger Power Automate. In this screenshot, I've configured the **click** action to trigger Power Automate. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
 
    ![flic config](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -129,7 +129,7 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
 2. Open your worksheet in Google Sheets. You should see the **ClickType** and the **Timestamp** columns populated with the "click" and the time, respectively.
    
     ![see run results](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. You can also see the results of the run from the Microsoft Flow website or from the Microsoft Flow mobile app. Here's a screenshot of my test run.
+3. You can also see the results of the run from the Power Automate website or from the Power Automate mobile app. Here's a screenshot of my test run.
    
     ![save your flow](./media/flic-button-flows/flic-test-run-results-portal.png)
 4. Here's what the body of the notification email that I received from the run of the flow looks like.
@@ -141,5 +141,5 @@ For extra credit, consider extending the flow to automatically record your locat
 ## More information
 * [Share button flows](share-buttons.md).
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
-* Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 

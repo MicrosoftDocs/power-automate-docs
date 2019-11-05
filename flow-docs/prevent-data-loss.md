@@ -1,6 +1,6 @@
 ---
 title: Introduction to data loss prevention (DLP) policies. | Microsoft Docs
-description: Introduction to data loss prevention policies for Microsoft Flow.
+description: Introduction to data loss prevention policies for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -28,11 +28,11 @@ This document introduces you to data loss prevention policies, which help protec
 
 ## What's a data loss prevention policy?
 
-An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Microsoft Flow provides you with the ability to create, and enforce policies that define which consumer connectors can access and share business data. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
+An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Automate provides you with the ability to create, and enforce policies that define which consumer connectors can access and share business data. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
 ## Why create a DLP policy?
 
-You create DLP policy to clearly define which consumer connectors may access and share your business data. For example, an organization that uses Microsoft Flow may not want its business data in SharePoint to be automatically published to its Twitter feed. To prevent this, you create a DLP policy that blocks SharePoint data from being used as the source for tweets.
+You create DLP policy to clearly define which consumer connectors may access and share your business data. For example, an organization that uses Power Automate may not want its business data in SharePoint to be automatically published to its Twitter feed. To prevent this, you create a DLP policy that blocks SharePoint data from being used as the source for tweets.
 
 ## Benefits of a DLP policy
 
@@ -46,7 +46,7 @@ You create DLP policy to clearly define which consumer connectors may access and
 * Either environment admin or tenant admin permissions.
 
     You can learn more about permissions in the [environments article](environments-overview-admin.md).
-* A [Microsoft Flow P2 license](billing-questions.md).
+* A [Power Automate P2 license](billing-questions.md).
 
 ## Create a DLP policy
 
@@ -56,7 +56,7 @@ To create a DLP policy, you must have permissions to at least one environment.
 
 Follow these steps to create a DLP policy that prevents data in your company’s SharePoint site from being published to Twitter:
 
-1. Sign into the [Microsoft Flow Admin center](https://admin.flow.microsoft.com) (Admin center).
+1. Sign into the [Power Automate Admin center](https://admin.flow.microsoft.com) (Admin center).
 
 1. Select the Data Policies tab, and then select the **New policy** link:
 
@@ -181,7 +181,7 @@ Only tenant and environment admins can create and modify DLP policies. Learn mor
 
 ## Custom and HTTP connectors
 
-Custom and HTTP connectors must be added to DLPs using either a Microsoft Flow template or a PowerShell.
+Custom and HTTP connectors must be added to DLPs using either a Power Automate template or a PowerShell.
 
 > [!TIP]
 > You can't downgrade from schema version 2018-11-01. HTTP support cannot be removed from a policy. If you attempt to remove HTTP support, the DLP policy might be corrupted. Further, if a DLP policy is updated to support HTTP connectors, current flows using these HTTP capabilities might be shut off.
@@ -211,6 +211,6 @@ To add support for custom connectors and/or HTTP connectors to a policy using th
 ## Next steps
 
 * [Learn more about environments](environments-overview-admin.md)
-* [Learn more about Microsoft Flow](getting-started.md)
+* [Learn more about Power Automate](getting-started.md)
 * [Learn more about the admin center](admin-center-introduction.md)
 * [Learn more about data integration](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)

@@ -44,7 +44,7 @@ This type of approval workflow is useful in an organization that requires a pers
     You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
-> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.
+> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Power Automate supports.
 >
 >
 
@@ -119,7 +119,7 @@ Congratulations, your flow is complete! If you followed along, your flow resembl
 
 ![overall flow image](media/all-assigned-must-approve/overall-flow.png)
 
-Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Microsoft Flow mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
+Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Power Automate mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
 
 Here's an example of the approval request that's sent to each approver.
 

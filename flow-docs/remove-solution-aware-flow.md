@@ -32,7 +32,7 @@ Action|Result
 Remove from this solution|The flow is removed from the selected solution, but it remains in the environment. You can use the flow in other solutions in the environment at a later date.
 Delete from this environment|The flow is deleted; it is not available in the environment.
 
-1. Sign in to Microsoft Flow, and then select **Solutions** from the navigation bar.
+1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains the flow you want to delete.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)

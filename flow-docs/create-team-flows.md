@@ -1,6 +1,6 @@
 ---
 title: Learn how to add other owners to a flow and create team flows | Microsoft Docs
-description: Microsoft Flow makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows.
+description: Power Automate makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -43,7 +43,7 @@ If you're the creator or an owner of a team flow, you'll find it listed on the *
 Owners can use services in a flow but can't modify the credentials for a connection that another owner created.
 
 ## Prerequisites
-You must have a [paid Microsoft Flow plan](https://flow.microsoft.com/pricing/) to create a team flow. Additionally, you must be the creator or owner to add/remove owners from a team flow.
+You must have a [paid Power Automate plan](https://flow.microsoft.com/pricing/) to create a team flow. Additionally, you must be the creator or owner to add/remove owners from a team flow.
 
 ## Create a team flow
 Follow these steps to create a team flow or to add more owners to a team flow.
@@ -76,7 +76,7 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 ## Remove an owner
 
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Microsoft Flow services, you should update the credentials for those connections so that the flow continues to run properly.
+> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow continues to run properly.
 > 
 > 
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Account Close Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn to use Microsoft Flow to respond to GPDR Data Subject Account Close Requests for Microsoft Accounts.
+title: Power Automate GDPR Data Subject Account Close Requests for Microsoft Accounts (MSA) | Microsoft Docs
+description: Learn to use Power Automate to respond to GPDR Data Subject Account Close Requests for Microsoft Accounts.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Account Close Requests for Microsoft Flow
+# Responding to GDPR Data Subject Account Close Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When users decide to close their Microsoft Account (MSA), the user's underlying data is also deleted.
@@ -56,9 +56,9 @@ These steps describe how to self-serve Account Close requests for GDPR.
 
     ![Account Closed](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
-    At the end of this 30-day window, the process to delete all Microsoft Flow resources for this MSA begins.
+    At the end of this 30-day window, the process to delete all Power Automate resources for this MSA begins.
 
 ## Learn more
 
 * Get started with [Power Automate](getting-started.md)
-* Learn [what's new](release-notes.md) with Microsoft Flow
+* Learn [what's new](release-notes.md) with Power Automate

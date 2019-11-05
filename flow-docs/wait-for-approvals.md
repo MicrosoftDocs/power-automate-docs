@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Wait for approval in Microsoft Flow
+# Wait for approval in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]

@@ -1,6 +1,6 @@
 ---
-title: Manage SharePoint page approvals with Microsoft Flow | Microsoft Docs
-description: Learn how to manage SharePoint page approvals with Microsoft Flow..
+title: Manage SharePoint page approvals with Power Automate | Microsoft Docs
+description: Learn how to manage SharePoint page approvals with Power Automate..
 services: ''
 suite: flow
 documentationcenter: na
@@ -17,10 +17,10 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ---
 
-# Manage SharePoint page approvals with Microsoft Flow
+# Manage SharePoint page approvals with Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-SharePoint site admins can use Microsoft Flow to require new or updated site pages to be approved before being published.
+SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
 
 In this article, you'll learn how to configure your SharePoint site to use a flow to require changes to the site to be approved before they go live.
 
@@ -67,7 +67,7 @@ Approvers receive an email whenever there's a page approval request. They can ei
 
 ## Customize page approval flows
 
-Because page approvals use Microsoft Flow behind the scenes, the page approval flow is available for site owners to modify and add any custom business logic in the flow. To modify the flow, the site owner can select **Flows** and then select **See your flows** in the pages library to find the page approval flow.
+Because page approvals use Power Automate behind the scenes, the page approval flow is available for site owners to modify and add any custom business logic in the flow. To modify the flow, the site owner can select **Flows** and then select **See your flows** in the pages library to find the page approval flow.
 
 ## Learn more
 

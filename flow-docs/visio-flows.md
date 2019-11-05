@@ -26,14 +26,14 @@ search.audienceType:
 # Design flows in Microsoft Visio
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-The Microsoft Flow designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Microsoft Flow.
+The Power Automate designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Power Automate.
 
 >[!TIP]
 > Many processes share a common model but have minor variations throughout an organization. You can save time within your organization by using Visio to create a master workflow model that others will then adjust with specialized parameters.
 
 ## Prerequisites
 
-- A Microsoft Flow account.
+- A Power Automate account.
 - The Microsoft Visio desktop app (English version).
 - Expertise in using Microsoft Visio.
 
@@ -66,12 +66,12 @@ The Microsoft Flow designer is a rich tool in which you can configure every deta
 
    ![BPMN basic shapes](./media/visio-flows/bpmn-basic-shapes.png)
 
-## Prepare to export your workflow to Microsoft Flow
+## Prepare to export your workflow to Power Automate
 
-Follow these steps to prepare your workflow so that you can export it to Microsoft Flow.
+Follow these steps to prepare your workflow so that you can export it to Power Automate.
 
 1. Select the **Process** tab.
-1. Select **Prepare to Export** from the **Microsoft Flow** group of icons.
+1. Select **Prepare to Export** from the **Power Automate** group of icons.
 
    ![Select the prepare to export icon](./media/visio-flows/prepare-export-icon.png)
    
@@ -79,16 +79,16 @@ Follow these steps to prepare your workflow so that you can export it to Microso
 
    ![Prepare export group](./media/visio-flows/prepare-export-group.png)
 
-1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Microsoft Flow controls. 
+1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate controls. 
 
-1. On the **Triggers and Actions** tab of the **Prepare to Export** group, map your BPMN diagram to Microsoft Flow triggers and actions by selecting each shape and then selecting either a trigger or action to represent that shape in Microsoft Flow.
+1. On the **Triggers and Actions** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate triggers and actions by selecting each shape and then selecting either a trigger or action to represent that shape in Power Automate.
 
 Your workflow is ready to be exported when there are no issues remaining on the **Prepare to Export** control.
 
 ![No issues](./media/visio-flows/prepare-export-no-issues.png) 
 
 ## Export your workflow
-1. Select the **Export to Flow** button to export your workflow diagram to Microsoft Flow.
+1. Select the **Export to Flow** button to export your workflow diagram to Power Automate.
 1. Name your flow and then select the **Create flow** button.
    
    ![Create the flow](./media/visio-flows/export-create-flow.png)
@@ -97,14 +97,14 @@ Your workflow is ready to be exported when there are no issues remaining on the 
 
     ![Success](./media/visio-flows/export-create-flow-success.png)
 
-You can now run or make edits to your flow from the Microsoft Flow designer, just like any other flow.
+You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 
 >[!TIP]
 > Use Visio’s sharing and commenting capabilities to collaborate with multiple stakeholders and create a complete workflow quickly.
 
 ## Learn more
 
-- [Get started with Microsoft Flow](getting-started.md) 
+- [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)
 - [Design a flow with Microsoft Visio](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a)
 

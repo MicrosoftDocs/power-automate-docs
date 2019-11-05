@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Requests Discovery | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Discovery Requests.
+title: Power Automate GDPR Data Subject Requests Discovery | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Discovery Requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,12 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Discovery Requests for Microsoft Flow
+# Responding to GDPR Data Subject Discovery Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The first step in responding to a DSR is finding personal data that is the subject of the request. This first step helps you to determine whether a DSR meets your organization's requirements for honoring or declining a DSR request. For example, after finding and reviewing the personal data at issue, you may determine the request doesn’t meet your organization’s requirements because doing so may adversely affect the rights and freedoms of others.
 
-Below is a summary of the types of Microsoft Flow resources that contain personal data for a specific user.
+Below is a summary of the types of Power Automate resources that contain personal data for a specific user.
 
 |**Resources containing personal data**|**Purpose**|
 |-----|-----|
@@ -41,5 +41,5 @@ Below is a summary of the types of Microsoft Flow resources that contain persona
 |Connection permissions|Permissions for a specific connection. [Learn more](https://docs.microsoft.com/flow/add-manage-connections)|
 |Custom connectors|Custom connectors that a user has created and published that allows for connectivity to custom or third-party systems. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)|
 |Custom connector permissions|Permission lists for Custom connectors. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/share)|
-|Gateway|Gateways are on-premises data services that can be installed by a user to transfer data quickly and securely between Microsoft Flow and a data source that isn’t in the cloud. [Learn more](https://docs.microsoft.com/flow/gateway-manage)|
+|Gateway|Gateways are on-premises data services that can be installed by a user to transfer data quickly and securely between Power Automate and a data source that isn’t in the cloud. [Learn more](https://docs.microsoft.com/flow/gateway-manage)|
 |Gateway permissions|Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)|
