@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Choosing an environment
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 This article introduces you to Microsoft Flow **environments** in which you can create, and securely isolate your flows, gateways, connections, and other resources.
 

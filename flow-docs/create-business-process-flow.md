@@ -24,6 +24,7 @@ search.audienceType:
   - enduser
 ---
 # Tutorial: Create a business process flow to standardize processes
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 This tutorial shows you how to create a business process flow with PowerApps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   

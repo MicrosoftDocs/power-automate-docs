@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow that uses the Common Data Service
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Improve operational efficiency with a unified view of business data by creating flow that uses the [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
 For example, leverage the Common Data Service within Microsoft Flow in these key ways:

@@ -21,6 +21,7 @@ search.audienceType:
   - developer
 ---
 # Integrate Microsoft Flow with websites and apps
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Embed Microsoft Flow into your app or website using *flow widgets* to give your users a simple way to automate their personal or professional tasks.
 
@@ -34,14 +35,14 @@ Widgets can be simple. For example, a widget that renders a list of templates wi
 - A work or school account
 
 ## Use the unauthenticated widget
-To use unauthenticated temple, embed it directly the host application in an iframe. You don't need a JS SDK or an access token. 
+To use the unauthenticated templates widget, embed it directly into the host application using an iframe. You don't need the JS SDK or an access token. 
 
 ### Show templates for your scenarios
 To start, add this code to show the Microsoft Flow templates on your website:
 
 ```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
-&pagesize={number of templates}&destination={destination}"></iframe>
+&pagesize={number of templates}&destination={destination}&category={category}"></iframe>
 ```
 
 | Parameter | Description |
@@ -50,8 +51,9 @@ To start, add this code to show the Microsoft Flow templates on your website:
 | search term |The search term for the templates that you want to show in the view. For example, search `wunderlist` to show templates for Wunderlist. |
 | number of templates |The number of templates that you want to show in the view. |
 | destination |The page that opens when users select the template. Enter `details` to show the details about the template, or enter `new` to open the Microsoft Flow designer. |
+| category |Filters to the given template category. | 
 | parameters.{name} |Additional context to pass into the flow. |
-| templateCategory | Filters to the given template category                     | 
+
 
 If the destination parameter is `new`, the Microsoft Flow designer opens when users select a template. Users can then create a flow in the designer. See the next section if you want to have the full experience from the widget.
 
@@ -60,7 +62,7 @@ If the destination parameter is `new`, the Microsoft Flow designer opens when us
 If the user is in a specific context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *Notify me when an item is added to a list* while looking at a certain list in Wunderlist. Follow these steps to pass in the list ID as a *parameter* to the flow:
 
 1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`.
-1. Pass the parameter in the iframe src. For example, add `&parameters.listName={the name of the list}` if you have a parameter called **listName**.
+1. Pass the parameter in the query string of the iframe src. For example, add `&parameters.listName={the name of the list}` if you have a parameter called **listName**.
 
 ### Full sample
 
@@ -73,15 +75,15 @@ To show the top four Wunderlist templates in German and to start the user with *
 
 ## Use the authenticated flow widgets
 
-The following table shows the list of Microsoft Flow widgets that support the full experience within the widget using user authentication access token. You will need to use Microsoft Flow's Javascript Software Developer Kit (JS SDK) to embed the widgets and provide the required user access token.
+The following table shows the list of Microsoft Flow widgets that support the full experience within the widget using user authentication access token. You will need to use Microsoft Flow's JavaScript Software Developer Kit (JS SDK) to embed the widgets and provide the required user access token.
 
 | Widget type    | Supported feature                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
-| Flows          | Shows a list of flows in a tab for personal and shared flows. Edit an existing flow or create a new flow from a template or blank. | 
-| FlowCreation   | Creates a flow from a template Id that the host application provides.                                                                | 
-| Runtime        | Triggers a manual or hybrid-trigger flow that the host application provides.                                                        | 
-| ApprovalCenter | Embeds approval requests and sent approvals.                                                                                        | 
-| Templates      | Shows a list of templates. The user chooses one to create a new flow.                                                                         | 
+| flows          | Shows a list of flows in a tab for personal and shared flows. Edit an existing flow or create a new flow from a template or blank. | 
+| flowCreation   | Creates a flow from a template Id that the host application provides.                                                                | 
+| runtime        | Triggers a manual or hybrid-trigger flow that the host application provides.                                                        | 
+| approvalCenter | Embeds approval requests and sent approvals.                                                                                        | 
+| templates      | Shows a list of templates. The user chooses one to create a new flow.                                                                         | 
 
 Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to  Microsoft Flow). You'll need to sign the user in with their Microsoft Account or Azure Active Directory to use the authenticated SDK.
 
@@ -96,7 +98,7 @@ Microsoft Flow widgets work by embedding an iframe that references Microsoft Flo
 
 ### JS SDK details
 
-The Microsoft Flow team provides the JS SDK to facilitate integrating Flow widgets in third-party applications. Flow JS SDK is available as a public link in the Flow service and lets the host application handle events from the widget and interact with the Flow application by sending actions to the widget. Widget events and actions are specific to the widget type.
+The Microsoft Flow team provides the JS SDK to facilitate integrating Flow widgets in third-party applications. The Flow JS SDK is available as a public link in the Flow service and lets the host application handle events from the widget and interact with the Flow application by sending actions to the widget. Widget events and actions are specific to the widget type.
 
 ### Widget initialization
 
@@ -111,14 +113,14 @@ Create a JS SDK instance by passing optional hostName and locale values in a JSO
 ```javascript
 var sdk = new MsFlowSdk({
     hostName:'https://flow.microsoft.com',
-    locale:'en-US',
+    locale:'en-US'
 }); 
 ```
 
 | Name     | Required/Optional | Description                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
 | `hostName` | Optional          | Microsoft Flow host name, for example, https://flow.microsoft.com        | 
-| `locale`   | Optional          | Client locale for the widget (defaults to `en-Us` if not passed) | 
+| `locale`   | Optional          | Client locale for the widget (defaults to `en-Us` if not specified) | 
 
 
 Once the JS SDK instance is created you can initialize and embed a Microsoft Flow widget in a parent element in the host application. To do so, add an HTML div:
@@ -127,15 +129,15 @@ Once the JS SDK instance is created you can initialize and embed a Microsoft Flo
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
-Then, initialize the Microsoft Flow widget with the JS SDK renderWidget() method. Be sure to provide the widget type and corresponding settings.
+Then, initialize the Microsoft Flow widget with the JS SDK `renderWidget()` method. Be sure to provide the widget type and corresponding settings.
 
 ```javascript
 var widget = sdk.renderWidget('<widgettype>', {
-        container: 'flow-div',
+        container: 'flowDiv',
         flowsSettings: {},
         templatesSettings: {},
         approvalSettings: {},
-        widgetStyleSettings: {},
+        widgetStyleSettings: {}
 });
 ```
 
@@ -158,7 +160,7 @@ These are the parameters for `renderWidget()`:
 
 | Parameter        | Required/Optional | Description                                                                                 | 
 |------------------|-------------------|---------------------------------------------------------------------------------------------| 
-| `container`        | Required          | Id of a DIV element on the host page where the widget will be embedded                      | 
+| `container`        | Required          | Id of a DIV element on the host page where the widget will be embedded.                   | 
 | `environmentId`    | Optional          | Widgets need an environment Id. If you don't provide an Id, a default environment is used. | 
 | `flowsSettings`    | Optional          | Microsoft Flow settings object                                                                        | 
 | `templateSettings` | Optional          | Template settings object                                                                    | 
@@ -419,9 +421,8 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 
 ### Running the sample
 <!-- todo where should I download from? -->
-<!-- todo is this a misspelling: applicaionConfig -->
 1.  Download the sample and copy it to a local folder on your device.
-2.  Open the index.html file under the FlowSDKSample folder and modify the `applicaionConfig` to update the `clientID` to the application ID you registered earlier.
+2.  Open the index.html file under the FlowSDKSample folder and modify the `applicationConfig` to update the `clientID` to the application ID you registered earlier.
     ![widget architecture](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
 3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** You can configure additional scopes by updating the **flowScopes** property in **applicationConfig** object.
 4.  Run these commands to install the dependency and run the sample app:

@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Manage approval requests in Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Microsoft Flow makes it easy to automate [approval workflow processes](modern-approvals.md). In this walkthrough, you learn how to view, approve, and reject approval requests sent from Microsoft Flow.
 
 ## View pending approval requests

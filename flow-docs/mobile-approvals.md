@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Approve requests on your mobile device by using Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 If a flow identifies you as an approver and you've installed the mobile app for Microsoft Flow, you receive a push notification whenever your approval is requested.
 
 This article walks you through a few common scenarios that you’re likely to encounter while you manage approval requests in the mobile app for Microsoft Flow.

@@ -23,6 +23,7 @@ search.audienceType:
 ---
 
 # Export a solution
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Follow these steps to move your solution and its dependencies to a new environment:
 

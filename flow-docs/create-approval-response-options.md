@@ -23,6 +23,7 @@ search.audienceType:
 ---
 
 # Create custom response options for approval flows
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Let’s say you want to send an approval request each time an employee uploads an expense report to SharePoint and then allow the approver to respond with one of three options: Accept, Need more info, or Reject.
 

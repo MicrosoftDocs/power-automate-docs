@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Learn all about data groups
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## What is a data group?
 Data groups are a simple way to categorize services within a [data loss prevention (DLP) policy](prevent-data-loss.md). The two data groups available are the **Business data only** group and the **No business data allowed** group. Organizations are free to determine which services are placed into a particular data group. A good way to categorize services is to place them in groups, based on the impact to the organization. By default, all services are placed into the **No business data allowed** data group. You manage the services in a data group when you create or modify the properties of a DLP policy from the admin center.
 

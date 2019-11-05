@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Start to build with Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Here are some of the ways you can extend your application with Microsoft Flow:
 

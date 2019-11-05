@@ -22,6 +22,7 @@ search.audienceType:
   - admin
 ---
 # Billing and metering questions
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 This article answers frequently asked questions regarding billing and metering in Microsoft Flow.
 

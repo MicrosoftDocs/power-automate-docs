@@ -22,6 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Manage sequential approvals with Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
 
 In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
