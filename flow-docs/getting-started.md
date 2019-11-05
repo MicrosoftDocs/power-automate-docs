@@ -35,7 +35,7 @@ The main types of flows are [automated](get-started-logic-flow.md), [button](int
 
 ## Types of flows
 
-Power Automate is one of the three pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
+Power Automate is one of the four pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
