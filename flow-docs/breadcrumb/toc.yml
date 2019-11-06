@@ -5,13 +5,14 @@
   - name: Power Platform
     href: /power-platform/
     topicHref: /power-platform/
-  - name: Flow
-    tocHref: /flow/
-    topicHref: /flow/
     items:
-    - name: Guided Learning
-      tocHref: /flow/guided-learning/
-      topicHref: /flow/guided-learning/
+    - name: Flow
+      tocHref: /flow/
+      topicHref: /flow/
+      items:
+      - name: Guided Learning
+        tocHref: /flow/guided-learning/
+        topicHref: /flow/guided-learning/
 
         
         
