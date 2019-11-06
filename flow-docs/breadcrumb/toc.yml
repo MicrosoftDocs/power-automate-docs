@@ -2,6 +2,9 @@
   href: /
   topicHref: /
   items:
+  - name: Power Platform
+    href: /power-platform/
+    topicHref: /power-platform/
   - name: Flow
     tocHref: /flow/
     topicHref: /flow/
