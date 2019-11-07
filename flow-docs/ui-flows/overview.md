@@ -35,8 +35,7 @@ UI flows provides Robotic Process Automation (RPA) capabilities to Power Automat
 > [!IMPORTANT]
 > - This is a preview feature.
 > - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
-
-> [!IMPORTANT] UI flows is currently rolling out across regions. If you either don't see the feature, cannot create UI flows or have an error as you try to run it within a Flow, please retry later.
+> - The UI flows feature is currently rolling out across regions. If you don't see the feature in your environement, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
 
 You can jump right in:
 
