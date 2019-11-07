@@ -28,6 +28,9 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
+> [!IMPORTANT]
+> The UI flows feature is currently rolling out across regions. If you don't see the feature in your environement, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
+
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
 > [!TIP]
@@ -46,10 +49,6 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
     or Google Chrome.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
-
-> [!IMPORTANT]
-> UI flows is currently rolling out across regions. If you don't see the preview feature or cannot create new UI flows, please retry later.
-
 
 ## Limitations
 
