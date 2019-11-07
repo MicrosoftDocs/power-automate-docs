@@ -28,22 +28,19 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-
-Create desktop UI flows to automate Windows desktop applications. 
-
 Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
 
+
+## Create a desktop UI flow
+
+In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
 > [!TIP]
 > You can automate other Windows desktop apps by following a similar pattern.
 
-## Create a desktop UI flow
-
-In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use. 
-
 1. Ensure your [device is ready](setup.md) to create UI flows. <!--Todo: link to the prereqs section-->
 
-1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with a work or school email account.
+1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
 
 1. Select **My flows** > **UI flows (preview)** > **New**.
 
@@ -82,6 +79,10 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select the first number, select **+**, select the second number, and then select **=**.
 
     ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
+    
+     >[!TIP] You will improve automation reliability by:
+     > - Opening and maximizing the apps you want to record before *before* you start recording
+     > - Starting your recording with a click the app title bar to bring it in focus.
 
 1. Select **Done** on the recorder control after you complete the actions you want to record.
 
@@ -90,7 +91,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select the card that starts with "Run <app name> script" to view screenshots of the recorded steps.
 
      >[!TIP]
-     >Select **...** > **Delete** to remove any extra steps that you may want to remove.
+     >Select **...** > **Delete** to remove any duplicate steps.
 
     ![Show recorded steps](../media/create-windows-ui-flow/show-recorded-steps.png "Show recorded steps")
 
@@ -98,19 +99,22 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **Next** to skip the optional **Set up outputs** step since we aren't using outputs in this walkthrough.
 
-## Test your UI flow
-
-It's always a great idea to test your UI flow. To do this, select the **Test now** button, and then watch your UI flow run.
+1. Test your UI flow by selecting the **Test now** button, and then watch your UI flow run.
     
  >[!IMPORTANT]
  >For best results, do not interact with your device for the duration of playback.
 
-1. Select **Save and exit** to save your flow and exit the UI flows feature.
+1. Select **Save and exit** to save your UI flow.
 
+## Next steps
+
+- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+
+- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
 ## Known issues and solutions
 
-- Open and maximize the apps you want to record before *before* you start recording.
+- Screenshots are currently lost after saving. We are working on a fix.
 
 - You may want to add a [**Close** action](edit-desktop.md#add-a-manual-action) at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
@@ -143,9 +147,7 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 -   Multi-screen.
 
--   Recording through a virtual machine client (Remote Desktop, Citrix, etc.),
-    either with the UI flows app running on the host device or on the virtual
-    machine. None are supported.
+-   Recording through a virtual machine client (Remote Desktop, Citrix, etc.).
 
 -   Multiple instances of an application where the main window titles are
     identical.
@@ -154,14 +156,11 @@ It's always a great idea to test your UI flow. To do this, select the **Test now
 
 -   Concurrent recording sessions on a given device.
 
--   Concurrent playback sessions on a given device. In case of simultaneous UI
-    flow runs, the first one takes precedence and the subsequent ones 
-    fail until the first one completes.
+-   Concurrent playback sessions on a given device. In case of simultaneous UI flow runs, the first one takes precedence and the subsequent ones fail until the first one completes.
 
 -   Playback on a device with a different keyboard layout than the device on which it was recorded.
 
--   Recording on a device or Windows session while the browser with Microsoft
-    Flow is on a different device or Windows session.
+-   Recording on a device or Windows session while the browser with Microsoft Flow is on a different device or Windows session.
 
 ### Unsupported action types and behaviors
 
@@ -179,16 +178,9 @@ The following actions will not be recorded:
 
 -   Open app before recording.
 
--   Closed app before playback starts.
+<!-- -   Closed app before playback starts. -->
 
 ## Unreliable behaviors and workarounds for Microsoft Office (desktop)
 - Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
 - Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
 - Some elements may not work correctly in UI flows (preview) for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
-
-## Next steps
-
-- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
-
-- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
-
