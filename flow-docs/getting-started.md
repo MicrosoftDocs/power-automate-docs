@@ -33,7 +33,7 @@ Welcome! Power Automate is a service that helps you create automated workflows b
 
 ## Types of flows
 
-Power Automate is one of the four pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
+Power Automate is one of the pillars of Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
