@@ -1,6 +1,6 @@
 ---
 title: Billing and metering questions | Microsoft Docs
-description: Answers to frequently asked questions regarding billing and metering in Microsoft Flow
+description: Answers to frequently asked questions regarding billing and metering in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -24,10 +24,10 @@ search.audienceType:
 # Billing and metering questions
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This article answers frequently asked questions regarding billing and metering in Microsoft Flow.
+This article answers frequently asked questions regarding billing and metering in Power Automate.
 
 >[!NOTE]
-> PowerApps and Microsoft Flow will use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) starting on October 1, 2019. 
+> PowerApps and Power Automate will use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) starting on October 1, 2019. 
 
 ## Where can I find out what pricing plans are available?
 
@@ -53,7 +53,7 @@ If you're on a paid plan, runs are pooled across all users in your organization.
 
 ## What happens if my usage exceeds the limits?
 
-Microsoft Flow throttles your flow runs.
+Power Automate throttles your flow runs.
 
 ## Where can I find more information regarding the usage limits?
 

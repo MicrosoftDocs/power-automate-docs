@@ -41,7 +41,7 @@ Trigger your flows by pressing a bttn (a physical button made by [The Button Cor
 You can also trigger a flow by using a [Flic physical button](flic-button-flows.md).
 
 ## Prerequisites
-* Access to [Microsoft Flow](https://flow.microsoft.com).
+* Access to [Power Automate](https://flow.microsoft.com).
 * At least one [registered bttn](https://my.bt.tn/).
 
 ## Create a flow that's triggered from a bttn
@@ -60,11 +60,11 @@ The settings for your bttn should resemble this example (from the bttn website):
 Now that you've registered and configured your bttn, let's get started creating our flow.
 
 ### Sign in and select a template
-1. Sign into [Microsoft Flow](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
    
     ![sign in](./media/bttn-button-flows/sign-into-flow.png)
    
-    Note: As an alternative, you can create flows in the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+    Note: As an alternative, you can create flows in the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Enter **bttn** into the search box, and then select the search icon.
    
     ![search](./media/bttn-button-flows/bttn-search-template.png)
@@ -74,13 +74,13 @@ Now that you've registered and configured your bttn, let's get started creating 
    
     ![support template](./media/bttn-button-flows/bttn-select-template.png)
 
-### Authorize Microsoft Flow to connect to your bttn
+### Authorize Power Automate to connect to your bttn
 1. If prompted, sign into the bttn and the Office 365 Outlook services, which will enable the **Continue** button.
    
     ![credentials](./media/bttn-button-flows/bttn-provide-credentials.png)
-2. When you sign into the bttn service, authorize Microsoft Flow to use your bttns.
+2. When you sign into the bttn service, authorize Power Automate to use your bttns.
    
-    **Important**: If you don't authorize Microsoft Flow to use your bttns, you can't see or connect to them from Microsoft Flow.
+    **Important**: If you don't authorize Power Automate to use your bttns, you can't see or connect to them from Power Automate.
    
     ![authorize](./media/bttn-button-flows/authorize-bttn.png)
 3. After you sign into both services, select **Continue**.
@@ -103,7 +103,7 @@ Now that you've registered and configured your bttn, let's get started creating 
 1. Press the button on your bttn.
 2. View your flow's run history to confirm that it ran successfully.
    
-    You can check run history on the Microsoft Flow website or on your mobile device.
+    You can check run history on the Power Automate website or on your mobile device.
    
     Note: The run status is set to **running** until someone selects **Acknowledge** in the support-request email.
 3. You can also confirm that the email was sent to the support team.
@@ -114,11 +114,11 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 ## Troubleshooting
 * If your flow wasn't triggered, sign into The Button Corporation's site and confirm whether the button activity (presses) are being recorded.
-* You can also drill into the run activity on the Microsoft Flow site and check for error messages.
+* You can also drill into the run activity on the Power Automate site and check for error messages.
 
 ## More information
 * [Share button flows](share-buttons.md).
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows run.
-* [Install the Microsoft Flow app for Android](https://aka.ms/flowmobiledocsandroid).
-* [Install the Microsoft Flow app for iOS](https://aka.ms/flowmobiledocsios).
+* [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid).
+* [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios).
 

@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage connections in Microsoft Flow
+# Manage connections in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-If you create a connection in Microsoft Flow, you can easily access your data while building a flow. Microsoft Flow includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with PowerApps, so when you create a connection in one product, the connection shows up in the other.
+If you create a connection in Power Automate, you can easily access your data while building a flow. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with PowerApps, so when you create a connection in one product, the connection shows up in the other.
 
 For example, you can use a connection to perform these tasks:
 
@@ -36,12 +36,12 @@ You can create a connection in multiple scenarios, such as these:
 
 * Creating a [flow from a template](get-started-logic-template.md)
 * Creating a [flow from blank](get-started-logic-flow.md) or updating an existing flow
-* Creating a connection in the [Microsoft Flow website][1] directly
+* Creating a connection in the [Power Automate website][1] directly
 
-This topic shows you how to manage connections in the [Microsoft Flow website][1].
+This topic shows you how to manage connections in the [Power Automate website][1].
 
 ## Add a connection
-1. In the [Microsoft Flow website][1], sign in with your work or organization account.
+1. In the [Power Automate website][1], sign in with your work or organization account.
 2. Near the upper-right corner, select the gear icon, and then select **Connections**.
    
     ![Select connections](./media/add-manage-connections/connections-menu.png)
@@ -77,7 +77,7 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
    
     ![Confirm deletion](./media/add-manage-connections/delete-confirmation.png)
 
-When you delete a connection, it's removed from both PowerApps and Microsoft Flow.
+When you delete a connection, it's removed from both PowerApps and Power Automate.
 
 ## Update a connection
 You can update a connection that isn't working because your account details or your password changed.
@@ -87,12 +87,12 @@ You can update a connection that isn't working because your account details or y
     ![Verify password](./media/add-manage-connections/verify-password.png)
 2. When prompted, update your connection with new credentials.
 
-When you update a connection, it's updated for both PowerApps and Microsoft Flow.
+When you update a connection, it's updated for both PowerApps and Power Automate.
 
 ## Troubleshoot a connection
-Depending on your organization's policies, you might need to use the same account for signing in to Microsoft Flow and creating a connection to SharePoint, Office 365 or OneDrive for Business.
+Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Office 365 or OneDrive for Business.
 
-For example, you might sign in to Microsoft Flow with *yourname@outlook.com* but be blocked when you try to connect to SharePoint with *yourname@contoso.com*. You can instead sign in to Microsoft Flow with *yourname@contoso.com* and you'll be able to connect to SharePoint.
+For example, you might sign in to Power Automate with *yourname@outlook.com* but be blocked when you try to connect to SharePoint with *yourname@contoso.com*. You can instead sign in to Power Automate with *yourname@contoso.com* and you'll be able to connect to SharePoint.
 
 <!--Reference links in article-->
 [1]: https://flow.microsoft.com

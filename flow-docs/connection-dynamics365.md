@@ -1,6 +1,6 @@
 ---
 title: Create a flow with Dynamics 365 (online) | Microsoft Docs
-description: Create useful workflows by using a Dynamics 365 connection and Microsoft Flow
+description: Create useful workflows by using a Dynamics 365 connection and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
-In Microsoft Flow, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Microsoft Flow](getting-started.md).
+In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
 > To invoke a flow trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
@@ -39,14 +39,14 @@ You can create a flow using one of the many templates available, such as these e
 
 To create a flow from a template, follow these steps.
 
-1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com/).
+1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **Services**, and then click or tap **Dynamics 365**.
 3. Several templates are available. To get started, select the template that you want.
 
 ## Create a task from a lead
 If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
 
-1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com/).
+1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **My flows**, and then click or tap **Create from blank**.
 3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
 4. If prompted, sign in to Dynamics 365.
@@ -82,7 +82,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
 ## Create a Wunderlist task from a Dynamics 365 task
 This walkthrough shows you how to create a task in [Wunderlist](https://www.wunderlist.com) whenever a task is created in Dynamics 365. Wunderlist is an Internet-based service that you can use to create to-do lists, add reminders, or track errands.
 
-1. Sign in to the [Microsoft Flow website](https://flow.microsoft.com/).
+1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **My flows**, and then click or tap **Create from blank**.
 3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
 4. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.

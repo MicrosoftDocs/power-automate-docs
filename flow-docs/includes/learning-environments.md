@@ -29,10 +29,10 @@ Environments can serve several different purposes, depending on your organizatio
 ## What are roles?
 A person with access to an environment must be be assigned either the **Environment Admin** or the **Environment Maker** role. Environment admins can perform all administrative tasks on an environment. An environment maker can create resources in an existing environment. An individual can have both roles simultaneously.  
 
-**Note**: All users will have access to a default environment when each user is given access to Microsoft Flow. Users can have access to multiple environments.  
+**Note**: All users will have access to a default environment when each user is given access to Power Automate. Users can have access to multiple environments.  
 
 ## Create an environment
-You create environments from the [Microsoft Flow admin center](https://admin.flow.microsoft.com) with these steps:  
+You create environments from the [Power Automate admin center](https://admin.flow.microsoft.com) with these steps:  
 
 1. Name your environment.
 2. Select a region where your environment will be hosted.

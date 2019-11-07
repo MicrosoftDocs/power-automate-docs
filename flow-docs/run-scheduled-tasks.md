@@ -30,7 +30,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
 * after a number of days, hours, or minutes that you specify
 
 ## Create a recurring flow
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com), and then select **My flows** in the top navigation bar.
+1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** in the top navigation bar.
    
     ![My flows option](./media/run-scheduled-tasks/create-flow.png)
 2. Select **Create from blank**.
@@ -61,7 +61,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
 6. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
 ## Delay a flow
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com), and then select **My flows** in the top navigation bar.
+1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** in the top navigation bar.
    
     ![Create a flow from blank](./media/run-scheduled-tasks/create-flow.png)
 2. Select **Create from blank**.

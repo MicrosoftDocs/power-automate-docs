@@ -13,7 +13,7 @@ First we need to add an item to our SharePoint list, then we can process an appr
    * **TweetDate** – Today’s date
      
      ![SharePoint new item](./media/learning-approval-request/sharepoint-new-tweet.png)
-3. In **Microsoft Flow**, select **My Flows**. 
+3. In **Power Automate**, select **My Flows**. 
 4. Select the **Post list items to Twitter after approval** flow that was configured in the previous topic, then select the running flow under **RUN HISTORY**.
    
     ![Run history](./media/learning-approval-request/run-history.png)

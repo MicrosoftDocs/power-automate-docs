@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Build an approval loop by using Microsoft Flow and the Microsoft Common Data Service
+# Build an approval loop by using Power Automate and the Microsoft Common Data Service
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 The Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
 
@@ -35,7 +35,7 @@ By following the steps in this section, you'll build:
 
 **Prerequisites**
 
-* Sign up for [Microsoft Flow](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
+* Sign up for [Power Automate](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ## Build the entity
@@ -106,10 +106,10 @@ By following the steps in this section, you'll build:
 7. (optional) When the list of entities reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom entities, such as the one you just created, appearing at the top.
 
 ## Sign in and create a flow
-1. Open the [Microsoft Flow portal](https://flow.microsoft.com).
+1. Open the [Power Automate portal](https://flow.microsoft.com).
 2. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
    
-    ![Sign-in button for Microsoft Flow](./media/common-data-model-approve/signin-flow.png)
+    ![Sign-in button for Power Automate](./media/common-data-model-approve/signin-flow.png)
 3. In the top right menu you select the environment that you created the database in powerapps.com.
    
     **Note**: if you do not select the same environment then you will not see your entity.

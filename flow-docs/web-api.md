@@ -12,22 +12,22 @@ ms.author: stepsic
 audience: Power user
 ---
 
-# Microsoft Flow Web API
+# Power Automate Web API
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
-This content covers the management of flows included on the **Solutions** tab in Microsoft Flow. Currently, flows under **My Flows** are not supported by these APIs.
+This content covers the management of flows included on the **Solutions** tab in Power Automate. Currently, flows under **My Flows** are not supported by these APIs.
 
 ## Compose HTTP requests
 
-To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Microsoft Flow Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
+To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Power Automate Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Microsoft Flow. Note that the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the URL of the flow).
+- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Power Automate. Note that the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the URL of the flow).
 
      ![Environment switcher](media/web-api/get-organization-id.png "Environment switcher")
 
-- The **Regional Subdomain** depends on the location of your environment. When you sign in to Microsoft Flow, you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the following table:
+- The **Regional Subdomain** depends on the location of your environment. When you sign in to Power Automate, you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the following table:
 
      ![Flow URL](media/web-api/get-region-name.png "Flow URL")
 
@@ -334,4 +334,4 @@ Authorization: Bearer ey...
 
 This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
-Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Microsoft Flow designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.

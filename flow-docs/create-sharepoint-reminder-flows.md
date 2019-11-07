@@ -20,12 +20,12 @@ ms.author: deonhe
 # SharePoint remind me
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-SharePoint lists and libraries allowed you to define custom metadata columns to track dates. With Microsoft Flow's integration with SharePoint, you can easily create reminder flows, based on DateTime columns in SharePoint. With reminder flows, you receive a personal email alert a predetermined number of days in advance of a date on any document or item in SharePoint.
+SharePoint lists and libraries allowed you to define custom metadata columns to track dates. With Power Automate's integration with SharePoint, you can easily create reminder flows, based on DateTime columns in SharePoint. With reminder flows, you receive a personal email alert a predetermined number of days in advance of a date on any document or item in SharePoint.
 
 ## Prerequisites
 - Access to Microsoft SharePoint Online.
 - A SharePoint list, or library with a DateTime column.
-- Access to Microsoft Flow.
+- Access to Power Automate.
 
 ## Create a reminder flow
 
@@ -51,11 +51,11 @@ You'll receive a reminder via email, based on the **Remind me this many day(s) i
 
 ## Edit your flow
 
-The reminder flow is like any other flow, so you can access and edit it through [Microsoft Flow](https://flow.microsoft.com).
+The reminder flow is like any other flow, so you can access and edit it through [Power Automate](https://flow.microsoft.com).
 
 ## Learn more
 
-- Getting started with [Microsoft Flow](https://flow.microsoft.com).
+- Getting started with [Power Automate](https://flow.microsoft.com).
 - Set a [reminder flow](https://support.office.com/article/set-a-reminder-flow-23c0e172-1fc1-4ac8-a9db-cd0b81d634d8) in SharePoint.
 
 

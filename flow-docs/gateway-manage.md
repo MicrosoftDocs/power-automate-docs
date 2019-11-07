@@ -1,6 +1,6 @@
 ---
 title: Learn to manage on-premises data gateways | Microsoft Docs
-description: View and install an on-premises data gateway in Microsoft Flow.
+description: View and install an on-premises data gateway in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,10 +22,10 @@ search.audienceType:
   - enduser
 ---
 
-# Manage an on-premises data gateway in Microsoft Flow
+# Manage an on-premises data gateway in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Microsoft Flow.
+Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Power Automate.
 
 With a gateway, you can connect to on-premises data over these connections:
 
@@ -47,7 +47,7 @@ With a gateway, you can connect to on-premises data over these connections:
 
 ## Prerequisites
 
-* The user name and password that you used to [sign up](sign-up-sign-in.md) for Microsoft Flow.
+* The user name and password that you used to [sign up](sign-up-sign-in.md) for Power Automate.
 * Administrative permissions on a gateway.
 
   You have these permissions by default for each gateway that you install. Also, an administrator of another gateway can grant you these permissions for that gateway.
@@ -62,18 +62,18 @@ To install a gateway, follow the steps in [Install an on-premises data gateway](
 
 ## View your gateways
 
-In the upper-right corner of the [Microsoft Flow website](https://flow.microsoft.com), select the gear icon, and then select **Gateways**.
+In the upper-right corner of the [Power Automate website](https://flow.microsoft.com), select the gear icon, and then select **Gateways**.
 
 ![Gateway under manage][1]
 
 > [!NOTE]
-> If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Microsoft Flow.
+> If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Power Automate.
 
 ## Cluster your gateways
 
 You can create [high availability clusters of on-premises data gateway installations](/data-integration/gateway/service-gateway-high-availability-clusters) to avoid single points of failure in accessing on-premises data resources.
 
-By default, Microsoft Flow uses the primary gateway in the cluster. If the primary gateway isn't available, the service switches to the next gateway in the cluster, and so on.
+By default, Power Automate uses the primary gateway in the cluster. If the primary gateway isn't available, the service switches to the next gateway in the cluster, and so on.
 
 Once you've set up a gateway cluster, you can allow traffic to be distributed across all gateways in the cluster.
 

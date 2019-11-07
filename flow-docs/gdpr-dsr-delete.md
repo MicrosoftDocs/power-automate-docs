@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Delete Requests | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Delete Requests.
+title: Power Automate GDPR Data Subject Delete Requests | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Delete Requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,12 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Delete Requests for Microsoft Flow
+# Responding to GDPR Data Subject Delete Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
-Microsoft Flow allows users to build automation workflows that are a critical part of your organization’s day-to-day operations. When a user leaves your organization, an administrator needs to manually review and determine whether or not to delete certain data and resources that the user created. There is other personal data that's automatically deleted whenever the user’s account is deleted from Azure Active Directory.
+Power Automate allows users to build automation workflows that are a critical part of your organization’s day-to-day operations. When a user leaves your organization, an administrator needs to manually review and determine whether or not to delete certain data and resources that the user created. There is other personal data that's automatically deleted whenever the user’s account is deleted from Azure Active Directory.
 
 The following table shows which personal data is automatically deleted and which data requires an administrator to manually review and delete:
 
@@ -46,9 +46,9 @@ The following table shows which personal data is automatically deleted and which
 
 **For environments that include a Common Data Service database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in the Common Data Service database. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
-For the data and resources that require manual review, Microsoft Flow offers the following experiences to find or change personal data for a specific user:
+For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
-* **Website access:** sign in to the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/)
+* **Website access:** sign in to the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/)
 
 * **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
@@ -57,23 +57,23 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
-|Environment|Microsoft Flow Admin Center|PowerApps cmdlets||
-|Environment permissions*|Microsoft Flow Admin Center|PowerApps cmdlets||
+|Environment|Power Automate Admin Center|PowerApps cmdlets||
+|Environment permissions*|Power Automate Admin Center|PowerApps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed |||Deleted through 28 day retention policy|
 |User jobs|| ||
-|Flows|Microsoft Flow Maker Portal**|||
-|Flow permissions|Microsoft Flow Maker Portal|||
+|Flows|Power Automate Maker Portal**|||
+|Flow permissions|Power Automate Maker Portal|||
 |User details||PowerApps cmdlets||
-|Connections|Microsoft Flow Maker Portal| ||
-|Connection permissions|Microsoft Flow Maker Portal| ||
-|Custom connector|Microsoft Flow Maker Portal| ||
-|Custom connector permissions|Microsoft Flow Maker Portal| ||
+|Connections|Power Automate Maker Portal| ||
+|Connection permissions|Power Automate Maker Portal| ||
+|Custom connector|Power Automate Maker Portal| ||
+|Custom connector permissions|Power Automate Maker Portal| ||
 |Approval History|Microsoft PowerApps Maker Portal*|||
 
 *With the introduction of the Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
-\*\* An admin will only be able to access these resources from the Microsoft Flow Maker Portal if the administrator has been assigned access from the Microsoft Flow Admin Center.
+\*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate Admin Center.
 
 ## Manage Delete requests
 
@@ -88,7 +88,7 @@ The steps below describe how administrative functions exist to serve delete requ
 
 These steps copy existing flows for a departing user. If you assign new ownership to the copies, these flows can continue to support existing business processes. Copying these flows is important to delete personal identifier linkages to the departing user and new connections must be established for the flow to connect with other APIs and SaaS applications.
 
-1. Sign into the [Microsoft Flow admin center](https://admin.flow.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
+1. Sign into the [Power Automate admin center](https://admin.flow.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
 
     ![View environments](./media/gdpr-dsr-delete/view-environments.png)
 
@@ -104,7 +104,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
     ![Share flow](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
+1. Sign into [Power Automate](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
 
 1. Select the ellipsis **(… )** for the flow you want to copy, and then select **Save As**.
 
@@ -120,7 +120,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
     ![Team flows](./media/gdpr-dsr-delete/team-flows.png)
 
-1. Delete the original flow by selecting the ellipsis **(…)** for it, selecting **Delete**, and then select **Delete** again when prompted. This step will also remove underlying personal identifiers that are included in system dependencies between the user and Microsoft Flow.
+1. Delete the original flow by selecting the ellipsis **(…)** for it, selecting **Delete**, and then select **Delete** again when prompted. This step will also remove underlying personal identifiers that are included in system dependencies between the user and Power Automate.
 
     ![Delete flow confirmation](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
@@ -130,9 +130,9 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. The copy now performs the same workflow logic as the original version.
 
-## Delete approval history from Microsoft Flow
+## Delete approval history from Power Automate
 
- Approval data for Microsoft Flow is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
+ Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
 1. Sign into [PowerApps](https://web.powerapps.com/).
 
@@ -264,17 +264,17 @@ As an admin you have two decisions to make when processing a DSR delete request 
 >
 >
 
-## Give access to a user’s environments from the Microsoft Flow Admin Center
+## Give access to a user’s environments from the Power Automate Admin Center
 
-An admin can grant Admin access to an environment created by a specific user from the [Microsoft Flow Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
+An admin can grant Admin access to an environment created by a specific user from the [Power Automate Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## Delete the user’s permissions to all other environments
 
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Microsoft Flow service as a “role assignment.”
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Power Automate service as a “role assignment.”
 
 With the introduction of the Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the Common Data Service database instance.
 
-For more information on removing a user's permission in an  environment, navigate to [Using environments within Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
+For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## Delete Gateway Settings
 

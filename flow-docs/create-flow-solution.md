@@ -33,7 +33,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
 ## Create the flow 
 
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **Solutions** from the navigation bar.
 
    ![](./media/create-flow-solution/select-solutions-from-left-nav.png)
@@ -46,7 +46,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
    ![](./media/create-flow-solution/select-new-flow.png)
 
-   Microsoft Flow opens.
+   Power Automate opens.
 
 1. Use the available connectors and triggers to build your flow.
 

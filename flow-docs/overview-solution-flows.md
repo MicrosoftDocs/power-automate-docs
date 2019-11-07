@@ -39,13 +39,13 @@ You must have the following components to create solutions, and solution-aware f
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - An environment with version 9.1.0.267 or later.
 
-  To check your version, go to [Microsoft Flow Admin center](https://admin.flow.microsoft.com), select **Environments**, select the environment you are interested in, and then select the **Details** tab.
+  To check your version, go to [Power Automate Admin center](https://admin.flow.microsoft.com), select **Environments**, select the environment you are interested in, and then select the **Details** tab.
 
 ## Create a solution
 
 Follow these steps to create a solution:
 
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **Solutions** from the navigation bar.
 
    ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)

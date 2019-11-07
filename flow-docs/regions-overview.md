@@ -1,6 +1,6 @@
 ---
-title: Regions overview for Microsoft Flow | Microsoft Docs
-description: Overview with question and answer about regions in Microsoft Flow
+title: Regions overview for Power Automate | Microsoft Docs
+description: Overview with question and answer about regions in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,14 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# FAQ for regions in Microsoft Flow
+# FAQ for regions in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-This document provides a list of frequently asked questions about Microsoft Flow.
+This document provides a list of frequently asked questions about Power Automate.
 
 ## How do I find out where my flow is deployed?
 Your flow is deployed in the [region](https://azure.microsoft.com/regions/) that hosts the [environment](environments-overview-admin.md). For example, if your environment is created in the Europe region, your flow is deployed in Europe data centers.
 
-Administrators can identify the region if they sign in to the Microsoft Flow [admin center](https://admin.flow.microsoft.com). The **Environments** tab lists all existing environments and their regions.
+Administrators can identify the region if they sign in to the Power Automate [admin center](https://admin.flow.microsoft.com). The **Environments** tab lists all existing environments and their regions.
 
 ![view environments](media/regions-overview/environments-list.png)
 
@@ -56,7 +56,7 @@ Gateways are:
 * Not available in the India region.
 * Supported in the default environment only, not in custom environments.
 
-## Is Microsoft Flow available in national clouds?
+## Is Power Automate available in national clouds?
 Yes. [Learn more](./us-govt.md).
 
 ## What outbound IP addresses are used in each region?
