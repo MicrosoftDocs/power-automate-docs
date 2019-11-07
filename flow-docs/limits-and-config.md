@@ -64,7 +64,7 @@ These are the limits for a single flow run.
 |Minimum postpone interval - Plan 2 license|1 second||
 
 ## Looping and debatching limits
-These are limits for a single flow run. For daily limits, refer to the [requests limits and allocations](http://aka.ms/platformlimits).
+These are limits for a single flow run. For daily limits, refer to the [requests limits and allocations](https://aka.ms/platformlimits).
 
 | Name | Limit | Notes |
 | --- | --- | --- |
