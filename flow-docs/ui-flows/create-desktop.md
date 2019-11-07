@@ -80,7 +80,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
     ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
     
-     >[!TIP] You will improve automation reliability by:
+     > [!TIP] 
+     > You will improve automation reliability by:
      > - Opening and maximizing the apps you want to record before *before* you start recording
      > - Starting your recording with a click the app title bar to bring it in focus.
 

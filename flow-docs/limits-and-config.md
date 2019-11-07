@@ -64,33 +64,32 @@ These are the limits for a single flow run.
 |Minimum postpone interval - Plan 2 license|1 second||
 
 ## Looping and debatching limits
-These are limits for a single flow run.
+These are limits for a single flow run. For daily limits, refer to the [requests limits and allocations](https://aka.ms/platformlimits).
 
 | Name | Limit | Notes |
 | --- | --- | --- |
 | Apply to each items - Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
-| Apply to each items - Plan 1 and Plan 2 license|100,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|100,000 |You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
 | SplitOn items - Free license |5,000 ||
-| SplitOn items - Plan 1 and Plan 2 license |100,000 ||
+| SplitOn items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
-| Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trial plans | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
-|Actions executions per 5 minutes – Paid Plan 2 licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
-|Actions executions per 5 minutes – Paid Plan 2 licenses|150,000|Also, you can distribute a workload across more than one flow as needed.|
-| Actions concurrent outgoing calls - Free and Plan 1 license | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
-| Actions executions per 24 hours – Free, Office365, Plan 1 licenses, and trial plans | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
+| Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trials | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
+|Actions executions per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
+| Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
+| Actions executions per 24 hours – Free, Office365, Plan 1 licenses and trials | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
 ## Throughput limits
 
 |Name|Limit|Notes|
 |---|---|---|
-|Runtime endpoint - Number of read calls allowed per 5 minutes - Free and Plan 1 license|6,000||
-|Runtime endpoint - Number of read calls allowed per 5 minutes - Plan 2 license|60,000||
-|Runtime endpoint: Invoke calls per 5 minutes - Free and Plan 1 license|4,500||
-|Runtime endpoint: Number of invoke calls per 5 minutes - Plan 2 license|45,000||
-|Amount of throughput allowed per 5 minutes - Free and Plan 1 license|600 MB||
-|Amount of throughput allowed per 5 minutes - Plan 2 license|6 GB||
-|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Plan 1 and Plan 2 license|200 GB||
+|Runtime endpoint - Number of read calls allowed per 5 minutes – Free, Office 365, Plan 1 licenses and trials|6,000||
+|Runtime endpoint - Number of read calls allowed per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|60,000||
+|Runtime endpoint: Invoke calls per 5 minutes – Free, Office 365, Plan 1 licenses and trials|4,500||
+|Runtime endpoint: Number of invoke calls per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|45,000||
+|Amount of throughput allowed per 5 minutes – Free, Office 365, Plan 1 licenses and trials|600 MB||
+|Amount of throughput allowed per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|6 GB||
+|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|200 GB||
 
 
 ## Definition limits
