@@ -75,7 +75,7 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 | SplitOn items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
 | Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trials | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
-|Actions executions per 5 minutes – Paid Plan 2, Per User, and Per flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
+|Actions executions per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
 | Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
 | Actions executions per 24 hours – Free, Office365, Plan 1 licenses and trials | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
