@@ -48,8 +48,8 @@ With Power Automate, you can automate both modern applications with APIs, or leg
 
 | **Application type**      | **Feature** | **Benefits**     |
 |---------------------------|----------------------------|------------------|
-| Modern apps with APIs| Connectors                 | High reliability incl. with software UI updates |
-| Legacy apps (no APIs)          | UI flow                    | Easy to create. Works if no API is available.   |
+| Modern apps with APIs| Connectors                 | High reliability with software UI updates |
+| Legacy apps (no APIs)          | UI flows                    | Easy to create. Works if no API is available.   |
 
 
 You will find your UI flows alongside automated, button, scheduled, and business process flows in [**My flows**](manage.md).
