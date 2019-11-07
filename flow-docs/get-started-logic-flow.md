@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow in Microsoft Flow
+# Create a flow in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
@@ -45,7 +45,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
     ![Twitter event](./media/get-started-logic-flow/twitter-search.png)
 
-1. If you haven't already connected your Twitter account to Microsoft Flow, select **Sign in to Twitter**, and then provide your credentials.
+1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 
 1. In the **Search text** box, type the keyword that you want to find.
 

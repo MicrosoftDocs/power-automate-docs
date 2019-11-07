@@ -32,7 +32,7 @@ Specify that a flow performs one or more tasks only if a condition is true. For 
 
 ## Add a condition
 
-1. In [Microsoft Flow](https://flow.microsoft.com), select **My flows** in the top navigation bar.
+1. In [Power Automate](https://flow.microsoft.com), select **My flows** in the top navigation bar.
 
     You might need to sign in if you're not already signed in.
 

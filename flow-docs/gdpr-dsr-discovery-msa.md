@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Discovery Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Discovery Requests for Microsoft Accounts.
+title: Power Automate GDPR Data Subject Discovery Requests for Microsoft Accounts (MSA) | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Discovery Requests for Microsoft Accounts.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 The first step in responding to a DSR request is to find the personal data that’s the subject of the request.
-Here’s a summary of the Microsoft Flow resources that contain personal data for a user who authenticates with their Microsoft Account (MSA).
+Here’s a summary of the Power Automate resources that contain personal data for a user who authenticates with their Microsoft Account (MSA).
 
 |Resource|Purpose|
 |-----|-----|

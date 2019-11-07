@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Limits and configuration in Microsoft Flow
+# Limits and configuration in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 This topic contains information about the current limits and configuration details for flows.
 
@@ -105,10 +105,10 @@ These are limits for a single flow.
 | `description` length limit |256 | |
 
 ## SharePoint limits
-There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Microsoft Flow and PowerApps.
+There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Power Automate and PowerApps.
 
 ## IP address configuration
-The IP address from which Microsoft Flow requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
+The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
 >[!IMPORTANT]
 > Some calls a flow makes may come from IP addresses that are listed in the [Logic apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
@@ -135,7 +135,7 @@ Calls made from a connector in a flow (for example, the SQL API or the SharePoin
 For example, if you must authorize IP addresses for your Azure SQL database, you should use these addresses.
 
 ### Required services
-The following table lists the services to which Microsoft Flow connects. Ensure none of these services are blocked on your network.
+The following table lists the services to which Power Automate connects. Ensure none of these services are blocked on your network.
 
 Domains | Protocols | Uses
 --------|  ---------| -----
@@ -143,7 +143,7 @@ management.azure.com|https|Access to the Azure Resource Manager.
 login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Access to Active Directory Authentication Library (ADAL).
 graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph API - for getting user information such as a profile photo.
 *.azure-apim.net|https|Access to the Runtime for Connectors.
-*.flow.microsoft.com|https|Access to the Microsoft Flow site.
+*.flow.microsoft.com|https|Access to the Power Automate site.
 *.powerapps.com|https|Access to the PowerApps site.
-*.azureedge.net|https|Access to the Microsoft Flow CDN.
+*.azureedge.net|https|Access to the Power Automate CDN.
 nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).

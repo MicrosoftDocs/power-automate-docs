@@ -2,7 +2,7 @@ In this topic, you will learn how to **build a button flow** for the Contoso Flo
 
 Button flows can be used to **send email** to a team and **alert them of tasks** to perform. **Ownership** of the flows **can be assigned to one** worker or **shared by multiple** members on a team.  
 
-1. First, go to the [Microsoft Flow website](https://ms.flow.microsoft.com) and sign in.
+1. First, go to the [Power Automate website](https://ms.flow.microsoft.com) and sign in.
 2. Once you are done signing in, select **My Flows**, and then **Create from blank**.
    
     ![Create from blank](./media/learning-create-button-flow/2-create-from-blank.png)

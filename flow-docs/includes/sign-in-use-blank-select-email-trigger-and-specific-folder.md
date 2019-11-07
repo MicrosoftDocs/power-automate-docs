@@ -1,4 +1,4 @@
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com), and then select the **My flows** tab.
+1. Sign in to [Power Automate](https://flow.microsoft.com), and then select the **My flows** tab.
 2. Select **Create from blank**.
    
     ![Blank flow](media/email-triggers/email-triggers-create-blank.png)

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow GDPR Data Subject Delete Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn how to use Microsoft Flow to respond to GPDR Data Subject Delete Requests for Microsoft Accounts.
+title: Power Automate GDPR Data Subject Delete Requests for Microsoft Accounts (MSA) | Microsoft Docs
+description: Learn how to use Power Automate to respond to GPDR Data Subject Delete Requests for Microsoft Accounts.
 services: ''
 suite: flow
 documentationcenter: na
@@ -26,7 +26,7 @@ search.audienceType:
 
 The **right to erasure** by the removal of personal data is a key protection in the GDPR. Removing personal data includes removing all personal data except audit log information.
 
-Microsoft Flow allows users to build automated workflows. When a user decides to delete their personal data from Microsoft Flow, the user can review their personal data, and determine whether to delete some or all of it.
+Power Automate allows users to build automated workflows. When a user decides to delete their personal data from Power Automate, the user can review their personal data, and determine whether to delete some or all of it.
 
 The following table shows which personal data is automatically deleted and which data requires a Microsoft Account (MSA) user to review and delete it.
 
@@ -36,7 +36,7 @@ The following table shows which personal data is automatically deleted and which
 |Flows|Activity Feed|
 |Connections||
 
-Microsoft Flow offers the following experiences to help users find, review, or change personal data and resources that aren't automatically deleted:
+Power Automate offers the following experiences to help users find, review, or change personal data and resources that aren't automatically deleted:
 
 ## Manage Delete requests
 
@@ -49,7 +49,7 @@ The steps below describe how to self-serve delete requests for GDPR.
 
     ![Activity History](./media/gdpr-dsr-export-msa/activityhistory.png)
 
-1. You can search or browse your activity history for the different Microsoft applications and services that you use, including Microsoft Flow. Select **Delete** to remove specific product or service activity events.
+1. You can search or browse your activity history for the different Microsoft applications and services that you use, including Power Automate. Select **Delete** to remove specific product or service activity events.
 
     ![Delete Event](./media/gdpr-dsr-delete-msa/deleteevent.png)
 
@@ -57,9 +57,9 @@ The steps below describe how to self-serve delete requests for GDPR.
 
 ### List and delete flows
 
-A user can list and delete their flows from [Microsoft Flow](https://flow.microsoft.com) by follwing these steps:
+A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by follwing these steps:
 
-1. Sign into the [Microsoft Flow](https://flow.microsoft.com), and then select on **My flows**.
+1. Sign into the [Power Automate](https://flow.microsoft.com), and then select on **My flows**.
 
 1. Select **...** beside the flow that you're deleting, and then select **Delete**.
 
@@ -69,7 +69,7 @@ A user can list and delete their flows from [Microsoft Flow](https://flow.micros
 
 Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by follwing these steps:
 
-1. Sign into [Microsoft Flow](https://flow.microsoft.com), select the gear icon, and then select **Connections**.
+1. Sign into [Power Automate](https://flow.microsoft.com), select the gear icon, and then select **Connections**.
 
     ![Delete Event](./media/gdpr-dsr-delete-msa/deleteconnections.png)
 
@@ -88,5 +88,5 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
 
 ## Learn more
 
-* Get started with [Microsoft Flow](getting-started.md)
-* Learn [what's new](release-notes.md) with Microsoft Flow
+* Get started with [Power Automate](getting-started.md)
+* Learn [what's new](release-notes.md) with Power Automate

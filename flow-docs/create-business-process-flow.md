@@ -249,7 +249,7 @@ To do this, you'll need to do two things:
 
 ### Build an instant flow
 
-1. In Microsoft Flow, select **Solutions** in the navigation menu.
+1. In Power Automate, select **Solutions** in the navigation menu.
 1. Select **Default Solution** from the list of solutions that appears. 
 1. Select the **+ New** menu, and then select **Flow** from the list that appears.
 1. Search for, and then select the **Common Data Service** connector.

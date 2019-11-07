@@ -61,8 +61,8 @@ PowerApps includes several  types of processes, each designed for a different pu
  Use Actions when you want to automate a series of commands in the system. Actions expand the vocabulary available for developers to express business processes. With core verbs like Create, Update, Delete, and Assign provided by the system, a Action uses those core verbs to create more expressive verbs like Approve, Escalate, Route, or Schedule. If the definition of a business process changes, someone who isn’t a developer can edit the Action so the code doesn’t need to be changed.  For more information on Actions, see [Actions](create-actions.md)  
   
 <a name="useMSFlow"></a>   
-## When to use Microsoft Flow  
- Use Microsoft Flow when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, and SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Microsoft Flow to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
+## When to use Power Automate  
+ Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, and SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
 )  
   
 <a name="BKMK_Where"></a>   
