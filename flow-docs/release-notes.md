@@ -1,6 +1,6 @@
 ---
 title: Release notes | Microsoft Docs
-description: Common issues and what's new for Microsoft Flow releases
+description: Common issues and what's new for Power Automate releases
 services: ''
 suite: flow
 documentationcenter: na
@@ -36,8 +36,8 @@ search.audienceType:
    * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
-   * If you're an Office 365 user, you get full access through the Microsoft Flow for Office 365 plan. For more information, see the [pricing plans for Microsoft Flow](https://flow.microsoft.com/pricing/) .
-   * If you're an administrator, see information about [licensing for Microsoft Flow](organization-q-and-a.md), including with Office 365.
+   * If you're an Office 365 user, you get full access through the Power Automate for Office 365 plan. For more information, see the [pricing plans for Power Automate](https://flow.microsoft.com/pricing/) .
+   * If you're an administrator, see information about [licensing for Power Automate](organization-q-and-a.md), including with Office 365.
 
 ## Known issues
 1. SharePoint lists on My Sites and that aren't of type *Custom List* aren't supported. To work around this issue, create a custom list on a standard SharePoint site.
@@ -49,14 +49,14 @@ search.audienceType:
 >
 > **Announcing the release notes**
 >
-> Wondering about upcoming and recently released capabilities in Microsoft Flow?
+> Wondering about upcoming and recently released capabilities in Power Automate?
 >[View the October 2018 release notes](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We've captured all the details, end to end, top to bottom, which you can use for planning. For more details, review [each weekly release](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) with the features and enhancements that it contains.
 >
 > The release notes prior to the October 2018 release will remain here for future reference, but all new releases will only be included in the above locations and not on this page.
 
 ### Release 2018-09-24
 
-- **Admin access to help and support** - Open support tickets for Microsoft Flow in the Power platform admin center and provide additional details about your workflow failure.
+- **Admin access to help and support** - Open support tickets for Power Automate in the Power platform admin center and provide additional details about your workflow failure.
 - **Redesigned Flow Community** - Finding what you need just got easier in the Flow Community.
 - **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a flow when there are new messages in a channel.
 - **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
@@ -67,8 +67,8 @@ search.audienceType:
 
 ### Release 2018-08-31
 
-- **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Microsoft Flow designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
-- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Microsoft Flow for Admins, and Microsoft School Data Sync.
+- **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Power Automate designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
+- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
@@ -84,13 +84,13 @@ search.audienceType:
 
 ### Release 2018-08-02
 
-The Microsoft Flow Preview program is the way to get early access to the upcoming functionality and updates for Microsoft Flow. To get early access to the newest features, just create, and then use, an environment in the Preview region.
+The Power Automate Preview program is the way to get early access to the upcoming functionality and updates for Power Automate. To get early access to the newest features, just create, and then use, an environment in the Preview region.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/flow-preview-program/) about this release.
 
 ### Release 2018-07-23
 
-- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Microsoft Flow on your table data in Excel. Automate data processing or the copying/importing of data.
+- **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Power Automate on your table data in Excel. Automate data processing or the copying/importing of data.
 - **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
 - **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
@@ -131,14 +131,14 @@ The Microsoft Flow Preview program is the way to get early access to the upcomin
 
 - **Rich text in Approval messages** - Use Markdown to format the approval details that you send.
 - **Buttons with multiple selection inputs** - Build flow buttons that use a multiple selection list to collect more than one value at once.
-- **Work with wider flows** - The Microsoft Flow mobile app now supports landscape view and the web designer has a horizontal scrollbar.
+- **Work with wider flows** - The Power Automate mobile app now supports landscape view and the web designer has a horizontal scrollbar.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) about this release.
 
 ### Release 2018-04-12
 
 - **Return data to PowerApps from a flow** - Build flows that can be called from an app built with PowerApps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
-- **Add multiple records to array inputs** - Added a list builder into Microsoft Flow that can be used for adding multiple attachments to an email, for example.
+- **Add multiple records to array inputs** - Added a list builder into Power Automate that can be used for adding multiple attachments to an email, for example.
 - **Test flows with previous run data** - Added a new Test flow button to the designer that lets you test your flow with trigger data from previous flow runs.
 - **New workflow() fields** - You can now access environment name and flow display name with the workflow() expression.
 
@@ -164,7 +164,7 @@ The Microsoft Flow Preview program is the way to get early access to the upcomin
 - **Dynamic content tooltips** - Hover over dynamic content to see where it came from inside of actions, and preview expressions without opening the full expression editor.
 - **Concurrency control** - Enable concurrency control to have a given flow have only one run at a time.
 - **Exponential retry** - A new type of retry policy that spaces out retries exponentially over time.
-- **Accessibility conformance** - Released new conformance documents that describe how Microsoft Flow meet accessibility standards.
+- **Accessibility conformance** - Released new conformance documents that describe how Power Automate meet accessibility standards.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/approval-history-accessibility/) about this release.
 
@@ -194,7 +194,7 @@ The Microsoft Flow Preview program is the way to get early access to the upcomin
 
 ### Release 2017-12-20
 
-Microsoft Flow Analytics is now available in all Microsoft Flow regions, meaning you can get more insight into the health of flows running within your environment.
+Power Automate Analytics is now available in all Power Automate regions, meaning you can get more insight into the health of flows running within your environment.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/) about this release.
 
@@ -202,7 +202,7 @@ Microsoft Flow Analytics is now available in all Microsoft Flow regions, meaning
 ### Release 2017-12-14
 
 - **Outlook connector improvements** - You can save an email as a ".eml" file, respond to calendar invitations automatically, and trigger flows when you are mentioned in an email thread.
-- **Connections improvements** - Microsoft Flow remembers your most recently used connections, and shows you all of the newly added connectors.
+- **Connections improvements** - Power Automate remembers your most recently used connections, and shows you all of the newly added connectors.
 - **Five new connectors** - Added Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do, and Plumsail Documents.
 - **HTTP improvements** - The HTTP action now supports chunked encoding.
 
@@ -210,7 +210,7 @@ Microsoft Flow Analytics is now available in all Microsoft Flow regions, meaning
 
 ### Release 2017-12-05
 
-The Microsoft Flow Launch Panel is now available in all regions. This panel allows you to add values to a flow when you run it inside of your SharePoint list or document library.
+The Power Automate Launch Panel is now available in all regions. This panel allows you to add values to a flow when you run it inside of your SharePoint list or document library.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) about this release.
 
@@ -220,7 +220,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 - **Managed Metadata** - Read data from, and write into, columns in SharePoint that use the Managed Metadata (aka. Taxonomy) type.
 - **Append to Arrays** - Add items to the end of arrays using a new Append to array variable action.
 - **Tago** - A new connector to Tago, which provides easy connection of electronic devices with external data to drive smarter decisions using contextual analysis.
-- **iPhone X** - A new version of the Microsoft Flow app that uses the full screen on the iPhone X, and that has a speed improvement for image uploads.
+- **iPhone X** - A new version of the Power Automate app that uses the full screen on the iPhone X, and that has a speed improvement for image uploads.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/managed-metadata-tago/) about this release.
 
@@ -237,7 +237,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-11-02
 
-- **Audit Logging** - Microsoft Flow audit events are now available in Office 365 Security & Compliance Center for all tenants.
+- **Audit Logging** - Power Automate audit events are now available in Office 365 Security & Compliance Center for all tenants.
 - **Flow widget fixes** - Fixed an issue in the Flow mobile app that caused buttons to not load in the widget.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/security-and-compliance-center/) about this release.
@@ -247,7 +247,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 - **Nested apply to each** - You can add apply to each actions, filter and select in other apply to each container actions.
 - **Date Time actions** - New actions for getting local times, adding, subtracting or formatting times.
 - **Four new connectors** - Added Content Moderator, Docparser, Microsoft Kaizala and Pitney Bowes Data Validation.
-- **Improved connection experience** - Notifications in the Microsoft Flow portal when a connection is broken and richer connection details.
+- **Improved connection experience** - Notifications in the Power Automate portal when a connection is broken and richer connection details.
 - **On-the-go collection** - A new template collection for [on-the-go workers](https://flow.microsoft.com/collections/onthego/).
 - **Email address button inputs** - Collect email addresses from users when they run buttons.
 - **File button inputs** - Get uploaded files, such as photos, from users when they run buttons.
@@ -267,11 +267,11 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 [Read more and ask questions](https://flow.microsoft.com/blog/all-must-approve-and-onedrive/) about this release.
 
-### Release 2017-09-25 - Q3 Update for Microsoft Flow
+### Release 2017-09-25 - Q3 Update for Power Automate
 
 - **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
 - **Dynamics 365 apps** - Flow is now integrated in the UI for Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
-- **Microsoft Trust Center** - Microsoft Flow is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
+- **Microsoft Trust Center** - Power Automate is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
 - **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
 - **Six new connectors** - Added LinkedIn, Office 365 Groups, Skype for Business, Adobe Sign, Bizzy, and Azure Log Analytics Data Collection.
@@ -308,11 +308,11 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 
 [Read more and ask questions](https://flow.microsoft.com/blog/four-connector-action-settings/) about this release.
 
-### Release 2017-07-27 - Q2 Update for Microsoft Flow
+### Release 2017-07-27 - Q2 Update for Power Automate
 * **Import and export** - Export and import flow solutions across environments or from test to production. 
 * **Use expressions in actions** - Enter expressions in any action and get inline help with how to use them.
 * **Grow up to Azure Logic Apps** - Save your flows as Azure Logic App resource that can be deployed through Visual Studio or the Azure portal.
-* **Admin visibility** - Download Microsoft Flow usage in your tenant to understand exactly where and how flows are being used.
+* **Admin visibility** - Download Power Automate usage in your tenant to understand exactly where and how flows are being used.
 * **Flows in Dynamics 365** - Use flows inside of Dynamics 365 for Operations & Financials, Business Edition.
 * **Find scenarios more easily** - Browse everything that connector can do and then use any trigger as a jumping-off point for building flows.
 
@@ -327,7 +327,7 @@ The Microsoft Flow Launch Panel is now available in all regions. This panel allo
 [Read more and ask questions](https://flow.microsoft.com/blog/publishing-and-custom-connectors/) about this release.
 
 ### Release 2017-06-28
-* **Update your language settings** - You can customize both the Language and Region that Microsoft Flow uses through the Settings menu.
+* **Update your language settings** - You can customize both the Language and Region that Power Automate uses through the Settings menu.
 * **Five new connectors** - Added support for Adobe Creative Cloud, Bing Maps, Bing Search, JotForm and Freshservice.
 * **Configure timeouts** - Change the time long-running actions, such as approvals, run before they "timeout" and the flow continues.
 * **Include comments in Outlook for approvals** - When you receive an approval request you can provide comments without ever leaving Outlook.
@@ -353,41 +353,41 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/seven-connectors-and-html/) about this release.
 
 ### Release 2017-06-04
-* **GA for Windows Phone** - [The Microsoft Flow mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
+* **GA for Windows Phone** - [The Power Automate mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
 * **Emails on flow failures** - Get notified via email when you have a flow that fails. These failure emails will only be sent out once a week, and can be turned on or off by the user.
 * **Select action for tables** -  Use the new Select action to change the set of columns that will be included in tables.
 * **Microsoft Forms connector** -  Microsoft Forms is a new part of Office 365 Education that allows teachers and students to create custom quizzes quickly and easily, surveys, questionnaires, registrations and more.
-* **Office 365 Enterprise K1 plan** - PowerApps and Microsoft Flow are now included with the Office 365 Enterprise K1 plan with certain quotas.
+* **Office 365 Enterprise K1 plan** - PowerApps and Power Automate are now included with the Office 365 Enterprise K1 plan with certain quotas.
 * **HTTP headers are easier** - Just like the Select action you can provide a header name and header value by just filling out the text boxes on the action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) about this release.
 
 ### Release 2017-05-23
 * **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that brings together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
-* **Widgets on iOS and Android** - Microsoft Flow widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
+* **Widgets on iOS and Android** - Power Automate widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
 * **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a record in Dynamics 365.
 * **Integer and float variables** -  Initialize and increment or decrement counters inside of a flow run to count how many times a certain set of logic runs.
 * **Flow details page** - When you select a flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
 * **Flow run quotas for admins** - Administrators can now monitor flow run usage across an organization against the common company run quota and get a quota breakdown to understand what licenses contribute to their quota.
 * **HTTP request trigger improvements** - Use different HTTP methods, and add path segments for the Request trigger.
-* **Two partner connectors** - Microsoft Flow can now connect to Parserr, an email-parsing service, and Cognito Forms, an online-forms service.
+* **Two partner connectors** - Power Automate can now connect to Parserr, an email-parsing service, and Cognito Forms, an online-forms service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/error-handling/) about this release.
 
 ### Release 2017-05-12
 * **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
-* **Admin view of licenses** - Administrators can see all of the Microsoft Flow and PowerApps licenses (both trial and paid) in the Microsoft Flow Admin Center.
-* **PowerApps Community Plan** -  The PowerApps Community plan is a free plan for individuals to explore, learn, and build skills for PowerApps, Microsoft Flow, and Common Data Service.
+* **Admin view of licenses** - Administrators can see all of the Power Automate and PowerApps licenses (both trial and paid) in the Power Automate Admin Center.
+* **PowerApps Community Plan** -  The PowerApps Community plan is a free plan for individuals to explore, learn, and build skills for PowerApps, Power Automate, and Common Data Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
 
 ### Release 2017-05-09
-* **Azure AD connector** - There is a new connector for performing administrator actions from Microsoft Flow, including creating users or adding them to groups.
+* **Azure AD connector** - There is a new connector for performing administrator actions from Power Automate, including creating users or adding them to groups.
 * **Office 365 Outlook improvements** - Flows can now be triggered by Shared Mailboxes and send mail to a Shared Mailbox. They can also set or read automatic replies.
 * **Available in Canada** - You can now create your flows in Canada.
 * **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
-* **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Microsoft Flow admin center.
+* **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Power Automate admin center.
 * **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](https://docs.microsoft.com/Connectors/).
 * **Two partner services** - Two new partner services were released: Nexmo and Paylocity.
 
@@ -396,14 +396,14 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-04-27
 * **Build flows with parallel steps** - Create flows with parallel execution: meaning you can have two or more steps that run at exactly the same time.
 * **Five new services supported** - Five new services: Approvals, Benchmark Email, Capsule CRM, LiveChat, and Outlook Customer Manager.
-* **Monitor retries for actions** - Microsoft Flow will retry when there are failures with services. Now see how many automatic retries occurred and the details of what happened.
+* **Monitor retries for actions** - Power Automate will retry when there are failures with services. Now see how many automatic retries occurred and the details of what happened.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/parallel-actions/) about this release.
 
-### Release 2017-04-17 - Q1 Update for Microsoft Flow
-* **Modern approval experiences** - Create workflows where approvers can approve securely from inside the Microsoft Flow mobile app or the unified approvals center on the Microsoft Flow website.
+### Release 2017-04-17 - Q1 Update for Power Automate
+* **Modern approval experiences** - Create workflows where approvers can approve securely from inside the Power Automate mobile app or the unified approvals center on the Power Automate website.
 * **Team flows general availability** - Multiple people can own and manage a flow together with team flows, which are now generally available.
-* **Build connectors for Microsoft Flow** - Anyone can submit their own Microsoft Flow connector for free for the rest of the world to use.
+* **Build connectors for Power Automate** - Anyone can submit their own Power Automate connector for free for the rest of the world to use.
 * **A "diet" designer** - For certain templates, a new version of the designer presents just the fields that are required to create a flow, which simplifies the experience.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/q1-2017-update/) about this release.
@@ -429,7 +429,7 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-03-15
 * **Share buttons with co-workers** - You can now share flow buttons with other people, making it easy for any business user to perform quick tasks.
 * **Trigger buttons from the home screen** - Shortcuts to flow buttons from the home and lock screens of mobile devices make it quicker than ever to trigger a flow.
-* **Team flows in the Microsoft Flow app** - You can now see the flows that have other owners in the Microsoft Flow app for iOS or Android.
+* **Team flows in the Power Automate app** - You can now see the flows that have other owners in the Power Automate app for iOS or Android.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/button-sharing/) about this release.
 
@@ -440,7 +440,7 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
 
 ### Release 2017-02-27
-* **Trigger your flow buttons** - You can now trigger flow buttons right from Microsoft Flow. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
+* **Trigger your flow buttons** - You can now trigger flow buttons right from Power Automate. When looking at your list of flows, simply select the "..." menu and choose the Run now command.
 * **Five new services** - Added Oracle Database, Intercom, FreshBooks, LeanKit and WebMerge support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/trigger-flow-buttons-web/) about this release.
@@ -489,7 +489,7 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/managing-runs/) about this release.
 
 ### Release 2016-12-29
-Microsoft Flow now supports DocuSign, to handle eSignatures and Digital Transaction Management; SurveyMonkey, for web-based surveys; and the OneNote note-taking app (business accounts only).
+Power Automate now supports DocuSign, to handle eSignatures and Digital Transaction Management; SurveyMonkey, for web-based surveys; and the OneNote note-taking app (business accounts only).
 
 [Read more and ask questions](https://flow.microsoft.com/blog/final-2016-services/) about this release.
 
@@ -505,7 +505,7 @@ You can now leverage valuable information when triggering a button flow, such as
 [Read more and ask questions](https://flow.microsoft.com/blog/button-trigger-tokens/) about this release.
 
 ### Release 2016-12-06
-* **Introducing Guided Learning** - Get started with a sequenced collection of courses that pair videos with documentation to help you understand the extensive and powerful capabilities of Microsoft Flow.
+* **Introducing Guided Learning** - Get started with a sequenced collection of courses that pair videos with documentation to help you understand the extensive and powerful capabilities of Power Automate.
 * **Two new services** - Flows can now use Freshdesk, a customer support solution, and GoToMeeting, an online meeting tool.
 * **HTTP Webhook support** - A flow can now be an endpoint for webhooks that will automatically register and unregister itself.
 
@@ -519,16 +519,16 @@ You can now leverage valuable information when triggering a button flow, such as
 [Read more and ask questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) about this release.
 
 ### Release 2016-11-15
-* **Microsoft Flow Partner Program** - Microsoft Flow now has a certified partner program to make connections and take advantage of different company’s talents and experience with Microsoft Flow around the world.
+* **Power Automate Partner Program** - Power Automate now has a certified partner program to make connections and take advantage of different company’s talents and experience with Power Automate around the world.
 * **Six new services** - We're also releasing six services this week: Asana, Campfire, EasyRedmine, JIRA, Redmine, and Vimeo.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/partner-program-six-new-services/) about this release.
 
 ### Release 2016-10-31 - General Availability
 * **Pricing and licensing** - Now available in both Free and paid plans, as well as included in Office 365 and Dynamics 365.
-* **Microsoft Flow Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
+* **Power Automate Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
 * **Data loss prevention policies** - Administrators can create data loss prevention policies to control the flow of data between services.
-* **Android availability** - The Microsoft Flow phone app is now available for both iOS and Android. The app enables you to get notifications, monitor activity, and start flows with the tap of a button.
+* **Android availability** - The Power Automate phone app is now available for both iOS and Android. The app enables you to get notifications, monitor activity, and start flows with the tap of a button.
 * **New designer experiences** - You can now search over the dynamic content passed from step to step, making it much quicker to reference the data you want to.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/announcing-ga/) about this release.
@@ -551,21 +551,21 @@ You can now leverage valuable information when triggering a button flow, such as
 Flow creation now available from your mobile phones. Browse our rich template gallery, navigate through our services list, or select a template category to drill into. [Read more and ask questions](https://flow.microsoft.com/blog/mobile-creation/) about this release.
 
 ### Release 2016-09-22
-* **Microsoft Graph People Picker** - A new Microsoft Graph people picker is integrated directly into the Microsoft Flow UI to help you choose the right contact or email address.
+* **Microsoft Graph People Picker** - A new Microsoft Graph people picker is integrated directly into the Power Automate UI to help you choose the right contact or email address.
 * **Microsoft Dynamics AX support** -  From inside your flows you can now take action on your Dynamics AX Online operations data, from creating new records to querying for data.
 * **Two new services from partners** - Now use appFigures or Insightly from your flows.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/more-september-updates/) about this release.
 
 ### Release 2016-09-14
-* **Embedding in your web site or app** - Developers can now embed Microsoft Flow right into their apps or web sites to give their users a simple way to automate their personal or professional tasks.
+* **Embedding in your web site or app** - Developers can now embed Power Automate right into their apps or web sites to give their users a simple way to automate their personal or professional tasks.
 * **Use a flow as an HTTP endpoint** -  Now you can use a flow itself as an HTTP API. There is a trigger called Request inside of flow, and you can choose to respond to the incoming request by adding a Response card.
 * **Todoist support** - Todoist gives you perspective over all your projects, at work and at home.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/extend-web-site-application/) about this release.
 
 ### Release 2016-09-01
-Microsoft Flow now available for everyone - we initially opened up the preview to only email addresses provided by your work or school, like those used with Office 365 Business or Office 365 Enterprise. Today, we are announcing that the preview is officially available, free to use, for all users, no matter what email you may have. [Read more and ask questions](https://flow.microsoft.com/blog/available-for-everyone/) about this release.
+Power Automate now available for everyone - we initially opened up the preview to only email addresses provided by your work or school, like those used with Office 365 Business or Office 365 Enterprise. Today, we are announcing that the preview is officially available, free to use, for all users, no matter what email you may have. [Read more and ask questions](https://flow.microsoft.com/blog/available-for-everyone/) about this release.
 
 ### Release 2016-08-31
 * **Nested conditionals** - Now you can add a second (or third, etc…) condition inside of another.
@@ -585,7 +585,7 @@ Microsoft Flow now available for everyone - we initially opened up the preview t
 [Read more and ask questions](https://flow.microsoft.com/blog/add-comments-smartsheet/) about this release.
 
 ### Release 2016-08-18
-You can now preview the new SharePoint Online modern lists experience that includes the Microsoft Flow integration. [Read more and ask questions](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) about this release.
+You can now preview the new SharePoint Online modern lists experience that includes the Power Automate integration. [Read more and ask questions](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) about this release.
 
 ### Release 2016-08-13
 * **Visual Studio Team Services** - With Flow, you can now connect VSTS to a wide variety of services such as O365 Email, Slack, Trello, and Wunderlist.
@@ -596,7 +596,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 [Read more and ask questions](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) about this release.
 
 ### Release 2016-08-08
-Public preview of the Microsoft Common Data Service integrated in Microsoft Flow. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of the Microsoft Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05
 * **SharePoint On-Premises** - Just like with SharePoint Online, you can create flows around your SharePoint on-premises lists and doc libraries either using pre-defined templates or by building them from scratch.
@@ -613,23 +613,23 @@ Public preview of the Microsoft Common Data Service integrated in Microsoft Flow
 [Read more and ask questions](https://flow.microsoft.com/blog/new-google-services-rename-more/) about this release.
 
 ### Release 2016-07-08
-On-premises connectivity for Microsoft Flow using the on-premises data gateway. This allows you to establish secured connections to SQL Server and integrate them with your flows. [Read more and ask questions](https://flow.microsoft.com/blog/on-premises-data-gateway/) about this release.
+On-premises connectivity for Power Automate using the on-premises data gateway. This allows you to establish secured connections to SQL Server and integrate them with your flows. [Read more and ask questions](https://flow.microsoft.com/blog/on-premises-data-gateway/) about this release.
 
 ### Release 2016-07-02
 * **Google Sheets support** - In the past, we have had both the ability to use Excel, as well as Google Drive, but this week we are adding native Google Sheets support.
 * **Get started more quickly from templates** - We have also made some optimizations to the way you can start from templates. Now, you can select what accounts you want to use for a template right inline on the template page.
-* **No expiring authorization for SharePoint and Office 365** -  Now, Microsoft Flow will automatically renew your access to Azure Active Directory-based services, so all of your flows will continue working across password changes.
+* **No expiring authorization for SharePoint and Office 365** -  Now, Power Automate will automatically renew your access to Azure Active Directory-based services, so all of your flows will continue working across password changes.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/more-june-updates/) about this release.
 
 ### Release 2016-06-20
-* **Introducing the new mobile app for Microsoft Flow** - Today, we are pleased to introduce another major piece of our offering: a mobile app now available for download on iOS (soon also on Android) that gives you the power to manage, track, and explore your automated workflows anytime and anywhere.  
-* **Single sign-on** - We've implemented single sign-on that allows you to authenticate to Microsoft Flow with other Microsoft services like Office 365.
+* **Introducing the new mobile app for Power Automate** - Today, we are pleased to introduce another major piece of our offering: a mobile app now available for download on iOS (soon also on Android) that gives you the power to manage, track, and explore your automated workflows anytime and anywhere.  
+* **Single sign-on** - We've implemented single sign-on that allows you to authenticate to Power Automate with other Microsoft services like Office 365.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/welcome-to-flow-now-more-mobile/) about this release.
 
 ### Release 2016-06-18
-* **New Mail service** - You can now send emails directly from Microsoft Flow, without needing to connect to your personal or work email accounts inside of Microsoft Flow.
+* **New Mail service** - You can now send emails directly from Power Automate, without needing to connect to your personal or work email accounts inside of Power Automate.
 * **Notifications in the portal** - Now, you'll see Notifications at the top of the portal whenever something is broken with your flows.
 * **All Activity in the portal** - You can now see activity across all of your flows by clicking the new Activity tab in the flow website.
 
@@ -646,7 +646,7 @@ On-premises connectivity for Microsoft Flow using the on-premises data gateway. 
 Added two new services: Microsoft Project Online and Mandrill by Mailchimp. [Read more and ask questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) about this release.
 
 ### Release 2016-04-27 - Public Preview
-If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), the Microsoft Flow Preview release offers several new features:
+If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), the Power Automate Preview release offers several new features:
 
 * You can now browse a gallery of dozens of templates and sort by Popularity, Name, or Date published.
 * You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.

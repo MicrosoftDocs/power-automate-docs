@@ -17,17 +17,17 @@ ms.date: 04/29/2019
 ms.author: deonhe
 ---
 
-# Microsoft Flow in Teams
+# Power Automate in Teams
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 ### Prerequisites
 
 1. Access to Microsoft Teams.
-1. Access to Microsoft Flow.
+1. Access to Power Automate.
 
-## Install the Microsoft Flow app in Teams
+## Install the Power Automate app in Teams
 
-Follow these steps to install the Microsoft Flow app in Microsoft Teams.
+Follow these steps to install the Power Automate app in Microsoft Teams.
 
 1. Sign in to Microsoft Teams.
 
@@ -43,7 +43,7 @@ Follow these steps to install the Microsoft Flow app in Microsoft Teams.
 
     ![Install button](media/flows-teams/select-install.png)
 
-1. Microsoft Flow is now installed.
+1. Power Automate is now installed.
 
     ![Installed](media/flows-teams/flow-installed.png)
 
@@ -70,16 +70,16 @@ Follow these steps to install the Microsoft Flow app in Microsoft Teams.
     Conversation|Interact with the Flow bot.
     Flows|Create and manage flows.
     Approvals|Lists received and sent approval requests.
-    About|Displays version and other information about Microsoft Flow.
+    About|Displays version and other information about Power Automate.
 
 
-    You now see all flows you've created from the Microsoft Flow designer (if any). 
+    You now see all flows you've created from the Power Automate designer (if any). 
 
-    You can also create flows from a custom template or from a blank template, just like you do from the Microsoft Flow designer. 
+    You can also create flows from a custom template or from a blank template, just like you do from the Power Automate designer. 
 
 ## Manage approvals
 
-You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like you would do in Microsoft Flow. Follow these steps to manage your approvals:
+You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like you would do in Power Automate. Follow these steps to manage your approvals:
 
 1. Sign in to Microsoft Teams.
 1. Select the **Approvals** tab.

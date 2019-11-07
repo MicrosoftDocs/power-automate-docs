@@ -21,14 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create and test an approval workflow with Microsoft Flow
+# Create and test an approval workflow with Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-With Microsoft Flow, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
+With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
 To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
-Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Microsoft Flow website, or the Microsoft Flow app.
+Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Power Automate website, or the Power Automate app.
 
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
@@ -148,7 +148,7 @@ Now that we've created the flow, it's time to test it!
 If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
 
 >[!TIP]
-> If you use modern email clients, you don't have to wonder if a request is still required because Microsoft Flow automatically updates the email to indicate that the approval is completed.
+> If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval is completed.
 
 ## Cancel an approval requests
 
@@ -176,4 +176,4 @@ Now that you've created and tested your flow, be sure to let others know how to 
 * View and manage [pending approval requests](approve-reject-requests.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)
 * Create [parallel approval flows.](parallel-modern-approvals.md)
-* Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).

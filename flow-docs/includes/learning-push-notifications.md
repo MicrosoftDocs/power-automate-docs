@@ -1,9 +1,9 @@
 For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
 
-## Connect Microsoft Flow Services
+## Connect Power Automate Services
 In this topic, you'll be using the **SharePoint** and **Twitter** services. If you are using a service that's new to you, then you'll first need to connect to the new service. 
 
-1. In Microsoft Flow, select the **gear icon**, then **Connections**,
+1. In Power Automate, select the **gear icon**, then **Connections**,
    
     ![Get connection](./media/learning-push-notifications/2-get-connection.png) 
 2. Select **+ Create connection**.
@@ -57,7 +57,7 @@ The first thing you need to do is create a new SharePoint Online list for Contos
 Your list is built, so now you can build the flow.
 
 ### Choose a trigger
-1. In Microsoft Flow, go to **My Flows**, then select **Create from blank**.
+1. In Power Automate, go to **My Flows**, then select **Create from blank**.
    
     ![Create from blank](./media/learning-push-notifications/8-create-from-blank.png)
 2. Select **When an item is created**.

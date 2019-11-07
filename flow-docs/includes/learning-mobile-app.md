@@ -1,6 +1,6 @@
-In this lesson, we'll be covering the Microsoft Flow mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
+In this lesson, we'll be covering the Power Automate mobile app and its capabilities. From the mobile app, you can access these features: **Activity Feed**, **Browsing**, **Buttons**, and **Managing Flows**.
 
-First, you’ll need to **download** and **install** the Microsoft Flow app from your app store.
+First, you’ll need to **download** and **install** the Power Automate app from your app store.
 
 ![Mobile app](./media/learning-mobile-app/open-mobile-app.png)
 

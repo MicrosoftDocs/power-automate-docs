@@ -1,6 +1,6 @@
 ---
 title: GDPR Data Subject Requests Summary for Microsoft Accounts (MSA)| Microsoft Docs
-description: Learn how to respond to GPDR Data Subject Requests for Microsoft Flow.
+description: Learn how to respond to GPDR Data Subject Requests for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -24,18 +24,18 @@ search.audienceType:
 # Respond to GDPR Data Subject Rights (DSRs) requests
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This article describes the European Union's General Data Protection Regulation (GDPR) and provides steps you can take to support GDPR compliance for Microsoft Flow users who authenticate with Microsoft Accounts (MSA).
+This article describes the European Union's General Data Protection Regulation (GDPR) and provides steps you can take to support GDPR compliance for Power Automate users who authenticate with Microsoft Accounts (MSA).
 
 ## Prerequisites
 
-You need an MSA with a [free Microsoft Flow license](https://flow.microsoft.com/pricing/) to perform the steps in this article.
+You need an MSA with a [free Power Automate license](https://flow.microsoft.com/pricing/) to perform the steps in this article.
 
 >[!TIP]
 > GDPR compliance information is also available for users who authenticate with [Azure Active Directory accounts](gdpr-dsr-summary.md).
 >
 >
 
-## Respond to DSRs for Microsoft Flow customer data
+## Respond to DSRs for Power Automate customer data
 
 A data subject's formal request to a controller to take an action on their personal data is called a Data Subject Rights (DSR) request. GDPR defines personal data as **any data that relates to an identified or identifiable natural person**. The GDPR gives people (known as data subjects) rights to manage the personal data that's collected by an employer, agency, or organization (known as the data controller or the controller). These rights include:
 
@@ -49,7 +49,7 @@ Microsoft provides products, services, and tools to help controllers find and ac
 
 Here’s an overview of the processes outlined in this guide:
 
-1. **Discover**: Use search and discovery tools to easily find customer data that may be the subject of a DSR request. If you determine that the documents you collect meet your controller guidelines for taking action, you can perform one or more of the DSR actions described in the following steps. Learn more in the [Microsoft Flow DSR Discovery documentation for Microsoft Accounts](gdpr-dsr-discovery-msa.md). Alternatively, you may determine that the request doesn’t meet your controller guidelines for responding to DSR requests.
+1. **Discover**: Use search and discovery tools to easily find customer data that may be the subject of a DSR request. If you determine that the documents you collect meet your controller guidelines for taking action, you can perform one or more of the DSR actions described in the following steps. Learn more in the [Power Automate DSR Discovery documentation for Microsoft Accounts](gdpr-dsr-discovery-msa.md). Alternatively, you may determine that the request doesn’t meet your controller guidelines for responding to DSR requests.
 
 1. **Access**: Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it so that can be available to the data subject.
 

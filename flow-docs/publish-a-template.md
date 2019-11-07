@@ -21,10 +21,10 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Submit a template to the Microsoft Flow gallery
+# Submit a template to the Power Automate gallery
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Submit a flow template to the gallery of templates for Microsoft Flow. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow.
+Submit a flow template to the gallery of templates for Power Automate. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow.
 
 1. On the **My Flows** page, select the ellipsis (...) for a flow.
 
@@ -42,4 +42,4 @@ Submit a flow template to the gallery of templates for Microsoft Flow. Templates
     ![Template options](./media/publish-a-template/template-options.png)
 1. Select **Submit**.
 
-     The Microsoft Flow team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Microsoft Flow.
+     The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.

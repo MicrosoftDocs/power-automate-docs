@@ -1,4 +1,4 @@
-In this topic, you’ll see how Contoso Flooring uses Microsoft Flow to automatically convert documents to a standard format and then store them in SharePoint Online for safekeeping in the cloud. You'll create a flow that detects when a new file has been added to a OneDrive for Business folder, and then converts that file to PDF and stores it to a SharePoint Online folder. 
+In this topic, you’ll see how Contoso Flooring uses Power Automate to automatically convert documents to a standard format and then store them in SharePoint Online for safekeeping in the cloud. You'll create a flow that detects when a new file has been added to a OneDrive for Business folder, and then converts that file to PDF and stores it to a SharePoint Online folder. 
 
 ## Prerequisites
 For this scenario, you’ll need an account with **Muhimbi**, a PDF conversion service. If you don’t have a Muhimbi account already, you can sign up for a [free 30-day trial](http://www.muhimbi.com/Products/PDF-Converter-for-SharePoint/Products-PDF-Converter-for-SharePoint-Free-Trial.aspx). Follow the instructions on that page for deploying the app through your SharePoint Online site. 
@@ -14,7 +14,7 @@ First, you need to create the source and target folders on OneDrive for Business
     ![](./media/learning-create-pdf/sharepoint-folder.png)
 
 ## Create the flow
-1. In Microsoft Flow, select **My Flows**, and select **Create from blank**. 
+1. In Power Automate, select **My Flows**, and select **Create from blank**. 
    
     ![](./media/learning-create-pdf/create-blank-flow.png)
 2. Select **Search hundreds of connectors and triggers**.
@@ -27,7 +27,7 @@ First, you need to create the source and target folders on OneDrive for Business
 5. Search for **Muhimbi**, select the **Muhimbi PDF** connector, and select the action **Muhimbi PDF – Convert document**.
    
     ![](./media/learning-create-pdf/muhimbi-action.png)
-6. At this point, you may be prompted by Microsoft Flow to authenticate to Muhimbi. You will need to register Muhimbi using your **SharePoint tenant ID** in order for Microsoft Flow to use the Muhimbi service. 
+6. At this point, you may be prompted by Power Automate to authenticate to Muhimbi. You will need to register Muhimbi using your **SharePoint tenant ID** in order for Power Automate to use the Muhimbi service. 
    
    1. To find your tenant ID, select the **Settings** gear icon in SharePoint Online, and select **Site settings**.
    2. Under **Site Collection Administration**, select **Site collection app permissions**. Your tenant ID is the identifier that follows the “**@**” symbol in any of the app listings. 

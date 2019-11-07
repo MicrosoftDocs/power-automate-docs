@@ -1,6 +1,6 @@
 ---
 title: Approve requests on a mobile device | Microsoft Docs
-description: Use a mobile device to approve requests created in Microsoft Flow.
+description: Use a mobile device to approve requests created in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Approve requests on your mobile device by using Microsoft Flow
+# Approve requests on your mobile device by using Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-If a flow identifies you as an approver and you've installed the mobile app for Microsoft Flow, you receive a push notification whenever your approval is requested.
+If a flow identifies you as an approver and you've installed the mobile app for Power Automate, you receive a push notification whenever your approval is requested.
 
-This article walks you through a few common scenarios that you’re likely to encounter while you manage approval requests in the mobile app for Microsoft Flow.
+This article walks you through a few common scenarios that you’re likely to encounter while you manage approval requests in the mobile app for Power Automate.
 
 > [!NOTE]
 > The images in this topic are from an Android device; however, the experience on iOS is similar.
@@ -35,12 +35,12 @@ This article walks you through a few common scenarios that you’re likely to en
 ## Prerequisites
 To complete this walkthrough, you need:
 
-* An [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) device running the mobile app for Microsoft Flow.
+* An [Android](https://aka.ms/flowmobiledocsandroid) or [iOS](https://aka.ms/flowmobiledocsios) device running the mobile app for Power Automate.
 * To be designated as the approver in an approval flow.
 * Pending requests for approval.
 
 ## View pending requests
-1. Open the mobile app for Microsoft Flow.
+1. Open the mobile app for Power Automate.
    
     ![start the mobile app](./media/mobile-approvals/open-app.png)
 2. Select **APPROVALS** in the upper-right corner.
