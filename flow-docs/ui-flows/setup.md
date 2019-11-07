@@ -40,7 +40,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) Power Automate plan.
 
-- A work or school account to sign into both your Windows device with administrator privileges, and Power Automate.
+- A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
 - A US (QWERTY) keyboard attached.
