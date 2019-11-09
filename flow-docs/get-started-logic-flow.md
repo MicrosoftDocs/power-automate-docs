@@ -45,6 +45,9 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
     ![Twitter event](./media/get-started-logic-flow/twitter-search.png)
 
+   >[!TIP]
+   >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
+
 1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 
 1. In the **Search text** box, type the keyword that you want to find.

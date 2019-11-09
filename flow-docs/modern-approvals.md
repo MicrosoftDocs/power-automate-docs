@@ -86,7 +86,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 > [!NOTE]
 > This action sends the approval request to the email address in the **Assigned To** box.
 >
->
+> If your scenario requires it, you can attach files to your approval requests that use Common Data Service.
 
 ## Add a condition
 
