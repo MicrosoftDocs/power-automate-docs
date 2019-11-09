@@ -36,10 +36,13 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-MSFlow",
       "contributors_to_exclude": [
-        "openpublishingbuild",
-        "sudeepku",
-        "v-thepet",
-        "buck1ey"
+        "buck1ey",
+        "bishalgoswami",
+        "kathleenmcgrath",
+        "marycc",
+        "tinaburden",
+        "almostdunh",
+        "AshleyWoodruff"
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "searchScope": [
