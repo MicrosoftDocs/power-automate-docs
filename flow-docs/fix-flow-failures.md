@@ -43,7 +43,7 @@ To fix the reported errors, select **Fix my flow** and follow the steps in the r
 
 Repair tips emails are optional. If you don't want to receive them, just turn them off from the properties menu for the specific flow.
 
-If your flow fails, you can also troubleshoot it directly in Microsoft Flow.  Here are a few common failure scenarios and tips on how to fix them.
+If your flow fails, you can also troubleshoot it directly in Power Automate.  Here are a few common failure scenarios and tips on how to fix them.
 
 ## Identify the error
 Before you can fix a flow, you must identify why it failed. Click or tap the notifications icon at the top of the web portal (or open the **Activity** tab in the mobile app), and then click or tap your flow in the list that appears.

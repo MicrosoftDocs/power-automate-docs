@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow for enterprise developers, ISVs, and partners | Microsoft Docs
-description: An introduction to developing solutions for Microsoft Flow.
+title: Power Automate for enterprise developers, ISVs, and partners | Microsoft Docs
+description: An introduction to developing solutions for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,30 +20,30 @@ search.app:
 search.audienceType: 
   - developer
 ---
-# Microsoft Flow for enterprise developers, ISVs, and partners
+# Power Automate for enterprise developers, ISVs, and partners
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-As a developer, you can extend Microsoft Flow, enabling even more powerful solutions for organizations and customers.
+As a developer, you can extend Power Automate, enabling even more powerful solutions for organizations and customers.
 
-## Microsoft Flow for enterprise developers
+## Power Automate for enterprise developers
 
-As an enterprise developer, empower your organization to build robust tailored solutions on Microsoft Flow:
+As an enterprise developer, empower your organization to build robust tailored solutions on Power Automate:
 
-- **Build custom connectors**: Develop custom connectors to connect to your organization's data and web services through Microsoft Flow. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Build custom connectors**: Develop custom connectors to connect to your organization's data and web services through Power Automate. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
 
 - **Build Azure Functions**: Craft Azure Functions to extend apps with custom server-side logic. [Learn more](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
-- **Embed Microsoft Flow**: Embed Microsoft Flow directly into your website experiences to create integrated solutions, surfacing workflows or processes where people in your organization already do their work. [Learn more](embed-flow-dev.md)
+- **Embed Power Automate**: Embed Power Automate directly into your website experiences to create integrated solutions, surfacing workflows or processes where people in your organization already do their work. [Learn more](embed-flow-dev.md)
 
-## Microsoft Flow for ISVs and Microsoft partners
+## Power Automate for ISVs and Microsoft partners
 
 As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer adoption by extending your products to integrate with your customers' data and business processes, and add and customize workflows to automate business processes as part of your application. After you have completed the below seven steps, your application will have the ability to leverage a robust cloud-scale workflow engine that can connect to 200+ different services.
 
 | Phase | Step | When needed? |
 | --- | --- | --- |
-| Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to PowerApps or Microsoft Flow |
-| Development | 2. Add support for your application to authenticate users with Azure Active Directory (Azure AD) | If you want to embed the Microsoft Flow UI or list in Microsoft AppSource | 
-| Development | 3. Embed the Microsoft Flow UI into your application using our web-based iframe | If you want to include flow creation or management in your application | 
+| Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to PowerApps or Power Automate |
+| Development | 2. Add support for your application to authenticate users with Azure Active Directory (Azure AD) | If you want to embed the Power Automate UI or list in Microsoft AppSource | 
+| Development | 3. Embed the Power Automate UI into your application using our web-based iframe | If you want to include flow creation or management in your application | 
 | Development | 4. Create and publish flow templates | If you want to pre-build flows for your customers | 
 | Development | 5. Add application logic to programmatically deploy flows | If you want to automatically deploy your pre-built flows for your customers | 
 | Distribution | 6. Grant your customers licenses to Microsoft  Flow through the Microsoft Cloud Solution Provider program | If your customers don’t have Office 365 or Dynamics 365 licenses |
@@ -63,7 +63,7 @@ To call REST APIs and embed authenticated UI, your application needs to use Azur
 
 ### 3. Embedding UI components
 
-Embed Microsoft Flow within your app to enable deep, in-context integration between your app and all the other services that Microsoft Flow supports. [Learn more](embed-flow-dev.md)
+Embed Power Automate within your app to enable deep, in-context integration between your app and all the other services that Power Automate supports. [Learn more](embed-flow-dev.md)
 
 ### 4. Create and publish flow templates
 
@@ -75,10 +75,10 @@ To give end users access to flows that they can use automatically, deploy the fl
 
 ### 6. Licensing
 
-If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for you. However, if your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Microsoft Flow, so that they are licensed to leverage those embedded components in your application.
+If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for you. However, if your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they are licensed to leverage those embedded components in your application.
 
-We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Microsoft Flow, which you should check for plan and feature details.
+We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Power Automate, which you should check for plan and feature details.
 
 ### 7. List on AppSource
 
-Once you have integrated Microsoft Flow into your application, you can list it on AppSource. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
+Once you have integrated Power Automate into your application, you can list it on AppSource. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)

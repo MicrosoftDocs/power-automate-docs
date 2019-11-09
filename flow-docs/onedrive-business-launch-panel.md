@@ -26,7 +26,7 @@ search.audienceType:
 # Create flows from the OneDrive for Business launch panel
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Similar to the Microsoft Flow [Launch Panel in SharePoint](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), you can run flows on specific files in OneDrive for Business. 
+Similar to the Power Automate [Launch Panel in SharePoint](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), you can run flows on specific files in OneDrive for Business. 
 
 This feature enables the person running the flow to use their own credentials, which is especially applicable for flows that have been created by an IT department. 
 
@@ -65,9 +65,9 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 
 
 >[!TIP]
->While this walkthrough shows how to create a flow from a template, you can also create a flow from blank to use any of the hundreds of connectors available in Microsoft Flow.
+>While this walkthrough shows how to create a flow from a template, you can also create a flow from blank to use any of the hundreds of connectors available in Power Automate.
 
 ## Learn more
 
-- [Get started with Microsoft Flow](getting-started.md) 
+- [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)

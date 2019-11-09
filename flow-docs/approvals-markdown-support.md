@@ -1,6 +1,6 @@
 ---
-title: Use markdown to format Microsoft Flow approvals | Microsoft Docs
-description: Learn to use markdown to format Microsoft Flow approval requests.
+title: Use markdown to format Power Automate approvals | Microsoft Docs
+description: Learn to use markdown to format Power Automate approval requests.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,10 +22,13 @@ search.audienceType:
   - enduser
 ---
 
-# Use Markdown in Microsoft Flow approval requests
+# Use Markdown in Power Automate approval requests
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting and tables to your approval requests.
+This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
+
+> [!IMPORTANT]
+> Approval request emails are *actionable messages*. If your [Microsoft Outlook client](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format. 
 
 ## Headers
 
@@ -153,12 +156,12 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 **Example:**
 <pre>
-&#91;Microsoft Flow](https://flow.microsoft.com)
+&#91;Power Automate](https://flow.microsoft.com)
 </pre>
 
 **Result:**
 
-[Microsoft Flow](https://flow.microsoft.com)
+[Power Automate](https://flow.microsoft.com)
 
 ### Anchor links
 

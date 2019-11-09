@@ -36,16 +36,19 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-MSFlow",
       "contributors_to_exclude": [
-        "openpublishingbuild",
-        "sudeepku",
-        "v-thepet",
-        "buck1ey"
+        "buck1ey",
+        "bishalgoswami",
+        "kathleenmcgrath",
+        "marycc",
+        "tinaburden",
+        "almostdunh",
+        "AshleyWoodruff"
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "searchScope": [
-        "Flow"
+        "Power Automate"
       ],
-      "titleSuffix": "Microsoft Flow",
+      "titleSuffix": "Power Automate",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/flow-docs",
       "feedback_product_url": "https://ideas.flow.microsoft.com",

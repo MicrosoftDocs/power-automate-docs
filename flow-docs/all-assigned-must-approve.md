@@ -35,7 +35,7 @@ This type of approval workflow is useful in an organization that requires a pers
 
 ## Prerequisites
 
-* Access to [Microsoft Flow](https://flow.microsoft.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
+* Access to [Power Automate](https://flow.microsoft.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
 * A SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
     This walkthrough assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
@@ -44,7 +44,7 @@ This type of approval workflow is useful in an organization that requires a pers
     You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
-> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Microsoft Flow supports.
+> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Power Automate supports.
 >
 >
 
@@ -57,7 +57,7 @@ This type of approval workflow is useful in an organization that requires a pers
 
 This walkthrough uses tokens. To display the list of tokens, tap or click any input control, and then search for the token in the **Dynamic content** list that opens.
 
-Sign into [Microsoft Flow](https://flow.microsoft.com), and then perform the following steps to create your flow.
+Sign into [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
 
 1. Select **My flows** > **Create from blank**, in the top right of the screen.
 1. Add the **SharePoint - When an item is created or modified** trigger.
@@ -119,7 +119,7 @@ Congratulations, your flow is complete! If you followed along, your flow resembl
 
 ![overall flow image](media/all-assigned-must-approve/overall-flow.png)
 
-Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Microsoft Flow mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
+Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Power Automate mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
 
 Here's an example of the approval request that's sent to each approver.
 

@@ -1,7 +1,7 @@
 In a previous topic, you saw how to power your Twitter feed with a SharePoint list in a  simple way. In this topic, you’ll learn how to build a more business-friendly scenario using approvals. This way, anyone with access to the SharePoint list can contribute tweets, and the social media team can approve or reject those tweets. The team maintains control of the account and the content that goes out to customers. 
 
 ## Create an approval request flow
-1. On the **Microsoft Flow** homepage, select **Approvals**, select **Create approval flow**, and then scroll down and select the **Post list items to Twitter after approval** template. 
+1. On the **Power Automate** homepage, select **Approvals**, select **Create approval flow**, and then scroll down and select the **Post list items to Twitter after approval** template. 
    
     ![Select template](./media/learning-approval-center/create-approval.png)
 2. Verify your account credentials for **SharePoint**, **Approvals**, and **Twitter**, and select **Continue**. 
@@ -18,7 +18,7 @@ By default, this template starts an approval process whenever a new item is crea
    4. Enter **ApproverComments** and select **Save**
       
       ![Add columns](./media/learning-approval-center/new-columns.png)
-2. Back in **Microsoft Flow**, in the **When a new item is created** action, enter the following values:
+2. Back in **Power Automate**, in the **When a new item is created** action, enter the following values:
    
    * **Site Address**: your team SharePoint URL
    * **List Name**: ContosoTweets
@@ -64,7 +64,7 @@ By default, this template starts an approval process whenever a new item is crea
     
      ![Post and save](./media/learning-approval-center/post-tweet.png)
 
-This is just one way that Microsoft Flow can empower productivity for your team. Your team can contribute ideas, relevant news, or product guidance, and you still get to maintain control over what gets tweeted out to customers.
+This is just one way that Power Automate can empower productivity for your team. Your team can contribute ideas, relevant news, or product guidance, and you still get to maintain control over what gets tweeted out to customers.
 
 In our next topic, we’ll see what it looks like when an approver receives a new request for a proposed tweet. 
 

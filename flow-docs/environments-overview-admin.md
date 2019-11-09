@@ -1,6 +1,6 @@
 ---
 title: Environment overview for Administrators | Microsoft Docs
-description: Using, creating, and managing environments in Microsoft Flow
+description: Using, creating, and managing environments in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Using environments within Microsoft Flow
+# Using environments within Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 ## Benefits
@@ -34,7 +34,7 @@ Environments provide the following benefits:
 
     > [!IMPORTANT]
     > If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, PowerApps, and more.
-* **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use data loss prevention to control which services can share data within your Microsoft Flow deployment.
+* **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use data loss prevention to control which services can share data within your Power Automate deployment.
 
     For example, you can add the *SharePoint* and *OneDrive for Business* services to a business data only policy. Any flows created in this environment can use *SharePoint* and *OneDrive for Business* services. However, they won't be able to share data with other services that aren't included in the business data only policy.
 
@@ -59,7 +59,7 @@ Although environments provide many benefits, they also introduce new limitations
 The **Default** environment is shared by all users and any user can create flows in the **Default** environment.
 
 > [!TIP]
-> If you're a Preview user, all existing flows reside in the default environment. A *Preview user* is someone who was using Microsoft Flow before its release to General Availability (GA).
+> If you're a Preview user, all existing flows reside in the default environment. A *Preview user* is someone who was using Power Automate before its release to General Availability (GA).
 
 ## The admin center
 
@@ -79,7 +79,7 @@ Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in 
 
 ## Create an environment
 
-1. In the [Microsoft Flow admin center](https://admin.flow.microsoft.com), select **Environments**. You'll see all existing environments:
+1. In the [Power Automate admin center](https://admin.flow.microsoft.com), select **Environments**. You'll see all existing environments:
    ![Environments](./media/environments-overview-admin/environments-list.png)
 2. Select **New environment** and then provide the required information:
 
@@ -102,7 +102,7 @@ You can now add users to the environment.
 
 ## Manage your existing environments
 
-1. In the [Microsoft Flow admin center](https://admin.flow.microsoft.com), select **Environments**:
+1. In the [Power Automate admin center](https://admin.flow.microsoft.com), select **Environments**:
 
    ![environments menu item](./media/environments-overview-admin/select-environments.png)
 1. Select an environment to open its properties.
@@ -171,9 +171,9 @@ Yes, flows can be exported from one environment and imported into another enviro
 
 ### Which license includes the Common Data Service?
 
-Only Microsoft PowerApps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Microsoft Flow plans 1 and 2, and Microsoft PowerApps plans 1 and 2) have the rights to use the Common Data Service.
+Only Microsoft PowerApps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft PowerApps plans 1 and 2) have the rights to use the Common Data Service.
 
-Choose a plan that's right for you by visiting the [Microsoft Flow pricing](https://flow.microsoft.com/pricing/) page.
+Choose a plan that's right for you by visiting the [Power Automate pricing](https://flow.microsoft.com/pricing/) page.
 
 See the [Billing questions](billing-questions.md) document for answers to frequently asked questions about billing.
 
@@ -181,10 +181,10 @@ See the [Billing questions](billing-questions.md) document for answers to freque
 
 No. The Common Data Service requires an environment. [Read more](common-data-model-intro.md) about it.
 
-### What regions include Microsoft Flow?
+### What regions include Power Automate?
 
-Microsoft Flow supports most regions that Office 365 supports, see [the regions overview](regions-overview.md) for more details.
+Power Automate supports most regions that Office 365 supports, see [the regions overview](regions-overview.md) for more details.
 
 ### What's needed to create my own custom environment?
 
-All users with the Microsoft Flow Plan 2 license can create their own environments. All Microsoft Flow users can use environments created by Plan 2 administrators, but they cannot create their own environments.
+All users with the Power Automate Plan 2 license can create their own environments. All Power Automate users can use environments created by Plan 2 administrators, but they cannot create their own environments.

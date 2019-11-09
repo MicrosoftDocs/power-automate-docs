@@ -1,4 +1,4 @@
-Today, it's very common to use a **file storage service**, such as **OneDrive** or **Google Drive**.  Have you ever needed to **copy files from one storage service to another**?  Microsoft Flow makes it easy to automatically move and copy files between two services.
+Today, it's very common to use a **file storage service**, such as **OneDrive** or **Google Drive**.  Have you ever needed to **copy files from one storage service to another**?  Power Automate makes it easy to automatically move and copy files between two services.
 
 ## Creating flows that copy files
 

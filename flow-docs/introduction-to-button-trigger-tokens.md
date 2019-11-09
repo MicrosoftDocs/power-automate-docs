@@ -54,8 +54,8 @@ In this walk-through, we will create a button flow on an Android device. The but
 In this walk-through, you will see screen-shots from an Android device, however, the experience is similar on iOS and Windows Phone devices as well.
 
 ### Prerequisites
-* A work or school email address or a [Microsoft Account](https://account.microsoft.com/about?refd=www.microsoft.com) with access to Microsoft Flow.
-* The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* A work or school email address or a [Microsoft Account](https://account.microsoft.com/about?refd=www.microsoft.com) with access to Power Automate.
+* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 Let's get started:
 

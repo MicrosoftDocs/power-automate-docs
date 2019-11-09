@@ -30,11 +30,11 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 ## Prerequisites
 
-- A Microsoft Flow account.
+- A Power Automate account.
 - A SharePoint list for employees to enter their expense reports.
 
 ## Create approval flow
-1. Sign in to [Microsoft Flow](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** from the left navigation bar.
 1. Select **New** > **Create from blank**.
 
@@ -96,7 +96,7 @@ To do any of these in the flow, add a [**Condition**](add-condition.md) or a **S
 
 ## Respond to approval requests with a custom response
 
-Approvers receive approval requests in email. The requests are also displayed in the approval center on Microsoft Flow. 
+Approvers receive approval requests in email. The requests are also displayed in the approval center on Power Automate. 
 
 ![Approval request email](media/create-approval-response-options/approval-request-email.png)
 

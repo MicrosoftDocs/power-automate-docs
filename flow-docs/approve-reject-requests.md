@@ -1,6 +1,6 @@
 ---
 title: View, approve, or reject approval requests. | Microsoft Docs
-description: Learn how to view, approve, or reject approval requests in Microsoft Flow.
+description: Learn how to view, approve, or reject approval requests in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage approval requests in Microsoft Flow
+# Manage approval requests in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-Microsoft Flow makes it easy to automate [approval workflow processes](modern-approvals.md). In this walkthrough, you learn how to view, approve, and reject approval requests sent from Microsoft Flow.
+Power Automate makes it easy to automate [approval workflow processes](modern-approvals.md). In this walkthrough, you learn how to view, approve, and reject approval requests sent from Power Automate.
 
 ## View pending approval requests
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
@@ -40,5 +40,5 @@ Microsoft Flow makes it easy to automate [approval workflow processes](modern-ap
 * Create [approval flows.](modern-approvals.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)
 * Create [parallel approval flows.](parallel-modern-approvals.md)
-* Install the Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 

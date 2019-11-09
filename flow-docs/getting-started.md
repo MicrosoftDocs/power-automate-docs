@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/31/2017
+ms.date: 11/05/2019
 ms.author: stepsic
 search.app: 
   - Flow
@@ -31,11 +31,9 @@ search.audienceType:
 
 Welcome! Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
 
-The main types of flows are [automated](get-started-logic-flow.md), [button](introduction-to-button-flows.md), [scheduled](run-scheduled-tasks.md), and [business process](business-process-flows-overview.md) flows.
-
 ## Types of flows
 
-Power Automate is one of the three pillars of the Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
+Power Automate is one of the pillars of Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

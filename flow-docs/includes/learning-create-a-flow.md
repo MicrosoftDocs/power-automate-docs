@@ -1,9 +1,9 @@
-Welcome back to Guided Learning for Microsoft Flow. In this lesson, you will see more of the Microsoft Flow environment, and you can **build your first flow**.
+Welcome back to Guided Learning for Power Automate. In this lesson, you will see more of the Power Automate environment, and you can **build your first flow**.
 
-Getting started with Microsoft Flow is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  
+Getting started with Power Automate is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  
 
-## Microsoft Flow templates
-Take a look at the [ Microsoft Flow website](https://ms.flow.microsoft.com), and open the **Templates** menu. As you scroll through the list, you see that Microsoft Flow allows you to connect to many services.
+## Power Automate templates
+Take a look at the [ Power Automate website](https://ms.flow.microsoft.com), and open the **Templates** menu. As you scroll through the list, you see that Power Automate allows you to connect to many services.
 
 ![Flow Website -> Template list](./media/learning-create-a-flow/template-list.png)
 
@@ -46,7 +46,7 @@ You are asked to **provide credentials** for the **Office 365 Outlook** and **Sh
    
     ![Run history](./media/learning-create-a-flow/run-history.png)
 
-## Important concepts in Microsoft Flow
+## Important concepts in Power Automate
 Some things to know about when building flows. 
 Every flow has two key parts: a **trigger**, and **one or more actions**. 
 
@@ -60,5 +60,5 @@ Other actions could be, send an **email**, post a **Tweet**, start an **approval
 These will all come into play later, as you build your own flows from scratch. 
 
 ## Next Lesson
-The next lesson will look at the Microsoft Flow Mobile app and its capabilities. 
+The next lesson will look at the Power Automate Mobile app and its capabilities. 
 

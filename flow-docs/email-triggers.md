@@ -35,7 +35,7 @@ Use the **When a new email arrives** trigger to create a flow that runs when one
 | Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs *actions* that are based on the results of your search. |
 
 > [!IMPORTANT]
-> Each [Microsoft Flow plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met. 
+> Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met. 
 
 For example, if you check an email's *from* address in a condition, each run counts against your plan's run quota, even if it's not *from* the address that interests you.
 > 
@@ -44,9 +44,9 @@ For example, if you check an email's *from* address in a condition, each run cou
 In the following walkthroughs, we check all properties in the **When a new email arrives** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
-* An account with access to [Microsoft Flow](https://flow.microsoft.com)
+* An account with access to [Power Automate](https://flow.microsoft.com)
 * An Office 365 Outlook account
-* The Microsoft Flow mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
+* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connections to Office, Outlook, and the push notification service
 
 ## Trigger a flow based on an email's subject

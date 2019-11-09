@@ -1,6 +1,6 @@
 ---
-title: Find and fix errors with the Microsoft Flow checker | Microsoft Docs
-description: Find and fix errors and warnings quickly with the Microsoft Flow checker.
+title: Find and fix errors with the Power Automate checker | Microsoft Docs
+description: Find and fix errors quickly with the Power Automate checker.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,10 +22,10 @@ search.audienceType:
   - flowmaker
 ---
 
-# The Microsoft Flow checker
+# The Power Automate checker
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-The Microsoft Flow checker promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights into questions like "which areas of my flow's implementation pose a performance or reliability risk?"
+The Power Automate checker promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights into questions like "which areas of my flow's implementation pose a performance or reliability risk?"
 
 For each issue the checker identifies, the checker points to specific occurrences within the flow where you should consider making improvements. And, you learn how to implement these improvements by following detailed guidance.
 
@@ -48,7 +48,7 @@ Expand each section to learn more about how to fix the errors or warnings.
 
 ## Learn more
 
-[Get started with Microsoft Flow](getting-started.md)
+[Get started with Power Automate](getting-started.md)
 
 
 

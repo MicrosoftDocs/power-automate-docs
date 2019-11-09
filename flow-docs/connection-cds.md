@@ -1,6 +1,6 @@
 ---
 title: Create an automated flow with Common Data Service| Microsoft Docs
-description: Create workflows by using a Common Data Service connection and Microsoft Flow
+description: Create workflows by using a Common Data Service connection and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -39,7 +39,7 @@ You can use any of the following triggers to initiate your flow:
 > [!div class="mx-imgBorder"]
 > ![Select a trigger](./media/cds-connector/Triggers.png)
 
-If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Microsoft Flow runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
+If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
 
 > [!div class="mx-imgBorder"]
 > ![Choose environment](./media/cds-connector/Environments.png)

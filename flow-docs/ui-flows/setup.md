@@ -28,6 +28,9 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
+> [!IMPORTANT]
+> The UI flows feature is currently rolling out across regions. If you don't see the feature in your environement, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
+
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
 > [!TIP]
@@ -37,7 +40,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) Power Automate plan.
 
-- A work or school account to sign into both Power Automate and your Windows device.
+- A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
 - A US (QWERTY) keyboard attached.
@@ -46,10 +49,6 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
     or Google Chrome.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
-
-> [!IMPORTANT]
-> UI flows is currently rolling out across regions. If you don't see the preview feature or cannot create new UI flows, please retry later.
-
 
 ## Limitations
 
@@ -73,19 +72,7 @@ The following are not supported:
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
-## Get your device ready
-
-Install the following components to create and run UI flows:
-
-|  | **Name**                             | **Usage**  |                                                        
-|---|--------------------------------------|----------------------------------------------------------------------|
-|   | [The UI flows app](https://go.microsoft.com/fwlink/?linkid=2102613)                         | Record desktop Windows applications                                  |          |
-|   | UI flows browser extension           | Record and test desktop Windows applications. Record Web applications. |                                                                                              |
-|   | Webdriver                            | Test and run desktop Windows applications                            |                                                                                              |
-|   | [Selenium IDE](https://go.microsoft.com/fwlink/?linkid=2107665) | Record and playback Web applications                                 |  |
-|   | [Gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409)                              | Used to enable events, scheduled flows, or button flows to connect to, trigger your UI flows (running inside your organization), and run them.              |  | 
-
-## Install the UI flows app
+## Install UI flows on your device
 
 The UI flows installer contains all the components needed to record, edit, and test UI flows for desktop. 
 
@@ -94,9 +81,12 @@ The UI flows installer contains all the components needed to record, edit, and t
 
 Follow these steps to install the UI flows app:
 
-1. [Download the UI flows app installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
+
+> [!TIP]
+> If you want to change the data collection setting, re-install UI flows and change the setting.
 
 ## Activate the UI flows browser extension 
 
@@ -105,8 +95,18 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 - On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
 
+> [!TIP]
+> If you did not see the prompt in your browser, please check the following:
+> - You must use Microsoft Edge (Chromium) or Google Chrome
+> - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+> - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
-## Install Selenium IDE
+<!-- To do for Gautier: check if the below is not bugged as there was one at some point.
+> - Reinstall the extension from the Chrome store
+Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
+-->
+
+## (optional) Install Selenium IDE to automate Web applications
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
@@ -140,4 +140,9 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 - Learn how to run [UI flows](run-ui-flow.md).
 - Learn to [manage UI flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md/#use-a-gateway)
+
+## Limitations
+- The latest versions of each components are required to record, test or run UI flows.
+- Please uninstall previous versions before installing the latest.
+
 
