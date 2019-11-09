@@ -34,6 +34,8 @@ Power Automate makes it easy to automate [approval workflow processes](modern-ap
 ## Reject a request
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
+
+
 ## Learn more
 * Create [approval flows.](modern-approvals.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)
