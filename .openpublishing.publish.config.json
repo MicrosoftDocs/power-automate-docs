@@ -2,8 +2,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "flow",
-      "build_source_folder": "flow-docs",
-      "build_output_subfolder": "flow",
+      "build_source_folder": "articles",
+      "build_output_subfolder": "power-automate",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
