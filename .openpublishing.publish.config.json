@@ -26,7 +26,7 @@
     {
       "docset_name": "power-automate",
       "build_source_folder": "articles",
-      "build_output_subfolder": "power/automate",
+      "build_output_subfolder": "power-automate",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -52,25 +52,9 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
-      "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "PDF",
-      "Pdf"
-    ],
-    "master": [
-      "Publish",
-      "PDF"
-    ]
-  },
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
