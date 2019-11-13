@@ -22,21 +22,7 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "power-automate",
-      "build_source_folder": "articles",
-      "build_output_subfolder": "power-automate",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
+    },    
     {
       "docset_name": "pwr-automate",
       "build_source_folder": "articles",
