@@ -59,29 +59,29 @@ This walkthrough uses tokens. To display the list of tokens, tap or click any in
 
 Sign into [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
 
-1. Select **My flows** > **Create from blank**, in the top right of the screen.
-1. Add the **SharePoint - When an item is created or modified** trigger.
-1. Enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select the list **List Name**.
-1. Add the **Office 365 Users - Get manager V2** action, select the **User (UPN)** box, and then add the **Created By Email** token to it.
+1. Select **My flows** > **New** > **Automated-from blank**, in the top left of the screen.
+1. Give your flow a name and then add the **SharePoint - When an item is created or modified** trigger.
+1. Enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
+1. Select **New step**, add the Office 365 **Get manager (V2)** action, select the **User (UPN)** box, and then add the **Created By Email** token to it.
 
     The **Created By Email** token is located under the **When an item is created or modified** category of the **Dynamic content** list. This token dynamically provides access to data about the manager for the person who created the item in SharePoint.
 
-1. Add another **Office 365 Users - Get manager V2** action, and then add the **Mail** token to the **User (UPN)** box.
+1. Select **New step**, add another Office 365 **Get manager (V2)** action, and then add the **Mail** token to the **User (UPN)** box.
 
-    The **Mail** token is located under the **Get manager V2 2** category of the **Dynamic content** list. This token dynamically provides access to the email address for the manager's manager.
+    The **Mail** token is located under the **Get manager (V2)** category of the **Dynamic content** list. This token dynamically provides access to the email address for the manager's manager.
 
-    You can also rename the **Get manager V2 2** card to something meaningful like "Skip level manager".
-1. Add the **Start an approval** action, and then select **Everyone from the assigned list** from the **Approval type** list.
+    You can also rename the **Get manager (V2) 2** card to something meaningful like "Skip level manager".
+1. Select **New step**, add the **Create an approval** action, and then select **Approve/Reject - Everyone must approve** from the **Approval type** list.
 
    > [!IMPORTANT]
    > If any approver rejects, the approval request is considered rejected for all approvers.
    >
    >
-1. Use the following table as a guide to complete the **Start an approval** card.
+1. Use the following table as a guide to complete the **Create an approval** card.
 
    | Field | Description |
    | --- | --- |
-   |  Approval type |Use **Anyone from the assigned list** to indicate that any one of the approvers can approve or reject the request. </p>Use **Everyone from the assigned list** to indicate that a request is only approved if everyone agrees, and the request is denied if a single person rejects it. |
+   | Approval type |See the [approval types](#Approval-types-and-their-behaviors). |
    |  Title |The title of the approval request. |
    |  Assigned to |The email addresses of the approvers. |
    |  Details |Any additional information that you want sent to the approvers listed in the **Assigned to** field. |
@@ -89,13 +89,13 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
    |  Item link description |A text description for the **Item link**. |
 
    > [!TIP]
-   > The **Start an approval** action provides several tokens, including **Response** and **Response summary**. Use these tokens in your flow to provide rich reporting of the results from a run of an approval request flow.
+   > The **Create an approval** action provides several tokens, including **Response** and **Response summary**. Use these tokens in your flow to provide rich reporting of the results from a run of an approval request flow.
    >
    >
 
-    The **Start an approval** card is a template for the approval request that's sent to approvers. Configure it in a way that's useful for your organization. Here's an example.
+    The **Create an approval** card is a template for the approval request that's sent to approvers. Configure it in a way that's useful for your organization. Here's an example.
 
-    ![start an approval](media/all-assigned-must-approve/start-an-approval-card.png)
+    ![Create an approval](media/all-assigned-must-approve/start-an-approval-card.png)
 
 1. Add the **Office 365 Outlook - Send an email** action, and then configure it to send an email with the results of the request.
 
@@ -104,22 +104,26 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
     ![send an email](media/all-assigned-must-approve/send-an-email-card.png)
 
 > [!NOTE]
-> Any action that follows the **Start an approval** action runs based on your selection in the **Approval type** list on the **Start an approval** card. The following table lists the behavior based on your selection.
+> Any action that follows the **Create an approval** action runs based on your selection in the **Approval type** list on the **Create an approval** card. The following table lists the behavior based on your selection.
 >
 >
+
+### Approval types and their behaviors
 
 | Approval type | Behavior |
 | --- | --- |
-| Anyone from the assigned list |Actions that follow the **Start an approval** action run after any one of the approvers decides. |
-| Everyone from the assigned list |Actions that follow the **Start an approval** action run after an approver declines or everyone approves the request. |
+| Approve/Reject - Everyone must approve | Approval or rejection is needed by **all** approvers to complete the request. </p> The actions that follow the **Create an approval** action run after **all** of the approvers decide.|
+| Approve/Reject - First to respond | Approval or rejection by any approver completes the request.  </p> The actions that follow the **Create an approval** action run after any one of the approvers decides.|
+| Custom reponses - Wait for all responses | All appovers must respond to complete the process. |
+| Custom reponses - Wait for one response | A response from any approver completes the process. |
 
-At the top of the screen, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
+At the top of the screen, select **CrSave** to save your flow.
 
 Congratulations, your flow is complete! If you followed along, your flow resembles this image.
 
 ![overall flow image](media/all-assigned-must-approve/overall-flow.png)
 
-Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start an approval** card. Your flow sends approval requests via the Power Automate mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
+Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Create an approval** card. Your flow sends approval requests via the Power Automate mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
 
 Here's an example of the approval request that's sent to each approver.
 

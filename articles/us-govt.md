@@ -180,10 +180,10 @@ For those customers that implement network restrictions, please ensure access to
 * .azure.us
 * .usgovcloudapi.net
 * .microsoftonline.com
-* . microsoft.com
+* .microsoft.com
 * .windows.net
-* . azureedge.net
-* . azure.net
+* .azureedge.net
+* .azure.net
 * .crm9.dynamics.com
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 

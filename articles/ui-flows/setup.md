@@ -29,7 +29,7 @@ search.audienceType:
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 > [!IMPORTANT]
-> The UI flows feature is currently rolling out across regions. If you don't see the feature in your environement, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
+> The UI flows feature is currently rolling out across regions. If you don't see the feature in your environment, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
 
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
@@ -101,10 +101,6 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
-<!-- To do for Gautier: check if the below is not bugged as there was one at some point.
-> - Reinstall the extension from the Chrome store
-Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
--->
 
 ## (optional) Install Selenium IDE to automate Web applications
 
