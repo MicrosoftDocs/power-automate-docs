@@ -81,7 +81,7 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
 
    | Field | Description |
    | --- | --- |
-   | Approval type |See the [approval types](#Approval-types-and-their-behaviors). |
+   | Approval type |See the [approval types](#approval-types-and-their-behaviors). |
    |  Title |The title of the approval request. |
    |  Assigned to |The email addresses of the approvers. |
    |  Details |Any additional information that you want sent to the approvers listed in the **Assigned to** field. |
