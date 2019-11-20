@@ -10,7 +10,7 @@ ms.service: flow
 applies_to: 
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
-  - PowerApps
+  - Power Apps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.app: 
   - Flow

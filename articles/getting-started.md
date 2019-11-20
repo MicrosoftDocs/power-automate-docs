@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Get started with Power Automate
+# Get started with Power Automate 
 
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 

@@ -119,7 +119,7 @@ When you add a value to a field, you must match the field type whether you type 
 |Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of fields that require both a record ID and lookup type
-Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in PowerApps.
+Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in Power Apps.
 
 * **Owner** and **Owner Type**.
   
