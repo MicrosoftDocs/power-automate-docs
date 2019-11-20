@@ -369,7 +369,7 @@ search.audienceType:
                                         </div>
                                         <div class="cardText">
                                             <h3>Create a custom connector</h3>
-                                            <p>Build a custom connector that you can use in Azure Logic Apps, Power Automate, or Microsoft PowerApps.</p>
+                                            <p>Build a custom connector that you can use in Azure Logic Apps, Power Automate, or Microsoft Power Apps.</p>
                                         </div>
                                     </div>
                                 </div>

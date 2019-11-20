@@ -1,5 +1,5 @@
 ---
-title: "Configure workflow stages and steps in PowerApps | MicrosoftDocs"
+title: "Configure workflow stages and steps in Power Apps | MicrosoftDocs"
 description: "Learn how to configure workflow steps"
 ms.custom: ""
 ms.date: 06/27/2018

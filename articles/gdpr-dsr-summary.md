@@ -24,7 +24,7 @@ search.audienceType:
 # Responding to GDPR Data Subject Requests for Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This article prepares you and your organization for the European Union's General Data Protection Regulation (GDPR). This article not only describes what Microsoft is doing to prepare for the GDPR but also shares examples of steps you can take today to support GDPR compliance when using PowerApps, Power Automate, and Common Data Service.
+This article prepares you and your organization for the European Union's General Data Protection Regulation (GDPR). This article not only describes what Microsoft is doing to prepare for the GDPR but also shares examples of steps you can take today to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service.
 
 ## Prerequisites
 
@@ -36,9 +36,9 @@ A user needs to have an active Azure Active Directory account with a [Power Auto
 
 ### Administrators
 
-You can perform the operations that require admin privileges, outlined in this article if you sign into the [Power Automate Admin center](https://admin.flow.microsoft.com/)  or [PowerApps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
+You can perform the operations that require admin privileges, outlined in this article if you sign into the [Power Automate Admin center](https://admin.flow.microsoft.com/)  or [Power Apps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
 
-- A paid or trial license for PowerApps Plan 2.
+- A paid or trial license for Power Apps Plan 2.
 
     [A trial license](http://web.powerapps.com/trial) expires in 30 days.
 

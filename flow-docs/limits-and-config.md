@@ -97,7 +97,7 @@ These are limits for a single flow.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Actions per workflow |500 |You can add nested workflows to extend this as needed. |
+| Actions per workflow |250 |You can add nested workflows to extend this as needed. |
 | Allowed action nesting depth |8 |You can add nested workflows to extend this as needed. |
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |

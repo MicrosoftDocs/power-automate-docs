@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Manage connections in Power Automate
 [!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-If you create a connection in Power Automate, you can easily access your data while building a flow. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with PowerApps, so when you create a connection in one product, the connection shows up in the other.
+If you create a connection in Power Automate, you can easily access your data while building a flow. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one product, the connection shows up in the other.
 
 For example, you can use a connection to perform these tasks:
 
@@ -77,7 +77,7 @@ As of this writing, SQL Server and SharePoint Server support the on-premises dat
    
     ![Confirm deletion](./media/add-manage-connections/delete-confirmation.png)
 
-When you delete a connection, it's removed from both PowerApps and Power Automate.
+When you delete a connection, it's removed from both Power Apps and Power Automate.
 
 ## Update a connection
 You can update a connection that isn't working because your account details or your password changed.
@@ -87,7 +87,7 @@ You can update a connection that isn't working because your account details or y
     ![Verify password](./media/add-manage-connections/verify-password.png)
 2. When prompted, update your connection with new credentials.
 
-When you update a connection, it's updated for both PowerApps and Power Automate.
+When you update a connection, it's updated for both Power Apps and Power Automate.
 
 ## Troubleshoot a connection
 Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Office 365 or OneDrive for Business.

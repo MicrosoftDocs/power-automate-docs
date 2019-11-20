@@ -200,7 +200,7 @@ To add the HTTP connectors to an existing policy via the [template](https://flow
 
 ## Add custom and HTTP connectors with PowerShell
 
-To add support for custom connectors and/or HTTP connectors to a policy using the PowerShell, [download](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) and import the latest PowerApps PowerShell scripts and then use these cmdlets:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’, and ‘Remove-CustomConnectorFromPolicy’ to modify the policy. Use the ‘Get-Help -detailed’ cmdlet as a reference.
+To add support for custom connectors and/or HTTP connectors to a policy using the PowerShell, [download](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) and import the latest Power Apps PowerShell scripts and then use these cmdlets:  ‘New-AdminDlpPolicy’, ‘Set-AdminDlpPolicy’, ‘Add-CustomConnectorToPolicy’, and ‘Remove-CustomConnectorFromPolicy’ to modify the policy. Use the ‘Get-Help -detailed’ cmdlet as a reference.
 
 
 > [!IMPORTANT]
