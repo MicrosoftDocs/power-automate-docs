@@ -36,9 +36,9 @@ For example, leverage the Common Data Service within Power Automate in these key
 
 **Prerequisites**
 
-* Sign up for [Power Automate](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
+* Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://web.powerapps.com).
   
-    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
+    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 * If you haven't used the Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
 ## Sign in to your Environment

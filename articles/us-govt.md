@@ -53,11 +53,11 @@ Entities with questions about eligibility for Power Automate US Government shoul
 
 Access to Power Automate US Government plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Power Automate/PowerApps Plan 1 US Government
+- Power Automate/Power Apps Plan 1 US Government
 
-- Power Automate/PowerApps Plan 2 US Government
+- Power Automate/Power Apps Plan 2 US Government
 
-- In addition to the standalone plans, Power Automate and PowerApps capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with Power Automate and PowerApps capabilities.
+- In addition to the standalone plans, Power Automate and Power Apps capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with Power Automate and Power Apps capabilities.
 
 > [!NOTE]
 > Licensing is available in customer tenants from mid-April 2019.
@@ -125,7 +125,7 @@ Microsoft designed this platform and its operational procedures to meet the requ
 
 ## Power Automate US Government and other Microsoft services
 
-Power Automate US Government includes several features that allow users to connect to, and integrate with, other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and PowerApps US Government.
+Power Automate US Government includes several features that allow users to connect to, and integrate with, other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Power Apps US Government.
 
 Power Automate US Government runs within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including, but not limited to the web-user client, Power Automate mobile application (when available), and any third-party client application that connects to Power Automate US Government, are not part of Power Automate US Government's accreditation boundary. Government customers are responsible for managing them.
 
@@ -249,4 +249,4 @@ Some of the features available in the commercial version of Flow are not availab
 
 ### See also
 
-[PowerApps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+[Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
