@@ -40,7 +40,7 @@ You can perform the operations that require admin privileges, outlined in this a
 
 - A paid or trial license for PowerApps Plan 2.
 
-    [A trial license](http://web.powerapps.com/trial) expires in 30 days.
+    [A trial license](http://make.powerapps.com/trial) expires in 30 days.
 
 - [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 

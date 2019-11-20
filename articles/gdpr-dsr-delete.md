@@ -134,7 +134,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
  Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
-1. Sign into [PowerApps](https://web.powerapps.com/).
+1. Sign into [PowerApps](https://make.powerapps.com/).
 
 1. Select **Data**, and then select **Entities**.
 

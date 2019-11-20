@@ -36,7 +36,7 @@ Notice the following requirements when you add a workflow to a business process 
 
 You add an on-demand  workflow from the business process flow designer by dragging the workflow component to a process stage or to the global workflows section. 
 
-On the [PowerApps](https://web.powerapps.com) site, select **Model-driven** (lower left of the navigation pane). 
+On the [PowerApps](https://make.powerapps.com) site, select **Model-driven** (lower left of the navigation pane). 
 
 Open the business process flow designer. You can do this in one of two ways.
 - If the business process flow is already added to an app, go to **Apps**, next to the app you want select **…**, and then select **Edit**. In the app designer, select the business process flow, and then select ![Open business process flow designer](media/dynamics365-open-designer.PNG).  

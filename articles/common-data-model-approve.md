@@ -39,7 +39,7 @@ By following the steps in this section, you'll build:
 * Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ## Build the entity
-1. Sign in to [powerapps.com](https://web.powerapps.com).
+1. Sign in to [powerapps.com](https://make.powerapps.com).
 2. If the left navigation bar doesn't appear by default, click or tap the icon with three horizontal lines in the upper-left corner.
    
     ![Open left navigation bar](./media/common-data-model-approve/hamburger-icon.png)
@@ -246,7 +246,7 @@ By following the steps in this section, you'll build:
 3. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
 
 ## Build the app
-1. Sign in to [powerapps.com](https://web.powerapps.com), and then click or tap **New app** near the bottom of the left navigation bar.
+1. Sign in to [powerapps.com](https://make.powerapps.com), and then click or tap **New app** near the bottom of the left navigation bar.
    
     ![Create an app in a browser](./media/common-data-model-approve/new-app-button.png)
 2. In the dialog box that appears, click or tap the option to open either PowerApps Studio for Windows or PowerApps Studio for the web.
