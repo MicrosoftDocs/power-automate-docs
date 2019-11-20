@@ -67,7 +67,7 @@ In the upper-right corner of the [Power Automate website](https://flow.microsoft
 ![Gateway under manage][1]
 
 > [!NOTE]
-> If you created or were given access to a gateway in PowerApps, that gateway appears in the **My gateways** list in Power Automate.
+> If you created or were given access to a gateway in Power Apps, that gateway appears in the **My gateways** list in Power Automate.
 
 ## Cluster your gateways
 

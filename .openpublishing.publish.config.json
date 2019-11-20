@@ -22,20 +22,6 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "power-automate",
-      "build_source_folder": "power-automate",
-      "build_output_subfolder": "power-automate",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -63,5 +49,5 @@
   },
   "docs_build_engine": {
     "name": "docfx_v3"
-  }
+  } 
 }

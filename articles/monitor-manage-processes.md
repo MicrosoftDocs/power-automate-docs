@@ -1,5 +1,5 @@
 ---
-title: "Monitor and manage workflow processes with PowerApps | MicrosoftDocs"
+title: "Monitor and manage workflow processes with Power Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 05/06/2018
 ms.reviewer: ""
@@ -10,7 +10,7 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "powerapps"
+  - "Power Apps"
 author: "Mattp123"
 ms.assetid: a987a803-4674-4eb0-87de-caefa003b1eb
 caps.latest.revision: 12

@@ -40,7 +40,7 @@ With the deprecation of the *Active Stage*  (activestageid) field on related ent
 In versions 9.0 and higher, each business process flow creates its own Common Data Service entity, usually with the same name as the business process flow. To report on the business process flow, select the entity for the business process flow you want to report on, and then create views and charts, just as you did before.
 
 In our example, follow these steps to go to the **Lead to Opportunity Sales Process** entity:
-1. Go to https://web.powerapps.com.
+1. Go to https://make.powerapps.com.
 1. Select the **Data**.
 1. Select the **Entities**.
 1. Set the filter to **All**.

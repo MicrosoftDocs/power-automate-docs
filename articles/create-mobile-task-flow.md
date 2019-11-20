@@ -1,5 +1,5 @@
 ---
-title: "Create a mobile task flow with PowerApps | MicrosoftDocs"
+title: "Create a mobile task flow with Power Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/11/2018
 ms.reviewer: ""
@@ -10,7 +10,7 @@ ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "powerapps"
+  - "Power Apps"
 ms.assetid: 046480e6-f2ff-4c56-9e03-f642c982ff7d
 caps.latest.revision: 12
 author: "Mattp123"
