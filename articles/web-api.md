@@ -140,7 +140,7 @@ There are three properties:
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
 | source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
-| id             | The identifier of the connector. The id always starts with `/providers/Microsoft.Power Apps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
+| id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
 Once you execute the `POST` request, you'll receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
 
