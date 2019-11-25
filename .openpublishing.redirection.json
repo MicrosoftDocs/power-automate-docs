@@ -95,7 +95,12 @@
             "source_path": "flow-docs/guided-learning/index.md",
             "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
             "redirect_document_id": false
-        }
+        },
+        {
+          "source_path": "https://docs.microsoft.com/flow/guided-learning",
+          "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
+          "redirect_document_id": false
+      }
     ]
 }
 
