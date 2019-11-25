@@ -1,103 +1,103 @@
 {
     "redirections": [
     {
-      "source_path": "flow-docs/dev-appsource-test-drive.md",
-      "redirect_url": "/flow/developer/dev-appsource-test-drive",
+      "source_path": "articles/dev-appsource-test-drive.md",
+      "redirect_url": "/power-automate/developer/dev-appsource-test-drive",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "flow-docs/dev-enterprise-intro.md",
-      "redirect_url": "/flow/developer/dev-enterprise-intro",
+      "source_path": "articles/dev-enterprise-intro.md",
+      "redirect_url": "/power-automate/developer/dev-enterprise-intro",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "flow-docs/embed-flow-dev.md",
-      "redirect_url": "/flow/developer/embed-flow-dev",
+      "source_path": "articles/embed-flow-dev.md",
+      "redirect_url": "/power-automate/developer/embed-flow-dev",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "flow-docs/register-custom-api.md",
-      "redirect_url": "/flow/developer/register-custom-api",
+      "source_path": "articles/register-custom-api.md",
+      "redirect_url": "/power-automate/developer/register-custom-api",
       "redirect_document_id": "false"
     },
 
         {
-        "source_path": "flow-docs/guided-learning/administer-flows.yml",
+        "source_path": "articles/guided-learning/administer-flows.yml",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/postman-collection.md",
+        "source_path": "articles/postman-collection.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/define-postman-collection",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/customapi-how-to-swagger.md",
+        "source_path": "articles/customapi-how-to-swagger.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/openapi-extensions",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/customapi-azure-resource-manager-tutorial.md",
+        "source_path": "articles/customapi-azure-resource-manager-tutorial.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/azure-active-directory-authentication",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/dev-isv-partner-intro.md",
-        "redirect_url": "https://docs.microsoft.com/flow/dev-enterprise-intro",
+        "source_path": "articles/dev-isv-partner-intro.md",
+        "redirect_url": "https://docs.microsoft.com/power-automate/dev-enterprise-intro",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/customapi-web-api-tutorial.md",
+        "source_path": "articles/customapi-web-api-tutorial.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/create-web-api-connector",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/api-connector-overview.md",
+        "source_path": "articles/api-connector-overview.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/api-connector-dev.md",
+        "source_path": "articles/api-connector-dev.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/api-connector-submission.md",
+        "source_path": "articles/api-connector-submission.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/submit-certification",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/api-connector-faq.md",
+        "source_path": "articles/api-connector-faq.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/faq",
         "redirect_document_id": false
         },
         {
-        "source_path": "flow-docs/customapi-webhooks.md",
+        "source_path": "articles/customapi-webhooks.md",
         "redirect_url": "https://docs.microsoft.com/connectors/custom-connectors/create-webhook-trigger",
         "redirect_document_id": false
         },
         {
-            "source_path": "flow-docs/guided-learning/build-flows.md",
+            "source_path": "articles/guided-learning/build-flows.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-with-flow/2-create-first-flow",
             "redirect_document_id": false
         },
         {
-            "source_path": "flow-docs/guided-learning/get-started.md",
+            "source_path": "articles/guided-learning/get-started.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-with-flow/1-introduction",
             "redirect_document_id": false
         },
         {
-            "source_path": "flow-docs/guided-learning/work-with-approvals.md",
+            "source_path": "articles/guided-learning/work-with-approvals.md",
             "redirect_url": "https://docs.microsoft.com/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
             "redirect_document_id": false
         },
         {
-            "source_path": "flow-docs/guided-learning/index.md",
+            "source_path": "articles/guided-learning/index.md",
             "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-using-flow",
             "redirect_document_id": false
         },
       {
-        "source_path": "https://docs.microsoft.com/flow/guided-learning",
+        "source_path": "https://docs.microsoft.com/power-automate/guided-learning",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-power-automate/",
         "redirect_document_id": false
       }
