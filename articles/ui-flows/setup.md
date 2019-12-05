@@ -120,7 +120,7 @@ Follow these steps to install Selenium IDE:
 
 ## Install the on-premises data gateway
 
-You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md/#types-of-flows).
+You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows).
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
@@ -139,7 +139,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 - Learn to [create Web UI flows](create-web.md).
 - Learn how to run [UI flows](run-ui-flow.md).
 - Learn to [manage UI flows](manage.md).
-- Learn more about the [on-premises gateway](../gateway-reference.md/#use-a-gateway)
+- Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway)
 
 ## Limitations
 - The latest versions of each components are required to record, test or run UI flows.

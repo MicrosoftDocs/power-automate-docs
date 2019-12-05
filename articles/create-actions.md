@@ -79,7 +79,7 @@ Actions also have something that workflow processes don’t – input and output
  You should consult with the developer who will use this message to determine whether it must be in transaction or not. Generally, an action should be in transaction if the actions performed by the business process don’t make sense unless all of them are completed successfully. The classic example is transferring funds between two bank accounts. If you withdraw funds from one account you must deposit them in the other. If either fails, both must fail.  
   
 > [!NOTE]
->  You can’t enable rollback if a custom action is invoked directly from within a workflow. You can enable rollback if an action is triggered by a PowerApps web services message.  
+>  You can’t enable rollback if a custom action is invoked directly from within a workflow. You can enable rollback if an action is triggered by a Power Apps web services message.  
   
  **Activate As**  
  Like all processes, you can activate the process as a template and use it as an advanced starting point for processes that follow a similar pattern.  

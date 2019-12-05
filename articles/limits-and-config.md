@@ -97,14 +97,14 @@ These are limits for a single flow.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Actions per workflow |250 |You can add nested workflows to extend this as needed. |
+| Actions per workflow |500|You can add nested workflows to extend this as needed. |
 | Allowed action nesting depth |8 |You can add nested workflows to extend this as needed. |
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |
 | `description` length limit |256 | |
 
 ## SharePoint limits
-There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Power Automate and PowerApps.
+There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
 
 ## IP address configuration
 The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
@@ -143,7 +143,7 @@ login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secu
 graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph API - for getting user information such as a profile photo.
 *.azure-apim.net|https|Access to the Runtime for Connectors.
 *.flow.microsoft.com|https|Access to the Power Automate site.
-*.powerapps.com|https|Access to the PowerApps site.
+*.powerapps.com|https|Access to the Power Apps site.
 *.azureedge.net|https|Access to the Power Automate CDN.
 nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 webshell.suite.office.com|https|Access to Office for header and search. Please see [the Office 365 urls and ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details

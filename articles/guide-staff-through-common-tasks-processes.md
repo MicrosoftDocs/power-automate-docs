@@ -1,5 +1,5 @@
 ---
-title: "Create custom business logic through processes with PowerApps | MicrosoftDocs"
+title: "Create custom business logic through processes with Power Apps | MicrosoftDocs"
 description: "Learn about the different types of business logic you can use in your app"
 ms.custom: ""
 ms.date: 05/01/2018
@@ -11,7 +11,7 @@ ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "powerapps"
+  - "Power Apps"
 ms.assetid: 0b4e6602-5701-4859-81cc-6f6fe50901b2
 caps.latest.revision: 44
 author: "Mattp123"
@@ -28,7 +28,7 @@ search.audienceType:
 
 Defining and enforcing consistent business processes is one of the main reasons people use model-driven apps. Consistent processes help make sure people using the system can focus on their work and not on remembering to perform a set of manual steps. Processes can be simple or complex and can change over time.  
   
-PowerApps includes several  types of processes, each designed for a different purpose:  
+Power Apps includes several  types of processes, each designed for a different purpose:  
   
 -   Business process flows  
   
@@ -41,7 +41,7 @@ PowerApps includes several  types of processes, each designed for a different pu
  Similar to processes, you can also create  business rules and recommendations. For more information, see [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
->  Using processes can impact the license requirements for PowerApps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
+>  Using processes can impact the license requirements for Power Apps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
 
 
 <a name="BKMK_BP"></a>   
