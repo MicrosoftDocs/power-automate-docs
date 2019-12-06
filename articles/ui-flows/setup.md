@@ -106,7 +106,7 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
 -->
 
-## (optional) Install Selenium IDE to automate Web applications
+## Install Selenium IDE to automate Web applications
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
