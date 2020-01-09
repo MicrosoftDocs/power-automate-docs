@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/20
+ms.date: 01/01/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Portable document format (PDF)
+# 
 
 ## Next steps
 

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/01/20
+ms.date: 01/01/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create a poll sample
 
-The **Create a Poll** sample is an Adaptive Card input form that's designed for submitting polls to Microsoft Teams. Replace the display text in this card to customize for the poll. This adaptive card enables you to take different decision paths based on the responses given in the poll values, or voting counts, of card consumers.
+The **create a poll** sample is an Adaptive Card input form that's designed for submitting polls to Microsoft Teams. Replace the display text in this card to customize for the poll. This adaptive card enables you to take different decision paths based on the responses given in the poll values, or voting counts, of card consumers.
 
 ![](media/259c49cf45bbead6711e52728be96382.png)
 
