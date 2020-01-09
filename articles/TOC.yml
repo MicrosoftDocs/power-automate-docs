@@ -154,6 +154,30 @@
     href: visio-flows.md
   - name: "Reference: Use functions in expressions"
     href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
+  - name: Use adaptive cards to model flows
+    items:
+    - name: Overview of adaptive cards for Teams
+      href: overview-adaptive-cards.md
+    - name: Sample - Candidate feedback
+      href: candidate-feedback-sample.md
+    - name: Sample - Document feedback
+      href: document-feedback-sample.md
+    - name: Sample - Image share
+      href: image-share-sample.md
+    - name: Sample - Lead collection
+      href: lead-collection-sample.md
+    - name: Sample - Poll generator
+      href: poll-generator-sample.md
+  - name: Use connectors to generate documents
+    items:
+    - name: Overview of document generation
+      href: overview-document-generation.md
+    - name: Word (for business) connector
+      href: word.md
+    - name: Comma separated values (CSV)
+      href: csv.md
+    - name: Portable document format (PDF)
+      href: pdf.md
   - name: Approval flows
     items:
     - name: Single approvals

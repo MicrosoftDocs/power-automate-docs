@@ -1,0 +1,129 @@
+---
+title: Adaptive Cards daily weather report sample | Microsoft Docs
+description: A sample for creating an Adaptive Card to post a daily weather update to a Teams channel
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: kvivek
+editor: ''
+tags: ''
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 01/04/2020
+ms.author: deonhe
+---
+
+# Daily weather report sample
+
+The **daily weather report** sample is an Adaptive Card designed to be used with MSN weather to post a daily weather update to a Teams channel.
+
+![](media/32e071de6833ca843516ccacb78d6bcd.png)
+
+*Inputs/Outputs and notes*
+
+| Dynamic Token Name     | Placeholder Text | Notes                                                                         |
+|------------------------|------------------|--------------------------------------------------------------------------------|
+| {acCityState}          | See template\*   | Display text                                                                   |
+|                        |                  | A variable can be used to hold the City, State, or Zip Code values             |
+| {acDailySummary}       | See template     | Display text                                                                   |
+| {acCurrentDateTime}    | See template     | Display text                                                                   |
+| {acUrlConditionsImage} | See template     | Display text                                                                   |
+|                        |                  | See template comments This must be replaced with a valid URL                   |
+| {acCurrentTemperature} | See template     | Display text                                                                   |
+| {actempHi}             | See template     | Display text                                                                   |
+| {actempLow}            | See template     | Display text                                                                   |
+
+
+``` json
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "{acCity}, {acState}",
+            "size": "Large",
+            "isSubtle": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "{acCurrentDateTime}",
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "{acDailySummary}",
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "{acUrlConditionsImage}",
+                            "size": "Large"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{acCurrentTemperature}",
+                            "size": "ExtraLarge",
+                            "spacing": "None"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "°F",
+                            "weight": "Bolder",
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Hi {actempHi}",
+                            "horizontalAlignment": "Left"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Lo {actempLow}",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+
+<!-- [block 5
+[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EWMYd2OGCM1EvqAsgxuAhwYBY8JRxRYz7xIVjxge2Jud9Q?e=EGBazr)]
+
+**\*Template Name:**
+
+**Post an Adaptive Card with a daily weather report to Microsoft Teams**   -->
