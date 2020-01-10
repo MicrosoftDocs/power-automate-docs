@@ -1,6 +1,6 @@
 ---
 title: Lead collection sample | Microsoft Docs
-description: Blah.
+description: Create an Adaptive Card for collecting leads from persons interested in a set of products.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,12 +23,7 @@ search.audienceType:
 ---
 # Lead collection sample
 
-The **Lead Collection** sample is an Adaptive Card input form designed for
-collecting leads from anyone that may come into contact with individuals
-interested in a set of products. Feel free to change the choices for the
-products, remembering that each choice can have display text, as well as an
-internal value which will be output once the card is submit (they can also both
-be the same as shown in the sample code block).
+The **lead collection** sample is an Adaptive Card input form designed for collecting leads from anyone that may come into contact with individuals interested in a set of products. Feel free to change the choices for the products, remembering that each choice can have display text, as well as an internal value which will be output after someone submits the card (they can also be the same as we show in the sample code block).
 
 ![](media/5ed2b3740485e1c039b54209661032fa.png)
 
@@ -168,12 +163,4 @@ be the same as shown in the sample code block).
 }
 ```|
 
-// [block 4
-// [here](https://microsoft-my.sharepoint.com/:u:/p/audrie/Eaj7BRLTjIVImOnfPZzE9wgBY9bAgB3ud4hDQdSQCnPHNg?e=HVBq2w)]
-
-// **\*Template Name:**
-
-// **Post an Adaptive Card on Microsoft Teams for lead collection**  
-
-## Next steps
 
