@@ -1,5 +1,5 @@
 ---
-title: Learn to create flows that post adaptive cards to Microsoft Teams | Microsoft Docs
+title: Create flows that post adaptive cards to Microsoft Teams | Microsoft Docs
 description: Learn to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
@@ -27,9 +27,6 @@ In either case you will need to sketch out which datasets you will share, and/or
 >[!TIP]
 >Use simple blocks of data rather than complex table arrays.
 
-<!-- (new link will be:
-<https://docs.microsoft.com/power-automate/create-adaptive-cards>)
-
 Adaptive Card Samples
 (https://docs.microsoft.com/power-automate/adaptive-cards-samples) -->
 
@@ -44,15 +41,17 @@ In this procedure, you’ll add an action which will use the data from previous 
 
 1. Sign into Power Automate.
 1. Select **My flows** in the top navigation bar.
-1. Create a new **Instant from blank** flow.
-1. Select **Manually trigger as flow** as the trigger.
+1. Select **New** > **Instant from blank**.
+1. Give your flow a name.
+1. Select **Manually trigger a flow** as the trigger.
+1. Select **Create**.
 
-    | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) |
+    <!-- | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) | -->
 
-1. Select **New Step**, and then select **Add an action**.
-1. In the list of possible connectors, search for **Microsoft Teams**, and then select **Post an adaptive card to a Teams channel and wait for a response** as the action.
-1. Select the Teams instance and channel to which you'd like to post the card.
-1. Paste the JSON below into the **message** input box.
+1. Select **New Step**.
+1. Search for **Microsoft Teams**, and then select **Post an adaptive card to a Teams channel and wait for a response** as the action.
+1. Select the **Team** and the **Channel** to which you'd like to post the card.
+1. Paste this JSON into the **Message** box.
 
     ``` JSON
     {
@@ -129,50 +128,47 @@ In this procedure, you’ll add an action which will use the data from previous 
 1. Make the following replacements in the JSON.
 
     >[!IMPORTANT]
-    >Do not remove any quotation marks when you do the replacements (feel free to revise the car choices):
+    >Do not remove any quotation marks when you do the replacements. You can revise the car choices to suit your needs:
 
     Text to change | New text
     ------|------
     Header Tagline Text|Power Automate Poll
     Poll Header| Preferred Car Model
-    | Poll Question   | Please vote on your preferred car model of the three choices listed here. 
+    | Poll Question   | Please vote on your preferred car model from the choices listed here. 
     Replace the latin text with a reason, or business context, related to why you are conducting the poll.      |  We are polling our employees in order to determine if we should provide personalized parking places which are sized for the most popular cars. 
     | Choice 1 (replace in both places)  | Tesla   |
     | Choice 2 (replace in both places) | Lexus |
     | Choice 3 (replace in both places) | Honda |
 
-1. Select **New Step**, and then select **Add an action**. In the list of possible actions to add, locate and select one of the **‘Send an email’** actions appropriate for your email account
-
-1.  Configure the email recipient as the person who pressed the instant button (use the **email** tag from the dynamic content from the **trigger**)
-
-1.  Configure the **body** of the email as follows, where the words in swiggly parentheses are replaced with dynamic tokens:  
-    **Your poll response was {acPollChoices}** (acPollChoices is dynamic content from the wait for a response action)  **It was submit by {User Name}** (User Name is dynamic content from the trigger)
+1. Select **New Step**, and then search for and select one of the **Send an email** actions to which you have access. 
+1. Provide the email recipient as the person who selected the instant button (use the **Email** tag from the dynamic content from the **trigger**).
+1. Configure the **Body** of the email as follows. Replace the words in swiggly parentheses "{}" with dynamic tokens:  
+    **Your poll response was {acPollChoices}** (acPollChoices is dynamic content from the wait for a response action).  **It was submitted by {User Name}** (User Name is dynamic content from the trigger)
 
 ## Test your adaptive card
 
-To test your work, run the flow you created above and check for the following:
+To test your work, run the flow you created earlier and confirm the following:
 
--   The flow run has no errors, and stops to wait for the response, showing the wait indicator for the Adaptive Card action on the run screen 
+- The flow run has no errors, and waits for the response, showing the wait indicator for the Adaptive Card action on the run screen. 
 
--   The Teams channel has the new adaptive card posted, and it should look like the screen shot below
+- The Teams channel has the new adaptive card posted.
 
--   When you respond to the card by selecting a car model, and then pressing the submit button on the bottom section of the adaptive card:
+- When you respond to the card by selecting a car model, and then selecting the **Submit** button on the bottom section of the adaptive card:
 
-    -   no errors should occur on the adaptive card itself
+    - No errors should occur on the adaptive card.
 
-    -   the flow run completes successfully, with no errors
+    - The flow run completes successfully.
 
--   Card replacement is relevant after submission if you have configured the **Update message** area at the bottom of the ‘wait for a response’ actions (shown below with the corresponding replacement card). Otherwise, all submissions will simply reset the form.
+- Card replacement is relevant after submission if you have configured the **Update message** area at the bottom of the **wait for a response** actions (shown next with the corresponding replacement card). Otherwise, all submissions will simply reset the form.
 
     [./media/image7.png](./media/image7.png) | [./media/image8.png](./media/image8.png) |
 
--   When you check for the email notification; it contains the body showing who submitted the response, and which car was selected.
+- The email notification contains the body that shows who submitted the response and which car was selected.
 
-If everything on the checklist is good then; **Congratulations, you’ve just made your first interactive adaptive card!**
+Congratulations! you’ve just made your first interactive adaptive card!
 
 ![](media/1cb578f291b97c622744608064fcf5c5.png)
 
-Screenshot of the Poll Request adaptive card, with optional context notes under the header.
 
 ## Troubleshooting tips for adaptive cards
 
@@ -180,34 +176,34 @@ The most common problems that you will encounter when creating adaptive cards ar
 
 -   Fun Run Errors are often provoked by one of the following factors:
 
-    -   Flow App not being installed in Microsoft Teams – Please [install the Flow App](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams) into Teams to ensure all dependencies are provided to consumers. 
+    -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
     
-    In this case the error may resemble this screen shot:  
+    In this case the error may resemble this screenshot:  
 
         ![](media/481f53c6a1aec70909d2544771cbed94.png)
 
-    -   Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
+    -  Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
 
-        -   There are curly quotes, or missing quotes, around values within the JSON. Always check the JSON to ensure all text values are enclosed within double quotes, and that numbers are enclosed in quotation marks. All quotation marks should be straight and not curly.
+        - There are curly quotes, or missing quotes, around values within the JSON. Always check the JSON to ensure all text values are enclosed within double quotes, and that numbers are enclosed in quotation marks. All quotation marks should be straight and not curly.
 
-        -   You can validate the format of your JSON by pasting the JSON into the [Card Payload Editor](https://adaptivecards.io/designer/).
+        - You can validate the format of your JSON by pasting the JSON into the [Card Payload Editor](https://adaptivecards.io/designer/).
 
-    -   Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not be directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
+    - Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not be directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
 
--   Adaptive Cards may not look like what’s expected during to styling and schema constraints:
+- Adaptive Cards may not look like what’s expected during to styling and schema constraints:
 
-    -   Check that placeholder values, text styles, and any markup language aligns with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
+    - Check that placeholder values, text styles, and any markup language aligns with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
 
-    -   Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
+    - Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
 
-![](media/99d6cd96c1f3b72df8a5283a0a5ec64e.png)
+    ![](media/99d6cd96c1f3b72df8a5283a0a5ec64e.png)
   
 Truncated screenshot of the Adaptive Card Viewer extension installed in Visual Studio Code (shortcut: Ctrl+V+A once enabled).
 
--   Errors following Adaptive Card submission are often due to:
+- Errors following Adaptive Card submission are often due to:
 
-    -   Using an action which does not include ‘wait for response’ in the name  
+    - Using an action which does not include ‘wait for response’ in the name  
         
         ![](media/e58cce9889fe4ba52103631a158a4799.png)
 
-    -   Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
+    - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
