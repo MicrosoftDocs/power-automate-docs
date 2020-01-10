@@ -29,16 +29,15 @@ The **lead collection** sample is an Adaptive Card input form designed for colle
 
 *Inputs/Outputs and notes:*
 
-| Dynamic Token Name    | Placeholder Text       | Notes:                                                                                        |
-|-----------------------|------------------------|-----------------------------------------------------------------------------------------------|
+| Dynamic Token Name    | Placeholder Text       | Notes                                                                                       |
+|-----------------------|------------------------|--------------------------------------|
 | Title                 |                        | Display text                                                                                  |
 | acInstructions        |                        | Display text                                                                                  |
 | acLeadFName           | {firstName}            | Response **output**                                                                           |
 | acLeadLName           | {lastName}             | Response **output**                                                                           |
 | acLeadEmail           | {emailAddress}         | Response **output**                                                                           |
 | acLeadPrimaryPhone    | {primaryPhone10digits} | Response **output**                                                                           |
-| acLeadProductInterest | {productInterests}     | Response **output**                                                                           |
-|                       |                        | As multi-select values, where each selection will be separated by a comma. 
+| acLeadProductInterest | {productInterests}     | Response **output**  <br>As multi-select values, where each selection will be separated by a comma.                                                                         |
 
 ``` json
 {

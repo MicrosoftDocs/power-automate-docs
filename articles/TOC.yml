@@ -168,6 +168,12 @@
       href: lead-collection-sample.md
     - name: Sample - Poll generator
       href: poll-generator-sample.md
+    - name: Sample - Metadata update
+      href: metadata-update-sample.md
+    - name: Sample - Daily weather
+      href: daily-weather-sample.md
+    - name: Sample - Acronym form
+      href: acronym-sample.md
   - name: Approval flows
     items:
     - name: Single approvals
