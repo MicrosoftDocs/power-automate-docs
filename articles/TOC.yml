@@ -158,6 +158,8 @@
     items:
     - name: Overview of adaptive cards for Teams
       href: overview-adaptive-cards.md
+    - name: Create adaptive cards for Teams
+      href: create-adaptive-cards.md
     - name: Sample - Candidate feedback
       href: candidate-feedback-sample.md
     - name: Sample - Document feedback
