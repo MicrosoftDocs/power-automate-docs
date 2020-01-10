@@ -21,9 +21,7 @@ ms.author: deonhe
 
 The **acronym form** sample is an Adaptive Card input form that's designed to collect acronyms and storing them in Common Data Service. These acronyms could be queried from anywhere due to this ongoing data collection.
 
-<!-- ![](media/ef4046daf4a28b9a11c860d52b4034aa.png) -->
-
-![](media/acronym-logger.png)
+![Acronym logger](media/adaptive-cards/acronym-logger.png)
 
 *Inputs/Outputs and notes*
 
@@ -85,6 +83,3 @@ The **acronym form** sample is an Adaptive Card input form that's designed to co
 }
 
 ```
-
-<!-- [block 6
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EbQ6SzvNIXJNmOwHhMyNR0wBvmFB5v-bTDvliwi1bT1CjQ?e=FY18dP)] -->

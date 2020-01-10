@@ -1,6 +1,6 @@
 ---
 title: Candidate feedback sample | Microsoft Docs
-description: Blah.
+description: Use this sample to create an Adaptive Card to collect feedback for job candidates.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,26 +22,15 @@ search.audienceType:
   - enduser
 ---
 # Candidate feedback sample
-**Sample 7 – Candidate Feedback Form**
 
-The **Candidate Feedback Form** sample is an Adaptive Card input form designed
-for collecting feedback during an interview loop. We recommend using this with a
-shared instant flow button to enable anyone on the team to provide feedback on
-candidates during the interview loop. Extend this by recording responses in a
-database or other desired data source in support of these additional
-opportunities:
+The **candidate feedback form** sample is an Adaptive Card input form that's designed for collecting feedback during an interview loop. We recommend using this with a shared instant flow button to enable anyone on the team to provide feedback on candidates during an interview loop. Extend this by recording responses in a database or other desired data sources to support these additional opportunities:
 
--   facilitate review of follow-up suggestions before the next session with the
-    candidate
+-   Facilitate the review of follow-up suggestions before the next session with the
+    candidate.
+-   Facilitate aggregated data review after all responses are recorded.
+-   Notify the human resources representative with the hire/no hire vote count at the end of the process
 
--   facilitate aggregated data review after all responses are recorded
-
--   notify HR representative with the Hire/No Hire vote count at the end of the
-    process
-
-<!-- ![](media/34eafd57a4cd4a11af27d8d50beffa97.png) -->
-
-![](media/candidate-form.png)
+     ![Candidate feedback form](media/adaptive-cards/candidate-form.png)
 
 *Inputs/Outputs and notes*
 
@@ -140,8 +129,4 @@ opportunities:
 }
 ```
 
-<!-- [block 7
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EVWwYgSTXp5Hq5nd0QctjvkB8Ogd5kAH_6wreYo1nKFZAA?e=vGYLsc)] -->
-
-## Next steps
 
