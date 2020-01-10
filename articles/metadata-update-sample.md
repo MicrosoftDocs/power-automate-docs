@@ -28,10 +28,7 @@ This card is comprised of three sections:
 1. The fact list area for relevant record metadata.
 1.  A column set which supports a table array of data
 
-| Sample Code | SharePoint List of change orders: |
-|              |                                   |
-|--------------|-----------------------------------|
-![](media/996dcbb470104386791fc2c5ee4ce9a6.png) | ![](media/f5fb4cbed217ac4717f00af8ab05601d.png)
+![Metadata sample](media/adaptive-cards/metadata-sample.png) 
 
 
 *Inputs/Outputs and notes*
@@ -195,8 +192,3 @@ This card is comprised of three sections:
 
 }
 ```
-
-
-
-<!-- [block 1
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EeTGS85xoIpIgdAp_CH-LxMBY3lVcnVgewk9wz0Lfqtaiw?e=ovXohh)] -->

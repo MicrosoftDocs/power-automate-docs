@@ -25,9 +25,9 @@ search.audienceType:
 
 The **create a poll** sample is an Adaptive Card input form that's designed for submitting polls to Microsoft Teams. Replace the display text in this card to customize for the poll. This adaptive card enables you to take different decision paths based on the responses given in the poll values, or voting counts, of card consumers.
 
-![](media/259c49cf45bbead6711e52728be96382.png)
+![Poll sample](media/adaptive-cards/poll.png)
 
-*Inputs/Outputs and notes:*
+*Inputs/Outputs and notes*
 
 | Dynamic Token Name | Placeholder Text | Notes:                                            |
 |--------------------|------------------|---------------------------------------------------|
@@ -35,9 +35,7 @@ The **create a poll** sample is an Adaptive Card input form that's designed for 
 | acHeaderTagLine    |                  | Display text                                      |
 | acHeader           |                  | Display text                                      |
 | acPollQuestion     |                  | Display text                                      |
-| acPollChoices      |                  | Response **output**                               |
-|                    |                  | Single select as radio buttons                    |
-
+| acPollChoices      |                  | Response **output**  <br> Single select as radio buttons|
 
 ``` json
 {
@@ -111,8 +109,4 @@ The **create a poll** sample is an Adaptive Card input form that's designed for 
 }
 ```
 
-<!-- [block 2
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/Eb9z5H56UCBEujrbsuS4qBYBBXoCYu-uEfR4w4MOAoSqBA?e=UwU5xX)] -->
-
-## Next steps
 
