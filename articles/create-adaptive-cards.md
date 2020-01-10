@@ -27,9 +27,6 @@ In either case you will need to sketch out which datasets you will share, and/or
 >[!TIP]
 >Use simple blocks of data rather than complex table arrays.
 
-Adaptive Card Samples
-(https://docs.microsoft.com/power-automate/adaptive-cards-samples) -->
-
 ## Prerequisites
 
 <!-- Is it still called Flow App? -->
@@ -161,13 +158,13 @@ To test your work, run the flow you created earlier and confirm the following:
 
 - Card replacement is relevant after submission if you have configured the **Update message** area at the bottom of the **wait for a response** actions (shown next with the corresponding replacement card). Otherwise, all submissions will simply reset the form.
 
-    [./media/image7.png](./media/image7.png) | [./media/image8.png](./media/image8.png) |
+    ![Replacement card](./media/adaptive-cards/update-message-2.png)
 
 - The email notification contains the body that shows who submitted the response and which car was selected.
 
 Congratulations! you’ve just made your first interactive adaptive card!
 
-![](media/1cb578f291b97c622744608064fcf5c5.png)
+![Finished first card](media/adaptive-cards/finished-first-card.png) 
 
 
 ## Troubleshooting tips for adaptive cards
@@ -180,7 +177,7 @@ The most common problems that you will encounter when creating adaptive cards ar
     
     In this case the error may resemble this screenshot:  
 
-        ![](media/481f53c6a1aec70909d2544771cbed94.png)
+    ![Error message](media/adaptive-cards/error-message.png)
 
     -  Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
 
@@ -196,7 +193,7 @@ The most common problems that you will encounter when creating adaptive cards ar
 
     - Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
 
-    ![](media/99d6cd96c1f3b72df8a5283a0a5ec64e.png)
+      ![](media/adaptive-cards/visual-studio-code-extension.png)
   
 Truncated screenshot of the Adaptive Card Viewer extension installed in Visual Studio Code (shortcut: Ctrl+V+A once enabled).
 
@@ -204,6 +201,6 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
 
     - Using an action which does not include ‘wait for response’ in the name  
         
-        ![](media/e58cce9889fe4ba52103631a158a4799.png)
+        ![](media/adaptive-cards/try-again.png)
 
     - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
