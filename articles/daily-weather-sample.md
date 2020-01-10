@@ -21,18 +21,16 @@ ms.author: deonhe
 
 The **daily weather report** sample is an Adaptive Card designed to be used with MSN weather to post a daily weather update to a Teams channel.
 
-![](media/32e071de6833ca843516ccacb78d6bcd.png)
+![](media/adaptive-cards/weather.png)
 
 *Inputs/Outputs and notes*
 
 | Dynamic Token Name     | Placeholder Text | Notes                                                                         |
 |------------------------|------------------|--------------------------------------------------------------------------------|
-| {acCityState}          | See template\*   | Display text                                                                   |
-|                        |                  | A variable can be used to hold the City, State, or Zip Code values             |
+| {acCityState}          | See template     | Display text <br>  A variable can be used to hold the City, State, or Zip Code values                                                                   |
 | {acDailySummary}       | See template     | Display text                                                                   |
 | {acCurrentDateTime}    | See template     | Display text                                                                   |
-| {acUrlConditionsImage} | See template     | Display text                                                                   |
-|                        |                  | See template comments This must be replaced with a valid URL                   |
+| {acUrlConditionsImage} | See template     | Display text  <br> See template comments This must be replaced with a valid URL                                                                 |
 | {acCurrentTemperature} | See template     | Display text                                                                   |
 | {actempHi}             | See template     | Display text                                                                   |
 | {actempLow}            | See template     | Display text                                                                   |
@@ -120,10 +118,3 @@ The **daily weather report** sample is an Adaptive Card designed to be used with
     ]
 }
 ```
-
-<!-- [block 5
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EWMYd2OGCM1EvqAsgxuAhwYBY8JRxRYz7xIVjxge2Jud9Q?e=EGBazr)]
-
-**\*Template Name:**
-
-**Post an Adaptive Card with a daily weather report to Microsoft Teams**   -->

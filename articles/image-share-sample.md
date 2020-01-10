@@ -1,6 +1,6 @@
 ---
-title: Image share sample | Microsoft Docs
-description: Blah.
+title: Image share sample for sharing photos | Microsoft Docs
+description: Learn how to create a photo sharing Adaptive Card.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ search.audienceType:
 
 The **Image Share Form** sample is an Adaptive Card designed for sharing photos that have been posted to SharePoint and which may be a dependency for a process to complete (such as processes related to inspection, compliance, and audits). This is a display only adaptive card.
 
-![](media/77274c50cc05caf7f73a5bcc76db0443.png)
+![Display only adaptive card](media/adaptive-cards/image-share.png)
 
 *Inputs/Outputs and notes*
 
@@ -65,8 +65,4 @@ The **Image Share Form** sample is an Adaptive Card designed for sharing photos 
 }
 ```
 
-<!-- [block 3
-[here](https://microsoft-my.sharepoint.com/:u:/p/audrie/EUJZQN50Kn5KrkuRjNisyxUBtgJLBP6wkBvpd4dbsg_gbw?e=jz3Bhn)] -->
-
-## Next steps
 

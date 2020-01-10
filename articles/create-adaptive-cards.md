@@ -193,7 +193,7 @@ The most common problems that you will encounter when creating adaptive cards ar
 
     - Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
 
-      ![](media/adaptive-cards/visual-studio-code-extension.png)
+      ![Visual Studio Code extension](media/adaptive-cards/visual-studio-code-extension.png)
   
 Truncated screenshot of the Adaptive Card Viewer extension installed in Visual Studio Code (shortcut: Ctrl+V+A once enabled).
 
@@ -201,6 +201,6 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
 
     - Using an action which does not include ‘wait for response’ in the name  
         
-        ![](media/adaptive-cards/try-again.png)
+        ![Try again](media/adaptive-cards/try-again.png)
 
     - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
