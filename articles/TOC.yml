@@ -170,16 +170,6 @@
       href: lead-collection-sample.md
     - name: Sample - Poll generator
       href: poll-generator-sample.md
-  - name: Use connectors to generate documents
-    items:
-    - name: Overview of document generation
-      href: overview-document-generation.md
-    - name: Word (for business) connector
-      href: word.md
-    - name: Comma separated values (CSV)
-      href: csv.md
-    - name: Portable document format (PDF)
-      href: pdf.md
   - name: Approval flows
     items:
     - name: Single approvals
