@@ -166,6 +166,8 @@
       href: metadata-update-sample.md
     - name: Sample - Daily weather
       href: daily-weather-sample.md
+    - name: Sample - Lead generation
+      href: lead-collection-sample.md
   - name: Approval flows
     items:
     - name: Single approvals
