@@ -171,7 +171,7 @@ Congratulations! you’ve just made your first interactive adaptive card!
 
 The most common problems that you will encounter when creating adaptive cards are:
 
--   Fun Run Errors are often provoked by one of the following factors:
+-   Flow run errors are often caused by one of the following factors:
 
     -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
     
