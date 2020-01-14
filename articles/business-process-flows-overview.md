@@ -1,7 +1,7 @@
 ---
 title: "Business process flows overview | MicrosoftDocs"
 ms.custom: ""
-ms.date: 06/27/2018
+ms.date: 12/12/2019
 ms.reviewer: ""
 ms.service: flow
 author: MSFTMAN
@@ -166,6 +166,19 @@ Several default views are available that you can view as a chart, such as the **
 ### Interact with the business process flow entity from a workflow
 You can also interact with business process flow entities from a workflow. For example, you can create a workflow for the Business Process Flow entity record to change the Active Stage when a field on the Opportunity entity record is updated. For more information about how to do this, see [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
+### Run business process flows offline
+
+You can use business process flows offline if the following conditions are met:
+
+- The business process flow is used from a Power Apps app.
+- The Power Apps app is enabled for offline use.
+- The business process flow has a single entity.
+
+Specifically, the three commands that are available for a business process flow when the Power Apps app is offline are:
+
+- Next stage
+- Previous stage
+- Set Active stage
 
 ### Limitations of using business process flow entities
 
