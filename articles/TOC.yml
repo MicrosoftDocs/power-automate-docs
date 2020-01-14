@@ -64,6 +64,8 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
+  - name: Add custom controls to business process flows
+    href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
 - name: UI flows (Preview)
@@ -154,10 +156,26 @@
     href: visio-flows.md
   - name: "Reference: Use functions in expressions"
     href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
+  - name: Use adaptive cards to model flows
+    items:
+    - name: Overview of adaptive cards for Teams
+      href: overview-adaptive-cards.md
+    - name: Create adaptive cards for Teams
+      href: create-adaptive-cards.md
+    - name: Sample - Image share
+      href: image-share-sample.md
+    - name: Sample - Metadata update
+      href: metadata-update-sample.md
+    - name: Sample - Daily weather
+      href: daily-weather-sample.md
+    - name: Sample - Lead generation
+      href: lead-collection-sample.md
   - name: Approval flows
     items:
     - name: Single approvals
       href: modern-approvals.md
+    - name: Approvals with attachments
+      href: approval-attachments.md
     - name: Sequential approvals
       href: sequential-modern-approvals.md
     - name: Parallel approvals
