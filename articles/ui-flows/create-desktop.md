@@ -119,7 +119,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 - You may want to add a [**Close** action](edit-desktop.md#add-a-manual-action) at the end of your UI flow because UI flows launches a new instance of the applications with each test or run.
 
-- Select **...** > **Delete** on the recorded actions card to remove any unnecessary/duplicate actions. Duplicate actions may be created depending on the type and the speed of you are recording. 
+- Select **...** > **Delete** on the recorded actions card to remove any unnecessary/duplicate actions.
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
