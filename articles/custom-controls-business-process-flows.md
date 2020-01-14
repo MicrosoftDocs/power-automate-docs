@@ -40,7 +40,6 @@ Here are the steps you must follow to add custom controls to a business process 
 
 Follow these steps for a [detailed walkthrough adding custom controls](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Preview-Custom-Controls-in-Business-Process-Flows/ba-p/263237) to business process flows steps.
 
-## Learn more
 
 
 
