@@ -29,7 +29,7 @@ landingContent:
        - linkListType: get-started
          links:
           - text: Get started with the basics
-            url: get-started.md
+            url: getting-started.md
           - text: Get started with UI flows (Preview)
             url: ./ui-flows/overview.md
        - linkListType: how-to-guide
@@ -40,10 +40,6 @@ landingContent:
          links:
           - text: Catch up on the flow of the week
             url: https://flow.microsoft.com/blog/category/flow-of-the-week
-       - linkListType: overview
-         links:
-          - text: What is Power Automate?
-            url: overview.md
        - linkListType: video
          links:
           - text: Overview of Power Automate capabilities
@@ -64,7 +60,7 @@ landingContent:
           - text: Let others use your button flows
             url: share-buttons.md  
           - text: Troubleshoot your flows
-            url: fix-flow-failures
+            url: fix-flow-failures.md
           
   # Card
   - title: I'm an expert
@@ -76,11 +72,11 @@ landingContent:
           - text: Manage Power Automate for your organization
             url: environments-overview-admin.md
           - text: Learn to use REST APIs with your flows
-            url: call-flow-rest-api.md
+            url: call-flow-restapi.md
           - text: Create a custom connector
-            url: create-web-api-connector.md
-          - text: Expand your flows with Logic Apps
-            url: grow-up-to-logic-apps.md
+            url: ./custom-connectors/create-web-api-connector.md
+          - text: Expand your flows with Azure Logic Apps
+            url: https://flow.microsoft.com/blog/grow-up-to-logic-apps
           - text: Drive data collection and workflow consistency
             url: business-process-flows-overview.md
           - text: Use common data service
