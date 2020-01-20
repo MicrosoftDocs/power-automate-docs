@@ -72,9 +72,9 @@ landingContent:
           - text: Manage Power Automate for your organization
             url: environments-overview-admin.md
           - text: Learn to use REST APIs with your flows
-            url: call-flow-restapi.md
-          - text: Create a custom connector
-            url: ./custom-connectors/create-web-api-connector.md
+            url: https://flow.microsoft.com/blog/call-flow-restapi.md
+          - text: Create a custom connector for a Web API
+            url: https://docs.microsoft.com/connectors/custom-connectors/create-web-api-connector
           - text: Expand your flows with Azure Logic Apps
             url: https://flow.microsoft.com/blog/grow-up-to-logic-apps
           - text: Drive data collection and workflow consistency
