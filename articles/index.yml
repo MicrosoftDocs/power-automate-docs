@@ -61,7 +61,7 @@ landingContent:
             url: modern-approvals.md  
           - text: Collaborate on a team flow
             url: create-team-flows.md
-         - text: Let others use your button flows
+          - text: Let others use your button flows
             url: share-buttons.md  
           - text: Troubleshoot your flows
             url: fix-flow-failures
