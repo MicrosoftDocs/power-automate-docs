@@ -1,0 +1,111 @@
+### YamlMime:Landing
+
+title: Power Automate documentation
+summary: Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+
+metadata:
+  title: Power Automate landing page
+  description: Provides access to highlighted areas within the Power Automate documentation
+  services: service
+  ms.service: flow 
+  ms.subservice: subservice
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: MSFTMAN
+  ms.author: Deonhe
+  ms.date: 01/18/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Card 
+  - title: I'm a beginner
+    linkLists:
+       - linkListType: learn
+         links:
+          - text: Learn Power Automate
+            url: https://docs.microsoft.com/learn/paths/automate-process-power-automate
+       - linkListType: get-started
+         links:
+          - text: Get started with the basics
+            url: get-started.md
+          - text: Get started with UI flows (Preview)
+            url: ./ui-flows/overview.md
+       - linkListType: how-to-guide
+         links:
+          - text: Create a button flow in two minutes
+            url: https://docs.microsoft.com/learn/paths/automate-process-power-automate
+       - linkListType: tutorial
+         links:
+          - text: Catch up on the flow of the week
+            url: https://flow.microsoft.com/blog/category/flow-of-the-week
+       - linkListType: overview
+         links:
+          - text: What is Power Automate?
+            url: overview.md
+       - linkListType: video
+         links:
+          - text: Overview of Power Automate capabilities
+            url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+  # Card
+  - title: I'm an intermediate
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Create a flow from a template
+            url: get-started-logic-template.md
+          - text: Create a flow from scratch
+            url: get-started-logic-flow.md
+          - text: Create approval flows
+            url: modern-approvals.md  
+          - text: Collaborate on a team flow
+            url: create-team-flows.md
+         - text: Let others use your button flows
+            url: share-buttons.md  
+          - text: Troubleshoot your flows
+            url: fix-flow-failures
+          
+  # Card
+  - title: I'm an expert
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fine-tune your flows with expressions
+            url: use-expressions-in-conditions.md
+          - text: Manage Power Automate for your organization
+            url: environments-overview-admin.md
+          - text: Learn to use REST APIs with your flows
+            url: call-flow-rest-api.md
+          - text: Create a custom connector
+            url: create-web-api-connector.md
+          - text: Expand your flows with Logic Apps
+            url: grow-up-to-logic-apps.md
+          - text: Drive data collection and workflow consistency
+            url: business-process-flows-overview.md
+          - text: Use common data service
+            url: workflow-processes.md
+
+  # Card
+  - title: I'm an admin
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage environments
+            url: environments-overview-admin.md
+          - text: Prevent data loss
+            url: prevent-data-loss.md
+          - text: Manage flow runs
+            url: https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow
+          - text: Get insights into your flows
+            url: https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics
+  # Card
+  - title: What's new and planned?
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Release plans
+            url: /power-platform-release-plan/2019wave2/power-automate/
+          - text: Power Automate availability by region
+            url: regions-overview.md      
+  
