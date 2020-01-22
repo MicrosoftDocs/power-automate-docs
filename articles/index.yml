@@ -103,5 +103,20 @@ landingContent:
           - text: Release plans
             url: /power-platform-release-plan/2019wave2/power-automate/
           - text: Power Automate availability by region
-            url: regions-overview.md      
+            url: regions-overview.md 
+  # Card               
+  - title: Related technologies
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Power Apps
+            url: /power-platform-release-plan/2019wave2/power-automate/
+          - text: Power BI
+            url: regions-overview.md
+      - linkListType: learn
+        links:
+          - text: PowerPlatform
+            url: /power-platform-release-plan/2019wave2/power-automate/
+      
+
   
