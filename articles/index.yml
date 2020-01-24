@@ -79,7 +79,7 @@ landingContent:
             url: https://flow.microsoft.com/blog/grow-up-to-logic-apps
           - text: Drive data collection and workflow consistency
             url: business-process-flows-overview.md
-          - text: Use common data service
+          - text: Use Common Data Service
             url: workflow-processes.md
 
   # Card
