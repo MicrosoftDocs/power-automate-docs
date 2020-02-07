@@ -35,7 +35,7 @@ See the [pricing page](https://flow.microsoft.com/pricing/).
 
 ## Where can I find out what my plan is?
 
-See the [pricing page](https://flow.microsoft.com/pricing/).
+See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
