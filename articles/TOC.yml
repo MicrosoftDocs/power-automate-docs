@@ -56,6 +56,24 @@
     href: run-scheduled-tasks.md
   - name: Process a list of items
     href: apply-to-each.md
+- name: Approval flows
+    items:
+    - name: Single approvals
+      href: modern-approvals.md
+    - name: Approvals with attachments
+      href: approval-attachments.md
+    - name: Sequential approvals
+      href: sequential-modern-approvals.md
+    - name: Parallel approvals
+      href: parallel-modern-approvals.md
+    - name: Everyone must approve
+      href: all-assigned-must-approve.md
+    - name: Integrated approvals
+      href: common-data-model-approve.md
+    - name: Format approval requests
+      href: approvals-markdown-support.md
+    - name: Custom approval response options
+      href: create-approval-response-options.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -170,24 +188,6 @@
       href: daily-weather-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
-  - name: Approval flows
-    items:
-    - name: Single approvals
-      href: modern-approvals.md
-    - name: Approvals with attachments
-      href: approval-attachments.md
-    - name: Sequential approvals
-      href: sequential-modern-approvals.md
-    - name: Parallel approvals
-      href: parallel-modern-approvals.md
-    - name: Everyone must approve
-      href: all-assigned-must-approve.md
-    - name: Integrated approvals
-      href: common-data-model-approve.md
-    - name: Format approval requests
-      href: approvals-markdown-support.md
-    - name: Custom approval response options
-      href: create-approval-response-options.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template
