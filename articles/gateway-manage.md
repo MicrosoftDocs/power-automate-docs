@@ -53,7 +53,7 @@ With a gateway, you can connect to on-premises data over these connections:
   You have these permissions by default for each gateway that you install. Also, an administrator of another gateway can grant you these permissions for that gateway.
 * A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://flow.microsoft.com/pricing/).
 
-> [!NOTE]
+> [!TIP]
 > You can create a gateway and an on-premises connection for [any environment](environments-overview-maker.md).
 
 ## Install a gateway
