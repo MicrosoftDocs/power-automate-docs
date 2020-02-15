@@ -67,7 +67,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
    You'll have to do this once per device:
 
-    - **Connection name**: Choose a name for the device to Flow connection. It can be different than the gateway name.
+    - **Connection name**: Choose a name for the device to Flow connection. It can be different from the gateway name.
     - **Username**: Provide your device’s work or school account.
     - **Authentication type**: Select Windows.
     - **Password**: Your work or school account’s password.
