@@ -108,11 +108,11 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Update UI flows app and connections
+  - name: Update Preview UI flows app and connections 
     href: ./ui-flows/update-ui-flow-ga.md
-  - name: Compare unattended and attended ui flows
+  - name: Compare unattended and attended UI flows
     href: ./ui-flows/unattended-attended-comparison.md
-  - name: Scaling UI flows using gateway clusters
+  - name: Scale UI flows with gateway clusters
     href: ./ui-flows/scaling-gateway-clusters.md
   - name: Share an API flow that has a UI flow 
     href: ./ui-flows/share-api-flow-plu-ui-flow.md
