@@ -180,12 +180,20 @@
       href: overview-adaptive-cards.md
     - name: Create adaptive cards for Teams
       href: create-adaptive-cards.md
+    - name: Sample - Candidate feedback
+      href: candidate-feedback-sample.md
     - name: Sample - Image share
       href: image-share-sample.md
+    - name: Sample - Lead collection
+      href: lead-collection-sample.md
+    - name: Sample - Poll generator
+      href: poll-generator-sample.md
     - name: Sample - Metadata update
       href: metadata-update-sample.md
     - name: Sample - Daily weather
       href: daily-weather-sample.md
+    - name: Sample - Acronym form
+      href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
   - name: Manage flows on a phone
