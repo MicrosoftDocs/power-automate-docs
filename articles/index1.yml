@@ -26,8 +26,10 @@ landingContent:
          links:
           - text: What is Power Automate?
             url: /power-automate/getting-started
-          - text: Sign up for Power Automate?
-            url: /power-automate/sign-up-sign-in            
+          - text: Sign up for Power Automate
+            url: /power-automate/sign-up-sign-in
+          - text: FAQs for Power Automate
+            url: /power-automate/frequently-asked-questions            
        - linkListType: learn
          links:
           - text: Learn Power Automate
@@ -69,7 +71,27 @@ landingContent:
             url: power-automate/ui-flows/create-web
           - text: Run UI flows
             url: /power-automate/ui-flows/run-ui-flow
+             - linkListType: video
+      - linkListType: video
+        links:
+          - text: UI flows videos
+            url: https://www.youtube.com/playlist?list=PLwh1E-0OEEGJQwqxCmNZYhJFzo_Eif9s8
 
+  # Card
+  - title: ALM using Solutions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: /power-automate/overview-solution-flows
+      - linkListType: how-to-guide
+        links:
+          - text: Create a flow in a solution
+            url: /power-automate/create-flow-solution
+          - text: Export solution
+            url: /power-automate/export-flow-solution
+          - text: Import solution
+            url: Import a solution
 
   # Card
   - title: Administer Power Automate
