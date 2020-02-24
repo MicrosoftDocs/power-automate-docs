@@ -119,12 +119,12 @@ landingContent:
   # Card
   - title: Get support
     linkLists:
-      - linkListType: whats-new
+      - linkListType: reference
         links:
-          - text: Release plans
-            url: /power-platform-release-plan/2019wave2/power-automate/
-          - text: Power Automate availability by region
-            url: regions-overview.md 
+          - text: Troubleshoot a flow
+            url: /power-automate/fix-flow-failures
+          - text: Use Power Automate checker
+            url: /power-automate/error-checker 
 
 
       
