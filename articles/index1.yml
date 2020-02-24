@@ -104,20 +104,26 @@ landingContent:
             url: Import a solution
 
   # Card
-  - title: Administer Power Automate
+  - title: Advanced features
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage environments
-            url: environments-overview-admin.md
-          - text: Prevent data loss
-            url: prevent-data-loss.md
-          - text: Manage flow runs
-            url: https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow
-          - text: Get insights into your flows
-            url: https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics
+          - text: Use adaptive cards
+            url: /power-automate/overview-adaptive-cards
+          - text: Use data operations
+            url: /power-automate/data-operations
+          - text: Use expressions and functions
+            url: /power-automate/use-expressions-in-conditions
+          - text: Use vision to model flows
+            url: /power-automate/visio-flows
+      - linkListType: overview
+        links:
+          - text: For enterprise developers, ISVs, and partners
+            url: /power-automate/developer/dev-enterprise-intro
+
+    
   # Card
-  - title: Get support
+  - title: Support and licensing
     linkLists:
       - linkListType: reference
         links:
@@ -125,7 +131,12 @@ landingContent:
             url: /power-automate/fix-flow-failures
           - text: Use Power Automate checker
             url: /power-automate/error-checker 
-
+          - text: Power Automate community
+            url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity 
+          - text: Power Automate licensing
+            url: /power-automate/billing-questions
+          - text: Power Automate US Government plans
+            url: /power-automate/us-govt
 
       
 
