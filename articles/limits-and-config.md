@@ -104,7 +104,7 @@ These are limits for a single flow.
 | `description` length limit |256 | |
 
 ## SharePoint limits
-There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
+There are [limitations](https://docs.microsoft.com/en-us/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
 
 ## IP address configuration
 The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
