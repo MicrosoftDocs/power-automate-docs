@@ -81,7 +81,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Distribute flows using solutions
             url: /power-automate/overview-solution-flows
       - linkListType: how-to-guide
         links:
