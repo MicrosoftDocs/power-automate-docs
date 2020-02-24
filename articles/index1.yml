@@ -33,11 +33,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Learn Power Automate
-            url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
-       - linkListType: video
-         links:
-          - text: Overview of Power Automate
-            url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+            url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate      
        - linkListType: whats-new
          links:
           - text: Release plans
