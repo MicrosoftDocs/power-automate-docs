@@ -20,7 +20,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Get started
+  - title: About Power Automate
     linkLists:
        - linkListType: overview
          links:
@@ -38,10 +38,15 @@ landingContent:
          links:
           - text: Overview of Power Automate
             url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+       - linkListType: whats-new
+         links:
+          - text: Release plans
+            url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
+  
   # Card
   - title: Create flows using Power Automate
     linkLists:
-       - linkListType: concept
+       - linkListType: get-started
          links:
           - text: Automated flows
             url: /power-automate/get-started-logic-flow
@@ -53,7 +58,13 @@ landingContent:
             url: /power-automate/modern-approvals
           - text: Business process flows
             url: /power-automate/business-process-flows-overview  
-          
+       - linkListType: concept
+         links:
+          - text: "Connections: connect to online data"
+            url: /power-automate/add-manage-connections
+          - text: "Gateways: connect to on-premises data"
+            url: /power-automate/gateway-manage
+     
   # Card
   - title: RPA using UI flows
     linkLists:
@@ -106,7 +117,7 @@ landingContent:
           - text: Get insights into your flows
             url: https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics
   # Card
-  - title: What's new and planned?
+  - title: Get support
     linkLists:
       - linkListType: whats-new
         links:
@@ -114,15 +125,7 @@ landingContent:
             url: /power-platform-release-plan/2019wave2/power-automate/
           - text: Power Automate availability by region
             url: regions-overview.md 
-  # Card               
-  - title: Related technologies
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Power Apps
-            url: https://docs.microsoft.com/powerapps
-          - text: Power BI
-            url: https://docs.microsoft.com/power-bi
+
 
       
 
