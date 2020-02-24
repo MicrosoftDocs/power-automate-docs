@@ -71,7 +71,6 @@ landingContent:
             url: power-automate/ui-flows/create-web
           - text: Run UI flows
             url: /power-automate/ui-flows/run-ui-flow
-             - linkListType: video
       - linkListType: video
         links:
           - text: UI flows videos
