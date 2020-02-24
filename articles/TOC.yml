@@ -1,3 +1,5 @@
+- name: Power Automate documentation
+  href: index1.yml
 - name: Overview
   items:
   - name: Sign up
