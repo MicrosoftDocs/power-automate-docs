@@ -71,7 +71,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is UI flows?
-            url: /power-automate/ui-flows
+            url: /power-automate/ui-flows/overview
       - linkListType: how-to-guide
         links:
           - text: Set up UI flows
