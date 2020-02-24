@@ -1,0 +1,108 @@
+### YamlMime:Landing
+
+title: Power Automate documentation
+summary: Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+
+metadata:
+  title: Power Automate landing page
+  description: Provides access to highlighted areas within the Power Automate documentation
+  services: service
+  ms.service: flow 
+  ms.subservice: subservice
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: MSFTMAN
+  ms.author: Deonhe
+  ms.date: 01/18/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Card 
+  - title: Get started
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: What is Power Automate?
+            url: /power-automate/getting-started
+          - text: Sign up for Power Automate?
+            url: /power-automate/sign-up-sign-in            
+       - linkListType: learn
+         links:
+          - text: Learn Power Automate
+            url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
+       - linkListType: video
+         links:
+          - text: Overview of Power Automate
+            url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+  # Card
+  - title: Create flows using Power Automate
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Automated flows
+            url: /power-automate/get-started-logic-flow
+          - text: Button flows
+            url: /power-automate/introduction-to-button-flows
+          - text: Scheduled flows
+            url: /power-automate/run-scheduled-tasks  
+          - text: Approval flows
+            url: /power-automate/modern-approvals
+          - text: Business process flows
+            url: /power-automate/business-process-flows-overview  
+          
+  # Card
+  - title: RPA using UI flows
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is UI flows?
+            url: /power-automate/ui-flows
+      - linkListType: how-to-guide
+        links:
+          - text: Set up UI flows
+            url: /power-automate/ui-flows/setup
+          - text: Create desktop UI flows
+            url: /power-automate/ui-flows/create-desktop
+          - text: Create web UI flows
+            url: power-automate/ui-flows/create-web
+          - text: Run UI flows
+            url: /power-automate/ui-flows/run-ui-flow
+
+
+  # Card
+  - title: Administer Power Automate
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage environments
+            url: environments-overview-admin.md
+          - text: Prevent data loss
+            url: prevent-data-loss.md
+          - text: Manage flow runs
+            url: https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow
+          - text: Get insights into your flows
+            url: https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics
+  # Card
+  - title: What's new and planned?
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Release plans
+            url: /power-platform-release-plan/2019wave2/power-automate/
+          - text: Power Automate availability by region
+            url: regions-overview.md 
+  # Card               
+  - title: Related technologies
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Power Apps
+            url: https://docs.microsoft.com/powerapps
+          - text: Power BI
+            url: https://docs.microsoft.com/power-bi
+
+      
+
+  
