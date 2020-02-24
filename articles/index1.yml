@@ -108,17 +108,19 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Use AI Builder
+            url: /power-automate/use-ai-builder
           - text: Use adaptive cards
             url: /power-automate/overview-adaptive-cards
           - text: Use data operations
             url: /power-automate/data-operations
           - text: Use expressions and functions
             url: /power-automate/use-expressions-in-conditions
-          - text: Use vision to model flows
+          - text: Use Visio to model flows
             url: /power-automate/visio-flows
-      - linkListType: overview
+      - linkListType: concept
         links:
-          - text: For enterprise developers, ISVs, and partners
+          - text: Power Automate for developers, ISVs, and partners
             url: /power-automate/developer/dev-enterprise-intro
 
     
