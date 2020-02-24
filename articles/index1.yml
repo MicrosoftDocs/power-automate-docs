@@ -132,7 +132,9 @@ landingContent:
           - text: Use Power Automate checker
             url: /power-automate/error-checker 
           - text: Power Automate community
-            url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity 
+            url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
+          - text: Power Automate blog
+            url: https://flow.microsoft.com/en-us/blog/ 
           - text: Power Automate licensing
             url: /power-automate/billing-questions
           - text: Power Automate US Government plans
