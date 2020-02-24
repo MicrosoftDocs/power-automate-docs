@@ -41,7 +41,7 @@ landingContent:
   # Card
   - title: Create flows using Power Automate
     linkLists:
-       - linkListType: how-to-guide
+       - linkListType: concept
          links:
           - text: Automated flows
             url: /power-automate/get-started-logic-flow
