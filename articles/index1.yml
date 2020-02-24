@@ -79,7 +79,7 @@ landingContent:
           - text: Create desktop UI flows
             url: /power-automate/ui-flows/create-desktop
           - text: Create web UI flows
-            url: power-automate/ui-flows/create-web
+            url: /power-automate/ui-flows/create-web
           - text: Run UI flows
             url: /power-automate/ui-flows/run-ui-flow
       - linkListType: video
@@ -101,7 +101,7 @@ landingContent:
           - text: Export solution
             url: /power-automate/export-flow-solution
           - text: Import solution
-            url: Import a solution
+            url: /power-automate/import-flow-solution
 
   # Card
   - title: Advanced features
