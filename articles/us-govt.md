@@ -230,7 +230,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - Trigger Power Automate US Government flow *from* Dynamics 365 GCC
 
-- [Approvals](./modern-approvals.md) – Although  US Government customers may use Power Automate approvals, they will not be able to send actionable emails, and will need to direct approvers to the Approval Center. As a workaround, Power Automate makers can leverage standard email connectors to notify someone that an approval pending. In that case, they would also include the hyperlink, within the email, which points to the Approval Center where US Government customers may act on the approvals.
+- [Approvals](./modern-approvals.md) are not yet available for GCC and GCC High tenants.
 
 - [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
 

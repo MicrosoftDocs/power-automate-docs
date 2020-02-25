@@ -45,14 +45,9 @@ search.audienceType:
 
 ## What's new
 
-> [!IMPORTANT]
->
-> **Announcing the release notes**
->
-> Wondering about upcoming and recently released capabilities in Power Automate?
->[View the October 2018 release notes](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We've captured all the details, end to end, top to bottom, which you can use for planning. For more details, review [each weekly release](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) with the features and enhancements that it contains.
->
-> The release notes prior to the October 2018 release will remain here for future reference, but all new releases will only be included in the above locations and not on this page.
+For information about new features released for Power Automate, visit:
+- [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
+- [Weekly release notes](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 
