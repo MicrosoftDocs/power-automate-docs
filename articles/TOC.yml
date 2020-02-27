@@ -104,11 +104,11 @@
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
     href: ./ui-flows/inputs-outputs-web.md
-  - name: Run UI flows
+  - name: Run attended and unattended UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Update Preview UI flows app and connections 
+  - name: Update Preview UI flows and connections 
     href: ./ui-flows/update-ui-flow-ga.md
   - name: Compare unattended and attended UI flows
     href: ./ui-flows/unattended-attended-comparison.md

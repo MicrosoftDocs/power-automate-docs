@@ -56,6 +56,23 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
 
+1.	Select **Download package**.
+1.	Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1.	Follow the instructions in the UI flows (preview) setup installer to complete the installation.
+
+    Once the UI flows installer completes, you'll receive a prompt from your browser to activate the extension.
+
+1. On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
+1. On Google Chrome, select **Enable extension** when prompted.
+
+   > [!TIP]
+   > If you did not see the prompt in your browser, please check the following:
+   > - You must use Microsoft Edge (Chromium) or Google Chrome
+   > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+   > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+   Continue after you've installed the extension.
+
 1. Select the **Record app** card to expand it.
 
    ![Select record app](../media/create-windows-ui-flow/select-record-app.png "Select record app")
