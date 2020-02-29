@@ -43,12 +43,13 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
-- A US (QWERTY) keyboard attached.
 
 - The [next version of Microsoft Edge](https://www.microsoftedgeinsider.com)
     or Google Chrome.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
+
+- A supported keyboard attached.
 
 ## Limitations
 
@@ -127,6 +128,46 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 1. Open the **start** menu > **Settings** > **Apps**.
 1. Search for **UI flows (preview)**, and then select it.
 1. Select **Uninstall**.
+
+## Supported keyboard layouts
+
+- US keyboard – English (United States)
+- US keyboard – English (Australia)
+- US keyboard – English (Canada)
+- Microsoft Pinyin – Chinese (Simplified Han, China)
+- German keyboard – German (Germany)
+- Microsoft IME – Japanese (Japan)
+- United Kingdom keyboard – English (United Kingdom)
+- French keyboard – French (France)
+- Russian keyboard – Russian (Russia)
+- Portuguese (Brazilian ABNT) keyboard – Portuguese (Brazil)
+- Portuguese (Brazilian ABNT2) keyboard – Portuguese (Brazil)
+- Microsoft IME – Korean (South Korea)
+- Spanish keyboard – Spanish (Spain)
+- Italian keyboard – Italian (Italy)
+- Latin American keyboard – Spanish (Mexico)
+- Polish (Programmers) keyboard – Polish (Poland)
+- United States-International keyboard – Dutch (Netherlands)
+- Turkish Q keyboard – Turkish (Turkey)
+- India keyboard – English (India)
+
+## Supported languages
+
+Here are the languages that UI flows supports, in additional to English:
+
+|||||
+----|-----|-----|-----
+Basque	| French	| Latvian	| Slovak
+Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
+Catalan	|	German		|Malay	|	Spanish
+Chinese (Simplified)	|	Greek	|	Norwegian	|	Swedish
+Chinese (Traditional)	|	Hindi	|	Polish	|	Thai
+Croatian	|	Hungarian	|	Portuguese (Brazil)	|	Turkish
+Czech	|	Indonesian	|	Portuguese (Portugal)		|Ukrainian
+Danish	|	Italian	|	Romanian	|	Vietnamese
+Dutch		|Japanese	|	Russian	
+Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
+Finnish		|Korean		|Serbian (Latin, Serbia)	
 
 ## Next steps
 
