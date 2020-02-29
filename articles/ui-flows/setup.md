@@ -101,7 +101,7 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
-## (optional) Install Selenium IDE to automate Web applications
+## Install Selenium IDE to automate Web applications
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
