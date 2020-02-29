@@ -26,7 +26,8 @@ search.audienceType:
 
 You can use the **Add static text** feature to record text input, in any language, using IMEs or regular keyboards in your UI flows. Use **Add static text** if you want the automation to insert the same text each time your UI flow runs. 
 
->[!TIP] Use **Text input** if you intend to use dynamic text that changes each time your UI flow runs.
+>[!TIP]
+>Use **Text input** if you intend to use dynamic text that changes each time your UI flow runs.
 
 ## Invoke IME
 
