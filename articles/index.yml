@@ -20,103 +20,128 @@ metadata:
 landingContent:
 
   # Card 
-  - title: I'm a beginner
+  - title: About Power Automate
     linkLists:
+       - linkListType: overview
+         links:
+          - text: What is Power Automate?
+            url: /power-automate/getting-started
+          - text: Sign up for Power Automate
+            url: /power-automate/sign-up-sign-in
+          - text: FAQs for Power Automate
+            url: /power-automate/frequently-asked-questions            
        - linkListType: learn
          links:
           - text: Learn Power Automate
-            url: https://docs.microsoft.com/learn/paths/automate-process-power-automate
-       - linkListType: get-started
-         links:
-          - text: Get started with the basics
-            url: getting-started.md
-          - text: Get started with UI flows (Preview)
-            url: ./ui-flows/overview.md
-       - linkListType: how-to-guide
-         links:
-          - text: Create a button flow in two minutes
-            url: https://docs.microsoft.com/learn/paths/automate-process-power-automate
-       - linkListType: tutorial
-         links:
-          - text: Catch up on the flow of the week
-            url: https://flow.microsoft.com/blog/category/flow-of-the-week
+            url: https://docs.microsoft.com/learn/browse/?products=power-automate&term=Power%20Automate
        - linkListType: video
          links:
-          - text: Overview of Power Automate capabilities
+          - text: Overview of Power Automate
             url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
-  # Card
-  - title: I'm an intermediate
-    linkLists:
-       - linkListType: how-to-guide
+       - linkListType: whats-new
          links:
-          - text: Create a flow from a template
-            url: get-started-logic-template.md
-          - text: Create a flow from scratch
-            url: get-started-logic-flow.md
-          - text: Create approval flows
-            url: modern-approvals.md  
-          - text: Collaborate on a team flow
-            url: create-team-flows.md
-          - text: Let others use your button flows
-            url: share-buttons.md  
-          - text: Troubleshoot your flows
-            url: fix-flow-failures.md
-          
+          - text: Release plans
+            url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features
+  
   # Card
-  - title: I'm an expert
+  - title: Create flows using Power Automate
     linkLists:
+       - linkListType: get-started
+         links:
+          - text: Automated flows
+            url: /power-automate/get-started-logic-flow
+          - text: Button flows
+            url: /power-automate/introduction-to-button-flows
+          - text: Scheduled flows
+            url: /power-automate/run-scheduled-tasks  
+          - text: Approval flows
+            url: /power-automate/modern-approvals
+          - text: Business process flows
+            url: /power-automate/business-process-flows-overview  
+       - linkListType: concept
+         links:
+          - text: "Connections: connect to online data"
+            url: /power-automate/add-manage-connections
+          - text: "Gateways: connect to on-premises data"
+            url: /power-automate/gateway-manage
+     
+  # Card
+  - title: RPA using UI flows
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is UI flows?
+            url: /power-automate/ui-flows/overview
       - linkListType: how-to-guide
         links:
-          - text: Fine-tune your flows with expressions
-            url: use-expressions-in-conditions.md
-          - text: Manage Power Automate for your organization
-            url: environments-overview-admin.md
-          - text: Learn to use REST APIs with your flows
-            url: https://flow.microsoft.com/blog/call-flow-restapi.md
-          - text: Create a custom connector for a Web API
-            url: https://docs.microsoft.com/connectors/custom-connectors/create-web-api-connector
-          - text: Expand your flows with Azure Logic Apps
-            url: https://flow.microsoft.com/blog/grow-up-to-logic-apps
-          - text: Drive data collection and workflow consistency
-            url: business-process-flows-overview.md
-          - text: Use Common Data Service
-            url: workflow-processes.md
+          - text: Set up UI flows
+            url: /power-automate/ui-flows/setup
+          - text: Create desktop UI flows
+            url: /power-automate/ui-flows/create-desktop
+          - text: Create web UI flows
+            url: /power-automate/ui-flows/create-web
+          - text: Run UI flows
+            url: /power-automate/ui-flows/run-ui-flow
+      - linkListType: video
+        links:
+          - text: UI flows videos
+            url: https://www.youtube.com/playlist?list=PLwh1E-0OEEGJQwqxCmNZYhJFzo_Eif9s8
 
   # Card
-  - title: I'm an admin
+  - title: ALM using Solutions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Distribute flows using solutions
+            url: /power-automate/overview-solution-flows
+      - linkListType: how-to-guide
+        links:
+          - text: Create a flow in a solution
+            url: /power-automate/create-flow-solution
+          - text: Export solution
+            url: /power-automate/export-flow-solution
+          - text: Import solution
+            url: /power-automate/import-flow-solution
+
+  # Card
+  - title: Advanced features
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage environments
-            url: environments-overview-admin.md
-          - text: Prevent data loss
-            url: prevent-data-loss.md
-          - text: Manage flow runs
-            url: https://flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow
-          - text: Get insights into your flows
-            url: https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics
+          - text: Use AI Builder
+            url: /power-automate/use-ai-builder
+          - text: Use adaptive cards
+            url: /power-automate/overview-adaptive-cards
+          - text: Use data operations
+            url: /power-automate/data-operations
+          - text: Use expressions and functions
+            url: /power-automate/use-expressions-in-conditions
+          - text: Use Visio to model flows
+            url: /power-automate/visio-flows
+      - linkListType: concept
+        links:
+          - text: Power Automate for developers, ISVs, and partners
+            url: /power-automate/developer/dev-enterprise-intro
+
+    
   # Card
-  - title: What's new and planned?
+  - title: Support and licensing
     linkLists:
-      - linkListType: whats-new
+      - linkListType: reference
         links:
-          - text: Release plans
-            url: /power-platform-release-plan/2019wave2/power-automate/
-          - text: Power Automate availability by region
-            url: regions-overview.md 
-  # Card               
-  - title: Related technologies
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Power Apps
-            url: /power-platform-release-plan/2019wave2/power-automate/
-          - text: Power BI
-            url: regions-overview.md
-      - linkListType: learn
-        links:
-          - text: PowerPlatform
-            url: /power-platform-release-plan/2019wave2/power-automate/
+          - text: Troubleshoot a flow
+            url: /power-automate/fix-flow-failures
+          - text: Use Power Automate checker
+            url: /power-automate/error-checker 
+          - text: Power Automate community
+            url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
+          - text: Power Automate blog
+            url: https://flow.microsoft.com/en-us/blog/ 
+          - text: Power Automate licensing
+            url: /power-automate/billing-questions
+          - text: Power Automate US Government plans
+            url: /power-automate/us-govt
+
       
 
   
