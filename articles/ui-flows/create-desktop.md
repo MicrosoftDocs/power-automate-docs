@@ -145,9 +145,9 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 ### Unsupported application types
 
--   Interactions on Windows (File explorer, startup menu, task bar, etc.).
+- Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
--   Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
+- Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
     Please instead refer to [Create a Web UI flow](edit-web.md) to
     automate websites.
 

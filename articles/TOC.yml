@@ -98,14 +98,15 @@
     href: ./ui-flows/edit-desktop.md
   - name: Use inputs and outputs in desktop UI flows
     href: ./ui-flows/inputs-outputs-desktop.md
+    items:
+    - name: Use Input Method Editors (IMEs) in UI flows
+      href: ./ui-flows/use-ime.md
   - name: Create and test Web UI flows
     href: ./ui-flows/create-web.md
   - name: Edit Web UI flows
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
     href: ./ui-flows/inputs-outputs-web.md
-  - name: Use Input Method Editors (IMEs) in UI flows
-    href: ./ui-flows/use-ime.md
   - name: Run attended and unattended UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows

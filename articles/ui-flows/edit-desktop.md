@@ -174,7 +174,7 @@ Here are some of the reasons why the default Windows UI automation framework mig
 - The application has controls that do not have names, IDs, unique identifiers, etc.
 
 >[!TIP]
->Use the same resolution and maximize the target application during recording to improve the accuracy of coordinate-based playback.
+>Use the same scale and resolution and also maximize the target application during recording to improve the accuracy of coordinate-based playback.
 
 Follow these steps after you've recorded a UI flow script:
 
