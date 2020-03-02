@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -92,9 +92,7 @@ Now that you've created a Web UI flow, use it in your other flows.
 
 **UI flows no longer records or plays back Windows applications after installing a new version.**
 
-You need to uninstall the previous version before installing a new one.
-
-For that, open the Start menu, go to **Settings** > **Apps**, search for **UI flows** in the list of apps > **UI flows (Preview)**, and then select "Uninstall". The wizard will guide you through the process.
+Confirm you are using the [lastest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
 
 **Temporary user profile for playback**
 

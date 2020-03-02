@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -140,7 +140,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
-- If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version and then install a new version.
+- If UI flows no longer records or plays back Windows applications after installing a new version, confirm you have the [latest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409).
 
 
 ### Unsupported application types

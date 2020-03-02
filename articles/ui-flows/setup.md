@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -167,7 +167,11 @@ Czech	|	Indonesian	|	Portuguese (Portugal)		|Ukrainian
 Danish	|	Italian	|	Romanian	|	Vietnamese
 Dutch		|Japanese	|	Russian	
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
-Finnish		|Korean		|Serbian (Latin, Serbia)	
+Finnish		|Korean		|Serbian (Latin, Serbia)
+
+## Limitations
+- The latest versions of each components are required to record, test, or run UI flows.
+
 
 ## Next steps
 
@@ -177,8 +181,6 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 - Learn to [manage UI flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway)
 
-## Limitations
-- The latest versions of each components are required to record, test or run UI flows.
-- Please uninstall previous versions before installing the latest.
+
 
 
