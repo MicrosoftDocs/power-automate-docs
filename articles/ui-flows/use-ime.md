@@ -35,15 +35,15 @@ Follow these steps after you've started recording and you're ready to insert sta
 
 1. Select the control into which you want to enter the static text.
 
-   ![](../media/use-ime/1273826d281619515d6d6cdc3fa6cb48.png)
+   ![Select the control](../media/use-ime/select-control.png)
 
 1. Select **Use Input** on the recorder, and then select **Add static text**.
 
-   ![](../media/use-ime/329ba492cec0eff9db6bb56d492788aa.png)
+   ![Select Add static text](../media/use-ime/add-static-text.png)
 
    You'll see an input box into which you'll enter the static text. You can use IME, English, or any international keyboard.
 
-   ![](../media/use-ime/9e9a94ee7d810370c8d81a7357571ceb.png)
+   ![Enter static text](../media/use-ime/enter-static-text.png)
 
 1. Enter the text.
 
@@ -52,12 +52,12 @@ inserted into the control.
 
    This text is entered automatically at playback time, even if the playback machines do not have the same keyboard layouts or IME that was used in the recording.
 
-   ![](../media/use-ime/9c84385f9b0bb414855df8fc23fd504a.png)
+   ![Playback text](../media/use-ime/playback-text.png)
 
    >[!TIP]
    >In the Web designer, expand the **Insert text input** action to review or edit the text.
 
-   ![](../media/use-ime/5713ff05a81db4d3030fb170ed925ff4.png)
+   ![Insert text input](../media/use-ime/insert-text-input.png)
 
 
 ## Use the replay keystroke action
@@ -67,7 +67,7 @@ If you recorded any text input without using the **Add static text** option, eac
 In the designer, you can review and edit the recording information in the
 [virtual-key](https://docs.microsoft.com/windows/win32/inputdev/virtual-key-codes) format under the **Replay keystroke** action. 
 
-![](../media/use-ime/d3f8919757d3515a84e2c49b1c5159cf.png)
+![Virtual key](../media/use-ime/virtual-key.png)
 
 
 > [!NOTE]
