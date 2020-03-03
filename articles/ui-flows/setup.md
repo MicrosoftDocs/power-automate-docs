@@ -44,7 +44,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
 
-- The [next version of Microsoft Edge](https://www.microsoftedgeinsider.com)
+- The [Microsoft Edge](https://www.microsoftedgeinsider.com)
     or Google Chrome browser.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
@@ -93,13 +93,13 @@ Follow these steps to install the UI flows app:
 
 Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
 
-- On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
+- On Microsoft Edge, select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
 
 > [!TIP]
 > If you did not see the prompt in your browser, please check the following:
-> - You must use Microsoft Edge (Chromium) or Google Chrome
-> - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+> - You must use Microsoft Edge or Google Chrome.
+> - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 ## Install Selenium IDE to automate Web applications
@@ -112,7 +112,7 @@ Follow these steps to install Selenium IDE:
 
 1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
 
-1. On Microsoft Edge (Chromium), select **Allow extensions from other stores**, and then select **Add to Chrome**.
+1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway
 
@@ -180,7 +180,3 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 - Learn how to run [UI flows](run-ui-flow.md).
 - Learn to [manage UI flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway)
-
-
-
-
