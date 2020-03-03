@@ -66,8 +66,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. On Google Chrome, select **Enable extension** when prompted.
 
    > [!TIP]
-   > If you did not see the prompt in your browser, please check the following:
-   > - You must use Microsoft Edge (Chromium) or Google Chrome
+   > If you did not see the prompt in your browser, check the following:
+   > - You must use the Microsoft Edge (Chromium) or Google Chrome browser.
    > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
    > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
