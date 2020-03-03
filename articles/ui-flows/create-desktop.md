@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -55,6 +55,23 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
    ![Select desktop](../media/create-windows-ui-flow/give-a-name.png "Select desktop") 
 
 1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
+
+1.	Select **Download package**.
+1.	Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1.	Follow the instructions in the UI flows (preview) setup installer to complete the installation.
+
+    Once the UI flows installer completes, you'll receive a prompt from your browser to activate the extension.
+
+1. On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
+1. On Google Chrome, select **Enable extension** when prompted.
+
+   > [!TIP]
+   > If you did not see the prompt in your browser, check the following:
+   > - You must use the Microsoft Edge (Chromium) or Google Chrome browser.
+   > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+   > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+   Continue after you've installed the extension.
 
 1. Select the **Record app** card to expand it.
 
@@ -123,14 +140,14 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 - Right clicks may not play back correctly. In such case, while recording, click left to focus UI flows on the target user interface element, and then right click.
 
-- If UI flows no longer records or plays back Windows applications after installing a new version, uninstall the previous version and then install a new version.
+- If UI flows no longer records or plays back Windows applications after installing a new version, confirm you have the [latest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409).
 
 
 ### Unsupported application types
 
--   Interactions on Windows (File explorer, startup menu, task bar, etc.).
+- Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
--   Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
+- Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
     Please instead refer to [Create a Web UI flow](edit-web.md) to
     automate websites.
 

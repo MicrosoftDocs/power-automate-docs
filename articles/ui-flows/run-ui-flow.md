@@ -67,7 +67,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
    You'll have to do this once per device:
 
-    - **Connection name**: Choose a name for the device to Flow connection. It can be different than the gateway name.
+    - **Connection name**: Choose a name for the device to Flow connection. It can be different from the gateway name.
     - **Username**: Provide your device’s work or school account.
     - **Authentication type**: Select Windows.
     - **Password**: Your work or school account’s password.
@@ -106,11 +106,6 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
-## Limitations and known issues
-
-- Gateway clusters are not supported.
-- Since non-US 
-    (QWERTY) keyboards are not supported in this realease, playback of an input step where the key sequence was recorded from a non-US (QWERTY) keyboard will result in key strokes in US (QWERTY).
 
 ## Learn more
 
