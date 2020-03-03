@@ -43,7 +43,7 @@ Follow these steps after you've started recording and you're ready to insert sta
 
    You'll see an input box into which you'll enter the static text. You can use IME, English, or any international keyboard.
 
-   ![]../media/use-ime/9e9a94ee7d810370c8d81a7357571ceb.png)
+   ![](../media/use-ime/9e9a94ee7d810370c8d81a7357571ceb.png)
 
 1. Enter the text.
 
