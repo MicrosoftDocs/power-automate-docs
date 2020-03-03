@@ -1,6 +1,6 @@
 ---
 title: Use Input Method Editors (IMEs) in UI flows | Microsoft Docs
-description: Lean to use Input Method Editors (IMEs) in UI flows.
+description: Learn to use Input Method Editors (IMEs) in UI flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -70,8 +70,8 @@ In the designer, you can review and edit the recording information in the
 ![](../media/use-ime/d3f8919757d3515a84e2c49b1c5159cf.png)
 
 
->[!NOTE]
->An older version of the UI flows recorder used the **SendKeys** and **PostElement** actions. These actions will be deprecated. We recommend that you upgrade to the latest version of the UI flows recorder and then re-record your scripts to take advantage of the new features.
+> [!NOTE]
+> An older version of the UI flows recorder used the **SendKeys** and **PostElement** actions. These actions will be deprecated. We recommend that you upgrade to the latest version of the UI flows recorder and then re-record your scripts to take advantage of the new features.
 
 ## Troubleshooting tips
 
