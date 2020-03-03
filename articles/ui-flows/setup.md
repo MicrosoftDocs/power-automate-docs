@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -43,12 +43,13 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
 - A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
-- A US (QWERTY) keyboard attached.
 
-- The [next version of Microsoft Edge](https://www.microsoftedgeinsider.com)
-    or Google Chrome.
+- The [Microsoft Edge](https://www.microsoftedgeinsider.com)
+    or Google Chrome browser.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
+
+- A supported keyboard attached.
 
 ## Limitations
 
@@ -92,19 +93,14 @@ Follow these steps to install the UI flows app:
 
 Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
 
-- On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
+- On Microsoft Edge, select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
 
 > [!TIP]
 > If you did not see the prompt in your browser, please check the following:
-> - You must use Microsoft Edge (Chromium) or Google Chrome
-> - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+> - You must use Microsoft Edge or Google Chrome.
+> - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-
-<!-- To do for Gautier: check if the below is not bugged as there was one at some point.
-> - Reinstall the extension from the Chrome store
-Navigate to this link https://chrome.google.com/webstore/detail/microsoft-flow-preview/jcajipieipkmjpfakbdhmjidmhidogoo and install it manually, that will fix any issues. (For Edge Chromium, use the same link and accept when prompted to install from external stores.)
--->
 
 ## Install Selenium IDE to automate Web applications
 
@@ -116,7 +112,7 @@ Follow these steps to install Selenium IDE:
 
 1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
 
-1. On Microsoft Edge (Chromium), select **Allow extensions from other stores**, and then select **Add to Chrome**.
+1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway
 
@@ -133,6 +129,50 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 1. Search for **UI flows (preview)**, and then select it.
 1. Select **Uninstall**.
 
+## Supported keyboard layouts
+
+- US keyboard – English (United States)
+- US keyboard – English (Australia)
+- US keyboard – English (Canada)
+- Microsoft Pinyin – Chinese (Simplified Han, China)
+- German keyboard – German (Germany)
+- Microsoft IME – Japanese (Japan)
+- United Kingdom keyboard – English (United Kingdom)
+- French keyboard – French (France)
+- Russian keyboard – Russian (Russia)
+- Portuguese (Brazilian ABNT) keyboard – Portuguese (Brazil)
+- Portuguese (Brazilian ABNT2) keyboard – Portuguese (Brazil)
+- Microsoft IME – Korean (South Korea)
+- Spanish keyboard – Spanish (Spain)
+- Italian keyboard – Italian (Italy)
+- Latin American keyboard – Spanish (Mexico)
+- Polish (Programmers) keyboard – Polish (Poland)
+- United States-International keyboard – Dutch (Netherlands)
+- Turkish Q keyboard – Turkish (Turkey)
+- India keyboard – English (India)
+
+## Supported languages
+
+Here are the languages that UI flows supports, in additional to English:
+
+|||||
+----|-----|-----|-----
+Basque	| French	| Latvian	| Slovak
+Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
+Catalan	|	German		|Malay	|	Spanish
+Chinese (Simplified)	|	Greek	|	Norwegian	|	Swedish
+Chinese (Traditional)	|	Hindi	|	Polish	|	Thai
+Croatian	|	Hungarian	|	Portuguese (Brazil)	|	Turkish
+Czech	|	Indonesian	|	Portuguese (Portugal)		|Ukrainian
+Danish	|	Italian	|	Romanian	|	Vietnamese
+Dutch		|Japanese	|	Russian	
+Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
+Finnish		|Korean		|Serbian (Latin, Serbia)
+
+## Limitations
+- The latest versions of each components are required to record, test, or run UI flows.
+
+
 ## Next steps
 
 - Learn to [create desktop UI flows](create-desktop.md).
@@ -140,9 +180,3 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 - Learn how to run [UI flows](run-ui-flow.md).
 - Learn to [manage UI flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway)
-
-## Limitations
-- The latest versions of each components are required to record, test or run UI flows.
-- Please uninstall previous versions before installing the latest.
-
-

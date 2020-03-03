@@ -161,6 +161,40 @@ Remove the first element (everything before /Window) before using the result in 
 
 Test your UI flow to confirm that your selector works correctly.
 
+
+## Enable coordinate-based playback
+
+Coordinate-based playback uses relative screen coordinate offset as a fallback that helps UI flows find target objects that the default Windows UI automation framework is unable to find during playback. 
+
+Here are some of the reasons why the default Windows UI automation framework might not find target objects during playback:
+
+- The legacy application that you're automating might not use  programming technologies that support the Windows UI automation framework.
+- The application or its controls may not have a unique UI automation XPath, name, or IDs. 
+- The application has dynamic controls whose names or IDs could change. 
+- The application has controls that do not have names, IDs, unique identifiers, etc.
+
+>[!TIP]
+>Use the same scale and resolution and also maximize the target application during recording to improve the accuracy of coordinate-based playback.
+
+Follow these steps after you've recorded a UI flow script:
+
+1. Expand the step that launches or attaches the application.
+   
+   This is usually the first step of the recording script.
+1. Select **Show advanced options**.
+1. Find **Use coordinate playback** properties.
+1. Select **Yes** from the list to enable coordinate-based playback.
+
+>[!TIP]
+> You can enable or disable **Use coordinate playback** for each application to apply the setting to all steps performed on that application.  
+
+
+>[!WARNING]
+>With coordinate-based playback, the automation may select controls that are not part of the target application due to a variety of reasons, for example, when the UI of the target applications changes dramatically.
+
+
+
+
 ## Next steps
 
 - Learn how to [run the UI flow](run-ui-flow.md) you just edited.
