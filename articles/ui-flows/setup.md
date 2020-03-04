@@ -102,6 +102,32 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
+## Setup UI flows connections and machine credentials
+
+1. Sign into [Power Automate](https://powerautomate.microsoft.com).
+1. Expand **Data** on the left side of the screen.
+1. Select **Connections**.
+
+   ![A screenshot of the connections tab](media/connections-tab.png)
+
+1. Select New connection.
+
+   ![A screenshot of a connection](media/new-connection.png)
+
+1. Search for *UI flow*, and then select **UI flows (preview).
+
+   ![A screenshot of the search box](media/search-ui-flow.png)
+
+1. Provide the gateway information and device credentials for *each* gateway: 
+
+    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (i.e. “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+    - **Password**: Your account’s password.
+    - **Choose a gateway**: Select one of the gateways you want to configure.
+
+      ![A screenshot that shows where to enter the credentials for the connection](media/credentials-screen.png)
+
+1. Select **Create**.
+
 ## Install Selenium IDE to automate Web applications
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
