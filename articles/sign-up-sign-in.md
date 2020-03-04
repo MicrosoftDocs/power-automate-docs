@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -32,9 +32,9 @@ Starting with Power Automate, as an individual, is easy! Before you can create a
 ## Sign up free
 If you haven't used other online Microsoft products, you'll need to sign up.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign up free** in the upper-right corner.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Try free** in the upper-right corner.
 2. Enter your email address.
-3. Click or tap the right arrow.
+3. Select the right arrow.
 
     ![Sign-up link](./media/sign-up-sign-in/signup.png)
 
