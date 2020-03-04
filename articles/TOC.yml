@@ -92,6 +92,8 @@
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
+  - name: Upgrade UI flows from previous releases
+    href: ./ui-flows/upgrade.md
   - name: Set up UI flows
     href: ./ui-flows/setup.md
   - name: Create and test desktop UI flows
@@ -109,14 +111,10 @@
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
     href: ./ui-flows/inputs-outputs-web.md
-  - name: Run UI flows
+  - name: Run attended and unattended UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Update UI flows from preview
-    href: ./ui-flows/upgrade.md
-  - name: Compare unattended and attended UI flows
-    href: ./ui-flows/unattended-attended-comparison.md
 - name: Solutions
   items:
   - name: Overview

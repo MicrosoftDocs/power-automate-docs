@@ -53,14 +53,11 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-UI flows (preview) is available in English.
-
 The following are not supported:
 
 -   Desktop UI Flows
 
     -   Multiple monitors
-    -   Virtual machines
     -   Double click, mouse hover, touch/pen input
     -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
 
@@ -199,8 +196,9 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 - The latest versions of each components are required to record, test, or run UI flows.
 
 
-## Next steps
+## Learn more
 
+- [Upgrade your UI flows](upgrade.md) from previous releases
 - Learn to [create desktop UI flows](create-desktop.md).
 - Learn to [create Web UI flows](create-web.md).
 - Learn how to run [UI flows](run-ui-flow.md).

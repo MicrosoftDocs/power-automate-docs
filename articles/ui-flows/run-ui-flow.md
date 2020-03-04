@@ -1,6 +1,6 @@
 ---
 title: Run UI flows from other flows | Microsoft Docs
-description: Run UI flows from other flows 
+description: Run UI flows from other flows in attended or unattended mode.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run UI flows
+# Run attended and unattended UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -105,6 +105,31 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
+
+## Choose unattended and attended
+
+When you create UI flows, you can configure them to run either in **attended** or **unattended** mode. Unattended mode is best for aplications that do not need to be supervised by a human.
+
+When running flows unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
+
+When you add a UI flow to a flow, you choose whether you want your UI flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+
+## Attended mode
+
+1. UI flows expects an unlocked user session on target devices.
+1. The target session must use the same user credentials you used in the gateway connection for that UI flow.
+
+1. When an attended UI flow run starts on the target machine we recommend that nobody interacts with your device until the run finishes.
+
+## Unattended mode
+
+1. UI flows creates, manages and then releases the user sessions on the target devices.
+
+1. Unattended UI flows runs will run on devices, even if the screen is locked.
+
+1. Windows 10 devices cannot run unattended if there are any active sessions on the device (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or inactive user session on the target device*.
+
+1. On Windows Server, if you have a locked session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive user session on the target device*.
 
 
 ## Schedule multiple UI flows on the same device
