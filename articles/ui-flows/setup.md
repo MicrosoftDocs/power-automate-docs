@@ -53,6 +53,8 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
+The latest versions of each components are required to record, test, or run UI flows.
+
 The following are not supported:
 
 -   Desktop UI Flows
@@ -191,10 +193,6 @@ Danish	|	Italian	|	Romanian	|	Vietnamese
 Dutch		|Japanese	|	Russian	
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
-
-## Limitations
-- The latest versions of each components are required to record, test, or run UI flows.
-
 
 ## Learn more
 
