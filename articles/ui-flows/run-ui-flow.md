@@ -120,7 +120,7 @@ You can schedule multiple UI flows to run on one or more devices. If more than o
 >[!NOTE]
 >These orchestration rules apply to both UI flows that are scheduled by the same user or by different users on the same device.
 
-[!IMPORTANT]
+>[!IMPORTANT]
 >If there too many UI flows in the execution queue a timeout might occur. UI
 >flow runs will currently fail if they don’t run within 30 minutes after being triggered.
 
