@@ -108,23 +108,23 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections**.
 
-   ![A screenshot of the connections tab](media/connections-tab.png)
+   ![A screenshot of the connections tab](../media/ui-flows-setup/connections-tab.png)
 
 1. Select New connection.
 
-   ![A screenshot of a connection](media/new-connection.png)
+   ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
 
 1. Search for *UI flow*, and then select **UI flows (preview).
 
-   ![A screenshot of the search box](media/search-ui-flow.png)
+   ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
 
 1. Provide the gateway information and device credentials for *each* gateway: 
 
-    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (i.e. “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
     - **Password**: Your account’s password.
     - **Choose a gateway**: Select one of the gateways you want to configure.
 
-      ![A screenshot that shows where to enter the credentials for the connection](media/credentials-screen.png)
+      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
 

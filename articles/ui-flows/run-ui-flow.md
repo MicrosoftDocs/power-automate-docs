@@ -151,7 +151,7 @@ The UI flows app is the software that you install on your local machine that man
 
 In the gateway list and gateway details pages you see the current UI flows app status for each device.
 
-![A screenshot that shows the list of gateways](media/gateway-list.png)
+![A screenshot that shows the list of gateways](media/run-ui-flow/gateway-list.png)
 
 Your UI flows app can be in on of the following states:
 
