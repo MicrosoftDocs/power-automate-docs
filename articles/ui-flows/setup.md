@@ -83,8 +83,8 @@ Follow these steps to install the UI flows app:
 1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
 
-> [!TIP]
-> If you want to change the data collection setting, re-install UI flows and change the setting.
+> [!WARNING]
+> You must uninstall the UI flows app, and then reinstall it if you need to change the data collection settings. UI flows will no longer work if you change the data collection settings without uninstalling the UI flows app first.
 
 ## Activate the UI flows browser extension 
 
