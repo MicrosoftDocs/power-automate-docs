@@ -58,7 +58,7 @@ Follow these steps to create a simple Web UI flow:
 
 1. In Selenium IDE, select the red **REC** button in the top right side of the screen to launch the recorder.
 
-   The the URL you chose in the previous step opens.
+   The URL you chose in the previous step opens.
 
    ![Select Rec](../media/create-web-ui-flow/select-rec.png "Select Rec")
 
@@ -92,7 +92,7 @@ Now that you've created a Web UI flow, use it in your other flows.
 
 **UI flows no longer records or plays back Windows applications after installing a new version.**
 
-Confirm you are using the [lastest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
+Confirm you are using the [latest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
 
 **Temporary user profile for playback**
 
@@ -125,3 +125,4 @@ To address this, the user needs to manually edit the script to insert the comman
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
+ 

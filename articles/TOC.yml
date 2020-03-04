@@ -1,3 +1,5 @@
+- name: Power Automate documentation
+  href: /power-automate/
 - name: Overview
   items:
   - name: Sign up
@@ -86,7 +88,7 @@
     href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
-- name: UI flows
+- name: UI flows (preview)
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
@@ -107,20 +109,10 @@
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
     href: ./ui-flows/inputs-outputs-web.md
-  - name: Run attended and unattended UI flows
+  - name: Run UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Update Preview UI flows and connections 
-    href: ./ui-flows/update-ui-flow-ga.md
-  - name: Compare unattended and attended UI flows
-    href: ./ui-flows/unattended-attended-comparison.md
-  - name: Scale UI flows with gateway clusters
-    href: ./ui-flows/scaling-gateway-clusters.md
-  - name: Share an API flow that has a UI flow 
-    href: ./ui-flows/share-api-flow-plu-ui-flow.md
-  - name: Best practices
-    href: ./ui-flows/best-practices.md
 - name: Solutions
   items:
   - name: Overview
