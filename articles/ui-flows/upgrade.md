@@ -1,6 +1,6 @@
 ---
-title:  Update UI flows app and connections from preview to GA | Microsoft Docs
-description:  Update UI flows app and connections from preview to GA.
+title:  Update UI flows app and connections from previous releases | Microsoft Docs
+description:  Update UI flows app and connections from previous releases.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Upgrade UI flows app and connections from preview to GA
+# Upgrade UI flows app and connections from previous releases
 
 We modified several underlying components and added several features to make UI flows generally available. You'll need to update your local UI flows app and your gateway connections to use these new features, including the unattended features.
 
