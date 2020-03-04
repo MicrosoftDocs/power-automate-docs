@@ -113,6 +113,10 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
+  - name: Update UI flows from preview
+    href: ./ui-flows/update.md
+  - name: Compare unattended and attended UI flows
+    href: ./ui-flows/unattend-attended-comparison.md
 - name: Solutions
   items:
   - name: Overview
