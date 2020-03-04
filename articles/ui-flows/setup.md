@@ -84,7 +84,7 @@ Follow these steps to install the UI flows app:
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
 
 > [!TIP]
-> If you want to change the data collection setting, re-install UI flows and change the setting.
+> If you want to change the data collection setting, re-install UI flows and change the setting. Changing the setting without uninstalling first will prevent UI flows from working on the machine. 
 
 ## Activate the UI flows browser extension 
 
