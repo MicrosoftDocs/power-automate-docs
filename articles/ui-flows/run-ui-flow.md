@@ -108,37 +108,32 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 ## Run UI Flows unattended or attended
 
-When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended mode is best for aplications that do not need to be supervised by a human.
+When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for aplications that do not need human supervision.
 
-When running flows unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
+When running unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
 
-To run an unattended UI Flow, you must have the following conditions met:
-1. The target user session is not active (user is logged out of the target machine).
-1. If there are existing sessions they must be disconnected (locked does not count, and UI flows run will fail); said disconnected sessions must NOT be the logged in as the user that the flow connection runs as.
->[!NOTE]
->A "disconnected" session can occur when you login using remote desktop and click the "x", or when you click "switch user" on the console session. 
+When running attended, UI flows will use an existing Windows user session to run.
 
-To run an attended UI Flow, you need to have an active windows session that matches the name of the user configured for your connection. The session must not be locked.
-
-
-Here are some key differences between attended and unattended runs:
-
-### Attended mode
-
-1. UI flows expects an unlocked user session on target devices.
-1. The target session must use the same user credentials you used in the gateway connection for that UI flow.
-
-1. When an attended UI flow run starts on the target machine we recommend that nobody interacts with your device until the run finishes.
+UI flows will choose between attended and unattended modes depending on the machine state (see below).
 
 ### Unattended mode
 
-1. UI flows creates, manages and then releases the user sessions on the target devices.
+To run an unattended UI Flow, the target machine needs to be available with all users signed out. 
+Locked Windows user sessions will prevent UI flows from running.
 
-1. Unattended UI flows runs will run on devices, even if the screen is locked.
+UI flows will preform the following:
+1. UI flows creates, manages and then releases the Windows user session on the target devices.
 
-1. Windows 10 devices cannot run unattended if there are any active sessions on the device (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or inactive user session on the target device*.
+1. Unattended UI flows runs will run on devices with the screen locked.
 
-1. On Windows Server, if you have a locked session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive user session on the target device*.
+1. Windows 10 devices cannot run unattended if there are any active Windows user sessions on the device (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
+
+1. On Windows Server, if you have a locked Windows user session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
+
+### Attended mode
+To run an attended UI Flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
+
+When an attended UI flow run starts on the target machine we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
 
 
 ## Schedule multiple UI flows on the same device
