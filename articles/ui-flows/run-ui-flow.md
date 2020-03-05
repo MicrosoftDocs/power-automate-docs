@@ -106,22 +106,31 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
-## Choose unattended and attended
+## Run UI Flows unattended or attended
 
-When you create UI flows, you can configure them to run either in **attended** or **unattended** mode. Unattended mode is best for aplications that do not need to be supervised by a human.
+When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended mode is best for aplications that do not need to be supervised by a human.
 
 When running flows unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
 
-When you add a UI flow to a flow, you choose whether you want your UI flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+To run an unattended UI Flow, you must have the following conditions met:
+1. The target user session is not active (user is logged out of the target machine).
+1. If there are existing sessions they must be disconnected (locked does not count, and UI flows run will fail); said disconnected sessions must NOT be the logged in as the user that the flow connection runs as.
+>[!NOTE]
+>A "disconnected" session can occur when you login using remote desktop and click the "x", or when you click "switch user" on the console session. 
 
-## Attended mode
+To run an attended UI Flow, you need to have an active windows session that matches the name of the user configured for your connection. The session must not be locked.
+
+
+Here are some key differences between attended and unattended runs:
+
+### Attended mode
 
 1. UI flows expects an unlocked user session on target devices.
 1. The target session must use the same user credentials you used in the gateway connection for that UI flow.
 
 1. When an attended UI flow run starts on the target machine we recommend that nobody interacts with your device until the run finishes.
 
-## Unattended mode
+### Unattended mode
 
 1. UI flows creates, manages and then releases the user sessions on the target devices.
 
