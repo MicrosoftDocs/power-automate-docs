@@ -124,11 +124,6 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **Save and exit** to save your UI flow.
 
-## Next steps
-
-- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
-
-- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
 ## Known issues and solutions
 
@@ -202,3 +197,9 @@ The following actions will not be recorded:
 - Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
 - Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
 - Some elements may not work correctly in UI flows (preview) for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
+
+## Next steps
+
+- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+
+- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.

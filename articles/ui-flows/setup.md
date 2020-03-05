@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -53,14 +53,13 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-UI flows (preview) is available in English.
+You must have the latest versions of each components to record, test, or run UI flows.
 
 The following are not supported:
 
 -   Desktop UI Flows
 
     -   Multiple monitors
-    -   Virtual machines
     -   Double click, mouse hover, touch/pen input
     -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
 
@@ -86,8 +85,8 @@ Follow these steps to install the UI flows app:
 1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
 
-> [!TIP]
-> If you want to change the data collection setting, re-install UI flows and change the setting.
+> [!WARNING]
+> You must uninstall the UI flows app, and then reinstall it if you need to change the data collection settings. UI flows will no longer work if you change the data collection settings without uninstalling the UI flows app first.
 
 ## Activate the UI flows browser extension 
 
@@ -101,6 +100,7 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 > - You must use Microsoft Edge or Google Chrome.
 > - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
 
 ## Install Selenium IDE to automate Web applications
 
@@ -116,18 +116,38 @@ Follow these steps to install Selenium IDE:
 
 ## Install the on-premises data gateway
 
-You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows).
+You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
 
 [Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
 
-## Uninstall UI flows
+## Setup UI flows connections and machine credentials
 
-1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows (preview)**, and then select it.
-1. Select **Uninstall**.
+1. Sign into [Power Automate](https://powerautomate.microsoft.com).
+1. Expand **Data** on the left side of the screen.
+1. Select **Connections**.
+
+   ![A screenshot of the connections tab](../media/ui-flows-setup/connections-tab.png)
+
+1. Select New connection.
+
+   ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
+
+1. Search for *UI flow*, and then select **UI flows (preview).
+
+   ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
+
+1. Provide the gateway information and device credentials for *each* gateway: 
+
+    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+    - **Password**: Your account’s password.
+    - **Choose a gateway**: Select one of the gateways you want to configure.
+
+      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
+
+1. Select **Create**.
 
 ## Supported keyboard layouts
 
@@ -156,7 +176,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 Here are the languages that UI flows supports, in additional to English:
 
 |||||
-----|-----|-----|-----
+----|-----|-----|--------
 Basque	| French	| Latvian	| Slovak
 Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
 Catalan	|	German		|Malay	|	Spanish
@@ -169,12 +189,15 @@ Dutch		|Japanese	|	Russian
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
 
-## Limitations
-- The latest versions of each components are required to record, test, or run UI flows.
+## Uninstall UI flows
 
+1. Open the **start** menu > **Settings** > **Apps**.
+1. Search for **UI flows (preview)**, and then select it.
+1. Select **Uninstall**.
 
-## Next steps
+## Learn more
 
+- [Upgrade your UI flows](upgrade.md) from previous releases
 - Learn to [create desktop UI flows](create-desktop.md).
 - Learn to [create Web UI flows](create-web.md).
 - Learn how to run [UI flows](run-ui-flow.md).
