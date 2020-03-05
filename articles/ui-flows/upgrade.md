@@ -28,7 +28,7 @@ We modified several underlying components and added several features in the Febr
 
 ### What does it mean for my existing UI flows?
 
-No action is required if you simply want to keep using your existing UI flows. However, we recommended that you upgrade and use the latest version of the UI flows.
+No action is required until you either update the UI flows app or the connection to the Gateway. Updating one requires updating the other.
 
 ### How do I upgrade?
 
