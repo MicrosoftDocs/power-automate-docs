@@ -114,7 +114,7 @@ Follow these steps to install Selenium IDE:
 
 ## Install the on-premises data gateway
 
-You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows).
+You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
@@ -174,7 +174,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 Here are the languages that UI flows supports, in additional to English:
 
 |||||
-----|-----|-----|-----
+----|-----|-----|--------
 Basque	| French	| Latvian	| Slovak
 Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
 Catalan	|	German		|Malay	|	Spanish
