@@ -53,6 +53,8 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
+The latest versions of each components are required to record, test, or run UI flows.
+
 The following are not supported:
 
 -   Desktop UI Flows
@@ -192,10 +194,6 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 1. Open the **start** menu > **Settings** > **Apps**.
 1. Search for **UI flows (preview)**, and then select it.
 1. Select **Uninstall**.
-
-## Limitations
-- The latest version of each component is required to record, test, or run UI flows.
-
 
 ## Learn more
 
