@@ -53,7 +53,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-The latest versions of each components are required to record, test, or run UI flows.
+You must have the latest versions of each components to record, test, or run UI flows.
 
 The following are not supported:
 

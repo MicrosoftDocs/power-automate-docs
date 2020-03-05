@@ -112,17 +112,16 @@ When you create UI flows, you run them either in **attended** or **unattended** 
 
 When running unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
 
-When running attended, UI flows will use an existing Windows user session to run.
+When running attended, UI flows will use an existing Windows user session.
 
-UI flows will choose between attended and unattended modes depending on the machine state (see below).
+UI flows will choose between attended and unattended modes depending on the machine state, as described later in this article.
 
 ### Unattended mode
 
-To run an unattended UI Flow, the target machine needs to be available with all users signed out. 
-Locked Windows user sessions will prevent UI flows from running.
+To run unattended UI flows, the target machine needs to be available with all users signed out. Locked Windows user sessions prevent UI flows from running.
 
-UI flows will preform the following:
-1. UI flows creates, manages and then releases the Windows user session on the target devices.
+UI flows preform the following:
+1. UI flows creates, manages, and then releases the Windows user session on the target devices.
 
 1. Unattended UI flows runs will run on devices with the screen locked.
 
@@ -131,7 +130,7 @@ UI flows will preform the following:
 1. On Windows Server, if you have a locked Windows user session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
 
 ### Attended mode
-To run an attended UI Flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
+To run an attended UI flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
 
 When an attended UI flow run starts on the target machine we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
 
