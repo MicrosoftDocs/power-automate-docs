@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -85,8 +85,8 @@ Follow these steps to install the UI flows app:
 1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
 
-> [!TIP]
-> If you want to change the data collection setting, re-install UI flows and change the setting. Changing the setting without uninstalling first will prevent UI flows from working on the machine. 
+> [!WARNING]
+> You must uninstall the UI flows app, and then reinstall it if you need to change the data collection settings. UI flows will no longer work if you change the data collection settings without uninstalling the UI flows app first.
 
 ## Activate the UI flows browser extension 
 
@@ -100,6 +100,28 @@ Once the UI flows installer completes, you will be prompted by your browser to a
 > - You must use Microsoft Edge or Google Chrome.
 > - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+
+## Install Selenium IDE to automate Web applications
+
+The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
+
+With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Common Data Service.
+
+Follow these steps to install Selenium IDE:
+
+1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
+
+1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
+
+## Install the on-premises data gateway
+
+You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
+
+>[!TIP]
+>The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
+
+[Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
 
 ## Setup UI flows connections and machine credentials
 
@@ -126,33 +148,6 @@ Once the UI flows installer completes, you will be prompted by your browser to a
       ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
-
-## Install Selenium IDE to automate Web applications
-
-The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
-
-With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Common Data Service.
-
-Follow these steps to install Selenium IDE:
-
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
-
-1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
-
-## Install the on-premises data gateway
-
-You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows).
-
->[!TIP]
->The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
-
-[Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
-
-## Uninstall UI flows
-
-1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows (preview)**, and then select it.
-1. Select **Uninstall**.
 
 ## Supported keyboard layouts
 
@@ -181,7 +176,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 Here are the languages that UI flows supports, in additional to English:
 
 |||||
-----|-----|-----|-----
+----|-----|-----|--------
 Basque	| French	| Latvian	| Slovak
 Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
 Catalan	|	German		|Malay	|	Spanish
@@ -193,6 +188,12 @@ Danish	|	Italian	|	Romanian	|	Vietnamese
 Dutch		|Japanese	|	Russian	
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
+
+## Uninstall UI flows
+
+1. Open the **start** menu > **Settings** > **Apps**.
+1. Search for **UI flows (preview)**, and then select it.
+1. Select **Uninstall**.
 
 ## Learn more
 
