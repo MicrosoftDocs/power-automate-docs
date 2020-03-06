@@ -21,7 +21,7 @@ search.audienceType:
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as *Flow GCC*.
 
-The Power Automate US Government Service Description serves as an overlay to the general Power Automate Service Description. It defines the unique commitments and differences compared to the general Power Automate offerings that have been available to our customers since October, 2016.
+The Power Automate US Government Service Description serves as an overlay to the general Power Automate Service Description. It defines the unique commitments and differences compared to the general Power Automate offerings that have been available to our customers since October 2016.
 
 ## About Power Automate US Government environments and plans
 
@@ -41,11 +41,11 @@ In addition to the features and capabilities of Power Automate, organizations th
 
 Beginning September 2019, eligible customers can choose to deploy Power Automate US Government to the **GCC High** environment, which enables single sign-on and seamless integration with Microsoft Office 365 GCC High deployments. 
 
-Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Automate US Government GCC High deployment option. This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Automate US Government GCC High deployment option. This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
 ## Customer eligibility
 
-Power Automate US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of Power Automate US Government is appropriate to meet these requirements, subject to validation of eligibility. Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
+Power Automate US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities, which handle data that is subject to government regulations and requirements and where use of Power Automate US Government is appropriate to meet these requirements, subject to validation of eligibility. Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
 
 Entities with questions about eligibility for Power Automate US Government should consult their account team. Microsoft re-validates eligibility when it renews customer contracts for Power Automate US Government.
 
@@ -92,7 +92,7 @@ Power Automate US Government runs in datacenters physically located in the Unite
 
 Access to Power Automate US Government customer content by Microsoft administrators is restricted to personnel who are US citizens. These personnel undergo background investigations in accordance with relevant government standards.
 
-Power Automate support and service engineering staff do not have standing access to customer content hosted in Power Automate US Government. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
+Power Automate support and service engineering staff do not have standing access to customer content hosted in Power Automate US Government. Any staff who requests temporary permission elevation, which would grant access to customer content must first have passed the following background checks.
 
 |Microsoft Personnel Screening and Background Checks <sup>1</sup>| Description|
 |---------------------------------------------------------------|-----------------------------------|
@@ -119,9 +119,9 @@ Power Automate US Government is designed to support the Federal Risk and Authori
 
 As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
-Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Please visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
+Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
-Microsoft designed this platform and its operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. Microsoft anticipates that the US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft Office 365 GCC High to use the Power Automate US Government GCC High deployment option, which enables and requires customers to leverage Azure AD Government for customer identities, in contrast to GCC which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
+Microsoft designed this platform and its operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. Microsoft anticipates that the US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft Office 365 GCC High to use the Power Automate US Government GCC High deployment option, which enables and requires customers to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
 
 ## Power Automate US Government and other Microsoft services
 
@@ -206,13 +206,13 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 Azure is distributed among multiple clouds. By default, tenants are allowed to
 open firewall rules to a cloud-specific instance, but cross-cloud networking is
 different and requires opening specific firewall rules to communicate between
-services. If you are a Power Automate customer and you have existing SQL instances in azure public cloud which you need to access, you must open specific firewall ports in SQL to the Azure Government Cloud IP space for the following
+services. If you are a Power Automate customer and you have existing SQL instances in azure public cloud, which you need to access, you must open specific firewall ports in SQL to the Azure Government Cloud IP space for the following
 datacenters:
 
 - USGov Virginia
 - USGov Texas
 
-Please refer to the [Azure IP Ranges and Service Tags – US Government
+Refer to the [Azure IP Ranges and Service Tags – US Government
 Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document,
 focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required for your end-users to have access to the service URLs.
 
