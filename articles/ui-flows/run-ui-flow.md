@@ -137,13 +137,14 @@ When an attended UI flow run starts on the target machine we recommend avoiding 
 
 ## Schedule multiple UI flows on the same device
 
-You can schedule multiple UI flows to run on one or more devices. If more than one UI flow runs trigger on the same device, the UI flows backend orchestrates the runs by following these rules:
+You can schedule multiple UI flows to run on one or more devices. If more than one UI flow is triggered to run on the same device, Power Automate will follow these rules:
 
-1.  Sends the first UI flow to the target device.
+1.  The first UI flow will run on the target device.
 
-1.  Queues other UI flows and displays them as **waiting** in the UI flows or gateway details page.
+1.  Additional UI flows will wait and retry every 30 seconds. Those will have the **waiting** status in the UI flows or gateway details page.
 
-1.  Sends the next UI flow when each run completes.
+1.  Upon completion of the current UI flow execution, the first retry for one of the additional UI flows will allow it to be executed.
+ 
 
 >[!NOTE]
 >These orchestration rules apply to both UI flows that are scheduled by the same user or by different users on the same device.
@@ -185,7 +186,7 @@ Your UI flows app can be in on of the following states:
 
 1. **Available**: The UI flows app is online and ready to run UI flows.
 
-1. **Running**: One or more UI flows are running on the machine. Any other UI flows that the backend sends to the target device will queue and wait its slot to run.
+1. **Running**: One or more UI flows are running on the machine. Any other UI flows that Power Automate assigns to the target device will queue and wait its slot to run.
 
 1. **Fix connection to gateway**: The UI flow cloud service can’t reach the target device, likely because there is a problem with the gateway connection. To resolve this issue, go to the connection and confirm that the credentials
     you use are correct.
