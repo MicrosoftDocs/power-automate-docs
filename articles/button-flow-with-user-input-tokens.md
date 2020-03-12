@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Introducing button flows with user input
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Create a button flow to run routine tasks by simply tapping a button. Customize your flow by allowing the user to provide specific details that will be used when the flow runs. This topic walks you through creating a button flow that takes input from the user and then running the button flow, highlighting how to provide the user input.
 
 You can create a button flow in the Power Automate website or the mobile app for Power Automate. For this topic, you'll use the website.

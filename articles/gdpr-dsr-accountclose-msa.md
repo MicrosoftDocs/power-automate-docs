@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Account Close Requests for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When users decide to close their Microsoft Account (MSA), the user's underlying data is also deleted.
 

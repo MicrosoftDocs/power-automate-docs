@@ -18,7 +18,7 @@ ms.author: deonhe
 ---
 
 # Manage SharePoint page approvals with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
 

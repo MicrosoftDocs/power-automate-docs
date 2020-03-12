@@ -23,7 +23,7 @@ search.audienceType:
 ---
 
 # Edit a solution-aware flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Follow these steps to edit a solution-aware flow.
 

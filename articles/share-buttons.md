@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Share button flows in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 In the Power Automate mobile app, you can share [button flows](introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can run your button, the same way they run their own buttons. You can also [share a link](share-buttons.md#re-share-a-button) to buttons that another person shared with you. You can [stop sharing](share-buttons.md#stop-sharing-a-button) your buttons at any time.
 
 > The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.

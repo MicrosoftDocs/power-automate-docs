@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Data loss prevention (DLP) policies
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This document introduces you to data loss prevention policies, which help protect your organizational data from being shared with a list of connectors that you define.
 

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Use data operations with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 In this walkthrough, you learn about some of the Power Automate’s popular data operations, such as compose, join, select, filter array, create table, and parse JSON that are available to manipulate data when you create flows.
 
 ## Prerequisites

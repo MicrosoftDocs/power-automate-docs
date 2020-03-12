@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Submit a template to the Power Automate gallery
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Submit a flow template to the gallery of templates for Power Automate. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow.
 

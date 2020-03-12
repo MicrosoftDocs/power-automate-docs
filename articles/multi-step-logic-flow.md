@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Add multiple actions and advanced options to a flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
 
 ## Prerequisites
