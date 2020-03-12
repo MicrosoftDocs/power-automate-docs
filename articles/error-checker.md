@@ -23,7 +23,7 @@ search.audienceType:
 ---
 
 # The Power Automate checker
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The Power Automate checker promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights into questions like "which areas of my flow's implementation pose a performance or reliability risk?"
 

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Monitor activity in Power Automate from your phone
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 View a summary of how many times each flow succeeded or failed today, yesterday, and previous days. Explore details about each run, such as when it ran, how long each step took and, if it failed, why.
 
 **Prerequisites**

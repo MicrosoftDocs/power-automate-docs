@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Limits and configuration in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 This topic contains information about the current limits and configuration details for flows.
 
 ## Request limits

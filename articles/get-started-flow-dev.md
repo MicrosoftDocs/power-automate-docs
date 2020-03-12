@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Start to build with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Here are some of the ways you can extend your application with Power Automate:
 

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Trigger a flow based on email properties
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Use the **When a new email arrives** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide:
 
 | Property | When to use |

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create parallel approval workflows with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 In a parallel approval workflow, multiple persons are required to approve items such as invoices, purchase orders, vacation requests, etc. Each person's approval is independent of all other approvers.
 

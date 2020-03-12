@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Troubleshooting a flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ## Repair tips in email
 

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Manage approval requests in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Power Automate makes it easy to automate [approval workflow processes](modern-approvals.md). In this walkthrough, you learn how to view, approve, and reject approval requests sent from Power Automate.
 
 ## View pending approval requests

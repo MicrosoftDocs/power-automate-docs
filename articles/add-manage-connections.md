@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Manage connections in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 If you create a connection in Power Automate, you can easily access your data while building a flow. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one product, the connection shows up in the other.
 
 For example, you can use a connection to perform these tasks:
