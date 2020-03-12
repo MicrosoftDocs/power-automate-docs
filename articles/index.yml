@@ -104,11 +104,11 @@ landingContent:
             url: /power-automate/import-flow-solution
 
   # Card
-  - title: Advanced features
+  - title: Do more with your flows
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Use AI Builder
+          - text: Use AI Builder for AI-infused flows
             url: /power-automate/use-ai-builder
           - text: Use adaptive cards
             url: /power-automate/overview-adaptive-cards

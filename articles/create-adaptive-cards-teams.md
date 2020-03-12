@@ -22,7 +22,7 @@ ms.author: deonhe
 
 
 # Use adaptive cards in Microsoft Teams
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 You can create a flow that posts [adaptive cards](https://adaptivecards.io) to a Microsoft Teams channel. With adaptive cards, you can use rich formatting to make your posts clearer, interactive, and engaging. Adaptive cards can contain components like images, graphs, richly formatted text, and more.
 

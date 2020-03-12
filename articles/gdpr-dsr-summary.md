@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Requests for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This article prepares you and your organization for the European Union's General Data Protection Regulation (GDPR). This article not only describes what Microsoft is doing to prepare for the GDPR but also shares examples of steps you can take today to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service.
 

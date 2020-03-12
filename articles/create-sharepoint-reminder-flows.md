@@ -18,7 +18,7 @@ ms.author: deonhe
 ---
 
 # SharePoint remind me
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 SharePoint lists and libraries allowed you to define custom metadata columns to track dates. With Power Automate's integration with SharePoint, you can easily create reminder flows, based on DateTime columns in SharePoint. With reminder flows, you receive a personal email alert a predetermined number of days in advance of a date on any document or item in SharePoint.
 

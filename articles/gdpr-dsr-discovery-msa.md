@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Respond to GDPR Data Subject Discovery Requests 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The first step in responding to a DSR request is to find the personal data that’s the subject of the request.
 Here’s a summary of the Power Automate resources that contain personal data for a user who authenticates with their Microsoft Account (MSA).

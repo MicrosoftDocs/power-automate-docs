@@ -18,7 +18,7 @@ ms.author: deonhe
 ---
 
 # Power Automate in Teams
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ### Prerequisites
 

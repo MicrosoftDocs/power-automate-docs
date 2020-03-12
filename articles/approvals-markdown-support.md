@@ -23,7 +23,7 @@ search.audienceType:
 ---
 
 # Use Markdown in Power Automate approval requests
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
 
