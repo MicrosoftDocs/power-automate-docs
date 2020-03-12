@@ -1,6 +1,6 @@
 ---
 title: Run UI flows from other flows | Microsoft Docs
-description: Run UI flows from other flows 
+description: Run UI flows from other flows in attended or unattended mode.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/03/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run UI flows
+# Run attended and unattended UI flows
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -67,10 +67,9 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
    You'll have to do this once per device:
 
-    - **Gateway**: Select the gateway that you created earlier or using "+ New gateway" create new gateway.   
-    - **Domain and Username**: Domain and user name will be populated with device’s work or school account.
+    - **Gateway**: Select the gateway that you created earlier or use **New gateway** to create a new gateway.   
+    - **Domain and Username**: Displays the work or school account from the device.
     - **Password**: Provide your work or school account’s password.
-   
 
       ![Connection settings](../media/run-ui-flow/uiflow-connection-card.png "Connection settings")
 
@@ -105,11 +104,99 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
-## Limitations and known issues
+## Run UI Flows unattended or attended
 
-- Gateway clusters are not supported.
-- Since non-US 
-    (QWERTY) keyboards are not supported in this realease, playback of an input step where the key sequence was recorded from a non-US (QWERTY) keyboard will result in key strokes in US (QWERTY).
+When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for aplications that do not need human supervision.
+
+When running unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
+
+When running attended, UI flows will use an existing Windows user session.
+
+UI flows will choose between attended and unattended modes depending on the machine state, as described later in this article.
+
+### Unattended mode
+
+To run unattended UI flows, the target machine needs to be available with all users signed out. Locked Windows user sessions prevent UI flows from running.
+
+UI flows preform the following:
+1. UI flows creates, manages, and then releases the Windows user session on the target devices.
+
+1. Unattended UI flows runs will run on devices with the screen locked.
+
+1. Windows 10 devices cannot run unattended if there are any active Windows user sessions on the device (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
+
+1. On Windows Server, if you have a locked Windows user session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
+
+### Attended mode
+To run an attended UI flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
+
+When an attended UI flow run starts on the target machine we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
+
+
+## Schedule multiple UI flows on the same device
+
+You can schedule multiple UI flows to run on one or more devices. If more than one UI flow runs trigger on the same device, the UI flows backend orchestrates the runs by following these rules:
+
+1.  Sends the first UI flow to the target device.
+
+1.  Queues other UI flows and displays them as **waiting** in the UI flows or gateway details page.
+
+1.  Sends the next UI flow when each run completes.
+
+>[!NOTE]
+>These orchestration rules apply to both UI flows that are scheduled by the same user or by different users on the same device.
+
+>[!IMPORTANT]
+>If there too many UI flows in the execution queue a timeout might occur. UI
+>flow runs will currently fail if they don’t run within 30 minutes after being triggered.
+
+## Rerun failed UI flows
+
+If a UI flow run fails, you can try running it either after correcting the cause of that failure or in certain cases to troubleshoot the failed run.
+
+1. Go to the UI flows details page and identify the failed run you want to rerun.
+
+1. Select the parent flow of the run in which you are interested.
+
+   This leads you to the parent flow run where the UI flow failed.
+
+1. Select resubmit button from the action menu.
+
+## Troubleshoot failures
+
+### Failed UI flows
+
+1. If your unattended UI flow fails with **cannot create new session** error message, follow these steps to resolve the issue:
+
+    1.  On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
+    1.  On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your machine, otherwise UI flows won’t be able to create new sessions to run new UI flows.
+
+### UI flows app status
+
+The UI flows app is the software that you install on your local machine that manages and executes UI Flow runs. It enables our UI Flow cloud services to communicate and orchestrate UI Flows on your machine.
+
+In the gateway list and gateway details pages you see the current UI flows app status for each device.
+
+![A screenshot that shows the list of gateways](../media/run-ui-flow/gateway-list.png)
+
+Your UI flows app can be in on of the following states:
+
+1. **Available**: The UI flows app is online and ready to run UI flows.
+
+1. **Running**: One or more UI flows are running on the machine. Any other UI flows that the backend sends to the target device will queue and wait its slot to run.
+
+1. **Fix connection to gateway**: The UI flow cloud service can’t reach the target device, likely because there is a problem with the gateway connection. To resolve this issue, go to the connection and confirm that the credentials
+    you use are correct.
+
+1. **Unknown**: This status means that the backend cannot reach the UI flows app.
+
+    1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot)
+
+    1. If the **gateway status** is **online**, try the following actions:
+
+        1. Confirm the UI flows app and services are running on your device.
+
+        1. Restart the UI flow service on your device.
 
 ## Learn more
 
