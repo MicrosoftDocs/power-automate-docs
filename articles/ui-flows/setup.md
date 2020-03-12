@@ -42,7 +42,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
-- A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
+- A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
 
 - The [Microsoft Edge](https://www.microsoftedgeinsider.com)
     or Google Chrome browser.
@@ -56,6 +56,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 You must have the latest versions of each components to record, test, or run UI flows.
 
 The following are not supported:
+- Windows 10 Home installations are not supported.
 
 -   Desktop UI Flows
 
