@@ -67,13 +67,11 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
    You'll have to do this once per device:
 
-    - **Connection name**: Choose a name for the device to Flow connection. It can be different from the gateway name.
-    - **Username**: Provide your device’s work or school account.
-    - **Authentication type**: Select Windows.
-    - **Password**: Your work or school account’s password.
-    - **Gateway**: Select the gateway that you created during the installation.
+    - **Gateway**: Select the gateway that you created earlier or use **New gateway** to create a new gateway.   
+    - **Domain and Username**: Displays the work or school account from the device.
+    - **Password**: Provide your work or school account’s password.
 
-      ![Connection settings](../media/run-ui-flow/connection-settings.png "Connection settings")
+      ![Connection settings](../media/run-ui-flow/uiflow-connection-card.png "Connection settings")
 
       >[!TIP]
       >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop (preview)** card, and then select the connection you want to use from **My connections**.
