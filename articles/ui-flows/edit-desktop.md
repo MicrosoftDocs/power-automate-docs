@@ -162,23 +162,23 @@ Remove the first element (everything before /Window) before using the result in 
 
 Test your UI flow to confirm that your selector works correctly.
 
-## Advanced editor for UI flows
+## Use advanced controls
 
-You can incorporate advanced controls within your UI flows. We support **conditions**, **switch cases**, and **terminate** actions within UI flows.
+You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your UI flows.
 
 You can perform these advanced operations by performing the following steps on an existing UI flow.
 
-1. Select the UI flow you have created > **More commands** (...) > **Edit**
+1. Select the UI flow you have created > **More commands** (...) > **Edit**.
 
-1. Click on **Add an action** on the UI flow step you want to add logic to
+1. Select **+** > **Add an action** on the down arrow of UI flow step to which you want to add logic.
 
    ![Add an action](../media/edit-desktop/add-action.png)
 
-1. Select from one of the different control actions available under **Built-in**
+1. Select **Built-in**, and then select one of the control actions available.
 
    ![Built-in](../media/edit-desktop/select-built-in.png)
 
-1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, outputs generated from your previous UI flow steps will also be available as content to be evaluated
+1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, you can use any output that's generated from the previous UI flow steps.
 
    ![Condition card](../media/edit-desktop/condition-card.png)
 
