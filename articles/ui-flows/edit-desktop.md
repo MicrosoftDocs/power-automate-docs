@@ -50,6 +50,7 @@ Advanced parameters let you change:
 -  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
+
 ## Add a recording
 
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
@@ -160,6 +161,26 @@ Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-wina
 Remove the first element (everything before /Window) before using the result in **elementXPath** of the selector.
 
 Test your UI flow to confirm that your selector works correctly.
+
+## Use advanced controls
+
+You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your UI flows.
+
+You can perform these advanced operations by performing the following steps on an existing UI flow.
+
+1. Select the UI flow you have created > **More commands** (...) > **Edit**.
+
+1. Select **+** > **Add an action** on the down arrow of UI flow step to which you want to add logic.
+
+   ![Add an action](../media/edit-desktop/add-action.png)
+
+1. Select **Built-in**, and then select one of the control actions available.
+
+   ![Built-in](../media/edit-desktop/select-built-in.png)
+
+1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, you can use any output that's generated from the previous UI flow steps.
+
+   ![Condition card](../media/edit-desktop/condition-card.png)
 
 
 ## Enable coordinate-based playback
