@@ -20,7 +20,7 @@ search.audienceType:
   - enduser
 ---
 # Configure workflow stages and steps
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 When you design workflows you have the option to contain the logic you want to perform in stages and steps.  
   

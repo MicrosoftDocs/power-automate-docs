@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Using environments within Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ## Benefits
 

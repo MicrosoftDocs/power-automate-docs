@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Get started with button trigger tokens
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## What are button trigger tokens?
 Button trigger tokens are data points that are known and available to the device on which a [button flow](introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.  
 

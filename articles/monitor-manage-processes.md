@@ -23,7 +23,7 @@ search.audienceType:
   - enduser
 ---
 # Monitor and manage workflow processes
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems.  
   

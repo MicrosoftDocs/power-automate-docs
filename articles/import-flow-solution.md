@@ -23,7 +23,7 @@ search.audienceType:
 ---
 
 # Import a solution
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 > [!TIP]
 > If you want to have your flows start automatically after you import a solution, use Common Data Service (Current Environment) connector in your flow when you create it.

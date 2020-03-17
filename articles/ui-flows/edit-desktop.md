@@ -50,6 +50,7 @@ Advanced parameters let you change:
 -  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
+
 ## Add a recording
 
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
@@ -160,6 +161,66 @@ Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-wina
 Remove the first element (everything before /Window) before using the result in **elementXPath** of the selector.
 
 Test your UI flow to confirm that your selector works correctly.
+
+## Use advanced controls
+
+You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your UI flows.
+
+You can perform these advanced operations by performing the following steps on an existing UI flow.
+
+1. Select the UI flow you have created > **More commands** (...) > **Edit**.
+
+1. Select **+** > **Add an action** on the down arrow of UI flow step to which you want to add logic.
+
+   ![Add an action](../media/edit-desktop/add-action.png)
+
+1. Select **Built-in**, and then select one of the control actions available.
+
+   ![Built-in](../media/edit-desktop/select-built-in.png)
+
+1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, you can use any output that's generated from the previous UI flow steps.
+
+   ![Condition card](../media/edit-desktop/condition-card.png)
+
+
+## Handle error conditions
+
+Unexpected conditions can arise during playback and cause your UI flows to fail. You can use advanced error handling capabilities to create alternate steps when unexpected conditions arise. 
+
+Here are the steps to do so.
+
+1. Sign into [Power Automate](https://powerautomate.microsoft.com) with your school or work account.
+1. Select **My flows** > **UI flows** to display your UI flows.
+1. Select **More commands** (the three vertical dots for the UI flow you want to edit).
+1. Select **Edit**.
+1. Select the down arrow that's located immediately before the UI flow step to which you want to add error handling, and then select **+** (Insert new step).
+   
+   In the following image, we're inserting the new step before the **PostElementText 1** step. This means that if **PostElementText 1** fails, the alternate steps that you define next, run.
+
+      ![Insert new step image](../media/edit-desktop/insert-new-step.png) 
+
+1. Select **Add a parallel branch**.
+
+    ![Image showing add a parallel branch and other options](../media/edit-desktop/add-parallel-branch.png)
+
+1. Select the action that you want to perform in the parallel branch if there's a failure when the UI flow runs.
+
+   You can select **Record app** to do a new recording for the parallel branch or select  **Terminate** from the **Built-in** actions to exit the UI flow exit gracefully if there's a failure.
+
+    ![Image showing the parallel branch options](../media/edit-desktop/add-parallel-branch.png)
+
+   >[!NOTE]
+   >By default, the action that you add in the parallel branch runs only if the previous step fails. You can select **...** on the parallel branch > **Configure run after** to change the default behavior. 
+
+      ![Image showing the options, including configure run after](../media/edit-desktop/configure-run-after.png)
+
+1.  From this screen, you can select the condition on which you want the parallel branch to execute. You can select from one of the four options available.
+
+    ![Image showing the run after options](../media/edit-desktop/run-after-options.png)
+
+    Note: You will not be able to save a UI flow that has both the main branch
+    and parallel branch set to execute on the same condition.
+
 
 
 ## Enable coordinate-based playback

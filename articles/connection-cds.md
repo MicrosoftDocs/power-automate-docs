@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create an automated flow by using Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service database.
 

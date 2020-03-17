@@ -42,7 +42,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
-- A device that runs Windows 10, Windows Server 2016, or Windows Server 2019.
+- A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
 
 - The [Microsoft Edge](https://www.microsoftedgeinsider.com)
     or Google Chrome browser.
@@ -56,6 +56,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 You must have the latest versions of each components to record, test, or run UI flows.
 
 The following are not supported:
+- Windows 10 Home installations are not supported.
 
 -   Desktop UI Flows
 
@@ -84,6 +85,12 @@ Follow these steps to install the UI flows app:
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
+
+### Set data collection options
+
+During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve UI flows**.
+
+![Image showing the data collection options](../media/ui-flows-setup/data-collection-settings.png)
 
 > [!WARNING]
 > You must uninstall the UI flows app, and then reinstall it if you need to change the data collection settings. UI flows will no longer work if you change the data collection settings without uninstalling the UI flows app first.

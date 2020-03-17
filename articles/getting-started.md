@@ -24,7 +24,7 @@ search.audienceType:
 
 # Get started with Power Automate 
 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 <br>
 <iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

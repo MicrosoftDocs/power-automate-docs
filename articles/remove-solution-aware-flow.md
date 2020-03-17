@@ -23,7 +23,7 @@ search.audienceType:
 ---
 
 # Remove a solution-aware flow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 You can either remove a flow from a solution, or delete the flow from an environment entirely.
 

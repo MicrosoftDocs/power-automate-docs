@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 > [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 
