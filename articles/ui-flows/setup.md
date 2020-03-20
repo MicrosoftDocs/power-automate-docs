@@ -44,7 +44,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
 
-- The [Microsoft Edge](https://www.microsoftedgeinsider.com)
+- The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
