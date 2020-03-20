@@ -202,7 +202,7 @@ If a UI flow run fails, you can try running it either after correcting the cause
     1.  On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
     1.  On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your machine, otherwise UI flows won’t be able to create new sessions to run new UI flows.
 
-2.	Known issue: If you are running UI Flows on a computer with a non-English language and see a “Bad gateway” generic error, make sure you have followed the steps to upgrade your Ui Flows  outlined here [Upgrade your UI flows](upgrade.md).
+2.	Known issue: If you are running UI Flows on a computer with a non-English language and see a “502 - Bad request” generic error, make sure you have followed the steps to upgrade your Ui Flows  outlined here [Upgrade your UI flows](upgrade.md).
 
 ### UI flows app status
 
