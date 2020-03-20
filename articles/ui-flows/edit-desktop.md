@@ -41,7 +41,7 @@ You can edit your recording to:
 
 -   Modify the value for actions that support it.
 -   Delete a step.
--   Delete the entire recording.
+-   Delete the recording.
 -   Change the order of actions with drag and drop. Do exercise caution with this
     as it may break the consistency of your recording.
 
