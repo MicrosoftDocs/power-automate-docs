@@ -66,10 +66,9 @@ The following are not supported:
 
 -   Web UI Flows
 
-    -   Right click
+    -   Right click.
     -   User session information (e.g.: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information
-        when required by websites.
+        playback. You will have to edit the script to embed sign in information when required by websites.
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
@@ -83,8 +82,8 @@ The UI flows installer contains all the components needed to record, edit, and t
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
+1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Follow the instructions in the **UI flows setup** installer to complete the installation.
 
 ### Set data collection options
 
