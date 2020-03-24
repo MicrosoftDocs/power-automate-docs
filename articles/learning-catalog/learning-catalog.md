@@ -81,23 +81,9 @@ Find the right online training, in person workshops, and events for your role as
 
     [Create Flows](learning-catalog-functional-consultant.md#create-flows)
 
-    [Administer](learning-catalog-functional-consultant.md#e\administer)
+    [Administer](learning-catalog-functional-consultant.md#\administer)
 
     :::column-end:::
 :::row-end:::
-:::row:::
-    :::column:::
 
-    ### Solution Architects
-
-    Do you design solutions that meet your customers' needs and budgets?
-
-    [Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
-
-    [Get started](learning-catalog-solution-architect.md#get-started)
-
-    [Exam](learning-catalog-solution-architect.md#exam)
-
-    :::column-end:::
-:::row-end:::
 
