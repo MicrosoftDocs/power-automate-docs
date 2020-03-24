@@ -25,11 +25,11 @@ Find the right online training, in person workshops, and events for your role as
         :::column-end:::
     :::column:::
 
-    ### Application Makers
+    ### App Makers
 
     Are you interested in quickly creating custom business apps without writing code? 
 
-    [Application Makers Learning Catalog](learning-catalog-app-maker.md#)
+    [App Maker Learning Catalog](learning-catalog-app-maker.md#)
 
     [Get Started](learning-catalog-app-maker.md#get-started)
 
@@ -81,7 +81,7 @@ Find the right online training, in person workshops, and events for your role as
 
     [Create Flows](learning-catalog-functional-consultant.md#create-flows)
 
-    [Administer](learning-catalog-functional-consultant.md#\administer)
+    [Administer](learning-catalog-functional-consultant.md#administer)
 
     :::column-end:::
 :::row-end:::
