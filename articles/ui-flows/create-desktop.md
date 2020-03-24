@@ -57,7 +57,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
 
 1.	Select **Download package**.
-1.	Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1.	Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1.	Follow the instructions in the UI flows (preview) setup installer to complete the installation.
 
     Once the UI flows installer completes, you'll receive a prompt from your browser to activate the extension.
