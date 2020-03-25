@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -141,7 +141,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
    ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
 
-1. Search for *UI flow*, and then select **UI flows (preview).
+1. Search for *UI flow*, and then select **UI flows**.
 
    ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
 
@@ -198,7 +198,7 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 ## Uninstall UI flows
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows (preview)**, and then select it.
+1. Search for **UI flows**, and then select it.
 1. Select **Uninstall**.
 
 ## Learn more

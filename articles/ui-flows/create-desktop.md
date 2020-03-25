@@ -28,7 +28,7 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
+Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 
 ## Create a desktop UI flow
@@ -40,9 +40,9 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Ensure your [device is ready](setup.md) to create UI flows. <!--Todo: link to the prereqs section-->
 
-1. Use the [Chromium version of Microsoft Edge](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
+1. Use [Microsoft Edge (Version 80 or later)](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
 
-1. Select **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
@@ -58,17 +58,17 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1.	Select **Download package**.
 1.	Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1.	Follow the instructions in the UI flows (preview) setup installer to complete the installation.
+1.	Follow the instructions in the UI flows setup installer to complete the installation.
 
     Once the UI flows installer completes, you'll receive a prompt from your browser to activate the extension.
 
-1. On Microsoft Edge (Chromium), select each warning icon in the top right of the browser, and then select **Enable extension**.
+1. On Microsoft Edge (Version 80 or later), select each warning icon in the top right of the browser, and then select **Enable extension**.
 1. On Google Chrome, select **Enable extension** when prompted.
 
    > [!TIP]
    > If you did not see the prompt in your browser, check the following:
-   > - You must use the Microsoft Edge (Chromium) or Google Chrome browser.
-   > - You may have to manually enable the extension. For Microsoft Edge (Chromium), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
+   > - You must use the Microsoft Edge (Version 80 or later) or Google Chrome browser.
+   > - You may have to manually enable the extension. For Microsoft Edge (Version 80 or later), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
    > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
    Continue after you've installed the extension.
@@ -142,7 +142,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 - Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
-- Web browsers (Chrome, IE, Edge, Edge Chromium, Firefox, Mozilla, etc.).
+- Web browsers (Chrome, IE, Microsoft Edge, Firefox, Mozilla, etc.).
     Please instead refer to [Create a Web UI flow](edit-web.md) to
     automate websites.
 
@@ -191,12 +191,11 @@ The following actions will not be recorded:
 
 -   Open app before recording.
 
-<!-- -   Closed app before playback starts. -->
 
 ## Unreliable behaviors and workarounds for Microsoft Office (desktop)
 - Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
 - Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
-- Some elements may not work correctly in UI flows (preview) for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
+- Some elements may not work correctly in UI flows for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
 
 ## Next steps
 

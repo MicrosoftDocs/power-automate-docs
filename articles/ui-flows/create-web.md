@@ -36,7 +36,7 @@ Follow these steps to create a simple Web UI flow:
 
 1. Sign in with your work or school account if needed.
 
-1. Select **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 

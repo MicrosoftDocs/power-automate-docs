@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/03/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -74,7 +74,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
       ![Connection settings](../media/run-ui-flow/uiflow-connection-card.png "Connection settings")
 
       >[!TIP]
-      >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop (preview)** card, and then select the connection you want to use from **My connections**.
+      >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop** card, and then select the connection you want to use from **My connections**.
 
       ![Select a new connection](../media/run-ui-flow/select-new-connection.png "Select a new connection")
 

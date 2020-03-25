@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -28,7 +28,7 @@ search.audienceType:
 
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this preview release.
+Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
 A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
@@ -56,7 +56,7 @@ Advanced parameters let you change:
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** > **UI flows(preview)**.
+1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
@@ -108,7 +108,7 @@ any of the following actions for that application.
 Follow these steps to add a manual action:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** > **UI flows(preview)**.
+1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
    ![](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
