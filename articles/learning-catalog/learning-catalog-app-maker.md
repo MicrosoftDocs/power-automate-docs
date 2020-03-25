@@ -1,5 +1,5 @@
 ---
-title: Application Maker learning catalog
+title: App Maker learning catalog
 description: Find all the training options for Power Automate
 author: loreleishannonmsft
 ms.topic: article
@@ -7,7 +7,7 @@ ms.date: 03/17/2020
 ms.author: v-lshann
 ---
 
-# Application Maker Learning Catalog
+# App Maker Learning Catalog
 
 Are you interested in quickly creating custom business apps without writing code? 
 
