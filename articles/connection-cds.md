@@ -67,7 +67,7 @@ This flow triggers any time the first or last name of contact that the flow user
 > ![Filter attributes](./media/cds-connector/FilterAttributes.png)
 
 > [!IMPORTANT]
-> Multi-Select Option Sets cannot be used within a workflow. Including one will result in an error indicating a missing "required field"
+> [Multi Select Option Sets](/powerapps/maker/common-data-service/custom-picklists) cannot be used within a workflow. Including one will result in an error indicating a missing "required field"
 
 ## Trigger privileges
 
