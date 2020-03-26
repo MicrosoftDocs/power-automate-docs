@@ -50,11 +50,24 @@ Environments can be created in different regions and are bound to that geographi
 
 For optimal performance, create your environment in the region that's closest to your users. For example, if your users are in Europe, create your environments in the Europe region. If your users are in the United States, create your environments in the United States region.
 
-## Gateways
-Gateways are:
+## Region mappings for Power Automate and gateways
 
-* Not available in the India region.
-* Supported in the default environment only, not in custom environments.
+The region where the gateway is installed must map to your Power Automate region becasue we do not support cross geographic boundaries. 
+
+Here's the mapping information:
+
+Power Platform region|Gateway region
+-----|-----
+United States including Preview|Central US, East US 2, East US, North Central US, South Central US, West US 2, West Central US, West US
+Asia|East Asia, Southeast Asia
+Australia|Australia East, Australia Southeast
+Canada|Canada Central, Canada East
+Europe|North Europe, West Europe
+France|France Central, France South
+India|Central India, South India, West India
+Japan|Japan East, Japan West
+South America|Brazil South
+United Kingdom|UK South, UK West
 
 ## Is Power Automate available in national clouds?
 Yes. [Learn more](./us-govt.md).
