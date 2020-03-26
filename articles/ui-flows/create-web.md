@@ -23,10 +23,6 @@ search.audienceType:
 ---
 # Create and test your Web UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
 Follow these steps to create a simple Web UI flow:
 
 ## Create a Web UI flow

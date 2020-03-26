@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -24,19 +24,14 @@ search.audienceType:
 
 # Use inputs and outputs in desktop UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-## Define inputs
 
 Inputs let you pass information from an external source such as a database or any supported connector to the legacy software that UI flows automates.
 
 For example, you can use customer information from a SharePoint list as a source for input into your legacy accounting software.
 
-### Define inputs in the UI flows wizard
+## Define inputs in the UI flows wizard
 
-1. Select “New input”
+1. Select **New input**
 
    ![](../media/inputs-outputs-desktop/2eb6313a0e966f1fbfc352445b89ee39.png)
 
@@ -50,7 +45,7 @@ For example, you can use customer information from a SharePoint list as a source
 
 1.  Once your inputs are created, you can click on next to use them in a recording.
 
-### Use inputs to pass information to the application
+## Use inputs to pass information to the application
 
 1. While recording, you can use an input in an app by selecting **Use input**.
 
