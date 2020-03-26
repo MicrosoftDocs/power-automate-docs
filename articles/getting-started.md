@@ -28,7 +28,7 @@ Welcome! Power Automate is a service that helps you create automated workflows b
 
 <br\>
 
-> [!Video https://www.youtube.com/embed/hCuxuUaGC6Y]
+> [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
 
 
 ## Types of flows
