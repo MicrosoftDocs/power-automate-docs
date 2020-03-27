@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/30/2019
+ms.date: 03/26/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -68,11 +68,11 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Apply to each items - Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
-| Apply to each items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|100,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Office 365, Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Plan 1, Plan 2, Per User, and Per Flow licenses|100,000 |You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
-| SplitOn items - Free license |5,000 ||
-| SplitOn items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
+| SplitOn items - Office 365, Free license |5,000 ||
+| SplitOn items - Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
 | Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trials | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
 |Actions executions per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
