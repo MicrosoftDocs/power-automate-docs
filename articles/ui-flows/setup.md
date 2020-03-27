@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,10 +23,6 @@ search.audienceType:
 ---
 
 # Set up UI flows
-
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 > [!IMPORTANT]
 > The UI flows feature is currently rolling out across regions. If you don't see the feature in your environment, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
@@ -44,7 +40,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
 
-- The [Microsoft Edge](https://www.microsoftedgeinsider.com)
+- The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
@@ -66,10 +62,9 @@ The following are not supported:
 
 -   Web UI Flows
 
-    -   Right click
+    -   Right click.
     -   User session information (e.g.: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information
-        when required by websites.
+        playback. You will have to edit the script to embed sign in information when required by websites.
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
@@ -83,8 +78,8 @@ The UI flows installer contains all the components needed to record, edit, and t
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
+1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Follow the instructions in the **UI flows setup** installer to complete the installation.
 
 ### Set data collection options
 
@@ -142,7 +137,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
    ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
 
-1. Search for *UI flow*, and then select **UI flows (preview).
+1. Search for *UI flow*, and then select **UI flows**.
 
    ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
 
@@ -199,7 +194,7 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 ## Uninstall UI flows
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows (preview)**, and then select it.
+1. Search for **UI flows**, and then select it.
 1. Select **Uninstall**.
 
 ## Learn more

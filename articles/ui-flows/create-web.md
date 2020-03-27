@@ -23,10 +23,6 @@ search.audienceType:
 ---
 # Create and test your Web UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
 Follow these steps to create a simple Web UI flow:
 
 ## Create a Web UI flow
@@ -36,7 +32,7 @@ Follow these steps to create a simple Web UI flow:
 
 1. Sign in with your work or school account if needed.
 
-1. Select **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 

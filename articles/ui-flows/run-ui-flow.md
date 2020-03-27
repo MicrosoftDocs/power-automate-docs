@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/03/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,10 +23,6 @@ search.audienceType:
 ---
 
 # Run attended and unattended UI flows
-
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 After you've created and tested a UI flow, you can run it from an event, schedule, or button. To make this possible, add your UI flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
 
@@ -77,6 +73,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
       >[!TIP]
       >If you don't see your gateway, you might be in an environement whose region is different from the gateway region. Click on **Troubleshoot missing gateway** link in the gateway name dropdown to know more.
+
 
       ![Select a new connection](../media/run-ui-flow/select-new-connection.png "Select a new connection")
 
