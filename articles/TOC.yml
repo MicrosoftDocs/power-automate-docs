@@ -16,6 +16,20 @@
     href: create-team-flows.md
   - name: Create a flow that uses Common Data Service
     href: common-data-model-intro.md
+  - name: Learning Catalog
+    items:
+    - name: Learning Catalog
+      href: learning-catalog/learning-catalog.md
+    - name: App Maker
+      href: learning-catalog/learning-catalog-app-maker.md
+    - name: Administrator
+      href: learning-catalog/learning-catalog-administrator.md
+    - name: Developer
+      href: learning-catalog/learning-catalog-developer.md
+    - name: Functional Consultant
+      href: learning-catalog/learning-catalog-functional-consultant.md      
+    - name: Partner Presales Roles
+      href: learning-catalog/learning-catalog-sales.md
 - name: Automated flows
   items:
   - name: Create a flow from scratch
