@@ -49,7 +49,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-You must have the latest versions of each components to record, test, or run UI flows.
+You must have the latest versions of each component to record, test, or run UI flows.
 
 The following are not supported:
 - Windows 10 Home installations are not supported.
@@ -63,7 +63,7 @@ The following are not supported:
 -   Web UI Flows
 
     -   Right click.
-    -   User session information (e.g.: cookies) will not be reused during
+    -   User session information (for example: cookies) will not be reused during
         playback. You will have to edit the script to embed sign in information when required by websites.
 
 You'll find feature-specific limitations included in the documentation for each feature.
