@@ -94,12 +94,12 @@ During installation, you can change the default settings if you do not want to s
 
 Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
 
-- On Microsoft Edge, select each warning icon in the top right of the browser, and then select **Enable extension**.
+- On [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later), select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
 
 > [!TIP]
 > If you did not see the prompt in your browser, please check the following:
-> - You must use Microsoft Edge or Google Chrome.
+> - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
 > - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
@@ -112,9 +112,9 @@ With UI flows, you can run Selenium IDE scripts from Power Automate and keep the
 
 Follow these steps to install Selenium IDE:
 
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
+1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
 
-1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
+1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway
 
@@ -124,6 +124,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 >The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
 
 [Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
+
 
 ## Setup UI flows connections and machine credentials
 
@@ -150,6 +151,13 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
       ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
+
+## Troubleshoot missing gateway
+
+You might not find the gateway in the list while creating the connection for the following reasons:
+
+- The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- The gateway was deleted by its owner.
 
 ## Supported keyboard layouts
 
