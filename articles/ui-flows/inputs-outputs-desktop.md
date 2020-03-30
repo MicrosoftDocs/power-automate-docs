@@ -45,6 +45,9 @@ For example, you can use customer information from a SharePoint list as a source
 
 1.  Once your inputs are created, you can click on next to use them in a recording.
 
+>[!TIP]
+>You can use the **CRTL+ALT+L** key combination to insert text that you can pass to or from the application being used in the UI flow. This key combination works for sensitive, static, output, and input text. 
+
 ## Use inputs to pass information to the application
 
 1. While recording, you can use an input in an app by selecting **Use input**.
