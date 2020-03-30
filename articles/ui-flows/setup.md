@@ -126,7 +126,8 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 [Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
 
 
->[!IMPORTANT]When you install the gateway, it defaults to the region that Power Automate uses.
+>[!IMPORTANT]
+>When you install the gateway, it defaults to the region that Power Automate uses.
 
 
 ## Setup UI flows connections and machine credentials
