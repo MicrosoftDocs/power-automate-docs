@@ -102,7 +102,7 @@
     href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
-- name: UI flows (preview)
+- name: UI flows
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
