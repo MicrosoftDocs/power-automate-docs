@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2020
+ms.date: 03/28/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -38,7 +38,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 > [!TIP]
 > You can automate other Windows desktop apps by following a similar pattern.
 
-1. Ensure your [device is ready](setup.md) to create UI flows. <!--Todo: link to the prereqs section-->
+1. Ensure your [device is ready](setup.md#prerequisites) to create UI flows.
 
 1. Use [Microsoft Edge (Version 80 or later)](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
 
@@ -143,7 +143,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 - Interactions on Windows (File explorer, startup menu, task bar, etc.).
 
 - Web browsers (Chrome, IE, Microsoft Edge, Firefox, Mozilla, etc.).
-    Please instead refer to [Create a Web UI flow](edit-web.md) to
+    Please instead refer to [Create a Web UI flow](create-web.md) to
     automate websites.
 
 -   Java applications.
@@ -162,8 +162,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 -   Recording through a virtual machine client (Remote Desktop, Citrix, etc.).
 
--   Multiple instances of an application where the main window titles are
-    identical.
+-   Multiple instances of an application where the main window titles are identical.
 
 -   Application windows with identical titles, for example, Microsoft Outlook with multiple **Untitled – Message (HTML)** new mail windows active at the same time.
 
@@ -193,12 +192,13 @@ The following actions will not be recorded:
 
 
 ## Unreliable behaviors and workarounds for Microsoft Office (desktop)
+
 - Pin the ribbon before you begin playback to avoid issues that may occur if the ribbon is set to auto-hide during playback.
 - Do not select items by clicking and dragging. For example, don't use shift-click to select cells in Microsoft Excel and don't select text in Microsoft Word or Microsoft PowerPoint by dragging the mouse.
-- Some elements may not work correctly in UI flows for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the File menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
+- Some elements may not work correctly in UI flows for Microsoft Word and Microsoft PowerPoint Desktop applications. For instance, options on the **File** menu such as starting from blank, or right clicking controls like adding a paragraph in Microsoft Word or changing the layout of slides in Microsoft PowerPoint may not work.
 
 ## Next steps
 
 - Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
 
-- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
+- If you want to do more with UI flows, you can also create UI flows with [input and output](inputs-outputs-web.md) parameters.

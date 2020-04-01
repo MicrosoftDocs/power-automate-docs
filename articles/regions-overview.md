@@ -52,7 +52,7 @@ For optimal performance, create your environment in the region that's closest to
 
 ## Region mappings for Power Automate and gateways
 
-The region where the gateway is installed must map to your Power Automate region becasue we do not support cross geographic boundaries. 
+The region where the gateway is installed must map to your Power Automate region. Cross geographic boundaries aren't supported. 
 
 Here's the mapping information:
 
