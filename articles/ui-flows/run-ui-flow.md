@@ -108,7 +108,7 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
-## Run UI Flows unattended or attended
+## Run UI flows unattended or attended
 
 When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for aplications that do not need human supervision.
 
@@ -121,22 +121,23 @@ When you add a UI Flow to a Flow, you can choose whether you want your UI Flow t
 ### Unattended mode
 
 To run unattended UI flows, the target machine needs to be available with all users signed out. 
+
 >[!IMPORTANT]
 >Locked Windows user sessions will prevent UI flows from running.
 
 UI flows perform the following:
 1. UI flow creates, manages, and then releases the Windows user session on the target devices.
 
-1. Unattended UI flow runs will run on devices with the screen locked so noone can see the flow running on the device.
+1. Unattended UI flows run on devices with the screen locked so that no one can see the flow while it runs.
 
-1. Windows 10 devices cannot run unattended if there are any active Windows user sessions on the device (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
+1. Windows 10 devices cannot run unattended if there are any active Windows user sessions present (even a locked one). You will receive this error: *Cannot execute UI flow. There is a locked or an inactive Windows user session on the target device*.
 
 1. On Windows Server, if you have a locked Windows user session open with the same user as the UI flow is supposed to run as, you will receive the same error: *Cannot execute UI flow. There is a locked or inactive Windows user session on the target device*.
 
 ### Attended mode
 To run an attended UI flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
 
-When an attended UI flow run starts on the target machine we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
+When an attended UI flow starts on the target machine, we recommend that you avoid interacting with your device until the run completes.
 
 
 ## Schedule multiple UI flows on the same device
@@ -150,42 +151,43 @@ You can schedule multiple UI flows to run on one or more devices. If more than o
 1.  Picks the next UI flow when each run completes.
 
 >[!NOTE]
->These orchestration rules apply to both UI flows that are scheduled by the same user or by different users on the same device.
+>These orchestration rules apply to UI flow runs that are scheduled by any user scheduled by different users on the same device.
 
 >[!IMPORTANT]
 >If there are too many UI flows in the execution queue a timeout might occur. 
 >UI flow runs will fail if they don’t run within 30 minutes after being triggered.
 
 ## Load balance requests across gateways in a cluster
-You can choose to let UI Flow runs be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
-To create a gateway cluster follow the steps outline in this documentation: [Add another gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
+
+You can choose to let UI flow runs to be distributed evenly across gateways in a cluster. By default, the the selection of a gateway during load balancing is random.
+
+To create a gateway cluster follow [these steps to add another gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
 
 >[!NOTE]
->Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
+>Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
 
-To provide load balancing from the Power Automate Gateway details page, navigate to Data -> Gateways and select your gateway cluster. 
-In the gateway details page, toggle Run on all gateways in cluster. This will distribute UI Flows runs on all the gateways within that cluster.
+To provide load balancing from the Power Automate gateway details page, navigate to **Data** -> **Gateways**, and then select your gateway cluster. 
+
+In the gateway details page, toggle Run on all gateways in cluster. This will distribute the UI flows runs on all the gateways within that cluster.
 
    ![Distribute UI Flow run on gateway cluster](../media/run-ui-flow/gw_cluster.png "Distribute UI Flow run on gateway cluster")
    
 >[!IMPORTANT]
->If you are using local windows accounts, all machines in the cluster must have the same local account with the same password, those are the credentials you should use when creating the UI Flow connection.
->If you are using AD or Azure AD joined machines, make sure the user account you will be using in the UI Flow connection can access 
->all machines in the cluster.
+>If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the UI flow connection.
+>If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be use in the UI flow connection can access all machines in the cluster.
    
 ## Best practices to avoid timeouts and distribute load across machines
 
-If you plan to run multiple UI Flows, there are a set of strategies you can adopt to distribute load and ensure that all your UI Flows run successfully without overloading the target machine(s) or running into timeouts because of multiple UI Flow running at the same time. You can either:
+If you plan to run multiple UI flows, there are a set of strategies you can adopt to distribute load and ensure that all your UI flows run successfully without overloading the target machine(s) or running into timeouts because multiple UI flows are running at the same time. You can either:
 
-1. Plan your UI Flows to run on different times of the day, thus spreading your load over time. This works best if you have a single or a limited set of machines that can execute workloads and you can control the triggers that launch you UI Flows (e.g. scheduled Flows).
-2. Create clusters of machines that can run UI Flows on machines with identical configurations, in parallel. 
+1. Plan your UI flows to run on different times of the day, thus spreading your load over time. This works best if you have a single or a limited set of machines that can execute workloads and you can control the triggers that launch you UI flows (e.g. scheduled flows).
+2. Create clusters of machines that can run UI flows on machines with identical configurations, in parallel. 
 3. Create multiple Flows that each use a separate connection to target different machines. 
 
-By Following one of the above strategies, you will avoid having UI Flows competing for execution on the same machine and in some cases failing as they reach their timeouts. 
+By following one of the above strategies, you will avoid having UI flows competing for execution on the same machine and in some cases failing as they reach their timeouts. 
 
 >[!NOTE]
->If you are running UI Flows in unattended mode, you will need to anticipate the number of UI flows your organization plans to run in parallel to purchase the right amount of Unattended Add-ons. 
-
+>If you are running UI flows in unattended mode, you will need to anticipate the number of UI flows your organization plans to run in parallel to purchase the right amount of Unattended Add-ons. 
 
 
 ## Rerun failed UI flows
@@ -205,7 +207,7 @@ If a UI flow run fails, you can try running the flow after correcting the cause 
     1.  On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
     1.  On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your machine, otherwise UI flows won’t be able to create new sessions to run new UI flows.
 
-2.	Known issue: If you are running UI Flows on a computer with a non-English language and see a “502 - Bad request” generic error, make sure you have followed the steps to upgrade your UI Flows  outlined here [Upgrade your UI flows](upgrade.md).
+2.	Known issue: If you are running UI flows on a non-English language operating system and you see a “502 - Bad request” generic error, make sure you have followed the [steps to upgrade your UI flows](upgrade.md).
 
 
     1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot)
