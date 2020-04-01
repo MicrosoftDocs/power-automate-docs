@@ -90,9 +90,9 @@ Outputs can only be created as you record your UI flow.
 
 1. Select a user interface element to get its text for the output. The text value will be automatically captured.
 
-   ![Get element output](../media/inputs-outputs-desktop/get-element-output.png)
+   <!-- ![Get element output](../media/inputs-outputs-desktop/get-element-output.png) -->
 
-   ![](../media/inputs-outputs-desktop/af55a0bf39d805b154a783eff3de131b.png)
+   ![Select UI element](../media/inputs-outputs-desktop/select-ui-element.png)
 
 1. Provide a name and a description for the output.
 
