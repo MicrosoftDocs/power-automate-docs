@@ -24,12 +24,9 @@ search.audienceType:
 
 # Create and test desktop UI flows
 
-Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
-
+In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
 ## Create a desktop UI flow
-
-In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
 > [!TIP]
 > You can automate other Windows desktop apps by following a similar pattern.
