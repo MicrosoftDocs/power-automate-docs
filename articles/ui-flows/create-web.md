@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create and test your Web UI flows
 
-Follow these steps to create a simple Web UI flow:
+Follow these steps to create a simple Web UI flow.
 
 ## Create a Web UI flow
 

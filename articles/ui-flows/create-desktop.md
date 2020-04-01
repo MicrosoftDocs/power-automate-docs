@@ -24,10 +24,6 @@ search.audienceType:
 
 # Create and test desktop UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
 Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) later in this topic to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 
@@ -68,8 +64,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
    > [!TIP]
    > If you did not see the prompt in your browser, check the following:
    > - You must use the Microsoft Edge (Version 80 or later) or Google Chrome browser.
-   > - You may have to manually enable the extension. For Microsoft Edge (Version 80 or later), navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
-   > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+   > - You may have to update the extension for [Microsoft Edge (Version 80 or later)](https://www.microsoft.com/store/collections/edgeextensions/pc) or [Google Chrome](https://chrome.google.com/webstore/category/extensions).
 
    Continue after you've installed the extension.
 
@@ -83,7 +78,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
    The recorder control displays at the top of your screen.
 
-   ![The recorder-control](../media/create-windows-ui-flow/recorder-control.png "The recorder-control")
+   ![The recorder control](../media/create-windows-ui-flow/recorder-control.png "The recorder control")
 
 1. Start the calculator app.
 

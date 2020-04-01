@@ -23,10 +23,6 @@ search.audienceType:
 ---
 # Edit Web UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
 Web UI flows automate websites running in the [Microsoft Edge (version 80 or later)](https://www.microsoft.com/edge/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Web UI flows.
 
 ## Edit in Selenium IDE

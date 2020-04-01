@@ -24,8 +24,7 @@ search.audienceType:
 
 # Use inputs and outputs in desktop UI flows
 
-
-Inputs let you pass information from an external source such as a database or any supported connector to the legacy software that UI flows automates.
+Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that UI flows automates.
 
 For example, you can use customer information from a SharePoint list as a source for input into your legacy accounting software.
 
@@ -33,7 +32,7 @@ For example, you can use customer information from a SharePoint list as a source
 
 1. Select **New input**
 
-   ![](../media/inputs-outputs-desktop/select-new.png)
+   ![Select new](../media/inputs-outputs-desktop/select-new.png)
 
 1. Add a name, a sample data and a description to your input.
 
@@ -41,7 +40,7 @@ For example, you can use customer information from a SharePoint list as a source
 
     - The description will be helpful to differentiate the inputs that you have created.
 
-   ![](../media/inputs-outputs-desktop/input-fields.png)
+   ![Input fields](../media/inputs-outputs-desktop/input-fields.png)
 
 1.  Once your inputs are created, you can click on next to use them in a recording.
 
@@ -60,17 +59,17 @@ For example, you can use customer information from a SharePoint list as a source
 
     - Create a new input as you are recording. You will find it back in the **Set up input fields** step.
 
-   ![](../media/inputs-outputs-desktop/select-input-type.png)
+   ![Select input type](../media/inputs-outputs-desktop/select-input-type.png)
 
 1. Select the location where you want to use the input. The sample value you defined is automatically used. In the below example “Hello world” is the sample value for the input name “My input” and is added to the page within Microsoft Word.  
     
-    ![](../media/inputs-outputs-desktop/select-location-for-input.png)
+    ![Select location for input](../media/inputs-outputs-desktop/select-location-for-input.png)
 
 1. In Power Automate **Record and edit steps**, expand actions that use inputs to view which one is selected.
 
-   ![](../media/inputs-outputs-desktop/expand-actions.png)
+   ![Expand actions](../media/inputs-outputs-desktop/expand-actions.png)
 
-1. When triggering your UI flow, you can change the input value at will. See Use inputs & outputs for more information. <!-- todo link and ampersand-->
+1. When triggering your UI flow, you can change the input value at will.
 
 ## Use outputs to extract information from the app
 
@@ -83,27 +82,27 @@ Outputs can only be created as you record your UI flow.
 
 1. During a recording, select **Get output**.
 
-   ![](../media/inputs-outputs-desktop/get-output.png)
+   ![Get output](../media/inputs-outputs-desktop/get-output.png)
 
 1. Select **Select text**.
 
-   ![](../media/inputs-outputs-desktop/select-text.png)
+   ![Select text](../media/inputs-outputs-desktop/select-text.png)
 
 1. Select a user interface element to get its text for the output. The text value will be automatically captured.
 
-   ![](../media/inputs-outputs-desktop/get-element-output.png)
+   ![Get element output](../media/inputs-outputs-desktop/get-element-output.png)
 
    ![](../media/inputs-outputs-desktop/af55a0bf39d805b154a783eff3de131b.png)
 
 1. Provide a name and a description for the output.
 
-   ![](../media/inputs-outputs-desktop/name-description.png)
+   ![Provide a name and description](../media/inputs-outputs-desktop/name-description.png)
 
 1. Select **Save.** 
 
 Your output is now available in the dedicated area of the wizard.
 
-   ![](../media/inputs-outputs-desktop/output-available.png)
+   ![Output is available](../media/inputs-outputs-desktop/output-available.png)
 
 Each output has:
 
@@ -121,19 +120,19 @@ Testing UI flows lets you validate your changes and the appropriate playback beh
 
 1. (Optional) Enter new value in the input field. 
     
-    ![](../media/inputs-outputs-desktop/new-test-value.png)
+    ![New test value](../media/inputs-outputs-desktop/new-test-value.png)
 
 1. Click **Test now** to see the legacy software being automated. You will see UI flow automation playing back the steps you recorded. **Please do not interact with your device for the duration of playback.**
 
 1. Once playback completes, you see the run status of your UI flow:
 
-    - For each action, a status indicating that the test worked well and the associated inputs.
+    - For each action, a status indicator that shows that the test worked well, along with the associated inputs.
 
     - The value of the outputs obtained for this test.
 
     - If an error occurs, you'll see which step caused the problem with a screenshot of the moment the error occurred.
 
-   ![](../media/inputs-outputs-desktop/successful-run.png)
+   ![A successful run](../media/inputs-outputs-desktop/successful-run.png)
 
 ## Learn more
 
