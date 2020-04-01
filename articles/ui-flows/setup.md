@@ -143,11 +143,11 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
    ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
 
-1. Provide the gateway information and device credentials for *each* gateway: 
+1. Provide the gateway information and device credentials: 
 
     - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
     - **Password**: Your account’s password.
-    - **Choose a gateway**: Select one of the gateways you want to configure.
+    - **Choose a gateway**: Select the gateway you want to use.
 
       ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
 
@@ -184,7 +184,7 @@ You might not find the gateway in the list while creating the connection for the
 
 ## Supported languages
 
-Here are the languages that UI flows supports, in additional to English:
+Here are the languages that UI flows supports, in addition to English:
 
 |||||
 ----|-----|-----|--------
