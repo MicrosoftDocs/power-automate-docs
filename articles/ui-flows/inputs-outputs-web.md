@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 03/30/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,25 +23,23 @@ search.audienceType:
 ---
 # Use inputs and outputs in Web UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 
 ## Define inputs for a Web UI flow
 
 Inputs of a UI flow let you pass information from an external source such as a database or another UI flow to the target legacy software that you will automate.
 
-Any variable that is used (read) before initialization (usually done via **store** commands) will be automatically treated as an input variable and it will be displayed on the **Run a UI Flow for web** action card.
+Any variable that is used (read) before initialization (usually done via **store** commands) will be automatically treated as an input variable and it will be displayed on the **Run a UI flow for web** action card.
 
 You can use variables via string interpolation, for example, change the click command's target field to "id=\${elementId}". Or change the type command's value field to "\${inputText}".
 
-The command, **set window size** and the command **type** in the following screenshots use uninitialized variables \${Width}, \${Height}, and \${search}. These variables will become input values.
+The command, **set window size** and the command, **type** in the following screenshots use uninitialized variables \${Width}, \${Height}, and \${search}. These variables will become input values.
 
-![Set window size and type](../media/inputs-outputs-web/f05cb445dad212aaf395b66ba969622c.png "Set window size and type")
+![Set window size and type](../media/inputs-outputs-web/set-window-size.png "Set window size and type")
 
 You can use variables directly in some commands, for example, forEach command's target/value fields are both variables, you don't need to surround it with "\${}".
 
-Please consult [Selenium commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) reference to determine which commands take variable name directly.
+Consult [Selenium commands](https://www.seleniumhq.org/selenium-ide/docs/en/api/commands/) reference to determine which commands take variable names directly.
 
 ## Define outputs for a Web UI flow
 

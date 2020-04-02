@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2020
+ms.date: 03/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,13 +23,6 @@ search.audienceType:
 ---
 
 # Set up UI flows
-
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-> [!IMPORTANT]
-> The UI flows feature is currently rolling out across regions. If you don't see the feature in your environment, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
 
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
@@ -44,7 +37,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
 
-- The [Microsoft Edge](https://www.microsoftedgeinsider.com)
+- The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
 - An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
@@ -53,7 +46,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Limitations
 
-You must have the latest versions of each components to record, test, or run UI flows.
+You must have the latest versions of each component to record, test, or run UI flows.
 
 The following are not supported:
 - Windows 10 Home installations are not supported.
@@ -66,10 +59,9 @@ The following are not supported:
 
 -   Web UI Flows
 
-    -   Right click
-    -   User session information (e.g.: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information
-        when required by websites.
+    -   Right click.
+    -   User session information (for example: cookies) will not be reused during
+        playback. You will have to edit the script to embed sign in information when required by websites.
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
@@ -83,8 +75,8 @@ The UI flows installer contains all the components needed to record, edit, and t
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.Flow.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1. Follow the instructions in the **UI flows (preview) setup** installer to complete the installation.
+1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Follow the instructions in the **UI flows setup** installer to complete the installation.
 
 ### Set data collection options
 
@@ -92,19 +84,16 @@ During installation, you can change the default settings if you do not want to s
 
 ![Image showing the data collection options](../media/ui-flows-setup/data-collection-settings.png)
 
-> [!WARNING]
-> You must uninstall the UI flows app, and then reinstall it if you need to change the data collection settings. UI flows will no longer work if you change the data collection settings without uninstalling the UI flows app first.
-
 ## Activate the UI flows browser extension 
 
 Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
 
-- On Microsoft Edge, select each warning icon in the top right of the browser, and then select **Enable extension**.
+- On [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later), select each warning icon in the top right of the browser, and then select **Enable extension**.
 -   On Google Chrome, select **Enable extension** when prompted.  
 
 > [!TIP]
 > If you did not see the prompt in your browser, please check the following:
-> - You must use Microsoft Edge or Google Chrome.
+> - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
 > - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
 > - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
@@ -117,9 +106,9 @@ With UI flows, you can run Selenium IDE scripts from Power Automate and keep the
 
 Follow these steps to install Selenium IDE:
 
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for the next version of Microsoft Edge or Google Chrome.
+1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
 
-1. On Microsoft Edge, select **Allow extensions from other stores**, and then select **Add to Chrome**.
+1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway
 
@@ -129,6 +118,11 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 >The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
 
 [Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
+
+
+>[!IMPORTANT]
+>When you install the gateway, it defaults to the region that Power Automate uses.
+
 
 ## Setup UI flows connections and machine credentials
 
@@ -142,19 +136,26 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
    ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
 
-1. Search for *UI flow*, and then select **UI flows (preview).
+1. Search for *UI flow*, and then select **UI flows**.
 
    ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
 
-1. Provide the gateway information and device credentials for *each* gateway: 
+1. Provide the gateway information and device credentials: 
 
     - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
     - **Password**: Your account’s password.
-    - **Choose a gateway**: Select one of the gateways you want to configure.
+    - **Choose a gateway**: Select the gateway you want to use.
 
       ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
+
+## Troubleshoot missing gateway
+
+You might not find the gateway in the list while creating the connection for the following reasons:
+
+- The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+- The gateway was deleted by its owner.
 
 ## Supported keyboard layouts
 
@@ -180,7 +181,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
 ## Supported languages
 
-Here are the languages that UI flows supports, in additional to English:
+Here are the languages that UI flows supports, in addition to English:
 
 |||||
 ----|-----|-----|--------
@@ -199,7 +200,7 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 ## Uninstall UI flows
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows (preview)**, and then select it.
+1. Search for **UI flows**, and then select it.
 1. Select **Uninstall**.
 
 ## Learn more

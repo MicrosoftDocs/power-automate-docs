@@ -230,6 +230,8 @@ Some of the features available in the commercial version of Flow are not availab
 
 - Trigger Power Automate US Government flow *from* Dynamics 365 GCC
 
+- [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
+
 - [Approvals](./modern-approvals.md) are not yet available for GCC and GCC High tenants.
 
 - [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
