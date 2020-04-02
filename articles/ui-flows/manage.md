@@ -24,16 +24,12 @@ search.audienceType:
 
 # Manage UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows (preview)** tab.
+After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows** tab.
 
 ## List of UI flows
 
 1. Sign into Power Automate.
-1. Select **My flows** > **UI flows (preview)**.
+1. Select **My flows** > **UI flows**.
 
    ![View all UI flows](../media/manage-ui-flows/view-all.png "View all UI flows")
 
@@ -49,7 +45,7 @@ For each of your UI flows, you can see its details by selecting its name from th
 Follow these steps to see the details for a UI flow:
 
 1. Sign into Power Automate.
-1. Select **My flows** > **UI flows (preview)**.
+1. Select **My flows** > **UI flows**.
 1. Select any of your UI flows.
 
    ![View details](../media/manage-ui-flows/view-details.png "View details")
