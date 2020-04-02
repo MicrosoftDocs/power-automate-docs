@@ -88,7 +88,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
  >[!TIP]
  >Before testing, confirm that your gateway is online. Go to **Data** > **Gateways** on the navigation pane, select the gateway name, click on **...** go to **Details** and verify if the **gateway status** is **online**.If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. 
 
-1. Test your flow by sending an email to trigger it. You will see your UI flow  playing back the steps you recorded. 
+1. Test your flow by sending an email to trigger it. You will see your UI flow playing back the steps you recorded. 
 
 ![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
 
@@ -159,9 +159,9 @@ You can schedule multiple UI flows to run on one or more devices. If more than o
 
 ## Load balance requests across gateways in a cluster
 
-You can choose to let UI flow runs to be distributed evenly across gateways in a cluster. By default, the the selection of a gateway during load balancing is random.
+You can choose to distribute UI flow runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
-To create a gateway cluster follow [these steps to add another gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
+Follow [these steps to add a gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
 
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
@@ -180,45 +180,47 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
 
 If you plan to run multiple UI flows, there are a set of strategies you can adopt to distribute load and ensure that all your UI flows run successfully without overloading the target machine(s) or running into timeouts because multiple UI flows are running at the same time. You can either:
 
-1. Plan your UI flows to run on different times of the day, thus spreading your load over time. This works best if you have a single or a limited set of machines that can execute workloads and you can control the triggers that launch you UI flows (e.g. scheduled flows).
-2. Create clusters of machines that can run UI flows on machines with identical configurations, in parallel. 
-3. Create multiple Flows that each use a separate connection to target different machines. 
+1. Plan your UI flows to run at different times of the day, spreading your load over time. This works best if you have a single or a limited set of machines that can run workloads, and you can control the triggers (for example, scheduled flows) that start your UI flows.
+1. Create clusters of machines that can run UI flows with identical configurations in parallel. 
+1. Create multiple flows that each use a separate connection to target different machines. 
 
-By following one of the above strategies, you will avoid having UI flows competing for execution on the same machine and in some cases failing as they reach their timeouts. 
+By following these strategies, you can avoid having UI flows competing to run on the same device and in some cases failing due to timeouts. 
 
 >[!NOTE]
->If you are running UI flows in unattended mode, you will need to anticipate the number of UI flows your organization plans to run in parallel to purchase the right amount of Unattended Add-ons. 
+>If you are running UI flows in unattended mode, you will need to anticipate the number of UI flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
 
 
 ## Rerun failed UI flows
 
-If a UI flow run fails, you can try running the flow after correcting the cause of that failure 
+If a UI flow run fails, correct the issue, and then try the following steps to rerun it: 
 
-1. Go to the flow details page and identify the failed run you want to rerun.
+   1. Go to the details page and identify the failed run.
 
-1. Select resubmit button from the action menu.
+   1. Select the **Resubmit** button from the action menu.
 
 ## Troubleshoot failures
 
-1. If your unattended UI flow fails with **cannot create new session** error message, follow these steps to resolve the issue:
+1. If your unattended UI flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
 
     - On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
-    - On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your machine, otherwise UI flows won’t be able to create new sessions to run new UI flows.
+    - On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your device. UI flows won’t be able to run if it cannot create new sessions.
 
-2.	Known issue: If you are running UI flows on a non-English language operating system and you see a “502 - Bad request” generic error, make sure you have followed the [steps to upgrade your UI flows](upgrade.md).
+1. If you are running UI flows on a non-English language operating system and you receive a *502 - Bad request* message, confirm you have followed the [steps to upgrade your UI flows from preview](upgrade.md).
 
 
-    1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot)
+1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot).
 
-    1. If the **gateway status** is **online**, try the following actions:
+1. If the **gateway status** is **online**, try the following actions:
 
-        1. Confirm the UI flows app and services are running on your device.
+   - Confirm the UI flows app and services are running on your device.
 
-        1. Restart the UI flow service on your device.
+   - Restart the UI flow service on your device.
 
 ## Learn more
 
  - Install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
  - [Use the on-premises data gateway app](https://docs.microsoft.com/flow/gateway-manage) documentation.
  - [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+
+
 
