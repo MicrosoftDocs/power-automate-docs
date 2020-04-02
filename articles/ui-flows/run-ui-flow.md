@@ -106,7 +106,7 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 ## Run UI Flows unattended or attended
 
-When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for aplications that do not need human supervision.
+When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that do not need human supervision.
 
 When running unattended, UI flows automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, UI flows signs out from the device and reports its activity in Power Automate.
 
@@ -130,7 +130,7 @@ UI flows preform the following:
 ### Attended mode
 To run an attended UI flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
 
-When an attended UI flow run starts on the target machine we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
+When an attended UI flow run starts on the target machine, we recommend avoiding interactions with your device (e.g.: mouse moves) until the execution is completed.
 
 
 ## Schedule multiple UI flows on the same device
@@ -139,9 +139,9 @@ You can schedule multiple UI flows to run on one or more devices. If more than o
 
 1.  The first UI flow will run on the target device.
 
-1.  Additional UI flows will wait and retry every 30 seconds. Those will have the **waiting** status in the UI flows or gateway details page.
+1.  Additional UI flows will wait and retry every 30 seconds. The pending UI flows have the **waiting** status in the UI flows and the gateway details page.
 
-1.  Upon completion of the current UI flow execution, the first retry for one of the additional UI flows will allow it to be executed.
+1.  Upon completion of the current UI flow, the first *waiting* UI flow that retries, runs.
  
 
 >[!NOTE]
@@ -180,7 +180,7 @@ In the gateway list and gateway details pages you see the current UI flows app s
 
 ![A screenshot that shows the list of gateways](../media/run-ui-flow/gateway-list.png)
 
-Your UI flows app can be in on of the following states:
+Your UI flows app can be in one of the following states:
 
 1. **Available**: The UI flows app is online and ready to run UI flows.
 
@@ -204,3 +204,4 @@ Your UI flows app can be in on of the following states:
  - Install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
  - [Use the on-premises data gateway app](https://docs.microsoft.com/flow/gateway-manage) documentation.
  - [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+
