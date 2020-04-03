@@ -24,6 +24,8 @@ search.audienceType:
 
 # Introduction to UI flows
 
+UI flows brings Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
