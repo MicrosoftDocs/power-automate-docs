@@ -44,11 +44,11 @@ These are limits for a single outgoing request.
 
 ### Retry policy
 
-| Name | Limit |
-| --- | --- |
-| Retry attempts |90 | The default is 4. To change the default use action settings | 
-| Retry max delay |1 day | |
-| Retry min delay |5 seconds | |
+| Name | Limit |Notes|
+| --- | --- | --- |
+| Retry attempts |90 | The default is 2. To change the default, use action settings. | 
+| Retry max delay |1 day |  |
+| Retry min delay |5 seconds |  |
 
 ## Run duration and retention
 These are the limits for a single flow run.
