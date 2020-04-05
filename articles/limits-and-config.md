@@ -46,7 +46,7 @@ These are limits for a single outgoing request.
 
 | Name | Limit |
 | --- | --- |
-| Retry attempts |90 | The default is 2. To change the default use action settings | 
+| Retry attempts |90 | The default is 2. To change the default, use action settings. | 
 | Retry max delay |1 day | |
 | Retry min delay |5 seconds | |
 
