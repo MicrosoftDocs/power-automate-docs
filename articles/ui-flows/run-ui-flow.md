@@ -51,7 +51,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 1. Give your flow a name in the **Flow name** box.
 1. Search for "new email", and then select **When a new email arrives (V3)** from the list of triggers. 
     
-   ![Select a trigger](../media/run-ui-flow/2d4ec17d239169a46905cef1829fa3a1.png "Select a trigger")
+   ![Select a trigger](../media/run-ui-flow/select-email-trigger.png "Select a trigger")
 
 1. Select **Create**, and then select **New step**.
 
@@ -116,7 +116,7 @@ When running unattended, UI flows automatically signs into the target devices th
 
 When running attended, UI flows will use an existing Windows user session.
 
-When you add a UI Flow to a Flow, you can choose whether you want your UI Flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+When you add a UI flow to a flow, you can choose whether you want your UI flow to run attended or unattended. Here are some key differences between attended and unattended runs:
 
 ### Unattended mode
 
@@ -170,7 +170,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle Run on all gateways in cluster. This will distribute the UI flows runs on all the gateways within that cluster.
 
-   ![Distribute UI Flow run on gateway cluster](../media/run-ui-flow/gw_cluster.png "Distribute UI Flow run on gateway cluster")
+   ![Distribute UI flow run on gateway cluster](../media/run-ui-flow/gw_cluster.png "Distribute UI flow run on gateway cluster")
    
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the UI flow connection.
