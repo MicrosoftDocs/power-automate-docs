@@ -29,16 +29,14 @@ SharePoint lists and libraries allowed you to define custom metadata columns to 
 
 ## Create a reminder flow
 
- 1. Create a [SharePoint list](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) with at least one DateTime column in the current view. 
- 1. Select **Flow** > **Set a reminder** > **Date deactivated** (this is the column with the DateTime for the reminder).
+1. Create a [SharePoint list](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) with at least one DateTime column in the current view. 
+1. Select **Automate** > **Set a reminder** > [select specific date column name here].
 
-     ![Select reminder flow](media/create-sharepoint-reminder-flows/select-reminder-flow.png)
-
-1. Provide a **Flow name** and the number of days prior to the DateTime column entry when you want to receive the reminder alert on the **Set a reminder** card.
+1. Provide a **flow name** and the number of days prior to the Date column entry when you want to receive the reminder alert on the **Set a reminder** card.
 
     ![Set reminder flow details](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
-1. Select **Create** on the **Set a reminder** card.
+1. On the **Set a reminder** card, select **Create** .
 
 1. You'll receive the following message, indicating that the flow was created:
 
