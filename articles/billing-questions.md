@@ -22,12 +22,12 @@ search.audienceType:
   - admin
 ---
 # Billing and metering questions
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This article answers frequently asked questions regarding billing and metering in Power Automate.
 
 >[!NOTE]
-> PowerApps and Power Automate will use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) starting on October 1, 2019. 
+> Power Apps and Power Automate will use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) starting on October 1, 2019. 
 
 ## Where can I find out what pricing plans are available?
 
@@ -35,7 +35,7 @@ See the [pricing page](https://flow.microsoft.com/pricing/).
 
 ## Where can I find out what my plan is?
 
-See the [pricing page](https://flow.microsoft.com/pricing/).
+See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
@@ -87,5 +87,4 @@ You can work around this issue by putting all the filtering you need into the tr
   * 250 flows.
   * 15 Custom Connectors.
   * 20 connections per API and 100 connections total.
-* You can install a gateway only in the default environment.
 * Certain external connectors, such as Twitter, implement connection throttling to control quality of service. Your flows fail when throttling is in effect. If your flows are failing, review the details of the run that failed in the flow's run history.

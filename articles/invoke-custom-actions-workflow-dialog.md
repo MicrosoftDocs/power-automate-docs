@@ -11,7 +11,7 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "powerapps"
+  - "Power Apps"
 author: "Mattp123"
 ms.assetid: 1fd5d39e-3dc8-4d1a-8b4b-ccaa303f4bbb
 caps.latest.revision: 12
@@ -24,7 +24,7 @@ search.audienceType:
   - enduser
 ---
 # Invoke custom actions from a workflow
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Workflows have numerous capabilities supporting business scenarios. Calling basic data operation actions for a record, such as create, update, and delete, from within a workflow solves quite a few business scenarios. However, if you couple the capabilities of the workflows with the power of the custom actions invoked directly from within a workflow you add a whole new range of business scenarios to your application without needing to write code.  
   

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Start to build with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Here are some of the ways you can extend your application with Power Automate:
 
@@ -52,7 +52,7 @@ Here's what you'll need for the review process:
 * A description of your connector.
 * Approximately 10 ideas for how your connector could benefit other users through templates.
 
-After you submit this information, Microsoft starts assessing your API's functionality in Power Automate and Microsoft PowerApps.
+After you submit this information, Microsoft starts assessing your API's functionality in Power Automate and Microsoft Power Apps.
 
 ## Embed the flow experience into your website or app
 

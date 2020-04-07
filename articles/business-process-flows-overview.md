@@ -1,7 +1,7 @@
 ---
 title: "Business process flows overview | MicrosoftDocs"
 ms.custom: ""
-ms.date: 06/27/2018
+ms.date: 12/12/2019
 ms.reviewer: ""
 ms.service: flow
 author: MSFTMAN
@@ -11,7 +11,7 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "PowerApps"
+  - "Power Apps"
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
 ms.author: "DEONHE"
@@ -23,7 +23,7 @@ search.audienceType:
   - enduser
 ---
 # Business process flows overview
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 You can help ensure that people enter data consistently and follow the same steps every time they work with a customer by creating a business process flow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order. Business process flows use the same underlying technology as other processes, but the capabilities that they provide are very different from other features that use processes. To learn how to create or edit a business process flow, see [Create a business process flow](create-business-process-flow.md).  
   
@@ -166,11 +166,25 @@ Several default views are available that you can view as a chart, such as the **
 ### Interact with the business process flow entity from a workflow
 You can also interact with business process flow entities from a workflow. For example, you can create a workflow for the Business Process Flow entity record to change the Active Stage when a field on the Opportunity entity record is updated. For more information about how to do this, see [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
+### Run business process flows offline
+
+You can use business process flows offline if the following conditions are met:
+
+- The business process flow is used from a Power Apps app.
+- The Power Apps app is enabled for offline use.
+- The business process flow has a single entity.
+
+Specifically, the three commands that are available for a business process flow when the Power Apps app is offline are:
+
+- Next stage
+- Previous stage
+- Set Active stage
 
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
 - If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [Add solution components](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### Next steps  
  [Watch a short video (4:49) about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   

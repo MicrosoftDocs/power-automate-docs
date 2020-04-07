@@ -41,7 +41,7 @@ As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer
 
 | Phase | Step | When needed? |
 | --- | --- | --- |
-| Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to PowerApps or Power Automate |
+| Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to Power Apps or Power Automate |
 | Development | 2. Add support for your application to authenticate users with Azure Active Directory (Azure AD) | If you want to embed the Power Automate UI or list in Microsoft AppSource | 
 | Development | 3. Embed the Power Automate UI into your application using our web-based iframe | If you want to include flow creation or management in your application | 
 | Development | 4. Create and publish flow templates | If you want to pre-build flows for your customers | 

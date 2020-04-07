@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create an approval flow that requires everyone to approve
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This walkthrough shows you how to create an approval workflow that requires everyone (all assigned approvers) to agree for a vacation request to be approved, but any approver can reject the entire request.
 

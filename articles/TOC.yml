@@ -1,3 +1,5 @@
+- name: Power Automate documentation
+  href: /power-automate/
 - name: Overview
   items:
   - name: Sign up
@@ -14,6 +16,20 @@
     href: create-team-flows.md
   - name: Create a flow that uses Common Data Service
     href: common-data-model-intro.md
+  - name: Learning Catalog
+    items:
+    - name: Learning Catalog
+      href: learning-catalog/learning-catalog.md
+    - name: App Maker
+      href: learning-catalog/learning-catalog-app-maker.md
+    - name: Administrator
+      href: learning-catalog/learning-catalog-administrator.md
+    - name: Developer
+      href: learning-catalog/learning-catalog-developer.md
+    - name: Functional Consultant
+      href: learning-catalog/learning-catalog-functional-consultant.md      
+    - name: Partner Presales Roles
+      href: learning-catalog/learning-catalog-sales.md
 - name: Automated flows
   items:
   - name: Create a flow from scratch
@@ -56,6 +72,24 @@
     href: run-scheduled-tasks.md
   - name: Process a list of items
     href: apply-to-each.md
+- name: Approval flows
+  items:
+  - name: Single approvals
+    href: modern-approvals.md
+  - name: Approvals with attachments
+    href: approval-attachments.md
+  - name: Sequential approvals
+    href: sequential-modern-approvals.md
+  - name: Parallel approvals
+    href: parallel-modern-approvals.md
+  - name: Everyone must approve
+    href: all-assigned-must-approve.md
+  - name: Integrated approvals
+    href: common-data-model-approve.md
+  - name: Format approval requests
+    href: approvals-markdown-support.md
+  - name: Custom approval response options
+    href: create-approval-response-options.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -64,12 +98,16 @@
     href: create-business-process-flow.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
+  - name: Add custom controls to business process flows
+    href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
-- name: UI flows (Preview)
+- name: UI flows
   items:
   - name: Introduction to UI flows
     href: ./ui-flows/overview.md
+  - name: Upgrade UI flows from previous releases
+    href: ./ui-flows/upgrade.md
   - name: Set up UI flows
     href: ./ui-flows/setup.md
   - name: Create and test desktop UI flows
@@ -78,13 +116,16 @@
     href: ./ui-flows/edit-desktop.md
   - name: Use inputs and outputs in desktop UI flows
     href: ./ui-flows/inputs-outputs-desktop.md
+    items:
+    - name: Use Input Method Editors (IMEs) in UI flows
+      href: ./ui-flows/use-ime.md
   - name: Create and test Web UI flows
     href: ./ui-flows/create-web.md
   - name: Edit Web UI flows
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
     href: ./ui-flows/inputs-outputs-web.md
-  - name: Run UI flows
+  - name: Run attended and unattended UI flows
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
@@ -154,22 +195,28 @@
     href: visio-flows.md
   - name: "Reference: Use functions in expressions"
     href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
-  - name: Approval flows
+  - name: Use adaptive cards to model flows
     items:
-    - name: Single approvals
-      href: modern-approvals.md
-    - name: Sequential approvals
-      href: sequential-modern-approvals.md
-    - name: Parallel approvals
-      href: parallel-modern-approvals.md
-    - name: Everyone must approve
-      href: all-assigned-must-approve.md
-    - name: Integrated approvals
-      href: common-data-model-approve.md
-    - name: Format approval requests
-      href: approvals-markdown-support.md
-    - name: Custom approval response options
-      href: create-approval-response-options.md
+    - name: Overview of adaptive cards for Teams
+      href: overview-adaptive-cards.md
+    - name: Create adaptive cards for Teams
+      href: create-adaptive-cards.md
+    - name: Sample - Candidate feedback
+      href: candidate-feedback-sample.md
+    - name: Sample - Image share
+      href: image-share-sample.md
+    - name: Sample - Lead collection
+      href: lead-collection-sample.md
+    - name: Sample - Poll generator
+      href: poll-generator-sample.md
+    - name: Sample - Metadata update
+      href: metadata-update-sample.md
+    - name: Sample - Daily weather
+      href: daily-weather-sample.md
+    - name: Sample - Acronym form
+      href: acronym-sample.md
+    - name: Sample - Lead generation
+      href: lead-collection-sample.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template

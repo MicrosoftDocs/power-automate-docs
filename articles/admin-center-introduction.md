@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # The Admin Center
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
@@ -30,7 +30,7 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Access the Admin center
 
-* Browse to https://admin.flow.microsoft.com to access the Power Automate admin center.
+* Browse to [the Power Automate admin center](https://admin.flow.microsoft.com).
 
 ## Environments
 

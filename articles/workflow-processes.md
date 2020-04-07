@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 # Classic Common Data Service workflows 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
 

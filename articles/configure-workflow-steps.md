@@ -1,5 +1,5 @@
 ---
-title: "Configure workflow stages and steps in PowerApps | MicrosoftDocs"
+title: "Configure workflow stages and steps in Power Apps | MicrosoftDocs"
 description: "Learn how to configure workflow steps"
 ms.custom: ""
 ms.date: 06/27/2018
@@ -20,7 +20,7 @@ search.audienceType:
   - enduser
 ---
 # Configure workflow stages and steps
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 When you design workflows you have the option to contain the logic you want to perform in stages and steps.  
   

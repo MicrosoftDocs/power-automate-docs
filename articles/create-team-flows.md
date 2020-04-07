@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create team flows
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Create a team flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
 * View the flow's history (that is, each run).

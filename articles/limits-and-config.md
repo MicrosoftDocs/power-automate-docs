@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/30/2019
+ms.date: 03/26/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Limits and configuration in Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 This topic contains information about the current limits and configuration details for flows.
 
 ## Request limits
@@ -44,11 +44,11 @@ These are limits for a single outgoing request.
 
 ### Retry policy
 
-| Name | Limit |
-| --- | --- |
-| Retry attempts |90 | The default is 4. To change the default use action settings | 
-| Retry max delay |1 day | |
-| Retry min delay |5 seconds | |
+| Name | Limit |Notes|
+| --- | --- | --- |
+| Retry attempts |90 | The default is 2. To change the default, use action settings. | 
+| Retry max delay |1 day |  |
+| Retry min delay |5 seconds |  |
 
 ## Run duration and retention
 These are the limits for a single flow run.
@@ -68,16 +68,16 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Apply to each items - Free license|5,000 |You can use the filter action to filter larger arrays as needed. |
-| Apply to each items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|100,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Office 365 and Free licenses|5,000 |You can use the filter action to filter larger arrays as needed. |
+| Apply to each items - Plan 1, Plan 2, Per User, and Per Flow licenses|100,000 |You can use the filter action to filter larger arrays as needed. |
 | Until iterations |5,000 | |
-| SplitOn items - Free license |5,000 ||
-| SplitOn items - Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
+| SplitOn items - Office 365 and Free licenses |5,000 ||
+| SplitOn items - Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
 | Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trials | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
 |Actions executions per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
 | Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
-| Actions executions per 24 hours – Free, Office365, Plan 1 licenses and trials | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
+| Actions concurrent outgoing calls – Plan 2, Per User, and Per Flow licenses | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
 ## Throughput limits
 
@@ -97,14 +97,14 @@ These are limits for a single flow.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
-| Actions per workflow |500 |You can add nested workflows to extend this as needed. |
+| Actions per workflow |500|You can add nested workflows to extend this as needed. |
 | Allowed action nesting depth |8 |You can add nested workflows to extend this as needed. |
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |
 | `description` length limit |256 | |
 
 ## SharePoint limits
-There are [limitations](https://powerapps.microsoft.com/tutorials/connection-sharepoint-online/) on how you can use Microsoft SharePoint with Power Automate and PowerApps.
+There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
 
 ## IP address configuration
 The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
@@ -143,7 +143,7 @@ login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secu
 graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph API - for getting user information such as a profile photo.
 *.azure-apim.net|https|Access to the Runtime for Connectors.
 *.flow.microsoft.com|https|Access to the Power Automate site.
-*.powerapps.com|https|Access to the PowerApps site.
+*.powerapps.com|https|Access to the Power Apps site.
 *.azureedge.net|https|Access to the Power Automate CDN.
 nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 webshell.suite.office.com|https|Access to Office for header and search. Please see [the Office 365 urls and ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details

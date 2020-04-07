@@ -1,6 +1,6 @@
 ---
 title: Data groups for Power Automate | Microsoft Docs
-description: Introduction to Data groups for Microsoft PowerApps and Power Automate.
+description: Introduction to Data groups for Microsoft Power Apps and Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,12 +22,12 @@ search.audienceType:
   - admin
 ---
 # Learn all about data groups
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## What is a data group?
 Data groups are a simple way to categorize services within a [data loss prevention (DLP) policy](prevent-data-loss.md). The two data groups available are the **Business data only** group and the **No business data allowed** group. Organizations are free to determine which services are placed into a particular data group. A good way to categorize services is to place them in groups, based on the impact to the organization. By default, all services are placed into the **No business data allowed** data group. You manage the services in a data group when you create or modify the properties of a DLP policy from the admin center.
 
 ## How data is shared between data groups
-Data cannot be shared among services located in different groups. For example, if you place SharePoint and Salesforce in the **Business data only** group and you place Facebook and Twitter in the **No business data allowed** group, you cannot create a flow that moves data between SharePoint and Facebook. While data cannot be shared among services in different groups, you can share data among the services within a specific group. So, going back to the earlier example, since SharePoint and Salesforce were placed in the same data group, flows that your end users create can share data between SharePoint and Salesforce. Similarly, end users can create flows and PowerApps that share data between Facebook and Twitter. The key point is that services in a specific group can share data, while services in different groups cannot share data.  
+Data cannot be shared among services located in different groups. For example, if you place SharePoint and Salesforce in the **Business data only** group and you place Facebook and Twitter in the **No business data allowed** group, you cannot create a flow that moves data between SharePoint and Facebook. While data cannot be shared among services in different groups, you can share data among the services within a specific group. So, going back to the earlier example, since SharePoint and Salesforce were placed in the same data group, flows that your end users create can share data between SharePoint and Salesforce. Similarly, end users can create flows and Power Apps that share data between Facebook and Twitter. The key point is that services in a specific group can share data, while services in different groups cannot share data.  
 
 Additionally, one data group must be designated as the *default* group. Initially, the **No business data allowed** group is the *default* group and all services are in the data group. An administrator can change the default data group to the **business data only** data group. **Note** any new services that are added to flow will be placed in the designated *default* group. For this reason, we recommend you keep the **No business data allowed** as the default group and manually add services into the **Business data only** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
 

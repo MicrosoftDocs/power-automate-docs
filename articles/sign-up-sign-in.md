@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -23,18 +23,17 @@ search.audienceType:
 ---
 # Sign up and sign in for Power Automate
 
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 Starting with Power Automate, as an individual, is easy! Before you can create a flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 ## Sign up free
 If you haven't used other online Microsoft products, you'll need to sign up.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign up free** in the upper-right corner.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Try free** in the upper-right corner.
 2. Enter your email address.
-3. Click or tap the right arrow.
+3. Select the right arrow.
 
     ![Sign-up link](./media/sign-up-sign-in/signup.png)
 

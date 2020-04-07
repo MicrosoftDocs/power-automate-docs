@@ -15,7 +15,7 @@ search.audienceType:
 ---
 
 # Replace classic Common Data Service workflows with flows
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 This topic compares Power Automate capabilities with classic workflow.
 

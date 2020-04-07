@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Run flows on a schedule
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Create a flow that performs one or more tasks (such as sending a report in email):
 
 * once a day, an hour, or a minute

@@ -1,5 +1,5 @@
 ---
-title: "Create a business process flow in PowerApps | MicrosoftDocs"
+title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
 ms.date: 08/17/2018
@@ -11,7 +11,7 @@ ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
-  - "powerapps"
+  - "Power Apps"
 ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
 author: "Mattp123"
@@ -24,9 +24,9 @@ search.audienceType:
   - enduser
 ---
 # Tutorial: Create a business process flow to standardize processes
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-This tutorial shows you how to create a business process flow with PowerApps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+
+This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
   

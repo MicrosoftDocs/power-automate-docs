@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow that uses the Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 Improve operational efficiency with a unified view of business data by creating flow that uses the [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
 For example, leverage the Common Data Service within Power Automate in these key ways:
@@ -36,9 +36,9 @@ For example, leverage the Common Data Service within Power Automate in these key
 
 **Prerequisites**
 
-* Sign up for [Power Automate](https://flow.microsoft.com) and [PowerApps](https://web.powerapps.com).
+* Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
   
-    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
+    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 * If you haven't used the Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
 ## Sign in to your Environment

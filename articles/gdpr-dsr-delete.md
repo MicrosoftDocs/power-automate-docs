@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Delete Requests for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 
@@ -48,28 +48,28 @@ The following table shows which personal data is automatically deleted and which
 
 For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
-* **Website access:** sign in to the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/)
+* **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/)
 
-* **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell access:**  [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Here is the breakdown of experiences that are available for an administrator to delete each types of personal data within each type of resource:
 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
-|Environment|Power Automate Admin Center|PowerApps cmdlets||
-|Environment permissions*|Power Automate Admin Center|PowerApps cmdlets||
+|Environment|Power Automate Admin Center|Power Apps cmdlets||
+|Environment permissions*|Power Automate Admin Center|Power Apps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed |||Deleted through 28 day retention policy|
 |User jobs|| ||
 |Flows|Power Automate Maker Portal**|||
 |Flow permissions|Power Automate Maker Portal|||
-|User details||PowerApps cmdlets||
+|User details||Power Apps cmdlets||
 |Connections|Power Automate Maker Portal| ||
 |Connection permissions|Power Automate Maker Portal| ||
 |Custom connector|Power Automate Maker Portal| ||
 |Custom connector permissions|Power Automate Maker Portal| ||
-|Approval History|Microsoft PowerApps Maker Portal*|||
+|Approval History|Microsoft Power Apps Maker Portal*|||
 
 *With the introduction of the Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database instance. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use the Common Data Service.
 
@@ -134,7 +134,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
  Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
-1. Sign into [PowerApps](https://web.powerapps.com/).
+1. Sign into [PowerApps](https://make.powerapps.com/).
 
 1. Select **Data**, and then select **Entities**.
 
@@ -149,9 +149,9 @@ Please see [Executing DSRs against Common Data Service Customer Data](https://go
 
 Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems.  Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
-PowerApps Maker PowerShell cmdlets
+Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connections by using the Remove-Connection function from the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connections by using the Remove-Connection function from the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -160,7 +160,7 @@ Add-PowerAppsAccount
 Get-AdminPowerAppConnection | Remove-Connection
 ```
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -173,9 +173,9 @@ Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
 
 ## Delete the user’s permissions to shared connections
 
-PowerApps Maker PowerShell cmdlets
+Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connection role assignments for shared connections Remove-ConnectionRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connection role assignments for shared connections Remove-ConnectionRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -184,7 +184,7 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -203,9 +203,9 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 
 Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. Custom Connectors do include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
-PowerApps Maker PowerShell cmdlets
+Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their custom connectors the Remove-Connector function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their custom connectors the Remove-Connector function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -214,7 +214,7 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -226,9 +226,9 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 ## Delete the user’s permissions to shared custom connectors
 
-PowerApps Maker PowerShell cmdlets
+Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [PowerApps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -237,7 +237,7 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 ```PowerShell
 Add-PowerAppsAccount
 
@@ -284,7 +284,7 @@ Responding to Data Subject Delete Requests for On-Premise Data Gateways can be f
 
 User details provide a linkage between a user and a specific tenant. Before running this command, ensure that all flows for this user have been re-assigned and/or deleted. Once that has been completed, an administrator can delete user details by calling the **Remove-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 ```PowerShell
 Add-PowerAppsAccount
 Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80

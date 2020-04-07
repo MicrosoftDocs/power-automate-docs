@@ -18,7 +18,7 @@ ms.author: deonhe
 ---
 
 # Power Automate mobile app supports Microsoft Intune
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 The Power Automate mobile app for iOS and Android supports Intune's Mobile Application Management (MAM) without device enrollment. Using MAM allows IT administrators to create and enforce mobile data policies to safeguard organizational data.
 

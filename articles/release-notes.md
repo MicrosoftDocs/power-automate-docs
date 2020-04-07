@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Release notes
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 ## Top questions
 1. My flow failed. How do I fix it?
    
@@ -45,14 +45,9 @@ search.audienceType:
 
 ## What's new
 
-> [!IMPORTANT]
->
-> **Announcing the release notes**
->
-> Wondering about upcoming and recently released capabilities in Power Automate?
->[View the October 2018 release notes](https://docs.microsoft.com/business-applications-release-notes/October18/microsoft-flow/). We've captured all the details, end to end, top to bottom, which you can use for planning. For more details, review [each weekly release](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) with the features and enhancements that it contains.
->
-> The release notes prior to the October 2018 release will remain here for future reference, but all new releases will only be included in the above locations and not on this page.
+For information about new features released for Power Automate, visit:
+- [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
+- [Weekly release notes](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 
@@ -68,7 +63,7 @@ search.audienceType:
 ### Release 2018-08-31
 
 - **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Power Automate designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
-- **Five new connectors** - We've added four new management connectors: PowerApps for App Makers, Power platform for Admins, PowerApps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
+- **Five new connectors** - We've added four new management connectors: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
@@ -137,7 +132,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-12
 
-- **Return data to PowerApps from a flow** - Build flows that can be called from an app built with PowerApps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
+- **Return data to Power Apps from a flow** - Build flows that can be called from an app built with Power Apps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
 - **Add multiple records to array inputs** - Added a list builder into Power Automate that can be used for adding multiple attachments to an email, for example.
 - **Test flows with previous run data** - Added a new Test flow button to the designer that lets you test your flow with trigger data from previous flow runs.
 - **New workflow() fields** - You can now access environment name and flow display name with the workflow() expression.
@@ -357,7 +352,7 @@ You can now view the status of all of the pending approval requests you have sen
 * **Emails on flow failures** - Get notified via email when you have a flow that fails. These failure emails will only be sent out once a week, and can be turned on or off by the user.
 * **Select action for tables** -  Use the new Select action to change the set of columns that will be included in tables.
 * **Microsoft Forms connector** -  Microsoft Forms is a new part of Office 365 Education that allows teachers and students to create custom quizzes quickly and easily, surveys, questionnaires, registrations and more.
-* **Office 365 Enterprise K1 plan** - PowerApps and Power Automate are now included with the Office 365 Enterprise K1 plan with certain quotas.
+* **Office 365 Enterprise K1 plan** - Power Apps and Power Automate are now included with the Office 365 Enterprise K1 plan with certain quotas.
 * **HTTP headers are easier** - Just like the Select action you can provide a header name and header value by just filling out the text boxes on the action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/microsoft-forms-tables-flow-failures/) about this release.
@@ -377,8 +372,8 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-05-12
 * **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
-* **Admin view of licenses** - Administrators can see all of the Power Automate and PowerApps licenses (both trial and paid) in the Power Automate Admin Center.
-* **PowerApps Community Plan** -  The PowerApps Community plan is a free plan for individuals to explore, learn, and build skills for PowerApps, Power Automate, and Common Data Service.
+* **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate Admin Center.
+* **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Common Data Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
 
@@ -435,7 +430,7 @@ You can now view the status of all of the pending approval requests you have sen
 
 ### Release 2017-03-10
 * **Improved custom connector experience** - You can now use a Postman collection to create a custom connector, and edit, add, and test actions.
-* **Two new services** - Added PowerApps Notifications and PivotalTracker support.
+* **Two new services** - Added Power Apps Notifications and PivotalTracker support.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/new-updates-custom-api/) about this release.
 
@@ -637,7 +632,7 @@ On-premises connectivity for Power Automate using the on-premises data gateway. 
 
 ### Release 2016-05-27
 * **Browse templates by service** - There is a now a way to see all of the services that we support (without having to log in). From this page you can see a description of each of the services, and check out the templates that we have for that service.
-* **Create and use your custom connectors** - Just like you can create custom connectors in PowerApps, you can also connect to your own APIs right at flow.microsoft.com:
+* **Create and use your custom connectors** - Just like you can create custom connectors in Power Apps, you can also connect to your own APIs right at flow.microsoft.com:
 * **Test your flows before finishing** - Whenever you save a flow you can now see the results of the flow run live in the page, if you perform the starting action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) about this release.
@@ -646,7 +641,7 @@ On-premises connectivity for Power Automate using the on-premises data gateway. 
 Added two new services: Microsoft Project Online and Mandrill by Mailchimp. [Read more and ask questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-webinars/) about this release.
 
 ### Release 2016-04-27 - Public Preview
-If you used Logic flows as part of [Microsoft PowerApps](https://powerapps.microsoft.com), the Power Automate Preview release offers several new features:
+If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.microsoft.com), the Power Automate Preview release offers several new features:
 
 * You can now browse a gallery of dozens of templates and sort by Popularity, Name, or Date published.
 * You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.

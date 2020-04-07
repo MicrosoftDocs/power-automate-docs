@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create an automated flow by using Common Data Service
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service database.
 
@@ -65,6 +65,9 @@ This flow triggers any time the first or last name of contact that the flow user
 
 > [!div class="mx-imgBorder"]
 > ![Filter attributes](./media/cds-connector/FilterAttributes.png)
+
+> [!IMPORTANT]
+> [Multi Select Option Sets](/powerapps/maker/common-data-service/custom-picklists) cannot be used within a workflow. Including one will result in an error indicating a missing "required field"
 
 ## Trigger privileges
 

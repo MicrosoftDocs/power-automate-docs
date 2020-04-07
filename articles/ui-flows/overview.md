@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/06/2019
+ms.date: 02/26/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -21,21 +21,15 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Preview: Introduction to UI flows
 
-[This topic is pre-release documentation and is subject to change.]
+# Introduction to UI flows
 
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+UI flows brings Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
-<br>
-<iframe width="1129" height="635" src="https://www.youtube.com/embed/bZrrdoytTH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
 
-UI flows provides Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+> [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - A preview feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
-> - The UI flows feature is currently rolling out across regions. If you don't see the feature in your environement, can't create UI flows, or get an error when you try to run it within a flow, please retry later.
 
 You can jump right in:
 

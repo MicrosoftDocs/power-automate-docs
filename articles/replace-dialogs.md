@@ -23,7 +23,7 @@ search.audienceType:
   - enduser
 ---
 # Replace dialogs with business process flows or canvas apps
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 [Dialogs are deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
 
@@ -100,7 +100,7 @@ Finally, [define navigation across screens](/powerapps/maker/canvas-apps/functio
 
 To make this app available to users, publish the app. Consider how such a scenario might be transformed through the availability of a standalone app that provides call scripts and supports quick data entry.
 
-Imagine you want to embed this experience in Dynamics 365 Sales. To do this, begin with creating an iframe on a Dynamics 365 Sales form. Next, navigate to the **Apps** section from the PowerApps menu, select the app you just published, copy the web link under the **Details** tab and paste it as the URL for the iframe. 
+Imagine you want to embed this experience in Dynamics 365 Sales. To do this, begin with creating an iframe on a Dynamics 365 Sales form. Next, navigate to the **Apps** section from the Power Apps menu, select the app you just published, copy the web link under the **Details** tab and paste it as the URL for the iframe. 
 
 Taking this a step further, suppose you’d like for this app to be available right within the lead main form, and be in the context of the lead so that the app doesn’t require the user to select a lead in the first screen. To pass relevant information to the app, you simply modify the iframe URL to append a query string containing this information, such as lead or account Ids, using JavaScript that runs on a certain event, such as on form load. Next, update the app to remove the first screen (for lead selection) and instead access the values passed to the app via the query string using the [Param function](/powerapps/maker/canvas-apps/functions/function-param).
 
@@ -121,6 +121,6 @@ Can I automatically convert dialogs to business process flows or canvas apps?
 
 ## See also
 [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) </br>
-[What are canvas apps in PowerApps?](/powerapps/maker/canvas-apps/getting-started)
+[What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 

@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create a flow by using Dynamics 365 (online)
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
 In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
@@ -119,7 +119,7 @@ When you add a value to a field, you must match the field type whether you type 
 |Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of fields that require both a record ID and lookup type
-Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in PowerApps.
+Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in Power Apps.
 
 * **Owner** and **Owner Type**.
   

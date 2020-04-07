@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Using environments within Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 ## Benefits
 
@@ -33,7 +33,7 @@ Environments provide the following benefits:
     If your users are in Europe, create and use the environment in the Europe region. If your users are in the United States, create and use the environment in the U.S. 
 
     > [!IMPORTANT]
-    > If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, PowerApps, and more.
+    > If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, Power Apps, and more.
 * **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use data loss prevention to control which services can share data within your Power Automate deployment.
 
     For example, you can add the *SharePoint* and *OneDrive for Business* services to a business data only policy. Any flows created in this environment can use *SharePoint* and *OneDrive for Business* services. However, they won't be able to share data with other services that aren't included in the business data only policy.
@@ -171,7 +171,7 @@ Yes, flows can be exported from one environment and imported into another enviro
 
 ### Which license includes the Common Data Service?
 
-Only Microsoft PowerApps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft PowerApps plans 1 and 2) have the rights to use the Common Data Service.
+Only Microsoft Power Apps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft Power Apps plans 1 and 2) have the rights to use the Common Data Service.
 
 Choose a plan that's right for you by visiting the [Power Automate pricing](https://flow.microsoft.com/pricing/) page.
 

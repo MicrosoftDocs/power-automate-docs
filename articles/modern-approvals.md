@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 # Create and test an approval workflow with Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 

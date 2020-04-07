@@ -22,7 +22,7 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Export Requests for Power Automate
-[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+
 
 As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Power Automate.
 
@@ -32,9 +32,9 @@ The *right of data portability* allows a data subject to request a copy of their
 
 Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [PowerApps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/).
+* **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/).
 
-* **PowerShell access:**  [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell access:**  [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Customer data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
@@ -42,11 +42,11 @@ Power Automate offers the following experiences to find or export personal data 
 |Run history|Power Automate Maker Portal||
 |Flows|Power Automate Maker Portal||
 |Flow permissions| Power Automate Maker Portal and Power Automate Admin Center||
-|User details||PowerApps cmdlets|
-|Connections|Power Automate Maker Portal|PowerApps cmdlets |
-|Connection permissions|Power Automate Maker Portal|PowerApps cmdlets |
-|Custom connectors|Power Automate Maker Portal|PowerApps cmdlets |
-|Custom connector permissions|Power Automate Maker Portal|PowerApps cmdlets |
+|User details||Power Apps cmdlets|
+|Connections|Power Automate Maker Portal|Power Apps cmdlets |
+|Connection permissions|Power Automate Maker Portal|Power Apps cmdlets |
+|Custom connectors|Power Automate Maker Portal|Power Apps cmdlets |
+|Custom connector permissions|Power Automate Maker Portal|Power Apps cmdlets |
 |Gateway|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 |Gateway permissions|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 
@@ -105,7 +105,7 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -118,13 +118,13 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## Export a list of a user’s connection permissions
 
-A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
 ```
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -148,14 +148,14 @@ Follow these steps to export a list of customer connectors:
 
     ![Export custom connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
 
-In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [PowerApps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
+In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
 
 ~~~~
 Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
 ~~~~
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -168,14 +168,14 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## Export a user’s custom connector permissions
 
-A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [PowerApps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
 ```
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -201,7 +201,7 @@ Power Automate Approvals History captures a historical record of approvals that 
 ## Export User Details
 User details provide a linkage between a user and a specific tenant. An administrator can export this information by calling the **Get-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.
 
-PowerApps Admin PowerShell cmdlets
+Power Apps Admin PowerShell cmdlets
 
 ```PowerShell
 Add-PowerAppsAccount

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2019
+ms.date: 02/28/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,20 +23,16 @@ search.audienceType:
 ---
 # Create and test your Web UI flows
 
-[This topic is pre-release documentation and is subject to change.]
-
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
-
-Follow these steps to create a simple Web UI flow:
+Follow these steps to create a simple Web UI flow.
 
 ## Create a Web UI flow
 
-1. Open the [next version of Microsoft
-   Edge](https://www.microsoftedgeinsider.com/) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
+1. Open the [Microsoft
+   Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
 
 1. Sign in with your work or school account if needed.
 
-1. Select **My flows** > **UI flows (preview)** > **New**.
+1. Select **My flows** > **UI flows** > **New**.
 
    ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
@@ -58,7 +54,7 @@ Follow these steps to create a simple Web UI flow:
 
 1. In Selenium IDE, select the red **REC** button in the top right side of the screen to launch the recorder.
 
-   The the URL you chose in the previous step opens.
+   The URL you chose in the previous step opens.
 
    ![Select Rec](../media/create-web-ui-flow/select-rec.png "Select Rec")
 
@@ -92,9 +88,7 @@ Now that you've created a Web UI flow, use it in your other flows.
 
 **UI flows no longer records or plays back Windows applications after installing a new version.**
 
-You need to uninstall the previous version before installing a new one.
-
-For that, open the Start menu, go to **Settings** > **Apps**, search for **UI flows** in the list of apps > **UI flows (Preview)**, and then select "Uninstall". The wizard will guide you through the process.
+Confirm you are using the [latest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
 
 **Temporary user profile for playback**
 
@@ -127,3 +121,4 @@ To address this, the user needs to manually edit the script to insert the comman
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 
+ 
