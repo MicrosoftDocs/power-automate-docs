@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2019
+ms.date: 04/06/2020
 search.app: 
   - Flow
 search.audienceType: 
@@ -37,9 +37,9 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 ## Create a flow that requests manager approval for a file in OneDrive for Business
 
 1. Sign into OneDrive for Business.
-1. Find, and then select the file on which you want to create the flow.
+1. Find, and then select the file for which you want to create the flow.
 1. Select the **Show actions** link (three dots).
-1. Select **Flow** > **Create a flow**.
+1. Select **Automate** > **Power Automate** > **Create a flow**.
 
      ![Create flow](./media/onedrive-launch-panel/create-flow.png) 
 
