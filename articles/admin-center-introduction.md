@@ -30,7 +30,7 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Access the Admin center
 
-* Browse to [https://admin.flow.microsoft.com](https://admin.flow.microsoft.com) to access the Power Automate admin center.
+* Browse to [the Power Automate admin center](https://admin.flow.microsoft.com).
 
 ## Environments
 
