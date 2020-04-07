@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/29/2019
+ms.date: 04/06/2020
 ms.author: deonhe
 ---
 
@@ -35,9 +35,15 @@ You must be a SharePoint site admin to perform the activities in this article.
 
     ![Select page approval flow](media/customize-sharepoint-page-approvals/pages.png)
 
-1. Select **Flow** and then select **Configure page approval flow**.
+1. Select **Automate** > **Power Automate** > **Configure page approval flow**.
     
     ![Select page approval flow](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
+
+1. Select **Create flow**.
+
+1. Optionally, you might need to sign into the the services that this Power Automate template uses.
+
+1. Select **Continue**.
 
 1. Provide a **Flow name**, at least one name in the  **Approvers** box, and then select **Create**.
     
