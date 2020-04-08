@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2017
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -37,7 +37,7 @@ Power Automate has two distinct audiences:
 Power Automate provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Power Automate, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
 
 ### How does Power Automate fit in Microsoft’s overall business application platform strategy?
-Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, the Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways and the Microsoft Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
+Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
 ## Functionality
 ### What do I need to use Power Automate?
@@ -92,7 +92,7 @@ You can access data sources in your own IT infrastructure through the [on-premis
 Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
 ### What data sources will I be able to connect to?
-You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and the Common Data Service for Power Apps.
+You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and Common Data Service.
 
 ### How do I connect to a REST API in my flow?
 You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](developer/register-custom-api.md).

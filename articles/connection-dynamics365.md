@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/06/2017
+ms.date: 04/06/2020
 ms.author: matp
 search.app: 
   - Flow
@@ -28,7 +28,7 @@ By using a Dynamics 365 connector, you can create flows that initiate when an ev
 In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> To invoke a flow trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> To invoke a Power Automate trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## Create a flow from a template
 You can create a flow using one of the many templates available, such as these examples:
