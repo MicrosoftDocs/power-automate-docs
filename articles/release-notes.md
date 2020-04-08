@@ -594,7 +594,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 [Read more and ask questions](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) about this release.
 
 ### Release 2016-08-08
-Public preview of the Microsoft Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05
 * **SharePoint On-Premises** - Just like with SharePoint Online, you can create flows around your SharePoint on-premises lists and doc libraries either using pre-defined templates or by building them from scratch.

@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Build an approval loop by using Power Automate and Microsoft Common Data Service
+# Build an approval loop by using Power Automate and Common Data Service
 
 Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
 
