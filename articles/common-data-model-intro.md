@@ -1,6 +1,6 @@
 ---
 title: Common Data Service | Microsoft Docs
-description: Create a flow to import data, export data, or build approvals with the Common Data Service.
+description: Create a flow to import data, export data, or build approvals with Common Data Service.
 services: ''
 suite: flow
 documentationcenter: na
