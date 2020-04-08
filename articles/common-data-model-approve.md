@@ -1,11 +1,11 @@
 ---
-title: Build an approval loop with the Common Data Service | Microsoft Docs
+title: Build an approval loop with Common Data Service | Microsoft Docs
 description: Create an entity, a flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
 services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Build an approval loop by using Power Automate and the Microsoft Common Data Service
+# Build an approval loop by using Power Automate and Microsoft Common Data Service
 
-The Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
+Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
 
 In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.
 
@@ -134,7 +134,7 @@ By following the steps in this section, you'll build:
     ![Add an action](./media/common-data-model-approve/add-action.png)
 2. In the box that contains **Search for more actions**, type or paste **Common Data Service**, and then click or tap **Common Data Service - Create object**.
    
-    ![Create an object in the Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
+    ![Create an object in Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
 3. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
    
     ![Choose the entity](./media/common-data-model-approve/choose-entity-flow.png)
