@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/31/2018
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -22,6 +22,9 @@ search.audienceType:
   - enduser
 ---
 # Release notes
+
+>[!NOTE]
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/)
 
 ## Top questions
 1. My flow failed. How do I fix it?
@@ -648,6 +651,9 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 * You can see the history for every check and run of your flow.
 * When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+
+>[!NOTE]
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/)
 
 ## Next steps
 If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
