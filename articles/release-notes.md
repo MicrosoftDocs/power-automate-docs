@@ -24,7 +24,7 @@ search.audienceType:
 # Release notes
 
 >[!NOTE]
->Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/)
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## Top questions
 1. My flow failed. How do I fix it?
@@ -653,7 +653,7 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
->Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/)
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## Next steps
 If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
