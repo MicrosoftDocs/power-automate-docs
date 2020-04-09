@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2019
+ms.date: 04/06/2020
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -24,7 +24,7 @@ search.audienceType:
 # Create an automated flow by using Common Data Service
 
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within the Common Data Service database.
+With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
 
 ## Initiate a flow from Common Data Service
 

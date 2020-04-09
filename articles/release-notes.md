@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/31/2018
+ms.date: 04/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -22,6 +22,9 @@ search.audienceType:
   - enduser
 ---
 # Release notes
+
+>[!NOTE]
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## Top questions
 1. My flow failed. How do I fix it?
@@ -86,7 +89,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-07-23
 
 - **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Power Automate on your table data in Excel. Automate data processing or the copying/importing of data.
-- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on the Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
+- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
 - **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
 - **Four new connectors** - Added Azure IoT Central - a highly scalable IoT software-as-a-service (SaaS) solution - Survey 123, LMS365 and ProjectWise Design Integration.
@@ -141,7 +144,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-04
 
-- **Approvals on the Common Data Service** - Modern approvals are built on the latest version of the Common Data Service. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
+- **Approvals on Common Data Service** - Modern approvals are built on the latest version of Common Data Service. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
@@ -591,7 +594,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 [Read more and ask questions](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) about this release.
 
 ### Release 2016-08-08
-Public preview of the Microsoft Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05
 * **SharePoint On-Premises** - Just like with SharePoint Online, you can create flows around your SharePoint on-premises lists and doc libraries either using pre-defined templates or by building them from scratch.
@@ -648,6 +651,9 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 * You can see the history for every check and run of your flow.
 * When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+
+>[!NOTE]
+>Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## Next steps
 If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).

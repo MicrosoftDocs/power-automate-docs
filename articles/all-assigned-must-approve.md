@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/27/2018
+ms.date: 04/07/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -134,5 +134,5 @@ Here's an example of what a response and a response summary may look like after 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)
 * [Parallel modern approvals](parallel-modern-approvals.md)
-* [Approvals and the Microsoft Common Data Service](common-data-model-approve.md)
+* [Approvals and Common Data Service](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)

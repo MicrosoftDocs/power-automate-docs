@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2017
+ms.date: 04/07/2020
 ms.author: sunayv
 search.app: 
   - Flow
@@ -46,9 +46,9 @@ Environments provide the following benefits:
 
   * Insert data into an Excel file, and store the Excel file in a cloud storage account, such as OneDrive.
   * Create a SQL Database, and then store your data in it.
-  * Use the Common Data Service to store your data.
+  * Use Common Data Service to store your data.
 
-    Every environment can have a maximum of one database for your flows in the Common Data Service. Access to the Common Data Service depends on the license you've purchased; the Common Data Service isn't included with the Free license.
+    Every environment can have a maximum of one database for your flows in Common Data Service. Access to Common Data Service depends on the license you've purchased; Common Data Service isn't included with the Free license.
 
 ## Limitations
 
@@ -143,7 +143,7 @@ You can now add users to the environment.
     You'll see all existing permission sets and options to edit or delete roles.
 
     Select **New permission set** to create a new permission set.
-1. If you did choose to **Create Database**, to store your data, this database is part of the Common Data Service. When you click on the **Security** tab you will be prompted to navigate to the **Dynamics 365 instance management center** where role-based security can be applied.
+1. If you did choose to **Create Database**, to store your data, this database is part of Common Data Service. When you click on the **Security** tab you will be prompted to navigate to the **Dynamics 365 instance management center** where role-based security can be applied.
 ![dynamics security settings](./media/environments-overview-admin/Security-Link-D365.png)
 
 1. Select the user from the list of users in the environment / instance.
@@ -169,17 +169,17 @@ The ability to create and modify a database schema and to connect to the data st
 
 Yes, flows can be exported from one environment and imported into another environment.
 
-### Which license includes the Common Data Service?
+### Which license includes Common Data Service?
 
-Only Microsoft Power Apps Plan 2 includes rights to create databases with the Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft Power Apps plans 1 and 2) have the rights to use the Common Data Service.
+Only Microsoft Power Apps Plan 2 includes rights to create databases with Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft Power Apps plans 1 and 2) have the rights to use Common Data Service.
 
 Choose a plan that's right for you by visiting the [Power Automate pricing](https://flow.microsoft.com/pricing/) page.
 
 See the [Billing questions](billing-questions.md) document for answers to frequently asked questions about billing.
 
-### Can the Common Data Service be used outside of an environment?
+### Can Common Data Service be used outside of an environment?
 
-No. The Common Data Service requires an environment. [Read more](common-data-model-intro.md) about it.
+No. Common Data Service requires an environment. [Read more](common-data-model-intro.md) about it.
 
 ### What regions include Power Automate?
 
