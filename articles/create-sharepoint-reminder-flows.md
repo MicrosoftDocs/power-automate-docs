@@ -42,7 +42,7 @@ SharePoint lists and libraries allowed you to define custom metadata columns to 
 
     ![Set reminder flow details](media/create-sharepoint-reminder-flows/set-reminder-details.png)
 
-1. Select **Create** on the **Set a reminder** card.
+1. On the **Set a reminder** card, select **Create** .
 
 1. You'll receive the following message, indicating that the flow was created:
 
