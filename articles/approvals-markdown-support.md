@@ -36,9 +36,6 @@ Structure your comments using headers. Headers segment longer comments, making t
 
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
 
-> [!IMPORTANT]
-> Approval cards posted to Teams do not support markdown headers
-
 **Example:**
 
 ```Markdown
@@ -84,9 +81,6 @@ Organize related items with lists. You can add ordered lists with numbers, or un
 
 Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `*`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
-> [!IMPORTANT]
-> Outlook Desktop does not support numbered lists.
-
 ### Ordered or numbered lists
 
 **Example:**
@@ -122,9 +116,6 @@ Ordered lists start with a number followed by a period for each list item. Unord
 - Item 3
 
 ### Nested lists
-
-> [!IMPORTANT]
-> Outlook Desktop does not nested numbered lists.
 
 **Example:**
 <pre>
@@ -172,29 +163,6 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 [Power Automate](https://flow.microsoft.com)
 
-### Anchor links
-
-Anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case.
-
-**Example:**
-
-<pre>
-###Link to a heading in the page
-</pre>
-
-<br/>
-
-**Result:**
-
-The syntax for an anchor link to a section...
-
-<pre>
-[Link to a heading in the page](#link-to-a-heading-in-the-page)
-</pre> 
-<br/>
-The ID is all lower case, and the link is case sensitive, so be sure to use lower case, even though the heading itself uses upper case.
-
-
 ## Tables
 
 Organize structured data with tables. 
@@ -203,11 +171,8 @@ Organize structured data with tables.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
-- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
+- To start a new line, use the HTML break tag (`<br/>`)
 - Make sure to end each row with a CR or LF. 
-
-> [!IMPORTANT]
-> Approval cards posted to Teams do not support markdown tables
 
 **Example:**
 
@@ -251,10 +216,6 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 **_Bold, italicized text_**   
 **~~Bold, strike-through text~~**  
 
-## Images
-
-**_Standard Markdown image syntax is not supported by Teams, Outlook Desktop, the Power Automate portal, and mobile app_**  
-
 ## Special characters
 
 <table width="650px">
@@ -296,3 +257,13 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 </tbody>
 </table>
+
+## Client Support
+
+| Feature | Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
+|---------|--------|---------------|-----------------|-------------|-------|--------------|
+| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
+| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
+| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
+| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
+| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
