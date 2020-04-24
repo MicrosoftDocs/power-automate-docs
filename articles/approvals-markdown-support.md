@@ -36,6 +36,9 @@ Structure your comments using headers. Headers segment longer comments, making t
 
 Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
 
+> [!IMPORTANT]
+> Approval cards posted to Teams do not support markdown headers
+
 **Example:**
 
 ```Markdown
@@ -81,6 +84,9 @@ Organize related items with lists. You can add ordered lists with numbers, or un
 
 Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `*`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
 
+> [!IMPORTANT]
+> Outlook Desktop does not support numbered lists.
+
 ### Ordered or numbered lists
 
 **Example:**
@@ -116,6 +122,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 - Item 3
 
 ### Nested lists
+
+> [!IMPORTANT]
+> Outlook Desktop does not nested numbered lists.
 
 **Example:**
 <pre>
@@ -197,6 +206,9 @@ Organize structured data with tables.
 - To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)  
 - Make sure to end each row with a CR or LF. 
 
+> [!IMPORTANT]
+> Approval cards posted to Teams do not support markdown tables
+
 **Example:**
 
 ```
@@ -205,9 +217,6 @@ Organize structured data with tables.
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
-
-
-
 
 **Result:**  
 
@@ -242,6 +251,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 **_Bold, italicized text_**   
 **~~Bold, strike-through text~~**  
 
+## Images
+
+**_Standard Markdown image syntax is not supported by Teams, Outlook Desktop, the Power Automate portal, and mobile app_**  
 
 ## Special characters
 
