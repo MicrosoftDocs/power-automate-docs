@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/21/2017
+ms.date: 11/15/2019
 ms.author: deonhe
 search.app: 
   - Flow
@@ -49,7 +49,7 @@ You must have a [paid Power Automate plan](https://flow.microsoft.com/pricing/) 
 Follow these steps to create a team flow or to add more owners to a team flow.
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select **My flows**.
-2. Select the people icon for the flow that you want to modify:
+2. Select **More commands** and then select **Share** for the flow that you want to share:
    
     ![team icon](./media/create-team-flows/addowner1.png)
 3. Enter the name, email address, or group name for the person or group that you want to add as an owner:
@@ -80,18 +80,16 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 > 
 > 
 
-1. Select the people icon for the flow that you want to modify:
+1. Select **More commands** and then select **Share** for the flow that you want to share:
    
-    ![select people icon](./media/create-team-flows/removeowner1.png)
+    ![select people icon](./media/create-team-flows/addowner1.png)
 2. Select the **Delete** icon for the owner that you want to remove:
    
     ![select delete](./media/create-team-flows/removeowner2.png)
 3. On the confirmation dialog box, select **Remove this owner**:
    
     ![confirm removal](./media/create-team-flows/removeowner3.png)
-4. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow:
-   
-    ![user removed](./media/create-team-flows/removeowner4.png)
+4. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow.
 
 
 ## Update connection owner
