@@ -63,6 +63,9 @@ These are the limits for a single flow run.
 |Minimum postpone interval - Free and Plan 1 license|5 seconds||
 |Minimum postpone interval - Plan 2 license|1 second||
 
+>[!TIP]
+>Individual connectors may have their own limits as well.
+
 ## Looping and debatching limits
 These are limits for a single flow run. For daily limits, refer to the [requests limits and allocations](https://aka.ms/platformlimits).
 
