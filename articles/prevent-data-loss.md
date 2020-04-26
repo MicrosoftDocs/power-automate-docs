@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/30/2019
+ms.date: 04/26/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -46,7 +46,7 @@ You create DLP policy to clearly define which consumer connectors may access and
 * Either environment admin or tenant admin permissions.
 
     You can learn more about permissions in the [environments article](environments-overview-admin.md).
-* A [Power Automate P2 license](billing-questions.md).
+
 
 ## Create a DLP policy
 
