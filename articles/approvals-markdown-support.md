@@ -33,6 +33,20 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 > [!IMPORTANT]
 > All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
 
+## Client Support
+
+Not all clients honor the same markdown identically or at all. The Power Automate team works with client owners whenever possible to address these limitations, but some are not possible to fix. Here is a table describing the known limitations across client.
+
+| Feature | PA Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
+|---------|--------|---------------|-----------------|-------------|-------|--------------|
+| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
+| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
+| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
+| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
+| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
+| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes |
+| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes |
+
 ## Headers
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
@@ -244,17 +258,3 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 </tbody>
 </table>
-
-## Client Support
-
-Not all clients honor the same markdown identically or at all. The Power Automate team works with client owners whenever possible to address these limitations, but some are not possible to fix. Here is a table describing the known limitations across client.
-
-| Feature | PA Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
-|---------|--------|---------------|-----------------|-------------|-------|--------------|
-| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes |
-| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes |
