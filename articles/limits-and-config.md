@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/26/2020
+ms.date: 04/26/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -151,5 +151,5 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph A
 nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 webshell.suite.office.com|https|Access to Office for header and search. Please see [the Office 365 urls and ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details
 
-### Approval Email Delivery
-Please see the [Approvals Email Delivery KB Article](https://go.microsoft.com/fwlink/?linkid=2128304) details about Approvals email routing information.
+### Approval email delivery
+Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
