@@ -150,3 +150,6 @@ graph.microsoft.com </br>graph.windows.net</br>|https|Access to Azure AD Graph A
 *.azureedge.net|https|Access to the Power Automate CDN.
 nps.onyx.azure.net|https|Access to NPS (Net Promoter Score).
 webshell.suite.office.com|https|Access to Office for header and search. Please see [the Office 365 urls and ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details
+
+### Approval Email Delivery
+Please see the [Approvals Email Delivery KB Article](https://go.microsoft.com/fwlink/?linkid=2128304) details about Approvals email routing information.
