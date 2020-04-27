@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/23/2018
+ms.date: 4/27/2020
 ms.author: gcorvera
 search.app: 
   - Flow
@@ -35,9 +35,9 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 
 ## Client Support
 
-Not all clients honor the same markdown identically or at all. The Power Automate team works with client owners whenever possible to address these limitations, but some are not possible to fix. Here is a table describing the known limitations across client.
+Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
-| Feature | PA Portal | PA Mobile App | Outlook Desktop | Outlook Web | Teams | Teams Mobile |  
+| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams | Teams mobile app |  
 |---------|--------|---------------|-----------------|-------------|-------|--------------|
 | **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
 | **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
