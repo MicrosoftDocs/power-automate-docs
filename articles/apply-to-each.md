@@ -99,7 +99,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
     <!-- ![add action](./media/apply-to-each/foreach-9.png) -->
 1. Search for **notification**, and then select the **Send me a mobile notification** action:
    
-    ![seach and select notification](./media/apply-to-each/foreach-10.png)
+    ![search and select notification](./media/apply-to-each/foreach-10.png)
 1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now".
    
     ![configure notification](./media/apply-to-each/foreach-11.png)
