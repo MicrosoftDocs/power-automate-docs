@@ -30,18 +30,21 @@ There are many repetitive tasks that we all wish we could run with just a tap of
   ![Overview image](./media/introduction-to-button-flows/buttons-montage.png)  
 
 ## Why create buttons?
-Create buttons so that you can easily run repetitive tasks from anyplace, at anytime via your mobile device. Executing buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
+Create buttons so that you can easily run repetitive tasks from anyplace, at anytime via your mobile device. Running buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
 
 ## Create a button
 ### Prerequisites
-* Access to Flow. Your administrator can provide you with access.
+* Access to Power Automate](https://flow.microsoft.com).
 * An account with permissions to use the connectors to create your button. For example, you will need a Dropbox account in order to create a button that accesses Dropbox.
 
 ### From the portal
-In this walk-through, let's create a button that starts a Visual Studio Online (VSO) build and sends notifications to let you know when the build starts:  
+In this walk-through, let's create a button that starts a Visual Studio Online (VSO) build and sends notifications to let you know when the build starts:
 
-1. Select the **Showing** drop down list and choose the **Button** category. This filters the list of templates to only those that can be used in instant flows.  
-   ![Image showing categories](./media/introduction-to-button-flows/create-button-1.png)   
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Select **Create** from the left side of the screen.
+1. Select **Instant flow**.
+1. Give your flow a name in the **Flow name** > **Manually trigger a flow** > **Create**. 
+ 
 2. Select the **Trigger a new build in VSO** template from the list of templates.  
    ![Image showing templates ](./media/introduction-to-button-flows/create-button-2.png)  
 3. Select the **Use this template** button on the **Trigger a new build in VSO** page.   
