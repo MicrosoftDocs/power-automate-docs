@@ -3,7 +3,7 @@ title: Flows are now stored in Common Data Service and use the rich Web API
 description: Flows are now stored in Common Data Service and use the rich Web API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 03/05/2019
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: business-applications
@@ -43,6 +43,7 @@ To get started creating requests, you'll need to first construct the URL. The fo
      | India          | crm8        |
      | US Government  | crm9        |
      | United Kingdom | crm11       |
+	 |United Arab Emirates |   crm15|
 
 You can also programmatically get the list of instances available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the Online Management API.
 
