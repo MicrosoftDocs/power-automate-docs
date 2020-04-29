@@ -24,10 +24,10 @@ search.audienceType:
 # Create an automated flow by using Common Data Service
 
 >[!IMPORTANT]
->There are three connectors available to connect to Common Data Service. When possible, use the recommended [Common Data Service (current environment) connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) wil be deprecated soon.
+>There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Serivce. The [Common Data Service connector]() and the [Dynamics 365 Connector]() wil be deprecated soon.
 
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within Common Data Service. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+You must [create solution-aware]() flows to use the Common Data Service (current environment). connector, you can create flows that are initiated  create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
 
 ## Initiate a flow from Common Data Service
 
@@ -113,5 +113,10 @@ If you have a trigger registered on the update of a record, the flow runs for ev
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 
+### Call any Common Data Service action
+
+Automated workflows can call all actions in Common Data Service. These include everything from fulfilling a sales order to exporting a Microsoft Excel file.
+
+ ![All actions](./media/cds-connector/all-actions.png "all actions")
 
 
