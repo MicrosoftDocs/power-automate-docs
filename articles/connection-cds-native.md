@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Common Data Service| Microsoft Docs
-description: Create workflows by using a Common Data Service connection and Power Automate
+title: Create an automated flow with Common Data Service (current environment) connector| Microsoft Docs
+description: Create workflows by using a Common Data Service (current environment) connector and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,32 +21,36 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an automated flow by using Common Data Service
+# Create an automated flow by using Common Data Service (current environment)
 
 >[!IMPORTANT]
->There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Serivce. The [Common Data Service connector]() and the [Dynamics 365 Connector]() wil be deprecated soon.
+>There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Serivce. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) wil be deprecated soon.
 
 
-You must [create solution-aware]() flows to use the Common Data Service (current environment). connector, you can create flows that are initiated  create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+You must [create solution-aware](./overview-solution-flows.md) flows to use the Common Data Service (current environment) connector. 
 
-## Initiate a flow from Common Data Service
+The flows you create can trigger when a Common Data Service record is created, updated, or deleted.
+
+Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+
+## Initiate a flow with Common Data Service (current environment)
 
 You can use any of the following triggers to initiate your flow:
 
-- When a record is selected
-- When a record is created
-- When a record is deleted
-- When a record is updated
+- When a record is created, updated or deleted.
+
+   ![Select a trigger](./media/cds-connector-native/native-trigger.png)
+
+After you select a trigger, you'll need to configure these options:
 
 
-> [!div class="mx-imgBorder"]
-> ![Select a trigger](./media/cds-connector/Triggers.png)
-
-If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
-
-> [!div class="mx-imgBorder"]
-> ![Choose environment](./media/cds-connector/Environments.png)
-
+Option|Details
+---|---
+Trigger condition|![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
+The entitiy name|![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
+Scope| ![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
+   
+   
 You can use scopes to determine if your flow runs if you create a new record, if a new record is created by a user within your business unit, or if a new record is created by any user in your organization.
 
 > [!div class="mx-imgBorder"]
