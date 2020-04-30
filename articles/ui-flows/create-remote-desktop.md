@@ -33,10 +33,9 @@ web](https://microsoft.sharepoint.com/teams/PowerAppsContentTeam/_layouts/OneNot
 
 Note: Proposed location for “Add a recording of a remote computer using image recognition” is part of the Edit Desktop UI flows page:
 
-<https://docs.microsoft.com/en-us/power-automate/ui-flows/edit-desktop>
+<https://docs.microsoft.com/power-automate/ui-flows/edit-desktop>
 
-Add a recording of a remote computer using image recognition
-============================================================
+## Add a recording of a remote computer using image recognition
 
 *{{Placeholder for disclaimer – this functionality is in preview and subject to
 change.}}*
@@ -117,8 +116,8 @@ available when recording a remote computer through the Remote Desktop Connection
     other than 100%. As a workaround, ensure that screen scaling is set to 100%
     prior to recording.
 
-Unfinished/unneeded sections 
-=============================
+## Unfinished/unneeded sections 
+
 
 Create a Remote Desktop UI flow
 -------------------------------
@@ -166,7 +165,7 @@ Create a Remote Desktop UI flow
 -   Alternatively, you can start your Remote Desktop session during the
     recording:
 
-    -   Open the Remote Dekstop connection (mstc) and sign in to launch your
+    -   Open the Remote Desktop connection (mstc) and sign in to launch your
         remote desktop session and continue to use the same recording to record
         clicks and inputs within the remote desktop session.
 
