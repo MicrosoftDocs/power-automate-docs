@@ -47,7 +47,7 @@ After you select a trigger, you'll need to configure:
 
 ### Trigger condition
 
-You can add any of these conditions to determine precisely when your flow is triggered
+You can add any of these conditions to determine precisely when your flow is triggered.
 
    ![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
 
@@ -59,9 +59,11 @@ Select any of the numerous entities that are available to indicate the entity on
 
 ### Scope
 
-You can use scopes to determine if your flow runs if you create a record, if someone in your business unit creates a record, or if any user in your organization creates a record.
+Use scopes to determine if your flow runs when you, someone in your business unit, or any user in your organization creates a record.
 
 ![Choose scope](./media/cds-connector-native/scopes.png)
+
+Here are the details on each scope.
 
 |Scope|Trigger timing|
 | --- | --- |
