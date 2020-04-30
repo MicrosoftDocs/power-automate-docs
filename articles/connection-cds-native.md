@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 04/26/2020
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -35,26 +35,33 @@ Additionally, you can perform create, update, retrieve, and delete actions on re
 
 ## Initiate a flow with Common Data Service (current environment)
 
-You can use any of the following triggers to initiate your flow:
-
-- When a record is created, updated or deleted.
+Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 
    ![Select a trigger](./media/cds-connector-native/native-trigger.png)
 
-After you select a trigger, you'll need to configure these options:
+After you select a trigger, you'll need to configure:
 
+- A condition for the trigger.
+- The name of the entity.
+- The scope for the trigger.
 
-Option|Details
----|---
-Trigger condition|![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
-The entitiy name|![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
-Scope| ![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
-   
-   
-You can use scopes to determine if your flow runs if you create a new record, if a new record is created by a user within your business unit, or if a new record is created by any user in your organization.
+### Trigger condition
 
-> [!div class="mx-imgBorder"]
-> ![Choose scope](./media/cds-connector/Scopes.png)
+You can add any of these conditions to determine precisely when your flow is triggered
+
+   ![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
+
+### The entity name
+
+Select any of the numerous entities that are available to indicate the entity on which your trigger operates.
+
+   ![Select a trigger](./media/cds-connector-native/entity-names.png)
+
+### Scope
+
+You can use scopes to determine if your flow runs if you create a record, if someone in your business unit creates a record, or if any user in your organization creates a record.
+
+![Choose scope](./media/cds-connector-native/scopes.png)
 
 |Scope|Trigger timing|
 | --- | --- |
@@ -63,6 +70,7 @@ You can use scopes to determine if your flow runs if you create a new record, if
 |Parent: Child business unit|Action is taken on a record owned by your business unit or a child business unit|
 |User|Action is taken on a record owned by you|
 
+
 Triggers that run when a record is updated can also use filtering attributes. This ensures that the flow only runs when any of the defined attributes are updated.
 
 > [!IMPORTANT]
@@ -70,27 +78,24 @@ Triggers that run when a record is updated can also use filtering attributes. Th
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
-> [!div class="mx-imgBorder"]
-> ![Filter attributes](./media/cds-connector/FilterAttributes.png)
+![Filter attributes](./media/cds-connector-native/filtering-attributes.png)
 
 > [!IMPORTANT]
 > [Multi Select Option Sets](/powerapps/maker/common-data-service/custom-picklists) cannot be used within a workflow. Including one will result in an error indicating a missing "required field"
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
 
 ## Write data into Common Data Service
 
 Use any of the following actions to write data into Common Data Service:
 
-- Create a new record
-- Update a record
+![Filter attributes](./media/cds-connector-native/actions.png)
 
-Here's an example of creating a followup task when the given user creates a new account record.  
+Here's an example of a flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
 
-> [!div class="mx-imgBorder"]
-> ![Followup task](./media/cds-connector/Regarding.png)
+> ![Followup task](./media/cds-connector-native/example-flow.png)
 
 ## Advanced concepts
 
@@ -106,21 +111,16 @@ To write data into customer, owner, and regarding fields, two fields must be pop
 
 ### Enable upsert behavior
 
-You can leverage the **update a record** command to provide upsert actions, which updates the record if it already exists, or creates a new record. To invoke upsert, provide the entity and a GUID key. If the record with the specified type and key exists, an update occurs. Otherwise, a record with the specified key is created.
+You can leverage the **update a record** action to provide upsert actions, which updates the record if it already exists, or creates a new record. To invoke upsert, provide the entity and a GUID key. If the record with the specified type and key exists, an update occurs. Otherwise, a record with the specified key is created.
 
 ### Trigger behavior
 
 If you have a trigger registered on the update of a record, the flow runs for every *committed* update to the given record. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 > [!NOTE]
-> If you have two updates that happen within seconds of each other, then the flow may be triggered more than once with the latest versioned content.
+> If you have two updates that happen within seconds of each other, the flow may be triggered more than once with the latest versioned content.
 
-Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
+Flow runs may be delayed if there is a backlog of system jobs in your environment. If this delay occurs, your flow is triggered when the system job to start the flow runs.
 
-### Call any Common Data Service action
-
-Automated workflows can call all actions in Common Data Service. These include everything from fulfilling a sales order to exporting a Microsoft Excel file.
-
- ![All actions](./media/cds-connector/all-actions.png "all actions")
 
 
