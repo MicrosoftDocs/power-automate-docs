@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create a flow that uses Common Data Service
 
-Improve operational efficiency with a unified view of business data by creating flow that uses the [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
+Improve operational efficiency with a unified view of business data by creating flow that uses [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
 For example, leverage Common Data Service within Power Automate in these key ways:
 
@@ -42,7 +42,7 @@ For example, leverage Common Data Service within Power Automate in these key way
 * If you haven't used Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
 
 ## Sign in to your Environment
-1. Open the [Power Automate portal](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
+1. Open the [Power Automate](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
    
     **Note**: you might need to open the top-left menu to show the **Sign in** button.
    
