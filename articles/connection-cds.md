@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 04/26/2020
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -21,10 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Create an automated flow by using Common Data Service
 
+>[!IMPORTANT]
+>There are three connectors available to connect to Common Data Service. Use the recommended [Common Data Service (current environment) connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within your Common Data Service database. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+
+With the Common Data Service connector, you can create flows that are initiated by create and update events within Common Data Service. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
 
 ## Initiate a flow from Common Data Service
 
@@ -66,9 +70,6 @@ This flow triggers any time the first or last name of contact that the flow user
 > [!div class="mx-imgBorder"]
 > ![Filter attributes](./media/cds-connector/FilterAttributes.png)
 
-> [!IMPORTANT]
-> [Multi Select Option Sets](/powerapps/maker/common-data-service/custom-picklists) cannot be used within a workflow. Including one will result in an error indicating a missing "required field"
-
 ## Trigger privileges
 
 To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
@@ -80,10 +81,10 @@ Use any of the following actions to write data into Common Data Service:
 - Create a new record
 - Update a record
 
-Here's an example of creating a followup task when the given user creates a new account record.  
+Here's an example of creating a follow-up task when the given user creates a new account record.  
 
 > [!div class="mx-imgBorder"]
-> ![Followup task](./media/cds-connector/Regarding.png)
+> ![Follow-up task](./media/cds-connector/Regarding.png)
 
 ## Advanced concepts
 
@@ -109,11 +110,4 @@ If you have a trigger registered on the update of a record, the flow runs for ev
 > If you have two updates that happen within seconds of each other, then the flow may be triggered more than once with the latest versioned content.
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
-
-### Call any Common Data Service action
-
-Automated workflows can call all actions in Common Data Service. These include everything from fulfilling a sales order to exporting a Microsoft Excel file.
-
- ![All actions](./media/cds-connector/all-actions.png "all actions")
-
 
