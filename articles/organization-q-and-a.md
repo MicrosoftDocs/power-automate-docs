@@ -111,7 +111,7 @@ Any person can try out Power Automate Plan 1 or 2 for 90 days, and these trial l
 1. If at least one user in your tenant participated in the Power Automate public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows"
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-people-sign-up-for-flow) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
+2. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-people-sign-up-for-power-automate) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
    
     ![](./media/organization-q-and-a/licenses1.png)
 
