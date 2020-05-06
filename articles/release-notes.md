@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -55,7 +55,7 @@ For information about new features released for Power Automate, visit:
 ### Release 2018-09-24
 
 - **Admin access to help and support** - Open support tickets for Power Automate in the Power platform admin center and provide additional details about your workflow failure.
-- **Redesigned Flow Community** - Finding what you need just got easier in the Flow Community.
+- **Redesigned Power Automate Community** - Finding what you need just got easier in the Power Automate Community.
 - **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a flow when there are new messages in a channel.
 - **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
 - **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform Admin center.
@@ -236,7 +236,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 ### Release 2017-11-02
 
 - **Audit Logging** - Power Automate audit events are now available in Office 365 Security & Compliance Center for all tenants.
-- **Flow widget fixes** - Fixed an issue in the Flow mobile app that caused buttons to not load in the widget.
+- **Flow widget fixes** - Fixed an issue in the Power Automate mobile app that caused buttons to not load in the widget.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/security-and-compliance-center/) about this release.
 
@@ -268,7 +268,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 ### Release 2017-09-25 - Q3 Update for Power Automate
 
 - **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
-- **Dynamics 365 apps** - Flow is now integrated in the UI for Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
+- **Dynamics 365 apps** - Power Automate is now integrated in the UI for Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 - **Microsoft Trust Center** - Power Automate is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
 - **Audit Logging in First Release** - All flow management events are logged in the Office 365 Security and Compliance center for first release tenants.
@@ -409,7 +409,7 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-04-11
 * **New actions to build tables and lists** - New Create HTML Table, Create CSV Table and Join actions that can process lists of items (instead of the previous Apply-to-each only).
 * **Insert steps anywhere** - You can now insert a new step anywhere in the workflow without needing to drag-and-drop.
-* **Four new services** - Flow now supports 10 to 8 Scheduling, Act!, Inoreader and the Computer Vision API. With the Computer Vision API you can process images to get the text content (known as OCR), or automatically tag images based on their content.
+* **Four new services** - Power Automate now supports 10 to 8 Scheduling, Act!, Inoreader and the Computer Vision API. With the Computer Vision API you can process images to get the text content (known as OCR), or automatically tag images based on their content.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) about this release.
 
@@ -586,7 +586,7 @@ Power Automate now available for everyone - we initially opened up the preview t
 You can now preview the new SharePoint Online modern lists experience that includes the Power Automate integration. [Read more and ask questions](https://flow.microsoft.com/blog/microsoft-flow-integration-with-sharepoint-modern-lists-preview/) about this release.
 
 ### Release 2016-08-13
-* **Visual Studio Team Services** - With Flow, you can now connect VSTS to a wide variety of services such as O365 Email, Slack, Trello, and Wunderlist.
+* **Visual Studio Team Services** - With Power Automate, you can now connect VSTS to a wide variety of services such as O365 Email, Slack, and Trello.
 * **Enhancements to SharePoint** -  SharePoint lists support a range of data types from simple objects like Single lines of text and Date and Time to complex objects such as Person or Group, Lookup, and Choice.
 * **Test O365 Outlook Connections** - Whenever you create a new O365 Outlook connection, we will now test it to make sure you’re ready to use it.
 * **Boolean Control** - We’ve also added a boolean control to clarify which values you should enter for boolean input fields, such as Has Attachments in the When a new email arrives trigger.
@@ -650,7 +650,7 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 * You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.
 * You can see the history for every check and run of your flow.
 * When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
-* We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Flow or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
+* We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Power Automate or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
 >Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).

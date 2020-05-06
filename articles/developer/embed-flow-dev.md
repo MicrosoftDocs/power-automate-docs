@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2019
+ms.date: 05/05/2020
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -48,7 +48,7 @@ To start, add this code to show the Power Automate templates on your website:
 | Parameter | Description |
 | --- | --- |
 | locale |The four-letter language and region code for the template view. For example, `en-us` represents American English, and `de-de` represents German. |
-| search term |The search term for the templates that you want to show in the view. For example, search `wunderlist` to show templates for Wunderlist. |
+| search term |The search term for the templates that you want to show in the view. For example, search `SharePoint` to show templates for SharePoint. |
 | number of templates |The number of templates that you want to show in the view. |
 | destination |The page that opens when users select the template. Enter `details` to show the details about the template, or enter `new` to open the Power Automate designer. |
 | category |Filters to the given template category. | 
@@ -59,18 +59,17 @@ If the destination parameter is `new`, the Power Automate designer opens when us
 
 ### Passing additional parameters to the flow template
 
-If the user is in a specific context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *Notify me when an item is added to a list* while looking at a certain list in Wunderlist. Follow these steps to pass in the list ID as a *parameter* to the flow:
+If the user is in a specific context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *When an item is created* while looking at a certain list in SharePoint. Follow these steps to pass in the list ID as a *parameter* to the flow:
 
 1. Define the parameter in the flow template before you publish it. A parameter looks like `@{parameters('parameter_name')}`.
 1. Pass the parameter in the query string of the iframe src. For example, add `&parameters.listName={the name of the list}` if you have a parameter called **listName**.
 
 ### Full sample
 
-To show the top four Wunderlist templates in German and to start the user with **myCoolList**, use this code:
+To show the top four SharePoint templates in German and to start the user with **myCoolList**, use this code:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
-&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Use the authenticated flow widgets
