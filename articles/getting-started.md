@@ -41,7 +41,7 @@ Power Automate is one of the pillars of Power Platform. It provides a low code p
 | [Button flows](introduction-to-button-flows.md)              | Run repetitive tasks from anyplace, at any time, via your mobile device.                        |                                                                                        |
 | [Scheduled flows](run-scheduled-tasks.md)                    | Create a flow that performs one or more tasks on a schedule.             |                                                                                        |
 | [Business process flows](business-process-flows-overview.md) | Define a set of steps for people to follow to take them to a desired outcome.                 | Human processes                                                                        |
-| [UI flows (Preview)](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
+| [UI flows](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
 You can create and manage all flows from the **My flows** tab in Power Automate.
 
