@@ -30,9 +30,9 @@ In this walk-through, we'll create a flow that runs every 15 minutes and does th
 1. Gets the last 10 unread messages in your Office 365 Outlook Inbox.
 2. Checks each of the 10 messages to confirm if any has **meet now** in the subject.
 3. Checks if the email is from your boss or was sent with high importance.
-4. Sends a push notification and marks as read any email that has **meet now** in the subject and is either from your boss or was sent with high importance.
+4. Sends a push notification and marks as read, any email that has **meet now** in the subject and is either from your boss or was sent with high importance.
 
-This diagram shows the details of the flow we'll create in this walk-through:
+This diagram shows the details of the flow we'll create:
 
 ![overview of the flow being built](./media/apply-to-each/foreach-flow-visio.png)
 
@@ -57,11 +57,11 @@ Here are the requirements for successfully performing the steps in this walk-thr
 <!-- 5. Set the schedule to run every 15 minutes:
    
     ![schedule runs](./media/apply-to-each/foreach-3.png) -->
-6. Select **+ New step**, and then type **outlook** into the search box to search for all connectors and actions related to Microsoft Outlook.
+6. Select **+ New step**, and then type **outlook** into the search box to find all connectors and actions related to Microsoft Outlook.
 7. Select the **Office 365 Outlook - Get emails (V3)** action:
    
     <!-- ![select get emails action](./media/apply-to-each/foreach-4.png) -->
-8. This will open the **Get emails (V3)** card. Configure the **Get emails** card to select the top 10 unread emails from the Inbox folder. Don't include attachments because they won't be used in the flow:
+8. The **Get emails (V3)** card opens. Configure the **Get emails* (V3)* card to select the top 10 unread emails from the Inbox folder. Don't include attachments because they won't be used in the flow:
    
     ![configure email card](./media/apply-to-each/foreach-5.png)
    
@@ -71,13 +71,13 @@ Here are the requirements for successfully performing the steps in this walk-thr
    > 
 
 ## Add actions and conditions
-1. Select **New step** > **Built-in** > **Control**, and then **Apply to each** action.
+1. Select **New step** > **Built-in** > **Apply to each** action.
    
     <!-- ![select apply to each](./media/apply-to-each/foreach-6.png) -->
 1. Insert the **value** token into the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action:
    
     ![add body token](./media/apply-to-each/foreach-7.png)
-1. Select **Add a condition** > **Condition**:
+1. Select **New step** > **Control** > **Condition**:
    
     <!-- ![add condition](./media/apply-to-each/foreach-8.png) -->
 1. Configure the **Condition** card to search the subject of each email for the words "meet now":
@@ -87,20 +87,20 @@ Here are the requirements for successfully performing the steps in this walk-thr
    * Enter **meet now** into the third field.
      
      ![configure condition](./media/apply-to-each/foreach-subject-condition.png)
-1. Select **Add a condition** > **Condition** from the **If yes** branch. This opens the **Condition 2** card; configure that card like this:
+1. Select **Add an action** > **Condition** from the **If yes** branch. This opens the **Condition 2** card; configure that card like this:
    
    * Insert the **Importance** token into the first field.
    * Select **is equal to** in the list of operators.
    * Enter **High** into the field on the right side.
      
      ![add condition](./media/apply-to-each/foreach-importance-condition.png)
-1. Select **Add an action** under the **If yes** section. This will open the **Choose an action** card, where you'll define what should happen if the search condition (the **meet now** email was sent with high importance) is true:
+1. Select **Add an action** under the **If yes** section. This opens the **Choose an action** card, where you'll define what happens if the search condition (the **meet now** email was sent with high importance) is true:
    
     <!-- ![add action](./media/apply-to-each/foreach-9.png) -->
 1. Search for **notification**, and then select the **Send me a mobile notification** action:
    
     ![search and select notification](./media/apply-to-each/foreach-10.png)
-1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now".
+1. On the **Send me a mobile notification** card, provide the details for the push notification that will be sent if the subject of an email contains "meet now" and the **Importance** is **High**.
    
     ![configure notification](./media/apply-to-each/foreach-11.png)
 <!-- 1. Enter **read** as the search term, and then select the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
@@ -121,22 +121,24 @@ Here are the requirements for successfully performing the steps in this walk-thr
     
     * Insert the **From** token into the first box.
     * Select **contains** in the list of operators.
-    * Enter **Email** token into the rightmost box.
+    * Enter **mail** token into the rightmost box.
       
       ![configure search condition](./media/apply-to-each/foreach-condition3-card.png)
-1. Select **Add an action** under the **If yes** section of the **Condition 3** card. This will open the **IF YES** card, where you'll define what should happen if the search condition (the email was sent from your boss) is true:
+1. Select **Add an action** under the **If yes** section of the **Condition 3** card.
     
      ![configure condition](./media/apply-to-each/foreah-condition3-add-action.png)
-1. Search for **notification**, and then select the **Notifications - Send me a mobile notification** action:
+. Next, you'll define what should happen if the search condition (the email was sent from your boss) is true:
+
+1. Search for **notification**, and then select the **Send me a mobile notification** action:
     
      ![search for notification action](./media/apply-to-each/foreach-10.png)
 1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss, and then select **Add an action**:
     
      ![configure notification card](./media/apply-to-each/foreach-boss-notification.png)
-1. Add the **Office 365 Outlook - Mark as read** action. This will mark each email as read after the push notification is sent:
+1. Add the **Mark as read or unread (V2)** action.
     
      ![add mark as read action](./media/apply-to-each/foreach-12.png)
-1. Add the **Message Id** token to the **Mark as read 2** card. You may need to select **See more** to find the **Message Id** token. This indicates the Id of the message that will be marked as read:
+1. Add the **Message Id** token to the **Mark as read or unread (V2)** card. You may need to select **See more** to find the **Message Id** token. The **Message Id** is the Id of the message that will be marked as read:
     
      ![configure mark as read action](./media/apply-to-each/foreach-mark-as-read2.png)
 1. Name your flow, and then create it:
