@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -107,7 +107,7 @@ You can share flows in either of these ways:
 * For flows that can be run manually, you can also grant other people or groups in your organization permission to just run the flow.
 
 ### How many flows can I have?
-Power Automate comes with up to 50 flows. If you need more, you can request them.
+You can create an unlimited number of flows, depending on the [type of license](https://flow.microsoft.com/pricing) you hold.
 
 ### Where do I get started with Power Automate?
 Get started with the following resources:
