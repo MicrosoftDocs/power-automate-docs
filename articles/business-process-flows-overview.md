@@ -1,7 +1,7 @@
 ---
 title: "Business process flows overview | MicrosoftDocs"
 ms.custom: ""
-ms.date: 12/12/2019
+ms.date: 05/06/2019
 ms.reviewer: ""
 ms.service: flow
 author: MSFTMAN
@@ -183,7 +183,7 @@ Specifically, the three commands that are available for a business process flow 
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [Add solution components](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [create and edit entities](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
 - Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](https://docs.microsoft.com/power-automate/create-business-process-flow). 
 
 ### Next steps  
