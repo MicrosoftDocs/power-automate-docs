@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/30/2019
+ms.date: 05/07/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -84,7 +84,6 @@ You can work around this issue by putting all the filtering you need into the tr
 ## Other limits and caveats
 
 * Each account may have as many as:
-  * 250 flows.
   * 15 Custom Connectors.
   * 20 connections per API and 100 connections total.
 * Certain external connectors, such as Twitter, implement connection throttling to control quality of service. Your flows fail when throttling is in effect. If your flows are failing, review the details of the run that failed in the flow's run history.
