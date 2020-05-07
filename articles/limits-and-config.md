@@ -25,6 +25,9 @@ search.audienceType:
 
 This topic contains information about the current limits and configuration details for flows.
 
+>[!TIP]
+>Check out the [pricing](https://flow.microsoft.com/pricing) for details on the different plans that are available.
+
 ## Request limits
 These are limits for a single outgoing request.
 
