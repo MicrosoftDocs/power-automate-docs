@@ -24,12 +24,11 @@ search.audienceType:
 
 # Create and test Remote Desktop UI flows
 
+TODO: Addt this content to the edit a desktop ui flow and link to it from within this doc.
 
 
-[UI flows Image recognition
-plan](onenote:https://microsoft.sharepoint.com/teams/PowerAppsContentTeam/Shared%20Documents/Internal/PowerApps%20Content%20Planning/PowerApps&Flow-Content-Plan/Plans.one#UI%20flows%20Image%20recognition%20plan&section-id={AE75E138-413C-4184-B1BA-B1D1A4837333}&page-id={3C15793F-2FA8-4201-ABD9-5E73B74EB1B3}&end) 
-([Mode
-web](https://microsoft.sharepoint.com/teams/PowerAppsContentTeam/_layouts/OneNote.aspx?id=%2Fteams%2FPowerAppsContentTeam%2FShared%20Documents%2FInternal%2FPowerApps%20Content%20Planning%2FPowerApps%26Flow-Content-Plan&wd=target%28Plans.one%7CAE75E138-413C-4184-B1BA-B1D1A4837333%2FUI%20flows%20Image%20recognition%20plan%7C3C15793F-2FA8-4201-ABD9-5E73B74EB1B3%2F%29))
+
+
 
 Note: Proposed location for “Add a recording of a remote computer using image recognition” is part of the Edit Desktop UI flows page:
 
@@ -70,9 +69,11 @@ available when recording a remote computer through the Remote Desktop Connection
 1.  Perform the steps on the remote computer, and then select **Done** on the
     recorder control.
 
+1. Go to the inputs tab > create **sensitive text** inputs for the user name and password that will be used on log into the remote device.
+
 1.  Locate the Launch Remote Desktop (preview) action within your recording
 
-1.  Enter the name (host name or IP address), username, and password for the
+1.  Add sensitive text input for (host name or IP address), username, and password for the
     remote computer.
 
 1.  Select **Save**, and then test your UI flow.
