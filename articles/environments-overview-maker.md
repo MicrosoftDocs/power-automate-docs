@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app: 
   - Flow
@@ -43,7 +43,10 @@ You want to create a flow that uses a connection to Common Data Service.|Place y
 You're creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow.|Create an environment and add only the HR users to it. Place the flow and any other resources the flow uses into this environment.
 There are users in Europe who use a flow to show SharePoint data.|Create an environment in Europe, and then create your flow and the SharePoint connection in it. This Europe environment gives the European users the best performance, since all resources are local to Europe (data locality).
 
-To create environments, you must be a Power Automate administrator. Administrators control who has access to environments. For details on how you can create and manage environments, see the [administer environments](environments-overview-admin.md) topic.
+Any appropriately licensed user can create environments in the Power Platform admin center by default, unless the default setting for **Who can create production environments** has been changed from **Everyone** to **Only specific admins**.
+
+
+For details on how you can create and manage environments, see the [administer environments](environments-overview-admin.md) topic.
 
 ## Switching environments
 
@@ -77,7 +80,6 @@ Before you create a flow, select the environment into which you'll add the flow 
 
 Consider the following factors when choosing an environment to host your flows:
 
-* You can only create gateways in the default environment. So, if you want to use a gateway to connect your flow to on-premises data, you'll need to use the default environment.
 * Common Data Service is tied to a specific environment. So, if you want to create a flow that uses Common Data Service, you must create the flow in the environment that hosts the database.
 * You'll see all environments in which you can edit resources. However, you'll need to ask an administrator to add you as a maker to all environments in which you want to create flows.
 
