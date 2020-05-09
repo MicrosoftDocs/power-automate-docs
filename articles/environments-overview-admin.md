@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 05/07/2020
 ms.author: sunayv
 search.app: 
   - Flow
@@ -171,9 +171,7 @@ Yes, flows can be exported from one environment and imported into another enviro
 
 ### Which license includes Common Data Service?
 
-Only Microsoft Power Apps Plan 2 includes rights to create databases with Common Data Service. However, all paid plans (Power Automate plans 1 and 2, and Microsoft Power Apps plans 1 and 2) have the rights to use Common Data Service.
-
-Choose a plan that's right for you by visiting the [Power Automate pricing](https://flow.microsoft.com/pricing/) page.
+You can access Common Data Service with any of the Power Automate [licenses](https://flow.microsoft.com/pricing).
 
 See the [Billing questions](billing-questions.md) document for answers to frequently asked questions about billing.
 
