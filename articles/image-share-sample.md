@@ -32,7 +32,7 @@ The **Image Share Form** sample is an Adaptive Card designed for sharing photos 
 | Dynamic Token Name (inputs) | Placeholder Text   | Notes                                              |
 |-----------------------------|--------------------|-----------------------------------------------------|
 | acphotoTitle                | {acphotoTitle}     | Display text                                        |
-| acTimestamp                 | {acTimestamp]      | Display date/time                                   |
+| acTimestamp                 | {acTimestamp}      | Display date/time                                   |
 | acImageThumbnail            | {acImageThumbnail} | Display image <br>This must be replaced with a valid URL|
 | acAltText                   | {acAltText}        | Accessibility alternative text                      |
 
