@@ -80,7 +80,7 @@ As you use the business process, there are many things that you might want to do
 
 -   Hide or show form tabs and fields based on the selected stage.
 
--   Show informative messages and run calulations based on the active business process flows, the active or selected stage, or events such as moving the active stage.
+-   Show informative messages and run calculations based on the active business process flows, the active or selected stage, or events such as moving the active stage.
 
 > [!TIP]
 > For scenarios like these, use the supported set of [client APIs](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) for business process flows.
