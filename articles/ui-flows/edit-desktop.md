@@ -143,9 +143,9 @@ The format of the selector is:
 }
 ```
 
-You need to provide the data for the the **elemementStack** and **elementXPath** fields of the  selector element.
+You need to provide the data for the the **elementStack** and **elementXPath** fields of the  selector element.
 
-Here is an example of what the **elemementStack** might look like.
+Here is an example of what the **elementStack** might look like.
 
 ![Element stack](../media/edit-desktop/elementstack.png "Element stack")
 
