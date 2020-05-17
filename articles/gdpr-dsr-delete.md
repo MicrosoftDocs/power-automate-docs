@@ -50,7 +50,7 @@ For the data and resources that require manual review, Power Automate offers the
 
 * **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/)
 
-* **PowerShell access:**  [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Here is the breakdown of experiences that are available for an administrator to delete each types of personal data within each type of resource:
 
