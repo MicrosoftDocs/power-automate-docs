@@ -6,7 +6,7 @@ manager: KVIVEK
 ms.author: Deonhe
 ms.service: flow
 ms.topic: article
-ms.date: 08/27/2019
+ms.date: 05/12/2020
 search.app: 
   - Flow
 search.audienceType: 
@@ -161,7 +161,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
                 </td>
                 <td>
                     
-   No
+   Yes
                     
                 </td>
                 <td>
@@ -178,7 +178,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
                 </td>
                 <td>
                     
-   No
+   Yes
                     
                 </td>
                 <td>
@@ -286,7 +286,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
                 </td>
                 <td>
                     
-   No
+   Yes
                     
                 </td>
                 <td>
