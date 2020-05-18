@@ -56,7 +56,7 @@ Finally, if your company wishes to restrict the use of organizational-only data 
 ### How can people gain access to the paid features of Power Automate?
 Individuals can gain access to the paid features of Power Automate in three different ways:
 
-1. They can individually sign up for a Flow Plan 1 or Flow Plan 2 trial 90 days for free
+1. They can individually sign up for a Flow Plan trial 90 days for free
 2. You can assign a Power Automate license to them within the Office 365 admin portal.
 3. The user has been assigned an Office 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
 
@@ -72,13 +72,13 @@ As announced in August, Power Automate is now a fundamental part of the Office 3
 See the following section if you'd like to remove the Power Automate tile from the app launcher by default.
 
 ### How do I remove Power Automate from the app launcher for my organization?
-If a user was assigned a Flow Plan 1 or Flow Plan 2 license then you can take the following steps to remove the Power Automate license for that user, which will remove the Power Automate icon from the app launcher:
+If a user was assigned a Flow Plan license then you can take the following steps to remove the Power Automate license for that user, which will remove the Power Automate icon from the app launcher:
 
 1. Go to the [Office 365 Admin Portal](https://portal.microsoftonline.com/).
 2. In the left navigation bar, select **Users**, and then select **Active Users**.
 3. Find the user you want to remove the license for, and then select their name.
 4. On the user details pane, in the **Product licenses** section select **Edit**.
-5. Find the license called **Power Automate Plan 1** or **Power Automate Plan 2**, set the toggle to **Off** and then select **Save**.
+5. Find the license called **Power Automate ... **, set the toggle to **Off** and then select **Save**.
    
    ![](./media/organization-q-and-a/remove-license.png)
 
@@ -106,16 +106,16 @@ Removing of the Power Automate license or service for a user in your organizatio
 Note that this will only remove the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
-Any person can try out Power Automate Plan 1 or 2 for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Power Automate showing up in the Office 365 admin portal:
+Any person can try out Power Automate Plans for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Power Automate showing up in the Office 365 admin portal:
 
 1. If at least one user in your tenant participated in the Power Automate public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows"
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. If at least one user in your tenant has signed-up for a Flow Plan 2 trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-people-sign-up-for-power-automate) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
+2. If at least one user in your tenant has signed-up for a Flow Plan trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-people-sign-up-for-power-automate) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Flow"
    
     ![](./media/organization-q-and-a/licenses1.png)
 
-You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but please note that these are trial licenses for Power Automate Plan 2 and they will expire after 90 days of being assigned to a user.
+You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but please note that these are trial licenses for Power Automate Plan and they will expire after 90 days of being assigned to a user.
 
 ### Is this free? Will I be charged for these licenses?
 No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
