@@ -87,7 +87,7 @@ Once UI flows has been installed on your machine, you can install WinAutomation 
 
 ## Sign-in to WinAutomation 
 
-After the installation completes, start the WinAutomation Console from the Windows start menu. The application will prompt you to login or start a 30-day trial. If you already have a *Per user plan with attended RPA* license for Power Automate, enter the user credentials you use for the [Power Automate](https://flow.microsoft.com). You can also visit the [pricing page]https://flow.microsoft.com/pricing/) to learn more about this license or to get a trial license.
+After the installation completes, start the WinAutomation Console from the Windows start menu. The application will prompt you to login or start a 30-day trial. If you already have a *Per user plan with attended RPA* license for Power Automate, enter the user credentials you use for the [Power Automate](https://flow.microsoft.com). You can also visit the [pricing page](https://flow.microsoft.com/pricing/) to learn more about this license or to get a trial license.
 
 If you don’t have a valid license, you will see this error message.
 
@@ -168,6 +168,8 @@ To reset the license information stored by WinAutomation, you can delete the fol
 
 
 ## Learn more
+
+- Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/)
 - Get support for [WinAutomation](https://support.softomotive.com/support/home).
 - Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 - Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
