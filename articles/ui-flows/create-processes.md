@@ -24,21 +24,23 @@ search.audienceType:
 
 # WinAutomation with Power Automate
 
-The latest version of WinAutomation can now be used as part of your Power Automate Attended RPA license (paid or Trial). You will need to sign into WinAutomation with the same work or school account as in Power Automate.
+Your Power Automate Attended RPA license (paid or trial) now gives you full access to Softomotive's [WinAutomation](https://www.winautomation.com/). This document will guide you through getting WinAutomation processes running with Power Automate.
+
+Existing WinAutomation users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home)
 
 ## Overview for existing UI flows users
 
-After you've created an process within WinAutomation, you can run it attended or unattended from Power Automate by using a UI flow. To do this, follow these steps:
+[Download](https://aka.ms/rpaDesktopAutomationInstallPage), install then sign into WinAutomation with the same work or school account as in Power Automate. After you've created an process within WinAutomation, you can run it attended or unattended from Power Automate by using a UI flow. To do this, follow these steps:
 
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
-1. Enter *WinAutomationController /start <processPath>* at the command prompt, where *processPath* is the name of your WinAutomation process (including folder names if any).  For example, enter: "%programfiles%\DesktopAutomation\DesktopAutomationController.exe" /start "/My Robots/MyAutomationName". 
-1. Stop the recording. 
+1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
+>[!TIP] You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
 1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
 
 ## Set up WinAutomation
 
-Before you can create and playback automation scripts with WinAutomation, you’ll need to ensure your machine meets the requirements for [UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites).
 
 >[!TIP]
 >Automation scripts in WinAutomation are called **processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
@@ -50,7 +52,9 @@ Before you create a WinAutomation process, check the [list of connectors](https:
 
 ## Prerequisites 
 
-To run WinAutomation as part of Power Automate, you will need to install the [UI flows](), app, and then install and configure the on-premises data gateway on the machine. More information is available [here](https://docs.microsoft.com/power-automate/ui-flows/setup).
+To run WinAutomation as part of Power Automate, you will need to:
+1. ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites).
+1. install the [UI flows](), app, then install and configure the on-premises data gateway on the machine. Learn how to do it [here](https://docs.microsoft.com/power-automate/ui-flows/setup).
 
 ## Licensing
 
@@ -67,25 +71,22 @@ Finally, once they have purchased a plan or gotten the free trial, they need to 
 >[!NOTE]
 >When you assign a plan to a user, it may be few minutes before the assignment becomes effective.
 
-## Limitations 
-
-You must have the latest version of each component to record, test, or run UI automation.
+>[!WARNING]
+>You must have the latest version of each component to record, test, or run UI automation.
 
 ## Install WinAutomation
 
-Once UI flows has been installed on your machine, you can continue with installation of WinAutomation. The WinAutomation installer contains all the components needed to record, edit, and test automation scripts for desktop.
+Once UI flows has been installed on your machine, you can install WinAutomation to record, edit, and test automation scripts for desktop by following these steps:
 
-Follow these steps to install the WinAutomation application:
+1.  Download the [WinAutomation installer](https://aka.ms/rpaDesktopAutomationInstallPage).
 
-1.  Download the WinAutomation installer.
-
-1.  Open the **WinAutomationSetup.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1.  Open the **WinAutomationSetup.exe** file. This file is likely in your **Downloads** folder.
 
 1.  Follow the instructions in the WinAutomation installer to complete the installation. During installation, ensure the **License Type** is set to **Microsoft Power Automate**.
 
 ## Sign-in to WinAutomation 
 
-After the installation completes, you can start WinAutomation from “%programfiles%\Desktop Application”. On launch, the application will prompt you to login or start a 30-day trial. If you already have a *Per user plan with attended RPA* license for Power Automate, enter the user credentials you use for the [Power Automate](https://flow.microsoft.com). You can also visit the [pricing page]https://flow.microsoft.com/pricing/) to learn more about this license or to get a trial license.
+After the installation completes, start the WinAutomation Console from the Windows start menu. The application will prompt you to login or start a 30-day trial. If you already have a *Per user plan with attended RPA* license for Power Automate, enter the user credentials you use for the [Power Automate](https://flow.microsoft.com). You can also visit the [pricing page]https://flow.microsoft.com/pricing/) to learn more about this license or to get a trial license.
 
 If you don’t have a valid license, you will see this error message.
 
@@ -101,13 +102,13 @@ Once signed in, you will see the WinAutomation console with a few example proces
 
 ## Run WinAutomation processes from Power Automate
 
-Once you have defined your automation script in WinAutomation, you can run it from a flow in Power Automate using UI flows’ support for launching applications like the command prompt. To learn more about creating and testing UI flows, you can go [here](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
+Once you have defined your automation script in WinAutomation, you can run it from a flow in Power Automate using UI flows’ support for launching applications with the command prompt. To learn more about creating and testing UI flows, you can go [here](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 
 ### Running WinAutomation processes 
 
 To run a WinAutomation process without the Console environment, you can use the WinAutomationController.EXE command. This process in located in the WinAutomation installation folder and can be launched from the **Command Prompt** in Windows. While it has many useful parameters, to launch the automation, you will use the ‘/start’ flag which will start the specified process. Here's an example of the command: **WinAutomationController /start processPath**
 
-*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. So, if your Process is in the My Processes directory, the name of the Process is sufficient. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Robots/../../process").
+*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Robots/../../processName").
 
 ### Launching WinAutomation processes from UI flows
 
@@ -119,7 +120,7 @@ Once you have successfully identified the command to run WinAutomation processes
 
 1.  Select **Record** in the launched recorder.
 
-1.  Select on the Command line process.
+1.  Open the Command Prompt application.
 
 1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Robots/../../process").
 
@@ -166,9 +167,8 @@ To reset the license information stored on the WinAutomation desktop, you can de
 
 
 ## Learn more
-
+[Softomotive's WinAutomation support page](https://support.softomotive.com/support/home)
 - Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 - Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow.
 - Learn to [manage UI flows.](https://docs.microsoft.com/power-automate/ui-flows/manage)
 - Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).
-
