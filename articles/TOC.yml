@@ -123,6 +123,8 @@
       href: ./ui-flows/use-ime.md
   - name: Create and test Web UI flows
     href: ./ui-flows/create-web.md
+  - name: Use WinAutomation with UI flows
+    href: ./ui-flows/create-processes.md
   - name: Edit Web UI flows
     href: ./ui-flows/edit-web.md
   - name: Use inputs and outputs in Web UI flows
