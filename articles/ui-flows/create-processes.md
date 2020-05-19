@@ -37,6 +37,7 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
    >[!TIP] 
    >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+
 1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
 1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
 
@@ -168,7 +169,7 @@ To reset the license information stored by WinAutomation, you can delete the fol
 
 ## Learn more
 - Get support for [WinAutomation](https://support.softomotive.com/support/home).
-- Get a head start with [WinAutomation](https://www.winautomation.com/support/tutorials/) tutorials.
+- Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 - Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 - Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
 - Learn to [manage UI flows.](https://docs.microsoft.com/power-automate/ui-flows/manage)
