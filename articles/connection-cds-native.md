@@ -24,7 +24,7 @@ search.audienceType:
 # Create an automated flow by using Common Data Service (current environment)
 
 >[!IMPORTANT]
->There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Serivce. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
+>There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Service. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
 
 
 You must [create solution-aware](./overview-solution-flows.md) flows to use the Common Data Service (current environment) connector. 

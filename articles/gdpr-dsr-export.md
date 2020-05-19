@@ -34,7 +34,7 @@ Power Automate offers the following experiences to find or export personal data 
 
 * **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/).
 
-* **PowerShell access:**  [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Customer data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
@@ -118,7 +118,7 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## Export a list of a user’s connection permissions
 
-A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -168,7 +168,7 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## Export a user’s custom connector permissions
 
-A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ```PowerShell
 Add-PowerAppsAccount
