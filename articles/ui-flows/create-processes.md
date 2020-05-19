@@ -35,13 +35,12 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
 1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
->[!TIP] 
->You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+   >[!TIP] 
+   >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
 1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
 1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
 
 ## Set up WinAutomation
-
 
 >[!TIP]
 >Automation scripts in WinAutomation are called **processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
@@ -54,8 +53,8 @@ Before you create a WinAutomation process, check the [list of connectors](https:
 ## Prerequisites 
 
 To run WinAutomation as part of Power Automate, you will need to:
-1. ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites).
-1. install the [UI flows](), app, then install and configure the on-premises data gateway on the machine. Learn how to do it [here](https://docs.microsoft.com/power-automate/ui-flows/setup).
+1. Ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites).
+1. Install the [UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup) app, and then install and configure the on-premises data gateway.
 
 ## Licensing
 
@@ -168,8 +167,9 @@ To reset the license information stored by WinAutomation, you can delete the fol
 
 
 ## Learn more
-- [Softomotive's WinAutomation support page](https://support.softomotive.com/support/home)
+- Get support for [WinAutomation](https://support.softomotive.com/support/home).
+- Get a head start with [WinAutomation](https://www.winautomation.com/support/tutorials/) tutorials.
 - Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
-- Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow.
+- Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
 - Learn to [manage UI flows.](https://docs.microsoft.com/power-automate/ui-flows/manage)
 - Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).
