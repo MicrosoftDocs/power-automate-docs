@@ -34,7 +34,7 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
-1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
+1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Processes/MyAutomationName"*.
    >[!TIP] 
    >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
 
