@@ -115,13 +115,11 @@ To run a WinAutomation process without the Console environment, you can use the 
 
 Once you have successfully identified the command to run WinAutomation processes above, you can now invoke this command directly from UI flows. To do this:
 
-1.  Launch the **Command Prompt** app in Windows.
-
 1.  Add a new step in UI flow recording experience by clicking **Launch Recorder** if you have a blank UI flow. If you already have pre-defined steps in UI flow, you can click **New Step** and then **Record app** to launch the recorder. More information about the recording experience is available [here](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 
 1.  Select **Record** in the launched recorder.
 
-1.  Open the Command Prompt application.
+1.  Open the **Command Prompt** app in Windows.
 
 1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Robots/../../process").
 
