@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# WinAutomation with Power Automate
+# Use Softomotive's WinAutomation with UI flows
 
 Your Power Automate Attended RPA license (paid or trial) now gives you full access to Softomotive's [WinAutomation](https://www.winautomation.com/). This document will guide you through getting WinAutomation processes running with Power Automate.
 
@@ -35,7 +35,8 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
 1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
->[!TIP] You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+>[!TIP] 
+>You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
 1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
 1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
 
@@ -69,7 +70,7 @@ If you already have a paid plan or you used a trial previously, you cannot start
 Finally, once they have purchased a plan or gotten the free trial, they need to assign that plan to a user. 
 
 >[!NOTE]
->When you assign a plan to a user, it may be few minutes before the assignment becomes effective.
+>When you assign a plan to a user, it may take few minutes before the assignment becomes effective.
 
 >[!WARNING]
 >You must have the latest version of each component to record, test, or run UI automation.
@@ -160,14 +161,14 @@ If you are receiving licensing errors during the launch of WinAutomation, ensure
 1.	Select My flows on the left navigation bar.
 1.	Select UI flows on the page on the right. You may need to start a trial or ask your administrator to do that.
 
-To reset the license information stored on the WinAutomation desktop, you can delete the following file: %localappdata%\Radcliffe\WinAutomation\msalcache.bin3
+To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\Radcliffe\WinAutomation\msalcache.bin3
 
 >[!NOTE]
 >This license is cached when users launch WinAutomation while connected to the Internet. 
 
 
 ## Learn more
-[Softomotive's WinAutomation support page](https://support.softomotive.com/support/home)
+- [Softomotive's WinAutomation support page](https://support.softomotive.com/support/home)
 - Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 - Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow.
 - Learn to [manage UI flows.](https://docs.microsoft.com/power-automate/ui-flows/manage)
