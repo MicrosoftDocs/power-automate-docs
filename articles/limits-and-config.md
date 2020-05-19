@@ -159,9 +159,9 @@ webshell.suite.office.com|https|Access to Office for header and search. Please s
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
 ### UI flows required services
-The following Endpoint data lists requirements for connectivity from a user's machine for a successful UI flows installation.
+The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation.
 
 Endpoint type | Domains | Protocols | Uses
 --------| --------|  ---------| -----
-Worlwide Endpoints|mscrl.microsoft.comt|https|Access to the CRL server for the public cloud.
-U.S. Government GCC and GCC High Endpoints|crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for US government cloud.
+Worlwide endpoints|mscrl.microsoft.comt|https|Access to the CRL server for the public cloud.
+U.S. Government GCC and GCC High endpoints|crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for US government cloud.
