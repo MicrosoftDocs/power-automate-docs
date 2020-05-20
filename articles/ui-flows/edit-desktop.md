@@ -178,6 +178,7 @@ You can perform these advanced operations by performing the following steps on a
 
    ![Condition card](../media/edit-desktop/condition-card.png)
 
+## Record through Remote Desktop 
 
 ## Handle error conditions
 
