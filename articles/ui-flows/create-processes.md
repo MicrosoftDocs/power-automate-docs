@@ -159,7 +159,7 @@ If you are receiving licensing errors during the launch of WinAutomation, ensure
 1.	Select My flows on the left navigation bar.
 1.	Select UI flows on the page on the right. You may need to start a trial or ask your administrator to do that.
 
-To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\Radcliffe\WinAutomation\msalcache.bin3
+To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\Softomotive\WinAutomation\msalcache.bin3
 
 >[!NOTE]
 >This license is cached when users launch WinAutomation while connected to the Internet. 
