@@ -57,32 +57,26 @@ available when recording a remote computer through the Remote Desktop Connection
 ### To record a remote computer using image recognition: 
 
  
+1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs for the username and password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored in or logged by the UI flow itself.
 
-1.  Follow the steps in **Add a recording** to launch the recorder control for a
-    new or existing UI flow
+1.  Follow the steps in **Add a recording** to launch the recorder control for a new or existing UI flow
 
-1.  Connect to the remote computer using the Remote Desktop Connection (RDC)
-    app, and expand the window to full screen.
+1.  Connect to the remote computer using the Remote Desktop Connection (RDC) app, and expand the window to full screen.
 
 1.  Select **Record** from the recorder control.
 
-1.  Perform the steps on the remote computer, and then select **Done** on the
-    recorder control.
+1.  Perform the steps on the remote computer, and then select **Done** on the recorder control.
 
-1. Go to the inputs tab > create **sensitive text** inputs for the user name and password that will be used on log into the remote device.
+1.  Locate the Launch Remote Desktop action within your recording.
 
-1.  Locate the Launch Remote Desktop (preview) action within your recording
-
-1.  Add sensitive text input for (host name or IP address), username, and password for the
-    remote computer.
+1.  Add the sensitive text inputs for the username and password.
 
 1.  Select **Save**, and then test your UI flow.
 
- 
+1. (Optional, but recommended) When calling this UI flow from another flow, use a Key Vault to retrieve the username and password from a secure location, to avoid storing the login info in the flow itself and so that the connection info for multiple machines can be managed in a single place. 
 
 ### To retrieve an output from a remote computer, use the Extract Text from Image action while recording: 
 
- 
 
 1.  While recording, navigate to the location of the text that you wish to
     capture.
