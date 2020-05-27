@@ -78,7 +78,7 @@ landingContent:
             url: /power-automate/ui-flows/setup
           - text: Create desktop UI flows
             url: /power-automate/ui-flows/create-desktop
-          - text: Create UI flows with WinAutomation
+          - text: Use Softomotive's WinAutomation (NEW!)
             url:  /power-automate/ui-flows/create-processes
           - text: Create web UI flows
             url: /power-automate/ui-flows/create-web
