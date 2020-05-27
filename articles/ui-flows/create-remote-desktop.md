@@ -59,17 +59,24 @@ available when recording a remote computer through the Remote Desktop Connection
  
 1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs for the username and password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored in or logged by the UI flow itself.
 
+![](../media/create-remote-desktop/IR-Sensitivetext.png)
+
 1.  Follow the steps in **Add a recording** to launch the recorder control for a new or existing UI flow
 
 1.  Connect to the remote computer using the Remote Desktop Connection (RDC) app, and expand the window to full screen.
 
-1.  Select **Record** from the recorder control.
+1.  Select **Record** from the recorder control and click on "Got it" in the popup
+
+![](../media/create-remote-desktop/IR-Popup.png)
 
 1.  Perform the steps on the remote computer, and then select **Done** on the recorder control.
 
 1.  Locate the Launch Remote Desktop action within your recording.
 
 1.  Add the sensitive text inputs for the username and password.
+
+![](../media/create-remote-desktop/IR-Launch_Remote_Desktop_session.png)
+
 
 1.  Select **Save**, and then test your UI flow.
 
@@ -84,8 +91,13 @@ available when recording a remote computer through the Remote Desktop Connection
 1.  Select Outputs -\> Extract Text from Image from the recorder control
 
 1.  Follow the prompts to select an **anchor area** (a section of the screen
-    that is not expected to change, such as the label next to a field) and
-    **target area** (the area from which text will be extracted using OCR)
+    that is not expected to change, such as the label next to a field)
+
+    ![](../media/create-remote-desktop/IR-Anchor.png)
+
+1.  Select the **target area** (the area from which text will be extracted using OCR)
+
+    ![](../media/create-remote-desktop/IR-Target.png)
 
 1.  Enter a name for the output
 
@@ -101,10 +113,7 @@ available when recording a remote computer through the Remote Desktop Connection
 1.  To attach to an existing remote desktop session, the session must have been
     launched earlier in the same UI flow
 
-1.  If Remote Desktop is launched during recording, and not prior, the Windows
-    Security dialog may be recorded. As playback into this dialog is not
-    supported, these steps should be removed from the automation before testing
-    or playing back.
+1.  The recommend way to launch the Remote Desktop Connection (RDC) when recording is from the Remote Desktop Connection app (mstc.exe) in the Start menu. If Windows Security actions are recorded in addition to the Launch Remote Desktop action, they should be removed in the designer so that playback is not interrupted (this can happen when the Remote Desktop session is launched from a shortcut)
 
 1.  Playback can fail if the UI flow was recorded on a screen with screen
     scaling (Windows Settings -\> Display -\> Screen Scaling) set to a value
@@ -130,7 +139,7 @@ Create a Remote Desktop UI flow
 -   Create 2 inputs in the first step of the wizard: these inputs will be used
     to connect to your Remote Desktop during the playback.
 
-![](../media/create-remote-desktop/7edb1c167b0b65ff63da5d2ca6b94c31.png)
+![](../media/create-remote-desktop/IR-Sensitivetext.png)
 
 >    
 
