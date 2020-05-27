@@ -110,6 +110,20 @@ Each output has:
 -  A description: This field can be very useful when you define many outputs during a recording and want to easily identify them later.
 -  An action name: the action in which the output is defined in your UI flow.
 
+## Use clipboard content to define outputs 
+
+During a recording, it is possible to copy a text in the clipboard of your computer and to define it as output of your UI flow.
+
+1. During your recording, copy a string value  
+
+1. Select **Get text from Clipboard**. The content of your clipboard is displayed in the **Sample value** field 
+
+ ![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard.png)
+
+1. Define a name and a description for your output (as described above ) and select **Save.** 
+
+![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard-2.png)
+
 ## Delete an output from a UI flow
 
 If you do not need an output anymore, delete it by going to the associated action and removing the Output name in the dynamic value.
