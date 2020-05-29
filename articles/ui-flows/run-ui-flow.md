@@ -124,13 +124,13 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 
 1. Turn on the **Secure Inputs (Preview**) and **Secure Outputs (Preview)** properties to prevent these settings from being shown in the logs.
 
-   ![Secure inputs and outputs](../media/run-ui-flow/secure-outputs-secure-inputs.com.png "Secure inputs and outputs")
+   ![Secure inputs and outputs](../media/run-ui-flow/secure-outputs-secure-inputs.png "Secure inputs and outputs")
 
 1.	Select **Done**.
    
     You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
-      ![The lock icon](../media/run-ui-flow/lock-icon.png.png "The lock icon")
+      ![The lock icon](../media/run-ui-flow/lock-icon.png "The lock icon")
 
    
    >[!TIP]
