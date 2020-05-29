@@ -127,11 +127,11 @@ During a recording, it is possible to copy a text in the clipboard of your compu
 
 1. Select **Get text from Clipboard**. The content of your clipboard is displayed in the **Sample value** field 
 
- ![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard.png)
+   ![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard.png)
 
 1. Define a name and a description for your output (as described above ) and select **Save.** 
 
-![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard-2.png)
+    ![Clipboard output](../media/inputs-outputs-desktop/get-output-clipboard-2.png)
 
 ## Delete an output from a UI flow
 
