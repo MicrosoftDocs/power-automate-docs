@@ -108,6 +108,37 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
 
+
+## Use sensitive text inputs
+
+Some inputs like passwords need to be obfuscated and omitted from logging while being used in the application. UI flows supports inputs called **Sensitive text inputs** for storing these "private" values. 
+
+For more information on how to create these types of inputs, click here.
+
+
+To retrieve sensitive content from another connector, turn on **Secure Inputs** and **Secure Outputs** by following these steps:
+1.	Select **…** on the top right corner of the action.
+1.	Select **Settings**.
+
+    ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+
+1. Turn on the **Secure Inputs (Preview**) and **Secure Outputs (Preview)** properties to prevent these settings from being shown in the logs.
+
+   ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+
+1.	Select **Done**.
+   
+    You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
+
+      ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+
+   
+   >[!TIP]
+   >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
+
+   ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+
+
 ## Run UI flows unattended or attended
 
 When you create UI flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that do not need human supervision.
