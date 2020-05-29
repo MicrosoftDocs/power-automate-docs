@@ -120,23 +120,23 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 1.	Select **…** on the top right corner of the action.
 1.	Select **Settings**.
 
-    ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+    ![The settings option ](../media/run-ui-flow/settings.png "The settings option")
 
 1. Turn on the **Secure Inputs (Preview**) and **Secure Outputs (Preview)** properties to prevent these settings from being shown in the logs.
 
-   ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+   ![Secure inputs and outputs](../media/run-ui-flow/secure-outputs-secure-inputs.com.png "Secure inputs and outputs")
 
 1.	Select **Done**.
    
     You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
-      ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+      ![The lock icon](../media/run-ui-flow/lock-icon.png.png "The lock icon")
 
    
    >[!TIP]
    >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
 
-   ![Image for here ](../media/run-ui-flow/<name>.png "UI flow inputs")
+   ![Pass outputs to UI flow ](../media/run-ui-flow/pass-to-ui-flow.png "UI flow inputs")
 
 
 ## Run UI flows unattended or attended
