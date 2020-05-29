@@ -50,7 +50,7 @@ UI tree is not always available, such as with web-based or Java apps, and may be
 unreliable, such as when the IDs of a control change frequently or between
 sessions. With image recognition, click locations and other details are visually
 matched during playback, greatly expanding the range of applications that can be
-automated. Image recognition in UI flows is in public preview and currently
+automated. Image recognition in UI flows is a preview feature and currently
 available when recording a remote computer through the Remote Desktop Connection
 (RDC) app.
 
@@ -80,7 +80,9 @@ available when recording a remote computer through the Remote Desktop Connection
 
 1.  Select **Save**, and then test your UI flow.
 
-1. (Optional, but recommended) When calling this UI flow from another flow, use a Key Vault to retrieve the username and password from a secure location, to avoid storing the login info in the flow itself and so that the connection info for multiple machines can be managed in a single place. 
+1. When calling this UI flow from an automated flow, it is recommended to use a key management solution such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to retrieve the username and password and pass them to the sensitive text inputs of the UI flow dynamically, rather than storing them in the flow itself. 
+
+1. Additionally, enable Secure Inputs in the Settings menu for the "Run a UI flow for desktop" action in the flow that is calling the UI flow to ensure that the the inputs are not stored in the run history.
 
 ### To retrieve an output from a remote computer, use the Extract Text from Image action while recording: 
 
