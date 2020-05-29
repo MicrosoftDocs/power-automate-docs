@@ -37,7 +37,7 @@ landingContent:
        - linkListType: video
          links:
           - text: Overview of Power Automate
-            url: https://www.youtube.com/watch?v=hCuxuUaGC6Y
+            url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
        - linkListType: whats-new
          links:
           - text: Release plans
@@ -78,6 +78,8 @@ landingContent:
             url: /power-automate/ui-flows/setup
           - text: Create desktop UI flows
             url: /power-automate/ui-flows/create-desktop
+          - text: Use Softomotive's WinAutomation (NEW!)
+            url:  /power-automate/ui-flows/create-processes
           - text: Create web UI flows
             url: /power-automate/ui-flows/create-web
           - text: Run UI flows

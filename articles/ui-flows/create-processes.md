@@ -151,7 +151,7 @@ By default, WinAutomationController.exe runs processes in the background. If you
 
 ## Uninstall WinAutomation
 
-1.  Open the **start** menu \> **Settings** \> **Apps**.
+1.  Open the **Start** menu \> **Settings** \> **Apps**.
 
 1.  Search for **WinAutomation**, and then select it.
 
