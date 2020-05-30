@@ -179,14 +179,96 @@ You can perform these advanced operations by performing the following steps on a
    ![Condition card](../media/edit-desktop/condition-card.png)
 
 
+## Add a recording of a remote computer using image recognition (Preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-preview-features-expect-changes.md)]
+
+Image recognition in UI flows is a preview feature and currently
+available when recording a remote computer through the Remote Desktop Connection
+(RDC) app.
+ 
+
+### What is image recognition?
+
+Currently, desktop UI flows are primarily recorded using accessibility APIs (UI
+Automation and WinAppDriver) to detect the controls in the Microsoft Windows UI tree.​ Sometimes, the UI tree isn't available, such as with Web-based or Java apps. The UI tree may may be unreliable, such as when the IDs of a control change frequently or between
+sessions. 
+
+With image recognition, click locations and other details are visually
+matched during playback, greatly expanding the range of applications that can be
+automated. 
+
+### Use image recognition to record a remote computer
+
+ 
+1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs, one for the username and one for the password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored or logged by the UI flow itself.
+
+   ![Sensitive text ](../media/create-remote-desktop/ir-sensitive-text.png)
+
+1. Follow the steps in **Add a recording** to launch the recorder control for a new or existing UI flow.
+
+1. Use the Remote Desktop app to connect to the remote computer.
+
+1. Expand the Remote Desktop window to full screen.
+
+1. Select **Record** from the recorder control and select **Got it** in the alert that appears.
+
+   ![Popup](../media/create-remote-desktop/popup.png)
+
+1. Perform the steps on the remote computer, and then select **Done** on the recorder control.
+
+1. Locate the **Launch Remote Desktop** action within your recording, and then enter the sensitive text inputs for the username and password.
+
+![Username and password sensitive text](../media/create-remote-desktop/ir-launch-emote_desktop-session.png)
+
+1. Select **Save**, and then test your UI flow.
+
+>[!IMPORTANT]
+>When you call this UI flow from an automated flow, it is recommended to use a key management solution such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to retrieve the username and password and then pass them to the **sensitive text** inputs in the UI flow dynamically, rather than storing them in the flow itself. 
+
+>[!TIP]
+> Enable **Secure Inputs** in the **Settings** menu for the **Run a UI flow for desktop** action in the flow that is calling the UI flow. This ensures that the inputs are not stored in the run history.
+
+### Use the Extract Text from Image action while recording to retrieve an output from a remote computer.
+
+1. While recording your steps, navigate to the location of the text that you wish to capture.
+
+1. Select **Outputs** > **Extract Text from Image** from the recorder control.
+
+1. Follow the prompts to select an **anchor area** (a section of the screen that is not expected to change, such as the label next to a field).
+
+    ![Anchor area](../media/create-remote-desktop/ir-anchors.png)
+
+1.  Select the **target area** (the area from which text will be extracted using OCR).
+
+    ![Target area](../media/create-remote-desktop/ir-targets.png)
+
+1.  Enter a name for the output.
+
+1.  Select **Done** on the recorder control.
+
+1.  Select **Save**, and then test your UI flow.
+
+
+### Known issues for Remote Desktop recordings
+
+1. Ensure that all required inputs (computer name, username, and password) are filled in and saved before recording further steps in the same UI flow.
+
+1. To attach to an existing remote desktop session, the session must have been launched earlier in the same UI flow.
+
+1. The recommended way to launch the Remote Desktop Connection (RDC) when recording is from the Remote Desktop Connection app (mstc.exe) from the Start menu. If Windows Security actions are recorded in addition to the **Launch Remote Desktop** action, they should be removed from the designer so that playback is not interrupted (this can happen when the Remote Desktop session is launched from a shortcut).
+
+1. Playback can fail if the UI flow was recorded on a screen with screen scaling (Windows Settings > Display > Screen Scaling) set to a value other than 100%. As a workaround, ensure that screen scaling is set to 100% prior to recording.
+
+
 ## Handle error conditions
 
-Unexpected conditions can arise during playback and cause your UI flows to fail. You can use advanced error handling capabilities to create alternate steps when unexpected conditions arise. 
+Unexpected conditions can arise during playback. These conditions can cause your UI flows to fail. You can use advanced error handling capabilities to create alternate steps when unexpected conditions arise. 
 
 Here are the steps to do so.
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com) with your school or work account.
-1. Select **My flows** > **UI flows** to display your UI flows.
+1. Select **My flows** > **UI flows**.
 1. Select **More commands** (the three vertical dots for the UI flow you want to edit).
 1. Select **Edit**.
 1. Select the down arrow that's located immediately before the UI flow step to which you want to add error handling, and then select **+** (Insert new step).
@@ -248,8 +330,6 @@ Follow these steps after you've recorded a UI flow script:
 
 >[!WARNING]
 >With coordinate-based playback, the automation may select controls that are not part of the target application due to a variety of reasons, for example, when the UI of the target applications changes dramatically.
-
-
 
 
 ## Next steps

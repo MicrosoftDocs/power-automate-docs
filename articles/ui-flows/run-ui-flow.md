@@ -85,15 +85,16 @@ In this example we will use an automated flow to trigger a UI flow when a new em
    ![Select UI flow](../media/run-ui-flow/select-ui-flow.png "Select UI flow")
 
 1. Select **Save** to save your automated flow.
- >[!TIP]
- >Before testing, confirm that your gateway is online. Go to **Data** > **Gateways** on the navigation pane, select the gateway name, click on **...** go to **Details** and verify if the **gateway status** is **online**.If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. 
+ 
+    >[!TIP]
+    >Before testing, confirm that your gateway is online. Go to **Data** > **Gateways** on the navigation pane, select the gateway name, click on **...** go to **Details** and verify if the **gateway status** is **online**.If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. 
 
 1. Test your flow by sending an email to trigger it. You will see your UI flow playing back the steps you recorded. 
 
-![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
+   ![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
 
->[!TIP]
->Do not interact with your device while the flow runs.
+   >[!TIP]
+   >Do not interact with your device while the flow runs.
 
 ## Use inputs and outputs
 
@@ -107,6 +108,37 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 
 1. You can also use outputs from your UI flow as inputs for actions that appear later in the flow. To do this, select the input field, and then select an input from the token picker.
+
+
+## Use sensitive text inputs
+
+Some inputs like passwords need to be obfuscated and omitted from logging while being used in the application. UI flows supports inputs called **Sensitive text inputs** for storing these "private" values. 
+
+For more information on how to create these types of inputs, click here.
+
+
+To retrieve sensitive content from another connector, turn on **Secure Inputs** and **Secure Outputs** by following these steps:
+1.	Select **…** on the top right corner of the action.
+1.	Select **Settings**.
+
+    ![The settings option ](../media/run-ui-flow/settings.png "The settings option")
+
+1. Turn on the **Secure Inputs (Preview**) and **Secure Outputs (Preview)** properties to prevent these settings from being shown in the logs.
+
+   ![Secure inputs and outputs](../media/run-ui-flow/secure-outputs-secure-inputs.png "Secure inputs and outputs")
+
+1.	Select **Done**.
+   
+    You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
+
+      ![The lock icon](../media/run-ui-flow/lock-icon.png "The lock icon")
+
+   
+      >[!TIP]
+      >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
+
+      ![Pass outputs to UI flow ](../media/run-ui-flow/pass-to-ui-flow.png "UI flow inputs")
+
 
 ## Run UI flows unattended or attended
 
