@@ -181,7 +181,7 @@ You can perform these advanced operations by performing the following steps on a
 
 ## Add a recording of a remote computer using image recognition (Preview)
 
-
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-preview-features-expect-changes.md)]
 
 Image recognition in UI flows is a preview feature and currently
 available when recording a remote computer through the Remote Desktop Connection
@@ -203,7 +203,7 @@ automated.
  
 1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs, one for the username and one for the password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored or logged by the UI flow itself.
 
-   ![Sensitive text ](../media/create-remote-desktop/IR-Sensitivetext.png)
+   ![Sensitive text ](../media/create-remote-desktop/ir-sensitive-text.png)
 
 1. Follow the steps in **Add a recording** to launch the recorder control for a new or existing UI flow.
 
@@ -213,13 +213,13 @@ automated.
 
 1. Select **Record** from the recorder control and select **Got it** in the alert that appears.
 
-   ![dfdfdf](../media/create-remote-desktop/IR-Popup.png, "dfdf")
+   ![Popup](../media/create-remote-desktop/popup.png)
 
 1. Perform the steps on the remote computer, and then select **Done** on the recorder control.
 
 1. Locate the **Launch Remote Desktop** action within your recording, and then enter the sensitive text inputs for the username and password.
 
-![Username and password sensitive text](../media/create-remote-desktop/IR-Launch_Remote_Desktop_session.png)
+![Username and password sensitive text](../media/create-remote-desktop/ir-launch-emote_desktop-session.png)
 
 1. Select **Save**, and then test your UI flow.
 
@@ -237,11 +237,11 @@ automated.
 
 1. Follow the prompts to select an **anchor area** (a section of the screen that is not expected to change, such as the label next to a field).
 
-    ![Anchor area](../media/create-remote-desktop/IR-Anchor.png)
+    ![Anchor area](../media/create-remote-desktop/ir-anchors.png)
 
 1.  Select the **target area** (the area from which text will be extracted using OCR).
 
-    ![Target area](../media/create-remote-desktop/IR-Target.png)
+    ![Target area](../media/create-remote-desktop/ir-targets.png)
 
 1.  Enter a name for the output.
 
