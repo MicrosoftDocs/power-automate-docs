@@ -179,10 +179,9 @@ You can perform these advanced operations by performing the following steps on a
    ![Condition card](../media/edit-desktop/condition-card.png)
 
 
-## Add a recording of a remote computer using image recognition
+## Add a recording of a remote computer using image recognition (Preview)
 
-*{{Placeholder for disclaimer – this functionality is in preview and subject to
-change.}}*
+
 
 Image recognition in UI flows is a preview feature and currently
 available when recording a remote computer through the Remote Desktop Connection
@@ -216,13 +215,13 @@ automated.
 
    ![dfdfdf](../media/create-remote-desktop/IR-Popup.png, "dfdf")
 
-1.  Perform the steps on the remote computer, and then select **Done** on the recorder control.
+1. Perform the steps on the remote computer, and then select **Done** on the recorder control.
 
-1.  Locate the **Launch Remote Desktop** action within your recording, and then enter the sensitive text inputs for the username and password.
+1. Locate the **Launch Remote Desktop** action within your recording, and then enter the sensitive text inputs for the username and password.
 
 ![Username and password sensitive text](../media/create-remote-desktop/IR-Launch_Remote_Desktop_session.png)
 
-1.  Select **Save**, and then test your UI flow.
+1. Select **Save**, and then test your UI flow.
 
 >[!IMPORTANT]
 >When you call this UI flow from an automated flow, it is recommended to use a key management solution such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to retrieve the username and password and then pass them to the **sensitive text** inputs in the UI flow dynamically, rather than storing them in the flow itself. 
@@ -232,13 +231,11 @@ automated.
 
 ### Use the Extract Text from Image action while recording to retrieve an output from a remote computer.
 
-1.  While recording your steps, navigate to the location of the text that you wish to
-    capture.
+1. While recording your steps, navigate to the location of the text that you wish to capture.
 
-1.  Select **Outputs** > **Extract Text from Image** from the recorder control.
+1. Select **Outputs** > **Extract Text from Image** from the recorder control.
 
-1.  Follow the prompts to select an **anchor area** (a section of the screen
-    that is not expected to change, such as the label next to a field).
+1. Follow the prompts to select an **anchor area** (a section of the screen that is not expected to change, such as the label next to a field).
 
     ![Anchor area](../media/create-remote-desktop/IR-Anchor.png)
 
@@ -252,20 +249,16 @@ automated.
 
 1.  Select **Save**, and then test your UI flow.
 
+
 ### Known issues for Remote Desktop recordings
 
-1.  Ensure that all required inputs (computer name, username, and password) are
-    filled in and saved before recording further steps in the same UI flow.
+1. Ensure that all required inputs (computer name, username, and password) are filled in and saved before recording further steps in the same UI flow.
 
-1.  To attach to an existing remote desktop session, the session must have been
-    launched earlier in the same UI flow
+1. To attach to an existing remote desktop session, the session must have been launched earlier in the same UI flow.
 
-1.  The recommend way to launch the Remote Desktop Connection (RDC) when recording is from the Remote Desktop Connection app (mstc.exe) in the Start menu. If Windows Security actions are recorded in addition to the Launch Remote Desktop action, they should be removed in the designer so that playback is not interrupted (this can happen when the Remote Desktop session is launched from a shortcut)
+1. The recommended way to launch the Remote Desktop Connection (RDC) when recording is from the Remote Desktop Connection app (mstc.exe) from the Start menu. If Windows Security actions are recorded in addition to the **Launch Remote Desktop** action, they should be removed from the designer so that playback is not interrupted (this can happen when the Remote Desktop session is launched from a shortcut).
 
-1.  Playback can fail if the UI flow was recorded on a screen with screen
-    scaling (Windows Settings -\> Display -\> Screen Scaling) set to a value
-    other than 100%. As a workaround, ensure that screen scaling is set to 100%
-    prior to recording.
+1. Playback can fail if the UI flow was recorded on a screen with screen scaling (Windows Settings > Display > Screen Scaling) set to a value other than 100%. As a workaround, ensure that screen scaling is set to 100% prior to recording.
 
 
 ## Handle error conditions
