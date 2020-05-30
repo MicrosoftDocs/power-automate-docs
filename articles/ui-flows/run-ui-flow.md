@@ -85,15 +85,16 @@ In this example we will use an automated flow to trigger a UI flow when a new em
    ![Select UI flow](../media/run-ui-flow/select-ui-flow.png "Select UI flow")
 
 1. Select **Save** to save your automated flow.
- >[!TIP]
- >Before testing, confirm that your gateway is online. Go to **Data** > **Gateways** on the navigation pane, select the gateway name, click on **...** go to **Details** and verify if the **gateway status** is **online**.If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. 
+ 
+    >[!TIP]
+    >Before testing, confirm that your gateway is online. Go to **Data** > **Gateways** on the navigation pane, select the gateway name, click on **...** go to **Details** and verify if the **gateway status** is **online**.If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. 
 
 1. Test your flow by sending an email to trigger it. You will see your UI flow playing back the steps you recorded. 
 
-![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
+   ![Successful run that calls a UI flow](../media/run-ui-flow/successful-run.png "Successful run that calls a UI flow")
 
->[!TIP]
->Do not interact with your device while the flow runs.
+   >[!TIP]
+   >Do not interact with your device while the flow runs.
 
 ## Use inputs and outputs
 
@@ -133,10 +134,10 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
       ![The lock icon](../media/run-ui-flow/lock-icon.png "The lock icon")
 
    
-   >[!TIP]
-   >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
+      >[!TIP]
+      >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
 
-   ![Pass outputs to UI flow ](../media/run-ui-flow/pass-to-ui-flow.png "UI flow inputs")
+      ![Pass outputs to UI flow ](../media/run-ui-flow/pass-to-ui-flow.png "UI flow inputs")
 
 
 ## Run UI flows unattended or attended
