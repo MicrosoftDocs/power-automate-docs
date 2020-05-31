@@ -1,10 +1,10 @@
 ---
 title: Create a flow with Dynamics 365 (online) | Microsoft Docs
-description: Create useful workflows by using a Dynamics 365 connection and Power Automate
+description: The Dynamics 365 connector is deprecated. Use the Common Data Service (Current Environment) connector or the Common Data Service connector instead.
 services: ''
 suite: flow
 documentationcenter: na
-author: Mattp123
+author: JimDaly
 manager: kvivek
 editor: ''
 tags: ''
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 05/31/2020
 ms.author: matp
 search.app: 
   - Flow
@@ -23,14 +23,27 @@ search.audienceType:
 ---
 # Create a flow by using Dynamics 365 (online)
 
+> [!IMPORTANT]
+> Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) use the [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
+>
+> The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed.
+> For more information see [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
+> 
+> Do not use the Dynamics 365 connector for new flows. Use the [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) whenever you can.
+> If the Common Data Service (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
+>
+> The [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
+
+
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
 In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> To invoke a Power Automate trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> To invoke a Power Automate trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## Create a flow from a template
+
 You can create a flow using one of the many templates available, such as these examples:
 
 * When an object is created in Dynamics 365, create a list item in SharePoint.
@@ -44,6 +57,7 @@ To create a flow from a template, follow these steps.
 3. Several templates are available. To get started, select the template that you want.
 
 ## Create a task from a lead
+
 If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
 
 1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
@@ -57,7 +71,7 @@ If a template isn’t available for what you need, create a flow from scratch. T
    
     ![Flow details](./media/connection-dynamics365/flow-details.png)
     > [IMPORTANT]
-    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Click or tap **New step**, and then click or tap **Add an action**.
 8. Click or tap **Dynamics 365 – Create a new record**.
@@ -79,35 +93,22 @@ If a template isn’t available for what you need, create a flow from scratch. T
     > 
 12. Click or tap **Create flow**.
 
-## Create a Wunderlist task from a Dynamics 365 task
-This walkthrough shows you how to create a task in [Wunderlist](https://www.wunderlist.com) whenever a task is created in Dynamics 365. Wunderlist is an Internet-based service that you can use to create to-do lists, add reminders, or track errands.
-
-1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
-2. Click or tap **My flows**, and then click or tap **Create from blank**.
-3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
-4. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.
-5. Under **Entity Name**, select the entity that you want to listen to, which will act as a trigger to initiate the flow.
-   
-    For this walkthrough, select **Tasks**.
-6. Click or tap **New step**, and then click or tap **Add an action**.
-7. Type *create a task*, and then click or tap **Wunderlist – Create a task**.
-8. Under **List ID**, select **inbox**.
-9. Under **Title**, select **Subject** in the dynamic content pane.
-10. Click or tap **Create flow**.  
-
 ## Trigger based logic
+
 Triggers like **When a record is created**, **When a record is updated**, and **When a record is deleted** initiate your flow within a few minutes of the event occurring.  In rare cases, your flow can take up to 2 hours to trigger.
 
 When the trigger occurs, the flow receives a notification, but the flow runs on data that exists at the time the action runs.  For example, if your flow triggers when a new record is created, and you update the record twice before the flow runs, your flow runs only once with the latest data.
 
 ## Specify advanced options
+
 When you add a step to a flow, you can click or tap **Show advanced options** to add a filter or order by query that controls how the data is filtered in the flow.
 
-For example, you can use a filter query to retrieve only active contacts, and you can order them by last name. To do this, enter the OData filter query **statuscode eq 1** and select **Last Name** from the dynamic content pane. For more information about filter and order by queries, see [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) and [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+For example, you can use a filter query to retrieve only active contacts, and you can order them by last name. To do this, enter the OData filter query **statuscode eq 1** and select **Last Name** from the dynamic content pane. For more information about filter and order by queries, see [Query data > Filter results](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) and [Query data > Order results](/powerapps/developer/common-data-service/webapi/query-data-web-api#order-results).
 
   ![Flow orderby query](./media/connection-dynamics365/flow-orderby-query.png)
 
 ### Best practices when using advanced options
+
 When you add a value to a field, you must match the field type whether you type a value or select one from the dynamic content pane.
 
 | Field type | How to use | Where to find | Name | Data type |
@@ -119,6 +120,7 @@ When you add a value to a field, you must match the field type whether you type 
 |Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of fields that require both a record ID and lookup type
+
 Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in Power Apps.
 
 * **Owner** and **Owner Type**.
@@ -149,6 +151,7 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
 > 
 
 ## Find the record's ID
+
 1. In the Dynamics 365 web application, open a record, such as an account record.
 2. On the actions toolbar, click or tap **Pop Out**
    ![popout record](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
@@ -158,6 +161,7 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
    ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
+
 [Troubleshooting a flow](fix-flow-failures.md)
 
 [Flow in your organization Q&A](organization-q-and-a.md)
