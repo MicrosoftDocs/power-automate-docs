@@ -109,7 +109,7 @@ Once you have defined your automation script in WinAutomation, you can run it fr
 
 To run a WinAutomation process without the Console environment, you can use the WinAutomationController.EXE command. This process in located in the WinAutomation installation folder and can be launched from the **Command Prompt** in Windows. While it has many useful parameters, to launch the automation, you will use the ‘/start’ flag which will start the specified process. Here's an example of the command: **WinAutomationController /start processPath**
 
-*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Robots/../../processName").
+*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Processes/../../processName").
 
 ### Launching WinAutomation processes from UI flows
 
@@ -121,7 +121,7 @@ Once you have successfully identified the command to run WinAutomation processes
 
 1.  Open the **Command Prompt** app in Windows.
 
-1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Robots/../../process").
+1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Processes/../../process").
 
 1.  Select **Done** in the recorder.
 
