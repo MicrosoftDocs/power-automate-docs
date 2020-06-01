@@ -34,13 +34,21 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
-1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Processes/MyAutomationName"*.
+1. Enter the command to trigger the process.
+   - For a process that doesn't require input variables, enter *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
+   - For a process that requires input variables, enter them after the process name. For example, if a process named *MyAutomationName* requires *VariableA* and *VariableB*, place their values like this: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName" ValueA ValueB.*
+
    >[!TIP] 
-   >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+   >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from Power Automate.
 
-1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
-1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
+1. Press enter at the command prompt, and then stop the UI flows recording. 
+   UI flows captures all the necessary information at the time the WinAutomation process starts.
+   
+1. Add the UI flow into a flow, and then select *attended* or *unattended*  as the run type.
 
+   >[!TIP] 
+   >In the WinAutomation process, use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
+   
 ## Set up WinAutomation
 
 >[!TIP]
@@ -109,7 +117,7 @@ Once you have defined your automation script in WinAutomation, you can run it fr
 
 To run a WinAutomation process without the Console environment, you can use the WinAutomationController.EXE command. This process in located in the WinAutomation installation folder and can be launched from the **Command Prompt** in Windows. While it has many useful parameters, to launch the automation, you will use the ‘/start’ flag which will start the specified process. Here's an example of the command: **WinAutomationController /start processPath**
 
-*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Robots/../../processName").
+*processPath* is the path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the processPath. Note that if processPath contains spaces, it should be enclosed in double quotes (e.g. WinAutomationController /start "/My Processes/../../processName").
 
 ### Launching WinAutomation processes from UI flows
 
@@ -121,7 +129,7 @@ Once you have successfully identified the command to run WinAutomation processes
 
 1.  Open the **Command Prompt** app in Windows.
 
-1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Robots/../../process").
+1.  Type in the WinAutomationController command you authored earlier (for example, WinAutomationController /start "/My Processes/../../process").
 
 1.  Select **Done** in the recorder.
 
