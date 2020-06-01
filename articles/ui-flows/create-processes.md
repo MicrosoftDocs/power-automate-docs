@@ -34,13 +34,21 @@ Existing WinAutomation users can learn more at [Softomotive's support page](http
 
 1. Start a UI flows desktop recording.
 1. Open the command prompt.
-1. Enter the command to trigger the process execution.  For example, for a process named "MyAutomationName" located within "My processes" folder in WinAutomation, you will enter: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Processes/MyAutomationName"*.
+1. Enter the command to trigger the process.
+   - For a process that doesn't require input variables, enter *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName"*.
+   - For a process that requires input variables, enter them after the process name. For example, if a process named *MyAutomationName* requires *VariableA* and *VariableB*, place their values like this: *"%programfiles%\WinAutomation\WinAutomationController.exe" /start "/My Robots/MyAutomationName" ValueA ValueB.*
+
    >[!TIP] 
-   >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from within Power Automate.
+   >You can use UI flows inputs and Dynamic content to change the target WinAutomation process from Power Automate.
 
-1. Hit enter in the command prompt then stop the UI flows recording. As the WinAutomation process get started, UI flows has captured all the necessary information.
-1. Add the resulting UI flow into a flow, and then select *attended* or *unattended* execution.
+1. Press enter at the command prompt, and then stop the UI flows recording. 
+   UI flows captures all the necessary information at the time the WinAutomation process starts.
+   
+1. Add the UI flow into a flow, and then select *attended* or *unattended*  as the run type.
 
+   >[!TIP] 
+   >In the WinAutomation process, use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
+   
 ## Set up WinAutomation
 
 >[!TIP]
