@@ -163,5 +163,6 @@ The following table lists endpoint data requirements for connectivity from a use
 
 Endpoint type | Domains | Protocols | Uses
 --------| --------|  ---------| -----
-Worldwide endpoints|mscrl.microsoft.com|http, https|Access to the CRL server for the public cloud.
-U.S. Government GCC and GCC High endpoints|crl3.digicert.com<br>crl4.digicert.com|http, https|Access to the CRL server for US government cloud.
+Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for the public cloud.
+U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for US government cloud.
+21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn|http|Access to the CRL servers for 21Vianet operated cloud.
