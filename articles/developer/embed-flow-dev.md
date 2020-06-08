@@ -47,7 +47,7 @@ To start, add this code to show the Power Automate templates on your website:
 
 | Parameter | Description |
 | --- | --- |
-| locale |The four-letter language and region code for the template view. For example, `en-us` represents American English, and `de-de` represents German. |
+| locale |The four-letter language and region code for the template view. For example, `en-us` represents US English, and `de-de` represents German. |
 | search term |The search term for the templates that you want to show in the view. For example, search `SharePoint` to show templates for SharePoint. |
 | number of templates |The number of templates that you want to show in the view. |
 | destination |The page that opens when users select the template. Enter `details` to show the details about the template, or enter `new` to open the Power Automate designer. |
@@ -455,7 +455,7 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | Locale     | Language                   | 
 |------------|----------------------------| 
 | bg-bg      | Bulgarian (Bulgaria)       | 
-| ca-es      | Catalan (Spain)            | 
+| ca-es      | Catalan (Catalan)            | 
 | cs-cz      | Czech (Czech Republic)     | 
 | da-dk      | Danish (Denmark)           | 
 | de-de      | German (Germany)           | 
@@ -463,10 +463,10 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | en-Us      | English (United States)    | 
 | es-es      | Spanish (Castilian)        | 
 | et-ee      | Estonian (Estonia)         | 
-| eu-es      | Basque (Spain)             | 
+| eu-es      | Basque (Basque)             | 
 | fi-fi      | Finnish (Finland)          | 
 | fr-fr      | French (France)            | 
-| gl-es      | Galician (Spain)           | 
+| gl-es      | Galician (Galician)           | 
 | hi-HU      | Hungarian (Hungary)        | 
 | hi-in      | Hindi (India)              | 
 | hr-hr      | Croatian (Croatia)         | 

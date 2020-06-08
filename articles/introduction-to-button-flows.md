@@ -30,18 +30,21 @@ There are many repetitive tasks that we all wish we could run with just a tap of
   ![Overview image](./media/introduction-to-button-flows/buttons-montage.png)  
 
 ## Why create buttons?
-Create buttons so that you can easily run repetitive tasks from anyplace, at anytime via your mobile device. Executing buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
+Create buttons so that you can easily run repetitive tasks from any place, at anytime via your mobile device. Running buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
 
 ## Create a button
 ### Prerequisites
-* Access to Flow. Your administrator can provide you with access.
+* Access to Power Automate](https://flow.microsoft.com).
 * An account with permissions to use the connectors to create your button. For example, you will need a Dropbox account in order to create a button that accesses Dropbox.
 
 ### From the portal
-In this walk-through, let's create a button that starts a Visual Studio Online (VSO) build and sends notifications to let you know when the build starts:  
+In this walk-through, let's create a button that starts a Visual Studio Online (VSO) build and sends notifications to let you know when the build starts:
 
-1. Select the **Showing** drop down list and choose the **Button** category. This filters the list of templates to only those that can be used in instant flows.  
-   ![Image showing categories](./media/introduction-to-button-flows/create-button-1.png)   
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Select **Create** from the left side of the screen.
+1. Select **Instant flow**.
+1. Give your flow a name in the **Flow name** > **Manually trigger a flow** > **Create**. 
+ 
 2. Select the **Trigger a new build in VSO** template from the list of templates.  
    ![Image showing templates ](./media/introduction-to-button-flows/create-button-2.png)  
 3. Select the **Use this template** button on the **Trigger a new build in VSO** page.   
@@ -65,7 +68,7 @@ In this walk-through, let's create a button that starts a Visual Studio Online (
 11. You should see this success message within a few moments:  
     ![Success message](./media/introduction-to-button-flows/create-button-11.png)  
 
-Congratulations, you've created a instant flow! You can now run this instant flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+Congratulations, you've created a instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### From your mobile device
 
@@ -93,7 +96,7 @@ In the app:
 9. View all your flows on the **My flows** tab  
    ![View all flows image](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
 
-Congratulations, you've created a instant flow! You can now run this instant flow anytime, anyplace, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
+Congratulations, you've created a instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
 
 ![New instant flow image](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
 
@@ -121,7 +124,7 @@ You can monitor instant flows from the **Activity** tab of the flow app:
 ![Activity details image](./media/introduction-to-button-flows/activity-details-1.png)  
 
 ## Manage instant flows
-You have full control of your instant flows so you can enable/disable, edit or delete a button anytime, anyplace. From the mobile app or from the flow portal, select **My flows** to get started managing your flows.    
+You have full control of your instant flows so you can enable/disable, edit or delete a button anytime, any place. From the mobile app or from the flow portal, select **My flows** to get started managing your flows.    
 
 On the **My flows** tab of the Flow app:
 
