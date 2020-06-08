@@ -232,7 +232,9 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
 
-- [Approvals](./modern-approvals.md) are not yet available for GCC and GCC High tenants.
+- [Approvals](./modern-approvals.md) are available for GCC and GCC High tenants, but subject to the following limitations:
+  * There is no actionable approval support. Approval emails will contain links to the Power Automate portal for users to respond.
+  * There is no markdown support for approval email. 
 
 - [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
 
