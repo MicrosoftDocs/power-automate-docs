@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/17/2017
+ms.date: 06/08/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -32,21 +32,19 @@ Specify that a flow performs one or more tasks only if a condition is true. For 
 
 ## Add a condition
 
-1. In [Power Automate](https://flow.microsoft.com), select **My flows** in the top navigation bar.
+1. In [Power Automate](https://flow.microsoft.com), select **My flows**.
 
     You might need to sign in if you're not already signed in.
 
-1. In the list of flows, select one of the flows that you've created.
+1. Select one of the flows from **My flows**, and then select **More commands** (the three dots).
+
+   ![Select edit](./media/add-condition/select-edit.png)
 
     This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
-1. Select **Edit flow**.
+1. Select **Edit**.
 
-1. Under the last action, select **New step**.
-
-1. Select **Add a condition**.
-
-    ![Condition button](./media/add-condition/add-condition.png)
+1. Under the last action, select **New step** > **Condition**.
 
 1. On the **Condition** card, select an empty area in box on the left.
 
@@ -60,19 +58,25 @@ Specify that a flow performs one or more tasks only if a condition is true. For 
 
     ![The OBJECT NAME box with a parameter in it](./media/add-condition/specify-condition.png)
 
-1. Select the header of the action you want to use inside the condition (such as **Create item**) and drag it underneath the text that reads **If yes**.
+    Now that you've configured the condition, continue with the following steps to send an email if the **Retweet count** is more than 10.
 
-    When you release the cursor, the action moves into that box.
+1. Select **Add an action** on the **If yes** send of the condition. 
+1. Enter **Send an email** into the search box, and then select **Send an email (V2)**.
 
-    ![Drag action](./media/add-condition/drag-action.png)
+   ![Search to send an email](./media/add-condition/if-yes-condition.png)
 
-1. Configure the action as necessary.
+1. Configure the **Send an email (V2)** card to your liking, indicating the contents of the email that the flow sends if the **Retweet count** is greater than 10.
+
+   You can also configure the **If no** side of the condition if you'd like to take an when the **Retweet count** is less than 10.
 
 1. Save the flow.
 
-## Edit in advanced mode
+>[!TIP]
+>You can create complex conditions by using the **Add** button on the condition card.
 
-You can also select **Edit in advanced mode** to write more advanced conditions. You can use any expression from the *Workflow definition language* in advanced mode. Learn about all available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+![Add complex conditions](./media/add-condition/add-complex-condition.png)
+
+You can use any expression from the *Workflow definition language* in advanced mode. Learn about all the available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
 
 ## Next steps
 
