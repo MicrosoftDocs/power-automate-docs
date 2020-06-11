@@ -44,15 +44,15 @@
         "almostdunh",
         "AshleyWoodruff"
       ],
-      "breadcrumb_path": "breadcrumb/toc.yml",
-      "searchScope": [
-        "Power Automate"
-      ],
+      "breadcrumb_path": "breadcrumb/toc.yml",      
       "titleSuffix": "Power Automate",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/power-automate-docs",
       "feedback_product_url": "https://ideas.flow.microsoft.com",
       "search.appverid": "met150",
+      "search.app": [
+        "Flow"
+      ],
       "toc_preview": true
     },
     "fileMetadata": {
@@ -65,6 +65,9 @@
         "**/*.md": [
           "flow"
         ]
+      },
+      "searchScope": {
+        "**.*": [ "Power Platform", "Power Automate" ]
       }
     },
     "template": [],
