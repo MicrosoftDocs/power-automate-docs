@@ -33,6 +33,9 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 > [!IMPORTANT]
 > All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
 
+> [!IMPORTANT]
+> Markdown is not currently supported for GCC and GCC High customers.
+
 ## Client Support
 
 Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
