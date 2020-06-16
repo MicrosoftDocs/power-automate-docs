@@ -172,7 +172,7 @@ To run an attended UI flow, you need to have an active Windows user session that
 When an attended UI flow starts on the target machine, we recommend that you avoid interacting with your device until the run completes.
 
 
-## Schedule multiple UI flows on the same device
+## Run multiple UI flows on the same device one after the other 
 
 You can schedule multiple UI flows to run on one or more devices. If more than one UI flow is triggered to run on the same device, Power Automate will follow these rules:
 
@@ -188,6 +188,21 @@ You can schedule multiple UI flows to run on one or more devices. If more than o
 >[!IMPORTANT]
 >If there are too many UI flows in the execution queue a timeout might occur. 
 >UI flow runs will fail if they don’t run within 30 minutes after being triggered.
+
+## Run multiple concurrent UI flows on Windows Server devices
+Windows Server 2016 and Windows Server 2019 allow for multiple users to be signed in at the same time. Power Automate can leverage this OS capability to run multiple UI flows at the same time on such devices. This allows your organization to save on infrastructure costs.
+
+To benefit from multiple UI flows on a single device, you will perform the following steps:
+1. Setup a Windows Server 2016 or 2019 device with the on-premises gateway and the latest version of UI flows installed
+1. Use two or more user accounts to create UI Flows connections targeting the gateway on this machine. 
+
+Power Automate will automatically scale the number of concurrent UI flows runs to the maximum supported by the device. When exceeding the maximum supported by the device, the additional runs will wait as [described here](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-one-after-the-other).
+
+>[!IMPORTANT]
+If you want to use more than two parallel user sessions on Windows Server you will need Remote Desktop Services enabled. Learn more about [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license).
+
+>[!NOTE]
+>Running multiple concurrent UI flows by the **same user** is not supported. You will need to have different users running UI flows at the same time to benefit from this feature.
 
 ## Load balance requests across gateways in a cluster
 
@@ -214,7 +229,7 @@ If you plan to run multiple UI flows, there are a set of strategies you can adop
 
 1. Plan your UI flows to run at different times of the day, spreading your load over time. This works best if you have a single or a limited set of machines that can run workloads, and you can control the triggers (for example, scheduled flows) that start your UI flows.
 1. Create clusters of machines that can run UI flows with identical configurations in parallel. 
-1. Create multiple flows that each use a separate connection to target different machines. 
+1. Create multiple flows that each use a separate connection to target different machines.
 
 By following these strategies, you can avoid having UI flows competing to run on the same device and in some cases failing due to timeouts. 
 
