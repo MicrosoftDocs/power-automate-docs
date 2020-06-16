@@ -5,16 +5,11 @@ services: ''
 suite: flow
 documentationcenter: na
 author: JimDaly
-manager: kvivek
-editor: ''
-tags: ''
+ms.reviewer: deonhe
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2020
-ms.author: matp
+ms.author: jdaly
 search.app: 
   - Flow
 search.audienceType: 
@@ -24,13 +19,11 @@ search.audienceType:
 # Create a flow by using Dynamics 365 (online)
 
 > [!IMPORTANT]
-> Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) use the [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
+> Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
 >
-> The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed.
-> For more information see [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
+> The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) whenever you can.
-> If the Common Data Service (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
+> Do not use the Dynamics 365 connector for new flows. Use the [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) whenever you can. If the Common Data Service (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
 >
 > The [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
 
