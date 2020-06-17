@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/17/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -83,6 +83,44 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
 1. Select **Save**, and then test your UI flow.
+
+## Add a retry policy
+
+By default, UI flows retries failed UI automation steps using the default retry settings and timeout value.
+
+Follow these steps to set your own retry policy on specific steps after you've recorded your UI flow.
+
+1. Select **...** on the step that you want to change the retry policy.
+1. Select **Settings**.
+
+   The settings card for the step opens.
+
+   ![Open settings card](../media/edit-desktop/open-retry-settings.png)
+   
+
+1. Add a timeout value in the **Duration** box. 
+
+   The timeout duration can be between one minute and 24 hours. For example, you must enter the timeout duration in this format: **PT1M** to represent a timeout duration of one minute or **PT24H** to represent a timeout of 24 hours.
+
+   ![Retry policy card](../media/edit-desktop/retry-policy-card.png)
+
+   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before cancelling it. Once the action is cancelled, the retry policy begins. The default timeout value is five minutes. 
+
+   There are three types of retry in UI flows.
+
+   - Default
+   - None 
+   - Custom
+   
+The **Default** option is selected by default. This default value is set to retry 9 times. Including the initial attempt, this means a total of 10 attempts. There is a 1 second interval between retries.
+
+If you select the **None** option, then no retry attempts are done for this step.
+
+If you want to specify a custom retry policy, then select the **Custom** option, and enter value for **Number of retries** and **Length of intervals**.                    
+
+
+>[!NOTE]
+>The retry policy isn't available for all steps. If you don't see the retry options, it means that the policy isn't available for the specific step.
 
 ## Add a manual action
 
