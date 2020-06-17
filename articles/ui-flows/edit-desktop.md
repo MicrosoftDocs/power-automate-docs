@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/17/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -83,6 +83,24 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
 1. Select **Save**, and then test your UI flow.
+
+## Add a retry policy
+
+By default, UI flows retries failed UI automation steps using the default retry settings and timeout value.
+
+Follow these steps to set your own retry policy on specific steps after you've recorded your UI flow.
+
+1. Select **...** on the step that you want to change the retry policy.
+1. Select **Settings**.
+   
+   The The settings card for the action opens.
+1. Add a timeout value in the **Duration** box. 
+
+   The timeout duration can be between one minute and 24 hours. You must enter the timeout duration in this format: **PT1M** to represent a timeout duration of one minute or **PT24H** to represent a timeout of 24 hours.
+
+
+>[!NOTE]
+>The retry policy isn't available for all steps. If you don't see the retry options, it means that the policy isn't available for the specific step.
 
 ## Add a manual action
 
