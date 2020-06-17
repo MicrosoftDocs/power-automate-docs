@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/27/2020
+ms.date: 06/17/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -23,46 +23,45 @@ search.audienceType:
 ---
 # Create a flow that uses Common Data Service
 
-Improve operational efficiency with a unified view of business data by creating flow that uses [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
+Improve operational efficiency with a unified view of business data by creating a flow that uses [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
 
-For example, leverage Common Data Service within Power Automate in these key ways:
+Deploy this secure business database that comprises of well-formed standard business entities (such as sales, purchase, customer service, and productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
-* Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
-  
-    For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and build a custom app in which users can approve or reject items.
-  
-    For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+For example, you can leverage Common Data Service within Power Automate in these key ways:
+
+* Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis. For detailed steps, see the procedures later in this topic.
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
 
 **Prerequisites**
 
 * Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
   
     If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
-* If you haven't used Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
+* If you haven't used Common Data Service before, open the **Entities** tab of [Power Apps](https://web.powerapps.com/#/entities), and then select **Create my database**.
 
-## Sign in to your Environment
-1. Open the [Power Automate](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
-   
-    **Note**: you might need to open the top-left menu to show the **Sign in** button.
+## Sign in to your environment
+
+1. Browse to [Power Automate](https://flow.microsoft.com), and then select **Sign in** in the upper-right corner.
    
     ![Sign in](./media/common-data-model-intro/signin-flow.png)
-2. In the top right menu you select the environment that you created the database in powerapps.com.
+2. In the top right menu you select the environment in which you created the database in powerapps.com.
    
-    **Note**: if you do not select the same environment then you will not see your entities.
+    >[!IMPORTANT]
+    >If you don't select the same environment, you won't see your entities.
    
     ![Select environment](./media/common-data-model-intro/select-environment.png)
 
 ## Open a template
-1. In the **Search templates** box at the top of the screen, type or paste **common**, and then press Enter.
+
+1. In the **Search for a template by app, task, or industry** box at the top of the screen, enter **common**, and then press **enter**.
    
     ![Search for templates](./media/common-data-model-intro/template-search.png)
-2. In the list of templates, click or tap the template that imports data from the source you want into the entity (or *object*) that you want.
+2. In the list of templates, select the template that imports data from the source you want into the entity (or *object*) that you want.
    
     For example, click or tap the template that copies contact information from Dynamics 365 into Common Data Service.
    
-    ![Choose a template](./media/common-data-model-intro/choose-template.png)
-3. Click or tap **Use this template**.
+    ![Choose a template](./media/common-data-model-intro/select-template.png)
+3. Select **Use this template**.
    
     ![Use template](./media/common-data-model-intro/use-template.png)
 4. If you haven't already created a connection from Power Automate to Dynamics 365, click or tap **Sign in**, and then provide your credentials if prompted.
