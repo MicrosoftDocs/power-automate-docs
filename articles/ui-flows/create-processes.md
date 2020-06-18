@@ -25,15 +25,11 @@ search.audienceType:
 # Use Softomotive's WinAutomation with UI flows
 
 
-Here are some tips before you start,
+Here are some tips before you start using WinAutomation with UI flows.
 
-1.  Your Power Automate Attended RPA license (paid or trial) now gives you full
-    access to [WinAutomation](https://www.winautomation.com/). This document
-    will guide you through getting WinAutomation Processes running with Power
-    Automate.
+1.  Your Power Automate Attended RPA license (paid or trial) gives you full access to [WinAutomation](https://www.winautomation.com/). This document will guide you through getting WinAutomation Processes running with Power Automate.
 
-1.  Automation scripts in WinAutomation are called **Processes**. In Power
-    Automate, automation scripts are called *flows* or *UI flows*.
+1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
 
 1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better overall experience than UI
     automation in terms of scalability, reliability, and lower cost.
@@ -53,26 +49,20 @@ To run WinAutomation as part of Power Automate, you will need to:
 
 ## Licensing
 
-You need to have a Power Automate *Per user plan with attended RPA* to use UI
-flows and WinAutomation. If you don't have a paid plan, you can start a trial by
-going to Power Automate. See
-[here](#how-to-get-output-from-winautomation-and-use-in-power-automate) for more
-details.
+You need to have a Power Automate *Per user plan with attended RPA* to use UI flows and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
 
  
 ## Install WinAutomation
 
 1.  Download the [WinAutomation installer](https://aka.ms/rpaDesktopAutomationInstallPage).
 
-2.  Open the **WinAutomationSetup.exe** file. This file is likely in your **Downloads** folder.
+1.  Run the **WinAutomationSetup.exe** file. This file is likely in your **Downloads** folder.
 
-3.  Follow the instructions in the WinAutomation installer to complete the installation. During installation, ensure the **License Type** is set to **Microsoft Power Automate**.
+1.  Follow the instructions in the WinAutomation installer to complete the installation. During installation, ensure the **License Type** is set to **Microsoft Power Automate**.
 
 ## Sign-in to WinAutomation
-------------------------
 
-1.  After the installation completes, start the WinAutomation Console from the
-    Windows start menu.
+1.  After the installation completes, start the WinAutomation Console from the Windows start menu.
 
 1.  The application will start and prompt you to login. Enter the user
     credentials you use for [Power Automate](https://flow.microsoft.com/). If
@@ -90,17 +80,13 @@ details.
 
       ![Request for permissions](media/7e2c7feb5fa79f570599bffaff3e9887.png)
 
-1.  When you asked to create a Master key during signing in, create one.
+1.  When you asked to create a Master key during sign in, create one.
 
 1.  Once signed in, you will see the WinAutomation console with a few example
-    Processes. To get started, you can go
-    to **Options** \> **Help** \> **Getting Started**, and then go through a few
-    examples of creating simple Processes or check out information from
-    [here](https://docs.winautomation.com/en/building-a-simple-process.html).
-    You can learn more from [WinAutomation getting started
-    tutorials](https://www.winautomation.com/support/tutorials/).
+    Processes. To get started, go to **Options** \> **Help** \> **Getting Started**, and then go through a few
+    examples of creating simple Processes or check out information from [here](https://docs.winautomation.com/en/building-a-simple-process.html). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
 
-1. You can now create your own WinAutomation Processes and test it locally.
+You can now create your own WinAutomation Processes and test them locally.
 
 ## Run WinAutomation Processes from Power Automate
 
@@ -115,44 +101,47 @@ details.
 
       ![Todo](media/8060b3deb4dc6c1adb3d2bf6623a5b05.png)
 
-1.  Select “+ New step” and select the new **WinAutomation** connector and **Run
-    WinAutomation (preview)** action.
+1.  Select **New step**, select **WinAutomation**, and then select the **Run WinAutomation (preview)** action.
 
-      ![todo](media/067208afe7d9326a0b3b95d3581ffe6d.png)
+      ![Select run WinAutomation](media/067208afe7d9326a0b3b95d3581ffe6d.png)
 
-1.  In the **Run WinAutomation (preview)** action card, fill in the Process Path
+1.  In the **Run WinAutomation (preview)** card, fill in the Process Path
     and any optional command line arguments for the WinAutomation Process that
     you want to run.
 
-      ![Todo](media/cc73d6d455358810b1866df97e9a95e4.png)
+      ![WinAutomation card](media/cc73d6d455358810b1866df97e9a95e4.png)
 
    >[!NOTE]
    >You must create and store WinAutomation Processes locally. 
 
-   >[!TIP]
+   >[!NOTE]
    >*Process Path* is a case-sensitive path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the ProcessPath. Don’t put quotes around the Process Path.
 
 
-**Tip 3:** You can use UI flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
+   >[!TIP]
+   >You can use UI flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
 
-1.  You can now save and test your UI flow to see how it launches the WinAutomation Process
+1.  You can now save and test your UI flow to see how it launches the WinAutomation Process.
 
-1.  You can then add the UI flow into a flow and connect to other Power Automate connectors and triggers.
+1.  You can then add the UI flow into a flow. You can even connect to other Power Automate connectors and triggers.
 
 1.  You can then select *attended* or *unattended* as the run type.
 
-**Tip 4:** In your WinAutomation Process, you can use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
+>[!TIP]
+>In your WinAutomation Process, you can use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
 
-**Tip 5**: Do not recommend passing sensitive text type of inputs through the command line arguments.
+>[!IMPORTANT]
+>Do not pass sensitive text such as passwords through the command line arguments.
 
-**Tip 6:** If you’re executing UI flows on an unattended cluster, ensure that the WinAutomation are installed on all machines the target Process is copied to all machines in the cluster. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
+>[!IMPORTANT]
+>If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
 
-1.  You can save and run the Power Automate flow and see it launches the WinAutomation Process. The UI flow will return once the WinAutomation Process run completed and you can view the run results from Power Automate. If the Process failed, you will be able to see the error messages as well.
+1.  You can save and then run the flow and see it launch the WinAutomation Process. The UI flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
-    >[!TIP]If you get exceptions, you may not have the latest UI flows installed. Please install the [latest UI flows](https://docs.microsoft.com/power-automate/ui-flows/upgrade).
+    >[!TIP]
+    >If you get exceptions, you may not have the latest UI flows installed. Install the [latest UI flows](https://docs.microsoft.com/power-automate/ui-flows/upgrade).
 
-1.  If you want WinAutomation to capture a screenshot when Process failed, do
-    the following:
+1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
 1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process     fails, you can view the screenshot captured at runtime from the Power Automate UI flow run details.  
 
@@ -161,18 +150,13 @@ details.
 Currently you have to use certain WinAutomation steps to write results and outputs from the process into a file in the cloud share or email the results out. Then you can use connectors from Power Automate to access and use those
 results.
 
-How to obtain an RPA trial license
-----------------------------------
+## How to obtain an RPA trial license
 
 Log in to [Power Automate](https://flow.microsoft.com/) then selecting the **UI flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
 
 ![Start a trial or buy a license](media/ceecb625d84ae49ef7dc711a21cc3b54.png)
 
-If you already have a paid plan or you used a trial previously, you cannot start
-a new trial. In this case, you will need to ask your administrator to buy or
-start a trial of the Power Automate *Per user plan with attended RPA*. They can
-make the purchase by going to **Billing** \> **Purchase services** in the
-Microsoft 365 admin center, and then searching for the right plan.
+If you already have a paid plan or you used a trial previously, you cannot start a new trial. In this case, you will need to ask your administrator to buy or start a trial of the Power Automate *Per user plan with attended RPA*. They can make the purchase by going to **Billing** \> **Purchase services** in the Microsoft 365 admin center, and then searching for the right plan.
 
 ![Per user plan with attended RPA](media/07d23b56dcd2b5bdd42655e146bf47cd.png)
 
