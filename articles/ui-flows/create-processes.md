@@ -78,7 +78,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use UI 
     your admin needs to install WinAutomation, sign in with their tenant
     administrator account, and then grant consent.
 
-      ![Request for permissions](../media/create-processes7e2c7feb5fa79f570599bffaff3e9887.png)
+      ![Request for permissions](../media/create-processes/7e2c7feb5fa79f570599bffaff3e9887.png)
 
 1.  When you asked to create a Master key during sign in, create one.
 
