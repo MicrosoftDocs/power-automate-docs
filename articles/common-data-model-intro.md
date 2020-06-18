@@ -58,35 +58,27 @@ For example, you can leverage Common Data Service within Power Automate in these
     ![Search for templates](./media/common-data-model-intro/template-search.png)
 2. In the list of templates, select the template that imports data from the source you want into the entity (or *object*) that you want.
    
-    For example, click or tap the template that copies contact information from Dynamics 365 into Common Data Service.
+    For example, select the template that copies notes from Lead to Opportunity in Common Data Service.
    
     ![Choose a template](./media/common-data-model-intro/select-template.png)
-3. Select **Use this template**.
    
-    ![Use template](./media/common-data-model-intro/use-template.png)
-4. If you haven't already created a connection from Power Automate to Dynamics 365, click or tap **Sign in**, and then provide your credentials if prompted.
+4. If you haven't already created a connection, select **Sign in**, and then provide your credentials as needed.
    
-    ![Sign in to Dynamics 365](./media/common-data-model-intro/dynamics-signin.png)
-5. Click or tap **Continue**.
-   
-    ![Confirm accounts](./media/common-data-model-intro/confirm-accounts.png)
+5. Select **Continue**.
 
 ## Build your flow
-1. In the first card, specify the event that will trigger the flow.
-   
-    For example, you're building a flow that will copy new contacts from an instance of Dynamics 365 to Common Data Service. Under **When a record is created**, specify the instance by clicking or tapping the down arrow and then clicking or tapping an option in the list that appears.
+1. On the **When a Opportunity is created** card, select the **Environment**, **Entity Name** and **Scope** that you want to use.
    
     ![Specify instance of Dynamics 365](./media/common-data-model-intro/specify-instance.png)
-2. (optional) Near the top of the screen, specify a different name for the flow that you're creating.
+
+1. Complete the **Get Opportunity Record** card, per your requirements.
    
-    **Note**: If your browser window isn't maximized, the UI might look slightly different.
+    ![Name flow](./media/common-data-model-intro/get-opportunity-record.png)
+1. Click or tap **Create flow**.
    
-    ![Name flow](./media/common-data-model-intro/name-flow.png)
-3. Click or tap **Create flow**.
-   
-    **Note**: If your browser window isn't maximized, only the checkmark may appear.
-   
-    ![Create flow](./media/common-data-model-intro/create-flow.png)
+    ![Create flow](./media/common-data-model-intro/originate-from-lead.png)
+
+1. 
 
 Now, whenever that object is created in the source system, it will be imported into Common Data Service. If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
 
