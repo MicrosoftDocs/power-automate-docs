@@ -96,27 +96,20 @@ You can now create your own WinAutomation Processes and test them locally.
     please
     go [here](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).)
 
-1.  Create a new UI flow (Desktop App type). Delete the default first step of
-    “Record app”
+1.  Create a new desktop UI flow. Delete the default first step of “Record app”.
 
-      ![Todo](media/8060b3deb4dc6c1adb3d2bf6623a5b05.png)
+      ![Delete record app step](media/8060b3deb4dc6c1adb3d2bf6623a5b05.png)
 
 1.  Select **New step**, select **WinAutomation**, and then select the **Run WinAutomation (preview)** action.
 
       ![Select run WinAutomation](media/067208afe7d9326a0b3b95d3581ffe6d.png)
 
-1.  In the **Run WinAutomation (preview)** card, fill in the Process Path
-    and any optional command line arguments for the WinAutomation Process that
-    you want to run.
+1.  In the **Run WinAutomation (preview)** card, fill in the Process Path and any optional command line arguments for the WinAutomation Process that you want to run.
 
       ![WinAutomation card](media/cc73d6d455358810b1866df97e9a95e4.png)
 
    >[!NOTE]
-   >You must create and store WinAutomation Processes locally. 
-
-   >[!NOTE]
-   >*Process Path* is a case-sensitive path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the ProcessPath. Don’t put quotes around the Process Path.
-
+   >You must create and store WinAutomation Processes locally. *Process Path* is a case-sensitive path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the ProcessPath. Don’t put quotes around the Process Path.
 
    >[!TIP]
    >You can use UI flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
@@ -127,14 +120,14 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  You can then select *attended* or *unattended* as the run type.
 
->[!TIP]
->In your WinAutomation Process, you can use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
+    >[!TIP]
+    >In your WinAutomation Process, you can use the *Get Command Line Arguments* action to retrieve the command line arguments. The arguments are in an array. Use their index to reference each argument.
 
->[!IMPORTANT]
->Do not pass sensitive text such as passwords through the command line arguments.
+    >[!IMPORTANT]
+    >Do not pass sensitive text such as passwords through the command line arguments.
 
->[!IMPORTANT]
->If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
+    >[!IMPORTANT]
+    >If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
 
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The UI flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
@@ -145,7 +138,7 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process     fails, you can view the screenshot captured at runtime from the Power Automate UI flow run details.  
 
-   ![Todo](media/a43a1010ea3c9b203b8b2c2b1086b26e.png)
+    ![Todo](media/a43a1010ea3c9b203b8b2c2b1086b26e.png)
 
 Currently you have to use certain WinAutomation steps to write results and outputs from the process into a file in the cloud share or email the results out. Then you can use connectors from Power Automate to access and use those
 results.
@@ -170,28 +163,28 @@ becomes effective.
 ## Troubleshooting WinAutomation licensing issues
 
 If you are receiving licensing errors during the launch of WinAutomation, ensure
-the user you’re logging in as has a valid Power Automate RPA license:
+the user you’re logging in as has a valid Power Automate RPA license. To confirm this:
 
 1.  Go to [Power Automate](https://flow.microsoft.com/) and sign in.
 
 1.  Select My flows on the left navigation bar.
 
 1.  Select UI flows on the page on the right. You should see you can create new
-    UI flows there if you have the correct license
+    UI flows there if you have the correct license.
 
-1.  You may need to start a trial or ask your administrator to do that
+1.  You may need to start a trial or ask your administrator to do it.
 
->[!NOTE]
->The license is cached when users launch WinAutomation while connected to the Internet.
+    >[!NOTE]
+    >The license is cached when users launch WinAutomation while connected to the Internet.
 
-To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3
+To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3.
 
 ## Learn more
 
--   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/)
+-   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 -   Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
--   Learn to [manage UI flows.](https://docs.microsoft.com/power-automate/ui-flows/manage)
+-   Learn to [manage UI flows](https://docs.microsoft.com/power-automate/ui-flows/manage).
 -   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).
