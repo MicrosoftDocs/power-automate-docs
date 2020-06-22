@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/31/2017
+ms.date: 06/19/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -38,7 +38,7 @@ Learn more about using [environments](environments-overview-admin.md) to manage 
 
 ## Data policies
 
-Learn more about using [data policies](prevent-data-loss.md) to create rules that manage how business data is shared between services in flows.
+Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to create rules that manage how business data is shared between services in flows.
 
 ## Next steps
 

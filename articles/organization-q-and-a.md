@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: erikre
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/05/2016
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -51,7 +51,7 @@ Power Automate is a fully public cloud service, and everyone in the world can si
 
 However, if a person signs up for Power Automate, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft, which is like many other cloud services from Microsoft such as Bing, OneDrive, or Outlook.com. An individual's use of Power Automate does not in any way imply that the service is provided by your organization.
 
-Finally, if your company wishes to restrict the use of organizational-only data inside of Power Automate, that is possible through Data loss prevention (DLP) policies.
+Finally, if your company wishes to restrict the use of organization-only data inside of Power Automate, that is possible through [Data loss prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention).
 
 ### How can people gain access to the paid features of Power Automate?
 Individuals can gain access to the paid features of Power Automate in three different ways:
