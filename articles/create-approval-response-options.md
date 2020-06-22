@@ -101,7 +101,7 @@ Approvers receive approval requests in email. The requests are also displayed in
 
 ## Limitations
 
-- Outlook and OWA Actionable Messages have a limit of 5 custom responses. Only the first 5 responses defined within the flow will be visible in the actionable section of the Power Automate approval emails. The remaining options can be submitted via the non-actionable HTML email, Power Automate portal/mobile application, or Teams.
+Outlook and Outlook Web Access(OWA) actionable messages have a limit of five custom responses. This means that only the first five responses that are defined within the flow will be visible in the actionable section of Power Automate approval emails. You can submit the remaining options via a non-actionable HTML email, the Power Automate approval center, the Power Automate mobile application, or Teams.
 
 ## Learn more
 - Create [single approver flows](modern-approvals.md)
