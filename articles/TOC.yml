@@ -310,8 +310,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Release notes
-    href: release-notes.md
   - name: Power Automate Web API
     href: web-api.md
   - name: Frequently asked questions
