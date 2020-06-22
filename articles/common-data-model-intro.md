@@ -1,6 +1,6 @@
 ---
 title: Common Data Service | Microsoft Docs
-description: Create a flow to import data, export data, or build approvals with Common Data Service.
+description: Create a flow from a template that uses Common Data Service.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,14 +23,15 @@ search.audienceType:
 ---
 # Create a flow that uses Common Data Service
 
-Improve operational efficiency with a unified view of business data by creating a flow that uses [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
+Improve operational efficiency with a unified view of business data by creating flows that use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
 
-Deploy this secure business database that comprises of well-formed standard business entities (such as sales, purchase, customer service, and productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
 
-For example, you can leverage Common Data Service within Power Automate in these key ways:
+For example, you can use Common Data Service within Power Automate in these key ways:
 
-* Create a flow to import data, export data, or take action when data (such as sending a notification) changes. Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis. For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+* Create a flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+
+In this article, you will create a flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Common Data Service. The notification includes the *Notes* from the *Lead*.
 
 ## Prerequisites
 
@@ -81,7 +82,7 @@ For example, you can leverage Common Data Service within Power Automate in these
    
     ![Get Opportunity Record](./media/common-data-model-intro/get-opportunity-record.png)
 
-1. Confirm the **Originate from a Lead** card. 
+1. Configure the **Originate from a Lead** card. 
    
     ![Originate from a Lead](./media/common-data-model-intro/originate-from-lead.png)
 
@@ -89,12 +90,17 @@ For example, you can leverage Common Data Service within Power Automate in these
 
    ![Complete decision branch](./media/common-data-model-intro/get-lead-list-notes.png)
 
-1. ddfdf
+1. Expand the **Apply to each** card, and then  delete the **Copy Lead Note to New Note** card.
 
-   ![todo](./media/common-data-model-intro/apply-to-each.png)
- 
+1. Select **Add an action**, search for **notification**, and then select **Send me an email notification**.
 
-Now, whenever that object is created in the source system, it will be imported into Common Data Service. If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
+   ![Email notification](./media/common-data-model-intro/apply-to-each.png)
 
-You can take actions on changes in the database. For example, you can send notification mail whenever data changes.
+1. Configure the notification card to send you an email notification with the details of the notes for the lead.
+
+   ![The notification card](./media/common-data-model-intro/notification-card.png)
+
+
+>[!TIP]
+>If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
 
