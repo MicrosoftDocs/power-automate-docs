@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 06/24/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -172,22 +172,37 @@ To run an attended UI flow, you need to have an active Windows user session that
 When an attended UI flow starts on the target machine, we recommend that you avoid interacting with your device until the run completes.
 
 
-## Schedule multiple UI flows on the same device
+## Run multiple UI flows on the same device sequentially 
 
-You can schedule multiple UI flows to run on one or more devices. If more than one UI flow is triggered to run on the same device, Power Automate will follow these rules:
+You can schedule multiple UI flows to run on one or more devices. If more than one UI flow is triggered to run on the same device, Power Automate follows these rules:
 
-1.  The first UI flow will run on the target device.
+1.  The first UI flow runs on the target device.
 
-1.  Queues other UI flows and displays them as **Waiting** in the UI flows and gateway details page.
+1.  Queues other UI flows and then displays them as **Waiting** in the UI flows and gateway details page.
 
-1.  Picks the next UI flow when each run completes.
+1.  Picks the next **Waiting** UI flow when each run completes.
 
 >[!NOTE]
->These orchestration rules apply to UI flow runs that are scheduled by any user scheduled by different users on the same device.
+>These orchestration rules apply to UI flows runs that are scheduled by any user on the same device.
 
 >[!IMPORTANT]
 >If there are too many UI flows in the execution queue a timeout might occur. 
->UI flow runs will fail if they don’t run within 30 minutes after being triggered.
+>UI flows runs will fail if they don’t run within 30 minutes after being triggered.
+
+## Run UI flows concurrently on Windows Server devices
+Multiple users can be signed in simultaneously on Windows Server 2016 and Windows Server 2019. Power Automate leverages this OS capability to simultaneously run multiple UI flows on such devices. With this feature, your organization can save on its infrastructure costs.
+
+Perform the following steps to benefit from multiple UI flows on a single device:
+1. Setup a Windows Server 2016 or 2019 device with the on-premises gateway and the latest version of UI flows installed.
+1. Use two or more user accounts to create UI flows connections targeting the gateway on this device. 
+
+Power Automate automatically scales the number of concurrent UI flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-ui-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
+
+>[!IMPORTANT]
+If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-client-access-license).
+
+>[!NOTE]
+>Running multiple concurrent UI flows by the **same user** is not supported. You will need to have different users running UI flows at the same time to benefit from this feature.
 
 ## Load balance requests across gateways in a cluster
 
@@ -214,7 +229,7 @@ If you plan to run multiple UI flows, there are a set of strategies you can adop
 
 1. Plan your UI flows to run at different times of the day, spreading your load over time. This works best if you have a single or a limited set of machines that can run workloads, and you can control the triggers (for example, scheduled flows) that start your UI flows.
 1. Create clusters of machines that can run UI flows with identical configurations in parallel. 
-1. Create multiple flows that each use a separate connection to target different machines. 
+1. Create multiple flows that each use a separate connection to target different machines.
 
 By following these strategies, you can avoid having UI flows competing to run on the same device and in some cases failing due to timeouts. 
 
