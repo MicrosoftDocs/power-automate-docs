@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/19/2020
+ms.date: 06/24/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -159,7 +159,7 @@ webshell.suite.office.com|https|Access to Office for header and search. Please s
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
 ### UI flows required services
-The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation and execution.
+The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation and runs.
 
 Endpoint type | Domains | Protocols | Uses
 --------| --------|  ---------| -----
