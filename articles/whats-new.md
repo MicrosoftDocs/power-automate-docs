@@ -37,7 +37,7 @@ Learn more about [how to use the latest Power Automate features](https://flow.mi
 
 ## Release plan
 
-Get familar with upcoming features and plan your rollouts by reading the [2020 release wave 1 plan](https://docs.microsoft.com/en-us/power-platform-release-plan/2020wave1/power-automate/planned-features)
+Get familiar with upcoming features and plan your rollouts by reading the [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
 
 
 ## Learn more
