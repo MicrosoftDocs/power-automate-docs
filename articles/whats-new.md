@@ -28,9 +28,7 @@ This article provides resources that you can use to learn about the features tha
 
 ## Weekly releases
 
-For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate]https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow).
-
-Learn more about [how to use the latest Power Automate features](https://flow.microsoft.com/en-us/blog/).
+For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow).
 
 > [!NOTE]
 > Releases are rolled out over several days. New or updated functionality might not appear immediately.
@@ -38,8 +36,3 @@ Learn more about [how to use the latest Power Automate features](https://flow.mi
 ## Release plan
 
 Get familiar with upcoming features and plan your rollouts by reading the [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
-
-
-## Learn more
-
-Get started with [Power Automate](getting-started.md).
