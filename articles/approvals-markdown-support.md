@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: gcorvera
-manager: kfile
+manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/27/2020
+ms.date: 6/27/2020
 ms.author: gcorvera
 search.app: 
   - Flow
@@ -189,14 +189,15 @@ Organize structured data with tables.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Cell B1 | Cell B2 | Cell B3<br>second line of text |  
 ```
 
 **Result:**  
+
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Cell B1 | Cell B2 | Cell B3<br>second line of text |  
 
  
 ## Emphasis (bold, italics, strikethrough)  
