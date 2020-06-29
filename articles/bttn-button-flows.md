@@ -49,13 +49,13 @@ In this walkthrough, we use a helpdesk template to create a flow that you can tr
 
 You can use any of these templates to quickly create flows for your bttn and connect to Zendesk, Google, and SharePoint, among others:
 
-![bttn templates](./media/bttn-button-flows/bttn-templates.png)
+![View list of bttn templates](./media/bttn-button-flows/bttn-templates.png)
 
 Tip: For the purposes of this walkthrough, give your bttn a name that represents a conference room in a typical office building.
 
 The settings for your bttn should resemble this example (from the bttn website):
 
-![bttn templates](./media/bttn-button-flows/bttn-config.png)
+![View of bttn settings](./media/bttn-button-flows/bttn-config.png)
 
 Now that you've registered and configured your bttn, let's get started creating our flow.
 
@@ -85,7 +85,7 @@ Now that you've registered and configured your bttn, let's get started creating 
     ![authorize](./media/bttn-button-flows/authorize-bttn.png)
 3. After you sign into both services, select **Continue**.
    
-    ![Continue](./media/bttn-button-flows/continue.png)
+    ![Select the continue button](./media/bttn-button-flows/continue.png)
 
 ### Select the bttn that triggers the flow
 1. In the **When a bttn is pressed** card, open the list of bttn IDs, and then select the bttn that you want to use.
@@ -110,7 +110,7 @@ Now that you've registered and configured your bttn, let's get started creating 
    
     If you've followed along, the support email looks similar to this example:
    
-    ![](./media/bttn-button-flows/support-request-email.png)
+    ![The support email](./media/bttn-button-flows/support-request-email.png)
 
 ## Troubleshooting
 * If your flow wasn't triggered, sign into The Button Corporation's site and confirm whether the button activity (presses) are being recorded.
