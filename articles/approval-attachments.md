@@ -42,7 +42,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
 1. Select the **Manually trigger a flow** trigger > **Add an input** > **File**.
 
-     The previous steps configure your flow so that when your flow runs, it requests a file from the user to trigger your flow.
+     The previous steps configure your flow so that when it runs, it requests a file from the user to trigger your flow.
 
 1. Select **New step**
 1. Search for **Approvals** and then select **Start and wait for an approval**.
