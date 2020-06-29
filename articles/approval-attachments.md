@@ -81,7 +81,7 @@ You'll can test your flow by selecting **Test** and then uploading an .xlsx file
 1. Select **Test** > **Continue** to start the test.
 1. Select **Import**.
 
-     ![](./media/approval-attachments/import-file.png)
+     ![Select the import button](./media/approval-attachments/import-file.png)
 1. Find the file, select it, and then select **Open** to upload the file or image you're sending for approval.
 
 1. Select **Run flow**.
