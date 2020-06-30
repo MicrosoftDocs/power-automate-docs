@@ -54,7 +54,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
-   ![](../media/edit-desktop/select-ui-flow.png)
+   ![Image that displays the UI flow to be edited](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
 1. Select **New step**.
 
@@ -84,6 +84,58 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
 1. Select **Save**, and then test your UI flow.
 
+## Add a loop
+
+UI flows have support for arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a flow to your UI flow, including complex arrays from a SharePoint list, for example.
+
+>[!NOTE]
+>You must edit an existing UI flow to add a loop.
+
+Here are the steps to create a loop in a UI flow:
+
+1. Edit the UI flow to which you want to add the loop.
+
+   ![Select the edit button for the UI flow](../media/edit-desktop/edit-ui-flow-loop.png "Select the edit button for the UI flow")
+
+1. Navigate to input section of the wizard, and then select **Set up inputs**.
+
+   ![Select Set up inputs](../media/edit-desktop/loops-input-section.png "Select Set up inputs")
+   
+
+1. Select **Array** to indicate that you want to create an array input type.
+
+   ![Select Array](../media/edit-desktop/loop-select-array-type.png "Select Array")
+
+1. Enter the details for the array including a name, the array in JSON format, and a description for the array.
+
+   ![Details of the array](../media/edit-desktop/loop-array-data.png "Details of the array")
+
+1. Select **Next**.
+
+1. Select **Add an action** .
+
+1. Search for "to each" > **Built-in** > and then select **Apply to each**.
+
+   ![Select the apply to each action](../media/edit-desktop/loop-apply-to-each.png "Select the apply to each action")
+
+1. Select **Select an output from previous steps**, select the array you defined earlier from the Dynamic content.
+
+   ![Add the array from dynamic content](../media/edit-desktop/loop-add-array-step.png "Add the array from dynamic content")
+
+1. Drag the actions you want to repeat and drop them onto the **Apply to each** card.
+
+   For example, I've dropped the **LeftClick 4** onto the **Apply to each** card in the following image.
+
+   ![Drag the step you want to repeat onto the array from dynamic content](../media/edit-desktop/loop-drag-apply-to-each.png "Drag the step you want to repeat onto the array from dynamic content")
+
+1. Replace the input tokens created during the recording with the array input values as needed. 
+
+>[!TIP]
+>If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content, like the following image. You can also use expressions.
+
+![Use Current item](../media/edit-desktop/loop-use-current-item.png)
+
+
 ## Add a retry policy
 
 By default, UI flows retries failed UI automation steps using the default retry settings and timeout value.
@@ -104,9 +156,9 @@ Follow these steps to set your own retry policy on specific steps after you've r
 
    ![Retry policy card](../media/edit-desktop/retry-policy-card.png)
 
-   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before cancelling it. Once the action is cancelled, the retry policy begins. The default timeout value is five minutes. 
+   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before canceling it. Once the action is canceled, the retry policy begins. The default timeout value is five minutes. 
 
-   There are three types of retry in UI flows.
+   There are three types of retries in UI flows.
 
    - Default
    - None 
@@ -144,7 +196,7 @@ Follow these steps to add a manual action:
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
-   ![](../media/edit-desktop/select-ui-flow.png)
+   ![The UI flow to edit](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
 1. Select the recording card that contains the steps to which you want to add a new step.
    The card expands and displays the recorded steps.
