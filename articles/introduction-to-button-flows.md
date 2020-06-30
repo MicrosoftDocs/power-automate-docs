@@ -34,7 +34,7 @@ Create buttons so that you can easily run repetitive tasks from any place, at an
 
 ## Create a button
 ### Prerequisites
-* Access to Power Automate](https://flow.microsoft.com).
+* Access to [Power Automate](https://flow.microsoft.com).
 * An account with permissions to use the connectors to create your button. For example, you will need a Dropbox account in order to create a button that accesses Dropbox.
 
 ### From the portal
