@@ -91,7 +91,7 @@ UI flows have support for arrays. Use an array, to add a loop to perform repetit
 >[!NOTE]
 >You must edit an existing UI flow to add a loop.
 
-Here are the steps to create a loop within UI flow:
+Here are the steps to create a loop in a UI flow:
 
 1. Edit the UI flow to which you want to add the loop.
 
