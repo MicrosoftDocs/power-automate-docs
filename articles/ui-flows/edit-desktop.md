@@ -54,7 +54,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
-   ![](../media/edit-desktop/select-ui-flow.png)
+   ![Image that displays the UI flow to be edited](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
 1. Select **New step**.
 
@@ -131,9 +131,9 @@ Here are the steps to create a loop within UI flow:
 1. Replace the input tokens created during the recording with the array input values as needed. 
 
 >[!TIP]
->If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content, like the following image.
+>If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content, like the following image. You can also use expressions.
 
-![Use CurrentItem](../media/edit-desktop/loop-use-current-item.png)
+![Use Current item](../media/edit-desktop/loop-use-current-item.png)
 
 
 ## Add a retry policy
@@ -196,7 +196,7 @@ Follow these steps to add a manual action:
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
-   ![](../media/edit-desktop/select-ui-flow.png)
+   ![The UI flow to edit](../media/edit-desktop/select-ui-flow.png)
 1. Select **Edit**. 
 1. Select the recording card that contains the steps to which you want to add a new step.
    The card expands and displays the recorded steps.
