@@ -156,9 +156,9 @@ Follow these steps to set your own retry policy on specific steps after you've r
 
    ![Retry policy card](../media/edit-desktop/retry-policy-card.png)
 
-   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before cancelling it. Once the action is cancelled, the retry policy begins. The default timeout value is five minutes. 
+   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before canceling it. Once the action is canceled, the retry policy begins. The default timeout value is five minutes. 
 
-   There are three types of retry in UI flows.
+   There are three types of retries in UI flows.
 
    - Default
    - None 
