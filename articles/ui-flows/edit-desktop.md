@@ -54,7 +54,9 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
+
    ![Image that displays the UI flow to be edited](../media/edit-desktop/select-ui-flow.png)
+
 1. Select **Edit**. 
 1. Select **New step**.
 
@@ -196,7 +198,9 @@ Follow these steps to add a manual action:
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
+
    ![The UI flow to edit](../media/edit-desktop/select-ui-flow.png)
+
 1. Select **Edit**. 
 1. Select the recording card that contains the steps to which you want to add a new step.
    The card expands and displays the recorded steps.
