@@ -97,14 +97,10 @@ Here are the steps to create a loop within UI flow:
 
    ![Select the edit button for the UI flow](../media/edit-desktop/edit-ui-flow-loop.png "Select the edit button for the UI flow")
 
-1. Navigate to input section of the wizard.
+1. Navigate to input section of the wizard, and then select **Set up inputs**.
 
    ![Select Set up inputs](../media/edit-desktop/loops-input-section.png "Select Set up inputs")
    
-1. Add a new array type as an input to UI flow by providing a name, sample value and description of the input variable
-
-   ![Add ](../media/edit-desktop/loops-input-section.png "Select Set up inputs")
-
 
 1. Select **Array** to indicate that you want to create an array input type.
 
@@ -112,7 +108,7 @@ Here are the steps to create a loop within UI flow:
 
 1. Enter the details for the array including a name, the array in JSON format, and a description for the array.
 
-   ![Details of the array](../media/edit-desktop/loop-array-data.png "Select Array")
+   ![Details of the array](../media/edit-desktop/loop-array-data.png "Details of the array")
 
 1. Select **Next**.
 
@@ -130,12 +126,14 @@ Here are the steps to create a loop within UI flow:
 
    For example, I've dropped the **LeftClick 4** onto the **Apply to each** card in the following image.
 
-   ![Drag the step you want to repeat onto the array from dynamic content](../media/edit-desktop/loop-drag-apply-to-each.png "Add the array from dynamic content")
+   ![Drag the step you want to repeat onto the array from dynamic content](../media/edit-desktop/loop-drag-apply-to-each.png "Drag the step you want to repeat onto the array from dynamic content")
 
 1. Replace the input tokens created during the recording with the array input values as needed. 
 
 >[!TIP]
->If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content. 
+>If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content, like the following image.
+
+![Use CurrentItem](../media/edit-desktop/loop-use-current-item.png)
 
 
 ## Add a retry policy
