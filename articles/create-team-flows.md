@@ -25,7 +25,7 @@ search.audienceType:
 
 Share a flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
-* View the flow's history (that is, each run).
+* View the flow's history (each run).
 * Manage the properties of the flow (for example, start or stop the flow, add owners or update credentials for a connection).
 * Edit the definition of the flow (for example, add or remove an action or condition).
 * Add and remove other owners (but not the flow's creator).
