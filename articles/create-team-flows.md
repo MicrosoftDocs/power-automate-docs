@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create team flows
+# Share flows with others
 
-Create a team flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
+Share a flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
 * View the flow's history (that is, each run).
 * Manage the properties of the flow (for example, start or stop the flow, add owners or update credentials for a connection).
