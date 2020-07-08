@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/15/2019
+ms.date: 07/05/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,11 +21,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create team flows
+# Share a flow 
 
-Create a team flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
+Share a flow by adding others in your organization as owners. All owners of a team flow can perform these actions:
 
-* View the flow's history (that is, each run).
+* View the flow's history (each run).
 * Manage the properties of the flow (for example, start or stop the flow, add owners or update credentials for a connection).
 * Edit the definition of the flow (for example, add or remove an action or condition).
 * Add and remove other owners (but not the flow's creator).
@@ -45,22 +45,18 @@ Owners can use services in a flow but can't modify the credentials for a connect
 ## Prerequisites
 You must have a [paid Power Automate plan](https://flow.microsoft.com/pricing/) to create a team flow. Additionally, you must be the creator or owner to add/remove owners from a team flow.
 
-## Create a team flow
+## Share a flow
 Follow these steps to create a team flow or to add more owners to a team flow.
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select **My flows**.
-2. Select **More commands** and then select **Share** for the flow that you want to share:
+2. Select **...** (more commands) and then select **Share** for the flow that you want to share:
    
     ![team icon](./media/create-team-flows/addowner1.png)
 3. Enter the name, email address, or group name for the person or group that you want to add as an owner:
    
     ![search for the user](./media/create-team-flows/addowner2.png)
-4. In the list that appears, select the user whom you want to make an owner:
-   
-    ![select the user](./media/create-team-flows/addowner3.png)
-   
-     The user or group you've selected becomes an owner of the flow:
-   
+4. The user or group you've selected becomes an owner of the flow:
+     
     ![new owner](./media/create-team-flows/addowner4.png)
    
      Congratulations &mdash; your team flow has been created!
@@ -80,7 +76,7 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 > 
 > 
 
-1. Select **More commands** and then select **Share** for the flow that you want to share:
+1. Select **...** (more commands) and then select **Share** for the flow that you want to share:
    
     ![select people icon](./media/create-team-flows/addowner1.png)
 2. Select the **Delete** icon for the owner that you want to remove:
