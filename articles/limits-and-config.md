@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/24/2020
+ms.date: 07/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -108,6 +108,7 @@ These are limits for a single flow.
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |
 | `description` length limit |256 | |
+| Number of solution-agnostic flows per environment  |600 | |
 
 ## SharePoint limits
 There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
