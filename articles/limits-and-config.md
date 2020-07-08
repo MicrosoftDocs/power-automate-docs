@@ -98,8 +98,8 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 |Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|200 GB||
 
 
-## Definition limits
-These are limits for a single flow.
+## Flow limits
+These are limits for flows.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ These are limits for a single flow.
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |
 | `description` length limit |256 | |
-| Number of solution-agnostic flows per environment  |600 | |
+| Solution-agnostic flows per user  |600 | |
 
 ## SharePoint limits
 There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
