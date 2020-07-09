@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/30/2020
+ms.date: 07/08/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -84,7 +84,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use UI 
 
 1.  Once signed in, you will see the WinAutomation console with a few example
     Processes. To get started, go to **Options** \> **Help** \> **Getting Started**, and then go through a few
-    examples of creating simple Processes or check out information from [here](https://docs.winautomation.com/en/building-a-simple-process.html). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
+    examples of creating simple Processes or check out information from [WinAutomation docs: Building a Simple Process](https://docs.winautomation.com/en/building-a-simple-process.html). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
 
 You can now create your own WinAutomation Processes and test them locally.
 
@@ -136,7 +136,7 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
-1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Power Automate UI flow run details.  
+1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Power Automate UI flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.winautomation.com/en/process-properties.html).  
 
     ![Process properties screen](../media/create-processes/process-properties.png)
 
@@ -182,6 +182,8 @@ To reset the license information stored by WinAutomation, you can delete the fol
 ## Learn more
 
 -   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
+-   Read more at [WinAutomation docs](https://docs.winautomation.com/index.html?lang=en).
+-   Learn more at [WinAutomation Academy](https://academy.softomotive.com/).
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
