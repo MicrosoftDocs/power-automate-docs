@@ -50,7 +50,8 @@ The **candidate feedback form** sample is an Adaptive Card input form that's des
     {
       "type": "TextBlock",
       "size": "Medium",
-      "weight": "Bolder",      "id": "Title",
+      "weight": "Bolder",
+      "id": "Title",
       "text": "CANDIDATE FEEDBACK FORM",
       "horizontalAlignment": "Left"
     },
