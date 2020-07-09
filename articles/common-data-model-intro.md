@@ -6,8 +6,6 @@ suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -86,7 +84,7 @@ In this article, you will create a flow that sends an email notification when a 
    
     ![Originate from a Lead](./media/common-data-model-intro/originate-from-lead.png)
 
-1. Complete the ****Get Lead** and the **List Notes for the Lead** cards on the **If yes** side of the decision branch. 
+1. Complete the **Get Lead** and the **List Notes for the Lead** cards on the **If yes** side of the decision branch. 
 
    ![Complete decision branch](./media/common-data-model-intro/get-lead-list-notes.png)
 
