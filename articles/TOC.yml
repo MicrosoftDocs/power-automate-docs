@@ -94,6 +94,32 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
+- name: Microsoft Teams Flows
+  items:
+  - name: Trigger a flow from a Teams message
+    href: teams-for-a-selected-message.md
+  - name: Use adaptive cards to model flows
+    items:
+    - name: Overview of adaptive cards for Teams
+      href: overview-adaptive-cards.md
+    - name: Create adaptive cards for Teams
+      href: create-adaptive-cards.md
+    - name: Sample - Candidate feedback
+      href: candidate-feedback-sample.md
+    - name: Sample - Image share
+      href: image-share-sample.md
+    - name: Sample - Lead collection
+      href: lead-collection-sample.md
+    - name: Sample - Poll generator
+      href: poll-generator-sample.md
+    - name: Sample - Metadata update
+      href: metadata-update-sample.md
+    - name: Sample - Daily weather
+      href: daily-weather-sample.md
+    - name: Sample - Acronym form
+      href: acronym-sample.md
+    - name: Sample - Lead generation
+      href: lead-collection-sample.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -201,28 +227,6 @@
     href: visio-flows.md
   - name: "Reference: Use functions in expressions"
     href: https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference
-  - name: Use adaptive cards to model flows
-    items:
-    - name: Overview of adaptive cards for Teams
-      href: overview-adaptive-cards.md
-    - name: Create adaptive cards for Teams
-      href: create-adaptive-cards.md
-    - name: Sample - Candidate feedback
-      href: candidate-feedback-sample.md
-    - name: Sample - Image share
-      href: image-share-sample.md
-    - name: Sample - Lead collection
-      href: lead-collection-sample.md
-    - name: Sample - Poll generator
-      href: poll-generator-sample.md
-    - name: Sample - Metadata update
-      href: metadata-update-sample.md
-    - name: Sample - Daily weather
-      href: daily-weather-sample.md
-    - name: Sample - Acronym form
-      href: acronym-sample.md
-    - name: Sample - Lead generation
-      href: lead-collection-sample.md
   - name: Manage flows on a phone
     href: mobile-manage-flows.md
   - name: Publish a template
