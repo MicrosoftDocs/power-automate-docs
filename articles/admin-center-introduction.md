@@ -24,7 +24,7 @@ search.audienceType:
 # The Admin Center
 
 
-The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
+The Admin Center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
 ![overview](./media/admin-center-introduction/overview.png)
 
