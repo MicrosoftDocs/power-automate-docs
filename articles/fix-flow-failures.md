@@ -28,7 +28,7 @@ search.audienceType:
 
 Repair tips are sent to flow owners via email whenever a flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
 
-![Repair tips](media/fix-flow-failures/repair-tips-email.png)
+![Repair tips](media/fix-flow-failures/repair-tips-email-2.png)
 
 The repair tips email contains the following sections:
 
@@ -46,29 +46,32 @@ Repair tips emails are optional. If you don't want to receive them, just turn th
 If your flow fails, you can also troubleshoot it directly in Power Automate.  Here are a few common failure scenarios and tips on how to fix them.
 
 ## Identify the error
-Before you can fix a flow, you must identify why it failed. Click or tap the notifications icon at the top of the web portal (or open the **Activity** tab in the mobile app), and then click or tap your flow in the list that appears.
 
-![Notifications](./media/fix-flow-failures/notifications-toolbar.png)
+1. Go to **My flows**
+2. Click on the flow that failed.
+3. In the **28-day run history** section, click on the **date** of the failed run 
+4. Details about the flow appear, and at least one step shows a red exclamation icon. Open that step and review the error message.
+5. On the right pane, you can see the **details** of the error and **How to fix** the error 
 
-Details about the flow appear, and at least one step shows a red exclamation icon. Open that step and review the error message.
-
-![Error message](./media/fix-flow-failures/flow-run-failure.png)
+![Error message](./media/fix-flow-failures/identify-error.png)
 
 
 ## Authentication failures
 In many cases, flows fail because of an authentication error. If you have this type of error, the error message contains **Unauthorized** or an error code of **401** or **403** appears. You can usually fix an authentication error by updating the connection:
 
-1. At the top of the web portal, click or tap the gear icon to open the **Settings** menu, and then click or tap **Connections**.
-2. Scroll to the connection for which you saw the **Unauthorized** error message.
-3. Next to the connection, click or tap the **Verify password** link in the message about the connection not being authenticated.
-4. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
+1. In the right pane, click on **View Connections** below **How to fix**.
+1. Scroll to the connection for which you saw the **Unauthorized** error message.
+1. Next to the connection, click or tap the **Fix connection** link in the message about the connection not being authenticated.
+1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
+
+![Error message](./media/fix-flow-failures/resubmit.png)
    
     The flow should now run as expected.
 
 ## Action configuration
 Flows also fail if a setting in an action of the flow doesn't function as expected. In this case, the error message contains **Bad request** or **Not found**, or an error code of **400** or **404** appears.
 
-The error message should specify how to correct the failure. You'll need to click or tap the **Edit** button and then correct the problem inside the flow definition. Save the updated flow, and then click or tap **Resubmit** to try the run again with the updated configuration.
+The error details should specify how to correct the failure. You'll need to click or tap the **Edit** button and then correct the problem inside the flow definition. Save the updated flow, and then click or tap **Resubmit** to try the run again with the updated configuration.
 
 ## Other failures
 If the error code **500** or **502** appears, the failure is temporary or transient. Click or tap **Resubmit** to try the flow again.
@@ -94,7 +97,7 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 
 1. Notice that the **Solutions** section displays after you select **See solutions**. It contains a list of results that you can use to help address the issue you're facing. 
 
-    ![Integrated helper details](media/fix-flow-failures/integrated-helper-details.png)
+    ![Integrated helper details](media/fix-flow-failures/support-request.png)
 
 If you need help with an issue, help is available from our [community](https://go.microsoft.com/fwlink/?LinkID=787467) and Microsoft. 
 
