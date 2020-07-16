@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/19/2020
+ms.date: 07/16/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,14 +21,14 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# The Admin Center
+# The admin center
 
 
 The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
 ![Displays the overview of the admin center](./media/admin-center-introduction/overview.png)
 
-## Access the Admin center
+## Access the admin center
 
 * Browse to [the Power Automate admin center](https://admin.flow.microsoft.com).
 
