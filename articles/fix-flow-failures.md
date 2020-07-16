@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/01/2019
+ms.date: 07/16/2019
 ms.author: stepsic
 search.app: 
   - Flow
@@ -47,11 +47,14 @@ If your flow fails, you can also troubleshoot it directly in Power Automate.  He
 
 ## Identify the error
 
-1. Go to **My flows**
-2. Click on the flow that failed.
-3. In the **28-day run history** section, click on the **date** of the failed run 
-4. Details about the flow appear, and at least one step shows a red exclamation icon. Open that step and review the error message.
-5. On the right pane, you can see the **details** of the error and **How to fix** the error 
+1. Select **My flows**.
+1. Select the flow that failed.
+1. In the **28-day run history** section, select the **date** of the failed run.
+   
+   Details about the flow appear, and at least one step shows a red exclamation icon.
+1. Open that failed step, and then review the error message.
+
+   On the right pane, you can see the **details** of the error and **How to fix** the error 
 
 ![Error message](./media/fix-flow-failures/identify-error.png)
 
@@ -86,6 +89,7 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 1. Go to the **Self Help** category and select one of the self-help options.
 
     ![Ask for help section. Contact support.](media/fix-flow-failures/self-help-section.png)
+
 ### Ask for help from others
 
 1. Go to the [support site](https://flow.microsoft.com/support/).
