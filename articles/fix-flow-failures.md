@@ -56,7 +56,7 @@ If your flow fails, you can also troubleshoot it directly in Power Automate.  He
 
    On the right pane, you can see the **details** of the error and **How to fix** the error 
 
-![Error message](./media/fix-flow-failures/identify-error.png)
+   ![Error message](./media/fix-flow-failures/identify-error.png)
 
 
 ## Authentication failures
@@ -67,9 +67,9 @@ In many cases, flows fail because of an authentication error. If you have this t
 1. Next to the connection, click or tap the **Fix connection** link in the message about the connection not being authenticated.
 1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
 
-![Error message](./media/fix-flow-failures/resubmit.png)
+   ![Error message](./media/fix-flow-failures/resubmit.png)
    
-    The flow should now run as expected.
+ The flow should now run as expected.
 
 ## Action configuration
 Flows also fail if a setting in an action of the flow doesn't function as expected. In this case, the error message contains **Bad request** or **Not found**, or an error code of **400** or **404** appears.
