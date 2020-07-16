@@ -363,6 +363,56 @@ automated.
 
 1. Playback can fail if the UI flow was recorded on a screen with screen scaling (Windows Settings > Display > Screen Scaling) set to a value other than 100%. As a workaround, ensure that screen scaling is set to 100% prior to recording.
 
+## Use image recognition to record on Citrix
+
+There are two options to record on Citrix with UI flows.
+
+### Option 1
+
+Record a Citrix application or desktop already open on your machine. 
+1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing UI flow.
+1.	Use the Citrix app or remote desktop to connect to the remote computer.
+
+   ![View of the Citrix app](../media/edit-desktop/citrix-app-remote.png)
+
+1.	If you are using Citrix remote desktop, expand the window to full screen.
+1.	Select **Record** from the recorder control, and then select **Got it** in the alert that appears.
+1.	Perform the steps on Citrix, and then select **Done** on the recorder control.
+
+>[!TIP]
+>UI flows, you can record several Citrix apps during the same session. Open all applications before you start recording if you have not recorded the launch of your Citrix workspace.
+
+### Option 2
+
+Record the launch of your Citrix application / desktop from your Citrix workspace.
+1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing UI flow.
+1.	Open the Citrix workspace from the taskbar.
+1.	Enter your password, and then and select **Log on**.
+   
+   >[!TIP]
+   >If you don’t want to select **Remember my password**, use a **Sensitive text** input. 
+
+   ![Enter the Citrix app password](../media/edit-desktop/citrix-app-password.png)
+
+If you have problems using sensitive text in the login window:
+1. Open the input menu from the recorder.
+1. Select the password field.
+1. Select your sensitive text (in this example “password”) in the input menu.
+
+   ![Use sensitive text for the password](../media/edit-desktop/citrix-app-sensitive-text.png)
+
+1. Select the App or the Desktop you want to record.
+
+   ![Shows a list of apps to select to record](../media/edit-desktop/citrix-select-app-record.png)
+
+1.	Perform the steps on Citrix, and then select **Done** on the recorder control.
+
+   >[!IMPORTANT]
+   >If you recorded the log-on step, the designer displays three Citrix scope applications. This is expected because the log-on window is a different application from the Citrix workspace.
+
+   >[!TIP]
+   >In test and attended mode, confirm that your Citrix workspace is closed before you playback your UI flow. From the notification bar, right-click on the Citrix icon and the select **Exit** to close the workspace.
+
 
 ## Handle error conditions
 
