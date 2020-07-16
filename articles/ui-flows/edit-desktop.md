@@ -291,7 +291,7 @@ available when recording a remote computer through the Remote Desktop Connection
 (RDC) app.
  
 
-### What is image recognition?
+## What is image recognition?
 
 Currently, desktop UI flows are primarily recorded using accessibility APIs (UI
 Automation and WinAppDriver) to detect the controls in the Microsoft Windows UI tree.​ Sometimes, the UI tree isn't available, such as with Web-based or Java apps. The UI tree may may be unreliable, such as when the IDs of a control change frequently or between
@@ -301,7 +301,7 @@ With image recognition, click locations and other details are visually
 matched during playback, greatly expanding the range of applications that can be
 automated. 
 
-### Use image recognition to record a remote computer
+## Use image recognition to record a remote computer
 
  
 1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs, one for the username and one for the password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored or logged by the UI flow itself.
@@ -332,7 +332,7 @@ automated.
 >[!TIP]
 > Enable **Secure Inputs** in the **Settings** menu for the **Run a UI flow for desktop** action in the flow that is calling the UI flow. This ensures that the inputs are not stored in the run history.
 
-### Use the Extract Text from Image action while recording to retrieve an output from a remote computer.
+## Use OCR to extract text from images
 
 1. While recording your steps, navigate to the location of the text that you wish to capture.
 
