@@ -354,11 +354,11 @@ There are two options to record on Citrix with UI flows.
 1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing UI flow.
 1.	Open the Citrix workspace from the taskbar.
 1.	Enter your password, and then and select **Log on**.
-   
-   >[!TIP]
-   >If you don’t want to select **Remember my password**, use a **Sensitive text** input. 
+  
+    >[!TIP]
+    >If you don’t want to select **Remember my password**, use a **Sensitive text** input.
 
-   ![Enter the Citrix app password](../media/edit-desktop/citrix-app-password.png)
+    ![Enter the Citrix app password](../media/edit-desktop/citrix-app-password.png)
 
 1. Select the App or the Desktop you want to record.
 
