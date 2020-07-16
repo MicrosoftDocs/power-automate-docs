@@ -34,7 +34,7 @@ Environments provide the following benefits:
 
     > [!IMPORTANT]
     > If you delete the environment, then all flows within that environment are also deleted. This applies to any items you create in that environment, including connections, gateways, Power Apps, and more.
-* **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use data loss prevention to control which services can share data within your Power Automate deployment.
+* **Data loss prevention**: As an Administrator, you don't want flows that get data from an internal location (such as *OneDrive for Business* or a SharePoint list that contains salary information), and then post that data publicly (such as to *Twitter*). Use [data loss prevention](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) to control which services can share data within your Power Automate deployment.
 
     For example, you can add the *SharePoint* and *OneDrive for Business* services to a business data only policy. Any flows created in this environment can use *SharePoint* and *OneDrive for Business* services. However, they won't be able to share data with other services that aren't included in the business data only policy.
 

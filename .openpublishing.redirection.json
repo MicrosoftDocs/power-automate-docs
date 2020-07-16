@@ -1,6 +1,16 @@
 {
     "redirections": [
     {
+      "source_path": "articles/fix-flow-failures/index.md",
+      "redirect_url": "https://docs.microsoft.com/power-automate/fix-flow-failures",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/organization-q-and-a/index.md",
+      "redirect_url": "https://docs.microsoft.com/power-automate/organization-q-and-a",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/dev-appsource-test-drive.md",
       "redirect_url": "/power-automate/developer/dev-appsource-test-drive",
       "redirect_document_id": "false"

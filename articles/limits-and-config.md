@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/19/2020
+ms.date: 07/07/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -98,8 +98,8 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 |Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|200 GB||
 
 
-## Definition limits
-These are limits for a single flow.
+## Flow limits
+These are limits for flows.
 
 | Name | Limit | Notes |
 | --- | --- | --- |
@@ -108,6 +108,7 @@ These are limits for a single flow.
 | Max characters per expression |8,192 | |
 | `action`/`trigger` name limit |80 | |
 | `description` length limit |256 | |
+| Solution-agnostic flows per user  |600 | |
 
 ## SharePoint limits
 There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
@@ -159,9 +160,11 @@ webshell.suite.office.com|https|Access to Office for header and search. Please s
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
 ### UI flows required services
-The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation.
+The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation and runs.
 
 Endpoint type | Domains | Protocols | Uses
 --------| --------|  ---------| -----
-Worldwide endpoints|mscrl.microsoft.com|http, https|Access to the CRL server for the public cloud.
-U.S. Government GCC and GCC High endpoints|crl3.digicert.com<br>crl4.digicert.com|http, https|Access to the CRL server for US government cloud.
+Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for the public cloud.
+U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com|http|Access to the CRL server for US government cloud.
+21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn|http|Access to the CRL servers for 21Vianet operated cloud.
+All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com|https|Access to UI Flows WebDriver downloaders.

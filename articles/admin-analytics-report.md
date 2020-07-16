@@ -46,7 +46,7 @@ From a sharing perspective, you can learn who your app champions are and then em
 1. Select **Analytics** from the navigation bar on the left.
 1. Select the **Connectors** tab and view the list of connectors in use in your organization.
  
-    ![Shared connectors view](media/admin-analytics-report/connectors-tab.png)
+    ![The connectors view](media/admin-analytics-report/connectors-tab.png)
 
 ## Filter views
 
@@ -59,7 +59,7 @@ The results in these reports are based on the environment you've selected. To ch
 1. Select the **Environment** and the **Time Period** for which you're interested in viewing reports.
 1. Select the **Apply** button.
 
-    ![Change filters](media/admin-analytics-report/filters-detail.png)
+    ![Filters detail](media/admin-analytics-report/filters-detail.png)
 
 ## Learn more
 

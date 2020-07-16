@@ -46,7 +46,9 @@ Business process flows guide you through various stages of sales, marketing, or 
   
 -   You can rearrange tiles (Stages, Steps, Conditions etc.) on the process flow  using drag and drop.  
   
--   When merging branches, all peer branches must merge to a single stage. The peer branches must all either merge to a single stage, or each peer branch must end the process. A peer branch can’t merge with other branches and at the same time end the process.  
+-   When merging branches, all peer branches must merge to a single stage. The peer branches must all either merge to a single stage, or each peer branch must end the process. A peer branch can’t merge with other branches and at the same time end the process.
+
+-   Client API changes cannot trigger evaluation of branching condition, as branching relies on Business rules.
   
 > [!NOTE]
 > - An entity used in the process can be revisited multiple times (multiple closed entity loops).  

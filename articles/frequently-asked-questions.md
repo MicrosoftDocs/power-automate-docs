@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 06/18/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -138,7 +138,7 @@ Power Automate is available in 42 languages and [six regions](regions-overview.m
 Power Automate is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
 
 ### How does Power Automate ensure that corporate data isn't accidentally released to social media services?
-Administrators can create [data loss prevention policies](prevent-data-loss.md) to ensure that only sanctioned services are used in Power Automate.
+Administrators can create [data loss prevention policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to ensure that only sanctioned services are used in Power Automate.
 
 ### Does Power Automate support service accounts?
 

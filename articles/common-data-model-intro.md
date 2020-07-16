@@ -1,19 +1,17 @@
 ---
 title: Common Data Service | Microsoft Docs
-description: Create a flow to import data, export data, or build approvals with Common Data Service.
+description: Create a flow from a template that uses Common Data Service.
 services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/27/2020
+ms.date: 06/17/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -23,73 +21,84 @@ search.audienceType:
 ---
 # Create a flow that uses Common Data Service
 
-Improve operational efficiency with a unified view of business data by creating flow that uses [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Deploy this secure business database that comprises well-formed standard business entities (such as Sales, Purchase, Customer Service, and Productivity) in your organization. Store organizational data in one or more [custom entities](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), which offer several benefits over external data sources such as Microsoft Excel and Salesforce.
+Improve operational efficiency with a unified view of business data by creating flows that use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
 
-For example, leverage Common Data Service within Power Automate in these key ways:
 
-* Create a flow to import data, export data, or take action on top of data (such as sending a notification). Note that this approach isn't a full synchronization service; it simply allows you to move data in or out on a per-entity basis.
-  
-    For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and build a custom app in which users can approve or reject items.
-  
-    For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+For example, you can use Common Data Service within Power Automate in these key ways:
 
-**Prerequisites**
+* Create a flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+
+In this article, you will create a flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Common Data Service. The notification includes the *Notes* from the *Lead*.
+
+## Prerequisites
 
 * Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
   
     If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
-* If you haven't used Common Data Service before, open the **Entities** tab of [powerapps.com](https://web.powerapps.com/#/entities), and then click or tap **Create my database**.
+* If you haven't used Common Data Service before, open the **Entities** tab of [Power Apps](https://web.powerapps.com/#/entities), and then select **Create my database**.
 
-## Sign in to your Environment
-1. Open the [Power Automate](https://flow.microsoft.com), and then click or tap **Sign in** in the upper-right corner.
-   
-    **Note**: you might need to open the top-left menu to show the **Sign in** button.
+## Sign in to your environment
+
+1. Browse to [Power Automate](https://flow.microsoft.com), and then select **Sign in** in the upper-right corner.
    
     ![Sign in](./media/common-data-model-intro/signin-flow.png)
-2. In the top right menu you select the environment that you created the database in powerapps.com.
+1. In the top right menu you select the environment in which you created the database in powerapps.com.
    
-    **Note**: if you do not select the same environment then you will not see your entities.
+    >[!IMPORTANT]
+    >If you don't select the same environment, you won't see your entities.
    
     ![Select environment](./media/common-data-model-intro/select-environment.png)
 
-## Open a template
-1. In the **Search templates** box at the top of the screen, type or paste **common**, and then press Enter.
+## Use a template
+
+1. In the **Search for a template by app, task, or industry** box at the top of the screen, enter **common**, and then press **enter**.
+
+   You will see a list of templates with the word "common" in their names, including those templates that use Common Data Model.
    
     ![Search for templates](./media/common-data-model-intro/template-search.png)
-2. In the list of templates, click or tap the template that imports data from the source you want into the entity (or *object*) that you want.
-   
-    For example, click or tap the template that copies contact information from Dynamics 365 into Common Data Service.
-   
-    ![Choose a template](./media/common-data-model-intro/choose-template.png)
-3. Click or tap **Use this template**.
-   
-    ![Use template](./media/common-data-model-intro/use-template.png)
-4. If you haven't already created a connection from Power Automate to Dynamics 365, click or tap **Sign in**, and then provide your credentials if prompted.
-   
-    ![Sign in to Dynamics 365](./media/common-data-model-intro/dynamics-signin.png)
-5. Click or tap **Continue**.
-   
-    ![Confirm accounts](./media/common-data-model-intro/confirm-accounts.png)
 
-## Build your flow
-1. In the first card, specify the event that will trigger the flow.
+1. In the list of templates, select the template that performs that tasks that you want to be performed.
    
-    For example, you're building a flow that will copy new contacts from an instance of Dynamics 365 to Common Data Service. Under **When a record is created**, specify the instance by clicking or tapping the down arrow and then clicking or tapping an option in the list that appears.
+    For example, select the template that copies notes from Lead to Opportunity in Common Data Service, as shown in the steps that follow.
    
-    ![Specify instance of Dynamics 365](./media/common-data-model-intro/specify-instance.png)
-2. (optional) Near the top of the screen, specify a different name for the flow that you're creating.
+    ![Choose a template](./media/common-data-model-intro/select-template.png)
    
-    **Note**: If your browser window isn't maximized, the UI might look slightly different.
+1. If you haven't already created a connection, select **Sign in**, and then provide your credentials as needed.
    
-    ![Name flow](./media/common-data-model-intro/name-flow.png)
-3. Click or tap **Create flow**.
-   
-    **Note**: If your browser window isn't maximized, only the checkmark may appear.
-   
-    ![Create flow](./media/common-data-model-intro/create-flow.png)
+1. Select **Continue**.
 
-Now, whenever that object is created in the source system, it will be imported into Common Data Service. If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
+   You'll now see the template and its connections. In the following steps, you will customize this template.
 
-You can take actions on changes in the database. For example, you can send notification mail whenever data changes.
+## Customize your flow template
+
+1. On the **When an Opportunity is created** card, select the **Environment**, **Entity Name**, and **Scope** that you want to use.
+   
+    ![Specify the details for the entity](./media/common-data-model-intro/specify-instance.png)
+
+1. Complete the **Get Opportunity Record** card, per your requirements.
+   
+    ![Get Opportunity Record](./media/common-data-model-intro/get-opportunity-record.png)
+
+1. Configure the **Originate from a Lead** card. 
+   
+    ![Originate from a Lead](./media/common-data-model-intro/originate-from-lead.png)
+
+1. Complete the **Get Lead** and the **List Notes for the Lead** cards on the **If yes** side of the decision branch. 
+
+   ![Complete decision branch](./media/common-data-model-intro/get-lead-list-notes.png)
+
+1. Expand the **Apply to each** card, and then  delete the **Copy Lead Note to New Note** card.
+
+1. Select **Add an action**, search for **notification**, and then select **Send me an email notification**.
+
+   ![Email notification](./media/common-data-model-intro/apply-to-each.png)
+
+1. Configure the notification card to send you an email notification with the details of the notes for the lead.
+
+   ![The notification card](./media/common-data-model-intro/notification-card.png)
+
+
+>[!TIP]
+>If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
 

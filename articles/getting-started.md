@@ -108,7 +108,7 @@ When you create a flow from scratch, you control the entire workflow. Here are a
 
 ## Peek at the code
 
-You don't need to be a developer to create flows, however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
 1. Select **Peek code**.

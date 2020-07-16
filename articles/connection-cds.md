@@ -106,8 +106,5 @@ You can leverage the **update a record** command to provide upsert actions, whic
 
 If you have a trigger registered on the update of a record, the flow runs for every *committed* update to the given record. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
-> [!NOTE]
-> If you have two updates that happen within seconds of each other, then the flow may be triggered more than once with the latest versioned content.
-
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 

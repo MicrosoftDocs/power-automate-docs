@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/15/2019
+ms.date: 06/29/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,7 +25,7 @@ search.audienceType:
 
 # Create approval flows with attachments
 
-Sometimes, you need to get a file approved for business purposes. Fortunately, you can use Power Automate approvals to do this. For example, let's say you are an accountant and you want to get approval for a an invoice, you could create an instant flow that lets you send the file for approval by simply tapping a button and selecting the file to send.
+Sometimes, you need to get a file approved for business purposes. Fortunately, you can use Power Automate approvals to do this task. For example, let's say you are an accountant and you want to get approval for an invoice, you could create an instant flow that lets you send the file for approval by simply tapping a button and selecting the file to send.
 
 In this article, you’ll learn how to create an approval flow that sends an attachment that the approver needs to review before deciding if the request should be approved.
 
@@ -42,7 +42,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
 1. Select the **Manually trigger a flow** trigger > **Add an input** > **File**.
 
-     The previous steps configure your flow so that when your flow runs, it requests a file from the user to trigger your flow.
+     The previous steps configure your flow so that when it runs, it requests a file from the user to trigger your flow.
 
 1. Select **New step**
 1. Search for **Approvals** and then select **Start and wait for an approval**.
@@ -50,7 +50,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 1. Provide the following information on the **Start and wait for an approval** card:
 
    - **Title** - This is a short description that tells the approver what the request is about.
-   - **Assigned to** - The person to who the request is sent.
+   - **Assigned to** - The person to whom the request is sent.
    - **Details** - This text shows up in the approval request.
 
      ![THe approval request card](./media/approval-attachments/approval-request-card.png)
@@ -71,7 +71,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
 ## Test your flow
 
-You'll can test your flow by selecting **Test** and then uploading an .xlsx file.
+You can test your flow by selecting **Test** and then uploading an .xlsx file.
 
 1. Select **Test**.
 1. Select **I'll perform the trigger action**.
@@ -81,7 +81,7 @@ You'll can test your flow by selecting **Test** and then uploading an .xlsx file
 1. Select **Test** > **Continue** to start the test.
 1. Select **Import**.
 
-     ![](./media/approval-attachments/import-file.png)
+     ![Select the import button](./media/approval-attachments/import-file.png)
 1. Find the file, select it, and then select **Open** to upload the file or image you're sending for approval.
 
 1. Select **Run flow**.

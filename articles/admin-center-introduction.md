@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -26,7 +26,7 @@ search.audienceType:
 
 The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
-![overview](./media/admin-center-introduction/overview.png)
+![Displays the overview of the admin center](./media/admin-center-introduction/overview.png)
 
 ## Access the admin center
 
@@ -38,7 +38,7 @@ Learn more about using [environments](environments-overview-admin.md) to manage 
 
 ## Data policies
 
-Learn more about using [data policies](prevent-data-loss.md) to create rules that manage how business data is shared between services in flows.
+Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to create rules that manage how business data is shared between services in flows.
 
 ## Next steps
 
