@@ -97,7 +97,7 @@
 - name: Microsoft Teams Flows
   items:
   - name: Trigger a flow from a Teams message
-    href: teams-for-a-selected-message.md
+    href: trigger-flow-teams-message.md
   - name: Use adaptive cards to model flows
     items:
     - name: Overview of adaptive cards for Teams

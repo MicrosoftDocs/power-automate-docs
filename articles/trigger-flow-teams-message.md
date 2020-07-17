@@ -61,7 +61,7 @@ There several message elements available as a trigger output for use within the 
 
    ![For selected message outputs](media/trigger-flow-teams-message/dynamic-outputs.png)
 
-Here's the [full list of trigger outputs](https://docs.microsoft.com/en-us/connectors/teams/).
+Here's the [full list of trigger outputs](https://docs.microsoft.com/connectors/teams/).
 
 ## Trigger the flow
 
