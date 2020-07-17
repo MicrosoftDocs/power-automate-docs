@@ -13,60 +13,76 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/04/2020
+ms.date: 07/16/2020
 ms.author: hamenon-ms
 ---
 
 # Trigger a flow from any message in Microsoft Teams
 
-Messages are the core interactions mechnism within Microsoft Teams. With Microsoft Teams become the hub for the work in your organization, using messages as a starting point to trigger a process which consists of repetitive task becomes more and more critical. For example, you might use a Teams message as a starting point to create a workitem in Azure DevOps, or create a sales opportunite in dynamics. 
+You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a workitem in Azure DevOps, or create a sales opportunity in Dynamics. 
 
-The 'For a selected message' trigger in the Teams connector allows you to do just that by enabling you to trigger a flow directly from within the Teams client.
+Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within the Teams client.
 
 ## Creating the flow
 
-In order to create a custom Teams message flow, choose the "For a selected message" trigger from the Teams connector. The trigger has an optional input in the form of an adaptive card which can be used to construct a form to collect information from the user who triggers the flow. For instance, if the flow is creating a task, you can use the adaptive card to collect information like the title of the task and the description.
+1. Sign into **Power Automate**, and then select > **My flows** > **New** > **Instant-from blank**.
+1. Give your flow a name.
+1. Select **For a selected message** trigger.
 
-![For selected message trigger](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
+   ![For selected message trigger](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
 
-## Collecting information from the user
-In order to collect information from the user using a form, users can simply click the Create adaptive card button within the trigger.
+1. Select **Create**.
 
-This brings up an inline adaptive card editor which lets you drag and drop card elements to construct your own form.
+>[!NOTE]
+>You must sign into Microsoft Teams if you are not already signed in.
+
+The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adapative card to construct a form to collect information from the user who triggers the flow. For instance, if the flow is creating a task, you can use an adaptive card to collect information, like the title of the task and the description.
+
+## Collect information from the user
+To collect information from the user using a form, users can select the **Create Adaptive Card** button within the trigger.
+
+![Adaptive card button](media/trigger-flow-teams-message/create-adaptive-card.png)
+
+This displays an inline adaptive card editor which lets you drag and drop card elements to construct your own form.
 
 ![Adaptive card form designer](media/trigger-flow-teams-message/ac-card-designer.png)
 
-Any input within the adaptive card form has an id associated with it, which can be used later in the flow through dynamic tokens to reference inputs that a user might have entered as part of running the flow.
+Each input within the adaptive card form has an Id. You can use the Id later in the flow through dynamic tokens to reference inputs that a user might have entered as part of running the flow.
 
-### Using message details within the flow
-There are a number of message elements that are available as a trigger output for use within the flow. Some of the more useful properties include:
-* Message content - The full HTML content of the Teams message
-* Plain text message output - Plain text variation of the Teams message
-* Link to message - A direct url to reference the message
-* Sender display name, Sender id - Details of the user who sent the message
-* Originating user display name, Originating user id - Details of the user who invoked the flow
+### Use the message details within the flow
 
-![For selected message outputs](media/trigger-flow-teams-message/dynamic-outputs.png)
+There several message elements available as a trigger output for use within the flow. Here's an overview of some of properties:
 
-For a full list of trigger outputs please do have a look at our (connector documentation)[https://docs.microsoft.com/en-us/connectors/teams/]
+* Message content - The full HTML content of the Teams message.
+* Plain text message output - The plain text variation of the Teams message.
+* Link to message - A direct url to reference the message.
+* Sender display name, Sender id - The details of the user who sent the message.
+* Originating user display name, originating user id - The details of the user who invoked the flow.
 
-## Triggering the flow
-Any flow that uses the "For a selected message" trigger shows up as a message action in the Teams message over flow "More actions" menu. 
+   ![For selected message outputs](media/trigger-flow-teams-message/dynamic-outputs.png)
+
+Here's the [full list of trigger outputs](https://docs.microsoft.com/en-us/connectors/teams/).
+
+## Trigger the flow
+
+Any flow that uses the **For a selected message** trigger shows up as a message action in the Teams message in the **More actions** menu for the flow. 
 
 ![Trigger from Microsoft Teams](media/trigger-flow-teams-message/more-actions-menu.png)
 
 >[!IMPORTANT]
-    >The name of the flow is what is used to reference the flow within Teams so be sure to provide a descriptive name for the Flow
+>The name of the flow is used to reference the flow within Teams so be sure to provide a descriptive name for the flow.
 
 >[!IMPORTANT]
-    >Note currently only flows within the default environment are listed within the Teams client.
+>You must create these flows within the default environment to ensure they get listed in Teams.
 
 ## Best practices
-Ideally as a best practice be sure to include some form of a confirmation back to the user once the flow is completed. We recomment using the "Post a message as the flow bot to a user" or the "Post a message as the flow bot to a channel" to notify the user in Teams when a triggered flow has completed.
 
-For example here is a sample flow that Creates a workitem in Azure Devops and posts a confirmation back to the originating user.
+Be sure to include a form of a confirmation to the user once the flow is completed. We recommend using the **Post a message as the flow bot to a user** or the **Post a message as the flow bot to a channel** to notify the user in Teams when a triggered flow completes.
+
+Here's an example of a flow that creates a workitem in Azure Devops and then posts a confirmation to the originating user.
 
 ![Create a task flow](media/trigger-flow-teams-message/complete-flow.png)
 
 ## Known issues and limitations
-Currently only flows within the default enviroment are listed within the Teams more actions menu.
+
+You must create these flows within the default environment to ensure they get listed in Teams.
