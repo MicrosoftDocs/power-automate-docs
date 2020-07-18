@@ -19,26 +19,27 @@ ms.author: hamenon-ms
 
 # Trigger a flow from any message in Microsoft Teams
 
-You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a workitem in Azure DevOps, or create a sales opportunity in Dynamics. 
+You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a workitem in Azure DevOps or create a sales opportunity in Dynamics. 
 
-Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within the Teams client.
+Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within Teams.
 
-## Creating the flow
+## Create the flow
 
 1. Sign into **Power Automate**, and then select > **My flows** > **New** > **Instant-from blank**.
 1. Give your flow a name.
-1. Select **For a selected message** trigger.
+1. Select the **For a selected message** trigger.
 
    ![For selected message trigger](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
 
 1. Select **Create**.
 
 >[!NOTE]
->You must sign into Microsoft Teams if you are not already signed in.
+>You must sign into Teams if you are not already signed in.
 
-The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adapative card to construct a form to collect information from the user who triggers the flow. For instance, if the flow is creating a task, you can use an adaptive card to collect information, like the title of the task and the description.
+The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adapative card to construct a form to collect information from the user who triggers the flow. For instance, if the flow creates a task, you can use an adaptive card to collect information, like the title of the task and the description.
 
 ## Collect information from the user
+
 To collect information from the user using a form, users can select the **Create Adaptive Card** button within the trigger.
 
 ![Adaptive card button](media/trigger-flow-teams-message/create-adaptive-card.png)
