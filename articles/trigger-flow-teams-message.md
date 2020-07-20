@@ -19,7 +19,7 @@ ms.author: hamenon-ms
 
 # Trigger a flow from any message in Microsoft Teams
 
-You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a workitem in Azure DevOps or create a sales opportunity in Dynamics. 
+You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics. 
 
 Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within Teams.
 
@@ -36,7 +36,7 @@ Use the **For a selected message** trigger in the Teams connector to trigger a f
 >[!NOTE]
 >You must sign into Teams if you are not already signed in.
 
-The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adapative card to construct a form to collect information from the user who triggers the flow. For instance, if the flow creates a task, you can use an adaptive card to collect information, like the title of the task and the description.
+The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adaptive card to construct a form to collect information from the user who triggers the flow. For instance, if the flow creates a task, you can use an adaptive card to collect information, like the title of the task and the description.
 
 ## Collect information from the user
 
@@ -80,7 +80,7 @@ Any flow that uses the **For a selected message** trigger shows up as a message 
 
 Be sure to include a form of a confirmation to the user once the flow is completed. We recommend using the **Post a message as the flow bot to a user** or the **Post a message as the flow bot to a channel** to notify the user in Teams when a triggered flow completes.
 
-Here's an example of a flow that creates a workitem in Azure Devops and then posts a confirmation to the originating user.
+Here's an example of a flow that creates a work item in Azure Devops and then posts a confirmation to the originating user.
 
 ![Create a task flow](media/trigger-flow-teams-message/complete-flow.png)
 
