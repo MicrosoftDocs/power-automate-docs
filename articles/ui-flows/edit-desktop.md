@@ -43,7 +43,7 @@ You can edit your recording to:
 
 Advanced parameters let you change:
 
--  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow.
+-  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow. You can also [add delay actions](edit-desktop.md#add-a-delay) explicitly so that they can be used in loops, for example.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
 
