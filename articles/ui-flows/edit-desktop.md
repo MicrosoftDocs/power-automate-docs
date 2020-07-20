@@ -148,13 +148,7 @@ Here are the steps to create a loop in a UI flow:
 
 ## Add a delay
 
-You can now add delay in UI flows to help control the UI flow run behavior.
-
-### Prerequisites
-
-- You need to have a Power Automate **Per user plan with attended RPA** to use the delay feature with UI flows. If you do not have a paid plan, you can start a trial by going to Power Automate and selecting the **Try free** link.
-- An existing UI flow.
-
+You can add delay in UI flows to help control the UI flow run.
 
 Follow these steps to add a delay to a UI flow that you've recorded.
 
@@ -178,7 +172,7 @@ Follow these steps to add a delay to a UI flow that you've recorded.
 
    ![Define the delay](../media/edit-desktop/delay-details.png)
 
-   The delay action is added to the UI flow. Now, we the flow runs, there will be a delay as you've defined before the next action runs.
+   The delay action is added to the UI flow. Now, when the flow runs, there will be a delay as you've defined before the next action runs.
 
 
 ## Add a retry policy
