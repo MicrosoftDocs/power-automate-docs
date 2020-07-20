@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2020
+ms.date: 07/20/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -43,7 +43,7 @@ You can edit your recording to:
 
 Advanced parameters let you change:
 
--  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow.
+-  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow. You can also [add delay actions](edit-desktop.md#add-a-delay) explicitly so that they can be used in loops, for example.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
 
@@ -145,6 +145,34 @@ Here are the steps to create a loop in a UI flow:
 1.	Output operations are not currently supported.
 1.	For complex array objects that need to be passed from a flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the UI flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
 1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘<value>’]**, where <value> is name of the specific object within the input array.
+
+## Add a delay
+
+You can add delay in UI flows to help control the UI flow run.
+
+Follow these steps to add a delay to a UI flow that you've recorded.
+
+1. In the desired spot, hover over the arrow and select **Insert a new step**. Alternatively, for adding it to the end of the scope or UI flow, select **Add an action** directly. 
+
+   ![Insert a delay step](../media/edit-desktop/insert-new-step-delay.png)
+
+1. Select **Add an action**.
+
+   ![Add the delay action](../media/edit-desktop/add-delay-action.png)
+
+1. Select **Built-in**, and search for "delay". 
+   Alternatively, select **Schedule** > **Delay**.
+
+   ![Search for the delay action](../media/edit-desktop/search-delay.png)
+
+1. Enter the **count**, for example "2" to represent the number of the **Unit**.
+1. Select the **Unit**, for example **minutes**, to represent the length of time for the delay.
+
+   The following image shows a delay of two minutes. 
+
+   ![Define the delay](../media/edit-desktop/delay-details.png)
+
+   The delay action is added to the UI flow. Now, when the flow runs, there will be a delay as you've defined before the next action runs.
 
 
 ## Add a retry policy
