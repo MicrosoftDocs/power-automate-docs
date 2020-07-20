@@ -160,25 +160,25 @@ Follow these steps to add a delay to a UI flow that you've recorded.
 
 1. In the desired spot, hover over the arrow and select **Insert a new step**. Alternatively, for adding it to the end of the scope or UI flow, select **Add an action** directly. 
 
-   ![](../media/edit-desktop/)
+   ![Insert a delay step](../media/edit-desktop/insert-new-step-delay.png)
 
-1. Click on **Add an action**.
+1. Select **Add an action**.
 
-   ![](../media/edit-desktop/)
+   ![Add the delay action](../media/edit-desktop/add-delay-action.png)
 
 1. Select **Built-in**, and search for "delay". 
    Alternatively, select **Schedule** > **Delay**.
 
-   ![](../media/edit-desktop/)
+   ![Search for the delay action](../media/edit-desktop/search-delay.png)
 
 1. Enter the **count**, for example "2" to represent the number of the **Unit**.
 1. Select the **Unit**, for example **minutes**, to represent the length of time for the delay.
 
    The following image shows a delay of two minutes. 
 
-   ![](../media/edit-desktop/)
+   ![Define the delay](../media/edit-desktop/delay-details.png)
 
-   The delay action is added to the UI flow. 
+   The delay action is added to the UI flow. Now, we the flow runs, there will be a delay as you've defined before the next action runs.
 
 
 ## Add a retry policy
