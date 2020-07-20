@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2020
+ms.date: 07/20/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -145,6 +145,40 @@ Here are the steps to create a loop in a UI flow:
 1.	Output operations are not currently supported.
 1.	For complex array objects that need to be passed from a flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the UI flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
 1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘<value>’]**, where <value> is name of the specific object within the input array.
+
+## Add a delay
+
+You can now add delay in UI flows to help control the UI flow run behavior.
+
+### Prerequisites
+
+- You need to have a Power Automate **Per user plan with attended RPA** to use the delay feature with UI flows. If you do not have a paid plan, you can start a trial by going to Power Automate and selecting the **Try free** link.
+- An existing UI flow.
+
+
+Follow these steps to add a delay to a UI flow that you've recorded.
+
+1. In the desired spot, hover over the arrow and select **Insert a new step**. Alternatively, for adding it to the end of the scope or UI flow, select **Add an action** directly. 
+
+   ![](../media/edit-desktop/)
+
+1. Click on **Add an action**.
+
+   ![](../media/edit-desktop/)
+
+1. Select **Built-in**, and search for "delay". 
+   Alternatively, select **Schedule** > **Delay**.
+
+   ![](../media/edit-desktop/)
+
+1. Enter the **count**, for example "2" to represent the number of the **Unit**.
+1. Select the **Unit**, for example **minutes**, to represent the length of time for the delay.
+
+   The following image shows a delay of two minutes. 
+
+   ![](../media/edit-desktop/)
+
+   The delay action is added to the UI flow. 
 
 
 ## Add a retry policy
