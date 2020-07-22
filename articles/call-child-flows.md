@@ -14,13 +14,11 @@ dynamics365pdf: True
 
 Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a _single_ flow, it can be difficult to navigate and maintain that flow. 
 
-Instead, we recommend that you break apart your steps into smaller flows, and then call back and forth between these flows. Each smaller flow can accomplish a single, discreet task, which is easier to read and identify a problem if something goes wrong. This approach is especially beneficial if you want to reuse that task in multiple places in a flow, or even across multiple flows.
-
-Use the built-in action called **Run a Child Flow** to automatically handle these problems.
+You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a flow, or even across multiple flows.
 
 Let's look at an example where you have a child flow that you want to create or update a contact in Common Data Service based on that contact's name.
 
-You will need a soution with two flows:
+You will need a solution with two flows:
 - A *child* flow. This is the flow that is nested inside the *parent* flow and contains the smaller tasks you want to run.
 - A *parent* flow. This flow can have any type of trigger and will call into the child flow.
 
@@ -42,7 +40,7 @@ You will need a soution with two flows:
 
 1. For this walkthrough, the child flow creates a contact, so it needs the **Contact name** and **Contact email**.
 
-   ![Input for child flow](https://procsi.blob.core.windows.net/blog-images/child-flows-child-inputs.png "Input for child flow")
+   ![Input for child flow](./media/call-child-flow/input-definition.png "Input for child flow")
 
 1. Build the logic that you want the child flow to run. This logic can contain as many steps as you need. 
 
@@ -54,7 +52,7 @@ You will need a soution with two flows:
 
 1. As with the trigger, you can define as many outputs as you want to be returned from the child flow. In the following image, we can respond with the ID of the contact.
 
-   ![Child flow response](https://procsi.blob.core.windows.net/blog-images/child-flows-child-outputs.png "Child flow response")
+   ![Child flow response](./media/call-child-flow/response-output.png "Child flow response")
 
 1. Give your flow a descriptive name and then save it. 
 
@@ -62,19 +60,11 @@ You will need a soution with two flows:
 
 1. Lastly, if your flow uses anything other than built-in actions or the Common Data Service (current environment) connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
 
-   ![Edit flow](https://procsi.blob.core.windows.net/blog-images/child-flows-child-edit-run-only.png "Edit flow")
-
 1. In the pane that appears, for each connection used in the flow, you will need to select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
-
-   ![Select the connection to use](https://procsi.blob.core.windows.net/blog-images/child-flows-child-connections.png "Select the connection to use")
 
 1. Select **Save**. At this time, you cannot pass connections from the parent flow to the child flow. If you do not do this, you will receive an error stating that the name cannot be used as a child workflow because child workflows only support embedded connections.
 
 ## Create the parent flow in a solution
-1. Create the parent flow. 
-
-
-## Building the child flow
 
 1. Build the parent flow in the same solution in which you created the child flow.
    
@@ -87,25 +77,16 @@ You will need a soution with two flows:
    >[!NOTE]
    >You will only see the flows to which you have access and are located in a solution. Child flows must also have one of the three triggers mentioned earlier.
 
-   ![Select the child flow to run](https://procsi.blob.core.windows.net/blog-images/child-flows-pick-flow.png "Select the child flow to run")
+   ![Select the child flow to run](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
 
 1. After you select your child flow, you will see the _inputs_ that you defined. After the child flow action, you will be able to use any of the _outputs_ from that child flow.
 
-   ![Inputs](https://procsi.blob.core.windows.net/blog-images/child-flows-inputs-outputs.png "Inputs")
+   ![Inputs](./media/call-child-flow/view-child-flow-input.png "Inputs")
 
    When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Common Data Service or 30 days for all other flows).
 
 1. Save and test this flow. 
 
    >[!TIP]
-   >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs.
-
-
-
-
-
-
-
-
-
-
+   >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs. 
+   
