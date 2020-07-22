@@ -167,8 +167,8 @@
     href: overview-solution-flows.md
   - name: Create a flow in a solution
     href: create-flow-solution.md
-  - name: Create and call child flows
-    href: call-child-flows.md
+  - name: Create child flows
+    href: create-child-flows.md
   - name: Export solution
     href: export-flow-solution.md
   - name: Import solution

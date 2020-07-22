@@ -10,7 +10,7 @@ ms.service: business-applications
 ms.author: deonhe
 dynamics365pdf: True
 ---
-# Call Child Flows
+# Create child flows
 
 Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a _single_ flow, it can be difficult to navigate and maintain that flow. 
 
