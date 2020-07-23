@@ -20,6 +20,20 @@ search.audienceType:
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
 
+There are two types of workflows:
+1. Realtime workflows.
+1. Background workflows.
+
+##  Realtime workflows
+
+See the Power Apps docs for more information on realtime workflows.
+
+## Background workflows
+
+Check out the [Power Apps docs on dfdf]().
+
+
+
 > [!IMPORTANT]
 > Use flows instead of classic workflows to automate your business processes. More information: [Replace classic Common Data Service workflows with flows](replace-workflows-with-flows.md)  
   
