@@ -40,13 +40,13 @@ Anyone can sign up by going to [flow.microsoft.com](https://flow.microsoft.com),
 
 When a user in your organization signs up for Power Automate with Option 2, that user will be assigned a Power Automate Free license automatically.
 
-[Sign up for Flow](sign-up-sign-in.md) includes more details.
+[Sign up for Power Automate](sign-up-sign-in.md) includes more details.
 
 ### What is the Power Automate Free Plan?
 
 The Power Automate Free Plan is used only for tracking purposes. Enabling or disabling it has no effect on a user's ability to create flows. If you disable the Power Automate Free Plan, it becomes enabled again when a user logs in. This is the expected behavior.
 
-### Can I block another person from signing up for Flow?
+### Can I block another person from signing up for Power Automate?
 Power Automate is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Power Automate there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Power Automate (as everyone in the world can, irrespective of their email address).
 
 However, if a person signs up for Power Automate, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft, which is like many other cloud services from Microsoft such as Bing, OneDrive, or Outlook.com. An individual's use of Power Automate does not in any way imply that the service is provided by your organization.
@@ -60,12 +60,13 @@ Individuals can gain access to the paid features of Power Automate in three diff
 2. You can assign a Power Automate license to them within the Office 365 admin portal.
 3. The user has been assigned an Office 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
 
-### Can I block another person from using the paid features of Flow?
+### Can I block another person from using the paid features of Power Automate?
 Any individual can try out the paid features of Power Automate for 90 days, and incur no costs. However, you can fully manage the assignment of the perpetual paid licenses inside of your organization through the Office 365 admin portal.
 
 As with the free offerings, if an individual chooses to sign up for the trial that is a direct relationship between the individual and Microsoft, not necessarily endorsed by your company.
 
-## Administration of Flow
+## Administration of Power Automate
+
 ### Why has the Power Automate icon appeared in the Office 365 app launcher?
 As announced in August, Power Automate is now a fundamental part of the Office 365 suite. Three months after this announcement Power Automate was enabled as a service as a part of all existing Office 365 SKU's. As users everywhere in the world can now use Power Automate, it has appeared in the app launcher for them.
 
@@ -120,7 +121,7 @@ You can choose to assign additional licenses to users yourself through the Offic
 ### Is this free? Will I be charged for these licenses?
 No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
 
-### I removed the Power Automate Free license and users can still access Flow?
+### I removed the Power Automate Free license and users can still access it.
 The Power Automate Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate Free license does not actually grant or remove any capabilities.
 
 ### Why can't I see all Power Automate licenses in the Office 365 Admin portal?
