@@ -23,11 +23,12 @@ search.audienceType:
 ---
 # Introducing instant flows
 
-## What are instant flows?
-There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Online build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
+There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
-**Note** You can create instant flows either from your mobile device or from Power Automate.  
-  ![Overview image](./media/introduction-to-button-flows/buttons-montage.png)  
+![Overview image](./media/introduction-to-button-flows/buttons-montage.png) 
+
+> [!NOTE]
+> You can create instant flows either from your mobile device or from Power Automate.
 
 ## Why create buttons?
 Create buttons so that you can easily run repetitive tasks from any place, at anytime via your mobile device. Running buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
@@ -38,7 +39,7 @@ Create buttons so that you can easily run repetitive tasks from any place, at an
 * An account with permissions to use the connectors to create your button. For example, you will need a Dropbox account in order to create a button that accesses Dropbox.
 
 ### From the portal
-In this walk-through, let's create a button that starts a Visual Studio Online (VSO) build and sends notifications to let you know when the build starts:
+In this walk-through, let's create a button that starts a Visual Studio Codespaces build and sends notifications to let you know when the build starts:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **Create** from the left side of the screen.
