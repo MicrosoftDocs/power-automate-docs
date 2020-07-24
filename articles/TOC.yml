@@ -42,7 +42,7 @@
     href: create-sharepoint-reminder-flows.md
   - name: Create flow to customize SharePoint page approvals
     href: customize-sharepoint-page-approvals.md
-  - name: Create a flow in Teams
+  - name: Share a flow
     href: flows-teams.md
   - name: Create adaptive card flows in Teams
     href: create-adaptive-cards-teams.md
