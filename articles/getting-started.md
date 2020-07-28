@@ -37,7 +37,17 @@ What skills do you need to have? Skill levels from typical business users to IT 
 What industries can benefit from Power Automate? Check out how some of the companies implemented Power Platform solutions using Power Automate in [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate), [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure), [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform), [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform),  and [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow). Find examples from your industry [here](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc). 
 
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
+The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+
+See the following table to learn more about the types of flow that you can build to help address your use cases.
+
+| **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Automated flows](get-started-logic-flow.md)                 | Create a flow that performs one or more tasks automatically after it's triggered by an event. | [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services. |
+| [Button flows](introduction-to-button-flows.md)              | Run repetitive tasks from anyplace, at any time, via your mobile device.                        |                                                                                        |
+| [Scheduled flows](run-scheduled-tasks.md)                    | Create a flow that performs one or more tasks on a schedule.             |                                                                                        |
+| [Business process flows](business-process-flows-overview.md) | Define a set of steps for people to follow to take them to a desired outcome.                 | Human processes                                                                        |
+| [UI flows](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
 ## Check out the start page ##
 
