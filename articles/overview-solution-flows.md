@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/24/2020
+ms.date: 11/05/2018
 ms.author: deonhe
 search.app: 
   - Flow
@@ -46,20 +46,28 @@ You must have the following components to create solutions, and solution-aware f
 Follow these steps to create a solution:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
-1. Select **Solutions** from the right navigation bar. And then select **+ New solution**.
+1. Select **Solutions** from the navigation bar.
 
-     ![](./media/overview-solution-flows/select-new-solution.png)
+   ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
 
-1. Provide all required information for your new solution, including **Display Name**, **Name**, **Publisher**, and **Version**. It's also a good idea to provide a description of your solution. You can do so by selecting **More options**.
+1. Select **+ New solution**.
+
+   ![](./media/overview-solution-flows/select-new-solution.png)
+
+1. Provide all required information for your new solution, including **Display Name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
 
    ![](./media/overview-solution-flows/new-solution.png)
 
-1. Select **Create** from a button at the bottom.
+1. Select **Save and Close** from the menu at the top.
 
-      Your new solution might appear like this image:
+   ![](./media/overview-solution-flows/save-and-close-solution.png)
+
+   Your new solution might appear like this image:
 
    ![](./media/overview-solution-flows/new-solution-created.png)
 
+   > [!TIP]
+   > Select **Solutions** to refresh the list of solutions if your new solution doesn't appear.
 
 ## Learn more
 
