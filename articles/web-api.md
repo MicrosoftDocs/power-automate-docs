@@ -3,7 +3,7 @@ title: Flows are now stored in Common Data Service and use the rich Web API
 description: Flows are now stored in Common Data Service and use the rich Web API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: business-applications
@@ -33,12 +33,12 @@ To get these two parameters.
 
  ![Flow URL](media/web-api/power-platform-admin-center.png "Flow URL")
 
-3. Copy the organization id and region subdomain from the Environment URL.
+3. Copy the organization id and region subdomain from the environment URL.
 
  ![Flow URL](media/web-api/power-platform-admin-center-environment-URL.png "Flow URL")
 
 
-You can also programmatically get the list of instances available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the Online Management API.
+You can also programmatically get the list of instances that are available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.
 
 Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
