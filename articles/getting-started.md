@@ -41,13 +41,13 @@ The first step in creating an automation is to [sign up](sign-up-sign-in.md), or
 
 See the following table to learn more about the types of flow that you can build to help address your use cases.
 
-| **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
+| **Flow type**                                                                       | **Use case**                                                                                  | 
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create a flow that performs one or more tasks automatically after it's triggered by an event. | [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services. |
-| [Button flows](introduction-to-button-flows.md)              | Run repetitive tasks from anyplace, at any time, via your mobile device.                        |                                                                                        |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Create a flow that performs one or more tasks on a schedule.             |                                                                                        |
-| [Business process flows](business-process-flows-overview.md) | Define a set of steps for people to follow to take them to a desired outcome.                 | Human processes                                                                        |
-| [UI flows](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
+| [Automated flows](get-started-logic-flow.md)                 | An automation that is triggered by an event such as arrival of an email from specific person, or a mention of your company in social media. | 
+| [Instant flows](introduction-to-button-flows.md)              | An automation for repetitive tasks from anyplace, at any time, via your mobile device such as sending a reminder to the team with a push of the button.                      |                                                                                        
+| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to Sharepoint or a database.             |                                                                                        |
+| [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow            |                                                                        
+| [UI flows](ui-flows/overview.md)                                                | Record  clicks and keuboard strokes from your Desktop and Web aplications and automate the playback of manual steps on legacy software.                 |
 
 ## Check out the start page ##
 
