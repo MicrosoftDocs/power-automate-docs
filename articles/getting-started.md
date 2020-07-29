@@ -41,8 +41,19 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 
 ## Who is Power Automate for? 
 
-What skills do you need to have? Skill levels from typical business users to IT can get value from Power Automate's no-code/low-code platform.
-What industries can benefit from Power Automate? Check out how some companies implemented Power Platform solutions using Power Automate in [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate), [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure), [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform), [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform),  and [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow). Find examples from your industry [here](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc). 
+*What skills do you need to have?* 
+Anyone from a basic business user to an IT professionas can create automated processes using Power Automate's no-code/low-code platform.
+
+*What industries can benefit from Power Automate?* 
+Check out how some companies implemented Power Platform solutions using Power Automate in: 
+
+  * [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
+  * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
+  * [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
+  * [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+  * [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow). 
+
+Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
 
 The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
