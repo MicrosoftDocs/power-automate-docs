@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2019
+ms.date: 7/29/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -40,6 +40,20 @@ What industries can benefit from Power Automate? Check out how some companies im
 The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
 
 See the following table to learn more about the types of flow that you can build to help address your use cases.
+
+| **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services. |
+| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of the button on your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or Sharpoint, etc...                                                                                |
+| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to Sharepoint or a database.             |tasks that need to be automated on schedule                                                                            |
+| [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow                 | Human processes such as customer service requests , approvals, IT development, etc...                                                                        |
+| [UI flows](ui-flows/overview.md)                                                | Record  clicks and keuboard strokes from your Desktop and Web aplications and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
+
+
+
+
+
+
 
 | **Flow type**                                                                       | **Use case**                                                                                  | 
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
