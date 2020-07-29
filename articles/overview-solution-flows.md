@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 7/27/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -66,9 +66,7 @@ Follow these steps to create a solution:
 
    ![](./media/overview-solution-flows/new-solution-created.png)
 
-   > [!TIP]
-   > Select **Solutions** to refresh the list of solutions if your new solution doesn't appear.
-
+  
 ## Learn more
 
 - [Create a flow in a solution](./create-flow-solution.md)
