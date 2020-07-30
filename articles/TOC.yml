@@ -183,11 +183,11 @@
     items:
     - name: Overview
       href: workflow-processes.md
-    - name: Configure workflow stages and steps
+    - name: Configure background workflow stages and steps
       href: configure-workflow-steps.md
-    - name: Monitor and manage workflow processes
+    - name: Monitor and manage background workflow processes
       href: monitor-manage-processes.md
-    - name: Best practices for workflow processes
+    - name: Best practices for background workflow processes
       href: best-practices-workflow-processes.md
     - name: Replace workflows with flows
       href: replace-workflows-with-flows.md

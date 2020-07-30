@@ -1,6 +1,6 @@
 ---
-title: "Configure workflow stages and steps in Power Apps | MicrosoftDocs"
-description: "Learn how to configure workflow steps"
+title: "Configure background workflow stages and steps in Power Apps | MicrosoftDocs"
+description: "Learn how to configure background workflow steps"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: ""
@@ -19,7 +19,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Configure workflow stages and steps
+# Configure background workflow stages and steps
 
 
 When you design workflows you have the option to contain the logic you want to perform in stages and steps.  
@@ -32,20 +32,20 @@ When you design workflows you have the option to contain the logic you want to p
   
 <a name="BKMK_ActionsWorkflowProcessesCanPerform"></a>  
  
-## Actions that workflow processes can perform  
+## Actions that background workflow processes can perform  
 
- Workflow processes can perform the actions listed in the following table.  
+ Background background workflow processes can perform the actions listed in the following table.  
   
 |Action|Description|  
 |------------|-----------------|  
 |**Create Record**|Creates a new record for an entity and assigns values you choose to attributes.|  
-|**Update Record**|You can update the record that the workflow is running on, any of the records linked to that record in an N:1 relationships, or any records created by earlier steps.|  
-|**Assign Record**|You can assign the record that the workflow is running on, any of the records linked to that record with an N:1 relationship, or any records created by earlier steps.|  
-|**Send Email**|Sends an email. You can choose to create a new email message or use an email template configured for the entity of the record that the workflow is running on or any entities that have an N:1 relationship with the entity, or the entity for any records created by earlier steps.|  
-|**Start Child Workflow**|Starts a workflow process that has been configured as a child workflow.|  
+|**Update Record**|You can update the record that the background workflow is running on, any of the records linked to that record in an N:1 relationships, or any records created by earlier steps.|  
+|**Assign Record**|You can assign the record that the background workflow is running on, any of the records linked to that record with an N:1 relationship, or any records created by earlier steps.|  
+|**Send Email**|Sends an email. You can choose to create a new email message or use an email template configured for the entity of the record that the background workflow is running on or any entities that have an N:1 relationship with the entity, or the entity for any records created by earlier steps.|  
+|**Start Child Workflow**|Starts a background workflow process that has been configured as a child workflow.|  
 |**Change Status**|Changes the status of the record that the process is running on, any of the records linked to that record with an N:1 relationship, or any records created by earlier steps.|  
 |**Stop Workflow**|Stops the current workflow. You can set a status of either **Succeeded** or **Canceled** and specify a status message.|  
-|**Custom Step**|Developers can create custom workflow steps that define actions. There are no custom steps available by default.|  
+|**Custom Step**|Developers can create custom background workflow steps that define actions. There are no custom steps available by default.|  
   
 ### Setting record values  
 
@@ -65,20 +65,20 @@ When you design workflows you have the option to contain the logic you want to p
   
 <a name="BKMK_SettingConditionsForWorkflowActions"></a>   
 
-## Setting conditions for workflow actions  
+## Setting conditions for background workflow actions  
 
- The actions that you will apply often depend on conditions. Workflow processes provide several ways to set conditions and create branching logic to get the results you want. You can check values of the record that the workflow process is running against, any of the records linked to that record with an N:1 relationship, or values within the process itself  
+ The actions that you will apply often depend on conditions. Background workflow processes provide several ways to set conditions and create branching logic to get the results you want. You can check values of the record that the background workflow process is running against, any of the records linked to that record with an N:1 relationship, or values within the process itself  
   
 |Condition Type|Description|  
 |--------------------|-----------------|  
-|**Check Condition**|A logical "if-\<condition> then" statement.<br /><br /> You can check the current values for the record that the workflow is running on, any of the records linked to that record in an N:1 relationships, or any records created by earlier steps. Based on these values you can define additional steps when the condition is true.<br /><br /> In the "if-\<condition> then" statement, you can use the following operators: **Equals**, **Does Not Equal**, **Contains Data**, **Does Not Contain Data**, **Under** and **Not Under**. **Note:**  The **Under** and **Not Under** are hierarchical operators. They can only be used on the entities that have a hierarchical relationship defined. If you’re trying to use these operators on the entities that don’t have the hierarchical relationship defined, you’ll see the error message: “You’re using a hierarchical operator on an entity that doesn’t have a hierarchical relationship defined. Either make the entity hierarchical (by marking a relationship as hierarchical) or use a different operator.”For more information about hierarchical relationships, see [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data). A screenshot that follows the table is an example of the definition of the workflow process that uses the **Under** and **Not Under** hierarchical operators.|  
+|**Check Condition**|A logical "if-\<condition> then" statement.<br /><br /> You can check the current values for the record that the background workflow is running on, any of the records linked to that record in an N:1 relationships, or any records created by earlier steps. Based on these values you can define additional steps when the condition is true.<br /><br /> In the "if-\<condition> then" statement, you can use the following operators: **Equals**, **Does Not Equal**, **Contains Data**, **Does Not Contain Data**, **Under** and **Not Under**. **Note:**  The **Under** and **Not Under** are hierarchical operators. They can only be used on the entities that have a hierarchical relationship defined. If you’re trying to use these operators on the entities that don’t have the hierarchical relationship defined, you’ll see the error message: “You’re using a hierarchical operator on an entity that doesn’t have a hierarchical relationship defined. Either make the entity hierarchical (by marking a relationship as hierarchical) or use a different operator.”For more information about hierarchical relationships, see [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data). A screenshot that follows the table is an example of the definition of the background workflow process that uses the **Under** and **Not Under** hierarchical operators.|  
 |**Conditional Branch**|A logical "else-if-then" statement, the editor uses the text “Otherwise, if \<condition> then:”<br /><br /> Select a check condition you have previously defined and you can add a conditional branch to define additional steps when the check condition returns false.|  
 |**Default Action**|A logical "else" statement. the editor uses the text “Otherwise:”<br /><br /> Select a check condition, conditional branch, wait condition, or parallel wait branch that you have previously defined and you can use a default action to define steps for all cases that do not match the criteria defined in condition or branch elements.|  
-|**Wait Condition**|Enables a background workflow to pause itself until the criteria defined by the condition have been met. The workflow starts again automatically when the criteria in the wait condition have been met.|  
-|**Parallel Wait Branch**|Defines an alternative wait condition for a background workflow with a corresponding set of additional steps that are performed only when the initial criterion is met. You can use parallel wait branches to create time limits in your workflow logic. They help prevent the workflow from waiting indefinitely until the criteria defined in a wait condition have been met.|  
-|**Custom Step**|Developers can create custom workflow steps that define conditions. There are no custom steps available by default.|  
+|**Wait Condition**|Enables a background workflow to pause itself until the criteria defined by the condition have been met. The background workflow starts again automatically when the criteria in the wait condition have been met.|  
+|**Parallel Wait Branch**|Defines an alternative wait condition for a background workflow with a corresponding set of additional steps that are performed only when the initial criterion is met. You can use parallel wait branches to create time limits in your background workflow logic. They help prevent the background workflow from waiting indefinitely until the criteria defined in a wait condition have been met.|  
+|**Custom Step**|Developers can create custom background workflow steps that define conditions. There are no custom steps available by default.|  
   
- The following screenshot contains an example of the workflow process definition with the **Under** and **Not Under** hierarchical operators. In our example, we apply two different discounts to two groups of accounts. In **Add Step**, we selected the **Check Condition** to specify the **if-then** condition containing the **Under** or **Not Under** operators. The first **if-then** condition applies to all accounts that are **Under** the Alpine Ski House account. These accounts receive a 10% discount on purchased good and services. The second **if-then** condition applies to all accounts that are **Not Under** the Alpine Ski House account and they receive a 5% discount. Then, we selected **Update Record** to define the action to be performed based on the condition.  
+ The following screenshot contains an example of the background workflow process definition with the **Under** and **Not Under** hierarchical operators. In our example, we apply two different discounts to two groups of accounts. In **Add Step**, we selected the **Check Condition** to specify the **if-then** condition containing the **Under** or **Not Under** operators. The first **if-then** condition applies to all accounts that are **Under** the Alpine Ski House account. These accounts receive a 10% discount on purchased good and services. The second **if-then** condition applies to all accounts that are **Not Under** the Alpine Ski House account and they receive a 5% discount. Then, we selected **Update Record** to define the action to be performed based on the condition.  
   
  ![Workflow process with Under&#47;Not Under operators](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")  
   
@@ -86,5 +86,5 @@ When you design workflows you have the option to contain the logic you want to p
 ## Next steps  
  [Create custom business logic with processes](./guide-staff-through-common-tasks-processes.md)   
  [Workflow processes overview](workflow-processes.md)
- [Monitor and manage workflow processes](monitor-manage-processes.md)   
- [Best practices for workflow processes](best-practices-workflow-processes.md)
+ [Monitor and manage background workflow processes](monitor-manage-processes.md)   
+ [Best practices for background workflow processes](best-practices-workflow-processes.md)
