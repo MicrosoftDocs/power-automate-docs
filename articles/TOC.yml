@@ -189,7 +189,7 @@
       href: monitor-manage-processes.md
     - name: Best practices for background workflow processes
       href: best-practices-workflow-processes.md
-    - name: Replace workflows with flows
+    - name: Replace background workflows with flows
       href: replace-workflows-with-flows.md
   - name: Classic Common Data Service task flows
     items:

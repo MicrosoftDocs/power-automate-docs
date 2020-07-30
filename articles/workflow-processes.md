@@ -21,7 +21,22 @@ Workflows automate business processes without a user interface. People usually u
 
 There are two types of workflows:
 1. Realtime workflows. See the [Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) documentation for more details about realtime workflows.
-1. Background workflows. See other topics here in the Power Automate documentation to learn more about background workflows.
+1. Background workflows. 
+
+
+To create background workflows, you must set the **Run this workflow in the background (recommended)** checkbox, as displayed in the following image.
+
+![Workflow process with Under&#47;Not Under operators](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")
+
+See other topics here in the Power Automate documentation to learn more about background workflows.
+
+## Learn more
+
+
+- [Configure background workflow stages and steps](configure-workflow-steps.md).
+- [Monitor and manage background workflow processes](monitor-manage-processes.md)
+- [Best practices for background workflow processes](best-practices-workflow-processes.md).
+- [Replace background workflows with flows](replace-workflows-with-flows.md)
 
 
 
