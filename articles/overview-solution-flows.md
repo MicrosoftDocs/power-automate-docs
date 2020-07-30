@@ -48,23 +48,23 @@ Follow these steps to create a solution:
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **Solutions** from the navigation bar.
 
-   ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
+1. Select **New solution**.
 
-1. Select **+ New solution**.
-
-   ![](./media/overview-solution-flows/select-new-solution.png)
+   ![Select a new solution](./media/overview-solution-flows/select-new-solution.png)
 
 1. Provide all required information for your new solution, including **Display Name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
 
-   ![](./media/overview-solution-flows/new-solution.png)
+   ![Select new solution](./media/overview-solution-flows/new-solution.png)
 
 1. Select **Save and Close** from the menu at the top.
 
-   ![](./media/overview-solution-flows/save-and-close-solution.png)
+   ![Select the save and close button](./media/overview-solution-flows/save-and-close-solution.png)
 
    Your new solution might appear like this image:
 
-   ![](./media/overview-solution-flows/new-solution-created.png)
+
+   ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png)
+
 
   
 ## Learn more
