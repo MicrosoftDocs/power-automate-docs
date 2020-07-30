@@ -62,7 +62,9 @@ Follow these steps to create a solution:
 
    Your new solution might appear like this image:
 
+
    ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png)
+
 
   
 ## Learn more
