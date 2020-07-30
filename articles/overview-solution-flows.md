@@ -30,7 +30,7 @@ When you host your flows in a [solution](https://docs.microsoft.com/powerapps/ma
 Flows created in a solution are known as *solution-aware* flows. You can add multiple flows in a single solution. You cannot move non-solution-aware flows (flows not created in a solution) into a solution.
 
 > [!NOTE]
-> For detailed information about solution concepts and implementing a healthy application lifecycle management (ALM) using Power Automate in your organization, see [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/).
+> For detailed information about solution concepts and implementing a healthy application lifecycle management (ALM) practice in your organization, see [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/).
 
 ## Prerequisites
 
