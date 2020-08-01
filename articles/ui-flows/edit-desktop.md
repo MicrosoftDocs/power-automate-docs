@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/20/2020
+ms.date: 07/31/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -85,6 +85,41 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
 1. Select **Save**, and then test your UI flow.
+
+## Add a variable
+
+You can use variables to perform multiple actions within your UI flows. For example, you can use a variable to count how many times an operation was performed in a loop. Or, you can use a variable to create an string array with the screen readings done in a loop.
+
+>[!TIP]
+>You can use integer, float, Boolean, string, array, and object variable data types. 
+
+After you create a variable, you can perform other tasks, for example:
+
+- Increase or decrease the variable by a constant value, also known as increment and decrement.
+- Insert or append the variable’s value as the last item in a string or array.
+- Assign a different value to a variable.
+
+Follow these steps to create and use variables in a UI flow:
+
+1. Go to the beginning of the UI flow and select **Add an action**.
+
+   ![Select add an action](../media/edit-desktop/add-variable-add-action.png "Select add an action")
+
+1. Search for the word *variable*, and then select the **Initialize variable** action under the built-in category.
+
+   ![Select the initialize variable action](../media/edit-desktop/add-variable-initialize-variable.png "Select the initialize variable action")
+
+1. Initialize the variable to type that meets your needs.
+
+   ![Initialize the variable to the type you need](../media/edit-desktop/add-variable-initialize-value.png "Initialize the variable to the type you need")
+
+>[!TIP]
+>If your UI automation scenario involves reading values from a screen in a loop, you could achieve this by initializing the variable as an array type. 
+>
+>Then, within the UI flow, select the **Append to Array** variable action, and then use the output of **Get Text** action from dynamic content list.
+
+   ![You can append to an array in a loop](../media/edit-desktop/add-variable-add-loop.png "You can append to an array in a loop")
+
 
 ## Add a loop
 
