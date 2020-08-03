@@ -1,5 +1,5 @@
 ---
-title: Learn how to add other owners to a flow and create team flows | Microsoft Docs
+title: Learn how to share a flow with other users | Microsoft Docs
 description: Power Automate makes it easy automate repetitive tasks. You can add users or groups as owners and collaborate with them to design and manage flows.
 services: ''
 suite: flow
