@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/07/2020
+ms.date: 08/04/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -37,6 +37,9 @@ These are limits for a single outgoing request.
 | --- | --- |
 | Request Timeout for synchronous calls |120 Seconds |
 | Request Timeout for Async calls|Configurable. Max is 30 days. |
+
+>[!NOTE]
+>If you test a flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
 
 ### Message size
 
