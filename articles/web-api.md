@@ -3,7 +3,7 @@ title: Flows are now stored in Common Data Service and use the rich Web API
 description: Flows are now stored in Common Data Service and use the rich Web API.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
-ms.date: 04/28/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: business-applications
@@ -23,29 +23,22 @@ This content covers the management of flows included on the **Solutions** tab in
 
 To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Power Automate Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-- The **Organization ID** is a unique name for the environment that stores your flows. You can see the Organization ID in the environment switcher at the top-right of Power Automate. Note that the **Organization ID** is different from the **Environment ID** (which is the GUID that appears in the URL of the flow).
+- The **Organization ID** is a unique name for the environment that stores your flows. 
 
-     ![Environment switcher](media/web-api/get-organization-id.png "Environment switcher")
+- The **Regional Subdomain** depends on the location of your environment.
 
-- The **Regional Subdomain** depends on the location of your environment. When you sign in to Power Automate, you can see the region of your environment in the URL of the web page. Use that region name to find the respective subdomain in the following table:
+To get these two parameters.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Select the environment you use to build your flows.
 
-     ![Flow URL](media/web-api/get-region-name.png "Flow URL")
+ ![Flow URL](media/web-api/power-platform-admin-center.png "Flow URL")
 
-     | Region         | Subdomain   |
-     | -------------- | ----------- |
-     | United States  | crm         |
-     | South America  | crm2        |
-     | Canada         | crm3        |
-     | Europe         | crm4        |
-     | Asia Pacific   | crm5        |
-     | Australia      | crm6        |
-     | Japan          | crm7        |
-     | India          | crm8        |
-     | US Government  | crm9        |
-     | United Kingdom | crm11       |
-	 |United Arab Emirates |   crm15|
+3. Copy the organization id and region subdomain from the environment URL.
 
-You can also programmatically get the list of instances available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the Online Management API.
+ ![Flow URL](media/web-api/power-platform-admin-center-environment-URL.png "Flow URL")
+
+
+You can also programmatically get the list of instances that are available to you via the [Get Instances](https://docs.microsoft.com/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.
 
 Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
