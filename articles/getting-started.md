@@ -42,7 +42,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 ## Who is Power Automate for? 
 
 *What skills do you need to have?* 
-Anyone from a basic business user to an IT professionas can create automated processes using Power Automate's no-code/low-code platform.
+Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
 *What industries can benefit from Power Automate?* 
 Check out how some companies implemented Power Platform solutions using Power Automate in: 
@@ -51,7 +51,7 @@ Check out how some companies implemented Power Platform solutions using Power Au
   * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
   * [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
   * [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
-  * [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow). 
+  * [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
 
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
@@ -64,9 +64,9 @@ See the following table to learn more about the types of flow that you can build
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services. |
-| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams and SharePoint.                                                                                |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |tasks that need to be automated on a schedule.                                                                            |
+| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
+| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
+| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
 | [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow.                 | Human processes such as customer service requests, approvals, IT development,...                                                                        |
 | [UI flows](ui-flows/overview.md)                                                | Record  clicks and keyboard strokes from your Desktop and Web applications and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
@@ -101,7 +101,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [150 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 
