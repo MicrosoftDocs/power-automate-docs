@@ -125,3 +125,22 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in other cases.
 >
+
+## Share a flow with run-only permissions
+Instant flows (i.e. flows that use a manual trigger such as Button, For a selected item etc) can be shared using just run only permissions. Any user who's added as a run only user will not have access to edit or modify the flow in any way. They will only have permissions to trigger the flow. 
+
+### Adding a run only user
+1. In the flow details page select the "Edit" link next to the Run only users section. 
+![run only share](./media/create-team-flows/run-only-share.png)
+2. In the Manage run-only permissions flyout specify the users, groups you want to provide run only access to
+![Add run only users](./media/create-team-flows/run-only-share2.png)
+3. As an owner you can choose if the run-only users will need to provide their own connections when sharing the flow or use a connection thats already defined in the flow
+![Manage connections](./media/create-team-flows/manage-run-only-connections.png)
+4. Congratulations &mdash; the user or group will now have access to run the flow.
+
+### Removing a run only user
+1. In the flow details page select the "Edit" link next to the Run only users section. 
+![run only share](./media/create-team-flows/run-only-share.png)
+2. In the Manage run-only permissions flyout hit the delete icon next to the user you want to remove run only access to and hit save at the bottom of the page
+![remove run only user](./media/create-team-flows/remove-run-only-user.png)
+3. Congratulations &mdash; the user or group will no longer have access to run this flow.
