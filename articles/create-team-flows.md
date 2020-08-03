@@ -144,3 +144,23 @@ Instant flows (i.e. flows that use a manual trigger such as Button, For a select
 2. In the Manage run-only permissions flyout hit the delete icon next to the user you want to remove run only access to and hit save at the bottom of the page
 ![remove run only user](./media/create-team-flows/remove-run-only-user.png)
 3. Congratulations &mdash; the user or group will no longer have access to run this flow.
+
+## Share a copy of a flow
+Share a copy allows you to share the definition of a flow with another user as a tempalte. It provides a good way for you to share the general structure of a flow without sharing any connections while also allowing the recipient to modify their flow independant of your flow so they can make it fit their needs.
+
+> [!NOTE]
+> Share a copy creates an independant instance of the flow for the recipient. There is no way to revoke access to the flow once shared.
+
+### Sending a copy of a flow
+1. In the flow details page select the "Send a copy" option in the top command bar
+![Send a copy](./media/create-team-flows/send-a-copy.png)
+> [!NOTE]
+> You can also select send a copy from the flow overflow menu
+![Send a copy2](./media/create-team-flows/send-a-copy2.png)
+2. In the flyout menu you can edit the name and description of the flow you want to share and specify the users you want to share the flow with.
+![Send copy details](./media/create-team-flows/send-a-copy3.png)
+3. The recipient will receive an email stating that you have shared a Flow template with you and allows them to create their own instance of that flow
+![Receive a copy](./media/create-team-flows/send-a-copy5.png)
+> [!NOTE]
+> As a recipient you can also access the flow from the Shared with me section under templates
+![Shared with me](./media/create-team-flows/send-a-copy6.png)
