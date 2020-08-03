@@ -38,6 +38,8 @@ These are limits for a single outgoing request.
 | Request Timeout for synchronous calls |120 Seconds |
 | Request Timeout for Async calls|Configurable. Max is 30 days. |
 
+> [!NOTE] If you test a flow that runs for longer than 10 minutes, you may see a timeout message in Power Automate even though the flow continues to run in the background. You can confirm that the flow continues to execute by reopening the view. 
+
 ### Message size
 
 | Name | Limit | Notes |
