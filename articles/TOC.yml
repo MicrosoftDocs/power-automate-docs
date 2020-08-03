@@ -12,7 +12,7 @@
     href: get-started-logic-template.md
   - name: Create a flow on a phone
     href: mobile-create-flow.md
-  - name: Create a team flow
+  - name: Share a flow
     href: create-team-flows.md
   - name: Create a flow that uses Common Data Service
     href: common-data-model-intro.md
