@@ -24,11 +24,6 @@ search.audienceType:
 
 # Overview of using flows in Microsoft Teams
 
-sample blah blah blah
+Content coming soon
 
-
-
-## Learn more
-
-blah blah blah
 
