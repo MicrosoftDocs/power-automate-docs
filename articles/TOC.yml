@@ -96,6 +96,8 @@
     href: create-approval-response-options.md
 - name: Use flows in Teams
   items:
+  - name: Overview
+    href: ./teams/overview.md
   - name: Trigger a flow from a Teams message
     href: trigger-flow-teams-message.md
   - name: Use adaptive cards to model flows
