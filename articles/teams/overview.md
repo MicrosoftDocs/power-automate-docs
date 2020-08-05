@@ -32,15 +32,15 @@ Note: You need a [Power Automate license](https://flow.microsoft.com/pricing/) t
 
 ## Create a flow in Teams
 
-- Navigate to the **Build** tab in your Power Apps app, select **New**, and then select **Flow** as shown in the following image.
+1. Navigate to the **Build** tab in your Power Apps app, select **New**, and then select **Flow** as shown in the following image.
 
    ![Create a flow](..\media\overview-teams-flows\new-flow.png)
 
-- The Power Automate designer opens, allowing you to create and save your flows.
+1. The Power Automate designer opens, allowing you to create and save your flows.
 
    ![View of the designer](..\media\overview-teams-flows\designer.png)
 
-- To find your saved flows, select **Build**, and then select **Flows** in the tree view. 
+1. To find your saved flows, select **Build**, and then select **Flows** in the tree view. 
 
    ![All flows](..\media\overview-teams-flows\all-flows.png)
 
