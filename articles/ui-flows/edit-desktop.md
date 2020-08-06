@@ -133,26 +133,26 @@ Follow these steps to copy and then paste actions and scopes:
 
 1. Select **…**, and then select **Copy to my clipboard** for the action or scope that you want to copy.
 
-   ![](../media/edit-desktop/.png "")
+   ![](../media/edit-desktop/copy-action.png "")
 
 1. Hover over the target location, and then select **Add an action**. 
 
    >[!TIP]
    >You can select **Add an action** directly if it is at the end of the scope or UI flow.
-
-   ![](../media/edit-desktop/.png "")
+      
+   ![](../media/edit-desktop/add-copied-action.png "")
 
 1.	Select **My clipboard**, and then select the action or scope you copied.
 
-   ![](../media/edit-desktop/.png "")
+    ![](../media/edit-desktop/select-action.png "")
 
 1. Notice that UI flows pastes the action card with a unique name.
 
-   ![](../media/edit-desktop/.png "")
+   ![](../media/edit-desktop/action-unique-name.png "")
 
 1. Also notice that any actions with screenshots will also retain them for easy reference. 
 
-   ![](../media/edit-desktop/.png "")
+   ![](../media/edit-desktop/copied-screenshots.png "")
 
 ## Paste a scope immediately after itself
 
