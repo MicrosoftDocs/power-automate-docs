@@ -30,12 +30,12 @@ At times, you might want to turn off a flow to prevent it from running. Follow t
 
 After you create a flow, it is turned on by default. Follow these steps to turn off a flow.
 
-1. On the **My flows page**,  select the ellipsis (...) for a flow.
-
+1. On the **My flows page**,  select the ellipsis (...) for the flow you want to turn off.
+    
     ![Power Automate ellipsis](./media/disable-flow/flows-collapsed-menu.png)
+    
 1. Select **Turn off** in the menu that appears.
 
-    ![Flow ellipsis menu expanded](./media/disable-flow/ellipsis-menu-expanded.png)
 1. A message appears with the new flow status.
 
     ![New flow status after being disabled on flow details page](./media/disable-flow/flow-details-page-new-status.png)
@@ -43,12 +43,12 @@ After you create a flow, it is turned on by default. Follow these steps to turn 
 
 ## Turn flows on
 
-1. On the **My flows page**, click on the flow that you want to modify.
+If you've turned a flow off, but want to turn it back on so that it will run again, follow these steps: 
 
-    ![Selecting a flow](./media/disable-flow/select-flow-name.png)
-1. Select **Turn on** to enable or disable the flow.
+1. On the **My flows page**, select the flow that you want to modify.
 
-    ![Flow details page](./media/disable-flow/flow-details-page.png)
+1. On the menu at the top of the screen, select **Turn on** to enable or disable the flow.
+
 1. Message appears with the new flow status.
 
     ![New flow status after being disabled](./media/disable-flow/flow-new-status.png)
