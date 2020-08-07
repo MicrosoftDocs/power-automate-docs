@@ -23,7 +23,7 @@ highlightedContent:
   items:
     # Card
     - title: What is Power Automate?
-      itemType: get-started
+      itemType: overview
       url: getting-started.md
 
     # Card
@@ -72,9 +72,9 @@ conceptualContent:
           url: /power-automate/business-process-flows-overview
           itemType: overview            
     
-    - title: RPA using UI flows
+    - title: Use UI flows for RPA
       links:
-        - text: What is UI flow?
+        - text: What is UI flows?
           url: /power-automate/ui-flows/overview
           itemType: overview
         - text: Set up UI flows
