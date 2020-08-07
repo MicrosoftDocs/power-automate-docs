@@ -154,36 +154,28 @@ Follow these steps to copy and then paste actions and scopes:
 
    ![](../media/edit-desktop/copied-screenshots.png "")
 
+   ![](../media/edit-desktop/retained-screen-shorts.png "")
+
+
 ## Paste a scope immediately after itself
 
 >[!NOTE]
 >If a scope does not have a **Close Application** action, and the user copies the scope and then pastes the scope immediately after the existing scope, the pasted actions will only be performed within the first application instance. 
 
-   ![](../media/edit-desktop/.png "")
+   ![](../media/edit-desktop/paste-scope-after-itself.png "")
 
 
 In this example, the highlighted actions **Left click 11** and **Replay keystrokes** will be performed in the first Notepad application, and another notepad instance will be launched. 
 
 To address this instance issue, users have two options:
 
-1.	If you only want to perform the action(s) in the first application instance, you can copy and paste only the relevant actions in the first scope. If you want to copy and paste the entire scope at once, you should remove the Launch action in the pasted scope to prevent launching an extraneous application instance.
+1. If you only want to perform the action(s) in the first application instance, you can copy and paste only the relevant actions in the first scope. If you want to copy and paste the entire scope at once, you should remove the Launch action in the pasted scope to prevent launching an extraneous application instance.
 
-   ![](../media/edit-desktop/.png "")
+   ![](../media/edit-desktop/copy-paste-relevant-actions-only.png "")
 
 1. If you want to perform the action(s) in a separate application instance, you can add a **Close application** action in the first scope, so that the second scope will have its own instance. 
 
-   ![](../media/edit-desktop/.png "")
-
-
-
-
-
-
-
-
-
-
-
+   ![](../media/edit-desktop/paste-scope-different-application.png "")
 
 
 
