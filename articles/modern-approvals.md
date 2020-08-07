@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/20/2017
+ms.date: 08/07/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -132,9 +132,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 ![update item card](./media/modern-approvals/configure-update-item-no.png)
 
-1. Select **Update flow** to save the work we've done.
-   
-    ![select update action](./media/modern-approvals/update.png)
+1. Select **Save** to save the work we've done.
 
 If you've followed along, your flow should resemble this screenshot:
 
