@@ -233,6 +233,8 @@
     href: mobile-manage-flows.md
   - name: Publish a template
     href: publish-a-template.md
+  - name: Turn a flow on or off
+    href: disable-flow.md
 - name: Troubleshoot
   items:
   - name: Watch a flow
