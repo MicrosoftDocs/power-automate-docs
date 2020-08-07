@@ -122,7 +122,7 @@ Follow these steps to create and use variables in a UI flow:
 
 ## Copy and paste steps
 
-You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location or UI flow. 
+You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location within the same UI flow.  
 
 UI flows automatically renames the copied actions and scopes with a unique name. If the copied scope contains another scope, the nested structure is retained when you paste it from **My clipboard**. 
 
@@ -133,28 +133,28 @@ Follow these steps to copy and then paste actions and scopes:
 
 1. Select **…**, and then select **Copy to my clipboard** for the action or scope that you want to copy.
 
-   ![](../media/edit-desktop/copy-action.png "")
+   ![View of the copy clipboard](../media/edit-desktop/copy-action.png "View of the copy clipboard")
 
 1. Hover over the target location, and then select **Add an action**. 
 
    >[!TIP]
    >You can select **Add an action** directly if it is at the end of the scope or UI flow.
       
-   ![](../media/edit-desktop/add-copied-action.png "")
+   ![Add an action selected](../media/edit-desktop/add-copied-action.png "Add an action selected")
 
 1.	Select **My clipboard**, and then select the action or scope you copied.
 
-    ![](../media/edit-desktop/select-action.png "")
+    ![Select the copied action](../media/edit-desktop/select-action.png "Select the copied action")
 
 1. Notice that UI flows pastes the action card with a unique name.
 
-   ![](../media/edit-desktop/action-unique-name.png "")
+   ![View the new name of the copied action](../media/edit-desktop/action-unique-name.png "View the new name of the copied action")
 
 1. Also notice that any actions with screenshots will also retain them for easy reference. 
 
-   ![](../media/edit-desktop/copied-screenshots.png "")
+   ![View retained screenshots](../media/edit-desktop/copied-screenshots.png "View retained screenshots")
 
-   ![](../media/edit-desktop/retained-screen-shorts.png "")
+   ![More retained screenshots](../media/edit-desktop/retained-screen-shorts.png "View retained screenshots")
 
 
 ## Paste a scope immediately after itself
@@ -162,7 +162,7 @@ Follow these steps to copy and then paste actions and scopes:
 >[!NOTE]
 >If a scope does not have a **Close Application** action, and the user copies the scope and then pastes the scope immediately after the existing scope, the pasted actions will only be performed within the first application instance. 
 
-   ![](../media/edit-desktop/paste-scope-after-itself.png "")
+   ![Paste a scope](../media/edit-desktop/paste-scope-after-itself.png "Paste a scope")
 
 
 In this example, the highlighted actions **Left click 11** and **Replay keystrokes** will be performed in the first Notepad application, and another notepad instance will be launched. 
@@ -171,12 +171,11 @@ To address this instance issue, users have two options:
 
 1. If you only want to perform the action(s) in the first application instance, you can copy and paste only the relevant actions in the first scope. If you want to copy and paste the entire scope at once, you should remove the Launch action in the pasted scope to prevent launching an extraneous application instance.
 
-   ![](../media/edit-desktop/copy-paste-relevant-actions-only.png "")
+   ![Relevant actions only](../media/edit-desktop/copy-paste-relevant-actions-only.png "Relevant actions only")
 
 1. If you want to perform the action(s) in a separate application instance, you can add a **Close application** action in the first scope, so that the second scope will have its own instance. 
 
-   ![](../media/edit-desktop/paste-scope-different-application.png "")
-
+   ![Separate application instance](../media/edit-desktop/paste-scope-different-application.png "Separate application instance")
 
 
 ## Add a loop
