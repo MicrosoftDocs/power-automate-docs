@@ -152,7 +152,7 @@ Instant flows (i.e. flows that use a manual trigger such as Button, For a select
 
 ## Share a copy of a flow
 
-Share a copy allows you to share the definition of a flow with another user as a tempalte. It provides a good way for you to share the general structure of a flow without sharing any connections while also allowing the recipient to modify their flow independant of your flow so they can make it fit their needs.
+Share a copy allows you to share the definition of a flow with another user as a template. It provides a good way for you to share the general structure of a flow without sharing any connections while also allowing the recipient to modify their flow independant of your flow so they can make it fit their needs.
 
 > [!NOTE]
 > Share a copy creates an independant instance of the flow for the recipient. There is no way to revoke access to the flow once shared.
