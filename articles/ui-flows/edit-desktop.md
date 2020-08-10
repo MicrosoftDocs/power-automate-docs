@@ -84,7 +84,13 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Select **Record** from the recorder control.
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
-1. Select **Save**, and then test your UI flow.
+1. Select **Save**, and then test your UI flow.\
+
+## Provide command line arguments at launch
+
+After recording UI flows desktop actions, users can manually provide command line arguments for launching applications in UI flows in their automations. The desktop recorder does not capture such inputs, and this feature empowers users with an additional way to control how they want certain applications to launch. 
+
+1.	Record a UI flow with the desktop recorder. 
 
 ## Add a variable
 
