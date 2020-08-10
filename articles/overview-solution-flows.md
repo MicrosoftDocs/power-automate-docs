@@ -54,7 +54,7 @@ Follow these steps to create a solution:
 
 1. Provide all required information for your new solution, including **Display Name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
 
-   ![Select new solution](./media/overview-solution-flows/new-solution.png "new solution properties screen)
+   ![Select new solution](./media/overview-solution-flows/new-solution.png "new solution properties screen")
 
 1. Select **Save and Close** from the menu at the top.
 
@@ -62,7 +62,7 @@ Follow these steps to create a solution:
    Your new solution might appear like this image:
 
 
-   ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen)
+   ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
 
 
   
