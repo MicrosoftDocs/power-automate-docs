@@ -1,5 +1,5 @@
 ---
-title:Edit solution-aware flows | Microsoft Docs
+title: Edit solution-aware flows | Microsoft Docs
 description: Learn how to edit flows in solutions.
 services: ''
 suite: flow
