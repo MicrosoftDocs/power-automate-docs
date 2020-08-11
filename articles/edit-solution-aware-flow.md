@@ -1,6 +1,6 @@
 ---
-title: Overview of solution-aware flows | Microsoft Docs
-description: Learn the benefits of creating flows in solutions.
+title:Edit solution-aware flows | Microsoft Docs
+description: Learn how to edit flows in solutions.
 services: ''
 suite: flow
 documentationcenter: na
