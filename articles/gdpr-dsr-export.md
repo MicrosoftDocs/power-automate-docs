@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/24/2018
+ms.date: 08/14/2020
 search.app: 
   - Flow
   - Powerplatform
@@ -32,7 +32,7 @@ The *right of data portability* allows a data subject to request a copy of their
 
 Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/).
+* **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
