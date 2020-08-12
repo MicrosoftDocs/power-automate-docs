@@ -52,7 +52,7 @@ conceptualContent:
           itemType: get-started        
         - text: Create your first flow
           url: /power-automate/getting-started#create-your-first-flow
-          itemType: overview
+          itemType: how-to-guide
         - text: Power Automate FAQs
           url: /power-automate/frequently-asked-questions
           itemType: reference      
