@@ -120,6 +120,18 @@ conceptualContent:
         url: /power-automate/learning-catalog/learning-catalog
         text: More
 
+    - title: Support and licensing
+      links:
+        - text: Troubleshoot a flow
+          url: /power-automate/fix-flow-failures
+          itemType: how-to-guide
+        - text: Power Automate community
+          url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
+          itemType: reference     
+        - text: Power Automate licensing
+          url: /power-automate/billing-questions
+          itemType: reference       
+
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
