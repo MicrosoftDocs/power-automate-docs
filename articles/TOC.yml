@@ -20,7 +20,7 @@
     href: whats-new.md
   - name: Learning Catalog
     items:
-    - name: Learning Catalog
+    - name: Overview
       href: learning-catalog/learning-catalog.md
     - name: App Maker
       href: learning-catalog/learning-catalog-app-maker.md
@@ -94,7 +94,7 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
-- name: Microsoft Teams Flows
+- name: Microsoft Teams flows
   items:
   - name: Trigger a flow from a Teams message
     href: trigger-flow-teams-message.md

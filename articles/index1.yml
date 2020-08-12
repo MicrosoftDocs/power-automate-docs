@@ -1,0 +1,162 @@
+### YamlMime:Hub
+
+title: Microsoft Power Automate documentation # < 60 chars
+summary: Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: power-platform #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: MSFTMAN #Required; your GitHub user alias, with correct capitalization.
+  ms.author: deonhe #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/30/2020 #Required; mm/dd/yyyy format.
+  hide_bc: false
+
+
+highlightedContent:
+
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
+
+  items:
+    # Card
+    - title: What is Power Automate?
+      itemType: overview
+      url: getting-started.md
+
+    # Card
+    - title: What's new in Power Automate?
+      itemType: whats-new
+      url: whats-new.md
+
+    # Card
+    - title: "Power Automate videos"
+      itemType: video
+      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+
+    # Card
+    - title: Power Automate training on Microsoft Learn
+      itemType: learn
+      url: https://docs.microsoft.com/learn/browse/?products=power-automate
+
+# conceptualContent section
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+conceptualContent:  
+  items:
+    - title: Get started with Power Automate
+      links:
+        - text: Sign up for free
+          url: /power-automate/sign-up-sign-in
+          itemType: get-started        
+        - text: Create your first flow
+          url: /power-automate/getting-started#create-your-first-flow
+          itemType: how-to-guide
+        - text: Power Automate FAQs
+          url: /power-automate/frequently-asked-questions
+          itemType: reference      
+    
+    - title: Create flows
+      links:
+        - text: Automated flows
+          url: /power-automate/get-started-logic-flow
+          itemType: overview
+        - text: Button flows
+          url: /power-automate/introduction-to-button-flows
+          itemType: overview
+        - text: Approval flows
+          url: /power-automate/modern-approvals
+          itemType: overview 
+        - text: Business process flows
+          url: /power-automate/business-process-flows-overview
+          itemType: overview            
+    
+    - title: Use UI flows for RPA
+      links:
+        - text: What is UI flows?
+          url: /power-automate/ui-flows/overview
+          itemType: overview
+        - text: Set up UI flows
+          url: /power-automate/ui-flows/setup
+          itemType: how-to-guide
+        - text: Use WinAutomation with UI flows
+          url: /power-automate/ui-flows/create-processes
+          itemType: concept
+    
+    - title: Use solutions for ALM
+      links:
+        - text: Use solutions to distribute flows
+          url: /power-automate/overview-solution-flows
+          itemType: overview
+        - text: Create a flow in a solution
+          url: /power-automate/create-flow-solution
+          itemType: overview
+        - text: Implement healthy ALM using solutions
+          url: /power-platform/alm/overview-alm
+          itemType: overview           
+
+    - title: Do more with your flows
+      links:
+        - text: Use AI Builder for AI-infused flows
+          url: /power-automate/use-ai-builder
+          itemType: overview
+        - text: Use adaptive cards
+          url: /power-automate/overview-adaptive-cards
+          itemType: how-to-guide
+        - text: Use data operations
+          url: /power-automate/data-operations
+          itemType: how-to-guide     
+         
+    - title: Learning catalog
+      links:
+        - text: App maker
+          url: /power-automate/learning-catalog/learning-catalog-app-maker
+          itemType: reference
+        - text: Administrator
+          url: /power-automate/learning-catalog/learning-catalog-administrator
+          itemType: reference     
+      footerLink:
+        url: /power-automate/learning-catalog/learning-catalog
+        text: More
+
+    - title: Support and licensing
+      links:
+        - text: Troubleshoot a flow
+          url: /power-automate/fix-flow-failures
+          itemType: how-to-guide
+        - text: Power Automate community
+          url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
+          itemType: reference     
+        - text: Power Automate licensing
+          url: /power-automate/billing-questions
+          itemType: reference       
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Other Power Platform products # < 60 chars (optional)
+    - items:
+        # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+          url: https://docs.microsoft.com/powerapps
+        # Card
+        - title: Power BI
+          summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
+          url: https://docs.microsoft.com/power-bi
+        - title: Power Virtual Agents
+          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
+          url: https://docs.microsoft.com/power-virtual-agents
+    - title: See also
+      items:
+      # Card
+      - title: Dynamics 365
+        summary: "The next generation of CRM and ERP applications"
+        url: https://docs.microsoft.com/dynamics365/
+      # Card
+      - title: Microsoft Azure
+        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        url: https://docs.microsoft.com/azure
