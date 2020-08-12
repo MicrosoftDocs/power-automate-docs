@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/20/2020
+ms.date: 08/12/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -33,6 +33,8 @@ For information about the new features, fixes, and improvements that were releas
 > [!NOTE]
 > Releases are rolled out over several days. New or updated functionality might not appear immediately.
 
-## Release plan
+## Release plans
 
-Get familiar with upcoming features and plan your rollouts by reading the [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
+Get familiar with upcoming features and plan your rollouts by reading:
+- [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
+- [2020 release wave 2 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)
