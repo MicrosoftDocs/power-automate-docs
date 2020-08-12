@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/09/2018
+ms.date: 08/07/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -34,7 +34,21 @@ In this walkthrough, we use Power Automate to create a flow that automates a par
 
 The SharePoint Online list you create must include the following columns:
 
-   ![SharePoint list columns](./media/parallel-modern-approvals/sharepoint-columns.png)
+| Title                   | Single line of text    |
+|-------------------------|------------------------|
+| Modified                | Date and Time          |
+| Created                 | Date and Time          |
+| Employee comments       | Single line Of text    |
+| Direct Manager comments | Multiple lines Of text |
+| Sales team comments     | Multiple lines of text |
+| HR team comments        | Multiple lines of text |
+| Direct Manager approved | Yes/No                 |
+| Sales team approved     | Yes/No                 |
+| HR team approved        | Yes/No                 |
+| Vacation start date     | Date and Time          |
+| vacation End date       | Date and Time          |
+| Created By              | Person or Group        |
+| Modified By             | Person or Group        |
 
 Make note of the name and URL of the SharePoint Online list. We use these items later to configure the **SharePoint - When an item is created** trigger.
 
