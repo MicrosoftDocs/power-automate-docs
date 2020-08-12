@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/07/2020
+ms.date: 08/14/2020
 search.app: 
   - Flow
   - Powerplatform
@@ -48,7 +48,7 @@ The following table shows which personal data is automatically deleted and which
 
 For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
-* **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Automate Admin Center](https://admin.flow.microsoft.com/)
+* **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
@@ -88,7 +88,7 @@ The steps below describe how administrative functions exist to serve delete requ
 
 These steps copy existing flows for a departing user. If you assign new ownership to the copies, these flows can continue to support existing business processes. Copying these flows is important to delete personal identifier linkages to the departing user and new connections must be established for the flow to connect with other APIs and SaaS applications.
 
-1. Sign into the [Power Automate admin center](https://admin.flow.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
 
     ![View environments](./media/gdpr-dsr-delete/view-environments.png)
 
@@ -266,7 +266,7 @@ As an admin you have two decisions to make when processing a DSR delete request 
 
 ## Give access to a user’s environments from the Power Automate Admin Center
 
-An admin can grant Admin access to an environment created by a specific user from the [Power Automate Admin Center](https://admin.flow.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## Delete the user’s permissions to all other environments
 
