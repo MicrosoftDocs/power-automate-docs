@@ -163,6 +163,7 @@ Perform the following steps to update SharePoint when decisions are made.
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
+
     ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
 Repeat the preceding steps on the **Start an approval 2** and **Start an approval 3** branches.
