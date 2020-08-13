@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2017
+ms.date: 08/13/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,32 +28,47 @@ Some workflows require pre-approval before the final approver is required to sig
 In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
 
 > [!NOTE]
-> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows.
-
+> SharePoint is used here as an example, but it's not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows.
 
 ## Detailed steps in the flow
+
 The flow:
 
 1. Starts when an employee creates vacation request in a [SharePoint Online list](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).
-2. Adds the vacation request to the approval center and then emails the request to the pre-approver.
-3. Emails the pre-approval decision to the employee.
-4. Updates the SharePoint Online list with the pre-approver's decision and comments.
-   
+1. Adds the vacation request to the approval center and then emails the request to the pre-approver.
+1. Emails the pre-approval decision to the employee.
+1. Updates the SharePoint Online list with the pre-approver's decision and comments.
    Note: If the request is pre-approved, the flow continues with these steps:
-5. Sends the request to the final approver.
-6. Emails the final decision to the employee.
-7. Updates the SharePoint list with the final decision.
+1. Sends the request to the final approver.
+1. Emails the final decision to the employee.
+1. Updates the SharePoint list with the final decision.
 
 This image summarizes the preceding steps:
 
-   ![visio diagram of the flow](./media/sequential-modern-approvals/visio-overview.png)
+   ![Diagram of sequential approval flow](./media/sequential-modern-approvals/visio-overview.png)
 
 ## Prerequisites
+
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
 For the purposes of this walkthrough, the SharePoint Online list that you create must include the following columns:
 
-   ![SharePoint list columns](./media/sequential-modern-approvals/sharepoint-columns.png)
+The SharePoint Online list you create must include the following columns:
+
+| Title                   | Single line of text    |
+|-------------------------|------------------------|
+| Modified                | Date and time          |
+| Created                 | Date and time          |
+| Vacation start date     | Date and time          |
+| Vacation end date       | Date and time          |
+| Comments                | Single line Of text    |
+| Approved                | Yes/No                 |
+| Manager comments        | Multiple lines Of text |
+| Modified                | Date and time          |
+| Created                 | Date and time          |
+| Pre-approved            | Yes/No                 |
+| Created By              | Person or group        |
+| Modified By             | Person or group        |
 
 Make note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
 

@@ -68,17 +68,17 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 ## Name and save your flow
 
-1. Provide a name for your flow, and then select the **Save** icon to save the work we've done so far.
+Provide a name for your flow, and then select **Save** to save the work we've done so far.
 
-> [!NOTE]
-> Select the **Save** icon periodically to save the changes to your flow.
+   > [!NOTE]
+   > Select the **Save** icon periodically to save the changes to your flow.
 
 ## Add an approval action for immediate manager
 
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-> [!IMPORTANT]
-> This action sends the vacation request to the email address in the **Assigned To** box, so insert the **Email** token from the **Get manager (v2)** list.
+   > [!IMPORTANT]
+   > This action sends the vacation request to the email address in the **Assigned To** box, so insert the **Email** token from the **Get manager (v2)** list.
 
 ## Insert a parallel branch approval action for the sales team
 
@@ -89,17 +89,15 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
     ![get manager config](./media/parallel-modern-approvals/add-parallel-branch.png)
 5. Search for, select, and then configure a **Start and wait for an approval** action that sends the vacation request to the sales team. See the [steps used to Add an approval action for immediate manager](parallel-modern-approvals.md#add-an-approval-action-for-immediate-manager) if you're not sure how to add the **Start and wait for an approval** action.
 
-> [!IMPORTANT]
-> Use the sales team's email address in the **Assigned To** box of the **Start an approval 2** action.
+   > [!IMPORTANT]
+   > Use the sales team's email address in the **Assigned To** box of the **Start an approval 2** action.
 
 ## Insert a parallel branch approval action for the human resources team
 
-1. Repeat the steps to [insert a parallel branch for the sales team](parallel-modern-approvals.md#insert-a-parallel-branch-approval-action-for-the-sales-team) to add, and then configure a **Start an approval** action to send vacation requests to human resources.
+Repeat the steps to [insert a parallel branch for the sales team](parallel-modern-approvals.md#insert-a-parallel-branch-approval-action-for-the-sales-team) to add, and then configure a **Start an approval** action to send vacation requests to human resources.
 
 > [!IMPORTANT]
 > Use the human resources team's email address in the **Assigned To** box of the **Start an approval 3** action.
-> 
-> 
 
 If you've followed along, your flow should resemble this example:
 
@@ -180,4 +178,3 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 ## Learn more about modern approvals
 
 [Introduction to modern approvals](modern-approvals.md)
-
