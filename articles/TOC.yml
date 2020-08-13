@@ -165,6 +165,8 @@
     items: 
     - name: Introduction to Power Automate Desktop
       href: ./ui-flows/desktop/overview.md
+    - name: Process designer
+      href: ./ui-flows/desktop/process-designer.md
 - name: Solutions
   items:
   - name: Overview
