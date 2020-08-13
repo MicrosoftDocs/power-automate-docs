@@ -107,7 +107,7 @@ If you've followed along, your flow should resemble this example:
 
 After you've added actions to parallel branches, there are two ways to add steps to your flow:
 
-* **Add a step within a branch:** Use the  *Insert a new step* (**+**) button above or below the card.  This button that appears when you select a branch or hover over the connector arrow). This button adds a step to that **specific branch**. This button is shown here:
+* **Insert a step within a branch:** Use the  *Insert a new step* (**+**) button above or below the card.  This button that appears when you select a branch or hover over the connector arrow). This button adds a step to that **specific branch**. This button is shown here:
   ![Insert a new step](./media/parallel-modern-approvals/Insert-new-step.png "Use the + sign button to insert a step within the branch")
 
 * **Add a step to the flow:** Use the larger **+New step** button at the bottom of the entire workflow. Steps you add with this button run after all branches complete.  This button is shown here:
