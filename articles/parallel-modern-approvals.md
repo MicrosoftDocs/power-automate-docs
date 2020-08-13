@@ -110,7 +110,7 @@ After you've added actions to parallel branches, there are two ways to add steps
 * **Insert a step within a branch:** Use the  *Insert a new step* (**+**) button above or below the card.  This button that appears when you select a branch or hover over the connector arrow). This button adds a step to that **specific branch**. This button is shown here:
   ![Insert a new step](./media/parallel-modern-approvals/Insert-new-step.png "Use the + sign button to insert a step within the branch")
 
-* **Add a step to the flow:** Use the larger **+New step** button at the bottom of the entire workflow. Steps you add with this button run after all branches complete.  This button is shown here:
+* **Add a step to the flow:** Use the larger **+New step** button at the bottom of the entire workflow. Steps you add with this button run after all previous branches complete.  This button is shown here:
   ![Add a new step](./media/parallel-modern-approvals/new-step.png "Use the +New Step button to add a step to the entire flow")
 
 In the following sections, we add steps within each branch:
@@ -150,7 +150,7 @@ Perform the following steps on the **IF YES** side of the **Condition** branch.
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure pre-approved email template](includes/media/parallel-modern-approvals/yes-email-config.png)
+    ![configure pre-approved email template](includes/media/parallel-modern-approvals/yes-email-config.png)
 
 To send an email when a request is rejected, use the **IF NO** side of the **Condition** branch, and then repeat the preceding steps to add a template for the rejection email.
 
@@ -164,7 +164,7 @@ Perform the following steps to update SharePoint when decisions are made.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-   ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
+    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
 Repeat the preceding steps on the **Start an approval 2** and **Start an approval 3** branches.
 
@@ -173,7 +173,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 1. Select **+New step**
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
-![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
+    ![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
 
 ## Learn more about modern approvals
 
