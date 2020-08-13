@@ -173,8 +173,6 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 ## Complete the flow
 
 1. Select **New step** > **Add an action**
-
-    ![update item configuration](includes/media/parallel-modern-approvals/add-an-action-2-step.png)
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
    ![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
