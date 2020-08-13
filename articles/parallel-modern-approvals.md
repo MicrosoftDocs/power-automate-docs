@@ -163,8 +163,7 @@ Perform the following steps to update SharePoint when decisions are made.
    Note: Be sure perform these steps on both the **IF YES** and the **IF NO** sides of the branch.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
-
-       ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
+    ![update item configuration](./media/parallel-modern-approvals/configure-update-item.png)
 
 Repeat the preceding steps on the **Start an approval 2** and **Start an approval 3** branches.
 
@@ -173,7 +172,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 1. Select **+New step**
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
-   ![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
+![update item configuration](./media/parallel-modern-approvals/final-email-card.png)
 
 ## Learn more about modern approvals
 
