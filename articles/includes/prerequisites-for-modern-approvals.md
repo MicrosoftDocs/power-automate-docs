@@ -3,7 +3,7 @@
 * Office 365 Outlook and Office 365 Users account.
 
 > [!NOTE]
-> While we use SharePoint Online and Office 365 Outlook in this walk-through, you can use other services such as Zendesk, Salesforce, or Gmail.
+> While we use SharePoint Online and Office 365 Outlook in this walk-through, you can use other services such as Zendesk, Salesforce, or Gmail. If you are using SharePoint 2010, see [SharePoint 2010 workflow retirement](https://go.microsoft.com/fwlink/?linkid=2138686)
 > 
 > 
 

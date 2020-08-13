@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -31,23 +31,24 @@ In this walkthrough, we use Power Automate to create a flow that automates a par
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
+
 The SharePoint Online list you create must include the following columns:
 
 | Title                   | Single line of text    |
 |-------------------------|------------------------|
-| Modified                | Date and Time          |
-| Created                 | Date and Time          |
+| Modified                | Date and time          |
+| Created                 | Date and time          |
 | Employee comments       | Single line Of text    |
-| Direct Manager comments | Multiple lines Of text |
+| Direct manager comments | Multiple lines Of text |
 | Sales team comments     | Multiple lines of text |
 | HR team comments        | Multiple lines of text |
-| Direct Manager approved | Yes/No                 |
+| Direct manager approved | Yes/No                 |
 | Sales team approved     | Yes/No                 |
 | HR team approved        | Yes/No                 |
-| Vacation start date     | Date and Time          |
-| vacation End date       | Date and Time          |
-| Created By              | Person or Group        |
-| Modified By             | Person or Group        |
+| Vacation start date     | Date and time          |
+| Vacation end date       | Date and time          |
+| Created By              | Person or group        |
+| Modified By             | Person or group        |
 
 Make note of the name and URL of the SharePoint Online list. We use these items later to configure the **SharePoint - When an item is created** trigger.
 
@@ -106,15 +107,15 @@ If you've followed along, your flow should resemble this example:
 
 ## Options after adding parallel branches
 
-After you've added actions to parallel branches, you have two options for adding more steps to your flow:
+After you've added actions to parallel branches, there are two ways to add steps to your flow:
 
-1. Use the  *Insert a new step* (**+**) button above or below the card.  This button that appears when you select a branch or hover over the connector arrow). This button adds a step to that **specific branch**. This button is shown here:
+* **Add a step within a branch:** Use the  *Insert a new step* (**+**) button above or below the card.  This button that appears when you select a branch or hover over the connector arrow). This button adds a step to that **specific branch**. This button is shown here:
   ![Insert a new step](./media/parallel-modern-approvals/Insert-new-step.png "Use the + sign button to insert a step within the branch")
 
-1. Use the larger **+New step** button at the bottom of the entire workflow. Steps you add with this button run after all branches complete.  This button is shown here:
+* **Add a step to the flow:** Use the larger **+New step** button at the bottom of the entire workflow. Steps you add with this button run after all branches complete.  This button is shown here:
   ![Add a new step](./media/parallel-modern-approvals/new-step.png "Use the +New Step button to add a step to the entire flow")
 
-In the following sections, we use the lower **+New step** button to perform these steps on each branch:
+In the following sections, we add steps within each branch:
 
 * Add a condition that checks if the vacation request was approved or rejected.
 * Send an email that informs the employee of the decision.
@@ -127,7 +128,7 @@ Let's continue:
 ## Add a condition to each branch
 
 1. Select the first **Start and wait for an approval** branch.
-1. Select the small *Insert a new step* (**+**) button (the circular plus button that appears when you hover over the connector arrow).
+1. Select the small *Insert a new step* (**+**) button below the card (the circular plus button that appears when you hover over the connector arrow).
 1. Select **Add an action** from the menu that appears, and then select **Condition** in the list of actions.
 1. Select the first box on the **Condition** card, and then select the **Response** token from the **Start and wait for an approval** category in the dynamic content list.
 
