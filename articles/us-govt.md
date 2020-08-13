@@ -7,7 +7,7 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 06/11/2020
+ms.date: 08/11/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -168,7 +168,7 @@ You use a different set of URLs to access Power Automate US Government environme
 Commercial version | US Government version
 ------ | --------
 [https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us) and [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us)
-[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) and [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
+[https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) | [https://gov.admin.flow.microsoft.us (GCC)](https://gov.admin.flow.microsoft.us) and [https://high.admin.flow.microsoft.us (GCC High)](https://high.admin.flow.microsoft.us)
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors) and [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors)
 
 
