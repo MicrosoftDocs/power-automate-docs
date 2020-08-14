@@ -27,8 +27,6 @@ In a parallel approval workflow, multiple persons are required to approve items 
 
 In this walkthrough, we use Power Automate to create a flow that automates a parallel approval workflow. This flow automates an employee vacation request process that requires approval from all persons (or teams) that the employee supports regularly. Employees use a [SharePoint list](https://support.office.com/article/Introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7) to request vacation. Vacation approvals are required from the employee's direct manager, the Sales team, and the Human Resources team. Each vacation request is routed to each approver for a decision. The flow sends email with status changes and then updates SharePoint with the decisions.
 
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
-
 ## Prerequisites
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
