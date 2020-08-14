@@ -150,7 +150,7 @@ Perform the following steps on the **IF YES** side of the **Condition** branch.
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-    ![configure pre-approved email template](includes/media/parallel-modern-approvals/yes-email-config.png)
+![configure pre-approved email template](includes/media/parallel-modern-approvals/yes-email-config.png)
 
 To send an email when a request is rejected, use the **IF NO** side of the **Condition** branch, and then repeat the preceding steps to add a template for the rejection email.
 
