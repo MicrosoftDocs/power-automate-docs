@@ -180,3 +180,11 @@ Share a copy allows you to share the definition of a flow with another user as a
    >As a recipient you can also access the flow from the Shared with me section under templates
 
    ![Shared with me](./media/create-team-flows/send-a-copy6.png)
+
+   
+## FAQ
+
+### What happens if the user who created a shared flow leaves the organization?
+As long as the shared flow still has an active owner the flow will continue to run. 
+
+Note that if the flow uses any active or embedded connections that belongs to the user who has left the organizations those specific actions might fail causing the flow to fail. In order to fix this, follow the steps mentioned in the [update a connection](./create-team-flows.md#update-connections) section to change the connection of any trigger or action.
