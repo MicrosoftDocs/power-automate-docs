@@ -41,6 +41,8 @@ The flow performs the following steps:
 1. Sends an email with the approver's decision to the person who requested vacation.
 1. Updates the SharePoint Online list with the approver's decision comments.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 ## Prerequisites
 
 To complete this walk-through, you must have access to:
@@ -63,8 +65,6 @@ Create these columns in your SharePoint Online list:
 | Modified By | Person or Group |
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
-
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create your flow from the blank template
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
