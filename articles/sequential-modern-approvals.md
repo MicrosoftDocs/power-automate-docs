@@ -28,7 +28,7 @@ Some workflows require pre-approval before the final approver is required to sig
 In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
 
 > [!NOTE]
-> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows.
+> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows. If you are using SharePoint 2010, see [SharePoint 2010 workflow retirement](https://go.microsoft.com/fwlink/?linkid=2138686)
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
@@ -86,18 +86,8 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 ## Get the manager for the person who created the vacation request
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
-1. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
-   
-    ![save flow](./media/sequential-modern-approvals/save.png)
-   
    > [!NOTE]
-   > Select **Update flow** from the top of the screen periodically to save the changes to your flow.
-   > 
-   > 
-   
-    ![select update action](./media/sequential-modern-approvals/update.png)
-
-After each save operation, select **Edit flow** from the top of the screen, and then continue making changes.
+   > It's a good idea to periodically save changes to your flow as you go.
 
 ## Add an approval action for pre-approvals
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
