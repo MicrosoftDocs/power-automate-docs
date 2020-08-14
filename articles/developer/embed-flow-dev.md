@@ -54,7 +54,6 @@ To start, add this code to show the Power Automate templates on your website:
 | category |Filters to the given template category. | 
 | parameters.{name} |Additional context to pass into the flow. |
 
-
 If the destination parameter is `new`, the Power Automate designer opens when users select a template. Users can then create a flow in the designer. See the next section if you want to have the full experience from the widget.
 
 ### Passing additional parameters to the flow template
