@@ -27,14 +27,15 @@ search.audienceType:
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
-
 Create a flow that, if you create an item in SharePoint, sends approval email and then notifies you whether the item was approved or rejected. To follow this tutorial exactly, create a simple SharePoint list as a trigger action, but you can use another data source such as Dropbox or OneDrive.
 
-**Prerequisites**
+## Prerequisites
 
 * Create a simple SharePoint list that's named **Project Tracker**, add a column named **Title**, and then add a Person or Group column named **Assigned To**.
 
    ![Image of Project Tracker SPO list](./media/wait-for-approvals/project-tracker.png)
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Add an event to trigger the flow
 

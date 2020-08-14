@@ -30,6 +30,7 @@ In this walkthrough, we create a sequential approval flow that manages employee 
 > [!NOTE]
 > SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Detailed steps in the flow
 The flow:

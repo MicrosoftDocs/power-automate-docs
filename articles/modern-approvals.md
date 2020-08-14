@@ -64,6 +64,8 @@ Create these columns in your SharePoint Online list:
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 ## Create your flow from the blank template
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 

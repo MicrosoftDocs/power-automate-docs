@@ -27,10 +27,10 @@ This walkthrough shows you how to create a flow that monitors a source for new o
 
 While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [380 connectors](https://flow.microsoft.com/connectors/) that Power Automate supports.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 > [!IMPORTANT]
 > Changes you make in the destination aren't copied to the source because two-way syncs aren't supported. If you attempt to set up a two-way sync, you'll create an infinite loop where changes are sent endlessly between the source and destination.
-> 
-> 
 
 ## Prerequisites
 * Access to a data source and a destination. This walkthrough doesn’t include steps to create the source and destination.
