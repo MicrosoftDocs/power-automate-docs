@@ -41,6 +41,8 @@ The flow performs the following steps:
 1. Sends an email with the approver's decision to the person who requested vacation.
 1. Updates the SharePoint Online list with the approver's decision comments.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 ## Prerequisites
 
 To complete this walk-through, you must have access to:
