@@ -44,6 +44,8 @@ Here are the requirements for successfully performing the steps in this walk-thr
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * Connections to Office 365 Outlook and the push notification service.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 ## Create a flow
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **New** > **Scheduled-from blank**

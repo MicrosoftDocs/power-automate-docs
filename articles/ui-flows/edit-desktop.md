@@ -84,7 +84,35 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Select **Record** from the recorder control.
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
-1. Select **Save**, and then test your UI flow.
+1. Select **Save**, and then test your UI flow.\
+
+## Provide command line arguments at launch
+
+After you record your UI flows actions, you can provide command line arguments for the apps that your UI flows launch. 
+
+Follow these steps to add command line arguments to the apps that your UI flow launches:
+
+1.	Record a UI flow with the desktop recorder. 
+1.	Select **Done** on the recorder, select the application launch action to expand it.
+   
+    The screenshot uses Notepad++ as an example. 
+
+    ![Displays the launch application step](../media/edit-desktop/cmd-line-app-launch-step.png "Displays the launch application step")
+
+
+1. Select **Show advanced options**.
+
+   ![Select the link to reveal the advanced options](../media/edit-desktop/cmd-args-advanced.png "Select the link to reveal the advanced options")
+
+1. Provide the command line arguments here:
+
+   ![Displays the text field for the command line arguments](../media/edit-desktop/cmd-args.png "[Displays the text field for the command line arguments")
+
+1.	You can provide any valid command line argument for your application.
+
+   >[!Important]
+   >Do not pass sensitive text like passwords through command line arguments.
+
 
 ## Add a variable
 

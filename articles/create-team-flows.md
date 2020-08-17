@@ -95,15 +95,18 @@ Follow these steps to add more owners to a flow.
 1. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow.
 
 
-### Update connection owner
+### Update connections
 
-You might need to change the owner of a connection in a flow if you remove the existing owner. Follow these steps to switch the owner of a flow:
+You might need to change the owner of a connection in a flow if you remove the existing owner or if you just want to use a different account to sign in to an action/trigger. Follow these steps to edit the connections of a trigger or action of a shared flow:
 
-1. Select **Data** from the left side panel.
-1. Select **Connections**.
-1. Search for the connection you want to update, and then select it.
-1. Select **...** (more commands) on the connection you selected and then select **Switch account**.
-1. Follow the steps to use a different account for the connection.
+1. Navigate to the flow that you want to modify
+2. Click on Edit to edit the flow
+![Edit flow](./media/create-team-flows/Edit-flow-details.png)
+3. Click on the overflow menu for the step you want to edit the connection for the trigger or action you want to edit
+4. If you have a connection already simply choose that, if not just click on "Add new connection" to create a new connection
+![Add a new connection](./media/create-team-flows/edit-connection.png)
+5. Click sign in to create your new connection and you're all set!
+![Sign in](./media/create-team-flows/sign-in.png)
 
 ### Embedded and other connections
 
@@ -114,7 +117,7 @@ Connections used in a flow fall into two categories:
 
 If you stop using a connection in a flow, that connection appears in the **Other** connections list, where it remains until an owner includes it in the flow again.
 
-Follow the steps to [update a connection owner](./create-team-flows.md#update-connection-owner) to make changes to embedded connections.
+Follow the steps to [update a connection](./create-team-flows.md#update-connections) to make changes to embedded connections.
 
 The list of connections appears under the list of owners in a flow's properties:
 
@@ -177,3 +180,12 @@ Share a copy allows you to share the definition of a flow with another user as a
    >As a recipient you can also access the flow from the Shared with me section under templates
 
    ![Shared with me](./media/create-team-flows/send-a-copy6.png)
+
+## FAQ
+
+### What happens if the user who created a shared flow leaves the organization?
+As long as the shared flow still has an active owner the flow will continue to run. 
+
+>[!NOTE]
+>If the flow uses any active or embedded connections that belongs to the user who has left the organizations those specific actions might fail. To fix this, follow the steps mentioned in the [update a connection](./create-team-flows.md#update-connections) section to change the connection of any trigger or action.
+

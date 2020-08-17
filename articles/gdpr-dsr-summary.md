@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/24/2018
+ms.date: 08/14/2020
 search.app: 
   - Flow
   - Powerplatform
@@ -36,7 +36,7 @@ A user needs to have an active Azure Active Directory account with a [Power Auto
 
 ### Administrators
 
-You can perform the operations that require admin privileges, outlined in this article if you sign into the [Power Automate Admin center](https://admin.flow.microsoft.com/)  or [Power Apps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
+You can perform the operations that require admin privileges, outlined in this article if you sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)  or [Power Apps Admin PowerShell](https://go.microsoft.com/fwlink/?linkid=871804) with an account that has both of these permissions:
 
 - A paid or trial license for Power Apps Plan 2.
 

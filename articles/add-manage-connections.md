@@ -38,7 +38,7 @@ You can create a connection in multiple scenarios, such as these:
 * Creating a [flow from blank](get-started-logic-flow.md) or updating an existing flow
 * Creating a connection in the [Power Automate website][1] directly
 
-This topic shows you how to manage connections in the [Power Automate website][1].
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Add a connection
 1. In the [Power Automate website][1], sign in with your work or organization account.
