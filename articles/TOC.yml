@@ -167,6 +167,8 @@
       href: ./ui-flows/desktop/overview.md
     - name: Process designer
       href: ./ui-flows/desktop/process-designer.md
+    - name: Console
+      href: ./ui-flows/desktop/console.md
 - name: Solutions
   items:
   - name: Overview
