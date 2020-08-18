@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/18/2020
+ms.date: 08/18/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -33,9 +33,7 @@ Power Automate is a public cloud service to help individuals and teams to set up
 
 ### How can I sign up for Power Automate?
 
-There are two possible ways for individuals to sign up for Power Automate through the web portal:
-
-Just go to [flow.microsoft.com](https://flow.microsoft.com), select **Try free** on the top right-side of the screen, and then provide your email address to complete the sign-up process.
+Just go to [flow.microsoft.com](https://flow.microsoft.com), select **Try free** on the top right-side of the screen, and then provide your information to complete the sign-up process.
 
 [Sign up for Power Automate](sign-up-sign-in.md) includes more details.
 
