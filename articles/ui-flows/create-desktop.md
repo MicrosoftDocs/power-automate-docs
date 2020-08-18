@@ -88,8 +88,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select the first number, select **+**, select the second number, and then select **=**.
 
     ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
-    
-     > [!TIP] 
+
+     > [!TIP]
      > You will improve automation reliability by:
      > - Opening and maximizing the apps you want to record before *before* you start recording
      > - Starting your recording with a click the app title bar to bring it in focus.
@@ -116,7 +116,6 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **Save and exit** to save your UI flow.
 
-
 ## Known issues and solutions
 
 - Screenshots are currently lost after saving. We are working on a fix.
@@ -138,49 +137,49 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
     Please instead refer to [Create a Web UI flow](create-web.md) to
     automate websites.
 
--   Java applications.
+- Java applications.
 
--   Click once applications.
+- Click once applications.
 
--   Applications with a Web view such as Electron applications.
+- Applications with a Web view such as Electron applications.
 
--   Microsoft Office 2016 and earlier. 
+- Microsoft Office 2016 and earlier. 
 
--   Microsoft Office online.
+- Microsoft Office online.
 
 ### Unsupported configurations
 
--   Multi-screen.
+- Multi-screen.
 
--   Recording through a virtual machine client (Remote Desktop, Citrix, etc.).
+- Recording through a virtual machine client (Remote Desktop, Citrix, etc.).
 
--   Multiple instances of an application where the main window titles are identical.
+- Multiple instances of an application where the main window titles are identical.
 
--   Application windows with identical titles, for example, Microsoft Outlook with multiple **Untitled – Message (HTML)** new mail windows active at the same time.
+- Application windows with identical titles, for example, Microsoft Outlook with multiple **Untitled – Message (HTML)** new mail windows active at the same time.
 
--   Concurrent recording sessions on a given device.
+- Concurrent recording sessions on a given device.
 
--   Concurrent playback sessions on a given device. In case of simultaneous UI flow runs, the first one takes precedence and the subsequent ones fail until the first one completes.
+- Concurrent playback sessions on a given device. In case of simultaneous UI flow runs, the first one takes precedence and the subsequent ones fail until the first one completes.
 
--   Playback on a device with a different keyboard layout than the device on which it was recorded.
+- Playback on a device with a different keyboard layout than the device on which it was recorded.
 
--   Recording on a device or Windows session while the browser with Microsoft Flow is on a different device or Windows session.
+- Recording on a device or Windows session while the browser with Power Automate is on a different device or Windows session.
 
 ### Unsupported action types and behaviors
 
 The following actions will not be recorded:
 
--   Double click.
+- Double click.
 
--   Mouse move.
+- Mouse move.
 
--   Mouse hover.
+- Mouse hover.
 
--   Click and drag.
+- Click and drag.
 
--   Touch or pen input.
+- Touch or pen input.
 
--   Open app before recording.
+- Open app before recording.
 
 
 ## Unreliable behaviors and workarounds for Microsoft Office (desktop)
