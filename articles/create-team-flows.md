@@ -26,7 +26,7 @@ search.audienceType:
 Share a flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a flow in Power Automate:
 
 1. Add an owner to a flow.
-2. Share a flow with run only privelages.
+2. Share a flow with run only privileges.
 3. Share a copy of a flow.
 
 ## Prerequisites
