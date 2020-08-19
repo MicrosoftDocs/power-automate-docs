@@ -26,7 +26,7 @@ search.audienceType:
 Share a flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a flow in Power Automate:
 
 1. Add an owner to a flow.
-2. Share a flow with run only privelages.
+2. Share a flow with run only privileges.
 3. Share a copy of a flow.
 
 ## Prerequisites
@@ -133,7 +133,7 @@ You can add SharePoint lists as co-owners to a flow so that everyone who has edi
 
 ## Share a flow with run-only permissions
 
-Instant flows (i.e. flows that use a manual trigger such as Button, For a selected item etc) can be shared using just run only permissions. Any user who's added as a run only user will not have access to edit or modify the flow in any way. They will only have permissions to trigger the flow. 
+Instant flows (i.e. flows that use a manual trigger such as Button, For a selected item etc.) can be shared using just run only permissions. Any user who's added as a run only user will not have access to edit or modify the flow in any way. They will only have permissions to trigger the flow. 
 
 ### Add a run only user
 
