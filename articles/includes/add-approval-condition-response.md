@@ -1,6 +1,6 @@
 1. Select **+New step**, and then select **Condition** in the list of actions.
-1. Select the **Object Name** box, and then enter **response** into the search box on the **Add dynamic content from the apps and services used in this flow** card.
-1. On the **Condition** screen, select the first **Choose a value** field to display a list of dynamic content options. Then, select **Responses Approver response**
+1. in the **Condition** card, and then enter **response** into the search box on the **Add dynamic content from the apps and services used in this flow** card.
+1. On the **Condition** screen, select the first **Choose a value** field to display a list of dynamic content options. Then, select **Responses Approver response**.
 
     ![select response token](media/modern-approvals/search-for-response.png)
 1. Select the **Value** box, and then enter **Approve** into the box.
@@ -14,4 +14,4 @@
     * Relationship: *Is equal to*
     * Value: *Approve*
 
-    ![](media/modern-approvals/response-condition-test.png)
+    ![View of the condition card](media/modern-approvals/response-condition-test.png "View of the condition card")
