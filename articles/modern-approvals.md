@@ -129,12 +129,10 @@ Follow these steps to send an email if the vacation request is approved:
 
    > [!NOTE]
    > **Site Address**, **List Name**, **Id**, and **Title** are required.
-   >
-   >
 
-![update item card](./media/modern-approvals/configure-update-item-no.png)
+   ![update item card](./media/modern-approvals/configure-update-item-no.png)
 
-1. Select **Save** to save the work we've done.
+4. Select **Save** to save the work we've done.
 
 If you've followed along, your flow should resemble this screenshot:
 
