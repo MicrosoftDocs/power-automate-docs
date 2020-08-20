@@ -37,7 +37,7 @@ Just go to [flow.microsoft.com](https://flow.microsoft.com), select **Try free**
 
 [Sign up for Power Automate](sign-up-sign-in.md) includes more details.
 
-### What is the Power Automate Free License?
+### What is the Power Automate free license?
 
 The Power Automate Free license is used only for tracking purposes. Enabling or disabling it has no effect on a user's ability to create flows. If you disable the Power Automate Free license, it becomes enabled again when a user logs in. This is the expected behavior.
 
@@ -77,23 +77,24 @@ If a user was assigned a Power Automate license,  you can take the following ste
 
 1. Go to the [Office 365 Admin Portal](https://admin.microsoft.com/).
 1. In the left navigation bar, select **Users** > **Active Users**.
-1. Find the user you want to remove the license for, and then select their name.
+1. Find the user for whom you want to remove the license, and then select their name.
 1. On the user details pane, select the **Licenses and Apps** tab, and then uncheck the license for Power Automate. 
-1. At the bottom of the pane, select **Save changes**
+1. At the bottom of the pane, select **Save changes**.
 
 Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
 
 Removing of the Power Automate license or service for a user in your organization will result in the removal of the Power Automate icon from the following locations for that user:
 
-Note that this will only remove the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
+>[!NOTE]
+>This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
 
 Any person can try out Power Automate Free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
 
-If at least one user in your tenant has signed-up for a **Microsoft Power Automate Free** license, you will see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization
+If at least one user in your tenant has signed-up for a **Microsoft Power Automate Free** license, you will see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization.
 
-You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but please note that these are trial licenses for Power Automate, and they will expire after 90 days of being assigned to a user.
+You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but note that these are trial licenses for Power Automate, and they will expire after 90 days of being assigned to a user.
 
 ### Is this free? Will I be charged for these licenses?
 
@@ -127,23 +128,23 @@ If a new tenant was created by Power Automate, then you can claim and manage tha
 1. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:    
 
    1. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
-   2. Select the app launcher icon in the upper-left and choose Admin.
-   3. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
+   1. Select the app launcher icon in the upper-left and choose Admin.
+   1. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 
-       **NOTE**: If this option doesn’t appear, an Office 365 administrator is already in place.
+       >[!TIP]
+       >If this option doesn’t appear, an Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 
 If you do nothing, a tenant is created for each user email domain and subdomain.
 
-If you want all users to be in the same tenant regardless of their email address extensions:  
+If you want all users to be in the same tenant regardless of their email address extensions, you can create a target tenant ahead of time or use an existing tenant. Add all the existing domains and subdomains that you want consolidated within that tenant. Then all the users with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
-* Create a target tenant ahead of time or use an existing tenant. Add all the existing domains and subdomains that you want consolidated within that tenant. Then all the users with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
-
-**IMPORTANT**: There is no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+>[!IMPORTANT]
+>There is no supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### How can I restrict my users' ability to access my organization's business data?
 
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-  ![](./media/organization-q-and-a/data-loss-prevention-policy.png)
+  ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
