@@ -22,6 +22,7 @@ To approve a request:
 1. Select **Confirm** in the upper right corner of the screen.
 
     ![select confirm](media/modern-approvals/mobile-approval.png)
-3. The success page shows, indicating that your approval has been recorded.
+1. The success page shows, indicating that your approval has been recorded.
 
-> [!Note] The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
+>[!Note]
+>The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
