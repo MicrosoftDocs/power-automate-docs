@@ -167,8 +167,6 @@
       href: ./ui-flows/desktop/overview.md
     - name: Process designer
       href: ./ui-flows/desktop/process-designer.md
-    - name: Test file
-      href: ./ui-flows/desktop/Testfile.md
 - name: Solutions
   items:
   - name: Overview
