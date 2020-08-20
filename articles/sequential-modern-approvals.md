@@ -163,13 +163,12 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
    ![configuration for rejected requests](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 ## Update SharePoint with final rejection
+
 1. Use the steps from [Update SharePoint with pre-approval rejection](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
-2. When you're finished, the card should resemble this image:
+1. When you're finished, the card should resemble this image:
    
    ![update item card](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
-3. Select **Update flow** to save the work we've done.
-   
-   ![select update action](./media/sequential-modern-approvals/update.png)
+1. Select **Update flow** to save the work we've done.
 
 If you've followed along, your flow should resemble this image:
 
@@ -178,6 +177,7 @@ If you've followed along, your flow should resemble this image:
 Now that we've created the flow, let's see it in action.
 
 ## Request an approval
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Your request should resemble this image:
@@ -185,19 +185,24 @@ Your request should resemble this image:
 ![vacation request](./media/sequential-modern-approvals/vacation-request.png)
 
 ## View pending approval requests
+
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
 ## Pre-approve a request
+
 [!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
 ## Approve the request
+
 The steps to approve a request are identical to the steps to [pre-approve a request](sequential-modern-approvals.md#pre-approve-a-request)
 
 Note: The final approver gets the vacation request only after the request has been pre-approved.
 
 ## Reject a request
+
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
 ## More information
+
 [Single approver modern approvals walkthrough](modern-approvals.md)
 

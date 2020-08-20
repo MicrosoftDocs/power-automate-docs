@@ -6,34 +6,22 @@ To approve a request:
 1. Select **Approve** from the email you receive when an item is added to the SharePoint Online list.
    
      Note: If you're using a mobile device with the Power Automate app installed, the Power Automate app launches, otherwise, the approvals center opens in your browser.
-   
-    ![request email](media/modern-approvals/email-approval-request.png)
-2. Enter a comment, and then select the **Confirm** button.
-   
-    ![enter comment](media/modern-approvals/request-in-approval-center.png)
+
+1. Enter a comment, and then select the **Confirm** button.
 
 ### From the approvals center
+
 1. Sign in to [Power Automate](https://flow.microsoft.com).
-   
-    ![sign in](media/modern-approvals/sign-in.png)
-2. Select the **Approvals** tab.
-   
-    ![create from blank](media/modern-approvals/approvals-tab.png)
-3. Select **Approve** on the request you want to approve.
-   
-    ![create from blank](media/modern-approvals/approvals-cards.png)
-4. Add a note, and then select the **Confirm** button.
-   
-    ![add note then confirm](media/modern-approvals/approval-selection-card.png)
+1. Select the **Action items**>**Approvals** in the left-side navigation pane.
+1. Select **Approve** on the request you want to approve.
+1. Add any comments, and then select **Confirm** at the bottom of the screen.
 
 ### From the Power Automate app
+
 1. On your mobile phone with the Power Automate app installed, select **Approve** from the request approval email.
-2. Select **Confirm** in the upper right corner of the screen.
-   
+1. Select **Confirm** in the upper right corner of the screen.
+
     ![select confirm](media/modern-approvals/mobile-approval.png)
 3. The success page shows, indicating that your approval has been recorded.
-   
-    ![success page](media/modern-approvals/mobile-approval-confirmation.png)
 
-Note: The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
-
+> [!Note] The screens on Android, iOS and Windows Phone may differ slightly, however, the functionality is the same on all devices.
