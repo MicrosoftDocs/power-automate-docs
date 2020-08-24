@@ -167,7 +167,7 @@
       href: ./ui-flows/desktop/overview.md
     - name: Process designer
       href: ./ui-flows/desktop/process-designer.md
-    - name: Manage the variables pane
+    - name: Manage the Variables pane
       items:
       - name: Manage the Variables pane
         href: ./ui-flows/desktop/variables-pane/manage-variables-pane.md
@@ -178,7 +178,7 @@
       - name: Variable data types
         items:
         - name: Variable data types
-          href: ./ui-flows/desktop/variables-pane/variable-data-types/variable-data-type.md
+          href: ./ui-flows/desktop/variables-pane/variable-data-types/variable-data-types.md
         - name: Lists
           href: ./ui-flows/desktop/variables-pane/variable-data-types/lists.md
         - name: Data tables
@@ -186,7 +186,7 @@
         - name: Datatype properties
           href: ./ui-flows/desktop/variables-pane/variable-data-types/datatype-properties.md
       - name: Variable manipulation and the % notation
-        href: ./ui-flows/desktop/variables-pane/variables-manipulation.md
+        href: ./ui-flows/desktop/variables-pane/variable-manipulation.md
 - name: Solutions
   items:
   - name: Overview

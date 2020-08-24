@@ -26,7 +26,7 @@ For example, if you have a list of files called **Files**, you can get the numbe
 
 ![The Count variable property of the file datatype.](../../media/datatype-properties/files-count.png)
 
-The data types that have properties are displayed in the following list.
+The data types that have properties are displayed in the following lists.
 
 ## Texts
 - **Length** - The length of the stored text in characters.

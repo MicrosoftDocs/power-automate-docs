@@ -26,7 +26,7 @@ There is no direct way to create a data table, but two actions generate a data t
 
 To retrieve a specific item of a data table, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 
-For example, to access the first row's second cell of a read Excel file, use the epxression of the image below. Keep in mind that the the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+For example, to access the second cell in the first row of a read Excel file, use the expression of the image below. Keep in mind that the the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
 ![An epxression to access the first row's second cell of a read Excel file.](../../media/data-tables/data-table-row-item.png)
 
