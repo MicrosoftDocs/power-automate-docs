@@ -177,6 +177,8 @@
         href: ./ui-flows/desktop/variables-pane/input-output-variables.md
       - name: Variable data types
         items:
+        - name: Variable data types
+          href: ./ui-flows/desktop/variables-pane/variable-data-types/variable-data-type.md
         - name: Lists
           href: ./ui-flows/desktop/variables-pane/variable-data-types/lists.md
         - name: Data tables
