@@ -59,10 +59,6 @@ Create these columns in your SharePoint Online list:
 | Comments | Single line of text |
 | Approved | Yes/No |
 | Manager Comments | Single line of text |
-| Modified | Date and Time |
-| Created | Date and Time |
-| Created By | Person or Group |
-| Modified By | Person or Group |
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
