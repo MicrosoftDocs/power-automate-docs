@@ -183,7 +183,7 @@
           href: ./ui-flows/desktop/variables-pane/variable-data-types/data-tables.md
         - name: Datatype properties
           href: ./ui-flows/desktop/variables-pane/variable-data-types/datatype-properties.md
-      - name: Variable manipulation & the % notation
+      - name: Variable manipulation and the % notation
         href: ./ui-flows/desktop/variables-pane/variables-manipulation.md
 - name: Solutions
   items:
