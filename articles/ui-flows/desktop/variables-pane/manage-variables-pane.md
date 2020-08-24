@@ -16,7 +16,7 @@ search.audienceType:
 
 # Manage the Variables pane
 
-The **Variables** shows the input/output variables passed to and from **Power Automate Desktop**. This pane also shows all the variables used in the current flow, from all subflows, under **Flow variables**. 
+The **Variables** pane shows the input/output variables passed to and from **Power Automate Desktop**. This pane also shows all the variables used in the current flow, from all subflows, under **Flow variables**. 
 
 ![The Variables pane.](..//media/variables-pane/variables-pane.png)
 
