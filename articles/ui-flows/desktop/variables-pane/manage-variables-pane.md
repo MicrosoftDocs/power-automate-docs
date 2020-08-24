@@ -22,6 +22,6 @@ The **Variables** pane shows the input/output variables passed to and from **Pow
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
-When the process runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted.
+When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted.
 
 ![The current variables' values displayed in the Variables pane.](../media/variables-pane/variables-pane-run-values.png)

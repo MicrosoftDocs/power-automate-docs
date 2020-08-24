@@ -26,9 +26,9 @@ To update the name of an input/output variable globally, right-click on its name
 
 ![he Rename option for input/output variables.](../media/renaming-variables/rename-external-variabe.png)
 
-In the **Edit variable** window, populate the **Variable name** and **External name** fields for the internal and external variable name, respectively. 
+In the **Edit variable** dialog, populate the **Variable name** and **External name** fields for the internal and external variable name, respectively. 
 
-![The Edit variable window.](../media/renaming-variables/edit-variable-window.png)
+![The Edit variable dialog.](../media/renaming-variables/edit-variable-window.png)
 
 
 

@@ -173,8 +173,8 @@
         href: ./ui-flows/desktop/variables-pane/manage-variables-pane.md
       - name: Renaming a variable
         href: ./ui-flows/desktop/variables-pane/renaming-variables.md
-      - name: Variables inputs & outputs
-        href: ./ui-flows/desktop/variables-pane/variables-inputs-outputs.md
+      - name: Input and output variables
+        href: ./ui-flows/desktop/variables-pane/input-output-variables.md
       - name: Variable data types
         items:
         - name: Lists
