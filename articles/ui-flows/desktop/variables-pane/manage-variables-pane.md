@@ -1,6 +1,6 @@
 ---
 title: Manage the Variables pane | Microsoft Docs
-description: Manage the variables pane
+description: Manage the Variables pane
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article
@@ -16,11 +16,11 @@ search.audienceType:
 
 # Manage the Variables pane
 
-The **variables pane** shows the input/output variables passed to and from **Power Automate Desktop**. This pane also shows all the variables used in the current flow, from all subflows, under **Flow variables**. 
+The **Variables** shows the input/output variables passed to and from **Power Automate Desktop**. This pane also shows all the variables used in the current flow, from all subflows, under **Flow variables**. 
 
 ![The Variables pane.](..//media/variables-pane/variables-pane.png)
 
-Through the **variables pane**, you can search for variables, rename them, find their usages and filter them by type. 
+Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
 When the process runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted.
 
