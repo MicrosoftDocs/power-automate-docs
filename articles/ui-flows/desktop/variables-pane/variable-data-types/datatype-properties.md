@@ -18,7 +18,7 @@ search.audienceType:
 
 Some of the built-in data types have properties that are associated with the value stored in the variable. 
 
-A property may contain a part of the information stored in the variable (e.g. the day of a date) or an extra attribute describing the variable (e.g. the size of a list).
+A property may contain a part of the information stored in the variable, like the day of a date, or an extra attribute describing the variable, like the size of a list.
 
 The value of these properties can be accessed directly through the following notation: **%VariableName.PropertyName%**.
 
@@ -34,7 +34,7 @@ The data types that have properties are displayed in the following lists.
 - **Year** - The year part of the datetime value.
 - **Month** - The month part of the datetime value.
 - **Day** - The day part of the datetime value.
-- **DayOfWeek** - The name of the day (e.g. Sunday, Monday etc).
+- **DayOfWeek** - The name of the day (Sunday, Monday etch).
 - **DayOfYear** - The day of the year part of the datetime value (1-365/6).
 - **Hour** - The hour part of the datetime value.
 - **Minute** - The minute part of the datetime value.
@@ -43,7 +43,7 @@ The data types that have properties are displayed in the following lists.
 - **Count** - The number of items stored into the list.
 ## Files
 - **FullName** - The full path to the file.
-- **RootPath** - The root path of the file (e.g. C:\\).
+- **RootPath** - The root path of the file, for example **C:\\**.
 - **Directory** - The directory where the file is stored.
 - **Name** - The name of the file, including the extension.
 - **NameWithoutExtension** - The name of the file without its extension.
@@ -59,7 +59,7 @@ The data types that have properties are displayed in the following lists.
 - **Exists** - This property is true if the file exists or false if the file doesn't exist.
 ## Folders
 - **FullName** - The full path to the folder.
-- **RootPath** - The root path of the folder (e.g. C:\).
+- **RootPath** - The root path of the folder, for example, **C:\\**.
 - **Parent** - The parent directory of the folder.
 - **Name** - The name of the folder.
 - **CreationTime** - The date when the folder was created.
@@ -74,9 +74,9 @@ The data types that have properties are displayed in the following lists.
 - **Cc** - A list of values containing additional recipients for the message (carbon copy).
 - **Date** - The date and time in which the message was sent.
 - **Subject** - The subject of the message.
-- **Body** - The body of the message. This can be in plain text or in HTML form.
+- **Body** - The body of the message. The body can be in plain text or in HTML form.
 - **BodyText** - If the previous property contains HTML, this property contains the body of the message in plain text form.
-- **Attachments** - A list of file data types that represent the attachments of the email message (if any) after they have saved locally.
+- **Attachments** - A list of files that represent the saved attachments of the email message (if any).
 ## FTP files
 - **FullName** - The full path to the file.
 - **Directory** - The directory where the file is stored on the FTP Server.

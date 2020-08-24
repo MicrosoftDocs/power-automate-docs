@@ -18,7 +18,7 @@ search.audienceType:
 
 Every variable belongs to a specific type, according to its content. **Power Automate Desktop** recognizes 17 distinct data types. 
 
-Some of them can be used only with explicit actions or group of actions (e.g. **FTP connection**), while others are widely used throughout the platform (e.g **numbers**).  
+Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  
 
 **Simple data types**
 
@@ -28,9 +28,9 @@ Some of them can be used only with explicit actions or group of actions (e.g. **
 
 **Advanced data types**
 
-- **List** - Collection of other items. It is the equivalent of a single-dimension array in programming terms. 
+- **List** - Collection of other items. Lists are the equivalent of a single-dimension array in programming terms. 
 - **Data row** - A data row contains multiple values in a single, iterable row.
-- **Data table** - Contains data in a tabular form. It is the equivalent of a two-dimensional array in programming terms. 
+- **Data table** - Contains data in a tabular form. Data tables are the equivalent of a two-dimensional array in programming terms. 
 - **Custom object** – Contains pairs of properties and values, and can be easily translated into JSON format. 
 
 **Instances**

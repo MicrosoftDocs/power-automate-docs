@@ -16,11 +16,11 @@ search.audienceType:
 
 # Renaming a variable
 
-To update the name of a flow variable, right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
+To rename a flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
 
 ![The Rename option for flow variables.](../media/renaming-variables/rename-flow-variabe.png)
 
-Although a variable's name can be updated manually through a deployed action, the name will be changed only in this specific action and not globally. 
+Although you can update variables' manually through actions, the name will be changed only in these specific actions, not globally. 
 
 To update the name of an input/output variable globally, right-click on its name in the **Variables** pane and select **Edit**.
 

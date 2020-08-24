@@ -16,14 +16,13 @@ search.audienceType:
 
 # Variable manipulation and the % notation
 
-
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
 ![Quote notation in a Change text case action's field.](../media/variable-manipulation/quote-notation.png)
 
-In some cases, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using the backslash (**\\**).
+Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using the backslash (**\\**).
 
-**Power Desktop Automation** enables the creation of complex expressions containing hardcoded values, variable names, arithmetic operations, comparisons, logical operations and parentheses.
+**Power Desktop Automation** enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
 
 ![Complex expression in a Set variable action's field.](../media/variable-manipulation/expression.png)
 
@@ -41,9 +40,9 @@ Variables can be used by adding their name to the expression without any further
 
 **Basic arithmetic**
 
-To perform mathematical operations, use all the essential, arithmetic operators, such as addition (**+**), subtraction (**-**), multiplication (**\***) and division (**/**).
+To make mathematical operations, use all the essential, arithmetic operators, such as addition (**+**), subtraction (**-**), multiplication (**\***), and division (**/**).
 
-Arithmetic operations are designed to be used with numerical values and variables. However, you can also use the addition operator between text strings to concatenate them. Adding numbers and text strings in the same expression will convert the numbers into text, and concatenate them with the other text strings.
+Arithmetic operations are predominantly used with numerical values and variables. However, you can also use the addition operator to concatenate strings. Adding numbers and text strings in the same expression will convert the numbers into text, and concatenate them with the other text strings.
 
 | Expression                  | Result                                              |
 |-----------------------------|-----------------------------------------------------|
@@ -54,7 +53,7 @@ Arithmetic operations are designed to be used with numerical values and variable
 
 **Comparisons**
 
-Besides arithmetic operators, perform comparisons using the following operators
+Besides arithmetic operators, make comparisons using the following operators
 
 | Operator | Description                        |
 |--------- |------------------------------------|
@@ -62,7 +61,7 @@ Besides arithmetic operators, perform comparisons using the following operators
 | <, <=    | Less than/less than or equal       |
 | >, >=    | Greater than/greater than or equal |
 
-Keep in mind that comparisons, when evaluated, produce either **True** or **False** as a value. Naturally, comparisons can only be performed between values of the same type.
+Keep in mind that comparisons, when evaluated, produce either **True** or **False** as a value. Naturally, comparisons can only be done between values of the same type.
 
 **Logical operators**
 
