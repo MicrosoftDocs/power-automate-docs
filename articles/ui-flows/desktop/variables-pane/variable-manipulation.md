@@ -76,6 +76,6 @@ Logical operators can also be used to check multiple conditions simultaneously, 
 
 **Parentheses**
 
-To change the operators' priority, use parentheses Parentheses are handled the same way as in algebra and programming languages.
+To change the operators' priority, use parentheses. Parentheses are handled the same way as in algebra and programming languages.
 
 ![Expression with parentheses in a Set variable action's field.](../media/variable-manipulation/parentheses.png)
