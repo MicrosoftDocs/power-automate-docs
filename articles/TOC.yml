@@ -169,6 +169,8 @@
       href: ./ui-flows/desktop/process-designer.md
     - name: Manage the variables pane
       items:
+      - name: Manage the Variables pane
+        href: ./ui-flows/desktop/variables-pane/manage-variables-pane.md
       - name: Renaming a variable
         href: ./ui-flows/desktop/variables-pane/renaming-variables.md
       - name: Variables inputs & outputs
