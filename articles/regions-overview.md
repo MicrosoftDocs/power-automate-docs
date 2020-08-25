@@ -35,6 +35,10 @@ In other words, your flows are deployed in the [datacenter region](https://azure
 
 ## Frequently asked questions
 
+### How can I find out the region where my flow is deployed?
+
+Administrators can identify the region by signing in to the Power Platform [admin center](https://admin.powerplatform.microsoft.com/). The **Environments** tab lists all existing environments and their regions.
+
 ### Is Power Automate available in national clouds?
 
 Yes. [Learn more](./us-govt.md).
@@ -42,7 +46,3 @@ Yes. [Learn more](./us-govt.md).
 ### What outbound IP addresses are used in each region?
 
 See [Limits and configuration](limits-and-config.md).
-
-### Where can I find out the region for my flow?
-
-Administrators can identify the region by signing in to the Power Platform [admin center](https://admin.powerplatform.microsoft.com/). The **Environments** tab lists all existing environments and their regions.
