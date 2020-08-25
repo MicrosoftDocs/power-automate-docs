@@ -26,6 +26,6 @@ Inside the switch block, each **Case** marks a block of actions to execute if th
 
 ![The cases in the switch block.](../../media/switch-case-model/case-blocks.png)
 
-In case all conditions are invalid, the flow will execute the actions in the **Default Case** block, if it exists.
+In case all conditions are invalid, the flow will execute the actions in the **Default Case** block, if exists.
 
 ![The default case in the switch block.](../../media/switch-case-model/default-block.png)

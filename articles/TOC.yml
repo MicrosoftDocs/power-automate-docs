@@ -191,8 +191,6 @@
       items:
       - name: Loops
         items:
-        - name: Loops
-          href: ./ui-flows/desktop/implementing-basic-logic/loops/loops.md
         - name: Simple loops
           href: ./ui-flows/desktop/implementing-basic-logic/loops/simple-loops.md
         - name: Loop condition
