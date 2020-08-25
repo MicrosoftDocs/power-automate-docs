@@ -13,66 +13,36 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
-ms.author: deonhe
+ms.date: 08/25/2020
+ms.author: hamenon
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# FAQ for regions in Power Automate
+# Power Automate regions overview
 
-This document provides a list of frequently asked questions about Power Automate.
+In Power Automate, your flows are created within your Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Power Platform environment is stored.
 
-## How do I find out where my flow is deployed?
-Your flow is deployed in the [region](https://azure.microsoft.com/regions/) that hosts the [environment](environments-overview-admin.md). For example, if your environment is created in the Europe region, your flow is deployed in Europe data centers.
+In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your [Power Platform environment](environments-overview-admin.md).
 
-Administrators can identify the region if they sign in to the Power Platform [admin center](https://admin.powerplatform.microsoft.com/). The **Environments** tab lists all existing environments and their regions.
+## More information about Power Platform environments
 
-![view environments](media/regions-overview/environments-list.png)
+[Overview of Power Platform regions](/power-platform/admin/regions-overview)
 
-## What regions are available?
-* United States
-* Europe
-* Asia
-* Australia
-* India
-* Japan
-* Canada
-* South America
-* United Kingdom
-* US Government (GCC)
-* France
+[Azure geographies](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
 
-## What features are specific to a given region?
+## Frequently asked questions
 
-Environments can be created in different regions and are bound to that geographic location. When you create a flow in an environment, that flow is deployed in data centers in that geographic location. This applies to any items you create in that environment, including Common Data Model, flows, connections, gateways, apps, and custom connectors.
+### Is Power Automate available in national clouds?
 
-For optimal performance, create your environment in the region that's closest to your users. For example, if your users are in Europe, create your environments in the Europe region. If your users are in the United States, create your environments in the United States region.
-
-## Region mappings for Power Automate and gateways
-
-The region where the gateway is installed must map to your Power Automate region. Cross geographic boundaries aren't supported. 
-
-Here's the mapping information:
-
-Power Platform region|Gateway region
------|-----
-United States including Preview|Central US, East US 2, East US, North Central US, South Central US, West US 2, West Central US, West US
-Asia|East Asia, Southeast Asia
-Australia|Australia East, Australia Southeast
-Canada|Canada Central, Canada East
-Europe|North Europe, West Europe
-France|France Central, France South
-India|Central India, South India, West India
-Japan|Japan East, Japan West
-South America|Brazil South
-United Kingdom|UK South, UK West
-
-## Is Power Automate available in national clouds?
 Yes. [Learn more](./us-govt.md).
 
-## What outbound IP addresses are used in each region?
+### What outbound IP addresses are used in each region?
+
 See [Limits and configuration](limits-and-config.md).
 
+### Where can I find out the region for my flow?
+
+Administrators can identify the region by signing in to the Power Platform [admin center](https://admin.powerplatform.microsoft.com/). The **Environments** tab lists all existing environments and their regions.
