@@ -187,10 +187,10 @@
           href: ./ui-flows/desktop/variables-pane/variable-data-types/datatype-properties.md
       - name: Variable manipulation and the % notation
         href: ./ui-flows/desktop/variables-pane/variable-manipulation.md
-    - name: Implementing basic logic in the flows
+    - name: Implementing basic logic in flows
       items:
       - name: Loops
-      - items:
+        items:
         - name: Loops
           href: ./ui-flows/desktop/implementing-basic-logic/loops/loops.md
         - name: Simple loops

@@ -1,0 +1,35 @@
+---
+title: If variations | Microsoft Docs
+description: If variations
+author: georgiostrantzas
+ms.service: flow
+ms.topic: article
+ms.date: 02/26/2020
+ms.author: getrantz
+ms.reviewer:
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# If variations
+
+Apart from the standard **If** action, **Power Automate Desktop** provide some additional conditional actions:
+
+- **If file exists**: Checks if a file exists or not before executing a block of actions. This action can be used to ensure that a file exists before performing other operations on it.
+
+- **If folder exists**: Checks if a folder exists or not before executing a block of actions.
+
+- **If service**: Executes a block of actions if a specific service is running, is paused or is stopped.
+
+- **If process**: Executes a block of actions if a specific process is running, or not.
+
+- **If window**: Executes a block of actions if a specific window is open, or not.
+
+- **If image**: Executes a block of actions if a specific image is found or not on the screen.
+
+- **If web page contains**: Executes a block of actions if a web page contains or not a specific element or some text.
+
+- **If text on screen (OCR)**: Checks if a given text is found on the screen or not, using an OCR Engine of your choice.
