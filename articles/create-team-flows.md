@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/05/2020
+ms.date: 08/25/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,17 +21,17 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share a flow 
+# Share a flow
 
 Share a flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a flow in Power Automate:
 
 1. Add an owner to a flow.
-2. Share a flow with run only privileges.
-3. Share a copy of a flow.
+1. Share a flow with run only privileges.
+1. Share a copy of a flow.
 
 ## Prerequisites
 
-- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow. 
+- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow.
 - You must be the creator or owner to add/remove owners from a flow.
 
 ## Add an owner to a flow
@@ -60,19 +60,19 @@ Follow these steps to add more owners to a flow.
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select **My flows**.
 1. Select **...** (more commands), and then select **Share** for the flow that you want to share:
-   
+  
     ![team icon](./media/create-team-flows/addowner1.png)
 
    >[!NOTE]
    >You can also share a flow using the Share option on the flow details page. 
 
 1. Enter the name, email address, or group name for the person or group that you want to add as an owner:
-   
+
     ![search for the user](./media/create-team-flows/addowner2.png)
 1. The user or group you've selected becomes an owner of the flow:
-     
+
     ![new owner](./media/create-team-flows/addowner4.png)
-   
+
      Congratulations&mdash;your team flow has been created!
 
 ## Remove an owner
@@ -87,13 +87,12 @@ Follow these steps to add more owners to a flow.
    >You can also edit the owners of flow using the Share button in the Flow details page mentioned earlier
 
 1. Select the **Delete** icon for the owner that you want to remove:
-   
+
     ![select delete](./media/create-team-flows/removeowner2.png)
 1. On the confirmation dialog box, select **Remove this owner**:
-   
+
     ![confirm removal](./media/create-team-flows/removeowner3.png)
 1. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow.
-
 
 ### Update connections
 
@@ -125,7 +124,7 @@ The list of connections appears under the list of owners in a flow's properties:
 
 ## Add a list as a co-owner
 
-You can add SharePoint lists as co-owners to a flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow is shared, you can simply distribute a link to it.
+You can add SharePoint lists as co-owners to a flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow is shared, you can simply distribute a link to it. For information about how to create a SharePoint list, see [Training: Create and set up a list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
 
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in other cases.
@@ -139,11 +138,11 @@ Instant flows (i.e. flows that use a manual trigger such as Button, For a select
 
 1. In the flow details page select the "Edit" link next to the Run only users section. 
 ![run only share](./media/create-team-flows/run-only-share.png)
-2. In the Manage run-only permissions flyout specify the users, groups you want to provide run only access to
+1. In the Manage run-only permissions flyout specify the users, groups you want to provide run only access to
 ![Add run only users](./media/create-team-flows/run-only-share2.png)
-3. As an owner you can choose if the run-only users will need to provide their own connections when sharing the flow or use a connection thats already defined in the flow
+1. As an owner you can choose if the run-only users will need to provide their own connections when sharing the flow or use a connection thats already defined in the flow
 ![Manage connections](./media/create-team-flows/manage-run-only-connections.png)
-4. Congratulations &mdash; the user or group will now have access to run the flow.
+1. Congratulations &mdash; the user or group will now have access to run the flow.
 
 ### Remove a run only user
 
