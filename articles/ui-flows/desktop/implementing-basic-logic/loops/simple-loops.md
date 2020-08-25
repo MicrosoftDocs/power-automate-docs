@@ -18,7 +18,7 @@ search.audienceType:
 
 The idea behind a loop is to make a flow repeat one or more actions multiple times. **Power Automate Desktop** implements the simplest type of loops with the **Loop** action.
 
-This loop repeats the actions between the **Loop** and **End** for a set number of times. A loop index variable is created automatically to track the current iteration’s number.
+This loop repeats the actions between the **Loop** and **End** actions for a set number of times. A loop index variable is created automatically to track the current iteration’s number.
 
 ![The Loop action.](../../media/simple-loops/loop-action.png)
 

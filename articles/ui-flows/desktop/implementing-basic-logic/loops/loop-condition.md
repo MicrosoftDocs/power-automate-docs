@@ -25,3 +25,5 @@ If the condition is always true, the loop will never end. This situation is call
 The condition consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
 ![An example flow with a Loop condition action.](../../media/loop-condition/loop-condition-example.png)
+
+In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.
