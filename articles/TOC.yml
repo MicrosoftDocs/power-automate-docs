@@ -208,7 +208,7 @@
         - name: If variations
           href: ./ui-flows/desktop/implementing-basic-logic/conditionals/if-variations.md
         - name: Switch-case model
-          href: ./ui-flows/desktop/implementing-basic-logic/conditionals/switch-case-model.md
+          href: ./ui-flows/desktop/implementing-basic-logic/conditionals/switch–case-model.md
 - name: Solutions
   items:
   - name: Overview

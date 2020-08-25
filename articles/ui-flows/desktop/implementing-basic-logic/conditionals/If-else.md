@@ -29,8 +29,8 @@ An **If** may optionally contain an **Else** action. The **Else** action defines
 ![An example flow containing an If-else block.](../../media/if-else/else-block.png)
 
  
-To set multiple conditions for which different logic is executed, deploy the **Else If** action. This action executed when the previous **If** and **Else if** conditions are invalid. It should be placed within the **If/End If** block and always before the **Else** action.
+To set multiple conditions for which different logic is executed, deploy the **Else If** action. This action is executed when the previous **If** and **Else if** conditions are invalid. It should be placed within the **If/End If** block and always before the **Else** action.
 
 ![An example flow containing an If-else block with two additional Else-if blocks.](../../media/if-else/else-if-block.png)
 
-In all cases, the variables and values used as operands must be of the same data type. Comparing variables of different data types makes the condition always false (or true if **not equal** operator is used).
+In all cases, the variables and values used as operands must be of the same data type. Comparing variables of different data types makes the condition always false (or true if the **not equal** operator is used).
