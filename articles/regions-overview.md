@@ -27,7 +27,7 @@ In Power Automate, your flows are created within your Power Platform environment
 
 In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your [Power Platform environment](environments-overview-admin.md).
 
-## More information about Power Platform environments
+## More information about Power Platform regions
 
 [Overview of Power Platform regions](/power-platform/admin/regions-overview)
 
