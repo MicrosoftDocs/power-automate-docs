@@ -35,6 +35,10 @@ In other words, your flows are deployed in the [datacenter region](https://azure
 
 ## Frequently asked questions
 
+### What region should I use?
+
+It's a good idea to create your flow in an environment that's in the region closest to your customers. When the datacenters that host your environment are closer to the people accessing the information, you're likely to see better performance.
+
 ### How can I find out the region where my flow is deployed?
 
 Administrators can identify the region by signing in to the Power Platform [admin center](https://admin.powerplatform.microsoft.com/). The **Environments** tab lists all existing environments and their regions.
