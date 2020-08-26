@@ -187,10 +187,20 @@
           href: ./ui-flows/desktop/variables-pane/variable-data-types/datatype-properties.md
       - name: Variable manipulation and the % notation
         href: ./ui-flows/desktop/variables-pane/variable-manipulation.md
+    - name: Errors
+      items:
+        - name: Errors
+          href: ./ui-flows/desktop/errors/errors.md
+        - name: The error detail view
+          href: ./ui-flows/desktop/errors/error-detail-view.md
+    - name: Finding usages within flows
+      href: ./ui-flows/desktop/finding-usages.md
     - name: Implementing basic logic in flows
       items:
       - name: Loops
         items:
+        - name: Loops
+          href: ./ui-flows/desktop/implementing-basic-logic/loops/loops.md
         - name: Simple loops
           href: ./ui-flows/desktop/implementing-basic-logic/loops/simple-loops.md
         - name: Loop condition
@@ -199,6 +209,8 @@
           href: ./ui-flows/desktop/implementing-basic-logic/loops/for-each-loop.md
       - name: Conditionals
         items:
+        - name: Conditionals
+          href: ./ui-flows/desktop/implementing-basic-logic/conditionals/conditionals.md
         - name: If/else
           href: ./ui-flows/desktop/implementing-basic-logic/conditionals/if-else.md
         - name: If variations
