@@ -78,6 +78,8 @@
     href: apply-to-each.md
 - name: Approval flows
   items:
+  - name: Get started with approvals
+    href: get-started-approvals.md
   - name: Single approvals
     href: modern-approvals.md
   - name: Approvals with attachments
