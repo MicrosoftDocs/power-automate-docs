@@ -170,9 +170,9 @@
     - name: The Power Automate Desktop flow designer
       items:
       - name: Actions and the Action pane
-      - items:
+        items:
         - name: Configuring an action
-        - items:
+          items:
           - name: Configuring an action
             href: ./ui-flows/desktop/flow-designer/actions-action-pane/configuring-action/configuring-action.md
           - name: Configuring action exceptions
@@ -180,7 +180,7 @@
           - name: Setting up an action exception block
             href: ./ui-flows/desktop/flow-designer/actions-action-pane/configuring-action/setting-up-exception-block.md
       - name: Enabling and disabling actions
-      - href: ./ui-flows/desktop/flow-designer/enabling-disabling-actions.md
+        href: ./ui-flows/desktop/flow-designer/enabling-disabling-actions.md
     - name: Manage the Variables pane
       items:
       - name: Manage the Variables pane
