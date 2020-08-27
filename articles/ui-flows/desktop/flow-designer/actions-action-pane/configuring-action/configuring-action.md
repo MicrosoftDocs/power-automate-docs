@@ -26,4 +26,4 @@ To use a variable as a parameter, select the icon on the field's right side and 
 
 The produced variables hold the outcomes of the action for later use. All the output variables are displayed on the bottom part of the action's properties.
 
-In case an output variable isn't needed for later use, select the icon on the left side of it and select ***Not needed**. 
+In case an output variable isn't needed for later use, select the icon on the left side of it and pick ***Not needed**. 

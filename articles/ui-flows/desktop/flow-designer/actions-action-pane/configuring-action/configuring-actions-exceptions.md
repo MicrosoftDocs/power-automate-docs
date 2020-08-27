@@ -24,7 +24,7 @@ To continue the flow's execution, even if the retry option fails, select the **C
 
 - **Go to next action**: Executes the following action in order.
 - **Repeat action**: Repeats the action until it runs successfully. 
-- **Go to label**: Continue the execution from a point defined by a **Label** action.
+- **Go to label**: Continues the execution from a point defined by a **Label** action.
 
 **Power Desktop Automation** offers two additional error handling options. Select the **New role** button to:
 - **Set variable**: Sets the wished value to a specified variable.
