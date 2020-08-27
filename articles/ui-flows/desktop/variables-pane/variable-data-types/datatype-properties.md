@@ -98,4 +98,4 @@ The data types that have properties are displayed in the following lists.
 ## Custom dialog instances
 - **LastButtonPressed** - The name of the button that was last pressed on the dialog.
 - **DialogWasForciblyClosed** - This property is true if the dialog was closed by a close window command or by pressing the **Cancel** button, false otherwise.
-- **Handle** - The handle of the Window belonging to this specific Custom Dialog.
+- **Handle** - The handle of the window belonging to this specific custom dialog.

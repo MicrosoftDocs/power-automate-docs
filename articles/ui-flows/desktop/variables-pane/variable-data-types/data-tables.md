@@ -26,9 +26,7 @@ A data table contains rows and columns that describe the position of each item u
 
 To retrieve a specific item of a data table, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 
-For example, to access the A2 cell of a read Excel file, use the expression displayed below. 
-
-Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+For example, to access the A2 cell of a read Excel file, use the expression displayed below. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
 ![An epxression to access the first row's second cell of a read Excel file.](../../media/data-tables/data-table-row-item.png)
 

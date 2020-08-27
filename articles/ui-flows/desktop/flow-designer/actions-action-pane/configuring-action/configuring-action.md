@@ -22,7 +22,7 @@ search.audienceType:
 
 The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables.
 
-To use a variable as a parameter, select the icon on the field's right side and select the respective variable.
+To use a variable as a parameter, select the icon on the field's right side and pick the respective variable.
 
 The produced variables hold the outcomes of the action for later use. All the output variables are displayed on the bottom part of the action's properties.
 

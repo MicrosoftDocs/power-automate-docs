@@ -29,7 +29,7 @@ In the **Edit variable** dialog, populate the following fields:
 - **Variable type**: Defines if the variable is input or output.
 - **Variable name**: The name of the variable in the flow.
 - **Default value**: The value that the variable holds if none is assigned.
-- **Data type**: The type of the variable, like integer, string or datetime.
+- **Data type**: The type of the variable, like number, text or datetime.
 - **External name**: The name used outside the flow. The external name is the name that will appear in **Power Automate**.
 - **Description**: A description of the variable. This field is a mandatory and will appear in **Power Automate**.
 
