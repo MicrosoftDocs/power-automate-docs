@@ -35,7 +35,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
 2. Select ** + New** and then **+ Scheduled-from blank**.
    
     ![Create a flow from blank](./media/run-scheduled-tasks/create-flow.png)
-3. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxex then select **Create**.
+3. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes then select **Create**.
    
     ![Find recurrence trigger](./media/run-scheduled-tasks/select-recurrence.png)
 
