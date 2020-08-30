@@ -56,23 +56,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
     ![Specify advanced options](./media/run-scheduled-tasks/advanced-options.png)
 6. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
 
-## Delay a flow
-1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** in the left navigation bar.
-   
-    ![Create a flow from blank](./media/run-scheduled-tasks/create-flow.png)
 
-2. Specify an event as [Create a flow from scratch](get-started-logic-flow.md) describes.
-3. Select **New step**, and then select **Add an action**.
-   
-    ![Option to add an action to a flow](./media/run-scheduled-tasks/add-action.png)
-4. In the list of actions, do either of the following:
-   
-   * Select **Delay**, specify a **Count**, and specify a **Unit** of time such as second, minute, or hour.
-   * Select **Delay until**, and then specify a date in this format.<br>YYYY-MM-DDTHH:MM:SSZ
-     
-     ![Add a delay](./media/run-scheduled-tasks/add-delay.png)
-     ![Specify delay in units of time](./media/run-scheduled-tasks/delay.png)
-     ![Specify delay until](./media/run-scheduled-tasks/delay-until.png)
 
 ## Learn more
 
