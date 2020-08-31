@@ -174,11 +174,11 @@
         - name: Configuring an action
           items:
           - name: Configuring an action
-            href: ./ui-flows/desktop/flow-designer/actions-action-pane/configuring-action/configuring-action.md
+            href: ./ui-flows/desktop/flow-designer/actions-pane/configuring-action/configuring-action.md
           - name: Configuring action exceptions
-            href: ./ui-flows/desktop/flow-designer/actions-action-pane/configuring-action/configuring-actions-exceptions.md
+            href: ./ui-flows/desktop/flow-designer/actions-pane/configuring-action/configuring-actions-exceptions.md
           - name: Setting up an action exception block
-            href: ./ui-flows/desktop/flow-designer/actions-action-pane/configuring-action/setting-up-exception-block.md
+            href: ./ui-flows/desktop/flow-designer/actions-pane/configuring-action/setting-up-exception-block.md
       - name: Enabling and disabling actions
         href: ./ui-flows/desktop/flow-designer/enabling-disabling-actions.md
     - name: Manage the Variables pane
