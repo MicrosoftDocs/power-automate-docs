@@ -185,7 +185,7 @@ To reset the license information stored by WinAutomation, you can delete the fol
 
 Product|Category|
 ---|---
-Winautomation|[Installation Errors](https://support.softomotive.com/support/solutions/folders/35000220522)|
+Winautomation|[Installation errors](https://support.softomotive.com/support/solutions/folders/35000220522)|
 ||[Console](https://support.softomotive.com/support/solutions/folders/35000220523)|
 ||[Process errors](https://support.softomotive.com/support/solutions/folders/35000220524)|
 ||[Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)|
@@ -202,7 +202,7 @@ Winautomation|[Installation Errors](https://support.softomotive.com/support/solu
 ||[Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)|
 ||[UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)|
 ||[Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)|
-||[Image Processing](https://support.softomotive.com/support/solutions/folders/35000220534)|
+||[Image processing](https://support.softomotive.com/support/solutions/folders/35000220534)|
 ||[Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)|
 ||[Databases](https://support.softomotive.com/support/solutions/folders/35000220536)|
 
