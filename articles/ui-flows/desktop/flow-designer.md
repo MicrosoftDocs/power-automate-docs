@@ -1,12 +1,12 @@
 ---
-title: Process Designer | Microsoft Docs
+title: Flow Designer | Microsoft Docs
 description: Introduction to Power Automate Desktop
 author: msftman
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020
-ms.author: DeonHe
-ms.reviewer: DeonHe
+ms.author: olmelnyk
+ms.reviewer: olmelnyk
 search.app: 
   - Flow
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Process designer
+# Flow designer
 
 Content coming
 
