@@ -43,7 +43,8 @@ Create a flow that performs one or more tasks (such as sending a report in email
 
     ![Show advanced recurrence options](./media/run-scheduled-tasks/select-recurrence1.png)
 
-   > [!NOTE] These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
+   > [!NOTE]
+   > These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
 1. Select a **Time zone** to specify whether the **Start time** reflects a local time zone, Universal Coordinated Time (UTC), etc.
 1. Specify a **Start time** in this format:
    <br>YYYY-MM-DDTHH:MM:SSZ
