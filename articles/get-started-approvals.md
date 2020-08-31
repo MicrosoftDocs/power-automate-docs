@@ -28,13 +28,13 @@ Approval flows can help you automate sign-off requests, and combine human decisi
 
 Here's what you need to get started with approvals
 
-- Permissions to create a project oakdale database.
+- Permissions to create a Common Data Service database.
 - A license to create flows.
 
 
-## Permissions to create a project oakdale database
+## Permissions to create a Common Data Service database
 
-Approvals are created and stored in a project oakdale database. Initially, when you use the approvals connector in a flow that’s located in a non-default environment, the system automatically provisions a database in the background. For this step to succeed, the user who runs the first approval flow must have an administrator role in the environment. Users other than the administrator who attempt to run the first flow in a non-default environment receive an error.
+Approvals are created and stored in Common Data Service. Initially, when you use the approvals connector in a flow that’s located in a non-default environment, the system automatically provisions a database in the background. For this step to succeed, the user who runs the first approval flow must have an administrator role in the environment. Users other than the administrator who attempt to run the first flow in a non-default environment receive an error.
 
 It can take a few minutes for the database provisioning to complete, and you’ll notice this delay the first time that you run the flow. Subsequently, other users who create approval flows do not need any elevated permissions in the environment.
 
@@ -48,10 +48,10 @@ Since the approvals connector is a standard connector, any license that grants a
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users in your current project oakdale environment as well as any users in your Azure Active Directory (Azure AD) tenant, including guest users. When you assign an approval to users who are not in your environment, they are automatically added so that we can process their responses and persist them for approvals history. The following tenant configurations do not allow this:
+You can assign approvals to users in your current Common Data Service environment as well as any users in your Azure Active Directory (Azure AD) tenant, including guest users. When you assign an approval to users who are not in your environment, they are automatically added so that we can process their responses and persist them for approvals history. The following tenant configurations do not allow this:
 
 - When the AllowAdHocSubscriptions setting in Azure Active Directory (Azure AD) is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
-- If a security group has been used to control which users have access to the project oakdale environment.
+- If a security group has been used to control which users have access to the Common Data Service environment.
 - Power Automate [US Government plans](https://docs.microsoft.com/power-automate/us-govt).
 
 
@@ -59,7 +59,7 @@ Once you assign an approval to a user, they can respond directly from an Outlook
 
 ## Next steps
 
-- Create [single approval flows](modern-approvals.md)
+- Create [approval flows](modern-approvals.md)
 
 
 
