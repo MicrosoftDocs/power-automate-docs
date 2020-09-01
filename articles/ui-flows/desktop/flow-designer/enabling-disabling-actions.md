@@ -22,6 +22,8 @@ To disable or enable an action, right-click on it and select **Disable action** 
 
 Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a flow and decide which one is the most efficient. 
 
-When an action is disabled, all variables defined in it are hidden from the **Variables** pane.
+When an action is disabled, all variables defined in it are hidden from the **Variables** pane. If the hidden variables are used in other actions, the flow may throw an error. 
+
+In the example below, two actions threw an error because they contain variables defined in a disabled action.
 
 ![An example in which disabling an action hides some varibales.](../media/enabling-disabling-actions/enable-disable-action-variables.png)

@@ -24,7 +24,7 @@ Apart from the standard **If** action, **Power Automate Desktop** provide some a
 
 - **If service**: Executes a block of actions if a specific service is running, is paused or is stopped.
 
-- **If process**: Executes a block of actions if a specific process is running, or not.
+- **If process**: Executes a block of actions if a specific Windows process is running, or not.
 
 - **If window**: Executes a block of actions if a specific window is open, or not.
 

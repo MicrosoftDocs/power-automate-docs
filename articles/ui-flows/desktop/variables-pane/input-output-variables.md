@@ -18,7 +18,7 @@ search.audienceType:
 
 **Power Automate Desktop** enables data exchange with the **Power Automate** platform through the input and output variables.
 
-These variables are passed to and from **PAD**, allowing you to create sophisticated flows. Ιn **Power Automate**, any input variables will be added to the UI action as fields.
+These variables are passed to and from **PAD**, allowing you to create sophisticated flows. Ιn **Power Automate**, any input variables will be added to the UI action as fields. More information about passing data between **PAD** and **Power Automate** can be found in the respective article (link to be added).
 
 To create an input or output variable, select the **+**  button in the **Variables** pane and choose the respective option.
 

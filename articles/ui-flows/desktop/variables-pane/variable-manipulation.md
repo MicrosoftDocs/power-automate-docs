@@ -67,11 +67,11 @@ Keep in mind that comparisons, when evaluated, produce either **True** or **Fals
 
 Logical operators can also be used to check multiple conditions simultaneously, allowing you to implement more complex logic in a single expression. The supported operators are: AND (**&&**), the OR (**||**) and the NOT (**!**). 
 
-| Expression                     | Result                                                                                      |
-|--------------------------------|---------------------------------------------------------------------------------------------|
-| %Index == 1 || Index == 2%     | True if the value of the **Index** variable is 1 OR 2, otherwise False                          |
+| Expression                     | Result                                                                                                           |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------|
+| %Index == 1 \|\| Index == 2%     | True if the value of the **Index** variable is 1 OR 2, otherwise False                                           |
 | %Index == 4 && Text == "Four"% | True if the value of the **Index** variable is 4 AND the value of the **Text** variable is Four, otherwise False |
-| %!ConditionIsTrue%             | True if the value of the **ConditionIsTrue** variable is False, otherwise False                 |
+| %!ConditionIsTrue%             | True if the value of the **ConditionIsTrue** variable is False, otherwise False                                  |
 
 **Parentheses**
 
