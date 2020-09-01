@@ -174,8 +174,8 @@
             href: ./ui-flows/desktop/flow-designer/actions-pane/configuring-action/configuring-action.md
           - name: Configuring action exceptions
             href: ./ui-flows/desktop/flow-designer/actions-pane/configuring-action/configuring-actions-exceptions.md
-      - name: Enabling and disabling actions
-        href: ./ui-flows/desktop/flow-designer/enabling-disabling-actions.md
+        - name: Enabling and disabling actions
+          href: ./ui-flows/desktop/flow-designer/enabling-disabling-actions.md
     - name: Manage the Variables pane
       items:
       - name: Manage the Variables pane
