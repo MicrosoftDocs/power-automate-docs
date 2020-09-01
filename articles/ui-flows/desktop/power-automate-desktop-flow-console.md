@@ -1,6 +1,6 @@
 ---
-title: Power Automate Desktop Flow Console | Microsoft Docs
-description: Power Automate Desktop Flow Console
+title: Power Automate Desktop Flow console | Microsoft Docs
+description: Power Automate Desktop Flow console
 author: rokontol
 ms.service: flow
 ms.topic: article
