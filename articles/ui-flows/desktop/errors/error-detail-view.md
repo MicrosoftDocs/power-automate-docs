@@ -18,8 +18,8 @@ search.audienceType:
 
 To find more information about a thrown exception, navigate to the **Errors** pane and double-click on the respective error. Once you do so, the **Error details** dialog will appear. This dialog displays information about:
 
-- **Location**: The subflow and the action that threw the error.
-- **Error message**: The error message.
-- **Error details**: A long description of the error. These details give a clear message about why the error happened and what the cause is.
+1. **Location**: The subflow and the action that threw the error.
+2. **Error message**: The error message.
+3. **Error details**: A long description of the error. These details give a clear message about why the error happened and what the cause is.
 
 ![The Error details dialog](../media/error-detail-view/error-details.png)

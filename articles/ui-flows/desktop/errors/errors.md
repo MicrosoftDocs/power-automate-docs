@@ -26,7 +26,7 @@ The **run time** errors or exceptions come up when the flow is running. These er
 
 ![A run time error.](../media/errors/run-time-error.png)
 
-When any action throws an error, the platform displays an error icon next to it and a pop-up pane with relevant error information. 
+When an action throws an error, the platform displays an error icon next to it and a pop-up pane with relevant error information. 
 
 The **Errors** pane is split into three columns:
 
