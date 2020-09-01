@@ -165,12 +165,9 @@
     items: 
     - name: Introduction to Power Automate Desktop
       href: ./ui-flows/desktop/overview.md
-    - name: Process designer
-      href: ./ui-flows/desktop/process-designer.md
-    - name: The Power Automate Desktop flow designer
+    - name: Flow designer
+      href: ./ui-flows/desktop/flow-designer.md
       items:
-      - name: Actions and the Action pane
-        items:
         - name: Configuring an action
           items:
           - name: Configuring an action
