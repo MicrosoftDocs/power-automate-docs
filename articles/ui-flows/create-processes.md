@@ -181,30 +181,33 @@ the user you’re logging in as has a valid Power Automate RPA license. To confi
 
 To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3.
 
-## Troubleshooting other issues
+### Troubleshooting other issues
 
-Product|Category|
----|---
-Winautomation|[Installation errors](https://support.softomotive.com/support/solutions/folders/35000220522)|
-||[Console](https://support.softomotive.com/support/solutions/folders/35000220523)|
-||[Process errors](https://support.softomotive.com/support/solutions/folders/35000220524)|
-||[Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)|
-||[UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)|
-||[Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)|
-||[Image Processing](https://support.softomotive.com/support/solutions/folders/35000220534)|
-||[Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)|
-||[Databases](https://support.softomotive.com/support/solutions/folders/35000220536)|
-|ProcessRobot|[Control Desk](https://support.softomotive.com/support/solutions/folders/35000220525)|
-||[Process Studio](https://support.softomotive.com/support/solutions/folders/35000220526)|
-||[ProcessRobot database](https://support.softomotive.com/support/solutions/folders/35000220528)|
-||[Robot errors](https://support.softomotive.com/support/solutions/folders/35000220529)|
-||[Process errors](https://support.softomotive.com/support/solutions/folders/35000220530)|
-||[Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)|
-||[UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)|
-||[Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)|
-||[Image processing](https://support.softomotive.com/support/solutions/folders/35000220534)|
-||[Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)|
-||[Databases](https://support.softomotive.com/support/solutions/folders/35000220536)|
+Follow the links in this section to troubleshooting issues you may experience.
+
+Winautomation
+- [Installation errors](https://support.softomotive.com/support/solutions/folders/35000220522)
+- [Console](https://support.softomotive.com/support/solutions/folders/35000220523)
+- [Process errors](https://support.softomotive.com/support/solutions/folders/35000220524)
+- [Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220536)
+
+ProcessRobot
+- [Control Desk](https://support.softomotive.com/support/solutions/folders/35000220525)
+- [Process Studio](https://support.softomotive.com/support/solutions/folders/35000220526)
+- [ProcessRobot database](https://support.softomotive.com/support/solutions/folders/35000220528)
+- [Robot errors](https://support.softomotive.com/support/solutions/folders/35000220529)
+- [Process errors](https://support.softomotive.com/support/solutions/folders/35000220530)
+- [Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [Image processing](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220536)
 
 
 ## Learn more
