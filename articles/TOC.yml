@@ -165,187 +165,103 @@
     items: 
     - name: Introduction to Power Automate Desktop
       href: ./ui-flows/desktop/introduction.md
-    - name: Setup Power Automate Desktop
-      href: ./ui-flows/desktop/setup.md
-      items:  
-      - name: Deployment of files & services
-        href: ./ui-flows/desktop/deployment-files-services.md
     - name: Create a Power Automate Desktop flow
-      href: ./ui-flows/desktop/create-flow.md
-      items:  
+      items:
       - name: Call the console from the portal
-        href: ./ui-flows/desktop/run-console.md
-      - name: Call a flow from the console
-        href: ./ui-flows/desktop/run-flow.md
-      - name: Design a flow
-        href: ./ui-flows/desktop/design-flow.md
-    - name: Execute a Power Automate Desktop flow
-      href: ./ui-flows/desktop/execute-flow.md
-    - name: Link a Power Automate Desktop flow with a flow
-      href: ./ui-flows/desktop/link-flow.md
-    - name: The Power Automate Desktop flow console
-      href: ./ui-flows/desktop/console.md
-      items:
-      - name: Starting a flow
-        href: ./ui-flows/desktop/starting-flow.md
-      - name: Editing a flow
-        href: ./ui-flows/desktop/editing-flow.md
-      - name: Power Automate Desktop console options
-        href: ./ui-flows/desktop/console-options.md
-    - name: The Power Automate Desktop flow designer
+        href: ./ui-flows/desktop/create-flow-console.md
+    - name: The Power Automate Desktop Flow designer
       href: ./ui-flows/desktop/flow-designer.md
-      items: 
-      - name: Actions & the action pane
+      items:
+      - name: Actions & the actions pane
         href: ./ui-flows/desktop/actions-pane.md
-      - name: Adding an action to the workspace
-        href: ./ui-flows/desktop/adding-action.md
-      - name: Configuring an action
-        href: ./ui-flows/desktop/configuring-action.md
         items:
-        - name: Configuring action exceptions
-          href: ./ui-flows/desktop/configuring-action-exceptions.md
-        - name: Setting up an action exception block
-          href: ./ui-flows/desktop/setting-exception-block.md
-      - name: Enabling and disabling actions
-        href: ./ui-flows/desktop/enabling-disabling-actions.md
-    - name: The flow designer workspace
-      href: ./ui-flows/desktop/designer-workspace.md
-  - name: Setting up subflows
-    href: ./ui-flows/desktop/setting-subflows.md
-    items:
-    - name: Managing the workspace toolbar
-      href: ./ui-flows/desktop/managing-workspace-toolbar.md
-      items:
-      - name: Searching in the flow
-        href: ./ui-flows/desktop/searching-flow.md
-      - name: Using the go to line option
-        href: ./ui-flows/desktop/using-line-option.md
-      - name: Making use of the recorders
-        href: ./ui-flows/desktop/making-use-recorders.md
-    - name: Debugging a flow
-      href: ./ui-flows/desktop/debugging-flow.md
-      items:
-      - name: Run / Stop and Pause from a flow designer
-        href: ./ui-flows/desktop/run-stop-pause.md
-      - name: Adding breakpoints
-        href: ./ui-flows/desktop/adding-breakpoints.md
-      - name: Executing the flow action by action
-        href: ./ui-flows/desktop/executing-action-by-action.md
-    - name: Configure the flow designer options
-      href: ./ui-flows/desktop/configure-flow-designer-options.md
-  - name: Manage the variables page
-    href: ./ui-flows/desktop/manage-variables.md
-    items:
-    - name: Renaming a variable
-      href: ./ui-flows/desktop/renaming-variable.md
-    - name: Variables inputs & outputs
-      href: ./ui-flows/desktop/variables-inputs-outputs.md
-    - name: Variable data types
-      href: ./ui-flows/desktop/variable-data-types.md
-      items:
-      - name: Lists
-        href: ./ui-flows/desktop/lists.md
-      - name: Datatables
-        href: ./ui-flows/desktop/datatables.md
-      - name: Datatype properties
-        href: ./ui-flows/desktop/datatype-properties.md
-    - name: Variable manipulation & the % notation
-      href: ./ui-flows/desktop/variable-manipulation.md
-  - name: UI elements
-    href: ./ui-flows/desktop/ui-elements.md
-    items:  
-    - name: UI element types
-      href: ./ui-flows/desktop/ui-elements-types.md
-    - name: UI element properties
-      href: ./ui-flows/desktop/ui-elements-properties.md
-  - name: Images
-    href: ./ui-flows/desktop/images.md
-  - name: Errors
-    href: ./ui-flows/desktop/errors.md
-    items:
-    - name: The error detail view
-      href: ./ui-flows/desktop/error-detail-view.md
-  - name: Finding usages within the flow
-    href: ./ui-flows/desktop/finding-usages.md
-  - name: Recording in a desktop flow
-    href: ./ui-flows/desktop/recording-flow.md
-    items:
-    - name: The desktop recorder
-      href: ./ui-flows/desktop/desktop-recorder.md
-      items:
-      - name: Starting the desktop recorder
-        href: ./ui-flows/desktop/starting-desktop-recorder.md
-      - name: Recording vs building a flow
-        href: ./ui-flows/desktop/recording-vs-building.md
-  - name: Implementing basic logic in the flows
-    href: ./ui-flows/desktop/implementing-basic-logic.md
-    items:
-    - name: Loops
-      href: ./ui-flows/desktop/loops.md
-      items:
-      - name: Simple loops
-        href: ./ui-flows/desktop/simple-loops.md
-      - name: Loop condition
-        href: ./ui-flows/desktop/loop-condition.md
-      - name: For each loop
-        href: ./ui-flows/desktop/for-each-loop.md
-    - name: Conditionals
-      href: ./ui-flows/desktop/conditionals.md
-      items:
-      - name: If/ else
-        href: ./ui-flows/desktop/if-else.md
-      - name: If variations
-        href: ./ui-flows/desktop/if-variations.md
-      - name: Switch – case model
-        href: ./ui-flows/desktop/switch-case-model.md
-    - name: Web automation
-      href: ./ui-flows/desktop/web-automation.md
-      items: 
-      - name: Using browsers and managing extensions
-        href: ./ui-flows/desktop/browsers-extensions.md
+        - name: Adding an action to the workspace
+          href: ./ui-flows/desktop/adding-action.md
+        - name: Configuring an action
+          items:
+          - name: Configuring an action
+            href: ./ui-flows/desktop/configuring-action.md
+          - name: Configuring action exceptions
+            href: ./ui-flows/desktop/configuring-actions-exceptions.md
+        - name: Enabling and disabling actions
+          href: ./ui-flows/desktop/enabling-disabling-actions.md
+      - name: The flow designer workplace
         items:
-        - name: Configuring the Internet Explorer
-          href: ./ui-flows/desktop/configuring-internet-explorer.md
-        - name: Configuring the Internet Explorer for servers
-          href: ./ui-flows/desktop/configuring-internet-explorer-servers.md
-        - name: Configuring Microsoft Edge
-          href: ./ui-flows/desktop/configuring-microsoft-edge.md
-        - name: Configuring Google Chrome
-          href: ./ui-flows/desktop/configuring-google-chrome.md
-        - name: Configuring Mozilla Firefox
-          href: ./ui-flows/desktop/configuring-mozilla-firefox.md
-      - name: Using the actual internet explorer vs the automation browser
-        href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
-      - name: Building a web automation flow
-        href: ./ui-flows/desktop/building-web-flow.md
-        items:
-        - name: Web data extraction
-          href: ./ui-flows/desktop/web-data-extraction.md
-        - name: Data population on the web
-          href: ./ui-flows/desktop/data-population-web.md
-        - name: Interacting with APIs
-          href: ./ui-flows/desktop/interacting-apis.md
-      - name: Desktop automation
-        href: ./ui-flows/desktop/desktop-automation.md
-        items:
-        - name: The Desktop automation overview
-          href: ./ui-flows/desktop/desktop-automation-overview.md
-        - name: Extracting data on desktop applications
-          href: ./ui-flows/desktop/extracting-data-desktop.md
-    - name: The Actions reference (This will include all action groups and actions)
-      href: ./ui-flows/desktop/actions-reference.md
+        - name: The flow designer workplace
+          href: ./ui-flows/desktop/designer-workplace.md
+          items:
+          - name: Setting up subflows
+            href: ./ui-flows/desktop/setting-subflows.md
+          - name: Managing the workplace toolbar
+            href: ./ui-flows/desktop/managing-workplace-toolbar.md
+            items:
+            - name: Searching in the flow
+              href: ./ui-flows/desktop/searching-flow.md
+            - name: Using the go to line option
+              href: ./ui-flows/desktop/using-line-option.md
+            - name: Making use of recorders
+              href: ./ui-flows/desktop/making-use-recorders.md
+          - name: Debugging a flow
+            href: ./ui-flows/desktop/debugging-flow.md
+            items:
+            - name: Run / stop and pause from a flow designer
+              href: ./ui-flows/desktop/run-stop-pause.md
+            - name: Adding breakpoints
+              href: ./ui-flows/desktop/adding-breakpoints.md
+            - name: Running the flow action by action
+              href: ./ui-flows/desktop/running-action.md
+          - name: Status bar
+            href: ./ui-flows/desktop/status-bar.md
+    - name: Manage the Variables pane
       items:
-      - name: Action Group
-        href: ./ui-flows/desktop/action.md
-    - name: Appendix
-      href: ./ui-flows/desktop/appendix.md
+      - name: Manage the Variables pane
+        href: ./ui-flows/desktop/manage-variables.md
+      - name: Renaming a variable
+        href: ./ui-flows/desktop/renaming-variable.md
+      - name: Input and output variables
+        href: ./ui-flows/desktop/variables-inputs-outputs.md
+      - name: Variable data types
+        items:
+        - name: Variable data types
+          href: ./ui-flows/desktop/variable-data-types.md
+        - name: Lists
+          href: ./ui-flows/desktop/lists.md
+        - name: Data tables
+          href: ./ui-flows/desktop/datatables.md
+        - name: Datatype properties
+          href: ./ui-flows/desktop/datatype-properties.md
+      - name: Variable manipulation and the % notation
+        href: ./ui-flows/desktop/variable-manipulation.md
+    - name: Errors
       items:
-      - name: Email interaction with 2FA
-        href: ./ui-flows/desktop/email-interaction-2fa.md
-      - name: Making use & configuring the CSS selectors
-        href: ./ui-flows/desktop/css-selectors.md
-      - name: Making use of interactive & non-interactive flows
-        href: ./ui-flows/desktop/interactive-vs-non-interactive-flows.md
+        - name: Errors
+          href: ./ui-flows/desktop/errors.md
+        - name: The error detail view
+          href: ./ui-flows/desktop/error-detail-view.md
+    - name: Finding usages within flows
+      href: ./ui-flows/desktop/finding-usages.md
+    - name: Implementing basic logic in flows
+      items:
+      - name: Loops
+        items:
+        - name: Loops
+          href: ./ui-flows/desktop/loops.md
+        - name: Simple loops
+          href: ./ui-flows/desktop/simple-loops.md
+        - name: Loop condition
+          href: ./ui-flows/desktop/loop-condition.md
+        - name: For each loop
+          href: ./ui-flows/desktop/for-each-loop.md
+      - name: Conditionals
+        items:
+        - name: Conditionals
+          href: ./ui-flows/desktop/conditionals.md
+        - name: If/else
+          href: ./ui-flows/desktop/if-else.md
+        - name: If variations
+          href: ./ui-flows/desktop/if-variations.md
+        - name: Switch-case model
+          href: ./ui-flows/desktop/switch–case-model.md
 - name: Solutions
   items:
   - name: Overview
