@@ -32,6 +32,9 @@ An organization's data is critical to its success. Its data needs to be readily 
 
 Take a look at the [data loss prevention policy documents](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) to learn more about protecting your data.
 
+>[!IMPORTANT]
+>Administrators control data loss prevention policies. Contact your administrator if a data loss prevention policy is blocking your flows from running.
+
 
 ## Next steps
 

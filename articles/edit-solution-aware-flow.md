@@ -1,6 +1,6 @@
 ---
-title: Overview of solution-aware flows | Microsoft Docs
-description: Learn the benefits of creating flows in solutions.
+title: Edit solution-aware flows | Microsoft Docs
+description: Learn how to edit flows in solutions.
 services: ''
 suite: flow
 documentationcenter: na
@@ -33,12 +33,12 @@ Follow these steps to edit a solution-aware flow.
 1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains the flow you want to edit.
 
-   ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
+   ![Displays a new flow inside a solution](./media/edit-solution-aware-flow/new-flow-inside-solution.png "Displays a new flow inside a solution")
 
 1. Select **...** (More Commands) for your flow, and then select **Turn off**.
 1. Select **...** (More Commands) for your flow, and then select **Edit**.
 
-   ![](./media/edit-solution-aware-flow/edit-flow.png)
+   ![Displays editing a flow](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a flow")
    
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.

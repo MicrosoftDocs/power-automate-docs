@@ -12,7 +12,7 @@
     href: get-started-logic-template.md
   - name: Create a flow on a phone
     href: mobile-create-flow.md
-  - name: Create a team flow
+  - name: Share a flow
     href: create-team-flows.md
   - name: Create a flow that uses Common Data Service
     href: common-data-model-intro.md
@@ -20,7 +20,7 @@
     href: whats-new.md
   - name: Learning Catalog
     items:
-    - name: Learning Catalog
+    - name: Overview
       href: learning-catalog/learning-catalog.md
     - name: App Maker
       href: learning-catalog/learning-catalog-app-maker.md
@@ -56,9 +56,9 @@
     href: onedrive-business-launch-panel.md
   - name: Filter and copy data
     href: odata-filters.md
-  - name: Use a Flic
+  - name: Run your flows with Flics
     href: flic-button-flows.md
-  - name: Use a bttn
+  - name: Run your flows with bttns
     href: bttn-button-flows.md
 - name: Button flows
   items:
@@ -238,6 +238,8 @@
     href: mobile-manage-flows.md
   - name: Publish a template
     href: publish-a-template.md
+  - name: Turn a flow on or off
+    href: disable-flow.md
 - name: Troubleshoot
   items:
   - name: Watch a flow

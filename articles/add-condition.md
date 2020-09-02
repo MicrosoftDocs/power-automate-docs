@@ -76,7 +76,7 @@ Specify that a flow performs one or more tasks only if a condition is true. For 
 
 ![Add complex conditions](./media/add-condition/add-complex-condition.png)
 
-You can use any expression from the *Workflow definition language* in advanced mode. Learn about all the available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+Learn about all the available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
 
 ## Next steps
 

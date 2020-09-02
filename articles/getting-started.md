@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2019
+ms.date: 7/29/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -24,52 +24,61 @@ search.audienceType:
 
 # Get started with Power Automate 
 
-Welcome! Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+Welcome! What can you expect from Power Automate? Here are a few examples of what you can do:
+
+* Automate business processes
+* Send automatic reminders for past due tasks
+* Move business data between systems on a schedule
+* Connect to almost 300 data sources or any publicly available API
+* You can even automate tasks on your local computer like computing data in Excel. 
+
+Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation. 
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/hCuxuUaGC6Y]
 
 
+## Who is Power Automate for? 
+
+*What skills do you need to have?* 
+Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
+
+*What industries can benefit from Power Automate?* 
+Check out how some companies implemented Power Platform solutions using Power Automate in: 
+
+  * [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
+  * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
+  * [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
+  * [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+  * [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
+
+Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
+
+
+The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+
 ## Types of flows
 
-Power Automate is one of the pillars of Power Platform. It provides a low code platform for workflow and process automation. Here's a list of the different types of flows:
+See the following table to learn more about the types of flow that you can build to help address your use cases.
 
-| **Flow type**                                                                       | **Use case**                                                                                  | **Target**                                                                             |
+| **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create a flow that performs one or more tasks automatically after it's triggered by an event. | [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services. |
-| [Button flows](introduction-to-button-flows.md)              | Run repetitive tasks from anyplace, at any time, via your mobile device.                        |                                                                                        |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Create a flow that performs one or more tasks on a schedule.             |                                                                                        |
-| [Business process flows](business-process-flows-overview.md) | Define a set of steps for people to follow to take them to a desired outcome.                 | Human processes                                                                        |
-| [UI flows](ui-flows/overview.md)                                                | Record and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
+| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
+| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
+| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
+| [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow.                 | Human processes such as customer service requests, approvals, IT development,...                                                                        |
+| [UI flows](ui-flows/overview.md)                                                | Record  clicks and keyboard strokes from your Desktop and Web applications and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
-You can create and manage all flows from the **My flows** tab in Power Automate.
 
-If you are a Dynamics 365 user, you may also be familiar with Classic Common Data Service processes which include, [workflows](configure-workflow-steps.md), [actions](create-actions.md), [mobile task flows](create-mobile-task-flow.md), and [dialogs](use-cds-for-apps-dialogs.md).
 
-The first step is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin) on your tablet, desktop computer, or even your phone.
-
-## Check out the start page ##
+## Check out the start page 
 
 [On the start page](https://flow.microsoft.com) for Power Automate, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
-With Power Automate, you can:
-
-- Easily search for templates and services.
-
-    ![Flow start page 1](./media/getting-started/flowhome1.png)
-
-- Choose from the most popular services.
-
-    ![Flow start page 2](./media/getting-started/flowhome2.png)
-
-- See an overview of each flow.
-
-    ![Flow start page 3](./media/getting-started/flowhome3.png)
-
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
-## Create your first flow ##
+## Create your first flow 
 
 1. Select a template that's useful for you. A simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
@@ -90,9 +99,9 @@ Each template is designed for a specific purpose. For example, there are templat
 
 [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
-## Get creative ##
+## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [150 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a flow](./media/getting-started/build-a-flow.png)
 
@@ -137,10 +146,10 @@ From the notification center, you can navigate to the **Activity** page of Power
 
 ![Notification center](media/getting-started/notification-center.png)
 
-## Use the mobile app ##
+## Use the mobile app 
 
 Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
 
-## We're here to help ##
+## We're here to help 
 
 We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.

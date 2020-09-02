@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/07/2020
+ms.date: 08/04/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -37,6 +37,9 @@ These are limits for a single outgoing request.
 | --- | --- |
 | Request Timeout for synchronous calls |120 Seconds |
 | Request Timeout for Async calls|Configurable. Max is 30 days. |
+
+>[!NOTE]
+>If you test a flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
 
 ### Message size
 
@@ -112,6 +115,8 @@ These are limits for flows.
 
 ## SharePoint limits
 There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## IP address configuration
 The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
