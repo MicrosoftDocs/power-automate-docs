@@ -99,9 +99,9 @@
   - name: Overview
     href: ./teams/overview.md
   - name: Trigger flows from Teams messages
-    href: ./teams/trigger-flow-teams-message.md
+    href: ../trigger-flow-teams-message.md
   - name: Use flows with adaptive cards
-    href: ./teams/create-adaptive-cards.md
+    href: ../create-adaptive-cards.md
     items:
     - name: Overview of adaptive cards for Teams
       href: overview-adaptive-cards.md
