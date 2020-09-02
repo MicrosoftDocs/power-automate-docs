@@ -37,7 +37,14 @@ To use a captured element in an action, simply select it from the drop-down list
 
 -----------------IMAGE----------------
 
-## Selector Builder
-Manage a UI element’s selectors by right selecting any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor. To manually enter the selector’s value, toggle **Visual editor** off, and the text value of the selector will become editable:
+## Element Types
+
+Captured elements are divided into two main categories, based on the type of application they were catured from: **UI controls** and **Web controls**.
+
+Any captured elements that are part of a web page displayed in a compatible web browser (Explorer, Edge, Firefox, Chrome) are automatically saved as web controls, and may be used as input to **Web automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
+
+## Element properties
+
+Manage an element’s selectors by right selecting any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor. To manually enter the selector’s value, toggle **Visual editor** off, and the text value of the selector will become editable:
 
 --------------IMAGE-------------
