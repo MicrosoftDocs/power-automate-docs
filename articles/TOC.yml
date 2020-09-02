@@ -187,13 +187,13 @@
           href: ./ui-flows/desktop/enabling-disabling-actions.md
       - name: The flow designer workplace
         items:
-        - name: The flow designer workplace
-          href: ./ui-flows/desktop/designer-workplace.md
+        - name: The flow designer workspace
+          href: ./ui-flows/desktop/designer-workspace.md
           items:
           - name: Setting up subflows
             href: ./ui-flows/desktop/setting-subflows.md
           - name: Managing the workplace toolbar
-            href: ./ui-flows/desktop/managing-workplace-toolbar.md
+            href: ./ui-flows/desktop/managing-workspace-toolbar.md
             items:
             - name: Searching in the flow
               href: ./ui-flows/desktop/searching-flow.md
