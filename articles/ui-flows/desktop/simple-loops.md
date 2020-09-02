@@ -20,7 +20,7 @@ The idea behind a loop is to make a flow repeat one or more actions multiple tim
 
 This loop repeats the actions between the **Loop** and **End** actions for a set number of times. A loop index variable is created automatically to track the current iteration’s number.
 
-![The Loop action.](../../media/simple-loops/loop-action.png)
+![The Loop action.](media\simple-loops\loop-action.png)
 
 A simple loop is ideal to use in two cases:
 
@@ -28,6 +28,6 @@ A simple loop is ideal to use in two cases:
 
 1. The loop index variable must be used somewhere inside the loop.
 
-![An example flow with a Loop action .](../../media/simple-loops/loop-example.png)
+![An example flow with a Loop action .](media\simple-loops\loop-example.png)
 
 In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.

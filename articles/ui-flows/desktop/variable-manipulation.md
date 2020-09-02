@@ -18,25 +18,25 @@ search.audienceType:
 
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
-![Quote notation in a Change text case action's field.](../media/variable-manipulation/quote-notation.png)
+![Quote notation in a Change text case action's field.](media\variable-manipulation\quote-notation.png)
 
 Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using the backslash (**\\**).
 
 **Power Desktop Automation** enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
 
-![Complex expression in a Set variable action's field.](../media/variable-manipulation/expression.png)
+![Complex expression in a Set variable action's field.](media\variable-manipulation\expression.png)
 
 **Hardcoded values**
 
 To include a hardcoded text value inside a variable, use quotes. Every value between the quote characters will be treated as a text value and not as a variable name.
 
-![Hardcoded values in a Set variable action's field.](../media/variable-manipulation/hardcoded-values.png)
+![Hardcoded values in a Set variable action's field.](media\variable-manipulation\hardcoded-values.png)
 
 **Variable names**
 
 Variables can be used by adding their name to the expression without any further notation.
 
-![Multiple variables in a Set variable action's field.](../media/variable-manipulation/variables-names.png)
+![Multiple variables in a Set variable action's field.](media\variable-manipulation\variables-names.png)
 
 **Basic arithmetic**
 
@@ -77,4 +77,4 @@ Logical operators can also be used to check multiple conditions simultaneously, 
 
 To change the operators' priority, use parentheses. Parentheses are handled the same way as in algebra and programming languages.
 
-![Expression with parentheses in a Set variable action's field.](../media/variable-manipulation/parentheses.png)
+![Expression with parentheses in a Set variable action's field.](media\variable-manipulation\parentheses.png)

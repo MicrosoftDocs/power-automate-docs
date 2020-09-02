@@ -22,7 +22,7 @@ These variables are passed to and from **PAD**, allowing you to create sophistic
 
 To create an input or output variable, select the **+**  button in the **Variables** pane and choose the respective option.
 
-![The plus button in the Variables pane to create new input and output variables.](../media/input-output-variables/create-input-output-variable.png)
+![The plus button in the Variables pane to create new input and output variables.](media\input-output-variables\create-input-output-variable.png)
 
   
 In the **Edit variable** dialog, populate the following fields:
@@ -33,4 +33,4 @@ In the **Edit variable** dialog, populate the following fields:
 - **External name**: The name used outside the flow. The external name is the name that will appear in **Power Automate**.
 - **Description**: A description of the variable. This field is a mandatory and will appear in **Power Automate**.
 
-![The Add a new input variable dialog](../media/input-output-variables/Add-new-input-variable-window.png)
+![The Add a new input variable dialog](media\input-output-variables\Add-new-input-variable-window.png)
