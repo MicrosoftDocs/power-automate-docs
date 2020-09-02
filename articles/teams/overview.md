@@ -24,35 +24,24 @@ search.audienceType:
 
 # Overview of using flows in Microsoft Teams
 
-## Working with flows
+Flows can be used in three scenarios with Microsoft Teams:
 
-You can build flows to customize and add further value to Microsoft Teams from within the Power Apps Teams app. 
-Customers can create **Instant**, **Scheduled**, and **Automated** flows from within, with access to over 350 connectors. This includes a connector to work with Tables within Teams as well!  
-Note: You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all 350 connectors, including premium connectors. Users with a Microsoft Office license can use all standard connectors.
+Scenario|Description
+--------|-------
+Trigger [flows from Teams messages](../trigger-flow-teams-message.md).| In this scenario, you can create flows that trigger when someone selects a Teams message. The flow can then run as any other flow you create.
+Use flows with [adaptive cards](../create-adaptive-cards.md).| Here, adaptive cards can be used as the trigger for flows. The full set of rich adaptive cards is available to you.
+Use flows from within the [Power Apps app in Teams](use-flows-power-apps-app).|Use the Power Apps app in Teams to create flows that use [Project Oakdale](/powerapps/teams/overview). Project Oakdale is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows within Teams using Power Apps and Power Automate.
 
-## Create a flow in Teams
 
-1. Navigate to the **Build** tab in your Power Apps app, select **New**, and then select **Flow** as shown in the following image.
+## Licensing
 
-   ![Create a flow](..\media\overview-teams-flows\new-flow.png)
+There are no additional licensing requirements when you use Power Automate with Microsoft Teams.
 
-1. The Power Automate designer opens, allowing you to create and save your flows.
+For details licensing information about Project Oakdale, see [licensing and restrictions](/power-platform/admin/about-teams-environment?branch=teams-preview#licensing-and-restrictions) in the Power Platform admin guide.
 
-   ![View of the designer](..\media\overview-teams-flows\designer.png)
 
-1. To find your saved flows, select **Build**, and then select **Flows** in the tree view. 
 
-   ![All flows](..\media\overview-teams-flows\all-flows.png)
 
-## Customize a flow
-
-In Teams, you could have acquired flows from an installed app, or you may have created them yourself. You can update or customize either of these flows. To update your flow, select it from the recently updated list, or select **See all** > **flow**, and then select **Edit**.  
-
-   ![Customize flows](..\media\overview-teams-flows\customize-flow.png)
-
-## View details and run history
-
-Select **Details** from the menu of the flow in which you are interested to see the run history and other details for your flows. 
 
 
 
