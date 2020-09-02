@@ -22,7 +22,7 @@ A DLP policy is simply a named rule that places each service into one of two mut
 **Note**: Adding a service to one data group automatically removes it from the other data group. For example, if Twitter is currently located in the **business data only** data group, and you don't want to allow business data to be shared with Twitter, simply add the Twitter service to the **no business data allowed** data group. This will remove Twitter from the **business data only** data group.
 
 ## Here's what you need to create a DLP
-* Access to the Power Automate [admin center](https://admin.flow.microsoft.com)  
+* Access to the Power Automate [Power Platform admin center](https://admin.powerplatform.microsoft.com/)  
 * An account in the Environment Admin role  
 * An environment with users assigned to it  
 

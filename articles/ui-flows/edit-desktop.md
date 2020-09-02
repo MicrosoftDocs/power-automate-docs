@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/20/2020
+ms.date: 07/31/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -84,7 +84,127 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Select **Record** from the recorder control.
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
-1. Select **Save**, and then test your UI flow.
+1. Select **Save**, and then test your UI flow.\
+
+## Provide command line arguments at launch
+
+After you record your UI flows actions, you can provide command line arguments for the apps that your UI flows launch. 
+
+Follow these steps to add command line arguments to the apps that your UI flow launches:
+
+1.	Record a UI flow with the desktop recorder. 
+1.	Select **Done** on the recorder, select the application launch action to expand it.
+   
+    The screenshot uses Notepad++ as an example. 
+
+    ![Displays the launch application step](../media/edit-desktop/cmd-line-app-launch-step.png "Displays the launch application step")
+
+
+1. Select **Show advanced options**.
+
+   ![Select the link to reveal the advanced options](../media/edit-desktop/cmd-args-advanced.png "Select the link to reveal the advanced options")
+
+1. Provide the command line arguments here:
+
+   ![Displays the text field for the command line arguments](../media/edit-desktop/cmd-args.png "[Displays the text field for the command line arguments")
+
+1.	You can provide any valid command line argument for your application.
+
+   >[!Important]
+   >Do not pass sensitive text like passwords through command line arguments.
+
+
+## Add a variable
+
+You can use variables to perform multiple actions within your UI flows. For example, you can use a variable to count how many times an operation was performed in a loop. Or, you can use a variable to create an string array with the screen readings done in a loop.
+
+>[!TIP]
+>You can use integer, float, Boolean, string, array, and object variable data types. 
+
+After you create a variable, you can perform other tasks, for example:
+
+- Increase or decrease the variable by a constant value, also known as increment and decrement.
+- Insert or append the variable’s value as the last item in a string or array.
+- Assign a different value to a variable.
+
+Follow these steps to create and use variables in a UI flow:
+
+1. Go to the beginning of the UI flow and select **Add an action**.
+
+   ![Select add an action](../media/edit-desktop/add-variable-add-action.png "Select add an action")
+
+1. Search for the word *variable*, and then select the **Initialize variable** action under the built-in category.
+
+   ![Select the initialize variable action](../media/edit-desktop/add-variable-initialize-variable.png "Select the initialize variable action")
+
+1. Initialize the variable to type that meets your needs.
+
+   ![Initialize the variable to the type you need](../media/edit-desktop/add-variable-initialize-value.png "Initialize the variable to the type you need")
+
+>[!TIP]
+>If your UI automation scenario involves reading values from a screen in a loop, you could achieve this by initializing the variable as an array type. 
+>
+>Then, within the UI flow, select the **Append to Array** variable action, and then use the output of **Get Text** action from dynamic content list.
+
+   ![You can append to an array in a loop](../media/edit-desktop/add-variable-add-loop.png "You can append to an array in a loop")
+
+## Copy and paste steps
+
+You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location within the same UI flow.  
+
+UI flows automatically renames the copied actions and scopes with a unique name. If the copied scope contains another scope, the nested structure is retained when you paste it from **My clipboard**. 
+
+>[!IMPORTANT]
+>This feature supports copying and adding actions within the same scope. You cannot paste actions into other scopes or UI flows.
+
+Follow these steps to copy and then paste actions and scopes:
+
+1. Select **…**, and then select **Copy to my clipboard** for the action or scope that you want to copy.
+
+   ![View of the copy clipboard](../media/edit-desktop/copy-action.png "View of the copy clipboard")
+
+1. Hover over the target location, and then select **Add an action**. 
+
+   >[!TIP]
+   >You can select **Add an action** directly if it is at the end of the scope or UI flow.
+      
+   ![Add an action selected](../media/edit-desktop/add-copied-action.png "Add an action selected")
+
+1.	Select **My clipboard**, and then select the action or scope you copied.
+
+    ![Select the copied action](../media/edit-desktop/select-action.png "Select the copied action")
+
+1. Notice that UI flows pastes the action card with a unique name.
+
+   ![View the new name of the copied action](../media/edit-desktop/action-unique-name.png "View the new name of the copied action")
+
+1. Also notice that any actions with screenshots will also retain them for easy reference. 
+
+   ![View retained screenshots](../media/edit-desktop/copied-screenshots.png "View retained screenshots")
+
+   ![More retained screenshots](../media/edit-desktop/retained-screen-shorts.png "View retained screenshots")
+
+
+## Paste a scope immediately after itself
+
+>[!NOTE]
+>If a scope does not have a **Close Application** action, and the user copies the scope and then pastes the scope immediately after the existing scope, the pasted actions will only be performed within the first application instance. 
+
+   ![Paste a scope](../media/edit-desktop/paste-scope-after-itself.png "Paste a scope")
+
+
+In this example, the highlighted actions **Left click 11** and **Replay keystrokes** will be performed in the first Notepad application, and another notepad instance will be launched. 
+
+To address this instance issue, users have two options:
+
+1. If you only want to perform the action(s) in the first application instance, you can copy and paste only the relevant actions in the first scope. If you want to copy and paste the entire scope at once, you should remove the Launch action in the pasted scope to prevent launching an extraneous application instance.
+
+   ![Relevant actions only](../media/edit-desktop/copy-paste-relevant-actions-only.png "Relevant actions only")
+
+1. If you want to perform the action(s) in a separate application instance, you can add a **Close application** action in the first scope, so that the second scope will have its own instance. 
+
+   ![Separate application instance](../media/edit-desktop/paste-scope-different-application.png "Separate application instance")
+
 
 ## Add a loop
 
@@ -139,6 +259,7 @@ Here are the steps to create a loop in a UI flow:
 >If the array is a simple string or integer array, you can use the **Current item** directly from the Dynamic content, like the following image. You can also use expressions.
 
 ![Use Current item](../media/edit-desktop/loop-use-current-item.png)
+
 
 ### Known Limitations:
 1.	Loops require static selectors. This means that the user interface (UX) element on which the repetitive action happens must not change. 

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/20/2017
+ms.date: 08/27/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -22,7 +22,6 @@ search.audienceType:
   - enduser
 ---
 # Create and test an approval workflow with Power Automate
-
 
 With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
@@ -38,18 +37,28 @@ Here's an overview of the flow we'll create and test:
 The flow performs the following steps:
 
 1. Starts when someone creates a vacation request in a SharePoint Online list.
-2. Adds the vacation request to the approval center, and then emails it to the approver.
-3. Sends an email with the approver's decision to the person who requested vacation.
-4. Updates the SharePoint Online list with the approver's decision comments.
+1. Adds the vacation request to the approval center, and then emails it to the approver.
+1. Sends an email with the approver's decision to the person who requested vacation.
+1. Updates the SharePoint Online list with the approver's decision comments.
+
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
-To complete this walkthrough, you must have access to:
+
+To complete this walk-through, you must have access to:
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
 Create these columns in your SharePoint Online list:
 
-   ![SharePoint Online list columns](./media/modern-approvals/sharepoint-list-fields.png)
+| Column | Type |
+| ------ | ------ |
+| Title | Single line of text |
+|Start date | Date and Time |
+| End Date | Date and Time |
+| Comments | Single line of text |
+| Approved | Yes/No |
+| Manager Comments | Single line of text |
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
@@ -66,18 +75,13 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 ## Add a profile action
 
-1. Select **New step**, and then select **Add an action**.
-   
-    ![new step](./media/modern-approvals/select-sharepoint-add-action.png)
-2. Enter **profile** into the **Choose an action** search box.
-   
+1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+
+1. Find, and then select the **Office 365 Users - Get my profile** action.
+
     ![search for profile](./media/modern-approvals/search-for-profile.png)
-3. Find, and then select the **Office 365 Users - Get my profile** action.
-   
-    ![select office users](./media/modern-approvals/select-my-profile.png)
-4. Provide a name for your flow, and then select **Create flow** to save the work we've done so far.
-   
-    ![save flow](./media/modern-approvals/save.png)
+
+1. Select the fields from your profile that you want to include in your flow, and then click **Create** to save the work you've done so far.
 
 ## Add an approval action
 
@@ -106,8 +110,6 @@ Follow these steps to send an email if the vacation request is approved:
 
 > [!NOTE]
 > **Site Address**, **List Name**, **Id**, and **Title** are required.
->
->
 
 ![update item configuration](./media/modern-approvals/configure-update-item.png)
 
@@ -123,14 +125,10 @@ Follow these steps to send an email if the vacation request is approved:
 
    > [!NOTE]
    > **Site Address**, **List Name**, **Id**, and **Title** are required.
-   >
-   >
 
-![update item card](./media/modern-approvals/configure-update-item-no.png)
+   ![update item card](./media/modern-approvals/configure-update-item-no.png)
 
-1. Select **Update flow** to save the work we've done.
-   
-    ![select update action](./media/modern-approvals/update.png)
+4. Select **Save** to save the work we've done.
 
 If you've followed along, your flow should resemble this screenshot:
 
@@ -145,7 +143,7 @@ Now that we've created the flow, it's time to test it!
 
 ## Create long-running approvals
 
-If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/long-lived-approvals-other-approval-improvements).
+If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
 >[!TIP]
 > If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval is completed.

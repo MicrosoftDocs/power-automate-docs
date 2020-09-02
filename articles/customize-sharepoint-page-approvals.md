@@ -30,6 +30,8 @@ In this article, you'll learn how to configure your SharePoint site to use a flo
 
 You must be a SharePoint site admin to perform the activities in this article.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 1. Sign in to SharePoint as a site admin.
 1. Select **Pages** from the navigation bar.
 
