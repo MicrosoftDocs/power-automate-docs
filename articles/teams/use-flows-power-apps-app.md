@@ -25,7 +25,7 @@ search.audienceType:
 # Use flows from within the Power Apps app in Teams
 
 You can build flows to customize and add further value to Microsoft Teams from within the Power Apps app in Teams. 
-You can create [instant](../introduction-to-button-flows), [scheduled](../run-scheduled-tasks), and [Automated](../get-started-logic-flow) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale Tables](/powerapps/teams/create-table) within Teams as well.
+You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [Automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale Tables](/powerapps/teams/create-table) within Teams as well.
 
 >[!NOTE]
 >You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all 350 connectors, including premium connectors. Users with a Microsoft 365 license can use all standard connectors.
