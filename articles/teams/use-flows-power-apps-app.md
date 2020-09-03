@@ -51,7 +51,7 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
    ![Select your location](..\media\overview-teams-flows\select-location.png)
 
-1. The **Build an automated flow** screen appears, allowing you to select a triger, create, and save your flow.
+1. The **Build an automated flow** screen appears, allowing you to select a trigger, create, and save your flow.
 
    >[!NOTE]
    >The screen that appears here will be different if you select instant or scheduled flow.
