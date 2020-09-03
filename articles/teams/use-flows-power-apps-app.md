@@ -1,19 +1,14 @@
 ---
 title: Use flows with the Power Apps app in Teams | Microsoft Docs
 description: Use flows from within the Power Apps app in Teams.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/03/2020
+ms.date: 08903/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -24,11 +19,15 @@ search.audienceType:
 
 # Use flows with the Power Apps app in Teams
 
-You can build flows to customize and add further value to Microsoft Teams from within the Power Apps app in Teams. 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
+
+You can build flows to customize and add further value to Microsoft Teams from within the new Power Apps app in Teams. 
 You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale Tables](/powerapps/teams/create-table) within Teams as well.
 
->[!NOTE]
->You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all 350 connectors, including premium connectors. Users with a Microsoft 365 license can use all standard connectors.
+> [!NOTE]
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
+> - You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
 
 ## Prerequisites 
 
@@ -40,21 +39,18 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 1. Navigate to the **Build** tab in your Power Apps app, and then select **See all**.
 
-1. Select **New**, select **Flow**, and then select the type of flow you want to create.
-
-   >[!TIP]
-   >Teams integration supports [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows only.
-
+1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
+ 
    ![Create a flow](..\media\overview-teams-flows\new-flow.png)
 
-1. If this is your first time creating an app, you'll have to select your location, and then select **Get started**.
+1. If this is your first time creating a flow, you'll have to select your country/region, and then select **Get started**.
 
    ![Select your location](..\media\overview-teams-flows\select-location.png)
 
 1. The **Build an automated flow** screen appears, allowing you to select a trigger, create, and save your flow.
 
    >[!NOTE]
-   >The screen that appears here will be different if you select instant or scheduled flow.
+   >The screen that appears here will be different if you selected instant or scheduled flow in step 2 earlier.
 
    ![View of the designer](..\media\overview-teams-flows\build-automated-flow.png)
 
@@ -77,7 +73,7 @@ To find your saved flows:
 
 In Teams, you could have acquired flows from an installed app, or you may have created them yourself. You can update or customize either of these flows. 
 
-1. To update a flow, select the **Build** tab, and then select **See all**.
+1. To update a flow, select the **Build** tab, and then select **See all** to see all the apps and flows in this team.
 
 1. Select the flow that you want to edit, and then select **Edit**.  
 
@@ -91,11 +87,6 @@ In Teams, you could have acquired flows from an installed app, or you may have c
 
    ![Customize flows](..\media\overview-teams-flows\view-details-history.png)
 
+### See also
 
-
-
-
-
-
-
-
+[Use the new Power Apps app in Teams](/powerapps/teams/overview)
