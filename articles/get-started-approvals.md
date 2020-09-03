@@ -41,7 +41,7 @@ When you create approval flows, they are saved in Common Data Service. Initially
 It can take a few minutes for the database provisioning to complete, and you’ll notice this delay the first time that you run the flow. Other users who create approval flows do not need any elevated permissions in the environment.
 
 >[!NOTE]
->THe default environment does't need to provision the Common Data Service database. 
+>If you're using the default environment, you don't need to provision the Common Data Service database. 
 
 ## License to create flows
 
