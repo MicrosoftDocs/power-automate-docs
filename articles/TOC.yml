@@ -123,8 +123,8 @@
       href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
-  - name: Use flows with the Power Apps app
-    href: ./teams/use-flows-power-apps-app.md
+  - name: Create flows using the Power Apps app
+    href: ./teams/create-flows-power-apps-app.md
 - name: Business process flows
   items:
   - name: Business process flows overview
