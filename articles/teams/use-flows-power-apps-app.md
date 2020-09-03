@@ -40,33 +40,58 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 1. Navigate to the **Build** tab in your Power Apps app, and then select **See all**.
 
-1. Select **New**, and then select **Flow**.
+1. Select **New**, select **Flow**, and then select the type of flow you want to create.
+
+   >[!TIP]
+   >Teams integration supports [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows only.
 
    ![Create a flow](..\media\overview-teams-flows\new-flow.png)
 
-1. The Power Automate designer opens, allowing you to create and save your flows.
+1. If this is your first time creating an app, you'll have to select your location, and then select **Get started**.
 
-   ![View of the designer](..\media\overview-teams-flows\designer.png)
+   ![Select your location](..\media\overview-teams-flows\select-location.png)
 
+1. The **Build an automated flow** screen appears, allowing you to select a triger, create, and save your flow.
 
-You can only create three types of flows....
+   >[!NOTE]
+   >The screen that appears here will be different if you select instant or scheduled flow.
+
+   ![View of the designer](..\media\overview-teams-flows\build-automated-flow.png)
 
 
 ## Work with your flows
 
-1. To find your saved flows, select **Build**, and then select **Flows** in the tree view. 
+To find your saved flows:
+
+1. Sign into Teams.
+
+1. Select **Power Apps** from the navigation list on the left side.
+
+   ![Select Power Apps](..\media\overview-teams-flows\select-power-apps.png)
+
+1. Select the **Build** tab, select the team in which you created your flow, and then select **See all** in the tree view. 
 
    ![All flows](..\media\overview-teams-flows\all-flows.png)
 
 ## Customize a flow
 
-In Teams, you could have acquired flows from an installed app, or you may have created them yourself. You can update or customize either of these flows. To update your flow, select it from the recently updated list, or select **See all** > **flow**, and then select **Edit**.  
+In Teams, you could have acquired flows from an installed app, or you may have created them yourself. You can update or customize either of these flows. 
+
+1. To update a flow, select the **Build** tab, and then select **See all**.
+
+1. Select the flow that you want to edit, and then select **Edit**.  
 
    ![Customize flows](..\media\overview-teams-flows\customize-flow.png)
 
 ## View details and run history
 
-Select **Details** from the menu of the flow in which you are interested to see the run history and other details for your flows. 
+1. To view the details and run history for a flow, select the **Build** tab, and then select **See all**.
+
+1. Select the flow for which you want to view the details, and then select **Details**.
+
+   ![Customize flows](..\media\overview-teams-flows\view-details-history.png)
+
+
 
 
 
