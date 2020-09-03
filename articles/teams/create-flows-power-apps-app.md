@@ -87,6 +87,7 @@ In Teams, you could have acquired flows from an installed app, or you may have c
 
    ![Customize flows](..\media\overview-teams-flows\view-details-history.png)
 
-### See also
+## Related articles
 
 [Use the new Power Apps app in Teams](/powerapps/teams/overview)
+[About the Project Oakdale environment](/power-platform/admin/about-teams-environment)
