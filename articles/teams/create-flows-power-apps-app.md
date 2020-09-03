@@ -89,5 +89,5 @@ In Teams, you could have acquired flows from an installed app, or you may have c
 
 ## Related articles
 
-[Use the new Power Apps app in Teams](/powerapps/teams/overview)
+[Use the new Power Apps app in Teams](/powerapps/teams/overview)<br/>
 [About the Project Oakdale environment](/power-platform/admin/about-teams-environment)
