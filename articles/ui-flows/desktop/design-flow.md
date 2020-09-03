@@ -17,12 +17,11 @@ search.audienceType:
 # Design a flow in Power Automate and Power Automate Desktop
 
 Create a new folder on the desktop, and name it **Countries**.
-Go to **flow.microsoft.com** and login with your credentials.
-Select **my flows**, then **+new**, and **Instant from blank**.
+Go to **flow.microsoft.com**, select **my flows**, then **+new**, and **Instant from blank**.
 
 ![alttext](\media\imgname.png)
 
-In the dialog, enter a flow name, select **Manually trigger a flow** and select **Create**.
+In the dialog, enter a flow name, select **Manually trigger a flow**, and then select **Create**.
 
 ![alttext](\media\imgname.png)
 
@@ -50,11 +49,11 @@ A message from the browser may appear, asking whether to allow flow.microsoft.co
 
 ![alttext](\media\imgname.png)
 
-In Power Automate Desktop, go to Variables and click on **+** to add a new input variable.
+In Power Automate Desktop, open the Variables pane, and click on **+** to add a new input variable.
 
 ![alttext](\media\imgname.png)
 
-Configure tha variable as follows:
+Configure the variable as follows:
 Variable type: Input
 Variable name: CountryName
 Default value: France
@@ -66,7 +65,7 @@ Add the **Get current date and time** action and set **Retrieve** to **Current d
 
 ![alttext](\media\imgname.png)
 
-Add the **Convert datetime to text** action. In **Datetime to convert**, select the **variables** icon and double click on **%CurrentDateTime%** in the popout to add the variable to the field. For Format to use set **Custom**, and enter **MM-dd-yyyy** in **Custom Format**. This action converts the datetime variable to a text variable, while also converting the date to the specified format.
+Add the **Convert datetime to text** action. In **Datetime to convert**, select the **variables** icon and double-click on **%CurrentDateTime%** in the popout to add the variable to the field. For Format to use set **Custom**, and enter **MM-dd-yyyy** in **Custom Format**. This action converts the datetime variable to a text variable, while also converting the date to the specified format.
 
 ![alttext](\media\imgname.png)
 
@@ -78,7 +77,9 @@ Add the **Create Folder** action and set **Create new folder into** to **%Specia
 
 ![alttext](\media\imgname.png)
 
-Add the **Write text to file** action and use the variables popout set File path to **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**. Additionally, set **Text to write** to **This text was written by Power Automate Desktop**. This action writes the specified text to a text file on the current user's desktop, and sets the filename to the current date.
+Add the **Write text to file** action and use the variables popout to set **File path** to **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**.
+
+Additionally, set **Text to write** to **This text was written by Power Automate Desktop**. This action writes the specified text to a text file on the current user's desktop, and sets the filename to the current date.
 
 ![alttext](\media\imgname.png)
 
@@ -141,11 +142,11 @@ When Power Automate connects to Power Automate Desktop, select **Run Flow** and 
 
 ![alttext](\media\imgname.png)
 
-When the flow finishes running, all actions will have a green checkmark icon and a message will appear saying **Your flow ran successfully.**
+When the flow finishes running, all actions will have a green checkmark icon and a notification will confirm that the flow ran successfully.
 
 ![alttext](\media\imgname.png)
 
-Select the **Run a UI flow (V2)** action to open its nputs and outputs. In the Outputs, select **Show raw outputs**. This displays the two variables, **FileCount** and **FilePath** which were returned from Power Automate Desktop. Any output variables may be used elsewhere in the flow.
+Select the **Run a UI flow (V2)** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
 
 ![alttext](\media\imgname.png)
 
