@@ -20,10 +20,10 @@ Subflows are groups of actions, which may be referenced as a group within a flow
 
 Every flow contains the **Main** subflow - this is the subflow that is run when a flow starts. Any other subflows may be invoked through the **Run Subflow** action:
 
-![The Run subflow action](../media/run-subflow-action.png)
+![The Run subflow action](./media/setting-subflows/run-subflow-action.png)
 
 Subflows are shown in tabs, directly over the main workspace. To add a new subflow, select the subflows tab, select **+**, and enter the subflow name.
 
-![Add new subflow](../media/add-new-subflow.png)
+![Add new subflow](./media/setting-subflows/add-new-subflow.png)
 
 Select a subflow tab to edit the respective subflow.
