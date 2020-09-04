@@ -210,6 +210,40 @@ ProcessRobot
 - [Databases](https://support.softomotive.com/support/solutions/folders/35000220536)
 
 
+## Best practices for creating processes
+
+Here are some tips for you to consider when you create processes.
+
+
+WinAutomation
+
+- [Triggers](https://support.softomotive.com/support/solutions/folders/35000220511)
+- [Web Automation](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI Automation](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel Automation](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [Text Manipulation](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [Email Automation](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [Mathematical Operations](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [Variables](https://support.softomotive.com/support/solutions/folders/35000220520)
+
+ProcessRobot
+
+- [Control Desk](https://support.softomotive.com/support/solutions/folders/35000220537)
+- [Dashboards](https://support.softomotive.com/support/solutions/folders/35000220538)
+- [Triggers](https://support.softomotive.com/support/solutions/folders/35000220521)
+- [Web Automation](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI Automation](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel Automation](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [Text Manipulation](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [Email Automation](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [Mathematical Operations](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [Variables](https://support.softomotive.com/support/solutions/folders/35000220520)
+
+
 ## Learn more
 
 -   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
