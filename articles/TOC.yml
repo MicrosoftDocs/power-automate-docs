@@ -197,28 +197,27 @@
         items:
         - name: The flow designer workspace
           href: ./ui-flows/desktop/designer-workspace.md
+        - name: Setting up subflows
+          href: ./ui-flows/desktop/setting-subflows.md
+        - name: Managing the workspace toolbar
+          href: ./ui-flows/desktop/managing-workspace-toolbar.md
           items:
-          - name: Setting up subflows
-            href: ./ui-flows/desktop/setting-subflows.md
-          - name: Managing the workplace toolbar
-            href: ./ui-flows/desktop/managing-workspace-toolbar.md
-            items:
-            - name: Searching in the flow
-              href: ./ui-flows/desktop/searching-flow.md
-            - name: Using the go to line option
-              href: ./ui-flows/desktop/using-line-option.md
-            - name: Making use of recorders
-              href: ./ui-flows/desktop/making-use-recorders.md
-          - name: Debugging a flow
-            href: ./ui-flows/desktop/debugging-flow.md
-            items:
-            - name: Run / stop and pause from a flow designer
-              href: ./ui-flows/desktop/run-stop-pause.md
-            - name: Adding breakpoints
-              href: ./ui-flows/desktop/adding-breakpoints.md
-            - name: Running the flow action by action
-              href: ./ui-flows/desktop/running-action.md
-          - name: The Power Automate Desktop Designer Status bar
+          - name: Searching in the flow
+            href: ./ui-flows/desktop/searching-flow.md
+          - name: Using the go to line option
+            href: ./ui-flows/desktop/using-line-option.md
+          - name: Making use of recorders
+            href: ./ui-flows/desktop/making-use-recorders.md
+        - name: Debugging a flow
+          href: ./ui-flows/desktop/debugging-flow.md
+          items:
+          - name: Run / stop and pause from a flow designer
+            href: ./ui-flows/desktop/run-stop-pause.md
+          - name: Adding breakpoints
+            href: ./ui-flows/desktop/adding-breakpoints.md
+          - name: Running the flow action by action
+            href: ./ui-flows/desktop/running-action.md
+          - name: The Power Automate Desktop designer status bar
             href: ./ui-flows/desktop/status-bar.md
     - name: Manage the Variables pane
       items:
