@@ -18,8 +18,8 @@ search.audienceType:
 
 Upon opening the Flow designer, the actions pane on the left side of the window shows all the action groups. 
 
-![alttext](\media\actions-pane\imgname.png)
+![alttext](\media\actions-pane\actions-pane.png)
 
-To quickly find a specific action, enter the name of the action in the search bar.
+To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
 
-![alttext](\media\actions-pane\imgname.png)
+![alttext](\media\actions-pane\actions-search.png)

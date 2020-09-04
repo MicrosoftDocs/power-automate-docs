@@ -16,6 +16,4 @@ search.audienceType:
 
 # Run a flow action by action
 
-The **Step** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane, to check the value of any variable at the point where it is paused. This feature is useful for debugging.
-
-![alttext](\media\running-action\imgname.png)
+The **Run Next Action** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane to check the value of any variable at the point where it's paused. This feature is useful for debugging.
