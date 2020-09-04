@@ -23,7 +23,7 @@ When using a UI automation action, a UI element will have to be provided as inpu
 
 ![UI element input](./media/ui-elements/ui-element-input.png)
 
-Add a new UI element either directly from the action properties, or from the UI elements pane on the right hand side of the designer:
+Add a new UI element either directly from the action properties, or from the UI elements pane on the right-hand side of the designer:
 
 ![Add new UI element](./media/ui-elements/add-new-ui-element.png)
 
@@ -39,9 +39,9 @@ To use a captured element in an action, simply select it from the drop-down list
 
 ## Element Types
 
-Captured elements are divided into two main categories, based on the type of application they were catured from: **UI controls** and **Web controls**.
+Captured elements are divided into two main categories, based on the type of application they were captured from: **UI controls** and **Web controls**.
 
-Any captured elements that are part of a web page displayed in a compatible web browser (Explorer, Edge, Firefox, Chrome) are automatically saved as web controls, and may be used as input to **Web automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
+Any captured elements that are part of a web page displayed in a compatible web browser (Internet Explorer, Microsoft Edge, Firefox, Google Chrome) are automatically saved as web controls, and may be used as input to **Web automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
 
 ## Element properties
 
@@ -49,6 +49,6 @@ Manage an element’s selectors by right selecting any UI element and selecting 
 
 ![The visual selector editor](./media/ui-elements/visual-selector-editor.png)
 
-To manually enter the selector’s value, toggle **Visual editor** off, and the text value of the selector will become editable:
+To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable:
 
 ![The manual selector editor](./media/ui-elements/manual-selector-editor.png)
