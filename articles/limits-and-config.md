@@ -93,15 +93,15 @@ These limits are to the amount of storage used to store the run-history of the f
 
 | **User licenses**                                        |    **Storage usage(input/output) / 24 hours**   |
 |----------------------------------------------------------|-------------------------------------------------|
-| Dynamics 365 Enterprise applications<sup>1</sup>         | 125GB                                            |
-| Dynamics 365 Professional <sup>2</sup>                   | 25GB                                             |
-| Dynamics 365 Team Member                                 | 25GB                                             |
-| Power Apps per user plan                                 | 25GB                                             |
-| Power Automate per user plan                                 | 25GB                                             |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2.5GB                                     |
-| Application user / Non-interactive users                 |  2.5GB            |                                
-| Power Apps per app plan                                  |  2.5GB            |                        
-| Power Automate Per flow Plan                             |  125GB            |                                
+| Dynamics 365 Enterprise applications<sup>1</sup>         | 10GB                                            |
+| Dynamics 365 Professional <sup>2</sup>                   | 10GB                                             |
+| Dynamics 365 Team Member                                 | 10GB                                             |
+| Power Apps per user plan                                 | 10GB                                             |
+| Power Automate per user plan                                 | 10GB                                             |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 1GB                                     |
+| Application user / Non-interactive users                 |  1GB            |                                
+| Power Apps per app plan                                  |  1GB            |                        
+| Power Automate Per flow Plan                             |  50GB            |                                
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
