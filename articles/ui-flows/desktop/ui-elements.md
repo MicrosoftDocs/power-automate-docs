@@ -21,11 +21,11 @@ Actions under the **UI automation** group are designed to directly interact with
 ## UI elements
 When using a UI automation action, a UI element will have to be provided as input:
 
-![UI element input](../media/ui-elements/ui-element-input.png)
+![UI element input](./media/ui-elements/ui-element-input.png)
 
 Add a new UI element either directly from the action properties, or from the UI elements pane on the right hand side of the designer:
 
-![Add new UI element](../media/ui-elements/add-new-ui-element.png)
+![Add new UI element](./media/ui-elements/add-new-ui-element.png)
 
 To add an element to the flow, highlight it and press **Ctrl & click**:
 
@@ -35,7 +35,7 @@ To rename or delete UI elements, right-click on an item and select the appropria
 
 To use a captured element in an action, simply select it from the drop-down list:
 
-![Add UI element as input](../media/ui-elements/add-ui-element-as-input.png)
+![Add UI element as input](./media/ui-elements/add-ui-element-as-input.png)
 
 ## Element Types
 
@@ -47,8 +47,8 @@ Any captured elements that are part of a web page displayed in a compatible web 
 
 Manage an element’s selectors by right selecting any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
 
-![The visual selector editor](../media/ui-elements/visual-selector-editor.png)
+![The visual selector editor](./media/ui-elements/visual-selector-editor.png)
 
 To manually enter the selector’s value, toggle **Visual editor** off, and the text value of the selector will become editable:
 
-![The manual selector editor](../media/ui-elements/manual-selector-editor.png)
+![The manual selector editor](./media/ui-elements/manual-selector-editor.png)
