@@ -88,10 +88,10 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 | Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
 | Actions concurrent outgoing calls – Plan 2, Per User, and Per Flow licenses | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
-## Storage limits
+## Data consumption limits
 These limits are to the amount of storage used to store the run-history of the flow.  These are the maximum limits allowed for storage by the plan.
 
-| **User licenses**                                        |    **Storage usage(input/output) / 24 hours**   |
+| **User licenses**                                        |    **Data consumption / 24 hours**   |
 |----------------------------------------------------------|-------------------------------------------------|
 | Dynamics 365 Enterprise applications<sup>1</sup>         | 10GB                                            |
 | Dynamics 365 Professional <sup>2</sup>                   | 10GB                                             |
