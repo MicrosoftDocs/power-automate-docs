@@ -41,4 +41,7 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
 
  ## Recording vs building a flow
 
- 
+Any actions created through the use of a recorder can be edited manually once the recording is finished. Use the recorder in a flow that is already under development to add the recorded steps to it.
+
+> [!NOTE]
+> Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals or loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.
