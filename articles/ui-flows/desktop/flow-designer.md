@@ -17,3 +17,4 @@ search.audienceType:
 # Flow designer
 
 Flow designer contains all the tools required to design and debug a flow. Additionally, any images, UI elements or variables of a flow can be accessed and managed. The flow designer consists of multiple elements, such as the actions pane, the variables pane and the workspace, which display information about the status of the flow, and all the data it contains. Subflows are separated into tabs to facilitate designing large, complex flows.  Tools for debugging flows, such as breakpoints and the option to run a flow step by step are also available in flow designer. Any error information is displayed, and the erroneous actions are immediately highlighted.
+

@@ -18,5 +18,5 @@ search.audienceType:
 
 Select **Run** to run the flow. The **Step** button runs the flow action by action and pauses it after each action is completed. The **Stop** button stops the flow completely.
 
-![alttext](\media\imgname.png)
+![alttext](\media\run-stop-pause\imgname.png)
 

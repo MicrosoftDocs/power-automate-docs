@@ -24,11 +24,11 @@ Select **Start recording** in the Web recorder window to record actions. Web rec
 
 Select the bin icon to remove individual actions, or select **Reset Recording** to delete all actions recorded so far. After recording is complete, the recorded actions and comments are placed in the workspace.
 
-![alttext](\media\imgname.png)
+![alttext](\media\making-use-recorders\imgname.png)
 
 ## Desktop Recorder
 Select **Desktop recorder** in the toolbar to record desktop actions. Select **Start recording** in the Desktop recorder window to record actions. Desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. Select **Pause recording** to suspend recording actions. Select **+** to add a comment to the Recorded actions.
 
 Select the bin icon to remove individual actions, or select **Reset Recording** to delete all actions recorded so far. After recording is complete, the recorded actions and comments are placed in the workspace.
 
-![alttext](\media\imgname.png)
+![alttext](\media\making-use-recorders\imgname.png)

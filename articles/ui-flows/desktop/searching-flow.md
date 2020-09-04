@@ -18,4 +18,4 @@ search.audienceType:
 
 To search for an action or variable within the flow, use the search field at the top right of the Flow designer window. The results pane will show all occurrences of text string by action and subflow. Double click on a result to highlight the action which contains it.
 
-![alttext](\media\imgname.png)
+![alttext](\media\searching-flow\imgname.png)
