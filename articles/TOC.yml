@@ -170,10 +170,10 @@
       - name: Call the console from the portal
         href: ./ui-flows/desktop/create-flow-console.md
       - name: Design a flow
-        href: ./ui-flows/desktop/design-design-flow.md
-    - name: Run a power automate desktop flow
+        href: ./ui-flows/desktop/design-flow.md
+    - name: Run a Power Automate Desktop Flow
       href: ./ui-flows/desktop/run-pad-flow.md
-    - name: Link a power automate desktop flow with a flow
+    - name: Link a Power Automate Desktop Flow with a flow
       href: ./ui-flows/desktop/link-pad-flow-portal.md
     - name: The Power Automate Desktop Flow console
       href: ./ui-flows/desktop/console.md
@@ -222,7 +222,7 @@
             href: ./ui-flows/desktop/status-bar.md
     - name: Manage the Variables pane
       items:
-      - name: Manage the Variables pane
+      - name: Manage the variables pane
         href: ./ui-flows/desktop/manage-variables.md
       - name: Renaming a variable
         href: ./ui-flows/desktop/renaming-variable.md
