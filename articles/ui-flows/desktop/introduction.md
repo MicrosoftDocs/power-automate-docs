@@ -22,12 +22,12 @@ Power Automate Desktop broadens the existing RPA capabilities in Power Automate.
 
 It’s quicker and easier than ever to automate with the new intuitive Power Automate Desktop. 
 
-Begin your journey in Power Automate Desktop by [Creating a Power Automate Desktop flow](create-flow-console.md) 
+Begin your journey in Power Automate Desktop by [Creating a Power Automate Desktop flow](create-flow-console.md). 
 
 Power Automate Desktop allows you to automate both legacy applications such as terminal emulators, interact with modern desktop applications, Excel files, folders. Interact with the machine using images or coordinates. 
 
-You 'll find the list of actions available [here](actions.md).
+You 'll find the list of actions available [TODO: Yet to be added](actions.md).
 
 > [!NOTE]
-> - This is a preview feature, and is only available in English.
+> - This is a preview feature, and is available only in English.
 > - [!INCLUDE [cc-preview-features-definition.md](../../includes/cc-preview-features-definition.md)]
