@@ -51,12 +51,12 @@ In Power Automate Desktop, open the Variables pane, and select **+** and select 
 ![add new input variable](\media\design-flow\add-new-input-variable.png)
 
 Configure the variable as follows:
-Variable type: **Input**
-Variable name: **CountryName**
-Default value: **France**
-Data type: **String**
-External name: **CountryName**
-Description: **This is the country name input variable.**
+* Variable type: **Input**
+* Variable name: **CountryName**
+* Default value: **France**
+* Data type: **String**
+* External name: **CountryName**
+* Description: **This is the country name input variable.**
 
 ![edit variable input](\media\design-flow\edit-variable-input.png)
 
@@ -90,17 +90,17 @@ Add the **Get files in folder** action and set **Folder** to **%SpecialFolderPat
 
 In the **Variables** pane, create two Output variables as follows:
 
-Variable type: **Output**
-Variable name: **FileCount**
-External name: **FileCount**
-Description: **This is the file count output variable.**
+* Variable type: **Output**
+* Variable name: **FileCount**
+* External name: **FileCount**
+* Description: **This is the file count output variable.**
 
 and
 
-Variable type: **Output**
-Variable name: **FilePath**
-External name: **FilePath**
-Description: **This is the file path output variable.**
+* Variable type: **Output**
+* Variable name: **FilePath**
+* External name: **FilePath**
+* Description: **This is the file path output variable.**
 
 ![new output variable](\media\design-flow\new-output-variable.png)
 
@@ -108,15 +108,13 @@ Description: **This is the file path output variable.**
 
 Add two **Set variable** actions and configure them as follows:
 
-Set variable: **FilePath**
-
-To: **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**
+* Set variable: **FilePath**
+* To: **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**
 
 and
 
-Set variable: **FileCount**
-
-To: **%Files.count%**
+* Set variable: **FileCount**
+* To: **%Files.count%**
 
 ![set variable action properties](\media\design-flow\set-variable-action-properties.png)
 
