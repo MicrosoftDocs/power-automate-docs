@@ -169,6 +169,14 @@
       items:
       - name: Call the console from the portal
         href: ./ui-flows/desktop/create-flow-console.md
+      - name: Design a flow
+        href: ./ui-flows/desktop/design-design-flow.md
+    - name: Run a power automate desktop flow
+      href: ./ui-flows/desktop/run-pad-flow.md
+    - name: Link a power automate desktop flow with a flow
+      href: ./ui-flows/desktop/link-pad-flow-portal.md
+    - name: The Power Automate Desktop Flow console
+      href: ./ui-flows/desktop/console.md
     - name: The Power Automate Desktop Flow designer
       href: ./ui-flows/desktop/flow-designer.md
       items:
@@ -185,7 +193,7 @@
             href: ./ui-flows/desktop/configuring-actions-exceptions.md
         - name: Enabling and disabling actions
           href: ./ui-flows/desktop/enabling-disabling-actions.md
-      - name: The flow designer workplace
+      - name: The flow designer workspace
         items:
         - name: The flow designer workspace
           href: ./ui-flows/desktop/designer-workspace.md
@@ -210,7 +218,7 @@
               href: ./ui-flows/desktop/adding-breakpoints.md
             - name: Running the flow action by action
               href: ./ui-flows/desktop/running-action.md
-          - name: Status bar
+          - name: The Power Automate Desktop Designer Status bar
             href: ./ui-flows/desktop/status-bar.md
     - name: Manage the Variables pane
       items:
@@ -232,6 +240,10 @@
           href: ./ui-flows/desktop/datatype-properties.md
       - name: Variable manipulation and the % notation
         href: ./ui-flows/desktop/variable-manipulation.md
+    - name: UI elements
+      href: ./ui-flows/desktop/ui-elements.md
+    - name: Images
+      href: ./ui-flows/desktop/images.md
     - name: Errors
       items:
         - name: Errors
@@ -240,6 +252,8 @@
           href: ./ui-flows/desktop/error-detail-view.md
     - name: Finding usages within flows
       href: ./ui-flows/desktop/finding-usages.md
+    - name: Recording in a Power Automate Desktop flow
+      href: ./ui-flows/desktop/recording-flow.md
     - name: Implementing basic logic in flows
       items:
       - name: Loops
