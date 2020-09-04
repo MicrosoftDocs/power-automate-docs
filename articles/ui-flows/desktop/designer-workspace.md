@@ -18,7 +18,7 @@ search.audienceType:
 
 The central pane of the flow designer is called the workspace - this is where the series of actions that make up the flow is assembled:
 
------------------IMAGE----------------
+![The flow designer workspace](../media/flow-designer-workspace.png)
 
 During development, users may add, edit, and delete actions in the workspace.
 
