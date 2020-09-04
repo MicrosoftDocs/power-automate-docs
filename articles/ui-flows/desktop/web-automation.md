@@ -1,10 +1,10 @@
 ---
-title: The flow designer workspace | Microsoft Docs
-description: The flow designer workspace
+title: Web automation | Microsoft Docs
+description: Web automation
 author: rokontol
 ms.service: flow
 ms.topic: article
-ms.date: 09/01/2020
+ms.date: 09/04/2020
 ms.author: rokontol
 ms.reviewer: rokontol
 search.app: 
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# The flow designer workspace
+# Web automation
 
 The central pane of the flow designer is called the workspace - this is where the series of actions that make up the flow is assembled:
 
-![The flow designer workspace](../media/designer-workspace/flow-designer-workspace.png)
+![The flow designer workspace](../media/flow-designer-workspace.png)
 
 During development, users may add, edit, and delete actions in the workspace.
 
