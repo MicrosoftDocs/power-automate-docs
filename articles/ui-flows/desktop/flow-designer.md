@@ -1,7 +1,7 @@
 ---
 title: Flow designer | Microsoft Docs
 description: Introduction to Power Automate Desktop flow designer
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

@@ -1,7 +1,7 @@
 ---
 title: Using the go to line option | Microsoft Docs
 description: Using the go to line option in the workspace.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

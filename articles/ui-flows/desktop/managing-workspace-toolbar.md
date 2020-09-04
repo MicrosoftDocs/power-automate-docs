@@ -1,7 +1,7 @@
 ---
 title: Managing the workspace toolbar | Microsoft Docs
 description: Managing actions in the workspace and using the toolbar.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

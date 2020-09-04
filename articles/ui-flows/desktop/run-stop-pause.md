@@ -1,7 +1,7 @@
 ---
 title: Run, stop, and pause in flow designer | Microsoft Docs
 description: Using the run, stop, and pause buttons on the toolbar to control the flow.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

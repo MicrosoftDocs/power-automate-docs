@@ -1,7 +1,7 @@
 ---
 title: The status bar | Microsoft Docs
 description: Understand and configure the status bar.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

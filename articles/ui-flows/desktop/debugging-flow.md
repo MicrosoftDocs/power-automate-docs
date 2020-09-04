@@ -1,7 +1,7 @@
 ---
 title: Debugging a flow | Microsoft Docs
 description: Use the flow designer's debugging options to debug flows.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

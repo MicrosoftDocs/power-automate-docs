@@ -1,7 +1,7 @@
 ---
 title: Design a flow | Microsoft Docs
 description: Use power automate and flow designer to design a flow.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

@@ -1,7 +1,7 @@
 ---
 title: Searching in the flow | Microsoft Docs
 description: Using the search function to search in the flow.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020
