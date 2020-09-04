@@ -1,7 +1,7 @@
 ---
 title: Making use of the recorders | Microsoft Docs
 description: Using the web and desktop recorders to record user actions.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

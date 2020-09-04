@@ -1,7 +1,7 @@
 ---
 title: Create a Power Automate Desktop flow | Microsoft Docs
 description: Create a flow from the Power Automate Desktop console.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

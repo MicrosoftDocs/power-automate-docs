@@ -1,7 +1,7 @@
 ---
 title: Link a Power Automate Desktop flow with a flow | Microsoft Docs
 description: Link a Power Automate Desktop flow with a flow in the Power Automate portal
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

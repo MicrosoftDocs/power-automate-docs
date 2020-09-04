@@ -1,7 +1,7 @@
 ---
 title: Run Power Automate Desktop from the portal | Microsoft Docs
 description: Run Power Automate Desktop from the Power Automate portal
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020

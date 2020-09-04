@@ -1,7 +1,7 @@
 ---
 title: Run a flow action by action | Microsoft Docs
 description: Use the step button to run a flow one action at a time.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020
