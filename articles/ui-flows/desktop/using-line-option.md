@@ -18,4 +18,4 @@ search.audienceType:
 
 The Go to line function navigates to a specific line within the current subflow. It is helpful in subflows which contain a large number of actions. 
 
-![alttext](\media\imgname.png)
+![alttext](\media\using-line-option\imgname.png)

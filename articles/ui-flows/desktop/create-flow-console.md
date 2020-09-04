@@ -18,12 +18,12 @@ search.audienceType:
 
 To create a flow in Power Automate Desktop, launch the application and select **New Flow**.
 
-![alttext](\media\imgname.png)
+![alttext](\media\create-flow-console\imgname.png)
 
 Enter a name for the Flow, and click **OK**.
 
-![alttext](\media\imgname.png)
+![alttext](\media\create-flow-console\imgname.png)
 
 Create the flow in the **flow designer** and press **Ctrl+S** to save the flow. Close flow designer and the flow will appear in the console.
 
-![alttext](\media\imgname.png)
+![alttext](\media\create-flow-console\imgname.png)

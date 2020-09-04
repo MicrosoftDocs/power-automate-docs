@@ -18,4 +18,4 @@ search.audienceType:
 
 The **Step** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane, to check the value of any variable at the point where it is paused. This feature is useful for debugging.
 
-![alttext](\media\imgname.png)
+![alttext](\media\running-action\imgname.png)

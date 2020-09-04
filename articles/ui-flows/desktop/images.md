@@ -22,4 +22,4 @@ Select **Add a new folder** and specify a name to create a folder in Images. Sor
 
 To rename or delete images or folders, right-click on an item and select the appropriate function. Select the image thumbnail to open and view it.
 
-![alttext](\media\imgname.png)
+![alttext](\media\images\imgname.png)
