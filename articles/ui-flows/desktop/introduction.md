@@ -1,12 +1,12 @@
 ---
 title: Introduction to Power Automate Desktop | Microsoft Docs
 description: Introduction to Power Automate Desktop
-author: msftman
+author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 02/26/2020
-ms.author: DeonHe
-ms.reviewer: DeonHe
+ms.date: 09/04/2020
+ms.author: marleon
+ms.reviewer: marleon
 search.app: 
   - Flow
 search.audienceType: 
@@ -25,7 +25,7 @@ Begin your journey in Power Automate Desktop by [Creating a Power Automate Deskt
 Power Automate Desktop allows you to automate both legacy applications such as terminal emulators, interact with modern desktop applications, Excel files, folders or even interact with the machine using images or coordinates. 
 
 
-You will find the list of actions available [here](actions.md).
+You 'll find the list of actions available [here](actions.md).
 
 
 
