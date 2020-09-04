@@ -27,7 +27,5 @@ Power Automate Desktop allows you to automate both legacy applications such as t
 
 You 'll find the list of actions available [here](actions.md).
 
-
-
-
-
+> [!NOTE]
+> During public preview, Power Automate Desktop will be provided only in English.
