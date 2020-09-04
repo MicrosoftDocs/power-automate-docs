@@ -22,15 +22,15 @@ The **If** statement is one of the most commonly used conditionals in flow devel
 
 An **If** action consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
-![An example flow containing an If block.](../../media/if-else/if-block.png)
+![An example flow containing an If block.](media\if-else\if-block.png)
 
 An **If** may optionally contain an **Else** action. The **Else** action defines the logic to be executed when the **If** condition is invalid. It should be placed between the **If** and the **End If** actions.
 
-![An example flow containing an If-else block.](../../media/if-else/else-block.png)
+![An example flow containing an If-else block.](media\if-else\else-block.png)
 
  
 To set multiple conditions for which different logic is executed, deploy the **Else If** action. This action is executed when the previous **If** and **Else if** conditions are invalid. It should be placed within the **If/End If** block and always before the **Else** action.
 
-![An example flow containing an If-else block with two additional Else-if blocks.](../../media/if-else/else-if-block.png)
+![An example flow containing an If-else block with two additional Else-if blocks.](media\if-else\else-if-block.png)
 
 In all cases, the variables and values used as operands must be of the same data type. Comparing variables of different data types makes the condition always false (or true if the **not equal** operator is used).

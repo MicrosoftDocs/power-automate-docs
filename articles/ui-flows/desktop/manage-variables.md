@@ -18,10 +18,10 @@ search.audienceType:
 
 The **Variables** pane shows the input and output variables passed to and from **Power Automate Desktop**. It also displays all the variables used in the current flow under **Flow variables**. 
 
-![The Variables pane.](../media/variables-pane/variables-pane.png)
+![The Variables pane.](media\variables-pane\variables-pane.png)
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
 When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted.
 
-![The current variables' values displayed in the Variables pane.](../media/variables-pane/variables-pane-run-values.png)
+![The current variables' values displayed in the Variables pane.](media\variables-pane\variables-pane-run-values.png)

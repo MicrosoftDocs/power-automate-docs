@@ -22,4 +22,4 @@ To find more information about a thrown exception, navigate to the **Errors** pa
 2. **Error message**: The error message.
 3. **Error details**: A long description of the error. These details give a clear message about why the error happened and what the cause is.
 
-![The Error details dialog](../media/error-detail-view/error-details.png)
+![The Error details dialog](media\error-detail-view\error-details.png)
