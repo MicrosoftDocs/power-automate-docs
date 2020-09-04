@@ -16,6 +16,10 @@ search.audienceType:
 
 # Adding an action to the workspace
 
-To begin developing a flow, select an action and double click on it, or drag it and drop it into the workspace. This opens a dialog with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
+To begin developing a flow, select an action and double-click on it, or drag and drop it into the workspace. 
 
-![alttext](\media\adding-actions\imgname.png)
+![add action](\media\adding-actions\add-action.png)
+
+A dialog opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
+
+![action properties](\media\adding-actions\action-properties.png)

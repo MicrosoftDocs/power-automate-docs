@@ -14,6 +14,8 @@ search.audienceType:
   - enduser
 ---
 
-Click to the left of the running order number in the workspace to place a breakpoint in the flow, which appears as a red dot. This will cause the flow to pause at the action marked by a breakpoint. Resume running the flow by selecting **Run** or **Run Step by Step**. Select the breakpoint to remove it.
+# Adding Breakpoints
 
-![alttext](\media\adding-breakpoints\imgname.png)
+Click to the left of the running order number in the workspace to place a breakpoint in the flow, which appears as a red dot. Add a breakpoint to specify at which action to pause the flow. Resume running the flow by selecting **Run** or **Run next action**. Select the breakpoint to remove it.
+
+![add breakpoint](\media\adding-breakpoints\add-breakpoint.png)
