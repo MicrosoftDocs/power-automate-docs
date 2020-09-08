@@ -56,9 +56,9 @@
     href: onedrive-business-launch-panel.md
   - name: Filter and copy data
     href: odata-filters.md
-  - name: Use a Flic
+  - name: Run your flows with Flics
     href: flic-button-flows.md
-  - name: Use a bttn
+  - name: Run your flows with bttns
     href: bttn-button-flows.md
 - name: Button flows
   items:
@@ -78,6 +78,8 @@
     href: apply-to-each.md
 - name: Approval flows
   items:
+  - name: Get started with approvals
+    href: get-started-approvals.md
   - name: Single approvals
     href: modern-approvals.md
   - name: Approvals with attachments

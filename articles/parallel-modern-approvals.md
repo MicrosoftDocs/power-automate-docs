@@ -38,8 +38,6 @@ The SharePoint Online list you create must include the following columns:
 
 | Title                   | Single line of text    |
 |-------------------------|------------------------|
-| Modified                | Date and time          |
-| Created                 | Date and time          |
 | Employee comments       | Single line Of text    |
 | Direct manager comments | Multiple lines Of text |
 | Sales team comments     | Multiple lines of text |
@@ -49,8 +47,6 @@ The SharePoint Online list you create must include the following columns:
 | HR team approved        | Yes/No                 |
 | Vacation start date     | Date and time          |
 | Vacation end date       | Date and time          |
-| Created By              | Person or group        |
-| Modified By             | Person or group        |
 
 Make note of the name and URL of the SharePoint Online list. We use these items later to configure the **SharePoint - When an item is created** trigger.
 
