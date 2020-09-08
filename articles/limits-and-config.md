@@ -89,7 +89,7 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 | Actions concurrent outgoing calls – Plan 2, Per User, and Per Flow licenses | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
 ## Data consumption limits
-These limits are to the amount of storage used to store the run-history of the flow.  These are the maximum limits allowed for storage by the plan.
+These limits refer to the amount of storage used to store the run history of the flow.  These are the maximum limits allowed for storage by the plan.
 
 | **User licenses**                                        |    **Data consumption / 24 hours**   |
 |----------------------------------------------------------|-------------------------------------------------|
