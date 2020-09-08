@@ -24,6 +24,7 @@ The flow console is the central interface of Power Automate Desktop (PAD).
 
 After signing in, your username will be displayed in the bottom-left corner, while the option to sign out is on the right. The dropdown list allows users to switch environments, in order to access different flows.
 
+<a href="#StartFlow"></a>
 ## Starting a flow
 
 Users may run any flows available to them through the console, by hovering the cursor over a flow and pressing the "Start" button. The status of the flow is also displayed:
