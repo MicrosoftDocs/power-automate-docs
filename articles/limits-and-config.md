@@ -95,7 +95,7 @@ These limits are to the amount of storage used to store the run-history of the f
 |----------------------------------------------------------|-------------------------------------------------|
 | Dynamics 365 Enterprise applications<sup>1</sup>         | 10GB                                            |
 | Dynamics 365 Professional <sup>2</sup>                   | 10GB                                             |
-| Dynamics 365 Team Member                                 | 10GB                                             |
+| Dynamics 365 Team Members                                | 10GB                                             |
 | Power Apps per user plan                                 | 10GB                                             |
 | Power Automate per user plan                                 | 10GB                                             |
 | Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 1GB                                     |
