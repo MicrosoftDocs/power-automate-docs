@@ -16,3 +16,13 @@ search.audienceType:
 
 # Web automation
 
+The flow designer includes a number of actions under the **Web Automation** category, each of them corresponding to an interaction between a user and a web browser.
+
+Four web browsers are currently supported:
+
+* Internet Explorer
+* Edge
+* Firefox
+* Chrome
+
+Web automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing web automation actions on them.
