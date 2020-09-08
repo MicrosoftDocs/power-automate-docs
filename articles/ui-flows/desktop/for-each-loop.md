@@ -16,6 +16,8 @@ search.audienceType:
 
 # For each loop
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The **For each** loop iterates through a list (or data table) and stores the current item in a variable. Its primary purpose is to get each item of a list (or row of a data table) and use it in other actions.
 
 ![The For each action.](media\for-each-loop\for-each-loop.png)

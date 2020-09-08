@@ -16,6 +16,8 @@ search.audienceType:
 
 # Configuring action exceptions
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 When an action throws an exception, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
 
 The dialog's first option is the **Retry action if an error occurs** checkbox, which makes the flow execute the action one more time after two seconds.

@@ -16,6 +16,8 @@ search.audienceType:
 
 # Variable data types
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Every variable belongs to a specific type, according to its content. **Power Automate Desktop** recognizes 17 distinct data types. 
 
 Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  

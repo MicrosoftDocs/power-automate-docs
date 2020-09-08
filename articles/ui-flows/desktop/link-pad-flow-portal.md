@@ -16,6 +16,8 @@ search.audienceType:
 
 # Link a Power Automate Desktop flow with a flow
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **New**, and from the drop-down select **Instant--from blank**.
 
 ![my flows instant blank](\media\link-pad-flow-portal\my-flows-instant-blank.png)

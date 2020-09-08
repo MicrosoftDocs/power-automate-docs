@@ -16,6 +16,8 @@ search.audienceType:
 
 # Managing the workspace toolbar
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Drag and drop actions to rearrange them and change the order in which they run. Right-click an action and select Enable or Disable to enable or disable an action respectively. While running, the flow skips any disabled actions.
 
 Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace. Copy and paste actions within the same subflow, among different subflows, or other open instances of flow designer. When copying actions, all their parameters are copied as well.

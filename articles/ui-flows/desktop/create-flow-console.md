@@ -16,6 +16,8 @@ search.audienceType:
 
 # Create a Power Automate Desktop flow
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To create a flow in Power Automate Desktop, launch the application and select **+ New Flow**.
 
 ![console](\media\create-flow-console\console.png)

@@ -16,6 +16,8 @@ search.audienceType:
 
 # Lists
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numbers, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
 You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.

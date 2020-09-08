@@ -16,6 +16,8 @@ search.audienceType:
 
 # If/else
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The **If** statement is one of the most commonly used conditionals in flow development and programming.  
 
 **Power Automate Desktop** provides the **If** action to check whether a given condition is valid. If the condition is true, the logic between the **If** and **End If** is executed.

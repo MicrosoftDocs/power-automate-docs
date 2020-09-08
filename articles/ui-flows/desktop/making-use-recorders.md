@@ -17,6 +17,8 @@ search.audienceType:
 
 # Making use of the recorders
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 ## Web Recorder
 To record web actions in real time, select Web Recorder in the toolbar. In the dialog, select the browser you would like to use. Select **Advanced** to show additional options. Use an existing web browser instance, or create a new instance, specifying an instance name. Additionally specify the tab to record web actions in.
 

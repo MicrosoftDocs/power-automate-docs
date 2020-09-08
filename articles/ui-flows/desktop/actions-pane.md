@@ -16,6 +16,8 @@ search.audienceType:
 
 # Actions and the action pane
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Upon opening the Flow designer, the actions pane on the left side of the window shows all the action groups. 
 
 ![alttext](\media\actions-pane\actions-pane.png)

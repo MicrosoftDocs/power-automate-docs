@@ -16,6 +16,8 @@ search.audienceType:
 
 # UI elements and controls
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, PAD utilizes **UI Controls** to identify windows and their elements.
 
 ## UI elements

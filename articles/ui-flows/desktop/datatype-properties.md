@@ -16,6 +16,8 @@ search.audienceType:
 
 # Datatype properties
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Some of the built-in data types have properties that are associated with the value stored in the variable. 
 
 A property may contain a part of the information stored in the variable, like the day of a date, or an extra attribute describing the variable, like the size of a list.

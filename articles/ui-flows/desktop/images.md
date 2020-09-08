@@ -16,6 +16,8 @@ search.audienceType:
 
 # Images
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 On the right-hand side pane, select the **Images** tab.
 
 ![images pane](\media\images\images-pane.png)

@@ -16,6 +16,8 @@ search.audienceType:
 
 # Data tables
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 A data table contains data in a tabular form. Data tables are the equivalent of two-dimensional arrays in programming terms. 
 
 A data table contains rows and columns that describe the position of each item uniquely. Data tables can be considered as lists that contain other lists as items.

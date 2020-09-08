@@ -16,6 +16,8 @@ search.audienceType:
 
 # Loops
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Loops are a fundamental concept in flow development and prove to be invaluable elements in complex flows. The main idea behind a loop is to make a flow repeat one or more actions multiple times. 
 
 **Power Automate Desktop** provides three different kinds of loops that iterate based on various factors: 

@@ -219,62 +219,62 @@
             href: ./ui-flows/desktop/running-action.md
           - name: The Power Automate Desktop designer status bar
             href: ./ui-flows/desktop/status-bar.md
-    - name: Manage the Variables pane
-      items:
-      - name: Manage the variables pane
-        href: ./ui-flows/desktop/manage-variables.md
-      - name: Renaming a variable
-        href: ./ui-flows/desktop/renaming-variable.md
-      - name: Input and output variables
-        href: ./ui-flows/desktop/variables-inputs-outputs.md
-      - name: Variable data types
-        items:
-        - name: Variable data types
-          href: ./ui-flows/desktop/variable-data-types.md
-        - name: Lists
-          href: ./ui-flows/desktop/lists.md
-        - name: Data tables
-          href: ./ui-flows/desktop/datatables.md
-        - name: Datatype properties
-          href: ./ui-flows/desktop/datatype-properties.md
-      - name: Variable manipulation and the % notation
-        href: ./ui-flows/desktop/variable-manipulation.md
-    - name: UI elements
-      href: ./ui-flows/desktop/ui-elements.md
-    - name: Images
-      href: ./ui-flows/desktop/images.md
-    - name: Errors
-      items:
+        - name: Manage the Variables pane
+          items:
+          - name: Manage the variables pane
+            href: ./ui-flows/desktop/manage-variables.md
+          - name: Renaming a variable
+            href: ./ui-flows/desktop/renaming-variable.md
+          - name: Input and output variables
+            href: ./ui-flows/desktop/variables-inputs-outputs.md
+          - name: Variable data types
+            items:
+            - name: Variable data types
+              href: ./ui-flows/desktop/variable-data-types.md
+            - name: Lists
+              href: ./ui-flows/desktop/lists.md
+            - name: Data tables
+              href: ./ui-flows/desktop/datatables.md
+            - name: Datatype properties
+              href: ./ui-flows/desktop/datatype-properties.md
+          - name: Variable manipulation and the % notation
+            href: ./ui-flows/desktop/variable-manipulation.md
+        - name: UI elements
+          href: ./ui-flows/desktop/ui-elements.md
+        - name: Images
+          href: ./ui-flows/desktop/images.md
         - name: Errors
-          href: ./ui-flows/desktop/errors.md
-        - name: The error detail view
-          href: ./ui-flows/desktop/error-detail-view.md
-    - name: Finding usages within flows
-      href: ./ui-flows/desktop/finding-usages.md
-    - name: Recording in a Power Automate Desktop flow
-      href: ./ui-flows/desktop/recording-flow.md
-    - name: Implementing basic logic in flows
-      items:
-      - name: Loops
-        items:
-        - name: Loops
-          href: ./ui-flows/desktop/loops.md
-        - name: Simple loops
-          href: ./ui-flows/desktop/simple-loops.md
-        - name: Loop condition
-          href: ./ui-flows/desktop/loop-condition.md
-        - name: For each loop
-          href: ./ui-flows/desktop/for-each-loop.md
-      - name: Conditionals
-        items:
-        - name: Conditionals
-          href: ./ui-flows/desktop/conditionals.md
-        - name: If/else
-          href: ./ui-flows/desktop/if-else.md
-        - name: If variations
-          href: ./ui-flows/desktop/if-variations.md
-        - name: Switch-case model
-          href: ./ui-flows/desktop/switch–case-model.md
+          items:
+          - name: Errors
+            href: ./ui-flows/desktop/errors.md
+          - name: The error detail view
+            href: ./ui-flows/desktop/error-detail-view.md
+        - name: Finding usages within flows
+          href: ./ui-flows/desktop/finding-usages.md
+        - name: Recording in a Power Automate Desktop flow
+          href: ./ui-flows/desktop/recording-flow.md
+        - name: Implementing basic logic in flows
+          items:
+          - name: Loops
+            items:
+            - name: Loops
+              href: ./ui-flows/desktop/loops.md
+            - name: Simple loops
+              href: ./ui-flows/desktop/simple-loops.md
+            - name: Loop condition
+              href: ./ui-flows/desktop/loop-condition.md
+            - name: For each loop
+              href: ./ui-flows/desktop/for-each-loop.md
+          - name: Conditionals
+            items:
+            - name: Conditionals
+              href: ./ui-flows/desktop/conditionals.md
+            - name: If/else
+              href: ./ui-flows/desktop/if-else.md
+            - name: If variations
+              href: ./ui-flows/desktop/if-variations.md
+            - name: Switch-case model
+              href: ./ui-flows/desktop/switch–case-model.md
 - name: Solutions
   items:
   - name: Overview

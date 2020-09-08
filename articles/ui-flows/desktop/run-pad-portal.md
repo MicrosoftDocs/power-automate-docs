@@ -16,6 +16,8 @@ search.audienceType:
 
 # Run Power Automate Desktop from the portal
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**, then **UI Flows**, and then **Create a UI flow**.
 
 ![my ui flows new](\media\run-pad-portal\my-ui-flows-new.png)

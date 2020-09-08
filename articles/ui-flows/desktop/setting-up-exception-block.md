@@ -16,6 +16,8 @@ search.audienceType:
 
 # Setting up an action exception block
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 --------PLACEHOLDER TEXT-----------------------------------------------------
 
 An exception block contains multiple actions which are likely to fail or produce an erroneous result. Place the actions in a block prevents the entire block of attempting to complete, should at least one of the Actions within it fail. 

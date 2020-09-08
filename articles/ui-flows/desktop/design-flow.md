@@ -16,6 +16,8 @@ search.audienceType:
 
 # Design a flow in Power Automate and Power Automate Desktop
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Create a new folder on the desktop, and name it **Countries**.
 
 Go to **flow.microsoft.com**, select **my flows**, then **+new**, and **Instant from blank**.

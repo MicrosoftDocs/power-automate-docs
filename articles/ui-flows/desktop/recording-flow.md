@@ -16,6 +16,8 @@ search.audienceType:
 
 # Recording in a desktop flow
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 It's possible to design flows simply by performing the task you wish to automate, using the desktop recorder.
 
 ## Desktop Recorder

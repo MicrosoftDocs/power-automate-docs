@@ -16,6 +16,8 @@ search.audienceType:
 
 # Adding an action to the workspace
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To begin developing a flow, select an action and double-click on it, or drag and drop it into the workspace. 
 
 ![add action](\media\adding-actions\add-action.png)
