@@ -266,6 +266,8 @@
       items:
       - name: Using browsers and managing extensions
         href: ./ui-flows/desktop/using-browsers.md
+      - name: Using the actual Internet Explorer vs the Automation browser
+        href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
 - name: Solutions
   items:
   - name: Overview
