@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/07/2017
+ms.date: 09/07/2020
 search.app: 
   - Flow
 search.audienceType: 
@@ -40,11 +40,11 @@ Create a flow from one of many built-in templates that can, for example, send yo
 1. You'll see only templates related to Slack, so you can now select **Send a message on Slack when my manager emails me**.
    
     ![New option in the left navigation bar](./media/get-started-logic-template/select-template.png)
-4. Confirm that this template will do what you want, and then select **Use this template**.
-5. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
+1. Confirm that this template will do what you want, and then select **Use this template**.
+1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
    
     ![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
-6. After you confirm your connections, select **Continue**.
+1. After you confirm your connections, select **Continue**.
    
     Your flow appears, showing each action with an orange title bar.
    
@@ -53,13 +53,13 @@ Create a flow from one of many built-in templates that can, for example, send yo
 ## Customize your flow
 
 1. Select the title bar for an event to expand it, and then customize it (for example, by specifying a filter on the email that interests you).
-2. Actions that require input from you will automatically be expanded.
+1. Actions that require input from you will automatically be expanded.
    
     For example, the **Post message** action is expanded because you need to enter a channel, such as your *\@username*. You can also customize the message content. By default, the message will contain just the subject, but you can include other information.
    
     ![Specify channel for slack](./media/get-started-logic-template/specify-keyword.png)
-3. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
-4. Finally, if you're happy with your flow, select **Done**.
+1. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
+1. Finally, if you're happy with your flow, select **Done**.
    
     ![Done button](./media/get-started-logic-template/done.png)
 
