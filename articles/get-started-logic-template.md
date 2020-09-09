@@ -43,7 +43,6 @@ Create a flow from one of many built-in templates that can, for example, send yo
 1. Confirm that this template will do what you want, and then select **Use this template**.
 1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
    
-    ![List of connections that the template requires](./media/get-started-logic-template/confirm-connections.png)
 1. After you confirm your connections, select **Continue**.
    
     Your flow appears, showing each action with an orange title bar.
@@ -57,11 +56,8 @@ Create a flow from one of many built-in templates that can, for example, send yo
    
     For example, the **Post message** action is expanded because you need to enter a channel, such as your *\@username*. You can also customize the message content. By default, the message will contain just the subject, but you can include other information.
    
-    ![Specify channel for slack](./media/get-started-logic-template/specify-keyword.png)
 1. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
 1. Finally, if you're happy with your flow, select **Done**.
-   
-    ![Done button](./media/get-started-logic-template/done.png)
 
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
