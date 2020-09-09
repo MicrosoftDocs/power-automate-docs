@@ -62,7 +62,7 @@ To install the extension:
 
 1. In the pop-up dialog, select **Add extension** to confirm the installation. 
 
-To ensure that the **Microsoft Edge** works as expected with **Power Automate Desktop**, disable running background apps when Edge is closed. 
+To ensure that **Microsoft Edge** works as expected with **Power Automate Desktop**, disable running background apps when Edge is closed. 
 
 To disable this option, navigate to **Settings** -> **System** and select the slider icon next to **Continue running background apps when Microsoft Edge is closed**.
 
@@ -78,7 +78,7 @@ To install the extension:
 
 1. In the pop-up dialog, select **Add extension** to confirm the installation. 
 
-To ensure that the **Google Chrome** works as expected with **Power Automate Desktop**, disable running background apps when Chrome is closed. 
+To ensure that **Google Chrome** works as expected with **Power Automate Desktop**, disable running background apps when Chrome is closed. 
 
 To disable this option, navigate to **Settings** -> **Advanced** -> **System** and select the slider icon next to **Continue running background apps when Google Chrome is closed**.
 
@@ -100,7 +100,7 @@ To disable this feature:
 
 1. Populate the URL bar with the phrase **about:config**.
 
-1. Search for the **prompts.tab_modal.enabled** preference in the resulting list and double-click on it to change it to false.
+1. Search for the **prompts.tab_modal.enabled** preference in the resulting list and change it to **false**.
 
 
 
