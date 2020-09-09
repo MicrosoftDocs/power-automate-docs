@@ -25,7 +25,8 @@ search.audienceType:
 
 Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
-**Note:** [Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
+>[!TIP]
+>[Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
 **Prerequisites**
 
@@ -34,11 +35,9 @@ Create a flow from one of many built-in templates that can, for example, send yo
 * Office 365 credentials
 
 ## Choose a template
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZJK8cYdjAic?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Templates** in the top navigation bar.
-2. In the search bar, type **Slack**, and then select the search icon.
-3. You'll see only templates related to Slack, so you can now select **Send a message on Slack when my manager emails me**.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select the **Search all templates** search box, enter **Slack**, and then press enter.
+1. You'll see only templates related to Slack, so you can now select **Send a message on Slack when my manager emails me**.
    
     ![New option in the left navigation bar](./media/get-started-logic-template/select-template.png)
 4. Confirm that this template will do what you want, and then select **Use this template**.
@@ -52,6 +51,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
     ![Default events and actions from template](./media/get-started-logic-template/template-default.png)
 
 ## Customize your flow
+
 1. Select the title bar for an event to expand it, and then customize it (for example, by specifying a filter on the email that interests you).
 2. Actions that require input from you will automatically be expanded.
    
@@ -66,6 +66,7 @@ Create a flow from one of many built-in templates that can, for example, send yo
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
 ## Next steps
+
 * [Watch your flow in action](see-a-flow-run.md)
 * [Publish your own template](publish-a-template.md)
 * [Use a template for the Common Data Service](common-data-model-intro.md)
