@@ -38,7 +38,7 @@ To disable this mode and allow **Power Automate Desktop** to handle the browser:
 
 To use Internet Explorer in Windows Servers, you have to disable the **Internet Explorer Enhanced Security Configuration** feature.
 
-This feature prohibits all flows from properly launching an **Internet Explorer** or **Automation browser** instance via the **Launch New Internet Explorer** action. Additionally, it prevents web helpers from working as expected. 
+This feature prohibits all flows from properly launching an **Internet Explorer** or **Automation browser** instance via the **Launch new Internet Explorer** action. Additionally, it prevents web helpers from working as expected. 
 
 To disable the **IEESC** feature:
 
@@ -64,7 +64,7 @@ To install the extension:
 
 To ensure that **Microsoft Edge** works as expected with **Power Automate Desktop**, disable running background apps when Edge is closed. 
 
-To disable this option, navigate to **Settings** -> **System** and select the slider icon next to **Continue running background apps when Microsoft Edge is closed**.
+To disable this option, navigate to **Settings** -> **System** and select the **slider** next to **Continue running background apps when Microsoft Edge is closed**.
 
 ## Configuring Google Chrome
 
@@ -80,7 +80,7 @@ To install the extension:
 
 To ensure that **Google Chrome** works as expected with **Power Automate Desktop**, disable running background apps when Chrome is closed. 
 
-To disable this option, navigate to **Settings** -> **Advanced** -> **System** and select the slider icon next to **Continue running background apps when Google Chrome is closed**.
+To disable this option, navigate to **Settings** -> **Advanced** -> **System** and select the **slider** next to **Continue running background apps when Google Chrome is closed**.
 
 ## Configuring Mozilla Firefox
 
@@ -98,7 +98,7 @@ Firefox alerts that freeze the browser and prevent users from switching to other
 
 To disable this feature:
 
-1. Populate the URL bar with the phrase **about:config**.
+1. Populate the **URL bar** with the phrase **about:config**.
 
 1. Search for the **prompts.tab_modal.enabled** preference in the resulting list and change it to **false**.
 
