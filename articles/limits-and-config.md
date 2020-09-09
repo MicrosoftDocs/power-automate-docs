@@ -88,6 +88,27 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 | Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
 | Actions concurrent outgoing calls – Plan 2, Per User, and Per Flow licenses | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
+## Data consumption limits
+These limits refer to the amount of storage used to store the run history of the flow.  These are the maximum limits allowed for storage by the plan.
+
+| **User licenses**                                        |    **Data consumption / 24 hours**   |
+|----------------------------------------------------------|-------------------------------------------------|
+| Dynamics 365 Enterprise applications<sup>1</sup>         | 10GB                                            |
+| Dynamics 365 Professional <sup>2</sup>                   | 10GB                                             |
+| Dynamics 365 Team Members                                | 10GB                                             |
+| Power Apps per user plan                                 | 10GB                                             |
+| Power Automate per user plan                                 | 10GB                                             |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 1GB                                     |
+| Application user / Non-interactive users                 |  1GB            |                                
+| Power Apps per app plan                                  |  1GB            |                        
+| Power Automate Per flow Plan                             |  50GB            |                                
+
+<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
+
+<sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
+
+<sup>3</sup>See **Appendix C** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+
 ## Throughput limits
 
 |Name|Limit|Notes|
