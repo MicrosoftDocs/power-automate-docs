@@ -11,6 +11,6 @@
    > [!NOTE]
    > The valid responses to the **Approvals - Start an approval** action are "Approve" and "Reject". These responses are case-sensitive.
 
-1. Your **Condition** card should now show"
+1. Your **Condition** card should now show:
 
     ![View of the condition card](media/modern-approvals/response-condition-test.png "View of the condition card")
