@@ -1,3 +1,19 @@
+---
+title: Using browsers and managing extensions | Microsoft Docs
+description: Using browsers and managing extensions
+author: georgiostrantzas
+ms.service: flow
+ms.topic: article
+ms.date: 09/09/2020
+ms.author: getrantz
+ms.reviewer:
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
 To automate web-related tasks, **Power Automate Desktop** provides the **Automation browser** that is preconfigured and works out of the box. 
 
 Besides the **Automation browser**, the platform supports the four most popular browsers: **Microsoft Edge**, **Internet Explorer**, **Google Chrome**, and **Mozilla Firefox**. These browsers need additional configuration or/and browser extensions to work.
