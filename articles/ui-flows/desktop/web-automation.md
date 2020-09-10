@@ -16,6 +16,8 @@ search.audienceType:
 
 # Web automation
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The flow designer includes a number of actions under the **Web Automation** category. Each of them corresponding to an interaction between a user and a web browser.
 
 Four web browsers are currently supported:

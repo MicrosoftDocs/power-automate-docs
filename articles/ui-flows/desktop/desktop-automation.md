@@ -16,6 +16,8 @@ search.audienceType:
 
 # Desktop automation
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The flow designer includes the **UI/Windows** group of Actions, which manipulate Windows applications and elements, by either providing input or extracting data.
 
 Actions in the **Windows** subcategory directly manipulate entire UI windows, while the others interact with more specific elements, such as text fields and buttons.
