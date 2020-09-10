@@ -171,13 +171,13 @@
         href: ./ui-flows/desktop/create-flow-console.md
       - name: Design a flow
         href: ./ui-flows/desktop/design-flow.md
-    - name: Run a Power Automate Desktop Flow
+    - name: Run a Power Automate Desktop flow
       href: ./ui-flows/desktop/run-pad-flow.md
-    - name: Link a Power Automate Desktop Flow with a flow
+    - name: Link a Power Automate Desktop flow with a flow
       href: ./ui-flows/desktop/link-pad-flow-portal.md
-    - name: The Power Automate Desktop Flow console
+    - name: The Power Automate Desktop console
       href: ./ui-flows/desktop/console.md
-    - name: The Power Automate Desktop Flow designer
+    - name: The Power Automate Desktop flow designer
       href: ./ui-flows/desktop/flow-designer.md
       items:
       - name: Actions & the actions pane
