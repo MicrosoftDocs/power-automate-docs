@@ -275,6 +275,16 @@
               href: ./ui-flows/desktop/if-variations.md
             - name: Switch-case model
               href: ./ui-flows/desktop/switch–case-model.md
+        - name: Web automation
+          items:
+          - name: Web automation
+            href: ./ui-flows/desktop/web-automation.md
+          - name: Using browsers and managing extensions
+            href: ./ui-flows/desktop/using-browsers.md
+          - name: Using the actual Internet Explorer vs the automation browser
+            href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
+        - name: Desktop automation
+          href: ./ui-flows/desktop/desktop-automation.md
       - name: Actions reference
         items:
         - name: Variables
