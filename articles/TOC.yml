@@ -275,6 +275,74 @@
               href: ./ui-flows/desktop/if-variations.md
             - name: Switch-case model
               href: ./ui-flows/desktop/switch–case-model.md
+      - name: Actions reference
+        items:
+        - name: Variables
+          href: ./ui-flows/desktop/actions-reference/variables.md
+        - name: Conditionals
+          href: ./ui-flows/desktop/actions-reference/conditionals.md
+        - name: Loops
+          href: ./ui-flows/desktop/actions-reference/loops.md
+        - name: Wait
+          href: ./ui-flows/desktop/actions-reference/wait.md
+        - name: Flow control
+          href: ./ui-flows/desktop/actions-reference/flowcontrol.md
+        - name: System
+          href: ./ui-flows/desktop/actions-reference/system.md
+        - name: File
+          href: ./ui-flows/desktop/actions-reference/file.md
+        - name: Folder
+          href: ./ui-flows/desktop/actions-reference/folder.md
+        - name: Compression
+          href: ./ui-flows/desktop/actions-reference/compression.md
+        - name: UI automation
+          href: ./ui-flows/desktop/actions-reference/uiautomation.md
+        - name: Web
+          href: ./ui-flows/desktop/actions-reference/web.md
+        - name: Web automation
+          href: ./ui-flows/desktop/actions-reference/webautomation.md
+        - name: Excel
+          href: ./ui-flows/desktop/actions-reference/excel.md
+        - name: Database
+          href: ./ui-flows/desktop/actions-reference/database.md
+        - name: Email
+          href: ./ui-flows/desktop/actions-reference/email.md
+        - name: Exchange
+          href: ./ui-flows/desktop/actions-reference/exchange.md
+        - name: Outlook
+          href: ./ui-flows/desktop/actions-reference/outlook.md
+        - name: Message boxes
+          href: ./ui-flows/desktop/actions-reference/display.md
+        - name: Mouse and keyboard
+          href: ./ui-flows/desktop/actions-reference/mouseandkeyboard.md
+        - name: Clipboard
+          href: ./ui-flows/desktop/actions-reference/clipboard.md
+        - name: Text
+          href: ./ui-flows/desktop/actions-reference/text.md
+        - name: Datetime
+          href: ./ui-flows/desktop/actions-reference/datetime.md
+        - name: CMD session
+          href: ./ui-flows/desktop/actions-reference/cmd.md
+        - name: Terminal emulation
+          href: ./ui-flows/desktop/actions-reference/terminalemulation.md
+        - name: OCR
+          href: ./ui-flows/desktop/actions-reference/ocr.md
+        - name: Cryptography
+          href: ./ui-flows/desktop/actions-reference/cryptography.md
+        - name: Services
+          href: ./ui-flows/desktop/actions-reference/services.md
+        - name: XML
+          href: ./ui-flows/desktop/actions-reference/xml.md
+        - name: Active Directory
+          href: ./ui-flows/desktop/actions-reference/activedirectory.md
+        - name: AWS
+          href: ./ui-flows/desktop/actions-reference/aws.md
+        - name: Azure
+          href: ./ui-flows/desktop/actions-reference/azure.md
+        - name: Cognitive
+          href: ./ui-flows/desktop/actions-reference/cognitive.md
+        - name: FTP
+          href: ./ui-flows/desktop/actions-reference/ftp.md
 - name: Solutions
   items:
   - name: Overview
