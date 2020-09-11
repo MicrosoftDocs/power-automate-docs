@@ -6,7 +6,7 @@ manager: KVIVEK
 ms.author: Deonhe
 ms.service: flow
 ms.topic: article
-ms.date: 05/12/2020
+ms.date: 07/29/2020
 search.app: 
   - Flow
 search.audienceType: 
@@ -19,15 +19,15 @@ search.audienceType:
 
 This topic compares Power Automate capabilities with classic workflow.
 
-Power Automate has significant advantages over the classic workflow model; you should consider using Power Automate to automate your processes instead of classic workflow. 
+Power Automate has significant advantages over the classic background workflow model; you should consider using Power Automate to automate your processes instead of classic workflow. 
 
-Create flows instead of classic Common Data Service workflows to build new automation processes. Additionally, you should review your existing classic workflow processes and consider replacing them with flows.
+Create flows instead of classic Common Data Service workflows to build new automation processes. Additionally, you should review your existing classic background workflow processes and consider replacing them with flows.
 
 ## Feature capability comparison
 
 This table summarizes a comparison between Power Automate and classic workflows capabilities. 
 
-*We are continuously adding new capabilities to Power Automate so that it's at par and even better than classic workflow capabilities. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) in the April 2019 Release Notes!*
+*We are continuously adding new capabilities to Power Automate so that it's at par and even better than classic background workflow capabilities. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic background workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-flow/planned-features) in the April 2019 Release Notes!*
 
 <table>
 <tr>
@@ -190,7 +190,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
             <tr>
                 <td>
                     
-   Run custom workflow activities
+   Run custom background workflow activities
                     
                 </td>
                 <td>
@@ -450,12 +450,12 @@ This table summarizes a comparison between Power Automate and classic workflows 
 </tr>
 </table>
 
-## Example scenario: Replace workflow with a flow
+## Example scenario: Replace background workflow with a flow
 
 Imagine a sales scenario where you have put together a quotation for a customer
 and now need to request approval from your management team prior to sending the quotation to the customer. With
 classic workflows, this wouldn’t have been easy to do and most
-solutions to this require a developer to write custom workflow activities
+solutions to this require a developer to write custom background workflow activities
 to retrieve quote line items.
 
 With flows, this is easier to build as demonstrated in the walkthrough later that covers 
@@ -585,7 +585,7 @@ example of the display is below:
     [Use the [changeset action](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to ensure that all actions within it are performed as a single, atomic unit in which either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations
     are rolled back.
 
--   **Monitor workflow runs for failures**  
+-   **Monitor background workflow runs for failures**  
     
     In Power Automate, use the **run-after setting** on an action to configure it to run
     when the previous action fails. For example, send a Power Automate mobile notification when
@@ -628,7 +628,7 @@ example of the display is below:
 -   **What about synchronous workflows?** 
  
     You should re-evaluate the need for synchronous workflows to
-    identify whether the objective, or parts of the workflow can be built using
+    identify whether the objective, or parts of the background workflow can be built using
     a flow. In particular, we see from our telemetry that synchronous workflows
     are a significant contributor to overall end user poor performance
     experience. For many uses though it would be preferable to split these
