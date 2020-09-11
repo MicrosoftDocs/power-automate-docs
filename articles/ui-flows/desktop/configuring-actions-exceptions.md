@@ -20,14 +20,14 @@ When an action throws an exception, the flow stops its execution by default. To 
 
 The dialog's first option is the **Retry action if an error occurs** checkbox, which makes the flow execute the action one more time after two seconds.
 
-To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the appeared dropbox, you can:
+To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
 
 - **Go to next action**: Executes the following action in order.
 - **Repeat action**: Repeats the action until it runs successfully. 
 - **Go to label**: Continues the execution from a point defined by a **Label** action.
 
-**Power Desktop Automation** offers two additional error handling options. Select the **New role** button to:
-- **Set variable**: Sets the wished value to a specified variable.
+**Power Automate Desktop** offers two additional error handling options. Select the **New rule** button to:
+- **Set variable**: Sets the desired value to a specified variable.
 - **Run subflow**: Executes a specified subflow. 
 
 If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 

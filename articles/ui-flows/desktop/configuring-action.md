@@ -17,7 +17,7 @@ search.audienceType:
 # Configuring an action
 
 **Power Automate Desktop** actions consist of two main segments:
-- The input parameters - Have the form of text fields, dropboxes, and checkboxes
+- The input parameters - They have the form of text fields, drop-down menus, and drop-down menus
 - The produced variables - Automatically created variables
 
 The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables. 
@@ -26,8 +26,8 @@ To use a variable as a parameter, select the icon on the field's right side and 
 
 Each field can accept specific data types, such as numbers, text, or lists. If a value or variable of a wrong data type is used as an input, the action will throw an error. 
 
-The produced variables hold the outcomes of the action for later use. All the output variables are displayed on the bottom part of the action's properties. 
+The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
 
-Each output variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the respective article (link to be added). 
+Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the respective article (link to be added). 
 
-In case an output variable isn't needed for later use, select the icon on the left side of it and pick **Not needed**. 
+In case a produced variable isn't needed for later use, select the icon on the left side of it and pick **Not needed**. 
