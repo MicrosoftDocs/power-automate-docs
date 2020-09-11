@@ -16,15 +16,12 @@ search.audienceType:
 
 # Power Automate Desktop flow console
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 The flow console is the central interface of Power Automate Desktop (PAD).
 
 ![The flow console](./media/console/flow-console.png)
 
-After signing in, your username will be displayed in the bottom-left corner, while the option to sign out is on the right. The dropdown list allows users to switch environments, in order to access different flows.
+After signing in, your username will be displayed in the top-right corner. A list of flows occupies the central pane, while a dropdown list at the top allows users to switch environments in order to access different flows.
 
-<a href="#StartFlow"></a>
 ## Starting a flow
 
 Users may run any flows available to them through the console, by hovering the cursor over a flow and pressing the "Start" button. The status of the flow is also displayed:
@@ -33,8 +30,8 @@ Users may run any flows available to them through the console, by hovering the c
 
 ## Editing a flow
 
-Through the console, users may also create a new flow by pressing the "New flow" button, or edit an already existing one by right-clicking on it and selecting "Edit":
+Through the console, users may also create a new flow by pressing the "New flow" button, or edit an already existing one by hovering the cursor over it and pressing the edit button:
 
 ![Create or edit a flow](./media/console/create-edit-flow.png)
 
-In both scenarios, the Flow Designer will be launched; this is where flow creation and editing takes place.
+In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
