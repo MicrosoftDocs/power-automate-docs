@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
+ms.date: 09/14/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -22,7 +22,6 @@ search.audienceType:
   - admin
 ---
 # The admin center
-
 
 The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
@@ -34,13 +33,9 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Environments
 
-Learn more about using [environments](environments-overview-admin.md) to manage users, permissions and roles.
+Learn more about using [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) to manage users, permissions and roles.
 
 ## Data policies
 
 Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to create rules that manage how business data is shared between services in flows.
 
-## Next steps
-
-* [Learn more about environments](environments-overview-admin.md)
-* [Learn more about Power Automate](getting-started.md)
