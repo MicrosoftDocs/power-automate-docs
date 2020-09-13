@@ -34,6 +34,19 @@ Share a flow with others in your organization so they can also benefit from auto
 - You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow.
 - You must be the creator or owner to add or remove owners from a flow.
 
+### About embedded and other connections
+
+Connections used in a flow fall into two categories:
+
+- **Embedded**: These connections are used in the flow.
+- **Other**: These connections have been defined for a flow, but aren't used in it.
+
+If you stop using a connection in a flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
+
+The list of connections appears under the list of owners in a flow's properties, as shown in the following image.
+
+![Embedded connections](./media/create-team-flows/embeddedconnections.png "Embedded connections")
+
 ## Add an owner to a flow
 
 Adding an owner to a flow is the most common way to share a flow. Any owner of a flow can perform these actions:
@@ -51,18 +64,15 @@ If you're the creator or an owner of a flow, you'll find it listed on the **Team
 >[!NOTE]
 >Shared connections can be used *only*<!--Writing Style Guide--> in the flow in which they were created.
 
-Owners can use services in a flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a flow and owning a connection within a flow - will this be obvious to the reader?-->
+Owners can use services in a flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a flow and owning a connection within a flow - will this be obvious to the reader? -->
 
 <!--markdownlint-disable MD036-->
 **To add more owners to a flow**
 
 1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows**.
-1. Select the flow that you want to share, select **More commands** ![More commands](./media/create-team-flows/more-commands.png)<!--What do you think? If you didn't mean the vertical ellipsis, Writing Style Guide would want us to say "...select **More commands** (...), and then select **Share**."-->, and then select **Share**.<!--Please double-check my edit to the alt text; I didn't know what "team icon" meant.-->
+1. Select the flow that you want to share, select **More commands** ![More commands](./media/create-team-flows/more-commands.png), and then select **Share**.
   
     ![Select Share from More commands](./media/create-team-flows/addowner1.png "Select Share from More commands")
-
-   >[!NOTE]
-   >You can also share the flow by selecting **Share** on the flow details page command bar.<!--Suggest deleting this note. You don't need to document every way to do something. Procedures should be as straightforward as possible.--> 
 
 1. Enter the name, email address, or group name for the person or group that you want to add as an owner.<!--I don't find the names in these screenshots on our list of our group's approved fictitious names. Can you verify that they're included in sample data?-->
 
@@ -72,7 +82,7 @@ Owners can use services in a flow but can't modify the credentials for a connect
 
     ![New owner](./media/create-team-flows/addowner4.png "New owner")
 
-Congratulations&mdash;you've created your team flow!<!--Recommend either deleting these "Congratulations" strings (which would be okay in a tutorial for beginners, but they're out of place in product documentation) or changing them to say "You did it!" as opposed to "We did it!"-->
+Congratulations&mdash;you've created your team flow!
 <!--Suggest moving this H2 here. In fact, I think it would be better to format this as a two-paragraph note; I don't think it merits being an H2 on its own.-->
 ## Add a list as a co-owner
 
@@ -81,31 +91,24 @@ You can add SharePoint lists as co-owners of a flow so that everyone who has edi
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
 
-<!--I was confused by the structure of this "Remove an owner" section, so I propose these changes. I didn't know why "update connections" was a subhead under "Remove an owner" when it looks like you might want to update connections even if you don't remove an owner. Please let me know what you think!-->
 ## Remove an owner
 
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Power Automate services, you must<!--Edit okay?--> update the credentials for those connections so that the flow will continue to run properly. More information: [Update connections](#update-connections)<!--Suggested-->
+> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow will continue to run properly. More information: [Update connections](#update-connections)
 
 1. On the flow details page, in the **Owners** section, select **Edit**.
 
    ![Edit owners](./media/create-team-flows/editowners.png "Edit owners")
-<!--Suggest not including this note.
-   >[!NOTE]
-   >You can also edit the owners of flow by selecting the **Share** button in the flow details page mentioned earlier.
--->
 
 1. Select **Delete** ![Delete](./media/create-team-flows/delete.png) for the owner you want to remove.
 
     ![Delete an owner](./media/create-team-flows/removeowner2.png "Delete an owner")
 
-1. In the confirmation dialog box, select **Remove**<!--Edit okay? Or is the screenshot out of date?-->.
-
-    ![Confirm owner removal](./media/create-team-flows/removeowner3.png "Confirm owner removal")
+1. In the confirmation dialog box, select **Remove**.
 
 Congratulations&mdash;the user or group that you removed is no longer listed as an owner of the flow.
-<!--Suggest promoting the following section, and if possible, moving the "embedded versus other" information to the front. Then perhaps the H2 could be renamed "Manage connections", and the procedure **To update connections** could go to the end of the section.-->
-## Update connections
+
+## Modify a connection
 
 You might need to change the owner of a connection in a flow if you remove the existing owner or if you just want to use a different account to sign in to an action or trigger.
 
@@ -117,31 +120,13 @@ You might need to change the owner of a connection in a flow if you remove the e
 
 1. Select **More commands** (...) in the step where you want to edit the connection for the trigger or in the action you want to edit.<!--I don't know what this means.-->
 
-1. If you have a connection already, select it; if not, select **Add new connection** to create a new connection.
+1. If you have a connection already, select it; if not, select **Add new connection** to create a new connection, and then select **Sign in** to create your new connection.
 
    ![Add a new connection](./media/create-team-flows/edit-connection.png "Add a new connection")
 
-1. Select **Sign in** to create your new connection.<!--If we didn't create a new connection, how will this step be different? Will this step apply to all kinds of connections, not just to SharePoint? -->
-
-   ![Sign in](./media/create-team-flows/sign-in.png "Sign in")
-
-<!--I don't understand what the reader is supposed to glean from the following section. In an article filled with action, this seems to just be purely descriptive. If it's necessary information, can we move it to the beginning of this section so it sets the stage for the "update connections" procedure?-->
-### Embedded and other connections
-
-Connections used in a flow fall into two categories:
-
-- **Embedded**: These connections are used in the flow.
-- **Other**: These connections have been defined for a flow, but aren't used in it.
-
-If you stop using a connection in a flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Update connections](#update-connections), earlier in this article.<!--What is the significance of this? Embedded versus other?-->
-
-The list of connections appears under the list of owners in a flow's properties, as shown in the following image.
-
-![Embedded connections](./media/create-team-flows/embeddedconnections.png "Embedded connections")
-
 ## Share a flow with run-only permissions
 
-Instant flows (that is, flows that use a manual trigger such as **Button** or **For a selected item**<!--Not sure about the bold formatting because I don't know what these are. (Removed "etc." because you don't need it after "such as".)-->) can be shared by using run-only permissions. Any user who's added as a run-only user won't have access to edit or modify the flow in any way; they'll only have permissions to trigger the flow.
+Instant flows (that is, flows that use a manual trigger such as a button or an item being selected) can be shared by using run-only permissions. Any user who's added as a run-only user won't have access to edit or modify the flow in any way; they'll only have permissions to trigger the flow.
 
 **To add a run-only user**
 
@@ -162,8 +147,7 @@ Congratulations&mdash;the user or group now has access to run the flow.
 **To remove a run-only user**
 
 1. On the flow details page, in the **Run only users** section, select **Edit**. 
-<!--We'll throw build errors by reusing images. You don't need this one anyway, because the step is straightforward and has already been documented. In fact, the Dynamics Leadership Team wants us to reduce the number of graphics we use overall, so removing this is a good start.-->
-2. In the **Manage run-only permissions** panel, select **Delete** ![Delete](./media/create-team-flows/delete.png) next to the user whose access you want to remove, and then select **Save**.
+1. In the **Manage run-only permissions** panel, select **Delete** ![Delete](./media/create-team-flows/delete.png) next to the user whose access you want to remove, and then select **Save**.
 
     ![Remove a run-only user](./media/create-team-flows/remove-run-only-user.png "Remove a run-only user")
 
@@ -181,11 +165,6 @@ You can share a copy of a flow with another user, who can then use the definitio
 1. On the flow details page command bar, select **Send a copy**.
 
    ![Send a copy from the command bar](./media/create-team-flows/send-a-copy.png "Send a copy from the command bar")
-
-   >[!NOTE]
-   >You can also select the flow, select **More commands** ![More commands](./media/create-team-flows/more-commands.png), and then select **Send a copy**.<!--Edit okay? You didn't call this an "overflow menu" above. (Also, you might consider deleting this note and image entirely, because they're redundant.)-->
-
-   ![Send a copy from More commands](./media/create-team-flows/send-a-copy2.png "Send a copy from More commands")
 
 1. In the **Send a copy** panel, you can edit the name and description of the flow you want to share, and specify the users with whom you want to share it.
 
