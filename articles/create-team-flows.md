@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/05/2020
+ms.date: 08/25/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,17 +21,17 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share a flow 
+# Share a flow
 
 Share a flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a flow in Power Automate:
 
 1. Add an owner to a flow.
-2. Share a flow with run only privileges.
-3. Share a copy of a flow.
+1. Share a flow with run only privileges.
+1. Share a copy of a flow.
 
 ## Prerequisites
 
-- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow. 
+- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow.
 - You must be the creator or owner to add/remove owners from a flow.
 
 ## Add an owner to a flow
@@ -60,19 +60,19 @@ Follow these steps to add more owners to a flow.
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select **My flows**.
 1. Select **...** (more commands), and then select **Share** for the flow that you want to share:
-   
+  
     ![team icon](./media/create-team-flows/addowner1.png)
 
    >[!NOTE]
    >You can also share a flow using the Share option on the flow details page. 
 
 1. Enter the name, email address, or group name for the person or group that you want to add as an owner:
-   
+
     ![search for the user](./media/create-team-flows/addowner2.png)
 1. The user or group you've selected becomes an owner of the flow:
-     
+
     ![new owner](./media/create-team-flows/addowner4.png)
-   
+
      Congratulations&mdash;your team flow has been created!
 
 ## Remove an owner
@@ -80,32 +80,31 @@ Follow these steps to add more owners to a flow.
 > [!IMPORTANT]
 > When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow continues to run properly.
 
-1. In the flow details page choose the edit link in the owner section
+1. In the flow details page choose the edit link in the owner section.
 ![Edit Owners](./media/create-team-flows/editowners.png)
 
    >[!NOTE]
-   >You can also edit the owners of flow using the Share button in the Flow details page mentioned earlier
+   >You can also edit the owners of flow using the Share button in the Flow details page mentioned earlier.
 
 1. Select the **Delete** icon for the owner that you want to remove:
-   
+
     ![select delete](./media/create-team-flows/removeowner2.png)
 1. On the confirmation dialog box, select **Remove this owner**:
-   
+
     ![confirm removal](./media/create-team-flows/removeowner3.png)
 1. Congratulations &mdash; the user or group that you removed is no longer listed as an owner of the flow.
-
 
 ### Update connections
 
 You might need to change the owner of a connection in a flow if you remove the existing owner or if you just want to use a different account to sign in to an action/trigger. Follow these steps to edit the connections of a trigger or action of a shared flow:
 
-1. Navigate to the flow that you want to modify
-2. Click on Edit to edit the flow
+1. Navigate to the flow that you want to modify.
+1. Select **Edit** to edit the flow.
 ![Edit flow](./media/create-team-flows/Edit-flow-details.png)
-3. Click on the overflow menu for the step you want to edit the connection for the trigger or action you want to edit
-4. If you have a connection already simply choose that, if not just click on "Add new connection" to create a new connection
+1. Select the overflow menu for the step you want to edit the connection for the trigger or action you want to edit.
+1. If you have a connection already, simply choose that, if not just select **Add new connection** to create a new connection.
 ![Add a new connection](./media/create-team-flows/edit-connection.png)
-5. Click sign in to create your new connection and you're all set!
+1. Select sign in to create your new connection and you're all set!
 ![Sign in](./media/create-team-flows/sign-in.png)
 
 ### Embedded and other connections
@@ -125,7 +124,7 @@ The list of connections appears under the list of owners in a flow's properties:
 
 ## Add a list as a co-owner
 
-You can add SharePoint lists as co-owners to a flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow is shared, you can simply distribute a link to it.
+You can add SharePoint lists as co-owners to a flow so that everyone who has edit access to the list automatically gets edit access to the flow. Once the flow is shared, you can simply distribute a link to it. For information about how to create a SharePoint list, see [Training: Create and set up a list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
 
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in other cases.
@@ -137,13 +136,13 @@ Instant flows (i.e. flows that use a manual trigger such as Button, For a select
 
 ### Add a run only user
 
-1. In the flow details page select the "Edit" link next to the Run only users section. 
+1. In the flow details page, select the "Edit" link next to the Run only users section. 
 ![run only share](./media/create-team-flows/run-only-share.png)
-2. In the Manage run-only permissions flyout specify the users, groups you want to provide run only access to
+1. In the Manage run-only permissions flyout, specify the users, groups you want to provide run only access to
 ![Add run only users](./media/create-team-flows/run-only-share2.png)
-3. As an owner you can choose if the run-only users will need to provide their own connections when sharing the flow or use a connection thats already defined in the flow
+1. As an owner you can choose if the run-only users will need to provide their own connections when sharing the flow or use a connection that's already defined in the flow.
 ![Manage connections](./media/create-team-flows/manage-run-only-connections.png)
-4. Congratulations &mdash; the user or group will now have access to run the flow.
+1. Congratulations &mdash; the user or group will now have access to run the flow.
 
 ### Remove a run only user
 
@@ -155,10 +154,10 @@ Instant flows (i.e. flows that use a manual trigger such as Button, For a select
 
 ## Share a copy of a flow
 
-Share a copy allows you to share the definition of a flow with another user as a template. It provides a good way for you to share the general structure of a flow without sharing any connections while also allowing the recipient to modify their flow independant of your flow so they can make it fit their needs.
+Share a copy allows you to share the definition of a flow with another user as a template. It provides a good way for you to share the general structure of a flow without sharing any connections while also allowing the recipient to modify their flow independent of your flow so they can make it fit their needs.
 
 > [!NOTE]
-> Share a copy creates an independant instance of the flow for the recipient. There is no way to revoke access to the flow once shared.
+> Share a copy creates an independent instance of the flow for the recipient. There is no way to revoke access to the flow once shared.
 
 ### Send a copy of a flow
 
@@ -170,9 +169,9 @@ Share a copy allows you to share the definition of a flow with another user as a
 
    ![Send a another copy](./media/create-team-flows/send-a-copy2.png)
 
-1. In the flyout menu you can edit the name and description of the flow you want to share and specify the users you want to share the flow with.
+1. In the flyout menu, you can edit the name and description of the flow you want to share and specify the users with whom you want to share the flow.
 ![Send copy details](./media/create-team-flows/send-a-copy3.png)
-1. The recipient will receive an email stating that you have shared a Flow template with you and allows them to create their own instance of that flow
+1. The recipient will receive an email stating that you have shared a flow template with you and allows them to create their own instance of that flow.
 
    ![Receive a copy](./media/create-team-flows/send-a-copy5.png)
    
@@ -184,8 +183,7 @@ Share a copy allows you to share the definition of a flow with another user as a
 ## FAQ
 
 ### What happens if the user who created a shared flow leaves the organization?
-As long as the shared flow still has an active owner the flow will continue to run. 
+If the shared flow still has an active owner the flow will continue to run. 
 
 >[!NOTE]
->If the flow uses any active or embedded connections that belongs to the user who has left the organizations those specific actions might fail. To fix this, follow the steps mentioned in the [update a connection](./create-team-flows.md#update-connections) section to change the connection of any trigger or action.
-
+>If the flow uses any active or embedded connections that belongs to the user who has left the organization, those specific actions might fail. To fix this, follow the steps mentioned in the [update a connection](./create-team-flows.md#update-connections) section to change the connection of any trigger or action.
