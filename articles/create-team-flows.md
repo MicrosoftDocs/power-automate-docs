@@ -62,7 +62,7 @@ If you're the creator or an owner of a flow, you'll find it listed on the **Team
 ![Team flows tab](./media/create-team-flows/addowner5.png "Team flows tab")
 
 >[!NOTE]
->Shared connections can be used *only*<!--Writing Style Guide--> in the flow in which they were created.
+>Shared connections can be used *only* in the flow in which they were created.
 
 Owners can use services in a flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a flow and owning a connection within a flow - will this be obvious to the reader? -->
 
@@ -83,7 +83,7 @@ Owners can use services in a flow but can't modify the credentials for a connect
     ![New owner](./media/create-team-flows/addowner4.png "New owner")
 
 Congratulations&mdash;you've created your team flow!
-<!--Suggest moving this H2 here. In fact, I think it would be better to format this as a two-paragraph note; I don't think it merits being an H2 on its own.-->
+
 ## Add a list as a co-owner
 
 You can add SharePoint lists as co-owners of a flow so that everyone who has edit access to the list automatically gets edit access to the flow. After<!--Writing Style Guide--> the flow is shared, you can simply distribute a link to it. More information: [Training: Create and set up a SharePoint list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
@@ -155,7 +155,7 @@ Congratulations&mdash;the user or group no longer has access to run this flow.
 
 ## Share a copy of a flow
 
-You can share a copy of a flow with another user, who can then use the definition of the flow as a template.<!--Edit okay? Writing Style Guide wants us to avoid using "allows" this way.--> It provides a good way for you to share the general structure of a flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
+You can share a copy of a flow with another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
 
 > [!NOTE]
 > Sharing a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
