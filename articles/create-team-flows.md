@@ -94,7 +94,7 @@ You can add SharePoint lists as co-owners of a flow so that everyone who has edi
 ## Remove an owner
 
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow will continue to run properly. More information: [Update connections](#update-connections)
+> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow will continue to run properly. More information: [Manage a connection](#Manage-a-connection)
 
 1. On the flow details page, in the **Owners** section, select **Edit**.
 
@@ -186,5 +186,5 @@ You can share a copy of a flow with another user, who can then use the definitio
 If the shared flow still has an active owner, the flow will continue to run. 
 
 >[!NOTE]
->If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Update connections](#update-connections), earlier in this article, to change the connection for<!--Edit okay?--> any trigger or action.
+>If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Manage a connection](#manage-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
