@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Flow designer contains all the tools required to design and debug a flow. Additionally, any images, UI elements, or variables of a flow can be accessed and managed.
+The flow designer contains all the tools required to design and debug a flow. Additionally, any images, UI elements, or variables of a flow can be accessed and managed here.
 
 ![flow designer blank](\media\flow-designer\flow-designer.png)
 

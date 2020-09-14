@@ -20,7 +20,7 @@ search.audienceType:
 
 Create a new folder on the desktop, and name it **Countries**.
 
-Go to **flow.microsoft.com**, select **my flows**, then **+new**, and **Instant from blank**.
+Go to **flow.microsoft.com**, select **My flows**, then **+New**, and **Instant from blank**.
 
 ![my flows instant blank](\media\design-flow\my-flows-instant-blank.png)
 
@@ -28,7 +28,7 @@ In the dialog, enter a flow name, select **Manually trigger a flow**, and then s
 
 ![manually trigger flow](\media\design-flow\manually-trigger-flow.png)
 
-Select **+new step**.
+Select **+New step**.
 
 ![new step](\media\design-flow\new-step.png)
 
@@ -40,7 +40,7 @@ In the action, under Run mode select **Attended - Runs when you're signed in** a
 
 ![run ui flow v2 action properties](\media\design-flow\run-ui-flow-v2-action-properties.png)
 
-Enter flow name or one will be generated and select **Create**.
+Enter a flow name or one will be generated and select **Launch app**.
 
 ![build UI flow dialog](\media\design-flow\build-UI-flow-dialog.png)
 
@@ -48,7 +48,7 @@ A message from the browser may appear, asking whether to allow flow.microsoft.co
 
 ![browser open application](\media\design-flow\browser-open-application.png)
 
-In Power Automate Desktop, open the Variables pane, and select **+** and select **Input** to add a new input variable.
+In Power Automate Desktop, open the Variables pane, select **+** and select **Input** to add a new input variable.
 
 ![add new input variable](\media\design-flow\add-new-input-variable.png)
 
@@ -78,7 +78,7 @@ Add the **Create Folder** action and set **Create new folder into** to **%Specia
 
 ![create folder action properties](\media\design-flow\create-folder-action-properties.png)
 
-Add the **Write text to file** action and use the variables pop-out to set **File path** to **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**. 
+Add the **Write text to file** action and use the variables pop-out to set **File path** to **%SpecialFolderPath%\Countries\\%CountryName%\\%FormattedDateTime%.txt**. 
 
 Set **Text to write** to **This text was written by Power Automate Desktop**. This action writes the specified text to a text file on the current user's desktop, and sets the filename to the current date.
 
@@ -86,7 +86,7 @@ This action writes the specified text into a text file.
 
 ![write text file action properties](\media\design-flow\write-text-file-action-properties.png)
 
-Add the **Get files in folder** action and set **Folder** to **%SpecialFolderPath%\Countries\%CountryName%**. This action retrieves a list of the files in a specified folder.
+Add the **Get files in folder** action and set **Folder** to **%SpecialFolderPath%\Countries\\%CountryName%**. This action retrieves a list of the files in a specified folder.
 
 ![get files folder action properties](\media\design-flow\get-files-folder-action-properties.png)
 
@@ -111,7 +111,7 @@ and
 Add two **Set variable** actions and configure them as follows:
 
 * Set variable: **FilePath**
-* To: **%SpecialFolderPath%\Countries\%CountryName%\%FormattedDateTime%.txt**
+* To: **%SpecialFolderPath%\Countries\\%CountryName%\\%FormattedDateTime%.txt**
 
 and
 
@@ -122,7 +122,7 @@ and
 
 ![set variable action properties 2](\media\design-flow\set-variable-action-properties-2.png)
 
-Select **Save** to save the flow and close flow designer.
+Select **Save** to save the flow and close the flow designer.
 
 ![save complete flow](\media\design-flow\save-complete-flow.png)
 
@@ -145,6 +145,7 @@ Select **I'll perform the trigger action.** and **Test**.
 When Power Automate connects to Power Automate Desktop, select **Continue**, then **Run Flow** and then **Done**.
 
 ![run flow pop out 3](\media\design-flow\run-flow-pop-out-3.png)
+
 When the flow finishes running, all actions will have a green checkmark icon and a notification will confirm that the flow ran successfully.
 
 ![successful flow run](\media\design-flow\successful-flow-run.png)

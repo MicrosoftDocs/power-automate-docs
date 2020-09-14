@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Adding Breakpoints
+# Adding breakpoints
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
