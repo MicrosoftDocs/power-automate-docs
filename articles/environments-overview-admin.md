@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Using environments within Power Automate
 
-An [*environment*](https://docs.microsoft.com/power-platform/admin/environments-overview) is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you build. For example:
+An *environment* is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you build. For example:
 
 - You can choose to only build your apps in a single environment.
 You might create separate environments that group the test and production versions of your apps.
@@ -32,5 +32,7 @@ You might create separate environments that group the test and production versio
 
 - You might also create separate environments for different global branches of your company.
 
-Learn all about [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Power Platform admin docs.
+You can create and manage environments using the [Power Platform admin center](https:aka.ms/ppac). 
+
+Learn all about [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Power Platform admin guide.
 
