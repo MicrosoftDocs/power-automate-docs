@@ -1,7 +1,7 @@
 ---
 title: Run Power Automate Desktop from the portal | Microsoft Docs
 description: Run Power Automate Desktop from the Power Automate portal
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020
@@ -16,28 +16,30 @@ search.audienceType:
 
 # Run Power Automate Desktop from the portal
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**, then **UI Flows**, and then **Create a UI flow**.
 
-![alttext](\media\imgname.png)
+![my ui flows new](\media\run-pad-portal\my-ui-flows-new.png)
 
 In the dialog, select **Power Automate Desktop** and **Next**.
 
-![alttext](\media\imgname.png)
+![build ui flow dialog](\media\run-pad-portal\build-ui-flow-dialog.png)
 
 Enter a name from the flow, otherwise one is automatically generated, and select **Launch App**.
 
-![alttext](\media\imgname.png)
+![ui flow name](\media\run-pad-portal\ui-flow-name.png)
 
 A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
-![alttext](\media\imgname.png)
+![browser open application](\media\run-pad-portal\browser-open-application.png)
 
-Power Automate Desktop opens the console window as well as a flow designer window to edit the new flow with the selected name.
+Power Automate Desktop opens the console window and a flow designer window to edit the new flow with the selected name.
 
-![alttext](\media\imgname.png)
+![console flow designer](\media\run-pad-portal\console-flow-designer.png)
 
-Design and save your flow in the flow designer. 
+Design and save your flow, then close flow designer. Select **Keep Working** to return to Power Automate.
 
-![alttext](\media\imgname.png)
+The flow appears in the console, as well as in Power Automate.
 
-Close flow designer. The flow will appear in the console, as well as in Power Automate.
+![power automate flow](\media\run-pad-portal\power-automate-flow.png)

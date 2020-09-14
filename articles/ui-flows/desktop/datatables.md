@@ -16,6 +16,8 @@ search.audienceType:
 
 # Datatables
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
 A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.

@@ -16,6 +16,8 @@ search.audienceType:
 
 # Switch-case model
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Unlike if-else conditionals, a switch block can address several possible execution paths. A switch statement is a control mechanism that allows a variable or expression to change the flow's behavior.
 
 A switch block consists of three main parts:

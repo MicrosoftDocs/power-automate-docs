@@ -1,7 +1,7 @@
 ---
 title: Run, stop, and pause in flow designer | Microsoft Docs
 description: Using the run, stop, and pause buttons on the toolbar to control the flow.
-author: msftman
+author: olegmelnykov
 ms.service: flow
 ms.topic: article
 ms.date: 02/26/2020
@@ -14,9 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Run, stop and pause in flow designer
+# Run, stop, and pause in flow designer
 
-Select **Run** to run the flow. The **Step** button runs the flow action by action and pauses it after each action is completed. The **Stop** button stops the flow completely.
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-![alttext](\media\imgname.png)
+Select **Run** to run the flow. When the flow runs, Run becomes **Pause**. Select **Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while paused to resume. The **Run next action** button runs the flow action by action and pauses it after each action is completed. The **Stop** button stops the flow completely.
+
+![toolbar](\media\run-stop-pause\toolbar.png)
 

@@ -16,6 +16,8 @@ search.audienceType:
 
 # Enabling and disabling actions
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To disable or enable an action, right-click on it and select **Disable action** or **Enable Action**, respectively. 
 
 ![The disable action option.](media\enabling-disabling-actions\enable-disable-action.png)

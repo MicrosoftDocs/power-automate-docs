@@ -16,6 +16,8 @@ search.audienceType:
 
 # Renaming a variable
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To rename a flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
 
 ![The Rename option for flow variables.](media\renaming-variables\rename-flow-variabe.png)

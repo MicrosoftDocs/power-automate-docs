@@ -16,6 +16,8 @@ search.audienceType:
 
 # The error detail view
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To find more information about a thrown exception, navigate to the **Errors** pane and double-click on the respective error. Once you do so, the **Error details** dialog will appear. This dialog displays information about:
 
 1. **Location**: The subflow and the action that threw the error.

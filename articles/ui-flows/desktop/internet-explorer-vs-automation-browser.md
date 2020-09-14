@@ -16,6 +16,8 @@ search.audienceType:
 
 # Using the actual Internet Explorer vs the Automation browser
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Although **Automation browser** is based on **Internet Explorer**, it provides some features and limitations that increase automation effectiveness.
 
 1. **Automation browser** works out of the box, while **Internet Explorer** requires additional configuration. Security configurations may be unwanted in organizations with strict security policies that prohibit manual changes. 

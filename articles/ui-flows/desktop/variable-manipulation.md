@@ -16,6 +16,8 @@ search.audienceType:
 
 # Variable manipulation and the % notation
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
 ![Quote notation in a Change text case action's field.](media\variable-manipulation\quote-notation.png)

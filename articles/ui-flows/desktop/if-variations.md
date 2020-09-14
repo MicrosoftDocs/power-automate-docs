@@ -16,6 +16,8 @@ search.audienceType:
 
 # If variations
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Apart from the standard **If** action, **Power Automate Desktop** provide some additional conditional actions:
 
 - **If file exists**: Checks if a file exists or not before executing a block of actions. This action can be used to ensure that a file exists before performing other operations on it.

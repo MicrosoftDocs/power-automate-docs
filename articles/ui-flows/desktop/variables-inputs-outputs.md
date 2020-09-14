@@ -16,6 +16,8 @@ search.audienceType:
 
 # Input and output variables
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 **Power Automate Desktop** enables data exchange with the **Power Automate** platform through the input and output variables.
 
 These variables are passed to and from **Power Automate Desktop**, allowing you to create sophisticated flows. Ιn **Power Automate**, any input variables will be added to the UI action as fields. More information about passing data between **Power Automate Desktop** and **Power Automate** can be found in the respective article (link to be added).

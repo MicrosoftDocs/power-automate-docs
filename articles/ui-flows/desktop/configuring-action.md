@@ -16,6 +16,8 @@ search.audienceType:
 
 # Configuring an action
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 **Power Automate Desktop** actions consist of two main segments:
 - The input parameters - They have the form of text fields, drop-down menus, and  check boxes
 - The produced variables - Automatically created variables

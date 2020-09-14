@@ -16,6 +16,8 @@ search.audienceType:
 
 # Loop condition
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Unlike simple loops, the **Loop condition** makes a flow repeat one or more actions as long as a condition is true.
 
 ![The Loop condition action.](media\loop-condition\loop-condition.png)
