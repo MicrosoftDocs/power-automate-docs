@@ -233,7 +233,7 @@ The data types that have properties are displayed in the following lists.
 |-------------|----------------------------------------------------------------------------------|
 |IsTerminated |This property is true if the terminal session is terminated or false if it isn't. |
 
-# XML node
+## XML node
 
 |Property   |Description                          |
 |-----------|-------------------------------------|
