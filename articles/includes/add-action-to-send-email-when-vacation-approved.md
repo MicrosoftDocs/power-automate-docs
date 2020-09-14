@@ -1,4 +1,4 @@
-1. Select **Add an action** on the **IF YES** branch of the condition.
+1. Select **Add an action** on the **If yes** branch of the condition.
 
     ![add new step](media/modern-approvals/add-action-after-condition.png)
 1. Enter **send email** into the search box on the **Choose an action** card.

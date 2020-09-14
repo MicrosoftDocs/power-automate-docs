@@ -33,6 +33,8 @@ Let’s say you want to send an approval request each time an employee uploads a
 - A Power Automate account.
 - A SharePoint list for employees to enter their expense reports.
 
+[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
 ## Create approval flow
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** from the left navigation bar.

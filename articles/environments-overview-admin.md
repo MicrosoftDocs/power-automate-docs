@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/14/2020
 ms.author: sunayv
 search.app: 
   - Flow
@@ -73,13 +73,13 @@ Administrators use the admin center to create and manage environments. Here are 
    ![Settings and Administrator Portal](./media/environments-overview-admin/settings.png)
 1. The administrator center opens.
 
-### Option 2: Open admin.flow.microsoft.com
+### Option 2: Open Power Platform admin center
 
-Go to [admin.flow.microsoft.com](https://admin.flow.microsoft.com), and sign-in with your work account.
+Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and sign-in with your work account.
 
 ## Create an environment
 
-1. In the [Power Automate admin center](https://admin.flow.microsoft.com), select **Environments**. You'll see all existing environments:
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Environments**. You'll see all existing environments:
    ![Environments](./media/environments-overview-admin/environments-list.png)
 2. Select **New environment** and then provide the required information:
 
@@ -102,7 +102,7 @@ You can now add users to the environment.
 
 ## Manage your existing environments
 
-1. In the [Power Automate admin center](https://admin.flow.microsoft.com), select **Environments**:
+1. In the [Power Automate admin center](https://admin.powerplatform.microsoft.com/), select **Environments**:
 
    ![environments menu item](./media/environments-overview-admin/select-environments.png)
 1. Select an environment to open its properties.

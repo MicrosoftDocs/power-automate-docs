@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/16/2020
+ms.date: 08/14/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -30,7 +30,7 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Access the admin center
 
-* Browse to [the Power Automate admin center](https://admin.flow.microsoft.com).
+* Browse to [the Power Automate admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Environments
 
