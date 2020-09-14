@@ -279,6 +279,8 @@
           items:
           - name: Web automation
             href: ./ui-flows/desktop/web-automation.md
+          - name: Interacting with web and APIs
+            href: ./ui-flows/desktop/interacting-web-services.md
           - name: Using browsers and managing extensions
             href: ./ui-flows/desktop/using-browsers.md
           - name: Using the actual Internet Explorer vs the automation browser

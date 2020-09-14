@@ -16,6 +16,8 @@ search.audienceType:
 
 # Interacting with the web and web services
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 It is possible to communicate directly with web resources, such as web pages, files, and APIs, without using a web browser.
 
 ## Downloading web resources
