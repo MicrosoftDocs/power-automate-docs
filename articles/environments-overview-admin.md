@@ -32,7 +32,7 @@ You might create separate environments that group the test and production versio
 
 - You might also create separate environments for different global branches of your company.
 
-You can create and manage environments using the [Power Platform admin center](https:aka.ms/ppac). 
+You can create and manage environments using the [Power Platform admin center](https://aka.ms/ppac). 
 
 Learn all about [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Power Platform admin guide.
 
