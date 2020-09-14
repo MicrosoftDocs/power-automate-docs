@@ -22,7 +22,7 @@ Create a new folder on the desktop, and name it **Countries**.
 
 Go to **flow.microsoft.com**, select **My flows**, then **+New**, and **Instant from blank**.
 
-![my flows instant blank](\media\design-flow\my-flows-instant-blank.png)
+![My flows instant blank](\media\design-flow\my-flows-instant-blank.png)
 
 In the dialog, enter a flow name, select **Manually trigger a flow**, and then select **Create**.
 
@@ -32,13 +32,13 @@ Select **+New step**.
 
 ![new step](\media\design-flow\new-step.png)
 
-Search for **ui flow**, and select the **Run a UI flow (V2)** action.
+Search for **UI flow**, and select the **Run a flow built by Power Automate Desktop (preview)** action.
 
 ![action search](\media\design-flow\action-search.png)
 
 In the action, under Run mode select **Attended - Runs when you're signed in** and under UI flow select **+Create a new UI flow**.
 
-![run ui flow v2 action properties](\media\design-flow\run-ui-flow-v2-action-properties.png)
+![run UI flow action properties](\media\design-flow\run-ui-flow-v2-action-properties.png)
 
 Enter a flow name or one will be generated and select **Launch app**.
 
@@ -132,7 +132,7 @@ Back in Power Automate, in the dialog select **Keep Working**.
 
 Select the new UI flow in the action, and enter **Greece** into **CountryName**.
 
-![run ui flow v2 action properties 2](\media\design-flow\run-ui-flow-v2-action-properties-2.png)
+![run UI flow action properties 2](\media\design-flow\run-ui-flow-v2-action-properties-2.png)
 
 Select **Save** to save the flow and then select **Test**.
 
@@ -150,7 +150,7 @@ When the flow finishes running, all actions will have a green checkmark icon and
 
 ![successful flow run](\media\design-flow\successful-flow-run.png)
 
-Select the **Run a UI flow (V2)** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
+Select the **Run a flow built by Power Automate Desktop (preview)** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
 
 ![variables values](\media\design-flow\variables-values.png)
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Power Automate Desktop flow console
 
-The flow console is the central interface of Power Automate Desktop (PAD).
+The flow console is the central interface of Power Automate Desktop.
 
 ![The flow console](./media/console/flow-console.png)
 
