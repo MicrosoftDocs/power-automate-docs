@@ -30,7 +30,7 @@ The admin center is the central location where tenant admins and environment adm
 
 ## Access the admin center
 
-* Browse to <https://admin.powerplatform.microsoft.com/>.
+Browse to <https://admin.powerplatform.microsoft.com/>.
 
 ## Environments
 
