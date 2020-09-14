@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, PAD utilizes **UI Controls** to identify windows and their elements.
+Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, Power Automate Desktop utilizes **UI elements** to identify windows and their elements.
 
 ## UI elements
 When using a UI automation action, a UI element will have to be provided as input:
@@ -29,7 +29,9 @@ Add a new UI element either directly from the action properties, or from the UI 
 
 ![Add new UI element](./media/ui-elements/add-new-ui-element.png)
 
-To add an element to the flow, highlight it and press **Ctrl & click**:
+To add an element to the flow, highlight it and press **Ctrl & Left click**:
+
+![Capturing UI elements](./media/ui-elements/capturing-ui-elements.png)
 
 When finished, press **Done**. Any UI elements captured will be added to the UI elements pane. Elements can be sorted alphabetically by selecting the **Sort** icon.
 

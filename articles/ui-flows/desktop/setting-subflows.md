@@ -20,7 +20,7 @@ search.audienceType:
 
 Subflows are groups of actions, which may be referenced as a group within a flow.
 
-Every flow contains the **Main** subflow - this is the subflow that is run when a flow starts. Any other subflows may be invoked through the **Run Subflow** action:
+Every flow contains the **Main** subflow - this is the subflow that is run when a flow starts. Any other subflows may be invoked through the **Run subflow** action:
 
 ![The Run subflow action](./media/setting-subflows/run-subflow-action.png)
 

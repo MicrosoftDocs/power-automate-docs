@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run your flows by pressing a Flic smart button (Preview)
+# Run your flows with Flics smart buttons (Preview)
 
 Trigger your flows by pressing a physical button, known as a Flic, from Shortcut Labs. For example, press a Flic to track your working hours, block your calendar, count visitors at an event, or save geographical locations.
 

@@ -5,7 +5,7 @@ An environment is a virtual space used to store, manage and share apps, flows, a
 
 | **Term** | **Description** |
 | --- | --- |
-| **Admin center** |The admin center is a [Web portal](https://admin.flow.microsoft.com) for managing all your environments and data loss prevention policies. |
+| **Admin center** |The admin center is a [Web portal](https://admin.powerplatform.microsoft.com/) for managing all your environments and data loss prevention policies. |
 | **Common Data Service** |Common Data Service allows you to add data storage and modeling capabilities to your apps. |
 | **Environment roles** |The two environment roles are Environment Admin and Environment Maker. |
 | **User roles** |The two default user roles are Organization User and Database Owner. You can add roles, and associate permissions with those roles. |
@@ -27,12 +27,12 @@ Environments can serve several different purposes, depending on your organizatio
 **Note**: Environments are not visible to users so they don't need to be concerned with which environments they are in. Environments are a tool for admins to categorize, manage and share organizational apps and flows.  
 
 ## What are roles?
-A person with access to an environment must be be assigned either the **Environment Admin** or the **Environment Maker** role. Environment admins can perform all administrative tasks on an environment. An environment maker can create resources in an existing environment. An individual can have both roles simultaneously.  
+A person with access to an environment must be assigned either the **Environment Admin** or the **Environment Maker** role. Environment admins can perform all administrative tasks on an environment. An environment maker can create resources in an existing environment. An individual can have both roles simultaneously.  
 
 **Note**: All users will have access to a default environment when each user is given access to Power Automate. Users can have access to multiple environments.  
 
 ## Create an environment
-You create environments from the [Power Automate admin center](https://admin.flow.microsoft.com) with these steps:  
+You create environments from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with these steps:  
 
 1. Name your environment.
 2. Select a region where your environment will be hosted.
