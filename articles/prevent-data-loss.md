@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/18/2020
+ms.date: 09/14/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -30,7 +30,7 @@ This document introduces you to data loss prevention policies, which help protec
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Automate provides you with the ability to create and enforce policies that define which connectors can access and share business data. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
-Take a look at the [data loss prevention policy documents](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) to learn more about protecting your data.
+To learn more about protecting your data, see [Data loss prevention policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) in the Power Platform admin guide.
 
 >[!IMPORTANT]
 >Administrators control data loss prevention policies. Contact your administrator if a data loss prevention policy is blocking your flows from running.
@@ -41,4 +41,3 @@ Take a look at the [data loss prevention policy documents](https://docs.microsof
 * [Learn more about environments](environments-overview-admin.md)
 * [Learn more about Power Automate](getting-started.md)
 * [Learn more about the admin center](admin-center-introduction.md)
-* [Learn more about data integration](https://docs.microsoft.com/common-data-service/entity-reference/dynamics-365-integration)
