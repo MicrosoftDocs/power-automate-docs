@@ -137,7 +137,7 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Other Power Platform products # < 60 chars (optional)
+    - title: Other Microsoft Power Platform products # < 60 chars (optional)
     - items:
         # Card
         - title: Power Apps
