@@ -18,7 +18,7 @@ search.audienceType:
 
 It's possible to design flows simply by performing the task you wish to automate, using the desktop recorder.
 
-## Desktop Recorder
+## Desktop recorder
 In the flow designer, select **Desktop recorder** in the toolbar to record desktop actions:
 
 ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
@@ -35,7 +35,7 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
  
 ![The pause recording button](./media/recording-flow/pause-recording-button.png)
  
- Select **+** to add a comment to the Recorded actions:
+ Select **+** to add a comment to the recorded actions:
 
 ![The comment button](./media/recording-flow/comment-button.png)
 

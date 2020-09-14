@@ -30,8 +30,11 @@ Users may run any flows available to them through the console, by hovering the c
 
 ## Editing a flow
 
-Through the console, users may also create a new flow by pressing the "New flow" button, or edit an already existing one by hovering the cursor over it and pressing the edit button:
+Through the console, users may also create a new flow by pressing the "New flow" button, or edit an already existing one by double-clicking on it, or hovering the cursor over it and pressing the edit button:
 
 ![Create or edit a flow](./media/console/create-edit-flow.png)
 
 In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
+
+> [!NOTE]
+> Switching environments is not possible while a flow is being edited.
