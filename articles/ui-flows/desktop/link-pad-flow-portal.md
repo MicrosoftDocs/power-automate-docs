@@ -42,15 +42,15 @@ Enter a name for the flow and select **Launch app**.
 
 ![build ui flow dialog](\media\link-pad-flow-portal\build-UI-flow-dialog.png)
 
-A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to PAD.
+A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
 ![browser open application](\media\link-pad-flow-portal\browser-open-application.png)
 
-PAD console creates the flow with the selected name and opens the flow designer to edit the new flow.
+The Power Automate Console creates the flow with the selected name and opens the flow designer to edit the new flow.
 
 ![flow designer blank](\media\link-pad-flow-portal\flow-designer-blank.png)
 
-Optionally, create Input/output variables to pass data back and forth from Power Automate to PAD. In the Variables pane, select **+** to add an input or output variable.
+Optionally, create Input/output variables to pass data back and forth from Power Automate to Power Automate Desktop. In the Variables pane, select **+** to add an input or output variable.
 
 ![new input output var](\media\link-pad-flow-portal\new-input-output-var.png)
 
@@ -64,14 +64,14 @@ To create an input or output variable, the Edit variable dialog will require fil
 
 ![add new input var](\media\link-pad-flow-portal\add-new-input-var.png)
 
-Create an Input variable to pass data to PAD from Power Automate. The variable can be used anywhere in the flow.
+Create an Input variable to pass data to Power Automate Desktop from Power Automate. The variable can be used anywhere in the flow.
 
-To pass data to Power Automate from PAD, create an Output variable.
+To pass data to Power Automate from Power Automate Desktop, create an Output variable.
 
 Back in Power Automate, any input variables appear as fields in the UI action.
 
 ![run ui flow v2 action properties 2](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties-2.png)
 
-Output variables from PAD can be used in other Power Automate actions.
+Output variables from Power Automate Desktop can be used in other Power Automate actions.
 
 

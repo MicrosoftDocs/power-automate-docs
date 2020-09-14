@@ -1,5 +1,5 @@
 ---
-title: Create a Power Automate Desktop flow | Microsoft Docs
+title: Call the console from the portal | Microsoft Docs
 description: Create a flow from the Power Automate Desktop console.
 author: olegmelnykov
 ms.service: flow
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create a Power Automate Desktop flow
+# Call the console from the portal
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
