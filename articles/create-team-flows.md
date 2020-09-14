@@ -57,7 +57,7 @@ Adding an owner to a flow is the most common way to share a flow. Any owner of a
 - Add or remove other owners (but not the flow's creator).
 - Delete the flow.
 
-If you're the creator or an owner of a flow, you'll find it listed on the **Team flows** tab in Power Automate<!--This doesn't need to be a live link.-->.
+If you're the creator or an owner of a flow, you'll find it listed on the **Team flows** tab in Power Automate.
 
 ![Team flows tab](./media/create-team-flows/addowner5.png "Team flows tab")
 
@@ -74,7 +74,7 @@ Owners can use services in a flow but can't modify the credentials for a connect
   
     ![Select Share from More commands](./media/create-team-flows/addowner1.png "Select Share from More commands")
 
-1. Enter the name, email address, or group name for the person or group that you want to add as an owner.<!--I don't find the names in these screenshots on our list of our group's approved fictitious names. Can you verify that they're included in sample data?-->
+1. Enter the name, email address, or group name for the person or group that you want to add as an owner.
 
     ![Search for a user or group](./media/create-team-flows/addowner2.png "Search for a user or group")
 
@@ -86,7 +86,7 @@ Congratulations&mdash;you've created your team flow!
 
 ## Add a list as a co-owner
 
-You can add SharePoint lists as co-owners of a flow so that everyone who has edit access to the list automatically gets edit access to the flow. After<!--Writing Style Guide--> the flow is shared, you can simply distribute a link to it. More information: [Training: Create and set up a SharePoint list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
+You can add SharePoint lists as co-owners of a flow so that everyone who has edit access to the list automatically gets edit access to the flow. After the flow is shared, you can simply distribute a link to it. More information: [Training: Create and set up a SharePoint list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
 
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
