@@ -22,9 +22,9 @@ Variables are used within flows to store data for further processing. Every vari
 
 ![Quote notation in a Change text case action's field.](media\variable-manipulation\quote-notation.png)
 
-Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using the backslash (**\\**).
+Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using another percentage character (%%).
 
-**Power Desktop Automation** enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
+**​Power Automate Desktop** enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
 
 ![Complex expression in a Set variable action's field.](media\variable-manipulation\expression.png)
 
@@ -50,8 +50,8 @@ Arithmetic operations are predominantly used with numerical values and variables
 |-----------------------------|-----------------------------------------------------|
 | %5 * 3%                     | 15 (number)                                         |
 | %4 / Var%                   | 4 divided by the value of the Variable named “Var”  |
-| %"this is " + "text"%       | this is text (text)                                 |
-| %"This is the number " + 5% | This is the number 5 (text)                         |
+| %'this is ' + 'text'%       | this is text (text)                                 |
+| %'This is the number ' + 5% | This is the number 5 (text)                         |
 
 **Comparisons**
 
@@ -59,7 +59,7 @@ Besides arithmetic operators, make comparisons using the following operators
 
 | Operator | Description                        |
 |--------- |------------------------------------|
-| ==, !=   | Equal/not equal                    |
+| =, !=    | Equal/not equal                    |
 | <, <=    | Less than/less than or equal       |
 | >, >=    | Greater than/greater than or equal |
 
@@ -67,13 +67,12 @@ Keep in mind that comparisons, when evaluated, produce either **True** or **Fals
 
 **Logical operators**
 
-Logical operators can also be used to check multiple conditions simultaneously, allowing you to implement more complex logic in a single expression. The supported operators are: AND (**&&**), the OR (**||**) and the NOT (**!**). 
+Logical operators can also be used to check multiple conditions simultaneously, allowing you to implement more complex logic in a single expression. The supported operators are: AND and OR. 
 
 | Expression                     | Result                                                                                                           |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------|
-| %Index == 1 \|\| Index == 2%     | True if the value of the **Index** variable is 1 OR 2, otherwise False                                           |
-| %Index == 4 && Text == "Four"% | True if the value of the **Index** variable is 4 AND the value of the **Text** variable is Four, otherwise False |
-| %!ConditionIsTrue%             | True if the value of the **ConditionIsTrue** variable is False, otherwise False                                  |
+| %Index = 1 OR Index = 2%     | True if the value of the **Index** variable is 1 OR 2, otherwise False                                           |
+| %Index = 4 AND Text = "Four"% | True if the value of the **Index** variable is 4 AND the value of the **Text** variable is Four, otherwise False |
 
 **Parentheses**
 

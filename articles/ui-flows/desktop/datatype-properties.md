@@ -32,9 +32,13 @@ The data types that have properties are displayed in the following lists.
 
 ## Texts
 
-|Property  |Description                                 |
-|----------|--------------------------------------------|
-|Length    |The length of the stored text in characters.|
+|Property  |Description                                                                             |
+|----------|----------------------------------------------------------------------------------------|
+|Length    |The length of the stored text in characters.                                            |
+|isEmpty   |This property is true if the variable is empty or false if it contains some characters. |
+|ToUpper   |The text of the variable written in upper case characters.                              |
+|ToLower   |The text of the variable written in lower case characters.                              |
+|Trimmed   |The text of the variable written without white characters in the begging and the end.   |
 
 ## Dates
 
@@ -74,6 +78,7 @@ The data types that have properties are displayed in the following lists.
 |IsReadOnly           |This property is true if the file is read only or false if it isn't.         |
 |IsArchive            |This property is true if the file is an archive or false if it isn't.        |
 |Exists               |This property is true if the file exists or false if the file doesn't exist. |
+|isEmpty              |This property is true if the file is empty or false if the file isn't empty. |
 
 ## Folders
 
@@ -87,6 +92,9 @@ The data types that have properties are displayed in the following lists.
 |LastModified |The date when the folder was last modified.                                      |
 |IsHidden     |This property is true if the folder is hidden or false if the folder is visible. |
 |Exists       |This property is true if the folder exists or false if the folder doesn't exist. |
+|isEmpty      |This property is true if the folder is empty or false if the folder isn't empty. |
+|FilesCount   |The number of files in the folder.                                               |
+|FoldersCount |The number of folders in the folder.                                             |
 
 ## Mail messages
 
@@ -97,6 +105,43 @@ The data types that have properties are displayed in the following lists.
 |From        |The sender of the email message.                                                                           |
 |To          |A list of values containing the recipients of the message.                                                 |
 |Cc          |A list of values containing additional recipients for the message (carbon copy).                           |
+|Date        |The date and time in which the message was sent.                                                           |
+|Subject     |The subject of the message.                                                                                |
+|Body        |The body of the message. The body can be in plain text or in HTML form.                                    |
+|BodyText    |If the previous property contains HTML, this property contains the body of the message in plain text form. |
+|Attachments |A list of files that represent the saved attachments of the email message (if any).                        |
+
+## Exchange connection
+
+|Property                |Description                         |
+|------------------------|------------------------------------|
+|ServerAddress           |The address of the Exchange server. |
+
+## Exchange mail messages
+
+|Property    |Description                                                                                                |
+|------------|-----------------------------------------------------------------------------------------------------------|
+|MailFolder  |The name folder the email message is retrieved from.                                                       |
+|ItemId      |The unique identifier of the message.                                                                      | 
+|From        |The sender of the email message.                                                                           |
+|To          |A list of values containing the recipients of the message.                                                 |
+|Cc          |A list of values containing additional recipients for the message (carbon copy).                           |
+|Date        |The date and time in which the message was sent.                                                           |
+|Subject     |The subject of the message.                                                                                |
+|Body        |The body of the message. The body can be in plain text or in HTML form.                                    |
+|BodyText    |If the previous property contains HTML, this property contains the body of the message in plain text form. |
+|Attachments |A list of files that represent the saved attachments of the email message (if any).                        |
+
+## Outlook mail messages
+
+|Property    |Description                                                                                                |
+|------------|-----------------------------------------------------------------------------------------------------------|
+|MailFolder  |The name folder the email message is retrieved from.                                                       |
+|EntryId     |The unique identifier of the message.                                                                      | 
+|From        |The sender of the email message.                                                                           |
+|To          |A list of values containing the recipients of the message.                                                 |
+|Cc          |A list of values containing additional recipients for the message (carbon copy).                           |
+|Bcc         |A list of values containing additional recipients for the message (blind carbon copy).     
 |Date        |The date and time in which the message was sent.                                                           |
 |Subject     |The subject of the message.                                                                                |
 |Body        |The body of the message. The body can be in plain text or in HTML form.                                    |
@@ -124,23 +169,113 @@ The data types that have properties are displayed in the following lists.
 |Name         |The name of the folder.                     |
 |LastModified |The date when the folder was last modified. |
 
-## Data tables
+## FTP connection
 
-|Property  |Description                                                      |
-|----------|-----------------------------------------------------------------|
-|RowsCount |The number of rows of the data table.                            |
-|Columns   |A list that contains the names of the columns of the data table. | 
+|Property         |Description                                   |
+|-----------------|----------------------------------------------|
+|Host             |The host of the FTP connection.               |
+|SecurityProtocol |The security protocol used in the connection. |
 
-## Data rows
+## Datatables
+
+|Property  |Description                                                                           |
+|----------|--------------------------------------------------------------------------------------|
+|RowsCount |The number of rows of the data table.                                                 |
+|Columns   |A list that contains the names of the columns of the data table.                      | 
+|IsEmpty   |This property is true if the datatable is empty or false if it is contains elements. | 
+
+## Datarows
 
 |Property     |Description                                                      |
 |-------------|-----------------------------------------------------------------|
 |ColumnsCount |The number of columns that the data row holds.                   |
+|ColumnsNames |A list that contains the headers of the datarow.                 |
 
-## Custom dialog instances
+## Web browser instance
 
-|Property                |Description                                                                                                                     |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-|LastButtonPressed       |The name of the button that was last pressed on the dialog.                                                                     |
-|DialogWasForciblyClosed |This property is true if the dialog was closed by a close window command or by pressing the **Cancel** button, false otherwise. | 
-|Handle                  |The handle of the window belonging to this specific custom dialog.                                                              |
+|Property                |Description                                                                |
+|------------------------|---------------------------------------------------------------------------|
+|DisplayRectangleX       |The position of the top-left corner of the window in the x axel.           |
+|DisplayRectangleY       |The position of the top-left corner of the window in the y axel.           |
+|Handle                  |The handle of the browser instance.                                        |
+|HtmlDialogs             |Contains the dialogs of the current page, if they exist.                   |
+|IsAlive                 |This property is true if the browser window is alive or false if it isn't. | 
+
+## Window instance
+
+|Property                |Description                                                                |
+|------------------------|---------------------------------------------------------------------------|
+|Handle                  |The handle of the window instance.                                         |
+
+## Excel instance
+
+|Property                |Description                                                                |
+|------------------------|---------------------------------------------------------------------------|
+|Handle                  |The handle of the Excel instance.                                          |
+
+## SQL connection
+
+|Property                |Description                                                                   |
+|------------------------|------------------------------------------------------------------------------|
+|ConnectionString        |The connection string used for the database connection.                       |
+|IsClosed                |This property is true if the browser window is closed or false if it is open. |
+
+## CMD session
+
+|Property   |Description                                                                   |
+|-----------|------------------------------------------------------------------------------|
+|IsAlive    |This property is true if the CMD session is alive or false if it isn't.       |
+|ProcessId  |The unique identifier of the process.                                         |
+
+## Terminal session
+
+|Property     |Description                                                                       |
+|-------------|----------------------------------------------------------------------------------|
+|IsTerminated |This property is true if the terminal session is terminated or false if it isn't. |
+
+# XML node
+
+|Property   |Description                          |
+|-----------|-------------------------------------|
+|Children   |The children of the XML node.        |
+|InnerText  |The inner text of the XML node.      |
+|InnerXML   |The inner XML  of the XML node     . |
+|Name       |The name of the XML document.        |
+|OuterXML   |The outer XML of the XML node.       |
+|Parent     |The parent of the XML node.          |
+|Value      |The value of the XML node.           |
+
+
+## Active Directory entry
+
+|Property   |Description                                       |
+|-----------|--------------------------------------------------|
+|LdapPath   |The LDAP path of the Active Directory connection. |
+
+## Group info
+
+|Property    |Description                                 |
+|------------|--------------------------------------------|
+|Description |The description of the group.               |
+|DisplayName |The display name of the group.              |
+|Members     |A list containing the members of the group. |
+|Name        |The name of the group.                      |
+
+## User info
+
+|Property        |Description                   |
+|----------------|------------------------------|
+|City            |The city uf the user.         |
+|Company         |The company of the user.      |
+|Country         |The country of the user.      |
+|Department      |The department of the user.   |
+|Email           |The email of the user.        |
+|Extension       |The extension of the user.    |
+|FirstName       |The first name of the user.   |
+|Initials        |The initials of the user.     |
+|LastName        |The last name of the user.    |
+|PostalCode      |The postal code of the user.  |
+|State           |The state of the user.        |
+|StreetAddress   |The address of the user.      |
+|TelephoneNumber |The phone number of the user. |
+|Title           |The title of the user.        |

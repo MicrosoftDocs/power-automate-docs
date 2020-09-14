@@ -235,7 +235,7 @@
               href: ./ui-flows/desktop/variable-data-types.md
             - name: Lists
               href: ./ui-flows/desktop/lists.md
-            - name: Data tables
+            - name: Datatables
               href: ./ui-flows/desktop/datatables.md
             - name: Datatype properties
               href: ./ui-flows/desktop/datatype-properties.md
