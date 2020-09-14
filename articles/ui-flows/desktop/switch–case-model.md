@@ -24,6 +24,6 @@ A switch block consists of three main parts:
 
 2. Inside the switch block, each **Case** marks a block of actions to execute if the respective condition is true.
 
-3. In case all conditions are invalid, the flow will execute the actions in the **Default Case** block, if exists.
+3. In case all conditions are invalid, the flow will execute the actions in the **Default case** block, if exists.
 
 ![A example with an switch block.](media\switch-case-model\switch.png)

@@ -28,6 +28,8 @@ Apart from the standard **If** action, **Power Automate Desktop** provide some a
 
 - **If window**: Executes a block of actions if a specific window is open, or not.
 
+- **If window contains**: Executes a block of actions if a specific text or UI element exists in a window, or not.
+
 - **If image**: Executes a block of actions if a specific image is found on the screen, or not.
 
 - **If web page contains**: Executes a block of actions if a web page contains a specific element or some text, or not.

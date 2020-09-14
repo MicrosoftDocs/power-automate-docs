@@ -17,7 +17,7 @@ search.audienceType:
 # Configuring an action
 
 **Power Automate Desktop** actions consist of two main segments:
-- The input parameters - They have the form of text fields, drop-down menus, and drop-down menus
+- The input parameters - They have the form of text fields, drop-down menus, and  check boxes
 - The produced variables - Automatically created variables
 
 The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables. 

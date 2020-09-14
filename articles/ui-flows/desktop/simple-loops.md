@@ -30,4 +30,4 @@ A simple loop is ideal to use in two cases:
 
 ![An example flow with a Loop action .](media\simple-loops\loop-example.png)
 
-In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.
+In case you need to exit the loop before the specified iterations are completed, use the **Exit loop** action. To skip the current iteration, use the **Next loop** action.

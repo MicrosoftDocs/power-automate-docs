@@ -26,4 +26,4 @@ The condition consists of two operands and an operator. The platform supports th
 
 ![An example flow with a Loop condition action.](media\loop-condition\loop-condition-example.png)
 
-In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.
+In case you need to exit the loop before the specified iterations are completed, use the **Exit loop** action. To skip the current iteration, use the **Next loop** action.
