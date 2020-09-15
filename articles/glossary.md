@@ -90,7 +90,7 @@ Azure Logic Apps. They contain a set of pre-built triggers (“when a new email
 arrives’…) and actions (“upload email attachment to SharePoint and My App”) to
 be used in apps and workflows.
 
- [Connectors documentation](https://docs.microsoft.com/en-us/connectors/)
+ [Connectors documentation](https://docs.microsoft.com/connectors/)
 
  **Custom connectors:** Custom connecters allow users to connect a web service to
 Power Automate. Users teach Power Automate about the characteristics of the web
