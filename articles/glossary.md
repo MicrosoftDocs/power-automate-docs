@@ -85,7 +85,7 @@ business applications.
 
 **Flow types:** Automated, instant, scheduled, UI flows and business process flow.
 
- [Get started with Power Automate]getting-started.md)
+ [Get started with Power Automate](getting-started.md)
 
 **Flow designer:** The flow designer is the studio where makers create flows from blank or start from a template (that they can customize or add steps to).
 
