@@ -56,6 +56,8 @@ To disable the **IEESC** feature:
 
 1. Disable the **IEESC** feature for both administrators and users.
 
+    ![The IEESC feature in the Local server settings.](media/using-browsers/internet-explorer-servers.png)
+
 1. Select **OK** to apply the changes.
 
 ## Configuring Microsoft Edge
