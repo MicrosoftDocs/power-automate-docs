@@ -132,20 +132,17 @@ from blank or start from a template (that they can customize or add steps to).
 mobile or desktop app manually. For example, by clicking a button on a mobile
 app, it will send a reminder email to your team before a meeting.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
+ [Introducing instant flows](introduction-to-button-flows.md)
 
 ## M
 
-**Multistep flows:** A multistep flow uses more than one action to accomplish a
-task.
+**Multistep flows:** A multistep flow uses more than one action to accomplish a task.
 
 ## R
 
-**Robotic Process Automation (rpa):** Automation using a software application
-that replicates the actions of a human being interacting with the user interface
-of a computer system.
+**Robotic Process Automation (rpa):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/ui-flows/create-processes)
+ [Use Softomotive's WinAutomation with UI flows](create-processes.md)
 
 ## S
 
@@ -154,7 +151,7 @@ maker. Scheduled flows can repeat on the following cadences: every second,
 minute, hour, day, week, and/or month. For example, users can schedule an
 automation such as daily data upload to SharePoint or a database.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/run-scheduled-tasks)
+ [Run flows on a schedule](run-scheduled-tasks.md)
 
 **Steps:** There's a button at the bottom of each step (action) labeled +New
 step in the flow designer that lets the user add another action.
@@ -166,7 +163,7 @@ designed to help users easily create flows that meet their specific business
 needs. Templates can be customized. There are hundreds of flow templates that
 cater to many types of common automation scenarios.
 
- [Link](https://preview.flow.microsoft.com/en-us/templates/)
+ [Power Automate Templates](https://flow.microsoft.com/templates/)
 
 **Trigger:** A trigger is an event that starts a flow. Flows can have one or
 more triggers to start a flow. For example, if you create a flow “when an email
@@ -186,7 +183,7 @@ Windows and web applications. UI flows record and plays back user interface
 actions (clicks, keyboard input, etc.) for applications that don't have
 easy-to-use or complete APIs available.
 
-[Link](https://docs.microsoft.com/en-us/power-automate/ui-flows/overview)
+[Introduction to UI flows](/ui-flows/overview.md)
 
 ## Learn more
 
