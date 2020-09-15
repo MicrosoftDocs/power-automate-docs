@@ -42,7 +42,7 @@ Create, Update, Delete, Assign, or Perform Action.
 
 **Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example, when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
 
- [Create a flow in Power Automate](get-started-logic-flow)
+ [Create a flow in Power Automate](get-started-logic-flow.md)
 
 ## B
 
@@ -75,7 +75,7 @@ business applications.
 
 **Data loss prevention**: Data loss prevention provides you with the ability to create and enforce policies that define which connectors can access and share business data. This is a key feature to help ensure that your business data is protected.
 
- [Data loss prevention policies](wp-data-loss-prevention.md)
+ [Data loss prevention policies](prevent-data-loss.md)
 
 ## F
 
