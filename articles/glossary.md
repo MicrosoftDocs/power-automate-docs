@@ -27,39 +27,35 @@ The following terms are commonly used in Power Automate
 
 ## A
 
-**Action:** An action is the task completed when a trigger is invoked. Flows can
-have one or many actions or tasks based on the number of tasks needed to
-complete a particular flow. With actions, you can perform operations, such as
-Create, Update, Delete, Assign, or Perform Action.
+**Action:** An action is the task that's started when a trigger is invoked. Flows can have one or many actions,depending on what's needed to complete a particular flow. With actions, you can perform operations, such as Create, Update, Delete, Assign, or Perform Action.
 
  [Add an action](multi-step-logic-flow.md)
 
 **Action items**: Action items are the screen where you can check the status of approvals and business process flows.
 
-**Approvals (aka approval requests):** Approvals refer to the act of approving a flow. This can be a simple approve or reject, or a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
+**Approvals (approval requests):** Approvals refer to the actions in approving a flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
  [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
-**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example, when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
+**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
 
  [Create a flow in Power Automate](get-started-logic-flow.md)
 
 ## B
 
-**Business process flow**: A business process flow ensures that everyone in your company follows the same process by defining a set of steps for people to follow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order.
+**Business process flow**: A business process flow ensures that everyone in your company follows the same process.  You'll define a set of steps for people to follow. For example, you might want to create a business process flow so everyone handles customer service requests the same way.  You might require people get approval for an invoice before submitting an order.
 
  [Business process flows overview](business-process-flows-overview.md)
 
 ## C
 
-**Common Data Service:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It is an abstraction on top of underlying Azure cloud data management services to make it easier to build
-business applications.
+**Common Data Service:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It's an abstraction on top of underlying Azure cloud data management services to make it easier to build business applications.
 
  [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
 
 **Common Data Service for Teams**: A common cloud data platform for Microsoft teams. Common Data Service for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
 
-**Conditions:** Conditions tells flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that a user will get an email only if a tweet that contains a keyword is retweeted at least 10 times.
+**Conditions:** Conditions tell flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that you'll get an email when a tweet that contains a keyword is retweeted at least 10 times.
 
  [Add a condition to a flow](add-condition.md)
 
@@ -79,7 +75,7 @@ business applications.
 
 ## F
 
-**Flow checker:** Flow checker is a diagnostic tool that points to specific occurrences within the flow where improvements may be required to run a flow. For each identified issue, the flow checker appears in the designer's command bar and will show a red dot when one or more errors are identified in your flow.
+**Flow checker:** Flow checker is a diagnostic tool that points to specific occurrences within the flow where improvements may be required to run a flow. For each identified issue, the flow checker appears in the designer's command bar. It will show a red dot when one or more errors are identified in your flow.
 
  [Find and fix errors with Flow Checker](error-checker.md)
 
@@ -130,7 +126,7 @@ Flows can have one or more triggers.
 ## U
 
 **UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
-Windows and web applications. UI flows record and play back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+Windows and web applications. UI flows record and playback user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 [Introduction to UI flows](ui-flows/overview.md)
 
