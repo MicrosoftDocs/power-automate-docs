@@ -34,103 +34,64 @@ Create, Update, Delete, Assign, or Perform Action.
 
  [Add an action](multi-step-logic-flow.md)
 
-**Action items**: Action items are the landing page where users can check the
-status of approvals and business process flows.
+**Action items**: Action items are the screen where you can check the status of approvals and business process flows.
 
-**Approvals (aka approval requests):** Approvals are the act of approving a
-flow. This can be a simple approve or reject, or a custom approval where the
-sender can request any sign off, including multiple choice. To create an
-approval workflow, add an approval action. After you add this action, your flow
-can manage the approval of documents or processes
+**Approvals (aka approval requests):** Approvals refer to the act of approving a flow. This can be a simple approve or reject, or a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
- [Link](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
+ [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
-**Automated flow:** Automated flows are triggered off a predetermined designed
-event. These run when an event triggers the flow to run. For example, when a
-record is created, deleted, or updated in Common Data Service, the flow will
-run.
+**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example, when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
 
  [Create a flow in Power Automate](get-started-logic-flow)
 
 ## B
-**Business process flow**: Business process flow ensures that everyone in your
-company follows the same process by defining a set of steps for people to
-follow. For example, you might want to create a business process flow to have
-everyone handle customer service requests the same way, or to require that
-people get approval for an invoice before submitting an order. 
+
+**Business process flow**: A business process flow ensures that everyone in your company follows the same process by defining a set of steps for people to follow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order.
 
  [Business process flows overview](business-process-flows-overview.md)
 
 ## C
 
-**Common Data Service:** A cloud-scale database used to store data for business
-applications such as Power Automate and Power Apps. It is an abstraction on top
-of underlying Azure cloud data management services to make it easier to build
+**Common Data Service:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It is an abstraction on top of underlying Azure cloud data management services to make it easier to build
 business applications.
 
  [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
 
-**Common Data Service for Teams**: A common cloud data platform for Microsoft
-teams. Common Data Service for Teams enables everyone to quickly build and
-deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and
-Microsoft Power Virtual Agents.
+**Common Data Service for Teams**: A common cloud data platform for Microsoft teams. Common Data Service for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
 
- 
-**Conditions:** Conditions tells flow to perform actions based on predetermined
-logic set in the flow. If certain conditions are true, then one or more tasks
-will be completed. For example, users can create conditions that specify that a
-user will get an email only if a tweet that contains a keyword is retweeted at
-least 10 times.
+**Conditions:** Conditions tells flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that a user will get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
  [Add a condition to a flow](add-condition.md)
 
-**Connectors:** Connectors allow users to connect popular services (such as
-Twitter, Outlook, Gmail…) to Microsoft Power Automate, Microsoft Power Apps, and
-Azure Logic Apps. They contain a set of pre-built triggers (“when a new email
-arrives’…) and actions (“upload email attachment to SharePoint and My App”) to
-be used in apps and workflows.
+**Connectors:** Connectors allow users to connect popular services (such as Twitter, Outlook, Gmail, and more) to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They contain a set of pre-built triggers (“when a new email arrives’…) and actions (“upload email attachment to SharePoint and My App”) to be used in apps and workflows.
 
  [Connectors documentation](https://docs.microsoft.com/connectors/)
 
- **Custom connectors:** Custom connecters allow users to connect a web service to
-Power Automate. Users teach Power Automate about the characteristics of the web
-service which include authentication, the triggers and actions that it supports,
-and the parameters and outputs for each of those actions. Custom connectors must
-be registered before they can be shared with their organization.
+ **Custom connectors:** Custom connecters allow users to connect a web service to Power Automate. Users teach Power Automate about the characteristics of the web service which include authentication, the triggers and actions that it supports, and the parameters and outputs for each of those actions. Custom connectors must be registered before they can be shared with your organization.
 
 [Start to build with Power Automate](get-started-flow-dev.md)
 
 ## D
 
-**Data loss prevention**: Data loss prevention provides you with the ability to
-create and enforce policies that define which connectors can access and share
-business data. This is a key feature to ensure your business data is protected
-from any data being shared where you do not want it to be shared.
+**Data loss prevention**: Data loss prevention provides you with the ability to create and enforce policies that define which connectors can access and share business data. This is a key feature to help ensure that your business data is protected.
 
  [Data loss prevention policies](wp-data-loss-prevention)
 
 ## F
 
-**Flow checker:** Flow checker is a diagnostic tool that points to specific
-occurrences within the flow where improvements may be required to run a flow.
-For each identified issue, the flow checker appears in the designer's command
-bar and will show a red dot when one or more errors are identified in your flow.
+**Flow checker:** Flow checker is a diagnostic tool that points to specific occurrences within the flow where improvements may be required to run a flow. For each identified issue, the flow checker appears in the designer's command bar and will show a red dot when one or more errors are identified in your flow.
 
  [Find and fix errors with Flow Checker](error-checker.md)
 
-**Flow types:** Automated, instant, scheduled, UI flows and business process
-flow.
+**Flow types:** Automated, instant, scheduled, UI flows and business process flow.
 
  [Get started with Power Automate]getting-started.md)
 
-**Flow designer:** The flow designer is the studio where makers create flows
-from blank or start from a template (that they can customize or add steps to).
+**Flow designer:** The flow designer is the studio where makers create flows from blank or start from a template (that they can customize or add steps to).
 
 ## I
 
-**Instant flow:** Instant flow allows users to trigger repetitive tasks from the
-mobile or desktop app manually. For example, by clicking a button on a mobile
-app, it will send a reminder email to your team before a meeting.
+**Instant flow:** Instant flow allows users to trigger repetitive tasks from the mobile or desktop app manually. For example, by clicking a button on a mobile app, it will send a reminder email to your team before a meeting.
 
  [Introducing instant flows](introduction-to-button-flows.md)
 
@@ -146,42 +107,30 @@ app, it will send a reminder email to your team before a meeting.
 
 ## S
 
-**Scheduled flows:** Scheduled flows run on a determined schedule defined by the
-maker. Scheduled flows can repeat on the following cadences: every second,
-minute, hour, day, week, and/or month. For example, users can schedule an
-automation such as daily data upload to SharePoint or a database.
+**Scheduled flows:** Scheduled flows run on a schedule defined by the maker. Scheduled flows can repeat on the following cadences: every second, minute, hour, day, week, and/or month. For example, users can schedule an automation such as daily data upload to SharePoint or a database.
 
  [Run flows on a schedule](run-scheduled-tasks.md)
 
-**Steps:** There's a button at the bottom of each step (action) labeled +New
-step in the flow designer that lets the user add another action.
+**Steps:** There's a button at the bottom of each step (action) labeled **+New step** in the flow designer that lets the user add another action.
 
 ## T
 
-**Templates:** Templates are prebuilt set of triggers and actions that are
-designed to help users easily create flows that meet their specific business
-needs. Templates can be customized. There are hundreds of flow templates that
-cater to many types of common automation scenarios.
+**Templates:** Templates are prebuilt set of triggers and actions that are designed to help users easily create flows that meet their specific business needs. Templates can be customized. There are hundreds of flow templates that cater to many types of common automation scenarios.
 
  [Power Automate Templates](https://flow.microsoft.com/templates/)
 
-**Trigger:** A trigger is an event that starts a flow. Flows can have one or
-more triggers to start a flow. For example, if you create a flow “when an email
-with an attachment arrives to the inbox, automatically upload the file to
-OneDrive” - the arrival of the email with an attachment is the trigger of such
-flow.
+**Trigger:** A trigger is an event that starts a flow.  For example, if you create a flow: “when an email with an attachment arrives, automatically upload the file to OneDrive” - the arrival of the email with an attachment is the trigger of such flow.
+
+Flows can have one or more triggers.
 
 ## W
 
-**Workflow:** A sequence of actions that takes a task from initiation to
-completion
+**Workflow:** A sequence of actions that takes a task from initiation to completion.
 
 ## U
 
 **UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
-Windows and web applications. UI flows record and plays back user interface
-actions (clicks, keyboard input, etc.) for applications that don't have
-easy-to-use or complete APIs available.
+Windows and web applications. UI flows record and play back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
 [Introduction to UI flows](/ui-flows/overview.md)
 
