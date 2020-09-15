@@ -29,10 +29,10 @@ The following terms are commonly used in Power Automate
 
 **Action:** An action is the task completed when a trigger is invoked. Flows can
 have one or many actions or tasks based on the number of tasks needed to
-complete a particular flow. With Actions, you can perform operations, such as
-Create, Update, Delete, Assign, or Perform Action. 
+complete a particular flow. With actions, you can perform operations, such as
+Create, Update, Delete, Assign, or Perform Action.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/actions#:~:text=Actions%20open%20a%20range%20of,action%20creates%20a%20custom%20message.&text=These%20new%20messages%20are%20driven,be%20done%20with%20an%20entity.)
+ [Add an action](multi-step-logic-flow.md)
 
 **Action items**: Action items are the landing page where users can check the
 status of approvals and business process flows.
@@ -50,7 +50,7 @@ event. These run when an event triggers the flow to run. For example, when a
 record is created, deleted, or updated in Common Data Service, the flow will
 run.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/get-started-logic-flow)
+ [Create a flow in Power Automate](get-started-logic-flow)
 
 ## B
 **Business process flow**: Business process flow ensures that everyone in your
@@ -59,7 +59,7 @@ follow. For example, you might want to create a business process flow to have
 everyone handle customer service requests the same way, or to require that
 people get approval for an invoice before submitting an order. 
 
- [Link](https://docs.microsoft.com/en-us/power-automate/business-process-flows-overview)
+ [Business process flows overview](business-process-flows-overview.md)
 
 ## C
 
@@ -68,7 +68,7 @@ applications such as Power Automate and Power Apps. It is an abstraction on top
 of underlying Azure cloud data management services to make it easier to build
 business applications.
 
- [Link](https://docs.microsoft.com/en-us/power-platform/admin/wp-cds-for-apps#:~:text=The%20Common%20Data%20Service%20is,easier%20to%20build%20business%20applications.)
+ [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro.md)
 
 **Common Data Service for Teams**: A common cloud data platform for Microsoft
 teams. Common Data Service for Teams enables everyone to quickly build and
@@ -82,7 +82,7 @@ will be completed. For example, users can create conditions that specify that a
 user will get an email only if a tweet that contains a keyword is retweeted at
 least 10 times.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/add-condition)
+ [Add a condition to a flow](add-condition.md)
 
 **Connectors:** Connectors allow users to connect popular services (such as
 Twitter, Outlook, Gmail…) to Microsoft Power Automate, Microsoft Power Apps, and
@@ -90,7 +90,7 @@ Azure Logic Apps. They contain a set of pre-built triggers (“when a new email
 arrives’…) and actions (“upload email attachment to SharePoint and My App”) to
 be used in apps and workflows.
 
- [Link](https://docs.microsoft.com/en-us/connectors/)
+ [Connectors documentation](https://docs.microsoft.com/en-us/connectors/)
 
  **Custom connectors:** Custom connecters allow users to connect a web service to
 Power Automate. Users teach Power Automate about the characteristics of the web
@@ -98,7 +98,7 @@ service which include authentication, the triggers and actions that it supports,
 and the parameters and outputs for each of those actions. Custom connectors must
 be registered before they can be shared with their organization.
 
-[Link](https://docs.microsoft.com/en-us/power-automate/get-started-flow-dev)
+[Start to build with Power Automate](get-started-flow-dev.md)
 
 ## D
 
@@ -107,7 +107,7 @@ create and enforce policies that define which connectors can access and share
 business data. This is a key feature to ensure your business data is protected
 from any data being shared where you do not want it to be shared.
 
- [Link](https://docs.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention)
+ [Data loss prevention policies](wp-data-loss-prevention.md)
 
 ## F
 
@@ -116,12 +116,12 @@ occurrences within the flow where improvements may be required to run a flow.
 For each identified issue, the flow checker appears in the designer's command
 bar and will show a red dot when one or more errors are identified in your flow.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/error-checker#:~:text=Flow%20Checker%20in%20Power%20Automate%20promotes%20higher%20quality%20flows%20by,a%20performance%20or%20reliability%20risk%3F%22)
+ [Find and fix errors with Flow Checker](error-checker.md)
 
 **Flow types:** Automated, instant, scheduled, UI flows and business process
 flow.
 
- [Link](https://docs.microsoft.com/en-us/power-automate/getting-started)
+ [Get started with Power Automate]getting-started.md)
 
 **Flow designer:** The flow designer is the studio where makers create flows
 from blank or start from a template (that they can customize or add steps to).
