@@ -31,7 +31,7 @@ The following terms are commonly used in Power Automate
 
  [Add an action](multi-step-logic-flow.md)
 
-**Action items**: Action items are the screen where you can check the status of approvals and business process flows.
+**Action items**: The **Action items** screen shows the status of approvals and business process flows. Action items is located on the left navigation pane in Power Automate.
 
 **Approvals (approval requests):** Approvals refer to the actions in approving a flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
@@ -63,7 +63,7 @@ The following terms are commonly used in Power Automate
 
  [Connectors documentation](https://docs.microsoft.com/connectors/)
 
- **Custom connectors:** Custom connecters allow users to connect a web service to Power Automate. Users teach Power Automate about the characteristics of the web service which include authentication, the triggers and actions that it supports, and the parameters and outputs for each of those actions. Custom connectors must be registered before they can be shared with your organization.
+**Custom connectors:** Custom connecters allow users to connect a web service to Power Automate. Users teach Power Automate about the characteristics of the web service which include authentication, the triggers and actions that it supports, and the parameters and outputs for each of those actions. Custom connectors must be registered before they can be shared with your organization.
 
 [Start to build with Power Automate](get-started-flow-dev.md)
 
@@ -97,7 +97,7 @@ The following terms are commonly used in Power Automate
 
 ## R
 
-**Robotic Process Automation (rpa):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
+**Robotic Process Automation (RPA):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
  [Use Softomotive's WinAutomation with UI flows](ui-flows/create-processes.md)
 
