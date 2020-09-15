@@ -40,7 +40,7 @@ There are no additional licensing requirements when you use Power Automate with 
 For details licensing information about Project Oakdale, see [licensing and restrictions](/power-platform/admin/about-teams-environment?branch=teams-preview#licensing-and-restrictions) in the Power Platform admin guide.
 
 ### Related topics
-[Power Apps and Teams](/powerapps/teams/overview)
+[Power Apps and Teams](/powerapps/teams/overview)<br/>
 [Power Virtual Agents and Teams]( https://aka.ms/pva-teams-docs)
 
 
