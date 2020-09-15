@@ -142,7 +142,7 @@ app, it will send a reminder email to your team before a meeting.
 
 **Robotic Process Automation (rpa):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
- [Use Softomotive's WinAutomation with UI flows](create-processes.md)
+ [Use Softomotive's WinAutomation with UI flows](ui-flows/create-processes.md)
 
 ## S
 
