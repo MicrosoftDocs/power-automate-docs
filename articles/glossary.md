@@ -75,7 +75,7 @@ business applications.
 
 **Data loss prevention**: Data loss prevention provides you with the ability to create and enforce policies that define which connectors can access and share business data. This is a key feature to help ensure that your business data is protected.
 
- [Data loss prevention policies](wp-data-loss-prevention)
+ [Data loss prevention policies](wp-data-loss-prevention.md)
 
 ## F
 
