@@ -107,7 +107,7 @@ create and enforce policies that define which connectors can access and share
 business data. This is a key feature to ensure your business data is protected
 from any data being shared where you do not want it to be shared.
 
- [Data loss prevention policies](wp-data-loss-prevention.md)
+ [Data loss prevention policies](wp-data-loss-prevention)
 
 ## F
 
