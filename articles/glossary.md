@@ -1,11 +1,11 @@
 ---
-title: Frequently asked questions | Microsoft Docs
-description: Answers to several common questions about Power Automate
+title: Power Automate Glossary | Microsoft Docs
+description: Glossary of terms used in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: kvivek
+author: nijemcevic
+manager: ''
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,143 +13,180 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/18/2020
-ms.author: stepsic
+ms.date: 09/18/2020
+ms.author: tatn
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# Frequently asked questions
+# Power Automate Glossary
 
-## Audience and strategy
-### What is Power Automate?
-Power Automate is a cloud-based service that makes it practical and simple for line-of-business users to build workflows that automate time-consuming business tasks and processes across applications and services.
+The following terms are commonly used in Power Automate
 
-### Who is the intended audience for Power Automate?
-Power Automate has two distinct audiences:
+## A
 
-* Line-of-business “Citizen Integrators” in enterprise organizations who partner with IT to move responsibility for business solutions closer to the business itself.
-* IT decision makers who want to empower line-of-business partners to create their own solutions so IT professionals and integration specialists can focus their expertise on more advanced integration tools, such as Azure Logic Apps.
+**Action:** An action is the task completed when a trigger is invoked. Flows can
+have one or many actions or tasks based on the number of tasks needed to
+complete a particular flow. With Actions, you can perform operations, such as
+Create, Update, Delete, Assign, or Perform Action. 
 
-### How do Power Automate and Logic Apps relate to each other?
-Power Automate provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Power Automate, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
+ [Link](https://docs.microsoft.com/en-us/power-automate/actions#:~:text=Actions%20open%20a%20range%20of,action%20creates%20a%20custom%20message.&text=These%20new%20messages%20are%20driven,be%20done%20with%20an%20entity.)
 
-### How does Power Automate fit in Microsoft’s overall business application platform strategy?
-Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
+**Action items**: Action items are the landing page where users can check the
+status of approvals and business process flows.
 
-## Functionality
-### What do I need to use Power Automate?
-To use Power Automate, all you need is a web browser and an email address.
+**Approvals (aka approval requests):** Approvals are the act of approving a
+flow. This can be a simple approve or reject, or a custom approval where the
+sender can request any sign off, including multiple choice. To create an
+approval workflow, add an approval action. After you add this action, your flow
+can manage the approval of documents or processes
 
-### What browsers and devices can I use with Power Automate?
+ [Link](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
-You can run Power Automate on all modern devices, and browsers.
+**Automated flow:** Automated flows are triggered off a predetermined designed
+event. These run when an event triggers the flow to run. For example, when a
+record is created, deleted, or updated in Common Data Service, the flow will
+run.
 
-#### Supported devices
+ [Link](https://docs.microsoft.com/en-us/power-automate/get-started-logic-flow)
 
-Power Automate runs great on modern devices. If you need to manage Power Automate from a mobile device, try the Power Automate mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+## B
+**Business process flow**: Business process flow ensures that everyone in your
+company follows the same process by defining a set of steps for people to
+follow. For example, you might want to create a business process flow to have
+everyone handle customer service requests the same way, or to require that
+people get approval for an invoice before submitting an order. 
 
-#### Supported browsers
+ [Link](https://docs.microsoft.com/en-us/power-automate/business-process-flows-overview)
 
-We recommend that you use the most up-to-date browser that's compatible with your operating system. We support the following browsers:
+## C
 
-* Microsoft Edge
-* Internet Explorer 11
-* Safari
-* Chrome
-* Firefox
+**Common Data Service:** A cloud-scale database used to store data for business
+applications such as Power Automate and Power Apps. It is an abstraction on top
+of underlying Azure cloud data management services to make it easier to build
+business applications.
 
-### Which email addresses are supported?
-Power Automate supports email addresses that end with anything except .gov and .mil.  
+ [Link](https://docs.microsoft.com/en-us/power-platform/admin/wp-cds-for-apps#:~:text=The%20Common%20Data%20Service%20is,easier%20to%20build%20business%20applications.)
 
-### Is Power Automate available on-premises?
-Power Automate is a public cloud service only. However, you can securely connect to your own on-premises services through the on-premises data gateway.
+**Common Data Service for Teams**: A common cloud data platform for Microsoft
+teams. Common Data Service for Teams enables everyone to quickly build and
+deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and
+Microsoft Power Virtual Agents.
 
-### What services can Power Automate connect to?
-Power Automate connects to more than 100 data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following:
+ 
+**Conditions:** Conditions tells flow to perform actions based on predetermined
+logic set in the flow. If certain conditions are true, then one or more tasks
+will be completed. For example, users can create conditions that specify that a
+user will get an email only if a tweet that contains a keyword is retweeted at
+least 10 times.
 
-* SharePoint
-* Dynamics 365
-* OneDrive
-* OneDrive for Business
-* Google Drive
-* Google Sheets
-* Trello
-* Twitter
-* Box
-* Facebook
-* SalesForce.com
-* Mailchimp
-* Customer APIs
+ [Link](https://docs.microsoft.com/en-us/power-automate/add-condition)
 
-You can find a full list of available connectors [here](https://go.microsoft.com/fwlink/?LinkId=832211).
+**Connectors:** Connectors allow users to connect popular services (such as
+Twitter, Outlook, Gmail…) to Microsoft Power Automate, Microsoft Power Apps, and
+Azure Logic Apps. They contain a set of pre-built triggers (“when a new email
+arrives’…) and actions (“upload email attachment to SharePoint and My App”) to
+be used in apps and workflows.
 
-You can access data sources in your own IT infrastructure through the [on-premises data gateway](gateway-manage.md).
+ [Link](https://docs.microsoft.com/en-us/connectors/)
 
-### What are templates?
-Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
+ **Custom connectors:** Custom connecters allow users to connect a web service to
+Power Automate. Users teach Power Automate about the characteristics of the web
+service which include authentication, the triggers and actions that it supports,
+and the parameters and outputs for each of those actions. Custom connectors must
+be registered before they can be shared with their organization.
 
-### What data sources will I be able to connect to?
-You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and Common Data Service.
+[Link](https://docs.microsoft.com/en-us/power-automate/get-started-flow-dev)
 
-### How do I connect to a REST API in my flow?
-You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](developer/register-custom-api.md).
+## D
 
-### How do I connect to SQL Server and other on-premises data sources?
-You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md).
+**Data loss prevention**: Data loss prevention provides you with the ability to
+create and enforce policies that define which connectors can access and share
+business data. This is a key feature to ensure your business data is protected
+from any data being shared where you do not want it to be shared.
 
-### Can I share the flows I create?
-You can share flows in either of these ways:
+ [Link](https://docs.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention)
 
-* You can add co-workers or groups in your organization as owners on your flows, so they can also edit and manage the flow.
-* For flows that can be run manually, you can also grant other people or groups in your organization permission to just run the flow.
+## F
 
-### How many flows can I have?
-You can create an unlimited number of flows, depending on the [type of license](https://flow.microsoft.com/pricing) you hold.
+**Flow checker:** Flow checker is a diagnostic tool that points to specific
+occurrences within the flow where improvements may be required to run a flow.
+For each identified issue, the flow checker appears in the designer's command
+bar and will show a red dot when one or more errors are identified in your flow.
 
-### Where do I get started with Power Automate?
-Get started with the following resources:
+ [Link](https://docs.microsoft.com/en-us/power-automate/error-checker#:~:text=Flow%20Checker%20in%20Power%20Automate%20promotes%20higher%20quality%20flows%20by,a%20performance%20or%20reliability%20risk%3F%22)
 
-* [Blog](https://flow.microsoft.com)
-* [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
-* [Topic](getting-started.md)
-* [Community](https://powerusers.microsoft.com)
+**Flow types:** Automated, instant, scheduled, UI flows and business process
+flow.
 
-### What operating systems does the mobile app for Power Automate support?
-The Power Automate mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+ [Link](https://docs.microsoft.com/en-us/power-automate/getting-started)
 
-### Can flows be turned off or disabled?
+**Flow designer:** The flow designer is the studio where makers create flows
+from blank or start from a template (that they can customize or add steps to).
 
-Yes, each flow has an on/off switch that enables you to stop the flow from processing requests.
+## I
 
-See the following table to understand how your flow responds when it's turned back on.
+**Instant flow:** Instant flow allows users to trigger repetitive tasks from the
+mobile or desktop app manually. For example, by clicking a button on a mobile
+app, it will send a reminder email to your team before a meeting.
 
-Trigger type|Description
--------|--------
-Polling, such as the **Recurrence** trigger|When the flow is turned on again, all unprocessed/pending events are processed. Delete your flow if you don't want to process pending items.
-Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
+ [Link](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
 
-### What regions and languages does Power Automate support?
-Power Automate is available in 42 languages and [six regions](regions-overview.md).
+## M
 
-### How does Power Automate compare to SharePoint Designer 2013?
-Power Automate is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
+**Multistep flows:** A multistep flow uses more than one action to accomplish a
+task.
 
-### How does Power Automate ensure that corporate data isn't accidentally released to social media services?
-Administrators can create [data loss prevention policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to ensure that only sanctioned services are used in Power Automate.
+## R
 
-### Does Power Automate support service accounts?
+**Robotic Process Automation (rpa):** Automation using a software application
+that replicates the actions of a human being interacting with the user interface
+of a computer system.
 
-While you can create flows with a service account, we don't recommend doing so if the credentials for the service account are shared.
+ [Link](https://docs.microsoft.com/en-us/power-automate/ui-flows/create-processes)
 
-## Licensing
-### Will Power Automate still have a free or trial option?
-Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Power Automate. You can activate your subscription at any time during your trial.
+## S
 
-### What pricing plans do you offer?
-Power Automate offers both free and paid service levels. [Learn more about pricing](billing-questions.md).
+**Scheduled flows:** Scheduled flows run on a determined schedule defined by the
+maker. Scheduled flows can repeat on the following cadences: every second,
+minute, hour, day, week, and/or month. For example, users can schedule an
+automation such as daily data upload to SharePoint or a database.
+
+ [Link](https://docs.microsoft.com/en-us/power-automate/run-scheduled-tasks)
+
+**Steps:** There's a button at the bottom of each step (action) labeled +New
+step in the flow designer that lets the user add another action.
+
+## T
+
+**Templates:** Templates are prebuilt set of triggers and actions that are
+designed to help users easily create flows that meet their specific business
+needs. Templates can be customized. There are hundreds of flow templates that
+cater to many types of common automation scenarios.
+
+ [Link](https://preview.flow.microsoft.com/en-us/templates/)
+
+**Trigger:** A trigger is an event that starts a flow. Flows can have one or
+more triggers to start a flow. For example, if you create a flow “when an email
+with an attachment arrives to the inbox, automatically upload the file to
+OneDrive” - the arrival of the email with an attachment is the trigger of such
+flow.
+
+## W
+
+**Workflow:** A sequence of actions that takes a task from initiation to
+completion
+
+## U
+
+**UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
+Windows and web applications. UI flows record and plays back user interface
+actions (clicks, keyboard input, etc.) for applications that don't have
+easy-to-use or complete APIs available.
+
+[Link](https://docs.microsoft.com/en-us/power-automate/ui-flows/overview)
 
 ## Learn more
 
