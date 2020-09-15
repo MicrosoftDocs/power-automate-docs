@@ -68,7 +68,7 @@ applications such as Power Automate and Power Apps. It is an abstraction on top
 of underlying Azure cloud data management services to make it easier to build
 business applications.
 
- [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro.md)
+ [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
 
 **Common Data Service for Teams**: A common cloud data platform for Microsoft
 teams. Common Data Service for Teams enables everyone to quickly build and
