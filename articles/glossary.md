@@ -132,7 +132,7 @@ Flows can have one or more triggers.
 **UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
 Windows and web applications. UI flows record and play back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
-[Introduction to UI flows](/ui-flows/overview.md)
+[Introduction to UI flows](ui-flows/overview.md)
 
 ## Learn more
 
