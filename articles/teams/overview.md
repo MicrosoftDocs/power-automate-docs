@@ -1,6 +1,6 @@
 ---
-title: Overview of creating and using flows in Microsoft Teams | Microsoft Docs
-description: Learn how to create flows for use within Microsoft Teams.
+title: Use Power Automate flows in Microsoft Teams | Microsoft Docs
+description: Learn how to use Power Automate flows within Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/03/2020
+ms.date: 09/14/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -22,9 +22,9 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of using flows in Microsoft Teams
+# Use flows in Microsoft Teams
 
-Flows can be used in three scenarios with Microsoft Teams:
+Power Automate flows can be used in three scenarios with Microsoft Teams:
 
 Scenario|Description
 --------|-------
@@ -39,7 +39,9 @@ There are no additional licensing requirements when you use Power Automate with 
 
 For details licensing information about Project Oakdale, see [licensing and restrictions](/power-platform/admin/about-teams-environment?branch=teams-preview#licensing-and-restrictions) in the Power Platform admin guide.
 
-
+### Related topics
+[Power Apps and Teams](/powerapps/teams/overview)
+[Power Virtual Agents and Teams]( https://aka.ms/pva-teams-docs)
 
 
 
