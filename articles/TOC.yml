@@ -290,6 +290,7 @@
         - name: Desktop automation
           href: ./ui-flows/desktop/desktop-automation.md
       - name: Actions reference
+        href: ./ui-flows/desktop/actions.md
         items:
         - name: Variables
           href: ./ui-flows/desktop/actions-reference/variables.md

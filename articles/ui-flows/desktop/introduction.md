@@ -26,7 +26,7 @@ Power Automate Desktop allows you to automate both legacy applications such as t
 
 Begin your journey in Power Automate Desktop by [Creating a Power Automate Desktop flow](create-flow-console.md). 
 
-You 'll find the list of actions available [TODO: Yet to be added](actions.md).
+You 'll find the list of actions available in the [Actions reference](actions.md).
 
 > [!NOTE]
 > - This is a preview feature, and is available only in English, French, German, Japanese, Spanish.
