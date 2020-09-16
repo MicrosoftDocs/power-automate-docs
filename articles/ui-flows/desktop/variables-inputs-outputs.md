@@ -36,3 +36,11 @@ In the **Add a new input variable** dialog, populate the following fields:
 - **Description**: A description of the variable. This field is mandatory and will appear in **Power Automate**.
 
 ![The Add a new input variable dialog](media\input-output-variables\Add-new-input-variable-window.png)
+
+In case you've chosen to create an output variable, populate the following fields in the **Add a new output variable** dialog:
+- **Variable type**: Defines if the variable is input or output.
+- **Variable name**: The name of the variable in the flow.
+- **External name**: The name used outside the flow. The external name is the name that will appear in **Power Automate**.
+- **Description**: A description of the variable. This field is mandatory and will appear in **Power Automate**.
+
+![The Add a new output variable dialog](media\input-output-variables\Add-new-output-variable-window.png)
