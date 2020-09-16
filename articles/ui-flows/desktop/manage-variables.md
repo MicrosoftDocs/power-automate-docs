@@ -18,7 +18,8 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Variables** pane shows the input and output variables passed to and from **Power Automate Desktop**. It also displays all the variables used in the current flow under **Flow variables**. 
+The **Variables** pane shows the input and output variables passed to and from Power Automate Desktop. It also displays all the variables used in the current flow under **Flow variables**. 
+<!--note from editor: We should not use bold on the name. -->
 
 ![The Variables pane.](media\variables-pane\variables-pane.png)
 
