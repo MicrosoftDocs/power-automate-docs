@@ -94,13 +94,13 @@ You can add SharePoint lists as co-owners of a flow so that everyone who has edi
 ## Remove an owner
 
 > [!IMPORTANT]
-> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow will continue to run properly. More information: [Manage a connection](#Manage-a-connection)
+> When you remove an owner whose credentials are used to access Power Automate services, you should update the credentials for those connections so that the flow will continue to run properly. More information: [Modify a connection](#modify-a-connection)
 
 1. On the flow details page, in the **Owners** section, select **Edit**.
 
    ![Edit owners](./media/create-team-flows/editowners.png "Edit owners")
 
-1. Select **Delete** ![Delete](./media/create-team-flows/delete.png) for the owner you want to remove.
+1. Select **Delete** ![Delete button](./media/create-team-flows/delete.png) for the owner you want to remove.
 
     ![Delete an owner](./media/create-team-flows/removeowner2.png "Delete an owner")
 
@@ -118,7 +118,7 @@ You might need to change the owner of a connection in a flow if you remove the e
 
    ![Edit a flow](./media/create-team-flows/Edit-flow-details.png "Edit a flow")
 
-1. Select **More commands** (...) in the step where you want to edit the connection for the trigger or in the action you want to edit.<!--I don't know what this means.-->
+1. Select **More commands** (...) in the step where you want to edit the connection.
 
 1. If you have a connection already, select it; if not, select **Add new connection** to create a new connection, and then select **Sign in** to create your new connection.
 
@@ -147,7 +147,7 @@ Congratulations&mdash;the user or group now has access to run the flow.
 **To remove a run-only user**
 
 1. On the flow details page, in the **Run only users** section, select **Edit**. 
-1. In the **Manage run-only permissions** panel, select **Delete** ![Delete](./media/create-team-flows/delete.png) next to the user whose access you want to remove, and then select **Save**.
+1. In the **Manage run-only permissions** panel, select **Delete** ![Delete button](./media/create-team-flows/delete.png) next to the user whose access you want to remove, and then select **Save**.
 
     ![Remove a run-only user](./media/create-team-flows/remove-run-only-user.png "Remove a run-only user")
 
@@ -186,5 +186,5 @@ You can share a copy of a flow with another user, who can then use the definitio
 If the shared flow still has an active owner, the flow will continue to run. 
 
 >[!NOTE]
->If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Manage a connection](#manage-a-connection), earlier in this article to update the credentials.
+>If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
