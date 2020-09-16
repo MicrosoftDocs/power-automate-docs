@@ -94,13 +94,13 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
-- name: Use flows in Teams
+- name: Microsoft Teams flows
   items:
   - name: Overview
     href: ./teams/overview.md
-  - name: Trigger flows from Teams messages
+  - name: Trigger flows from Microsoft Teams messages
     href: trigger-flow-teams-message.md
-  - name: Use flows with adaptive cards
+  - name: Model flows with adaptive cards
     href: create-adaptive-cards.md
     items:
     - name: Overview of adaptive cards for Teams
@@ -123,7 +123,7 @@
       href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
-  - name: Create flows using the Power Apps app
+  - name: Create flows using the Power Apps app in Microsoft Teams
     href: ./teams/create-flows-power-apps-app.md
 - name: Business process flows
   items:
