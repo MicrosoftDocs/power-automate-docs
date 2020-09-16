@@ -59,7 +59,7 @@ The following terms are commonly used in Power Automate
 
  [Add a condition to a flow](add-condition.md)
 
-**Connectors:** Connectors allow users to connect popular services (such as Twitter, Outlook, Gmail, and more) to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They contain a set of pre-built triggers (“when a new email arrives’…) and actions (“upload email attachment to SharePoint and My App”) to be used in apps and workflows.
+**Connectors:** Connectors allow users to connect popular services (such as Twitter, Outlook, Gmail, and more) to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They contain a set of pre-built triggers ("when a new email arrives"…) and actions ("upload email attachment to SharePoint and My App") to be used in apps and workflows.
 
  [Connectors documentation](https://docs.microsoft.com/connectors/)
 
