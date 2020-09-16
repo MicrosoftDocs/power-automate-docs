@@ -20,6 +20,8 @@ search.audienceType:
 
 1. To create a UI flow in Power Automate Desktop, open the app and select **New Flow**.
 <!--note from editor: Prefer to use UI flow or flows instead of just flow or flows. Style guideline: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=46475-->
+<!--note from editor: you don't need to include the plus sign when you refer to UI elements.-->
+
 
 ![console](\media\create-flow-console\console.png)
 
