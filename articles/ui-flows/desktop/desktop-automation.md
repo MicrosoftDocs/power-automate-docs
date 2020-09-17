@@ -18,35 +18,35 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The flow designer includes the **UI automation** group of Actions, which manipulate Windows applications and elements, by either providing input or extracting data.
+The flow designer includes the **UI automation** group of actions, which manipulate Windows applications and elements, by either providing input or extracting data.
 
-Actions in the **Windows** subcategory directly manipulate entire UI windows, while the others interact with more specific elements, such as text fields and buttons.
+Actions in the **Windows** subcategory directly manipulate entire UI windows, while **Form Filling** actions interact with more specific elements, such as text fields and buttons.
 
-Desktop automation can be performed by either manually adding the required actions, or using the macro recorder.
+Desktop automation can be performed by either manually adding the required actions, or using the Desktop recorder.
 
 ## Interacting with desktop applications
 
-UI automation may be performed on any ui application interface, based entirely on windows and elements in the repository.
+UI automation may be performed on any UI application interface, based entirely on windows and elements in the repository.
 
-To configure a ui action, enter the element it will interact with:
+To configure a UI action, enter the element it will interact with:
 
 ![Press button in window action](.\media\desktop-automation\press-button-in-window-action.png)
 
-Existing ui elements may be added from the Repository, while new ones may also be added directly from the action's properties:
+Existing UI elements may be added from the Repository, while new ones may also be added directly from the action's properties:
 
 ![Adding new elements through a UI action](.\media\desktop-automation\adding-new-elements-through-a-ui-action.png)
 
 To add a new element, highlight it and press Ctrl & left-click:
 
-![Capturing new ui elements](.\media\desktop-automation\capturing-new-ui-elements.png)
+![Capturing new UI elements](.\media\desktop-automation\capturing-new-ui-elements.png)
 
 After adding all the required elements, select **Done** to save them to the repository.
 
-To extract a piece of data from a ui window, such as its title, location, or size, use the **Get details of window** action:
+To extract a piece of data from a UI window, such as its title, location, or size, use the **Get details of window** action:
 
 ![Get details of window action](.\media\desktop-automation\get-details-of-window-action.png)
 
-Alternatively, to extract data from specific elements within a window, use the **Get details of a ui element in window** action:
+Alternatively, to extract data from specific elements within a window, use the **Get details of a UI element in window** action:
 
 ![Get details of a UI element in window action](.\media\desktop-automation\get-details-of-a-ui-element-in-window.png)
 
