@@ -27,7 +27,7 @@ The following terms are commonly used in Power Automate
 
 ## A
 
-**Action:** An action is the task that's started when a trigger is invoked. Flows can have one or many actions,depending on what's needed to complete a particular flow. With actions, you can perform operations, such as Create, Update, Delete, Assign, or Perform Action.
+**Action:** An action is the task that's started when a trigger is invoked. Flows can have one or many actions, depending on what's needed to complete a particular flow. With actions, you can perform operations such as **Create**, **Update**, **Delete**, or **Assign**.
 
  [Add an action](multi-step-logic-flow.md)
 
