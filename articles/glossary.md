@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Power Automate Glossary
 
-The following terms are commonly used in Power Automate
+The following terms are commonly used in Power Automate.
 
 ## A
 
