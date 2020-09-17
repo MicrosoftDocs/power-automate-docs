@@ -81,7 +81,7 @@ Follow these steps to install the UI flows app:
 >The UI flows package installs the Webdriver component and the UI flows browser extension. Both of these are needed to record, test, and run UI flows for desktop.
 >The Power Automate Desktop (preview) package installs the Power Automate Desktop app, third-party components and browser extensions.
 
-![image](https://user-images.githubusercontent.com/48315710/92633908-c546e380-f2d3-11ea-8976-6a7609eb70f8.png)
+![Installation options image](https://user-images.githubusercontent.com/48315710/92633908-c546e380-f2d3-11ea-8976-6a7609eb70f8.png)
 
 ### Set data collection options
 
@@ -91,7 +91,7 @@ During installation, you can change the default settings if you do not want to s
 
 Once the installation is complete, all you have to do is make sure that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
 
-![image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
+![Installation success image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
 
 1. Click on one of the link displayed in the installer. For example, if you want to use UI flows on Microsoft Edge, click on the **Microsoft Edge** link.
 1. It will open the store of your browser directly to the public page of the extension
