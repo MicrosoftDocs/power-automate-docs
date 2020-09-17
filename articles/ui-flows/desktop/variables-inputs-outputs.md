@@ -39,3 +39,5 @@ In the **Add a new input variable** dialog box, populate the following fields:
 - **Description**: A description of the variable. This field is mandatory and will appear in Power Automate.
 
 ![The Add a new input variable dialog](media\input-output-variables\Add-new-input-variable-window.png)
+
+![The Add a new output variable dialog](media\input-output-variables\Add-new-output-variable-window.png)
