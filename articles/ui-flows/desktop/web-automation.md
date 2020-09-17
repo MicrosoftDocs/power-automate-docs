@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The flow designer includes a number of actions under the **Web Automation** category. Each of them corresponding to an interaction between a user and a web browser.
+The flow designer includes a number of actions under the **Web automation** category, each of them corresponding to an interaction between a user and a web browser.
 
 Four web browsers are currently supported:
 
@@ -31,20 +31,20 @@ Web automation is achieved by launching, or attaching to, one of the aforementio
 
 ## Building a web automation flow
 
-To begin a web automation flow, use one of the Launch Web Browser actions (**Launch New Internet Explorer**, **Launch New Edge**, **Launch New Firefox**, or **Launch New Chrome**) to start a new browser session, or attach to an already existing one:
+To begin a web automation flow, use one of the Launch web browser actions (**Launch new Internet Explorer**, **Launch new Edge**, **Launch new Firefox**, or **Launch new Chrome**) to start a new browser session, or attach to an already existing one:
 
 ![Launch web browser](.\media\web-automation\launch-web-browser-action.png)
 
 > [NOTE!]
 > Some browsers may require configuration before they can be used in Power Automate Desktop. Refer to the relevant article for more information.
 
-After the browser session is stored in a variable, add other web automation actions to interact with the browser's content. The **Web forms** action group focuses on providing input to web pages, while **web data extraction** actions draws data from web pages, to be used in the flow.
+After the browser session is stored in a variable, add other web automation actions to interact with the browser's content. The **Web form filling** action group focuses on providing input to web pages, while **Web data extraction** actions draw data from web pages, to be used in the flow.
 
 Most web automation actions require a browser instance as input, as well as a web element with which to interact:
 
 ![Web action inputs](.\media\web-automation\web-action-inputs.png)
 
-Existing web elements may be added from the Repository, while new ones may also be added directly from the action's properties:
+Existing web elements may be added from the repository, while new ones may also be added directly from the action's properties:
 
 ![Adding new elements through a web action](.\media\web-automation\adding-new-elements-through-a-web-action.png)
 

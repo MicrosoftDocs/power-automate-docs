@@ -52,7 +52,7 @@ To disable the **IEESC** feature:
 
 1. Launch the **Server Manager** and navigate to the **Local Server** tab.
 
-1. Select the **IE Enhanced Security Configuration** option to open the respective configuration dialog.
+1. Select the **Internet Explorer Enhanced Security Configuration** option to open the respective configuration dialog.
 
 1. Disable the **IEESC** feature for both administrators and users.
 
