@@ -82,7 +82,7 @@ For example, you can use the select action if data enters your flow via a web re
 
 ````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````
 
-and you’d like to reshape the incoming data by renaming "first" to "FirstName", "last" to "LastName" and adding a new member named "FamilyName" that combines "first" and "last" (separated with a space):
+and you’d like to reshape the incoming data by renaming "first" to "FirstName", "last" to "FamilyName" and adding a new member named "FullName" that combines "first" and "last" (separated with a space):
 
 ````[ { "FirstName": "Deon", "FamilyName": "Herb", "FullName": "Deon Herb" }, { "FirstName": "K", "FamilyName": "Herb", "FullName": "K Herb" } ]````.
 
