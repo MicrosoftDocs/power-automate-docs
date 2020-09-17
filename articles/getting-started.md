@@ -126,7 +126,7 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
 1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
 
-    ![Peek code](media/getting-started/peek-code-details.png)
+    ![Peek code details](media/getting-started/peek-code-details.png)
    
 
 ## Find your flows easily
