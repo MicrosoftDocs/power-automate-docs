@@ -157,7 +157,7 @@ Use the **Data Operation - Create CSV table** (create csv table) to change a JSO
     Note: The **Body** token in this image comes from a **When a HTTP request is received** action, however, you could get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly into the **From** box.
 2. Save, and then run your flow.
    
-    When your flow runs, the **Create CSV table** displays the output as excepected.
+    When your flow runs, the **Create CSV table** displays the output as expected.
 
 ## Use the create html table action
 Use **Data Operation - Create HTML table** to change a JSON array input into an HTML table. Optionally, you can keep the headers visible in the HTML output.
