@@ -65,7 +65,7 @@ The following are not supported:
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
-## Install UI flows and Power Automate Desktop on your device
+## Install UI flows and Power Automate Desktop (preview) on your device
 
 The installer contains all the components needed to record, edit, and test your automations. 
 
@@ -74,7 +74,7 @@ Follow these steps to install the UI flows app:
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 1. Follow the instructions in the **UI flows setup** installer to complete the installation.
-1. Once the installer launches, select to install UI Flows, Power Automate Desktop or both. 
+1. Once the installer launches, select to install UI Flows, Power Automate Desktop (preview) or both. 
 1. Depending on the selection, you will be prompted to select the features to install for each product. 
 
 >[!IMPORTANT]
@@ -87,7 +87,7 @@ Follow these steps to install the UI flows app:
 
 During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve UI flows**.
 
-## Activate the UI flows and Power Automate Desktop browser extension 
+## Activate the UI flows and Power Automate Desktop (preview) browser extension 
 
 Once the installation is complete, all you have to do is make sure that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
 
