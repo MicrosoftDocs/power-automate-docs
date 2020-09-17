@@ -80,11 +80,11 @@ Use the **Data Operation – Select** (select) to transform the shape of the obj
 
 For example, you can use the select action if data enters your flow via a web request in this format:
 
-````[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]````
+```[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]```
 
 and you’d like to reshape the incoming data by renaming "first" to "FirstName", "last" to "FamilyName" and adding a new member named "FullName" that combines "first" and "last" (separated with a space):
 
-````[ { "FirstName": "Eugenia", "FamilyName": "Lopez", "FullName": "Eugenia Lopez" }, { "FirstName": "Elizabeth", "FamilyName": "Moore", "FullName": "Elizabeth Moore" } ]````.
+```[ { "FirstName": "Eugenia", "FamilyName": "Lopez", "FullName": "Eugenia Lopez" }, { "FirstName": "Elizabeth", "FamilyName": "Moore", "FullName": "Elizabeth Moore" } ]```.
 
 To do this:
 
@@ -112,7 +112,7 @@ Use **Data Operation - Filter array** (filter array) to reduce the number of obj
 
 For example, you can use filter array on this array:
 
-`````[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]````
+```[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]```
 
 to create a new array that contains only objects in which *first* is set to “Eugenia”.
 
@@ -127,16 +127,16 @@ Let's do this.
     You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
 4. When your flow runs, assuming the JSON input looks like this array:
    
-    ````[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]````,
+    ```[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]```,
    
     the output looks like this array (notice that only objects in which *first* is set to “Eugenia” are included in the output of the action):
    
-    ````[ { "first": "Eugenia", "last": "Lopez" }]````
+    ```[ { "first": "Eugenia", "last": "Lopez" }]```
 
 ## Use the create csv table action
 Use the **Data Operation - Create CSV table** (create csv table) to change a JSON array input into a comma separated value (CSV) table. Optionally, you can keep the headers visible in the CSV output. For example, you can convert the following array into a CSV table by using the **Create CSV table** action:
 
-````[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]````
+```[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]```
 
 1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
    
