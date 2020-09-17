@@ -41,8 +41,8 @@ After you've created and tested a UI flow, you can run it from an event, schedul
 
 In this example we will use an automated flow to trigger a UI flow when a new email arrives.
 
-1. Navigate to [Power Automate](https://flow.microsoft.com/).
-1. Select **My flows** in the left navigation bar.
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Select **My flows** in the left navigation pane.
 1. Select **New**, and then select **Automated-from blank**.
 
    >[!TIP]
@@ -50,11 +50,9 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 1. Give your flow a name in the **Flow name** box.
 1. Search for "new email", and then select **When a new email arrives (V3)** from the list of triggers. 
-    
+
    ![Select a trigger](../media/run-ui-flow/select-email-trigger.png "Select a trigger")
-
 1. Select **Create**, and then select **New step**.
-
 1. Search for **UI flows**, and then select **Run a UI flow for desktop** from the list of **Actions**. 
 
    ![Search action](../media/run-ui-flow/search-action.png "Search action")
@@ -72,7 +70,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
       ![Connection settings](../media/run-ui-flow/uiflow-connection-card.png "Connection settings")
 
       >[!TIP]
-      >If you don't see your gateway, you might be in an environment whose region is different from the gateway region. Select **Troubleshoot a missing gateway** in the gateway name list to learn more. You can also confirm your gateway and Power Automate regions are [mapped correctly](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
+      >If you don't see your gateway, you might be in an environment whose region is different from the gateway region. Select **Troubleshoot a missing gateway** in the gateway name list to learn more. You can also confirm your gateway and Power Automate regions are [mapped correctly](../regions-overview.md).
 
       >[!TIP]
       >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop** or **Run a UI flow for Web** card, and then select the connection from **My connections**.
