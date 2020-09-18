@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run your flows bttns from The Button Corporation (Preview)
+# Run your flows with bttns from The Button Corporation (Preview)
 
 Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a flow to perform these tasks:
 
