@@ -1,6 +1,6 @@
 ---
-title: Set up UI flows on your device | Microsoft Docs
-description: Set up UI flows on your device
+title: Set up UI flows and Power Automate Desktop (preview) on your device | Microsoft Docs
+description: Set up UI flows and Power Automate Desktop (preview) on your device.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/24/2020
+ms.date: 09/22/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set up UI flows
+# Set up UI flows and Power Automate Desktop (preview)
 
 Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
 
@@ -46,25 +46,6 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 >[!IMPORTANT]
 >You must have the latest versions of each component to record, test, or run UI flows.
-
-## Limitations
-
-The following are not supported:
-- Windows 10 Home installations are not supported.
-
--   Desktop UI Flows
-
-    -   Multiple monitors
-    -   Double click, mouse hover, touch/pen input
-    -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
-
--   Web UI Flows
-
-    -   Right click.
-    -   User session information (for example: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information when required by websites.
-
-You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Install UI flows and Power Automate Desktop (preview) on your device
 
@@ -216,11 +197,38 @@ Dutch		|Japanese	|	Russian
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
 
+>[!NOTE]
+>Power Automate Desktop (preview) is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
+
+
 ## Uninstall UI flows
 
 1. Open the **start** menu > **Settings** > **Apps**.
 1. Search for **UI flows**, and then select it.
 1. Select **Uninstall**.
+
+## Limitations
+
+The following are not supported:
+- Windows 10 Home installations are not supported.
+
+-   Desktop UI flows
+
+    -   Multiple monitors.
+    -   Double click, mouse hover, touch/pen input.
+    -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
+
+-   Web UI flows
+
+    -   Right click.
+    -   User session information (for example: cookies) will not be reused during
+        playback. You will have to edit the script to embed sign in information when required by websites.
+
+- Power Automate Desktop (preview)
+
+   - touch/pen input
+
+You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Learn more
 
