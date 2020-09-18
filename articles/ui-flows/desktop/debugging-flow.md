@@ -23,7 +23,7 @@ It is common to have to debug flows in case there are any changes in the system 
 
 Debug a flow using the following tools:
 * [Errors Pane](errors.md)
-* Breakpoints
+* [Breakpoints](adding-breakpoints.md)
 * [Run flow action by action](running-action.md)
 * Set the Run delay
 
