@@ -24,7 +24,7 @@ A datatable contains rows and columns that describe the position of each item un
 
 ![An example of a datatable variable.](media\data-tables\data-table-first-item.png)
 
-**Power Automate Desktop** doesn't provide a direct way to create a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+Power Automate Desktop doesn't provide a direct way to create a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 

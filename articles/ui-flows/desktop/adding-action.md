@@ -18,10 +18,10 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-To begin developing a flow, select an action and double-click on it, or drag and drop it into the workspace. 
+To begin developing a flow, select an action and double-click on it, or drag it into the workspace. 
 
 ![add action](\media\adding-actions\add-action.png)
 
-A dialog opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
+A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
 
 ![action properties](\media\adding-actions\action-properties.png)

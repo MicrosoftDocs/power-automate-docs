@@ -177,9 +177,9 @@
       href: ./ui-flows/desktop/run-pad-flow.md
     - name: Link a Power Automate Desktop flow with a flow
       href: ./ui-flows/desktop/link-pad-flow-portal.md
-    - name: The Power Automate Desktop console
+    - name: Power Automate Desktop console
       href: ./ui-flows/desktop/console.md
-    - name: The Power Automate Desktop flow designer
+    - name: Power Automate Desktop flow designer
       href: ./ui-flows/desktop/flow-designer.md
       items:
       - name: Actions & the actions pane
@@ -257,9 +257,9 @@
           href: ./ui-flows/desktop/recording-flow.md
         - name: Implementing basic logic in flows
           items:
-          - name: Loops
+          - name: Making use of loops
             items:
-            - name: Loops
+            - name: Making use of loops
               href: ./ui-flows/desktop/loops.md
             - name: Simple loops
               href: ./ui-flows/desktop/simple-loops.md
@@ -267,9 +267,9 @@
               href: ./ui-flows/desktop/loop-condition.md
             - name: For each loop
               href: ./ui-flows/desktop/for-each-loop.md
-          - name: Conditionals
+          - name: Making use of conditionals
             items:
-            - name: Conditionals
+            - name: Making use of conditionals
               href: ./ui-flows/desktop/conditionals.md
             - name: If/else
               href: ./ui-flows/desktop/if-else.md
@@ -277,9 +277,9 @@
               href: ./ui-flows/desktop/if-variations.md
             - name: Switch-case model
               href: ./ui-flows/desktop/switch–case-model.md
-        - name: Web automation
+        - name: Automation in the web
           items:
-          - name: Web automation
+          - name: Automation in the web
             href: ./ui-flows/desktop/web-automation.md
           - name: Interacting with web and APIs
             href: ./ui-flows/desktop/interacting-web-services.md

@@ -30,7 +30,7 @@ Additionally, select the arrow on the **Capture New Image** button to capture im
 
 ![delay capture](\media\images\delay-capture.png)
 
-After capturing an image, specify a name for it in the dialog and select **OK** to add it to the flow.
+After capturing an image, specify a name for it in the dialog box and select **OK** to add it to the flow.
 
 ![image name](\media\images\image-name.png)
 

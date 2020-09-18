@@ -24,7 +24,7 @@ After signing in, your username will be displayed in the top-right corner. A lis
 
 ## Starting a flow
 
-Users may run any flows available to them through the console, by hovering the cursor over a flow and pressing the "Start" button. The status of the flow is also displayed:
+Users may run any Power Automate Desktop flows available to them through the console, by hovering the cursor over a flow and pressing the "Start" button. The status of the flow is also displayed:
 
 ![Start a flow](./media/console/start-flow.png)
 

@@ -24,7 +24,7 @@ Go to **flow.microsoft.com**, select **My flows**, then **+New**, and **Instant 
 
 ![My flows instant blank](\media\design-flow\my-flows-instant-blank.png)
 
-In the dialog, enter a flow name, select **Manually trigger a flow**, and then select **Create**.
+In the dialog box, enter a flow name, select **Manually trigger a flow**, and then select **Create**.
 
 ![manually trigger flow](\media\design-flow\manually-trigger-flow.png)
 
@@ -42,7 +42,7 @@ In the action, under Run mode select **Attended - Runs when you're signed in** a
 
 Enter a flow name or one will be generated and select **Launch app**.
 
-![build UI flow dialog](\media\design-flow\build-UI-flow-dialog.png)
+![build UI flow dialog box](\media\design-flow\build-UI-flow-dialog.png)
 
 A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
@@ -126,9 +126,9 @@ Select **Save** to save the flow and close the flow designer.
 
 ![save complete flow](\media\design-flow\save-complete-flow.png)
 
-Back in Power Automate, in the dialog select **Keep Working**.
+Back in Power Automate, in the dialog box select **Keep Working**.
 
-![pad portal dialog keep working](\media\design-flow\pad-portal-dialog-keep-working.png)
+![pad portal dialog box keep working](\media\design-flow\pad-portal-dialog-keep-working.png)
 
 Select the new UI flow in the action, and enter **Greece** into **CountryName**.
 

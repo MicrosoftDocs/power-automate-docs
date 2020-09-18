@@ -24,7 +24,7 @@ Although **Automation browser** is based on **Internet Explorer**, it provides s
 
 1. The **Click download link on web page** action works with the **Automation browser** whatever the **Internet Explorer** version. For the actual **Internet Explorer**, the action requires version 8 or below.
 
-1. **Automation browser** suppresses all message dialogs that may pop up unhindered in the actual **Internet Explorer**. If this feature is undesirable, apply the **(ShowDialogs)** suffix at the end of the URL in the **Launch new Internet Explorer** action.
+1. **Automation browser** suppresses all message dialog boxes that may pop up unhindered in the actual **Internet Explorer**. If this feature is undesirable, apply the **(ShowDialogs)** suffix at the end of the URL in the **Launch new Internet Explorer** action.
 
 1. **Automation browser** doesn't support tabs or opening links in windows. When the user clicks on a link, the browser opens it in the same window/instance.
 

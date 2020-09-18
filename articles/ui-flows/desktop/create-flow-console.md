@@ -27,7 +27,7 @@ search.audienceType:
 
 2. Enter a name for the UI flow, and click **OK**.
 
-![build flow dialog](\media\create-flow-console\build-flow-dialog.png)
+![build flow dialog box](\media\create-flow-console\build-flow-dialog.png)
 
 3. Create the flow in the **flow designer** and press **Ctrl+S** to save the flow. Close the flow designer and the flow will appear in the console.
 

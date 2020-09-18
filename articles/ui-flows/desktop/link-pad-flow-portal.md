@@ -40,7 +40,7 @@ In the action parameters, set Run mode to **Attended - Runs when you're signed i
 
 Enter a name for the flow and select **Launch app**.
 
-![build ui flow dialog](\media\link-pad-flow-portal\build-UI-flow-dialog.png)
+![build ui flow dialog box](\media\link-pad-flow-portal\build-UI-flow-dialog.png)
 
 A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
@@ -54,7 +54,7 @@ Optionally, create Input/output variables to pass data back and forth from Power
 
 ![new input output var](\media\link-pad-flow-portal\new-input-output-var.png)
 
-To create an input or output variable, the Edit variable dialog will require filling in the fields as follows:
+To create an input or output variable, the Edit variable dialog box will require filling in the fields as follows:
 * Variable type—input or output
 * Variable name—the name of the variable in flow designer
 * Default value—the value which the variable holds if none is assigned

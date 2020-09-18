@@ -49,7 +49,7 @@ Any captured elements that are part of a web page displayed in a compatible web 
 
 ## Element properties
 
-Manage an element’s selectors by right selecting any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
+Manage an element’s selectors by right-clicking any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
 
 ![The visual selector editor](./media/ui-elements/visual-selector-editor.png)
 

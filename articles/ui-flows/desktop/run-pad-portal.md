@@ -22,9 +22,9 @@ Go to **flow.microsoft.com** and sign in with your credentials. In Power Automat
 
 ![my ui flows new](\media\run-pad-portal\my-ui-flows-new.png)
 
-In the dialog, select **Power Automate Desktop** and **Next**.
+In the dialog box, select Power Automate Desktop and **Next**.
 
-![build ui flow dialog](\media\run-pad-portal\build-ui-flow-dialog.png)
+![build ui flow dialog box](\media\run-pad-portal\build-ui-flow-dialog.png)
 
 Enter a name from the flow, otherwise one is automatically generated, and select **Launch App**.
 

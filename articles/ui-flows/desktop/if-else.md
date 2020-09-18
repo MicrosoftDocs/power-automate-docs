@@ -20,7 +20,7 @@ search.audienceType:
 
 The **If** statement is one of the most commonly used conditionals in flow development and programming.  
 
-**Power Automate Desktop** provides the **If** action to check whether a given condition is valid. If the condition is true, the logic between the **If** and **End** is executed.
+Power Automate Desktop provides the **If** action to check whether a given condition is valid. If the condition is true, the logic between the **If** and **End** is executed.
 
 An **If** action consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
