@@ -78,6 +78,8 @@
     href: apply-to-each.md
 - name: Approval flows
   items:
+  - name: Get started with approvals
+    href: get-started-approvals.md
   - name: Single approvals
     href: modern-approvals.md
   - name: Approvals with attachments
@@ -188,24 +190,14 @@
     items:
     - name: Overview
       href: workflow-processes.md
-    - name: Configure workflow stages and steps
+    - name: Configure background workflow stages and steps
       href: configure-workflow-steps.md
-    - name: Monitor and manage workflow processes
+    - name: Monitor and manage background workflow processes
       href: monitor-manage-processes.md
-    - name: Best practices for workflow processes
+    - name: Best practices for background workflow processes
       href: best-practices-workflow-processes.md
-    - name: Replace workflows with flows
+    - name: Replace background workflows with flows
       href: replace-workflows-with-flows.md
-  - name: Classic Common Data Service actions
-    items:
-    - name: Use actions
-      href: actions.md
-    - name: Create a custom action
-      href: create-actions.md
-    - name: Configure custom actions from a workflow
-      href: configure-actions.md    
-    - name: Invoke custom actions from a workflow
-      href: invoke-custom-actions-workflow-dialog.md
   - name: Classic Common Data Service task flows
     items:
     - name: Create mobile task flows
@@ -283,7 +275,7 @@
     href: organization-q-and-a.md
   - name: Pricing
     href: billing-questions.md
-  - name: Introduction to the admin center
+  - name: Admin center
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
@@ -329,6 +321,8 @@
     href: web-api.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md
+  - name: Power Automate glossary
+    href: glossary.md
 - name: Learn from others
   items:
   - name: Webinars

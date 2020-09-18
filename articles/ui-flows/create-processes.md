@@ -31,8 +31,7 @@ Here are some tips before you start using WinAutomation with UI flows.
 
 1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
 
-1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better overall experience than UI
-    automation in terms of scalability, reliability, and lower cost.
+1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
 1.  Existing WinAutomation licensed users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home)
 
@@ -60,7 +59,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use UI 
 
 1.  Follow the instructions in the WinAutomation installer to complete the installation. During installation, ensure the **License Type** is set to **Microsoft Power Automate**.
 
-## Sign-in to WinAutomation
+## Sign in to WinAutomation
 
 1.  After the installation completes, start the WinAutomation Console from the Windows start menu.
 
@@ -80,7 +79,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use UI 
 
       ![Request for permissions](../media/create-processes/request-permissions.png)
 
-1.  When you asked to create a Master key during sign in, create one.
+1.  When you are asked to create a Master key during sign in, create one.
 
 1.  Once signed in, you will see the WinAutomation console with a few example
     Processes. To get started, go to **Options** \> **Help** \> **Getting Started**, and then go through a few
@@ -92,9 +91,10 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  Once you have created your automation Process in WinAutomation, you can run
     it from a flow in Power Automate through UI flows (desktop) attended or
-    unattended. (**Note**: to learn more about creating and running UI flows,
-    please
-    go [here](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).)
+    unattended. 
+    
+    >[!TIP]
+    >Learn more about [creating and running UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 
 1.  Create a new desktop UI flow. Delete the default first step of “Record app”.
 
@@ -160,7 +160,9 @@ assign that plan to a user.
 >When you assign a plan to a user, it may take few minutes before the assignment
 becomes effective.
 
-## Troubleshooting WinAutomation licensing issues
+## Troubleshooting
+
+### Troubleshooting WinAutomation licensing issues
 
 If you are receiving licensing errors during the launch of WinAutomation, ensure
 the user you’re logging in as has a valid Power Automate RPA license. To confirm this:
@@ -178,6 +180,69 @@ the user you’re logging in as has a valid Power Automate RPA license. To confi
     >The license is cached when users launch WinAutomation while connected to the Internet.
 
 To reset the license information stored by WinAutomation, you can delete the following file: %localappdata%\\Softomotive\\WinAutomation\\msalcache.bin3.
+
+### Troubleshooting other issues
+
+Follow the links in this section to troubleshooting issues you may experience.
+
+WinAutomation
+- [Installation errors](https://support.softomotive.com/support/solutions/folders/35000220522)
+- [Console](https://support.softomotive.com/support/solutions/folders/35000220523)
+- [Process errors](https://support.softomotive.com/support/solutions/folders/35000220524)
+- [Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220536)
+
+ProcessRobot
+- [Control Desk](https://support.softomotive.com/support/solutions/folders/35000220525)
+- [Process Studio](https://support.softomotive.com/support/solutions/folders/35000220526)
+- [ProcessRobot database](https://support.softomotive.com/support/solutions/folders/35000220528)
+- [Robot errors](https://support.softomotive.com/support/solutions/folders/35000220529)
+- [Process errors](https://support.softomotive.com/support/solutions/folders/35000220530)
+- [Web automation](https://support.softomotive.com/support/solutions/folders/35000220531)
+- [UI automation](https://support.softomotive.com/support/solutions/folders/35000220532)
+- [Excel automation](https://support.softomotive.com/support/solutions/folders/35000220533)
+- [Image processing](https://support.softomotive.com/support/solutions/folders/35000220534)
+- [Email automation](https://support.softomotive.com/support/solutions/folders/35000220535)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220536)
+
+
+## Best practices for creating processes
+
+Here are some tips for you to consider when you create processes.
+
+
+WinAutomation
+
+- [Triggers](https://support.softomotive.com/support/solutions/folders/35000220511)
+- [Web Automation](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI Automation](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel Automation](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [Text Manipulation](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [Email Automation](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [Mathematical Operations](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [Variables](https://support.softomotive.com/support/solutions/folders/35000220520)
+
+ProcessRobot
+
+- [Control Desk](https://support.softomotive.com/support/solutions/folders/35000220537)
+- [Dashboards](https://support.softomotive.com/support/solutions/folders/35000220538)
+- [Triggers](https://support.softomotive.com/support/solutions/folders/35000220521)
+- [Web Automation](https://support.softomotive.com/support/solutions/folders/35000220512)
+- [UI Automation](https://support.softomotive.com/support/solutions/folders/35000220513)
+- [Excel Automation](https://support.softomotive.com/support/solutions/folders/35000220514)
+- [Text Manipulation](https://support.softomotive.com/support/solutions/folders/35000220515)
+- [Image Processing](https://support.softomotive.com/support/solutions/folders/35000220516)
+- [Email Automation](https://support.softomotive.com/support/solutions/folders/35000220517)
+- [Databases](https://support.softomotive.com/support/solutions/folders/35000220518)
+- [Mathematical Operations](https://support.softomotive.com/support/solutions/folders/35000220519)
+- [Variables](https://support.softomotive.com/support/solutions/folders/35000220520)
+
 
 ## Learn more
 

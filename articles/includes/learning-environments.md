@@ -27,7 +27,7 @@ Environments can serve several different purposes, depending on your organizatio
 **Note**: Environments are not visible to users so they don't need to be concerned with which environments they are in. Environments are a tool for admins to categorize, manage and share organizational apps and flows.  
 
 ## What are roles?
-A person with access to an environment must be be assigned either the **Environment Admin** or the **Environment Maker** role. Environment admins can perform all administrative tasks on an environment. An environment maker can create resources in an existing environment. An individual can have both roles simultaneously.  
+A person with access to an environment must be assigned either the **Environment Admin** or the **Environment Maker** role. Environment admins can perform all administrative tasks on an environment. An environment maker can create resources in an existing environment. An individual can have both roles simultaneously.  
 
 **Note**: All users will have access to a default environment when each user is given access to Power Automate. Users can have access to multiple environments.  
 

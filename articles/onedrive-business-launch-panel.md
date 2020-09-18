@@ -48,7 +48,7 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
     In this example, select the **Request my manager's approval for the selected file** template.
 
      >[!TIP]
-     >Sign into any connectors that requests that you sign in.
+     >Sign into all connectors that request that you sign in.
 
 1. Select **Continue**.
 1. Make any changes you want to the template and then save your flow with a name that you'll remember easily.
@@ -56,7 +56,7 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 ## Run the flow
 
 1. Sign into OneDrive for Business.
-1. Find, and then select the file on which request manager approval.
+1. Find, and then select the file for which you want to request manager approval.
 1. Select the **Show actions** link (three dots).
 1. Select **Flow**. You'll see the flow that you created earlier.
 1. Select the flow you created earlier.
