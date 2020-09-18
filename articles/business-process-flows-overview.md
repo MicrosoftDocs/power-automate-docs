@@ -1,5 +1,6 @@
 ---
 title: "Business process flows overview | MicrosoftDocs"
+description: "An overview of business process flows in Power Automate."
 ms.custom: ""
 ms.date: 05/06/2019
 ms.reviewer: ""
@@ -44,6 +45,9 @@ Business process flows provide a guide for people to get work done. They provide
  Each stage contains a group of steps. Each step represents a field where data can be entered. People advance to the next stage by using the **Next Stage** button. You can make a step required so that people must enter data for the corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”.  
   
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
+ 
+> [!NOTE]
+> If there are any required fields on any stage, including the current stage, you will need to fill in the fields on those stages *before* saving the form or moving to a new stage.
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### Business process flows integrated with other customizations  
