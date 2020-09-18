@@ -77,7 +77,7 @@ If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
 
 1. In the upper-right corner, tap **Create**.
    
-    ![Tap Next](./media/mobile-create-flow/next.png)
+    ![Tap Create](./media/mobile-create-flow/create.png)
 
       
     Your flow is created and it checks for email from your boss until you pause or delete the flow.
