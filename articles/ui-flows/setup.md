@@ -31,11 +31,11 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 ## Prerequisites
 
-- Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) Power Automate plan.
+- Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) license for Power Automate Attended RPA.
 
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
-- A device that runs Windows 10 Pro, Windows Server 2016, or Windows Server 2019.
+- A device that runs Windows 10 Pro, Windows 10 Entreprise, Windows Server 2016, or Windows Server 2019.
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
@@ -44,9 +44,10 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A supported keyboard attached.
 
-## Limitations
+>[!IMPORTANT]
+>You must have the latest versions of each component to record, test, or run UI flows.
 
-You must have the latest versions of each component to record, test, or run UI flows.
+## Limitations
 
 The following are not supported:
 - Windows 10 Home installations are not supported.
@@ -65,40 +66,58 @@ The following are not supported:
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
-## Install UI flows on your device
+## Install UI flows and Power Automate Desktop (preview) on your device
 
-The UI flows installer contains all the components needed to record, edit, and test UI flows for desktop. 
-
->[!IMPORTANT]
->The UI flows installer installs the Webdriver component and the UI flows browser extension. Both of these are needed to record, test, and run UI flows for desktop.
+The installer contains all the components you need to record, edit, and test your automations. 
 
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. 
+
+   This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+
 1. Follow the instructions in the **UI flows setup** installer to complete the installation.
+1. Once the installer launches, select to install UI flows, Power Automate Desktop (preview), or both. 
+1. Make your selections for each feature for the installation to complete. 
+
+>[!IMPORTANT]
+>The UI flows package installs the Webdriver component and the UI flows browser extension. You need both of these to record, test, and run UI flows for desktop.
+>The Power Automate Desktop (preview) package installs the Power Automate Desktop app, third-party components, and browser extensions.
+
+![Installation options image](https://user-images.githubusercontent.com/48315710/92633908-c546e380-f2d3-11ea-8976-6a7609eb70f8.png)
 
 ### Set data collection options
 
 During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve UI flows**.
 
-![Image showing the data collection options](../media/ui-flows-setup/data-collection-settings.png)
+## Activate the UI flows and Power Automate Desktop (preview) browser extension 
 
-## Activate the UI flows browser extension 
+After the installation completes, confirm that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
 
-Once the UI flows installer completes, you will be prompted by your browser to activate the extension.
+![Installation success image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
 
-- On [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later), select each warning icon in the top right of the browser, and then select **Enable extension**.
--   On Google Chrome, select **Enable extension** when prompted.  
+1. Select one of the links displayed in the installer. For example, if you want to use UI flows on Microsoft Edge, select the **Microsoft Edge** link.
+
+   The store for your browser opens directly to the public page for the extension.
+
+1. Confirm that the extension is installed. Follow these steps if it isn't installed:
+
+#### Microsoft Edge: 
+- Select **Get**, and then select **Add extension** when prompted. 
+- If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
+
+#### Google Chrome: 
+- Select **Add to Chrome**, and then select **Enable extension** when prompted. 
+- If you see the message: *This item has been disabled in Chrome* on top of the page, select **Enable this item**.
 
 > [!TIP]
-> If you did not see the prompt in your browser, please check the following:
-> - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
-> - You may have to manually enable the extension. For Microsoft Edge, navigate to **edge://extensions** or for Google Chrome, navigate to **chrome://extensions**.
-> - If Power Automate's UI flows extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+> If you are not able to activate the extension(s) in your browser, check the following:
+> - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome. Firefox is only supported with the Power Automate Desktop extension.
+> - If the extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 
-## Install Selenium IDE to automate Web applications
+## Install Selenium IDE to automate Web applications with UI flows
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
@@ -115,7 +134,7 @@ Follow these steps to install Selenium IDE:
 You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
 
 >[!TIP]
->The gateway isn't required if you only want to create, edit, and test your UI flows on your device.
+>The gateway isn't required if you only want to create, edit, and test your flows on your device.
 
 [Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
 
