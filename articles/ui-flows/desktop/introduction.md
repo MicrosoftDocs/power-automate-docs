@@ -4,7 +4,7 @@ description: Introduction to Power Automate Desktop
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/04/2020
+ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: marleon
 search.app: 

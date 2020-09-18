@@ -4,7 +4,7 @@ description: This section describes the actions and the actions pane in flow des
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
-ms.date: 02/26/2020
+ms.date: 09/22/2020
 ms.author: olmelnyk
 ms.reviewer: olmelnyk
 search.app: 

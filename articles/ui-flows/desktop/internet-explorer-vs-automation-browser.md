@@ -4,7 +4,7 @@ description: Using the actual Internet Explorer vs the Automation browser
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article
-ms.date: 09/09/2020
+ms.date: 09/22/2020
 ms.author: getrantz
 ms.reviewer:
 search.app: 
