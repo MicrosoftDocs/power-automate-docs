@@ -66,15 +66,18 @@ Here's the [full list of trigger outputs](https://docs.microsoft.com/connectors/
 
 ## Trigger the flow
 
+>[!IMPORTANT]
+>You must create these flows within the default environment to ensure they get listed in Teams.
+
+>[!IMPORTANT]
+>If you don't see flows created with the For selected message in Teams please check with your admin if the **Power Automate Actions** app is enabled in the Microsoft Teams admin center https://admin.teams.microsoft.com/policies/manage-apps 
+
 Any flow that uses the **For a selected message** trigger shows up as a message action in the Teams message in the **More actions** menu for the flow. 
 
 ![Trigger from Microsoft Teams](media/trigger-flow-teams-message/more-actions-menu.png)
 
 >[!IMPORTANT]
 >The name of the flow is used to reference the flow within Teams so be sure to provide a descriptive name for the flow.
-
->[!IMPORTANT]
->You must create these flows within the default environment to ensure they get listed in Teams.
 
 ## Best practices
 
