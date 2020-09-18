@@ -1,6 +1,6 @@
 ---
-title: Conditionals | Microsoft Docs
-description: Conditionals
+title: Making use of conditionals | Microsoft Docs
+description: Making use of conditionals
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article

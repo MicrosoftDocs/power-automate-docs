@@ -1,6 +1,6 @@
 ---
-title: Loops | Microsoft Docs
-description: Loops
+title: Making use of loops | Microsoft Docs
+description: Making use of loops
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article

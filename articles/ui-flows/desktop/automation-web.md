@@ -1,6 +1,6 @@
 ---
-title: Web automation | Microsoft Docs
-description: Web automation
+title: Automation in the web | Microsoft Docs
+description: Automation in the web
 author: rokontol
 ms.service: flow
 ms.topic: article
