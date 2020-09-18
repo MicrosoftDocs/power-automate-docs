@@ -44,9 +44,10 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 
 - A supported keyboard attached.
 
-## Limitations
+>[!IMPORTANT]
+>You must have the latest versions of each component to record, test, or run UI flows.
 
-You must have the latest versions of each component to record, test, or run UI flows.
+## Limitations
 
 The following are not supported:
 - Windows 10 Home installations are not supported.
@@ -67,19 +68,22 @@ You'll find feature-specific limitations included in the documentation for each 
 
 ## Install UI flows and Power Automate Desktop (preview) on your device
 
-The installer contains all the components needed to record, edit, and test your automations. 
+The installer contains all the components you need to record, edit, and test your automations. 
 
 Follow these steps to install the UI flows app:
 
 1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. 
+
+   This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+
 1. Follow the instructions in the **UI flows setup** installer to complete the installation.
-1. Once the installer launches, select to install UI Flows, Power Automate Desktop (preview) or both. 
-1. Depending on the selection, you will be prompted to select the features to install for each product. 
+1. Once the installer launches, select to install UI flows, Power Automate Desktop (preview), or both. 
+1. Make your selections for each feature for the installation to complete. 
 
 >[!IMPORTANT]
->The UI flows package installs the Webdriver component and the UI flows browser extension. Both of these are needed to record, test, and run UI flows for desktop.
->The Power Automate Desktop (preview) package installs the Power Automate Desktop app, third-party components and browser extensions.
+>The UI flows package installs the Webdriver component and the UI flows browser extension. You need both of these to record, test, and run UI flows for desktop.
+>The Power Automate Desktop (preview) package installs the Power Automate Desktop app, third-party components, and browser extensions.
 
 ![Installation options image](https://user-images.githubusercontent.com/48315710/92633908-c546e380-f2d3-11ea-8976-6a7609eb70f8.png)
 
@@ -89,24 +93,26 @@ During installation, you can change the default settings if you do not want to s
 
 ## Activate the UI flows and Power Automate Desktop (preview) browser extension 
 
-Once the installation is complete, all you have to do is make sure that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
+After the installation completes, confirm that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
 
 ![Installation success image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
 
-1. Click on one of the link displayed in the installer. For example, if you want to use UI flows on Microsoft Edge, click on the **Microsoft Edge** link.
-1. It will open the store of your browser directly to the public page of the extension
-1. Make sure the extension is already installed. If not:
+1. Select one of the links displayed in the installer. For example, if you want to use UI flows on Microsoft Edge, select the **Microsoft Edge** link.
 
-For Microsoft Edge: 
-- click on **Get** and **Add extension** when prompted. 
-- If you see the message **This extension has been turned off in Microsoft Edge** on top of the page, then click on **Turn on extension**
+   The store for your browser opens directly to the public page for the extension.
 
-For Google Chrome: 
-- click on **Add to Chrome** and select **Enable extension** when prompted. 
-- If you see the message **This item has been disabled in Chrome.** on top of the page, then click on **Enable this item**
+1. Confirm that the extension is installed. Follow these steps if it isn't installed:
+
+#### Microsoft Edge: 
+- Select **Get**, and then select **Add extension** when prompted. 
+- If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
+
+#### Google Chrome: 
+- Select **Add to Chrome**, and then select **Enable extension** when prompted. 
+- If you see the message: *This item has been disabled in Chrome* on top of the page, select **Enable this item**.
 
 > [!TIP]
-> If you are not able to activate the extension(s) in your browser, please check the following:
+> If you are not able to activate the extension(s) in your browser, check the following:
 > - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome. Firefox is only supported with the Power Automate Desktop extension.
 > - If the extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
