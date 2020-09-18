@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/20/2020
+ms.date: 09/18/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -80,19 +80,23 @@ Use the **Data Operation – Select** (select) to transform the shape of the obj
 
 For example, you can use the select action if data enters your flow via a web request in this format:
 
-````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````
+``` JSON
+[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
+```
 
-and you’d like to reshape the incoming data by renaming "first" to "FirstName", "last" to "LastName" and adding a new member named "FamilyName" that combines "first" and "last" (separated with a space):
+and you’d like to reshape the incoming data by renaming "first" to "FirstName", "last" to "FamilyName" and adding a new member named "FullName" that combines "first" and "last" (separated with a space):
 
-````[ { "FirstName": "Deon", "FamilyName": "Herb", "FullName": "Deon Herb" }, { "FirstName": "K", "FamilyName": "Herb", "FullName": "K Herb" } ]````.
+``` JSON
+[ { "FirstName": "Eugenia", "FamilyName": "Lopez", "FullName": "Eugenia Lopez" }, { "FirstName": "Elizabeth", "FamilyName": "Moore", "FullName": "Elizabeth Moore" } ]
+```
 
 To do this:
 
 1. Add the **When a HTTP request is received** (request) trigger to your flow.
 2. Select the **Use sample payload to generate schema** from the **Request** card.
-![selecte sample payload](./media/data-operations/request-trigger.png)
+![select sample payload](./media/data-operations/request-trigger.png)
 3. In the box that displays, paste a sample of your source data array, and then select the **Done** button.
-![paste-sample](./media/data-operations/paste-sample.png)
+
 4. Add the **Data Operation – Select** (select) action, and then configure it like the following image.
    
     ![configure the select action](./media/data-operations/select-card-2.png)
@@ -112,9 +116,11 @@ Use **Data Operation - Filter array** (filter array) to reduce the number of obj
 
 For example, you can use filter array on this array:
 
-````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````
+``` JSON
+[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
+```
 
-to create a new array that contains only objects in which *first* is set to “Deon”.
+to create a new array that contains only objects in which *first* is set to “Eugenia”.
 
 Let's do this.
 
@@ -127,16 +133,22 @@ Let's do this.
     You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
 4. When your flow runs, assuming the JSON input looks like this array:
    
-    ````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````,
+    ``` JSON
+    [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
+    ```
    
-    the output looks like this array (notice that only objects in which *first* is set to “Deon” are included in the output of the action):
+    the output looks like this array (notice that only objects in which *first* is set to “Eugenia” are included in the output of the action):
    
-    ````[ { "first": "Deon", "last": "Herb" } ]````
+    ``` JSON
+    [ { "first": "Eugenia", "last": "Lopez" }]
+    ```
 
 ## Use the create csv table action
 Use the **Data Operation - Create CSV table** (create csv table) to change a JSON array input into a comma separated value (CSV) table. Optionally, you can keep the headers visible in the CSV output. For example, you can convert the following array into a CSV table by using the **Create CSV table** action:
 
-````[ { "first": "Deon", "last": "Herb" }, { "first": "K", "last": "Herb" } ]````
+``` JSON
+[ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
+```
 
 1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
    
@@ -145,9 +157,7 @@ Use the **Data Operation - Create CSV table** (create csv table) to change a JSO
     Note: The **Body** token in this image comes from a **When a HTTP request is received** action, however, you could get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly into the **From** box.
 2. Save, and then run your flow.
    
-    When your flow runs, the **Create CSV table** output looks like this image:
-   
-    ![create csv table output](./media/data-operations/create-csv-table-output-2.png)
+    When your flow runs, the **Create CSV table** displays the output as expected.
 
 ## Use the create html table action
 Use **Data Operation - Create HTML table** to change a JSON array input into an HTML table. Optionally, you can keep the headers visible in the HTML output.
