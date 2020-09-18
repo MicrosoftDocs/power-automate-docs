@@ -80,8 +80,8 @@ conceptualContent:
         - text: Set up UI flows
           url: /power-automate/ui-flows/setup
           itemType: how-to-guide
-        - text: Use WinAutomation with UI flows
-          url: /power-automate/ui-flows/create-processes
+        - text: Use Power Automate Desktop (Preview)
+          url: /power-automate/ui-flows/desktop/introduction
           itemType: concept
     
     - title: Use solutions for ALM
