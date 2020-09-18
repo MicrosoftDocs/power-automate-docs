@@ -465,7 +465,7 @@
     href: organization-q-and-a.md
   - name: Pricing
     href: billing-questions.md
-  - name: Introduction to the admin center
+  - name: Admin center
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
@@ -511,6 +511,8 @@
     href: web-api.md
   - name: Frequently asked questions
     href: frequently-asked-questions.md
+  - name: Power Automate glossary
+    href: glossary.md
 - name: Learn from others
   items:
   - name: Webinars
