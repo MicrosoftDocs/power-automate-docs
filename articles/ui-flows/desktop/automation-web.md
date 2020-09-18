@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Web automation
+# Automation in the web
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

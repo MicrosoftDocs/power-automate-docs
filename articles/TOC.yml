@@ -260,7 +260,7 @@
           - name: Making use of loops
             items:
             - name: Making use of loops
-              href: ./ui-flows/desktop/loops.md
+              href: ./ui-flows/desktop/use-loops.md
             - name: Simple loops
               href: ./ui-flows/desktop/simple-loops.md
             - name: Loop condition
@@ -270,7 +270,7 @@
           - name: Making use of conditionals
             items:
             - name: Making use of conditionals
-              href: ./ui-flows/desktop/conditionals.md
+              href: ./ui-flows/desktop/use-conditionals.md
             - name: If/else
               href: ./ui-flows/desktop/if-else.md
             - name: If variations
@@ -280,7 +280,7 @@
         - name: Automation in the web
           items:
           - name: Automation in the web
-            href: ./ui-flows/desktop/web-automation.md
+            href: ./ui-flows/desktop/automation-web.md
           - name: Interacting with web and APIs
             href: ./ui-flows/desktop/interacting-web-services.md
           - name: Using browsers and managing extensions
