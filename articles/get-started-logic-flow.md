@@ -38,12 +38,27 @@ Create a flow that performs one or more tasks automatically after it's triggered
 
 First, you will need to select what event, or *trigger*, starts your flow.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar, and then select **Create from blank**.
+1. In [Power Automate](https://flow.microsoft.com), select **My flows** from the navigation bar on the left.
 
-    ![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png)
-1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
+1. Select **New**, and then select **Automated-from blank**. 
 
-    ![Twitter event](./media/get-started-logic-flow/twitter-search.png)
+    <!-- ![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png) -->
+
+1. Give your flow a name in the **Add a name or we'll generate one** field.
+
+1. Enter **Twitter** into the **Search all triggers** field.
+
+1. Select **Twitter - When a new tweet is posted**.
+
+   ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/name-search-trigger.png)
+
+
+<!-- 1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
+
+    ![Twitter event](./media/get-started-logic-flow/twitter-search.png) -->
+
+1. Select the **Create** button at the bottom of the screen.
+
 
    >[!TIP]
    >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
@@ -56,36 +71,39 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 ## Specify an action
 
-1. Select **New step**, and then select **Add an action**.
+1. Select **New step**.
 
-    ![Add action](./media/get-started-logic-flow/add-action-icon.png)
+    <!-- ![Add action](./media/get-started-logic-flow/add-action-icon.png) -->
 
-1. In the box that shows **Search all connectors and actions**, type or paste **send email**, and then select **Office 365 Outlook - Send an email**.
+1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)**.
 
     ![List of actions](./media/get-started-logic-flow/send-email.png)
 
 1. If prompted, select the sign-in button, and then provide your credentials.
 
-1. In the form that appears, type or paste your email address in the **To** box then select your name from the list of contacts that appears.
+1. In the form that appears, enter your email address in the **To** box, and then select your name from the list of contacts that appears.
 
-    ![Blank email message](./media/get-started-logic-flow/blank-email.png)
-1. In the **Subject** box, type or paste **New tweet from:**, then type a space.
+1. In the **Subject** box, enter **New tweet from:**, and then type a space.
 
     ![Subject line with placeholder](./media/get-started-logic-flow/message-token.png)
 1. In the list of tokens, select the **Tweeted by** token to add a placeholder for it.
 
     ![Add parameter](./media/get-started-logic-flow/add-parameter.png)
 1. Select the **Body** box, and then select the **Tweet text** token to add a placeholder for it.
-1. (optional) Add more tokens, other content, or both to the body of the email.
-1. Near the top of the screen, name your flow, and then select **Create flow**.
 
-    ![Select the Create flow button](./media/get-started-logic-flow/create-button.png)
-1. Select **Done** to update the list of flows.
+   Optionally, you can add more tokens, other text, or both to the body of the email.
+1. Near the top of the screen, select **Save**.
 
-     ![Select the done button](./media/get-started-logic-flow/done-button.png)
-1. Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
+    <!-- ![Select the Create flow button](./media/get-started-logic-flow/create-button.png) -->
+<!-- 1. Select **Done** to update the list of flows.
 
-     Within a minute after the tweet is posted, an email message notifies you of the new tweet.
+     ![Select the done button](./media/get-started-logic-flow/done-button.png) -->
+
+## Test your flow
+
+Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
+
+Within a minute after the tweet is posted, an email message notifies you of the new tweet.
 
 > [!TIP]
 > Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
@@ -94,7 +112,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 ## Manage a flow
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.
+1. In [Power Automate](https://flow.microsoft.com), select **My flows** in the navigation bar on the left side.
 1. In the list of flows, do any of the following:
 
    * To pause a flow, set its toggle to **Off**.
@@ -109,7 +127,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
    * To delete a flow, select the **...** icon, select **Delete**, and then select **Delete** on the message box that appears.
 
        ![Delete icon](./media/get-started-logic-flow/delete-icon.png)
-   * To view the run history of a flow, select the flow from the **My flows** page, and then view the history under the **RUN HISTORY** section of the page that opens.
+   * To view the run history of a flow, select the flow from the **My flows** page, and then view the history under the **28 day run history** section of the page that opens.
 
        ![run history](./media/get-started-logic-flow/run-history.png)
 
