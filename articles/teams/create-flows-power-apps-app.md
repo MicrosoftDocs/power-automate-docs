@@ -77,7 +77,7 @@ In Teams, you could have acquired flows from an installed app, or you may have c
 
 1. Select the flow that you want to edit, and then select **Edit**.  
 
-   ![Customize flows](..\media\overview-teams-flows\customize-flow.png)
+   ![Select edit](..\media\overview-teams-flows\customize-flow.png)
 
 ## View details and run history
 
@@ -85,7 +85,7 @@ In Teams, you could have acquired flows from an installed app, or you may have c
 
 1. Select the flow for which you want to view the details, and then select **Details**.
 
-   ![Customize flows](..\media\overview-teams-flows\view-details-history.png)
+   ![View the details of flows](..\media\overview-teams-flows\view-details-history.png)
 
 ## Related articles
 
