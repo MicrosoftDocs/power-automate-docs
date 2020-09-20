@@ -40,6 +40,7 @@ Power Automate provides features that help line-of-business users create automat
 Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
 ## Functionality
+
 ### What do I need to use Power Automate?
 To use Power Automate, all you need is a web browser and an email address.
 
@@ -89,27 +90,34 @@ You can find a full list of available connectors [here](https://go.microsoft.com
 You can access data sources in your own IT infrastructure through the [on-premises data gateway](gateway-manage.md).
 
 ### What are templates?
+
 Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
 ### What data sources will I be able to connect to?
+
 You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and Common Data Service.
 
 ### How do I connect to a REST API in my flow?
+
 You can connect to any REST API that uses JSON and supports at least one of more than 10 authentication methods by creating [a custom connector](developer/register-custom-api.md).
 
 ### How do I connect to SQL Server and other on-premises data sources?
+
 You can connect to services on your local network using the [on-premises data gateway](gateway-manage.md).
 
 ### Can I share the flows I create?
+
 You can share flows in either of these ways:
 
 * You can add co-workers or groups in your organization as owners on your flows, so they can also edit and manage the flow.
 * For flows that can be run manually, you can also grant other people or groups in your organization permission to just run the flow.
 
 ### How many flows can I have?
+
 You can create an unlimited number of flows, depending on the [type of license](https://flow.microsoft.com/pricing) you hold.
 
 ### Where do I get started with Power Automate?
+
 Get started with the following resources:
 
 * [Blog](https://flow.microsoft.com)
@@ -118,6 +126,7 @@ Get started with the following resources:
 * [Community](https://powerusers.microsoft.com)
 
 ### What operating systems does the mobile app for Power Automate support?
+
 The Power Automate mobile app is available on [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### Can flows be turned off or disabled?
@@ -132,12 +141,20 @@ Polling, such as the **Recurrence** trigger|When the flow is turned on again, al
 Webhook|When the flow is turned on again, it only processes new events that are generated after the flow is turned on.
 
 ### What regions and languages does Power Automate support?
-Power Automate is available in 42 languages and [six regions](regions-overview.md).
+
+Power Automate is available in 42 languages and [six regions](regions-overview.md). To see the languages that are available:
+
+1. Sign into the [Power Platform Admin Center > Environments](https://admin.powerplatform.microsoft.com/environments)
+1. Select your environment
+1. Select **Settings** on the top menu bar.
+1. Select **Product > Languages**
 
 ### How does Power Automate compare to SharePoint Designer 2013?
+
 Power Automate is the successor to SharePoint Designer for many common business scenarios such as approvals, document review, and onboarding/offboarding. It will be the default tool for building business automation in SharePoint moving forward.
 
 ### How does Power Automate ensure that corporate data isn't accidentally released to social media services?
+
 Administrators can create [data loss prevention policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to ensure that only sanctioned services are used in Power Automate.
 
 ### Does Power Automate support service accounts?
