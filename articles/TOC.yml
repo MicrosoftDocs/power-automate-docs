@@ -100,7 +100,7 @@
   items:
   - name: Overview
     href: ./teams/overview.md
-  - name: Trigger flows from Microsoft Teams messages
+  - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
   - name: Model flows with adaptive cards
     href: create-adaptive-cards.md
@@ -125,7 +125,7 @@
       href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
-  - name: Create flows using the Power Apps app in Microsoft Teams
+  - name: Create flows using the Power Apps app (Preview)
     href: ./teams/create-flows-power-apps-app.md
 - name: Business process flows
   items:
