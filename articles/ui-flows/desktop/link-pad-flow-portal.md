@@ -30,13 +30,13 @@ Select **+ New Step**.
 
 ![new step](\media\link-pad-flow-portal\new-step.png)
 
-In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a UI flow (V2)**.
+In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop (Preview)**.
 
 ![action search](\media\link-pad-flow-portal\action-search.png)
 
 In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the UI flow drop-down select **Create a new UI flow**.
 
-![run ui flow v2 action properties](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties.png)
+![run ui flow power automate desktop action properties](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties.png)
 
 Enter a name for the flow and select **Launch app**.
 
@@ -70,7 +70,7 @@ To pass data to Power Automate from Power Automate Desktop, create an Output var
 
 Back in Power Automate, any input variables appear as fields in the UI action.
 
-![run ui flow v2 action properties 2](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties-2.png)
+![run ui flow power automate desktop action properties 2](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties-2.png)
 
 Output variables from Power Automate Desktop can be used in other Power Automate actions.
 

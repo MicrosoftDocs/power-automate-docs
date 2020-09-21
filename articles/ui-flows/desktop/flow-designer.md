@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Flow designer
+# Power Automate Desktop flow designer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The flow designer contains all the tools required to design and debug a flow. Additionally, any images, UI elements, or variables of a flow can be accessed and managed here.
+The flow designer contains all the tools required to design and debug a Power Automate Desktop flow. Additionally, any images, UI elements, or variables of a flow can be accessed and managed here.
 
 ![flow designer blank](\media\flow-designer\flow-designer.png)
 
