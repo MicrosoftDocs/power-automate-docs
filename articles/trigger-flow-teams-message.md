@@ -19,9 +19,9 @@ ms.author: hamenon-ms
 
 # Trigger a flow from any message in Microsoft Teams
 
-You can use messages to trigger processes in Microsoft Teams. For example, you might use a Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics. 
+You can use messages to trigger processes in Microsoft Teams. For example, you might use a Microsoft Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics. 
 
-Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within Teams.
+Use the **For a selected message** trigger in the Microsoft Teams connector to trigger a flow directly from within Microsoft Teams.
 
 ## Create the flow
 
@@ -34,7 +34,7 @@ Use the **For a selected message** trigger in the Teams connector to trigger a f
 1. Select **Create**.
 
 >[!NOTE]
->You must sign into Teams if you are not already signed in.
+>You must sign into Microsoft Teams if you are not already signed in.
 
 The **For a selected message** trigger has an optional input in the form of an adaptive card. Use an adaptive card to construct a form to collect information from the user who triggers the flow. For instance, if the flow creates a task, you can use an adaptive card to collect information, like the title of the task and the description.
 
@@ -54,8 +54,8 @@ Each input within the adaptive card form has an Id. You can use the Id later in 
 
 There several message elements available as a trigger output for use within the flow. Here's an overview of some of properties:
 
-* Message content - The full HTML content of the Teams message.
-* Plain text message output - The plain text variation of the Teams message.
+* Message content - The full HTML content of the Microsoft Teams message.
+* Plain text message output - The plain text variation of the Microsoft Teams message.
 * Link to message - A direct url to reference the message.
 * Sender display name, Sender id - The details of the user who sent the message.
 * Originating user display name, originating user id - The details of the user who invoked the flow.
@@ -67,21 +67,21 @@ Here's the [full list of trigger outputs](https://docs.microsoft.com/connectors/
 ## Trigger the flow
 
 >[!IMPORTANT]
->You must create these flows within the default environment to ensure they get listed in Teams.
+>You must create these flows within the *default* environment for them to appear in Microsoft Teams.
 
 >[!IMPORTANT]
->If you don't see flows created with the For selected message in Teams please check with your admin if the **Power Automate Actions** app is enabled in the Microsoft Teams admin center https://admin.teams.microsoft.com/policies/manage-apps 
+>If you don't see the flows your create with the **For selected message in Teams** trigger, ask your admin to confirm if the **Power Automate Actions** app is enabled in the Microsoft Teams admin center https://admin.teams.microsoft.com/policies/manage-apps. 
 
-Any flow that uses the **For a selected message** trigger shows up as a message action in the Teams message in the **More actions** menu for the flow. 
+Any flow that uses the **For a selected message** trigger shows up as a message action in the Microsoft Teams message in the **More actions** menu for the flow. 
 
 ![Trigger from Microsoft Teams](media/trigger-flow-teams-message/more-actions-menu.png)
 
 >[!IMPORTANT]
->The name of the flow is used to reference the flow within Teams so be sure to provide a descriptive name for the flow.
+>The name of the flow is used to reference the flow within Microsoft Teams so be sure to provide a descriptive name for the flow.
 
 ## Best practices
 
-Be sure to include a form of a confirmation to the user once the flow is completed. We recommend using the **Post a message as the flow bot to a user** or the **Post a message as the flow bot to a channel** to notify the user in Teams when a triggered flow completes.
+Be sure to include a form of a confirmation to the user once the flow is completed. We recommend using the **Post a message as the flow bot to a user** or the **Post a message as the flow bot to a channel** to notify the user in Microsoft Teams when a triggered flow completes.
 
 Here's an example of a flow that creates a work item in Azure Devops and then posts a confirmation to the originating user.
 
@@ -89,4 +89,4 @@ Here's an example of a flow that creates a work item in Azure Devops and then po
 
 ## Known issues and limitations
 
-You must create these flows within the default environment to ensure they get listed in Teams.
+You must create these flows within the default environment to ensure they get listed in Microsoft Teams.
