@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/16/2020
-ms.author: hamenon-ms
+ms.author: hamenon
 ---
 
 # Trigger a flow from any message in Microsoft Teams
