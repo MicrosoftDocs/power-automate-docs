@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Call the console from the portal
+# Trigger the console from the portal
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

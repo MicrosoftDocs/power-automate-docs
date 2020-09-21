@@ -1,5 +1,5 @@
 ---
-title: Link a Power Automate Desktop flow with a flow | Microsoft Docs
+title: Trigger a Power Automate Desktop flow from another flow | Microsoft Docs
 description: Link a Power Automate Desktop flow with a flow in the Power Automate portal
 author: olegmelnykov
 ms.service: flow
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Link a Power Automate Desktop flow with a flow
+# Trigger a Power Automate Desktop flow from another flow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
