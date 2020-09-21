@@ -35,3 +35,9 @@ For example, to access the A2 cell of an Excel file, use the expression displaye
 If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
+
+## Know issues and limitations
+
+- **Issue**: The values for data row and data table variables are not displayed properly in the variables pane.
+- **Workarounds**: None.
+
