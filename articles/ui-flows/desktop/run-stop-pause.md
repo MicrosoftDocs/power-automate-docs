@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Select **Run** to run the flow. When the flow runs, Run becomes **Pause**. Select **Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while paused to resume. The **Run next action** button runs the flow action by action and pauses it after each action is completed. The **Stop** button stops the flow completely.
+Select **Run** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button runs the flow action by action and pauses it after each action completes. The **Stop** button stops the flow completely.
 
-![toolbar](\media\run-stop-pause\toolbar.png)
+![View the toolbar](\media\run-stop-pause\toolbar.png)
 
