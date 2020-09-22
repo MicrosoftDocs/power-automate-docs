@@ -80,7 +80,7 @@ conceptualContent:
         - text: Set up UI flows
           url: /power-automate/ui-flows/setup
           itemType: how-to-guide
-        - text: Use Power Automate Desktop (Preview)
+        - text: Use Power Automate Desktop (preview)
           url: /power-automate/ui-flows/desktop/introduction
           itemType: concept
     
