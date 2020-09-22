@@ -168,6 +168,203 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
+  - name: Power Automate Desktop UI flows (preview)
+    items: 
+    - name: Introduction to Power Automate Desktop
+      href: ./ui-flows/desktop/introduction.md
+    - name: Create a Power Automate Desktop flow
+      items:
+      - name: Trigger the console from the portal
+        href: ./ui-flows/desktop/create-flow-console.md
+      - name: Design a flow
+        href: ./ui-flows/desktop/design-flow.md
+    - name: Run a Power Automate Desktop flow
+      href: ./ui-flows/desktop/run-pad-flow.md
+    - name: Trigger a Power Automate Desktop flow from another flow
+      href: ./ui-flows/desktop/link-pad-flow-portal.md
+    - name: Power Automate Desktop console
+      href: ./ui-flows/desktop/console.md
+    - name: Power Automate Desktop flow designer
+      href: ./ui-flows/desktop/flow-designer.md
+      items:
+      - name: Actions and the actions pane
+        href: ./ui-flows/desktop/actions-pane.md
+        items:
+        - name: Adding an action to the workspace
+          href: ./ui-flows/desktop/adding-action.md
+        - name: Configuring an action
+          items:
+          - name: Configuring an action
+            href: ./ui-flows/desktop/configuring-action.md
+          - name: Configuring action exceptions
+            href: ./ui-flows/desktop/configuring-actions-exceptions.md
+        - name: Enabling and disabling actions
+          href: ./ui-flows/desktop/enabling-disabling-actions.md
+      - name: The flow designer workspace
+        items:
+        - name: The flow designer workspace
+          href: ./ui-flows/desktop/designer-workspace.md
+        - name: Setting up subflows
+          href: ./ui-flows/desktop/setting-subflows.md
+        - name: Managing the workspace toolbar
+          href: ./ui-flows/desktop/managing-workspace-toolbar.md
+          items:
+          - name: Searching in the flow
+            href: ./ui-flows/desktop/searching-flow.md
+          - name: Using the go to line option
+            href: ./ui-flows/desktop/using-line-option.md
+          - name: Making use of recorders
+            href: ./ui-flows/desktop/making-use-recorders.md
+        - name: Debugging a flow
+          href: ./ui-flows/desktop/debugging-flow.md
+          items:
+          - name: Run / stop and pause from a flow designer
+            href: ./ui-flows/desktop/run-stop-pause.md
+          - name: Adding breakpoints
+            href: ./ui-flows/desktop/adding-breakpoints.md
+          - name: Running the flow action by action
+            href: ./ui-flows/desktop/running-action.md
+          - name: The Power Automate Desktop designer status bar
+            href: ./ui-flows/desktop/status-bar.md
+        - name: Manage the Variables pane
+          items:
+          - name: Manage the variables pane
+            href: ./ui-flows/desktop/manage-variables.md
+          - name: Renaming a variable
+            href: ./ui-flows/desktop/renaming-variable.md
+          - name: Input and output variables
+            href: ./ui-flows/desktop/variables-inputs-outputs.md
+          - name: Variable data types
+            items:
+            - name: Variable data types
+              href: ./ui-flows/desktop/variable-data-types.md
+            - name: Lists
+              href: ./ui-flows/desktop/lists.md
+            - name: Datatables
+              href: ./ui-flows/desktop/datatables.md
+            - name: Datatype properties
+              href: ./ui-flows/desktop/datatype-properties.md
+          - name: Variable manipulation and the % notation
+            href: ./ui-flows/desktop/variable-manipulation.md
+        - name: UI elements
+          href: ./ui-flows/desktop/ui-elements.md
+        - name: Images
+          href: ./ui-flows/desktop/images.md
+        - name: Errors
+          items:
+          - name: Errors
+            href: ./ui-flows/desktop/errors.md
+          - name: The error detail view
+            href: ./ui-flows/desktop/error-detail-view.md
+        - name: Finding usages within flows
+          href: ./ui-flows/desktop/finding-usages.md
+        - name: Recording in a Power Automate Desktop flow
+          href: ./ui-flows/desktop/recording-flow.md
+        - name: Implementing basic logic in flows
+          items:
+          - name: Making use of loops
+            items:
+            - name: Making use of loops
+              href: ./ui-flows/desktop/use-loops.md
+            - name: Simple loops
+              href: ./ui-flows/desktop/simple-loops.md
+            - name: Loop condition
+              href: ./ui-flows/desktop/loop-condition.md
+            - name: For each loop
+              href: ./ui-flows/desktop/for-each-loop.md
+          - name: Making use of conditionals
+            items:
+            - name: Making use of conditionals
+              href: ./ui-flows/desktop/use-conditionals.md
+            - name: If/else
+              href: ./ui-flows/desktop/if-else.md
+            - name: If variations
+              href: ./ui-flows/desktop/if-variations.md
+            - name: Switch-case model
+              href: ./ui-flows/desktop/switch–case-model.md
+        - name: Automation in the web
+          items:
+          - name: Automation in the web
+            href: ./ui-flows/desktop/automation-web.md
+          - name: Interacting with web and APIs
+            href: ./ui-flows/desktop/interacting-web-services.md
+          - name: Using browsers and managing extensions
+            href: ./ui-flows/desktop/using-browsers.md
+          - name: Using the actual Internet Explorer vs the automation browser
+            href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
+        - name: Desktop automation
+          href: ./ui-flows/desktop/desktop-automation.md
+      - name: Actions reference
+        href: ./ui-flows/desktop/actions-reference.md
+        items:
+        - name: Variables
+          href: ./ui-flows/desktop/actions-reference/variables.md
+        - name: Conditionals
+          href: ./ui-flows/desktop/actions-reference/conditionals.md
+        - name: Loops
+          href: ./ui-flows/desktop/actions-reference/loops.md
+        - name: Wait
+          href: ./ui-flows/desktop/actions-reference/wait.md
+        - name: Flow control
+          href: ./ui-flows/desktop/actions-reference/flowcontrol.md
+        - name: System
+          href: ./ui-flows/desktop/actions-reference/system.md
+        - name: File
+          href: ./ui-flows/desktop/actions-reference/file.md
+        - name: Folder
+          href: ./ui-flows/desktop/actions-reference/folder.md
+        - name: Compression
+          href: ./ui-flows/desktop/actions-reference/compression.md
+        - name: UI automation
+          href: ./ui-flows/desktop/actions-reference/uiautomation.md
+        - name: Web
+          href: ./ui-flows/desktop/actions-reference/web.md
+        - name: Web automation
+          href: ./ui-flows/desktop/actions-reference/webautomation.md
+        - name: Excel
+          href: ./ui-flows/desktop/actions-reference/excel.md
+        - name: Database
+          href: ./ui-flows/desktop/actions-reference/database.md
+        - name: Email
+          href: ./ui-flows/desktop/actions-reference/email.md
+        - name: Exchange
+          href: ./ui-flows/desktop/actions-reference/exchange.md
+        - name: Outlook
+          href: ./ui-flows/desktop/actions-reference/outlook.md
+        - name: Message boxes
+          href: ./ui-flows/desktop/actions-reference/display.md
+        - name: Mouse and keyboard
+          href: ./ui-flows/desktop/actions-reference/mouseandkeyboard.md
+        - name: Clipboard
+          href: ./ui-flows/desktop/actions-reference/clipboard.md
+        - name: Text
+          href: ./ui-flows/desktop/actions-reference/text.md
+        - name: Datetime
+          href: ./ui-flows/desktop/actions-reference/datetime.md
+        - name: CMD session
+          href: ./ui-flows/desktop/actions-reference/cmd.md
+        - name: Terminal emulation
+          href: ./ui-flows/desktop/actions-reference/terminalemulation.md
+        - name: OCR
+          href: ./ui-flows/desktop/actions-reference/ocr.md
+        - name: Cryptography
+          href: ./ui-flows/desktop/actions-reference/cryptography.md
+        - name: Services
+          href: ./ui-flows/desktop/actions-reference/services.md
+        - name: XML
+          href: ./ui-flows/desktop/actions-reference/xml.md
+        - name: Active Directory
+          href: ./ui-flows/desktop/actions-reference/activedirectory.md
+        - name: AWS
+          href: ./ui-flows/desktop/actions-reference/aws.md
+        - name: Azure
+          href: ./ui-flows/desktop/actions-reference/azure.md
+        - name: Cognitive
+          href: ./ui-flows/desktop/actions-reference/cognitive.md
+        - name: FTP
+          href: ./ui-flows/desktop/actions-reference/ftp.md
+    - name: Known issues and limitations
+      href: ./ui-flows/desktop/known-issues-limitations.md
 - name: Solutions
   items:
   - name: Overview
