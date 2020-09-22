@@ -24,6 +24,8 @@ search.audienceType:
 
 # Use Softomotive's WinAutomation with UI flows
 
+>[!IMPORTANT]
+>See the [Power Automate Desktop (preview)](./desktop/introduction.md) documentation to learn about the evolution of WinAutomation.
 
 Here are some tips before you start using WinAutomation with UI flows.
 
