@@ -31,9 +31,6 @@ This article provides details about the known issues and limitations in Power Au
 - **Issue**: The Desktop recorder may not capture some SAP UI controls. applications.
 - **Workarounds**: Use manual actions to automate these SAP applications.
 
-- **Issue**: The Web recorder isn't supported with the Japanese language.
-- **Workarounds**: None.
-
 - **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
 - **Workarounds**: None.
 
@@ -43,8 +40,11 @@ This article provides details about the known issues and limitations in Power Au
 ## Web recorder
 
 - **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
-- **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots. 
+- **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots.
 
+- **Issue**: By default, the Web recorder will not work, if the selected language is Japanese.
+
+- **Workarounds**: Change the browser variable name to latin text, for example "Browser1". You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
 
 ## Loops
 - **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
