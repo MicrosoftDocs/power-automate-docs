@@ -20,7 +20,7 @@ search.audienceType:
 
 To run a flow from the console, either select a flow and select **Run** or right-click on the flow and select **Start**.
 
-![run-flow](\media\run-pad-flow\run-flow.png)
+![Select run flow button](\media\run-pad-flow\run-flow.png)
 
 Flows running from the console will run from beginning to end without the Run delay. Running flows from the console will also ignore any breakpoints placed in the flow designer.
 

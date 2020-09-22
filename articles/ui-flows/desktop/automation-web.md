@@ -48,7 +48,7 @@ Existing web elements may be added from the repository, while new ones may also 
 
 ![Adding new elements through a web action](.\media\web-automation\adding-new-elements-through-a-web-action.png)
 
-To add a new element, highlight it and press Ctrl & left-click:
+To add a new element, highlight it and press **Ctrl & left-click**:
 
 ![Capturing new elements](.\media\web-automation\capturing-new-elements.png)
 

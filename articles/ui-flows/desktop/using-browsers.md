@@ -76,7 +76,7 @@ To install the extension:
 
 1. In the pop-up dialog box, select **Add extension** to confirm the installation. 
 
-   ![The Add extension option in the extension's page.](media/using-browsers/edge-add-extension.png)
+   ![The Add extension option in the extensions page.](media/using-browsers/edge-add-extension.png)
 
 To ensure that **Microsoft Edge** works as expected with Power Automate Desktop, disable running background apps when Edge is closed. 
 
@@ -100,7 +100,7 @@ To install the extension:
 
 1. In the pop-up dialog box, select **Add extension** to confirm the installation. 
 
-   ![The Add extension option in the extension's page.](media/using-browsers/chrome-add-extension-confirmation.png)
+   ![Extension installation options page.](media/using-browsers/chrome-add-extension-confirmation.png)
 
 To ensure that **Google Chrome** works as expected with Power Automate Desktop, disable running background apps when Chrome is closed. 
 

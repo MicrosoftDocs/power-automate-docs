@@ -23,7 +23,7 @@ search.audienceType:
 <!--note from editor: you don't need to include the plus sign when you refer to UI elements.-->
 
 
-![console](\media\create-flow-console\console.png)
+![New flow button](\media\create-flow-console\console.png)
 
 2. Enter a name for the UI flow, and click **OK**.
 

@@ -36,7 +36,7 @@ Existing UI elements may be added from the Repository, while new ones may also b
 
 ![Adding new elements through a UI action](.\media\desktop-automation\adding-new-elements-through-a-ui-action.png)
 
-To add a new element, highlight it and press Ctrl & left-click:
+To add a new element, highlight it and press **Ctrl & left-click**:
 
 ![Capturing new UI elements](.\media\desktop-automation\capturing-new-ui-elements.png)
 
