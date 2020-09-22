@@ -1,0 +1,59 @@
+---
+title: Known issues and limitations | Microsoft Docs
+description: This section describes the known issues and limitations with Power Automate Desktop Preview.
+author: olegmelnykov
+ms.service: flow
+ms.topic: article
+ms.date: 09/22/2020
+ms.author: olmelnyk
+ms.reviewer: olmelnyk
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Known issues and limitations with Power Automate Desktop Preview
+
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+This article provides details about the known issues and limitations in Power Automate Desktop Preview.
+
+## Datatables
+
+- **Issue**: The preview of DataTable variables may not display correctly in the Variables pane.
+- **Workarounds**: None.
+
+
+## Desktop recorder
+
+- **Issue**: The Macro recorder isn't supported on SAP applications.
+- **Workarounds**: None.
+
+- **Issue**: The Web recorder isn't supported with the Japanese language.
+- **Workarounds**: None.
+
+- **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
+- **Workarounds**: None.
+
+- **Issue**: The Desktop Recorder may not record all steps from the Start Menu, system tray, or shortcuts on the desktop. 
+
+
+## Web recorder
+
+- **Issue**: The web recorder will not work, if the selected language is Japanese.
+
+- **Workarounds**: Change the browser variable name to a latin string. You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
+
+- **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
+- **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots. 
+
+
+## Loops
+- **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
+- **Workarounds**: None.
+
+## Variables
+- **Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
+- **Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.

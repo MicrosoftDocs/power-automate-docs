@@ -358,6 +358,8 @@
           href: ./ui-flows/desktop/actions-reference/cognitive.md
         - name: FTP
           href: ./ui-flows/desktop/actions-reference/ftp.md
+    - name: Known issues and limitations
+      href: ./ui-flows/desktop/known-issues-limitations.md
 - name: Solutions
   items:
   - name: Overview
