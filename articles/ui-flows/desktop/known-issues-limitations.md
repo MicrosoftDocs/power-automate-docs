@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues and limitations with Power Automate Desktop Preview
+# Known issues and limitations with Power Automate Desktop (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article provides details about the known issues and limitations in Power Automate Desktop Preview.
+This article provides details about the known issues and limitations in Power Automate Desktop (preview).
 
 ## Datatables
 

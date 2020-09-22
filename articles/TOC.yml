@@ -163,7 +163,7 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Power Automate Desktop UI flows (Preview)
+  - name: Power Automate Desktop UI flows (preview)
     items: 
     - name: Introduction to Power Automate Desktop
       href: ./ui-flows/desktop/introduction.md

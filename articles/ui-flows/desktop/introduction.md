@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to Power Automate Desktop (Preview)
+# Introduction to Power Automate Desktop (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

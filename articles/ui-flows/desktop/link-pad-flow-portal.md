@@ -30,7 +30,7 @@ Select **+ New Step**.
 
 ![new step](\media\link-pad-flow-portal\new-step.png)
 
-In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop (Preview)**.
+In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop (preview)**.
 
 ![action search](\media\link-pad-flow-portal\action-search.png)
 
