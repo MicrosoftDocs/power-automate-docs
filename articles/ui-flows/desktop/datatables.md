@@ -38,6 +38,6 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 ## Know issues and limitations
 
-- **Issue**: The values for data row and data table variables are not displayed properly in the variables pane.
+- **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
 - **Workarounds**: None.
 

@@ -22,13 +22,13 @@ This article provides details about the known issues and limitations in Power Au
 
 ## Datatables
 
-- **Issue**: The preview of DataTable variables may not display correctly in the Variables pane.
+- **Issue**: The preview of datatable variables may not display correctly in the variables pane.
 - **Workarounds**: None.
 
 
 ## Desktop recorder
 
-- **Issue**: The Macro recorder isn't supported on SAP applications.
+- **Issue**: The Desktop recorder isn't supported on SAP applications.
 - **Workarounds**: None.
 
 - **Issue**: The Web recorder isn't supported with the Japanese language.
@@ -37,7 +37,7 @@ This article provides details about the known issues and limitations in Power Au
 - **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
 - **Workarounds**: None.
 
-- **Issue**: The Desktop Recorder may not record all steps from the Start Menu, system tray, or shortcuts on the desktop. 
+- **Issue**: The Desktop recorder may not record all steps from the Start Menu, system tray, or shortcuts on the desktop. 
 
 
 ## Web recorder
