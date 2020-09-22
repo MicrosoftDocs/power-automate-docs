@@ -28,8 +28,8 @@ This article provides details about the known issues and limitations in Power Au
 
 ## Desktop recorder
 
-- **Issue**: The Desktop recorder isn't supported on SAP applications.
-- **Workarounds**: None.
+- **Issue**: The Desktop recorder may not capture some SAP UI controls. applications.
+- **Workarounds**: Use manual actions to automate these SAP applications.
 
 - **Issue**: The Web recorder isn't supported with the Japanese language.
 - **Workarounds**: None.
@@ -41,10 +41,6 @@ This article provides details about the known issues and limitations in Power Au
 
 
 ## Web recorder
-
-- **Issue**: The web recorder will not work, if the selected language is Japanese.
-
-- **Workarounds**: Change the browser variable name to a latin string. You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
 
 - **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
 - **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots. 
