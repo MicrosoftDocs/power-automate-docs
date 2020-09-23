@@ -44,7 +44,8 @@
         "almostdunh",
         "AshleyWoodruff"
       ],
-      "breadcrumb_path": "breadcrumb/toc.yml",      
+      "breadcrumb_path": "breadcrumb/toc.yml",
+      "extendBreadcrumb": true,      
       "titleSuffix": "Power Automate",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/power-automate-docs",
