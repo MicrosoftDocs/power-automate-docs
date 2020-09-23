@@ -53,3 +53,8 @@ This article provides details about the known issues and limitations in Power Au
 ## Variables
 - **Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
 - **Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.
+
+## Microsoft Excel
+
+- **Issue**: If a Microsoft Excel cell that has a null value is used in a numeric comparison, the flow might end unexpectedly, without an error message.
+- **Workarounds**: Populate cells with null values with 0 (zero) before each numeric comparison.
