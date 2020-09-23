@@ -46,6 +46,9 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 | **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes |
 | **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes |
 
+> [!NOTE]
+> For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
+
 ## Headers
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
