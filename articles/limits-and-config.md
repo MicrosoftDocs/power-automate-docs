@@ -91,7 +91,7 @@ Daily limits are applied on a sliding 24 hour window. Data consumption limits re
 
 | **User licenses**                                        |    **Actions / 24 hours**                       |    **Data consumption / 24 hours**   |
 |----------------------------------------------------------|-------------------------------------------------|--------------------------------------|
-| Power Automate Per Flow plan                             | 15,000 per Per Flow licensed flow               |  50GB                                |
+| Power Automate Per Flow plan                             | 15,000 per Per Flow licensed flow               | 50GB                                |
 | Dynamics 365 Enterprise applications<sup>1</sup>         | 20,000 across all flows owned by a single user  | 10GB                                 |
 | Dynamics 365 Professional <sup>2</sup>                   | 10,000 across all flows owned by a single user  | 10GB                                 |
 | Dynamics 365 Team Members                                | 5,000 across all flows owned by a single user   | 10GB                                 | 
