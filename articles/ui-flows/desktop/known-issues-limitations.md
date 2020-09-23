@@ -39,6 +39,7 @@ This article provides details about the known issues and limitations in Power Au
 
 - **Issue**: The Desktop recorder may not record all steps from the Start Menu, system tray, or shortcuts on the desktop. 
 
+    **Workarounds**: None.
 
 ## Web recorder
 
