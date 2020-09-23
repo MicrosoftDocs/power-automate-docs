@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2017
+ms.date: 09/23/2020
 ms.author: stepsic
 search.app: 
   - Flow
@@ -43,11 +43,11 @@ You can create a connection in multiple scenarios, such as these:
 ## Add a connection
 
 1. Sign into [Power Automate][1].
-2. IN the left-side navigation pane, select **Data > Connections**.
+2. On the left-side navigation pane, select **Data > Connections**.
 
-3. On the top menu bar, select **+ New connection**.
+3. On the top menu bar, select **New connection**.
 4. In the list of **Available connections**, select the connection that you want to set up, such as SharePoint.
-5. Select the **Create connection** button, and then enter your credentials to set up the connection.
+5. Select the **Create connection** button, and then enter your credentials.
 
 When the connection is set up, it's listed in **My connections**.
 
