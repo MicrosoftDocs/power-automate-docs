@@ -26,7 +26,9 @@ Power Automate Desktop allows you to automate both legacy applications, such as 
 
 Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow-console.md). 
 
-You 'll find the list of actions available in the [Actions reference](actions-reference.md).
+Power Automate Desktop comprises of the [console](console.md) and the [flow designer](flow-designer.md). 
+
+You'll find the list of actions available in the [Actions reference](actions-reference.md).
 
 > [!NOTE]
 > - This is a preview feature, and is available only in English, French, German, Japanese, Spanish.
