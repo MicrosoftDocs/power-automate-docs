@@ -91,15 +91,11 @@ Daily limits are applied on a sliding 24 hour window. Data consumption limits re
 
 | **User licenses**                                        |    **Actions / 24 hours**                       |    **Data consumption / 24 hours**   |
 |----------------------------------------------------------|-------------------------------------------------|--------------------------------------|
-| Power Automate Per Flow plan                             | 15,000 per Per Flow licensed flow               | 50GB                                |
+| Power Automate Per Flow plan                             | 15,000 per Per Flow licensed flow               | 50GB                                 |
 | Dynamics 365 Enterprise applications<sup>1</sup>         | 20,000 across all flows owned by a single user  | 10GB                                 |
 | Dynamics 365 Professional <sup>2</sup>                   | 10,000 across all flows owned by a single user  | 10GB                                 |
-| Dynamics 365 Team Members                                | 5,000 across all flows owned by a single user   | 10GB                                 | 
-| Power Apps Per User plan                                 | 5,000 across all flows owned by a single user   | 10GB                                 | 
-| Power Automate Per User plan                             | 5,000 across all flows owned by a single user   | 10GB                                 |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup> | 2,000 across all flows owned by a single user | 1GB                        |
-| Application user / Non-interactive users                 | 2,000 across all flows owned by a single user   |  1GB                                 |
-| Power Apps Per App plan                                  | 2,000 across all flows owned by a single user   |  1GB                                 |
+| Dynamics 365 Team Members, Power Apps Per User, Power Automate Per User plans | 5,000 across all flows owned by a single user   | 10GB            | 
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>, Power Apps Per App plans, Application user / Non-interactive users | 2,000 across all flows owned by a single user | 1GB                        |
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
