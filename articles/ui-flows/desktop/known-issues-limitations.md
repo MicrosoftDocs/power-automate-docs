@@ -1,6 +1,6 @@
 ---
-title: Known issues and limitations | Microsoft Docs
-description: This section describes the known issues and limitations with Power Automate Desktop Preview.
+title: Known issues and limitations with Power Automate Desktop (Preview) | Microsoft Docs
+description: This article describes the known issues and limitations with Power Automate Desktop (Preview).
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues and limitations with Power Automate Desktop (preview)
+# Known issues and limitations with Power Automate Desktop (Preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -22,34 +22,41 @@ This article provides details about the known issues and limitations in Power Au
 
 ## Datatables
 
-- **Issue**: The preview of datatable variables may not display correctly in the variables pane.
-- **Workarounds**: None.
+**Issue**: The preview of datatable variables may not display correctly in the variables pane.
+
+**Workarounds**: None.
 
 
 ## Desktop recorder
 
 - **Issue**: The Desktop recorder may not capture some SAP UI controls. applications.
-- **Workarounds**: Use manual actions to automate these SAP applications.
+
+    **Workarounds**: Use manual actions to automate these SAP applications.
 
 - **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
-- **Workarounds**: None.
+
+    **Workarounds**: None.
 
 - **Issue**: The Desktop recorder may not record all steps from the Start Menu, system tray, or shortcuts on the desktop. 
 
+    **Workarounds**: None.
 
 ## Web recorder
 
 - **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
-- **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots.
+
+    **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots.
 
 - **Issue**: By default, the Web recorder will not work, if the selected language is Japanese.
 
-- **Workarounds**: Change the browser variable name to latin text, for example "Browser1". You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
+    **Workarounds**: Change the browser variable name to latin text, for example "Browser1". You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
 
 ## Loops
-- **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
-- **Workarounds**: None.
+**Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
+
+**Workarounds**: None.
 
 ## Variables
-- **Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
-- **Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.
+**Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
+
+**Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.
