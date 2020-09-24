@@ -88,9 +88,6 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
      > [!NOTE]
      >
      > - If you set a two-option boolean field as **Required**, users can't continue unless the field value is **Yes**. The user is required to mark the field as completed before moving to the next stage.
-     >
-     > **However**
-     >
      > - If either **Yes** or **No** are acceptable field values, then you should make the field an option set instead of a two-option boolean field.
   
 1. **Add a branch (condition) to the process.** To add a branching condition:  
