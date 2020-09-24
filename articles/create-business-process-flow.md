@@ -47,13 +47,13 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
 1. On the **Actions** toolbar, select **New**.  
 1. In the **Create Process**  dialog box, complete the required fields:  
   
-    -   Enter a process name. The name of the process doesn’t need to be unique, but it should be meaningful for people who need to choose a process. You can change this later.  
+    - Enter a process name. The name of the process doesn’t need to be unique, but it should be meaningful for people who need to choose a process. You can change this later.  
   
-    -   In the **Category** list, select **Business Process Flow**.  
+    - In the **Category** list, select **Business Process Flow**.  
   
          You cannot change the category after you create the process.  
   
-    -   In the **Entity** list, select the entity you want to base the process on.  
+    - In the **Entity** list, select the entity you want to base the process on.  
   
          The entity you select affects the fields available for steps that can be added to the first stage of the process flow. If you don’t find the entity you want, make sure the entity has the Business process flows (fields will be created) option set in the entity definition. You cannot change this after you save the process.  
 1. Select **OK**.  
@@ -95,26 +95,24 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
   
 1. **Add a branch (condition) to the process.** To add a branching condition:  
   
-    1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.  
-  
-        ![Add a Condition to a business process flow](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")  
-  
-    2. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
+     1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.
+     
+        ![Add a Condition to a business process flow](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")
+     1. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
 1. **Add a workflow.** To invoke a workflow:  
   
     1. Drag a **Workflow** component from the **Components** tab to a stage or to the **Global Workflow** item in the designer.   Which one you add it to depends on the following:  
   
-       - **Drag it to a stage** when you want to trigger the workflow on entry or exit of the stage. The workflow component must be based on the same primary entity as the stage.  
-  
-       - **Drag it to the Global Workflow item** when you want to trigger the workflow when the process is activated or when the process is archived (when the status changes to **Completed** or **Abandoned**). The workflow component must be based on the same primary entity as the process.  
+        - **Drag it to a stage** when you want to trigger the workflow on entry or exit of the stage. The workflow component must be based on the same primary entity as the stage.  
+        - **Drag it to the Global Workflow item** when you want to trigger the workflow when the process is activated or when the process is archived (when the status changes to **Completed** or **Abandoned**). The workflow component must be based on the same primary entity as the process.  
     1.  Select the workflow, and then set properties in the **Properties** tab:  
 
-    -  Enter a display name.  
-    - Select when the workflow should be triggered.  
-    - Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
-    - Select **Apply** when you're done.  
+        1. Enter a display name.  
+        1. Select when the workflow should be triggered.  
+        1. Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
+        1. Select **Apply** when you're done.  
   
-       For more information on workflows, see [Workflow processes](/common-data-service/workflow-processes.md).  
+    For more information on workflows, see [Workflow processes](/common-data-service/workflow-processes.md).  
   
 1. To validate the business process flow, select **Validate** on the action bar.  
 1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
