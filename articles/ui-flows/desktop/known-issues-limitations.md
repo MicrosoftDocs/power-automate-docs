@@ -22,9 +22,9 @@ This article provides details about the known issues and limitations in Power Au
 
 ## Datatables
 
-**Issue**: The preview of datatable variables may not display correctly in the variables pane.
+- **Issue**: The preview of datatable variables may not display correctly in the variables pane.
 
-**Workarounds**: None.
+    **Workarounds**: None.
 
 
 ## Desktop recorder
@@ -52,11 +52,20 @@ This article provides details about the known issues and limitations in Power Au
     **Workarounds**: Change the browser variable name to latin text, for example "Browser1". You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
 
 ## Loops
-**Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
 
-**Workarounds**: None.
+- **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
+
+    **Workarounds**: None.
 
 ## Variables
-**Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
 
-**Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.
+- **Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 
+    
+    **Workarounds**: Open and save one of the actions that uses the variable or image resolves the issue.
+
+## Microsoft Excel
+
+- **Issue**: If a Microsoft Excel cell that has a null value is used in a numeric comparison, the flow might end unexpectedly, without an error message.
+    
+    **Workarounds**: Populate cells with null values with 0 (zero) before each numeric comparison.
+
