@@ -108,11 +108,11 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
   
        - **Drag it to the Global Workflow item** when you want to trigger the workflow when the process is activated or when the process is archived (when the status changes to **Completed** or **Abandoned**). The workflow component must be based on the same primary entity as the process.  
     1.  Select the workflow, and then set properties in the **Properties** tab:  
-  
-       1.  Enter a display name.  
-       1.  Select when the workflow should be triggered.  
-       1.  Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
-       1.  Select **Apply** when you're done.  
+
+    -  Enter a display name.  
+    - Select when the workflow should be triggered.  
+    - Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
+    - Select **Apply** when you're done.  
   
        For more information on workflows, see [Workflow processes](../common-data-service/workflow-processes.md).  
   
