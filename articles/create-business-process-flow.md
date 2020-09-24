@@ -2,8 +2,8 @@
 title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
-ms.date: 08/17/2018
-ms.reviewer: ""
+ms.date: 09/24/2020
+ms.reviewer: "dean-haas"
 ms.service: flow
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,9 +14,8 @@ applies_to:
   - "Power Apps"
 ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
-author: "Mattp123"
-ms.author: "matp"
-manager: "kvivek"
+author: "vashr"
+ms.author: "vashr"
 search.app: 
   - Flow
 search.audienceType: 
@@ -44,12 +43,9 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
 ## Create a business process flow  
   
 1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
-  
-2. On the left navigation pane, select **Processes**. 
-  
-3.  On the **Actions** toolbar, select **New**.  
-  
-4.  In the **Create Process**  dialog box, complete the required fields:  
+1. On the left navigation pane, select **Processes**. 
+1. On the **Actions** toolbar, select **New**.  
+1. In the **Create Process**  dialog box, complete the required fields:  
   
     -   Enter a process name. The name of the process doesn’t need to be unique, but it should be meaningful for people who need to choose a process. You can change this later.  
   
@@ -60,76 +56,68 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
     -   In the **Entity** list, select the entity you want to base the process on.  
   
          The entity you select affects the fields available for steps that can be added to the first stage of the process flow. If you don’t find the entity you want, make sure the entity has the Business process flows (fields will be created) option set in the entity definition. You cannot change this after you save the process.  
-  
-5. Select **OK**.  
+1. Select **OK**.  
   
      The new process is created, and the business process flow designer opens with a single stage already created for you.  
+     ![Business process flow window showing main elements](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
+1. **Add stages.** If your users will progress from one business stage to another in the  process:
   
- ![Business process flow window showing main elements](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
-  
-6. **Add stages.** If your users will progress from one business stage to another in the  process:  
-  
-    1.  Drag a **Stage** component from the **Components** tab and drop it on a + sign in the designer.  
+    1. Drag a **Stage** component from the **Components** tab and drop it on a + sign in the designer.  
   
         ![Drag a business process stage](media/drag-business-process-stage.png "Drag a business process stage")  
+    1. To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
   
-    2.  To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
-  
-        -   Enter a display name.  
-  
-        -   If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**) appears as a chevron in the process bar.  
+        - Enter a display name.  
+        - If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**) appears as a chevron in the process bar.  
   
             ![Business process bar chevron](media/business-process-bar-chevron.png "Business process bar chevron")  
+        - When you're done changing properties, select the **Apply** button.  
+1. **Add steps to a stage.** To see the steps in a stage, select **Details** in the lower-right corner of the stage. To add more steps:  
   
-        -   When you're done changing properties, select the **Apply** button.  
-  
-7. **Add steps to a stage.** To see the steps in a stage, select **Details** in the lower-right corner of the stage. To add more steps:  
-  
-    1.  Drag the **Step** component to the stage from the **Components** tab.  
+    1. Drag the **Step** component to the stage from the **Components** tab.  
   
         ![Add step to a stage in a business process](media/add-step-stage-business-process.png "Add step to a stage in a business process")  
   
-    2.  Select the step, and then set properties in the **Properties** tab:  
+    1. Select the step, and then set properties in the **Properties** tab:  
   
-        1.  Enter a display name for the step.  
+        1. Enter a display name for the step.  
+        1. If you want users to enter data to complete a step, select the appropriate field from the drop-down list.  
+        1. Select **Required** if people must fill in the field to complete the step before moving to the next stage of the process.  
+        1. Select **Apply** when you're done.  
+
+     > [!NOTE]
+     >
+     > - If you set a two-option boolean field as **Required**, users can't continue unless the field value is **Yes**. The user is required to mark the field as completed before moving to the next stage.
+     >
+     > **However**
+     >
+     > - If either **Yes** or **No** are acceptable field values, then you should make the field an option set instead of a two-option boolean field.
   
-        2.  If you want users to enter data to complete a step, select the appropriate field from the drop-down list.  
+1. **Add a branch (condition) to the process.** To add a branching condition:  
   
-        3.  Select **Required** if people must fill in the field to complete the step before moving to the next stage of the process.  
-  
-        4.  Select **Apply** when you're done.  
-  
-8. **Add a branch (condition) to the process.** To add a branching condition:  
-  
-    1.  Drag the **Condition** component from the **Components** tab to a + sign between two stages.  
+    1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.  
   
         ![Add a Condition to a business process flow](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")  
   
-    2.  Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
+    2. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
+1. **Add a workflow.** To invoke a workflow:  
   
-9. **Add a workflow.** To invoke a workflow:  
-  
-    1.  Drag a **Workflow** component from the **Components** tab to a stage or to the **Global Workflow** item in the designer.   Which one you add it to depends on the following:  
+    1. Drag a **Workflow** component from the **Components** tab to a stage or to the **Global Workflow** item in the designer.   Which one you add it to depends on the following:  
   
        - **Drag it to a stage** when you want to trigger the workflow on entry or exit of the stage. The workflow component must be based on the same primary entity as the stage.  
   
        - **Drag it to the Global Workflow item** when you want to trigger the workflow when the process is activated or when the process is archived (when the status changes to **Completed** or **Abandoned**). The workflow component must be based on the same primary entity as the process.  
-  
-    2.  Select the workflow, and then set properties in the **Properties** tab:  
+    1.  Select the workflow, and then set properties in the **Properties** tab:  
   
        1.  Enter a display name.  
-  
-       2.  Select when the workflow should be triggered.  
-  
-       3.  Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
-  
-       4.  Select **Apply** when you're done.  
+       1.  Select when the workflow should be triggered.  
+       1.  Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
+       1.  Select **Apply** when you're done.  
   
        For more information on workflows, see [Workflow processes](../common-data-service/workflow-processes.md).  
   
-10. To validate the business process flow, select **Validate** on the action bar.  
-  
-11. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
+1. To validate the business process flow, select **Validate** on the action bar.  
+1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
   
     > [!IMPORTANT]
     >  As long as a process is a draft, people won’t be able to use it.  
