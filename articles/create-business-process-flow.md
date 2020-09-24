@@ -114,7 +114,7 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
     - Search for an existing on-demand active workflow that matches the stage entity or create a new workflow by selecting **New**.  
     - Select **Apply** when you're done.  
   
-       For more information on workflows, see [Workflow processes](../common-data-service/workflow-processes).  
+       For more information on workflows, see [Workflow processes](/common-data-service/workflow-processes.md).  
   
 1. To validate the business process flow, select **Validate** on the action bar.  
 1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
