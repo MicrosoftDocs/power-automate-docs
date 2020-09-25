@@ -6,7 +6,7 @@ manager: KVIVEK
 ms.author: Deonhe
 ms.service: flow
 ms.topic: article
-ms.date: 07/29/2020
+ms.date: 09/25/2020
 search.app: 
   - Flow
 search.audienceType: 
@@ -26,7 +26,7 @@ Create flows instead of classic Common Data Service workflows to build new autom
 
 This table summarizes a comparison between Power Automate and classic workflows capabilities.
 
-*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic background workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/en-us/power-platform-release-plan/2020wave1/power-automate/planned-features)*
+*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic background workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)*
 
 <table>
 <tr>
