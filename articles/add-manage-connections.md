@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-## Manage connections in Power Automate
+# Manage connections in Power Automate
 
 Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
 
@@ -73,12 +73,12 @@ Some connectors, such as the SharePoint connector, support the on-premises data 
 
 1. Select the **Connect using on-premises data gateway** option.
 
-   ![](media/add-manage-connections/select-on-prem-option.png)
+   ![Select the on-premises option](media/add-manage-connections/select-on-prem-option.png)
 
 1. Provide the connection's credentials, and then select the gateway that you want to use.
 
    >[!TIP]
-   > For more information, see [Manage gateways](./gateway-manage.md) and [Understand gateways](./power-automate/gateway-reference.md).
+   > For more information, see [Manage gateways](./gateway-manage.md) and [Understand gateways](./gateway-reference.md).
 
    > [!NOTE]
    > After the connection is configured, it's listed in **Connections**.
