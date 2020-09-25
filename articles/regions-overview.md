@@ -31,7 +31,7 @@ In other words, your flows are deployed in the [datacenter region](https://azure
 
 [Overview of Power Platform regions](/power-platform/admin/regions-overview)
 
-[Azure geographies](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
+[Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
 
 ## Region mappings for Power Automate and gateways
 
