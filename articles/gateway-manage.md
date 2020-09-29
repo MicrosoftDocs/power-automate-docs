@@ -62,7 +62,7 @@ To install a gateway, follow the steps in [Install an on-premises data gateway](
 
 ## View your gateways
 
-Sign in to [Power Automate](https://flow.microsoft.com) and select **Data** > **Gateways** in the left-side navigation pane.
+Sign in to [Power Automate](https://flow.microsoft.com), and then select **Data** > **Gateways** in the navigation pane on the left side.
 
 > [!NOTE]
 > If you created or were given access to a gateway in Power Apps, that gateway appears in the **My gateways** list in Power Automate.
