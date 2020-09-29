@@ -4,7 +4,7 @@ description: Common issues and what's new for Power Automate releases
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/07/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 

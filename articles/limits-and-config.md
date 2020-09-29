@@ -4,7 +4,7 @@ description: Limits and configuration
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: anneta
 editor: ''
 tags: ''
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/04/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
