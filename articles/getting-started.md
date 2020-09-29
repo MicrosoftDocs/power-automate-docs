@@ -4,7 +4,7 @@ description: Quick ways to start automating your work and life with Power Automa
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 7/29/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
