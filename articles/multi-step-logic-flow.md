@@ -4,8 +4,8 @@ description: Expand a flow to include an advanced option, such as setting email 
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/20/2017
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 

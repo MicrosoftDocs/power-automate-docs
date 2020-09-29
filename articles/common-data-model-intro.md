@@ -4,7 +4,7 @@ description: Create a flow from a template that uses Common Data Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
+author: msftman
 manager: kvivek
 ms.service: flow
 ms.devlang: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2020
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 

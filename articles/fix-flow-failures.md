@@ -4,8 +4,8 @@ description: Resolve some of the most common reasons why flows fail
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/16/2019
-ms.author: stepsic
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 

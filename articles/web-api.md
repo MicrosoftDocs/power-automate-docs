@@ -1,14 +1,14 @@
 ---
 title: Flows are now stored in Common Data Service and use the rich Web API
 description: Flows are now stored in Common Data Service and use the rich Web API.
-author: stepsic-microsoft-com
+author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: business-applications
 ms.technology: 
-ms.author: stepsic
+ms.author: deonhe
 audience: Power user
 ---
 
