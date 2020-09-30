@@ -474,19 +474,19 @@ To allow the sales person to trigger the approval request on demand:
 
 1. With the trigger configured, add actions to run in our flow. This will provide the approver with the summary detail they need to identify the quoted items and values. Begin by adding the **Common Data Service (Current Environment) – List records** action. Because we want to get individual items from a Quote, set the entity to **Quote lines**. To ensure we only list those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select *Quote* from the list of dynamic values that appear.
 
-    ![Define your flow](media/define-flow-1.png "Define your flow")
+    ![Add actions](media/define-flow-1.png "Complete **List records** card")
 
 1. As we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to *Quote line summary* and the **Type** to String (from the dropdown), and leave the **Value** field empty.
 
 1. Add the **Append to string variable** action and then select the *Quote line summary* variable we created earlier. In the **Value** field, select *Quantity, Name, Price per unit, Extended amount and Manual amount* from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
 
-    ![Define your flow](media/define-flow-2.png "Define your flow")
+    ![Add variable](media/define-flow-2.png "Complete **Apply to each** card")
 
 1. To request approval on the quote summary we’ve created, add the **Approval – Start and wait for an approval** action. Select an Approval type (for example, Approve/Reject – First to respond), give the Approval request a **Title** (for example, the Name of the Quote for which approval is being requested, picked from the list of dynamic values), enter the email address for the person who needs to review and approve the quote in the *Assigned to** field. In the details field, add the *Quote line summary* variable, along with any other information that might be relevant using the dynamic value picker (for example, Total Amount).
 
 1. To determine what happens once an approval is accepted or rejected, add the **Condition** action. Select *Outcome* from the list of dynamic values from the first field in the condition, *Contains* from the dropdown in the second field, and enter *Accept* in the third field of the condition. Finally, add actions based on the outcome of the approval (For example, send a notification email).
 
-    ![Define your flow](media/define-flow-3.png "Define your flow")
+    ![Add condition](media/define-flow-3.png "Yes/no condition options")
 
 We now have the approval structure created so the approver has all of the information needed to make a decision on next steps. Here's the full example 
 
