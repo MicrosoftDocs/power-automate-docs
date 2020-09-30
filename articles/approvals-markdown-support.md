@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: gcorvera
-manager: KVivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 6/27/2020
+ms.date: 09/29/2020
 ms.author: gcorvera
 search.app: 
   - Flow
@@ -28,6 +27,7 @@ search.audienceType:
 This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
 
 > [!IMPORTANT]
+>
 > - Approval request emails are *actionable messages*. If your [Microsoft Outlook client](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format. 
 > - All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
 > - Markdown is not currently supported for [GCC and GCC High customers](/power-automate/us-govt).
@@ -70,18 +70,18 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 ## Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks. Enter two spaces prior to the line break to force most clients to start a new line.  
-   
+
 **Example:**  
 ```Markdown
-This is line 1.(space, space)
+This is line 1.(space)
 Now text will appear on the next line.
 ```
 
-**Result:**   
+**Result:**
 This is line 1.  
 Now text will appear on the next line. 
 
-**Example 2**  
+**Example 2**
 ```Markdown
 This is line 1.(space, space)  
 
@@ -93,16 +93,16 @@ This is line 1.
 
 Line 2 has extra space before it.
   
-
 ## Lists
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `*`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.   
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `*`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
 
 ### Ordered or numbered lists
 
-**Example:**  
+**Example:**
+
 ```Markdown
 0. First item.
 0. Second item.
@@ -116,21 +116,24 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ### Bullet lists
 
-**Example:**  
+**Example:**
+
 ```Markdown
 - Item 1
 - Item 2
 - Item 3
 ```
 
-**Result:**  
+**Result:**
+
 - Item 1
 - Item 2
 - Item 3
 
 ### Nested lists
 
-**Example:**  
+**Example:**
+
 ```Markdown
 1. First item.
    - Item 1
@@ -142,7 +145,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
    - Nested item 3
 ```
 
-**Result:**  
+**Result:** 
 1. First item.
 
     - Item 1
@@ -202,10 +205,10 @@ Organize structured data with tables.
  
 ## Emphasis (bold, italics, strikethrough)  
 
-You can emphasize text by applying bold, italics, or strikethrough to characters: 
-- To apply italics: surround the text with an asterisk `*` or underscore `_`   
+You can emphasize text by applying bold, italics, or strikethrough to characters:
+- To apply italics: surround the text with an asterisk `*` or underscore `_`
 - To apply bold: surround the text with double asterisks `**`.    
-- To apply strikethrough: surround the text with double tilde characters `~~`.   
+- To apply strikethrough: surround the text with double tilde characters `~~`.
 
 Combine these elements to apply multiple emphasis to text.    
 
