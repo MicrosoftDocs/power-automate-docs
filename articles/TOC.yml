@@ -96,6 +96,8 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
+  - name: Send an approval to a Microsoft 365 Group
+    href: group-approvals.md
 - name: Microsoft Teams flows
   items:
   - name: Overview
