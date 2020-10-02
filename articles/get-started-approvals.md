@@ -52,7 +52,7 @@ This could be a Power Automate, an Office 365, or a Dynamics 365 license with bu
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users in your current Common Data Service environment or your Azure Active Directory (Azure AD) tenant, including guest users. 
+You can assign approvals to users in your current Common Data Service environment or your Azure Active Directory (Azure AD) tenant, including guest users and Microsoft 365 groups. 
 
 When you assign an approval to users who are not in your environment, they are automatically added so that we can process their responses and persist them for approvals history. 
 
