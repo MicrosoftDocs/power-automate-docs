@@ -96,7 +96,7 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 
 To do this:
 
-1. Add the **When a HTTP request is received**<!--note from editor: Can you ask someone to change the UI to "When an HTTP request is received"?--> trigger to your flow.
+1. Add the **When an HTTP request is received** trigger to your flow.
 
 2. Select **Use sample payload to generate schema**.
 
@@ -104,7 +104,7 @@ To do this:
 
 3. In the box that appears, paste a sample of your source data array, and then select **Done**.
 
-4. Add the **Data Operation – Select** action, and then configure it as shown in the following image.<!--note from editor: Need to describe this image and it took more than 150 characters, so I'm using the new image extension. You'll see the alt text on the review site, but it doesn't show up in the published version on docs. -->
+4. Add the **Data Operation – Select** action, and then configure it as shown in the following image.
 
    :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
@@ -132,7 +132,7 @@ to create a new array that contains only objects in which `first` is set to `Eug
 Let's do this.
 
 1. Find, and then add, the **Filter array** action to your flow.
-2. Configure the filter array action as shown in the following image.<!--note from editor: I changed "Deon" to "Eugenia" in the image.-->
+2. Configure the filter array action as shown in the following image.
    
     ![In the From section, the first line is set to Body. In the second line, first is set equal to Eugenia](./media/data-operations/add-configure-filter-array-2.png)
 3. Save, and then run your flow.
@@ -159,7 +159,7 @@ Use the **Data Operation - Create CSV table** action to change a JSON array inpu
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
 2. Save, and then run, your flow.
 
-When your flow runs, the **Create CSV table** action displays the output shown in the following image.<!--note from editor: I see why you deleted this image, but it really seemed incomplete not to have it. What do you think of using this one with this alt text?-->
+When your flow runs, the **Create CSV table** action displays the output shown in the following image.
 
 ![Output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore"](./media/data-operations/create-csv-table-output-2.png)
 
@@ -167,7 +167,7 @@ When your flow runs, the **Create CSV table** action displays the output shown i
 
 Use the **Data Operation - Create HTML table** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
-To do this, follow the steps in previous section for creating a CSV table,<!--note from editor: You don't need a link for a section that's so close. --> but use the **Data Operation - Create HTML table** action instead of **Create CSV table**.
+To do this, follow the steps in previous section for creating a CSV table, but use the **Data Operation - Create HTML table** action instead of **Create CSV table**.
 
 > [!TIP]
-> If you plan to send the HTML table via email, remember to select **IsHtml**<!--note from editor: Will it be obvious to the reader where to select this setting (if it actually is in the email action UI)? --> in the email action.
+> If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
