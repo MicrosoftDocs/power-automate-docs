@@ -26,11 +26,11 @@ Power Automate Desktop allows you to automate both legacy applications, such as 
 
 ## Next Steps
 
-- Learn how to [set up Power Automate Desktop](../setup.md)
+- Learn how to [set up Power Automate Desktop](../setup.md).
 
 - Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow-console.md). 
 
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md) which Power Automate Desktop comprises of. 
+- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).
 
