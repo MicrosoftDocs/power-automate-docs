@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2020
+ms.date: 09/29/2020
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -206,7 +206,7 @@ flowsSettings?: {
 | Parameter | Required/Optional | Description | 
 |-----------|-------------------|-------------| 
 | `createFromBlankTemplateId` | Required | Use the template's GUID when the user selects the **Create from blank** button on the Flow widget | 
-| `flowsFilter` | Optional | The Power Automate widget applies the provided filter when listing flows. For example, show flows that reference a specific SharePoint site. <br /> ```flowFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
+| `flowsFilter` | Optional | The Power Automate widget applies the provided filter when listing flows. For example, show flows that reference a specific SharePoint site. <br /> ```flowsFilter: "operations/any(operation: operation/sharepoint.site eq 'https://microsoft.sharepoint.com/teams/ProcessSimple' )"   ``` |                 
 | `tab` | Optional | Defaults the active tab to show in the Power Automate widget. <br /> For example, <br /> ```tab:'sharedFlows' ``` displays the Team tab<br /> and ``` tab:'myFlows' ```  Displays the My flows tab. |   
 
 ### TemplatesSettings 
