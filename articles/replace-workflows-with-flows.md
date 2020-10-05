@@ -26,7 +26,7 @@ Create flows instead of classic Common Data Service workflows to build new autom
 
 This table summarizes a comparison between Power Automate and classic workflows capabilities.
 
-*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming flow capabilities that will help you replace classic background workflow with flow, see [What's new and planned for Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)*
+*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming capabilities that will help you replace classic background workflows with flows, see [What's new and planned for Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)*
 
 <table>
 <tr>
@@ -449,34 +449,31 @@ This table summarizes a comparison between Power Automate and classic workflows 
 </tr>
 </table>
 
-## Example scenario: Replace background workflow with a flow
+## Example scenario: Replace a background workflow with a flow
 
 Imagine a sales scenario where you have put together a quotation for a customer
-and now need to request approval from your management team prior to sending the quotation to the customer. With
-classic workflows, this wouldn’t have been easy to do and most
-solutions to this require a developer to write custom background workflow activities
-to retrieve quote line items.
+and now you need to request approval from your management team before you send the quotation to the customer. With classic workflows, this isn't easy and most solutions to this require a developer to write custom background workflow activities to retrieve quote line items.
 
-With flows, this is easier to build as demonstrated in the walkthrough later that covers 
-some of the Power Automate capabilities to support the scenario. This
-includes:
+With flows, this scanrio is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
 
-- Creating a flow that runs on demand
-- Getting a list of records related to a Common Data Service entity
-- Looping over a list of records
-- Sending approval requests
+- Creating a flow that runs on demand.
+- Getting a list of records that are related to a Common Data Service entity.
+- Looping over a list of records.
+- Sending approval requests.
 
 To allow the sales person to trigger the approval request on demand:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/) and create a flow in a solution. More information: [Create a flow in a solution](create-flow-solution.md). 
+1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a flow in a solution](create-flow-solution.md). 
 
-1. From the list of triggers, select **Common Data Service (Current Environment) – When a record is selected** and select **Quotes** as the entity. This trigger allows a flow to be run on-demand on a record or list of records.
+1. From the list of triggers, select **Common Data Service (Current Environment) – When a record is selected**, and then select **Quotes** as the entity. 
 
-1. With the trigger configured, add actions to run in our flow. This will provide the approver with the summary detail they need to identify the quoted items and values. Begin by adding the **Common Data Service (Current Environment) – List records** action. Because we want to get individual items from a Quote, set the entity to **Quote lines**. To ensure we only list those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select *Quote* from the list of dynamic values that appear.
+   This trigger allows a flow to run on-demand on a record or set of records.
+
+1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Common Data Service (Current Environment) – List records** action. The goal is to get the individual items from a Quote, so set the **Entity name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select *Quote* from the list of dynamic values that appear.
 
     ![Add actions](media/define-flow-1.png "Complete **List records** card")
 
-1. As we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to *Quote line summary* and the **Type** to String (from the dropdown), and leave the **Value** field empty.
+1. As we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to *Quote line summary*, and the **Type** to String (from the dropdown), and leave the **Value** field empty.
 
 1. Add the **Append to string variable** action and then select the *Quote line summary* variable we created earlier. In the **Value** field, select *Quantity, Name, Price per unit, Extended amount and Manual amount* from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
 
