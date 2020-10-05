@@ -16,6 +16,7 @@ ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
 author: "vashr"
 ms.author: "vashr"
+ms.manager: KVIVEK
 search.app: 
   - Flow
 search.audienceType: 
@@ -53,12 +54,12 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
   
          You cannot change the category after you create the process.  
   
-    - In the **Entity** list, select the entity you want to base the process on.  
+    - In the **Entity** list, select the entity on which you want to base the process.  
   
          The entity you select affects the fields available for steps that can be added to the first stage of the process flow. If you don’t find the entity you want, make sure the entity has the Business process flows (fields will be created) option set in the entity definition. You cannot change this after you save the process.  
 1. Select **OK**.  
   
-     The new process is created, and the business process flow designer opens with a single stage already created for you.  
+     The new process is created, and the business process flow designer opens with a single stage created for you.  
      ![Business process flow window showing main elements](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
 1. **Add stages.** If your users will progress from one business stage to another in the  process:
   
@@ -68,7 +69,7 @@ You need [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) in order to 
     1. To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
   
         - Enter a display name.  
-        - If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**) appears as a chevron in the process bar.  
+        - If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**), appears as a chevron in the process bar.  
   
             ![Business process bar chevron](media/business-process-bar-chevron.png "Business process bar chevron")  
         - When you're done changing properties, select the **Apply** button.  
