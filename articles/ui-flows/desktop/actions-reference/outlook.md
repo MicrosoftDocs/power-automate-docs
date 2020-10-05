@@ -4,7 +4,7 @@ description: Outlook Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Outlook
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Automate sending, receiving, and managing emails of an Outlook account
@@ -41,7 +42,7 @@ Launch Outlook and create a new Outlook instance
 |OutlookInstance|Outlook instance|The specific Outlook instance for use with later Outlook actions|
 
 
-##### Exceptions
+##### <a name="launch_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Outlook|Indicates a problem launching Outlook|
@@ -71,7 +72,7 @@ Retrieve email messages from an Outlook account
 |RetrievedEmails|List of Outlook mail messages|The retrieved email messages for later processing. The variable contain a list of Outlook message objects|
 
 
-##### Exceptions
+##### <a name="retrieveemailmessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -101,7 +102,7 @@ Create and send a new email message through Outlook
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -124,7 +125,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="processemailmessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -152,7 +153,7 @@ Save Outlook email messages given an account
 |StoredMessagesFiles|List of Text values|The file paths of the saved email messages for later processing|
 
 
-##### Exceptions
+##### <a name="saveoutlookemailmessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -180,7 +181,7 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="respondtomailmessage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -199,7 +200,7 @@ Close a previously launched Outlook instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="close_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to close Outlook instance|Indicates a problem closing the Outlook instance|

@@ -4,7 +4,7 @@ description: Text Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,8 +15,8 @@ search.audienceType:
 ---
 
 # Text
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Control and manipulate text
 
@@ -54,7 +54,7 @@ Appends a new line of text to a text value
 |Result|Text value|The new text|
 
 
-##### Exceptions
+##### <a name="appendline_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="getsubtextbase"></a> Get subtext
 Retrieve a subtext from a text value
@@ -75,7 +75,7 @@ Retrieve a subtext from a text value
 |Subtext|Text value|The retrieved subtext|
 
 
-##### Exceptions
+##### <a name="getsubtextbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |StartIndex or length are out of range|Indicates that the start index or length are out of range|
@@ -98,7 +98,7 @@ Creates a fixed length text by adding characters to the left or to the right of 
 |PaddedText|Text value|The new, padded text|
 
 
-##### Exceptions
+##### <a name="pad_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="trim"></a> Trim text
 Removes all occurrences of white space characters (such as space, tab, or new line) from the beginning and/or end of an existing text
@@ -116,7 +116,7 @@ Removes all occurrences of white space characters (such as space, tab, or new li
 |TrimmedText|Text value|The new trimmed text|
 
 
-##### Exceptions
+##### <a name="trim_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="changecase"></a> Change text case
 Changes the casing of a text to uppercase, lowercase, title case or sentence case
@@ -134,7 +134,7 @@ Changes the casing of a text to uppercase, lowercase, title case or sentence cas
 |TextWithNewCase|Text value|The new converted text|
 
 
-##### Exceptions
+##### <a name="changecase_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="tonumber"></a> Convert text to number
 Converts a text representation of a number to a variable that contains a numeric value
@@ -151,7 +151,7 @@ Converts a text representation of a number to a variable that contains a numeric
 |TextAsNumber|Numeric value|The new numeric value|
 
 
-##### Exceptions
+##### <a name="tonumber_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Provided text value can't be converted into a valid number|Indicates that the provided text value can't be converted into a valid number|
@@ -173,7 +173,7 @@ Converts a number to text using a specified format
 |FormattedNumber|Text value|The formatted number as text|
 
 
-##### Exceptions
+##### <a name="fromnumber_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="converttexttodatetime"></a> Convert text to datetime
 Converts a text representation of a date and/or time value to a datetime value
@@ -192,7 +192,7 @@ Converts a text representation of a date and/or time value to a datetime value
 |TextAsDateTime|Datetime|The datetime value|
 
 
-##### Exceptions
+##### <a name="converttexttodatetime_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Provided text value can't be converted into a valid datetime|Indicates that the provided text value can't be converted into a valid datetime|
@@ -215,7 +215,7 @@ Converts a datetime value to text using a specified custom format
 |FormattedDateTime|Text value|The formatted datetime as a text value|
 
 
-##### Exceptions
+##### <a name="convertdatetimetotext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="random"></a> Create random text
 Generates a text of specified length consisting of random characters. This can be useful for generating passwords
@@ -237,7 +237,7 @@ Generates a text of specified length consisting of random characters. This can b
 |RandomText|Text value|The generated random text|
 
 
-##### Exceptions
+##### <a name="random_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="jointext"></a> Join text
 Converts a list into a text value by separating its items with a specified delimiter
@@ -258,7 +258,7 @@ Converts a list into a text value by separating its items with a specified delim
 |JoinedText|Text value|The new delimited text|
 
 
-##### Exceptions
+##### <a name="jointext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="splittext"></a> Split text
 Creates a list containing the substrings of a text that are separated by a specified delimeter or a regular expression
@@ -280,7 +280,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |TextList|List of Text values|The new list|
 
 
-##### Exceptions
+##### <a name="splittext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
@@ -308,7 +308,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Matches|List of Text values|The results that match the given regular expression|
 
 
-##### Exceptions
+##### <a name="parsetext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
@@ -333,7 +333,7 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Replaced|Text value|The new updated text|
 
 
-##### Exceptions
+##### <a name="replace_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="escapeforregularexpression"></a> Escape text for regular expression
 Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and white space) by replacing them with their escape codes
@@ -350,6 +350,6 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 |EscapedText|Text value|The escaped text|
 
 
-##### Exceptions
+##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

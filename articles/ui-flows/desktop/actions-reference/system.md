@@ -4,7 +4,7 @@ description: System Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # System
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Perform a variety of tasks in a Windows environment and retrieve information from the system
@@ -68,7 +69,7 @@ Executes an application or opens a document by executing the associated applicat
 |WindowHandle|Numeric value|The window handle. When opening a new window, this will catch the value of the window handle, and store it in this variable. A window handle is useful to specifically identify a window in a later action|
 
 
-##### Exceptions
+##### <a name="runapplicationbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File or application not found|Indicates that the specified file or application was not found|
@@ -94,7 +95,7 @@ Executes a DOS command or console application in invisible mode and retrieves it
 |CommandExitCode|Numeric value|The command or application exit code. This will be a numeric value|
 
 
-##### Exceptions
+##### <a name="rundoscommand_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't execute command or console application|Indicates a problem executing the specified command or console application|
@@ -115,7 +116,7 @@ Executes some custom VBScript code and retrieves its output into a variable
 |ScriptError|Text value|The errors that may occur during the execution of the VBScript code|
 
 
-##### Exceptions
+##### <a name="runvbscript_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="terminateprocess"></a> Terminate process
 Immediately stops a running process
@@ -131,7 +132,7 @@ Immediately stops a running process
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="terminateprocess_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Process with specified ID not running|Indicates that a process with the specified ID isn't running|
@@ -149,7 +150,7 @@ Prints a document on the default printer
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="printdocument_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Document not found|Indicates that the specified document was not found|
@@ -168,7 +169,7 @@ Gets the name of the default printer
 |PrinterName|Text value|The name of the default printer|
 
 
-##### Exceptions
+##### <a name="getdefaultprinter_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't get default printer|Indicates a problem getting the default printer|
@@ -185,7 +186,7 @@ Sets a printer as the default printer
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setdefaultprinter_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't set default printer|Indicates a problem setting the default printer|
@@ -202,7 +203,7 @@ Logs off the current user
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="logoffuser_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't log off user in non-interactive mode|Indicates a problem logging off the user in non-interactive mode|
@@ -221,7 +222,7 @@ Shuts down the computer
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="shutdowncomputer_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't shut down the computer|Indicates a problem shutting down the computer|
@@ -238,7 +239,7 @@ Shows the desktop
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="showdesktop_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="lockworkstation"></a> Lock workstation
 Locks the workstation's display to protect it from unauthorized use
@@ -249,7 +250,7 @@ Locks the workstation's display to protect it from unauthorized use
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="lockworkstation_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't lock the computer in non-interactive mode|Indicates a problem locking the computer in non-interactive mode|
@@ -269,7 +270,7 @@ Plays a system sound or a wav file
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="playsoundbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find sound file|Indicates that the sound file could not be found|
@@ -284,7 +285,7 @@ Deletes all files from the windows recycle bin
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="emptyrecyclebin_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="takescreenshotbase"></a> Take screenshot
 Takes a screenshot of the foreground window or the specified screen and saves the image in a file or to the clipboard
@@ -302,7 +303,7 @@ Takes a screenshot of the foreground window or the specified screen and saves th
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="takescreenshotbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to take screenshot|Indicates a problem taking the screenshot|
@@ -322,7 +323,7 @@ Enables, disables, starts or stops the screensaver
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="controlscreensaver_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="ping"></a> Ping
 Sends a message to determine whether a remote computer is accessible over the network
@@ -341,7 +342,7 @@ Sends a message to determine whether a remote computer is accessible over the ne
 |RoundTripTime|Numeric value|The number of milliseconds taken for the Ping to complete|
 
 
-##### Exceptions
+##### <a name="ping_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't complete ping action|Indicates a problem completing the ping action|
@@ -360,7 +361,7 @@ Sets an environment variable to a given value
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setenvironmentvariable_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Indicates a problem setting the environment variable's value|Indicates a problem setting the environment variable's value|
@@ -383,7 +384,7 @@ Retrieves the value of an environment variable
 |EnvironmentVariableValue|Text value|The environment variable's value|
 
 
-##### Exceptions
+##### <a name="getenvironmentvariable_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Environment variable doesn't exist|Indicates that the specified environment variable doesn't exist|
@@ -402,7 +403,7 @@ Deletes an environment variable from a given scope
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deleteenvironmentvariable_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to delete environment variable|Indicates a problem deleting an environment variable|
@@ -424,7 +425,7 @@ Executes some custom JavaScript code and retrieves its output into a variable
 |ScriptError|Text value|The errors that may occur during the execution of the JavaScript code|
 
 
-##### Exceptions
+##### <a name="runjavascript_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="runpowershellscript"></a> Run PowerShell script
 Executes some custom PowerShell script and retrieves its output into a variable
@@ -442,7 +443,7 @@ Executes some custom PowerShell script and retrieves its output into a variable
 |ScriptError|Text value|The errors that may occur during the execution of the PowerShell code|
 
 
-##### Exceptions
+##### <a name="runpowershellscript_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to run PowerShell script|Indicates a problem running the provided PowerShell script|
@@ -465,7 +466,7 @@ Gets the width, height, bit count and frequency of a selected monitor
 |MonitorFrequency|Numeric value|The monitor frequency|
 
 
-##### Exceptions
+##### <a name="getscreenresolution_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get the screen's resolution|Indicates a problem getting the screen's resolution|
@@ -486,7 +487,7 @@ Sets the width, height, bit count and frequency of a selected monitor
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setscreenresolution_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to set the screen's resolution|Indicates a problem setting the screen's resolution|
@@ -508,7 +509,7 @@ Executes Python 2 script code and retrieves its output
 |ScriptError|Text value|The errors that may occur during the execution of the Python script code|
 
 
-##### Exceptions
+##### <a name="runpythonscript_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to run Python script|Indicates a problem running the provided Python script|

@@ -4,7 +4,7 @@ description: Web Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Web
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Communicate with web applications and services directly
@@ -55,7 +56,7 @@ Downloads text or a file from the web and stores it
 |WebPageText|Text value|The web page text|
 
 
-##### Exceptions
+##### <a name="downloadfromweb_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Directory doesn't exist|Indicates that a required directory doesn't exist|
@@ -99,7 +100,7 @@ Invokes a web service by sending data and retrieves the response from the web se
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="invokewebservicebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invoke web service error|Indicates a problem invoking the web service|

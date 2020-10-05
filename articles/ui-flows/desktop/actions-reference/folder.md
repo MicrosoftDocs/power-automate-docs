@@ -4,7 +4,7 @@ description: Folder Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Folder
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Manage and manipulate folders
@@ -55,7 +56,7 @@ Retrieve the list of files in a folder
 |Files|List of Files|The retrieved files as a list of file objects|
 
 
-##### Exceptions
+##### <a name="getfiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -85,7 +86,7 @@ Retrieve the list of subfolders in a folder
 |Folders|List of Folders|The retrieved subfolders as a list of folder objects|
 
 
-##### Exceptions
+##### <a name="getsubfolders_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -107,7 +108,7 @@ Create a new folder
 |NewFolder|Folder|The created folder object (which is a representation and can access the folder and all its information)|
 
 
-##### Exceptions
+##### <a name="create_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -126,7 +127,7 @@ Delete an existing folder and its contents (files and subfolders)
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="delete_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -144,7 +145,7 @@ Delete all the contents of a folder (files and subfolders) without deleting the 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="empty_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -167,7 +168,7 @@ Copy a folder into a destination folder
 |CopiedFolder|Folder|The copied folder object (which is a representation and can access the folder and all its information)|
 
 
-##### Exceptions
+##### <a name="copy_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -190,7 +191,7 @@ Move an existing folder into a destination folder
 |MovedFolder|Folder|The moved folder object (which is a representation and can access the folder and all its information)|
 
 
-##### Exceptions
+##### <a name="move_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -213,7 +214,7 @@ Change the name of a folder
 |RenamedFolder|Folder|The renamed folder object (which is a representation and can access the folder and all its information)|
 
 
-##### Exceptions
+##### <a name="rename_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Folder doesn't exist|Indicates that the folder was not found|
@@ -234,6 +235,6 @@ Retrieve the path of a Windows' special folder (such as Desktop, My Pictures, In
 |SpecialFolderPath|Folder|The special folder object (which is a representation and can access the folder and all its information)|
 
 
-##### Exceptions
+##### <a name="getspecialfolder_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

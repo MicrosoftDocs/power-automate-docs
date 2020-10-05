@@ -4,7 +4,7 @@ description: Terminal emulation Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Terminal emulation
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Take control of terminal emulators for automating mainframes and legacy systems
@@ -53,7 +54,7 @@ Open a new terminal session
 |TerminalSession|Terminal session|The specific terminal session for use with later terminal emulation commands|
 
 
-##### Exceptions
+##### <a name="openterminalsession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|
@@ -71,7 +72,7 @@ Close an open terminal session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closesession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|
@@ -90,7 +91,7 @@ Move the terminal's cursor on the specified position
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="movecursor_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Screen position out of bounds|Indicates that the screen position is out of bounds|
@@ -120,7 +121,7 @@ Get text from a terminal session
 |TerminalText|Text value|The text retrieved from the terminal session|
 
 
-##### Exceptions
+##### <a name="gettextfromterminalsession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|
@@ -152,7 +153,7 @@ Set text on a terminal session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="settextonterminalsession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|
@@ -178,7 +179,7 @@ Send a control key to a terminal session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendkey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|
@@ -205,7 +206,7 @@ Wait for a specific text to appear on a terminal session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitfortextonterminalsession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error communicating with the emulator|Indicates a problem connecting to the emulator|

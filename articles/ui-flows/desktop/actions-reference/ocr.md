@@ -4,7 +4,7 @@ description: OCR Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # OCR
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Initiate OCR engines to perform OCR related activities
@@ -45,7 +46,7 @@ Create a Tesseract OCR engine
 |OCREngine|OCREngineObject|The OCR engine for use with later OCR actions|
 
 
-##### Exceptions
+##### <a name="createtesseractocrenginebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
@@ -68,7 +69,7 @@ Create a MODI OCR engine
 |OCREngine|OCREngineObject|The OCR engine to use with later OCR actions|
 
 
-##### Exceptions
+##### <a name="createmodiengine_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
@@ -98,7 +99,7 @@ Extract text from a given source using the given OCR engine
 |OcrText|Text value|The result after the text extraction|
 
 
-##### Exceptions
+##### <a name="extracttextwithocr_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to extract text with OCR|Indicates an error occurred while trying to extract text with OCR from the given source|

@@ -4,7 +4,7 @@ description: Flow Control Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,8 +15,8 @@ search.audienceType:
 ---
 
 # Flow Control
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Run a subflow specifying any required arguments
 
@@ -42,7 +42,7 @@ User comment
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="comment_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="end"></a> End
 
@@ -53,7 +53,7 @@ User comment
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="end_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="exitfunction"></a> Exit subflow
 Exits current subflow and returns to the point it was called from
@@ -64,7 +64,7 @@ Exits current subflow and returns to the point it was called from
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="exitfunction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="goto"></a> Go to
 Transfers the flow of execution to another point, indicated by a label
@@ -78,7 +78,7 @@ Transfers the flow of execution to another point, indicated by a label
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="goto_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="label"></a> Label
 Acts as the destination of a 'go to' statement
@@ -92,7 +92,7 @@ Acts as the destination of a 'go to' statement
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="label_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
@@ -106,7 +106,7 @@ Run a subflow specifying any required arguments
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="callfunction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="exit"></a> Stop flow
 Terminates the flow
@@ -117,6 +117,6 @@ Terminates the flow
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="exit_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

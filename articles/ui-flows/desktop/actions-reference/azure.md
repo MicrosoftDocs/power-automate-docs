@@ -4,7 +4,7 @@ description: Azure Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Azure
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
@@ -60,7 +61,7 @@ Gets the resource groups based on the specified criteria
 |ResourceGroups|List of Azure resource groups|The retrieved resource groups|
 
 
-##### Exceptions
+##### <a name="getresourcegroups_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get the resource groups with the specified criteria |Indicates that getting the resource groups with the specified criteria failed|
@@ -82,7 +83,7 @@ Creates a new resource group
 |ResourceGroup|Azure resource group|The created resource group|
 
 
-##### Exceptions
+##### <a name="createresourcegroup_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Resource group already exists|Indicates that the resource group already exists and can't be created|
@@ -101,7 +102,7 @@ Deletes the specified resource group and all the contained resources
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deleteresourcegroup_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to delete the resource group|Indicates that deleting the resource group failed|
@@ -128,7 +129,7 @@ Gets the disks based on the specified criteria
 |Disks|List of Azure managed disks|The retrieved disks with all the related information|
 
 
-##### Exceptions
+##### <a name="getdisksaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Disk wasn't found|Indicates that the disk with the specified criteria doesn't exist|
@@ -155,7 +156,7 @@ Attaches an existing disk to the virtual machine with the specified name and res
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="attachdisk_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -179,7 +180,7 @@ Detaches the disk from the virtual machine with the specified name and resource 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="detachdisk_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -213,7 +214,7 @@ Creates a managed disk with the specified settings
 |ManagedDisk|Azure managed disk|The created managed disk|
 
 
-##### Exceptions
+##### <a name="createmanageddiskaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Resource group already exists|Indicates that the resource group already exists and can't be created|
@@ -236,7 +237,7 @@ Deletes the managed disk with the specified name and resource group
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletedisk_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Disk wasn't found|Indicates that the disk with the specified criteria doesn't exist|
@@ -263,7 +264,7 @@ Gets the snapshots based on the specified criteria
 |Snapshots|List of Azure snapshots|The retrieved snapshots with all the related information|
 
 
-##### Exceptions
+##### <a name="getsnapshotsaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Snapshot wasn't found|Indicates that the specified snapshot wasn't found|
@@ -291,7 +292,7 @@ Creates a snapshot from the specified disk
 |Snapshot|Azure snapshot|The created snapshot|
 
 
-##### Exceptions
+##### <a name="createsnapshot_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Resource group already exists|Indicates that the resource group already exists and can't be created|
@@ -314,7 +315,7 @@ Deletes the snapshot with the specified name and resource group
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletesnapshot_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Snapshot wasn't found|Indicates that the specified snapshot wasn't found|
@@ -337,7 +338,7 @@ Gets the basic information for the virtual machines
 |VirtualMachinesInfo|List of Azure virtual machine info|The retrieved virtual machines with basic information|
 
 
-##### Exceptions
+##### <a name="getvirtualmachines_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Resource group wasn't found|Indicates that the specified resource group wasn't found|
@@ -362,7 +363,7 @@ Gets all the information for the virtual machine(s) based on the specified crite
 |VirtualMachines|List of Azure virtual machines|The retrieved virtual machines with all the related information|
 
 
-##### Exceptions
+##### <a name="describevirtualmachineaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -383,7 +384,7 @@ Starts the virtual machine
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="startvirtualmachine_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -403,7 +404,7 @@ Stops the virtual machine and deallocates the related hardware (CPU and memory) 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="stopvirtualmachine_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -423,7 +424,7 @@ Shuts down the operating system of a virtual machine
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="shutdownvirtualmachine_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -443,7 +444,7 @@ Restarts a virtual machine
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="restartvirtualmachine_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
@@ -472,7 +473,7 @@ Creates an Azure session
 |AzureClient|Azure clients|The created Azure client |
 
 
-##### Exceptions
+##### <a name="createsessionaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to create Azure client|Indicates that creating the Azure client failed|
@@ -492,7 +493,7 @@ Gets subscriptions that the current account can access
 |Subscriptions|List of Azure subscriptions|The retrieved subscriptions with all the related information|
 
 
-##### Exceptions
+##### <a name="getsubscriptions_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get the subscriptions with the specified criteria|Indicates that getting the subscriptions with the specified criteria failed|
@@ -509,6 +510,6 @@ Ends an Azure session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="endsession_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

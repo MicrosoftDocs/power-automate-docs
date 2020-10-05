@@ -4,7 +4,7 @@ description: File Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # File
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Manage and manipulate files
@@ -49,7 +50,7 @@ Copy one or more files into a destination folder
 |CopiedFiles|List of Files|The copied file(s) as a list of files|
 
 
-##### Exceptions
+##### <a name="copy_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Source folder doesn't exist|Indicates that the source folder doesn't exist|
@@ -74,7 +75,7 @@ Move one or more files into a destination folder
 |MovedFiles|List of Files|The moved file(s) as a list of files|
 
 
-##### Exceptions
+##### <a name="move_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Source folder doesn't exist|Indicates that the source folder doesn't exist|
@@ -94,7 +95,7 @@ Delete one or more files
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="delete_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File path doesn't exist|Indicates that the file path doesn't exist|
@@ -140,7 +141,7 @@ Change the name of one or more files
 |RenamedFiles|List of Files|The renamed file(s) as a list of files|
 
 
-##### Exceptions
+##### <a name="renamefiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Directory not found|Indicates that the directory wasn't found|
@@ -165,7 +166,7 @@ Read the contents of a text file
 |FileContents|List of Text values|The contents as a list of texts|
 
 
-##### Exceptions
+##### <a name="readtextfromfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Directory not found|Indicates that the directory wasn't found|
@@ -188,7 +189,7 @@ Write or appends text to a file
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="writetext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to write text to file|Indicates a problem writing to the file|
@@ -216,7 +217,7 @@ Read a CSV file into a data table
 |CSVTable|Datatable|The contents of the CSV file as a data table|
 
 
-##### Exceptions
+##### <a name="readfromcsvfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Read from CSV failed|Indicates a problem reading from the CSV file|
@@ -240,7 +241,7 @@ Write a data table, data row or list to a CSV file
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="writetocsvfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Write failed|Indicates a problem writing to the CSV file|
@@ -264,7 +265,7 @@ Retrieve one or more parts (directory, filename, extension, etc.) from a text th
 |FileExtension|Text value|The extension (for example, .doc) of the source file|
 
 
-##### Exceptions
+##### <a name="getpathpart_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File path doesn't exist|Indicates that the file path doesn't exist|
@@ -281,7 +282,7 @@ Create a uniquely named, empty temporary file on disk, and get the file object (
 |TempFile|File|The temporary file object|
 
 
-##### Exceptions
+##### <a name="gettemppath_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to create temporary file|Indicates a problem creating a temporary file|

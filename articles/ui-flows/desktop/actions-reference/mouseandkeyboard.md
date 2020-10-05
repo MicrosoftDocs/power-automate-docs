@@ -4,7 +4,7 @@ description: Mouse and keyboard Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Mouse and keyboard
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Take control of the mouse and keyboard
@@ -44,7 +45,7 @@ Blocks user mouse and keyboard input, so that the flow can perform mouse and key
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="blockinput_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't block/unblock user input in non-interactive mode|Indicates a problem blocking/unblocking input in non-interactive mode|
@@ -66,7 +67,7 @@ Retrieves the current position of the mouse cursor on the screen in pixel coordi
 |MousePosY|Numeric value|The vertical (Y) value of the mouse position|
 
 
-##### Exceptions
+##### <a name="getmouseposition_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't retrieve the mouse position in non-interactive mode|Indicates a problem retrieving the mouse cursor position in non-interactive mode|
@@ -86,7 +87,7 @@ Moves the mouse to a specific position
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="movemouse_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't move mouse in non-interactive mode|Indicates a problem moving the mouse in non-interactive mode|
@@ -124,7 +125,7 @@ Moves the mouse over an image found on screen or on the foreground window
 |Y|Numeric value|The Y coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
-##### Exceptions
+##### <a name="movemousetoimagebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Image not found on screen|Indicates that the specified image wasn't found on the screen|
@@ -175,7 +176,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |HeightOfTextFound|Numeric value|The width of the area the text was found on|
 
 
-##### Exceptions
+##### <a name="movemousetotextonscreenwithocraction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Text not found on screen|Indicates that the specified text couldn't be found on the screen|
@@ -202,7 +203,7 @@ Sends a mouse click event
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendmouseclick_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't send mouse click in non-interactive mode|Indicates a problem sending a mouse click in non-interactive mode|
@@ -223,7 +224,7 @@ Sends keys to the application that is currently active
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendkeys_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't send keystrokes in non-interactive mode|Indicates a problem sending keystrokes in non-interactive mode|
@@ -247,7 +248,7 @@ Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shif
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pressreleasekey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't press or release key in non-interactive mode|Indicates a problem pressing or releasing the key in non-interactive mode|
@@ -265,7 +266,7 @@ Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setkeystate_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't set key state in non-interactive mode|Indicates a problem setting the key state in non-interactive mode|
@@ -287,7 +288,7 @@ Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 |IndexOfHotKeyPressed|Numeric value|The ordinal position of the hotkey, pressed by the user|
 
 
-##### Exceptions
+##### <a name="waitforhotkeyaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Hotkey failed to register|Indicates that a hotkey failed to register.|

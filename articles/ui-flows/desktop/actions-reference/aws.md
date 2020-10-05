@@ -4,7 +4,7 @@ description: AWS Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # AWS
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to Amazon web services and automate a variety of tasks
@@ -57,7 +58,7 @@ Start EC2 instance(s)
 |StartingEc2Instances|List of Instance state changes|The returned information for the started instances|
 
 
-##### Exceptions
+##### <a name="startec2instance_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -84,7 +85,7 @@ Stop EC2 instance(s)
 |StoppingEc2Instances|List of Instance state changes|The returned information for the stopped instances|
 
 
-##### Exceptions
+##### <a name="stopec2instance_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -106,7 +107,7 @@ Reboot EC2 instance(s)
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="rebootec2instance_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -133,7 +134,7 @@ Get information for the relevant EC2 instances
 |Ec2InstancesInfo|List of EC2 instances info|The list of the EC2 instances|
 
 
-##### Exceptions
+##### <a name="getavailableec2instances_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -158,7 +159,7 @@ Returns all the information for the specified EC2 instance(s)
 |Ec2Instances|List of EC2 instances|The retrieved instance(s) with all the relevant information|
 
 
-##### Exceptions
+##### <a name="describeec2instance_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -187,7 +188,7 @@ Create a snapshot of an EBS volume and stores it in Amazon S3
 |Snapshot|EBS snapshot|The created snapshot|
 
 
-##### Exceptions
+##### <a name="createsnapshot_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -216,7 +217,7 @@ Describes the specified EBS snapshots available
 |EBSSnapshots|List of EBS snapshots|The retrieved snapshot(s) with all the relevant information|
 
 
-##### Exceptions
+##### <a name="describesnapshots_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -238,7 +239,7 @@ Delete the specified snapshot
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletesnapshot_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -273,7 +274,7 @@ Create an EBS volume
 |Volume|EBS volume|The created volume|
 
 
-##### Exceptions
+##### <a name="createvolumeaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -299,7 +300,7 @@ Attach an EBS volume to an EC2 instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="attachvolume_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -327,7 +328,7 @@ Detach an EBS volume from an EC2 instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="detachvolume_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -355,7 +356,7 @@ Describe the specified EBS volumes
 |EBSVolumes|List of EBS volumes|The retrieved EBS volumes with all the relevant information|
 
 
-##### Exceptions
+##### <a name="describevolumes_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -376,7 +377,7 @@ Delete the specified EBS volume
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletevolume_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
@@ -406,7 +407,7 @@ Create an EC2 client to automate EC2 web services
 |Ec2Client|EC2 client|The EC2 client|
 
 
-##### Exceptions
+##### <a name="createec2sessionaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Profile doesn't exist|Indicates that the specified profile doesn't exist|
@@ -425,6 +426,6 @@ Dispose an open EC2 client
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="endec2session_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

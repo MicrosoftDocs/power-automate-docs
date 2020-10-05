@@ -4,7 +4,7 @@ description: Variables Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Variables
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 All variable-related actions for different datatypes
@@ -58,7 +59,7 @@ Get the integral or fractional digits of a numeric value, or round up the value 
 |TruncatedValue|Numeric value|The truncated or rounded number|
 
 
-##### Exceptions
+##### <a name="truncatenumber_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="generaterandomnumber"></a> Generate random number
 Generate a random number or a list of random numbers that fall between a minimum and maximum value
@@ -80,7 +81,7 @@ Generate a random number or a list of random numbers that fall between a minimum
 |RandomNumbers|List of Numeric values|The newly generated list of random numbers|
 
 
-##### Exceptions
+##### <a name="generaterandomnumber_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to generate random number|Indicates that there is an error generating a random number|
@@ -98,7 +99,7 @@ Remove all items from a list
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="clearlist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="removeitemfromlist"></a> Remove item from list
 Remove one or multiple items from a list
@@ -117,7 +118,7 @@ Remove one or multiple items from a list
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="removeitemfromlist_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Item index is out of range|Indicates that item index is out of range|
@@ -143,7 +144,7 @@ Sort the items of a list. Use items of the same type
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="sortlistbase_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="shufflelist"></a> Shuffle list
 Create a random permutation of a list
@@ -158,7 +159,7 @@ Create a random permutation of a list
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="shufflelist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="mergelists"></a> Merge lists
 Merge two lists into one
@@ -176,7 +177,7 @@ Merge two lists into one
 |OutputList|List of General values|The merged list. The initial lists aren't affected|
 
 
-##### Exceptions
+##### <a name="mergelists_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |The lists supplied are of incompatible types|Indicates that the lists supplied are of incompatible types|
@@ -194,7 +195,7 @@ Reverse the order of the items of a list
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="reverselist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="removeduplicateitemsfromlist"></a> Remove duplicate items from list
 Remove the multiple occurrences of items in a list, so that in the resulting list each item will be unique
@@ -210,7 +211,7 @@ Remove the multiple occurrences of items in a list, so that in the resulting lis
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="removeduplicateitemsfromlist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="findcommonlistitems"></a> Find common list items
 Compare two lists and create a new list with the items that are common to both
@@ -228,7 +229,7 @@ Compare two lists and create a new list with the items that are common to both
 |IntersectionList|List of General values|The new list of common items|
 
 
-##### Exceptions
+##### <a name="findcommonlistitems_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="subtractlists"></a> Subtract lists
 Compare two lists and create a new list with the items that are in the first list but not in the second
@@ -246,7 +247,7 @@ Compare two lists and create a new list with the items that are in the first lis
 |ListDifference|List of General values|The new resulting list|
 
 
-##### Exceptions
+##### <a name="subtractlists_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="retrievedatatablecolumnintolist"></a> Retrieve data table column into list
 Convert the contents of a data table column into a list
@@ -264,7 +265,7 @@ Convert the contents of a data table column into a list
 |ColumnAsList|List of General values|The new list that holds the contents of the specified data table|
 
 
-##### Exceptions
+##### <a name="retrievedatatablecolumnintolist_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Column name doesn't exist|Indicates that the column name isn't in the data table|
@@ -285,7 +286,7 @@ Convert a JSON string to a custom object
 |JsonAsCustomObject|General value|Τhe converted custom object from the provided JSON|
 
 
-##### Exceptions
+##### <a name="convertjsontocustomobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error parsing the JSON|Indicates that there is an error parsing the specified JSON|
@@ -305,7 +306,7 @@ Convert a custom object to a JSON string
 |CustomObjectAsJson|Text value|The converted JSON from the provided custom object|
 
 
-##### Exceptions
+##### <a name="convertcustomobjecttojson_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Error parsing the custom object|Indicates that there is an error parsing the custom object|
@@ -324,7 +325,7 @@ Convert a custom object to a JSON string
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="additemtolist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="createnewlist"></a> Create new list
 Create a new empty list
@@ -338,7 +339,7 @@ Create a new empty list
 |List|List of General values|The new list|
 
 
-##### Exceptions
+##### <a name="createnewlist_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="increasevariable"></a> Increase variable
 Increase the value of a variable by a specific amount
@@ -354,7 +355,7 @@ Increase the value of a variable by a specific amount
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="increasevariable_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="decreasevariable"></a> Decrease variable
 Decrease the value of a variable by a specific amount
@@ -370,7 +371,7 @@ Decrease the value of a variable by a specific amount
 - This action doesn't produce any variables
 
 
-##### Exceptions
+##### <a name="decreasevariable_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="assign"></a> Set variable
 Set the value of a new or existing variable, create a new variable or overwrite a previously created variable
@@ -387,6 +388,6 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 |NewVar|*|The name of the variable to set|
 
 
-##### Exceptions
+##### <a name="assign_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
