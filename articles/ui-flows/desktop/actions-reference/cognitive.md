@@ -4,7 +4,7 @@ description: Cognitive Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Cognitive
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Perform cognitive operations using Google, Microsoft or IBM services
@@ -70,7 +71,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="analyzesentimentgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -98,7 +99,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Entities'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="analyzeentitiesgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -126,7 +127,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="analyzesyntaxgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -154,7 +155,7 @@ Invokes the Google Cloud Vision service named 'Label Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="labeldetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -180,7 +181,7 @@ Invokes the Google Cloud Vision service named 'Landmark Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="landmarkdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -206,7 +207,7 @@ Invokes the Google Cloud Vision service named 'Text Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="textdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -232,7 +233,7 @@ Invokes the Google Cloud Vision service named 'Logo Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="logodetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -258,7 +259,7 @@ Invokes the Google Cloud Vision service named 'Image Properties Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="imagepropertiesdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -284,7 +285,7 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="safesearchdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
@@ -317,7 +318,7 @@ Invokes the IBM service named 'Convert Document'
 |StatusCode|Numeric value|The status code of the  API call|
 
 
-##### Exceptions
+##### <a name="convertdocumentibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -350,7 +351,7 @@ Invokes the IBM service named 'Translate'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="translateibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -378,7 +379,7 @@ Invokes the IBM service named 'Identify Language'
 |StatusCode|Numeric value|The status code of the  API call|
 
 
-##### Exceptions
+##### <a name="identifylanguage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -412,7 +413,7 @@ Invokes the IBM service named 'Analyze Tone'
 |StatusCode|Numeric value|The status code of the  API call|
 
 
-##### Exceptions
+##### <a name="analyzetoneibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -447,7 +448,7 @@ Invokes the IBM service named 'Classify Image'
 |StatusCode|Numeric value|The status code of the  API call|
 
 
-##### Exceptions
+##### <a name="classifyimageibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -477,7 +478,7 @@ Invokes the Microsoft Cognitive service named 'Bing Spell Check'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="spellcheck_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -509,7 +510,7 @@ Invokes the Microsoft Cognitive service named 'Analyze Image'
 |StatusCode|Numeric value|Τhe status code returned|
 
 
-##### Exceptions
+##### <a name="analyzeimagemicrosoft_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -537,7 +538,7 @@ Invokes the Microsoft Cognitive service named 'Describe Image'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="describeimagemicrosoft_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -566,7 +567,7 @@ Invokes the Microsoft Cognitive service named 'OCR'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="ocrmicrosoft_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -593,7 +594,7 @@ Invokes the Microsoft Cognitive service named 'Tag Image'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="tagimagemicrosoft_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -620,7 +621,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="detectlanguage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -646,7 +647,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="keyphrases_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
@@ -672,7 +673,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'
 |StatusCode|Numeric value|The status code returned|
 
 
-##### Exceptions
+##### <a name="sentiment_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|

@@ -4,7 +4,7 @@ description: UI automation Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # UI automation
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Interact with desktop/windows applications
@@ -64,7 +65,7 @@ Gets a property of a window such as its title or its source text
 |WindowProperty|General value|The retrieved information of the window|
 
 
-##### Exceptions
+##### <a name="getwindowdetails_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve property of window|Indicates a problem retrieving the window property|
@@ -85,7 +86,7 @@ Gets the value of a UI element's attribute in a window
 |AttributeValue|Text value|The value of the UI element's text|
 
 
-##### Exceptions
+##### <a name="getelementdetails_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve attribute of UI element|Indicates a problem retrieving the UI element's attribute|
@@ -107,7 +108,7 @@ Retrieves the names of the selected checkboxes in a checkbox group or the state 
 |SelectedCheckboxes|List of Text values|The names of selected checkboxes inside the specified checkbox group|
 
 
-##### Exceptions
+##### <a name="getselectedcheckboxesinwindow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve checkbox state(s)|Indicates a problem retrieving the specified checkbox state(s)|
@@ -129,7 +130,7 @@ Retrieves the names of the selected radiobutton in a radiobutton group or the st
 |SelectedRadiobutton|Text value|The selected radio button inside the specified radio group|
 
 
-##### Exceptions
+##### <a name="getselectedradiobuttoninwindow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve radio button state|Indicates a problem retrieving the specified radio button state|
@@ -151,7 +152,7 @@ Extracts data from specific parts of a window in the form of single values, list
 |DataFromWindow|General value|The extracted data in the form of a datatable|
 
 
-##### Exceptions
+##### <a name="extractdatafromwindow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
@@ -170,7 +171,7 @@ Sets the focus on a text box of a window and scrolls it into view
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="focustextfield_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to set input focus in window text box|Indicates a problem setting the focus on the specified web page text field|
@@ -188,7 +189,7 @@ Fills a text box in a window with the specified text
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="populatetextfield_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to write in textbox|Indicates a problem populating the specified text field|
@@ -205,7 +206,7 @@ Presses a window button
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pressbutton_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to press button|Indicates a problem pressing the specified button|
@@ -222,7 +223,7 @@ Selects a radio button on a window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="selectradiobutton_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to select radio button UI element|Indicates a problem selecting the specified radio button UI element|
@@ -240,7 +241,7 @@ Checks or unchecks a checkbox in a window form
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setcheckboxstate_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to set checkbox state|Indicates a problem setting the specified checkbox state|
@@ -260,7 +261,7 @@ Sets or clears the selected option(s) for a drop-down list in a window form
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setdropdownlistvalueinwindow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to select the specified options in the drop down list|Indicates a problem selecting the specified options in the drop down list|
@@ -287,7 +288,7 @@ Gets a running window, for automating desktop applications
 |AutomationWindow|Window instance|The specific window instance for use with later UI Automation actions|
 
 
-##### Exceptions
+##### <a name="getwindowbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get window|Indicates a problem getting the window|
@@ -308,7 +309,7 @@ Activates and brings to the foreground a specific window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="focuswindowbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -332,7 +333,7 @@ Restores, maximizes or minimizes a specific window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setwindowstatebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -356,7 +357,7 @@ Shows a hidden window or hides a visible window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setwindowvisibilitybase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -381,7 +382,7 @@ Sets the position of a specific window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="movewindowbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -406,7 +407,7 @@ Sets the size of a specific window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="resizewindowbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -429,7 +430,7 @@ Closes a specific window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closewindowbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
@@ -450,7 +451,7 @@ Performs desktop and taskbar related operations
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="usedesktop_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Taskbar operation failed|Indicates that the taskbar operation failed|
@@ -467,7 +468,7 @@ Selects a tab from a group of tabs
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="selecttab_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Selecting tab failed|Indicates a problem selecting the specified tab|
@@ -488,7 +489,7 @@ Clicks on any UI element of a window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="click_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Click failed|Indicates that the click failed|
@@ -505,7 +506,7 @@ Selects an option in a menu of a window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="selectmenuoption_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to select option|Indicates a problem selecting the specified menu option|
@@ -530,7 +531,7 @@ Drags and drops a UI element of a window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="draganddropelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |UI element to drag wasn't found|Indicates that the UI element to drag wasn't found|
@@ -552,7 +553,7 @@ Expands or collapses a node of a tree view residing in a window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="expandcollapsetreenode_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to set tree node to the specified state|Indicates a problem setting the tree node to the specified state|

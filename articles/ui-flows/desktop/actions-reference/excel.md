@@ -4,7 +4,7 @@ description: Excel Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Excel
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Automate any Excel related activity
@@ -61,7 +62,7 @@ Runs a specified macro on the document of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="runmacro_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to run macro|Indicates a problem running the specified macro|
@@ -82,7 +83,7 @@ Retrieves an Excel document's active worksheet
 |SheetIndex|Numeric value|The index of the active worksheet|
 
 
-##### Exceptions
+##### <a name="getactiveworksheet_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve active worksheet|Indicates a problem retrieving the active worksheet|
@@ -102,7 +103,7 @@ Retrieves all worksheet names of an Excel document
 |SheetNames|List of Text values|The names of all worksheets|
 
 
-##### Exceptions
+##### <a name="getallworksheets_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve all worksheet names|Indicates a problem retrieving the names of the Excel worksheet|
@@ -122,7 +123,7 @@ Deletes a specific worksheet from an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deleteworksheet_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find worksheet|Indicates that a worksheet with the specified name could not be found|
@@ -144,7 +145,7 @@ Renames a specific worksheet of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="renameworksheet_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find worksheet|Indicates that a worksheet with the specified name could not be found|
@@ -167,7 +168,7 @@ Activate a cell in the active worksheet of an Excel instance, by providing colum
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="activatecellinexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to activate cell|Indicates a problem activating an Excel cell|
@@ -193,7 +194,7 @@ Selects a range of cells in the active worksheet of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="selectcellsfromexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to select cells|Indicates a problem selecting the specified cells|
@@ -216,7 +217,7 @@ Retrieve the selected range of cells in a structure consisting of first column, 
 |LastRowIndex|Numeric value|The numeric value of the range's last row|
 
 
-##### Exceptions
+##### <a name="getselectedcellrange_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve the selected range of cells|Indicates a problem retrieving the selected range of cells|
@@ -238,7 +239,7 @@ Copies a range of cells from the active worksheet of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="copycellsfromexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to copy cells|Indicates a problem copying the cells from the Excel document|
@@ -258,7 +259,7 @@ Pastes a range of cells to the active worksheet of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pastecellstoexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to paste cells|Indicates a problem pasting the specified cells|
@@ -276,7 +277,7 @@ Inserts a row above a selected row of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="insertrow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find row|Indicates that a row with the specified index could not be found|
@@ -295,7 +296,7 @@ Deletes a selected row from an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deleterow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find row|Indicates that a row with the specified index could not be found|
@@ -314,7 +315,7 @@ Inserts a column to the left of a selected column of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="insertcolumn_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find column|Indicates that a column with the specified name could not be found|
@@ -333,7 +334,7 @@ Deletes a selected column from an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletecolumn_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find column|Indicates that a column with the specified name could not be found|
@@ -355,7 +356,7 @@ Retrieve the first free row, given the column of the active worksheet
 |FirstFreeRowOnColumn|Numeric value|The numeric value of the given column's first fully empty row|
 
 
-##### Exceptions
+##### <a name="getfirstfreerowoncolumn_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve first free row|Indicates a problem retrieving the first free row of an Excel instance|
@@ -380,7 +381,7 @@ Launches a new Excel instance or opens an Excel document
 |ExcelInstance|Excel instance|The specific Excel instance for use with later Excel actions. This allows the user to specify which of possibly several Excel spreadsheets to access|
 
 
-##### Exceptions
+##### <a name="launchexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Excel|Indicates a problem launching an Excel instance|
@@ -401,7 +402,7 @@ Attaches to an Excel document that's already open
 |ExcelInstance|Excel instance|The Excel instance this action has attached to for use with later Excel actions|
 
 
-##### Exceptions
+##### <a name="attach_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Specified Excel document not found|Indicates that the specified Excel document could not be found|
@@ -430,7 +431,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |ExcelData|Datatable|The value of the range of cells as a DataTable|
 
 
-##### Exceptions
+##### <a name="readfromexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to read cell value(s)|Indicates a problem reading the value(s) of the specified Excel cell(s)|
@@ -450,7 +451,7 @@ Saves a previously launched Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="saveexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to save Excel document|Indicates a problem saving the Excel document|
@@ -471,7 +472,7 @@ Writes a value into a cell or a range of cells of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="writetoexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to write value to Excel|Indicates a problem writing the specified value to the Excel instance|
@@ -491,7 +492,7 @@ Closes an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closeexcel_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to save Excel document|Indicates a problem saving the Excel document|
@@ -512,7 +513,7 @@ Activates a specific worksheet of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setactiveworksheet_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't find worksheet|Indicates that a worksheet with the specified name could not be found|
@@ -532,7 +533,7 @@ Adds a new worksheet to the document of an Excel instance
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="addworksheet_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |A worksheet with the same name already exists|Indicates that the worksheet could not be added because a worksheet with the same name already exists|
@@ -554,7 +555,7 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 |FirstFreeRow|Numeric value|The numeric value of the first fully empty column. For example, if column F is the first empty column, it will be stored as '6'|
 
 
-##### Exceptions
+##### <a name="getfirstfreecolumnrow_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve first free column/row|Indicates a problem retrieving the first free column/row of an Excel instance|

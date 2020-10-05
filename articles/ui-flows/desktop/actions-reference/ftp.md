@@ -4,7 +4,7 @@ description: FTP Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # FTP
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Manage files and folders on an FTP server
@@ -57,7 +58,7 @@ This action establishes a specific connection to a remote FTP server, and stores
 |FTPConnection|FTP connection|The FTP connection|
 
 
-##### Exceptions
+##### <a name="openconnection_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Login failure error|Indicated that the login failed|
@@ -80,7 +81,7 @@ This action returns the subdirectories and files contained in the current direct
 |Files|List of FTP Files|The listed files|
 
 
-##### Exceptions
+##### <a name="listdirectory_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Listing error|Indicates that the listing of the folder couldn't be performed|
@@ -111,7 +112,7 @@ This action establishes a specific secure connection to a remote FTP server, and
 |SftpConnection|FTP connection|SFTP connection|
 
 
-##### Exceptions
+##### <a name="opensecureconnection_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Login failure error|Indicated that the login failed|
@@ -129,7 +130,7 @@ This action closes an open FTP connection
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closeconnection_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -147,7 +148,7 @@ This action sets the current working directory for an FTP connection
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="changeworkingdirectory_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -170,7 +171,7 @@ Downloads one or more files from an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="downloadfiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -193,7 +194,7 @@ Downloads one or more folders from an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="downloadfolders_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -218,7 +219,7 @@ Uploads one or more files to an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="uploadfiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -240,7 +241,7 @@ Uploads one or more folders to an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="uploadfolders_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -261,7 +262,7 @@ Deletes one or more files from an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletefiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -282,7 +283,7 @@ Renames a file that resides on an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="renamefile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Not connected error|Indicates that there is no open connection with the FTP server|
@@ -302,7 +303,7 @@ Creates a directory on an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="createdirectory_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Access denied error|Indicates that this account doesn't have access for an operation|
@@ -324,7 +325,7 @@ Deletes a directory from an FTP server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deletedirectory_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Delete directory error|Indicates that it wasn't possible to delete the directory|
@@ -350,7 +351,7 @@ Invokes the given literal FTP command on the server
 |ReplyText|Text value|The text returned by the FTP server|
 
 
-##### Exceptions
+##### <a name="invokecommand_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invoke command error|Indicates that an error occurred while invoking an FTP command|
@@ -386,7 +387,7 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 |FilesDeleted|List of Files|List of files that initially existed in the target directory and after the synchronization process were deleted.|
 
 
-##### Exceptions
+##### <a name="synchronizedirectoryaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Listing error|Indicates that the listing of the folder couldn't be performed|

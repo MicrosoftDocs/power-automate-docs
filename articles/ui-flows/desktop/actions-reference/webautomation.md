@@ -4,7 +4,7 @@ description: Web automation Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Web automation
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Start and manage web applications on browsers
@@ -69,7 +70,7 @@ Extract data from specific parts of a web page in the form of single values, lis
 |DataFromWebPage|Datatable|The extracted data in the form of a single value, list, datarow or datatable|
 
 
-##### Exceptions
+##### <a name="extractdata_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to extract data|Indicates a problem extracting data|
@@ -92,7 +93,7 @@ Get a property of a web page, such as its title or its source text
 |WebPageProperty|Text value|The details retrieved from the web page|
 
 
-##### Exceptions
+##### <a name="getdetailsofwebpage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get details of web page|Indicates a problem getting the details of the specified web page|
@@ -114,7 +115,7 @@ Get the value of an element's attribute on a web page
 |AttributeValue|Text value|The value of the web element's attribute|
 
 
-##### Exceptions
+##### <a name="getdetailsofelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve attribute of UI element on web page|Indicates a problem retrieving attribute of web page element|
@@ -136,7 +137,7 @@ Take a screenshot of the web page (or an element of the web page) currently disp
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="takescreenshotbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -162,7 +163,7 @@ Set the focus on an input element of a web page and scroll it into view
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="focusbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -187,7 +188,7 @@ Fill a text field in a web page with the specified text
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="populatetextfieldbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -210,7 +211,7 @@ Check or uncheck a check box in a web form
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setcheckboxstatebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -232,7 +233,7 @@ Select a radio button on the web page
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="selectradiobuttonbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -257,7 +258,7 @@ Set or clear the selected option for a drop-down list in a web form
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setdropdownlistvaluebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -279,7 +280,7 @@ Press a web page button
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pressbuttonbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -311,7 +312,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |InternetExplorer|Web browser instance|The Internet Explorer instance to use with web automation actions|
 
 
-##### Exceptions
+##### <a name="launchinternetexplorerbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Internet Explorer|Indicates a problem launching Internet Explorer|
@@ -342,7 +343,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Browser|Web browser instance|The Firefox instance to use with web automation actions|
 
 
-##### Exceptions
+##### <a name="launchfirefoxbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Firefox|Indicates a problem launching Firefox|
@@ -373,7 +374,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Browser|Web browser instance|The Chrome instance to use with web automation actions|
 
 
-##### Exceptions
+##### <a name="launchchromebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Chrome|Indicates a problem launching Chrome|
@@ -404,7 +405,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Browser|Web browser instance|The Edge instance to use with web automation actions|
 
 
-##### Exceptions
+##### <a name="launchedgebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Edge|Indicates a problem launching Edge|
@@ -429,7 +430,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 |NewBrowser|Web browser instance|The new web browser instance to use with web automation actions|
 
 
-##### Exceptions
+##### <a name="createnewtabbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid URL|Indicates that the provided URL was invalid|
@@ -452,7 +453,7 @@ Navigate the web browser to a new page
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="gotowebpagebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to navigate to web page|Indicates a problem navigating to the specified web page|
@@ -474,7 +475,7 @@ Click on a link or any other element of a web page
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="clickbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
@@ -497,7 +498,7 @@ Click on a link in a web page that results in downloading a file
 |DownloadedFile|File|The file on the disk where the download is saved. This is a filepath that consists of the download folder as specified above plus the name of the file as provided by the web server.|
 
 
-##### Exceptions
+##### <a name="clickdownloadlink_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to download file|Indicates a problem downloading the specified file|
@@ -521,7 +522,7 @@ Run a JavaScript function on the web page and get the returned result
 |Result|Text value|The result of the JavaScript function that run|
 
 
-##### Exceptions
+##### <a name="executejavascript_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to run JavaScript|Indicates a problem running JavaScript|
@@ -539,7 +540,7 @@ Hover the mouse over an element of a web page
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="hoveroverelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hover over element|Indicates a problem hovering over the specified element|
@@ -556,7 +557,7 @@ Close a web browser window
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closewebbrowser_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to close the web browser|Indicates a problem closing the web browser|

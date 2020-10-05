@@ -4,7 +4,7 @@ description: Wait Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,9 +15,10 @@ search.audienceType:
 ---
 
 # Wait
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Suspends the execution of the flow for a specified amount of seconds
+
 
 |<!-- --> |
 |-----|
@@ -45,7 +46,7 @@ Suspend the execution of the automation until a file is created or deleted
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitforfileaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="waitprocessaction"></a> Wait for process
 Suspends the execution until a process starts or stops
@@ -60,7 +61,7 @@ Suspends the execution until a process starts or stops
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitprocessaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't retrieve list of processes|Indicates a problem retrieving the list of processes|
@@ -78,7 +79,7 @@ Suspend the execution of the automation until a service is running, paused or st
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitforserviceaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
@@ -115,7 +116,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
-##### Exceptions
+##### <a name="waittextonscreenaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
@@ -138,7 +139,7 @@ Suspend the flow until a specific piece of text or web page element appears or d
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitforwebpagecontentaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="waitforwindowcontentaction"></a> Wait for window content
 Suspends the execution of the automation until a specific piece of text or UI element appears or disappears from a Window
@@ -157,7 +158,7 @@ Suspends the execution of the automation until a specific piece of text or UI el
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitforwindowcontentaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="waitforimageaction"></a> Wait for image
 This action waits unti a specific image appears on the screen or on the foreground window
@@ -184,7 +185,7 @@ This action waits unti a specific image appears on the screen or on the foregrou
 |Y|Numeric value|The Y coordinate of the point where the text was found on the screen. If the text has been search in the foreground window this is relative to the top left corner of the window.|
 
 
-##### Exceptions
+##### <a name="waitforimageaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
@@ -208,7 +209,7 @@ Suspends the execution or the process until a specific window opens, closes, get
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitforwindowaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't focus window|Indicates a problem focusing the specified window|
@@ -228,7 +229,7 @@ Suspends the execution of the flow until the mouse pointer changes, usually to o
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitformouseaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="wait"></a> Wait
 Suspends the execution of the flow for a specified amount of seconds
@@ -242,6 +243,6 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="wait_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

@@ -4,7 +4,7 @@ description: Database Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Database
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to databases and execute SQL statements
@@ -40,7 +41,7 @@ Open a new connection to a database
 |SQLConnection|SQL connection|A handle for the new SQL connection|
 
 
-##### Exceptions
+##### <a name="connect_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't connect to data source|Indicates a problem connecting to the data source|
@@ -65,7 +66,7 @@ Connect to a database and execute a SQL statement
 |QueryResult|Datatable|The result from the database in the form of a data table, with rows and columns|
 
 
-##### Exceptions
+##### <a name="executesqlstatement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't connect to data source|Indicates a problem connecting to the data source|
@@ -84,6 +85,6 @@ Close an open connection to a database
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="close_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

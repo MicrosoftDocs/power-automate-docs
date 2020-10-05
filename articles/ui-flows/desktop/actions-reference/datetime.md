@@ -4,7 +4,7 @@ description: Datetime Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Datetime
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Get the date and time and perform time related functions
@@ -42,7 +43,7 @@ Adds (or subtracts) a specific number of seconds, minutes, hours or days to a da
 |ResultedDate|Datetime|The new, altered datetime value|
 
 
-##### Exceptions
+##### <a name="add_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="subtract"></a> Subtract dates
 Finds the time difference between two given dates in days, hours, minutes, or seconds
@@ -61,7 +62,7 @@ Finds the time difference between two given dates in days, hours, minutes, or se
 |TimeDifference|Numeric value|The difference in time as a numeric value|
 
 
-##### Exceptions
+##### <a name="subtract_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="getcurrentdatetime"></a> Get current date and time
 Retrieves the current date or the current date and time
@@ -80,7 +81,7 @@ Retrieves the current date or the current date and time
 |CurrentDateTime|Datetime|The current datetime value|
 
 
-##### Exceptions
+##### <a name="getcurrentdatetime_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get current date and time|Indicates that there was a problem retrieving the current date and time|

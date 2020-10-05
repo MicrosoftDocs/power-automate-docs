@@ -4,7 +4,7 @@ description: Email Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Email
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Automate sending, receiving and managing emails through imap/smtp
@@ -54,7 +55,7 @@ Retrieves email messages from an IMAP server
 |RetrievedEmails|List of Mail Messages|The retrieved emails for later processing as a list of mail message objects|
 
 
-##### Exceptions
+##### <a name="retrieveemails_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to connect to IMAP server|Indicates that there was a problem connecting to the IMAP server|
@@ -83,7 +84,7 @@ Moves, deletes or marks as unread an email (or a list of emails) retrieved by a 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="processemails_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to connect to IMAP server|Indicates that there was a problem connecting to the IMAP server|
@@ -117,7 +118,7 @@ Creates and sends a new email message
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendemail_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid email address|Indicates that the specified email address is invalid|

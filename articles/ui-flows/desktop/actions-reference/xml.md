@@ -4,7 +4,7 @@ description: XML Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # XML
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Manage and manipulate XML files
@@ -48,7 +49,7 @@ Read the contents of an XML file into a variable
 |XmlDocument|XML node|The variable that holds the read XML document|
 
 
-##### Exceptions
+##### <a name="readfromfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Directory not found|Indicates that the directory doesn't exist|
@@ -72,7 +73,7 @@ Write the contents of an XML node variable into a file
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="writexmltofile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid directory specified|Indicates that the specified directory is invalid|
@@ -96,7 +97,7 @@ Extract values from an XML document based on the provided XPath query
 |XPathResults|List of XML nodes|The extracted node(s) as a list of XML nodes|
 
 
-##### Exceptions
+##### <a name="executexpathquery_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XML document provided|Indicates that the XML document provided is invalid|
@@ -123,7 +124,7 @@ Get the value of an attribute of an XML element
 |XmlAttributeValue|Text value|The retrieved value of the XML attribute|
 
 
-##### Exceptions
+##### <a name="getxmlelementattribute_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -146,7 +147,7 @@ Set the value of an attribute of an XML element
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setelementattribute_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -167,7 +168,7 @@ Remove an attribute from an XML element
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="removeelementattribute_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -195,7 +196,7 @@ Get the value of an XML element
 |XmlElementValue|Text value|The XML element value|
 
 
-##### Exceptions
+##### <a name="getxmlelementvalue_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -216,7 +217,7 @@ Set the value of an XML element
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setelementvalue_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -237,7 +238,7 @@ Insert a new XML element into an XML document
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="insertelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|
@@ -257,7 +258,7 @@ Remove one or more XML elements from an XML document
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="removeelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid XPath expression provided|Indicates that the XPath expression provided is invalid|

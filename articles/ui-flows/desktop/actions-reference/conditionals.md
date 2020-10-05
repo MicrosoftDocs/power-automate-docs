@@ -4,7 +4,7 @@ description: Conditionals Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,9 +15,10 @@ search.audienceType:
 ---
 
 # Conditionals
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Marks the beginning of a block of actions that is run if the condition specified in this statement is met
+
 
 |<!-- --> |
 |-----|
@@ -50,7 +51,7 @@ Marks the beginning of a conditional block of actions depending on whether a fil
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="iffileaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not
@@ -65,7 +66,7 @@ Mark the beginning of a conditional block of actions depending on whether a fold
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="iffolderexistsaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="ifprocessaction"></a> If process
 Marks the beginning of a conditional block of actions depending on whether a process is running or not
@@ -80,7 +81,7 @@ Marks the beginning of a conditional block of actions depending on whether a pro
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifprocessaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't retrieve list of processes|Indicates a problem retrieving the list of processes|
@@ -98,7 +99,7 @@ Marks the beginning of a conditional block of actions depending on whether a ser
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifserviceaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
@@ -135,12 +136,12 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
-##### Exceptions
+##### <a name="iftextonscreenaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't check if text exists in non-interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
+|Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
-|Failed to analyze text with OCR|Indicates an error occurred while trying to analyze the text using OCR|
+|Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
 
 ### <a name="ifwebpagecontainsaction"></a> If web page contains
@@ -158,7 +159,7 @@ Mark the beginning of a conditional block of actions, depending on whether a spe
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifwebpagecontainsaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="ifwindowcontainsaction"></a> If window contains
 Marks the beginning of a conditional block of actions depending on whether a specific piece of text or UI element exists in a window
@@ -177,7 +178,7 @@ Marks the beginning of a conditional block of actions depending on whether a spe
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifwindowcontainsaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="ifimageaction"></a> If image
 This action marks the beginning of a conditional block of actions depending on whether a selected image is found on the screen or not
@@ -185,7 +186,7 @@ This action marks the beginning of a conditional block of actions depending on w
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
+|If image|N/A|exists, doesn't exist|exists|Whether to check for the existance or absense of the selected image|
 |Image to check|No|List of Image||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
@@ -200,10 +201,10 @@ This action marks the beginning of a conditional block of actions depending on w
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifimageaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't check image in non-interactive mode|Indicates that an image can't be identified in non-interactive mode|
+|Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 
 ### <a name="ifwindowaction"></a> If window
@@ -223,7 +224,7 @@ This action marks the beginning of a conditional block of actions depending on w
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="ifwindowaction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="case"></a> Case
 An expression that, if met, a block of actions associated with that particular case runs
@@ -238,7 +239,7 @@ An expression that, if met, a block of actions associated with that particular c
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="case_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="casedefault"></a> Default case
 A block of actions that is run, if no case expression has been met in the switch body
@@ -249,7 +250,7 @@ A block of actions that is run, if no case expression has been met in the switch
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="casedefault_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="else"></a> Else
 Marks the beginning of a block of actions that ran if the condition specified in the preceding 'If' statements aren't met
@@ -260,7 +261,7 @@ Marks the beginning of a block of actions that ran if the condition specified in
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="else_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="elseif"></a> Else if
 Marks the beginning of a block of actions that ran if the conditions specified in the preceding 'If' statements aren't met, but the condition specified in this statement is met
@@ -276,7 +277,7 @@ Marks the beginning of a block of actions that ran if the conditions specified i
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="elseif_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="if"></a> If
 Marks the beginning of a block of actions that is run if the condition specified in this statement is met
@@ -292,7 +293,7 @@ Marks the beginning of a block of actions that is run if the condition specified
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="if_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="switch"></a> Switch
 Dispatches execution to different parts of the switch body based on the value of the expression
@@ -306,6 +307,6 @@ Dispatches execution to different parts of the switch body based on the value of
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="switch_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

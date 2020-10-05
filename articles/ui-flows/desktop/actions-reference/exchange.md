@@ -4,7 +4,7 @@ description: Exchange Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Exchange
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Automate sending, receiving, and managing emails through Exchange
@@ -49,7 +50,7 @@ Open a new connection to an Exchange server
 |ExchangeConnection|Exchange connection|The specific Exchange connection for use with later Exchange actions|
 
 
-##### Exceptions
+##### <a name="connecttoexchangeserver_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to connect to the Exchange server|Indicates a problem connecting to the Exchange server|
@@ -82,7 +83,7 @@ Retrieve email messages from the specified Exchange server
 |RetrievedEmails|List of Exchange mail messages|The retrieved email messages for later processing as a list of Exchange mail messages objects|
 
 
-##### Exceptions
+##### <a name="retrieveexchangemessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to save attachments|Indicates a problem saving the attachments|
@@ -110,7 +111,7 @@ Create and send a new email message
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendmessage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
@@ -135,7 +136,7 @@ Move, delete or mark as unread an email message (or a list of email messages)
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="processexchangemessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Specified mail-folder doesn't exist|Indicates that the specified mail folder doesn't exist|

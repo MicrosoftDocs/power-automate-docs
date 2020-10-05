@@ -4,7 +4,7 @@ description: Cryptography Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Cryptography
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Encrypt and decrypt text and files
@@ -53,7 +54,7 @@ Encrypt a string with AES, using a key and a specified encoding format
 |InitializationVector|Text value|The randomly generated initialization vector value for later processing|
 
 
-##### Exceptions
+##### <a name="encrypttextaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to encrypt text|Indicates that an error occurred during encryption|
@@ -81,7 +82,7 @@ Decrypt a string with AES based on a specified key and an encoding format
 |DecryptedText|Text value|The decrypted text for later processing|
 
 
-##### Exceptions
+##### <a name="decrypttextaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to decrypt text|Indicates that an error occurred during decryption|
@@ -109,7 +110,7 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 |InitializationVector|Text value|The randomly generated initialization vector value for later processing|
 
 
-##### Exceptions
+##### <a name="encryptfromfileaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
@@ -140,7 +141,7 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 |DecryptedFile|File|The decrypted file for later processing|
 
 
-##### Exceptions
+##### <a name="decrypttofileaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to decrypt and store the contents to a file|Indicates that an error occurred while decrypting or storing the contents to the specified file|
@@ -162,7 +163,7 @@ Hash a string, using a specified algorithm and an encoding format
 |HashedText|Text value|The hashed text for later processing|
 
 
-##### Exceptions
+##### <a name="hashtext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hash text|Indicates that an error occurred during hashing|
@@ -184,7 +185,7 @@ Hash the contents of a file, using a specified algorithm and an encoding format
 |HashedText|Text value|The hashed text for later processing|
 
 
-##### Exceptions
+##### <a name="hashfromfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
@@ -208,7 +209,7 @@ Hash a string with a key, using a specified algorithm and an encoding format
 |HashedText|Text value|The hashed text for later processing|
 
 
-##### Exceptions
+##### <a name="hashtextwithkey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hash text with key|Indicates that an error occurred during hashing with key|
@@ -231,7 +232,7 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 |HashedText|Text value|The hashed text for later processing|
 
 
-##### Exceptions
+##### <a name="hashfromfilewithkey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|

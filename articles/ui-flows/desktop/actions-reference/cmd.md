@@ -4,7 +4,7 @@ description: CMD session Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # CMD session
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Automate a CMD session
@@ -42,7 +43,7 @@ Open a new CMD session
 |CmdSession|CMD session|The CMD session for use with later CMD actions|
 
 
-##### Exceptions
+##### <a name="open_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't start command session|Indicates a problem initiating a CMD session|
@@ -65,7 +66,7 @@ Read the output of a CMD session
 |CmdError|Text value|The CMD session's standard error|
 
 
-##### Exceptions
+##### <a name="readfromcmdsession_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |CMD session is closed|Indicates that the CMD session specified is closed|
@@ -84,7 +85,7 @@ Execute a command on an open CMD session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="write_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't write to CMD session|Indicates an error writing to a CMD session|
@@ -106,7 +107,7 @@ Wait for a specific text on a previously opened CMD session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="waitfortext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |CMD session is closed|Indicates that the CMD session specified is closed|
@@ -124,6 +125,6 @@ Close a previously opened CMD session
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="close_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

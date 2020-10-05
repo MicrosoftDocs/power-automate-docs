@@ -4,7 +4,7 @@ description: Message boxes Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Message boxes
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Interact with users and request input through message boxes
@@ -50,7 +51,7 @@ Displays a message box
 |ButtonPressed|Text value|The text of the button pressed|
 
 
-##### Exceptions
+##### <a name="showmessagedialog_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display message box|Indicates a problem displaying the message dialog|
@@ -76,7 +77,7 @@ Displays a dialog box that prompts the user to enter text
 |ButtonPressed|Text value|The text of the button pressed. The user will automatically be given the choice of OK or Cancel|
 
 
-##### Exceptions
+##### <a name="inputdialog_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display input dialog|Indicates a problem displaying the input dialog|
@@ -105,7 +106,7 @@ Displays a dialog box that prompts the user to enter a date or date range
 |ButtonPressed|Text value|The text of the button pressed by the user. The user will automatically be given the choice of OK or Cancel|
 
 
-##### Exceptions
+##### <a name="selectdatedialog_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display select date dialog|Indicates a problem displaying the select date dialog|
@@ -137,7 +138,7 @@ Displays a dialog box with options that lets the user select from a list
 |ButtonPressed|Text value|The name of the button pressed by the user (OK or Cancel)|
 
 
-##### Exceptions
+##### <a name="selectfromlistdialog_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display select dialog|Indicates a problem displaying the select dialog|
@@ -165,7 +166,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |ButtonPressed|Text value|The text of the button pressed. The user will automatically be given the choice of Open or Cancel|
 
 
-##### Exceptions
+##### <a name="selectfiledialog_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display select file dialog|Indicates a problem displaying the select file dialog|
@@ -189,7 +190,7 @@ Displays the select folder dialog and prompts the user to select a folder
 |ButtonPressed|Text value|The text of the button pressed. The user will automatically be given the choice of OK or Cancel|
 
 
-##### Exceptions
+##### <a name="selectfolder_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to display select folder dialog|Indicates a problem displaying the select folder dialog|

@@ -4,7 +4,7 @@ description: Clipboard Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Clipboard
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Set or get data from the clipboard
@@ -37,7 +38,7 @@ Gets clipboard text
 |ClipboardText|Text value|The text stored in the clipboard|
 
 
-##### Exceptions
+##### <a name="gettext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't retrieve clipboard contents|Indicates a problem retrieving clipboard contents|
@@ -54,7 +55,7 @@ Sets clipboard text
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="settext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Can't set clipboard contents|Indicates a problem setting clipboard contents|
@@ -68,6 +69,6 @@ Clears clipboard contents
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="clear_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

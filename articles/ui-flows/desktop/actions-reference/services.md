@@ -4,7 +4,7 @@ description: Services Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Services
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Control the workstation's installed services
@@ -38,7 +39,7 @@ Start a stopped Windows service
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="start_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
@@ -57,7 +58,7 @@ Stop a running Windows service
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="stop_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
@@ -76,7 +77,7 @@ Pause a running Windows service
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pause_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
@@ -95,7 +96,7 @@ Resume a paused Windows service
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="resume_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Service not found|Indicates that the service can't be found|
