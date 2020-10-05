@@ -26,20 +26,18 @@ search.audienceType:
 <!--note from editor: you don't need to include the plus sign when you refer to UI elements.-->
 
 
-![New flow button](\media\create-flow-console\console.png)
+   ![New flow button](\media\create-flow-console\console.png)
 
-2. Enter a name for the UI flow, and click **OK**.
+1. Enter a name for the UI flow, and click **OK**.
 
-![build flow dialog box](\media\create-flow-console\build-flow-dialog.png)
+   ![build flow dialog box](\media\create-flow-console\build-flow-dialog.png)
 
-3. Create the flow in the **flow designer** and press **Ctrl+S** to save the flow. Close the flow designer and the flow will appear in the console.
+1. Create the flow in the **flow designer** and press **Ctrl+S** to save the flow. Close the flow designer and the flow will appear in the console.
 
-![console flow](\media\create-flow-console\console-flow.png)
+   ![console flow](\media\create-flow-console\console-flow.png)
 
 
 ## Design a flow in Power Automate and Power Automate Desktop
-
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Create a new folder on the desktop, and name it **Countries**.
 
