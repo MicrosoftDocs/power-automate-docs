@@ -73,7 +73,7 @@ These are the limits for a single flow run.
 >Individual connectors may have their own limits as well.
 
 ## Looping and debatching limits
-These are limits for a single flow run. For daily limits, refer to the [requests limits and allocations](https://aka.ms/platformlimits).
+These are limits for a single flow run. 
 
 | Name | Limit | Notes |
 | --- | --- | --- |
@@ -83,25 +83,19 @@ These are limits for a single flow run. For daily limits, refer to the [requests
 | SplitOn items - Office 365 and Free licenses |5,000 ||
 | SplitOn items - Plan 1, Plan 2, Per User, and Per Flow licenses |100,000 ||
 | Apply to each Parallelism |50 |By default, loops run in sequence (essentially, parallelism is 1). You can configure up to 50 in parallel. |
-| Actions executions per 5 minutes – Free, Office365, Plan 1 licenses, and trials | 2,000 | Also, you can distribute a workload across more than one flow as needed. |
-|Actions executions per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|100,000|Also, you can distribute a workload across more than one flow as needed.|
 | Actions concurrent outgoing calls – Free, Office 365, Plan 1 licenses and trials | ~500 | Reduce the number of concurrent requests or reduce the duration as needed. |
 | Actions concurrent outgoing calls – Plan 2, Per User, and Per Flow licenses | ~2,500 | Reduce the number of concurrent requests or reduce the duration as needed. | 
 
-## Data consumption limits
-These limits refer to the amount of storage used to store the run history of the flow.  These are the maximum limits allowed for storage by the plan.
+## Daily limits
+Daily limits are applied on a sliding 24 hour window. Data consumption limits refer to the amount of storage used to store the run history of the flow.  These are the maximum limits allowed for storage by the plan. For more information about Power Platform daily limits, refer to [requests limits and allocations](https://aka.ms/platformlimits).
 
-| **User licenses**                                        |    **Data consumption / 24 hours**   |
-|----------------------------------------------------------|-------------------------------------------------|
-| Dynamics 365 Enterprise applications<sup>1</sup>         | 10GB                                            |
-| Dynamics 365 Professional <sup>2</sup>                   | 10GB                                             |
-| Dynamics 365 Team Members                                | 10GB                                             |
-| Power Apps per user plan                                 | 10GB                                             |
-| Power Automate per user plan                                 | 10GB                                             |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 1GB                                     |
-| Application user / Non-interactive users                 |  1GB            |                                
-| Power Apps per app plan                                  |  1GB            |                        
-| Power Automate Per flow Plan                             |  50GB            |                                
+| **User licenses**                                        |    **Actions / 24 hours**                       |    **Data consumption / 24 hours**   |
+|----------------------------------------------------------|-------------------------------------------------|--------------------------------------|
+| Power Automate Per Flow plan                             | 15,000 per Per Flow licensed flow               | 50GB                                 |
+| Dynamics 365 Enterprise applications<sup>1</sup>         | 20,000 across all flows owned by a single user  | 10GB                                 |
+| Dynamics 365 Professional <sup>2</sup>                   | 10,000 across all flows owned by a single user  | 10GB                                 |
+| Dynamics 365 Team Members, Power Apps Per User, Power Automate Per User plans | 5,000 across all flows owned by a single user   | 10GB            | 
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>, Power Apps Per App plans, Application user / Non-interactive users | 2,000 across all flows owned by a single user | 1GB                        |
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
@@ -119,8 +113,6 @@ These limits refer to the amount of storage used to store the run history of the
 |Runtime endpoint: Number of invoke calls per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|45,000||
 |Amount of throughput allowed per 5 minutes – Free, Office 365, Plan 1 licenses and trials|600 MB||
 |Amount of throughput allowed per 5 minutes – Paid Plan 2, Per User, and Per Flow licenses|6 GB||
-|Amount of content flows are allowed to produce (actions inputs/outputs) per hour - Free, Office 365, Plan 1, Plan 2, Per User, and Per Flow licenses|200 GB||
-
 
 ## Flow limits
 These are limits for flows.
