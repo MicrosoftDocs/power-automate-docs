@@ -564,7 +564,7 @@ example of the display is below:
 
 - **What about synchronous workflows?**
 
-  We've seen feedback that synchronous workflows are a significant contributor to end user performance issues. Can your objective, or parts of the background workflow can be built using a Power Automate flow? If you can split actions out as asynchronous, the user can continue their activity while Power Automate continues to ensure completion of the action.
+  We've seen feedback that synchronous workflows are a significant contributor to end user performance issues. We recommend that you evaluate whether your objective, or parts of the background workflow can be built using a Power Automate flow. If you can split actions out as asynchronous, the user can continue their activity while Power Automate continues to ensure completion of the action.
 
 - **Using Power Automate, will my data stay within region (that is, the same region as my Dynamics 365 or Common Data Service environment)?**  
 
