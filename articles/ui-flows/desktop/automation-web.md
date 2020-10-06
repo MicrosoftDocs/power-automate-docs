@@ -78,6 +78,10 @@ To extract larger amounts of data, use the **Extract data from web page** action
 
 ![Extracting data table from web page](.\media\web-automation\extracting-data-table-from-web-page.png)
 
+
+You'll find the list of web automation actions available in the [Actions reference](actions-reference/webautomation.md).
+
+
 ## Interacting with the web and web services
 
 It is possible to communicate directly with web resources, such as web pages, files, and APIs, without using a web browser.
@@ -97,3 +101,6 @@ Use the **Invoke web service** action to access web APIs:
 ![The Invoke web service action](./media/interacting-web-services/invoke-web-service-action.png)
 
 A variety of methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
+
+
+You'll find the list of web related actions available in the [Actions reference](actions-reference/web.md).
