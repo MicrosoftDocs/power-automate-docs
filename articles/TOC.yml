@@ -190,45 +190,31 @@
       - name: Debugging a flow
         href: ./ui-flows/desktop/debugging-flow.md
       - name: Manage the Variables pane
-        items:
-        - name: Manage the variables pane
-          href: ./ui-flows/desktop/manage-variables.md
-        - name: Renaming a variable
-          href: ./ui-flows/desktop/renaming-variable.md
-        - name: Input and output variables
-          href: ./ui-flows/desktop/variables-inputs-outputs.md
-        - name: Variable data types
-          href: ./ui-flows/desktop/variable-data-types.md
-        - name: Variables datatype properties
-          href: ./ui-flows/desktop/datatype-properties.md
-        - name: Variable manipulation and the % notation
-          href: ./ui-flows/desktop/variable-manipulation.md
+        href: ./ui-flows/desktop/manage-variables.md
+      - name: Variable datatypes
+        href: ./ui-flows/desktop/variable-data-types.md
+      - name: Variables datatype properties
+        href: ./ui-flows/desktop/datatype-properties.md
+      - name: Variable manipulation and the % notation
+        href: ./ui-flows/desktop/variable-manipulation.md
       - name: UI elements
         href: ./ui-flows/desktop/ui-elements.md
       - name: Images
         href: ./ui-flows/desktop/images.md
-      - name: Errors
+      - name: Managing Errors
         href: ./ui-flows/desktop/errors.md
       - name: Finding usages within flows
         href: ./ui-flows/desktop/finding-usages.md
       - name: Recording in a Power Automate Desktop flow
         href: ./ui-flows/desktop/recording-flow.md
-      - name: Implementing basic logic in flows
-        items:
-        - name: Making use of loops
-          href: ./ui-flows/desktop/use-loops.md
-        - name: Making use of conditionals
-          href: ./ui-flows/desktop/use-conditionals.md
+      - name: Making use of loops
+        href: ./ui-flows/desktop/use-loops.md
+      - name: Making use of conditionals
+        href: ./ui-flows/desktop/use-conditionals.md
       - name: Automation in the web
-        items:
-        - name: Automation in the web
-          href: ./ui-flows/desktop/automation-web.md
-        - name: Interacting with web and APIs
-          href: ./ui-flows/desktop/interacting-web-services.md
-        - name: Using browsers and managing extensions
-          href: ./ui-flows/desktop/using-browsers.md
-        - name: Using the actual Internet Explorer vs the automation browser
-          href: ./ui-flows/desktop/internet-explorer-vs-automation-browser.md
+        href: ./ui-flows/desktop/automation-web.md
+      - name: Using browsers and managing extensions
+        href: ./ui-flows/desktop/using-browsers.md
       - name: Desktop automation
         href: ./ui-flows/desktop/desktop-automation.md
     - name: Power Automate Desktop actions reference

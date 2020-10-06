@@ -77,3 +77,23 @@ To extract larger amounts of data, use the **Extract data from web page** action
  Note that any lists or tables of data will be automatically identified after two of their elements are designated for extraction:
 
 ![Extracting data table from web page](.\media\web-automation\extracting-data-table-from-web-page.png)
+
+## Interacting with the web and web services
+
+It is possible to communicate directly with web resources, such as web pages, files, and APIs, without using a web browser.
+
+## Downloading web resources
+
+Use the **Download from web** action to directly download web page content, or files on the web:
+
+![The Download from web action](./media/interacting-web-services/download-from-web-action.png)
+
+Both the **GET** and **POST** methods may be used with this action; files can be downloaded directly to the disk, while web page contents are saved into a variable.
+
+## Accessing web APIs
+
+Use the **Invoke web service** action to access web APIs:
+
+![The Invoke web service action](./media/interacting-web-services/invoke-web-service-action.png)
+
+A variety of methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
