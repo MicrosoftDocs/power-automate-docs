@@ -1,6 +1,6 @@
 ---
-title: Making use of loops | Microsoft Docs
-description: Making use of loops
+title: Using loops | Microsoft Docs
+description: Using loops
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Making use of loops
+# Using loops
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

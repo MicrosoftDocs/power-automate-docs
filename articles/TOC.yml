@@ -207,9 +207,9 @@
         href: ./ui-flows/desktop/finding-usages.md
       - name: Recording in a Power Automate Desktop flow
         href: ./ui-flows/desktop/recording-flow.md
-      - name: Making use of loops
+      - name: Using loops
         href: ./ui-flows/desktop/use-loops.md
-      - name: Making use of conditionals
+      - name: Using conditionals
         href: ./ui-flows/desktop/use-conditionals.md
       - name: Automation in the web
         href: ./ui-flows/desktop/automation-web.md

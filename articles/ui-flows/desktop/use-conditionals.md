@@ -1,6 +1,6 @@
 ---
-title: Making use of conditionals | Microsoft Docs
-description: Making use of conditionals
+title: Using conditionals | Microsoft Docs
+description: Using conditionals
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Making use of conditionals
+# Using conditionals
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
