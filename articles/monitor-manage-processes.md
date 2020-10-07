@@ -29,27 +29,27 @@ To monitor and manage processes, you must locate the process, evaluate the statu
   
 <a name="BKMK_MonitorAsyncWorkflows"></a>   
 ## Monitoring background workflows  
- Background workflows generate System Job records to track their status. You can access information about these system jobs in several places within the application:  
+Background workflows generate System Job records to track their status. You can access information about these system jobs in several places within the application:  
   
- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > System Jobs**  
- This will include all types of system jobs. You will need to filter records to those where **System Job Type** is **Workflow**.  
+**[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > System Jobs**  
+This will include all types of system jobs. You will need to filter records to those where **System Job Type** is **Workflow**.  
   
- **From the background workflow process**  
- Open the background workflow definition and go to the **Process Session** tab. This will show only the system jobs for this background workflow.  
+**From the background workflow process**  
+Open the background workflow definition and go to the **Process Session** tab. This will show only the system jobs for this background workflow.  
   
- **From the record**  
- You can edit the entity form so that the navigation will include the **Background Processes** relationship. This will show all the system jobs that have been started in the context of the record.  
+**From the record**  
+You can edit the entity form so that the navigation will include the **Background Processes** relationship. This will show all the system jobs that have been started in the context of the record.  
   
 > [!NOTE]
->  If an asynchronous system job (workflow) fails several times consecutively, the system starts to postpone execution of that job for longer and longer time intervals so that the administrator or app maker can investigate and resolve the issue. Once the job starts succeeding again, it will resume executing normally.  
+> If an asynchronous system job (workflow) fails several times consecutively, the system starts to postpone execution of that job for longer and longer time intervals so that the administrator or app maker can investigate and resolve the issue. Once the job starts succeeding again, it will resume executing normally.  
   
 <a name="BKMK_ActionsOnRunningWorkflows"></a>   
 ### Actions on running background workflows  
- While a background workflow is running, you have options to **Cancel**, **Pause**, or **Postpone** the workflow. If you have previously paused a workflow, you can **Resume** it.  
+While a background workflow is running, you have options to **Cancel**, **Pause**, or **Postpone** the workflow. If you have previously paused a workflow, you can **Resume** it.  
   
 <a name="BKMK_StatusOfWorkflowProcesses"></a>   
 ## Status of background workflow processes  
- When you view a list of background workflow processes, any individual process can have one of the following **State** and **Status Reason** values:  
+When you view a list of background workflow processes, any individual process can have one of the following **State** and **Status Reason** values:  
   
 |State|Status Reason|  
 |-----------|-------------------|  
@@ -88,5 +88,5 @@ The **Immediately** option is enabled when the following conditions are true:
 The synchronous bulk delete will only delete AsyncOperation records in the completed state. A maximum of one million records are processed for each invocation. You will need to execute the job multiple times if your environment has more than one million records to remove.  
   
 ## Next steps   
- [Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
+[Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
 
