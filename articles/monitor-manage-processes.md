@@ -1,6 +1,6 @@
 ---
 title: "Monitor and manage background workflow processes with Power Apps | MicrosoftDocs"
-ms.custom: ""
+ms.custom: "To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
 ms.date: 07/27/2020
 ms.reviewer: ""
 ms.service: flow
@@ -31,14 +31,17 @@ To monitor and manage processes, you must locate the process, evaluate the statu
 ## Monitoring background workflows  
 Background workflows generate System Job records to track their status. You can access information about these system jobs in several places within the application:  
   
-**[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > System Jobs**  
-This will include all types of system jobs. You will need to filter records to those where **System Job Type** is **Workflow**.  
+- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **System Jobs**  
+
+  This will include all types of system jobs. You will need to filter records to those where **System Job Type** is **Workflow**.  
   
-**From the background workflow process**  
-Open the background workflow definition and go to the **Process Session** tab. This will show only the system jobs for this background workflow.  
+- **From the background workflow process**  
+
+  Open the background workflow definition and go to the **Process Session** tab. This will show only the system jobs for this background workflow.  
   
-**From the record**  
-You can edit the entity form so that the navigation will include the **Background Processes** relationship. This will show all the system jobs that have been started in the context of the record.  
+- **From the record**  
+
+  You can edit the entity form so that the navigation will include the **Background Processes** relationship. This will show all the system jobs that have been started in the context of the record.  
   
 > [!NOTE]
 > If an asynchronous system job (workflow) fails several times consecutively, the system starts to postpone execution of that job for longer and longer time intervals so that the administrator or app maker can investigate and resolve the issue. Once the job starts succeeding again, it will resume executing normally.  
@@ -60,21 +63,25 @@ When you view a list of background workflow processes, any individual process ca
 
 ## Deleting process log records
 
-If your organization uses background workflows or business process flows that run frequently, the amount of process log records can become large enough to cause performance issues as well as consume significant amounts of storage. To delete process log records not removed sufficiently by one of the standard bulk record deletion jobs you can use the bulk delete system jobs feature to create a custom bulk record deletion job.
+If your organization uses background workflows or business process flows that run frequently, the amount of process log records can become large enough to cause performance issues as well as consume significant amounts of storage. To delete process log records not removed sufficiently by one of the standard bulk record deletion jobs, you can use the bulk delete system jobs feature to create a custom bulk record deletion job.
 
 1. Go to **Settings** > **Data Management** > **Bulk Record Deletion**.
 2. From the **Bulk Record Deletion** area, select **New**. 
 3. On the **Bulk Deletion Wizard** start page, select **Next**.
 4. In the **Look for** list, select **System Jobs**.
-5. The following conditions are used to create a bulk record deletion job to delete process log records. 
+5. The following conditions are used to create a bulk record deletion job to delete process log records: 
    - **System Job Type Equals Workflow**. This targets background workflow records. 
    - **Status Equals Completed**. Only completed workflows are valid to run the job against.
    - **Status Reason Equals Succeeded**. Delete successful, canceled, and failed jobs.
    - **Completed On Older than X Days 30**. Use the Completed On field to only delete background workflow process log records that are older than 30 days.
-   
+
+
+
+
+
    ![custom-bulk-record-deletion.png](media/custom-bulk-record-deletion.png)
  
-6. Click **Next**.
+6. Select **Next**.
 7. Set the frequency that your bulk delete job will run. You can schedule your job to run at set intervals or create a one-time bulk deletion job [Using the immediately option](#using-the-immediately-option). In this example, a recurring job is set to run on May 21, 2018 and every 30 days thereafter. 
 
    ![Bulk record deletion options](media/custom-bulk-record-delete-options.png)
