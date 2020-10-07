@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Datatype properties
+# Variables datatype properties
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

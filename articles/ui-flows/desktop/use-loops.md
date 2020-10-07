@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Using loops
+# Use loops
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

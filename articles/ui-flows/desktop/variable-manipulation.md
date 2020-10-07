@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Variable manipulation and the % notation
+# Use variables and the % notation
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

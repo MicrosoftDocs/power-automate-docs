@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage the Variables pane
+# Manage variables and the variables pane
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

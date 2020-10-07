@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Actions and the action pane
+# Configure actions and the actions pane
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

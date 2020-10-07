@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Recording in a desktop flow
+# Record flows in Power Automate Desktop
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

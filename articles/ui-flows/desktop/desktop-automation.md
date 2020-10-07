@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Desktop automation
+# Automate desktop flows
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

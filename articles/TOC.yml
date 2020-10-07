@@ -195,13 +195,13 @@
         href: ./ui-flows/desktop/variable-data-types.md
       - name: Variables datatype properties
         href: ./ui-flows/desktop/datatype-properties.md
-      - name: Control variables and the % notation
+      - name: Use variables and the % notation
         href: ./ui-flows/desktop/variable-manipulation.md
       - name: Automate using UI elements
         href: ./ui-flows/desktop/ui-elements.md
-      - name: Automate using Images
+      - name: Automate using images
         href: ./ui-flows/desktop/images.md
-      - name: Manage Errors
+      - name: Manage errors
         href: ./ui-flows/desktop/errors.md
       - name: Find usages within flows
         href: ./ui-flows/desktop/finding-usages.md

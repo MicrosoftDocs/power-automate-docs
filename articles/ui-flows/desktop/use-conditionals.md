@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Using conditionals
+# Use conditionals
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

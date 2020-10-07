@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Errors
+# Manage errors
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

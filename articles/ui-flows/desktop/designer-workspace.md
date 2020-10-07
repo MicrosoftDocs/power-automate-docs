@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# The flow designer workspace
+# Manage the flow designer workspace
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

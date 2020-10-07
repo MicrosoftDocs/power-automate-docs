@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Debugging a flow
+# Debug a flow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

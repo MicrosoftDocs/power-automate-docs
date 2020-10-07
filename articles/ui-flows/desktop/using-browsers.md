@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Using browsers and managing extensions
+# Use browsers and manage extensions
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
