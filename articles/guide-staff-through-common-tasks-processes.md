@@ -28,7 +28,7 @@ search.audienceType:
 
 Defining and enforcing consistent business processes is one of the main reasons people use model-driven apps. Consistent processes help make sure people using the system can focus on their work and not on remembering to perform a set of manual steps. Processes can be simple or complex and can change over time.  
   
-Power Apps includes several  types of processes, each designed for a different purpose:  
+Power Apps includes several types of processes, each designed for a different purpose:  
   
 -   Business process flows  
   
@@ -38,45 +38,51 @@ Power Apps includes several  types of processes, each designed for a different p
   
 -   Actions  
   
- Similar to processes, you can also create  business rules and recommendations. For more information, see [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
+Similar to processes, you can also create business rules and recommendations. For more information, go to [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form).  
 
 > [!NOTE]
->  Using processes can impact the license requirements for Power Apps and flows. For more information, see [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
+> Using processes can impact the license requirements for Power Apps and flows. For more information, go to [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses). 
 
 
 <a name="BKMK_BP"></a>   
 ## When to use business process flows  
- Use a business process flow when you want staff to move through the same stages and follow the same steps to interact with a customer. For example, use a business process flow if you want everyone to handle customer service requests the same way, or to require staff to gain approval for an invoice before submitting an order.  
+Use a business process flow when you want staff to move through the same stages and follow the same steps to interact with a customer. For example, use a business process flow if you want everyone to handle customer service requests the same way, or to require staff to gain approval for an invoice before submitting an order.  
   
- Your environment includes several ready-to-use business process flows for common sales, service, and marketing tasks that you can use with little or no changes required. Or, you can create your own. See the following topic for more information on business process flows:  
-  
--   [Create a business process flow](create-business-process-flow.md)  
+Your environment includes several ready-to-use business process flows for common sales, service, and marketing tasks that you can use with little or no changes required. Or, you can create your own. Go to the following topic for more information on business process flows: [Create a business process flow](create-business-process-flow.md)  
   
 <a name="BKMK_WF"></a>   
 ## When to use workflows  
- Use workflows to automate business processes behind the scenes. Workflows are typically initiated by system events so the user doesn't need to be aware that they are running. Workflows that operate in the background are "asynchronous." Workflows can also be configured for people to manually initiate them. when you want to automate common tasks, such as automatically sending a confirmation email to a customer when an order ships. Workflows that operate in real time are "synchronous." For more information on workflows, see  [Workflow processes](workflow-processes.md)  
+
+
+<!-- Please see the fifth sentence below, which starts with a lowercase "when" and is incomplete. I'm not sure if it's supposed to be part of the previous sentence. -->
+
+
+Use workflows to automate business processes behind the scenes. Workflows are typically initiated by system events so the user doesn't need to be aware that they are running. Workflows that operate in the background are "asynchronous." Workflows can also be configured for people to manually initiate them. when you want to automate common tasks, such as automatically sending a confirmation email to a customer when an order ships. Workflows that operate in real time are "synchronous." For more information on workflows, go to [Workflow processes](workflow-processes.md).  
  
   
 <a name="useMSFlow"></a>   
 ## When to use Power Automate  
- Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, and SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
-)  
+
+<!-- Should Office 365 in the following paragraph change to Microsoft 365? -->
+
+
+Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, or SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
   
 <a name="BKMK_Where"></a>   
 ## Where do I go to create processes?  
- There are two paths to navigate to processes:  
+There are two paths to navigate to processes:  
   
-- Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and go to **Components > Processes.** This path provides convenient access when you are doing other customization work in the customization tools.  
+- Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and go to **Components** > **Processes**. This path provides convenient access when you are doing other customization work in the customization tools.  
 
-- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings) > Processes.** This path allows you to use views defined for the Process entity, including any custom views.  
+- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Processes**. This path allows you to use views defined for the Process entity, including any custom views.  
   
- Individual business process flows can also be edited using the **Edit Process** button in the command bar for the form where the business process flow is active.  
+Individual business process flows can also be edited using the **Edit Process** button in the command bar for the form where the business process flow is active.  
   
 <a name="BKMK_WhoCreate"></a>   
 ## Who can create processes?  
- Only people with the System Administrator, System Customizer, or CEO-Business Manager security role can create processes that apply to the whole environment. People with other roles can create processes with limited access level. For example, people with the User access level can create workflows for their own use with records they own.  
+Only people with the System Administrator, System Customizer, or CEO-Business Manager security role can create processes that apply to the whole environment. People with other roles can create processes with limited access level. For example, people with the User access level can create workflows for their own use with records they own.  
   
- The following table shows the access level of processes based on default security roles.  
+The following table shows the access level of processes based on default security roles.  
   
 |||  
 |-|-|  
@@ -96,11 +102,11 @@ Power Apps includes several  types of processes, each designed for a different p
 |Scheduler|User|  
   
 > [!NOTE]
->  While people may be able to create business process flow, real-time workflow, or action processes, they’ll need to have the **Activate Business Process Flows** or **Activate Real-time Processes** privileges to activate them.  
+> While people may be able to create business process flow, real-time workflow, or action processes, they’ll need to have the **Activate Business Process Flows** or **Activate Real-time Processes** privileges to activate them.  
   
 <a name="BKMK_WhatCanProcessesDo"></a>   
 ## More about workflows and Actions  
- Processes can check conditions, apply branching logic, and perform actions. They perform these actions in a series of steps. The following table describes the available steps in workflow and action processes. For more detail see the topics for each type of process.  
+Processes can check conditions, apply branching logic, and perform actions. They perform these actions in a series of steps. The following table describes the available steps in workflow and action processes. For more detail see the topics for each type of process.  
   
 |Step|Process type|Description|  
 |----------|------------------|-----------------|  
