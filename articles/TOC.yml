@@ -183,39 +183,39 @@
     - name: Power Automate Desktop flow designer
       href: ./ui-flows/desktop/flow-designer.md
       items:
-      - name: Actions and the actions pane
+      - name: Configure actions and the actions pane
         href: ./ui-flows/desktop/actions-pane.md
-      - name: The flow designer workspace
+      - name: Manage the flow designer workspace
         href: ./ui-flows/desktop/designer-workspace.md
-      - name: Debugging a flow
+      - name: Debug a flow
         href: ./ui-flows/desktop/debugging-flow.md
-      - name: Manage the Variables pane
+      - name: Manage variables and the variables pane
         href: ./ui-flows/desktop/manage-variables.md
       - name: Variable datatypes
         href: ./ui-flows/desktop/variable-data-types.md
       - name: Variables datatype properties
         href: ./ui-flows/desktop/datatype-properties.md
-      - name: Variable manipulation and the % notation
+      - name: Control variables and the % notation
         href: ./ui-flows/desktop/variable-manipulation.md
-      - name: UI elements
+      - name: Automate using UI elements
         href: ./ui-flows/desktop/ui-elements.md
-      - name: Images
+      - name: Automate using Images
         href: ./ui-flows/desktop/images.md
-      - name: Managing Errors
+      - name: Manage Errors
         href: ./ui-flows/desktop/errors.md
-      - name: Finding usages within flows
+      - name: Find usages within flows
         href: ./ui-flows/desktop/finding-usages.md
-      - name: Recording in a Power Automate Desktop flow
+      - name: Record flows in Power Automate Desktop
         href: ./ui-flows/desktop/recording-flow.md
-      - name: Using loops
+      - name: Use loops
         href: ./ui-flows/desktop/use-loops.md
-      - name: Using conditionals
+      - name: Use conditionals
         href: ./ui-flows/desktop/use-conditionals.md
-      - name: Automation in the web
+      - name: Automate web flows
         href: ./ui-flows/desktop/automation-web.md
-      - name: Using browsers and managing extensions
+      - name: Use browsers and manage extensions
         href: ./ui-flows/desktop/using-browsers.md
-      - name: Desktop automation
+      - name: Automate desktop flows
         href: ./ui-flows/desktop/desktop-automation.md
     - name: Power Automate Desktop actions reference
       href: ./ui-flows/desktop/actions-reference.md
