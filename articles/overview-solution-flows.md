@@ -25,7 +25,7 @@ search.audienceType:
 # Overview
 
 
-When you host your flows in a [solution](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), they become portable, making it effortless to move them and all their components from one environment to another. A typical use case is for an independent software vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment for clients who purchase these flows. This process is much easier when you create your flows in solutions, and then move the solutions and their contents.
+When you host your flows in a [solution](/power-platform/alm/solution-concepts-alm), they become portable, making it effortless to move them and all their components from one environment to another. A typical use case is for an independent software vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment for clients who purchase these flows. This process is much easier when you create your flows in solutions, and then move the solutions and their contents.
 
 Flows created in a solution are known as *solution-aware* flows. You can add multiple flows in a single solution. You cannot move non-solution-aware flows (flows not created in a solution) into a solution.
 
