@@ -24,11 +24,11 @@ search.audienceType:
 
 When you design workflows you have the option to contain the logic you want to perform in stages and steps.  
   
- **Stages**  
- Stages make the workflow logic easier to read, and explain the workflow logic. However, stages do not affect the logic or behavior of workflows. If a process has stages, all the steps within the process must be contained with a stage.  
+**Stages**  
+Stages make the workflow logic easier to read, and explain the workflow logic. However, stages do not affect the logic or behavior of workflows. If a process has stages, all the steps within the process must be contained with a stage.  
   
- **Steps**  
- Steps are a unit of business logic within a workflow. Steps can include conditions, actions, other steps, or a combination of these elements.  
+**Steps**  
+Steps are a unit of business logic within a workflow. Steps can include conditions, actions, other steps, or a combination of these elements.  
   
 <a name="BKMK_ActionsWorkflowProcessesCanPerform"></a>  
  
