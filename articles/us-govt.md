@@ -7,7 +7,7 @@ author: msftman
 ms.service: flow
 ms.devlang: na
 ms.topic: article
-ms.date: 08/11/2020
+ms.date: 10/08/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 # Power Automate US Government
 
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as *Flow GCC*.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC) or Power Automate Government Community Cloud – High (GCC High).
 
 The Power Automate US Government Service Description serves as an overlay to the general Power Automate Service Description. It defines the unique commitments and differences compared to the general Power Automate offerings that have been available to our customers since October 2016.
 
@@ -53,18 +53,14 @@ Entities with questions about eligibility for Power Automate US Government shoul
 
 Access to Power Automate US Government plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Power Automate/Power Apps Plan 1 US Government
+- Power Automate per flow plan for Government
+- Power Automate per user plan for Government
 
-- Power Automate/Power Apps Plan 2 US Government
-
-- In addition to the standalone plans, Power Automate and Power Apps capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with Power Automate and Power Apps capabilities.
-
-> [!NOTE]
-> Licensing is available in customer tenants from mid-April 2019.
+- In addition to the standalone plans, Microsoft 365 US Government and Dynamics 365 US Government plans also include the Power Apps and Power Automate capabilities, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
 Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Power Automate licensing information](https://flow.microsoft.com/pricing/).
 
-Power Automate US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
+Power Automate US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels. The Cloud Solution Provider program is not currently available for GCC High customers.
 
 ## Differences between customer data and customer content
 
@@ -79,8 +75,6 @@ For more information on how Power Automate protects customer data, see the [Micr
 ## Data segregation for Government Community Cloud
 
 When provisioned as part of Power Automate US Government, the Power Automate service is offered in accordance with the National Institute of Standards and Technology (NIST) Special Publication 800-145.
-
-Microsoft refers to this offer as the Government Community Cloud (GCC).
 
 In addition to the logical separation of customer content at the application layer, the Power Automate Government service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial Power Automate customers. This includes using Azure services in Azure’s Government Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
@@ -114,10 +108,10 @@ content hosted in Power Automate US Government (GCC).
 
 Power Automate US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This program infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can peruse these artifacts in support of their review to grant an Authority to Operate (ATO).
 
-> [!NOTE]
-> Currently, the Power Automate US Government services are under review with FedRAMP, but have been granted a Security Assessment Report (SAR) by a qualified [3PAO](https://www.fedramp.gov/3pao-requirements-update/).
+>[!NOTE]
+>Power Automate is authorized as a service within the Azure Government FedRAMP ATO. For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
-As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
+
 
 Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
@@ -141,6 +135,22 @@ Power Automate US Government provides the ability to integrate third-party appli
 
 > [!TIP]
 > Review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
+
+[Power Apps and Power Automate Governance Considerations](https://docs.microsoft.com/power-platform/admin/governance-considerations) can help your organization bring awareness about the capabilities available across several related themes, such as architecture, security, alert and action, and monitoring.
+
+## Configure mobile clients
+
+Here are the steps that you must take to sign in with the Power Apps mobile client.
+
+1. On the sign-in page, select the gear icon in the lower-right corner.
+1. Select **Region settings**.
+1. Select one of the following:
+   - GCC: US Government GCC
+   - GCC High: US Government GCC High.
+1. Seelct OK.
+1. On the sign-in page, select **Sign in**.
+
+The mobile application will now use the US Government Cloud.
 
 ## Power Automate US Government and Azure Services
 
@@ -226,24 +236,13 @@ If your organization (tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-- Trigger Power Automate US Government flow *from* SharePoint Lists
-
-- Trigger Power Automate US Government flow *from* Dynamics 365 GCC
-
 - [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
 
 - [Approvals](./modern-approvals.md) are available for GCC and GCC High tenants, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
   * There is no markdown support for approval email. 
 
-- [Usage Analytics](https://flow.microsoft.com/blog/admin-analytics/)
-
-- [Power Automate Mobile Application](https://docs.microsoft.com/flow/mobile-manage-flows)
-
 - [Submitting Templates](https://docs.microsoft.com/flow/publish-a-template)
-
-    > [!NOTE]
-    > Submitting templates is disabled in GCC to address enterprise data governance and data flow concerns.
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request.
 
@@ -253,4 +252,8 @@ Some of the features available in the commercial version of Flow are not availab
 
 ### See also
 
-[Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
+
+- [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
+
+- [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
