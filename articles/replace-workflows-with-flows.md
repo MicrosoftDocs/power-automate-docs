@@ -454,7 +454,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
 Imagine a sales scenario where you have put together a quotation for a customer
 and now you need to request approval from your management team before you send the quotation to the customer. With classic workflows, this isn't easy and most solutions to this require a developer to write custom background workflow activities to retrieve quote line items.
 
-With flows, this scanrio is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
+With flows, this scenario is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
 
 - Creating a flow that runs on demand.
 - Getting a list of records that are related to a Common Data Service entity.
