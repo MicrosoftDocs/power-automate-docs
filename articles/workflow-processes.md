@@ -1,5 +1,5 @@
 ---
-title: "Classic Common Data Service background workflows | MicrosoftDocs"
+title: "Overview of classic Common Data Service workflows | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "matp"
@@ -15,6 +15,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
+
+<!-- from editor: I've learned that the metadata title should not be identical to the H1 title, so I altered the metadata version. -->
+
+
 # Classic Common Data Service background workflows 
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
@@ -24,9 +29,9 @@ There are two types of workflows:
 1. Background workflows. 
 
 
-To create background workflows, you must set the **Run this workflow in the background (recommended)** checkbox, as displayed in the following image.
+To create background workflows, you must select the **Run this workflow in the background (recommended)** check box, as displayed in the following image.
 
-![Workflow process with Under&#47;Not Under operators](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")
+![Screenshot showing workflow process with Under&#47;Not Under operators.](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")
 
 See other topics here in the Power Automate documentation to learn more about background workflows.
 
