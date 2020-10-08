@@ -473,13 +473,13 @@ To allow the sales person to trigger the approval request on demand:
 
     ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List records card")
 
-1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to *Quote line summary*, and the **Type** to String (from the drop-down list), and leave the **Value** field empty.
+1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to **Quote line summary**, and **Type** to **String** (from the drop-down list), and leave the **Value** field empty.
 
 1. Add the **Append to string variable** action and then select the **Quote line summary** variable we created earlier. In the **Value** field, select **Quantity**, **Name**, **Price Per Unit**, **Extended amount**, and **Manual discount** from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
 
     ![Screenshot showing selection of values.](media/define-flow-2.png "Complete 'Apply to each' card")
 
-1. To request approval on the quote summary we’ve created, add the **Approval – Start and wait for an approval** action. Select an Approval type (for example, Approve/Reject – First to respond), give the Approval request a **Title** (for example, the Name of the Quote for which approval is being requested, picked from the list of dynamic values), enter the email address for the person who needs to review and approve the quote in the **Assigned to** field. In the details field, add the **Quote line summary** variable, along with any other information that might be relevant using the dynamic value picker (for example, Total Amount).
+1. To request approval on the quote summary we’ve created, add the **Approval – Start and wait for an approval** action. Select an **Approval type** (for example, **Approve/Reject – First to respond**), give the approval request a **Title** (for example, the name of the quote for which approval is being requested, picked from the list of dynamic values), and enter the email address for the person who needs to review and approve the quote in the **Assigned to** field. In the **Details** field, add the **Quote line summary** variable, along with any other information that might be relevant using the dynamic value picker (for example, **Total Amount**).
 
 1. To determine what happens once an approval is accepted or rejected, add the **Condition** action. Select **Outcome** from the list of dynamic values from the first field in the condition, **contains** from the drop-down list in the second field, and enter **Approve** in the third field of the condition. Finally, add actions based on the outcome of the approval (for example, send a notification email).
 
