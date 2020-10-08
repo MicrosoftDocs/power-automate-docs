@@ -54,9 +54,9 @@ Each field can accept specific data types, such as numbers, text, or lists. If a
 
 The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
 
-Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the respective article (link to be added). 
+Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane.
 
-In case a produced variable isn't needed for later use, select the icon on the left side of it and pick **Not needed**. 
+In case a produced variable isn't needed for later use, select the icon on the left side of it and pick **Don't produce variable**. 
 
 ![The option to disable a produced variable in the action.](media/configuring-actions/actions-outputs.png)
 
