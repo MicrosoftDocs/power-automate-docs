@@ -16,10 +16,6 @@ search.audienceType:
   - enduser
 ---
 
-
-<!-- from editor: I've learned that the metadata title should not be identical to the H1 title, so I altered the metadata version. -->
-
-
 # Classic Common Data Service background workflows 
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
