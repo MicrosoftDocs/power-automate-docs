@@ -24,7 +24,7 @@ It’s quicker and easier than ever to automate with the new intuitive Power Aut
 
 Power Automate Desktop allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates. 
 
-Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow-console.md). 
+Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
 
 Power Automate Desktop comprises of the [console](console.md) and the [flow designer](flow-designer.md). 
 
