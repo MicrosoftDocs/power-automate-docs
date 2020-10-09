@@ -514,20 +514,11 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   - For scenarios where a connector you need isn’t available out-of-the-box, easily create your own custom connector. More information: [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
+  - Finally, if there are scenarios where you cannot trigger your flow using Common Data Service connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](https://docs.microsoft.com/azure/connectors/connectors-native-reqres) to invoke the flow.
 
+- **Workflows that run recursively**
 
-    <!-- editor note: I don't find that specific topic heading on the page linked to below. --> 
-
-
-  - Finally, if there are scenarios where you cannot trigger your flow using Common Data Service connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](https://docs.microsoft.com/azure/connectors/connectors-native-reqres#use-the-http-request-trigger) to invoke the flow.
-
-- **Workflows that run recursively**  
-
-
-<!-- editor question: Because "Flows" is capitalized below, do you mean Power Automate? Or just generic flows (lower case). -->
-
-
-  Use the [do-until](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) or [apply to each](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop) loop in Flows instead.
+  Use the [do-until](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) or [apply to each](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop) loop in flows instead.
 
 - **Workflows that need a list of records**  
 
