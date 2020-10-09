@@ -483,10 +483,6 @@ To allow the sales person to trigger the approval request on demand:
 
 1. To determine what happens once an approval is accepted or rejected, add the **Condition** action. Select **Outcome** from the list of dynamic values from the first field in the condition, **contains** from the drop-down list in the second field, and enter **Approve** in the third field of the condition. Finally, add actions based on the outcome of the approval (for example, send a notification email).
 
-
-    <!-- editor note: The image shows "Approve" in the third field, not "Accept." -->
-
-
     ![Screenshot of the Condition action.](media/define-flow-3.png "Yes/no condition options")
 
 We now have the approval structure created so the approver has all of the information needed to make a decision on next steps. Here's the full example: 
