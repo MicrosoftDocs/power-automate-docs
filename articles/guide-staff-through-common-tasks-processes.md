@@ -51,22 +51,16 @@ Use a business process flow when you want staff to move through the same stages 
 Your environment includes several ready-to-use business process flows for common sales, service, and marketing tasks that you can use with little or no changes required. Or, you can create your own. More information: [Create a business process flow](create-business-process-flow.md)  
   
 <a name="BKMK_WF"></a>   
-## When to use workflows  
+## When to use workflows
 
-
-<!-- Please see the fifth sentence below, which starts with a lowercase "when" and is incomplete. I'm not sure if it's supposed to be part of the previous sentence. -->
-
-
-Use workflows to automate business processes behind the scenes. Workflows are typically initiated by system events so the user doesn't need to be aware that they are running. Workflows that operate in the background are "asynchronous." Workflows can also be configured for people to manually initiate them. when you want to automate common tasks, such as automatically sending a confirmation email to a customer when an order ships. Workflows that operate in real time are "synchronous." More information: [Workflow processes](workflow-processes.md)  
+Use workflows to automate business processes behind the scenes. Workflows are typically initiated by system events so the user doesn't need to be aware that they are running. Workflows that operate in the background are "asynchronous." Workflows can also be configured for people to manually initiate them when you want to automate common tasks, such as automatically sending a confirmation email to a customer when an order ships. Workflows that operate in real time are "synchronous." More information: [Workflow processes](workflow-processes.md)  
  
   
 <a name="useMSFlow"></a>   
-## When to use Power Automate  
-
-<!-- Should Office 365 in the following paragraph change to Microsoft 365? -->
+## When to use Power Automate
 
 
-Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Office 365, or SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
+Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Microsoft 365, or SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
   
 <a name="BKMK_Where"></a>   
 ## Where do I go to create processes?  
