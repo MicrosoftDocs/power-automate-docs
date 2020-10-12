@@ -23,11 +23,11 @@ search.audienceType:
 ---
 # Use SharePoint and Power Automate to build workflows.
 
-Power Automate is deeply integrated with Microsoft SharePoint. This document outlines some of the key scenarios in which you can use Power Automate to build flows. You can start with any of the more than [100 SharePoint templates](https://preview.flow.microsoft.com/templates/) or create your own flow that integrates with SharePoint from scratch.
+Power Automate is deeply integrated with Microsoft SharePoint. This document outlines some of the key scenarios in which you can use Power Automate to build flows. You can start with any of the more than [100 SharePoint templates](https://flow.microsoft.com/templates/) or create your own flow that integrates with SharePoint from scratch.
 
 ## Top SharePoint workflow scenarios
 
-- Create a record in Microsoft Dynamics CRM when a list item gets added to a SharePoint list.
+- Create a record in Microsoft Dynamics CRM when a list item gets added to a SharePoint list. More Info:
 - Copy new members from MailChimp lists to SharePoint lists.
 - Move files to different folders after they’re approved in SharePoint.
 - Create an item in SharePoint when a new order is added in Salesforce.
@@ -35,9 +35,8 @@ Power Automate is deeply integrated with Microsoft SharePoint. This document out
 
 Whether you start with a template or begin from scratch, using Power Automate to create automation features is intuitive.
 
-
 ## Next steps
 
-- [Get started with [approvals](https://docs.microsoft.com/en-us/power-automate/get-started-approvals).
+- Get started with [approvals](https://docs.microsoft.com/power-automate/get-started-approvals).
 - Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
-- Approvals that require a signle approver
+- Approvals that require a signle approver.
