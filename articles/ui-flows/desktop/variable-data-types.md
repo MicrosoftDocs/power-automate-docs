@@ -91,6 +91,7 @@ Some of them can be used only with explicit actions, like **FTP connection**, wh
 
 - **SQL connection** - Contains a connection to an SQL database established through the **Open SQL connection** action.
 - **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
+- **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 
 ## Active Directory
 
@@ -123,13 +124,12 @@ Some of them can be used only with explicit actions, like **FTP connection**, wh
 - **Datetime** - Contains date and time information.
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
-- **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 - **FTP file** - Represents an FTP file.
 - **FTP directory** - Represents an FTP directory
 - **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
 - **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
 - **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
-- **OCREngineObject** – Contains an OCR engine created through the **Create OCR engine** action.
+- **OCR Engine** – Contains an OCR engine created through the **Create OCR engine** action.
 - **CMD session** - Contains a CMD session created through the **Open CMD session** action.
 - **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
