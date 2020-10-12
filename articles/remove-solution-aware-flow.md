@@ -1,6 +1,6 @@
 ---
 title: Learn how to remove or delete solution-aware flows | Microsoft Docs
-description: Learn how to remove or delete solutions-aware flows.
+description: Learn how to remove solution-aware flows from soltions or delete them from environments.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/10/2020
+ms.date: 10/12/2020
 ms.author: deonhe
 search.app: 
   - Flow
