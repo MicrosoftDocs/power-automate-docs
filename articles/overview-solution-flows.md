@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
+ms.date: 10/09/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -39,24 +39,23 @@ You must have the following components to create solutions, and solution-aware f
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - An environment with version 9.1.0.267 or later.
 
-  To check your version, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Environments**, select the environment you are interested in, and then select the **Details** tab.
+  To check your version, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Environments**, and then select the environment in which you are interested. The **Details** tab displays all configuration information for the environment that you selected.
 
 ## Create a solution
 
 Follow these steps to create a solution:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
-1. Select **Solutions** from the navigation bar.
-
+1. Select **Solutions** from the navigation bar on the left side of the screen.
 1. Select **New solution**.
 
    ![Select a new solution](./media/overview-solution-flows/select-new-solution.png "Screen showing select new solution")
 
-1. Provide all required information for your new solution, including **Display Name**, **Publisher**, **Version**, and **Name**. It's also a good idea to provide a description of your solution.
+1. Provide all required information for your new solution, including the **Display Name**,  **Name**, **Publisher**, and **Version**. It's also a good idea to provide a description of your solution.
 
    ![Select new solution](./media/overview-solution-flows/new-solution.png "new solution properties screen")
 
-1. Select **Save and Close** from the menu at the top.
+1. Select the **Create** button.
 
   
    Your new solution might appear like this image:
