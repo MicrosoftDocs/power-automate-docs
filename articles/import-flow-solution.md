@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 10/10/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -26,20 +26,20 @@ search.audienceType:
 
 
 > [!TIP]
-> If you want to have your flows start automatically after you import a solution, use Common Data Service (Current Environment) connector in your flow when you create it.
+> If you want to have your flows start automatically after you import a solution, use the Common Data Service (Current Environment) connector in your flow when you create it.
 
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
 
-1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
+1. Sign into Power Automate, and then select **Solutions** from the navigation bar on the left side of the screen.
 
-   ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
+   ![A image showing "Solutions" selected in the navigation bar](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
 1. Select **Import**.
 
-   ![](./media/import-flow-solution/select-import.png)
+   ![A image showing "import" selected.](./media/import-flow-solution/select-import.png)
 
-1. Select **Browse** from the **Import Solution** page that opens.
-1. Find and then select the solution that you want to import.
+1. Select **Browse** from the **Import a solution** page that opens.
+1. Find, and then select the solution that you want to import.
 1. Select **Open**.
 
    You should now see the **Select Solution Package** page similar to this image:
@@ -56,9 +56,8 @@ After you've exported your solution, you can import it into any environment that
 
 ## Learn more
 
-<!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
-
 - [Create a solution](./overview-solution-flows.md)
 - [Create a flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+- [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
