@@ -60,11 +60,11 @@ You need to have at least one solution before you can create a solution-aware fl
 
    Your flow should appear like this:
 
-   ![](./media/create-flow-solution/new-email-notification-flow.png)
+   ![Screenshot showing the flow that's created](./media/create-flow-solution/new-email-notification-flow.png)
    
 1. Select **Solutions** to see your flow in the solution:
 
-   ![](./media/create-flow-solution/new-flow-inside-solution.png)
+   ![Screenshot that shows your flow inside the solution](./media/create-flow-solution/new-flow-inside-solution.png)
 
 ## Learn more
 
