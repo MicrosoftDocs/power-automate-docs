@@ -56,7 +56,7 @@ If you want to access a specific column in a datable that contains column header
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
-### Know issues and limitations
+### Known issues and limitations
 
 - **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
 - **Workarounds**: None.
