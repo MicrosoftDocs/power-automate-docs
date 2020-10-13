@@ -43,7 +43,7 @@ search.audienceType:
 
    ![Select desktop](../media/create-windows-ui-flow/select-desktop.png "Select desktop") 
 
-1. Enter a name for your UI flow into the **Flow name** field, and then select **Next**.
+1. **흐름 명(Flow name)** 필드에 만드려는 UI 흐름 이름을 입력 후 **다음(Next)** 선택.
 
    ![Select desktop](../media/create-windows-ui-flow/give-a-name.png "Select desktop") 
 
