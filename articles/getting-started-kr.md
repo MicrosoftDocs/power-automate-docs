@@ -1,6 +1,6 @@
 ---
-title: Get started | Microsoft Docs
-description: Quick ways to start automating your work and life with Power Automate
+title: 시작하기 | Microsoft Docs
+description: Power Automate로 작업과 일상을 자동화를 시작하는 빠른 방법
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,35 +22,34 @@ search.audienceType:
   - enduser
 ---
 
-# Get started with Power Automate 
+# Power Automate 시작하기 
 
-Welcome! What can you expect from Power Automate? Here are a few examples of what you can do:
+환영합니다! Power Automate에 무얼 기대하시나요? 여러분이 하실 수 있는 예제 몇가지를 다음과 같이 준비해봤습니다.
+* 업무 프로세스 자동화
+* 기일이 지난 작업을 자동으로 알림 보내기
+* 스케줄에 맞춰 시스템간 업무 데이터 이동하기
+* 거의 300 곳의 데이터 소스 또는 공개적으로 사용가능한 모든 API에 연결하기
+* 심지어 엑셀에서 데이터 연산과 같은 사용하는 로컬 컴퓨터에서 업무를 자동화하기 
 
-* Automate business processes
-* Send automatic reminders for past due tasks
-* Move business data between systems on a schedule
-* Connect to almost 300 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel. 
-
-Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation. 
+여러분의 데스크톱 컴퓨터에서 하는 마우스 클릭, 자판 두드리기 그리고 복사와 붙여넣기 단계 등을 녹화 함으로써 반복적인 수작업을 단순히 자동화 할 경우 절약되는 시간을 한 번 생각해보세요! Power Automate는 자동화에 관한 모든 것을 아우릅니다. 
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/H4H_jPJWlxU]
 
-## Who is Power Automate for? 
+## Power Automate는 누구를 위한 건가? 
 
-*What skills do you need to have?* 
-Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
+*당신은 어떤 능력을 가져야 합니까?* 
+기본적인 업무 사용자에서부터 IT 전문가까지 모두 노코드(no-code)/로우코드(low-code) 플랫폼인 Power Automate를 활용해 업무를 자동화 할 수 있습니다.
 
-*What industries can benefit from Power Automate?* 
-Check out how some companies implemented Power Platform solutions using Power Automate in: 
+*Power Automate로 혜택을 볼 수 있는 산업은 어디입니까?* 
+다음에서 몇몇 기업들이 어떻게 Power Automate를 사용해서 Power Platform 솔루션을 실행하고 있는지를 확인해보세요: 
 
-  * [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
-  * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
-  * [Manufacturing](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
-  * [Insurance](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
-  * [Healthcare](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
+  * [은행](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
+  * [리테일](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
+  * [제조](https://customers.microsoft.com/en-us/story/810656-hexion-manufacturing-power-platform)
+  * [보험](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+  * [보건의료](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
 
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
