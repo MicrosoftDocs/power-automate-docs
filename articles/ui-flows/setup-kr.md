@@ -122,7 +122,7 @@ UI 흐름에서 Selenium IDE 스크립트를 Power Automate를 통해 실행하�
 >게이트웨이를 설치할 경우, Power Automate 를 사용하는 지역을 기본으로 합니다.
 
 
-## UI 흐름 커넥션과 기기 암호 설정하기
+## UI 흐름 커넥션과 기기 보안 설정하기
 
 1. [Power Automate](https://powerautomate.microsoft.com) 로그인.
 1. 화면 왼편에 있는 **데이터(Data)** 확장.
