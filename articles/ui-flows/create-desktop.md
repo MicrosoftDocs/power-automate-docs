@@ -1,7 +1,7 @@
 ---
-title: Learn to create desktop UI flows | Microsoft Docs
-description: Learn to create desktop UI flows for Windows applications.
-services: ''
+제목: 데스크톱 UI flows 생성 학습 | Microsoft Docs
+내용: 윈도우용 애플리케이션을 위한 데스크톱 UI flows 생성하는 법을 배웁니다.
+서비스: ''
 suite: flow
 documentationcenter: na
 author: msftman
@@ -22,24 +22,24 @@ search.audienceType:
   - enduser
 ---
 
-# Create and test desktop UI flows
+# 데스크톱 UI flows 생성 및 테스트하기
 
-In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
+아래 단계를 통해 계산기 앱으로 두 숫자를 합하고 나중에 사용하기 위해 결과를 저장하는 방법을 시연하겠습니다.
 
-## Create a desktop UI flow
+## 데스크톱 UI flow 생성하기
 
 > [!TIP]
-> You can automate other Windows desktop apps by following a similar pattern.
+> 아래와 같이 유사한 패턴을 따라하면서 다른 윈도우 데스크톱 앱들을 자동화 하실 수 있습니다.
 
-1. Ensure your [device is ready](setup.md#prerequisites) to create UI flows.
+1. UI flows를 생성하기 위해 [사전준비](setup.md#prerequisites)가 잘 되었는 지 확인 해주세요.
 
-1. Use [Microsoft Edge (Version 80 or later)](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
+1. [Microsoft Edge (80 또는 나중 버전)](https://www.microsoftedgeinsider.com) 또는 Google Chrome을 사용해 [Power Automate](https://flow.microsoft.com) 페이지를 열고 사용하시는 장치로 직장 또는 학교 계정으로 로그인(또는 Sign In) 해주세요.
 
-1. Select **My flows** > **UI flows** > **New**.
+1. **내 흐름(My flows)** > **UI 흐름(UI flows)** > **새로 만들기(New)**.
 
-   ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
+   ![새 UI 흐름(New UI flow)](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
-1. Choose **Desktop app** and then select **Next**.
+1. **데스크톱 앱(Desktop app)** 을 선택하고 **다음(Next)** 선택.
 
    ![Select desktop](../media/create-windows-ui-flow/select-desktop.png "Select desktop") 
 
