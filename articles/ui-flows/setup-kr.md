@@ -69,7 +69,7 @@ UI 흐름(UI flows)을 사용중인 장치에 생성하고 사용하시기 전�
 
 ### 데이터 수집 옵션 설정
 
-마이크로소프트에 사용 데이터를 보내는 것을 원하지 않는다면, 설치하는 동안 기본으로 체크되어 있는 **(Microsoft에서 사용 데이터를 수집하여 UI 흐름을 개선할 수 있도록 허용합니다(Allow Microsoft to collect usage data to improve UI flows)** 부분을 체크 해제하시면 됩니다.
+마이크로소프트에 사용 데이터를 보내는 것을 원하지 않는다면, 설치하는 동안 기본으로 체크되어 있는 **Microsoft에서 사용 데이터를 수집하여 UI 흐름을 개선할 수 있도록 허용합니다(Allow Microsoft to collect usage data to improve UI flows)** 부분을 체크 해제하시면 됩니다.
 
 ## UI 흐름 및 Power Automate Desktop (preview) 브라우저 확장 프로그램 
 
@@ -85,7 +85,7 @@ UI 흐름(UI flows)을 사용중인 장치에 생성하고 사용하시기 전�
 
 #### Microsoft Edge: 
 - **다운로드(Get)**을 선택하시고 알림창이 열리면 **확장 추가(Add extension)** 를 누르세요. 
-- 만일 *이 확장 프로그래은 Microsoft Edge에서 꺼져있습니다* 라는 메세지를 페이지 상단에서 보시게 되면 **확장프로그램 켜기(Turn on extension)** 를 선택해주세요.
+- 만일 *이 확장 프로그램은 Microsoft Edge에서 꺼져있습니다* 라는 메세지를 페이지 상단에서 보시게 되면 **확장프로그램 켜기(Turn on extension)** 를 선택해주세요.
 
 #### Google Chrome: 
 - **Chrome에 추가(Add to Chrome)** 를 선택하시고 알림창에서 **확장프로그램 추가(Enable extension)** 를 선택해주세요. 
@@ -152,7 +152,7 @@ UI 흐름에서 Selenium IDE 스크립트를 Power Automate를 통해 실행하�
 
 아래와 같은 이유로 커넥션을 만들 때 리스트에서 게이트웨이를 찾지 못할 수도 있습니다:
 
-- Power Automate 리전(region)이 아닌 다른 리전(region)에 게이트웨이가 설치. 이 문제는 장치에서 게이트웨이를 지우고(unistall) [올바른 Power Automate 리전](../regions-overview.md#region-mappings-for-power-automate-and-gateways)을 선택해서 다시 설치해서 해결 가능.
+- Power Automate 리전(region)이 아닌 다른 리전(region)에 게이트웨이가 설치된 경우. 이 문제는 장치에서 게이트웨이를 지우고(unistall) [올바른 Power Automate 리전](../regions-overview.md#region-mappings-for-power-automate-and-gateways)을 선택해서 다시 설치해서 해결 가능.
 - 해당 게이트웨이가 소유자에 의해 삭제.
 
 ## 지원되는 키보드 레이아웃
