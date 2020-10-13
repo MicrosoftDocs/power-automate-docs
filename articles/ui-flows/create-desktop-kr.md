@@ -39,24 +39,24 @@ search.audienceType:
 
    ![새 UI 흐름(New UI flow)](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
 
-1. **데스크톱 앱(Desktop app)** 을 선택하고 **다음(Next)** 선택.
+1. **데스크톱 앱(Desktop app)** 을 선택하고 **다음(Next)** 을 선택하세요.
 
    ![Select desktop](../media/create-windows-ui-flow/select-desktop.png "Select desktop") 
 
-1. **흐름 명(Flow name)** 필드에 만드려는 UI 흐름 이름을 입력 후 **다음(Next)** 선택.
+1. **흐름 명(Flow name)** 필드에 만드려는 UI 흐름 이름을 입력 후 **다음(Next)** 을 선택하세요.
 
    ![Select desktop](../media/create-windows-ui-flow/give-a-name.png "Select desktop") 
 
-1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
+1. 이번 연습에서는 입력을 활용하지 않을 것이므로 **입력 설정(Set up inputs)** 은 건너뛰고 아래의 **다음(Next)** 을 선택하세요.
 
-1.	Select **Download package**.
-1.	Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1.	Follow the instructions in the UI flows setup installer to complete the installation.
+1.	**패키지 다운로드(Download package)** 를 선택하세요.
+1.	**Setup.Microsoft.PowerAutomate.UIflow.exe** 파일 열어주세요. 이 파일은 앞 단계에서 내려 받은 후 **다운로드(Downloads)** 폴더에 있을 수 있습니다.
+1.	설치를 완료하기 위해 UI 흐름 설치 인스톨러에 있는 지시에 따라 주세요.
 
-    Once the UI flows installer completes, you'll receive a prompt from your browser to activate the extension.
+    UI 흐름 설치가 완료되면 브라우저에서 확장 프로그램을 실행하라는 알림창이 뜹니다.
 
-1. On Microsoft Edge (Version 80 or later), select each warning icon in the top right of the browser, and then select **Enable extension**.
-1. On Google Chrome, select **Enable extension** when prompted.
+1. Microsoft Edge (80 또는 나중버전)에서는 브라우저 오른쪽 상단에 각 경고창에서 **확장 프로그램 실행(Enable extension)** 을 선택하세요.
+1. Google Chrome에서는 알림창이 뜨면 **확장 프로그램 실행(Enable extension)** 을 선택하세요.
 
    > [!TIP]
    > If you did not see the prompt in your browser, check the following:
