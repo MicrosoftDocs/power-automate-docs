@@ -42,6 +42,8 @@ Delete from this environment|The flow is deleted; it is not available in the env
 
    ![A screenshot that shows the option to remove a flow from a solution hightlighted.](./media/remove-solution-aware-flow/delete-flow-from-solution.png)
 
+>[!IMPORTANT]
+>When you remove a flow, it gets moved to the **Common Data Services Default Solution**, where you can edit, delete, or add it to another solution. 
 
 ## Delete a flow from an environment
 
