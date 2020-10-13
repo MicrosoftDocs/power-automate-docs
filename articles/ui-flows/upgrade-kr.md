@@ -48,6 +48,6 @@ UI 흐름 앱 또는 게이트웨이 연결 가운데 하나를 업데이트 할
 ## Next steps
 
 - [UI 흐름 설정](setup-kr.md) 학습하기.
-- 업무 흐름을 자동화 할 수 있는 [다양한 형태의 흐름들](..\getting-started.md#types-of-flows)에 관해 더 학습하기.
+- 업무 흐름을 자동화 할 수 있는 [다양한 형태의 흐름들](../getting-started.md#types-of-flows)에 관해 더 학습하기.
 
 
