@@ -51,21 +51,21 @@ search.audienceType:
   * [보험](https://customers.microsoft.com/en-us/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
   * [보건의료](https://customers.microsoft.com/en-us/story/vnshs-health-provider-microsoft-flow) 
 
-Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
+[산업별 사례 찾아보기](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+자동화를 생성하기 위해 가장 먼저 해야 할 일은 [회원가입](sign-up-sign-in.md)이며, 만일 Power Automate 계정을 갖고 계신다면, [로그인](https://flow.microsoft.com/signin)입니다.
 
-## Types of flows
+## 다양한 흐름들
 
-See the following table to learn more about the types of flow that you can build to help address your use cases.
+아래 표를 확인해 사용할 사례에 맞는 형태의 흐름에 대해 좀 더 학습하실 수 있습니다.
 
-| **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
+| **흐름 종류**                                                                       | **사용사례**                                                                                  | **자동화 목표**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
-| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
-| [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow.                 | Human processes such as customer service requests, approvals, IT development,...                                                                        |
+| [자동화된 흐름(Automated flows)](get-started-logic-flow.md)                 | 특정인에게서 이메일을 받거나 소셜미디어에서 여러분의 회사에 대한 언급이 있는 경우와 같이 어떤 이벤트가 발생한 경우 시작되는 자동화 생성하기.| 클라우드 또는 온 프레미스용 [연결자(Connectors)](https://docs.microsoft.com/connectors/)를 활용해 여러분의 계정들을 연결하고 각 계정들이 서로 대화를 할 수 있게 지원. |
+| [인스턴스 흐름(Instant flows)](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
+| [예약된 흐름](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
+| [비즈니스 프로세스 흐름](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow.                 | Human processes such as customer service requests, approvals, IT development,...                                                                        |
 | [UI flows](ui-flows/overview.md)                                                | Record  clicks and keyboard strokes from your Desktop and Web applications and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
 
 
