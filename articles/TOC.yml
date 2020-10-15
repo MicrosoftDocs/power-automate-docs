@@ -42,10 +42,6 @@
     href: create-sharepoint-reminder-flows.md
   - name: Create flow to customize SharePoint page approvals
     href: customize-sharepoint-page-approvals.md
-  - name: Create a flow in Teams
-    href: flows-teams.md
-  - name: Create adaptive card flows in Teams
-    href: create-adaptive-cards-teams.md
   - name: Create a flow with Common Data Service (current environment)
     href: connection-cds-native.md
   - name: Create a flow with Common Data Service
