@@ -29,10 +29,6 @@ This article provides details about the known issues and limitations in Power Au
 
 ## Desktop recorder
 
-- **Issue**: The Desktop recorder may not capture some SAP UI controls. applications.
-
-    **Workarounds**: Use manual actions to automate these SAP applications.
-
 - **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
 
     **Workarounds**: None.
