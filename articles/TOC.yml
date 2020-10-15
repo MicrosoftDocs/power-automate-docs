@@ -38,10 +38,6 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
-  - name: Create a SharePoint reminder flow
-    href: create-sharepoint-reminder-flows.md
-  - name: Create flow to customize SharePoint page approvals
-    href: customize-sharepoint-page-approvals.md
   - name: Create a flow in Teams
     href: flows-teams.md
   - name: Create adaptive card flows in Teams
@@ -96,6 +92,14 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
+- name: Use flows with SharePoint
+  items:
+  - name: Overview
+    href: sharepoint-overview.md
+  - name: Create a SharePoint reminder flow
+    href: create-sharepoint-reminder-flows.md
+  - name: Create flow to customize SharePoint page approvals
+    href: customize-sharepoint-page-approvals.md  
 - name: Microsoft Teams flows
   items:
   - name: Overview
