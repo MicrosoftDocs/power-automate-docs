@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2017
+ms.date: 10/16/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,12 +23,13 @@ search.audienceType:
 ---
 # Trigger a flow based on email properties
 
-Use the **When a new email arrives** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide:
+Use the **when a new email arrives (V3)** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide:
 
 | Property | When to use |
 | --- | --- |
 | Folder |Trigger a flow whenever emails arrive in a specific folder. This property can be useful if you have rules that route emails to different folders. |
 | To |Trigger a flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
+|CC|Trigger a flow based on the CC address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox.
 | From |Trigger a flow based on the sender's email address. |
 | Importance |Trigger a flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
 | Has Attachment |Trigger a flow based on the presence of attachments in incoming emails. |
@@ -41,7 +42,7 @@ For example, if you check an email's *from* address in a condition, each run cou
 > 
 > 
 
-In the following walkthroughs, we check all properties in the **When a new email arrives** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
+In the following walkthroughs, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
 * An account with access to [Power Automate](https://flow.microsoft.com)
@@ -114,7 +115,7 @@ Let's get started:
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives** card.
+1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
    
     ![Select folder](./media/email-triggers/email-triggers-2.png)
 
