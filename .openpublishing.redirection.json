@@ -1,6 +1,11 @@
 {
     "redirections": [
-    {
+      {
+        "source_path": "articles/actions.md",
+        "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/actions",
+        "redirect_document_id": "false"
+      },
+      {
       "source_path": "articles/create-actions.md",
       "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/actions",
       "redirect_document_id": "false"

@@ -47,10 +47,6 @@ This article provides details about the known issues and limitations in Power Au
 
     **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots.
 
-- **Issue**: By default, the Web recorder will not work, if the selected language is Japanese.
-
-    **Workarounds**: Change the browser variable name to latin text, for example "Browser1". You can find this setting under the **Advanced** options at the bottom of the web recorder dialog.
-
 ## Loops
 
 - **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.

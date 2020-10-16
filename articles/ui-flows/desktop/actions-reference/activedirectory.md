@@ -4,7 +4,7 @@ description: Active Directory Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/30/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -15,6 +15,7 @@ search.audienceType:
 ---
 
 # Active Directory
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to an Active Directory server and perform operations
@@ -56,7 +57,7 @@ Creates a group in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="creategroup_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -83,7 +84,7 @@ Gets information about a group from the Active Directory server
 |GroupInfo|Group info|The group's info|
 
 
-##### Exceptions
+##### <a name="getgroupinfo_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -110,7 +111,7 @@ Gets the members of a group in the Active Directory
 |GroupMembers|List of Group members|The variable that holds the members of the group|
 
 
-##### Exceptions
+##### <a name="getgroupmembers_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -137,7 +138,7 @@ Modifies a group in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="modifygroupaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -166,7 +167,7 @@ Creates an object in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="createobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -191,7 +192,7 @@ Deletes an object in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="deleteobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -216,7 +217,7 @@ Moves an object in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="moveobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -241,7 +242,7 @@ Renames an object in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="renameobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -275,7 +276,7 @@ Creates a user in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="createuser_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -303,7 +304,7 @@ Gets a user's information in the Active Directory
 |UserInfo|User info|The user's info|
 
 
-##### Exceptions
+##### <a name="getuserinfo_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -331,7 +332,7 @@ Modify a user in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="modifyuseraction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -357,7 +358,7 @@ Unlocks an Active Directory user
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="unlockuser_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -394,7 +395,7 @@ Updates a user's information in the Active Directory
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="updateuserinfo_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -425,7 +426,7 @@ Connects to an Active Directory server
 |ParentDirectoryEntry|Active Directory entry|The parent of the Active Directory entry for use with later Active Directory actions|
 
 
-##### Exceptions
+##### <a name="connecttoserveraction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Authentication error|Indicates an error with the user's authentication|
@@ -446,6 +447,6 @@ Closes the connection with the Active Directory server
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="closeconnection_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
