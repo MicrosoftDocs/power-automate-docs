@@ -33,7 +33,7 @@ search.audienceType:
 
 웹 자동화 흐름을 시작하려면, 웹 브라우저 실행하기 작업(**Launch new Internet Explorer**, **Launch new Edge**, **Launch new Firefox**, 또는 **Launch new Chrome**)으로 새로운 브라우저 세션을 시작하거나 이미 시작된 세션에 연결해야 합니다:
 
-![웹 브라우저 실행하기](../media/web-automation/launch-web-browser-action.png)
+![웹 브라우저 실행하기](./media/web-automation/launch-web-browser-action.png)
 
 > [NOTE!]
 > 어떤 브라우저들은 파워 오토메이션 데스크톱을 실행하기 전에 구성(Configuration)을 맞출 필요가 있습니다. 자세한 사항은 관련 글을 참조해주시기 바랍니다.
