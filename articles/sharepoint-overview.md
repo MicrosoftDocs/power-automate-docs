@@ -29,20 +29,27 @@ Power Automate is deeply integrated with Microsoft SharePoint. You can start wit
 
 Here are some of the top scenarios in which you can use Power Automate with SharePoint:
 
+
+- 
+
 ### Approval workflows
 
+- Customize [SharePoint page approvals](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/customize-page-approvals) to meet your needs.
+- Require [approval of documents](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/require-doc-approval) in SharePoint using Power Automate.
 - Route finished documents to a [team for approval](./customize-sharepoint-page-approvals.md).
+
+### IT department wants to mage meta data on files
+
+- Manage [list item and file permissions](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/manage-list-item-file-permissions).
+- Use the [HTTP Request](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request) to mange lists and libraries.
+-  Migrate from [classic workflows to Power Automate flows](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
+- [Move files to different folders](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) after they’re approved in SharePoint.
+- [Create an item in SharePoint](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) when a new order is added in Salesforce.
+
+- [Get items from lists or get files from libraries](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-get-items-and-get-files).
 - Create [SharePoint reminder flows](create-sharepoint-reminder-flows.md).
 - Create a [flow for a list or library in SharePoint or OneDrive.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
 - [Edit a flow for a list in SharePoint.](https://support.microsoft.com/office/edit-a-flow-for-a-list-in-sharepoint-b6678daa-2c82-44eb-be3f-2a9cb56301e8)
-
-
-### IT department wants to track changes in meta data on files
-
-- Create a record in Microsoft Dynamics CRM when a list item gets added to a SharePoint list.
-- Copy new members from MailChimp lists to SharePoint lists.
-- Move files to different folders after they’re approved in SharePoint.
-- Create an item in SharePoint when a new order is added in Salesforce.
 
 
 ## SharePoint triggers and actions
