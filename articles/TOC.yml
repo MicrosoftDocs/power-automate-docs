@@ -38,10 +38,6 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
-  - name: Create a flow in Teams
-    href: flows-teams.md
-  - name: Create adaptive card flows in Teams
-    href: create-adaptive-cards-teams.md
   - name: Create a flow with Common Data Service (current environment)
     href: connection-cds-native.md
   - name: Create a flow with Common Data Service
