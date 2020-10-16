@@ -100,7 +100,7 @@
     href: create-sharepoint-reminder-flows.md
   - name: Create flow to customize SharePoint page approvals
     href: customize-sharepoint-page-approvals.md  
-- name: Microsoft Teams flows
+- name: Use flows with Microsoft Teams
   items:
   - name: Overview
     href: ./teams/overview.md
