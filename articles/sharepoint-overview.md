@@ -29,8 +29,9 @@ Power Automate is deeply integrated with Microsoft SharePoint. You can start wit
 
 Here are some of the top scenarios in which you can use Power Automate with SharePoint:
 
+- Approval workflows
+- Manage metadata on files
 
-- 
 
 ### Approval workflows
 
@@ -38,7 +39,7 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 - Require [approval of documents](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/require-doc-approval) in SharePoint using Power Automate.
 - Route finished documents to a [team for approval](./customize-sharepoint-page-approvals.md).
 
-### IT department wants to mage meta data on files
+### Manage metadata on files
 
 - Manage [list item and file permissions](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/manage-list-item-file-permissions).
 - Use the [HTTP Request](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request) to mange lists and libraries.
