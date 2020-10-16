@@ -42,7 +42,7 @@ search.audienceType:
 
 대부분의 웹 자동화 작업에는 상호작용할 웹 요소(element) 뿐만아니라 입력 작업을 위한 브라우저 인스턴스가 필요합니다:
 
-![웹 입력 작업](./wedia/web-automation/web-action-inputs.png)
+![웹 입력 작업](./media/web-automation/web-action-inputs.png)
 
 기존의 웹 요소(element)는 저장소(repository)에서 추가가 가능한 반면 새로 생성할 경우에는 작업 속성에서 직접 추가할 수도 있습니다:
 
