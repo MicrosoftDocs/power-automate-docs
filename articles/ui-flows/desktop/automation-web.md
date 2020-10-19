@@ -76,5 +76,30 @@ search.audienceType:
 
 모든 데이터 목록(list) 테이블은 추출할 그 요소들 가운데 둘이 지정되면 자동으로 식별되는 점을 주의하세요
 :
-
 ![웹페이지에서 데이터 데이블 추출하기(Extracting data table from web page)](./media/web-automation/extracting-data-table-from-web-page.png)
+
+[참조할 작업들](actions-reference/webautomation.md)에서 활용가능한 웹 자동화 작업 목록을 확인하실 수 있습니다..
+
+## 웹 및 웹 서비스와 상호작용하기
+
+웹 페이지, 파일 및 API 등과 같은 웹 자원들(web resources)과 웹 브라우저를 사용하지 않고 소통하는 것도 가능합니다.
+
+## 웹 자원들을 내려받기
+
+Use the **Download from web** action to directly download web page content, or files on the web:
+
+![The Download from web action](./media/interacting-web-services/download-from-web-action.png)
+
+Both the **GET** and **POST** methods may be used with this action; files can be downloaded directly to the disk, while web page contents are saved into a variable.
+
+## Accessing web APIs
+
+Use the **Invoke web service** action to access web APIs:
+
+![The Invoke web service action](./media/interacting-web-services/invoke-web-service-action.png)
+
+A variety of methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
+
+
+You'll find the list of web related actions available in the [Actions reference](actions-reference/web.md).
+
