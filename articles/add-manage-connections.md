@@ -1,6 +1,6 @@
 ---
 title: Learn to connect to your data using connections and on-premises data gateways | Microsoft Docs
-description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Office 365, OneDrive, Dropbox, Twitter, Google Drive, and more
+description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Microsoft 365, OneDrive, Dropbox, Twitter, Google Drive, and more
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,13 +23,13 @@ search.audienceType:
 ---
 # Manage connections in Power Automate
 
-Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Office 365<!--note from editor: Have you verified that this shouldn't be Microsoft 365 (here and later in the topic)?-->, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
+Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Microsoft 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
 
 You can use connections to perform these tasks:
 
 - Update a SharePoint list.
-- Get data from an Excel workbook<!--note from editor: Writing Style Guide prefers we use specific terms for files.--> in your OneDrive for Business or Dropbox account.
-- Send email in Office 365.
+- Get data from an Excel workbook in your OneDrive for Business or Dropbox account.
+- Send email in Microsoft 365.
 - Send a tweet.
 
 You can create a connection in multiple scenarios, including:
@@ -47,14 +47,14 @@ You can create a connection in multiple scenarios, including:
 
 1. In [Power Automate](https://flow.microsoft.com/), sign in with your work or organization account.
 
-1. On the left pane<!--via Writing Style Guide-->, select **Data** > **Connections**.
+1. On the left pane, select **Data** > **Connections**.
 
    ![Screenshot showing the Connections option](media/add-manage-connections/data-connections-link.png)
 
 1. At the top of the page, select **New connection**.
 
 1. In the list of available connections, choose the connection that you want to
-    set up (such as SharePoint) by selecting the plus sign (**+**)<!--Does this have a tooltip? If so, that could be a bold text string instead of "the plus sign". -->.
+    set up (such as SharePoint) by selecting the plus sign (**+**).
 
    ![List of connections that can be configured](media/add-manage-connections/new-connections-list.png)
 
@@ -108,6 +108,6 @@ When you update a connection, it's updated for both Power Apps and Power Automat
 
 ## Troubleshoot a connection
 
-Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Office 365,<!--Instance okay?--> or OneDrive for Business.
+Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Microsoft 365, or OneDrive for Business.
 
 For example, you might sign in to Power Automate with *yourname@outlook.com* but be blocked when you try to connect to SharePoint with *yourname@contoso.com*. You can instead sign in to Power Automate with *yourname@contoso.com* and you'll be able to connect to SharePoint.
