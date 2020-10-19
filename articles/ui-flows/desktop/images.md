@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Images
+# Automate using images
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
