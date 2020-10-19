@@ -70,11 +70,11 @@ search.audienceType:
 
 ![웹 페이지 요소의 상세 가져오기 작업](./media/web-automation/get-details-of-element-on-web-page-action.png)
 
-더 많은 데이터를 추출하려면 **Extract data from web page** 작업을 선택 후 웹 페이지에서 필요한 데이터 위에 마우스 오른쪼 클릭을 해 가능한 옵션을 볼 수 있습니다:
+더 많은 데이터를 추출하려면 **Extract data from web page** 작업을 선택 후 웹 페이지에서 필요한 데이터 위에 마우스 오른쪽 클릭을 해 가능한 옵션을 볼 수 있습니다:
 
 ![웹 페이지에서 데이터 추출하기(Extract data from web page)](./media/web-automation/extracting-data-from-web-page.png)
 
-모든 데이터 목록(list)와 테이블은 추출할 그 요소들 가운데 둘이 지정되면 자동으로 식별되는 점을 주의하세요
+모든 데이터 목록(list) 테이블은 추출할 그 요소들 가운데 둘이 지정되면 자동으로 식별되는 점을 주의하세요
 :
 
 ![웹페이지에서 데이터 데이블 추출하기(Extracting data table from web page)](./media/web-automation/extracting-data-table-from-web-page.png)
