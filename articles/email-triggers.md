@@ -46,7 +46,7 @@ In the following walkthroughs, we check all properties in the **when a new email
 
 ## Prerequisites
 * An account with access to [Power Automate](https://flow.microsoft.com)
-* An Office 365 Outlook account
+* An Microsoft 365 Outlook account
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connections to Office, Outlook, and the push notification service
 
@@ -54,7 +54,7 @@ In the following walkthroughs, we check all properties in the **when a new email
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
 >[!NOTE]
->While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as Google Sheets or a Microsoft Excel file stored on Dropbox.
+>While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
 
 Ok, let's get started:
 
@@ -74,7 +74,7 @@ Ok, let's get started:
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Give your flow a name. Then save it by selecting **Create flow** at the top of the page.
+1. Select **Save** at the top of the page.
    
     ![A screenshot that displays the save flow option](./media/email-triggers/email-triggers-subject-notification.png)
 
