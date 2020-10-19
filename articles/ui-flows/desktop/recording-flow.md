@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Recording in a desktop flow
+# Record flows in Power Automate Desktop
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -40,6 +40,22 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
  Select **+** to add a comment to the recorded actions:
 
 ![The comment button](./media/recording-flow/comment-button.png)
+
+ ## Web recorder
+
+In the flow designer, select **Web recorder** in the toolbar to record web-related actions:
+
+![The web recorder button](./media/recording-flow/web-recorder-button.png)
+
+Select a web browser to record your activity on; optionally, select an already open browser instance to attach to:
+
+![Select browser for recording](./media/recording-flow/select-browser-for-recording.png)
+
+The recorder keeps track of your activity within the web browser, generating a series of web actions:
+
+![Recording a web flow](./media/recording-flow/recording-web-flow.png)
+
+Similarly to the desktop recorder, comments may be added through the **+** button, while the recroding can be paused, resumed, and reset using the buttons at the top right-hand side.
 
  ## Recording vs building a flow
 
