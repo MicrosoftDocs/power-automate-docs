@@ -70,13 +70,13 @@ Ok, let's get started:
 
 1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
    
-    ![Notification details](./media/email-triggers/email-triggers-4.png)
+    ![A screenshot that displays the details of a notification](./media/email-triggers/email-triggers-4.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name. Then save it by selecting **Create flow** at the top of the page.
    
-    ![Save flow](./media/email-triggers/email-triggers-subject-notification.png)
+    ![A screenshot that displays the save flow option](./media/email-triggers/email-triggers-subject-notification.png)
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
