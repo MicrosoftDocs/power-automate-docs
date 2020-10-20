@@ -100,5 +100,4 @@ search.audienceType:
 
 다양한 메소드가 이 작업과 호환되므로 거의 모든 API를 수용해서 완전히 맞춤형 서비스를 구현할 수 있습니다.
 
-
 [참조할 작업들](actions-reference/webautomation.md)에서 활용가능한 웹 자동화 관련 작업 목록을 확인하실 수 있습니다.
