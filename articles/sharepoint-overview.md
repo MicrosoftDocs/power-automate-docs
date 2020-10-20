@@ -52,7 +52,7 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 - [Create an item in SharePoint](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) when a new order is added in Salesforce.
 - [Get items from lists or get files from libraries](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-get-items-and-get-files).
 - Create a [flow for a list or library in SharePoint or OneDrive.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
-- [Edit a flow for a list in SharePoint.](https://support.microsoft.com/office/edit-a-flow-for-a-list-in-sharepoint-b6678daa-2c82-44eb-be3f-2a9cb56301e8)
+- [Edit a flow.](https://support.microsoft.com/office/edit-a-flow-for-a-list-in-sharepoint-b6678daa-2c82-44eb-be3f-2a9cb56301e8)
 
 ### Other top scenarios
 
