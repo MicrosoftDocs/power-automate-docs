@@ -29,17 +29,23 @@ Power Automate is deeply integrated with Microsoft SharePoint. You can start wit
 
 Here are some of the top scenarios in which you can use Power Automate with SharePoint:
 
-- Approval workflows
-- Manage metadata on files
+- Migrate from workflows to Power Automate
+- Manage approval flows
+- Work with files and lists
+- Other top scenarios
 
+### Migrate from workflows to Power Automate
 
-### Approval workflows
+-  Migrate from [classic workflows to Power Automate flows](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
+
+### Manage approval flows
 
 - Customize [SharePoint page approvals](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/customize-page-approvals) to meet your needs.
 - Require [approval of documents](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/require-doc-approval) in SharePoint using Power Automate.
 - Route finished documents to a [team for approval](./customize-sharepoint-page-approvals.md).
 
-### Flows to manage files and lists
+
+### Work with files and lists
 
 - Manage [list item and file permissions](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/manage-list-item-file-permissions).
 - [Move files to different folders](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) after they’re approved in SharePoint.
@@ -51,7 +57,6 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 ### Other top scenarios
 
 - Use the [HTTP Request](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request) to mange lists and libraries.
--  Migrate from [classic workflows to Power Automate flows](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
 - Create [SharePoint reminder flows](create-sharepoint-reminder-flows.md).
 
 
