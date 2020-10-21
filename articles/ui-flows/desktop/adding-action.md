@@ -20,8 +20,8 @@ search.audienceType:
 
 To begin developing a flow, select an action and double-click on it, or drag it into the workspace. 
 
-![add action](\media\adding-actions\add-action.png)
+![add action](./media/adding-actions/add-action.png)
 
 A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
 
-![action properties](\media\adding-actions\action-properties.png)
+![action properties](./media/adding-actions.action-properties.png)
