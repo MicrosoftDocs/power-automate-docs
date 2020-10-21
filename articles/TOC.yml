@@ -38,10 +38,6 @@
     href: get-started-logic-flow.md
   - name: Trigger a flow with email
     href: email-triggers.md
-  - name: Create a SharePoint reminder flow
-    href: create-sharepoint-reminder-flows.md
-  - name: Create flow to customize SharePoint page approvals
-    href: customize-sharepoint-page-approvals.md
   - name: Create a flow with Common Data Service (current environment)
     href: connection-cds-native.md
   - name: Create a flow with Common Data Service
@@ -92,7 +88,15 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
-- name: Microsoft Teams flows
+- name: Use flows with SharePoint
+  items:
+  - name: Overview
+    href: sharepoint-overview.md
+  - name: Create SharePoint reminder flows
+    href: create-sharepoint-reminder-flows.md
+  - name: Manage SharePoint page approvals
+    href: customize-sharepoint-page-approvals.md  
+- name: Use flows with Microsoft Teams
   items:
   - name: Overview
     href: ./teams/overview.md
