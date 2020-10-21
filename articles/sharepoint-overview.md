@@ -56,7 +56,7 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 
 ### Other top scenarios
 
-- Use the [HTTP Request](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request) to mange lists and libraries.
+- Use the [HTTP Request](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request) to manage lists and libraries.
 - Create [SharePoint reminder flows](create-sharepoint-reminder-flows.md).
 
 
@@ -80,4 +80,4 @@ Whether you start with a SharePoint template or begin from scratch, using Power 
 - Get started with [Power Automate and SharePoint](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow). 
 - Get started with [approvals](https://docs.microsoft.com/power-automate/get-started-approvals).
 - Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
-- Approvals that require a signle approver.
+- Approvals that require a single approver.
