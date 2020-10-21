@@ -34,10 +34,6 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 - Work with files and lists
 - Other top scenarios
 
-### Migrate from workflows to Power Automate
-
--  Migrate from [classic workflows to Power Automate flows](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
-
 ### Manage approval flows
 
 - Customize [SharePoint page approvals](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/customize-page-approvals) to meet your needs.
@@ -74,6 +70,10 @@ Once your flow starts, you can use any of the more than [40 *actions*](https://d
 
 
 Whether you start with a SharePoint template or begin from scratch, using Power Automate to create automation features is intuitive.
+
+## Migrate from workflows to Power Automate
+
+-  Migrate from [classic workflows to Power Automate flows](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
 
 ## Next steps
 
