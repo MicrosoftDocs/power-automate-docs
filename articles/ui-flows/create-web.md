@@ -104,6 +104,8 @@ To address this, the user needs to manually edit the script to insert the comman
 
 -   These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
+- UI flows does not support Selenium IDE actions or steps that take more than 1 minute to run.  Use [Power Automate Desktop](./desktop/introduction.md) instead.
+
 -   Right click is not supported. 
 
 -   Additional Web UI flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
