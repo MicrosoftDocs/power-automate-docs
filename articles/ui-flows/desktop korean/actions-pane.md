@@ -1,6 +1,6 @@
 ---
-title: Actions and the actions pane | Microsoft Docs
-description: This section describes the actions and the actions pane in flow designer.
+title: 작업과 작업창 | Microsoft Docs
+description: 이 섹션은 흐름 디자이너에서 작업과 작업창에 대한 설명을 다룹니다.
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
@@ -14,27 +14,27 @@ search.audienceType:
   - enduser
 ---
 
-# Configure actions and the actions pane
+# 작업과 작업창 구성
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Upon opening the flow designer, the actions pane on the left side of the window shows all the action groups. 
+흐름 디자이너를 열면, 창 왼편에 있는 작업창에서 모든 작업 그룹을 볼 수 있습니다.
 
-![View of the actions pane](./media/actions-pane/actions-pane.png)
+![작업창 보기](./media/actions-pane/actions-pane.png)
 
-To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
+특정 작업을 빨리 검색하려면 검색창에 작업 이름을 입력하세요. 일부 일치하는 결과도 검색이 가능합니다.
 
-![Search in the actions pane](./media/actions-pane/actions-search.png)
+![작업창에서 찾기](./media/actions-pane/actions-search.png)
 
-## Adding an action to the workspace
+## 작업공간에 작업 추가하기
 
-To begin developing a flow, select an action and double-click on it, or drag it into the workspace. 
+흐름 개발을 시작하려면, 작업을 선택후 더블클릭하시거나 끌어서(드래그해서) 작업공간에 이동하셔도 됩니다.
 
-![add action](./media/adding-actions/add-action.png)
+![작업 추가하기](./media/adding-actions/add-action.png)
 
-A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
+작업 매개변수를 가진 대화 박스가 열립니다. 작업은 변수 이름과 같은 특정 매개변수와 기본 값을 갖고 있습니다. 다른 작업들은 시작하기 위해 사용자의 입력을 요구합니다. **저장(Save)**을 선택하면, 작업이 작업공간에 나타납니다.
 
-![action properties](./media/adding-actions/action-properties.png)
+![작업 속성](./media/adding-actions/action-properties.png)
 
 ## Configuring an action
 
