@@ -42,7 +42,7 @@ Power Automate Desktop actions consist of two main segments:
 - The input parameters - They have the form of text fields, drop-down menus, and  check boxes
 - The produced variables - Automatically created variables
 
-![Τhe parameters and the produced variables of the Copy folder action.](./media/configuring-actions/actions-parameteres-outputs.png)
+![Τhe parameters and the produced variables of the Copy folder action.](./media/configuring-actions/actions-parameteres-outputs.PNG)
 
 The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables. 
 
@@ -50,7 +50,7 @@ To use a variable as a parameter, select the icon on the field's right side and 
 
 Each field can accept specific data types, such as numbers, text, or lists. If a value or variable of a wrong data type is used as an input, the action will throw an error. 
 
-![The icon to select an input parameter in the action.](./media/configuring-actions/actions-parameteres.png)
+![The icon to select an input parameter in the action.](./media/configuring-actions/actions-parameteres.PNG)
 
 The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
 
@@ -58,17 +58,17 @@ Each produced variable has a data type defined by its data. You can see the data
 
 In case a produced variable isn't needed for later use, select the icon on the left side of it and pick **Not needed**. 
 
-![The option to disable a produced variable in the action.](./media/configuring-actions/actions-outputs.png)
+![The option to disable a produced variable in the action.](./media/configuring-actions/actions-outputs.PNG)
 
 ## Configuring action exceptions
 
 When an action throws an exception, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
 
-![The on On error option in the action.](./media/configuring-actions-exceptions/on-error-option-action.png)
+![The on On error option in the action.](./media/configuring-actions-exceptions/on-error-option-action.PNG)
 
 The dialog box first option is the **Retry action if an error occurs** checkbox, which makes the flow execute the action one more time after two seconds.
 
-![The Retry action checkbox in the action.](./media/configuring-actions-exceptions/retry-action.png)
+![The Retry action checkbox in the action.](./media/configuring-actions-exceptions/retry-action.PNG)
 
 To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
 
@@ -76,13 +76,13 @@ To continue the flow's execution, even if the retry option fails, select the **C
 - **Repeat action**: Repeats the action until it runs successfully. 
 - **Go to label**: Continues the execution from a point defined by a **Label** action.
 
-![The continue flow run option in the action.](./media/configuring-actions-exceptions/continue-flow-run.png)
+![The continue flow run option in the action.](./media/configuring-actions-exceptions/continue-flow-run.PNG)
 
 Power Automate Desktop offers two additional error handling options. Select the **New rule** button to:
 - **Set variable**: Sets the desired value to a specified variable.
 - **Run subflow**: Executes a specified subflow. 
 
-![The New rule option in the action.](./media/configuring-actions-exceptions/new-rule.png)
+![The New rule option in the action.](./media/configuring-actions-exceptions/new-rule.PNG)
 
 If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 
 
