@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# UI elements and controls
+# Automate using UI elements
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 

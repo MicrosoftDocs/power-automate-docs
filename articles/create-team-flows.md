@@ -91,6 +91,9 @@ You can add SharePoint lists as co-owners of a flow so that everyone who has edi
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
 
+>[!IMPORTANT]
+>SharePoint users must have **Edit** permission or be a member of the **Members** or **Owners** group to run flows in SharePoint.
+
 ## Remove an owner
 
 > [!IMPORTANT]

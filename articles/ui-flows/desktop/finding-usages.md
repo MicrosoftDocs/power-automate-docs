@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Finding usages within flows
+# Find usages within flows
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
