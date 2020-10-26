@@ -1,7 +1,7 @@
 # Various types of process automation
 
 This video provides a quick overview or process automation using Power Automate:
-<https://www.youtube.com/watch?v=CdXBL7CfwVE>
+> [!VIDEO https://www.youtube.com/embed/CdXBL7CfwVE]
 
 There are two main types of automation available in Power Automate:
 
