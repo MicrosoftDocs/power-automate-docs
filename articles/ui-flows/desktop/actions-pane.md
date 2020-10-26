@@ -36,29 +36,29 @@ search.audienceType:
 
 ![작업 속성](./media/adding-actions/action-properties.png)
 
-## Configuring an action
+## 작업 구성
 
-Power Automate Desktop actions consist of two main segments:
-- The input parameters - They have the form of text fields, drop-down menus, and  check boxes
-- The produced variables - Automatically created variables
+파워 오토메이트 데스크톱(Power Automate Desktop) 작업은 두가지 주요 부분으로 구성되어 있습니다.
+- 입력 매개변수 - 텍스트 영역, 드롭다운 메뉴와 체크박스 형태
+- 생성된 변수 - 자동으로 생성된 변수
 
-![Τhe parameters and the produced variables of the Copy folder action.](./media/configuring-actions/actions-parameteres-outputs.PNG)
+![폴더 복사 작업의 매개변수와 생성된 변수들](./media/configuring-actions/actions-parameteres-outputs.PNG)
 
-The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables. 
+입력 매개변수는 작업이 처리할 방법과 입력으로 가져올 데이터를 결정합니다. 해당 데이터는 하드코딩된 값일 수도 있고 변수일 수도 있습니다. 
 
-To use a variable as a parameter, select the icon on the field's right side and pick the respective variable.
+변수를 매개변수로 사용하려면, 해당 영역의 오른편에 있는 아이콘을 선택해서 해당되는 변수를 정하면 됩니다.
 
-Each field can accept specific data types, such as numbers, text, or lists. If a value or variable of a wrong data type is used as an input, the action will throw an error. 
+각 영역은 숫자, 텍스트 또는 리스트와 같은 특정 데이터 타입을 수용할 수 있습니다. 만일 값이나 변수가 맞지 않는 타입이 입력된다면, 작업은 에러를 발생합니다. 
 
-![The icon to select an input parameter in the action.](./media/configuring-actions/actions-parameteres.PNG)
+![작업에서 입력 매개변수를 선택하는 아이콘](./media/configuring-actions/actions-parameteres.PNG)
 
-The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
+생성된 변수는 나중에 사용하기 위해 작업의 결과물을 유지합니다. 모든 생성된 변수는 작업 속성(action's properties) 아랫 부분에 표시됩니다. 
 
-Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the [respective article](variable-data-types.md).
+각 생성된 변수들은 해당 데이터에의해 정의된 데이터 타입을 띱니다. **변수(Variables)** 창에서 변수의 데이터 타입을 보실 수 있습니다. 데이터 타입에 관한 더 많은 정보는 [해당 문서](variable-data-types.md)에서 확인하세요.
 
-In case a produced variable isn't needed for later use, select the icon on the left side of it and pick **Not needed**. 
+생성된 변수가 나중에 필요하지 않은 경우, 왼편에 있는 아이콘 가운데 **필요없음(Not needed)** 을 선택하시면 됩니다. 
 
-![The option to disable a produced variable in the action.](./media/configuring-actions/actions-outputs.PNG)
+![작업의 생성된 변수를 비활성화 하는 옵션](./media/configuring-actions/actions-outputs.PNG)
 
 ## Configuring action exceptions
 
