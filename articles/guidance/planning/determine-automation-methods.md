@@ -1,7 +1,7 @@
+### Determining which automation methods to use
+
 Once the process design is complete, the next step is the architectural design
 to focus on how you will automate that process.
-
-### Determining which automation methods to use
 
 Ideally, all the systems you want to automate have Power Automate connectors.
 Check the [list of
