@@ -19,7 +19,7 @@
       - name: Architectural Design
         items:
         - name: Determining which automation methods to use
-          href: planning/deterimine-automation-methods.md
+          href: planning/determine-automation-methods.md
         - name: Attended and unattended scenarios
           href: planning/attended-unattended.md
         - name: Separate flows into smaller automations
