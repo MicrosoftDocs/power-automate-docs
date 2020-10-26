@@ -90,7 +90,7 @@ Example triggers:
 
 -   When an item was modified in Sharepoint custom list
 
-![](media/bf4a71397d818a64404470dc7d0fbba0.png)
+![Automated triggers](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report would be to set an automated trigger
 for when a new record is created in the expense approvals entity in Common Data
@@ -105,7 +105,7 @@ triggered directly from a [Flow
 button](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
 or some of Microsoft services.
 
-![](media/a0b96821c66261477e9b05eff6ab5e92.png)
+![Instant triggers](media/instant-triggers.png "Instant triggers")
 
 #### Scheduled triggers 
 
@@ -117,4 +117,4 @@ In the expense report example, a good case to use scheduled triggers would be
 that the accounting team wants to send an automated email when the weekly BI
 report is ready on a Friday.
 
-![](media/664a971ac8a955bbd87737b6aabeeb2a.png)
+![Scheduled triggers](media/scheduled-triggers.png "Scheduled triggers")
