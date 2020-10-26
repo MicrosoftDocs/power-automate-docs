@@ -1,0 +1,54 @@
+- name: Guidance
+  items: 
+  - name: Power Apps guidance documentation
+    href: index.yml
+  - name: Planning a Power Automate project
+    items:
+    - name: Introduction
+      href: planning/introduction.md
+    - name: Various types of process automation
+      href: planning/various-types-process-automation.md
+    - name: Planning phase
+      items:
+      - name: Overview
+        href: planning/planning-phase.md
+    - name: Designing phase
+      items:
+      - name: Process Design
+        href: planning/process-design.md
+      - name: Architectural Design
+        items:
+        - name: Determining which automation methods to use
+          href: planning/deterimine-automation-methods.md
+        - name: Attended and unattended scenarios
+          href: planning/attended-unattended.md
+        - name: Separate flows into smaller automations
+          href: planning/separate-flows.md
+        - name: Authentication and security
+          href: planning/authentication-security.md
+        - name: Defining inputs and outputs
+          href: planning/define-input-output.md
+        - name: Handling sensitive text
+          href: planning/handling-sensitive-text.md
+        - name: Transforming and formatting Data
+          href: planning/transforming-formatting-data.md
+        - name: Reducing risk and planning for error handling
+          href: planning/reducing-risk.md
+        - name: Adding analytical data to Common Data Service
+          href: planning/adding-analytical-data.md
+        - name: Decision making flow for your design
+          href: planning/decision-making-flow.md
+    - name: Making phase
+      href: planning/making-phase.md
+    - name: Testing phase
+      items: 
+        - name: Testing strategy
+          href: planning/testing-strategy.md
+        - name: Tools and settings to test your automations
+          href: planning/tools-and-settings.md
+    - name: Deploying and refining phase
+      items:
+      - name: Deploying your automation to production
+        href: planning/deploy-to-production.md
+      - name: Analyze and assess the impact
+        href: planning/analyze-and-assess.md

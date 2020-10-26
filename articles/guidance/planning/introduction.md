@@ -1,0 +1,30 @@
+# Introduction: Planning a Power Automate Project
+
+Power Automate is a tool you can use to automate your manual and repetitive
+processes so that you can focus on a higher-value tasks. It is a unique, unified
+service that can automate cloud services, desktop applications, and legacy
+systems.
+
+Do you have a process or task that you want to automate but aren’t quite sure
+how to automate it? This documentation can help you plan and design an
+automation project, whether you’re a business user, an IT pro, or a professional
+app developer who has never worked on an automation project before.
+
+In these articles, you’ll learn about the steps to automate your business
+processes using Power Automate.
+
+The basic steps for creating an automation using Power Automate are as follows:
+
+1.  [**Plan**](planning-phase.md) Identify the who, what, when & why
+
+2.  [**Design**](designing-phase.md) Design your new automated process “on paper” and consider
+    various methods of automation
+
+3.  [**Make**](making-phase.md) Create the Power Automate flows
+
+4.  [**Test**](testing-phase.md) Try out the automation
+
+5.  [**Deploy and refine**](discoverability.md) Start using the automation in production, identify
+    processes that could be refined, and decide what to change or add
+
+In this set of articles, you will learn about each of the steps above in detail.
