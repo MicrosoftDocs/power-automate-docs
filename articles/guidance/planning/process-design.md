@@ -1,4 +1,4 @@
-## Process design
+# Process design
 
 When you design a process automation, the first step is to decide when and what
 to automate. Looking at the business process you currently have, you should
@@ -27,7 +27,7 @@ categories:
 
 -   Reminders
 
-### Apply standardized business rules
+## Apply standardized business rules
 
 Business rules are the “if/then” logic that applies your business’ policies.
 Automating them ensures they will be followed consistently every time.
@@ -37,7 +37,7 @@ an expense report amount exceeds \$10,000, then it needs to also be approved by
 the CFO. By automating the process, Abhay ensures no large-amount expense report
 slips past un-noticed.
 
-### Automate repetitive processes 
+## Automate repetitive processes 
 
 Automating repetitive processes can help your employees avoid mental and
 physical burnout. Processes that are done the same way every time are great
@@ -49,7 +49,7 @@ invoices from vendors. Abhay would have to manually scan these papers into a PDF
 and store it. He also would need to enter what is written on the paper and post
 it in the financial system for every expense report submitted.
 
-### Reduce human errors 
+## Reduce human errors 
 
 Tasks like copying and pasting values from one system to another, or keying in
 data from paper forms, are potential processes where human errors could occur.
@@ -71,7 +71,7 @@ from the reminder).
 
 ![After reminder automation is setup](media/before-reminder-automation.png "After reminder automation is setup")
 
-### Gain efficiency in high-volume processes
+## Gain efficiency in high-volume processes
 
 This type of process is closely tied to the repetitive processes. If a process
 must be done at high volumes, small improvements still could provide large
@@ -81,7 +81,7 @@ For example, if the expense reporting scenario were for 1000 salespeople, each
 minute of improvement would be an equivalent of 2 working days’ worth of time
 reduction.
 
-### Automate data entry 
+## Automate data entry 
 
 You might be manually entering data because there are two systems that do not
 talk to each other..
@@ -96,7 +96,7 @@ expense reporting business process will be covered by Power Automate.
 
 ![Scenario after efficiency improved](media/gain-efficiency-automated-scenario.png "Scenario after efficiency improved")
 
-### Maximize use of available resources
+## Maximize use of available resources
 
 Another good automation candidate are those processes that could be run
 independent of human interaction.
@@ -115,7 +115,7 @@ fulfilling the orders in the morning.
 
 ![Maximize use of resources](media/maximize-use-of-resources.png "Maximize use of resources")
 
-### Increase throughput 
+## Increase throughput 
 
 Similar to maximizing the use of available resources, but slightly different, is
 increasing the throughput of a particular process. With this type of automation,

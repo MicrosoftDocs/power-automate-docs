@@ -1,10 +1,10 @@
-### Attended
+# Attended and unattended scenarios
 With any of the automation methods you use, the automation is going to be either
 attended or unattended.
 
 ![Unattended and attended](media/unattended-attended.png "Unattended and attended")
 
-#### Attended (human initiated) scenarios
+## Attended (human initiated) scenarios
 
 This is a scenario where automations are executed when users are in-front of the
 computer. It is suited for scenarios where you want to automate tasks and
@@ -12,7 +12,7 @@ processes at an individual level. The automations are often triggered manually
 whenever the user wants to run them. The process may include steps that require
 human interactions or decisions between steps.
 
-#### Unattended (fully automated) scenarios
+## Unattended (fully automated) scenarios
 
 This is a scenario where a designated computer or a server will be set up to run
 the automation on behalf of a user. The whole automation process is run fully by

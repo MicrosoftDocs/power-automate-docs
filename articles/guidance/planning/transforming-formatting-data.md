@@ -1,4 +1,4 @@
-### Transforming and formatting Data
+# Transforming and formatting Data
 
 It may well be that some of the data you retrieved from a system needs to be
 transformed to be usable by other systems used later in the process. For
@@ -9,14 +9,14 @@ consideration when designing the architecture.
 
 Here are some of the ways you can transform and format your data.
 
-#### Built-in Actions
+## Built-in Actions
 
 With Built-in actions you can find actions that allow you to convert values and texts to
 different formats.
 
 ![Built-in text function](media/text-function.png "Built-in text function")
 
-#### Expressions
+## Expressions
 
 Expressions allow you use an Excel like equations to convert and manipulate
 data. 

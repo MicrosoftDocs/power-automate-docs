@@ -1,4 +1,4 @@
-### Defining inputs and outputs
+# Defining inputs and outputs
 
 In any automation, there is an input and an output. Before you start creating
 automations with Power Automate, you need to define what they are.
@@ -32,7 +32,7 @@ It may look overwhelming, but the majority of the inputs can be retrieved
 automatically. For example, the employee’s name and email can be retrieved if
 the automation is triggered manually by the employee.
 
-#### Securing inputs and outputs
+## Securing inputs and outputs
 
 If you are handling sensitive data such as login IDs, passwords, banking
 information etc, you can use the Secure Inputs and Secure Outputs feature in

@@ -17,7 +17,7 @@ The basic steps for creating an automation using Power Automate are as follows:
 
 1.  [**Plan**](planning-phase.md) Identify the who, what, when & why
 
-2.  [**Design**](designing-phase.md) Design your new automated process “on paper” and consider
+2.  [**Design**](process-design.md) Design your new automated process “on paper” and consider
     various methods of automation
 
 3.  [**Make**](making-phase.md) Create the Power Automate flows

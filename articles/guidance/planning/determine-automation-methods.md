@@ -1,4 +1,4 @@
-### Determining which automation methods to use
+# Determining which automation methods to use
 
 Once the process design is complete, the next step is the architectural design
 to focus on how you will automate that process.
@@ -22,13 +22,13 @@ from:
 
 -   Use the HTTP Connector
 
-#### Creating a custom connector 
+## Creating a custom connector 
 
 If you are a developer or your organization has a developer who can create
 [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/),
 this will be the preferred method of automation.
 
-#### Web browser automation
+## Web browser automation
 
 If you couldn’t find a connector, and if the system is a web/browser based
 application or a website, web browser automation is what you should consider.
@@ -41,7 +41,7 @@ flows](https://docs.microsoft.com/power-automate/ui-flows/create-web) or by
 WebAutomation](https://docs.winautomation.com/en/building-a-webautomation-process.html)
 Process using Power Automate Desktop.
 
-#### Desktop application automation
+## Desktop application automation
 
 If you couldn’t find a connector, and if the system is a desktop application on
 a PC, this is the automation method to use. Power Automate has capabilities that
@@ -63,7 +63,7 @@ The chart below shows the comparison of the different methods.
 In complex automation scenarios, you can combine all these types of automations
 mentioned above.
 
-### Triggering the automation to start
+## Triggering the automation to start
 
 With any of the automation methods above, you need to consider how to trigger
 (start) these automations. The ways you can trigger an automation are as
@@ -75,7 +75,7 @@ follows:
 
 -   Scheduled Triggers
 
-#### Automated triggers
+## Automated triggers
 
 With an **automated trigger**, a system automatically starts the automation when
 a condition is met. (Note: Not all connectors include automated triggers.)
@@ -97,7 +97,7 @@ for when a new record is created in the expense approvals entity in Common Data
 Service. This is so that Power Apps can be used to create a form, which then
 creates a new record in Common Data Service.
 
-#### Instant / Manual triggers 
+## Instant / Manual triggers 
 
 **Instant / Manual** trigger is a type of trigger where a user needs to manually
 start that automation or the trigger is instantaneously started. This can be
@@ -107,7 +107,7 @@ or some of Microsoft services.
 
 ![Instant triggers](media/instant-triggers.png "Instant triggers")
 
-#### Scheduled triggers 
+## Scheduled triggers 
 
 **Scheduled** triggers are set with a specific date and time to trigger and to
 repeat on a periodic basis. It is useful for situations where you need to

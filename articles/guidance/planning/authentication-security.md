@@ -1,4 +1,4 @@
-### Authentication and security
+# Authentication and security
 
 Your automation will probably be accessing data and systems that are protected
 by requiring users to sign in. Different automation scenarios require Power
@@ -11,7 +11,7 @@ automating with Power Automate.
 
 ![Different types of automation](media/automation-types.png "Different types of automation")
 
-#### On-premise Data gateway
+## On-premise Data gateway
 
 For desktop and website automations, On-premise data gateway is used to connect
 Power Automate and the on-premise data gateway capabilities. This is required so
@@ -20,7 +20,7 @@ extensions and Power Automate Desktop) can be accessed from Power Automate
 remotely. More information on [setting up on-premise data
 gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install).
 
-#### Authentications using Microsoft 365 / Azure AD
+## Authentications using Microsoft 365 / Azure AD
 
 This is the authentication for any automation that you use with Microsoft
 services. When the automations are run, they will be run on behalf of the user
@@ -28,7 +28,7 @@ who runs the automation and not the user who has set up the automation.
 
 ![Azure AD login screen](media/azure-ad-login.png "Azure AD login screen")
 
-#### Authentications using a username and password
+## Authentications using a username and password
 
 This type of authentication is used for systems and services that have an
 independent system other than what is used with Office 365 / Azure AD, with a
@@ -42,7 +42,7 @@ Twitter etc. all have their own login methods. Some enterprise systems provide
 With the expense reporting example, the online banking system would have its own
 login ID and password.
 
-#### Authentications using On-premise system / Windows login
+## Authentications using On-premise system / Windows login
 
 This type of authentication will be required if you are planning to automate
 with the Power Automate Desktop application or UI flows. It is separate from
@@ -51,7 +51,7 @@ network, it is highly likely that it uses an Active Directory.
 
 ![Windows logging screen](media/windows-login.jpg "Windows logging screen")
 
-#### Authentications using a shared key
+## Authentications using a shared key
 
 This authentication is usually used for online services, which is to be used for
 system to system (API) automations where the services are shared across the
