@@ -1,4 +1,4 @@
-### Separate flows into smaller automations
+# Separate flows into smaller automations
 
 When you are setting up an automation, try to architect your flows so that you
 do not have a single automation that covers the entire process. There are number

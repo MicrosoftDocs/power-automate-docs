@@ -1,4 +1,4 @@
-### Handling sensitive text
+# Handling sensitive text
 
 If you need to securely store and pass a sensitive text inside Web browser or
 Desktop automation, you can define the [input as a sensitive
