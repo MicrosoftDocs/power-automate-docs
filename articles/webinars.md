@@ -27,7 +27,7 @@ by Stephanie Whitaker and Jonathan Lipsitz
 [Register and watch now](https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-of-Microsoft-Power-Automate.html?Lcid=EN-US)
 
 **Real-World Examples of Microsoft Power Automate in Action**  
-by Jon Levesque and  Matthew Weston
+by Jon Levesque and  Matthew Weston<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-Real-World-Examples-of-Microsoft-Power-Automate-in-Action.html?LCID=EN-US)
 
 ### See also
