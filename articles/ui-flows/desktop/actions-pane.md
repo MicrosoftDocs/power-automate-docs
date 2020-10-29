@@ -62,40 +62,40 @@ search.audienceType:
 
 ## Configuring action exceptions
 
-When an action throws an exception, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
+작업에서 예외가 발생하면 흐름은 기본적으로 실행을 중지합니다. 작업에 대한 사용자 맞춤형으로 오류 처리 동작을 구성하려면 해당 속성에서 **오류관련(On error)** 옵션을 선택합니다.
 
-![The on On error option in the action.](./media/configuring-actions-exceptions/on-error-option-action.PNG)
+![오류 관련과 관련한 작업](./media/configuring-actions-exceptions/on-error-option-action.PNG)
 
-The dialog box first option is the **Retry action if an error occurs** checkbox, which makes the flow execute the action one more time after two seconds.
+대화 상자의 첫 옵션에 **에러 발생시 다시시도 작업(Retry action if an error occurs)** 체크박스를 하면 그 흐름이 2초 후에 해당 작업을 다시 실행하게 됩니다.
 
-![The Retry action checkbox in the action.](./media/configuring-actions-exceptions/retry-action.PNG)
+![작업 다시시도 체크박스 작업](./media/configuring-actions-exceptions/retry-action.PNG)
 
-To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
+다시시도 옵션이 실패하더라도 흐름 실행을 계속하려면 **흐름 실행 계속(Continue flown run)** 옵션을 선택합니다. ​드롭다운 목록에서 아래와 같이 수행 할 수 있습니다.
 
-- **Go to next action**: Executes the following action in order.
-- **Repeat action**: Repeats the action until it runs successfully. 
-- **Go to label**: Continues the execution from a point defined by a **Label** action.
+- **다음 작업으로 가기(Go to next action)**: 순서에 따라 다음 작업을 실행
+- **반복 작업(Repeat action)**: 성공할 때까지 해당 작업을 반복
+- **라벨로 이동(Go to label)**: **라벨(Label)** 작업에서 정의한 지점에서 실행 계속
 
-![The continue flow run option in the action.](./media/configuring-actions-exceptions/continue-flow-run.PNG)
+![흐름 계속 실행 옵션](./media/configuring-actions-exceptions/continue-flow-run.PNG)
 
-Power Automate Desktop offers two additional error handling options. Select the **New rule** button to:
-- **Set variable**: Sets the desired value to a specified variable.
-- **Run subflow**: Executes a specified subflow. 
+파워 오토메이트 데스크톱(Power Automate Desktop)은 추가적으로 오류 처리 옵션을 두가지 제공합니다. **새 규칙(New rule)** 버튼을 선택해서
+- **변수 설정(Set variable)**: 희망한 값을 특정 변수에 설정할 수 있고
+- **하위 흐름 실생(Run subflow)**: 특정 하위 흐름을 실행할 수 있습니다
 
-![The New rule option in the action.](./media/configuring-actions-exceptions/new-rule.PNG)
+![새 규칙 옵션](./media/configuring-actions-exceptions/new-rule.PNG)
 
-If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 
+만일 서로 다른 오류들에 대해 각각 다른 오류 처리 동작이 필요하다면, **고급(Advanced)** 옵션을 선택해서 발생가능한 각 오류들을 알맞게 구성하면 됩니다.
 
-## Enabling and disabling actions
+## 작업 활성화 및 비활성화
 
-To disable or enable an action, right-click on it and select **Disable action** or **Enable Action**, respectively. 
+작업을 활성화 또는 비활성화 하려면, 마우스 오른쪽 클릭하여 **작업 비활성화(Disable action)** 또는 **작업 활성화(Enable Action)** 를 알맞게 선택하세요. 
 
-![The disable action option.](./media/enabling-disabling-actions/enable-disable-action.png)
+![작업 비활성화 옵션](./media/enabling-disabling-actions/enable-disable-action.png)
 
-Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a flow and decide which one is the most efficient. 
+작업을 비활성화를 통해 해당 작업을 지우지 않고 흐름에서만 제거 할 수 있습니다. 이 기능은 일반적으로 어떤 흐름을 여러 버전으로 테스트하고 어떤 것이 가장 효율적인지를 판단하는 데 적용하실 수 있습니다.
 
-When an action is disabled, all variables defined in it are hidden from the **Variables** pane. If the hidden variables are used in other actions, the flow may throw an error. 
+작업이 비활성화 되면, 거기에 정의된 모든 변수들은 **변수들(Variables)** 창에서 숨김 상태가 됩니다. 만일 숨겨진 변수들이 다른 작업에서 사용된다면, 그 흐름은 오류를 발생시킬 수도 있습니다. 
 
-In the example below, two actions threw an error because they contain variables defined in a disabled action.
+아래 예제에서, 두 작업이 오류를 발생하는데 비활성화된 작업에서 정의된 변수들을 포함하고 있기 때문입니다.
 
-![An example in which disabling an action hides some varibales.](./media/enabling-disabling-actions/enable-disable-action-variables.png)
+![작업 비활성화로 변수들이 숨겨진 예](./media/enabling-disabling-actions/enable-disable-action-variables.png)
