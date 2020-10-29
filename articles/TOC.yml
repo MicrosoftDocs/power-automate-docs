@@ -92,6 +92,7 @@
   items:
   - name: Overview
     href: sharepoint-overview.md
+    displayName: Use flows with SharePoint
   - name: Create SharePoint reminder flows
     href: create-sharepoint-reminder-flows.md
   - name: Manage SharePoint page approvals
@@ -100,6 +101,7 @@
   items:
   - name: Overview
     href: ./teams/overview.md
+    displayName: Use flows with Microsoft Teams
   - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
   - name: Model flows with adaptive cards
