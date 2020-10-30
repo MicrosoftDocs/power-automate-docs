@@ -35,13 +35,7 @@ You can either remove a flow from a solution, or delete the flow from an environ
 
 1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains the flow you want to remove.
-<!--note from editor: We get build errors (soon to become warnings) when we reuse images and alt text in an article. You don't actually need either of the following images; the UI isn't complex, and the BACX Leadership Team wants us to reel back the number of images anyway (I believe because of the cost, especially the Loc cost). Suggest deleting. If you don't like, you'll need to use different art and different alt text.
-   ![A screenshot that shows a flow inside a solution selected.](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
--->
 1. Select **More commands** (...) for your flow, select **Remove**, and then select **Remove from this solution**.
-<!--note from editor: As above.
-   ![A screenshot that shows the option to remove a flow from a solution highlighted.](./media/remove-solution-aware-flow/delete-flow-from-solution.png)
--->
 
 >[!IMPORTANT]
 >When you remove a flow, it gets moved to the **Common Data Service Default Solution**, where you can edit or delete the flow, or add it to another solution. 
@@ -50,14 +44,7 @@ You can either remove a flow from a solution, or delete the flow from an environ
 
 1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains the flow you want to delete from the environment.
-<!--
-   ![A screenshot that shows the flow to be removed from the environment selected.](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
---> 
-1. Select **...**<!--note from editor: Using **More commands** (...) and then simply **...** is via Writing Style Guide --> for your flow, select **Remove**, and then select **Delete from this environment**.
-
-<!--
-   ![A screenshot that shows the option to delete a flow from an environment highlighted.](./media/remove-solution-aware-flow/delete-flow-from-environment.png)
--->
+1. Select **More commands** (...) for your flow, select **Remove**, and then select **Delete from this environment**.
 
 ## Learn more
 
