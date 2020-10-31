@@ -55,7 +55,7 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 
 ## SharePoint triggers and actions
 
-You can use SharePoint triggers to start flows that monitor changes made to a SharePoint list or library. For a full list, go to [SharePoint triggers](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).<!--note from editor: Suggested.-->
+You can use SharePoint triggers to start flows that monitor changes made to a SharePoint list or library. For a full list, go to [SharePoint triggers](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).
 
 ![A screenshot that shows some SharePoint triggers such as "When an item is created"](./media/overview-sharepoint/sharepoint-triggers.png)
 
@@ -72,6 +72,3 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](htt
 - Get started with [Power Automate and SharePoint](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow). 
 - Get started with [approvals](https://docs.microsoft.com/power-automate/get-started-approvals).
 - Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
-<!--note from editor: Commenting out this bullet until there's an actual step here
-- Approvals that require a single approver.
--->
