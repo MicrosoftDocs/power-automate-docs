@@ -1,6 +1,6 @@
 ---
-title: Manage UI flows in the Center of Excellence | Microsoft Docs
-description: Manage UI flows in the Center of Excellence.
+title: Monitor UI flows in the Center of Excellence | Microsoft Docs
+description: Learn about trends, usage patterns, and more.
 services: ''
 suite: flow
 documentationcenter: na
