@@ -84,17 +84,17 @@ conceptualContent:
           url: /power-automate/ui-flows/desktop/introduction
           itemType: concept
 
-    - title: Use flows with Microsoft Teams
+    - title: Use flows with...
       links:
-        - text: Trigger flows from Microsoft Teams messages
-          url: /power-automate/trigger-flow-teams-message
+        - text: Microsoft Teams
+          url: /power-automate/teams/overview
           itemType: overview
-        - text: Model flows with adaptive cards
-          url: /power-automate/create-adaptive-cards
-          itemType: overview
-        - text: Create flows using the Power Apps app
-          url: /power-automate/teams/create-flows-power-apps-app
-          itemType: overview 
+        - text: SharePoint
+          url: /power-automate/sharepoint-overview
+          itemType: overview        
+        - text: Microsoft 365 Outlook
+          url: /power-automate/email-triggers
+          itemType: how-to-guide        
     
     - title: Use solutions for ALM
       links:
