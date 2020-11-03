@@ -4,8 +4,8 @@ description: IP address configuration
 services: ''
 suite: flow
 documentationcenter: na
-author: stepsic-microsoft-com
-manager: anneta
+author: masisley
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
