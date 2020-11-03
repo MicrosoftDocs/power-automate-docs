@@ -1,6 +1,6 @@
 ---
-title: Manage UI flows | Microsoft Docs
-description: Manage UI flows
+title: Monitor UI flows in the Center of Excellence | Microsoft Docs
+description: Learn about trends, usage patterns, and more.
 services: ''
 suite: flow
 documentationcenter: na
@@ -19,39 +19,16 @@ search.app:
   - Flow
 search.audienceType: 
   - flowmaker
-  - enduser
+  - flowadmin
 ---
 
-# Manage UI flows
+# Monitor UI flows in the Center of Excellence
 
-After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows** tab.
-
-## List of UI flows
-
-1. Sign into Power Automate.
-1. Select **My flows** > **UI flows**.
-
-   ![View all UI flows](../media/manage-ui-flows/view-all.png "View all UI flows")
-
-From this section, you can create a new UI flow and edit or delete your existing UI flows.
-
-## Details page
-
-For each of your UI flows, you can see its details by selecting its name from the list of UI flows. You then see details including:
-
--   The run history with details of each run.
--   The applications or Websites used in the UI flow.
-
-Follow these steps to see the details for a UI flow:
-
-1. Sign into Power Automate.
-1. Select **My flows** > **UI flows**.
-1. Select any of your UI flows.
-
-   ![View details](../media/manage-ui-flows/view-details.png "View details")
+For an overview of the UI flows in your environment, visit the [Microsoft Power Platform Center of Excellence](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-monitor#ui-flows).
 
 ## Learn more
 
-- Learn to [create desktop UI flows](create-desktop.md).
-- Learn to [create Web UI flows](create-web.md).
-- Learn how to run [UI flows](run-ui-flow.md).
+- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#ui-flows-risk-assessment) in your environment.
+- [Create desktop UI flows](create-desktop.md).
+- [Create Web UI flows](create-web.md).
+- Run [UI flows](run-ui-flow.md).
