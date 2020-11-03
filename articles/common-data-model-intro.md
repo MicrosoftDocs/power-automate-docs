@@ -36,7 +36,7 @@ In this article, you will create a flow that sends an email notification when a 
 * Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
   
     If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
-* If you haven't used Common Data Service before, open the **Entities** tab of [Power Apps](https://web.powerapps.com/#/entities), and then select **Create my database**.
+* If you haven't used Common Data Service before, create a [Common Data Service environment with a database](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database) in the Power Platform admin center.
 
 ## Sign in to your environment
 
