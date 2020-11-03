@@ -170,6 +170,8 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
+  - name: Monitor UI flows in the Center of Excellence
+    href: ./ui-flows/monitor.md
   - name: Power Automate Desktop UI flows (Preview)
     items: 
     - name: Introduction to Power Automate Desktop
