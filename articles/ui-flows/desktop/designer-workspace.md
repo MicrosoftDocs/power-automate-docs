@@ -28,6 +28,8 @@ Drag actions to rearrange them or right-click on an action and select **Move Up*
 
 Copy and paste any selected actions in the workspace. This can be done within the same subflow, among different subflows, or other open instances of flow designer.
 
+![right click context menu](./media/designer-workspace/right-click-context-menu.png)
+
 ## Setting up subflows
 
 Subflows are groups of actions, which may be referenced as a group within a flow.
