@@ -18,6 +18,8 @@ search.audienceType:
 ---
 # Create a flow by using Dynamics 365 (online)
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
 > Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
 >

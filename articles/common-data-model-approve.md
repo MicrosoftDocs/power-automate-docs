@@ -23,6 +23,8 @@ search.audienceType:
 ---
 # Build an approval loop by using Power Automate and Common Data Service
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
 
 In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.

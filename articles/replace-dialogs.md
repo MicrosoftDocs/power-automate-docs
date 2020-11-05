@@ -24,6 +24,8 @@ search.audienceType:
 ---
 # Replace dialogs with business process flows or canvas apps
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 [Dialogs are deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
 

@@ -14,6 +14,7 @@ audience: Power user
 
 # Power Automate Web API
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
