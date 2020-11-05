@@ -22,7 +22,7 @@ search.audienceType:
 ---
 # Power Automate for enterprise developers, ISVs, and partners
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 As a developer, you can extend Power Automate, enabling even more powerful solutions for organizations and customers.
 
