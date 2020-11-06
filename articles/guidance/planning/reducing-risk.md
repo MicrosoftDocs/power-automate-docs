@@ -19,7 +19,7 @@ available but you do have web APIs or other methods of system integration, you
 should consult your IT or pro-dev teams to help you set up [custom
 connectors](https://docs.microsoft.com/connectors/custom-connectors/).
 
-## Possible failures with automation using connectors
+### Possible failures with automation using connectors
 
 -   Connecting systems shutdown due to maintenance
 
@@ -27,13 +27,13 @@ connectors](https://docs.microsoft.com/connectors/custom-connectors/).
 
 -   Changes to how systems are connected (API versions changes)
 
-## Possible failures with Web application automation
+### Possible failures with Web application automation
 
 -   Screen design changes (and therefore bot cannot tell how to proceed)
 
 -   System unavailability due to regression
 
-## Possible failures with Desktop application automation
+### Possible failures with Desktop application automation
 
 -   Screen design changes (and therefore bot cannot tell how to proceed)
 
@@ -41,7 +41,7 @@ connectors](https://docs.microsoft.com/connectors/custom-connectors/).
 
 -   System unavailability due to regression
 
-## Possible failures common with any automation
+### Possible failures common with any automation
 
 -   Changes to passwords
 

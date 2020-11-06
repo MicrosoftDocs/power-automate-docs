@@ -1,3 +1,8 @@
+# Making Phase
+
+You have now planned and designed how you would like to automate your process.
+The next step is to set up the automations.
+
 ## Basic steps for Power Automate flows
 
 The following are the basic steps for creating Power Automate flows.
@@ -9,9 +14,10 @@ The following are the basic steps for creating Power Automate flows.
 
 2.  [Add
     actions](https://docs.microsoft.com/power-automate/multi-step-logic-flow)
-    and [conditions](https://docs.microsoft.com/power-automate/add-condition)
+    and [conditions](https://docs.microsoft.com/power-automate/add-condition).
 
-More information on creating API flows can be found here.
+More information on [creating API
+flows](https://docs.microsoft.com/power-automate/get-started-logic-template).
 
 ## Basic steps for Desktop UI flows
 
@@ -24,18 +30,19 @@ More information on creating API flows can be found here.
 3.  Define and set up the outputs based on what you have identified in the
     design phase.
 
-4.  Test recording
+4.  Test recording.
 
 ## Basic steps for Web UI flows
 
 1.  Define inputs.  
     Set up the inputs based on what you have identified in the design phase.
 
-2.  Record steps and define output in Selenium IDE
+2.  Record steps and define output in [Selenium
+    IDE](https://docs.microsoft.com/power-automate/ui-flows/create-web)
 
 3.  Set up the outputs based on what you have identified in the design phase.
 
-4.  Test recording
+4.  Test recording.
 
 ## Basic steps for Power Automate Desktop 
 
@@ -48,5 +55,4 @@ More information on creating API flows can be found here.
 
 4.  Test the created UI flow.
 
-Set up triggers and links between API flows to Power Automate Desktop  
-
+Set up triggers and links between API flows to Power Automate Desktop.

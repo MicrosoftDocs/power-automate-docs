@@ -10,7 +10,7 @@ of reasons why you should make them into multiple, smaller flows:
 
 -   You can build the automation with multiple people
 
-No need to restart the automation from beginning if a step failsIn the example
+No need to restart the automation from beginning if a step fails. In the example
 below, there is one automation set up for an approval process, covering multiple
 processes with a single automation.
 

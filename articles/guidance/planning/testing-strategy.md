@@ -25,6 +25,8 @@ possible combinations that may potentially fail:
 | 2        | Status updated to “Compliance check complete” | Status update fails    | Notified flow maker and logged failure to “flow runs” feature. |               |
 | 3        | Email sent to employee to fix email           | Email send fails       | Notified flow maker and logged failure to “flow runs” feature. |               |
 
+[!TIP] Try running a test to send it to a non-existent address to simulate email send fails.
+
 ## Testing in “Live only” environments
 
 Ideally, all tests should be done in test environments. However, there are

@@ -40,8 +40,8 @@ slips past un-noticed.
 ## Automate repetitive processes 
 
 Automating repetitive processes can help your employees avoid mental and
-physical burnout. Processes that are done the same way every time are great
-places to consider for automation.
+physical burnout. Processes that are done the same way every time should be high
+on your list to consider for automation.
 
 For example, Abhay the accountant must collect expense forms and receipts from
 everyone. The receipts could be a paper receipt from restaurants or paper
@@ -122,3 +122,10 @@ increasing the throughput of a particular process. With this type of automation,
 your current process co-exists with the automation in parallel.
 
 ![Increasing throughput](media/increasing-throughput.png "Increasing throughput")
+
+## Example scenario
+
+When all of the automations area are applied, the example below shows how an
+expense reporting business process will be covered by Power Automate.
+
+![Diagram of process after automation is applied](media/process-after-automation-applied.png "Diagram of process after automation is applied")

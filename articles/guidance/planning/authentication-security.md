@@ -11,13 +11,21 @@ automating with Power Automate.
 
 ![Different types of automation](media/automation-types.png "Different types of automation")
 
+To set up the automations, make sure you have the necessary authentication
+(login) information ready. You will need this information when you are [making a
+new
+connection](https://docs.microsoft.com/power-automate/add-manage-connections) to
+set up your automation, setting up to [access data via on-premise data
+gateway](https://docs.microsoft.com/power-automate/add-manage-connections#connect-to-your-data-through-an-on-premises-data-gateway),
+or when using [UI
+flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
+
 ## On-premise Data gateway
 
-For desktop and website automations, On-premise data gateway is used to connect
-Power Automate and the on-premise data gateway capabilities. This is required so
-that programs that are installed in the on-premise machines (eg. Browser
-extensions and Power Automate Desktop) can be accessed from Power Automate
-remotely. More information on [setting up on-premise data
+For desktop and website automations, On-premise data gateway is required so that
+programs that are installed in the on-premise machines (eg. browser extensions
+and Power Automate Desktop) can be accessed from the Power Automate cloud-based
+service. More information on [setting up on-premise data
 gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install).
 
 ## Authentications using Microsoft 365 / Azure AD
@@ -59,12 +67,3 @@ company. This is typically provided/setup by your IT department where the
 connector is shared to you.
 
 ![API keys in Azure portal](media/azure-api-key.png "API keys in Azure portal")
-
-To set up the automations, make sure you have the authentication (login)
-information above ready. You will need these information when you are [making a
-new
-connection](https://docs.microsoft.com/power-automate/add-manage-connections) to
-setup your automation, setting up to [access data via on-premise data
-gateway](https://docs.microsoft.com/power-automate/add-manage-connections#connect-to-your-data-through-an-on-premises-data-gateway),
-or when using [UI
-flows](https://docs.microsoft.com/power-automate/ui-flows/overview).

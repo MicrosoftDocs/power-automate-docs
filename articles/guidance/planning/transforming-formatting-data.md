@@ -26,34 +26,34 @@ data.
 The list of different expressions are listed below:
 
 -   [String
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
 
 -   [Collection
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
 
 -   [Logical comparison
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
 
 -   [Conversion
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
 
 -   [Implicit data type
-    conversions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
+    conversions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
 
 -   [Math
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
 
 -   [Date and time
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
 
 -   [Workflow
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
 
 -   [URI parsing
-    functions](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
+    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
 
 -   [Manipulation functions: JSON &
-    XML](https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
+    XML](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
 
 The full list can be found in [functions
 reference](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference).

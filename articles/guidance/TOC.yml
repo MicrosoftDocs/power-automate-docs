@@ -1,6 +1,6 @@
 - name: Guidance
   items: 
-  - name: Power Apps guidance documentation
+  - name: Power Automate guidance documentation
     href: index.yml
   - name: Planning a Power Automate project
     items:
@@ -32,6 +32,8 @@
           href: planning/handling-sensitive-text.md
         - name: Transforming and formatting Data
           href: planning/transforming-formatting-data.md
+        - name: Formalizing messages and alerts
+          href: planning/formalizing-messages-alerts.md
         - name: Reducing risk and planning for error handling
           href: planning/reducing-risk.md
         - name: Adding analytical data to Common Data Service

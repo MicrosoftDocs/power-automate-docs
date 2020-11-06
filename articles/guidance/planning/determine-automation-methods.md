@@ -16,19 +16,32 @@ from:
 
 -   Create a custom connector
 
+-   Use the HTTP connector
+
 -   Web browser automation
 
 -   Desktop application automation
 
--   Use the HTTP Connector
-
-## Creating a custom connector 
+#### Creating a custom connector 
 
 If you are a developer or your organization has a developer who can create
 [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/),
 this will be the preferred method of automation.
 
-## Web browser automation
+More information on [setting up custom
+connectors](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
+
+#### Use the HTTP connector
+
+If you are a developer and have one-off scenarios where you need to connect to
+systems with no connectors available, but do not want to setup custom
+connectors, HTTP connector is the next preferred method.
+
+More information on [HTTP
+connector](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)
+(directs to Azure Logic Apps as it is a common connector).
+
+#### Web browser automation
 
 If you couldn’t find a connector, and if the system is a web/browser based
 application or a website, web browser automation is what you should consider.
@@ -38,27 +51,32 @@ browser by mimicking keyboard and mouse movements.
 Web browser automation can be achieved either by [Web UI
 flows](https://docs.microsoft.com/power-automate/ui-flows/create-web) or by
 [Building a
-WebAutomation](https://docs.winautomation.com/en/building-a-webautomation-process.html)
+WebAutomation](https://docs.microsoft.com/power-automate/ui-flows/desktop/actions-reference/webautomation)
 Process using Power Automate Desktop.
 
-## Desktop application automation
+#### Desktop application automation
 
 If you couldn’t find a connector, and if the system is a desktop application on
 a PC, this is the automation method to use. Power Automate has capabilities that
 mimicking human keyboard and mouse movements.
 
-Desktop application automation can be achieved by by [creating a new
-Process](https://docs.winautomation.com/en/create-a-new-process.html) using
-Power Automate Desktop.
+Desktop application automation can be achieved by [creating a new
+Process](https://docs.microsoft.com/power-automate/ui-flows/desktop/create-flow)
+using Power Automate Desktop.
+
+More information on [automating desktop
+flows](https://docs.microsoft.com/power-automate/ui-flows/desktop/desktop-automation).
 
 The chart below shows the comparison of the different methods.
 
-| Method                         | Ease of use | Requires development background                   | Easily affected by system changes | Setup / Development time |
-|--------------------------------|-------------|---------------------------------------------------|-----------------------------------|--------------------------|
-| Connector                      | Easiest     | No                                                | No                                | None                     |
-| Custom Connector               | Easiest     | Yes                                               | No                                | 1-2 days                 |
-| Web browser automation         | Easy        | Preferably with a basic knowledge of CSS and HTML | Yes                               | 3-4 days                 |
-| Desktop application automation | Easy        | No                                                | Yes                               | 3-4 days                 |
+| Method                         | Ease of use | Requires development background                   | Easily affected by system changes | Requires setup / development time |
+|--------------------------------|-------------|---------------------------------------------------|-----------------------------------|-----------------------------------|
+| Connector                      | Easiest     | No                                                | No                                | None                              |
+| Custom Connector               | Easy        | Yes                                               | No                                | Yes                               |
+| HTTP Connector                 | Easy        | Yes                                               | No                                | No                                |
+| Web browser automation         | Easy        | Preferably with a basic knowledge of CSS and HTML | Yes                               | Yes                               |
+| Desktop application automation | Easy        | No                                                | Yes                               | Yes                               |
+              |
 
 In complex automation scenarios, you can combine all these types of automations
 mentioned above.
@@ -93,16 +111,16 @@ Example triggers:
 ![Automated triggers](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report would be to set an automated trigger
-for when a new record is created in the expense approvals entity in Common Data
-Service. This is so that Power Apps can be used to create a form, which then
-creates a new record in Common Data Service.
+to start an approval flow when a new record is created in the Expense Approvals
+entity in Common Data Service. This is so that Power Apps can be used to create
+a form, which then creates a new record in Common Data Service.
+[//]: # (Edit still remaining)
 
 ## Instant / Manual triggers 
 
 **Instant / Manual** trigger is a type of trigger where a user needs to manually
 start that automation or the trigger is instantaneously started. This can be
-triggered directly from a [Flow
-button](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
+triggered directly from a [Flow button](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
 or some of Microsoft services.
 
 ![Instant triggers](media/instant-triggers.png "Instant triggers")
