@@ -30,13 +30,13 @@ landingContent:
           - text: Planning phase
             url: planning/planning-phase.md
           - text: Designing phase
-            url: planning/designing-phase.md
+            url: planning/process-design.md
           - text: Making phase
             url: planning/making-phase.md
           - text: Testing phase
-            url: planning/testing-phase.md
+            url: planning/testing-strategy.md
           - text: Deploying and refining phase
-            url: planning/discoverability.md
+            url: planning/deploy-to-production.md
 
   # Card
   - title: Related content

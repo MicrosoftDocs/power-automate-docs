@@ -22,9 +22,9 @@ The basic steps for creating an automation using Power Automate are as follows:
 
 3.  [**Make**](making-phase.md) Create the Power Automate flows
 
-4.  [**Test**](testing-phase.md) Try out the automation
+4.  [**Test**](testing-strategy.md) Try out the automation
 
-5.  [**Deploy and refine**](discoverability.md) Start using the automation in production, identify
+5.  [**Deploy and refine**](deploy-to-production.md) Start using the automation in production, identify
     processes that could be refined, and decide what to change or add
 
 In this set of articles, you will learn about each of the steps above in detail.
