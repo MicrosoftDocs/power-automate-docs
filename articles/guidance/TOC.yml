@@ -54,3 +54,5 @@
         href: planning/deploy-to-production.md
       - name: Analyze and assess the impact
         href: planning/analyze-and-assess.md
+      - name: Discovering performance issues
+        href: planning/discover-performance-issues.md
