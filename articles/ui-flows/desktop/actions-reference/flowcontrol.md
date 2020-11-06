@@ -104,8 +104,8 @@ Marks the beginning of a block to handle actions errors
 |-----|-----|-----|-----|-----|
 |Name|Yes|Text value||The name of the error block|
 |Operation|No|Continue Flow Run, Throw Error|Throw Error|The type of rule to enforce if an error occurs inside the block|
-|To|No|*|N/A|The value to assign to the variable|
-|Run subflow|No|Subflow|N/A|The name of the subflow|
+|To|No|*||The value to assign to the variable|
+|Run subflow|No|Subflow||The name of the subflow|
 |Mode|No|Go to next action, Repeat action, Go to beginning of block, Go to end of block|Go to next action|The operation to perform if an error occurs inside the block|
 
 ##### Variables Produced
