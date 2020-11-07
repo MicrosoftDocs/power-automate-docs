@@ -46,8 +46,8 @@ UI 창에서 제목, 위치, 크기 등의 일련의 데이터를 추출하려�
 
 ![윈도우 상세내용 구하기 작업](./media/desktop-automation/get-details-of-window-action.png)
 
-다른 방법으로 창 내의 특정 요소에서 데이터를 추출하려면 **창에서 UI 요소의 세부 사항 가져 오기(Get details of a UI element in window)** 작업을 사용하실 수 있습니다.
+다른 방법으로 창 내의 특정 요소에서 데이터를 추출하려면 **창에서 UI 요소의 상세내용 구하기(Get details of a UI element in window)** 작업을 사용하실 수 있습니다.
 
-![창에서 UI 요소의 세부 사항 가져 오기 작업](./media/desktop-automation/get-details-of-a-ui-element-in-window.png)
+![창에서 UI 요소의 상세내용 구하기 작업](./media/desktop-automation/get-details-of-a-ui-element-in-window.png)
 
 [참조할 작업들](./actions-reference/uiautomation.md)에서 UI 자동화 작업들을 더 많이 확인 하실 수 있습니다.
