@@ -153,7 +153,7 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
    
     In the address bar of the web browser, the URL contains the record ID between the %7b and %7d encoding characters.
    
-   ![RecordId](./media/connection-dynamics365/recordid.png)
+   ![A screenshot that displays the recordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
 

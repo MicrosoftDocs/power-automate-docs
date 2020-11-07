@@ -37,7 +37,7 @@ Additionally, you can perform create, update, retrieve, and delete actions on re
 
 Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 
-   ![Select a trigger](./media/cds-connector-native/native-trigger.png)
+   ![A screenshot that displays a trigger](./media/cds-connector-native/native-trigger.png)
 
 After you select a trigger, you'll need to configure:
 
@@ -49,13 +49,13 @@ After you select a trigger, you'll need to configure:
 
 You can add any of these conditions to determine precisely when your flow is triggered.
 
-   ![Select a trigger](./media/cds-connector-native/trigger-conditions.png)
+   ![A screenshot that displays the trigger conditions](./media/cds-connector-native/trigger-conditions.png)
 
 ### The entity name
 
 Select any of the numerous entities that are available to indicate the entity on which your trigger operates.
 
-   ![Select a trigger](./media/cds-connector-native/entity-names.png)
+   ![A screenshot that displays the entity names](./media/cds-connector-native/entity-names.png)
 
 ### Scope
 
@@ -80,7 +80,7 @@ Triggers that run when a record is updated can also use filtering attributes. Th
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
-![Filter attributes](./media/cds-connector-native/filtering-attributes.png)
+![A screenshot that displays the tilter attributes](./media/cds-connector-native/filtering-attributes.png)
 
 ## Trigger privileges
 
@@ -90,7 +90,7 @@ To create a flow that triggers based on create, update, or delete on a record, t
 
 Use any of the following actions to write data into Common Data Service:
 
-![Filter attributes](./media/cds-connector-native/actions.png)
+![A screenshot that displays the actions](./media/cds-connector-native/actions.png)
 
 Here's an example of a flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
 

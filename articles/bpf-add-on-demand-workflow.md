@@ -1,6 +1,6 @@
 ---
-title: Add an on-demand workflow to a business process flow
-description: 
+title: Add an on-demand workflow to a business process flow | Microsoft Docs
+description: A walkthrough that shows how to add an on-demand workflow to a business process flow.
 author: MSFTMAN
 ms.author: Deonhe
 manager: kvivek
