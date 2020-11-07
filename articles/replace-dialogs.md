@@ -1,5 +1,6 @@
 ---
 title: "Replace dialogs with business process flows or canvas apps  | MicrosoftDocs"
+ms.description: Replace dialogs with business process flows or canvas apps
 ms.custom: ""
 ms.date: 08/02/2018
 ms.reviewer: ""

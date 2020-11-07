@@ -1,5 +1,6 @@
 ---
 title: "Monitor and manage background workflow processes with Power Apps | MicrosoftDocs"
+ms.description: "Get a walkthrough of how to monitor and manage background workflow processes with Power Apps."
 ms.custom: "To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
 ms.date: 07/27/2020
 ms.reviewer: ""
