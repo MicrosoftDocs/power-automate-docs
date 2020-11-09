@@ -1,5 +1,6 @@
 ---
 title: "Overview of classic Common Data Service workflows | MicrosoftDocs"
+description: Overview of classic Common Data Service workflows
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "matp"
