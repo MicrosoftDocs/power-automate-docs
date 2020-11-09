@@ -23,6 +23,8 @@ search.audienceType:
 ---
 # Build an approval loop by using Power Automate and Common Data Service
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 Common Data Service can give you a way to build flows that have information stored in a database independent of a flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
 
 In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.
@@ -262,7 +264,7 @@ By following the steps in this section, you'll build:
     ![Choose an entity](./media/common-data-model-approve/choose-entity.png)
 7. Near the lower-right corner, click or tap **Connect**.
    
-    ![Connect button](./media/common-data-model-approve/connect-button.png)
+    ![A screenshot that displays the connect button](./media/common-data-model-approve/connect-button.png)
 8. If the opening screen of intro tour appears, take the tour to get familiar with Power Apps (or click or tap **Skip**).
    
     ![Intro tour](./media/common-data-model-approve/quick-tour.png)
@@ -275,7 +277,7 @@ By following the steps in this section, you'll build:
 ## Customize the app
 1. In the right navigation bar, click or tap the layout that includes a header and a description.
    
-    ![Connect button](./media/common-data-model-approve/choose-layout.png)
+    ![A screenshot that displays the layout options](./media/common-data-model-approve/choose-layout.png)
 2. On the **BrowseScreen**, click or tap just under the search bar to select the larger text-box control.
    
     ![Select header](./media/common-data-model-approve/select-header.png)
