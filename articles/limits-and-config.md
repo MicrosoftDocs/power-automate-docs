@@ -92,11 +92,11 @@ Here are the limits for a single flow run:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Trigger concurrency | - Unlimited when the concurrency control is turned off <br />- 25 is the default limit when the concurrency control is turned on, which you can't undo after you enable concurrency. You can change the default to a value between 1 and 50 inclusively. | This limit describes the highest number of logic app instances that can run at the same time, or in parallel. <br />**Note**: When concurrency is turned on, the SplitOn limit is reduced to 100 items for [debatching arrays](../logic-apps/logic-apps-workflow-actions-triggers.md#split-on-debatch). <br />To change the default limit to a value between 1 and 50 inclusively, see [Change trigger concurrency limit](../logic-apps/logic-apps-workflow-actions-triggers.md#change-trigger-concurrency) or [Trigger instances sequentially](../logic-apps/logic-apps-workflow-actions-triggers.md#sequential-trigger). |
-| Maximum waiting runs | - Without concurrency, the minimum number of waiting runs is 1, while the maximum number is 50. <br />- With concurrency, the minimum number of waiting runs is 10 plus the number of concurrent runs (trigger concurrency). You can change the maximum number up to 100 inclusively. | This limit describes the highest number of logic app instances that can wait to run when your logic app is already running the maximum concurrent instances. <br />To change the default limit, see [Change waiting runs limit](../logic-apps/logic-apps-workflow-actions-triggers.md#change-waiting-runs). |
-| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that a "apply to each" loop can process. <br />To filter larger arrays, you can use the [query action](logic-apps-perform-data-operations.md#filter-array-action). |
-| Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. <br />To change the default limit to a value between 1 and 50 inclusively, see [Change "for each" concurrency limit](../logic-apps/logic-apps-workflow-actions-triggers.md#change-for-each-concurrency) or [Run "for each" loops sequentially](../logic-apps/logic-apps-workflow-actions-triggers.md#sequential-for-each). |
-| Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that [splits or debatches array items into multiple workflow instances](../logic-apps/logic-apps-workflow-actions-triggers.md#split-on-debatch) for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
+| Trigger concurrency | - Unlimited when the concurrency control is turned off <br />- 25 is the default limit when the concurrency control is turned on, which you can't undo after you enable concurrency. You can change the default to a value between 1 and 50 inclusively. | This limit describes the highest number of flow runs that can run at the same time, or in parallel. <br />**Note**: When concurrency is turned on, the SplitOn limit is reduced to 100 items for debatching arrays. |
+| Maximum waiting runs | - Without concurrency, the minimum number of waiting runs is 1, while the maximum number is 50. <br />- With concurrency, the minimum number of waiting runs is 10 plus the number of concurrent runs (trigger concurrency). You can change the maximum number up to 100 inclusively. | This limit describes the highest number of flow runs that can wait to run when your flow is already running the maximum concurrent instances. |
+| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that a "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
+| Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
+| Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
 | Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
 | Paginated items | 5,000 for Low, 100,000 for all others | To process more items, trigger multiple flow runs over your data. |
 
@@ -154,13 +154,13 @@ Here are the limits for a single outgoing or incoming HTTP call:
 
 ### Timeout
 
-Some connector operations make asynchronous calls or listen for webhook requests, so the timeout for these operations might be longer than these limits. For more information, see the technical details for the specific connector and also [Workflow triggers and actions](../logic-apps/logic-apps-workflow-actions-triggers.md#http-action).
+Some connector operations make asynchronous calls or listen for webhook requests, so the timeout for these operations might be longer than these limits. For more information, see the technical details for the specific connector.
 
 | Name | Limit | Notes |
 |------|-------|-------|
-| Outbound synchronous request | 120 seconds <br>(2 minutes) | Examples of outbound requests include calls made by HTTP triggers. <br />**Tip**: For longer running operations, use an [asynchronous polling pattern](../logic-apps/logic-apps-create-api-app.md#async-pattern) or an [until loop](../logic-apps/logic-apps-workflow-actions-triggers.md#until-action). To work around timeout limits when you call another logic app that has a [callable endpoint](logic-apps-http-endpoint.md), you can use the built-in action instead, which you can find in the connector picker under **Built-in**. |
+| Outbound synchronous request | 120 seconds <br>(2 minutes) | Examples of outbound requests include calls made by HTTP triggers. <br />**Tip**: For longer running operations, use an asynchronous polling pattern or an until loop. To work around timeout limits when you call another flow that has a callable endpoint, you can use the built-in action instead, which you can find in the connector picker under **Built-in**. |
 | Outbound asynchronous request | Configurable up to 30 days |  |
-| Inbound request | 120 seconds <br>(2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers. <br />**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. For more information, see [Call, trigger, or nest logic apps](../logic-apps/logic-apps-http-endpoint.md). |
+| Inbound request | 120 seconds <br>(2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers. <br />**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
 
 >[!NOTE]
 >If you test a flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
@@ -170,8 +170,8 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 | Name | Limit | Notes |
 |------|-------|-------|
-| Message size | 100 MB | To work around this limit, see [Handle large messages with chunking](../logic-apps/logic-apps-handle-large-messages.md). However, some connectors and APIs might not support chunking or even the default limit.|
-| Message size with chunking | 1 GB | This limit applies to actions that either natively support chunking or let you enable chunking in their runtime configuration. For more information about chunking, see [Handle large messages with chunking](../logic-apps/logic-apps-handle-large-messages.md). |
+| Message size | 100 MB | To work around this limit, consider allowing chunking under the action content transfer settings. However, some connectors and APIs might not support chunking or even the default limit.|
+| Message size with chunking | 1 GB | This limit applies to actions that either natively support chunking or let you enable chunking in their runtime configuration. |
 
 ### Character limits
 
@@ -185,9 +185,9 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Retry attempts | 90 | The default is 2. To change the default, use the [retry policy parameter](../logic-apps/logic-apps-workflow-actions-triggers.md). |
-| Retry max delay | 1 day | To change the default, use the [retry policy parameter](../logic-apps/logic-apps-workflow-actions-triggers.md). |
-| Retry min delay | 5 seconds | To change the default, use the [retry policy parameter](../logic-apps/logic-apps-workflow-actions-triggers.md). |
+| Retry attempts | 90 | The default is 2. To change the default, use the retry policy parameter. |
+| Retry max delay | 1 day | To change the default, use the retry policy parameter. |
+| Retry min delay | 5 seconds | To change the default, use the retry policy parameter. |
 
 
 ## Turning off or deleting flows
