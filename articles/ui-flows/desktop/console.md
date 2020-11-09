@@ -38,3 +38,9 @@ In both scenarios, the flow designer will be launched; this is where flow creati
 
 > [!NOTE]
 > Switching environments is not possible while a flow is being edited.
+
+## Power Automate Desktop in the system tray
+
+Power Automate Desktop also has its own system tray icon; through this icon, users may open the Console, immediately stop all running flows, or exit Power Automate Desktop:
+
+![System tray menu](./media/console/system-tray-menu.png)
