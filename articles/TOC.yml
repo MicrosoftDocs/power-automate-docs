@@ -91,6 +91,8 @@
   - name: Overview
     href: email-overview.md
     displayName: Use flows with Outlook
+  - name: Create flows to manage email
+    href: create-email-flows.md
   - name: Top email scenarios
     href: email-top-scenarios.md
   - name: Trigger a flow with email

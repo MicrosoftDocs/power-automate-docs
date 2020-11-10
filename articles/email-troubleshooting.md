@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot common issues with Microsoft 365 Email
+# Troubleshoot common issues with Microsoft 365 Outlook email
 
 Known limitations
 

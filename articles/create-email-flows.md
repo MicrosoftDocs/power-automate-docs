@@ -1,0 +1,44 @@
+---
+title: Create flows to manage email | Microsoft Docs
+description: Create flows to manage email.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: kvivek
+editor: ''
+tags: ''
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 10/16/2020
+ms.author: deonhe
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Create flows to manage email
+
+There are three ways to create flows to manage your email:
+
+1. Use a template &mdash; Most likely, there's already a [template](https://preview.flow.microsoft.com/templates) accomplishes your scenario. Search for your scenario among the templates and then follow the steps to create a flow from the template.
+
+1. Tweak a template &mdash; If you find a template that is similar to your scenario, but it doesn’t do exactly what you are want, you can create a flow from that template and then tweak the flow to your liking. You can extend a flow that's created from template by adding, editing, or removing, triggers and actions. 
+
+   <!--Todo use a link in the docs, not a blog-->
+   >[!TIP]
+   >You can [copy paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the process.
+
+1. Create a flow from scratch &mdash; If you can't find a template that's similar to your scenario, you can [create a flow from scratch](https://docs.microsoft.com/power-automate/get-started-logic-flow) and then connect the services you want.
+
+to convert the time zone.
+
+
+## Next steps
+
+
