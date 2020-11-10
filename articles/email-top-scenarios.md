@@ -56,7 +56,7 @@ Use the **Send email with options** action to send an email with voting options
 
 The recipients receives an email similar to this:
 
-   ![](./media/email/5dde37ab039b696619474cdae9abb3bd.png)
+   ![A screenshot of an email with voting buttons](./media/email/5dde37ab039b696619474cdae9abb3bd.png)
 
 In your flow, you must capture that voted response and save it somewhere. You could email yourself, save it to Excel, post to Teams etc. Don’t forget to save it, otherwise you won’t know what people chose.
 
@@ -64,7 +64,9 @@ In your flow, you must capture that voted response and save it somewhere. You co
 
 <!---->
 
-Use the [Send an email from a shared mailbox (V2) ](https://docs.microsoft.com/connectors/office365/#send-an-email-from-a-shared-mailbox-(v2)) action and specify the shared mailbox address to send email from a shared mailbox. The distribution list (DL) admin must first give you [permissions](https://docs.microsoft.com/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox/ When you use this action, email appears in your shared mailbox’s sent folder because you’re sending it from that account directly.
+Use the [Send an email from a shared mailbox (V2) ](https://docs.microsoft.com/connectors/office365/#send-an-email-from-a-shared-mailbox-(v2)) action and specify the shared mailbox address to send email from a shared mailbox. 
+
+The distribution list (DL) admin must first give you [permissions](https://docs.microsoft.com/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox/ When you use this action, email appears in your shared mailbox’s sent folder because you’re sending it from that account directly.
 
 ![A screenshot that shows the Send an email from a shared mailbox (V2) card](./media/email/baedb07705820897f235ade54135a87d.png)
 
@@ -89,14 +91,10 @@ You can further format the data using expressions. In following example, the flo
 
 1. Add the [Send an email (V2](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action, add the output from an HTML table into the body of the email, and then set the **Is HTML** property to true.
 
-   ![](./media/email/317c08aced854b426945fc1441c65a3b.png)
+   ![A screenshot that shows Is HTML selected](./media/email/317c08aced854b426945fc1441c65a3b.png)
 
    >[!TIP]
-   >Remember to select **IsHtml** in the email action.
-
-<!--Todo: Non Microsoft content-->
-
-Here's a popular community article that details [how to send a summary email](https://global-sharepoint.com/uncategorized/learn-html-table-formatting-using-microsoft-power-automate-step-by-step) of customer sales that are stored in SharePoint.
+   >Remember to select **Is Html** in the email action.
 
 
 ## More information

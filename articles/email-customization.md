@@ -42,14 +42,11 @@ Here are the top how to scenarios about email in Power Automate, with examples o
 
 ## Send a beautifully formatted email 
 
-<!--Todo: credits-->
-Credits to David Lozzi for these tips in his blog.
-
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML:
 
 ### Option 1: Write HTML directly into the flow
 
-1. Select the **\</\>** button inside the rich text editor. 
+1. Select the **\</\>** button inside the rich text editor in the Power Automate designer. 
 
    ![A screenshot of the button that enables you to enter HTML into the body of the email](./media/email/af50b7ebdd64bc7f9a1c6791b2dd694f.png)
 
@@ -100,14 +97,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
    ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/f0ba3aa83e3f3deab7e4f79bb5905ba6.png)
-
-## Send email with multiple attachments
-
-<!--Todo-->
-
-Blog post of an example [here](https://flow.microsoft.com/blog/multiple-attachments-single-email/).
-
-Check out the comments for more tips.
+   
 
 ## Send automatic replies from a shared mailbox
 
