@@ -17,7 +17,8 @@ search.audienceType:
 ---
 
 # Work with business process flows using code
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+
+[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 A *business process flow* lets you create more efficient and streamlined sales, service, and other business processes. It creates a visualization of your business process by placing special controls at the top of the entity forms. Users are guided through various stages of sales, marketing, or service processes towards completion. Each process supports multiple stages and steps. You can add or remove steps, change the order of stages, or add new entities to the business process flow.  
   
@@ -72,17 +73,17 @@ You can retrieve the name of your business process flow entity using any of the 
 
 - **Using the UI**: Use the customization UI to browse to your business process flow entity:
 
-    ![](media/bpf-entity-name.png)
+    ![A screenshot of the business process flow entity](media/bpf-entity-name.png)
 - **Using the Web API**: Use the following request:
 
     **Request**
 
-    ```
+    ```http
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
     **Response**
-    ```
+    ```http
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
     "value":[  
@@ -129,7 +130,7 @@ The custom entity that is automatically created on activating a business process
 
 The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission users would have based on their assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
 
-![](media/bpf-privileges.png)
+![A screenshot that displays the security roles](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
 ## Create, retrieve, update, and delete business process flow entity records (process instances)  
@@ -140,7 +141,7 @@ The custom business process flow entity has organization scope. The regular crea
 
  Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
 
- ![](media/sample-bpf.png)
+ ![A screenshot that displays a sample business process flow](media/sample-bpf.png)
  
 ### Retrieve all the records (instances) for a business process flow entity
  If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
