@@ -8,7 +8,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/22/2020
+ms.date: 11/16/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -23,9 +23,7 @@ You can build flows to customize and add further value to Teams from within the 
 You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) within Teams as well.
 
 > [!NOTE]
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
+> You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
 
 ## Prerequisites 
 
