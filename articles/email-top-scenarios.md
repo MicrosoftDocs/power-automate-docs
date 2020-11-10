@@ -39,9 +39,9 @@ Here are some of the top scenarios in which you can use Power Automate to manage
 
 ## Send email from your account
 
-To send email from your account, use the [Send an email (V2](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action. 
+To send email from your account, use the [Send an email (V2)](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action. 
 
-You can send the email to one or more recipients. You can use the rich text editor to **bold text**, add some color, and format the email, similar to the way you do in Outlook. You can add static text or values from previous actions using dynamic content. You can use the **send as** option to send email as someone else, or on behalf of someone else. You can find the all email you send in your **Sent items** folder in Outlook. To use this option, you’ll need the permissions in Outlook to send on another person's behalf.
+You can send the email to one or more recipients. You can use the rich text editor to **bold text**, add some color, and format the email, similar to the way you do in Outlook. You can add static text or values from previous actions using dynamic content. You can use the **send as** option to send email as someone else, or on behalf of someone else. You can find all email you send in your **Sent items** folder in Outlook. To use this option, you’ll need the permissions in Outlook to send on another person's behalf.
 
 For example, if you have a flow that sends you an email once your item is approved, you can add the link of the approved item as an attachment.
 
