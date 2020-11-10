@@ -36,8 +36,6 @@
   items:
   - name: Create a flow from scratch
     href: get-started-logic-flow.md
-  - name: Trigger a flow with email
-    href: email-triggers.md
   - name: Create a flow with Common Data Service (current environment)
     href: connection-cds-native.md
   - name: Create a flow with Common Data Service
@@ -88,6 +86,13 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
+- name: Use flows with Microsoft 365 Email
+  items:
+  - name: Overview
+    href: email-overview.md
+    displayName: Use flows with Outlook
+  - name: Trigger a flow with email
+    href: email-triggers.md
 - name: Use flows with SharePoint
   items:
   - name: Overview
