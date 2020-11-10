@@ -33,8 +33,6 @@ Here are the top how to scenarios about email in Power Automate, with examples o
 
 1. Send [email to a distribution list](#send-email-to-a-distribution-list).
 
-1. Send email with [multiple attachments](#send-email-with-multiple-attachments).
-
 1. Send automatic replies from a [shared mailbox](#send-automatic-replies-from-a-shared-mailbox).
 
 1. Change the [date and time format](#change-the-date-and-time-format-of-an-email) of an email.
@@ -97,7 +95,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
    ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/f0ba3aa83e3f3deab7e4f79bb5905ba6.png)
-   
+
 
 ## Send automatic replies from a shared mailbox
 
