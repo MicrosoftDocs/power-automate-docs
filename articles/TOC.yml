@@ -36,8 +36,6 @@
   items:
   - name: Create a flow from scratch
     href: get-started-logic-flow.md
-  - name: Trigger a flow with email
-    href: email-triggers.md
   - name: Create a flow with Common Data Service (current environment)
     href: connection-cds-native.md
   - name: Create a flow with Common Data Service
@@ -90,10 +88,26 @@
     href: create-approval-response-options.md
   - name: Request approvals from Microsoft 365 groups
     href: group-approvals.md
+- name: Use flows with Office 365 Outlook email
+  items:
+  - name: Overview
+    href: email-overview.md
+    displayName: Use flows with Outlook
+  - name: Create flows to manage email
+    href: create-email-flows.md
+  - name: Top email scenarios
+    href: email-top-scenarios.md
+  - name: Trigger a flow with email
+    href: email-triggers.md
+  - name: Customize email
+    href: email-customization.md
+  - name: Troubleshooting email
+    href: email-troubleshooting.md
 - name: Use flows with SharePoint
   items:
   - name: Overview
     href: sharepoint-overview.md
+    displayName: Use flows with SharePoint
   - name: Create SharePoint reminder flows
     href: create-sharepoint-reminder-flows.md
   - name: Manage SharePoint page approvals
@@ -102,6 +116,7 @@
   items:
   - name: Overview
     href: ./teams/overview.md
+    displayName: Use flows with Microsoft Teams
   - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
   - name: Model flows with adaptive cards
@@ -170,6 +185,8 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
+  - name: Monitor UI flows in the Center of Excellence
+    href: ./ui-flows/monitor.md
   - name: Power Automate Desktop UI flows (Preview)
     items: 
     - name: Introduction to Power Automate Desktop
@@ -445,13 +462,13 @@
     href: frequently-asked-questions.md
   - name: Power Automate glossary
     href: glossary.md
-- name: Learn from others
+- name: Resources
   items:
-  - name: Webinars
-    href: https://flow.microsoft.com/blog/category/webinars/
   - name: Blog
     href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
   - name: Support
     href: https://us.flow.microsoft.com/support/
+  - name: Webinars
+    href: webinars.md

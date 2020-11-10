@@ -16,6 +16,8 @@ search.audienceType:
 
 # Replace classic Common Data Service workflows with flows
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 This topic compares Power Automate capabilities with classic workflow.
 
 Power Automate has significant advantages over the classic background workflow model; you should consider using Power Automate to automate your processes instead of classic workflow.
