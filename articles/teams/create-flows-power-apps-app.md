@@ -1,5 +1,5 @@
 ---
-title: Create flows using the Power Apps app in Microsoft Teams (Preview) | Microsoft Docs
+title: Create flows using the Power Apps app in Microsoft Teams | Microsoft Docs
 description: Create flows using the Power Apps app in Teams.
 author: msftman
 manager: kvivek
@@ -17,12 +17,10 @@ search.audienceType:
   - enduser
 ---
 
-# Create flows using the Power Apps app in Microsoft Teams (Preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
+# Create flows using the Power Apps app in Microsoft Teams
 
 You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. 
-You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale tables](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) within Teams as well.
+You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) within Teams as well.
 
 > [!NOTE]
 > - This is a preview feature.
@@ -33,7 +31,7 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 - The Power Apps app must be installed before you can create flows in Teams. More information: [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app)
 
-- Before you can use the Power Apps app in Teams to create a flow, a Project Oakdale environment must already exist for that team. A Project Oakdale environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
+- Before you can use the Power Apps app in Teams to create a flow, a Dataverse for Teams environment must already exist for that team. A Dataverse for Teams environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
 
 ## Create a flow in Teams
 
@@ -89,5 +87,5 @@ In Teams, you might have acquired flows from an installed app or you might have 
 ## Related articles
 
 [Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-app-overview)<br/>
-[What is Project Oakdale?](/powerapps/teams/overview-data-platform)<br/>
-[About the Project Oakdale environment](/power-platform/admin/about-teams-environment)
+[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
+[About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
