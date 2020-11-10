@@ -91,11 +91,13 @@
   - name: Overview
     href: email-overview.md
     displayName: Use flows with Outlook
-  - name: Top scenarios
+  - name: Top email scenarios
     href: email-top-scenarios.md
   - name: Trigger a flow with email
     href: email-triggers.md
   - name: Customize email
+    href: email-customization.md
+  - name: Troubleshooting email
     href: email-customization.md
 - name: Use flows with SharePoint
   items:
