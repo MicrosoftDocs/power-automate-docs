@@ -1,6 +1,6 @@
 ---
-title: Top Microsoft 365 Outlook top scenarios | Microsoft Docs
-description: Top Microsoft 365 Outlook top scenarios.
+title: Top Office 365 Outlook scenarios | Microsoft Docs
+description: Top Office 365 Outlook scenarios.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Microsoft 365 Outlook top scenarios
+# Top Office 365 Outlook scenarios
 
 Here are some of the top scenarios in which you can use Power Automate to manage your email:
 
@@ -54,15 +54,13 @@ Use the **Send email with options** action to send an email with voting options
 
    ![A screenshot showing a the "Send email with options" card](./media/email/ce1138b8163390721cc6e89eb4e421a2.png)
 
-The recipients receives an email similar to this:
+The recipients receive an email similar to this:
 
    ![A screenshot of an email with voting buttons](./media/email/5dde37ab039b696619474cdae9abb3bd.png)
 
 In your flow, you must capture that voted response and save it somewhere. You could email yourself, save it to Excel, post to Teams etc. Don’t forget to save it, otherwise you won’t know what people chose.
 
-## Send an email from a distribution list (DL) or shared mailbox:
-
-<!---->
+## Send an email from a distribution list (DL) or shared mailbox
 
 Use the [Send an email from a shared mailbox (V2) ](https://docs.microsoft.com/connectors/office365/#send-an-email-from-a-shared-mailbox-(v2)) action and specify the shared mailbox address to send email from a shared mailbox. 
 
