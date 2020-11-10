@@ -98,7 +98,7 @@
   - name: Customize email
     href: email-customization.md
   - name: Troubleshooting email
-    href: email-customization.md
+    href: email-troubleshooting.md
 - name: Use flows with SharePoint
   items:
   - name: Overview

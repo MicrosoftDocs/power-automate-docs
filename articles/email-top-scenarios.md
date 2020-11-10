@@ -1,6 +1,6 @@
 ---
-title: Top Microsoft 365 Outlook scenarios | Microsoft Docs
-description: Top Microsoft 365 Outlook scenarios.
+title: Top Microsoft 365 Outlook top scenarios | Microsoft Docs
+description: Top Microsoft 365 Outlook top scenarios.
 services: ''
 suite: flow
 documentationcenter: na

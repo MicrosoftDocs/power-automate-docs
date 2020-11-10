@@ -1,6 +1,6 @@
 ---
-title: Overview of Microsoft 365 Email and Power Automate | Microsoft Docs
-description: Overview of Microsoft 365 Email and Power Automate.
+title: Customize Microsoft 365 Email with Power Automate | Microsoft Docs
+description: Customize Microsoft 365 Email with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -72,7 +72,7 @@ Alternatively, if you don't know HTML, or don't feel like playing with HTML, fol
 1. Copy the content between **\<html\>** and **\</html\>**. 
 1. Back in Power Automate, select the **\</\>** button in the rich text editor of the **Send an email** action, and then paste in the contents that you copied from Outlook.
 
-### Add an image to your email
+## Add an image to your email
 
 Outlook takes the image you included in your email and converts it to plain text. Instead of copy/pasting the plain text into Power Automate, follow these steps: 
 
@@ -87,7 +87,7 @@ Outlook takes the image you included in your email and converts it to plain text
 
    ![A screenshot that displays the HTML button](./media/email/af50b7ebdd64bc7f9a1c6791b2dd694f.png)
 
-### Send email to a distribution list
+## Send email to a distribution list
 
 The **Send an email** action can send messages to an email-enabled security group or distribution list. Each member of the email-enabled security group or distribution list receives the email in their group mailbox rather than their own mailbox. 
 
@@ -101,7 +101,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
    ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/f0ba3aa83e3f3deab7e4f79bb5905ba6.png)
 
-### Send email with multiple attachments
+## Send email with multiple attachments
 
 <!--Todo-->
 
@@ -109,7 +109,7 @@ Blogpost of an example [here](https://flow.microsoft.com/blog/multiple-attachmen
 
 Check out the comments for more tips.
 
-### Send automatic replies from a shared mailbox
+## Send automatic replies from a shared mailbox
 
 You can do this in Outlook Web App
 
