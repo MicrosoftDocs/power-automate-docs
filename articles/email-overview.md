@@ -44,7 +44,7 @@ Here's a partial list of Office 365 Outlook triggers:
 
 Here's a partial list of Office 365 Outlook actions:
 
-   ![A screenshot of some of the Office 365 Outlook triggers](./media/email/927e5d3c66c36d1140667ab09760bb99.png)
+   ![A screenshot of some of the Office 365 Outlook actions](./media/email/927e5d3c66c36d1140667ab09760bb99.png)
 
 
 ## More information
