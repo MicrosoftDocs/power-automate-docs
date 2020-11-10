@@ -47,7 +47,10 @@ Here's a list of Office 365 Outlook actions:
    ![A screenshot of some of the Office 365 Outlook triggers](./media/email/927e5d3c66c36d1140667ab09760bb99.png)
 
 
+## More information
 
-## Next steps
+- Create [flows to manage email](create-email-flows.md)
+- [Customize email in flows](email-customization.md)
+- Top [email scenarios](email-top-scenarios.md)
 
 

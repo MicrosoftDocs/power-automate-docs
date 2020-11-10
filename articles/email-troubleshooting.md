@@ -24,9 +24,12 @@ search.audienceType:
 
 # Troubleshoot common issues with Microsoft 365 Outlook email
 
-Known limitations
+
+## Known limitations
 
 Check out known limitations of the **Send an email** action [here](https://docs.microsoft.com/connectors/office365/#known-issues-and-limitations).
+
+## Frequently asked questions
 
 **I didn’t get an email. Why?**
 
@@ -77,6 +80,11 @@ Follow the guidance in this [article](https://support.microsoft.com/help/4462988
 
 
 
-## Next steps
+## More information
+
+- Overview of [email with flows](email-overview.md)
+- Create [flows to manage email](create-email-flows.md)
+- [Customize email in flows](email-customization.md)
+- Top [email scenarios](email-top-scenarios.md)
 
 

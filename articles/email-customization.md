@@ -105,7 +105,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 <!--Todo-->
 
-Blogpost of an example [here](https://flow.microsoft.com/blog/multiple-attachments-single-email/).
+Blog post of an example [here](https://flow.microsoft.com/blog/multiple-attachments-single-email/).
 
 Check out the comments for more tips.
 
@@ -130,6 +130,10 @@ You can do this in Outlook Web App
 By default, the email you receive show the UTC time zone. However, your users might want to change it to their local time zone. Follow the steps in this [article](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
 
 
-## Next steps
+## More information
+
+- Overview of [email with flows](email-overview.md)
+- Create [flows to manage email](create-email-flows.md)
+- Top [email scenarios](email-top-scenarios.md)
 
 

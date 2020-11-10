@@ -39,6 +39,10 @@ There are three ways to create flows to manage your email:
 to convert the time zone.
 
 
-## Next steps
+## More information
+
+- Overview of [email with flows](email-overview.md)
+- [Customize email in flows](email-customization.md)
+- Top [email scenarios](email-top-scenarios.md)
 
 

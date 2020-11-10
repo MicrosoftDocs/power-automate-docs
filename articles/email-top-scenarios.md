@@ -22,7 +22,6 @@ search.audienceType:
   - enduser
 ---
 # Microsoft 365 Outlook top scenarios
--------------
 
 Here are some of the top scenarios in which you can use Power Automate to manage your email:
 
@@ -100,6 +99,10 @@ You can further format the data using expressions. In following example, the flo
 Here's a popular community article that details [how to send a summary email](https://global-sharepoint.com/uncategorized/learn-html-table-formatting-using-microsoft-power-automate-step-by-step) of customer sales that are stored in SharePoint.
 
 
-## Next steps
+## More information
+
+- Overview of [email with flows](email-overview.md)
+- Create [flows to manage email](create-email-flows.md)
+- [Customize email in flows](email-customization.md)
 
 
