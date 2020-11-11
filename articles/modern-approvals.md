@@ -90,7 +90,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 > [!NOTE]
 > This action sends the approval request to the email address in the **Assigned To** box.
 >
-> If your scenario requires it, you can attach files to your approval requests that use Common Data Service.
+> If your scenario requires it, you can attach files to your approval requests that use Microsoft Dataverse.
 
 ## Add a condition
 
@@ -143,7 +143,7 @@ Now that we've created the flow, it's time to test it!
 
 ## Create long-running approvals
 
-If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
+If it's likely that your flow will run for more than 30 days, consider storing your approvals in Dataverse. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
 >[!TIP]
 > If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval is completed.
