@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot common issues with Microsoft 365 Outlook email
+# Troubleshoot common issues with email in flows
 
 
 ## Known limitations
@@ -66,7 +66,7 @@ The Approval action attaches files to a notification email until the size of the
 
 As of May 6, 2020, shared mailbox support was added for certain operations with an optional **Mailbox address** parameter, allowing you to specify a shared mailbox address for your operations to access. If you were using this operation prior to May 6, 2020, you will need to explicitly [update your operations to specify the shared mailbox address](https://docs.microsoft.com/connectors/office365/#shared-mailbox-support).
 
-**I see an error: “REST API is not yet supported for this mailbox”**
+**I see this error: “REST API is not yet supported for this mailbox”**
 
 This error can occur for accounts that are on a dedicated (on-premises) mail server when:
 
