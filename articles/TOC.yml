@@ -97,9 +97,9 @@
     href: email-top-scenarios.md
   - name: Trigger a flow with email
     href: email-triggers.md
-  - name: Customize email
+  - name: Customize email in flows
     href: email-customization.md
-  - name: Troubleshooting email
+  - name: Troubleshoot issues with email in flows
     href: email-troubleshooting.md
 - name: Use flows with SharePoint
   items:

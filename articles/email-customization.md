@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Customize Microsoft 365 Outlook email with Power Automate
+# Customize email in flows
 
 
 Here are the top how to scenarios about email in Power Automate, with examples on how to achieve them:
