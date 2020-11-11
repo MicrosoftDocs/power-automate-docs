@@ -36,9 +36,6 @@ Through the console, users may also create a new flow by pressing the "New flow"
 
 In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
 
-> [!NOTE]
-> Switching environments is not possible while a flow is being edited.
-
 ## Power Automate Desktop in the system tray
 
 Power Automate Desktop also has its own system tray icon; through this icon, users may open the Console, immediately stop all running flows, or exit Power Automate Desktop:
