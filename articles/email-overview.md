@@ -25,7 +25,7 @@ search.audienceType:
 
 Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter connectors to use those services. One of the most popular connectors used in flows to send or receive email are the [Outlook.com connector](https://docs.microsoft.com/connectors/outlook/) and the [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that allow you to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and so on with both of these connectors.
 
-## When to use what?
+## Outlook.com or Office 365 Outlook: which connector should I use? 
 
 If you are using an work or school email account, use Office 365 Outlook connector. If you are using a personal (Microsoft Account) account, use the Outlook.com connector. In this article, we refer only to the Office 365 Outlook [triggers](https://docs.microsoft.com/connectors/office365/#triggers) and [actions](https://docs.microsoft.com/connectors/office365/#actions). You can use the same techniques for the Outlook.com connector as well.
 
@@ -35,7 +35,7 @@ A **trigger** is an event that starts a flow. For example, **When a new email 
 
 Here's a partial list of Office 365 Outlook triggers:
 
-   ![A screenshot of some of the Office 365 Outlook triggers](./media/email/12700a7ab29c81632d6c15024a9779e8.png)
+   ![A screenshot of some of the Office 365 Outlook triggers](./media/email/email-triggers.png)
 
 
 ## Actions
@@ -44,7 +44,7 @@ Here's a partial list of Office 365 Outlook triggers:
 
 Here's a partial list of Office 365 Outlook actions:
 
-   ![A screenshot of some of the Office 365 Outlook actions](./media/email/927e5d3c66c36d1140667ab09760bb99.png)
+   ![A screenshot of some of the Office 365 Outlook actions](./media/email/email-actions.png)
 
 
 ## More information
