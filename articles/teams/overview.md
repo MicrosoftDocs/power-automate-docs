@@ -24,7 +24,7 @@ search.audienceType:
 
 # Use flows in Microsoft Teams
 
-Power Automate flows can be used in three scenarios with Teams.<!--Via Writing Style Guide, introduce tables with a period, not a colon.-->
+Power Automate flows can be used in four scenarios with Teams.<!--Via Writing Style Guide, introduce tables with a period, not a colon.-->
 
 Scenario|Description
 --------|-------
