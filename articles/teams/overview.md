@@ -28,6 +28,7 @@ Power Automate flows can be used in three scenarios with Teams.<!--Via Writing S
 
 Scenario|Description
 --------|-------
+Create and manage flows with the [Power Automate App in Teams](./power-automate-teams-app.md) | Use the Power automate app in Teams to quickly and easily manage flows within Microsoft Teams | 
 Trigger [flows from Teams messages](../trigger-flow-teams-message.md).| In this scenario, you can create flows that are triggered when someone selects a Teams message. The flow can then run as any other flow you create.
 Use flows with [adaptive cards](../create-adaptive-cards.md).| Here, adaptive cards can be used as the trigger for flows. The full set of rich adaptive cards is available to you.
 Create flows from within the [Power Apps app in Teams](./create-flows-power-apps-app.md).|Use the Power Apps app in Teams to create flows that use [Project Oakdale](/powerapps/teams/overview). Project Oakdale is a built-in, low-code data platform for Teams that empowers users to build custom apps and workflows within Teams by using Power Apps and Power Automate.

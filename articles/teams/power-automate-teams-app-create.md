@@ -17,7 +17,7 @@ ms.date: 11/12/2020
 ms.author: hamenon
 ---
 
-# Create flows from within the create tab
+# Create flows from within Teams
 
 The create tab within the Power Automate Teams app lets you create flows from templates or from scratch.
 
