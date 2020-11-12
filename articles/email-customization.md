@@ -46,7 +46,7 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 1. Select the **\</\>** button inside the rich text editor in the Power Automate designer. 
 
-   ![A screenshot of the button that enables you to enter HTML into the body of the email](./media/email/af50b7ebdd64bc7f9a1c6791b2dd694f.png)
+   ![A screenshot of the button that enables you to enter HTML into the body of the email](./media/email/html-button.png)
 
 1. Enter any HTML content into the body of the email.
 
@@ -59,7 +59,7 @@ Alternatively, if you don't know HTML, or don't feel like playing with HTML, fol
 1. Open the email you sent to yourself in Outlook. Be sure to use a new window. Do not use the preview window in Outlook.
 1. Go to the **Message** tab > **More Actions** > **Other Actions** > **View Source**.
 
-   ![A screenshot that displays the steps to view the **other actions** menu in Outlook](./media/email/7d6befa2fbd52c80205c4ccf76c633a2.png)
+   ![A screenshot that displays the steps to view the **other actions** menu in Outlook](./media/email/other-actions.png)
 
    The HTML representation of the email opens in your text editor. 
    
@@ -80,8 +80,6 @@ Outlook takes the image you included in your email and converts it to plain text
    >[!IMPORTANT]
    >Inline images are limited to a size of 100KB. This may impact the quality of the image.
 
-   ![A screenshot that displays the HTML button](./media/email/af50b7ebdd64bc7f9a1c6791b2dd694f.png)
-
 ## Send email to a distribution list
 
 The **Send an email** action can send messages to an email-enabled security group or distribution list. Each member of the email-enabled security group or distribution list receives the email in their group mailbox rather than their own mailbox. 
@@ -94,7 +92,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
-   ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/f0ba3aa83e3f3deab7e4f79bb5905ba6.png)
+   ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/group-members-flow.png)
 
 
 ## Send automatic replies from a shared mailbox
