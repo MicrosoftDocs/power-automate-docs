@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Top Office 365 Outlook scenarios
+# Create flows for popular email scenarios
 
 Here are some of the top scenarios in which you can use Power Automate to manage your email:
 
