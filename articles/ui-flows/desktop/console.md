@@ -38,6 +38,6 @@ In both scenarios, the flow designer will be launched; this is where flow creati
 
 ## Power Automate Desktop in the system tray
 
-Power Automate Desktop also has its own system tray icon; through this icon, users may open the Console, immediately stop all running flows, or exit Power Automate Desktop:
+Power Automate Desktop also has its own system tray icon; through this icon, users may open the console, immediately stop all running flows, or exit Power Automate Desktop:
 
 ![System tray menu](./media/console/system-tray-menu.png)
