@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Top Office 365 Outlook scenarios
+# Create flows for popular email scenarios
 
 Here are some of the top scenarios in which you can use Power Automate to manage your email:
 
@@ -45,18 +45,18 @@ You can send the email to one or more recipients. You can use the rich text edit
 
 For example, if you have a flow that sends you an email once your item is approved, you can add the link of the approved item as an attachment.
 
-![A screenshot that displays an example of an email that uses dynamic content in the body of the email](./media/email/59d94832df7f9861bdea32454a412a1b.png)
+![A screenshot that displays an example of an email that uses dynamic content in the body of the email](./media/email/dynamic-content.png)
 
 ## Send email with voting options
 
 <!--todo add a link to actionable email-->
 Use the **Send email with options** action to send an email with voting options using *actionable* email. Use the user options field to provide voting options.
 
-   ![A screenshot showing a the "Send email with options" card](./media/email/ce1138b8163390721cc6e89eb4e421a2.png)
+   ![A screenshot showing a the "Send email with options" card](./media/email/email-options.png)
 
 The recipients receive an email similar to this:
 
-   ![A screenshot of an email with voting buttons](./media/email/5dde37ab039b696619474cdae9abb3bd.png)
+   ![A screenshot of an email with voting buttons](./media/email/voting-buttons.png)
 
 In your flow, you must capture that voted response and save it somewhere. You could email yourself, save it to Excel, post to Teams etc. Don’t forget to save it, otherwise you won’t know what people chose.
 
@@ -66,7 +66,7 @@ Use the [Send an email from a shared mailbox (V2) ](https://docs.microsoft.com/
 
 The distribution list (DL) admin must first give you [permissions](https://docs.microsoft.com/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox/ When you use this action, email appears in your shared mailbox’s sent folder because you’re sending it from that account directly.
 
-![A screenshot that shows the Send an email from a shared mailbox (V2) card](./media/email/baedb07705820897f235ade54135a87d.png)
+![A screenshot that shows the Send an email from a shared mailbox (V2) card](./media/email/shared-mailbox.png)
 
 ## Build an approval process and send notifications via email 
 
@@ -83,13 +83,13 @@ Here are three ways you can send a daily digest email with a table:
 1. Use the [Data Operation – Select ](https://docs.microsoft.com/power-automate/data-operations#use-the-select-action) action to create a table with the column names and data you'd like to see in the email.
 You can further format the data using expressions. In following example, the flow gets calendar events between a time frame, converts the time zones, and then creates a table with the events.
 
-   ![A screenshot displays an example flow with a table](./media/email/8534ef04a83b4a7bca9361a36d7ca598.png)
+   ![A screenshot displays an example flow with a table](./media/email/table.png)
 
 1. Add the [Create HTML Table](https://docs.microsoft.com/power-automate/data-operations#use-the-create-html-table-action) action and then add the output from select action to the HTML action.
 
 1. Add the [Send an email (V2](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action, add the output from an HTML table into the body of the email, and then set the **Is HTML** property to true.
 
-   ![A screenshot that shows Is HTML selected](./media/email/317c08aced854b426945fc1441c65a3b.png)
+   ![A screenshot that shows Is HTML selected](./media/email/html-selected.png)
 
    >[!TIP]
    >Remember to select **Is Html** in the email action.
