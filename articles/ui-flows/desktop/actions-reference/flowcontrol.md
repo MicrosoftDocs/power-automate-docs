@@ -106,7 +106,7 @@ Marks the beginning of a block to handle actions errors
 |Set variable|No|*||The value to assign to the variable|
 |Run subflow|No|Subflow||The name of the subflow|
 |Operation|No|Continue flow run, Throw error|Throw error|The type of rule to enforce if an error occurs inside the block|
-|Mode|No|Go to next action, Repeat action, Go to beginning of block, Go to end of block|Go to next action|The operation to perform if an error occurs inside the block|
+|Mode|No|Go to next action, Repeat action, Go to beginning of block, Go to end of block|Go to next action|The operation to perform if the flow continues to run upon error|
 
 ##### Variables Produced
 - This action doesn't produce any variables
