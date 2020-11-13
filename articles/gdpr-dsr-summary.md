@@ -1,6 +1,6 @@
 ---
 title: GDPR Data Subject Requests Summary | Microsoft Docs
-description: Learn how to respond to GPDR Data Subject Requests for Power Automate.
+description: This article shows you how to respond to GPDR Data Subject Requests for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
