@@ -4,6 +4,7 @@ description: Find all the training options for Power Automate
 author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/21/2020
+ms.service: flow
 ms.author: v-lshann
 ---
 
