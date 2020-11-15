@@ -126,7 +126,7 @@ You can retrieve the name of your business process flow entity using any of the 
 <a name="BPFSecurity"></a>   
 ## Manage security for business process flows
 
-The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Common Data Service. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
+The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Microsoft Dataverse. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
 
 The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission users would have based on their assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
 
@@ -345,7 +345,7 @@ Each business process flow instance record returned for an entity record as a re
 <a name="ApplyBPF"></a>   
 ## Apply business process flow while creating an entity record
 
-This section provides information about the default behavior for applying business process flows automatically to new entity records created in Common Data Service, and how you can override it to apply a business process flow of your choice for new entity records.
+This section provides information about the default behavior for applying business process flows automatically to new entity records created in Dataverse, and how you can override it to apply a business process flow of your choice for new entity records.
 
 By default, for an entity that has multiple business process flows defined for it, the system applies a business process flow to the new entity record using the following multi-step logic:
 1. Identify all business process flows applicable to the new entity record  based on the **Workflow.PrimaryEntity** attribute of the business process flow definition records.
