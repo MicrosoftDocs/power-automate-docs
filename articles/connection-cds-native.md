@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Microsoft Dataverse (current environment) connector| Microsoft Docs
-description: Create workflows by using a Microsoft Dataverse (current environment) connector and Power Automate
+title: Create an automated flow with Common Data Service (current environment) connector| Microsoft Docs
+description: Create workflows by using the Common Data Service (current environment) connector and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,19 +21,19 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an automated flow by using Microsoft Dataverse (current environment)
+# Create an automated flow by using Common Data Service (current environment) connector
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. This article covers the recommended [Dataverse (current environment) connector](./connection-cds.md) for connecting to Dataverse. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
+>There are three connectors available to connect to Dataverse. This article covers the recommended [Common Data Service (current environment)](./connection-cds.md) for connecting to Dataverse. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
 
 
 The flows you create can trigger when a Dataverse record is created, updated, or deleted.
 
 Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a flow with Dataverse (current environment)
+## Initiate a flow with Common Data Service (current environment) connector
 
 Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 
