@@ -5,7 +5,7 @@ author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/21/2020
 ms.service: flow
-ms.author: v-lshann
+ms.author: margoc
 ---
 
 # Functional Application Consultant Learning Catalog
