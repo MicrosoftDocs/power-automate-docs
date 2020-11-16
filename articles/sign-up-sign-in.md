@@ -32,8 +32,8 @@ Starting with Power Automate, as an individual, is easy! Before you can create a
 If you haven't used other online Microsoft products, you'll need to sign up.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **Try free** in the upper-right corner.
-2. Enter your email address.
-3. Select the right arrow.
+1. Enter your email address.
+1. Select **Start free**.
 
     ![Sign-up link](./media/sign-up-sign-in/signup.png)
 
@@ -43,8 +43,7 @@ If you've used other Microsoft online products, either for work or yourself, all
 1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
 
     ![Sign-in link](./media/sign-up-sign-in/signin.png)
-2. Enter your email address.
-3. On the sign-in page, enter your email address and password.
+1. On the sign-in page, enter your email address and password.
 
 ## Using paid features
 Anyone can sign up and get a free plan for Power Automate. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Power Automate. You can also start a 90-day free trial or purchase Power Automate Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md).
