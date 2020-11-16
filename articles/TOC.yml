@@ -123,7 +123,7 @@
     href: ./teams/teams-app-home.md    
   - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
-  - name: Create flows using the Power Apps app (Preview)
+  - name: Create flows using the Power Apps app
     href: ./teams/create-flows-power-apps-app.md
   - name: Model flows with adaptive cards
     href: create-adaptive-cards.md
