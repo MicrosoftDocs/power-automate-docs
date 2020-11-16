@@ -84,6 +84,6 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 ## Related articles
 
-[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-app-overview)<br/>
+[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
 [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
 [About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
