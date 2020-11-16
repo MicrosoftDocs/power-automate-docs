@@ -116,7 +116,7 @@
     href: ./teams/overview.md
     displayName: Use flows with Microsoft Teams
   - name: Create flows in Teams
-    href: ./teams/teams-app.md
+    href: ./teams/install-teams-app.md
     items:
     - name: Install the Power Automate app
       href: ./teams/install-teams-app.md
