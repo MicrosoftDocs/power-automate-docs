@@ -17,7 +17,7 @@ ms.date: 11/16/2020
 ms.author: hamenon
 ---
 
-# Manage your flows in Microsoft Teams
+# Manage flows in Microsoft Teams
 
 The **Home** tab provides an overview of your flows from your organization's default environment.
 
@@ -49,6 +49,6 @@ The Power Automate app in Microsoft Teams only shows your flows that are located
 
 ## Related articles
 
-[Create flows in Microsoft Teams](./power-automate-teams-app-create.md).
+[Create flows in Microsoft Teams](./teams-app-create.md).
 
 View the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).

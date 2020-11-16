@@ -27,7 +27,7 @@ The Power Automate app lets you automate your Microsoft Teams activities or and 
 
    ![Search for the app in Teams](../media/power-automate-teams-app-create/app-search.png)
 
-1. Select **Add for me**
+1. Select **Add for me**.
 
    ![Install the app](../media/power-automate-teams-app-create/app-install.png)
 
@@ -58,7 +58,7 @@ Follow these steps to pin the Power Automate app in Microsoft Teams:
 
 ## Get started with the Power Automate app
 
-From the **Home** tab, you can [create](./power-automate-teams-app-create.md) and [manage](./power-automate-teams-app-home.md) your flows.
+From the **Home** tab, you can [create](./teams-app-create.md) and [manage](./teams-app-home.md) your flows.
 
 ![Power Automate app tabs](../media/power-automate-teams-app-create/app-tabs.png)
 
@@ -69,6 +69,6 @@ The Power Automate app in Microsoft Teams only shows flows from your organizatio
 
 ## Next Steps
 
-- [Create flows in Microsoft Teams](./power-automate-teams-app-create.md).
+- [Create flows in Microsoft Teams](./teams-app-create.md).
 
-- [Manage your flows in Microsoft Teams](./power-automate-teams-app-home.md).
+- [Manage your flows in Microsoft Teams](./teams-app-home.md).

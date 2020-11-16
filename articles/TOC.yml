@@ -116,14 +116,14 @@
     href: ./teams/overview.md
     displayName: Use flows with Microsoft Teams
   - name: Create flows in Teams
-    href: ./teams/power-automate-teams-app.md
+    href: ./teams/teams-app.md
     items:
     - name: Install the Power Automate app
-      href: ./teams/power-automate-teams-app.md
+      href: ./teams/install-teams-app.md
     - name: Create flows in Microsoft Teams
-      href: ./teams/power-automate-teams-app-create.md
+      href: ./teams/teams-app-create.md
     - name: Manage flows in Microsoft Teams
-      href: ./teams/power-automate-teams-app-home.md    
+      href: ./teams/teams-app-home.md    
   - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
   - name: Model flows with adaptive cards

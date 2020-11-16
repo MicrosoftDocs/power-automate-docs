@@ -1,5 +1,5 @@
 ---
-title: Create flows in Teams | Microsoft Docs
+title: Create flows in Microsoft Teams | Microsoft Docs
 description: Learn how to create flows using the Power Automate app in Microsoft Teams
 services: ''
 suite: flow
@@ -17,9 +17,9 @@ ms.date: 11/16/2020
 ms.author: hamenon
 ---
 
-# Create flows from within Microsoft Teams
+# Create flows in Microsoft Teams
 
-You can use the Power Automate app to create and manage flows from within Microsoft Teams. To get started quickly, use one of the existing templates to create your flows, or you can create customized flows from scratch. 
+You can use the [Power Automate app](./install-teams-app.md) to create and manage flows from within Microsoft Teams. To get started quickly, use one of the existing templates to create your flows, or you can create customized flows from scratch. 
 
 ## Prerequisites
 
@@ -87,7 +87,7 @@ This brings up the full Power Automate designer experience within Microsoft Team
 Any flow that you create from within the Power Automate app is located in your organization's the default environment.
 
 ## Related articles
-- [Manage your flows in Microsoft Teams](./power-automate-teams-app-home.md).
+- [Manage your flows in Microsoft Teams](./teams-app-home.md).
 
 - Visit the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).
 
