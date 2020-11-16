@@ -30,7 +30,7 @@ To use the Power Automate app, you need an account with access to [Microsoft Tea
 ## Create a flow from a template
 
 >[!NOTE]
->By default the Power Automate app shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates, if desired.
+>By default, the Power Automate app shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates, if desired.
  
 ![Create tab filter](../media/power-automate-teams-app-create/create-filter.png)
 
@@ -42,8 +42,7 @@ Follow these steps to create a flow from a Microsoft Teams template:
    >You may also use the Microsoft Teams app.
 
 1. Select **Apps** on the right side on the screen.
-1. Search for, and then select **Power Automate**.
-1. Select the **Power Automate** app.
+1. Search for, and then select the **Power Automate** app.
 
    ![A screenshot that shows a search for the Power Automate app](../media/power-automate-teams-app-create/search-app.png)
 
@@ -61,8 +60,9 @@ Follow these steps to create a flow from a Microsoft Teams template:
    
    ![Setup parameters](../media/power-automate-teams-app-create/template2.png)
 
-Note at any point if you wish to see the full flow you can clikc on "Edit in Advanced Mode" to see the full editor.
-![Advanced mode](../media/power-automate-teams-app-create/template-advanced.png)
+   Note at any point if you wish to see the full flow you can select **Edit in advanced mode** to see the full designer.
+   
+   ![Advanced mode](../media/power-automate-teams-app-create/template-advanced.png)
 
 1. You're all set! You will get a confirmation screen showing that your flow was successfully created. After you create your flow, you can find it on the **Home** tab.
 
