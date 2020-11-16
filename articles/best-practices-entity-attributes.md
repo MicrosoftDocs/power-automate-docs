@@ -37,7 +37,7 @@ With the deprecation of the *Active Stage*  (activestageid) field on related ent
 
 ### Option 1: Views and charts on business process flow entity **(Recommended)**
 
-In versions 9.0 and higher, each business process flow creates its own Common Data Service entity, usually with the same name as the business process flow. To report on the business process flow, select the entity for the business process flow you want to report on, and then create views and charts, just as you did before.
+In versions 9.0 and higher, each business process flow creates its own Microsoft Dataverse entity, usually with the same name as the business process flow. To report on the business process flow, select the entity for the business process flow you want to report on, and then create views and charts, just as you did before.
 
 In our example, follow these steps to go to the **Lead to Opportunity Sales Process** entity:
 1. Go to [https://make.powerapps.com](https://make.powerapps.com).
@@ -54,11 +54,11 @@ Here, you can define views and charts just as you do on any other entity.
 
 An advantage of this approach is that you can use a single view or chart to report on business process flows that span multiple entities.
 
-Further, as the business process flow entity is no different from any other custom entity in Common Data Service, you can add custom fields to the entity to track any additional information you need.
+Further, as the business process flow entity is no different from any other custom entity in Dataverse, you can add custom fields to the entity to track any additional information you need.
 
 ### Option 2: copy active stage to a related entity
 
-Alternatively, to continue reporting off the related entity, create a flow to copy the *Active Stage* (activestageid) field from the business process flow entity into a custom field on the related Common Data Service entities.
+Alternatively, to continue reporting off the related entity, create a flow to copy the *Active Stage* (activestageid) field from the business process flow entity into a custom field on the related Dataverse entities.
 
 Here are a few things to keep in mind when you use this approach:
 
@@ -97,10 +97,10 @@ There might be cases where automation based on the business process flow needs t
 -   Automatically finish the **Opportunity Sales Process** when the phone call activity for closing  completes.
 
 > [!TIP]
-> Use classic Common Data Service workflows or flows you define on the entity for the business process flow.
+> Use classic Dataverse workflows or flows you define on the entity for the business process flow.
 > 
 
-To build a classic Common Data Service workflow that creates activities for internal solution reviews and to follow up with the customer in the **Propose** stage of the **Opportunity Sales Process**:
+To build a classic Dataverse workflow that creates activities for internal solution reviews and to follow up with the customer in the **Propose** stage of the **Opportunity Sales Process**:
 
 1. Create it on the **Opportunity Sales Process** entity and set it to run each time the **Active Stage** field of the entity changes. 
 1. Define a condition to check if the **Active Stage** field equals **Propose**. 
