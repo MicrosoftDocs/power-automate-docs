@@ -52,7 +52,7 @@ Follow these steps to create a flow from a Microsoft Teams template:
    ![Setup connections](../media/power-automate-teams-app-create/template1.png)
 
    >[!NOTE]
-   >You must log into all apps so that your flow can run successfully. A green check indicates that you've authenticated.
+   >You must login to all connectors so that your flow can run successfully. A green check indicates that you've authenticated.
 
 1. Set up the connections as needed.
 
@@ -69,7 +69,7 @@ Follow these steps to create a flow from a Microsoft Teams template:
    ![Confirmation screen](../media/power-automate-teams-app-create/template3.png)
 
 >[!IMPORTANT]
->When you create flows from within the Power Automate app in Microsoft Teams, they are always created in your default environment. You can also access these flows from [Power Automate](https://flow.microsoft.com).
+>When you create flows from within the Power Automate app in Microsoft Teams, they are always created in your organization's default environment. You can also access these flows from [Power Automate](https://flow.microsoft.com).
 
 ## Create a flow from scratch
 
@@ -84,7 +84,7 @@ This brings up the full Power Automate designer experience within Microsoft Team
 
 ## Known issues
 
-Any flow that you create from within the Power Automate app is also tied to the default environment.
+Any flow that you create from within the Power Automate app is located in your organization's the default environment.
 
 ## Related articles
 - [Manage your flows in Microsoft Teams](./power-automate-teams-app-home.md).

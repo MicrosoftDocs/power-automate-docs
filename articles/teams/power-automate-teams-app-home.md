@@ -19,9 +19,9 @@ ms.author: hamenon
 
 # Manage your flows in the Home tab
 
-The **Home** provides an overview of your flows from your default environment.
+The **Home** provides an overview of your flows from your organization's default environment.
 
-By default the **Home** tab is filtered to display your flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
+By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
 ![Home tab](../media/power-automate-teams-app-create/home-tab.png)
 
