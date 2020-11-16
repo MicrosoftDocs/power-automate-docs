@@ -17,9 +17,9 @@ ms.date: 11/16/2020
 ms.author: hamenon
 ---
 
-# Manage your flows in the Home tab
+# Manage your flows in Microsoft Teams
 
-The **Home** provides an overview of your flows from your organization's default environment.
+The **Home** tab provides an overview of your flows from your organization's default environment.
 
 By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
@@ -27,9 +27,9 @@ By default, the **Home** tab is filtered to display flows that use Microsoft Tea
 
 On the **Home** tab, you can view the information that's displayed in each of the following six columns to get an overview of your flows.
 
-Column name | Description
+Column | Description
 ----|----
- Flow name | Represents the name that you provided for the flow
+ Flow name | Represents the name that you provided for the flow.
  Status | Displays the status of the flow. For example, is the flow enabled or disabled? You can change the status of your flows directly from this list.
  Modified | Displays the amount of time that's passed since the flow was last changed.
  Owners | Provides a list of the users who own the flow.

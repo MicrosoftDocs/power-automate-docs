@@ -1,6 +1,6 @@
 ---
-title: Create and manage flows from the Power Automate App in Teams | Microsoft Docs
-description: Learn how to create a create and manage flows using the Power Automate app in Microsoft Teams
+title: Install the Power Automate App in Microsoft Teams | Microsoft Docs
+description: Learn how to install the Power Automate app in Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,49 +13,62 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/12/2020
+ms.date: 11/16/2020
 ms.author: hamenon
 ---
 
-# Create and manage flows from the Power Automate App in Teams
+# Install the Power Automate app in Microsoft Teams
 
-Use the Power Automate app in Teams to quickly create flows from templates or manage flows that you have already created all from directly within Teams. The Power Automate app lets you automate your Teams activities or and connect Teams to other apps and services. 
+The Power Automate app lets you automate your Microsoft Teams activities or and connect Microsoft Teams to other apps and services. 
 
-## Install the Power Automate App in Teams
+1. Sign into [Microsoft Teams](https://teams.microsoft.com).
 
-You can install the Power Automate app from the More Apps menu in Teams or the Teams App store. 
+1. Select **More added apps (...)**, search for **Power Automate**, and then select the **Power Automate** app.
 
-[Here is a direct link to install the app in Teams](https://teams.microsoft.com/l/app/c3a1996d-db0f-4857-a6ea-7aabf0266b00?source=store-copy-link) or alternately you can follow the instructions below to install the app.
+   ![Search for the app in Teams](../media/power-automate-teams-app-create/app-search.png)
 
-1. Open Microsoft Teams and select **More Added Apps (...)**
-2. Search for Power Automate
-![Search for the app in Teams](../media/power-automate-teams-app-create/app-search.png)
-3. Select Add for me
-![Install the app](../media/power-automate-teams-app-create/app-install.png)
+1. Select **Add for me**
 
-Optionally you can also choose to pin the app in Teams allowing you to access it more easily
+   ![Install the app](../media/power-automate-teams-app-create/app-install.png)
 
-![Pin the app](../media/power-automate-teams-app-create/app-pin.png)
+1. Select your **Country/region**, and then select **Get started**.
 
-Power Automate is now added to Teams. You can access the app in Teams from the left pane.
+   ![A screenshot that displays the Get Started screen](../media/power-automate-teams-app-create/select-region-country.png)
 
-## Getting started with the Power Automate App
-The Power Automate App consists of 6 tabs:
+   After a few moments, the Power Automate app installs. You can access the app in Microsoft Teams from the left pane.
+
+   ![A screenshot of the default home screen](../media/power-automate-teams-app-create/default-home-screen.png)
+
+>[!TIP]
+>You can also install the Power Automate app from the [Microsoft Teams app store](https://teams.microsoft.com/l/app/c3a1996d-db0f-4857-a6ea-7aabf0266b00?source=store-copy-link). 
+
+## Pin the Power Automate app
+
+>[!TIP]
+>You can pin the Power Automate app in Microsoft Teams, allowing you to access it more easily at a later time.
+
+Follow these steps to pin the Power Automate app in Microsoft Teams:
+
+1. Right-click on **Power Automate** in the pane on the left side.
+
+1. Select **Pin**. 
+
+   ![Pin the app](../media/power-automate-teams-app-create/app-pin.png)
+
+
+## Get started with the Power Automate app
+
+From the **Home** tab, you can [create](./power-automate-teams-app-create.md) and [manage](./power-automate-teams-app-home.md) your flows.
 
 ![Power Automate app tabs](../media/power-automate-teams-app-create/app-tabs.png)
 
-1. Home tab: The Home tab is where you can see an overview of the flows you've created or are a part of
-2. Create tab: The create tab is where you can create flows from templates or from scratch
-3. Chat: The chat is where you can use the Flow bot to list or run flows
-4. Approvals: The Approvals tab lets you manage your approvals
-5. Business Process Flows: This tab lets you manage your Business Process Flows
-6. About Tab: Where you can get some general information about the app
 
 ## Known issues
-The Power Automate App in Teams only shows flows from your tenants default environment. Any flow you create from within the app is also tied to the defaul environment
+
+The Power Automate app in Microsoft Teams only shows flows from your organization's default environment. Any flow that you create from the Power Automate app is located in the default environment.
 
 ## Next Steps
 
-[Create flows in Teams](./power-automate-teams-app-create.md)
+- [Create flows in Microsoft Teams](./power-automate-teams-app-create.md).
 
-[Manage your flows in Teams](./power-automate-teams-app-home.md)
+- [Manage your flows in Microsoft Teams](./power-automate-teams-app-home.md).
