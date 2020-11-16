@@ -1,5 +1,5 @@
 ---
-title: Manage your flows in Teams | Microsoft Docs
+title: Manage your flows in Microsoft Teams | Microsoft Docs
 description: Learn how to manage flows using the Power Automate app in Microsoft Teams
 services: ''
 suite: flow
@@ -13,37 +13,42 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/12/2020
+ms.date: 11/16/2020
 ms.author: hamenon
 ---
 
 # Manage your flows in the Home tab
 
-The Home tab is where you get an overview of the flows you created or are a part of.
+The **Home** provides an overview of your flows from your default environment.
 
->[!NOTE]
->Currently the app only shows flows from your default environment
-
-By default we optimize for the Teams experience and filter to show you flows that use Teams connectors and actions. But you can always change the filter on the top right to see all your flows instead.
+By default the **Home** tab is filtered to display your flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
 ![Home tab](../media/power-automate-teams-app-create/home-tab.png)
 
-The following 6 columns help provide an overview of your different flows
-1. Flow name: The name that you have provided for the flow
-2. Status: The status of the flow i.e. is it enabled of disabled. You can also toggle flows directly from the list
-3. Owners: Provides an overview of the different users who own the flow
-4. Type: The type of flow i.e. Automated, Instant, Scheduled
-5. Team and channel: If your flow reads from or writes to any Team or channel that information is provided here so you can get a quick glance of the Teams your flow impacts
+On the **Home** tab, you can view the information that's displayed in each of the following six columns to get an overview of your flows.
 
-You can click on any flow to drill into the details of the flow right within Teams. 
+Column name | Description
+----|----
+ Flow name | Represents the name that you provided for the flow
+ Status | Displays the status of the flow. For example, is the flow enabled or disabled? You can change the status of your flows directly from this list.
+ Modified | Displays the amount of time that's passed since the flow was last changed.
+ Owners | Provides a list of the users who own the flow.
+ Type |Shows the type of flow. Flows can be **Automated**, **Instant**, or **Scheduled**.
+ Team and channel |If your flow reads from or writes to any team or channel, that information is provided here so you can get a quick glance of the teams your flow touches.
+  |
+
+
+>[!TIP]
+>You can select any flow to view more details about it. 
 
 ![Flow details](../media/power-automate-teams-app-create/flow-details.png)
 
 ## Known issues
-The Power Automate App in Teams only shows flows from your tenants default environment. 
+
+The Power Automate app in Microsoft Teams only shows your flows that are located in the default environment. 
 
 ## Related articles
 
-[Create flows in Teams](./power-automate-teams-app-create.md)
+[Create flows in Microsoft Teams](./power-automate-teams-app-create.md).
 
-[Teams connector documentation](https://docs.microsoft.com/connectors/teams/)
+View the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).

@@ -52,11 +52,11 @@ Follow these steps to create a flow from a Microsoft Teams template:
    ![Setup connections](../media/power-automate-teams-app-create/template1.png)
 
    >[!NOTE]
-   >You must log into all apps so that your flow can run successfully.
+   >You must log into all apps so that your flow can run successfully. A green check indicates that you've authenticated.
 
 1. Set up the connections as needed.
 
-1. Select **Continue** to get a list of parameters that are necessary for the flow to run successfully.
+1. Select **Continue** to get a list of parameters that are necessary for the flow to run successfully. Provide the parameters that are needed.
    
    ![Setup parameters](../media/power-automate-teams-app-create/template2.png)
 
