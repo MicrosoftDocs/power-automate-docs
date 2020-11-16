@@ -45,7 +45,7 @@ Column name | Description
 
 ## Known issues
 
-The Power Automate app in Microsoft Teams only shows your flows that are located in the default environment. 
+The Power Automate app in Microsoft Teams only shows your flows that are located in your organization's default environment. 
 
 ## Related articles
 
