@@ -39,7 +39,7 @@ When you create a flow, you choose an environment to host the flow and the resou
 
 Scenario|Recommendation
 -----|-----
-You want to create a flow that uses a connection to Common Data Service.|Place your flow and Common Data Service into the same environment. This ensures all the data is isolated within that environment (isolation boundary).
+You want to create a flow that uses a connection to Microsoft Dataverse.|Place your flow and Dataverse into the same environment. This ensures all the data is isolated within that environment (isolation boundary).
 You're creating a flow for your Human Resources department. You want to ensure that only users in your Human Resources department have access to the flow.|Create an environment and add only the HR users to it. Place the flow and any other resources the flow uses into this environment.
 There are users in Europe who use a flow to show SharePoint data.|Create an environment in Europe, and then create your flow and the SharePoint connection in it. This Europe environment gives the European users the best performance, since all resources are local to Europe (data locality).
 
@@ -80,7 +80,7 @@ Before you create a flow, select the environment into which you'll add the flow 
 
 Consider the following factors when choosing an environment to host your flows:
 
-* Common Data Service is tied to a specific environment. So, if you want to create a flow that uses Common Data Service, you must create the flow in the environment that hosts the database.
+* Dataverse is tied to a specific environment. So, if you want to create a flow that uses Dataverse, you must create the flow in the environment that hosts the database.
 * You'll see all environments in which you can edit resources. However, you'll need to ask an administrator to add you as a maker to all environments in which you want to create flows.
 
 > [!NOTE]
