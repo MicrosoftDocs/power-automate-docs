@@ -93,7 +93,7 @@ conceptualContent:
           url: /power-automate/sharepoint-overview
           itemType: overview        
         - text: Microsoft 365 Outlook
-          url: /power-automate/email-triggers
+          url: /power-automate/email-overview
           itemType: how-to-guide        
     
     - title: Use solutions for ALM
