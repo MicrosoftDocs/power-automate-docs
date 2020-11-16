@@ -1,5 +1,6 @@
 ---
 title: "Create a mobile task flow with Power Apps | MicrosoftDocs"
+description: "This walkthrough shows you how to create a mobile task flow with Power Apps"
 ms.custom: ""
 ms.date: 06/11/2018
 ms.reviewer: ""
@@ -23,6 +24,8 @@ search.audienceType:
   - enduser
 ---
 # Create a mobile task flow
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 Design a flow in Dynamics 365 for phones or Dynamics 365 for tablets based on common tasks your users perform. For example, if they need to regularly perform a series of follow-up steps after client meetings, create a task flow. When users tap the new task in their mobile app, it will lead them through from start to finish so they don't forget an important step.  

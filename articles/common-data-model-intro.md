@@ -1,6 +1,6 @@
 ---
-title: Common Data Service | Microsoft Docs
-description: Create a flow from a template that uses Common Data Service.
+title: Microsoft Dataverse | Microsoft Docs
+description: Create a flow from a template that uses Microsoft Dataverse.
 services: ''
 suite: flow
 documentationcenter: na
@@ -19,24 +19,26 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow that uses Common Data Service
+# Create a flow that uses Microsoft Dataverse
 
-Improve operational efficiency with a unified view of business data by creating flows that use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
+Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
 
 
-For example, you can use Common Data Service within Power Automate in these key ways:
+For example, you can use Dataverse within Power Automate in these key ways:
 
 * Create a flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Common Data Service](common-data-model-approve.md).
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
 
-In this article, you will create a flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Common Data Service. The notification includes the *Notes* from the *Lead*.
+In this article, you will create a flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Dataverse. The notification includes the *Notes* from the *Lead*.
 
 ## Prerequisites
 
 * Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
   
     If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
-* If you haven't used Common Data Service before, create a [Common Data Service environment with a database](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database) in the Power Platform admin center.
+* If you haven't used Dataverse before, create a [Dataverse environment with a database](https://docs.microsoft.com/power-platform/admin/create-environment#create-an-environment-with-a-database) in the Power Platform admin center.
 
 ## Sign in to your environment
 
@@ -60,7 +62,7 @@ In this article, you will create a flow that sends an email notification when a 
 
 1. In the list of templates, select the template that performs that tasks that you want to be performed.
    
-    For example, select the template that copies notes from Lead to Opportunity in Common Data Service, as shown in the steps that follow.
+    For example, select the template that copies notes from Lead to Opportunity in Dataverse, as shown in the steps that follow.
    
     ![Choose a template](./media/common-data-model-intro/select-template.png)
    
@@ -100,5 +102,5 @@ In this article, you will create a flow that sends an email notification when a 
 
 
 >[!TIP]
->If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Common Data Service.
+>If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
 
