@@ -30,20 +30,20 @@ You can create a flow from one of many built-in templates in Power Automate. Whe
 - Type of flow (instant/automated)
 - number of flows made using this template
 
-
-
 >[!TIP]
 >[Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
-**Prerequisites**
+Here, we'll follow an example that uses a template to create a flow that sends you a Slack message when your manager sends you an email in Microsoft 365.
 
-* Access to [Power Automate](https://flow.microsoft.com)
-* A Slack account
-* Office 365 credentials
+## Prerequisites
+
+To complete this example, you'll need accounts with access to the following:
+
+- [Power Automate](https://flow.microsoft.com)
+- Slack account
+- Microsoft 365
 
 ## Choose a template
-
-Here, we'll follow an example that uses a template to create a flow that sends you a Slack message when your manager sends you an email in Office 365.
 
 1. Sign in to [Power Automate](https://flow.microsoft.com) and select **Templates** in the left-side navigation pane.
 1. Use the search bar to search for **slack manager** to find the **Send a message on Slack when my manager emails me** template, and then select it.
@@ -68,7 +68,7 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 
 ## Next steps
 
-* [Watch your flow in action](see-a-flow-run.md)
-* [Publish your own template](publish-a-template.md)
-* [Use a template for the Microsoft Dataverse](common-data-model-intro.md)
-* [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
+-  [Watch your flow in action](see-a-flow-run.md)
+- [Publish your own template](publish-a-template.md)
+- [Use a template for the Microsoft Dataverse](common-data-model-intro.md)
+- [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.

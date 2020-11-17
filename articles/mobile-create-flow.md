@@ -4,7 +4,7 @@ description: Create a flow from a template that, for example, sends a push notif
 services: ''
 suite: flow
 documentationcenter: na
-author: adiregev
+author: msftman
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,23 +14,24 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/18/2020
-ms.author: adiregev
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# Create a flow from your phone by using Power Automate
+# Create a Power Automate flow from your phone
 
-Create a flow from your phone by using a template, which you can find by searching through a list of services, browsing categories, or by specifying keywords.
+Create a flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
 
-Follow the steps in this topic to create a flow that sends a push notification to your phone when you get mail from your boss.
-
-If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
+In this topic, we'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
 
 ## Prerequisites
-* An [account for Power Automate](sign-up-sign-in.md).
+
+To complete the example in this topic, you'll need the following:
+
+* Access to [Power Automate](sign-up-sign-in.md).
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
 * To use the template demonstrated in this topic, you'll also need:
   
@@ -38,8 +39,9 @@ If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
   * Push notifications enabled on your phone.
 
 ## Find a template
+
 1. Open the mobile app, and then tap **Browse** at the bottom of the screen.
-   
+  
     ![Browse icon](./media/mobile-create-flow/browse-icon.png)
    
     You can find a template in any of these ways:
