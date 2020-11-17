@@ -23,9 +23,6 @@ search.audienceType:
 ---
 # Create a flow in Power Automate
 
-
-> [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
-
 Create a flow that performs one or more tasks automatically after it's triggered by an event. For example, create a flow that notifies you by email when someone sends a tweet that contains a keyword you specify. In this example, sending a tweet is the event, and sending mail is the action.
 
 ## Prerequisites
