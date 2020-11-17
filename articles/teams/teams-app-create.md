@@ -84,7 +84,7 @@ This brings up the full Power Automate designer experience within Microsoft Team
 
 ## Known issues
 
-Any flow that you create from within the Power Automate app is located in your organization's the default environment.
+Any flow that you create from within the Power Automate app is located in your organization's default environment.
 
 ## Related articles
 - [Manage your flows in Microsoft Teams](./teams-app-home.md).

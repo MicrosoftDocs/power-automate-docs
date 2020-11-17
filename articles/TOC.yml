@@ -8,7 +8,7 @@
     href: getting-started.md
   - name: Guided learning
     href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
-  - name: Create a flow in the browser
+  - name: Create a flow from a template
     href: get-started-logic-template.md
   - name: Create a flow on a phone
     href: mobile-create-flow.md
