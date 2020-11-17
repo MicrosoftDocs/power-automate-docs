@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/04/2017
+ms.date: 11/17/2020
 ms.author: anjlic
 search.app: 
   - Flow
@@ -23,28 +23,27 @@ search.audienceType:
 ---
 # Sign up and sign in for Power Automate
 
-
 Starting with Power Automate, as an individual, is easy! Before you can create a flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
 
 ## Sign up free
+
 If you haven't used other online Microsoft products, you'll need to sign up.
 
 1. In [flow.microsoft.com](https://flow.microsoft.com), select **Try free** in the upper-right corner.
 1. Enter your email address.
 1. Select **Start free**.
 
-    ![Sign-up link](./media/sign-up-sign-in/signup.png)
-
 ## Sign in
+
 If you've used other Microsoft online products, either for work or yourself, all you need to do is sign in.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), click or tap **Sign in** in the upper-right corner.
+1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign in** in the upper-right corner.
 
-    ![Sign-in link](./media/sign-up-sign-in/signin.png)
 1. On the sign-in page, enter your email address and password.
 
 ## Using paid features
-Anyone can sign up and get a free plan for Power Automate. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional features for Power Automate. You can also start a 90-day free trial or purchase Power Automate Plan 1 or Plan 2 if you would like to use the paid features. [Learn more about billing](billing-questions.md).
+
+Anyone can sign up and get a free plan for Power Automate. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional Power Automate. You can also start a 90-day free trial or purchase Power Automate if you want to use paid features. [Learn more about billing](billing-questions.md).
 
 For administration information, see [Flows in your organization Q&A](organization-q-and-a.md).
 
