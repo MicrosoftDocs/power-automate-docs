@@ -420,7 +420,7 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
-  - name: Administer UI flows analytics
+  - name: View UI flows analytics
     href: ./ui-flows/overview-analytics.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
