@@ -28,7 +28,7 @@ search.audienceType:
 
 A **trigger** is the event that starts a flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
 
-Power Automate offers connectors (apps/services like SharePoint, Outlook, etc.) and most connectors
+Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
 
    ![A screenshot of the Office 365 Outlook triggers](./media/triggers-introduction/12700a7ab29c81632d6c15024a9779e8.png)
@@ -46,7 +46,7 @@ If you'd like to run a flow with a tap of a button on your mobile device, to rem
 
 ### Triggers for scheduled flows
 
-If you'd like to run a flow on a schedule, for example, to send a weekly project report, create a [scheduled flow](). In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, etc). 
+If you'd like to run a flow on a schedule, for example, to send a weekly project report, create a [scheduled flow](). In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, etc.). 
 
 Learn more about [scheduled flows](https://docs.microsoft.com/power-automate/run-scheduled-tasks).
 
@@ -101,9 +101,9 @@ Here are some known issues and possible solutions when working with triggers.
 
 ### My connector trigger is marked as "premium"
 
-![A screenshot that shows a few premium connectors](./media/triggers-introduction/0ad60bf46f3ddd4f9722ff07ba2caf3a.png)
+![A screenshot that shows a few premium connectors](./media/triggers-introduction/premium-connectors.png)
 
-A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
+You need a standalone Power Apps or Power Automate license to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
 
 ### How to find my license?
 
