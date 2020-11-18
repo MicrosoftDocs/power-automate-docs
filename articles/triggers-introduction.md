@@ -35,6 +35,8 @@ offer prebuilt triggers that you can use to start your flows. Here's a partial l
 
 ## Choose the right trigger
 
+Triggers can be started instantly or manually, on a schedule, or automatically when some other even occurs.
+
 ### Triggers for instant/manual flows
 
 If you'd like to run a flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device. 
@@ -95,7 +97,9 @@ Here are three ways in that you can create a flow.
 
 ## Known issues and advanced functionality
 
-### My connector trigger is marked as a Premium connector
+Here are some known issues and possible solutions when working with triggers.
+
+### My connector trigger is marked as "premium"
 
 ![A screenshot that shows a few premium connectors](./media/triggers-introduction/0ad60bf46f3ddd4f9722ff07ba2caf3a.png)
 
