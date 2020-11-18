@@ -25,7 +25,7 @@ search.audienceType:
 
 As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with UI flows:
 
-1. The Power Platform [admin center](https://docs.microsoft.com/en-us/power-platform/admin/analytics-ui-flow).
+1. The Power Platform [admin center](https://docs.microsoft.com/power-platform/admin/analytics-ui-flow).
 1. The Center of Excellence (CoE) Starter Kit.
 
 The easiest option for an admin to view analytics for the UI flows in their organization is to visit Power Platform admin center (PPAC). In the PPAC by default, you will find the following three reports:
