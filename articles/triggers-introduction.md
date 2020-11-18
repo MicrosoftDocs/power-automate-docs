@@ -59,25 +59,6 @@ If you'd like to create a flow that performs tasks automatically after an event,
 
 Learn more about [automated flows](https://docs.microsoft.com/power-automate/get-started-logic-flow)
 
-## Create a flow
-
-Here are three ways in that you can create a flow.
-
-1. Find, and then select the [Power Automate connector](https://preview.flow.microsoft.com/connectors/) you would like to use.
-
-   When you select a connector, you'll see the triggers available for that connector. You can start a new flow from here by selecting any of the triggers for the selected connector.
-    
-1. Start from the **My flows** page in Power Automate:
-
-    1. In [Power Automate](https://flow.microsoft.com/), select **My
-        flows** from the navigation bar on the left.
-
-    1. Select **New**, and then select **Automated-from blank**.
-
-    1. Give your flow a name in the **Add a name or we'll generate one** field
-
-1. Most likely, there's already a [template]https://preview.flow.microsoft.com/templates/) that automates your scenario. To use a template, search for, and then select a template that covers your scenario. Then, follow the steps shown to customize the template. For detailed steps, peruse [create a flow from a template](https://docs.microsoft.com/power-automate/get-started-logic-template).
-
 ## Add a trigger to an existing flow 
 
 1. Add a new step
@@ -95,17 +76,11 @@ Here are three ways in that you can create a flow.
 >The trigger must be the first step of the flow.
 
 
-## Known issues and advanced functionality
-
-Here are some known issues and possible solutions when working with triggers.
-
-### My connector trigger is marked as "premium"
+## Licensing for premium connectors
 
 ![A screenshot that shows a few premium connectors](./media/triggers-introduction/premium-connectors.png)
 
-You need a standalone Power Apps or Power Automate license to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
-
-### How to find my license?
+You need a standalone [Power Apps license](https://powerapps.microsoft.com/pricing/) or [Power Automate license](https://flow.microsoft.com/pricing/) to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
 
 To find your license:
 
@@ -119,7 +94,7 @@ To find your license:
 
    Your current license plan is displayed.
 
-### Customize a trigger by adding conditions
+## Customize a trigger by adding conditions
 
 Sometimes, you may need to customize a trigger so that it fires only when certain conditions are met. For example, you may be using SharePoint’s **When an item is created or modified** trigger in Power Automate. This trigger fires for every
 change to SharePoint items but you might want the flow to only trigger when an item is
@@ -128,7 +103,7 @@ adding conditions to the flow, the flow still runs and the calls are
 counted as an API request, causing you to reach your API request limits faster.
 To avoid it, you can write expressions in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
-Here's a [community article of how to use trigger conditions](https://www.timlinenterprises.com/microsoft-power-automate-flow-trigger-conditions/)
+Here's a [community article of how to use trigger conditions](https://www.timlinenterprises.com/microsoft-power-automate-flow-trigger-conditions/).
 
-You may also need to secure the inputs/outputs in the run history of a flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
+You may also need to secure the trigger inputs/outputs in the run history of a flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 
