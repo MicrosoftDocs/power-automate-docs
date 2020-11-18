@@ -189,8 +189,6 @@
     href: ./ui-flows/run-ui-flow.md
   - name: Manage UI flows
     href: ./ui-flows/manage.md
-  - name: Monitor UI flows in the Center of Excellence
-    href: ./ui-flows/monitor.md
   - name: Power Automate Desktop UI flows (Preview)
     items: 
     - name: Introduction to Power Automate Desktop
@@ -422,6 +420,8 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
+  - name: View UI flows analytics
+    href: ./ui-flows/overview-analytics.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
