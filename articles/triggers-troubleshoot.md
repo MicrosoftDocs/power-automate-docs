@@ -48,43 +48,40 @@ To determine the type of trigger that's used in your flow:
 
 1. Select the …(ellipses) for your flow, and then select **Peek code**.
 
-   ![](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
+   ![A screenshot of peekcode](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
 
-1. Find the recurrence section with interval frequency. If this section is available, it is a polling trigger.
+1. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
 
-   ![](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
+   ![A screenshot of the recurrence section](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
 
 ### My recurrence trigger runs ahead of schedule
 
 Confirm you've [set the start time](https://powerusers.microsoft.com/t5/Using-Flows/Recurrence-set-for-10-but-ran-at-9-22/m-p/241400) to make sure it runs only at that time.
 
-### My trigger fires after a delay
+### There's a delay before my trigger fires
 
-If the trigger is a polling trigger (How to know if my trigger is webhook or
-polling trigger) it wakes up
+If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred.  The wake-up time depends on the license plan on which the flow runs. 
 
-periodically to check if any new events have occurred.  The wake-up time depends
-on the license plan the flow is running on. For example, your flows may run
-every 15 minutes if you’re on the free plan. If a flow is triggered less than 15
-minutes after its last run, it’s queued until 15 minutes have elapsed. And if it
-is Flow for Office 365 *(Plan from your Enterprise license E3, E5, etc.)* and Flow
-for Dynamics 365 it will be 5 minutes. As a result, it may take a few minutes
-between the time the triggering event occurs and the flow run begins. 
+For example, your flows may run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed. 
 
-To check the trigger wake up frequency, go to your flow trigger, click on the
-…(ellipses) to select Peek code
+And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins. 
 
-![](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
+To check the trigger wake up frequency:
 
-Find the interval frequency
+1. Go to your flow trigger, and then select the …(ellipses).
+1. Select **Peek code**.
 
-![](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
+   ![A screenshot of the peek code setting](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
 
-If it is taking much longer than expected, the two likeliest reasons would be:
+1. Find the interval frequency.
 
-1. There have been too many calls being made to the connector or Flow causing it
-to be throttled. To verify if it is throttling, manually test the flow to see if
-it triggers right away or not. If it triggers right away, it is not throttling.
+   ![A screenshot of the frequency element](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
+
+If it is taking much longer than expected for your flow to trigger, the two likeliest reasons are:
+
+1. There has been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if
+it triggers right immediately If it triggers immediately, it is not throttled.
+
 Further you can check Flow action analytics. Check out this
 [blog](https://flow.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/)
 to know more about action analytics.
@@ -286,13 +283,13 @@ To know your license
 
 #### Verify if trigger check is skipped 
 
-You just completed an event(for example, added a new list item/set email, etc.)
+You just completed an event(for example, added a new list item/sent email, etc.)
 that should have triggered the flow but the flow didn’t run.
 
-Go to My flows in the navigation pane and select the flow. In the 28-day run
-history, select All runs
+Go to My flows in the navigation pane, and then select the flow. In the **28-day run
+history**, select **All runs**.
 
-![](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
+![A screenshot showing all runs](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
 
 Select Checks (no new data). If you are expecting the flow to run but it didn’t
 run, see if it shows the trigger check is skipped at that time. If the trigger
@@ -314,48 +311,39 @@ latest configuration to trigger the flow.
 
 #### Check permissions
 
-Verify you have access to folders, sites or mailboxes used in the trigger. For
-example, to be able to send email from a shared inbox via flow, you need
-permissions to be able to send an email via the shared inbox. Test sending an
-email from that shared mailbox in outlook.
+Verify you have access to folders, sites, or mailboxes that are used in the trigger. For
+example, to be able to send email from a shared inbox via Power Automate, you need permissions to send an email via the shared inbox. Test sending an email from that shared mailbox in Outlook.
 
 #### Verify if admin mode is turned on 
 
-If an environment’s admin mode is turned on, all background processes including
-flows will be turned off causing the flow to not trigger
+If an environment’s admin mode is turned on, all background processes, including flows will be turned off, causing the flow to not trigger.
 
-Please follow these steps to disable the admin mode.
+Follow these steps to disable the admin mode.
 
-1.        Go to the Power Platform admin center and sign in using Environment
-Admin or System Administrator role credentials.
+1. Go to the Power Platform admin center and sign in using Environment Admin or System Administrator role credentials.
 
-2.        From the left-side menu, select Environments, and then click on a
-sandbox or production environment.
+1. From the left-side menu, select **Environments**, and then select a sandbox or production environment.
 
-3.        On the Details page, select Edit.
+1. On the **Details** page, select **Edit**.
 
-4.        Under Administration mode, toggle Disabled to Enabled.
+1. Under **Administration** mode, toggle **Disabled** to **Enabled**.
 
-5.        Optionally, you can set Background operations and Custom message, and
-then select Save.
+1. Optionally, you can set Background operations and Custom message, and then select Save.
 
-Everything looks good but your flow is still not triggering, Verify if your flow
-triggers after every step.
+If everything looks good but your flow is still not triggering, verify if your flow triggers after every step.
 
 #### Try these steps:
 
-1.  Test the flow manually.
+1. Test the flow manually.
 
-2.  Remove and re-add the trigger.
+1. Remove, and then re-add the trigger.
 
-3.  Switch connection.
+1. Switch connection.
 
-4.  Turn off and turn on the flow.
+1. Turn off, and then turn on the flow.
 
-5.  Export and import the flow – use
-    <https://flow.microsoft.com/blog/import-export-bap-packages/>
+1. [Export, and then import](https://flow.microsoft.com/blog/import-export-bap-packages) the flow.
 
-6.  Create a copy of the flow.
+1. Create a copy of the flow.
 
-7.  If trigger uses special conditions like when an email arrives in specific
-    folder, remove the folder add again.
+1. If trigger uses special conditions like when an email arrives in specific folder, remove the folder, and then add it again.
