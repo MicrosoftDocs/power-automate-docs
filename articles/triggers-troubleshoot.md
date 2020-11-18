@@ -40,7 +40,7 @@ See the following table to understand how your flow responds when it's turned ba
 |    |                                                                                                                                              |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Trigger type                            | Description                                                                                                                                  |
-| Polling, such as the **recurrence** trigger | When the flow is turned on again, all unprocessed/pending events are processed. Delete, and then recreate your flow if you don't want to process pending items when you trun your flow back on. |
+| Polling, such as the **recurrence** trigger | When the flow is turned on again, all unprocessed/pending events are processed. Delete, and then recreate your flow if you don't want to process pending items when you turn your flow back on. |
 | Webhook                                 | When the flow is turned on again, it processes new events that are generated after the flow is turned on.                               |
 
 
@@ -67,7 +67,7 @@ periodically to check if any new events have occurred.  The wake-up time depend
 on the license plan the flow is running on. For example, your flows may run
 every 15 minutes if you’re on the free plan. If a flow is triggered less than 15
 minutes after its last run, it’s queued until 15 minutes have elapsed. And if it
-is Flow for Office 365 *(Plan from your Enterprise license E3, E5 etc)* and Flow
+is Flow for Office 365 *(Plan from your Enterprise license E3, E5, etc.)* and Flow
 for Dynamics 365 it will be 5 minutes. As a result, it may take a few minutes
 between the time the triggering event occurs and the flow run begins. 
 
@@ -101,15 +101,15 @@ resave the flow, in order to refresh the entitlement associated with it, and to
 change the throttling Mode.
 
 2. Split the flow in several instances. If the flow processes data, you can
-divide this data in subsets (per country, per business area, etc),
+divide this data in subsets (per country, per business area, etc.),
 
 3.  After this, you can Save As on the flow and create several instances that
 will process each one their own data. As the quota is per flow, this can be used
 as a workaround.
 
 2. There was a communication issue preventing flow from reacting to trigger
-events. Potentially because of a service outage, policy change, password expiry
-etc that caused the delay previously. Go to
+events. Potentially because of a service outage, policy change, password expiry,
+and so on, that caused the delay previously. Go to
 <https://admin.powerplatform.microsoft.com/support> to know if there are any
 active outages going on. Try clearing the cache of the browser and retry.
 
@@ -214,7 +214,7 @@ see the following error?
 
 It means, the flow tried to establish connection and register the trigger with
 the app and failed. Flow retried and failed and is no longer trying unless the
-problem is fixed. Your flow wont trigger until this problem is resolved.
+problem is fixed. Your flow won't trigger until this problem is resolved.
 
 You can refer to this document
 <https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger>
@@ -286,7 +286,7 @@ To know your license
 
 #### Verify if trigger check is skipped 
 
-You just completed an event(for example added a new list item/set email etc)
+You just completed an event(for example, added a new list item/set email, etc.)
 that should have triggered the flow but the flow didn’t run.
 
 Go to My flows in the navigation pane and select the flow. In the 28-day run
