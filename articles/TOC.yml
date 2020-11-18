@@ -6,6 +6,8 @@
     href: sign-up-sign-in.md
   - name: Get started
     href: getting-started.md
+  - name: Get started with triggers
+    href: triggers-introduction.md
   - name: Guided learning
     href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
   - name: Create a flow from a template
