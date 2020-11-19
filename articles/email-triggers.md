@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Trigger a flow based on email properties
 
-Use the **when a new email arrives (V3)** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide:
+Use the **when a new email arrives (V3)** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide.
 
 | Property | When to use |
 | --- | --- |
@@ -33,20 +33,17 @@ Use the **when a new email arrives (V3)** trigger to create a flow that runs whe
 | From |Trigger a flow based on the sender's email address. |
 | Importance |Trigger a flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
 | Has Attachment |Trigger a flow based on the presence of attachments in incoming emails. |
-| Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs *actions* that are based on the results of your search. |
+| Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs actions that are based on the results of your search. |
 
 > [!IMPORTANT]
-> Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met. 
-
-For example, if you check an email's *from* address in a condition, each run counts against your plan's run quota, even if it's not *from* the address that interests you.
-> 
-> 
+> Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met.<br><br>For example, if you check an email's From address in a condition, each run counts against your plan's run quota, even if it's not from the address that interests you.
 
 In the following walkthroughs, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
+
 * An account with access to [Power Automate](https://flow.microsoft.com)
-* An Microsoft 365 Outlook account
+* A Microsoft 365 Outlook account<!--note from editor: Not Office 365 Outlook? I can't say which is correct, I'm sorry, but I imagine it ought to match the name in email-overview.md? Unless it doesn't have to.-->
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connections to Office, Outlook, and the push notification service
 
@@ -54,9 +51,9 @@ In the following walkthroughs, we check all properties in the **when a new email
 In this walkthrough, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
 >[!NOTE]
->While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
+>Although this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
 
-Ok, let's get started:
+Ok, let's get started.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -104,25 +101,25 @@ In this walkthrough, we create a flow that sends a push notification to your mob
     ![Save flow](./media/email-triggers/email-triggers-sender-5.png)
 
 ## Trigger a flow when emails arrive in a specific folder
-If you have rules that route email to different folders based on certain properties, such as the address, you may want this type of flow.
 
-Let's get started:
+If you have rules that route emails to different folders based on certain properties, such as the address, you might want this type of flow.
+
+Let's get started.
 
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
-> 
-> 
+
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
 1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
-   
+
     ![Select folder](./media/email-triggers/email-triggers-2.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
-   
+
     ![Notification details](./media/email-triggers/email-triggers-folder-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
@@ -132,4 +129,3 @@ Let's get started:
     ![Save flow](./media/email-triggers/email-triggers-7.png)
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
-
