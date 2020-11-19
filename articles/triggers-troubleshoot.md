@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot common issues with triggers | Microsoft Docs
-description: Find and fix isses when your flows won't run.
+description: Find and fix issues when your flows won't run.
 services: ''
 suite: flow
 documentationcenter: na
