@@ -54,11 +54,11 @@ To determine the type of trigger that's used in your flow:
 
    ![A screenshot of the recurrence section](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
 
-### My recurrence trigger runs ahead of schedule
+## My recurrence trigger runs ahead of schedule
 
 Confirm you've [set the start time](https://powerusers.microsoft.com/t5/Using-Flows/Recurrence-set-for-10-but-ran-at-9-22/m-p/241400) to make sure it runs only at that time.
 
-### There's a delay before my trigger fires
+## There's a delay before my trigger fires
 
 If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred.  The wake-up time depends on the license plan on which the flow runs. 
 
@@ -100,7 +100,7 @@ will process each one their own data. Since the quota is per flow, this can be u
 
 2. There was a communication issue preventing Power Automate from reacting to trigger events. Potentially because of a service outage, policy change, password expiry, and so on, that caused the delay. You can [check](https://admin.powerplatform.microsoft.com/support) to find out if there are any active outages. You can also clear the cache of the browser and then retry.
 
-### Dynamics 365 connector trigger issues 
+## Dynamics 365 connector trigger issues 
 
 There's a delay - [Dynamics 365](https://docs.microsoft.com/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](https://docs.microsoft.com/connectors/commondataservice/).
 
@@ -116,22 +116,22 @@ You can also access these flows in the [Power Platform admin center](https://adm
 >[!IMPORTANT]
 >You must enable [Power Automate](https://docs.microsoft.com/power-platform/admin/enable-embedded-flow-in-your-organization#enable-or-disable-power-automate-in-your-organization) before you can find these flows.
 
-### Power Apps apps trigger issues
+## Power Apps apps trigger issues
 
 <!--todo: steps are not clear-->
 Unable to rename actions in a flow – This is a known issue for flows that use Power Apps triggers. As a work around to rename actions, remove the trigger. Rename the actions and add your Power Apps trigger and configure variables wherever needed.
 
 Once a Power Apps app is published, make copies of the flows used by the Power Apps app to make any updates. Any update to a flow that's referenced by a published Power Apps app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the Power Apps app.
 
-### SharePoint trigger issues
+## SharePoint trigger issues
 
 SharePoint triggers, for example **When a file is created or modified** will not fire if a file is added/updated in a subfolder. If you need the flow to trigger on subfolders, create multiple flows.
 
-### My flow triggers multiple times
+## My flow triggers multiple times
 
 Verify that you don’t have copies of the flow active in different environments that are triggering based on same condition. Use trigger conditions to customize triggers to reduce the number of times it triggers.
 
-### Users are unable to run flows that are shared to them, but the owner can run the flow
+## Users are unable to run flows that are shared to them, but the owner can run the flow
 
 You can try one of the following:
 
@@ -145,7 +145,7 @@ You can try one of the following:
    
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
-### My trigger doesn’t fire
+## My trigger doesn’t fire
 
 1. A data loss prevention policy could be to blame.
 
@@ -176,7 +176,7 @@ You can try one of the following:
 
 Once the problem is resolved, modify the flow, save it, and then change it back and save again. The flow becomes aware that it's configuration changed, and tries to register its trigger again.
 
-#### Verify connections
+### Verify connections
 
 With the default settings, users only need to login to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s login token expiration after a specific amount of time. Token lifetime policies have been configured on Azure Active Directory. For more information, check this [Azure article](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
@@ -191,7 +191,7 @@ To verify if your connections are broken:
 
    You can refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to learn more about how to fix trigger errors.
 
-#### Verify if the flow uses a premium connector trigger
+### Verify if the flow uses a premium connector trigger
 
 1. Edit your flow to find the connector name for the trigger. 
 1. Go to the [list of connectors](https://preview.flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
@@ -200,7 +200,7 @@ To verify if your connections are broken:
 
 A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase new licenses](https://flow.microsoft.com/pricing) at any time.
 
-#### Check your license type
+### Check your license type
 
 To view the type of license that you have:
 
@@ -208,7 +208,7 @@ To view the type of license that you have:
 - Select any flow.
 - In the **Details** section, find **Plan**. Your current license plan is listed.
 
-#### Verify if trigger check is skipped 
+### Verify if trigger check is skipped 
 
 You just completed an event (for example, added a new list item or sent an email, etc.) that should have triggered the flow, but the flow didn’t run.
 
@@ -219,7 +219,7 @@ Go to **My flows** in the navigation pane, and then select the flow. In the **28
 If you are expecting the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
 
 
-#### Verify inputs and trigger conditions 
+### Verify inputs and trigger conditions 
 
 Edit the flow, expand the first card to see what folders, sites or mailboxes are used in the trigger. To check if the flow has any additional customizations on the trigger, verify if the flow is using any trigger conditions by selecting the ellipses (…) on the card and then go to settings and find trigger conditions. If the field is empty, there are no additional customizations and the title of the card (in this case, when an item is created or modified) is when the trigger will fire. If there are additional customizations in trigger conditions (in below example, flow triggers when an item is created or modified in SharePoint but doesn’t process any items where Example column is missing data). Check you are using the latest inputs to trigger the flow.
 
@@ -229,11 +229,11 @@ Edit the flow, expand the first card to see what folders, sites or mailboxes are
 
 ![](./media/triggers-introduction/eb624aa6e4c6da26f650c0f00628a7f9.png)
 
-#### Check permissions
+### Check permissions
 
 Verify you that you have access to the folders, sites, or mailboxes that are used in the trigger. For example, to be able to send email from a shared inbox via Power Automate, you need permissions to send an email via the shared inbox. Test sending an email from that shared mailbox in Outlook.
 
-#### Verify if admin mode is turned on 
+### Verify if admin mode is turned on 
 
 If an environment’s admin mode is turned on, all background processes, including flows will be turned off, causing the flow to not trigger.
 
@@ -247,7 +247,7 @@ Follow these steps to disable the admin mode.
 
 If everything looks good but your flow is still not triggering, verify if your flow triggers after every step.
 
-#### Try these steps:
+### Try these steps:
 
 1. Test the flow manually.
 1. Remove, and then re-add the trigger.
