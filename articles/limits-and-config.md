@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/29/2020
+ms.date: 11/19/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -123,7 +123,7 @@ There are limits to the number of action executions a flow can make. These execu
 As of October 2019, there are limits on the number of Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
 
 >[!TIP]
->Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](http://docs.microsoft.com/connectors/).
+>Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
 
 ### Runtime endpoint request limits
 
