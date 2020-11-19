@@ -216,12 +216,12 @@ Go to **My flows** in the navigation pane, and then select the flow. In the **28
 
 ![A screenshot showing all runs](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
 
-Select Checks (no new data). If you are expecting the flow to run but it didn’t run, see if it shows the trigger check is skipped at that time. If the trigger check is skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
+If you are expecting the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
 
 
 #### Verify inputs and trigger conditions 
 
-#### Edit the flow, expand the first card to see what folders, sites or mailboxes are used in the trigger. To check if the flow has any additional customizations on the trigger, verify if the flow is using any trigger conditions by selecting the ellipses (…) on the card and go to settings and find trigger conditions. If the field is empty, there are no additional customizations and the title of the card (in this case, when an item is created or modified) is when the trigger will fire. If there are additional customizations in trigger conditions (in below example, flow triggers when an item is created or modified in SharePoint but doesn’t process any items where Example column is missing data). Check you are using the latest inputs to trigger the flow.
+Edit the flow, expand the first card to see what folders, sites or mailboxes are used in the trigger. To check if the flow has any additional customizations on the trigger, verify if the flow is using any trigger conditions by selecting the ellipses (…) on the card and then go to settings and find trigger conditions. If the field is empty, there are no additional customizations and the title of the card (in this case, when an item is created or modified) is when the trigger will fire. If there are additional customizations in trigger conditions (in below example, flow triggers when an item is created or modified in SharePoint but doesn’t process any items where Example column is missing data). Check you are using the latest inputs to trigger the flow.
 
 ![](./media/triggers-introduction/3b39950101ca05b737d04b77b38adec7.png)
 
@@ -231,8 +231,7 @@ Select Checks (no new data). If you are expecting the flow to run but it didn’
 
 #### Check permissions
 
-Verify you have access to folders, sites, or mailboxes that are used in the trigger. For
-example, to be able to send email from a shared inbox via Power Automate, you need permissions to send an email via the shared inbox. Test sending an email from that shared mailbox in Outlook.
+Verify you that you have access to the folders, sites, or mailboxes that are used in the trigger. For example, to be able to send email from a shared inbox via Power Automate, you need permissions to send an email via the shared inbox. Test sending an email from that shared mailbox in Outlook.
 
 #### Verify if admin mode is turned on 
 
