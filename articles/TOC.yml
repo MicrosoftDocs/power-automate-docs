@@ -377,6 +377,8 @@
     href: disable-flow.md
 - name: Troubleshoot
   items:
+  - name: Troubleshoot common issues with triggers
+    href: triggers-troubleshoot.md
   - name: Watch a flow
     href: see-a-flow-run.md
   - name: Monitor flow activity on a phone
