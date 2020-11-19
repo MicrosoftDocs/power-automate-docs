@@ -1,6 +1,6 @@
 ---
-title: Triggers in Power Automate | Microsoft Docs
-description: Learn all about triggers in Power Automate.
+title: Troubleshoot common issues with triggers | Microsoft Docs
+description: Find and fix isses when your flows won't run.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/17/2020
+ms.date: 11/19/2020
 ms.author: DeonHe
 search.app: 
   - Flow
