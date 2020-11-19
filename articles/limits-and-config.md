@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
