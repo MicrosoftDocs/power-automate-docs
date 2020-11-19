@@ -141,42 +141,40 @@ You can try one of the following:
 
 1. Confirm the user has the appropriate license for the connections in the flow.
 
-   Power Automate license is required for the current user to perform any actions like save, turn off etc. A Power Apps, Dynamics 365 or Office 365 license is not sufficient. Users who are shared a flow with premium connectors (not belonging to a "Per Flow" plan) will each need a "Per User" plan to edit or manually trigger the flow. If saving/modifying the flow was possible for the same user previously, it is possible that their license has expired.
-
-   RESOLUTION: Purchase a "Per User" plan or "Per Flow" plan for Power Automate· Alternatively, you can start a trial for the "Per User" plan lasting 90 days after which you will require a paid plan to run/edit flows using premium connectors. All these options (with additional information) are available here: [flow.microsoft.com/pricing](../flow.microsoft.com/pricing). More can be found in: <https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard>
+   A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Office 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** plan to edit or manually trigger the flow. If the user was previously able to save/modify the flow, it's possible that their license has expired.
+   
+   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
 ### My trigger doesn’t fire
 
-#### DLP error
+1. A data loss prevention policy could be to blame.
 
-Admins can create data loss prevention (DLP) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow. Learn more about DLP policies here:
+   Admins can create [data loss prevention (DLP)](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow.
 
-https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention
+   If your flow violates a DLP policy, it will be suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The Flow checker will report it if the flow is violating a DLP policy. Your admin can change the DLP policy.
 
-If your flow violates a DLP policy, it will be suspended causing the trigger to not fire. To know if your flow is suspended, try editing the flow and save. Flow checker will catch it if it is violating a DLP policy. Please reach out to your admin to change the connector classification.
+1. The trigger may be failing.
 
-#### Verify if trigger is failing
+   To confirm:
+   
+   1. Go to **My flows** and then select your flow.
+   1. Do you see the following error in the **Details**?
 
-Go to My flows from navigation tab, click on your flow. In the details, do you see the following error?
+      ![Screenshot of an error message about the flow's trigger.](./media/triggers-introduction//e6cbe67c63044f382cfacaf3b20e8e89.png)
 
-![](./media/triggers-introduction//e6cbe67c63044f382cfacaf3b20e8e89.png)
+   This error means that Power Automate tried multiple times to establish a connection to register the trigger and failed. Your flow won't trigger until this problem is resolved.
 
-It means, the flow tried to establish connection and register the trigger with the app and failed. Flow retried and failed and is no longer trying unless the problem is fixed. Your flow won't trigger until this problem is resolved.
+   One of the common reasons for the failure is that the Power Automate service end points are not part of the allow list. To fix it, confirm that your IT department has added these endpoint to the allow list.
 
-You can refer to this document <https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger> to know more about Fix trigger error.
+   Here is the list of [IP addresses](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config%23ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
 
-One of the common reasons for the failure is the flow service end points are not part of the allow list.
+   Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to know more about how to fix issues with triggers.
 
-To fix it, please make sure IT department has whitelisted flow service endpoints.
+   
+<!--todo, what's this about-->
+<!-- Make sure access to OData is enabled. -->
 
-IP addresses:
-[https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config\#ip-addresses](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config%23ip-addresses)
-
-Domains: <https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate>
-
-Make sure access to OData is enabled.
-
-Once the problem is resolved, change something on the flow save and then change it back and save again. This helps the flow to know something changed and tries to register trigger.
+Once the problem is resolved, modify the flow, save it, and then change it back and save again. The flow becomes aware that it's configuration changed, and tries to register its trigger again.
 
 #### Verify Connections 
 
@@ -200,9 +198,9 @@ A standalone Power Apps or Power Automate plan license is required to access all
 
 To know your license
 
--   Go to My flows in navigation tab
--   Click on a flow
--   In the Details section, find Plan. Your current license plan (eg Per- user plan) will be listed below.
+- Go to My flows in navigation tab
+- Click on a flow
+- In the Details section, find Plan. Your current license plan (eg Per- user plan) will be listed below.
 
 #### Verify if trigger check is skipped 
 
@@ -214,7 +212,6 @@ Go to My flows in the navigation pane, and then select the flow. In the **28-day
 
 Select Checks (no new data). If you are expecting the flow to run but it didn’t run, see if it shows the trigger check is skipped at that time. If the trigger check is skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
 
-<!-- #### [./media/image12.png](./media/image12.png) -->
 
 #### Verify inputs and trigger conditions 
 
