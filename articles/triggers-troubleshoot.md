@@ -141,7 +141,7 @@ You can try one of the following:
 
 1. Confirm the user has the appropriate license for the connections in the flow.
 
-   A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Office 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** plan to edit or manually trigger the flow. If the user was previously able to save/modify the flow, it's possible that their license has expired.
+   A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Office 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save/modify the flow, it's possible that their license has expired.
    
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
@@ -176,37 +176,43 @@ You can try one of the following:
 
 Once the problem is resolved, modify the flow, save it, and then change it back and save again. The flow becomes aware that it's configuration changed, and tries to register its trigger again.
 
-#### Verify Connections 
+#### Verify connections
 
-With default setting, users only need to login to a connection once and use it until revoked by admin. A possible scenario is that the password expired or there might be a policy in your organization which set the connector’s login token expiration after a specific amount of time. Token lifetime policies have been configured on Azure Active Directory. For more information, please check <https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes> and <https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow)Account>
+With the default settings, users only need to login to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s login token expiration after a specific amount of time. Token lifetime policies have been configured on Azure Active Directory. For more information, check this [Azure article](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
-To verify if your connections are working, in the navigation tab, go to Data -\> Connections and find the app used in your flow. If there is a Fix connection message next to the Status as shown in below pic, connections used in your flow are broken and need to be fixed. Click on Fix connection and follow the steps to choose a valid connection.
+To verify if your connections are broken:
 
-![](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
+1. Sign into Power Automate.
+1. Go to **Data** > **Connections**.
+1. Find the connection that's used in your flow. 
+1. Select **Fix connections**, and then update the credentials for your connection if there is a **Fix connection** message next to the **Status** column.
 
-You can refer to this document <https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger> to know more about Fix trigger error.
+   ![A screenshot that displays a link to fix a broken connection](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
 
-#### Verify if the flow is using a premium connector trigger
+   You can refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to learn more about how to fix trigger errors.
 
-Edit your flow to find the connector name of the trigger. Go to <https://preview.flow.microsoft.com/connectors/> and search for that connector. If the connector is premium, it will show right below the name of the connector.
+#### Verify if the flow uses a premium connector trigger
 
-![](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
+1. Edit your flow to find the connector name for the trigger. 
+1. Go to the [list of connectors](https://preview.flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
 
-A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors. Check your license(link) and purchase new licenses here: <https://flow.microsoft.com/pricing/>.
+   ![A screenshot of a premium connector](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
 
-#### Check license – 
+A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase new licenses](https://flow.microsoft.com/pricing) at any time.
 
-To know your license
+#### Check your license type
 
-- Go to My flows in navigation tab
-- Click on a flow
-- In the Details section, find Plan. Your current license plan (eg Per- user plan) will be listed below.
+To view the type of license that you have:
+
+- Go to **My flows** in navigation tab.
+- Select any flow.
+- In the **Details** section, find **Plan**. Your current license plan is listed.
 
 #### Verify if trigger check is skipped 
 
-You just completed an event(for example, added a new list item/sent email, etc.) that should have triggered the flow but the flow didn’t run.
+You just completed an event (for example, added a new list item or sent an email, etc.) that should have triggered the flow, but the flow didn’t run.
 
-Go to My flows in the navigation pane, and then select the flow. In the **28-day run history**, select **All runs**.
+Go to **My flows** in the navigation pane, and then select the flow. In the **28-day run history**, select **All runs**.
 
 ![A screenshot showing all runs](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
 
@@ -250,4 +256,4 @@ If everything looks good but your flow is still not triggering, verify if your f
 1. Turn off, and then turn on the flow.
 1. [Export, and then import](https://flow.microsoft.com/blog/import-export-bap-packages) the flow.
 1. Create a copy of the flow.
-1. If trigger uses special conditions like when an email arrives in specific folder, remove the folder, and then add it again.
+1. If the trigger uses special conditions, like when an email arrives in specific folder, remove the folder, and then add it again.
