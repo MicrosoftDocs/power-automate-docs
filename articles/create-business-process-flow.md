@@ -339,6 +339,8 @@ Now that you've created the instant flow, all that's needed is for you to add it
 1. Select a flow from the list, and then save your changes by selecting the **Apply** button at the bottom of the properties pane.
 1. Finally, select the **Update** button to make this business process flow with its new instant flow step available to your users.
 
+### Flow Step considerations
+The status of your Flow Step might be **Processing** even after your Flow successfully ran to completion, if you are not writing back to the Process Log. In order to mark a Flow Step as completed, add the **Update a record** action of the Common Data Service connector under the **If yes** path. Set the **Environment** to **Default** and **Entity** to **Process Logs**. Then set **Record identifier** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
 
 ## The action center
 
