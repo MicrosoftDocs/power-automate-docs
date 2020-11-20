@@ -43,7 +43,7 @@ If you've used other Microsoft online products, either for work or yourself, all
 
 ## Using paid features
 
-Anyone can sign up and get a free plan for Power Automate. If your organization has purchased Office 365 or Dynamics 365 for you, you may have access to additional Power Automate. You can also start a 90-day free trial or purchase Power Automate if you want to use paid features. [Learn more about billing](billing-questions.md).
+Anyone can sign up and get a free plan for Power Automate. If your organization has purchased Microsoft 365 or Dynamics 365, you may already have access to Power Automate. You can also start a 90-day free trial or purchase a Power Automate license if you want to use any of the paid features. [Learn more about billing](billing-questions.md).
 
 For administration information, see [Flows in your organization Q&A](organization-q-and-a.md).
 
