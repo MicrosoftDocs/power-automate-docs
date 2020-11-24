@@ -79,12 +79,12 @@ Here are the limits for a single flow run:
 | Maximum recurrence interval | 500 days |
 | Minimum postpone interval | 5 seconds for Low, 1 second for all others |
 
-There are also limits on how long flows will remain turned on:
+There are also limits on how long flows will remain turned on before they expire:
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A flow that has a trigger or actions which fail continuously will be turned off. A flow that is continually throttled is likewise considered have errors. Fix your trigger or actions to keep the flow turned on. |
-| Not triggering flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, No limit for all others | A flow that has no successful triggers will be turned off; you may need to adjust your trigger to keep the flow turned on. |
+| Not triggering flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, no expiration limit for all others | A flow that has no successful triggers will be expire and be turned off; you may need to adjust your trigger to keep the flow turned on. |
 
 ## Concurrency, looping, and debatching limits
 
