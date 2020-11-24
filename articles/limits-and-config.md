@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/29/2020
+ms.date: 11/19/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -69,7 +69,8 @@ Here is the limit for the My flow and Team flows tab:
 
 ## Duration and retention limits
 
-Here are the limits for a single flow run:
+### Duration limits
+Duration limits for a single flow run:
 
 | Name | Limit | Notes |
 |------|-------|-------|
@@ -79,12 +80,13 @@ Here are the limits for a single flow run:
 | Maximum recurrence interval | 500 days |
 | Minimum postpone interval | 5 seconds for Low, 1 second for all others |
 
-There are also limits on how long flows will remain turned on:
+### Expiration limits
+Limits on how long flows will remain turned on before they expire and get turned off
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A flow that has a trigger or actions which fail continuously will be turned off. A flow that is continually throttled is likewise considered have errors. Fix your trigger or actions to keep the flow turned on. |
-| Not triggering flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, No limit for all others | A flow that has no successful triggers will be turned off; you may need to adjust your trigger to keep the flow turned on. |
+| Not triggered (dormant) flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, no expiration limit for all others | A flow that has no successful triggers will expire and be turned off; to keep the flow active you may need to adjust your trigger or purchase a standalone Power Automate license plan |
 
 ## Concurrency, looping, and debatching limits
 
@@ -123,7 +125,7 @@ There are limits to the number of action executions a flow can make. These execu
 As of October 2019, there are limits on the number of Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
 
 >[!TIP]
->Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](http://docs.microsoft.com/connectors/).
+>Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
 
 ### Runtime endpoint request limits
 
