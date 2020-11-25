@@ -37,68 +37,92 @@ In general, processes that you think might be inefficient or repetitive are good
 1. Select **Process advisor (preview)** in the left-side navigation pane.
 1. Select Create under **Process advisor (preview)**.
 1. Select the Create a new process tile.
-1. Give your process a name and optionally a description, then select Create.
+1. Give your process a name and optionally a description, then select **Create**.
 
 ## Record your process
 
 Create a recording in one of three ways:
 
 - From the **Create** screen in Process Advisor
-- Immediately following process creation
+- Right after process creation
 - From the process details page
 
-### Create a recording From the 'Create' screen
+### Create a recording from the 'Create' screen
 
-1. From the **Process Advisor (preview)** > Create page, select Add a new recording.
-2. Under the Process dropdown, select the process you want to record for.
-3. Press Open recorder.
-If you are not able to see the process in the dropdown, ensure that the process has been correctly shared with you.
-Immediately following process creation
+1. From the **Process Advisor (preview)** > **Create** screen, select **Add a new recording**.
+1. On the **Process** screen, select the process you want to record for.
+1. Select **Open recorder**.
+    >If you are not able to see the process in the dropdown, ensure that the process has been correctly shared with you.
+
+### Create a recording right after process creation
+
 1. After the process is created, a creation successful modal will be shown with a few options as next steps.
-2. Select Add a recording.
-From the process details page
-1.	From the **Process Advisor (preview)** > Processes page, select the process you want to record for from the list view.
-2.	Click on the name of the process to get to the process details page.
-3.	Select New recording from the command bar.
-4.	Press Open recorder.
-Launching the recorder in Power Automate Desktop
-1.	From any of the ways described above, you should now see a modal that says Launching the recorder in Power Automate Desktop.
-2.	We recommend that you Download Power Automate Desktop first, but if you did not, you can select Get the app now to download and install it.
-5.	If you have installed Power Automate Desktop, you should get a browser popup to Open Power Automate Desktop, select it to open the app.
-6.	If Power Automate Desktop is installed but didn’t open correctly, try pressing Open again.
-Power Automate Desktop Recorder
-1.	In the Desktop recorder screen, select Start recording to start recording.
-2.	Perform the actions that you want to record, and when finished press Finish on the bottom of the recorder window.
-3.	Once the recording has saved successfully press Got it to close the popup.
-4.	Return to the web portal in your browser, and press View recording.
+1. Select **Add a recording**.
+ 
+### Create a recording from the process details page
 
-Note: Depending on the length of the recording, it may take some time before the actions will be available.
-Recorder features
--	As you record your actions, the action descriptions will be listed in the recorder window. You can click the trashcan icon to delete any action from your recording.
--	Pause the recording by pressing Pause recording at any time during the recording, continue recording from where you left off by pressing Start recording again.
--	Reset the recording by pressing Reset recording to erase all the recorded actions and start over.
-Recording Tips
--	Be more methodical in your actions to improve the readability of the recording. There is a slight delay so wait for the red box to focus on the item you are trying to interact with before selecting.
--	If there were mis-clicks, delete the action in the recorder window. 
-Prepare a recording for analysis
+1. From the **Process Advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
+1. Select the name of the process to go to the process details page.
+1. Select **New recording** from the command bar.
+1. Select **Open recorder**.
+
+### Launching the recorder in Power Automate Desktop
+
+1. By using any of the methods described above, you should see a message that says **Launching the recorder** in Power Automate Desktop.
+    > [!NOTE]
+    > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app now** to install it.
+1. If you have installed Power Automate Desktop, you should see a  **Open Power Automate Desktop** browser popup window.  Select it to open the app.
+1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
+
+## Power Automate Desktop Recorder
+
+1. In the Desktop recorder screen, select **Start recording**.
+1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder window.
+1. Once the recording has saved successfully Select Got it to close the popup.
+1. Return to the web portal in your browser, and Select View recording.
+
+> [!NOTE]
+> Depending on the length of the recording, it may take some time before the actions will be available.
+
+### Recorder features
+
+- As you record your actions, the action descriptions will be listed in the recorder window. You can click the trashcan icon to delete any action from your recording.
+- Select **Pause recording** at any time during the recording. 
+- Select **Start recording again** to continue recording from where you left off.
+- Select **Reset recording** to erase all the recorded actions and start over.
+
+### Recording tips
+
+- Be methodical in your actions to improve the readability of the recording. There is a slight delay so wait for the red box to focus on the item you are trying to interact with before selecting.
+- If there were mis-clicks, delete the action in the recorder window.
+
+## Prepare a recording for analysis
+
 Once the recording has completed, you can view the recorded actions in the recording details page. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
--	The actions recorded are very granular, group them into activities. These will be the building blocks for the process map that is created through analysis.
--	Remove any sensitive information from the recording, refer to link for more information on privacy.
-Grouping actions into activities
-1.	Select Add group to add a group header. All actions under the group header and before the next group header are considered part of the group.
-2.	Move the group header up and down the actions list to where you want to group to start.
-3.	Name your group on the right side of the screen.
-4.	Use the dropdown to find group names that already exist for the process or create your own.
-5.	If you made a mistake and want to delete a group, use the trash can icon next to the group name.
-6.	At any time, press Save on the top right to save your work.
-7.	To be ready to analyze, you need at least 2 groups (otherwise the process map will not be very meaningful).
-8.	When you finish grouping, set the Ready to analyze toggle next to Save.
-9.	Press Close to return to the process details page.
-Removing sensitive information
-1.	Select the step which contains sensitive information.
-2.	Edit the step name or description to remove any sensitive information such as account numbers or passwords.
-3.	Delete any screenshots that contain sensitive information.
-Grouping tips
+
+- The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
+- Remove any sensitive information from the recording.  [More information on privacy](privacy-link).
+
+### Grouping actions into activities
+
+1. Select Add group to add a group header. All actions under the group header and before the next group header are considered part of the group.
+1. Move the group header up and down the actions list to where you want to group to start.
+1. Name your group on the right side of the screen.
+1. Use the dropdown to find group names that already exist for the process or create your own.
+1. If you made a mistake and want to delete a group, use the trash can icon next to the group name.
+1. At any time, Select Save on the top right to save your work.
+1. To be ready to analyze, you need at least 2 groups (otherwise the process map will not be very meaningful).
+1. When you finish grouping, set the Ready to analyze toggle next to Save.
+1. Select Close to return to the process details page.
+
+### Remove sensitive information
+
+1. Select the step which contains sensitive information.
+1. Edit the step name or description to remove any sensitive information such as account numbers or passwords.
+1. Delete any screenshots that contain sensitive information.
+
+### Grouping tips
+
 -	As much as possible use an existing group name, this will create a more consistent and accurate process map.
 -	Group names will be available from the dropdown whenever a recording is saved, but to remove group names from the dropdown that was removed from all recordings that used the group names, you need to analyze the recording.
 
