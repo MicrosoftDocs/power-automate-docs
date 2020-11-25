@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Work with processes and recordings 
+# Work with processes and recordings
 
 Before you can use Process Advisor to visualize and analyze your processes, you have to:
 
@@ -101,7 +101,7 @@ Create a recording in one of three ways:
 Once the recording has completed, you can view the recorded actions in the recording details page. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
 
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
-- Remove any sensitive information from the recording.  [More information](#Remove-sensitive-information).
+- Remove any sensitive information from the recording.  [More information](process-advisor-protect.md).
 
 ### Grouping actions into activities
 

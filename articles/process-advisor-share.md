@@ -45,7 +45,7 @@ When you select the share action, a share panel is displayed. The share panel is
 
 When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you have shared a process with them. As co-owners or contributors they are asked to help you manage the process or adding new recordings, respectively. There is a link in the email invitation that leads them to the process shared.
 
-## Share a process with a contributor.
+## Share a process with a contributor
 
 Adding a contributor to a process is the most common way to share a process. Any co-owner of a process can perform these actions:
 
@@ -53,7 +53,7 @@ Adding a contributor to a process is the most common way to share a process. Any
 - Add and label recordings.
 - Manage your own recordings that have been added to the process (including labeling and deleting recordings).
 
-## Share a process with a co-owner.
+## Share a process with a co-owner
 
 Adding a co-owner to a process allows others to help you label and validating the contributors recordings, manage the process and visualize the process analytics and dashboard. Any co-owner of a process can perform these actions:
 

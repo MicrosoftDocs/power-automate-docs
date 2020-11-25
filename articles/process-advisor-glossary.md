@@ -1,5 +1,5 @@
 ---
-title: Overview of Process Advisor | Microsoft Docs
+title:  Process Advisor Glossary | Microsoft Docs
 description: Overview of the Process Advisor feature in Power Automate.
 services: ''
 suite: flow
@@ -21,7 +21,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of Process Advisor
+# Glossary
+
+**Activity**: Activities describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.
+**Variant**: A specific path it takes for a process to be completed. 
+**Recording**: A recorded sequence of activities that users perform on their desktop. Usually multiple recordings are analyzed together to get insights into different variants of the same task.
+**Process map**: Visualizes the actual flow of your process based on the imported user or system data.
+**Robotic process automation (RPA)**: Software that can be easily programmed to do basic, repetitive tasks across applications.
 
 ## See also
 
