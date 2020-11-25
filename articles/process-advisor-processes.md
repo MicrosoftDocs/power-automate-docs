@@ -1,6 +1,6 @@
 ---
-title: Overview of Process Advisor | Microsoft Docs
-description: Overview of the Process Advisor feature in Power Automate.
+title: Work with processes and recordings | Microsoft Docs
+description: How to create and work with processes in Process Advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Work with of Processes
+# Work with processes and recordings 
 
 Before you can use Process Advisor to visualize and analyze your processes, you have to:
 
@@ -101,31 +101,29 @@ Create a recording in one of three ways:
 Once the recording has completed, you can view the recorded actions in the recording details page. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
 
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
-- Remove any sensitive information from the recording.  [More information on privacy](privacy-link).
+- Remove any sensitive information from the recording.  [More information](#Remove-sensitive-information).
 
 ### Grouping actions into activities
 
-1. Select Add group to add a group header. All actions under the group header and before the next group header are considered part of the group.
+1. Select **Add group** to add a group header. All actions under the group header and before the next group header are considered part of the group.
 1. Move the group header up and down the actions list to where you want to group to start.
 1. Name your group on the right side of the screen.
-1. Use the dropdown to find group names that already exist for the process or create your own.
+1. Use the dropdown menu to find group names that already exist for the process, or create your own.
 1. If you made a mistake and want to delete a group, use the trash can icon next to the group name.
-1. At any time, Select Save on the top right to save your work.
-1. To be ready to analyze, you need at least 2 groups (otherwise the process map will not be very meaningful).
-1. When you finish grouping, set the Ready to analyze toggle next to Save.
-1. Select Close to return to the process details page.
+1. At any time, select **Save** on the top right to save your work.
+1. To analyze, you need at least 2 groups. Otherwise, the process map would not be very meaningful.
+1. When you finish grouping, set **Ready to analyze**  next to **Save**.
+1. Select **Close** to return to the process details page.
 
 ### Remove sensitive information
 
-1. Select the step which contains sensitive information.
-1. Edit the step name or description to remove any sensitive information such as account numbers or passwords.
+1. Select the step that contains sensitive information.
+1. Edit the step name or description to remove any sensitive information, such as account numbers or passwords.
 1. Delete any screenshots that contain sensitive information.
 
 ### Grouping tips
 
--	As much as possible use an existing group name, this will create a more consistent and accurate process map.
--	Group names will be available from the dropdown whenever a recording is saved, but to remove group names from the dropdown that was removed from all recordings that used the group names, you need to analyze the recording.
-
+- As much as possible use an existing group name, this creates a more consistent and accurate process map.
+- Group names will be available in the dropdown list whenever a recording is saved. To remove group names from the dropdown list after it was removed from all recordings that used that group name, you need to analyze the recording.
 
 ## See also
-
