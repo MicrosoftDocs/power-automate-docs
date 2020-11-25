@@ -27,7 +27,8 @@ search.audienceType:
 
 ## Security
 
-Process Advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. More information: Power Platform security overview
+Process Advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. More information: [Power Platform security overview](/power-platform/admin/wp-security)
+
 Some privileges are set by default in Dataverse. This allows built-in security roles to use Process Advisor without further actions from system administrators. Specifically:
 
 - Environment makers can use Process Advisor to create and share processes.
@@ -54,7 +55,7 @@ Once the recording is imported into Process Advisor, you can still remove sensit
 - Rename step names and/or description.
 - Delete screenshots.
 
-## Common issues and resolutions
+## Known issues and resolutions
 
 - **Unable to access Process Advisor**
 If you cannot see Process Advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following requirements:

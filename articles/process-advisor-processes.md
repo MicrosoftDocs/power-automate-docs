@@ -35,9 +35,9 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 1. Select **Process advisor (preview)** in the left-side navigation pane.
-1. Select Create under **Process advisor (preview)**.
-1. Select the Create a new process tile.
-1. Give your process a name and optionally a description, then select **Create**.
+1. Select **Create** under **Process advisor (preview)**.
+1. Select the **Create a new process** tile.
+1. Give your process a name and description, then select **Create**.
 
 ## Record your process
 
@@ -52,13 +52,14 @@ Create a recording in one of three ways:
 1. From the **Process Advisor (preview)** > **Create** screen, select **Add a new recording**.
 1. On the **Process** screen, select the process you want to record for.
 1. Select **Open recorder**.
+    >[!NOTE]
     >If you are not able to see the process in the dropdown, ensure that the process has been correctly shared with you.
 
 ### Create a recording right after process creation
 
 1. After the process is created, a creation successful modal will be shown with a few options as next steps.
 1. Select **Add a recording**.
- 
+
 ### Create a recording from the process details page
 
 1. From the **Process Advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
@@ -125,5 +126,3 @@ Once the recording has completed, you can view the recorded actions in the recor
 
 - As much as possible use an existing group name, this creates a more consistent and accurate process map.
 - Group names will be available in the dropdown list whenever a recording is saved. To remove group names from the dropdown list after it was removed from all recordings that used that group name, you need to analyze the recording.
-
-## See also
