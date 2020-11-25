@@ -225,10 +225,8 @@ Requests from Power Automate use IP addresses that depend on the region of the [
 
 Use these IP address in your allow list to facilitate communications from Power Automate. 
 
-Region | Outbound IP address
+Region | Outbound IP addresses
 -------|--------------------
-| Region | Outbound IP |
-| --- | --- |
 | Asia | 13.75.113.224, 52.187.147.27, 52.175.23.169, 52.187.68.19, 13.75.36.64 - 13.75.36.79, 104.214.164.0 - 104.214.164.31, 13.67.8.240 - 13.67.8.255, 13.67.15.32 - 13.67.15.63 |
 | Australia  | 13.75.139.0, 13.77.45.34, 13.72.243.10, 13.70.136.174, 13.70.72.192 - 13.70.72.207, 13.70.78.224 - 13.70.78.255, 13.77.50.240 - 13.77.50.255, 13.77.55.160 - 13.77.55.191 |
 | Brazil | 191.234.180.112, 104.214.107.148, 104.41.59.51, 191.233.203.192 - 191.233.203.207, 191.233.207.160 - 191.233.207.191 |
