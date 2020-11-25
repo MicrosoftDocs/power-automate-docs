@@ -221,7 +221,7 @@ See [IP address configuration](ip-address-configuration.md) for additional detai
 
 ## IP addresses
 
-Requests from Power Automate use IP addresses that depend on the region of the [environment](../../administrator/environments-overview.md) in which your flow exists.
+Requests from Power Automate use IP addresses that depend on the region of the [environment](https://docs.microsoft.com/power-automate/environments-overview-maker) in which your flow exists.
 
 Use these IP address in your allow list to facilitate communications from Power Automate. 
 
