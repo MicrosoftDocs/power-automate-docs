@@ -282,42 +282,42 @@ The data types that have properties are displayed in the following lists.
 
 ## EBS snapshot
 
-|Property            |Description                                         |
-|--------------------|----------------------------------------------------|
-|DataEncryptionKeyId |The id of the data encryption key.                  |
-|Description         |The description of the snapshot.                    |
-|Encrypted           |This property is true if the snapshot is encrypted. |
-|KmsKeyId            |The id of the KMS key.                              |
-|OwnerAlias          |The alias of the owner.                             |
-|OwnerId             |The id of the owner.                                |
-|Progress            |The progress of the snapshot.                       |
-|SnapshotId          |The id of the snapshot.                             |
-|StartTime           |The start time of the snapshot.                     |
-|State               |The state of the snapshot.                          |
-|StateMessage        |The state message of the snapshot.                  |
-|Tags                |The tags of the snapshot.                           |
-|VolumeId            |The volume id.                                      |
-|VolumeSize          |The size of the volume.                             |
+|Property            |Description                                                                                     |
+|--------------------|------------------------------------------------------------------------------------------------|
+|DataEncryptionKeyId |The id of the data encryption key.                                                              |
+|Description         |The description of the snapshot.                                                                |
+|Encrypted           |This property is true if the snapshot is encrypted.                                             |
+|KmsKeyId            |The The identifier of the AWS Key Management Service customer master key to use for encryption. |
+|OwnerAlias          |The alias of the owner.                                                                         |
+|OwnerId             |The id of the owner.                                                                            |
+|Progress            |The progress of the snapshot.                                                                   |
+|SnapshotId          |The id of the snapshot.                                                                         |
+|StartTime           |The start time of the snapshot.                                                                 |
+|State               |The state of the snapshot.                                                                      |
+|StateMessage        |The state message of the snapshot.                                                              |
+|Tags                |The tags of the snapshot.                                                                       |
+|VolumeId            |The volume id.                                                                                  |
+|VolumeSize          |The size of the volume.                                                                         |
 
 ## EBS volume
 
-|Property            |Description                                           |
-|--------------------|------------------------------------------------------|
-|Attachments         |The attachments of the volume.                        |
-|AvailabilityZone    |The availability zone of the volume.                  |
-|CreateTime          |This creation time of the volume.                     |
-|Encrypted           |This property is true if the volume is encrypted.     |
-|FastRestored        |This property is true if the fast restore is enabled. |
-|Iops                |The max IOPS of the volume.                           |
-|KmsKeyId            |The id of the KMS key.                                |
-|MultiAttachEnabled  |This property is true if the multi-attach is enabled. |
-|OutpostArn          |                                                      |
-|Size                |The size of the volume.                               |
-|SnapshotId          |The id of the snapshot.                               |
-|State               |The state of the volume.                              |
-|Tags                |The tags of the volume.                               |
-|VolumeId            |The id of the volume.                                 |
-|VolumeType          |The type of the volume.                               |
+|Property            |Description                                                                                     |
+|--------------------|------------------------------------------------------------------------------------------------|
+|Attachments         |The attachments of the volume.                                                                  |
+|AvailabilityZone    |The availability zone of the volume.                                                            |
+|CreateTime          |This creation time of the volume.                                                               |
+|Encrypted           |This property is true if the volume is encrypted.                                               |
+|FastRestored        |This property is true if the fast restore is enabled.                                           |
+|Iops                |The max IOPS of the volume.                                                                     |
+|KmsKeyId            |The The identifier of the AWS Key Management Service customer master key to use for encryption. |
+|MultiAttachEnabled  |This property is true if the multi-attach is enabled.                                           |
+|OutpostArn          |The Amazon Resource Name (ARN) of the outpost.                                                  |
+|Size                |The size of the volume.                                                                         |
+|SnapshotId          |The id of the snapshot.                                                                         |
+|State               |The state of the volume.                                                                        |
+|Tags                |The tags of the volume.                                                                         |
+|VolumeId            |The id of the volume.                                                                           |
+|VolumeType          |The type of the volume.                                                                         |
 
 ## Azure managed disk
 

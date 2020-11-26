@@ -70,7 +70,7 @@ In the example below, the flow stores the first number of the previously display
 
 A common practice is to use a **For each** action to iterate through the items of a list.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the lists in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists). 
 
 ### Datatables
@@ -97,7 +97,7 @@ If you want to access a specific column in a datable that contains column header
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the datatables in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables). 
 
 ### Known issues and limitations
@@ -236,5 +236,5 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 ### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the XML data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#xml-node). 
