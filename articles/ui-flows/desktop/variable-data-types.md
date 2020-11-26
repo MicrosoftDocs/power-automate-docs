@@ -109,7 +109,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 - **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
   > [!NOTE]
-  > To see all the available properties of the web browser instance, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances). 
+  > To see all the available properties of the web browser instances, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances). 
 - **Window instance** – Contains a window instance created through the **Get window** action.
   > [!NOTE]
   > If you want to see infromation about the available properties of the windows instances, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#window-instance). 
@@ -128,7 +128,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
   > You can find all the available properties of the Exchange connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-connection). 
 - **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
   > [!NOTE]
-  > You can find all the available properties of the FTP connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-connection. 
+  > You can find all the available properties of the FTP connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-connection). 
 
 ## Others
 
@@ -204,7 +204,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
 
 > [!NOTE]
-> You can find all the available properties of the email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-mail-messages). 
+> You can find all the available properties of the Exchange email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-mail-messages). 
 
 ### Files and folders
 
