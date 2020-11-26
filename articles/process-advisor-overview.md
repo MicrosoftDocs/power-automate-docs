@@ -25,14 +25,16 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+## What is Process Advisor?
+
 Process Advisor records and analyzes your manual business tasks. It discovers inefficiencies and shows optimization and automation opportunities. For example: in a healthcare facility, you could use Process Advisor to record patient check-in procedures. Process Advisor automatically produces a process map that visualizes the check in process, showing what activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
 ## Prerequisites
 
 Before you start using Process Advisor, make sure you have the following prerequisites:
 
-1. A Power Platform environment with Microsoft Dataverse database
-    - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](power-platform/admin/create-environment.md)
-    - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database.md)
-1. Access to [Power Automate](https://powerautomate.microsoft.com/)
-1. [Power Automate Desktop](/ui-flows/desktop/introduction.md)
+- A Power Platform environment with Microsoft Dataverse database
+  - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](power-platform/admin/create-environment.md)
+  - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database.md)
+- Access to [Power Automate](https://powerautomate.microsoft.com/)
+- [Power Automate Desktop](/ui-flows/desktop/introduction.md)
