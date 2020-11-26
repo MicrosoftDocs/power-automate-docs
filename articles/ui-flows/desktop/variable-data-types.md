@@ -24,24 +24,26 @@ Some of them can be used only with explicit actions, like **FTP connection**, wh
 
 ## Simple data types
 
-- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
-- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations.
-- **Boolean value** - The value can be either **True** or **False**.
+- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. To create a text variable through the **Set Variable action**, use the single quotes notation or a complex expression within percentage signs. 
+- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. To create a numeric variable through the **Set Variable action**, populate the input parameter with a number without any notation or a mathematical expression within percentage signs. 
+- **Boolean value** - The value can be either **True** or **False**. To create a boolean variable through the **Set Variable action**, populate the input parameter with the expressions **%True%** or  **%False%%**, or a complex expression using logical operators. 
 
-### Advanced data types
+## Advanced data types
 
 - **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
 - **Datarow** - A data row contains the values of a single row of a datatable.
 - **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
-- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
+- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. To create a new custom object, use the **Set variable** action and the epxression **%{ 'Name1': value1, 'Name2': value2, 'Name3': value2 }%**. 
 
 ### Lists
 
 Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
-You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.
+You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
 ![An example of a list.](media\lists\create-list.png)
+
+Alternatively, you can create a list using the **Set variable** action and the programming array notation **[element1, element2, element3]** within percentage signs.
 
 You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
@@ -61,7 +63,9 @@ A datatable contains rows and columns that describe the position of each item un
 
 ![An example of a datatable variable.](media\data-tables\data-table-first-item.png)
 
-Power Automate Desktop doesn't provide a direct way to create a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+
+Alternatively, you can create a data table using the **Set variable** action and the programming array notation **{['John', 24], ['Catherine', 27]}** within percentage signs. 
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 
@@ -119,7 +123,15 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 ## Others
 
-- **Datetime** - Contains date and time information.
+- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable action**, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+  - **yyyy**: Year
+  - **MM**: Month
+  - **dd**: Day
+  - **HH**: Hours
+  - **mm**: Minitues
+  - **ss**: Seconds
+  - **ff**: Miliseconds
+  - **zzz**: UTC Offset	
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
 - **FTP file** - Represents an FTP file.
