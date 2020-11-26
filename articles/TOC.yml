@@ -355,25 +355,25 @@
   items:
   - name: Use AI Builder in Power Automate
     href: use-ai-builder.md
-- name: Process Advisor
+- name: Process Advisor (preview)
   items:
-  - name: Overview
+  - name: Overview (preview)
     href: process-advisor-overview.md
-  - name: Work with processes and recordings
+  - name: Work with processes and recordings (preview)
     href: process-advisor-processes.md
-  - name: Visualize processes
+  - name: Visualize processes (preview)
     href: process-advisor-visualize.md
-  - name: Analyze processes
+  - name: Analyze processes (preview)
     href: process-advisor-analyze.md
-  - name: Share processes
+  - name: Share processes (preview)
     href: process-advisor-share.md
-  - name: Administration and security
+  - name: Administration and security (preview)
     items:
-    - name: Security and privacy
+    - name: Security and privacy (preview)
       href: process-advisor-security.md
-    - name: Protect your data
+    - name: Protect your data (preview)
       href: process-advisor-protect.md
-    - name: Known issues
+    - name: Known issues (preview)
       href: process-advisor-issues.md
   - name: Glossary
     href: process-advisor-glossary.md

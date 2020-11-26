@@ -1,5 +1,5 @@
 ---
-title: Work with processes and recordings | Microsoft Docs
+title: Work with processes and recordings (preview)| Microsoft Docs
 description: How to create and work with processes in Process Advisor.
 services: ''
 suite: flow
@@ -21,7 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Work with processes and recordings
+# Work with processes and recordings (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Before you can use Process Advisor to visualize and analyze your processes, you have to:
 

@@ -1,5 +1,5 @@
 ---
-title: Overview of Process Advisor (preview) | Microsoft Docs
+title: Share a Process Advisor process (preview) | Microsoft Docs
 description: Overview of the Process Advisor feature in Power Automate.
 services: ''
 suite: flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share processes
+# Share processes (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

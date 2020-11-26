@@ -1,5 +1,5 @@
 ---
-title: Visualize processes in Process Advisor | Microsoft Docs
+title: Visualize processes in Process Advisor (preview) | Microsoft Docs
 description: Overview of the Process Advisor feature in Power Automate.
 services: ''
 suite: flow
@@ -21,7 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Visualize processes
+# Visualize processes (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 ## Process map
 

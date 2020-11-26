@@ -23,6 +23,8 @@ search.audienceType:
 ---
 # Glossary
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 **Activity**: Activities describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.
 
 **Variant**: A specific path it takes for a process to be completed. 

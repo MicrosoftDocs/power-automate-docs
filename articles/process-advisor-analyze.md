@@ -23,6 +23,8 @@ search.audienceType:
 ---
 # Analyze processes
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 On the **Process Advisor (preview)** > **Processes** screen, select your process to go to the Details screen. This is where you access most of your process management activities .
 
 ## Analyze feature

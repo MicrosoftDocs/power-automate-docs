@@ -22,7 +22,9 @@ search.audienceType:
   - enduser
 ---
 
-# Protect your data
+# Protect your data in Process Advisor (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 During the private preview you can use Power Automate Desktop features to remove screenshots and text entries stored during the recording session, if they contain sensitive data.
 
