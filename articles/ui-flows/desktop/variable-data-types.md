@@ -18,19 +18,22 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Every variable belongs to a specific type, according to its content. Power Automate Desktop recognizes 17 distinct data types. 
+Every variable belongs to a specific type, according to its content. Power Automate Desktop recognizes 43 distinct data types. 
 
 Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  
 
 ## Simple data types
 
 - **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. To create a text variable through the **Set Variable action**, use the single quotes notation or a complex expression within percentage signs. 
+
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. To create a numeric variable through the **Set Variable action**, populate the input parameter with a number without any notation or a mathematical expression within percentage signs. 
+
 - **Boolean value** - The value can be either **True** or **False**. To create a boolean variable through the **Set Variable action**, populate the input parameter with the expressions **%True%** or  **%False%%**, or a complex expression using logical operators. 
 
 ## Advanced data types
 
 - **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
+
 - **Datarow** - A data row contains the values of a single row of a datatable.
 - **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. To create a new custom object, use the **Set variable** action and the epxression **%{ 'Name1': value1, 'Name2': value2, 'Name3': value2 }%**. 
