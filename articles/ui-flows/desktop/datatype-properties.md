@@ -279,3 +279,95 @@ The data types that have properties are displayed in the following lists.
 |StreetAddress   |The address of the user.      |
 |TelephoneNumber |The phone number of the user. |
 |Title           |The title of the user.        |
+
+## EBS snapshot
+
+|Property            |Description                                         |
+|--------------------|----------------------------------------------------|
+|DataEncryptionKeyId |The id of the data encryption key.                  |
+|Description         |The description of the snapshot.                    |
+|Encrypted           |This property is true if the snapshot is encrypted. |
+|KmsKeyId            |The id of the KMS key.                              |
+|OwnerAlias          |The alias of the owner.                             |
+|OwnerId             |The id of the owner.                                |
+|Progress            |The progress of the snapshot.                       |
+|SnapshotId          |The id of the snapshot.                             |
+|StartTime           |The start time of the snapshot.                     |
+|State               |The state of the snapshot.                          |
+|StateMessage        |The state message of the snapshot.                  |
+|Tags                |The tags of the snapshot.                           |
+|VolumeId            |The volume id.                                      |
+|VolumeSize          |The size of the volume.                             |
+
+## EBS volume
+
+|Property            |Description                                           |
+|--------------------|------------------------------------------------------|
+|Attachments         |The attachments of the volume.                        |
+|AvailabilityZone    |The availability zone of the volume.                  |
+|CreateTime          |This creation time of the volume.                     |
+|Encrypted           |This property is true if the volume is encrypted.     |
+|FastRestored        |This property is true if the fast restore is enabled. |
+|Iops                |The max IOPS of the volume.                           |
+|KmsKeyId            |The id of the KMS key.                                |
+|MultiAttachEnabled  |This property is true if the multi-attach is enabled. |
+|OutpostArn          |                                                      |
+|Size                |The size of the volume.                               |
+|SnapshotId          |The id of the snapshot.                               |
+|State               |The state of the volume.                              |
+|Tags                |The tags of the volume.                               |
+|VolumeId            |The id of the volume.                                 |
+|VolumeType          |The type of the volume.                               |
+
+## Azure managed disk
+
+|Property                   |Description                                                         |
+|---------------------------|--------------------------------------------------------------------|
+|AvailabilityZones          |The availability zones of the disk.                                 |
+|Configuration              |The configuration of the disk.                                      |
+|Encrypted                  |This property is true if the disk is encrypted.                     |
+|IopsSLimit                 |The max IOPS of the disk.                                           |
+|IsAttachedToVirtualMachine |This property is true if the disk is attached to a virtual machine. |
+|OperationSystem            |The operation system installed on the disk.                         |
+|SizeInGB                   |The size of the disk in GB.                                         |
+|State                      |This state of the disk.                                             |
+|ThroughputLimit            |The throughput limit of the disk.                                   |
+|TimeCreated                |The creation time of the disk.                                      |
+|Type                       |The type of the disk.                                               |
+|VirtualMachine             |The virtual machine that the disk is attached to.                   |
+|ResourceGroup              |The resource group of the disk.                                     |
+|Id                         |The id of the disk.                                                 |
+|Location                   |The location of the disk.                                           |
+|Name                       |The name s of the disk.                                             |
+|SubscriptionId             |The subscription id of the disk.                                    |
+|Tags                       |The tags of the disk.                                               |
+
+## Azure resource group
+
+|Property          |Description                                   |
+|------------------|----------------------------------------------|
+|ProvisioningState |The provisioning state of the resource group. |
+|Id                |The id of the resource group.                 |
+|Location          |This location of the resource group.          |
+|Name              |The name of the resource group.               |
+|SubscriptionId    |The subscription id of the resource group.    |
+|Tags              |The tags of the resource group.               |
+
+## Azure snapshot
+
+|Property            |Description                                |
+|-------------------|--------------------------------------------|
+|CreationSourceId   |The creation source id of the snapshot.     |
+|CreationSourceType |The creation source type of the snapshot.   |
+|OperationSystem    |This operation system on the  the snapshot. |
+|SizeInGB           |The size of the snapshot in GB.             |
+|StorageAccountType |This storage account type of the snapshot.  |
+|TimeCreated        |The creation time of the snapshot.          |
+|ResourceGroup      |The resource group of the snapshot.         |
+|id                 |This id of the snapshot.                    |
+|Location           |The location of the snapshot.               |
+|Name               |The name of the snapshot.                   |
+|SubscriptionId     |The subscription id of the snapshot.        |
+|Tags               |The tags of the snapshot.                   |
+
+

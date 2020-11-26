@@ -18,25 +18,39 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Every variable belongs to a specific type, according to its content. Power Automate Desktop recognizes 43 distinct data types. 
+When you create variables in your flows, Power Automate Desktop converts them to a specific type based on their content.
 
-Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  
+Some of these data types are widely used throughout the application, such as **numbers**, while others, such as **browser instances**, require explicit actions or groups of actions.
 
 ## Simple data types
 
-- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. To create a text variable through the **Set Variable action**, use the single quotes notation or a complex expression within percentage signs. 
+- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. You can find all the available properties of the text values in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#texts). 
 
-- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. To create a numeric variable through the **Set Variable action**, populate the input parameter with a number without any notation or a mathematical expression within percentage signs. 
+  > [!TIP]
+  > If you want to create a text variable, use the **Set Variable action** and the single quotes notation. In case you want to create a complex expression containing text values, put the expression within percentage signs. 
 
-- **Boolean value** - The value can be either **True** or **False**. To create a boolean variable through the **Set Variable action**, populate the input parameter with the expressions **%True%** or  **%False%%**, or a complex expression using logical operators. 
+- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
+
+  > [!TIP]
+  > If you want to create a numeric variable, use the **Set Variable action** and populate the input parameter with a number without any notation. Except for hardcoded numeric values, you can use mathematical expression within percentage signs. 
+
+- **Boolean value** - The value can be either **True** or **False**. 
+
+  > [!TIP]
+  > If you want to create a boolean variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%%**. Additionally, you can create complex expressions using logical operators and the percentage notation. 
 
 ## Advanced data types
 
 - **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
 
-- **Datarow** - A data row contains the values of a single row of a datatable.
+- **Datarow** - A data row contains the values of a single row of a datatable. You can find all the available properties of the datarows in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datarows). 
+
 - **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
-- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. To create a new custom object, use the **Set variable** action and the epxression **%{ 'Name1': value1, 'Name2': value2, 'Name3': value2 }%**. 
+
+- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
+
+  > [!TIP]
+  > To create a new custom object, use the **Set variable** action and an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
 ### Lists
 
@@ -45,8 +59,6 @@ Lists are collections of items. Depending on the types of the individual list it
 You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
 ![An example of a list.](media\lists\create-list.png)
-
-Alternatively, you can create a list using the **Set variable** action and the programming array notation **[element1, element2, element3]** within percentage signs.
 
 You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
@@ -58,6 +70,9 @@ In the example below, the flow stores the first number of the previously display
 
 A common practice is to use a **For each** action to iterate through the items of a list.
 
+> ![NOTE]
+> You can find all the available properties of the lists in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists). 
+
 ### Datatables
 
 A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
@@ -68,7 +83,9 @@ A datatable contains rows and columns that describe the position of each item un
 
 Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
 
-Alternatively, you can create a data table using the **Set variable** action and the programming array notation **{['John', 24], ['Catherine', 27]}** within percentage signs. 
+Alternatively, you can create a data table using the **Set variable** action and the programming array notation. 
+
+This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10$], ['Product2', '20$']}%**.
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 
@@ -80,6 +97,9 @@ If you want to access a specific column in a datable that contains column header
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
+> ![NOTE]
+> You can find all the available properties of the datatables in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables). 
+
 ### Known issues and limitations
 
 - **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
@@ -87,25 +107,50 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 ## Instances
 
-- **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions.
+- **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
+  > [!NOTE]
+  > You can find all the available properties of the web browser instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances). 
 - **Window instance** – Contains a window instance created through the **Get window** action.
+  > [!NOTE]
+  > You can find all the available properties of the windows instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#window-instance). 
 - **Excel instance** – Contains an Excel instance created through the **Launch Excel** action.
+  > [!NOTE]
+  > You can find all the available properties of the Excel instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#excel-instance). 
 - **Outlook instance** - Contains an Outlook instance created through the **Launch Outlook** action.
 
 ## Connections
 
 - **SQL connection** - Contains a connection to an SQL database established through the **Open SQL connection** action.
+  > [!NOTE]
+  > You can find all the available properties of the SQL connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#sql-connection). 
 - **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
 - **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 
-## Active Directory
+## Others
+
+### Active Directory
 
 - **Active Directory entry** - Contains a connection to an Active Directory server established through the **Connect to server** action.
 - **Group info** - Contains information about a specified Active Directory group.
 - **Group member** - Represents a member of a specified Active Directory group.
 - **User info** - Contains information about a specified Active Directory user.
 
-## Azure
+> ![NOTE]
+> You can find all the available properties of the Active Directory data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#active-directory-entry). 
+
+### AWS
+
+- **EC2 client** - Contains an EC2 session created through the **Create EC2 session** action.
+- **EC2 instance** - Represents a retrieved EC2 instance.
+- **EC2 instances info** - Contains information about an EC2 instance.
+- **Instance state change** - Contains information about an EC2 instance that was started or stopped.
+- **EBS snapshot** - Represents an EBS snapshot.
+- **EBS volume** - Represents an EBS volume.
+
+> ![NOTE]
+> You can find all the available properties of the AWS data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ebs-snapshot). 
+
+### Azure
 
 - **Azure client** - Contains an Azure session created through the **Create session** action.
 - **Azure resource group** - Represents a retrieved Azure resource group.
@@ -115,34 +160,81 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Azure virtual machine info** - Contains information about an Azure virtual machine.
 - **Azure subscription** - Represents a retrieved Azure subscription.
 
-## AWS
+> ![NOTE]
+> You can find all the available properties of the Azure data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#azure-managed-disk). 
 
-- **EC2 client** - Contains an EC2 session created through the **Create EC2 session** action.
-- **EC2 instance** - Represents a retrieved EC2 instance.
-- **EC2 instances info** - Contains information about an EC2 instance.
-- **Instance state change** - Contains information about an EC2 instance that was started or stopped.
-- **EBS snapshot** - Represents an EBS snapshot.
-- **EBS volume** - Represents an EBS volume.
+### CMD
 
-## Others
+- **CMD session** - Contains a CMD session created through the **Open CMD session** action.
+
+> ![NOTE]
+> You can find all the available properties of the CMD data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#cmd-session). 
+
+### Dates and Time
 
 - **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable action**, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
-  - **yyyy**: Year
-  - **MM**: Month
-  - **dd**: Day
-  - **HH**: Hour
-  - **mm**: Minitues
-  - **ss**: Seconds
-  - **ff**: Miliseconds
-  - **zzz**: UTC Offset	
+
+  | Notation | Description |
+  |----------|-------------|
+  | **yyyy** | Year        |
+  | **MM**   | Month       |
+  | **dd**   | Day         |
+  | **HH**   | Hour        |
+  | **mm**   | Minitues    |
+  | **ss**   | Seconds     |
+  | **ff**   | Miliseconds |
+  | **zzz**  | UTC Offset	 |
+
+> ![NOTE]
+> You can find all the available properties of the datetime values in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#dates). 
+
+### Email
+
+- **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
+
+> ![NOTE]
+> You can find all the available properties of the email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#mail-messages). 
+
+### Exchange
+
+- **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
+
+> ![NOTE]
+> You can find all the available properties of the email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-mail-messages). 
+
+### Files and folders
+
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
+
+> ![NOTE]
+> You can find all the available properties of the files and folders in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#files). 
+
+### FTP
+
 - **FTP file** - Represents an FTP file.
 - **FTP directory** - Represents an FTP directory
-- **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
-- **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
-- **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
+
+> ![NOTE]
+> You can find all the available properties of the FTP data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-files). 
+
+### OCR
+
 - **OCR Engine** – Contains an OCR engine created through the **Create OCR engine** action.
-- **CMD session** - Contains a CMD session created through the **Open CMD session** action.
+
+### Outlook
+
+- **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
+
+### Terminal
+
 - **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
+
+> ![NOTE]
+> You can find all the available properties of the terminal data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#terminal-session). 
+
+### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
+
+> ![NOTE]
+> You can find all the available properties of the XML data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#xml-node). 
