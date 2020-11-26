@@ -1,6 +1,6 @@
 ---
-title: Security and privacy (preview) | Microsoft Docs
-description: Security and privacy in Process Advisor.
+title: Known issues (preview) | Microsoft Docs
+description: Known issues in Process Advisor.
 services: ''
 suite: flow
 documentationcenter: na
