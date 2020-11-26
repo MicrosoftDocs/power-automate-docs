@@ -130,7 +130,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
   - **yyyy**: Year
   - **MM**: Month
   - **dd**: Day
-  - **HH**: Hours
+  - **HH**: Hour
   - **mm**: Minitues
   - **ss**: Seconds
   - **ff**: Miliseconds
