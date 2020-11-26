@@ -98,7 +98,7 @@ If you want to access a specific column in a datable that contains column header
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
 > [!NOTE]
-> You can find all the available properties of the datatables in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables). 
+> If you want to see infromation about the available properties of the datatables, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables). 
 
 ### Known issues and limitations
 
@@ -109,20 +109,20 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 - **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
   > [!NOTE]
-  > You can find all the available properties of the web browser instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances). 
+  > To see all the available properties of the web browser instance, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances). 
 - **Window instance** – Contains a window instance created through the **Get window** action.
   > [!NOTE]
-  > You can find all the available properties of the windows instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#window-instance). 
+  > If you want to see infromation about the available properties of the windows instances, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#window-instance). 
 - **Excel instance** – Contains an Excel instance created through the **Launch Excel** action.
   > [!NOTE]
-  > You can find all the available properties of the Excel instances in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#excel-instance). 
+  > If you want to explore the available properties of the Excel instances, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#excel-instance). 
 - **Outlook instance** - Contains an Outlook instance created through the **Launch Outlook** action.
 
 ## Connections
 
 - **SQL connection** - Contains a connection to an SQL database established through the **Open SQL connection** action.
   > [!NOTE]
-  > You can find all the available properties of the SQL connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#sql-connection). 
+  > If you want to see infromation about the available properties of the SQL connections, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#sql-connection). 
 - **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
   > [!NOTE]
   > You can find all the available properties of the Exchange connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-connection). 
@@ -165,7 +165,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Azure subscription** - Represents a retrieved Azure subscription.
 
 > [!NOTE]
-> You can find all the available properties of the Azure data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#azure-managed-disk). 
+> If you want to see infromation about the available properties of the Azure data types, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#azure-managed-disk). 
 
 ### CMD
 
@@ -212,7 +212,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Folder** - Represents a folder.
 
 > [!NOTE]
-> You can find all the available properties of the files and folders in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#files). 
+> To explore all the available properties of the files and folders, please visit the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#files). 
 
 ### FTP
 
@@ -238,10 +238,10 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
 
 > [!NOTE]
-> You can find all the available properties of the terminal data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#terminal-session). 
+> To find all the available properties of the terminal data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#terminal-session). 
 
 ### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
 > [!NOTE]
-> You can find all the available properties of the XML data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#xml-node). 
+> You can see all the available properties of the XML data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#xml-node). 
