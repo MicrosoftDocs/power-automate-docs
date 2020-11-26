@@ -18,7 +18,24 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-## Lists
+Every variable belongs to a specific type, according to its content. Power Automate Desktop recognizes 17 distinct data types. 
+
+Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  
+
+## Simple data types
+
+- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
+- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations.
+- **Boolean value** - The value can be either **True** or **False**.
+
+### Advanced data types
+
+- **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
+- **Datarow** - A data row contains the values of a single row of a datatable.
+- **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
+- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
+
+### Lists
 
 Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
@@ -36,7 +53,7 @@ In the example below, the flow stores the first number of the previously display
 
 A common practice is to use a **For each** action to iterate through the items of a list.
 
-## Datatables
+### Datatables
 
 A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
@@ -60,25 +77,6 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 - **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
 - **Workarounds**: None.
-
-## Other data types
-
-Every variable belongs to a specific type, according to its content. Power Automate Desktop recognizes 17 distinct data types. 
-
-Some of them can be used only with explicit actions, like **FTP connection**, while others are widely used throughout the platform like  **numbers**.  
-
-## Simple data types
-
-- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
-- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations.
-- **Boolean value** - The value can be either **True** or **False**.
-
-## Advanced data types
-
-- **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
-- **Datarow** - A data row contains the values of a single row of a datatable.
-- **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
-- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
 ## Instances
 
