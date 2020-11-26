@@ -38,10 +38,10 @@ You can see additional metrics, frequency of the activities, as well as Throughp
 Frequency shows you the total number of recordings/cases passing through it.  Throughput time is the time between the very first event of the case and the very last.
 There are various filters available to you to drill down into the process:
 
-- Variant selector allows you to select one variant, or a set of process variants to visualize in your process map. 
-- Recording selector allows you to select one recording, or a set of recordings to visualize in your process map. 
-- Time filter allows you to see the process visualization in a particular period. 
-Additionally, there are key performance indicators available to help you better understand your task. They are described in the section below.
+- Variant selector allows you to select one variant, or a set of process variants to visualize in your process map.
+- Recording selector allows you to select one recording, or a set of recordings to visualize in your process map.
+- Time filter allows you to see the process visualization in a particular period.
+Additionally, there are key performance indicators available to help you better understand your task. They are described in this topic.
 
 ## Time analysis
 
@@ -57,7 +57,7 @@ Additionally, there are key performance indicators available to help you better 
 - **/# of activities**: Shows how many steps in a process there are. The process owner can define steps on their own, and/or let others define activities during preparation of recording for analysis. In order to analyze a process, the user activities on the desktop could be grouped into meaningful activities. For example in an invoicing process, activities could be: opening an invoice, entering the data into an invoicing app, and closing the app and the invoice. 
 - **Throughput time (average)**: Shows you the average time it takes for a process to be completed across all recordings associated with the process. It is one of the most important data points for process mining because deep diving into throughput time informs you of the bottlenecks in your process.
 - **Throughput time (median)**: Median in general shows, the most frequent time it takes for a process to complete. It is a very useful metric in cases where a small number of recordings or even a single recording is so different than most recording that the average time for completion would look skewed towards this offending recording. To prevent the user from misinterpreting the time to completing the process, this measure will provide insight by showing the most frequent time as opposed to a simple average.
-- **/# of variants**: Shows how many different paths users took in order to complete a process.. For example, a person might have 11 steps in a process to complete a purchase order, while another only 7. 
+- **/# of variants**: Shows how many different paths users took in order to complete a process.. For example, a person might have 11 steps in a process to complete a purchase order, while another only 7.
 
 ## Visualizations
 
@@ -67,4 +67,3 @@ Additionally, there are key performance indicators available to help you better 
 - **Recording by average and median times**: Shows recording by average and median times. You can use this visualization to easily filter for desired recording, according to their duration. Filters:
 - **Recording name**: Filters for a specific recording or set of recordings. This enables you to filter for a specific recording you might be interested in, or a set of recordings.
 - **Start date**: Filters for the time range when recording has started and ended. For example if your process changed over time you want to see if there were any impact on your metrics after the process change by filtering for recordings that started after a certain time.
-

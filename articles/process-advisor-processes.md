@@ -81,8 +81,8 @@ Create a recording in one of three ways:
 
 1. In the Desktop recorder screen, select **Start recording**.
 1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder window.
-1. Once the recording has saved successfully Select Got it to close the popup.
-1. Return to the web portal in your browser, and Select View recording.
+1. Once the recording has saved successfully select **Got it** to close the message.
+1. Return to the web portal in your browser, and Select **View recording**.
 
 > [!NOTE]
 > Depending on the length of the recording, it may take some time before the actions will be available.
@@ -114,13 +114,13 @@ Once the recording has completed, you can view the recorded actions in the recor
 1. Use the dropdown menu to find group names that already exist for the process, or create your own.
 1. If you made a mistake and want to delete a group, use the trash can icon next to the group name.
 1. At any time, select **Save** on the top right to save your work.
-1. To analyze, you need at least 2 groups. Otherwise, the process map would not be very meaningful.
+1. To analyze, you need at least two groups. Otherwise, the process map would not be very meaningful.
 1. When you finish grouping, set **Ready to analyze**  next to **Save**.
 1. Select **Close** to return to the process details page.
 
 ### Remove sensitive information
 
-1. Select the step that contains sensitive information.
+1. Select the step that contains information you want to remove.
 1. Edit the step name or description to remove any sensitive information, such as account numbers or passwords.
 1. Delete any screenshots that contain sensitive information.
 
