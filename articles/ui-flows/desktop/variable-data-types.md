@@ -135,7 +135,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Group member** - Represents a member of a specified Active Directory group.
 - **User info** - Contains information about a specified Active Directory user.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the Active Directory data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#active-directory-entry). 
 
 ### AWS
@@ -147,7 +147,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **EBS snapshot** - Represents an EBS snapshot.
 - **EBS volume** - Represents an EBS volume.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the AWS data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ebs-snapshot). 
 
 ### Azure
@@ -160,14 +160,14 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **Azure virtual machine info** - Contains information about an Azure virtual machine.
 - **Azure subscription** - Represents a retrieved Azure subscription.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the Azure data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#azure-managed-disk). 
 
 ### CMD
 
 - **CMD session** - Contains a CMD session created through the **Open CMD session** action.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the CMD data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#cmd-session). 
 
 ### Dates and Time
@@ -185,21 +185,21 @@ If you loop through a datatable with a **For Each** action, the variable that wi
   | **ff**   | Miliseconds |
   | **zzz**  | UTC Offset	 |
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the datetime values in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#dates). 
 
 ### Email
 
 - **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#mail-messages). 
 
 ### Exchange
 
 - **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the email messages in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-mail-messages). 
 
 ### Files and folders
@@ -207,7 +207,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the files and folders in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#files). 
 
 ### FTP
@@ -215,7 +215,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 - **FTP file** - Represents an FTP file.
 - **FTP directory** - Represents an FTP directory
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the FTP data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-files). 
 
 ### OCR
@@ -230,7 +230,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 - **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
 
-> ![NOTE]
+> [!NOTE]
 > You can find all the available properties of the terminal data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#terminal-session). 
 
 ### XML 
