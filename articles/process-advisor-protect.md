@@ -1,6 +1,6 @@
 ---
-title: Overview of Process Advisor (preview) | Microsoft Docs
-description: Overview of the Process Advisor feature in Power Automate.
+title: Protect your data (preview) | Microsoft Docs
+description: How to protect your data in Process Advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -39,5 +39,3 @@ To remove sensitive data from a text entry, select the text entry and modify the
 
 > [!div class="mx-imgBorder"]
 > ![Remove text](media/process-advisor-protect/remove-text.png "Modify the description")
-
-## See also

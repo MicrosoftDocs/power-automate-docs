@@ -1,6 +1,6 @@
 ---
-title: Process Advisor administration and security (preview) | Microsoft Docs
-description: Administration and security in Process Advisor.
+title: Security and privacy (preview) | Microsoft Docs
+description: Security and privacy in Process Advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Administration and security
+# Security and privacy
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -54,16 +54,3 @@ Once the recording is imported into Process Advisor, you can still remove sensit
 
 - Rename step names and/or description.
 - Delete screenshots.
-
-## Known issues and resolutions
-
-- **Unable to access Process Advisor**
-If you cannot see Process Advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following requirements:
-
- - You have a Power Automate License
-   If you don’t have a license, you can activate your trial license from UI Flow in Power Automate
-- You have access to the Power Automate environment and the permissions required by Process Advisor described in the “Security” section.
-- Your browser has the feature to accept 3rd party cookies enabled.
-  You can enable it in your browser settings
-
-## See also

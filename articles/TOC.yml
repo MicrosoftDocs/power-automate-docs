@@ -368,11 +368,15 @@
   - name: Share processes
     href: process-advisor-share.md
   - name: Administration and security
-    href: process-advisor-admin-security.md
-  - name: 
-    href: 
-  - name: 
-    href: 
+    items:
+    - name: Security and privacy
+      href: process-advisor-security.md
+    - name: Protect your data
+      href: process-advisor-protect.md
+    - name: Known issues
+      href: process-advisor-issues.md
+  - name: Glossary
+    href: process-advisor-glossary.md
 - name: How to
   items:
   - name: Add an action
