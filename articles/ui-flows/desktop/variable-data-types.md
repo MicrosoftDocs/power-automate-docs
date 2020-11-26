@@ -124,7 +124,11 @@ If you loop through a datatable with a **For Each** action, the variable that wi
   > [!NOTE]
   > You can find all the available properties of the SQL connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#sql-connection). 
 - **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
+  > [!NOTE]
+  > You can find all the available properties of the Exchange connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-connection). 
 - **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
+  > [!NOTE]
+  > You can find all the available properties of the FTP connections in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-connection. 
 
 ## Others
 
@@ -225,6 +229,9 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 ### Outlook
 
 - **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
+
+> [!NOTE]
+> You can find all the available properties of the Outlook data types in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#outlook-mail-messages). 
 
 ### Terminal
 
