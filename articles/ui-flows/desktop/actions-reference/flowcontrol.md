@@ -27,7 +27,6 @@ Run a subflow specifying any required arguments
 |[Exit subflow](#exitfunction)|
 |[Go to](#goto)|
 |[Label](#label)|
-|[On block error](#block)|
 |[Run subflow](#callfunction)|
 |[Stop flow](#exit)|
 
@@ -95,25 +94,6 @@ Acts as the destination of a 'go to' statement
 
 ##### <a name="label_onerror"></a> Exceptions
 - This action doesn't include any exceptions
-
-### <a name="block"></a> On block error
-Marks the beginning of a block to handle actions errors
-
-##### Input Parameters
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Name|Yes|Text value||The name of the error block|
-|Set variable|No|*||The value to assign to the variable|
-|Run subflow|No|Subflow||The name of the subflow|
-|Operation|No|Continue flow run, Throw error|Throw error|The type of rule to enforce if an error occurs inside the block|
-|Mode|No|Go to next action, Repeat action, Go to beginning of block, Go to end of block|Go to next action|The operation to perform if the flow continues to run upon error|
-
-##### Variables Produced
-- This action doesn't produce any variables
-
-##### <a name="block_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
 

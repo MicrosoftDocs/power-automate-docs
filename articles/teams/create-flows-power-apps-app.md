@@ -1,5 +1,5 @@
 ---
-title: Create flows using the Power Apps app in Microsoft Teams | Microsoft Docs
+title: Create flows using the Power Apps app in Microsoft Teams (Preview) | Microsoft Docs
 description: Create flows using the Power Apps app in Teams.
 author: msftman
 manager: kvivek
@@ -8,7 +8,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2020
+ms.date: 09/22/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -17,19 +17,23 @@ search.audienceType:
   - enduser
 ---
 
-# Create flows using the Power Apps app in Microsoft Teams
+# Create flows using the Power Apps app in Microsoft Teams (Preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
 You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. 
-You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams as well.
+You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale tables](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) within Teams as well.
 
 > [!NOTE]
-> You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
+> - You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
 
 ## Prerequisites 
 
 - The Power Apps app must be installed before you can create flows in Teams. More information: [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app)
 
-- Before you can use the Power Apps app in Teams to create a flow, a Dataverse for Teams environment must already exist for that team. A Dataverse for Teams environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
+- Before you can use the Power Apps app in Teams to create a flow, a Project Oakdale environment must already exist for that team. A Project Oakdale environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
 
 ## Create a flow in Teams
 
@@ -84,6 +88,6 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 ## Related articles
 
-[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
-[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
-[About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
+[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-app-overview)<br/>
+[What is Project Oakdale?](/powerapps/teams/overview-data-platform)<br/>
+[About the Project Oakdale environment](/power-platform/admin/about-teams-environment)

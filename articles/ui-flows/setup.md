@@ -40,7 +40,7 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
-- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database).
+- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Common Data Service database](https://docs.microsoft.com/power-platform/admin/create-database).
 
 - A supported keyboard attached.
 
@@ -102,7 +102,7 @@ After the installation completes, confirm that the extensions for UI flows and P
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
-With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
+With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Common Data Service.
 
 Follow these steps to install Selenium IDE:
 

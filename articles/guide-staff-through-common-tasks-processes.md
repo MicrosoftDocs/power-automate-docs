@@ -25,7 +25,6 @@ search.audienceType:
 ---
 # Create custom business logic through processes
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 Defining and enforcing consistent business processes is one of the main reasons people use model-driven apps. Consistent processes help make sure people using the system can focus on their work and not on remembering to perform a set of manual steps. Processes can be simple or complex and can change over time.  
   

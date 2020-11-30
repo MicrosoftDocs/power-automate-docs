@@ -147,5 +147,5 @@ Here's an example of what a response and a response summary may look like after 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)
 * [Parallel modern approvals](parallel-modern-approvals.md)
-* [Approvals and Microsoft Dataverse](common-data-model-approve.md)
+* [Approvals and Common Data Service](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)

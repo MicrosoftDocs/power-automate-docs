@@ -4,8 +4,7 @@ description: Find all the training options for Power Automate
 author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/21/2020
-ms.service: flow
-ms.author: margoc
+ms.author: v-lshann
 ---
 
 # Functional Application Consultant Learning Catalog
@@ -26,7 +25,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | Content  | Description  | Format | Length    |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|
 | [Get started with Power Automate buttons](https://docs.microsoft.com/learn/paths/get-started-power-automate-buttons/) | Do you want to create button flows to solve business problems? Then, take this learning path, which introduces you to Power Automate buttons and demonstrates how to create button flows.  | Free, self-paced online learning path | 4 hours 30 minutes |
-| [Introduction to business process flows in Power Automate](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)	|Do you want to create business process flows? This module will discuss what business process flows are and how to use them to solve business solutions. You will discover why automating the business process is important to organizations and how to build business process flow solutions by using Power Platform and Microsoft Dataverse. Additionally, you will learn how business process flows differ from regular Power Automate workflows and when to use each.|	Free, self-paced online learning path|	31 minutes |
+| [Introduction to business process flows in Power Automate](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)	|Do you want to create business process flows? This module will discuss what business process flows are and how to use them to solve business solutions. You will discover why automating the business process is important to organizations and how to build business process flow solutions by using Power Platform and Common Data Service. Additionally, you will learn how business process flows differ from regular Power Automate workflows and when to use each.|	Free, self-paced online learning path|	31 minutes |
 | [Power Automate documentation](https://docs.microsoft.com/power-automate/)  | Power Automate documentation. Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more. | Website landing page |      |
 | [Power Automate Frequently Asked Questions](https://docs.microsoft.com/power-automate/frequently-asked-questions)     | Power Automate Frequently Asked Questions   | Documentation   | 5 minutes to read  |
 ## Administer<a name="administer"></a>

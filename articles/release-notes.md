@@ -89,7 +89,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-07-23
 
 - **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Power Automate on your table data in Excel. Automate data processing or the copying/importing of data.
-- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on Microsoft Dataverse. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
+- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
 - **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
 - **Four new connectors** - Added Azure IoT Central - a highly scalable IoT software-as-a-service (SaaS) solution - Survey 123, LMS365 and ProjectWise Design Integration.
@@ -144,7 +144,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-04
 
-- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
+- **Approvals on Common Data Service** - Modern approvals are built on the latest version of Common Data Service. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
@@ -376,7 +376,7 @@ You can now view the status of all of the pending approval requests you have sen
 * **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
 * **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate Admin Center.
-* **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Dataverse.
+* **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Common Data Service.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
 
@@ -594,7 +594,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 [Read more and ask questions](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) about this release.
 
 ### Release 2016-08-08
-Public preview of Dataverse integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05
 * **SharePoint On-Premises** - Just like with SharePoint Online, you can create flows around your SharePoint on-premises lists and doc libraries either using pre-defined templates or by building them from scratch.

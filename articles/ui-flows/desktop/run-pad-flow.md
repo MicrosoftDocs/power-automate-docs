@@ -24,8 +24,3 @@ To run a flow from the console, either select a flow and select **Run** or right
 
 Flows running from the console will run from beginning to end without the Run delay. Running flows from the console will also ignore any breakpoints placed in the flow designer.
 
-## Runtime notifications
-
-A notification popup appears by default when a flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error:
-
-![Notification window](\media\run-pad-flow\notification-window.png)

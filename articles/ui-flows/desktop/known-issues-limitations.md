@@ -43,6 +43,12 @@ This article provides details about the known issues and limitations in Power Au
 
     **Workarounds**: Minimize the designer and console windows when you're adding UI elements or capturing screenshots.
 
+## Loops
+
+- **Issue**: An *Invalid Value* message may be displayed inside the configuration of the **Loop Action** when using a variable in **Start from**, **End to**, or **Increment by** even if the inputs are valid numeric expressions. The actions can still be saved and run successfully despite this message.
+
+    **Workarounds**: None.
+
 ## Variables
 
 - **Issue**: In some cases, when you rename a variable or an image, actions that use the renamed variable or image may no longer work as you might expect. 

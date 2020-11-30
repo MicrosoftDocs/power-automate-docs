@@ -25,7 +25,6 @@ search.audienceType:
 ---
 # Tutorial: Create a business process flow to standardize processes
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
@@ -339,8 +338,6 @@ Now that you've created the instant flow, all that's needed is for you to add it
 1. Select a flow from the list, and then save your changes by selecting the **Apply** button at the bottom of the properties pane.
 1. Finally, select the **Update** button to make this business process flow with its new instant flow step available to your users.
 
-### Flow Step considerations
-The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a flow step as completed, add the **Update a record** action of the Common Data Service connector under the **If yes** path. Set the **Environment** to **Default** and **Entity** to **Process Logs**. Then set **Record identifier** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
 
 ## The action center
 
@@ -350,13 +347,13 @@ When you need to see the list of business process flows in which you're involved
 
 ![Approval flows view of the unified action center](media/action-center-bpf.png "Approval flows view of the unified action center")
 
-In the unified action center, you will see all business processes in which you're assigned at least one Microsoft Dataverse entity record that the process uses. For example, if a business process uses the **Lead** and **Opportunity** entities in Dataverse, you will see all instances of this process where either the Lead or the Opportunity record is assigned to you.
+In the unified action center, you will see all business processes in which you're assigned at least one Common Data Service entity record that the process uses. For example, if a business process uses the **Lead** and **Opportunity** entities in Common Data Service, you will see all instances of this process where either the Lead or the Opportunity record is assigned to you.
 
 View all instances that are currently being worked under the **Active** tab. From this tab, you can view the following details:
 
 - The name of the process.
 - The current stage for each process.
-- The owner of the Dataverse record associated with the active stage.
+- The owner of the Common Data Service record associated with the active stage.
 - The time since the instance was created.
 
 To see the
