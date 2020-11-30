@@ -1,0 +1,50 @@
+---
+title: Create an approval from a chat or channel | Microsoft Docs
+description: Learn how to create an approval from a chat or channel.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: kvivek
+editor: ''
+tags: ''
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 11/30/2020
+ms.author: hamenon
+---
+
+# Create an approval from a chat or channel
+
+With the new Approvals experience in Teams you can create an approval from any chat or channel from the compose box in Teams.
+
+## Start an approval in a chat or channel
+
+Follow these steps to create an approval in a chat or channel in Microsoft Teams.
+
+1. Sign into [Microsoft Teams](https://teams.microsoft.com)
+
+2. Navigate to the chat or channel in which you want to send out the approval.
+
+3. Select the approvals icon under the compose box
+![Start an approval in chat](../media/native-approvals-in-teams/approvals-compose-box.png)
+
+4. Clicking on the icon will trigger a modal dialog where you can enter the details of the approval
+![Approvals form](../media/native-approvals-in-teams/approvals-dialog-box.png)
+
+5. Enter the details of the approval you want to send along with who you need the approval from.
+
+>[!TIP]
+>By default the approvers input is restricted to the roster of the team or chat you are sending the approval in.
+
+6. Once the details of the approval have been entered hit send. A card is created and sent in the chat or channel that you are in.
+
+![Approvals card](../media/native-approvals-in-teams/approvals-card.png)
+
+## Known issues
+
+Currently all the approvals created using this native Teams experience are created in your organizations default environment.
+

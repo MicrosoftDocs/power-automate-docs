@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2020
+ms.date: 11/30/2020
 ms.author: hamenon
 ---
 
@@ -33,5 +33,9 @@ These approvals are triggered directly with the Power Automate infrastructure an
 
 >[!TIP]
 >If you do not see the Approvals app in the more apps menu it is likely that your Teams Administrator has disabled the app in your tenant. Please contat your Teams administrator to enable the Approvals app from the Teams Admin center (pending link from Teams documentation)
+
+## Known issues
+
+Currently all the approvals are created in your organizations default environment.
 
 
