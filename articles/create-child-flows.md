@@ -90,3 +90,7 @@ You will need a solution with two flows:
    >[!TIP]
    >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs. 
    
+## Known issues
+
+We are working to address the following known issues and limitations: 
+1. Blocking the HTTP Request connector via DLP will currently block child flows, since child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so they are treated no differently than other flows.
