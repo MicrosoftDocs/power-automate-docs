@@ -45,13 +45,9 @@ Follow these steps to create an approval from the Approvals app in Teams
 
 ![Multiple approvers toggle](../media/native-approvals-in-teams/multiple-approvers-toggle.png)
 
-
-
-
-
 6. Once the details of the approval have been entered hit send. The approval will show up in the Sent Tab in the app.
 
-![New Approval request](../media/native-approvals-in-teams/approvals-app-sent.png)
+![Sent approvals](../media/native-approvals-in-teams/approvals-app-sent.png)
 
 
 ## Known issues
