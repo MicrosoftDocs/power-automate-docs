@@ -217,7 +217,7 @@ There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#
 
 ## IP addresses
 
-See [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled, and instant flows, including the required endpoints. 
+See the [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled, and instant flows, including the required endpoints. 
 
 
 
