@@ -23,6 +23,8 @@ search.audienceType:
 ---
 # Power Automate in your organization Q&A
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 This topic describes how users in your organization can use Power Automate, and how you can control the Power Automate service.
 
 ## Signing up for Power Automate
