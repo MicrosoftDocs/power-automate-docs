@@ -215,11 +215,9 @@ There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
-## Other configuration
-
-See [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled and instant flows, including required endpoints. 
-
 ## IP addresses
 
-Requests from Power Automate use IP addresses that depend on the region of the [environment](https://docs.microsoft.com/power-automate/environments-overview-maker) in which your flow exists.
+See [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled, and instant flows, including the required endpoints. 
+
+
 
