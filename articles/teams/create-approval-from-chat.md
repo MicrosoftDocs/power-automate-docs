@@ -44,6 +44,16 @@ Follow these steps to create an approval in a chat or channel in Microsoft Teams
 
 ![Approvals card](../media/native-approvals-in-teams/approvals-card.png)
 
+## Custom responses for Approvals
+
+If you want to customize the actions for an approval you can use the **Custom responses** option to change the action to anything you wish. To do so follow the same steps mentioned above and toggle the custom responses option in the Approvals form.
+
+![Custom responses](../media/native-approvals-in-teams/custom-responses.png)
+
+>[!TIP]
+>If you want to add more than two custom responses, you will need to use a flow to send the approval instead. [Learn more about custom responses in approvals](../create-approval-response-options.md).
+
+
 ## Known issues
 
 Currently all the approvals created using this native Teams experience are created in your organizations default environment.

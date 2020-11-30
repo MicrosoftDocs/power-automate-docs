@@ -47,6 +47,9 @@ Alternately you can also view open the Approvals app in Teams and navigate to th
 
 ![Approval complete app](../media/native-approvals-in-teams/approval-app-complete.png)
 
+>[!TIP]
+>If the approver has chosen to send an approval with custom responses the actions at the bottom can differ. For example:
+![Custom responses](../media/native-approvals-in-teams/custom-responses-respond.png)
 
 
 ## Known issues
