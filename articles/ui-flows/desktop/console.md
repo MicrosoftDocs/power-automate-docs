@@ -28,6 +28,10 @@ Users may run any Power Automate Desktop flows available to them through the con
 
 ![Start a flow](./media/console/start-flow.png)
 
+If the flow contains input variables, a dialog box prompts the user to provide values for each input variable.
+
+![Flow inputs dialog](./media/console/start-flow-inputs.png)
+
 ## Editing a flow
 
 Through the console, users may also create a new flow by pressing the "New flow" button, or edit an already existing one by double-clicking on it, or hovering the cursor over it and pressing the edit button:
