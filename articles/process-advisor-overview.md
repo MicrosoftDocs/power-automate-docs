@@ -38,3 +38,4 @@ Before you start using Process Advisor, make sure you have the following prerequ
   - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database.md)
 - Access to [Power Automate](https://powerautomate.microsoft.com/)
 - [Power Automate Desktop](/ui-flows/desktop/introduction.md)
+  - Make sure you have a UI Flows license. To start a trial license, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start your trial license.
