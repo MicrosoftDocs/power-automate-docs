@@ -24,7 +24,9 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Simple data types
 
-- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. You can find all the available properties of the text values in the [Text data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#texts). 
+- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
+
+  [Text data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#texts)
   
   To create a **Text value** variable, use the **Set Variable action** and populate the input parameter with the desired text without any notation.
 
@@ -50,7 +52,9 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
 
-- **Datarow** - A data row contains the values of a single row of a datatable. You can find all the available properties of the datarows in the [Datarow data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datarows). 
+- **Datarow** - A data row contains the values of a single row of a datatable. 
+
+  [Datarow data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datarows) 
 
 - **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
 
@@ -78,7 +82,7 @@ In the example below, the flow stores the first number of the previously display
 
 A common practice is to use a **For each** action to iterate through the items of a list.
 
- You can find all the available properties of the lists in the [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists). 
+ [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists)
 
 ### Datatables
 
@@ -106,7 +110,7 @@ If you want to access a specific column in a datable that contains column header
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
-To find infromation about the available properties of the datatables, please visit the [Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables). 
+[Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables) 
 
 ### Known issues and limitations
 
