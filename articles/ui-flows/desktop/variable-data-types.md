@@ -25,9 +25,10 @@ Some of these data types are widely used throughout the application, such as **n
 ## Simple data types
 
 - **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. You can find all the available properties of the text values in the [respective documentation article](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#texts). 
+  
+  - To create a text variable, use the **Set Variable action** and the single quotes notation. For more complex expressions containing text values, put the expression within percentage signs.
 
-  > [!TIP]
-  > If you want to create a text variable, use the **Set Variable action** and the single quotes notation. In case you want to create a complex expression containing text values, put the expression within percentage signs. 
+  {screenshot} 
 
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
