@@ -6,15 +6,17 @@
     href: sign-up-sign-in.md
   - name: Get started
     href: getting-started.md
+  - name: Get started with triggers
+    href: triggers-introduction.md
   - name: Guided learning
     href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
-  - name: Create a flow in the browser
+  - name: Create a flow from a template
     href: get-started-logic-template.md
   - name: Create a flow on a phone
     href: mobile-create-flow.md
   - name: Share a flow
     href: create-team-flows.md
-  - name: Create a flow that uses Common Data Service
+  - name: Create a flow that uses Microsoft Dataverse
     href: common-data-model-intro.md
   - name: What's new
     href: whats-new.md
@@ -36,11 +38,9 @@
   items:
   - name: Create a flow from scratch
     href: get-started-logic-flow.md
-  - name: Trigger a flow with email
-    href: email-triggers.md
-  - name: Create a flow with Common Data Service (current environment)
+  - name: Create a flow with Common Data Service (current environment) connector
     href: connection-cds-native.md
-  - name: Create a flow with Common Data Service
+  - name: Create a flow with Common Data Service connector
     href: connection-cds.md
   - name: Create a flow with Dynamics 365
     href: connection-dynamics365.md
@@ -88,10 +88,26 @@
     href: approvals-markdown-support.md
   - name: Custom approval response options
     href: create-approval-response-options.md
+- name: Use flows with Office 365 Outlook email
+  items:
+  - name: Overview
+    href: email-overview.md
+    displayName: Use flows with Outlook
+  - name: Create flows to manage email
+    href: create-email-flows.md
+  - name: Create flows for popular email scenarios
+    href: email-top-scenarios.md
+  - name: Trigger a flow with email
+    href: email-triggers.md
+  - name: Customize email in flows
+    href: email-customization.md
+  - name: Troubleshoot issues with email in flows
+    href: email-troubleshooting.md
 - name: Use flows with SharePoint
   items:
   - name: Overview
     href: sharepoint-overview.md
+    displayName: Use flows with SharePoint
   - name: Create SharePoint reminder flows
     href: create-sharepoint-reminder-flows.md
   - name: Manage SharePoint page approvals
@@ -100,8 +116,17 @@
   items:
   - name: Overview
     href: ./teams/overview.md
+    displayName: Use flows with Microsoft Teams
+  - name: Install the Power Automate app
+    href: ./teams/install-teams-app.md
+  - name: Create flows in Microsoft Teams
+    href: ./teams/teams-app-create.md
+  - name: Manage flows in Microsoft Teams
+    href: ./teams/teams-app-home.md    
   - name: Trigger flows from Teams messages
     href: trigger-flow-teams-message.md
+  - name: Create flows using the Power Apps app
+    href: ./teams/create-flows-power-apps-app.md
   - name: Model flows with adaptive cards
     href: create-adaptive-cards.md
     items:
@@ -125,8 +150,6 @@
       href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
-  - name: Create flows using the Power Apps app (Preview)
-    href: ./teams/create-flows-power-apps-app.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -304,9 +327,9 @@
     href: edit-solution-aware-flow.md
   - name: Remove a solution-aware flow
     href: remove-solution-aware-flow.md
-- name: Common Data Service
+- name: Microsoft Dataverse
   items:
-  - name: Classic Common Data Service workflows
+  - name: Classic Microsoft Dataverse workflows
     items:
     - name: Overview
       href: workflow-processes.md
@@ -318,15 +341,15 @@
       href: best-practices-workflow-processes.md
     - name: Replace background workflows with flows
       href: replace-workflows-with-flows.md
-  - name: Classic Common Data Service task flows
+  - name: Classic Microsoft Dataverse task flows
     items:
     - name: Create mobile task flows
       href: create-mobile-task-flow.md
-  - name: Classic Common Data Service dialogs
+  - name: Classic Microsoft Dataverse dialogs
     items:
-    - name: Use classic Common Data Service dialogs
+    - name: Use classic Microsoft Dataverse dialogs
       href: use-cds-for-apps-dialogs.md
-    - name: Replace classic Common Data Service dialogs
+    - name: Replace classic Microsoft Dataverse dialogs
       href: replace-dialogs.md
 - name: AI Builder
   items:
@@ -354,6 +377,8 @@
     href: disable-flow.md
 - name: Troubleshoot
   items:
+  - name: Troubleshoot common issues with triggers
+    href: triggers-troubleshoot.md
   - name: Watch a flow
     href: see-a-flow-run.md
   - name: Monitor flow activity on a phone
@@ -387,7 +412,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom Common Data Service workflow activities
+  - name: Custom Microsoft Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
@@ -399,6 +424,8 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
+  - name: View UI flows analytics
+    href: ./ui-flows/overview-analytics.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
@@ -443,13 +470,13 @@
     href: frequently-asked-questions.md
   - name: Power Automate glossary
     href: glossary.md
-- name: Learn from others
+- name: Resources
   items:
-  - name: Webinars
-    href: https://flow.microsoft.com/blog/category/webinars/
   - name: Blog
     href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
   - name: Support
     href: https://us.flow.microsoft.com/support/
+  - name: Webinars
+    href: webinars.md

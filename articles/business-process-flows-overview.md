@@ -25,6 +25,7 @@ search.audienceType:
 ---
 # Business process flows overview
 
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 You can help ensure that people enter data consistently and follow the same steps every time they work with a customer by creating a business process flow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order. Business process flows use the same underlying technology as other processes, but the capabilities that they provide are very different from other features that use processes. To learn how to create or edit a business process flow, see [Create a business process flow](create-business-process-flow.md).  
   
@@ -93,6 +94,8 @@ Business process flows provide a guide for people to get work done. They provide
   
 ### Business process flows that call a workflow  
  You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section. For more information about using workflows in business process flows, see [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+ 
+ If you set a workflow to trigger on **Stage Exit** of a stage in your business process flow, the workflow is triggered whenever you leave that stage. This happens when you move to the *next* stage or to the *previous* stage. 
   
  When you include a workflow that you want to trigger on Stage Exit of a stage in your business process flow, and that stage is  the last stage in the flow, the designer gives the impression that the workflow will be triggered when that stage is completed. However, the workflow will not be triggered because a stage transition does not take place. You will not receive a warning or error preventing you from including the workflow on the stage. When a user interacts with the business process flow, finishing or abandoning the process does not result in a stage transition, and therefore the workflow is not triggered. Consider the following examples:  
   
@@ -183,6 +186,15 @@ Specifically, the three commands that are available for a business process flow 
 - Next stage
 - Previous stage
 - Set Active stage
+
+### Lookup field in a business process flow stage
+
+Recent records are visible in a lookup field in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
+2. Go to **Tables** under **Data**. Search for your business process flow entity.
+3. Select **Forms**, and select the **Information** editor.
+4. Select your lookup data step from the **Tree view** and check **Disable most recently used items**.
+5. Save and publish. 
 
 ### Limitations of using business process flow entities
 
