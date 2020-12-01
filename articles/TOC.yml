@@ -127,6 +127,20 @@
     href: trigger-flow-teams-message.md
   - name: Create flows using the Power Apps app
     href: ./teams/create-flows-power-apps-app.md
+  - name: Create approvals in Microsoft Teams
+    items:
+    - name: Overview of Approvals in Microsoft Teams
+    - href: ./teams/native-approvals-in-teams.md
+    - name: Create approvals in chats or channels
+    - href: ./teams/create-approval-from-chat.md
+    - name: Create approvals from the Approval app 
+    - href: ./teams/create-approval-from-teams-app.md
+    - name: Respond to Approvals in Teams
+    - href: ./teams/respond-to-approvals-in-teams.md
+    - name: Manage approvals in Teams
+    - href: ./teams/manage-approvals-app.md
+    - name: Customize approvals in Teams
+    - href: ./teams/customize-approvals.md
   - name: Model flows with adaptive cards
     href: create-adaptive-cards.md
     items:
