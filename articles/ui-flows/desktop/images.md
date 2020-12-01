@@ -22,11 +22,11 @@ On the right-hand side pane, select the **Images** tab.
 
 ![images pane](\media\images\images-pane.png)
 
-Select **Capture new image**, and a crosshair with a magnifying glass will appear. Then, capture the image by clicking and dragging, while using the magnifying glass for pixel precision.
+Select **Capture image**, and a crosshair with a magnifying glass will appear. Then, capture the image by clicking and dragging, while using the magnifying glass for pixel precision.
 
 ![capture image](\media\images\capture-image.png)
 
-Additionally, select the arrow on the **Capture New Image** button to capture images on a timer. Select the number of seconds and enter a new value to adjust the timer.
+Additionally, select the arrow on the **Capture image** button to capture images on a timer. Select the number of seconds and enter a new value to adjust the timer.
 
 ![delay capture](\media\images\delay-capture.png)
 
