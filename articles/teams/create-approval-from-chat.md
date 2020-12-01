@@ -40,7 +40,12 @@ Follow these steps to create an approval in a chat or channel in Microsoft Teams
 >[!TIP]
 >By default the approvers input is restricted to the roster of the team or chat you are sending the approval in.
 
-6. Once the details of the approval have been entered hit send. A card is created and sent in the chat or channel that you are in.
+6. **Optional**: You can also include a file with your approval if you wish. To do so click on the *Add attachment* option in the Approval form. Any file uploaded is automatically stored in your OneDrive/SharePoint folder, just like other files shared on Teams.
+
+![Add attachment to approvals](../media/native-approvals-in-teams/approval-attach.png)
+
+
+7. Once the details of the approval have been entered hit send. A card is created and sent in the chat or channel that you are in.
 
 ![Approvals card](../media/native-approvals-in-teams/approvals-card.png)
 
