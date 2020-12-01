@@ -32,7 +32,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
-  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. Except for hardcoded numeric values, you can use mathematical expression with variables within percentage signs. 
+  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. 
 
   ![An example of a created Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
