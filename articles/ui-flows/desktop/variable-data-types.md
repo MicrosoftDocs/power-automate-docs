@@ -32,13 +32,17 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
-  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. 
+  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. 
+  
+  Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/variable-manipulation) article.
 
   ![An example of a created Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
 - **Boolean value** - The value can be either **True** or **False**. 
   
-  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%%**. Additionally, you can create complex expressions using logical operators, variables and the percentage notation. 
+  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%%**. 
+  
+  Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/variable-manipulation) article.
 
   ![An example of a created Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
