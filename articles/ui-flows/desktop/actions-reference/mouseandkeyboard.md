@@ -4,16 +4,18 @@ description: Mouse and keyboard Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
-ms.reviewer: marleon
+ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Mouse and keyboard
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Take control of the mouse and keyboard
@@ -29,7 +31,8 @@ Take control of the mouse and keyboard
 |[Send keys](#sendkeys)|
 |[Press/release key](#pressreleasekey)|
 |[Set key state](#setkeystate)|
-|[WaitForHotKeyAction](#waitforhotkeyaction)|
+|[Get keyboard identifier](#getkeyboardlayout)|
+|[Wait for shortcut key](#waitforshortcutkeyaction)|
 
 ### <a name="blockinput"></a> Block Input
 Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user
@@ -43,10 +46,10 @@ Blocks user mouse and keyboard input, so that the flow can perform mouse and key
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="blockinput_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't block/unblock user input in non-interactive mode|Indicates a problem blocking/unblocking input in non-interactive mode|
+|Can't block/unblock user input in non interactive mode|Indicates a problem blocking/unblocking input in non-interactive mode|
 |Failed to block/unblock input|Indicates a problem blocking/unblocking input|
 
 ### <a name="getmouseposition"></a> Get mouse position
@@ -65,10 +68,10 @@ Retrieves the current position of the mouse cursor on the screen in pixel coordi
 |MousePosY|Numeric value|The vertical (Y) value of the mouse position|
 
 
-##### Exceptions
+##### <a name="getmouseposition_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't retrieve the mouse position in non-interactive mode|Indicates a problem retrieving the mouse cursor position in non-interactive mode|
+|Can't retrieve the mouse position in non interactive mode|Indicates a problem retrieving the mouse cursor position in non-interactive mode|
 
 ### <a name="movemouse"></a> Move mouse
 Moves the mouse to a specific position
@@ -79,16 +82,16 @@ Moves the mouse to a specific position
 |Position X|No|Numeric value||The horizontal (X) value of the position to send the mouse to|
 |Position Y|No|Numeric value||The vertical (Y) value of the position to send the mouse to|
 |Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
-|Move mouse From previous position|N/A|Instant, With animation (low Speed), With animation (normal Speed), With animation (high speed)|Instant|Specify how to move the mouse|
+|Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify how to move the mouse|
 
 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="movemouse_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't move mouse in non-interactive mode|Indicates a problem moving the mouse in non-interactive mode|
+|Can't move mouse in non interactive mode|Indicates a problem moving the mouse in non-interactive mode|
 |Failed to move mouse|Indicates a problem moving the mouse|
 
 ### <a name="movemousetoimagebase"></a> Move mouse to image
@@ -98,7 +101,7 @@ Moves the mouse over an image found on screen or on the foreground window
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Image to move mouse to|No|List of Image||The list of Images to move the mouse to|
-|Search for Image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
+|Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Specify whether to scan the entire screen (or window) to find the supplied image or only a subregion of it|
 |X1|Yes|Numeric value||The starting X of the subregion to search in|
 |Y1|Yes|Numeric value||The starting Y of the subregion to search in|
@@ -108,8 +111,8 @@ Moves the mouse over an image found on screen or on the foreground window
 |Offset X|Yes|Numeric value|0|The pixels to offset the mouse from the position to the right|
 |Offset Y|Yes|Numeric value|0|The pixels to offset the mouse from the position down|
 |Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
-|Mouse movement style|N/A|Instant, With animation (low Speed), With animation (normal Speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
-|Occurrence|Yes|Numeric value|1|The occurrence of the image found to move the mouse to|
+|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
+|Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
 |Fail timeout|Yes|Numeric value|0|The fail timeout in seconds|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the image|
 |Click type|N/A|Left click, Right click, Middle click|Left click|The mouse click to send to the image|
@@ -123,14 +126,14 @@ Moves the mouse over an image found on screen or on the foreground window
 |Y|Numeric value|The Y coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
-##### Exceptions
+##### <a name="movemousetoimagebase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Image not found on screen|Indicates that the specified image wasn't found on the screen|
-|Can't move mouse in non-interactive mode|Indicates a problem moving the mouse in non-interactive mode|
+|Image not found on screen|Indicates that the speicifed image wasn't found on the screen|
+|Can't move mouse in non interactive mode|Indicates a problem moving the mouse in non-interactive mode|
 |Failed to move mouse|Indicates a problem moving the mouse|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
-|Not enough Image occurrences found on screen|Indicates that not enough occurrences of the specified Image were found on the screen|
+|Not enough Image occurences found on screen|Indicates that not enough occurences of the specified Image were found on the screen|
 
 ### <a name="movemousetotextonscreenwithocraction"></a> Move mouse to text on screen (OCR)
 Moves the mouse over a text found on the screen or on the foreground window using OCR
@@ -141,7 +144,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |OCR engine|No|OCREngineObject||The OCR engine to use to search for the text with|
 |Text to find|No|Text value||The text to move the mouse over|
 |Is regular expression|N/A|Boolean value|False|Whether to use a regular expression to look for the text on screen|
-|Occurrence|Yes|Numeric value|1|A positive number that will be used as the occurrence of the input text on screen|
+|Occurence|Yes|Numeric value|1|A positive number that will be used as the occurence of the input text on screen|
 |Search for text on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified text in the foremost window only or the entire visible screen. Neither choice will find the text if it isn't clearly visible on the screen|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Whether to scan the entire screen (or window) to find the supplied text or only a narrows down subregion of it|
 |Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
@@ -154,7 +157,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Move mouse From previous position|N/A|Instant, With animation (low Speed), With animation (normal Speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
+|Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
 |Wait for text to appear|N/A|Boolean value|False|Specify whether to wait if the text isn't found on the screen or foreground window|
 |Fail if text doesn't appear within|Yes|Numeric value|10|The number of seconds to wait for the supplied text to appear|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
@@ -174,11 +177,11 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |HeightOfTextFound|Numeric value|The width of the area the text was found on|
 
 
-##### Exceptions
+##### <a name="movemousetotextonscreenwithocraction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Text not found on screen|Indicates that the specified text couldn't be found on the screen|
-|Can't move mouse in non-interactive mode|Indicates a problem moving the mouse in non-interactive mode|
+|Can't move mouse in non interactive mode|Indicates a problem moving the mouse in non-interactive mode|
 |Failed to move mouse|Indicates a problem moving the mouse|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 |OCR engine isn't alive|Indicates that the OCR engine specified isn't alive|
@@ -195,16 +198,16 @@ Sends a mouse click event
 |X|No|Numeric value||The horizontal (X) position of the mouse in pixel coordinates|
 |Y|No|Numeric value||The vertical (Y) position of the mouse in pixel coordinates|
 |Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
-|Mouse movement style|N/A|Instant, With animation (low Speed), With animation (normal Speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
+|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
 
 
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendmouseclick_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't send mouse click in non-interactive mode|Indicates a problem sending a mouse click in non-interactive mode|
+|Can't send mouse click in non interactive mode|Indicates a problem sending a mouse click in non-interactive mode|
 |Mouse click out of screen bounds|Indicates that the mouse click was out of the screen bounds|
 |Failed to send mouse click|Indicates a problem sending a mouse click|
 
@@ -214,7 +217,7 @@ Sends keys to the application that is currently active
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Text to send|No|Text value||The text to send to the application|
+|Text to send|No|Encrypted value||The text to send to the application|
 |Delay between keystrokes|Yes|Numeric value|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
 |Send Text as hardware keys|N/A|Boolean value|False|Emulate the actual keystrokes on keyboard when sending whole Text|
 
@@ -222,10 +225,10 @@ Sends keys to the application that is currently active
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="sendkeys_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't send keystrokes in non-interactive mode|Indicates a problem sending keystrokes in non-interactive mode|
+|Can't send keystrokes in non interactive mode|Indicates a problem sending keystrokes in non-interactive mode|
 |Text to send doesn't represent valid keystrokes|Indicates that the text given doesn't represent valid keystrokes|
 |There isn't an active application to send keystrokes to|Indicates that there isn't an active application to send keystrokes to|
 |Failed to send keystrokes|Indicates a problem sending keystrokes|
@@ -272,10 +275,10 @@ Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shif
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="pressreleasekey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't press or release key in non-interactive mode|Indicates a problem pressing or releasing the key in non-interactive mode|
+|Can't press or release key in non interactive mode|Indicates a problem pressing or releasing the key in non-interactive mode|
 
 ### <a name="setkeystate"></a> Set key state
 Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
@@ -290,31 +293,48 @@ Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="setkeystate_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't set key state in non-interactive mode|Indicates a problem setting the key state in non-interactive mode|
+|Can't set key state in non interactive mode|Indicates a problem setting the key state in non interactive mode|
 
-### <a name="waitforhotkeyaction"></a> WaitForHotKeyAction
+### <a name="getkeyboardlayout"></a> Get keyboard identifier
+Retrieves the active keyboard identifier from the machine's registry
 
+##### Input Parameters
+- This action doesn't require any input
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|KeyboardLayoutId|Numeric value|The registry key of the active keyboard identifier|
+
+
+##### <a name="getkeyboardlayout_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Keyboard identifier wasn’t found|Indicates an error while retrieving the keyboard identifier|
+
+### <a name="waitforshortcutkeyaction"></a> Wait for shortcut key
+Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). To define multiple shortcut keys seperate them by comma.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Hotkeys|Yes|List of Text values|Ctrl + A|Specify the hotkeys that you want to wait for|
-|Proceed on timeout|N/A|Boolean value|False|Specify whether the action will proceed anyway when the set period of time waiting for the hotkey expires|
-|Continue after|No|Numeric value||The time limit to wait before continuing with the flow|
+|Shortcut key|Yes|List of Text values|Ctrl + A|Specify the shortcut keys to wait for.  Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). In order to wait for one of multiple shortcut keys they must be in a list.|
+|Continue flow run on timeout|N/A|Boolean value|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
+|Continue after|Yes|Numeric value|10|The time in seconds before continuing the flow run|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|IndexOfHotKeyPressed|Numeric value|The ordinal position of the hotkey, pressed by the user|
+|IndexOfShortcutKeyPressed|Numeric value|The index of the shortcut key if the shortcut keys are in a list format.|
 
 
-##### Exceptions
+##### <a name="waitforshortcutkeyaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Hotkey failed to register|Indicates that a hotkey failed to register.|
+|Shortcut key failed to register|Indicates that a shortcut key failed to register.|
 
 

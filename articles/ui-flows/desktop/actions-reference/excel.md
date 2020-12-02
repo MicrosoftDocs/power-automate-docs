@@ -4,7 +4,7 @@ description: Excel Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -230,10 +230,10 @@ Copies a range of cells from the active worksheet of an Excel instance
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Copy mode|N/A|Single Cell's Values, Values from a Range of Cells, Values from Selection|Single Cell's Values|Specify whether to copy a single cell, a range of cells or the current selection of cells|
-|Column|No|Text value||The index or letter of the first column|
-|Row|No|Numeric value||The index of the first row|
-|Column|No|Text value||The index or letter of the last column|
-|Row|No|Numeric value||The index of the last row|
+|Start column|No|Text value||The index or letter of the first column|
+|Start row|No|Numeric value||The index of the first row|
+|End column|No|Text value||The index or letter of the last column|
+|End row|No|Numeric value||The index of the last row|
 
 
 ##### Variables Produced
@@ -370,7 +370,7 @@ Launches a new Excel instance or opens an Excel document
 |Launch Excel|N/A|with a blank document, and open the following document|with a blank document|Specify whether to open a New Excel document, or an existing one|
 |Document path|No|File||The full path of the existing Excel document to open|
 |Make instance visible|N/A|Boolean value|True|Specify whether to make the Excel window visible or hide it|
-|Password|Yes|Text value||The password on the Excel document, if it is password protected|
+|Password|Yes|Encrypted value||The password on the Excel document, if it is password protected|
 |Open as ReadOnly|N/A|Boolean value|False|Specify whether to open the stored document in read-only mode or not|
 |Load add-ins and macros|N/A|Boolean value|False|Specify whether to load add-ins and macros into the new Excel instance|
 
@@ -416,10 +416,10 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Retrieve|N/A|Single Cell's Values, Values from a Range of Cells, Values from Selection|Single Cell's Values|Whether to retrieve the value of a single cell or a table from a range of cells|
-|Start Column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
-|Start Row|No|Numeric value||The cell row (single cell's Value) or first row number|
-|End Column|No|Text value||The last column as a numeric value or a letter|
-|End Row|No|Numeric value||The last row number|
+|Start column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
+|Start row|No|Numeric value||The cell row (single cell's Value) or first row number|
+|End column|No|Text value||The last column as a numeric value or a letter|
+|End row|No|Numeric value||The last row number|
 |Get Cell Contents as Text|N/A|Boolean value|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
 |First line of range contains column names|N/A|Boolean value|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names|
 

@@ -4,7 +4,7 @@ description: Folder Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -221,7 +221,7 @@ Change the name of a folder
 |Can't rename folder|Indicates a problem renaming the folder|
 
 ### <a name="getspecialfolder"></a> Get special folder
-Retrieve the path of a Windows' special folder (such as Desktop, My Pictures, Internet Cache, etc.)
+Retrieve the path of a Windows' special folder (such as Desktop, My Pictures, Internet Cache etc)
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

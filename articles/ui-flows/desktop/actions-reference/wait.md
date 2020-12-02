@@ -4,7 +4,7 @@ description: Wait Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -140,7 +140,10 @@ Suspend the flow until a specific piece of text or web page element appears or d
 - This action doesn't produce any variables
 
 ##### <a name="waitforwebpagecontentaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for web page content failed|Indicates that the wait operation failed|
+
 ### <a name="waitforwindowcontentaction"></a> Wait for window content
 Suspends the execution of the automation until a specific piece of text or UI element appears or disappears from a Window
 
@@ -150,18 +153,21 @@ Suspends the execution of the automation until a specific piece of text or UI el
 |Wait until window|N/A|Contains UI element, Doesn't contain UI element, Contains text, Doesn't contain text|Contains UI element|Whether to wait for a specific text or UI element to appear in a window|
 |Check UI element state|N/A|Boolean value|False|Check whether a specific UI element is enabled or disabled|
 |Text|No|Text value||The text to check for|
-|State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
-|Window|No|UIControl||The window to check if the text exists on|
 |UI element|No|UIControl||The UI element to check for|
+|Window|No|UIControl||The window to check if the text exists on|
+|State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
 
 
 ##### Variables Produced
 - This action doesn't produce any variables
 
 ##### <a name="waitforwindowcontentaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for window content failed|Indicates that the wait operation failed|
+
 ### <a name="waitforimageaction"></a> Wait for image
-This action waits unti a specific image appears on the screen or on the foreground window
+This action waits until a specific image appears on the screen or on the foreground window
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -188,6 +194,7 @@ This action waits unti a specific image appears on the screen or on the foregrou
 ##### <a name="waitforimageaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
+|Wait for image failed|Indicates that the wait operation failed|
 |Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 
@@ -237,7 +244,7 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Duration|No|Numeric value||Time duration in seconds|
+|Duration|No|*||Time duration in seconds|
 
 
 ##### Variables Produced

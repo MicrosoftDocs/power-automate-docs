@@ -4,7 +4,7 @@ description: Terminal emulation Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -140,14 +140,14 @@ Set text on a terminal session
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Terminal session|No|Terminal session||The terminal session to work with|
-|Text|No|Text value||The text to set on the specified location|
+|Text|No|Encrypted value||The text to set on the specified location|
 |Set text|N/A|Cursor position, Field|Field|The location to set the text to|
 |Get field by|N/A|Label, Index, Position|Label|Specifies the way by which to look for the field|
 |Label|No|Text value||The label of the field to look for|
 |Index|No|Numeric value||The index of the field on the screen|
 |Row|No|Numeric value||The vertical position of the field on the screen|
 |Column|No|Numeric value||The horizontal position of the field on the screen|
-|Treat @ character as literal|N/A|Boolean value|False|Check this box to sent the @ character literally. Leave this option disabled to sent it as a special character|
+|Treat '@' character as literal|N/A|Boolean value|False|Check this box to sent the '@' character literally. Leave this option disabled to sent it as a special character|
 
 
 ##### Variables Produced

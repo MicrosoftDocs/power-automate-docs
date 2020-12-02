@@ -4,7 +4,7 @@ description: Text Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -78,7 +78,7 @@ Retrieve a subtext from a text value
 ##### <a name="getsubtextbase_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|StartIndex or length are out of range|Indicates that the start index or length are out of range|
+|Start index or length are out of range|Indicates that the start index or length are out of range|
 
 ### <a name="pad"></a> Pad text
 Creates a fixed length text by adding characters to the left or to the right of an existing text

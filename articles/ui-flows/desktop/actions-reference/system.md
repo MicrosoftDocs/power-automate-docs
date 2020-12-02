@@ -4,7 +4,7 @@ description: System Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -206,7 +206,7 @@ Logs off the current user
 ##### <a name="logoffuser_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't log off user in non-interactive mode|Indicates a problem logging off the user in non-interactive mode|
+|Can't log off user in non interactive mode|Indicates a problem logging off the user in non-interactive mode|
 |Can't log off the current user|Indicates a problem logging off the current user|
 
 ### <a name="shutdowncomputer"></a> Shutdown computer
@@ -253,7 +253,7 @@ Locks the workstation's display to protect it from unauthorized use
 ##### <a name="lockworkstation_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't lock the computer in non-interactive mode|Indicates a problem locking the computer in non-interactive mode|
+|Can't lock the computer in non interactive mode|Indicates a problem locking the computer in non interactive mode|
 |Can't lock the computer|Indicates a problem locking the computer in non-interactive mode|
 
 ### <a name="playsoundbase"></a> Play sound

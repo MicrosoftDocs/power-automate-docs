@@ -4,7 +4,7 @@ description: Cryptography Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -39,7 +39,7 @@ Encrypt a string with AES, using a key and a specified encoding format
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to encrypt|
 |Text to encrypt|No|Text value||The text to encrypt|
-|Encryption key|No|Text value||The encryption key to use|
+|Encryption key|No|Encrypted value||The encryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected encryption algorithm|
 |Key size|N/A|128 bits, 192 bits, 256 bits|256 bits|The size of the key in bits to use for the encryption|
 |Use salt|N/A|Boolean value|False|Specifies whether to use salt for encryption. When this option is enabled,  the randomly generated salt becomes an output in the form of a base64 string.|
@@ -67,7 +67,7 @@ Decrypt a string with AES based on a specified key and an encoding format
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding for the decrypted text|
 |Text to decrypt|No|Text value||The text to decrypt in the form of a base64 string|
-|Decryption key|No|Text value||The decryption key to use|
+|Decryption key|No|Encrypted value||The decryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected decryption algorithm|
 |Key size|N/A|128 bits, 192 bits, 256 bits|256 bits|The size of the key in bits to use for the decryption|
 |Use salt|N/A|Boolean value|False|Specifies whether to use salt for the decryption|
@@ -95,7 +95,7 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to encrypt|
 |File to encrypt|No|File||The text file that stores the contents to encrypt|
-|Encryption key|No|Text value||The encryption key to use|
+|Encryption key|No|Encrypted value||The encryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected encryption algorithm|
 |Key size|N/A|128 bits, 192 bits, 256 bits|256 bits|The size of the key in bits to use for the encryption|
 |Use salt|N/A|Boolean value|False|Specifies whether to use salt for encryption. When this option is enabled,  the randomly generated salt becomes an output in the form of a base64 string.|
@@ -124,7 +124,7 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to decrypt|
 |Text to decrypt|No|Text value||The text to decrypt in the form of a base64 string|
-|Decryption key|No|Text value||The decryption key to use|
+|Decryption key|No|Encrypted value||The decryption key to use|
 |Decrypt to file|No|File||The file to save the decrypted text into|
 |If file exists|N/A|Overwrite, Don't decrypt to file, Add sequential suffix|Add sequential suffix|Specifies what to do in case the destination file already exists|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected decryption algorithm|
@@ -200,7 +200,7 @@ Hash a string with a key, using a specified algorithm and an encoding format
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
 |Text to hash|No|Text value||The text to hash|
-|Hash key|No|Text value||The key to hash the text with|
+|Hash key|No|Encrypted value||The key to hash the text with|
 
 
 ##### Variables Produced
@@ -223,7 +223,7 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
 |Encoding|N/A|Default, ANSI, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
 |File to hash|No|File||The file to hash the contents of|
-|Hash key|No|Text value||The hash key to hash the text with|
+|Hash key|No|Encrypted value||The hash key to hash the text with|
 
 
 ##### Variables Produced

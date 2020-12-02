@@ -4,7 +4,7 @@ description: Cognitive Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -294,7 +294,7 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 ## IBM
 IBM's cognitive actions
 ## Document conversion
-Translate non-structured documents like fax, email, pdf, etc. into an EDI or other structured formats
+Translate non-structured documents like fax, email, pdf etc into an EDI or other structured formats
 ### <a name="convertdocumentibm"></a> Convert document
 Invokes the IBM service named 'Convert Document'
 
@@ -302,7 +302,7 @@ Invokes the IBM service named 'Convert Document'
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Username|No|Text value||The username to be used for this call|
-|Password|No|Text value||The password to use for this call|
+|Password|No|Encrypted value||The password to use for this call|
 |Version date|No|Text value||The release date of the API to use|
 |File path|No|File||The path to the file to analyze|
 |Mime type|N/A|text/html, text/xhtml+xml, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document|text/html|The MIME type of the file|

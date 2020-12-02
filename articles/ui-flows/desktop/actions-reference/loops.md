@@ -4,7 +4,7 @@ description: Loops Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -13,13 +13,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Loops
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Terminates the loop and the flow resumes at the next action or statement following the loop
 
 You can find more information on how to use the loop actions [here](../use-loops.md)
-
 |<!-- --> |
 |-----|
 |[Exit loop](#break)|
@@ -37,7 +38,7 @@ Terminates the loop and the flow resumes at the next action or statement followi
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="break_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="foreach"></a> For each
 Iterates over items in a list, data table or data row, allowing a block of actions to be executed repeatedly
@@ -54,7 +55,7 @@ Iterates over items in a list, data table or data row, allowing a block of actio
 ||*|The value name that will store the current item value in each iteration.|
 
 
-##### Exceptions
+##### <a name="foreach_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="loop"></a> Loop
 Iterates a block of actions for a specified number of times
@@ -73,7 +74,7 @@ Iterates a block of actions for a specified number of times
 ||*|The value name that will store the current index, starting at the start from value. The value will change by the increment with each iteration.|
 
 
-##### Exceptions
+##### <a name="loop_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="while"></a> Loop condition
 Iterates a block of actions as long as a specified condition proves to be true
@@ -89,7 +90,7 @@ Iterates a block of actions as long as a specified condition proves to be true
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="while_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="continue"></a> Next loop
 Forces the next iteration of the block to take place, skipping any actions in between
@@ -100,6 +101,6 @@ Forces the next iteration of the block to take place, skipping any actions in be
 ##### Variables Produced
 - This action doesn't produce any variables
 
-##### Exceptions
+##### <a name="continue_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 

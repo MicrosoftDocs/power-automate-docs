@@ -4,7 +4,7 @@ description: FTP Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -48,7 +48,7 @@ This action establishes a specific connection to a remote FTP server, and stores
 |Port|Yes|Numeric value|21|Enter the FTP server port here.|
 |Active mode|N/A|Boolean value|False|Specify the mode of the connection|
 |Username|No|Text value||Specify the username of the FTP account to use|
-|Password|Yes|Text value||Specify the password of the FTP account to use|
+|Password|Yes|Encrypted value||Specify the password of the FTP account to use|
 |Timeout|Yes|Numeric value|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
@@ -100,9 +100,9 @@ This action establishes a specific secure connection to a remote FTP server, and
 |Secure FTP Protocol|N/A|SFTP, FTPS explicit, FTPS implicit|SFTP|Choose the FTP protocol you wish to use to encrypt your connection|
 |Authentication method|N/A|Username and password, Private key, Private key and passphrase|Username and password|Choose the method you wish to use to authenticate yourself on the FTP server|
 |User name|No|Text value||Specify the username of the FTP account to use|
-|Password|Yes|Text value||Specify the password of the FTP account you wish to use|
+|Password|Yes|Encrypted value||Specify the password of the FTP account you wish to use|
 |Path to private key|No|Text value||Enter the file path to the private-key to be used for authentication|
-|Private key pass phrase|No|Text value||Enter a variable containing the private-key pass phrase here|
+|Private key pass phrase|Yes|Encrypted value||Enter a variable containing the private-key pass phrase here|
 |Timeout|Yes|Numeric value|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
@@ -164,7 +164,7 @@ Downloads one or more files from an FTP server
 |FTP connection|No|FTP connection||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |Download into folder|No|Folder||The folder to be the destination of the file(s) that will be downloaded|
 |File(s) to download|No|List of FTP Files||The file(s) to download|
-|Transfer type|N/A|Auto, Binary, ASCII|Auto|Enter ASCII or binary to specify the method for downloading a single file. If the file type is uncertain, or more than one is downloaded, choose Auto to follow the transfer rules specified in options|
+|Transfer type|N/A|Auto, Binary, ASCII|Auto|Enter ASCII or binary to specify the method for downloading a single file. If the file type is uncertain, or more than one is dowloaded, choose Auto to follow the transfer rules specified in options|
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and download with unique name adds an underscore and a sequential number to the end|
 
 
@@ -211,7 +211,7 @@ Uploads one or more files to an FTP server
 |-----|-----|-----|-----|-----|
 |FTP connection|No|FTP connection||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |File(s) to upload|No|List of Files||The file(s) to upload|
-|Remote location|Yes|Text value||The location where the files should be uploaded|
+|Remote location|Yes|Text value||The location where the filesshould be uploaded|
 |Transfer type|N/A|Auto, Binary, ASCII|Auto|Enter ASCII or binary to specify the method for downloading a single file. If you're not sure what type the file will be, or if you are downloading more than one, choose Auto to follow the transfer rules specified in Options|
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and Download with Unique Name adds an underscore and a sequential number to the end|
 
@@ -354,7 +354,7 @@ Invokes the given literal FTP command on the server
 ##### <a name="invokecommand_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Invoke command error|Indicates that an error occurred while invoking an FTP command|
+|Invoke commad error|Indicates that an error occured while invoking an FTP command|
 |Not connected error|Indicates that there is no open connection with the FTP server|
 
 ### <a name="synchronizedirectoryaction"></a> Synchronize directories
@@ -367,7 +367,7 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 |Synchronization direction|N/A|Remote -> local (Download), Local -> remote (Upload)|Remote -> local (Download)|Direction of the Synchronization method. Whether the local folder will be synchronized to the remote directory (DOWNLOAD) or the remote directory will be synchronized to the local folder (UPLOAD)|
 |Files to sync|N/A|All files, Only files matching the file filter, Only files not matching the file filter|All files|Choose whether you want to synchronize all files, or you want to use a file filter to include or exclude a specific set of files|
 |File filter|Yes|Text value|*|File-name pattern that controls which files will be included or excluded. This option allows wildcards such as "*.txt" , "document?.doc". The option also allows for multiple filters by using coma as a separator, "*.txt,*.pdf,document?"|
-|Local folder|No|Folder||Name of the local folder to be synchronized|
+|Local folder|No|Folder||Name of the local folder to be syncronized|
 |FTP directory|Yes|FTP directory|/|Name of the FTP directory to be synchronized|
 |Delete if source is absent|N/A|Boolean value|False|This option will delete a file or folder which exists in the target directory and not the source.|
 |Include subdirectories|N/A|Boolean value|True|This option will include subdirectories in the synchronization process.|
@@ -379,12 +379,12 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|FtpFilesAdded|List of FTP Files|List of FTP files that initially existed in the source and after the synchronization process were added to the target.|
-|FtpFilesModified|List of FTP Files|List of FTP files that initially existed in both the source and the target and after the synchronization process were added to the target.|
-|FtpFilesDeleted|List of FTP Files|List of FTP files that initially existed in the target directory and after the synchronization process were deleted.|
-|FilesAdded|List of Files|List of files that initially existed in the source and after the synchronization process were added to the target.|
-|FilesModified|List of Files|List of files that initially existed in both the source and the target and after the synchronization process were added to the target.|
-|FilesDeleted|List of Files|List of files that initially existed in the target directory and after the synchronization process were deleted.|
+|FtpFilesAdded|List of FTP Files|List of FTP files that initially existed in the source and after the syncronzation process were added to the target.|
+|FtpFilesModified|List of FTP Files|List of FTP files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
+|FtpFilesDeleted|List of FTP Files|List of FTP files that initially existed in the target directory and after the synchronzation process were deleted.|
+|FilesAdded|List of Files|List of files that initially existed in the source and after the syncronzation process were added to the target.|
+|FilesModified|List of Files|List of files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
+|FilesDeleted|List of Files|List of files that initially existed in the target directory and after the synchronzation process were deleted.|
 
 
 ##### <a name="synchronizedirectoryaction_onerror"></a> Exceptions

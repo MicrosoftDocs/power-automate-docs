@@ -4,7 +4,7 @@ description: File Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -30,7 +30,7 @@ Manage and manipulate files
 |[Write text to file](#writetext)|
 |[Read from CSV file](#readfromcsvfile)|
 |[Write to CSV file](#writetocsvfile)|
-|[Get filepath part](#getpathpart)|
+|[Get file path part](#getpathpart)|
 |[Get temporary file](#gettemppath)|
 
 ### <a name="copy"></a> Copy file(s)
@@ -231,8 +231,8 @@ Write a data table, data row or list to a CSV file
 |Variable to write|No|General value||The data table, data row variable or list variable to write into the target CSV file|
 |File path|No|File||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path|
 |Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ANSI|UTF-8|The encoding to use for writing to the specified CSV file |
-|Include column names|N/A|Boolean value|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't initially exist or exists but is otherwise empty of text|
-|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behavior when the targeted CSV file already exists in the filesystem|
+|Include column names|N/A|Boolean value|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't intially exist or exists but is otherwise empty of text|
+|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behaviour when the targeted CSV file already exists in the filesystem|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV file|
 |Custom columns separator|No|Text value||The custom column separator to use in the CSV file|
 |Use custom columns separator|N/A|Boolean value|False|Specifies whether to use a custom columns separator or a predefined one|
@@ -246,8 +246,8 @@ Write a data table, data row or list to a CSV file
 |-----|-----|
 |Write failed|Indicates a problem writing to the CSV file|
 
-### <a name="getpathpart"></a> Get filepath part
-Retrieve one or more parts (directory, filename, extension, etc.) from a text that represents a file path
+### <a name="getpathpart"></a> Get file path part
+Retrieve one or more parts (directory, filename, extension etc) from a text that represents a file path
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

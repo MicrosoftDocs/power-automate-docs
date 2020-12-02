@@ -4,7 +4,7 @@ description: Variables Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -26,7 +26,7 @@ All variable-related actions for different datatypes
 |[Generate random number](#generaterandomnumber)|
 |[Clear list](#clearlist)|
 |[Remove item from list](#removeitemfromlist)|
-|[Sort List](#sortlistbase)|
+|[Sort list](#sortlistbase)|
 |[Shuffle list](#shufflelist)|
 |[Merge lists](#mergelists)|
 |[Reverse list](#reverselist)|
@@ -96,7 +96,9 @@ Remove all items from a list
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|ClearedList|List of General values|The new cleared list|
 
 
 ##### <a name="clearlist_onerror"></a> Exceptions
@@ -115,7 +117,9 @@ Remove one or multiple items from a list
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|NewList|List of General values|The new list|
 
 
 ##### <a name="removeitemfromlist_onerror"></a> Exceptions
@@ -124,7 +128,7 @@ Remove one or multiple items from a list
 |Item index is out of range|Indicates that item index is out of range|
 |Item not found|Indicates that item doesn't exist in the list|
 
-### <a name="sortlistbase"></a> Sort List
+### <a name="sortlistbase"></a> Sort list
 Sort the items of a list. Use items of the same type
 
 ##### Input Parameters
@@ -141,7 +145,9 @@ Sort the items of a list. Use items of the same type
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|SortedList|List of General values|The new sorted list|
 
 
 ##### <a name="sortlistbase_onerror"></a> Exceptions
@@ -156,7 +162,9 @@ Create a random permutation of a list
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|ShuffledList|List of General values|The new shuffled list|
 
 
 ##### <a name="shufflelist_onerror"></a> Exceptions
@@ -192,7 +200,9 @@ Reverse the order of the items of a list
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|ReversedList|List of General values|The new reversed list|
 
 
 ##### <a name="reverselist_onerror"></a> Exceptions
@@ -208,7 +218,9 @@ Remove the multiple occurrences of items in a list, so that in the resulting lis
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|NewList|List of General values|The new list without duplicate items|
 
 
 ##### <a name="removeduplicateitemsfromlist_onerror"></a> Exceptions
@@ -322,7 +334,9 @@ Convert a custom object to a JSON string
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|NewList|List of General values|The new list|
 
 
 ##### <a name="additemtolist_onerror"></a> Exceptions
@@ -352,7 +366,9 @@ Increase the value of a variable by a specific amount
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|IncreasedValue|Numeric value|The numeric variable to increase|
 
 
 ##### <a name="increasevariable_onerror"></a> Exceptions
@@ -368,7 +384,9 @@ Decrease the value of a variable by a specific amount
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+|Argument|Type|Description|
+|-----|-----|-----|
+|DecreasedValue|Numeric value|The numeric variable to decrease|
 
 
 ##### <a name="decreasevariable_onerror"></a> Exceptions
@@ -385,7 +403,7 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewVar|*|The name of the variable to set|
+||*|The name of the variable to set|
 
 
 ##### <a name="assign_onerror"></a> Exceptions

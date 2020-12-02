@@ -1,10 +1,10 @@
 ---
-title: Flow Control | Microsoft Docs
-description: Flow Control Actions Reference
+title: Flow control | Microsoft Docs
+description: Flow control Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Flow Control
+# Flow control
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Run a subflow specifying any required arguments
+Marks the beginning of a block to handle actions errors
 
 |<!-- --> |
 |-----|
@@ -27,6 +27,7 @@ Run a subflow specifying any required arguments
 |[Exit subflow](#exitfunction)|
 |[Go to](#goto)|
 |[Label](#label)|
+|[On block error](#block)|
 |[Run subflow](#callfunction)|
 |[Stop flow](#exit)|
 
@@ -36,7 +37,7 @@ User comment
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Comment|Yes|Text value||User comment|
+|Comment|No|*||User comment|
 
 
 ##### Variables Produced
@@ -72,7 +73,7 @@ Transfers the flow of execution to another point, indicated by a label
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Go to label|No|Text value||Label in the flow|
+|Go to label|No|*||Label in the flow|
 
 
 ##### Variables Produced
@@ -86,7 +87,7 @@ Acts as the destination of a 'go to' statement
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Label name|No|Text value||Label in the program|
+|Label name|No|*||Label in the program|
 
 
 ##### Variables Produced
@@ -94,13 +95,27 @@ Acts as the destination of a 'go to' statement
 
 ##### <a name="label_onerror"></a> Exceptions
 - This action doesn't include any exceptions
+### <a name="block"></a> On block error
+Marks the beginning of a block to handle actions errors
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Name|No|Text value||The name of the Exception Block for Visual purposes only.|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="block_onerror"></a> Exceptions
+- This action doesn't include any exceptions
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Subflow name|No|Subflow||The name of the subflow to call|
+|Subflow name|No|*||The name of the subflow to call|
 
 
 ##### Variables Produced

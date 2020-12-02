@@ -4,7 +4,7 @@ description: CMD session Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -47,7 +47,7 @@ Open a new CMD session
 |Exception|Description|
 |-----|-----|
 |Can't start command session|Indicates a problem initiating a CMD session|
-|Working directory doesn't exist|Indicates that an error occurred trying to locate the working directory|
+|Working directory doesn't exist|Indicates that an error occured trying to locate the working directory|
 
 ### <a name="readfromcmdsession"></a> Read from CMD session
 Read the output of a CMD session

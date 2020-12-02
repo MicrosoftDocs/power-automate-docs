@@ -4,7 +4,7 @@ description: OCR Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -34,8 +34,8 @@ Create a Tesseract OCR engine
 |-----|-----|-----|-----|-----|
 |Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the choices|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the image's text that the Tesseract engine detects|
-|Language abbreviation|Yes|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', enter 'eng' in the field|
-|Language data path: |Yes|Folder||The path of the folder that holds the specified language Tesseract's data|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', enter 'eng' in the field|
+|Language data path: |No|Folder||The path of the folder that holds the specified language Tesseract's data|
 |Image width multiplier|Yes|Numeric value|1|The image's width multiplier|
 |Image height multiplier|Yes|Numeric value|1|The image's height multiplier|
 
@@ -90,6 +90,7 @@ Extract text from a given source using the given OCR engine
 |X2|Yes|Numeric value||The end X coordinate of the subregion to narrow down the scan|
 |Y1|Yes|Numeric value||The start Y coordinate of the subregion to narrow down the scan|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to narrow down the scan|
+|Wait for image to appear|N/A|Boolean value|False|Whether to wait for the image to appear on the screen or foreground window|
 |Timeout|Yes|Numeric value|0|Specifies the time to wait for the operation to complete before the action fails|
 
 

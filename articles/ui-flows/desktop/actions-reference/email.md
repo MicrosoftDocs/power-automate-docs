@@ -4,7 +4,7 @@ description: Email Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -36,7 +36,7 @@ Retrieves email messages from an IMAP server
 |Port|Yes|Numeric value|993|The port to use for the IMAP server. Usually this is port 993|
 |Enable SSL|N/A|Boolean value|True|Specify whether to use a secure connection to communicate with the IMAP Server|
 |User name|No|Text value||The username of the email account to access|
-|Password|No|Text value||The password of the email account to access|
+|Password|No|Encrypted value||The password of the email account to access|
 |Accept untrusted certificates|N/A|Boolean value|False|Specify whether untrusted certificates will be accepted|
 |Mail folder|No|Text value||The name of the IMAP mail-folder (also known as 'mailBox') to retrieve messages from|
 |Retrieve|N/A|All email messages, Unread email messages only, Read email messages only|All email messages|Specify whether to retrieve all messages in the folder or only the unread ones|
@@ -74,7 +74,7 @@ Moves, deletes or marks as unread an email (or a list of emails) retrieved by a 
 |Port|Yes|Numeric value|993|The port to use for the IMAP server. Usually this is port 993|
 |Enable SSL|N/A|Boolean value|True|Specify whether to use a secure connection to communicate with the IMAP server|
 |Username|No|Text value||The username of the email account to access|
-|Password|No|Text value||The password of the email account to access|
+|Password|No|Encrypted value||The password of the email account to access|
 |Accept Untrusted Certificates|N/A|Boolean value|False|Specify whether untrusted certificates will be accepted|
 |Email(s) to process|No|List of Mail Messages||The email or list of emails to process. This should be a variable populated by a Retrieve emails action|
 |Operation|N/A|Delete emails from server, Mark emails as unread, Move emails to mail folder, Mark emails as unread and move to mail folder|Move emails to mail folder|The operation you want to perform on the specified email messages|
@@ -102,7 +102,7 @@ Creates and sends a new email message
 |Enable SSL|N/A|Boolean value|False|Specify whether or not to communicate with the server through a secure connection|
 |SMTP Server needs authentication|N/A|Boolean value|False|Specify whether the server requires authentication|
 |User name|No|Text value||The username of the email account to access|
-|Password|No|Text value||The password of the email account to access|
+|Password|No|Encrypted value||The password of the email account to access|
 |Accept untrusted certificates|N/A|Boolean value|False|Specify whether untrusted certificates will be accepted|
 |From|No|Text value||The sender's email address|
 |Sender display name|Yes|Text value||The sender's display name|

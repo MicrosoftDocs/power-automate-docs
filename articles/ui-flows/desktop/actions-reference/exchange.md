@@ -4,7 +4,7 @@ description: Exchange Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -40,7 +40,7 @@ Open a new connection to an Exchange server
 |Credentials|N/A|Exchange default, User defined|Exchange default|Specifies the way to provide the user's Exchange credentials|
 |Domain|Yes|Text value||The Exchange account domain. To extract the account domain from the username, left this field empty|
 |Username|No|Text value||The Exchange account username|
-|Password|No|Text value||The Exchange account password|
+|Password|No|Encrypted value||The Exchange account password|
 |Timeout|Yes|Numeric value|30|The time in seconds to wait for the connection to be established before the action fails|
 
 
@@ -123,8 +123,8 @@ Move, delete or mark as unread an email message (or a list of email messages)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Exchange connection|No|Exchange connection||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
-|Email message(s) to process|No|List of Exchange mail messages||The email message(s) to process. Use a variable populated by a 'Retrieve Exchange email messages' action|
+|Exchange connection|No|Exchange connection||The Exchange connection. Cretae an Exchange connection with the 'Connect to Exchange server' action|
+|Email message(s) to process|No|List of Exchange mail messages||The email message(s) to process. Use a variabe populated by a 'Retrieve Exchange email messages' action|
 |Operation|N/A|Delete email messages from server, Mark email messages as unread, Move email messages to mail folder|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
 |Mailbox type|N/A|Personal, Shared|Personal|The type of the mailbox to retrieve email messages from|
 |Shared mailbox address|No|Text value||The address of the shared mailbox to retrieve email messages from|

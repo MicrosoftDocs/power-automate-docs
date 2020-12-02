@@ -4,7 +4,7 @@ description: Outlook Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -118,7 +118,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 |Outlook instance|No|Outlook instance||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|Text value||The name of the Outlook account (data file name) to work with|
 |Email messages to process|No|List of Outlook mail messages||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
-|Operation|N/A|Delete email messages, Move email messages to mail folder, Mark as unread|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
+|Operation|N/A|Delete email messages, Move email messages to mail fodler, Mark as unread|Move email messages to mail fodler|Specifies which operation to perform on the specified email messages|
 |Mail folder|No|Text value||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
 
 
@@ -141,7 +141,7 @@ Save Outlook email messages given an account
 |Outlook instance|No|Outlook instance||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|Text value||The name of the Outlook account (data file name) to work with|
 |Email message(s) to save|No|List of Outlook mail messages||The email message(s) to save. Use a variable populated by a 'Retrieve email messages from Outlook' action|
-|Save format|N/A|Text only (*.txt), Outlook template (*.oft), Outlook message format (*.msg), Outlook message format - Unicode (*.msg), Outlook message format - Unicode (*.msg), MHT files (*.mht)|Outlook message format (*.msg)|Specifies the format to save the messages|
+|Save format|N/A|Text only (*.txt), Outlook template (*.oft), Outlook message format (*.msg), Outlook message format - Unicode (*.msg), HTML (*.html), MHT files (*.mht)|Outlook message format (*.msg)|Specifies the format to save the messages|
 |File name|N/A|Default, Custom|Default|Specifies whether to save the messages using the default name (subject) or provide another|
 |Save as|No|Text value||Specifies the custom name for messages' name which differs from message to message by an automatically added suffix|
 |Save email message(s) to|No|Folder||The folder to save the messages to|

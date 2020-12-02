@@ -4,7 +4,7 @@ description: Azure Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -428,7 +428,7 @@ Shuts down the operating system of a virtual machine
 |Exception|Description|
 |-----|-----|
 |VM wasn't found|Indicates that the specified VM wasn't found|
-|Failed to shut down the VM|Indicates an error occurred while trying to shut down the VM|
+|Failed to shut down the VM|Indicates an error occured while trying to shut down the VM|
 
 ### <a name="restartvirtualmachine"></a> Restart virtual machine
 Restarts a virtual machine
@@ -457,10 +457,8 @@ Creates an Azure session
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Authentication type|N/A|With service principal, With file|With service principal|Specify the way to authenticate|
-|User name|No|Text value||The user name|
-|Password|No|Text value||The associated password|
 |Client ID |No|Text value||The client Id of the application, also known as application Id, which identifies the application that is using the token|
-|Client secret|No|Text value||The secret for the client ID|
+|Client secret|No|Encrypted value||The secret for the client ID|
 |Tenant ID|No|Text value||The directory ID of the Azure Active Directory|
 |Environment|N/A|Global cloud, China cloud, US Government, German cloud|Global cloud|The environment to authenticate to|
 |Authentication file|No|Text value||The path of the file with all the required information to authenticate|

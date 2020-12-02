@@ -4,7 +4,7 @@ description: Message boxes Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -55,7 +55,7 @@ Displays a message box
 |Exception|Description|
 |-----|-----|
 |Failed to display message box|Indicates a problem displaying the message dialog|
-|Can't display message box in non-interactive mode|Indicates a problem displaying the message dialog in non-interactive mode|
+|Can't display message box in non interactive mode|Indicates a problem displaying the message dialog in non-interactive mode|
 
 ### <a name="inputdialog"></a> Display input dialog
 Displays a dialog box that prompts the user to enter text
@@ -66,7 +66,7 @@ Displays a dialog box that prompts the user to enter text
 |Input dialog title|Yes|Text value||The dialog title|
 |Input dialog message|Yes|Text value||The dialog message|
 |Default value|Yes|Text value||Specify the text to display by default. If the user wishes to change this, they can type over it. Otherwise, the default text will be used|
-|Input type|N/A|Single line, Password, Multiline|Single line|The format for the input text. Choose Single line - password to hide the text or multi-line so that a larger display box makes visible more than one line of text|
+|Input type|N/A|Single line, Password, Multiline|Single line|The format for the input text. Choose Single line - password to hide the text or Multi line so that a larger display box makes visible more than one line of text|
 |Keep input dialog always on top|N/A|Boolean value|False|Specify whether the input dialog should always remain on top of all other windows|
 
 
@@ -81,7 +81,7 @@ Displays a dialog box that prompts the user to enter text
 |Exception|Description|
 |-----|-----|
 |Failed to display input dialog|Indicates a problem displaying the input dialog|
-|Can't display input dialog in non-interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display input dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ### <a name="selectdatedialog"></a> Display select date dialog
 Displays a dialog box that prompts the user to enter a date or date range
@@ -110,7 +110,7 @@ Displays a dialog box that prompts the user to enter a date or date range
 |Exception|Description|
 |-----|-----|
 |Failed to display select date dialog|Indicates a problem displaying the select date dialog|
-|Can't display select date dialog in non-interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select date dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ### <a name="selectfromlistdialog"></a> Display select from list dialog
 Displays a dialog box with options that lets the user select from a list
@@ -142,7 +142,7 @@ Displays a dialog box with options that lets the user select from a list
 |Exception|Description|
 |-----|-----|
 |Failed to display select dialog|Indicates a problem displaying the select dialog|
-|Can't display select dialog in non-interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ### <a name="selectfiledialog"></a> Display select  file dialog
 Displays the select file dialog and prompts the user to select one or more files
@@ -150,7 +150,7 @@ Displays the select file dialog and prompts the user to select one or more files
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Dialog title|Yes|Text value||The dialog title|
+|Dialog title|Yes|Text value||The fialog title|
 |Initial folder|Yes|Folder||The initial folder to open when browsing for a file. This is where the select file dialog action will start the user looking for the file(s)|
 |File filter|Yes|Text value||A filter to limit the files retrieved. This allows wild cards, for example "*.txt" or "document?.doc" (without the quotes). To allow the user to choose from multiple file filters, separate the choices with a semi-colon, for example "*.txt;*.exe"|
 |Keep file selection dialog always on top|N/A|Boolean value|False|Whether the file selection dialog should always remain on top of all other windows|
@@ -170,7 +170,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |Exception|Description|
 |-----|-----|
 |Failed to display select file dialog|Indicates a problem displaying the select file dialog|
-|Can't display select file dialog in non-interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select file dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ### <a name="selectfolder"></a> Display select folder dialog
 Displays the select folder dialog and prompts the user to select a folder
@@ -194,6 +194,6 @@ Displays the select folder dialog and prompts the user to select a folder
 |Exception|Description|
 |-----|-----|
 |Failed to display select folder dialog|Indicates a problem displaying the select folder dialog|
-|Can't display select folder dialog in non-interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select folder dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 

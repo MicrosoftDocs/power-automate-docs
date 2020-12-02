@@ -4,7 +4,7 @@ description: AWS Actions Reference
 author: mariosleon
 ms.service: flow
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -63,8 +63,8 @@ Start EC2 instance(s)
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
-|Insufficient capacity|Indicates that there isn't enough capacity to fulfill the request|
 |Invalid instance ID|Indicates that either the specified instance ID is malformed, or that the specified instance doesn't exist|
+|Insufficient capacity|Indicates that there isn't enough capacity to fulfill the request|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ### <a name="stopec2instance"></a> Stop EC2 instance
@@ -76,7 +76,7 @@ Stop EC2 instance(s)
 |EC2 client|No|EC2 client||The EC2 client|
 |Instance IDs|No|List of Text values||The instance IDs to stop|
 |Force stop|N/A|Boolean value|False|Specifies whether to force the instances to stop. The instances don't have an opportunity to flush file system caches or file system metadata|
-|Hibernation: |N/A|Boolean value|False|Specifies whether to hibernate the instance, if it was enabled for hibernation at launch. If the instance can't hibernate successfully, a normal shutdown occurs|
+|Hibernatation: |N/A|Boolean value|False|Specifies whether to hibernate the instance, if it was enabled for hibernation at launch. If the instance can't hibernate successfully, a normal shutdown occurs|
 
 
 ##### Variables Produced
@@ -193,9 +193,9 @@ Create a snapshot of an EBS volume and stores it in Amazon S3
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
-|Resource's limit is exceeded|Indicates that the limit for the specified resource is reached|
 |Invalid volume|Indicates that either the volume ID isn't valid, or the specified volume doesn't exist 
-or the volume isn't in the same availability zone as the specified instance|
+or the volume isn't in the same qvailability zone as the specified instance|
+|Resource's limit is exceeded|Indicates that the limit for the specified resource is reached|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ### <a name="describesnapshots"></a> Describe snapshots
@@ -244,8 +244,8 @@ Delete the specified snapshot
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
-|The resource is in use|Indicates that the operation can't be completed because the resource is in use|
 |Invalid snapshot ID|Indicates that either the specified snapshot ID is invalid, or that the specified snapshot doesn't exist|
+|The resource is in use|Indicates that the operation can't be completed because the resource is in use|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ## Volumes
@@ -282,7 +282,7 @@ Create an EBS volume
 |Invalid parameter|Indicates that a parameter specified in the request isn't valid, unsupported, or can't be used|
 |Invalid zone|Indicates that the specified availability zone doesn't exist, or isn't available to use|
 |Resource's limit is exceeded|Indicates that the limit for the specified resource is reached|
-|Volume type isn't supported in the specified zone|Indicates that the specified availability zone doesn't support provisioned IOPS SSD volumes|
+|Volume type isn't supported in sthe pecified zone|Indicates that the specified availability zone doesn't support provisioned IOPS SSD volumes|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ### <a name="attachvolume"></a> Attach volume
@@ -305,11 +305,11 @@ Attach an EBS volume to an EC2 instance
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
-|Incorrect state for the request|Indicates that the resource is in an incorrect state for the request. This can occur if there is an attempt to attach a volume that is still being created (ensure that the volume is 'available') or detach a volume that isn't attached|
+|Unsupported operation|Indicates that an unsupported operation was requested. For example, an instance that is instance store-backed can't be stopped|
 |Invalid parameter|Indicates that a parameter specified in the request isn't valid, unsupported, or can't be used|
-|The resource is in use|Indicates that the operation can't be completed because the resource is in use|
 |Invalid volume|Indicates that either the volume ID isn't valid, or the specified volume doesn't exist 
 or the volume isn't in the same qvailability zone as the specified instance|
+|The resource is in use|Indicates that the operation can't be completed because the resource is in use|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ### <a name="detachvolume"></a> Detach volume
@@ -333,9 +333,10 @@ Detach an EBS volume from an EC2 instance
 |-----|-----|
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
+|Unsupported operation|Indicates that an unsupported operation was requested. For example, an instance that is instance store-backed can't be stopped|
 |Invalid parameter|Indicates that a parameter specified in the request isn't valid, unsupported, or can't be used|
-|Incorrect state for the request|Indicates that the resource is in an incorrect state for the request. This can occur if there is an attempt to attach a volume that is still being created (ensure that the volume is 'available') or detach a volume that isn't attached|
 |Invalid attempt to detach|Indicates an attempt to detach a volume from an instance to which it isn't attached|
+|Incorrect state for the request|Indicates that the resource is in an incorrect state for the request. This can occur if there is an attempt to attach a volume that is still being created (ensure that the volume is 'available') or detach a volume that isn't attached|
 |Amazon service request failed|Indicates that the request to AWS failed|
 
 ### <a name="describevolumes"></a> Describe volumes
@@ -383,6 +384,8 @@ Delete the specified EBS volume
 |Authentication failed|Indicates that the provided credentials couldn't be validated|
 |Unauthorized operation|Indicates that an unauthorized operation was requested|
 |Invalid parameter|Indicates that a parameter specified in the request isn't valid, unsupported, or can't be used|
+|Invalid volume|Indicates that either the volume ID isn't valid, or the specified volume doesn't exist 
+or the volume isn't in the same qvailability zone as the specified instance|
 |Incorrect state for the request|Indicates that the resource is in an incorrect state for the request. This can occur if there is an attempt to attach a volume that is still being created (ensure that the volume is 'available') or detach a volume that isn't attached|
 |The resource is in use|Indicates that the operation can't be completed because the resource is in use|
 |Amazon service request failed|Indicates that the request to AWS failed|
@@ -395,7 +398,7 @@ Create an EC2 client to automate EC2 web services
 |-----|-----|-----|-----|-----|
 |Access keys|N/A|Boolean value|False|Specifies whether to use access key ID  and secret access key in order to create the EC2 session|
 |Access key ID|No|Text value||The AWS access key ID|
-|Secret|No|Text value||The AWS secret access key|
+|Secret|No|Encrypted value||The AWS secret access key|
 |Region endpoint|No|Text value||The region constant to use that determines the endpoint to use|
 |Profile name|Yes|Text value|default|The name of the profile to use |
 |Profile location|Yes|Text value||The location of the credentials file that contains the profile to use|
