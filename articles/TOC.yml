@@ -164,58 +164,46 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
-- name: Microsoft Dataverse
-  items:
-  - name: Classic Microsoft Dataverse workflows
+  - name: AI Builder
     items:
-    - name: Overview
-      href: workflow-processes.md
-    - name: Configure background workflow stages and steps
-      href: configure-workflow-steps.md
-    - name: Monitor and manage background workflow processes
-      href: monitor-manage-processes.md
-    - name: Best practices for background workflow processes
-      href: best-practices-workflow-processes.md
-    - name: Replace background workflows with flows
-      href: replace-workflows-with-flows.md
-  - name: Classic Microsoft Dataverse task flows
+    - name: Use AI Builder in Power Automate
+      href: use-ai-builder.md
+    - name: Troubleshoot
+      items:
+      - name: Troubleshoot common issues with triggers
+        href: triggers-troubleshoot.md
+      - name: Watch a flow
+        href: see-a-flow-run.md
+      - name: Monitor flow activity on a phone
+        href: mobile-monitor-activity.md
+      - name: Troubleshoot a flow
+        href: fix-flow-failures.md
+      - name: Find and fix errors with the error checker
+        href: error-checker.md
+  - name: Microsoft Dataverse
     items:
-    - name: Create mobile task flows
-      href: create-mobile-task-flow.md
-  - name: Classic Microsoft Dataverse dialogs
-    items:
-    - name: Use classic Microsoft Dataverse dialogs
-      href: use-cds-for-apps-dialogs.md
-    - name: Replace classic Microsoft Dataverse dialogs
-      href: replace-dialogs.md
-- name: AI Builder
-  items:
-  - name: Use AI Builder in Power Automate
-    href: use-ai-builder.md
-  - name: Troubleshoot
-    items:
-    - name: Troubleshoot common issues with triggers
-      href: triggers-troubleshoot.md
-    - name: Watch a flow
-      href: see-a-flow-run.md
-    - name: Monitor flow activity on a phone
-      href: mobile-monitor-activity.md
-    - name: Troubleshoot a flow
-      href: fix-flow-failures.md
-    - name: Find and fix errors with the error checker
-      href: error-checker.md
-- name: Business process flows
-  items:
-  - name: Business process flows overview
-    href: business-process-flows-overview.md
-  - name: Create a business process flow to standardize processes
-    href: create-business-process-flow.md
-  - name: Enhance business process flows with branching
-    href: enhance-business-process-flows-branching.md
-  - name: Add custom controls to business process flows
-    href: custom-controls-business-process-flows.md
-  - name: Best practices for business process flow attributes
-    href: best-practices-entity-attributes.md
+    - name: Classic Microsoft Dataverse workflows
+      items:
+      - name: Overview
+        href: workflow-processes.md
+      - name: Configure background workflow stages and steps
+        href: configure-workflow-steps.md
+      - name: Monitor and manage background workflow processes
+        href: monitor-manage-processes.md
+      - name: Best practices for background workflow processes
+        href: best-practices-workflow-processes.md
+      - name: Replace background workflows with flows
+        href: replace-workflows-with-flows.md
+    - name: Classic Microsoft Dataverse task flows
+      items:
+      - name: Create mobile task flows
+        href: create-mobile-task-flow.md
+    - name: Classic Microsoft Dataverse dialogs
+      items:
+      - name: Use classic Microsoft Dataverse dialogs
+        href: use-cds-for-apps-dialogs.md
+      - name: Replace classic Microsoft Dataverse dialogs
+        href: replace-dialogs.md
 - name: Power Automate Desktop UI flows (Preview)
   items: 
   - name: Introduction to Power Automate Desktop
@@ -363,8 +351,18 @@
       href: ./ui-flows/run-ui-flow.md
     - name: Manage UI flows
       href: ./ui-flows/manage.md
-
-
+- name: Business process flows
+  items:
+  - name: Business process flows overview
+    href: business-process-flows-overview.md
+  - name: Create a business process flow to standardize processes
+    href: create-business-process-flow.md
+  - name: Enhance business process flows with branching
+    href: enhance-business-process-flows-branching.md
+  - name: Add custom controls to business process flows
+    href: custom-controls-business-process-flows.md
+  - name: Best practices for business process flow attributes
+    href: best-practices-entity-attributes.md
 # - name: Power Automate documentation
 #   href: /power-automate/
 # - name: Overview
