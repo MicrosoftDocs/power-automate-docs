@@ -193,17 +193,17 @@
       - name: Replace classic Microsoft Dataverse dialogs
         href: replace-dialogs.md
   - name: Troubleshoot
-      items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
-      - name: Watch a flow
-        href: see-a-flow-run.md
-      - name: Monitor flow activity on a phone
-        href: mobile-monitor-activity.md
-      - name: Troubleshoot a flow
-        href: fix-flow-failures.md
-      - name: Find and fix errors with the error checker
-        href: error-checker.md
+    items:
+    - name: Troubleshoot common issues with triggers
+      href: triggers-troubleshoot.md
+    - name: Watch a flow
+      href: see-a-flow-run.md
+    - name: Monitor flow activity on a phone
+      href: mobile-monitor-activity.md
+    - name: Troubleshoot a flow
+      href: fix-flow-failures.md
+    - name: Find and fix errors with the error checker
+      href: error-checker.md
 - name: Power Automate Desktop UI flows (Preview)
   items: 
   - name: Introduction to Power Automate Desktop
