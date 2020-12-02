@@ -17,14 +17,14 @@ Your automation will probably be accessing data and systems that are protected
 by requiring users to sign in. Different automation scenarios require Power
 Automate to use different authentication methods.
 
-Before you set up your automations, you should ask yourself how you currently
+Before you set up your automation, you should ask yourself how you currently
 log in to the systems / machines to do the tasks manually. Below are some
 examples of different types of authentication (logins) that could be used when
 automating with Power Automate.
 
 ![Different types of automation](media/automation-types.png "Different types of automation")
 
-To set up the automations, make sure you have the necessary authentication
+To set up the automation, make sure you have the necessary authentication
 (login) information ready. You will need this information when you are [making a
 new
 connection](https://docs.microsoft.com/power-automate/add-manage-connections) to
@@ -35,7 +35,7 @@ flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
 
 ## On-premise Data gateway
 
-For desktop and website automations, On-premise data gateway is required so that
+For desktop and website automation, On-premise data gateway is required so that
 programs that are installed in the on-premise machines (eg. browser extensions
 and Power Automate Desktop) can be accessed from the Power Automate cloud-based
 service. More information on [setting up on-premise data
@@ -66,7 +66,7 @@ login ID and password.
 ## Authentications using On-premise system / Windows login
 
 This type of authentication will be required if you are planning to automate
-with the Power Automate Desktop application or UI flows. It is separate from
+with the Power Automate Desktop application or desktop flow. It is separate from
 Office 365 / Azure AD. If it is a computer that is connected to a corporate
 network, it is highly likely that it uses an Active Directory.
 

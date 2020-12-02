@@ -20,10 +20,10 @@ and store the sensitive text inside an [Azure Key
 Vault](https://docs.microsoft.com/azure/key-vault/general/overview). This is
 different from secure inputs and outputs as secure inputs and outputs mask the
 data that has entered a specific action and can be applied to any action n (if
-supported), whereas sensitive text is used to set up passing data to UI flows
+supported), whereas sensitive text is used to set up passing data to desktop flow
 actions .
 
-![Setting up sensitive text in UI flows](media/ui-flow-secure-input.png "Setting up sensitive text in UI flows")
+![Setting up sensitive text in desktop flow](media/ui-flow-secure-input.png "Setting up sensitive text in desktop flow")
 
 In this expense approval scenario, Abhay has the following steps to reimburse
 cash to the applicant who submitted an expense form.
