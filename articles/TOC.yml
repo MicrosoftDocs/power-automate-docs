@@ -3,9 +3,9 @@
 - name: Overview
   items:
   - name: Get started
-  - href: getting-started.md
+    href: getting-started.md
   - name: Types of flows
-  - href: flow-types.md
+    href: flow-types.md
 - name: Cloud flows
   items:
   - name: Get started
