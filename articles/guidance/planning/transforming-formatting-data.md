@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Transforming and formatting Data | Microsoft Docs
+description: It may well be that some of the data you retrieved from a system needs to be transformed to be usable by other systems used later in the process. This article explains the different methods you can use to transform and format your data.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Transforming and formatting Data
 
 It may well be that some of the data you retrieved from a system needs to be

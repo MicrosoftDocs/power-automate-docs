@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Process design overview | Microsoft Docs
+description: When you design a process automation, the first step is to decide when and what to automate. This article explains about the different scenarios and benefits you may have for automation.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Process design
 
 When you design a process automation, the first step is to decide when and what

@@ -1,3 +1,17 @@
+---
+title: Planning a Power Automate project - Introduction | Microsoft Docs
+description: Power Automate is a tool you can use to automate your manual and repetitive processes so that you can focus on a higher-value tasks. It is a unique, unified
+service that can automate cloud services, desktop applications, and legacy systems.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Introduction: Planning a Power Automate Project
 
 Power Automate is a tool you can use to automate your manual and repetitive

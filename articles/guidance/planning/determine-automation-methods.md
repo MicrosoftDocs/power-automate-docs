@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Determining which automation methods to use | Microsoft Docs
+description: Once the process design is complete, the next step is the architectural design to focus on how you will automate that process.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Determining which automation methods to use
 
 Once the process design is complete, the next step is the architectural design
@@ -104,7 +117,7 @@ Example triggers:
 
 -   When a new file is placed inside OneDrive
 
--   When a new record is created inside Common Data Service
+-   When a new record is created inside Microsoft Dataverse
 
 -   When an item was modified in Sharepoint custom list
 
@@ -112,8 +125,8 @@ Example triggers:
 
 An example use case for the expense report would be to set an automated trigger
 to start an approval flow when a new record is created in the Expense Approvals
-entity in Common Data Service. This is so that Power Apps can be used to create
-a form, which then creates a new record in Common Data Service.
+entity in Microsoft Dataverse. This is so that Power Apps can be used to create
+a form, which then creates a new record in Microsoft Dataverse.
 [//]: # (Edit still remaining)
 
 ## Instant / Manual triggers 

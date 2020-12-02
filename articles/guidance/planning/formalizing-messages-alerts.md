@@ -1,4 +1,17 @@
-## Formalizing messages and alerts
+---
+title: Planning a Power Automate project - Formalizing messages and alerts | Microsoft Docs
+description: When sending email notifications and Microsoft Teams messages, you may have situations where you do not want to send it as yourself but still ensure people can reach you when receiving them. This article explains how to formalize your messages and alerts.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
+# Formalizing messages and alerts
 
 When sending email notifications and Microsoft Teams messages, you may have
 situations where you do not want to send it as yourself but still ensure people

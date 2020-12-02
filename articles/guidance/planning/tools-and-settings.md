@@ -1,4 +1,17 @@
-## Tools and settings to test your automations
+---
+title: Planning a Power Automate project - Tools and settings to test your automations | Microsoft Docs
+description: This article introduces you to different tools you can use to check your flows and to detect errors that occur when the automations run.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
+# Tools and settings to test your automations
 
 There are tools you can use to check your flows for basic errors and to detect
 errors that occur when the automations run.

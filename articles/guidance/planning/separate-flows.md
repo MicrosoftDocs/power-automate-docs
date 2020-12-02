@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Separate flows into smaller automations | Microsoft Docs
+description: This article explains about tips and examples of architecting your flows to smaller separate automations. 
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Separate flows into smaller automations
 
 When you are setting up an automation, try to architect your flows so that you

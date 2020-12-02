@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Assessing the business impact | Microsoft Docs
+description: Once you have successfully deployed your automation, you can assess the impact by comparing your original business process against your new process, using the  success metrics you defined. This article walks you through how to assess the impact.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Assessing the business impact
 
 Once you have successfully deployed your automation, you can assess the impact

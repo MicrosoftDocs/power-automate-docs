@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Making Phase overview | Microsoft Docs
+description: The next step is to set up the automations. This article guides you to the relevant documentations on how to setup your automations.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Making Phase
 
 You have now planned and designed how you would like to automate your process.

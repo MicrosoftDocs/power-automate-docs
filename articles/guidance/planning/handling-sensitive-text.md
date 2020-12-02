@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Handling sensitive text | Microsoft Docs
+description: This article explains on how to securely store and pass a sensitive text inside Web browser or Desktop automation.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Handling sensitive text
 
 If you need to securely store and pass a sensitive text inside Web browser or

@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Reducing risk and planning for error handling | Microsoft Docs
+description: Always assume your automations can fail. There is no system that is perfect. This article explains about how you can reduce risks and plan for error handling.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Reducing risk and planning for error handling
 
 Always assume your automations can fail.

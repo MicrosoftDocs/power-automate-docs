@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Deploying and refining phase overview | Microsoft Docs
+description: When you are deploying an automation, it’s important to consider how you will replace the current business process with the new automation, to avoid disrupting the business. This article explains some of the ways to deploy your automations to production.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Deploying and refining phase
 
 When you are deploying an automation, it’s important to consider how you will
@@ -30,7 +43,7 @@ need to recreate the connection.
 
 Solutions are a great way to organize flows to manage versions and migrate from
 one environment to another. You’ll need to start by adding (or asking your admin
-to add) a Common Data Service database to your environment. After that’s done,
+to add) a Microsoft Dataverse database to your environment. After that’s done,
 you can go to the Solutions tab to create a new solution for your team, or you
 can create multiple solutions if you have a lot of flows that you’d like to
 further organize. There are a number of other benefits too, such as [native

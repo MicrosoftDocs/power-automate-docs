@@ -1,3 +1,16 @@
+---
+title: Planning a Power Automate project - Testing strategy | Microsoft Docs
+description: Once you have completed making your flows and automation, the next step is for you to test it out. This article explains about the testing strategies you should consider.
+author: taiki-yoshida
+ms.service: flow
+ms.topic: conceptual
+ms.custom: guidance
+ms.date: 12/05/2020
+ms.author: tayoshi
+ms.reviewer: kathyos
+
+---
+
 # Testing strategy
 
 Once you have completed making your flows and automation, the next step is for you to test it out.
