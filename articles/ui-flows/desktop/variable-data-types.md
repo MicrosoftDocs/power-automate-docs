@@ -64,7 +64,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of a created custom object variable.](media\variable-data-types\create-custom-object-variable.png)
 
-### Lists
+### List
 
 Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
@@ -84,7 +84,7 @@ A common practice is to use a **For each** action to iterate through the items o
 
  [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists)
 
-### Datatables
+### Datatable
 
 A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
