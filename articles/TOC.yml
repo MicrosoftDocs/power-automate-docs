@@ -204,19 +204,19 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate Desktop UI flows (Preview)
+- name: Desktop flows
   items: 
-  - name: Introduction to Power Automate Desktop
+  - name: Introduction to Desktop flows
     href: ./ui-flows/desktop/introduction.md
-  - name: Create a Power Automate Desktop flow
+  - name: Create a Desktop flow
     href: ./ui-flows/desktop/create-flow.md
-  - name: Run a Power Automate Desktop flow
+  - name: Run a Desktop flow
     href: ./ui-flows/desktop/run-pad-flow.md
-  - name: Trigger a Power Automate Desktop flow from another flow
+  - name: Trigger a Desktop flow from another flow
     href: ./ui-flows/desktop/link-pad-flow-portal.md
-  - name: Power Automate Desktop console
+  - name: Desktop console
     href: ./ui-flows/desktop/console.md
-  - name: Power Automate Desktop flow designer
+  - name: Desktop flow designer
     href: ./ui-flows/desktop/flow-designer.md
     items:
     - name: Configure actions and the actions pane
@@ -253,7 +253,7 @@
       href: ./ui-flows/desktop/using-browsers.md
     - name: Automate desktop flows
       href: ./ui-flows/desktop/desktop-automation.md
-  - name: Power Automate Desktop actions reference
+  - name: Desktop actions reference
     href: ./ui-flows/desktop/actions-reference.md
     items:
     - name: Variables
