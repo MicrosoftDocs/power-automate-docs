@@ -7,127 +7,127 @@
   - name: Types of flows
   - href: flow-types.md
 - name: Cloud flows
-  - items:
-    - name: Get started
-      href: cloud-get-started.md
-    - name: Automated flows
-      items:
-      - name: Create a flow from scratch
-        href: get-started-logic-flow.md
-      - name: Create a flow with Common Data Service (current environment) connector
-        href: connection-cds-native.md
-      - name: Create a flow with Common Data Service connector
-        href: connection-cds.md
-      - name: Create a flow with Dynamics 365
-        href: connection-dynamics365.md
-      - name: Create a flow with OneDrive for Business
-        href: onedrive-business-launch-panel.md
-      - name: Filter and copy data
-        href: odata-filters.md
-      - name: Run your flows with Flics
-        href: flic-button-flows.md
-      - name: Run your flows with bttns
-        href: bttn-button-flows.md
-    - name: Scheduled flows
-      items:
-      - name: Run a flow on a schedule
-        href: run-scheduled-tasks.md
-      - name: Process a list of items
-        href: apply-to-each.md
-    - name: Instant flows
-      items:
-      - name: Create a button flow
-        href: introduction-to-button-flows.md
-      - name: Create a button flow with trigger tokens
-        href: introduction-to-button-trigger-tokens.md
-      - name: Create a button flow with user input
-        href: button-flow-with-user-input-tokens.md
-      - name: Share a button
-        href: share-buttons.md
-  - name: Popular cloud flows scenarios
+  items:
+  - name: Get started
+    href: cloud-get-started.md
+  - name: Automated flows
     items:
-    - name: Approval flows
+    - name: Create a flow from scratch
+      href: get-started-logic-flow.md
+    - name: Create a flow with Common Data Service (current environment) connector
+      href: connection-cds-native.md
+    - name: Create a flow with Common Data Service connector
+      href: connection-cds.md
+    - name: Create a flow with Dynamics 365
+      href: connection-dynamics365.md
+    - name: Create a flow with OneDrive for Business
+      href: onedrive-business-launch-panel.md
+    - name: Filter and copy data
+      href: odata-filters.md
+    - name: Run your flows with Flics
+      href: flic-button-flows.md
+    - name: Run your flows with bttns
+      href: bttn-button-flows.md
+  - name: Scheduled flows
+    items:
+    - name: Run a flow on a schedule
+      href: run-scheduled-tasks.md
+    - name: Process a list of items
+      href: apply-to-each.md
+  - name: Instant flows
+    items:
+    - name: Create a button flow
+      href: introduction-to-button-flows.md
+    - name: Create a button flow with trigger tokens
+      href: introduction-to-button-trigger-tokens.md
+    - name: Create a button flow with user input
+      href: button-flow-with-user-input-tokens.md
+    - name: Share a button
+      href: share-buttons.md
+- name: Popular cloud flows scenarios
+  items:
+  - name: Approval flows
+    items:
+    - name: Get started with approvals
+      href: get-started-approvals.md
+    - name: Single approvals
+      href: modern-approvals.md
+    - name: Approvals with attachments
+      href: approval-attachments.md
+    - name: Sequential approvals
+      href: sequential-modern-approvals.md
+    - name: Parallel approvals
+      href: parallel-modern-approvals.md
+    - name: Everyone must approve
+      href: all-assigned-must-approve.md
+    - name: Integrated approvals
+      href: common-data-model-approve.md
+    - name: Format approval requests
+      href: approvals-markdown-support.md
+    - name: Custom approval response options
+      href: create-approval-response-options.md
+  - name: Use flows with Office 365 Outlook email
+    items:
+    - name: Overview
+      href: email-overview.md
+      displayName: Use flows with Outlook
+    - name: Create flows to manage email
+      href: create-email-flows.md
+    - name: Create flows for popular email scenarios
+      href: email-top-scenarios.md
+    - name: Trigger a flow with email
+      href: email-triggers.md
+    - name: Customize email in flows
+      href: email-customization.md
+    - name: Troubleshoot issues with email in flows
+      href: email-troubleshooting.md
+  - name: Use flows with SharePoint
+    items:
+    - name: Overview
+      href: sharepoint-overview.md
+      displayName: Use flows with SharePoint
+    - name: Create SharePoint reminder flows
+      href: create-sharepoint-reminder-flows.md
+    - name: Manage SharePoint page approvals
+      href: customize-sharepoint-page-approvals.md  
+  - name: Use flows with Microsoft Teams
+    items:
+    - name: Overview
+      href: ./teams/overview.md
+      displayName: Use flows with Microsoft Teams
+    - name: Install the Power Automate app
+      href: ./teams/install-teams-app.md
+    - name: Create flows in Microsoft Teams
+      href: ./teams/teams-app-create.md
+    - name: Manage flows in Microsoft Teams
+      href: ./teams/teams-app-home.md    
+    - name: Trigger flows from Teams messages
+      href: trigger-flow-teams-message.md
+    - name: Create flows using the Power Apps app
+      href: ./teams/create-flows-power-apps-app.md
+    - name: Model flows with adaptive cards
+      href: create-adaptive-cards.md
       items:
-      - name: Get started with approvals
-        href: get-started-approvals.md
-      - name: Single approvals
-        href: modern-approvals.md
-      - name: Approvals with attachments
-        href: approval-attachments.md
-      - name: Sequential approvals
-        href: sequential-modern-approvals.md
-      - name: Parallel approvals
-        href: parallel-modern-approvals.md
-      - name: Everyone must approve
-        href: all-assigned-must-approve.md
-      - name: Integrated approvals
-        href: common-data-model-approve.md
-      - name: Format approval requests
-        href: approvals-markdown-support.md
-      - name: Custom approval response options
-        href: create-approval-response-options.md
-    - name: Use flows with Office 365 Outlook email
-      items:
-      - name: Overview
-        href: email-overview.md
-        displayName: Use flows with Outlook
-      - name: Create flows to manage email
-        href: create-email-flows.md
-      - name: Create flows for popular email scenarios
-        href: email-top-scenarios.md
-      - name: Trigger a flow with email
-        href: email-triggers.md
-      - name: Customize email in flows
-        href: email-customization.md
-      - name: Troubleshoot issues with email in flows
-        href: email-troubleshooting.md
-    - name: Use flows with SharePoint
-      items:
-      - name: Overview
-        href: sharepoint-overview.md
-        displayName: Use flows with SharePoint
-      - name: Create SharePoint reminder flows
-        href: create-sharepoint-reminder-flows.md
-      - name: Manage SharePoint page approvals
-        href: customize-sharepoint-page-approvals.md  
-    - name: Use flows with Microsoft Teams
-      items:
-      - name: Overview
-        href: ./teams/overview.md
-        displayName: Use flows with Microsoft Teams
-      - name: Install the Power Automate app
-        href: ./teams/install-teams-app.md
-      - name: Create flows in Microsoft Teams
-        href: ./teams/teams-app-create.md
-      - name: Manage flows in Microsoft Teams
-        href: ./teams/teams-app-home.md    
-      - name: Trigger flows from Teams messages
-        href: trigger-flow-teams-message.md
-      - name: Create flows using the Power Apps app
-        href: ./teams/create-flows-power-apps-app.md
-      - name: Model flows with adaptive cards
+      - name: Overview of adaptive cards for Teams
+        href: overview-adaptive-cards.md
+      - name: Create adaptive cards for Teams
         href: create-adaptive-cards.md
-        items:
-        - name: Overview of adaptive cards for Teams
-          href: overview-adaptive-cards.md
-        - name: Create adaptive cards for Teams
-          href: create-adaptive-cards.md
-        - name: Sample - Candidate feedback
-          href: candidate-feedback-sample.md
-        - name: Sample - Image share
-          href: image-share-sample.md
-        - name: Sample - Lead collection
-          href: lead-collection-sample.md
-        - name: Sample - Poll generator
-          href: poll-generator-sample.md
-        - name: Sample - Metadata update
-          href: metadata-update-sample.md
-        - name: Sample - Daily weather
-          href: daily-weather-sample.md
-        - name: Sample - Acronym form
-          href: acronym-sample.md
-        - name: Sample - Lead generation
-          href: lead-collection-sample.md
+      - name: Sample - Candidate feedback
+        href: candidate-feedback-sample.md
+      - name: Sample - Image share
+        href: image-share-sample.md
+      - name: Sample - Lead collection
+        href: lead-collection-sample.md
+      - name: Sample - Poll generator
+        href: poll-generator-sample.md
+      - name: Sample - Metadata update
+        href: metadata-update-sample.md
+      - name: Sample - Daily weather
+        href: daily-weather-sample.md
+      - name: Sample - Acronym form
+        href: acronym-sample.md
+      - name: Sample - Lead generation
+        href: lead-collection-sample.md
 - name: Business process flows
   items:
   - name: Business process flows overview
