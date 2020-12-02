@@ -50,67 +50,59 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Advanced data types
 
-- **List** - Collection of other items. Lists are the equivalent of single-dimension arrays in programming terms. 
+- **List** - Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
+
+  You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
+
+  ![An example of a list.](media\lists\create-list.png)
+
+  You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
+
+  To retrieve a specific item of a list, use the following notation: **%VariableName\[ItemNumber\]%**
+
+  In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
+
+  ![An expression to access the first item of a list.](media\lists\list-first-item.png)
+
+  A common practice is to use a **For each** action to iterate through the items of a list.
+
+  [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists)
 
 - **Datarow** - A data row contains the values of a single row of a datatable. 
 
   [Datarow data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datarows) 
 
-- **Datatable** - Contains data in a tabular form. Datatables are the equivalent of a two-dimensional array in programming terms. 
+- **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
+
+  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
+
+  ![An example of a datatable variable.](media\data-tables\data-table-first-item.png)
+
+  Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+
+  Alternatively, you can create a data table using the **Set variable** action and the programming array notation. 
+
+  This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
+
+  ![An example of a datatable variable.](media\data-tables\create-data-table-variable.png)
+
+  To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
+
+  For example, to access the A2 cell of an Excel file, use the expression displayed below. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+
+  ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+
+  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
+
+  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
+
+  [Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
   To create a new **Custom object**, use the **Set variable** action and an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
   ![An example of a created custom object variable.](media\variable-data-types\create-custom-object-variable.png)
-
-### List
-
-Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
-
-You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
-
-![An example of a list.](media\lists\create-list.png)
-
-You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
-
-To retrieve a specific item of a list, use the following notation: **%VariableName\[ItemNumber\]%**
-
-In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
-
-![An expression to access the first item of a list.](media\lists\list-first-item.png)
-
-A common practice is to use a **For each** action to iterate through the items of a list.
-
- [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists)
-
-### Datatable
-
-A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
-
-A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
-
-![An example of a datatable variable.](media\data-tables\data-table-first-item.png)
-
-Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
-
-Alternatively, you can create a data table using the **Set variable** action and the programming array notation. 
-
-This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
-
-![An example of a datatable variable.](media\data-tables\create-data-table-variable.png)
-
-To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
-
-For example, to access the A2 cell of an Excel file, use the expression displayed below. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
-
-![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
-
-If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
-
-If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
-
-[Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables) 
 
 ### Known issues and limitations
 
