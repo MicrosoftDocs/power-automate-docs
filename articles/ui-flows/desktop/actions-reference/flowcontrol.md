@@ -37,7 +37,7 @@ User comment
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Comment|No|*||User comment|
+|Comment|Yes|Text value||User comment|
 
 
 ##### Variables Produced
@@ -73,7 +73,7 @@ Transfers the flow of execution to another point, indicated by a label
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Go to label|No|*||Label in the flow|
+|Go to label|No|Text value||Label in the flow|
 
 
 ##### Variables Produced
@@ -87,7 +87,7 @@ Acts as the destination of a 'go to' statement
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Label name|No|*||Label in the program|
+|Label name|No|Text value||Label in the program|
 
 
 ##### Variables Produced
@@ -115,7 +115,7 @@ Run a subflow specifying any required arguments
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Subflow name|No|*||The name of the subflow to call|
+|Subflow name|No|Subflow||The name of the subflow to call|
 
 
 ##### Variables Produced

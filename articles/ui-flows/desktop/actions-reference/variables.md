@@ -96,9 +96,7 @@ Remove all items from a list
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|ClearedList|List of General values|The new cleared list|
+This action doesn't produce any variables
 
 
 ##### <a name="clearlist_onerror"></a> Exceptions
@@ -117,9 +115,7 @@ Remove one or multiple items from a list
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|NewList|List of General values|The new list|
+This action doesn't produce any variables
 
 
 ##### <a name="removeitemfromlist_onerror"></a> Exceptions
@@ -145,9 +141,7 @@ Sort the items of a list. Use items of the same type
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|SortedList|List of General values|The new sorted list|
+This action doesn't produce any variables
 
 
 ##### <a name="sortlistbase_onerror"></a> Exceptions
@@ -162,9 +156,7 @@ Create a random permutation of a list
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|ShuffledList|List of General values|The new shuffled list|
+This action doesn't produce any variables
 
 
 ##### <a name="shufflelist_onerror"></a> Exceptions
@@ -200,9 +192,7 @@ Reverse the order of the items of a list
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|ReversedList|List of General values|The new reversed list|
+This action doesn't produce any variables
 
 
 ##### <a name="reverselist_onerror"></a> Exceptions
@@ -218,9 +208,7 @@ Remove the multiple occurrences of items in a list, so that in the resulting lis
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|NewList|List of General values|The new list without duplicate items|
+This action doesn't produce any variables
 
 
 ##### <a name="removeduplicateitemsfromlist_onerror"></a> Exceptions
@@ -366,9 +354,7 @@ Increase the value of a variable by a specific amount
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|IncreasedValue|Numeric value|The numeric variable to increase|
+This action doesn't produce any variables
 
 
 ##### <a name="increasevariable_onerror"></a> Exceptions
@@ -384,9 +370,7 @@ Decrease the value of a variable by a specific amount
 
 
 ##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|DecreasedValue|Numeric value|The numeric variable to decrease|
+This action doesn't produce any variables
 
 
 ##### <a name="decreasevariable_onerror"></a> Exceptions
@@ -403,7 +387,7 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-||*|The name of the variable to set|
+|NewVar|*|The name of the variable to set|
 
 
 ##### <a name="assign_onerror"></a> Exceptions

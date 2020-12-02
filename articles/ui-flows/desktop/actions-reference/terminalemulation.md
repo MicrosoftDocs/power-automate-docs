@@ -147,7 +147,7 @@ Set text on a terminal session
 |Index|No|Numeric value||The index of the field on the screen|
 |Row|No|Numeric value||The vertical position of the field on the screen|
 |Column|No|Numeric value||The horizontal position of the field on the screen|
-|Treat '@' character as literal|N/A|Boolean value|False|Check this box to sent the '@' character literally. Leave this option disabled to sent it as a special character|
+|Treat @ character as literal|N/A|Boolean value|False|Check this box to sent the '@' character literally. Leave this option disabled to sent it as a special character|
 
 
 ##### Variables Produced

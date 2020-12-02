@@ -20,6 +20,8 @@ search.audienceType:
 
 Start and manage web applications on browsers
 
+You can find more information on how to use the web automation actions [here](../automation-web.md)
+
 |<!-- --> |
 |-----|
 |[Extract data from web page](#extractdata)|
@@ -48,6 +50,8 @@ Start and manage web applications on browsers
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data
 ### <a name="extractdata"></a> Extract data from web page
 Extract data from specific parts of a web page in the form of single values, lists, rows or tables
+
+You can find more information on how to use this action [here](../automation-web.md#web-data-extraction)
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

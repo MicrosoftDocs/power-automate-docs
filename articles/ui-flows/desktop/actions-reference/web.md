@@ -20,6 +20,9 @@ search.audienceType:
 
 Communicate with web applications and services directly
 
+You can find more information on how to use the web actions [here](../automation-web.md)
+
+
 |<!-- --> |
 |-----|
 |[Download from web](#downloadfromweb)|

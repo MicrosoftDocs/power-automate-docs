@@ -66,7 +66,7 @@ Displays a dialog box that prompts the user to enter text
 |Input dialog title|Yes|Text value||The dialog title|
 |Input dialog message|Yes|Text value||The dialog message|
 |Default value|Yes|Text value||Specify the text to display by default. If the user wishes to change this, they can type over it. Otherwise, the default text will be used|
-|Input type|N/A|Single line, Password, Multiline|Single line|The format for the input text. Choose Single line - password to hide the text or Multi line so that a larger display box makes visible more than one line of text|
+|Input type|N/A|Single line, Password, Multiline|Single line|The format for the input text. Choose Single line - password to hide the text or multiline so that a larger display box makes visible more than one line of text|
 |Keep input dialog always on top|N/A|Boolean value|False|Specify whether the input dialog should always remain on top of all other windows|
 
 
@@ -150,7 +150,7 @@ Displays the select file dialog and prompts the user to select one or more files
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Dialog title|Yes|Text value||The fialog title|
+|Dialog title|Yes|Text value||The dialog title|
 |Initial folder|Yes|Folder||The initial folder to open when browsing for a file. This is where the select file dialog action will start the user looking for the file(s)|
 |File filter|Yes|Text value||A filter to limit the files retrieved. This allows wild cards, for example "*.txt" or "document?.doc" (without the quotes). To allow the user to choose from multiple file filters, separate the choices with a semi-colon, for example "*.txt;*.exe"|
 |Keep file selection dialog always on top|N/A|Boolean value|False|Whether the file selection dialog should always remain on top of all other windows|

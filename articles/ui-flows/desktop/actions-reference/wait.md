@@ -244,7 +244,7 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Duration|No|*||Time duration in seconds|
+|Duration|No|Numeric value||Time duration in seconds|
 
 
 ##### Variables Produced

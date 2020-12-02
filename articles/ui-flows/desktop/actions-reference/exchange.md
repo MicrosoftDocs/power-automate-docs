@@ -123,8 +123,8 @@ Move, delete or mark as unread an email message (or a list of email messages)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Exchange connection|No|Exchange connection||The Exchange connection. Cretae an Exchange connection with the 'Connect to Exchange server' action|
-|Email message(s) to process|No|List of Exchange mail messages||The email message(s) to process. Use a variabe populated by a 'Retrieve Exchange email messages' action|
+|Exchange connection|No|Exchange connection||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
+|Email message(s) to process|No|List of Exchange mail messages||The email message(s) to process. Use a variable populated by a 'Retrieve Exchange email messages' action|
 |Operation|N/A|Delete email messages from server, Mark email messages as unread, Move email messages to mail folder|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
 |Mailbox type|N/A|Personal, Shared|Personal|The type of the mailbox to retrieve email messages from|
 |Shared mailbox address|No|Text value||The address of the shared mailbox to retrieve email messages from|

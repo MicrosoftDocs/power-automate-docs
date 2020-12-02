@@ -20,6 +20,8 @@ search.audienceType:
 
 Interact with desktop/windows applications
 
+You can find more information on how to use the UI automation actions [here](../desktop-automation.md)
+
 |<!-- --> |
 |-----|
 |[Get details of window](#getwindowdetails)|

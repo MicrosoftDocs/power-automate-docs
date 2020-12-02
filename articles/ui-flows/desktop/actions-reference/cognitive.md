@@ -294,7 +294,7 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 ## IBM
 IBM's cognitive actions
 ## Document conversion
-Translate non-structured documents like fax, email, pdf etc into an EDI or other structured formats
+Translate non-structured documents like fax, email, pdf, etc. into an EDI or other structured formats
 ### <a name="convertdocumentibm"></a> Convert document
 Invokes the IBM service named 'Convert Document'
 

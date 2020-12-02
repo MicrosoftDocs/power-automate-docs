@@ -191,7 +191,7 @@ This action marks the beginning of a conditional block of actions depending on w
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|If image|N/A|exists, doesn't exist|exists|Whether to check for the existance or absense of the selected image|
+|If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
 |Image to check|No|List of Image||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
