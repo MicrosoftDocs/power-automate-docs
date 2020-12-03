@@ -214,6 +214,12 @@
     href: ./ui-flows/desktop/run-pad-flow.md
   - name: Trigger a Desktop flow from another flow
     href: ./ui-flows/desktop/link-pad-flow-portal.md
+  - name: Monitor Desktop flows
+    items:
+    - name: Desktop flow runs
+      href: ./ui-flows/desktop/monitor-desktop-flow-runs.md
+    - name: Desktop flow queues
+      href: ./ui-flows/desktop/monitor-desktop-flow-queues.md
   - name: Desktop console
     href: ./ui-flows/desktop/console.md
   - name: Desktop flow designer
