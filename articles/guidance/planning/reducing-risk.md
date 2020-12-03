@@ -1,6 +1,6 @@
 ---
-title: Planning a Power Automate project - Reducing risk and planning for error handling | Microsoft Docs
-description: Always assume your automations can fail. There is no system that is perfect. This article explains about how you can reduce risks and plan for error handling.
+title: Reducing risk and planning for error handling in a Power Automate project | Microsoft Docs
+description: Always assume your automation can fail because no system is perfect. This article explains how you can reduce risk and plan for error handling.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
@@ -13,42 +13,40 @@ ms.reviewer: kathyos
 
 # Reducing risk and planning for error handling
 
-Always assume your automations can fail.
+Always assume your automation can fail.
 
-There is no system that is perfect. When you are designing your first set of
-automations, it is easy to forget the importance of designing for when things
+No system is perfect. When you're designing your first set of
+automated processes, it's easy to forget the importance of designing for when things
 fail to work correctly.
 
-You should always design your automations so that there is a plan B – to make
-sure your business process can continue even if the automation is not working.
-This is not suggesting that Power Automate is an unreliable system, but
-connecting with different systems increases the risk of failure, which may be
+You should always design your automation so that there's a plan B&mdash;to make
+sure your business process can continue even if the automation doesn't work.
+This isn't to suggest that Power Automate is an unreliable system, but
+connecting with different systems increases the risk of failure, which can be
 caused by reasons unrelated to Power Automate.
 
-In general, you should consider using connectors whenever possible because it is
-more robust and is not as fragile or easily affected by screen design changes
-like web and desktop application automations. If there are no connectors
-available but you do have web APIs or other methods of system integration, you
-should consult your IT or pro-dev teams to help you set up [custom
-connectors](https://docs.microsoft.com/connectors/custom-connectors/).
+In general, you should consider using connectors whenever possible because they're
+more robust and aren't as fragile or easily affected by screen design changes
+as web and desktop application automation. If no connectors are available, but you do have web APIs or other methods of system integration, you
+should consult your IT pro or development teams to help you set up [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/).
 
-**Possible failures with automation using connectors**
+**Possible failures with automation by using connectors**
 
--   Connecting systems shutdown due to maintenance
+-   Shutdown of connecting systems due to maintenance
 
 -   System unavailability due to software bugs
 
--   Changes to how systems are connected (API versions changes)
+-   Changes to how systems are connected (API versions change)
 
-**Possible failures with Web application automation**
+**Possible failures with web application automation**
 
--   Screen design changes (and therefore bot cannot tell how to proceed)
+-   Screen design changes (so the bot can't tell how to proceed)
 
 -   System unavailability due to regression
 
-**Possible failures with Desktop application automation**
+**Possible failures with desktop application automation**
 
--   Screen design changes (and therefore bot cannot tell how to proceed)
+-   Screen design changes (so the bot can't tell how to proceed)
 
 -   Operating system updates
 
@@ -60,52 +58,45 @@ connectors](https://docs.microsoft.com/connectors/custom-connectors/).
 
 -   Momentary network issues
 
-## Retry Policy
+## Retry policy
 
-This feature of Power Automate allows you to set up policies that will
-automatically retry the action. By default this is set to retry 4 times, but it
-can be changed if required.
+You can use this feature of Power Automate to set up policies that will
+automatically retry an action if it fails. By default, this is set to retry four times, but you can change it if you need.
 
 ![Changing the retry policy](media/retry-policy.png "Changing the retry policy")
 
-## Setup custom failure notifications
+## Set up custom failure notifications
 
-If your actions still fail, standard capabilities will notify the owners of the
-automations with an email notifications like below:
+If actions still fail, standard capabilities in Power Automate notify the owners of the
+automation with a message similar to the following image.<!--note from editor: Is this what "standard capabilities" refers to? Also, is it okay that the image shows "Microsoft Flow"? -->
 
-![Notification mail for failed flow runs](media/failure-notification-mail.png "Notification mail for failed flow runs")
+![Example of a failed flow run notification that reads "The flow(s) listed had an unusual number of failures in the past week and may need your attention"](media/failure-notification-mail.png "Example of a failed flow run notification that reads 'The flow(s) listed had an unusual number of failures in the past week and may need your attention'")
 
-However, if you would like a custom notification, you can also set it up by
-adding actions that runs only if the previous steps have failed.
+However, if you'd like to send a custom notification, you can set it up by 
+adding actions that run only if the previous steps have failed.
 
 ![Changing settings to run after failure](media/run-after-settings.png "Changing settings to run after failure")
 
-Normally, all actions that is setup by default will only run if the previous
-step is successful, and you can change this behavior by setting it to only run
-when it failed so that for example, an email is sent to a custom list of
-recipients to send it to.
+Normally, by default, all actions that are set up will only run if the previous
+step was successful. You can change this behavior by setting the action to run only
+when the previous step failed&mdash;so that, for example, an email is sent to a custom list of recipients after a failed action.<!--note from editor: Edits okay? I wasn't quite sure what this was saying.-->
 
 ## Assign multiple owners
 
-Having a single owner for a particular automation could be a risk from an
-organizational and administration perspective, in case that owner is absent or
-away from office when a problem occurs, but no one else can fix the issue. You
-can prevent this by setting up multiple owners or groups to be assigned to make
-sure several people can edit the automations.
+Having a single owner for a particular automation can be a risk from an
+organizational and administrative perspective. If that owner is absent or
+away from the office when a problem occurs, no one else can fix the issue. You
+can prevent this by setting up multiple users or groups as owners, to make sure more than one person can edit the automation. More information: [Share a flow](../../create-team-flows.md)<!--note from editor: Is this screenshot based on sample data? I don't find these names (Jordan Miller, etc.) in our list of approved names.-->
 
-![Setting up group owners](media/group-owners.png "Setting up group owners")
+![Setting up multiple owners](media/group-owners.png "Setting up multiple owners")
 
-More information on [sharing
-flows](https://docs.microsoft.com/power-automate/create-team-flows)
+## Reduce risk and increase throughput by setting up a cluster
 
-## Reduce risks and increase throughput by setting up a cluster
-
-If you have an automation that is business critical, one of the ways to reduce
-failures / risks is by setting up a cluster. Cluster is a group of computers
-which you can use to run your automation. Power Automate provides [clustering
-capabilities](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters)
+For a business-critical automation, one of the ways to reduce
+failures and risks is by setting up a cluster. A *cluster* is a group of computers
+that you can use to run your automation. Power Automate provides [clustering capabilities](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters)
 to run the automation concurrently. This is particularly useful for unattended
-situations where you have more than a single computer available to run your
+scenarios, where you have more than a single computer available to run your
 automation.
 
-![Distribution of automation amongst available computers](media/setting-up-cluster.png "Distribution of automation amongst available computers")
+![Distribution of automation among available computers](media/setting-up-cluster.png "Distribution of automation among available computers")

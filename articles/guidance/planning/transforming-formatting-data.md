@@ -1,6 +1,6 @@
 ---
-title: Planning a Power Automate project - Transforming and formatting Data | Microsoft Docs
-description: It may well be that some of the data you retrieved from a system needs to be transformed to be usable by other systems used later in the process. This article explains the different methods you can use to transform and format your data.
+title: Transforming and formatting data as part of planning a Power Automate project | Microsoft Docs
+description: You might need to transform data you retrieved from a system to be usable by other systems later in the process. This article explains the different methods you can use.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
@@ -11,62 +11,49 @@ ms.reviewer: kathyos
 
 ---
 
-# Transforming and formatting Data
+# Transforming and formatting data
 
-It may well be that some of the data you retrieved from a system needs to be
-transformed to be usable by other systems used later in the process. For
-example, you might need to convert a local time to UTC time or from one currency
-to another. To make those data to a format you want, there are ways you can
-convert your data. Data formats (and format conversions) should be taken into
-consideration when designing the architecture.
+It may well be that some of the data you retrieve from a system needs to be transformed
+to be understood by other systems used later in the process. For
+example, you might need to convert local time to Coordinated Universal Time (UTC), or convert one currency
+to another. To make your data understandable in another system, you can
+convert it into a different format. Be sure to take data formats (and format conversions) into
+account when you design your process automation architecture.<!--note from editor: Suggested.-->
 
 Here are some of the ways you can transform and format your data.
 
-## Built-in Actions
+## Built-in actions
 
-With Built-in actions you can find actions that allow you to convert values and texts to
-different formats.
+You can use built-in actions to convert values and strings to different formats.
 
-![Built-in text function](media/text-function.png "Built-in text function")
+![Built-in actions for text](media/text-function.png "Built-in actions for text")
 
 ## Expressions
 
-Expressions allow you use an Excel like equations to convert and manipulate
-data. 
+Expressions are Excel-like equations you can use to convert and manipulate data. 
 
-![Example of concatinating strings with expression](media/using-expressions.png "Example of concatinating strings with expression")
+![Example of concatenating strings by using expression](media/using-expressions.png "Example of concatenating strings with expression")
 
 The list of different expressions are listed below:
 
--   [String
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
+-   [String functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
 
--   [Collection
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
+-   [Collection functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
 
--   [Logical comparison
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
+-   [Logical comparison functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
 
--   [Conversion
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
+-   [Conversion functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
 
--   [Implicit data type
-    conversions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
+-   [Implicit data type conversions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
 
--   [Math
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
+-   [Math functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
 
--   [Date and time
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
+-   [Date and time functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
 
--   [Workflow
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
+-   [Workflow functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
 
--   [URI parsing
-    functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
+-   [URI parsing functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
 
--   [Manipulation functions: JSON &
-    XML](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
+-   [Manipulation functions: JSON & XML](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
 
-The full list can be found in [functions
-reference](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference).
+For the full list, go to [Reference guide to using functions in expressions for Azure Logic Apps and Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference).

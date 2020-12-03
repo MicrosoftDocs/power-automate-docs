@@ -1,6 +1,6 @@
 ---
-title: Planning a Power Automate project - Determining which automation methods to use | Microsoft Docs
-description: Once the process design is complete, the next step is the architectural design to focus on how you will automate that process.
+title: Determining which automation method to use in planning a Power Automate project | Microsoft Docs
+description: After the process design is complete, the next step is the architectural design to focus on how you'll automate that process.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
@@ -11,141 +11,96 @@ ms.reviewer: kathyos
 
 ---
 
-# Determining which automation methods to use
+# Determining which automation method to use
 
-Once the process design is complete, the next step is the architectural design
-to focus on how you will automate that process.
+After the process design is complete, the next step is architectural design, where
+you focus on how you'll automate that process.
 
-Ideally, all the systems you want to automate have Power Automate connectors.
-Check the [list of
-connectors](https://docs.microsoft.com/connectors/custom-connectors/) to see if
-there are connectors available for the system you plan to automate. Once you
+First you determine what kind of connector you can use (if any), and then choose a trigger to start the automation.<!--note from editor: This additional introduction and H2 are suggested, so the structure is reflects the equal importance of the sections.-->
+
+## Choose an automation method
+
+Ideally, all the systems you want to automate will have Power Automate connectors.
+Check the [list of connectors](https://docs.microsoft.com/connectors/custom-connectors/) to see whether
+connectors are available for the system you plan to automate. After you
 find the connector, make sure that the actions you need are available for that
-connector. (For example, a connector for an email system might have actions for
-“send,” “reply,” and “delete.”)
+connector. For example, a connector for an email system will need actions for
+"send," "reply," and "delete."
 
-If there are no connectors available, you have the following options to choose
-from:
+If there are no connectors available, you have the following options to choose from:
+<!--note from editor: I made this a bulleted list so it's structurally obvious that the summary table applies to all these methods.-->
+- **Create a custom connector**: This is the preferred method of automation if you're a developer or your organization has a developer who can create
+custom connectors. More information: [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
--   Create a custom connector
+- **Use the HTTP connector**: If you're a developer and have one-off scenarios where you need to connect to
+systems that have no connectors available&mdash;but you don't want to set up custom
+connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)<!--note from editor: Edit okay? If you need to explain more, this should be fleshed out a bit and not a "More information"-type link.-->
 
--   Use the HTTP connector
+- **Create a web browser automation**: If you can't find a connector, and if the system is a web browser&ndash;based
+application or a website, you should consider web browser automation.
+Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can either use [web UI flows](../../ui-flows/create-web.md) or [build a web automation](../../ui-flows/desktop/actions-reference/webautomation.md) process with Power Automate Desktop.
 
--   Web browser automation
+- **Create a desktop application automation**: If you can't find a connector, and if the system is a desktop application on
+a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../ui-flows/desktop/create-flow.md) with Power Automate Desktop. More information: [Automate desktop flows](../../ui-flows/desktop/desktop-automation.md)<!--note from editor: Is there a reason to link to this article in addition to the previous link? This one seems to be very far down in the TOC, I'm not sure how it relates to the other article or if we need two links so close together.-->
 
--   Desktop application automation
+The following table compares the different methods.
 
-#### Creating a custom connector 
-
-If you are a developer or your organization has a developer who can create
-[custom connectors](https://docs.microsoft.com/connectors/custom-connectors/),
-this will be the preferred method of automation.
-
-More information on [setting up custom
-connectors](https://docs.microsoft.com/connectors/custom-connectors/define-blank).
-
-#### Use the HTTP connector
-
-If you are a developer and have one-off scenarios where you need to connect to
-systems with no connectors available, but do not want to setup custom
-connectors, HTTP connector is the next preferred method.
-
-More information on [HTTP
-connector](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)
-(directs to Azure Logic Apps as it is a common connector).
-
-#### Web browser automation
-
-If you couldn’t find a connector, and if the system is a web/browser based
-application or a website, web browser automation is what you should consider.
-Web browser automation automates steps / processes as if a human were using the
-browser by mimicking keyboard and mouse movements.
-
-Web browser automation can be achieved either by [Web UI
-flows](https://docs.microsoft.com/power-automate/ui-flows/create-web) or by
-[Building a
-WebAutomation](https://docs.microsoft.com/power-automate/ui-flows/desktop/actions-reference/webautomation)
-Process using Power Automate Desktop.
-
-#### Desktop application automation
-
-If you couldn’t find a connector, and if the system is a desktop application on
-a PC, this is the automation method to use. Power Automate has capabilities that
-mimicking human keyboard and mouse movements.
-
-Desktop application automation can be achieved by [creating a new
-Process](https://docs.microsoft.com/power-automate/ui-flows/desktop/create-flow)
-using Power Automate Desktop.
-
-More information on [automating desktop
-flows](https://docs.microsoft.com/power-automate/ui-flows/desktop/desktop-automation).
-
-The chart below shows the comparison of the different methods.
-
-| Method                         | Ease of use | Requires development background                   | Easily affected by system changes | Requires setup / development time |
+| Method                         | Ease of use | Requires a development background?                   | Easily affected by system changes? | Requires setup or development time? |
 |--------------------------------|-------------|---------------------------------------------------|-----------------------------------|-----------------------------------|
 | Connector                      | Easiest     | No                                                | No                                | None                              |
-| Custom Connector               | Easy        | Yes                                               | No                                | Yes                               |
-| HTTP Connector                 | Easy        | Yes                                               | No                                | No                                |
-| Web browser automation         | Easy        | Preferably with a basic knowledge of CSS and HTML | Yes                               | Yes                               |
+| Custom connector               | Easy        | Yes                                               | No                                | Yes                               |
+| HTTP connector                 | Easy        | Yes                                               | No                                | No                                |
+| Web browser automation         | Easy        | No, but a basic knowledge of CSS and HTML is preferable<!--note from editor: Edit okay? I couldn't quite tell what the answer was here.--> | Yes                               | Yes                               |
 | Desktop application automation | Easy        | No                                                | Yes                               | Yes                               |
-              |
+ 
+In complex automation scenarios, you can combine all these methods.
 
-In complex automation scenarios, you can combine all these types of automations
-mentioned above.
+## Choose a trigger to start the automation
 
-## Triggering the automation to start
-
-With any of the automation methods above, you need to consider how to trigger
-(start) these automations. The ways you can trigger an automation are as
-follows:
+With all the automation methods discussed earlier, you need to consider how to *trigger*
+(start) these automations. The ways you can trigger an automation include:
 
 -   Automated triggers
 
--   Instant / Manual triggers
+-   Instant or manual triggers
 
--   Scheduled Triggers
+-   Scheduled triggers
 
-## Automated triggers
+### Automated triggers
 
-With an **automated trigger**, a system automatically starts the automation when
-a condition is met. (Note: Not all connectors include automated triggers.)
+With an *automated trigger*, the system automatically starts the automation when
+a condition is met. (Note that not all connectors include automated triggers.)
 
-Example triggers:
+Examples of automated triggers include:
 
 -   When an email is received in Outlook
-
--   When a new file is placed inside OneDrive
-
--   When a new record is created inside Microsoft Dataverse
-
--   When an item was modified in Sharepoint custom list
-
+-   When a new file is moved to OneDrive
+-   When a new record is created in Microsoft Dataverse
+-   When an item is modified in a custom SharePoint list
+<!--note from editor: In the following image, please update "Common Data Service."-->
 ![Automated triggers](media/automated-triggers.png "Automated triggers")
 
-An example use case for the expense report would be to set an automated trigger
+An example use case for the expense report might be to set an automated trigger
 to start an approval flow when a new record is created in the Expense Approvals
-entity in Microsoft Dataverse. This is so that Power Apps can be used to create
-a form, which then creates a new record in Microsoft Dataverse.
+entity<!--note from editor: Should this reference to an entity be updated to our current terminology?--> in Dataverse. This ensures, for example, that when a form is created with Power Apps, which creates a new record in Dataverse, an approval flow is automatically triggered.
+<!--note from editor: Suggested. Also, I don't know what the following line is for. Please verify that you don't need it:
 [//]: # (Edit still remaining)
+-->
 
-## Instant / Manual triggers 
+### Instant or manual triggers
 
-**Instant / Manual** trigger is a type of trigger where a user needs to manually
-start that automation or the trigger is instantaneously started. This can be
-triggered directly from a [Flow button](https://docs.microsoft.com/en-us/power-automate/introduction-to-button-flows)
-or some of Microsoft services.
+An *instant* or *manual* trigger is a type of trigger where either a user needs to manually
+start the automation or the trigger is instantaneously started. This can be
+triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.<!--note from editor: Edit okay? I wasn't sure the best way to interpret "some of Microsoft services".-->
 
 ![Instant triggers](media/instant-triggers.png "Instant triggers")
 
-## Scheduled triggers 
+### Scheduled triggers
 
-**Scheduled** triggers are set with a specific date and time to trigger and to
-repeat on a periodic basis. It is useful for situations where you need to
-automate a specific task daily, weekly, monthly etc.
+*Scheduled triggers* run at a specific date and time, and are
+repeated periodically. They're useful for situations where you need to
+automate a task that occurs daily, weekly, or monthly.
 
-In the expense report example, a good case to use scheduled triggers would be
-that the accounting team wants to send an automated email when the weekly BI
-report is ready on a Friday.
+In the expense report example, the accounting team might use a scheduled trigger to send an automated email every Friday when the weekly BI report is ready.
 
-![Scheduled triggers](media/scheduled-triggers.png "Scheduled triggers")
+![Example of a scheduled trigger](media/scheduled-triggers.png "Example of a scheduled trigger")
