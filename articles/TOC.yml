@@ -150,6 +150,21 @@
       href: acronym-sample.md
     - name: Sample - Lead generation
       href: lead-collection-sample.md
+- name: Use flows with Microsoft Forms
+  items:
+  - name: Overview 
+    href: ./forms/overview.md
+    displayName: Use flows with Microsoft Forms
+  - name: Get started
+    href: ./forms/get started.md
+  - name: Popular scenarios
+    href: ./forms/popular scenarios.md
+  - name: How to
+    href: ./forms/how-to.md    
+  - name: Best practices
+    href: ./forms/best-practives.md   
+  - name: Troubleshoot known issues with forms
+    href: ./forms/known-issues.md   
 - name: Business process flows
   items:
   - name: Business process flows overview
