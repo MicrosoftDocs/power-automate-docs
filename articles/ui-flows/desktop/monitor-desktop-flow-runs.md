@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Monitor desktop flow runs (preview)
+# Monitor desktop flow runs
 
 [This topic is pre-release documentation and is subject to change.] 
 
