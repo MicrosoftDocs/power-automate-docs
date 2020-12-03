@@ -65,20 +65,30 @@ You can view more examples with approvals in the [documentation](sequential-mode
 
 ## Upload Microsoft Forms responses to Excel
 
-Create a new Excel Online sheet and add a table to the sheet. Learn more about tables in the Excel documentation.
+Create a new Excel Online sheet and add a table to the sheet. Learn more about tables in the [Excel documentation](https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c).
 
-You can also add an approval to approve a response before it enters the Excel sheet. The Approve a Microsoft Forms response to add a row to an Excel spreadsheet template can help you do this!
+   > [!div class="mx-imgBorder"]
+   > ![Excel screen](..\media\forms\excel.png "Screen showing a blank excel table with the example columns")
 
-Get an attachment from a form and send an email with the attachment
+   > [!div class="mx-imgBorder"]
+   > ![Excel flow screen](..\media\forms\excel-flow.png "Screen showing the completed Excel flow")
+
+You can also add an approval to approve a response before it enters the Excel sheet. The [Approve a Microsoft Forms response to add a row to an Excel spreadsheet](https://preview.flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/) template can help you do this!
+
+## Get an attachment from a form and send it in an email message
+
 Ensure that you’ve added a section in your form for the responder to upload their file.
- 
-After adding the Forms trigger and action, add the Parse JSON action. We recommend running the flow before adding this action to generate the JSON schema from a sample. 
- 
+   > [!div class="mx-imgBorder"]
+   > ![Forms upload section](..\media\forms\forms-upload.png "Screen showing the forms upload section")
 
-Once you’ve pasted the full sample, you can Get file content using path from OneDrive and find your Microsoft Form. Then, add a ‘/’ followed by the following expression: first(body('Parse_JSON'))?['id']. This would extract the one file that the responder will be uploading. 
+After adding the Forms trigger and action, add the Parse JSON action. We recommend running the flow before adding this action to generate the JSON schema from a sample.
+   > [!div class="mx-imgBorder"]
+   > ![Parse JSON action](..\media\forms\flow-parse-json.png "Add the Parse JSON action")
 
- 
+Once you’ve pasted the full sample, you can [Get file content using path](/connectors/onedrive/#get-file-content-using-path) from OneDrive and find your Microsoft Form. Then, add a ‘/’ followed by the following expression: **first(body('Parse_JSON'))?['id']**. This would extract the one file that the responder will be uploading. 
+   > [!div class="mx-imgBorder"]
+   > ![Create share link](..\media\forms\create-share-link.png "'Create share link' tile in Power Automate")
 
-Finally, you can send that upload to via email using the [Send an email (V2)](https://docs.microsoft.com/en-us/connectors/office365/#send-an-email-(v2)) action card from Office 365 Outlook. Include the expression first(body('Parse_JSON'))?['id']
+Finally, you can send that upload to via email using the [Send an email (V2)](/connectors/office365/#send-an-email-(v2)) action card from Office 365 Outlook. Include the expression **first(body('Parse_JSON'))?['id']**
  
 You can combine the scenario of getting an attachment from a form and creating an approval flow by exploring a blog post here.

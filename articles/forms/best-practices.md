@@ -1,6 +1,6 @@
 ---
-title: Overview of flows with Microsoft Forms | Microsoft Docs
-description: Learn how to use flows within Microsoft Teams.
+title: Best practices | Microsoft Docs
+description: some best practices to follow when using flows within Microsoft Forms.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,9 +22,6 @@ search.audienceType:
   - enduser
 ---
 
-# Popular scenarios
+# Best practices
 
-### Related topics
 
-- [Power Apps and Microsoft Teams](/powerapps/teams/overview)
-- [Power Virtual Agents and Microsoft Teams]( https://aka.ms/pva-teams-docs)
