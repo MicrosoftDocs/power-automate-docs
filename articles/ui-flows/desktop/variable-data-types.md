@@ -76,7 +76,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
 
-  ![An example of a datatable variable.](media\data-tables\data-table-first-item.png)
+  ![An example of a datatable variable.](media\data-tables\create-data-table.png)
 
   Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
 
