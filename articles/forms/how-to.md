@@ -1,6 +1,6 @@
 ---
-title: Overview of flows with Microsoft Forms | Microsoft Docs
-description: Learn how to use flows within Microsoft Teams.
+title: How to use flows with Microsoft Forms | Microsoft Docs
+description: Top procedures for using flows within Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
