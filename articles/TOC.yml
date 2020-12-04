@@ -156,13 +156,13 @@
     href: ./forms/overview.md
     displayName: Use flows with Microsoft Forms
   - name: Get started
-    href: ./forms/get started.md
+    href: ./forms/get-started.md
   - name: Popular scenarios
-    href: ./forms/popular scenarios.md
+    href: ./forms/popular-scenarios.md
   - name: How to
     href: ./forms/how-to.md    
   - name: Troubleshoot known issues with forms
-    href: ./forms/known-issues.md   
+    href: ./forms/troubleshoot-issues.md   
 - name: Business process flows
   items:
   - name: Business process flows overview
