@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Loops are a fundamental concept in flow development and prove to be invaluable elements in complex flows. The main idea behind a loop is to make a flow repeat one or more actions multiple times. 
+Loops are a fundamental concept in desktop flow development and prove to be invaluable elements in complex flows. The main idea behind a loop is to make a desktop flow repeat one or more actions multiple times. 
 
 Power Automate Desktop provides three different kinds of loops that iterate based on various factors: 
 
@@ -28,7 +28,7 @@ Power Automate Desktop provides three different kinds of loops that iterate base
 
 ## Simple loops
 
-The idea behind a loop is to make a flow repeat one or more actions multiple times. Power Automate Desktop implements the simplest type of loops with the **Loop** action.
+The idea behind a loop is to make a desktop flow repeat one or more actions multiple times. Power Automate Desktop implements the simplest type of loops with the **Loop** action.
 
 This loop repeats the actions between the **Loop** and **End** actions for a set number of times. A loop index variable is created automatically to track the current iteration’s number.
 
@@ -46,7 +46,7 @@ In case you need to exit the loop before the specified iterations are completed,
 
 ## Loop condition
 
-Unlike simple loops, the **Loop condition** makes a flow repeat one or more actions as long as a condition is true.
+Unlike simple loops, the **Loop condition** makes a desktop flow repeat one or more actions as long as a condition is true.
 
 ![The Loop condition action.](media\loop-condition\loop-condition.png)
 

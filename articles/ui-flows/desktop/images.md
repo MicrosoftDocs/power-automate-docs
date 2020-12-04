@@ -1,6 +1,6 @@
 ---
 title: Images | Microsoft Docs
-description: Use the images pane to manage images in a flow.
+description: Use the images pane to manage images in a desktop flow.
 author: olegmelnykov
 ms.service: flow
 ms.topic: article

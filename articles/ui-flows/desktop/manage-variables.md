@@ -29,9 +29,9 @@ When the flow runs, the current value of each variable is shown next to its name
 
 ![The current variables' values displayed in the Variables pane.](media\variables-pane\variables-pane-run-values.png)
 
-## Renaming a variable
+## Renaming a desktop variable
 
-To rename a flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
+To rename a desktop flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
 
 ![The Rename option for flow variables.](media\renaming-variables\rename-flow-variabe.png)
 
@@ -50,7 +50,7 @@ In the **Edit variable** dialog box, populate the **Variable name** and **Extern
 Power Automate Desktop enables data exchange with the Power Automate platform through the input and output variables.
 <!--note from editor: We do not use bold font on names like this. -->
 
-These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows. Ιn Power Automate, any input variables will be added to the UI action as fields. You can find more information about passing data between Power Automate Desktop and Power Automate in [Link a Power Automate Desktop flow with a flow](link-pad-flow-portal.md).
+These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows. Ιn Power Automate, any input variables will be added to the UI action as fields. You can find more information about passing data between Power Automate Desktop and Power Automate in [Link a Power Automate Desktop flow with a cloud flow](link-pad-flow-portal.md).
 <!--note from editor: Suggest for this previous sentence "You can find more information about passing data between Power Automate Desktop and Power Automate in <add article title as a link>."-->
 
 To create an input or output variable, select the **+**  button in the [**Variables**](manage-variables.md) pane and choose the respective option.

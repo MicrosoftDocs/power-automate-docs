@@ -1,6 +1,6 @@
 ---
 title: Trigger a Power Automate Desktop flow from another flow | Microsoft Docs
-description: Link a Power Automate Desktop flow with a flow in the Power Automate portal
+description: Link a Power Automate Desktop flow with a cloud flow in the Power Automate portal
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
@@ -22,7 +22,7 @@ search.audienceType:
 
    ![my flows instant blank](\media\link-pad-flow-portal\my-flows-instant-blank.png)
 
-1. Enter a name from the flow, otherwise one will be automatically generated. Select **Manually trigger a flow** and then select **Create**.
+1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Instant cloud flow** and then select **Create**.
 
    ![manually trigger flow](\media\link-pad-flow-portal\manually-trigger-flow.png)
 
@@ -30,7 +30,7 @@ search.audienceType:
 
    ![new step](\media\link-pad-flow-portal\new-step.png)
 
-1. In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop (preview)**.
+1. In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop**.
 
    ![action search](\media\link-pad-flow-portal\action-search.png)
 

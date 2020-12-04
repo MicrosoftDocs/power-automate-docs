@@ -31,7 +31,7 @@ Select **Start recording** in the desktop recorder window to record actions.
 
 The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately:
 
-![Recording a flow](./media/recording-flow/recording-flow.png)
+![Recording a desktop flow](./media/recording-flow/recording-flow.png)
 
  Select **Pause recording** to suspend the recording of actions:
  
@@ -57,9 +57,9 @@ The recorder keeps track of your activity within the web browser, generating a s
 
 Similarly to the desktop recorder, comments may be added through the **+** button, while the recroding can be paused, resumed, and reset using the buttons at the top right-hand side.
 
- ## Recording vs building a flow
+ ## Recording vs building a desktop flow
 
-Any actions created through the use of a recorder can be edited manually once the recording is finished. Use the recorder in a flow that is already under development to add the recorded steps to it.
+Any actions created through the use of a recorder can be edited manually once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
 
 > [!NOTE]
 > Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals or loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.

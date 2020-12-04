@@ -28,7 +28,7 @@ To quickly find a specific action, enter the name of the action in the search ba
 
 ## Adding an action to the workspace
 
-To begin developing a flow, select an action and double-click on it, or drag it into the workspace. 
+To begin developing a desktop flow, select an action and double-click on it, or drag it into the workspace. 
 
 ![add action](\media\adding-actions\add-action.png)
 
@@ -92,7 +92,7 @@ To disable or enable an action, right-click on it and select **Disable action** 
 
 ![The disable action option.](media\enabling-disabling-actions\enable-disable-action.png)
 
-Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a flow and decide which one is the most efficient. 
+Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a desktop flow and decide which one is the most efficient. 
 
 When an action is disabled, all variables defined in it are hidden from the **Variables** pane. If the hidden variables are used in other actions, the flow may throw an error. 
 

@@ -34,7 +34,7 @@ The desktop flows connector actions contains a new priority parameter under the 
 
 Available priorities are High and Normal (the default value). This value can also be passed dynamically using the custom value parameter. Every time the desktop flow is triggered, it will be executed with the priority that has been set.
 
-  ![Run a flow built with Power Automate Desktop](media\monitoring\monitor-desktop-flow-queues-1.png)
+  ![Run a desktop flow](media\monitoring\monitor-desktop-flow-queues-1.png)
 
 When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that have been enqueued first will be executed first.
 
