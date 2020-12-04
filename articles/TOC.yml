@@ -12,15 +12,15 @@
     href: cloud-get-started.md
   - name: Automated flows
     items:
-    - name: Create a flow from scratch
+    - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
-    - name: Create a flow with Common Data Service (current environment) connector
+    - name: Create a cloud flow with Common Data Service (current environment) connector
       href: connection-cds-native.md
-    - name: Create a flow with Common Data Service connector
+    - name: Create a cloud flow with Common Data Service connector
       href: connection-cds.md
-    - name: Create a flow with Dynamics 365
+    - name: Create a cloud flow with Dynamics 365
       href: connection-dynamics365.md
-    - name: Create a flow with OneDrive for Business
+    - name: Create a cloud flow with OneDrive for Business
       href: onedrive-business-launch-panel.md
     - name: Filter and copy data
       href: odata-filters.md
@@ -30,7 +30,7 @@
       href: bttn-button-flows.md
   - name: Scheduled flows
     items:
-    - name: Run a flow on a schedule
+    - name: Run a cloud flow on a schedule
       href: run-scheduled-tasks.md
     - name: Process a list of items
       href: apply-to-each.md
@@ -62,7 +62,7 @@
       href: mobile-manage-flows.md
     - name: Publish a template
       href: publish-a-template.md
-    - name: Turn a flow on or off
+    - name: Turn a cloud flow on or off
       href: disable-flow.md
   - name: Popular cloud flows scenarios
     items:
@@ -95,7 +95,7 @@
         href: create-email-flows.md
       - name: Create flows for popular email scenarios
         href: email-top-scenarios.md
-      - name: Trigger a flow with email
+      - name: Trigger a cloud flow with email
         href: email-triggers.md
       - name: Customize email in flows
         href: email-customization.md
@@ -152,7 +152,7 @@
     items:
     - name: Overview
       href: overview-solution-flows.md
-    - name: Create a flow in a solution
+    - name: Create a cloud flow in a solution
       href: create-flow-solution.md
     - name: Create child flows
       href: create-child-flows.md
@@ -196,11 +196,11 @@
     items:
     - name: Troubleshoot common issues with triggers
       href: triggers-troubleshoot.md
-    - name: Watch a flow
+    - name: Watch a cloud flow
       href: see-a-flow-run.md
     - name: Monitor flow activity on a phone
       href: mobile-monitor-activity.md
-    - name: Troubleshoot a flow
+    - name: Troubleshoot a cloud flow
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
@@ -229,7 +229,7 @@
       href: ./ui-flows/desktop/actions-pane.md
     - name: Manage the flow designer workspace
       href: ./ui-flows/desktop/designer-workspace.md
-    - name: Debug a flow
+    - name: Debug a cloud flow
       href: ./ui-flows/desktop/debugging-flow.md
     - name: Manage variables and the variables pane
       href: ./ui-flows/desktop/manage-variables.md
@@ -381,13 +381,13 @@
 #     href: triggers-introduction.md
 #   - name: Guided learning
 #     href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
-#   - name: Create a flow from a template
+#   - name: Create a cloud flow from a template
 #     href: get-started-logic-template.md
-#   - name: Create a flow on a phone
+#   - name: Create a cloud flow on a phone
 #     href: mobile-create-flow.md
-#   - name: Share a flow
+#   - name: Share a cloud flow
 #     href: create-team-flows.md
-#   - name: Create a flow that uses Microsoft Dataverse
+#   - name: Create a cloud flow that uses Microsoft Dataverse
 #     href: common-data-model-intro.md
 #   - name: What's new
 #     href: whats-new.md
@@ -407,15 +407,15 @@
 #       href: learning-catalog/learning-catalog-sales.md
 # - name: Automated flows
 #   items:
-#   - name: Create a flow from scratch
+#   - name: Create a cloud flow from scratch
 #     href: get-started-logic-flow.md
-#   - name: Create a flow with Common Data Service (current environment) connector
+#   - name: Create a cloud flow with Common Data Service (current environment) connector
 #     href: connection-cds-native.md
-#   - name: Create a flow with Common Data Service connector
+#   - name: Create a cloud flow with Common Data Service connector
 #     href: connection-cds.md
-#   - name: Create a flow with Dynamics 365
+#   - name: Create a cloud flow with Dynamics 365
 #     href: connection-dynamics365.md
-#   - name: Create a flow with OneDrive for Business
+#   - name: Create a cloud flow with OneDrive for Business
 #     href: onedrive-business-launch-panel.md
 #   - name: Filter and copy data
 #     href: odata-filters.md
@@ -435,7 +435,7 @@
 #     href: share-buttons.md
 # - name: Scheduled flows
 #   items:
-#   - name: Run a flow on a schedule
+#   - name: Run a cloud flow on a schedule
 #     href: run-scheduled-tasks.md
 #   - name: Process a list of items
 #     href: apply-to-each.md
@@ -468,7 +468,7 @@
 #     href: create-email-flows.md
 #   - name: Create flows for popular email scenarios
 #     href: email-top-scenarios.md
-#   - name: Trigger a flow with email
+#   - name: Trigger a cloud flow with email
 #     href: email-triggers.md
 #   - name: Customize email in flows
 #     href: email-customization.md
@@ -581,7 +581,7 @@
   #       href: ./ui-flows/desktop/actions-pane.md
   #     - name: Manage the flow designer workspace
   #       href: ./ui-flows/desktop/designer-workspace.md
-  #     - name: Debug a flow
+  #     - name: Debug a cloud flow
   #       href: ./ui-flows/desktop/debugging-flow.md
   #     - name: Manage variables and the variables pane
   #       href: ./ui-flows/desktop/manage-variables.md
@@ -686,7 +686,7 @@
 #   items:
 #   - name: Overview
 #     href: overview-solution-flows.md
-#   - name: Create a flow in a solution
+#   - name: Create a cloud flow in a solution
 #     href: create-flow-solution.md
 #   - name: Create child flows
 #     href: create-child-flows.md
@@ -744,17 +744,17 @@
 #     href: mobile-manage-flows.md
 #   - name: Publish a template
 #     href: publish-a-template.md
-#   - name: Turn a flow on or off
+#   - name: Turn a cloud flow on or off
 #     href: disable-flow.md
 # - name: Troubleshoot
 #   items:
 #   - name: Troubleshoot common issues with triggers
 #     href: triggers-troubleshoot.md
-#   - name: Watch a flow
+#   - name: Watch a cloud flow
 #     href: see-a-flow-run.md
 #   - name: Monitor flow activity on a phone
 #     href: mobile-monitor-activity.md
-#   - name: Troubleshoot a flow
+#   - name: Troubleshoot a cloud flow
 #     href: fix-flow-failures.md
 #   - name: Find and fix errors with the error checker
 #     href: error-checker.md

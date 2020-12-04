@@ -32,9 +32,9 @@ Copy and paste any selected actions in the workspace. This can be done within th
 
 ## Setting up subflows
 
-Subflows are groups of actions, which may be referenced as a group within a flow.
+Subflows are groups of actions, which may be referenced as a group within a cloud flow.
 
-Every flow contains the **Main** subflow - this is the subflow that is run when a flow starts. Any other subflows may be invoked through the **Run subflow** action:
+Every flow contains the **Main** subflow - this is the subflow that is run when a cloud flow starts. Any other subflows may be invoked through the **Run subflow** action:
 
 ![The Run subflow action](./media/setting-subflows/run-subflow-action.png)
 

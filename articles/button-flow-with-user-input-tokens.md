@@ -129,7 +129,7 @@ Your button flows can also accept rich data types. Here's the list of data input
 - Number
 - Date (with a calendar picker)
 
-To use these input types, add the **Manually trigger a flow** trigger, and then add any of these types to your flow:
+To use these input types, add the **Manually trigger a cloud flow** trigger, and then add any of these types to your flow:
 
 ![Input options](media/button-flow-with-user-input-tokens/input-options.png)
 

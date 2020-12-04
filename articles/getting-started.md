@@ -102,21 +102,21 @@ Each template is designed for a specific purpose. For example, there are templat
 
 Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
-![Building a flow](./media/getting-started/build-a-flow.png)
+![Building a cloud flow](./media/getting-started/build-a-flow.png)
 
-When you create a flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
+When you create a cloud flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
 - [Flows with many steps](multi-step-logic-flow.md).
 - [Run tasks on a schedule](run-scheduled-tasks.md).
 - [Create an approval flow](wait-for-approvals.md).
-- [Watch a flow in action](see-a-flow-run.md).
+- [Watch a cloud flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
 - [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## Peek at the code
 
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
 1. Select **Peek code**.

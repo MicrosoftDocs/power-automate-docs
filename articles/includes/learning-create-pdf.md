@@ -1,4 +1,4 @@
-In this topic, you’ll see how Contoso Flooring uses Power Automate to automatically convert documents to a standard format and then store them in SharePoint Online for safekeeping in the cloud. You'll create a flow that detects when a new file has been added to a OneDrive for Business folder, and then converts that file to PDF and stores it to a SharePoint Online folder. 
+In this topic, you’ll see how Contoso Flooring uses Power Automate to automatically convert documents to a standard format and then store them in SharePoint Online for safekeeping in the cloud. You'll create a cloud flow that detects when a new file has been added to a OneDrive for Business folder, and then converts that file to PDF and stores it to a SharePoint Online folder. 
 
 ## Prerequisites
 For this scenario, you’ll need an account with **Muhimbi**, a PDF conversion service. If you don’t have a Muhimbi account already, you can sign up for a [free 30-day trial](http://www.muhimbi.com/Products/PDF-Converter-for-SharePoint/Products-PDF-Converter-for-SharePoint-Free-Trial.aspx). Follow the instructions on that page for deploying the app through your SharePoint Online site. 

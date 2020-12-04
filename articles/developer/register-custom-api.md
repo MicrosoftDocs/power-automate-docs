@@ -32,7 +32,7 @@ Sometimes though, you might want to call APIs, services, and systems that aren't
 
 * [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
-* [Use a custom connector from a flow](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-flow)
+* [Use a custom connector from a cloud flow](https://docs.microsoft.com/connectors/custom-connectors/use-custom-connector-flow)
 
 * [Share custom connectors in your organization](https://docs.microsoft.com/connectors/custom-connectors/share)
 
