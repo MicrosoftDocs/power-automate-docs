@@ -44,6 +44,49 @@ If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 pl
 
 The flow uses the plan of the owner of a flow. If a flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
 
+## Throughput limits
+
+Here are the time-bound limits for a single version of a flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
+
+If a flow exceeds one of the limits, activity for the flow will be slowed and automatically resume when the sliding window has activity below the limit. However, if a flow consistently remains above the limits for 14 days, it will be turned off (see above Duration limits). Be sure to monitor email for notifications about such flows. If a flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
+
+>[!TIP]
+>Because these limits are for a single version, if you update your flow it will reset these limits.
+
+### Action request limits
+
+There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
+
+| Name | Limit | Notes |
+| ---- | ----- | ----- |
+| Executions per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
+| Executions per 24 hours | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](https://aka.ms/platformlimits). These limits represent approximations of how many requests will be allowed daily and not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
+| Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
+
+As of October 2019, there are limits on the number of Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
+
+>[!TIP]
+>Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
+
+### Runtime endpoint request limits
+
+The runtime endpoint is the direct access URL for a given flow. It starts with something like: `https://prod-00.westus.logic.azure.com:443/`.
+
+| Name | Limit | Notes |
+| ---- | ----- | ----- |
+| Concurrent inbound calls | ~1,000 | You can reduce the number of concurrent requests or reduce the duration as necessary. |
+| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a flow's run history. You can distribute the workload across more than one flow as necessary. |
+| Invoke calls per 5 minutes | 4,500 for Low, 45,000 for all others | You can distribute workload across more than one flow as necessary. |
+
+### Content throughput limits
+
+The content throughput limits refer to the amount of data that is read from or written to the run history of the flow. 
+
+| Name | Limit | Notes |
+| ---- | ----- | ----- |
+| Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 1 GB for Low, 10 GB for MediumLow1, MediumLow2 and Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
+
 ## Flow definition limits
 
 Here are the limits for a single flow definition:
@@ -103,50 +146,6 @@ Here are the limits for a single flow run:
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
 | Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
 | Paginated items | 5,000 for Low, 100,000 for all others | To process more items, trigger multiple flow runs over your data. |
-
-
-## Throughput limits
-
-Here are the time-bound limits for a single version of a flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
-
-If a flow exceeds one of the limits, activity for the flow will be slowed and automatically resume when the sliding window has activity below the limit. However, if a flow consistently remains above the limits for 14 days, it will be turned off (see above Duration limits). Be sure to monitor email for notifications about such flows. If a flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
-
->[!TIP]
->Because these limits are for a single version, if you update your flow it will reset these limits.
-
-### Action request limits
-
-There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
-
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Executions per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Executions per 24 hours | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](https://aka.ms/platformlimits). These limits represent approximations of how many requests will be allowed daily and not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
-| Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-
-As of October 2019, there are limits on the number of Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
-
->[!TIP]
->Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
-
-### Runtime endpoint request limits
-
-The runtime endpoint is the direct access URL for a given flow. It starts with something like: `https://prod-00.westus.logic.azure.com:443/`.
-
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Concurrent inbound calls | ~1,000 | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a flow's run history. You can distribute the workload across more than one flow as necessary. |
-| Invoke calls per 5 minutes | 4,500 for Low, 45,000 for all others | You can distribute workload across more than one flow as necessary. |
-
-### Content throughput limits
-
-The content throughput limits refer to the amount of data that is read from or written to the run history of the flow. 
-
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low, 10 GB for MediumLow1, MediumLow2 and Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
