@@ -28,6 +28,8 @@ This topic contains information about the current limits and configuration detai
 >[!TIP]
 >Check out the [pricing](https://flow.microsoft.com/pricing) for details on the different plans that are available.
 
+## Performance profiles
+
 Flows have different limits depending on the *performance profile* of the flow. You can see your performance profile by selecting **Export** on your flow and seeing the performance profile for your flow. There are five possible values, depending on the plan of the owner of the flow:
 
 | Performance profile | Plans |
