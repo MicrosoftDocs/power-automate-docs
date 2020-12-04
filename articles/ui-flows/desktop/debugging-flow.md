@@ -1,5 +1,5 @@
 ---
-title: Debugging a flow | Microsoft Docs
+title: Debugging a cloud flow | Microsoft Docs
 description: Use the flow designer's debugging options to debug flows.
 author: olegmelnykov
 ms.service: flow
@@ -14,14 +14,14 @@ search.audienceType:
   - enduser
 ---
 
-# Debug a flow
+# Debug a cloud flow
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-It is common to have to debug flows in case there are any changes in the system or if a flow cannot run because it contains errors. 
+It is common to have to debug flows in case there are any changes in the system or if a cloud flow cannot run because it contains errors. 
 <!--note from editor: It would be good to link to the topics about these things. -->
 
-Debug a flow using the following tools:
+Debug a cloud flow using the following tools:
 * [Errors Pane](errors.md)
 * [Breakpoints](#adding-breakpoints)
 * [Run flow action by action](#run-a-flow-action-by-action)
@@ -39,7 +39,7 @@ Click to the left of the running order number in the workspace to place a breakp
 
 ![add breakpoint](\media\adding-breakpoints\add-breakpoint.png)
 
-## Run a flow action by action
+## Run a cloud flow action by action
 
 The **Run next action** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane to check the value of any variable at the point where it's paused. This feature is useful for debugging.
 

@@ -1,6 +1,6 @@
 ---
-title: Finding usages within flows | Microsoft Docs
-description: Finding usages within flows
+title: Finding usages within desktop flows | Microsoft Docs
+description: Finding usages within desktop flows
 author: georgiostrantzas
 ms.service: flow
 ms.topic: article
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Find usages within flows
+# Find usages within desktop flows
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-To find the usages of a flow or input/output variable, make a right-click on its name in the **Variables** pane and select **Find usages**. 
+To find the usages of a variable or an input/output variable, make a right-click on its name in the **Variables** pane and select **Find usages**. 
 
 ![The Find usages option in the Variables pane.](media\finding-usages\find-usages-option.png)
 

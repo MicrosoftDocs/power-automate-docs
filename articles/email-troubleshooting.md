@@ -43,7 +43,7 @@ Check out known limitations of the **Send an email** action [here](https://docs.
 
 If you are using the **Mail** connector, it has a limit of 100 API calls per 24 hours. Try the Office 365 Outlook connector, which has a limit of 300 API calls per 60 seconds instead, so you are less likely to hit the limit.
 
-**I have a flow that triggers when an email arrives in a folder. Will my flow trigger if I move email from one folder to another folder?**
+**I have a cloud flow that triggers when an email arrives in a folder. Will my flow trigger if I move email from one folder to another folder?**
 
 No. Your flow triggers only when a new email arrives.
 

@@ -71,5 +71,5 @@ In minutes, the flow gave a warehouse worker the ability to **alert the team** t
 The worker then shared that button out to the team, so others could trigger the same flow if that person wasn’t around.
 
 ## Next lesson
-Check out the next lesson to see how to create a flow that uses **push notifications**.
+Check out the next lesson to see how to create a cloud flow that uses **push notifications**.
 

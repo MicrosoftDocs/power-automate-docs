@@ -1,6 +1,6 @@
 ---
 title: Create a Power Automate Desktop flow | Microsoft Docs
-description: Use power automate and flow designer to design a flow.
+description: Use power automate and flow designer to design a desktop flow.
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
@@ -42,7 +42,7 @@ search.audienceType:
 
    ![My flows instant blank](\media\design-flow\my-flows-instant-blank.png)
 
-1. In the dialog box, enter a flow name, select **Manually trigger a flow**, and then select **Create**.
+1. In the dialog box, enter a cloud flow name, select **Manually trigger a flow**, and then select **Create**.
 
    ![manually trigger flow](\media\design-flow\manually-trigger-flow.png)
 
@@ -50,6 +50,7 @@ search.audienceType:
 
    ![new step](\media\design-flow\new-step.png)
 
+    <!--todo: Needs new screenshot and verify if action names are being updated-->
 1. Search for **UI flow**, and select the **Run a flow built by Power Automate Desktop (preview)** action.
 
    ![action search](\media\design-flow\action-search.png)
@@ -58,7 +59,7 @@ search.audienceType:
 
    ![run UI flow action properties](\media\design-flow\run-ui-flow-v2-action-properties.png)
 
-1. Enter a flow name or one will be generated and select **Launch app**.
+1. Enter a desktop flow name or one will be generated and select **Launch app**.
 
    ![build UI flow dialog box](\media\design-flow\build-UI-flow-dialog.png)
 
@@ -167,6 +168,8 @@ search.audienceType:
 
    ![successful flow run](\media\design-flow\successful-flow-run.png)
 
+   <!--todo: Needs new screenshot and verify if action names are being updated-->
+  
 1. Select the **Run a flow built by Power Automate Desktop (preview)** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
 
    ![variables values](\media\design-flow\variables-values.png)

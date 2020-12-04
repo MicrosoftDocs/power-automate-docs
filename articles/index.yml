@@ -101,7 +101,7 @@ conceptualContent:
         - text: Use solutions to distribute flows
           url: /power-automate/overview-solution-flows
           itemType: overview
-        - text: Create a flow in a solution
+        - text: Create a cloud flow in a solution
           url: /power-automate/create-flow-solution
           itemType: overview
         - text: Implement healthy ALM using solutions
@@ -134,7 +134,7 @@ conceptualContent:
 
     - title: Support and licensing
       links:
-        - text: Troubleshoot a flow
+        - text: Troubleshoot a cloud flow
           url: /power-automate/fix-flow-failures
           itemType: how-to-guide
         - text: Power Automate community

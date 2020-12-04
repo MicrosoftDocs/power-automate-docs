@@ -98,7 +98,7 @@ To address this, the user needs to manually edit the script to insert the comman
 
 **Other limitations**
 
--   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flows for each type and then combine them in a flow.
+-   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flow for each type and then combine them in a cloud flow.
 
 -   Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
 

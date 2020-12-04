@@ -14,7 +14,7 @@ dynamics365pdf: True
 
 Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a _single_ flow, it can be difficult to navigate and maintain that flow. 
 
-You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a flow, or even across multiple flows.
+You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
 
 Let's look at an example where you have a child flow that you want to create or update a contact in Microsoft Dataverse based on that contact's name.
 

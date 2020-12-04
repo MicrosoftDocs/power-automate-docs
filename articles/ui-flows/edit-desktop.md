@@ -208,7 +208,7 @@ To address this instance issue, users have two options:
 
 ## Add a loop
 
-UI flows have support for arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a flow to your UI flow, including complex arrays from a SharePoint list, for example.
+UI flows have support for arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a cloud flow to your UI flow, including complex arrays from a SharePoint list, for example.
 
 >[!NOTE]
 >You must edit an existing UI flow to add a loop.
@@ -233,7 +233,7 @@ Here are the steps to create a loop in a UI flow:
    ![Details of the array](../media/edit-desktop/loop-array-data.png "Details of the array")
 
    >[!TIP]
-   >If you are using a complex array from a SharePoint list, you don't have to create the array manually. You can copy the array from a flow and paste it into the middle box.
+   >If you are using a complex array from a SharePoint list, you don't have to create the array manually. You can copy the array from a cloud flow and paste it into the middle box.
 
 1. Select **Next**.
 
@@ -264,7 +264,7 @@ Here are the steps to create a loop in a UI flow:
 ### Known Limitations:
 1.	Loops require static selectors. This means that the user interface (UX) element on which the repetitive action happens must not change. 
 1.	Output operations are not currently supported.
-1.	For complex array objects that need to be passed from a flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the UI flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
+1.	For complex array objects that need to be passed from a cloud flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the UI flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
 1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘<value>’]**, where <value> is name of the specific object within the input array.
 
 ## Add a delay

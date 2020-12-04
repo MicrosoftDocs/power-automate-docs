@@ -24,7 +24,7 @@ search.audienceType:
 # Sign up and sign in for Power Automate
 
 
-Starting with Power Automate, as an individual, is easy! Before you can create a flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
+Starting with Power Automate, as an individual, is easy! Before you can create a cloud flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
 
 ## Sign up free
 If you haven't used other online Microsoft products, you'll need to sign up.

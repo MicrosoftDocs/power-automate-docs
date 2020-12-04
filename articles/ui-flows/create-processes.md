@@ -33,7 +33,7 @@ Here are some tips before you start using WinAutomation with UI flows.
 
 1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
 
-1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
+1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
 1.  Existing WinAutomation licensed users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home)
 
@@ -92,7 +92,7 @@ You can now create your own WinAutomation Processes and test them locally.
 ## Run WinAutomation Processes from Power Automate
 
 1.  Once you have created your automation Process in WinAutomation, you can run
-    it from a flow in Power Automate through UI flows (desktop) attended or
+    it from a cloud flow in Power Automate through UI flows (desktop) attended or
     unattended. 
     
     >[!TIP]
@@ -118,7 +118,7 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  You can now save and test your UI flow to see how it launches the WinAutomation Process.
 
-1.  You can then add the UI flow into a flow. You can even connect to other Power Automate connectors and triggers.
+1.  You can then add the UI flow into a cloud flow. You can even connect to other Power Automate connectors and triggers.
 
 1.  You can then select *attended* or *unattended* as the run type.
 

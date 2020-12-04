@@ -98,7 +98,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 When you define inputs and outputs within a UI flow, you can pass information from and to those inputs.
 
-1. When you add a UI flow to a flow, you can see the list of inputs that were defined in the UI flow.
+1. When you add a UI flow to a cloud flow, you can see the list of inputs that were defined in the UI flow.
 
    ![UI flow inputs](../media/run-ui-flow/inputs.png "UI flow inputs")
 
@@ -146,7 +146,7 @@ When running unattended, UI flows automatically signs into the target devices th
 
 When running attended, UI flows will use an existing Windows user session.
 
-When you add a UI flow to a flow, you can choose whether you want your UI flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+When you add a UI flow to a cloud flow, you can choose whether you want your UI flow to run attended or unattended. Here are some key differences between attended and unattended runs:
 
 ### Unattended mode
 

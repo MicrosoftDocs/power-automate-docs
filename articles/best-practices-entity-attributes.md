@@ -58,7 +58,7 @@ Further, as the business process flow entity is no different from any other cust
 
 ### Option 2: copy active stage to a related entity
 
-Alternatively, to continue reporting off the related entity, create a flow to copy the *Active Stage* (activestageid) field from the business process flow entity into a custom field on the related Dataverse entities.
+Alternatively, to continue reporting off the related entity, create a cloud flow to copy the *Active Stage* (activestageid) field from the business process flow entity into a custom field on the related Dataverse entities.
 
 Here are a few things to keep in mind when you use this approach:
 
