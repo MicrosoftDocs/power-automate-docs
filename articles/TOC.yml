@@ -240,7 +240,7 @@
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
     - name: Automate using UI elements
-      href: ./desktop-flows/desktop-elements.md
+      href: ./desktop-flows/ui-elements.md
     - name: Automate using images
       href: ./desktop-flows/images.md
     - name: Manage errors
