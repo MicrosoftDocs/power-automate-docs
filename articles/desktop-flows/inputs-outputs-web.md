@@ -65,5 +65,5 @@ script)
 ## Next steps
 
 - Learn how to [create Web UI flows](create-web.md).
-- Learn how to [trigger UI flows](run-ui-flow.md).
+- Learn how to [trigger UI flows](run-desktop-flow.md).
 

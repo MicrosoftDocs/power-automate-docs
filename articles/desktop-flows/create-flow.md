@@ -57,7 +57,7 @@ search.audienceType:
 
 1. In the action, under Run mode select **Attended - Runs when you're signed in** and under UI flow select **+Create a new UI flow**.
 
-   ![run UI flow action properties](\media\design-flow\run-ui-flow-v2-action-properties.png)
+   ![run UI flow action properties](\media\design-flow\run-desktop-flow-v2-action-properties.png)
 
 1. Enter a desktop flow name or one will be generated and select **Launch app**.
 
@@ -150,7 +150,7 @@ search.audienceType:
 
 1. Select the new UI flow in the action, and enter **Greece** into **CountryName**.
 
-   ![run UI flow action properties 2](\media\design-flow\run-ui-flow-v2-action-properties-2.png)
+   ![run UI flow action properties 2](\media\design-flow\run-desktop-flow-v2-action-properties-2.png)
 
 1. Select **Save** to save the flow and then select **Test**.
 

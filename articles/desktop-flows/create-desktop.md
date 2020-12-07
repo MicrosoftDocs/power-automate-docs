@@ -37,15 +37,15 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **My flows** > **UI flows** > **New**.
 
-   ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
+   ![Create new UI flow](../media/create-windows-desktop-flow/create-new.png "Create new UI flow")
 
 1. Choose **Desktop app** and then select **Next**.
 
-   ![Select desktop](../media/create-windows-ui-flow/select-desktop.png "Select desktop") 
+   ![Select desktop](../media/create-windows-desktop-flow/select-desktop.png "Select desktop") 
 
 1. Enter a name for your UI flow into the **Flow name** field, and then select **Next**.
 
-   ![Select desktop](../media/create-windows-ui-flow/give-a-name.png "Select desktop") 
+   ![Select desktop](../media/create-windows-desktop-flow/give-a-name.png "Select desktop") 
 
 1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
 
@@ -67,15 +67,15 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select the **Record app** card to expand it.
 
-   ![Select record app](../media/create-windows-ui-flow/select-record-app.png "Select record app")
+   ![Select record app](../media/create-windows-desktop-flow/select-record-app.png "Select record app")
 
 1. Select **Launch recorder**.
 
-   ![Select launch recorder](../media/create-windows-ui-flow/select-launch-recorder.png "Select launch recorder")
+   ![Select launch recorder](../media/create-windows-desktop-flow/select-launch-recorder.png "Select launch recorder")
 
    The recorder control displays at the top of your screen.
 
-   ![The recorder control](../media/create-windows-ui-flow/recorder-control.png "The recorder control")
+   ![The recorder control](../media/create-windows-desktop-flow/recorder-control.png "The recorder control")
 
 1. Start the calculator app.
 
@@ -87,7 +87,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select **Record** from the recorder control.
 1. Select the first number, select **+**, select the second number, and then select **=**.
 
-    ![The calculator app](../media/create-windows-ui-flow/app-to-record.png "The calculator app")
+    ![The calculator app](../media/create-windows-desktop-flow/app-to-record.png "The calculator app")
 
      > [!TIP]
      > You will improve automation reliability by:
@@ -103,7 +103,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
      >[!TIP]
      >Select **...** > **Delete** to remove any duplicate steps.
 
-    ![Show recorded steps](../media/create-windows-ui-flow/show-recorded-steps.png "Show recorded steps")
+    ![Show recorded steps](../media/create-windows-desktop-flow/show-recorded-steps.png "Show recorded steps")
 
 1. Select **Next**. 
 
@@ -190,6 +190,6 @@ The following actions will not be recorded:
 
 ## Next steps
 
-- Learn how to [trigger the UI flow](run-ui-flow.md) you just created.
+- Learn how to [trigger the UI flow](run-desktop-flow.md) you just created.
 
 - If you want to do more with UI flows, you can also create UI flows with [input and output](inputs-outputs-web.md) parameters.

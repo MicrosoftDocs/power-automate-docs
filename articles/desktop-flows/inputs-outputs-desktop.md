@@ -103,7 +103,7 @@ Outputs can only be created as you record your UI flow.
 
 1. Select a user interface element to get its text for the output. The text value will be automatically captured. You can then provide a name and description for the output.
 
-   ![Select UI element](../media/inputs-outputs-desktop/select-ui-element.png)
+   ![Select UI element](../media/inputs-outputs-desktop/select-desktop-element.png)
 
 1. Provide a name and a description for the output.
 
@@ -168,7 +168,7 @@ Testing UI flows lets you validate your changes and the appropriate playback beh
 
 ## Learn more
 
-- Learn how to [trigger UI flows](run-ui-flow.md).
+- Learn how to [trigger UI flows](run-desktop-flow.md).
 
 
 

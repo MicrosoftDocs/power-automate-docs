@@ -36,7 +36,7 @@ search.audienceType:
 
 1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the UI flow drop-down select **Create a new UI flow**.
 
-   ![run ui flow power automate desktop action properties](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties.png)
+   ![run ui flow power automate desktop action properties](\media\link-pad-flow-portal\run-desktop-flow-v2-action-properties.png)
 
 1. Enter a name for the flow and select **Launch app**.
 
@@ -70,7 +70,7 @@ search.audienceType:
 
 1. Back in Power Automate, any input variables appear as fields in the UI action.
 
-   ![run ui flow power automate desktop action properties 2](\media\link-pad-flow-portal\run-ui-flow-v2-action-properties-2.png)
+   ![run ui flow power automate desktop action properties 2](\media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
 
 1. Output variables from Power Automate Desktop can be used in other Power Automate actions.
 

@@ -34,17 +34,17 @@ Follow these steps to create a simple Web UI flow.
 
 1. Select **My flows** > **UI flows** > **New**.
 
-   ![Create new UI flow](../media/create-windows-ui-flow/create-new.png "Create new UI flow")
+   ![Create new UI flow](../media/create-windows-desktop-flow/create-new.png "Create new UI flow")
 
 1. Select **Web app** > **Next**
     
-   ![Select Web app](../media/create-web-ui-flow/select-web-app.png "Select Web app")
+   ![Select Web app](../media/create-web-desktop-flow/select-web-app.png "Select Web app")
 
 1. Enter a name for your UI flow into the **Flow name** field.
 
 1. Enter the URL for the Website you want to automate into the **Base URL** field, and then select **Launch recorder**.
 
-   ![Give a name and a URL](../media/create-web-ui-flow/give-a-name.png "Give a name and a URL") 
+   ![Give a name and a URL](../media/create-web-desktop-flow/give-a-name.png "Give a name and a URL") 
 
    The Selenium IDE launches.
 
@@ -56,22 +56,22 @@ Follow these steps to create a simple Web UI flow.
 
    The URL you chose in the previous step opens.
 
-   ![Select Rec](../media/create-web-ui-flow/select-rec.png "Select Rec")
+   ![Select Rec](../media/create-web-desktop-flow/select-rec.png "Select Rec")
 
 1.  Perform the actions that you want to record on the website. 
     
     >[!TIP]
     >At the bottom right, you can see the recording status.
 
-    ![Recording status](../media/create-web-ui-flow/recording-status.png "Recording status")
+    ![Recording status](../media/create-web-desktop-flow/recording-status.png "Recording status")
 
 1.  When you are finished recording, select on the red **Stop** button in the top right corner of the Selenium IDE.
 
-    ![Stop button](../media/create-web-ui-flow/stop-button.png "Stop button" )
+    ![Stop button](../media/create-web-desktop-flow/stop-button.png "Stop button" )
 
 1. Select the **Run current test** button from the top left side of the screen to see the UI flow you just created run.
 
-    ![Run current test](../media/create-web-ui-flow/run-test.png "Run current test")
+    ![Run current test](../media/create-web-desktop-flow/run-test.png "Run current test")
 
    >[!TIP]
    >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your UI flow is deployed.  
@@ -119,7 +119,7 @@ To address this, the user needs to manually edit the script to insert the comman
 
 ## Next steps
 
-- Learn how to [run UI flows](run-ui-flow.md).
+- Learn how to [run UI flows](run-desktop-flow.md).
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 

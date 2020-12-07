@@ -47,4 +47,4 @@ This advanced capability lets you use syntax like \${foo.bar} to access the bar 
 ## Next steps
 
 - [Create Web UI flows](create-web.md)
-- [Run UI flows](run-ui-flow.md)
+- [Run UI flows](run-desktop-flow.md)

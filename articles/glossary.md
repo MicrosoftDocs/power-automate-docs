@@ -99,7 +99,7 @@ The following terms are commonly used in Power Automate.
 
 **Robotic Process Automation (RPA):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
- [Use Softomotive's WinAutomation with UI flows](ui-flows/create-processes.md)
+ [Use Softomotive's WinAutomation with UI flows](desktop-flows/create-processes.md)
 
 ## S
 
@@ -128,7 +128,7 @@ Flows can have one or more triggers.
 **UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
 Windows and web applications. UI flows record and playback user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
-[Introduction to UI flows](ui-flows/overview.md)
+[Introduction to UI flows](desktop-flows/overview.md)
 
 ## Learn more
 

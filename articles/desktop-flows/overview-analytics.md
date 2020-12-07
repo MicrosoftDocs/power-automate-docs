@@ -25,13 +25,13 @@ search.audienceType:
 
 As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with UI flows:
 
-1. The Power Platform [admin center](https://docs.microsoft.com/power-platform/admin/analytics-ui-flow).
+1. The Power Platform [admin center](https://docs.microsoft.com/power-platform/admin/analytics-desktop-flow).
 1. The [Center of Excellence (CoE) Starter Kit](https://docs.microsoft.com/power-platform/guidance/coe/setup).
 
 
 ## Learn more
 
-- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#ui-flows-risk-assessment) in your environment.
+- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
 - [Create desktop UI flows](create-desktop.md).
 - [Create Web UI flows](create-web.md).
-- Run [UI flows](run-ui-flow.md).
+- Run [UI flows](run-desktop-flow.md).

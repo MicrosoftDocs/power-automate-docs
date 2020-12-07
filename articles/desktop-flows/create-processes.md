@@ -41,9 +41,9 @@ Here are some tips before you start using WinAutomation with UI flows.
 
 To run WinAutomation as part of Power Automate, you will need to:
 
-1.  Ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup#prerequisites).
+1.  Ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/desktop-flows/setup#prerequisites).
 
-2.  Install the [UI flows](https://docs.microsoft.com/power-automate/ui-flows/setup) app, and then install and configure the on-premises data gateway.
+2.  Install the [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/setup) app, and then install and configure the on-premises data gateway.
 
 >[!IMPORTANT]
 >You must have the latest version of WinAutomation and UI flows to record, test, or run UI automation.
@@ -96,7 +96,7 @@ You can now create your own WinAutomation Processes and test them locally.
     unattended. 
     
     >[!TIP]
-    >Learn more about [creating and running UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
+    >Learn more about [creating and running UI flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
 
 1.  Create a new desktop UI flow. Delete the default first step of “Record app”.
 
@@ -129,12 +129,12 @@ You can now create your own WinAutomation Processes and test them locally.
     >Do not pass sensitive text such as passwords through the command line arguments.
 
     >[!IMPORTANT]
-    >If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
+    >If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
 
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The UI flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
-    >If you get exceptions, you may not have the latest UI flows installed. Install the [latest UI flows](https://docs.microsoft.com/power-automate/ui-flows/upgrade).
+    >If you get exceptions, you may not have the latest UI flows installed. Install the [latest UI flows](https://docs.microsoft.com/power-automate/desktop-flows/upgrade).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
@@ -253,7 +253,7 @@ ProcessRobot
 -   Learn more at [WinAutomation Academy](https://academy.softomotive.com/).
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
--   Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
--   Learn how to [run UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
--   Learn to [manage UI flows](https://docs.microsoft.com/power-automate/ui-flows/manage).
+-   Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
+-   Learn how to [run UI flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
+-   Learn to [manage UI flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
 -   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).

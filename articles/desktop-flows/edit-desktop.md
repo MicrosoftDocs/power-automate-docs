@@ -27,7 +27,7 @@ search.audienceType:
 Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
-A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
+A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-desktop-flows) if you don't have one to edit.
 
 ## Edit actions
 
@@ -55,7 +55,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
 
-   ![Image that displays the UI flow to be edited](../media/edit-desktop/select-ui-flow.png)
+   ![Image that displays the UI flow to be edited](../media/edit-desktop/select-desktop-flow.png)
 
 1. Select **Edit**. 
 1. Select **New step**.
@@ -64,15 +64,15 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 1. Select **Record app** from the list of actions.
 
-   ![Record app](../media/edit-desktop/select-record-ui-actions.png "Record app")
+   ![Record app](../media/edit-desktop/select-record-desktop-actions.png "Record app")
 
 1. Select **Launch recorder**.
 
-   ![Select launch recorder](../media/create-windows-ui-flow/select-launch-recorder.png "Select launch recorder")
+   ![Select launch recorder](../media/create-windows-desktop-flow/select-launch-recorder.png "Select launch recorder")
 
    The recorder control displays at the top of your screen.
 
-   ![The recorder-control](../media/create-windows-ui-flow/recorder-control.png "The recorder-control")
+   ![The recorder-control](../media/create-windows-desktop-flow/recorder-control.png "The recorder-control")
 
 1. Start the app that you want to record.
 
@@ -217,7 +217,7 @@ Here are the steps to create a loop in a UI flow:
 
 1. Edit the UI flow to which you want to add the loop.
 
-   ![Select the edit button for the UI flow](../media/edit-desktop/edit-ui-flow-loop.png "Select the edit button for the UI flow")
+   ![Select the edit button for the UI flow](../media/edit-desktop/edit-desktop-flow-loop.png "Select the edit button for the UI flow")
 
 1. Navigate to input section of the wizard, and then select **Set up inputs**.
 
@@ -357,7 +357,7 @@ Follow these steps to add a manual action:
 1. Select **My flows** > **UI flows**.
 1. Select the UI flow that you want to edit.
 
-   ![The UI flow to edit](../media/edit-desktop/select-ui-flow.png)
+   ![The UI flow to edit](../media/edit-desktop/select-desktop-flow.png)
 
 1. Select **Edit**. 
 1. Select the recording card that contains the steps to which you want to add a new step.
@@ -402,7 +402,7 @@ Here is an example of what the **elementStack** might look like.
 ![Element stack](../media/edit-desktop/elementstack.png "Element stack")
 
 You can capture the **elementXPath** using the [WinAppDriver UI
-Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/).
+Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-desktop-recorder/).
 
 ![WAD tool](../media/edit-desktop/wad-tool.png "WAD tool")
 
@@ -637,7 +637,7 @@ Follow these steps after you've recorded a UI flow script:
 
 ## Next steps
 
-- Learn how to [run the UI flow](run-ui-flow.md) you just edited.
+- Learn how to [run the UI flow](run-desktop-flow.md) you just edited.
 
 - If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
 

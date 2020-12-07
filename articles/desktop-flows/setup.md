@@ -130,15 +130,15 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections**.
 
-   ![A screenshot of the connections tab](../media/ui-flows-setup/connections-tab.png)
+   ![A screenshot of the connections tab](../media/desktop-flows-setup/connections-tab.png)
 
 1. Select New connection.
 
-   ![A screenshot of a connection](../media/ui-flows-setup/new-connection.png)
+   ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
 
 1. Search for *UI flow*, and then select **UI flows**.
 
-   ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
+   ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png)
 
 1. Provide the gateway information and device credentials: 
 
@@ -146,7 +146,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
     - **Password**: Your account’s password.
     - **Choose a gateway**: Select the gateway you want to use.
 
-      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
+      ![A screenshot that shows where to enter the credentials for the connection](../media/desktop-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
 
@@ -235,6 +235,6 @@ You'll find feature-specific limitations included in the documentation for each 
 - [Upgrade your UI flows](upgrade.md) from previous releases
 - Learn to [create desktop UI flows](create-desktop.md).
 - Learn to [create Web UI flows](create-web.md).
-- Learn how to run [UI flows](run-ui-flow.md).
+- Learn how to run [UI flows](run-desktop-flow.md).
 - Learn to [manage UI flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).

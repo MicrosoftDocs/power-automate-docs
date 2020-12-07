@@ -240,7 +240,7 @@
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
     - name: Automate using UI elements
-      href: ./desktop-flows/ui-elements.md
+      href: ./desktop-flows/desktop-elements.md
     - name: Automate using images
       href: ./desktop-flows/images.md
     - name: Manage errors
@@ -331,32 +331,32 @@
   - name: UI flows (Legacy)
     items:
     - name: Introduction to UI flows # <--- add a banner to say don't use unless u already have investment in this tech. Point to desktop flows all up.
-      href: ./ui-flows/overview.md
+      href: ./desktop-flows/overview.md
     - name: Upgrade UI flows from previous releases
-      href: ./ui-flows/upgrade.md # do we still need this? THere is now a legacy ui flows --> desktop flows migration.
+      href: ./desktop-flows/upgrade.md # do we still need this? THere is now a legacy ui flows --> desktop flows migration.
     - name: Set up UI flows
-      href: ./ui-flows/setup.md
+      href: ./desktop-flows/setup.md
     - name: Create and test desktop UI flows
-      href: ./ui-flows/create-desktop.md
+      href: ./desktop-flows/create-desktop.md
     - name: Edit desktop UI flows
-      href: ./ui-flows/edit-desktop.md
+      href: ./desktop-flows/edit-desktop.md
     - name: Use inputs and outputs in desktop UI flows
-      href: ./ui-flows/inputs-outputs-desktop.md
+      href: ./desktop-flows/inputs-outputs-desktop.md
       items:
       - name: Use Input Method Editors (IMEs) in UI flows
-        href: ./ui-flows/use-ime.md
+        href: ./desktop-flows/use-ime.md
     - name: Create and test Web UI flows
-      href: ./ui-flows/create-web.md
+      href: ./desktop-flows/create-web.md
     - name: Use WinAutomation with UI flows
-      href: ./ui-flows/create-processes.md
+      href: ./desktop-flows/create-processes.md
     - name: Edit Web UI flows
-      href: ./ui-flows/edit-web.md
+      href: ./desktop-flows/edit-web.md
     - name: Use inputs and outputs in Web UI flows
-      href: ./ui-flows/inputs-outputs-web.md
+      href: ./desktop-flows/inputs-outputs-web.md
     - name: Run attended and unattended UI flows
-      href: ./ui-flows/run-ui-flow.md
+      href: ./desktop-flows/run-desktop-flow.md
     - name: Manage UI flows
-      href: ./ui-flows/manage.md
+      href: ./desktop-flows/manage.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -536,32 +536,32 @@
 # - name: UI flows
 #   items:
 #   - name: Introduction to UI flows
-#     href: ./ui-flows/overview.md
+#     href: ./desktop-flows/overview.md
 #   - name: Upgrade UI flows from previous releases
-#     href: ./ui-flows/upgrade.md
+#     href: ./desktop-flows/upgrade.md
 #   - name: Set up UI flows
-#     href: ./ui-flows/setup.md
+#     href: ./desktop-flows/setup.md
 #   - name: Create and test desktop UI flows
-#     href: ./ui-flows/create-desktop.md
+#     href: ./desktop-flows/create-desktop.md
 #   - name: Edit desktop UI flows
-#     href: ./ui-flows/edit-desktop.md
+#     href: ./desktop-flows/edit-desktop.md
 #   - name: Use inputs and outputs in desktop UI flows
-#     href: ./ui-flows/inputs-outputs-desktop.md
+#     href: ./desktop-flows/inputs-outputs-desktop.md
 #     items:
 #     - name: Use Input Method Editors (IMEs) in UI flows
-#       href: ./ui-flows/use-ime.md
+#       href: ./desktop-flows/use-ime.md
 #   - name: Create and test Web UI flows
-#     href: ./ui-flows/create-web.md
+#     href: ./desktop-flows/create-web.md
 #   - name: Use WinAutomation with UI flows
-#     href: ./ui-flows/create-processes.md
+#     href: ./desktop-flows/create-processes.md
 #   - name: Edit Web UI flows
-#     href: ./ui-flows/edit-web.md
+#     href: ./desktop-flows/edit-web.md
 #   - name: Use inputs and outputs in Web UI flows
-#     href: ./ui-flows/inputs-outputs-web.md
+#     href: ./desktop-flows/inputs-outputs-web.md
 #   - name: Run attended and unattended UI flows
-#     href: ./ui-flows/run-ui-flow.md
+#     href: ./desktop-flows/run-desktop-flow.md
 #   - name: Manage UI flows
-#     href: ./ui-flows/manage.md
+#     href: ./desktop-flows/manage.md
   # - name: Power Automate Desktop UI flows (Preview)
   #   items: 
   #   - name: Introduction to Power Automate Desktop
@@ -592,7 +592,7 @@
   #     - name: Use variables and the % notation
   #       href: ./desktop-flows/variable-manipulation.md
   #     - name: Automate using UI elements
-  #       href: ./desktop-flows/ui-elements.md
+  #       href: ./desktop-flows/desktop-elements.md
   #     - name: Automate using images
   #       href: ./desktop-flows/images.md
   #     - name: Manage errors
@@ -796,7 +796,7 @@
   - name: Administer environments
     href: environments-overview-admin.md
   - name: View UI flows analytics
-    href: ./ui-flows/overview-analytics.md
+    href: ./desktop-flows/overview-analytics.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps

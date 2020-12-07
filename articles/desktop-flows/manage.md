@@ -31,7 +31,7 @@ After you've created UI flows, you might need to view, edit, or just check on th
 1. Sign into Power Automate.
 1. Select **My flows** > **UI flows**.
 
-   ![View all UI flows](../media/manage-ui-flows/view-all.png "View all UI flows")
+   ![View all UI flows](../media/manage-desktop-flows/view-all.png "View all UI flows")
 
 From this section, you can create a new UI flow and edit or delete your existing UI flows.
 
@@ -48,10 +48,10 @@ Follow these steps to see the details for a UI flow:
 1. Select **My flows** > **UI flows**.
 1. Select any of your UI flows.
 
-   ![View details](../media/manage-ui-flows/view-details.png "View details")
+   ![View details](../media/manage-desktop-flows/view-details.png "View details")
 
 ## Learn more
 
 - Learn to [create desktop UI flows](create-desktop.md).
 - Learn to [create Web UI flows](create-web.md).
-- Learn how to run [UI flows](run-ui-flow.md).
+- Learn how to run [UI flows](run-desktop-flow.md).
