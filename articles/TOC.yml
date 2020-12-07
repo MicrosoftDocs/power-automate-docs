@@ -333,7 +333,7 @@
     - name: Introduction to UI flows # <--- add a banner to say don't use unless u already have investment in this tech. Point to desktop flows all up.
       href: ./desktop-flows/overview.md
     - name: Upgrade UI flows from previous releases
-      href: ./desktop-flows/upgrade.md # do we still need this? THere is now a legacy ui flows --> desktop flows migration.
+      href: ./desktop-flows/upgrade.md # do we still need this? THere is now a legacy desktop flows --> desktop flows migration.
     - name: Set up UI flows
       href: ./desktop-flows/setup.md
     - name: Create and test desktop UI flows
