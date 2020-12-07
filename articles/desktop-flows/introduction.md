@@ -34,6 +34,3 @@ Power Automate Desktop allows you to automate both legacy applications, such as 
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).
 
-> [!NOTE]
-> - This is a preview feature, and is available only in English, French, German, Japanese, Spanish.
-> - [!INCLUDE [cc-preview-features-definition.md](../../includes/cc-preview-features-definition.md)]
