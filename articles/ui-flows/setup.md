@@ -69,15 +69,15 @@ Follow these steps to install the Power Automate Desktop app:
 
 ### Set data collection options
 
-During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve UI flows**.
+During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
 ## Install the Power Automate browser extension 
 
-After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flow.
+After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
 
 ![Installation success image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
 
-1. Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
+Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
 
    The store for your browser opens directly to the public page for the extension.
 
@@ -85,15 +85,19 @@ After the installation completes, you will need to install and enable the extens
 If you already install the Power Automate extension in the past, you don't need to reinstall it
 
 #### Microsoft Edge: 
-- Select **Get**, and then select **Add extension** when prompted. 
+- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
 - If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
 
 #### Google Chrome: 
-- Select **Add to Chrome**, and then select **Enable extension** when prompted. 
+- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150929): select **Add to Chrome**, and then select **Enable extension** when prompted. 
 - If you see the message: *This item has been disabled in Chrome* on top of the page, select **Enable this item**.
 
+#### Mozilla Firefox:
+- [Install Firefox extension](https://go.microsoft.com/fwlink/?linkid=2151511): select **Add to Firefox**, and then select **Add** when prompted. 
+
+
 > [!TIP]
-> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not suppoted.
+> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not suppoted. 
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
@@ -123,7 +127,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
 
-   ![A screenshot of the search box](../media/ui-flows-setup/search-ui-flow.png)
+   ![A screenshot of the search box](../media/ui-flows-setup/connections-search.png)
 
 1. Provide the gateway information and device credentials: 
 
@@ -131,7 +135,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
     - **Password**: Your account’s password.
     - **Choose a gateway**: Select the gateway you want to use.
 
-      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/credentials-screen.png)
+      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/connections-info.pngs)
 
 1. Select **Create**.
 
@@ -151,17 +155,17 @@ Follow these steps to install Windows recorder (v1) extension:
 1. Install the extension on Micrsodt Edge and/or Google Chroome from the store (Firefox is not supported for Windows recorder (v1))
 
 #### Microsoft Edge: 
-- Select **Get**, and then select **Add extension** when prompted.
+- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
 
 #### Google Chrome: 
-- Select **Add to Chrome**, and then select **Enable extension** when prompted. 
+- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150930): select **Add to Chrome**, and then select **Enable extension** when prompted. 
 
 
-## Install Selenium IDE to automate Web applications with UI flows (optional)
+## Install Selenium IDE to automate Web applications with desktop flows (optional)
 
 The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
 
-With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
+With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
 Follow these steps to install Selenium IDE:
 
@@ -215,10 +219,10 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 >Power Automate Desktop (preview) is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
 
 
-## Uninstall UI flows
+## Uninstall Power Automate Desktop
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows**, and then select it.
+1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
 ## Limitations
@@ -226,21 +230,17 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 The following are not supported:
 - Windows 10 Home installations are not supported.
 
--   Desktop UI flows
+-   Windows Recorder v1 desktop flows
 
     -   Multiple monitors.
     -   Double click, mouse hover, touch/pen input.
     -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
 
--   Web UI flows
+-   Selenium desktop flows
 
     -   Right click.
     -   User session information (for example: cookies) will not be reused during
         playback. You will have to edit the script to embed sign in information when required by websites.
-
-- Power Automate Desktop (preview)
-
-   - touch/pen input
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
