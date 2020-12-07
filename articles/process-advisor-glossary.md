@@ -27,7 +27,7 @@ search.audienceType:
 
 **Activity**: Activities describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.
 
-**Variant**: A specific path it takes for a process to be completed. 
+**Variant**: A specific path it takes for a process to be completed.
 
 **Recording**: A recorded sequence of activities that users perform on their desktop. Usually multiple recordings are analyzed together to get insights into different variants of the same task.
 
