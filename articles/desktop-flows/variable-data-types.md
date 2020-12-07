@@ -26,7 +26,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
 
-  [Text data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#texts)
+  [Text data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#texts)
   
   To create a **Text value** variable, use the **Set Variable action** and populate the input parameter with the desired text without any notation.
 
@@ -36,7 +36,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. 
   
-  Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/variable-manipulation) article.
+  Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/variable-manipulation) article.
 
   ![An example of a created Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
@@ -44,7 +44,7 @@ Some of these data types are widely used throughout the application, such as **n
   
   Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%%**. 
   
-  Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/variable-manipulation) article.
+  Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/variable-manipulation) article.
 
   ![An example of a created Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
@@ -66,11 +66,11 @@ Some of these data types are widely used throughout the application, such as **n
 
   A common practice is to use a **For each** action to iterate through the items of a list.
 
-  [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#lists)
+  [List data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#lists)
 
 - **Datarow** - A data row contains the values of a single row of a datatable. 
 
-  [Datarow data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datarows) 
+  [Datarow data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#datarows) 
 
 - **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
@@ -96,7 +96,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
-  [Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#datatables) 
+  [Datatable data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#datatables) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
@@ -113,15 +113,15 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
 
-  [Web browser instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#web-browser-instances)
+  [Web browser instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#web-browser-instances)
 
 - **Window instance** – Contains a window instance created through the **Get window** action.
 
-  [Window instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#window-instance) 
+  [Window instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#window-instance) 
 
 - **Excel instance** – Contains an Excel instance created through the **Launch Excel** action.
 
-  [Excel instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#excel-instance) 
+  [Excel instance data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#excel-instance) 
 
 - **Outlook instance** - Contains an Outlook instance created through the **Launch Outlook** action.
 
@@ -129,15 +129,15 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **SQL connection** - Contains a connection to an SQL database established through the **Open SQL connection** action.
 
-  [SQL connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#sql-connection)
+  [SQL connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#sql-connection)
 
 - **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
 
-  [Exchange connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-connection)
+  [Exchange connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#exchange-connection)
 
 - **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 
-  [FTP connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-connection) 
+  [FTP connection data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#ftp-connection) 
 
 ## Others
 
@@ -148,7 +148,7 @@ Some of these data types are widely used throughout the application, such as **n
 - **Group member** - Represents a member of a specified Active Directory group.
 - **User info** - Contains information about a specified Active Directory user.
 
-[Active Directory data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#active-directory-entry)
+[Active Directory data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#active-directory-entry)
 
 ### AWS
 
@@ -159,7 +159,7 @@ Some of these data types are widely used throughout the application, such as **n
 - **EBS snapshot** - Represents an EBS snapshot.
 - **EBS volume** - Represents an EBS volume.
 
-[AWS data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ebs-snapshot) 
+[AWS data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#ebs-snapshot) 
 
 ### Azure
 
@@ -171,13 +171,13 @@ Some of these data types are widely used throughout the application, such as **n
 - **Azure virtual machine info** - Contains information about an Azure virtual machine.
 - **Azure subscription** - Represents a retrieved Azure subscription.
 
-[Azure data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#azure-managed-disk) 
+[Azure data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#azure-managed-disk) 
 
 ### CMD
 
 - **CMD session** - Contains a CMD session created through the **Open CMD session** action.
 
-[CMD data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#cmd-session)
+[CMD data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#cmd-session)
 
 ### Dates and time
 
@@ -194,33 +194,33 @@ Some of these data types are widely used throughout the application, such as **n
   | **ff**   | Miliseconds |
   | **zzz**  | UTC Offset	 |
 
-[Dates and time data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#dates)
+[Dates and time data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#dates)
 
 ### Email
 
 - **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
 
-[Email data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#mail-messages)
+[Email data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#mail-messages)
 
 ### Exchange
 
 - **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
 
-[Exchange data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#exchange-mail-messages)
+[Exchange data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#exchange-mail-messages)
 
 ### Files and folders
 
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
 
-[Files and folders data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#files)
+[Files and folders data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#files)
 
 ### FTP
 
 - **FTP file** - Represents an FTP file.
 - **FTP directory** - Represents an FTP directory
 
-[FTP data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#ftp-files)
+[FTP data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#ftp-files)
 
 ### OCR
 
@@ -230,15 +230,15 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
 
-[Outlook data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#outlook-mail-messages) 
+[Outlook data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#outlook-mail-messages) 
 
 ### Terminal
 
 - **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
 
-[Terminal data type properties](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#terminal-session) 
+[Terminal data type properties](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#terminal-session) 
 
 ### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
-[XML data type properties.](https://review.docs.microsoft.com/en-us/power-automate/ui-flows/desktop/datatype-properties#xml-node) 
+[XML data type properties.](https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/datatype-properties#xml-node) 

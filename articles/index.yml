@@ -81,7 +81,7 @@ conceptualContent:
           url: /power-automate/ui-flows/setup
           itemType: how-to-guide
         - text: Use Power Automate Desktop (Preview)
-          url: /power-automate/ui-flows/desktop/introduction
+          url: /power-automate/desktop-flows/introduction
           itemType: concept
 
     - title: Use flows with...
