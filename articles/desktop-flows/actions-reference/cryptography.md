@@ -16,7 +16,7 @@ search.audienceType:
 
 # Cryptography
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Encrypt and decrypt text and files
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Active Directory
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Connect to an Active Directory server and perform operations
 

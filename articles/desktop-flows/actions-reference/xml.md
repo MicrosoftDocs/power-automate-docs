@@ -16,7 +16,7 @@ search.audienceType:
 
 # XML
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Manage and manipulate XML files
 

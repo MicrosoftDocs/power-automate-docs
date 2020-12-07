@@ -16,7 +16,7 @@ search.audienceType:
 
 # File
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Manage and manipulate files
 

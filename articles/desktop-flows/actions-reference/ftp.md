@@ -16,7 +16,7 @@ search.audienceType:
 
 # FTP
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Manage files and folders on an FTP server
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # CMD session
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Automate a CMD session
 

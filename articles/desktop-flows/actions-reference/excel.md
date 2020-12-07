@@ -16,7 +16,7 @@ search.audienceType:
 
 # Excel
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Automate any Excel related activity
 

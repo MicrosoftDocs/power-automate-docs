@@ -16,7 +16,7 @@ search.audienceType:
 
 # Text
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Control and manipulate text
 

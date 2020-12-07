@@ -16,7 +16,7 @@ search.audienceType:
 
 # Email
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Automate sending, receiving and managing emails through imap/smtp
 

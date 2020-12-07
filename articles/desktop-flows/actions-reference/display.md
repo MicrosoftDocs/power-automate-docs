@@ -16,7 +16,7 @@ search.audienceType:
 
 # Message boxes
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Interact with users and request input through message boxes
 
