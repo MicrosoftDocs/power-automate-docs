@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate using images
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 On the right-hand side pane, select the **Images** tab.
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Power Automate Desktop flow designer
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The flow designer contains all the tools required to design and debug a Power Automate Desktop flow. Additionally, any images, UI elements, or variables of a desktop flow can be accessed and managed here.
 

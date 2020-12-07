@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate desktop flows
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The flow designer includes the **UI automation** group of actions, which manipulate Windows applications and elements, by either providing input or extracting data.
 

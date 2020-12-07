@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate using UI elements
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, Power Automate Desktop utilizes **UI elements** to identify windows and their elements.
 

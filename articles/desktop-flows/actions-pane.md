@@ -16,7 +16,7 @@ search.audienceType:
 
 # Configure actions and the actions pane
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Upon opening the flow designer, the actions pane on the left side of the window shows all the action groups. 
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use conditionals
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Conditionals allow you to execute blocks of actions only if a given condition is met. If the condition is false, the block of actions will be skipped.
 

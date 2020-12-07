@@ -19,7 +19,7 @@ search.audienceType:
 
 ## Trigger the console from the portal
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 1. To create a UI flow in Power Automate Desktop, open the app and select **New Flow**.
 

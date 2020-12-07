@@ -16,7 +16,7 @@ search.audienceType:
 
 # Trigger a Power Automate Desktop flow from another flow
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **New**, and from the drop-down select **Instant--from blank**.
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Record flows in Power Automate Desktop
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 It's possible to design flows simply by performing the task you wish to automate, using the desktop recorder.
 

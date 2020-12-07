@@ -16,7 +16,7 @@ search.audienceType:
 
 # Run a Power Automate Desktop flow
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 To run a desktop flow from the console, either select it and then select **Run**, or right-click on the desktop flow and select **Start**.
 

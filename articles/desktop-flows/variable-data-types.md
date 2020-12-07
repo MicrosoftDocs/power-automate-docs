@@ -16,7 +16,7 @@ search.audienceType:
 
 # Variable datatypes
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 When you create variables in your flows, Power Automate Desktop converts them to a specific type based on their content.
 

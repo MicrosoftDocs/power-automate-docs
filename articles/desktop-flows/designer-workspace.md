@@ -16,7 +16,7 @@ search.audienceType:
 
 # Manage the flow designer workspace
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The central pane of the flow designer is called the workspace. Here is where the series of actions that make up the flow is assembled:
 

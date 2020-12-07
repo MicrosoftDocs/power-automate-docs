@@ -16,7 +16,7 @@ search.audienceType:
 
 # Find usages within desktop flows
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 To find the usages of a variable or an input/output variable, make a right-click on its name in the **Variables** pane and select **Find usages**. 
 
