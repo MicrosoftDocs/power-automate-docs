@@ -127,7 +127,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
 
-   ![A screenshot of the search box](../media/ui-flows-setup/connections-search.png)
+   ![A screenshot of the search box](../media/ui-flows-setup/connections-search.PNG)
 
 1. Provide the gateway information and device credentials: 
 
@@ -135,7 +135,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
     - **Password**: Your account’s password.
     - **Choose a gateway**: Select the gateway you want to use.
 
-      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/connections-info.pngs)
+      ![A screenshot that shows where to enter the credentials for the connection](../media/ui-flows-setup/connections-info.PNG)
 
 1. Select **Create**.
 
