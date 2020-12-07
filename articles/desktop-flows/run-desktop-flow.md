@@ -37,7 +37,7 @@ After you've created and tested a UI flow, you can run it from an event, schedul
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
    
 
-## Run your UI flow from an event, button, schedule, or business process flow
+## Run your desktop flow from an event, button, schedule, or business process flow
 
 In this example we will use an automated flow to trigger a UI flow when a new email arrives.
 
@@ -194,7 +194,7 @@ Perform the following steps to benefit from multiple UI flows on a single device
 1. Setup a Windows Server 2016 or 2019 device with the on-premises gateway and the latest version of UI flows installed.
 1. Use two or more user accounts to create UI flows connections targeting the gateway on this device. 
 
-Power Automate automatically scales the number of concurrent UI flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-desktop-flow.md#run-multiple-desktop-flows-on-the-same-device-sequentially).
+Power Automate automatically scales the number of concurrent UI flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-desktop-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
 If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).

@@ -54,7 +54,7 @@ Click on a gateway to see the details of the desktop flow runs that are being pr
 
 ## Prerequisites
 In order to see runs in this list, one of the following must be true:
-- You are [running an attended or unattended desktop flow](../run-desktop-flow.md) in the current environment
+- You are [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
 - Another user has shared their desktop flow (add documentation link) with you, which has run in the current environment
 - You have [permission](https://docs.microsoft.com/power-platform/admin/database-security) to see view all data in the environment
 

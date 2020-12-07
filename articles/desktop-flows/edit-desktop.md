@@ -27,7 +27,7 @@ search.audienceType:
 Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
-A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-desktop-flows) if you don't have one to edit.
+A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
 
 ## Edit actions
 
