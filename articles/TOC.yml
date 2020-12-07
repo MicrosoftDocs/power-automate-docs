@@ -381,7 +381,7 @@
   - name: Share processes (preview)
     href: process-advisor-share.md
   - name: Administration and security (preview)
-    items:
+    items: 
     - name: Security and privacy (preview)
       href: process-advisor-security.md
     - name: Protect your data (preview)
