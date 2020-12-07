@@ -246,9 +246,9 @@ You'll find feature-specific limitations included in the documentation for each 
 
 ## Learn more
 
-- [Upgrade Power Automate Desktop](upgrade.md) from previous releases
-- Learn to [create desktop UI flows](create-desktop.md).
-- Learn to [create Web UI flows](create-web.md).
-- Learn how to run [UI flows](run-ui-flow.md).
-- Learn to [manage UI flows](manage.md).
+- Learn to [create Power Automate Desktop flows](create-flow.md).
+- Learn to [create Windows recorder (v1) flows](create-desktop.md).
+- Learn to [create Selenium IDE flows](create-web.md).
+- Learn how to run [desktop flows](run-ui-flow.md).
+- Learn to [manage desktop flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
