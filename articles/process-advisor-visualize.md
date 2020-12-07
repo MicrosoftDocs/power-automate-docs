@@ -27,6 +27,9 @@ search.audienceType:
 
 ## Process map
 
+> [!div class="mx-imgBorder"]
+> ![Process map](media/process-advisor-visualize/process-map.png "Process advisor process map")
+
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.  To get to the process map go to Analytics and select Process map tab.
 
 Watch a short video on how to analyze a process (embedded video here)
@@ -46,7 +49,7 @@ Additionally, there are key performance indicators available to help you better 
 ## Time analysis
 
 > [!div class="mx-imgBorder"]
-> ![Analytics screen](media/process-advisor-visualize/analytics-screen.png "Modify the description")
+> ![Analytics screen](media/process-advisor-visualize/analytics-screen.png "analytics screenshot")
 
  In order to view additional process analytics select the **Time analysis** tab . Out of the box you will get several key performance indicators (KPIs) and visualizations to help you understand your task. Here is the list of metrics and visuals, and what they could tell you about your task:
 

@@ -374,10 +374,10 @@
     href: process-advisor-overview.md
   - name: Work with processes and recordings (preview)
     href: process-advisor-processes.md
-  - name: Visualize processes (preview)
-    href: process-advisor-visualize.md
   - name: Analyze processes (preview)
     href: process-advisor-analyze.md
+  - name: Visualize processes (preview)
+    href: process-advisor-visualize.md
   - name: Share processes (preview)
     href: process-advisor-share.md
   - name: Administration and security (preview)
