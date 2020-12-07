@@ -1,6 +1,6 @@
 ---
-title: Set up UI flows and Power Automate Desktop (preview) on your device | Microsoft Docs
-description: Set up UI flows and Power Automate Desktop (preview) on your device.
+title: Set up Power Automate Desktop on your device | Microsoft Docs
+description: Set up Power Automate Desktop on your device.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,12 +22,12 @@ search.audienceType:
   - enduser
 ---
 
-# Set up UI flows and Power Automate Desktop (preview)
+# Set up Power Automate Desktop
 
-Before you can use your device to create UI flows, you'll need to ensure it meets the requirements outlined here.
+Before you can use your device to create desktop flows, you'll need to ensure it meets the requirements outlined here.
 
 > [!TIP]
-> Before you create a UI flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a UI flow. You might also build your [own connector](https://docs.microsoft.com/connectors/custom-connectors/).
+> Before you create a desktop flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also build your [own connector](https://docs.microsoft.com/connectors/custom-connectors/).
 
 ## Prerequisites
 
@@ -45,74 +45,63 @@ Before you can use your device to create UI flows, you'll need to ensure it meet
 - A supported keyboard attached.
 
 >[!IMPORTANT]
->You must have the latest versions of each component to record, test, or run UI flows.
+>You must have the latest versions of each component to record, test, or run desktop flows.
 
-## Install UI flows and Power Automate Desktop (preview) on your device
+## Install Power Automate Desktop on your device
 
 The installer contains all the components you need to record, edit, and test your automations. 
 
-Follow these steps to install the UI flows app:
+Follow these steps to install the Power Automate Desktop app:
 
-1. [Download the UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. 
+1. [Download the Power Automate Desktop installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
-1. Follow the instructions in the **UI flows setup** installer to complete the installation.
-1. Once the installer launches, select to install UI flows, Power Automate Desktop (preview), or both. 
+1. Follow the instructions in the **Power Automate Desktop setup** installer to complete the installation. 
 1. Make your selections for each feature for the installation to complete. 
 
 >[!IMPORTANT]
->The UI flows package installs the Webdriver component and the UI flows browser extension. You need both of these to record, test, and run UI flows for desktop.
->The Power Automate Desktop (preview) package installs the Power Automate Desktop app, third-party components, and browser extensions.
+>The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
+>It will also installs the Power Automate Desktop app and third-party components.
 
-![Installation options image](https://user-images.githubusercontent.com/48315710/92633908-c546e380-f2d3-11ea-8976-6a7609eb70f8.png)
+![Installation options image](../media/ui-flows-setup/installer-checkboxes.PNG)
 
 ### Set data collection options
 
-During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve UI flows**.
+During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
-## Activate the UI flows and Power Automate Desktop (preview) browser extension 
+## Install the Power Automate browser extension 
 
-After the installation completes, confirm that the extensions for UI flows and Power Automate Desktop (preview) are active on the browser(s) you use.
+After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image](https://user-images.githubusercontent.com/48315710/92635143-a5b0ba80-f2d5-11ea-96ec-4672d84d13b3.png)
+![Installation success image](../media/ui-flows-setup/screen.PNG)
 
-1. Select one of the links displayed in the installer. For example, if you want to use UI flows on Microsoft Edge, select the **Microsoft Edge** link.
+Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
 
    The store for your browser opens directly to the public page for the extension.
 
-1. Confirm that the extension is installed. Follow these steps if it isn't installed:
+>[!IMPORTANT]
+If you already install the Power Automate extension in the past, you don't need to reinstall it
 
 #### Microsoft Edge: 
-- Select **Get**, and then select **Add extension** when prompted. 
+- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
 - If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
 
 #### Google Chrome: 
-- Select **Add to Chrome**, and then select **Enable extension** when prompted. 
+- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150929): select **Add to Chrome**, and then select **Enable extension** when prompted. 
 - If you see the message: *This item has been disabled in Chrome* on top of the page, select **Enable this item**.
 
+#### Mozilla Firefox:
+- [Install Firefox extension](https://go.microsoft.com/fwlink/?linkid=2151511): select **Add to Firefox**, and then select **Add** when prompted. 
+
+
 > [!TIP]
-> If you are not able to activate the extension(s) in your browser, check the following:
-> - You must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome. Firefox is only supported with the Power Automate Desktop extension.
-> - If the extension does not appear, you can reinstall it with the [UI flows installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not suppoted. 
 
+## Install the on-premises data gateway to run your desktop flows from the cloud
 
-## Install Selenium IDE to automate Web applications with UI flows
-
-The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
-
-With UI flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
-
-Follow these steps to install Selenium IDE:
-
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
-
-1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
-
-## Install the on-premises data gateway
-
-You will need the gateway to trigger your UI flow from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
+You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your flows on your device.
@@ -124,7 +113,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
 
-## Setup UI flows connections and machine credentials
+## Setup desktop flows connections and machine credentials
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Expand **Data** on the left side of the screen.
@@ -136,7 +125,7 @@ You will need the gateway to trigger your UI flow from an [event, schedule, or b
 
    ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
 
-1. Search for *UI flow*, and then select **UI flows**.
+1. Search for *Desktop flow*, and then select **Desktop flows**.
 
    ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png)
 
@@ -156,6 +145,35 @@ You might not find the gateway in the list while creating the connection for the
 
 - The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
 - The gateway was deleted by its owner.
+
+## Install Windows recorder (v1) extension (optional)
+
+The Windows recorder (v1) is another option to record and playback your desktop automations. We recommand you to use Power Automate Desktop since this is the latest RPA solution.
+
+Follow these steps to install Windows recorder (v1) extension:
+
+1. Install the extension on Micrsodt Edge and/or Google Chroome from the store (Firefox is not supported for Windows recorder (v1))
+
+#### Microsoft Edge: 
+- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
+
+#### Google Chrome: 
+- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150930): select **Add to Chrome**, and then select **Enable extension** when prompted. 
+
+
+## Install Selenium IDE to automate Web applications with desktop flows (optional)
+
+The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
+
+With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
+
+Follow these steps to install Selenium IDE:
+
+1. Make sure you already installed and enabled Windows recorder (v1) extension (see previous section)
+
+1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
+
+1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Supported keyboard layouts
 
@@ -201,10 +219,10 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 >Power Automate Desktop (preview) is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
 
 
-## Uninstall UI flows
+## Uninstall Power Automate Desktop
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **UI flows**, and then select it.
+1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
 ## Limitations
@@ -212,29 +230,25 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 The following are not supported:
 - Windows 10 Home installations are not supported.
 
--   Desktop UI flows
+-   Windows Recorder v1 desktop flows
 
     -   Multiple monitors.
     -   Double click, mouse hover, touch/pen input.
     -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
 
--   Web UI flows
+-   Selenium desktop flows
 
     -   Right click.
     -   User session information (for example: cookies) will not be reused during
         playback. You will have to edit the script to embed sign in information when required by websites.
 
-- Power Automate Desktop (preview)
-
-   - touch/pen input
-
 You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Learn more
 
-- [Upgrade your UI flows](upgrade.md) from previous releases
-- Learn to [create desktop UI flows](create-desktop.md).
-- Learn to [create Web UI flows](create-web.md).
-- Learn how to run [UI flows](run-desktop-flow.md).
-- Learn to [manage UI flows](manage.md).
+- Learn to [create Power Automate Desktop flows](create-flow.md).
+- Learn to [create Windows recorder (v1) flows](create-desktop.md).
+- Learn to [create Selenium IDE flows](create-web.md).
+- Learn how to run [desktop flows](run-ui-flow.md).
+- Learn to [manage desktop flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
