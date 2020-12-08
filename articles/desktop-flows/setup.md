@@ -112,19 +112,43 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >[!IMPORTANT]
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
+
+## Setup desktop flows connections and machine credentials
+
+1. Sign into [Power Automate](https://powerautomate.microsoft.com).
+1. Expand **Data** on the left side of the screen.
+1. Select **Connections**.
+
+   ![A screenshot of the connections tab](../media/desktop-flows-setup/connections-tab.png)
+
+1. Select New connection.
+
+   ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
+
+1. Search for *Desktop flow*, and then select **Desktop flows**.
+
+   <!-- ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png) -->
+
+1. Provide the gateway information and device credentials: 
+
+    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+    - **Password**: Your account’s password.
+    - **Choose a gateway**: Select the gateway you want to use.
+
+      ![A screenshot that shows where to enter the credentials for the connection](../media/desktop-flows-setup/credentials-screen.png)
+
+1. Select **Create**.
+
 ## Install Power Automate Desktop silently
 
 Follow these steps if you want to silently install Power Automate Desktop.
-
-Before you can install Power Automate Desktop silently, you must [Download the Power Automate Desktop
-installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 >[!NOTE]
 >The same installer is used for manual and silent installation of Power Automate Desktop.
 
 ### Install Power Automate Desktop using the command line
 
-1. Download Power Automate Desktop.
+1. Download [Download Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 1. Open **Start**.
 
@@ -174,7 +198,7 @@ Use the following command to silently uninstall Power Automate Desktop:
 To update Power Automate Desktop, use the same command line arguments that you use to install it. 
 
 >[!NOTE]
->All your data and configuration, including telemetry, shortcuts, etc. are retained when you update Power Automate Desktop.
+>All your data and configuration, including telemetry, shortcuts, etc. are retained when you update Power Automate Desktop. If you want to enable parameters previously disabled, you will need to first uninstall Power Automate Desktop, and then reinstall it. 
 
 ### Install the gateway with PowerShell Cmdlets
 
@@ -200,34 +224,6 @@ How to deploy Power Automate Desktop with Intune
 ================================================
 
 <https://www.robinhobo.com/how-to-deploy-win32-applications-with-microsoft-intune/> -->
-
-
-
-## Setup desktop flows connections and machine credentials
-
-1. Sign into [Power Automate](https://powerautomate.microsoft.com).
-1. Expand **Data** on the left side of the screen.
-1. Select **Connections**.
-
-   ![A screenshot of the connections tab](../media/desktop-flows-setup/connections-tab.png)
-
-1. Select New connection.
-
-   ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
-
-1. Search for *Desktop flow*, and then select **Desktop flows**.
-
-   ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png)
-
-1. Provide the gateway information and device credentials: 
-
-    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
-    - **Password**: Your account’s password.
-    - **Choose a gateway**: Select the gateway you want to use.
-
-      ![A screenshot that shows where to enter the credentials for the connection](../media/desktop-flows-setup/credentials-screen.png)
-
-1. Select **Create**.
 
 ## Troubleshoot missing gateway
 
