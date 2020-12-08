@@ -16,7 +16,7 @@ search.audienceType:
 
 # Database
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Connect to databases and execute SQL statements
 

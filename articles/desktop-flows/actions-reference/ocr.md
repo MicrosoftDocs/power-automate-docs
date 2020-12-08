@@ -16,7 +16,7 @@ search.audienceType:
 
 # OCR
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Initiate OCR engines to perform OCR related activities
 

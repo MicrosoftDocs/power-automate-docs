@@ -16,7 +16,7 @@ search.audienceType:
 
 # Terminal emulation
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Take control of terminal emulators for automating mainframes and legacy systems
 

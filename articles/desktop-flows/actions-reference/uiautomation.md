@@ -16,7 +16,7 @@ search.audienceType:
 
 # UI automation
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Interact with desktop/windows applications
 

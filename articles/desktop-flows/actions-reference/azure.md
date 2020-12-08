@@ -16,7 +16,7 @@ search.audienceType:
 
 # Azure
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
 

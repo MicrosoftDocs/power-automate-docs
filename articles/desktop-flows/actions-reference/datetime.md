@@ -16,7 +16,7 @@ search.audienceType:
 
 # Datetime
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Get the date and time and perform time related functions
 

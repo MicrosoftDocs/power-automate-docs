@@ -16,7 +16,7 @@ search.audienceType:
 
 # Mouse and keyboard
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Take control of the mouse and keyboard
 

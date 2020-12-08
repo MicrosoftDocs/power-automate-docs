@@ -16,7 +16,7 @@ search.audienceType:
 
 # Cognitive
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Perform cognitive operations using Google, Microsoft or IBM services
 

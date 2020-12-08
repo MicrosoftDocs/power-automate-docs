@@ -16,7 +16,7 @@ search.audienceType:
 
 # Web
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Communicate with web applications and services directly
 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # PDF
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Automate PDF files and their content (text and images)
 

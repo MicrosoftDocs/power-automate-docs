@@ -16,7 +16,7 @@ search.audienceType:
 
 # Loops
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Terminates the loop and the flow resumes at the next action or statement following the loop
 

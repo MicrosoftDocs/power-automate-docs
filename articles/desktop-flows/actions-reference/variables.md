@@ -16,7 +16,7 @@ search.audienceType:
 
 # Variables
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 All variable-related actions for different datatypes
 

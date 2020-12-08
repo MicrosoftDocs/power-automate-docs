@@ -16,7 +16,7 @@ search.audienceType:
 
 # Compression
 
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Zip or unzip files from archives
 
