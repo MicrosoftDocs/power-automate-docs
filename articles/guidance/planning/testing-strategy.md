@@ -26,6 +26,7 @@ Let's take a look at the example shown in the following illustration.
 
 ![Example of a compliance check flow](media/compliance-flow.png "Example of a compliance check flow")
 -->
+<!--tayoshi: Looks good, thanks & updated image-->
 :::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow":::
    From "Expense report created," an arrow leads to the decision "Check if report meets compliance." From "Check if report meets compliance," Yes leads to "Status updated to 'Compliance check complete'" and No leads to "Request fixes."
 :::image-end:::
@@ -36,7 +37,7 @@ possible combinations that might fail.
 | Case No. | Step details                                  | Condition              | Expected result                                                | Actual result |
 |----------|-----------------------------------------------|------------------------|----------------------------------------------------------------|---------------|
 | 1-1      | Check whether report meets compliance              | Compliance met         | Status updated to "Compliance check complete"                  |              |
-| 1-2      | Check whether report meets compliance              | Compliance not met     | Email sent to employee to fix the expense report<!--note from editor: Edit okay? -->                            |               |
+| 1-2      | Check whether report meets compliance              | Compliance not met     | Email sent to employee to fix the expense report<!--note from editor: Edit okay? --><!--tayoshi: Yes-->                            |               |
 | 1-3      | Check whether report meets compliance              | Compliance check fails | Notified flow maker and logged failure to the "flow runs" feature. |               |
 | 2        | Status updated to "Compliance check complete" | Status update fails    | Notified flow maker and logged failure to the "flow runs" feature. |               |
 | 3        | Email sent to employee to fix the expense report           | Email send fails       | Notified flow maker and logged failure to the "flow runs" feature. |               |
@@ -55,8 +56,9 @@ live systems. In these cases, you can use the following methods:
 - **For data entry**: Create a step to make new record, followed by another flow
 to delete the same record.
 
-- **For sending data**: Set up a test environment on the system you want to send the
+- **For sending data**: If pssible, set up a test environment on the system you want to send the
 data to.<!--note from editor: Edit okay? Or by "if possible," did you mean "If possible, set up a test environment..."?-->
+<!--tayoshi: Latter would be better-->
 
 ## Testing with users
 

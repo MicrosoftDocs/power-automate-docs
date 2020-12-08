@@ -25,17 +25,24 @@ don't have a single automation that covers the entire process. There are several
 - There's no need to restart the automation from the beginning if a step fails.
 
 In the example below, one automation has been set up for an approval process, covering multiple
-processes with a single automation.<!--note from editor: Needs more descriptive alt text. -->
+processes with a single automation.<!--note from editor: Needs more descriptive alt text. --><!--tayoshi: Have fixed the alt text and descriptions-->
 
-![Flow before splitting](media/flow-before-split.png "Flow before splitting")
+![Example of a very long process diagram set up for automation](media/flow-before-split.png "Example of a very long process diagram set up for automation")
+:::image type="complex" source="media/flow-before-split.png" alt-text="Example of a very long process diagram set up for automation":::
+   Diagram showing a business process where an expeonse report is created. The entire business process is setup as a single long automation with ten steps to complete.  
+:::image-end:::
 
 If, for example, the cash reimbursement process fails, the whole automation will
 be considered a failure. If a requirement or specification for looking up employee
 banking details changes, the whole process will have to be suspended until the updates are in place.
 
-Instead, you can separate the automation into modules, as shown in the following image.<!--note from editor: Needs more descriptive alt text. -->
+Instead, you can separate the automation into modules, as shown in the following image.<!--note from editor: Needs more descriptive alt text. --><!--tayoshi: Have fixed the alt text and descriptions-->
 
-![Flow after splitting](media/flow-after-split.png "Flow after splitting")
+![Example of process diagram split to three smaller processes](media/flow-after-split.png "Example of process diagram split to three smaller processes")
+:::image type="complex" source="media/flow-after-split.png" alt-text="Example of process diagram split to three smaller processes":::
+   Diagram showing automations split to three smaller automations so that each automation only includes three or four steps. First automation starts when an expense report is created and checks whether the created reports meets compliance. If compliant, the tatus is updated to Compliance check complete. If not, it will requrest for fixes.
+   Second automation starts when status is updated to Compliance check complete. If approved, the result is emailed and status is set to approved. If declined, it will request for fixes. Third automation starts when status is updated to approved. The system automatically will lookup employee's banking details and reimburse cash to the employee, and also archive the expense report.
+:::image-end:::
 
 In this example, Automation \#2 depends on the previous automation to
 set the status of the expense report to "Compliance

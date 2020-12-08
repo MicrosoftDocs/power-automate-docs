@@ -17,9 +17,9 @@ If you need to securely store and pass a sensitive text inside web browser or
 desktop automation, you can [define the input as sensitive text](../../ui-flows/inputs-outputs-desktop.md)
 and store it in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview). This is
 different from the secure inputs and outputs feature. Whereas secure inputs and outputs mask the
-data that has entered a specific action, and can be applied to any action (if the action is
-supported), sensitive text is used to set up passing data to desktop flow
+data that has entered a specific action, and can be applied to any action (if the action supports secure inputs and outputs), sensitive text is used to set up passing data to desktop flow
 actions.<!--note from editor: Edits okay? I assume you were talking about the feature you describe in define-input-output.md. If you don't like this, please use "because" instead of "as." Also, please specify what is supported in "(if supported)."-->
+<!--tayoshi: Noted. Fixed the if supported-->
 
 ![Setting up sensitive text in desktop flows](media/ui-flow-secure-input.png "Setting up sensitive text in desktop flows")
 

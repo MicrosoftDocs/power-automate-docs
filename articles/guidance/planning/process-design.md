@@ -28,7 +28,7 @@ categories:
 
 - Reduce human error
 
-- Streamline approvals<!--note from editor: I modified this list to match the content below. -->
+- Streamline approvals<!--note from editor: I modified this list to match the content below. --><!--tayoshi: Thank you-->
 
 - Gain efficiency in high-volume transactions
 
@@ -68,11 +68,16 @@ data from paper forms, are processes where human errors can occur.
 An example case for the expense reporting scenario is where Abhay needs to
 reimburse cash to the employee by looking up the employee banking details, then
 accessing the banking system.<!--note from editor: The alt text doesn't match the image, and I'm not sure what to suggest in its place. Here and throughout this article, do you think the reader will understand the concepts behind these flowcharts and the dotted lines? Or should we use the :::image::: markup extension and give much more detailed descriptions?-->
+<!--tayoshi: Makes sense. Have updated the alt text and added descriptions-->
 
-![Before reminder automation is set up](media/before-reminder-automation.png "Before reminder automation is set up")
+<!--![Possible areas of business process to automate for reducing human error](media/before-reminder-automation.png "Possible areas of business process to automate for reducing human error")-->
+:::image type="complex" source="media/before-reminder-automation.png" alt-text="Possible areas of business process to automate for reducing human error":::
+   Diagram showing a business process flow for Abhay the accountant. Two steps in the processes "Lookup employee banking details" and "Reimburse cash to applicant" is circled in red to indicate the potential areas where Power Automate can reduce human errors by automating these steps. 
+:::image-end:::
 
 ## Streamline approvals
 <!--note from editor: Suggest adding this heading to track with the list at the beginning of the article.-->
+<!--tayoshi: Yes this works better-->
 A different type of error occurs when people forget to perform their tasks. You can set up automation to remind them to work on the task or process that they've been
 assigned.
 
@@ -80,17 +85,26 @@ For example, Lee has submitted an expense report but Nick hasn't
 responded to the approval request for some time. An automation can be set up to
 remind Nick to make a decision, and even provide a button to respond directly
 from the reminder.<!--note from editor: Should there be a "before reminder automation" image in this section? Also - need more descriptive alt text here for sure.-->
+<!--tayoshi: Have fixed the alt text and descriptions-->
 
-![After reminder automation is set up](media/after-reminder-automation.png "After reminder automation is set up")
+<!--![After reminder automation is set up](media/after-reminder-automation.png "After reminder automation is set up")-->
+:::image type="complex" source="media/after-reminder-automation.png" alt-text="Possible areas of business process to automate for streamlining business process":::
+   Diagram showing a business process flow for Abhay the accountant. The approval process is altered so that reminder for approvals are automated by setting up a trigger automation to check status, if approval is complete, the automation is ended, and if approval is not complete, a reminder is sent to the approver and the reminder automation will be run again to check until the approval is completed. 
+:::image-end:::
 
 ## Gain efficiency in high-volume processes
 
-High-volume processes are closely tied to repetitive processes. If a process
-must be done many times, even small improvements can have large impacts.
+Another area you may want to automate are high-volume processes.
+High-volume processes are processes that occur very frequently on a daily basis.
+It is closely tied to repetitive processes but is slight different. 
+You may have a process that can only have a step or two that can be automated.
+However, if a process must be done many times, even small improvements can have large impacts.
 
 For example, if the expense reporting scenario holds for 1,000 salespeople, each
 minute of improvement would equate to two working days' worth of time
-saved.<!--note from editor: This kind of comes out of the blue. Should there be a link to analyze-and-assess.md here, or at least some background information?-->
+saved. Analysing the actual impact can be done by using the [analytics features](analyze-and-assess.md).
+<!--note from editor: This kind of comes out of the blue. Should there be a link to analyze-and-assess.md here, or at least some background information?-->
+<!--tayoshi: Added link and also updated the section. Does this provide better context?-->
 
 ## Automate data entry 
 
@@ -122,6 +136,7 @@ no rush for the automation to finish. For example, if a person starts their
 day by processing orders that came in overnight, you might create
 automation that processes the orders as soon as they come in, so that your team can start
 fulfilling the orders first thing in the morning.<!--note from editor: Alt text suggested.-->
+<!--tayoshi: This is great. thank you-->
 
 ![Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM](media/maximize-use-of-resources.png "Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM")
 
@@ -129,13 +144,25 @@ fulfilling the orders first thing in the morning.<!--note from editor: Alt text 
 
 Similar to maximizing the use of available resources, automation also helps you
 increase the throughput of a particular process. With this type of automation,
-your current process can be performed by humans in parallel with the automation.<!--note from editor: Can you give an example? Alt text suggested.-->
+your current process can be performed by humans in parallel with the automation.
+
+For example, Abhay the accountant may be the only person processing the expense
+reports and his standard work hours may be between 9 AM to 6 PM. By setting up an
+automation, you could also have Power Automate to process the expense reports as 
+well, and therefore have both Abhay and the automation to process it, resulting
+in a higher throughput.
+<!--note from editor: Can you give an example? Alt text suggested.-->
+<!--tayoshi: Have added an example. Would this work?-->
 
 ![Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours](media/increasing-throughput.png "Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours")
 
 ## Example scenario
 
 When all of the automation areas are applied, the example below shows how an
-expense reporting business process will be covered by Power Automate.<!--the following image looks identical to gain-efficiency-automated-scenario.png, earlier in this article. And as I noted above, it's just not clear to me how the red dashed lines explain where the efficiency comes in.-->
+expense reporting business process can be covered by Power Automate with 
+improvements to throughput, maximizing the available resources, automating data 
+entries as well as streamlining approvals.
+<!--the following image looks identical to gain-efficiency-automated-scenario.png, earlier in this article. And as I noted above, it's just not clear to me how the red dashed lines explain where the efficiency comes in.-->
+<!--tayoshi: Have fixed the explanation for this section. Does this make more sense with the image?-->
 
-![Diagram of process after automation is applied](media/process-after-automation-applied.png "Diagram of process after automation is applied")
+![Diagram of process after all of the automations are applied](media/process-after-automation-applied.png "Diagram of processall of the automations are applied")

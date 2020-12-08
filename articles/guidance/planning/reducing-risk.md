@@ -68,7 +68,7 @@ automatically retry an action if it fails. By default, this is set to retry four
 ## Set up custom failure notifications
 
 If actions still fail, standard capabilities in Power Automate notify the owners of the
-automation with a message similar to the following image.<!--note from editor: Is this what "standard capabilities" refers to? Also, is it okay that the image shows "Microsoft Flow"? -->
+automation with a message similar to the following image.<!--note from editor: Is this what "standard capabilities" refers to? Also, is it okay that the image shows "Microsoft Flow"? --><!--Yes, the product still sends the email with Microsoft Flow-->
 
 ![Example of a failed flow run notification that reads "The flow(s) listed had an unusual number of failures in the past week and may need your attention"](media/failure-notification-mail.png "Example of a failed flow run notification that reads 'The flow(s) listed had an unusual number of failures in the past week and may need your attention'")
 
@@ -79,14 +79,14 @@ adding actions that run only if the previous steps have failed.
 
 Normally, by default, all actions that are set up will only run if the previous
 step was successful. You can change this behavior by setting the action to run only
-when the previous step failed&mdash;so that, for example, an email is sent to a custom list of recipients after a failed action.<!--note from editor: Edits okay? I wasn't quite sure what this was saying.-->
+when the previous step failed&mdash;so that, for example, an email is sent to a custom list of recipients after a failed action.<!--note from editor: Edits okay? I wasn't quite sure what this was saying.--><!--tayoshi: Yes this looks good-->
 
 ## Assign multiple owners
 
 Having a single owner for a particular automation can be a risk from an
 organizational and administrative perspective. If that owner is absent or
 away from the office when a problem occurs, no one else can fix the issue. You
-can prevent this by setting up multiple users or groups as owners, to make sure more than one person can edit the automation. More information: [Share a flow](../../create-team-flows.md)<!--note from editor: Is this screenshot based on sample data? I don't find these names (Jordan Miller, etc.) in our list of approved names.-->
+can prevent this by setting up multiple users or groups as owners, to make sure more than one person can edit the automation. More information: [Share a flow](../../create-team-flows.md)<!--note from editor: Is this screenshot based on sample data? I don't find these names (Jordan Miller, etc.) in our list of approved names.--><!--tayoshi: Yes, it's sample/demo environment but wasnt aware of approved names-->
 
 ![Setting up multiple owners](media/group-owners.png "Setting up multiple owners")
 

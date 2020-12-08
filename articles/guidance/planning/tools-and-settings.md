@@ -13,7 +13,7 @@ ms.reviewer: kathyos
 
 # Tools and settings to test your automation
 
-This article describes the<!--note from editor: Suggested, to avoid "there are."--> tools you can use to check your flows for basic errors and detect
+This article describes the<!--note from editor: Suggested, to avoid "there are."--><!--tayoshi:OK, thanks--> tools you can use to check your flows for basic errors and detect
 errors that occur when the automation runs.
 
 ### Flow Checker

@@ -15,13 +15,13 @@ ms.reviewer: kathyos
 
 To identify bottlenecks in an automation, you can set up actions
 within the automation that log the start time of each activity or step. You
-can do this by creating an entity<!--note from editor: Should this be "a table," to match our updated terminology?--> that records the step name, start time, and
+can do this by creating a table that records the step name, start time, and
 end time.
 
 ![Adding actions to store analytical data](media/store-analytical-data.png "Adding actions to store analytical data")
 
 This way, you can keep track of how long it took for each end-to-end run of
 automation to be completed, and possibly find ways to make your
-automation even better.<!--note from editor: Suggested.-->
+automation even better.
 
 If you store this data in Dataverse, you can use Power BI to identify which part of the process took the longest time to complete.

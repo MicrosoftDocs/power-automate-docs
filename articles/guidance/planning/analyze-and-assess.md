@@ -25,11 +25,13 @@ in a day.
 
 2. Select the flow you want to analyze.
 
-3. Select **Analytics**.<!--note from editor: Please obscure the name "Taiki" in the image. I moved the image because it seems to illustrate this step.  Also, note that this isn't actually a tab because it appears on the command bar.-->
+3. Select **Analytics**.
 
    ![Analytics for a flow](media/analytics-tab.png "Analytics for a flow")
 
-4. Select the **Usage** tab.<!--note from editor: Will the reader know where to find the **Usage** tab? It doesn't appear in the image.-->
+4. Select the **Usage** tab.
+
+   ![Usage of a flow](media/usage-tab.png "Usage of a flow")
 
 ## Get the number of flow runs
 
@@ -72,8 +74,11 @@ To get the duration in seconds, use the following formula:
 
 ![Calculating duration with Excel](media/excel-calculation.png "Calculating duration with Excel")
 
-Now that you have the number of runs and duration of the runs<!--note from editor: I think you need another procedure here, for getting the average duration.-->, you'll be able
-to find out how much time your automation has saved<!--note from editor: Edit okay?--> by comparing it with the
+To get the average duration, obtain the total the number of durations, and 
+divide it by number of runs (no. of rows).
+
+Now that you have the number of runs and duration of the runs, you'll be able
+to find out how much time your automation has saved by comparing it with the
 previous manual process.
 
 ## Example scenario
@@ -89,12 +94,12 @@ Abhay measured how long this takes and recorded that it
 took three minutes to look up the employee's banking details and another five minutes to
 reimburse the applicant from the online banking website.
 
-Based on the flow run analytics<!--note from editor: Edit okay?-->, Abhay can see that the automation ran between 91 to
+Based on the flow run analytics, Abhay can see that the automation ran between 91 to
 110 times a day, for an average of 107 runs.
 
 ![Trend graph of flow runs](media/flow-run-trends.png "Trend graph of flow runs")
 
-The duration of the automation is 40 seconds on average<!--note from editor: I don't think you've described getting this yet.-->. Therefore, the time reduced per run is:
+The [duration of the automation](#get-the-flow-run-duration) obtained is 40 seconds on average. Therefore, the time reduced per run is:
 
 &nbsp;&nbsp;&nbsp;Time before automation (3 minutes &plus; 5 minutes) &minus; time after automation (40 seconds) = 440 seconds
 

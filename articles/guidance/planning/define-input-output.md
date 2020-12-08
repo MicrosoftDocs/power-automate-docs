@@ -51,7 +51,7 @@ Power Automate.
 
 ![Secure inputs and secure outputs settings](media/secure-input-output.png "Secure inputs and secure outputs settings")
 
-By default in Power Automate, you can see inputs and outputs in the run history for a flow.<!--note from editor: Edit okay?--> When you enable secure inputs and outputs, you can
+By default in Power Automate, you can see inputs and outputs in the run history for a flow. When you enable secure inputs and outputs, you can
 protect this data when someone tries to look into the inputs and outputs and instead display the message "Content not shown due to security
 configuration."
 

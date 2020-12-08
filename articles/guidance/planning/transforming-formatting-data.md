@@ -18,7 +18,7 @@ to be understood by other systems used later in the process. For
 example, you might need to convert local time to Coordinated Universal Time (UTC), or convert one currency
 to another. To make your data understandable in another system, you can
 convert it into a different format. Be sure to take data formats (and format conversions) into
-account when you design your process automation architecture.<!--note from editor: Suggested.-->
+account when you design your process automation architecture.<!--note from editor: Suggested.--><!--tayoshi:Looks good, thanks-->
 
 Here are some of the ways you can transform and format your data.
 

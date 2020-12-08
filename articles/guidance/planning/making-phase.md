@@ -59,4 +59,4 @@ More information: [Create a flow from a template in Power Automate](../../get-st
 
 4.  Test the created UI flow you created.
 
-5.  Set up triggers and links between API flows to Power Automate Desktop.<!--note from editor: Edit okay?-->
+5.  Set up triggers and links between API flows to Power Automate Desktop.

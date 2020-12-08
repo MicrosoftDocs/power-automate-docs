@@ -16,7 +16,7 @@ ms.reviewer: kathyos
 After the process design is complete, the next step is architectural design, where
 you focus on how you'll automate that process.
 
-First you determine what kind of connector you can use (if any), and then choose a trigger to start the automation.<!--note from editor: This additional introduction and H2 are suggested, so the structure is reflects the equal importance of the sections.-->
+First you determine what kind of connector you can use (if any), and then choose a trigger to start the automation.
 
 ## Choose an automation method
 
@@ -28,7 +28,6 @@ connector. For example, a connector for an email system will need actions for
 "send," "reply," and "delete."
 
 If there are no connectors available, you have the following options to choose from:
-<!--note from editor: I made this a bulleted list so it's structurally obvious that the summary table applies to all these methods.-->
 - **Create a custom connector**: This is the preferred method of automation if you're a developer or your organization has a developer who can create
 custom connectors. More information: [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
 
@@ -41,7 +40,9 @@ application or a website, you should consider web browser automation.
 Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can either use [web UI flows](../../ui-flows/create-web.md) or [build a web automation](../../ui-flows/desktop/actions-reference/webautomation.md) process with Power Automate Desktop.
 
 - **Create a desktop application automation**: If you can't find a connector, and if the system is a desktop application on
-a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../ui-flows/desktop/create-flow.md) with Power Automate Desktop. More information: [Automate desktop flows](../../ui-flows/desktop/desktop-automation.md)<!--note from editor: Is there a reason to link to this article in addition to the previous link? This one seems to be very far down in the TOC, I'm not sure how it relates to the other article or if we need two links so close together.-->
+a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../ui-flows/desktop/create-flow.md) with Power Automate Desktop. <!--More information: [Automate desktop flows](../../ui-flows/desktop/desktop-automation.md)-->
+<!--note from editor: Is there a reason to link to this article in addition to the previous link? This one seems to be very far down in the TOC, I'm not sure how it relates to the other article or if we need two links so close together.-->
+<!--tayoshi: Removed the last link-->
 
 The following table compares the different methods.
 
@@ -50,7 +51,7 @@ The following table compares the different methods.
 | Connector                      | Easiest     | No                                                | No                                | None                              |
 | Custom connector               | Easy        | Yes                                               | No                                | Yes                               |
 | HTTP connector                 | Easy        | Yes                                               | No                                | No                                |
-| Web browser automation         | Easy        | No, but a basic knowledge of CSS and HTML is preferable<!--note from editor: Edit okay? I couldn't quite tell what the answer was here.--> | Yes                               | Yes                               |
+| Web browser automation         | Easy        | No, but a basic knowledge of CSS and HTML is preferable | Yes                               | Yes                               |
 | Desktop application automation | Easy        | No                                                | Yes                               | Yes                               |
  
 In complex automation scenarios, you can combine all these methods.
@@ -78,20 +79,18 @@ Examples of automated triggers include:
 -   When a new record is created in Microsoft Dataverse
 -   When an item is modified in a custom SharePoint list
 <!--note from editor: In the following image, please update "Common Data Service."-->
+<!--tayoshi: Cannot update the image as the product UI still remains as Common Data Service-->
 ![Automated triggers](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report might be to set an automated trigger
 to start an approval flow when a new record is created in the Expense Approvals
-entity<!--note from editor: Should this reference to an entity be updated to our current terminology?--> in Dataverse. This ensures, for example, that when a form is created with Power Apps, which creates a new record in Dataverse, an approval flow is automatically triggered.
-<!--note from editor: Suggested. Also, I don't know what the following line is for. Please verify that you don't need it:
-[//]: # (Edit still remaining)
--->
+table in Dataverse. This ensures, for example, that when a form is created with Power Apps, which creates a new record in Dataverse, an approval flow is automatically triggered.
 
 ### Instant or manual triggers
 
 An *instant* or *manual* trigger is a type of trigger where either a user needs to manually
 start the automation or the trigger is instantaneously started. This can be
-triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.<!--note from editor: Edit okay? I wasn't sure the best way to interpret "some of Microsoft services".-->
+triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.<!--note from editor: Edit okay? I wasn't sure the best way to interpret "some of Microsoft services".--><!--tayoshi: Looks good thanks-->
 
 ![Instant triggers](media/instant-triggers.png "Instant triggers")
 
