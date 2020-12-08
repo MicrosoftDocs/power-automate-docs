@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -56,3 +56,6 @@ protect this data when someone tries to look into the inputs and outputs and ins
 configuration."
 
 ![Sample run history with secure inputs and outputs enabled](media/sample-run-history.png "Sample run history with secure inputs and outputs enabled")
+
+> [!div class="nextstepaction"]
+> [Next step: Handling sensitive text](handling-sensitive-text.md)

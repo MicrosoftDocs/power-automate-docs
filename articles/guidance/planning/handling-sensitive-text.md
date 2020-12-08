@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -13,13 +13,12 @@ ms.reviewer: kathyos
 
 # Handling sensitive text
 
-If you need to securely store and pass a sensitive text inside web browser or
+<!--Need to update the links to docs for sensitive text. I could only find in Legacy area.-->
+If you need to securely store and pass sensitive text inside web browser or
 desktop automation, you can [define the input as sensitive text](../../ui-flows/inputs-outputs-desktop.md)
-and store it in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview). This is
-different from the secure inputs and outputs feature. Whereas secure inputs and outputs mask the
+and store it in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview). This is different from the secure inputs and outputs feature. Whereas secure inputs and outputs mask the
 data that has entered a specific action, and can be applied to any action (if the action supports secure inputs and outputs), sensitive text is used to set up passing data to desktop flow
-actions.<!--note from editor: Edits okay? I assume you were talking about the feature you describe in define-input-output.md. If you don't like this, please use "because" instead of "as." Also, please specify what is supported in "(if supported)."-->
-<!--tayoshi: Noted. Fixed the if supported-->
+actions.
 
 ![Setting up sensitive text in desktop flows](media/ui-flow-secure-input.png "Setting up sensitive text in desktop flows")
 
@@ -51,3 +50,6 @@ output to protect the information.
 |                            |                     |                                                             |
 | Payment result             | Output              | To keep a record of the payment result                            |
 | Payment amount             | Secure output       | To keep a record of the payment result                            |
+
+> [!div class="nextstepaction"]
+> [Next step: Transforming and formatting data](transforming-formatting-data.md)

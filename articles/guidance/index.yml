@@ -46,7 +46,7 @@ landingContent:
           - text: Create your first flow
             url: /power-automate/getting-started#create-your-first-flow
           - text: What is desktop flow?
-            url: /power-automate/ui-flows/overview
+            url: /power-automate/desktop-flows/overview
           - text: Power Platform Center of Excellence (CoE) kit
             url: /power-platform/guidance/coe/starter-kit
           - text: Power Platform ALM guide
