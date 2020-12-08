@@ -113,7 +113,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
 
-  [Web browser instance data type properties](datatype-properties.md#web-browser-instances)
+  [Web browser instance data type properties](datatype-properties.md#web-browser-instance)
 
 - **Window instance** – Contains a window instance created through the **Get window** action.
 
