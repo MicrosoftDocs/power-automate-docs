@@ -125,6 +125,11 @@
         "source_path": "https://docs.microsoft.com/power-automate/guided-learning",
         "redirect_url": "https://docs.microsoft.com/learn/paths/automate-process-power-automate/",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/folder",
+        "redirect_url": "https://docs.microsoft.com/power-automate/ui-flows/desktop/actions-reference/folder",
+        "redirect_document_id": "false"
       }
     ]
 }
