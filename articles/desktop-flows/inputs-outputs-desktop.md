@@ -47,7 +47,7 @@ For example, you can use customer information from a SharePoint list as a source
 1.  Once your inputs are created, you can click on next to use them in a recording.
 
 >[!TIP]
->You can use the **CTRL+ALT+L** key combination to insert text that you can pass to or from the application being used in the UI flow. This key combination works for sensitive, static, output, and input text. 
+>You can use the **CTRL+ALT+L** key combination to insert text that you can pass to or from the application being used in the Windows recorder (V1) flow. This key combination works for sensitive, static, output, and input text. 
 
 ## Use inputs to pass information to the application
 
@@ -60,7 +60,7 @@ For example, you can use customer information from a SharePoint list as a source
       >[!TIP]
       >You can identify sensitive text inputs easily because they have a different icon from text inputs.
 
-    - Use a previously defined output (see Outputs section). This is useful to pass information between different applications within the same UI flow.
+    - Use a previously defined output (see Outputs section). This is useful to pass information between different applications within the same Windows recorder (V1) flow.
 
     - Create a new text or sensitive text input as you are recording using the **New input** option. You will find it back in the **Set up input** step.
 
@@ -91,7 +91,7 @@ Outputs let you pass information from the legacy software that Windows recorder 
 
 For example, you can extract customer information your legacy accounting software and add it to a SharePoint list.
 
-Outputs can only be created as you record your UI flow.
+Outputs can only be created as you record your Windows recorder (V1) flow.
 
 1. During a recording, select **Output**.
 
@@ -117,11 +117,11 @@ Each output has:
 
 -  An output name as defined during the recording.
 -  A description: This field can be very useful when you define many outputs during a recording and want to easily identify them later.
--  An action name: the action in which the output is defined in your UI flow.
+-  An action name: the action in which the output is defined in your Windows recorder (V1) flow.
 
 ## Use clipboard content to define outputs 
 
-During a recording, it is possible to copy a text in the clipboard of your computer and to define it as output of your UI flow.
+During a recording, it is possible to copy a text in the clipboard of your computer and to define it as output of your Windows recorder (V1) flow.
 
 1. During your recording, copy a string value  
 
