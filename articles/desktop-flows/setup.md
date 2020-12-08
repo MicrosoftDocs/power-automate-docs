@@ -158,9 +158,17 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
 1. Change the directory to downloads (or to the directory into which you downloaded Power Automate Desktop):
 
-   For example, enter `cd C:\Users\JohnDoe\Downloads\`.
+   For example, enter:
+   
+   ```
+    cd C:\Users\JohnDoe\Downloads\
+   ```
 
-1. Enter `Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA`.
+1. Enter:
+
+   ```
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
+   ```
    
    The installer runs and completes the setup of Power Automate Desktop.
 
@@ -173,7 +181,9 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   `Setup.Microsoft.PowerAutomateDesktop.exe -HELP`
+   ```
+   Setup.Microsoft.PowerAutomateDesktop.exe -HELP
+   ```
 
 | Command              | Description                                                                                                                                                                        |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -185,13 +195,17 @@ You can also retrieve the details of all the command line arguments from the hel
 
 Here's an example of a command line that installs Power Automate Desktop: 
 
-   `Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo`
+   ```
+   Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+   ```
 
 ### Uninstall Power Automate Desktop using the command line
 
 Use the following command to silently uninstall Power Automate Desktop:
    
-   `Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall`
+   ```
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
+   ```
 
 ### Update your version of Power Automate Desktop
 
@@ -207,23 +221,7 @@ You will need the on-premises data gateway to trigger your desktop flows from a 
 You can use [PowerShell Cmdlets](https://docs.microsoft.com/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
 
 >[!IMPORTANT]
->To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated session
-
-<!-- Why do we need these? -->
-
-<!-- Internal documentation (only)
-
-How to deploy Power Automate Desktop via SCCM
-=============================================
-
-<http://gerryhampsoncm.blogspot.com/2013/03/sccm-2012-sp1-step-by-step-guide-part_20.html>
-
-<https://www.pelegit.co.il/deploy-exe-file-using-sccm/>
-
-How to deploy Power Automate Desktop with Intune
-================================================
-
-<https://www.robinhobo.com/how-to-deploy-win32-applications-with-microsoft-intune/> -->
+>To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated session.
 
 ## Troubleshoot missing gateway
 
