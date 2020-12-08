@@ -129,7 +129,12 @@
       {
         "source_path": "https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/folder",
         "redirect_url": "https://docs.microsoft.com/power-automate/ui-flows/desktop/actions-reference/folder",
-        "redirect_document_id": "false"
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "articles/desktop-flows/actions-reference/file.md",
+        "redirect_url": "https://docs.microsoft.com/power-automate/ui-flows/desktop/actions-reference/file",
+        "redirect_document_id": false
       }
     ]
 }
