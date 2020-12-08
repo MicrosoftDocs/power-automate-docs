@@ -22,6 +22,8 @@ It’s quicker and easier than ever to automate with the new intuitive Power Aut
 
 Power Automate Desktop allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates. 
 
+You can alsop create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md)
+
 ## Next Steps
 
 - Learn how to [set up Power Automate Desktop](setup.md).
