@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create and test your Web UI flows
+# Create and test your Selenium IDE flows
 
 Follow these steps to create a simple Web UI flow.
 
@@ -80,7 +80,7 @@ Follow these steps to create a simple Web UI flow.
 
 Now that you've created a Web UI flow, use it in your other flows.
 
-## Limitations and known issues for Web UI flows
+## Limitations and known issues for Selenium IDE flows
 
 >[!WARNING]
 >**Passwords in Selenium IDE are stored in plain text.**  

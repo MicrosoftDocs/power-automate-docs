@@ -1,6 +1,6 @@
 ---
-title: Use inputs and outputs in desktop UI flows | Microsoft Docs
-description: Use inputs and outputs in desktop UI flows.
+title: Use inputs and outputs in Windows recorder (V1) flows | Microsoft Docs
+description: Use inputs and outputs in Windows recorder (V1) flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use inputs and outputs in desktop UI flows
+# Use inputs and outputs in Windows recorder (V1) flows
 
 Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that UI flows automates.
 

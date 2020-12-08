@@ -1,6 +1,6 @@
 ---
-title: Learn to edit desktop UI flows | Microsoft Docs
-description: Learn to edit desktop UI flows.
+title: Learn to edit Windows recorder (V1) flows | Microsoft Docs
+description: Learn to edit Windows recorder (V1) flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,9 +22,9 @@ search.audienceType:
   - enduser
 ---
 
-# Edit desktop UI flows
+# Edit Windows recorder (V1) flows
 
-Desktop UI flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
+Windows recorder (V1) flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
 A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
@@ -431,7 +431,7 @@ You can perform these advanced operations by performing the following steps on a
    ![Condition card](../media/edit-desktop/condition-card.png)
 
 
-## Add a recording of a remote computer using image recognition (Preview)
+## Add a recording of a remote computer using image recognition 
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-preview-features-expect-changes.md)]
 
@@ -442,7 +442,7 @@ available when recording a remote computer through the Remote Desktop Connection
 
 ## What is image recognition?
 
-Currently, desktop UI flows are primarily recorded using accessibility APIs (UI
+Currently, Windows recorder (V1) flows are primarily recorded using accessibility APIs (UI
 Automation and WinAppDriver) to detect the controls in the Microsoft Windows UI tree.​ Sometimes, the UI tree isn't available, such as with Web-based or Java apps. The UI tree may may be unreliable, such as when the IDs of a control change frequently or between
 sessions. 
 

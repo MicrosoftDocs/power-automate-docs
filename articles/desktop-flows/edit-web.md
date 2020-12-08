@@ -1,6 +1,6 @@
 ---
-title: Learn to how to edit Web UI flows | Microsoft Docs
-description: Learn to how to edit Web UI flows.
+title: Learn to how to edit Selenium IDE flows | Microsoft Docs
+description: Learn to how to edit Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Edit Web UI flows
+# Edit Selenium IDE flows
 
-Web UI flows automate websites running in the [Microsoft Edge (version 80 or later)](https://www.microsoft.com/edge/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Web UI flows.
+Selenium IDE flows automate websites running in the [Microsoft Edge (version 80 or later)](https://www.microsoft.com/edge/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Selenium IDE flows.
 
 ## Edit in Selenium IDE
 
-Use the Selenium IDE to edit your Web UI flows.
+Use the Selenium IDE to edit your Selenium IDE flows.
 
 >[!NOTE]
 >Editing in the Selenium IDE is aimed at advanced users and developers.
@@ -46,5 +46,5 @@ This advanced capability lets you use syntax like \${foo.bar} to access the bar 
 
 ## Next steps
 
-- [Create Web UI flows](create-web.md)
+- [Create Selenium IDE flows](create-web.md)
 - [Run UI flows](run-desktop-flow.md)

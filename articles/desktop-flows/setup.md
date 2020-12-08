@@ -216,7 +216,7 @@ Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)
 Finnish		|Korean		|Serbian (Latin, Serbia)
 
 >[!NOTE]
->Power Automate Desktop (preview) is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
+>Power Automate Desktop  is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
 
 
 ## Uninstall Power Automate Desktop

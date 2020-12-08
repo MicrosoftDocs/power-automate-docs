@@ -1,6 +1,6 @@
 ---
-title: Learn to create desktop UI flows | Microsoft Docs
-description: Learn to create desktop UI flows for Windows applications.
+title: Learn to create Windows recorder (V1) flows | Microsoft Docs
+description: Learn to create Windows recorder (V1) flows for Windows applications.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create and test desktop UI flows
+# Create and test Windows recorder (V1) flows
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 

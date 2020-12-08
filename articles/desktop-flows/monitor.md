@@ -29,6 +29,6 @@ For an overview of the UI flows in your environment, visit the [Microsoft Power 
 ## Learn more
 
 - Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
-- [Create desktop UI flows](create-desktop.md).
-- [Create Web UI flows](create-web.md).
+- [Create Windows recorder (V1) flows](create-desktop.md).
+- [Create Selenium IDE flows](create-web.md).
 - Run [UI flows](run-desktop-flow.md).

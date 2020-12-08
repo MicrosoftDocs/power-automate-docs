@@ -121,7 +121,7 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 
     ![The settings option ](../media/run-desktop-flow/settings.png "The settings option")
 
-1. Turn on the **Secure Inputs (Preview**) and **Secure Outputs (Preview)** properties to prevent these settings from being shown in the logs.
+1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these settings from being shown in the logs.
 
    ![Secure inputs and outputs](../media/run-desktop-flow/secure-outputs-secure-inputs.png "Secure inputs and outputs")
 
@@ -133,7 +133,7 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 
    
       >[!TIP]
-      >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text (Preview)** in the **Settings**.
+      >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text** in the **Settings**.
 
       ![Pass outputs to UI flow ](../media/run-desktop-flow/pass-to-desktop-flow.png "UI flow inputs")
 

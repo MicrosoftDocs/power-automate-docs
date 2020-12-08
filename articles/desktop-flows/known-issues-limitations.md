@@ -1,6 +1,6 @@
 ---
-title: Known issues and limitations with Power Automate Desktop (Preview) | Microsoft Docs
-description: This article describes the known issues and limitations with Power Automate Desktop (Preview).
+title: Known issues and limitations with Power Automate Desktop  | Microsoft Docs
+description: This article describes the known issues and limitations with Power Automate Desktop .
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues and limitations with Power Automate Desktop (Preview)
+# Known issues and limitations with Power Automate Desktop 
 
 
 
-This article provides details about the known issues and limitations in Power Automate Desktop (preview).
+This article provides details about the known issues and limitations in Power Automate Desktop.
 
 ## Datatables
 

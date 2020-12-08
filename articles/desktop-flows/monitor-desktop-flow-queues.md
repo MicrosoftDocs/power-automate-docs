@@ -1,5 +1,5 @@
 ---
-title: Monitor desktop flow queues (preview) | Microsoft Docs
+title: Monitor desktop flow queues  | Microsoft Docs
 description: Monitor desktop flow queues
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Monitor desktop flow queues (preview)
+# Monitor desktop flow queues 
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -40,7 +40,7 @@ When multiple runs are queued, the execution ordering is based on the run priori
 
 ## View list of all desktop flow run queues
 1. Sign into Power Automate
-1. Select **Monitor** > **Desktop flow queues (preview)**
+1. Select **Monitor** > **Desktop flow queues**
 
   ![List of all desktop flow run queues](media\monitoring\monitor-desktop-flow-queues-2.png)
 

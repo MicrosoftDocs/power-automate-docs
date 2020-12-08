@@ -25,7 +25,7 @@ search.audienceType:
 # Use Softomotive's WinAutomation with UI flows
 
 >[!IMPORTANT]
->See the [Power Automate Desktop (preview)](./desktop/introduction.md) documentation to learn about the evolution of WinAutomation.
+>See the [Power Automate Desktop](./desktop/introduction.md) documentation to learn about the evolution of WinAutomation.
 
 Here are some tips before you start using WinAutomation with UI flows.
 
@@ -102,11 +102,11 @@ You can now create your own WinAutomation Processes and test them locally.
 
       ![Delete record app step](../media/create-processes/delete-record-step.png)
 
-1.  Select **New step**, select **WinAutomation**, and then select the **Run WinAutomation (preview)** action.
+1.  Select **New step**, select **WinAutomation**, and then select the **Run WinAutomation ** action.
 
       ![Select run WinAutomation](../media/create-processes/select-run-winautomation.png)
 
-1.  In the **Run WinAutomation (preview)** card, fill in the Process Path and any optional command line arguments for the WinAutomation Process that you want to run.
+1.  In the **Run WinAutomation** card, fill in the Process Path and any optional command line arguments for the WinAutomation Process that you want to run.
 
       ![WinAutomation card](../media/create-processes/winautomation-card.png)
 
@@ -253,7 +253,7 @@ ProcessRobot
 -   Learn more at [WinAutomation Academy](https://academy.softomotive.com/).
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
--   Learn to [create desktop UI flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
+-   Learn to [create Windows recorder (V1) flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
 -   Learn how to [run UI flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
 -   Learn to [manage UI flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
 -   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).

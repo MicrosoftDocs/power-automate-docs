@@ -1,6 +1,6 @@
 ---
-title: Use inputs and outputs in Web UI flows | Microsoft Docs
-description: Use inputs and outputs in Web UI flows.
+title: Use inputs and outputs in Selenium IDE flows | Microsoft Docs
+description: Use inputs and outputs in Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use inputs and outputs in Web UI flows
+# Use inputs and outputs in Selenium IDE flows
 
 You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 
@@ -64,6 +64,6 @@ script)
 
 ## Next steps
 
-- Learn how to [create Web UI flows](create-web.md).
+- Learn how to [create Selenium IDE flows](create-web.md).
 - Learn how to [trigger UI flows](run-desktop-flow.md).
 

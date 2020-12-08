@@ -52,6 +52,6 @@ Follow these steps to see the details for a UI flow:
 
 ## Learn more
 
-- Learn to [create desktop UI flows](create-desktop.md).
-- Learn to [create Web UI flows](create-web.md).
+- Learn to [create Windows recorder (V1) flows](create-desktop.md).
+- Learn to [create Selenium IDE flows](create-web.md).
 - Learn how to run [UI flows](run-desktop-flow.md).

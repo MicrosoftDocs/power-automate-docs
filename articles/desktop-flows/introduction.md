@@ -1,5 +1,5 @@
 ---
-title: Introduction to Power Automate Desktop (Preview) | Microsoft Docs
+title: Introduction to Power Automate Desktop  | Microsoft Docs
 description: Introduction to Power Automate Desktop
 author: mariosleon
 ms.service: flow
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to Power Automate Desktop (Preview)
+# Introduction to Power Automate Desktop 
 
 
 
