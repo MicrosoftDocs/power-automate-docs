@@ -16,7 +16,7 @@ search.audienceType:
 
 # Run attended and unattended desktop flows
 
-After you've created and tested a desktop flow, you can run it from an event, schedule, or button. To make this possible, add your desktop flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
+After you've created and tested a desktop flow, you can run it from an event, schedule, or button. To make this possible, add your desktop flow to an [automated flow](../get-started-logic-flow.md), a [instant flow](../introduction-to-button-flows.md), a [scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
 
 ## Prerequisites
 
@@ -32,11 +32,11 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 ## Run desktop flows unattended or attended
 
-When you create desktop flows from the portal, you run them either in **attended** or **unattended** mode. Unattended is best for applications that do not need human supervision.
+When you create desktop flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that do not need human supervision.
 
-When running unattended, Power Automate automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, Power Automate signs out from the device and reports its activity in Power Automate.
+When running unattended, Power Automate automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, Power Automate signs out from the device and reports its activity.
 
-When running attended, Power Automate will use an existing Windows user session.
+When running attended, Power Automate uses an existing Windows user session.
 
 When you add a desktop flow to a cloud flow, you can choose whether you want your dekstop flow to run attended or unattended. Here are some key differences between attended and unattended runs:
 
