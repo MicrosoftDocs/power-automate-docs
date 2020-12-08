@@ -41,6 +41,16 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
 
 ![The comment button](./media/recording-flow/comment-button.png)
 
+### Known issues and limitations
+
+- **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
+
+- **Workarounds**: None.
+
+- **Issue**: The Desktop recorder may not record all steps from the Start Menu or system tray.
+
+- **Workarounds**: None.
+
  ## Web recorder
 
 In the flow designer, select **Web recorder** in the toolbar to record web-related actions:
@@ -56,6 +66,13 @@ The recorder keeps track of your activity within the web browser, generating a s
 ![Recording a web flow](./media/recording-flow/recording-web-flow.png)
 
 Similarly to the desktop recorder, comments may be added through the **+** button, while the recroding can be paused, resumed, and reset using the buttons at the top right-hand side.
+
+### Known issues and limitations
+
+- **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
+
+
+- **Workarounds**: None.
 
  ## Recording vs building a desktop flow
 

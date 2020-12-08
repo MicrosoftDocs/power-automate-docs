@@ -39,3 +39,12 @@ Select **Add a new folder** and specify a name to create a folder in Images. Sor
 To rename or delete images or folders, right-click on an item and select the appropriate function. Select the image thumbnail to open and view it.
 
 ![rename delete images](\media\images\rename-delete-images.png)
+
+### Known issues and limitations
+
+- **Issue**: In some cases, when you rename an image, actions that use the renamed image may no longer work as you might expect.
+
+
+- **Workarounds**: Open and save one of the actions that uses the image resolves the issue
+
+
