@@ -52,7 +52,7 @@ Advanced parameters let you change:
 You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** > **UI flows**.
+1. Select **My flows** > **Desktop flows**.
 1. Select the UI flow that you want to edit.
 
    ![Image that displays the UI flow to be edited](../media/edit-desktop/select-desktop-flow.png)
@@ -88,7 +88,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 ## Provide command line arguments at launch
 
-After you record your UI flows actions, you can provide command line arguments for the apps that your UI flows launch. 
+After you record your Windows recorder (V1) flows actions, you can provide command line arguments for the apps that your UI flows launch. 
 
 Follow these steps to add command line arguments to the apps that your UI flow launches:
 

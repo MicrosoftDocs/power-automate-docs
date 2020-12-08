@@ -47,4 +47,4 @@ This advanced capability lets you use syntax like \${foo.bar} to access the bar 
 ## Next steps
 
 - [Create Selenium IDE flows](create-web.md)
-- [Run UI flows](run-desktop-flow.md)
+- [Run Windows recorder (v1) flows](run-desktop-flow.md)
