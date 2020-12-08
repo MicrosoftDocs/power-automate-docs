@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create and test your Selenium IDE flows
 
-Follow these steps to create a simple Web UI flow.
+Follow these steps to create a simple Selenium IDE flow.
 
 ## Create a Selenium IDE flow
 
@@ -40,7 +40,7 @@ Follow these steps to create a simple Web UI flow.
     
    ![Select Web app](../media/create-web-desktop-flow/select-web-app.png "Select Web app")
 
-1. Enter a name for your UI flow into the **Flow name** field.
+1. Enter a name for your Selenium IDE flow into the **Flow name** field.
 
 1. Enter the URL for the Website you want to automate into the **Base URL** field, and then select **Launch recorder**.
 
@@ -69,12 +69,12 @@ Follow these steps to create a simple Web UI flow.
 
     ![Stop button](../media/create-web-desktop-flow/stop-button.png "Stop button" )
 
-1. Select the **Run current test** button from the top left side of the screen to see the UI flow you just created run.
+1. Select the **Run current test** button from the top left side of the screen to see the Selenium IDE flow you just created run.
 
     ![Run current test](../media/create-web-desktop-flow/run-test.png "Run current test")
 
    >[!TIP]
-   >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your UI flow is deployed.  
+   >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your Selenium IDE is deployed.  
   
 1. Select the **Save project** button in the top right of the Selenium IDE. This closes, and then uploads the project.
 
@@ -93,7 +93,7 @@ To address this, the user needs to manually edit the script to insert the comman
 
 **Other limitations**
 
-- Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flow for each type and then combine them in a cloud flow.
+- Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate desktop flows for each type and then combine them in a cloud flow.
 
 - Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
 
@@ -103,14 +103,14 @@ To address this, the user needs to manually edit the script to insert the comman
 
 - Right click is not supported. 
 
-- Additional Web UI flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
+- Additional Selenium IDE input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
 
 - If the .side file contains multiple test projects, only the first one that was created runs. 
    
    >[!TIP]
    >Note that the Selenium IDE orders the tests by name, not by creation date, so the first test created may not be the first one in the list.
 
--   Playback directly in the Selenium IDE might not behave as intended. However, playback at runtime through the UI flow infrastructure behaves correctly.
+-   Playback directly in the Selenium IDE might not behave as intended. However, playback at runtime behaves correctly.
 
 ## Next steps
 

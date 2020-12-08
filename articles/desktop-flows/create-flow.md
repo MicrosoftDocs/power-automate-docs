@@ -21,7 +21,7 @@ search.audienceType:
 
 
 
-1. To create a UI flow in Power Automate Desktop, open the app and select **New Flow**.
+1. To create a desktop flow in Power Automate Desktop, open the app and select **New Flow**.
 
    ![New flow button](\media\create-flow-console\console.png)
 
@@ -55,13 +55,13 @@ search.audienceType:
 
    ![action search](\media\design-flow\action-search.png)
 
-1. In the action, under Run mode select **Attended - Runs when you're signed in** and under UI flow select **+Create a new UI flow**.
+1. In the action, under Run mode select **Attended - Runs when you're signed in** and under Desktop flow select **Create a new UI flow**.
 
-   ![run UI flow action properties](\media\design-flow\run-desktop-flow-v2-action-properties.png)
+   ![run Windows recorder (V1) flow properties](\media\design-flow\run-desktop-flow-v2-action-properties.png)
 
 1. Enter a desktop flow name or one will be generated and select **Launch app**.
 
-   ![build UI flow dialog box](\media\design-flow\build-UI-flow-dialog.png)
+   ![Dialog box](\media\design-flow\build-UI-flow-dialog.png)
 
 1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
@@ -148,9 +148,9 @@ search.audienceType:
 
    ![pad portal dialog box keep working](\media\design-flow\pad-portal-dialog-keep-working.png)
 
-1. Select the new UI flow in the action, and enter **Greece** into **CountryName**.
+1. Select the new desktop flow in the action, and enter **Greece** into **CountryName**.
 
-   ![run UI flow action properties 2](\media\design-flow\run-desktop-flow-v2-action-properties-2.png)
+   ![run desktop flow action properties 2](\media\design-flow\run-desktop-flow-v2-action-properties-2.png)
 
 1. Select **Save** to save the flow and then select **Test**.
 

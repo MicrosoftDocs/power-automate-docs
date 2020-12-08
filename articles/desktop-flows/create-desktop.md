@@ -109,7 +109,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
  >[!IMPORTANT]
  >For best results, do not interact with your device for the duration of playback.
 
-1. Select **Save and exit** to save your UI flow.
+1. Select **Save and exit** to save your desktop flow.
 
 ## Known issues and solutions
 

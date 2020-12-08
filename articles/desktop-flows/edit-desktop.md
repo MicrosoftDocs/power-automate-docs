@@ -27,7 +27,7 @@ search.audienceType:
 Windows recorder (V1) flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
-A desktop UI flow. [Create a desktop UI flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
+A desktop Windows recorder (V1) flow. [Create a Windows recorder (V1) flow now](create-desktop.md#create-and-test-desktop-ui-flows) if you don't have one to edit.
 
 ## Edit actions
 
@@ -43,19 +43,19 @@ You can edit your recording to:
 
 Advanced parameters let you change:
 
--  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your UI flow. You can also [add delay actions](edit-desktop.md#add-a-delay) explicitly so that they can be used in loops, for example.
+-  The delay after the action is performed. For example, you can add a one second delay by changing PT0S to PT1S. This can be useful when the target application has a slow response time that doesn’t complete before the next step of your Windows recorder (V1) flow. You can also [add delay actions](edit-desktop.md#add-a-delay) explicitly so that they can be used in loops, for example.
 -   The [selector](edit-desktop.md#set-the-selector) for the target user interface element.
 
 
 ## Add a recording
 
-You may want to record your UI flow in multiple sessions. After you've completed your first recording you can proceed as follows:
+You may want to record your Windows recorder (V1) flowin multiple sessions. After you've completed your first recording you can proceed as follows:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **Desktop flows**.
-1. Select the UI flow that you want to edit.
+1. Select the Windows recorder (V1) flowthat you want to edit.
 
-   ![Image that displays the UI flow to be edited](../media/edit-desktop/select-desktop-flow.png)
+   ![Image that displays the Windows recorder (V1) flowto be edited](../media/edit-desktop/select-desktop-flow.png)
 
 1. Select **Edit**. 
 1. Select **New step**.
@@ -84,15 +84,15 @@ You may want to record your UI flow in multiple sessions. After you've completed
 1. Select **Record** from the recorder control.
 
 1. Perform the steps in the user interface of the app you are recording, and then select **Done** on the recorder control.
-1. Select **Save**, and then test your UI flow.\
+1. Select **Save**, and then test your Windows recorder (V1) flow.
 
 ## Provide command line arguments at launch
 
 After you record your Windows recorder (V1) flows actions, you can provide command line arguments for the apps that your desktop flows launch. 
 
-Follow these steps to add command line arguments to the apps that your UI flow launches:
+Follow these steps to add command line arguments to the apps that your Windows recorder (V1) flow launches:
 
-1.	Record a UI flow with the desktop recorder. 
+1.	Record a Windows recorder (V1) flow with the desktop recorder. 
 1.	Select **Done** on the recorder, select the application launch action to expand it.
    
     The screenshot uses Notepad++ as an example. 
@@ -129,7 +129,7 @@ After you create a variable, you can perform other tasks, for example:
 
 Follow these steps to create and use variables in a UI flow:
 
-1. Go to the beginning of the UI flow and select **Add an action**.
+1. Go to the beginning of the Windows recorder (V1) flow and select **Add an action**.
 
    ![Select add an action](../media/edit-desktop/add-variable-add-action.png "Select add an action")
 
@@ -150,7 +150,7 @@ Follow these steps to create and use variables in a UI flow:
 
 ## Copy and paste steps
 
-You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location within the same UI flow.  
+You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location within the same Windows recorder (V1) flow.  
 
 Power Automate designer automatically renames the copied actions and scopes with a unique name. If the copied scope contains another scope, the nested structure is retained when you paste it from **My clipboard**. 
 
@@ -166,7 +166,7 @@ Follow these steps to copy and then paste actions and scopes:
 1. Hover over the target location, and then select **Add an action**. 
 
    >[!TIP]
-   >You can select **Add an action** directly if it is at the end of the scope or UI flow.
+   >You can select **Add an action** directly if it is at the end of the scope or Windows recorder (V1) flow.
       
    ![Add an action selected](../media/edit-desktop/add-copied-action.png "Add an action selected")
 
@@ -208,14 +208,14 @@ To address this instance issue, users have two options:
 
 ## Add a loop
 
-Windows recorder (V1) supports arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a cloud flow to your UI flow, including complex arrays from a SharePoint list, for example.
+Windows recorder (V1) supports arrays. Use an array, to add a loop to perform repetitive steps in a Windows recorder (V1) flow. You can pass in different types of arrays from a cloud flow to your UI flow, including complex arrays from a SharePoint list, for example.
 
 >[!NOTE]
->You must edit an existing UI flow to add a loop.
+>You must edit an existing Windows recorder (V1) flow to add a loop.
 
 Here are the steps to create a loop in a UI flow:
 
-1. Edit the UI flow to which you want to add the loop.
+1. Edit the Windows recorder (V1) flow to which you want to add the loop.
 
    ![Select the edit button for the UI flow](../media/edit-desktop/edit-desktop-flow-loop.png "Select the edit button for the UI flow")
 
@@ -264,14 +264,14 @@ Here are the steps to create a loop in a UI flow:
 ### Known Limitations:
 1.	Loops require static selectors. This means that the user interface (UX) element on which the repetitive action happens must not change. 
 1.	Output operations are not currently supported.
-1.	For complex array objects that need to be passed from a cloud flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the UI flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
+1.	For complex array objects that need to be passed from a cloud flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the Windows recorder (V1) flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
 1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘<value>’]**, where <value> is name of the specific object within the input array.
 
 ## Add a delay
 
 You can add delays in Windows recorder (V1) flows to help control the flow run.
 
-Follow these steps to add a delay to a UI flow that you've recorded.
+Follow these steps to add a delay to a Windows recorder (V1) flow that you've recorded.
 
 1. In the desired spot, hover over the arrow and select **Insert a new step**. Alternatively, for adding it to the end of the scope or UI flow, select **Add an action** directly. 
 
@@ -293,14 +293,14 @@ Follow these steps to add a delay to a UI flow that you've recorded.
 
    ![Define the delay](../media/edit-desktop/delay-details.png)
 
-   The delay action is added to the UI flow. Now, when the flow runs, there will be a delay as you've defined before the next action runs.
+   The delay action is added to the Windows recorder (V1) flow. Now, when the flow runs, there will be a delay as you've defined before the next action runs.
 
 
 ## Add a retry policy
 
 By default, Windows recorder (V1) retries failed UI automation steps using the default retry settings and timeout value.
 
-Follow these steps to set your own retry policy on specific steps after you've recorded your UI flow.
+Follow these steps to set your own retry policy on specific steps after you've recorded your Windows recorder (V1) flow.
 
 1. Select **...** on the step that you want to change the retry policy.
 1. Select **Settings**.
@@ -316,7 +316,7 @@ Follow these steps to set your own retry policy on specific steps after you've r
 
    ![Retry policy card](../media/edit-desktop/retry-policy-card.png)
 
-   The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before canceling it. Once the action is canceled, the retry policy begins. The default timeout value is five minutes. 
+   The timeout is a value you can specify to set the length of time the Windows recorder (V1) flow should try to perform an action that it’s unable to complete before canceling it. Once the action is canceled, the retry policy begins. The default timeout value is five minutes. 
 
    There are three types of retries in Windows recorder (V1) flows.
 
@@ -355,9 +355,9 @@ Follow these steps to add a manual action:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **Desktop flows**.
-1. Select the UI flow that you want to edit.
+1. Select the Windows recorder (V1) flow that you want to edit.
 
-   ![The UI flow to edit](../media/edit-desktop/select-desktop-flow.png)
+   ![The Windows recorder (V1) flow to edit](../media/edit-desktop/select-desktop-flow.png)
 
 1. Select **Edit**. 
 1. Select the recording card that contains the steps to which you want to add a new step.
@@ -408,17 +408,17 @@ Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-wina
 
 Remove the first element (everything before /Window) before using the result in **elementXPath** of the selector.
 
-Test your UI flow to confirm that your selector works correctly.
+Test your Windows recorder (V1) flow to confirm that your selector works correctly.
 
 ## Use advanced controls
 
 You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your desktop flows.
 
-You can perform these advanced operations by performing the following steps on an existing UI flow.
+You can perform these advanced operations with the following steps on an existing Windows recorder (V1) flow.
 
-1. Select the UI flow you have created > **More commands** (...) > **Edit**.
+1. Select the Windows recorder (V1) flow you have created > **More commands** (...) > **Edit**.
 
-1. Select **+** > **Add an action** on the down arrow of UI flow step to which you want to add logic.
+1. Select **+** > **Add an action** on the down arrow of Windows recorder (V1) flow step to which you want to add logic.
 
    ![Add an action](../media/edit-desktop/add-action.png)
 
@@ -426,7 +426,7 @@ You can perform these advanced operations by performing the following steps on a
 
    ![Built-in](../media/edit-desktop/select-built-in.png)
 
-1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, you can use any output that's generated from the previous UI flow steps.
+1. Complete the expression that needs to be evaluated. You may use dynamic content and expressions to evaluate your condition and switch controls. Additionally, you can use any output that's generated from the previous Windows recorder (V1) flow steps.
 
    ![Condition card](../media/edit-desktop/condition-card.png)
 
@@ -452,11 +452,11 @@ automated.
 
 ## Use image recognition to record a remote computer
 
-1. In a new or existing UI flow, go to the Inputs tab and create two new **sensitive text** inputs, one for the username and one for the password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the UI flow from another flow, without them being stored or logged by the UI flow itself.
+1. In a new or existing Windows recorder (V1) flow, go to the Inputs tab and create two new **sensitive text** inputs, one for the username and one for the password that will be used to log in to the remote device. Sensitive text inputs allow you to pass in the values dynamically when testing or calling the Windows recorder (V1) flow from another flow, without them being stored or logged by the Windows recorder (V1) flow itself.
 
    ![Sensitive text ](../media/create-remote-desktop/ir-sensitive-text.png)
 
-1. Follow the steps in **Add a recording** to launch the recorder control for a new or existing UI flow.
+1. Follow the steps in **Add a recording** to launch the recorder control for a new or existing Windows recorder (V1) flow.
 
 1. Use the Remote Desktop app to connect to the remote computer.
 
@@ -472,13 +472,13 @@ automated.
 
 ![Username and password sensitive text](../media/create-remote-desktop/ir-launch-emote_desktop-session.png)
 
-1. Select **Save**, and then test your UI flow.
+1. Select **Save**, and then test your Windows recorder (V1) flow.
 
 >[!IMPORTANT]
->When you call this UI flow from an automated flow, it is recommended to use a key management solution such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to retrieve the username and password and then pass them to the **sensitive text** inputs in the UI flow dynamically, rather than storing them in the flow itself. 
+>When you call this Windows recorder (V1) flow from an automated flow, it is recommended to use a key management solution such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to retrieve the username and password and then pass them to the **sensitive text** inputs in the Windows recorder (V1) flow dynamically, rather than storing them in the flow itself. 
 
 >[!TIP]
-> Enable **Secure Inputs** in the **Settings** menu for the **Run a UI flow for desktop** action in the flow that is calling the UI flow. This ensures that the inputs are not stored in the run history.
+> Enable **Secure Inputs** in the **Settings** menu for the **Run a flow built with Windows recorder (V1)** action in the flow that is calling the Windows recorder (V1) flow. This ensures that the inputs are not stored in the run history.
 
 ## Use image recognition to record on Citrix
 
@@ -486,7 +486,7 @@ There are two options to record on Citrix with Windows recorder (V1).
 
 ### Option 1: record a Citrix application or desktop already open on your machine
 
-1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing UI flow.
+1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing Windows recorder (V1) flow.
 1.	Use the Citrix app or remote desktop to connect to the remote computer.
 
    ![View of the Citrix app](../media/edit-desktop/citrix-app-remote.png)
@@ -500,7 +500,7 @@ There are two options to record on Citrix with Windows recorder (V1).
 
 ### Option 2: record the launch of your Citrix application / desktop from your Citrix workspace
 
-1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing UI flow.
+1.	Follow the steps in [Add a recording](#add-a-recording) to launch the recorder control for a new or existing Windows recorder (V1) flow.
 1.	Open the Citrix workspace from the taskbar.
 1.	Enter your password, and then and select **Log on**.
   
@@ -519,7 +519,7 @@ There are two options to record on Citrix with Windows recorder (V1).
    >If you recorded the log-on step, the designer displays three Citrix scope applications. This is expected because the log-on window is a different application from the Citrix workspace.
 
    >[!TIP]
-   >In test and attended mode, confirm that your Citrix workspace is closed before you playback your UI flow. From the notification bar, right-click on the Citrix icon and the select **Exit** to close the workspace.
+   >In test and attended mode, confirm that your Citrix workspace is closed before you playback your Windows recorder (V1) flow. From the notification bar, right-click on the Citrix icon and the select **Exit** to close the workspace.
 
 
 #### Troubleshooting
@@ -550,18 +550,18 @@ If you have problems using sensitive text in the login window:
 
 1.  Select **Done** on the recorder control.
 
-1.  Select **Save**, and then test your UI flow.
+1.  Select **Save**, and then test your Windows recorder (V1) flow.
 
 
 ### Known issues for Remote Desktop recordings
 
-1. Ensure that all required inputs (computer name, username, and password) are filled in and saved before recording further steps in the same UI flow.
+1. Ensure that all required inputs (computer name, username, and password) are filled in and saved before recording further steps in the same Windows recorder (V1) flow.
 
-1. To attach to an existing remote desktop session, the session must have been launched earlier in the same UI flow.
+1. To attach to an existing remote desktop session, the session must have been launched earlier in the same Windows recorder (V1) flow.
 
 1. The recommended way to launch the Remote Desktop Connection (RDC) when recording is from the Remote Desktop Connection app (mstc.exe) from the Start menu. If Windows Security actions are recorded in addition to the **Launch Remote Desktop** action, they should be removed from the designer so that playback is not interrupted (this can happen when the Remote Desktop session is launched from a shortcut).
 
-1. Playback can fail if the UI flow was recorded on a screen with screen scaling (Windows Settings > Display > Screen Scaling) set to a value other than 100%. As a workaround, ensure that screen scaling is set to 100% prior to recording.
+1. Playback can fail if the Windows recorder (V1) flow was recorded on a screen with screen scaling (Windows Settings > Display > Screen Scaling) set to a value other than 100%. As a workaround, ensure that screen scaling is set to 100% prior to recording.
 
 
 ## Handle error conditions
@@ -572,9 +572,9 @@ Here are the steps to do so.
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com) with your school or work account.
 1. Select **My flows** > **Desktop flows**.
-1. Select **More commands** (the three vertical dots for the UI flow you want to edit).
+1. Select **More commands** (the three vertical dots for the Windows recorder (V1) flow you want to edit).
 1. Select **Edit**.
-1. Select the down arrow that's located immediately before the UI flow step to which you want to add error handling, and then select **+** (Insert new step).
+1. Select the down arrow that's located immediately before the Windows recorder (V1) flow step to which you want to add error handling, and then select **+** (Insert new step).
    
    In the following image, we're inserting the new step before the **PostElementText 1** step. This means that if **PostElementText 1** fails, the alternate steps that you define next, run.
 
@@ -584,9 +584,9 @@ Here are the steps to do so.
 
     ![Image showing add a parallel branch and other options](../media/edit-desktop/add-parallel-branch.png)
 
-1. Select the action that you want to perform in the parallel branch if there's a failure when the UI flow runs.
+1. Select the action that you want to perform in the parallel branch if there's a failure when the Windows recorder (V1) flow runs.
 
-   You can select **Record app** to do a new recording for the parallel branch or select  **Terminate** from the **Built-in** actions to exit the UI flow exit gracefully if there's a failure.
+   You can select **Record app** to do a new recording for the parallel branch or select  **Terminate** from the **Built-in** actions to exit the Windows recorder (V1) flow exit gracefully if there's a failure.
 
     ![Image showing the parallel branch options](../media/edit-desktop/add-parallel-branch.png)
 
@@ -599,7 +599,7 @@ Here are the steps to do so.
 
     ![Image showing the run after options](../media/edit-desktop/run-after-options.png)
 
-    Note: You will not be able to save a UI flow that has both the main branch
+    Note: You will not be able to save a Windows recorder (V1) flow that has both the main branch
     and parallel branch set to execute on the same condition.
 
 
@@ -618,7 +618,7 @@ Here are some of the reasons why the default Windows UI automation framework mig
 >[!TIP]
 >Use the same scale and resolution and also maximize the target application during recording to improve the accuracy of coordinate-based playback.
 
-Follow these steps after you've recorded a UI flow script:
+Follow these steps after you've recorded a Windows recorder (V1) flow script:
 
 1. Expand the step that launches or attaches the application.
    

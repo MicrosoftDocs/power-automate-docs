@@ -98,7 +98,7 @@ You can now create your own WinAutomation Processes and test them locally.
     >[!TIP]
     >Learn more about [creating and running desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
 
-1.  Create a new desktop UI flow. Delete the default first step of “Record app”.
+1.  Create a new desktop flow. Delete the default first step of “Record app”.
 
       ![Delete record app step](../media/create-processes/delete-record-step.png)
 
@@ -116,9 +116,9 @@ You can now create your own WinAutomation Processes and test them locally.
    >[!TIP]
    >You can use desktop flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
 
-1.  You can now save and test your UI flow to see how it launches the WinAutomation Process.
+1.  You can now save and test your Windows recorder (V1) flow to see how it launches the WinAutomation Process.
 
-1.  You can then add the UI flow into a cloud flow. You can even connect to other Power Automate connectors and triggers.
+1.  You can then add the Windows recorder (V1) flow into a cloud flow. You can even connect to other Power Automate connectors and triggers.
 
 1.  You can then select *attended* or *unattended* as the run type.
 
@@ -131,14 +131,14 @@ You can now create your own WinAutomation Processes and test them locally.
     >[!IMPORTANT]
     >If you’re running desktop flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended desktop flows, click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
 
-1.  You can save and then run the flow and see it launch the WinAutomation Process. The UI flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
+1.  You can save and then run the flow and see it launch the WinAutomation Process. The Windows recorder (V1) flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
     >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](https://docs.microsoft.com/power-automate/desktop-flows/upgrade).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
-1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Power Automate UI flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.winautomation.com/en/process-properties.html).  
+1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.winautomation.com/en/process-properties.html).  
 
     ![Process properties screen](../media/create-processes/process-properties.png)
 

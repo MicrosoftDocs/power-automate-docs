@@ -24,7 +24,7 @@ search.audienceType:
 
 # Run attended and unattended UI flows
 
-After you've created and tested a UI flow, you can run it from an event, schedule, or button. To make this possible, add your UI flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
+After you've created and tested a Windows recorder (V1) flow, you can run it from an event, schedule, or button. To make this possible, add your Windows recorder (V1) flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
 
 ## Prerequisites
 
@@ -98,7 +98,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 When you define inputs and outputs within a UI flow, you can pass information from and to those inputs.
 
-1. When you add a UI flow to a cloud flow, you can see the list of inputs that were defined in the UI flow.
+1. When you add a UI flow to a cloud flow, you can see the list of inputs that were defined in the Windows recorder (V1) flow.
 
    ![UI flow inputs](../media/run-desktop-flow/inputs.png "UI flow inputs")
 
