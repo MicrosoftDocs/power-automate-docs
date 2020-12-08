@@ -241,4 +241,4 @@ Some of these data types are widely used throughout the application, such as **n
 ### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
-[XML data type properties.](/datatype-properties#xml-node) 
+[XML data type properties.](datatype-properties.md#xml-node) 
