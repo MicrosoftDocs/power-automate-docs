@@ -25,7 +25,7 @@ search.audienceType:
 # Use Softomotive's WinAutomation with desktop flows
 
 >[!IMPORTANT]
->See the [Power Automate Desktop](./desktop/introduction.md) documentation to learn about the evolution of WinAutomation.
+>See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.
 
 Here are some tips before you start using WinAutomation with desktop flows.
 
