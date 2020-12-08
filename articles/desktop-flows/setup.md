@@ -65,7 +65,7 @@ Follow these steps to install the Power Automate Desktop app:
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also installs the Power Automate Desktop app and third-party components.
 
-![Installation options image](../media/ui-flows-setup/installer-checkboxes.png)
+![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
 
 ### Set data collection options
 
@@ -75,7 +75,7 @@ During installation, you can change the default settings if you do not want to s
 
 After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image](../media/ui-flows-setup/screen.png)
+![Installation success image](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -338,6 +338,6 @@ You'll find feature-specific limitations included in the documentation for each 
 - Learn to [create Power Automate Desktop flows](create-flow.md).
 - Learn to [create Windows recorder (v1) flows](create-desktop.md).
 - Learn to [create Selenium IDE flows](create-web.md).
-- Learn how to run [desktop flows](run-ui-flow.md).
+- Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
