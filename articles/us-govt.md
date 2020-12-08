@@ -252,7 +252,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 ### See also
 
-- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
+- [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/overview).
 
 - [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
 

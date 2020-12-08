@@ -47,7 +47,7 @@ To see how that works, we'll use the **Send myself a reminder in 10 minutes** bu
 
 It's simple to add additional buttons to your collection.
 
-## Modify or delete a flow
+## Modify or delete a cloud flow
 If you decide that you want to modify or delete one of your flows, it's easy.
 
 1. Tap the **Flows** button, which is essentially the mobile management area for your flows.

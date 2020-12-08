@@ -75,13 +75,13 @@ conceptualContent:
     - title: Use UI flows for RPA
       links:
         - text: What is UI flows?
-          url: /power-automate/ui-flows/overview
+          url: /power-automate/desktop-flows/overview
           itemType: overview
         - text: Set up UI flows
-          url: /power-automate/ui-flows/setup
+          url: /power-automate/desktop-flows/setup
           itemType: how-to-guide
         - text: Use Power Automate Desktop (Preview)
-          url: /power-automate/ui-flows/desktop/introduction
+          url: /power-automate/desktop-flows/introduction
           itemType: concept
 
     - title: Use flows with Microsoft Teams
@@ -101,7 +101,7 @@ conceptualContent:
         - text: Use solutions to distribute flows
           url: /power-automate/overview-solution-flows
           itemType: overview
-        - text: Create a flow in a solution
+        - text: Create a cloud flow in a solution
           url: /power-automate/create-flow-solution
           itemType: overview
         - text: Implement healthy ALM using solutions
@@ -134,7 +134,7 @@ conceptualContent:
 
     - title: Support and licensing
       links:
-        - text: Troubleshoot a flow
+        - text: Troubleshoot a cloud flow
           url: /power-automate/fix-flow-failures
           itemType: how-to-guide
         - text: Power Automate community
