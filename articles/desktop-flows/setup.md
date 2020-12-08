@@ -112,6 +112,96 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >[!IMPORTANT]
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
+## Install Power Automate Desktop silently
+
+Follow these steps if you want to silently install Power Automate Desktop.
+
+Before you can install Power Automate Desktop silently, you must [Download the Power Automate Desktop
+installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+>[!NOTE]
+>The same installer is used for manual and silent installation of Power Automate Desktop.
+
+### Install Power Automate Desktop using the command line
+
+1. Download Power Automate Desktop.
+
+1. Open **Start**.
+
+1. Search for **command prompt**, and then run it as the administrator.
+
+   ![A screenshot that displays the command prompt on the start menu](../media/desktop-flows-setup/command-prompt.png)
+
+1. Change the directory to downloads (or to the directory into which you downloaded Power Automate Desktop):
+
+   For example, enter `cd C:\Users\JohnDoe\Downloads\`.
+
+1. Enter `Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA`.
+   
+   The installer runs and completes the setup of Power Automate Desktop.
+
+   >[!IMPORTANT]
+   > You must provide the `-ACCEPTEULA` argument to indicate that you accept the [terms and conditions](https://go.microsoft.com/fwlink/?linkid=2147215) for Power Automate Desktop.
+
+1.  You can now launch Power Automate Desktop from the Start menu.
+
+### Command line argument details
+
+You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
+
+   `Setup.Microsoft.PowerAutomateDesktop.exe -HELP`
+
+| Command              | Description                                                                                                                                                                        |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
+| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to create it.                                                                 |
+| - DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
+| -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
+| -HELP               | This argument displays all details about the arguments for the installer. prompt                                                                                                                   |
+
+Here's an example of a command line that installs Power Automate Desktop: 
+
+   `Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo`
+
+### Uninstall Power Automate Desktop using the command line
+
+Use the following command to silently uninstall Power Automate Desktop:
+   
+   `Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall`
+
+### Update your version of Power Automate Desktop
+
+To update Power Automate Desktop, use the same command line arguments that you use to install it. 
+
+>[!NOTE]
+>All your data and configuration, including telemetry, shortcuts, etc. are retained when you update Power Automate Desktop.
+
+### Install the gateway with PowerShell Cmdlets
+
+You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
+
+You can use [PowerShell Cmdlets](https://docs.microsoft.com/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
+
+>[!IMPORTANT]
+>To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated session
+
+<!-- Why do we need these? -->
+
+<!-- Internal documentation (only)
+
+How to deploy Power Automate Desktop via SCCM
+=============================================
+
+<http://gerryhampsoncm.blogspot.com/2013/03/sccm-2012-sp1-step-by-step-guide-part_20.html>
+
+<https://www.pelegit.co.il/deploy-exe-file-using-sccm/>
+
+How to deploy Power Automate Desktop with Intune
+================================================
+
+<https://www.robinhobo.com/how-to-deploy-win32-applications-with-microsoft-intune/> -->
+
+
 
 ## Setup desktop flows connections and machine credentials
 
