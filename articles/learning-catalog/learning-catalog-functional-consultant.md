@@ -1,10 +1,11 @@
 ---
 title: Functional Application Consultant learning catalog
 description: Find all the training options for Power Automate
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # Functional Application Consultant Learning Catalog

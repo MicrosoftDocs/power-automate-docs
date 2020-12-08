@@ -1,10 +1,11 @@
 ---
 title: Business and Technical Decision Makers learning catalog
 description: Find all the training options for Power Automation
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # Business and Technical Decision Makers Learning Catalog
