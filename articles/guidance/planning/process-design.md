@@ -1,6 +1,6 @@
 ---
-title: Planning a Power Automate project - Process design overview | Microsoft Docs
-description: When you design a process automation, the first step is to decide when and what to automate. This article explains about the different scenarios and benefits you may have for automation.
+title: Design phase for planning a Power Automate project | Microsoft Docs
+description: When you design a process automation, the first step is to decide when and what to automate. This article explains different scenarios and the benefits you can realize.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
@@ -19,126 +19,123 @@ first identify which part of the process to automate.
 
 ## Identifying automation areas
 
-The types of benefits you could potentially gain by automation falls into these
+The types of benefits you can potentially gain by automation falls into these
 categories:
 
--   Consistently apply standardized business rules
+- Consistently apply standardized business rules
 
--   Reduce manual work on repetitive processes
+- Reduce manual work on repetitive processes
 
--   Reduce human errors
+- Reduce human error
 
--   Gain efficiency in high volume transactions
+- Streamline approvals<!--note from editor: I modified this list to match the content below. -->
 
--   Efficiently move data between systems (reduce manual data entry)
+- Gain efficiency in high-volume transactions
 
--   Increase throughput
+- Efficiently move data between systems (reduce manual data entry)
 
--   Maximize use of available resources
+- Maximize the use of available resources
 
--   Streamline approvals
-
--   Reminders
+- Increase throughput
 
 ## Apply standardized business rules
 
-Business rules are the “if/then” logic that applies your business’ policies.
-Automating them ensures they will be followed consistently every time.
+Business rules are the if/then logic that applies your business policies.
+Automating them ensures that they'll be followed consistently every time.
 
-In our sample expense reporting scenario, there may be a business rule that if
-an expense report amount exceeds \$10,000, then it needs to also be approved by
-the CFO. By automating the process, Abhay ensures no large-amount expense report
-slips past un-noticed.
+In our sample expense reporting scenario, a business rule requires that if
+an expense report amount exceeds \$10,000, it needs to also be approved by
+the CFO. By automating the process, Abhay ensures that no high-dollar expense report
+will slip by unnoticed.
 
-## Automate repetitive processes 
+## Automate repetitive processes
 
 Automating repetitive processes can help your employees avoid mental and
 physical burnout. Processes that are done the same way every time should be high
 on your list to consider for automation.
 
 For example, Abhay the accountant must collect expense forms and receipts from
-everyone. The receipts could be a paper receipt from restaurants or paper
-invoices from vendors. Abhay would have to manually scan these papers into a PDF
-and store it. He also would need to enter what is written on the paper and post
+everyone. The receipts might be a paper receipt from a restaurant or paper
+invoices from vendors. Abhay has to manually scan these papers into a PDF file
+and store it. He also needs to enter what's written on the paper and post
 it in the financial system for every expense report submitted.
 
-## Reduce human errors 
+## Reduce human error
 
 Tasks like copying and pasting values from one system to another, or keying in
-data from paper forms, are potential processes where human errors could occur.
+data from paper forms, are processes where human errors can occur.
 
 An example case for the expense reporting scenario is where Abhay needs to
 reimburse cash to the employee by looking up the employee banking details, then
-accessing the banking system.
+accessing the banking system.<!--note from editor: The alt text doesn't match the image, and I'm not sure what to suggest in its place. Here and throughout this article, do you think the reader will understand the concepts behind these flowcharts and the dotted lines? Or should we use the :::image::: markup extension and give much more detailed descriptions?-->
 
-![Before reminder automation is setup](media/before-reminder-automation.png "Before reminder automation is setup")
+![Before reminder automation is set up](media/before-reminder-automation.png "Before reminder automation is set up")
 
-A different type of error is when people forget their tasks. Automation can be
-set up to remind those people to work on the task / processes that they are
+## Streamline approvals
+<!--note from editor: Suggest adding this heading to track with the list at the beginning of the article.-->
+A different type of error occurs when people forget to perform their tasks. You can set up automation to remind them to work on the task or process that they've been
 assigned.
 
-An example scenario is if Lee has submitted the expense report but Nick has not
+For example, Lee has submitted an expense report but Nick hasn't
 responded to the approval request for some time. An automation can be set up to
-remind Nick to make a decision (and even provide a button to respond directly
-from the reminder).
+remind Nick to make a decision, and even provide a button to respond directly
+from the reminder.<!--note from editor: Should there be a "before reminder automation" image in this section? Also - need more descriptive alt text here for sure.-->
 
-![After reminder automation is setup](media/before-reminder-automation.png "After reminder automation is setup")
+![After reminder automation is set up](media/after-reminder-automation.png "After reminder automation is set up")
 
 ## Gain efficiency in high-volume processes
 
-This type of process is closely tied to the repetitive processes. If a process
-must be done at high volumes, small improvements still could provide large
-impacts.
+High-volume processes are closely tied to repetitive processes. If a process
+must be done many times, even small improvements can have large impacts.
 
-For example, if the expense reporting scenario were for 1000 salespeople, each
-minute of improvement would be an equivalent of 2 working days’ worth of time
-reduction.
+For example, if the expense reporting scenario holds for 1,000 salespeople, each
+minute of improvement would equate to two working days' worth of time
+saved.<!--note from editor: This kind of comes out of the blue. Should there be a link to analyze-and-assess.md here, or at least some background information?-->
 
 ## Automate data entry 
 
-You might be manually entering data because there are two systems that do not
-talk to each other..
-
-In the example scenario, this would be where Abhay inputs data into the finance
-system by copying values from the submitted expense report.
+You might be manually entering data because you have two systems that don't
+talk to each other. In our expense reporting scenario,
+this is where Abhay inputs data into the accounting
+system by reentering values from the submitted expense report.<!--note from editor: Edits suggested. Also,the alt text needs work.-->
 
 ![Example scenario to improve efficiency](media/gain-efficiency-sample-scenario.png "Example scenario to improve efficiency")
 
-When all of the automations area are applied, the example below shows how an
+<!--note from editor: The following paragraph and image are redundant with the last section of this article. It makes more sense to have this kind of overall view of the scenario at the end of the article, but even there, I don't see how the image demonstrates the "automate data entry" concept. The "Add accounting codes" and "Enter & post transactions" boxes are still surrounded with a dashed red line as they are in the image directly above.
+
+When all of the automation areas are applied, the example below shows how an
 expense reporting business process will be covered by Power Automate.
 
 ![Scenario after efficiency improved](media/gain-efficiency-automated-scenario.png "Scenario after efficiency improved")
+-->
+## Maximize the use of available resources
 
-## Maximize use of available resources
-
-Another good automation candidate are those processes that could be run
-independent of human interaction.
-
-This type of process is not as easy to identify, so the best way is to imagine
+Another good automation candidate are those processes that can be run
+independent of human interaction. This type of process isn't as easy to identify, so the best way is to imagine
 whether there are processes that can be completed outside your normal business
-hours. The automation acts as a “multiplier” of your people and fully uses your
+hours. Such an automation acts as a "multiplier" of your people and fully uses your
 other resources (such as PCs).
 
-You may also use automation for processes that would take too much time compared
-to a human interaction, but is tolerable if done during night time when there is
-no rush for the automation to complete. For example, if a person starts their
-day by processing orders that came in online overnight, you could create
-automation that processes the orders as they come in so that your team can start
-fulfilling the orders in the morning.
+You might also use automation for processes that take too much time compared
+to a human interaction, but is tolerable if done during night time when there's
+no rush for the automation to finish. For example, if a person starts their
+day by processing orders that came in overnight, you might create
+automation that processes the orders as soon as they come in, so that your team can start
+fulfilling the orders first thing in the morning.<!--note from editor: Alt text suggested.-->
 
-![Maximize use of resources](media/maximize-use-of-resources.png "Maximize use of resources")
+![Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM](media/maximize-use-of-resources.png "Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM")
 
-## Increase throughput 
+## Increase throughput
 
-Similar to maximizing the use of available resources, but slightly different, is
-increasing the throughput of a particular process. With this type of automation,
-your current process co-exists with the automation in parallel.
+Similar to maximizing the use of available resources, automation also helps you
+increase the throughput of a particular process. With this type of automation,
+your current process can be performed by humans in parallel with the automation.<!--note from editor: Can you give an example? Alt text suggested.-->
 
-![Increasing throughput](media/increasing-throughput.png "Increasing throughput")
+![Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours](media/increasing-throughput.png "Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours")
 
 ## Example scenario
 
-When all of the automations area are applied, the example below shows how an
-expense reporting business process will be covered by Power Automate.
+When all of the automation areas are applied, the example below shows how an
+expense reporting business process will be covered by Power Automate.<!--the following image looks identical to gain-efficiency-automated-scenario.png, earlier in this article. And as I noted above, it's just not clear to me how the red dashed lines explain where the efficiency comes in.-->
 
 ![Diagram of process after automation is applied](media/process-after-automation-applied.png "Diagram of process after automation is applied")
