@@ -24,11 +24,11 @@ search.audienceType:
 
 # Use inputs and outputs in Windows recorder (V1) flows
 
-Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that UI flows automates.
+Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that Windows recorder (V1) automates.
 
 For example, you can use customer information from a SharePoint list as a source for input into your legacy accounting software. You can also pass sensitive input like a username or a password that are required to login to a legacy application using **Sensitive text inputs**.
 
-## Define inputs in the UI flows
+## Define inputs in the Windows recorder (V1) flows
 
 1. Select **Text** to define an input or select **Sensitive text** to define a sensitive text input. 
 
@@ -87,7 +87,7 @@ For example, you can use customer information from a SharePoint list as a source
 
 ## Use outputs to extract information from the app
 
-Outputs let you pass information from the legacy software that UI flows automates to an external destination such as a database or any [supported connector](https://flow.microsoft.com/connectors/).
+Outputs let you pass information from the legacy software that Windows recorder (V1) automates to an external destination such as a database or any [supported connector](https://flow.microsoft.com/connectors/).
 
 For example, you can extract customer information your legacy accounting software and add it to a SharePoint list.
 
@@ -137,9 +137,9 @@ During a recording, it is possible to copy a text in the clipboard of your compu
 
 If you do not need an output anymore, delete it by going to the associated action and removing the Output name in the dynamic value.
 
-## Test your UI flow
+## Test your Windows recorder (V1) flow
 
-Testing UI flows lets you validate your changes and the appropriate playback behavior.
+Testing Windows recorder (V1) flow lets you validate your changes and the appropriate playback behavior.
 
 1. (Optional) Enter a value in the input field. 
 
@@ -168,7 +168,4 @@ Testing UI flows lets you validate your changes and the appropriate playback beh
 
 ## Learn more
 
-- Learn how to [trigger UI flows](run-desktop-flow.md).
-
-
-
+- Learn how to [trigger desktop flows](run-desktop-flow.md).

@@ -1,6 +1,6 @@
 ---
-title: Introduction to UI flows | Microsoft Docs
-description: Introduction to UI flows.
+title: Introduction to other types of desktop flows | Microsoft Docs
+description: Introduction to other types of desktop flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,9 +22,13 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to UI flows
+# Introduction to other types of desktop flows
 
-UI flows brings Robotic Process Automation (RPA) capabilities to Power Automate. You can use UI flows to automate repetitive tasks in Windows and Web applications. UI flows records and plays back user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+>[!IMPORTANT]
+>This section covers legacy topics, including use of Windows recorder (V1) and Selenium IDE to create autoamtion scripts. If you are just starting your RPA automation project, we recommend that you use [Power Automate Desktop](introduction.md))
+
+
+Read on if you already have automation built using Windows recorder (V1) and Selenium IDE.
 
 <br/>
 
@@ -33,24 +37,24 @@ UI flows brings Robotic Process Automation (RPA) capabilities to Power Automate.
 
 You can jump right in:
 
-- [Create and test UI flows for desktop](create-desktop.md) 
-- [Create and test UI flows for Web applications](create-web.md)  
+- [Create and test Windows recorder (V1) flows for desktop applications](create-desktop.md) 
+- [Create and test Selenium IDE flows for Web applications](create-web.md)  
 
-### UI flows or connectors?
+### Desktop flows or connectors?
 
 With Power Automate, you can automate both modern applications with APIs, or legacy applications with incomplete or missing APIs. You can even combine legacy apps, modern apps, and manual processes in a single automation.
 
 | **Application type**      | **Feature** | **Benefits**     |
 |---------------------------|----------------------------|------------------|
 | Modern apps with APIs| Connectors                 | High reliability with software UI updates |
-| Legacy apps (no APIs)          | UI flows                    | Easy to create. Works if no API is available.   |
+| Legacy apps (no APIs)          | desktop flows                    | Easy to create. Works if no API is available.   |
 
 
-You will find your UI flows alongside automated, button, scheduled, and business process flows in [**My flows**](manage.md).
+You will find your desktop flows alongside automated, button, scheduled, and business process flows in [**My flows**](manage.md).
 
 ## Next steps
 
-- Learn how to [set up UI flows](setup.md). 
+- Learn how to [set up desktop flows](setup.md). 
 - Learn more about the [different types of flows](..\getting-started.md#types-of-flows) you can use to automate your workflows.
 
 

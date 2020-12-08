@@ -1,6 +1,6 @@
 ---
-title: View UI flows analytics in the Power Platform admin center | Microsoft Docs
-description: Learn about trends, usage patterns, and more analytics for UI flows in the Power Platform admin center.
+title: View desktop flows analytics in the Power Platform admin center | Microsoft Docs
+description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,9 +21,9 @@ search.audienceType:
   - flowadmin
 ---
 
-# View UI flows analytics in the Power Platform admin center
+# View desktop flows analytics in the Power Platform admin center
 
-As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with UI flows:
+As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with desktop flows:
 
 1. The Power Platform [admin center](https://docs.microsoft.com/power-platform/admin/analytics-desktop-flow).
 1. The [Center of Excellence (CoE) Starter Kit](https://docs.microsoft.com/power-platform/guidance/coe/setup).
@@ -31,7 +31,7 @@ As an admin, you will need to view the overall status of automation that runs in
 
 ## Learn more
 
-- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
+- Analyze the [desktop flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
 - [Create Windows recorder (V1) flows](create-desktop.md).
 - [Create Selenium IDE flows](create-web.md).
-- Run [UI flows](run-desktop-flow.md).
+- Run [desktop flows](run-desktop-flow.md).

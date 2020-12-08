@@ -1,6 +1,6 @@
 ---
-title: Learn how to create UI flows with WinAutomation | Microsoft Docs
-description: Learn how to create UI flows with WinAutomation.
+title: Learn how to create desktop flows with WinAutomation | Microsoft Docs
+description: Learn how to create desktop flows with WinAutomation.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,18 +22,18 @@ search.audienceType:
   - enduser
 ---
 
-# Use Softomotive's WinAutomation with UI flows
+# Use Softomotive's WinAutomation with desktop flows
 
 >[!IMPORTANT]
 >See the [Power Automate Desktop](./desktop/introduction.md) documentation to learn about the evolution of WinAutomation.
 
-Here are some tips before you start using WinAutomation with UI flows.
+Here are some tips before you start using WinAutomation with desktop flows.
 
 1.  Your Power Automate Attended RPA license (paid or trial) gives you full access to [WinAutomation](https://www.winautomation.com/). This document will guide you through getting WinAutomation Processes running with Power Automate.
 
-1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *flows* or *UI flows*.
+1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *cloud* or *desktop* flows*.
 
-1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a UI flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
+1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
 1.  Existing WinAutomation licensed users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home)
 
@@ -41,16 +41,16 @@ Here are some tips before you start using WinAutomation with UI flows.
 
 To run WinAutomation as part of Power Automate, you will need to:
 
-1.  Ensure your machine meets the [requirements for UI flows](https://docs.microsoft.com/power-automate/desktop-flows/setup#prerequisites).
+1.  Ensure your machine meets the [requirements for desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/setup#prerequisites).
 
-2.  Install the [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/setup) app, and then install and configure the on-premises data gateway.
+2.  Install the [desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/setup) app, and then install and configure the on-premises data gateway.
 
 >[!IMPORTANT]
->You must have the latest version of WinAutomation and UI flows to record, test, or run UI automation.
+>You must have the latest version of WinAutomation and Power Automate Desktop to record, test, or run UI automation.
 
 ## Licensing
 
-You need to have a Power Automate *Per user plan with attended RPA* to use UI flows and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
+You need to have a Power Automate *Per user plan with attended RPA* to use Power Automate Desktop and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
 
  
 ## Install WinAutomation
@@ -92,11 +92,11 @@ You can now create your own WinAutomation Processes and test them locally.
 ## Run WinAutomation Processes from Power Automate
 
 1.  Once you have created your automation Process in WinAutomation, you can run
-    it from a cloud flow in Power Automate through UI flows (desktop) attended or
-    unattended. 
+    it from a cloud flow in Power Automate in attended or
+    unattended mode. 
     
     >[!TIP]
-    >Learn more about [creating and running UI flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
+    >Learn more about [creating and running desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
 
 1.  Create a new desktop UI flow. Delete the default first step of “Record app”.
 
@@ -114,7 +114,7 @@ You can now create your own WinAutomation Processes and test them locally.
    >You must create and store WinAutomation Processes locally. *Process Path* is a case-sensitive path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the ProcessPath. Don’t put quotes around the Process Path.
 
    >[!TIP]
-   >You can use UI flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
+   >You can use desktop flows inputs and Dynamic content in the target WinAutomation Process path and arguments from Power Automate flow.
 
 1.  You can now save and test your UI flow to see how it launches the WinAutomation Process.
 
@@ -129,12 +129,12 @@ You can now create your own WinAutomation Processes and test them locally.
     >Do not pass sensitive text such as passwords through the command line arguments.
 
     >[!IMPORTANT]
-    >If you’re running UI flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended UI flows, click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
+    >If you’re running desktop flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended desktop flows, click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
 
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The UI flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
-    >If you get exceptions, you may not have the latest UI flows installed. Install the [latest UI flows](https://docs.microsoft.com/power-automate/desktop-flows/upgrade).
+    >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](https://docs.microsoft.com/power-automate/desktop-flows/upgrade).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
@@ -147,7 +147,7 @@ results.
 
 ## How to obtain an RPA trial license
 
-Log in to [Power Automate](https://flow.microsoft.com/) then selecting the **UI flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
+Log in to [Power Automate](https://flow.microsoft.com/) then select the **Desktop flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
 
 ![Start a trial or buy a license](../media/create-processes/trial-buy.png)
 
@@ -171,10 +171,10 @@ the user you’re logging in as has a valid Power Automate RPA license. To confi
 
 1.  Go to [Power Automate](https://flow.microsoft.com/) and sign in.
 
-1.  Select My flows on the left navigation bar.
+1.  Select **My flows** on the left navigation bar.
 
-1.  Select UI flows on the page on the right. You should see you can create new
-    UI flows there if you have the correct license.
+1.  Select desktop flows on the page on the right. You should see you can create new
+    desktop flows there if you have the correct license.
 
 1.  You may need to start a trial or ask your administrator to do it.
 
@@ -254,6 +254,6 @@ ProcessRobot
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create Windows recorder (V1) flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
--   Learn how to [run UI flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
--   Learn to [manage UI flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
+-   Learn how to [run desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
+-   Learn to [manage desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
 -   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).

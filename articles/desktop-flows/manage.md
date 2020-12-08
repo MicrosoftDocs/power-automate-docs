@@ -1,6 +1,6 @@
 ---
-title: Manage UI flows | Microsoft Docs
-description: Manage UI flows
+title: Manage desktop flows | Microsoft Docs
+description: Manage desktop flows
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,22 +22,22 @@ search.audienceType:
   - enduser
 ---
 
-# Manage UI flows
+# Manage desktop flows
 
-After you've created UI flows, you might need to view, edit, or just check on their status. To do this, go to the **UI flows** tab.
+After you've created desktop flows, you might need to view, edit, or just check on their status. To do this, go to the **Desktop flows** tab.
 
-## List of UI flows
+## List of desktop flows
 
 1. Sign into Power Automate.
-1. Select **My flows** > **UI flows**.
+1. Select **My flows** > **desktop flows**.
 
-   ![View all UI flows](../media/manage-desktop-flows/view-all.png "View all UI flows")
+   ![View all desktop flows](../media/manage-desktop-flows/view-all.png "View all desktop flows")
 
-From this section, you can create a new UI flow and edit or delete your existing UI flows.
+From this section, you can create a new UI flow and edit or delete your existing desktop flows.
 
 ## Details page
 
-For each of your UI flows, you can see its details by selecting its name from the list of UI flows. You then see details including:
+For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You then see details including:
 
 -   The run history with details of each run.
 -   The applications or Websites used in the UI flow.
@@ -45,8 +45,8 @@ For each of your UI flows, you can see its details by selecting its name from th
 Follow these steps to see the details for a UI flow:
 
 1. Sign into Power Automate.
-1. Select **My flows** > **UI flows**.
-1. Select any of your UI flows.
+1. Select **My flows** > **Desktop flows**.
+1. Select any of your desktop flows.
 
    ![View details](../media/manage-desktop-flows/view-details.png "View details")
 
@@ -54,4 +54,4 @@ Follow these steps to see the details for a UI flow:
 
 - Learn to [create Windows recorder (V1) flows](create-desktop.md).
 - Learn to [create Selenium IDE flows](create-web.md).
-- Learn how to run [UI flows](run-desktop-flow.md).
+- Learn how to run [desktop flows](run-desktop-flow.md).

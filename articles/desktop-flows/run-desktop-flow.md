@@ -1,6 +1,6 @@
 ---
-title: Run UI flows from other flows | Microsoft Docs
-description: Run UI flows from other flows in attended or unattended mode.
+title: Run desktop flows from other flows | Microsoft Docs
+description: Run desktop flows from other flows in attended or unattended mode.
 services: ''
 suite: flow
 documentationcenter: na

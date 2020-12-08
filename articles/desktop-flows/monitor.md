@@ -1,5 +1,5 @@
 ---
-title: Monitor UI flows in the Center of Excellence | Microsoft Docs
+title: Monitor desktop flows in the Center of Excellence | Microsoft Docs
 description: Learn about trends, usage patterns, and more.
 services: ''
 suite: flow
@@ -22,13 +22,13 @@ search.audienceType:
   - flowadmin
 ---
 
-# Monitor UI flows in the Center of Excellence
+# Monitor desktop flows in the Center of Excellence
 
-For an overview of the UI flows in your environment, visit the [Microsoft Power Platform Center of Excellence](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-monitor#desktop-flows).
+For an overview of the desktop flows in your environment, visit the [Microsoft Power Platform Center of Excellence](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-monitor#desktop-flows).
 
 ## Learn more
 
-- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
+- Analyze the [desktop flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
 - [Create Windows recorder (V1) flows](create-desktop.md).
 - [Create Selenium IDE flows](create-web.md).
-- Run [UI flows](run-desktop-flow.md).
+- Run [desktop flows](run-desktop-flow.md).

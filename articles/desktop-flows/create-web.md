@@ -1,6 +1,6 @@
 ---
-title: Learn to create UI flows for Websites | Microsoft Docs
-description: Learn to automate Web apps with UI flows.
+title: Learn to create Selenium IDE flows for Websites | Microsoft Docs
+description: Learn to automate Web apps with Selenium IDE.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,14 +25,14 @@ search.audienceType:
 
 Follow these steps to create a simple Web UI flow.
 
-## Create a Web UI flow
+## Create a Selenium IDE flow
 
 1. Open the [Microsoft
    Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
 
 1. Sign in with your work or school account if needed.
 
-1. Select **My flows** > **UI flows** > **New**.
+1. Select **My flows** > **Desktop flows** > **New**.
 
    ![Create new UI flow](../media/create-windows-desktop-flow/create-new.png "Create new UI flow")
 
@@ -85,11 +85,6 @@ Now that you've created a Web UI flow, use it in your other flows.
 >[!WARNING]
 >**Passwords in Selenium IDE are stored in plain text.**  
 
-
-**UI flows no longer records or plays back Windows applications after installing a new version.**
-
-Confirm you are using the [latest version](https://go.microsoft.com/fwlink/?linkid=2102613&clcid=0x409)
-
 **Temporary user profile for playback**
 
 Selenium IDE recordings are done with the current user's profile, but playback is done using a temporary user profile. This means that websites that need authentication may not ask for credentials during a recording session, but the authentication steps will be needed during playback. 
@@ -98,29 +93,29 @@ To address this, the user needs to manually edit the script to insert the comman
 
 **Other limitations**
 
--   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flow for each type and then combine them in a cloud flow.
+- Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate UI flow for each type and then combine them in a cloud flow.
 
--   Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
+- Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
 
--   These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
+- These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
-- UI flows does not support Selenium IDE actions or steps that take more than 1 minute to run.  Use [Power Automate Desktop](./desktop/introduction.md) instead.
+- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate Desktop](./desktop/introduction.md) instead.
 
--   Right click is not supported. 
+- Right click is not supported. 
 
--   Additional Web UI flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
+- Additional Web UI flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
 
--   If the .side file contains multiple test projects, only the first one that was created runs. 
-
-     >[!TIP]
-     >Note that the Selenium IDE orders the tests by name, not by creation date, so the first test created may not be the first one in the list.
+- If the .side file contains multiple test projects, only the first one that was created runs. 
+   
+   >[!TIP]
+   >Note that the Selenium IDE orders the tests by name, not by creation date, so the first test created may not be the first one in the list.
 
 -   Playback directly in the Selenium IDE might not behave as intended. However, playback at runtime through the UI flow infrastructure behaves correctly.
 
 ## Next steps
 
-- Learn how to [run UI flows](run-desktop-flow.md).
+- Learn how to [run desktop flows](run-desktop-flow.md).
 
-- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
+- Learn how to use [input and output](inputs-outputs-web.md) parameters with Selenium IDE.
 
  

@@ -88,7 +88,7 @@ You may want to record your UI flow in multiple sessions. After you've completed
 
 ## Provide command line arguments at launch
 
-After you record your Windows recorder (V1) flows actions, you can provide command line arguments for the apps that your UI flows launch. 
+After you record your Windows recorder (V1) flows actions, you can provide command line arguments for the apps that your desktop flows launch. 
 
 Follow these steps to add command line arguments to the apps that your UI flow launches:
 
@@ -116,7 +116,7 @@ Follow these steps to add command line arguments to the apps that your UI flow l
 
 ## Add a variable
 
-You can use variables to perform multiple actions within your UI flows. For example, you can use a variable to count how many times an operation was performed in a loop. Or, you can use a variable to create an string array with the screen readings done in a loop.
+You can use variables to perform multiple actions within your desktop flows. For example, you can use a variable to count how many times an operation was performed in a loop. Or, you can use a variable to create an string array with the screen readings done in a loop.
 
 >[!TIP]
 >You can use integer, float, Boolean, string, array, and object variable data types. 
@@ -152,10 +152,10 @@ Follow these steps to create and use variables in a UI flow:
 
 You can copy actions and scopes, use **Add an action** to select the copied actions and scopes from **My clipboard**, and then paste them into another location within the same UI flow.  
 
-UI flows automatically renames the copied actions and scopes with a unique name. If the copied scope contains another scope, the nested structure is retained when you paste it from **My clipboard**. 
+Power Automate designer automatically renames the copied actions and scopes with a unique name. If the copied scope contains another scope, the nested structure is retained when you paste it from **My clipboard**. 
 
 >[!IMPORTANT]
->This feature supports copying and adding actions within the same scope. You cannot paste actions into other scopes or UI flows.
+>This feature supports copying and adding actions within the same scope. You cannot paste actions into other scopes or Windows recorder (V1) flows.
 
 Follow these steps to copy and then paste actions and scopes:
 
@@ -174,7 +174,7 @@ Follow these steps to copy and then paste actions and scopes:
 
     ![Select the copied action](../media/edit-desktop/select-action.png "Select the copied action")
 
-1. Notice that UI flows pastes the action card with a unique name.
+1. Notice that Power Automate pastes the action card with a unique name.
 
    ![View the new name of the copied action](../media/edit-desktop/action-unique-name.png "View the new name of the copied action")
 
@@ -208,7 +208,7 @@ To address this instance issue, users have two options:
 
 ## Add a loop
 
-UI flows have support for arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a cloud flow to your UI flow, including complex arrays from a SharePoint list, for example.
+Windows recorder (V1) supports arrays. Use an array, to add a loop to perform repetitive steps in a UI flow. You can pass in different types of arrays from a cloud flow to your UI flow, including complex arrays from a SharePoint list, for example.
 
 >[!NOTE]
 >You must edit an existing UI flow to add a loop.
@@ -269,7 +269,7 @@ Here are the steps to create a loop in a UI flow:
 
 ## Add a delay
 
-You can add delay in UI flows to help control the UI flow run.
+You can add delays in Windows recorder (V1) flows to help control the flow run.
 
 Follow these steps to add a delay to a UI flow that you've recorded.
 
@@ -298,7 +298,7 @@ Follow these steps to add a delay to a UI flow that you've recorded.
 
 ## Add a retry policy
 
-By default, UI flows retries failed UI automation steps using the default retry settings and timeout value.
+By default, Windows recorder (V1) retries failed UI automation steps using the default retry settings and timeout value.
 
 Follow these steps to set your own retry policy on specific steps after you've recorded your UI flow.
 
@@ -318,7 +318,7 @@ Follow these steps to set your own retry policy on specific steps after you've r
 
    The timeout is a value you can specify to set the length of time the UI flow should try to perform an action that it’s unable to complete before canceling it. Once the action is canceled, the retry policy begins. The default timeout value is five minutes. 
 
-   There are three types of retries in UI flows.
+   There are three types of retries in Windows recorder (V1) flows.
 
    - Default
    - None 
@@ -354,7 +354,7 @@ any of the following actions for that application.
 Follow these steps to add a manual action:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** > **UI flows**.
+1. Select **My flows** > **Desktop flows**.
 1. Select the UI flow that you want to edit.
 
    ![The UI flow to edit](../media/edit-desktop/select-desktop-flow.png)
@@ -412,7 +412,7 @@ Test your UI flow to confirm that your selector works correctly.
 
 ## Use advanced controls
 
-You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your UI flows.
+You can incorporate advanced controls such as **conditions**, **switch cases**, and **terminate** actions within your desktop flows.
 
 You can perform these advanced operations by performing the following steps on an existing UI flow.
 
@@ -435,7 +435,7 @@ You can perform these advanced operations by performing the following steps on a
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-preview-features-expect-changes.md)]
 
-Image recognition in UI flows is a preview feature and currently
+Image recognition in Windows recorder (V1) is a preview feature and currently
 available when recording a remote computer through the Remote Desktop Connection
 (RDC) app.
  
@@ -482,7 +482,7 @@ automated.
 
 ## Use image recognition to record on Citrix
 
-There are two options to record on Citrix with UI flows.
+There are two options to record on Citrix with Windows recorder (V1).
 
 ### Option 1: record a Citrix application or desktop already open on your machine
 
@@ -496,7 +496,7 @@ There are two options to record on Citrix with UI flows.
 1.	Perform the steps on Citrix, and then select **Done** on the recorder control.
 
 >[!TIP]
->UI flows, you can record several Citrix apps during the same session. Open all applications before you start recording if you have not recorded the launch of your Citrix workspace.
+>With Windows recorder (V1), you can record several Citrix apps during the same session. Open all applications before you start recording if you have not recorded the launch of your Citrix workspace.
 
 ### Option 2: record the launch of your Citrix application / desktop from your Citrix workspace
 
@@ -566,12 +566,12 @@ If you have problems using sensitive text in the login window:
 
 ## Handle error conditions
 
-Unexpected conditions can arise during playback. These conditions can cause your UI flows to fail. You can use advanced error handling capabilities to create alternate steps when unexpected conditions arise. 
+Unexpected conditions can arise during playback. These conditions can cause your desktop flows to fail. You can use advanced error handling capabilities to create alternate steps when unexpected conditions arise. 
 
 Here are the steps to do so.
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com) with your school or work account.
-1. Select **My flows** > **UI flows**.
+1. Select **My flows** > **Desktop flows**.
 1. Select **More commands** (the three vertical dots for the UI flow you want to edit).
 1. Select **Edit**.
 1. Select the down arrow that's located immediately before the UI flow step to which you want to add error handling, and then select **+** (Insert new step).
@@ -606,7 +606,7 @@ Here are the steps to do so.
 
 ## Enable coordinate-based playback
 
-Coordinate-based playback uses relative screen coordinate offset as a fallback that helps UI flows find target objects that the default Windows UI automation framework is unable to find during playback. 
+Coordinate-based playback uses relative screen coordinate offset as a fallback that helps Windows recorder (V1) find target objects that the default Windows UI automation framework is unable to find during playback. 
 
 Here are some of the reasons why the default Windows UI automation framework might not find target objects during playback:
 
@@ -639,5 +639,5 @@ Follow these steps after you've recorded a UI flow script:
 
 - Learn how to [run the UI flow](run-desktop-flow.md) you just edited.
 
-- If you want to do more with UI flows, you can also try out UI flows with [input and output](inputs-outputs-web.md) parameters.
+- If you want to do more with desktop flows, you can also try out [input and output](inputs-outputs-desktop.md) parameters.
 
