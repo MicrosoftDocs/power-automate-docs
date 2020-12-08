@@ -199,7 +199,7 @@ Follow these steps to install Selenium IDE:
 
 ## Supported languages
 
-Here are the languages that UI flows supports, in addition to English:
+Here are the languages that desktop flows supports, in addition to English:
 
 |||||
 ----|-----|-----|--------
@@ -216,8 +216,7 @@ Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)
 Finnish		|Korean		|Serbian (Latin, Serbia)
 
 >[!NOTE]
->Power Automate Desktop  is available only in English, French, German, Japanese, Spanish. Preview features aren’t meant for production use and may have restricted functionality.
-
+>Power Automate Desktop is available only in English, French, German, Japanese, Spanish, Danish, Dutch, Finnish, Italian, Norwegian, Polish, Portuguese (Brazil), Chinese (Traditional), Chinese (Simplified), Swedish, and Turkish.
 
 ## Uninstall Power Automate Desktop
 
