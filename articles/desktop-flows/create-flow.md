@@ -170,7 +170,7 @@ search.audienceType:
 
    <!--todo: Needs new screenshot and verify if action names are being updated-->
   
-1. Select the **Run a flow built by Power Automate Desktop ** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
+1. Select the **Run a flow built by Power Automate Desktop** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
 
    ![variables values](\media\design-flow\variables-values.png)
 
