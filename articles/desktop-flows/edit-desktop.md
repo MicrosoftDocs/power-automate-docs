@@ -64,7 +64,7 @@ You may want to record your Windows recorder (V1) flowin multiple sessions. Afte
 
 1. Select **Record app** from the list of actions.
 
-   ![Record app](../media/edit-desktop/select-record-desktop-actions.png "Record app")
+   ![Record app](../media/edit-desktop/select-record-ui-actions.png "Record app")
 
 1. Select **Launch recorder**.
 

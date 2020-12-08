@@ -34,11 +34,11 @@ To configure a UI action, enter the element it will interact with:
 
 Existing UI elements may be added from the Repository, while new ones may also be added directly from the action's properties:
 
-![Adding new elements through a UI action](./media/ui-automation/adding-new-elements-through-a-desktop-action.png)
+![Adding new elements through a UI action](./media/ui-automation/adding-new-elements-through-a-ui-action.png)
 
 To add a new element, highlight it and press **Ctrl & left-click**:
 
-![Capturing new UI elements](./media/ui-automation/capturing-new-desktop-elements.png)
+![Capturing new UI elements](./media/ui-automation/capturing-new-ui-elements.png)
 
 After adding all the required elements, select **Done** to save them to the repository.
 
@@ -48,6 +48,6 @@ To extract a piece of data from a UI window, such as its title, location, or siz
 
 Alternatively, to extract data from specific elements within a window, use the **Get details of a UI element in window** action:
 
-![Get details of a UI element in window action](./media/ui-automation/get-details-of-a-desktop-element-in-window.png)
+![Get details of a UI element in window action](./media/ui-automation/get-details-of-a-ui-element-in-window.png)
 
 You'll find the list of UI automation actions available in the [Actions reference](actions-reference/uiautomation.md).

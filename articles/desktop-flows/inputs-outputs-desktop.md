@@ -103,7 +103,7 @@ Outputs can only be created as you record your Windows recorder (V1) flow.
 
 1. Select a user interface element to get its text for the output. The text value will be automatically captured. You can then provide a name and description for the output.
 
-   ![Select UI element](../media/inputs-outputs-desktop/select-desktop-element.png)
+   ![Select UI element](../media/inputs-outputs-desktop/select-ui-element.png)
 
 1. Provide a name and a description for the output.
 
