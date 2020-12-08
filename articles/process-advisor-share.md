@@ -36,10 +36,13 @@ Important: You must be the co-owner to add or remove owners and contributors to 
 ## Share action
 
 The share action is available on the Processes screen in Process Advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on Process Advisor system entities.
-The share action is also available on the process detail screen in Process Advisor, with the same conditions. 
+The share action is also available on the process detail screen in Process Advisor, with the same conditions.
 Sharing is not needed at the recordings level. Once you share a process with a co-owner, they will be able to manage the recordings associated to the process.
 
 ## Share panel
+
+> [!div class="mx-imgBorder"]
+> ![Share screen](media/process-advisor-visualize/analytics-screen.png "Sharing screenshot")
 
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users and teams in your organization, and share your process with them.
 
