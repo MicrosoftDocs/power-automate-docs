@@ -67,9 +67,6 @@ conceptualContent:
           itemType: overview
         - text: Approval flows
           url: /power-automate/modern-approvals
-          itemType: overview 
-        - text: Business process flows
-          url: /power-automate/business-process-flows-overview
           itemType: overview            
     
     - title: Create desktop flows for RPA
@@ -90,7 +87,7 @@ conceptualContent:
           url: /power-automate/teams/overview
           itemType: overview
         - text: SharePoint
-          url: /power-automate/sharepoint/overview
+          url: /power-automate/sharepoint-overview
           itemType: overview
         - text: Email
           url: /power-automate/email-overview
