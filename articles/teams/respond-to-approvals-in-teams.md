@@ -1,6 +1,6 @@
 ---
-title: Respond to an approval Microsoft Teams | Microsoft Docs
-description: Learn how to respond to an approval in a chat or channel
+title: Respond to an approval in Microsoft Teams | Microsoft Docs
+description: Learn how to respond to an approval in a chat or channel in Microsoft Teams
 services: ''
 suite: flow
 documentationcenter: na
@@ -19,39 +19,43 @@ ms.author: hamenon
 
 # Respond to an approval from a chat or channel
 
-If a user sends you an approval in a chat or channel message or using the approvals app. You can respond to it directly from within Teams from the chat or channel you received the approval in or the Approvals app.
+If a user sends you an approval in a chat or channel message or from the approvals app, you can respond to it directly from within the Teams chat or channel or from the approvals app.
 
-Note that the approvals app will also show you any approval that was sent using a flow in the same environment as well. This way you can use the Approvals app in Teams to manage all your approvals in a single place.
+The approvals app also shows you any approvals that were sent using a flow in the same environment. So, you can use the approvals app in Teams to manage all your approvals.
 
-## Approve or reject an request in Microsoft Teams
+## Approve or reject an request in Teams
 
 Follow these steps to respond to an approval in a chat or channel in Microsoft Teams.
 
-1. Sign into [Microsoft Teams](https://teams.microsoft.com)
+1. Sign into [Microsoft Teams](https://teams.microsoft.com).
 
-2. Navigate to the chat or channel in which you were sent an approval, you should see a card with the approval if it was sent in a chat or channel.
+2. Go to the chat or channel in which you were sent the approval.
 
-![Approval in a chat](../media/native-approvals-in-teams/approval-received.png)
+   You should see a card with the approval.
 
-Alternately you can also view open the Approvals app in Teams and navigate to the Received tab
+   ![Approval in a chat](../media/native-approvals-in-teams/approval-received.png)
 
-![Approval in a chat](../media/native-approvals-in-teams/approval-app-received.png)
+   Alternately, you can open the approvals app in Teams and go to the **Received** tab.
+
+   ![Approval in a chat](../media/native-approvals-in-teams/approval-app-received.png)
 
 
-3. Click on View details on the card or click the approval in the app to bring up the Approval form
-![Approve reject form](../media/native-approvals-in-teams/approval-respond.png)
+3. Select **View details** on the card or select the approval to open the approval form.
+   
+   ![Approve or reject form](../media/native-approvals-in-teams/approval-respond.png)
 
-4. From here you can approve or reject the approval as applicable. You can also optionally include comments to go with your decision. Once approved the state will be reflected in the card or the app.
+4. From here, you can approve or reject the approval. You can also include comments with your decision. Once approved, the state is updated in the card or the app.
 
-![Approval complete](../media/native-approvals-in-teams/approval-complete.png)
+   ![Approval complete](../media/native-approvals-in-teams/approval-complete.png)
 
-![Approval complete app](../media/native-approvals-in-teams/approval-app-complete.png)
+   ![Approval complete app](../media/native-approvals-in-teams/approval-app-complete.png)
 
 >[!TIP]
->If the approver has chosen to send an approval with custom responses the actions at the bottom can differ. For example:
+>If the approver has chosen to send an approval with custom responses, the actions at the bottom can differ. For example:
+
 ![Custom responses](../media/native-approvals-in-teams/custom-responses-respond.png)
 
 
 ## Known issues
 
-Currently only approvals sent in your organizations default environment are listed within the Approvals app in Teams.
+Currently, only approvals sent in your organization's default environment are listed within the approvals app in Teams.

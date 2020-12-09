@@ -1,5 +1,5 @@
 ---
-title: Create an approval from the Approvals app | Microsoft Docs
+title: Create an approval from the approvals app | Microsoft Docs
 description: Learn how to create an approval from a chat or channel.
 services: ''
 suite: flow
@@ -17,40 +17,40 @@ ms.date: 11/30/2020
 ms.author: hamenon
 ---
 
-# Create an approval from the Approvals app
+# Create an approval from the approvals app
 
-You can trigger an approval at any time by navigating to the Approvals app in Teams.
+You can trigger an approval at any time from the approvals app in Teams.
 
-## Start an approval from the Approvals app
+## Start an approval from the approvals app
 
-Follow these steps to create an approval from the Approvals app in Teams
+Follow these steps to create an approval from the approvals app in Teams.
 
-1. Sign into [Microsoft Teams](https://teams.microsoft.com)
+1. Sign into [Microsoft Teams](https://teams.microsoft.com).
 
-2. Select **More added apps (...)**, search for **Approvals**, and then select the **Approvals** app
+2. Select **More added apps (...)**, search for **approvals**, and then select the **approvals** app.
 
-![Search for the app in Teams](../media/native-approvals-in-teams/more-apps-approvals.png)
+   ![Search for the app in Teams](../media/native-approvals-in-teams/more-apps-approvals.png)
 
-3. Click on the **New Approval request** button on the top right of the app
+3. Select **New Approval request** on the top right of the app.
 
-![New Approval request](../media/native-approvals-in-teams/approval-app-create.png)
+   ![New Approval request](../media/native-approvals-in-teams/approval-app-create.png)
 
-4. Clicking on the button will trigger a modal dialog where you can enter the details of the approval
-![Approvals form](../media/native-approvals-in-teams/approvals-dialog-box.png)
+4. Enter the details of the approval.
 
-5. Enter the details of the approval you want to send along with all the users you need the approval from.
+   ![Approvals form](../media/native-approvals-in-teams/approvals-dialog-box.png)
 
->[!TIP]
->If you are sending an approval to multiple users and need everyone to respond, ensure that toggle the **Require a response from all approvers** option is on. If you only need one of the approvers to approve turn the option off
+   >[!TIP]
+   >If you are sending an approval to multiple users and you need everyone to respond, ensure that select the **Require a response from all approvers** option. If you only need one of the approvers to approve turn the option off.
 
-![Multiple approvers toggle](../media/native-approvals-in-teams/multiple-approvers-toggle.png)
+   ![Multiple approvers toggle](../media/native-approvals-in-teams/multiple-approvers-toggle.png)
 
-6. Once the details of the approval have been entered hit send. The approval will show up in the Sent Tab in the app.
+5. Select **Send**. 
 
-![Sent approvals](../media/native-approvals-in-teams/approvals-app-sent.png)
+   The approval shows up in the **Sent** tab in the app.
 
-
+   ![Sent approvals](../media/native-approvals-in-teams/approvals-app-sent.png)
+   
 ## Known issues
 
-Currently all the approvals created using this native Teams experience are created in your organizations default environment.
+Currently, all the approvals created using this native Teams experience are created in your organization's default environment.
 
