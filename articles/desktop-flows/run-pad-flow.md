@@ -89,7 +89,7 @@ Perform the following steps to benefit from multiple desktop flows on a single d
 Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-desktop-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
-If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).
+>If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).
 
 >[!NOTE]
 >Running multiple concurrent desktop flows by the **same user** is not supported. You will need to have different users running desktop flows at the same time to benefit from this feature.
