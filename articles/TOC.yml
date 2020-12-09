@@ -128,6 +128,19 @@
         href: create-sharepoint-reminder-flows.md
       - name: Manage SharePoint page approvals
         href: customize-sharepoint-page-approvals.md  
+    - name: Use flows with Microsoft Forms
+      items:
+      - name: Overview 
+        href: ./forms/overview.md
+        displayName: Use flows with Microsoft Forms
+      - name: Get started
+        href: ./forms/get-started.md
+      - name: Popular scenarios
+        href: ./forms/popular-scenarios.md
+      - name: How to
+        href: ./forms/how-to.md    
+      - name: Troubleshoot known issues with forms
+        href: ./forms/troubleshoot-issues.md  
     - name: Use flows with Microsoft Teams
       items:
       - name: Overview
@@ -186,6 +199,28 @@
     items:
     - name: Use AI Builder in Power Automate
       href: use-ai-builder.md
+  - name: Process Advisor (preview)
+    items:
+    - name: Overview 
+      href: process-advisor-overview.md
+    - name: Work with processes and recordings
+      href: process-advisor-processes.md
+    - name: Analyze processes
+      href: process-advisor-analyze.md
+    - name: Visualize processes
+      href: process-advisor-visualize.md
+    - name: Share processes
+      href: process-advisor-share.md
+    - name: Administration and security
+      items: 
+      - name: Security and privacy 
+        href: process-advisor-security.md
+      - name: Protect your data
+        href: process-advisor-protect.md
+      - name: Known issues 
+        href: process-advisor-issues.md
+    - name: Glossary
+      href: process-advisor-glossary.md
   - name: Microsoft Dataverse
     items:
     - name: Classic Microsoft Dataverse workflows
