@@ -25,7 +25,7 @@ search.audienceType:
 
    ![New flow button](\media\create-flow-console\console.png)
 
-1. Enter a name for the UI flow, and click **OK**.
+1. Enter a name for the desktop flow, and click **OK**.
 
    ![build flow dialog box](\media\create-flow-console\build-flow-dialog.png)
 
@@ -38,7 +38,7 @@ search.audienceType:
 
 1. Create a new folder on the desktop, and name it **Countries**.
 
-1. Go to **flow.microsoft.com**, select **My flows**, then **+New**, and **Instant from blank**.
+1. Go to **flow.microsoft.com**, select **My flows**, then **+New flow**, and **Instant cloud flow**.
 
    ![My flows instant blank](\media\design-flow\my-flows-instant-blank.png)
 
@@ -46,16 +46,16 @@ search.audienceType:
 
    ![manually trigger flow](\media\design-flow\manually-trigger-flow.png)
 
-1. Select **+New step**.
+1. Select **+ New step**.
 
    ![new step](\media\design-flow\new-step.png)
 
     <!--todo: Needs new screenshot and verify if action names are being updated-->
-1. Search for **UI flow**, and select the **Run a flow built by Power Automate Desktop** action.
+1. Search for **power automate desktop**, and select the **Run a flow built with Power Automate Desktop** action.
 
    ![action search](\media\design-flow\action-search.png)
 
-1. In the action, under Run mode select **Attended - Runs when you're signed in** and under Desktop flow select **Create a new UI flow**.
+1. In the action, under Run mode select **Attended - Runs when you're signed in** and under Desktop flow select **Create a new desktop flow**.
 
    ![run Windows recorder (V1) flow properties](\media\design-flow\run-desktop-flow-v2-action-properties.png)
 
@@ -74,8 +74,8 @@ search.audienceType:
 1. Configure the variable as follows:
    * Variable type: **Input**
    * Variable name: **CountryName**
+   * Data type: **Text**
    * Default value: **France**
-   * Data type: **String**
    * External name: **CountryName**
    * Description: **This is the country name input variable.**
 
@@ -170,7 +170,7 @@ search.audienceType:
 
    <!--todo: Needs new screenshot and verify if action names are being updated-->
   
-1. Select the **Run a flow built by Power Automate Desktop** action to open its inputs and outputs. In the Outputs, select **Show raw outputs**. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
+1. Select the **Run a flow built with Power Automate Desktop** action to open its inputs and outputs. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
 
    ![variables values](\media\design-flow\variables-values.png)
 
