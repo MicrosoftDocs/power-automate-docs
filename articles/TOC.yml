@@ -6,24 +6,22 @@
     href: getting-started.md
   - name: Types of flows
     href: flow-types.md
+  - name: Sign up
+    href: sign-up-sign-in.md
+  - name: Guided learning
+    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
+  - name: What's new
+    href: whats-new.md
 - name: Cloud flows
   items:
   - name: Get started
     href: cloud-get-started.md
-  - name: Sign up
-    href: sign-up-sign-in.md
-  - name: Get started
-    href: getting-started.md
   - name: Get started with triggers
     href: triggers-introduction.md
-  - name: Guided learning
-    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
   - name: Share a flow
     href: create-team-flows.md
   - name: Create a flow that uses Microsoft Dataverse
     href: common-data-model-intro.md
-  - name: What's new
-    href: whats-new.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
