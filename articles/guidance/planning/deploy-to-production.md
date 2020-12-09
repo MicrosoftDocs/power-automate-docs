@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -33,7 +33,7 @@ add your entire organization as a co-owner, though; that just invites more peopl
 up the flow. If your company has a [Center of Excellence](https://docs.microsoft.com/power-platform/guidance/coe/starter-kit)
 for Microsoft Power Platform, they might have guidelines for flow ownership.
 
-Also, keep in mind that the access applies not just to the flows themselves but
+Keep in mind that the access applies not just to the flows themselves but
 to the connections they use. For example, if your flow sends mail from a shared
 mailbox, make sure that the co-owners have access to that mailbox in case they
 need to re-create the connection.
@@ -68,3 +68,6 @@ following approach:
 2.  Check that there are no issues for those people.
 
 3.  Have the remaining people start using the automation.
+
+> [!div class="nextstepaction"]
+> [Next step: Assessing the business impact of the automation](analyze-and-assess.md)

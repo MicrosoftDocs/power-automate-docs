@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -25,3 +25,6 @@ automation to be completed, and possibly find ways to make your
 automation even better.
 
 If you store this data in Dataverse, you can use Power BI to identify which part of the process took the longest time to complete.
+
+> [!div class="nextstepaction"]
+> [Next step: Decision-making flowchart for your design](decision-making-flow.md)

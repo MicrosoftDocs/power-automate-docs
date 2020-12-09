@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -14,9 +14,8 @@ ms.reviewer: kathyos
 # Introduction: Planning a Power Automate project
 
 You can use Power Automate to automate your manual and repetitive
-processes so that you can focus on higher-value tasks. It's a unique, unified<!--note from editor: What does "unified" mean here?-->
-service you can use with<!--note from editor: To be consistent in these articles, I've followed the pattern of saying you can automate processes and tasks within applications and services, rather than automating the apps and services themselves.--><!--tayoshi: Noted--> cloud services, desktop applications, and legacy
-systems.
+processes so that you can focus on higher-value tasks. 
+It's a unique service that you can use to unify cloud services, desktop applications, and legacy systems.
 
 Do you have a process or task that you want to automate, but aren't quite sure
 how? This documentation can help you plan and design an
@@ -33,7 +32,7 @@ processes with Power Automate. The basic steps are as follows:
 
 3.  [**Make**](making-phase.md): Create the Power Automate flows.
 
-4.  [**Test**](testing-strategy.md): Try out the automation you created.<!--note from editor: Suggested. --><!--tayoshi: Looks good thanks-->
+4.  [**Test**](testing-strategy.md): Try out the automation you created.
 
 5.  [**Deploy and refine**](deploy-to-production.md): Start using the automation in production, identify
     processes that can be refined, and decide what to change or add.

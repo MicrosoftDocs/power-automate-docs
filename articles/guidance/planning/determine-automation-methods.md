@@ -1,11 +1,11 @@
 ---
-title: Determining which automation method to use in planning a Power Automate project | Microsoft Docs
+title: Determining which automation method to use when planning a Power Automate project | Microsoft Docs
 description: After the process design is complete, the next step is the architectural design to focus on how you'll automate that process.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -33,16 +33,14 @@ custom connectors. More information: [Create a custom connector from scratch](ht
 
 - **Use the HTTP connector**: If you're a developer and have one-off scenarios where you need to connect to
 systems that have no connectors available&mdash;but you don't want to set up custom
-connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)<!--note from editor: Edit okay? If you need to explain more, this should be fleshed out a bit and not a "More information"-type link.-->
+connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)
 
 - **Create a web browser automation**: If you can't find a connector, and if the system is a web browser&ndash;based
 application or a website, you should consider web browser automation.
-Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can either use [web UI flows](../../ui-flows/create-web.md) or [build a web automation](../../ui-flows/desktop/actions-reference/webautomation.md) process with Power Automate Desktop.
+Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can [build a web automation](../../desktop-flows/actions-reference/webautomation.md) process with Power Automate Desktop.
 
 - **Create a desktop application automation**: If you can't find a connector, and if the system is a desktop application on
-a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../ui-flows/desktop/create-flow.md) with Power Automate Desktop. <!--More information: [Automate desktop flows](../../ui-flows/desktop/desktop-automation.md)-->
-<!--note from editor: Is there a reason to link to this article in addition to the previous link? This one seems to be very far down in the TOC, I'm not sure how it relates to the other article or if we need two links so close together.-->
-<!--tayoshi: Removed the last link-->
+a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../desktop-flows/create-flow.md) with Power Automate Desktop.
 
 The following table compares the different methods.
 
@@ -78,8 +76,7 @@ Examples of automated triggers include:
 -   When a new file is moved to OneDrive
 -   When a new record is created in Microsoft Dataverse
 -   When an item is modified in a custom SharePoint list
-<!--note from editor: In the following image, please update "Common Data Service."-->
-<!--tayoshi: Cannot update the image as the product UI still remains as Common Data Service-->
+
 ![Automated triggers](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report might be to set an automated trigger
@@ -90,7 +87,7 @@ table in Dataverse. This ensures, for example, that when a form is created with 
 
 An *instant* or *manual* trigger is a type of trigger where either a user needs to manually
 start the automation or the trigger is instantaneously started. This can be
-triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.<!--note from editor: Edit okay? I wasn't sure the best way to interpret "some of Microsoft services".--><!--tayoshi: Looks good thanks-->
+triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.
 
 ![Instant triggers](media/instant-triggers.png "Instant triggers")
 
@@ -103,3 +100,6 @@ automate a task that occurs daily, weekly, or monthly.
 In the expense report example, the accounting team might use a scheduled trigger to send an automated email every Friday when the weekly BI report is ready.
 
 ![Example of a scheduled trigger](media/scheduled-triggers.png "Example of a scheduled trigger")
+
+> [!div class="nextstepaction"]
+> [Next step: Attended and unattended scenarios](attended-unattended.md)

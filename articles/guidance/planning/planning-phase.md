@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 

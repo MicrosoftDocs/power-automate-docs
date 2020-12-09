@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -109,3 +109,6 @@ Because the automation ran 3,226 times in 30 days, total time saved is:
 
 &nbsp;&nbsp;&nbsp;Reduced time (440 seconds) &times; number of runs (3,226 times) = 1,419,440 seconds =
 394.28 hours
+
+> [!div class="nextstepaction"]
+> [Next step: Diagnosing performance issues](discover-performance-issues.md)

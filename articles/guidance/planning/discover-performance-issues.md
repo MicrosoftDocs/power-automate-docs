@@ -1,17 +1,17 @@
 ---
-title: Discovering performance issues in a Power Automate project | Microsoft Docs
-description: If you're experiencing delays or slowdowns during your flow execution, you might have hit your Power Automate limits for the day. This article explains how to discover these issues.
+title: Diagnosing performance issues in a Power Automate project | Microsoft Docs
+description: If you're experiencing delays or slowdowns during your flow execution, you might have hit your Power Automate limits for the day. This article explains how to uncover these issues.
 author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
 ---
 
-# Discovering performance issues
+# Diagnosing performance issues
 
 If you're experiencing delays or slowdowns during your flow execution, it might be
 that you've reached your Power Automate limits for the day. More information: [Request limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)

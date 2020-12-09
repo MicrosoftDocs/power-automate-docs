@@ -5,7 +5,7 @@ author: taiki-yoshida
 ms.service: flow
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/05/2020
+ms.date: 12/10/2020
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -25,7 +25,7 @@ sender. This helps recipients know the message was sent via automation rather
 than as personal nag. It has the added benefit that people won't try to bug you
 directly in response to something that's meant to be purely informational. For
 the Microsoft Teams connector, we have a few "Post as the Flow bot" actions that
-are well-suited to this. Outlook has a "Send an email from a shared mailbox" action,
+are well suited to this. Outlook has a "Send an email from a shared mailbox" action,
 though you'll need to bring your own mailbox. This advice also applies to
 updating tickets, creating records, and so on, but the specifics will vary by
 connector.
@@ -45,3 +45,6 @@ suggest ways to improve your flow! We use a signature like "Sent with
 Power Automate. Contact \<your email\> with questions." You might also find it
 helpful to link to the specific flow so that you can find it quickly if someone
 forwards you the email.
+
+> [!div class="nextstepaction"]
+> [Next step: Reducing risk and planning for error handling](reducing-risk.md)
