@@ -268,8 +268,6 @@ Sets or clears the selected option(s) for a drop-down list in a window form
 |-----|-----|
 |Failed to select the specified options in the drop down list|Indicates a problem selecting the specified options in the drop down list|
 
-## Images
-Interact with images on the entire desktop or part of it
 ## Windows
 Windows manipulation regarding size, state visibility, focus
 ### <a name="getwindowbase"></a> Get window
