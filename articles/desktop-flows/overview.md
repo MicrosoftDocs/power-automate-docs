@@ -55,6 +55,6 @@ You will find your desktop flows alongside automated, button, scheduled, and bus
 ## Next steps
 
 - Learn how to [set up desktop flows](setup.md). 
-- Learn more about the [different types of flows](..\getting-started.md#types-of-flows) you can use to automate your workflows.
+- Learn more about the [different types of flows](..\flow-types.md) you can use to automate your workflows.
 
 

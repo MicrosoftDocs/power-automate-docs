@@ -82,6 +82,6 @@ In the designer, you can review and edit the recording information in the
 ## Next steps
 
 - Learn how to [set up UI flows](setup.md). 
-- Learn more about the [different types of flows](..\getting-started.md#types-of-flows) you can use to automate your workflows.
+- Learn more about the [different types of flows](..\flow-types.md) you can use to automate your workflows.
 
 

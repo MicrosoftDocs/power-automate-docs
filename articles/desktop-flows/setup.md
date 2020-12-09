@@ -101,7 +101,7 @@ Select one of the links displayed in the installer. For example, if you want to 
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
-You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](../getting-started.md#types-of-flows) on a remote device.
+You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your flows on your device.
