@@ -72,7 +72,7 @@ conceptualContent:
           url: /power-automate/business-process-flows-overview
           itemType: overview            
     
-    - title: Use UI flows for RPA
+    - title: Create desktop flows for RPA
       links:
         - text: What are desktop flows?
           url: /power-automate/desktop-flows/overview
