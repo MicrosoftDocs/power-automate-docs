@@ -37,12 +37,13 @@ Create a cloud flow when you want your automation to be triggered either automat
 | [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
 | [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
 
+
 ## Desktop flows
-    
-Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](./desktop-flows/introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of of creating desktop flows: [Windows recorder (V1) and Selenium ID](./desktop-flows/overview.md).
 
 
 ## Business process flows
+
+
 
 
 ## Types of flows

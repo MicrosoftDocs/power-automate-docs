@@ -15,7 +15,7 @@
 - name: Cloud flows
   items:
   - name: Get started
-    href: cloud-get-started.md
+    href: overview-cloud.md
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Share a flow
