@@ -422,6 +422,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "articles/ui-flows/desktop/actions-reference/pdf.md",
+    "redirect_url": "https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/pdf",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "articles/ui-flows/desktop/actions-reference/cmd.md",
     "redirect_url": "https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/cmd",
     "redirect_document_id": false
