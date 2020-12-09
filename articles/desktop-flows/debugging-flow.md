@@ -25,7 +25,7 @@ Debug a cloud flow using the following tools:
 * [Errors Pane](errors.md)
 * [Breakpoints](#adding-breakpoints)
 * [Run flow action by action](#run-a-cloud-flow-by-action)
-* Set the Run delay
+* [Set the Run delay](#the-status-bar)
 
 ## Run, stop, and pause in flow designer
 
