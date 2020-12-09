@@ -27,7 +27,7 @@ search.audienceType:
 Windows recorder (V1) flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
 ## Prerequisites
-A desktop Windows recorder (V1) flow. [Create a Windows recorder (V1) flow now](create-desktop.md#create-and-test-desktop-flows) if you don't have one to edit.
+A desktop Windows recorder (V1) flow. [Create a Windows recorder (V1) flow now](create-desktop.md) if you don't have one to edit.
 
 ## Edit actions
 
