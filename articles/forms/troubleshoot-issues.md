@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot common issues using flows with Microsoft Forms | Microsoft Docs
-description: Learn how to use flows within Microsoft Teams.
+title: Troubleshoot known issues using flows with Microsoft Forms | Microsoft Docs
+description: Provides information to help troubleshoot known issues using flows with Microsoft Forms
 services: ''
 suite: flow
 documentationcenter: na

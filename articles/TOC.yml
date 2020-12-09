@@ -201,23 +201,23 @@
       href: use-ai-builder.md
   - name: Process Advisor (preview)
     items:
-    - name: Overview (preview)
+    - name: Overview 
       href: process-advisor-overview.md
-    - name: Work with processes and recordings (preview)
+    - name: Work with processes and recordings
       href: process-advisor-processes.md
-    - name: Analyze processes (preview)
+    - name: Analyze processes
       href: process-advisor-analyze.md
-    - name: Visualize processes (preview)
+    - name: Visualize processes
       href: process-advisor-visualize.md
-    - name: Share processes (preview)
+    - name: Share processes
       href: process-advisor-share.md
-    - name: Administration and security (preview)
+    - name: Administration and security
       items: 
-      - name: Security and privacy (preview)
+      - name: Security and privacy 
         href: process-advisor-security.md
-      - name: Protect your data (preview)
+      - name: Protect your data
         href: process-advisor-protect.md
-      - name: Known issues (preview)
+      - name: Known issues 
         href: process-advisor-issues.md
     - name: Glossary
       href: process-advisor-glossary.md

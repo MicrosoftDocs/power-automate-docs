@@ -1,6 +1,6 @@
 ---
 title: Share a Process Advisor process (preview) | Microsoft Docs
-description: Overview of the Process Advisor feature in Power Automate.
+description: How to share a process in the Process Advisor feature in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na

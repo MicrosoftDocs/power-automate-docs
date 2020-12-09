@@ -36,7 +36,7 @@ Here are some of the top scenarios in which you can use Power Automate with form
 
 Although you can enable a notification to “Get email notification of each response” within the Microsoft Form settings, you can create a customized email notification with Power Automate.
 
-First, add the [When a response is submitted](connectors/microsoftforms.md/#triggers) trigger.
+First, add the [When a response is submitted](/connectors/microsoftforms.md/#triggers) trigger.
 
 If your form is only for people in your organization, that means that the form is automatically recording the responder’s email and you need to use the 'Apply to Each' control. This demo will demonstrate this scenario and require you to choose “List of response notifications Response Id.” However, if your form is public and anyone with the link can respond, you will need to ask for their email as a response in the form and you will not need to add the 'Apply to Each' control.
 
