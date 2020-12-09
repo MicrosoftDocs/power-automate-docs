@@ -21,7 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Export Requests for Power Automate
+# Respond to GDPR Data Subject Export Requests for Power Automate
 
 
 As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Power Automate.
