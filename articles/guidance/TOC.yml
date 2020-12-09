@@ -26,8 +26,6 @@
           href: planning/authentication-security.md
         - name: Defining inputs and outputs
           href: planning/define-input-output.md
-        - name: Handling sensitive text
-          href: planning/handling-sensitive-text.md
         - name: Transforming and formatting data
           href: planning/transforming-formatting-data.md
         - name: Formalizing messages and alerts
