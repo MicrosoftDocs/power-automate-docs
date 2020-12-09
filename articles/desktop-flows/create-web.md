@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2020
+ms.date: 12/09/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create and test your Selenium IDE flows
+# Create and test Selenium IDE flows
 
 Follow these steps to create a simple Selenium IDE flow.
 
@@ -34,7 +34,7 @@ Follow these steps to create a simple Selenium IDE flow.
 
 1. Select **My flows** > **Desktop flows** > **New**.
 
-   ![Create new UI flow](../media/create-windows-desktop-flow/create-new.png "Create new UI flow")
+   ![Create new Selenium IDE flow](../media/create-windows-desktop-flow/create-new.png "Create new Selenium IDE flow")
 
 1. Select **Web app** > **Next**
     
@@ -78,7 +78,7 @@ Follow these steps to create a simple Selenium IDE flow.
   
 1. Select the **Save project** button in the top right of the Selenium IDE. This closes, and then uploads the project.
 
-Now that you've created a Web UI flow, use it in your other flows.
+Now that you've created a Selenium IDE flow, use it in your other flows.
 
 ## Limitations and known issues for Selenium IDE flows
 
