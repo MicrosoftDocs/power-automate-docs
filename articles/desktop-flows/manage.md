@@ -90,6 +90,7 @@ Once a desktop flow has been shared, owners and co-owners can change the access 
 ## More information
 
 - Create [desktop flows](create-flow.md).
-- Learn to [create Windows recorder (V1) flows](create-desktop.md).
-- Learn to [create Selenium IDE flows](create-web.md).
-- Learn how to run [desktop flows](run-desktop-flow.md).
+- Run [desktop flows](run-desktop-flow.md).
+- Create [Windows recorder (V1) flows](create-desktop.md).
+- Create [Selenium IDE flows](create-web.md).
+
