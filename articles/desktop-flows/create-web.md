@@ -1,6 +1,6 @@
 ---
 title: Learn to create Selenium IDE flows for Websites | Microsoft Docs
-description: Learn to automate Web apps with Selenium IDE.
+description: Learn to automate Web apps with Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create and test Selenium IDE flows
 
-Follow these steps to create a simple Selenium IDE flow.
+Follow these steps to create a simple Selenium flow.
 
 ## Create a Selenium IDE flow
 
@@ -34,17 +34,21 @@ Follow these steps to create a simple Selenium IDE flow.
 
 1. Select **My flows** > **Desktop flows** > **New**.
 
-   ![Create new Selenium IDE flow](../media/create-windows-desktop-flow/create-new.png "Create new Selenium IDE flow")
+   ![Create new Selenium IDE flow](../media/create-windows-desktop-flow/create-new-windowsrecorder.png "Create new Selenium IDE flow")
 
-1. Select **Web app** > **Next**
+1. Click **Additional desktop flow options**.
     
-   ![Select Web app](../media/create-web-desktop-flow/select-web-app.png "Select Web app")
+   ![Additional desktop flow options](../media/create-windows-desktop-flow/click-Additional-desktop-flow-options.png "Additional desktop flow options")
+
+1. Select Selenium IDE, and then select **Next**.
+    
+   ![Select Web app](../media/create-web-desktop-flow/select-seleniumIDE-flow.png "Select Web app")
 
 1. Enter a name for your Selenium IDE flow into the **Flow name** field.
 
 1. Enter the URL for the Website you want to automate into the **Base URL** field, and then select **Launch recorder**.
 
-   ![Give a name and a URL](../media/create-web-desktop-flow/give-a-name.png "Give a name and a URL") 
+   ![Give a name and a URL](../media/create-web-desktop-flow/give-a-selenium-flow-name.png "Give a name and a URL") 
 
    The Selenium IDE launches.
 
@@ -74,7 +78,7 @@ Follow these steps to create a simple Selenium IDE flow.
     ![Run current test](../media/create-web-desktop-flow/run-test.png "Run current test")
 
    >[!TIP]
-   >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your Selenium IDE is deployed.  
+   >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your Selenium IDE flow is deployed.  
   
 1. Select the **Save project** button in the top right of the Selenium IDE. This closes, and then uploads the project.
 
@@ -93,17 +97,17 @@ To address this, the user needs to manually edit the script to insert the comman
 
 **Other limitations**
 
-- Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate desktop flows for each type and then combine them in a cloud flow.
+-   Recording desktop applications during a Web recording session. If you need to automate both Web and Desktop applications, you can create a separate desktop flows for each type and then combine them in a cloud flow.
 
 - Multi-Factor Authentication (MFA) is not supported, use a tenant that doesn't require MFA.
 
 - These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
-- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate Desktop](introduction.md) instead.
+- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate Desktop](./desktop/introduction.md) instead.
 
 - Right click is not supported. 
 
-- Additional Selenium IDE input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
+-   Additional Selenium IDE flow input is generated when you use Foreach commands. To work around this issue, input any value into the extra fields. It doesn't impact the playback.
 
 - If the .side file contains multiple test projects, only the first one that was created runs. 
    
