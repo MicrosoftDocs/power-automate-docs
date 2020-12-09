@@ -128,19 +128,6 @@
         href: create-sharepoint-reminder-flows.md
       - name: Manage SharePoint page approvals
         href: customize-sharepoint-page-approvals.md  
-    - name: Use flows with Microsoft Forms
-      items:
-      - name: Overview 
-        href: ./forms/overview.md
-        displayName: Use flows with Microsoft Forms
-      - name: Get started
-        href: ./forms/get-started.md
-      - name: Popular scenarios
-        href: ./forms/popular-scenarios.md
-      - name: How to
-        href: ./forms/how-to.md    
-      - name: Troubleshoot known issues with forms
-        href: ./forms/troubleshoot-issues.md  
     - name: Use flows with Microsoft Teams
       items:
       - name: Overview
@@ -179,6 +166,19 @@
           href: acronym-sample.md
         - name: Sample - Lead generation
           href: lead-collection-sample.md
+    - name: Use flows with Microsoft Forms
+      items:
+      - name: Overview 
+        href: ./forms/overview.md
+        displayName: Use flows with Microsoft Forms
+      - name: Get started
+        href: ./forms/get-started.md
+      - name: Top scenarios
+        href: ./forms/popular-scenarios.md
+      - name: How to
+        href: ./forms/how-to.md    
+      - name: Troubleshoot known issues with forms
+        href: ./forms/troubleshoot-issues.md  
   - name: Solutions
     items:
     - name: Overview
