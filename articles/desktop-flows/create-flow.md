@@ -61,7 +61,7 @@ search.audienceType:
 
 1. Enter a desktop flow name or one will be generated and select **Launch app**.
 
-   ![Dialog box](\media\design-flow\build-UI-flow-dialog.png)
+   ![Dialog box](\media\design-flow\build-desktop-flow-dialog.png)
 
 1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
