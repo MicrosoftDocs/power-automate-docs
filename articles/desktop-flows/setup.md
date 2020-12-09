@@ -44,8 +44,8 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - A supported keyboard attached.
 
->[!IMPORTANT]
->You must have the latest versions of each component to record, test, or run desktop flows.
+> [!IMPORTANT]
+> You must have the latest versions of each component to record, test, or run desktop flows.
 
 ## Install Power Automate Desktop on your device
 
@@ -81,8 +81,8 @@ Select one of the links displayed in the installer. For example, if you want to 
 
    The store for your browser opens directly to the public page for the extension.
 
->[!IMPORTANT]
-If you already install the Power Automate extension in the past, you don't need to reinstall it
+> [!IMPORTANT]
+> If you already install the Power Automate extension in the past, you don't need to reinstall it
 
 #### Microsoft Edge: 
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
