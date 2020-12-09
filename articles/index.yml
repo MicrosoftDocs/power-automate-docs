@@ -78,7 +78,7 @@ conceptualContent:
           url: /power-automate/desktop-flows/setup
           itemType: how-to-guide
         - text: Create desktop flows
-          url: /power-automate/desktop-flows/create-desktop
+          url: /power-automate/desktop-flows/create-flow
           itemType: how-to-guide
 
     - title: Use flows with...
