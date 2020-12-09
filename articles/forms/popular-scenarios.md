@@ -1,5 +1,5 @@
 ---
-title: Popular scenarios | Microsoft Docs
+title: Top scenarios | Microsoft Docs
 description: Popular scenarios using flows within Microsoft Forms.
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Popular scenarios
+# Top scenarios
 
 Here are some of the top scenarios in which you can use Power Automate with forms:
 
