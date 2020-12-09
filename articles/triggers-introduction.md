@@ -26,7 +26,7 @@ search.audienceType:
 
 ## What is a trigger?
 
-A **trigger** is the event that starts a flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
+A **trigger** is the event that starts a cloud flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
 
 Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
@@ -39,14 +39,14 @@ Triggers can be started instantly or manually, on a schedule, or automatically w
 
 ### Triggers for instant/manual flows
 
-If you'd like to run a flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device. 
+If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device. 
 
 [Learn more about instant flows](https://docs.microsoft.com/power-automate/introduction-to-button-flows#trigger-an-instant-flow).
 
 
 ### Triggers for scheduled flows
 
-If you'd like to run a flow on a schedule, for example, to send a weekly project report, create a [scheduled flow](). In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, etc.). 
+If you'd like to run a cloud flow on a schedule, for example, to send a weekly project report, create a [scheduled flow](). In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, etc.). 
 
 Learn more about [scheduled flows](https://docs.microsoft.com/power-automate/run-scheduled-tasks).
 
@@ -55,7 +55,7 @@ Learn more about [scheduled flows](https://docs.microsoft.com/power-automate/run
 
 ### Triggers for automated flows
 
-If you'd like to create a flow that performs tasks automatically after an event, for example, create a flow that notifies you by email when someone tweets keyword you specify, create an automated flow. 
+If you'd like to create a cloud flow that performs tasks automatically after an event, for example, create a cloud flow that notifies you by email when someone tweets keyword you specify, create an automated flow. 
 
 Learn more about [automated flows](https://docs.microsoft.com/power-automate/get-started-logic-flow)
 
@@ -88,7 +88,7 @@ To find your license:
 
 1. Select **My flows**.
 
-1. Select a flow.
+1. Select a cloud flow.
 
 1. Go to the **Details** section, and then select **Plan**.  
 
@@ -105,5 +105,5 @@ To avoid it, you can write expressions in trigger conditions, avoiding a *run* i
 
 Here's a [community article of how to use trigger conditions](https://www.timlinenterprises.com/microsoft-power-automate-flow-trigger-conditions/).
 
-You may also need to secure the trigger inputs/outputs in the run history of a flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
+You may also need to secure the trigger inputs/outputs in the run history of a cloud flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 

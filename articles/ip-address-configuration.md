@@ -26,13 +26,13 @@ search.audienceType:
 The IP address from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
 >[!IMPORTANT]
-> Some calls a flow makes may come from IP addresses that are listed in the [Logic apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
+> Some calls a cloud flow makes may come from IP addresses that are listed in the [Logic apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
 ## Logic Apps
-Calls made from a flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) for which IP addresses are used by that service.
+Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) for which IP addresses are used by that service.
 
 ## Connectors
-Calls made from a connector in a flow (for example, the SQL API or the SharePoint API) will come from the IP addresses listed here:
+Calls made from a connector in a cloud flow (for example, the SQL API or the SharePoint API) will come from the IP addresses listed here:
 
 | Region | Outbound IP |
 | --- | --- |

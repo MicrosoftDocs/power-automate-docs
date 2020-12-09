@@ -22,7 +22,7 @@ ms.author: deonhe
 
 SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
 
-In this article, you'll learn how to configure your SharePoint site to use a flow to require changes to the site to be approved before they go live.
+In this article, you'll learn how to configure your SharePoint site to use a cloud flow to require changes to the site to be approved before they go live.
 
 ## Configure SharePoint for page approvals
 
