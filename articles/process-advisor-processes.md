@@ -41,6 +41,8 @@ In general, processes that you think might be inefficient or repetitive are good
 1. Select the **Create a new process** tile.
 1. Give your process a name and description, then select **Create**.
 
+Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
+
 ## Record your process
 
 Create a recording in one of three ways:
@@ -48,6 +50,8 @@ Create a recording in one of three ways:
 - From the **Create** screen in Process Advisor
 - Right after process creation
 - From the process details page
+
+Here's a short video on recording a process: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
 
 ### Create a recording from the 'Create' screen
 
@@ -105,6 +109,8 @@ Once the recording has completed, you can view the recorded actions in the recor
 
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
 - Remove any sensitive information from the recording.  [More information](process-advisor-protect.md).
+
+Here's a short video on preparing a recording for analysis: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
 
 ### Grouping actions into activities
 
