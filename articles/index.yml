@@ -74,13 +74,13 @@ conceptualContent:
     
     - title: Use UI flows for RPA
       links:
-        - text: What is UI flows?
+        - text: What are desktop flows?
           url: /power-automate/desktop-flows/overview
           itemType: overview
-        - text: Set up UI flows
+        - text: Set up Power Automate Desktop
           url: /power-automate/desktop-flows/setup
           itemType: how-to-guide
-        - text: Use Power Automate Desktop (Preview)
+        - text: Use Power Automate Desktop
           url: /power-automate/desktop-flows/introduction
           itemType: concept
 

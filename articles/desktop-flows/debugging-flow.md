@@ -24,7 +24,7 @@ It is common to have to debug flows in case there are any changes in the system 
 Debug a cloud flow using the following tools:
 * [Errors Pane](errors.md)
 * [Breakpoints](#adding-breakpoints)
-* [Run flow action by action](#run-a-flow-action-by-action)
+* [Run flow action by action](#run-a-cloud-flow-by-action)
 * Set the Run delay
 
 ## Run, stop, and pause in flow designer
@@ -39,7 +39,7 @@ Click to the left of the running order number in the workspace to place a breakp
 
 ![add breakpoint](\media\adding-breakpoints\add-breakpoint.png)
 
-## Run a cloud flow action by action
+## Run a cloud flow by action
 
 The **Run next action** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane to check the value of any variable at the point where it's paused. This feature is useful for debugging.
 
