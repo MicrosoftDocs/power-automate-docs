@@ -64,7 +64,7 @@ Follow these steps to share a desktop flow.
    ![Select a flow to share](../media/manage-desktop-flows/select-one.png)
 
 1. Select **Share**.
-1. Select the **Add poeple** field, and then enter the name of the person in your organization with whom you'd like to share the flow.
+1. Select the **Add people** field, and then enter the name of the person in your organization with whom you'd like to share the flow.
 1. Select **Give access**, and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 1. Select the **Share** button.
 
