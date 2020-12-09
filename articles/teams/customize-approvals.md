@@ -17,10 +17,10 @@ ms.date: 11/30/2020
 ms.author: hamenon
 ---
 
-# Customizing Approvals in Teams
+# Customizing approvals in Teams
 
-By default the approvals app only lets you modify custom responses in the app. 
+By default, the approvals app only lets you modify custom responses in the app. 
 
-If you want to create a custom process with pre and post approval actions that are utomatically triggered using an event, you will need to create an approval flow in the Power automate portal.
+If you want to create a custom process with pre and post approval actions that are automatically triggered using an event, you will need to create an approval flow in the Power Automate.
 
-[Visit our Approvals documentation section to get started with Approval flows](../get-started-approvals.md)
+[Visit the approvals documentation section to get started with approval flows](../get-started-approvals.md)

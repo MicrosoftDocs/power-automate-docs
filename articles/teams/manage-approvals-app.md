@@ -1,6 +1,6 @@
 ---
 title: Manage your approvals in Microsoft Teams | Microsoft Docs
-description: Learn how to manage your approvals from the Approvals app in Teams.
+description: Learn how to manage your approvals from the approvals app in Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -17,15 +17,15 @@ ms.date: 11/30/2020
 ms.author: hamenon
 ---
 
-# Manage your approvals from the Approvals app in Teams
+# Manage your approvals from the approvals app in Teams
 
-The Approvals app in Teams gives you an overview of all the approvals that you have sent or received in your organizations default tenant. This include approvals you might have received through chat or channel messages, direct approvals and even approvals that come in through a flow.
+The approvals app in Teams gives you an overview of all the approvals that you have sent or received in your organization's default tenant. This includes approvals you might have received through chat or channel messages, direct approvals, and even approvals that come in through a flow.
 
-From here you can either approve/reject an approval you have received or cancel an approval you have already sent out.
+From here you can either approve or reject an approval you have received, or cancel an approval you have sent out.
 
-## View Approvals
+## View approvals
 
-From the main approvals app in Teams you can get a view of all the approvals you have sent or received.
+From the main approvals app in Teams, you can get a view of all the approvals you have sent or received.
 
 ![Received approvals](../media/native-approvals-in-teams/approval-app-received.png)
 
@@ -33,8 +33,9 @@ From the main approvals app in Teams you can get a view of all the approvals you
 
 ## Cancel an approval request
 
-From the send approvals section you can also choose to cancel an approval that is still in progress. To do so simply click on the approval you want to cancel and click the Cancel approval option in the resultant dialog.
+From the **Sent** tab, you can choose to cancel an approval that is still in progress. To do so, select the approval you want to cancel and then select the **Cancel** approval option.
 
 ![Cancel approval](../media/native-approvals-in-teams/approval-cancel.png)
 
-Note you can only cancel approvals that are in progress, i.e. ones where all the approvers have not yet responded.
+>[!NOTE]
+>You can only cancel approvals that are in progress.
