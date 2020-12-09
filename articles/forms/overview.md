@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview
+# Overview of flows with Microsoft Forms 
 
 Connectors serve as a way to connect to a service from Power Platform. There are numerous types of form connectors available, including the [Microsoft Forms](/connectors/microsoftforms/) connector. Microsoft Forms is a new part of Office 365 Education that allows teachers and students to quickly and easily create custom quizzes, surveys, questionnaires, registrations, and more. You can follow these instructions to create a Microsoft Form.
 
