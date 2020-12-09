@@ -33,6 +33,10 @@ Perhaps you found a template that is similar to what you are looking for, but is
 
 Did you not find a template you like? You can create a flow from scratch and connect the services you want to use. More information: [How to create a flow from scratch](/get-started-logic-flow.md).  
 
+## Next step
+
+[Top scenarios](popular-scenarios.md)
+
 ### See also
 
 [Create a cloud flow from a template in Power Automate](../get-started-logic-template.md)
