@@ -32,7 +32,7 @@ search.audienceType:
 
 With the Common Data Service connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a flow from Dataverse
+## Initiate a cloud flow from Dataverse
 
 You can use any of the following triggers to initiate your flow:
 
@@ -74,7 +74,7 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 

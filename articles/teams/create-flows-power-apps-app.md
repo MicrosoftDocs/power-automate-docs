@@ -29,17 +29,17 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 - The Power Apps app must be installed before you can create flows in Teams. More information: [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app)
 
-- Before you can use the Power Apps app in Teams to create a flow, a Dataverse for Teams environment must already exist for that team. A Dataverse for Teams environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
+- Before you can use the Power Apps app in Teams to create a cloud flow, a Dataverse for Teams environment must already exist for that team. A Dataverse for Teams environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
 
-## Create a flow in Teams
+## Create a cloud flow in Teams
 
 1. Go to the **Build** tab in your Power Apps app, and then select **See all**.
 
 1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
  
-   ![Create a flow](..\media\overview-teams-flows\new-flow.png)
+   ![Create a cloud flow](..\media\overview-teams-flows\new-flow.png)
 
-1. If this is your first time creating a flow, you'll have to select your country/region, and then select **Get started**.
+1. If this is your first time creating a cloud flow, you'll have to select your country/region, and then select **Get started**.
 
    ![Select your location](..\media\overview-teams-flows\select-location.png)
 
@@ -64,11 +64,11 @@ To find your saved flows:
 
    ![All flows](..\media\overview-teams-flows\all-flows.png)
 
-## Customize a flow
+## Customize a cloud flow
 
 In Teams, you might have acquired flows from an installed app or you might have created them yourself. You can update or customize either of these types of flows. 
 
-1. To update a flow, select the **Build** tab, and then select **See all** to see all the apps and flows in this team.
+1. To update a cloud flow, select the **Build** tab, and then select **See all** to see all the apps and flows in this team.
 
 1. Select the flow that you want to edit, and then select **Edit**.  
 
@@ -76,7 +76,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 ## View details and run history
 
-1. To view the details and run history for a flow, select the **Build** tab, and then select **See all**.
+1. To view the details and run history for a cloud flow, select the **Build** tab, and then select **See all**.
 
 1. Select the flow for which you want to view the details, and then select **Details**.
 
