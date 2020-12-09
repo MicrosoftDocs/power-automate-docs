@@ -144,6 +144,21 @@ conceptualContent:
           url: /power-automate/billing-questions
           itemType: reference       
 
+    - title: Get project guidance on...
+      links:
+        - text: Planning flows
+          url: /power-automate/guidance/planning/planning-phase
+          itemType: reference
+        - text: Designing flows
+          url: /power-automate/guidance/planning/process-design
+          itemType: reference     
+        - text: Creating and testing flows
+          url: /power-automate/guidance/planning/making-phase
+          itemType: reference    
+        - text: Deploying flows
+          url: /power-automate/guidance/planning/deploy-to-production
+          itemType: reference      
+
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
