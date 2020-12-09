@@ -33,7 +33,7 @@ or when using [desktop flows](../../desktop-flows/introduction.md).
 For desktop and website automation, an on-premises data gateway is required so that
 programs that are installed on the on-premises computers (for example, browser extensions
 and Power Automate Desktop) can be accessed from the Power Automate cloud-based
-service. More information: [Install an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)
+service. More information: [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
 ## Authentication by using Microsoft 365 and Azure AD
 
@@ -48,7 +48,7 @@ who's running the automation and not the user who set up the automation original
 This type of authentication is used for systems and services that have an
 independent system other than what's used with Microsoft 365 and Azure Active Directory (Azure AD), with a separate username and password. Sign-ins for services such as Google, Facebook, and
 Twitter all have their own methods for authentication. Some enterprise systems provide
-[single sign-on (SSO)](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+[single sign-on (SSO)](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
 ![Browser sign-in pop-up window](media/browser-login.png "Browser sign-in popup window")
 

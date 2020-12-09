@@ -28,7 +28,7 @@ caused by reasons unrelated to Power Automate.
 In general, you should consider using connectors whenever possible because they're
 more robust and aren't as fragile or easily affected by screen design changes
 as web and desktop application automation. If no connectors are available, but you do have web APIs or other methods of system integration, you
-should consult your IT pro or development teams to help you set up [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/).
+should consult your IT pro or development teams to help you set up [custom connectors](/connectors/custom-connectors/).
 
 **Possible failures with automation by using connectors**
 
@@ -92,7 +92,7 @@ can prevent this by setting up multiple users or groups as owners, to make sure 
 
 For a business-critical automation, one of the ways to reduce
 failures and risks is by setting up a cluster. A *cluster* is a group of computers
-that you can use to run your automation. Power Automate provides [clustering capabilities](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters)
+that you can use to run your automation. Power Automate provides [clustering capabilities](/data-integration/gateway/service-gateway-high-availability-clusters)
 to run the automation concurrently. This is particularly useful for unattended
 scenarios, where you have more than a single computer available to run your
 automation.

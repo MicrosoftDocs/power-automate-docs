@@ -21,7 +21,7 @@ First you determine what kind of connector you can use (if any), and then choose
 ## Choose an automation method
 
 Ideally, all the systems you want to automate will have Power Automate connectors.
-Check the [list of connectors](https://docs.microsoft.com/connectors/custom-connectors/) to see whether
+Check the [list of connectors](/connectors/custom-connectors/) to see whether
 connectors are available for the system you plan to automate. After you
 find the connector, make sure that the actions you need are available for that
 connector. For example, a connector for an email system will need actions for
@@ -29,11 +29,11 @@ connector. For example, a connector for an email system will need actions for
 
 If there are no connectors available, you have the following options to choose from:
 - **Create a custom connector**: This is the preferred method of automation if you're a developer or your organization has a developer who can create
-custom connectors. More information: [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
+custom connectors. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
 - **Use the HTTP connector**: If you're a developer and have one-off scenarios where you need to connect to
 systems that have no connectors available&mdash;but you don't want to set up custom
-connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](https://docs.microsoft.com/azure/connectors/connectors-native-http#add-an-http-trigger)
+connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](/azure/connectors/connectors-native-http#add-an-http-trigger)
 
 - **Create a web browser automation**: If you can't find a connector, and if the system is a web browser&ndash;based
 application or a website, you should consider web browser automation.

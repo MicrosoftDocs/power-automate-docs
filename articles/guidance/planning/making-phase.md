@@ -21,7 +21,7 @@ The next step is to set up the automation.
 1.  Create a cloud flow in [Power Automate](https://flow.microsoft.com).
 
 2. Specify an event or trigger to start the flow with
-    [connectors](https://docs.microsoft.com/connectors/). Based on the way you
+    [connectors](/connectors/). Based on the way you
     want to trigger the automation, you'll specify what event you want to use
     to trigger your Power Automate flow.
 

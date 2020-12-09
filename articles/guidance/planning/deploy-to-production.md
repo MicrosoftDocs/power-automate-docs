@@ -30,7 +30,7 @@ relying on your automation. If your group is large enough, or if you have a lot 
 flows, you might consider creating a security group of two or three people who are willing
 to set aside a small amount of time to keep an eye on all the team flows. Don't
 add your entire organization as a co-owner, though; that just invites more people to mess
-up the flow. If your company has a [Center of Excellence](https://docs.microsoft.com/power-platform/guidance/coe/starter-kit)
+up the flow. If your company has a [Center of Excellence](/power-platform/guidance/coe/starter-kit)
 for Microsoft Power Platform, they might have guidelines for flow ownership.
 
 Keep in mind that the access applies not just to the flows themselves but
@@ -45,7 +45,7 @@ one environment to another. You'll need to start by adding (or asking your admin
 to add) a Microsoft Dataverse database to your environment. After that's done,
 you can go to the **Solutions** tab to create a new solution for your team, or you
 can create multiple solutions if you have a lot of flows that you'd like to
-further organize. There are a number of other benefits too, such as [native storage](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+further organize. There are a number of other benefits too, such as [native storage](/powerapps/maker/common-data-service/data-platform-intro)
 for your data, [child flows](../../create-child-flows.md) to reuse
 functionality, and [solution export](../../overview-solution-flows.md) as a
 backup. Solutions do have some known limitations, though, so this might

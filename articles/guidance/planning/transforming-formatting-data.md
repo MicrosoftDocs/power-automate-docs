@@ -35,27 +35,27 @@ Expressions are Excel-like equations you can use to convert and manipulate data.
 
 The lists of different expressions are listed below:
 
--   [String functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
+-   [String functions](/azure/logic-apps/workflow-definition-language-functions-reference#string-functions)
 
--   [Collection functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
+-   [Collection functions](/azure/logic-apps/workflow-definition-language-functions-reference#collection-functions)
 
--   [Logical comparison functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
+-   [Logical comparison functions](/azure/logic-apps/workflow-definition-language-functions-reference#logical-comparison-functions)
 
--   [Conversion functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
+-   [Conversion functions](/azure/logic-apps/workflow-definition-language-functions-reference#conversion-functions)
 
--   [Implicit data type conversions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
+-   [Implicit data type conversions](/azure/logic-apps/workflow-definition-language-functions-reference#implicit-data-type-conversions)
 
--   [Math functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
+-   [Math functions](/azure/logic-apps/workflow-definition-language-functions-reference#math-functions)
 
--   [Date and time functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
+-   [Date and time functions](/azure/logic-apps/workflow-definition-language-functions-reference#date-and-time-functions)
 
--   [Workflow functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
+-   [Workflow functions](/azure/logic-apps/workflow-definition-language-functions-reference#workflow-functions)
 
--   [URI parsing functions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
+-   [URI parsing functions](/azure/logic-apps/workflow-definition-language-functions-reference#uri-parsing-functions)
 
--   [Manipulation functions: JSON & XML](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
+-   [Manipulation functions: JSON & XML](/azure/logic-apps/workflow-definition-language-functions-reference#manipulation-functions-json--xml)
 
-For the full list, go to [Reference guide to using functions in expressions for Azure Logic Apps and Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference).
+For the full list, go to [Reference guide to using functions in expressions for Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference).
 
 > [!div class="nextstepaction"]
 > [Next step: Formalizing messages and alerts](formalizing-messages-alerts.md)

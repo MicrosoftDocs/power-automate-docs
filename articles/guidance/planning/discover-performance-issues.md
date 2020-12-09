@@ -14,7 +14,7 @@ ms.reviewer: kathyos
 # Diagnosing performance issues
 
 If you're experiencing delays or slowdowns during your flow execution, it might be
-that you've reached your Power Automate limits for the day. More information: [Request limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)
+that you've reached your Power Automate limits for the day. More information: [Request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
 ## Action analytics
 
