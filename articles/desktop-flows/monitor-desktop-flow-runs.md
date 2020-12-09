@@ -23,7 +23,6 @@ search.audienceType:
 ---
 # Monitor desktop flow runs
 
-[This topic is pre-release documentation and is subject to change.] 
 
 As you scale the automations in your business, you may need an easy way to ensure all your desktop flows are running as expected. Monitor all your desktop flow runs in just one location to keep your automations running smoothly. 
 
