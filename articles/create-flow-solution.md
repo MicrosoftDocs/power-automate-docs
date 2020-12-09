@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create a flow in a solution
+# Create a cloud flow in a solution
 
 
 Flows you create in a solution are known as *solution-aware* flows. Follow these steps to create a solution-aware flow.
