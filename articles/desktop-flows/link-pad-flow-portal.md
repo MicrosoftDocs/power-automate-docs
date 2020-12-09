@@ -18,11 +18,11 @@ search.audienceType:
 
 
 
-1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **New**, and from the drop-down select **Instant--from blank**.
+1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **+ New flow**, and from the drop-down select **Instant cloud flow**.
 
    ![my flows instant blank](\media\link-pad-flow-portal\my-flows-instant-blank.png)
 
-1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Instant cloud flow** and then select **Create**.
+1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Manually trigger a flow** and then select **Create**.
 
    ![manually trigger flow](\media\link-pad-flow-portal\manually-trigger-flow.png)
 
@@ -30,23 +30,23 @@ search.audienceType:
 
    ![new step](\media\link-pad-flow-portal\new-step.png)
 
-1. In the **Choose an action** prompt search field, enter **UI flow**. Under **Actions**, select **Run a flow built by Power Automate Desktop**.
+1. In the **Choose an action** prompt search field, enter **power automate desktop**. Under **Actions**, select **Run a flow built with Power Automate Desktop**.
 
    ![action search](\media\link-pad-flow-portal\action-search.png)
 
-1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the UI flow drop-down select **Create a new UI flow**.
+1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the desktop flow drop-down select **Create a new desktop flow**.
 
    ![run desktop flow power automate desktop action properties](\media\link-pad-flow-portal\run-desktop-flow-v2-action-properties.png)
 
-1. Enter a name for the flow and select **Launch app**.
+1. Enter a name for the desktop flow and select **Launch app**.
 
-   ![build desktop flow dialog box](\media\link-pad-flow-portal\build-UI-flow-dialog.png)
+   ![build desktop flow dialog](\media\link-pad-flow-portal\build-desktop-flow-dialog.png)
 
 1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
 
    ![browser open application](\media\link-pad-flow-portal\browser-open-application.png)
 
-1. The Power Automate Console creates the flow with the selected name and opens the flow designer to edit the new flow.
+1. The Power Automate Console creates a desktop flow with the selected name and opens the flow designer to edit the new flow.
 
    ![flow designer blank](\media\link-pad-flow-portal\flow-designer-blank.png)
 
@@ -64,9 +64,9 @@ search.audienceType:
 
    ![add new input var](\media\link-pad-flow-portal\add-new-input-var.png)
 
-1. Create an Input variable to pass data to Power Automate Desktop from Power Automate. The variable can be used anywhere in the flow.
+1. Create an Input variable to pass data from Power Automate to Power Automate Desktop. The variable can be used anywhere in the desktop flow.
 
-1. To pass data to Power Automate from Power Automate Desktop, create an Output variable.
+1. To pass data from Power Automate Desktop to Power Automate, create an Output variable.
 
 1. Back in Power Automate, any input variables appear as fields in the UI action.
 
