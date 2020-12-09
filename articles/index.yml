@@ -72,14 +72,14 @@ conceptualContent:
     - title: Create desktop flows for RPA
       links:
         - text: What are desktop flows?
-          url: /power-automate/desktop-flows/overview
+          url: /power-automate/desktop-flows/introduction
           itemType: overview
         - text: Set up Power Automate Desktop
           url: /power-automate/desktop-flows/setup
           itemType: how-to-guide
-        - text: Use Power Automate Desktop
-          url: /power-automate/desktop-flows/introduction
-          itemType: concept
+        - text: Create desktop flows
+          url: /power-automate/desktop-flows/create-desktop
+          itemType: how-to-guide
 
     - title: Use flows with...
       links:
