@@ -1,10 +1,11 @@
 ---
 title: Partner Sales and Marketing learning catalog
 description: Find all the training options for Power Automate
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # Partner Sales and Marketing Learning Catalog

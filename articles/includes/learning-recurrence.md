@@ -1,4 +1,4 @@
-In this topic, you’ll see how to run pre-scheduled flows using a trigger called **Recurrence**.  You’ll build a flow for the Contoso marketing team that automatically pulls customer email addresses from an Excel table on OneDrive. You’ll configure the flow so that once per day, new email addresses that were added to the spreadsheet are then added to a MailChimp customer list. 
+In this topic, you’ll see how to run pre-scheduled flows using a trigger called **Recurrence**.  You’ll build a cloud flow for the Contoso marketing team that automatically pulls customer email addresses from an Excel table on OneDrive. You’ll configure the flow so that once per day, new email addresses that were added to the spreadsheet are then added to a MailChimp customer list. 
 
 ## Create a scheduled flow
 1. Open **Power Automate**, select **My flows**, and then select **Create from blank**. 
