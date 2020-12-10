@@ -29,6 +29,11 @@ search.audienceType:
 
 Process Advisor records and analyzes your manual business tasks. It discovers inefficiencies and shows optimization and automation opportunities. For example: in a healthcare facility, you could use Process Advisor to record patient check-in procedures. Process Advisor automatically produces a process map that visualizes the check in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time. Using this information and the powerful features in Process Advisor, you can drive improvements to make a difference for business.
 
+>[!IMPORTANT]
+>
+>- This is a preview feature.
+>- Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 ## Prerequisites
 
 Before you start using Process Advisor, make sure you have the following prerequisites:
