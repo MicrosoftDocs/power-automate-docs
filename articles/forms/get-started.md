@@ -24,7 +24,7 @@ search.audienceType:
 
 # Get started
 
-A good way to get started is to use a template that is suited to your business scenario. You can choose from our collection of templates to find the right one accomplish your scenario. [Search our templates](https://preview.flow.microsoft.com/templates/) or browse by category to find your scenario and follow steps shown to create a flow from template.
+A good way to get started is to use a template that is suited to your business scenario. You can choose from our collection of templates to find the right one to accomplish your scenario. [Search our templates](https://preview.flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow steps in the template to create a flow from the template.
 
  > [!div class="mx-imgBorder"]
  > ![Templates screen](..\media\forms\templates-screen.png "Search for a template")
