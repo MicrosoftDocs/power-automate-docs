@@ -4,7 +4,7 @@ description: Use the Power Automate designer to create a desktop flow.
 author: olegmelnykov
 ms.service: flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 12/09/2020
 ms.author: olmelnyk
 ms.reviewer: olmelnyk
 search.app: 
@@ -16,9 +16,10 @@ search.audienceType:
 
 # Create a Power Automate Desktop flow
 
+Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
+
 
 ## Trigger the console from the portal
-
 
 
 1. To create a desktop flow in Power Automate Desktop, open the app and select **New Flow**.

@@ -64,7 +64,7 @@ Follow these steps to share a desktop flow.
    ![Select a flow to share](../media/manage-desktop-flows/select-one.png)
 
 1. Select **Share**.
-1. Select the **Add poeple** field, and then enter the name of the person in your organization with whom you'd like to share the flow.
+1. Select the **Add people** field, and then enter the name of the person in your organization with whom you'd like to share the flow.
 1. Select **Give access**, and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 1. Select the **Share** button.
 
@@ -87,8 +87,10 @@ Once a desktop flow has been shared, owners and co-owners can change the access 
 - The Desktop flow sharing functionality is currently available on recently created environments only.
 
 
-## Learn more
+## More information
 
-- Learn to [create Windows recorder (V1) flows](create-desktop.md).
-- Learn to [create Selenium IDE flows](create-web.md).
-- Learn how to run [desktop flows](run-desktop-flow.md).
+- Create [desktop flows](create-flow.md).
+- Run [desktop flows](run-desktop-flow.md).
+- Create [Windows recorder (V1) flows](create-desktop.md).
+- Create [Selenium IDE flows](create-web.md).
+
