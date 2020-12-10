@@ -34,8 +34,8 @@ Process Advisor records and analyzes your manual business tasks. It discovers in
 Before you start using Process Advisor, make sure you have the following prerequisites:
 
 - A Power Platform environment with Microsoft Dataverse database
-  - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment.md)
-  - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database.md)
+  - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
+  - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database)
 - Access to [Power Automate](https://powerautomate.microsoft.com/)
-- [Power Automate Desktop](/ui-flows/desktop/introduction.md)
+- [Power Automate Desktop](/ui-flows/desktop/introduction)
   - Make sure you have a UI Flows license. To start a trial license, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start your trial license.
