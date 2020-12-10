@@ -31,7 +31,7 @@ More information: [Create a cloud flow in Power Automate](../../cloud-get-starte
 
 ## Basic steps for desktop flows
 
-1.  Create a new desktop flow in [Power Automate Desktop](../../ui-flows/desktop/introduction.md).
+1.  Create a new desktop flow in [Power Automate Desktop](../../desktop-flows/introduction.md).
 
 2.  Add actions and set up configuration.
 
@@ -42,4 +42,4 @@ More information: [Create a cloud flow in Power Automate](../../cloud-get-starte
 5.  If needed, set up triggers and links between cloud flows and Power Automate Desktop.
 
 > [!div class="nextstepaction"]
-> [Next step: Testing strategy](Testing-strategy.md)
+> [Next step: Testing strategy](testing-strategy.md)
