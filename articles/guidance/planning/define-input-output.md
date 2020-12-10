@@ -58,4 +58,4 @@ configuration."
 ![Sample run history with secure inputs and outputs enabled](media/sample-run-history.png "Sample run history with secure inputs and outputs enabled")
 
 > [!div class="nextstepaction"]
-> [Next step: Handling sensitive text](handling-sensitive-text.md)
+> [Next step: Handling sensitive text](../../desktop-flows/run-desktop-flow.md#use-sensitive-text-inputs)
