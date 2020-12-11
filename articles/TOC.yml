@@ -298,7 +298,7 @@
       href: ./desktop-flows/actions-pane.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
-    - name: Debug a cloud flow
+    - name: Debug a desktop flow
       href: ./desktop-flows/debugging-flow.md
     - name: Manage variables and the variables pane
       href: ./desktop-flows/manage-variables.md
