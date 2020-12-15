@@ -400,7 +400,7 @@
     - name: FTP
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
-    href: ./ui-flows/desktop/softomotive-migrator.md
+    href: ./desktop-flows/softomotive-migrator.md
   - name: Other types of desktop flows (Legacy) # <---todo clean up the files inside and the screenshots
     items:
     - name: Introduction to other types of desktop flows # <--- add a banner to say don't use unless u already have investment in this tech. Point to desktop flows all up.
