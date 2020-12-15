@@ -70,15 +70,15 @@ Then you can choose which WinAutomation processes you want to migrate to Power A
 
 If you choose to migrate an password-protected encrypted process, you will be prompted to enter the password you used in WinAutomation to encrypt it. If you omit to enter the requisite password, the migration of the said process will be omitted.
 
- ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
+ ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)
 
 Once the migration starts you will be presented with a text box containing information for the current state (of the migration) and the progress bar.
 
- ![Process migrator for Softomotive products (preview) installer step 9](media/migrator/migrator_9.png)
+ ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
 
 When the migration is completed an auto-generated log file will be presented to you showing the migrated processes
 
- ![Process migrator for Softomotive products (preview) installer step 10](media/migrator/migrator_10.png)
+ ![Process migrator for Softomotive products (preview) installer step 9](media/migrator/migrator_9.png)
  
 You can access the exported logs at C:\Users\{username}\AppData\Local\Microsoft\Process migrator for Softomotive products\Logs
 
@@ -88,6 +88,8 @@ Once the migration completes, visit Power Automate, select My flows and the Desk
 > For the migrated desktop flows to be visible some time is required. To instantly view the migrated desktop flows inside Power Automate Desktop either sign-out and sign-in your Power Automate account again from the Power Automate Desktop or restart the Power Automate Desktop service by exiting the service and re-running the Power Automate Desktop.  
 
  ![Process migrator for Softomotive products (preview) installer step 11](media/migrator/migrator_11.png)
+
+You can modify the migrated processes (now desktop flows) through Power Automate Desktop.
 
  ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
 
