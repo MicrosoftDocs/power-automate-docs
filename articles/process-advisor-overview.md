@@ -1,6 +1,6 @@
 ---
-title: Overview of Process Advisor (preview) | Microsoft Docs
-description: Overview of the Process Advisor feature in Power Automate.
+title: Overview of process advisor (preview) | Microsoft Docs
+description: Overview of the process advisor feature in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of Process Advisor (preview)
+# Overview of process advisor (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-## What is Process Advisor?
+## What is process advisor?
 
-Process Advisor records and analyzes your manual business tasks. It discovers inefficiencies and shows optimization and automation opportunities. For example: in a healthcare facility, you could use Process Advisor to record patient check-in procedures. Process Advisor automatically produces a process map that visualizes the check in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time. Using this information and the powerful features in Process Advisor, you can drive improvements to make a difference for business.
+Process advisor records and analyzes your manual business tasks. It discovers inefficiencies and shows optimization and automation opportunities. For example: in a healthcare facility, you could use process advisor to record patient check-in procedures. process advisor automatically produces a process map that visualizes the check in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time. Using this information and the powerful features in process advisor, you can drive improvements to make a difference for business.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Process Advisor records and analyzes your manual business tasks. It discovers in
 
 ## Prerequisites
 
-Before you start using Process Advisor, make sure you have the following prerequisites:
+Before you start using process advisor, make sure you have the following prerequisites:
 
 - A Power Platform environment with Microsoft Dataverse database
   - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)

@@ -1,6 +1,6 @@
 ---
 title: Protect your data (preview) | Microsoft Docs
-description: How to protect your data in Process Advisor.
+description: How to protect your data in process advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Protect your data in Process Advisor (preview)
+# Protect your data in process advisor (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

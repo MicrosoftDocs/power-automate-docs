@@ -211,7 +211,7 @@
     items:
     - name: Use AI Builder in Power Automate
       href: use-ai-builder.md
-  - name: Process Advisor (preview)
+  - name: Process advisor (preview)
     items:
     - name: Overview 
       href: process-advisor-overview.md

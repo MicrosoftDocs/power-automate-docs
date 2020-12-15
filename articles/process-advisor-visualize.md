@@ -1,6 +1,6 @@
 ---
-title: Visualize processes in Process Advisor | Microsoft Docs
-description: How to visualize your processes in the Process Advisor feature.
+title: Visualize processes in process advisor | Microsoft Docs
+description: How to visualize your processes in the process advisor feature.
 services: ''
 suite: flow
 documentationcenter: na

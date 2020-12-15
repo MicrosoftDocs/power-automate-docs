@@ -1,6 +1,6 @@
 ---
 title: Work with processes and recordings (preview)| Microsoft Docs
-description: How to create and work with processes in Process Advisor.
+description: How to create and work with processes in process advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,10 +25,10 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Before you can use Process Advisor to visualize and analyze your processes, you have to:
+Before you can use process advisor to visualize and analyze your processes, you have to:
 
-- Create your process in Process Advisor.
-- Record the activities that make up the process in the Process Advisor recorder.
+- Create your process in process advisor.
+- Record the activities that make up the process in the process advisor recorder.
 - Prepare the recording for analysis.
 
 ## Create a process
@@ -47,7 +47,7 @@ Here's a short video on process creation: [Create a process](https://go.microsof
 
 Create a recording in one of three ways:
 
-- From the **Create** screen in Process Advisor
+- From the **Create** screen in process advisor
 - Right after process creation
 - From the process details page
 
@@ -55,7 +55,7 @@ Here's a short video on recording a process: [Record a process](https://go.micro
 
 ### Create a recording from the 'Create' screen
 
-1. From the **Process Advisor (preview)** > **Create** screen, select **Add a new recording**.
+1. From the **Process advisor (preview)** > **Create** screen, select **Add a new recording**.
 1. On the **Process** screen, select the process you want to record for.
 1. Select **Open recorder**.
     >[!NOTE]
@@ -68,7 +68,7 @@ Here's a short video on recording a process: [Record a process](https://go.micro
 
 ### Create a recording from the process details page
 
-1. From the **Process Advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
+1. From the **Process advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
 1. Select the name of the process to go to the process details page.
 1. Select **New recording** from the command bar.
 1. Select **Open recorder**.

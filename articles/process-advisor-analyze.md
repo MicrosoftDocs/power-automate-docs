@@ -1,6 +1,6 @@
 ---
 title: Analyze processes | Microsoft Docs
-description: How to use the analyze processes feature in Process Advisor.
+description: How to use the analyze processes feature in process advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,7 +25,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-On the **Process Advisor (preview)** > **Processes** screen, select your process to go to the Details screen. This is where you access most of your process management activities .
+On the **Process advisor (preview)** > **Processes** screen, select your process to go to the Details screen. This is where you access most of your process management activities .
 
 > [!NOTE]
 > Before you can view analytics, your power platform administrator has to [enable the TDS endpoint setting](https://docs.microsoft.com/power-platform/admin/settings-features) for your organization in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
