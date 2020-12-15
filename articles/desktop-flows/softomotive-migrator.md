@@ -53,11 +53,11 @@ When you run the Process migrator for Softomotive products (preview) you will be
 > [!NOTE]
 > You might be prompted to connect to the account you use to access your Environments in order for the migrated processes to be saved as desktop flows. 
 
-   ![Process migrator for Softomotive products (preview) installer step 5](media/migrator/migrator_5.png)
+   ![Process migrator for Softomotive products (preview) installer step 6](media/migrator/migrator_6.png)
   
 For WinAutomation versions later than 9, you will be prompted to enter your WinAutomation master key. This is required for the migration of passwords inside encrypted processes. If you omit to enter your WinAutomation master key, the migration of said processes will proceed but password values won’t be migrated.
 
-   ![Process migrator for Softomotive products (preview) installer step 6](media/migrator/migrator_6.png)
+   ![Process migrator for Softomotive products (preview) installer step 5](media/migrator/migrator_5.png)
 
 > [!NOTE]
 > After entering your master key, the application will retrieve all the WinAutomation processes on your PC for you to choose the ones you are willing to migrate.  
@@ -89,7 +89,7 @@ Once the migration completes, visit Power Automate, select My flows and the Desk
 
  ![Process migrator for Softomotive products (preview) installer step 11](media/migrator/migrator_11.png)
 
- ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_11.png)
+ ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
 
 > [!TIP]
 > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. 
