@@ -18,9 +18,12 @@ search.audienceType:
 
 
 
-To automate web-related tasks, Power Automate Desktop provides the **Automation browser** that is preconfigured and works out of the box. 
+To automate web-related tasks, Microsoft Power Automate Desktop provides the **Automation browser** that is preconfigured and works out of the box. 
 
 Besides the **Automation browser**, the platform supports the four most popular browsers: **Microsoft Edge**, **Internet Explorer**, **Google Chrome**, and **Mozilla Firefox**. These browsers need additional configuration or/and browser extensions to work.
+
+> [!IMPORTANT]
+> To work with Microsoft edge, make sure you have a Chromium-based version installed. Older versions are not supported. 
 
 ## Configuring Internet Explorer
 
