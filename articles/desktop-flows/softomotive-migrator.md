@@ -68,7 +68,7 @@ Then you can choose which WinAutomation processes you want to migrate to Power A
  
  ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/migrator_7.png)
 
-If you choose to migrate an password-protected encrypted process, you will be prompted to enter the password you used in WinAutomation to encrypt it. If you omit to enter the requisite password, the migration of the said process will be omitted.
+If you choose to migrate a password-protected encrypted process, you will be prompted to enter the password you used in WinAutomation to encrypt it. If you choose the option to skip entering the requisite password, the migration of the said process will be omitted.
 
  ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)
 
