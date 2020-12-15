@@ -82,7 +82,9 @@ When the migration is completed an auto-generated log file will be presented to 
  
 You can access the exported logs at C:\Users\{username}\AppData\Local\Microsoft\Process migrator for Softomotive products\Logs
 
-Once the migration completes, visit Power Automate, select My flows and the Desktop flows option. You can now see the process that were migrated
+Once the migration completes, visit Power Automate, select My flows and the Desktop flows option. You can now see the process that were migrated.
+
+ ![Process migrator for Softomotive products (preview) installer step 11b](media/migrator/migrator_11b.png)
   
 > [!NOTE]
 > For the migrated desktop flows to be visible some time is required. To instantly view the migrated desktop flows inside Power Automate Desktop either sign-out and sign-in your Power Automate account again from the Power Automate Desktop or restart the Power Automate Desktop service by exiting the service and re-running the Power Automate Desktop.  
