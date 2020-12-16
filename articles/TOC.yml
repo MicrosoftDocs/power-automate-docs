@@ -213,9 +213,9 @@
       href: use-ai-builder.md
   - name: Process advisor (preview)
     items:
-    - name: Overview 
-    - displayName: Overview of process advisor
+    - name: Overview    
       href: process-advisor-overview.md
+      displayName: Overview of process advisor
     - name: Work with processes and recordings
       href: process-advisor-processes.md
     - name: Analyze processes
@@ -227,18 +227,19 @@
     - name: Administration and security
       items: 
       - name: Security and privacy
-      - displayName: Security and privacy in process advisor
         href: process-advisor-security.md
+        displayName: Security and privacy in process advisor
       - name: Protect your data
         href: process-advisor-protect.md
       - name: Known issues
-      - displayName: Known issues in process advisor
         href: process-advisor-issues.md
+        displayName: Known issues in process advisor
     - name: Glossary
       href: process-advisor-glossary.md
+      displayName: Process advisor glossary
   - name: Microsoft Dataverse
     items:
-    - name: Classic Microsoft Dataverse workflows
+    - name: Classic Dataverse workflows
       items:
       - name: Overview
         href: workflow-processes.md
@@ -250,15 +251,15 @@
         href: best-practices-workflow-processes.md
       - name: Replace background workflows with flows
         href: replace-workflows-with-flows.md
-    - name: Classic Microsoft Dataverse task flows
+    - name: Classic Dataverse task flows
       items:
       - name: Create mobile task flows
         href: create-mobile-task-flow.md
-    - name: Classic Microsoft Dataverse dialogs
+    - name: Classic Dataverse dialogs
       items:
-      - name: Use classic Microsoft Dataverse dialogs
+      - name: Use classic Dataverse dialogs
         href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Microsoft Dataverse dialogs
+      - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
   - name: Troubleshoot
     items:
