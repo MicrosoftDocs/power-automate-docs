@@ -211,9 +211,10 @@
     items:
     - name: Use AI Builder in Power Automate
       href: use-ai-builder.md
-  - name: Process Advisor (preview)
+  - name: Process advisor (preview)
     items:
     - name: Overview 
+    - displayName: Overview of process advisor
       href: process-advisor-overview.md
     - name: Work with processes and recordings
       href: process-advisor-processes.md
@@ -225,11 +226,13 @@
       href: process-advisor-share.md
     - name: Administration and security
       items: 
-      - name: Security and privacy 
+      - name: Security and privacy
+      - displayName: Security and privacy in process advisor
         href: process-advisor-security.md
       - name: Protect your data
         href: process-advisor-protect.md
-      - name: Known issues 
+      - name: Known issues
+      - displayName: Known issues in process advisor
         href: process-advisor-issues.md
     - name: Glossary
       href: process-advisor-glossary.md

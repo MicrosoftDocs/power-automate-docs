@@ -1,6 +1,6 @@
 ---
-title: Share a Process Advisor process (preview) | Microsoft Docs
-description: How to share a process in the Process Advisor feature in Power Automate.
+title: Share a process advisor process (preview) | Microsoft Docs
+description: How to share a process in the process advisor feature in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,18 +25,18 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-When you create a process in Process Advisor, only you can see it. But getting input from others is a key to understanding different ways to accomplish the process you have created. Share your processes with others in your organization so they can also manage or contribute to them. There are two primary ways to share a process in Process Advisor:
+When you create a process in process advisor, only you can see it. But getting input from others is a key to understanding different ways to accomplish the process you have created. Share your processes with others in your organization so they can also manage or contribute to them. There are two primary ways to share a process in process advisor:
 
 - Share a process with a co-owner.
 - Share a process with a contributor.
 
-If you're the co-owner or contributor of a process, you'll find it listed on the Processes page in Process Advisor.
+If you're the co-owner or contributor of a process, you'll find it listed on the Processes page in process advisor.
 Important: You must be the co-owner to add or remove owners and contributors to a process.
 
 ## Share action
 
-The share action is available on the Processes screen in Process Advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on Process Advisor system entities.
-The share action is also available on the process detail screen in Process Advisor, with the same conditions.
+The share action is available on the Processes screen in process advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on process advisor system entities.
+The share action is also available on the process detail screen in process advisor, with the same conditions.
 Sharing is not needed at the recordings level. Once you share a process with a co-owner, they will be able to manage the recordings associated to the process.
 
 ## Share panel
