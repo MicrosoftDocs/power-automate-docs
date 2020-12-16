@@ -1,6 +1,6 @@
 ---
 title: Known issues (preview) | Microsoft Docs
-description: Known issues in Process Advisor.
+description: Known issues in process advisor.
 services: ''
 suite: flow
 documentationcenter: na
@@ -26,15 +26,15 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-**Unable to access Process Advisor**
+**Unable to access process advisor**
 
-If you cannot see Process Advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following requirements:
+If you cannot see process advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following requirements:
 
 - You have a Power Automate License
 
    If you don’t have a license, you can activate your trial license from UI Flow in Power Automate.
-- You have access to the Power Automate environment and the permissions required by Process Advisor described in the [Security](process-advisor-security.md) section.
+- You have access to the Power Automate environment and the permissions required by process advisor described in the [Security](process-advisor-security.md) section.
 - Your browser has the feature to accept 3rd party cookies enabled.
   You can enable it in your browser settings.
 
-We'll continue to add issues here, but if you are experiencing an issue not mentioned here, check the **Process Advisor community forums**.
+We'll continue to add issues here, but if you are experiencing an issue not mentioned here, check the **Process advisor community forums**.
