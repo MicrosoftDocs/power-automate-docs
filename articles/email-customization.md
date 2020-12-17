@@ -90,7 +90,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
-   ![A screenshot of a flow that gets all group members and then sends email to each member](./media/email/group-members-flow.png)
+   ![A screenshot of a cloud flow that gets all group members and then sends email to each member](./media/email/group-members-flow.png)
 
 ## Send automatic replies from a shared mailbox
 

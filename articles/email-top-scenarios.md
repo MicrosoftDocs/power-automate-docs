@@ -43,7 +43,7 @@ To send email from your account, use the [Send an email (V2)](https://docs.micro
 
 You can send the email to one or more recipients. You can use the rich text editor to make text bold, add color, and format the email similar to the way you do in Outlook. You can add static text or values from previous actions by using dynamic content. You can use the **send as** option to send email as someone else, or on behalf of someone else. (To use this option, you'll need the permissions in Outlook to send on another person's behalf.) You can find all email you send in your **Sent items** folder in Outlook.
 
-For example, if you have a flow that sends you an email as soon as your item is approved, you can add the link to the approved item as an attachment.
+For example, if you have a cloud flow that sends you an email as soon as your item is approved, you can add the link of the approved item as an attachment.
 
 ![A screenshot that displays an example of an email that uses dynamic content in the body of the email](./media/email/dynamic-content.png)
 

@@ -36,7 +36,7 @@ Here's what you need to get started with approvals.
 
 ## Permissions to create a Dataverse database
 
-When you create approval flows, they are saved in Dataverse. Initially, when you use the approvals connector in a flow that’s located in a non-default environment, the system automatically provisions a database. To be successful, the user who runs the first approval flow must have an administrator role in the environment.
+When you create approval flows, they are saved in Dataverse. Initially, when you use the approvals connector in a cloud flow that’s located in a non-default environment, the system automatically provisions a database. To be successful, the user who runs the first approval flow must have an administrator role in the environment.
 
 It can take a few minutes for the database provisioning to complete, and you’ll notice this delay the first time that you run the flow. Other users who create approval flows do not need any elevated permissions in the environment.
 
