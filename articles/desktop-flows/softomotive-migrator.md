@@ -29,7 +29,7 @@ For Process migrator for Softomotive products (preview) to be able to install an
  
  
 ## Installing Process migrator for Softomotive products (preview) 
-After successfully downloading the setup file of Process migrator for Softomotive products (preview), run it.  
+After successfully [downloading the setup file](https://go.microsoft.com/fwlink/?linkid=2151571) for Process migrator for Softomotive products (preview), run it.  
 
 > [!NOTE]
 > - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview).  
