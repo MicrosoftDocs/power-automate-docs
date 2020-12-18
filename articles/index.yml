@@ -57,7 +57,7 @@ conceptualContent:
           url: /power-automate/frequently-asked-questions
           itemType: reference      
     
-    - title: Create flows
+    - title: Create cloud flows
       links:
         - text: Automated flows
           url: /power-automate/get-started-logic-flow
@@ -67,41 +67,41 @@ conceptualContent:
           itemType: overview
         - text: Approval flows
           url: /power-automate/modern-approvals
-          itemType: overview 
-        - text: Business process flows
-          url: /power-automate/business-process-flows-overview
           itemType: overview            
     
-    - title: Use UI flows for RPA
+    - title: Create desktop flows for RPA
       links:
-        - text: What is UI flows?
-          url: /power-automate/ui-flows/overview
+        - text: What are desktop flows?
+          url: /power-automate/desktop-flows/introduction
           itemType: overview
-        - text: Set up UI flows
-          url: /power-automate/ui-flows/setup
+        - text: Set up Power Automate Desktop
+          url: /power-automate/desktop-flows/setup
           itemType: how-to-guide
-        - text: Use Power Automate Desktop (Preview)
-          url: /power-automate/ui-flows/desktop/introduction
-          itemType: concept
+        - text: Create desktop flows
+          url: /power-automate/desktop-flows/create-flow
+          itemType: how-to-guide
 
     - title: Use flows with...
       links:
-        - text: Microsoft Teams
+        - text: Teams
           url: /power-automate/teams/overview
           itemType: overview
         - text: SharePoint
           url: /power-automate/sharepoint-overview
-          itemType: overview        
-        - text: Microsoft 365 Outlook
+          itemType: overview
+        - text: Email
           url: /power-automate/email-overview
-          itemType: how-to-guide        
+          itemType: overview
+        - text: Forms
+          url: /power-automate/forms/overview
+          itemType: overview 
     
     - title: Use solutions for ALM
       links:
         - text: Use solutions to distribute flows
           url: /power-automate/overview-solution-flows
           itemType: overview
-        - text: Create a flow in a solution
+        - text: Create a cloud flow in a solution
           url: /power-automate/create-flow-solution
           itemType: overview
         - text: Implement healthy ALM using solutions
@@ -134,7 +134,7 @@ conceptualContent:
 
     - title: Support and licensing
       links:
-        - text: Troubleshoot a flow
+        - text: Troubleshoot a cloud flow
           url: /power-automate/fix-flow-failures
           itemType: how-to-guide
         - text: Power Automate community
@@ -143,6 +143,21 @@ conceptualContent:
         - text: Power Automate licensing
           url: /power-automate/billing-questions
           itemType: reference       
+
+    - title: Get project guidance on...
+      links:
+        - text: Planning flows
+          url: /power-automate/guidance/planning/planning-phase
+          itemType: reference
+        - text: Designing flows
+          url: /power-automate/guidance/planning/process-design
+          itemType: reference     
+        - text: Creating and testing flows
+          url: /power-automate/guidance/planning/making-phase
+          itemType: reference    
+        - text: Deploying flows
+          url: /power-automate/guidance/planning/deploy-to-production
+          itemType: reference      
 
 # additionalContent section (optional)
 # Card with summary style

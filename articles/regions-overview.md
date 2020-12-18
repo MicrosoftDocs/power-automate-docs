@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/25/2020
+ms.date: 08/25/2020
 ms.author: hamenon
 search.app: 
   - Flow
@@ -47,7 +47,6 @@ Australia|Australia East, Australia Southeast
 Canada|Canada Central, Canada East
 Europe|North Europe, West Europe
 France|France Central, France South
-Germany|Germany West Central, Germany North
 India|Central India, South India, West India
 Japan|Japan East, Japan West
 South America|Brazil South
