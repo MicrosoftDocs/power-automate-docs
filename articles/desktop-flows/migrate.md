@@ -25,24 +25,29 @@ search.audienceType:
 # Migrate from Windows recorder (V1) to Power Automate Desktop
 
 You can migrate desktop flows you've created with the legacy Windows recorder
-(v1) into Power Automate Desktop flows in just a few steps.
+(V1) into Power Automate Desktop flows in just a few steps.
 
 Follow these steps to migrate a legacy desktop flow.
 
 1. Sign into Power Automate.
 1. Select **My flows** > **Desktop flows**.
 1. Select the desktop flow you'd like to migrate to Power Automate Desktop.
-1. Select **Details**.
 1. Select **Migrate (preview)** on the desktop flow details page.
 
-   ![A screenshot that displays the migrate button](media/migrate-win-recorder/migrate-button.png)
+   ![A screenshot that displays the migrate option for a desktop flow](media/migrate-win-recorder/migrate-button.png)
 
-The migration wizard launches, when the process completes, a copy of the desktop flow is saved in the current environment. The resulting desktop flow can then be edited using the Power Automate Desktop designer. The original Windows recorder-based flow remains unchanged, in the original environment.
+   The migration wizard launches.
+
+1. Select **Migrate**.
+
+   ![A screenshot that displays the migrate button](media/migrate-win-recorder/migrate-wizard.png)
+   
+   When the process completes, a copy of the desktop flow is saved in the current environment. The resulting desktop flow can then be edited using the Power Automate Desktop designer. The original Windows recorder desktop flow remains unchanged.
+
+   ![A screenshot that displays the migrated desktop flow](media/migrate-win-recorder/migrated-flow.png)
 
    >[!NOTE]
    >Migration is available only for desktop flows that were built with Windows recorder (V1). It's not supported for desktop flows built with Selenium IDE.
-
-   ![Graphical user interface, application Description automatically generated](media/migrate-win-recorder/success.png)
 
 Once you test your new desktop flow, you may go to your existing cloud flows and
 replace the UI automation action. You need to use the **Run a desktop flow built with Power Automate Desktop** action and use the newly created desktop flow.
