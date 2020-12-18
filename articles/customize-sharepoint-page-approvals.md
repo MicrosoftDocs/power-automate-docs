@@ -24,7 +24,8 @@ SharePoint site admins can use Power Automate to require new or updated site pag
 
 In this article, you'll learn how to configure your SharePoint site to use a cloud flow to require changes to the site to be approved before they go live.
 
-Note: This is currently not available in all Goverment cloud environments. 
+>[!NOTE]
+SharePoint approvals isn't available in all goverment cloud environments. 
 
 ## Configure SharePoint for page approvals
 
