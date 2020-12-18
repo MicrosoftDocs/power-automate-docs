@@ -405,14 +405,16 @@
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
-  - name: Other types of desktop flows (Legacy) # <---todo clean up the files inside and the screenshots
+  - name: Other types of desktop flows (Legacy)
     items:
-    - name: Introduction to other types of desktop flows # <--- add a banner to say don't use unless u already have investment in this tech. Point to desktop flows all up.
+    - name: Introduction to other types of desktop flows
       href: ./desktop-flows/overview.md
     - name: Create and test desktop flows with Windows recorder (V1)
       href: ./desktop-flows/create-desktop.md
     - name: Edit desktop flows with Windows recorder (V1)
       href: ./desktop-flows/edit-desktop.md
+    - name: Migrate from Windows recorder (V1) to Power Automate Desktop
+      href: ./desktop-flows/migrate.md
     - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
       href: ./desktop-flows/inputs-outputs-desktop.md
       items:
