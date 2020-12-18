@@ -23,8 +23,6 @@ search.audienceType:
 ---
 # Responding to GDPR Data Subject Delete Requests for Power Automate
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
-
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
 

@@ -1,6 +1,5 @@
 ---
 title: "Overview of classic Common Data Service workflows | MicrosoftDocs"
-description: Overview of classic Common Data Service workflows
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "matp"
@@ -18,8 +17,6 @@ search.audienceType:
 ---
 
 # Classic Common Data Service background workflows 
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
 

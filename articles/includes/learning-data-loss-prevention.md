@@ -38,6 +38,6 @@ There is also a more [detailed walk-through](https://docs.microsoft.com/power-pl
 ## Examples
 * If you were to create a policy that restricts flows to share business data only among SharePoint, Office 365 users, Office 365 Outlook, OneDrive for Business, Dynamics 365, SQL Server and Salesforce, it would look like this:  
   ![](./media/learning-data-loss-prevention/a-few-business-centric-services.png)  
-* Here's what it would look like if you decided to create a policy to not allow any members of a specific environment to create a flow that shares SharePoint data. Notice that SharePoint is the only service in the **business data only** data group:  
+* Here's what it would look like if you decided to create a policy to not allow any members of a specific environment to create a cloud flow that shares SharePoint data. Notice that SharePoint is the only service in the **business data only** data group:  
   ![business data only](./media/learning-data-loss-prevention/sharepoint-only-no-sharing-guided-learning.png)
 

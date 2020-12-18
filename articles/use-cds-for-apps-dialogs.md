@@ -19,8 +19,6 @@ search.audienceType:
 ---
 # Use Common Data Service dialogs for guided processes (Deprecated)
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
-
 
 [Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). You should replace dialogs with business process flows or canvas apps. More information: [Replace dialogs with business process flows or canvas apps](replace-dialogs.md) 
 
