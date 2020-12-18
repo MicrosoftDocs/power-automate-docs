@@ -50,7 +50,7 @@ Power Automate offers the following experiences to find or export personal data 
 |Gateway|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 |Gateway permissions|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 
-## Export a flow
+## Export a cloud flow
 
 Either an end user or an administrator, who has granted themselves access to the flow, can export the flow by following these steps:
 
@@ -64,11 +64,11 @@ Either an end user or an administrator, who has granted themselves access to the
 
 1. Select **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 ## Export run history
 
-Run history includes a list of all executions that have occurred for a flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
+Run history includes a list of all executions that have occurred for a cloud flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
 Either an end user or an administrator, who has been granted access to the flow through the Power Automate Admin Center, can follow these steps to export this data:
 

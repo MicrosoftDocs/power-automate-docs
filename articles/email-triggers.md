@@ -1,6 +1,6 @@
 ---
 title: Run flows based on email properties | Microsoft Docs
-description: Start a flow based on properties such as the subject, the sender's address, or the recipient's address of an email.
+description: Start a cloud flow based on properties such as the subject, the sender's address, or the recipient's address of an email.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,18 +21,18 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Trigger a flow based on email properties
+# Trigger a cloud flow based on email properties
 
-Use the **when a new email arrives (V3)** trigger to create a flow that runs when one or more of the following email properties match criteria that you provide:
+Use the **When a new email arrives (V3)** trigger to create a cloud flow that runs when one or more of the following email properties match criteria that you provide:
 
 | Property | When to use |
 | --- | --- |
-| Folder |Trigger a flow whenever emails arrive in a specific folder. This property can be useful if you have rules that route emails to different folders. |
-| To |Trigger a flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
-|CC|Trigger a flow based on the CC address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox.
-| From |Trigger a flow based on the sender's email address. |
-| Importance |Trigger a flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
-| Has Attachment |Trigger a flow based on the presence of attachments in incoming emails. |
+| Folder |Trigger a cloud flow whenever emails arrive in a specific folder. This property can be useful if you have rules that route emails to different folders. |
+| To |Trigger a cloud flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
+|CC|Trigger a cloud flow based on the CC address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox.
+| From |Trigger a cloud flow based on the sender's email address. |
+| Importance |Trigger a cloud flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
+| Has Attachment |Trigger a cloud flow based on the presence of attachments in incoming emails. |
 | Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs *actions* that are based on the results of your search. |
 
 > [!IMPORTANT]
@@ -50,8 +50,8 @@ In the following walkthroughs, we check all properties in the **when a new email
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 * Connections to Office, Outlook, and the push notification service
 
-## Trigger a flow based on an email's subject
-In this walkthrough, we create a flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
+## Trigger a cloud flow based on an email's subject
+In this walkthrough, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
 >[!NOTE]
 >While this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you could store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
@@ -80,8 +80,8 @@ Ok, let's get started:
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
-## Trigger a flow based on an email's sender
-In this walkthrough, we create a flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
+## Trigger a cloud flow based on an email's sender
+In this walkthrough, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -103,7 +103,7 @@ In this walkthrough, we create a flow that sends a push notification to your mob
    
     ![Save flow](./media/email-triggers/email-triggers-sender-5.png)
 
-## Trigger a flow when emails arrive in a specific folder
+## Trigger a cloud flow when emails arrive in a specific folder
 If you have rules that route email to different folders based on certain properties, such as the address, you may want this type of flow.
 
 Let's get started:

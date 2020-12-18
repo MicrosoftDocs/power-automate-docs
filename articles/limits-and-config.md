@@ -40,7 +40,7 @@ Flows have different limits depending on the *performance profile* of the flow. 
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two. For the exact set of plans that include Power Automate capabilities, see the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-The flow uses the plan of the owner of a flow. If a flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
+The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
 
 ## Flow definition limits
 
@@ -85,8 +85,8 @@ Limits on how long flows will remain turned on before they expire and get turned
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A flow that has a trigger or actions which fail continuously will be turned off. A flow that is continually throttled is likewise considered have errors. Fix your trigger or actions to keep the flow turned on. |
-| Not triggered (dormant) flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, no expiration limit for all others | A flow that has no successful triggers will expire and be turned off; to keep the flow active you may need to adjust your trigger or purchase a standalone Power Automate license plan |
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. A cloud flow that is continually throttled is likewise considered have errors. Fix your trigger or actions to keep the flow turned on. |
+| Not triggered (dormant) flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, no expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off; to keep the flow active you may need to adjust your trigger or purchase a standalone Power Automate license plan |
 
 ## Concurrency, looping, and debatching limits
 
@@ -105,16 +105,16 @@ Here are the limits for a single flow run:
 
 ## Throughput limits
 
-Here are the time-bound limits for a single version of a flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
+Here are the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
 
-If a flow exceeds one of the limits, activity for the flow will be slowed and automatically resume when the sliding window has activity below the limit. However, if a flow consistently remains above the limits for 14 days, it will be turned off (see above Duration limits). Be sure to monitor email for notifications about such flows. If a flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, activity for the flow will be slowed and automatically resume when the sliding window has activity below the limit. However, if a cloud flow consistently remains above the limits for 14 days, it will be turned off (see above Duration limits). Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
 
 >[!TIP]
 >Because these limits are for a single version, if you update your flow it will reset these limits.
 
 ### Action request limits
 
-There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
+There are limits to the number of action executions a cloud flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -134,7 +134,7 @@ The runtime endpoint is the direct access URL for a given flow. It starts with s
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Concurrent inbound calls | ~1,000 | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a flow's run history. You can distribute the workload across more than one flow as necessary. |
+| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a cloud flow's run history. You can distribute the workload across more than one flow as necessary. |
 | Invoke calls per 5 minutes | 4,500 for Low, 45,000 for all others | You can distribute workload across more than one flow as necessary. |
 
 ### Content throughput limits
@@ -165,7 +165,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 | Inbound request | 120 seconds <br>(2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers. <br />**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
 
 >[!NOTE]
->If you test a flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
+>If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
 
 
 ### Message size
@@ -194,9 +194,9 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ## Turning off or deleting flows
 
-When you turn off a flow, no new runs are instantiated. All in-progress and pending runs continue until they finish, which might take time to complete.
+When you turn off a cloud flow, no new runs are instantiated. All in-progress and pending runs continue until they finish, which might take time to complete.
 
-When you delete a flow, no new runs are instantiated. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
+When you delete a cloud flow, no new runs are instantiated. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
 
 
 ## Custom connector limits
@@ -218,3 +218,33 @@ There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#
 ## Other configuration
 
 See [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled and instant flows, including required endpoints. 
+
+## IP addresses
+
+Requests from Power Automate use IP addresses that are associated with the region of the [environment](https://docs.microsoft.com/power-automate/environments-overview-maker) in which your flow exists.
+
+Use these IP address in your allow list to facilitate communications from Power Automate. 
+
+Calls made from a connector in a cloud flow will come from the IP addresses listed here:
+
+Region | Outbound IP addresses
+-------|--------------------
+| Asia | 13.75.113.224, 52.187.147.27, 52.175.23.169, 52.187.68.19, 13.75.36.64 - 13.75.36.79, 104.214.164.0 - 104.214.164.31, 13.67.8.240 - 13.67.8.255, 13.67.15.32 - 13.67.15.63 |
+| Australia  | 13.75.139.0, 13.77.45.34, 13.72.243.10, 13.70.136.174, 13.70.72.192 - 13.70.72.207, 13.70.78.224 - 13.70.78.255, 13.77.50.240 - 13.77.50.255, 13.77.55.160 - 13.77.55.191 |
+| Brazil | 191.234.180.112, 104.214.107.148, 104.41.59.51, 191.233.203.192 - 191.233.203.207, 191.233.207.160 - 191.233.207.191 |
+| Canada | 52.242.36.40, 40.85.206.95, 52.237.24.126, 52.242.35.152, 40.69.106.240 - 40.69.106.255, 40.69.111.0 - 40.69.111.31, 13.71.170.208 - 13.71.170.223, 13.71.175.160 - 13.71.175.191|
+| Europe | 52.169.216.196, 40.89.131.3, 52.174.180.160, 52.178.150.68, 94.245.91.93, 52.174.88.118, 40.91.208.65, 137.117.161.181, 13.69.171.0, 13.69.227.208 - 13.69.227.223, 13.69.231.192 - 13.69.231.223, 13.69.64.208 - 13.69.64.223, 13.69.71.192 - 13.69.71.223 |
+| France  | 40.89.155.59, 40.89.135.2, 52.136.133.184, 40.79.130.208 - 40.79.130.223, 40.79.148.96 - 40.79.148.127, 40.79.178.240 - 40.79.178.255, 40.79.180.224 - 40.79.180.255 |
+| Germany  | 51.116.158.96, 51.116.211.212, 51.116.236.78, 51.116.155.80 - 51.116.155.95, 51.116.158.96 - 51.116.158.127, 51.116.59.16 - 51.116.59.31, 51.116.60.192 - 51.116.60.223 |
+| India  | 13.71.127.169, 13.71.30.211, 52.172.211.12, 13.71.125.22, 104.211.189.218, 20.192.184.32 - 20.192.184.63, 40.78.194.240 - 40.78.194.255, 20.38.128.224 - 20.38.128.255, 104.211.146.224 - 104.211.146.239, 20.43.123.0 - 20.43.123.31, 104.211.81.192 - 104.211.81.207 |
+| Japan | 104.215.28.128, 13.71.128.159, 13.71.153.19, 104.215.61.248, 40.74.100.224 - 40.74.100.239, 40.80.180.64 - 40.80.180.95, 13.78.108.0 - 13.78.108.15, 40.79.189.64 - 40.79.189.95 |
+| Switzerland | 51.103.143.163, 51.107.86.217, 51.107.231.190, 51.107.59.16 - 51.107.59.31, 51.107.60.224 - 51.107.60.255, 51.107.155.16 - 51.107.155.31, 51.107.156.224 - 51.107.156.255 |
+| United Arab Emirates | 20.45.67.36, 20.45.67.28, 20.37.74.192 - 20.37.74.207, 40.120.8.0 - 40.120.8.31 |
+| United Kingdom | 51.140.77.227, 51.140.245.29, 51.140.80.51, 51.140.61.124, 51.141.47.105, 51.141.124.13, 51.105.77.96 - 51.105.77.127, 51.140.148.0 - 51.140.148.15, 51.140.211.0 - 51.140.211.15, 51.140.212.224 - 51.140.212.255  |
+| United States | 104.41.132.180, 13.91.93.63, 52.173.245.164, 40.71.249.205, 40.114.40.132, 52.232.188.154, 104.209.247.23, 52.162.242.161, 104.42.122.49, 40.112.195.87, 13.91.97.196, 40.71.193.203, 104.210.14.156, 13.66.130.243, 65.52.197.64, 40.113.242.246, 40.71.11.80 - 40.71.11.95, 40.71.15.160 - 40.71.15.191, 52.162.107.160 - 52.162.107.175, 52.162.111.192 - 52.162.111.223, 13.89.171.80 - 13.89.171.95, 13.89.178.64 - 13.89.178.95, 40.70.146.208 - 40.70.146.223, 40.70.151.96 - 40.70.151.127, 13.86.223.32 - 13.86.223.63, 40.112.243.160 - 40.112.243.175 |
+| Preview (United States)  | 13.78.178.187, 52.151.42.172, 52.161.102.22, 13.78.132.82, 52.183.78.157, 13.71.195.32 - 13.71.195.47, 13.71.199.192 - 13.71.199.223, 13.66.140.128 - 13.66.140.143, 13.66.145.96 - 13.66.145.127 |
+|United States Government (GCC)|20.140.137.128 - 20.140.137.159, 52.127.5.224 - 52.127.5.255, 127.0.0.1|
+|Department of Defense (DoD) in Azure Government|52.127.61.192 - 52.127.61.223, 127.0.0.1|
+
+
+

@@ -33,7 +33,7 @@ The flows you create can trigger when a Dataverse record is created, updated, or
 
 Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a flow with Common Data Service (current environment) connector
+## Initiate a cloud flow with Common Data Service (current environment) connector
 
 Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 
@@ -84,7 +84,7 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 
@@ -92,7 +92,7 @@ Use any of the following actions to write data into Dataverse:
 
 ![A screenshot that displays the actions](./media/cds-connector-native/actions.png)
 
-Here's an example of a flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
+Here's an example of a cloud flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
 
 > ![Followup task](./media/cds-connector-native/example-flow.png)
 
