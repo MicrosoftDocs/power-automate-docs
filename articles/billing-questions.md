@@ -61,11 +61,11 @@ On the [pricing page](https://flow.microsoft.com/pricing/), see the **FAQ** sect
 
 ## What happens if I try to execute runs too frequently?
 
-Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes have elapsed.
+Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a cloud flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes have elapsed.
 
 ## What counts as a run?
 
-Whenever a flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. Checks for new data don't count as runs.
+Whenever a cloud flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. Checks for new data don't count as runs.
 
 ## Are there differences between Microsoft Accounts and work or school accounts for billing?
 
@@ -77,7 +77,7 @@ To upgrade, use a work or school account, or create an [Office 365 trial account
 
 ## Why did I run out of runs when my flow only ran a few times?
 
-Certain flows may run more frequently than you expect. For example, you might create a flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. This action counts as a run.
+Certain flows may run more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. This action counts as a run.
 
 You can work around this issue by putting all the filtering you need into the trigger. In the push notification example, expand the **Advanced Options** menu, and then provide your manager's email address in the **From** field.
 

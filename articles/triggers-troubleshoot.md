@@ -184,7 +184,7 @@ Confirm you've [set the start time](https://powerusers.microsoft.com/t5/Using-Fl
 
 If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred.  The wake-up time depends on the license plan on which the flow runs. 
 
-For example, your flows may run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed. 
+For example, your flows may run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a cloud flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed. 
 
 And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins. 
 
@@ -241,9 +241,9 @@ You can also access these flows in the [Power Platform admin center](https://adm
 ## Power Apps apps trigger issues
 
 <!--todo: steps are not clear-->
-Unable to rename actions in a flow – This is a known issue for flows that use Power Apps triggers. As a work around to rename actions, remove the trigger. Rename the actions and add your Power Apps trigger and configure variables wherever needed.
+Unable to rename actions in a cloud flow – This is a known issue for flows that use Power Apps triggers. As a work around to rename actions, remove the trigger. Rename the actions and add your Power Apps trigger and configure variables wherever needed.
 
-Once a Power Apps app is published, make copies of the flows used by the Power Apps app to make any updates. Any update to a flow that's referenced by a published Power Apps app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the Power Apps app.
+Once a Power Apps app is published, make copies of the flows used by the Power Apps app to make any updates. Any update to a cloud flow that's referenced by a published Power Apps app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the Power Apps app.
 
 ## SharePoint trigger issues
 
