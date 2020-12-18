@@ -1,6 +1,6 @@
 ---
-title: Create a flow from a template | Microsoft Docs
-description: Create a flow from any of several built-in templates.
+title: Create a cloud flow from a template | Microsoft Docs
+description: Create a cloud flow from any of several built-in templates.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,12 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow from a template in Power Automate
+# Create a cloud flow from a template in Power Automate
 
-Create a flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
+Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
 
 >[!TIP]
->[Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
+>[Create a cloud flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
 **Prerequisites**
 
@@ -65,6 +65,6 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 
 * [Watch your flow in action](see-a-flow-run.md)
 * [Publish your own template](publish-a-template.md)
-* [Use a template for the Microsoft Dataverse](common-data-model-intro.md)
+* [Use a template for the Common Data Service](common-data-model-intro.md)
 * [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
 

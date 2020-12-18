@@ -20,8 +20,7 @@ search.audienceType:
   - developer
 ---
 # Sample: Work with business process flows
-
-[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 This sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for an entity record, retrieving active path for a business process flow instance and its process stages, and changing the active stage. For information about these concepts, see [Work with business process flows using code](business-process-flows-code.md)  
 
@@ -31,7 +30,7 @@ This sample demonstrates how to programmatically work with business process flow
 ## Prerequisites  
  Before you can run the sample:  
 
-1. Have access to a Microsoft Dataverse environment.  
+1. Have access to a Common Data Service environment.  
 
 2. Have appropriate privileges on the Lead, Opportunity, and Workflow entities and business process  flow definition entity records used in this sample.  
 
