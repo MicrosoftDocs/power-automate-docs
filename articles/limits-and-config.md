@@ -44,15 +44,6 @@ If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 pl
 
 The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
 
-## Throughput limits
-
-Here are the time-bound limits for a single version of a flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
-
-If a flow exceeds one of the limits, activity for the flow will be slowed and automatically resume when the sliding window has activity below the limit. However, if a flow consistently remains above the limits for 14 days, it will be turned off (see above Duration limits). Be sure to monitor email for notifications about such flows. If a flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
-
->[!TIP]
->Because these limits are for a single version, if you update your flow it will reset these limits.
-
 ### Action request limits
 
 There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
