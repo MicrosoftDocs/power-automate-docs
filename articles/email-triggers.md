@@ -92,13 +92,13 @@ In this walkthrough, we create a cloud flow that sends a push notification to yo
 
 1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
    
-    ![Notification details](./media/email-triggers/email-triggers-sender-notification.png)
+    ![Mobile notification details](./media/email-triggers/email-triggers-sender-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
    
-    ![Save flow](./media/email-triggers/email-triggers-sender-5.png)
+    ![Create flow](./media/email-triggers/email-triggers-sender-5.png)
 
 ## Trigger a cloud flow when emails arrive in a specific folder
 
@@ -128,6 +128,6 @@ Let's get started.
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
    
-    ![Save flow](./media/email-triggers/email-triggers-7.png)
+    ![A screenshot showing the option to save the cloud flow](./media/email-triggers/email-triggers-7.png)
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
