@@ -24,7 +24,7 @@ search.audienceType:
 
 # Create a flow from your phone
 
-Create an cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
+Create a cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
 
 In this topic, we'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
 
