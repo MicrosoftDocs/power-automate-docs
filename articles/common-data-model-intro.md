@@ -11,7 +11,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2020
+ms.date: 11/18/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,8 +23,7 @@ search.audienceType:
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/). 
-
+Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/).
 
 For example, you can use Dataverse within Power Automate in these key ways:
 
@@ -42,32 +41,25 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Sign in to your environment
 
-1. Browse to [Power Automate](https://flow.microsoft.com), and then select **Sign in** in the upper-right corner.
-   
-    ![Sign in](./media/common-data-model-intro/signin-flow.png)
-1. In the top right menu you select the environment in which you created the database in powerapps.com.
-   
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. In the top right menu, select the environment where you created the Dataverse table. 
+
     >[!IMPORTANT]
-    >If you don't select the same environment, you won't see your entities.
-   
-    ![Select environment](./media/common-data-model-intro/select-environment.png)
+    >If you don't select the same environment, you won't see your Dataverse tables.
 
 ## Use a template
 
-1. In the **Search for a template by app, task, or industry** box at the top of the screen, enter **common**, and then press **enter**.
+1. In the left-side navigation pane, select **Templates**, and then search for **Copy Notes from Lead to Opportunity**.
+    >
+    >[!NOTE]
+    >Common Data Service is now Microsoft Dataverse. Template names may be renamed at some point.
 
-   You will see a list of templates with the word "common" in their names, including those templates that use Common Data Model.
-   
-    ![Search for templates](./media/common-data-model-intro/template-search.png)
+1. You could use any template that performs a task in Dataverse that you want to automate. In this example, select the template that copies notes from Lead to Opportunity in Dataverse.
 
-1. In the list of templates, select the template that performs that tasks that you want to be performed.
-   
-    For example, select the template that copies notes from Lead to Opportunity in Dataverse, as shown in the steps that follow.
-   
     ![Choose a template](./media/common-data-model-intro/select-template.png)
-   
+
 1. If you haven't already created a connection, select **Sign in**, and then provide your credentials as needed.
-   
+
 1. Select **Continue**.
 
    You'll now see the template and its connections. In the following steps, you will customize this template.
@@ -99,7 +91,6 @@ In this article, you will create a cloud flow that sends an email notification w
 1. Configure the notification card to send you an email notification with the details of the notes for the lead.
 
    ![The notification card](./media/common-data-model-intro/notification-card.png)
-
 
 >[!TIP]
 >If you can't find a template that does what you need, you can [build a cloud flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
