@@ -1,6 +1,6 @@
 ---
 title: Create custom connectors and embed flows| Microsoft Docs
-description: Create a custom connector, share it, embed a flow, and do much more.
+description: Create a custom connector, share it, embed a cloud flow, and do much more.
 services: ''
 suite: flow
 documentationcenter: na

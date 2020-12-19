@@ -31,7 +31,7 @@ If you are using an work or school email account, use Office 365 Outlook connect
 
 ## Triggers
 
-A **trigger** is an event that starts a flow. For example, **When a new email arrives (V2)** is a trigger that starts a flow when an email arrives into an inbox. Here is the full list of the [Office 365 Outlook triggers](https://docs.microsoft.com/connectors/office365/#triggers) you can use to start flows. Use the [Trigger a flow based on email properties](https://docs.microsoft.com/power-automate/email-triggers) article to learn more on how to trigger flows based on email properties.
+A **trigger** is an event that starts a cloud flow. For example, **When a new email arrives (V2)** is a trigger that starts a cloud flow when an email arrives into an inbox. Here is the full list of the [Office 365 Outlook triggers](https://docs.microsoft.com/connectors/office365/#triggers) you can use to start flows. Use the [Trigger a cloud flow based on email properties](https://docs.microsoft.com/power-automate/email-triggers) article to learn more on how to trigger flows based on email properties.
 
 Here's a partial list of Office 365 Outlook triggers:
 

@@ -1,6 +1,6 @@
 ---
-title: Create a flow from your phone | Microsoft Docs
-description: Create a flow from a template that, for example, sends a push notification when you receive mail from an address that you specify
+title: Create a cloud flow from your phone | Microsoft Docs
+description: Create a cloud flow from a template that, for example, sends a push notification when you receive mail from an address that you specify
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,11 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Create a flow from your phone
 
-Create a flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
+Create an cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
 
 In this topic, we'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
+
+If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
 
 ## Prerequisites
 

@@ -1,0 +1,54 @@
+- name: Guidance
+  items: 
+  - name: Power Automate guidance documentation
+    href: index.yml
+  - name: Planning a Power Automate project
+    items:
+    - name: Introduction
+      href: planning/introduction.md
+    - name: Various types of process automation
+      href: planning/various-types-process-automation.md
+    - name: Planning phase
+      href: planning/planning-phase.md
+    - name: Designing phase
+      items:
+      - name: Process design
+        href: planning/process-design.md
+      - name: Architectural design
+        items:
+        - name: Determining which automation method to use
+          href: planning/determine-automation-methods.md
+        - name: Attended and unattended scenarios
+          href: planning/attended-unattended.md
+        - name: Separate flows into smaller automated processes
+          href: planning/separate-flows.md
+        - name: Authentication and security
+          href: planning/authentication-security.md
+        - name: Defining inputs and outputs
+          href: planning/define-input-output.md
+        - name: Transforming and formatting data
+          href: planning/transforming-formatting-data.md
+        - name: Formalizing messages and alerts
+          href: planning/formalizing-messages-alerts.md
+        - name: Reducing risk and planning for error handling
+          href: planning/reducing-risk.md
+        - name: Adding analytical data to Microsoft Dataverse
+          href: planning/adding-analytical-data.md
+        - name: Decision-making flowchart for your design
+          href: planning/decision-making-flow.md
+    - name: Making phase
+      href: planning/making-phase.md
+    - name: Testing phase
+      items: 
+        - name: Testing strategy
+          href: planning/testing-strategy.md
+        - name: Tools and settings to test your automation
+          href: planning/tools-and-settings.md
+    - name: Deploying and refining phase
+      items:
+      - name: Deploying your automation to production
+        href: planning/deploy-to-production.md
+      - name: Assessing the business impact
+        href: planning/analyze-and-assess.md
+      - name: Discovering performance issues
+        href: planning/discover-performance-issues.md

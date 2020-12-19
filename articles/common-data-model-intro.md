@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dataverse | Microsoft Docs
-description: Create a flow from a template that uses Microsoft Dataverse.
+description: Create a cloud flow from a template that uses Microsoft Dataverse.
 services: ''
 suite: flow
 documentationcenter: na
@@ -19,7 +19,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow that uses Microsoft Dataverse
+# Create a cloud flow that uses Microsoft Dataverse
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
@@ -27,10 +27,10 @@ Improve operational efficiency with a unified view of business data by creating 
 
 For example, you can use Dataverse within Power Automate in these key ways:
 
-* Create a flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
+* Create a cloud flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a cloud flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
 
-In this article, you will create a flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Dataverse. The notification includes the *Notes* from the *Lead*.
+In this article, you will create a cloud flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Dataverse. The notification includes the *Notes* from the *Lead*.
 
 ## Prerequisites
 
@@ -93,4 +93,5 @@ In this article, you will create a flow that sends an email notification when a 
    ![The notification card](./media/common-data-model-intro/notification-card.png)
 
 >[!TIP]
->If you can't find a template that does what you need, you can [build a flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
+>If you can't find a template that does what you need, you can [build a cloud flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
+

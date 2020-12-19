@@ -1,6 +1,6 @@
 ---
-title: Create a flow from a template | Microsoft Docs
-description: Create a flow from any of several built-in templates.
+title: Create a cloud flow from a template | Microsoft Docs
+description: Create a cloud flow from any of several built-in templates.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,17 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow from a template in Power Automate
+# Create a cloud flow from a template in Power Automate
 
-You can create a flow from one of many built-in templates in Power Automate. When you click **Templates** on the left-side navigation pane in Power Automate, you can search the many templates that are built around popular products and automation scenarios. You can browse by category, or search for templates by product name, scenario, or other keywords. The tile for each template shows a summary that includes the following:
 
-- Icons for the products and services that are involved. 
-- Template name
-- Type of flow (instant/automated)
-- number of flows made using this template
+Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
+
 
 >[!TIP]
->[Create a flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
+>[Create a cloud flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 
 Here, we'll follow an example that uses a template to create a flow that sends you a Slack message when your manager sends you an email in Microsoft 365.
 
@@ -66,9 +63,10 @@ To complete this example, you'll need accounts with access to the following:
 
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
-## Next steps
+## More information
 
--  [Watch your flow in action](see-a-flow-run.md)
+- [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
-- [Use a template for the Microsoft Dataverse](common-data-model-intro.md)
+- [Use a template with Microsoft Dataverse](common-data-model-intro.md)
 - [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
+
