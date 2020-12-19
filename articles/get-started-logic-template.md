@@ -36,13 +36,13 @@ Here, we'll follow an example that uses a template to create a flow that sends y
 
 To complete this example, you'll need accounts with access to the following:
 
-- [Power Automate](https://flow.microsoft.com)
-- Slack account
-- Microsoft 365
+- [Power Automate](https://flow.microsoft.com).
+- Slack.
+- Microsoft 365.
 
 ## Choose a template
 
-1. Sign in to [Power Automate](https://flow.microsoft.com) and select **Templates** in the left-side navigation pane.
+1. Sign into [Power Automate](https://flow.microsoft.com), and then select **Templates** in the left-side navigation pane.
 1. Use the search bar to search for **slack manager** to find the **Send a message on Slack when my manager emails me** template, and then select it.
 1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
 1. After you confirm your connections, select **Continue**.
