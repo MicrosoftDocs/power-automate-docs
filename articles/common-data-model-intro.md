@@ -54,7 +54,7 @@ In this article, you will create a cloud flow that sends an email notification w
     >[!NOTE]
     >Common Data Service is now Microsoft Dataverse. Template names may be renamed at some point.
 
-1. You could use any template that performs a task in Dataverse that you want to automate. In this example, select template that copies notes from Lead to Opportunity in Dataverse.
+1. You could use any template that performs a task in Dataverse that you want to automate. In this example, select the template that copies notes from Lead to Opportunity in Dataverse.
 
     ![Choose a template](./media/common-data-model-intro/select-template.png)
 
