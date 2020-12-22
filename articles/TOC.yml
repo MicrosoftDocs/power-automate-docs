@@ -11,7 +11,33 @@
   - name: Guided learning
     href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
   - name: What's new
-    href: whats-new.md
+  href: whats-new.md
+- name: Process advisor (preview)
+  items:
+  - name: Overview    
+    href: process-advisor-overview.md
+    displayName: Overview of process advisor
+  - name: Work with processes and recordings
+    href: process-advisor-processes.md
+  - name: Analyze processes
+    href: process-advisor-analyze.md
+  - name: Visualize processes
+    href: process-advisor-visualize.md
+  - name: Share processes
+    href: process-advisor-share.md
+  - name: Administration and security
+    items: 
+    - name: Security and privacy
+      href: process-advisor-security.md
+      displayName: Security and privacy in process advisor
+    - name: Protect your data
+      href: process-advisor-protect.md
+    - name: Known issues
+      href: process-advisor-issues.md
+      displayName: Known issues in process advisor
+  - name: Glossary
+    href: process-advisor-glossary.md
+    displayName: Process advisor glossary
 - name: Cloud flows
   items:
   - name: Get started
@@ -166,13 +192,13 @@
           href: lead-collection-sample.md
     - name: Create approvals in Microsoft Teams
       items:
-      - name: Overview of Approvals in Microsoft Teams
+      - name: Overview of approvals in Microsoft Teams
         href: ./teams/native-approvals-in-teams.md
       - name: Create approvals in chats or channels
         href: ./teams/create-approval-from-chat.md
       - name: Create approvals from the Approval app 
         href: ./teams/create-approval-from-teams-app.md
-      - name: Respond to Approvals in Teams
+      - name: Respond to approvals in Teams
         href: ./teams/respond-to-approvals-in-teams.md
       - name: Manage approvals in Teams
         href: ./teams/manage-approvals-app.md
@@ -211,32 +237,6 @@
     items:
     - name: Use AI Builder in Power Automate
       href: use-ai-builder.md
-  - name: Process advisor (preview)
-    items:
-    - name: Overview    
-      href: process-advisor-overview.md
-      displayName: Overview of process advisor
-    - name: Work with processes and recordings
-      href: process-advisor-processes.md
-    - name: Analyze processes
-      href: process-advisor-analyze.md
-    - name: Visualize processes
-      href: process-advisor-visualize.md
-    - name: Share processes
-      href: process-advisor-share.md
-    - name: Administration and security
-      items: 
-      - name: Security and privacy
-        href: process-advisor-security.md
-        displayName: Security and privacy in process advisor
-      - name: Protect your data
-        href: process-advisor-protect.md
-      - name: Known issues
-        href: process-advisor-issues.md
-        displayName: Known issues in process advisor
-    - name: Glossary
-      href: process-advisor-glossary.md
-      displayName: Process advisor glossary
   - name: Microsoft Dataverse
     items:
     - name: Classic Dataverse workflows
