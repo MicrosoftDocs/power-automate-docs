@@ -184,6 +184,21 @@ Specifically, the three commands that are available for a business process flow 
 - Previous stage
 - Set Active stage
 
+### Lookup field in a business process flow stage
+
+Recent records are visible in a lookup field in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
+1. Go to **Tables** under **Data**. Search for your business process flow entity.
+
+   ![A screenshot of a business process flow entity table](./media/bpf-entity-table.png)
+
+1. Select **Forms**, and select the **Information** editor.
+1. Select your lookup data step from the **Tree view** and check **Disable most recently used items**.
+
+   ![A screenshot of a business process flow entity table](./media/bpf-disable-mru.png)
+
+1. Save, and then publish. 
+
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
