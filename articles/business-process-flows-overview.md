@@ -193,9 +193,9 @@ Recent records are visible in a lookup field in the unified interface. To preven
    ![A screenshot of a business process flow entity table](./media/bpf-entity-table.png)
 
 1. Select **Forms**, and select the **Information** editor.
-1. Select your lookup data step from the **Tree view** and check **Disable most recently used items**.
+1. Select your lookup data step from the **Tree view**, and then check **Disable most recently used items**.
 
-   ![A screenshot of a business process flow entity table](./media/bpf-disable-mru.png)
+   ![A screenshot how to disable the most recently used items](./media/bpf-disable-mru.png)
 
 1. Save, and then publish. 
 
