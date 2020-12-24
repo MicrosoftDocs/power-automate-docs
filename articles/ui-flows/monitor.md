@@ -22,7 +22,7 @@ search.audienceType:
   - flowadmin
 ---
 
-# Monitor UI flows all up analytics in Power Platform Admin Center and CoE Starter kit
+# Monitor desktop flows all up analytics in Power Platform Admin Center and CoE Starter kit
 
 As an admin or CoE (Center of Exerllence) team, there are 2 ways you can monitor the analytics for all the UI flows in your environment.
 
