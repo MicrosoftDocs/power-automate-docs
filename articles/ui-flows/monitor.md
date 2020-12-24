@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2020
+ms.date: 12/23/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -24,7 +24,7 @@ search.audienceType:
 
 # Monitor desktop flows all up analytics in Power Platform Admin Center and CoE Starter kit
 
-As an admin or CoE (Center of Exerllence) team, there are 2 ways you can monitor the analytics for all the UI flows in your environment.
+As an admin or CoE (Center of Excellence) team, there are 2 ways you can monitor the analytics for all the desktop flows in your environment.
 
 1. The most easy and straightforward way is to visit PPAC [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/analytics/flow) 
 This feature is out of box, no installation required, and avaiable for everyone who has environment admin access.
@@ -95,9 +95,9 @@ The flow that gets Ui Flow Session data is configured to get the data on a daily
 
 Configure the Power BI Dashboard
 Follow these steps to get the Environment URL needed to configure the Power BI Dashboard:
-https://docs.microsoft.com/en-us/power-platform/guidance/coe/setup-powerbi#get-the-environment-url
+https://docs.microsoft.com/power-platform/guidance/coe/setup-powerbi#get-the-environment-url
 Follow these steps to configure the Power BI Dashboard to point to your environment – please use the .pbix file attached to the email:
-https://docs.microsoft.com/en-us/power-platform/guidance/coe/setup-powerbi#option-2-configure-the-power-bi-dashboard-by-using-the-pbix-file
+https://docs.microsoft.com/power-platform/guidance/coe/setup-powerbi#option-2-configure-the-power-bi-dashboard-by-using-the-pbix-file
 
 There is no need to configure the embedded apps in the dashboard, as they are not used for Ui Flow scenarios. 
 
