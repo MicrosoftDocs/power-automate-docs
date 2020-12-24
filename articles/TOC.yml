@@ -493,6 +493,9 @@
     href: environments-overview-admin.md
   - name: View desktop flows analytics
     href: ./desktop-flows/overview-analytics.md
+  - name: Monitor desktop flows
+    href: ./desktop-flows/monitor.md
+    displayName: Monitor desktop flows in the Center of Excellence (CoE)
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
