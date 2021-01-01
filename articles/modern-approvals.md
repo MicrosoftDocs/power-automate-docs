@@ -32,7 +32,7 @@ Approvers can respond to requests from their email inbox, [the approvals center]
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
 
-   ![overview of flow](./media/modern-approvals/create-flow-overview.png)
+   ![overview of approval flow](./media/modern-approvals/create-flow-overview.png)
 
 The flow performs the following steps:
 
@@ -132,7 +132,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 If you've followed along, your flow should resemble this screenshot:
 
-![overview of flow](./media/modern-approvals/completed-flow.png)
+![Completed flow](./media/modern-approvals/completed-flow.png)
 
 Now that we've created the flow, it's time to test it!
 
