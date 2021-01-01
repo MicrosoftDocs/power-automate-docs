@@ -102,7 +102,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
+   ![configure approved email template](./media/modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
 
