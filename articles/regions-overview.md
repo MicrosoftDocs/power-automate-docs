@@ -1,6 +1,6 @@
 ---
 title: Regions overview for Power Automate | Microsoft Docs
-description: Overview with question and answer about regions in Power Automate
+description: Overview with question and answer about regions in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,11 +23,11 @@ search.audienceType:
 ---
 # Power Automate regions overview
 
-In Power Automate, your flows are created within your Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Power Platform environment is stored.
+In Power Automate, your flows are created within your Microsoft Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Microsoft Power Platform environment is stored.
 
-In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your [Power Platform environment](environments-overview-admin.md).
+In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your Microsoft [Power Platform environment](environments-overview-admin.md).
 
-## More information about Power Platform regions
+## More information about Microsoft Power Platform regions
 
 [Overview of Power Platform regions](/power-platform/admin/regions-overview)
 
