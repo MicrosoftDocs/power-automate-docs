@@ -32,7 +32,7 @@ Approvers can respond to requests from their email inbox, [the approvals center]
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
 
-   ![overview of approval flow](./media/modern-approvals/create-flow-overview.png)
+   ![Approval flow](./media/modern-approvals/create-flow-overview.png)
 
 The flow performs the following steps:
 
