@@ -25,9 +25,13 @@ The **Variables** pane shows the input and output variables passed to and from P
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
-When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted.
+When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted. To clear the values of all variables, select the eraser icon at the bottom of the pane.
 
-![The current variables' values displayed in the Variables pane.](media\variables-pane\variables-pane-run-values.png)
+![The current variables' values displayed in the Variables pane.](media\variables-pane\current-variable-values.png)
+
+To view the value of a variable in more detail, double-click on the variable. The variable viewer shows the data type if the variable, and expands any Datarows or Datatables to show their contents.
+
+![The current variables' values displayed in detail in the variable viewer.](media\variables-pane\variable-viewer.png)
 
 ## Renaming a desktop variable
 
@@ -39,7 +43,7 @@ Although you can update variables' names manually through actions, the name will
 
 To update the name of an input/output variable globally, right-click on its name in the **Variables** pane and select **Edit**.
 
-![he Rename option for input/output variables.](media\renaming-variables\rename-external-variabe.png)
+![The Rename option for input/output variables.](media\renaming-variables\rename-external-variabe.png)
 
 In the **Edit variable** dialog box, populate the **Variable name** and **External name** fields for the internal and external variable name, respectively. 
 
