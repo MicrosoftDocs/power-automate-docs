@@ -1,6 +1,6 @@
 ---
 title: Release notes | Microsoft Docs
-description: Common issues and what's new for Power Automate releases
+description: Common issues and what's new for Power Automate releases.
 services: ''
 suite: flow
 documentationcenter: na
@@ -54,11 +54,11 @@ For information about new features released for Power Automate, visit:
 
 ### Release 2018-09-24
 
-- **Admin access to help and support** - Open support tickets for Power Automate in the Power platform admin center and provide additional details about your workflow failure.
+- **Admin access to help and support** - Open support tickets for Power Automate in the Power Platform admin center and provide additional details about your workflow failure.
 - **Redesigned Power Automate Community** - Finding what you need just got easier in the Power Automate Community.
 - **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a cloud flow when there are new messages in a channel.
 - **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
-- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform Admin center.
+- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform admin center.
 - **Power Query integration** - A Power Query experience is being built that will allow makers to shape data mashups from SQL Server.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) about this release.
@@ -66,7 +66,7 @@ For information about new features released for Power Automate, visit:
 ### Release 2018-08-31
 
 - **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Power Automate designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
-- **Five new connectors** - We've added four new management connectors: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
+- **Five new connectors** - We've added four new management connectors: Power Apps for App Makers, Power Platform for Admins, Power Apps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
@@ -375,7 +375,7 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-05-12
 * **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a cloud flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
-* **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate Admin Center.
+* **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate admin center.
 * **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Dataverse.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
@@ -524,7 +524,7 @@ You can now leverage valuable information when triggering a button flow, such as
 
 ### Release 2016-10-31 - General Availability
 * **Pricing and licensing** - Now available in both Free and paid plans, as well as included in Office 365 and Dynamics 365.
-* **Power Automate Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
+* **Power Automate admin center** - Enterprise-ready with the new admin center. In the admin center you can manage the environments inside the organization.
 * **Data loss prevention policies** - Administrators can create data loss prevention policies to control the flow of data between services.
 * **Android availability** - The Power Automate phone app is now available for both iOS and Android. The app enables you to get notifications, monitor activity, and start flows with the tap of a button.
 * **New designer experiences** - You can now search over the dynamic content passed from step to step, making it much quicker to reference the data you want to.
