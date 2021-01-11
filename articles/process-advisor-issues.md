@@ -36,5 +36,9 @@ If you cannot see process advisor in Power Automate, receive error messages, or 
 - You have access to the Power Automate environment and the permissions required by process advisor described in the [Security](process-advisor-security.md) section.
 - Your browser has the feature to accept 3rd party cookies enabled.
   You can enable it in your browser settings.
+  
+**Unable to import a process**
+
+Process advisor doesn't fully support exporting/importing processes across environments. But you can still do it by adding the process you want to export along with all related recordings to a solution, exporting the solution and importing it into another environment. To make sure you don't run into any issues, you must analyze in the new environment the process you have imported.
 
 We'll continue to add issues here, but if you are experiencing an issue not mentioned here, check the **Process advisor community forums**.
