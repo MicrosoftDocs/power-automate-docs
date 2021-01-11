@@ -1,6 +1,6 @@
 ---
 title: Get started | Microsoft Docs
-description: Quick ways to start automating your work and life with Power Automate
+description: Quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -44,7 +44,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
 *What industries can benefit from Power Automate?* 
-Check out how some companies implemented Power Platform solutions using Power Automate in: 
+Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in: 
 
   * [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
   * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)

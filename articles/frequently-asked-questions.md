@@ -144,7 +144,7 @@ Webhook|When the flow is turned on again, it only processes new events that are 
 
 Power Automate is available in 42 languages and [six regions](regions-overview.md). To see the languages that are available:
 
-1. Sign into the [Power Platform Admin Center > Environments](https://admin.powerplatform.microsoft.com/environments)
+1. Sign into the [Power Platform admin center > Environments](https://admin.powerplatform.microsoft.com/environments)
 1. Select your environment
 1. Select **Settings** on the top menu bar.
 1. Select **Product > Languages**

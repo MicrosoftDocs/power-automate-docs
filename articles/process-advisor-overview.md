@@ -38,7 +38,7 @@ Process advisor records and analyzes your manual business tasks. It discovers in
 
 Before you start using process advisor, make sure you have the following prerequisites:
 
-- A Power Platform environment with Microsoft Dataverse database
+- A Microsoft Power Platform environment with Microsoft Dataverse database
   - For information about how to create environment, see: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
   - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database)
 - Access to [Power Automate](https://powerautomate.microsoft.com/)

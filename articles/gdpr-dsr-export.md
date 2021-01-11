@@ -32,7 +32,7 @@ The *right of data portability* allows a data subject to request a copy of their
 
 Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+* **Website access:** sign into the [Power Apps admin center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
@@ -41,7 +41,7 @@ Power Automate offers the following experiences to find or export personal data 
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Power Automate Maker Portal||
 |Flows|Power Automate Maker Portal||
-|Flow permissions| Power Automate Maker Portal and Power Automate Admin Center||
+|Flow permissions| Power Automate Maker Portal and Power Automate admin center||
 |User details||Power Apps cmdlets|
 |Connections|Power Automate Maker Portal|Power Apps cmdlets |
 |Connection permissions|Power Automate Maker Portal|Power Apps cmdlets |
@@ -70,7 +70,7 @@ Your flow will now be available as a zipped package. For more information, see t
 
 Run history includes a list of all executions that have occurred for a cloud flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
-Either an end user or an administrator, who has been granted access to the flow through the Power Automate Admin Center, can follow these steps to export this data:
+Either an end user or an administrator, who has been granted access to the flow through the Power Automate admin center, can follow these steps to export this data:
 
 1. Sign into [Power Automate](https://flow.microsoft.com/).
 1. Select the **My flows** link, and then select the flow for which you want to export the run history.
@@ -139,7 +139,7 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | 
 
 Custom connectors supplement the out of box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems. You can transfer ownership of a custom connector or delete it.
 
-Follow these steps to export a list of customer connectors:
+Follow these steps to export a list of customer connectors:<!-- Edit note: Is it custom or customer connectors. -->
 
 1. Navigate to [Power Automate](https://flow.microsoft.com).
 1. Select the settings **gear** icon.

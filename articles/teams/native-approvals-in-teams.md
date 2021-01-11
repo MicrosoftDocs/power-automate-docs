@@ -1,6 +1,6 @@
 ---
 title: Approvals in Microsoft Teams | Microsoft Docs
-description: Learn how to create an approval in Teams
+description: Learn how to create an approval in Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -34,7 +34,7 @@ These approvals are triggered directly with the Power Automate infrastructure an
    ![Search for the app in Teams](../media/native-approvals-in-teams/more-apps-approvals.png)
 
 >[!TIP]
->If you do not see the approvals app in the more apps menu, it is likely that your Teams Administrator has disabled the app in your tenant. Contat your Teams administrator to enable the approvals app from the Teams Admin center.
+>If you do not see the approvals app in the more apps menu, it is likely that your Teams Administrator has disabled the app in your tenant. Contact your Teams administrator to enable the approvals app from the Teams admin center.
 
 
 ## Known issues
