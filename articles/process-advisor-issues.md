@@ -28,9 +28,9 @@ search.audienceType:
 
 **Unable to access process advisor**
 
-If you cannot see process advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following requirements:
+If you cannot see process advisor in Power Automate, receive error messages, or if you can’t access the home page, verify the following:
 
-- You have a Power Automate License
+- You have a Power Automate License.
 
    If you don’t have a license, you can activate your trial license from UI Flow in Power Automate.
 - You have access to the Power Automate environment and the permissions required by process advisor described in the [Security](process-advisor-security.md) section.
@@ -39,6 +39,9 @@ If you cannot see process advisor in Power Automate, receive error messages, or 
   
 **Unable to import a process**
 
-Process advisor doesn't fully support exporting/importing processes across environments. But you can still do it by adding the process you want to export along with all related recordings to a solution, exporting the solution and importing it into another environment. To make sure you don't run into any issues, you must analyze in the new environment the process you have imported.
+Process advisor doesn't fully support exporting and importing processes between environments. However, you can import or export processes by adding the processes you want to export along with all related recordings to a solution, and then importing them into another environment. 
+
+>[!TIP]
+>Analyze the processes in the new environment to validate that there are no issues.
 
 We'll continue to add issues here, but if you are experiencing an issue not mentioned here, check the **Process advisor community forums**.
