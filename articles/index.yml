@@ -65,12 +65,12 @@ conceptualContent:
         - text: Automated flows
           url: /power-automate/get-started-logic-flow
           itemType: overview
+        - text: Scheduled flows
+          url: /power-automate/run-scheduled-tasks
+          itemType: overview
         - text: Button flows
           url: /power-automate/introduction-to-button-flows
           itemType: overview
-        - text: Approval flows
-          url: /power-automate/modern-approvals
-          itemType: overview            
     
     - title: Create desktop flows for RPA
       links:
@@ -97,7 +97,10 @@ conceptualContent:
           itemType: overview
         - text: Forms
           url: /power-automate/forms/overview
-          itemType: overview 
+          itemType: overview
+        - text: Approvals
+          url: /power-automate/get-started-approvals
+          itemType: overview            
     
     - title: Use solutions for ALM
       links:
