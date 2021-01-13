@@ -25,25 +25,35 @@ The **Variables** pane shows the input and output variables passed to and from P
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
+## The Variable value viewer
+
 When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted. To clear the values of all variables, select the eraser icon at the bottom of the pane.
 
-![The current variables' values displayed in the Variables pane.](media\variables-pane\current-variable-values.png)
+![The current variables' values displayed in the variables pane.](media\variables-pane\current-variable-values.png)
 
-To view the value of a variable in more detail, double-click on the variable. The variable viewer shows the data type if the variable, and expands any Datarows or Datatables to show their contents.
+To view the value of a variable in more detail, double-click on the variable. The **Variable value viewer** shows the data type of the variable, and expands any Datarows or Datatables to show their contents.
 
-![The current variables' values displayed in detail in the variable viewer.](media\variables-pane\variable-viewer.png)
+![The current variables' values displayed in detail in the variable value viewer.](media\variables-pane\variable-viewer.png)
+
+Certain data types may contain nested elements. For example, a custom object type variable may contain another custom object in its properties. The figure below shows the variable **CustomerObject** which contains **Company**, another custom object. To view the properties of the nested element, select **More**.
+
+![Parent custom object example.](media\variables-pane\custom-object-parent.png)
+
+The variable value viewer displays the properties of the child custom object. To go back to the parent custom object, select the arrow.
+
+![Child custom object example.](media\variables-pane\custom-object-child.png)
 
 ## Renaming a desktop variable
 
 To rename a desktop flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
 
-![The Rename option for flow variables.](media\renaming-variables\rename-flow-variabe.png)
+![The Rename option for flow variables.](media\renaming-variables\rename-flow-variable.png)
 
 Although you can update variables' names manually through actions, the name will be changed only in these specific actions, not globally. 
 
 To update the name of an input/output variable globally, right-click on its name in the **Variables** pane and select **Edit**.
 
-![The Rename option for input/output variables.](media\renaming-variables\rename-external-variabe.png)
+![The Rename option for input/output variables.](media\renaming-variables\rename-external-variable.png)
 
 In the **Edit variable** dialog box, populate the **Variable name** and **External name** fields for the internal and external variable name, respectively. 
 
