@@ -108,7 +108,7 @@
       href: disable-flow.md
   - name: Popular cloud flows scenarios
     items:
-    - name: Approval flows
+    - name: Use flows with approvals
       items:
       - name: Get started with approvals
         href: get-started-approvals.md
