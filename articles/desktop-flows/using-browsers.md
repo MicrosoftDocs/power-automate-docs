@@ -29,7 +29,9 @@ Besides the **Automation browser**, the platform supports the four most popular 
 
 By default, **Internet Explorer** works in protected mode to prevent any external application from controlling it.
 
-To disable this mode and allow Power Automate Desktop to handle the browser:
+While Power Automate Desktop can still work with this setting enabled, it will not be able to clear the browser's cache or cookies.
+
+To disable protected mode and allow Power Automate Desktop to clear the browser's cache and cookies:
 
 1. Launch **Internet Explorer**, select the **gear icon**, and choose **Internet options** in the menu.
 
