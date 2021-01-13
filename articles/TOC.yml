@@ -196,7 +196,7 @@
         href: ./teams/native-approvals-in-teams.md
       - name: Create approvals in chats or channels
         href: ./teams/create-approval-from-chat.md
-      - name: Create approvals from the Approval app 
+      - name: Create approvals from the approvals app 
         href: ./teams/create-approval-from-teams-app.md
       - name: Respond to approvals in Teams
         href: ./teams/respond-to-approvals-in-teams.md
@@ -204,6 +204,8 @@
         href: ./teams/manage-approvals-app.md
       - name: Customize approvals in Teams
         href: ./teams/customize-approvals.md
+      - name: Use custom connectors in approval flows
+        href: ./teams/approvals-custom-connector.md
     - name: Use flows with Microsoft Forms
       items:
       - name: Overview 
