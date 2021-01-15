@@ -13,12 +13,11 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/29/2019
+ms.date: 01-15-2021
 ms.author: deonhe
 ---
 
 # Power Automate in Teams
-
 
 ### Prerequisites
 
@@ -33,26 +32,19 @@ Follow these steps to install the Power Automate app in Microsoft Teams.
 
 1. Tap the **Apps** icon at the lower left of the Teams navigation bar.
 
-    ![Select apps](media/flows-teams/apps.png)
+1. Select the **Power Automate** app. You might need to search for **Power Automate** if you don't see it.
 
-1. Select the **Flow** app. You might need to search for **Flow** if you don't see it.
-
-    ![Select flow app](media/flows-teams/select-flow-app.png)
+    ![Select Power Automate app](media/flows-teams/select-flow-app.png)
 
 1. Select **Install**.
 
-    ![Install button](media/flows-teams/select-install.png)
-
 1. Power Automate is now installed.
-
-    ![Installed](media/flows-teams/flow-installed.png)
-
 
 ## Create a cloud flow in Teams
 
 1. Sign in to Microsoft Teams.
 
-1. Select the **More added apps** link (...) on the navigation bar and then select the **Flow** app.
+1. Select the **More added apps** link (...) on the navigation bar and then select the **Power Automate** app.
 
     ![Added apps icon](media/flows-teams/added-apps-icon.png)
 
