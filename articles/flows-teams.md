@@ -83,7 +83,7 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 1. Select the create **Create** tab, and then select the **Approvals** category to find an approval template to create your approval flow in Teams. 
 
-    ![Create Approvals tab](media/flows-teams/approvals-tab.png)
+    ![Create approvals tab](media/flows-teams/approvals-tab.png)
 
     ![Approvals templates menu](media/flows-teams/approvals-tab-2.png)
 
@@ -95,31 +95,22 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 > The bot lists and runs flows that are triggered by a schedule, or manually triggered without user input.
 
 1. Sign in to Microsoft Teams.
-1. Select the **More added apps** link (...) on the navigation bar and then select the **Flow** app.
 
-    ![Added apps icon](media/flows-teams/added-apps-icon.png)
-    
-1. Select the **Conversation** tab.
+1. Select the **More added apps** link (...) on the navigation bar and then select the **Power Automate** app.
+    ![Select app screen](media/flows-teams/select-app.png)
 
-    ![Conversation tab](media/flows-teams/conversations-tab.png)
+1. Select the **Chat** tab.
 
-On the **Conversation** tab, you can send commands to the bot, which responds by performing the actions you command it to run. For example, to list your flows and run the flow with index 1, run the following commands:
+
+On the **Chat** tab, you can send commands to the bot, which responds by performing the actions you command it to run. For example, to list your flows and run the flow with index 1, run the following commands:
 
 - ```List flows``` - The bot displays a list of your flows, prefixed by an index number.
 - ```Run flow 1``` - Runs flow number 1. Here, *1* is the index number of the flow you want to run.
-
-   ![Bot commands](media/flows-teams/bot-commands.png)
 
 ### Get the description for flows
 
 To get the description for the flow with index 1 from your list of flows, run ```describe flow 1```. The bot response will be similar to this image:
 
-   ![Describe flows](media/flows-teams/bot-describe.png)
-
 ### Get the list of commands for the bot
 
-To get the list of commands the bot handles, ask it with this command: ```learn more``` 
-
-The bot response will be similar to this image:
-
-![Describe flows](media/flows-teams/bot-learn-more.png) 
+To get the list of commands the bot handles, ask it with this command: ```learn more```
