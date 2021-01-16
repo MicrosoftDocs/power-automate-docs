@@ -30,7 +30,7 @@ Follow these steps to install the Power Automate app in Microsoft Teams.
 
 1. Sign in to Microsoft Teams.
 
-1. Tap the **Apps** icon at the lower left of the Teams navigation bar.
+1. Select the **Apps** icon at the lower left of the Teams navigation bar.
 
 1. Select the **Power Automate** app. You might need to search for **Power Automate** if you don't see it.
 
@@ -55,8 +55,8 @@ Follow these steps to install the Power Automate app in Microsoft Teams.
     Home| Summary of your flows.
     Create| Create a Power Automate flow in Teams
     Chat|Interact with the Power Automate bot.
-    Approvals|Lists received and sent approval requests.
-    Business process flows|
+    Approvals|Shows received and sent approval requests.
+    Business process flows|Shows your business process flows
     About|Displays version and other information about Power Automate.
 
 You now see all flows you've created from the Power Automate designer (if any).
