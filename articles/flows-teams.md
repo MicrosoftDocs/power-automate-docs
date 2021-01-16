@@ -36,38 +36,32 @@ Follow these steps to install the Power Automate app in Microsoft Teams.
 
     ![Select Power Automate app](media/flows-teams/select-flow-app.png)
 
-1. Select **Install**.
+1. Select **Add**.
 
-1. Power Automate is now installed.
+1. Power Automate is now added to Teams.
 
 ## Create a cloud flow in Teams
 
 1. Sign in to Microsoft Teams.
 
-1. Select the **More added apps** link (...) on the navigation bar and then select the **Power Automate** app.
-
-    ![Added apps icon](media/flows-teams/added-apps-icon.png)
+1. Select the **Power Automate** app in the left-side menu pane.
 
 1. If you haven't done so before, you might need to sign in and grant permissions.
 
-    ![Sign in](media/flows-teams/grant-permissions-sign-in.png)
+    Access your flows in Teams by using the following tabs:
 
-
-    Notice the following tabs:
-
-    ![Flow landing page](media/flows-teams/flow-landing-page.png)
-
-    Name|Purpose
+    Tab|Purpose
     ----|-----|
-    Conversation|Interact with the Flow bot.
-    Flows|Create and manage flows.
+    Home| Summary of your flows.
+    Create| Create a Power Automate flow in Teams
+    Chat|Interact with the Power Automate bot.
     Approvals|Lists received and sent approval requests.
+    Business process flows|
     About|Displays version and other information about Power Automate.
 
+You now see all flows you've created from the Power Automate designer (if any).
 
-    You now see all flows you've created from the Power Automate designer (if any). 
-
-    You can also create flows from a custom template or from a blank template, just like you do from the Power Automate designer. 
+You can also create flows from a custom template or from a blank template, just like you do from the Power Automate designer.
 
 ## Manage approvals
 
@@ -75,8 +69,6 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 1. Sign in to Microsoft Teams.
 1. Select the **Approvals** tab.
-
-    ![Approvals tab](media/flows-teams/approvals-tab.png)
 
     You'll notice the following subtabs:
 
@@ -89,11 +81,11 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 1. Select the **Received**, **Sent**, or **History** tabs to learn more.
 
-    ![Approvals tab](media/flows-teams/approvals-tab-2.png)
+1. Select the create **Create** tab, and then select the **Approvals** category to find an approval template to create your approval flow in Teams. 
 
-1. Select **Create approval flow** to create an approval flow.
+    ![Create Approvals tab](media/flows-teams/approvals-tab.png)
 
-    ![Approvals tab](media/flows-teams/approvals-tab-3.png)
+    ![Approvals templates menu](media/flows-teams/approvals-tab-2.png)
 
 ## Use the bot with flows
 
