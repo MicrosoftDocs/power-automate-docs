@@ -43,7 +43,7 @@ These security roles have privileges to the process advisor entities in Datavers
 
 ## Privacy
 
-Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users are invited to contribute to a process by adding recordings. They use Power Automate Desktop to record processes that are then imported into process advisor.
+Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users are invited to contribute to a process by adding recordings. They use Power Automate Desktop to record processes that are then imported into process advisor. Owners and contributors may be able to see some data from the process and its recordings.
 While most of the information captured in process recordings can be essential to the understanding of the process activities, some steps may contain sensitive information. However, you can modify and delete any Personal Identifiable Information (PII) or any sensitive data in your recordings.
 In Power Automate Desktop, users can:
 
