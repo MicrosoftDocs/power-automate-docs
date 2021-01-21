@@ -25,13 +25,13 @@ The **Variables** pane shows the input and output variables passed to and from P
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
-## The Variable value viewer
+## The variable value viewer
 
 When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted. To clear the values of all variables, select the eraser icon at the bottom of the pane.
 
 ![The current variables' values displayed in the variables pane.](media\variables-pane\current-variable-values.png)
 
-To view the value of a variable in more detail, double-click on the variable. The **Variable value viewer** shows the data type of the variable, and expands any Datarows or Datatables to show their contents.
+To view the value of a variable in more detail, double-click on the variable. The **variable value viewer** shows the data type of the variable, and expands any datarows or datatables to show their contents.
 
 ![The current variables' values displayed in detail in the variable value viewer.](media\variables-pane\variable-viewer.png)
 
