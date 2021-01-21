@@ -38,13 +38,13 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 - System requirements:
 
    - A device that runs Windows 10 Pro, Windows 10 Entreprise, Windows Server 2016, or Windows Server 2019.
+      
       - Minimum hardware
          - Storage: 1GB
 	      - RAM: 2GB
-     
      - Recommended hardware
-	      - Storage: 2GB
-	      - RAM: 4GB
+        - Storage: 2GB
+	     - RAM: 4GB
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
