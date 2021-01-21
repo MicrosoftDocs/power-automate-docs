@@ -41,6 +41,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
       - Minimum hardware
          - Storage: 1GB
 	      - RAM: 2GB
+     
      - Recommended hardware
 	      - Storage: 2GB
 	      - RAM: 4GB
