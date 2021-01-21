@@ -37,7 +37,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - System requirements:
 
-   - A device that runs Windows 10 Pro, Windows 10 Entreprise, Windows Server 2016, or Windows Server 2019.
+   - A device that runs Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019.
       
       - Minimum hardware
          - Storage: 1GB
@@ -245,7 +245,7 @@ The Windows recorder (v1) is another option to record and playback your desktop 
 
 Follow these steps to install Windows recorder (v1) extension:
 
-1. Install the extension on Micrsodt Edge and/or Google Chroome from the store (Firefox is not supported for Windows recorder (v1))
+1. Install the extension on Microsoft Edge and/or Google Chrome from the store (Firefox is not supported for Windows recorder (v1))
 
 #### Microsoft Edge: 
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
