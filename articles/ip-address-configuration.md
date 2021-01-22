@@ -65,12 +65,13 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.azureedge.net | https | Access to the Power Automate CDN. |
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Please see [the Office 365 urls and ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
+| *.dynamics.com | https | Access to Dataverse entities |
 
 ## Approval email delivery
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
-## UI flows required services
-The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation and runs.
+## Desktop flows services required for runtime
+The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs.
 
 | Endpoint type | Domains | Protocols | Uses |
 | ------------- | ------- |  -------- | ---- |
