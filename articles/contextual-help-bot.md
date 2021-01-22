@@ -1,6 +1,6 @@
 ---
 title: Get contextual help with flows from the Power Virtual Agents bot | Microsoft Docs
-description: Get help buiding flows from the Power Virtual Agents bot.
+description: Get help building flows from the Power Virtual Agents bot.
 services: ''
 suite: flow
 documentationcenter: na
