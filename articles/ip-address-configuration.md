@@ -69,12 +69,14 @@ The following table lists the services to which Power Automate connects. Ensure 
 ## Approval email delivery
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
-## UI flows required services
-The following table lists endpoint data requirements for connectivity from a user's machine for a successful UI flows installation and runs.
+## Desktop flows required services
+The following table lists endpoint data requirements for connectivity from a user's machine for a successful Power Automate Desktop authoring and desktop flows runs.
 
-| Endpoint type | Domains | Protocols | Uses |
-| ------------- | ------- |  -------- | ---- |
-| Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud. |
-| U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud. |
-| 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud. |
-| All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to UI Flows WebDriver downloaders. |
+| Endpoint type | Domains | Protocols | Uses | When |
+| ------------- | ------- |  -------- | ---- | ---- |
+| XRM | dynamics.com | https | Access to XRM entities | Authoring |
+| Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud. | Runtime |
+| U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud. | Runtime |
+| 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud. | Runtime |
+| All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to UI Flows WebDriver downloaders. |  Runtime |
+
