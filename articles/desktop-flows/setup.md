@@ -119,7 +119,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
 
 >[!IMPORTANT]
->You need to install the On-Premise Gateway on each machine you are trying to automate from.
+>You must install the on-premises gateway on each device from which you automate desktop flows.
 
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
