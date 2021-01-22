@@ -100,4 +100,4 @@ You can also get conversational self-help from the bot.
 
    ![](./media/contextual-help-bot/bot-category-1.png)
 
-   ![](./media/contextual-help-bot/bot-category-1.png)
+   ![](./media/contextual-help-bot/bot-category-2.png)
