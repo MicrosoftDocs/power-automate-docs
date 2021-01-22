@@ -14,6 +14,13 @@ search.audienceType:
   - enduser
 ---
 
+
+
+
+# Create a Power Automate Desktop flow
+
+Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
+
 ## Prerequisites
 
 - You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the desktop flow triggered by Power Automate.
@@ -23,12 +30,6 @@ search.audienceType:
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
-   
-
-# Create a Power Automate Desktop flow
-
-Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
-
 
 ## Trigger the console from the portal
 

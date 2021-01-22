@@ -14,6 +14,10 @@ search.audienceType:
   - enduser
 ---
 
+
+# Trigger a Power Automate Desktop flow from another flow
+
+
 ## Prerequisites
 
 - You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the desktop flow triggered by Power Automate.
@@ -24,11 +28,6 @@ search.audienceType:
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
    
-   
-
-# Trigger a Power Automate Desktop flow from another flow
-
-
 
 1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **+ New flow**, and from the drop-down select **Instant cloud flow**.
 
