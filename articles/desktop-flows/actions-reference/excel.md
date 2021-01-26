@@ -552,7 +552,7 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 |Argument|Type|Description|
 |-----|-----|-----|
 |FirstFreeColumn|Numeric value|The numeric value of the first fully empty column. For example, if column F is the first empty column, it will be stored as '6'|
-|FirstFreeRow|Numeric value|The numeric value of the first fully empty column. For example, if column F is the first empty column, it will be stored as '6'|
+|FirstFreeRow|Numeric value|The numeric value of the first fully empty row. For example, if row 7 is the first empty row, it will be stored as '7'|
 
 
 ##### <a name="getfirstfreecolumnrow_onerror"></a> Exceptions
