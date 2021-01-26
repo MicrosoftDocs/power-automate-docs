@@ -37,13 +37,9 @@ To disable protected mode and allow Power Automate Desktop to clear the browser'
 
     ![The Internet Explorer options.](media/using-browsers/internet-explorer-options.png)
 
-1. In the **Internet options** dialog box, navigate to the **Security** tab, select **Internet** zone, and disable the **Enable Protected Mode** option.
+1. In the **Internet options** dialog box, navigate to the **Security** tab, select **Internet** zone, and disable the **Enable Protected Mode** option. Repeat the same step for the **Local intranet** and **Trusted sites** zones.
 
-    ![The security tab in the Internet Explorer options.](media/using-browsers/internet-explorer-internet-protected-mode.png)
-
-1. Repeat the same step for the **Local intranet** and **Trusted sites** zones.
-
-    ![The Local intranet and Trusted sites zones in the Internet Explorer options.](media/using-browsers/internet-explorer-local-intranet-protected-mode.png)
+    ![The security tab in the Internet Explorer options.](media/using-browsers/internet-explorer-internet-protected-mode.png) ![The Local intranet and Trusted sites zones in the Internet Explorer options.](media/using-browsers/internet-explorer-local-intranet-protected-mode.png)
 
 1. Select **Apply** and **OK** to save the change and close the dialog box.
 
