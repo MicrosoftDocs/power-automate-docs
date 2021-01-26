@@ -44,6 +44,8 @@
     href: overview-cloud.md
   - name: Get started with triggers
     href: triggers-introduction.md
+  - name: Get help from the Power Virtual Agents bot
+    href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
   - name: Create a flow that uses Microsoft Dataverse

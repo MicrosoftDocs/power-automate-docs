@@ -35,7 +35,16 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
-- A device that runs Windows 10 Pro, Windows 10 Entreprise, Windows Server 2016, or Windows Server 2019.
+- System requirements:
+
+   - A device that runs Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019.
+      
+      - Minimum hardware
+         - Storage: 1GB
+	      - RAM: 2GB
+     - Recommended hardware
+        - Storage: 2GB
+	     - RAM: 4GB
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
@@ -110,6 +119,8 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
 
 >[!IMPORTANT]
+>You must install the on-premises gateway on each device from which you automate desktop flows.
+
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
 
@@ -236,7 +247,7 @@ The Windows recorder (v1) is another option to record and playback your desktop 
 
 Follow these steps to install Windows recorder (v1) extension:
 
-1. Install the extension on Micrsodt Edge and/or Google Chroome from the store (Firefox is not supported for Windows recorder (v1))
+1. Install the extension on Microsoft Edge and/or Google Chrome from the store (Firefox is not supported for Windows recorder (v1))
 
 #### Microsoft Edge: 
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.

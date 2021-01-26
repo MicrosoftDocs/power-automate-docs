@@ -1,5 +1,5 @@
 ---
-title: Get started | Microsoft Docs
+title: Get started with Power Automate | Microsoft Docs
 description: Quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
