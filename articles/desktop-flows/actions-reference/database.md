@@ -16,8 +16,6 @@ search.audienceType:
 
 # Database
 
-
-
 Connect to databases and execute SQL statements
 
 |<!-- --> |
@@ -101,6 +99,6 @@ SQL actions require a database connection. To connect to a database, enter the s
 
    ![data link properties connection tab](..\media\database\data-link-properties-connection-tab.png)
 
-4 Specify a connection timeout and additional network settings in the **Advanced** tab.
+4. Specify a connection timeout and additional network settings in the **Advanced** tab.
 
    ![data link properties advanced tab](..\media\database\data-link-properties-advanced-tab.png)
