@@ -88,3 +88,24 @@ Close an open connection to a database
 ##### <a name="close_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+>[!NOTE]
+>SQL actions require a database connection. To connect to a database, enter the string manually or as a variable. When the action connects to a database, it stores the connection into a SQL connection variable.
+>
+>![open sql connection actions properties](..\media\database\open-sql-connection-actions-properties.png)
+>
+>If the connection string is not known, select **Build connections string** to open the Data Link Properties window. The data link tool helps the user compose the required connection string step by step. First, select the correct driver for the database under the Provider tab.
+>
+>![data link properties provider tab](..\media\database\data-link-properties-provider-tab.png)
+>
+>Next, under the Connection tab, enter the remaining details such as the server name, the username, password, and database name. Select the Test Connection button to test that the connection string will connect to a database successfully. Alternatively, you can copy a ready-made connection string.
+>
+>![data link properties connection tab](..\media\database\data-link-properties-connection-tab.png)
+>
+>It is also possible to specify a connection timeout in the Advanced tab.
+>
+>![data link properties advanced tab](..\media\database\data-link-properties-advanced-tab.png)
+>
+>Use the Execute SQL Statement action to query the database. The action can be configured by using the already established SQL connection and by setting the SQL connection variable that was created by the previous action.
+>
+>Alternatively, the action can connect to the database directly, by using the same method that was described in the Open SQL Connection action.
