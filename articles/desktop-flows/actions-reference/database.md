@@ -103,7 +103,3 @@ Close an open connection to a database
 >Specify a connection timeout and additional network settings in the **Advanced** tab.
 >
 >![data link properties advanced tab](..\media\database\data-link-properties-advanced-tab.png)
->
->Use the Execute SQL statement action to query the database. The action can be configured by using the already established SQL connection and by setting the SQL connection variable that was created by the previous action.
->
->Alternatively, the action can connect to the database directly, by using the same method that was described in the Open SQL connection action.
