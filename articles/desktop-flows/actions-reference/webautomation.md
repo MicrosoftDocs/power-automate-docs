@@ -309,6 +309,8 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Custom user agent string|Yes|Text value||Specify the custom user agent string for the runtime web helper. If this field remains empty, the runtime web helper uses by default the user agent string of Internet Explorer installed on the machine.|
 
+> [!NOTE]
+> The **Clear cache** and **Clear cookies** options only work as intended if running in Protected Mode is disabled in the Internet options menu.
 
 ##### Variables Produced
 |Argument|Type|Description|
