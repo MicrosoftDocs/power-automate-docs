@@ -1,19 +1,11 @@
 ---
 title: Overview of solution-aware flows | Microsoft Docs
 description: Learn the benefits of creating flows in solutions.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/09/2020
+ms.date: 01/29/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -63,7 +55,9 @@ Follow these steps to create a solution:
 
    ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
 
+## Known limitations
 
+There are certain known limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
 ## Learn more
 
