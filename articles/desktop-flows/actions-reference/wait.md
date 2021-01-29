@@ -18,7 +18,7 @@ search.audienceType:
 
 
 
-
+Set rules for the flow to wait before specific events occur
 
 |<!-- --> |
 |-----|
