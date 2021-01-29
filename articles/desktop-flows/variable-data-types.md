@@ -88,7 +88,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
 
-  For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the data of the A2 cell of the retrieved table, use the expression displayed below. 
+  For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
  
   Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
