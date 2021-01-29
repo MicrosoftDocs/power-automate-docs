@@ -91,7 +91,7 @@ Some of these data types are widely used throughout the application, such as **n
   For example, to access the A2 cell of an Excel file, use the expression displayed below. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
   > [!NOTE]
-  > The **ExcelData** variable contains a table of values extracted from an Excel file using the **Read from Excel worksheet** action. Keep in mind that the index of the first row and column is 0.
+  > The **ExcelData** variable contains a table of values extracted from an Excel file using the **Read from Excel worksheet** action.
 
   ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
