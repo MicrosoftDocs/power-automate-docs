@@ -57,7 +57,7 @@ Follow these steps to create a solution:
 
 ## Known limitations
 
-There are certain known limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
+There are certain limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
 ## Learn more
 
