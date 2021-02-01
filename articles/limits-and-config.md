@@ -112,7 +112,7 @@ Duration limits for a single flow run:
 |------|-------|-------|
 | Run duration | 30 days |  Run duration is calculated by using a run's start time. Includes flows with pending steps like approvals. After 30 days, any pending steps time-out.|
 | Run retention in storage | 30 days |  Run retention is calculated by using a run's start time. |
-| Minimum recurrence interval | 5 seconds for Low, 1 second for all others |
+| Minimum recurrence interval | 60 seconds |
 | Maximum recurrence interval | 500 days |
 | Minimum postpone interval | 5 seconds for Low, 1 second for all others |
 
