@@ -78,9 +78,9 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of a datatable variable.](media\data-tables\create-data-table.png)
 
-  Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+  Power Automate Desktop provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  Alternatively, you can create a data table using the **Set variable** action and the programming array notation. 
+  Alternatively, while Power Automate Desktop doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
