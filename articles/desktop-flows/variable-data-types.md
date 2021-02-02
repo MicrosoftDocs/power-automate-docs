@@ -78,19 +78,22 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of a datatable variable.](media\data-tables\create-data-table.png)
 
-  Power Automate Desktop doesn't provide an action way to create directly a datatable, but three actions generate a datatable as output: the **Read from Excel worksheet** action the **Execute SQL statement** action and the **Extract data from web page** action.
+  Power Automate Desktop provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  Alternatively, you can create a data table using the **Set variable** action and the programming array notation. 
+  Alternatively, while Power Automate Desktop doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
   ![An example of a datatable variable.](media\data-tables\create-data-table-variable.png)
 
-  To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**
+  To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
-  For example, to access the A2 cell of an Excel file, use the expression displayed below. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+  For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
   ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+
+  > [!NOTE]
+  > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
 
   If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
 
