@@ -18,7 +18,7 @@ search.audienceType:
 
 
 
-Marks the beginning of a block to handle actions errors
+Control the automation flow
 
 |<!-- --> |
 |-----|
