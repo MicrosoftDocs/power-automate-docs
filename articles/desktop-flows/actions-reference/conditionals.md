@@ -17,8 +17,7 @@ search.audienceType:
 # Conditionals
 
 
-
-Marks the beginning of a block of actions that is run if the condition specified in this statement is met
+Set conditional statements and handle the flow based on rules
 
 You can find more information on how to use the conditional actions [here](../use-conditionals.md)
 

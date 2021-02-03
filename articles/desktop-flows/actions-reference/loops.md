@@ -16,12 +16,11 @@ search.audienceType:
 
 # Loops
 
-
-
-Terminates the loop and the flow resumes at the next action or statement following the loop
+Repeat blocks of actions in a flow
 
 You can find more information on how to use the loop actions [here](../use-loops.md)
-|<!-- --> |
+
+|<!-- -->|
 |-----|
 |[Exit loop](#break)|
 |[For each](#foreach)|
