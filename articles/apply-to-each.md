@@ -83,7 +83,6 @@ Here are the requirements for successfully performing the steps in this walk-thr
    * Select **is equal to** in the list of operators.
    * Enter **high** into the field on the right side.
      
-     ![add condition](./media/apply-to-each/foreach-importance-condition.png)
 1. Select **Add an action** under the **If yes** section.     
    This opens the **Choose an action** card, where you'll define what happens if the search condition (the **meet now** email was sent with high importance) is true.
 1. Search for **notification**, and then select the **Send me a mobile notification** action:
