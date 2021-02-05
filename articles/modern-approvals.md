@@ -27,7 +27,7 @@ With Power Automate, you can manage the approval of documents or processes acros
 
 To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
-Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Power Automate website, or the Power Automate app.
+Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) in Power Automate, or the Power Automate app.
 
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
@@ -54,7 +54,7 @@ Create these columns in your SharePoint Online list:
 | Column | Type |
 | ------ | ------ |
 | Title | Single line of text |
-|Start date | Date and Time |
+|Start Date | Date and Time |
 | End Date | Date and Time |
 | Comments | Single line of text |
 | Approved | Yes/No |
@@ -62,7 +62,7 @@ Create these columns in your SharePoint Online list:
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
-## Create your flow from the blank template
+## Create an automated cloud flow
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
@@ -76,12 +76,13 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 ## Add a profile action
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+1. Select **Office 365 Users**.
 
-1. Find, and then select the **Office 365 Users - Get my profile** action.
+1. Find, and then select the **Get my profile (V2)** action.
 
     ![search for profile](./media/modern-approvals/search-for-profile.png)
 
-1. Select the fields from your profile that you want to include in your flow, and then click **Create** to save the work you've done so far.
+1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
 ## Add an approval action
 
@@ -136,21 +137,23 @@ If you've followed along, your flow should resemble this screenshot:
 
 Now that we've created the flow, it's time to test it!
 
-## Request an approval
+## Request an approval to test your flow
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 
 ## Create long-running approvals
 
-If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
+If it's likely that your flow will run for more than 30 days, consider storing your approvals in Microsoft Dataverse. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. 
+
+To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
 >[!TIP]
-> If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval is completed.
+> If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval request is completed.
 
-## Cancel an approval requests
+## Cancel an approval request
 
-Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can Cancel it by following these steps:
+Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can cancel it by following these steps:
 
 1. Select the approval
 1. Select **Cancel approval** in the side pane.
