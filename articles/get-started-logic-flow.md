@@ -69,7 +69,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
     <!-- ![Add action](./media/get-started-logic-flow/add-action-icon.png) -->
 
-1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)**.
+1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)** from **Actions**.
 
     ![List of actions](./media/get-started-logic-flow/send-email.png)
 
@@ -77,10 +77,10 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In the form that appears, enter your email address in the **To** box, and then select your name from the list of contacts that appears.
 
-1. In the **Subject** box, enter **New tweet from:**, and then type a space.
+1. In the **Subject** box, enter **New tweet from:**, and then type a space. Click on the "Add a dynamice value" option. 
 
     ![Subject line with placeholder](./media/get-started-logic-flow/message-token.png)
-1. In the list of tokens, select the **Tweeted by** token to add a placeholder for it.
+1. In the list of **Dynamic Values:**, select the **Tweeted by** field to add in the subject line.
 
     ![Add parameter](./media/get-started-logic-flow/add-parameter.png)
 1. Select the **Body** box, and then select the **Tweet text** token to add a placeholder for it.
