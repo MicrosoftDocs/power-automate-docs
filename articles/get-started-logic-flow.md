@@ -37,9 +37,9 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In [Power Automate](https://flow.microsoft.com), select **My flows** from the navigation bar on the left.
 
-1. Click on **New flow**, and then select **Automated cloud flow**. 
+1. Select **New flow**, and then click on **Automated cloud flow**. 
 
-     ![Flows option in the left navigation bar and Menu drop down](./media/get-started-logic-flow/build-your-automated-cloud-flow) 
+     ![build your automate cloud flow new button](./media/get-started-logic-flow/build-your-automated-cloud-flow.png)
 
 1. Give your flow a name in the **Flow name** field.
 
@@ -54,10 +54,10 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
     ![Twitter event](./media/get-started-logic-flow/twitter-search.png) -->
 
-   >[!TIP]
-   >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
-
 1. If you haven't already connected your Twitter account to Power Automate, select **Authentication Type** and click to **Sign in to Twitter**, and then provide your credentials. Note that you need atouthorize app access to Microsoft Power Platform.  
+
+ >[!TIP]
+   >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
 
 1. Click on the "When a new tweet posted" and then in the **Search text** box, type the keyword that you want to find.This operation triggers a flow when a new tweet that matches a given search query is posted.
 
@@ -86,7 +86,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 1. In the **Body** text field, Click on the "Add a Dynamic value"and **Tweet text** filed to add in the body text field.
 
    Optionally, you can add more tokens, other text, or both to the body of the email.
-1. Near the top of the screen, select **Save**.
+1. Click on the **Save** button.
 
     <!-- ![Select the Create flow button](./media/get-started-logic-flow/create-button.png) -->
 <!-- 1. Select **Done** to update the list of flows.
