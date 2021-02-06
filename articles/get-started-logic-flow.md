@@ -41,11 +41,11 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
      ![Flows option in the left navigation bar and Menu drop down](./media/get-started-logic-flow/build-your-automated-cloud-flow) 
 
-1. Give your flow a name in the **Add a name or we'll generate one** field.
+1. Give your flow a name in the **Flow name** field.
 
-1. Enter **Twitter** into the **Search all triggers** field.
+1. Enter **Twitter** into the **Choose your flow's trigger** field.
 
-1. Select **Twitter - When a new tweet is posted**.
+1. Select **Twitter - When a new tweet is posted** and click on the "Create" button at the bottom of the screen.
 
    ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/name-search-trigger.png)
 
@@ -53,9 +53,6 @@ First, you will need to select what event, or *trigger*, starts your flow.
 <!-- 1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
 
     ![Twitter event](./media/get-started-logic-flow/twitter-search.png) -->
-
-1. Select the **Create** button at the bottom of the screen.
-
 
    >[!TIP]
    >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
