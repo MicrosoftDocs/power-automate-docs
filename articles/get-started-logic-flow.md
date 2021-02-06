@@ -57,15 +57,15 @@ First, you will need to select what event, or *trigger*, starts your flow.
    >[!TIP]
    >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
 
-1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
+1. If you haven't already connected your Twitter account to Power Automate, select **Authentication Type** and click to **Sign in to Twitter**, and then provide your credentials. Note that you need atouthorize app access to Microsoft Power Platform.  
 
-1. In the **Search text** box, type the keyword that you want to find.
+1. Click on the "When a new tweet posted" and then in the **Search text** box, type the keyword that you want to find.This operation triggers a flow when a new tweet that matches a given search query is posted.
 
     ![Twitter keyword](./media/get-started-logic-flow/twitter-keyword.png)
 
 ## Specify an action
 
-1. Select **New step**.
+1. Click on the **New step** to Add your new step.
 
     <!-- ![Add action](./media/get-started-logic-flow/add-action-icon.png) -->
 
