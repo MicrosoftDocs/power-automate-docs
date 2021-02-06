@@ -48,19 +48,13 @@ First, you will need to select what event, or *trigger*, starts your flow.
 1. Select **Twitter - When a new tweet is posted** and click on the "Create" button at the bottom of the screen.
 
    ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/name-search-trigger.png)
-
-
-<!-- 1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
-
-    ![Twitter event](./media/get-started-logic-flow/twitter-search.png) -->
-     
+   
 1. If you haven't already connected your Twitter account to Power Automate, select **Authentication Type** and click to **Sign in to Twitter**, and then provide your credentials. Note that you need atouthorize app access to Microsoft Power Platform.  
 
-       ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/sign-in-to-twitter.png)
+     ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/sign-in-to-twitter.png)  
        
-       
- >[!TIP]
-   >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
+   >[!TIP]
+     >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
 
 1. Click on the "When a new tweet posted" and then in the **Search text** box, type the keyword that you want to find.This operation triggers a flow when a new tweet that matches a given search query is posted.
 
