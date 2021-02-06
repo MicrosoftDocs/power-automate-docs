@@ -10,19 +10,19 @@
     href: sign-up-sign-in.md
   - name: What's new
     href: whats-new.md
-- name: Learning Catalog
+- name: Learning catalog
   items:
   - name: Overview
     href: learning-catalog/learning-catalog.md
-  - name: App Maker
+  - name: App maker
     href: learning-catalog/learning-catalog-app-maker.md
   - name: Administrator
     href: learning-catalog/learning-catalog-administrator.md
   - name: Developer
     href: learning-catalog/learning-catalog-developer.md
-  - name: Functional Consultant
+  - name: Functional consultant
     href: learning-catalog/learning-catalog-functional-consultant.md      
-  - name: Partner Presales Roles
+  - name: Partner presales roles
     href: learning-catalog/learning-catalog-sales.md
 - name: Process advisor (preview)
   items:
