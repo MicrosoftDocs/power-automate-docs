@@ -23,7 +23,7 @@ The flow designer includes a number of actions under the **Web automation** cate
 Four web browsers are currently supported:
 
 * Internet Explorer
-* Edge
+* A chromium-based version of Edge
 * Firefox
 * Chrome
 
