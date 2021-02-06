@@ -30,7 +30,7 @@ This topic contains information about the current limits and configuration detai
 
 ## Performance profiles
 
-Flows have different limits depending on the *performance profile* of the flow. You can see your performance profile by selecting **Export** on your flow and seeing the performance profile for your flow. There are five possible values, depending on the plan of the owner of the flow:
+Flows have different limits depending on their *performance profile*. There are five possible values, depending on the flow owner's plan.
 
 | Performance profile | Plans |
 |---------------------|-------|
@@ -40,7 +40,9 @@ Flows have different limits depending on the *performance profile* of the flow. 
 | Medium              | - All instant flows, such as flows with Button or Power Apps triggers, or child flows |
 | High                | - Power Automate per flow plan |
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two. For the exact set of plans that include Power Automate capabilities, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+
+If needed, users can see their current plan by opening the session debugging information by pressing Ctrl+Alt+A in the maker portal. The current plan being used will have isCurrent=true.
 
 The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
 
@@ -48,11 +50,11 @@ The flow uses the plan of the owner of a cloud flow. If a cloud flow has been sh
 
 There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
 
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Executions per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Executions per 24 hours | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](https://aka.ms/platformlimits). These limits represent approximations of how many requests will be allowed daily and not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
-| Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
+| Name | Entitlement limit | Interim limit | Notes |
+| ---- | ----- | ----- | ----- |
+| Runs per 5 minutes | 100,000 | n/a | Distribute the workload across more than one flow as necessary. |
+| Runs per 24 hours | 2,000 for Low, 5,000 for MediumLow1, 20,000 for MediumLow2, 25,000 for Medium, and 100,000 for High | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium, and 500,000 for High | Because of the current transition period (in the year of 2020) the interim limits are in place and are less strict than the entitlement limits details in the [requests limits and allocations document](https://aka.ms/platformlimits). The interim limits represent approximations of how many requests will be allowed daily and not guarantees. Actual amounts may be smaller, but will be greater than the entitlement limits during the transition period. These limits will change after the transition period ends. If necessary, distribute the workload across multiple flows and/or the user entitlements of multiple flow creators. | 
+| Concurrent outbound calls | 500 for Low, 2,500 for all others | n/a | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
 
@@ -131,7 +133,7 @@ Here are the limits for a single flow run:
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Trigger concurrency | - Unlimited when the concurrency control is turned off <br />- 25 is the default limit when the concurrency control is turned on, which you can't undo after you enable concurrency. You can change the default to a value between 1 and 50 inclusively. | This limit describes the highest number of flow runs that can run at the same time, or in parallel. <br />**Note**: When concurrency is turned on, the SplitOn limit is reduced to 100 items for debatching arrays. |
-| Maximum waiting runs | - Without concurrency, the minimum number of waiting runs is 1, while the maximum number is 50. <br />- With concurrency, the minimum number of waiting runs is 10 plus the number of concurrent runs (trigger concurrency). You can change the maximum number up to 100 inclusively. | This limit describes the highest number of flow runs that can wait to run when your flow is already running the maximum concurrent instances. |
+| Maximum waiting runs | - Without concurrency, the minimum number of waiting runs is 1, while the maximum number is 50. <br />- With concurrency, the minimum number of waiting runs is 10 plus the number of concurrent runs (trigger concurrency). You can change the maximum number in the settings for the trigger under **Concurrency Control**. | This limit describes the highest number of flow runs that can wait to run when your flow is already running the maximum concurrent instances. |
 | Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that a "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
 | Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
