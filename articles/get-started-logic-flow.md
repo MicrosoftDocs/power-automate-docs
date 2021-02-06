@@ -37,9 +37,9 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In [Power Automate](https://flow.microsoft.com), select **My flows** from the navigation bar on the left.
 
-1. Select **New**, and then select **Automated-from blank**. 
+1. Select **New flow**, and then select **Automated cloud flow**. 
 
-    <!-- ![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png) -->
+     ![Flows option in the left navigation bar](./media/get-started-logic-flow/build-your-automated-cloud-flow) 
 
 1. Give your flow a name in the **Add a name or we'll generate one** field.
 
