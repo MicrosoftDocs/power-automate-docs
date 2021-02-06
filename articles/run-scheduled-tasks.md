@@ -32,7 +32,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 ## Create a recurring flow
 
 1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** on the left navigation pane.
-1. Select **New** and then **Scheduled-from blank**.
+1. Select **New flow** and then **Scheduled cloud flow**.
     ![Create a cloud flow from blank](./media/run-scheduled-tasks/create-flow.png)
 1. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes then select **Create**.
     ![Set recurrence](./media/run-scheduled-tasks/select-recurrence.png)
