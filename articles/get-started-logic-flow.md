@@ -45,7 +45,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Enter **Twitter** into the **Choose your flow's trigger** field.
 
-1. Select **Twitter - When a new tweet is posted** and click on the "Create" button at the bottom of the screen.
+1. Select **Twitter - When a new tweet is posted** and click on the **"Create"** button at the bottom of the screen.
 
    ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/name-search-trigger.png)
    
