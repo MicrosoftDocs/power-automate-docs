@@ -61,7 +61,7 @@ This walkthrough uses tokens. To display the list of tokens, tap or click any in
 
 Sign into [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
 
-1. Select **My flows** > **New** > **Automated-from blank**, in the top left of the screen.
+1. Select **My flows** > **New flow** > **Automated cloud flow**, in the top left of the screen.
 1. Give your flow a name and then add the **SharePoint - When an item is created or modified** trigger.
 1. Enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
 1. Select **New step**, add the Office 365 **Get manager (V2)** action, select the **User (UPN)** box, and then add the **Created By Email** token to it.
