@@ -32,7 +32,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 ## Create the flow
 
 1. Sign into Power Automate.
-1. Select **My flows** > **New** > **Instant-from blank**.
+1. Select **My flows** > **New flow** > **Instant cloud flow**.
 
     ![New instant blank flow](./media/approval-attachments/new-instand-blank.png)
 
