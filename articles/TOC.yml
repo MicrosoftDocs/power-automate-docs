@@ -547,7 +547,7 @@
 - name: Learn from others
   items:
   - name: Webinars
-    href: https://flow.microsoft.com/blog/category/webinars/
+    href: webinars.md
   - name: Blog
     href: https://flow.microsoft.com/blog/
   - name: Forums
