@@ -106,13 +106,11 @@ Let's create the flow.
 
       The **or** expression appears as shown here:
       
-          ```
-                or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed'))````
+             ```or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')) 
             
     *  Assume also that you want to delete all rows if the Status column's value is "Blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
     
-           ``` 
-	        and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))````
+             ```and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))
         
 
 
@@ -123,7 +121,7 @@ Let's create the flow.
      * For above three scenario's we have created nested expression which return true value and which compared with *equal to* **true** : 
          
 	    ``` 
-	       or(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')),or(and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(items('Apply_to_each')?['Status']), empty(items('Apply_to_each')?['Assigned']))))````
+	       or(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')),or(and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(items('Apply_to_each')?['Status']), empty(items('Apply_to_each')?['Assigned'])))) 
 
 
     Your **Condition** card resembles this image:
