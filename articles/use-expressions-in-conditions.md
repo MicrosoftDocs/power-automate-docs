@@ -77,10 +77,10 @@ Let's create the flow.
 ### Add a trigger to your flow
 1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then click on **Create**.
 
-    ![schedule trigger](includes/media/schedule-trigger/schedule-trigger.png)
+    ![schedule trigger](includes/media/modern-approvals/schedule-trigger.png)
 1. Verify schedule run.
 
-    ![set schedule](includes/media/schedule-trigger/set-schedule.png)
+    ![set schedule](includes/media/modern-approvals/set-schedule.png)
 
 ### Select the spreadsheet and get all rows
 1. Select **New step** > In the **Choose an action** box enter **excel** in the **Search connectors and actions** field and then select **Excel Online(Business)**.
