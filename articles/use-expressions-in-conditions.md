@@ -21,7 +21,7 @@ search.audienceType:
 ---
 # Use expressions in conditions to check multiple values
 
-In this walkthrough, you'll learn to use expressions and **Conditions** to compare multiple values in **Advanced mode**.
+In this walkthrough, you'll learn to use expressions and **Conditions** to compare multiple values in **expression function**.
 
 When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
@@ -48,16 +48,19 @@ Expression|Description|Example
 ## Use the or expression
 Sometimes your workflow needs to take an action if the value of an item is valueA **or** valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named *Status* and the possible values in the *Status* column are:
 
-* **completed**
-* **blocked**
-* **unnecessary**
-* **not started**
+* **Completed**
+* **Blocked**
+* **Unnecessary**
+* **Not started**
 
 Here's an example of what the spreadsheet might look like:
 
 ![sample spreadsheet](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
-Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a *Status* column that's set to *completed* or *unnecessary*.
+Given the preceding spreadsheet, you want to use Power Automate to remove all rows/excel records for below conditions: 
+* *Status* column that's set to *completed* or *unnecessary*.
+* Remove all the empty rows.
+* Delete all rows if the Status column's value is "bBocked" and the Assigned column's value is "John Wonder
 
 Let's create the flow.
 
@@ -65,68 +68,84 @@ Let's create the flow.
 1. Sign into [Power Automate](https://flow.microsoft.com).
 
     ![sign in](includes/media/modern-approvals/sign-in.png)
-2. Select the **My flows** tab.
+1. Select the **My flows** tab from left menu.
 
     ![select my flows](includes/media/modern-approvals/select-my-flows.png)
-3. Select **Create from blank**.
+1. Select **New** > Click on **Scheduled cloud flow**.
 
     ![create from blank](includes/media/modern-approvals/blank-template.png)
 
 ### Add a trigger to your flow
-1. Search for **Schedule**, and then select the **Schedule - Recurrence** trigger
+1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then select **Create**.
 
     ![schedule trigger](includes/media/schedule-trigger/schedule-trigger.png)
-2. Set the schedule to run once daily.
+1. Verify schedule run.
 
     ![set schedule](includes/media/schedule-trigger/set-schedule.png)
 
 ### Select the spreadsheet and get all rows
-1. Select **New step** > **Add an action**.
+1. Select **New step** > In the **Choose an action** box enter **excel** in the **Search connectors and actions** field and then select **Excel Online(Business)**.
 
     ![new step](includes/media/new-step/action.png)
-2. Search for **rows**, and then select **Excel - Get rows**.
+1. Search for **rows** in the field and then select **Excel - List rows present in a table**.
+   Select the **Location** and **Document Library** from the dropdown list.
+	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
+	 Select the table that contains your data from the **Table name** list.
+   ![get Rows](includes/media/new-step/get-excel-rows.png)
 
-    Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+    Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
 
-    ![get Rows](includes/media/new-step/get-excel-rows.png)
-3. Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
-
-    ![select spreadsheet](includes/media/new-step/select-spreadsheet.png)
-4. Select the table that contains your data from the **Table name** list.
-
-    ![select table](includes/media/new-step/select-table.png)
-
-### Check the status column of each row
-1. Select **New step** > **More** > **Add an apply to each**.
+### Check the status column of each row using Apply to each control action
+1. Select **New step** > In the **Choose an action** box enter **Apply to each** in the **Search connectors and actions** and then select **Apply to each control** action.
 
     ![select table](includes/media/new-step/apply-to-each.png)
-2. Add the **Value** token to the **Select an output from previous steps** box.
+1. Add the **Value** token to the **Select an output from previous steps** box.
 
     ![select table](includes/media/apply-to-each/add-value-token.png)
-3. Select **Add a condition** > **Edit in advanced mode**.
-4. Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
+1. Click on **Add an action** button in the **Apply to each control**  action > then in the **Choose an action** box enter **condition** in the **Search connectors and actions** box and select **Condition as an action**.
 
-    The **or** expression appears as shown here:
+1. As per scenario add the expression in condition below scenarion one by one.
 
-    ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
+    * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
+
+      The **or** expression appears as shown here:
+       
+       bool(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')))
+      Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
+      
+    *  Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
+    
+        bool(and(equals(item('Apply_to_each')?['Status'], 'blocked'), equals(item('Apply_to_each')?['Assigned'], 'John Wonder')))
+        Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
+
+
+    * There are several empty rows in the spreadsheet now. To remove them, Assuming you wanted to remove empty by useing the empty expression. empty expression will  to identify all rows that don't have any text in the Assigned and Status columns. To accomplish this task, use the and expression shown here:
+     bool(and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))
+     Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
+     
+     * For this scenario we have created nested expression: 
+         Bool(or(or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed')),or(and(equals(item('Apply_to_each')?['Status'], 'blocked'),  
+         equals(item('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))))
+
 
     Your **Condition** card resembles this image:
 
     ![or expression image](./media/use-expressions-in-conditions/or-expression.png)
 
-### Delete matching rows from the spreadsheet
-1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
-2. Search for **Delete row**, and then select **Excel - Delete row**.
+### Delete matching rows from the spreadsheet using - Delete a row action
+1. If condition matches then Select **Add an action** on the **YES** branch condition.
+1. Search for **Delete a row** and then select **Delete a row**.
 
     ![delete row image](includes/media/new-step/select-delete-excel-row.png)
-3. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
-4. In the **Table name** list, select the table that contains your data.
-5. Place the **Row id** token in the **Row id** box.
+1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
+   In the **Table name** list, select the table that contains your data.
+   
+   In **Key Value** click on  **Add a dynamic value** and then select “RowNo” from the “List rows present in a table”.
 
     ![spreadsheet file](includes/media/new-step/delete-excel-row.png)
 
-### Name the flow and save it
-1. Give your flow a name and then select the **Create flow** button.
+### Save the flow
+1. Click on the **Save** button in the bottom of the screen.
 
     ![save your flow](./media/use-expressions-in-conditions/name-and-save.png)
 
@@ -135,42 +154,7 @@ The flow runs after you save it. If you created the spreadsheet shown earlier in
 
 ![or expression completes](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
 
-Notice all data from rows that had "completed" or "unnecessary" in the Status column were deleted.
-
-## Use the and expression
-Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** expression shown here:
-
-````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
-
-Your **Condition** card resembles this image:
-
-![and expression image](./media/use-expressions-in-conditions/and-expression.png)
-
-### Run the flow with the and expression
-If you followed along, your spreadsheet resembles this image:
-
-![before and runs](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png)
-
-After your flow runs, your spreadsheet resembles this image:
-
-![after and runs](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png)
-
-## Use the empty expression
-Notice that there are several empty rows in the spreadsheet now. To remove them, use the **empty** expression to identify all rows that don't have any text in the Assigned and Status columns.
-
-To accomplish this task, follow all steps listed in **Use the and expression** section earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the empty expression this way:
-
-````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
-
-Your **Condition** card resembles this image:
-
-![empty expression image](./media/use-expressions-in-conditions/empty-expression.png)
-
-After your flow runs, the spreadsheet resembles this image:
-
-![after empty runs](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png)
-
-Notice extra lines are removed from the table.
+Notice all data from rows that had all the three scenario listed above were deleted in **Excel online sheet**.
 
 ## Use the greater expression
 Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who hasn't paid the full amount.
