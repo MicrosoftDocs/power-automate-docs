@@ -132,18 +132,17 @@ Let's create the flow.
 1. If condition matches then Select **Add an action** on the **YES** branch condition.
 1. Search for **Delete a row** and then select **Delete a row**.
 
-    ![delete row image](includes/media/new-step/select-delete-excel-row.png)
+    ![delete row image](./media/use-expressions-in-conditions/select-delete-excel-row.png)
 1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
    In the **Table name** list, select the table that contains your data.
    
    In **Key Value** click on  **Add a dynamic value** and then select “RowNo” from the “List rows present in a table”.
 
-    ![spreadsheet file](includes/media/new-step/delete-excel-row.png)
+    ![spreadsheet file](./media/use-expressions-in-conditions/delete-excel-row.png)
 
 ### Save the flow
-1. Click on the **Save** button in the bottom of the screen.
+1. Click on the **Save** button.
 
-    ![save your flow](./media/use-expressions-in-conditions/name-and-save.png)
 
 ### Run the flow with the or expression
 The flow runs after you save it. If you created the spreadsheet shown earlier in this walkthrough, here's what the it looks like after the run completes:
