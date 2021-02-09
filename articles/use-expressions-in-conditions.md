@@ -87,7 +87,8 @@ Let's create the flow.
    Select the **Location** and **Document Library** from the dropdown list.
 	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
 	 Select the table that contains your data from the **Table name** list. <br />
-   ![get Rows](./media/use-expressions-in-conditions/get-excel-rows.png)
+	 ![get Rows](./media/use-expressions-in-conditions/get-excel-list-table.png) <br/>
+         ![get Rows](./media/use-expressions-in-conditions/get-excel-rows.png)
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
 
@@ -106,11 +107,11 @@ Let's create the flow.
 
       The **or** expression appears as shown here:
       
-             ```or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')) 
+                or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')) 
             
     *  Assume also that you want to delete all rows if the Status column's value is "Blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
     
-             ```and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))
+                 and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))
         
 
 
