@@ -72,15 +72,15 @@ Let's create the flow.
 
     ![select my flows](includes/media/modern-approvals/select-my-flows.png)
 1. Select **New** > Click on **Scheduled cloud flow**.
-    ![create from blank](includes/media/modern-approvals/create-scheduled-flow.png)
+    ![create from blank](includes/media/use-expressions-in-conditions/create-scheduled-flow.png)
 
 ### Add a trigger to your flow
 1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then click on **Create**.
 
-    ![schedule trigger](includes/media/modern-approvals/schedule-trigger.png)
+    ![schedule trigger](includes/media/use-expressions-in-conditions/schedule-trigger.png)
 1. Verify schedule run.
 
-    ![set schedule](includes/media/modern-approvals/set-schedule.png)
+    ![set schedule](includes/media/use-expressions-in-conditions/set-schedule.png)
 
 ### Select the spreadsheet and get all rows
 1. Select **New step** > In the **Choose an action** box enter **excel** in the **Search connectors and actions** field and then select **Excel Online(Business)**.
@@ -90,17 +90,17 @@ Let's create the flow.
    Select the **Location** and **Document Library** from the dropdown list.
 	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
 	 Select the table that contains your data from the **Table name** list.
-   ![get Rows](includes/media/modern-approvals/get-excel-rows.png)
+   ![get Rows](includes/media/use-expressions-in-conditions/get-excel-rows.png)
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
 
 ### Check the status column of each row using Apply to each control action
 1. Select **New step** > In the **Choose an action** box enter **Apply to each** in the **Search connectors and actions** and then select **Apply to each control** action.
 
-    ![select table](includes/media/new-step/apply-to-each.png)
+    ![select table](includes/media/use-expressions-in-conditions/apply-to-each.png)
 1. Add the **Value** token to the **Select an output from previous steps** box.
 
-    ![select table](includes/media/apply-to-each/add-value-token.png)
+    ![select table](includes/media/use-expressions-in-conditions/add-value-token.png)
 1. Click on **Add an action** button in the **Apply to each control**  action > then in the **Choose an action** box enter **condition** in the **Search connectors and actions** box and select **Condition as an action**.
 
 1. As per scenario add the expression in condition below scenarion one by one.
