@@ -68,42 +68,39 @@ Let's create the flow.
 1. Sign into [Power Automate](https://flow.microsoft.com).
 
     ![sign in](includes/media/modern-approvals/sign-in.png)
-1. Select the **My flows** tab from left menu.
-
-    ![select my flows](includes/media/modern-approvals/select-my-flows.png)
-1. Select **New** > Click on **Scheduled cloud flow**.
-    ![create from blank](includes/media/use-expressions-in-conditions/create-scheduled-flow.png)
+1. Select the **My flows** tab from left menu and then Select **New flow** > **Scheduled cloud flow**.
+    ![create from blank](./media/use-expressions-in-conditions/create-scheduled-flow.png)
 
 ### Add a trigger to your flow
 1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then click on **Create**.
 
-    ![schedule trigger](includes/media/use-expressions-in-conditions/schedule-trigger.png)
+    ![schedule trigger](./media/use-expressions-in-conditions/schedule-trigger.png)
 1. Verify schedule run.
 
-    ![set schedule](includes/media/use-expressions-in-conditions/set-schedule.png)
+    ![set schedule](./media/use-expressions-in-conditions/set-schedule.png)
 
 ### Select the spreadsheet and get all rows
 1. Select **New step** > In the **Choose an action** box enter **excel** in the **Search connectors and actions** field and then select **Excel Online(Business)**.
 
-    ![new step](includes/media/modern-approvals/action.png)
+    ![new step](./media/use-expressions-in-conditions/action.png)
 1. Search for **rows** in the field and then select **Excel - List rows present in a table**.
    Select the **Location** and **Document Library** from the dropdown list.
 	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
 	 Select the table that contains your data from the **Table name** list.
-   ![get Rows](includes/media/use-expressions-in-conditions/get-excel-rows.png)
+   ![get Rows](./media/use-expressions-in-conditions/get-excel-rows.png)
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
 
 ### Check the status column of each row using Apply to each control action
 1. Select **New step** > In the **Choose an action** box enter **Apply to each** in the **Search connectors and actions** and then select **Apply to each control** action.
 
-    ![select table](includes/media/use-expressions-in-conditions/apply-to-each.png)
+    ![select table](./media/use-expressions-in-conditions/apply-to-each.png)
 1. Add the **Value** token to the **Select an output from previous steps** box.
 
-    ![select table](includes/media/use-expressions-in-conditions/add-value-token.png)
+    ![select token](./media/use-expressions-in-conditions/add-value-token.png)
 1. Click on **Add an action** button in the **Apply to each control**  action > then in the **Choose an action** box enter **condition** in the **Search connectors and actions** box and select **Condition as an action**.
-
-1. As per scenario add the expression in condition below scenarion one by one.
+    ![select value](./media/use-expressions-in-conditions/add-value-token-2.png)
+1. As per scenario add the expression in condition described one by one.
 
     * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
 
