@@ -59,12 +59,12 @@ Here's an example of what the spreadsheet might look like:
 
 Given the preceding spreadsheet, you want to use Power Automate to remove all rows/excel records for below conditions: 
 * *Status* column that's set to *completed* or *unnecessary*.
-* Remove all the empty rows.
-* Delete all rows if the Status column's value is "bBocked" and the Assigned column's value is "John Wonder
+* Remove all the *empty* rows.
+* Delete all rows where the *Status* column's value is *Blocked* and the *Assigned* column's value is *John Wonder*.
 
 Let's create the flow.
 
-### Start with a blank flow
+### Start with a Scheduled cloud flow
 1. Sign into [Power Automate](https://flow.microsoft.com).
 
     ![sign in](includes/media/modern-approvals/sign-in.png)
@@ -72,11 +72,10 @@ Let's create the flow.
 
     ![select my flows](includes/media/modern-approvals/select-my-flows.png)
 1. Select **New** > Click on **Scheduled cloud flow**.
-
-    ![create from blank](includes/media/modern-approvals/blank-template.png)
+    ![create from blank](includes/media/modern-approvals/create-scheduled-flow.png)
 
 ### Add a trigger to your flow
-1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then select **Create**.
+1. Give your flow a name. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes, Select 1 as Interval, Day as frequency then click on **Create**.
 
     ![schedule trigger](includes/media/schedule-trigger/schedule-trigger.png)
 1. Verify schedule run.
