@@ -86,7 +86,7 @@ Let's create the flow.
 1. Search for **rows** in the field and then select **Excel - List rows present in a table**.
    Select the **Location** and **Document Library** from the dropdown list.
 	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
-	 Select the table that contains your data from the **Table name** list.
+	 Select the table that contains your data from the **Table name** list. <br />
    ![get Rows](./media/use-expressions-in-conditions/get-excel-rows.png)
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
@@ -102,17 +102,17 @@ Let's create the flow.
     ![select value](./media/use-expressions-in-conditions/add-value-token-2.png)
 1. As per scenario add the expression in condition described one by one.
 
-    * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true". 
+    * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *Completed* **or** *Unnecessary*, the **or** expression evaluates to "true". 
 
       The **or** expression appears as shown here:
       
-          ```powershell
-                or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed'))
+          ```
+                or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed'))````
             
-    *  Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
+    *  Assume also that you want to delete all rows if the Status column's value is "Blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
     
-           ```powershell
-	        and(equals(item('Apply_to_each')?['Status'], 'blocked'), equals(item('Apply_to_each')?['Assigned'], 'John Wonder'))
+           ``` 
+	        and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))````
         
 
 
@@ -122,9 +122,8 @@ Let's create the flow.
      
      * For above three scenario's we have created nested expression which return true value and which compared with *equal to* **true** : 
          
-	    ```powershell
-	       or(or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed')),or(and(equals(item('Apply_to_each')?['Status'], 'blocked'),  
-               equals(item('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned']))))
+	    ``` 
+	       or(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')),or(and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(items('Apply_to_each')?['Status']), empty(items('Apply_to_each')?['Assigned']))))````
 
 
     Your **Condition** card resembles this image:
@@ -132,7 +131,7 @@ Let's create the flow.
     ![or expression image](./media/use-expressions-in-conditions/or-expression.png)
 
 ### Delete matching rows from the spreadsheet using - Delete a row action
-1. If condition matches then Select **Add an action** on the **YES** branch condition.
+1. If condition matches then Select **Add an action** in the **YES** branch.
 1. Search for **Delete a row** and then select **Delete a row**.
 
     ![delete row image](./media/use-expressions-in-conditions/select-delete-excel-row.png)
@@ -165,7 +164,7 @@ Here's a view of the spreadsheet:
 
 Here's the implementation of the **greater** expression that identifies all persons who have paid less than the amount due from them:
 
-````@greater(item()?['Due'], item()?['Paid'])````
+````greater(item()?['Due'], item()?['Paid'])````
 
 ## Use the less expression
 Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
@@ -175,8 +174,8 @@ Use the **and** expression along with the **less** expression since there are tw
 
 |          Condition to validate          | expression to use |                    Example                     |
 |-----------------------------------------|-------------------|------------------------------------------------|
-|   Has the full amount due been paid?    |      greater      |   @greater(item()?['Due'], item()?['Paid'])    |
-| Is the due date less than one day away? |       less        | @less(item()?['DueDate'], addDays(utcNow(),1)) |
+|   Has the full amount due been paid?    |      greater      |   greater(item()?['Due'], item()?['Paid'])     |
+| Is the due date less than one day away? |       less        |  less(item()?['DueDate'], addDays(utcNow(),1)) |
 
 ## Combine the greater and less expressions in an and expression
 Use the **greater** expression to identify the employees who have paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then the **Send an email** action to send friendly reminder email to those who haven't paid in full and the due date is less than one day away.
@@ -187,7 +186,7 @@ Here's a view of the spreadsheet table:
 
 Here's the implementation of the **and** expression that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current date:
 
-````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
+````and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
 ## Use functions in expressions
 
