@@ -102,26 +102,29 @@ Let's create the flow.
     ![select value](./media/use-expressions-in-conditions/add-value-token-2.png)
 1. As per scenario add the expression in condition described one by one.
 
-    * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
+    * Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true". 
 
       The **or** expression appears as shown here:
-       
-       bool(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')))
-      Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
       
+          ```powershell
+                or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed'))
+            
     *  Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
     
-        bool(and(equals(item('Apply_to_each')?['Status'], 'blocked'), equals(item('Apply_to_each')?['Assigned'], 'John Wonder')))
-        Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
+           ```powershell
+	        and(equals(item('Apply_to_each')?['Status'], 'blocked'), equals(item('Apply_to_each')?['Assigned'], 'John Wonder'))
+        
 
 
     * There are several empty rows in the spreadsheet now. To remove them, Assuming you wanted to remove empty by useing the empty expression. empty expression will  to identify all rows that don't have any text in the Assigned and Status columns. To accomplish this task, use the and expression shown here:
      bool(and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))
      Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
      
-     * For this scenario we have created nested expression: 
-         Bool(or(or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed')),or(and(equals(item('Apply_to_each')?['Status'], 'blocked'),  
-         equals(item('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))))
+     * For above three scenario's we have created nested expression which return true value and which compared with *equal to* **true** : 
+         
+	    ```powershell
+	       or(or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed')),or(and(equals(item('Apply_to_each')?['Status'], 'blocked'),  
+               equals(item('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned']))))
 
 
     Your **Condition** card resembles this image:
