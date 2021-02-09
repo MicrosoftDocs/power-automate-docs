@@ -36,4 +36,6 @@ by Lokeshwar Reddy Vangala and Pranav Rastogi<br/>
 
 ### See also
 
+[More Power Automate webinars](https://flow.microsoft.com/en-us/blog/category/webinars/)
+
 [Power Apps webinars](/powerapps/webinars)
