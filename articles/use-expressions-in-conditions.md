@@ -85,12 +85,12 @@ Let's create the flow.
 ### Select the spreadsheet and get all rows
 1. Select **New step** > In the **Choose an action** box enter **excel** in the **Search connectors and actions** field and then select **Excel Online(Business)**.
 
-    ![new step](includes/media/new-step/action.png)
+    ![new step](includes/media/modern-approvals/action.png)
 1. Search for **rows** in the field and then select **Excel - List rows present in a table**.
    Select the **Location** and **Document Library** from the dropdown list.
 	 Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
 	 Select the table that contains your data from the **Table name** list.
-   ![get Rows](includes/media/new-step/get-excel-rows.png)
+   ![get Rows](includes/media/modern-approvals/get-excel-rows.png)
 
     Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using **Google Sheets**, select **Google Sheets - Get rows**.  
 
