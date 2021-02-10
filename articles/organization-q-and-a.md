@@ -110,7 +110,13 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 ### How does an individual find out what plan they are on?
 
-Anyone can see the plan they have by visiting the Power Automate pricing page at [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). The plan or trial they are currently on will be shown there.
+1. Sign into [Power Automate](https://powerautomate.com).
+1. Select your profile picture in the top right corner of the screen.
+1. Select **View account**.
+1. Select the **Subscriptions** tile.
+1. Search for **Power Automate** under the **Licenses** section.
+
+   You will see the license that you have for Power Automate.
 
 ### Will Power Automate sign up impact the identities in my organization?
 

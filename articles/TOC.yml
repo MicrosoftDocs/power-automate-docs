@@ -8,10 +8,22 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: Guided learning
-    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
   - name: What's new
-  href: whats-new.md
+    href: whats-new.md
+- name: Learning catalog
+  items:
+  - name: Overview
+    href: learning-catalog/learning-catalog.md
+  - name: App maker
+    href: learning-catalog/learning-catalog-app-maker.md
+  - name: Administrator
+    href: learning-catalog/learning-catalog-administrator.md
+  - name: Developer
+    href: learning-catalog/learning-catalog-developer.md
+  - name: Functional consultant
+    href: learning-catalog/learning-catalog-functional-consultant.md      
+  - name: Partner presales roles
+    href: learning-catalog/learning-catalog-sales.md
 - name: Process advisor (preview)
   items:
   - name: Overview    
@@ -444,20 +456,6 @@
     href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow attributes
     href: best-practices-entity-attributes.md
-- name: Learning Catalog
-  items:
-  - name: Overview
-    href: learning-catalog/learning-catalog.md
-  - name: App Maker
-    href: learning-catalog/learning-catalog-app-maker.md
-  - name: Administrator
-    href: learning-catalog/learning-catalog-administrator.md
-  - name: Developer
-    href: learning-catalog/learning-catalog-developer.md
-  - name: Functional Consultant
-    href: learning-catalog/learning-catalog-functional-consultant.md      
-  - name: Partner Presales Roles
-    href: learning-catalog/learning-catalog-sales.md
 - name: Connect to data
   items:
   - name: Available connections
@@ -549,7 +547,7 @@
 - name: Learn from others
   items:
   - name: Webinars
-    href: https://flow.microsoft.com/blog/category/webinars/
+    href: webinars.md
   - name: Blog
     href: https://flow.microsoft.com/blog/
   - name: Forums
