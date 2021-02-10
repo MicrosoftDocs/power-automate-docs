@@ -58,7 +58,7 @@ Here's an example of what the spreadsheet might look like:
 ![sample spreadsheet](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
 Given the preceding spreadsheet, you want to use Power Automate to remove all rows/excel records for below conditions: 
-* *Status* column that's set to *completed* or *unnecessary*.
+* *Status* column that's set to *Completed* or *Unnecessary*.
 * Remove all the *empty* rows.
 * Delete all rows where the *Status* column's value is *Blocked* and the *Assigned* column's value is *John Wonder*.
 
@@ -109,20 +109,20 @@ Let's create the flow.
       
                 or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')) 
             
-    *  Assume also that you want to delete all rows if the Status column's value is "Blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the and expression shown here:
+    *  Assume also that you want to delete all rows if the Status column's value is "Blocked" and the Assigned column's value is "John Wonder". To accomplish this task, use the below expression:
     
                  and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder'))
         
 
 
-    * There are several empty rows in the spreadsheet now. To remove them, Assuming you wanted to remove empty by useing the empty expression. empty expression will  to identify all rows that don't have any text in the Assigned and Status columns. To accomplish this task, use the and expression shown here:
-     bool(and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))
-     Output of the above expression is Boolean value so that can compare in the condition e.g. bool(‘true’)
+    * There are several empty rows in the spreadsheet now. To remove them, Assuming you wanted to remove empty by useing the empty expression. empty expression will  to identify all rows that don't have any text in the Assigned and Status columns. To accomplish this task, use the below expression:
+    
+                 bool(and(empty(item('Apply_to_each')?['Status']), empty(item('Apply_to_each')?['Assigned'])))
+     
      
      * For above three scenario's we have created nested expression which return true value and which compared with *equal to* **true** : 
          
-	    ``` 
-	       or(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')),or(and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(items('Apply_to_each')?['Status']), empty(items('Apply_to_each')?['Assigned'])))) 
+	         or(or(equals(items('Apply_to_each')?['Status'], 'Unnecessary'), equals(items('Apply_to_each')?['Status'], 'Completed')),or(and(equals(items('Apply_to_each')?['Status'], 'Blocked'), equals(items('Apply_to_each')?['Assigned'], 'John Wonder')), and(empty(items('Apply_to_each')?['Status']), empty(items('Apply_to_each')?['Assigned'])))) 
 
 
     Your **Condition** card resembles this image:
@@ -136,7 +136,7 @@ Let's create the flow.
     ![delete row image](./media/use-expressions-in-conditions/select-delete-excel-row.png)
 1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
    In the **Table name** list, select the table that contains your data.
-   
+   In **Kay Column** Select the "RowNo" from the dropdown.
    In **Key Value** click on  **Add a dynamic value** and then select “RowNo” from the “List rows present in a table”.
 
     ![spreadsheet file](./media/use-expressions-in-conditions/delete-excel-row.png)
