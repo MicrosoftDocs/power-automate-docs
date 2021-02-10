@@ -33,9 +33,13 @@ To add an element to the flow, highlight it and press **Ctrl & Left click**:
 
 ![Capturing UI elements](./media/ui-elements/capturing-ui-elements.png)
 
-When finished, press **Done**. Any UI elements captured will be added to the UI elements pane. Elements can be sorted alphabetically by selecting the **Sort** icon.
+When finished, press **Done**. Any UI elements captured will be added to the UI elements pane.
 
-To rename or delete UI elements, right-click on an item and select the appropriate function.
+To access the UI elements pane, select the **UI elements** tab on the right-hand side of the flow designer:
+
+![Access the UI elements pane](./media/ui-elements/access-ui-elements-pane.png)
+
+Elements can be sorted alphabetically by selecting the **Sort** icon. To rename or delete UI elements, right-click on an item and select the appropriate function.
 
 To use a captured element in an action, simply select it from the drop-down list:
 
