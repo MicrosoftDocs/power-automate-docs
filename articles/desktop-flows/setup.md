@@ -45,6 +45,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
      - Recommended hardware
         - Storage: 2GB
 	     - RAM: 4GB
+     - .NET Framework 4.7.2 or later 
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
