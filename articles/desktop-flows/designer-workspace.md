@@ -62,6 +62,12 @@ Select **Edit**, then **Go to line** and enter a line. The corresponding action 
 
 ![go to line](\media\using-line-option\go-to-line.png)
 
+## Using the Run from here option
+
+To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
+
+![run from here](\media\run-stop-pause\run-from-here.png)
+
 ## Making use of the recorders
 
 ### Web recorder
