@@ -56,7 +56,7 @@ The produced variables hold the outcomes of the action for later use. All the pr
 
 Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the [respective article](variable-data-types.md).
 
-In case a produced variable isn't needed for later use, uncheck the checkbox under **Variables produced**. 
+In case a produced variable isn't needed for later use, unselect the checkbox under **Variables produced**. 
 
 ![The option to disable a produced variable in the action.](media/configuring-actions/actions-outputs.png)
 
