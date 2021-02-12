@@ -1,0 +1,37 @@
+---
+title: Known issues and limitation | Microsoft Docs
+description: Known issues and limitations when working with Approvals
+services: ''
+suite: flow
+documentationcenter: na
+author: hamenon 
+manager: kvivek
+editor: ''
+tags: ''
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 2/12/2021
+ms.author: tatn
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Known issues
+
+**Working with Guest users**
+
+If you assign a guest user to an approval that user will not be able to view or act on the approval by default. The guest user(s) would need to be assigned a valid Power Automate license (Per user license or Office based user license) in order for them to view or respond to the approval.
+  
+**Adaptive card mismatch in Teams**
+
+There are multiple ways in which you can notify an approver when constructing a flow. By default all approvals send an email notification but you can also choose to send an Adaptive card with the Approval to the user in Teams. If the approver responds to an approval through the email notification or through the approval action center, currently the card in Teams will not auto update. This can lead to situations where there's a mismatch between the status shown on the card and that of the actual approval. 
+
+In order to avoid this you can choose to disable the default notification email that is sent to the user as part of approval creation. 
+
+![Disable default email notification](./media/create-approval-response-options/disable-default-notification.png)
