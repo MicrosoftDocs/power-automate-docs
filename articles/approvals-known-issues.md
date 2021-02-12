@@ -35,3 +35,7 @@ There are multiple ways in which you can notify an approver when constructing a 
 In order to avoid this you can choose to disable the default notification email that is sent to the user as part of approval creation. 
 
 ![Disable default email notification](./media/create-approval-response-options/disable-default-notification.png)
+
+**Abandoned Approvals in the Approval action center**
+
+As part of flow you can send an approval to a user and wait for a response. Today a single flow can only wait in a suspended state for a period of 28 days. If the wait time exceeds 28 days that flow will end up failing. In the current implementation of approvals this only impacts the flow itself, i.e. the approval will continue to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center which have no flow waiting on them. The requestor or environment admin will need to manually delete these approvals from the action center.
