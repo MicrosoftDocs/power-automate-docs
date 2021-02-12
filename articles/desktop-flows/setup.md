@@ -37,7 +37,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - System requirements:
 
-   - A device that runs Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019.
+   - A device that runs Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
