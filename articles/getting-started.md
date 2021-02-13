@@ -67,7 +67,7 @@ Visit the [flow types](flow-types.md) article to learn more about the different 
 
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
-## Create your first flow 
+## Create your first cloud flow 
 
 1. Select a template that's useful for you. A simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
@@ -77,15 +77,17 @@ Each template is designed for a specific purpose. For example, there are templat
 
     ![Create connection](./media/getting-started/create-connection.png)
 
-1. Enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, select **Create flow**, and then verify that your flow is running as expected.
+1. You will see the name of the flow on the left top of the screen. Enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, click on **Save** button to save your flow.
 
     ![Provide credentials for the connection](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own including exploring advanced option. You can even add or delete actions.
 
-1. Select **Done**.
-
+1. To test your flow click on the **Test** button, which enables after save action. In the **Test flow** screen, select **Manually** option and click on **Test** > **Run flow**.  
+    ![Flow-run](./media/getting-started/flow-run.png)
+1. Finally select **Done**. <br />
+    ![Flow-run-done](./media/getting-started/flow-run-done.png)
 [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
 ## Get creative
