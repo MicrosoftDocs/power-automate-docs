@@ -87,7 +87,7 @@ Each template is designed for a specific purpose. For example, there are templat
 1. To test your flow click on the **Test** button, which enables after save action. In the **Test flow** screen, select **Manually** option and click on **Test** > **Run flow**.  
     ![Flow-run](./media/getting-started/flow-run.png)
 1. Finally select **Done**. <br />
-    ![Flow-run-done](./media/getting-started/flow-run-done.png)
+    ![Flow-run-done](./media/getting-started/flow-run-done.png) <br />
 [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
 ## Get creative
@@ -121,8 +121,7 @@ You don't need to be a developer to create flows; however, Power Automate does p
    
 
 ## Find your flows easily
-
-When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
+When your creative juices start flowing, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows** to search **Cloud flow, Desktop flow, Business process flow and Shared with me flows**. You can also **search** in **Connectors**, **Connections** and **Solutions** section. This screen to display only flows that match the search terms you enter.
 
 ![Filter or search flows](media/getting-started/filter-search-box.png)
  
