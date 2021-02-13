@@ -128,13 +128,12 @@ When your creative juices start flowing, you might create many flows. Don't worr
 > [!NOTE]
 > The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
 
-## Get notifications when something's wrong
-
-Use the Power Automate notification center (located at the top right of the designer) to quickly see a list of flows have failed recently. The notification center displays a number that indicates the number of flows that failed recently.
-
-From the notification center, you can navigate to the **Activity** page of Power Automate to see all your flows that recently ran, sent notifications, or failed.
+## Monitor your flow activities  
+Use the Power Automate **Monitor** center (from the navigation bar on the left of the Menu) to see all your flows activities. Select **Cloud flow activity** to see a list of **All Activity** of all your cloud flows that recently ran, sent notifications, or failed. Select **Notification** to see all the notification and select **Failures** to see a list of flows have failed recently.
 
 ![Notification center](media/getting-started/notification-center.png)
+
+Visit [Monitor desktop flow runs](https://docs.microsoft.com/en-us/power-automate/desktop-flows/monitor-desktop-flow-runs) and [Monitor desktop flow queues (preview)](https://docs.microsoft.com/en-us/power-automate/desktop-flows/monitor-desktop-flow-queues) for more details about monitoring desktop flow runs and view list of all desktop flow run queues. 
 
 ## Use the mobile app 
 
