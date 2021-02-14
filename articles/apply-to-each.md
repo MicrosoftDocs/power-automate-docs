@@ -48,7 +48,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 ## Create a cloud flow
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** > **New** > **Scheduled-from blank**
+1. Select **My flows** on the left navigation pane and then click on > **New flow** > **Scheduled cloud flow**
 1. Provide a name for your flow in **Flow name** on the **Build a scheduled flow** screen. 
 1. Set the schedule to run every 15 minutes. 
 1. Select the **Create** 
