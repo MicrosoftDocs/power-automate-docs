@@ -51,3 +51,6 @@ Alternatively, to extract data from specific elements within a window, use the *
 ![Get details of a UI element in window action](./media/ui-automation/get-details-of-a-ui-element-in-window.png)
 
 You'll find the list of UI automation actions available in the [Actions reference](actions-reference/uiautomation.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ Now that you've registered and configured your bttn, let's get started creating 
 * [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid).
 * [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

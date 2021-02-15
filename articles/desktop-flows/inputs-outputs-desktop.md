@@ -169,3 +169,6 @@ Testing Windows recorder (V1) flow lets you validate your changes and the approp
 ## Learn more
 
 - Learn how to [trigger desktop flows](run-desktop-flow.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

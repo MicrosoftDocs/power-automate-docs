@@ -88,3 +88,6 @@ Retrieves the current date or the current date and time
 |Specified country/region not found|Indicates that the specified country or region wasn't found|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

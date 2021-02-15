@@ -71,3 +71,6 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 
 - [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

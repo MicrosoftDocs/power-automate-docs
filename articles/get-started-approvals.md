@@ -75,3 +75,6 @@ Once you assign an approval request to a user, they can respond directly from an
 
 
  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

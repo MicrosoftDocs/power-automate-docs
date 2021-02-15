@@ -267,3 +267,6 @@ You can try one of the following:
    
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

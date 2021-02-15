@@ -329,3 +329,6 @@ Authorization: Bearer ey...
 This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
 Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -95,3 +95,6 @@ In this article, you will create a cloud flow that sends an email notification w
 >[!TIP]
 >If you can't find a template that does what you need, you can [build a cloud flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

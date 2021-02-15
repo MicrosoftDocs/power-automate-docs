@@ -216,3 +216,6 @@ Now that you've created your custom connector, it's time to create your approval
 - Webhook triggers: [Use a Webhook as a trigger for Azure Logic Apps and Power Automate](https://docs.microsoft.com/connectors/custom-connectors/create-webhook-trigger)
 
 - Polling triggers: [Use a polling trigger for Microsoft Power Automate](https://docs.microsoft.com/connectors/custom-connectors/create-polling-trigger)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -210,3 +210,6 @@ Recent records are visible in a lookup field in the unified interface. To preven
  [Create a business process flow](create-business-process-flow.md)   
  [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -59,3 +59,5 @@ configuration."
 
 > [!div class="nextstepaction"]
 > [Next step: Handling sensitive text](../../desktop-flows/run-desktop-flow.md#use-sensitive-text-inputs)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

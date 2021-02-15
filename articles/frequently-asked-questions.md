@@ -172,3 +172,6 @@ Power Automate offers both free and paid service levels. [Learn more about prici
 
 * Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Power Automate
 * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

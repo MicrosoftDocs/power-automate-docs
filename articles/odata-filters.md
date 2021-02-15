@@ -170,3 +170,6 @@ Now, whenever an item in your SharePoint list (source) changes, your flow trigge
 ## Learn more
 Use [data operations](data-operations.md) in your flows.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

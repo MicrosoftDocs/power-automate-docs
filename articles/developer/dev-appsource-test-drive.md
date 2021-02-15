@@ -36,3 +36,6 @@ Once you have a data source that you can grant the user read-only access to, you
 ## How do I list my Test Drive solution on AppSource.com?
 Now that your app is ready, it's time to publish it to AppSource.com. In order to start this process, please complete the [application form](https://flow.microsoft.com/partners/get-listed/) on flow.microsoft.com. Once you apply you will receive an email with instructions on how to submit your app to be published on AppSource.com.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

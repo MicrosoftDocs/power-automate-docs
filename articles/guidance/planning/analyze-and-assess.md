@@ -112,3 +112,5 @@ Because the automation ran 3,226 times in 30 days, total time saved is:
 
 > [!div class="nextstepaction"]
 > [Next step: Diagnosing performance issues](discover-performance-issues.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

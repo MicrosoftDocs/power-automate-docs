@@ -105,3 +105,6 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 
 If you need help with an issue, help is available from our [community](https://go.microsoft.com/fwlink/?LinkID=787467) and Microsoft. 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

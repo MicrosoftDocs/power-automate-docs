@@ -85,3 +85,6 @@ In the designer, you can review and edit the recording information in the
 - Learn more about the [different types of flows](..\flow-types.md) you can use to automate your workflows.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

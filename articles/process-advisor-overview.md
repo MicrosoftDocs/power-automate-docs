@@ -44,3 +44,6 @@ Before you start using process advisor, make sure you have the following prerequ
 - Access to [Power Automate](https://powerautomate.microsoft.com/)
 - [Power Automate Desktop](/ui-flows/desktop/introduction)
   - Make sure you have a UI Flows license. To start a trial license, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start your trial license.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

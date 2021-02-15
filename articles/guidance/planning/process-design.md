@@ -145,3 +145,5 @@ expense reporting business process can be covered by Power Automate with improve
 
 > [!div class="nextstepaction"]
 > [Next step: Determining which automation method to use](determine-automation-methods.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

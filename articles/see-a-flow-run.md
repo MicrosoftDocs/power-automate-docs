@@ -42,3 +42,6 @@ To ensure that your flows run as you expect, perform the trigger, and then revie
 
     ![Image of a successful run with expanded cards](./media/see-a-flow-run/successful-flow-expanded-cards.png)
 1. Select **Edit flow** to make more changes or select **Done** if the flow works as you expect.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -39,3 +39,5 @@ From the **Sent** tab, you can choose to cancel an approval that is still in pro
 
 >[!NOTE]
 >You can only cancel approvals that are in progress.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

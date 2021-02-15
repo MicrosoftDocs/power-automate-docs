@@ -90,3 +90,6 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
 
 * Get started with [Power Automate](getting-started.md)
 * Learn [what's new](release-notes.md) with Power Automate
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

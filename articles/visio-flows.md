@@ -109,3 +109,6 @@ You can now run or make edits to your flow from the Power Automate designer, jus
 - [Design a cloud flow with Microsoft Visio](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a)
 
      
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

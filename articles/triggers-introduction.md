@@ -107,3 +107,6 @@ Here's a [community article of how to use trigger conditions](https://www.timlin
 
 You may also need to secure the trigger inputs/outputs in the run history of a cloud flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

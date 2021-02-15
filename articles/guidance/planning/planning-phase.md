@@ -35,3 +35,6 @@ The elements of planning your process automation are very similar to how you pla
 For detailed information about each of these elements in the planning phase, read the planning section in Power Apps guidance content: [Planning phase](/powerapps/guidance/planning/planning-phase).
 
 After reading the planning section in Power Apps guidance content, come back and continue reading the [Designing phase](process-design.md) in this guidance content.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

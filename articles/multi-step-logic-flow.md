@@ -102,3 +102,6 @@ Start with a cloud flow that has a **Send an email** action.
    
      This step saves your changes.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

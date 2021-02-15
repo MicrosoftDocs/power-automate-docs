@@ -220,3 +220,6 @@ Wait for a specific text to appear on a terminal session
 |Timeout expired|Indicates that the timeout has been expired|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

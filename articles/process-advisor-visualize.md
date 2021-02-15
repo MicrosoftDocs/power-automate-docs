@@ -68,3 +68,6 @@ Additionally, there are key performance indicators available to help you better 
 - **Recording by average and median times**: Shows recording by average and median times. You can use this visualization to easily filter for desired recording, according to their duration. Filters:
 - **Recording name**: Filters for a specific recording or set of recordings. This enables you to filter for a specific recording you might be interested in, or a set of recordings.
 - **Start date**: Filters for the time range when recording has started and ended. For example, if your process changed over time you want to see if there was any impact on your metrics after the process change by filtering for recordings that started after a certain time.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

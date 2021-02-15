@@ -178,3 +178,6 @@ Now that you've created and tested your flow, be sure to let others know how to 
 * Create [sequential approval flows.](sequential-modern-approvals.md)
 * Create [parallel approval flows.](parallel-modern-approvals.md)
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

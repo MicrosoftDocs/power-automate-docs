@@ -91,3 +91,6 @@ Consider the following factors when choosing an environment to host your flows:
 * [Create a cloud flow from a template](get-started-logic-template.md)
 * [Create a cloud flow](get-started-logic-flow.md)
 * [Environment overview for Administrators](environments-overview-admin.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

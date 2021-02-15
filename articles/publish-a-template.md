@@ -43,3 +43,6 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
 1. Select **Submit**.
 
      The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

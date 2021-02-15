@@ -163,3 +163,6 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
 
 [Frequently asked questions](frequently-asked-questions.md)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -62,3 +62,6 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
    
     ![Run details](./media/mobile-manage-flows/flow-run.png)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

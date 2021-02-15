@@ -77,3 +77,6 @@ Uncompress one or more files or folders contained in a ZIP archive
 |Failed to unzip files|Indicates a problem unzipping the files|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ You can work around this issue by putting all the filtering you need into the tr
   * 15 custom connectors.
   * 20 connections per API and 100 connections total.
 * Certain external connectors, such as Twitter, implement connection throttling to control quality of service. Your flows fail when throttling is in effect. If your flows are failing, review the details of the run that failed in the flow's run history.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

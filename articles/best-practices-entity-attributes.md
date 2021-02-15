@@ -107,3 +107,6 @@ To build a classic Common Data Service workflow that creates activities for inte
 1. Create an appointment and phone call record for the internal review of the solution and the customer call to review the solution respectively.
 
    ![close stage followup](media/best-practices-entity-attributes/close-stage-followup.png)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

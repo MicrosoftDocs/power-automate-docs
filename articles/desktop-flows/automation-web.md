@@ -104,3 +104,6 @@ A variety of methods are compatible with this action, which is fully customizabl
 
 
 You'll find the list of web related actions available in the [Actions reference](actions-reference/web.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

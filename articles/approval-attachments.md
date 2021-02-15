@@ -105,3 +105,6 @@ The person to whom you send the approval request receives an email, similar to t
 
 In most approval flows, you'd want to notify the person who requests the approval of the decision. Follow the [modern approvals article](modern-approvals.md#add-an-email-action-for-approvals) to learn how to add a **condition** to an approval flow to take specific actions based on the **outcome** of the request.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

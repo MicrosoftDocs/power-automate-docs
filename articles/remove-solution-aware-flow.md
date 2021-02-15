@@ -64,3 +64,6 @@ Delete from this environment|The flow is deleted; it is not available in the env
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

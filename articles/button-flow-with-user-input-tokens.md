@@ -142,3 +142,6 @@ Additionally, you might want to designate some inputs as required and others as 
 * [Learn about button flows](introduction-to-button-flows.md)  
 * [Learn about button flows with trigger tokens](introduction-to-button-trigger-tokens.md)  
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

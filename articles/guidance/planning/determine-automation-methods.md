@@ -103,3 +103,5 @@ In the expense report example, the accounting team might use a scheduled trigger
 
 > [!div class="nextstepaction"]
 > [Next step: Attended and unattended scenarios](attended-unattended.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

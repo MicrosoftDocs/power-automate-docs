@@ -146,3 +146,6 @@ If you're ready to start your Power Automate project, visit the [guidance and pl
 ## We're here to help 
 
 We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

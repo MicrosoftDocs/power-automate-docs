@@ -257,3 +257,6 @@ ProcessRobot
 -   Learn how to [run desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
 -   Learn to [manage desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
 -   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

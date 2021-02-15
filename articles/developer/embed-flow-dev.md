@@ -493,3 +493,6 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | tr-tr      | Turkish (Turkey)           | 
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

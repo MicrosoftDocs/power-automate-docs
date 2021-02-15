@@ -59,3 +59,6 @@ Follow these steps to respond to an approval in a chat or channel in Microsoft T
 ## Known issues
 
 Currently, only approvals sent in your organization's default environment are listed within the approvals app in Teams.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

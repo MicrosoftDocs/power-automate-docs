@@ -59,3 +59,5 @@ For the full list, go to [Reference guide to using functions in expressions for 
 
 > [!div class="nextstepaction"]
 > [Next step: Formalizing messages and alerts](formalizing-messages-alerts.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Power Automate makes it easy to automate [approval workflow processes](modern-ap
 * Create [parallel approval flows.](parallel-modern-approvals.md)
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
