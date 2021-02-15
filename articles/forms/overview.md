@@ -43,3 +43,6 @@ Actions are the events you want the workflow to do once the trigger takes place.
 
 - [Power Apps and Microsoft Teams](/powerapps/teams/overview)
 - [Power Virtual Agents and Microsoft Teams]( https://aka.ms/pva-teams-docs)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

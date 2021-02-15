@@ -110,3 +110,6 @@ If you have a trigger registered on the update of a record, the flow runs for ev
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

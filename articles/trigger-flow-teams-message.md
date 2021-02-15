@@ -90,3 +90,6 @@ Here's an example of a cloud flow that creates a work item in Azure DevOps and t
 ## Known issues and limitations
 
 You must create these flows within the default environment to ensure they get listed in Teams.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

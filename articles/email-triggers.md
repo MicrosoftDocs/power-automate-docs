@@ -131,3 +131,6 @@ Let's get started.
     ![A screenshot showing the option to save the cloud flow](./media/email-triggers/email-triggers-7.png)
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

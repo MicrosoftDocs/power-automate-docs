@@ -43,3 +43,5 @@ More information: [Create a cloud flow in Power Automate](../../overview-cloud.m
 
 > [!div class="nextstepaction"]
 > [Next step: Testing strategy](testing-strategy.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

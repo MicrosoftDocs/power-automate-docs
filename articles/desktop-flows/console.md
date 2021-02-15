@@ -39,3 +39,6 @@ Through the console, users may also create a new flow by pressing the "New flow"
 ![Create or edit a cloud flow](./media/console/create-edit-flow.png)
 
 In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

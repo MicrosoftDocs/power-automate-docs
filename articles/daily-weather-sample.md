@@ -118,3 +118,6 @@ The **daily weather report** sample is an Adaptive Card designed to be used with
     ]
 }
 ```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -371,3 +371,6 @@ Select an instance to open it in a new tab, or select it to copy a link, share a
  - [Detailed steps for adding an instant flow to a business process flow](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

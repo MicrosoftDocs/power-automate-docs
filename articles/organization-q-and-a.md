@@ -154,3 +154,6 @@ If you want all users to be in the same tenant regardless of their email address
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
   ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

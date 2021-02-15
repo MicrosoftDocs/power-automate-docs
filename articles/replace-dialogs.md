@@ -124,3 +124,6 @@ Can I automatically convert dialogs to business process flows or canvas apps?
 [What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

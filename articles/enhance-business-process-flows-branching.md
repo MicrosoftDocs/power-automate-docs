@@ -120,3 +120,6 @@ Let’s look at the example of the business process flow with two branches, for 
  [Create a business process flow](create-business-process-flow.md)   
  [Create custom business logic with processes](guide-staff-through-common-tasks-processes.md)   
  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

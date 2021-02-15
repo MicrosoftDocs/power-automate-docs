@@ -83,3 +83,5 @@ The **acronym form** sample is an Adaptive Card input form that's designed to co
 }
 
 ```
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

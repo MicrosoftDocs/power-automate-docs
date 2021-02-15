@@ -139,3 +139,6 @@ That's it. The button no longer appears on the **Buttons** tab of the Power Auto
 > 
 > 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

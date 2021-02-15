@@ -186,3 +186,6 @@ The following actions will not be recorded:
 - Learn how to [trigger the desktop flow](run-desktop-flow.md) you just created.
 
 - If you want to do more with desktop flows, you can also create desktop flows with [input and output](inputs-outputs-web.md) parameters.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

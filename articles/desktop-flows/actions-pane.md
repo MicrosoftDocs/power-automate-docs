@@ -99,3 +99,5 @@ When an action is disabled, all variables defined in it are hidden from the **Va
 In the example below, two actions threw an error because they contain variables defined in a disabled action.
 
 ![An example in which disabling an action hides some varibales.](media\enabling-disabling-actions\enable-disable-action-variables.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

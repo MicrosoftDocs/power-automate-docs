@@ -142,3 +142,6 @@ Notice, after the recurrence time elapses, the flow posts the adaptive card's co
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

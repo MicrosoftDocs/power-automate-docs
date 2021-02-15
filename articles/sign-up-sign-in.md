@@ -65,3 +65,6 @@ In many cases, you can register for Power Automate by following the simple proce
 * [Start from blank](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
 * Get help planning your [cloud flow project](./guidance/planning/introduction.md).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

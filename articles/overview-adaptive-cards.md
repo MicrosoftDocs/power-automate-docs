@@ -88,3 +88,6 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 - Full documentation for the [Microsoft Teams connector](https://docs.microsoft.com/connectors/teams/)
 - Full documentation on [Adaptive Cards IO](https://docs.microsoft.com/adaptive-cards) 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

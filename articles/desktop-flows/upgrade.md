@@ -51,3 +51,6 @@ No action is required until you either update the UI flows app or the connection
 - Learn more about the [different types of flows](..\flow-types.md) you can use to automate your workflows.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

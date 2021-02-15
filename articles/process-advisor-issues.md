@@ -45,3 +45,6 @@ Process advisor doesn't fully support exporting and importing processes between 
 >Analyze the processes in the new environment to validate that there are no issues.
 
 We'll continue to add issues here, but if you are experiencing an issue not mentioned here, check the **Process advisor community forums**.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

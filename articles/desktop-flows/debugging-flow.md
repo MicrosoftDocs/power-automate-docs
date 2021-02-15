@@ -54,3 +54,5 @@ The status bar on the bottom of the Window shows the status of the flow and the 
 To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
 
 ![run from here](\media\run-stop-pause\run-from-here.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

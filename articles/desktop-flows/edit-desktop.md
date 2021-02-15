@@ -641,3 +641,6 @@ Follow these steps after you've recorded a Windows recorder (V1) flow script:
 
 - If you want to do more with desktop flows, you can also try out [input and output](inputs-outputs-desktop.md) parameters.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

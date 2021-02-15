@@ -54,3 +54,6 @@ Once the recording is imported into process advisor, you can still remove sensit
 
 - Rename step names and/or description.
 - Delete screenshots.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

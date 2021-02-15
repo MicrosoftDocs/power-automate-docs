@@ -126,3 +126,6 @@ Creates and sends a new email message
 |Attachment not found|Indicates that the specified attachment(s) were not found|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

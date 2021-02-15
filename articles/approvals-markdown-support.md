@@ -265,3 +265,6 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -99,3 +99,6 @@ You can further format the data by using expressions. In following example, the 
 - Overview of [email with flows](email-overview.md)
 - Create [flows to manage email](create-email-flows.md)
 - [Customize email in flows](email-customization.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

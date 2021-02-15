@@ -149,3 +149,6 @@ Here's an example of what a response and a response summary may look like after 
 * [Parallel modern approvals](parallel-modern-approvals.md)
 * [Approvals and Common Data Service](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

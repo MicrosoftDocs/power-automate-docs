@@ -32,3 +32,6 @@ For an overview of the desktop flows in your environment, visit the [Microsoft P
 - [Create Windows recorder (V1) flows](create-desktop.md).
 - [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

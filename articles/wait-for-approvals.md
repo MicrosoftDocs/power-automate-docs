@@ -113,3 +113,6 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
 * Create [sequential approvals](sequential-modern-approvals.md)
 * Create [parallel approvals](parallel-modern-approvals.md)
 * Approve [requests on the go](mobile-approvals.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

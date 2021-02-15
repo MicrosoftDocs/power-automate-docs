@@ -93,3 +93,6 @@ Congratulations, you've just created a button flow that uses both the date and f
 ## Next steps
 * [Share button flows](share-buttons.md)
 * [Learn about button flows](introduction-to-button-flows.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

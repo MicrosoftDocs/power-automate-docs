@@ -92,3 +92,6 @@ Any flow that you create from within the Power Automate app is located in your o
 - Visit the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

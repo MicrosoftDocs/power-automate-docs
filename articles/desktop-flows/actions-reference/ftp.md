@@ -401,3 +401,6 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 |Synchronization failed error|Indicates that the synchronization process failed due to an unexpected error.|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

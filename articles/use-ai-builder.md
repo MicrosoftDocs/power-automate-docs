@@ -36,3 +36,6 @@ You can build AI models by using the **AI Builder** option from the left navigat
 Use your AI Builder models in your flows to add intelligence to your organization. More information: [Use AI Builder in Power Automate](/ai-builder/use-in-flow-overview)
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

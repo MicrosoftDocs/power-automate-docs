@@ -71,3 +71,5 @@ following approach:
 
 > [!div class="nextstepaction"]
 > [Next step: Assessing the business impact of the automation](analyze-and-assess.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

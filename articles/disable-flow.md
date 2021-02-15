@@ -53,3 +53,6 @@ If you've turned a cloud flow off, but want to turn it back on so that it will r
 
     ![New flow status after being disabled](./media/disable-flow/flow-new-status.png)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

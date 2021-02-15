@@ -163,3 +163,6 @@ The **lead collection** sample is an Adaptive Card input form designed for colle
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -21,3 +21,5 @@ Based on the design considerations mentioned previously in this section, this fl
 
 > [!div class="nextstepaction"]
 > [Next step: Making phase](making-phase.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

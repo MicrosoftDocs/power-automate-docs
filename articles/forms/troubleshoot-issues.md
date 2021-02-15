@@ -69,3 +69,6 @@ Approval action will attach file in notification email till the size is 5 MB. Be
 ### Send email action looks stuck in my flow.
 
 If you are using Mail connector as part of your flow, it has a limit of 100 API calls per 24 hours. Try the Office 365 Outlook connector, which has a limit of 300 API calls per 60s, so that you are less likely to hit the limit.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

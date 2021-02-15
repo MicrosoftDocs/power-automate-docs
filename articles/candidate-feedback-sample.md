@@ -131,3 +131,6 @@ The **candidate feedback form** sample is an Adaptive Card input form that's des
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

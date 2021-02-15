@@ -206,3 +206,6 @@ Close a previously launched Outlook instance
 |Failed to close Outlook instance|Indicates a problem closing the Outlook instance|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

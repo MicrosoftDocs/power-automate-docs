@@ -58,3 +58,6 @@ You will find your desktop flows alongside automated, button, scheduled, and bus
 - Learn more about the [different types of flows](..\flow-types.md) you can use to automate your workflows.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

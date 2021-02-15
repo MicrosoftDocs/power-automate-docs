@@ -66,3 +66,6 @@ You can push a responder’s data as a lead to Dynamics 365. More information: [
 
 - [Troubleshoot common issues](troubleshoot-issues.md)
 - [Microsoft Forms - known issues and limitations](/connectors/microsoftforms/#known-issues-and-limitations)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

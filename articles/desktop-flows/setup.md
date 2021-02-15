@@ -347,3 +347,6 @@ You'll find feature-specific limitations included in the documentation for each 
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
 - Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

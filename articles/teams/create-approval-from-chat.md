@@ -67,3 +67,6 @@ If you want to customize the actions for an approval, use the **Custom responses
 
 Currently, all the approvals created using this native Teams experience are created in your organization's default environment.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

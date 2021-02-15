@@ -70,3 +70,6 @@ Now, when your manager sends you an email, you'll receive a Slack message that c
 - [Use a template with Microsoft Dataverse](common-data-model-intro.md)
 - [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

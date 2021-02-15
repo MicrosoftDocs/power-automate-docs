@@ -353,3 +353,6 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

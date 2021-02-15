@@ -40,3 +40,5 @@ In the example below, when the **Get manager (V2)** action fails to run, the
 
 > [!div class="nextstepaction"]
 > [Next step: Deploying and refining phase](deploy-to-production.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

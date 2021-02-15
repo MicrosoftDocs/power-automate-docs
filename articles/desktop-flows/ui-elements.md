@@ -60,3 +60,5 @@ Manage an element’s selectors by right-clicking any UI element and selecting *
 To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable:
 
 ![The manual selector editor](./media/ui-elements/manual-selector-editor.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

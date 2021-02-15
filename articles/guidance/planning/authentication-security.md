@@ -75,3 +75,5 @@ connector is shared with you.
 
 > [!div class="nextstepaction"]
 > [Next step: Defining inputs and outputs](define-input-output.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

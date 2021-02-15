@@ -86,3 +86,6 @@ In the **Add a new input variable** dialog box, populate the following fields:
 ![The Add a new output variable dialog box](media\input-output-variables\Add-new-output-variable-window.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

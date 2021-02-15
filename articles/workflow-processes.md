@@ -42,3 +42,6 @@ See other topics here in the Power Automate documentation to learn more about ba
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

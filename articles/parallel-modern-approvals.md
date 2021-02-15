@@ -176,3 +176,6 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 ## Learn more about modern approvals
 
 [Introduction to modern approvals](modern-approvals.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Alternatively, you can drag **Workflow** to the **Global Workflows** section, wh
 [Use Workflow processes to automate processes that don't require user interaction](workflow-processes.md) <br/>
 [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) <br/>
 [Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

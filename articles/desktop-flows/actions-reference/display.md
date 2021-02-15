@@ -197,3 +197,6 @@ Displays the select folder dialog and prompts the user to select a folder
 |Can't display select folder dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

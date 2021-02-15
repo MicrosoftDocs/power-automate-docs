@@ -38,3 +38,6 @@ For information about the new features, fixes, and improvements that were releas
 Get familiar with upcoming features and plan your rollouts by reading:
 - [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
 - [2020 release wave 2 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
