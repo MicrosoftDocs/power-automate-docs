@@ -511,3 +511,6 @@ Ends an Azure session
 ##### <a name="endsession_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

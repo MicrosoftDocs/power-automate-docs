@@ -104,3 +104,6 @@ Resume a paused Windows service
 |Can't resume service|Indicates that there is a problem resuming the service|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

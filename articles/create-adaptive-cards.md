@@ -204,3 +204,6 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
         ![Try again](media/adaptive-cards/try-again.png)
 
     - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

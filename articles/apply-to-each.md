@@ -146,3 +146,6 @@ Now that you've run the flow successfully, you should receive the push notificat
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
  
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

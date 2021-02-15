@@ -123,3 +123,6 @@ To address this, the user needs to manually edit the script to insert the comman
 - Learn how to use [input and output](inputs-outputs-web.md) parameters with Selenium IDE.
 
  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ To rename or delete images or folders, right-click on an item and select the app
 - **Workarounds**: Open and save one of the actions that uses the image resolves the issue
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

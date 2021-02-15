@@ -122,3 +122,6 @@ Processes can check conditions, apply branching logic, and perform actions. They
 
   
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -155,3 +155,6 @@ On the **My flows** tab of the Flow app:
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send real-time data when your instant flows are run.
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

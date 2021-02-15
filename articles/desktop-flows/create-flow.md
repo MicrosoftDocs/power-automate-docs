@@ -188,3 +188,6 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
    ![variables values](\media\design-flow\variables-values.png)
 
 1. Check the **Countries** folder on the desktop. A folder with the name **Greece** has been added, and contains a text file with today's date.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

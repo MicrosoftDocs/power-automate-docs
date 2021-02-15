@@ -32,3 +32,6 @@ More information: [Create a workflow extension](/powerapps/developer/common-data
 [Create a plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in) 
   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -21,3 +21,5 @@ search.audienceType:
 In this section, you can find a reference to all actions of the Power Automate Desktop. 
 
 Click on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

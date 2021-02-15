@@ -288,3 +288,6 @@ Create a uniquely named, empty temporary file on disk, and get the file object (
 |Failed to create temporary file|Indicates a problem creating a temporary file|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

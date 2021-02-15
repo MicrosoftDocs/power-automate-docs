@@ -81,3 +81,6 @@ Learn about all the available [expressions](https://msdn.microsoft.com/library/a
 ## Next steps
 
 Learn how to [use expressions](use-expressions-in-conditions.md) in conditions in advanced mode.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

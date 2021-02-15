@@ -117,3 +117,6 @@ By default, the email you receive shows Coordinated Universal Time (UTC) time zo
 - Overview of [email with flows](email-overview.md)
 - Create [flows to manage email](create-email-flows.md)
 - Top [email scenarios](email-top-scenarios.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

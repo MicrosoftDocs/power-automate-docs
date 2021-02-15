@@ -53,3 +53,6 @@ service protection limits and abuse-detection algorithms.
 A misconfigured flow can sometimes reach these limits, which usually manifest as errors \[429\] or timeouts \[5xx\] in your flow runs. It's important to note that
 these limits vary based on the connector or service you're using within your
 flow.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

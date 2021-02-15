@@ -28,3 +28,5 @@ If you store this data in Dataverse, you can use Power BI to identify which part
 
 > [!div class="nextstepaction"]
 > [Next step: Decision-making flowchart for your design](decision-making-flow.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

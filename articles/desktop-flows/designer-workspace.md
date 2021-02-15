@@ -87,3 +87,5 @@ Select **Desktop recorder** in the toolbar to record desktop actions. Select **S
 Select the bin icon to remove individual actions, or select **Reset recording** to delete all actions recorded so far. After recording is complete, select Finish, so that the recorded actions and comments are placed in the workspace.
 
 ![desktop recorder](\media\making-use-recorders\desktop-recorder.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

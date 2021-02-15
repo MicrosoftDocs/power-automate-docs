@@ -265,3 +265,6 @@ Remove one or more XML elements from an XML document
 |Failed to remove XML element|Indicates a problem removing the XML element|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

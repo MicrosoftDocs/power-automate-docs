@@ -111,3 +111,6 @@ When you update a connection, it's updated for both Power Apps and Power Automat
 Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Microsoft 365, or OneDrive for Business.
 
 For example, you might sign in to Power Automate with *yourname@outlook.com* but be blocked when you try to connect to SharePoint with *yourname@contoso.com*. You can instead sign in to Power Automate with *yourname@contoso.com* and you'll be able to connect to SharePoint.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

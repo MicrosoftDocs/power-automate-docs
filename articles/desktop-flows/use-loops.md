@@ -71,3 +71,6 @@ You can use this kind of loops to search for specific names, contents, or attrib
 In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.
 
 You'll find the list of loop actions available in the [Actions reference](actions-reference/loops.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

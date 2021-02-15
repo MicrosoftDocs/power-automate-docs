@@ -80,3 +80,5 @@ Any actions created through the use of a recorder can be edited manually once th
 
 > [!NOTE]
 > Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals or loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

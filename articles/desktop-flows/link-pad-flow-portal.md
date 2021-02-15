@@ -86,3 +86,6 @@ search.audienceType:
 1. Output variables from Power Automate Desktop can be used in other Power Automate actions.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

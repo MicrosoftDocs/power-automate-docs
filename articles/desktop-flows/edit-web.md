@@ -48,3 +48,6 @@ This advanced capability lets you use syntax like \${foo.bar} to access the bar 
 
 - [Create Selenium IDE flows](create-web.md)
 - [Run Windows recorder (v1) flows](run-desktop-flow.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

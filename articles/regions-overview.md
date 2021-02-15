@@ -69,3 +69,6 @@ Yes. [Learn more](./us-govt.md).
 ### What outbound IP addresses are used in each region?
 
 See [Limits and configuration](limits-and-config.md).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

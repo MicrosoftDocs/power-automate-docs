@@ -73,3 +73,6 @@ in case of errors.
 Power Automate provides both digital process automation and RPA, to bridge what you can
 automate between modern, API-based services and the websites and desktop
 applications for which you don't have an API-based connector.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -327,3 +327,6 @@ By following the steps in this section, you'll build:
     
      In a few minutes, you'll receive email stating that the file was rejected, and the file will be deleted from Dropbox.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Follow these steps to create an approval from the approvals app in Teams.
 
 Currently, all the approvals created using this native Teams experience are created in your organization's default environment.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

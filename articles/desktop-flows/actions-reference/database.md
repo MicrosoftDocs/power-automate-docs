@@ -102,3 +102,6 @@ SQL actions require a database connection. To connect to a database, enter the s
 4. Specify a connection timeout and additional network settings in the **Advanced** tab.
 
    ![data link properties advanced tab](..\media\database\data-link-properties-advanced-tab.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

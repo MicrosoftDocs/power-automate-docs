@@ -44,3 +44,6 @@ There are four ways to create flows to manage your email:<!--note from editor: T
 - Overview of [email with flows](email-overview.md)
 - [Customize email in flows](email-customization.md)
 - Create the top [email scenarios](email-top-scenarios.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

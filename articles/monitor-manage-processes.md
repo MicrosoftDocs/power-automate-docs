@@ -96,3 +96,6 @@ The synchronous bulk delete will only delete AsyncOperation records in the compl
 ## Next step   
 [Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

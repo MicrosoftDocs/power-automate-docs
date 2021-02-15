@@ -90,3 +90,6 @@ To complete the example in this topic, you'll need the following:
 * [Monitor your flow activity](mobile-monitor-activity.md).
 * [Manage your flows](mobile-manage-flows.md).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

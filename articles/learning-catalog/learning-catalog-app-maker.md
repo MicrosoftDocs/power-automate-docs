@@ -32,3 +32,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | Content   | Description  | Format  | Length    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/learn/certifications/exams/pl-900)	|This exam measures your ability to understand the business value of Microsoft Power Platform; understand the core components of Microsoft Power Platform; demonstrate the business value of Power BI; and demonstrate the business value of Power Automate. 	|Exam | cost varies by region |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

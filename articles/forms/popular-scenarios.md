@@ -92,3 +92,6 @@ Once you’ve pasted the full sample, you can [Get file content using path](/con
 Finally, you can send that upload to via email using the [Send an email (V2)](/connectors/office365/#send-an-email-(v2)) action card from Office 365 Outlook. Include the expression **first(body('Parse_JSON'))?['id']**
  
 You can combine the scenario of getting an attachment from a form and creating an approval flow by exploring a blog post here.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

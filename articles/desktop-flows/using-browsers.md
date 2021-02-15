@@ -153,3 +153,6 @@ Although **Automation browser** is based on **Internet Explorer**, it provides s
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

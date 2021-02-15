@@ -169,3 +169,5 @@ The following actions will be migrated from the WA processes to the respective d
     - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Mouse and Keyboard: Move Mouse 
     - Non Migratable for option 'Move mouse to recorded positions' 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

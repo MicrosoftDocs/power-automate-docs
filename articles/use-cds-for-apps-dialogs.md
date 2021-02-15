@@ -38,3 +38,6 @@ The following table provides information about the differences between Common Da
   
 ### See also
 [Replace dialogs with business process flows or canvas apps](replace-dialogs.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -452,3 +452,6 @@ Closes the connection with the Active Directory server
 ##### <a name="closeconnection_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

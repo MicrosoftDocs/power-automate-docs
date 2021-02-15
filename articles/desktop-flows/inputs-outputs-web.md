@@ -67,3 +67,6 @@ script)
 - Learn how to [create Selenium IDE flows](create-web.md).
 - Learn how to [trigger Windows recorder (V1) flows](run-desktop-flow.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

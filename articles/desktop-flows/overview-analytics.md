@@ -35,3 +35,6 @@ As an admin, you will need to view the overall status of automation that runs in
 - [Create Windows recorder (V1) flows](create-desktop.md).
 - [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

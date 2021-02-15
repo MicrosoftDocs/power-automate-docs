@@ -141,3 +141,6 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 * [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.
 * [Add a cloud flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
 * [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

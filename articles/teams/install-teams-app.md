@@ -72,3 +72,6 @@ The Power Automate app in Microsoft Teams only shows flows from your organizatio
 - [Create flows in Microsoft Teams](./teams-app-create.md).
 
 - [Manage your flows in Microsoft Teams](./teams-app-home.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

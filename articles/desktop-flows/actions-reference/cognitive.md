@@ -680,3 +680,6 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

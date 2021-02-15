@@ -314,3 +314,6 @@ Dispatches execution to different parts of the switch body based on the value of
 ##### <a name="switch_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

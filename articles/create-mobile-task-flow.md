@@ -78,3 +78,6 @@ Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based
 ## Next steps  
  [Create a business process flow](create-business-process-flow.md)   
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

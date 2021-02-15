@@ -64,3 +64,6 @@ You can [embed](developer/embed-flow-dev.md) Power Automate into your app to ena
 ## Next steps
 
 Learn how to [embed](developer/embed-flow-dev.md) Power Automate into your app.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

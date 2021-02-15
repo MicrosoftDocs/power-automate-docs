@@ -338,3 +338,6 @@ Pause the flow run until a specific shortcut key is pressed. Shortcut keys must 
 |Shortcut key failed to register|Indicates that a shortcut key failed to register.|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

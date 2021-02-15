@@ -68,3 +68,6 @@ Adding a co-owner to a process allows others to help you label and validating th
 - Analyze the process.
 - View the analytics of an analyzed process.
 - Delete the process.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -191,3 +191,6 @@ If the shared flow still has an active owner, the flow will continue to run.
 >[!NOTE]
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

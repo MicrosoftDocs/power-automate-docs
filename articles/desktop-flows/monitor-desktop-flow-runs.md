@@ -78,3 +78,5 @@ The gateway your desktop flow run is using may be shared for running other deskt
 To keep your desktop flow run information always up to date, you can activate the **Live updates** toggle switch at the top of the page. 
 
 Live updates are only supported for up to fifty desktop flow runs. Loading more runs will deactivate live updates and activating live updates with more than fifty runs will trim the list to the supported amount. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ These approvals are triggered directly with the Power Automate infrastructure an
 Currently, all the approvals are created in your organization's default environment.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -561,3 +561,6 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 |Failed to retrieve first free column/row|Indicates a problem retrieving the first free column/row of an Excel instance|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

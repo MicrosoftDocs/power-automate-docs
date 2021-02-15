@@ -161,3 +161,6 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error:
 
 ![Notification window](\media\run-pad-flow\notification-window.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

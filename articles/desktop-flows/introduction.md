@@ -34,3 +34,6 @@ You can also create desktop flows using the alternative solutions [legacy Window
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

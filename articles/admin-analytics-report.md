@@ -33,3 +33,6 @@ Visit the Microsoft Power Platform documentation to get the details how to:
 - View the [shared flows reports](https://docs.microsoft.com/power-platform/admin/analytics-flow#shared-report).
 - View the [connectors reports](https://docs.microsoft.com/power-platform/admin/analytics-flow#connectors-report).
 - [Filter views](https://docs.microsoft.com/power-platform/admin/analytics-flow#view-reports-in-other-environments).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

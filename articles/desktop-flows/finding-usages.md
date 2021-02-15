@@ -25,3 +25,5 @@ To find the usages of a variable or an input/output variable, make a right-click
 In the pop-up pane, a list of all the actions containing the selected variable is displayed. By double-clicking a line in this pane, you can automatically select the respective action in the workspace. 
 
 ![The Find usages of variable pane.](media\finding-usages\find-usages-pane.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

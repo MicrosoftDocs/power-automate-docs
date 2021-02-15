@@ -386,3 +386,6 @@ The only exception to this is programmatically modifying the **ProcessId** attri
   
 -   The maximum number of entities that can participate in the process flow is 5.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/c
 ### 7. List on AppSource
 
 Once you have integrated Power Automate into your application, you can list it on AppSource. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

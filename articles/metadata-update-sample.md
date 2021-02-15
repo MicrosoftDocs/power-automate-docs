@@ -192,3 +192,6 @@ This card is comprised of three sections:
 
 }
 ```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

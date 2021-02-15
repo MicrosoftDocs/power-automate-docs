@@ -72,3 +72,6 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](htt
 - Get started with [Power Automate and SharePoint](https://docs.microsoft.com/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow). 
 - Get started with [approvals](https://docs.microsoft.com/power-automate/get-started-approvals).
 - Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
