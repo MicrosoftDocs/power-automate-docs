@@ -61,3 +61,6 @@ This article provides details about the known issues and limitations in Power Au
     
     **Workarounds**: Populate cells with null values with 0 (zero) before each numeric comparison.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

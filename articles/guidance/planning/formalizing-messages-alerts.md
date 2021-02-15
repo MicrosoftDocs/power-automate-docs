@@ -48,3 +48,5 @@ forwards you the email.
 
 > [!div class="nextstepaction"]
 > [Next step: Reducing risk and planning for error handling](reducing-risk.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

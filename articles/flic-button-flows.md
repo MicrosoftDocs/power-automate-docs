@@ -143,3 +143,6 @@ For extra credit, consider extending the flow to automatically record your locat
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

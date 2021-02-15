@@ -43,3 +43,6 @@ Below is a summary of the types of Power Automate resources that contain persona
 |Custom connector permissions|Permission lists for Custom connectors. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/share)|
 |Gateway|Gateways are on-premises data services that can be installed by a user to transfer data quickly and securely between Power Automate and a data source that isn’t in the cloud. [Learn more](https://docs.microsoft.com/flow/gateway-manage)|
 |Gateway permissions|Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)|
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

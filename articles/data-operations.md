@@ -171,3 +171,6 @@ To do this, follow the steps in previous section for creating a CSV table, but u
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

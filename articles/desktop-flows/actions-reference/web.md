@@ -111,3 +111,6 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

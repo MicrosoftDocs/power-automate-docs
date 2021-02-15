@@ -101,3 +101,5 @@ automation.
 
 > [!div class="nextstepaction"]
 > [Next step: Adding analytical data to Microsoft Dataverse](adding-analytical-data.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

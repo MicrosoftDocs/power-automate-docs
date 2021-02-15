@@ -36,3 +36,6 @@ processes with Power Automate. The basic steps are as follows:
 
 5.  [**Deploy and refine**](deploy-to-production.md): Start using the automation in production, identify
     processes that can be refined, and decide what to change or add.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

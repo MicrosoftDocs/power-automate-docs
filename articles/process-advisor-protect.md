@@ -41,3 +41,6 @@ To remove sensitive data from a text entry, select the text entry and modify the
 
 > [!div class="mx-imgBorder"]
 > ![Remove text](media/process-advisor-protect/remove-text.png "Modify the description")
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

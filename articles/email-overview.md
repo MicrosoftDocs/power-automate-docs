@@ -50,3 +50,6 @@ The following image shows a partial list of Office 365 Outlook actions. For the 
 - Create [flows to manage email](create-email-flows.md)
 - [Customize email in flows](email-customization.md)
 - View the top [email scenarios](email-top-scenarios.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

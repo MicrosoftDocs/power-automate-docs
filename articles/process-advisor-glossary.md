@@ -34,3 +34,6 @@ search.audienceType:
 **Process map**: Visualizes the actual flow of your process based on the imported user or system data.
 
 **Robotic process automation (RPA)**: Software that can be easily programmed to do basic, repetitive tasks across applications.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

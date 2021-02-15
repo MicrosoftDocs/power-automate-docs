@@ -64,3 +64,5 @@ presents consistent outcomes.
 
 > [!div class="nextstepaction"]
 > [Next step: Tools to test your automation](tools-and-settings.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

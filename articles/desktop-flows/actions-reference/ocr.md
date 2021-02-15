@@ -110,3 +110,6 @@ Extract text from a given source using the given OCR engine
 |Can't get text from screen in non-interactive mode|Indicates that it isn't possible to get text from screen when in non-interactive mode|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

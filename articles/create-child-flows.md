@@ -96,3 +96,6 @@ We are working to address the following known issues and limitations.
 
 1. If you block the HTTP Request connector via data loss prevention (DLP), child flows are also blocked because child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so that they are treated like other cloud flows.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Follow the [steps to approve a request](mobile-approvals.md#approve-requests-and
 ## Learn more
 [Create modern approval flows](modern-approvals.md).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -569,3 +569,6 @@ Close a web browser window
 |Failed to close the web browser|Indicates a problem closing the web browser|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

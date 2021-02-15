@@ -110,3 +110,6 @@ The **create a poll** sample is an Adaptive Card input form that's designed for 
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

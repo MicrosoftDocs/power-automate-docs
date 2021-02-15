@@ -114,3 +114,6 @@ To get the description for the flow with index 1 from your list of flows, run ``
 ### Get the list of commands for the bot
 
 To get the list of commands the bot handles, ask it with this command: ```learn more```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

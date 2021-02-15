@@ -94,3 +94,5 @@ A message will be shown to indicate if the gateway is being used in another envi
 
 ## Known issues
 - The gateway status of an offline gateway may still appear as available
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

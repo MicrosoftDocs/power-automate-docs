@@ -36,3 +36,6 @@ You can create and manage environments using the [Power Platform admin center](h
 
 Learn all about [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Microsoft Power Platform admin guide.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

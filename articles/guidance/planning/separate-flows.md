@@ -49,3 +49,5 @@ Automation \#2 fails, the tasks in Automation \#1 will still be completed. Only 
 
 > [!div class="nextstepaction"]
 > [Next step: Authentication and security](authentication-security.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

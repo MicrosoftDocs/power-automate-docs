@@ -253,3 +253,6 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### <a name="wait_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

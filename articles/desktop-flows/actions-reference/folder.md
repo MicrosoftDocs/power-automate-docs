@@ -238,3 +238,6 @@ Retrieve the path of a Windows' special folder (such as Desktop, My Pictures, In
 ##### <a name="getspecialfolder_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

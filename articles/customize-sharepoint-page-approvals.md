@@ -84,3 +84,6 @@ Because page approvals use Power Automate behind the scenes, the page approval f
 
 - [Page approval flow](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
 - [Configure page approval](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

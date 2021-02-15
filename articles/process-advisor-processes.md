@@ -134,3 +134,6 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 - As much as possible use an existing group name, this creates a more consistent and accurate process map.
 - Group names will be available in the dropdown list whenever a recording is saved. To remove group names from the dropdown list after it was removed from all recordings that used that group name, you need to analyze the recording.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

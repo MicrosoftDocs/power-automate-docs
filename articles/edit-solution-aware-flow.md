@@ -50,3 +50,6 @@ Follow these steps to edit a solution-aware flow.
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)
 * [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

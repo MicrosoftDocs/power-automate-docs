@@ -94,3 +94,6 @@ Once a desktop flow has been shared, owners and co-owners can change the access 
 - Create [Windows recorder (V1) flows](create-desktop.md).
 - Create [Selenium IDE flows](create-web.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

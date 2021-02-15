@@ -35,3 +35,6 @@ Create a cloud flow when you want your automation to be triggered either automat
 If you're ready to start your Power Automate project, visit the [guidance and planning article](./guidance/planning/introduction.md) to get up and running quickly.                                                                          |
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

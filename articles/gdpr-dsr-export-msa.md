@@ -112,3 +112,6 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
 
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

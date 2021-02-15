@@ -371,3 +371,6 @@ The data types that have properties are displayed in the following lists.
 |Tags               |The tags of the snapshot.                   |
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

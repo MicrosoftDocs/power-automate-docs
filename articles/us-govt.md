@@ -257,3 +257,6 @@ Some of the features available in the commercial version of Flow are not availab
 - [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
 
 - [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -42,3 +42,6 @@ For detailed licensing information about Project Oakdale, see [licensing and res
 
 [Power Apps and Teams](/powerapps/teams/overview)<br/>
 [Power Virtual Agents and Teams]( https://aka.ms/pva-teams-docs)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

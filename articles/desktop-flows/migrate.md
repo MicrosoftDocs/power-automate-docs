@@ -65,3 +65,6 @@ replace the UI automation action. You need to use the **Run a desktop flow built
 
 >[!TIP]
 >Update the duration of different **Wait** actions to change the playback speed of your converted desktop flow. Ensure you provide adequate wait time for the UI automation run to be successful.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

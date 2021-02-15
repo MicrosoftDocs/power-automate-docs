@@ -68,3 +68,6 @@ You'll then be prompted to:
 
 Learn to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

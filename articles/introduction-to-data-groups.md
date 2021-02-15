@@ -34,3 +34,6 @@ Visit the Microsoft Power Platform documentation to learn more about [data group
 * [Learn more about data loss prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)
 * [Learn more about environments](https://docs.microsoft.com/power-platform/admin/environments-overview)   
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

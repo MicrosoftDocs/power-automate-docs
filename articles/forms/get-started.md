@@ -42,3 +42,6 @@ Did you not find a template you like? You can create a flow from scratch and con
 [Create a cloud flow from a template in Power Automate](../get-started-logic-template.md)
 
 [Submit a template to the Power Automate gallery](../publish-a-template.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

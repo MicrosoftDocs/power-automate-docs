@@ -136,3 +136,6 @@ Merges multiple PDF files into a new one
 |Failed to merge PDF files|Indicates that an error occured while merging the files|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

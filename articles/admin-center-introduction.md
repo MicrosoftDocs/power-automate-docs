@@ -40,3 +40,6 @@ Learn more about using [environments](https://docs.microsoft.com/power-platform/
 
 Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) in the Power Platform admin guide to create rules that manage how business data is shared between services in flows.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

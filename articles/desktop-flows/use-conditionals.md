@@ -80,3 +80,6 @@ A switch block consists of three main parts:
 ![A example with an switch block.](media\switch-case-model\switch.png)
 
 You'll find the list of conditional actions available in the [Actions reference](actions-reference/conditionals.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

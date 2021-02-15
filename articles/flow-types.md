@@ -52,3 +52,6 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 - Get started with [cloud flows](overview-cloud.md). 
 - Get started with [desktop flows](./desktop-flows/introduction.md).
 - Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -53,3 +53,6 @@ There are four main steps for using a gateway.
 ## Next steps
 
 - [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
