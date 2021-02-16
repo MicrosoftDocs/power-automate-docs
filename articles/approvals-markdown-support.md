@@ -37,15 +37,15 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 
 Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
-| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams | Teams mobile app |  
-|---------|--------|---------------|-----------------|-------------|-------|--------------|
-| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes |
-| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes |
+| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams FlowBot | Teams mobile app (FlowBot) | Approvals Teams App |   
+|---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
+| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
+| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
+| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
+| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes | **_No_** |
+| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
