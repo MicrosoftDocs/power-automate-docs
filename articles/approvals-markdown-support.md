@@ -30,6 +30,7 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 >
 > - Approval request emails are *actionable messages*. If your [Microsoft Outlook client](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format. 
 > - All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
+> - Markdown is not currently supported for Approvals app on Teams, but is expected soon.
 > - Markdown is not currently supported for [GCC and GCC High customers](/power-automate/us-govt).
 
 ## Client Support
