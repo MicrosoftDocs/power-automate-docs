@@ -35,7 +35,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 <!--Need a doc for this in power automate-->
 > [!IMPORTANT]
-> By default, cycles in a "apply to each" loop run in parallel. When you use variables in loops, run the loop [sequentially](../logic-apps/logic-apps-control-flow-loops.md#sequential-foreach-loop) so that variables return predictable results.
+> By default, cycles in a "apply to each" loop run in parallel. When you use variables in loops, run the loop sequentially so that variables return predictable results.
 
 ## Prerequisites
 
