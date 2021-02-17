@@ -33,7 +33,7 @@ Variables exist and are global only within the flow that creates them. Also, the
 <!--Todo -- is this true for flows? -->
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
-<!--Need a doc for this in power automte-->
+<!--Need a doc for this in power automate-->
 > [!IMPORTANT]
 > By default, cycles in a "apply to each" loop run in parallel. When you use variables in loops, run the loop [sequentially](../logic-apps/logic-apps-control-flow-loops.md#sequential-foreach-loop) so that variables return predictable results.
 
@@ -43,7 +43,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 * A flow in which you want to create the variable.
 
-  If you're new to Power Automate, review [Getting started with Power Automate?](../getting-started.md) and [Overview of cloud flows](../overview-cloud.md).
+  If you're new to Power Automate, review [Getting started with Power Automate?](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
 
 >[!NOTE]
@@ -53,7 +53,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 You can create a variable and declare its data type and initial value - all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
-1. Sign into [Power Automate](../sign-up-sign-in.md).
+1. Sign into [Power Automate](sign-up-sign-in.md).
 
 1. Create a cloud flow and under the step where you want to add a variable, follow one of these steps: 
 
@@ -179,11 +179,11 @@ Here are examples for some other variable types:
 
 ## Get the variable's value
 
-To retrieve or reference a variable's contents, you can use the [variables() function](../logic-apps/workflow-definition-language-functions-reference.md#variables) in the Power Automate designer and in the code view editor. When referencing a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
+To retrieve or reference a variable's contents, you can use the variables() function in the Power Automate designer and in the code view editor. When referencing a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
 
 <!--confirm earlier creation-->
-For example, this expression gets the items from the array variable [created previously in this article](#append-value) by using the `variables()` function. The `string()` function returns the variable's contents in string format: `"1, 2, 3, red"`
+For example, this expression gets the items from the array variable by using the `variables()` function. The `string()` function returns the variable's contents in string format: `"1, 2, 3, red"`
 
 ```json
 @{string(variables('myArrayVariable'))}
@@ -252,7 +252,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
    ![Check for and include attachments](./media/create-variables-store-values/check-include-attachments.png)
 
-1. Add the [**Initialize variable** action](#create-variable). Create an integer variable named `Count` that has a zero start value.
+1. Add the Initialize variable** action. Create an integer variable named `Count` that has a zero start value.
 
    ![Add action for "Initialize variable"](./media/create-variables-store-values/initialize-variable.png)
 
@@ -325,7 +325,7 @@ If you switch from the designer to the code view editor, here is the way that th
 
 ## Decrement variable
 
-To decrease or *decrement* a variable by a constant value, follow the steps for [increasing a variable](#increment-value) except that you find and select the **Decrement variable** action instead. This action works only with integer and float variables.
+To decrease or *decrement* a variable by a constant value, follow the steps for increasing a variable except that you find and select the **Decrement variable** action instead. This action works only with integer and float variables.
 
 Here are the properties for the **Decrement variable** action:
 
@@ -354,7 +354,7 @@ If you switch from the designer to the code view editor, here is the way that th
 
 ## Set variable
 
-To assign a different value to an existing variable, follow the steps for [increasing a variable](#increment-value) except that you:
+To assign a different value to an existing variable, follow the steps for increasing a variable except that you:
 
 1. Find and select the **Set variable** action instead.
 
@@ -415,7 +415,7 @@ If you switch from the designer to the code view editor, here is the way that th
 ## Append to variable
 
 <!--Doc needed-->
-For variables that store strings or arrays, you can insert or *append* a variable's value as the last item in those strings or arrays. You can follow the steps for [increasing a variable](#increment-value) except that you follow these steps instead: 
+For variables that store strings or arrays, you can insert or *append* a variable's value as the last item in those strings or arrays. You can follow the steps for increasing a variable except that you follow these steps instead: 
 
 1. Find and select one of these actions based on whether your variable is a string or an array. 
 
