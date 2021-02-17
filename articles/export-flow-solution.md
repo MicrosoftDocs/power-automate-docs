@@ -40,6 +40,9 @@ Follow these steps to move your solution and its dependencies to a new environme
 
 
 * [Create a solution](./overview-solution-flows.md)
-* [Create a flow in a solution](./create-flow-solution.md)
+* [Create a cloud flow in a solution](./create-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)
 * [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

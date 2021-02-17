@@ -84,7 +84,7 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 | category          | The category of the flow. The different types are: 0 - classic Common Data Service workflows,  1 - classic Common Data Service dialogs, 2 - business rules, 3 - classic Common Data Service actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
 | statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
 | workflowuniqueid  | The unique identifier for this installation of the flow. |
-| workflowid        | The unique identifier for a flow across all imports. |
+| workflowid        | The unique identifier for a cloud flow across all imports. |
 | createdon         | The date when the flow was created. |
 | _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in Common Data Service. |
 | modifiedon        | The last time the flow was updated. |
@@ -104,9 +104,9 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-## Create a flow
+## Create a cloud flow
 
-Call `POST` on the `workflows` collection to create a flow. The required properties for automated, instant, and scheduled flows are: category, name, type, primaryentity, and clientdata. Use `none` for the primaryentity for these types of flows.
+Call `POST` on the `workflows` collection to create a cloud flow. The required properties for automated, instant, and scheduled flows are: category, name, type, primaryentity, and clientdata. Use `none` for the primaryentity for these types of flows.
 
 You can also provide a description and statecode.
 
@@ -138,9 +138,9 @@ There are three properties:
 
 Once you execute the `POST` request, you'll receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
 
-## Update a flow
+## Update a cloud flow
 
-You can call `PATCH` on the workflow to update, turn on, or turn off a flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
+You can call `PATCH` on the workflow to update, turn on, or turn off a cloud flow. Use the `workflowid` property to make these calls. For example, you can update the description and the owner of the flow with the following call:
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -156,7 +156,7 @@ Content-type: application/json
 > [!NOTE]
 > The syntax for changing the owner uses the `odata.bind` format. This means instead of patching the \_ownerid_value field directly, you append `@odata.bind` to the property name and then wrap the ID with `systemusers()`.
 
-In another example, you can turn a flow on with this call:
+In another example, you can turn a cloud flow on with this call:
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -168,9 +168,9 @@ Content-type: application/json
 }
 ```
 
-### Delete a flow
+### Delete a cloud flow
 
-Delete a flow with a simple `DELETE` call:
+Delete a cloud flow with a simple `DELETE` call:
 
 ```http
 DELETE https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -179,9 +179,9 @@ Authorization: Bearer ey...
 ```
 
 > [!NOTE]
-> You cannot delete a flow that's turned on. You must first turn off the flow (see **Updating a flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
+> You cannot delete a cloud flow that's turned on. You must first turn off the flow (see **Updating a cloud flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
 
-## Get all users with whom a flow is shared
+## Get all users with whom a cloud flow is shared
 
 Listing the users with access uses a *function* in Common Data Service. This function takes a single parameter of `Target`:
 
@@ -208,9 +208,9 @@ The `Target` parameter is a JSON-like string with a single property called `@oda
 }
 ```
 
-## Share or unshare a flow
+## Share or unshare a cloud flow
 
-You can share a flow using the `GrantAccess` action.
+You can share a cloud flow using the `GrantAccess` action.
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/GrantAccess
@@ -243,9 +243,9 @@ The `AccessMask` parameter is a field with the following values for different pe
 | ShareAccess  | The right to share the flow.                         |
 | AssignAccess | The right to change the owner of the flow.           |
 
-You can combine permissions with a comma; for example, provide the ability to both read and update a flow by passing `ReadAccess,WriteAccess`.
+You can combine permissions with a comma; for example, provide the ability to both read and update a cloud flow by passing `ReadAccess,WriteAccess`.
 
-You can *unshare* a flow with the `RevokeAccess` action. Here's an example:
+You can *unshare* a cloud flow with the `RevokeAccess` action. Here's an example:
 
 ```http
 POST https://org00000000.crm0.dynamics.com/api/data/v9.1/RevokeAccess
@@ -329,3 +329,6 @@ Authorization: Bearer ey...
 This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
 Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

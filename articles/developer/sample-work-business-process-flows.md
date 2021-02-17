@@ -87,3 +87,6 @@ This sample demonstrates how to programmatically work with business process flow
 
 7. When the sample is complete, press ENTER to close the console window.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Release notes | Microsoft Docs
-description: Common issues and what's new for Power Automate releases
+description: Common issues and what's new for Power Automate releases.
 services: ''
 suite: flow
 documentationcenter: na
@@ -35,7 +35,7 @@ search.audienceType:
 2. How do I use an advanced condition or an expression?
    
    * Read about [adding conditions](add-condition.md).
-   * If you want multiple cases in a flow, select **Add condition** from inside of an existing condition.
+   * If you want multiple cases in a cloud flow, select **Add condition** from inside of an existing condition.
    * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
@@ -54,11 +54,11 @@ For information about new features released for Power Automate, visit:
 
 ### Release 2018-09-24
 
-- **Admin access to help and support** - Open support tickets for Power Automate in the Power platform admin center and provide additional details about your workflow failure.
+- **Admin access to help and support** - Open support tickets for Power Automate in the Power Platform admin center and provide additional details about your workflow failure.
 - **Redesigned Power Automate Community** - Finding what you need just got easier in the Power Automate Community.
-- **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a flow when there are new messages in a channel.
+- **Improvements to the Microsoft Teams connector** - New triggers for Microsoft Teams so you can run a cloud flow when there are new messages in a channel.
 - **More SharePoint actions** - There are new actions for moving files and more in the SharePoint connector.
-- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform Admin center.
+- **New admin analytics reports** - Environment and Tenant wide analytics added to the Business Application Platform admin center.
 - **Power Query integration** - A Power Query experience is being built that will allow makers to shape data mashups from SQL Server.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/support-tickets-teams-sharepoint/) about this release.
@@ -66,7 +66,7 @@ For information about new features released for Power Automate, visit:
 ### Release 2018-08-31
 
 - **Test your flow by using example data** - Use example data from connectors to test your flow as you build it from within the Power Automate designer. When you test your flow with example data, you confirm that the flow will run as expected when it's deployed to production.
-- **Five new connectors** - We've added four new management connectors: Power Apps for App Makers, Power platform for Admins, Power Apps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
+- **Five new connectors** - We've added four new management connectors: Power Apps for App Makers, Power Platform for Admins, Power Apps for Admins, Power Automate for Admins, and Microsoft School Data Sync.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/test-data-management-connectors/) about this release.
 
@@ -89,8 +89,8 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-07-23
 
 - **Build and run flows from Excel** - With the new **Flow** button (accessed from the ribbon’s **Data** tab), you can create and trigger automations from Power Automate on your table data in Excel. Automate data processing or the copying/importing of data.
-- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on Common Data Service. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
-- **Create a flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
+- **Create a business process flow** - A business process flow is a new type of stateful, human-interactive flow based on Microsoft Dataverse. Use these new flows to define a set of stages and steps for people to follow. They can move forward and backward as needed.
+- **Create a cloud flow for Microsoft To-Do in Outlook Web App** - If someone is \@mentioned in Outlook Web App, they’ll see a shortcut to create a cloud flow. This flow automatically creates tasks for the \@mentioned person in Microsoft To-Do, based on the content of the email.
 - **SharePoint view support** - The SharePoint connector now supports selecting a specific SharePoint view on triggers and actions. This filters down the columns to just the fields that are in the selected view.
 - **Four new connectors** - Added Azure IoT Central - a highly scalable IoT software-as-a-service (SaaS) solution - Survey 123, LMS365 and ProjectWise Design Integration.
 
@@ -118,8 +118,8 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-05-21
 
 - **Flows “owned by” SharePoint lists and libraries** - Flows that work with SharePoint lists and libraries can be shared with those lists or libraries. So, instead of being shared with individuals or groups, they’re shared with everyone who has access to the list. As users are added or removed from the list or library, their membership automatically changes accordingly.
-- **Error details analytics** - A new embedded report that provides information about all of the errors that happen inside a flow.
-- **Share flows with Office 365 groups** - You can make an Office 365 modern group the owner of a flow, and you can share button flows with Office 365 groups so anyone in the group can run the flow.
+- **Error details analytics** - A new embedded report that provides information about all of the errors that happen inside a cloud flow.
+- **Share flows with Office 365 groups** - You can make an Office 365 modern group the owner of a cloud flow, and you can share button flows with Office 365 groups so anyone in the group can run the flow.
 - **SharePoint connector improvements** - There are two new SharePoint connector capabilities: trigger flows when items or files are deleted and call any HTTP endpoint that the SharePoint REST API supports.
 - **Two new connectors** - Added support for Azure Data Factory and MailParser
 
@@ -135,7 +135,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-12
 
-- **Return data to Power Apps from a flow** - Build flows that can be called from an app built with Power Apps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
+- **Return data to Power Apps from a cloud flow** - Build flows that can be called from an app built with Power Apps, and return data back to the app. Use the visual drag-and-drop flow designer to build the logic you need for your apps. 
 - **Add multiple records to array inputs** - Added a list builder into Power Automate that can be used for adding multiple attachments to an email, for example.
 - **Test flows with previous run data** - Added a new Test flow button to the designer that lets you test your flow with trigger data from previous flow runs.
 - **New workflow() fields** - You can now access environment name and flow display name with the workflow() expression.
@@ -144,11 +144,11 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-04
 
-- **Approvals on Common Data Service** - Modern approvals are built on the latest version of Common Data Service. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
+- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
-- **See details of flow buttons** - When you run a flow that has been shared with you, you can now see all the actions that the flow uses.
+- **See details of flow buttons** - When you run a cloud flow that has been shared with you, you can now see all the actions that the flow uses.
 - **United Kingdom region** - Environments can now be created to store their data in the United Kingdom.
 - **Two new connectors** - Added support for AtBot Admin and Marketing Content Hub.
 - **New documentation landing page** - Updated the documentation landing page to have content grouped by who you are: either a beginner, an intermediate user or an expert. 
@@ -176,7 +176,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-01-29
 
 - **Flow inside of Microsoft Teams** - From Teams, you can create and manage flows, review your received and sent approvals, and launch flows directly within the Teams desktop app or on teams.microsoft.com - [learn more here](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/).
-- **Shared edit notifications** - Whenever a flow you own is changed by a co-worker, you'll get an email notification informing you who changed what flow.
+- **Shared edit notifications** - Whenever a cloud flow you own is changed by a co-worker, you'll get an email notification informing you who changed what flow.
 - **New expressions** - Added two new sets of expressions: one to parse URLs and another to work with JSON objects.
 - **Three new connectors** - This week there are two new Plumsail connectors: Plumsail SP and Plumsail Forms, and a new connector to kintone.
 
@@ -208,7 +208,7 @@ Power Automate Analytics is now available in all Power Automate regions, meaning
 
 ### Release 2017-12-05
 
-The Power Automate Launch Panel is now available in all regions. This panel allows you to add values to a flow when you run it inside of your SharePoint list or document library.
+The Power Automate Launch Panel is now available in all regions. This panel allows you to add values to a cloud flow when you run it inside of your SharePoint list or document library.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) about this release.
 
@@ -224,7 +224,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-11-09
 
-- **OneDrive for Business integration** - There's [now a flow button inside of OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) that can create or trigger flows on selected files or folders.
+- **OneDrive for Business integration** - There's [now a cloud flow button inside of OneDrive for Business](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) that can create or trigger flows on selected files or folders.
 - **Planner triggers** - Start flows when a new task is created, when a task is assigned to you or when one is completed.
 - **SharePoint attachments** - Work with attachments on SharePoint list items: list, download, add or delete attachments.
 - **Flow management connector** - Create flows that automate the management of other flows in your environment (for example, add permissions to flows automatically).
@@ -267,7 +267,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-09-25 - Q3 Update for Power Automate
 
-- **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a flow for first release tenants.
+- **Deeper SharePoint integration in First Release** - There are new "in-the-box" send for review flows and a Flow panel for collecting inputs when you run a cloud flow for first release tenants.
 - **Dynamics 365 apps** - Power Automate is now integrated in the UI for Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 - **Microsoft Trust Center** - Power Automate is listed in the Microsoft Trust center, showing certifications like HIPAA, ISO and SOC.
 - **Usage analytics** - Every flow has an embedded Power BI dashboard with basic usage analytics.
@@ -280,7 +280,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 
 ### Release 2017-09-21
 
-- **Download Flow History** - Download the run history of a flow as a CSV file to open in Excel.
+- **Download Flow History** - Download the run history of a cloud flow as a CSV file to open in Excel.
 - **Advanced recurrence** - Build recurring schedules to trigger your flows, for example, only trigger on weekdays.
 - **IntelliSense** - When typing in expressions, IntelliSense will provide suggestions for parameters.
 - **Four new connectors** - Added connectors for Azure AD HTTP services, Amazon Redshift, Azure Event Grid Publish and FlowForma.
@@ -331,7 +331,7 @@ The Power Automate Launch Panel is now available in all regions. This panel allo
 * **Include comments in Outlook for approvals** - When you receive an approval request you can provide comments without ever leaving Outlook.
 * **Custom connector brand colors** - You can now enter a color for your Custom Connectors that will be used for the backgrounds.
 * **Save As for team flows** - Make copies of any flows, including Team flows
-* **Delete flow information** - When you delete a flow, you'll be shown the list of all pending runs for that flow.
+* **Delete flow information** - When you delete a cloud flow, you'll be shown the list of all pending runs for that flow.
 * **Filtering on the Connectors page** - Search for the connectors you want on the Connectors page, and filter by type of connector.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/language-settings-3-connectors/) about this release.
@@ -346,13 +346,13 @@ You can now view the status of all of the pending approval requests you have sen
 * **Three new database connectors** - Added read-only support for MySQL, PostgreSQL and Teradata. These connectors connect via the On-premises data gateway.
 * **Three other connectors** - Connect to Azure Application Insights, Calendly and Teamwork Projects.
 * **Better visualization for error handling** - Steps that run after errors are now shown with red dotted arrows so you can easily identify them.
-* **Run details pane** - When a flow fails there is now a new right-hand pane that contains some helpful steps for how to correct your flow.
+* **Run details pane** - When a cloud flow fails there is now a new right-hand pane that contains some helpful steps for how to correct your flow.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/seven-connectors-and-html/) about this release.
 
 ### Release 2017-06-04
 * **GA for Windows Phone** - [The Power Automate mobile app has been released to General Availability for Windows Phone](https://flow.microsoft.com/blog/announcing-flow-windows-phone-app/).
-* **Emails on flow failures** - Get notified via email when you have a flow that fails. These failure emails will only be sent out once a week, and can be turned on or off by the user.
+* **Emails on flow failures** - Get notified via email when you have a cloud flow that fails. These failure emails will only be sent out once a week, and can be turned on or off by the user.
 * **Select action for tables** -  Use the new Select action to change the set of columns that will be included in tables.
 * **Microsoft Forms connector** -  Microsoft Forms is a new part of Office 365 Education that allows teachers and students to create custom quizzes quickly and easily, surveys, questionnaires, registrations and more.
 * **Office 365 Enterprise K1 plan** - Power Apps and Power Automate are now included with the Office 365 Enterprise K1 plan with certain quotas.
@@ -364,8 +364,8 @@ You can now view the status of all of the pending approval requests you have sen
 * **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that brings together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
 * **Widgets on iOS and Android** - Power Automate widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
 * **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a record in Dynamics 365.
-* **Integer and float variables** -  Initialize and increment or decrement counters inside of a flow run to count how many times a certain set of logic runs.
-* **Flow details page** - When you select a flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
+* **Integer and float variables** -  Initialize and increment or decrement counters inside of a cloud flow run to count how many times a certain set of logic runs.
+* **Flow details page** - When you select a cloud flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
 * **Flow run quotas for admins** - Administrators can now monitor flow run usage across an organization against the common company run quota and get a quota breakdown to understand what licenses contribute to their quota.
 * **HTTP request trigger improvements** - Use different HTTP methods, and add path segments for the Request trigger.
 * **Two partner connectors** - Power Automate can now connect to Parserr, an email-parsing service, and Cognito Forms, an online-forms service.
@@ -373,10 +373,10 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/error-handling/) about this release.
 
 ### Release 2017-05-12
-* **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
+* **SharePoint Document Libraries integration** - You can select any file in a document library and kick off a cloud flow, for example to send it to your manager for approval, [and much more](https://flow.microsoft.com/blog/flow-in-spo-document-libraries/).
 * **Microsoft Planner connector** - Microsoft Planner lets you easily bring together teams, tasks, documents, and conversations for better results.
-* **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate Admin Center.
-* **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Common Data Service.
+* **Admin view of licenses** - Administrators can see all of the Power Automate and Power Apps licenses (both trial and paid) in the Power Automate admin center.
+* **Power Apps Community Plan** -  The Power Apps Community plan is a free plan for individuals to explore, learn, and build skills for Power Apps, Power Automate, and Dataverse.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/planner-community-and-licenses/) about this release.
 
@@ -400,9 +400,9 @@ You can now view the status of all of the pending approval requests you have sen
 
 ### Release 2017-04-17 - Q1 Update for Power Automate
 * **Modern approval experiences** - Create workflows where approvers can approve securely from inside the Power Automate mobile app or the unified approvals center on the Power Automate website.
-* **Team flows general availability** - Multiple people can own and manage a flow together with team flows, which are now generally available.
+* **Team flows general availability** - Multiple people can own and manage a cloud flow together with team flows, which are now generally available.
 * **Build connectors for Power Automate** - Anyone can submit their own Power Automate connector for free for the rest of the world to use.
-* **A "diet" designer** - For certain templates, a new version of the designer presents just the fields that are required to create a flow, which simplifies the experience.
+* **A "diet" designer** - For certain templates, a new version of the designer presents just the fields that are required to create a cloud flow, which simplifies the experience.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/q1-2017-update/) about this release.
 
@@ -419,14 +419,14 @@ You can now view the status of all of the pending approval requests you have sen
 * **Trigger flows from physical buttons** - Announcing partnerships with two of the leading products in the physical button space: Flic by Shortcut Labs, and Bttn by The Button Corporation. [Read more](https://flow.microsoft.com/blog/physical-buttons/)
 
 ### Release 2017-03-22
-* **Make a copy of your flow** - You can now make a copy of your flow to work on draft versions or duplicate a flow that you've created in the past.
+* **Make a copy of your flow** - You can now make a copy of your flow to work on draft versions or duplicate a cloud flow that you've created in the past.
 * **Two new services** - Adding support for Toodledo - manage your to-do list by creating and updating tasks, and Zendesk, which provides a customer service and support ticketing platform.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/make-a-copy/) about this release.
 
 ### Release 2017-03-15
 * **Share buttons with co-workers** - You can now share flow buttons with other people, making it easy for any business user to perform quick tasks.
-* **Trigger buttons from the home screen** - Shortcuts to flow buttons from the home and lock screens of mobile devices make it quicker than ever to trigger a flow.
+* **Trigger buttons from the home screen** - Shortcuts to flow buttons from the home and lock screens of mobile devices make it quicker than ever to trigger a cloud flow.
 * **Team flows in the Power Automate app** - You can now see the flows that have other owners in the Power Automate app for iOS or Android.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/button-sharing/) about this release.
@@ -458,7 +458,7 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/) about this release.
 
 ### Release 2017-02-06
-* **Team flows** - Team flows make it possible for multiple people to own and manage a flow together, and, if someone leaves an organization, the flows they created can continue to run.
+* **Team flows** - Team flows make it possible for multiple people to own and manage a cloud flow together, and, if someone leaves an organization, the flows they created can continue to run.
 * **Sharing custom connectors** - custom connectors, like team flows, can be shared and collectively managed inside an organization.
 * **Gmail and LUIS support** - Connect to Gmail and Azure Cognitive Services' Language Understanding Intelligent Service.
 
@@ -479,8 +479,8 @@ You can now view the status of all of the pending approval requests you have sen
 [Read more and ask questions](https://flow.microsoft.com/blog/search-by-service/) about this release.
 
 ### Release 2017-01-14
-* **Resubmit runs** - If a flow failed and you want to try to fix it and run again, you can resubmit the failed run.
-* **Cancel runs** - When a flow gets stuck, you can now explicitly cancel the run.
+* **Resubmit runs** - If a cloud flow failed and you want to try to fix it and run again, you can resubmit the failed run.
+* **Cancel runs** - When a cloud flow gets stuck, you can now explicitly cancel the run.
 * **Two new services** - Added support for GoToTraining and GoToWebinar.
 * **Mobile links** - You can share templates right from the mobile app, and we've added a quick download link for the apps at the top of the website.
 
@@ -524,7 +524,7 @@ You can now leverage valuable information when triggering a button flow, such as
 
 ### Release 2016-10-31 - General Availability
 * **Pricing and licensing** - Now available in both Free and paid plans, as well as included in Office 365 and Dynamics 365.
-* **Power Automate Admin Center** - Enterprise-ready with the new Admin Center. In the Admin Center you can manage the environments inside the organization.
+* **Power Automate admin center** - Enterprise-ready with the new admin center. In the admin center you can manage the environments inside the organization.
 * **Data loss prevention policies** - Administrators can create data loss prevention policies to control the flow of data between services.
 * **Android availability** - The Power Automate phone app is now available for both iOS and Android. The app enables you to get notifications, monitor activity, and start flows with the tap of a button.
 * **New designer experiences** - You can now search over the dynamic content passed from step to step, making it much quicker to reference the data you want to.
@@ -541,7 +541,7 @@ You can now leverage valuable information when triggering a button flow, such as
 ### Release 2016-10-16
 * **Custom connectors support more authentication types** - Custom connectors now support API Key authentication and can authenticate against any service that supports the full OAuth 2.0 specification.
 * **Three new services supported** -  We've added support for Basecamp 3, Blogger and PagerDuty.
-* **Designer improvements** - Improved performance, you can now update and repair your connections right from the "..." menu for every action, and we have added a new step called Terminate that you can use to end a flow's run.
+* **Designer improvements** - Improved performance, you can now update and repair your connections right from the "..." menu for every action, and we have added a new step called Terminate that you can use to end a cloud flow's run.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/early-october-updates/) about this release.
 
@@ -557,7 +557,7 @@ Flow creation now available from your mobile phones. Browse our rich template ga
 
 ### Release 2016-09-14
 * **Embedding in your web site or app** - Developers can now embed Power Automate right into their apps or web sites to give their users a simple way to automate their personal or professional tasks.
-* **Use a flow as an HTTP endpoint** -  Now you can use a flow itself as an HTTP API. There is a trigger called Request inside of flow, and you can choose to respond to the incoming request by adding a Response card.
+* **Use a cloud flow as an HTTP endpoint** -  Now you can use a cloud flow itself as an HTTP API. There is a trigger called Request inside of flow, and you can choose to respond to the incoming request by adding a Response card.
 * **Todoist support** - Todoist gives you perspective over all your projects, at work and at home.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/extend-web-site-application/) about this release.
@@ -594,7 +594,7 @@ You can now preview the new SharePoint Online modern lists experience that inclu
 [Read more and ask questions](https://flow.microsoft.com/blog/visual-studio-team-services-enhancements-to-sharepoint-and-o365-outlook-and-boolean-control/) about this release.
 
 ### Release 2016-08-08
-Public preview of Common Data Service integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
+Public preview of Dataverse integrated in Power Automate. [Read more and ask questions](https://flow.microsoft.com/blog/flow-and-common-data-model/) about this release.
 
 ### Release 2016-08-05
 * **SharePoint On-Premises** - Just like with SharePoint Online, you can create flows around your SharePoint on-premises lists and doc libraries either using pre-defined templates or by building them from scratch.
@@ -636,7 +636,7 @@ On-premises connectivity for Power Automate using the on-premises data gateway. 
 ### Release 2016-05-27
 * **Browse templates by service** - There is a now a way to see all of the services that we support (without having to log in). From this page you can see a description of each of the services, and check out the templates that we have for that service.
 * **Create and use your custom connectors** - Just like you can create custom connectors in Power Apps, you can also connect to your own APIs right at flow.microsoft.com:
-* **Test your flows before finishing** - Whenever you save a flow you can now see the results of the flow run live in the page, if you perform the starting action.
+* **Test your flows before finishing** - Whenever you save a cloud flow you can now see the results of the flow run live in the page, if you perform the starting action.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/may-updates-to-microsoft-flow/) about this release.
 
@@ -647,9 +647,9 @@ Added two new services: Microsoft Project Online and Mandrill by Mailchimp. [Rea
 If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.microsoft.com), the Power Automate Preview release offers several new features:
 
 * You can now browse a gallery of dozens of templates and sort by Popularity, Name, or Date published.
-* You can [publish your own templates](publish-a-template.md) into the gallery after you customize a flow.
+* You can [publish your own templates](publish-a-template.md) into the gallery after you customize a cloud flow.
 * You can see the history for every check and run of your flow.
-* When you save a flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
+* When you save a cloud flow, you can [watch it in action immediately](see-a-flow-run.md) by just performing the trigger action.
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Power Automate or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
@@ -658,3 +658,6 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 ## Next steps
 If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

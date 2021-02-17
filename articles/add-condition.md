@@ -1,6 +1,6 @@
 ---
-title: Add a condition to a flow | Microsoft Docs
-description: Specify that a flow performs one or more tasks only if a condition is true.
+title: Add a condition to a cloud flow | Microsoft Docs
+description: Specify that a cloud flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,14 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Add a condition to a flow
+# Add a condition to a cloud flow
 
 
-Specify that a flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
+Specify that a cloud flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
 ## Prerequisites
 
-* [Create a flow](get-started-logic-template.md) from a template - this tutorial [uses this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example
+* [Create a cloud flow](get-started-logic-template.md) from a template - this tutorial [uses this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example
 
 ## Add a condition
 
@@ -81,3 +81,6 @@ Learn about all the available [expressions](https://msdn.microsoft.com/library/a
 ## Next steps
 
 Learn how to [use expressions](use-expressions-in-conditions.md) in conditions in advanced mode.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

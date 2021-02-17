@@ -65,3 +65,6 @@ The **Image Share Form** sample is an Adaptive Card designed for sharing photos 
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

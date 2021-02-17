@@ -1,10 +1,11 @@
 ---
 title: Learning catalog for Power Automate
 description: Find all the training options for Power Automate
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/17/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 # Learning catalog for Power Automate
 
@@ -87,3 +88,6 @@ Find the right online training, in person workshops, and events for your role as
 :::row-end:::
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

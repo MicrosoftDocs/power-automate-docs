@@ -32,7 +32,7 @@ In this walkthrough, you'll learn about some common data operations in Power Aut
 
 ## Use the compose action
 
-Use the **Data Operation - Compose** <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->action to save yourself from having to enter the same data multiple times as you're designing a flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
+Use the **Data Operation - Compose** <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
 1. Search for **Compose**, and then select the **Data Operation - Compose** action.
 
@@ -171,3 +171,6 @@ To do this, follow the steps in previous section for creating a CSV table, but u
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Regions overview for Power Automate | Microsoft Docs
-description: Overview with question and answer about regions in Power Automate
+description: Overview with question and answer about regions in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/25/2020
+ms.date: 08/25/2020
 ms.author: hamenon
 search.app: 
   - Flow
@@ -23,11 +23,11 @@ search.audienceType:
 ---
 # Power Automate regions overview
 
-In Power Automate, your flows are created within your Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Power Platform environment is stored.
+In Power Automate, your flows are created within your Microsoft Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Microsoft Power Platform environment is stored.
 
-In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your [Power Platform environment](environments-overview-admin.md).
+In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your Microsoft [Power Platform environment](environments-overview-admin.md).
 
-## More information about Power Platform regions
+## More information about Microsoft Power Platform regions
 
 [Overview of Power Platform regions](/power-platform/admin/regions-overview)
 
@@ -47,7 +47,6 @@ Australia|Australia East, Australia Southeast
 Canada|Canada Central, Canada East
 Europe|North Europe, West Europe
 France|France Central, France South
-Germany|Germany West Central, Germany North
 India|Central India, South India, West India
 Japan|Japan East, Japan West
 South America|Brazil South
@@ -70,3 +69,6 @@ Yes. [Learn more](./us-govt.md).
 ### What outbound IP addresses are used in each region?
 
 See [Limits and configuration](limits-and-config.md).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

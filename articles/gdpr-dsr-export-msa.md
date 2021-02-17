@@ -21,7 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Export Requests for Power Automate
+# Respond to GDPR Data Subject Export Requests for Power Automate
 
 
 As part of our commitment to partner with you on your journey to the General Data Protection Regulation (GDPR), we’ve developed documentation to help you prepare. The documentation not only describes what we’re doing to prepare for the GDPR but also shares examples of steps you can take today with Microsoft to support GDPR compliance when using Power Automate.
@@ -58,9 +58,9 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 
     ![Download](./media/gdpr-dsr-export-msa/download.png)
 
-## Export a flow
+## Export a cloud flow
 
-An end user who has access to a flow, can export the flow by following these steps:
+An end user who has access to a cloud flow, can export the flow by following these steps:
 
 1. Sign into [Power Automate](https://flow.microsoft.com/).
 
@@ -72,11 +72,11 @@ An end user who has access to a flow, can export the flow by following these ste
 
 1. Select **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 ## Export run history
 
-Run history includes a list of all runs for a flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
+Run history includes a list of all runs for a cloud flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
 An end user who has access to the flow can follow these steps to export this data:
 
@@ -112,3 +112,6 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
 
     ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

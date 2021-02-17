@@ -74,3 +74,6 @@ This article discusses how to use Microsoft's products, services and administrat
 ## System-generated logs
 
 Refer to this [guide](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) for more information on system-generated logs for Power Automate.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

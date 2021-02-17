@@ -72,7 +72,7 @@ You can retrieve the name of your business process flow entity using any of the 
 
 - **Using the UI**: Use the customization UI to browse to your business process flow entity:
 
-    ![](media/bpf-entity-name.png)
+    ![Browse to your business process flow entity using UI](media/bpf-entity-name.png)
 - **Using the Web API**: Use the following request:
 
     **Request**
@@ -129,7 +129,7 @@ The custom entity that is automatically created on activating a business process
 
 The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission users would have based on their assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
 
-![](media/bpf-privileges.png)
+![Security Role management](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
 ## Create, retrieve, update, and delete business process flow entity records (process instances)  
@@ -140,7 +140,7 @@ The custom business process flow entity has organization scope. The regular crea
 
  Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
 
- ![](media/sample-bpf.png)
+ ![Custom business process flow](media/sample-bpf.png)
  
 ### Retrieve all the records (instances) for a business process flow entity
  If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
@@ -386,3 +386,6 @@ The only exception to this is programmatically modifying the **ProcessId** attri
   
 -   The maximum number of entities that can participate in the process flow is 5.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

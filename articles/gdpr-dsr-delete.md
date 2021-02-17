@@ -48,7 +48,7 @@ The following table shows which personal data is automatically deleted and which
 
 For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
-* **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+* **Website access:** sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
@@ -57,8 +57,8 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
-|Environment|Power Automate Admin Center|Power Apps cmdlets||
-|Environment permissions*|Power Automate Admin Center|Power Apps cmdlets||
+|Environment|Power Automate admin center|Power Apps cmdlets||
+|Environment permissions*|Power Automate admin center|Power Apps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed |||Deleted through 28 day retention policy|
 |User jobs|| ||
@@ -73,7 +73,7 @@ Here is the breakdown of experiences that are available for an administrator to 
 
 *With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within Common Data Service. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Common Data Service.
 
-\*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate Admin Center.
+\*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate admin center.
 
 ## Manage Delete requests
 
@@ -147,7 +147,7 @@ Please see [Executing DSRs against Common Data Service Customer Data](https://go
 
 ## Delete connections created by a user
 
-Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems.  Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
+Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems. Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
 Power Apps Maker PowerShell cmdlets
 
@@ -264,9 +264,9 @@ As an admin you have two decisions to make when processing a DSR delete request 
 >
 >
 
-## Give access to a user’s environments from the Power Automate Admin Center
+## Give access to a user’s environments from the Power Automate admin center
 
-An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments, please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).>!-- Edit note: Kind of confusing that Power Automate is in the heading but Power Platform is in the first sentence. -->
 
 ## Delete the user’s permissions to all other environments
 
@@ -319,3 +319,6 @@ To determine whether or not you are a user of a managed or unmanaged tenant, per
     }
 
 1. Otherwise, you belong to a managed tenant.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

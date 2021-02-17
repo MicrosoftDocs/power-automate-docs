@@ -22,7 +22,10 @@ ms.author: deonhe
 
 SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
 
-In this article, you'll learn how to configure your SharePoint site to use a flow to require changes to the site to be approved before they go live.
+In this article, you'll learn how to configure your SharePoint site to use a cloud flow to require changes to the site to be approved before they go live.
+
+>[!NOTE]
+>SharePoint approvals isn't available in all goverment cloud environments. 
 
 ## Configure SharePoint for page approvals
 
@@ -35,11 +38,11 @@ You must be a SharePoint site admin to perform the activities in this article.
 1. Sign in to SharePoint as a site admin.
 1. Select **Pages** from the navigation bar.
 
-    ![Select page approval flow](media/customize-sharepoint-page-approvals/pages.png)
+    ![A screenshot that shows the pages menu item](media/customize-sharepoint-page-approvals/pages.png)
 
 1. Select **Automate** > **Power Automate** > **Configure page approval flow**.
     
-    ![Select page approval flow](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
+    ![A screenshot that shows the configure page approval flow option](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
 
 1. Select **Create flow**.
 
@@ -49,13 +52,13 @@ You must be a SharePoint site admin to perform the activities in this article.
 
 1. Provide a **Flow name**, at least one name in the  **Approvers** box, and then select **Create**.
     
-    ![Select page approval flow](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
+    ![A screenshot that shows the create menu item](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
 
 That's it! Now, each time a page is added or modified, an approval request goes to the **Approvers** you listed in the flow.
 
 The page approval flow is just like any other flow, so it's listed in the **My flows** tab.
 
-![Select page approval flow](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
+![A screenshot that shows the my flows menu item](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
 
 ## Submit a page for approval
 
@@ -63,11 +66,11 @@ Now that you've created a page approval flow, anyone who adds or changes a page 
 
  - Make a change to the site (add a new page, for example) and then save the change.
 
-     ![Submit page for approval](media/customize-sharepoint-page-approvals/create-new-page.png)
+     ![A screenshot that shows the create option](media/customize-sharepoint-page-approvals/create-new-page.png)
      
  - Wait for someone to approve the change.
     
-    ![Submit page for approval](media/customize-sharepoint-page-approvals/wait-for-approval.png)
+    ![A screenshot that shows when appoval is pending](media/customize-sharepoint-page-approvals/wait-for-approval.png)
     
 ## Approve a page
 
@@ -81,3 +84,6 @@ Because page approvals use Power Automate behind the scenes, the page approval f
 
 - [Page approval flow](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
 - [Configure page approval](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

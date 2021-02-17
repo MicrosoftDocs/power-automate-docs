@@ -1,10 +1,11 @@
 ---
 title: App Maker learning catalog
-description: Find all the training options for Power Automate
-author: loreleishannonmsft
+description: Find all the training options for Power Automate.
+author: msftman
 ms.topic: article
 ms.date: 03/17/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # App Maker Learning Catalog
@@ -24,10 +25,13 @@ The following catalog is organized from core knowledge to specific domains, and 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Automate a business process using Power Automate](https://docs.microsoft.com/learn/paths/automate-process-power-automate/) | This learning path introduces you to Power Automate, teaches you how to build workflows, and how to administer flows.  | Free, self-paced online learning path | 3 hours 11 minutes |
 | [Get started with Power Automate buttons](https://docs.microsoft.com/learn/paths/get-started-power-automate-buttons/)       | Do you want to create button flows to solve business problems? Then, take this learning path, which introduces you to Power Automate buttons and demonstrates how to create button flows.                   | Free, self-paced online learning path | 4 hours 30 minutes |
-| [Introduction to business process flows in Power Automate](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)	|Do you want to create business process flows? This module will discuss what business process flows are and how to use them to solve business solutions. You will discover why automating the business process is important to organizations and how to build business process flow solutions by using Power Platform and Common Data Service. Additionally, you will learn how business process flows differ from regular Power Automate workflows and when to use each.|	Free, self-paced online learning path|	31 minutes |
+| [Introduction to business process flows in Power Automate](https://docs.microsoft.com/learn/modules/intro-business-process-flows/)	|Do you want to create business process flows? This module will discuss what business process flows are and how to use them to solve business solutions. You will discover why automating the business process is important to organizations and how to build business process flow solutions by using Microsoft Power Platform and Common Data Service. Additionally, you will learn how business process flows differ from regular Power Automate workflows and when to use each.|	Free, self-paced online learning path|	31 minutes |
 | [Power Automate documentation](https://docs.microsoft.com/power-automate/) | Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more. | Website landing page                  |                    |
 | [Power Automate Frequently Asked Questions](https://docs.microsoft.com/power-automate/frequently-asked-questions)           | Power Automate Frequently Asked Questions   | 5 minutes to read  |
 ## Exam<a name="exam"></a>
 | Content   | Description  | Format  | Length    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
-| [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/learn/certifications/exams/pl-900)	|This exam measures your ability to understand the business value of Power Platform; understand the core components of Power Platform; demonstrate the business value of Power BI; and demonstrate the business value of Power Automate. 	|Exam | cost varies by region |
+| [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/learn/certifications/exams/pl-900)	|This exam measures your ability to understand the business value of Microsoft Power Platform; understand the core components of Microsoft Power Platform; demonstrate the business value of Power BI; and demonstrate the business value of Power Automate. 	|Exam | cost varies by region |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

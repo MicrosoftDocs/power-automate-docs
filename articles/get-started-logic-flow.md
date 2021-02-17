@@ -1,6 +1,6 @@
 ---
-title: Automate tasks by creating a flow | Microsoft Docs
-description: Create a flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
+title: Automate tasks by creating a cloud flow | Microsoft Docs
+description: Create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,12 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow in Power Automate
+# Create a cloud flow in Power Automate
 
-
-> [!VIDEO https://www.youtube.com/embed/Gt3CMhLAQqE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
-
-Create a flow that performs one or more tasks automatically after it's triggered by an event. For example, create a flow that notifies you by email when someone sends a tweet that contains a keyword you specify. In this example, sending a tweet is the event, and sending mail is the action.
+Create a cloud flow that performs one or more tasks automatically after it's triggered by an event. For example, create a cloud flow that notifies you by email when someone sends a tweet that contains a keyword you specify. In this example, sending a tweet is the event, and sending mail is the action.
 
 ## Prerequisites
 
@@ -110,28 +107,28 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 ![Rich edit email](media/get-started-logic-flow/email-rich-text.png)
 
-## Manage a flow
+## Manage a cloud flow
 
 1. In [Power Automate](https://flow.microsoft.com), select **My flows** in the navigation bar on the left side.
 1. In the list of flows, do any of the following:
 
-   * To pause a flow, set its toggle to **Off**.
+   * To pause a cloud flow, set its toggle to **Off**.
 
        ![Pause flow](./media/get-started-logic-flow/pause-flow.png)
-   * To resume a flow, set its toggle to **On**.
+   * To resume a cloud flow, set its toggle to **On**.
 
        ![Resume flow](./media/get-started-logic-flow/resume-flow.png)
-   * To edit a flow, select the pencil icon that corresponds to the flow you want to edit.
+   * To edit a cloud flow, select the pencil icon that corresponds to the flow you want to edit.
 
        ![Select flow](./media/get-started-logic-flow/select-flow.png)
-   * To delete a flow, select the **...** icon, select **Delete**, and then select **Delete** on the message box that appears.
+   * To delete a cloud flow, select the **...** icon, select **Delete**, and then select **Delete** on the message box that appears.
 
        ![Delete icon](./media/get-started-logic-flow/delete-icon.png)
-   * To view the run history of a flow, select the flow from the **My flows** page, and then view the history under the **28 day run history** section of the page that opens.
+   * To view the run history of a cloud flow, select the flow from the **My flows** page, and then view the history under the **28 day run history** section of the page that opens.
 
        ![run history](./media/get-started-logic-flow/run-history.png)
 
-     Select a flow run from the list of runs to see the inputs and outputs of each step.
+     Select a cloud flow run from the list of runs to see the inputs and outputs of each step.
 
 > [!NOTE]
 > You can have up to 600 flows in your account. If you already have 600 flows, delete one before you create another flow.
@@ -142,5 +139,8 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 * [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 * [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.
-* [Add a flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
+* [Add a cloud flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
 * [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

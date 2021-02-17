@@ -24,11 +24,11 @@ ms.author: deonhe
 # Use adaptive cards in Microsoft Teams
 
 
-You can create a flow that posts [adaptive cards](https://adaptivecards.io) to a Microsoft Teams channel. With adaptive cards, you can use rich formatting to make your posts clearer, interactive, and engaging. Adaptive cards can contain components like images, graphs, richly formatted text, and more.
+You can create a cloud flow that posts [adaptive cards](https://adaptivecards.io) to a Microsoft Teams channel. With adaptive cards, you can use rich formatting to make your posts clearer, interactive, and engaging. Adaptive cards can contain components like images, graphs, richly formatted text, and more.
 
-## Create a flow that posts adaptive cards to a team
+## Create a cloud flow that posts adaptive cards to a team
 
-Follow these steps to create a flow that posts an adaptive card to the general channel in the Strategy and Planning team. The flow we create uses the **Post your own adaptive card as the Flow bot to a channel (preview)** action to post the adaptive card's content to the team's channel weekly.
+Follow these steps to create a cloud flow that posts an adaptive card to the general channel in the Strategy and Planning team. The flow we create uses the **Post your own adaptive card as the Flow bot to a channel (preview)** action to post the adaptive card's content to the team's channel weekly.
 
 1. Sign in to Microsoft Teams.
 1. Select the **Teams** icon in the navigation bar on the left, and then select the **Strategy and Planning** team.
@@ -142,3 +142,6 @@ Notice, after the recurrence time elapses, the flow posts the adaptive card's co
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Submit a flow template | Microsoft Docs
+title: Submit a cloud flow template | Microsoft Docs
 description: Submit your flow as a template so that other organizations can find it in the template gallery and use the flow that you created.
 services: ''
 suite: flow
@@ -24,9 +24,9 @@ search.audienceType:
 # Submit a template to the Power Automate gallery
 
 
-Submit a flow template to the gallery of templates for Power Automate. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a flow.
+Submit a cloud flow template to the gallery of templates for Power Automate. Templates help people not only to create flows more easily but also to imagine additional scenarios that would benefit from a cloud flow.
 
-1. On the **My Flows** page, select the ellipsis (...) for a flow.
+1. On the **My Flows** page, select the ellipsis (...) for a cloud flow.
 
     ![Ellipsis button](./media/publish-a-template/ellipsis-button.png)
 1. Select **Details** in the menu that appears.
@@ -43,3 +43,6 @@ Submit a flow template to the gallery of templates for Power Automate. Templates
 1. Select **Submit**.
 
      The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

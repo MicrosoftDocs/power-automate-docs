@@ -52,3 +52,6 @@ Expand each section to learn more about how to fix the errors or warnings.
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

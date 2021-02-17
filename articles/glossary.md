@@ -33,13 +33,13 @@ The following terms are commonly used in Power Automate.
 
 **Action items**: The **Action items** screen shows the status of approvals and business process flows. Action items is located on the left navigation pane in Power Automate.
 
-**Approvals (approval requests):** Approvals refer to the actions in approving a flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
+**Approvals (approval requests):** Approvals refer to the actions in approving a cloud flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
  [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
 **Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
 
- [Create a flow in Power Automate](get-started-logic-flow.md)
+ [Create a cloud flow in Power Automate](get-started-logic-flow.md)
 
 ## B
 
@@ -57,7 +57,7 @@ The following terms are commonly used in Power Automate.
 
 **Conditions:** Conditions tell flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that you'll get an email when a tweet that contains a keyword is retweeted at least 10 times.
 
- [Add a condition to a flow](add-condition.md)
+ [Add a condition to a cloud flow](add-condition.md)
 
 **Connectors:** Connectors allow users to connect popular services (such as Twitter, Outlook, Gmail, and more) to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They contain a set of pre-built triggers ("when a new email arrives"…) and actions ("upload email attachment to SharePoint and My App") to be used in apps and workflows.
 
@@ -75,7 +75,7 @@ The following terms are commonly used in Power Automate.
 
 ## F
 
-**Flow checker:** Flow checker is a diagnostic tool that points to specific occurrences within the flow where improvements may be required to run a flow. For each identified issue, the flow checker appears in the designer's command bar. It will show a red dot when one or more errors are identified in your flow.
+**Flow checker:** Flow checker is a diagnostic tool that points to specific occurrences within the flow where improvements may be required to run a cloud flow. For each identified issue, the flow checker appears in the designer's command bar. It will show a red dot when one or more errors are identified in your flow.
 
  [Find and fix errors with Flow Checker](error-checker.md)
 
@@ -99,7 +99,7 @@ The following terms are commonly used in Power Automate.
 
 **Robotic Process Automation (RPA):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
- [Use Softomotive's WinAutomation with UI flows](ui-flows/create-processes.md)
+ [Use Softomotive's WinAutomation with UI flows](desktop-flows/create-processes.md)
 
 ## S
 
@@ -115,7 +115,7 @@ The following terms are commonly used in Power Automate.
 
  [Power Automate Templates](https://flow.microsoft.com/templates/)
 
-**Trigger:** A trigger is an event that starts a flow.  For example, if you create a flow: “when an email with an attachment arrives, automatically upload the file to OneDrive” - the arrival of the email with an attachment is the trigger of such flow.
+**Trigger:** A trigger is an event that starts a cloud flow.  For example, if you create a cloud flow: “when an email with an attachment arrives, automatically upload the file to OneDrive” - the arrival of the email with an attachment is the trigger of such flow.
 
 Flows can have one or more triggers.
 
@@ -128,9 +128,12 @@ Flows can have one or more triggers.
 **UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
 Windows and web applications. UI flows record and playback user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
 
-[Introduction to UI flows](ui-flows/overview.md)
+[Introduction to UI flows](desktop-flows/overview.md)
 
 ## Learn more
 
 * Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Power Automate
 * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

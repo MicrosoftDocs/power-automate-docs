@@ -34,3 +34,6 @@ Here’s a summary of the Power Automate resources that contain personal data fo
 |Flows|The workflow logic for a [flow](https://docs.microsoft.com/flow/get-started-logic-flow).|
 |Connections|Used by connectors and allow connectivity to APIs, systems, databases, and more. Learn more about [connections](add-manage-connections.md).|
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

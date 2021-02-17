@@ -1,6 +1,6 @@
 ---
-title: Create a flow with Dynamics 365 (online) | Microsoft Docs
-description: The Dynamics 365 connector is deprecated. Use the Common Data Service (Current Environment) connector or the Common Data Service connector instead.
+title: Create a cloud flow with Dynamics 365 (online) | Microsoft Docs
+description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse (Current Environment) connector or the Common Data Service connector instead.
 services: ''
 suite: flow
 documentationcenter: na
@@ -16,16 +16,18 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create a flow by using Dynamics 365 (online)
+# Create a cloud flow by using Dynamics 365 (online)
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
+> Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
 >
 > The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) whenever you can. If the Common Data Service (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
+> Do not use the Dynamics 365 connector for new flows. Use the [Dataverse (current environment) connector](/connectors/commondataserviceforapps/) whenever you can. If the Dataverse (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
 >
-> The [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
+> The [Dataverse (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
 
 
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
@@ -33,17 +35,17 @@ By using a Dynamics 365 connector, you can create flows that initiate when an ev
 In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> To invoke a Power Automate trigger, the Common Data Service entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> To invoke a Power Automate trigger, the Dataverse entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
-## Create a flow from a template
+## Create a cloud flow from a template
 
-You can create a flow using one of the many templates available, such as these examples:
+You can create a cloud flow using one of the many templates available, such as these examples:
 
 * When an object is created in Dynamics 365, create a list item in SharePoint.
 * Create Dynamics 365 lead records from an Excel table.
 * Copy Dynamics 365 accounts to customers in Dynamics 365 for Operations.
 
-To create a flow from a template, follow these steps.
+To create a cloud flow from a template, follow these steps.
 
 1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **Services**, and then click or tap **Dynamics 365**.
@@ -51,7 +53,7 @@ To create a flow from a template, follow these steps.
 
 ## Create a task from a lead
 
-If a template isn’t available for what you need, create a flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
+If a template isn’t available for what you need, create a cloud flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
 
 1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **My flows**, and then click or tap **Create from blank**.
@@ -94,7 +96,7 @@ When the trigger occurs, the flow receives a notification, but the flow runs on 
 
 ## Specify advanced options
 
-When you add a step to a flow, you can click or tap **Show advanced options** to add a filter or order by query that controls how the data is filtered in the flow.
+When you add a step to a cloud flow, you can click or tap **Show advanced options** to add a filter or order by query that controls how the data is filtered in the flow.
 
 For example, you can use a filter query to retrieve only active contacts, and you can order them by last name. To do this, enter the OData filter query **statuscode eq 1** and select **Last Name** from the dynamic content pane. For more information about filter and order by queries, see [Query data > Filter results](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) and [Query data > Order results](/powerapps/developer/common-data-service/webapi/query-data-web-api#order-results).
 
@@ -151,13 +153,16 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
    
     In the address bar of the web browser, the URL contains the record ID between the %7b and %7d encoding characters.
    
-   ![RecordId](./media/connection-dynamics365/recordid.png)
+   ![A screenshot that displays the recordId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
 
-[Troubleshooting a flow](fix-flow-failures.md)
+[Troubleshooting a cloud flow](fix-flow-failures.md)
 
 [Flow in your organization Q&A](organization-q-and-a.md)
 
 [Frequently asked questions](frequently-asked-questions.md)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

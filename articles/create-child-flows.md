@@ -14,7 +14,7 @@ dynamics365pdf: True
 
 Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a _single_ flow, it can be difficult to navigate and maintain that flow. 
 
-You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a flow, or even across multiple flows.
+You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
 
 Let's look at an example where you have a child flow that you want to create or update a contact in Common Data Service based on that contact's name.
 
@@ -90,3 +90,12 @@ You will need a solution with two flows:
    >[!TIP]
    >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs. 
    
+## Known issues
+
+We are working to address the following known issues and limitations.
+
+1. If you block the HTTP Request connector via data loss prevention (DLP), child flows are also blocked because child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so that they are treated like other cloud flows.
+
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,10 +1,11 @@
 ---
 title: Partner Sales and Marketing learning catalog
 description: Find all the training options for Power Automate
-author: loreleishannonmsft
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # Partner Sales and Marketing Learning Catalog
@@ -18,3 +19,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------|
 | [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/learn/certifications/courses/pl-900t00) | Learn about the components of Power Platform, ways to connect data, and how organizations can leverage this technology | Instructor-led in person or online training, cost varies by region and partner | 2 days |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

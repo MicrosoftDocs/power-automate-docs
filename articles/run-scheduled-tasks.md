@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Run flows on a schedule
 
-Create a flow that performs one or more tasks (such as sending a report in email):
+Create a cloud flow that performs one or more tasks (such as sending a report in email):
 
 * Once a day, an hour, or a minute
 * On a date that you specify
@@ -33,7 +33,7 @@ Create a flow that performs one or more tasks (such as sending a report in email
 
 1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** on the left navigation pane.
 1. Select **New** and then **Scheduled-from blank**.
-    ![Create a flow from blank](./media/run-scheduled-tasks/create-flow.png)
+    ![Create a cloud flow from blank](./media/run-scheduled-tasks/create-flow.png)
 1. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes then select **Create**.
     ![Set recurrence](./media/run-scheduled-tasks/select-recurrence.png)
 
@@ -51,11 +51,14 @@ Create a flow that performs one or more tasks (such as sending a report in email
 1. If you specified **Day** under **Frequency**, specify the time of day when the flow should run.
 1. If you specified **Week** under **Frequency**, specify the day or days of the week on which the flow should run and the time or times of day when the flow should run.
 
-    For example, configure the options as shown to start a flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
+    For example, configure the options as shown to start a cloud flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
 
     ![Specify advanced options](./media/run-scheduled-tasks/advanced-options.png)
-1. Add the action or actions that you want the flow to take, as [Create a flow from scratch](get-started-logic-flow.md) describes.
+1. Add the action or actions that you want the flow to take, as [Create a cloud flow from scratch](get-started-logic-flow.md) describes.
 
 ## Learn more
 
 Learn more about the [advanced options](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) and how to configure them.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -87,3 +87,6 @@ For more information, see [Understand gateways](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

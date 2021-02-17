@@ -23,9 +23,9 @@ search.audienceType:
 ---
 # Use the apply to each action in Power Automate to process a list of items periodically
 
-Many triggers can immediately start a flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
+Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
-In this walk-through, we'll create a flow that runs every 15 minutes and does the following:
+In this walk-through, we'll create a cloud flow that runs every 15 minutes and does the following:
 
 1. Gets the last 10 unread messages in your Office 365 Outlook Inbox.
 2. Checks each of the 10 messages to confirm if any has **meet now** in the subject.
@@ -46,7 +46,7 @@ Here are the requirements for successfully performing the steps in this walk-thr
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
-## Create a flow
+## Create a cloud flow
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **New** > **Scheduled-from blank**
 1. Provide a name for your flow in **Flow name** on the **Build a scheduled flow** screen. 
@@ -83,7 +83,6 @@ Here are the requirements for successfully performing the steps in this walk-thr
    * Select **is equal to** in the list of operators.
    * Enter **high** into the field on the right side.
      
-     ![add condition](./media/apply-to-each/foreach-importance-condition.png)
 1. Select **Add an action** under the **If yes** section.     
    This opens the **Choose an action** card, where you'll define what happens if the search condition (the **meet now** email was sent with high importance) is true.
 1. Search for **notification**, and then select the **Send me a mobile notification** action:
@@ -147,3 +146,6 @@ Now that you've run the flow successfully, you should receive the push notificat
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
  
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

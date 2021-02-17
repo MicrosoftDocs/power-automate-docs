@@ -1,5 +1,5 @@
 ---
-title: Learn how to share a flow with other users | Microsoft Docs
+title: Learn how to share a cloud flow with other users | Microsoft Docs
 description: Power Automate makes it easy automate repetitive tasks. You can add users or groups as owners, and collaborate with them to design and manage flows.
 services: ''
 suite: flow
@@ -21,35 +21,35 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share a flow
+# Share a cloud flow
 
-Share a flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a flow in Power Automate:
+Share a cloud flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a cloud flow in Power Automate:
 
-- Add an owner to a flow.
-- Share a flow with run-only privileges.
-- Share a copy of a flow.
+- Add an owner to a cloud flow.
+- Share a cloud flow with run-only privileges.
+- Share a copy of a cloud flow.
 
 ## Prerequisites
 
-- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a flow.
-- You must be the creator or owner to add or remove owners from a flow.
+- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a cloud flow.
+- You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
 
-Connections used in a flow fall into two categories:
+Connections used in a cloud flow fall into two categories:
 
 - **Embedded**: These connections are used in the flow.
-- **Other**: These connections have been defined for a flow, but aren't used in it.
+- **Other**: These connections have been defined for a cloud flow, but aren't used in it.
 
-If you stop using a connection in a flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
+If you stop using a connection in a cloud flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
 
-The list of connections appears under the list of owners in a flow's properties, as shown in the following image.
+The list of connections appears under the list of owners in a cloud flow's properties, as shown in the following image.
 
 ![Embedded connections](./media/create-team-flows/embeddedconnections.png "Embedded connections")
 
-## Add an owner to a flow
+## Add an owner to a cloud flow
 
-Adding an owner to a flow is the most common way to share a flow. Any owner of a flow can perform these actions:
+Adding an owner to a cloud flow is the most common way to share a cloud flow. Any owner of a cloud flow can perform these actions:
 
 - View the run history.
 - Manage the properties of the flow (for example, start or stop the flow, add owners, or update credentials for a connection).
@@ -57,17 +57,17 @@ Adding an owner to a flow is the most common way to share a flow. Any owner of a
 - Add or remove other owners (but not the flow's creator).
 - Delete the flow.
 
-If you're the creator or an owner of a flow, you'll find it listed on the **Team flows** tab in Power Automate.
+If you're the creator or an owner of a cloud flow, you'll find it listed on the **Team flows** tab in Power Automate.
 
 ![Team flows tab](./media/create-team-flows/addowner5.png "Team flows tab")
 
 >[!NOTE]
 >Shared connections can be used *only* in the flow in which they were created.
 
-Owners can use services in a flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a flow and owning a connection within a flow - will this be obvious to the reader? -->
+Owners can use services in a cloud flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a cloud flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a cloud flow and owning a connection within a cloud flow - will this be obvious to the reader? -->
 
 <!--markdownlint-disable MD036-->
-**To add more owners to a flow**
+**To add more owners to a cloud flow**
 
 1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows**.
 1. Select the flow that you want to share, select **More commands** ![More commands](./media/create-team-flows/more-commands.png), and then select **Share**.
@@ -86,7 +86,7 @@ Congratulations&mdash;you've created your team flow!
 
 ## Add a list as a co-owner
 
-You can add SharePoint lists as co-owners of a flow so that everyone who has edit access to the list automatically gets edit access to the flow. After the flow is shared, you can simply distribute a link to it. More information: [Training: Create and set up a SharePoint list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
+You can add SharePoint lists as co-owners of a cloud flow so that everyone who has edit access to the list automatically gets edit access to the flow. After the flow is shared, you can simply distribute a link to it. More information: [Training: Create and set up a SharePoint list](https://support.microsoft.com/office/training-create-and-set-up-a-list-1ddc1f5a-a908-478b-bb6d-608f34b71f94)
 
 > [!TIP]
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
@@ -113,13 +113,13 @@ Congratulations&mdash;the user or group that you removed is no longer listed as 
 
 ## Modify a connection
 
-You might need to change the owner of a connection in a flow if you remove the existing owner or if you just want to use a different account to sign in to an action or trigger.
+You might need to change the owner of a connection in a cloud flow if you remove the existing owner or if you just want to use a different account to sign in to an action or trigger.
 
 1. Go to the flow that you want to modify.
 
 1. Select **Edit**.
 
-   ![Edit a flow](./media/create-team-flows/Edit-flow-details.png "Edit a flow")
+   ![Edit a cloud flow](./media/create-team-flows/Edit-flow-details.png "Edit a cloud flow")
 
 1. Select **More commands** (...) in the step where you want to edit the connection.
 
@@ -127,7 +127,7 @@ You might need to change the owner of a connection in a flow if you remove the e
 
    ![Add a new connection](./media/create-team-flows/edit-connection.png "Add a new connection")
 
-## Share a flow with run-only permissions
+## Share a cloud flow with run-only permissions
 
 Instant flows (that is, flows that use a manual trigger such as a button or an item being selected) can be shared by using run-only permissions. Any user who's added as a run-only user won't have access to edit or modify the flow in any way; they'll only have permissions to trigger the flow.
 
@@ -156,14 +156,14 @@ Congratulations&mdash;the user or group now has access to run the flow.
 
 Congratulations&mdash;the user or group no longer has access to run this flow.
 
-## Share a copy of a flow
+## Share a copy of a cloud flow
 
-You can share a copy of a flow with another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
+You can share a copy of a cloud flow with another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a cloud flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
 
 > [!NOTE]
 > Sharing a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
 
-**To send a copy of a flow**
+**To send a copy of a cloud flow**
 
 1. On the flow details page command bar, select **Send a copy**.
 
@@ -173,7 +173,7 @@ You can share a copy of a flow with another user, who can then use the definitio
 
    ![Send a copy details](./media/create-team-flows/send-a-copy3.png "Send a copy details")
 
-1. The recipient will receive an email stating that you have shared a flow template with them, and they can then create their own instance of that flow.
+1. The recipient will receive an email stating that you have shared a cloud flow template with them, and they can then create their own instance of that flow.
 
    ![Receive a copy](./media/create-team-flows/send-a-copy5.png "Receive a copy")
 
@@ -191,3 +191,6 @@ If the shared flow still has an active owner, the flow will continue to run.
 >[!NOTE]
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

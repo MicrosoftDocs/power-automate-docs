@@ -1,10 +1,11 @@
 ---
 title: Developer learning catalog
-description: Find all the training options for Power Automate
-author: loreleishannonmsft
+description: Find all the training options for Power Automate.
+author: msftman
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: v-lshann
+ms.author: deonhe
+ms.service: flow
 ---
 
 # Developer Learning Catalog
@@ -16,5 +17,8 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Extend<a name="extend"></a>
 | Content   | Description  | Format | Length    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|
-| [Extending the Power Platform Common Data Service](https://docs.microsoft.com/learn/paths/extend-power-platform-model-driven-app/)                     | Create client scripting, perform common actions with client script, and automate business process flow with client script is covered in this learning path. Learn about what client script can do, rules, and maintaining scripts. Discover when to use client script as well as when not to use client script.                                                                                           | Free, self-paced online learning path | 4 hours           |
-| [Extending the Power Platform user experience in Model Driven apps](https://docs.microsoft.com/learn/paths/extend-power-platform-common-data-service/) | Getting started with extending the Power Platform Common Data Service can be overwhelming. This learning path looks at the tools and resources needed for extending the Power Platform. We'll start with looking at the SDKs, the extensibility model, and event framework. This learning path also covers when to use plug-ins. Configuration of plug-ins as well as registering and deploying plug-ins. | Free, self-paced online learning path | 2 hours 3 minutes |
+| [Extending the Microsoft Power Platform Common Data Service](https://docs.microsoft.com/learn/paths/extend-power-platform-model-driven-app/)                     | Create client scripting, perform common actions with client script, and automate business process flow with client script is covered in this learning path. Learn about what client script can do, rules, and maintaining scripts. Discover when to use client script as well as when not to use client script.                                                                                           | Free, self-paced online learning path | 4 hours           |
+| [Extending the Microsoft Power Platform user experience in Model Driven apps](https://docs.microsoft.com/learn/paths/extend-power-platform-common-data-service/) | Getting started with extending the Microsoft Power Platform Common Data Service can be overwhelming. This learning path looks at the tools and resources needed for extending the Microsoft Power Platform. We'll start with looking at the SDKs, the extensibility model, and event framework. This learning path also covers when to use plug-ins. Configuration of plug-ins as well as registering and deploying plug-ins. | Free, self-paced online learning path | 2 hours 3 minutes |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

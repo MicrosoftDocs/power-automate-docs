@@ -38,7 +38,7 @@ Follow these steps to edit a solution-aware flow.
 1. Select **...** (More Commands) for your flow, and then select **Turn off**.
 1. Select **...** (More Commands) for your flow, and then select **Edit**.
 
-   ![Displays editing a flow](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a flow")
+   ![Displays editing a cloud flow](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a cloud flow")
    
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.
@@ -46,7 +46,10 @@ Follow these steps to edit a solution-aware flow.
 ## Learn more
 
 * [Create a solution](./overview-solution-flows.md)
-* [Create a flow in a solution](./create-flow-solution.md)
+* [Create a cloud flow in a solution](./create-flow-solution.md)
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)
 * [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

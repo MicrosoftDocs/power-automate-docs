@@ -60,7 +60,7 @@ Use workflows to automate business processes behind the scenes. Workflows are ty
 ## When to use Power Automate
 
 
-Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Microsoft 365, or SharePoint. You can trigger a flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
+Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Microsoft 365, or SharePoint. You can trigger a cloud flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
   
 <a name="BKMK_Where"></a>   
 ## Where do I go to create processes?  
@@ -122,3 +122,6 @@ Processes can check conditions, apply branching logic, and perform actions. They
 
   
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

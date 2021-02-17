@@ -57,7 +57,10 @@ After you've exported your solution, you can import it into any environment that
 ## Learn more
 
 - [Create a solution](./overview-solution-flows.md)
-- [Create a flow in a solution](./create-flow-solution.md)
+- [Create a cloud flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

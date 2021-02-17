@@ -138,19 +138,19 @@ Power Automate US Government provides the ability to integrate third-party appli
 
 [Power Apps and Power Automate Governance Considerations](https://docs.microsoft.com/power-platform/admin/governance-considerations) can help your organization bring awareness about the capabilities available across several related themes, such as architecture, security, alert and action, and monitoring.
 
-## Configure mobile client
+## Configure mobile clients
 
-Here are the steps that you must take to sign in with the Power Automate mobile application (iOS devices only):
+Here are the steps that you must take to sign in with the Power Apps mobile client.
 
 1. On the sign-in page, select the gear icon in the lower-right corner.
-1. Select **GCC**.
-1. Select OK.
-1. On the sign-in page, select **Get Started**.
+1. Select **Region settings**.
+1. Select one of the following:
+   - GCC: US Government GCC
+   - GCC High: US Government GCC High.
+1. Seelct OK.
+1. On the sign-in page, select **Sign in**.
 
-The mobile app will now use the US Government Cloud (GCC).
-
->[!NOTE]
->The Power Automate mobile app is not available for US Government GCC High customers.  
+The mobile application will now use the US Government Cloud.
 
 ## Power Automate US Government and Azure Services
 
@@ -252,8 +252,11 @@ Some of the features available in the commercial version of Flow are not availab
 
 ### See also
 
-- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
+- [UI flows](https://docs.microsoft.com/power-automate/desktop-flows/overview).
 
 - [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
 
 - [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

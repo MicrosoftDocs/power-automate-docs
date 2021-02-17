@@ -30,18 +30,18 @@ Approval flows can help you automate sign-off requests and combine human decisio
 
 Here's what you need to get started with approvals.
 
-- Permissions to create a Common Data Service database.
+- Permissions to create a Microsoft Dataverse database.
 - A license to create flows.
 
 
-## Permissions to create a Common Data Service database
+## Permissions to create a Dataverse database
 
-When you create approval flows, they are saved in Common Data Service. Initially, when you use the approvals connector in a flow that’s located in a non-default environment, the system automatically provisions a database. To be successful, the user who runs the first approval flow must have an administrator role in the environment.
+When you create approval flows, they are saved in Dataverse. Initially, when you use the approvals connector in a cloud flow that’s located in a non-default environment, the system automatically provisions a database. To be successful, the user who runs the first approval flow must have an administrator role in the environment.
 
 It can take a few minutes for the database provisioning to complete, and you’ll notice this delay the first time that you run the flow. Other users who create approval flows do not need any elevated permissions in the environment.
 
 >[!NOTE]
->If you're using the default environment, you don't need to provision the Common Data Service database. 
+>If you're using the default environment, you don't need to provision the Dataverse database. 
 
 ## License to create flows
 
@@ -52,14 +52,14 @@ This could be a Power Automate, an Office 365, or a Dynamics 365 license with bu
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users in your current Common Data Service environment or your Azure Active Directory (Azure AD) tenant, including guest users. 
+You can assign approvals to users in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant, including guest users. 
 
 When you assign an approval to users who are not in your environment, they are automatically added so that we can process their responses and persist them for approvals history. 
 
 The following tenant configurations do not allow this:
 
 - When the AllowAdHocSubscriptions setting in Azure Active Directory (Azure AD) is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
-- If a security group has been used to control which users have access to the Common Data Service environment.
+- If a security group has been used to control which users have access to the Dataverse environment.
 - Power Automate [US Government plans](https://docs.microsoft.com/power-automate/us-govt).
 
 
@@ -75,3 +75,6 @@ Once you assign an approval request to a user, they can respond directly from an
 
 
  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

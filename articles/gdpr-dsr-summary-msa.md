@@ -60,3 +60,6 @@ Here’s an overview of the processes outlined in this guide:
 1. **Delete**: Permanently remove personal data that resides in Microsoft's cloud. Learn more about [deleting personal data for Microsoft Accounts](gdpr-dsr-delete-msa.md). Learn more about [closing a Microsoft Account](gdpr-dsr-accountclose-msa.md).
 
 1. **Export**: Provide an electronic copy (in a machine-readable format) of personal data. [Learn more about exporting personal data for Microsoft Accounts](gdpr-dsr-export-msa.md).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

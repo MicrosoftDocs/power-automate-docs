@@ -23,7 +23,7 @@ search.audienceType:
 
 In this walkthrough, you'll learn to use expressions and **Conditions** to compare multiple values in **Advanced mode**.
 
-When you create a flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
+When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you may want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical expressions in your conditions.
 
@@ -173,7 +173,7 @@ After your flow runs, the spreadsheet resembles this image:
 Notice extra lines are removed from the table.
 
 ## Use the greater expression
-Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a flow that sends a daily email to each person who hasn't paid the full amount.
+Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who hasn't paid the full amount.
 
 Use the **greater** expression to identify the employees who haven't paid the full amount. You can then automatically send a friendly reminder email to those who haven't paid in full.
 
@@ -186,7 +186,7 @@ Here's the implementation of the **greater** expression that identifies all pers
 ````@greater(item()?['Due'], item()?['Paid'])````
 
 ## Use the less expression
-Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
+Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
 
 Use the **and** expression along with the **less** expression since there are two conditions being validated:
 
@@ -209,4 +209,7 @@ Here's the implementation of the **and** expression that identifies all persons 
 
 ## Use functions in expressions
 
-Some expressions get their values from runtime actions that might not yet exist when a flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

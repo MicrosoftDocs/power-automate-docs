@@ -1,6 +1,6 @@
 ---
 title: Create custom connectors and embed flows| Microsoft Docs
-description: Create a custom connector, share it, embed a flow, and do much more.
+description: Create a custom connector, share it, embed a cloud flow, and do much more.
 services: ''
 suite: flow
 documentationcenter: na
@@ -64,3 +64,6 @@ You can [embed](developer/embed-flow-dev.md) Power Automate into your app to ena
 ## Next steps
 
 Learn how to [embed](developer/embed-flow-dev.md) Power Automate into your app.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

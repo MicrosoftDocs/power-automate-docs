@@ -30,13 +30,13 @@ View a summary of how many times each flow succeeded or failed today, yesterday,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZuYZ64K3tI?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
-* If you don't already have a flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+* If you don't already have a cloud flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
 ![Trigger flow on receipt of mail from specific address](./media/mobile-monitor-activity/create-trigger.png)
 
-You could configure such a flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
+You could configure such a cloud flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
 When the flow runs, it sends a custom push notification, with this syntax, to your phone:
 
@@ -56,15 +56,15 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
    
     ![Activity organized by day](./media/mobile-monitor-activity/activity-day2.png)
    
-    Each entry shows the name of a flow with icons that correspond to its trigger events and actions.
+    Each entry shows the name of a cloud flow with icons that correspond to its trigger events and actions.
    
     ![Name and icons for each flow](./media/mobile-monitor-activity/activity-flow-name.png)
    
-    If at least one run of a flow has succeeded in a day, an entry shows the number of successes and the time when it succeeded most recently. A different entry shows similar information if a flow has failed.
+    If at least one run of a cloud flow has succeeded in a day, an entry shows the number of successes and the time when it succeeded most recently. A different entry shows similar information if a cloud flow has failed.
    
     ![Summary of successes or failures](./media/mobile-monitor-activity/activity-summary.png)
    
-    If a flow sends a push notification, the text of the most recent notification appears at the bottom of the entry for successful runs.
+    If a cloud flow sends a push notification, the text of the most recent notification appears at the bottom of the entry for successful runs.
    
     ![Example of push notification](./media/mobile-monitor-activity/activity-notification.png)
 3. If multiple push notifications were sent in a day, swipe left on the notification to view notifications from up to three previous runs. If more than four notifications were sent in a day, swipe left until **See more** appears, and then tap it to view a list of all notifications.
@@ -87,3 +87,6 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
    
     ![Success/failure history](./media/mobile-monitor-activity/history-mixed.png)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -99,7 +99,7 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
 
     ![Start and wait for an approval](media/all-assigned-must-approve/start-an-approval-card.png)
 
-    When a flow with the **Start and wait for an approval** action is configured with **Approve/Reject - Everyone must approve**, it waits until all **Assigned to** approve or at least one **Assigned to** rejects the approval request.
+    When a cloud flow with the **Start and wait for an approval** action is configured with **Approve/Reject - Everyone must approve**, it waits until all **Assigned to** approve or at least one **Assigned to** rejects the approval request.
 
     >[!TIP]
     >Add a **Condition** step if you want your flow to check the response of the approval request and perform different actions based on the **Outcome**. The **Outcome** can be **Approve** or **Reject**. 
@@ -149,3 +149,6 @@ Here's an example of what a response and a response summary may look like after 
 * [Parallel modern approvals](parallel-modern-approvals.md)
 * [Approvals and Common Data Service](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Wait for approval in a flow | Microsoft Docs
+title: Wait for approval in a cloud flow | Microsoft Docs
 description: Flows can wait for an external event to occur, such as a user approving or rejecting a change, before performing an action, such as sending notification of the decision.
 services: ''
 suite: flow
@@ -27,7 +27,7 @@ search.audienceType:
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
-Create a flow that, if you create an item in SharePoint, sends approval email and then notifies you whether the item was approved or rejected. To follow this tutorial exactly, create a simple SharePoint list as a trigger action, but you can use another data source such as Dropbox or OneDrive.
+Create a cloud flow that, if you create an item in SharePoint, sends approval email and then notifies you whether the item was approved or rejected. To follow this tutorial exactly, create a simple SharePoint list as a trigger action, but you can use another data source such as Dropbox or OneDrive.
 
 ## Prerequisites
 
@@ -113,3 +113,6 @@ Create a flow that, if you create an item in SharePoint, sends approval email an
 * Create [sequential approvals](sequential-modern-approvals.md)
 * Create [parallel approvals](parallel-modern-approvals.md)
 * Approve [requests on the go](mobile-approvals.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

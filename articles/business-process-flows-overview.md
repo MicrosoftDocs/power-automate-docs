@@ -42,7 +42,7 @@ Business process flows provide a guide for people to get work done. They provide
   
  ![Business process with stages](media/business-process-stages.png "Business process with stages")  
   
- Each stage contains a group of steps. Each step represents a field where data can be entered. People advance to the next stage by using the **Next Stage** button. You can make a step required so that people must enter data for the corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”.  
+ Each stage contains a group of steps. Each step represents a field where data can be entered. People advance to the next stage by using the **Next Stage** button. You can make a step *required* so that people must enter data for a corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
   
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
@@ -93,8 +93,6 @@ Business process flows provide a guide for people to get work done. They provide
   
 ### Business process flows that call a workflow  
  You can call on-demand workflows from inside a business process flow. You can configure this from the new business process flow designer by dragging a workflow component to a process stage or to the Global Workflows section. For more information about using workflows in business process flows, see [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
- 
- If you set a workflow to trigger on **Stage Exit** of a stage in your business process flow, the workflow is triggered whenever you leave that stage. This happens when you move to the *next* stage or to the *previous* stage. 
   
  When you include a workflow that you want to trigger on Stage Exit of a stage in your business process flow, and that stage is  the last stage in the flow, the designer gives the impression that the workflow will be triggered when that stage is completed. However, the workflow will not be triggered because a stage transition does not take place. You will not receive a warning or error preventing you from including the workflow on the stage. When a user interacts with the business process flow, finishing or abandoning the process does not result in a stage transition, and therefore the workflow is not triggered. Consider the following examples:  
   
@@ -186,6 +184,21 @@ Specifically, the three commands that are available for a business process flow 
 - Previous stage
 - Set Active stage
 
+### Lookup field in a business process flow stage
+
+Recent records are visible in a lookup field in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
+1. Go to **Tables** under **Data**. Search for your business process flow entity.
+
+   ![A screenshot of a business process flow entity table](./media/bpf-entity-table.png)
+
+1. Select **Forms**, and select the **Information** editor.
+1. Select your lookup data step from the **Tree view**, and then check **Disable most recently used items**.
+
+   ![A screenshot how to disable the most recently used items](./media/bpf-disable-mru.png)
+
+1. Save, and then publish. 
+
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
@@ -197,3 +210,6 @@ Specifically, the three commands that are available for a business process flow 
  [Create a business process flow](create-business-process-flow.md)   
  [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

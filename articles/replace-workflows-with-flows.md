@@ -450,24 +450,24 @@ This table summarizes a comparison between Power Automate and classic workflows 
 </tr>
 </table>
 
-## Example scenario: Replace a background workflow with a flow
+## Example scenario: Replace a background workflow with a cloud flow
 
 Imagine a sales scenario where you have put together a quotation for a customer and now you need to request approval from your management team before you send the quotation to the customer. With classic workflows, this isn't easy and most solutions to this require a developer to write custom background workflow activities to retrieve quote line items.
 
 With flows, this scenario is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
 
-- Creating a flow that runs on demand.
-- Getting a list of records that are related to a Common Data Service entity.
+- Creating a cloud flow that runs on demand.
+- Getting a list of records that are related to a Dataverse entity.
 - Looping over a list of records.
 - Sending approval requests.
 
 To allow the sales person to trigger the approval request on demand:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a flow in a solution](create-flow-solution.md). 
+1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a cloud flow in a solution](create-flow-solution.md). 
 
 1. From the list of triggers, select **Common Data Service (Current Environment) – When a record is selected**, and then select **Quotes** as the entity. 
 
-   This trigger allows a flow to run on-demand on a record or set of records.
+   This trigger allows a cloud flow to run on-demand on a record or set of records.
 
 1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Common Data Service (Current Environment) – List records** action. The goal is to get the individual items from a Quote, so set the **Entity name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
 
@@ -543,7 +543,7 @@ When you run this flow against your quote, it summarizes quote line items for th
    Dynamics 365 (or Common Data Service) flows run near real-time after the trigger because they use webhooks (no polling required).
 
   - As with direct API access, there are throttles/limits in the system. More information: [Limits and configuration in Power Automate](limits-and-config.md)
-  - Specifically, there is a limit of 100,000 actions per 5 minutes, per flow. A single loop in a flow cannot process more than 100,000 items at once.
+  - Specifically, there is a limit of 100,000 actions per 5 minutes, per flow. A single loop in a cloud flow cannot process more than 100,000 items at once.
   - Maximum of 6 GB of throughput per 5 minutes.
 
 - **How long can a single flow run?**  
@@ -560,7 +560,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **What about synchronous workflows?**
 
-  We've seen feedback that synchronous workflows are a significant contributor to end-user performance issues. We recommend that you evaluate whether your objective, or parts of the background workflow, can be built using a flow. If you can split actions out as asynchronous, the user can continue their activity while Power Automate completes the action.
+  We've seen feedback that synchronous workflows are a significant contributor to end-user performance issues. We recommend that you evaluate whether your objective, or parts of the background workflow, can be built using a cloud flow. If you can split actions out as asynchronous, the user can continue their activity while Power Automate completes the action.
 
 - **Using Power Automate, will my data stay within region (that is, the same region as my Dynamics 365 or Common Data Service environment)?**  
 
@@ -568,4 +568,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **Do I need to make proxy/firewall changes?**  
 
-  Refer to the [IP address configuration reference](limits-and-config.md#ip-address-configuration) to determine whether you need to make any proxy/firewall changes.
+  Refer to the [IP address configuration reference](limits-and-config.md#ip-addresses) to determine whether you need to make any proxy/firewall changes.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

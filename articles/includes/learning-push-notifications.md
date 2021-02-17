@@ -1,4 +1,4 @@
-For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a flow that will auto-Tweet the content for them. 
+For this flow, you'll build a **SharePoint** list where the Marketing team for **Contoso Flooring** stores their **Twitter posts** and posting dates. From there, you will build a cloud flow that will auto-Tweet the content for them. 
 
 ## Connect Power Automate Services
 In this topic, you'll be using the **SharePoint** and **Twitter** services. If you are using a service that's new to you, then you'll first need to connect to the new service. 

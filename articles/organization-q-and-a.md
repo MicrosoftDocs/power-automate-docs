@@ -110,7 +110,13 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 ### How does an individual find out what plan they are on?
 
-Anyone can see the plan they have by visiting the Power Automate pricing page at [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). The plan or trial they are currently on will be shown there.
+1. Sign into [Power Automate](https://powerautomate.com).
+1. Select your profile picture in the top right corner of the screen.
+1. Select **View account**.
+1. Select the **Subscriptions** tile.
+1. Search for **Power Automate** under the **Licenses** section.
+
+   You will see the license that you have for Power Automate.
 
 ### Will Power Automate sign up impact the identities in my organization?
 
@@ -148,6 +154,7 @@ If you want all users to be in the same tenant regardless of their email address
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
   ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+
   
 
 ## Power Automate RPA license
@@ -163,3 +170,8 @@ There are a few steps to apply unattended RPA licenses:
 > The unattended add-on is environment based. So if you have multiple environments needs to run unattended RPA, you need to assign add-on capacity to each of them. 
 > Also if you need to run multiple unattended desktop flows in parallel at the same time in one environment, you need to assign the right number of unattended add-on to this environment to scale up.
  
+=======
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
+

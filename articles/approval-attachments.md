@@ -36,11 +36,11 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
     ![New instant blank flow](./media/approval-attachments/new-instand-blank.png)
 
-1. Give your flow a name > search for, and then select **Manually trigger a flow**, and then select **Create**.
+1. Give your cloud flow a name > search for, and then select **Manually trigger a cloud flow**, and then select **Create**.
 
     ![Name your flow and select a trigger](./media/approval-attachments/name-flow-trigger.png)
 
-1. Select the **Manually trigger a flow** trigger > **Add an input** > **File**.
+1. Select the **Manually trigger a cloud flow** trigger > **Add an input** > **File**.
 
      The previous steps configure your flow so that when it runs, it requests a file from the user to trigger your flow.
 
@@ -105,3 +105,6 @@ The person to whom you send the approval request receives an email, similar to t
 
 In most approval flows, you'd want to notify the person who requests the approval of the decision. Follow the [modern approvals article](modern-approvals.md#add-an-email-action-for-approvals) to learn how to add a **condition** to an approval flow to take specific actions based on the **outcome** of the request.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

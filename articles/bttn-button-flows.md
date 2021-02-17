@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Run your flows with bttns from The Button Corporation (Preview)
 
-Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a flow to perform these tasks:
+Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a cloud flow to perform these tasks:
 
 * contacts your helpdesk with location information
 * sends an email to your team
@@ -31,21 +31,21 @@ Trigger your flows by pressing a bttn (a physical button made by [The Button Cor
 * reorders supplies
 
 > [!IMPORTANT]
-> You must [register](https://my.bt.tn/) your bttn before you can use it in a flow.
+> You must [register](https://my.bt.tn/) your bttn before you can use it in a cloud flow.
 > 
 > [!TIP]
 > Configure all bttn properties such as name, location, and email address on the [bttn website](https://my.bt.tn/) before you create your flow.
 > 
 > 
 
-You can also trigger a flow by using a [Flic physical button](flic-button-flows.md).
+You can also trigger a cloud flow by using a [Flic physical button](flic-button-flows.md).
 
 ## Prerequisites
 * Access to [Power Automate](https://flow.microsoft.com).
 * At least one [registered bttn](https://my.bt.tn/).
 
-## Create a flow that's triggered from a bttn
-In this walkthrough, we use a helpdesk template to create a flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
+## Create a cloud flow that's triggered from a bttn
+In this walkthrough, we use a helpdesk template to create a cloud flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
 
 You can use any of these templates to quickly create flows for your bttn and connect to Zendesk, Google, and SharePoint, among others:
 
@@ -122,3 +122,6 @@ Now that you've registered and configured your bttn, let's get started creating 
 * [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid).
 * [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

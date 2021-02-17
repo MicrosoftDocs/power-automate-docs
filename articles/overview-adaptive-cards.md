@@ -55,7 +55,7 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 - **Post an adaptive card as the Flow bot to a Teams channel, and wait for a response**  
   This action posts an adaptive card as a Flow bot to a specific Teams channel as in the case above. However, in this case the flow will not continue until someone on the channel has responded to any inputs required within the card. The flow will continue once the anyone in the Teams channel responds but will only return dynamic content for one (1) response per responder and per card.
  
-     ![](media/adaptive-cards/bottom.png)
+     ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response](media/adaptive-cards/bottom.png)
 
      >[!TIP]
      >When you use this card, the flow waits for a response from any Teams member.
@@ -88,3 +88,6 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 - Full documentation for the [Microsoft Teams connector](https://docs.microsoft.com/connectors/teams/)
 - Full documentation on [Adaptive Cards IO](https://docs.microsoft.com/adaptive-cards) 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

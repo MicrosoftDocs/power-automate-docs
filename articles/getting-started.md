@@ -1,6 +1,6 @@
 ---
-title: Get started | Microsoft Docs
-description: Quick ways to start automating your work and life with Power Automate
+title: Get started with Power Automate | Microsoft Docs
+description: Quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -44,7 +44,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
 *What industries can benefit from Power Automate?* 
-Check out how some companies implemented Power Platform solutions using Power Automate in: 
+Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in: 
 
   * [Banking](https://customers.microsoft.com/en-us/story/821782-illimity-bank-banking-power-automate)
   * [Retail](https://customers.microsoft.com/en-us/story/drivetime-retail-consumer-goods-azure)
@@ -57,19 +57,9 @@ Find [examples from your industry](https://customers.microsoft.com/en-us/search?
 
 The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
 
-## Types of flows
+## What are the different types of flows?
 
-See the following table to learn more about the types of flow that you can build to help address your use cases.
-
-| **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
-|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](https://docs.microsoft.com/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
-| [Instant flows](introduction-to-button-flows.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.                                                                                |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
-| [Business process flows](business-process-flows-overview.md) | Ensure that  everyone in your company follows the same process by defining a set of steps for people to follow.                 | Human processes such as customer service requests, approvals, IT development,...                                                                        |
-| [UI flows](ui-flows/overview.md)                                                | Record  clicks and keyboard strokes from your Desktop and Web applications and automate the playback of manual steps on legacy software.                    | Desktop and Web applications that do not have APIs available for automation.    |
-
-
+Visit the [flow types](flow-types.md) article to learn more about the different types of flows that you can create to automate your tasks.
 
 ## Check out the start page 
 
@@ -102,21 +92,21 @@ Each template is designed for a specific purpose. For example, there are templat
 
 Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
-![Building a flow](./media/getting-started/build-a-flow.png)
+![Building a cloud flow](./media/getting-started/build-a-flow.png)
 
-When you create a flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
+When you create a cloud flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
 - [Flows with many steps](multi-step-logic-flow.md).
 - [Run tasks on a schedule](run-scheduled-tasks.md).
 - [Create an approval flow](wait-for-approvals.md).
-- [Watch a flow in action](see-a-flow-run.md).
+- [Watch a cloud flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
 - [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## Peek at the code
 
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer: 
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
 1. Select **Peek code**.
@@ -149,6 +139,13 @@ From the notification center, you can navigate to the **Activity** page of Power
 
 Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
 
+## Get help planning your Power Automate projects
+
+If you're ready to start your Power Automate project, visit the [guidance and planning article](./guidance/planning/introduction.md) to get up and running quickly.
+
 ## We're here to help 
 
 We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
