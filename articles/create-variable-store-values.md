@@ -19,7 +19,7 @@ ms.author: deonhe
 
 # Store and manage values by using variables in Power Automate
 
-This article shows how to create and work with variables to store values in your flows. For example, variables can help you track the number of times that a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number apply to each array item.
+This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times that a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number apply to each array item.
 
 You can create variables for data types such as integer, float, boolean, string, array, and object. After you create a variable, you can perform other tasks, for example:
 
@@ -28,7 +28,7 @@ You can create variables for data types such as integer, float, boolean, string,
 * Assign a different value to the variable.
 * Insert or *append* the variable's value as the last item in a string or array.
 
-Variables exist and are global only within the flow that creates them. Also, they persist across any loop iterations inside the flow. 
+Variables exist and are global only within the cloud flow that creates them. Also, they persist across any loop iterations inside the flow. 
 
 <!--Todo -- is this true for flows? -->
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
@@ -41,7 +41,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 * Access to [Power Automate](https://powerautomate.com).
 
-* A flow in which you want to create the variable.
+* A cloud flow in which you want to create the variable.
 
   If you're new to Power Automate, review [Getting started with Power Automate?](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
@@ -55,7 +55,7 @@ You can create a variable and declare its data type and initial value - all with
 
 1. Sign into [Power Automate](sign-up-sign-in.md).
 
-1. Create a cloud flow and under the step where you want to add a variable, follow one of these steps: 
+1. Create a cloud cloud flow and under the step where you want to add a variable, follow one of these steps: 
 
    * To add an action under the last step, select **New step**.
 
@@ -82,7 +82,7 @@ You can create a variable and declare its data type and initial value - all with
 
 1. Now continue adding the actions you want. When you're done, select **Save**.
 
-If you switch from the designer to the code view editor, here is the way that the **Initialize variable** action appears in your flow definition, in JavaScript Object Notation (JSON) format:
+<!-- If you switch from the designer to the code view editor, here is the way that the **Initialize variable** action appears in your flow definition, in JavaScript Object Notation (JSON) format:
 
 ```json
 "actions": {
@@ -98,7 +98,7 @@ If you switch from the designer to the code view editor, here is the way that th
       "runAfter": {}
    }
 },
-```
+``` -->
 
 > [!NOTE]
 > Although the **Initialize variable** action has a `variables` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
@@ -179,7 +179,7 @@ Here are examples for some other variable types:
 
 ## Get the variable's value
 
-To retrieve or reference a variable's contents, you can use the variables() function in the Power Automate designer and in the code view editor. When referencing a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
+To retrieve or reference a variable's contents, you can use the variables() function in the Power Automate designer.
 
 
 <!--confirm earlier creation-->
@@ -198,7 +198,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**. 
 
-   For example, this flow already has a trigger and an action that created a variable. So, add a new action under these steps:
+   For example, this cloud flow already has a trigger and an action that created a variable. So, add a new action under these steps:
 
    ![Add action](./media/create-variables-store-values/add-increment-variable-action.png)
 
@@ -222,21 +222,6 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 1. When you're done, on the designer toolbar, select **Save**.
 
-If you switch from the designer to the code view editor, here is the way that the **Increment variable** action appears inside your flow definition.
-
-```json
-"actions": {
-   "Increment_variable": {
-      "type": "IncrementVariable",
-      "inputs": {
-         "name": "Count",
-         "value": 1
-      },
-      "runAfter": {}
-   }
-},
-```
-
 ## Example: Create loop counter
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
@@ -252,7 +237,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
    ![Check for and include attachments](./media/create-variables-store-values/check-include-attachments.png)
 
-1. Add the Initialize variable** action. Create an integer variable named `Count` that has a zero start value.
+1. Add the **Initialize variable** action. Create an integer variable named `Count` that has a zero start value.
 
    ![Add action for "Initialize variable"](./media/create-variables-store-values/initialize-variable.png)
 
@@ -287,7 +272,9 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. Save your logic app. On the designer toolbar, select **Save**.
 
-### Test your logic app
+
+<!--todo get test steps-->
+<!-- ### Test your logic app
 
 1. If your logic app isn't enabled, on your logic app menu, select **Overview**. On the toolbar, select **Enable**.
 
@@ -295,33 +282,8 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. Send an email with one or more attachments to the email account you used in this example.
 
-   This step fires the logic app's trigger, which creates and runs an instance for your logic app's workflow. As a result, the logic app sends you a message or email that shows the number of attachments in the email you sent.
+   This step fires the logic app's trigger, which creates and runs an instance for your logic app's workflow. As a result, the logic app sends you a message or email that shows the number of attachments in the email you sent. -->
 
-If you switch from the designer to the code view editor, here is the way that the **apply to each** loop appears along with the **Increment variable** action inside your logic app definition, which is in JSON format.
-
-```json
-"actions": {
-   "For_each": {
-      "type": "Foreach",
-      "actions": {
-         "Increment_variable": {
-           "type": "IncrementVariable",
-            "inputs": {
-               "name": "Count",
-               "value": 1
-            },
-            "runAfter": {}
-         }
-      },
-      "foreach": "@triggerBody()?['Attachments']",
-      "runAfter": {
-         "Initialize_variable": [ "Succeeded" ]
-      }
-   }
-},
-```
-
-<a name="decrement-value"></a>
 
 ## Decrement variable
 
@@ -334,23 +296,6 @@ Here are the properties for the **Decrement variable** action:
 | **Name** | Yes | <*variable-name*> | The name for the variable to decrement | 
 | **Value** | No | <*increment-value*> | The value for decrementing the variable. The default value is one. <p><p>**Tip**: Although optional, set this value as a best practice so you always know the specific value for decrementing your variable. |
 ||||| 
-
-If you switch from the designer to the code view editor, here is the way that the **Decrement variable** action appears inside your logic app definition, which is in JSON format.
-
-```json
-"actions": {
-   "Decrement_variable": {
-      "type": "DecrementVariable",
-      "inputs": {
-         "name": "Count",
-         "value": 1
-      },
-      "runAfter": {}
-   }
-},
-```
-
-<a name="assign-value"></a>
 
 ## Set variable
 
@@ -382,35 +327,6 @@ Here are the properties for the **Set variable** action:
 >
 > 3. Drag the **Degree of Parallelism** slider to **1**.
 
-If you switch from the designer to the code view editor, here is the way that the **Set variable** action appears inside your logic app definition, which is in JSON format. This example changes the `Count` variable's current value to another value.
-
-```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "Count",
-               "type": "Integer",
-               "value": 0
-          } ]
-      },
-      "runAfter": {}
-   },
-   "Set_variable": {
-      "type": "SetVariable",
-      "inputs": {
-         "name": "Count",
-         "value": 100
-      },
-      "runAfter": {
-         "Initialize_variable": [ "Succeeded" ]
-      }
-   }
-},
-```
-
-<a name="append-value"></a>
 
 ## Append to variable
 
@@ -432,33 +348,6 @@ Here are the properties for the **Append to...** actions:
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 |||||
 
-If you switch from the designer to the code view editor, here is the way that the **Append to array variable** action appears inside your logic app definition, which is in JSON format. This example creates an array variable, and adds another value as the last item in the array. Your result is an updated variable that contains this array: `[1,2,3,"red"]`
-
-```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-            "name": "myArrayVariable",
-            "type": "Array",
-            "value": [1, 2, 3]
-         } ]
-      },
-      "runAfter": {}
-   },
-   "Append_to_array_variable": {
-      "type": "AppendToArrayVariable",
-      "inputs": {
-         "name": "myArrayVariable",
-         "value": "red"
-      },
-      "runAfter": {
-        "Initialize_variable": [ "Succeeded" ]
-      }
-   }
-},
-```
 
 ## Next steps
 
