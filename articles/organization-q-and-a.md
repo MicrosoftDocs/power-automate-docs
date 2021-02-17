@@ -148,3 +148,18 @@ If you want all users to be in the same tenant regardless of their email address
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
   ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+  
+
+## Power Automate RPA license
+
+### How can I apply unattended RPA licenses to my flow
+There are a few steps to apply unattended RPA licenses:
+- Step 1: the tenant admin needs to purchase or get trial version of the unattended RPA add-on capacity for this tenant. The tenant admin can do this from the M365 admin portal [here](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the add-ons session from purchase services page
+  ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+- Step 2: the environment admin needs to assign the available (paid or trial) unattended add-on capacities to a specific environment
+  ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+- Step 3: now the flow makers can run unattended desktop flows within the environment where unattended capacity is available. 
+> [!NOTE]
+> The unattended add-on is environment based. So if you have multiple environments needs to run unattended RPA, you need to assign add-on capacity to each of them. 
+> Also if you need to run multiple unattended desktop flows in parallel at the same time in one environment, you need to assign the right number of unattended add-on to this environment to scale up.
+ 
