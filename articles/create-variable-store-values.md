@@ -1,5 +1,5 @@
 ---
-title: Create and manage variables for storing and passing values
+title: Store and manage values in variables
 description: Learn how to store, manage, use, and pass values by using variables in your flows
 sservices: ''
 suite: flow
@@ -17,7 +17,7 @@ ms.date: 02/11/2021
 ms.author: deonhe
 ---
 
-# Store and manage values by using variables in Power Automate
+# Store and manage values in variables
 
 This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times that a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number apply to each array item.
 
