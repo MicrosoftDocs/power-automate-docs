@@ -283,18 +283,16 @@ Here are the properties for the **Set variable** action:
 ||||| 
 
 > [!NOTE]
-> Unless you're incrementing or decrementing variables, changing variables 
-> inside loops *might* create unexpected results because loops run in parallel, 
-> or concurrently, by default. For these cases, try setting your loop to run sequentially. 
-> For example, when you want to reference the variable value inside the loop and expect 
-> same value at the start and end of that loop instance, follow these steps to change how the loop runs: 
+> Unless you're incrementing or decrementing variables, changing variables inside loops *might* create unexpected results if you run loops in parallel. For these cases, try setting your loop to run sequentially. 
+> For example, when you want to reference the variable value inside the loop and expect the
+> same value at the start and end of each loop instance, follow these steps to change how the loop runs: 
 >
 > 1. In your loop's upper-right corner, select the ellipsis (**...**) button, 
 > and then select **Settings**.
 > 
-> 2. Under **Concurrency Control**, change the **Override Default** setting to **On**.
+> 1. Under **Concurrency Control**, change the **Override Default** setting to **On**.
 >
-> 3. Drag the **Degree of Parallelism** slider to **1**.
+> 1. Drag the **Degree of Parallelism** slider to **1**.
 
 
 ## Append to variable
