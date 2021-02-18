@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/29/2020
+ms.date: 02/18/2020
 ms.author: gcorvera
 search.app: 
   - Flow
@@ -30,21 +30,22 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 >
 > - Approval request emails are *actionable messages*. If your [Microsoft Outlook client](https://docs.microsoft.com/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format. 
 > - All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
+> - Markdown is not currently supported for the Approvals app on Microsoft Teams.
 > - Markdown is not currently supported for [GCC and GCC High customers](/power-automate/us-govt).
 
 ## Client Support
 
 Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
-| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams | Teams mobile app |  
-|---------|--------|---------------|-----------------|-------------|-------|--------------|
-| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes |
-| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** |
-| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes |
-| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes |
+| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
+|---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
+| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
+| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
+| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
+| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes | **_No_** |
+| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.

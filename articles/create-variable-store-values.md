@@ -34,7 +34,7 @@ Variables exist and are global only within the cloud flow that creates them. Als
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
 > [!WARNING]
-> By default, each iteration in "apply to each" loops run sequentially. You can run the loop iterations in paralell to improve performance. If you use variables in "apply to each" loops, you **must** run the loop iterations *sequentially* if it's important for your loop variables to return predictable results.
+> By default, each iteration in "apply to each" loops run sequentially. You can run the loop iterations in parallel to improve performance. If you use variables in "apply to each" loops, you **must** run the loop iterations *sequentially* if it's important for your loop variables to return predictable results.
 
 ## Prerequisites
 
