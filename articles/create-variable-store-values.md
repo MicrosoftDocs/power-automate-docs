@@ -33,9 +33,8 @@ Variables exist and are global only within the cloud flow that creates them. Als
 <!--Todo -- is this true for flows? -->
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
-<!--Need a doc for this in power automate-->
-> [!IMPORTANT]
-> By default, cycles in a "apply to each" loop run in parallel. When you use variables in loops, run the loop sequentially so that variables return predictable results.
+> [!WARNING]
+> By default, each iteration in "apply to each" loops run sequentially. You can run the loop iterations in paralell to improve performance. If you use variables in "apply to each" loops, you **must** run the loop iterations *sequentially* if it's important for your loop variables to return predictable results.
 
 ## Prerequisites
 
@@ -81,24 +80,6 @@ You can create a variable and declare its data type and initial value - all with
    ![Initialize variable](./media/create-variables-store-values/initialize-variable.png)
 
 1. Now continue adding the actions you want. When you're done, select **Save**.
-
-<!-- If you switch from the designer to the code view editor, here is the way that the **Initialize variable** action appears in your flow definition, in JavaScript Object Notation (JSON) format:
-
-```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "Count",
-               "type": "Integer",
-               "value": 0
-          } ]
-      },
-      "runAfter": {}
-   }
-},
-``` -->
 
 > [!NOTE]
 > Although the **Initialize variable** action has a `variables` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
@@ -270,19 +251,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
    ![Add an action that sends results](./media/create-variables-store-values/send-email-results.png)
 
-1. Save your logic app. On the designer toolbar, select **Save**.
-
-
-<!--todo get test steps-->
-<!-- ### Test your logic app
-
-1. If your logic app isn't enabled, on your logic app menu, select **Overview**. On the toolbar, select **Enable**.
-
-1. On the Logic App Designer toolbar, select **Run**. This step manually starts your logic app.
-
-1. Send an email with one or more attachments to the email account you used in this example.
-
-   This step fires the logic app's trigger, which creates and runs an instance for your logic app's workflow. As a result, the logic app sends you a message or email that shows the number of attachments in the email you sent. -->
+1. On the designer toolbar, select **Save**.
 
 
 ## Decrement variable
@@ -330,7 +299,6 @@ Here are the properties for the **Set variable** action:
 
 ## Append to variable
 
-<!--Doc needed-->
 For variables that store strings or arrays, you can insert or *append* a variable's value as the last item in those strings or arrays. You can follow the steps for increasing a variable except that you follow these steps instead: 
 
 1. Find and select one of these actions based on whether your variable is a string or an array. 
