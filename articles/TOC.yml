@@ -142,6 +142,8 @@
         href: approvals-markdown-support.md
       - name: Custom approval response options
         href: create-approval-response-options.md
+      - name: Known issues and limitations
+        href: approvals-known-issues.md
     - name: Use flows with Office 365 Outlook email
       items:
       - name: Overview
