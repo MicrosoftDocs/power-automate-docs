@@ -42,7 +42,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 * A cloud flow in which you want to create the variable.
 
-  If you're new to Power Automate, review [Getting started with Power Automate?](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
+  If you're new to Power Automate, review [Getting started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ You can create a variable and declare its data type and initial value - all with
 
 1. Sign into [Power Automate](sign-up-sign-in.md).
 
-1. Create a cloud cloud flow and under the step where you want to add a variable, follow one of these steps: 
+1. Create a cloud flow and under the step where you want to add a variable, follow one of these steps: 
 
    * To add an action under the last step, select **New step**.
 
@@ -62,7 +62,7 @@ You can create a variable and declare its data type and initial value - all with
 
    * To add an action between steps, move your mouse over the connecting arrow so that the plus sign (**+**) appears. Select the plus sign, and then select **Add an action**.
 
-1. Under **Choose an action**, in the search box, enter `variables` as your filter. From the actions list, select **Initialize variable**.
+1. Under **Choose an action**, in the search box, enter `variable` as your filter. From the actions list, select **Initialize variable**.
 
    ![Select action](./media/create-variables-store-values/select-initialize-variable-action.png)
 
@@ -82,80 +82,41 @@ You can create a variable and declare its data type and initial value - all with
 1. Now continue adding the actions you want. When you're done, select **Save**.
 
 > [!NOTE]
-> Although the **Initialize variable** action has a `variables` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
+> Although the **Initialize variable** action has a `variable` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
 
 Here are examples for some other variable types:
 
 *String variable*
 
 ```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "myStringVariable",
-               "type": "String",
-               "value": "lorem ipsum"
-          } ]
-      },
-      "runAfter": {}
-   }
-},
+
+   "name": "myStringVariable",
+   "type": "String",
+   "value": "lorem ipsum"
 ```
 
 *Boolean variable*
 
 ```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "myBooleanVariable",
-               "type": "Boolean",
-               "value": false
-          } ]
-      },
-      "runAfter": {}
-   }
-},
+   "name": "myBooleanVariable",
+   "type": "Boolean",
+   "value": false
 ```
 
 *Array with integers*
 
 ```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "myArrayVariable",
-               "type": "Array",
-               "value": [1, 2, 3]
-          } ]
-      },
-      "runAfter": {}
-   }
-},
+   "name": "myArrayVariable",
+   "type": "Array",
+   "value": [1, 2, 3]
 ```
 
 *Array with strings*
 
 ```json
-"actions": {
-   "Initialize_variable": {
-      "type": "InitializeVariable",
-      "inputs": {
-         "variables": [ {
-               "name": "myArrayVariable",
-               "type": "Array",
-               "value": ["red", "orange", "yellow"]
-          } ]
-      },
-      "runAfter": {}
-   }
-},
+   "name": "myArrayVariable",
+   "type": "Array",
+   "value": ["red", "orange", "yellow"]
 ```
 
 ## Get the variable's value
@@ -243,7 +204,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 1. In the search box, enter "increment variable" as your filter. From the actions list, select **Increment variable**.
 
    > [!NOTE]
-   > The **Increment variable** action must appear inside the loop. If the action appears outside the loop, drag the action into the loop.
+   > The **Increment variable** action must appear inside the loop.
 
 1. In the **Increment variable** action, from the **Name** list, select the **Count** variable.
 
@@ -283,16 +244,7 @@ Here are the properties for the **Set variable** action:
 ||||| 
 
 > [!NOTE]
-> Unless you're incrementing or decrementing variables, changing variables inside loops *might* create unexpected results if you run loops in parallel. For these cases, try setting your loop to run sequentially. 
-> For example, when you want to reference the variable value inside the loop and expect the
-> same value at the start and end of each loop instance, follow these steps to change how the loop runs: 
->
-> 1. In your loop's upper-right corner, select the ellipsis (**...**) button, 
-> and then select **Settings**.
-> 
-> 1. Under **Concurrency Control**, change the **Override Default** setting to **On**.
->
-> 1. Drag the **Degree of Parallelism** slider to **1**.
+> Unless you're incrementing or decrementing variables, changing variables inside loops *might* create unexpected results if you run loops in parallel. For these cases, try setting your loop to run sequentially, which is the default setting. 
 
 
 ## Append to variable
@@ -317,4 +269,4 @@ Here are the properties for the **Append to...** actions:
 
 ## Next steps
 
-* Learn about [Power Automate connectors](https://flow.microsoft.com/connectors/)
+* Learn about [Power Automate connectors](https://docs.microsoft.com/connectors/connectors)
