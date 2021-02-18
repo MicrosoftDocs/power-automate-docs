@@ -123,8 +123,9 @@ Limits on how long flows will remain turned on before they expire and get turned
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. A cloud flow that is continually throttled is likewise considered have errors. Fix your trigger or actions to keep the flow turned on. |
-| Not triggered (dormant) flows | 60 days for Free and Trial Plans, 90 days for Microsoft 365 Plans, no expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off; to keep the flow active you may need to adjust your trigger or purchase a standalone Power Automate license plan |
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. |
+| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivty, the flow creator will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
+| Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
 
 ## Concurrency, looping, and debatching limits
 
