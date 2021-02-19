@@ -1,5 +1,5 @@
 ---
-title: Get started using flows with Microsoft Forms | Microsoft Docs
+title: Get started using Microsoft Forms in flows | Microsoft Docs
 description: Information about templates that can help you easily get started using flows with Microsoft Forms. 
 services: ''
 suite: flow
