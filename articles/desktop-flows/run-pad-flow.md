@@ -27,7 +27,7 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 - A work or school account. 
 
    >[!IMPORTANT]
-   >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
+   >You must use the same work or school account to set up the gateway and to sign into Power Automate.
    
 
 ## Run desktop flows unattended or attended
