@@ -50,6 +50,9 @@ Under the **Application** category, select whether Power Automate Desktop shoult
 
 Change the display language, and decide whether Microsoft may collect diagnostic data to improve user experience, under **Application language** and **Data collection**, respectively.
 
+> [!ΝΟΤΕ]
+> Only an admin may change Data collection settings.
+
 Finally, access and manage your avaliable licenses in the respective category.
 
 
