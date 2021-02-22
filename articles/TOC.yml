@@ -293,10 +293,16 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Desktop flows
+- name: Power Automate Desktop
   items: 
-  - name: Introduction to desktop flows
+  - name: Introduction to Power Automate Desktop
     href: ./desktop-flows/introduction.md
+  - name: Getting started with a Microsoft Account
+    href: ./desktop-flows/getting-started-msa.md
+  - name: Getting started with an Organization Account
+    href: ./desktop-flows/getting-started-freeorg.md
+  - name: Getting started with an Organization Premium Account
+    href: ./desktop-flows/getting-started-org.md
   - name: Set up Power Automate Desktop
     href: ./desktop-flows/setup.md
   - name: Create a desktop flow
@@ -425,29 +431,29 @@
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
-  - name: Other types of desktop flows (Legacy)
+- name: Other types of desktop flows (Legacy)
+  items:
+  - name: Introduction to other types of desktop flows
+    href: ./desktop-flows/overview.md
+  - name: Create and test desktop flows with Windows recorder (V1)
+    href: ./desktop-flows/create-desktop.md
+  - name: Edit desktop flows with Windows recorder (V1)
+    href: ./desktop-flows/edit-desktop.md
+  - name: Migrate from Windows recorder (V1) to Power Automate Desktop
+    href: ./desktop-flows/migrate.md
+  - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
+    href: ./desktop-flows/inputs-outputs-desktop.md
     items:
-    - name: Introduction to other types of desktop flows
-      href: ./desktop-flows/overview.md
-    - name: Create and test desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/create-desktop.md
-    - name: Edit desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/edit-desktop.md
-    - name: Migrate from Windows recorder (V1) to Power Automate Desktop
-      href: ./desktop-flows/migrate.md
-    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/inputs-outputs-desktop.md
-      items:
-      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-        href: ./desktop-flows/use-ime.md
-      - name: Use WinAutomation with desktop flows
-        href: ./desktop-flows/create-processes.md
-    - name: Create and test Selenium IDE flows
-      href: ./desktop-flows/create-web.md
-    - name: Edit desktop flows with Selenium IDE
-      href: ./desktop-flows/edit-web.md
-    - name: Use inputs and outputs in desktop flows with Selenium IDE
-      href: ./desktop-flows/inputs-outputs-web.md
+    - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/use-ime.md
+    - name: Use WinAutomation with desktop flows
+      href: ./desktop-flows/create-processes.md
+  - name: Create and test Selenium IDE flows
+    href: ./desktop-flows/create-web.md
+  - name: Edit desktop flows with Selenium IDE
+    href: ./desktop-flows/edit-web.md
+  - name: Use inputs and outputs in desktop flows with Selenium IDE
+    href: ./desktop-flows/inputs-outputs-web.md
 - name: Business process flows
   items:
   - name: Business process flows overview
