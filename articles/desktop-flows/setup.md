@@ -339,6 +339,11 @@ The following are not supported:
 
 You'll find feature-specific limitations included in the documentation for each feature.
 
+## Known issues and limitations
+
+|Issue|Microsoft Account|Work or School Account|Organization Premium Account|
+|-----|-----|-----|-----|
+|||||
 ## Learn more
 
 - Learn to [create Power Automate Desktop flows](create-flow.md).

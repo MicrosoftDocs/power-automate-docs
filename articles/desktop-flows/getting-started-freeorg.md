@@ -18,13 +18,13 @@ search.audienceType:
 
 Power Automate Desktop enables users to automate repetitive desktop tasks through a collection of prebuilt drag-and-drop actions.
 
-Using the available actions and built-in recorders, you can automate any business procedure, such as filling forms, retrieving data from web or desktop applications, and sending automated emails.
+Using the available actions and built-in recorders, you can automate any business procedure, such as filling forms, retrieving data from web or desktop applications, and sending standardized emails.
 
-Combining these features allows the creation of powerful flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data between different systems are common in business environments, and Power Automate Desktop can entirely handle them.
+Combining these features allows the creation of powerful flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data across different systems are common in business environments, and Power Automate Desktop can entirely handle them.
 
-Apart from third-party applications, Power Automate Desktop allows the automation of the Windows platform itself. Creating backups of files and maintenance operations can be performed effectively through desktop flows. 
+Apart from third-party applications, Power Automate Desktop allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
 
-To unlock the full spectrum of RPA features, such as premium cloud connectors, the ability to run your flows automatically and detailed monitoring, upgrade to an Organization Premium account.
+To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow monitoring, upgrade to an Organization Premium account.
 
 ## Next Steps
 
