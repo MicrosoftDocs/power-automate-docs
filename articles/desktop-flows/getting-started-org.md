@@ -20,7 +20,11 @@ Power Automate Desktop enables regular and power users alike to create flows whi
 
 Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to run your flows automatically, detailed monitoring and many more. 
 
+Power Automate Desktop gives you the option to share your flows among your colleagues so that you can improve automations and build on top of them.
+
 Access your flows from anywhere, harnessing the power of the cloud to establish a robust and flexible RPA system. Take full advantage of multiple environments to organize and manage users’ flows. 
+
+If you currently use Power Automate with a work or school account or your license does not include attended RPA, you can still use Power Automate Desktop for your desktop automation needs. Start a trial to preview all the features by selecting **Go Premium** on the Power Automate Desktop console.
 
 ## Creating a flow
 

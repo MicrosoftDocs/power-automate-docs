@@ -37,7 +37,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - System requirements:
 
-   - A device that runs Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
@@ -50,7 +50,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
-- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database).
+- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database). (Applicable only for Work or School accounts)
 
 - A supported keyboard attached.
 
@@ -320,26 +320,17 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
-## Limitations
+## 2.3 How to disable Power Automate Desktop in Windows? 
 
-The following are not supported:
-- Windows 10 Home installations are not supported.
+WRITE THIS AND LINK TO FAQ DOC
+ 
 
--   Windows Recorder v1 desktop flows
+## 2.4 How to prevent users accessing Power Automate Desktop using their MSA accounts in an Organizaiton? 
 
-    -   Multiple monitors.
-    -   Double click, mouse hover, touch/pen input.
-    -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
+WRITE THIS AND LINK TO FAQ DOC
+## Sign-in account comparison
 
--   Selenium desktop flows
-
-    -   Right click.
-    -   User session information (for example: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information when required by websites.
-
-You'll find feature-specific limitations included in the documentation for each feature.
-
-## Known issues and limitations
+Below you can find detailed comparison on what each user will have access to.
 
 ||Microsoft Account|Work or School Account|Organization Premium Account|
 |-----|-----|-----|-----|
@@ -355,6 +346,32 @@ You'll find feature-specific limitations included in the documentation for each 
 |Sharing and Collaboration: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
 |Centralized management and reporting: New flows and any execution logs are automatically saved to Power Automate Service to provide centralized management and reporting.|No|No|Yes|
 |Additional capabilities such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
+
+## Known issues and limitations
+
+1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate Desktop flows. Power Automate Desktop flows will be stored in the default environment with the Dataverse database. If the Dataverse database doesn't exist in the default environment, the user will not be able to create Power Automate Desktop flows and be prompted to create a database. There will be no connectivity of Power Automate Desktop flows with Cloud flows.  
+
+    - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate Desktop (exit from the system tray icon).
+
+    - CDS provisioning in the default environment from Power Automate Desktop to create a flow will be supported in the upcoming release.  
+
+1. If the customer already installed PAD and has paid attended RPA license or Trail license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
+
+    ## ADD IMAGE
+
+1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
+
+1. Windows Recorder v1 desktop flows does not support
+    -   Multiple monitors.
+    -   Double click, mouse hover, touch/pen input.
+    -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
+
+1. Selenium desktop flows do not support
+    -   Right click.
+    -   User session information (for example: cookies) will not be reused during
+        playback. You will have to edit the script to embed sign in information when required by websites.
+
+You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Learn more
 

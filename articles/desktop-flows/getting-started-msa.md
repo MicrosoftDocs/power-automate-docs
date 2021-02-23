@@ -22,6 +22,8 @@ Focus on other activities by automating routine and repetitive tasks like organi
 
 Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or record your interactions as steps to be played back anytime. 
 
+Using Power Automate Desktop with a Microsoft account is available at no additional cost.
+
 ## Build your first flow
 
 
