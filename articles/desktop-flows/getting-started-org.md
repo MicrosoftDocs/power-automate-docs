@@ -22,16 +22,6 @@ Unlock the full spectrum of RPA features such as premium cloud connectors, the a
 
 Access your flows from anywhere, harnessing the power of the cloud to establish a robust and flexible RPA system. Take full advantage of multiple environments to organize and manage users’ flows. 
 
-## Next Steps
-
-- Learn how to [set up Power Automate Desktop](setup.md).
-
-- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
-
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
-
-- You'll find the list of actions available in the [Actions reference](actions-reference.md).
-
 ## Creating a flow
 
 Begin by visiting [https://flow.microsoft.com/](https://flow.microsoft.com/) and entering your credentials; then, navigate to **My flows**, and create a new **Desktop flow**:
@@ -69,3 +59,13 @@ The resulting flow should look like this:
 ![the finished flow](\media\getting-started-org\finished-flow.png)
 
 Following this example, it is possible to imagine a wide range of scenarios where Power Automate Desktop can be used to automate tasks. The abundance of actions, combined with cloud management capabilities, affords endless possibilities to individual users and organizations.
+
+## Next Steps
+
+- Learn how to [set up Power Automate Desktop](setup.md).
+
+- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
+
+- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
+
+- You'll find the list of actions available in the [Actions reference](actions-reference.md).
