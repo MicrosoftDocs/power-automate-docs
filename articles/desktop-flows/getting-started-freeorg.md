@@ -26,9 +26,9 @@ Apart from third-party applications, Power Automate Desktop allows the automatio
 
 To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow monitoring, upgrade to an Organization Premium account.
 
-## Create a simple flow
+## Flow example
 
-To become familiar with the available features of Power Automate Desktop, please follow the steps below to create a simple flow.
+To become familiar with the available features of Power Automate Desktop, follow the steps below to create a flow.
 
 The presented flow creates a backup for all the files in your Documents folder and updates a log file containing their original location.
 
