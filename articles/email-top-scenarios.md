@@ -41,7 +41,7 @@ Here are some of the top scenarios in which you can use Power Automate to manage
 
 To send email from your account, use the [Send an email (V2)](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action.
 
-You can send the email to one or more recipients. You can use the rich text editor to make text bold, add color, and format the email similar to the way you do in Outlook. You can add static text or values from previous actions by using dynamic content. You can use the **send as** option to send email as someone else, or on behalf of someone else. (To use this option, you'll need the permissions in Outlook to send on another person's behalf.) You can find all email you send in your **Sent items** folder in Outlook.
+You can send the email to one or more recipients. You can use the rich text editor to make text bold, add color, and format the email similar to the way you do in Outlook. You can add static text or values from previous actions by using dynamic content. You can use the **send as** option to send email as someone else, or on behalf of someone else. (To use this option, you'll need the permissions in Outlook to send on another person's behalf). You can find all email you send in your **Sent items** folder in Outlook.
 
 For example, if you have a cloud flow that sends you an email as soon as your item is approved, you can add the link of the approved item as an attachment.
 
@@ -50,7 +50,7 @@ For example, if you have a cloud flow that sends you an email as soon as your it
 ## Send email with voting options
 
 <!--todo add a link to actionable email-->
-Use the **Send email with options** action to send an email with voting options using actionable email. Provide voting options in the **User Options** field.<!--note from editor: I strongly suggest we don't use the trademarked names of these board games (two from Hasbro, one from Mattel) unless you're confident we've gotten permission. It would be so much easier just to say "Choose your favorite color" or something completely neutral.-->
+Use the **Send email with options** action to send an email with voting options using actionable email. Provide voting options in the **User Options** field.
 
    ![A screenshot showing a the "Send email with options" card](./media/email/email-options.png)
 
@@ -87,7 +87,7 @@ You can further format the data by using expressions. In following example, the 
 
 - Add the [Create HTML Table](https://docs.microsoft.com/power-automate/data-operations#use-the-create-html-table-action) action, and then add the output from the select action to the HTML action.
 
-- Add the [Send an email (V2](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action, add the output from an HTML table into the body of the email, and then set the **Is HTML** property to true.
+- Add the [Send an email (V2)](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action, add the output from an HTML table into the body of the email.
 
    ![A screenshot that shows Is HTML selected](./media/email/html-selected.png)
 

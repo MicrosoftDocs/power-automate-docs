@@ -54,6 +54,8 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - A supported keyboard attached.
 
+- An active connection to the Internet.
+
 > [!IMPORTANT]
 > You must have the latest versions of each component to record, test, or run desktop flows.
 
