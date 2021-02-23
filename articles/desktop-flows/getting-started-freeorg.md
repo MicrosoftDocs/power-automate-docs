@@ -24,7 +24,7 @@ Combining these features allows the creation of powerful flows that disengage hu
 
 Apart from third-party applications, Power Automate Desktop allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
 
-To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow monitoring, upgrade to an Organization Premium account.
+To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow monitoring, upgrade to an [Organization Premium account](getting-started-org.md).
 
 ## Flow example
 
