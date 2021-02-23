@@ -26,6 +26,59 @@ Apart from third-party applications, Power Automate Desktop allows the automatio
 
 To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow monitoring, upgrade to an Organization Premium account.
 
+## Flow example
+
+To become familiar with the available features of Power Automate Desktop, follow the steps below to create a flow.
+
+The presented flow creates a backup for all the files in your Documents folder and updates a log file containing their original location.
+
+To create the flow:
+
+1. Launch Power Automate Desktop and select the **New flow** button in the **Console**.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-console.png)
+
+1. Populate a name for the flow and then select the **Create** button. In this example, the flow is named **Backup flow**.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-new-flow.png)
+
+1. When the **Flow designer** is launched, add a **Get special folder** action in the workspace and retrieve the Documents folder's path.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-get-special-folder.png)
+
+1. Add a **Get files in folder** action to retrieve all the files located in the previously retrieved Documents folder. Optionally, set the action to retrieve the files located in subfolders of the selected folder.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-get-files.png)
+
+1. Deploy a **For each** action to access and handle each file of the retrieved list independently.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-for-each.png)
+
+1. Inside the **For each** loop, add a **Get file path part** action to retrieve the path of the currently selected file.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-get-file-path-part.png)
+
+1. Use a **Write text to file** action to append a new registry in the log file. In this example, the file is called **Logs.txt**, and each registry contains the original path of the copied file.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-write-text-file.png)
+
+1. Add a **Copy file** action to copy the currently selected file to the desired location. In this example, the destination folder is called **Backup**.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-copy-files.png)
+
+1. To test if the flow runs as expected, select the **Run** button on the upper part of the **Flow designer**.
+
+1. To check how every single action is implemented, run the flow step-by-step using the **Run next action** button.
+
+1. If the flow runs as expected, select **Save** and close the **Flow designer** window.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-final.png)
+
+1. Now, you can run your flow directly through the **Run** button in the **Console**. To stop the flow before its completion, select the **Stop** button.
+
+    ![](\media\getting-started-freeorg\getting-started-freeorg-run-flow-console.png)
+
+
 ## Next Steps
 
 - Learn how to [set up Power Automate Desktop](setup.md).
