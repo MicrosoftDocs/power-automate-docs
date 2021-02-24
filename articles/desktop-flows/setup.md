@@ -357,7 +357,7 @@ Below you can find detailed comparison on what each user will have access to.
 
 1. If the customer already installed PAD and has paid attended RPA license or Trail license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
 
-    ## ADD IMAGE
+      ![The prompted sign-in dialog with the respective error.](\media\known-issues\pad-sign-in.png)
 
 1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
 
