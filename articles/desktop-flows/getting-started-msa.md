@@ -72,6 +72,10 @@ To create the flow:
 
     ![run flow](media\getting-started-msa\run-flow.png)
 
+1. Close process designer and save the flow. Now you can run the flow from the console.
+
+    ![run flow console](media\getting-started-msa\run-flow-console.png)
+
 
 When prompted for a folder, select any folder you wish to copy. The flow will create a new folder on your desktop called **backup** with the selected folder inside.
 
