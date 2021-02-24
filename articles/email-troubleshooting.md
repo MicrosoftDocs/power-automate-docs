@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot common issues with Microsoft 365 Email | Microsoft Docs
-description: Troubleshoot common issues with Microsoft 365 Email.
+description: Troubleshoot common issues with Microsoft 365 or Outlook Email or mail notification.
 services: ''
 suite: flow
 documentationcenter: na
