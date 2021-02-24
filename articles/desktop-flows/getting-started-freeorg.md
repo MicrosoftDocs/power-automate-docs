@@ -39,35 +39,35 @@ To create the flow:
 
 1. Launch Power Automate Desktop and select the **New flow** button in the **Console**.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-console.png)
+    ![The New flow button in the console.](\media\getting-started-freeorg\getting-started-freeorg-console.png)
 
 1. Populate a name for the flow and then select the **Create** button. In this example, the flow is named **Backup flow**.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-new-flow.png)
+    ![The Build a flow dialog.](\media\getting-started-freeorg\getting-started-freeorg-new-flow.png)
 
 1. When the **Flow designer** is launched, add a **Get special folder** action in the workspace and retrieve the Documents folder's path.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-get-special-folder.png)
+    ![The Get special folder action.](\media\getting-started-freeorg\getting-started-freeorg-get-special-folder.png)
 
 1. Add a **Get files in folder** action to retrieve all the files located in the previously retrieved Documents folder. Optionally, set the action to retrieve the files located in subfolders of the selected folder.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-get-files.png)
+    ![The Get files in folder action.](\media\getting-started-freeorg\getting-started-freeorg-get-files.png)
 
 1. Deploy a **For each** action to access and handle each file of the retrieved list independently.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-for-each.png)
+    ![A For each loop.](\media\getting-started-freeorg\getting-started-freeorg-for-each.png)
 
 1. Inside the **For each** loop, add a **Get file path part** action to retrieve the path of the currently selected file.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-get-file-path-part.png)
+    ![The Get file path part action.](\media\getting-started-freeorg\getting-started-freeorg-get-file-path-part.png)
 
 1. Use a **Write text to file** action to append a new registry in the log file. In this example, the file is called **Logs.txt**, and each registry contains the original path of the copied file.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-write-text-file.png)
+    ![The Write text to file action.](\media\getting-started-freeorg\getting-started-freeorg-write-text-file.png)
 
 1. Add a **Copy file** action to copy the currently selected file to the desired location. In this example, the destination folder is called **Backup**.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-copy-files.png)
+    ![The Copy file action.](\media\getting-started-freeorg\getting-started-freeorg-copy-files.png)
 
 1. To test if the flow runs as expected, select the **Run** button on the upper part of the **Flow designer**.
 
@@ -75,11 +75,11 @@ To create the flow:
 
 1. If the flow runs as expected, select **Save** and close the **Flow designer** window.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-final.png)
+    ![The final flow, and the Run, Run next action and Save buttons.](\media\getting-started-freeorg\getting-started-freeorg-final.png)
 
 1. Now, you can run your flow directly through the **Run** button in the **Console**. To stop the flow before its completion, select the **Stop** button.
 
-    ![](\media\getting-started-freeorg\getting-started-freeorg-run-flow-console.png)
+    ![The Run and Stop buttons in the console.](\media\getting-started-freeorg\getting-started-freeorg-run-flow-console.png)
 
 
 ## Next Steps
