@@ -320,19 +320,20 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
-## 2.3 How to disable Power Automate Desktop in Windows? 
+## Disabling Power Automate Desktop in Windows 
 
-WRITE THIS AND LINK TO FAQ DOC
+        ***This is most probably something we can't do. I am awaiting feedback from the PMs***
  
 
-## 2.4 How to prevent users accessing Power Automate Desktop using their MSA accounts in an Organizaiton? 
+## Prevent organization users accessing Power Automate Desktop using their MSA accounts
 
-WRITE THIS AND LINK TO FAQ DOC
+        ***I am awaiting feedback with detailed steps from the PMs***
+
 ## Sign-in account comparison
 
 Below you can find detailed comparison on what each user will have access to.
 
-||Microsoft Account|Work or School Account|Organization Premium Account|
+||Microsoft account|Work or school account|Organization premium account|
 |-----|-----|-----|-----|
 |Storage|OneDrive Personal account|Dataverse of Default Environment|Dataverse across environments|
 |Connectivity with Cloud flows (triggering/scheduling flows)|No|No|Yes|
@@ -357,7 +358,7 @@ Below you can find detailed comparison on what each user will have access to.
 
 1. If the customer already installed PAD and has paid attended RPA license or Trail license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
 
-      ![The prompted sign-in dialog with the respective error.](\media\known-issues\pad-sign-in.png)
+      ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
 1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
 
