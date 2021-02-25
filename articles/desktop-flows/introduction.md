@@ -24,15 +24,15 @@ Leverage automation capabilities in Power Automate Desktop. Create flows, inte
 
 - Accurately extract data from websites and store them in excel files using Web and Excel automation  
 
-- Leverage desktop automation capabilities to put your work on autopilot  
+- Apply desktop automation capabilities to put your work on autopilot  
 
 Power Automate Desktop is addressed to home users, small businesses or larger enterprise companies. It’s addressed essentially to everyone who is performing simple or complex rule-based tasks on their workstations 
 
-In case you are a Home user who is accessing a weather website to see tomorrows forecast, or a self-employed businessman who extracts information from vendors invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate Desktop is designed for you. 
+In case you are a Home user who is accessing a weather website to see tomorrows' forecast, or a self-employed businessperson who extracts information from vendors invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate Desktop is designed for you. 
 
 It allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates.
 
-Sign-In to Power Automate Desktop Windows application using one of the below accounts and automate your tedious tasks. 
+Sign in to Power Automate Desktop Windows application using one of the below accounts and automate your tedious tasks. 
 
 [Getting started with a Microsoft account](getting-started-msa.md)
 
@@ -43,9 +43,5 @@ Sign-In to Power Automate Desktop Windows application using one of the below acc
 A full comparison of the features included in each account can be found [here](introduction.md).
 
 You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

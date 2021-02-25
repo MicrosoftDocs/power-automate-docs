@@ -16,7 +16,7 @@ search.audienceType:
 
 # Getting started with an Organization premium account
 
-Power Automate Desktop enables regular and power users alike to create flows which automate routine repetitive tasks. Build flows from pre-made actions, or record windows and web browser activity in real-time.
+Power Automate Desktop enables regular and power users alike to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or record windows and web browser activity in real time.
 
 Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to run your flows automatically, detailed monitoring and many more. 
 
@@ -54,7 +54,7 @@ If you currently use Power Automate with a work or school account or your licens
 
     ![if report exists](media\getting-started-org\if-report-exists.png)
 
-1. Finally, add the current dato to the file's name by using the **Rename file(s)** action from the **File** category:
+1. Finally, add the current date to the file's name by using the **Rename file(s)** action from the **File** category:
 
     ![rename the report](media\getting-started-org\rename-report.png)
 

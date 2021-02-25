@@ -28,7 +28,6 @@ Using Power Automate Desktop with a work or school account is available at no ad
 
 To start a trial, select **Go Premium** on the Power Automate Desktop console.
 
-
 ## Flow example
 
 To become familiar with the available features of Power Automate Desktop, follow the steps below to create a flow.
@@ -80,7 +79,6 @@ To create the flow:
 1. Now, you can run your flow directly through the **Run** button in the **Console**. To stop the flow before its completion, select the **Stop** button.
 
     ![The Run and Stop buttons in the console.](media\getting-started-freeorg\getting-started-freeorg-run-flow-console.png)
-
 
 ## Next Steps
 
