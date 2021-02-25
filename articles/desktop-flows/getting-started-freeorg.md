@@ -1,6 +1,6 @@
 ---
 title: Getting started with a work or school account  | Microsoft Docs
-description: Getting started with a work or school Account
+description: Getting started with a work or school account
 author: mariosleon
 ms.service: flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Getting started with a work or school Account
+# Getting started with a work or school account
 
 Power Automate Desktop enables users to automate repetitive desktop tasks through a collection of prebuilt drag-and-drop actions.
 
@@ -24,7 +24,7 @@ Combining these features allows the creation of powerful flows that disengage hu
 
 Apart from third-party applications, Power Automate Desktop allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
 
-Using Power Automate Desktop with a work or school account is available at no additional cost. To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization Premium account](getting-started-org.md).
+Using Power Automate Desktop with a work or school account is available at no additional cost. To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization premium account](getting-started-org.md).
 
 To start a trial, select **Go Premium** on the Power Automate Desktop console.
 

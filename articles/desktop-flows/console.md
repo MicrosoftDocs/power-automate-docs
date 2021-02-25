@@ -1,5 +1,5 @@
 ---
-title: Power Automate Desktop Flow console | Microsoft Docs
+title: Power Automate Desktop console | Microsoft Docs
 description: Power Automate Desktop Flow console
 author: rokontol
 ms.service: flow
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate Desktop flow console
+# Power Automate Desktop console
 
 The flow console is the central interface of Power Automate Desktop.
 
@@ -46,14 +46,14 @@ Press the **Settings** button to configure Power Automate Desktop to your liking
 
 ![The Console Settings panel](./media/console/console-settings-panel.png)
 
-Under the **Application** category, select whether Power Automate Desktop shoult launch automatically, whether closing the console will close the application as well, and whether Power Automate Desktop should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
+Under the **Application** category, select whether Power Automate Desktop should launch automatically, whether closing the console will close the application as well, and whether Power Automate Desktop should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
 
 Change the display language, and decide whether Microsoft may collect diagnostic data to improve user experience, under **Application language** and **Data collection**, respectively.
 
 >[!NOTE]
 >Only an admin may change Data collection settings.
 
-Finally, access and manage your avaliable licenses in the respective category.
+Finally, access and manage your available licenses in the respective category.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

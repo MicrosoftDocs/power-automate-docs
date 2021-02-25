@@ -319,7 +319,7 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues (preview)
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Desktop console
+  - name: Power Automate Desktop console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
