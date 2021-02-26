@@ -31,8 +31,6 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 ## Prerequisites
 
-- Either a [paid](https://flow.microsoft.com/pricing/) or [trial](https://flow.microsoft.com/manage/) license for Power Automate Attended RPA.
-
 - A work or school account to sign into your Windows device with administrator privileges and Power Automate.
 
 - System requirements:
@@ -46,11 +44,13 @@ Before you can use your device to create desktop flows, you'll need to ensure it
         - Storage: 2GB
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
+     
+- Access as described in the [IP Address configuration](../ip-address-configuration.md)
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
-- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database). (Applicable only for Work or School accounts)
+- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database). (Applicable only for work or school accounts)
 
 - A supported keyboard attached.
 
@@ -80,6 +80,9 @@ Follow these steps to install the Power Automate Desktop app:
 ### Set data collection options
 
 During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
+
+>[!IMPORTANT]
+>Sharing usage data to Microsoft, will help the support department to solve a Power Automate Desktop issue.
 
 ## Install the Power Automate browser extension 
 
@@ -325,36 +328,34 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
 |||
 |---|---|
-|Key|SOFTWARE\Microsoft\Power Automate Desktop|
 |Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
 |Name|RestrictMSAAccountsSignIns|
 |Type|DWORD|
 
-***Values***
-- 1: Users will not be able to sign-in using their Microsoft account 
-- 0: Users will be able to sign-in using their Microsoft account
+***Value***
+- 1: Users will not be able to sign-in using their Microsoft account
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
 Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
 |||
 |---|---|
-|Key|SOFTWARE\Microsoft\Power Automate Desktop|
 |Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
 |Name|RestrictOrgIDAccountsSignIns|
 |Type|DWORD|
 
-***Values***
+***Value***
 - 1: Users will not be able to sign-in using their work or school account
-- 0: Users will be able to sign-in using their work or school account
 
 >[!Note]
->Setting both registry keys to 1 will prevent users to login to Power Automate Desktop with either using a Microsoft or a work or school account.
+>Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When both registry keys are set to 1, users will not be able to login to Power Automate Desktop with either a Microsoft or a work or school account.
 
 
-## Disabling Power Automate Desktop
+## Restricting access to Power Automate Desktop
 
-An alternative way to disable Power Automate Desktop on a workstation with Windows 10, is using the [Applocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+In order to restrict access to Power Automate Desktop on a workstation with Windows 10, use [Applocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
 ## Sign-in account comparison
 
@@ -363,7 +364,7 @@ Below you can find detailed comparison on what each user will have access to.
 ||Microsoft account|Work or school account|Organization premium account|
 |-----|-----|-----|-----|
 |Storage|OneDrive Personal account|Dataverse of Default Environment|Dataverse across environments|
-|Connectivity with Cloud flows (triggering/scheduling flows)|No|No|Yes|
+|Connectivity with cloud flows (triggering/scheduling flows)|No|No|Yes|
 |Accessible recorder: Add different actions and record desktop apps and web apps in a single desktop flow.|Yes|Yes|Yes|
 |Easy to use designer: Use the drag-and-drop visual designer to organize your flow logically, while utilizing desktop and web recorders to capture core logic of your automation within a single desktop flow.|Yes|Yes|Yes|
 |Robust browser support: Use intelligent data extraction across all major web browsers (Edge, Firefox, Internet Explorer, Chrome)|Yes|Yes|Yes|
