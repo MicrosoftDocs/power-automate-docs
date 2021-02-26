@@ -320,14 +320,41 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
-## Disabling Power Automate Desktop in Windows 
+## Prevent users accessing Power Automate Desktop using their Microsoft accounts
 
-        ***This is most probably something we can't do. I am awaiting feedback from the PMs***
- 
+Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
+|||
+|---|---|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Hive|HKEY_LOCAL_MACHINE|
+|Name|RestrictMSAAccountsSignIns|
+|Type|DWORD|
 
-## Prevent organization users accessing Power Automate Desktop using their MSA accounts
+***Values***
+- 1: Users will not be able to sign-in using their Microsoft account 
+- 0: Users will be able to sign-in using their Microsoft account
 
-        ***I am awaiting feedback with detailed steps from the PMs***
+## Prevent users accessing Power Automate Desktop using their work or school accounts
+
+Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
+|||
+|---|---|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Hive|HKEY_LOCAL_MACHINE|
+|Name|RestrictOrgIDAccountsSignIns|
+|Type|DWORD|
+
+***Values***
+- 1: Users will not be able to sign-in using their work or school account
+- 0: Users will be able to sign-in using their work or school account
+
+>[!Note]
+>Setting both registry keys to 1 will prevent users to login to Power Automate Desktop with either using a Microsoft or a work or school account.
+
+
+## Disabling Power Automate Desktop
+
+An alternative way to disable Power Automate Desktop on a workstation with Windows 10, is using the [Applocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
 ## Sign-in account comparison
 

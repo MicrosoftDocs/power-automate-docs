@@ -24,6 +24,9 @@ Create automated workflows with step-by-step guidance and an intuitive, no-code 
 
 Using Power Automate Desktop with a Microsoft account is available at no additional cost.
 
+>[!Note]
+>Flows built with Power Automate Desktop using a Microsoft account are stored automatically on the users' OneDrive.
+
 ## Build your first flow
 
 
