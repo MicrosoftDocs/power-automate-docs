@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/07/2020
+ms.date: 03/02/2021
 search.app: 
   - Flow
 search.audienceType: 
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Create a cloud flow from a template in Power Automate
 
-A good way to get started is to use a template that is suited to your business scenario. You can choose from our collection of templates to find the right one to accomplish your scenario. Search our templates or browse by category to find your scenario, and then follow steps in the template to create a flow from the template.
+A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
 [!div class="mx-imgBorder"] 
 
