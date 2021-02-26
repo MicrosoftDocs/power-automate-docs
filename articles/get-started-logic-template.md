@@ -28,9 +28,9 @@ A good way to get started is to use a template that is suited to your organizati
 [!div class="mx-imgBorder"] 
 
 
-Perhaps you found a template that is similar to what you are looking for, but isn't quite right for your scenario. No problem - just create your own flow from that template and tweak the it to your liking. You can extend a flow created from template by adding, editing, removing trigger and actions. You can [copy paste] actions(https://docs.microsoft.com/en-us/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the process.
+You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
-Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Office 365.
+Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Microsoft 365.
 
 
 >[!TIP]
