@@ -13,10 +13,10 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.author: DeonHe
 search.app: 
-  - Flow
+  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -338,7 +338,7 @@ Using the following registry entry you can prevent users to login on Power Autom
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
-Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
+You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account.
 |||
 |---|---|
 |Hive|HKEY_LOCAL_MACHINE|
@@ -378,13 +378,13 @@ Below you can find detailed comparison on what each user will have access to.
 
 ## Known issues and limitations
 
-1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate Desktop flows. Power Automate Desktop flows will be stored in the default environment with the Dataverse database. If the Dataverse database doesn't exist in the default environment, the user will not be able to create Power Automate Desktop flows and be prompted to create a database. There will be no connectivity of Power Automate Desktop flows with Cloud flows.  
+1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate Desktop flows. Power Automate Desktop flows will be stored in the default environment with the Dataverse database. If the Dataverse database doesn't exist in the default environment, the user will not be able to create Power Automate Desktop flows and be prompted to create a database. There will be no connectivity of Power Automate Desktop flows with cloud flows.  
 
     - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate Desktop (exit from the system tray icon).
 
     - CDS provisioning in the default environment from Power Automate Desktop to create a flow will be supported in the upcoming release.  
 
-1. If the customer already installed PAD and has paid attended RPA license or Trail license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
+1. If the customer already installed PAD and has paid attended RPA license or trial license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
