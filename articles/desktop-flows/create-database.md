@@ -27,15 +27,15 @@ search.audienceType:
 A Microsoft Dataverse database stores flows created in Power Automate Desktop.
 
 >[!NOTE]
->For the preview release, you may need to create a Dataverse database before using Power Automate Desktop with your work or school account. This is must be done only once in a tenant. After creation, other users in the tenant will not need to do the same. 
+>For the preview release, you may need to create a Dataverse database before using Power Automate Desktop with your work or school account. This must be done only once in a tenant.
 
-If you are an administrator or if you would like to provide information to the administrator to create a Dataverse database, see [Add a Microsoft Dataverse database - Power Platform](https://docs.microsoft.com/power-platform/admin/create-database).
+If you are an administrator or if you would like to provide information to the administrator to create a Dataverse database, see [Add a Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database).
 
 ## Add a Microsoft Dataverse database as a Microsoft Teams user
 
 You can use the approvals experience in Teams to automatically add a Dataverse database that Power Automate Desktop can use to store flows. 
 
-Follow these steps to create an approval from the approvals app in Teams.
+Follow these steps to create an approval from the Approvals app in Teams.
 
 1. Sign into [Microsoft Teams](https://teams.microsoft.com/).
 
