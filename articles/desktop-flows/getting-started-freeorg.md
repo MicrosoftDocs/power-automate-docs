@@ -24,7 +24,7 @@ Combining these features allows the creation of powerful flows that disengage hu
 
 Apart from third-party applications, Power Automate Desktop allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
 
-Using Power Automate Desktop with a work or school account is available at no additional cost. To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization premium account](getting-started-org.md).
+Using Power Automate Desktop with a work or school account is available at no additional cost. To use Power Automate Desktop, your default environment must contain a [Dataverse database](create-database.md). To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization premium account](getting-started-org.md).
 
 To start a trial, select **Go Premium** on the Power Automate Desktop console.
 

@@ -305,6 +305,8 @@
     href: ./desktop-flows/getting-started-org.md
   - name: Set up Power Automate Desktop
     href: ./desktop-flows/setup.md
+  - name: Create a Dataverse database
+    href: ./desktop-flows/setup.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
   - name: Run a desktop flow
