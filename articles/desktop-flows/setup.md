@@ -45,6 +45,19 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
      
+> [!TIP]
+> If your device runs Windows 10 Home, you can use Power Automate Desktop to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
+
+| Activity |  Description |Windows Home |  Windows Enterprise / Pro / Server  | 
+|---------|------|----------|-----------|
+| Authoring | Create with Power Automate Desktop |  Yes |  Yes  | 
+| Authoring | Create with Windows Recorder V1 |  No |  Yes  |
+| Authoring | Create with Selenium IDE |  No |  Yes  |
+| Runtime | Local runtime (Attended) |  Yes |  Yes  |
+| Runtime | Cloud runtime (Attended / Unattended) |  No |  Yes  |
+| Monitoring | Manage desktop flows |  Yes |  Yes  |
+| Monitoring | View run logs |  Yes |  Yes  |
+
 - Access as described in the [IP Address configuration](../ip-address-configuration.md)
 
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
@@ -363,18 +376,18 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
 ||Microsoft account|Work or school account|Organization premium account|
 |-----|-----|-----|-----|
-|Storage|OneDrive Personal account|Dataverse of Default Environment|Dataverse across environments|
-|Connectivity with cloud flows (triggering/scheduling flows)|No|No|Yes|
-|Accessible recorder: Add different actions and record desktop apps and web apps in a single desktop flow.|Yes|Yes|Yes|
-|Easy to use designer: Use the drag-and-drop visual designer to organize your flow logically, while utilizing desktop and web recorders to capture core logic of your automation within a single desktop flow.|Yes|Yes|Yes|
-|Robust browser support: Use intelligent data extraction across all major web browsers (Edge, Firefox, Internet Explorer, Chrome)|Yes|Yes|Yes|
-|Pre-built actions: Leverage a diverse set of 400+ pre-built actions that connect to many different systems.|Yes|Yes|Yes|
-|Access to new actions: Automate more non-API systems with new support for SAP, legacy terminals such as mainframes and AS/400, Java apps, Citrix, etc.|Yes|Yes|Yes|
-|Exception handling: take advantage of exception handling to enable automation of complex cases that require validation (via action and scripts) and proactively manage flow settings to ensure a flow is completed without the need for human interaction.|Yes|Yes|Yes|
-|Dataverse storage: Save new flows built with Power Automate Desktop centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
-|Sharing and Collaboration: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
-|Centralized management and reporting: New flows and any execution logs are automatically saved to Power Automate Service to provide centralized management and reporting.|No|No|Yes|
-|Additional capabilities such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
+|**Storage**|OneDrive Personal account|Dataverse of Default Environment|Dataverse across environments|
+|**Connectivity** with cloud flows (triggering/scheduling flows)|No|No|Yes|
+|**Accessible recorder**: Add different actions and record desktop apps and web apps in a single desktop flow.|Yes|Yes|Yes|
+|**Easy to use designer**: Use the drag-and-drop visual designer to organize your flow logically, while utilizing desktop and web recorders to capture core logic of your automation within a single desktop flow.|Yes|Yes|Yes|
+|**Robust browser support**: Use intelligent data extraction across all major web browsers (Edge, Firefox, Internet Explorer, Chrome)|Yes|Yes|Yes|
+|**Pre-built actions**: Leverage a diverse set of 400+ pre-built actions that connect to many different systems.|Yes|Yes|Yes|
+|**Access to new actions**: Automate more non-API systems with new support for SAP, legacy terminals such as mainframes and AS/400, Java apps, Citrix, etc.|Yes|Yes|Yes|
+|**Exception handling**: take advantage of exception handling to enable automation of complex cases that require validation (via action and scripts) and proactively manage flow settings to ensure a flow is completed without the need for human interaction.|Yes|Yes|Yes|
+|**Dataverse storage**: Save new flows built with Power Automate Desktop centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
+|**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
+|**Centralized management and reporting**: New flows and any execution logs are automatically saved to Power Automate Service to provide centralized management and reporting.|No|No|Yes|
+|**Additional capabilities** such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
 
 ## Known issues and limitations
 
