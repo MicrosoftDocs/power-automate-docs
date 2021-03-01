@@ -377,13 +377,13 @@ Below you can find detailed comparison on what each user will have access to. Yo
 ||Microsoft account|Work or school account|Organization premium account|
 |-----|-----|-----|-----|
 |**Storage**|OneDrive Personal account|Dataverse of Default Environment|Dataverse across environments|
-|**Connectivity** with cloud flows (triggering/scheduling flows)|No|No|Yes|
 |**Accessible recorder**: Add different actions and record desktop apps and web apps in a single desktop flow.|Yes|Yes|Yes|
 |**Easy to use designer**: Use the drag-and-drop visual designer to organize your flow logically, while utilizing desktop and web recorders to capture core logic of your automation within a single desktop flow.|Yes|Yes|Yes|
 |**Robust browser support**: Use intelligent data extraction across all major web browsers (Edge, Firefox, Internet Explorer, Chrome)|Yes|Yes|Yes|
 |**Pre-built actions**: Leverage a diverse set of 400+ pre-built actions that connect to many different systems.|Yes|Yes|Yes|
 |**Access to new actions**: Automate more non-API systems with new support for SAP, legacy terminals such as mainframes and AS/400, Java apps, Citrix, etc.|Yes|Yes|Yes|
 |**Exception handling**: take advantage of exception handling to enable automation of complex cases that require validation (via action and scripts) and proactively manage flow settings to ensure a flow is completed without the need for human interaction.|Yes|Yes|Yes|
+|**Connectivity** with cloud flows (triggering/scheduling flows)|No|No|Yes|
 |**Dataverse storage**: Save new flows built with Power Automate Desktop centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
 |**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
 |**Centralized management and reporting**: New flows and any execution logs are automatically saved to Power Automate Service to provide centralized management and reporting.|No|No|Yes|
