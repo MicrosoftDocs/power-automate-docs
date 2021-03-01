@@ -33,7 +33,7 @@ If you are an administrator or if you would like to provide information to the a
 
 ## Add a Microsoft Dataverse database as a Microsoft Teams user
 
-You can use the approvals experience in Teams to automatically add a Dataverse database that Power Automate Desktop can use to store flows. 
+You can use the approvals experience in Teams to automatically add a Dataverse database that Power Automate Desktop can use to store flows. This process doesn't require you to be an administrator on the tenant.
 
 Follow these steps to create an approval from the Approvals app in Teams.
 

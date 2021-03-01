@@ -359,7 +359,7 @@ In order to restrict access to Power Automate Desktop on a workstation with Wind
 
 ## Sign-in account comparison
 
-Below you can find detailed comparison on what each user will have access to.
+Below you can find detailed comparison on what each user will have access to. You can find more information on the versions in the [Power Platform license guide](https://aka.ms/Ignite21-Licensing).
 
 ||Microsoft account|Work or school account|Organization premium account|
 |-----|-----|-----|-----|
