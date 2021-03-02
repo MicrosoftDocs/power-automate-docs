@@ -65,7 +65,7 @@ Follow these steps to create an approval from the Approvals app in Teams.
 
     Your Dataverse database is now added to the default environment. 
 
-1. Restart Power Automate Desktop (exit from the system tray icon)
+1. Restart Power Automate Desktop (exit from the system tray icon).
 
     ![Power Automate Desktop system tray](../media/create-database/system-tray.png)
 
