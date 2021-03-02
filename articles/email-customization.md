@@ -1,6 +1,6 @@
 ---
-title: Customize Microsoft 365 Email with Power Automate | Microsoft Docs
-description: Customize Microsoft 365 Email with Power Automate.
+title: Customize Email with Power Automate | Microsoft Docs
+description: How to use Email in flows with Microsoft 365 or Outlook Email or mail notification
 services: ''
 suite: flow
 documentationcenter: na
