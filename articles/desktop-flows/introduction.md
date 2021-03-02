@@ -28,7 +28,7 @@ Leverage automation capabilities in Power Automate Desktop. Create flows, inte
 
 Power Automate Desktop is addressed to home users, small businesses or larger enterprise companies. It’s addressed essentially to everyone who is performing simple or complex rule-based tasks on their workstations 
 
-In case you are a home user who is accessing a weather website to see tomorrows' forecast, or a self-employed businessperson who extracts information from vendors invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate Desktop is designed for you. 
+In case you are a home user who is accessing a weather website to see tomorrow's forecast, or a self-employed businessperson who extracts information from vendors' invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate Desktop is designed for you. 
 
 It allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates.
 
