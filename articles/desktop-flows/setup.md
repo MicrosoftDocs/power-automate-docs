@@ -217,7 +217,7 @@ You can also retrieve the details of all the command line arguments from the hel
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
 | -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to create it.                                                                 |
-| - DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
+| -DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
 | -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
 | -HELP               | This argument displays all details about the arguments for the installer. prompt                                                                                                                   |
 
@@ -339,7 +339,8 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 ## Prevent users accessing Power Automate Desktop using their Microsoft accounts
 
 Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
-|||
+
+| | |
 |---|---|
 |Hive|HKEY_LOCAL_MACHINE|
 |Key|SOFTWARE\Microsoft\Power Automate Desktop|
@@ -352,7 +353,8 @@ Using the following registry entry you can prevent users to login on Power Autom
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
 You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account.
-|||
+
+| | |
 |---|---|
 |Hive|HKEY_LOCAL_MACHINE|
 |Key|SOFTWARE\Microsoft\Power Automate Desktop|
