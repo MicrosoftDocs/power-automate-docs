@@ -40,7 +40,7 @@ Sign in to Power Automate Desktop Windows application using one of the below acc
 
 [Getting started with an Organization premium account](getting-started-org.md)
 
-A full comparison of the features included in each account can be found [here](introduction.md).
+A full comparison of the features included in each account can be found [here](setup#sign-in-account-comparison).
 
 You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md)
 
