@@ -145,7 +145,7 @@ Here are the steps that you must take to sign in with the Power Automate mobile 
 1. On the sign-in page, select the gear icon in the lower-right corner.
 1. Select **Region settings**.
 1. Select GCC: US Government GCC
-1. Selct OK.
+1. Select OK.
 1. On the sign-in page, select **Sign in**.
 
 The mobile application will now use the US Government Cloud.
