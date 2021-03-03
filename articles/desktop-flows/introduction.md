@@ -40,10 +40,10 @@ Sign in to Power Automate Desktop Windows application using one of the following
 
 [Getting started with an Organization premium account](getting-started-org.md)
 
-A full comparison of the features included in each account can be found [here](setup.md).
-
-You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md).
+A full comparison of the features included in each account can be found [here](setup#sign-in-account-comparison).
 
 Here's a [list of known issues](setup#known-issues-and-limitations) for Power Automate Desktop.
+
+You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
