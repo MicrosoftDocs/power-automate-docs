@@ -297,14 +297,14 @@
   items: 
   - name: Introduction to Power Automate Desktop
     href: ./desktop-flows/introduction.md
+  - name: Set up Power Automate Desktop
+    href: ./desktop-flows/setup.md
   - name: Getting started with a Microsoft account
     href: ./desktop-flows/getting-started-msa.md
   - name: Getting started with a work or school account
     href: ./desktop-flows/getting-started-freeorg.md
   - name: Getting started with an organization premium account
     href: ./desktop-flows/getting-started-org.md
-  - name: Set up Power Automate Desktop
-    href: ./desktop-flows/setup.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
   - name: Create a desktop flow
