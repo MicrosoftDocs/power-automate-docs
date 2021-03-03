@@ -132,7 +132,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 ## Delete approval history from Power Automate
 
- Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
+ Approval data for Power Automate is stored within the current or previous version of Microsoft Dataverse. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
 1. Sign into [PowerApps](https://make.powerapps.com/).
 
@@ -142,7 +142,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
-Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use Common Data Service.
+Please see [Executing DSRs against Microsoft Dataverse Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use Microsoft Dataverse.
 
 
 ## Delete connections created by a user
