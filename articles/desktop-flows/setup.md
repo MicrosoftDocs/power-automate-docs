@@ -397,7 +397,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
     - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate Desktop (exit from the system tray icon).
 
-    - CDS provisioning in the default environment from Power Automate Desktop to create a flow will be supported in the upcoming release.  
+    - Microsoft Dataverse provisioning in the default environment from Power Automate Desktop to create a flow will be supported in the upcoming release.  
 
 1. If the customer already installed PAD and has paid attended RPA license or trial license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
 

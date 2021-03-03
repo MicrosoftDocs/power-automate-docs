@@ -32,7 +32,7 @@ In case you are a home user who is accessing a weather website to see tomorrow's
 
 It allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates.
 
-Sign in to Power Automate Desktop Windows application using one of the below accounts and automate your tedious tasks. 
+Sign in to Power Automate Desktop Windows application using one of the following accounts and automate your tedious tasks. 
 
 [Getting started with a Microsoft account](getting-started-msa.md)
 
@@ -40,8 +40,10 @@ Sign in to Power Automate Desktop Windows application using one of the below acc
 
 [Getting started with an Organization premium account](getting-started-org.md)
 
-A full comparison of the features included in each account can be found [here](setup#sign-in-account-comparison).
+A full comparison of the features included in each account can be found [here](setup.md).
 
-You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md)
+You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md).
+
+Here's a [list of known issues](setup#known-issues-and-limitations) for Power Automate Desktop.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
