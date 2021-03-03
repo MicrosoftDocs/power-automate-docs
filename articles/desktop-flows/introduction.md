@@ -14,26 +14,36 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to desktop flows 
+# Introduction to Power Automate Desktop
 
-Power Automate Desktop broadens the existing robotic process automation (RPA) capabilities in Power Automate. As part of desktop flows, you can automate all repetitive desktop processes. Use prebuilt drag-and-drop actions or record your own desktop flows to run later.
+Power Automate Desktop broadens the existing robotic process automation (RPA) capabilities in Power Automate and enables you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate Desktop designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later. 
 
-It’s quicker and easier than ever to automate with the new intuitive Power Automate Desktop. It comes along with a brand new flow designer with a wide range of actions including files and folders, Excel and desktop automation capabilities.
+Leverage automation capabilities in Power Automate Desktop. Create flows, interact with everyday tools such as email and excel and work with modern and legacy applications. Examples of simple and complex tasks you can automate are: 
 
-Power Automate Desktop allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates. 
+- Quickly organize your documents using dedicated files and folders actions 
 
-You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md)
+- Accurately extract data from websites and store them in excel files using Web and Excel automation  
 
-## Next Steps
+- Apply desktop automation capabilities to put your work on autopilot  
 
-- Learn how to [set up Power Automate Desktop](setup.md).
+Power Automate Desktop is addressed to home users, small businesses or larger enterprise companies. It’s addressed essentially to everyone who is performing simple or complex rule-based tasks on their workstations 
 
-- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
+In case you are a home user who is accessing a weather website to see tomorrow's forecast, or a self-employed businessperson who extracts information from vendors' invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate Desktop is designed for you. 
 
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
+It allows you to automate both legacy applications, such as terminal emulators and modern web and desktop applications, Excel files, and folders. Interact with the machine using application UI elements, images, or coordinates.
 
-- You'll find the list of actions available in the [Actions reference](actions-reference.md).
+Sign in to Power Automate Desktop Windows application using one of the following accounts and automate your tedious tasks. 
 
+[Getting started with a Microsoft account](getting-started-msa.md)
 
+[Getting started with a work or school account](getting-started-freeorg.md)
+
+[Getting started with an Organization premium account](getting-started-org.md)
+
+A full comparison of the features included in each account can be found [here](setup#sign-in-account-comparison).
+
+Here's a [list of known issues](setup#known-issues-and-limitations) for Power Automate Desktop.
+
+You can also create desktop flows using the alternative solutions [legacy Windows recorder (V1) and Selenium IDE](overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

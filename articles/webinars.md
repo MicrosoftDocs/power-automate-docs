@@ -6,7 +6,7 @@ manager: annbe
 ms.service: flow
 ms.topic: conceptual
 ms.custom: 
-ms.date: 12/01/2020
+ms.date: 02/19/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -33,6 +33,10 @@ by Jon Levesque and Matthew Weston<br/>
 **Coca-Cola’s Journey with Robotic Process Automation in Microsoft Power Automate**  
 by Lokeshwar Reddy Vangala and Pranav Rastogi<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-Coca-ColasJourneywithRPA.html?LCID=EN-US)
+
+**Automate Time-Consuming Tasks with Robotic Process Automation**  
+by Stephanie Whitaker, Nicolas Pouhaer, and Yiannis Mavridis<br/>
+[Register and watch now](https://info.microsoft.com/ww-Landing-AutomateTimeConsumingTaskswithRPA.html?LCID=EN-US)
 
 ### See also
 
