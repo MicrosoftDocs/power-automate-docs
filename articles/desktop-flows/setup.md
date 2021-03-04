@@ -97,6 +97,10 @@ During installation, you can change the default settings if you do not want to s
 >[!IMPORTANT]
 >Sharing usage data to Microsoft, will help the support department to solve a Power Automate Desktop issue.
 
+## Set the display language for Power Automate Desktop
+
+The language used in the Power Automate Desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
+
 ## Install the Power Automate browser extension 
 
 After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
