@@ -76,6 +76,7 @@ This error can occur for accounts that are on a dedicated (on-premises) mail ser
 To resolve the issue, go to ["REST API is not yet supported for this mailbox" error for request to a mailbox](https://support.microsoft.com/help/4462988/rest-api-is-not-yet-supported-for-this-mailbox-error).
 
 **Unable to send email with attachment error: "Parameter 'Attachment Content' cannot be null or empty."**
+
 Use expressions to encode the attachment with base64. The attachment will be recognized after you're done.
 
 ## More information
