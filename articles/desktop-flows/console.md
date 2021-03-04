@@ -40,6 +40,10 @@ Through the console, users may also create a new flow by pressing the "New flow"
 
 In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
 
+>[!NOTE]
+> When more than one people make changes to a shared desktop flow, the last one that saves the flow overrides all previous actions.
+
+
 ## Console Settings
 
 Press the **Settings** button to configure Power Automate Desktop to your liking:
@@ -48,12 +52,9 @@ Press the **Settings** button to configure Power Automate Desktop to your liking
 
 Under the **Application** category, select whether Power Automate Desktop should launch automatically, whether closing the console will close the application as well, and whether Power Automate Desktop should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
 
-Change the display language, and decide whether Microsoft may collect diagnostic data to improve user experience, under **Application language** and **Data collection**, respectively.
+Decide whether Microsoft may collect diagnostic data to improve user experience under **Data collection**.
 
 >[!NOTE]
 >Only an admin may change Data collection settings.
-
-Finally, access and manage your available licenses in the respective category.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
