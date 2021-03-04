@@ -89,11 +89,6 @@ You can further format the data by using expressions. In following example, the 
 
 - Add the [Send an email (V2)](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action, add the output from an HTML table into the body of the email.
 
-   ![A screenshot that shows Is HTML selected](./media/email/html-selected.png)
-
-   >[!TIP]
-   >Remember to select **Is Html** in the email action.
-
 ## More information
 
 - Overview of [email with flows](email-overview.md)
