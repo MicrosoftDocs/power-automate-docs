@@ -40,6 +40,10 @@ Through the console, users may also create a new flow by pressing the "New flow"
 
 In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
 
+>[!NOTE]
+> When more than one people make changes to a shared desktop flow, the last one that saves the flow overrides all previous actions.
+
+
 ## Console Settings
 
 Press the **Settings** button to configure Power Automate Desktop to your liking:
