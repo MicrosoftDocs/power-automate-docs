@@ -30,7 +30,6 @@ You can create variables for data types such as integer, float, boolean, string,
 
 Variables exist and are global only within the cloud flow that creates them. Also, they persist across any loop iterations inside the flow. 
 
-<!--Todo -- is this true for flows? -->
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
 > [!WARNING]
