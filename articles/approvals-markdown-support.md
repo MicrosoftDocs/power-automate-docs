@@ -46,6 +46,7 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 | **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
 | **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes | **_No_** |
 | **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
+| **Emphasis** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
