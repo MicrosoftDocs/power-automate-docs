@@ -192,9 +192,9 @@ Some of these data types are widely used throughout the application, such as **n
   | **MM**   | Month       |
   | **dd**   | Day         |
   | **HH**   | Hour        |
-  | **mm**   | Minitues    |
+  | **mm**   | Minutes    |
   | **ss**   | Seconds     |
-  | **ff**   | Miliseconds |
+  | **ff**   | Milliseconds |
   | **zzz**  | UTC Offset	 |
 
 [Dates and time data type properties](datatype-properties.md#dates)

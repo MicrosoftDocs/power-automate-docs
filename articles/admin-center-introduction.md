@@ -40,6 +40,9 @@ Learn more about using [environments](https://docs.microsoft.com/power-platform/
 
 Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) in the Power Platform admin guide to create rules that manage how business data is shared between services in flows.
 
+## Activity logging
+
+Learn more about the [logging activities](https://docs.microsoft.com/power-platform/admin/logging-power-automate) that Power Automate does to keep you informed about your users' activities.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
