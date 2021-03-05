@@ -46,40 +46,6 @@ If needed, users can see their current plan by opening the session debugging inf
 
 The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
 
-### Action request limits
-
-There are limits to the number of action executions a flow can make. These executions count all types of actions - including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. You can see the number of actions your flow has executed by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
-
-| Name | Entitlement limit | Interim limit | Notes |
-| ---- | ----- | ----- | ----- |
-| Runs per 5 minutes | 100,000 | n/a | Distribute the workload across more than one flow as necessary. |
-| Runs per 24 hours | 2,000 for Low, 5,000 for MediumLow1, 20,000 for MediumLow2, 25,000 for Medium, and 15,000 for High | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium, and 500,000 for High | Because of the current transition period (in the year of 2020) the interim limits are in place and are less strict than the entitlement limits details in the [requests limits and allocations document](https://aka.ms/platformlimits). The interim limits represent approximations of how many requests will be allowed daily and not guarantees. Actual amounts may be smaller, but will be greater than the entitlement limits during the transition period. These limits will change after the transition period ends. If necessary, distribute the workload across multiple flows and/or the user entitlements of multiple flow creators. | 
-| Concurrent outbound calls | 500 for Low, 2,500 for all others | n/a | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-
-As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Common Data Service. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned above). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
-
->[!TIP]
->Individual connectors have their own limits as well, which often will be hit before the above limits. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
-
-### Runtime endpoint request limits
-
-The runtime endpoint is the direct access URL for a given flow. It starts with something like: `https://prod-00.westus.logic.azure.com:443/`.
-
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Concurrent inbound calls | ~1,000 | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a flow's run history. You can distribute the workload across more than one flow as necessary. |
-| Invoke calls per 5 minutes | 4,500 for Low, 45,000 for all others | You can distribute workload across more than one flow as necessary. |
-
-### Content throughput limits
-
-The content throughput limits refer to the amount of data that is read from or written to the run history of the flow. 
-
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low, 10 GB for MediumLow1, MediumLow2 and Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
-
 ## Flow definition limits
 
 Here are the limits for a single flow definition:
@@ -124,7 +90,7 @@ Limits on how long flows will remain turned on before they expire and get turned
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. |
-| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivty, the flow creator will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
+| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
 | Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
 
 ## Concurrency, looping, and debatching limits
