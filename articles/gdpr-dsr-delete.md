@@ -44,7 +44,7 @@ The following table shows which personal data is automatically deleted and which
 
 *Each of these resources contains “Created By” and “Modified By” records that include personal data. For security reasons, these records are retained until the resource is deleted.
 
-**For environments that include a Common Data Service database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in Common Data Service. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Common Data Service.
+**For environments that include a Microsoft Dataverse database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in Dataverse. Please see [Executing DSRs against Dataverse Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Dataverse.
 
 For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
@@ -52,7 +52,7 @@ For the data and resources that require manual review, Power Automate offers the
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
 
-Here is the breakdown of experiences that are available for an administrator to delete each types of personal data within each type of resource:
+Here is the breakdown of experiences that are available for an administrator to delete each type of personal data within each type of resource:
 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
@@ -71,7 +71,7 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Custom connector permissions|Power Automate Maker Portal| ||
 |Approval History|Microsoft Power Apps Maker Portal*|||
 
-*With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within Common Data Service. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Common Data Service.
+*With the introduction of Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within Dataverse. Please see [Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Dataverse.
 
 \*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate admin center.
 
@@ -132,17 +132,17 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 ## Delete approval history from Power Automate
 
- Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
+ Approval data for Power Automate is stored within the current or previous version of Microsoft Dataverse. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
 1. Sign into [PowerApps](https://make.powerapps.com/).
 
-1. Select **Data**, and then select **Entities**.
+1. Select **Data**, and then select **Tables**.
 
 1. Select the ellipsis **(…)** for the **Flow Approval** entity, and then open the data in Microsoft Excel.
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
-Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use Common Data Service.
+Please see [Executing DSRs against Microsoft Dataverse Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use Microsoft Dataverse.
 
 
 ## Delete connections created by a user
