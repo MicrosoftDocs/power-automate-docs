@@ -85,7 +85,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 Use the **filtering attributes** field to define a set of comma-separated, unique names for the entity, as shown in the following image. The flow runs only when these attributes change on the specific records. 
 
-   ![Graphical user interface, text, application, email Description automatically generated](media/3f3b5bd2a3f02d0c08ce42e83b3cf6a0.png)
+   ![](../media/create-update-delete-trigger/3f3b5bd2a3f02d0c08ce42e83b3cf6a0.png)
 
 
 >[!NOTE]
@@ -103,15 +103,15 @@ and [query functions](https://docs.microsoft.com/powerapps/developer/common-data
 >[!NOTE]
 >Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
 
-   ![Graphical user interface, text, application, email Description automatically generated](../media/create-update-delete-trigger/e3b93e9abb8f7b128c668a3d14dea794.png)
+   ![](../media/create-update-delete-trigger/e3b93e9abb8f7b128c668a3d14dea794.png)
 
-   ![Graphical user interface, text, application, email Description automatically generated](media/049255557d84d40e227e309b2a2df979.png)
+   ![](../media/create-update-delete-trigger/049255557d84d40e227e309b2a2df979.png)
 
 ### Wait condition using Postpone Until**
 
 Use an OData style time stamp in the **Postpone Until** property to delay the flow trigger until a specific UTC time. The key benefit of using this property instead of the standard **Delay Until** action is that **Postpone Until** never expires, allowing the flow run to wait for long periods of time.
 
-   ![Graphical user interface, text, application, email Description automatically generated](media/f92b17de18ba7c9af2eeac031a37f5fd.png)
+   ![](../media/create-update-delete-trigger/f92b17de18ba7c9af2eeac031a37f5fd.png)
 
 ### User impersonation using Run As
 
@@ -136,7 +136,7 @@ If nothing is specified, it defaults to the flow owner that created the flow –
    - Record owner – this is the user who owns the Microsoft Dataverse record which underwent a change, causing the flow to be triggered. If a record is owned by a team, then this option falls back to run as the flow owner.
    - Triggering user – this is the user that took the action on the Microsoft Dataverse record, causing the flow to get triggered.
 
-   ![Graphical user interface, text, application, email Description automatically generated](../media/create-update-delete-trigger/f5c91e22c72fbec0890d0c97489a165e.png)
+   ![](../media/create-update-delete-trigger/f5c91e22c72fbec0890d0c97489a165e.png)
 
 Additionally, instant flows allow running the steps of any other [connector](https://docs.microsoft.com/connectors/) (such as [Microsoft Teams](https://docs.microsoft.com/connectors/teams/), [Microsoft 365
 Outlook](https://docs.microsoft.com/connectors/office365/), or [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/)) in the same flow using the invoker’s connection. To do so, follow these steps –
