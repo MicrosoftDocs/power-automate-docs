@@ -107,7 +107,7 @@ and [query functions](https://docs.microsoft.com/powerapps/developer/common-data
 
    ![](../media/create-update-delete-trigger/049255557d84d40e227e309b2a2df979.png)
 
-### Wait condition using Postpone Until**
+### Wait condition using Postpone Until
 
 Use an OData style time stamp in the **Postpone Until** property to delay the flow trigger until a specific UTC time. The key benefit of using this property instead of the standard **Delay Until** action is that **Postpone Until** never expires, allowing the flow run to wait for long periods of time.
 
