@@ -237,6 +237,19 @@
         href: ./forms/how-to.md    
       - name: Troubleshoot known issues with forms
         href: ./forms/troubleshoot-issues.md  
+    - name: Use flows with Microsoft Dataverse
+      items:
+      # - name: Overview 
+      #   href: ./dataverse/overview.md
+      #   displayName: Use flows with Microsoft Forms
+      # - name: Get started
+      #   href: ./dataverse/get-started.md
+      # - name: Top scenarios
+      #   href: ./dataverse/popular-scenarios.md
+      - name: Trigger flows when a record changes
+        href: ./dataverse/create-update-delete-trigger.md    
+      # - name: Troubleshoot known issues with Dataverse
+      #   href: ./dataverse/troubleshoot-issues.md  
   - name: Solutions
     items:
     - name: Overview
