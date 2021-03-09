@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 7/29/2020
+ms.date: 03/09/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -129,11 +129,13 @@ When your creative juices start *flowing*, you might create many flows. Don't wo
 
 ## Get notifications when something's wrong
 
-Use the Power Automate notification center (located at the top right of the designer) to quickly see a list of flows have failed recently. The notification center displays a number that indicates the number of flows that failed recently.
+Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed. 
 
-From the notification center, you can navigate to the **Activity** page of Power Automate to see all your flows that recently ran, sent notifications, or failed.
+1. Sign into [Power Automate](https://powerautomate.com).
+1. Select **Monitor** on the left side of the screen.
+1. Select **Cloud flow activity**.
 
-![Notification center](media/getting-started/notification-center.png)
+   ![Notification center](media/getting-started/cloud-flow-activity.png)
 
 ## Use the mobile app 
 
