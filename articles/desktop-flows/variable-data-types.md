@@ -42,7 +42,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Boolean value** - The value can be either **True** or **False**. 
   
-  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%%**. 
+  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%**. 
   
   Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
