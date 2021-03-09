@@ -1,6 +1,6 @@
 ---
-title: Overview of flows with Microsoft Forms | Microsoft Docs
-description: Learn how to use flows within Microsoft Teams.
+title: Overview of Forms triggers and actions within flows | Microsoft Docs
+description: Use Forms within flows-Get response details, when a new response is submitted
 services: ''
 suite: flow
 documentationcenter: na
