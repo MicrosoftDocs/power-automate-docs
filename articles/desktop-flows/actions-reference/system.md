@@ -77,6 +77,9 @@ Executes an application or opens a document by executing the associated applicat
 |Can't retrieve application's main window handle|Indicates a problem retrieving the application's main window handle|
 |Can't execute application or open file|Indicates a problem executing the specified application or opening the specified file|
 
+##### <a name="runapplicationbase_example"></a> Example
+![Run application action example](media\system\run-application-example.png)
+
 ### <a name="rundoscommand"></a> Run DOS command
 Executes a DOS command or console application in invisible mode and retrieves its output upon completion
 

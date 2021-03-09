@@ -150,6 +150,9 @@ Modifies a group in the Active Directory
 |Object already exists|Indicates that an object with the specified name already exists in the Active Directory|
 |Active Directory error|General Active Directory error|
 
+##### <a name="modifygroupaction_example"></a> Example
+![Modify Group action example](media\activedirectory\modify-ad-group-properties-exercise.png)
+
 ## Object
 Create or manipulate an object in an Active Directory server
 ### <a name="createobject"></a> Create object
@@ -288,6 +291,9 @@ Creates a user in the Active Directory
 |Object already exists|Indicates that an object with the specified name already exists in the Active Directory|
 |Couldn't set or update password|Indicates a problem setting or updating the user's password|
 |Active Directory error|General Active Directory error|
+
+##### <a name="createuser_example"></a> Example
+![Create User action example](media\activedirectory\create-ad-user-properties-exercise.png)
 
 ### <a name="getuserinfo"></a> Get user info
 Gets a user's information in the Active Directory
