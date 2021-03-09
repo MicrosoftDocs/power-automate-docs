@@ -40,6 +40,10 @@ If the occurred error is a **design time** error, the platform also displays a s
 
 ![An error description inside an action.](media\errors\error-action.png)
 
+If you want to implement an error handling behavior, you can use the **Get last error** action to retrieve the latest occurred error and use it in other actions in the flow. 
+
+![The Get last error action.](media\errors\get-last-error-action.png)
+
 ## The error detail view
 
 To find more information about a thrown exception, navigate to the **Errors** pane and double-click on the respective error. Once you do so, the **Error details** dialog box will appear. This dialog box displays information about:
