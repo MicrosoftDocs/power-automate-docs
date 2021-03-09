@@ -45,6 +45,11 @@ To use a captured element in an action, simply select it from the drop-down list
 
 ![Add UI element as input](./media/ui-elements/add-ui-element-as-input.png)
 
+
+To find where the element is being used in the flow, right-click the element and select **Find usages**. The results will show the actions which use the it. Double-clicking on a result will highlight the action in the workspace.
+
+![Add UI element as input](./media/ui-elements/ui-element-right-click.png)
+
 ## Element Types
 
 Captured elements are divided into two main categories, based on the type of application they were captured from: **UI controls** and **Web controls**.
@@ -62,3 +67,4 @@ To manually enter the selector’s value, toggle off Visual editor, and the text
 ![The manual selector editor](./media/ui-elements/manual-selector-editor.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
