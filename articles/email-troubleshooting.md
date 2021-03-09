@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot common issues with Microsoft 365 Email | Microsoft Docs
-description: Troubleshoot common issues with Microsoft 365 Email.
+description: Troubleshoot common issues with Microsoft 365, Outlook Email, or mail notifications.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/10/2020
+ms.date: 03/04/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -67,13 +67,17 @@ As of May 6, 2020, shared mailbox support was added for certain operations with 
 
 This error can occur for accounts that are on a dedicated (on-premises) mail server when:
 
-1. The mailbox is on a dedicated Microsoft Exchange Server, or it isn't a valid Office 365 mailbox.
+1. The mailbox is on a dedicated Microsoft Exchange Server, or it isn't a valid Microsoft 365 mailbox.
 
-1. The mailbox is an Outlook.com account that hasn't been enabled.
+1. The mailbox is an Outlook.com account that isn't enabled.
 
-1.  The mailbox isn't part of an Office 365 plan that includes Power Automate.
+1.  The mailbox isn't part of an Microsoft 365 plan that includes Power Automate.
 
 To resolve the issue, go to ["REST API is not yet supported for this mailbox" error for request to a mailbox](https://support.microsoft.com/help/4462988/rest-api-is-not-yet-supported-for-this-mailbox-error).
+
+**Unable to send email with attachment error: "Parameter 'Attachment Content' cannot be null or empty."**
+
+Use expressions to encode the attachment with base64. The attachment will be recognized after you're done.
 
 ## More information
 
