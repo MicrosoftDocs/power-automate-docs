@@ -1,6 +1,6 @@
 ---
-title: Learn how to automate and run repetitive tasks with instant flows | Microsoft Docs
-description: Introduction to instant flows.
+title: Run repetitive tasks with instant flows | Microsoft Docs
+description: Learn how to manually trigger a flow.
 services: ''
 suite: flow
 documentationcenter: na
