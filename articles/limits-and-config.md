@@ -36,7 +36,7 @@ Flows have different limits depending on their *performance profile*. There are 
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials | 
 | MediumLow1          | - Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br />- Dynamics 365 Team Member |
-| MediumLow2          | - Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses) |
+| MediumLow2          | - Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses) |
 | Medium              | - All instant flows, such as flows with Button or Power Apps triggers, or child flows |
 | High                | - Power Automate per flow plan |
 
@@ -123,13 +123,13 @@ There are limits to the number of *actions* a cloud flow can run. These runs are
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Runs per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Runs per 24 hours | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](https://aka.ms/platformlimits). These limits represent approximations of how many requests will be allowed daily. They are not not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
+| Runs per 24 hours | 10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
 | Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
-As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](https://aka.ms/platformlimits).
+As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
 >[!TIP]
->Individual connectors have their own limits as well, which often will be reached before the limits mentioned earlier. Be sure to check [the documentation for your connector](https://docs.microsoft.com/connectors/).
+>Individual connectors have their own limits as well, which often will be reached before the limits mentioned earlier. Be sure to check [the documentation for your connector](/connectors/).
 
 ### Runtime endpoint request limits
 
@@ -215,7 +215,7 @@ Here are the limits for custom connectors that you can create from web APIs.
 
 ## SharePoint limits
 
-There are [limitations](https://docs.microsoft.com/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
+There are [limitations](/connectors/sharepointonline/#limits) on how you can use Microsoft SharePoint with Power Automate and Power Apps.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
@@ -225,7 +225,7 @@ See [IP address configuration](ip-address-configuration.md) for additional detai
 
 ## IP addresses
 
-Requests from Power Automate use IP addresses that are associated with the region of the [environment](https://docs.microsoft.com/power-automate/environments-overview-maker) in which your flow exists.
+Requests from Power Automate use IP addresses that are associated with the region of the [environment](./environments-overview-maker.md) in which your flow exists.
 
 Use these IP address in your allow list to facilitate communications from Power Automate. 
 

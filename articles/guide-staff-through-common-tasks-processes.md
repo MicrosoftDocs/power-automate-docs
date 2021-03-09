@@ -41,7 +41,7 @@ Power Apps includes several types of processes, each designed for a different pu
 Similar to processes, you can also create business rules and recommendations. More information: [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
-> Using processes can impact the license requirements for Power Apps and flows. More information: [Entity license requirements](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses) 
+> Using processes can impact the license requirements for Power Apps and flows. More information: [Entity license requirements](/powerapps/maker/common-data-service/data-platform-entity-licenses) 
 
 
 <a name="BKMK_BP"></a>   
@@ -60,7 +60,7 @@ Use workflows to automate business processes behind the scenes. Workflows are ty
 ## When to use Power Automate
 
 
-Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Microsoft 365, or SharePoint. You can trigger a cloud flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
+Use Power Automate when you need to create automated workflows that perform actions between your environment and favorite app or service, such as Dynamics 365, Twitter, Dropbox, Google services, Microsoft 365, or SharePoint. You can trigger a cloud flow based on a specific action, or invoke from within your app. More information: [Use Power Automate to automate processes across services](/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services)  
   
 <a name="BKMK_Where"></a>   
 ## Where do I go to create processes?  

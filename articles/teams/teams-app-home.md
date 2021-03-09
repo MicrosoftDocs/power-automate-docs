@@ -51,7 +51,7 @@ The Power Automate app in Microsoft Teams only shows your flows that are located
 
 [Create flows in Microsoft Teams](./teams-app-create.md).
 
-View the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).
+View the [Microsoft Teams connector documentation](/connectors/teams/).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

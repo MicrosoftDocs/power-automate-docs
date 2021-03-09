@@ -209,7 +209,7 @@ Here's the implementation of the **and** expression that identifies all persons 
 
 ## Use functions in expressions
 
-Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Power Automate](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information: [Functions reference for Workflow Definition Language in Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -80,13 +80,13 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 >[!TIP]
 >The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
  
-- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](/adaptive-cards/).
  
 ## Learn more 
  
-- Create your [first adaptive card](https://docs.microsoft.com/power-automate/create-adaptive-cards)
-- Full documentation for the [Microsoft Teams connector](https://docs.microsoft.com/connectors/teams/)
-- Full documentation on [Adaptive Cards IO](https://docs.microsoft.com/adaptive-cards) 
+- Create your [first adaptive card](./create-adaptive-cards.md)
+- Full documentation for the [Microsoft Teams connector](/connectors/teams/)
+- Full documentation on [Adaptive Cards IO](/adaptive-cards) 
 
 
 

@@ -27,7 +27,7 @@ Create flows instead of classic Common Data Service workflows to build new autom
 This table summarizes a comparison between Power Automate and classic workflows capabilities.
 
 
-*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming capabilities that will help you replace classic background workflows with flows, see [What's new and planned for Power Automate](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features).*
+*We are continuously adding new capabilities to Power Automate. We'll update information in this table as Power Automate gains capabilities; check back often! For information about upcoming capabilities that will help you replace classic background workflows with flows, see [What's new and planned for Power Automate](/power-platform-release-plan/2020wave2/power-automate/planned-features).*
 
 <table>
 <tr>
@@ -498,7 +498,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **Workflows with complex else-if conditional logic**  
 
-  Instead of using conditions, we recommend using the [switch action](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-switch-statement#add-switch-statement).
+  Instead of using conditions, we recommend using the [switch action](/azure/logic-apps/logic-apps-control-flow-switch-statement#add-switch-statement).
 
 - **Workflows that run from plug-in/code**  
 
@@ -508,13 +508,13 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   - To run flows based on events in an external service, leverage more than 260 out-of-the-box connectors.
 
-  - For scenarios where a connector you need isn’t available out-of-the-box, easily create your own custom connector. More information: [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
+  - For scenarios where a connector you need isn’t available out-of-the-box, easily create your own custom connector. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
-  - Finally, if there are scenarios where you cannot trigger your flow using Common Data Service connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](https://docs.microsoft.com/azure/connectors/connectors-native-reqres) to invoke the flow.
+  - Finally, if there are scenarios where you cannot trigger your flow using Common Data Service connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](/azure/connectors/connectors-native-reqres) to invoke the flow.
 
 - **Workflows that run recursively**
 
-  Use the [do-until](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) or [apply to each](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop) loop in flows instead.
+  Use the [do-until](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) or [apply to each](/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop) loop in flows instead.
 
 - **Workflows that need a list of records**  
 
@@ -526,7 +526,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **Workflows for which runs were managed to ensure activities were executed in a single transaction**  
 
-  Use the [changeset action](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to ensure that all actions within it are performed as a single, atomic unit in which either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations are rolled back.
+  Use the [changeset action](/business-applications-release-notes/april19/microsoft-flow/automated-flows-support-change-sets-common-data-service) to ensure that all actions within it are performed as a single, atomic unit in which either all succeed, or fail as a group. If any one of the actions in a change set fails, changes made by completed operations are rolled back.
 
 - **Monitor background workflow runs for failures**  
 

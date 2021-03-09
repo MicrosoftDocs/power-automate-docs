@@ -28,7 +28,7 @@ search.audienceType:
 On the left-side navigation pane in Power Automate, select **Process advisor (preview)** > **Processes**, and then select your process to go to the **Details** screen. This is where you access most of your process management activities.
 
 > [!NOTE]
-> Before you can view analytics, your Power Platform administrator has to [enable the TDS endpoint setting](https://docs.microsoft.com/power-platform/admin/settings-features) for your organization in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+> Before you can view analytics, your Power Platform administrator has to [enable the TDS endpoint setting](/power-platform/admin/settings-features) for your organization in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Analyze feature
 

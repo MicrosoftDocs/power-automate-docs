@@ -28,7 +28,7 @@ Flows created in a solution are known as *solution-aware* flows. You can add mul
 
 You must have the following components to create solutions, and solution-aware flows:
 
-- [Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+- [Dataverse](/powerapps/maker/data-platform/data-platform-intro)
 - An environment with version 9.1.0.267 or later.
 
   To check your version, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Environments**, and then select the environment in which you are interested. The **Details** tab displays all configuration information for the environment that you selected.
