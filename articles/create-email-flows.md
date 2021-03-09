@@ -35,7 +35,7 @@ There are four ways to create flows to manage your email:<!--note from editor: T
    >[!TIP]
    >You can [copy and paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the process.
 
-- Create a cloud flow from scratch&mdash;If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](https://docs.microsoft.com/power-automate/get-started-logic-flow) and then connect the services you want.
+- Create a cloud flow from scratch&mdash;If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](./get-started-logic-flow.md) and then connect the services you want.
 
 - Create a cloud flow from a connector&mdash;In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for "outlook" to find connectors for Office 365 Outlook.
 

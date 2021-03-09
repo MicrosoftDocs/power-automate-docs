@@ -33,7 +33,7 @@ Here are some tips before you start using WinAutomation with desktop flows.
 
 1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *cloud* or *desktop* flows*.
 
-1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](https://docs.microsoft.com/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
+1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
 1.  Existing WinAutomation licensed users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home)
 
@@ -41,9 +41,9 @@ Here are some tips before you start using WinAutomation with desktop flows.
 
 To run WinAutomation as part of Power Automate, you will need to:
 
-1.  Ensure your machine meets the [requirements for desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/setup#prerequisites).
+1.  Ensure your machine meets the [requirements for desktop flows](./setup.md#prerequisites).
 
-2.  Install the [desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/setup) app, and then install and configure the on-premises data gateway.
+2.  Install the [desktop flows](./setup.md) app, and then install and configure the on-premises data gateway.
 
 >[!IMPORTANT]
 >You must have the latest version of WinAutomation and Power Automate Desktop to record, test, or run UI automation.
@@ -96,7 +96,7 @@ You can now create your own WinAutomation Processes and test them locally.
     unattended mode. 
     
     >[!TIP]
-    >Learn more about [creating and running desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
+    >Learn more about [creating and running desktop flows](./create-desktop.md).
 
 1.  Create a new desktop flow. Delete the default first step of “Record app”.
 
@@ -129,12 +129,12 @@ You can now create your own WinAutomation Processes and test them locally.
     >Do not pass sensitive text such as passwords through the command line arguments.
 
     >[!IMPORTANT]
-    >If you’re running desktop flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended desktop flows, click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
+    >If you’re running desktop flows on an unattended cluster, ensure that WinAutomation is installed on all machines on which the target Process is copied. For more information on attended and unattended desktop flows, click [here](./run-desktop-flow.md).
 
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The Windows recorder (V1) flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
-    >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](https://docs.microsoft.com/power-automate/desktop-flows/upgrade).
+    >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](./upgrade.md).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
@@ -253,10 +253,10 @@ ProcessRobot
 -   Learn more at [WinAutomation Academy](https://academy.softomotive.com/).
 -   Get support for [WinAutomation](https://support.softomotive.com/support/home).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
--   Learn to [create Windows recorder (V1) flows](https://docs.microsoft.com/power-automate/desktop-flows/create-desktop).
--   Learn how to [run desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/run-desktop-flow).
--   Learn to [manage desktop flows](https://docs.microsoft.com/power-automate/desktop-flows/manage).
--   Learn more about the [on-premises gateway](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway).
+-   Learn to [create Windows recorder (V1) flows](./create-desktop.md).
+-   Learn how to [run desktop flows](./run-desktop-flow.md).
+-   Learn to [manage desktop flows](./manage.md).
+-   Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

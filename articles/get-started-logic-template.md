@@ -28,7 +28,7 @@ A good way to get started is to use a template that is suited to your organizati
 [!div class="mx-imgBorder"] 
 
 
-You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
+You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
 Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Microsoft 365.
 

@@ -19,7 +19,7 @@ search.audienceType:
 # Custom Common Data Service workflow activities (workflow assemblies)
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Common Data Service supports the registration and execution of custom workflow activities in addition to the out-of-box activities provided by [Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/). 
+Common Data Service supports the registration and execution of custom workflow activities in addition to the out-of-box activities provided by [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/). 
 
 Windows Workflow Foundation includes an activity library that provides activities for control flow, sending and receiving messages, doing work in parallel, and more. However, to build applications that satisfy your business needs, you may need activities that perform tasks specific to that application. To make this possible, Windows Workflow Foundation supports the creation of custom workflow activities.
 

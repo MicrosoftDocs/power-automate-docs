@@ -27,7 +27,7 @@ search.audienceType:
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
   
@@ -230,7 +230,7 @@ To do this, you'll need to do two things:
 1. Add the instant flow as a step in the **Lead to Opportunity Sales Process**.
 
 > [!TIP]
-> Only [solution-aware flows](https://docs.microsoft.com/flow/overview-solution-flows) can be added as a step in a business process. 
+> Only [solution-aware flows](/flow/overview-solution-flows) can be added as a step in a business process. 
 
 ### Build an instant flow
 
@@ -368,7 +368,7 @@ Select an instance to open it in a new tab, or select it to copy a link, share a
  - [Business process flows overview](business-process-flows-overview.md)  
  - [Enhance business process flows with branching ](enhance-business-process-flows-branching.md)
  - [Overview of approvals](sequential-modern-approvals.md)
- - [Detailed steps for adding an instant flow to a business process flow](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
+ - [Detailed steps for adding an instant flow to a business process flow](/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
 
 
 

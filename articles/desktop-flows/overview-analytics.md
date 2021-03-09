@@ -26,12 +26,12 @@ search.audienceType:
 As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with desktop flows:
 
 1. The Power Platform [admin center](https://aka.ms/ppac).
-1. The [Center of Excellence (CoE) Starter Kit](https://docs.microsoft.com/power-platform/guidance/coe/setup).
+1. The [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/setup).
 
 
 ## Learn more
 
-- Analyze the [desktop flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
+- Analyze the [desktop flows risk assessment](/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
 - [Create Windows recorder (V1) flows](create-desktop.md).
 - [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).

@@ -44,10 +44,10 @@ landingContent:
        - linkListType: overview
          links:          
           - text: Create your first flow
-            url: /power-automate/getting-started#create-your-first-flow
+            url: ../getting-started.md#create-your-first-flow
           - text: What is desktop flow?
-            url: /power-automate/desktop-flows/overview
+            url: ../desktop-flows/overview.md
           - text: Power Platform Center of Excellence (CoE) kit
             url: /power-platform/guidance/coe/starter-kit
           - text: Power Platform ALM guide
-            url: /power-platform/alm/          
+            url: /power-platform/alm/

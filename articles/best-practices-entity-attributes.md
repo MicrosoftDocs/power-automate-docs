@@ -83,7 +83,7 @@ As you use the business process, there are many things that you might want to do
 -   Show informative messages and run calculations based on the active business process flows, the active or selected stage, or events such as moving the active stage.
 
 > [!TIP]
-> For scenarios like these, use the supported set of [client APIs](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) for business process flows.
+> For scenarios like these, use the supported set of [client APIs](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) for business process flows.
 >
 
 ### Using the active stage to run server-side logic

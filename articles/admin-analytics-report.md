@@ -30,9 +30,9 @@ Use the shared flows report to learn who your app champions are and then empower
 
 Visit the Microsoft Power Platform documentation to get the details how to:
 
-- View the [shared flows reports](https://docs.microsoft.com/power-platform/admin/analytics-flow#shared-report).
-- View the [connectors reports](https://docs.microsoft.com/power-platform/admin/analytics-flow#connectors-report).
-- [Filter views](https://docs.microsoft.com/power-platform/admin/analytics-flow#view-reports-in-other-environments).
+- View the [shared flows reports](/power-platform/admin/analytics-flow#shared-report).
+- View the [connectors reports](/power-platform/admin/analytics-flow#connectors-report).
+- [Filter views](/power-platform/admin/analytics-flow#view-reports-in-other-environments).
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -197,7 +197,7 @@ Perform the following steps to benefit from multiple UI flows on a single device
 Power Automate automatically scales the number of concurrent UI flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-desktop-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
-If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).
+If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](/windows-server/remote/remote-desktop-services/rds-client-access-license).
 
 >[!NOTE]
 >Running multiple concurrent UI flows by the **same user** is not supported. You will need to have different users running UI flows at the same time to benefit from this feature.
@@ -206,7 +206,7 @@ If you want to use more than two parallel user sessions on Windows Server, you m
 
 You can choose to distribute UI flow runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
-Follow [these steps to add a gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
+Follow [these steps to add a gateway to create a cluster](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
 
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
@@ -253,7 +253,7 @@ If a UI flow run fails, correct the issue, and then try the following steps to r
 1. If you are running UI flows on a non-English language operating system and you receive a *502 - Bad request* message, confirm you have followed the [steps to upgrade your UI flows from preview](upgrade.md).
 
 
-1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot).
+1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot).
 
 1. If the **gateway status** is **online**, try the following actions:
 
@@ -263,9 +263,9 @@ If a UI flow run fails, correct the issue, and then try the following steps to r
 
 ## Learn more
 
- - Install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](https://docs.microsoft.com/flow/gateway-manage) documentation.
- - [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+ - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
+ - [Use the on-premises data gateway app](/flow/gateway-manage) documentation.
+ - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 
 

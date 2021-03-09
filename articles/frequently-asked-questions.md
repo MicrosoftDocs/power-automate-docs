@@ -85,7 +85,7 @@ Power Automate connects to more than 100 data sources out of the box, and we’r
 * Mailchimp
 * Customer APIs
 
-You can find a full list of available connectors [here](https://go.microsoft.com/fwlink/?LinkId=832211).
+You can find a full list of available connectors [here](/connectors/).
 
 You can access data sources in your own IT infrastructure through the [on-premises data gateway](gateway-manage.md).
 
@@ -155,7 +155,7 @@ Power Automate is the successor to SharePoint Designer for many common business 
 
 ### How does Power Automate ensure that corporate data isn't accidentally released to social media services?
 
-Administrators can create [data loss prevention policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) to ensure that only sanctioned services are used in Power Automate.
+Administrators can create [data loss prevention policies](/power-platform/admin/prevent-data-loss) to ensure that only sanctioned services are used in Power Automate.
 
 ### Does Power Automate support service accounts?
 
@@ -170,7 +170,7 @@ Power Automate offers both free and paid service levels. [Learn more about prici
 
 ## Learn more
 
-* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Power Automate
+* Take a [guided learning tour](/learn/paths/automate-process-using-flow) of Power Automate
 * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
 
 

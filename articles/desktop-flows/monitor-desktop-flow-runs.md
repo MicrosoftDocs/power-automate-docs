@@ -39,7 +39,7 @@ From this page you can view all your desktop flow runs for the current environme
 In order to see runs in this list, one of the following must be true: 
 - You have [run an attended or unattended desktop flow](run-desktop-flow.md) in the current environment 
 - Another user has shared their desktop flow (add documentation link) with you, which has run in the current environment 
-- You have [permission](https://docs.microsoft.com/power-platform/admin/database-security) to see view all data in the environment 
+- You have [permission](/power-platform/admin/database-security) to see view all data in the environment 
 
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 

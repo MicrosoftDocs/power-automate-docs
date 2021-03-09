@@ -412,7 +412,7 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server.  Configure this value to http://localhost:30662/ to run the sample app.
 6.  Select **Register**.
 7.  On the app **Overview** page, note the application (client) ID value.
-8.  The sample requires [implicit grant flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
+8.  The sample requires [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
 9.  In **Advanced settings**, under **Implicit grant**, enable both **ID tokens** and **Access tokens** checkboxes. ID tokens and access
     tokens are required since this app needs to sign in users and call Flow API.
 10. Select **Save**.

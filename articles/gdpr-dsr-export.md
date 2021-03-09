@@ -34,7 +34,7 @@ Power Automate offers the following experiences to find or export personal data 
 
 * **Website access:** sign into the [Power Apps admin center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 |**Customer data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
@@ -118,7 +118,7 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## Export a list of a user’s connection permissions
 
-A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -148,7 +148,7 @@ Follow these steps to export a list of customer connectors:<!-- Edit note: Is it
 
     ![Export custom connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
 
-In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
+In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell) to export all custom connectors.
 
 ~~~~
 Add-PowerAppsAccount
@@ -168,7 +168,7 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## Export a user’s custom connector permissions
 
-A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -210,7 +210,7 @@ Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 ## Export Gateway Settings
-Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
 
 
 

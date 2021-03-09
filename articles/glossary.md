@@ -61,7 +61,7 @@ The following terms are commonly used in Power Automate.
 
 **Connectors:** Connectors allow users to connect popular services (such as Twitter, Outlook, Gmail, and more) to Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They contain a set of pre-built triggers ("when a new email arrives"…) and actions ("upload email attachment to SharePoint and My App") to be used in apps and workflows.
 
- [Connectors documentation](https://docs.microsoft.com/connectors/)
+ [Connectors documentation](/connectors/)
 
 **Custom connectors:** Custom connecters allow users to connect a web service to Power Automate. Users teach Power Automate about the characteristics of the web service which include authentication, the triggers and actions that it supports, and the parameters and outputs for each of those actions. Custom connectors must be registered before they can be shared with your organization.
 
@@ -132,7 +132,7 @@ Windows and web applications. UI flows record and playback user interface action
 
 ## Learn more
 
-* Take a [guided learning tour](https://docs.microsoft.com/learn/paths/automate-process-using-flow) of Power Automate
+* Take a [guided learning tour](/learn/paths/automate-process-using-flow) of Power Automate
 * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
 
 
