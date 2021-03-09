@@ -54,7 +54,8 @@
       "search.app": [
         "Flow"
       ],
-      "toc_preview": true
+      "toc_preview": true,
+      "recommendations": true
     },
     "fileMetadata": {
       "featureFlags": {
