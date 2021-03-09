@@ -75,7 +75,7 @@ To create the flow:
 
     ![run flow](media\getting-started-msa\run-flow.png)
 
-1. Close process designer and save the flow. Now you can run the flow from the console.
+1. Close flow designer and save the flow. Now you can run the flow from the console.
 
     ![run flow console](media\getting-started-msa\run-flow-console.png)
 
