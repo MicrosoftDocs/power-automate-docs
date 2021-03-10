@@ -78,14 +78,6 @@ These are the two permission levels you can use when you share desktop flows:
 
 Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting the **Manage access** link on the desktop flow details page.
 
-**Known issues and limitations:**
-
-- Currently, you can only view your own flow runs. In the future, we will have the capability for co-owners to view the runs of all users.
-
-- Currently, you can view the list of co-owned and user flows only on Power Automate portal. Soon, you will be able to view them from Power Automate Desktop.
-
-- The Desktop flow sharing functionality is currently available on recently created environments only.
-
 
 ## More information
 
