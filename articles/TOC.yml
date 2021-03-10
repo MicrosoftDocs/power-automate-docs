@@ -128,6 +128,8 @@
       items:
       - name: Get started with approvals
         href: get-started-approvals.md
+      - name: Trigger approvals from SharePoint lists
+        href: trigger-sharepoint-listmd
       - name: Single approvals
         href: modern-approvals.md
       - name: Approvals with attachments
