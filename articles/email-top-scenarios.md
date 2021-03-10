@@ -1,18 +1,10 @@
 ---
 title: Top Office 365 Outlook scenarios | Microsoft Docs
-description: Top Office 365 Outlook scenarios.
-services: ''
-suite: flow
-documentationcenter: na
+description: Top scenarios where you can use Power Automate to manage your email.
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: flow
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 11/10/2020
 ms.author: deonhe
 search.app: 
