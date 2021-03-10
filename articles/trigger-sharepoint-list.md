@@ -24,7 +24,7 @@ search.audienceType:
 
 # Create an approval for new items added to a SharePoint list
 
-Imagine that you have a SharePoint list in which employees store requests for devices like monitors or headsets. You want to create an approval process so that everytime an employee adds a request to a SharePoint list, somebody receives a request to approve it.
+Imagine that you have a SharePoint list in which employees store requests for devices like monitors or headsets. You want to create an approval process so that every time an employee adds a request to a SharePoint list, somebody receives a request to approve it.
 
 To follow this guided walkthrough, create a list in a SharePoint site to which you have access. You can use the following example of a list:  
   
