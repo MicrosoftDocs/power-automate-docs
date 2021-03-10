@@ -61,8 +61,8 @@ There are four approval types you can use:
 
 If it’s the first-time you're using approvals in your organization, ensure you have the following prerequisites:
 
-   - [A Microsoft Dataverse database](https://docs.microsoft.com/power-automate/get-started-approvals#permissions-to-create-a-common-data-service-database)
-   - [A valid license to create flows](https://docs.microsoft.com/power-automate/get-started-approvals#license-to-create-flows)
+   - [A Microsoft Dataverse database](get-started-approvals#permissions-to-create-a-dataverse-database).
+   - [A valid license to create flows](get-started-approvals#license-to-create-flows).
 
 
 ## Permissions to create a Dataverse database
