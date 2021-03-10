@@ -68,7 +68,7 @@ Once you have a SharePoint list for which you want to create an approval process
 
 1. Once the flow has been successfully saved, select **Test**.
 
-   ![Test](media/trigger-sharepoint-list/test.png)
+   ![Test the flow](media/trigger-sharepoint-list/test.png)
 
 1. Select, **I’ll select the trigger action**.
 
