@@ -70,7 +70,7 @@ Exits current subflow and returns to the point it was called from
 - This action doesn't include any exceptions
 
 
-### <a name="getlasterror"></a> Go to
+### <a name="getlasterror"></a> Get last error
 Retrieves the last error that occured in the flow
 
 ##### Input Parameters
