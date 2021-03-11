@@ -35,7 +35,7 @@ If you are an administrator or if you would like to provide information to the a
 
 Administrators can create a Microsoft Dataverse database in Power Automate Desktop. After installing Power Automate Desktop, log in with an administrator account and select "Create database".
 
-   ![Create dataverse database admin](../media/create-database/freeorg-create-db.png)
+   ![Create dataverse database admin](/media/create-database/freeorg-create-db.png)
 
 
 ## Add a Microsoft Dataverse database as a Microsoft Teams user
@@ -48,33 +48,33 @@ Follow these steps to create an approval from the Approvals app in Teams.
 
 1. Select **More added apps (...)**.
 
-   ![More added apps](../media/create-database/6e279693dc1346003b348f4ff31bf3a4.png)
+   ![More added apps](/media/create-database/6e279693dc1346003b348f4ff31bf3a4.png)
 
 
 1. Search for **approvals**, and then select the **Approvals** app.
 
 1. Select **New approval request** on the top right of the app.
 
-   ![New approval request button](../media/create-database/a2dd6b437dc9bd0e2a7b5a101195e5ec.png)
+   ![New approval request button](/media/create-database/a2dd6b437dc9bd0e2a7b5a101195e5ec.png)
 
 1. Provide a name for your request.
    For example, **My first request*.
 
 1. Specify yourself in the **Approvers** list.
 
-   ![Name the approval and provide approvers](../media/create-database/2aca0c54c89d3e751c480bd891b691c4.png)
+   ![Name the approval and provide approvers](/media/create-database/2aca0c54c89d3e751c480bd891b691c4.png)
 
 1. Select **Send**.
 
     This starts the process for adding a Dataverse database and may take a few minutes to complete. Once created, you will receive a notification in Teams with a request for approval.
 
-    ![Request for approval](../media/create-database/16e691bbb9d1d39b5fef66270e45bc58.png)
+    ![Request for approval](/media/create-database/16e691bbb9d1d39b5fef66270e45bc58.png)
 
     Your Dataverse database is now added to the default environment. 
 
 1. Restart Power Automate Desktop (exit from the system tray icon).
 
-    ![Power Automate Desktop system tray](../media/create-database/system-tray.png)
+    ![Power Automate Desktop system tray](/media/create-database/system-tray.png)
 
 You can now create desktop flows with Power Automate Desktop.
 
