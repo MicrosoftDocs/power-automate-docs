@@ -76,7 +76,7 @@ Four actions are available when clicking on the three dots next to the desktop f
 
 ## Change priority
 You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner or if you are an admin on the gateway.
-Changing the priority only impacts the current run and not any subsequent ones. If you wish to change the priority of all the upcoming runs, you need to change the priority in the connector action (see Set priority – Link to section).
+Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#setting-a-priority), you need to change the priority in the connector action.
 
 ## Move to top
 The owner of gateway or a user with administrator privileges for the gateway can override the queue priority by moving an item to the top of the queue. That item will be put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
