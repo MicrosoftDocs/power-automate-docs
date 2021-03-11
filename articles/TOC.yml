@@ -132,6 +132,8 @@
         href: trigger-sharepoint-list.md
       - name: Trigger approvals from SharePoint library
         href: trigger-sharepoint-library.md
+      - name: How to - Top scenarios with approval flows
+        href: approvals-howto.md
       - name: Single approvals
         href: modern-approvals.md
       - name: Approvals with attachments
