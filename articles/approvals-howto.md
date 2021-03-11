@@ -1,6 +1,6 @@
 ---
-title: Trigger approvals from a SharePoint document library | Microsoft Docs
-description: Learn how to create an approval flow that triggers when new files are added to a SharePoint library.
+title: How to - Top scenarios with approval flows | Microsoft Docs
+description: Get help on implementing top scenarios for approval processes with flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# How to  
+# How to - Top scenarios with approval flows
   
 Here are the top *how to* questions and answers about approvals in Power Automate.
 
@@ -61,7 +61,7 @@ After the approval request is answered, the flow sends an email to the salespers
 
 To get the response to the approval request, just use the **Outcome** output.  
   
-   ![Outcome](media/approvals-howto/outcome.png)
+   ![Shows the outcome or response from the approver](media/approvals-howto/outcome.png)
 
 The approver sees the approval request like this. 
   
