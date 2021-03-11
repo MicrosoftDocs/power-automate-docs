@@ -26,7 +26,7 @@ search.audienceType:
 
 This article shows you how to create an approval flow for new documents (invoices) when they are added to a SharePoint document library and how to attach the document to the approval request.  
   
-In the approval process, every time a new invoice is added to a SharePOint library, a request is sent for somebody to reviews its contents. If the request is approved, the invoice files are then moved to a folder.
+In the approval process, every time a new invoice is added to a SharePoint library, a request is sent for somebody to reviews its contents. If the request is approved, the invoice files are then moved to a folder.
 
 Follow these steps to complete this tutorial.
 
@@ -106,7 +106,7 @@ We’re done configuring the flow. Now let’s test it.
 
    ![Save and test](media/trigger-sharepoint-library/save-test.png)
 
-1. Power Automate indicates to you when the flow is in test mode. When it is, add a new file to the incoming files folder in the SharePoint document library that you specificed earlier.  
+1. Power Automate indicates to you when the flow is in test mode. When it is, add a new file to the incoming files folder in the SharePoint document library that you specified earlier.  
   
    ![Add a new file](media/trigger-sharepoint-library/new-file.png)
 
