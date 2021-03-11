@@ -24,9 +24,9 @@ search.audienceType:
 
 # Trigger approvals from a SharePoint document library
 
-This article shows you how to create an approval flow for new documents (invoces) when they are added to a SharePoint document library and how to attach the document to the approval request.  
+This article shows you how to create an approval flow for new documents (invoices) when they are added to a SharePoint document library and how to attach the document to the approval request.  
   
-We want to setup an approval process so that every time a new invoice is added to that library, somebody reviews its contents and if approved, the invoice files are moved to a folder.
+In the approval process, every time a new invoice is added to a SharePOint library, a request is sent for somebody to reviews its contents. If the request is approved, the invoice files are then moved to a folder.
 
 Follow these steps to complete this tutorial.
 
@@ -38,9 +38,9 @@ Follow these steps to complete this tutorial.
   
    ![Document approval template](media/trigger-sharepoint-library/template.png)
 
-1. Once the flow is created, configure these three items.
+1. Once the flow is created, configure these items.
 
-   - **Site address** - On the trigger card, select the SharePoint site that contains your list from the list. If the SharePoint site doesn’t appear on the list, just write your SharePoint site URL. 
+   - **Site address** - On the trigger card, select the SharePoint site that contains your list. If the SharePoint site doesn’t appear on the list, just write in your SharePoint site URL. 
    
    - **Folder id:** - Select the folder where you will put the incoming files to be reviewed with an approval.
 
@@ -50,15 +50,17 @@ Follow these steps to complete this tutorial.
 
      ![Configure the template](media/trigger-sharepoint-library/template2.png)
 
-1. Replace the **Start an approval** action with another approval action that will let us attach files to it.
+1. Replace the **Start an approval** action with another approval action that will let you attach files to it.
 
    - Delete the **Start an approval** action from the flow. 
 
         ![Delete the approval action](media/trigger-sharepoint-library/delete-action.png)
 
-   - Where the approval action used to be, add a new action by searching for **Start and wait for an approval**.
+   - Where the approval action used to be, select the vertical line to add a new action.
 
        ![Insert an action](media/trigger-sharepoint-library/insert-action.png)
+
+   - Search for, and then select **Start and wait for an approval**.
 
        ![Select the action to insert](media/trigger-sharepoint-library/select-action.png)
 
@@ -78,7 +80,7 @@ Follow these steps to complete this tutorial.
        
        ![The file name](media/trigger-sharepoint-library/file-name.png)
 
-   Select **Attachments Content – 1**, and then select **File Content**.  
+   - Select **Attachments Content – 1**, and then select **File Content**.  
       
        ![The file contents](media/trigger-sharepoint-library/file-content.png)
 
@@ -86,10 +88,9 @@ Follow these steps to complete this tutorial.
 
    This way if the approver approves the request, the action to copy the file to the second folder runs.  
   
-   ![Expand](media/trigger-sharepoint-library/outcome.png)
+   ![Approval outcome](media/trigger-sharepoint-library/outcome.png)
 
-We’re done configuring the flow. Now let’s test this flow. 
-
+We’re done configuring the flow. Now let’s test it. 
 
 1. Select the **Save** button on the top right. 
    
@@ -97,22 +98,23 @@ We’re done configuring the flow. Now let’s test this flow.
   
    ![Save button](media/trigger-sharepoint-library/save.png)
 
-1. Once the flow has been saved, select the **Test** button.
+1. Once the flow is saved, select the **Test** button.
   
    ![Test button](media/trigger-sharepoint-library/test.png)
 
-1. And then select, **I’ll select the trigger action** and lastly **Save and test**.  
+1. Select, **I’ll select the trigger action**, and then select **Save and test**.  
 
    ![Save and test](media/trigger-sharepoint-library/save-test.png)
 
-1. Power Automate will tell you once the flow is in test mode. When it is, add a new file to the incoming files folder in SharePoint.  
+1. Power Automate indicates to you when the flow is in test mode. When it is, add a new file to the incoming files folder in the SharePoint document library that you specificed earlier.  
   
    ![Add a new file](media/trigger-sharepoint-library/new-file.png)
 
 1. Now, you can see the flow is running.
+
    ![See the flow run](media/trigger-sharepoint-library/run.png)
 
-The person to whom you have assigned the approval will now receive the approval request in various places where they can approve or reject it. The file to review is attached to the approval request for easy reference.
+The person to whom you have assigned the approval now receives the approval request in various places where they can approve or reject it. The file to review is attached to the approval request for easy reference.
 
 **By email**  
   
@@ -124,9 +126,9 @@ If you are not seeing the email displayed correctly, make sure you have the late
   
    ![Approval requests in Power Automate](media/trigger-sharepoint-library/portal.png)
 
-Once the approver approves or rejects the request, the flow execution will continue. If the request was approved, the file you put on the incoming folder will be moved to the other folder.
+Once the the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
 
-   ![The folow continues](media/trigger-sharepoint-library/continue.png)
+   ![The flow continues](media/trigger-sharepoint-library/continue.png)
 
 Congratulations! You have successfully run your flow with approval capabilities. Now that you know the basics, you can build on top of this flow to tailor it to your specific business needs.
 
