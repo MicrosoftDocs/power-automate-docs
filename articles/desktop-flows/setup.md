@@ -67,6 +67,8 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 - A supported keyboard attached.
 
+- An active connection to the Internet.
+
 > [!IMPORTANT]
 > You must have the latest versions of each component to record, test, or run desktop flows.
 
@@ -354,6 +356,7 @@ Using the following registry entry you can prevent users to login on Power Autom
 ***Value***
 - 1: Users will not be able to sign-in using their Microsoft account
 
+<!---
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
 You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account.
@@ -367,10 +370,9 @@ You can use the following registry entry to prevent users from logging into Powe
 
 ***Value***
 - 1: Users will not be able to sign-in using their work or school account
-
+-->
 >[!Note]
->Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When both registry keys are set to 1, users will not be able to login to Power Automate Desktop with either a Microsoft or a work or school account.
-
+>Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. <!---When both registry keys are set to 1, users will not be able to login to Power Automate Desktop with either a Microsoft or a work or school account.-->
 
 ## Restricting access to Power Automate Desktop
 
