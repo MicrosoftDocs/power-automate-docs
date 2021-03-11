@@ -41,7 +41,7 @@ Your business might need other options beyond approve/reject. For example, you m
    - Up to 15%
    - Denied. 
    
-You can customize the list of responses to approval requests by useing **Custom Responses**.
+You can customize the list of responses to approval requests by using **Custom Responses**.
 
 Here's an example.
 
@@ -69,7 +69,7 @@ The approver sees the approval request like this.
  
 ### Using markdown
 
-Markdown is a language that's used to format text into Webpges like headers, tables, or bold text. In an approval request, you can use markdown in the **Details** field to format the information presented to approvers.
+Markdown is a language that's used to format text into Webpages like headers, tables, or bold text. In an approval request, you can use markdown in the **Details** field to format the information presented to approvers.
 
 You can learn more about how to use markdown and the supported apps in the [Use Markdown in Power Automate approval requests](https://docs.microsoft.com/power-automate/approvals-markdown-support) article.
 
