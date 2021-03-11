@@ -31,9 +31,9 @@ A Microsoft Dataverse database stores flows created in Power Automate Desktop.
 
 If you are an administrator or if you would like to provide information to the administrator to create a Dataverse database, see [Add a Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database).
 
-## Create a Microsoft Dataverse Database in Power Automate Desktop
+## Create a Microsoft Dataverse database in Power Automate Desktop
 
-Administrators can create a Microsoft Dataverse database in Power Automate Desktop. After logging in with an administrator account, select "Create database".
+Administrators can create a Microsoft Dataverse database in Power Automate Desktop. After installing Power Automate Desktop, log in with an administrator account and select "Create database".
 
    ![Create dataverse database admin](../media/create-database/freeorg-create-db.png)
 
