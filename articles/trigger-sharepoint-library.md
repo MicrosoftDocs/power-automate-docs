@@ -76,11 +76,11 @@ Follow these steps to complete this tutorial.
    
    - Select **File name**.
        
-       ![file-name](media/trigger-sharepoint-library/file-name.png)
+       ![The file name](media/trigger-sharepoint-library/file-name.png)
 
    Select **Attachments Content – 1**, and then select **File Content**.  
       
-       ![file-content](media/trigger-sharepoint-library/file-content.png)
+       ![The file contents](media/trigger-sharepoint-library/file-content.png)
 
 1. Expand the **Condition** card, and on the left text box, select **Outcome**. 
 
