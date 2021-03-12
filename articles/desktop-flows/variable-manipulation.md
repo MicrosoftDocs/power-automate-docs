@@ -2,7 +2,7 @@
 title: Variable manipulation and the % notation | Microsoft Docs
 description: Variable manipulation and the % notation
 author: georgiostrantzas
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

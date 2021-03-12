@@ -2,7 +2,7 @@
 title: Recording in a desktop flow | Microsoft Docs
 description: Recording in a desktop flow
 author: rokontol
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: rokontol

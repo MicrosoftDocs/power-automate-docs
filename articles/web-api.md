@@ -6,7 +6,7 @@ ms.reviewer: deonhe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: business-applications
+ms.service: power-automate
 ms.technology: 
 ms.author: deonhe
 audience: Power user

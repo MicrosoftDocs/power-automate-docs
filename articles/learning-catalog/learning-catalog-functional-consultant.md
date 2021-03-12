@@ -5,7 +5,7 @@ author: msftman
 ms.topic: article
 ms.date: 03/21/2020
 ms.author: deonhe
-ms.service: flow
+ms.service: power-automate
 ---
 
 # Functional Application Consultant Learning Catalog

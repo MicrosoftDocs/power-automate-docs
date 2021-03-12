@@ -3,7 +3,7 @@ title: Power Automate webinars | Microsoft Docs
 description: Power Automate webinars
 author: KumarVivek
 manager: annbe
-ms.service: flow
+ms.service: power-automate
 ms.topic: conceptual
 ms.custom: 
 ms.date: 02/19/2021

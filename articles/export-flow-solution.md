@@ -6,7 +6,7 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: kvivek
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 10/06/2020
 ms.author: deonhe

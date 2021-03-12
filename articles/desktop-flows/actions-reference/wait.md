@@ -2,7 +2,7 @@
 title: Wait | Microsoft Docs
 description: Wait Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon

@@ -4,7 +4,7 @@ description: "An overview of business process flows in Power Automate."
 ms.custom: ""
 ms.date: 05/06/2019
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""

@@ -2,7 +2,7 @@
 title: Defining inputs and outputs as you plan a Power Automate project | Microsoft Docs
 description: This article explains how you can define inputs and outputs for a Power Automate project, and how to secure sensitive data.
 author: taiki-yoshida
-ms.service: flow
+ms.service: power-automate
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
