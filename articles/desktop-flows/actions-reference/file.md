@@ -2,7 +2,7 @@
 title: File | Microsoft Docs
 description: File Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon

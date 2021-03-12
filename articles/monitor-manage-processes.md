@@ -3,7 +3,7 @@ title: "Monitor and manage background workflow processes with Power Apps | Micro
 ms.custom: "To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
 ms.date: 07/27/2020
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

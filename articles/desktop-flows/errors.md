@@ -2,7 +2,7 @@
 title: Errors | Microsoft Docs
 description: Errors
 author: georgiostrantzas
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz
