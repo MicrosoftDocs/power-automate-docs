@@ -32,7 +32,7 @@ To start a trial, select **Go Premium** on the Power Automate Desktop console.
 
 To become familiar with the available features of Power Automate Desktop, follow the steps below to create a flow.
 
-The presented flow copies all the files located in the Documents folder and backs them up to a secondary drive. The original location of each file is appended to an existing log file.
+The presented flow copies all the files located in the Documents folder and creates a backup to a secondary drive. The original location of each file is appended to an existing log file.
 
 > [!NOTE]
 > To implement this example, a secondary drive has to be connected to your computer. If a secondary drive isn't available, select a different destination folder for the files.
@@ -66,7 +66,7 @@ To create the flow:
 1. Add a **Copy file** action to copy the currently selected file to the desired location. In this example, the destination folder is called **Backup**.
 
     > [!NOTE]
-    > If If a secondary drive isn't available, select a different destination folder for copied file.
+    > If a secondary drive isn't available, select a different destination folder for the copied file.
 
     ![The Copy file action.](media\getting-started-freeorg\getting-started-freeorg-copy-files.png)
 
@@ -74,7 +74,7 @@ To create the flow:
 
     ![The Write text to file action.](media\getting-started-freeorg\getting-started-freeorg-write-text-file.png)
 
-1. To test if the flow runs as expected, select the **Run** button (the button next to the **Save** button) on the upper part of the **Flow designer**.
+1. To test if the flow runs as expected, select the **Run** button on the upper part of the **Flow designer**.
 
 1. To check how every single action is implemented, run the flow step-by-step using the **Run next action** button.
 
