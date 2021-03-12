@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot known issues using flows with Microsoft Forms | Microsoft Docs
-description: Provides information to help troubleshoot known issues using flows with Microsoft Forms
+title: Troubleshoot known issues with Forms in flows | Microsoft Docs
+description: FAQs using Forms - Get response details, when a new response is submitted
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot issues
+# Troubleshoot known issues with Forms in flows
 
 ## Limitations
 
