@@ -63,7 +63,7 @@ To create the flow:
 
     ![The Get file path part action.](media\getting-started-freeorg\getting-started-freeorg-get-file-path-part.png)
 
-1. Add a **Copy file** action to copy the currently selected file to the desired location. In this example, the destination folder is called **Backup**.
+1. Add a **Copy file** action to copy the currently selected file to the desired location. In this example, the destination folder is called **Backup** and it's located in the **D** drive.
 
     > [!NOTE]
     > If a secondary drive isn't available, select a different destination folder for the copied file.
