@@ -71,7 +71,7 @@ This error can occur for accounts that are on a dedicated (on-premises) mail ser
 
 1. The mailbox is an Outlook.com account that isn't enabled.
 
-1.  The mailbox isn't part of an Microsoft 365 plan that includes Power Automate.
+1.  The mailbox isn't part of a Microsoft 365 plan that includes Power Automate.
 
 To resolve the issue, go to ["REST API is not yet supported for this mailbox" error for request to a mailbox](https://support.microsoft.com/help/4462988/rest-api-is-not-yet-supported-for-this-mailbox-error).
 
