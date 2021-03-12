@@ -167,6 +167,9 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
 
 ##### Variables Produced
 |Argument|Type|Description|
