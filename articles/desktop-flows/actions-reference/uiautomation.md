@@ -551,6 +551,9 @@ Expands or collapses a node of a tree view residing in a window
 |Use regular expressions|N/A|Boolean value|False|Specify whether each folder name in the path to interpret as a regular expression|
 |Operation|N/A|Expand, Collapse|Expand|Specify whether to expand or collapse the tree node|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
 
 ##### Variables Produced
 - This action doesn't produce any variables
