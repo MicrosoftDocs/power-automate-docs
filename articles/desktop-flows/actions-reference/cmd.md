@@ -103,6 +103,8 @@ Wait for a specific text on a previously opened CMD session
 |Ignore case|N/A|Boolean value|True|Specifies whether the text to wait should match with standard output or standard error without taking into account the case of the text|
 |Timeout|Yes|Numeric value|0|Specifies whether to wait indefinitely for the text to appear or to fail if the text doesn't show up within a set time period|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables
