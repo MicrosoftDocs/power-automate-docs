@@ -4,7 +4,7 @@ description: "Learn about the different types of business logic you can use in y
 ms.custom: ""
 ms.date: 07/29/2020
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual

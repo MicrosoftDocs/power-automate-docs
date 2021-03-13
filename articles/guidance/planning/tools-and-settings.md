@@ -2,7 +2,7 @@
 title: Tools to test your Power Automate automation | Microsoft Docs
 description: This article introduces you to different tools you can use to check your flows and to detect errors that occur when the automation runs.
 author: taiki-yoshida
-ms.service: flow
+ms.service: power-automate
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
