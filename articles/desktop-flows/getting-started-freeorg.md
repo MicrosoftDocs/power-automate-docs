@@ -2,7 +2,7 @@
 title: Getting started with a work or school account  | Microsoft Docs
 description: Getting started with a work or school account
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: marleon

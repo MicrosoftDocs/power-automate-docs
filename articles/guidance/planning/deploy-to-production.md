@@ -2,7 +2,7 @@
 title: Deploying and refining phase for a Power Automate project | Microsoft Docs
 description: When you deploy an automation, consider how you'll replace the current business process with the new automation, to avoid disrupting the business.
 author: taiki-yoshida
-ms.service: flow
+ms.service: power-automate
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020

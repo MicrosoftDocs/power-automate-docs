@@ -2,7 +2,7 @@
 title: Actions and the actions pane | Microsoft Docs
 description: This section describes the actions and the actions pane in flow designer.
 author: olegmelnykov
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: olmelnyk

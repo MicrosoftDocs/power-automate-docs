@@ -5,7 +5,7 @@ author: msftman
 ms.topic: article
 ms.date: 03/17/2020
 ms.author: deonhe
-ms.service: flow
+ms.service: power-automate
 ---
 # Learning catalog for Power Automate
 
