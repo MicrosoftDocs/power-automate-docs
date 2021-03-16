@@ -13,7 +13,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Power Automate Desktop console
 
 The flow console is the central interface of Power Automate Desktop.
