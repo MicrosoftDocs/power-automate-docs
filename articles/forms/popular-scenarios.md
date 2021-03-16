@@ -1,6 +1,6 @@
 ---
-title: Top scenarios | Microsoft Docs
-description: Popular scenarios using flows within Microsoft Forms.
+title: Top Forms scenarios | Microsoft Docs
+description: Popular scenarios using forms in flows-Get response details, when a new response is submitted.
 services: ''
 suite: flow
 documentationcenter: na
