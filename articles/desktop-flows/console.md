@@ -1,19 +1,18 @@
 ---
 title: Power Automate Desktop console | Microsoft Docs
 description: Power Automate Desktop Flow console
-author: rokontol
+author: mariosleon
 ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: rokontol
-ms.reviewer: rokontol
+ms.author: marleon
+ms.reviewer: 
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-
 # Power Automate Desktop console
 
 The flow console is the central interface of Power Automate Desktop.
