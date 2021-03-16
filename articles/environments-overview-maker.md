@@ -76,7 +76,7 @@ Follow these steps to switch environments:
 Before you create a cloud flow, select the environment into which you'll add the flow and its resources.
 
 > [!NOTE]
-> If you create a cloud flow in the wrong environment, you'll have to delete it, and then create it in the correct environment.
+> If you create a cloud flow in the wrong environment, you can export it from the wrong environment and then import it into the correct environment. Alternatively, you can delete it from the wrong environment, and then create it in the correct environment.
 
 Consider the following factors when choosing an environment to host your flows:
 
