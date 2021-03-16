@@ -51,7 +51,7 @@ Follow these steps to create an approval from the Approvals app in Teams.
    ![New approval request button](../media/create-database/a2dd6b437dc9bd0e2a7b5a101195e5ec.png)
 
 1. Provide a name for your request.
-   For example, **My first request*.
+   For example, *My first request*.
 
 1. Specify yourself in the **Approvers** list.
 
@@ -62,6 +62,8 @@ Follow these steps to create an approval from the Approvals app in Teams.
     This starts the process for adding a Dataverse database and may take a few minutes to complete. Once created, you will receive a notification in Teams with a request for approval.
 
     ![Request for approval](../media/create-database/16e691bbb9d1d39b5fef66270e45bc58.png)
+
+1.  Approve this request.
 
     Your Dataverse database is now added to the default environment. 
 
