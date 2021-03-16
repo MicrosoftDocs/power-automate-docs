@@ -1,13 +1,8 @@
 ---
 title: Automation in the web | Microsoft Docs
 description: Automation in the web
-<<<<<<< Updated upstream
-author: rokontol
-ms.service: power-automate
-=======
 author: mariosleon
-ms.service: flow
->>>>>>> Stashed changes
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: marleon
