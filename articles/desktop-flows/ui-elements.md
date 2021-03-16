@@ -1,12 +1,17 @@
 ---
 title: UI elements and controls | Microsoft Docs
 description: UI elements and controls
+<<<<<<< Updated upstream
 author: rokontol
 ms.service: power-automate
+=======
+author: mariosleon
+ms.service: flow
+>>>>>>> Stashed changes
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: rokontol
-ms.reviewer: rokontol
+ms.author: marleon
+ms.reviewer: 
 search.app: 
   - Flow
 search.audienceType: 
