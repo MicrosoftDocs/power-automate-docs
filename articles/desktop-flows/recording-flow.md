@@ -1,13 +1,8 @@
 ---
 title: Recording in a desktop flow | Microsoft Docs
 description: Recording in a desktop flow
-<<<<<<< Updated upstream
-author: rokontol
-ms.service: power-automate
-=======
 author: mariosleon
-ms.service: flow
->>>>>>> Stashed changes
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: marleon
