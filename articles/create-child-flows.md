@@ -6,7 +6,7 @@ ms.reviewer: deonhe
 ms.date: 07/21/2020
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.topic: article
-ms.service: business-applications
+ms.service: power-automate
 ms.author: deonhe
 dynamics365pdf: True
 ---

@@ -1,5 +1,5 @@
 ---
-title: Easily Automate approval workflows. | Microsoft Docs
+title: Create and test an approval workflow with Power Automate. | Microsoft Docs
 description: Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 services: ''
 suite: flow
@@ -8,12 +8,12 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/27/2020
+ms.date: 03/17/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -42,6 +42,10 @@ The flow performs the following steps:
 1. Updates the SharePoint Online list with the approver's decision comments.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
+
+>[!IMPORTANT]
+>Always follow the [best practices for SharePoint security](https://docs.microsoft.com/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 

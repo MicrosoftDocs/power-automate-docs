@@ -1,6 +1,6 @@
 ---
-title: How to use Microsoft Forms in flows| Microsoft Docs
-description: Top scenarios for using Microsoft Forms within flows.
+title: How to use Forms in flows| Microsoft Docs
+description: Top questions on how to use Forms within flows- Get response details, when a new response is submitted
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: Dean-Haas
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na

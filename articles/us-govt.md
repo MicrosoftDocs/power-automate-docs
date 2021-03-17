@@ -4,7 +4,7 @@ description: Provides information about Power Automate US Government service des
 services: ''
 suite: flow
 author: msftman
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.date: 10/08/2020

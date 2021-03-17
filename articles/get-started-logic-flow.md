@@ -8,7 +8,7 @@ author: msftman
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na

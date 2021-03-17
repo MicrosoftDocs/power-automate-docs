@@ -2,7 +2,7 @@
 title: Adding analytical data to Microsoft Dataverse for a Power Automate project  | Microsoft Docs
 description: To identify bottlenecks in an automation, you can set up actions that log the start time of each activity or step.
 author: taiki-yoshida
-ms.service: flow
+ms.service: power-automate
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020

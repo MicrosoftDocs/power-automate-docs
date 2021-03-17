@@ -6,7 +6,7 @@ ms.author: Deonhe
 manager: kvivek
 ms.date: 07/12/2018
 ms.topic: article
-ms.service: flow
+ms.service: power-automate
 applies_to: 
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x

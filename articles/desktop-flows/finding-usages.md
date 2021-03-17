@@ -2,7 +2,7 @@
 title: Finding usages within desktop flows | Microsoft Docs
 description: Finding usages within desktop flows
 author: georgiostrantzas
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

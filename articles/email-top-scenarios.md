@@ -3,7 +3,7 @@ title: Top Office 365 Outlook scenarios | Microsoft Docs
 description: Top scenarios where you can use Power Automate to manage your email.
 author: msftman
 manager: kvivek
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 11/10/2020
 ms.author: deonhe

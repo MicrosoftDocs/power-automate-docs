@@ -2,7 +2,7 @@
 title: Using loops | Microsoft Docs
 description: Using loops
 author: georgiostrantzas
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

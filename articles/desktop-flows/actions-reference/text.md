@@ -2,7 +2,7 @@
 title: Text | Microsoft Docs
 description: Text Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -273,6 +273,8 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Times|Yes|Numeric value|1|Specify how many times is the delimiter used|
 |Is regular expression|N/A|Boolean value|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -298,6 +300,8 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |First occurrence only|N/A|Boolean value|True|Specify whether to find the first occurrence only, or each occurrence of the 'Text to find'|
 |Ignore case|N/A|Boolean value|False|Specify whether to find the specified text using case-sensitive or case-insensitive matching|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -326,6 +330,8 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Replace with|No|Text value||The text or a regular expression to replace found text|
 |Activate escape sequences|N/A|Boolean value|False|Specify whether to use special sequences. For example, '\t' in the replacement text will be interpreted as a tab|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|

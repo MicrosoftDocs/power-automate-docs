@@ -1,6 +1,6 @@
 ---
-title: Run flows based on email properties | Microsoft Docs
-description: Start a cloud flow based on properties such as the subject, the sender's address, or the recipient's address of an email.
+title: Trigger a flow when a new email arrives | Microsoft Docs
+description: Start a cloud flow based on properties such as the subject, the sender's address, or the recipient's address of an email - When a new email arrives (V3), On new email
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: Process migrator for Softomotive products (preview) | Microsoft Docs
 description: Process migrator for Softomotive products (preview)
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/16/2020
 ms.author: marleon

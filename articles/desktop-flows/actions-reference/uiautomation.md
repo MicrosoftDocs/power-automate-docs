@@ -2,7 +2,7 @@
 title: UI automation | Microsoft Docs
 description: UI automation Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -13,7 +13,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # UI automation
 
 
@@ -550,6 +549,9 @@ Expands or collapses a node of a tree view residing in a window
 |Folders path|Yes|Text value||A forward slash separated path made out of folder names leading to the tree node to expand or collapse|
 |Use regular expressions|N/A|Boolean value|False|Specify whether each folder name in the path to interpret as a regular expression|
 |Operation|N/A|Expand, Collapse|Expand|Specify whether to expand or collapse the tree node|
+
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

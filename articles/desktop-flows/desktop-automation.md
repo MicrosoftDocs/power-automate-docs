@@ -1,12 +1,12 @@
 ---
 title: Desktop automation | Microsoft Docs
 description: Desktop automation
-author: rokontol
-ms.service: flow
+author: mariosleon
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: rokontol
-ms.reviewer: rokontol
+ms.author: marleon
+ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 

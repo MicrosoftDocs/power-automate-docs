@@ -2,7 +2,7 @@
 title: Wait | Microsoft Docs
 description: Wait Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -107,6 +107,9 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

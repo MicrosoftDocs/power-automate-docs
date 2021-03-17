@@ -2,7 +2,7 @@
 title: Terminal emulation | Microsoft Docs
 description: Terminal emulation Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -202,6 +202,8 @@ Wait for a specific text to appear on a terminal session
 |Column|No|Numeric value||The horizontal position of the field on the screen|
 |Timeout|Yes|Numeric value|0|The maximum amount of time to wait|
 
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables

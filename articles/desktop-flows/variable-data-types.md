@@ -2,7 +2,7 @@
 title: Variable data types | Microsoft Docs
 description: Variable data types
 author: georgiostrantzas
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

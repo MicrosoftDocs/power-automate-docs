@@ -6,7 +6,7 @@ suite: flow
 documentationcenter: na
 author: JimDaly
 ms.reviewer: deonhe
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 05/31/2020
 ms.author: jdaly

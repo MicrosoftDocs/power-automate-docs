@@ -2,7 +2,7 @@
 title: Mouse and keyboard | Microsoft Docs
 description: Mouse and keyboard Actions Reference
 author: mariosleon
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -166,6 +166,9 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Mouse position relative to text|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|Specify which section of the text the mouse will be moved to|
 |Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
+
+> [!NOTE]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

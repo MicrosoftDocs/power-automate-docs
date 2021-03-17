@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Power Automate in your organization Q&A
+# Power Automate sign-up Q&A in your organization
 
 This topic describes how users in your organization can use Power Automate, and how you can control the Power Automate service.
 

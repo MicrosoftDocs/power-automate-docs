@@ -4,7 +4,7 @@ description: Describes Power Automate capabilities and recommended patterns to u
 author: MSFTMAN
 manager: KVIVEK
 ms.author: Deonhe
-ms.service: flow
+ms.service: power-automate
 ms.topic: article
 ms.date: 09/25/2020
 search.app: 
