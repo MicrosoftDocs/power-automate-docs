@@ -40,6 +40,10 @@ To rename or delete images or folders, right-click on an item and select the app
 
 ![rename delete images](\media\images\rename-delete-images.png)
 
+To find where the image is being used in the flow, right-click the image and select **Find usages**. The results will show the actions which use the image. Double-clicking on a result will highlight the action in the workspace.
+
+![find usages results pane](\media\images\find-usages-results.png)
+
 ### Known issues and limitations
 
 - **Issue**: In some cases, when you rename an image, actions that use the renamed image may no longer work as you might expect.
