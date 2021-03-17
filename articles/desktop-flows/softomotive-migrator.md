@@ -46,67 +46,62 @@ After successfully [downloading the setup file](https://go.microsoft.com/fwlink/
 Now you can run the Process migrator for Softomotive products (preview)
  
 ## Running the Process migrator for Softomotive products (preview) 
-When you run the Process migrator for Softomotive products (preview) you will be prompted to enter your Power Automate account
+1. When you run the Process migrator for Softomotive products (preview) you will be prompted to enter your Power Automate account
 
    ![Process migrator for Softomotive products (preview) installer step 4](media/migrator/migrator_4.png)
 
-> [!NOTE]
-> You might be prompted to connect to the account you use to access your Environments in order for the migrated processes to be saved as desktop flows. 
+    > [!NOTE]
+    > You might be prompted to connect to the account you use to access your Environments in order for the migrated processes to be saved as desktop flows. 
 
    ![Process migrator for Softomotive products (preview) installer step 6](media/migrator/migrator_6.png)
   
-For WinAutomation versions later than 9, you will be prompted to enter your WinAutomation master key. This is required for the migration of passwords inside encrypted processes. If you omit to enter your WinAutomation master key, the migration of said processes will proceed but password values won’t be migrated.
+1. For WinAutomation versions later than 9, you will be prompted to enter your WinAutomation master key. This is required for the migration of passwords inside encrypted processes. If you omit to enter your WinAutomation master key, the migration of said processes will proceed but password values won’t be migrated.
 
    ![Process migrator for Softomotive products (preview) installer step 5](media/migrator/migrator_5.png)
 
-> [!NOTE]
-> After entering your master key, the application will retrieve all the WinAutomation processes on your PC for you to choose the ones you are willing to migrate.  
-Some delay might be expected after this step but the application is successfully operating in the background. 
+    > [!NOTE]
+    > After entering your master key, the application will retrieve all the WinAutomation processes on your PC for you to choose the ones you are willing to migrate.  
+    Some delay might be expected after this step but the application is successfully operating in the background. 
 
-Then you can choose which WinAutomation processes you want to migrate to Power Automate as desktop flows and the Power Automate environment you want to store them into 
+1. Then you can choose which WinAutomation processes you want to migrate to Power Automate as desktop flows and the Power Automate environment you want to store them into 
 (the default environment is pre-selected). Then select to start the migration
  
- ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/migrator_7.png)
+    ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/migrator_7.png)
 
-If you choose to migrate a password-protected encrypted process, you will be prompted to enter the password you used in WinAutomation to encrypt it. If you choose the option to skip entering the requisite password, the migration of the said process will be omitted.
+1. If you choose to migrate a password-protected encrypted process, you will be prompted to enter the password you used in WinAutomation to encrypt it. If you choose the option to skip entering the requisite password, the migration of the said process will be omitted.
 
- ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)
+    ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)
 
-Once the migration starts you will be presented with a text box containing information for the current state (of the migration) and the progress bar.
+1. Once the migration starts you will be presented with a text box containing information for the current state (of the migration) and the progress bar.
 
- ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
+    ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
 
-When the migration is completed an auto-generated log file will be presented to you showing the migrated processes
+1. When the migration is completed an auto-generated log file will be presented to you showing the migrated processes
 
- ![Process migrator for Softomotive products (preview) installer step 9](media/migrator/migrator_9.png)
+    ![Process migrator for Softomotive products (preview) installer step 9](media/migrator/migrator_9.png)
  
-You can access the exported logs at C:\Users\{username}\AppData\Local\Microsoft\Process migrator for Softomotive products\Logs
+1. You can access the exported logs at C:\Users\{username}\AppData\Local\Microsoft\Process migrator for Softomotive products\Logs
 
-Once the migration completes, visit Power Automate, select My flows and the Desktop flows option. You can now see the process that were migrated.
+1. Once the migration completes, visit Power Automate, select My flows and the Desktop flows option. You can now see the process that were migrated.
 
- ![Process migrator for Softomotive products (preview) installer step 11b](media/migrator/migrator_11b.png)
+    ![Process migrator for Softomotive products (preview) installer step 11b](media/migrator/migrator_11b.png)
   
-> [!NOTE]
-> For the migrated desktop flows to be visible some time is required. To instantly view the migrated desktop flows inside Power Automate Desktop either sign-out and sign-in your Power Automate account again from the Power Automate Desktop or restart the Power Automate Desktop service by exiting the service and re-running the Power Automate Desktop.  
+    > [!NOTE]
+    > For the migrated desktop flows to be visible some time is required. To instantly view the migrated desktop flows inside Power Automate Desktop either sign-out and sign-in your Power Automate account again from the Power Automate Desktop or restart the Power Automate Desktop service by exiting the service and re-running the Power Automate Desktop.  
 
- ![Process migrator for Softomotive products (preview) installer step 11](media/migrator/migrator_11.png)
+    ![Process migrator for Softomotive products (preview) installer step 11](media/migrator/migrator_11.png)
 
-You can modify the migrated processes (now desktop flows) through Power Automate Desktop.
+1. You can modify the migrated processes (now desktop flows) through Power Automate Desktop.
 
- ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
+     
+    ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
 
-> [!TIP]
-> Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. 
-It is advised to group processes based on whether they are encrypted or not.  
-This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
+    > [!TIP]
+    > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It is advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
 
-> [!NOTE]
-> - Migrated WinAutomation processes will have the following format when uploaded as desktop flows:  
-**WA_{Name of WinAutomation} process (folder path inside WinAutomation)**. 
-For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”**, the resulting desktop flow will be named **WA_05 Copy File (Examples/01 - Beginner)**.
-> - If you try to migrate a WinAutomation process and the resulting desktop flow name duplicates the name of an already existing desktop flow in the environment you chose, the later desktop flow will be saved with a name following the format WA_{Name of WinAutomation} (X) process (folder path inside WinAutomation), where X is an increasing number.
-For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”** and there happens to be a desktop flow in your environment of choice, having the same name, the resulting desktop flow will be named  
-**WA_05 Copy File (1) (Examples/01 - Beginner)**.
+    > [!NOTE]
+    > - Migrated WinAutomation processes will have the following format when uploaded as desktop flows: **WA_{Name of WinAutomation} process (folder path inside WinAutomation)**. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”**, the resulting desktop flow will be named **WA_05 Copy File (Examples/01 - Beginner)**.
+    > - If you try to migrate a WinAutomation process and the resulting desktop flow name duplicates the name of an already existing desktop flow in the environment you chose, the later desktop flow will be saved with a name following the format WA_{Name of WinAutomation} (X) process (folder path inside WinAutomation), where X is an increasing number. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”** and there happens to be a desktop flow in your environment of choice, having the same name, the resulting desktop flow will be named **WA_05 Copy File (1) (Examples/01 - Beginner)**.
 
 ## Release notes
 
