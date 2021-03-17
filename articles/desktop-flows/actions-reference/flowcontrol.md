@@ -25,6 +25,7 @@ Control the automation flow
 |[Comment](#comment)|
 |[End](#end)|
 |[Exit subflow](#exitfunction)|
+|[Get last error](#getlasterror)|
 |[Go to](#goto)|
 |[Label](#label)|
 |[On block error](#block)|
@@ -67,6 +68,22 @@ Exits current subflow and returns to the point it was called from
 
 ##### <a name="exitfunction_onerror"></a> Exceptions
 - This action doesn't include any exceptions
+
+
+### <a name="getlasterror"></a> Get last error
+Retrieves the last error that occured in the flow
+
+##### Input Parameters
+- This action doesn't require any input
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|LastError|Error|The details of the error that last occured in the flow|
+
+##### <a name="getlasterror_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
 ### <a name="goto"></a> Go to
 Transfers the flow of execution to another point, indicated by a label
 
