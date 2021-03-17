@@ -16,7 +16,7 @@ search.audienceType:
 
 # Introduction to Power Automate Desktop
 
-Power Automate Desktop broadens the existing robotic process automation (RPA) capabilities in Power Automate and enables you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate Desktop designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later. 
+Power Automate Desktop broadens the existing robotic process automation (RPA) capabilities in Power Automate and enables you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate Desktop designer using the prebuilt drag-and-drop actions or recording your own [desktop flows](create-flow.md) to run later. 
 
 Leverage automation capabilities in Power Automate Desktop. Create flows, interact with everyday tools such as email and excel and work with modern and legacy applications. Examples of simple and complex tasks you can automate are: 
 
