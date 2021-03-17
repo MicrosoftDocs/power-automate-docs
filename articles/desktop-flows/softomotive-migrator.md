@@ -93,14 +93,15 @@ Now you can run the Process migrator for Softomotive products (preview)
 
 1. You can modify the migrated processes (now desktop flows) through Power Automate Desktop.
 
- ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
+     
+    ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
 
-> [!TIP]
-> Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It is advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
+    > [!TIP]
+    > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It is advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
 
-> [!NOTE]
-> - Migrated WinAutomation processes will have the following format when uploaded as desktop flows: **WA_{Name of WinAutomation} process (folder path inside WinAutomation)**. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”**, the resulting desktop flow will be named **WA_05 Copy File (Examples/01 - Beginner)**.
-> - If you try to migrate a WinAutomation process and the resulting desktop flow name duplicates the name of an already existing desktop flow in the environment you chose, the later desktop flow will be saved with a name following the format WA_{Name of WinAutomation} (X) process (folder path inside WinAutomation), where X is an increasing number. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”** and there happens to be a desktop flow in your environment of choice, having the same name, the resulting desktop flow will be named **WA_05 Copy File (1) (Examples/01 - Beginner)**.
+    > [!NOTE]
+    > - Migrated WinAutomation processes will have the following format when uploaded as desktop flows: **WA_{Name of WinAutomation} process (folder path inside WinAutomation)**. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”**, the resulting desktop flow will be named **WA_05 Copy File (Examples/01 - Beginner)**.
+    > - If you try to migrate a WinAutomation process and the resulting desktop flow name duplicates the name of an already existing desktop flow in the environment you chose, the later desktop flow will be saved with a name following the format WA_{Name of WinAutomation} (X) process (folder path inside WinAutomation), where X is an increasing number. For example, if you migrate the **05 - Copy File** WinAutomation process that resides under the path **“MyProcesses/Examples/01 - Beginner”** and there happens to be a desktop flow in your environment of choice, having the same name, the resulting desktop flow will be named **WA_05 Copy File (1) (Examples/01 - Beginner)**.
 
 ## Release notes
 
