@@ -134,7 +134,7 @@ var widget = sdk.renderWidget('<widgettype>', {
         container: 'flowDiv',
         flowsSettings: {},
         templatesSettings: {},
-        approvalSettings: {},
+        approvalCenterSettings: {},
         widgetStyleSettings: {}
 });
 ```
@@ -162,7 +162,7 @@ These are the parameters for `renderWidget()`:
 | `environmentId`    | Optional          | Widgets need an environment Id. If you don't provide an Id, a default environment is used. | 
 | `flowsSettings`    | Optional          | Power Automate settings object                                                                        | 
 | `templateSettings` | Optional          | Template settings object                                                                    | 
-| `approvalSettings` | Optional          | Approval settings object                                                                    | 
+| `approvalCenterSettings` | Optional          | Approval settings object                                                                    | 
 
 ### Access tokens
 
