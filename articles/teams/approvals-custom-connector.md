@@ -39,11 +39,11 @@ This article shows you how to:
 
 -  One of the following subscriptions:
 
-    -  [Power Automate](https://docs.microsoft.com/flow/sign-up-sign-in)
+    -  [Power Automate](/flow/sign-up-sign-in)
 
-    -  [Power Apps](https://docs.microsoft.com/powerapps/signup-for-powerapps)
+    -  [Power Apps](/powerapps/signup-for-powerapps)
 
--  Basic experience building [flows](https://docs.microsoft.com/flow/get-started-logic-flow) and [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition).
+-  Basic experience building [flows](/flow/get-started-logic-flow) and [custom connectors](/connectors/custom-connectors/define-openapi-definition).
 
 ## Create a custom connector
 
@@ -211,11 +211,11 @@ Now that you've created your custom connector, it's time to create your approval
 
 ## More info
 
-- [Create a custom connector from scratch](https://docs.microsoft.com/connectors/custom-connectors/define-blank)
+- [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
-- Webhook triggers: [Use a Webhook as a trigger for Azure Logic Apps and Power Automate](https://docs.microsoft.com/connectors/custom-connectors/create-webhook-trigger)
+- Webhook triggers: [Use a Webhook as a trigger for Azure Logic Apps and Power Automate](/connectors/custom-connectors/create-webhook-trigger)
 
-- Polling triggers: [Use a polling trigger for Microsoft Power Automate](https://docs.microsoft.com/connectors/custom-connectors/create-polling-trigger)
+- Polling triggers: [Use a polling trigger for Microsoft Power Automate](/connectors/custom-connectors/create-polling-trigger)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

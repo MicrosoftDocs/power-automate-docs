@@ -29,7 +29,7 @@ Here are a few tips and tricks for troubleshooting issues with triggers.
 
 1. A data loss prevention policy could be to blame.
 
-   Admins can create [data loss prevention (DLP)](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow.
+   Admins can create [data loss prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow.
 
    If your flow violates a DLP policy, it will be suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The Flow checker will report it if the flow is violating a DLP policy. Your admin can change the DLP policy.
 
@@ -46,7 +46,7 @@ Here are a few tips and tricks for troubleshooting issues with triggers.
 
    One of the common reasons for the failure is that the Power Automate service end points are not part of the allow list. To fix it, confirm that your IT department has added these endpoint to the allow list.
 
-   Here is the list of [IP addresses](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config%23ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
+   Here is the list of [IP addresses](/powerapps/maker/canvas-apps/limits-and-config%23ip-addresses#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
 
    Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to know more about how to fix issues with triggers.
 
@@ -58,7 +58,7 @@ Once the problem is resolved, modify the flow, save it, and then change it back 
 
 ### Verify connections
 
-With the default settings, users only need to login to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s login token expiration after a specific amount of time. Token lifetime policies have been configured on Azure Active Directory. For more information, check this [Azure article](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to login to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s login token expiration after a specific amount of time. Token lifetime policies have been configured on Azure Active Directory. For more information, check this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
 To verify if your connections are broken:
 
@@ -224,7 +224,7 @@ will process each one their own data. Since the quota is per flow, this can be u
 
 ## Dynamics 365 connector trigger issues 
 
-There's a delay - [Dynamics 365](https://docs.microsoft.com/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](https://docs.microsoft.com/connectors/commondataservice/).
+There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](/connectors/commondataservice/).
 
 My flow is not listed - The Power Automate menu only lists flows that begin with the **When a record is selected Common Data Service** trigger and contain at least one trigger or action that references that entity. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365. 
 
@@ -236,7 +236,7 @@ You can also access these flows in the [Power Platform admin center](https://adm
 1. Select **Flows** under the **Resources** section.
 
 >[!IMPORTANT]
->You must enable [Power Automate](https://docs.microsoft.com/power-platform/admin/enable-embedded-flow-in-your-organization#enable-or-disable-power-automate-in-your-organization) before you can find these flows.
+>You must enable [Power Automate](/power-platform/admin/enable-embedded-flow-in-your-organization#enable-or-disable-power-automate-in-your-organization) before you can find these flows.
 
 ## Power Apps apps trigger issues
 

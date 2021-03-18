@@ -58,7 +58,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 ## Learn more
 
-Learn more about the [advanced options](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) and how to configure them.
+Learn more about the [advanced options](/azure/connectors/connectors-native-recurrence) and how to configure them.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

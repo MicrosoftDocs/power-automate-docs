@@ -91,7 +91,7 @@ Perform the following steps to benefit from multiple desktop flows on a single d
 Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](#run-multiple-desktop-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
->If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-client-access-license).
+>If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](/windows-server/remote/remote-desktop-services/rds-client-access-license).
 
 >[!NOTE]
 >Running multiple concurrent desktop flows by the **same user** is not supported. You will need to have different users running desktop flows at the same time to benefit from this feature.
@@ -100,7 +100,7 @@ Power Automate automatically scales the number of concurrent desktop flows runs 
 
 You can choose to distribute desktop flows runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
-Follow [these steps to add a gateway to create a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
+Follow [these steps to add a gateway to create a cluster](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
 
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
@@ -144,7 +144,7 @@ If a desktop flow run fails, correct the issue, and then try the following steps
     - On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
     - On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your device. Desktop flows won’t be able to run if it cannot create new sessions.
 
-1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot).
+1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot).
 
 1. If the **gateway status** is **online**, try the following actions:
 
@@ -154,9 +154,9 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
 ## Learn more
 
- - Install the [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](https://docs.microsoft.com/flow/gateway-manage) documentation.
- - [Troubleshoot](https://docs.microsoft.com/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+ - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
+ - [Use the on-premises data gateway app](/flow/gateway-manage) documentation.
+ - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 ## Runtime notifications
 

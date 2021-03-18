@@ -76,7 +76,7 @@ Specify that a cloud flow performs one or more tasks only if a condition is true
 
 ![Add complex conditions](./media/add-condition/add-complex-condition.png)
 
-Learn about all the available [expressions](https://msdn.microsoft.com/library/azure/mt643789.aspx).
+Learn about all the available [expressions](/azure/logic-apps/logic-apps-workflow-definition-language).
 
 ## Next steps
 

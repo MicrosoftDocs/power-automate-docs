@@ -34,15 +34,15 @@ Browse to <https://admin.powerplatform.microsoft.com/>.
 
 ## Environments
 
-Learn more about using [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Microsoft Power Platform admin guide to manage users, permissions and roles.
+Learn more about using [environments](/power-platform/admin/environments-overview) in the Microsoft Power Platform admin guide to manage users, permissions and roles.
 
 ## Data policies
 
-Learn more about using [data policies](https://docs.microsoft.com/power-platform/admin/prevent-data-loss) in the Power Platform admin guide to create rules that manage how business data is shared between services in flows.
+Learn more about using [data policies](/power-platform/admin/prevent-data-loss) in the Power Platform admin guide to create rules that manage how business data is shared between services in flows.
 
 ## Activity logging
 
-Learn more about the [logging activities](https://docs.microsoft.com/power-platform/admin/logging-power-automate) that Power Automate does to keep you informed about your users' activities.
+Learn more about the [logging activities](/power-platform/admin/logging-power-automate) that Power Automate does to keep you informed about your users' activities.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

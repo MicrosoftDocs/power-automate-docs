@@ -268,4 +268,4 @@ Here are the properties for the **Append to...** actions:
 
 ## Next steps
 
-* Learn about [Power Automate connectors](https://docs.microsoft.com/connectors/connectors)
+* Learn about [Power Automate connectors](/connectors/connectors)

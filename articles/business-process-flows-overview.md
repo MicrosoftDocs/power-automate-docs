@@ -202,8 +202,8 @@ Recent records are visible in a lookup field in the unified interface. To preven
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [create and edit entities](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
-- Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](https://docs.microsoft.com/power-automate/create-business-process-flow). 
+- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [create and edit entities](/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
+- Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  
  [Watch a short video (4:49) about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   

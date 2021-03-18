@@ -26,13 +26,13 @@ search.audienceType:
 
 ## Known limitations
 
-For known limitations of the **Send an email** action, go to [Office 365 Outlook: Known issues and limitations](https://docs.microsoft.com/connectors/office365/#known-issues-and-limitations).
+For known limitations of the **Send an email** action, go to [Office 365 Outlook: Known issues and limitations](/connectors/office365/#known-issues-and-limitations).
 
 ## Frequently asked questions
 
 **I didn't get an email. Why?**
 
-1.  Confirm that your IT department has approved all Power Automate endpoints to allow it to send email to your email servers. These endpoints include [IP addresses](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config\#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate).
+1.  Confirm that your IT department has approved all Power Automate endpoints to allow it to send email to your email servers. These endpoints include [IP addresses](/powerapps/maker/canvas-apps/limits-and-config\#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate).
 
 1. Double-check whether you have any Outlook rules that are moving the email to a different folder.
 
@@ -61,7 +61,7 @@ A Common Data Service<!--note from editor: Is this mention of CDS okay, or shoul
 
 **Power Automate stopped working - "Item ID doesn't belong to current mailbox" error Power Automate when using actions with shared mailbox.**
 
-As of May 6, 2020, shared mailbox support was added for certain operations with an optional **Mailbox address** parameter, allowing you to specify a shared mailbox address for your operations to access. If you were using this operation prior to May 6, 2020, you'll need to explicitly [update your operations to specify the shared mailbox address](https://docs.microsoft.com/connectors/office365/#shared-mailbox-support).
+As of May 6, 2020, shared mailbox support was added for certain operations with an optional **Mailbox address** parameter, allowing you to specify a shared mailbox address for your operations to access. If you were using this operation prior to May 6, 2020, you'll need to explicitly [update your operations to specify the shared mailbox address](/connectors/office365/#shared-mailbox-support).
 
 **I see this error: "REST API is not yet supported for this mailbox"**
 

@@ -65,7 +65,7 @@ This sample demonstrates how to programmatically work with business process flow
 
 2. Locate the `WorkWithBPF.sln` file in your extracted folder, and open it in Visual Studio.  
 
-3. The sample project uses NuGet packages that must be restored before running the sample. Ensure that automatic restore of NuGet packages is enabled in Visual Studio. More information: [Enabling and disabling NuGet package restore](https://go.microsoft.com/fwlink/?linkid=846106)  
+3. The sample project uses NuGet packages that must be restored before running the sample. Ensure that automatic restore of NuGet packages is enabled in Visual Studio. More information: [Enabling and disabling NuGet package restore](/nuget/consume-packages/package-restore)  
 
     Alternatively, select **Project** > **Manage NuGet Packages**, and select **Restore** to manually restore the packages used in the sample.  
 
