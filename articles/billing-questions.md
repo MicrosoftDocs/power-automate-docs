@@ -27,7 +27,7 @@ search.audienceType:
 This article answers frequently asked questions regarding billing and metering in Power Automate.
 
 >[!NOTE]
-> Power Apps and Power Automate started to use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019. 
+> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019. 
 
 ## Where can I find out what pricing plans are available?
 

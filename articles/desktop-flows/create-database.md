@@ -29,7 +29,7 @@ A Microsoft Dataverse database stores flows created in Power Automate Desktop.
 >[!NOTE]
 >For the preview release, you may need to create a Dataverse database before using Power Automate Desktop with your work or school account. This must be done only once in a tenant.
 
-If you are an administrator or if you would like to provide information to the administrator to create a Dataverse database, see [Add a Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database).
+If you are an administrator or if you would like to provide information to the administrator to create a Dataverse database, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 
 ## Create a Microsoft Dataverse database in Power Automate Desktop
 

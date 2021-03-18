@@ -25,7 +25,7 @@ search.audienceType:
 
 # Get contextual help with flows from the Power Virtual Agents bot
 
-Real-time, in-product help is available from the [documentation](https://docs.microsoft.com/power-automate/) and the Power Virtual Agent bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
+Real-time, in-product help is available from the [documentation](./index.yml) and the Power Virtual Agent bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
 
 
 ## Use in-product help
