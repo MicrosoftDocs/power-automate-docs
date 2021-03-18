@@ -65,7 +65,7 @@ inserted into the control.
 If you recorded any text input without using the **Add static text** option, each keystroke is recorded and played back chronologically. This includes any special keys like CTRL, ALT, Windows, etc. in any English or international keyboard layouts.
 
 In the designer, you can review and edit the recording information in the
-[virtual-key](https://docs.microsoft.com/windows/win32/inputdev/virtual-key-codes) format under the **Replay keystroke** action. 
+[virtual-key](/windows/win32/inputdev/virtual-key-codes) format under the **Replay keystroke** action. 
 
 ![Virtual key](../media/use-ime/virtual-key.png)
 

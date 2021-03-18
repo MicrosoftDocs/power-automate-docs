@@ -50,7 +50,7 @@ Then, add the [Get response details](/connectors/microsoftforms/#actions) action
 ## Send an email to the form responder after they submit a response
 
 Although you can enable a notification to [Send email receipt to respondents](https://support.microsoft.com/office/send-an-email-receipt-of-responses-951f29b7-dbd8-446b-8ebe-b924cc620bb20) within the Microsoft Form settings, you can create a customized email notification with Power Automate.
-This is similar to top scenario #1, except the [Send an email (V2)](https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)) action is now being sent to the responder.
+This is similar to top scenario #1, except the [Send an email (V2)](/connectors/office365/) action is now being sent to the responder.
 
 ## Send an approval with contents of the form
 

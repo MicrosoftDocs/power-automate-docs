@@ -238,7 +238,7 @@ Sends keys to the application that is currently active
 
 
 > [!NOTE]
-> To simulate a physical key being pressed inside a Send Keys action, use the curly brackets **{}** notation. (e.g. To press Enter use **{Enter}**). To use a key as a modifier, use the curly brackets **{}** notation two both keys. (e.g. To press Ctrl + A use **{Control}({A})**). The Send Keys action accepts the [Virtual-Key Codes](https://docs.microsoft.com/windows/win32/inputdev/virtual-key-codes)
+> To simulate a physical key being pressed inside a Send Keys action, use the curly brackets **{}** notation. (e.g. To press Enter use **{Enter}**). To use a key as a modifier, use the curly brackets **{}** notation two both keys. (e.g. To press Ctrl + A use **{Control}({A})**). The Send Keys action accepts the [Virtual-Key Codes](/windows/win32/inputdev/virtual-key-codes)
 
 ##### Valid keys
 |Category|Keys|

@@ -27,7 +27,7 @@ search.audienceType:
 Before you can use your device to create desktop flows, you'll need to ensure it meets the requirements outlined here.
 
 > [!TIP]
-> Before you create a desktop flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also build your [own connector](https://docs.microsoft.com/connectors/custom-connectors/).
+> Before you create a desktop flow, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also build your [own connector](/connectors/custom-connectors/).
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 
-- An [environment](https://docs.microsoft.com/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](https://docs.microsoft.com/power-platform/admin/create-database). (Applicable only for work or school accounts)
+- An [environment](/power-platform/admin/environments-overview) with a [Microsoft Dataverse database](/power-platform/admin/create-database). (Applicable only for work or school accounts)
 
 - A supported keyboard attached.
 
@@ -138,7 +138,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your flows on your device.
 
-[Install the on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install), if you need it.
+[Install the on-premises data gateway](/data-integration/gateway/service-gateway-install), if you need it.
 
 
 >[!IMPORTANT]
@@ -207,7 +207,7 @@ Follow these steps if you want to silently install Power Automate Desktop.
    The installer runs and completes the setup of Power Automate Desktop.
 
    >[!IMPORTANT]
-   > You must provide the `-ACCEPTEULA` argument to indicate that you accept the [terms and conditions](https://go.microsoft.com/fwlink/?linkid=2147215) for Power Automate Desktop.
+   > You must provide the `-ACCEPTEULA` argument to indicate that you accept the [terms and conditions](/dynamics365/legal/slt-power-automate-desktop) for Power Automate Desktop.
 
 1.  You can now launch Power Automate Desktop from the Start menu.
 
@@ -252,7 +252,7 @@ To update Power Automate Desktop, use the same command line arguments that you u
 
 You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
 
-You can use [PowerShell Cmdlets](https://docs.microsoft.com/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
+You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
 
 >[!IMPORTANT]
 >To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated session.
@@ -376,7 +376,7 @@ You can use the following registry entry to prevent users from logging into Powe
 
 ## Restricting access to Power Automate Desktop
 
-In order to restrict access to Power Automate Desktop on a workstation with Windows 10, use [Applocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+In order to restrict access to Power Automate Desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
 ## Sign-in account comparison
 

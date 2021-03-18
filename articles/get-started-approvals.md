@@ -109,7 +109,7 @@ The following tenant configurations do not allow this:
 
 - When the AllowAdHocSubscriptions setting in Azure Active Directory (Azure AD) is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
 - If a security group has been used to control which users have access to the Dataverse environment.
-- Power Automate [US Government plans](https://docs.microsoft.com/power-automate/us-govt).
+- Power Automate [US Government plans](./us-govt.md).
 
 
 Once you assign an approval request to a user, they can respond directly from an Outlook email, a Teams adaptive card, or the Power Automate action center, if they have a Power Automate, an Office 365, or a Dynamics 365 license with built-in Power Automate capabilities. You can find a list of these Office 365 and Dynamics 365 licenses in the Microsoft Power Apps and Power Automate licensing guide.
