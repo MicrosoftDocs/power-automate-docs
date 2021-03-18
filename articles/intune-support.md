@@ -32,7 +32,7 @@ MAM allows organizations to create policies that govern how apps are used within
 
 ### Prerequisites
 
-- An Intune [app protection policy](https://docs.microsoft.com/intune/app-protection-policies).
+- An Intune [app protection policy](/intune/app-protection-policies).
 - An Azure Active Directory (Azure AD) group.
 - Company Portal. One key benefit of using MAM is that devices don't need to be enrolled in Intune MAM. All that's required is the Company Portal, which is available from the App Store and the Google Play store.
 - Version 2.31.0 of the Power Automate mobile app for iOS, Android, or Windows Phone.
@@ -47,7 +47,7 @@ For the Power Automate mobile app to be managed, you must:
 1. Apply the app protection policy to a specific Azure AD group.
 1. Add all users to which the app protection policy applies to the Azure AD group.
 
-Follow these steps to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies) that requires Power Automate mobile app users to enter a PIN before they can access the app. 
+Follow these steps to create an [app protection policy](/intune/app-protection-policies) that requires Power Automate mobile app users to enter a PIN before they can access the app. 
 
 
 ## Test the app protection policy
@@ -66,7 +66,7 @@ You'll then be prompted to:
 
 ## Learn more
 
-Learn to create an [app protection policy](https://docs.microsoft.com/intune/app-protection-policies).
+Learn to create an [app protection policy](/intune/app-protection-policies).
 
 
 

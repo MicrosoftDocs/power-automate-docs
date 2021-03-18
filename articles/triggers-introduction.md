@@ -41,14 +41,14 @@ Triggers can be started instantly or manually, on a schedule, or automatically w
 
 If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device. 
 
-[Learn more about instant flows](https://docs.microsoft.com/power-automate/introduction-to-button-flows#trigger-an-instant-flow).
+[Learn more about instant flows](./introduction-to-button-flows.md#trigger-an-instant-flow).
 
 
 ### Triggers for scheduled flows
 
 If you'd like to run a cloud flow on a schedule, for example, to send a weekly project report, create a [scheduled flow](). In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, etc.). 
 
-Learn more about [scheduled flows](https://docs.microsoft.com/power-automate/run-scheduled-tasks).
+Learn more about [scheduled flows](./run-scheduled-tasks.md).
 
 ![A screenshot showing the start page for a scheduled flow](./media/triggers-introduction//1270c8bd76f42e6531daa735a562502a.png)
 
@@ -57,7 +57,7 @@ Learn more about [scheduled flows](https://docs.microsoft.com/power-automate/run
 
 If you'd like to create a cloud flow that performs tasks automatically after an event, for example, create a cloud flow that notifies you by email when someone tweets keyword you specify, create an automated flow. 
 
-Learn more about [automated flows](https://docs.microsoft.com/power-automate/get-started-logic-flow)
+Learn more about [automated flows](./get-started-logic-flow.md)
 
 ## Add a trigger to an existing flow 
 

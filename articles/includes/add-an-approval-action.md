@@ -8,9 +8,8 @@
 
      >[!NOTE] 
      > The **Approval type**,  **Title** and **Assigned To** fields are required.
-     > You can use [Markdown](https://aka.ms/approvaldetails) to format the **Details** field.
+     > You can use [Markdown](../approvals-markdown-support.md) to format the **Details** field.
      > 
      >
 
     ![configure the approval](media/modern-approvals/provide-approval-config-info.png)
-

@@ -17,7 +17,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Get started<a name="get-started"></a>
 | Content   | Description | Format   | Length |
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------|
-| [Microsoft Power Platform Fundamentals](https://docs.microsoft.com/learn/certifications/courses/pl-900t00) | Learn about the components of Power Platform, ways to connect data, and how organizations can leverage this technology | Instructor-led in person or online training, cost varies by region and partner | 2 days |
+| [Microsoft Power Platform Fundamentals](/learn/certifications/courses/pl-900t00) | Learn about the components of Power Platform, ways to connect data, and how organizations can leverage this technology | Instructor-led in person or online training, cost varies by region and partner | 2 days |
 
 
 

@@ -24,7 +24,7 @@ search.audienceType:
 # Release notes
 
 >[!NOTE]
->Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
+>Release plans are now tracked [here](/dynamics365/release-plans/).
 
 ## Top questions
 1. My flow failed. How do I fix it?
@@ -36,7 +36,7 @@ search.audienceType:
    
    * Read about [adding conditions](add-condition.md).
    * If you want multiple cases in a cloud flow, select **Add condition** from inside of an existing condition.
-   * Create an advanced expression by referencing [a function in Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
+   * Create an advanced expression by referencing [a function in Logic Apps](/rest/api/logic/definition-language).
 3. How does licensing work with Office 365?
    
    * If you're an Office 365 user, you get full access through the Power Automate for Office 365 plan. For more information, see the [pricing plans for Power Automate](https://flow.microsoft.com/pricing/) .
@@ -49,8 +49,8 @@ search.audienceType:
 ## What's new
 
 For information about new features released for Power Automate, visit:
-- [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
-- [Weekly release notes](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
+- [2020 release wave 1 plan](/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
+- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 
@@ -386,7 +386,7 @@ You can now view the status of all of the pending approval requests you have sen
 * **Available in Canada** - You can now create your flows in Canada.
 * **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
 * **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Power Automate admin center.
-* **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](https://docs.microsoft.com/Connectors/).
+* **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](/Connectors/).
 * **Two partner services** - Two new partner services were released: Nexmo and Paylocity.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/canada-mailboxes-aad) about this release.
@@ -653,7 +653,7 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 * We have a [new community](https://go.microsoft.com/fwlink/?LinkID=787467) for you to discuss Power Automate or [submit your ideas](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 >[!NOTE]
->Release plans are now tracked [here](https://docs.microsoft.com/dynamics365/release-plans/).
+>Release plans are now tracked [here](/dynamics365/release-plans/).
 
 ## Next steps
 If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).

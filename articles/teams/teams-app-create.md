@@ -77,7 +77,7 @@ If you want full control over the flow that you create, select **Create from bla
 
    ![Create from blank](../media/power-automate-teams-app-create/create-blank.png)
 
-This brings up the full Power Automate designer experience within Microsoft Teams where you can [create a fully customized flow](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+This brings up the full Power Automate designer experience within Microsoft Teams where you can [create a fully customized flow](../get-started-logic-flow.md).
 
    ![Create from blank](../media/power-automate-teams-app-create/full-editor.png)
 
@@ -89,7 +89,7 @@ Any flow that you create from within the Power Automate app is located in your o
 ## Related articles
 - [Manage your flows in Microsoft Teams](./teams-app-home.md).
 
-- Visit the [Microsoft Teams connector documentation](https://docs.microsoft.com/connectors/teams/).
+- Visit the [Microsoft Teams connector documentation](/connectors/teams/).
 
 
 
