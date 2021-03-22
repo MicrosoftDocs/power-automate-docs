@@ -22,6 +22,8 @@ Connect to an Active Directory server and perform operations
 
 |<!-- --> |
 |-----|
+|[Connect to server](#connecttoserveraction)|
+|[Close connection](#closeconnection)|
 |[Create group](#creategroup)|
 |[Get group info](#getgroupinfo)|
 |[Get group members](#getgroupmembers)|
@@ -35,11 +37,66 @@ Connect to an Active Directory server and perform operations
 |[Modify user](#modifyuseraction)|
 |[Unlock user](#unlockuser)|
 |[Update user info](#updateuserinfo)|
-|[Connect to server](#connecttoserveraction)|
-|[Close connection](#closeconnection)|
+
+
+### <a name="connecttoserveraction"></a> Connect to server
+Connects to an Active Directory server
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|LDAP path|No|Text value||The LDAP path of the Active Directory server|
+|Use authentication|N/A|Boolean value|False|Specify whether authentication is needed to connect to the server|
+|Username|No|Text value||The user's username|
+|Password|No|Encrypted value||The user's password|
+|Authentication type|N/A|None, Secure, Encryption, Secure sockets layer, Read-only server, Anonymous, Fast bind, Signing, Sealing, Delegation, Server bind|Secure|Specify the type of authentication to be used|
+
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ParentDirectoryEntry|Active Directory entry|The parent of the Active Directory entry for use with later Active Directory actions|
+
+
+##### <a name="connecttoserveraction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Authentication error|Indicates an error with the user's authentication|
+|Unauthorized access|Indicates that an authorization error occurred|
+|The server isn't operational|Indicates that the Active Directory server isn't operational|
+|Invalid operation|Indicates an invalid operation error|
+|Active Directory error|General Active Directory error|
+
+>[!IMPORTANT]
+>The LDAP path field should specify the domain controllers and have the following format:
+>
+>**LDAP://DC=contoso,DC=demo**
+
+
+### <a name="closeconnection"></a> Close connection
+Closes the connection with the Active Directory server
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Parent directory entry|No|Active Directory entry||The parent entry of the Active Directory server|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="closeconnection_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
 
 ## Group
 Create, modify and get information about a group in an Active Directory server
+
+>[!IMPORTANT]
+>The Location field should specify the container as well as the domain controllers and have the following format:
+>
+>**CN=Users,DC=contoso,DC=demo**
+
 ### <a name="creategroup"></a> Create group
 Creates a group in the Active Directory
 
@@ -260,6 +317,20 @@ Renames an object in the Active Directory
 
 ## User
 Create, modify and get information about a user in an Active Directory server
+
+>[!IMPORTANT]
+>All Active Directory user management actions require the user’s distinguished name. The Distinguished Name field should have the following format (nvarga being the username):
+>
+>**CN=nvarga,CN=Users,DC=contoso,DC=demo** 
+>
+>To list the distinguished names of all Active Directory users, run the following command:
+>
+>**dsquery user**
+>
+>If the container name contains a comma, the name should be contained within double quotes.
+>
+>e.g.: **CN=Varga, Norbert** should be formatted like so: **CN="Varga, Norbert",DC=contoso,DC=com**
+
 ### <a name="createuser"></a> Create user
 Creates a user in the Active Directory
 
@@ -415,48 +486,7 @@ Updates a user's information in the Active Directory
 |Couldn't set or update password|Indicates a problem setting or updating the user's password|
 |Active Directory error|General Active Directory error|
 
-### <a name="connecttoserveraction"></a> Connect to server
-Connects to an Active Directory server
 
-##### Input Parameters
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|LDAP path|No|Text value||The LDAP path of the Active Directory server|
-|Use authentication|N/A|Boolean value|False|Specify whether authentication is needed to connect to the server|
-|Username|No|Text value||The user's username|
-|Password|No|Encrypted value||The user's password|
-|Authentication type|N/A|None, Secure, Encryption, Secure sockets layer, Read-only server, Anonymous, Fast bind, Signing, Sealing, Delegation, Server bind|Secure|Specify the type of authentication to be used|
-
-
-##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|ParentDirectoryEntry|Active Directory entry|The parent of the Active Directory entry for use with later Active Directory actions|
-
-
-##### <a name="connecttoserveraction_onerror"></a> Exceptions
-|Exception|Description|
-|-----|-----|
-|Authentication error|Indicates an error with the user's authentication|
-|Unauthorized access|Indicates that an authorization error occurred|
-|The server isn't operational|Indicates that the Active Directory server isn't operational|
-|Invalid operation|Indicates an invalid operation error|
-|Active Directory error|General Active Directory error|
-
-### <a name="closeconnection"></a> Close connection
-Closes the connection with the Active Directory server
-
-##### Input Parameters
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Parent directory entry|No|Active Directory entry||The parent entry of the Active Directory server|
-
-
-##### Variables Produced
-- This action doesn't produce any variables
-
-##### <a name="closeconnection_onerror"></a> Exceptions
-- This action doesn't include any exceptions
 
 
 
