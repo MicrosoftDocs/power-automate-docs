@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2020
+ms.date: 03/22/2021
 ms.author: hamenon
 search.app: 
   - Flow
@@ -41,16 +41,23 @@ Here's the mapping information:
 
 Power Platform region|Gateway region
 -----|-----
+Brazil|
 United States including Preview|Central US, East US 2, East US, North Central US, South Central US, West US 2, West Central US, West US
 Asia|East Asia, Southeast Asia
 Australia|Australia East, Australia Southeast
 Canada|Canada Central, Canada East
 Europe|North Europe, West Europe
 France|France Central, France South
+Germany|fdfdf
 India|Central India, South India, West India
 Japan|Japan East, Japan West
 South America|Brazil South
+Switzerland|dfdfdf
+UAE|dfdfdf
 United Kingdom|UK South, UK West
+
+
+ , , 
 
 ## Frequently asked questions
 
