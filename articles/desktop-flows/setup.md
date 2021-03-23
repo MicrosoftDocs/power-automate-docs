@@ -356,10 +356,24 @@ Using the following registry entry you can prevent users to login on Power Autom
 ***Value***
 - 1: Users will not be able to sign-in using their Microsoft account
 
-<!---
+
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
-You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account.
+You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account without a per user plan with attended RPA license.
+
+| | |
+|---|---|
+|Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|RestrictNoLicenseOrgIDAccountsSignIns|
+|Type|DWORD|
+
+***Value***
+- 1: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
+
+## Prevent users accessing Power Automate Desktop using their work or school accounts or organization premium accounts
+
+You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school accounts or organization premium accounts.
 
 | | |
 |---|---|
@@ -369,10 +383,10 @@ You can use the following registry entry to prevent users from logging into Powe
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to sign-in using their work or school account
--->
+- 1: Users will not be able to sign-in using their work or school account or organization premium account
+
 >[!Note]
->Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. <!---When both registry keys are set to 1, users will not be able to login to Power Automate Desktop with either a Microsoft or a work or school account.-->
+>- Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When all registry keys are set to 1, users will not be able to login to Power Automate Desktop with any type of account.
 
 ## Restricting access to Power Automate Desktop
 
