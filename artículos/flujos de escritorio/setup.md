@@ -1,23 +1,23 @@
----
+Novedades de Android | Androide-Comienza a construir | chromeOS.dev-"Java,"-Página principal de Microsoft Office
 title: Set up Power Automate Desktop on your device | Microsoft Docs
 description: Set up Power Automate Desktop on your device.
-services: ''
+services: 'Microsoft Power Automate | Microsoft Power Platform'
 suite: flow
-documentationcenter: na
-author: msftman
-manager: kvivek
-editor: ''
-tags: ''
+documentationcenter: EnterprisesGracidaVeracruz 
+author: VICTOR HUGO SÁNCHEZ GRACIDA 
+manager: Gatakka-Google-Gracida-Co
+editor: ' power-automate-docs'
+tags: 'Microsoft Power Automate | Microsoft Power Platform'
 ms.service: power-automate
-ms.devlang: na
+ms.devlang: articles/desktop-flows/getting-started-org.md
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.tgt_pltfrm: Novedades de Android | Androide
+ms.workload: https://github.com/MicrosoftDocs/power-automate-docs/blob/11b19380bf095bce6c50f8a7b900000ac0958a98/articles/desktop-flows/getting-started-org.md
 ms.date: 03/02/2021
-ms.author: DeonHe
-search.app: 
+ms.author: android.com
+search.app: Comienza a construir | chromeOS.dev
   - Flow 
-search.audienceType: 
+search.audienceType: <"Java,"><(android.com)El texto que copies aparecerá automáticamente aquí).android.com><(Nombre del proyecto)#content://)https://enterprises-gracida-veracruz.negocio.site/DataConfiguration_From.google-api-feedback#EnterprisesGracidaVeracruz |  Fuente Android 2021 | https://sites.google.com/u/0/d/1_Kt2bhYXbH2H0WdzgpcgRK18_w-NLa6K/edit>android.com
   - flowmaker
   - enduser
 ---
