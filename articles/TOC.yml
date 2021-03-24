@@ -236,20 +236,30 @@
       - name: How to
         href: ./forms/how-to.md    
       - name: Troubleshoot known issues with forms
-        href: ./forms/troubleshoot-issues.md  
-    - name: Use flows with Microsoft Dataverse
-      items:
-      # - name: Overview 
-      #   href: ./dataverse/overview.md
-      #   displayName: Use flows with Microsoft Forms
-      # - name: Get started
-      #   href: ./dataverse/get-started.md
-      # - name: Top scenarios
-      #   href: ./dataverse/popular-scenarios.md
-      - name: Trigger flows when a record changes
-        href: ./dataverse/create-update-delete-trigger.md    
-      # - name: Troubleshoot known issues with Dataverse
-      #   href: ./dataverse/troubleshoot-issues.md  
+        href: ./forms/troubleshoot-issues.md
+  - name: Use flows with Microsoft Dataverse
+    items:
+    # - name: Overview 
+    #   href: ./dataverse/overview.md
+    #   displayName: Use flows with Microsoft Dataverse
+    # - name: Get started
+    #   href: ./dataverse/get-started.md
+    - name: Trigger flows when a record changes
+      href: ./dataverse/create-update-delete-trigger.md
+    - name: Use lists of records in flows
+      href: ./dataverse/list-records.md
+    - name: Use wait conditions to delay flows
+      href: ./dataverse/wait-conditions.md 
+    - name: Use relationships to update records
+      href: ./dataverse/relationships.md
+    - name: Trigger flows when a record changes
+      href: ./dataverse/create-update-delete-trigger.md 
+    - name: Trigger flows when a record changes
+      href: ./dataverse/create-update-delete-trigger.md 
+    - name: Trigger flows when a record changes
+      href: ./dataverse/create-update-delete-trigger.md      
+    # - name: Troubleshoot known issues with Dataverse
+    #   href: ./dataverse/troubleshoot-issues.md   
   - name: Solutions
     items:
     - name: Overview
@@ -270,30 +280,6 @@
     items:
     - name: Use AI Builder in Power Automate
       href: use-ai-builder.md
-  - name: Microsoft Dataverse
-    items:
-    - name: Classic Dataverse workflows
-      items:
-      - name: Overview
-        href: workflow-processes.md
-      - name: Configure background workflow stages and steps
-        href: configure-workflow-steps.md
-      - name: Monitor and manage background workflow processes
-        href: monitor-manage-processes.md
-      - name: Best practices for background workflow processes
-        href: best-practices-workflow-processes.md
-      - name: Replace background workflows with flows
-        href: replace-workflows-with-flows.md
-    - name: Classic Dataverse task flows
-      items:
-      - name: Create mobile task flows
-        href: create-mobile-task-flow.md
-    - name: Classic Dataverse dialogs
-      items:
-      - name: Use classic Dataverse dialogs
-        href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Dataverse dialogs
-        href: replace-dialogs.md
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -491,6 +477,30 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
+- name: Microsoft Dataverse (Legacy)
+    items:
+    - name: Classic Dataverse workflows
+      items:
+      - name: Overview
+        href: workflow-processes.md
+      - name: Configure background workflow stages and steps
+        href: configure-workflow-steps.md
+      - name: Monitor and manage background workflow processes
+        href: monitor-manage-processes.md
+      - name: Best practices for background workflow processes
+        href: best-practices-workflow-processes.md
+      - name: Replace background workflows with flows
+        href: replace-workflows-with-flows.md
+    - name: Classic Dataverse task flows
+      items:
+      - name: Create mobile task flows
+        href: create-mobile-task-flow.md
+    - name: Classic Dataverse dialogs
+      items:
+      - name: Use classic Dataverse dialogs
+        href: use-cds-for-apps-dialogs.md
+      - name: Replace classic Dataverse dialogs
+        href: replace-dialogs.md
 - name: For developers
   items:
   - name: Enterprise developers, partners, and ISVs
