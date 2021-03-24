@@ -252,12 +252,12 @@
       href: ./dataverse/wait-conditions.md 
     - name: Use relationships to update records
       href: ./dataverse/relationships.md
-    - name: Trigger flows when a record changes
-      href: ./dataverse/create-update-delete-trigger.md 
-    - name: Trigger flows when a record changes
-      href: ./dataverse/create-update-delete-trigger.md 
-    - name: Trigger flows when a record changes
-      href: ./dataverse/create-update-delete-trigger.md      
+    # - name: Trigger flows when a record changes
+    #   href: ./dataverse/create-update-delete-trigger.md 
+    # - name: Trigger flows when a record changes
+    #   href: ./dataverse/create-update-delete-trigger.md 
+    # - name: Trigger flows when a record changes
+    #   href: ./dataverse/create-update-delete-trigger.md      
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md   
   - name: Solutions
