@@ -81,7 +81,7 @@ Executes an application or opens a document by executing the associated applicat
 >The Application path field has to point to the executable of the application. Certain default windows applications can be opened by entering **notepad** or **calc** for calculator.
 >
 >Any command line arguments have to be entered in double quotes and separated by a space. For example, to open Microsoft Word in quiet mode with the file InvoiceTemplate.docx from the user's desktop, format the field like so:
->**"/q" "C:\Users\omelnykov\Desktop\InvoiceTemplate.docx"**
+>**"/q" "C:\Users\username\Desktop\InvoiceTemplate.docx"**
 
 ##### <a name="runapplicationbase_example"></a> Example
 ![Run application action example](media\system\run-application-example.png)
