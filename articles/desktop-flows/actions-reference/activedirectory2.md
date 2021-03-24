@@ -41,20 +41,25 @@ Connect to an Active Directory server and perform operations
 
 ## Getting started with Active Directory actions
 
-Active Directory actions require a connection to an Active Directory server. Establish the connection by using the Connect to server action, which requires the LDAP path to specify the domain controllers. The LDAP Path field should specify the domain controllers and have the following format:
-**LDAP://DC=contoso,DC=demo**
+Active Directory actions require a connection to an Active Directory server. Establish the connection by using the Connect to server action, which requires the LDAP path to specify the domain controllers. The LDAP Path field should specify the domain controllers and have the following format:  
+  
+        LDAP://DC=contoso,DC=demo
 
-When working with groups, objects or users, their location will be required. The Location field should specify the container as well as the domain controllers and have the following format:
-**CN=Users,DC=contoso,DC=demo**
+When working with groups, objects or users, their location will be required. The Location field should specify the container as well as the domain controllers and have the following format:  
 
-All Active Directory user management actions require the user’s distinguished name. The Distinguished name field should have the following format (nvarga being the username):
-**CN=nvarga,CN=Users,DC=contoso,DC=demo** 
+        CN=Users,DC=contoso,DC=demo
 
-To list the distinguished names of all Active Directory users, run the following command:
-**dsquery user**
+All Active Directory user management actions require the user’s distinguished name. The Distinguished name field should have the following format (nvarga being the username):  
 
-Note that if the container name contains a comma, the name should be contained within double quotes as in the example that follows:
-**CN=Varga, Norbert** should be formatted like so: **CN="Varga, Norbert",DC=contoso,DC=com**
+        CN=nvarga,CN=Users,DC=contoso,DC=demo
+
+To list the distinguished names of all Active Directory users, run the following command:  
+
+        dsquery user
+
+Note that if the container name contains a comma, the name should be contained within double quotes. e.g.: **CN=Varga, Norbert** should be formatted like so:  
+  
+        CN="Varga, Norbert",DC=contoso,DC=com
 
 ### <a name="connecttoserveraction"></a> Connect to server
 Connects to an Active Directory server
