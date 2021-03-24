@@ -364,7 +364,10 @@ Creates a user in the Active Directory
 |Active Directory error|General Active Directory error|
 
 ##### <a name="createuser_example"></a> Example
-![Create User action example](media\activedirectory\create-ad-user-properties-exercise.png)
+
+The following figure is an example of creating a user. The user's name is Norbert Varga and their username is nvarga. The user is created in the Users container, an the domain controllers contoso and demo are specified in the location as well.
+  
+  ![Create User action example](media\activedirectory\create-ad-user-properties-exercise.png)
 
 ### <a name="getuserinfo"></a> Get user info
 Gets a user's information in the Active Directory
