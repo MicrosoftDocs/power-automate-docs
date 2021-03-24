@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues in processs advisor
+# Known issues in process advisor
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
