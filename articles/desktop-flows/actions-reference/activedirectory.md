@@ -208,6 +208,7 @@ Modifies a group in the Active Directory
 |Active Directory error|General Active Directory error|
 
 ##### <a name="modifygroupaction_example"></a> Example
+In the following example, the Modify group action is used to add the user nvarga to the RPATest group.
 ![Modify Group action example](media\activedirectory\modify-ad-group-properties-exercise.png)
 
 ## Object
