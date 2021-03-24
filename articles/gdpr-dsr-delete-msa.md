@@ -40,7 +40,7 @@ Power Automate offers the following experiences to help users find, review, or c
 
 ## Manage Delete requests
 
-The steps below describe how to self-serve delete requests for GDPR.
+The steps given below describes how to self-serve delete requests for GDPR.
 
 ### Delete Product and service activity
 
@@ -57,7 +57,7 @@ The steps below describe how to self-serve delete requests for GDPR.
 
 ### List and delete flows
 
-A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by follwing these steps:
+A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by following these steps:
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select on **My flows**.
 
@@ -67,7 +67,7 @@ A user can list and delete their flows from [Power Automate](https://flow.micros
 
 ### Delete Connections
 
-Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by follwing these steps:
+Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by following these steps:
 
 1. Sign into [Power Automate](https://flow.microsoft.com), select the gear icon, and then select **Connections**.
 
@@ -82,7 +82,7 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
     ![Delete Event](./media/gdpr-dsr-delete-msa/confirmdelete.png)
 
 > [!NOTE]
-> If other flows use the connection, you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.
+> If other flows use the connection you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.
 >
 >
 
