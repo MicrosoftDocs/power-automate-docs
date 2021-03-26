@@ -24,8 +24,6 @@ search.audienceType:
 
 # Monitor desktop flow queues 
 
-[This topic is pre-release documentation and is subject to change.]
-
 As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor and manage all your queued desktop flow runs in just one location.
 
 ## Setting a priority
