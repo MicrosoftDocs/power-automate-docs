@@ -47,6 +47,34 @@ Automate any Excel related activity
 |[Add new worksheet](#addworksheet)|
 |[Get first free column/row from Excel worksheet](#getfirstfreecolumnrow)|
 
+## Getting started with Excel actions
+
+After setting an Excel instance, either with the Launch Excel or the Attach to running Excel action, you may read from or write to an Excel file.
+
+To read and extract data from an Excel document, use the **Read from Excel Worksheet** action. Retrieve the value of a single cell, or a table of data.
+
+In the following example, to read the cells A1 through E5 as seen in the selection below:
+
+![excel sample data](\media\excel\excel-data.png)
+
+The action has to have the following configuration:
+
+![read from excel action properties window](\media\excel\read-from-excel-action-properties.png)
+
+When the flow runs, the action stores the data in a datatable type variable:
+
+![datatable value viewer](\media\excel\datatable-values.png)
+
+Write data from the flow to Excel by using the **Write to Excel Worksheet** action. This action can write any static data or variable to a specified cell, or multiple cells in an Excel worksheet. 
+
+In the following example, the action writes the above mentioned datatable variable to cell A51.
+
+![write to excel action properties window](\media\excel\write-to-excel-action-properties.png)
+
+Each cell in the workbook is populated with its corresponding cell in the datatable. The result is that the A51 to E55 cell range is filled with the contents of the datatable.
+
+![excel data written](\media\excel\excel-data-written.png)
+
 ## Advanced
 Advanced Excel automation actions
 ### <a name="runmacro"></a> Run Excel Macro
