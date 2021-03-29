@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2018
+ms.date: 3/29/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -40,7 +40,7 @@ Power Automate offers the following experiences to help users find, review, or c
 
 ## Manage Delete requests
 
-The steps given below describes how to self-serve delete requests for GDPR.
+The steps below describe how to self-serve delete requests for GDPR.
 
 ### Delete Product and service activity
 
