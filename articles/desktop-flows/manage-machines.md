@@ -18,13 +18,15 @@ search.audienceType:
 
 Power Automate enables you to trigger desktop flows from cloud flows using events, schedules, and buttons. 
 
-To apply this functionality, you have to own a [premium per-user plan with attended RPA](). 
+> [!NOTE]
+> To apply this functionality, you have to own a [premium per-user plan with attended RPA](). 
 
 ## Register a new machine
 
 To trigger desktop flows to a machine, you have to register the machine to Power Automate. 
 
-Before registering a machine, make sure that you have the required
+> [!NOTE]
+> Before registering a machine, make sure that you have the required
 permissions, and there is an available environment to register the new machine.
 
 To register a machine:
@@ -37,7 +39,7 @@ To register a machine:
     - **Machine name:** A unique name to identify the machine.
     - **Machine description:** An optional description of the machine.
     - **Machine running environment:** The running environment of the machine.
-    - **Machine group:** Through this option, you can add the machine to a machine group. You can find information about machine groups in [Manage machine groups]()
+    - **Machine group:** Through this option, you can add the machine to a machine group. You can find information about machine groups in [Manage machine groups](manage-machine-groups.md)
 
 1. To save or discard any performed changes, select the **Save** or **Cancel** button, respectively.
 
