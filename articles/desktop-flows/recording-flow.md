@@ -15,30 +15,56 @@ search.audienceType:
 ---
 # Record flows in Power Automate Desktop
 
-
-
-It's possible to design flows simply by performing the task you wish to automate, using the desktop recorder.
+Power Automate Desktop enables you to design flows automatically by replicating the task you wish to automate. 
 
 ## Desktop recorder
-In the flow designer, select **Desktop recorder** in the toolbar to record desktop actions:
 
-![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
+To automate a desktop application:
 
-Select **Start recording** in the desktop recorder window to record actions.
+1. Launch Power Automate Desktop and select **Desktop recorder** in the toolbar of the flow designer.
 
-![The start recording button](./media/recording-flow/start-recording-button.png)
+    ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately:
+1. Select **Start recording** in the desktop recorder window and start performing the desired actions.
+
+    ![The start recording button](./media/recording-flow/start-recording-button.png)
+
+The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
 
 ![Recording a desktop flow](./media/recording-flow/recording-flow.png)
 
- Select **Pause recording** to suspend the recording of actions:
+To suspend the recording process, select **Pause recording**.
  
 ![The pause recording button](./media/recording-flow/pause-recording-button.png)
  
- Select **+** to add a comment to the recorded actions:
+ If you want to add a comment to the recorded actions, select the **plus button** (**+**).
 
 ![The comment button](./media/recording-flow/comment-button.png)
+
+### Image-based recording
+
+The desktop recorder may be unable to record actions in specific applications that don't expose their accessibility API.
+
+To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses the Τesseract OCR engine to locate and handle specific elements on the screen. 
+
+To automate a desktop application using image-based recording:
+
+1. Launch Power Automate Desktop and select **Desktop recorder** in the toolbar of the flow designer.
+
+
+1. Select **Image recording** and then select **Start recording** to start recording the desired action using OCR.
+
+
+1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, select the **preview icon**. 
+
+
+1. To extract a text value:
+
+    1. Perform a **right-click** on the text and select **Extract text from image**.
+
+    1. Select the **text area** from which text will be extracted using OCR.
+
+    1. Select an **anchor area** that is not expected to change, such as the label next to a field.
 
 ### Known issues and limitations
 
@@ -52,30 +78,32 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
 
  ## Web recorder
 
-In the flow designer, select **Web recorder** in the toolbar to record web-related actions:
+ To automate a web application:
+
+1. Launch Power Automate Desktop and select **Web recorder** in the toolbar of the flow designer.
 
 ![The web recorder button](./media/recording-flow/web-recorder-button.png)
 
-Select a web browser to record your activity on; optionally, select an already open browser instance to attach to:
+1. Select a web browser on which you will record your activity. Optionally, you can attach to an already open browser instance.
 
 ![Select browser for recording](./media/recording-flow/select-browser-for-recording.png)
 
-The recorder keeps track of your activity within the web browser, generating a series of web actions:
+The web recorder keeps track of your activity within the web browser, generating a series of web actions.
 
 ![Recording a web flow](./media/recording-flow/recording-web-flow.png)
 
-Similarly to the desktop recorder, comments may be added through the **+** button, while the recroding can be paused, resumed, and reset using the buttons at the top right-hand side.
+Like the desktop recorder, you can add comments through the **plus button** (**+**), while you can pause, resume, and reset the recording using the buttons at the top right-hand side.
 
 ### Known issues and limitations
 
-- **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
+- **Issue**: When adding elements or capturing images, the console and the designer are visible, and they might obstruct the user.
 
 
 - **Workarounds**: None.
 
  ## Recording vs building a desktop flow
 
-Any actions created through the use of a recorder can be edited manually once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
+You can edit manually any actions created through the recorder once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
 
 > [!NOTE]
 > Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals or loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.
