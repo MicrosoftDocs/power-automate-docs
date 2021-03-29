@@ -126,6 +126,29 @@ Creates and sends a new email message
 |Attachment not found|Indicates that the specified attachment(s) were not found|
 
 
+### <a name="furtherdetails"></a> Further details
+Common IMAP ports:
+* 143 (non-encrypted and TLS)
+* 993 (secure IMAP)
+
+Common IMAP servers:
+* imap-mail.outlook.com (Outlook.com)
+* outlook.office365.com (Office365.com)
+* imap.mail.yahoo.com (Yahoo mail)
+* imap.gmail.com (Google mail)
+
+Common SMTP ports:
+* 25 (non-encrypted)
+* 587 (non-encrypted and TLS)
+* 465 (SSL)
+
+Common SMTP servers:
+* smtp-mail.outlook.com (Outlook.com)
+* smtp.office365.com (Office365.com)
+* smtp.mail.yahoo.com (Yahoo mail)
+* smtp.gmail.com (Google mail)
+
+![Retrieve emails action example](media\email\email-example.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

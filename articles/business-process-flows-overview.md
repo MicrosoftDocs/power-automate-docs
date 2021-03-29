@@ -42,7 +42,9 @@ Business process flows provide a guide for people to get work done. They provide
   
  ![Business process with stages](media/business-process-stages.png "Business process with stages")  
   
- Each stage contains a group of steps. Each step represents a field where data can be entered. People advance to the next stage by using the **Next Stage** button. You can make a step *required* so that people must enter data for a corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
+ Each stage contains a group of steps. Each step represents a field where data can be entered. You can advance to the next stage by using the **Next Stage** button. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
+ 
+ You can make a step *required* so that people must enter data for a corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required field to a business process flow stage, we recommend that you add this field to your form as well. 
   
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
