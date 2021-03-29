@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 03/24/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues
+# Known issues in process advisor
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -32,7 +32,7 @@ If you cannot see process advisor in Power Automate, receive error messages, or 
 
 - You have a Power Automate License.
 
-   If you don’t have a license, you can activate your trial license from UI Flow in Power Automate.
+   If you don’t have a license, you can activate your trial license from **Desktop flows** in Power Automate.
 - You have access to the Power Automate environment and the permissions required by process advisor described in the [Security](process-advisor-security.md) section.
 - Your browser has the feature to accept 3rd party cookies enabled.
   You can enable it in your browser settings.
