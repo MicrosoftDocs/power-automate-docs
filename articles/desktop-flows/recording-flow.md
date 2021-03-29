@@ -64,7 +64,7 @@ To automate a desktop application using image-based recording:
 
     1. Select the **text area** from which text will be extracted using OCR.
 
-    1. Select an **anchor area** that is not expected to change, such as the label next to a field.
+    1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
 
 ### Known issues and limitations
 
@@ -84,7 +84,7 @@ To automate a desktop application using image-based recording:
 
 ![The web recorder button](./media/recording-flow/web-recorder-button.png)
 
-1. Select a web browser on which you will record your activity. Optionally, you can attach to an already open browser instance.
+1. Select a web browser on which you'll record your activity. Optionally, you can attach to an already open browser instance.
 
 ![Select browser for recording](./media/recording-flow/select-browser-for-recording.png)
 
