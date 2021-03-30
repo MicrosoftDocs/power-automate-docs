@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 03/24/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -43,7 +43,7 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database)
 - Access to [Power Automate](https://powerautomate.microsoft.com/)
 - [Power Automate Desktop](/ui-flows/desktop/introduction)
-  - Make sure you have a UI Flows license. To start a trial license, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start your trial license.
+  - Make sure you have a license to create desktop flows. To start a trial, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start a trial.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
