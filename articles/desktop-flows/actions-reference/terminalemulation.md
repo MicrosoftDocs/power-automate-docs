@@ -37,10 +37,10 @@ Open a new terminal session
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Provider|N/A|Micro focus reflection, HLLAPI|Micro focus reflection|The terminal emulation to use|
-|HLLAPI DLL path|No|File||The HLLAPI DLL of the provider. RocketSoftware BlueZone default name: 'ehlapi64.dll'. IBM Personal Communications default name: 'EHLAPI32.dll'. MicroFocus Rumba default path: 'System/ehlapi32.Dll'. Cybelesoft zScope default name: 'zHllap32.dll'|
+|HLLAPI DLL path|No|File||The HLLAPI DLL of the provider. RocketSoftware BlueZone default name: 'ehlapi64.dll'. IBM Personal Communications default name: 'EHLAPI32.dll'. MicroFocus Rumba default path: 'System/ehlapi32.Dll'. Cybelesoft zScope default name: 'zHllap32.dll'. Any other provider that offers an HLLAPI DLL in it's installation folder.|
 |Installation path|No|Folder||The installation path of the provider's application on the user's file system|
 |Configuration|N/A|Existing profile, Specify connection|Existing profile|Choose 'Existing profile' to select a file containing a preconfigured terminal emulation connection. Choose 'Specify connection' to specify the type of the connection, the host address and the port.|
-|Session name|No|Text value||The session name to connect to|
+|Session name|No|Text value||The session name to connect to.  The HLLAPI short name, and it is a unique identifier for the host session. It can be found in the Terminal emulator's configuration settings.|
 |Host type|N/A|IBM 3270, IBM 5250|IBM 3270|The host type of the connection|
 |Profile|No|File||The file that contains the preconfigured connection|
 |Host address|No|Text value||The host's address to connect to|
