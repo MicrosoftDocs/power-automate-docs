@@ -90,7 +90,7 @@ Here's a short video on recording a process: [Record a process](https://go.micro
     > [!NOTE]
     > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app now** to install it.
 
-1. If you have installed Power Automate Desktop, you should see a  **Open Power Automate Desktop** browser popup window.  Select it to open the app.
+1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser popup window.  Select it to open the app.
 
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
