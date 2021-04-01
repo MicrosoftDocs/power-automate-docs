@@ -45,7 +45,7 @@ To suspend the recording process, select **Pause**.
 
 The desktop recorder may be unable to record actions in specific applications that don't expose their accessibility API.
 
-To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses iamge matching and OCR to locate specific elements on the screen and extract text.
+To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
 
 To automate a desktop application using image-based recording:
 
