@@ -47,6 +47,38 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Set screen resolution](#setscreenresolution)|
 |[Run Python script](#runpythonscript)|
 
+## Getting started with scripting actions
+
+Scripting actions enables users to run blocks of code and implement custom behavior in Power Automate Desktop.
+
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
+
+To declare variables in scripting actions and return results in Power Automate Desktop, use the following commands:
+
+- To declare new variables in PowerShell scripts, use the **$** notation. To return a PowerShell value as a Power Automate Desktop variable, use the **Write-Output** command.
+
+      $variableName = "variableValue"
+      Write-Output $variableName
+
+- Python scripts don't require any special notation to declare new variables. To return a Python value, use the **print** function.
+
+      variableName = "variableValue"
+      print variableName
+
+- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return a VBScript value to Power Automate Desktop.
+
+      variableName = "variableValue"
+      WScript.Echo variableName
+
+- In JavaScript scripts, use the **var** notation to declare a new variable and the **WScript.Echo** function to return a value. 
+
+      var variableName = "variableValue";
+      WScript.Echo(variableName);
+
+To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variable the same way as a hardcoded value.
+
+![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
+
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
 
