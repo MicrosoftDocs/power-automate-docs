@@ -87,6 +87,8 @@ To use Power Automate Desktop variables in scripting actions, use the percentage
 
 ![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
 
+## System actions
+
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
 
