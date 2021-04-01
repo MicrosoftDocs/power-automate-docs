@@ -25,7 +25,7 @@ To automate a desktop application:
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-1. Select **Start recording** in the desktop recorder window and start performing the desired actions.
+1. Select **Record** in the desktop recorder window and start performing the desired actions.
 
     ![The start recording button](./media/recording-flow/start-recording-button.png)
 
@@ -33,7 +33,7 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
 
 ![Recording a desktop flow](./media/recording-flow/recording-flow.png)
 
-To suspend the recording process, select **Pause recording**.
+To suspend the recording process, select **Pause**.
  
 ![The pause recording button](./media/recording-flow/pause-recording-button.png)
  
@@ -53,7 +53,7 @@ To automate a desktop application using image-based recording:
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-1. Select **Image recording** and then select **Start recording** to start recording the desired action using OCR.
+1. Select **Image recording** and then select **Record** to start recording the desired action using OCR.
 
     ![The Image recording button](./media/recording-flow/image-recording-button.png)
 
