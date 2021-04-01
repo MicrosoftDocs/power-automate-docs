@@ -45,7 +45,7 @@ To suspend the recording process, select **Pause**.
 
 The desktop recorder may be unable to record actions in specific applications that don't expose their accessibility API.
 
-To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses the Τesseract OCR engine to locate and handle specific elements on the screen. 
+To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses iamge matching and OCR to locate specific elements on the screen and extract text.
 
 To automate a desktop application using image-based recording:
 
@@ -53,12 +53,12 @@ To automate a desktop application using image-based recording:
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-1. Select **Image recording** and then select **Record** to start recording the desired action using OCR.
+1. Select **Image recording** and then select **Record** to start recording the desired action.
 
     ![The Image recording button](./media/recording-flow/image-recording-button.png)
 
 
-1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover the **preview icon**. 
+1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
 
     ![The preview image button](./media/recording-flow/preview-image-button.png)
 
@@ -68,7 +68,7 @@ To automate a desktop application using image-based recording:
 
         ![The Extract text from image option](./media/recording-flow/extract-text-from-image-option.png)
 
-    1. Select the **text area** from which text will be extracted using OCR.
+    1. Select the **text area** from which text will be extracted using the Tesseract OCR engine.
 
         ![A selected text area](./media/recording-flow/text-area.png)
 
