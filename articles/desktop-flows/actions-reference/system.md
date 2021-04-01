@@ -49,7 +49,7 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 
 ## Getting started with scripting actions
 
-Scripting actions enables users to run blocks of code and implement custom behavior in Power Automate Desktop.
+Scripting actions enable users to run blocks of code and implement custom behavior in Power Automate Desktop.
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
 
@@ -83,7 +83,7 @@ To declare variables in scripting actions and return results in Power Automate D
     WScript.Echo(variableName);
     ```
 
-To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variable the same way as a hardcoded value.
+To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
 
 ![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
 
