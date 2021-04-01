@@ -51,20 +51,30 @@ To automate a desktop application using image-based recording:
 
 1. Launch Power Automate Desktop and select **Desktop recorder** in the toolbar of the flow designer.
 
+    ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
 1. Select **Image recording** and then select **Start recording** to start recording the desired action using OCR.
 
+    ![The Image recording button](./media/recording-flow/image-recording-button.png)
 
-1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, select the **preview icon**. 
 
+1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover the **preview icon**. 
+
+    ![The preview image button](./media/recording-flow/preview-image-button.png)
 
 1. To extract a text value:
 
     1. Perform a **right-click** on the text and select **Extract text from image**.
 
+        ![The Extract text from image option](./media/recording-flow/extract-text-from-image-option.png)
+
     1. Select the **text area** from which text will be extracted using OCR.
 
+        ![A selected text area](./media/recording-flow/text-area.png)
+
     1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
+
+        ![A anchor text area](./media/recording-flow/anchor-area.png)
 
 ### Known issues and limitations
 
@@ -82,11 +92,11 @@ To automate a desktop application using image-based recording:
 
 1. Launch Power Automate Desktop and select **Web recorder** in the toolbar of the flow designer.
 
-![The web recorder button](./media/recording-flow/web-recorder-button.png)
+    ![The web recorder button](./media/recording-flow/web-recorder-button.png)
 
 1. Select a web browser on which you'll record your activity. Optionally, you can attach to an already open browser instance.
 
-![Select browser for recording](./media/recording-flow/select-browser-for-recording.png)
+    ![Select browser for recording](./media/recording-flow/select-browser-for-recording.png)
 
 The web recorder keeps track of your activity within the web browser, generating a series of web actions.
 
