@@ -49,7 +49,7 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 
 ## Getting started with scripting actions
 
-Scripting actions enable users to run blocks of code and implement custom behavior in Power Automate Desktop.
+Scripting actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
 
