@@ -65,7 +65,7 @@ To declare variables in scripting actions and return results in Power Automate D
 - Python scripts don't require any special notation to declare new variables. To return a Python value, use the **print** function.
 
   ```
-  ariableName = "variableValue"
+  variableName = "variableValue"
   print variableName
   ```
 
