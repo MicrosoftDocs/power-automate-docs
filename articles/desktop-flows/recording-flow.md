@@ -75,11 +75,15 @@ To extract a text value while using image recording:
 
 1. Wait for a popup message that will prompt you to select a text area.
 
+    ![The message that prompts user to select a text area](./media/recording-flow/text-area-message.png)
+
 1. Select the **text area** from which text will be extracted using the Tesseract OCR engine.
 
     ![A selected text area](./media/recording-flow/text-area.png)
 
 1. Wait for a popup message that will prompt you to select a anchor area.
+
+    ![The message that prompts user to select a anchor area](./media/recording-flow/anchor-area-message.png)
 
 1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
 
