@@ -19,7 +19,7 @@ Power Automate Desktop enables you to design flows automatically by replicating 
 
 ## Desktop recorder
 
-To automate a desktop application:
+To record a desktop flow:
 
 1. Create a new desktop flow and select **Desktop recorder** in the toolbar of the flow designer.
 
@@ -101,7 +101,7 @@ To extract a text value while using image recording:
 
  ## Web recorder
 
- To automate a web application:
+ To record a flow that automates web applications:
 
 1. Create a new desktop flow and select **Web recorder** in the toolbar of the flow designer.
 
@@ -115,7 +115,7 @@ The web recorder keeps track of your activity within the web browser, generating
 
 ![Recording a web flow](./media/recording-flow/recording-web-flow.png)
 
-Like the desktop recorder, you can add comments through the **plus button** (**+**), while you can pause, resume, and reset the recording using the buttons at the top right-hand side.
+Like the desktop recorder, you can add comments through the **+ Comment** button, while you can pause, resume, and reset the recording using the buttons on the top section of the web recorder.
 
 ### Known issues and limitations
 
