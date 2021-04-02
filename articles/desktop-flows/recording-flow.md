@@ -51,7 +51,7 @@ In some cases, the desktop recorder may not record actions in specific applicati
 
 As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
 
-To automate a desktop application using images:
+To record desktop flows using images:
 
 1. Create a new desktop flow and select **Desktop recorder** in the toolbar of the flow designer.
 
@@ -81,7 +81,7 @@ To extract a text value while using image recording:
 
     ![A selected text area](./media/recording-flow/text-area.png)
 
-1. Wait for a popup message that will prompt you to select a anchor area.
+1. Wait for a popup message that will prompt you to select an anchor area.
 
     ![The message that prompts user to select a anchor area](./media/recording-flow/anchor-area-message.png)
 
