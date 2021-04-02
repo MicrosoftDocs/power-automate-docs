@@ -40,11 +40,14 @@ Flows have different limits depending on their *performance profile*. There are 
 | Medium              | - All instant flows, such as flows with Button or Power Apps triggers, or child flows |
 | High                | - Power Automate per flow plan |
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+If a user has multiple plans, such as a Microsoft 365 plan and a Power Automate Per User plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 If needed, users can see their current plan by opening the session debugging information by pressing Ctrl+Alt+A in the maker portal. The current plan being used will have isCurrent=true.
 
 The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
+
+>[!NOTE]
+>Dynamics 365 plans are only applied to flows that run in the context of a Dynamics 365 application.
 
 ## Flow definition limits
 
