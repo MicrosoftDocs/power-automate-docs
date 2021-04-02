@@ -21,7 +21,7 @@ Power Automate Desktop enables you to design flows automatically by replicating 
 
 To automate a desktop application:
 
-1. Launch Power Automate Desktop and select **Desktop recorder** in the toolbar of the flow designer.
+1. Create a new desktop flow and select **Desktop recorder** in the toolbar of the flow designer.
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
@@ -29,52 +29,61 @@ To automate a desktop application:
 
     ![The start recording button](./media/recording-flow/start-recording-button.png)
 
-The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
+    The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
 
-![Recording a desktop flow](./media/recording-flow/recording-flow.png)
+    ![Recording a desktop flow](./media/recording-flow/recording-flow.png)
 
-To suspend the recording process, select **Pause**.
+1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate Desktop actions.
+
+    ![The actions of the recorded flow](./media/recording-flow/recorded-flow.png)
+
+To pause the recording process temporarily, select **Pause**.
  
 ![The pause recording button](./media/recording-flow/pause-recording-button.png)
  
- If you want to add a comment to the recorded actions, select the **plus button** (**+**).
+ If you want to add a comment to the recorded actions, select **+ Comment**.
 
 ![The comment button](./media/recording-flow/comment-button.png)
 
-### Image-based recording
+## Image-based recording
 
-The desktop recorder may be unable to record actions in specific applications that don't expose their accessibility API.
+In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API or have other technical limitations that block the recording process.
 
-To automate tasks in these applications, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
+As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
 
-To automate a desktop application using image-based recording:
+To automate a desktop application using images:
 
-1. Launch Power Automate Desktop and select **Desktop recorder** in the toolbar of the flow designer.
+1. Create a new desktop flow and select **Desktop recorder** in the toolbar of the flow designer.
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-1. Select **Image recording** and then select **Record** to start recording the desired action.
+1. Select **Image recording** and then **Record** to start recording actions using image matching.
 
     ![The Image recording button](./media/recording-flow/image-recording-button.png)
 
-
-1. Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
+     Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
 
     ![The preview image button](./media/recording-flow/preview-image-button.png)
 
-1. To extract a text value:
+### Extract text with image-based recording
 
-    1. Perform a **right-click** on the text and select **Extract text from image**.
+To extract a text value while using image recording:
 
-        ![The Extract text from image option](./media/recording-flow/extract-text-from-image-option.png)
+1. Perform a **right-click** on the text and select **Extract text from image**.
 
-    1. Select the **text area** from which text will be extracted using the Tesseract OCR engine.
+    ![The Extract text from image option](./media/recording-flow/extract-text-from-image-option.png)
 
-        ![A selected text area](./media/recording-flow/text-area.png)
+1. Wait for a popup message that will prompt you to select a text area.
 
-    1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
+1. Select the **text area** from which text will be extracted using the Tesseract OCR engine.
 
-        ![A anchor text area](./media/recording-flow/anchor-area.png)
+    ![A selected text area](./media/recording-flow/text-area.png)
+
+1. Wait for a popup message that will prompt you to select a anchor area.
+
+1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
+
+    ![A anchor text area](./media/recording-flow/anchor-area.png)
 
 ### Known issues and limitations
 
@@ -90,7 +99,7 @@ To automate a desktop application using image-based recording:
 
  To automate a web application:
 
-1. Launch Power Automate Desktop and select **Web recorder** in the toolbar of the flow designer.
+1. Create a new desktop flow and select **Web recorder** in the toolbar of the flow designer.
 
     ![The web recorder button](./media/recording-flow/web-recorder-button.png)
 
