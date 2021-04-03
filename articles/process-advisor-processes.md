@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 04/02/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -36,10 +36,14 @@ Before you can use process advisor to visualize and analyze your processes, you 
 In general, processes that you think might be inefficient or repetitive are good candidates for analysis. It should also be limited to a single user, and not suited for complicated business processes that involve multiple individuals.
 
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
+
 1. Select **Process advisor (preview)** in the left-side navigation pane.
+
 1. Select **Create** under **Process advisor (preview)**.
+
 1. Select the **Create a new process** tile.
-1. Give your process a name and description, then select **Create**.
+
+1. Give your process a name and description, and then select **Create**.
 
 Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
 
@@ -47,30 +51,37 @@ Here's a short video on process creation: [Create a process](https://go.microsof
 
 Create a recording in one of three ways:
 
-- From the **Create** screen in process advisor
-- Right after process creation
-- From the process details page
+- From the **Create** screen in process advisor.
+- Right after process creation.
+- From the process details page.
 
 Here's a short video on recording a process: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
 
 ### Create a recording from the 'Create' screen
 
 1. From the **Process advisor (preview)** > **Create** screen, select **Add a new recording**.
+
 1. On the **Process** screen, select the process you want to record for.
+
 1. Select **Open recorder**.
+
     >[!NOTE]
     >If you are not able to see the process in the dropdown, ensure that the process has been correctly shared with you.
 
 ### Create a recording right after process creation
 
 1. After the process is created, a creation successful modal will be shown with a few options as next steps.
+
 1. Select **Add a recording**.
 
 ### Create a recording from the process details page
 
 1. From the **Process advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
+
 1. Select the name of the process to go to the process details page.
+
 1. Select **New recording** from the command bar.
+
 1. Select **Open recorder**.
 
 ### Launching the recorder in Power Automate Desktop
@@ -78,14 +89,19 @@ Here's a short video on recording a process: [Record a process](https://go.micro
 1. By using any of the methods described above, you should see a message that says **Launching the recorder** in Power Automate Desktop.
     > [!NOTE]
     > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app now** to install it.
-1. If you have installed Power Automate Desktop, you should see a  **Open Power Automate Desktop** browser popup window.  Select it to open the app.
+
+1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser popup window.  Select it to open the app.
+
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
 ## Power Automate Desktop Recorder
 
 1. In the Desktop recorder screen, select **Start recording**.
+
 1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder window.
+
 1. Once the recording has saved successfully select **Got it** to close the message.
+
 1. Return to the web portal in your browser, and Select **View recording**.
 
 > [!NOTE]
@@ -114,26 +130,50 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 ### Grouping actions into activities
 
-1. Select **Add group** to add a group header. All actions under the group header and before the next group header are considered part of the group.
-1. Move the group header up and down the actions list to where you want to group to start.
+1. Select **Add activity** to add an activity header. All actions under the activity header and before the next activity header are considered part of the group.
+
+1. Move the activity header up and down the actions list to where you want the group to start.
+
 1. Name your group on the right side of the screen.
-1. Use the dropdown menu to find group names that already exist for the process, or create your own.
-1. If you made a mistake and want to delete a group, use the trash can icon next to the group name.
+
+1. Use the dropdown menu to find group names that already exist for the process or create your own.
+
+1. If you made a mistake and want to delete an activity, use the trash can icon next to the activity name.
+
 1. At any time, select **Save** on the top right to save your work.
-1. To analyze, you need at least two groups. Otherwise, the process map would not be very meaningful.
+
+1. To analyze, you need at least two activities. Otherwise, the process map would not be very meaningful.
+
 1. When you finish grouping, set **Ready to analyze**  next to **Save**.
+
 1. Select **Close** to return to the process details page.
 
 ### Remove sensitive information
 
-1. Select the step that contains information you want to remove.
-1. Edit the step name or description to remove any sensitive information, such as account numbers or passwords.
+1. Select the action that contains information you want to remove.
+
+1. Edit the action name or description to remove any sensitive information, such as account numbers or passwords.
+
 1. Delete any screenshots that contain sensitive information.
+
+1. Alternatively, you can simply delete the entire action by clicking **Delete action** in the command bar.
 
 ### Grouping tips
 
-- As much as possible use an existing group name, this creates a more consistent and accurate process map.
+- As much as possible use an existing activity name. This creates a more consistent and accurate process map.
 - Group names will be available in the dropdown list whenever a recording is saved. To remove group names from the dropdown list after it was removed from all recordings that used that group name, you need to analyze the recording.
+
+### Manage activity names
+
+As a process owner or co-owner, you can create recommended activity names for a process. This will ensure there will be more consistency in naming across recordings. To do this:
+
+1. In the process details page, select **Create activity names** to bring up the panel.
+
+1. Select **New name** to add a new activity name entry to the recommended list.
+
+1. Select **Save** when you are done.
+
+The activity names you added will now show up under **Recommended names** in activity name dropdown when grouping actions for a recording. Any activities that are not defined in the recommended list will show up under **Custom names**.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
