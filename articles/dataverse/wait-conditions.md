@@ -41,6 +41,8 @@ delay processing in your flows until a particular condition is met.
 
 4.  Delay an action until a specific event occurs. You can use a trigger from the Microsoft Dataverse (current environment) connector or any other connector as a step in the middle of the flow to delay subsequent steps until a specific event occurs. For example, you can define a flow that’s similar to the one in the following image to check for updates to **Account** records in Dataverse and then waits for an email confirmation from the **Account** manager before updating the change.
 
+
+    <!--Todo update image tip1-->
     ![Flow to update records](../media/wait-conditions/167b1ddc16786f5cf72113635f5779d8.png)
 
 

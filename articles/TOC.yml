@@ -243,7 +243,7 @@
     #   href: ./dataverse/overview.md
     #   displayName: Use flows with Microsoft Dataverse
     # - name: Get started
-    #   href: ./dataverse/get-started.md
+    #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a record changes
       href: ./dataverse/create-update-delete-trigger.md
     - name: Use lists of records in flows

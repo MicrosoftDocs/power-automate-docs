@@ -24,6 +24,8 @@ search.audienceType:
 
 # Use lists of records in flows
 
+<!--Todo update ALL images: tip1-->
+
 Use the **List records** action to retrieve multiple records at once from Microsoft Dataverse with a structured query.
 
 ![List records action](../media/list-records/dcea06d2c29149beeb3b340d3d8ce57a.png)

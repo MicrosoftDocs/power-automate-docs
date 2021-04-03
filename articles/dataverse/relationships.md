@@ -30,6 +30,7 @@ Relationships are an important concept in the Microsoft Dataverse and Power Auto
 
 When you create or update records, there are fields that hold relationships. For example, when you create an **Account** there is a **Primary Contact** field.
 
+<!--Todo update image tip1-->
 ![Primary contact field](../media/relationships/6a2f598eedbd1b1402e5eefd60c10b2e.png)
 
 When you want to create or update a relationship, use standard OData notation. For example, while creating an account record, you should set the primary contact field to the OData id of a contact record like this: contacts(c96be312-4ac1-4358-99b6-1e14e2957b15).
@@ -39,15 +40,17 @@ When you want to create or update a relationship, use standard OData notation. 
 
 If the lookup field is polymorphic (meaning it can have more than one possible target types), then the target record OData ID must be provided in the correct field. For example, the **Company name** field for **Contacts** is polymorphic and can take either an **Account** or **Contact,** but not both.
 
+<!--Todo update image tip1-->
 ![Polymorphic field notation](../media/relationships/8e2663727996e400c7c7150f230f1456.png)
 
-## Activity party relationships**
+## Activity party relationships
 
 [Activity parties](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/activityparty) are
 a special type of relationship in Dataverse. For example, when you create
 an **Appointment,** the Required Attendees and Optional Attendees are related to
 the System Users entity.
 
+<!--Todo update image tip1-->
 ![Activity party](../media/relationships/15e311799b2a5011f84847c60dd501cc.png)
 
 Select **Add new items** and then enter the required data to add multiple values
