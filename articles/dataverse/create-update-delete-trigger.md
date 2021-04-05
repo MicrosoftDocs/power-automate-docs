@@ -78,14 +78,14 @@ You can set additional properties to define more granularly when the flow runs, 
 
 Use filter conditions to set conditions for when to trigger flows.
 
-   ![Filter columns](../media/create-update-delete-trigger/filter-conditions.png)
+   ![Filter condition](../media/create-update-delete-trigger/filter-conditions.png)
 
 
 ## Filtering columns
 
 Use the **filtering columns** box to define a set of comma-separated, unique names for the table, as shown in the following image. The flow runs only when these columns change on the specific rows. 
 
-   ![Filter columns](../media/create-update-delete-trigger/filter-columns.png)
+   ![Filter columns](../media/create-update-delete-trigger/filter-attributes.png)
 
 
 >[!NOTE]
