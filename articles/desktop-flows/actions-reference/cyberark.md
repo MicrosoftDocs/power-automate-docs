@@ -38,9 +38,9 @@ Retrieves a password for a specific application from CyberArk
 |Folder|No|Text value||The folder necessary for the web request query|
 |Object|No|Text value||The object necessary for the web request query|
 |Extra data|Yes|Text value||The extra data (if any) for the web request's query|
-|Accept untrusted certificates|N/A|Boolean value||Specifies whether to accept untrusted certificates|
+|Accept untrusted certificates|N/A|Boolean value|False|Specifies whether to accept untrusted certificates|
 |Certificate location|N/A|Don't use certificate, Load certificate from Windows Store, Load certificate from file|Don't use certificate|Specifies how to load (if needed) the certificate for the request|
-|Use only valid certificates|N/A|Boolean value||Specifies whether to load only valid certificates from the store|
+|Use only valid certificates|N/A|Boolean value|False|Specifies whether to load only valid certificates from the store|
 |Store certificate path|No|Text value||The path of the certificate in the certificate store|
 |Certificates path|No|File||The path of the certificate selected from the store|
 |Certificate password|No|Encrypted value||The password for the certificate file|
