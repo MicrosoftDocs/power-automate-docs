@@ -1,6 +1,6 @@
 ---
 title: Use relevance search to retrieve rows from Dataverse | Microsoft Docs
-description: Learn how to search rows in Microsoft Dataverse with flows. 
+description: Learn how to find and retrieve rows in Microsoft Dataverse with flows. 
 services: ''
 suite: flow
 documentationcenter: na

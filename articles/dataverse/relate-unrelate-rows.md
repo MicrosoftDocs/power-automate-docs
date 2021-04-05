@@ -43,7 +43,7 @@ Follow these steps to associate two rows.
 
 1. You will need to enter the identifier of the row you want to relate.  
 
-   ![Identifier image](../media/dataverse-how-tos/e46483d4603d63dac48465d506e8e76b.png)
+   ![Identifier image for the row to relate](../media/dataverse-how-tos/e46483d4603d63dac48465d506e8e76b.png)
 
    The list of supported one-to-many and many-to-many relationships based on the table type selected is populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. You can select the relationship to which you want to relate your row.  
 
@@ -75,7 +75,7 @@ Follow these steps to associate two rows.
 
 1. Enter the identifier of the row you want to unrelate from.  
 
-   ![Identifier image](../media/dataverse-how-tos/ec312c11730150cfb9bd6e37b2a7928d.png)
+   ![Identifier image for the row to unrelate](../media/dataverse-how-tos/ec312c11730150cfb9bd6e37b2a7928d.png)
 
    The list of supported one-to-many and many-to-many relationships based on the table type selected above will be populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. Select the relationship you want to unrelate the related table from or enter your custom value of the relationship schema name.  
 
@@ -89,4 +89,4 @@ will be the full OData identifier of the resource.
    >[!TIP]
    >You can usually grab the row identifier from a previous step by using dynamic content.  
 
-   ![Dynamic content image](../media/dataverse-how-tos/33403937ade7afee4e2583be75d81bc4.png)
+   ![Dynamic content from previous steps](../media/dataverse-how-tos/33403937ade7afee4e2583be75d81bc4.png)
