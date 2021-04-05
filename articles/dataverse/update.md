@@ -23,24 +23,18 @@ search.audienceType:
 ---
 
 
-# Update a row
+# Use a flow to update a row
 
-Using this action, you can update an existing record in Common Data Service.
+Use the **Update a row** action to make changes record in Microsoft Dataverse.
 
-![Background pattern Description automatically generated with low confidence](../media/update-row/5a6de73bf02a1882c9948e96ca114f45.png)
+![Image that displays the Update a row action](../media/update-row/5a6de73bf02a1882c9948e96ca114f45.png)
 
-For example, you can set up a flow to update an existing Account in Common Data
-Service when you receive an email, as shown below.
+For example, you can create a flow that updates an **Account** in Dataverse when you receive an email, as shown in the following image.
 
-![Graphical user interface, text, application, email Description automatically generated](../media/update-row/bdf36001f983ce1283432f963610c016.png)
+![Image that shows a flow that updates a record when an email arrives.](../media/update-row/bdf36001f983ce1283432f963610c016.png)
 
-After selecting an entity, new fields appear that allow you to set values for
-specific fields. Mandatory fields are indicated with an asterisk (\*), and it is
-not necessary to enter a value for optional fields. Fields that are left blank
-would be skipped in the update unless a null value is explicitly provided.
+After you select an table, new fields appear. Use these fields to set values for other fields. All mandatory fields display an asterisk (\*). It's not necessary to enter a value for optional fields. Fields that are left blank are skipped in the update unless you provide a null value explicitly.
 
-The **Item ID** field is the unique ID of the record that you are updating, as
-shown below. If you do not see an attribute, you can click on **Show advanced
-options** at the bottom of the card.
+The **Item ID** field is the unique ID of the record that you are updating, as shown in the following image. If you do not see an attribute, you can select **Show advanced options** at the bottom of the card.
 
-![Graphical user interface, application Description automatically generated](../media/update-row/8c09cb32dd9852a0c149d3651c179f01.png)
+![Expanded update a row card](../media/update-row/8c09cb32dd9852a0c149d3651c179f01.png)

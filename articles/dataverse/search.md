@@ -1,6 +1,6 @@
 ---
-title: Use a flow to search rows in Dataverse | Microsoft Docs
-description: Learn how how search rose in Microsoft Dataverse with flows. 
+title: Use relevance search to retrieve rows from Dataverse | Microsoft Docs
+description: Learn how to search rows in Microsoft Dataverse with flows. 
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,152 +22,106 @@ search.audienceType:
   - maker
 ---
 
-Search rows
------------
+# Use relevance search to retrieve rows from Dataverse
 
-**Pre-requisite:** Relevance Search must be configured on your environment. See
-[Configure Relevance Search to improve search results and
-performance](https://docs.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization)
+Use the **Search rows** action to retrieve data from Microsoft Dataverse by using keywords and [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search). Relevance search uses the [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml) service.
 
-**Tip:** It can take a few hours for newly added rows to be included in the
-search results.
 
-Of the several ways to retrieve data from Common Data Service, this action helps
-you use keywords to search for a record using Relevance Search, which is built
-on the Azure Machine Learning service. To learn more, see [What is Relevance
-Search?](https://docs.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search).
+## Prerequisites
 
-![Background pattern Description automatically generated with low confidence](../media/search-row/3f253e0b3de8d320be884b3f503ba33c.png)
+Your admin must configure [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization) on your environment before you can use the search action on Microsoft Dataverse.
 
-You can search for a keyword across all the indexed rows in Dataverse by setting
-the *Search term*. You can parameterize it by using dynamic content from a
-previous step in the flow. For example, you can initiate an automated search
-based on a keyword entered in a Power Virtual Agent bot, by using dynamic
-content and setting the following options.
+![The search rows action](../media/search-row/3f253e0b3de8d320be884b3f503ba33c.png)
 
-![Graphical user interface, text, application, email Description automatically generated](../media/search-row/da5e692228bd41726bc5c1e03dc70b7c.png)
+You can add the **Search rows** action to your flows and then provide the **Search term** to search for a keyword across all the indexed rows in Dataverse. 
 
-**Search type**
+You can use dynamic content from a previous step in the flow to parameterize the **Search term**. For example, you can use a keyword that's entered in a Power Virtual Agent bot and set the following options to initiate an automated search. 
 
-You can specify the syntax of a search query using this option. Using 'simple'
-selects simple query syntax and 'full' selects Lucene query syntax. The default
-is 'simple'. See examples below, or the full list of features at [Search across
-entity data using relevance search (Microsoft Dataverse) - Power Apps \|
-Microsoft
-Docs](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+![A Power Virtual Agent calling a flow](../media/search-row/da5e692228bd41726bc5c1e03dc70b7c.png)
 
-![Graphical user interface, text, application, email Description automatically generated](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png)
+
+>[!NOTE]
+>It can take a few hours for newly added rows to be included in the search results.
+
+
+## Search type
+
+Use the **Search type** option to provide the syntax for the search query. Use **simple** to indicate that you want to use the simple query syntax. Or, use **full** if you prefer to use the Lucene query syntax. The default query syntax is **simple**. 
+
+Take a look at the following examples, or the full list of features at [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+
+<!--Todo ![](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png) -->
 
 The simple query syntax supports the following functionality:
 
-| Boolean operators    | AND operator; denoted by +                                                                                                          |
-|                      | OR operator; denoted by \|                                                                                                          |
-|                      | NOT operator; denoted by -                                                                                                          |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+Operator|Description
+---------|-----------
+Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
 | Precedence operators | A search term "hotel+(wifi \| luxury)" will search for results containing the term "hotel" and either "wifi" or "luxury" (or both). |
 | Wildcards            | Trailing wildcard are supported. For example, "Alp\*" searches for "alpine".                                                        |
 | Exact matches        | A query enclosed in quotation marks " ".                                                                                            |
 
-The Lucene query syntax supports the following functionality:
+The Lucene query syntax supports the following functionality.
 
-| Boolean operators                 | Provides an expanded set compared to simple query syntax.                                                                                                                                                                                                                              |
-|                                   | AND operator; denoted by AND, &&, +                                                                                                                                                                                                                                                    |
-|                                   | OR operator; denoted by OR, \|\|                                                                                                                                                                                                                                                       |
-|                                   | NOT operator; denoted by NOT, !, –                                                                                                                                                                                                                                                     |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+Operator|Description
+---------|-----------
+Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
 | Precedence operators              | The same functionality as simple query syntax.                                                                                                                                                                                                                                         |
-| Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.                                                                                                                                                                                                                  |
-|                                   | Trailing wildcard – "alp\*"                                                                                                                                                                                                                                                            |
-|                                   | Leading wildcard - “/.\*pine/”                                                                                                                                                                                                                                                         |
-| Fuzzy search                      | Supports queries misspelled by up to two characters.                                                                                                                                                                                                                                   |
-|                                   | "Uniersty\~" will return "University"                                                                                                                                                                                                                                                  |
-|                                   | "Blue\~1" will return "glue", "blues"                                                                                                                                                                                                                                                  |
-| Term boosting                     | Weighs specific terms in a query differently.                                                                                                                                                                                                                                          |
-|                                   | "Rock\^2 electronic" will return results where the matches to "rock" are more important than matches to "electronic".                                                                                                                                                                  |
-| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results.                                                                                                                                                                                           |
-|                                   | For example, "airport hotel"\~5 returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.                                                                                             |
-| Regular expression (regex) search | For example, /[mh]otel/ matches "motel" or "hotel".                                                                                                                                                                                                                                    |
+| Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
+| Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |                                                                                                                                                                                    |
+| Term boosting                     | Weighs specific terms in a query differently. </br>"Rock\^2 electronic" will return results where the matches to "rock" are more important than matches to "electronic".                                                                                                                                                                                                         |
+| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results. </br>For example, "airport hotel"\~5 returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.                                                                                     |
+| Regular expression (regex) search | For example, /[mh]otel/ matches "motel" or hotel".                                                                                                                                                                                                                                    |
 
-To use any of the search operators as part of the search text, escape the
-character by prefixing it with a single backslash (\\). Special characters that
-require escaping include the following: + - & \| ! ( ) { } [ ] \^ " \~ \* ? : \\
+To use any of the search operators as part of the search text, escape the character by prefixing it with a single backslash (\\). Special characters that
+be escaped include the following: + - & \| ! ( ) { } [ ] \^ " \~ \* ? : \\
 /
 
-**Search mode**
+## Search mode
 
-You can specify whether any or all the search terms must be matched to count the
-document as a match. The default is 'any'. It controls whether a term with the
-NOT operator is AND'ed or OR'ed with other terms in the query (assuming there is
-no + or \| operator on the other terms).
+You can specify whether any or all the search terms must be matched to count the document as a match. The default is 'any'. It controls whether a term with the NOT operator is AND'ed or OR'ed with other terms in the query (assuming there is no + or \| operator on the other terms).
 
--   Using search mode=any increases the recall of queries by including more
-    results, and by default will be interpreted as "OR NOT". For example, "wifi
-    -luxury" will match documents that either contain the term "wifi" or those
-    that don't contain the term "luxury".
+- Using search mode=any increases the recall of queries by including more results, and by default will be interpreted as "OR NOT". For example, "wifi -luxury" will match documents that either contain the term "wifi" or those that don't contain the term "luxury".
 
--   Using search mode=all increases the precision of queries by including fewer
-    results, and by default will be interpreted as "AND NOT". For example, "wifi
-    -luxury" will match documents that contain the term "wifi" and don't contain
-    the term "luxury".
+- Using search mode=all increases the precision of queries by including fewer results, and by default will be interpreted as "AND NOT". For example, "wifi -luxury" will match documents that contain the term "wifi" and don't contain the term "luxury".
 
-See [Search across entity data using relevance search (Microsoft Dataverse) -
-Power Apps \| Microsoft
-Docs](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional).
+See [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
 
-![Graphical user interface, text, application, email Description automatically generated](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png)
+![Search mode](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png)
 
 ### Advanced Options
 
-You can optimize your search by using other advanced options as described below.
-See [Search across entity data using relevance search (Microsoft Dataverse) -
-Power Apps \| Microsoft
-Docs](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/webapi/relevance-search#query-parameters)
-for more examples.
+You can optimize your search by using other advanced options as described is this section.
+See [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
 
--   **Row filter –** You can narrow your search by specifying filters as shown
-    below.
+- **Row filter** -  You can narrow your search by specifying filters as shown in the following image.
 
--   **Table filter –** You can restrict your search to specified tables as shown
-    below.
+- **Table filter** -  You can restrict your search to specified tables as shown in the following image.
 
--   **Sort by –** You can use this option to sort, by specifying a column name
-    and adding *asc* or *desc* as suffix, as shown below.
+- **Sort by** -  You can use this option to sort, by specifying a column name and adding *asc* or *desc* as the suffix, as shown in the following image.
 
-![Graphical user interface, table Description automatically generated with medium confidence](../media/search-row/21831a3d3abca6833ef5801956faa3de.png)
+    ![Advanced options](../media/search-row/21831a3d3abca6833ef5801956faa3de.png)
 
 ### Using dynamic content and Dataverse row fields
 
-You can use the outputs of the action directly from **Dynamic content**. Here is
-the significance of each of the parameters –
+You can use the outputs of the action directly from **Dynamic content**. Here's the meaning of each of the parameters.
 
--   Body – the object representing the entire response, containing the list of
-    rows, total row count and facet results
+Parameter name|Description
+--------------|-----------
+Body|The object that represents the entire response. It contains the list of rows, total row count, and facet results.
+List of rows|An object that represents all the rows returned.
+List of rows item|An individual row in the list of rows, when used inside a loop.
+Row search score|The relevance score of a row. This score indicates how closely it matched the search keywords and conditions.
+Row search highlights|Highlights the specific keywords that matched the search keywords in the row.
+Row table name|The name of the table for a single row. This action aggregates rows from all searchable tables in the environment.
+Row object id|This is an identifier for each row. Use this identifier in conjunction with the table name in the **Get rows** action to read all the fields in a row.
+Row object type code|The table name identifier for the row.
 
--   List of rows – an object representing all the rows returned
+When you are building your flow, the dynamic content might appear like this image.
 
--   List of rows item – individual row in the list of all rows, when used inside
-    a loop
+![Dynamic content for building a flow](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png)
 
--   Row search score – relevance score of a row, indicating how closely it
-    matched the search keywords and conditions
+The **Search rows** action returns many other fields for the matched rows in a variable schema, depending on [your relevance search configuration](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization).
+To use these fields, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image.
 
--   Row search highlights – specific keywords of the row that matched the search
-    keywords
-
--   Row table name – table name of an individual row, as this action aggregates
-    rows from all searchable tables in the environment
-
--   Row object id – row identifier, that can be used in conjunction with the
-    table name in the Get rows action to read all the fields of the row
-
--   Row object type code – table name identifier of the row
-
-![Graphical user interface, text, application Description automatically generated](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png)
-
-This action returns many other fields of the matched rows in a variable schema,
-depending upon [your relevance search
-configuration](https://docs.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization).
-To use them, you can parse the JSON response, and use the dynamic outputs
-generated from it as shown below
-
-![Graphical user interface, application, Teams Description automatically generated](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png)
+![The json schema](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png)
