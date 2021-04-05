@@ -39,7 +39,7 @@ highlightedContent:
     # Card
     - title: Power Automate training on Microsoft Learn
       itemType: learn
-      url: /learn/browse/?products=power-automate
+      url: /learn/powerplatform/power-automate
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
