@@ -24,7 +24,7 @@ search.audienceType:
 
 # Use a flow to add a row in Dataverse
 
-Use the **Add a new row** action to add a new record in Microsoft Dataverse.
+Use the **Add a new row** action to add a new row in Microsoft Dataverse.
 
 ![Add a new row image](../media/create-row/42343b95404d44f600cd69059f9b1dc1.png)
 

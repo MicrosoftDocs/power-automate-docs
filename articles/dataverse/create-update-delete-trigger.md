@@ -1,6 +1,6 @@
 ---
-title: Trigger flows when a record changes | Microsoft Docs
-description: Use the When a record is created, updated or deleted trigger to start flows.
+title: Trigger flows when a row is added, modified, or deleted | Microsoft Docs
+description: Use the When a row is added, modified or deleted trigger to trigger flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,53 +23,53 @@ search.audienceType:
 ---
 
 
-# Trigger flows when a record changes
+# Trigger flows when a row changes
 
-The **When a record is created, updated or deleted** trigger runs a flow whenever a record of a selected entity and scope changes or is created. 
+The **When a row is added, modified or deleted** trigger runs a flow whenever a row of a selected table and scope changes or is created. 
 
 
 ## Prerequisites
 
-- To create a flow that triggers when you create, update, or delete a record, you must have user level permissions for create, read, write, and delete on the **Callback Registration** entity. 
+- To create a flow that triggers when you create, modify, or delete a row, you must have user level permissions for create, read, write, and delete on the **Callback Registration** table. 
 
-- Additionally, depending on the scopes defined in the flow, you might need at least that level of read on the same entity. You can get more information about [environment security](https://docs.microsoft.com/power-platform/admin/database-security).
+- Additionally, depending on the scopes defined in the flow, you might need at least that level of read on the same table. You can get more information about [environment security](https://docs.microsoft.com/power-platform/admin/database-security).
 
    ![Dataverse triggers](../media/create-update-delete-trigger/triggers.png)
 
-The following information is required to use the **When a record is created, updated or deleted** trigger.
+The following information is required to use the **When a row is added, modified or deleted** trigger.
 
 - Trigger condition
 
-- Entity name
+- Table name
 
 - Scope
 
 ### Trigger condition
 
-The trigger condition precisely defines which combination of changes to a record would run the flow.
+The trigger condition precisely defines which combination of changes to a row would run the flow.
 
    ![Trigger conditions](../media/create-update-delete-trigger/2.png)
 
-### Entity name
+### Table name
 
-The entity name filters the records to indicate precisely which kind of records should change before the flow triggers. See [entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview).
+The table name filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview).
 
    ![when a row is added, modified or deleted card](../media/create-update-delete-trigger/created-modified-deleted.png)
 
 ### Scope
 
-The scope field indicates whose records should be monitored to determine if the flow should be run.
+The scope box indicates whose rows should be monitored to determine if the flow should be run.
 
    ![Graphical user interface, text, application Description automatically generated](../media/create-update-delete-trigger/scope.png)
 
 Here’s what each scope means
 
-| **Scope**| **Record ownership level**                                                                                                                                         |
+| **Scope**| **Row ownership level**                                                                                                                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Business Unit               | Actions are taken on records owned by anyone in your [business unit](https://docs.microsoft.com/power-platform/admin/wp-security-cds#business-units)                          |
+| Business Unit               | Actions are taken on rows owned by anyone in your [business unit](https://docs.microsoft.com/power-platform/admin/wp-security-cds#business-units)                          |
 | Organization                | Actions are taken by anyone within the [environment](https://docs.microsoft.com/power-platform/admin/environments-overview)                                                    |
-| Parent: Child business unit | Actions are taken on records that are owned by anyone in your [business unit or a child business unit](https://docs.microsoft.com/power-platform/admin/wp-security-cds#business-units) |
-| User                        | Actions are taken on records owned by you.                                                                                                                     
+| Parent: Child business unit | Actions are taken on rows that are owned by anyone in your [business unit or a child business unit](https://docs.microsoft.com/power-platform/admin/wp-security-cds#business-units) |
+| User                        | Actions are taken on rows owned by you.                                                                                                                     
 ### Advanced options
 
 You can set additional properties to define more granularly when the flow runs, and the user profile under which it runs.
@@ -78,19 +78,19 @@ You can set additional properties to define more granularly when the flow runs, 
 
 Use filter conditions to set conditions for when to trigger flows.
 
-   ![Filter attributes](../media/create-update-delete-trigger/filter-conditions.png)
+   ![Filter columns](../media/create-update-delete-trigger/filter-conditions.png)
 
 
-## Filtering attributes
+## Filtering columns
 
-Use the **filtering attributes** field to define a set of comma-separated, unique names for the entity, as shown in the following image. The flow runs only when these attributes change on the specific records. 
+Use the **filtering columns** box to define a set of comma-separated, unique names for the table, as shown in the following image. The flow runs only when these columns change on the specific rows. 
 
-   ![Filter attributes](../media/create-update-delete-trigger/filter-attributes.png)
+   ![Filter columns](../media/create-update-delete-trigger/filter-columns.png)
 
 
 >[!NOTE]
 >This property applies to the **Update** condition only. 
->**Create** and **Delete** apply to all attributes of a record.
+>**Create** and **Delete** apply to all columns of a row.
 
 
 ### Filter expression
@@ -118,11 +118,11 @@ Use an OData style time stamp in the **Postpone Until** property to delay the fl
 >[!IMPORTANT]
 >The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. See [Impersonate another user](https://docs.microsoft.com/powerapps/developer/common-data-service/impersonate-another-user) for more details.
 
-When you create flows with the **When a record is created, updated or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner. 
+When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner. 
 
 Follow these steps to impersonate a user.
 
-1. In the Power Automate flow definition, select **show advanced options** in the **When a record is created, updated or deleted** trigger.
+1. In the Power Automate flow definition, select **show advanced options** in the **When a row is added, modified or deleted** trigger.
 
 1. Select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
 
@@ -133,8 +133,8 @@ Follow these steps to impersonate a user.
 If nothing is specified, it defaults to the flow owner that created the flow – essentially the author. Here are the other options – 
 
    - Flow owner – this is the user who created the flow.
-   - Record owner – this is the user who owns the Microsoft Dataverse record which underwent a change, causing the flow to be triggered. If a record is owned by a team, then this option falls back to run as the flow owner.
-   - Triggering user – this is the user that took the action on the Microsoft Dataverse record, causing the flow to get triggered.
+   - Row owner – this is the user who owns the Microsoft Dataverse row which underwent a change, causing the flow to be triggered. If a row is owned by a team, then this option falls back to run as the flow owner.
+   - Triggering user – this is the user that took the action on the Microsoft Dataverse row, causing the flow to get triggered.
 
       ![Run as options](../media/create-update-delete-trigger/11.png)
 

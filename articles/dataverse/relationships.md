@@ -1,5 +1,5 @@
 ---
-title: Use relationships to update records | Microsoft Docs
+title: Use relationships to update rows | Microsoft Docs
 description: Use Dataverse relationships to update records.
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use relationships to update records
+# Use relationships to update rows
 
 Relationships are an important concept in the Microsoft Dataverse and Power Automate allows you to work with these relationships in a few ways.
 
