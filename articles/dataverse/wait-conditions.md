@@ -28,8 +28,8 @@ When working with the Microsoft Dataverse (current environment) connector, there
 are four ways to add wait conditions. Use these wait conditions when you need to
 delay processing in your flows until a particular condition is met.
 
-1.  Postpone triggering the flow and the first action until a specific timestamp
-    – See the **Wait condition using Postpone Until** section in [When a record is created, updated or deleted > Advanced options](#_Advanced_options)
+1.  Postpone triggering the flow and the first action until a specific time.
+    – See the [**Wait condition using Postpone Until** article](./create-update-delete-trigger.md#wait-condition-using-postpone-until) to learn more.
 
 2.  Add a [fixed delay](https://docs.microsoft.com/power-automate/ui-flows/edit-desktop#add-a-delay)
     before the next step.
