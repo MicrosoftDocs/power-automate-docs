@@ -47,12 +47,9 @@ To pause the recording process temporarily, select **Pause**.
 
 ## Image-based recording
 
-In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API or have other technical limitations that block the recording process.
+In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API, run on virtual desktop environments, or have other technical limitations that block the recording process.
 
 As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
-
-> [!NOTE]
->  Image-based recording can be used to automate virtual desktop environments, such as Citrix and Microsoft Remote Desktop.
 
 To record desktop flows using images:
 
