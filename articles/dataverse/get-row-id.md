@@ -53,7 +53,7 @@ Use **Expand Query** to define an OData style expression that defines which data
 - *Collection-valued* navigation properties correspond to one-to-many or
     many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/retrieve-related-tables-query).
+If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-entities-with-query).
 <!--todo this link is broken-->
 
 To use expand query in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.

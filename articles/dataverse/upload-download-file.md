@@ -94,4 +94,4 @@ You can use the Microsoft Dataverse connector to work with these datatypes in Po
 
 1. Enter the content you want to upload to the column.  
 
-   ![Content to upload](media/842db60eb80af4b54ece2a6249637d32.png)
+   ![Content to upload](../media/dataverse-how-tos/842db60eb80af4b54ece2a6249637d32.png)

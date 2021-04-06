@@ -1,6 +1,6 @@
 ---
 title: Use relevance search to retrieve rows from Dataverse | Microsoft Docs
-description: Learn how to search rows in Microsoft Dataverse with flows. 
+description: Learn how to find and retrieve rows in Microsoft Dataverse with flows. 
 services: ''
 suite: flow
 documentationcenter: na
@@ -66,12 +66,12 @@ The Lucene query syntax supports the following functionality.
 Operator|Description
 ---------|-----------
 Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
-| Precedence operators              | The same functionality as simple query syntax.                                                                                                                                                                                                                                         |
+| Precedence operators              | The same functionality as simple query syntax.                       |
 | Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
-| Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |                                                                                                                                                                                    |
-| Term boosting                     | Weighs specific terms in a query differently. </br>"Rock\^2 electronic" will return results where the matches to "rock" are more important than matches to "electronic".                                                                                                                                                                                                         |
-| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results. </br>For example, "airport hotel"\~5 returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.                                                                                     |
-| Regular expression (regex) search | For example, /[mh]otel/ matches "motel" or hotel".                                                                                                                                                                                                                                    |
+| Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |         |
+| Term boosting                     | Weighs specific terms in a query differently. </br>"Rock\^2 electronic" will return results where the matches to "rock" are more important than matches to "electronic".                                            |
+| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results. </br>For example, "airport hotel"\~5 returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.      |
+| Regular expression (regex) search | For example, /[mh]otel/ matches "motel" or hotel".   |
 
 To use any of the search operators as part of the search text, escape the character by prefixing it with a single backslash (\\). Special characters that
 be escaped include the following: + - & \| ! ( ) { } [ ] \^ " \~ \* ? : \\
