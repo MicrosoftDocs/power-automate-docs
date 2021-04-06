@@ -55,14 +55,14 @@ All scripting actions follow the basic structure of the respective programming o
 
 To declare variables in scripting actions and return results in Power Automate Desktop, use the following commands:
 
-- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpythonscript) actions to Power Automate Desktop, use the **Write-Output** command.
+- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate Desktop, use the **Write-Output** command.
 
   ```
   $variableName = "variableValue"
   Write-Output $variableName
   ```
 
-- Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpowershellscript) actions, use the **print** function.
+- Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
 
   ```
   variableName = "variableValue"
