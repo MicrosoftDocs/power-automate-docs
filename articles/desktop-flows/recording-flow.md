@@ -51,6 +51,9 @@ In some cases, the desktop recorder may not record actions in specific applicati
 
 As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
 
+> [!NOTE]
+>  Image-based recording can be used to automate virtual desktop environments, such as Citrix and Microsoft Remote Desktop.
+
 To record desktop flows using images:
 
 1. Create a new desktop flow and select **Desktop recorder** in the toolbar of the flow designer.
