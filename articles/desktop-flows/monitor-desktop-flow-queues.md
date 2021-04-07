@@ -24,8 +24,6 @@ search.audienceType:
 
 # Monitor desktop flow queues 
 
-[This topic is pre-release documentation and is subject to change.]
-
 As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor and manage all your queued desktop flow runs in just one location.
 
 ## Setting a priority
@@ -55,7 +53,7 @@ Click on a gateway to see the details of the desktop flow runs that are being pr
 ## Prerequisites
 In order to see runs in this list, one of the following must be true:
 - You are [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
-- Another user has shared their desktop flow (add documentation link) with you, which has run in the current environment
+- Another user has [shared their desktop flow](../create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
@@ -76,7 +74,7 @@ Four actions are available when clicking on the three dots next to the desktop f
 
 ## Change priority
 You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner or if you are an admin on the gateway.
-Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#setting-a-priority), you need to change the priority in the connector action.
+Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](#setting-a-priority), you need to change the priority in the connector action.
 
 ## Move to top
 The owner of gateway or a user with administrator privileges for the gateway can override the queue priority by moving an item to the top of the queue. That item will be put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
