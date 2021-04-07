@@ -42,10 +42,6 @@ The desktop recorder keeps track of mouse and keyboard activity in relation to U
 
 ### Known issues and limitations
 
-- **Issue**: When adding elements or capturing images, the console and the flow designer might get in the way of the user, as they are not hidden as they should during these procedures.
-
-- **Workarounds**: None.
-
 - **Issue**: The Desktop recorder may not record all steps from the Start Menu or system tray.
 
 - **Workarounds**: None.
@@ -69,7 +65,6 @@ Similarly to the desktop recorder, comments may be added through the **+** butto
 ### Known issues and limitations
 
 - **Issue**: When adding elements or capturing images, the console and the designer are visible and they might obstruct the user.
-
 
 - **Workarounds**: None.
 
