@@ -44,9 +44,9 @@ Select a subflow tab to edit the respective subflow.
 
 Drag actions to rearrange them and change the order in which they run. Right-click an action and select **Enable action** or **Disable action** to enable or disable an action respectively. While running, the flow skips any disabled actions.
 
-Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace. Copy and paste actions within the same subflow, among different subflows, or other open instances of flow designer. 
+Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace. 
 
-When copying actions, all their parameters, images and UI elements are copied as well. Apart from flows, you can paste actions in other applications, such as chats and text files.
+When copying actions, all their parameters, images and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications, such as chats and text files.
 
 ## Searching in the flow
 
