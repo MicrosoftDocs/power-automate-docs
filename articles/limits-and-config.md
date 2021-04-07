@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/19/2020
+ms.date: 04/07/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -120,7 +120,7 @@ If a cloud flow exceeds one of the limits, activity for the flow will be slowed 
 
 There are limits to the number of *actions* a cloud flow can run. These runs are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
 
-| Name | Entitlement Limit | Interim limit | Notes |
+| Name | Plan limit | Interim limit | Notes |
 | ---- | ----- | ----- |----- |
 | Actions per 5 minutes | 100,000 |n/a| Distribute the workload across more than one flow as necessary. |
 | Actions per 24 hours | 2,000 for Low, 5,000 for MediumLow1, 20,000 for MediumLow2, 25,000 for Medium, and 15,000 for High|10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
