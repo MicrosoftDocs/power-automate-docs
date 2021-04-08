@@ -45,6 +45,26 @@ To pause the recording process temporarily, select **Pause**.
 
 ![The comment button](./media/recording-flow/comment-button.png)
 
+### Add text using Input Method Editors (IMEs)
+
+Input Method Editors (IMEs) are software components that enable users to input text in languages that can't be represented easily on a standard QWERTY keyboard. 
+
+Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
+
+Power Automate Desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
+
+1. Right-click on the text field and select **Add text with IME** on the displayed menu.
+
+    ![The Add text with IME menu option](./media/recording-flow/add-text-with-ime-option.png)
+
+1. Populate the popup dialog with the desired text using an IME.
+
+    ![The Add text with IME dialog](./media/recording-flow/add-text-with-ime-dialog.png)
+
+1. Select **Add text** to generate the respective step in the **Desktop recorder** window.
+
+    ![The generated text from an Input Method Editor in the Desktop Recorder](./media/recording-flow/ime-text-desktop-recorder.png)
+
 ## Image-based recording
 
 In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API, run on virtual desktop environments, or have other technical limitations that block the recording process.
