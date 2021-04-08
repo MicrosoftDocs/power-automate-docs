@@ -596,7 +596,7 @@
   - name: Power Automate Web API
     href: web-api.md
   - name: Frequently asked questions
-    href: frequently-asked-questions.md
+    href: frequently-asked-questions.yml
   - name: Power Automate glossary
     href: glossary.md
 - name: Learn from others
