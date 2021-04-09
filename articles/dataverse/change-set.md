@@ -25,30 +25,38 @@ search.audienceType:
 
 # Use a flow to perform a changeset request in Dataverse
 
-
-![Graphical user interface, text, application, email Description automatically generated](../media/dataverse-how-tos/cc0cee1e835ad1577bdecccd23ebc4f6.png)
-
 Change sets provide a way to bundle several operations that either succeed or fail as a group. When multiple operations are contained in a change set, all the operations are considered *atomic*, which means that if any one of the operations fails, any completed operations are rolled back.
 
-![Change set request action](../media/dataverse-how-tos/e34a1aa3aec940e1629d8f761a8af62a.png)
+Follow these steps to get started with change sets.
 
-To get started with change sets, just add the **Executes a changeset request** scope to your flow.
+1. In your flow, select **New step**.
+1. Enter **changeset** into the search box of the **Choose an operation** card.
+   
+   Notice that the operations list now only displays operations with the word **changeset** in its name.
+1. Select the **Perform a changeset request** to add its scope to your flow.
 
-![Graphical user interface, text, application Description automatically generated](../media/dataverse-how-tos/14cf3b7d911d56da328f2f807fbeb06f.png)
+   ![Change set request action](../media/dataverse-how-tos/change-set-1.png)
+1. Select **Add an action**.
 
-You’ll notice that this is different from any other action you’ve added in the following ways.
+   ![Change set request action](../media/dataverse-how-tos/change-set-2.png)
 
-- Instead of inputs and outputs, this is a container to which you can add actions.
-- When you select **Add an action** you’ll see just the following three actions:
 
-- Create a new row
+    You’ll notice that this is different from any other action you’ve added in the following ways.
 
-- Delete a row
+    - Instead of inputs and outputs, this is a container to which you can add actions.
 
-- Update a row
+    - When you select **Add an action** you’ll see just the following three actions:
 
-![The three actions for the executes a changeset scope](../media/dataverse-how-tos/13a004c80eef10754f2a0bc4eff57d8b.png)
+    - Create a new row
 
-You cannot have additional built-in actions inside of a change set scope because all actions are evaluated together in Dataverse. You will see that there are no arrows between each of the actions, indicating that there are no dependencies between these actions (they’ll all run at once).
+    - Delete a row
 
-![Executes a changeset scope](../media/dataverse-how-tos/02697bf7df88cf9377f91a858816b146.png)
+    - Update a row
+
+    ![The three actions for the perform a changeset scope](../media/dataverse-how-tos/change-set-3.png)
+
+    You cannot have additional built-in actions inside of a change set scope because all actions are evaluated together in Dataverse. You will see that there are no arrows between each of the actions, indicating that there are no dependencies between these actions (they’ll all run at once).
+
+1. Add all the actions your want to perform.
+
+   ![Executes a changeset scope](../media/dataverse-how-tos/change-set-3.png)
