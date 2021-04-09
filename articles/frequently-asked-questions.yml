@@ -220,8 +220,7 @@ sections:
       - question: |
          Learn more
         answer: |
-          * Take a [guided learning tour](/learn/paths/automate-process-using-flow) of Power Automate
-          * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
+              * Take a [guided learning tour](/learn/paths/automate-process-using-flow) of Power Automate
+              * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
           
-          
-          [!INCLUDE[footer-include](includes/footer-banner.md)]
+              [!INCLUDE[footer-include](includes/footer-banner.md)]
