@@ -42,17 +42,46 @@ There are two types of Dataverse actions you can use in flows.
 
 Bound actions target a single table or a set of rows from a single table.
 
-To perform a bound action, add the **Perform a bound action** action to your flow. 
+To perform a bound action, add the **Perform a bound action** action to your flow.
 
-  ![Bound action](../media/dataverse-how-tos/0e311669b83c68a96739ad0200ec56de.png)
+Follow these steps in edit more of your flow to perform a bound action.
+
+1. After any step in your flow, select **Add new step**.
+1. Enter **bound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform bound action**
+
+   ![Bound action](../media/dataverse-how-tos/bound-1.png)
+
+1. Select the **Table name** for the table you want to use.
+1. Select the **Action name** for the action you'll perform.
+1. Enter the **Row ID** for the row in the table on which you want to perform the bound action.
+
+   ![Bound action card completed](../media/dataverse-how-tos/bound-complete.png)
+
+1. Save, and then run your flow.
+1. Confirm the bound action completes successfully on the table that you selected.
 
 ## Unbound action
 
 Unbound actions aren’t bound to a table and are called as static operations. Unbound actions are performed on the entire environment, not on specific tables or rows.
 
-   ![Unbound action](media/c4633bf6d2a71d4b98be767a7e6b339f.png)
+To perform a bound action in your flow, you must add **Perform an unbound action** to your flow.
 
-   ![Action name](media/e4c067b3e97ac547fe2ea4b224866f1c.png)
+Follow these steps in edit more of your flow to perform an unbound action.
+
+1. After any step in your flow, select **Add new step**.
+1. Enter **unbound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform unbound action**
+
+   ![Unbound action](../media/dataverse-how-tos/bound-2.png)
+   
+1. Select an **Action name**.
+
+   ![Action name](../media/dataverse-how-tos/bound-3.png)
+
+1. Enter or select any of the optional details on the **Perform an unbound action** card.
+
+1. Save, and then run your flow.
+1. Confirm the unbound action completes successfully.
+
 
 
 
