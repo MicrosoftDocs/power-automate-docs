@@ -48,7 +48,7 @@ To save a flow, select **File** in the flow designer's menu bar and then pick **
 
 To save the flow's current state as a new flow, select **Save as** in the **File** menu and populate a name for the new flow in the displayed dialog.
 
-![The Save as dialog](./media/saving-flows/save-as-dialog.png)
+![The Save flow as dialog](./media/saving-flows/save-flow-as-dialog.png)
 
 ## Managing the workspace toolbar
 
