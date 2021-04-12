@@ -60,8 +60,8 @@
     href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
-  - name: Create a flow that uses Microsoft Dataverse
-    href: common-data-model-intro.md
+  # - name: Create a flow that uses Microsoft Dataverse
+  #   href: common-data-model-intro.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -252,28 +252,28 @@
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a record changes
       href: ./dataverse/create-update-delete-trigger.md
+    - name: Use a flow to add a row
+      href: ./dataverse/create.md
+    # - name: Use a flow to update a row
+    #   href: ./dataverse/update.md
+    - name: Get a row by id
+      href: ./dataverse/get-row-id.md    
+    - name: Delete a row
+      href: ./dataverse/delete-row.md 
     # - name: Use lists of records in flows
     #   href: ./dataverse/list-records.md
     # - name: Use wait conditions to delay flows
     #   href: ./dataverse/wait-conditions.md 
+    - name: Perform bound or unbound actions in flows
+      href: ./dataverse/bound-unbound.md
     # - name: Use relationships to update rows
     #   href: ./dataverse/relationships.md
     # - name: Use relevance search to retrieve rows
-    #   href: ./dataverse/search.md 
-    # - name: Use a flow to update a row
-    #   href: ./dataverse/update.md 
-    # - name: Get a row by id
-    #   href: ./dataverse/get-row-id.md    
-    # - name: Delete a row
-    #   href: ./dataverse/delete-row.md     
+    #   href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
-    # - name: Use a flow to perform a changeset request in Dataverse
-    #   href: ./dataverse/change-set.md    
-    # - name: Perform a bound action
-    #   href: ./dataverse/bound-row.md
-    # - name: Perform an unbound action
-    #   href: ./dataverse/unbound.md
+    - name: Use a flow to perform a changeset request in Dataverse
+      href: ./dataverse/change-set.md    
     # - name: Upload or download image and file content
     #   href: ./dataverse/upload-download-file.md       
     # - name: Troubleshoot known issues with Dataverse
