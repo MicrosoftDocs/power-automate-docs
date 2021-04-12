@@ -286,3 +286,13 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+*.ini
+articles/media/trigger-sharepoint-list/praveen-deon/created-modified-deleted.png
+articles/media/trigger-sharepoint-list/praveen-deon/delay-until.png
+articles/media/trigger-sharepoint-list/praveen-deon/filter-attributes.png
+articles/media/trigger-sharepoint-list/praveen-deon/filter-conditions.png
+articles/media/trigger-sharepoint-list/praveen-deon/row-filter-contains.png
+articles/media/trigger-sharepoint-list/praveen-deon/row-filter.png
+articles/media/trigger-sharepoint-list/praveen-deon/run-as.png
+articles/media/trigger-sharepoint-list/praveen-deon/scope.png
+articles/media/trigger-sharepoint-list/praveen-deon/triggers.png
