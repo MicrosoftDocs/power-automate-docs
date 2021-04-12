@@ -36,7 +36,7 @@ Use the Microsoft Dataverse connector to create cloud flows that start when data
 The Microsoft Dataverse connector provides the following triggers to help you define when your flows start.
 
    - When a row is created, updated or deleted
-   - when an action is performed
+   - When an action is performed
    - When a flow step is run from a business process flow
 
 ## Overview of actions 
