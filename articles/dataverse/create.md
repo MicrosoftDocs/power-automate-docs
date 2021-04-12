@@ -26,21 +26,30 @@ search.audienceType:
 
 Use the **Add a new row** action to add a new row in Microsoft Dataverse.
 
-![Add a new row image](../media/create-row/42343b95404d44f600cd69059f9b1dc1.png)
+Follow these steps to add a new **Account** in Dataverse when you receive an email to your signup address, as shown in the following image.
 
-For example, you can set up a flow to add a new **Account** in Dataverse when you receive an email to your signup address, as shown in the following image.
+1. Create a flow with the **When a new email arrives (V3)** trigger to your flow.
+1. Select **New step** to add an action to your flow.
+1. Enter **new row** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
+1. Select **Add a new row** action.
 
-![A flow that adds a new row when an email arrives](../media/create-row/9e8d26806c2cf115d0261238fc53e874.png)
+   ![Add a new row image](../media/add-row/add-row-1.png)
 
-After you select a table, new fields appear. Use these fields to set values for other fields. All mandatory fields display an asterisk (\*). It's not necessary to enter a value for optional fields.
+1. Select the **Accounts** table n the **Add a new row** card.
 
-If you do not see a column, you can select **Show advanced options** at the bottom of the card to view all columns.
+   ![Select the Accounts table](../media/add-row/add-row-2.png)
 
-![Cards that shows all columns for the add a new row action](../media/create-row/1cbaa257cf19b641bc183652cd7731c8.png)
+   After you select a table, new fields appear. Use these fields to set values for other fields. All mandatory fields display an asterisk (\*). It's not necessary to enter a value for optional fields.
 
-You can use outputs directly from previous triggers and actions in the **Dynamic content** selector shown in the following image, or modify them by building an **Expression** as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).
+1. Optional: if you don't see a column that you need, select **Show advanced options** at the bottom of the card to view all columns.
 
-![Dynamic content](../media/create-row/ce98d6e7a86d68dc7d68d16b503c5f38.png)
+   ![Card that shows all columns for the add a new row action](../media/add-row/show-all-fields-advanced.png)
+
+>[!TIP]
+>You can use outputs from previous triggers and actions in the **Dynamic content** selector shown in the following image, or modify them by building an **Expression** as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).
+
+   ![Dynamic content](../media/add-row/dynamic-content.png)
 
 
 

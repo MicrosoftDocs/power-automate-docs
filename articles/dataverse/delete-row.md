@@ -27,15 +27,22 @@ search.audienceType:
 
 Follow these steps to delete a row from Dataverse.
 
-1. Add the **Delete a row** action to your flow.
+1. Create a flow with the **When a new email arrives (V3)** trigger to your flow.
+1. Select **New step** to add an action to your flow.
+1. Enter **delete row** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
 
-   ![Delete a row action](../media/dataverse-how-tos/be211fa059451c9cede0f1889a1b1800.png)
+   ![Delete a row action](../media/dataverse-how-tos/delete-row-action.png)
 
-2. Select the table name, and then enter an **Item ID**. 
+1. Select **Delete a new row** action.
 
-   The **Item ID** column is the unique ID of the row that you are deleting, as shown in the following image.
+   ![Delete a row card](../media/dataverse-how-tos/delete-row-card.png)
 
-   ![Item id and table name](../media/dataverse-how-tos/83794a709e31039ffb760dede35eabdb.png)
+1. Select the table name, and then enter an **Item ID**. 
+
+   ![Item id and table name](../media/dataverse-how-tos/delete-row-card-complete.png)
+
+   The **Item ID** column is the unique ID of the row that you are deleting.
 
 >[!TIP]
 >You can retrieve the **Item Id** via the dynamic content that's generated from earlier steps in your flow.
