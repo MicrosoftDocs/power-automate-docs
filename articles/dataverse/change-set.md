@@ -38,7 +38,7 @@ Follow these steps to get started with change sets.
    ![Change set request action](../media/dataverse-how-tos/change-set-1.png)
 1. Select **Add an action**.
 
-   ![Change set request action](../media/dataverse-how-tos/change-set-2.png)
+   ![Add an action](../media/dataverse-how-tos/change-set-2.png)
 
 
     You’ll notice that this is different from any other action you’ve added in the following ways.
@@ -47,7 +47,7 @@ Follow these steps to get started with change sets.
 
     - When you select **Add an action** you’ll see just the following three actions:
 
-    - Create a new row
+    - Add a new row
 
     - Delete a row
 

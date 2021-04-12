@@ -22,14 +22,14 @@ search.audienceType:
   - maker
 ---
 
-## Perform bound action or unbound actions
+# Perform bound action or unbound actions
 
 >[!IMPORTANT]
->In this acticle, the term "action" means a [Dataverse action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9). Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
+>In this acticle, the term "action" means a [Dataverse action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true). Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
 
 
 
-Flows can call [Dataverse actions](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
+Flows can call [Dataverse actions](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
 
 Actions represent operations that might have side effects in the database, such as creating or updating rows. 
 

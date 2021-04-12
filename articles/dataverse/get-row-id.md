@@ -53,7 +53,7 @@ Follow these steps to use the **Row ID** to get a row from the Accounts table.
 
 Select **Show advanced options** to set additional properties that further define the information that should be returned.
 
-   ![Completed Get row by ID card](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced.png)
+   ![Completed Get row by ID card with advanced options highlightes](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced.png)
 
 The advanced options are:
 
