@@ -24,24 +24,48 @@ search.audienceType:
 
 # Get a row by ID from Dataverse
 
-Use **Get a row by ID** action to retrieve data from Dataverse, this action helps you retrieve the columns of a specific row when its unique ID is known.
+Use the **Get a row by ID** action to retrieve data from Dataverse. This action helps you retrieve the columns of a specific row when its unique ID is known.
 
-![Get a row by ID](../media/dataverse-how-tos/f76517bbda33ce77851fc5a1d81c238e.png)
+>[!TIP]
+>After you get a row by ID, you can use the columns from that row in all steps that come later in your flow.
 
-For example, you can retrieve a Dataverse row as shown in the following image and reuse its columns in subsequent steps in a flow. The **Item ID** column is
-the unique ID of the row that you are retrieving, as shown in the following image.
+Follow these steps to use the **Row ID** to get a row from the Accounts table.
 
-![Item Id](../media/dataverse-how-tos/7c63bcead2d53fa3e0d1645405dd776c.png)
+1. Select **New step** to add an action to your flow.
+1. Enter **get row** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
+
+
+   ![Get a row by ID](../media/dataverse-how-tos/get-row-by-id-action.png)
+
+1. Select the **Get a row by ID** action.
+
+   ![Item Id](../media/dataverse-how-tos/get-row-by-id-action-card.png)
+
+1. Select the **Accounts** table from the **Table name** list, and then enter the **Row ID** for the row that you want to get from the Accounts table.
+
+   ![Completed Get row by ID card](../media/dataverse-how-tos/get-row-by-id-action-complete.png)
+
+   >[!NOTE]
+   >The **Item ID** column is the unique ID of the row that you are retrieving, as shown in the following image.
 
 ## Advanced options
 
-You can set additional properties to define the information that should be returned.
+Select **Show advanced options** to set additional properties that further define the information that should be returned.
 
-## Select Query
+   ![Completed Get row by ID card](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced.png)
+
+The advanced options are:
+
+- Select columns
+- Expand Query
+- Partition Id
+
+![Unique column names](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced-options.png)
+
+## Select columns
 
 Sometimes it is necessary to optimize the amount of data retrieved in a flow, especially if you are performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you would like to retrieve by entering unique names of those columns separated by commas.
-
-![Unique column names](../media/dataverse-how-tos/917483bafd6ee60a9cd42945f4cfa064.png)
 
 ## Expand Query
 
@@ -54,8 +78,7 @@ Use **Expand Query** to define an OData style expression that defines which data
     many-to-many relationships.
 
 If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-entities-with-query).
-<!--todo this link is broken-->
 
-To use expand query in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.
+To use expand a query in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.
 
-![Expand query](../media/dataverse-how-tos/fac9ba021fbe62e553fb039c5bf16d91.png)
+![Expand query](../media/dataverse-how-tos/get-row-by-id-action-expand-query.png)
