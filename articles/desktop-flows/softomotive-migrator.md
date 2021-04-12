@@ -16,7 +16,6 @@ search.audienceType:
 # Process migrator for Softomotive products (preview)
 [This topic is pre-release documentation and is subject to change.]
 
-## Abstract 
 
 ProcessRobot users are now able to export .prp files into folders and use the Process migrator for Softomotive products (preview) to convert automations into Desktop Flows for use with Power Automate Desktop.  This migration utility will redefine automations to their equivalent Power Automate Desktop action definitions where such parity exists.  Some actions have been deprecated because they do not fit into the Power Platform ecosystem, however work arounds should be applicable to overcome what appears to be missing functionality. 
 
@@ -84,11 +83,14 @@ Now you can run the Process migrator for Softomotive products (preview)
 
     ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)
 
-    5.1. Alternatively, ProcessRobot users will be prompted to browse for the folder containing the .prp files to migrate and then select check boxes for the processes they would like to start migrating. 
+    5.1. Alternatively, ProcessRobot users will be prompted to browse for the folder containing the .prp (ProcessRobot Process) files to migrate and then select check boxes for the processes they would like to start converting.  If you have exported your .prp from the **History** tab in Process Designer and have chosen **Selected versions only** – the migrator tool will convert one version of the process into a desktop flow. Alternatively, exporting the .prp without limiting to a single version will result in all previous versions being migrated.
   
+    ![Process migrator for Softomotive products (preview) installer process selection](media/migrator/ExportSelectVersion.png)
+
     ![Process migrator for Softomotive products (preview) installer step 7b](media/migrator/Browse_To_Folder.png)
 
     ![Process migrator for Softomotive products (preview) installer step 7C](media/migrator/PRP_Selection.png)
+
 1. Once the migration starts you will be presented with a text box containing information for the current state (of the migration) and the progress bar.
 
     ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
@@ -151,10 +153,6 @@ Not supported, not on the roadmap.
 
 Not supported by the migration tool but is currently on the roadmap to be modified and reintroduced. 
 
-**Get Last Exception** 
-
-Supported in migration. 
-
 **Update KPI** 
 
 Not supported by the migration tool.  Administrators can apply a workaround in the CoE to calculate KPIs 
@@ -190,15 +188,13 @@ Not supported in migration.  Work arounds include [updating a secret using an AP
 **Display Notification** 
 
 Not supported.  Not on roadmap. 
-<!---
-## Release notes
 
-### Non-migratable actions 
 
-The following WinAutomation actions will not be migrated from the WA processes to the respective UI Flows.  
+### Non-migrated actions 
+
+The following WinAutomation and ProcessRobot actions will not be migrated from the processes to the respective UI Flows.  
 
 - All Ancora actions 
-- CyberArk action 
 - All CaptureFast actions 
 - Cognitive > Google > Vision > Face Detection 
 - Cognitive > IBM > Visual Recognition > Detect Faces 
@@ -212,7 +208,7 @@ The following WinAutomation actions will not be migrated from the WA processes t
 
 ### Partially migrated actions 
 
-The following actions will be migrated from the WA processes to the respective desktop flows. However, one or more of their parameters will not be transferred at all or with the same value. Some cases might be handled by applying manual rework in the designer. 
+The following actions will be migrated from the processes to the respective desktop flows. However, one or more of their parameters will not be transferred at all or with the same value. Some cases might be handled by applying manual rework in the designer. 
 
 - Azure: Create Azure Session 
     - Non Migratable Properties: Username, Password (for option Authentication Type: With Service Principal) 
