@@ -139,6 +139,18 @@ Like the desktop recorder, you can add comments through the **+ Comment** button
 
 - **Workarounds**: None.
 
+- **Issue**: While running a flow created through an Image-based recording, the click may be sent to the wrong place. 
+
+- **Workarounds**: Edit the auto-generated action “Move mouse to image” through the Designer and decrease the Tolerance parameter in the Advanced settings.
+
+- **Issue**: Image recorder does not support double-click.
+
+- **Workarounds**: Edit the flow and manually add a “Send mouse click” action with parameter “Mouse event to send: Double click” right after the respective “Move mouse to image” action.
+
+- **Issue**: The “Extract text from image” popup that appears after sending a right-click using the Image recorder, may hide behind the popup of the application.
+
+- **Workarounds**: Send the right-click to another place on the screen.
+
  ## Recording vs building a desktop flow
 
 You can edit manually any actions created through the recorder once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
