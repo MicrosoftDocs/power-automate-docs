@@ -18,8 +18,7 @@ search.audienceType:
 
 
 
-The **Variables** pane shows the input and output variables passed to and from Power Automate Desktop. It also displays all the variables used in the current flow under **Flow variables**. 
-<!--note from editor: We should not use bold on the name. -->
+The variables pane shows the input and output variables passed to and from Power Automate Desktop. It also displays all the variables used in the current flow under **Flow variables**. 
 
 ![The Variables pane.](media\variables-pane\variables-pane.png)
 
@@ -61,30 +60,50 @@ In the **Edit variable** dialog box, populate the **Variable name** and **Extern
 
 ## Input and output variables
 
-Power Automate Desktop enables data exchange with the Power Automate platform through the input and output variables.
-<!--note from editor: We do not use bold font on names like this. -->
+Power Automate Desktop enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows.
 
-These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows. Ιn Power Automate, any input variables will be added to the UI action as fields. You can find more information about passing data between Power Automate Desktop and Power Automate in [Link a Power Automate Desktop flow with a cloud flow](link-pad-flow-portal.md).
-<!--note from editor: Suggest for this previous sentence "You can find more information about passing data between Power Automate Desktop and Power Automate in <add article title as a link>."-->
+> [!NOTE]
+> You can find more information about passing data between Power Automate Desktop and Power Automate in [Link a Power Automate Desktop flow with a cloud flow](link-pad-flow-portal.md).
 
-To create an input or output variable, select the **+**  button in the [**Variables**](manage-variables.md) pane and choose the respective option.
-<!--note from editor: Instead of using the + button, use the name that appears when you hover over the + sign and possibly put the plus sign after it like this <name of button> (+). -->
+### Create an input variable
 
-![The plus button in the Variables pane to create new input and output variables.](media\input-output-variables\create-input-output-variable.png)
+To create an input variable:
 
-  
-In the **Add a new input variable** dialog box, populate the following fields:
-- **Variable type**: Defines if the variable is input or output.
-- **Variable name**: The name of the variable in the flow.
-- **Default value**: The default value when the flow runs from the Power Automate Desktop flow designer or the Power Automate Desktop console.
-- **Data type**: The type of the variable, like number, text, or datetime.
-- **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
-- **Description**: A description of the variable. This field is mandatory and will appear in Power Automate.
+1. Select the (**+**) button in the variables pane and pick **Input**.
 
-![The Add a new input variable dialog box](media\input-output-variables\Add-new-input-variable-window.png)
+     ![The plus button in the variables pane to create a new input variable.](media\input-output-variables\create-input-variable.png)
 
-![The Add a new output variable dialog box](media\input-output-variables\Add-new-output-variable-window.png)
+1. When the **Add a new input variable** dialog is appeared, populate the following fields:
 
+    - **Variable type**: Defines if the variable is input or output.
+    - **Variable name**: The name of the variable in the flow.
+    - **Data type**: The type of the variable, like number, text, or datetime.
+    - **Default value**: The default value when the flow runs from the Power Automate Desktop flow designer or the Power Automate Desktop console.
+    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
+    - **Description**: A description of the variable that will appear in Power Automate.
+
+     ![The Add a new input variable dialog box](media\input-output-variables\Add-new-input-variable-dialog.png)
+
+If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually.  
+
+![The Flow inputs dialog](media\input-output-variables\flow-input-dialog.png)
+
+### Create an output variable
+
+To create an output variable:
+
+1. Select the (**+**) button in the variables pane and pick **Output**.
+
+    ![The plus button in the variables pane to create a new output variable.](media\input-output-variables\create-output-variable.png)
+
+1. When the **Add a new output variable** dialog is appeared, populate the following fields:
+
+    - **Variable type**: Defines if the variable is input or output.
+    - **Variable name**: The name of the variable in the flow.
+    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
+    - **Description**: A description of the variable that appear in Power Automate.
+
+    ![The Add a new output variable dialog box](media\input-output-variables\Add-new-output-variable-dialog.png)
 
 
 
