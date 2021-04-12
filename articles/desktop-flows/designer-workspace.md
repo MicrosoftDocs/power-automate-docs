@@ -40,23 +40,33 @@ Subflows are shown in tabs, directly over the main workspace. To add a new subfl
 
 Select a subflow tab to edit the respective subflow.
 
+## Saving flows
+
+To save a flow, select **File** in the flow designer's menu bar and then pick **Save**. Alternatively, you can press the keyboard shortcut **Ctrl +S**.
+
+![The Save option in the menu bar.](./media/saving-flows/save-flow.png)
+
+To save the flow's current state as a new flow, select **Save as** in the **File** menu and populate a name for the new flow in the displayed dialog.
+
+![The Save as dialog](./media/saving-flows/save-as-dialog.png)
+
 ## Managing the workspace toolbar
 
 Drag actions to rearrange them and change the order in which they run. Right-click an action and select **Enable action** or **Disable action** to enable or disable an action respectively. While running, the flow skips any disabled actions.
 
 Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace. 
 
-When copying actions, all their parameters, images and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications, such as chats and text files.
+When copying actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications, such as chats and text files.
 
 ## Searching in the flow
 
-To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action which contains it.
+To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
 
 ![Search flows](\media\searching-flow\search.png)
 
 ## Using the Go to line option
 
-The Go to line function navigates to a specific line within the current subflow. This function is helpful in subflows which contain a large number of actions. 
+The Go to line function navigates to a specific line within the current subflow. This function is helpful in subflows that contain a large number of actions. 
 
 Select **Edit**, then **Go to line** and enter a line. The corresponding action will be highlighted.
 
