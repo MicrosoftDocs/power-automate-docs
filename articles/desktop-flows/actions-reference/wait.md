@@ -92,7 +92,8 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for text to|N/A|Appear, Disappear|Appear|Specifies whether to wait for the text to appear or disappear|
-|OCR engine|No|OCREngineObject||The engine to use for the OCR operation|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |Text to find|No|Text value||The text to search for in the specified source|
 |Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
