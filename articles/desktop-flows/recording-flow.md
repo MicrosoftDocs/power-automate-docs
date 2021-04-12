@@ -69,7 +69,7 @@ Power Automate Desktop supports the use of IMEs during the flow recording proced
 
 In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API, run on virtual desktop environments, or have other technical limitations that block the recording process.
 
-As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image matching and OCR to locate specific elements on the screen and extract text.
+As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
 
 To record desktop flows using images:
 
@@ -77,7 +77,7 @@ To record desktop flows using images:
 
     ![The desktop recorder button](./media/recording-flow/desktop-recorder-button.png)
 
-1. Select **Image recording** and then **Record** to start recording actions using image matching.
+1. Select **Image recording** and then **Record** to start recording actions using image recognition.
 
     ![The Image recording button](./media/recording-flow/image-recording-button.png)
 
