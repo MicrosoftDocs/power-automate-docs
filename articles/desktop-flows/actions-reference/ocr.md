@@ -80,7 +80,8 @@ Extract text from a given source using the given OCR engine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine|No|OCREngineObject||The engine to use for the OCR operation|
+|OCR engine|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
 |Image file path|No|File||The path of the image to perform the OCR operation on|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|The selected mode for the OCR operation|

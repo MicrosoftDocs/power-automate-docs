@@ -40,7 +40,7 @@ To create the flow:
     ![console new flow](media\getting-started-msa\console-new-flow.png)
 
 
-1. Populate a name for the flow and then select **Create**. In this example, the flow is named **Copy Folder to Desktop**
+1. Populate a name for the flow and then select **Create**. In this example, the flow is named **Copy Folder to Desktop**.
 
     ![build flow dialog](media\getting-started-msa\build-flow-dialog.png)
 
