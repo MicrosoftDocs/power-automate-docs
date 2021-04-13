@@ -68,10 +68,8 @@
       href: get-started-logic-template.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
-    - name: Create a cloud flow with Common Data Service (current environment) connector
-      href: connection-cds-native.md
-    - name: Create a cloud flow with Common Data Service connector
-      href: connection-cds.md
+    # - name: Create a cloud flow with Microsoft Dataverse connector
+    #   href: connection-cds-native.md
     - name: Create a cloud flow with Dynamics 365
       href: connection-dynamics365.md
     - name: Create a cloud flow with OneDrive for Business
@@ -277,7 +275,9 @@
     # - name: Upload or download image and file content
     #   href: ./dataverse/upload-download-file.md       
     # - name: Troubleshoot known issues with Dataverse
-    #   href: ./dataverse/troubleshoot-issues.md   
+    #   href: ./dataverse/troubleshoot-issues.md
+    - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
+      href: connection-cds.md  
   - name: Solutions
     items:
     - name: Overview
