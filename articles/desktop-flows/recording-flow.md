@@ -89,7 +89,7 @@ To record desktop flows using images:
 
 To extract a text value while using image recording:
 
-1. Perform a **right-click** on the text and select **Extract text from image**.
+1. Perform a **right-click** on the screen and select **Extract text from image**.
 
     ![The Extract text from image option](./media/recording-flow/extract-text-from-image-option.png)
 
