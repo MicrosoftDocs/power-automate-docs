@@ -363,8 +363,6 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Find usages within flows
-      href: ./desktop-flows/finding-usages.md
     - name: Record flows in Power Automate Desktop
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
