@@ -260,8 +260,8 @@
       href: ./dataverse/delete-row.md 
     - name: Use lists of rows in flows
       href: ./dataverse/list-rows.md
-    # - name: Use wait conditions to delay flows
-    #   href: ./dataverse/wait-conditions.md 
+    - name: Use wait conditions to delay flows
+      href: ./dataverse/wait-conditions.md 
     - name: Perform bound or unbound actions in flows
       href: ./dataverse/bound-unbound.md
     # - name: Use relationships to update rows
