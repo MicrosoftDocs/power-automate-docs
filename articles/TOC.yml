@@ -260,16 +260,16 @@
       href: ./dataverse/get-row-id.md    
     - name: Delete a row
       href: ./dataverse/delete-row.md 
-    # - name: Use lists of records in flows
-    #   href: ./dataverse/list-records.md
+    - name: Use lists of rows in flows
+      href: ./dataverse/list-rows.md
     # - name: Use wait conditions to delay flows
     #   href: ./dataverse/wait-conditions.md 
     - name: Perform bound or unbound actions in flows
       href: ./dataverse/bound-unbound.md
     # - name: Use relationships to update rows
     #   href: ./dataverse/relationships.md
-    # - name: Use relevance search to retrieve rows
-    #   href: ./dataverse/search.md     
+    - name: Use relevance search to retrieve rows
+      href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
     - name: Use a flow to perform a changeset request in Dataverse
