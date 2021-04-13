@@ -17,10 +17,10 @@ search.audienceType:
 [This topic is pre-release documentation and is subject to change.]
 
 
-ProcessRobot users are now able to export .prp files into folders and use the Process migrator for Softomotive products (preview) to convert automations into Desktop Flows for use with Power Automate Desktop.  This migration utility will redefine automations to their equivalent Power Automate Desktop action definitions where such parity exists.  Some actions have been deprecated because they do not fit into the Power Platform ecosystem, however work arounds should be applicable to overcome what appears to be missing functionality. 
+ProcessRobot users are now able to export .prp files into folders and use the Process migrator for Softomotive products (preview) to convert automations into Desktop Flows for use with Power Automate Desktop.  This migration utility will redefine automations to their equivalent Power Automate Desktop action definitions where such parity exists.  Some actions have been deprecated because they do not fit into the Power Platform ecosystem, however workarounds should be applicable to overcome what appears to be missing functionality. 
 
 > [!NOTE]
-> To see the full list of migration coverage regarding action groups, please check the release notes [here](#release-notes).
+> To see the full list of migration coverage regarding action groups, please check the release notes [here](#non-migratable-actions).
  
 ## Pre-requisites 
  - For Process migrator for Softomotive products (preview) to be able to install and function as expected the following are needed: 
@@ -131,7 +131,7 @@ If you are new to the Power Platform, it is recommended that administrators comp
 
 Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](https://docs.microsoft.com/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](https://docs.microsoft.com/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users.  The CoE starter kit provides a solid foundation to build insightful dashboards which can be modified to your organizations needs throughout their RPA journey.  
 
-### Work arounds for unsupported ProcessRobot Process Studio features 
+### Workarounds for unsupported ProcessRobot Process Studio features 
 
 
 #### User Libraries: 
@@ -159,7 +159,7 @@ Not supported by the migration tool.  Administrators can apply a workaround in t
 
 **Get Global Variable / Set Global Variable** 
 
-Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) create a Cloud Flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have a an output variable from the desktop flow passed back to the dataverse table if needed (Set Global Variable). 
+Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) create a Cloud Flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have a an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
 
 **Enter Locked Region** 
 
@@ -183,14 +183,14 @@ Not supported in migration.  Workarounds include [using sensitive text in power 
 
 **Update Credential** 
 
-Not supported in migration.  Work arounds include [updating a secret using an API](https://docs.microsoft.com/rest/api/keyvault/UpdateSecret/UpdateSecret). 
+Not supported in migration.  Workarounds include [updating a secret using an API](https://docs.microsoft.com/rest/api/keyvault/UpdateSecret/UpdateSecret). 
 
 **Display Notification** 
 
 Not supported.  Not on roadmap. 
 
 
-### Non-migrated actions 
+### Non-migratable actions 
 
 The following WinAutomation and ProcessRobot actions will not be migrated from the processes to the respective UI Flows.  
 
@@ -206,47 +206,47 @@ The following WinAutomation and ProcessRobot actions will not be migrated from t
 - All Synchronization Actions (group of actions) 
 - All WinAutomation Actions (group of actions) 
 
-### Partially migrated actions 
+### Partially migratable actions 
 
 The following actions will be migrated from the processes to the respective desktop flows. However, one or more of their parameters will not be transferred at all or with the same value. Some cases might be handled by applying manual rework in the designer. 
 
 - Azure: Create Azure Session 
-    - Non Migratable Properties: Username, Password (for option Authentication Type: With Service Principal) 
+    - Non-migratable Properties: Username, Password (for option Authentication Type: With Service Principal) 
     - Missing properties: Client Secret (for option Authentication Type: With User) 
 - Azure: Create Azure Managed Disk 
     - Missing properties: Storage Account Name 
 - Compression: Unzip Files 
-    - Non Migratable Properties: Include Mask, Exclude Mask, Include Subfolders 
+    - Non-migratable Properties: Include Mask, Exclude Mask, Include Subfolders 
 - Cognitive: Classify Image IBM 
     - Missing properties: Location, Instance ID 
 - Cognitive: Analyze Tone IBM 
-    - Non Migratable Properties: Username, Password 
+    - Non-migratable Properties: Username, Password 
     - Missing properties: API key, Location, Instance ID 
 - Cognitive: Translate IBM 
-    - Non Migratable Properties: Username, Password 
+    - Non-migratable Properties: Username, Password 
     - Missing properties: API key, Location, Instance ID, Version Date 
 - Cognitive: Identify Language IBM
-    - Non Migratable Properties: Username, Password 
+    - Non-migratable Properties: Username, Password 
     - Missing properties: API key, Location, Instance ID, Version Date 
 - Cognitive: Detect Language Microsoft 
-    - Non Migratable Properties: Number Of Languages To Detect 
+    - Non-migratable Properties: Number Of Languages To Detect 
 - Cryptography: Encrypt Text  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Decrypt Text  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Encrypt From File  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Decrypt To File  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Hash Text  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Hash From File  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Hash Text With Key  
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Cryptography: Hash From File  With Key 
-    - Non Migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
+    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
 - Mouse and Keyboard: Move Mouse 
-    - Non Migratable for option 'Move mouse to recorded positions' 
+    - Non-migratable for option 'Move mouse to recorded positions' 
 --->
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
