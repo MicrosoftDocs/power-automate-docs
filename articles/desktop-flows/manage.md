@@ -36,7 +36,7 @@ After you've created desktop flows, you might need to view, edit, or just check 
 From this section, you can create a new desktop flow and then edit or delete your existing desktop flows.
 
 > [!NOTE]
-> If you chose to delete a flow, press the refresh button in Power Automate Desktop to reflect the changes in the flows list.
+> If you choose to delete a flow, press the refresh button in Power Automate Desktop to reflect the changes in the flows list.
 
 
 ## Details page
