@@ -144,7 +144,10 @@ Run a subflow specifying any required arguments
 Terminates the flow
 
 ##### Input Parameters
-- This action doesn't require any input
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|End flow|No|Successfully, With error message|Successfully|Terminate the execution of the flow, either successfully or with an error|
+|Error message|No|Text value||The error message to return to the flow caller upon exit|
 
 ##### Variables Produced
 - This action doesn't produce any variables
