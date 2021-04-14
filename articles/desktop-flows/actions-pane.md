@@ -61,7 +61,7 @@ In case a produced variable isn't needed for later use, unselect the checkbox un
 ![The option to disable a produced variable in the action.](media/configuring-actions/actions-outputs.png)
 
 >[!NOTE]
-> Produced variable names, may not contain symbols, white spaces and non-latin characters and can't start with arithmetic characters.
+> Produced variable names, may not contain special characters, white spaces and non-latin characters and can't start with arithmetic characters.
 
 ## Configuring action exceptions
 
