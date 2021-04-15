@@ -113,7 +113,8 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If text|N/A|Exists, Doesn't exist|Exists|Specifies whether to check if the text exists or not on the given source to analyze|
-|OCR engine|No|OCREngineObject||The engine to use for the OCR operation|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |Text to find|No|Text value||The text to search for in the specified source|
 |Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|

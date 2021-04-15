@@ -41,9 +41,6 @@ Sharing is not needed at the recordings level. Once you share a process with a c
 
 ## Share panel
 
-> [!div class="mx-imgBorder"]
-> ![Share screen](media/process-advisor-visualize/analytics-screen.png "Sharing screenshot")
-
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users and teams in your organization, and share your process with them.
 
 When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you have shared a process with them. As co-owners or contributors they are asked to help you manage the process or adding new recordings, respectively. There is a link in the email invitation that leads them to the process shared.
