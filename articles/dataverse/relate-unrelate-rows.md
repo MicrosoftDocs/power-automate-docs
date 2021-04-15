@@ -29,55 +29,57 @@ search.audienceType:
 
 ## Relate rows
 
-Follow these steps to associate two rows.
+Follow these steps to associate two rows while editing your flow.
 
-1. Add the **Relate rows** action to your flow. 
+1. Select **New step** to add an action to your flow.
+1. Enter **relate rows** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
+1. Select **Relate rows** action.
 
-   ![Relate rows image](../media/dataverse-how-tos/6dd67e3c9cb92199b29485dd48afd449.png)
+   ![Relate rows image](../media/relate-rows/relate-rows-action.png)
 
    Like other actions in this connector, a list of supported tables is available.
    
-1. Select the type of table that you want to which you want to relate, or enter a custom value for the table set name.  
+1. Select the table to which you want to relate, or enter a custom value for the table name.  
 
-   ![Table set name](../media/dataverse-how-tos/85fd83805a60778314c37b254c4dd042.png)
+   ![Table name](../media/relate-rows/table-name.png)
 
 1. You will need to enter the identifier of the row you want to relate.  
 
-   ![Identifier image for the row to relate](../media/dataverse-how-tos/e46483d4603d63dac48465d506e8e76b.png)
+   ![Identifier image for the row to relate](../media/relate-rows/identifier.png)
 
    The list of supported one-to-many and many-to-many relationships based on the table type selected is populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. You can select the relationship to which you want to relate your row.  
 
+   ![Relationship image](../media/relate-rows/relationship.png)
 
-   ![Relationship image](../media/dataverse-how-tos/ff61e4be7303f6b37c9210f0e09d8b05.png)
+1. Enter the full resource URL of the row to which you want to add the relationship. 
 
-1. Enter the full resource URL of the row to which you want to add the relationship. This URL is the full OData identifier of the resource, as shown in the following image.  
+   This URL is the full OData identifier of the resource, as shown in the following image.  
 
-   ![Full odata URL](../media/dataverse-how-tos/63ce93d208822da9bddc6c7640da2312.png)
+   ![Full odata URL](../media/relate-rows/relate-with-url.png)
 
    >[!TIP]
-   >You can get the row identifier from a previous step from the available Dynamic content.  
-
-
-   ![Dynamic content image](../media/dataverse-how-tos/42e13802e201c7978f798546405717de.png)
+   >You can get the row identifier URL from a previous step from the available dynamic content.  
 
 
 ## Unrelate rows
 
-1. Add the **Unrelate rows** action to your flow. 
+1. Select **New step** to add an action to your flow.
+1. Enter **unrelate rows** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
+1. Select **unrelate rows** action.
 
    Your flow uses this action to disassociate two Dataverse rows if they are linked via a one-to-many or many-to-many relationship.
 
-   ![Unrelate rows image](../media/dataverse-how-tos/a716036f314e07c9a8706667088cbe2e.png)
+   ![Unrelate rows image](../media/relate-rows/unrelate-action.png)
 
-1. Select the type of table you want to unrelate from or enter a custom value for the table set name.  
-
-   ![Table set custom value](../media/dataverse-how-tos/8c7404838cdd850c0c5c2ca416c99839.png)
+1. Select the type of table you want to unrelate from or enter a custom value for the table name.
 
 1. Enter the identifier of the row you want to unrelate from.  
 
-   ![Identifier image for the row to unrelate](../media/dataverse-how-tos/ec312c11730150cfb9bd6e37b2a7928d.png)
+   ![Table name and identifier](../media/relate-rows/unrelate-table-name-identifier.png)
 
-   The list of supported one-to-many and many-to-many relationships based on the table type selected above will be populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. Select the relationship you want to unrelate the related table from or enter your custom value of the relationship schema name.  
+   The list of supported one-to-many and many-to-many relationships based on the table type you selected will be populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. Select the relationship you want to unrelate the related table from or enter your custom value for the relationship schema name.  
 
    ![The unrelate rows card](../media/dataverse-how-tos/32bf6c8258bd3cf157fc90e63853fac0.png)
 
