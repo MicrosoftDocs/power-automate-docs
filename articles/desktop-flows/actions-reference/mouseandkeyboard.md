@@ -141,7 +141,8 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine|No|OCREngineObject||The OCR engine to use to search for the text with|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The OCR engine to search for the text with|
 |Text to find|No|Text value||The text to move the mouse over|
 |Is regular expression|N/A|Boolean value|False|Whether to use a regular expression to look for the text on screen|
 |Occurence|Yes|Numeric value|1|A positive number that will be used as the occurence of the input text on screen|
