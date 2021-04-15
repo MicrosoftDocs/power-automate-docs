@@ -36,7 +36,7 @@ Follow these steps to associate two rows while editing your flow.
 1. Select **Microsoft Dataverse**.
 1. Select **Relate rows** action.
 
-   ![Relate rows image](../media/dataverse-how-tos/relate-rows-action.png)
+   ![Relate rows image](../media/relate-rows/relate-rows-action.png)
 
    Like other actions in this connector, a list of supported tables is available.
    
