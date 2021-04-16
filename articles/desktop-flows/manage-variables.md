@@ -50,17 +50,11 @@ To rename a desktop flow variable, make a right-click on its name in the **Varia
 
 Although you can update variables' names manually through actions, the name will be changed only in these specific actions, not globally. 
 
-To update the name of an input/output variable globally, right-click on its name in the **Variables** pane and select **Edit**.
-
-![The Rename option for input/output variables.](media\renaming-variables\rename-external-variable.png)
-
-In the **Edit variable** dialog box, populate the **Variable name** and **External name** fields for the internal and external variable name, respectively. 
-
-![The Edit variable dialog box](media\renaming-variables\edit-variable-window.png)
-
 ## Input and output variables
 
 Power Automate Desktop enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows.
+
+Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
 > [!NOTE]
 > You can find more information about passing data between Power Automate Desktop and Power Automate in [Trigger a Power Automate Desktop flow from another flow](link-pad-flow-portal.md).
@@ -69,7 +63,7 @@ Power Automate Desktop enables data exchange with the Power Automate platform th
 
 To create an input variable:
 
-1. Select the (**+**) button in the variables pane and pick **Input**.
+1. Select the (**+**) button in the variables pane and then **Input**.
 
      ![The plus button in the variables pane to create a new input variable.](media\input-output-variables\create-input-variable.png)
 
@@ -80,7 +74,10 @@ To create an input variable:
     - **Data type**: The type of the variable, like number, text, or datetime.
     - **Default value**: The default value when the flow runs from the Power Automate Desktop flow designer or the Power Automate Desktop console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
-    - **Description**: A description of the variable that will appear in Power Automate.
+    - **Description**: A description of the variable that will appear in Power Automate and the **Flow inputs** dialog.
+
+    > [!NOTE]
+    > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
      ![The Add a new input variable dialog box](media\input-output-variables\Add-new-input-variable-dialog.png)
 
@@ -92,7 +89,7 @@ If you run a flow containing input variables through the console, the **Flow inp
 
 To create an output variable:
 
-1. Select the (**+**) button in the variables pane and pick **Output**.
+1. Select the (**+**) button in the variables pane and then **Output**.
 
     ![The plus button in the variables pane to create a new output variable.](media\input-output-variables\create-output-variable.png)
 
@@ -103,7 +100,26 @@ To create an output variable:
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate.
 
+    > [!NOTE]
+    > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
+
     ![The Add a new output variable dialog box](media\input-output-variables\Add-new-output-variable-dialog.png)
+
+### Manage input and output variables
+
+All the created input and output variables are displayed in the appropriate section of the variables pane.
+
+![The input output variables section of the variables pane.](media\input-output-variables\variables-pane-input-output-variables.png)
+
+Through this pane, you can rename, update, delete, and find the usages of each input/output variable.
+
+To update an input/output variable, right-click on its name in the **Variables** pane and select **Edit**.
+
+![The Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
+
+In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
+
+![The Edit variable dialog box](media\renaming-variables\edit-variable-dialog.png)
 
 
 
