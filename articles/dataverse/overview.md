@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 04/12/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -31,31 +31,32 @@ The Microsoft Dataverse connector provides [several triggers](#overview-of-trigg
 
 Use the Microsoft Dataverse connector to create cloud flows that start when data changes in Dataverse tables and custom messages. <!--todo, how is custom messages-->For example, you can send an email whenever a row gets updated in Dataverse.
 
-## Overview of Triggers
+## Overview of triggers
 
 The Microsoft Dataverse connector provides the following triggers to help you define when your flows start.
 
    - When a row is created, updated or deleted
-   - For a selected row
-   - When a custom action is executed
+
+   - When an action is performed
+  
    - When a flow step is run from a business process flow
 
-## Overview of Actions 
+## Overview of actions 
 
 The Microsoft Dataverse connector provides the following actions to help you manage data in your flows.
 
-- Create a new row
-- Update a row
-- Get a row
-- List rows
-- Delete a row
-- Relate rows
-- Unrelate rows
-- Execute a changeset request
-- Get file or image content
-- Upload file or image content
-- Perform a bound action
-- Perform an unbound action
+   - Create a new row
+   - Update a row
+   - Get a row
+   - List rows
+   - Delete a row
+   - Relate rows
+   - Unrelate rows
+   - Execute a changeset request
+   - Get file or image content
+   - Upload file or image content
+   - Perform a bound action
+   - Perform an unbound action
 
-   ![Partial list of Dataverse actions](../media/dataverse-overview/actions.png)
+      ![Partial list of Dataverse actions](../media/dataverse-overview/actions.png)
 

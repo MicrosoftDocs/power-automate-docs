@@ -57,7 +57,7 @@ conceptualContent:
           url: ./process-advisor-overview.md
           itemType: overview
         - text: Power Automate FAQs
-          url: ./frequently-asked-questions.md
+          url: ./frequently-asked-questions.yml
           itemType: reference      
     
     - title: Create cloud flows
@@ -100,7 +100,10 @@ conceptualContent:
           itemType: overview
         - text: Approvals
           url: ./get-started-approvals.md
-          itemType: overview            
+          itemType: overview    
+        - text: Dataverse
+          url: ./dataverse/overview.md
+          itemType: overview           
     
     - title: Use solutions for ALM
       links:

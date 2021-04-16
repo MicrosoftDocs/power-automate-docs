@@ -24,7 +24,7 @@ search.audienceType:
 
 # Use relevance search to retrieve rows from Dataverse
 
-Use the **Search rows** action to retrieve data from Microsoft Dataverse by using keywords and [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search). Relevance search uses the [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml) service.
+Use the **Search rows** action to retrieve data from Microsoft Dataverse by using keywords and [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search), which delivers fast, intelligent, and comprehensive results across tables in Dataverse.
 
 
 ## Prerequisites

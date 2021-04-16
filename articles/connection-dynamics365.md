@@ -161,7 +161,7 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
 
 [Flow in your organization Q&A](organization-q-and-a.md)
 
-[Frequently asked questions](frequently-asked-questions.md)
+[Frequently asked questions](frequently-asked-questions.yml)
 
 
 
