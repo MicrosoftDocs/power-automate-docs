@@ -86,7 +86,7 @@ To create an input variable:
 
 If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
 
-![The Flow inputs dialog](media\input-output-variables\flow-input-dialog.png)
+   ![The Flow inputs dialog](media\input-output-variables\flow-input-dialog.png)
 
 ### Create an output variable
 
