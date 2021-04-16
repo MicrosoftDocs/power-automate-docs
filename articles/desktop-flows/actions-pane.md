@@ -60,6 +60,9 @@ In case a produced variable isn't needed for later use, unselect the checkbox un
 
 ![The option to disable a produced variable in the action.](media/configuring-actions/actions-outputs.png)
 
+>[!NOTE]
+> Produced variable names, may not contain special characters, white spaces and non-latin characters and can't start with arithmetic characters.
+
 ## Configuring action exceptions
 
 When an action throws an exception, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
