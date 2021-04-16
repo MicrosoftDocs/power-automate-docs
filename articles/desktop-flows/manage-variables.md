@@ -74,7 +74,7 @@ To create an input variable:
     - **Data type**: The type of the variable, like number, text, or datetime.
     - **Default value**: The default value when the flow runs from the Power Automate Desktop flow designer or the Power Automate Desktop console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
-    - **Description**: A description of the variable that will appear in Power Automate and the **Flow inputs** dialog.
+    - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
 
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
@@ -113,14 +113,15 @@ All the created input and output variables are displayed in the appropriate sect
 
 Through this pane, you can rename, update, delete, and find the usages of each input/output variable.
 
-To update an input/output variable, right-click on its name in the **Variables** pane and select **Edit**.
+To update an input/output variable:
 
-![The Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
+1.  Right-click on its name in the variables pane and select **Edit**.
 
-In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
+    ![The Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
-![The Edit variable dialog box](media\renaming-variables\edit-variable-dialog.png)
+2. In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
 
+    ![The Edit variable dialog box](media\renaming-variables\edit-variable-dialog.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
