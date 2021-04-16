@@ -53,7 +53,7 @@ Click on a gateway to see the details of the desktop flow runs that are being pr
 ## Prerequisites
 In order to see runs in this list, one of the following must be true:
 - You are [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
-- Another user has [shared their desktop flow](/create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
+- Another user has [shared their desktop flow](./create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
