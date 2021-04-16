@@ -16,7 +16,7 @@ Today, people are building flows that need dozens or hundreds of steps; however,
 
 You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
 
-Let's look at an example where you have a child flow that you want to create or update a contact in Common Data Service based on that contact's name.
+Let's look at an example where you have a child flow that you want to create or update a contact in Dataverse based on that contact's name.
 
 You will need a solution with two flows:
 - A *child* flow. This is the flow that is nested inside the *parent* flow and contains the smaller tasks you want to run.
@@ -58,7 +58,7 @@ You will need a solution with two flows:
 
    You need to then test your child flow. Because you can manually trigger this flow, it's very easy to test right inside of the designer. Try it out with a couple different inputs, and verify that the outputs are what you expect.
 
-1. Lastly, if your flow uses anything other than built-in actions or the Common Data Service (current environment) connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
+1. Lastly, if your flow uses anything other than built-in actions or the Dataverse (current environment) connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
 
 1. In the pane that appears, for each connection used in the flow, you will need to select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
 
@@ -83,7 +83,7 @@ You will need a solution with two flows:
 
    ![Inputs](./media/call-child-flow/view-child-flow-input.png "Inputs")
 
-   When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Common Data Service or 30 days for all other flows).
+   When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Dataverse or 30 days for all other flows).
 
 1. Save and test this flow. 
 

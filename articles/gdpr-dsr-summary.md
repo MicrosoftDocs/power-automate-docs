@@ -75,5 +75,8 @@ This article discusses how to use Microsoft's products, services and administrat
 
 Refer to this [guide](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs) for more information on system-generated logs for Power Automate.
 
+## See also
+
+To learn more about Microsoft's commitment to trust, security and compliance, visit the [Service Trust Portal](https://servicetrust.microsoft.com/).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
