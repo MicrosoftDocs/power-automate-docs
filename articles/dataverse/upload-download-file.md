@@ -24,7 +24,7 @@ search.audienceType:
 
 # Upload or download image and file content
 
-In late 2019, two new column datatypes were added to Dataverse.
+There are two column datatypes for handling images/file content Dataverse.
 
 - **File** – With **File**, you can have a [column that stores arbitrary file data for your table](https://docs.microsoft.com/powerapps/developer/common-data-service/file-columns).
 
@@ -35,63 +35,59 @@ You can use the Microsoft Dataverse connector to work with these datatypes in Po
 
 ## Download image or file contents
 
-1. Add the **Get file or image content** action to your flow to download content from a corresponding file or image column from Dataverse so that you can use the file content elsewhere in your flow.
+Follow these steps to add the **Download a file or an image** action to your flow. You can use the downloaded file contents in suitable actions later in the flow.
 
-   ![Get a file or image content](../media/dataverse-how-tos/8dfaa50270a05c4f7a18a8f40713b441.png)
+1. Select **New step** to add an action to your flow.
+1. Enter **Download a file** into the **Search connectors and actions** search box on the **Choose an operation** card.
+1. Select **Microsoft Dataverse**.
+1. Select the **Download a file or an image** *action*.
 
-   As with any action in this connector, a list of supported tables is available. 
-1. Select the table from which you want to download file/image content or enter your own custom value for the table name.  
+   ![Download a file or an image](../media/upload-download-file/upload-download-file.png)
 
-
-   ![Table name](../media/dataverse-how-tos/9f024b055c034121d89988112c250f57.png)
-
-1. Enter the identifier of the row you want to get the file or image content from in **Item ID**.  
-
-
-   ![The identifier](../media/dataverse-how-tos/908a2001986233440252cd272d7dd3ce.png)
+1. Select the table from which you want to download the file/image content or enter your own custom value for the table name.
+1. Enter the **Row ID** of the row in the table you just selected.
 
    >[!TIP]
    >You can normally grab the row identifier from a previous request via the dynamic content.
 
-   ![Dynamic content](../media/dataverse-how-tos/2ec8bcb926da0e68395b17c0b6fa4b0f.png)
+   The list of supported file and image columns for the table you selected earlier will be populated in the **Column name** list. 
 
-   The list of supported file and image columns based on the table type selected earlier will be populated for your selected table. 
-   
-1. Select the column from which you want to download content or enter a custom value.  
+1. Select the **Column name** for the column that holds the file/image content that you want to download.
 
-   ![Select a column](../media/dataverse-how-tos/10e4205e0d3df2e0ca7121296621600e.png)
+   ![Table name](../media/upload-download-file/upload-download-file-complete.png)
 
-1. With the content output of the action you can pass it to any action as you want. In this image, it's being passed to the **Create file** action.
+   You now can access the file or image contents via the **File or image content** variable in the list of dynamic content.
 
-   ![Create file action](../media/dataverse-how-tos/24b222e32d8b2b9b91d97371da163213.png)
+      ![Create file action dynamic content](../media/upload-download-file/dynamic-content.png) 
+ 
+   With the content output of the action, you can pass it to any action later in the flow. In the following example, the file contents are being passed to the **Create file** action.
+
+      ![Create file action](../media/upload-download-file/create-file.png)
 
 ## Upload file or image content
 
-1. Add the **Upload file or image content** action to your flow so that you can upload content to a corresponding file or image column in Dataverse.
+1. Add the **Upload a file or an image** action to your flow so that you can upload content to a corresponding file or image column in Dataverse.
 
-   ![Upload file or image content action image](../media/dataverse-how-tos/20ee879d20c6485eb290e40b120c9a9b.png)
+   ![Upload a file or an image action image](../media/upload-download-file/upload-file.png)
 
 1. Select the table to which you want to upload the file/image content or enter a custom value for the **Table name**.  
 
-
-   ![Table name image. Select one or enter a custom value](../media/dataverse-how-tos/0afc811bfcb8004630e2425bfe485280.png)
-
-1. Enter the identifier for the row to which you want to upload the file or image content.  
-
-   ![Item Id](../media/dataverse-how-tos/594f2be3d89aad67e1fe1ea1ffeb53f1.png)
+1. Enter the identifier in **Row ID** for the row to which you want to upload the file or image content.  
 
    >[!TIP]
    >You can normally grab the row identifier from a previous request by using the dynamic content.  
 
-
-   ![Dynamic content view](../media/dataverse-how-tos/999fcfc576dfa3c85406230ee30ce8f8.png)
-
-   The list of supported file and image columns based on the table you selected is populated. 
+   The list of available file and image columns in the table that you selected is populated. 
    
-1. Select the column to which you want to upload the content or enter custom value.  
+1. Select the **Column name** to which you want to upload the image or enter a custom value.
 
-   ![Column to upload to](../media/dataverse-how-tos/5daa43665c59a1a1b7033f6ec9608153.png)
+   Your **Upload a file or an image** action card may look like this now.
 
-1. Enter the content you want to upload to the column.  
+   ![Column to upload to](../media/upload-download-file/upload-file-card.png)
 
-   ![Content to upload](../media/dataverse-how-tos/842db60eb80af4b54ece2a6249637d32.png)
+1. Enter the content you want to upload.
+
+   In this example, the files to upload are the **Attachments Content** from an email captured earlier in the flow. You will find the attachments content in the list of dynamic content that's displayed when you select **Content** on the **Upload a file or an image** card.
+
+   ![Content to upload](../media/upload-download-file/upload-file-dynamic-content.png)
+
