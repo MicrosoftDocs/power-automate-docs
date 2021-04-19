@@ -19,35 +19,44 @@ ms.author: hamenon
 
 # Trigger a cloud flow from any message in Microsoft Teams
 
-Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the Flow inputs can be dynamic based on the filters set by the end-user. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
+Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the inputs to the flow can be dynamic, based on the filters that the user sets. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
 
 ![Power Automate Visual in Power BI](media/power-bi-flow/power-bi-main.png)
 
 ## Add Power Automate visual to a Power BI report
-To get started, simply [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and import it to your Power BI report. When it’s successfully imported, you’ll see the Power Automate icon appear in the Visualization pane. Select this new visual and it will automatically get added to your current report page:
+To get started, [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and then import it to your Power BI report. After it's imported, you’ll see the Power Automate icon in the **Visualization** pane. When you select this new visual, it's automatically added to your current report page.
 
-![Power Automate visual instructions](media/power-bi-flow/Power BI-Default-state.png)
+![Power Automate visual instructions](media/power-bi-flow/powerbi-default-state.png)
 
-The initial state of the widget shows you the getting started instructions for using Power Automate flows in Power BI. Once you’ve reviewed the instructions, you can resize the button and place it where you’d like on the report.
+The initial state of the widget shows you the getting started instructions for using flows in Power BI. Once you’ve reviewed the instructions, you can resize the button and place it where you’d like it on the report.
 
 ![Power Automate Visual in Power BI](media/power-bi-flow/power-bi-report.png)
 
 ## Using the Power Automate visual in Power BI
 
-In order to trigger a flow successfully from within a Power BI report you need to follow these steps:
+Follow these steps to trigger a flow from within a Power BI report.
 
 ### Add data fields that need to be passed to the flow
-In the Visualization pane add any fields from the report that you want to pass into the flow during flow execution. These fields can be used at flow design time as well to specify how you want to use the Power BI data.
 
-![Add data to the Power Automate visual](media/power-bi-flow/Power BI-add-data.png)
+1. In the **Visualization** pane, add any fields from the report that you want to pass into the flow when it runs. 
+
+   These fields can be used at flow design time as well to specify how you want to use the Power BI data.
+
+   ![Add data to the Power Automate visual](media/power-bi-flow/Powerbi-add-data.png)
 
 ### Add a cloud flow to the Power BI report
-From the More options menu of the visual, selected "Edit" to get into the edit mode for the visual. Once in the edit mode of the visual, you will need to select an existing Flow to apply to the button or create a new Flow to be applied to the button. 
 
-![Power Automate visual More options](media/power-bi-flow/power-bi-more-options.png)
+1. Select **Edit** from the **More options** menu of the visual. 
 
-### Create a new flow 
-To create a new Flow, you can start from scratch "Instant from blank"  or start with one of the built-in templates as an example. The below steps detail how to create a flow from scratch for use within a Power BI report.
+1. Select an existing flow to apply to the button or create a new flow to be applied to the button.
+
+   Your existing cloud flow is now added to the Power BI report. 
+
+   ![Power Automate visual More options](media/power-bi-flow/power-bi-more-options.png)
+
+### Create a new flow
+
+To create a new flow, you can use **Instant from blank** template or start with one of the built-in templates as an example. The following steps detail how to create a flow from scratch for use within a Power BI report.
 
 On selecting the Instant from blank option, Power automatically starts with a flow that uses the Power BI button clicked trigger
 
