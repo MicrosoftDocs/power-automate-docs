@@ -24,7 +24,7 @@ search.audienceType:
 
 # Upload or download image and file content
 
-In late 2019, two new column datatypes were added to Dataverse.
+There are two column datatypes for handling images/file content Dataverse.
 
 - **File** – With **File**, you can have a [column that stores arbitrary file data for your table](https://docs.microsoft.com/powerapps/developer/common-data-service/file-columns).
 
@@ -58,7 +58,7 @@ Follow these steps to add the **Download a file or an image** action to your flo
 
    You now can access the file or image contents via the **File or image content** variable in the list of dynamic content.
 
-      ![Create file action](../media/upload-download-file/dynamic-content.png) 
+      ![Create file action dynamic content](../media/upload-download-file/dynamic-content.png) 
  
    With the content output of the action, you can pass it to any action later in the flow. In the following example, the file contents are being passed to the **Create file** action.
 
