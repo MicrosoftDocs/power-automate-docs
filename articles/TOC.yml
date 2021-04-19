@@ -272,8 +272,8 @@
     #   href: ./dataverse/relate-unrelate-rows.md
     - name: Use a flow to perform a changeset request in Dataverse
       href: ./dataverse/change-set.md    
-    # - name: Upload or download image and file content
-    #   href: ./dataverse/upload-download-file.md       
+    - name: Upload or download image and file content
+      href: ./dataverse/upload-download-file.md       
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
