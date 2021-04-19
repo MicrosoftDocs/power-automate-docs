@@ -1,5 +1,5 @@
 ---
-title: Share a process advisor process (preview) | Microsoft Docs
+title: Share a process advisor process | Microsoft Docs
 description: How to share a process in the process advisor feature in Power Automate.
 services: ''
 suite: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 5/25/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -21,9 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Share processes (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Share processes
 
 When you create a process in process advisor, only you can see it. But getting input from others is a key to understanding different ways to accomplish the process you have created. Share your processes with others in your organization so they can also manage or contribute to them. There are two primary ways to share a process in process advisor:
 
@@ -31,7 +29,9 @@ When you create a process in process advisor, only you can see it. But getting i
 - Share a process with a contributor.
 
 If you're the co-owner or contributor of a process, you'll find it listed on the Processes page in process advisor.
-Important: You must be the co-owner to add or remove owners and contributors to a process.
+
+>[!IMPORTANT]
+>You must be the co-owner to add or remove owners and contributors to a process.
 
 ## Share action
 
@@ -55,16 +55,16 @@ Adding a contributor to a process is the most common way to share a process. Any
 
 ## Share a process with a co-owner
 
-Adding a co-owner to a process allows others to help you label and validating the contributors recordings, manage the process and visualize the process analytics and dashboard. Any co-owner of a process can perform these actions:
+Adding a co-owner to a process allows others to help you label and validate the contributors' recordings, manage the process, and visualize the process analytics and dashboard. Any co-owner of a process can perform these actions:
 
-- View  details.
-- Update properties, such as name and description.
-- Invite co-owners and contributors.
-- Add and label recordings.
-- Manage all recordings that have been added to the process (including labeling and deleting others’ recordings).
-- Analyze the process.
-- View the analytics of an analyzed process.
-- Delete the process.
+- [View  details](process-advisor-analyze.md).
+- [Update properties, such as name and description](process-advisor-processes#manage-activity-names).
+- [Invite co-owners and contributors](process-advisor-share#share-action).
+- [Add and label recordings](process-advisor-processes.md).
+- [Manage all recordings that have been added to the process (including labeling and deleting others’ recordings)](process-advisor-processes.md).
+- [Analyze the process](process-advisor-analyze.md).
+- [View the analytics of an analyzed process](process-advisor-analyze.md).
+- [Delete the process](process-advisor-security).
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

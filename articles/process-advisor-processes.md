@@ -1,5 +1,5 @@
 ---
-title: Work with processes and recordings (preview)| Microsoft Docs
+title: Work with processes and recordings | Microsoft Docs
 description: How to create and work with processes in process advisor.
 services: ''
 suite: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/02/2021
+ms.date: 5/25/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -21,15 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Work with processes and recordings (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Work with processes and recordings
 
 Before you can use process advisor to visualize and analyze your processes, you have to:
 
-- Create your process in process advisor.
-- Record the activities that make up the process in the process advisor recorder.
-- Prepare the recording for analysis.
+- [Create your process](#create-a-process) in process advisor.
+- [Record the activities](#record-your-process) that make up the process using the power automate desktop recorder.
+- [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
+- (Optional) 
 
 ## Create a process
 
@@ -37,9 +36,9 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 
-1. Select **Process advisor (preview)** in the left-side navigation pane.
+1. Select **Process advisor** in the left-side navigation pane.
 
-1. Select **Create** under **Process advisor (preview)**.
+1. Select **Create** under **Process advisor**.
 
 1. Select the **Create a new process** tile.
 
