@@ -17,7 +17,7 @@ ms.date: 04/12/2020
 ms.author: hamenon
 ---
 
-# Trigger a cloud flow from any message in Microsoft Teams
+# Trigger a cloud flow from any message in Power BI
 
 Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the inputs to the flow can be dynamic, based on the filters that the user sets. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
 
