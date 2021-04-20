@@ -491,6 +491,8 @@
     href: /connectors/
   - name: Manage connections
     href: add-manage-connections.md
+  - name: Manage machines (preview)
+    href: machine-manage.md
   - name: Manage gateways
     href: gateway-manage.md
   - name: Understand gateways
