@@ -497,7 +497,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Microsoft Dataverse (Legacy)
+- name: Classic Dataverse
   items:
   - name: Classic Dataverse workflows
     items:
@@ -536,7 +536,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom Common Data Service workflow activities
+  - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
