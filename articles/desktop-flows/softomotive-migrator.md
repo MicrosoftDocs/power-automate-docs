@@ -175,7 +175,7 @@ Not supported by migration tool. Review [Monitor desktop flow queues](https://do
 
 **Get Queue Item in Queue** 
 
-Not supported in migration.  Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified or deleted](https://docs.microsoft.com/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse (Common Data Service) table. 
+Not supported in migration.  Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified or deleted](https://docs.microsoft.com/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
 
 **Get Credential** 
 
