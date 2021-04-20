@@ -66,7 +66,7 @@ Power Automate US Government is available through the Volume Licensing and Cloud
 
 Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software that are provided to Microsoft by, or on behalf of, customers through the use of an Online Service.
 
-Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)
+Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Dataverse](/powerapps/maker/common-data-service/data-platform-intro)
 entities (for example, contact information). Content is generally considered
 confidential information, and in normal service operations, is not sent through the Internet without encryption.
 
@@ -194,7 +194,7 @@ For those customers that implement network restrictions, please ensure access to
 * .azure.net
 * .crm9.dynamics.com
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
 ### GCC High Customers:
 * .microsoft.us
@@ -206,7 +206,7 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 * .azure.net
 * .crm.microsoftdynamics.us
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
 
 ## Connectivity between Power Automate US Government and Public Azure Cloud services

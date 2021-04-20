@@ -228,6 +228,8 @@
         href: ./teams/customize-approvals.md
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
+    - name: Trigger flows from Power BI report
+      href: ./trigger-flow-powerbi-report.md
     - name: Use flows with Microsoft Forms
       items:
       - name: Overview 
@@ -272,8 +274,8 @@
     #   href: ./dataverse/relate-unrelate-rows.md
     - name: Use a flow to perform a changeset request in Dataverse
       href: ./dataverse/change-set.md    
-    # - name: Upload or download image and file content
-    #   href: ./dataverse/upload-download-file.md       
+    - name: Upload or download image and file content
+      href: ./dataverse/upload-download-file.md       
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
@@ -495,7 +497,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Microsoft Dataverse (Legacy)
+- name: Classic Dataverse
   items:
   - name: Classic Dataverse workflows
     items:
@@ -534,7 +536,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom Common Data Service workflow activities
+  - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:

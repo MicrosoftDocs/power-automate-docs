@@ -1,6 +1,6 @@
 ---
-title: "Custom Common Data Service workflow activities (workflow assemblies)| MicrosoftDocs"
-description: "Learn about registration and execution of custom Common Data Service workflow activities in addition to the out-of-box activities provided by Windows Workflow Foundation."
+title: "Custom Dataverse workflow activities (workflow assemblies)| MicrosoftDocs"
+description: "Learn about registration and execution of custom Dataverse workflow activities in addition to the out-of-box activities provided by Windows Workflow Foundation."
 ms.custom: ""
 ms.date: 08/08/2018
 ms.reviewer: ""
@@ -16,10 +16,10 @@ search.app:
 search.audienceType: 
   - developer
 ---
-# Custom Common Data Service workflow activities (workflow assemblies)
+# Custom Dataverse workflow activities (workflow assemblies)
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Common Data Service supports the registration and execution of custom workflow activities in addition to the out-of-box activities provided by [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/). 
+Dataverse supports the registration and execution of custom workflow activities in addition to the out-of-box activities provided by [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/). 
 
 Windows Workflow Foundation includes an activity library that provides activities for control flow, sending and receiving messages, doing work in parallel, and more. However, to build applications that satisfy your business needs, you may need activities that perform tasks specific to that application. To make this possible, Windows Workflow Foundation supports the creation of custom workflow activities.
 
@@ -27,7 +27,7 @@ More information: [Create a workflow extension](/powerapps/developer/common-data
   
 ## Related topics
 
-[Common Data Service Developer Overview](/powerapps/developer/common-data-service/overview)
+[Dataverse Developer Overview](/powerapps/developer/common-data-service/overview)
   
 [Create a plug-in](/powerapps/developer/common-data-service/apply-business-logic-with-code#create-a-plug-in) 
   

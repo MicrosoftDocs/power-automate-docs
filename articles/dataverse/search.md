@@ -48,7 +48,7 @@ You can use dynamic content from a previous step in the flow to parameterize the
 
 Use the **Search type** option to provide the syntax for the search query. Use **simple** to indicate that you want to use the simple query syntax. Or, use **full** if you prefer to use the Lucene query syntax. The default query syntax is **simple**. 
 
-Take a look at the following examples, or the full list of features at [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+Take a look at the following examples, or the full list of features at [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
 
 <!--Todo ![](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png) -->
 
@@ -85,14 +85,14 @@ You can specify whether any or all the search terms must be matched to count the
 
 - Using search mode=all increases the precision of queries by including fewer results, and by default will be interpreted as "AND NOT". For example, "wifi -luxury" will match documents that contain the term "wifi" and don't contain the term "luxury".
 
-See [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
+See [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
 
 ![Search mode](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png)
 
 ### Advanced Options
 
 You can optimize your search by using other advanced options as described is this section.
-See [Search across entity data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
+See [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
 
 - **Row filter** -  You can narrow your search by specifying filters as shown in the following image.
 
@@ -102,7 +102,7 @@ See [Search across entity data using relevance search](https://docs.microsoft.co
 
     ![Advanced options](../media/search-row/21831a3d3abca6833ef5801956faa3de.png)
 
-### Using dynamic content and Dataverse row fields
+### Using dynamic content and Dataverse rows
 
 You can use the outputs of the action directly from **Dynamic content**. Here's the meaning of each of the parameters.
 
@@ -114,14 +114,14 @@ List of rows item|An individual row in the list of rows, when used inside a loop
 Row search score|The relevance score of a row. This score indicates how closely it matched the search keywords and conditions.
 Row search highlights|Highlights the specific keywords that matched the search keywords in the row.
 Row table name|The name of the table for a single row. This action aggregates rows from all searchable tables in the environment.
-Row object id|This is an identifier for each row. Use this identifier in conjunction with the table name in the **Get rows** action to read all the fields in a row.
+Row object id|This is an identifier for each row. Use this identifier in conjunction with the table name in the **Get rows** action to read all the columns in a row.
 Row object type code|The table name identifier for the row.
 
 When you are building your flow, the dynamic content might appear like this image.
 
 ![Dynamic content for building a flow](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png)
 
-The **Search rows** action returns many other fields for the matched rows in a variable schema, depending on [your relevance search configuration](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization).
-To use these fields, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image.
+The **Search rows** action returns many other columns for the matched rows in a variable schema, depending on [your relevance search configuration](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization).
+To use these columns, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image.
 
 ![The json schema](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png)
