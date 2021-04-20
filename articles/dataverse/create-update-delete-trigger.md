@@ -52,7 +52,7 @@ The trigger condition precisely defines which combination of changes to a row wo
 
 ### Table name
 
-The table name filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview).
+The table name filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview).
 
    ![when a row is added, modified or deleted card](../media/create-update-delete-trigger/created-modified-deleted.png)
 
@@ -85,7 +85,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 Use the **filtering columns** box to define a set of comma-separated, unique names for the table, as shown in the following image. The flow runs only when these columns change on the specific rows. 
 
-   ![Filter columns](../media/create-update-delete-trigger/filter-attributes.png)
+   ![Filter columns](../media/create-update-delete-trigger/filter-columns.png)
 
 
 >[!NOTE]
