@@ -119,7 +119,7 @@ conceptualContent:
         - text: Upload or download files/images
           url: ./dataverse/upload-download-file.md
           itemType: how-to-guide         
-   - title: Create approval flows
+    - title: Create approval flows
       links:
         - text: Get started
           url: ./get-started-approvals.md
