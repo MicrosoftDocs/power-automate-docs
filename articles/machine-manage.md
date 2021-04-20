@@ -4,7 +4,7 @@ description: Manage machines and machine groups (preview)
 services: ''
 suite: flow
 documentationcenter: na
-author: marleon
+author: mariosleon
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/05/2021
-ms.author: mariosleon
+ms.author: marleon
 search.app: 
   - Flow
 search.audienceType: 
@@ -41,7 +41,7 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 Your machine will be automatically registered on the currently selected environment in the application. If you do not have permission to register your machine in that environment or want to use another environment, you will need to update the environment. 
 
-1. [Install the latest version](./desktop-flows/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
+1. [Install the latest version](/desktop-flows/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
 
 1. When the installation has completed, select **Launch Power Automate Desktop**. 
 

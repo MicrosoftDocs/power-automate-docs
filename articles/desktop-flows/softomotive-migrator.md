@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 # Process migrator for Softomotive products (preview)
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ProcessRobot users are now able to export .prp files into folders and use the Process migrator for Softomotive products (preview) to convert automations into Desktop Flows for use with Power Automate Desktop.  This migration utility will redefine automations to their equivalent Power Automate Desktop action definitions where such parity exists.  Some actions have been deprecated because they do not fit into the Power Platform ecosystem, however workarounds should be applicable to overcome what appears to be missing functionality. 
 
