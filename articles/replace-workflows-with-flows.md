@@ -457,7 +457,7 @@ Imagine a sales scenario where you have put together a quotation for a customer 
 With flows, this scenario is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
 
 - Creating a cloud flow that runs on demand.
-- Getting a list of records that are related to a Dataverse entity.
+- Getting a list of records that are related to a Dataverse table.
 - Looping over a list of records.
 - Sending approval requests.
 
@@ -465,7 +465,7 @@ To allow the sales person to trigger the approval request on demand:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a cloud flow in a solution](create-flow-solution.md). 
 
-1. From the list of triggers, select **Common Data Service (Current Environment) – When a record is selected**, and then select **Quotes** as the entity. 
+1. From the list of triggers, select **Common Data Service (Current Environment) – When a row is selected**, and then select **Quotes** as the entity. 
 
    This trigger allows a cloud flow to run on-demand on a record or set of records.
 

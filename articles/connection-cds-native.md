@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Common Data Service (current environment) connector| Microsoft Docs
-description: Create workflows by using the Common Data Service (current environment) connector and Power Automate
+title: Create an automated flow with Microsoft Dataverse connector| Microsoft Docs
+description: Create workflows by using the Microsoft Dataverse connector and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,19 +21,19 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an automated flow by using Common Data Service (current environment) connector
+# Create an automated flow by using Microsoft Dataverse connector
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. This article covers the recommended [Common Data Service (current environment)](./connection-cds.md) for connecting to Dataverse. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
+>There are three connectors available to connect to Dataverse. This article covers the recommended [Microsoft Dataverse](./connection-cds.md) for connecting to Dataverse. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
 
 
 The flows you create can trigger when a Dataverse record is created, updated, or deleted.
 
 Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a cloud flow with Common Data Service (current environment) connector
+## Initiate a cloud flow with Microsoft Dataverse connector
 
 Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 

@@ -35,7 +35,7 @@ By using a Dynamics 365 connector, you can create flows that initiate when an ev
 In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> To invoke a Power Automate trigger, the Dataverse entity used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> To invoke a Power Automate trigger, the table used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## Create a cloud flow from a template
 
