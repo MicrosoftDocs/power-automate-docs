@@ -48,7 +48,7 @@ Follow these steps to associate two rows while editing your flow.
 
    ![Identifier image for the row to relate](../media/relate-rows/identifier.png)
 
-   The list of supported one-to-many and many-to-many relationships based on the table type selected is populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. You can select the relationship to which you want to relate your row.  
+   The list of supported one-to-many and many-to-many relationships based on the table type selected is populated in the format \<Related Table Type\> – \<Relationship Schema Name\>. You can select the relationship to which you want to relate your row.  
 
    ![Relationship image](../media/relate-rows/relationship.png)
 
@@ -79,7 +79,7 @@ Follow these steps to associate two rows while editing your flow.
 
    ![Table name and identifier](../media/relate-rows/unrelate-table-name-identifier.png)
 
-   The list of supported one-to-many and many-to-many relationships based on the table type you selected will be populated in the format \<Related Entity Type\> – \<Relationship Schema Name\>. Select the relationship you want to unrelate the related table from or enter your custom value for the relationship schema name.  
+   The list of supported one-to-many and many-to-many relationships based on the table type you selected will be populated in the format \<Related Table Type\> – \<Relationship Schema Name\>. Select the relationship you want to unrelate the related table from or enter your custom value for the relationship schema name.  
 
    ![The unrelate rows card](../media/dataverse-how-tos/32bf6c8258bd3cf157fc90e63853fac0.png)
 
