@@ -23,16 +23,16 @@ search.audienceType:
 ---
 # Work with processes and recordings
 
-Before you can use process advisor to visualize and analyze your processes, you have to:
+Before you can use process advisor to visualize and analyze your processes, you need to:
 
 - [Create your process](#create-a-process) in process advisor.
 - [Record the activities](#record-your-process) that make up the process using the power automate desktop recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
-- (Optional) 
+- (Optional) [Manage activity names](#manage-activity-names) to make is easier for you and others to prepare the recording for analysis.
 
 ## Create a process
 
-In general, processes that you think might be inefficient or repetitive are good candidates for analysis. It should also be limited to a single user, and not suited for complicated business processes that involve multiple individuals.
+In general, processes that you think might be inefficient or repetitive are good candidates for analysis.
 
 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 
@@ -44,21 +44,21 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Give your process a name and description, and then select **Create**.
 
-Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
+Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540) <!-- Replace this with link from Luis. He's recording in May. -->
 
 ## Record your process
 
 Create a recording in one of three ways:
 
-- From the **Create** screen in process advisor.
-- Right after process creation.
-- From the process details page.
+- [From the **Create** screen](#create-a-recording-from-the-create-screen) in process advisor.
+- [Right after process creation](#create-a-recording-right-after-process-creation).
+- [From the process details page](#create-a-recording-from-the-process-details-page).
 
 Here's a short video on recording a process: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
 
-### Create a recording from the 'Create' screen
+### Create a recording from the **Create** screen
 
-1. From the **Process advisor (preview)** > **Create** screen, select **Add a new recording**.
+1. From the **Process advisor** > **Create** screen, select **Add a new recording**.
 
 1. On the **Process** screen, select the process you want to record for.
 
@@ -69,61 +69,68 @@ Here's a short video on recording a process: [Record a process](https://go.micro
 
 ### Create a recording right after process creation
 
-1. After the process is created, a creation successful modal will be shown with a few options as next steps.
+After the process is created, a creation successful modal will be shown with a few options as next steps.
 
-1. Select **Add a recording**.
+- Select **Add a recording**.
 
-### Create a recording from the process details page
+### Create a recording from the process details screen
 
-1. From the **Process advisor (preview)** > **Processes** page, select the process you want to record for from the list view.
+1. From the **Process advisor** > **Processes** screen, select the process you want to record for from the list view.
 
-1. Select the name of the process to go to the process details page.
+1. Select the name of the process to go to the process details screen.
 
-1. Select **New recording** from the command bar.
+1. Select **New recording** from the menu at the top.
 
 1. Select **Open recorder**.
 
 ### Launching the recorder in Power Automate Desktop
 
-1. By using any of the methods described above, you should see a message that says **Launching the recorder** in Power Automate Desktop.
-    > [!NOTE]
-    > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app now** to install it.
+1. By using any of the methods described above, you should see a message that says **Launching the recorder in Power Automate Desktop**.
 
-1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser popup window.  Select it to open the app.
+    > [!NOTE]
+    > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app** to install it.
+
+1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser popup window. Select it to open the app.
 
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
-## Power Automate Desktop Recorder
+> [!div class="mx-imgBorder"]
+> ![Launch recorder in Power Automate Desktop](./media/launch-recorder.png)
 
-1. In the Desktop recorder screen, select **Start recording**.
+## Power Automate Desktop recorder
 
-1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder window.
+1. On the Desktop recorder screen, select **Start recording**.
+
+1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder screen.
 
 1. Once the recording has saved successfully select **Got it** to close the message.
 
-1. Return to the web portal in your browser, and Select **View recording**.
+1. Return to the web portal in your browser, and select **View recording**.
 
-> [!NOTE]
-> Depending on the length of the recording, it may take some time before the actions will be available.
+   > [!div class="mx-imgBorder"]
+   > ![Launch recorder in Power Automate Desktop](./media/desktop-recorder.png)
+
+   > [!NOTE]
+   > Depending on the length of the recording, it may take some time before the actions will be available.
 
 ### Recorder features
 
-- As you record your actions, the action descriptions will be listed in the recorder window. You can click the trashcan icon to delete any action from your recording.
-- Select **Pause recording** at any time during the recording. 
+- As you record your actions, the action descriptions will be listed in the recorder screen. You can select the trashcan icon to delete any action from your recording.
+- Select **Pause recording** at any time during the recording.
 - Select **Start recording again** to continue recording from where you left off.
 - Select **Reset recording** to erase all the recorded actions and start over.
 
 ### Recording tips
 
 - Be methodical in your actions to improve the readability of the recording. There is a slight delay so wait for the red box to focus on the item you are trying to interact with before selecting.
-- If there were mis-clicks, delete the action in the recorder window.
+- If there were mis-clicks, delete the action in the recorder screen.
 
 ## Prepare a recording for analysis
 
-Once the recording has completed, you can view the recorded actions in the recording details page. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
+Once the recording has completed, you can view the recorded actions in the recording details screen. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
 
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
-- Remove any sensitive information from the recording.  [More information](process-advisor-protect.md).
+- Remove any sensitive information from the recording. For more information, see [Protect your data in process advisor](process-advisor-protect.md).
 
 Here's a short video on preparing a recording for analysis: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
 
@@ -136,6 +143,10 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 1. Name your group on the right side of the screen.
 
 1. Use the dropdown menu to find group names that already exist for the process or create your own.
+
+   > [!div class="mx-imgBorder"]
+   > ![Group actions into activities](./media/group-actions.png)
+ 
 
 1. If you made a mistake and want to delete an activity, use the trash can icon next to the activity name.
 
@@ -155,7 +166,7 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. Delete any screenshots that contain sensitive information.
 
-1. Alternatively, you can simply delete the entire action by clicking **Delete action** in the command bar.
+1. Alternatively, you can delete the entire action by clicking **Delete action** in the command bar.
 
 ### Grouping tips
 

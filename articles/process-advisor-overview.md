@@ -1,5 +1,5 @@
 ---
-title: Overview of process advisor (preview) | Microsoft Docs
+title: Overview of process advisor | Microsoft Docs
 description: Overview of the process advisor feature in Power Automate.
 services: ''
 suite: flow
@@ -21,19 +21,17 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of process advisor (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Overview of process advisor
 
 ## What is process advisor?
 
-To help you better understand places to streamline workflows, process advisor:
+Process advisor helps you to better understand places to streamline workflows by:
 
-- Identifies which activities take the most time.
-- Provides insights about which parts of your processes would be best to automate.
-- Reveals ways to improve efficiencies.
+- Identifying which activities take the most time.
+- Providing insights about which parts of your processes would be best to automate.
+- Revealing ways to improve efficiencies.
 
-Process advisor quickly captures detailed steps for each process in your organization&mdash;working on your own or inviting colleagues to contribute and collaborate. Process advisor uses *process mining* to help you:
+Process advisor quickly captures detailed steps for each process in your organization&mdash;working on your own or inviting colleagues to contribute and collaborate. Process advisor uses *task mining* to help you:
 
 - Understand where the bottlenecks are.
 - Discover which steps are repeated the most.
@@ -47,6 +45,14 @@ Application analytics and analytics dashboards show you which applications teams
 
 With insights and guided recommendations from process advisor, you are ready to begin automating, and reclaim the time you need for what matters most.
 
+## Licensing
+
+Process advisor is licensed as part of Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
+
+For more information about process advisor licensing, see [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+
+For complete licensing details, see the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
+
 ## Prerequisites
 
 Before you start using process advisor, make sure you have the following prerequisites:
@@ -56,12 +62,7 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
 - [Power Automate Desktop](/ui-flows/desktop/introduction).
-  - Make sure you have a license to create desktop flows. To start a trial, select your default environment, and access flow.microsoft.com/manage/uiflows. If you don't have a license yet, you will be prompted to start a trial.
 
-### See also
-
-[Understanding Power Platform Licensing](https://docs.microsoft.com/microsoft-365/community/powerplatformlicensingforcitizendeveloper)<br/> 
-[Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/)<br/> 
-[Power Apps and Power Automate licensing FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)
+<!-- Add section on process catalog here or on Details page. Also, mention the first run experience. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
