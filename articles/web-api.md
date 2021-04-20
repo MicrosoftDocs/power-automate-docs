@@ -1,6 +1,6 @@
 ---
-title: Flows are now stored in Common Data Service and use the rich Web API
-description: Flows are now stored in Common Data Service and use the rich Web API.
+title: Flows are now stored in Dataverse and use the rich Web API
+description: Flows are now stored in Dataverse and use the rich Web API.
 author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
@@ -15,7 +15,7 @@ audience: Power user
 # Power Automate Web API
 
 
-Going forward, all flows will be stored in Common Data Service and leverage [the rich Web API](/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
+Going forward, all flows will be stored in Dataverse and leverage [the rich Web API](/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 This content covers the management of flows included on the **Solutions** tab in Power Automate. Currently, flows under **My Flows** are not supported by these APIs.
 
@@ -42,7 +42,7 @@ You can also programmatically get the list of instances that are available to yo
 
 Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
 
-Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](/powerapps/developer/common-data-service/authenticate-oauth) how to acquire an Azure AD Bearer token for Common Data Service. For example, this request:
+Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](/powerapps/developer/common-data-service/authenticate-oauth) how to acquire an Azure AD Bearer token for Dataverse. For example, this request:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -69,7 +69,7 @@ The response contains the list of flows from within that environment:
 		"_modifiedby_value": "00000000-0000-0000-0000-000000000003",
 		"_createdby_value": "00000000-0000-0000-0000-000000000003",
 		"type": 1,
-		"description": "This flow updates some data in Common Data Service.",
+		"description": "This flow updates some data in Dataverse.",
 		"clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"source\":\"NotSpecified\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\",\"tier\":\"NotSpecified\"}},\"definition\":{...}},\"schemaVersion\":\"1.0.0.0\"}"
 	}]
 }
@@ -81,22 +81,22 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 
 | Property name     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | The category of the flow. The different types are: 0 - classic Common Data Service workflows,  1 - classic Common Data Service dialogs, 2 - business rules, 3 - classic Common Data Service actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
+| category          | The category of the flow. The different types are: 0 - classic Dataverse workflows,  1 - classic Dataverse dialogs, 2 - business rules, 3 - classic Dataverse actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
 | statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
 | workflowuniqueid  | The unique identifier for this installation of the flow. |
 | workflowid        | The unique identifier for a cloud flow across all imports. |
 | createdon         | The date when the flow was created. |
-| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in Common Data Service. |
+| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in Dataverse. |
 | modifiedon        | The last time the flow was updated. |
 | ismanaged         | Indicates if the flow was installed via a managed solution. |
 | name              | The display name that you have given the flow. |
-| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers entity in Common Data Service. |
-| _createdby_value  | The user who created the flow. This is an id from the systemusers entity in Common Data Service. |
+| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers entity in Dataverse. |
+| _createdby_value  | The user who created the flow. This is an id from the systemusers entity in Dataverse. |
 | type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
 
-You can also request specific properties, filter the list of flows, and much more, as described in the [Common Data Service API documentation for querying data](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
+You can also request specific properties, filter the list of flows, and much more, as described in the [Dataverse API documentation for querying data](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -120,7 +120,7 @@ Content-type: application/json
 		"statecode": 0,
 		"name": "Sample flow name",
 		"type": 1,
-		"description": "This flow reads some data from Common Data Service.",
+		"description": "This flow reads some data from Dataverse.",
 		"primaryentity":"none",
 		"clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"connectionName\":\"shared-commondataser-00000000-0000-0000-0000-000000000004\",\"source\":\"Invoker\",\"id\":\"/providers/Microsoft.Power Apps/apis/shared_commondataservice\"}},\"definition\":{\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": {\"defaultValue\": {},\"type\": \"Object\"},\"$authentication\": {\"defaultValue\": {},\"type\": \"SecureObject\"}},\"triggers\": {\"Recurrence\": {\"recurrence\": {\"frequency\": \"Minute\",\"interval\": 1},\"type\": \"Recurrence\"}},\"actions\": {\"List_records\": {\"runAfter\": {},\"metadata\": {\"flowSystemMetadata\": {\"swaggerOperationId\": \"GetItems_V2\"}},\"type\": \"ApiConnection\",\"inputs\": {\"host\": {\"api\": {\"runtimeUrl\": \"https:\/\/firstrelease-001.azure-apim.net\/apim\/commondataservice\"},\"connection\": {\"name\": \"@parameters('$connections')['shared_commondataservice']['connectionId']\"}},\"method\": \"get\",\"path\": \"\/v2\/datasets\/@{encodeURIComponent(encodeURIComponent('default.cds'))}\/tables\/@{encodeURIComponent(encodeURIComponent('accounts'))}\/items\",\"queries\": {\"$top\": 1},\"authentication\": \"@parameters('$authentication')\"}}},\"outputs\": {}}},\"schemaVersion\":\"1.0.0.0\"}"
 }
@@ -183,7 +183,7 @@ Authorization: Bearer ey...
 
 ## Get all users with whom a cloud flow is shared
 
-Listing the users with access uses a *function* in Common Data Service. This function takes a single parameter of `Target`:
+Listing the users with access uses a *function* in Dataverse. This function takes a single parameter of `Target`:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -300,8 +300,8 @@ Call the `ImportSolution` action to import a solution.
 
 | Property name                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in Common Data Service, this flag needs to be set to `true` to import them. Otherwise they will not be overwritten. |
-| PublishWorkflows                 | Indicates if classic Common Data Service workflows will be activated on import. This setting doesn't apply to other types of flows. |
+| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they will not be overwritten. |
+| PublishWorkflows                 | Indicates if classic Dataverse workflows will be activated on import. This setting doesn't apply to other types of flows. |
 | ImportJobId                      | Provides a new, unique GUID to track the import job. |
 | CustomizationFile                | A base 64-encoded zip file that contains the solution. |
 

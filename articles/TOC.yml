@@ -536,7 +536,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom Common Data Service workflow activities
+  - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
