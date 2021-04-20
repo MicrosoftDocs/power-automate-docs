@@ -497,7 +497,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Microsoft Dataverse (Legacy)
+- name: Classic Dataverse
   items:
   - name: Classic Dataverse workflows
     items:
