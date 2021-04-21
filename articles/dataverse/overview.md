@@ -47,6 +47,7 @@ The Microsoft Dataverse connector provides the following actions to help you man
 
    - Create a new row
    - Update a row
+   - Search rows with relevance search
    - Get a row
    - List rows
    - Delete a row
