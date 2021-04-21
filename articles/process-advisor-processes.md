@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2021
+ms.date: 4/26/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -94,8 +94,8 @@ After the process is created, a creation successful modal will be shown with a f
 
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
-> [!div class="mx-imgBorder"]
-> ![Launch recorder in Power Automate Desktop](./media/launch-recorder.png)
+   > [!div class="mx-imgBorder"]
+   > ![Launch recorder in Power Automate Desktop](./media/launch-recorder.png)
 
 ## Power Automate Desktop recorder
 
@@ -140,23 +140,20 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. Move the activity header up and down the actions list to where you want the group to start.
 
-1. Name your group on the right side of the screen.
-
-1. Use the dropdown menu to find group names that already exist for the process or create your own.
+1. Name your group on the right side of the screen. Use the dropdown menu to find group names that already exist for the process or create your own.
 
    > [!div class="mx-imgBorder"]
-   > ![Group actions into activities](./media/group-actions.png)
+   > ![Group actions into](./media/group-actions.png)
  
-
 1. If you made a mistake and want to delete an activity, use the trash can icon next to the activity name.
 
 1. At any time, select **Save** on the top right to save your work.
 
-1. To analyze, you need at least two activities. Otherwise, the process map would not be very meaningful.
+   To analyze, you need at least two activities. Otherwise, the process map would not be very meaningful.
 
 1. When you finish grouping, set **Ready to analyze**  next to **Save**.
 
-1. Select **Close** to return to the process details page.
+1. Select **Close** to return to the process details screen.
 
 ### Remove sensitive information
 
@@ -166,7 +163,7 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. Delete any screenshots that contain sensitive information.
 
-1. Alternatively, you can delete the entire action by clicking **Delete action** in the command bar.
+1. Alternatively, you can delete the entire action by selecting **Delete action** in the menu at the top.
 
 ### Grouping tips
 
@@ -177,13 +174,12 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 As a process owner or co-owner, you can create recommended activity names for a process. This will ensure there will be more consistency in naming across recordings. To do this:
 
-1. In the process details page, select **Create activity names** to bring up the panel.
+1. In the process details screen, select **Create activity names** to bring up the panel.
 
 1. Select **New name** to add a new activity name entry to the recommended list.
 
 1. Select **Save** when you are done.
 
 The activity names you added will now show up under **Recommended names** in activity name dropdown when grouping actions for a recording. Any activities that are not defined in the recommended list will show up under **Custom names**.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

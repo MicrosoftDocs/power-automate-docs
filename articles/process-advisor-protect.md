@@ -1,5 +1,5 @@
 ---
-title: Protect your data (preview) | Microsoft Docs
+title: Protect your data | Microsoft Docs
 description: How to protect your data in process advisor.
 services: ''
 suite: flow
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 4/26/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -22,15 +22,13 @@ search.audienceType:
   - enduser
 ---
 
-# Protect your data in process advisor (preview)
+# Protect your data in process advisor
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
-During the private preview you can use Power Automate Desktop features to remove screenshots and text entries stored during the recording session, if they contain sensitive data.
+You can use Power Automate Desktop features to remove screenshots and text entries stored during the recording session if they contain sensitive data. You can also remove any confidential information in the text or images from your recordings when preparing them.
 
 ## Delete screenshots
 
-To delete screenshots, in the labeling experience, select the step that contains the screenshot you want to remove and select **Delete screenshot**.
+To delete screenshots when preparing your recording, select the step that contains the screenshot you want to remove and select **Delete screenshot**.
 
 > [!div class="mx-imgBorder"]
 > ![Delete screenshot](media/process-advisor-protect/delete-screenshot.png "Select 'delete screenshot'")
@@ -41,6 +39,5 @@ To remove sensitive data from a text entry, select the text entry and modify the
 
 > [!div class="mx-imgBorder"]
 > ![Remove text](media/process-advisor-protect/remove-text.png "Modify the description")
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2021
+ms.date: 4/26/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -28,7 +28,7 @@ When you create a process in process advisor, only you can see it. But getting i
 - Share a process with a co-owner.
 - Share a process with a contributor.
 
-If you're the co-owner or contributor of a process, you'll find it listed on the Processes page in process advisor.
+If you're the co-owner or contributor of a process, you'll find it listed on the Processes screen in process advisor.
 
 >[!IMPORTANT]
 >You must be the co-owner to add or remove owners and contributors to a process.
@@ -36,8 +36,12 @@ If you're the co-owner or contributor of a process, you'll find it listed on the
 ## Share action
 
 The share action is available on the Processes screen in process advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on process advisor system entities.
-The share action is also available on the process detail screen in process advisor, with the same conditions.
-Sharing is not needed at the recordings level. Once you share a process with a co-owner, they will be able to manage the recordings associated to the process.
+
+The share action is also available on the process detail screen with the same conditions. Sharing is not needed at the recordings level. Once you share a process with a co-owner, they will be able to manage the recordings associated to the process.
+
+> [!div class="mx-imgBorder"]
+> ![!Manage access](media/manage-access.png "Manage access")
+
 
 ## Share panel
 
@@ -47,7 +51,7 @@ When sharing a process with others, the option to automatically send an email in
 
 ## Share a process with a contributor
 
-Adding a contributor to a process is the most common way to share a process. Any co-owner of a process can perform these actions:
+Adding a contributor to a process is the most common way to share a process. Any contributor of a process can perform these actions:
 
 - View the process details.
 - Add and label recordings.
@@ -65,6 +69,5 @@ Adding a co-owner to a process allows others to help you label and validate the 
 - [Analyze the process](process-advisor-analyze.md).
 - [View the analytics of an analyzed process](process-advisor-analyze.md).
 - [Delete the process](process-advisor-security).
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
