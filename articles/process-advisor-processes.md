@@ -52,7 +52,7 @@ Create a recording in one of three ways:
 
 - [From the **Create** screen](#create-a-recording-from-the-create-screen) in process advisor.
 - [Right after process creation](#create-a-recording-right-after-process-creation).
-- [From the process details page](#create-a-recording-from-the-process-details-page).
+- [From the process details page](#create-a-recording-from-the-process-details-screen).
 
 Here's a short video on recording a process: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
 
@@ -99,7 +99,7 @@ After the process is created, a creation successful modal will be shown with a f
 
 ## Power Automate Desktop recorder
 
-1. On the Desktop recorder screen, select **Start recording**.
+1. On the Desktop recorder screen, select **Record**.
 
 1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder screen.
 
@@ -108,7 +108,7 @@ After the process is created, a creation successful modal will be shown with a f
 1. Return to the web portal in your browser, and select **View recording**.
 
    > [!div class="mx-imgBorder"]
-   > ![Launch recorder in Power Automate Desktop](./media/desktop-recorder.png)
+   > ![Record actions in Power Automate Desktop](./media/desktop-recorder.png)
 
    > [!NOTE]
    > Depending on the length of the recording, it may take some time before the actions will be available.
@@ -138,14 +138,14 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. Select **Add activity** to add an activity header. All actions under the activity header and before the next activity header are considered part of the group.
 
-1. Move the activity header up and down the actions list to where you want the group to start.
+1. Move the activity header up and down the actions list to where you want the activity to start.
 
-1. Name your group on the right side of the screen. Use the dropdown menu to find group names that already exist for the process or create your own.
+1. Name your activity on the right side of the screen. Use the dropdown menu to find activity names that already exist for the process or create your own.
 
    > [!div class="mx-imgBorder"]
    > ![Group actions into](./media/group-actions.png)
  
-1. If you made a mistake and want to delete an activity, use the trash can icon next to the activity name.
+1. If you made a mistake and want to delete an activity, use the **Delete activity** button in the command bar.
 
 1. At any time, select **Save** on the top right to save your work.
 
@@ -155,20 +155,10 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. Select **Close** to return to the process details screen.
 
-### Remove sensitive information
-
-1. Select the action that contains information you want to remove.
-
-1. Edit the action name or description to remove any sensitive information, such as account numbers or passwords.
-
-1. Delete any screenshots that contain sensitive information.
-
-1. Alternatively, you can delete the entire action by selecting **Delete action** in the menu at the top.
-
 ### Grouping tips
 
 - As much as possible use an existing activity name. This creates a more consistent and accurate process map.
-- Group names will be available in the dropdown list whenever a recording is saved. To remove group names from the dropdown list after it was removed from all recordings that used that group name, you need to analyze the recording.
+- Activity names will be available in the dropdown list whenever a recording is saved. To remove activity names from the dropdown list after it was removed from all recordings that used that activity name, you need to analyze the recording.
 
 ### Manage activity names
 

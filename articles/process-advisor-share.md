@@ -62,12 +62,12 @@ Adding a contributor to a process is the most common way to share a process. Any
 Adding a co-owner to a process allows others to help you label and validate the contributors' recordings, manage the process, and visualize the process analytics and dashboard. Any co-owner of a process can perform these actions:
 
 - [View  details](process-advisor-analyze.md).
-- [Update properties, such as name and description](process-advisor-processes#manage-activity-names).
-- [Invite co-owners and contributors](process-advisor-share#share-action).
+- [Update properties, such as name and description](process-advisor-processes.md#manage-activity-names).
+- [Invite co-owners and contributors](process-advisor-share.md#share-action).
 - [Add and label recordings](process-advisor-processes.md).
 - [Manage all recordings that have been added to the process (including labeling and deleting others’ recordings)](process-advisor-processes.md).
 - [Analyze the process](process-advisor-analyze.md).
 - [View the analytics of an analyzed process](process-advisor-analyze.md).
-- [Delete the process](process-advisor-security).
+- [Delete the process](process-advisor-security.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

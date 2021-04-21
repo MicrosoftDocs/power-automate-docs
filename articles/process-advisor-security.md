@@ -59,6 +59,4 @@ Once the recording is imported into process advisor, you can still remove sensit
 
 - Delete screenshots.
 
-Learn more about how to remove sensitive data in [Remove sensitive information](process-advisor-processes#remove-sensitive-information).
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]

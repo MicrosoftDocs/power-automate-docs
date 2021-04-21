@@ -96,17 +96,17 @@ Process advisor automation recommendation feature helps you identify automation 
 The recommendation icon on the process map activity shows the automation opportunity.
 
 > [!div class="mx-imgBorder"]
-> ![Application analytics](media/automation-reco-1.png "Application analytics")
+> ![Automation recommendation](media/automation-reco-1.png "Automation recommendation")
 
 
 When you select **+Automate activities** in the menu at the top, you are shown the cloud flow connectors recommendations relevant to your process.
 
 > [!div class="mx-imgBorder"]
-> ![Application analytics](media/automation-reco-2.png "Application analytics")
+> ![Automate activities](media/automation-reco-2.png "Automate activities")
 
 ### See also
 
 [Connector overview](https://docs.microsoft.com/connectors/connectors)<br/>
-[Overview of cloud flows](overview-cloud)
+[Overview of cloud flows](overview-cloud.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
