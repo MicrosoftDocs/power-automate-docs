@@ -31,9 +31,9 @@ The process map makes it possible to visualize and analyze processes. By looking
 > [!div class="mx-imgBorder"]
 > ![Process map](media/process-advisor-visualize/process-map.png "Process advisor process map")
 
-Activities describe tasks or actions which makes up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
+Activities describe tasks or actions which make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
 
-Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see additional metrics, frequency of the activities, and throughput time, on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the very first event of the case and the very last.
+Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see additional metrics, frequency of the activities, and throughput time, on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
 
 There are various filters available to you to drill down into the process:
 
@@ -53,7 +53,7 @@ There are various filters available to you to drill down into the process:
 
 - **Variants by time**&mdash;Average time spent to finish the process per variant.
 
-- **Activity by average time:**&mdash;hows average time each activity takes so you could find the most time-consuming activities with a glance at this visual.
+- **Activity by average time:**&mdash;Shows average time each activity takes so you could find the most time-consuming activities with a glance at this visual.
 
 - **Start date**&mdash;Filters for the time range when recording has started. For example, if your process changed over time you want to see if there was any impact on your metrics after the process change by filtering for recordings that started after a certain time.
 
@@ -82,7 +82,7 @@ Application analytics allows you to gain more insights from recordings by unders
 
 - **Application usage**&mdash;A scatter plot which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed which means the recorder is jumping back and forth between this application and other applications. This may occur in cases where there is copy and paste happening, as an example. Other apps are used for a long time and the action is completely isolated to that application and does not depend on other recordings for completion of the necessary activity.
 
-    The size of the circles clarifies what application are used in most or all recordings, as it represents an application that is needed for the process and something to concentrate on from an optimization or automation perspective.
+    The size of the circles clarifies what applications are used in most or all recordings. It represents an application that is needed for the process and something to concentrate on from an optimization or automation perspective.
 
 - **Application switching**&mdash;A bar chart that informs which application pairs are most often used together. This extends the number of times accessed in the application usage visual to help identify what two applications are most often used together. This can denote some information transfer (copy and paste) between these applications, some to consider when automating.
 
