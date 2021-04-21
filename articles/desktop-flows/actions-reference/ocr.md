@@ -26,6 +26,18 @@ Initiate OCR engines to perform OCR related activities
 |[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
+## Deprecation notices
+
+The **Create Tesseract OCR engine** action and the MODI OCR engine are planned for deprecation.
+
+To prevent your flows from failing after the depreciation, initialize the required Tesseract OCR engines directly through the actions that use them.
+
+This OCR engine initialization method provides the same configuration options as before and eliminates the need for a produced **OCREngine** variable.
+
+![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+
+## OCR actions
+
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine
 
@@ -58,7 +70,7 @@ Create a MODI OCR engine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|MODI language|N/A|Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portugese, Russian, Spanish, Swedish, Turkish|English|The language of the image's text that the MODI engine detects|
+|MODI language|N/A|Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish, Turkish|English|The language of the image's text that the MODI engine detects|
 |Image width multiplier|Yes|Numeric value|1|The image's width multiplier|
 |Image height multiplier|Yes|Numeric value|1|The image's height multiplier|
 
