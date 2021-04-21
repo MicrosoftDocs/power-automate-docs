@@ -23,7 +23,7 @@ search.audienceType:
 
 # Manage machines and machine groups (preview) 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can you can instantly start your desktop automation using any of the wide array of [available triggers](/triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
 
