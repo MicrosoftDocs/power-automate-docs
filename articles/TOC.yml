@@ -330,6 +330,8 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
+  - name: Manage machines (preview)
+    href: manage-machines.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -491,8 +493,6 @@
     href: /connectors/
   - name: Manage connections
     href: add-manage-connections.md
-  - name: Manage machines (preview)
-    href: machine-manage.md
   - name: Manage gateways
     href: gateway-manage.md
   - name: Understand gateways
