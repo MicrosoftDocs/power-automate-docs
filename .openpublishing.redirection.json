@@ -16,6 +16,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/audit-logs.md",
+      "redirect_url": "/power-platform/admin/logging-power-automate",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fix-flow-failures/index.md",
       "redirect_url": "/power-automate/fix-flow-failures",
       "redirect_document_id": "false"
