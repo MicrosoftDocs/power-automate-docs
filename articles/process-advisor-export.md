@@ -26,7 +26,7 @@ search.audienceType:
 
 You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to be able to export it.
 
- To learn more about solutions from the Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md)
+ To learn more about solutions from Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md).
 
 ## Export a process
 
@@ -42,8 +42,7 @@ You can copy or move process advisor processes from one environment to another u
 
 1. You can now export your solution and import it in another environment.
 
-> [!NOTE]
-> For more information about solution export, see [Export a solution](export-flow-solution.md).
+For more information about solution export, see [Export a solution](export-flow-solution.md).
 
 ## Import a process
 
@@ -54,3 +53,5 @@ To import a process into another environment:
 1. Go to the environment where you want to import your process.
 
 1. Follow the instructions in [Import a solution](import-flow-solution.md).
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

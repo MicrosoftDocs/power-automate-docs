@@ -25,14 +25,15 @@ search.audienceType:
 
 **Activity**&mdash;Activities in process advisor describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.
 
+<!-- "Process" needs definition. -->
+
 **Process map**&mdash;Visualizes the actual flow of your process based on the imported user or system data.
+
+**Recording**&mdash;A recorded sequence of activities that users perform on their desktop. Usually, multiple recordings are analyzed together to get insights into different variants of the same task.
 
 **Robotic process automation (RPA)**&mdash;Software that can be easily programmed to do basic, repetitive tasks across applications.
 
 **Variant**&mdash;A specific path it takes for a process to be completed.
-Recording: A recorded sequence of activities that users perform on their desktop. Usually, multiple recordings are analyzed together to get insights into different variants of the same task.
-
-<!-- "Process" needs definition. -->
 
 <!--"Workflow" needs definition. -->
 
