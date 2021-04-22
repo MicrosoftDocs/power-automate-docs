@@ -21,7 +21,7 @@ ms.author: hamenon
 
 Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the inputs to the flow can be dynamic, based on the filters that the user sets. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
 
-![Power Automate Visual in Power BI](media/power-bi-flow/power-bi-main.png)
+![Power Automate Visual in Power BI on the main screen](media/power-bi-flow/power-bi-main.png)
 
 ## Add Power Automate visual to a Power BI report
 To get started, [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and then import it to your Power BI report. After it's imported, you’ll see the Power Automate icon in the **Visualization** pane. When you select this new visual, it's automatically added to your current report page.
@@ -100,6 +100,7 @@ Optionally, if you want to change the button text, font color, font size, or fil
 ## Known limitations 
 
 * The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to an Azure Active Directory group.
+* The PowerBI visual only functions with flows in a tenant's default environment. Any flow created with the visual is created in the users default environment.
 * Additional manual inputs to the button are not supported at this time.
 * The visual is not supported for PaaS embedded scenarios nor in Sovereign Cloud scenarios.
 * Create flows that you will use with the Power BI button trigger directly within the Power BI report. Do not go directly to Power automate to create these flows as the trigger will not have access to the data fields necessary for creating the flow.
