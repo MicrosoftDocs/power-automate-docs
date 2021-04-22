@@ -100,7 +100,7 @@ Optionally, if you want to change the button text, font color, font size, or fil
 ## Known limitations 
 
 * The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to an Azure Active Directory group.
-* The PowerBI visual only functions with Flows in a tenants default environment at the moment. Any flow created with the visual is created in the users default environment.
+* The PowerBI visual only functions with flows in a tenant's default environment. Any flow created with the visual is created in the users default environment.
 * Additional manual inputs to the button are not supported at this time.
 * The visual is not supported for PaaS embedded scenarios nor in Sovereign Cloud scenarios.
 * Create flows that you will use with the Power BI button trigger directly within the Power BI report. Do not go directly to Power automate to create these flows as the trigger will not have access to the data fields necessary for creating the flow.
