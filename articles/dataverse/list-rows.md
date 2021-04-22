@@ -45,9 +45,9 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Save and run your flow to confirm that no more than 5000 thousand rows are returned.
 
 
-## Turn on pagination
+## Turn on pagination to request more than 5000 rows
 
-To get more than 5000 rows from a query, turn on the **Pagination** feature from **Settings** as the following steps indicate.
+To get more than 5000 rows from a query automatically, turn on the **Pagination** feature from **Settings** as the following steps indicate.
 
 1. Select **Menu for list rows** (the three dots in the top right corner of the **List rows** card).
 
@@ -57,36 +57,12 @@ To get more than 5000 rows from a query, turn on the **Pagination** feature from
 
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 
-1. Enter a **Threshold** to indicate the maximum number of 
+1. Enter a **Threshold** to indicate the minimum number of rows requested. It is internally rounded off in increments of the default page size, i.e. 5000. If you enter 7000, the number of rows returned is 10000.
 
    ![The pagination settings](../media/list-rows/pagination-settings.png)
 
 >[!NOTE]
->[Content throughput limits](https://docs.microsoft.com/power-automate/limits-and-config#content-throughput-limits) and [message size limits](https://docs.microsoft.com/power-automate/limits-and-config#message-size) apply to ensure general service guarantees.
-
-
-## Use pagination to limit the number of rows returned
-
-
-
-
-<!-- However, tables often contain thousands of rows, so you can use filters to limit the number of results that Dataverse returns. When you filter the results, you improve efficiency and performance of your flows.  -->
-
-
-
-1. 
-
-
-![Advanced properties](../media/list-rows/6cfb9a05966d24b0ad4122dac1acdab8.png)
-
-![Pagination card](../media/list-rows/d1947f8944ac7646a545850d6c06e4ab.png)
-
-
-To learn more, see the [advanced options](#advanced-options) section within this article.
-
-<!--todo-->
-![Delete this](../media/list-rows/41670126542c1fc5d5c9b4a61a440ea2.png)
-
+>[Content throughput limits](https://docs.microsoft.com/power-automate/limits-and-config#content-throughput-limits) and [message size limits](https://docs.microsoft.com/power-automate/limits-and-config#message-size) apply to ensure general service guarantees. When pagination is not set, the response includes an _@odata.nextLink_ parameter which can be used to request the next set of rows. See the **Skip token** section later in this article to learn how to use it.
 
 
 ## Advanced options
@@ -100,9 +76,11 @@ To learn more, see the [advanced options](#advanced-options) section within this
 
 Use these advanced options to provide additional properties that more finely define the rows that Dataverse returns.
 
-**Select columns** – Use **Select columns** to define a A comma-separated list of columns to return, as shown in the following image. When this step runs, only the columns that you defined in **Filter rows*** are returned.
+
+**Select columns** – Use **Select columns** to define a A comma-separated list of columns to return, as shown in the following image. When this step runs, only the columns that you defined in **Filter rows** are returned.
 
 ![Select columns](../media/list-rows/select-columns.png)
+
 
 **Filter rows** – Use **Filter rows** to define an OData-style filter expression to narrow down the set of rows that Dataverse returns. In the following example, the step returns only those rows where the *firstname* starts with *John*.
 
@@ -121,6 +99,7 @@ to construct **Filter Query** expressions.
 
 ![Order by](../media/list-rows/sort-by.png)
 
+
 **Expand Query** – Use **Expand Query** to define an OData-style expression that defines the data that Dataverse will return from related tables. 
 
 <!--todo: I am not sure how talk about navigation properties is related here-->
@@ -136,6 +115,7 @@ To use it in a flow step, enter an Odata expression as shown in the following im
 
 ![Expand Query](../media/list-rows/expand-query.png)
 
+
 **Fetch Xml Query** – Use **Fetch Xml Query** to define a Dataverse-style XML snippet that indicates the following:
    1. The order in which columns are returned.
    1. The complex filter conditions that determine which rows are returned.
@@ -149,9 +129,16 @@ The following example shows you how to set up a scenario like the **Filter Query
 
 You can learn more about how to [use FetchXML to construct a query](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query).
 
+>[!NOTE]
+When pagination is used with Fetch Xml, the response includes a _@Microsoft.Dynamics.CRM.fetchxmlpagingcookie_ parameter instead of a _@odata.nextLink_ parameter, typically formatted as _<cookie pagenumber=\"2\" pagingcookie=\"%3ccookie%20page%3d%221%22%3e%3csystemuserid%20last%3d%22%7b969975AA-BA59-EB11-A812-000D3A111221%7d%22%20first%3d%22%7b8C637584-B459-EB11-A812-000D3A111221%7d%22%20%2f%3e%3c%2fcookie%3e\" istracking=\"False\" />_. Following image shows how to use it manually in a flow. However, it is advisable to use an expression to pass this parameter to the Fetch Xml Query input.
+
+![Fetch Xml Paging Cookie example](../media/list-rows/fetch-xml-paging-cookie.png)
+
+
 **Row count** – Use **Row count** to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
 
 ![Row count example listing 10 rows](../media/list-rows/row-count.png)
+
 
 **Skip token**
 
@@ -197,5 +184,6 @@ Preference-Applied: odata.maxpagesize=3
 
 ![SkipToken being used](../media/list-rows/skip-token.png)
 
-**Partition ID** - An option to specify the partitionId while retrieving data for NoSQL tables.
+
+**Partition ID** - An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](https://docs.microsoft.com/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
 
