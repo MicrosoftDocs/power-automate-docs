@@ -21,7 +21,7 @@ ms.author: hamenon
 
 Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the inputs to the flow can be dynamic, based on the filters that the user sets. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
 
-![Power Automate Visual in Power BI](media/power-bi-flow/power-bi-main.png)
+![Power Automate Visual in Power BI on the main screen](media/power-bi-flow/power-bi-main.png)
 
 ## Add Power Automate visual to a Power BI report
 To get started, [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and then import it to your Power BI report. After it's imported, you’ll see the Power Automate icon in the **Visualization** pane. When you select this new visual, it's automatically added to your current report page.
