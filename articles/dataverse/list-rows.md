@@ -77,7 +77,7 @@ To get more than 5000 rows from a query automatically, turn on the **Pagination*
 Use these advanced options to provide additional properties that more finely define the rows that Dataverse returns.
 
 
-**Select columns** – Use **Select columns** to define a A comma-separated list of columns to return, as shown in the following image. When this step runs, only the columns that you defined in **Filter rows*** are returned.
+**Select columns** – Use **Select columns** to define a A comma-separated list of columns to return, as shown in the following image. When this step runs, only the columns that you defined in **Filter rows** are returned.
 
 ![Select columns](../media/list-rows/select-columns.png)
 
