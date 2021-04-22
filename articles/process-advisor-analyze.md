@@ -26,7 +26,7 @@ search.audienceType:
 On the left-side navigation pane in Power Automate, select **Process advisor** > **Processes**, and then select your process to go to the **Details** screen. This is where you access most of your process management activities.
 
 > [!NOTE]
-> [TDS endpoint setting](/power-platform/admin/settings-features) for your organization need to be enabled. This feature is enabled by default, but if it is disabled for any reason, please contact your Power Platform administrator to enable it in the Power Platform admin center.
+> The [TDS endpoint setting](/power-platform/admin/settings-features) for your organization needs to be enabled. This feature is enabled by default, but if it is disabled for any reason, contact your Power Platform administrator to enable it in the Power Platform admin center.
 
 ## Analyze process
 
