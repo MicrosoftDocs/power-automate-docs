@@ -185,5 +185,5 @@ Preference-Applied: odata.maxpagesize=3
 ![SkipToken being used](../media/list-rows/skip-token.png)
 
 
-**Partition ID** - An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing entity data](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
+**Partition ID** - An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](https://docs.microsoft.com/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
 
