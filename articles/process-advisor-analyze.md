@@ -30,9 +30,9 @@ On the left-side navigation pane in Power Automate, select **Process advisor** >
 
 ## Analyze process
 
-Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu bar gets you started. Analyze feature adds selected recording into the Process Map and associated analytics. If a recording’s status is not *analyzed*, it will not be part of the analytics reports.
+Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. Analyze feature adds selected recording into the Process Map and associated analytics. If a recording’s status is not *analyzed*, it will not be part of the analytics reports.
 
-- After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu bar.
+- After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
 - The process status on the **Details** pane shows the status of the analysis and whether the process has been analyzed before.
 - Analysis happens at the process level for all recordings that are ready to be analyzed.
 - Pay attention to the recording status, which you can find under the **Status** column of the **Recordings** pane, only recordings with specific status will be considered for analysis.
