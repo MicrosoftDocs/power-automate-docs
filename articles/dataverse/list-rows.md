@@ -62,7 +62,7 @@ To get more than 5000 rows from a query automatically, turn on the **Pagination*
    ![The pagination settings](../media/list-rows/pagination-settings.png)
 
 >[!NOTE]
->[Content throughput limits](https://docs.microsoft.com/power-automate/limits-and-config#content-throughput-limits) and [message size limits](https://docs.microsoft.com/power-automate/limits-and-config#message-size) apply to ensure general service guarantees. When pagination is not set, then the response includes _@odata.nextLink_ parameter which can be used to request the next set of rows. See **Skip token** section below to learn how to use it.
+>[Content throughput limits](https://docs.microsoft.com/power-automate/limits-and-config#content-throughput-limits) and [message size limits](https://docs.microsoft.com/power-automate/limits-and-config#message-size) apply to ensure general service guarantees. When pagination is not set, the response includes an _@odata.nextLink_ parameter which can be used to request the next set of rows. See the **Skip token** section later in this article to learn how to use it.
 
 
 ## Advanced options
