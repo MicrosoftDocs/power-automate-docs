@@ -92,8 +92,7 @@ Application analytics allows you to gain more insights from recordings by unders
 
 ## Automation recommendation
 
-Process advisor automation recommendation feature helps you identify automation opportunities and guides you in automating your processes using Power Automate.
-The recommendation icon on the process map activity shows the automation opportunity.
+Process advisor automation recommendation feature helps you identify automation opportunities and guides you in automating your processes using Power Automate. The recommendation icon on the process map activity shows the automation opportunity.
 
 > [!div class="mx-imgBorder"]
 > ![Automation recommendation](media/automation-reco-1.png "Automation recommendation")

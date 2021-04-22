@@ -31,13 +31,13 @@ You can use Power Automate Desktop features to remove screenshots and text entri
 To delete screenshots when preparing your recording, select the step that contains the screenshot you want to remove and select **Delete screenshot**.
 
 > [!div class="mx-imgBorder"]
-> ![Delete screenshot](media/process-advisor-protect/delete-screenshot.png "Select 'delete screenshot'")
+> ![Delete screenshot](media/delete-screenshot.png "Select 'delete screenshot'")
 
 ## Remove text
 
 To remove sensitive data from a text entry, select the text entry and modify the step description.
 
 > [!div class="mx-imgBorder"]
-> ![Remove text](media/process-advisor-protect/remove-text.png "Modify the description")
+> ![Remove text](media/remove-text.png "Modify the description")
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

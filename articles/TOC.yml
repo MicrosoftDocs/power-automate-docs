@@ -44,6 +44,10 @@
       displayName: Security and privacy in process advisor
     - name: Protect your data
       href: process-advisor-protect.md
+      displayName: Protect your data in process advisor
+    - name: Export and import your process
+      href: process-advisor-export.md
+      displayName: Export and import your process in process advisor
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process advisor
