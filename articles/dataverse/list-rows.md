@@ -130,7 +130,7 @@ The following example shows you how to set up a scenario like the **Filter Query
 You can learn more about how to [use FetchXML to construct a query](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query).
 
 >[!NOTE]
-When pagination is used with Fetch Xml, the response includes a _@Microsoft.Dynamics.CRM.fetchxmlpagingcookie_ parameter instead of a _@odata.nextLink_ parameter, typically formatted as _<cookie pagenumber=\"2\" pagingcookie=\"%253ccookie%2520page%253d%25221%2522%253e%253csystemuserid%2520last%253d%2522%257b969975AA-BA59-EB11-A812-000D3A111221%257d%2522%2520first%253d%2522%257b8C637584-B459-EB11-A812-000D3A111221%257d%2522%2520%252f%253e%253c%252fcookie%253e\" istracking=\"False\" />_. Following image shows how to use it manually in a flow. However, it is advisable to use an expression to pass this parameter to the Fetch Xml Query input.
+When pagination is used with Fetch Xml, the response includes a _@Microsoft.Dynamics.CRM.fetchxmlpagingcookie_ parameter instead of a _@odata.nextLink_ parameter, typically formatted as _<cookie pagenumber=\"2\" pagingcookie=\"%3ccookie%20page%3d%221%22%3e%3csystemuserid%20last%3d%22%7b969975AA-BA59-EB11-A812-000D3A111221%7d%22%20first%3d%22%7b8C637584-B459-EB11-A812-000D3A111221%7d%22%20%2f%3e%3c%2fcookie%3e\" istracking=\"False\" />_. Following image shows how to use it manually in a flow. However, it is advisable to use an expression to pass this parameter to the Fetch Xml Query input.
 
 ![Fetch Xml Paging Cookie example](../media/list-rows/fetch-xml-paging-cookie.png)
 
