@@ -25,17 +25,15 @@ search.audienceType:
 
 ## What is process advisor?
 
-Process advisor helps you to better understand places to streamline workflows by:
+Process advisor quickly captures detailed steps for each process in your organization to help you to better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
-- Identifying which activities take the most time.
-- Providing insights about which parts of your processes would be best to automate.
-- Revealing ways to improve efficiencies.
+Process advisor helps you to:
 
-Process advisor quickly captures detailed steps for each process in your organization&mdash;working on your own or inviting colleagues to contribute and collaborate. Process advisor helps you:
-
-- Understand where the bottlenecks are.
-- Discover which steps are repeated the most.
+- Gain insights about which parts of your processes would be best to automate.
 - Find opportunities to automate with end-to-end visualizations of each process you record.
+- Identify which activities take the most time.
+- Discover which steps are repeated the most.
+- improve efficiencies by understanding where the bottlenecks are.
 
 ## Business example
 

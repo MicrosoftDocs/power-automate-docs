@@ -29,9 +29,13 @@ search.audienceType:
 
 **Process map**&mdash;Visualizes the actual flow of your process based on the imported user or system data.
 
+**Process mining**&mdash;Visualization and analysis of processes based on event logs. Event logs are information stored in information systems. For example, in CRM (Customer Relationship Management), you can find event logs on orders, start and completions of an activity, resources used, and more.
+
 **Recording**&mdash;A recorded sequence of activities that users perform on their desktop. Usually, multiple recordings are analyzed together to get insights into different variants of the same task.
 
 **Robotic process automation (RPA)**&mdash;Software that can be easily programmed to do basic, repetitive tasks across applications.
+
+**Task mining**&mdash;Technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do it better.
 
 **Variant**&mdash;A specific path it takes for a process to be completed.
 
