@@ -35,7 +35,7 @@ search.audienceType:
 
 **Robotic process automation (RPA)**&mdash;Software that can be easily programmed to do basic, repetitive tasks across applications.
 
-**Task mining**&mdash;Technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do it better.
+**Task mining**&mdash;Technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do them better.
 
 **Variant**&mdash;A specific path it takes for a process to be completed.
 

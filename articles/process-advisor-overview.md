@@ -30,9 +30,8 @@ Process advisor quickly captures detailed steps for each process in your organiz
 Process advisor helps you to:
 
 - Gain insights about which parts of your processes would be best to automate.
-- Find opportunities to automate with end-to-end visualizations of each process you record.
 - Identify which activities take the most time.
-- Discover which steps are repeated the most.
+- Discover which activities are repeated the most.
 - improve efficiencies by understanding where the bottlenecks are.
 
 ## Business example
