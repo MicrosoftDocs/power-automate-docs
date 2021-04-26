@@ -58,7 +58,7 @@ You will need a solution with two flows:
 
    You need to then test your child flow. Because you can manually trigger this flow, it's very easy to test right inside of the designer. Try it out with a couple different inputs, and verify that the outputs are what you expect.
 
-1. Lastly, if your flow uses anything other than built-in actions or the Dataverse (current environment) connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
+1. Lastly, if your flow uses anything other than built-in actions or the Microsoft Dataverse connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
 
 1. In the pane that appears, for each connection used in the flow, you will need to select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
 

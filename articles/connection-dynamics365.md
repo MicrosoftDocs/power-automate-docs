@@ -1,6 +1,6 @@
 ---
 title: Create a cloud flow with Dynamics 365 (online) | Microsoft Docs
-description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse (Current Environment) connector or the Common Data Service connector instead.
+description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse connector or the Common Data Service connector instead.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,9 +25,9 @@ search.audienceType:
 >
 > The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Dataverse (current environment) connector](/connectors/commondataserviceforapps/) whenever you can. If the Dataverse (current environment) connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
+> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse) connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
 >
-> The [Dataverse (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
+> The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
 
 
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 

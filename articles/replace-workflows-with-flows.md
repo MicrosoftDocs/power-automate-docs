@@ -465,11 +465,11 @@ To allow the sales person to trigger the approval request on demand:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a cloud flow in a solution](create-flow-solution.md). 
 
-1. From the list of triggers, select **Common Data Service (Current Environment) – When a row is selected**, and then select **Quotes** as the entity. 
+1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the entity. 
 
    This trigger allows a cloud flow to run on-demand on a record or set of records.
 
-1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Common Data Service (Current Environment) – List records** action. The goal is to get the individual items from a Quote, so set the **Entity name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
+1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Microsoft Dataverse – List rows** action. The goal is to get the individual items from a Quote, so set the **Table name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
 
     ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List records card")
 
