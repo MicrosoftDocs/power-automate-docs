@@ -52,7 +52,7 @@ Create a Tesseract OCR engine
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
 |Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
 
-##### Prepare flows for upcoming deprecation
+##### <a name="createtesseractocrenginebase_DeprecationInfo"></a> Prepare flows for upcoming deprecation
 
 The **Create Tesseract OCR engine** action is planned for deprecation. To prevent flows from failing after the depreciation, initialize the required Tesseract OCR engines directly through the actions that use them.
 
@@ -82,7 +82,7 @@ Create a MODI OCR engine
 |-----|-----|
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
 
-##### Prepare flows for upcoming deprecation
+##### <a name="createmodiengine_DeprecationInfo"></a> Prepare flows for upcoming deprecation
 
 The MODI OCR engine is planned for deprecation. To prevent flows from failing after the depreciation, replace the initialized MODI engines with Tesseract engines.
 
