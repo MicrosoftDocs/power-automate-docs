@@ -26,18 +26,6 @@ Initiate OCR engines to perform OCR related activities
 |[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
-## Deprecation notices
-
-The **Create Tesseract OCR engine** action and the MODI OCR engine are planned for deprecation.
-
-To prevent your flows from failing after the depreciation, initialize the required Tesseract OCR engines directly through the actions that use them.
-
-This OCR engine initialization method provides the same configuration options as before and eliminates the need for a produced **OCREngine** variable.
-
-![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
-
-## OCR actions
-
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine
 
@@ -64,6 +52,14 @@ Create a Tesseract OCR engine
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
 |Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
 
+##### Prepare flows for upcoming deprecation
+
+The **Create Tesseract OCR engine** action is planned for deprecation. To prevent flows from failing after the depreciation, initialize the required Tesseract OCR engines directly through the actions that use them.
+
+This OCR engine initialization method provides the same configuration options as before and eliminates the need for a produced **OCREngine** variable.
+
+![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+
 ### <a name="createmodiengine"></a> Create MODI OCR engine
 Create a MODI OCR engine
 
@@ -85,6 +81,14 @@ Create a MODI OCR engine
 |Exception|Description|
 |-----|-----|
 |Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+
+##### Prepare flows for upcoming deprecation
+
+The MODI OCR engine is planned for deprecation. To prevent flows from failing after the depreciation, replace the initialized MODI engines with Tesseract engines.
+
+You can perform the initialization directly through the actions that require the engines without using the **Create Tesseract OCR engine** action.
+
+![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
 
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine
