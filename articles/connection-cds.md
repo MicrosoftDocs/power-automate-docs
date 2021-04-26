@@ -27,7 +27,7 @@ search.audienceType:
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. Use the recommended [Common Data Service (current environment) connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
+>There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
 
 With the Common Data Service connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
