@@ -19,7 +19,7 @@ search.audienceType:
 # Work with business process flows using code
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-A *business process flow* lets you create more efficient and streamlined sales, service, and other business processes. It creates a visualization of your business process by placing special controls at the top of the entity forms. Users are guided through various stages of sales, marketing, or service processes towards completion. Each process supports multiple stages and steps. You can add or remove steps, change the order of stages, or add new tables to the business process flow.  
+A *business process flow* lets you create more efficient and streamlined sales, service, and other business processes. It creates a visualization of your business process by placing special controls at the top of the table forms. Users are guided through various stages of sales, marketing, or service processes towards completion. Each process supports multiple stages and steps. You can add or remove steps, change the order of stages, or add new tables to the business process flow.  
   
 Different business process flow instances can run concurrently against the same table row. Users can switch between concurrent business process instances, and resume their work at a current stage in the process. 
 
@@ -31,7 +31,7 @@ This topic provides information about how you can programmatically work with bus
 <a name="PrereqsBPF"></a>   
 ## Prerequisites for business process flow 
 
-Custom entities and entities that have updated UI forms can participate in the business process flow. The updated UI entities have the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> property set to `true`. 
+Custom tables and tables that have updated UI forms can participate in the business process flow. The updated UI tables have the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> property set to `true`. 
 
 To enable an table for the business process flow, set the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> property to `true`.
 
@@ -335,7 +335,7 @@ If the row exists, you’ll get a normal response with status 204 to indicate th
 
 Use the `RetrieveProcessInstances` message (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> or <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) to retrieve all the business process flow instances for a table row across all business process definitions. The business process flow instances returned for a table are ordered based on the `modifiedon` column for the instance. For example, the most recently modified business process flow instance will be the *first*  row in the returned collection. The most recently modified business process flow instance is the one that is active on the UI for a table row.  
   
-Each business process flow instance record returned for a table row as a result of using the `RetrieveProcessInstances` message stores the ID of the active stage in the `processstageid` column that can be used to find the active stage, and then move to the previous or next stage. To do so, you first need to find the active path of a business process flow instance and the stages available in the process flow instance using the `RetrieveActivePath` message (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> or <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
+Each business process flow instance row returned for a table row as a result of using the `RetrieveProcessInstances` message stores the ID of the active stage in the `processstageid` column that can be used to find the active stage, and then move to the previous or next stage. To do so, you first need to find the active path of a business process flow instance and the stages available in the process flow instance using the `RetrieveActivePath` message (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> or <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
  Once you have the active stage and the active path information for a business process flow instance, you can use the information to move to a previous or next stage in the active path. Forward navigation of stages must be done in sequence, that is, you should only move forward to the next stage in the active path.   
   
