@@ -26,7 +26,7 @@ search.audienceType:
 
 
 > [!TIP]
-> If you want to have your flows start automatically after you import a solution, use the Common Data Service (Current Environment) connector in your flow when you create it.
+> If you want to have your flows start automatically after you import a solution, use the Microsoft Dataverse connector in your flow when you create it.
 
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
 

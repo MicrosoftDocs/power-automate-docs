@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Build an approval loop by using Power Automate and Common Data Service
+# Build an approval loop by using Power Automate and Dataverse
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
@@ -134,9 +134,9 @@ By following the steps in this section, you'll build:
 1. Click or tap **New step**, and then click or tap **Add an action**.
    
     ![Add an action](./media/common-data-model-approve/add-action.png)
-2. In the box that contains **Search for more actions**, type or paste **Common Data Service**, and then click or tap **Common Data Service - Create object**.
+2. In the box that contains **Search for more actions**, type or paste **Dataverse**, and then click or tap **Dataverse - Create object**.
    
-    ![Create an object in Common Data Service](./media/common-data-model-approve/cdm-create-object.png)
+    ![Create an object in Dataverse](./media/common-data-model-approve/cdm-create-object.png)
 3. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
    
     ![Choose the entity](./media/common-data-model-approve/choose-entity-flow.png)
@@ -178,7 +178,7 @@ By following the steps in this section, you'll build:
 6. Near the bottom of the **Do until** action, click or tap **Add an action**.
    
     ![Add action inside a do until](./media/common-data-model-approve/add-action-in-dountil.png)
-7. In the box that contains **Search for more actions**, type **Common**, and then click or tap **Common Data Service - Get object**.
+7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Common Data Service - Get object**.
    
     ![Get an object](./media/common-data-model-approve/get-object.png)
 8. Under **The namespace**, click or tap your database.
