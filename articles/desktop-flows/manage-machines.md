@@ -331,7 +331,7 @@ You can also change the connections that are used by cloud flow in its details p
 
 |Name|Limit|
 |---|---| 
-|Maximum number of machines in a group |50| 
+|Maximum number of machines in a group |20| 
 |Maximum amount of time a desktop flow can run |24 hours| 
 |Maximum amount of time a desktop flow can be queued |3 hours| 
 |Maximum amount of time the next-to-run desktop flow in the run queue will wait for an available machine |15 minutes| 
