@@ -14,7 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Register and manage machines
+# Register and manage machines (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate enables you to trigger desktop flows from cloud flows using events, schedules, and buttons. 
 

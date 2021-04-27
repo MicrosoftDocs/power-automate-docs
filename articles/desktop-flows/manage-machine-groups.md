@@ -14,7 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Manage machine groups
+# Manage machine groups (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate allows you to create groups of machines that can be accessed all together by a name reference. This feature is essential for organizations that want to trigger desktop flows to multiple machines simultaneously.
 
