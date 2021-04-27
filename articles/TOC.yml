@@ -335,7 +335,7 @@
   - name: Manage machines and machine groups (preview)
     items:
     - name: Register machines (preview)
-      href: ./desktop-flows/manage-machines.md
+      href: ./desktop-flows/register-machines.md
     - name: Manage machines (preview)
       href: ./desktop-flows/manage-machines-portal.md
     - name: Manage machine groups (preview)
