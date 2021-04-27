@@ -333,7 +333,7 @@
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
   - name: Manage machines (preview)
-    href: ./desktop-flows/manage-machines.md
+    href: ./desktop-flows/manage-machines-portal.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows

@@ -29,7 +29,6 @@ Machines are the physical or virtual devices that are used to automate your desk
 
 Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate Desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
 
-## < comment >TODO: To update with the PAD minimum version for machine management.
 
 > [!IMPORTANT]
 > Direct connectivity is only available for versions of Power Automate Desktop 2.8.0.0 or newer. If you are using an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
