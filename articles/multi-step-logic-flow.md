@@ -1,6 +1,6 @@
 ---
 title: Add an advanced option and multiple actions | Microsoft Docs
-description: Expand a flow to include an advanced option, such as setting email to high priority, and add another action for the same event.
+description: Expand a cloud flow to include an advanced option, such as setting email to high priority, and add another action for the same event.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,14 +21,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Add multiple actions and advanced options to a flow
+# Add multiple actions and advanced options to a cloud flow
 
-Customize a flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
+Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
-* [Create a flow](get-started-logic-flow.md)
+* [Create a cloud flow](get-started-logic-flow.md)
 
 ## Add another action
 In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
@@ -78,7 +78,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 ## Copy and paste actions
 
-If you want to duplicate actions while designing a flow, you can copy and paste them. For example, if you are building a condition and want similar actions in the **If yes** side and the **If no** side, instead of creating both actions from scratch you can build the first action in one side and then copy it to the other side.
+If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you are building a condition and want similar actions in the **If yes** side and the **If no** side, instead of creating both actions from scratch you can build the first action in one side and then copy it to the other side.
 
 
 ### To copy an action
@@ -90,7 +90,7 @@ If you want to duplicate actions while designing a flow, you can copy and paste 
 1. Select the item you want to paste.
 
 ## Add advanced options
-Start with a flow that has a **Send an email** action.
+Start with a cloud flow that has a **Send an email** action.
 
 1. Select **Show advanced options**, which is located at the bottom of the **Send an email** card.
    
@@ -102,3 +102,6 @@ Start with a flow that has a **Send an email** action.
    
      This step saves your changes.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -3,10 +3,10 @@ title: Call Child Flows
 description: Flows can now call other flows and pass parameters to them.
 author: MSFTMAN
 ms.reviewer: deonhe
-ms.date: 07/21/2020
+ms.date: 04/21/2021
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.topic: article
-ms.service: business-applications
+ms.service: power-automate
 ms.author: deonhe
 dynamics365pdf: True
 ---
@@ -14,9 +14,9 @@ dynamics365pdf: True
 
 Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a _single_ flow, it can be difficult to navigate and maintain that flow. 
 
-You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a flow, or even across multiple flows.
+You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
 
-Let's look at an example where you have a child flow that you want to create or update a contact in Common Data Service based on that contact's name.
+Let's look at an example where you have a child flow that you want to create or update a contact in Dataverse based on that contact's name.
 
 You will need a solution with two flows:
 - A *child* flow. This is the flow that is nested inside the *parent* flow and contains the smaller tasks you want to run.
@@ -58,7 +58,7 @@ You will need a solution with two flows:
 
    You need to then test your child flow. Because you can manually trigger this flow, it's very easy to test right inside of the designer. Try it out with a couple different inputs, and verify that the outputs are what you expect.
 
-1. Lastly, if your flow uses anything other than built-in actions or the Common Data Service (current environment) connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
+1. Lastly, if your flow uses anything other than built-in actions or the Microsoft Dataverse connector, you will need to update the flow to use the connections **embedded** in the flow. To do this, select the back button to get to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
 
 1. In the pane that appears, for each connection used in the flow, you will need to select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
 
@@ -83,10 +83,19 @@ You will need a solution with two flows:
 
    ![Inputs](./media/call-child-flow/view-child-flow-input.png "Inputs")
 
-   When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Common Data Service or 30 days for all other flows).
+   When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Dataverse or 30 days for all other flows).
 
 1. Save and test this flow. 
 
    >[!TIP]
    >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs. 
    
+## Known issues
+
+We are working to address the following known issues and limitations.
+
+1. If you block the HTTP Request connector via data loss prevention (DLP), child flows are also blocked because child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so that they are treated like other cloud flows.
+
+1. You must create the parent flow and all child flows **directly** in the same solution. If you import a flow into a solution, you will get unexpected results.
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

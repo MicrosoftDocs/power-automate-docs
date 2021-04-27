@@ -8,7 +8,7 @@ author: msftman
 manager: kVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -110,3 +110,6 @@ The **create a poll** sample is an Adaptive Card input form that's designed for 
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

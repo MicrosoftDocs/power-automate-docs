@@ -8,7 +8,7 @@ author: MSFTMan
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,8 +21,7 @@ search.audienceType:
   - developer
 ---
 # Power Automate for enterprise developers, ISVs, and partners
-
-[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 As a developer, you can extend Power Automate, enabling even more powerful solutions for organizations and customers.
 
@@ -30,7 +29,7 @@ As a developer, you can extend Power Automate, enabling even more powerful solut
 
 As an enterprise developer, empower your organization to build robust tailored solutions on Power Automate:
 
-- **Build custom connectors**: Develop custom connectors to connect to your organization's data and web services through Power Automate. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Build custom connectors**: Develop custom connectors to connect to your organization's data and web services through Power Automate. [Learn more](/connectors/custom-connectors/)
 
 - **Build Azure Functions**: Craft Azure Functions to extend apps with custom server-side logic. [Learn more](/azure/azure-functions/app-service-export-api-to-powerapps-and-flow)
 
@@ -52,11 +51,11 @@ As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer
 
 ### 1. Connecting to your APIs OR Enabling customers to connect to your APIs
 
-As an ISV, you often have proprietary data that you would like customers to access through your flows. You can expose access to any of your data through a custom connector. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/)
+As an ISV, you often have proprietary data that you would like customers to access through your flows. You can expose access to any of your data through a custom connector. [Learn more](/connectors/custom-connectors/)
 
 Once created, there are two ways to make the connector available to your customers:
 - The connector can be deployed into the customer’s tenant via REST APIs or PowerShell.
-- To make the custom connector publicly available for all users, you can submit your connector for certification. [Learn more](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+- To make the custom connector publicly available for all users, you can submit your connector for certification. [Learn more](/connectors/custom-connectors/submit-certification)
 
 ### 2. Authentication 
 
@@ -83,3 +82,6 @@ We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/c
 ### 7. List on AppSource
 
 Once you have integrated Power Automate into your application, you can list it on AppSource. With AppSource you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

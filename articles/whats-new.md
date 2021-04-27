@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ This article provides resources that you can use to learn about the features tha
 
 ## Weekly releases
 
-For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/flow).
+For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate](/business-applications-release-notes/powerplatform/released-versions/flow).
 
 > [!NOTE]
 > Releases are rolled out over several days. New or updated functionality might not appear immediately.
@@ -36,5 +36,8 @@ For information about the new features, fixes, and improvements that were releas
 ## Release plans
 
 Get familiar with upcoming features and plan your rollouts by reading:
-- [2020 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave1/power-automate/planned-features)
-- [2020 release wave 2 plan](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-automate/planned-features)
+- [2020 release wave 1 plan](/power-platform-release-plan/2020wave1/power-automate/planned-features)
+- [2020 release wave 2 plan](/power-platform-release-plan/2020wave2/power-automate/planned-features)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

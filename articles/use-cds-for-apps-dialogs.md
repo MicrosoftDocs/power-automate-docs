@@ -1,11 +1,11 @@
 ---
-title: "Use Common Data Service dialogs for guided processes (Deprecated) | MicrosoftDocs"
+title: "Use Dataverse dialogs for guided processes (Deprecated) | MicrosoftDocs"
 description: "Dialogs are the synchronous or interactive processes that collect and process information by using step-by-step scripts to direct users through a process"
 ms.custom: ""
 ms.date: 10/31/2017
 ms.reviewer: ""
 ms.topic: "article"
-ms.service: flow
+ms.service: power-automate
 ms.assetid: d17f8ae2-854b-4f67-a115-5a03d4f0b8ce
 caps.latest.revision: 25
 author: "msftman"
@@ -17,18 +17,16 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use Common Data Service dialogs for guided processes (Deprecated)
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+# Use Dataverse dialogs for guided processes (Deprecated)
 
 
 [Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). You should replace dialogs with business process flows or canvas apps. More information: [Replace dialogs with business process flows or canvas apps](replace-dialogs.md) 
 
-Dialogs are the synchronous or interactive processes in Common Data Service that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring.
+Dialogs are the synchronous or interactive processes in Dataverse that collect and process information by using step-by-step scripts to direct users through a process. For example, you can create dialogs to act as a guide for your service representatives for case resolution and case escalation. Similarly, you can create dialogs for standardizing sales processes such as opportunity qualification and lead scoring.
 
 ## Differences between workflows and dialogs
 
-The following table provides information about the differences between Common Data Service workflows and dialogs.  
+The following table provides information about the differences between Dataverse workflows and dialogs.  
 
 
 | Workflows     |    Dialogs      |
@@ -40,3 +38,6 @@ The following table provides information about the differences between Common Da
   
 ### See also
 [Replace dialogs with business process flows or canvas apps](replace-dialogs.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,10 +1,9 @@
 ---
 title: "Replace dialogs with business process flows or canvas apps  | MicrosoftDocs"
-description: Replace dialogs with business process flows or canvas apps
 ms.custom: ""
 ms.date: 08/02/2018
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -25,10 +24,8 @@ search.audienceType:
 ---
 # Replace dialogs with business process flows or canvas apps
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-
-[Dialogs are deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
+[Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
 
 ## Feature capability comparison
 
@@ -45,9 +42,9 @@ This table lists the set of dialog capabilities and the equivalent capabilities 
 |Query variables    |  No     |  Yes     |
 |Conditional branching logic    |  Yes     | Yes <br/>  (navigate to any screen within app)    |
 |Reuse <br/> (launch as a child dialog)   |  No     | Yes <br/> (navigate to any screen within app, launch a different app in a new window)     |
-|Run workflows on start/end    |   Yes      |  No <br/> (use a flow instead)  |
-|Run workflows on input    | Yes    | No <br/> (use a flow instead)   |
-|Run workflows on page transition   |  Yes       | No <br/> (use a flow instead)    |
+|Run workflows on start/end    |   Yes      |  No <br/> (use a cloud flow instead)  |
+|Run workflows on input    | Yes    | No <br/> (use a cloud flow instead)   |
+|Run workflows on page transition   |  Yes       | No <br/> (use a cloud flow instead)    |
 |Start using a URL  |   No      |  Yes     |
 |Session logging    |  Yes       |  No     |
 |SDK support   |  Yes     |  Yes     |
@@ -116,7 +113,7 @@ Can I launch a canvas app as a popup from a button in the command bar?
 - Yes. To do this, simply set the target URL to that of your canvas app, obtained from the app's **Details** section as described earlier.
 
 Can workflows be called from a canvas app?
-- This is not supported. We recommend using a flow instead. More information: [Introducing button flows with user input](button-flow-with-user-input-tokens.md)
+- This is not supported. We recommend using a cloud flow instead. More information: [Introducing button flows with user input](button-flow-with-user-input-tokens.md)
 
 Can I automatically convert dialogs to business process flows or canvas apps?
 - There is no automated way to convert dialogs to business process flows or canvas apps.
@@ -127,3 +124,6 @@ Can I automatically convert dialogs to business process flows or canvas apps?
 [What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

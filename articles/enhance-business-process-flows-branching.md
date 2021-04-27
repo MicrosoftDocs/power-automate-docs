@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: 06/27/2018
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.service: flow
+ms.service: power-automate
 author: "MSFTMAN"
 ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9
@@ -19,7 +19,6 @@ search.audienceType:
 ---
 # Tutorial: Enhance business process flows with branching
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 Business process flows guide you through various stages of sales, marketing, or service processes toward completion. In simple cases, a linear business process flow is a good option. However, in more complex scenarios, you can enhance a business process flow with branching. If you have the create permissions on business process flows, you’ll be able create business process flow with multiple branches by using the `If-Else` logic. The branching condition can be formed of multiple logical expressions that use a combination of `AND` or `OR` operators. The branch selection is done automatically, in real time, based on rules defined during the process definition. For example, in selling cars, you can configure a single business process flow, which after a common qualification stage splits into two separate branches on the basis of a rule (Does the customer prefer a new car or pre-owned car, is their budget above or below $20,000, and so on. ), one branch, for selling new cars and another branch, for selling pre-owned cars. For more information about Business process flows, see [Business process flows overview](business-process-flows-overview.md).  
   
@@ -121,3 +120,6 @@ Let’s look at the example of the business process flow with two branches, for 
  [Create a business process flow](create-business-process-flow.md)   
  [Create custom business logic with processes](guide-staff-through-common-tasks-processes.md)   
  
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

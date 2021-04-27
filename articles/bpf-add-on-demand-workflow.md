@@ -1,12 +1,12 @@
 ---
-title: Add an on-demand workflow to a business process flow | Microsoft Docs
-description: A walkthrough that shows how to add an on-demand workflow to a business process flow.
+title: Add an on-demand workflow to a business process flow
+description: 
 author: MSFTMAN
 ms.author: Deonhe
 manager: kvivek
 ms.date: 07/12/2018
 ms.topic: article
-ms.service: flow
+ms.service: power-automate
 applies_to: 
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
@@ -20,8 +20,6 @@ search.audienceType:
 ---
 
 # Add an on-demand workflow to a business process flow
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 You can trigger on-demand workflows from inside a business process flow. For example, you can add an on-demand workflow to a business process flow so that an activity, such as a task or email, is created whenever a stage is completed. 
@@ -68,3 +66,6 @@ Alternatively, you can drag **Workflow** to the **Global Workflows** section, wh
 [Use Workflow processes to automate processes that don't require user interaction](workflow-processes.md) <br/>
 [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) <br/>
 [Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

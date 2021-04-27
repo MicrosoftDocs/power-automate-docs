@@ -1,14 +1,14 @@
 ---
-title: Create flows using the Power Apps app in Microsoft Teams (Preview) | Microsoft Docs
+title: Create flows using the Power Apps app in Microsoft Teams | Microsoft Docs
 description: Create flows using the Power Apps app in Teams.
 author: msftman
 manager: kvivek
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/22/2020
+ms.date: 11/16/2020
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -17,33 +17,29 @@ search.audienceType:
   - enduser
 ---
 
-# Create flows using the Power Apps app in Microsoft Teams (Preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
+# Create flows using the Power Apps app in Microsoft Teams
 
 You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. 
-You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Project Oakdale tables](/powerapps/teams/overview-data-platform#tables-in-project-oakdale) within Teams as well.
+You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams as well.
 
 > [!NOTE]
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](https://docs.microsoft.com/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
+> You need a [Power Automate license](https://flow.microsoft.com/pricing/) to access all Power Automate [connectors](/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
 
 ## Prerequisites 
 
 - The Power Apps app must be installed before you can create flows in Teams. More information: [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app)
 
-- Before you can use the Power Apps app in Teams to create a flow, a Project Oakdale environment must already exist for that team. A Project Oakdale environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
+- Before you can use the Power Apps app in Teams to create a cloud flow, a Dataverse for Teams environment must already exist for that team. A Dataverse for Teams environment is automatically provisioned when you [create your first app in Teams](/powerapps/teams/create-first-app).
 
-## Create a flow in Teams
+## Create a cloud flow in Teams
 
 1. Go to the **Build** tab in your Power Apps app, and then select **See all**.
 
 1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
  
-   ![Create a flow](..\media\overview-teams-flows\new-flow.png)
+   ![Create a cloud flow](..\media\overview-teams-flows\new-flow.png)
 
-1. If this is your first time creating a flow, you'll have to select your country/region, and then select **Get started**.
+1. If this is your first time creating a cloud flow, you'll have to select your country/region, and then select **Get started**.
 
    ![Select your location](..\media\overview-teams-flows\select-location.png)
 
@@ -68,11 +64,11 @@ To find your saved flows:
 
    ![All flows](..\media\overview-teams-flows\all-flows.png)
 
-## Customize a flow
+## Customize a cloud flow
 
 In Teams, you might have acquired flows from an installed app or you might have created them yourself. You can update or customize either of these types of flows. 
 
-1. To update a flow, select the **Build** tab, and then select **See all** to see all the apps and flows in this team.
+1. To update a cloud flow, select the **Build** tab, and then select **See all** to see all the apps and flows in this team.
 
 1. Select the flow that you want to edit, and then select **Edit**.  
 
@@ -80,7 +76,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 ## View details and run history
 
-1. To view the details and run history for a flow, select the **Build** tab, and then select **See all**.
+1. To view the details and run history for a cloud flow, select the **Build** tab, and then select **See all**.
 
 1. Select the flow for which you want to view the details, and then select **Details**.
 
@@ -88,6 +84,9 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 ## Related articles
 
-[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-app-overview)<br/>
-[What is Project Oakdale?](/powerapps/teams/overview-data-platform)<br/>
-[About the Project Oakdale environment](/power-platform/admin/about-teams-environment)
+[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
+[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
+[About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

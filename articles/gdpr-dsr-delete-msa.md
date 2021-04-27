@@ -9,12 +9,12 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2018
+ms.date: 3/29/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -57,7 +57,7 @@ The steps below describe how to self-serve delete requests for GDPR.
 
 ### List and delete flows
 
-A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by follwing these steps:
+A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by following these steps:
 
 1. Sign into the [Power Automate](https://flow.microsoft.com), and then select on **My flows**.
 
@@ -67,7 +67,7 @@ A user can list and delete their flows from [Power Automate](https://flow.micros
 
 ### Delete Connections
 
-Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by follwing these steps:
+Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by following these steps:
 
 1. Sign into [Power Automate](https://flow.microsoft.com), select the gear icon, and then select **Connections**.
 
@@ -82,7 +82,7 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
     ![Delete Event](./media/gdpr-dsr-delete-msa/confirmdelete.png)
 
 > [!NOTE]
-> If other flows use the connection, you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.
+> If other flows use the connection you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.
 >
 >
 
@@ -90,3 +90,6 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
 
 * Get started with [Power Automate](getting-started.md)
 * Learn [what's new](release-notes.md) with Power Automate
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

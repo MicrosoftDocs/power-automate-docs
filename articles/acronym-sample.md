@@ -1,6 +1,6 @@
 ---
 title: Adaptive Cards acronym form sample | Microsoft Docs
-description: Create an adaptive card that collects acronyms and stores them in Common Data Service.
+description: Create an adaptive card that collects acronyms and stores them in Dataverse.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ ms.author: deonhe
 
 # Acronyms form sample
 
-The **acronym form** sample is an Adaptive Card input form that's designed to collect acronyms and storing them in Common Data Service. These acronyms could be queried from anywhere due to this ongoing data collection.
+The **acronym form** sample is an Adaptive Card input form that's designed to collect acronyms and storing them in Dataverse. These acronyms could be queried from anywhere due to this ongoing data collection.
 
 ![Acronym logger](media/adaptive-cards/acronym-logger.png)
 
@@ -83,3 +83,5 @@ The **acronym form** sample is an Adaptive Card input form that's designed to co
 }
 
 ```
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ search.audienceType:
 
 
 > [!TIP]
-> If you want to have your flows start automatically after you import a solution, use the Common Data Service (Current Environment) connector in your flow when you create it.
+> If you want to have your flows start automatically after you import a solution, use the Microsoft Dataverse connector in your flow when you create it.
 
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
 
@@ -57,7 +57,10 @@ After you've exported your solution, you can import it into any environment that
 ## Learn more
 
 - [Create a solution](./overview-solution-flows.md)
-- [Create a flow in a solution](./create-flow-solution.md)
+- [Create a cloud flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

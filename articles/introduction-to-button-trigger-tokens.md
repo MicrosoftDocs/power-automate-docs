@@ -8,7 +8,7 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -93,3 +93,6 @@ Congratulations, you've just created a button flow that uses both the date and f
 ## Next steps
 * [Share button flows](share-buttons.md)
 * [Learn about button flows](introduction-to-button-flows.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -31,6 +31,9 @@ Here’s a summary of the Power Automate resources that contain personal data fo
 |-----|-----|
 |Run history|Provides the history of each flow’s execution for the past 28 days. This data includes start time, end time, status, and all input/output information for each flow run. Learn more about [flow run history](https://flow.microsoft.com/blog/download-history-recurrence/).|
 |Activity feed| Provides a recap of each flow’s activities, including run status, failures, and notifications.|
-|Flows|The workflow logic for a [flow](https://docs.microsoft.com/flow/get-started-logic-flow).|
+|Flows|The workflow logic for a [flow](/flow/get-started-logic-flow).|
 |Connections|Used by connectors and allow connectivity to APIs, systems, databases, and more. Learn more about [connections](add-manage-connections.md).|
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

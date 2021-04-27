@@ -1,5 +1,5 @@
 ---
-title: Trigger a flow from any message in Microsoft Teams | Microsoft Docs
+title: Trigger a cloud flow from any message in Microsoft Teams | Microsoft Docs
 description: Learn how to create a create and trigger an instant flow from any message in Microsoft Teams
 services: ''
 suite: flow
@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -17,11 +17,11 @@ ms.date: 07/16/2020
 ms.author: hamenon
 ---
 
-# Trigger a flow from any message in Microsoft Teams
+# Trigger a cloud flow from any message in Microsoft Teams
 
 You can use messages to trigger processes in Teams. For example, you might use a Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics 365. 
 
-Use the **For a selected message** trigger in the Teams connector to trigger a flow directly from within Teams.
+Use the **For a selected message** trigger in the Teams connector to trigger a cloud flow directly from within Teams.
 
 ## Create the flow
 
@@ -62,7 +62,7 @@ Several message elements are available as a trigger output for use within the fl
 
 ![For selected message outputs](media/trigger-flow-teams-message/dynamic-outputs.png)
 
-For more information, go to the [full list of trigger outputs](https://docs.microsoft.com/connectors/teams/).
+For more information, go to the [full list of trigger outputs](/connectors/teams/).
 
 ## Trigger the flow
 
@@ -83,10 +83,13 @@ Any flow that uses the **For a selected message** trigger shows up as a message 
 
 Be sure to include a form of a confirmation to the user after the flow is completed. We recommend using **Post a message as the flow bot to a user** or **Post a message as the flow bot to a channel** to notify the user in Teams when a triggered flow has been completed.
 
-Here's an example of a flow that creates a work item in Azure DevOps and then posts a confirmation to the originating user.<!--note from editor: This image needs more detailed alt text to describe what's going on. It probably will take more than 150 characters, so this might be a good place to use the new image extension.-->
+Here's an example of a cloud flow that creates a work item in Azure DevOps and then posts a confirmation to the originating user.<!--note from editor: This image needs more detailed alt text to describe what's going on. It probably will take more than 150 characters, so this might be a good place to use the new image extension.-->
 
 ![Create a task flow](media/trigger-flow-teams-message/complete-flow.png)
 
 ## Known issues and limitations
 
 You must create these flows within the default environment to ensure they get listed in Teams.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

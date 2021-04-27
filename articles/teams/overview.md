@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -42,3 +42,6 @@ For detailed licensing information about Project Oakdale, see [licensing and res
 
 [Power Apps and Teams](/powerapps/teams/overview)<br/>
 [Power Virtual Agents and Teams]( https://aka.ms/pva-teams-docs)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

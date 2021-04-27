@@ -8,7 +8,7 @@ author: msftman
 manager: kVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -65,3 +65,6 @@ The **Image Share Form** sample is an Adaptive Card designed for sharing photos 
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

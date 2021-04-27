@@ -1,6 +1,6 @@
 ---
-title: Learn how to automate and run repetitive tasks with instant flows | Microsoft Docs
-description: Introduction to instant flows.
+title: Run repetitive tasks with instant flows | Microsoft Docs
+description: Learn how to manually trigger a flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -111,7 +111,7 @@ Now that you've created a instant flow, it's time to run it. Since you can only 
 3. Finally, the page updates, indicating that the instant flow has completed:  
    ![Completed flow image](./media/introduction-to-button-flows/trigger-button-3.png)   
 
-That's all there is to running a flow. 
+That's all there is to running a cloud flow. 
 
 You should now receive the push notification, indicating that the email has been sent.  
 
@@ -134,10 +134,10 @@ On the **My flows** tab of the Flow app:
 2. You can tap any of these options, based on what you'd like to accomplish:    
    ![Options to manage flows](./media/introduction-to-button-flows/manage-flow-1.png)  
 
-   Tap **Delete flow** to delete a flow.  
+   Tap **Delete flow** to delete a cloud flow.  
 
       >[!WARNING]
-      >All run history is deleted when you delete a flow.
+      >All run history is deleted when you delete a cloud flow.
 
       ![Delete flow warning image](./media/introduction-to-button-flows/manage-flow-2.png)   
 
@@ -147,7 +147,7 @@ On the **My flows** tab of the Flow app:
    Tap **Run history** to see the results of all runs of a particular instant flow:    
    ![View run history](./media/introduction-to-button-flows/manage-flow-4.png)  
 
-   If you disable a flow, it will no longer be available on the **Buttons** tab:    
+   If you disable a cloud flow, it will no longer be available on the **Buttons** tab:    
    ![Disabled flows are not on the buttons tab](./media/introduction-to-button-flows/manage-flow-5.png)  
 
 ## Next steps
@@ -155,3 +155,6 @@ On the **My flows** tab of the Flow app:
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send real-time data when your instant flows are run.
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

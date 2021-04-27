@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create a flow in a solution
+# Create a cloud flow in a solution
 
 
 Flows you create in a solution are known as *solution-aware* flows. Follow these steps to create a solution-aware flow.
@@ -73,3 +73,6 @@ You need to have at least one solution before you can create a solution-aware fl
 * [Import a solution](./import-flow-solution.md)
 * [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 * [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

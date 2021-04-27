@@ -8,7 +8,7 @@ author: msftman
 manager: kVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -23,15 +23,13 @@ search.audienceType:
 ---
 # Use custom controls in business process flows
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
-
 Business process flows provide a guided way to get work done in the form of stages and steps. Stages tell you where you are in the process, while steps are action items that lead to a desired outcome. Steps in a business process are bound to fields in Common Data Service. In addition to the default visualizations of the field type (text boxes, dropdowns, and so on), you can use custom controls to add rich visualizations (such as sliders, radial knobs, the LinkedIn control, and more) to business process flows steps and deliver engaging experiences to those who use your business process.
 
 ## Adding custom controls to a business process
 
 Let’s say that you’d like to add a radial knob for the **Estimated Budget** step and a flip switch for the **Identify Decision Maker** step of the Lead to Opportunity Sales process. 
 
-![A screenshot that displays a sample lead](./media/custom-controls/overview.png)
+![Overview](./media/custom-controls/overview.png)
 
 Here are the steps you must follow to add custom controls to a business process flow:
 
@@ -47,3 +45,6 @@ Follow these steps for a [detailed walkthrough adding custom controls](https://p
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

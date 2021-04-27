@@ -8,7 +8,7 @@ author: puyush6889
 manager: kapolepa
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -24,11 +24,11 @@ search.audienceType:
 
 # Turn flows on or off
 
-At times, you might want to turn off a flow to prevent it from running. Follow these steps to turn flows off or on.
+At times, you might want to turn off a cloud flow to prevent it from running. Follow these steps to turn flows off or on.
 
 ## Turn flows off
 
-After you create a flow, it is turned on by default. Follow these steps to turn off a flow.
+After you create a cloud flow, it is turned on by default. Follow these steps to turn off a cloud flow.
 
 1. On the **My flows page**,  select the ellipsis (...) for the flow you want to turn off.
     
@@ -43,7 +43,7 @@ After you create a flow, it is turned on by default. Follow these steps to turn 
 
 ## Turn flows on
 
-If you've turned a flow off, but want to turn it back on so that it will run again, follow these steps: 
+If you've turned a cloud flow off, but want to turn it back on so that it will run again, follow these steps: 
 
 1. On the **My flows page**, select the flow that you want to modify.
 
@@ -53,3 +53,6 @@ If you've turned a flow off, but want to turn it back on so that it will run aga
 
     ![New flow status after being disabled](./media/disable-flow/flow-new-status.png)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

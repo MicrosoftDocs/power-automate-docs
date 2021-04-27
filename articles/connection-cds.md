@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Common Data Service| Microsoft Docs
-description: Create workflows by using a Common Data Service connection and Power Automate
+title: Create an automated flow with Microsoft Dataverse| Microsoft Docs
+description: Create workflows by using a Microsoft Dataverse connection and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: MSFTMAN
 manager: KVIVEK
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -22,15 +22,17 @@ search.audienceType:
   - enduser
 ---
 
-# Create an automated flow by using Common Data Service
+# Create an automated flow by using Microsoft Dataverse
+
+[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Common Data Service. Use the recommended [Common Data Service (current environment) connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
+>There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within Common Data Service. Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+With the Common Data Service connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a flow from Common Data Service
+## Initiate a cloud flow from Dataverse
 
 You can use any of the following triggers to initiate your flow:
 
@@ -72,11 +74,11 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](/power-platform/admin/database-security) about environment security.
 
-## Write data into Common Data Service
+## Write data into Dataverse
 
-Use any of the following actions to write data into Common Data Service:
+Use any of the following actions to write data into Dataverse:
 
 - Create a new record
 - Update a record
@@ -108,3 +110,6 @@ If you have a trigger registered on the update of a record, the flow runs for ev
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

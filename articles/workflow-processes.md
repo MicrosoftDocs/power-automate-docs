@@ -1,10 +1,9 @@
 ---
-title: "Overview of classic Common Data Service workflows | MicrosoftDocs"
-description: Overview of classic Common Data Service workflows
+title: "Overview of classic Dataverse background workflows | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "matp"
-ms.service: flow
+ms.service: power-automate
 ms.topic: "article"
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5
 author: msftman
@@ -17,14 +16,12 @@ search.audienceType:
   - enduser
 ---
 
-# Classic Common Data Service background workflows 
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+# Classic Dataverse background workflows 
 
 Workflows automate business processes without a user interface. People usually use workflow processes to initiate automation that doesn’t require any user interaction.
 
 There are two types of workflows:
-1. Real-time workflows. See the [Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/overview-realtime-workflows) documentation for more details about real-time workflows.
+1. Real-time workflows. See the [Power Apps](/powerapps/maker/common-data-service/overview-realtime-workflows) documentation for more details about real-time workflows.
 1. Background workflows. 
 
 
@@ -45,3 +42,6 @@ See other topics here in the Power Automate documentation to learn more about ba
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

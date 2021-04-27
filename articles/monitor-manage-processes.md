@@ -1,10 +1,9 @@
 ---
 title: "Monitor and manage background workflow processes with Power Apps | MicrosoftDocs"
-description: "Get a walkthrough of how to monitor and manage background workflow processes with Power Apps."
 ms.custom: "To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
 ms.date: 07/27/2020
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -25,7 +24,6 @@ search.audienceType:
 ---
 # Monitor and manage background workflow processes
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems.  
   
@@ -98,3 +96,6 @@ The synchronous bulk delete will only delete AsyncOperation records in the compl
 ## Next step   
 [Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -192,3 +192,6 @@ This card is comprised of three sections:
 
 }
 ```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

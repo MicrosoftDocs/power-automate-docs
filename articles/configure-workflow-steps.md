@@ -4,7 +4,7 @@ description: "Learn how to configure background workflow steps"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -21,7 +21,6 @@ search.audienceType:
 ---
 # Configure background workflow stages and steps
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 When you design workflows you have the option to contain the logic you want to perform in **stages** and **steps**.  
   
@@ -87,3 +86,6 @@ The following screenshot contains an example of the background workflow process 
 [Workflow processes overview](workflow-processes.md) <br />
 [Monitor and manage background workflow processes](monitor-manage-processes.md)   <br />
 [Best practices for background workflow processes](best-practices-workflow-processes.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

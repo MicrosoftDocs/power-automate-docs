@@ -1,19 +1,11 @@
 ---
 title: Overview of solution-aware flows | Microsoft Docs
 description: Learn the benefits of creating flows in solutions.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
-ms.service: flow
-ms.devlang: na
+ms.service: power-automate
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/09/2020
+ms.date: 01/29/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -36,7 +28,7 @@ Flows created in a solution are known as *solution-aware* flows. You can add mul
 
 You must have the following components to create solutions, and solution-aware flows:
 
-- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Dataverse](/powerapps/maker/data-platform/data-platform-intro)
 - An environment with version 9.1.0.267 or later.
 
   To check your version, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Environments**, and then select the environment in which you are interested. The **Details** tab displays all configuration information for the environment that you selected.
@@ -63,12 +55,17 @@ Follow these steps to create a solution:
 
    ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
 
+## Known limitations
 
+There are certain limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
 ## Learn more
 
-- [Create a flow in a solution](./create-flow-solution.md)
+- [Create a cloud flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

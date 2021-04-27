@@ -8,7 +8,7 @@ author: MSFTMan
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -206,3 +206,6 @@ Note: The final approver gets the vacation request only after the request has be
 
 [Single approver modern approvals walkthrough](modern-approvals.md)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

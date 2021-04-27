@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting a flow | Microsoft Docs
+title: Troubleshooting a cloud flow | Microsoft Docs
 description: Resolve some of the most common reasons why flows fail
 services: ''
 suite: flow
@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,12 +21,12 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Troubleshooting a flow
+# Troubleshooting a cloud flow
 
 
 ## Repair tips in email
 
-Repair tips are sent to flow owners via email whenever a flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
+Repair tips are sent to flow owners via email whenever a cloud flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a cloud flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
 
 ![Repair tips](media/fix-flow-failures/repair-tips-email-2.png)
 
@@ -105,3 +105,6 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 
 If you need help with an issue, help is available from our [community](https://go.microsoft.com/fwlink/?LinkID=787467) and Microsoft. 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

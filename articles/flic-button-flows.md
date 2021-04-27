@@ -8,7 +8,7 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -49,8 +49,8 @@ This screenshot shows a sample of what your Flic configuration process might be 
 
 After you've linked a Flic event to Power Automate, you can then select that Flic as a trigger for your flows. You select triggers later in this walkthrough.
 
-## Create a flow that's triggered by a Flic
-In this walkthrough, we use a Flic to run a flow that records the time a consultant spends at each client. The consultant presses the Flic once upon arrival, and then presses it again, just before departure from the client. Each press of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
+## Create a cloud flow that's triggered by a Flic
+In this walkthrough, we use a Flic to run a cloud flow that records the time a consultant spends at each client. The consultant presses the Flic once upon arrival, and then presses it again, just before departure from the client. Each press of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
 Note: Be sure you've used the Flic mobile app to pair, and configure at least one **click** action to trigger Power Automate. In this screenshot, I've configured the **click** action to trigger Power Automate. Later in this walkthrough we configure our flow to trigger when the Flic is pressed once (clicked).
 
@@ -143,3 +143,6 @@ For extra credit, consider extending the flow to automatically record your locat
 * Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -14,7 +14,7 @@ Select the **Save Office 365 email attachments to OneDrive for Business** templa
 
 ![Office 365 email](./media/learning-create-a-flow/office-365-email.png)
 
-## Create and administer a flow
+## Create and administer a cloud flow
 This is one of our **one click** templates, where you only answer relevant questions **necessary to build the flow**.
 
 On the template graphic, there is a **description** of what the template **does and needs** to succeed.

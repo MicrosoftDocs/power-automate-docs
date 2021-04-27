@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,9 +21,7 @@ search.app:
 search.audienceType: 
   - admin
 ---
-# Power Automate in your organization Q&A
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+# Power Automate sign-up Q&A in your organization
 
 This topic describes how users in your organization can use Power Automate, and how you can control the Power Automate service.
 
@@ -49,7 +47,7 @@ Power Automate is a fully public cloud service, and everyone in the world can si
 
 However, if a person signs up for Power Automate, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft, which is like many other cloud services from Microsoft such as Bing, OneDrive, or Outlook.com. An individual's use of Power Automate does not in any way imply that the service is provided by your organization.
 
-Finally, if your company wishes to restrict the use of organization-only data inside of Power Automate, that is possible through [Data loss prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention).
+Finally, if your company wishes to restrict the use of organization-only data inside of Power Automate, that is possible through [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ### How can people gain access to the paid features of Power Automate?
 
@@ -83,7 +81,7 @@ If a user was assigned a Power Automate license,  you can take the following ste
 1. On the user details pane, select the **Licenses and Apps** tab, and then uncheck the license for Power Automate. 
 1. At the bottom of the pane, select **Save changes**.
 
-Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
+Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
 Removing of the Power Automate license or service for a user in your organization will result in the removal of the Power Automate icon from the following locations for that user:
 
@@ -112,7 +110,13 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 ### How does an individual find out what plan they are on?
 
-Anyone can see the plan they have by visiting the Power Automate pricing page at [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). The plan or trial they are currently on will be shown there.
+1. Sign into [Power Automate](https://powerautomate.com).
+1. Select your profile picture in the top right corner of the screen.
+1. Select **View account**.
+1. Select the **Subscriptions** tile.
+1. Search for **Power Automate** under the **Licenses** section.
+
+   You will see the license that you have for Power Automate.
 
 ### Will Power Automate sign up impact the identities in my organization?
 
@@ -150,3 +154,26 @@ If you want all users to be in the same tenant regardless of their email address
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
   ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+
+  
+
+## Power Automate RPA license
+
+### How can I apply unattended RPA licenses to my flow
+Follow these steps to apply unattended RPA licenses to your flows.
+
+1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+
+   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+
+1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
+
+   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+
+1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
+
+> [!NOTE]
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
+> Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+ 
+[!INCLUDE[footer-include](includes/footer-banner.md)]

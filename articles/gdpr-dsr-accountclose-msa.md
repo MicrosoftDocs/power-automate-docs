@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -62,3 +62,6 @@ These steps describe how to self-serve Account Close requests for GDPR.
 
 * Get started with [Power Automate](getting-started.md)
 * Learn [what's new](release-notes.md) with Power Automate
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

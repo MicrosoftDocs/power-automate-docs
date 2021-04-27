@@ -8,7 +8,7 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Approve requests on your mobile device by using Power Automate
 
-If a flow identifies you as an approver and you've installed the mobile app for Power Automate, you receive a push notification whenever your approval is requested.
+If a cloud flow identifies you as an approver and you've installed the mobile app for Power Automate, you receive a push notification whenever your approval is requested.
 
 This article walks you through a few common scenarios that you’re likely to encounter while you manage approval requests in the mobile app for Power Automate.
 
@@ -78,3 +78,6 @@ Follow the [steps to approve a request](mobile-approvals.md#approve-requests-and
 ## Learn more
 [Create modern approval flows](modern-approvals.md).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

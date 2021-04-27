@@ -5,7 +5,7 @@ In this course, you'll learn about Power Automate and its concepts, see how to *
 If you're a beginner with Power Automate, this course will get you going. If you already have some experience, this course will tie concepts together and fill in the gaps. This course is a work in progress, so **please let us know how we're doing** and what other topics you want to see in this course.
 
 ## What is Power Automate?
-Power Automate is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a flow that adds a lead to **Dynamics 365** and a record in **MailChimp** whenever someone with more than 100 followers tweets about your company.
+Power Automate is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a cloud flow that adds a lead to **Dynamics 365** and a record in **MailChimp** whenever someone with more than 100 followers tweets about your company.
 
 ![Flow conceptual sketch](./media/learning-introduce-flow/conceptual.png)
 
@@ -34,7 +34,7 @@ You can also **use Power Automate to copy files**. For example, you can ensure t
 
 ![List of same files in SharePoint](./media/learning-introduce-flow/sharepoint-files.png) 
 
-You can **monitor what people are saying** about your business by creating a flow that runs whenever **someone sends a tweet** with a certain hashtag. The flow could put details about that tweet into a SQL Server database, a SharePoint list, or even an Excel file hosted on OneDrive--whichever service works for you. With the data that you collect, you can create actions to connect it to Power BI, spot trends, and ask questions about the data.
+You can **monitor what people are saying** about your business by creating a cloud flow that runs whenever **someone sends a tweet** with a certain hashtag. The flow could put details about that tweet into a SQL Server database, a SharePoint list, or even an Excel file hosted on OneDrive--whichever service works for you. With the data that you collect, you can create actions to connect it to Power BI, spot trends, and ask questions about the data.
 
 ![List of tweets in Excel](./media/learning-introduce-flow/tweets-to-excel.png)
 
@@ -48,17 +48,17 @@ For more ideas, **browse our list of templates**, which help you build flows in 
 
 ![List of templates](./media/learning-introduce-flow/templates-you-might-use.png)
 
-Got an idea for a flow that you don't see in the list? Create your own from scratch and, if you want, share it with the community!
+Got an idea for a cloud flow that you don't see in the list? Create your own from scratch and, if you want, share it with the community!
 
-## Where can I create and administer a flow?
-You can create a flow and perform administrative tasks **in a browser** or **on your phone** - if you download the mobile app for Power Automate.
+## Where can I create and administer a cloud flow?
+You can create a cloud flow and perform administrative tasks **in a browser** or **on your phone** - if you download the mobile app for Power Automate.
 
 ![Screen shot of mobile app](./media/learning-introduce-flow/screen-mobile-app.png)  
 
 You can perform these tasks, among others:
 
 * Turn flows on or off from wherever you are.
-* See when a flow has failed.
+* See when a cloud flow has failed.
 * Review detailed run-history reports.
 * View and filter runs by notification type.
 
@@ -92,5 +92,5 @@ On the **Templates** page, you can have a look at some of the most popular templ
 ![Template landing page](./media/learning-introduce-flow/template-page.png)
 
 ## Next lesson
-Now that you've gotten a taste of what Power Automate is and what it can do, let's take a look at what makes a flow.
+Now that you've gotten a taste of what Power Automate is and what it can do, let's take a look at what makes a cloud flow.
 

@@ -4,7 +4,7 @@ description: Provides information about Power Automate US Government service des
 services: ''
 suite: flow
 author: msftman
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.date: 10/08/2020
@@ -18,10 +18,8 @@ search.audienceType:
 
 # Power Automate US Government
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](https://docs.microsoft.com/flow/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC) or Power Automate Government Community Cloud – High (GCC High).
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](/flow/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC) or Power Automate Government Community Cloud – High (GCC High).
 
 The Power Automate US Government Service Description serves as an overlay to the general Power Automate Service Description. It defines the unique commitments and differences compared to the general Power Automate offerings that have been available to our customers since October 2016.
 
@@ -68,7 +66,7 @@ Power Automate US Government is available through the Volume Licensing and Cloud
 
 Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software that are provided to Microsoft by, or on behalf of, customers through the use of an Online Service.
 
-Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Dataverse](/powerapps/maker/common-data-service/data-platform-intro)
 entities (for example, contact information). Content is generally considered
 confidential information, and in normal service operations, is not sent through the Internet without encryption.
 
@@ -133,26 +131,24 @@ If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set
 
 ## Power Automate US Government and third-party services
 
-Power Automate US Government provides the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Automate US Government infrastructure and therefore are not covered by the Power Automate US Government compliance and data protection commitments.
+Power Automate US Government provides the ability to integrate third-party applications into the service through [Connectors](/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Automate US Government infrastructure and therefore are not covered by the Power Automate US Government compliance and data protection commitments.
 
 > [!TIP]
 > Review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
-[Power Apps and Power Automate Governance Considerations](https://docs.microsoft.com/power-platform/admin/governance-considerations) can help your organization bring awareness about the capabilities available across several related themes, such as architecture, security, alert and action, and monitoring.
+[Power Apps and Power Automate Governance Considerations](/power-platform/admin/governance-considerations) can help your organization bring awareness about the capabilities available across several related themes, such as architecture, security, alert and action, and monitoring.
 
-## Configure mobile client
+## Configure mobile clients
 
-Here are the steps that you must take to sign in with the Power Automate mobile application (iOS devices only):
+Here are the steps that you must take to sign in with the Power Automate mobile client.  Currently, only the iOS version of the mobile client supports connecting to GCC environments.
 
 1. On the sign-in page, select the gear icon in the lower-right corner.
-1. Select **GCC**.
+1. Select **Region settings**.
+1. Select GCC: US Government GCC
 1. Select OK.
-1. On the sign-in page, select **Get Started**.
+1. On the sign-in page, select **Sign in**.
 
-The mobile app will now use the US Government Cloud (GCC).
-
->[!NOTE]
->The Power Automate mobile app is not available for US Government GCC High customers.  
+The mobile application will now use the US Government Cloud.
 
 ## Power Automate US Government and Azure Services
 
@@ -198,7 +194,7 @@ For those customers that implement network restrictions, please ensure access to
 * .azure.net
 * .crm9.dynamics.com
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
 ### GCC High Customers:
 * .microsoft.us
@@ -210,7 +206,7 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 * .azure.net
 * .crm.microsoftdynamics.us
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Common Data Service instances that users and administrators may create within your Tenant. 
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
 
 ## Connectivity between Power Automate US Government and Public Azure Cloud services
@@ -230,7 +226,7 @@ focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also n
 
 ## On-premises Data Gateway configuration
 
-Install an [On-Premises Data Gateway](https://docs.microsoft.com/flow/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
+Install an [On-Premises Data Gateway](/flow/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
 If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization executed to enable that will also enable on-premises connectivity for Power Automate. However, if you are unable to connect to your tenant, then you may need to go through a “whitelisting” process, which enables this capability for your tenant. Should this occur, you can open a support ticket to address your needs. The support team follows an established process to address your request.
 
@@ -238,24 +234,27 @@ If your organization (tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-- [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
+- [AI Builder](/ai-builder/) is not yet available for GCC and GCC High tenants.
 
 - [Approvals](./modern-approvals.md) are available for GCC and GCC High tenants, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
   * There is no markdown support for approval email. 
 
-- [Submitting Templates](https://docs.microsoft.com/flow/publish-a-template)
+- [Submitting Templates](/flow/publish-a-template)
 
-- [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request.
+- [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request.
 
-- [Power BI](https://docs.microsoft.com/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI at this time.
+- [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI at this time.
 
-- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](https://docs.microsoft.com/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+- [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 
 ### See also
 
-- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview).
+- [UI flows](./desktop-flows/overview.md).
 
-- [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government).
+- [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
-- [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government).
+- [Power Apps US Government](/power-platform/admin/powerapps-us-government).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

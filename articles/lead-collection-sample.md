@@ -8,7 +8,7 @@ author: msftman
 manager: kVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ search.audienceType:
 
 The **lead collection** sample is an Adaptive Card input form designed for collecting leads from anyone that may come into contact with individuals interested in a set of products. Feel free to change the choices for the products, remembering that each choice can have display text, as well as an internal value which will be output after someone submits the card (they can also be the same as we show in the sample code block).
 
-![](media/adaptive-cards/lead-notification.png)
+![Lead notification](media/adaptive-cards/lead-notification.png)
 
 *Inputs/Outputs and notes:*
 
@@ -163,3 +163,6 @@ The **lead collection** sample is an Adaptive Card input form designed for colle
 ```
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

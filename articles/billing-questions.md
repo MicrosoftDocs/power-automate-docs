@@ -5,15 +5,15 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: aftowen
+manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 01/04/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -27,7 +27,7 @@ search.audienceType:
 This article answers frequently asked questions regarding billing and metering in Power Automate.
 
 >[!NOTE]
-> Power Apps and Power Automate started to use a [new licensing model](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019. 
+> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019. 
 
 ## Where can I find out what pricing plans are available?
 
@@ -39,13 +39,15 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
-In the top navigation menu, select **Learn** > **Pricing**, and then select the plan to which you want to switch.
+1. Sign into [Power Automate](https://powerautomate.com).
+1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
 
-![Learn > Pricing](./media/billing-questions/learn-pricing.png)
+![Help > Pricing](./media/billing-questions/help-pricing.png)
 
 ## How do I know how much I've used?
 
-If you're on a free plan or a trial plan, click or tap the gear icon in the top navigation bar to show your current usage against your plan. 
+1. If you're on a free plan or a trial plan, sign into [Power Automate](https://powerautomate.com).
+1. Select the gear icon in the top right of the screen.
 
 ![Settings button](./media/billing-questions/settings.png)
 
@@ -57,15 +59,16 @@ Power Automate throttles your flow runs.
 
 ## Where can I find more information regarding the usage limits?
 
-On the [pricing page](https://flow.microsoft.com/pricing/), see the **FAQ** section.
+- On the [pricing page](https://flow.microsoft.com/pricing/), see the **FAQ** section.
+- The [limits and config page](limits-and-config.md).
 
 ## What happens if I try to execute runs too frequently?
 
-Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes have elapsed.
+Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a cloud flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes have elapsed.
 
 ## What counts as a run?
 
-Whenever a flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. Checks for new data don't count as runs.
+Whenever a cloud flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. Checks for new data don't count as runs.
 
 ## Are there differences between Microsoft Accounts and work or school accounts for billing?
 
@@ -77,13 +80,16 @@ To upgrade, use a work or school account, or create an [Office 365 trial account
 
 ## Why did I run out of runs when my flow only ran a few times?
 
-Certain flows may run more frequently than you expect. For example, you might create a flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. This action counts as a run.
+Certain flows may run more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. This action counts as a run.
 
 You can work around this issue by putting all the filtering you need into the trigger. In the push notification example, expand the **Advanced Options** menu, and then provide your manager's email address in the **From** field.
 
 ## Other limits and caveats
 
 * Each account may have as many as:
-  * 15 Custom Connectors.
+  * 15 custom connectors.
   * 20 connections per API and 100 connections total.
 * Certain external connectors, such as Twitter, implement connection throttling to control quality of service. Your flows fail when throttling is in effect. If your flows are failing, review the details of the run that failed in the flow's run history.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

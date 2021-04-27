@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ ms.author: deonhe
 
 The **daily weather report** sample is an Adaptive Card designed to be used with MSN weather to post a daily weather update to a Teams channel.
 
-![](media/adaptive-cards/weather.png)
+![Sample weather](media/adaptive-cards/weather.png)
 
 *Inputs/Outputs and notes*
 
@@ -118,3 +118,6 @@ The **daily weather report** sample is an Adaptive Card designed to be used with
     ]
 }
 ```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

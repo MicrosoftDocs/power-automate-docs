@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -204,3 +204,6 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
         ![Try again](media/adaptive-cards/try-again.png)
 
     - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

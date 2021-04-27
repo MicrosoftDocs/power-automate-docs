@@ -1,5 +1,5 @@
 ---
-title: Easily Automate approval workflows. | Microsoft Docs
+title: Create and test an approval workflow with Power Automate. | Microsoft Docs
 description: Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 services: ''
 suite: flow
@@ -8,12 +8,12 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/27/2020
+ms.date: 03/17/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -27,12 +27,12 @@ With Power Automate, you can manage the approval of documents or processes acros
 
 To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
-Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) on the Power Automate website, or the Power Automate app.
+Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) in Power Automate, or the Power Automate app.
 
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
 
-   ![overview of flow](./media/modern-approvals/create-flow-overview.png)
+   ![Approval flow](./media/modern-approvals/create-flow-overview.png)
 
 The flow performs the following steps:
 
@@ -42,6 +42,10 @@ The flow performs the following steps:
 1. Updates the SharePoint Online list with the approver's decision comments.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+
+
+>[!IMPORTANT]
+>Always follow the [best practices for SharePoint security](https://docs.microsoft.com/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
@@ -54,7 +58,7 @@ Create these columns in your SharePoint Online list:
 | Column | Type |
 | ------ | ------ |
 | Title | Single line of text |
-|Start date | Date and Time |
+|Start Date | Date and Time |
 | End Date | Date and Time |
 | Comments | Single line of text |
 | Approved | Yes/No |
@@ -62,7 +66,7 @@ Create these columns in your SharePoint Online list:
 
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
-## Create your flow from the blank template
+## Create an automated cloud flow
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
@@ -76,12 +80,13 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 ## Add a profile action
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+1. Select **Office 365 Users**.
 
-1. Find, and then select the **Office 365 Users - Get my profile** action.
+1. Find, and then select the **Get my profile (V2)** action.
 
     ![search for profile](./media/modern-approvals/search-for-profile.png)
 
-1. Select the fields from your profile that you want to include in your flow, and then click **Create** to save the work you've done so far.
+1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
 ## Add an approval action
 
@@ -102,7 +107,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure approved email template](./media/sequential-modern-approvals/yes-email-config.png)
+   ![configure approved email template](./media/modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
 
@@ -132,25 +137,27 @@ Follow these steps to send an email if the vacation request is approved:
 
 If you've followed along, your flow should resemble this screenshot:
 
-![overview of flow](./media/modern-approvals/completed-flow.png)
+![Completed flow](./media/modern-approvals/completed-flow.png)
 
 Now that we've created the flow, it's time to test it!
 
-## Request an approval
+## Request an approval to test your flow
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 
 ## Create long-running approvals
 
-If it's likely that your flow will run for more than 30 days, consider storing your approvals in Common Data Service. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
+If it's likely that your flow will run for more than 30 days, consider storing your approvals in Microsoft Dataverse. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. 
+
+To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
 >[!TIP]
-> If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval is completed.
+> If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval request is completed.
 
-## Cancel an approval requests
+## Cancel an approval request
 
-Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can Cancel it by following these steps:
+Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can cancel it by following these steps:
 
 1. Select the approval
 1. Select **Cancel approval** in the side pane.
@@ -163,7 +170,7 @@ Sometimes you might want to cancel an approval request that you've sent. Possibl
 
 ## Request approvals from guest users
 
-You can send approvals requests to persons outside your organization. To do this, use Azure Active Directory (Azure AD) guest users by [inviting users from other tenants as guests](https://docs.microsoft.com/azure/active-directory/b2b/add-user-without-invite).
+You can send approvals requests to persons outside your organization. To do this, use Azure Active Directory (Azure AD) guest users by [inviting users from other tenants as guests](/azure/active-directory/b2b/add-user-without-invite).
 
 When you assign a role to a guest, this gives the guest the permission required to participate in the approval process.
 
@@ -175,3 +182,6 @@ Now that you've created and tested your flow, be sure to let others know how to 
 * Create [sequential approval flows.](sequential-modern-approvals.md)
 * Create [parallel approval flows.](parallel-modern-approvals.md)
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

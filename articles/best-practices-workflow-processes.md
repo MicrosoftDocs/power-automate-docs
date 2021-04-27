@@ -4,7 +4,7 @@ description: "Understand the recommended ways to use workflows"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -62,3 +62,6 @@ When you edit workflows you should use the Notes tab and type what you did and w
 [Configure background workflow processes](configure-workflow-steps.md)   
 [Monitor and manage background workflow processes](monitor-manage-processes.md)
    
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

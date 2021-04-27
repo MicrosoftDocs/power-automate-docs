@@ -8,7 +8,7 @@ author: sunaysv
 manager: anneta
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -34,5 +34,8 @@ You might create separate environments that group the test and production versio
 
 You can create and manage environments using the [Power Platform admin center](https://aka.ms/ppac). 
 
-Learn all about [environments](https://docs.microsoft.com/power-platform/admin/environments-overview) in the Power Platform admin guide.
+Learn all about [environments](/power-platform/admin/environments-overview) in the Microsoft Power Platform admin guide.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

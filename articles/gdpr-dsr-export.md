@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -32,16 +32,16 @@ The *right of data portability* allows a data subject to request a copy of their
 
 Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+* **Website access:** sign into the [Power Apps admin center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 |**Customer data**|**Website access**|**PowerShell access**|
 |-----------------|------------------|-------------------|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Run history|Power Automate Maker Portal||
 |Flows|Power Automate Maker Portal||
-|Flow permissions| Power Automate Maker Portal and Power Automate Admin Center||
+|Flow permissions| Power Automate Maker Portal and Power Automate admin center||
 |User details||Power Apps cmdlets|
 |Connections|Power Automate Maker Portal|Power Apps cmdlets |
 |Connection permissions|Power Automate Maker Portal|Power Apps cmdlets |
@@ -50,7 +50,7 @@ Power Automate offers the following experiences to find or export personal data 
 |Gateway|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 |Gateway permissions|Power Automate Maker Portal|On-premises Data Gateway PowerShell cmdlets|
 
-## Export a flow
+## Export a cloud flow
 
 Either an end user or an administrator, who has granted themselves access to the flow, can export the flow by following these steps:
 
@@ -64,13 +64,13 @@ Either an end user or an administrator, who has granted themselves access to the
 
 1. Select **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 ## Export run history
 
-Run history includes a list of all executions that have occurred for a flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
+Run history includes a list of all executions that have occurred for a cloud flow. This data includes the flow’s status, start time, duration, and input/output data for triggers and actions.
 
-Either an end user or an administrator, who has been granted access to the flow through the Power Automate Admin Center, can follow these steps to export this data:
+Either an end user or an administrator, who has been granted access to the flow through the Power Automate admin center, can follow these steps to export this data:
 
 1. Sign into [Power Automate](https://flow.microsoft.com/).
 1. Select the **My flows** link, and then select the flow for which you want to export the run history.
@@ -118,7 +118,7 @@ Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "User
 
 ## Export a list of a user’s connection permissions
 
-A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export the connection role assignments for all connection that they have access to via the Get-ConnectionRoleAssignment function in the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -139,7 +139,7 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | 
 
 Custom connectors supplement the out of box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems. You can transfer ownership of a custom connector or delete it.
 
-Follow these steps to export a list of customer connectors:
+Follow these steps to export a list of customer connectors:<!-- Edit note: Is it custom or customer connectors. -->
 
 1. Navigate to [Power Automate](https://flow.microsoft.com).
 1. Select the settings **gear** icon.
@@ -148,7 +148,7 @@ Follow these steps to export a list of customer connectors:
 
     ![Export custom connectors](./media/gdpr-dsr-export/export-custom-connectors.png)
 
-In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) to export all custom connectors.
+In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell) to export all custom connectors.
 
 ~~~~
 Add-PowerAppsAccount
@@ -168,7 +168,7 @@ Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Use
 
 ## Export a user’s custom connector permissions
 
-A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804).
+A user can export all custom connector permissions they have created via the Get-ConnectorRoleAssignment function in the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -210,5 +210,8 @@ Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 ## Export Gateway Settings
-Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Export Requests for On-Premise Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

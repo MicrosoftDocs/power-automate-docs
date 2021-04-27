@@ -1,6 +1,6 @@
 ---
-title: Create an automated flow with Common Data Service (current environment) connector| Microsoft Docs
-description: Create workflows by using a Common Data Service (current environment) connector and Power Automate
+title: Create an automated flow with Microsoft Dataverse connector| Microsoft Docs
+description: Create workflows by using the Microsoft Dataverse connector and Power Automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,7 @@ author: MSFTMAN
 manager: KVIVEK
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -21,19 +21,19 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an automated flow by using Common Data Service (current environment)
+# Create an automated flow by using Microsoft Dataverse connector
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Common Data Service. This article covers the recommended [Common Data Service (current environment) connector](./connection-cds.md) for connecting to Common Data Service. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
+>There are three connectors available to connect to Dataverse. This article covers the recommended [Microsoft Dataverse](./connection-cds.md) for connecting to Dataverse. The [Common Data Service connector](./connection-cds.md) and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are also available for use if you cannot use the recommended connector.
 
 
-The flows you create can trigger when a Common Data Service record is created, updated, or deleted.
+The flows you create can trigger when a Dataverse record is created, updated, or deleted.
 
-Additionally, you can perform create, update, retrieve, and delete actions on records within Common Data Service.
+Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
-## Initiate a flow with Common Data Service (current environment)
+## Initiate a cloud flow with Microsoft Dataverse connector
 
 Use the **When a record is created, updated or deleted** trigger to initiate your flow:
 
@@ -84,15 +84,15 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](https://docs.microsoft.com/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](/power-platform/admin/database-security) about environment security.
 
-## Write data into Common Data Service
+## Write data into Dataverse
 
-Use any of the following actions to write data into Common Data Service:
+Use any of the following actions to write data into Dataverse:
 
 ![A screenshot that displays the actions](./media/cds-connector-native/actions.png)
 
-Here's an example of a flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
+Here's an example of a cloud flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
 
 > ![Followup task](./media/cds-connector-native/example-flow.png)
 
@@ -123,3 +123,6 @@ Flow runs may be delayed if there is a backlog of system jobs in your environmen
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

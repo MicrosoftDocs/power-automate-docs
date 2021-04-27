@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ Users can also get prompts for runtime inputs like **Approver** or **Message**, 
 
 In this walkthrough, we'll create a simple flow that uses one of the many [OneDrive for Business templates](https://flow.microsoft.com/search/?q=OneDrive) to request approval of a file by the requestor's manager.
 
-## Create a flow that requests manager approval for a file in OneDrive for Business
+## Create a cloud flow that requests manager approval for a file in OneDrive for Business
 
 1. Sign into OneDrive for Business.
 1. Find, and then select the file for which you want to create the flow.
@@ -65,9 +65,12 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 
 
 >[!TIP]
->While this walkthrough shows how to create a flow from a template, you can also create a flow from blank to use any of the hundreds of connectors available in Power Automate.
+>While this walkthrough shows how to create a cloud flow from a template, you can also create a cloud flow from blank to use any of the hundreds of connectors available in Power Automate.
 
 ## Learn more
 
 - [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

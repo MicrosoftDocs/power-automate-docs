@@ -1,0 +1,53 @@
+### YamlMime:Landing
+
+title: Power Automate guidance documentation
+summary: Power Automate guidance documentation provides best practice information from the team that works with our enterprise customers. We'll regularly add and update the guidance content. 
+
+metadata:
+  title: Power Automate guidance documentation
+  description: Provides best practice guidance information for Power Automate.
+  services: service
+  ms.service: power-automate 
+  ms.subservice: subservice
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: taiki-yoshida
+  ms.author: tayoshi
+  ms.date: 11/01/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  
+  # Card 
+  - title: Planning a Power Automate project
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Introduction
+            url: planning/introduction.md       
+          - text: Planning phase
+            url: planning/planning-phase.md
+          - text: Designing phase
+            url: planning/process-design.md
+          - text: Making phase
+            url: planning/making-phase.md
+          - text: Testing phase
+            url: planning/testing-strategy.md
+          - text: Deploying and refining phase
+            url: planning/deploy-to-production.md
+
+  # Card
+  - title: Related content
+    linkLists:
+       - linkListType: overview
+         links:          
+          - text: Create your first flow
+            url: ../getting-started.md#create-your-first-flow
+          - text: What is desktop flow?
+            url: ../desktop-flows/overview.md
+          - text: Power Platform Center of Excellence (CoE) kit
+            url: /power-platform/guidance/coe/starter-kit
+          - text: Power Platform ALM guide
+            url: /power-platform/alm/

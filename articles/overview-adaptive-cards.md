@@ -8,7 +8,7 @@ author: msftman
 manager: kVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 - **Post an adaptive card as the Flow bot to a Teams channel, and wait for a response**  
   This action posts an adaptive card as a Flow bot to a specific Teams channel as in the case above. However, in this case the flow will not continue until someone on the channel has responded to any inputs required within the card. The flow will continue once the anyone in the Teams channel responds but will only return dynamic content for one (1) response per responder and per card.
  
-     ![](media/adaptive-cards/bottom.png)
+     ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response](media/adaptive-cards/bottom.png)
 
      >[!TIP]
      >When you use this card, the flow waits for a response from any Teams member.
@@ -80,11 +80,14 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 >[!TIP]
 >The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
  
-- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](/adaptive-cards/).
  
 ## Learn more 
  
-- Create your [first adaptive card](https://docs.microsoft.com/power-automate/create-adaptive-cards)
-- Full documentation for the [Microsoft Teams connector](https://docs.microsoft.com/connectors/teams/)
-- Full documentation on [Adaptive Cards IO](https://docs.microsoft.com/adaptive-cards) 
+- Create your [first adaptive card](./create-adaptive-cards.md)
+- Full documentation for the [Microsoft Teams connector](/connectors/teams/)
+- Full documentation on [Adaptive Cards IO](/adaptive-cards) 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

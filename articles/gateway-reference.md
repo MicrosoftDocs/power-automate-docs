@@ -8,7 +8,7 @@ author: MSFTMan
 manager: KFile
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -53,3 +53,6 @@ There are four main steps for using a gateway.
 ## Next steps
 
 - [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

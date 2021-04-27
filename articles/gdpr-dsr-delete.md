@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -22,8 +22,6 @@ search.audienceType:
   - admin
 ---
 # Responding to GDPR Data Subject Delete Requests for Power Automate
-
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 
 The “right to erasure” by the removal of personal data from an organization’s Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information.
@@ -46,21 +44,21 @@ The following table shows which personal data is automatically deleted and which
 
 *Each of these resources contains “Created By” and “Modified By” records that include personal data. For security reasons, these records are retained until the resource is deleted.
 
-**For environments that include a Common Data Service database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in Common Data Service. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Common Data Service.
+**For environments that include a Microsoft Dataverse database, environment permissions (e.g. which users are assigned to the Environment Maker and Admin roles) are stored as records in Dataverse. Please see [Executing DSRs against Dataverse Customer Data](/power-platform/admin/common-data-service-gdpr-dsr-guide), for guidance on how to respond to DSRs for users who use Dataverse.
 
 For the data and resources that require manual review, Power Automate offers the following experiences to find or change personal data for a specific user:
 
-* **Website access:** sign in to the [Power Apps Admin Center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+* **Website access:** sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
-* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell) 
 
-Here is the breakdown of experiences that are available for an administrator to delete each types of personal data within each type of resource:
+Here is the breakdown of experiences that are available for an administrator to delete each type of personal data within each type of resource:
 
 |Resources containing personal data|Website access|PowerShell access|Automated Deletion|
 |-----|----|----|----|
 |System-generated logs|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|||
-|Environment|Power Automate Admin Center|Power Apps cmdlets||
-|Environment permissions*|Power Automate Admin Center|Power Apps cmdlets||
+|Environment|Power Automate admin center|Power Apps cmdlets||
+|Environment permissions*|Power Automate admin center|Power Apps cmdlets||
 |Run history||| Deleted through 28 day retention policy|
 |Activity feed |||Deleted through 28 day retention policy|
 |User jobs|| ||
@@ -73,9 +71,9 @@ Here is the breakdown of experiences that are available for an administrator to 
 |Custom connector permissions|Power Automate Maker Portal| ||
 |Approval History|Microsoft Power Apps Maker Portal*|||
 
-*With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within Common Data Service. Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for guidance on how to respond to DSRs for users who use Common Data Service.
+*With the introduction of Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within Dataverse. Please see [Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide), for guidance on how to respond to DSRs for users who use Dataverse.
 
-\*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate Admin Center.
+\*\* An admin will only be able to access these resources from the Power Automate Maker Portal if the administrator has been assigned access from the Power Automate admin center.
 
 ## Manage Delete requests
 
@@ -134,26 +132,26 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 ## Delete approval history from Power Automate
 
- Approval data for Power Automate is stored within the current or previous version of Common Data Service. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
+ Approval data for Power Automate is stored within the current or previous version of Microsoft Dataverse. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
 1. Sign into [PowerApps](https://make.powerapps.com/).
 
-1. Select **Data**, and then select **Entities**.
+1. Select **Data**, and then select **Tables**.
 
 1. Select the ellipsis **(…)** for the **Flow Approval** entity, and then open the data in Microsoft Excel.
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
-Please see [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251), for additional guidance on how to respond to DSRs for users who use Common Data Service.
+Please see [Executing DSRs against Microsoft Dataverse Customer Data](/power-platform/admin/common-data-service-gdpr-dsr-guide), for additional guidance on how to respond to DSRs for users who use Microsoft Dataverse.
 
 
 ## Delete connections created by a user
 
-Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems.  Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
+Connections are used in conjunction with connectors to establish connectivity with other APIs and SaaS systems. Connections include references to the user who created them and as a result, can be deleted to remove any references to the user.
 
 Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connections by using the Remove-Connection function from the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connections by using the Remove-Connection function from the [Power Apps Maker PowerShell cmdlets](/power-platform/admin/powerapps-powershell):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -177,7 +175,7 @@ Get-AdminPowerAppConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
 
 Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connection role assignments for shared connections Remove-ConnectionRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connection role assignments for shared connections Remove-ConnectionRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](/power-platform/admin/powerapps-powershell):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -207,7 +205,7 @@ Custom Connectors supplement the existing out of box connectors and allow for co
 
 Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their custom connectors the Remove-Connector function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their custom connectors the Remove-Connector function in the [Power Apps Maker PowerShell cmdlets](/power-platform/admin/powerapps-powershell):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -230,7 +228,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 Power Apps Maker PowerShell cmdlets
 
-A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
+A user can delete all of their connector role assignments for shared custom connector with the Remove-ConnectorRoleAssignment function in the [Power Apps Maker PowerShell cmdlets](/power-platform/admin/powerapps-powershell):
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -266,9 +264,9 @@ As an admin you have two decisions to make when processing a DSR delete request 
 >
 >
 
-## Give access to a user’s environments from the Power Automate Admin Center
+## Give access to a user’s environments from the Power Automate admin center
 
-An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments please navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments, please navigate to [Using environments within Power Automate](/flow/environments-overview-admin).>!-- Edit note: Kind of confusing that Power Automate is in the heading but Power Platform is in the first sentence. -->
 
 ## Delete the user’s permissions to all other environments
 
@@ -276,11 +274,11 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 
 With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within Common Data Service.
 
-For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](https://docs.microsoft.com/flow/environments-overview-admin).
+For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](/flow/environments-overview-admin).
 
 ## Delete Gateway Settings
 
-Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## Delete User Details
 
@@ -321,3 +319,6 @@ To determine whether or not you are a user of a managed or unmanaged tenant, per
     }
 
 1. Otherwise, you belong to a managed tenant.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

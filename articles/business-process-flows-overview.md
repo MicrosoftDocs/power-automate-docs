@@ -4,7 +4,7 @@ description: "An overview of business process flows in Power Automate."
 ms.custom: ""
 ms.date: 05/06/2019
 ms.reviewer: ""
-ms.service: flow
+ms.service: power-automate
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -25,7 +25,6 @@ search.audienceType:
 ---
 # Business process flows overview
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 You can help ensure that people enter data consistently and follow the same steps every time they work with a customer by creating a business process flow. For example, you might want to create a business process flow to have everyone handle customer service requests the same way, or to require that people get approval for an invoice before submitting an order. Business process flows use the same underlying technology as other processes, but the capabilities that they provide are very different from other features that use processes. To learn how to create or edit a business process flow, see [Create a business process flow](create-business-process-flow.md).  
   
@@ -43,7 +42,9 @@ Business process flows provide a guide for people to get work done. They provide
   
  ![Business process with stages](media/business-process-stages.png "Business process with stages")  
   
- Each stage contains a group of steps. Each step represents a field where data can be entered. People advance to the next stage by using the **Next Stage** button. You can make a step required so that people must enter data for the corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”.  
+ Each stage contains a group of steps. Each step represents a field where data can be entered. You can advance to the next stage by using the **Next Stage** button. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
+ 
+ You can make a step *required* so that people must enter data for a corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required field to a business process flow stage, we recommend that you add this field to your form as well. 
   
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
@@ -185,14 +186,32 @@ Specifically, the three commands that are available for a business process flow 
 - Previous stage
 - Set Active stage
 
+### Lookup field in a business process flow stage
+
+Recent records are visible in a lookup field in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
+1. Go to **Tables** under **Data**. Search for your business process flow entity.
+
+   ![A screenshot of a business process flow entity table](./media/bpf-entity-table.png)
+
+1. Select **Forms**, and select the **Information** editor.
+1. Select your lookup data step from the **Tree view**, and then check **Disable most recently used items**.
+
+   ![A screenshot how to disable the most recently used items](./media/bpf-disable-mru.png)
+
+1. Save, and then publish. 
+
 ### Limitations of using business process flow entities
 
 - Currently, you can’t create custom forms for entities based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [create and edit entities](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
-- Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](https://docs.microsoft.com/power-automate/create-business-process-flow). 
+- If a solution includes a business process flow entity, the business process flow entity must be manually added to the solution before you export it. Otherwise, the business process flow entity will not be included in the solution package. More information: [create and edit entities](/powerapps/maker/common-data-service/create-edit-entities-solution-explorer).
+- Adding the process entity to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  
  [Watch a short video (4:49) about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Create a business process flow](create-business-process-flow.md)   
  [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
  [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
