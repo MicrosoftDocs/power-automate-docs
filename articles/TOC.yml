@@ -330,16 +330,16 @@
     href: ./desktop-flows/create-flow.md
   - name: Run a desktop flow
     href: ./desktop-flows/run-pad-flow.md
-  - name: Manage machines and machine groups
-    items:
-    - name: Register and manage machines
-      href: ./desktop-flows/manage-machines.md
-    - name: Manage machine groups
-      href: ./desktop-flows/manage-machine-groups.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
-  - name: Manage machines (preview)
-    href: ./desktop-flows/manage-machines-portal.md
+  - name: Manage machines and machine groups (preview)
+    items:
+    - name: Register machines (preview)
+      href: ./desktop-flows/manage-machines.md
+    - name: Manage machines (preview)
+      href: ./desktop-flows/manage-machines-portal.md
+    - name: Manage machine groups (preview)
+      href: ./desktop-flows/manage-machine-groups.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
