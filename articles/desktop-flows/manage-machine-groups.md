@@ -37,7 +37,7 @@ To add the current machine to a machine group:
 
     ![The displayed list with the available machines](./media/manage-machine-groups/machine-groups-list.png)
 
-1. To create a new machine group, select the **New machine group** option and follow the instructions presented in [Create new machine group]().
+1. To create a new machine group, select the **New machine group** option and follow the instructions presented in [Manage machines and machine groups](manage-machines-portal.md##create-a-machine-group).
 
     ![The New machine group option](./media/manage-machine-groups/new-machine-group.png)
 
@@ -57,6 +57,6 @@ To change the password of the currently used machine group, select the **dots ic
 
 ![The Edit group password option](./media/manage-machine-groups/edit-machine-group-password.png)
 
-Next, populate the **New password** and **Confirm password** fields, and select the **Save** button to save the changes.
+Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
 
 ![The fields for the new mahcine group password](./media/manage-machine-groups/machine-group-new-password.png)

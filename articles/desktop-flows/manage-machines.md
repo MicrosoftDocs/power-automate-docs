@@ -57,5 +57,7 @@ If a machine is already registered, you can update its configuration through the
 
 Through this tab, you can change the name and the description of the machine, select a different machine running environment and add the machine to a machine group.
 
+You can find more information about managing and editing machine in [Manage machines and machine groups](manage-machines-portal.md).
+
 > [!NOTE]
 > Keep in mind that changing the running environment of a machine removes all its current connections.
