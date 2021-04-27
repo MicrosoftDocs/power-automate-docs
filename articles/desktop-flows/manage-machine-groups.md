@@ -37,7 +37,7 @@ To add the current machine to a machine group:
 
     ![The displayed list with the available machines](./media/manage-machine-groups/machine-groups-list.png)
 
-1. To create a new machine group, select the **New machine group** option and follow the instructions presented in [Manage machines and machine groups](manage-machines-portal.md##create-a-machine-group).
+1. To create a new machine group, select the **New machine group** option and follow the instructions presented in [Manage machines and machine groups](manage-machines-portal.md#create-a-machine-group).
 
     ![The New machine group option](./media/manage-machine-groups/new-machine-group.png)
 
