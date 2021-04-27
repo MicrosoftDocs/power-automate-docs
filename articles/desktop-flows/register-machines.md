@@ -1,6 +1,6 @@
 ---
-title: Register and manage machines | Microsoft Docs
-description: Register and manage machines
+title: Register machines | Microsoft Docs
+description: Register machines
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -35,7 +35,7 @@ To register a machine:
 
 1. Launch Power Automate Desktop, select **Settings**, and navigate to the **Machine** tab on the displayed pane. 
 
-    ![The Machine tab in Settings](./media/register-machiness/machine-settings.png)
+    ![The Machine tab in Settings](./media/register-machines/machine-settings.png)
 
 1. If the machine hasn't been registered yet, a message will prompt you to select a **Machine running environment**. Power Automate will use this environment to run all the triggered desktop flows.
 
