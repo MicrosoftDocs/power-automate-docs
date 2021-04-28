@@ -42,9 +42,9 @@ Business process flows provide a guide for people to get work done. They provide
   
  ![Business process with stages](media/business-process-stages.png "Business process with stages")  
   
- Each stage contains a group of steps. Each step represents a field where data can be entered. You can advance to the next stage by using the **Next Stage** button. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
+ Each stage contains a group of steps. Each step represents a column where data can be entered. You can advance to the next stage by using the **Next Stage** button. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
  
- You can make a step *required* so that people must enter data for a corresponding field before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required field to a business process flow stage, we recommend that you add this field to your form as well. 
+ You can make a step *required* so that people must enter data for a corresponding column before they can proceed to the next stage. This is commonly called ”stage-gating”. If you are adding a business-required or system-required column to a business process flow stage, we recommend that you add this column to your form as well. 
   
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
@@ -55,7 +55,7 @@ Business process flows provide a guide for people to get work done. They provide
 ### Business process flows integrated with other customizations  
  When you or your user enters data using business process flows, the data changes are also applied to form fields so that any automation provided by business rules or form scripts can be applied immediately. Steps can be added that set values for fields that are not present in the form and these fields will be added to the `Xrm.Page` object model used for form scripts. Any workflows that are initiated by changes to fields included in a business process flow will be applied when the data in the form is saved. If the automation is applied by a real-time workflow, the changes will be immediately visible to the user when the data in the form is refreshed after the row is saved.  
   
- Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls. If you hide a field in a form, that field will also be hidden in the business process flow control. If you set a value by using business rules or form scripts, that value will be set within the business process flow.  
+ Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls. If you hide a column in a form, that column will also be hidden in the business process flow control. If you set a value by using business rules or form scripts, that value will be set within the business process flow.  
   
 ### Concurrent process flows  
  Concurrent business process flows let customizers configure multiple business processes and associate them with the same starting record. Users can switch between multiple business processes running concurrently, and resume their work at the stage in the process that they were on.  
@@ -170,7 +170,7 @@ Several default views are available that you can view as a chart, such as the **
 ![Active Opportunity Sales Process view](media/bpf-default-view.png)
 
 ### Interact with the business process flow table from a workflow
-You can also interact with business process flow tables from a workflow. For example, you can create a workflow for the Business Process Flow table row to change the Active Stage when a field on the Opportunity table row is updated. For more information about how to do this, see [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
+You can also interact with business process flow tables from a workflow. For example, you can create a workflow for the Business Process Flow table row to change the Active Stage when a column on the Opportunity table row is updated. For more information about how to do this, see [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
 ### Run business process flows offline
 
@@ -186,9 +186,9 @@ Specifically, the three commands that are available for a business process flow 
 - Previous stage
 - Set Active stage
 
-### Lookup field in a business process flow stage
+### Lookup column in a business process flow stage
 
-Recent records are visible in a lookup field in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+Recent records are visible in a lookup column in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
 1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
 1. Go to **Tables** under **Data**. Search for your business process flow entity.
 

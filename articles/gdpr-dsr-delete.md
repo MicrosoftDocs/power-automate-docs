@@ -272,7 +272,7 @@ An admin can grant Admin access to an environment created by a specific user fro
 
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Power Automate service as a “role assignment.”
 
-With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within Common Data Service.
+With the introduction of Microsoft Dataverse, if a database is created within the environment, these “role assignments” are stored as records within Microsoft Dataverse.
 
 For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](/flow/environments-overview-admin).
 

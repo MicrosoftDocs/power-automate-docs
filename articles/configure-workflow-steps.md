@@ -57,9 +57,9 @@ For any field, you can set a static value and that will be set by the workflow.
   
 On the right side of the dialog box, the **Form Assistant** gives you the ability to set or append dynamic values from the context of the current record. This includes values from related records that can be accessed from the N:1 (many-to-one) relationships for the entity.  
   
-The options available in the **Form Assistant** depend on the field you have selected in the form. When you set a dynamic value, you will see a yellow placeholder known as a ‘slug’ that shows where the dynamic data will be included. If you want to remove the value, just select the slug and delete it. For text fields, you can use a combination of static and dynamic data.  
+The options available in the **Form Assistant** depend on the column you have selected in the form. When you set a dynamic value, you will see a yellow placeholder known as a ‘slug’ that shows where the dynamic data will be included. If you want to remove the value, just select the slug and delete it. For text fields, you can use a combination of static and dynamic data.  
   
-With dynamic values, you don’t know for certain that a field or related table has the value you want to set. You can actually set a number of fields to try to set the value and sort them in order using the green arrows. If the first field doesn’t have data, the second field will be tried and so on. If none of the fields has data, you can specify a default value to be used.  
+With dynamic values, you don’t know for certain that a column or related table has the value you want to set. You can actually set a number of fields to try to set the value and sort them in order using the green arrows. If the first column doesn’t have data, the second column will be tried and so on. If none of the fields has data, you can specify a default value to be used.  
   
 <a name="BKMK_SettingConditionsForWorkflowActions"></a>   
 

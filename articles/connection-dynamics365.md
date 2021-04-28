@@ -1,6 +1,6 @@
 ---
 title: Create a cloud flow with Dynamics 365 (online) | Microsoft Docs
-description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse connector or the Common Data Service connector instead.
+description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse connector or the Microsoft Dataverse connector instead.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,13 +21,13 @@ search.audienceType:
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
+> Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
 >
 > The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse) connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Common Data Service connector](/connectors/commondataservice/).
+> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/).
 >
-> The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Common Data Service connectors do, such as the ability to connect to multiple environments. The [Common Data Service connector](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
+> The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Microsoft Dataverse connectors do, such as the ability to connect to multiple environments. The [Microsoft Dataverse (legacy)](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
 
 
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
@@ -76,14 +76,14 @@ If a template isn’t available for what you need, create a cloud flow from scra
      For this walkthrough, select **Tasks**.
 11. A **Subject** box appears. When you click or tap it, a dynamic content pane appears where you can select either of these fields.
     
-    * **Last Name**. If you select this field, the last name of the lead will be inserted in the **Subject** field of the task when it's created.
-    * **Topic**. If you select this field, the **Topic** field for the lead will be inserted in the **Subject** field of the task when it's created.
+    * **Last Name**. If you select this field, the last name of the lead will be inserted in the **Subject** column of the task when it's created.
+    * **Topic**. If you select this field, the **Topic** column for the lead will be inserted in the **Subject** column of the task when it's created.
     
     For this walkthrough, select **Topic**.
     
     ![Flow add topic](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Tip:** On the dynamic content pane, click or tap **See more** to display more fields that are associated with the entity. For example, you can also populate the **Subject** field of the task with the **Company Name**, **Customer**, **Description**, or **Email** field of the lead.
+    > **Tip:** On the dynamic content pane, click or tap **See more** to display more fields that are associated with the entity. For example, you can also populate the **Subject** column of the task with the **Company Name**, **Customer**, **Description**, or **Email** column of the lead.
     > 
     > 
 12. Click or tap **Create flow**.
@@ -104,15 +104,15 @@ For example, you can use a filter query to retrieve only active contacts, and yo
 
 ### Best practices when using advanced options
 
-When you add a value to a field, you must match the field type whether you type a value or select one from the dynamic content pane.
+When you add a value to a field, you must match the column type whether you type a value or select one from the dynamic content pane.
 
-| Field type | How to use | Where to find | Name | Data type |
+| Column type | How to use | Where to find | Name | Data type |
 | --- | --- | --- | --- | --- |
 | Text fields |Text fields require a single line of text or dynamic content that is a text type field. Examples include the **Category** and **Sub-Category** fields. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**category** |**Single Line of Text** |
 | Integer fields |Some fields require integer or dynamic content that is an integer type field. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**percentcomplete** |**Whole Number** |
 | Date fields |Some fields require a date entered in mm/dd/yyyy format or dynamic content that is a date type field. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**createdon** |**Date and Time** |
 | Fields that require both a row ID and lookup type |Some fields that reference another table row require both the row ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields** |**accountid** |**Primary Key** |
-|Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
+|Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer column along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of fields that require both a row ID and lookup type
 
@@ -120,18 +120,18 @@ Expanding on the previous table, here are more examples of fields that don't wor
 
 * **Owner** and **Owner Type**.
   
-  * The **Owner** field must be a valid user or team row ID.
+  * The **Owner** column must be a valid user or team row ID.
   * The **Owner Type** must be either **systemusers** or **teams**.
 * **Customer** and **Customer Type**.
   
-  * The **Customer** field must be a valid account or contact row ID.
+  * The **Customer** column must be a valid account or contact row ID.
   * The **Customer Type** must be either **accounts** or **contacts**.
 * **Regarding** and **Regarding Type**.
   
-  * The **Regarding** field must be a valid row ID, such as an account or contact row ID.
+  * The **Regarding** column must be a valid row ID, such as an account or contact row ID.
   * The **Regarding Type** must be the lookup type for the record, such as **accounts** or **contacts**.
 
-This example adds an account row that corresponds to the row ID, adding it to the **Regarding** field of the task.
+This example adds an account row that corresponds to the row ID, adding it to the **Regarding** column of the task.
 
   ![Flow recordId and type account](./media/connection-dynamics365/flow-recordid-account.png)
 

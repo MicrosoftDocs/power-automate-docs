@@ -73,7 +73,7 @@ If your organization uses background workflows or business process flows that ru
    - **System Job Type Equals Workflow.** This targets background workflow records. 
    - **Status Equals Completed.** Only completed workflows are valid to run the job against.
    - **Status Reason Equals Succeeded.** Delete successful, canceled, and failed jobs.
-   - **Completed On Older than X Days 30.** Use the Completed On field to only delete background workflow process log records that are older than 30 days.
+   - **Completed On Older than X Days 30.** Use the Completed On column to only delete background workflow process log records that are older than 30 days.
 
    ![Screenshot showing settings to create a bulk row deletion job.](media/custom-bulk-record-deletion.png)
  

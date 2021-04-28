@@ -33,7 +33,7 @@ Let’s say that you’d like to get a view of your sales pipeline by reporting 
 
 Previously, to report on business processes by stage, one might define a view on each related table of the business process flow and then report on the *Active Stage* (activestageid) field.
 
-With the deprecation of the *Active Stage*  (activestageid) field on related tables, there are two ways to report on business process flows.
+With the deprecation of the *Active Stage*  (activestageid) column on related tables, there are two ways to report on business process flows.
 
 ### Option 1: Views and charts on business process flow entity**(Recommended)**
 
@@ -58,11 +58,11 @@ Further, as the business process flow table is no different from any other custo
 
 ### Option 2: copy active stage to a related entity
 
-Alternatively, to continue reporting off the related entity, create a cloud flow to copy the *Active Stage* (activestageid) field from the business process flow table into a custom field on the related Dataverse tables.
+Alternatively, to continue reporting off the related entity, create a cloud flow to copy the *Active Stage* (activestageid) column from the business process flow table into a custom column on the related Dataverse tables.
 
 Here are a few things to keep in mind when you use this approach:
 
-1.  It's possible to have more than one business process flow running on a single entity. With this approach, it's best to have one custom field that stores the active stage for each business process flow that runs on the entity. This approach ensures the integrity of the reporting.
+1.  It's possible to have more than one business process flow running on a single entity. With this approach, it's best to have one custom column that stores the active stage for each business process flow that runs on the entity. This approach ensures the integrity of the reporting.
 
 1.  As reporting is driven from the related entity, it's not possible to create a single view that reports on business process flows that span multiple tables.
 
@@ -102,8 +102,8 @@ There might be cases where automation based on the business process flow needs t
 
 To build a classic Dataverse workflow that creates activities for internal solution reviews and to follow up with the customer in the **Propose** stage of the **Opportunity Sales Process**:
 
-1. Create it on the **Opportunity Sales Process** table and set it to run each time the **Active Stage** field of the table changes. 
-1. Define a condition to check if the **Active Stage** field equals **Propose**. 
+1. Create it on the **Opportunity Sales Process** table and set it to run each time the **Active Stage** column of the table changes. 
+1. Define a condition to check if the **Active Stage** column equals **Propose**. 
 1. Create an appointment and phone call row for the internal review of the solution and the customer call to review the solution respectively.
 
    ![close stage followup](media/best-practices-entity-attributes/close-stage-followup.png)

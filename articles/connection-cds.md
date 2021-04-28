@@ -27,10 +27,10 @@ search.audienceType:
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
+>There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Microsoft Dataverse (legacy)**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
+With the Microsoft Dataverse (legacy), you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
 
 ## Initiate a cloud flow from Dataverse
 
@@ -93,7 +93,7 @@ Here's an example of creating a follow-up task when the given user creates a new
 
 To write data into customer, owner, and regarding fields, two fields must be populated.
 
-| Field category | Example settings |
+| Column category | Example settings |
 | --- | --- |
 | Regarding | Regarding = ID of the row (for example, account ID) and Regarding Type as selected from the list. |
 | Customer | Represents the ID of the row and the customer type as selected from the list. |

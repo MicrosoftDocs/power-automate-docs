@@ -83,14 +83,14 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
     1. Select the step, and then set properties in the **Properties** tab:  
   
         1. Enter a display name for the step.  
-        1. If you want users to enter data to complete a step, select the appropriate field from the drop-down list.  
-        1. Select **Required** if people must fill in the field to complete the step before moving to the next stage of the process.  
+        1. If you want users to enter data to complete a step, select the appropriate column from the drop-down list.  
+        1. Select **Required** if people must fill in the column to complete the step before moving to the next stage of the process.  
         1. Select **Apply** when you're done.  
 
      > [!NOTE]
      >
-     > - If you set a two-option boolean field as **Required**, users can't continue unless the field value is **Yes**. The user is required to mark the field as completed before moving to the next stage.
-     > - If either **Yes** or **No** are acceptable field values, then you should make the field an option set instead of a two-option boolean field.
+     > - If you set a two-option boolean column as **Required**, users can't continue unless the column value is **Yes**. The user is required to mark the column as completed before moving to the next stage.
+     > - If either **Yes** or **No** are acceptable column values, then you should make the column an option set instead of a two-option boolean field.
   
 1. **Add a branch (condition) to the process.** To add a branching condition:  
   
@@ -237,10 +237,10 @@ To do this, you'll need to do two things:
 1. In Power Automate, select **Solutions** in the navigation menu.
 1. Select **Default Solution** from the list of solutions that appears. 
 1. Select the **+ New** menu, and then select **Flow** from the list that appears.
-1. Search for, and then select the **Common Data Service** connector.
-1. Search for, and then select the **When a row is selected** trigger from the list of **Common Data Service** triggers.
+1. Search for, and then select the **Microsoft Dataverse** connector.
+1. Search for, and then select the **When a row is selected** trigger from the list of **Microsoft Dataverse** triggers.
 1. Set **Environment** to **Default**, and then set **Entity Name** to **Lead to Opportunity Sales Process**.
-1. Add a text input field for the user to enter the link to the proposal.
+1. Add a text input column for the user to enter the link to the proposal.
 
    ![Instant flow trigger](media/instant-flow-trigger.png "Instant flow trigger")
 
@@ -312,7 +312,7 @@ To do this, you'll need to do two things:
 
    ![Parse JSON](media/instant-flow-json-date.png "Parse JSON")
 
-  1. Add the **Get record** action from the **Common Data Service** connector.
+  1. Add the **Get record** action from the **Microsoft Dataverse** connector.
   1. Set **Environment** to **(Current)**, **Entity Name** to **Lead to Opportunity Sales Process**, and **Item Identifier** to **BPFFlowStageEntityRecordID**.
 
      ![Add a record](media/instant-flow-add-record.png)
@@ -321,7 +321,7 @@ To do this, you'll need to do two things:
 
      > [!TIP]
      > - Use the dynamic content picker to add fields from the **Get record** action to add relevant information to the approval request so that approvers can easily know what the request is about. 
-     > - To provide further context regarding the active stage that the business process is in, add the **BPFActiveStageLocalizedName** field from the list of dynamic values.
+     > - To provide further context regarding the active stage that the business process is in, add the **BPFActiveStageLocalizedName** column from the list of dynamic values.
 
      Your **Start and wait for an approval (V2)** card might look similar to this one:
 
@@ -335,12 +335,12 @@ Now that you've created the instant flow, all that's needed is for you to add it
 
 1. Open the **Lead to Opportunity Sales Process** in the business process flow designer. 
 1. Drag and drop the **Flow Step (Preview)** from the list of **Components** onto the **Propose** stage.
-1. Next, select the search icon in the **Select a Flow** field to list all flows that you can added to a business process flow.
+1. Next, select the search icon in the **Select a Flow** column to list all flows that you can added to a business process flow.
 1. Select a cloud flow from the list, and then save your changes by selecting the **Apply** button at the bottom of the properties pane.
 1. Finally, select the **Update** button to make this business process flow with its new instant flow step available to your users.
 
-### Flow Step considerations
-The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a cloud flow step as completed, add the **Update a record** action of the Common Data Service connector under the **If yes** path. Set the **Environment** to **Default** and **Entity** to **Process Logs**. Then set **Record identifier** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
+### Flow step considerations
+The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a cloud flow step as completed, add the **Update a record** action of the Microsoft Dataverse (legacy) connector under the **If yes** path. Set the **Environment** to **Default** and **Entity** to **Process Logs**. Then set **Record identifier** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
 
 ## The action center
 

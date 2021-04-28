@@ -178,7 +178,7 @@ By following the steps in this section, you'll build:
 6. Near the bottom of the **Do until** action, click or tap **Add an action**.
    
     ![Add action inside a do until](./media/common-data-model-approve/add-action-in-dountil.png)
-7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Common Data Service - Get object**.
+7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Microsoft Dataverse - Get object**.
    
     ![Get an object](./media/common-data-model-approve/get-object.png)
 8. Under **The namespace**, click or tap your database.
@@ -253,7 +253,7 @@ By following the steps in this section, you'll build:
     ![Create an app in a browser](./media/common-data-model-approve/new-app-button.png)
 2. In the dialog box that appears, click or tap the option to open either Power Apps Studio for Windows or Power Apps Studio for the web.
 3. If you opened Power Apps Studio for Windows, click or tap **New** in the left navigation bar.
-4. Under **Create an app from your data**, click or tap **Phone layout** in the **Common Data Service** tile.
+4. Under **Create an app from your data**, click or tap **Phone layout** in the **Microsoft Dataverse** tile.
    
     ![Create app](./media/common-data-model-approve/afd-cdm.png)
 5. In the **Search** box, type or paste **Review**.

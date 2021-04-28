@@ -144,7 +144,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-04
 
-- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
+- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Microsoft Dataverse connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.

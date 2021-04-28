@@ -1,5 +1,5 @@
 ---
-title: Replace classic Common Data Service workflows with Power Automate | Microsoft Docs
+title: Replace classic Microsoft Dataverse workflows with Power Automate | Microsoft Docs
 description: Describes Power Automate capabilities and recommended patterns to use flow instead of a classic workflow.
 author: MSFTMAN
 manager: KVIVEK
@@ -14,13 +14,13 @@ search.audienceType:
   - enduser
 ---
 
-# Replace classic Common Data Service workflows with flows
+# Replace classic Microsoft Dataverse workflows with flows
 
 This topic compares Power Automate capabilities with classic workflow.
 
 Power Automate has significant advantages over the classic background workflow model; you should consider using Power Automate to automate your processes instead of classic workflow.
 
-Create flows instead of classic Common Data Service workflows to build new automation processes. Additionally, you should review your existing classic background workflow processes and consider replacing them with flows.
+Create flows instead of classic Microsoft Dataverse workflows to build new automation processes. Additionally, you should review your existing classic background workflow processes and consider replacing them with flows.
 
 ## Feature capability comparison
 
@@ -173,7 +173,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
             <tr>
                 <td>
                     
-   Run Common Data Service actions (including custom)
+   Run Microsoft Dataverse actions (including custom)
                     
                 </td>
                 <td>
@@ -246,7 +246,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
                 </td>
                 <td>
                     
-   Trigger on field changes
+   Trigger on column changes
                     
                 </td>
                 <td>
@@ -263,7 +263,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
             <tr>
                 <td>
                     
-   Trigger conditionally on field values (For example, on a
+   Trigger conditionally on column values (For example, on a
    certain date in a date field)
                     
                 </td>
@@ -473,7 +473,7 @@ To allow the sales person to trigger the approval request on demand:
 
     ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List records card")
 
-1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set the **Name** field to **Quote line summary**, and **Type** to **String** (from the drop-down list), and leave the **Value** field empty.
+1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set **Name** to **Quote line summary**, and **Type** to **String** (from the drop-down list), and leave **Value** empty.
 
 1. Add the **Append to string variable** action and then select the **Quote line summary** variable we created earlier. In the **Value** field, select **Quantity**, **Name**, **Price Per Unit**, **Extended amount**, and **Manual discount** from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
 
@@ -504,13 +504,13 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   We recommend redesigning the flow to start with triggers:
 
-  - Use Common Data Service triggers to run flows based on events in it.
+  - Use Microsoft Dataverse triggers to run flows based on events in it.
 
   - To run flows based on events in an external service, leverage more than 260 out-of-the-box connectors.
 
   - For scenarios where a connector you need isn’t available out-of-the-box, easily create your own custom connector. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
-  - Finally, if there are scenarios where you cannot trigger your flow using Common Data Service connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](/azure/connectors/connectors-native-reqres) to invoke the flow.
+  - Finally, if there are scenarios where you cannot trigger your flow using Microsoft Dataverse (legacy), one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](/azure/connectors/connectors-native-reqres) to invoke the flow.
 
 - **Workflows that run recursively**
 
@@ -540,7 +540,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **How often can my flows be triggered?**
 
-   Dynamics 365 (or Common Data Service) flows run near real-time after the trigger because they use webhooks (no polling required).
+   Dynamics 365 (or Microsoft Dataverse) flows run near real-time after the trigger because they use webhooks (no polling required).
 
   - As with direct API access, there are throttles/limits in the system. More information: [Limits and configuration in Power Automate](limits-and-config.md)
   - Specifically, there is a limit of 100,000 actions per 5 minutes, per flow. A single loop in a cloud flow cannot process more than 100,000 items at once.
@@ -554,17 +554,17 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   Just like classic workflows, you can create flows in solutions to support the full application lifecycle for processes.
 
-- **Are Power Automate dependencies tracked in Common Data Service?**  
+- **Are Power Automate dependencies tracked in Microsoft Dataverse?**  
 
-  Similar to other components in a solution, all dependencies for flows in solutions are tracked in Common Data Service.
+  Similar to other components in a solution, all dependencies for flows in solutions are tracked in Microsoft Dataverse.
 
 - **What about synchronous workflows?**
 
   We've seen feedback that synchronous workflows are a significant contributor to end-user performance issues. We recommend that you evaluate whether your objective, or parts of the background workflow, can be built using a cloud flow. If you can split actions out as asynchronous, the user can continue their activity while Power Automate completes the action.
 
-- **Using Power Automate, will my data stay within region (that is, the same region as my Dynamics 365 or Common Data Service environment)?**  
+- **Using Power Automate, will my data stay within region (that is, the same region as my Dynamics 365 or Microsoft Dataverse environment)?**  
 
-  Yes, Power Automate always uses the same region as Common Data Service.
+  Yes, Power Automate always uses the same region as Microsoft Dataverse.
 
 - **Do I need to make proxy/firewall changes?**  
 
