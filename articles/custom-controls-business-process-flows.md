@@ -33,9 +33,9 @@ Let’s say that you’d like to add a radial knob for the **Estimated Budget** 
 
 Here are the steps you must follow to add custom controls to a business process flow:
 
-1. Configure custom controls on a related entity form.
+1. Configure custom controls on a related table form.
 1. Generate and exporting the business process flow form.
-1. Copy custom control configurations to the business process flow form from the related entity form.
+1. Copy custom control configurations to the business process flow form from the related table form.
 1. Import the customizations back into Common Data Service.
 
 Follow these steps for a [detailed walkthrough adding custom controls](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Preview-Custom-Controls-in-Business-Process-Flows/ba-p/263237) to business process flows steps.

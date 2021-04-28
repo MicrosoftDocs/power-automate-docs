@@ -36,10 +36,9 @@ With the Common Data Service connector, you can create flows that are initiated 
 
 You can use any of the following triggers to initiate your flow:
 
-- When a record is selected
-- When a record is created
-- When a record is deleted
-- When a record is updated
+- When a flow step is run from a business process flow
+- When a row is added, modified or deleted
+- When a action is performed (preview)
 
 
 > [!div class="mx-imgBorder"]
@@ -50,27 +49,27 @@ If the selected trigger requires an environment to be selected, then you can cho
 > [!div class="mx-imgBorder"]
 > ![Choose environment](./media/cds-connector/Environments.png)
 
-You can use scopes to determine if your flow runs if you create a new record, if a new record is created by a user within your business unit, or if a new record is created by any user in your organization.
+You can use scopes to determine if your flow runs if you create a new record, if a new row is created by a user within your business unit, or if a new row is created by any user in your organization.
 
 > [!div class="mx-imgBorder"]
 > ![Choose scope](./media/cds-connector/Scopes.png)
 
 |Scope|Trigger timing|
 | --- | --- |
-|Business Unit|Action is taken on a record owned by your business unit|
+|Business Unit|Action is taken on a row owned by your business unit|
 |Organization|Action is taken by anyone within the organization or database|
-|Parent: Child business unit|Action is taken on a record owned by your business unit or a child business unit|
-|User|Action is taken on a record owned by you|
+|Parent: Child business unit|Action is taken on a row owned by your business unit or a child business unit|
+|User|Action is taken on a row owned by you|
 
-Triggers that run when a record is updated can also use filtering attributes. This ensures that the flow only runs when any of the defined attributes are updated.
+Triggers that run when a row is updated can also use filtering columns. This ensures that the flow only runs when any of the defined columns are updated.
 
 > [!IMPORTANT]
-> Use filter attributes to prevent your flow from unnecessarily running.
+> Use filter columns to prevent your flow from unnecessarily running.
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
 > [!div class="mx-imgBorder"]
-> ![Filter attributes](./media/cds-connector/FilterAttributes.png)
+> ![Filter columns](./media/cds-connector/FilterAttributes.png)
 
 ## Trigger privileges
 
@@ -96,13 +95,13 @@ To write data into customer, owner, and regarding fields, two fields must be pop
 
 | Field category | Example settings |
 | --- | --- |
-| Regarding | Regarding = ID of the record (for example, account ID) and Regarding Type as selected from the list. |
-| Customer | Represents the ID of the record and the customer type as selected from the list. |
+| Regarding | Regarding = ID of the row (for example, account ID) and Regarding Type as selected from the list. |
+| Customer | Represents the ID of the row and the customer type as selected from the list. |
 | Owner | Represents the ID of the system user or team, and owner type as selected from the list. |
 
 ### Enable upsert behavior
 
-You can leverage the **update a record** command to provide upsert actions, which updates the record if it already exists, or creates a new record. To invoke upsert, provide the entity and a GUID key. If the record with the specified type and key exists, an update occurs. Otherwise, a record with the specified key is created.
+You can leverage the **update a record** command to provide upsert actions, which updates the row if it already exists, or creates a new record. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
 
 ### Trigger behavior
 

@@ -37,7 +37,7 @@ The following terms are commonly used in Power Automate.
 
  [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
-**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
+**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a row is created, deleted, or updated in Dataverse, the flow will run if that is the trigger you chose.
 
  [Create a cloud flow in Power Automate](get-started-logic-flow.md)
 

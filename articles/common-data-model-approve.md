@@ -32,7 +32,7 @@ In this example, you'll create an approval process that starts when a user adds 
 By following the steps in this section, you'll build:
 
 * a **custom entity** that will contain information about each file added to Dropbox and whether the file's status is approved, rejected, or pending.
-* a **flow** that adds information to the custom entity when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a cloud flow from scratch, but you can create a similar flow from a template.
+* a **flow** that adds information to the custom table when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a cloud flow from scratch, but you can create a similar flow from a template.
 * an **app** in which a reviewer can approve or reject files added to Dropbox. You'll use Power Apps to generate this app automatically based on the fields in the custom entity.
 
 **Prerequisites**
@@ -45,9 +45,9 @@ By following the steps in this section, you'll build:
 2. If the left navigation bar doesn't appear by default, click or tap the icon with three horizontal lines in the upper-left corner.
    
     ![Open left navigation bar](./media/common-data-model-approve/hamburger-icon.png)
-3. In the left navigation bar, click or tap **Manage**, and then click or tap **Entities**.
+3. In the left navigation bar, click or tap **Manage**, and then click or tap **Tables**.
    
-    ![Manage entities](./media/common-data-model-approve/manage-entities.png)
+    ![Manage tables](./media/common-data-model-approve/manage-entities.png)
 4. If prompted, click or tap **Create my database**.
    
     ![Create database](./media/common-data-model-approve/create-database.png)
@@ -56,11 +56,11 @@ By following the steps in this section, you'll build:
     ![Create entity](./media/common-data-model-approve/new-entity.png)
    
     If your browser window isn't maximized, this button might appear in a different place.
-6. Under **Entity name**, specify a name that doesn't contain spaces and that no other entity in your database has.
+6. Under **Entity name**, specify a name that doesn't contain spaces and that no other table in your database has.
    
     To follow this example exactly, specify **ReviewDropboxFiles**.
    
-    ![Specify entity name](./media/common-data-model-approve/entity-name.png)
+    ![Specify table name](./media/common-data-model-approve/entity-name.png)
 7. Under **Display name**, specify a friendly name.
    
     ![Specify display name](./media/common-data-model-approve/display-name.png)
@@ -105,7 +105,7 @@ By following the steps in this section, you'll build:
 6. Near the lower-left corner, click or tap **Create**.
    
     ![Create an entity](./media/common-data-model-approve/create-button.png)
-7. (optional) When the list of entities reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom entities, such as the one you just created, appearing at the top.
+7. (optional) When the list of tables reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom tables, such as the one you just created, appearing at the top.
 
 ## Sign in and create a cloud flow
 1. Open the [Power Automate portal](https://flow.microsoft.com).

@@ -57,21 +57,21 @@ If a template isn’t available for what you need, create a cloud flow from scra
 
 1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
 2. Click or tap **My flows**, and then click or tap **Create from blank**.
-3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created**.
+3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created (deprecated)**.
 4. If prompted, sign in to Dynamics 365.
 5. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.
-6. Under **Entity Name**, select the entity that you want to listen to, which will act as a trigger initiating the flow.
+6. Under **Entity Name**, select the table that you want to listen to, which will act as a trigger initiating the flow.
    
      For this walkthrough, select **Leads**.
    
     ![Flow details](./media/connection-dynamics365/flow-details.png)
     > [IMPORTANT]
-    > In order for the flow to trigger on the Dynamics 365 entity, the entity definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > In order for the flow to trigger on the Dynamics 365 entity, the table definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Click or tap **New step**, and then click or tap **Add an action**.
 8. Click or tap **Dynamics 365 – Create a new record**.
 9. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to create the record. Notice that it doesn’t have to be the same instance where the event is triggered from.
-10. Under **Entity Name**, select the entity that will create a record when the event occurs.
+10. Under **Entity Name**, select the table that will create a row when the event occurs.
     
      For this walkthrough, select **Tasks**.
 11. A **Subject** box appears. When you click or tap it, a dynamic content pane appears where you can select either of these fields.
@@ -90,9 +90,9 @@ If a template isn’t available for what you need, create a cloud flow from scra
 
 ## Trigger based logic
 
-Triggers like **When a record is created**, **When a record is updated**, and **When a record is deleted** initiate your flow within a few minutes of the event occurring.  In rare cases, your flow can take up to 2 hours to trigger.
+Triggers like **When a row is added, modified or deleted**, **When an action is performed**, and **When a flow step is run from a business process flow** initiate your flow within a few minutes of the event occurring.  In rare cases, your flow can take up to 2 hours to trigger.
 
-When the trigger occurs, the flow receives a notification, but the flow runs on data that exists at the time the action runs.  For example, if your flow triggers when a new record is created, and you update the record twice before the flow runs, your flow runs only once with the latest data.
+When the trigger occurs, the flow receives a notification, but the flow runs on data that exists at the time the action runs.  For example, if your flow triggers when a new row is created, and you update the row twice before the flow runs, your flow runs only once with the latest data.
 
 ## Specify advanced options
 
@@ -111,35 +111,35 @@ When you add a value to a field, you must match the field type whether you type 
 | Text fields |Text fields require a single line of text or dynamic content that is a text type field. Examples include the **Category** and **Sub-Category** fields. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**category** |**Single Line of Text** |
 | Integer fields |Some fields require integer or dynamic content that is an integer type field. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**percentcomplete** |**Whole Number** |
 | Date fields |Some fields require a date entered in mm/dd/yyyy format or dynamic content that is a date type field. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**createdon** |**Date and Time** |
-| Fields that require both a record ID and lookup type |Some fields that reference another entity record require both the record ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields** |**accountid** |**Primary Key** |
+| Fields that require both a row ID and lookup type |Some fields that reference another table row require both the row ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields** |**accountid** |**Primary Key** |
 |Option Set|Option Set fields require a known integer value to be passed into this type of field.  In the Dynamics 365 customization area, you an view the option sets backing integer field along with its respective label.|Settings > Customization > Customize the System > Entities > Account > Fields | Preferred Method of Contact| Whole Number|
 
-### More examples of fields that require both a record ID and lookup type
+### More examples of fields that require both a row ID and lookup type
 
-Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a record ID and lookup type entered into the fields in Power Apps.
+Expanding on the previous table, here are more examples of fields that don't work with values selected from the dynamic content list. Instead, these fields require both a row ID and lookup type entered into the fields in Power Apps.
 
 * **Owner** and **Owner Type**.
   
-  * The **Owner** field must be a valid user or team record ID.
+  * The **Owner** field must be a valid user or team row ID.
   * The **Owner Type** must be either **systemusers** or **teams**.
 * **Customer** and **Customer Type**.
   
-  * The **Customer** field must be a valid account or contact record ID.
+  * The **Customer** field must be a valid account or contact row ID.
   * The **Customer Type** must be either **accounts** or **contacts**.
 * **Regarding** and **Regarding Type**.
   
-  * The **Regarding** field must be a valid record ID, such as an account or contact record ID.
+  * The **Regarding** field must be a valid row ID, such as an account or contact row ID.
   * The **Regarding Type** must be the lookup type for the record, such as **accounts** or **contacts**.
 
-This example adds an account record that corresponds to the record ID, adding it to the **Regarding** field of the task.
+This example adds an account row that corresponds to the row ID, adding it to the **Regarding** field of the task.
 
   ![Flow recordId and type account](./media/connection-dynamics365/flow-recordid-account.png)
 
-This example also assigns the task to a specific user based on the user's record ID.
+This example also assigns the task to a specific user based on the user's row ID.
 
   ![Flow recordId and type user](./media/connection-dynamics365/flow-recordid-user.png)
 
-To find a record's ID, see [Find the record ID](#find-the-records-id) later in this topic.
+To find a record's ID, see [Find the row ID](#find-the-records-id) later in this topic.
 
 > **Important:** Fields shouldn't contain a value if they have a description of "For internal use only." These fields include **Traversed path**, **Additional Parameters**, and **Time Zone Rule Version Number.**
 > 
@@ -151,7 +151,7 @@ To find a record's ID, see [Find the record ID](#find-the-records-id) later in t
 2. On the actions toolbar, click or tap **Pop Out**
    ![popout record](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
    
-    In the address bar of the web browser, the URL contains the record ID between the %7b and %7d encoding characters.
+    In the address bar of the web browser, the URL contains the row ID between the %7b and %7d encoding characters.
    
    ![A screenshot that displays the recordId](./media/connection-dynamics365/recordid.png)
 

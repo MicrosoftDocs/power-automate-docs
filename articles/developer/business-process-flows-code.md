@@ -33,10 +33,10 @@ This topic provides information about how you can programmatically work with bus
 
 Custom tables and tables that have updated UI forms can participate in the business process flow. The updated UI tables have the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> property set to `true`. 
 
-To enable an table for the business process flow, set the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> property to `true`.
+To enable a table for the business process flow, set the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> property to `true`.
 
 > [!IMPORTANT]
->  Enabling an table for business process flow is a one way process. You can’t reverse it.
+>  Enabling a table for business process flow is a one way process. You can’t reverse it.
 
    
 <a name="DefineBPF"></a>   

@@ -281,7 +281,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
             <tr>
                 <td>
                     
-   Trigger on multiple Common Data Service entity events
+   Trigger on multiple Dataverse table events
                     
                 </td>
                 <td>
@@ -467,7 +467,7 @@ To allow the sales person to trigger the approval request on demand:
 
 1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the entity. 
 
-   This trigger allows a cloud flow to run on-demand on a record or set of records.
+   This trigger allows a cloud flow to run on-demand on a row or set of records.
 
 1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Microsoft Dataverse – List rows** action. The goal is to get the individual items from a Quote, so set the **Table name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
 
@@ -518,7 +518,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **Workflows that need a list of records**  
 
-  Use the **list records** action. When using this action, define the record filtering criteria using OData syntax to optimize the action by minimizing the number of records you want to retrieve.
+  Use the **list records** action. When using this action, define the row filtering criteria using OData syntax to optimize the action by minimizing the number of records you want to retrieve.
 
 - **Workflows that sleep to run on a schedule**  
 

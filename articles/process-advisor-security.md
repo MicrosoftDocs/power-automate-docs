@@ -34,7 +34,7 @@ Some privileges are set by default in Dataverse. This allows built-in security r
 - Environment makers can use process advisor to create and share processes.
 - Administrators and system customizers can access all processes created in the environment.
 
-These security roles have privileges to the process advisor entities in Dataverse. Custom security roles can create process in process advisor if they have the following permissions:
+These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create process in process advisor if they have the following permissions:
 
 - Organization read permission on the User and User Settings tables (Business Management tab)
 - Organization read permission on the Entity, Field and Relationship tables (Customization tab)

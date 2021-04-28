@@ -36,7 +36,7 @@ This table lists the set of dialog capabilities and the equivalent capabilities 
 |---------|---------|---------|
 |Page     | Yes <br/> (business process stage)    | Yes <br/> (app screen)        |
 |Prompt only   |  No    |  Yes <br/> (labels)        |
-|Prompt and response     |  Yes <br/> (entity attributes only)    | Yes <br/> (labels and input fields)    |
+|Prompt and response     |  Yes <br/> (table columns only)    | Yes <br/> (labels and input fields)    |
 |Input arguments     |  Limited <br/> (steps in business process stage)    | Yes <br/> (query string parameters)     |
 |Variables   |  No     |  Yes       |
 |Query variables    |  No     |  Yes     |

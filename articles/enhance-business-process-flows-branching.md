@@ -30,7 +30,7 @@ Business process flows guide you through various stages of sales, marketing, or 
 ## What you need to know when designing business process flows with branches  
  Take notice of the following information when you design the business process flow with the branches:  
   
--   A process can span across a maximum of 5 unique entities.  
+-   A process can span across a maximum of 5 unique tables.  
   
 -   You can use a maximum of 30 stages per process and a maximum of 30 steps per stage.  
   
@@ -40,7 +40,7 @@ Business process flows guide you through various stages of sales, marketing, or 
   
 -   You can combine multiple conditions in a rule by using the `AND` operator or the `OR` operator, but not both operators.  
   
--   When you define a process flow, you can optionally select an entity relationship. This relationship must a 1:N (One-to-Many) entity relationship.  
+-   When you define a process flow, you can optionally select a table relationship. This relationship must a 1:N (One-to-Many) table relationship.  
   
 -   More than one active process can run concurrently on the same data record.  
   
@@ -51,8 +51,8 @@ Business process flows guide you through various stages of sales, marketing, or 
 -   Client API changes cannot trigger evaluation of branching condition, as branching relies on Business rules.
   
 > [!NOTE]
-> - An entity used in the process can be revisited multiple times (multiple closed entity loops).  
-> - A process can go back to the previous stage regardless of an entity type. For example, if the active stage is **Deliver Quote** on a quote record, process users can move the active stage back to the **Propose** stage on an opportunity record.  
+> - A table used in the process can be revisited multiple times (multiple closed table loops).  
+> - A process can go back to the previous stage regardless of a table type. For example, if the active stage is **Deliver Quote** on a quote record, process users can move the active stage back to the **Propose** stage on an opportunity record.  
 >   
 >   In another example, suppose a process is currently in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal presented to the customer requires more research to identify customer needs, users can simply select the **Identify Needs** stage of your process and choose **Set Active**.  
   
@@ -96,7 +96,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
 <a name="PreventInformation"></a>   
 ## Prevent information disclosure  
- Consider a business process flow with branches for processing a loan request at a bank, as shown below. The custom entities used in the stages are shown in parenthesis.  
+ Consider a business process flow with branches for processing a loan request at a bank, as shown below. The custom tables used in the stages are shown in parenthesis.  
   
  ![Flow chart showing the steps in an example process to prevent information disclosure](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Flow chart showing the steps in an example process to prevent information disclosure")  
   
@@ -114,7 +114,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
  ![Flow chart showing steps for an investigation process for information disclosure cases](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Flow chart showing steps for an investigation process for information disclosure cases")  
   
- You will need to provide a workflow to synchronize the Approve/Deny decision from the Investigation record to the Request record.  
+ You will need to provide a workflow to synchronize the Approve/Deny decision from the Investigation row to the Request record.  
   
 ### Next steps  
  [Create a business process flow](create-business-process-flow.md)   

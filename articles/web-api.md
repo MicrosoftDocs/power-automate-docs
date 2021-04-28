@@ -86,12 +86,12 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 | workflowuniqueid  | The unique identifier for this installation of the flow. |
 | workflowid        | The unique identifier for a cloud flow across all imports. |
 | createdon         | The date when the flow was created. |
-| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers entity in Dataverse. |
+| _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers table in Dataverse. |
 | modifiedon        | The last time the flow was updated. |
 | ismanaged         | Indicates if the flow was installed via a managed solution. |
 | name              | The display name that you have given the flow. |
-| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers entity in Dataverse. |
-| _createdby_value  | The user who created the flow. This is an id from the systemusers entity in Dataverse. |
+| _modifiedby_value | The last user who updated the flow. This is an id from the systemusers table in Dataverse. |
+| _createdby_value  | The user who created the flow. This is an id from the systemusers table in Dataverse. |
 | type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |

@@ -363,7 +363,7 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-05-23
 * **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that brings together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
 * **Widgets on iOS and Android** - Power Automate widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
-* **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a record in Dynamics 365.
+* **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a row in Dynamics 365.
 * **Integer and float variables** -  Initialize and increment or decrement counters inside of a cloud flow run to count how many times a certain set of logic runs.
 * **Flow details page** - When you select a cloud flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
 * **Flow run quotas for admins** - Administrators can now monitor flow run usage across an organization against the common company run quota and get a quota breakdown to understand what licenses contribute to their quota.

@@ -30,9 +30,9 @@ This topic contains best practices for creating and managing background workflow
   
 <a name="BKMK_AvoidInfiniteLoops"></a>   
 ## Avoid infinite loops  
-It’s possible to create logic in a background workflow that initiates an infinite loop, which consumes server resources and affects performance. The typical situation where an infinite loop might occur is if you have a background workflow configured to start when an attribute is updated and then updates that attribute in the logic of the workflow. The update action triggers the same background workflow that updates the record and triggers the background workflow again and again.  
+It’s possible to create logic in a background workflow that initiates an infinite loop, which consumes server resources and affects performance. The typical situation where an infinite loop might occur is if you have a background workflow configured to start when an column is updated and then updates that column in the logic of the workflow. The update action triggers the same background workflow that updates the row and triggers the background workflow again and again.  
   
-The workflows you create include logic to detect and stop infinite loops. If a background workflow process is run more than a certain number of times on a specific record in a short period of time, the process fails with the following error: **This workflow job was canceled because the workflow that started it included an infinite loop. Correct the workflow logic and try again.** The limit of times is 16.  
+The workflows you create include logic to detect and stop infinite loops. If a background workflow process is run more than a certain number of times on a specific row in a short period of time, the process fails with the following error: **This workflow job was canceled because the workflow that started it included an infinite loop. Correct the workflow logic and try again.** The limit of times is 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
 ## Use background workflow templates  
@@ -50,7 +50,7 @@ For background (asynchronous) workflows, we recommend selecting the **Automatica
 ![Workflow job retention](media/workflow-job-retention.png)
 
 ## Limit the number of workflows that update the same entity
-Running more than one background workflow that updates the same entity can cause resource lock issues. Imagine several workflows running where every opportunity update triggers an update to the associated account. Multiple instances of these workflows running and attempting to update the same account record at the same time can result in resource locking issues. Background workflow failures occur and an error message, such as **SQL Timeout: Cannot obtain lock on resource _resource name_**, is recorded. 
+Running more than one background workflow that updates the same table can cause resource lock issues. Imagine several workflows running where every opportunity update triggers an update to the associated account. Multiple instances of these workflows running and attempting to update the same account row at the same time can result in resource locking issues. Background workflow failures occur and an error message, such as **SQL Timeout: Cannot obtain lock on resource _resource name_**, is recorded. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

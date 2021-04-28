@@ -43,7 +43,7 @@ Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based
   
     -   In the **Category** list, select **Business Process Flow**.  
   
-    -   In the **Entity** list, select the entity you want.  
+    -   In the **Entity** list, select the table you want.  
   
 5.  Select the **Run process as a task flow (Mobile online)** option.  
   
