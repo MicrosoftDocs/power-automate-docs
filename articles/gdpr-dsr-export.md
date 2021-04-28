@@ -188,7 +188,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## Export approval history
 
-Power Automate Approvals History captures history of approvals that have been received or sent for a user. Any user can view their approval history by:
+Power Automate Approvals History captures the history of approvals that have been received or sent for a user. Any user can view their approval history by:
 
 1. Signing into [Power Automate](https://flow.microsoft.com/), selecting **Approvals**, and then selecting **History**.
 
