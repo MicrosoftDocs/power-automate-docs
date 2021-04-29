@@ -99,6 +99,8 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
+   ![Permissions based on security role](./media/register-machines/connect-directly-to-machine.png)
+
 1. Select the desktop flow you want to run and the desired run mode. 
 
 1. Save your cloud flow. 
@@ -147,6 +149,8 @@ You can share a machine with other users in your organization, giving those user
 1. Select the name of the person to choose with which permissions they can access the machine. 
 
 1. Click **Save**. 
+
+  ![Permissions based on security role](./media/register-machines/share-machine.png)
 
 There are two levels of permissions that you can use when managing access to your machine: 
 

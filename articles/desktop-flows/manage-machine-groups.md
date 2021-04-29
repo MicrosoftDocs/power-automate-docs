@@ -90,6 +90,9 @@ When you add your machine to a group, any connections currently targeting your m
 1. Enter the username and password you would use to sign into your machines. 
 
 1. Click **Create**. 
+    
+   ![The Change machine group and Remove from group options](./media/manage-machine-groups/connect-directly-to-machine.png)
+
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -144,6 +147,8 @@ You can share a machine group with other users in your organization, giving thos
 1. Select the name of the person to choose with which permissions they can access the machine group. 
 
 1. Click **Save**. 
+
+   ![The Change machine group and Remove from group options](./media/manage-machine-groups/share-machine-group.png)
 
 There are two levels of permissions that you can use when managing access to your machine group: 
 
