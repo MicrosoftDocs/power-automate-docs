@@ -49,7 +49,7 @@ For background (asynchronous) workflows, we recommend selecting the **Automatica
 
 ![Workflow job retention](media/workflow-job-retention.png)
 
-## Limit the number of workflows that update the same entity
+## Limit the number of workflows that update the same table
 Running more than one background workflow that updates the same table can cause resource lock issues. Imagine several workflows running where every opportunity update triggers an update to the associated account. Multiple instances of these workflows running and attempting to update the same account row at the same time can result in resource locking issues. Background workflow failures occur and an error message, such as **SQL Timeout: Cannot obtain lock on resource _resource name_**, is recorded. 
 
   

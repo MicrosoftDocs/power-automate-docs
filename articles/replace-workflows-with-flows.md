@@ -65,7 +65,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
             <tr>
                 <td>
                     
-   Wait conditions on fields
+   Wait conditions on columns
                     
                 </td>
                 <td>
@@ -264,7 +264,7 @@ This table summarizes a comparison between Power Automate and classic workflows 
                 <td>
                     
    Trigger conditionally on column values (For example, on a
-   certain date in a date field)
+   certain date in a date column)
                     
                 </td>
                 <td>
@@ -465,21 +465,21 @@ To allow the sales person to trigger the approval request on demand:
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a cloud flow in a solution](create-flow-solution.md). 
 
-1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the entity. 
+1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the table. 
 
    This trigger allows a cloud flow to run on-demand on a row or set of records.
 
-1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Microsoft Dataverse – List rows** action. The goal is to get the individual items from a Quote, so set the **Table name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** field, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
+1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Microsoft Dataverse – List rows** action. The goal is to get the individual items from a Quote, so set the **Table name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** column, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
 
     ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List records card")
 
 1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set **Name** to **Quote line summary**, and **Type** to **String** (from the drop-down list), and leave **Value** empty.
 
-1. Add the **Append to string variable** action and then select the **Quote line summary** variable we created earlier. In the **Value** field, select **Quantity**, **Name**, **Price Per Unit**, **Extended amount**, and **Manual discount** from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
+1. Add the **Append to string variable** action and then select the **Quote line summary** variable we created earlier. In the **Value** column, select **Quantity**, **Name**, **Price Per Unit**, **Extended amount**, and **Manual discount** from the list of dynamic values. The Power Automate designer identifies that these values are from a list of quote line items, and adds this action in an **Apply to each** loop to ensure information from each line item is added to this summary.
 
     ![Screenshot showing selection of values.](media/define-flow-2.png "Complete 'Apply to each' card")
 
-1. To request approval on the quote summary we’ve created, add the **Approval – Start and wait for an approval** action. Select an **Approval type** (for example, **Approve/Reject – First to respond**), give the approval request a **Title** (for example, the name of the quote for which approval is being requested, picked from the list of dynamic values), and enter the email address for the person who needs to review and approve the quote in the **Assigned to** field. In the **Details** field, add the **Quote line summary** variable, along with any other information that might be relevant using the dynamic value picker (for example, **Total Amount**).
+1. To request approval on the quote summary we’ve created, add the **Approval – Start and wait for an approval** action. Select an **Approval type** (for example, **Approve/Reject – First to respond**), give the approval request a **Title** (for example, the name of the quote for which approval is being requested, picked from the list of dynamic values), and enter the email address for the person who needs to review and approve the quote in the **Assigned to** column. In the **Details** column, add the **Quote line summary** variable, along with any other information that might be relevant using the dynamic value picker (for example, **Total Amount**).
 
 1. To determine what happens once an approval is accepted or rejected, add the **Condition** action. Select **Outcome** from the list of dynamic values from the first field in the condition, **contains** from the drop-down list in the second field, and enter **Approve** in the third field of the condition. Finally, add actions based on the outcome of the approval (for example, send a notification email).
 

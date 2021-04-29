@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Use custom controls in business process flows
 
-Business process flows provide a guided way to get work done in the form of stages and steps. Stages tell you where you are in the process, while steps are action items that lead to a desired outcome. Steps in a business process are bound to fields in Microsoft Dataverse. In addition to the default visualizations of the control type (text boxes, dropdowns, and so on), you can use custom controls to add rich visualizations (such as sliders, radial knobs, the LinkedIn control, and more) to business process flows steps and deliver engaging experiences to those who use your business process.
+Business process flows provide a guided way to get work done in the form of stages and steps. Stages tell you where you are in the process, while steps are action items that lead to a desired outcome. Steps in a business process are bound to columns in Microsoft Dataverse. In addition to the default visualizations of the control type (text boxes, dropdowns, and so on), you can use custom controls to add rich visualizations (such as sliders, radial knobs, the LinkedIn control, and more) to business process flows steps and deliver engaging experiences to those who use your business process.
 
 ## Adding custom controls to a business process
 

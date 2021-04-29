@@ -73,7 +73,7 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 
@@ -89,9 +89,9 @@ Here's an example of creating a follow-up task when the given user creates a new
 
 ## Advanced concepts
 
-### Write data into customer, owner, and regarding fields
+### Write data into customer, owner, and regarding columns
 
-To write data into customer, owner, and regarding fields, two fields must be populated.
+To write data into customer, owner, and regarding columns, two columns must be populated.
 
 | Column category | Example settings |
 | --- | --- |

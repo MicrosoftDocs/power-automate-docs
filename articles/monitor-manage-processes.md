@@ -87,9 +87,9 @@ If your organization uses background workflows or business process flows that ru
 Notice that you have the option of performing an immediate synchronous bulk delete of the records by selecting the **Immediately** option. This delete is performed with direct SQL Server execution rather than passing each row through the delete event pipeline, which can reduce the impact to system performance. This is a good option if you want to quickly clean up the extra background workflow records instead of the bulk delete job waiting in the asynchronous queue for processing. 
 
 The **Immediately** option is enabled when the following conditions are true: 
-- Bulk delete job is for the System Jobs entity.
+- Bulk delete job is for the System Jobs table.
 - The search criteria has the condition System Job Type Equals Workflow. 
-- The user creating the bulk delete job has global depth for the delete privilege on the AsyncOperation entity. The System Administrator security role has this privilege.  
+- The user creating the bulk delete job has global depth for the delete privilege on the AsyncOperation table. The System Administrator security role has this privilege.  
 
 The synchronous bulk delete will only delete AsyncOperation records in the completed state. A maximum of 1 million records are processed for each invocation. You will need to execute the job multiple times if your environment has more than 1 million records to remove.  
   

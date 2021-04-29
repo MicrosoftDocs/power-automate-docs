@@ -39,7 +39,7 @@ Background workflow processes can perform the actions listed in the following ta
 |**Create Record**|Creates a new row for a table and assigns values you choose to columns.|  
 |**Update Record**|You can update the row that the background workflow is running on, any of the records linked to that row in an N:1 relationships, or any records created by earlier steps.|  
 |**Assign Record**|You can assign the row that the background workflow is running on, any of the records linked to that row with an N:1 relationship, or any records created by earlier steps.|  
-|**Send Email**|Sends an email. You can choose to create a new email message or use an email template configured for the table of the row that the background workflow is running on or any tables that have an N:1 relationship with the entity, or the table for any rows created by earlier steps.|  
+|**Send Email**|Sends an email. You can choose to create a new email message or use an email template configured for the table of the row that the background workflow is running on or any tables that have an N:1 relationship with the table, or the table for any rows created by earlier steps.|  
 |**Start Child Workflow**|Starts a background workflow process that has been configured as a child workflow.|  
 |**Change Status**|Changes the status of the row that the process is running on, any of the records linked to that row with an N:1 relationship, or any records created by earlier steps.|  
 |**Stop Workflow**|Stops the current workflow. You can set a status of either **Succeeded** or **Canceled** and specify a status message.|  
@@ -49,17 +49,17 @@ Background workflow processes can perform the actions listed in the following ta
 
 When you create a row you can set values for the record. When you update a row you can set, append, increment, decrement, multiply, or clear values.  
   
-When you select **Set Properties**, a dialog box opens showing you the default form for the entity.  
+When you select **Set Properties**, a dialog box opens showing you the default form for the table.  
   
-At the bottom of the dialog box you can see a list of additional fields not present in the form.  
+At the bottom of the dialog box you can see a list of additional columns not present in the form.  
   
-For any field, you can set a static value and that will be set by the workflow.  
+For any column, you can set a static value and that will be set by the workflow.  
   
-On the right side of the dialog box, the **Form Assistant** gives you the ability to set or append dynamic values from the context of the current record. This includes values from related records that can be accessed from the N:1 (many-to-one) relationships for the entity.  
+On the right side of the dialog box, the **Form Assistant** gives you the ability to set or append dynamic values from the context of the current record. This includes values from related records that can be accessed from the N:1 (many-to-one) relationships for the table.  
   
-The options available in the **Form Assistant** depend on the column you have selected in the form. When you set a dynamic value, you will see a yellow placeholder known as a ‘slug’ that shows where the dynamic data will be included. If you want to remove the value, just select the slug and delete it. For text fields, you can use a combination of static and dynamic data.  
+The options available in the **Form Assistant** depend on the column you have selected in the form. When you set a dynamic value, you will see a yellow placeholder known as a ‘slug’ that shows where the dynamic data will be included. If you want to remove the value, just select the slug and delete it. For text columns, you can use a combination of static and dynamic data.  
   
-With dynamic values, you don’t know for certain that a column or related table has the value you want to set. You can actually set a number of fields to try to set the value and sort them in order using the green arrows. If the first column doesn’t have data, the second column will be tried and so on. If none of the fields has data, you can specify a default value to be used.  
+With dynamic values, you don’t know for certain that a column or related table has the value you want to set. You can actually set a number of columns to try to set the value and sort them in order using the green arrows. If the first column doesn’t have data, the second column will be tried and so on. If none of the columns has data, you can specify a default value to be used.  
   
 <a name="BKMK_SettingConditionsForWorkflowActions"></a>   
 

@@ -47,7 +47,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
 1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
 1. On the left navigation pane, select **Processes**. 
 1. On the **Actions** toolbar, select **New**.  
-1. In the **Create Process**  dialog box, complete the required fields:  
+1. In the **Create Process**  dialog box, complete the required columns:  
   
     - Enter a process name. The name of the process doesn’t need to be unique, but it should be meaningful for people who need to choose a process. You can change this later.  
   
@@ -57,7 +57,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
   
     - In the **Entity** list, select the table on which you want to base the process.  
   
-         The table you select affects the fields available for steps that can be added to the first stage of the process flow. If you don’t find the table you want, make sure the table has the Business process flows (fields will be created) option set in the table definition. You cannot change this after you save the process.  
+         The table you select affects the columns available for steps that can be added to the first stage of the process flow. If you don’t find the table you want, make sure the table has the Business process flows (columns will be created) option set in the table definition. You cannot change this after you save the process.  
 1. Select **OK**.  
   
      The new process is created, and the business process flow designer opens with a single stage created for you.  
@@ -90,7 +90,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
      > [!NOTE]
      >
      > - If you set a two-option boolean column as **Required**, users can't continue unless the column value is **Yes**. The user is required to mark the column as completed before moving to the next stage.
-     > - If either **Yes** or **No** are acceptable column values, then you should make the column an option set instead of a two-option boolean field.
+     > - If either **Yes** or **No** are acceptable column values, then you should make the column an option set instead of a two-option boolean column.
   
 1. **Add a branch (condition) to the process.** To add a branching condition:  
   
@@ -162,7 +162,7 @@ You can add or change the following properties of a stage:
   
 - **Stage Category**. A category lets you group stages by a type of action. It is useful for reports that will group records by the stage they are in. The options for the stage category come from the Stage Category global option set. You can add additional options to this global option set and change the labels of existing options if you want. You can also delete these options if you wish, but we recommend that you keep the existing options. You won’t be able to add the exact same option back if you delete it. If you don’t want them to be used, change the label to ”Do not use”.  
   
-- **Relationship**. Enter a relationship when the preceding stage in the process is based on a different entity. For the stage currently being defined, choose **Select relationships** to identify a relationship to use when moving between the two stages. It is recommended you select a relationship for the following benefits:  
+- **Relationship**. Enter a relationship when the preceding stage in the process is based on a different table. For the stage currently being defined, choose **Select relationships** to identify a relationship to use when moving between the two stages. It is recommended you select a relationship for the following benefits:  
   
     -   Relationships often have column maps defined that automatically carry over data between records, minimizing data entry.  
   
@@ -248,7 +248,7 @@ To do this, you'll need to do two things:
 
 1. Add the **Parse JSON** action. 
 1. Set **Content** to **entity** by selecting it from the list of dynamic values for the **When a row is selected** trigger.
-1. Paste the following content into the **Schema** field.
+1. Paste the following content into the **Schema** column.
 
     ```json
     {
@@ -320,7 +320,7 @@ To do this, you'll need to do two things:
      Now that we have the data, define the approval process by adding the **Start and wait for an approval (V2)** action, and then filling in the relevant information. Learn more about [approvals]( sequential-modern-approvals.md) if you are not familiar.
 
      > [!TIP]
-     > - Use the dynamic content picker to add fields from the **Get record** action to add relevant information to the approval request so that approvers can easily know what the request is about. 
+     > - Use the dynamic content picker to add columns from the **Get record** action to add relevant information to the approval request so that approvers can easily know what the request is about. 
      > - To provide further context regarding the active stage that the business process is in, add the **BPFActiveStageLocalizedName** column from the list of dynamic values.
 
      Your **Start and wait for an approval (V2)** card might look similar to this one:

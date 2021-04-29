@@ -49,11 +49,11 @@ Business process flows provide a guide for people to get work done. They provide
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
 > [!NOTE]
-> If there are any required fields on any stage, including the current stage, you will need to fill in the fields on those stages *before* saving the form or moving to a new stage.
+> If there are any required columns on any stage, including the current stage, you will need to fill in the columns on those stages *before* saving the form or moving to a new stage.
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### Business process flows integrated with other customizations  
- When you or your user enters data using business process flows, the data changes are also applied to form fields so that any automation provided by business rules or form scripts can be applied immediately. Steps can be added that set values for fields that are not present in the form and these fields will be added to the `Xrm.Page` object model used for form scripts. Any workflows that are initiated by changes to fields included in a business process flow will be applied when the data in the form is saved. If the automation is applied by a real-time workflow, the changes will be immediately visible to the user when the data in the form is refreshed after the row is saved.  
+ When you or your user enters data using business process flows, the data changes are also applied to form columns so that any automation provided by business rules or form scripts can be applied immediately. Steps can be added that set values for columns that are not present in the form and these columns will be added to the `Xrm.Page` object model used for form scripts. Any workflows that are initiated by changes to columns included in a business process flow will be applied when the data in the form is saved. If the automation is applied by a real-time workflow, the changes will be immediately visible to the user when the data in the form is refreshed after the row is saved.  
   
  Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls. If you hide a column in a form, that column will also be hidden in the business process flow control. If you set a value by using business rules or form scripts, that value will be set within the business process flow.  
   
@@ -136,7 +136,7 @@ Business process flows provide a guide for people to get work done. They provide
 -   Task  
 -   Team  
   
- To enable a custom table for business process flows, select the **Business process flows (fields will be created)** check box in the table definition. Note that you can’t undo this action.  
+ To enable a custom table for business process flows, select the **Business process flows (columns will be created)** check box in the table definition. Note that you can’t undo this action.  
   
 > [!NOTE]
 >  If you navigate to the business process flow stage that contains the `Social Activity` table and choose the **Next Stage** button, you’ll see the **Create** option. When you choose **Create**, the **Social Activity** form loads. However, because `Social Activity` isn’t valid for `Create` from the app user interface, you won’t be able to save the form and you’ll see the error message: “Unexpected error.”  
@@ -145,11 +145,11 @@ Business process flows provide a guide for people to get work done. They provide
 ### Maximum number of processes, stages, and steps  
  To ensure acceptable performance and the usability of the user interface, there are some limitations you need to be aware of when you plan to use business process flows:  
   
--   There can be no more than 10 activated business process flow processes per entity.  
+-   There can be no more than 10 activated business process flow processes per table.  
   
 -   Each process can contain no more than 30 stages.  
   
--   Multi-entity processes can contain no more than five tables.
+-   Multi-table processes can contain no more than five tables.
   
 ## Business process flow table customization support 
 
@@ -157,11 +157,11 @@ Introduced in the Dynamics 365 (online), version 9.0 update, business process fl
 
 ### Use business process flow table records with grids, views, charts, and dashboards
 
-With business processes flows available as an entity, you can now use advanced finds, views, charts, and dashboards sourced from business process flow data for a given entity, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other entity.
+With business processes flows available as an table, you can now use advanced finds, views, charts, and dashboards sourced from business process flow data for a given table, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other table.
 
 Business process flows, such as **Lead To Opportunity Sales Process**, appear as a customizable table in solution explorer.
 
-![Solution Explorer with lead-to-opportunity process entity](media/bpf-lead-solution-explorer.png)
+![Solution Explorer with lead-to-opportunity process table](media/bpf-lead-solution-explorer.png)
 
 To access a default business process flow view, open solution explorer, expand **Entities** > expand the process that you want, such as **Lead To Opportunity Sales Process**, select **Views**, and then select the view that you want.
 
@@ -178,7 +178,7 @@ You can use business process flows offline if the following conditions are met:
 
 - The business process flow is used from a Power Apps app.
 - The Power Apps app is enabled for offline use.
-- The business process flow has a single entity.
+- The business process flow has a single table.
 
 Specifically, the three commands that are available for a business process flow when the Power Apps app is offline are:
 
@@ -190,7 +190,7 @@ Specifically, the three commands that are available for a business process flow 
 
 Recent records are visible in a lookup column in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
 1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
-1. Go to **Tables** under **Data**. Search for your business process flow entity.
+1. Go to **Tables** under **Data**. Search for your business process flow table.
 
    ![A screenshot of a business process flow table](./media/bpf-entity-table.png)
 
@@ -204,7 +204,7 @@ Recent records are visible in a lookup column in the unified interface. To preve
 ### Limitations of using business process flow tables
 
 - Currently, you can’t create custom forms for tables based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
+- If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
 - Adding the process table to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  

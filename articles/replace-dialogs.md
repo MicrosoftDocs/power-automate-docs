@@ -55,7 +55,7 @@ This table lists the set of dialog capabilities and the equivalent capabilities 
 
 ### Additional capabilities with canvas apps
 - App analytics (app usage & performance)
-- Multi-entity page composition
+- Multi-table page composition
 - Run flows
 - Data connectors (standard and custom)
 - Launch as a stand-alone app

@@ -68,7 +68,7 @@ There are two paths to navigate to processes:
   
 - Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and go to **Components** > **Processes**. This path provides convenient access when you are doing other customization work in the customization tools.  
 
-- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Processes**. This path allows you to use views defined for the Process entity, including any custom views.  
+- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Processes**. This path allows you to use views defined for the Process table, including any custom views.  
   
 Individual business process flows can also be edited using the **Edit Process** button in the command bar for the form where the business process flow is active.  
   
@@ -114,7 +114,7 @@ Processes can check conditions, apply branching logic, and perform actions. They
 |**Create Record**|Workflow, Action|Creates a new row for a table and assigns values to columns.|  
 |**Update Record**|Workflow, Action|You can update the row that the workflow is running on, any of the records linked to that row in an N:1 relationship, or any records created by earlier steps.|  
 |**Assign Record**|Workflow, Action|You can assign the row that the workflow is running on, any of the records linked to that row with an N:1 relationship, or any records created by earlier steps.|  
-|**Send Email**|Workflow, Action|Sends an email. You can choose to create a new email message or use an email template configured for the table of the row that the workflow is running on or any tables that have an N:1 relationship with the entity, or the table for any records created by earlier steps.|  
+|**Send Email**|Workflow, Action|Sends an email. You can choose to create a new email message or use an email template configured for the table of the row that the workflow is running on or any tables that have an N:1 relationship with the table, or the table for any records created by earlier steps.|  
 |**Start Child Workflow**|Workflow, Action|Starts a workflow process that has been configured as a child workflow.|  
 |**Change Status**|Workflow, Action|Changes the status of the row that the process is running on, any of the records linked to that row with an N:1 relationship, or any records created by earlier steps.|  
 |**Stop Workflow**|Workflow, Action|Stops the current workflow or action. You can set a status of either **Succeeded** or **Canceled** and specify a status message.|  

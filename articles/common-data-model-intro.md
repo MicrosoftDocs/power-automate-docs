@@ -28,7 +28,7 @@ Improve operational efficiency with a unified view of business data by creating 
 For example, you can use Dataverse within Power Automate in these key ways:
 
 * Create a cloud flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a cloud flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a cloud flow that stores approval state in an table, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
 
 In this article, you will create a cloud flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Dataverse. The notification includes the *Notes* from the *Lead*.
 
@@ -64,7 +64,7 @@ In this article, you will create a cloud flow that sends an email notification w
 
 1. On the **When an Opportunity is created** card, select the **Environment**, **Entity Name**, and **Scope** that you want to use.
    
-    ![Specify the details for the entity](./media/common-data-model-intro/specify-instance.png)
+    ![Specify the details for the table](./media/common-data-model-intro/specify-instance.png)
 
 1. Complete the **Get Opportunity Record** card, per your requirements.
    

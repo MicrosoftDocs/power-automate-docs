@@ -138,7 +138,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. Select **Data**, and then select **Tables**.
 
-1. Select the ellipsis **(…)** for the **Flow Approval** entity, and then open the data in Microsoft Excel.
+1. Select the ellipsis **(…)** for the **Flow Approval** table, and then open the data in Microsoft Excel.
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
