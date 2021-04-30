@@ -60,7 +60,7 @@ If a template isn’t available for what you need, create a cloud flow from scra
 3. In the list of flow triggers, click or tap **Dynamics 365 - When a record is created (deprecated)**.
 4. If prompted, sign in to Dynamics 365.
 5. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.
-6. Under **Entity Name**, select the table that you want to listen to, which will act as a trigger initiating the flow.
+6. Under **Table Name**, select the table that you want to listen to, which will act as a trigger initiating the flow.
    
      For this walkthrough, select **Leads**.
    
@@ -108,11 +108,11 @@ When you add a value to a column, you must match the column type whether you typ
 
 | Column type | How to use | Where to find | Name | Data type |
 | --- | --- | --- | --- | --- |
-| Text columns |Text columns require a single line of text or dynamic content that is a text type column. Examples include the **Category** and **Sub-Category** columns. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**category** |**Single Line of Text** |
-| Integer columns |Some columns require integer or dynamic content that is an integer type column. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**percentcomplete** |**Whole Number** |
-| Date columns |Some columns require a date entered in mm/dd/yyyy format or dynamic content that is a date type column. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Task** > **Fields** |**createdon** |**Date and Time** |
-| Fields that require both a row ID and lookup type |Some columns that reference another table row require both the row ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Entities** > **Account** > **Fields** |**accountid** |**Primary Key** |
-|Option Set|Option Set columns require a known integer value to be passed into this type of column.  In the Dynamics 365 customization area, you an view the option sets backing integer column along with its respective label.|Settings > Customization > Customize the System > Tables> Account > Fields | Preferred Method of Contact| Whole Number|
+| Text columns |Text columns require a single line of text or dynamic content that is a text type column. Examples include the **Category** and **Sub-Category** columns. |**Settings** > **Customizations** > **Customize the System** > **Tables** > **Task** > **Fields** |**category** |**Single Line of Text** |
+| Integer columns |Some columns require integer or dynamic content that is an integer type column. Examples include **Percent Complete** and **Duration**. |**Settings** > **Customizations** > **Customize the System** > **Tables** > **Task** > **Fields** |**percentcomplete** |**Whole Number** |
+| Date columns |Some columns require a date entered in mm/dd/yyyy format or dynamic content that is a date type column. Examples include **Created On**, **Start Date**, **Actual Start**, **Last on Hold Time**, **Actual End**, and **Due Date**. |**Settings** > **Customizations** > **Customize the System** > **Tables** > **Task** > **Fields** |**createdon** |**Date and Time** |
+| Fields that require both a row ID and lookup type |Some columns that reference another table row require both the row ID and the lookup type. |**Settings** > **Customizations** > **Customize the System** > **Tables** > **Account** > **Fields** |**accountid** |**Primary Key** |
+|Choice|Choice columns require a known integer value to be passed into this type of column.  In the Dynamics 365 customization area, you can view the choices backing integer column along with its respective label.|Settings > Customization > Customize the System > Tables> Account > Fields | Preferred Method of Contact| Whole Number|
 
 ### More examples of columns that require both a row ID and lookup type
 

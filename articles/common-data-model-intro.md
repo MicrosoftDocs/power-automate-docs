@@ -62,13 +62,13 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Customize your flow template
 
-1. On the **When an Opportunity is created** card, select the **Environment**, **Entity Name**, and **Scope** that you want to use.
+1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
    
     ![Specify the details for the table](./media/common-data-model-intro/specify-instance.png)
 
 1. Complete the **Get Opportunity row** card, per your requirements.
    
-    ![Get Opportunity row](./media/common-data-model-intro/get-opportunity-record.png)
+    ![Get Opportunity row](./media/common-data-model-intro/get-opportunity-tables.png)
 
 1. Configure the **Originate from a Lead** card. 
    

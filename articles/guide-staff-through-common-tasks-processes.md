@@ -41,7 +41,7 @@ Power Apps includes several types of processes, each designed for a different pu
 Similar to processes, you can also create business rules and recommendations. More information: [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
-> Using processes can impact the license requirements for Power Apps and flows. More information: [Entity license requirements](/powerapps/maker/common-data-service/data-platform-entity-licenses) 
+> Using processes can impact the license requirements for Power Apps and flows. More information: [Table license requirements](/powerapps/maker/common-data-service/data-platform-entity-licenses) 
 
 
 <a name="BKMK_BP"></a>   

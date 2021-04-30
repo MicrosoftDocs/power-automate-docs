@@ -55,9 +55,9 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
   
          You cannot change the category after you create the process.  
   
-    - In the **Entity** list, select the table on which you want to base the process.  
+    - In the **Table** list, select the table on which you want to base the process.  
   
-         The table you select affects the columns available for steps that can be added to the first stage of the process flow. If you don’t find the table you want, make sure the table has the Business process flows (columns will be created) option set in the table definition. You cannot change this after you save the process.  
+         The table you select affects the columns available for steps that can be added to the first stage of the process flow. If you don’t find the table you want, make sure the table has the business process flows (columns will be created) choice in the table definition. You cannot change this after you save the process.  
 1. Select **OK**.  
   
      The new process is created, and the business process flow designer opens with a single stage created for you.  
@@ -90,7 +90,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
      > [!NOTE]
      >
      > - If you set a two-option boolean column as **Required**, users can't continue unless the column value is **Yes**. The user is required to mark the column as completed before moving to the next stage.
-     > - If either **Yes** or **No** are acceptable column values, then you should make the column an option set instead of a two-option boolean column.
+     > - If either **Yes** or **No** are acceptable column values, then you should make the column a choice instead of a two-option boolean column.
   
 1. **Add a branch (condition) to the process.** To add a branching condition:  
   
@@ -158,9 +158,9 @@ You can add or change the following properties of a stage:
   
 - **Stage Name**  
   
-- **Entity**. You can change the table for any stage except the first one.  
+- **Table**. You can change the table for any stage except the first one.  
   
-- **Stage Category**. A category lets you group stages by a type of action. It is useful for reports that will group rows by the stage they are in. The options for the stage category come from the Stage Category global option set. You can add additional options to this global option set and change the labels of existing options if you want. You can also delete these options if you wish, but we recommend that you keep the existing options. You won’t be able to add the exact same option back if you delete it. If you don’t want them to be used, change the label to ”Do not use”.  
+- **Stage Category**. A category lets you group stages by a type of action. It is useful for reports that will group rows by the stage they are in. The options for the stage category come from the Stage Category global choice. You can add additional options to this global choice and change the labels of existing options if you want. You can also delete these options if you wish, but we recommend that you keep the existing options. You won’t be able to add the exact same option back if you delete it. If you don’t want them to be used, change the label to ”Do not use”.  
   
 - **Relationship**. Enter a relationship when the preceding stage in the process is based on a different table. For the stage currently being defined, choose **Select relationships** to identify a relationship to use when moving between the two stages. It is recommended you select a relationship for the following benefits:  
   
@@ -215,7 +215,7 @@ Now, members of Contoso’s salesforce can kick-off the action from the **Opport
 
 ### Limitation of using Action Steps in a business process flow
 
-- Actions are not available as Action Steps if the input or output parameters are Entity, EntityCollection, or OptionSet (Picklist) types. Actions with more than one EntityReference output parameter or any number of EntityReference input parameters are not available as Action Steps. Actions not associated with a primary table (global action) are not available as Action Steps.
+- Actions are not available as Action Steps if the input or output parameters are Table, EntityCollection, or OptionSet (Choice) types. Actions with more than one EntityReference output parameter or any number of EntityReference input parameters are not available as Action Steps. Actions not associated with a primary table (global action) are not available as Action Steps.
 
 ## Instant flows in business process flows
 
@@ -239,7 +239,7 @@ To do this, you'll need to do two things:
 1. Select the **+ New** menu, and then select **Flow** from the list that appears.
 1. Search for, and then select the **Microsoft Dataverse** connector.
 1. Search for, and then select the **When a row is selected** trigger from the list of **Microsoft Dataverse** triggers.
-1. Set **Environment** to **Default**, and then set **Entity Name** to **Lead to Opportunity Sales Process**.
+1. Set **Environment** to **Default**, and then set **Table Name** to **Lead to Opportunity Sales Process**.
 1. Add a text input column for the user to enter the link to the proposal.
 
    ![Instant flow trigger](media/instant-flow-trigger.png "Instant flow trigger")
@@ -247,7 +247,7 @@ To do this, you'll need to do two things:
    We'll need information from the business process flow instance to help provide context for the approval request so follow these steps to do this.
 
 1. Add the **Parse JSON** action. 
-1. Set **Content** to **entity** by selecting it from the list of dynamic values for the **When a row is selected** trigger.
+1. Set **Content** to **table** by selecting it from the list of dynamic values for the **When a row is selected** trigger.
 1. Paste the following content into the **Schema** column.
 
     ```json

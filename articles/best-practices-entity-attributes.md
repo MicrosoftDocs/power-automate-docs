@@ -48,7 +48,7 @@ In our example, follow these steps to go to the **Lead to Opportunity Sales Proc
 
    ![lead to opportunity sales process table](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
-Here, you can define views and charts just as you do on any other entity.
+Here, you can define views and charts just as you do on any other table.
 
 ![translation process table details](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 

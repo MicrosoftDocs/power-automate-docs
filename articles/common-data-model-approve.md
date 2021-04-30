@@ -56,7 +56,7 @@ By following the steps in this section, you'll build:
     ![Create table](./media/common-data-model-approve/new-entity.png)
    
     If your browser window isn't maximized, this button might appear in a different place.
-6. Under **Entity name**, specify a name that doesn't contain spaces and that no other table in your database has.
+6. Under **Table name**, specify a name that doesn't contain spaces and that no other table in your database has.
    
     To follow this example exactly, specify **ReviewDropboxFiles**.
    

@@ -163,7 +163,7 @@ Business process flows, such as **Lead To Opportunity Sales Process**, appear as
 
 ![Solution Explorer with lead-to-opportunity process table](media/bpf-lead-solution-explorer.png)
 
-To access a default business process flow view, open solution explorer, expand **Entities** > expand the process that you want, such as **Lead To Opportunity Sales Process**, select **Views**, and then select the view that you want.
+To access a default business process flow view, open solution explorer, expand **Tables** > expand the process that you want, such as **Lead To Opportunity Sales Process**, select **Views**, and then select the view that you want.
 
 Several default views are available that you can view as a chart, such as the **Active Opportunity Sales Process** view. 
 
@@ -178,7 +178,7 @@ You can use business process flows offline if the following conditions are met:
 
 - The business process flow is used from a Power Apps app.
 - The Power Apps app is enabled for offline use.
-- The business process flow has a single entity.
+- The business process flow has a single table.
 
 Specifically, the three commands that are available for a business process flow when the Power Apps app is offline are:
 
@@ -190,7 +190,7 @@ Specifically, the three commands that are available for a business process flow 
 
 Recent rows are visible in a lookup column in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
 1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
-1. Go to **Tables** under **Data**. Search for your business process flow entity.
+1. Go to **Tables** under **Data**. Search for your business process flow table.
 
    ![A screenshot of a business process flow table](./media/bpf-entity-table.png)
 
@@ -204,7 +204,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 ### Limitations of using business process flow tables
 
 - Currently, you can’t create custom forms for tables based on a business process flow.
-- If a solution includes a business process flow entity, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
+- If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
 - Adding the process table to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  
