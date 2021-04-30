@@ -457,8 +457,8 @@ Imagine a sales scenario where you have put together a quotation for a customer 
 With flows, this scenario is easier to build, as demonstrated in the walkthrough later that covers some of the Power Automate capabilities. These capabilities include:
 
 - Creating a cloud flow that runs on demand.
-- Getting a list of records that are related to a Dataverse table.
-- Looping over a list of records.
+- Getting a list of rows that are related to a Dataverse table.
+- Looping over a list of rows.
 - Sending approval requests.
 
 To allow the sales person to trigger the approval request on demand:
@@ -467,11 +467,11 @@ To allow the sales person to trigger the approval request on demand:
 
 1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the table. 
 
-   This trigger allows a cloud flow to run on-demand on a row or set of records.
+   This trigger allows a cloud flow to run on-demand on a row or set of rows.
 
 1. With the trigger configured, add actions to run in the flow. This provides the approver with the summary detail that they need to identify the quoted items and values. Begin by adding the **Microsoft Dataverse – List rows** action. The goal is to get the individual items from a Quote, so set the **Table name** to **Quote lines**. To ensure the list contains only those quote line items that belong to the Quote for which the flow was triggered, we’ll specify an OData style filter criterion. In the **Filter Query** column, type *\_quoteid_value eq* and then select **Quote** from the list of dynamic values that appear.
 
-    ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List records card")
+    ![Screenshot showing how to add actions.](media/define-flow-1.png "Complete List rows card")
 
 1. Because we want to summarize quote line items for the approval, add the **Initialize variable** action. Set **Name** to **Quote line summary**, and **Type** to **String** (from the drop-down list), and leave **Value** empty.
 
@@ -516,9 +516,9 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   Use the [do-until](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) or [apply to each](/azure/logic-apps/logic-apps-control-flow-loops#foreach-loop) loop in flows instead.
 
-- **Workflows that need a list of records**  
+- **Workflows that need a list of rows**  
 
-  Use the **list records** action. When using this action, define the row filtering criteria using OData syntax to optimize the action by minimizing the number of records you want to retrieve.
+  Use the **list rows** action. When using this action, define the row filtering criteria using OData syntax to optimize the action by minimizing the number of rows you want to retrieve.
 
 - **Workflows that sleep to run on a schedule**  
 
@@ -530,7 +530,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **Monitor background workflow runs for failures**  
 
-  In Power Automate, use the **run-after setting** on an action to configure it to run when the previous action fails. For example, send a Power Automate mobile notification when the **update a record** action fails, or times out.
+  In Power Automate, use the **run-after setting** on an action to configure it to run when the previous action fails. For example, send a Power Automate mobile notification when the **update a row** action fails, or times out.
 
 ## FAQs
 

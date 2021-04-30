@@ -30,7 +30,7 @@ search.audienceType:
 >There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Microsoft Dataverse (legacy)**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
 
-With the Microsoft Dataverse (legacy), you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
+With the Microsoft Dataverse (legacy), you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
 ## Initiate a cloud flow from Dataverse
 
@@ -49,7 +49,7 @@ If the selected trigger requires an environment to be selected, then you can cho
 > [!div class="mx-imgBorder"]
 > ![Choose environment](./media/cds-connector/Environments.png)
 
-You can use scopes to determine if your flow runs if you create a new record, if a new row is created by a user within your business unit, or if a new row is created by any user in your organization.
+You can use scopes to determine if your flow runs if you create a new row, if a new row is created by a user within your business unit, or if a new row is created by any user in your organization.
 
 > [!div class="mx-imgBorder"]
 > ![Choose scope](./media/cds-connector/Scopes.png)
@@ -73,16 +73,16 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a row, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 
 Use any of the following actions to write data into Dataverse:
 
-- Create a new record
-- Update a record
+- Create a new row
+- Update a row
 
-Here's an example of creating a follow-up task when the given user creates a new account record.  
+Here's an example of creating a follow-up task when the given user creates a new account row.  
 
 > [!div class="mx-imgBorder"]
 > ![Follow-up task](./media/cds-connector/Regarding.png)
@@ -101,11 +101,11 @@ To write data into customer, owner, and regarding columns, two columns must be p
 
 ### Enable upsert behavior
 
-You can leverage the **update a record** command to provide upsert actions, which updates the row if it already exists, or creates a new record. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
+You can leverage the **update a row** command to provide upsert actions, which updates the row if it already exists, or creates a new row. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
 
 ### Trigger behavior
 
-If you have a trigger registered on the update of a record, the flow runs for every *committed* update to the given record. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
+If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 

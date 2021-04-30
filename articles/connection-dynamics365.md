@@ -42,7 +42,7 @@ In Power Automate, you can set up automated workflows between your favorite apps
 You can create a cloud flow using one of the many templates available, such as these examples:
 
 * When an object is created in Dynamics 365, create a list item in SharePoint.
-* Create Dynamics 365 lead records from an Excel table.
+* Create Dynamics 365 leads from an Excel table.
 * Copy Dynamics 365 accounts to customers in Dynamics 365 for Operations.
 
 To create a cloud flow from a template, follow these steps.
@@ -129,31 +129,31 @@ Expanding on the previous table, here are more examples of columns that don't wo
 * **Regarding** and **Regarding Type**.
   
   * The **Regarding** column must be a valid row ID, such as an account or contact row ID.
-  * The **Regarding Type** must be the lookup type for the record, such as **accounts** or **contacts**.
+  * The **Regarding Type** must be the lookup type for the row, such as **accounts** or **contacts**.
 
 This example adds an account row that corresponds to the row ID, adding it to the **Regarding** column of the task.
 
-  ![Flow recordId and type account](./media/connection-dynamics365/flow-recordid-account.png)
+  ![Flow rowId and type account](./media/connection-dynamics365/flow-recordid-account.png)
 
 This example also assigns the task to a specific user based on the user's row ID.
 
-  ![Flow recordId and type user](./media/connection-dynamics365/flow-recordid-user.png)
+  ![Flow rowId and type user](./media/connection-dynamics365/flow-recordid-user.png)
 
-To find a record's ID, see [Find the row ID](#find-the-records-id) later in this topic.
+To find a row's ID, see [Find the row ID](#find-the-records-id) later in this topic.
 
 > **Important:** Fields shouldn't contain a value if they have a description of "For internal use only." These columns include **Traversed path**, **Additional Parameters**, and **Time Zone Rule Version Number.**
 > 
 > 
 
-## Find the record's ID
+## Find the row's ID
 
-1. In the Dynamics 365 web application, open a record, such as an account record.
+1. In the Dynamics 365 web application, open a row, such as an account row.
 2. On the actions toolbar, click or tap **Pop Out**
-   ![popout record](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
+   ![popout row](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
    
     In the address bar of the web browser, the URL contains the row ID between the %7b and %7d encoding characters.
    
-   ![A screenshot that displays the recordId](./media/connection-dynamics365/recordid.png)
+   ![A screenshot that displays the rowId](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
 

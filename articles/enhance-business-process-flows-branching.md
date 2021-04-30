@@ -42,7 +42,7 @@ Business process flows guide you through various stages of sales, marketing, or 
   
 -   When you define a process flow, you can optionally select a table relationship. This relationship must a 1:N (One-to-Many) table relationship.  
   
--   More than one active process can run concurrently on the same data record.  
+-   More than one active process can run concurrently on the same data row.  
   
 -   You can rearrange tiles (Stages, Steps, Conditions etc.) on the process flow  using drag and drop.  
   
@@ -52,7 +52,7 @@ Business process flows guide you through various stages of sales, marketing, or 
   
 > [!NOTE]
 > - A table used in the process can be revisited multiple times (multiple closed table loops).  
-> - A process can go back to the previous stage regardless of a table type. For example, if the active stage is **Deliver Quote** on a quote record, process users can move the active stage back to the **Propose** stage on an opportunity record.  
+> - A process can go back to the previous stage regardless of a table type. For example, if the active stage is **Deliver Quote** on a quote row, process users can move the active stage back to the **Propose** stage on an opportunity row.  
 >   
 >   In another example, suppose a process is currently in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal presented to the customer requires more research to identify customer needs, users can simply select the **Identify Needs** stage of your process and choose **Set Active**.  
   
@@ -100,11 +100,11 @@ Let’s look at the example of the business process flow with two branches, for 
   
  ![Flow chart showing the steps in an example process to prevent information disclosure](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Flow chart showing the steps in an example process to prevent information disclosure")  
   
- In this scenario, the bank loan officer needs access to the Request record, but the loan officer shouldn’t have any visibility into the investigation of the request. At first glance, it looks that we can easily do this by assigning the loan officer a security role that specifies no access to the Investigation table. But, let’s look at the example in more detail and see if this is really true.  
+ In this scenario, the bank loan officer needs access to the Request row, but the loan officer shouldn’t have any visibility into the investigation of the request. At first glance, it looks that we can easily do this by assigning the loan officer a security role that specifies no access to the Investigation table. But, let’s look at the example in more detail and see if this is really true.  
   
  Let’s say that a customer puts in the loan request for over $60,000 to the bank. The loan officer reviews the request in the first stage. If the branching rule that checks if the amount owed to the bank will exceed $50,000 is satisfied, the next stage in the process is to investigate if the request is fraudulent. If it’s determined that this is indeed a case of fraud, the process moves on to taking a legal action against the requestor. The loan officer shouldn’t have visibility into the two investigative stages as the officer doesn’t have access to the Investigation table.  
   
- However, if the loan officer opens the Request record, all would be able to see the entire end-to-end process. Not only will the loan officer be able to see the fraud investigation stage, but she’ll also be able to identify the outcome of the investigation by having been able to see the Legal Action stage in the process. Also, the officer will be able to preview the steps in the investigative stages by choosing the stage. While the loan officer won’t be able to see the data or the step completion status, she’ll be able to identify the potential actions that were taken against the submitter of the request during the investigation and legal action stages.  
+ However, if the loan officer opens the Request row, all would be able to see the entire end-to-end process. Not only will the loan officer be able to see the fraud investigation stage, but she’ll also be able to identify the outcome of the investigation by having been able to see the Legal Action stage in the process. Also, the officer will be able to preview the steps in the investigative stages by choosing the stage. While the loan officer won’t be able to see the data or the step completion status, she’ll be able to identify the potential actions that were taken against the submitter of the request during the investigation and legal action stages.  
   
  In this process flow, the loan officer will be able to see the Fraud Investigation and Legal Action stages, which constitutes an improper information disclosure. We recommend paying special attention to the information that may become disclosed due to branching. In our example, split the process into two separate processes, one for the request processing and another one for the fraud investigation, to prevent the information disclosure. The process for the loan officer will look like this:  
   
@@ -114,7 +114,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
  ![Flow chart showing steps for an investigation process for information disclosure cases](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Flow chart showing steps for an investigation process for information disclosure cases")  
   
- You will need to provide a workflow to synchronize the Approve/Deny decision from the Investigation row to the Request record.  
+ You will need to provide a workflow to synchronize the Approve/Deny decision from the Investigation row to the Request row.  
   
 ### Next steps  
  [Create a business process flow](create-business-process-flow.md)   

@@ -31,7 +31,7 @@ search.audienceType:
 
 The flows you create can trigger when a Dataverse row is created, updated, or deleted.
 
-Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
+Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
 ## Initiate a cloud flow with Microsoft Dataverse connector
 
@@ -59,7 +59,7 @@ Select any of the numerous tables that are available to indicate the table on wh
 
 ### Scope
 
-Use scopes to determine if your flow runs when you, someone in your business unit, or any user in your organization creates a record.
+Use scopes to determine if your flow runs when you, someone in your business unit, or any user in your organization creates a row.
 
 ![Choose scope](./media/cds-connector-native/scopes.png)
 
@@ -84,7 +84,7 @@ This flow triggers any time the first or last name of contact that the flow user
 
 ## Trigger privileges
 
-To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a row, the user needs to have user level permissions for create, read, write, and delete on the **Callback Registration** table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 
@@ -110,11 +110,11 @@ To write data into customer, owner, and regarding columns, two columns must be p
 
 ### Enable upsert behavior
 
-You can leverage the **update a record** action to provide upsert actions, which updates the row if it already exists, or creates a new record. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
+You can leverage the **update a row** action to provide upsert actions, which updates the row if it already exists, or creates a new row. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
 
 ### Trigger behavior
 
-If you have a trigger registered on the update of a record, the flow runs for every *committed* update to the given record. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
+If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 > [!NOTE]
 > If you have two updates that happen within seconds of each other, the flow may be triggered more than once with the latest versioned content.

@@ -160,13 +160,13 @@ You can add or change the following properties of a stage:
   
 - **Entity**. You can change the table for any stage except the first one.  
   
-- **Stage Category**. A category lets you group stages by a type of action. It is useful for reports that will group records by the stage they are in. The options for the stage category come from the Stage Category global option set. You can add additional options to this global option set and change the labels of existing options if you want. You can also delete these options if you wish, but we recommend that you keep the existing options. You won’t be able to add the exact same option back if you delete it. If you don’t want them to be used, change the label to ”Do not use”.  
+- **Stage Category**. A category lets you group stages by a type of action. It is useful for reports that will group rows by the stage they are in. The options for the stage category come from the Stage Category global option set. You can add additional options to this global option set and change the labels of existing options if you want. You can also delete these options if you wish, but we recommend that you keep the existing options. You won’t be able to add the exact same option back if you delete it. If you don’t want them to be used, change the label to ”Do not use”.  
   
 - **Relationship**. Enter a relationship when the preceding stage in the process is based on a different table. For the stage currently being defined, choose **Select relationships** to identify a relationship to use when moving between the two stages. It is recommended you select a relationship for the following benefits:  
   
-    -   Relationships often have column maps defined that automatically carry over data between records, minimizing data entry.  
+    -   Relationships often have column maps defined that automatically carry over data between rows, minimizing data entry.  
   
-    -   When you select **Next Stage** on the process bar for a record, any records that use the relationship will be listed in the process flow, thereby promoting reuse of records in the process. In addition, you can use workflows to automate creation of records so that the user simply selects it instead of creating one to further streamline the process.  
+    -   When you select **Next Stage** on the process bar for a row, any rows that use the relationship will be listed in the process flow, thereby promoting reuse of rows in the process. In addition, you can use workflows to automate creation of rows so that the user simply selects it instead of creating one to further streamline the process.  
   
 **Edit Steps**  
  Each stage can have up to 30 steps.    
@@ -177,7 +177,7 @@ To learn about adding a branch to a stage, see [Enhance business process flows w
 To make a business process flow available for people to use, you must order the process flow, enable security roles, and activate it.  
   
 **Set Process Flow Order**  
- When you have more than one business process flow for a table (row type), you’ll need to set which process is automatically assigned to new records.. In the command bar, select **Order Process Flow**. For new records or records that do not already have a process flow associated with them, the first business process flow that a user has access to is the one that will be used.  
+ When you have more than one business process flow for a table (row type), you’ll need to set which process is automatically assigned to new rows.. In the command bar, select **Order Process Flow**. For new rows or rows that do not already have a process flow associated with them, the first business process flow that a user has access to is the one that will be used.  
   
 **Enable Security Roles**  
 Users have access to a business process flow depending on the privilege defined on the business process flow in the security role assigned to the user. 
@@ -290,7 +290,7 @@ To do this, you'll need to do two things:
                 "BPFFlowStageEntityCollectionName": {
                     "type": "string"
                 },
-                "BPFFlowStageEntityRecordId": {
+                "BPFFlowStageTableRowID": {
                     "type": "string"
                 },
                 "BPFActiveStageId": {
@@ -312,15 +312,15 @@ To do this, you'll need to do two things:
 
    ![Parse JSON](media/instant-flow-json-date.png "Parse JSON")
 
-  1. Add the **Get record** action from the **Microsoft Dataverse** connector.
-  1. Set **Environment** to **(Current)**, **Entity Name** to **Lead to Opportunity Sales Process**, and **Item Identifier** to **BPFFlowStageEntityRecordID**.
+  1. Add the **Get row by ID** action from the **Microsoft Dataverse** connector.
+  1. Set **Table Name** to **Lead to Opportunity Sales Process**, and **Row ID** to **BPFFlowStageTableRowID**.
 
-     ![Add a record](media/instant-flow-add-record.png)
+     ![Add a row](media/instant-flow-add-record.png)
 
      Now that we have the data, define the approval process by adding the **Start and wait for an approval (V2)** action, and then filling in the relevant information. Learn more about [approvals]( sequential-modern-approvals.md) if you are not familiar.
 
      > [!TIP]
-     > - Use the dynamic content picker to add columns from the **Get record** action to add relevant information to the approval request so that approvers can easily know what the request is about. 
+     > - Use the dynamic content picker to add columns from the **Get row by ID** action to add relevant information to the approval request so that approvers can easily know what the request is about. 
      > - To provide further context regarding the active stage that the business process is in, add the **BPFActiveStageLocalizedName** column from the list of dynamic values.
 
      Your **Start and wait for an approval (V2)** card might look similar to this one:
@@ -340,7 +340,7 @@ Now that you've created the instant flow, all that's needed is for you to add it
 1. Finally, select the **Update** button to make this business process flow with its new instant flow step available to your users.
 
 ### Flow step considerations
-The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a cloud flow step as completed, add the **Update a record** action of the Microsoft Dataverse (legacy) connector under the **If yes** path. Set the **Environment** to **Default** and **Entity** to **Process Logs**. Then set **Record identifier** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
+The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a cloud flow step as completed, add the **Update a row** action of the Microsoft Dataverse connector under the **If yes** path. Set the **Table** to **Process Logs**. Then set **Row ID** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
 
 ## The action center
 

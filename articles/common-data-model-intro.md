@@ -66,9 +66,9 @@ In this article, you will create a cloud flow that sends an email notification w
    
     ![Specify the details for the table](./media/common-data-model-intro/specify-instance.png)
 
-1. Complete the **Get Opportunity Record** card, per your requirements.
+1. Complete the **Get Opportunity row** card, per your requirements.
    
-    ![Get Opportunity Record](./media/common-data-model-intro/get-opportunity-record.png)
+    ![Get Opportunity row](./media/common-data-model-intro/get-opportunity-record.png)
 
 1. Configure the **Originate from a Lead** card. 
    

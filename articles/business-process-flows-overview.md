@@ -58,7 +58,7 @@ Business process flows provide a guide for people to get work done. They provide
  Although the business process flow control in the form does not provide any direct client-side programmability, changes applied by business rules or form scripts are automatically applied to business process flow controls. If you hide a column in a form, that column will also be hidden in the business process flow control. If you set a value by using business rules or form scripts, that value will be set within the business process flow.  
   
 ### Concurrent process flows  
- Concurrent business process flows let customizers configure multiple business processes and associate them with the same starting record. Users can switch between multiple business processes running concurrently, and resume their work at the stage in the process that they were on.  
+ Concurrent business process flows let customizers configure multiple business processes and associate them with the same starting row. Users can switch between multiple business processes running concurrently, and resume their work at the stage in the process that they were on.  
   
 <a name="BKMK_SystemBPF"></a>   
 ### System business process flows  
@@ -74,7 +74,7 @@ Business process flows provide a guide for people to get work done. They provide
 ## Multiple tables in business process flows  
  You can use a business process flow for a single table or span multiple tables. For example, you may have a process that begins with an opportunity, then continues to a quote, an order, and then an invoice, before finally returning to close the opportunity.  
   
- You can design business process flows that tie together the records for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.  
+ You can design business process flows that tie together the rows for up to five different tables into a single process so that people using the app can focus on the flow of their process rather than on which table they are working in. They can more easily navigate between related table rows.  
   
 <a name="BKMK_MultipleBPF"></a>   
 ## Multiple business process flows are available per table  
@@ -84,7 +84,7 @@ Business process flows provide a guide for people to get work done. They provide
 ### Control which business process flow will be applied  
  You can associate business process flows with security roles so that only people with those security roles can see or use them. You can also set the order of the business process flows so that you can control which business process flow will be set by default. This works in the same way that multiple forms for a table are defined.  
   
- When someone creates a new table record, the list of available active business process definition is filtered by the user’s security role. The first activated business process definition available for the user’s security role according to the process order list is the one applied by default. If more than one active business process definitions is available, users can load another from the Switch Process dialog. Whenever processes are switched, the one currently rendered goes to the background and is replaced by the selected one, but it maintains its state and can be switched back. Each row can have multiple process instances associated (each for a different business process flow definition, up to a total of 10). On form load, only one business process flow is rendered. When any user applies a different process, that process may only load by default for that particular user.  
+ When someone creates a new table row, the list of available active business process definition is filtered by the user’s security role. The first activated business process definition available for the user’s security role according to the process order list is the one applied by default. If more than one active business process definitions is available, users can load another from the Switch Process dialog. Whenever processes are switched, the one currently rendered goes to the background and is replaced by the selected one, but it maintains its state and can be switched back. Each row can have multiple process instances associated (each for a different business process flow definition, up to a total of 10). On form load, only one business process flow is rendered. When any user applies a different process, that process may only load by default for that particular user.  
   
  To make sure a business process is loaded by default for all user (behavior equivalent to “pinning” the process), a custom Client API script (web resource) can be added on form load that specifically loads an existing business process instance based on the business process definition ID. 
  
@@ -155,7 +155,7 @@ Business process flows provide a guide for people to get work done. They provide
 
 Introduced in the Dynamics 365 (online), version 9.0 update, business process flow tables can appear in the system so that table row data can be made available in grids, views, charts, and dashboards. 
 
-### Use business process flow table records with grids, views, charts, and dashboards
+### Use business process flow table rows with grids, views, charts, and dashboards
 
 With business processes flows available as an table, you can now use advanced finds, views, charts, and dashboards sourced from business process flow data for a given table, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other table.
 
@@ -178,7 +178,7 @@ You can use business process flows offline if the following conditions are met:
 
 - The business process flow is used from a Power Apps app.
 - The Power Apps app is enabled for offline use.
-- The business process flow has a single table.
+- The business process flow has a single entity.
 
 Specifically, the three commands that are available for a business process flow when the Power Apps app is offline are:
 
@@ -188,9 +188,9 @@ Specifically, the three commands that are available for a business process flow 
 
 ### Lookup column in a business process flow stage
 
-Recent records are visible in a lookup column in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
+Recent rows are visible in a lookup column in the unified interface. To prevent the most recently used items from showing up in the lookup, follow these steps:
 1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
-1. Go to **Tables** under **Data**. Search for your business process flow table.
+1. Go to **Tables** under **Data**. Search for your business process flow entity.
 
    ![A screenshot of a business process flow table](./media/bpf-entity-table.png)
 
@@ -204,7 +204,7 @@ Recent records are visible in a lookup column in the unified interface. To preve
 ### Limitations of using business process flow tables
 
 - Currently, you can’t create custom forms for tables based on a business process flow.
-- If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
+- If a solution includes a business process flow entity, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
 - Adding the process table to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  
