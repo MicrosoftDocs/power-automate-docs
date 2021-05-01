@@ -277,7 +277,7 @@ By following the steps in this section, you'll build:
 ## Customize the app
 1. In the right navigation bar, click or tap the layout that includes a header and a description.
    
-    ![Connect button](./media/common-data-model-approve/choose-layout.png)
+    ![Choose layout](./media/common-data-model-approve/choose-layout.png)
 2. On the **BrowseScreen**, click or tap just under the search bar to select the larger text-box control.
    
     ![Select header](./media/common-data-model-approve/select-header.png)

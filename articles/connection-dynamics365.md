@@ -139,7 +139,7 @@ This example also assigns the task to a specific user based on the user's row ID
 
   ![Flow rowId and type user](./media/connection-dynamics365/flow-recordid-user.png)
 
-To find a row's ID, see [Find the row ID](#find-the-records-id) later in this topic.
+To find a row's ID, see [Find the row ID](#find-the-rows-id) later in this topic.
 
 > **Important:** Fields shouldn't contain a value if they have a description of "For internal use only." These columns include **Traversed path**, **Additional Parameters**, and **Time Zone Rule Version Number.**
 > 
