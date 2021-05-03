@@ -152,7 +152,7 @@ GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1
 At this point, you might not get any instances in your response as there are none. Run this request after creating an instance of your business process flow definition later in this topic.
 
 > [!NOTE]
-> To know how to retrieve the name of your business process flow table, see the earlier section, [Business process flow table](#business-process-flow-entity).
+> To know how to retrieve the name of your business process flow table, see the earlier section, [Business process flow table](#business-process-flow-table).
   
 ### Create a business process flow table row (process instance) 
 
@@ -244,7 +244,7 @@ You can update a process instance to move to next or previous stage, abandon a p
 
 To navigate to a different stage, you need to update a process instance row to change its active stage ID and accordingly update the traversed path. Note that you must only move to the next or previous stage while updating a business process flow instance.
 
-To perform stage navigation, you will need the ID of the business process flow instance that you want to update. To retrieve all the instances of your business process flow, see [Retrieve all the rows (instances) for a business process flow table](#retrieve-all-the-rows-instances-for-a-business-process-flow-entity) earlier.
+To perform stage navigation, you will need the ID of the business process flow instance that you want to update. To retrieve all the instances of your business process flow, see [Retrieve all the rows (instances) for a business process flow table](#retrieve-all-the-rows-instances-for-a-business-process-flow-table) earlier.
 
 Assuming the ID of the process instance you want to update is dc2ab599-306d-e811-80ff-00155d513100, use the following request to update the active stage from S1 to S2:
 
@@ -366,7 +366,7 @@ If you do not set a value for the **ProcessId** column while creating a new tabl
 
 ## Legacy process-related columns in tables
 
-The legacy process-related columns (such as **ProcessId**, **StageId**, and **TraversedPath**) on tables enabled for business process flows are already deprecated. Manipulating these legacy process related columns for target table rows does not guarantee consistency of the business process flow state, and is ***not*** a supported scenario. The recommended way is to use the columns of the business process flow table as explained earlier in the section [Create, retrieve, update, and delete business process flow table rows (process instances)](#create-retrieve-update-and-delete-business-process-flow-entity-rows-process-instances)
+The legacy process-related columns (such as **ProcessId**, **StageId**, and **TraversedPath**) on tables enabled for business process flows are already deprecated. Manipulating these legacy process related columns for target table rows does not guarantee consistency of the business process flow state, and is ***not*** a supported scenario. The recommended way is to use the columns of the business process flow table as explained earlier in the section [Create, retrieve, update, and delete business process flow table rows (process instances)](#create-retrieve-update-and-delete-business-process-flow-table-rows-process-instances)
 
 The only exception to this is programmatically modifying the **ProcessId** column while creating a table row to override the default application of the business process flow to the new row as explained in the previous section: [Apply business process flow while creating a table row](#ApplyBPF).
 

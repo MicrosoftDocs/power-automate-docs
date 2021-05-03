@@ -29,7 +29,7 @@ Business process flows provide a guided way to get work done in the form of stag
 
 Let’s say that you’d like to add a radial knob for the **Estimated Budget** step and a flip switch for the **Identify Decision Maker** step of the Lead to Opportunity Sales process. 
 
-![Overview](./media/custom-controls/overview.png)
+![Overview of custom controls](./media/custom-controls/overview.png)
 
 Here are the steps you must follow to add custom controls to a business process flow:
 
@@ -39,11 +39,6 @@ Here are the steps you must follow to add custom controls to a business process 
 1. Import the customizations back into Microsoft Dataverse.
 
 Follow these steps for a [detailed walkthrough adding custom controls](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Preview-Custom-Controls-in-Business-Process-Flows/ba-p/263237) to business process flows steps.
-
-
-
-
-
 
 
 
