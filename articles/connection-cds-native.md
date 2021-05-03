@@ -102,7 +102,7 @@ Here's an example of a cloud flow that sends a notification with the name and th
 
 To write data into customer, owner, and regarding columns, two columns must be populated.
 
-| column category | Example settings |
+| Column category | Example settings |
 | --- | --- |
 | Regarding | Regarding = ID of the row (for example, account ID) and Regarding Type as selected from the list. |
 | Customer | Represents the ID of the row and the customer type as selected from the list. |
