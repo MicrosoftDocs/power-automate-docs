@@ -74,14 +74,14 @@ Examples of automated triggers include:
 
 -   When an email is received in Outlook
 -   When a new file is moved to OneDrive
--   When a new record is created in Microsoft Dataverse
+-   When a new row is created in Microsoft Dataverse
 -   When an item is modified in a custom SharePoint list
 
 ![Automated triggers](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report might be to set an automated trigger
-to start an approval flow when a new record is created in the Expense Approvals
-table in Dataverse. This ensures, for example, that when a form is created with Power Apps, which creates a new record in Dataverse, an approval flow is automatically triggered.
+to start an approval flow when a new row is created in the Expense Approvals
+table in Dataverse. This ensures, for example, that when a form is created with Power Apps, which creates a new row in Dataverse, an approval flow is automatically triggered.
 
 ### Instant or manual triggers
 
