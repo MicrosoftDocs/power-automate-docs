@@ -5,7 +5,7 @@ In this course, you'll learn about Power Automate and its concepts, see how to *
 If you're a beginner with Power Automate, this course will get you going. If you already have some experience, this course will tie concepts together and fill in the gaps. This course is a work in progress, so **please let us know how we're doing** and what other topics you want to see in this course.
 
 ## What is Power Automate?
-Power Automate is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a cloud flow that adds a lead to **Dynamics 365** and a record in **MailChimp** whenever someone with more than 100 followers tweets about your company.
+Power Automate is an online **workflow service** that enables you to work smarter and more efficiently by **automating workflows** across the most common apps and services. For example, you can create a cloud flow that adds a lead to **Dynamics 365** and a row in **MailChimp** whenever someone with more than 100 followers tweets about your company.
 
 ![Flow conceptual sketch](./media/learning-introduce-flow/conceptual.png)
 

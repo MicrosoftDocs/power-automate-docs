@@ -1,5 +1,5 @@
 1. Select **New step**, and then select **Condition** in the list of actions.
-1. On the **Condition** card, select the **Choose a value** field on the left.
+1. On the **Condition** card, select **Choose a value** on the left.
 
    A list of dynamic values display.
    

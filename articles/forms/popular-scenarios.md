@@ -43,7 +43,7 @@ If your form is only for people in your organization, that means that the form i
    > [!div class="mx-imgBorder"]
    > ![Settings screen](..\media\forms\only-people-in-my-org-setting.png "Screen showing who can fill out this form")
 
-Then, add the [Get response details](/connectors/microsoftforms/#actions) action. Click on the Response Id text field to view the dynamic content. Select the Response Id option, which means that you’ll get the response details for the responses that caused the trigger. After that, choose the [Send an email (V2)](/connectors/office365/#send-an-email-(v2)) action. Within the action card, click on Add dynamic content so that you can use the forms responses in your email.
+Then, add the [Get response details](/connectors/microsoftforms/#actions) action. Select **Response Id** to view the dynamic content. Select the Response Id option, which means that you’ll get the response details for the responses that caused the trigger. After that, choose the [Send an email (V2)](/connectors/office365/#send-an-email-(v2)) action. Within the action card, click on Add dynamic content so that you can use the forms responses in your email.
 
 
 

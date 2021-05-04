@@ -37,7 +37,7 @@ The following terms are commonly used in Power Automate.
 
  [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
 
-**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a record is created, deleted, or updated in Common Data Service, the flow will run if that is the trigger you chose.
+**Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a row is created, deleted, or updated in Dataverse, the flow will run if that is the trigger you chose.
 
  [Create a cloud flow in Power Automate](get-started-logic-flow.md)
 
@@ -49,11 +49,11 @@ The following terms are commonly used in Power Automate.
 
 ## C
 
-**Common Data Service:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It's an abstraction on top of underlying Azure cloud data management services to make it easier to build business applications.
+**Microsoft Dataverse:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It's an abstraction on top of underlying Azure cloud data management services to make it easier to build business applications.
 
- [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
+ [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
-**Common Data Service for Teams**: A common cloud data platform for Microsoft Teams. Common Data Service for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
+**Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
 
 **Conditions:** Conditions tell flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that you'll get an email when a tweet that contains a keyword is retweeted at least 10 times.
 

@@ -44,10 +44,10 @@ possible combinations that might fail.
 ## Testing in "live only" environments
 
 Ideally, all tests should be done in test environments. However, there might be
-situations where you don't have an environment to test out separately from
+situations where you don't have an environment to test separately from
 live systems. In these cases, you can use the following methods:
 
-- **For lookups**: Use static text as the result to mimic a lookup
+- **For lookups**: Use static text as the result to mimic a lookup.
 
 - **For data entry**: Create a step to make new record, followed by another flow
 to delete the same record.
