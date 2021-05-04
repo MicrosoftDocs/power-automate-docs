@@ -33,10 +33,10 @@ This topic provides information about how you can programmatically work with bus
 
 Custom tables and tables that have updated UI forms can participate in the business process flow. The updated UI tables have the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> property set to `true`. 
 
-To enable an table for the business process flow, set the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> property to `true`.
+To enable a table for the business process flow, set the <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> property to `true`.
 
 > [!IMPORTANT]
->  Enabling an table for business process flow is a one way process. You can’t reverse it.
+>  Enabling a table for business process flow is a one way process. You can’t reverse it.
 
    
 <a name="DefineBPF"></a>   
@@ -46,11 +46,11 @@ Use the visual business process flow designer to define a business process flow.
 
 By default, a business process flow row is created in the `Draft` state.  
 
-A business process flow definition is stored in the <xref:Microsoft.Dynamics.CRM.workflow> entity, and the stage information for the business process flow is stored in the <xref:Microsoft.Dynamics.CRM.processstage> entity.
+A business process flow definition is stored in the <xref:Microsoft.Dynamics.CRM.workflow> table, and the stage information for the business process flow is stored in the <xref:Microsoft.Dynamics.CRM.processstage> table.
   
 <a name="ActivateBPF"></a>   
 ## Activate business process flow  
- Before you can use the process flow, you have to activate it. To activate it, you must have the `prvActivateBusinessProcessFlow` privilege for the `Workflow` entity. Use the <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> message to set the state of the `Workflow` table row to `Activated`. More information: [Perform specialized operations using Update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
+ Before you can use the process flow, you have to activate it. To activate it, you must have the `prvActivateBusinessProcessFlow` privilege for the `Workflow` table. Use the <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> message to set the state of the `Workflow` table row to `Activated`. More information: [Perform specialized operations using Update](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
  > You can also use the business process flow designer to activate a business process flow. 
@@ -70,9 +70,9 @@ A business process flow definition is stored in the <xref:Microsoft.Dynamics.CRM
 
 You can retrieve the name of your business process flow table using any of the following ways:
 
-- **Using the UI**: Use the customization UI to browse to your business process flow entity:
+- **Using the UI**: Use the customization UI to browse to your business process flow table:
 
-    ![Browse to your business process flow entity using UI](media/bpf-entity-name.png)
+    ![Browse to your business process flow table using UI](media/bpf-entity-name.png)
 - **Using the Web API**: Use the following request:
 
     **Request**
@@ -138,12 +138,12 @@ The custom business process flow table has organization scope. The regular creat
 > [!IMPORTANT]
 > Switching to another process instance for a table row is only supported through UI (client) or programmatically using information available in this section. You can no longer use the `SetProcess` message (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> or <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) to programmatically switch processes (set another business process flow as the active process instance) for the target table row. 
 
- Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
+ Lets consider the following example where we have a cross-table business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
 
  ![Custom business process flow](media/sample-bpf.png)
  
-### Retrieve all the rows (instances) for a business process flow entity
- If the name of your business process flow table is "new_mycustombpf", use the following query to retrieve all the rows (process instances) for your business process flow entity:  
+### Retrieve all the rows (instances) for a business process flow table
+ If the name of your business process flow table is "new_mycustombpf", use the following query to retrieve all the rows (process instances) for your business process flow table:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -152,7 +152,7 @@ GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1
 At this point, you might not get any instances in your response as there are none. Run this request after creating an instance of your business process flow definition later in this topic.
 
 > [!NOTE]
-> To know how to retrieve the name of your business process flow entity, see the earlier section, [Business process flow entity](#business-process-flow-entity).
+> To know how to retrieve the name of your business process flow table, see the earlier section, [Business process flow table](#business-process-flow-table).
   
 ### Create a business process flow table row (process instance) 
 
@@ -244,7 +244,7 @@ You can update a process instance to move to next or previous stage, abandon a p
 
 To navigate to a different stage, you need to update a process instance row to change its active stage ID and accordingly update the traversed path. Note that you must only move to the next or previous stage while updating a business process flow instance.
 
-To perform stage navigation, you will need the ID of the business process flow instance that you want to update. To retrieve all the instances of your business process flow, see [Retrieve all the rows (instances) for a business process flow entity](#retrieve-all-the-rows-instances-for-a-business-process-flow-entity) earlier.
+To perform stage navigation, you will need the ID of the business process flow instance that you want to update. To retrieve all the instances of your business process flow, see [Retrieve all the rows (instances) for a business process flow table](#retrieve-all-the-rows-instances-for-a-business-process-flow-table) earlier.
 
 Assuming the ID of the process instance you want to update is dc2ab599-306d-e811-80ff-00155d513100, use the following request to update the active stage from S1 to S2:
 
@@ -300,9 +300,9 @@ Similarly, to reactivate a process instance, replace the `statecode` and `status
 
 Finally, to set a process instance status as **Finished**, which is only possible at the last stage of a process instance, replace the `statecode` and `statuscode` values in the above code with **0** and **2** respectively.
 
-#### Cross-entity navigation
+#### Cross-table navigation
 
-For cross-entity navigation in this example, you must set the active stage of the process instance to the last stage, S3 (ID=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), update the traversed path accordingly, and set a contact row as the primary table row as per the business process flow definition.
+For cross-table navigation in this example, you must set the active stage of the process instance to the last stage, S3 (ID=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), update the traversed path accordingly, and set a contact row as the primary table row as per the business process flow definition.
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -349,7 +349,7 @@ This section provides information about the default behavior for applying busine
 By default, for a table that has multiple business process flows defined for it, the system applies a business process flow to the new table row using the following multi-step logic:
 1. Identify all business process flows applicable to the new table row based on the **Workflow.PrimaryEntity** column of the business process flow definition rows.
 2. Identify the business process flow definitions that the current user has access to. For information about how access to a business process flow is determined and managed, see [Manage security for business process flows](#BPFSecurity) earlier in this topic.<br/>  
-3. All business process flow definitions in the system are subject to a global order per entity. The order of the business process flow is stored in the **Workflow.ProcessOrder** column. The business process flow definitions for a table are sorted based on this order, and the one with the least order value is picked.
+3. All business process flow definitions in the system are subject to a global order per table. The order of the business process flow is stored in the **Workflow.ProcessOrder** column. The business process flow definitions for a table are sorted based on this order, and the one with the least order value is picked.
 4. Finally, if the table row is created from a business app (app module), one more level of filtering is applied to pick the business process flow to be applied automatically to the new table row. When working in an app, users can access only relevant tables, business process flows, views and forms that they have access to by virtue of the security roles assigned to the business app. 
     - If the business app does not contain any business process flow then business process flow is applied as explained until step 3.
     - If the business app has one or more business process flows then only the business process flows present in the app would be applicable. In this case, when the user is working within a business app context, the list of business process flows from step 3 are filtered further to the ones that are part of the business app that are present inside the app module, and are sorted based on the process order. 
@@ -366,7 +366,7 @@ If you do not set a value for the **ProcessId** column while creating a new tabl
 
 ## Legacy process-related columns in tables
 
-The legacy process-related columns (such as **ProcessId**, **StageId**, and **TraversedPath**) on tables enabled for business process flows are already deprecated. Manipulating these legacy process related columns for target table rows does not guarantee consistency of the business process flow state, and is ***not*** a supported scenario. The recommended way is to use the columns of the business process flow table as explained earlier in the section [Create, retrieve, update, and delete business process flow table rows (process instances)](#create-retrieve-update-and-delete-business-process-flow-entity-rows-process-instances)
+The legacy process-related columns (such as **ProcessId**, **StageId**, and **TraversedPath**) on tables enabled for business process flows are already deprecated. Manipulating these legacy process related columns for target table rows does not guarantee consistency of the business process flow state, and is ***not*** a supported scenario. The recommended way is to use the columns of the business process flow table as explained earlier in the section [Create, retrieve, update, and delete business process flow table rows (process instances)](#create-retrieve-update-and-delete-business-process-flow-table-rows-process-instances)
 
 The only exception to this is programmatically modifying the **ProcessId** column while creating a table row to override the default application of the business process flow to the new row as explained in the previous section: [Apply business process flow while creating a table row](#ApplyBPF).
 
@@ -376,7 +376,7 @@ The only exception to this is programmatically modifying the **ProcessId** colum
   
 <a name="BKMK_MaxSettings"></a>   
 ## Maximum number of processes, stages, and steps  
- Per entity, the default value for the maximum number of activated business process flows is 10. You can specify a different value by using the `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity` column. However, if the value is greater than 10, you may see a decrease in your system’s performance when you switch processes or open a row that has an assigned business process flow. This may be especially noticeable if processes span multiple tables.  
+ Per table, the default value for the maximum number of activated business process flows is 10. You can specify a different value by using the `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity` column. However, if the value is greater than 10, you may see a decrease in your system’s performance when you switch processes or open a row that has an assigned business process flow. This may be especially noticeable if processes span multiple tables.  
   
  The following settings aren’t customizable:  
   

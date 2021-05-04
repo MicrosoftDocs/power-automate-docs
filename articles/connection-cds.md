@@ -27,19 +27,18 @@ search.audienceType:
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Common Data Service connector**, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
+>There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Microsoft Dataverse (legacy)** connector, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
 
 
-With the Common Data Service connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on records within Dataverse.
+With the Microsoft Dataverse (legacy) connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
 ## Initiate a cloud flow from Dataverse
 
 You can use any of the following triggers to initiate your flow:
 
-- When a record is selected
-- When a record is created
-- When a record is deleted
-- When a record is updated
+- When a flow step is run from a business process flow
+- When a row is added, modified or deleted
+- When a action is performed (preview)
 
 
 > [!div class="mx-imgBorder"]
@@ -50,63 +49,63 @@ If the selected trigger requires an environment to be selected, then you can cho
 > [!div class="mx-imgBorder"]
 > ![Choose environment](./media/cds-connector/Environments.png)
 
-You can use scopes to determine if your flow runs if you create a new record, if a new record is created by a user within your business unit, or if a new record is created by any user in your organization.
+You can use scopes to determine if your flow runs if you create a new row, if a new row is created by a user within your business unit, or if a new row is created by any user in your organization.
 
 > [!div class="mx-imgBorder"]
 > ![Choose scope](./media/cds-connector/Scopes.png)
 
 |Scope|Trigger timing|
 | --- | --- |
-|Business Unit|Action is taken on a record owned by your business unit|
+|Business Unit|Action is taken on a row owned by your business unit|
 |Organization|Action is taken by anyone within the organization or database|
-|Parent: Child business unit|Action is taken on a record owned by your business unit or a child business unit|
-|User|Action is taken on a record owned by you|
+|Parent: Child business unit|Action is taken on a row owned by your business unit or a child business unit|
+|User|Action is taken on a row owned by you|
 
-Triggers that run when a record is updated can also use filtering attributes. This ensures that the flow only runs when any of the defined attributes are updated.
+Triggers that run when a row is updated can also use filtering columns. This ensures that the flow only runs when any of the defined columns are updated.
 
 > [!IMPORTANT]
-> Use filter attributes to prevent your flow from unnecessarily running.
+> Use filter columns to prevent your flow from unnecessarily running.
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
 > [!div class="mx-imgBorder"]
-> ![Filter attributes](./media/cds-connector/FilterAttributes.png)
+> ![Filter columns](./media/cds-connector/FilterAttributes.png)
 
 ## Trigger privileges
 
-To create a cloud flow that triggers based on create, update, or delete on a record, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration entity. Additionally, depending on the scopes defined, the user might need at least that level of read on the same entity.  [Learn more](/power-platform/admin/database-security) about environment security.
+To create a cloud flow that triggers based on create, update, or delete on a row, the user needs to have user level permissions for create, read, write, and delete on the Callback Registration table. Additionally, depending on the scopes defined, the user might need at least that level of read on the same table.  [Learn more](/power-platform/admin/database-security) about environment security.
 
 ## Write data into Dataverse
 
 Use any of the following actions to write data into Dataverse:
 
-- Create a new record
-- Update a record
+- Create a new row
+- Update a row
 
-Here's an example of creating a follow-up task when the given user creates a new account record.  
+Here's an example of creating a follow-up task when the given user creates a new account row.  
 
 > [!div class="mx-imgBorder"]
 > ![Follow-up task](./media/cds-connector/Regarding.png)
 
 ## Advanced concepts
 
-### Write data into customer, owner, and regarding fields
+### Write data into customer, owner, and regarding columns
 
-To write data into customer, owner, and regarding fields, two fields must be populated.
+To write data into customer, owner, and regarding columns, two columns must be populated.
 
-| Field category | Example settings |
+| Column category | Example settings |
 | --- | --- |
-| Regarding | Regarding = ID of the record (for example, account ID) and Regarding Type as selected from the list. |
-| Customer | Represents the ID of the record and the customer type as selected from the list. |
+| Regarding | Regarding = ID of the row (for example, account ID) and Regarding Type as selected from the list. |
+| Customer | Represents the ID of the row and the customer type as selected from the list. |
 | Owner | Represents the ID of the system user or team, and owner type as selected from the list. |
 
 ### Enable upsert behavior
 
-You can leverage the **update a record** command to provide upsert actions, which updates the record if it already exists, or creates a new record. To invoke upsert, provide the entity and a GUID key. If the record with the specified type and key exists, an update occurs. Otherwise, a record with the specified key is created.
+You can leverage the **update a row** command to provide upsert actions, which updates the row if it already exists, or creates a new row. To invoke upsert, provide the table and a GUID key. If the row with the specified type and key exists, an update occurs. Otherwise, a row with the specified key is created.
 
 ### Trigger behavior
 
-If you have a trigger registered on the update of a record, the flow runs for every *committed* update to the given record. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
+If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 Flow runs may be delayed if there is a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 

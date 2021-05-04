@@ -27,7 +27,7 @@ search.audienceType:
 
 Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based on common tasks your users perform. For example, if they need to regularly perform a series of follow-up steps after client meetings, create a task flow. When users tap the new task in their mobile app, it will lead them through from start to finish so they don't forget an important step.  
   
- Task flows can use multi-entity forms and logic, and can have form logic that runs across the task flow pages.  
+ Task flows can use multi-table forms and logic, and can have form logic that runs across the task flow pages.  
   
 ## Create a task flow
   
@@ -43,7 +43,7 @@ Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based
   
     -   In the **Category** list, select **Business Process Flow**.  
   
-    -   In the **Entity** list, select the entity you want.  
+    -   In the **Table** list, select the table you want.  
   
 5.  Select the **Run process as a task flow (Mobile online)** option.  
   

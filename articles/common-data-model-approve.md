@@ -1,6 +1,6 @@
 ---
 title: Build an approval loop with Microsoft Dataverse | Microsoft Docs
-description: Create an entity, a cloud flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
+description: Create an table, a cloud flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,42 +25,42 @@ search.audienceType:
 
 [!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
 
-Dataverse can give you a way to build flows that have information stored in a database independent of a cloud flow. The best example of this is with approvals. If you store the status of the approval in an entity, your flow can work on top of it.
+Dataverse can give you a way to build flows that have information stored in a database independent of a cloud flow. The best example of this is with approvals. If you store the status of the approval in an table, your flow can work on top of it.
 
 In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.
 
 By following the steps in this section, you'll build:
 
-* a **custom entity** that will contain information about each file added to Dropbox and whether the file's status is approved, rejected, or pending.
-* a **flow** that adds information to the custom entity when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a cloud flow from scratch, but you can create a similar flow from a template.
-* an **app** in which a reviewer can approve or reject files added to Dropbox. You'll use Power Apps to generate this app automatically based on the fields in the custom entity.
+* a **custom table** that will contain information about each file added to Dropbox and whether the file's status is approved, rejected, or pending.
+* a **flow** that adds information to the custom table when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a cloud flow from scratch, but you can create a similar flow from a template.
+* an **app** in which a reviewer can approve or reject files added to Dropbox. You'll use Power Apps to generate this app automatically based on the columns in the custom table.
 
 **Prerequisites**
 
 * Sign up for [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
-## Build the entity
+## Build the table
 1. Sign in to [powerapps.com](https://make.powerapps.com).
 2. If the left navigation bar doesn't appear by default, click or tap the icon with three horizontal lines in the upper-left corner.
    
     ![Open left navigation bar](./media/common-data-model-approve/hamburger-icon.png)
-3. In the left navigation bar, click or tap **Manage**, and then click or tap **Entities**.
+3. In the left navigation bar, click or tap **Manage**, and then click or tap **Tables**.
    
-    ![Manage entities](./media/common-data-model-approve/manage-entities.png)
+    ![Manage tables](./media/common-data-model-approve/manage-entities.png)
 4. If prompted, click or tap **Create my database**.
    
     ![Create database](./media/common-data-model-approve/create-database.png)
-5. Near the upper-right corner, click or tap **New entity**.
+5. Near the upper-right corner, click or tap **New table**.
    
-    ![Create entity](./media/common-data-model-approve/new-entity.png)
+    ![Create table](./media/common-data-model-approve/new-entity.png)
    
     If your browser window isn't maximized, this button might appear in a different place.
-6. Under **Entity name**, specify a name that doesn't contain spaces and that no other entity in your database has.
+6. Under **Table name**, specify a name that doesn't contain spaces and that no other table in your database has.
    
     To follow this example exactly, specify **ReviewDropboxFiles**.
    
-    ![Specify entity name](./media/common-data-model-approve/entity-name.png)
+    ![Specify table name](./media/common-data-model-approve/entity-name.png)
 7. Under **Display name**, specify a friendly name.
    
     ![Specify display name](./media/common-data-model-approve/display-name.png)
@@ -68,19 +68,19 @@ By following the steps in this section, you'll build:
    
     ![Next button](./media/common-data-model-approve/next-button.png)
 
-## Add fields to the entity
-1. Near the upper-right corner, click or tap **Add field**.
+## Add columns to the table
+1. Near the upper-right corner, click or tap **Add column**.
    
-    ![Add field](./media/common-data-model-approve/add-field.png)
-2. In the blank row that appears at the bottom of the list of fields, set the properties of an **Approver** field. (As you set these properties, you can switch to the next column by pressing Tab.)
+    ![Add column](./media/common-data-model-approve/add-field.png)
+2. In the blank row that appears at the bottom of the list of columns, set the properties of an **Approver** column. (As you set these properties, you can switch to the next column by pressing Tab.)
    
    * In the **Display Name** column, type **Approver**.
    * In the **Name** column, type **ApproverEmail**.
    * In the **Type** column, click or tap the **Email** option.
    * In the **Required** column, select the checkbox.
      
-     ![Approver field](./media/common-data-model-approve/approver-field.png)
-3. In the next row, set the properties of a **Status** field:
+     ![Approver column](./media/common-data-model-approve/approver-field.png)
+3. In the next row, set the properties of a **Status** column:
    
    * In the **Display Name** column, type **Status**.
    * In the **Name** column, type **Status**.
@@ -88,8 +88,8 @@ By following the steps in this section, you'll build:
    * In the **Properties** column, leave the default value.
    * In the **Required** column, select the checkbox.
      
-     ![Status field](./media/common-data-model-approve/status-field.png)
-4. In the next row, set the properties of a **FileID** field:
+     ![Status column](./media/common-data-model-approve/status-field.png)
+4. In the next row, set the properties of a **FileID** column:
    
    * In the **Display Name** column, type **File identifier**.
    * In the **Name** column, type **FileID**.
@@ -98,14 +98,14 @@ By following the steps in this section, you'll build:
    * In the **Unique** column, select the checkbox.
    * In the **Required** column, select the checkbox.
      
-     ![FileID field](./media/common-data-model-approve/fileid-field.png)
-5. Near the right edge, click or tap the ellipsis (...) for the **FileID** field, and then click or tap **Set as Title field**.
+     ![FileID column](./media/common-data-model-approve/fileid-field.png)
+5. Near the right edge, click or tap the ellipsis (...) for the **FileID** column, and then click or tap **Set as Title column**.
    
-    ![Set title field](./media/common-data-model-approve/set-title-field.png)
+    ![Set title column](./media/common-data-model-approve/set-title-field.png)
 6. Near the lower-left corner, click or tap **Create**.
    
-    ![Create an entity](./media/common-data-model-approve/create-button.png)
-7. (optional) When the list of entities reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom entities, such as the one you just created, appearing at the top.
+    ![Create an table](./media/common-data-model-approve/create-button.png)
+7. (optional) When the list of tables reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom tables, such as the one you just created, appearing at the top.
 
 ## Sign in and create a cloud flow
 1. Open the [Power Automate portal](https://flow.microsoft.com).
@@ -114,7 +114,7 @@ By following the steps in this section, you'll build:
     ![Sign-in button for Power Automate](./media/common-data-model-approve/signin-flow.png)
 3. In the top right menu you select the environment that you created the database in powerapps.com.
    
-    **Note**: if you do not select the same environment then you will not see your entity.
+    **Note**: if you do not select the same environment then you will not see your table.
 4. Near the upper-left corner, click or tap **My flows**.
    
     ![My flows button](./media/common-data-model-approve/myflows-button.png)
@@ -130,17 +130,17 @@ By following the steps in this section, you'll build:
    
     ![Choose folder](./media/common-data-model-approve/folder-icon.png)
 
-## Add data to the entity
+## Add data to the table
 1. Click or tap **New step**, and then click or tap **Add an action**.
    
     ![Add an action](./media/common-data-model-approve/add-action.png)
 2. In the box that contains **Search for more actions**, type or paste **Dataverse**, and then click or tap **Dataverse - Create object**.
    
     ![Create an object in Dataverse](./media/common-data-model-approve/cdm-create-object.png)
-3. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
+3. Under **The table**, type or paste **Review**, and then click or tap **Review Dropbox files**.
    
-    ![Choose the entity](./media/common-data-model-approve/choose-entity-flow.png)
-4. Under **Title**, click or tap in the box, and then click or tap **File name** in the list of parameter tokens to add that token to the field.
+    ![Choose the table](./media/common-data-model-approve/choose-entity-flow.png)
+4. Under **Title**, click or tap in the box, and then click or tap **File name** in the list of parameter tokens to add that token to the column.
    
     ![Add File name token](./media/common-data-model-approve/add-filename-token.png)
 5. Under **Approver**, type or paste the email address of the person who will review the files.
@@ -151,7 +151,7 @@ By following the steps in this section, you'll build:
 6. Under **Status**, type or paste **Pending**.
    
     ![Add default status](./media/common-data-model-approve/add-default-status.png)
-7. Under **File Identifier**, click or tap in the box, and then click or tap **File identifier** in the list of parameter tokens to add that token to the field.
+7. Under **File Identifier**, click or tap in the box, and then click or tap **File identifier** in the list of parameter tokens to add that token to the column.
    
     ![Add File identifier token](./media/common-data-model-approve/add-file-identifier.png)
 
@@ -164,7 +164,7 @@ By following the steps in this section, you'll build:
     ![Choose a value](./media/common-data-model-approve/choose-value.png)
    
     **Note**: If your browser window isn't maximized, click or tap in the upper box that contains **Choose a value**.
-3. Under **Outputs from Create object**, click or tap **Status** to add that parameter token to the field.
+3. Under **Outputs from Create object**, click or tap **Status** to add that parameter token to the column.
    
     ![Add Status token](./media/common-data-model-approve/add-status.png)
 4. Open the list near the center of the **Do until** action, and then click or tap **is not equal to**.
@@ -178,14 +178,14 @@ By following the steps in this section, you'll build:
 6. Near the bottom of the **Do until** action, click or tap **Add an action**.
    
     ![Add action inside a do until](./media/common-data-model-approve/add-action-in-dountil.png)
-7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Common Data Service - Get object**.
+7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Microsoft Dataverse - Get object**.
    
     ![Get an object](./media/common-data-model-approve/get-object.png)
 8. Under **The namespace**, click or tap your database.
-9. Under **The entity**, type or paste **Review**, and then click or tap **Review Dropbox files**.
+9. Under **The table**, type or paste **Review**, and then click or tap **Review Dropbox files**.
    
-    ![Choose entity](./media/common-data-model-approve/choose-entity-flow.png)
-10. Under **Object id**, click or tap in the box, and then click or tap the **File identifier** parameter token to add it to the field.
+    ![Choose table](./media/common-data-model-approve/choose-entity-flow.png)
+10. Under **Object id**, click or tap in the box, and then click or tap the **File identifier** parameter token to add it to the column.
     
      ![Add object identifier](./media/common-data-model-approve/add-object-id.png)
 
@@ -198,7 +198,7 @@ By following the steps in this section, you'll build:
     ![Upper left corner of condition](./media/common-data-model-approve/condition-upper-left.png)
    
     **Note**: If your browser window isn't maximized, click or tap in the upper box that contains **Choose a value**.
-3. Under **Outputs from Get object**, click or tap the **Status** parameter token to add it to the field.
+3. Under **Outputs from Get object**, click or tap the **Status** parameter token to add it to the column.
    
     ![Add status to condition](./media/common-data-model-approve/add-status-to-condition.png)
 4. In the upper-right corner of the condition, type or paste **Approved** in the box that contains **Choose a value**.
@@ -219,7 +219,7 @@ By following the steps in this section, you'll build:
     **Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
    
     ![Approval recipient](./media/common-data-model-approve/approval-recipient.png)
-4. Under **Subject**, click or tap in the box, and then click or tap the **File name** parameter token to add it to the field.
+4. Under **Subject**, click or tap in the box, and then click or tap the **File name** parameter token to add it to the column.
    
     ![Specify the file name as the email subject](./media/common-data-model-approve/subject-is-file-name.png)
 5. Under **Body**, type or paste **The item has been approved.**
@@ -236,7 +236,7 @@ By following the steps in this section, you'll build:
 2. In the box that contains **Search for more actions**, type or paste **Dropbox**, and then click or tap **Dropbox - Delete file**.
    
     ![Delete file from Dropbox](./media/common-data-model-approve/dropbox-delete-file.png)
-3. Under **File**, click or tap in the box, and then click or tap the **File identifier** token parameter to add it to the field.
+3. Under **File**, click or tap in the box, and then click or tap the **File identifier** token parameter to add it to the column.
    
     ![Identify file to delete](./media/common-data-model-approve/identify-file-delete.png)
 
@@ -253,15 +253,15 @@ By following the steps in this section, you'll build:
     ![Create an app in a browser](./media/common-data-model-approve/new-app-button.png)
 2. In the dialog box that appears, click or tap the option to open either Power Apps Studio for Windows or Power Apps Studio for the web.
 3. If you opened Power Apps Studio for Windows, click or tap **New** in the left navigation bar.
-4. Under **Create an app from your data**, click or tap **Phone layout** in the **Common Data Service** tile.
+4. Under **Create an app from your data**, click or tap **Phone layout** in the **Microsoft Dataverse** tile.
    
     ![Create app](./media/common-data-model-approve/afd-cdm.png)
 5. In the **Search** box, type or paste **Review**.
    
-    ![Search for an entity](./media/common-data-model-approve/search-entities.png)
-6. Under **Choose an entity**, click or tap **Review Dropbox Files**.
+    ![Search for an table](./media/common-data-model-approve/search-entities.png)
+6. Under **Choose an table**, click or tap **Review Dropbox Files**.
    
-    ![Choose an entity](./media/common-data-model-approve/choose-entity.png)
+    ![Choose an table](./media/common-data-model-approve/choose-entity.png)
 7. Near the lower-right corner, click or tap **Connect**.
    
     ![Connect button](./media/common-data-model-approve/connect-button.png)
@@ -277,7 +277,7 @@ By following the steps in this section, you'll build:
 ## Customize the app
 1. In the right navigation bar, click or tap the layout that includes a header and a description.
    
-    ![Connect button](./media/common-data-model-approve/choose-layout.png)
+    ![Choose layout](./media/common-data-model-approve/choose-layout.png)
 2. On the **BrowseScreen**, click or tap just under the search bar to select the larger text-box control.
    
     ![Select header](./media/common-data-model-approve/select-header.png)

@@ -35,7 +35,7 @@ Important: You must be the co-owner to add or remove owners and contributors to 
 
 ## Share action
 
-The share action is available on the Processes screen in process advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on process advisor system entities.
+The share action is available on the Processes screen in process advisor for each process where you're a co-owner. It's also available for the system administrator in the environment, or for any security role that has Share permissions on process advisor system tables.
 The share action is also available on the process detail screen in process advisor, with the same conditions.
 Sharing is not needed at the recordings level. Once you share a process with a co-owner, they will be able to manage the recordings associated to the process.
 
