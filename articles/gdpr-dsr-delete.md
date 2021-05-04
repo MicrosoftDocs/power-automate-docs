@@ -138,7 +138,7 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. Select **Data**, and then select **Tables**.
 
-1. Select the ellipsis **(…)** for the **Flow Approval** entity, and then open the data in Microsoft Excel.
+1. Select the ellipsis **(…)** for the **Flow Approval** table, and then open the data in Microsoft Excel.
 
 1. In Microsoft Excel, search, filter, and then delete approval data as required.
 
@@ -272,7 +272,7 @@ An admin can grant Admin access to an environment created by a specific user fro
 
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which is stored in the Power Automate service as a “role assignment.”
 
-With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within Common Data Service.
+With the introduction of Microsoft Dataverse, if a database is created within the environment, these “role assignments” are stored as records within Microsoft Dataverse.
 
 For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](/flow/environments-overview-admin).
 

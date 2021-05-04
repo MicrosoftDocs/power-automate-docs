@@ -79,8 +79,8 @@ You need a trigger to serve as the first step in the approval flow that you'll c
 
 Some common approval triggers are:
 
-- When a new record is created.
-- Wen a record is updated. 
+- When a new row is created.
+- Wen a row is updated. 
 
 >[!TIP]
 >Both Webhook and polling triggers work with approval flows.
