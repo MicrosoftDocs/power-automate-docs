@@ -25,7 +25,7 @@ search.audienceType:
 >
 > The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/).
+> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Microsoft Dataverse (legacy) connector](/connectors/commondataservice/).
 >
 > The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Microsoft Dataverse connectors do, such as the ability to connect to multiple environments. The [Microsoft Dataverse (legacy)](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
 

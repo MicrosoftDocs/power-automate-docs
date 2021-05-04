@@ -53,6 +53,7 @@ The following terms are commonly used in Power Automate.
 
  [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
+
 **Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
 
 **Conditions:** Conditions tell flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that you'll get an email when a tweet that contains a keyword is retweeted at least 10 times.
