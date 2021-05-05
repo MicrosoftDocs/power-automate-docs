@@ -70,4 +70,7 @@ Adding a co-owner to a process allows others to help you label and validate the 
 - [View the analytics of an analyzed process](process-advisor-analyze.md).
 - [Delete the process](process-advisor-security.md).
 
+>[!IMPORTANT]
+>Currently only the owner of the process can analyze it.
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
