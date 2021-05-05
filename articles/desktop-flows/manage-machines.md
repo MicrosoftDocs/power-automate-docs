@@ -176,7 +176,7 @@ You can edit the flow and choose the new desktop flow connection for each of the
 
 1. Next to Connect, select **Direct to machine (preview)**. 
 
-1. Select the name of your machine group. 
+1. Select the name of your machine. 
 
 1. Enter the username and password you would use to sign into your machines. 
 
