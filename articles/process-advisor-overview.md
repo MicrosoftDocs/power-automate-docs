@@ -11,6 +11,7 @@ tags: ''
 ms.service: power-automate
 ms.devlang: na
 ms.topic: article
+ms.custom: intro-internal  
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/24/2021
