@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/26/2021
+ms.date: 5/25/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -46,7 +46,7 @@ With insights and guided recommendations from process advisor, you are ready to 
 
 Process advisor is licensed as part of Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
 
-For more information about process advisor licensing, see [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+For more information about process advisor licensing, see [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
 For complete licensing details, see the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 

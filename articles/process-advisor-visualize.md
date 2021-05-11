@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/26/2021
+ms.date: 5/25/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -105,7 +105,7 @@ When you select **+Automate activities** in the menu at the top, you are shown t
 
 ### See also
 
-[Connector overview](https://docs.microsoft.com/connectors/connectors)<br/>
+[[Connector overview](/connectors/connectors)<br/>
 [Overview of cloud flows](overview-cloud.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
