@@ -55,7 +55,7 @@ There are various filters available to you to drill down into the process:
 
 - **Variants by time**&mdash;Average time spent to finish the process per variant.
 
-- **Activity by average time:**&mdash;Shows average time each activity takes so you could find the most time-consuming activities with a glance at this visual.
+- **Activity by average time**&mdash;Shows average time each activity takes so you could find the most time-consuming activities with a glance at this visual.
 
 - **Recordings by time**&mdash;Shows the time it took for each recording in a process.
 
