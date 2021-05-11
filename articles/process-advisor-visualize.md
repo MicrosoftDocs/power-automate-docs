@@ -49,7 +49,7 @@ There are various filters available to you to drill down into the process:
 
 - **Average time**&mdash;Shows you the average time it takes for a process to be completed across all recordings associated with the process. It is one of the most important data points for process mining because deep diving into duration of the process informs you of the bottlenecks in your process.
 
-### Process visualizations
+### Process map visualizations
 
 - **Variants by frequency**&mdash;Shows how many times a particular process path was taken by the process.
 
