@@ -41,7 +41,7 @@ Power Apps includes several types of processes, each designed for a different pu
 Similar to processes, you can also create business rules and recommendations. More information: [Create business rules and recommendations to apply logic in a form](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form)  
 
 > [!NOTE]
-> Using processes can impact the license requirements for Power Apps and flows. More information: [Entity license requirements](/powerapps/maker/common-data-service/data-platform-entity-licenses) 
+> Using processes can impact the license requirements for Power Apps and flows. More information: [Table license requirements](/powerapps/maker/common-data-service/data-platform-entity-licenses) 
 
 
 <a name="BKMK_BP"></a>   
@@ -68,7 +68,7 @@ There are two paths to navigate to processes:
   
 - Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) and go to **Components** > **Processes**. This path provides convenient access when you are doing other customization work in the customization tools.  
 
-- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Processes**. This path allows you to use views defined for the Process entity, including any custom views.  
+- **[Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)** > **Processes**. This path allows you to use views defined for the Process table, including any custom views.  
   
 Individual business process flows can also be edited using the **Edit Process** button in the command bar for the form where the business process flow is active.  
   
@@ -105,18 +105,18 @@ Processes can check conditions, apply branching logic, and perform actions. They
 |Step|Process type|Description|  
 |----------|------------------|-----------------|  
 |**Stage**|Workflow, Action|Stages make the workflow logic easier to read, and explain the workflow logic. However, stages don’t affect the logic or behavior of workflows. If a process has stages, all the steps in the process must be contained with a stage.|  
-|**Check Condition**|Workflow, Action|A logical "if \<condition> then" statement.<br /><br /> You can check values for the record that the workflow is running on, any of the records linked to that record in an N:1 relationship, or any records created by earlier steps. Based on these values you can define additional steps when the condition is `true`.|  
+|**Check Condition**|Workflow, Action|A logical "if \<condition> then" statement.<br /><br /> You can check values for the row that the workflow is running on, any of the rows linked to that row in an N:1 relationship, or any rows created by earlier steps. Based on these values you can define additional steps when the condition is `true`.|  
 |**Conditional Branch**|Workflow, Action|A logical "else-if-then" statement. The editor uses the text “Otherwise, if \<condition> then:”<br /><br /> Select a check condition you have previously defined and you can add a conditional branch to define additional steps when the check condition returns `false`.|  
 |**Default Action**|Workflow, Action|A logical "else" statement. The editor uses the text “Otherwise:”<br /><br /> Select a check condition, conditional branch, wait condition, or parallel wait branch that you have previously defined and you can use a default action to define steps for all cases that don’t match the criteria defined in condition or branch elements.|  
 |**Wait Condition**|Background Workflow Only|Enables a background workflow to pause itself until the criteria defined by the condition have been met. The workflow starts again automatically when the criteria in the wait condition have been met.|  
 |**Parallel Wait Branch**|Background Workflow Only|Defines an alternative wait condition for a background workflow with a corresponding set of additional steps that are performed only when the initial criterion is met. You can use parallel wait branches to create time limits in your workflow logic. They help prevent the workflow from waiting indefinitely until the criteria defined in a wait condition have been met.|  
 |**Assign Value**|Action|Sets a value to a variable or output parameter in the process.|  
-|**Create Record**|Workflow, Action|Creates a new record for an entity and assigns values to attributes.|  
-|**Update Record**|Workflow, Action|You can update the record that the workflow is running on, any of the records linked to that record in an N:1 relationship, or any records created by earlier steps.|  
-|**Assign Record**|Workflow, Action|You can assign the record that the workflow is running on, any of the records linked to that record with an N:1 relationship, or any records created by earlier steps.|  
-|**Send Email**|Workflow, Action|Sends an email. You can choose to create a new email message or use an email template configured for the entity of the record that the workflow is running on or any entities that have an N:1 relationship with the entity, or the entity for any records created by earlier steps.|  
+|**Create row**|Workflow, Action|Creates a new row for a table and assigns values to columns.|  
+|**Update row**|Workflow, Action|You can update the row that the workflow is running on, any of the rows linked to that row in an N:1 relationship, or any rows created by earlier steps.|  
+|**Assign row**|Workflow, Action|You can assign the row that the workflow is running on, any of the rows linked to that row with an N:1 relationship, or any rows created by earlier steps.|  
+|**Send Email**|Workflow, Action|Sends an email. You can choose to create a new email message or use an email template configured for the table of the row that the workflow is running on or any tables that have an N:1 relationship with the table, or the table for any rows created by earlier steps.|  
 |**Start Child Workflow**|Workflow, Action|Starts a workflow process that has been configured as a child workflow.|  
-|**Change Status**|Workflow, Action|Changes the status of the record that the process is running on, any of the records linked to that record with an N:1 relationship, or any records created by earlier steps.|  
+|**Change Status**|Workflow, Action|Changes the status of the row that the process is running on, any of the rows linked to that row with an N:1 relationship, or any rows created by earlier steps.|  
 |**Stop Workflow**|Workflow, Action|Stops the current workflow or action. You can set a status of either **Succeeded** or **Canceled** and specify a status message.|  
 |**Custom Step**|Workflow, Action|Provides extensions to the logical elements available by default. Steps can include conditions, actions, other steps, or a combination of these elements. Developers can create custom workflow steps. By default, there are no custom steps available.|
 

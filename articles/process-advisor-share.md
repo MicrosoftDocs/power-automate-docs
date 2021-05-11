@@ -42,7 +42,6 @@ The share action is also available on the process detail screen with the same co
 > [!div class="mx-imgBorder"]
 > ![!Manage access](media/manage-access.png "Manage access")
 
-
 ## Share panel
 
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users and teams in your organization, and share your process with them.
