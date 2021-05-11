@@ -41,19 +41,23 @@ There are various filters available to you to drill down into the process:
 - Recording selector allows you to select one recording, or a set of recordings to visualize in your process map.
 - Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They are described in this topic.
 
-### Process map KPIs
+### Process KPIs
 
 - **Number (#) of recordings**&mdash;Shows you how many recordings of the same process were submitted to analyze this process. The more recordings you have available, the more insights you will be getting. For example, if you provide only a few recordings of the process that often has different paths to completion, you might not get insights into all the variations that the process could take.
 
+- **Number of variants**&mdash;Shows the number of paths a process could take. For example, if a process has one additional activity, that would be counted as one additional variant of a process.
+
 - **Average time**&mdash;Shows you the average time it takes for a process to be completed across all recordings associated with the process. It is one of the most important data points for process mining because deep diving into duration of the process informs you of the bottlenecks in your process.
 
-### Process map visualizations
+### Process visualizations
 
 - **Variants by frequency**&mdash;Shows how many times a particular process path was taken by the process.
 
 - **Variants by time**&mdash;Average time spent to finish the process per variant.
 
 - **Activity by average time:**&mdash;Shows average time each activity takes so you could find the most time-consuming activities with a glance at this visual.
+
+- **Recordings by time**&mdash;Shows the time it took for each recording in a process.
 
 - **Start date**&mdash;Filters for the time range when recording has started. For example, if your process changed over time you want to see if there was any impact on your metrics after the process change by filtering for recordings that started after a certain time.
 
