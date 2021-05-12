@@ -20,7 +20,7 @@ search.audienceType:
 
 Manage and manipulate XML files
 
-|<!-- --> |
+| |
 |-----|
 |[Read XML from file](#readfromfile)|
 |[Write XML to file](#writexmltofile)|
