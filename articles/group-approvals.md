@@ -64,7 +64,7 @@ Approvals to groups behave exactly like approvals to users. It is just the entit
 
 1. In the **Assigned to** input start typing the name of the group to which you want to send the approval. The **Assigned to** field accepts both user and Microsoft 365 group inputs. If you know the email id associated with the group, you can include that as well. 
 
-<!--TODO ADD IMAGE HERE-->
+![Add a group to the Assigned to field](./media/approvals-howto/group-approval-assigned-to.png)
 
 >[!TIP]
 >You can include multiple groups and users in the **Assigned to** field.
@@ -90,12 +90,7 @@ Approvals to groups behave exactly like approvals to users. It is just the entit
 
 ### Approve the request
 
-The group to which you sent the approval request receives an email, similar to this image, where they can **Approve** or **Reject** the approval.
-
-<!--TODO NEED IMAGE HERE-->
-
->[!TIP]
->Approvers can review requests in the approvals center as well.
+For mail enabled groups the group to which the approval is sent receives a notification to respond to the approval. Members of the group can also view the approval in the Approvals action center on the Power Automate portal and in the Approvals app in Teams.
 
 
 ## What to expect when you send approval requests to groups and users
