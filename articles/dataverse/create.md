@@ -40,11 +40,11 @@ Follow these steps to add a new **Account** in Dataverse when you receive an ema
 
    ![Select the Accounts table](../media/add-row/add-row-2.png)
 
-   After you select a table, new fields appear. Use these fields to set values for other fields. All mandatory fields display an asterisk (\*). It's not necessary to enter a value for optional fields.
+   After you select a table, the card expands, displaying both optional and required items. All mandatory items display an asterisk (\*).
 
 1. Optional: if you don't see a column that you need, select **Show advanced options** at the bottom of the card to view all columns.
 
-   ![Card that shows all columns for the add a new row action](../media/add-row/show-all-fields-advanced.png)
+   ![Card that shows all columns for the add a new row action](../media/add-row/show-all-advanced.png)
 
 >[!TIP]
 >You can use outputs from previous triggers and actions in the **Dynamic content** selector shown in the following image, or modify them by building an **Expression** as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).

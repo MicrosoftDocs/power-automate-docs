@@ -1,6 +1,6 @@
 ---
 title: "Sample: Work with business process flows | MicrosoftDocs"
-description: "The sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for an entity record, retrieving active path for a business process flow instance and its process stages, and changing the active stage."
+description: "The sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for a table row, retrieving active path for a business process flow instance and its process stages, and changing the active stage."
 ms.custom: ""
 ms.date: 04/05/2018
 ms.reviewer: ""
@@ -22,7 +22,7 @@ search.audienceType:
 # Sample: Work with business process flows
 [!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-This sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for an entity record, retrieving active path for a business process flow instance and its process stages, and changing the active stage. For information about these concepts, see [Work with business process flows using code](business-process-flows-code.md)  
+This sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for a table row, retrieving active path for a business process flow instance and its process stages, and changing the active stage. For information about these concepts, see [Work with business process flows using code](business-process-flows-code.md)  
 
  This sample is available to download from [Sample: Work with business process flows](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
 
@@ -30,9 +30,9 @@ This sample demonstrates how to programmatically work with business process flow
 ## Prerequisites  
  Before you can run the sample:  
 
-1. Have access to a Common Data Service environment.  
+1. Have access to a Dataverse environment.  
 
-2. Have appropriate privileges on the Lead, Opportunity, and Workflow entities and business process  flow definition entity records used in this sample.  
+2. Have appropriate privileges on the Lead, Opportunity, and Workflow tables and business process flow definition table rows used in this sample.  
 
 3. Have Visual Studio 2015 or later to run the sample.  
 
@@ -41,18 +41,18 @@ This sample demonstrates how to programmatically work with business process flow
 <a name="BKMK_WhatThisSampleDoes"></a>   
 ## What this sample does  
 
-1.  Creates a sample Lead record. This automatically creates an instance of the "Lead To Opportunity Sales Process" business process flow for the Lead record.  
+1.  Creates a sample Lead row. This automatically creates an instance of the "Lead To Opportunity Sales Process" business process flow for the Lead row.  
 
-2.  Converts the Lead record to an Opportunity record.  
+2.  Converts the Lead row to an Opportunity row.  
 
 
-4.  Retrieves the business process flow instances associated with the "Opportunity" record using the `RetrieveProcessInstances` message. The first record in the returned collection is the active business process flow  instance for the opportunity record, which is "Lead To Opportunity Sales Process" in this case.  
+4.  Retrieves the business process flow instances associated with the "Opportunity" row using the `RetrieveProcessInstances` message. The first row in the returned collection is the active business process flow instance for the opportunity row, which is "Lead To Opportunity Sales Process" in this case.  
 
 5.  Retrieves the active path and the process stages for the "Lead To Opportunity Sales Process" instance using the `RetrieveActivePath` message.  
 
 6.  Retrieves the currently active stage for the "Lead To Opportunity Sales Process" instance, and prompts the user whether to move to the next stage. On confirmation to move, sets the next stage in the active path as the active stage for the "Lead To Opportunity Sales Process" instance.  
 
-7.  Finally, prompts the user whether to delete the records created during the sample run.  
+7.  Finally, prompts the user whether to delete the rows created during the sample run.  
 
      Here is the output of the sample:  
 

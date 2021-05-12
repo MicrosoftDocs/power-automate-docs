@@ -28,7 +28,7 @@ Improve operational efficiency with a unified view of business data by creating 
 For example, you can use Dataverse within Power Automate in these key ways:
 
 * Create a cloud flow to import data, export data, or take action (such as sending a notification) when data  changes. For detailed steps, see the procedures later in this topic.
-* Instead of [creating an approval loop through email](wait-for-approvals.md), create a cloud flow that stores approval state in an entity, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
+* Instead of [creating an approval loop through email](wait-for-approvals.md), create a cloud flow that stores approval state in an table, and then build a custom app in which users can approve or reject items. For detailed steps, see [Build an approval loop with Dataverse](common-data-model-approve.md).
 
 In this article, you will create a cloud flow that sends an email notification when a *Qualified Lead Process* creates a new *Opportunity* in Dataverse. The notification includes the *Notes* from the *Lead*.
 
@@ -50,10 +50,6 @@ In this article, you will create a cloud flow that sends an email notification w
 ## Use a template
 
 1. In the left-side navigation pane, select **Templates**, and then search for **Copy Notes from Lead to Opportunity**.
-    >
-    >[!NOTE]
-    >Common Data Service is now Microsoft Dataverse. Template names may be renamed at some point.
-
 1. You could use any template that performs a task in Dataverse that you want to automate. In this example, select the template that copies notes from Lead to Opportunity in Dataverse.
 
     ![Choose a template](./media/common-data-model-intro/select-template.png)
@@ -66,13 +62,13 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Customize your flow template
 
-1. On the **When an Opportunity is created** card, select the **Environment**, **Entity Name**, and **Scope** that you want to use.
+1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
    
-    ![Specify the details for the entity](./media/common-data-model-intro/specify-instance.png)
+    ![Specify the details for the table](./media/common-data-model-intro/specify-instance.png)
 
-1. Complete the **Get Opportunity Record** card, per your requirements.
+1. Complete the **Get Opportunity row** card, per your requirements.
    
-    ![Get Opportunity Record](./media/common-data-model-intro/get-opportunity-record.png)
+    ![Get Opportunity row](./media/common-data-model-intro/get-opportunity-record.png)
 
 1. Configure the **Originate from a Lead** card. 
    

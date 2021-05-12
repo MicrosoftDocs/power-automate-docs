@@ -228,6 +228,8 @@
         href: ./teams/customize-approvals.md
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
+    - name: Trigger flows from Power BI report
+      href: ./trigger-flow-powerbi-report.md
     - name: Use flows with Microsoft Forms
       items:
       - name: Overview 
@@ -248,7 +250,7 @@
       displayName: Use flows with Microsoft Dataverse
     # - name: Get started
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
-    - name: Trigger flows when a record changes
+    - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
     - name: Use a flow to add a row
       href: ./dataverse/create.md
@@ -272,8 +274,8 @@
     #   href: ./dataverse/relate-unrelate-rows.md
     - name: Use a flow to perform a changeset request in Dataverse
       href: ./dataverse/change-set.md    
-    # - name: Upload or download image and file content
-    #   href: ./dataverse/upload-download-file.md       
+    - name: Upload or download image and file content
+      href: ./dataverse/upload-download-file.md       
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
@@ -330,6 +332,12 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
+  - name: Manage machines and machine groups (preview)
+    items:
+    - name: Manage machines
+      href: ./desktop-flows/manage-machines.md
+    - name: Manage machine groups
+      href: ./desktop-flows/manage-machine-groups.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -483,7 +491,7 @@
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
-  - name: Best practices for business process flow attributes
+  - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Connect to data
   items:
@@ -495,7 +503,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Microsoft Dataverse (Legacy)
+- name: Classic Dataverse
   items:
   - name: Classic Dataverse workflows
     items:
@@ -534,7 +542,7 @@
     items:
     - name: "Sample: Work with business process flows"
       href: ./developer/sample-work-business-process-flows.md
-  - name: Custom Common Data Service workflow activities
+  - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:

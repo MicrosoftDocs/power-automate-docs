@@ -99,7 +99,7 @@ Let's get started creating our flow.
    
    **Double-click** indicates that the flow triggers when the Flic is quickly pressed two times. **Hold** indicates that a long press on the Flic triggers the flow.
    
-   You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to record the time you leave a client.
+   You're free to create other flows and trigger them using the other events in the **Events** list. For example, you can use the **double-click** event to note the time you leave a client.
 
 ### Configure the sheet
    On the **Insert row** card:
@@ -136,7 +136,7 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
    
     ![save your flow](./media/flic-button-flows/flic-email-body.png)
 
-For extra credit, consider extending the flow to automatically record your location (latitude and longitude) when the Flic is pressed.
+For extra credit, consider extending the flow to automatically store your location (latitude and longitude) when the Flic is pressed.
 
 ## More information
 * [Share button flows](share-buttons.md).

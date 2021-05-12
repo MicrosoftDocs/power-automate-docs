@@ -39,7 +39,7 @@ While this walkthrough copies data from a Microsoft SharePoint [list](https://su
 * Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!TIP]
-> Every column name in the source and destination don't need to match, but you must provide data for all *required* columns when you insert or update an item. Power Automate identifies the required fields for you.
+> Every column name in the source and destination doesn't need to match, but you must provide data for all *required* columns when you insert or update an item. Power Automate identifies the required fields for you.
 > 
 > 
 
@@ -140,10 +140,10 @@ On the **If yes** branch of the **Condition**:
     The **Insert row** card opens.
 2. From the **Table name** list, select the table into which the new item will be inserted.
    
-    The **Insert row** card expands and displays all fields in the selected table. Fields with an asterisk (*) are required and must be populated for the row to be valid.
-3. Select each field that you want to populate and enter the data.
+    The **Insert row** card expands and displays all columns in the selected table. Fields with an asterisk (*) are required and must be populated for the row to be valid.
+3. Select each column that you want to populate and enter the data.
    
-    You may enter the data manually, select one or more tokens from the **Dynamic content**, or enter any combination of text and tokens into the fields.
+    You may enter the data manually, select one or more tokens from the **Dynamic content**, or enter any combination of text and tokens into the columns.
    
     The **Insert row** card now resembles this image:
    
@@ -153,7 +153,7 @@ On the **If yes** branch of the **Condition**:
 If the item exists in the destination, update it with the changes.
 
 1. Add the **SQL Server - Update row** action to the **If no** branch of the **Condition**.
-2. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the fields of the table.
+2. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the columns of the table.
    
     ![view environments](media/odata-filters/update-row.png)
 3. At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.

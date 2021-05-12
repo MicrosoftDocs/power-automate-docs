@@ -100,10 +100,42 @@ conceptualContent:
           itemType: overview
         - text: Approvals
           url: ./get-started-approvals.md
-          itemType: overview    
-        - text: Dataverse
+          itemType: overview              
+
+    - title: Use flows with Dataverse
+      links:
+        - text: Overview
           url: ./dataverse/overview.md
-          itemType: overview           
+          itemType: overview
+        - text: Trigger flows with Dataverse events
+          url: ./dataverse/create-update-delete-trigger.md
+          itemType: how-to-guide
+        - text: Add a row
+          url: ./dataverse/create.md
+          itemType: how-to-guide
+        - text: Delete a row
+          url: ./dataverse/delete-row.md
+          itemType: how-to-guide 
+        - text: Upload or download files/images
+          url: ./dataverse/upload-download-file.md
+          itemType: how-to-guide         
+    - title: Create approval flows
+      links:
+        - text: Get started
+          url: ./get-started-approvals.md
+          itemType: how-to-guide
+        - text: Trigger approvals from SharePoint
+          url: ./trigger-sharepoint-list.md
+          itemType: how-to-guide
+        - text: Top scenarios
+          url: ./approvals-howto.md
+          itemType: how-to-guide
+        - text: Format approval requests
+          url: ./approvals-markdown-support.md
+          itemType: how-to-guide
+        - text: Customize responses
+          url: ./create-approval-response-options.md
+          itemType: how-to-guide          
     
     - title: Use solutions for ALM
       links:

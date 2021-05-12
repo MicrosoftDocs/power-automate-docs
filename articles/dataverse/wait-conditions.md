@@ -39,5 +39,5 @@ The Microsoft Dataverse connector provides four ways to add wait conditions. Use
 
 1. Delay an action until a specific event occurs. You can use a trigger from the Microsoft Dataverse connector or any other connector as a step in the middle of the flow to delay subsequent steps until a specific event occurs. For example, you can define a flow that’s similar to the one in the following image to check for updates to **Account** rows in Dataverse and then waits for an email confirmation from the **Account** manager before updating the change.
 
-    ![Flow to update records](../media/wait-conditions/delay-actions-flow.png)
+    ![Flow to update rows](../media/wait-conditions/delay-actions-flow.png)
 
