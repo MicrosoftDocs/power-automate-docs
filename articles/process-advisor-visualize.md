@@ -101,7 +101,7 @@ When you select **+Automate activities** in the menu at the top, you are shown t
 
 ### See also
 
-[[Connector overview](/connectors/connectors)<br/>
+[Connector overview](/connectors/connectors)<br/>
 [Overview of cloud flows](overview-cloud.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
