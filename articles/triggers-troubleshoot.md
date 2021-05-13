@@ -226,7 +226,7 @@ will process each one their own data. Since the quota is per flow, this can be u
 
 There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](/connectors/commondataservice/).
 
-My flow is not listed - The Power Automate menu only lists flows that begin with the **When a record is selected Common Data Service** trigger and contain at least one trigger or action that references that entity. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365. 
+My flow is not listed - The Power Automate menu only lists flows that begin with the **When a row is added, modified or deleted** trigger and contain at least one trigger or action that references that table. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365. 
 
 You can also access these flows in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments):
 

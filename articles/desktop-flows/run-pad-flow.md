@@ -38,7 +38,7 @@ When running unattended, Power Automate automatically signs into the target devi
 
 When running attended, Power Automate uses an existing Windows user session.
 
-When you add a desktop flow to a cloud flow, you can choose whether you want your dekstop flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+When you add a desktop flow to a cloud flow, you can choose whether you want your desktop flow to run attended or unattended. Here are some key differences between attended and unattended runs:
 
 ### Unattended mode
 

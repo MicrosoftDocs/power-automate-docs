@@ -144,7 +144,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 
 ### Release 2018-04-04
 
-- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Common Data Service connector.
+- **Approvals on Dataverse** - Modern approvals are built on the latest version of Dataverse. This means that you can build flows that read the status of the approvals you send or receive with the Microsoft Dataverse connector.
 - **Find errors in apply to each** - Jump directly to errors in loops in the flow run view, even when there are hundreds of items in the loop.
 - **Reassign approvals** - You can assign any approval you receive to another person in your organization to delegate the approval to them. 
 - **Room lists** - The Office 365 Outlook connector added actions to get room data in your organization.
@@ -363,7 +363,7 @@ You can now view the status of all of the pending approval requests you have sen
 ### Release 2017-05-23
 * **Microsoft Teams connector** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) is a chat-based workspace in Office 365 that brings together people, conversations and content – along with the tools that teams need, so they can easily collaborate to achieve more.
 * **Widgets on iOS and Android** - Power Automate widgets are button shortcuts that provide you an easier and faster way for button triggering straight from your home screen.
-* **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a record in Dynamics 365.
+* **Create "error handling" steps** -  Define one or more steps to run after an action fails. For example, get a notification immediately if your flow fails to create a row in Dynamics 365.
 * **Integer and float variables** -  Initialize and increment or decrement counters inside of a cloud flow run to count how many times a certain set of logic runs.
 * **Flow details page** - When you select a cloud flow in your **My flows** list, you'll see a page with details about that flow, such as who has access and the run history.
 * **Flow run quotas for admins** - Administrators can now monitor flow run usage across an organization against the common company run quota and get a quota breakdown to understand what licenses contribute to their quota.
@@ -656,7 +656,7 @@ If you used Logic flows as part of [Microsoft Power Apps](https://powerapps.micr
 >Release plans are now tracked [here](/dynamics365/release-plans/).
 
 ## Next steps
-If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.md), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
+If you have any issues not already covered in these release notes or in the [FAQ](frequently-asked-questions.yml), please [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions, or [contact support](https://go.microsoft.com/fwlink/?LinkID=787479).
 
 
 

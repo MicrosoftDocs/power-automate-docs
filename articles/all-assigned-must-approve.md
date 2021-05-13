@@ -123,8 +123,8 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
 | --- | --- |
 | Approve/Reject - Everyone must approve | Approval or rejection is needed by **all** approvers to complete the request. </p> The actions that follow the **Start and wait for an approval** action run after **all** of the approvers approve, or when a single rejection is done.|
 | Approve/Reject - First to respond | Approval or rejection by any approver completes the request.  </p> The actions that follow the **Start and wait for an approval** action run after any one of the approvers decides.|
-| Custom reponses - Wait for all responses | All appovers must respond to complete the process. |
-| Custom reponses - Wait for one response | A response from any approver completes the process. |
+| Custom responses - Wait for all responses | All approvers must respond to complete the process. |
+| Custom responses - Wait for one response | A response from any approver completes the process. |
 
 At the top of the screen, select **Save** to save your flow.
 
@@ -147,7 +147,7 @@ Here's an example of what a response and a response summary may look like after 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)
 * [Parallel modern approvals](parallel-modern-approvals.md)
-* [Approvals and Common Data Service](common-data-model-approve.md)
+* [Approvals and Dataverse](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)
 
 

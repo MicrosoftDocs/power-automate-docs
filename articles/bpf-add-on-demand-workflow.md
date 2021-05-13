@@ -29,8 +29,8 @@ A workflow becomes activated based on where you drop the workflow onto the busin
 - On-demand global processes. When the workflow is dropped  onto the **Global Workflows** area, the workflow is triggered on process activation or process archival (when the status transitions to an applied, completed, reactivated, or abandoned state). 
 
 Notice the following requirements when you add a workflow to a business process flow.
-- For workflows added to a stage: You can only use active, on-demand workflows created for the same entity of the stage where you add the workflow.  
-- For global workflows: You can only use active, on-demand workflows created for the primary entity of the business process flow.
+- For workflows added to a stage: You can only use active, on-demand workflows created for the same table of the stage where you add the workflow.  
+- For global workflows: You can only use active, on-demand workflows created for the primary table of the business process flow.
 
 ## Add an on-demand workflow to a business process flow stage
 

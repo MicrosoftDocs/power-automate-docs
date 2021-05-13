@@ -39,7 +39,7 @@ highlightedContent:
     # Card
     - title: Power Automate training on Microsoft Learn
       itemType: learn
-      url: /learn/browse/?products=power-automate
+      url: /learn/powerplatform/power-automate
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -57,7 +57,7 @@ conceptualContent:
           url: ./process-advisor-overview.md
           itemType: overview
         - text: Power Automate FAQs
-          url: ./frequently-asked-questions.md
+          url: ./frequently-asked-questions.yml
           itemType: reference      
     
     - title: Create cloud flows
@@ -100,7 +100,42 @@ conceptualContent:
           itemType: overview
         - text: Approvals
           url: ./get-started-approvals.md
-          itemType: overview            
+          itemType: overview              
+
+    - title: Use flows with Dataverse
+      links:
+        - text: Overview
+          url: ./dataverse/overview.md
+          itemType: overview
+        - text: Trigger flows with Dataverse events
+          url: ./dataverse/create-update-delete-trigger.md
+          itemType: how-to-guide
+        - text: Add a row
+          url: ./dataverse/create.md
+          itemType: how-to-guide
+        - text: Delete a row
+          url: ./dataverse/delete-row.md
+          itemType: how-to-guide 
+        - text: Upload or download files/images
+          url: ./dataverse/upload-download-file.md
+          itemType: how-to-guide         
+    - title: Create approval flows
+      links:
+        - text: Get started
+          url: ./get-started-approvals.md
+          itemType: how-to-guide
+        - text: Trigger approvals from SharePoint
+          url: ./trigger-sharepoint-list.md
+          itemType: how-to-guide
+        - text: Top scenarios
+          url: ./approvals-howto.md
+          itemType: how-to-guide
+        - text: Format approval requests
+          url: ./approvals-markdown-support.md
+          itemType: how-to-guide
+        - text: Customize responses
+          url: ./create-approval-response-options.md
+          itemType: how-to-guide          
     
     - title: Use solutions for ALM
       links:
