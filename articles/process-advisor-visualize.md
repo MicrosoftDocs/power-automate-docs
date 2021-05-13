@@ -21,7 +21,7 @@ search.audienceType:
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select **Analytics** > **Process map** tab.
 
 > [!div class="mx-imgBorder"]
-> ![Process map](media/process-advisor-visualize/process-map.png "Process advisor process map")
+> ![Process map](media/automation-reco-1.png "Process advisor process map")
 
 Activities describe tasks or actions which make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
 
@@ -85,19 +85,6 @@ Application analytics allows you to gain more insights from recordings by unders
 - **Time spent by application**&mdash;A pie chart that shows a distribution of the time spent KPI per app. This helps you understand which applications the users spends the most amount of time on.
 
 - **Actions by application**&mdash;A pie chart that shows a distribution of the actions KPI per app. This helps you understand which apps have most actions or manual inputs.
-
-## Automation recommendation
-
-Process advisor automation recommendation feature helps you identify automation opportunities and guides you in automating your processes using Power Automate. The recommendation icon on the process map activity shows the automation opportunity.
-
-> [!div class="mx-imgBorder"]
-> ![Automation recommendation](media/automation-reco-1.png "Automation recommendation")
-
-
-When you select **+Automate activities** in the menu at the top, you are shown the cloud flow connectors recommendations relevant to your process.
-
-> [!div class="mx-imgBorder"]
-> ![Automate activities](media/automation-reco-2.png "Automate activities")
 
 ### See also
 
