@@ -23,9 +23,9 @@ The process map makes it possible to visualize and analyze processes. By looking
 > [!div class="mx-imgBorder"]
 > ![Process map](media/automation-reco-1.png "Process advisor process map")
 
-Activities describe tasks or actions which make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
+Activities describe tasks or actions that make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
 
-Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see additional metrics, frequency of the activities, and throughput time, on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
+Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see more metrics, frequency of the activities, and throughput time, on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
 
 There are various filters available to you to drill down into the process:
 
@@ -37,7 +37,7 @@ There are various filters available to you to drill down into the process:
 
 - **Number (#) of recordings**&mdash;Shows you how many recordings of the same process were submitted to analyze this process. The more recordings you have available, the more insights you will be getting. For example, if you provide only a few recordings of the process that often has different paths to completion, you might not get insights into all the variations that the process could take.
 
-- **Number of variants**&mdash;Shows the number of paths a process could take. For example, if a process has one additional activity, that would be counted as one additional variant of a process.
+- **Number of variants**&mdash;Shows the number of paths a process could take. For example, if a process has one other activity, that would be counted as one additional variant of a process.
 
 - **Average time**&mdash;Shows you the average time it takes for a process to be completed across all recordings associated with the process. It is one of the most important data points for process mining because deep diving into duration of the process informs you of the bottlenecks in your process.
 
@@ -70,13 +70,13 @@ Application analytics allows you to gain more insights from recordings by unders
 
 - **Number (#) times accessed**&mdash;Number of accesses. An access is when an app comes back into focus.
 
-- **Time spent**&mdash;Amount of time spent in using apps. This does not count time spent when not focused on an app, e.g. desktop.
+- **Time spent**&mdash;Amount of time spent in using apps. This does not count time spent when not focused on an app, for example, desktop.
 
 - **Actions**&mdash;Count of actions in apps.
 
 ### Application analytics visualizations
 
-- **Application usage**&mdash;A scatter plot which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed which means the recorder is jumping back and forth between this application and other applications. This may occur in cases where there is copy and paste happening, as an example. Other apps are used for a long time and the action is completely isolated to that application and does not depend on other recordings for completion of the necessary activity.
+- **Application usage**&mdash;A scatter plot, which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed which means the recorder is jumping back and forth between this application and other applications. This may occur in cases where there is copy and paste happening, as an example. Other apps are used for a long time and the action is isolated to that application and does not depend on other recordings for completion of the necessary activity.
 
     The size of the circles clarifies what applications are used in most or all recordings. It represents an application that is needed for the process and something to concentrate on from an optimization or automation perspective.
 
