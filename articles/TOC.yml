@@ -35,6 +35,8 @@
     href: process-advisor-analyze.md
   - name: Visualize processes
     href: process-advisor-visualize.md
+  - name: Automation recommendation
+    href: process-advisor-visualize#automation-recommendation.md 
   - name: Share processes
     href: process-advisor-share.md
   - name: Administration and security
