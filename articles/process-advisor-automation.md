@@ -31,6 +31,6 @@ When you select **+Automate activities** in the menu at the top, you are shown t
 ### See also
 
 [Connector overview](/connectors/connectors)<br/>
-[[Visualize processes](process-advisor-visualize.md)
+[Visualize processes](process-advisor-visualize.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
