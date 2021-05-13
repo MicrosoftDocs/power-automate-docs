@@ -1,23 +1,15 @@
 ---
 title: Visualize processes in process advisor | Microsoft Docs
 description: How to visualize your processes in the process advisor feature.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
 ---
