@@ -1,6 +1,6 @@
 ---
 title: Use a flow to add a row in Dataverse | Microsoft Docs
-description: Learn how to add rows in Microsoft Dataverse with flows. 
+description: "Learn how to use flows to add rows in Microsoft Dataverse."
 services: ''
 suite: flow
 documentationcenter: na
@@ -24,9 +24,9 @@ search.audienceType:
 
 # Use a flow to add a row in Dataverse
 
-Use the **Add a new row** action to add a new row in Microsoft Dataverse.
+Use the **Add a new row** action to add a new row in Microsoft Dataverse.<!-- Edit note: Can we say, "In the Microsoft Dataverse connector in Power Automate, use the ..." -->
 
-Follow these steps to add a new **Account** in Dataverse when you receive an email to your signup address, as shown in the following image.
+Follow these steps to add a new account in Dataverse when you receive an email to your sign-up address, as shown in the following image:
 
 1. Create a flow with the **When a new email arrives (V3)** trigger to your flow.
 1. Select **New step** to add an action to your flow.
@@ -34,23 +34,19 @@ Follow these steps to add a new **Account** in Dataverse when you receive an ema
 1. Select **Microsoft Dataverse**.
 1. Select **Add a new row** action.
 
-   ![Add a new row image](../media/add-row/add-row-1.png)
+   ![Select Add a new row action](../media/add-row/add-row-1.png "Select Add a new row action")
 
-1. Select the **Accounts** table n the **Add a new row** card.
+1. Select the **Accounts** table in the **Add a new row** card.
 
-   ![Select the Accounts table](../media/add-row/add-row-2.png)
+   ![Select the Accounts table](../media/add-row/add-row-2.png "Select the Accounts table")
 
    After you select a table, the card expands, displaying both optional and required items. All mandatory items display an asterisk (\*).
 
-1. Optional: if you don't see a column that you need, select **Show advanced options** at the bottom of the card to view all columns.
+1. Optional: If you don't see a column that you need, select **Show advanced options** at the bottom of the card to view all columns.
 
-   ![Card that shows all columns for the add a new row action](../media/add-row/show-all-advanced.png)
+   ![Card that shows all columns for the add a new row action except advanced options](../media/add-row/show-all-advanced.png "Card that shows all columns for the Add a new row action except advanced options")
 
 >[!TIP]
->You can use outputs from previous triggers and actions in the **Dynamic content** selector shown in the following image, or modify them by building an **Expression** as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).
+>You can use outputs from previous triggers and actions in the **Dynamic content** selector, as shown in the following image, or modify them by building an expression as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).<!-- Edit note: Try to avoid use of en-us. -->
 
-   ![Dynamic content](../media/add-row/dynamic-content.png)
-
-
-
-
+   ![Dynamic content](../media/add-row/dynamic-content.png "Dynamic content")
