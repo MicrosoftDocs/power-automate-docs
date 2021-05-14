@@ -41,6 +41,9 @@ These security roles have privileges to the process advisor tables in Dataverse.
 - User create, read, write, delete, append, append to, assign and share permissions on the Process table (Customization tab)
 - User create, read, write, delete, append, append to, assign and share permissions on the PM Inferred Task, PM Recording and Workflow Binary tables (Custom Tables tab)
 
+!Note
+The Process Advisor Application User is an internal security role used by Process Advisor. This security role shouldn't be assigned to users.
+
 ## Privacy
 
 Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users are invited to contribute to a process by adding recordings. They use Power Automate Desktop to record processes that are then imported into process advisor. Owners and contributors may be able to see some data from the process and its recordings.
