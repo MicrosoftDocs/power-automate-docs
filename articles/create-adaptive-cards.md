@@ -1,6 +1,6 @@
 ---
 title: Create flows that post adaptive cards to Microsoft Teams | Microsoft Docs
-description: Learn to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
+description: Create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/18/2020
+ms.date: 5/18/2021
 ms.author: deonhe
 ---
 
@@ -131,14 +131,14 @@ In this procedure, you’ll add an action which will use the data from previous 
     Header Tagline Text|Power Automate Poll
     Poll Header| Preferred Car Model
     | Poll Question   | Please vote on your preferred car model from the choices listed here. 
-    Replace the latin text with a reason, or business context, related to why you are conducting the poll.      |  We are polling our employees in order to determine if we should provide personalized parking places which are sized for the most popular cars. 
+    Replace the latin text with a reason, or business context, related to why you are conducting the poll.      |  We are polling our employees in order to determine if we should provide personalized parking places that are sized for the most popular cars. 
     | Choice 1 (replace in both places)  | Tesla   |
     | Choice 2 (replace in both places) | Lexus |
     | Choice 3 (replace in both places) | Honda |
 
 1. Select **New Step**, and then search for and select one of the **Send an email** actions to which you have access. 
 1. Provide the email recipient as the person who selected the instant button (use the **Email** tag from the dynamic content from the **trigger**).
-1. Configure the **Body** of the email as follows. Replace the words in swiggly parentheses "{}" with dynamic tokens:  
+1. Configure the **Body** of the email as follows. Replace the words in curly parentheses "{}" with dynamic tokens:  
     **Your poll response was {acPollChoices}** (acPollChoices is dynamic content from the wait for a response action).  **It was submitted by {User Name}** (User Name is dynamic content from the trigger)
 
 ## Test your adaptive card
@@ -188,7 +188,7 @@ The most common problems that you will encounter when creating adaptive cards ar
 
 - Adaptive Cards may not look like what’s expected during to styling and schema constraints:
 
-    - Check that placeholder values, text styles, and any markup language aligns with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
+    - Check that placeholder values, text styles, and any markup language align with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
 
     - Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
 
@@ -198,11 +198,11 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
 
 - Errors following Adaptive Card submission are often due to:
 
-    - Using an action which does not include ‘wait for response’ in the name  
+    - Using an action, which does not include ‘wait for response’ in the name  
         
         ![Try again](media/adaptive-cards/try-again.png)
 
-    - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
+    - Attempting to submit the card more than once. Each Adaptive Card can be submitted only once, after which all further submissions will be ignored.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
