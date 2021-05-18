@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/04/2020
+ms.date: 5/18/2020
 ms.author: deonhe
 ---
 
@@ -29,8 +29,7 @@ In either case you will need to sketch out which datasets you will share, and/or
 
 ## Prerequisites
 
-<!-- Is it still called Flow App? -->
-- Microsoft Teams with the Flow App installed.
+- Microsoft Teams with the Power Automate app installed.
 
 ## Add an action
 
@@ -38,7 +37,7 @@ In this procedure, you’ll add an action which will use the data from previous 
 
 1. Sign into Power Automate.
 1. Select **My flows** in the top navigation bar.
-1. Select **New** > **Instant from blank**.
+1. Select **New flow** > **Instant cloud flow**.
 1. Give your flow a name.
 1. Select **Manually trigger a flow** as the trigger.
 1. Select **Create**.
