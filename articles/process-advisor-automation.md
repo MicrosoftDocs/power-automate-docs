@@ -24,7 +24,7 @@ The blue recommendation icons on the process map activity show the automation op
 
 When you select **+Automate activities** in the menu at the top, you are shown the cloud flow connectors recommendations relevant to your process.
 
-By selecting **+Automate activities** you will be taken to Power Automate form desginer where you will see the connector recommendations for the activities in your process map. You can click and add the connectors to your flow to automate your process
+By selecting **+Automate activities** you'll be taken to Power Automate form designer, where you'll see the connector recommendations for the activities in your process map. You can select and add the connectors to your flow to automate your process.
 
 > [!div class="mx-imgBorder"]
 > ![Automate activities](media/automation-reco-2.png "Automate activities")
