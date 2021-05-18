@@ -23,8 +23,6 @@ search.audienceType:
 ---
 # Overview of process advisor
 
-## What is process advisor?
-
 Process advisor quickly captures detailed steps for each process in your organization to help you to better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
 Process advisor helps you to:
