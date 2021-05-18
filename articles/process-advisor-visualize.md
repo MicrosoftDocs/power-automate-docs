@@ -17,7 +17,7 @@ search.audienceType:
 
 ## Process map
 
-The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select **Analytics** > **Process map** tab.
+The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select **Analytics** > **Process** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Process map](media/automation-reco-1.png "Process advisor process map")
