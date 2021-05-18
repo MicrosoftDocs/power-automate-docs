@@ -32,7 +32,7 @@ Process advisor helps you to:
 - Gain insights about which parts of your processes would be best to automate.
 - Identify which activities take the most time.
 - Discover which activities are repeated the most.
-- improve efficiencies by understanding where the bottlenecks are.
+- Improve efficiencies by understanding where the bottlenecks are.
 
 ## Business example
 
