@@ -28,6 +28,8 @@ The IP address from which Power Automate requests are sent depends on the [regio
 >[!IMPORTANT]
 > Some calls a cloud flow makes may come from IP addresses that are listed in the [Logic apps](/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
+You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
+
 ## Logic Apps
 Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#configuration-ip-addresses) for which IP addresses are used by that service.
 
