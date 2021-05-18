@@ -278,6 +278,10 @@
       href: ./dataverse/upload-download-file.md       
     - name: Troubleshoot known issues with Dataverse
       href: ./dataverse/known-issues.md
+    - name: Use Dataverse-based flows in Power Apps
+      href: ./dataverse/flows-power-apps.md      
+    # - name: Troubleshoot known issues with Dataverse
+    #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md  
   - name: Solutions
