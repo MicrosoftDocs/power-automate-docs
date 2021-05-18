@@ -29,13 +29,13 @@ Power Apps is a suite of apps, services, connectors, and data platform that prov
 platform ([Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)) *or* in various cloud and on-premises data sources, such as SharePoint, Microsoft 365,
 Dynamics 365, SQL Server, and so on. 
 
-![A picture containing text, screenshot, indoor Description automatically generated](../media/flows-power-apps/53bd97cb6b498c0c230cb5c92a8ce43e.png)
+![Power Apps introduction](../media/flows-power-apps/53bd97cb6b498c0c230cb5c92a8ce43e.png)
 
  
 
 Apps built using Power Apps provide rich business logic and workflow capabilities to transform your manual business processes to digital, automated processes. Further, apps built using Power Apps have a responsive design, and can run seamlessly in browser or on mobile devices (phone or tablet). 
 
-With Power Apps you can create [Canvas apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/) and [Model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/), and both support using data stored in Microsoft Dataverse. You can use the Microsoft Dataverse connector in Power Automate to integrate your apps with an automated flow, setting them off whenever users push the associated button.
+With Power Apps you can create [Canvas apps](./powerapps/maker/canvas-apps/) and [Model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/), and both support using data stored in Microsoft Dataverse. You can use the Microsoft Dataverse connector in Power Automate to integrate your apps with an automated flow, setting them off whenever users push the associated button.
 
 Get started with Power Apps: 
 
