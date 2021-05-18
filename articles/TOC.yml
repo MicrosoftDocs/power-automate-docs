@@ -275,7 +275,9 @@
     - name: Use a flow to perform a changeset request in Dataverse
       href: ./dataverse/change-set.md    
     - name: Upload or download image and file content
-      href: ./dataverse/upload-download-file.md
+      href: ./dataverse/upload-download-file.md       
+    - name: Troubleshoot known issues with Dataverse
+      href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md      
     # - name: Troubleshoot known issues with Dataverse
