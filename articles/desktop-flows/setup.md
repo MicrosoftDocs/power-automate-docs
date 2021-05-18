@@ -355,7 +355,7 @@ Using the following registry entry you can prevent users to manually update Powe
 
 ***Value***
 - 1: Users will not be able to manually update Power Automate Desktop
-- 
+
 
 ## Prevent users accessing Power Automate Desktop using their Microsoft accounts
 
