@@ -342,6 +342,21 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 1. Search for **Power Automate Desktop**, and then select it.
 1. Select **Uninstall**.
 
+## Prevent users manually updating Power Automate Desktop
+
+Using the following registry entry you can prevent users to manually update Power Automate Desktop on their machines.
+
+| | |
+|---|---|
+|Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|DisableOptionalUpdates|
+|Type|DWORD|
+
+***Value***
+- 1: Users will not be able to manually update Power Automate Desktop
+- 
+
 ## Prevent users accessing Power Automate Desktop using their Microsoft accounts
 
 Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
