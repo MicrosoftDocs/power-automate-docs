@@ -17,7 +17,7 @@ search.audienceType:
 
 Process advisor automation recommendation feature helps you identify automation opportunities and guides you in automating your processes using Power Automate.
 
-The blue recommendation icons on the process map activity shows the automation opportunities.
+The blue recommendation icons on the process map activity show the automation opportunities.
 
 > [!div class="mx-imgBorder"]
 > ![Automation recommendation](media/automation-reco-dot.png "Automation recommendation")
