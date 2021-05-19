@@ -12,4 +12,4 @@
      > 
      >
 
-    ![configure the approval](media/modern-approvals/provide-approval-config-info.png)
+    ![configure Start and wait for an approval](media/modern-approvals/provide-approval-config-info.png)
