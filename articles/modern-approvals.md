@@ -45,7 +45,7 @@ The flow performs the following steps:
 
 
 >[!IMPORTANT]
->Always follow the [[best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
+>Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
