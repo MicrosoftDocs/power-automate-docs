@@ -1,4 +1,4 @@
-1. Select **New step**
+1. Select **New step**.
 1. Type **approval** into the **Choose an action** search box.
 1. Select the **Start and wait for an approval** action.
 
