@@ -33,7 +33,7 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 Your machine will be automatically registered on the currently selected environment in the application. If you do not have permission to register your machine in that environment or want to use another environment, you will need to update the environment. 
 
-1. [Install the latest version](/desktop-flows/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
+1. [Install the latest version](/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
 
 1. When the installation has completed, select **Launch Power Automate Desktop**. 
 
@@ -171,6 +171,8 @@ There are two levels of permissions that you can use when managing access to you
 You can easily switch to using direct connectivity by changing the desktop flow connection and use one with the direct to machine option.  
 
 You can edit the flow and choose the new desktop flow connection for each of the desktop flow actions in your flow or create a new connection: 
+
+1. If you haven't done it yet, [update Power Automate Desktop to version 2.8.73.21119](https://go.microsoft.com/fwlink/?linkid=2102613) or newer.
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
