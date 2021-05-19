@@ -56,7 +56,6 @@ Decide whether Microsoft may collect diagnostic data to improve user experience 
 >[!NOTE]
 >Only an admin may change Data collection settings.
 
-To check if an update is available,  select **Check for updates**. To disable the update notifications, use the respective checkbox.
 
 ## Update Power Automate Desktop
 
