@@ -60,6 +60,6 @@ To check if an update is available,  select **Check for updates**. To disable th
 
 ## Update Power Automate Desktop
 
-Power Automate Desktop will frequently automatically check for updates. In cases of a required update you will need to proceed with the update before using Power Automate Desktop. At any point you like, you may click on the **Check for updates** option to check if there are any optional updates and install them instantly.
+Power Automate Desktop will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
