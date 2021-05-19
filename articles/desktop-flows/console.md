@@ -58,5 +58,8 @@ Decide whether Microsoft may collect diagnostic data to improve user experience 
 
 To check if an update is available,  select **Check for updates**. To disable the update notifications, use the respective checkbox.
 
+## Update Power Automate Desktop
+
+Power Automate Desktop will frequently automatically check for updates. In cases of a required update you will need to proceed with the update before using Power Automate Desktop. At any point you like, you may click on the **Check for updates** option to check if there are any optional updates and install them instantly.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
