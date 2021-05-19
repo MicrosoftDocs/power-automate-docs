@@ -172,6 +172,8 @@ You can easily switch to using direct connectivity by changing the desktop flow 
 
 You can edit the flow and choose the new desktop flow connection for each of the desktop flow actions in your flow or create a new connection: 
 
+1. If you haven't done it yet, [update Power Automate Desktop to version 2.8.73.21119](https://go.microsoft.com/fwlink/?linkid=2102613) or newer.
+
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
 1. Next to Connect, select **Direct to machine (preview)**. 
