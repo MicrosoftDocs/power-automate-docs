@@ -276,6 +276,10 @@
       href: ./dataverse/change-set.md    
     - name: Upload or download image and file content
       href: ./dataverse/upload-download-file.md       
+    - name: Troubleshoot known issues with Dataverse
+      href: ./dataverse/known-issues.md
+    - name: Use Dataverse-based flows in Power Apps
+      href: ./dataverse/flows-power-apps.md      
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
@@ -485,8 +489,10 @@
   items:
   - name: Business process flows overview
     href: business-process-flows-overview.md
-  - name: Create a business process flow to standardize processes
+  - name: Create a business process flow
     href: create-business-process-flow.md
+  - name: Create instant flows in business process flows
+    href: create-instant-flows.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
