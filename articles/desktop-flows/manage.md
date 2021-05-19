@@ -94,7 +94,7 @@ To duplicate an existing flow:
 1. Select **My flows** from the left side of the screen.
 1. Select **Desktop flows**.
 1. Select the flow that you want to copy.
-1. Select **Save as**.
+1. Select **Save As**.
 
    ![Select a flow to copy](media/manage-desktop-flows/manage-desktop-flows-copy.png)
 
