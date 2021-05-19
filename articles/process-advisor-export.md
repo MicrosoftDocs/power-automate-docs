@@ -32,7 +32,7 @@ You can copy or move process advisor processes from one environment to another u
 
 1. Search for and select the process you want to export, and then select **Add**.
 
-1. You can now export your solution and import it in another environment.
+You can now export your solution and import it in another environment.
 
 For more information about solution export, see [Export a solution](export-flow-solution.md).
 

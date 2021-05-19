@@ -1,26 +1,19 @@
 ---
 title: Overview of process advisor | Microsoft Docs
 description: Overview of the process advisor feature in Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Overview of process advisor
 
 Process advisor quickly captures detailed steps for each process in your organization to help you to better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
@@ -36,9 +29,9 @@ Process advisor helps you to:
 
 For example, in a healthcare facility, you can use process advisor to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
-Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You are then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
+Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
-With insights and guided recommendations from process advisor, you are ready to begin automating, and reclaim the time you need for what matters most.
+With insights and guided recommendations from process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
 
 ## Licensing
 

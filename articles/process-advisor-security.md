@@ -1,26 +1,19 @@
 ---
 title: Security and privacy | Microsoft Docs
 description: Security and privacy in process advisor.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 4/26/2021
+ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Security and privacy
 
 ## Security

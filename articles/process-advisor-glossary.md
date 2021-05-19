@@ -1,26 +1,19 @@
 ---
 title:  Process advisor Glossary | Microsoft Docs
 description: Terminology used in the process advisor feature in Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 4/26/2021
+ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Glossary
 
 **Activity**&mdash;Activities in process advisor describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.

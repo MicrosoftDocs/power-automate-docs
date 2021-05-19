@@ -1,26 +1,19 @@
 ---
 title: Work with processes and recordings | Microsoft Docs
 description: How to create and work with processes in process advisor.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 4/26/2021
+ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Work with processes and recordings
 
 Before you can use process advisor to visualize and analyze your processes, you need to:
@@ -44,7 +37,7 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Give your process a name and description, and then select **Create**.
 
-Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540) <!-- Replace this with link from Luis. He's recording in May. -->
+<!-- Replace this with link from Luis after 5/25. Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)  -->
 
 ## Record your process
 
@@ -122,7 +115,7 @@ After the process is created, a creation successful modal will be shown with a f
 
 ### Recording tips
 
-- Be methodical in your actions to improve the readability of the recording. There is a slight delay so wait for the red box to focus on the item you are trying to interact with before selecting.
+- Be methodical in your actions to improve the readability of the recording. There's a slight delay so wait for the red box to focus on the item you're trying to interact with before selecting.
 - If there were mis-clicks, delete the action in the recorder screen.
 
 ## Prepare a recording for analysis
@@ -149,7 +142,7 @@ Here's a short video on preparing a recording for analysis: [Prepare a recording
 
 1. At any time, select **Save** on the top right to save your work.
 
-   To analyze, you need at least two activities. Otherwise, the process map would not be very meaningful.
+   To analyze, you need at least two activities. Otherwise, the process map wouldn't be meaningful.
 
 1. When you finish grouping, set **Ready to analyze**  next to **Save**.
 
@@ -168,8 +161,8 @@ As a process owner or co-owner, you can create recommended activity names for a 
 
 1. Select **New name** to add a new activity name entry to the recommended list.
 
-1. Select **Save** when you are done.
+1. Select **Save** when you're done.
 
-The activity names you added will now show up under **Recommended names** in activity name dropdown when grouping actions for a recording. Any activities that are not defined in the recommended list will show up under **Custom names**.
+The activity names you added will now show up under **Recommended names** in activity name dropdown when grouping actions for a recording. Any activities that aren't defined in the recommended list will show up under **Custom names**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

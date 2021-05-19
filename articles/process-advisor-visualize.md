@@ -30,7 +30,7 @@ There are various filters available to you to drill down into the process:
 
 - Variant selector allows you to select one variant, or a set of process variants to visualize in your process map.
 - Recording selector allows you to select one recording, or a set of recordings to visualize in your process map.
-- Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They are described in this topic.
+- Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in this topic.
 
 ### Process KPIs
 
@@ -75,7 +75,7 @@ Application analytics allows you to gain more insights from recordings by unders
 
 ### Application analytics visualizations
 
-- **Application usage**&mdash;A scatter plot, which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed which means the recorder is jumping back and forth between this application and other applications. This may occur in cases where there is copy and paste happening, as an example. Other apps are used for a long time and the action is isolated to that application and does not depend on other recordings for completion of the necessary activity.
+- **Application usage**&mdash;A scatter plot, which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed. This means the recorder is jumping back and forth between this application and other applications. This may occur in cases where there is copy and paste happening, as an example. Other apps are used for a long time and the action is isolated to that application. It does not depend on other recordings for completion of the necessary activity.
 
     The size of the circles clarifies what applications are used in most or all recordings. It represents an application that is needed for the process and something to concentrate on from an optimization or automation perspective.
 
