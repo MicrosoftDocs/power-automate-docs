@@ -25,11 +25,11 @@ search.audienceType:
 # Perform bound action or unbound actions
 
 >[!IMPORTANT]
->In this acticle, the term "action" means a [Dataverse action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true). Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
+>In this acticle, the term "action" means a [Dataverse action](/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true).
 
+Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
 
-
-Flows can call [Dataverse actions](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
+Flows can call [Dataverse actions](/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
 
 Actions represent operations that might have side effects in the database, such as creating or updating rows. 
 
@@ -44,7 +44,7 @@ Bound actions target a single table or a set of rows from a single table.
 
 To perform a bound action, add **Perform a bound action** to your flow.
 
-Follow these steps in edit more of your flow to perform a bound action.
+Follow these steps to edit more of your flow to perform a bound action.
 
 1. After any step in your flow, select **Add new step**.
 1. Enter **bound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform bound action**
@@ -66,7 +66,7 @@ Unbound actions aren’t bound to a table and are called as static operations. U
 
 To perform an unbound action in your flow, add **Perform an unbound action** to your flow.
 
-Follow these steps in edit more of your flow to perform an unbound action.
+Follow these steps to edit more of your flow to perform an unbound action.
 
 1. After any step in your flow, select **Add new step**.
 1. Enter **unbound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform unbound action**
