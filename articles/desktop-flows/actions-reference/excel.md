@@ -49,7 +49,7 @@ Automate any Excel related activity
 
 ## Getting started with Excel actions
 
-After setting an Excel instance, either with the Launch Excel or the Attach to running Excel action, you may read from or write to an Excel file.
+After setting an Excel instance, either with the **Launch Excel** or the **Attach to running Excel** action, you may read from or write to an Excel file.
 
 To read and extract data from an Excel document, use the **Read from Excel Worksheet** action. Retrieve the value of a single cell, or a table of data.
 

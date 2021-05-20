@@ -57,7 +57,7 @@ Note that if the container name contains a comma, the name should be contained w
         CN="Varga, Norbert",DC=contoso,DC=com
 
 
-
+## Active Directory actions
 
 ## Group
 Create, modify and get information about a group in an Active Directory server

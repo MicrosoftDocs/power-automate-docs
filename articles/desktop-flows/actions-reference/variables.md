@@ -48,7 +48,7 @@ Create variables manually with the **Set variable** action. Provide a name and a
 
 ![Screenshot of set variable action properties](\media\variables\set-var-action-properties.png)
 
-Use the **Increase variable** or **Decrease variable** actions to increase or decrease the numeric value of a variable respectively.
+To increase or decrease the numeric value of a variable, use the **Increase variable** or **Decrease variable** actions respectively.
 
 ![Screenshot of increase variable action properties](\media\variables\increase-var-action-properties.png)
 
@@ -62,7 +62,7 @@ Add items to the list with **Add item to list**. Enter the value to add, or use 
 >The index of the list starts from 0, meaning that the first item in the list will have an index of 0.
 >Use the notation %ListName[0]% to refer to the first item in the list, %ListName[1]% to the second, and so on.
 
-
+## Variable actions
 
 ### <a name="truncatenumber"></a> Truncate number
 Get the integral or fractional digits of a numeric value, or round up the value to a specified number of decimal places
