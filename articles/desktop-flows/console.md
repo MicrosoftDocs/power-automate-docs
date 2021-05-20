@@ -51,9 +51,14 @@ Press the **Settings** button to configure Power Automate Desktop to your liking
 
 Under the **Application** category, select whether Power Automate Desktop should launch automatically, whether closing the console will close the application as well, and whether Power Automate Desktop should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
 
-Decide whether Microsoft may collect diagnostic data to improve user experience under **Data collection**.
+Decide whether Microsoft may collect diagnostic data to improve user experience under **Data collection**. 
 
 >[!NOTE]
 >Only an admin may change Data collection settings.
+
+
+## Update Power Automate Desktop
+
+Power Automate Desktop will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

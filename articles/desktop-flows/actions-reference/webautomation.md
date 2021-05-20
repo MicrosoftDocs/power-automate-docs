@@ -341,7 +341,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -372,7 +372,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -403,7 +403,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
