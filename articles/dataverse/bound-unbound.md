@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 5/20/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -42,7 +42,7 @@ There are two types of Dataverse actions you can use in flows.
 
 Bound actions target a single table or a set of rows from a single table.
 
-To perform a bound action, add the **Perform a bound action** action to your flow.
+To perform a bound action, add **Perform a bound action** to your flow.
 
 Follow these steps in edit more of your flow to perform a bound action.
 
@@ -64,7 +64,7 @@ Follow these steps in edit more of your flow to perform a bound action.
 
 Unbound actions aren’t bound to a table and are called as static operations. Unbound actions are performed on the entire environment, not on specific tables or rows.
 
-To perform a bound action in your flow, you must add **Perform an unbound action** to your flow.
+To perform an unbound action in your flow, add **Perform an unbound action** to your flow.
 
 Follow these steps in edit more of your flow to perform an unbound action.
 
