@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # Automation recommendation
 
-The process advisor automation recommendation feature helps you identify automation opportunities. It also guides you in automating your processes using Microssoft Power Automate.
+The process advisor automation recommendation feature helps you identify automation opportunities. It also guides you in automating your processes using Microsoft Power Automate.
 
 The blue recommendation icons on the process map activity show the automation opportunities.
 
@@ -24,7 +24,7 @@ The blue recommendation icons on the process map activity show the automation op
 
 When you select **+Automate activities** in the menu at the top, you're shown the cloud flow connectors recommendations relevant to your process.
 
-By selecting **+Automate activities** you'll be taken to Power Automate form designer. This is where you'll see the connector recommendations for the activities in your process map. You can select and add the connectors to your flow to automate your process.
+By selecting **+Automate activities**, you'll be taken to Power Automate form designer. This is where you'll see the connector recommendations for the activities in your process map. You can select and add the connectors to your flow to automate your process.
 
 > [!div class="mx-imgBorder"]
 > ![Automate activities](media/automation-reco-2.png "Automate activities")
