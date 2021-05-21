@@ -47,9 +47,24 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Set screen resolution](#setscreenresolution)|
 |[Run Python script](#runpythonscript)|
 
+## Getting started with system actions
+
+Use system actions to automate tasks which are fundamental to the Windows operating system. 
+
+Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, Run application opens a specific document in Word in quiet mode:
+
+![screenshot of the run application action properties window](\media\system\run-application-example.png)
+
+Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+
+The **Print document** action prints a specified document and requires the file path. 
+
+Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
+
+
 ## Getting started with scripting actions
 
-Scripting actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
+Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
 
