@@ -13,7 +13,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Automation recommendation in process advisor (preview)
+# Automation recommendation (preview)
 
 The process advisor automation recommendation feature helps you identify automation opportunities. It also guides you in automating your processes using Microsoft Power Automate.
 
