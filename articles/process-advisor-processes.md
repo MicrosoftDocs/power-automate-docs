@@ -37,7 +37,7 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Give your process a name and description, and then select **Create**.
 
-<!-- Replace this with link from Luis after 5/25. Here's a short video on process creation: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)  -->
+Here's a short video on how to create a process using process advisor: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
 
 ## Record your process
 
@@ -47,7 +47,7 @@ Create a recording in one of three ways:
 - [Right after process creation](#create-a-recording-right-after-process-creation).
 - [From the process details page](#create-a-recording-from-the-process-details-screen).
 
-Here's a short video on recording a process: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
+Here's a short video on recording a process in process advisor: [Record a process](https://go.microsoft.com/fwlink/?linkid=2147725)
 
 ### Create a recording from the **Create** screen
 
@@ -125,7 +125,7 @@ Once the recording has completed, you can view the recorded actions in the recor
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
 - Remove any sensitive information from the recording. For more information, see [Protect your data in process advisor](process-advisor-protect.md).
 
-Here's a short video on preparing a recording for analysis: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
+Here's a short video on how to prepare a recording for analysis using process advisor: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
 
 ### Grouping actions into activities
 
