@@ -216,12 +216,10 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 * *.crm.appsplatform.us (DoD)
 * *.appsplatformportals.us (DoD)
 
+Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
 
-Also, refer to the [Azure IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant, as well as other Azure services that your platform leverages.
-
-* GCC and GCC High: Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia
-* DoD: Focus on USDoD East and USDoD Central 
-
+- GCC and GCC High: Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia.
+- DoD: Focus on USDoD East and USDoD Central. 
 
 ## Connectivity between Power Automate US Government and Public Azure Cloud services
 
@@ -259,9 +257,12 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Submitting Templates](/flow/publish-a-template)
 
-- [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support for assistance.
+- [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
 
-Note that third-party connectors are not added to GCC High nor DoD. Microsoft is investigating features with the data loss prevention (DLP) functionality to enable connectors to be added “blocked by default.” Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
+>[!NOTE]
+>Third-party connectors will not be added to GCC High nor DoD. 
+
+Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
@@ -269,7 +270,7 @@ Note that third-party connectors are not added to GCC High nor DoD. Microsoft is
 
 ### See also
 
-- [UI flows](./desktop-flows/overview.md).
+- [Desktop flows](./desktop-flows/overview.md).
 
 - [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
