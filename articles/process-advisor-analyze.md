@@ -21,8 +21,6 @@ In the navigation pane on the left in Power Automate, select **Process advisor**
 > [!NOTE]
 > The [TDS endpoint setting](/power-platform/admin/settings-features) for your organization needs to be enabled. This feature is enabled by default, but if it's disabled for any reason, contact your Power Platform administrator to enable it in the Power Platform admin center.
 
-## Analyze process
-
 Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. Analyze feature adds selected recording into the Process Map and associated analytics. If a recording’s status isn't *analyzed*, it won't be part of the analytics reports.
 
 - After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
