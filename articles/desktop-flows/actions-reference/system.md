@@ -483,7 +483,7 @@ Gets the width, height, bit count and frequency of a selected monitor
 |Failed to get the screen's resolution|Indicates a problem getting the screen's resolution|
 
 ### <a name="setscreenresolution"></a> Set screen resolution
-Sets the width, height, bit count and frequency of a selected monitor
+Sets the width, height, bit count and frequency of a selected monitor during an attended desktop flow run. 
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
