@@ -35,7 +35,6 @@ Here are some tips before you start using WinAutomation with desktop flows.
 
 1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
-1.  Existing WinAutomation licensed users can learn more at [Softomotive's support page](https://support.softomotive.com/support/home) <!-- -->
 
 ## Prerequisites
 
@@ -55,7 +54,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
  
 ## Install WinAutomation
 
-1.  Download the [WinAutomation installer](https://aka.ms/rpaDesktopAutomationInstallPage).<!-- -->
+1.  Download the [WinAutomation installer](https://go.microsoft.com/fwlink/?linkid=2133567).
 
 1.  Run the **WinAutomationSetup.exe** file. This file is likely in your **Downloads** folder.
 
@@ -85,7 +84,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
 
 1.  Once signed in, you will see the WinAutomation console with a few example
     Processes. To get started, go to **Options** \> **Help** \> **Getting Started**, and then go through a few
-    examples of creating simple Processes or check out information from [WinAutomation docs: Building a Simple Process](https://docs.winautomation.com/en/building-a-simple-process.html). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).<!-- -->
+    examples of creating simple Processes or check out information from [WinAutomation docs: Building a Simple Process](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/building-a-simple-process/how-to-create-a-simple-process). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
 
 You can now create your own WinAutomation Processes and test them locally.
 
@@ -138,7 +137,7 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
-1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.winautomation.com/en/process-properties.html).  <!-- -->
+1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-process-properties).
 
     ![Process properties screen](../media/create-processes/process-properties.png)
 
@@ -251,8 +250,7 @@ ProcessRobot
 -   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
 -   Read more at [WinAutomation docs](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/).
 -   Learn more at [WinAutomation Academy](https://docs.microsoft.com/learn/browse/?terms=WinAutomation).
--   Get support for [WinAutomation](https://support.softomotive.com/support/home).   <!-- -->
--   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).   <!-- -->
+-   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create Windows recorder (V1) flows](./create-desktop.md).
 -   Learn how to [run desktop flows](./run-desktop-flow.md).
 -   Learn to [manage desktop flows](./manage.md).
