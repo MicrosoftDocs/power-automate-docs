@@ -59,7 +59,8 @@ To run the flow starting from a specific action, right-click the action and sele
 
 A certain amount of words are being used in the core of Power Automate Desktop and can't be used during development in variables, UI elements or Images.
 The list of these words is displayed below.
-|||||
+
+|<!-- --> |<!-- --> |<!-- --> |<!-- --> |
 |----|----|----|----|
 |action|false|loop|step|
 |and|for|main|switch|
