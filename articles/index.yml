@@ -53,7 +53,7 @@ conceptualContent:
         - text: Create your first flow
           url: ./getting-started.md#create-your-first-flow
           itemType: how-to-guide
-        - text: Plan with process advisor (preview) 
+        - text: Plan with process advisor 
           url: ./process-advisor-overview.md
           itemType: overview
         - text: Power Automate FAQs
