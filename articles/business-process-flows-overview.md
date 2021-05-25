@@ -9,6 +9,7 @@ author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+ms.custom: intro-internal
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
