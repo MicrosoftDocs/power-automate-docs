@@ -55,4 +55,23 @@ To run the flow starting from a specific action, right-click the action and sele
 
 ![run from here](\media\run-stop-pause\run-from-here.png)
 
+## Power Automate Desktop reserved keywords
+
+A certain amount of words are being used in the core of Power Automate Desktop and can't be used during development in variables, UI elements or Images.
+The list of these words is displayed below.
+|||||
+|----|----|----|----|
+|action|false|loop|step|
+|and|for|main|switch|
+|block|foreach|mod|then|
+|call|from|next|throw|
+|case|function|no|times|
+|default|global|not|to|
+|disable|goto|on|true|
+|else|if|or|wait|
+|end|in|output|while|
+|error|input|repeat|xor|
+|exit|label|set|yes|
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
