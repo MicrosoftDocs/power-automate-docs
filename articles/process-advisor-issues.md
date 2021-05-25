@@ -1,5 +1,5 @@
 ---
-title: Known issues (preview) | Microsoft Docs
+title: Known issues | Microsoft Docs
 description: Known issues in process advisor.
 author: nijemcevic 
 ms.service: power-automate
