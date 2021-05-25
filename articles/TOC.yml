@@ -24,7 +24,7 @@
     href: learning-catalog/learning-catalog-functional-consultant.md      
   - name: Partner presales roles
     href: learning-catalog/learning-catalog-sales.md
-- name: Process advisor (preview)
+- name: Process advisor
   items:
   - name: Overview    
     href: process-advisor-overview.md
@@ -35,6 +35,8 @@
     href: process-advisor-analyze.md
   - name: Visualize processes
     href: process-advisor-visualize.md
+  - name: Automation recommendation (preview)
+    href: process-advisor-automation.md 
   - name: Share processes
     href: process-advisor-share.md
   - name: Administration and security
@@ -44,6 +46,10 @@
       displayName: Security and privacy in process advisor
     - name: Protect your data
       href: process-advisor-protect.md
+      displayName: Protect your data in process advisor
+    - name: Export and import your process
+      href: process-advisor-export.md
+      displayName: Export and import your process in process advisor
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process advisor
