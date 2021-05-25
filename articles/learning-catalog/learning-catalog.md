@@ -35,6 +35,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get Started](learning-catalog-app-maker.md#get-started)
 
     [Create Flows](learning-catalog-app-maker.md#create-flows)
+    
+    [Process Advisor](learning-catalog-app-maker.md#process-advisor)
 
     [Exam](learning-catalog-app-maker.md#exam)
 
@@ -81,6 +83,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get started](learning-catalog-functional-consultant.md#get-started)
 
     [Create Flows](learning-catalog-functional-consultant.md#create-flows)
+    
+    [Process Advisor](learning-catalog-functional-consultant.md#process-advisor)
 
     [Administer](learning-catalog-functional-consultant.md#administer)
 
