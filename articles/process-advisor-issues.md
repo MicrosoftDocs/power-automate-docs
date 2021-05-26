@@ -1,5 +1,5 @@
 ---
-title: Known issues (preview) | Microsoft Docs
+title: Known issues | Microsoft Docs
 description: Known issues in process advisor.
 author: nijemcevic 
 ms.service: power-automate
@@ -16,6 +16,8 @@ search.audienceType:
 
 # Known issues in process advisor
 
+We'll continue to add issues here. If you're experiencing an issue not mentioned, check the **Process advisor community forums**.
+
 ## Unable to access process advisor
 
 If you can't see process advisor in Power Automate, receive error messages, or if you can’t access the home page, verify that:
@@ -27,6 +29,4 @@ If you can't see process advisor in Power Automate, receive error messages, or i
 - Your browser has the feature to accept third party cookies enabled.
   You can enable it in your browser settings.
   
-We'll continue to add issues here. If you're experiencing an issue not mentioned, check the **Process advisor community forums**.
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]
