@@ -348,6 +348,10 @@
       href: ./desktop-flows/manage-machines.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
+  - name: Desktop flows with Dynamics (365)
+    items:
+    - name: Dynamics 365 RPA
+    - href: ./desktop-flows/dynamics365-RPA.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
