@@ -38,7 +38,7 @@ Control and manipulate text
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
 
-# Getting started with text actions
+## Getting started with text actions
 
 To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items by using a delimiter. To separate a single text value into a list of items, use the **Split text** action. Specify a text value that has recognizable delimiters by which to separate the list items. 
 
