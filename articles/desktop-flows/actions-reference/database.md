@@ -24,6 +24,28 @@ Connect to databases and execute SQL statements
 |[Execute SQL statement](#executesqlstatement)|
 |[Close SQL connection](#close)|
 
+# Getting started with Database actions
+
+To connect to a database, use the **Open SQL Connection** action. The Connection String field specifies all information that is necessary to connect to a database, such as the driver, the database, server names, and the username and password.
+
+
+Connect to an Excel Database:
+
+Example of a connection string used to connect to an Excel database connection string that one can use is:
+
+    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myExcelFile.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES";
+
+
+Example of a connection string used to connect to an Access database:
+
+    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
+
+To manually build a connection string, select **Build connections string** to open the **Data Link Properties** window. The data link tool helps the user compose the required connection string step by step.
+
+![Screenshot of label in action](\media\database\data-link-properties.png)
+
+## Database actions
+
 ### <a name="connect"></a> Open SQL connection
 Open a new connection to a database
 
