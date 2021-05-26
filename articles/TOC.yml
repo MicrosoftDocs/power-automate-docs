@@ -338,7 +338,7 @@
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
-  - name: Run a desktop flow
+  - name: Run desktop flows
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
