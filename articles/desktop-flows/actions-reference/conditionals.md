@@ -17,10 +17,6 @@ search.audienceType:
 # Conditionals
 
 
-Set conditional statements and handle the flow based on rules
-
-You can find more information on how to use the conditional actions [here](../use-conditionals.md)
-
 |<!-- --> |
 |-----|
 |[If file exists](#iffileaction)|
@@ -38,6 +34,14 @@ You can find more information on how to use the conditional actions [here](../us
 |[Else if](#elseif)|
 |[If](#if)|
 |[Switch](#switch)|
+
+## Gettin started with Conditionals
+
+Conditional actions allow you to modify flow actions at runtime, based on information available in the environment.
+
+You can find more information on how to use the conditional actions [here](../use-conditionals.md)
+
+# Loops actions
 
 ### <a name="iffileaction"></a> If file exists
 Marks the beginning of a conditional block of actions depending on whether a file exists or not

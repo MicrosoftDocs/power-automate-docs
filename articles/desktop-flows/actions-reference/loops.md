@@ -16,10 +16,6 @@ search.audienceType:
 
 # Loops
 
-Repeat blocks of actions in a flow
-
-You can find more information on how to use the loop actions [here](../use-loops.md)
-
 |<!-- -->|
 |-----|
 |[Exit loop](#break)|
@@ -27,6 +23,14 @@ You can find more information on how to use the loop actions [here](../use-loops
 |[Loop](#loop)|
 |[Loop condition](#while)|
 |[Next loop](#continue)|
+
+## Getting started with loops
+
+Loops are used to automate repetitive tasks by executing a block of actions multiple times.
+
+You can find more information on how to use the loop actions [here](../use-loops.md)
+
+## Loops actions
 
 ### <a name="break"></a> Exit loop
 Terminates the loop and the flow resumes at the next action or statement following the loop

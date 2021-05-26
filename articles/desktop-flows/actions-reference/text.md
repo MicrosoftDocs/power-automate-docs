@@ -38,6 +38,22 @@ Control and manipulate text
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
 
+# Getting started with text actions
+
+To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items by using a delimiter. To separate a single text value into a list of items, use the **Split text** action. Specify a text value that has recognizable delimiters by which to separate the list items. 
+
+Search a text value for a string of text with the **Parse text** action. To find a string in a text and replace it with another string or character, use the **Replace text** action. The following figure demonstrates a replacement of the string "Product Characteristics" with "Characteristics".
+
+![Screenshot of replace text action](\media\text\replace-text-example.png)!
+
+To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
+
+Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
+
+
+
+## Text actions
+
 ### <a name="appendline"></a> Append line to text
 Appends a new line of text to a text value
 

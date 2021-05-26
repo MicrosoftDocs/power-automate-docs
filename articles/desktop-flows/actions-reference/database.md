@@ -24,7 +24,7 @@ Connect to databases and execute SQL statements
 |[Execute SQL statement](#executesqlstatement)|
 |[Close SQL connection](#close)|
 
-# Getting started with Database actions
+## Getting started with Database actions
 
 To connect to a database, use the **Open SQL Connection** action. The Connection String field specifies all information that is necessary to connect to a database, such as the driver, the database, server names, and the username and password.
 
