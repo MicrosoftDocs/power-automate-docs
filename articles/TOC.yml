@@ -348,7 +348,7 @@
       href: ./desktop-flows/manage-machines.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
-  - name: - Use RPA with Dynamics 365 (preview)
+  - name: Use RPA with Dynamics 365 (preview)
     items:
     - name: Overview of RPA with Dynamics 365
       href: ./desktop-flows/dynamics365-rpa-overview.md
