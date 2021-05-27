@@ -348,16 +348,6 @@
       href: ./desktop-flows/manage-machines.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
-  - name: Use RPA with Dynamics 365 (preview)
-    items:
-    - name: Overview of RPA and Dynamics 365
-      href: ./desktop-flows/dynamics365-rpa-overview.md
-    - name: Create orders on Dynamics 365 Supply Chain Management
-      href: ./desktop-flows/dynamics365-scm-rpa.md
-    - name: Use RPA with Dynamics 365 Finance
-      href: ./desktop-flows/dynamics365-fin-rpa.md
-    - name: Use RPA with Dynamics 365 Customer Service
-      href: ./desktop-flows/dynamics365-cs-rpa.md   
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -478,6 +468,16 @@
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
+  - name: Use RPA with Dynamics 365 (preview)
+    items:
+    - name: Overview of RPA and Dynamics 365
+      href: ./desktop-flows/dynamics365-rpa-overview.md
+    - name: Create orders on Dynamics 365 Supply Chain Management
+      href: ./desktop-flows/dynamics365-scm-rpa.md
+    - name: Use RPA with Dynamics 365 Finance
+      href: ./desktop-flows/dynamics365-fin-rpa.md
+    - name: Use RPA with Dynamics 365 Customer Service
+      href: ./desktop-flows/dynamics365-cs-rpa.md   
 - name: Other types of desktop flows (Legacy)
   items:
   - name: Introduction to other types of desktop flows

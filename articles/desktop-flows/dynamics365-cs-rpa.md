@@ -137,13 +137,13 @@ Here is the [detailed guide to install Power Automate Desktop](https://docs.micr
    >[!NOTE]
    >Select **Run anyway** when you download and install this Contoso app.
 
-![](./media/dynamics365-cs-rpa/0f12ae4f564d4b3eaf1591cf8450a350.png)
+   ![](./media/dynamics365-cs-rpa/0f12ae4f564d4b3eaf1591cf8450a350.png)
 
-![](./media/dynamics365-cs-rpa/0a0b22406de3461a9bfe6833bca23dd1.png)
+   ![](./media/dynamics365-cs-rpa/0a0b22406de3461a9bfe6833bca23dd1.png)
 
-After installing, you can launch the Contoso CRM app from the Start menu.
+   After installing, you can launch the Contoso CRM app from the Start menu.
 
-![](./media/dynamics365-cs-rpa/a41b848b7eaf4662e0a7f896e5ee9237.png)
+   ![](./media/dynamics365-cs-rpa/a41b848b7eaf4662e0a7f896e5ee9237.png)
 
 
 ## Install the Dynamics 365 RPA solution
