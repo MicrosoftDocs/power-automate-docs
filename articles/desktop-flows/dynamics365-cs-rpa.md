@@ -4,7 +4,7 @@ description: Use RPA with Dynamics 365 Customer Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: amina196
 manager: KVivek
 editor: ''
 tags: ''
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/17/2021
-ms.author: Deonhe
+ms.author: aminab
 search.app: 
   - Flow
 search.audienceType: 
@@ -106,49 +106,51 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard.
 
-Here is the detailed guide with step-by-step to install Power Automate Desktop:
-[Set up Power Automate Desktop on your device](https://docs.microsoft.com/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device)
+Here is the [detailed guide to install Power Automate Desktop](https://docs.microsoft.com/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) on your device.
 
-1.  Make sure you switch the machine setting from Power Automate Desktop to the correct environment that you will install the solution to
+1. Make sure you switch the machine setting from Power Automate Desktop to the correct environment that you will install the solution to
 
     ![](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
-2.  Log in <http://powerautomate.microsoft.com/manage/flows> to create a test cloud flow with manual trigger
+1. Log in <http://powerautomate.microsoft.com/manage/flows> to create a test a cloud flow with a manual trigger.
 
     ![](./media/dynamics365-cs-rpa/07e8395e96421fad5c15c3634fe5ec6b.png)
 
-    ![Graphical user interface Description automatically generated](./media/dynamics365-cs-rpa/869698e49b4dbbe35e2e9f568ac454f4.png)
+    ![](./media/dynamics365-cs-rpa/869698e49b4dbbe35e2e9f568ac454f4.png)
 
-3. Add a desktop flow connector.
+1. Add a desktop flow connector.
 
     ![](./media/dynamics365-cs-rpa/cd51a32dc52d3ef5751d570d762ba8ce.png)
 
-4. Select the **Directly to machine(preview)** connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine. (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity) (Note this step will not be needed at a later date)
+1. Select the [**Directly to machine (preview)**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity) connection from that list.
+
+1. Select the machine onto which you installed Power Automate Desktop, and then enter the machine login credentials (the username and password that you used to log into this machine). 
 
     ![](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
 
 ### Install and configure Contoso CRM app
 
-Install contoso_crm.exe to the machine where the automation will be running.
-Install location is <https://aka.ms/ContosoCRMApp> (this Contoso app will be used to show you how the end-to-end automation scenario works so you can follow the example to create your own automation)
+1. Download and install [contoso_crm.exe](https://aka.ms/ContosoCRMApp) to the machine where the automation runs.
 
-Note: while downloading and installing this Contoso app, please select “Run anyway”
+   This Contoso app is used to show you how the end-to-end automation scenario works so that you can follow the example to create your own automation.
+
+   >[!NOTE]
+   >Select **Run anyway** when you download and install this Contoso app.
 
 ![](./media/dynamics365-cs-rpa/0f12ae4f564d4b3eaf1591cf8450a350.png)
 
 ![](./media/dynamics365-cs-rpa/0a0b22406de3461a9bfe6833bca23dd1.png)
 
-After installing, you can launch the Contoso CRM app from start menu
+After installing, you can launch the Contoso CRM app from the Start menu.
 
 ![](./media/dynamics365-cs-rpa/a41b848b7eaf4662e0a7f896e5ee9237.png)
 
->   Graphical user interface Description automatically generated
 
-1.  Installing the Dynamics 365 RPA solution
+## Install the Dynamics 365 RPA solution
 
-2.  Download the automation solution and save it on your machine by clicking on this link: <https://aka.ms/D365CustomerValidationRPASolution>
+1. Download the automation solution and save it on your machine by clicking on this link: <https://aka.ms/D365CustomerValidationRPASolution>
 
-3.  Import the Dynamics 365 automation solution in the environment of your choice
+1. Import the Dynamics 365 automation solution in the environment of your choice
 
     1.  Go to <https://powerautomate.microsoft.com> and log in using your work account
 
@@ -162,7 +164,7 @@ After installing, you can launch the Contoso CRM app from start menu
 
     6.  Click **Next.**
 
-4.  Configure the connections needed to be used by the solution in the environment
+1.  Configure the connections needed to be used by the solution in the environment
 
     1.  For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or
         credentials of your choice. You will be taken to a different tab, make sure to not close the one you came from.
@@ -184,9 +186,9 @@ After installing, you can launch the Contoso CRM app from start menu
     More info on session template:
     <https://docs.microsoft.com/dynamics365/app-profile-manager/session-templates>
 
-3.  From Dynamics 365 Customer Service app, login to Power Automate
+3.  From Dynamics 365 Customer Service app, login to Power Automate.
 
-    1.  From the case you are working on, click on the **…** menu then click on **Flow**
+    1. From the case you are working on, click on the **…** menu then click on **Flow**
 
 ![Graphical user interface, text, application Description automatically generated](./media/dynamics365-cs-rpa/32a1301df4867df9c9a9ad325b4b9d64.png)
 
@@ -198,14 +200,13 @@ After installing, you can launch the Contoso CRM app from start menu
 
 ![](./media/dynamics365-cs-rpa/15b322dcf54aa0b6469a7b472800ae40.png)
 
-1.  From the Agent Script session in the productivity panel, you will see several agent script step. First one is “Run Automation to validate
-    Customer”. Click the Run button and confirm running.
+1.  From the Agent Script session in the productivity panel, you will see several agent script step. First one is “Run Automation to validate Customer”. Click the Run button and confirm running.
 
 ![](./media/dynamics365-cs-rpa/4c5e69e628f7b983ccc5a87b2f7fb514.png)
 
-1.  The automation will soon be kicked-off on the machine where you have installed Power Automate Desktop. You can watch how the automation use the case data, open the Contoso CRM app, finish the look up automatically. After automation run, please refresh the timeline and you will see the logs written back by Automation regarding the run result. See the demo below on how it will be run
+1.  The automation will soon start on the machine where you have installed Power Automate Desktop. You can watch how the automation uses the case data, opens the Contoso CRM app, and finishes the look up automatically. After the automation runs, refresh the timeline to view the logs regarding the run result. Here's a demo on how it runs.
 
-    ![A picture containing text, monitor, indoor, screenshot Description automatically generated](./media/dynamics365-cs-rpa/bf728be4c965a04f9d199266accb06bd.gif)
+    ![](./media/dynamics365-cs-rpa/bf728be4c965a04f9d199266accb06bd.gif)
 
 ## Customize the Automation Solution for your own need
 
