@@ -4,10 +4,10 @@ description: Overview of the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.topic: article
+ms.custom: intro-internal
 ms.date: 5/25/2021
 ms.author: tatn
 ms.reviewer: v-aangie
-ms.custom: intro-internal
 search.app: 
   - Flow
 search.audienceType: 
@@ -51,7 +51,5 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
 - [Power Automate Desktop](/ui-flows/desktop/introduction).
-
-<!-- Add section on process catalog here or on Details page. Also, mention the first run experience. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
