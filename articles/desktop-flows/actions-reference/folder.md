@@ -47,6 +47,8 @@ To get a list of a folder's contents, use the **Get subfolders in folder** actio
 
 Copying, moving, renaming and deleting or emptying folders each has its respective action. 
 
+## Folder actions
+
 ### <a name="getfiles"></a> Get files in folder
 Retrieve the list of files in a folder
 

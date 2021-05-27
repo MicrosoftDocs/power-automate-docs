@@ -35,13 +35,13 @@ search.audienceType:
 |[If](#if)|
 |[Switch](#switch)|
 
-## Getting started with Conditionals
+## Getting started with conditionals
 
 Conditional actions allow you to modify flow actions at runtime, based on information available in the environment.
 
 You can find more information on how to use the conditional actions [here](../use-conditionals.md)
 
-## Loops actions
+## Conditionals actions
 
 ### <a name="iffileaction"></a> If file exists
 Marks the beginning of a conditional block of actions depending on whether a file exists or not

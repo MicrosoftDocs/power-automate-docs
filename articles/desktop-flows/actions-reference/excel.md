@@ -75,6 +75,8 @@ Each cell in the workbook is populated with its corresponding cell in the datata
 
 ![excel data written](\media\excel\excel-data-written.png)
 
+## Excel actions
+
 ## Advanced
 Advanced Excel automation actions
 ### <a name="runmacro"></a> Run Excel Macro
