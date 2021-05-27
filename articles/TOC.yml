@@ -470,7 +470,7 @@
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365 (preview)
     items:
-    - name: Overview of RPA and Dynamics 365
+    - name: Overview of RPA templates and Dynamics 365
       href: ./desktop-flows/dynamics365-rpa-overview.md
     - name: Create orders on Dynamics 365 Supply Chain Management
       href: ./desktop-flows/dynamics365-scm-rpa.md
