@@ -1,20 +1,20 @@
 ---
-title: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop | Microsoft Docs
-description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop.
+title: Use RPA with Dynamics 365 Customer Service | Microsoft Docs
+description: Use RPA with Dynamics 365 Customer Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: MSFTMan
+manager: KVivek
 editor: ''
 tags: ''
-ms.service: power-automate
+ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/26/2021
-ms.author: DeonHe
+ms.date: 05/17/2021
+ms.author: Deonhe
 search.app: 
   - Flow
 search.audienceType: 
@@ -22,169 +22,217 @@ search.audienceType:
   - enduser
 ---
 
-# Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop 
 
-[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks.  
+# Use RPA with Dynamics 365 Customer Service
 
-In this documentation, we outline the steps needed for administrators to allow users to automate quality order creation for Dynamics 365 [Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) and focus on higher-priority activities that require their unique creativity.  
+Automate common activities on Dynamics 365 Customer Service with Robotic Process Automation using Power Automate Desktop.
 
-## Prerequisites 
+[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence, bringing delight to every customer. To make your use of Dynamics 365 even more productive, we are releasing the preview of free automation solutions that Dynamics 365 customers can use to automate common tasks.
 
-Before starting, we need to prepare your environment with the adequate licenses and software set-up. This section provides a step-by-step for how to get the grounds ready.   
+This article outlines the steps needed for you to automate customer validation in [Dynamics 365 Customer Service](https://dynamics.microsoft.com/customer-service/overview/) and focus on higher-priority activities that require your unique creativity.
 
-### Software 
+## Prerequisites
 
-You will need to: 
-- install the Power Automate Desktop application. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
-- Log out of the Dynamics 365 app you wish to automate 
-- Get the appropriate security role for the automation to run 
+Here's what you need to prepare your environment.
 
-#### Log out of the Dynamics 365 app you wish to automate 
+### Software
 
-In order to do the full automation, please sign out of the application before you run the automation for the first time. You will need to do this if you switch between automation and your account.  
+Install the following:
 
-#### Get the appropriate security role set up for the account running the automation 
+- Dynamics 365 Omnichannel for Customer Service.
 
-You will need to decide which work account will be running the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. For the account you end up choosing, you need to check that it has the appropriate security roles so that it can access the surfaces you are automating.  
+- Power Automate Desktop. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.
 
-We recommend the following security roles: 
+- The Contoso CRM app from Microsoft. This app showcases how RPA works. You can use it as an example to build your own RPA action.
 
-|Application|Security role|Link to documentation|
-|----|----|----|
-|Power Platform|Environment admin or environment maker (if the environment already has Dataverse and unattended license needed)||
-|Dynamic 365 Supply Chain Management||
+>[!IMPORTANT]
+>Be sure to [get the appropriate security roles](https://go.microsoft.com/fwlink/p/?linkid=2127645) for the account that runs your automation. This account can be a dedicated one that your admin in Azure Active Directory creates or an employee's account.
 
-### Licenses 
+Use these recommended security roles.
 
-If you already use Power Automate Desktop, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
+| **Application**                              | **Security role**                                                                                                                | **Link to documentation**                                                                                                                                                    |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Power Platform                               | Option 1: Environment admin Option 2: Environment maker (if the environment already has Dataverse and unattended license needed) |                                                                                                                                                                              |
+| Dynamic 365 Omnichannel for Customer Service | D365 Customer Service administrator                                                                                              | [Enable users for Omnichannel for Customer Service and assign roles \| Microsoft Docs](https://docs.microsoft.com/dynamics365/customer-service/add-users-assign-roles) |
 
-Otherwise, you will need at least a trial license for these 3 products. This section shows you how to acquire these trial licenses.  
+### Licenses
 
-#### Get a trial license for Power Automate Desktop  
-Power Automate Desktop can automate processes by doing what a human would do on a keyboard and screen.  
+1. Get a trial license for Power Automate Desktop if you don't have a paid license.The Power Automate Desktop license you need depends on the mode in which your automations run. 
 
-There are two ways to automate processes: 
-1. Attended mode: someone is sitting in front of their computer and watching the process run as if they were doing it themselves manually 
-1. Unattended mode: the process is running in the background on distant machines that users don’t see.  
+   Here are the two modes to automate processes.
 
-To run attended, users need to acquire **the Power Automate per-user license with RPA**.  
-To run unattended, users need to have acquire two licenses: **Power Automate per-user license with RPA and the Power Automate unattended add-on**. 
+   - **Attended mode**: someone is sits at computer and watches the process run as if they were doing it themselves manually. For attended mode, users must have **the Power Automate per-user license with RPA**.
 
-*Get a trial license for Power Automate per-user license with RPA to run processes in attended mode*
+   - **Unattended mode**: the process is runs in the background without any human interaction and it's not visible on the device. For attended mode, users must have two licenses.
 
-1. From the Power Automate portal, navigate to My Flows then on Desktop Flows 
-1. Click the fine print **Start free trial now**
+      - **The Power Automate per-user license with RPA**
+      - **The Power Automate unattended add-on**.
 
-An alternative consists in logging in to Power Automate Desktop and clicking on the **Start free trial** button 
 
-*Add a trial license for Power Automate unattended add-on to run processes in unattended mode*
+   Follow these steps to get a *Power Automate per-user license with RPA* to run processes in attended mode.
 
-As an admin, you can get an RPA unattended add-on and assign it to your environment ([Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](https://docs.microsoft.com/power-automate/organization-q-and-a))  
+   1. From Power Automate, select **My Flows** > **Desktop flows**.
 
-#### Get a trial license for Power Apps 
+   1. Select **Start free trial now**.
 
-Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)) 
 
-#### Get a trial license for the Dynamics 365 applications you wish to automate 
+   To add a trial license for *Power Automate unattended add-on** to run processes in unattended mode, you must ask a tenant admin to get an *RPA unattended add-on* and assign it to your environment [Power Automate sign-up Q&A in your organization](https://docs.microsoft.com/power-automate/organization-q-and-a).
 
-To get started with Dynamics 365 Supply Chain Management and automate the quality order creation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=SCM). 
+1. Get a trial license for the Dynamics 365 Customer Service app.
 
-### Setup steps 
+1. To get started with [Dynamics 365 Omnichannel for Customer Service](https://dynamics.microsoft.com/get-started/free-trial/?appname=customerservice) and automate the customer validation process.
 
-Now that prerequisites are set, we are on our way to get these free solutions that automate the processes. 
+## Set up your device
 
-#### Install Power Automate Desktop  
+Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](https://docs.microsoft.com/en-us/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) 
+### Install OmniChannel
 
-1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
+1. Install [OmniChannel](https://docs.microsoft.com/dynamics365/customer-service/omnichannel-provision-license) in your environment.
 
-    ![Image1](./media/dynamics365-RPA/image001.png)
+### Get the latest updates for your environment
 
-1. Log in http://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
+1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment in which you are interested, and then select **Dynamics 365 apps** at the right side.
 
-    ![Image2](./media/dynamics365-RPA/image003.png)
-    ![Image3](./media/dynamics365-RPA/image005.png)
+   ![](./media/dynamics365-cs-rpa/adb71331d43b4af8d2020a7f8d8351b9.png)
 
-1. Add a desktop flow connector. 
-    ![Image4](./media/dynamics365-RPA/image007.png)
- 
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
-    ![Image5](./media/dynamics365-RPA/image009.png)
- 
-#### Installing the Dynamics 365 RPA solution 
+1. Confirm that the **Agent Productivity Tools** and **App profile manager** are updated.
 
-Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.  
+   ![](./media/dynamics365-cs-rpa/8a7f19a752d1ab82678579a46c10da5c.png)
 
-1. Download the Dynamics 365 automation solution and save it on your machine [https://aka.ms/D365SCMQualityOrderRPASolution](https://aka.ms/D365SCMQualityOrderRPASolution)
+1. If you see **Update available** for **Agent Productivity Tools** and **App profile manager**, select **Update available**.
 
-1. Import the Dynamics 365 automation solution in the environment of your choice 
+### Install and configure Power Automate Desktop
 
-    a. Go to [https://powerautomate.microsoft.com](https://powerautomate.microsoft.com) and log in using your work account 
-    b. Select the environment in which you wish to work using the environment picker 
-    c. In the vertical menu on the left of your screen, click on **Solutions** 
-    d. In the horizontal menu, above the Solutions title, click on **Import** then click on **Browse**
-    e. Navigate to the solution file you previously downloaded and double click on it in your file system 
-    f. Click **Next**. 
+Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard.
 
- 
+Here is the detailed guide with step-by-step to install Power Automate Desktop:
+[Set up Power Automate Desktop on your device](https://docs.microsoft.com/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device)
 
-1. Configure the connections needed to be used by the solution in the environment 
+1.  Make sure you switch the machine setting from Power Automate Desktop to the correct environment that you will install the solution to
 
-    a. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice.  
+    ![](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
-   ![Image6](./media/dynamics365-RPA/image011.png)
-      
-    b. Come back to the tab from which you initiate the above step and click **Refresh** 
+2.  Log in <http://powerautomate.microsoft.com/manage/flows> to create a test cloud flow with manual trigger
 
-    ![Image7](./media/dynamics365-RPA/image013.png)
+    ![](./media/dynamics365-cs-rpa/07e8395e96421fad5c15c3634fe5ec6b.png)
 
-    c. Click on Import. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
+    ![Graphical user interface Description automatically generated](./media/dynamics365-cs-rpa/869698e49b4dbbe35e2e9f568ac454f4.png)
 
-1. Enter the parameters that the solution should use to run the process 
+3. Add a desktop flow connector.
 
-    a. From the Solutions explorer, click on the solution to open it 
-    b. You will find there are rows with the Type column that reads Environment Variable. We need to add values for each of these.  
+    ![](./media/dynamics365-cs-rpa/cd51a32dc52d3ef5751d570d762ba8ce.png)
 
-    c. Click on each of the environment variable below and under **Current Value**, click on **Add New Value** to put in your parameter. 
+4. Select the **Directly to machine(preview)** connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine. (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity) (Note this step will not be needed at a later date)
 
-    |Environment variable name|Description|
-    |----|----|
-    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable *Example: https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable*|
-    |SCM SignIn User|user account to sign into Dynamics 365 SCM *example: helloworld@contoso.com*|
-    |QOrder Parameter – Site|Name of the site to use for filling in the quality order creation form.|
-    |QOrder Parameter – Test Group|Configure the Testgroup for the quality order creation|
-    |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation| 
+    ![](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
 
-    ![Image8](./media/dynamics365-RPA/image015.png)
+### Install and configure Contoso CRM app
 
-1. Turn on the cloud flow in the solution 
+Install contoso_crm.exe to the machine where the automation will be running.
+Install location is <https://aka.ms/ContosoCRMApp> (this Contoso app will be used to show you how the end-to-end automation scenario works so you can follow the example to create your own automation)
 
-    a. In the solution, click the … menu for the **QOrder - CloudFlow** cloud flow 
-    b. Click on **Turn On**
+Note: while downloading and installing this Contoso app, please select “Run anyway”
 
-1. Put in the encrypted credentials to be used by the solution to log in to Dynamics 365 
+![](./media/dynamics365-cs-rpa/0f12ae4f564d4b3eaf1591cf8450a350.png)
 
-    a. From the solution explorer, click on the line item called **QOrder – Desktop Flow**
-    b. Click on **Edit** then **Launch App**
-    c. This will open the Power Automate Desktop  
-    d. Under the **Subflows** dropdown, double click on **LoginSCM**
-    e. In the **LoginSCM** subflow, double click on action 8 
-    f. Fill in the **Text** textbox with the password of the account to use during automation 
-    
-    ![Image9](./media/dynamics365-RPA/image017.png)
- 
+![](./media/dynamics365-cs-rpa/0a0b22406de3461a9bfe6833bca23dd1.png)
 
-1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
+After installing, you can launch the Contoso CRM app from start menu
 
-1. Have the user launch the “QOrder-Application" Power App from their phone and start using it. Watch this video for the scenario demo 
+![](./media/dynamics365-cs-rpa/a41b848b7eaf4662e0a7f896e5ee9237.png)
 
-    ![Image10](./media/dynamics365-RPA/image019.png)
+>   Graphical user interface Description automatically generated
 
- 
+1.  Installing the Dynamics 365 RPA solution
 
-## Trouble shooting or Known issues 
+2.  Download the automation solution and save it on your machine by clicking on this link: <https://aka.ms/D365CustomerValidationRPASolution>
 
-|Known issue |Workaround|
-|----|----|
-|if you acquire the adequate licenses for Power Automate and Power Apps after you install the solution, the flow or app will be turned off.|After you acquire the licenses, go back to the Solution explorer, click on the … menu for the app or flow then click on “Turn On”.| 
+3.  Import the Dynamics 365 automation solution in the environment of your choice
+
+    1.  Go to <https://powerautomate.microsoft.com> and log in using your work account
+
+    2.  Select the environment in which you wish to work using the environment picker
+
+    3.  In the vertical menu on the left of your screen, click on **Solutions**
+
+    4.  In the horizontal menu, above the Solutions title, click on **Import** then click on **Browse**
+
+    5.  Navigate to the solution file you previously downloaded and double click on it in your file system
+
+    6.  Click **Next.**
+
+4.  Configure the connections needed to be used by the solution in the environment
+
+    1.  For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or
+        credentials of your choice. You will be taken to a different tab, make sure to not close the one you came from.
+
+    2.  For the “Desktop connection” domain/user name and password, please make sure you use the machine Windows login credentials.
+
+![](./media/dynamics365-cs-rpa/73b59acc2f814ac19730b649c6bd536b.png)
+
+1.  Come back to the tab from which you initiated the above step and click **Refresh**
+
+![](./media/dynamics365-cs-rpa/e6e2fd827029506a0dbeea9ea1ec494d.png)
+
+1.  Click on **Import.** The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.
+
+2.  [Known issue workaround] Open “Case entity session – default template” (or your current case entity session template), open Agent scripts tab, and add “Case agent script with automation”.
+
+    ![](./media/dynamics365-cs-rpa/06e4c682ab470f4e7ac463b6708e8cec.png)
+
+    More info on session template:
+    <https://docs.microsoft.com/dynamics365/app-profile-manager/session-templates>
+
+3.  From Dynamics 365 Customer Service app, login to Power Automate
+
+    1.  From the case you are working on, click on the **…** menu then click on **Flow**
+
+![Graphical user interface, text, application Description automatically generated](./media/dynamics365-cs-rpa/32a1301df4867df9c9a9ad325b4b9d64.png)
+
+1.  Click on **Login to Flow**
+
+2.  Authenticate using your Dynamics 365 account
+
+3.  Now open one of your cases using “Shift + Left Click” to launch the productivity tools panel.
+
+![](./media/dynamics365-cs-rpa/15b322dcf54aa0b6469a7b472800ae40.png)
+
+1.  From the Agent Script session in the productivity panel, you will see several agent script step. First one is “Run Automation to validate
+    Customer”. Click the Run button and confirm running.
+
+![](./media/dynamics365-cs-rpa/4c5e69e628f7b983ccc5a87b2f7fb514.png)
+
+1.  The automation will soon be kicked-off on the machine where you have installed Power Automate Desktop. You can watch how the automation use the case data, open the Contoso CRM app, finish the look up automatically. After automation run, please refresh the timeline and you will see the logs written back by Automation regarding the run result. See the demo below on how it will be run
+
+    ![A picture containing text, monitor, indoor, screenshot Description automatically generated](./media/dynamics365-cs-rpa/bf728be4c965a04f9d199266accb06bd.gif)
+
+## Customize the Automation Solution for your own need
+
+1.  Now you can start customizing the automation to meet your own unique requirements. To do this, open Power Automate Desktop and find the desktop flow name “Legacy Contoso App Contact Lookup”. Click Edit it.
+
+    ![](./media/dynamics365-cs-rpa/a93f6fd5dd7cf00398816add4711c557.png)
+
+2.  You can save a copy to work on your customizations or work on the template directly.
+
+3.  You will notice there are multiple sub-flows. Each of them are using keyboard or mouse to interact with the Contoso CRM app. You need to update the steps to interact with your legacy app. To learn more, watch PAD tutorials here.
+
+4.  After you test the desktop flow, you can save it. Now open the cloud flow in <https://powerautomate.microsoft.com/manage/solutions> from within the solution tab -\> Customer Service RPA solution
+
+    ![Graphical user interface, text, application Description automatically generated](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
+
+5.  Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](https://docs.microsoft.com/power-automate/desktop-flows/link-pad-flow-portal) on how to use desktop flow in cloud flow.
+
+6.  Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
+
+7.  Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more) and switch it to run unattended way (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+
+## Troubleshooting and known issues
+
+| Known issue                                                                                            | Workaround                                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Did not see the productivity tools panel from D365 customer service                                    | Before xxx? You need to install Omni Channel to your environment. Productivity tools don’t show on home session. You need create a new session (Shift-click on case link) to see it. Producitivity tools runtime initialization is async. Please wait 1 – 2 seconds on home session before create new sessions. |
+| Agent can’t see the flow                                                                               | Every agent needs to login flow from D365 widget for the first time                                                                                                                                                                                                                                             |
+| During install, you will be prompted multiple times for the same confirmation to install.              | Confirm with “yes I am sure to install” every time prompted                                                                                                                                                                                                                                                     |
+| The agent script isn’t added to current session template automatically after import the demo solution. | Manually add the agent script to case session template.                                                                                                                                                                                                                                                         |
+|                                                                                                        |                                                                                                                                                                                                                                                                                                                 |
