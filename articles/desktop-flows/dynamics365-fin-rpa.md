@@ -1,5 +1,5 @@
 ---
-title: Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop  | Microsoft Docs
+title: Use RPA with Dynamics 365 Finance  | Microsoft Docs
 description: Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop 
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop 
+# Use RPA with Dynamics 365 Finance 
 
 [Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks. 
 
@@ -77,7 +77,7 @@ We recommend the following security roles:
 
 ### Licenses 
 
-If you already use Power Automate Desktop, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
+If you already use Power Automate Desktop, Power Apps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
 
 Otherwise, you will need at least a trial license for these 3 products. This section shows you how to acquire these trial licenses.  
 
@@ -102,22 +102,15 @@ An alternative consists in logging in to Power Automate Desktop and clicking on 
 
 As an admin, you can get an RPA unattended add-on and assign it to your environment ([Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](https://docs.microsoft.com/power-automate/organization-q-and-a))  
 
-#### Get a trial license for Power Apps 
-
-Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)) 
-
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
-To get started with Dynamics 365 Finance and automate the end-of-cycle reporting process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=finance).  
+To get started with Dynamics 365 Finance and automate the end-of-cycle reporting process, navigate [here](https://dynamics.microsoft.com/get-started/free-trial/?appname=finance).  
 
-To get started with Dynamics 365 Supply Chain Management and automate the quality order creation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=SCM). 
-
-To get started with Dynamics 365 Omnichannel for Customer Service and automate the customer validation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=customerservice).. 
 
 ### Setup steps 
 
 #### Install Power Automate Desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](https://docs.microsoft.com/en-us/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) 
+1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](https://docs.microsoft.com/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) 
 
 
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
@@ -132,7 +125,7 @@ To get started with Dynamics 365 Omnichannel for Customer Service and automate t
 1. Add a desktop flow connector. 
     ![Image4](./media/dynamics365-fin-rpa/image009.png)
  
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/en-us/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
+Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
    ![Image5](./media/dynamics365-fin-rpa/image011.png)
  
 #### Installing the Dynamics 365 RPA solution 

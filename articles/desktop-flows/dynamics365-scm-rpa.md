@@ -1,5 +1,5 @@
 ---
-title: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop | Microsoft Docs
+title: Create orders on Dynamics 365 Supply Chain Management | Microsoft Docs
 description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop.
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop 
+# Create orders on Dynamics 365 Supply Chain Management 
 
 [Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks.  
 
