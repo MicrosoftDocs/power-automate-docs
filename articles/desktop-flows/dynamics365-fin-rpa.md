@@ -1,6 +1,6 @@
 ---
-title: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop | Microsoft Docs
-description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop.
+title: Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop  | Microsoft Docs
+description: Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop 
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,11 +22,11 @@ search.audienceType:
   - enduser
 ---
 
-# Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop 
+# Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation using Power Automate Desktop 
 
-[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks.  
+[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks. 
 
-In this documentation, we outline the steps needed for administrators to allow users to automate quality order creation for Dynamics 365 [Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) and focus on higher-priority activities that require their unique creativity.  
+In this documentation, we outline the steps needed for you to automate end of cycle reporting in [Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) and focus on higher-priority activities that require your unique creativity.  
 
 ## Prerequisites 
 
@@ -35,23 +35,44 @@ Before starting, we need to prepare your environment with the adequate licenses 
 ### Software 
 
 You will need to: 
-- install the Power Automate Desktop application. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
+- install the Power Automate Desktop application. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer. 
+- Set the appropriate file download configuration in the Microsoft Edge browser (available for free on Windows) to have complete automation.  
 - Log out of the Dynamics 365 app you wish to automate 
 - Get the appropriate security role for the automation to run 
 
-#### Log out of the Dynamics 365 app you wish to automate 
+#### Set the appropriate file download configuration on Microsoft Edge 
+
+Edge has two ways of downloading files from the internet onto your computer 
+
+1. Download directly on your machine, and save the file in the destination folder specified in the Edge settings 
+2. Ask for the user’s permissions before downloading a file, wait for the user to accept the download, then only download the file and save it in the destination folder specified in the Edge setting.  
+
+In order to make this process fully automated and not requiring a human in front of the computer for it to work, we need Edge to download files using the first mechanism.  
+
+1. Open Microsoft Edge browser on your machine (using the Windows Search bar) 
+2. In the top right corner of your screen, click on “…” menu 
+3. Click on **Settings**
+4. In the vertical menu in the left of your screen, click on Downloads 
+
+Turn off the toggle “Ask me what to do with each download” 
+
+Close your browser  
+
+   ![Image1](./media/dynamics365-fin-rpa/image001.png)
+
+#### Log out of the Dynamics 365 app 
 
 In order to do the full automation, please sign out of the application before you run the automation for the first time. You will need to do this if you switch between automation and your account.  
 
 #### Get the appropriate security role set up for the account running the automation 
 
-You will need to decide which work account will be running the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. For the account you end up choosing, you need to check that it has the appropriate security roles so that it can access the surfaces you are automating.  
+You will need to decide which work account will be running the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. For the account you end up choosing, you need to check that it has the appropriate security roles so that it can access the surfaces you are automating. Go to [Managing security roles in Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2127645).  
 
 We recommend the following security roles: 
 
 |Application|Security role|Link to documentation|
 |----|----|----|
-|Power Platform|Environment admin or environment maker (if the environment already has Dataverse and unattended license needed)||
+|Power Platform|Environment admin or environment maker (if the envionrment already has Dataverse and unattended license needed)||
 |Dynamic 365 Supply Chain Management||
 
 ### Licenses 
@@ -86,37 +107,44 @@ As an admin, you can get an RPA unattended add-on and assign it to your environm
 Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)) 
 
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
+To get started with Dynamics 365 Finance and automate the end-of-cycle reporting process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=finance).  
 
 To get started with Dynamics 365 Supply Chain Management and automate the quality order creation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=SCM). 
 
-### Setup steps 
+To get started with Dynamics 365 Omnichannel for Customer Service and automate the customer validation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=customerservice).. 
 
-Now that prerequisites are set, we are on our way to get these free solutions that automate the processes. 
+### Setup steps 
 
 #### Install Power Automate Desktop  
 
 1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](https://docs.microsoft.com/en-us/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) 
 
+
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
 
-    ![Image1](./media/dynamics365-RPA/image001.png)
+    ![Image2](./media/dynamics365-fin-rpa/image003.png)
 
 1. Log in http://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
 
-    ![Image2](./media/dynamics365-RPA/image003.png)
-    ![Image3](./media/dynamics365-RPA/image005.png)
+    ![Image3](./media/dynamics365-fin-rpa/image005.png)
+    ![Image4](./media/dynamics365-fin-rpa/image007.png)
 
 1. Add a desktop flow connector. 
-    ![Image4](./media/dynamics365-RPA/image007.png)
+    ![Image4](./media/dynamics365-fin-rpa/image009.png)
  
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
-    ![Image5](./media/dynamics365-RPA/image009.png)
+Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/en-us/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
+   ![Image5](./media/dynamics365-fin-rpa/image011.png)
  
 #### Installing the Dynamics 365 RPA solution 
 
 Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.  
 
-1. Download the Dynamics 365 automation solution and save it on your machine [https://aka.ms/D365SCMQualityOrderRPASolution](https://aka.ms/D365SCMQualityOrderRPASolution)
+1. Download the Dynamics 365 automation solution and save it on your machine 
+    a. To automate the quality order process on Dynamics 365 Supply Chain Management, download the solution here: [https://aka.ms/D365SCMQualityOrderRPASolution](https://aka.ms/D365SCMQualityOrderRPASolution)
+
+    b. To automate the end-of-cycle reporting process on Dynamics 365 Finance, download the solution here [https://aka.ms/D365FinanceEndCycleReportingRPASolution](https://aka.ms/D365FinanceEndCycleReportingRPASolution) 
+
+    c. To automate the customer validation process on Dynamics 365 Omnichannel, download the solution here: [https://aka.ms/D365CustomerValidationRPASolution](https://aka.ms/D365CustomerValidationRPASolution)
 
 1. Import the Dynamics 365 automation solution in the environment of your choice 
 
@@ -133,58 +161,59 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     a. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice.  
 
-   ![Image6](./media/dynamics365-RPA/image011.png)
+   ![Image6](./media/dynamics365-fin-rpa/image013.png)
       
     b. Come back to the tab from which you initiate the above step and click **Refresh** 
 
-    ![Image7](./media/dynamics365-RPA/image013.png)
+    ![Image7](./media/dynamics365-fin-rpa/image015.png)
 
-    c. Click on Import. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
+    c. Click on **Import**. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
 
 1. Enter the parameters that the solution should use to run the process 
 
     a. From the Solutions explorer, click on the solution to open it 
-    b. You will find there are rows with the Type column that reads Environment Variable. We need to add values for each of these.  
+    b. You will find there are rows with the **Type** column that reads **Environment Variable**. We need to add values for each of these.  
 
-    c. Click on each of the environment variable below and under **Current Value**, click on **Add New Value** to put in your parameter. 
+    c. Click on each of the environment variable listed in the table below and under **Current Value**, click on **Add New Value** to put in your desired parameter. 
 
     |Environment variable name|Description|
     |----|----|
-    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable *Example: https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable*|
-    |SCM SignIn User|user account to sign into Dynamics 365 SCM *example: helloworld@contoso.com*|
-    |QOrder Parameter – Site|Name of the site to use for filling in the quality order creation form.|
-    |QOrder Parameter – Test Group|Configure the Testgroup for the quality order creation|
-    |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation| 
+    |D365CompanyName |Name of the company to use in your D365 organization. It is located at the top right corner of your screen.  |
+    |D365FinanceSite |URL to your Dynamics 365 Finance website. It goes until dynamics.com |
+    |D365SiteUserName |Email address of the user account the automation should run under.|
 
-    ![Image8](./media/dynamics365-RPA/image015.png)
 
 1. Turn on the cloud flow in the solution 
 
-    a. In the solution, click the … menu for the **QOrder - CloudFlow** cloud flow 
+    a. In the solution, click the … menu for the **Report Reconciliation** cloud flow 
     b. Click on **Turn On**
 
 1. Put in the encrypted credentials to be used by the solution to log in to Dynamics 365 
 
-    a. From the solution explorer, click on the line item called **QOrder – Desktop Flow**
+    a. From the solution explorer, click on the line item called **Report Validation**
     b. Click on **Edit** then **Launch App**
     c. This will open the Power Automate Desktop  
-    d. Under the **Subflows** dropdown, double click on **LoginSCM**
-    e. In the **LoginSCM** subflow, double click on action 8 
+    d. Under the **Subflows** dropdown, double click on **login_to_FnO**
+    
+    ![Image8](./media/dynamics365-fin-rpa/image017.png)
+    e. In the **login_to_FnO** subflow, double click on action 11
+    
     f. Fill in the **Text** textbox with the password of the account to use during automation 
     
-    ![Image9](./media/dynamics365-RPA/image017.png)
- 
+    ![Image9](./media/dynamics365-fin-rpa/image019.png)
+1. Now you can test the desktop flow from PAD. 
 
-1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
+1. And then you can test the cloud flow from portal. The demo below shows how the end-to-end scenario works. You will get a Teams message at the end 
+   ![Image9](./media/dynamics365-fin-rpa/image021.gif)
 
-1. Have the user launch the “QOrder-Application" Power App from their phone and start using it. Watch this video for the scenario demo 
+1. Last if you choose to run the you can  
 
-    ![Image10](./media/dynamics365-RPA/image019.png)
+1. You can customize either the desktop flow or cloud flow to create custom reports for your own scenarios 
+1. Lastly if you choose to run the automation unattended, you can switch the run mode from cloud flow. See here for more details.  
 
- 
-
-## Trouble shooting or Known issues 
+## Known issues 
 
 |Known issue |Workaround|
 |----|----|
-|if you acquire the adequate licenses for Power Automate and Power Apps after you install the solution, the flow or app will be turned off.|After you acquire the licenses, go back to the Solution explorer, click on the … menu for the app or flow then click on “Turn On”.| 
+|I created a gateway connection for my solution but now it’s taking very long to import.  |Nothing to worry about. It takes a while to import solutions. Give it at least 10 minutes. | 
+|My cloud flow doesn’t run after I press “Play” in the flow designer |Go back to the Solution explorer, click on the … menu for the app or flow then click on “Turn On”. |

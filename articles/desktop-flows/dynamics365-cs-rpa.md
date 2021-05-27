@@ -168,11 +168,11 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     1. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice. You will be taken to a different tab, make sure to not close the one you came from.
 
-    2. For the “Desktop connection” domain/user name and password, please make sure you use the machine Windows login credentials.
+    2. For the **Desktop connection** domain/username and password, be sure to use the machine's Windows login credentials.
 
    ![](./media/dynamics365-cs-rpa/73b59acc2f814ac19730b649c6bd536b.png)
 
-1. Come back to the tab from which you initiated the previous step and then select **Refresh**.
+1. On the tab from which you initiated the previous step, select **Refresh**.
 
    ![](./media/dynamics365-cs-rpa/e6e2fd827029506a0dbeea9ea1ec494d.png)
 
@@ -207,25 +207,27 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
    ![](./media/dynamics365-cs-rpa/bf728be4c965a04f9d199266accb06bd.gif)
 
-## Customize the Automation Solution
+## Customize the automation solution
 
-1. Now you can start customizing the automation to meet your own unique requirements. To do this, open Power Automate Desktop and find the desktop flow name “Legacy Contoso App Contact Lookup”. Click Edit it.
+1. Now you can start customizing the automation to meet your unique requirements. To do this, open Power Automate Desktop and then select **Edit** on the **Legacy Contoso App Contact Lookup** desktop flow.
 
    ![](./media/dynamics365-cs-rpa/a93f6fd5dd7cf00398816add4711c557.png)
 
-2. You can save a copy to work on your customizations or work on the template directly.
+1. You can save a copy to work on your customizations or work on the template directly.
 
-3. You will notice there are multiple sub-flows. Each of them are using keyboard or mouse to interact with the Contoso CRM app. You need to update the steps to interact with your legacy app. To learn more, watch Power Automate Desktop tutorials here.
+1. Notice that there are multiple child flows. Each child flow uses the keyboard or the mouse to interact with the Contoso CRM app. You need to update the steps to interact with your legacy app. 
 
-4. After you test the desktop flow, you can save it. Now open the cloud flow in <https://powerautomate.microsoft.com/manage/solutions> from within the solution tab -\> Customer Service RPA solution
+   <!-- To learn more, watch Power Automate Desktop tutorials here. -->
+
+1. After you test the desktop flow, you can save it. Now open the cloud flow in <https://powerautomate.microsoft.com/manage/solutions> from within the solution tab -\> Customer Service RPA solution
 
     ![](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
 
-5. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](https://docs.microsoft.com/power-automate/desktop-flows/link-pad-flow-portal) on how to use desktop flow in cloud flow.
+1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](https://docs.microsoft.com/power-automate/desktop-flows/link-pad-flow-portal) on how to use desktop flow in cloud flow.
 
-6. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
+1. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
 
-7. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more) and switch it to run unattended way (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more) and switch it to run unattended way (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
 
 ## Troubleshooting and known issues
 
