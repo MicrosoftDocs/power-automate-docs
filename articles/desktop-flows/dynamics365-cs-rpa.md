@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/17/2021
+ms.date: 05/27/2021
 ms.author: aminab
 search.app: 
   - Flow
@@ -128,7 +128,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
 
-### Install and configure Contoso CRM app
+## Install and configure Contoso CRM app
 
 1. Download and install [contoso_crm.exe](https://aka.ms/ContosoCRMApp) to the machine where the automation runs.
 
@@ -137,9 +137,9 @@ Now that prerequisites are set, we are on our way to get these free solutions th
    >[!NOTE]
    >Select **More info** > **Run anyway** on the **Windows protected you PC** screen that appears during the installation.
 
-   ![](./media/dynamics365-cs-rpa/0f12ae4f564d4b3eaf1591cf8450a350.png)
+   ![](./media/dynamics365-cs-rpa/more-info.png)
 
-   ![](./media/dynamics365-cs-rpa/0a0b22406de3461a9bfe6833bca23dd1.png)
+   ![](./media/dynamics365-cs-rpa/run-anyway.png)
 
    After the installation completes, you can run the Contoso CRM app from the Start menu.
 
@@ -201,7 +201,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. From the **Agent Script** session in the productivity panel, you will see several agent script steps. The first step is **Run Automation to validate Customer**. Select the **Run** button and confirm it runs.
 
-   ![](./media/dynamics365-cs-rpa/4c5e69e628f7b983ccc5a87b2f7fb514.png)
+   ![](./media/dynamics365-cs-rpa/run-validation.png)
 
 1. The automation starts on the machine where you have installed Power Automate Desktop. You can watch how the automation uses the case data, opens the Contoso CRM app, and then finishes the look up automatically. After the automation runs, refresh the timeline to view the logs regarding the run result. Here's a demo on how it runs.
 

@@ -39,11 +39,11 @@ You will need to:
 - Log out of the Dynamics 365 app you wish to automate 
 - Get the appropriate security role for the automation to run 
 
-#### Log out of the Dynamics 365 app you wish to automate 
+### Log out of the Dynamics 365 app you wish to automate 
 
 In order to do the full automation, please sign out of the application before you run the automation for the first time. You will need to do this if you switch between automation and your account.  
 
-#### Get the appropriate security role set up for the account running the automation 
+### Get the appropriate security role set up for the account running the automation 
 
 You will need to decide which work account will be running the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. For the account you end up choosing, you need to check that it has the appropriate security roles so that it can access the surfaces you are automating.  
 
@@ -112,7 +112,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
     ![Image5](./media/dynamics365-RPA/image009.png)
  
-#### Installing the Dynamics 365 RPA solution 
+## Install the Dynamics 365 RPA solution 
 
 Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.  
 
@@ -174,7 +174,6 @@ Now that prerequisites are set, we are on our way to get these free solutions th
     
     ![Image9](./media/dynamics365-RPA/image017.png)
  
-
 1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
 
 1. Have the user launch the “QOrder-Application" Power App from their phone and start using it. Watch this video for the scenario demo 
@@ -183,7 +182,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
  
 
-## Trouble shooting or Known issues 
+## Troubleshooting or Known issues 
 
 |Known issue |Workaround|
 |----|----|
