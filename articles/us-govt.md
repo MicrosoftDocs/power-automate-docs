@@ -245,7 +245,7 @@ Install an [On-Premises Data Gateway](/flow/gateway-manage) to transfer data qui
 
 If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization executed to enable that will also enable on-premises connectivity for Power Automate. 
 
-Formerly, US Government customers had to contact support before configuring their first on-premises data gateway, as support would have to "whitelist" the tenant for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
+Formerly, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "whitelist" the tenant for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
 
 ## Power Automate US Government feature limitations
 
