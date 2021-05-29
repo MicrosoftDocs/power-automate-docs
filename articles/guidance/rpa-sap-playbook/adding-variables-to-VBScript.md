@@ -1,0 +1,40 @@
+---
+title: Adding variables to your VBScript with Power Automate | Microsoft Docs
+description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, before we switch over to Power Automate Desktop, let's review all hard-coded value references and decide which ones to replace with dynamic input variables.
+suite: flow
+documentationcenter: na
+author: kathyos
+manager: kvivek
+editor: ''
+ms.custom: guidance
+ms.service: power-automate
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 06/01/2021
+ms.author: kathyos
+ms.reviewer: deonhe
+---
+
+# Adding variables to your VBScript
+
+Before we switch over to Power Automate Desktop, let's review all hard-coded value references and decide which ones to replace with dynamic input variables.
+
+Variables are used within Desktop flow processes to store data for further processing and their names are enclosed within percentage signs **%.** Almost every Action receives at least one variable as input or produces one as output. Every variable has a unique name. Variable names may contain letters, numbers, and underscore ('\_') characters, and are not case sensitive.
+
+Some variable naming examples:
+
+-   %NewVar%
+
+-   %file\_path%
+
+-   %Street%
+
+Find and replace hard-coded values with variables
+
+![Screenshot of VBScript code showing replacing the hard coded field value with the input variable  Street   session findById  quot wnd 0  usr txtP0006 STRAS quot   text    quot  Street  quot ](media/replace-text-with-variables.png)
+
+Your script should look like this after you've introduced variables
+
+![A screenshot of the VBScript code with all the variables replaces with the input variables  PA30   EmployeeId    EffectiveDate    Street    City    State    ZipCode  and  CountryCode   session findById  quot wnd 0  quot   maximize session findById  quot wnd 0  tbar 0  okcd quot   text    quot PA30 quot  session findById  quot wnd 0  quot   sendVKey 0 session findById  quot wnd 0  usr ctxtRP50G PERNR quot   text    quot  EmployeeId  quot  session findById  quot wnd 0  usr tabsMENU_TABSTRIP tabpTAB01 ssubSUBSCR_MENU SAPMP50A 0400 subSUBSCR_TIME SAPMP50A 0330 ctxtRP50G BEGDA quot   text    quot  EffectiveDate  quot  session findById  quot wnd 0  usr tabsMENU_TABSTRIP tabpTAB01 ssubSUBSCR_MENU SAPMP50A 0400 subSUBSCR_ITKEYS SAPMP50A 0350 ctxtRP50G CHOIC quot   text    quot 0006 quot  session findById  quot wnd 0  usr tabsMENU_TABSTRIP tabpTAB01 ssubSUBSCR_MENU SAPMP50A 0400 subSUBSCR_ITKEYS SAPMP50A 0350 ctxtRP50G SUBTY quot   text    quot 2 quot  session findById  quot wnd 0  usr tabsMENU_TABSTRIP tabpTAB01 ssubSUBSCR_MENU SAPMP50A 0400 subSUBSCR_ITKEYS SAPMP50A 0350 ctxtRP50G SUBTY quot   setFocus session findById  quot wnd 0  usr tabsMENU_TABSTRIP tabpTAB01 ssubSUBSCR_MENU SAPMP50A 0400 subSUBSCR_ITKEYS SAPMP50A 0350 ctxtRP50G SUBTY quot   caretPosition   1 session findById  quot wnd 0  tbar 1  btn 5  quot   press session findById  quot wnd 0  usr txtP0006 STRAS quot   text    quot  Street  quot  session findById  quot wnd 0  usr txtP0006 ORT01 quot   text    quot  City  quot  session findById  quot wnd 0  usr ctxtP0006 STATE quot   text    quot  State  quot  session findById  quot wnd 0  usr txtP0006 PSTLZ quot   text    quot  ZipCode  quot  session findById  quot wnd 0  usr cmbP0006 LAND1 quot   key    quot  Country  quot  session findById  quot wnd 0  usr ctxtP0006 STATE quot   setFocus session findById  quot wnd 0  usr ctxtP0006 STATE quot   caretPosition   2 session findById  quot wnd 0  tbar 0  btn 11  quot   press session findById  quot wnd 0  tbar 0  btn 3  quot   press](media/after-replacing-text-with-variables.png)
