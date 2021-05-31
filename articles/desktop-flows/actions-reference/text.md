@@ -44,11 +44,13 @@ To combine a list of text values into a single text value, use the **Join text**
 
 To find a string in a text and replace it with another string or character, use the **Replace text** action. The following figure demonstrates a replacement of the string "Product Characteristics" with "Characteristics".
 
-![Screenshot of replace text action](\media\text\replace-text-example.png)!
+![Screenshot of replace text action](\media\text\replace-text-example.png)
 
-Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
+Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-![Screenshot of parse text action](\media\text\parse-text-example.png)!
+In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
+
+![Screenshot of parse text action](\media\text\parse-text-example.png)
 
 To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
 

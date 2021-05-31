@@ -28,7 +28,7 @@ Automate sending, receiving and managing emails through imap/smtp
 
 ## Getting started with email actions
 
-Before deploying any email action, you have to configure the server that will handle the respective request. The Retrieve emails and Process emails actions require an IMAP server, while the Send email action requires an SMTP server.
+Before deploying any email action, you have to configure the server that will handle the respective request. The **Retrieve email messages** and **Process email messages** actions require an IMAP server, while the **Send email** action requires an SMTP server.
 
 To retrieve emails that meet specific criteria from your mailbox, use the **Retrieve email messages** action. In the example below, the filter has been configured to retrieve only unread messages from the inbox. The filter further specifies that the email should be from b.friday, the subject contains the word "Report" and the body contains "Tuesday". Attachments from any retrieved emails which match these criteria will be saved locally.
 

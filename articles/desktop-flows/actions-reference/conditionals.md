@@ -37,12 +37,12 @@ search.audienceType:
 
 ## Getting started with conditionals
 
-Conditional actions allow you to modify flow actions at runtime, based on information available in the environment.
+Conditional actions allow you to modify which actions to run, based on the outcomes of conditional statements.
 
 Useful applications and features:
 * Use the If group of conditionals to evaluate any type of condition.
 * Use the Switch group of conditionals to compare a single variable with multiple possible values.
-* Explore additional options when evaluating conditions.
+* Cover multiple scenarios by employing nested conditionals.
 * Provide default and alternative behaviors to flows based on the available data.
 
 You can find more information on how to use the conditional actions [here](../use-conditionals.md)

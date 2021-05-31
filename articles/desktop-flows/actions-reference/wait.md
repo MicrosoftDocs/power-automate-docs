@@ -35,7 +35,7 @@ Set rules for the flow to wait before specific events occur
 
 ## Getting started with wait actions
 
-Use wait actions to suspend running the flow until a certain event occurs.
+Use wait actions to delay running subsequent actions in the flow until a certain event occurs.
 
 To create a delay before the next action, use a **Wait** action. This action sets a timer and resumes the flow when the time elapses.
 
@@ -43,11 +43,11 @@ To create a delay until a specific file appears, use the **Wait for file** actio
 
 ![Screenshot of wait for file action properties](\media\wait\wait-for-file-example.png)
 
-When working with UI elements, create a delay until a specific element occurs with the **Wait for window content** action. In the figure below, the action waits until a selected UI element **Start button** appears in its disabled (inactive) state.
+When working with UI elements, create a delay until a specific element appears with the **Wait for window content** action. In the figure below, the action waits until a selected UI element **Start button** appears in its disabled (inactive) state.
 
 ![Screenshot of wait for window content action properties](\media\wait\wait-for-window-content-example.png)
 
-This action works similarly to the **Wait for web page content** action, where a UI element is expected on a webpage instead.
+This action works similarly to the **Wait for web page content** action, where a UI element is expected to appear on or disappear from a webpage instead.
 
 > [!NOTE]
 > Wait actions do not pause the flow, they simply do not move on to the next action until the specified number of seconds in the action properties elapses.

@@ -36,7 +36,7 @@ Take control of the mouse and keyboard
 
 ## Getting started with mouse and keyboard actions
 
-Simulate using the keyboard to enter text or other key commands with the **Send Keys** action. Use the **Insert special key** button to keys such as the arrow keys, Caps Lock or keys from the numeric keypad, and Insert modifier to send keys such as Shift and Control. In the example below, a signature is added to an email message, starting with two line breaks. At the end of the text, the action sends the Ctrl+A and Ctrl+C commands, to select all and copy, to use the contents of the entire email text from the clipboard in a subsequent action.
+Simulate using the keyboard to enter text or other key commands with the **Send Keys** action. Use the **Insert special key** button to insert keys such as the arrow keys, Caps Lock or keys from the numeric keypad, and Insert modifier to send keys such as Shift and Control. In the example below, a signature is added to an email message, starting with two line breaks. At the end of the text, the action sends the Ctrl+A and Ctrl+C commands, to select all and copy, to use the contents of the entire email text from the clipboard in a subsequent action.
 
 ![Screenshot of send keys action properties](\media\mousekeyboard\send-keys-example.png)
 
@@ -44,7 +44,7 @@ Simulate using the keyboard to enter text or other key commands with the **Send 
 > To use a key as a modifier, use the curly brackets notation for both keys:
 > e.g. for Ctrl + A, use {Control}({A})
 
-To simulate moving the mouse, use the **Move mouse** action. In the following example, the mouse has been set to move to specific coordinates by moving the pointer there manually, ad pressing Control+Shift to set its current coordinates for Position X & Y. The movement speed has been set to normal speed.
+To simulate moving the mouse, use the **Move mouse** action. In the following example, the mouse has been set to move to specific coordinates by moving the pointer there manually, and pressing Control+Shift to set its current coordinates for Position X & Y. The movement speed has been set to normal.
 
 ![Screenshot of move mouse action properties](\media\mousekeyboard\move-mouse-example.png)
 

@@ -26,13 +26,13 @@ search.audienceType:
 
 ## Getting started with loops
 
-Loops are used to automate repetitive tasks by executing a block of actions multiple times.
+Loops are used to automate repetitive sections of a flow by executing a block of actions multiple times.
 
-Useful applications and featuresy:
-* Use simple loops to perform a given number of repetitions and iterate through data
-* Deploy loop conditions in order to repeat actions until a condition is met
-* Iterate through the items of a list using for each loops
-* Explicitly end loops when required
+Useful applications and features:
+* Use simple loops to perform a given number of repetitions and iterate through data.
+* Deploy loop conditions in order to repeat actions until a condition is met.
+* Iterate through the items of a list using for each loops.
+* Explicitly end loops when required.
 
 You can find more information on how to use the loop actions [here](../use-loops.md)
 
