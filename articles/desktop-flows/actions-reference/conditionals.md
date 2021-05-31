@@ -39,6 +39,12 @@ search.audienceType:
 
 Conditional actions allow you to modify flow actions at runtime, based on information available in the environment.
 
+Useful applications and features:
+* Use the If group of conditionals to evaluate any type of condition.
+* Use the Switch group of conditionals to compare a single variable with multiple possible values.
+* Explore additional options when evaluating conditions.
+* Provide default and alternative behaviors to flows based on the available data.
+
 You can find more information on how to use the conditional actions [here](../use-conditionals.md)
 
 ## Conditionals actions
