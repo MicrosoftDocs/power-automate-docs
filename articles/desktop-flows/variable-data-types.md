@@ -97,15 +97,15 @@ Some of these data types are widely used throughout the application, such as **n
 
   [Datatable data type properties](datatype-properties.md#datatables) 
 
-- **Datarow** - A data row contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a data row. 
+- **Datarow** - A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
 
-  To retrieve a specific item of a data row, use the following notation: **%VariableName[ItemNumber]%**
+  To retrieve a specific item of a datarow, use the following notation: **%VariableName[ItemNumber]%**
 
-  Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the data row.
+  Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the datarow.
 
   [Datarow data type properties](datatype-properties.md#datarows)
 
-  ![An example of a data row variable.](media\data-rows\data-row-data-type.png) 
+  ![An example of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
