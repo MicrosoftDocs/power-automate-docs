@@ -93,7 +93,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
 
-  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
+  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
   [Datatable data type properties](datatype-properties.md#datatables) 
 
