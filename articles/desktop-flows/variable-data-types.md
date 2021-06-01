@@ -80,7 +80,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
-  ![An example of a datatable variable.](media\data-tables\create-data-table-variable.png)
+  ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
 
   To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
