@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 # Optional – Data pre-validation using the Power Automate SAP ERP (Preview) connector
 
-This is an optional chapter covering the [certified](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?id=s:d0dcda07-de96-4870-bcad-dac797207da5) [SAP ERP (Preview) connector](https://docs.microsoft.com/en-us/power-platform-release-plan/2020wave1/cdm-data-integration/sap-erp-connector-power-apps-power-automate) which allows automation developers to connect to SAP through BAPI's and RFC's. There are [several pre-requisites that need to be met](https://powerapps.microsoft.com/blog/introducing-the-sap-erp-connector/).
+This is an optional chapter covering the [certified](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?id=s:d0dcda07-de96-4870-bcad-dac797207da5) [SAP ERP (Preview) connector](/power-platform-release-plan/2020wave1/cdm-data-integration/sap-erp-connector-power-apps-power-automate) which allows automation developers to connect to SAP through BAPI's and RFC's. There are [several pre-requisites that need to be met](https://powerapps.microsoft.com/blog/introducing-the-sap-erp-connector/).
 
 Let's extend our current scenario to include a pre-validation check that uses the SAP ERP connector to check whether the **Personnel no** supplied to the flow is valid and that the employee is in an active employment state. Depending on the results of this check, we'll decide whether to continue or terminate the flow.
 
