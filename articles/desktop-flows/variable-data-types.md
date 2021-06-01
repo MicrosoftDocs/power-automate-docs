@@ -68,10 +68,6 @@ Some of these data types are widely used throughout the application, such as **n
 
   [List data type properties](datatype-properties.md#lists)
 
-- **Datarow** - A data row contains the values of a single row of a datatable. 
-
-  [Datarow data type properties](datatype-properties.md#datarows) 
-
 - **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
   A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
@@ -100,6 +96,16 @@ Some of these data types are widely used throughout the application, such as **n
   If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
 
   [Datatable data type properties](datatype-properties.md#datatables) 
+
+- **Datarow** - A data row contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a data row. 
+
+  To retrieve a specific item of a data row, use the following notation: **%VariableName[ItemNumber]%**
+
+  Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the data row.
+
+  [Datarow data type properties](datatype-properties.md#datarows)
+
+  ![An example of a data row variable.](media\data-rows\data-row-data-type.png) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
