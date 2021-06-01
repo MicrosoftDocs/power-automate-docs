@@ -1,6 +1,6 @@
 ---
-title: Creating the API flow with the Power Automate portal | Microsoft Docs
-description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create a Power Automate API flow that calls our Power Automate Desktop flow using secure input parameters from the cloud.
+title: Creating the cloud flow with the Power Automate portal | Microsoft Docs
+description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create a Power Automate cloud flow that calls our Power Automate Desktop flow using secure input parameters from the cloud.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,11 +17,11 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Creating the API flow with Power Automate 
+# Creating the cloud flow with Power Automate 
 
-Now, we'll create the API flow that employees use to request an updated address. This API flow passes the input variables to the Desktop flow you created in the previous section.
+Now, we'll create the cloud flow that employees use to request an updated address. This cloud flow passes the input variables to the Desktop flow you created in the previous section.
 
-We highly recommended that you create API flows, Desktop flows and other Microsoft Power Platform artifacts within solutions to allow for better portability, application lifecycle management (ALM), and encapsulation.
+We highly recommended that you create cloud flows, Desktop flows and other Microsoft Power Platform artifacts within solutions to allow for better portability, application lifecycle management (ALM), and encapsulation.
 
 1.  Navigate to <https://powerautomate.com> and sign-in with your Azure AD credentials.
 
@@ -185,7 +185,7 @@ We highly recommended that you create API flows, Desktop flows and other Microso
 
 ![Screenshot of Run a UI flow built by Power Automate Desktop box with the date format expression ](media/run-a-UI-flow-built-by-PAD-with-date-format-set.png)
 
-37. Supply the data for all other fields by selecting the appropriate property from the API flow's trigger dynamics content list.
+37. Supply the data for all other fields by selecting the appropriate property from the cloud flow's trigger dynamics content list.
 
 ![Screenshot of Run a UI flow built by Power Automate Desktop box with variables being set ](media/run-a-UI-flow-built-by-PAD-with-variables-being-set.png)
 
@@ -215,7 +215,7 @@ We highly recommended that you create API flows, Desktop flows and other Microso
 
 ![Screenshot of Run Flow dialog box with Your flow has successfully started message ](media/run-flow-dialog-with-successfully-started-message.png)
 
-The API flow starts and calls the Desktop flow automation, which is entering data into SAP.
+The cloud flow starts and calls the Desktop flow automation, which is entering data into SAP.
 
 ![Screenshot of the test run of the flow executing in the Power Automate Portal  with checkmarks applied to each step being executed ](media/test-run-of-flow-with-checkmarks.png)
 

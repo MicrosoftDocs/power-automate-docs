@@ -73,7 +73,7 @@ Table of Contents
 
 [5.3 Creating SAP Desktop flow with Power Automate Desktop 2](#creating-sap-desktop-flow-with-power-automate-desktop)
 
-[5.4 Creating the API flow with the Power Automate portal 2](#creating-the-api-flow-with-the-power-automate-portal)
+[5.4 Creating the cloud flow with the Power Automate portal 2](#creating-the-api-flow-with-the-power-automate-portal)
 
 [5.5 Optional – Data pre-validation using the Power Automate SAP ERP (Preview) connector 2](#optional-–-data-pre-validation-using-the-power-automate-sap-erp-preview-connector)
 
@@ -85,7 +85,7 @@ Table of Contents
 
 [6.3 Getting ready to debug 2](#getting-ready-to-debug)
 
-[6.4 Creating the API flow with Power Automate 2](#creating-the-api-flow-with-power-automate)
+[6.4 Creating the cloud flow with Power Automate 2](#creating-the-api-flow-with-power-automate)
 
 [7 Action-based SAP GUI automation – using the built-in desktop recorder 2](#action-based-sap-gui-automation-–-using-the-built-in-desktop-recorder)
 

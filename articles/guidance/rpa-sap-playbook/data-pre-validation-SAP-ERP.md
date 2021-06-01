@@ -25,7 +25,7 @@ Let's extend our current scenario to include a pre-validation check that uses th
 
 Here's how the adjusted process flow looks.
 
-![Diagram of the example automation where the employee triggers an API flow, the API flow validates that the employee ID exists, then gets the secrets from Azure Key Vault and starts the UI flow the UI flow uses RPA to automate a new address in SAP, and the API flow emails a status message back to the employee ](media/diagram-of-example-automation.png)
+![Diagram of the example automation where the employee triggers an cloud flow, the cloud flow validates that the employee ID exists, then gets the secrets from Azure Key Vault and starts the UI flow the UI flow uses RPA to automate a new address in SAP, and the cloud flow emails a status message back to the employee ](media/diagram-of-example-automation.png)
 
 There are several benefits to employing this approach:
 

@@ -23,7 +23,7 @@ We've provided the following simplified fictitious example, which we'll use as t
 
 Let's say your organization doesn't have any employee self-service functionality today, but you want to allow employees to submit a secondary address through a manually triggered flow that will insert the respective address record in the employee's personnel record.
 
-![Diagram of the example automation where the employee triggers an API flow  the API flow gets the secrets from Azure Key Vault and starts the UI flow  the UI flow uses RPA to automate a new address in SAP  and the API flow emails a status message back to the employee ](media/diagram-example-automation.png)
+![Diagram of the example automation where the employee triggers an cloud flow  the cloud flow gets the secrets from Azure Key Vault and starts the UI flow  the UI flow uses RPA to automate a new address in SAP  and the cloud flow emails a status message back to the employee ](media/diagram-example-automation.png)
 
 Your HR department has provided you with the exact steps you would have to follow when processing the address addition in SAP manually.
 

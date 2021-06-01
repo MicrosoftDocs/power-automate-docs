@@ -1,6 +1,6 @@
 ---
-title: Creating the API flow with the Power Automate portal | Microsoft Docs
-description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create a Power Automate API flow that calls our Power Automate Desktop flow using secure input parameters from the cloud.
+title: Creating the cloud flow with the Power Automate portal | Microsoft Docs
+description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create a Power Automate cloud flow that calls our Power Automate Desktop flow using secure input parameters from the cloud.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,11 +17,11 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Creating the API flow with the Power Automate portal
+# Creating the cloud flow with the Power Automate portal
 
-You can close both Power Automate Desktop windows and go to the [Power Automate portal](https://flow.microsoft.com/). Here, we'll create a Power Automate API flow that calls our Power Automate Desktop flow by using secure input parameters from the cloud.
+You can close both Power Automate Desktop windows and go to the [Power Automate portal](https://flow.microsoft.com/). Here, we'll create a Power Automate cloud flow that calls our Power Automate Desktop flow by using secure input parameters from the cloud.
 
-**Note:** This particular API flow is designed as a *"*happy path," which means it has no exception handling, scoping, or try-catch-finally patterns. A more resilient design approach can be found in the section [6.1 Creating SAP Desktop flow with Power Automate Desktop](#creating-an-sap-desktop-flow-with-power-automate-desktop).
+**Note:** This particular cloud flow is designed as a *"*happy path," which means it has no exception handling, scoping, or try-catch-finally patterns. A more resilient design approach can be found in the section [6.1 Creating SAP Desktop flow with Power Automate Desktop](#creating-an-sap-desktop-flow-with-power-automate-desktop).
 
 1.  [Open the Power Automate portal](https://flow.microsoft.com/), sign in and make sure you're in the same Dataverse environment as the one used during the previous flow creation in Power Automate Desktop.
 
