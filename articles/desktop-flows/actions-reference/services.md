@@ -27,6 +27,18 @@ Control the workstation's installed services
 |[Pause service](#pause)|
 |[Resume service](#resume)|
 
+## Getting started with services
+
+Power Automate Desktop allows users to handle Windows services through the services actions. With these actions, users can maintain full control of the operating system and limit the running services.
+
+All the Services actions require the service name as input and don't return any output. In the figure below, the **Start service** action starts **UIFlowService**.
+
+![screenshot of start service action properties](\media\services\start-service-example.png)
+
+
+
+## Services actions
+
 ### <a name="start"></a> Start service
 Start a stopped Windows service
 
