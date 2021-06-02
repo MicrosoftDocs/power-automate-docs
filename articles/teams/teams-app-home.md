@@ -8,6 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
+ms.custom: intro-internal
 ms.service: power-automate
 ms.devlang: na
 ms.topic: article

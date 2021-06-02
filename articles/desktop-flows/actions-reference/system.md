@@ -47,6 +47,63 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Set screen resolution](#setscreenresolution)|
 |[Run Python script](#runpythonscript)|
 
+## Getting started with system actions
+
+Use system actions to automate tasks which are fundamental to the Windows operating system. 
+
+Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, Run application opens a specific document in Word in quiet mode:
+
+![screenshot of the run application action properties window](\media\system\run-application-example.png)
+
+Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+
+The **Print document** action prints a specified document and requires the file path. 
+
+Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
+
+
+## Getting started with scripting actions
+
+Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
+
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
+
+To declare variables in scripting actions and return results in Power Automate Desktop, use the following commands:
+
+- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate Desktop, use the **Write-Output** command.
+
+  ```
+  $variableName = "variableValue"
+  Write-Output $variableName
+  ```
+
+- Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
+
+  ```
+  variableName = "variableValue"
+  print variableName
+  ```
+
+- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate Desktop.
+
+  ```
+  variableName = "variableValue"
+  WScript.Echo variableName
+  ```
+
+- In JavaScript scripts, use the **var** notation to declare new variables and the **WScript.Echo** function to return values from [Run JavaScript](#runjavascript) actions. 
+
+    ```
+    var variableName = "variableValue";
+    WScript.Echo(variableName);
+    ```
+
+To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
+
+![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
+
+## System actions
+
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
 

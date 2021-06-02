@@ -1,37 +1,29 @@
 ---
-title: Security and privacy (preview) | Microsoft Docs
+title: Security and privacy | Microsoft Docs
 description: Security and privacy in process advisor.
-services: ''
-suite: flow
-documentationcenter: na
 author: nijemcevic 
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/14/2021
+ms.date: 5/25/2021
 ms.author: tatn
+ms.reviewer: v-aangie
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# Security and privacy (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Security and privacy
 
 ## Security
 
-Process advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. More information: [Power Platform security overview](/power-platform/admin/wp-security)
+Process advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. For more information, see [Power Platform security overview](/power-platform/admin/wp-security).
 
 Some privileges are set by default in Dataverse. This allows built-in security roles to use process advisor without further actions from system administrators. Specifically:
 
 - Environment makers can use process advisor to create and share processes.
+
 - Administrators and system customizers can access all processes created in the environment.
 
 These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create processes in process advisor if they have the following permissions:
@@ -41,8 +33,8 @@ These security roles have privileges to the process advisor tables in Dataverse.
 - User create, read, write, delete, append, append to, assign, and share permissions on the process table (Customization tab).
 - User create, read, write, delete, append, append to, assign, and share permissions on the PM inferred task, PM recording, and workflow binary tables (Custom tables tab).
 
->[IMPORTANT]
->The Process Mining Application User is an **internal security role** that process advisor uses. Do no assign this security role to users.
+> [IMPORTANT]
+> The Process Mining Application User is an **internal security role** that process advisor uses. Do no assign this security role to users.
 
 ## Privacy
 
@@ -52,12 +44,13 @@ While most of the information process recordings capture can be essential to the
 In Power Automate Desktop, users can:
 
 - Delete sensitive steps or modify input data information.
+
 - Pause and resume recording to avoid recording sensitive information and PII.
 
 After you import the recording into process advisor, you can still remove sensitive information by doing the following:
 
 - Rename step names and/or description.
-- Delete screenshots.
 
+- Delete screenshots.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
