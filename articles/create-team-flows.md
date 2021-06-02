@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2020
+ms.date: 05/14/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -192,5 +192,21 @@ If the shared flow still has an active owner, the flow will continue to run.
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
 
+### How can I change the owner of a solution flow?
+It is currently not possible to change the owner of a solution flow in the modern solution explorer. That capability will be added in the future.
+In the meantime, there is a workaround:
+
+1. Obtain the environment organization URL by selecting "Switch to classic" in the Solutions Explorer and copying the host name from the URL. This is an example: https://org123456.crm10.dynamics.com/.
+2. Open environment using organization URL
+3. Select **Settings** > **Advanced Settings**.
+4. Select **Advanced Find**.
+5. In the **Look for lookup**, select **Processes**.
+6. Select **Clear** to clear the existing filter.
+7. In the filter area, add a filter for Category Equals "Modern Flow"
+8. Select **Results** to see the list of flows that you own.
+9. Select the check box next to the desired flow and then select **Assign Processes**.
+10. Change **Assign to** to **User or team**.
+11. Use the **User or team** lookup to provide the new owner.
+12. Select **Assign**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
