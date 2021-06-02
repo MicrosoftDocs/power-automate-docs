@@ -44,7 +44,7 @@ For example, the following selector pinpoints the **File** menu option in an unt
 
 ![A selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: ****:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
+Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: **:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
 
 ![The updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
