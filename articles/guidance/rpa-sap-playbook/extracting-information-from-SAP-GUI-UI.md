@@ -19,13 +19,13 @@ ms.reviewer: deonhe
 
 # Extracting information from SAP GUI UI
 
-Creating or updating records in SAP will typically generate some sort of record status, that includes newly generated record Ids and display these in the lower part of the SAP UI.
+Creating or updating records in SAP will typically generate some sort of record status that includes newly generated record IDs and then display them in the lower part of the SAP UI.
 
-Here's a status messages after the creation of a new SAP PM Notification:
+Here's a status message after the creation of a new SAP PM Notification:
 
 ![Screenshot of SAP Notification Id that has been generated after saving a new record ](media/SAP-notification-id.png)
 
-This information might be useful for subsequent automation process steps, hence oftentimes needs to be extracted and assigned to variables for downstream data processing.
+This information might be useful for subsequent automation process steps, and therefore needs to be extracted and assigned to variables for downstream data processing.
 
 We have multiple ways to achieve this and depending on your development approach would include low-code or pro-code techniques.
 
@@ -33,7 +33,7 @@ We have multiple ways to achieve this and depending on your development approach
 
 The pro-code approach uses VBScript commands to extract information from SAP UI elements.
 
-Extracting status data such as a newly created Purchase requisition or Plant Maintenance Notification number for example requires access to the status bar UI element that can be accessed like this:
+Extracting status data, such as a newly created Purchase requisition or Plant Maintenance Notification number for example, requires access to the status bar UI element that can be accessed like this:
 
 session.findById("wnd\[0\]/sbar/pane\[0\]").Text
 
@@ -53,7 +53,7 @@ Please follow these steps:
 
 4.  Select **More.**
 
-5.  Under **Save To** specify or select the file path and filename where the captured user interactions should be stored.
+5.  Under **Save To**, specify or select the file path and filename where the captured user interactions should be stored.
 
 ![Screenshot of saving the recording file in the Record and Playback dialog box ](media/saving-recording-file-in-record-and-playback-dialog.png)
 
@@ -63,7 +63,7 @@ Please follow these steps:
 
 8.  Select or enter the **Notification type** and press **Enter**.
 
-9.  Enter a **Short Text**, **Planner Group**, **Main WorkCtr** and any other desired field.
+9.  Enter a **Short Text**, **Planner Group**, **Main WorkCtr**, and any other desired field.
 
 ![Screenshot of a completed SAP Notification record that is ready to be saved ](media/completed-SAP-notification-record.png)
 
@@ -71,7 +71,7 @@ Please follow these steps:
 
 11. Back in the **Create PM Notification** **initial** form, you'll notice a new status message in the status bar on the lower left part of the UI.
 
-![Screenshot of SAP Notification Id that has been generated after saving a new record ](media/SAP-notification-id-after-saving.png)
+![Screenshot of SAP Notification Id generated after saving a new record ](media/SAP-notification-id-after-saving.png)
 
 12. Select **Exit (Shift+F3)** in the upper toolbar and **stop the recording**.
 
@@ -123,11 +123,11 @@ Please follow these steps:
 
 8.  Next, we'll search for the **Replace text** action in the **Actions** pane and dragging it onto the design canvas.
 
-9.  In **Text to find** enter **Notification** and under **Replace with** a blank string which is expressed like this: **%''%**
+9.  In **Text to find**, enter **Notification** and under **Replace with**, enter a blank string which is expressed like this: **%''%**
 
 ![Screenshot that shows a Replace text action dialog with its parameters specified ](media/replace-text-action-with-parameters-specified.png)
 
-10. Add another **Replace text** action and rename the **Variables produced** to **%NotificationId%** , enter save as **Text to find** value and under **Replace with** a blank string which is expressed like this: **%''%**
+10. Add another **Replace text** action and rename the **Variables produced** to **%NotificationId%** , enter "save" as **Text to find** value, and under **Replace with** enter a blank string, which is expressed like this: **%''%**
 
 ![Screenshot that shows another Replace text action dialog with its parameters specified ](media/another-replace-text-action-dialog-with-parameters.png)
 

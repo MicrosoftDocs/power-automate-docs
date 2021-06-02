@@ -33,17 +33,17 @@ To build RPA solutions with Power Automate, you'll need one or more of the follo
 
 ## Software prerequisites
 
-Before you can use your device to create Desktop flows and Power Automate Desktop processes, you'll need to ensure it meets the requirements outlined in [Set up Desktop flows and Power Automate Desktop](https://docs.microsoft.com/power-automate/ui-flows/setup).
+Before you can use your device to create Desktop flows and Power Automate Desktop processes, you'll need to ensure it meets the requirements outlined in [Set up Desktop flows and Power Automate Desktop](../../ui-flows/setup).
 
 The following software components are required on Windows 10 Pro computers:
 
 -   [Download and install the latest version of .NET Framework ](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required).
 
--   [Download and install the latest version of Desktop flows](https://docs.microsoft.com/power-automate/ui-flows/setup#install-ui-flows-on-your-device), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions).
+-   [Download and install the latest version of Desktop flows](../../ui-flows/setup#install-ui-flows-on-your-device), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions).
 
 -   [Download and install](https://www.microsoft.com/edge/) the latest Microsoft Edge or Google Chrome browser.
 
--   [Download and install](https://docs.microsoft.com/power-automate/gateway-reference#use-a-gateway) the latest on-premises data gateway (make sure the data gateway region matches your environment's region).
+-   [Download and install](../../gateway-reference#use-a-gateway) the latest on-premises data gateway (make sure the data gateway region matches your environment's region).
 
 -   Download and install **SAP GUI for Windows** (ask your administrator for details).
 

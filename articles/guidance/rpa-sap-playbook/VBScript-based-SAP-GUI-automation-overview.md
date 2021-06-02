@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 The VBScript-based approach is well suited for RPA Center of Excellence (CoE) teams, because they typically consist of a mix of IT pros, pro-developers, security specialists, and business analysts whose charter is to create, maintain, secure, and scale enterprise automation solutions across the organization. These diverse skill sets enable them to pursue more complex SAP GUI automation techniques than citizen RPA developers use.
 
-One of these techniques involves VBScript to interact with the underlying [SAP GUI Scripting API](https://help.sap.com/viewer/b47d018c3b9b45e897faf66a6c0885a8/760.03/en-US/babdf65f4d0a4bd8b40f5ff132cb12fa.html). In fact, SAP includes its own proprietary SAP GUI automation engine that generates VBScript output based on user interactions captured during screen recording.
+One of these techniques involves VBScript to interact with the underlying [SAP GUI Scripting API](https://help.sap.com/viewer/b47d018c3b9b45e897faf66a6c0885a8/760.03/babdf65f4d0a4bd8b40f5ff132cb12fa.html). In fact, SAP includes its own proprietary SAP GUI automation engine that generates VBScript output based on user interactions captured during screen recording.
 
 Imagine if you could use the generated VBScript in a Power Automate Desktop action, and all you'd have to do is replace manually entered text captured during recording with dynamic inputs in Power Automate Desktop?
 

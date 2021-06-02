@@ -141,7 +141,7 @@ ms.reviewer: deonhe
 
 21. This is the dialog you should see once you've closed the previous dialog.
 
-![Screenshot of the Populate text field in window dialog box ](media/populate-text-field-in-window.png)
+![Screenshot of the Populate text field in window dialog box with GUI button selected ](media/populate-text-field-in-window.png)
 
 22. Open the **Text box** dropdown, select "**Gui Ok Field 'okcd**" and click **Select**.
 
@@ -153,15 +153,15 @@ ms.reviewer: deonhe
 
 24. On the right pane, select the **UI elements** icon. Select each individual control in the list and rename it. This is not mandatory, but highly recommended since your control library might include tens of control making it difficult to identify them by their system names.
 
-![Screenshot of the UI elements pane in the Power Automate Desktop Designer window with the Rename UI element menu item selected ](media/UI-elements-pane-in-PAD-designer-with-rename-UI-element.png)
+![Screenshot of the UI elements pane in the Power Automate Desktop Designer window with the Rename UI element menu item selected for GUI Main Window ](media/UI-elements-pane-in-PAD-designer-with-rename-UI-element.png)
 
 25. Here is the renamed control list.
 
-![Screenshot of all the UI elements renamed with meaningful names in the UI elements pane ](media/UI-elements-with-meaningful-names.png)
+![Screenshot of all the UI elements renamed with meaningful names for Maintain HR Master Data in the UI elements pane ](media/UI-elements-with-meaningful-names.png)
 
 26. Enter **press button** into the Action search box and drag the **Press button in window** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane ](media/PAD-designer-with-press-button-in-window.png)
+![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane below wait 10 seconds ](media/PAD-designer-with-press-button-in-window.png)
 
 27. Select the **Continue button** control.
 
@@ -169,7 +169,7 @@ ms.reviewer: deonhe
 
 28. Select **Save**.
 
-![Screenshot of Press button in Window dialog box ](media/press-button-in-window-dialog.png)
+![Screenshot of Press button in Window dialog box with Continue button selected and Save highlighted ](media/press-button-in-window-dialog.png)
 
 29. Enter **wait for** into the Action search box and drag the **Wait for window content** action onto the canvas.
 
@@ -185,7 +185,7 @@ ms.reviewer: deonhe
 
 32. Enter **populate** into the Action search box and drag the **Populate text field window** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Populate text field in Window being added from the Actions pane ](media/PAD-designer-with-populate-text-field-in-window.png)
+![Screenshot of Power Automate Desktop Designer window with Populate text field in Window being added from the Actions pane after Wait for window content ](media/PAD-designer-with-populate-text-field-in-window.png)
 
 33. Under **UI element** select the **Employee id** control and press **Select.**
 
@@ -209,7 +209,7 @@ ms.reviewer: deonhe
 
 37. Enter **press button** into the Action search box and drag the **Press button in window** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane ](media/PAD-designer-with-press-button-in-window-action.png)
+![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane after Effective Date ](media/PAD-designer-with-press-button-in-window-action.png)
 
 38. Under UI element select the **New address** button control and select **Save**.
 
@@ -221,7 +221,7 @@ ms.reviewer: deonhe
 
 40. Enter **wait for** into the Action search box and drag the **Wait for window content** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Wait for window content being added from the Actions pane ](media/PAD-designer-with-wait-for-window-content-action.png)
+![Screenshot of Power Automate Desktop Designer window with Wait for window content being added from the Actions pane after New address button ](media/PAD-designer-with-wait-for-window-content-action.png)
 
 41. Select **UI element** and then the **Add new UI element** button to bring up the **Tracking session** dialog.
 
@@ -309,7 +309,7 @@ ms.reviewer: deonhe
 
 57. Enter **send keys** into the Action search box and drag the **Click UI element in window** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Send keys being added from the Actions pane ](media/PAD-designer-with-send-keys-action.png)
+![Screenshot of Power Automate Desktop Designer window with Send keys being added added after Country ](media/PAD-designer-with-send-keys-action.png)
 
 58. In the **Text to send** field select the ***fx*** icon and then double-click **CountryCode.**
 
@@ -321,7 +321,7 @@ ms.reviewer: deonhe
 
 60. Drag another **Send keys** action onto the end of the flow.
 
-![Screenshot of Power Automate Desktop Designer window with Send keys being added from the Actions pane ](media/PAD-designer-with-second-send-keys-action.png)
+![Screenshot of Power Automate Desktop Designer window with Send keys being added ](media/PAD-designer-with-second-send-keys-action.png)
 
 61. Enter **{Enter}** into the **Text to send** field and select **Save**.
 
@@ -333,7 +333,7 @@ ms.reviewer: deonhe
 
 63. Under UI element select **Save button**.
 
-![Screenshot of Power Automate Desktop Designer window with Press button in Window dialog box open and the variables list open ](media/PAD-designer-with-press-button-in-window-action-with-variables.png)
+![Screenshot of Power Automate Desktop Designer window with Press button in Window dialog box open and the variables list open and Save button selected ](media/PAD-designer-with-press-button-in-window-action-with-variables.png)
 
 64. Select **Save**.
 
@@ -355,7 +355,7 @@ ms.reviewer: deonhe
 
 68. Enter **press button** into the Action search box and drag the **Press button in window** action onto the canvas.
 
-![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane ](media/PAD-designer-with-a-third-press-button-in-window-action.png)
+![Screenshot of Power Automate Desktop Designer window with Press button in Window being added from the Actions pane after Employee ID ](media/PAD-designer-with-a-third-press-button-in-window-action.png)
 
 69. Under **UI element**, select **Add new UI element** button.
 
@@ -391,7 +391,7 @@ ms.reviewer: deonhe
 
 77. Under **UI element** select **Window "SAP Easy Access"** and then **Save**.
 
-![Screenshot of Power Automate Desktop Designer window with Close Window dialog box open and the variables list open ](media/PAD-designer-with-close-window-and-variables.png)
+![Screenshot of Power Automate Desktop Designer window with Close Window dialog box open and the variables list open and Windows SAP Easy Access selected ](media/PAD-designer-with-close-window-and-variables.png)
 
 78. Enter **close window** into the Action search box and drag the **Close window** action onto the canvas.
 
@@ -407,7 +407,7 @@ ms.reviewer: deonhe
 
 81. Under **UI element** select **Window "SAP Logon 760"** (the number 760 reflect the SAP GUI version, so this might differ in your environment) and then **Save.**
 
-![Screenshot of Power Automate Desktop Designer window with Close Window dialog box open and the variables list open ](media/close-window-SAP-logon-760.png)
+![Screenshot of Power Automate Desktop Designer window with Close Window dialog box open and the variables list open and Window SAP Login 760 selected ](media/close-window-SAP-logon-760.png)
 
 82. Select **Save**.
 

@@ -41,15 +41,15 @@ Now, let's modularize our current flow by moving actions that carry out specific
 
 6.  Create another sub flow, name it **ProcessEmployeeAddressForm** and select **Save**.
 
-![Screenshot of Power Automate Desktop Designer window with Subflows area open  A new subflow is added and named ](media/PAD-designer-with-processemployeeaddress-subflow.png)
+![Screenshot of Power Automate Desktop Designer window with a new subflow named ProcessEmployeeAddressForm ](media/PAD-designer-with-processemployeeaddress-subflow.png)
 
 7.  Go back to the **Main** flow tab.
 
-8.  On the **Main** flow tab mark all actions below (row 4 – 14), the right click and select **Cut**.
+8.  On the **Main** flow tab mark all actions below (row 4 – 14), then right-click and select **Cut**.
 
-![Screenshot of Power Automate Desktop Designer window with rows 4 through 14 selected and then then right click menu open with Cut selected ](media/PAD-designer-with-rows-4-through-14-selected.png)
+![Screenshot of Power Automate Desktop Designer window with rows 4 through 14 selected and then then right-click menu open with Cut selected ](media/PAD-designer-with-rows-4-through-14-selected.png)
 
-9.  Go to sub flow tab **ProcessEmployeeAddressForm**, right click and select **Paste**.
+9.  Go to sub flow tab **ProcessEmployeeAddressForm**, right-click and select **Paste**.
 
 ![Screenshot of Power Automate Desktop Designer window with ProcessEmployeeAddressForm subflow open in the Subflows tab  before the copied rows are pasted in ](media/PAD-designer-with-processemployeeaddress-subflow-before-paste.png)
 
@@ -59,4 +59,4 @@ Now, let's modularize our current flow by moving actions that carry out specific
 
 11. Enter **run subflow** into the Action search box and drag the **Run subflow** action onto the canvas and select **ProcessEmployeeAddressForm** as **Call subflow** value and select **Save**.
 
-![Screenshot of Power Automate Desktop Designer window with Run subflow being added from the Actions pane ](media/PAD-designer-with-run-subflow-processemployeeaddress.png)
+![Screenshot of Power Automate Desktop Designer window with Run subflow being added from the Actions pane afte the ProcessHRMasterForm subflow ](media/PAD-designer-with-run-subflow-processemployeeaddress.png)

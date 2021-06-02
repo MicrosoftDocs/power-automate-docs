@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 ## Power Automate
 
-Let's start with the core platform service called Microsoft Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more on [docs.microsoft.com](https://docs.microsoft.com/power-automate/) and [Microsoft Learn](https://docs.microsoft.com/learn/paths/automate-process-power-automate/).
+Let's start with the core platform service called Microsoft Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more on [docs.microsoft.com](../../getting-started) and [Microsoft Learn](../../../learn/paths/automate-process-power-automate/).
 
 ![Screenshot of the Power Automate Portal Homepage ](media/power-automate-website.png)
 

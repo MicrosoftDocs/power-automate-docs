@@ -1,6 +1,6 @@
 ---
 title: Creating the cloud flow with the Power Automate portal | Microsoft Docs
-description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create a Power Automate cloud flow that calls our Power Automate Desktop flow using secure input parameters from the cloud.
+description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create the cloud flow that employees use to request an updated address. This cloud flow passes the input variables to the desktop flow you created in the previous section.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -91,7 +91,7 @@ We highly recommended that you create cloud flows, Desktop flows and other Micro
 
 16. Select the plus sign **(+)**, and then select **Add an action**.
 
-![Screenshot of adding an action under the trigger ](media/adding-an-action.png)
+![Screenshot of adding an action under the Manually trigger a flow trigger ](media/adding-an-action.png)
 
 17. Enter **scope** in the search bar and select Scope action.
 

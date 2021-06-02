@@ -23,7 +23,7 @@ As with many other technologies and techniques, there are pros and cons for each
 
 There will be occasions where combining both techniques will be highly beneficial, like adding a VBScript action with some Excel VBA code to support advanced formatting as part of your action-based automation.
 
-|  | VBScript | Actions |
+| Feature | VBScript | Actions |
 |-------------------------|-------------------------|-------------------------|
 | Citizen developer play |  | <ul></br><li></li></br></ul> |
 | IT pro and pro developer play | <ul></br><li></li></br></ul> | <ul></br><li></li></br></ul> |

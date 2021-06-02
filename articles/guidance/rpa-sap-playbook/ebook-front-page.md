@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 ![Microsoft logo](media/microsoft-logo.png)
 
-**RPA Playbook for SAP GUI Automation with Power Automate: Cloud flows, Desktop flows, and Power Automate Desktop**
+# RPA Playbook for SAP GUI Automation with Power Automate: Cloud flows, Desktop flows, and Power Automate Desktop
 
 **Summary**: This playbook includes prerequisites, patterns and best practices for SAP GUI based automation leveraging Power Automate and Power Automate Desktop.
 
