@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-<!-- check capitalization of power automate in line 24. -->
+<!-- check capitalization of power automate in line 24. start on line 82-->
 
 
 # Work with processes and recordings
@@ -61,17 +61,17 @@ Here's a short video on recording a process in process advisor: [Record a proces
 1. Select **Open recorder**.
 
     >[!NOTE]
-    >If you are not able to see the process in the dropdown, ensure that the process has been correctly shared with you.
+    >If you are not able to see the process in the dropdown list, ensure that the process has been correctly shared with you.
 
 ### Create a recording right after process creation
 
-After the process is created, a creation successful modal will be shown with a few options as next steps.
+After you create the process, you'll see a creation successful modal with a few options as next steps.
 
 - Select **Add a recording**.
 
 ### Create a recording from the process details screen
 
-1. From the **Process advisor** > **Processes** screen, select the process you want to record for from the list view.
+1. From the **Process advisor** > **Processes** screen, select the process you want to record from the list view.
 
 1. Select the name of the process to go to the process details screen.
 
