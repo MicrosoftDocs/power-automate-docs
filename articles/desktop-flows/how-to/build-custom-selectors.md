@@ -44,7 +44,7 @@ For example, the following selector pinpoints the **File** menu option in an unt
 
 ![A selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **name** attribute of the selector to **Notes - Notepad**. The new selector should be: **window[Name="Notes- Notepad"][Process="notepad"]**
+Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: ****:desktop > window[Name="Notes - Notepad"][Process="notepad"]**
 
 ![The updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
@@ -59,8 +59,20 @@ In the previous example, the selector located a Notepad window with a specific t
 
 The **Equals to** operator makes the selector search for a specific hard-coded value. Although this functionality is effective in static applications, hard-coded values can be a barrier in dynamic applications.
 
-You can use the **Contains** operator to locate elements that don't have fixed values but always contain a specific keyword. For example, you can apply the **Contains** operator in the Notepad selector to make it with every Notepad window.
+You can use the **Contains** operator to locate elements that don't have fixed values but always contain a specific keyword. For example, you can apply the **Contains** operator in the Notepad selector to make it work with all Notepad windows.
 
 ![The Contains operator in the Notepad selector.](media/build-custom-selectors/contains-operator-notepad-selector.png)
 
 ## Use variables in a custom selector
+
+Apart from various operators, Power Automate Desktop enables you to create dynamic selectors using variables.
+
+If the value of a selector's attribute depends on calculations and results of previous actions, you can replace the hard-coded value with a variable.
+
+To use a variable in a selector, populate its name in the appropriate attribute enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](https://review.docs.microsoft.com/power-automate/desktop-flows/variable-manipulation?branch=pad-how-to-phase1).
+
+If you use a variable in the **Name** attribute of the Notepad example, the selector will be **:desktop > window[Name="%WindowName%"][Process="notepad"]**.
+
+![A variable in the Notepad selector .](media/build-custom-selectors/variable-notepad-selector.png)
+
+
