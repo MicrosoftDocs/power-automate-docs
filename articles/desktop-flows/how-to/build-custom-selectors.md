@@ -44,7 +44,7 @@ For example, the following selector pinpoints the **File** menu option in an unt
 
 ![A selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: ****:desktop > window[Name="Notes - Notepad"][Process="notepad"]**
+Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: ****:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
 
 ![The updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
@@ -71,7 +71,7 @@ If the value of a selector's attribute depends on calculations and results of pr
 
 To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](../variable-manipulation.md).
 
-If you use a variable in the **Name** attribute of the Notepad example, the selector will be **:desktop > window[Name="%WindowName%"][Process="notepad"]**.
+If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="notepad"]**.
 
 ![A variable in the Notepad selector .](media/build-custom-selectors/variable-notepad-selector.png)
 
