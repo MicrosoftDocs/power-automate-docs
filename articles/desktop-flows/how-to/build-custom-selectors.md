@@ -1,6 +1,6 @@
 ---
-title: Build custom selectors | Microsoft Docs
-description: Build custom selectors
+title: Build a custom selector | Microsoft Docs
+description: Build a custom selector
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,4 +14,8 @@ search.audienceType:
   - enduser
 ---
 
-# Build custom selectors
+# Build a custom selector
+
+## Use operators in a custom selector
+
+## Use variables in a custom selector

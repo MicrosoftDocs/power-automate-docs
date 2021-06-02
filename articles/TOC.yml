@@ -395,10 +395,8 @@
       href: ./desktop-flows/desktop-automation.md
   - name: How to
     items:
-    - name: Build custom selectors
-      items:
-      - name: Build custom selectors
-        href: ./desktop-flows/how-to/build-custom-selectors.md
+    - name: Build a custom selector
+      href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
