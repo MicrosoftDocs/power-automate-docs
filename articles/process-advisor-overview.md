@@ -17,7 +17,7 @@ search.audienceType:
 
 # Overview of process advisor
 
-Process advisor quickly captures detailed steps for each process in your organization to help you to better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
+Process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
 Process advisor helps you to:
 
@@ -46,9 +46,9 @@ For complete licensing details, see the [Microsoft Power Apps and Power Automate
 
 Before you start using process advisor, make sure you have the following prerequisites:
 
-- A Microsoft Power Platform environment with Microsoft Dataverse database.
-  - For information about how to create environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
-  - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
+- A Microsoft Power Platform environment with a Microsoft Dataverse database.
+  - For information about how to create an environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+  - For information about how to add a database to an environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
 - [Power Automate Desktop](/ui-flows/desktop/introduction).
 
