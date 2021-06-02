@@ -86,7 +86,7 @@ After you create the process, you'll see a creation successful modal with a few 
     > [!NOTE]
     > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app** to install it.
 
-1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser popup window. Select it to open the app.
+1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser pop-up window. Select it to open the app.
 
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
@@ -99,7 +99,7 @@ After you create the process, you'll see a creation successful modal with a few 
 
 1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder screen.
 
-1. Once the recording has saved successfully select **Got it** to close the message.
+1. Once the recording has saved successfully, select **Got it** to close the message.
 
 1. Return to the web portal in your browser, and select **View recording**.
 
@@ -111,7 +111,7 @@ After you create the process, you'll see a creation successful modal with a few 
 
 ### Recorder features
 
-- As you record your actions, the action descriptions will be listed in the recorder screen. You can select the trashcan icon to delete any action from your recording.
+- As you record your actions, the action descriptions will be listed in the recorder screen. You can select the trash can icon to delete any action from your recording.
 - Select **Pause recording** at any time during the recording.
 - Select **Start recording again** to continue recording from where you left off.
 - Select **Reset recording** to erase all the recorded actions and start over.
