@@ -14,6 +14,9 @@ search.audienceType:
   - enduser
 ---
 
+<!-- check capitalization of power automate in line 24. -->
+
+
 # Work with processes and recordings
 
 Before you can use process advisor to visualize and analyze your processes, you need to:
@@ -21,7 +24,7 @@ Before you can use process advisor to visualize and analyze your processes, you 
 - [Create your process](#create-a-process) in process advisor.
 - [Record the activities](#record-your-process) that make up the process using the power automate desktop recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
-- (Optional) [Manage activity names](#manage-activity-names) to make is easier for you and others to prepare the recording for analysis.
+- (Optional) [Manage activity names](#manage-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
 ## Create a process
 
