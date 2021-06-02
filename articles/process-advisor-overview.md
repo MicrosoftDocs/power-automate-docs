@@ -15,6 +15,9 @@ search.audienceType:
   - enduser
 ---
 
+<!-- The final link (Power Automate Desktop) doesn't work. Could this be the right link? https://docs.microsoft.com/power-automate/desktop-flows/introduction -->
+
+
 # Overview of process advisor
 
 Process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
