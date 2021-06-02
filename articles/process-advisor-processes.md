@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-<!-- check capitalization of power automate in line 24. start on line 82-->
+<!-- check capitalization of power automate in line 24. review line 157 -->
 
 
 # Work with processes and recordings
@@ -126,7 +126,7 @@ After you create the process, you'll see a creation successful modal with a few 
 Once the recording has completed, you can view the recorded actions in the recording details screen. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
 
 - The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
-- Remove any sensitive information from the recording. For more information, see [Protect your data in process advisor](process-advisor-protect.md).
+- Remove any sensitive information from the recording. For more information, go to [Protect your data in process advisor](process-advisor-protect.md).
 
 Here's a short video on how to prepare a recording for analysis using process advisor: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
 
@@ -153,7 +153,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 
 ### Grouping tips
 
-- As much as possible use an existing activity name. This creates a more consistent and accurate process map.
+- As much as possible, use an existing activity name. This creates a more consistent and accurate process map.
 - Activity names will be available in the dropdown list whenever a recording is saved. To remove activity names from the dropdown list after it was removed from all recordings that used that activity name, you need to analyze the recording.
 
 ### Manage activity names
@@ -166,6 +166,6 @@ As a process owner or co-owner, you can create recommended activity names for a 
 
 1. Select **Save** when you're done.
 
-The activity names you added will now show up under **Recommended names** in activity name dropdown when grouping actions for a recording. Any activities that aren't defined in the recommended list will show up under **Custom names**.
+The activity names you added will now show up under **Recommended names** in the activity name dropdown list when grouping actions for a recording. Any activities that aren't defined in the recommended list will show up under **Custom names**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
