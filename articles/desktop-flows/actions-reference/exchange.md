@@ -27,6 +27,20 @@ Automate sending, receiving, and managing emails through Exchange
 |[Send Exchange email message](#sendmessage)|
 |[Process Exchange email messages](#processexchangemessages)|
 
+## Getting started with Exchange actions
+
+Exchange actions require a connection to an Exchange server. Establish the connection by using the **Connect to Exchange server** action. In the following figure, the exchange server address has been entered manually, rather than using auto discovery. The credetials are set to user defined, so the domain, username and password are entered manually as well. In the **Advanced** section, a timeout has been set. This allows the action to return an error if a connection hasn't been established within the specified time frame.
+
+![Connect to exchange server action properties screenshot](\media\exchange\connect-to-exchange-server-example.png)
+
+To retrieve emails from the exchange server, use the **Retrieve Exchange email messages** action. In the figure below, the action has been set to retrieve email messages from a custom folder, Receipts. In the filters, the from, subject and body fields have been set to contain values of variables which have been previously defined in the flow. Attachments from resulting email messages will also be saved to the specified folder.
+
+![Retrieve exchange emails action properties screenshot](\media\exchange\retrieve-exchange-emails-example.png)
+
+The **Process Exchange email messages** action processes email messages retrieved by the **Retrieve Exchange email messages** action. The required input is the Exchange connection and the retrieved emails variable. Use this action to move, delete or mark email messages as read.
+
+## Exchange actions
+
 ### <a name="connecttoexchangeserver"></a> Connect to Exchange server
 Open a new connection to an Exchange server
 
