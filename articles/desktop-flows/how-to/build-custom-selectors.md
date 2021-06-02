@@ -50,4 +50,17 @@ Now, assume that you want to edit the selector to work with a Notepad window nam
 
 ## Use operators in a custom selector
 
+In the previous example, the selector located a Notepad window with a specific title. To make the selector more dynamic, you can replace the **Equals to** operator with other operators or regular expressions.
+
+> [!Note]
+> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+![All the available selector operators.](media/build-custom-selectors/selector-operators.png)
+
+The **Equals to** operator makes the selector search for a specific hard-coded value. Although this functionality is effective in static applications, hard-coded values can be a barrier in dynamic applications.
+
+You can use the **Contains** operator to locate elements that don't have fixed values but always contain a specific keyword. For example, you can apply the **Contains** operator in the Notepad selector to make it with every Notepad window.
+
+![The Contains operator in the Notepad selector.](media/build-custom-selectors/contains-operator-notepad-selector.png)
+
 ## Use variables in a custom selector
