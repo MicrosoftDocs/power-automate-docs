@@ -23,7 +23,7 @@ To specify a UI element, you have to create selectors that pinpoint the specific
 > [!NOTE]
 > Power Automate Desktop supports the creation of multiple selectors for a UI element. If a selector fails to access the element, the following selector is used.
 
-Although Power Automate Desktop enables you to create selectors automatically, some particular scenarios need manually created selectors. A pretty common scenario is the automation of applications that display dynamic content.
+Although Power Automate Desktop enables you to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
 
 When a custom selector is needed, you can modify an existing selector or build one from scratch.
 
@@ -44,7 +44,7 @@ For example, the following selector pinpoints the **File** menu option in an unt
 
 ![A selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this, change the **name** attribute of the selector to **Notes - Notepad**. The new selector should be: **window[Name="Notes- Notepad"][Process="notepad"]**
+Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **name** attribute of the selector to **Notes - Notepad**. The new selector should be: **window[Name="Notes- Notepad"][Process="notepad"]**
 
 ![The updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
