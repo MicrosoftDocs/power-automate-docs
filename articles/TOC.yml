@@ -401,7 +401,7 @@
       items:
       - name: Automate a shared Outlook mailbox
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
-      - name: Embed images to email body
+      - name: Add images to email messages
         href: ./desktop-flows/how-to/embed-images-email.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md

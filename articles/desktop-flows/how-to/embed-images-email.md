@@ -1,6 +1,6 @@
 ---
-title: Embed images to email body | Microsoft Docs
-description: Embed images to email body
+title: Add images to email messages | Microsoft Docs
+description: Add images to email messages
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Embed images to email body
+# Add images to email messages
 
 Power Automate Desktop enables users to include images in their emails by attaching them or embedding them to the email body.
 
