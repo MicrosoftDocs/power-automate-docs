@@ -61,4 +61,4 @@ To calculate the right and bottom points of the window, you can use the followin
 - **%List[1] + List[3]%** - The bottom point of the window
 
 > [!NOTE]
-> You can find more information about lists and the VariableName[ItemNumber] notaion in [Variable datatypes](../variable-data-types.md).
+> You can find more information about lists and the **VariableName\[ItemNumber\]** notaion in [Variable datatypes](../variable-data-types.md).
