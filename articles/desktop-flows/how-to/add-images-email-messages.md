@@ -24,7 +24,7 @@ To attach images to an email, use the **Attachment(s)** field in the **Send emai
 
 You can populate the **Attachment(s)** field with file paths or a variable containing files. To populate multiple file paths, enclose them in double quotes (**""**) and separate them by a space character.
 
-![Two example paths in the Attachment(s) field of the Send email action.](media/embed-images-email/attach-images-email.png)
+![Two example paths in the Attachment(s) field of the Send email action.](media/add-images-email-messages/attach-images-email.png)
 
 ## Embed images to email messages
 
@@ -43,4 +43,4 @@ To embed an image, check the **Body is HTML** option in the appropriate email ac
 </body>
  ```
 
- ![The populated HTML code in the Send email action.](media/embed-images-email/emded-images-email.png)
+ ![The populated HTML code in the Send email action.](media/add-images-email-messages/emded-images-email.png)

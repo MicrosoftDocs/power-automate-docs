@@ -395,14 +395,14 @@
       href: ./desktop-flows/desktop-automation.md
   - name: How to
     items:
-    - name: Build a custom selector
-      href: ./desktop-flows/how-to/build-custom-selectors.md
     - name: Automate webmail, Outlook and Exchange
       items:
+      - name: Add images to email messages
+        href: ./desktop-flows/how-to/add-images-email-messages.md      
       - name: Automate a shared Outlook mailbox
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
-      - name: Add images to email messages
-        href: ./desktop-flows/how-to/add-images-email-messages.md
+    - name: Build a custom selector
+      href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
