@@ -24,6 +24,15 @@ To retrieve the handle of a window, launch the application with the **Run applic
 
 ![The WindowHandle variable in the Run application action.](media/identify-window-handle/run-application-action-handle.png)
 
+Alternatively, you can use the **Get details of a UI element in window** action to retrieve the handle from an already open window. 
+
+Select to retrieve the attribute **parentwindowhandle** from a random element within the window. The retrieved attribute is stored by default in a variable named **AttributeValue**.
+
+![The AttributeValue variable in the Get details of a UI element in window action.](media/identify-window-handle/get-details-ui-element-action.png)
+
+> [!NOTE]
+> The **Get details of a UI element in window** action requires a UI element that specifies the selected element in the window. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).
+
 You can use handles to manipulate windows through the following Windows actions of the UI automation group:
 - Focus window
 - Set window state
