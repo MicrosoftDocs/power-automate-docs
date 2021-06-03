@@ -397,6 +397,12 @@
     items:
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
+    - name: Automate webmail, Outlook and Exchange
+      items:
+      - name: Automate a shared Outlook mailbox
+        href: ./desktop-flows/how-to/outlook-shared-mailbox.md
+      - name: Embed images to email body
+        href: ./desktop-flows/how-to/embed-images-email.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
