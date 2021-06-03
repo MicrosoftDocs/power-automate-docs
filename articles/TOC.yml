@@ -328,7 +328,7 @@
     href: ./desktop-flows/introduction.md
   - name: Setup Power Automate Desktop
     items:
-    - name: Power Automate Desktop prerequisites  
+    - name: Power Automate Desktop prerequisites & limitations 
       href: ./desktop-flows/setup.md
     - name: Install Power Automate Desktop
       href: ./desktop-flows/install.md

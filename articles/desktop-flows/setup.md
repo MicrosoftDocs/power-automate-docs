@@ -1,6 +1,6 @@
 ---
-title: Power Automate Desktop  Prerequisites & Limitations | Microsoft Docs
-description: Power Automate Desktop  Prerequisites & Limitations
+title: Power Automate Desktop prerequisites & limitations | Microsoft Docs
+description: Power Automate Desktop prerequisites & limitations
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate Desktop  Prerequisites & Limitations
+# Power Automate Desktop prerequisites & limitations
 
 ## Prerequisites
 
