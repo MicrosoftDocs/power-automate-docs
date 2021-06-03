@@ -402,7 +402,7 @@
       - name: Automate a shared Outlook mailbox
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
       - name: Add images to email messages
-        href: ./desktop-flows/how-to/embed-images-email.md
+        href: ./desktop-flows/how-to/add-images-email-messages.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
