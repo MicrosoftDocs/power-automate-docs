@@ -22,7 +22,7 @@ We'll continue to add issues here. If you're experiencing an issue not mentioned
 
 If you can't see process advisor in Power Automate, receive error messages, or if you can’t access the home page, verify that:
 
-- You have a Power Automate License.
+- You have a Power Automate license.
 
    If you don’t have a license, you can activate your trial license from **Desktop flows** in Power Automate.
 - You have access to the Power Automate environment and the permissions required by process advisor described in the [Security](process-advisor-security.md) section.
