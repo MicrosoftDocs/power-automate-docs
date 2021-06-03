@@ -30,6 +30,20 @@ Automate sending, receiving, and managing emails of an Outlook account
 |[Respond to Outlook mail message](#respondtomailmessage)|
 |[Close Outlook](#close)|
 
+## Getting started with Outlook actions
+
+After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. In the figure below, the action retrieves all the email messages from the folder **Tickets** which is in a subfolder of the Inbox. The filters have been configured to search for email messages from a specific address, further specifying the contents of the subject with a previously defined variable. Any attachments are also saved.
+
+![Retrieve outlook emails action properties screenshot](\media\outlook\retrieve-messages-example.png)
+
+The **Process email messages in Outlook** action processes email messages retrieved by the **Retrieve email messages from Outlook** action. The Outlook instance, account, and retrieved emails variable are required to use this action. Select whether to Move, delete or mark as read as the operation to perform.
+
+Store Outlook email messages locally by using the **Save Outlook email messages** action. Specify the Outlook instance, account, and messages to save via variables, as well as the format and location to save in.
+
+To close the instance of Outlook opened with Power Automate Desktop, use the **Close Outlook** action. 
+
+## Outlook actions
+
 ### <a name="launch"></a> Launch Outlook
 Launch Outlook and create a new Outlook instance
 
