@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-<!-- check capitalization of power automate in line 24. review line 157 -->
+<!-- In line 157, should it be "To remove an activity name ..."?  Also, I recommend removing the image in line 94: The illustration on the left doesn't add anything, and the tips on the right repeat what we just read. Also, it says if the app doesn't open, get the app. How can you try to open the app if you don't have it? -->
 
 
 # Work with processes and recordings
@@ -22,7 +22,7 @@ search.audienceType:
 Before you can use process advisor to visualize and analyze your processes, you need to:
 
 - [Create your process](#create-a-process) in process advisor.
-- [Record the activities](#record-your-process) that make up the process using the power automate desktop recorder.
+- [Record the activities](#record-your-process) that make up the process using the Power Automate Desktop recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
 - (Optional) [Manage activity names](#manage-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
@@ -97,15 +97,15 @@ After you create the process, you'll see a creation successful modal with a few 
 
 1. On the Desktop recorder screen, select **Record**.
 
-1. Perform the actions that you want to record, and then select **Finish** on the bottom of the recorder screen.
-
-1. Once the recording has saved successfully, select **Got it** to close the message.
-
-1. Return to the web portal in your browser, and select **View recording**.
+1. Perform the actions that you want to record, and then select **Finish** at the bottom of the recorder screen.
 
    > [!div class="mx-imgBorder"]
    > ![Record actions in Power Automate Desktop](./media/desktop-recorder.png)
 
+1. Once the recording has saved successfully, select **Got it** to close the message.
+
+1. Return to the web portal in your browser, and select **View recording**.
+   
    > [!NOTE]
    > Depending on the length of the recording, it may take some time before the actions will be available.
 
@@ -134,7 +134,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 
 1. Select **Add activity** to add an activity header. All actions under the activity header and before the next activity header are considered part of the group.
 
-1. Move the activity header up and down the actions list to where you want the activity to start.
+1. Move the activity header up or down the actions list to where you want the activity to start.
 
 1. Name your activity on the right side of the screen. Use the dropdown menu to find activity names that already exist for the process or create your own.
 
