@@ -401,6 +401,10 @@
         href: ./desktop-flows/how-to/add-images-email-messages.md      
       - name: Automate a shared Outlook mailbox
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
+    - name: Automate Windows and desktop applications
+      items:
+      - name: Identify a window by its handle
+        href: ./desktop-flows/how-to/identify-window-handle.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
