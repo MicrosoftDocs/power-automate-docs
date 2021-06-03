@@ -409,6 +409,8 @@
         href: ./desktop-flows/how-to/close-window-process-id.md 
       - name: Extract attributes from window elements
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
+      - name: Get location and size of a window
+        href: ./desktop-flows/how-to/get-location-size-window.md 
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
