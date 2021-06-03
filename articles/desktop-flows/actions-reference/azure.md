@@ -16,8 +16,6 @@ search.audienceType:
 
 # Azure
 
-
-
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
 
 |<!-- --> |

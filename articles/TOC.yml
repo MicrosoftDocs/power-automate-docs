@@ -326,8 +326,14 @@
   items: 
   - name: Introduction to Power Automate Desktop
     href: ./desktop-flows/introduction.md
-  - name: Set up Power Automate Desktop
-    href: ./desktop-flows/setup.md
+  - name: Setup Power Automate Desktop
+    items:
+    - name: Power Automate Desktop prerequisites & limitations 
+      href: ./desktop-flows/setup.md
+    - name: Install Power Automate Desktop
+      href: ./desktop-flows/install.md
+    - name: Governance in Power Automate Desktop
+      href: ./desktop-flows/governance.md     
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
   - name: Getting started with a Microsoft account
