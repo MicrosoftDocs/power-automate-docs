@@ -405,6 +405,8 @@
       items:
       - name: Identify a window by its handle
         href: ./desktop-flows/how-to/identify-window-handle.md   
+      - name: Close any window through its process ID
+        href: ./desktop-flows/how-to/close-window-process-id.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
