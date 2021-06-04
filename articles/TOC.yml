@@ -417,6 +417,8 @@
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
       - name: Get coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
+      - name:  Click several links on a web page
+        href: ./desktop-flows/how-to/click-several-links-web-page.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
