@@ -19,7 +19,7 @@ search.audienceType:
 
 When you automate windows and desktop applications, you may need to know the exact location and size of a window. 
 
-To retrieve this information, use the **Get details of window** action and set the **Windows property** option to **Get window location and size**. The action stores the retrieved values in a text variable named **WindowProperty**.
+To retrieve this information, use the **Get details of window** action and set the **Window property** option to **Get window location and size**. The action stores the retrieved values in a text variable named **WindowProperty**.
 
 > [!NOTE]
 > The **Get details of window** action requires a UI element that specifies the window from which it will retrieve the selected attrubite. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).

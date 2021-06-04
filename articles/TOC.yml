@@ -411,6 +411,10 @@
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
       - name: Get location and size of a window
         href: ./desktop-flows/how-to/get-location-size-window.md 
+    - name: Automate web applications and web pages
+      items:
+      - name: Get coordinates and size of a web element
+        href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
   - name: Desktop actions reference
