@@ -18,7 +18,7 @@ search.audienceType:
 
 When you automate web applications and web pages, you may need to know the exact location and size of a specific element. 
 
-To retrieve this information, create a browser instance and use the **Get details of element on web page** action and set the **Attribute name** option to **waelementrectangle**. The action stores the retrieved values in a text variable named **AttributeValue**.
+To retrieve this information, create a browser instance and deploy the **Get details of element on web page** action. In the action's properties, set the **Attribute name** option to **waelementrectangle**. The action stores the retrieved values in a text variable named **AttributeValue**.
 
 > [!NOTE]
 > The **Get details of element on web page** action requires a UI element that specifies the web element from which it will retrieve the selected attrubite. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).
