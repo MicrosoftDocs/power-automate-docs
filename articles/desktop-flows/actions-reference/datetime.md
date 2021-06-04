@@ -26,6 +26,18 @@ Get the date and time and perform time related functions
 |[Subtract dates](#subtract)|
 |[Get current date and time](#getcurrentdatetime)|
 
+## Getting started with datetime actions
+
+The **Get current date and time** action will store the current date and time (or date only, if selected) in a datetime type variable. The date will be formatted with the format currently selected in Windows.
+
+Add any amount of a specified unit of time to a date with the **Add to datetime** action.
+
+To find the difference between two dates, use the **Subtract dates** action. The difference can be returned in seconds, minutes, hours or days.
+
+![screenshot of subtract dates action properties](\media\datetime\subtract-dates.png)
+
+## Datetime actions
+
 ### <a name="add"></a> Add to datetime
 Adds (or subtracts) a specific number of seconds, minutes, hours or days to a datetime value
 
