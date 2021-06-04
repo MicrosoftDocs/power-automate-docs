@@ -413,6 +413,8 @@
         href: ./desktop-flows/how-to/get-location-size-window.md 
     - name: Automate web applications and web pages
       items:
+      - name: Deal with links that open new tabs
+        href: ./desktop-flows/how-to/links-open-new-tabs.md 
       - name: Get coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
     - name: Build a custom selector
