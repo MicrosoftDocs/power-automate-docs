@@ -26,7 +26,7 @@ Some privileges are set by default in Dataverse. This allows built-in security r
 
 - Administrators and system customizers can access all processes created in the environment.
 
-These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create process in process advisor if they have the following permissions:
+These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create a process in process advisor if they have the following permissions:
 
 - Organization read permission on the User and User Settings tables (Business Management tab).
 
@@ -40,7 +40,7 @@ These security roles have privileges to the process advisor tables in Dataverse.
 
 Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users are invited to contribute to a process by adding recordings. They use Power Automate Desktop to record processes that are then saved in process advisor. Owners and contributors may be able to see some data from the process and its recordings
 
-While most of the information captured in process recordings can be essential to the understanding of the process activities, some steps may contain sensitive information. However, you can modify and delete any Personal Identifiable Information (PII) or any sensitive data in your recordings. In Power Automate Desktop, users can:
+While most of the information captured in process recordings can be essential to the understanding of the process activities, some steps may contain sensitive information. However, you can modify and delete any personally identifiable information (PII) or any sensitive data in your recordings. In Power Automate Desktop, users can:
 
 - Delete sensitive steps or modify input data information.
 
@@ -48,7 +48,7 @@ While most of the information captured in process recordings can be essential to
 
 Once the recording is imported into process advisor, you can still remove sensitive information by doing the following:
 
-- Rename step names and/or description.
+- Rename step names or descriptions.
 
 - Delete screenshots.
 
