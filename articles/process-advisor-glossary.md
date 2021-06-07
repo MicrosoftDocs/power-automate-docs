@@ -22,7 +22,7 @@ search.audienceType:
 
 **Process map**&mdash;Visualizes the actual flow of your process based on the imported user or system data.
 
-**Process mining**&mdash;Visualization and analysis of processes based on event logs. Event logs are information stored in information systems. For example, in CRM (Customer Relationship Management), you can find event logs on orders, start and completions of an activity, resources used, and more.
+**Process mining**&mdash;Visualization and analysis of processes based on event logs. Event logs are information stored in information systems. For example, in CRM (Customer Relationship Management), you can find event logs on orders, start and completion of an activity, resources used, and more.
 
 **Recording**&mdash;A recorded sequence of activities that users perform on their desktop. Usually, multiple recordings are analyzed together to get insights into different variants of the same task.
 
