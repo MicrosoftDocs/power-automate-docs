@@ -96,6 +96,7 @@ To share, select edit next to the **Run only users** tile and then specify the u
 ### Format the button on the Power BI report
 Optionally, if you want to change the button text, font color, font size, or fill color of the button, you can find these options along with other settings in the **Format** pane. 
 
+![Screenshot of Format pane in Power BI](media/power-bi-flow/power-bi-flow-format.png)
 
 ## Known limitations 
 
