@@ -40,21 +40,21 @@ Connect to an Active Directory server and perform operations
 
 ## Getting started with Active Directory actions
 
-Active Directory actions require a connection to an Active Directory server. Establish the connection by using the Connect to server action, which requires the LDAP path to specify the domain controllers. The LDAP Path field should specify the domain controllers and have the following format:  
+Active Directory actions require a connection to an Active Directory server. Establish the connection by using the Connect to server action, which requires the LDAP path to specify the domain controllers. The LDAP Path field should specify the domain controllers and have the following format:
   
-        LDAP://DC=contoso,DC=demo
+    LDAP://DC=contoso,DC=demo
 
 When working with groups, objects or users, their location will be required. The Location field should specify the container as well as the domain controllers and have the following format:  
 
-        CN=Users,DC=contoso,DC=demo
+    CN=Users,DC=contoso,DC=demo
 
 After getting all the distinguished names using the **dsquery user** command, enter the distinguished name in the following format (nvarga being the username):  
 
-        CN=nvarga,CN=Users,DC=contoso,DC=demo
+    CN=nvarga,CN=Users,DC=contoso,DC=demo
 
 Note that if the container name contains a comma, the name should be contained within double quotes. e.g.: **CN=Varga, Norbert** should be formatted like so:  
   
-        CN="Varga, Norbert",DC=contoso,DC=com
+    CN="Varga, Norbert",DC=contoso,DC=com
 
 
 ## Active Directory actions

@@ -26,27 +26,29 @@ Some privileges are set by default in Dataverse. This allows built-in security r
 
 - Administrators and system customizers can access all processes created in the environment.
 
-These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create a process in process advisor if they have the following permissions:
 
-- Organization read permission on the User and User Settings tables (Business Management tab).
+These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create processes in process advisor if they have the following permissions:
 
-- Organization read permission on the Entity, Field, and Relationship tables (Customization tab).
+- Organization read permission on the organization, user, and user settings tables (Business management tab).
+- Organization read permission on the table, field, and relationship tables (Customization tab).
+- User create, read, write, delete, append, append to, assign, and share permissions on the process table (Customization tab).
+- User create, read, write, delete, append, append to, assign, and share permissions on the PM inferred task, PM recording, and workflow binary tables (Custom tables tab).
 
-- User permissions to create, read, write, delete, append, append to, assign, and share on the Process table (Customization tab).
-
-- User permissions to create, read, write, delete, append, append to, assign, and share on the PM Inferred Task, PM Recording, and Workflow Binary tables (Custom Entities tab).
+> [IMPORTANT]
+> The Process Mining Application User is an **internal security role** that process advisor uses. Do no assign this security role to users.
 
 ## Privacy
 
-Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users are invited to contribute to a process by adding recordings. They use Power Automate Desktop to record processes that are then saved in process advisor. Owners and contributors may be able to see some data from the process and its recordings
+Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users can add recordings to a process. They can then use Power Automate Desktop to record processes and then import the processes into process advisor. Owners and contributors can see some data from the process and its recordings.
+While most of the information process recordings capture can be essential to the understanding of the process activities, some steps may contain sensitive information. However, you can modify and delete any Personal Identifiable Information (PII) or any sensitive data in your recordings.
 
-While most of the information captured in process recordings can be essential to the understanding of the process activities, some steps may contain sensitive information. However, you can modify and delete any personally identifiable information (PII) or any sensitive data in your recordings. In Power Automate Desktop, users can:
+In Power Automate Desktop, users can:
 
 - Delete sensitive steps or modify input data information.
 
 - Pause and resume recording to avoid recording sensitive information and PII.
 
-Once the recording is imported into process advisor, you can still remove sensitive information by doing the following:
+After you import the recording into process advisor, you can still remove sensitive information by doing the following:
 
 - Rename step names or descriptions.
 
