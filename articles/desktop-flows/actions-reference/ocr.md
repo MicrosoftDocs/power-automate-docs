@@ -30,7 +30,7 @@ Initiate OCR engines to perform OCR related activities
 Create a Tesseract OCR engine
 
 > [!NOTE]
-> The MODI OCR engine and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
+> The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -67,7 +67,7 @@ This OCR engine initialization method provides the same configuration options as
 Create a MODI OCR engine
 
 > [!NOTE]
-> The MODI OCR engine and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
+> The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
