@@ -106,13 +106,13 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Download [Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) onto the machine that will run the automation then follow the installation wizard.
 
-1. Follow the steps in the [detailed guide to install Power Automate Desktop](https://docs.microsoft.com/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) onto your device.
+1. Follow the steps in the [detailed guide to install Power Automate Desktop](install.md#install-power-automate-desktop) onto your device.
 
 1. Change the machine settings from Power Automate Desktop to the environment to which  you will install the solution.
 
     ![](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
-1. [Log in](http://powerautomate.microsoft.com/manage/flows) and confirm you can create a test cloud flow with a manual trigger.
+1. [Log in](https://powerautomate.microsoft.com/manage/flows) and confirm you can create a test cloud flow with a manual trigger.
 
     ![](./media/dynamics365-cs-rpa/07e8395e96421fad5c15c3634fe5ec6b.png)
 
@@ -221,11 +221,11 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
 
-1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](https://docs.microsoft.com/power-automate/desktop-flows/link-pad-flow-portal) on how to use desktop flow in cloud flow.
+1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](link-pad-flow-portal.md) on how to use desktop flow in cloud flow.
 
 1. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
 
-1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more) and switch it to run unattended way (click [here](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow.md#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
 
 ## Troubleshooting and known issues
 
