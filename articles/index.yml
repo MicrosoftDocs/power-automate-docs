@@ -53,7 +53,7 @@ conceptualContent:
         - text: Create your first flow
           url: ./getting-started.md#create-your-first-flow
           itemType: how-to-guide
-        - text: Plan with process advisor (preview) 
+        - text: Plan with process advisor 
           url: ./process-advisor-overview.md
           itemType: overview
         - text: Power Automate FAQs
@@ -136,6 +136,20 @@ conceptualContent:
         - text: Customize responses
           url: ./create-approval-response-options.md
           itemType: how-to-guide          
+    - title: Use business process flows
+      links:
+        - text: Overview
+          url: ./business-process-flows-overview.md
+          itemType: how-to-guide
+        - text: Create a business process flow
+          url: ./create-business-process-flow.md
+          itemType: how-to-guide
+        - text: Add custom controls in business process flows
+          url: ./custom-controls-business-process-flows.md
+          itemType: how-to-guide
+        - text: Best practices in using business process flow columns
+          url: ./best-practices-entity-attributes.md
+          itemType: how-to-guide        
     
     - title: Use solutions for ALM
       links:

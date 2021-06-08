@@ -7,6 +7,7 @@ ms.service: power-automate
 ms.topic: article
 ms.date: 01/29/2021
 ms.author: deonhe
+ms.custom: intro-internal
 search.app: 
   - Flow
 search.audienceType: 
@@ -14,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview
+# Overview of solution-aware flows
 
 
 When you host your flows in a [solution](/power-platform/alm/solution-concepts-alm), they become portable, making it effortless to move them and all their components from one environment to another. A typical use case is for an independent software vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment for clients who purchase these flows. This process is much easier when you create your flows in solutions, and then move the solutions and their contents.

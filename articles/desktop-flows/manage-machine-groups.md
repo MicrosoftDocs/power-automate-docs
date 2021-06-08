@@ -219,10 +219,9 @@ Environment admins can also restrict machine registration to a specific set of u
 
 |Name|Limit|
 |---|---| 
-|Maximum number of machines in a group |20| 
+|Maximum number of machines in a group |50| 
 |Maximum amount of time a desktop flow can run |24 hours| 
 |Maximum amount of time a desktop flow can be queued |3 hours| 
-|Maximum amount of time the next-to-run desktop flow in the run queue will wait for an available machine |15 minutes| 
 
 ## Other known limitations 
 
