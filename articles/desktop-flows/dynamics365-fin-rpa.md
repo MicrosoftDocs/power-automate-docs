@@ -110,14 +110,14 @@ To get started with Dynamics 365 Finance and automate the end-of-cycle reporting
 
 #### Install Power Automate Desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](setup#install-power-automate-desktop-on-your-device) 
+1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](setup.md#install-power-automate-desktop-on-your-device) 
 
 
 1. Make sure you switch the machine setting from Power Automate Desktop to the correct environment that you will install the solution to  
 
     ![Image2](./media/dynamics365-fin-rpa/image003.png)
 
-1. Log in http://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
+1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
 
     ![Image3](./media/dynamics365-fin-rpa/image005.png)
     ![Image4](./media/dynamics365-fin-rpa/image007.png)

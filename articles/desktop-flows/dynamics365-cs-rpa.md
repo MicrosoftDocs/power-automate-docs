@@ -106,7 +106,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Download [Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) onto the machine that will run the automation then follow the installation wizard.
 
-1. Follow the steps in the [detailed guide to install Power Automate Desktop](setup#install-power-automate-desktop-on-your-device) onto your device.
+1. Follow the steps in the [detailed guide to install Power Automate Desktop](setup.md#install-power-automate-desktop-on-your-device) onto your device.
 
 1. Change the machine settings from Power Automate Desktop to the environment to which  you will install the solution.
 
@@ -225,7 +225,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
 
-1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow.md#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
 
 ## Troubleshooting and known issues
 

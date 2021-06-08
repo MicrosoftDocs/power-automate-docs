@@ -83,7 +83,7 @@ As an admin, you can get an RPA unattended add-on and assign it to your environm
 
 #### Get a trial license for Power Apps 
 
-Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)) 
+Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)) 
 
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
 
@@ -95,13 +95,13 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 #### Install Power Automate Desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](setup#install-power-automate-desktop-on-your-device) 
+1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](setup.md#install-power-automate-desktop-on-your-device) 
 
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
 
     ![Image1](./media/dynamics365-RPA/image001.png)
 
-1. Log in http://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
+1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
 
     ![Image2](./media/dynamics365-RPA/image003.png)
     ![Image3](./media/dynamics365-RPA/image005.png)
