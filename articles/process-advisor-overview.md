@@ -15,9 +15,6 @@ search.audienceType:
   - enduser
 ---
 
-<!-- The final link (Power Automate Desktop) doesn't work. Could this be the right link? https://docs.microsoft.com/power-automate/desktop-flows/introduction -->
-
-
 # Overview of process advisor
 
 Process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
@@ -53,6 +50,7 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to create an environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
   - For information about how to add a database to an environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
-- [Power Automate Desktop](/ui-flows/desktop/introduction).
+- [Power Automate Desktop](desktop-flows/introduction.md)
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

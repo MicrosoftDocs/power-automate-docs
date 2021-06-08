@@ -14,9 +14,6 @@ search.audienceType:
   - enduser
 ---
 
-<!-- In line 157, should it be "To remove an activity name ..."?  Also, I recommend removing the image in line 94: The illustration on the left doesn't add anything, and the tips on the right repeat what we just read. Also, it says if the app doesn't open, get the app. How can you try to open the app if you don't have it? -->
-
-
 # Work with processes and recordings
 
 Before you can use process advisor to visualize and analyze your processes, you need to:
@@ -154,7 +151,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 ### Grouping tips
 
 - As much as possible, use an existing activity name. This creates a more consistent and accurate process map.
-- Activity names will be available in the dropdown list whenever a recording is saved. To remove activity names from the dropdown list after it was removed from all recordings that used that activity name, you need to analyze the recording.
+- Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the dropdown list after it was removed from all recordings that used that activity name, you need to analyze the recording.
 
 ### Manage activity names
 

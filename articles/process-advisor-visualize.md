@@ -14,9 +14,6 @@ search.audienceType:
   - enduser
 ---
 
-<!-- Please look for questions and comments in this topic. -->
-
-
 # Visualize processes
 
 ## Process map
@@ -35,10 +32,6 @@ There are various filters available to you to drill down into the process:
 - Variant selector allows you to select one variant, or a set of process variants to visualize in your process map.
 - Recording selector allows you to select one recording, or a set of recordings to visualize in your process map.
 - Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in this topic.
-
-
-<!-- The style guide says to use "analytics" instead of "KPI." Will that change work here? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=44358 -->
-
 
 ### Process KPIs
 
@@ -64,19 +57,12 @@ There are various filters available to you to drill down into the process:
 
 Application analytics allows you to gain more insights from recordings by understanding application usage. This report informs you about:
 
-
-<!-- The third line below ("Drill down ...") doesn't align grammatically with the other two lines. Those two start with nouns, but the third starts with a verb. Can "Drill down to understand" be removed and then start with "App insights ..."? -->
-
 - The top apps used.
 - Access patterns and what apps are used together.
-- Drill down to understand app insights for each activity or recording.
+- App insights for each activity or recording.
 
 > [!div class="mx-imgBorder"]
 > ![Application analytics](media/application-analytics.png "Application analytics")
-
-
-<!-- See my previous note about KPI. -->
-
 
 ### Application analytics KPIs
 
@@ -96,15 +82,9 @@ Application analytics allows you to gain more insights from recordings by unders
 
 - **Application switching**&mdash;A bar chart that shows which application pairs are most often used together. This extends the number of times accessed in the application usage visual to help identify what two applications are most often used together. This can denote some information transfer (copy and paste) between these applications, something to consider when automating.
 
-<!-- Would "analytics" work in place of "KPI" here? -->
-
 - **Time spent by application**&mdash;A pie chart that shows a distribution of the time spent on KPI per app. This helps you understand which applications the user spends the most time on.
 
-
-<!-- Not sure if a word is missing below. Please check "... the actions KPI per app." Also, KPI again. -->
-
-
-- **Actions by application**&mdash;A pie chart that shows a distribution of the actions KPI per app. This helps you understand which apps have the most actions or manual inputs.
+- **Actions by application**&mdash;A pie chart that shows a distribution of the actions on KPI per app. This helps you understand which apps have the most actions or manual inputs.
 
 ### See also
 
