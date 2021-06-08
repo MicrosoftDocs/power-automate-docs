@@ -76,7 +76,7 @@ Application analytics allows you to gain more insights from recordings by unders
 
 ### Application analytics visualizations
 
-- **Application usage**&mdash;A scatter plot, which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed. This means the recorder is jumping back and forth between this application and other applications. This may occur in cases where copy and paste is happening, as an example. Other apps are used for a long time and the action is limited to that application. It does not depend on other recordings for completion of the necessary activity.
+- **Application usage**&mdash;A scatter plot, which shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed. This means the recorder is jumping back and forth between this application and other applications. This may occur in cases where copy and paste are happening, as an example. Other apps are used for a long time and the action is limited to that application. It does not depend on other recordings for completion of the necessary activity.
 
     The size of the circles clarifies what applications are used in most or all recordings. It represents an application that is needed for the process and something to concentrate on from an optimization or automation perspective.
 
