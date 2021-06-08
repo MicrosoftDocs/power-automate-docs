@@ -66,14 +66,14 @@ When an attended desktop flow starts on the target machine, we recommend that yo
 
 You can schedule multiple desktop flows to run on one or more devices. If more than one desktop flow is triggered to run on the same device, Power Automate follows these rules:
 
-1.  The first desktop flow runs on the target device based on [priority](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#setting-a-priority) and time requested.
+1.  The first desktop flow runs on the target device based on [priority](monitor-desktop-flow-queues.md#setting-a-priority) and time requested.
 
 1.  Queues other desktop flows and then displays them as **Queued**.
 
 1.  Picks the next desktop flow when each run completes based on priority and time requested, shown as **Next to run**.
 
 
-You can [view the real-time execution order](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#view-list-of-queued-desktop-flow-runs-for-a-specific-gateway) of a device by its run queue. You can also manually [change the order](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
+You can [view the real-time execution order](monitor-desktop-flow-queues.md#view-list-of-queued-desktop-flow-runs-for-a-specific-gateway) of a device by its run queue. You can also manually [change the order](monitor-desktop-flow-queues.md#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
 
 >[!NOTE]
 >These orchestration rules apply to desktop flows runs that are scheduled by any user on the same device.

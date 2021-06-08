@@ -159,7 +159,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
     - Microsoft Dataverse provisioning in the default environment from Power Automate Desktop to create a flow will be supported in the upcoming release.  
 
-1. If the customer already installed PAD and has paid attended RPA license or trial license and wants to try Free MSA, they have to download the latest PAD version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
+1. If the customer already installed Power Automate Desktop and has paid attended RPA license or trial license and wants to try Free MSA, they have to download the latest Power Automate Desktop version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
