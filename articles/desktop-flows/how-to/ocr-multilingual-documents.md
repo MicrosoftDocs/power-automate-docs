@@ -20,7 +20,7 @@ Optical character recognition (OCR) enables you to locate and extract text from 
 
 Although most scenarios require you to handle text in a specific language, there are cases where the sources are multilingual.
 
-To perform OCR in these sources, use a Tesseract engine in the respective OCR action and enable the **Use other languages** option in the engine settings.
+To perform OCR on these sources, use a Tesseract engine in the respective OCR action and enable the **Use other languages** option in the engine settings.
 
 ![The Use other languages option in the Exctract text witg OCR action.](media/ocr-multilingual-documents/use-other-languages-extract-text-ocr-action.png)
 
