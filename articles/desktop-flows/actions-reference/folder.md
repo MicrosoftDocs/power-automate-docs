@@ -16,8 +16,6 @@ search.audienceType:
 
 # Folder
 
-
-
 Manage and manipulate folders
 
 |<!-- --> |
@@ -31,6 +29,25 @@ Manage and manipulate folders
 |[Move folder](#move)|
 |[Rename folder](#rename)|
 |[Get special folder](#getspecialfolder)|
+
+## Getting started with folder actions
+
+Manipulate and organize folders with the Power Automate Desktop folders actions.
+
+The **Get special folder** action retrieves the paths for commonly used directories which vary among different users and computers. In the figure below, the desktop directory is retrieved and stored into a variable. The variable **%SpecialFolderPath%** can now be used any time it is necessary to use the desktop path, regardless of the user who runs the flow or the computer which it runs on.
+
+  ![Screenshot of the get special folder action properties window](\media\folder\get-special-folder-example.png)
+
+Create new folders with the **Create folder** action.
+
+To get a list of a folder's contents, use the **Get subfolders in folder** action. This action provides a list of folders located within the specified folder. In the figure below, the variable for the path of a special folder is used as input and include subfolders has been enabled. In the expanded Advanced section, folders are to be sorted by creation time in ascending order and name in descending order.
+
+  ![Screenshot of the get subfolders action properties window](\media\folder\get-subfolders-example.png)
+
+
+Copying, moving, renaming and deleting or emptying folders each has its respective action. 
+
+## Folder actions
 
 ### <a name="getfiles"></a> Get files in folder
 Retrieve the list of files in a folder

@@ -53,7 +53,7 @@ Finally, if your company wishes to restrict the use of organization-only data in
 
 Individuals can gain access to the paid features of Power Automate in three different ways:
 
-1. They can individually sign up for a Power Automate Free license for 90 days at no cost.
+1. They can individually sign up for a Power Automate Trial license for 90 days at no cost.
 2. You can assign a Power Automate license to them within the [Microsoft 365 admin center](https://admin.microsoft.com/).
 3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
 
