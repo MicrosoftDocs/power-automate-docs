@@ -33,12 +33,15 @@ Connect to an Excel Database:
 
 Example of a connection string used to connect to an Excel database connection string that one can use is:
 
-    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myExcelFile.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES";
-
+```
+Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myExcelFile.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES";
+```
 
 Example of a connection string used to connect to an Access database:
 
-    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
+```
+Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
+```
 
 To manually build a connection string, select **Build connections string** to open the **Data Link Properties** window. The data link tool helps the user compose the required connection string step by step.
 

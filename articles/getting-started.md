@@ -36,7 +36,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/H4H_jPJWlxU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qNQm]
 
 ## Who is Power Automate for? 
 

@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2020
+ms.date: 04/12/2021
 ms.author: hamenon
 ---
 
@@ -70,16 +70,16 @@ When you select the **Instant from blank** option, Power Automate automatically 
 
    ![Create a flow](media/power-bi-flow/power-bi-create-flow.png)
 
-1. Hit the **Apply** button to attach the flow to your Power BI report button.
+1. Select the **Apply** button to attach the flow to your Power BI report button.
 
    ![Apply flow](media/power-bi-flow/power-bi-apply.png)
 
-Once you have applied a flow to the button, you should testing the flow before you share the it. 
+Once you have applied a flow to the button, you should test the flow before you share it. 
 
 >[!IMPORTANT]
 >You can only run these Power BI flows in the context of a Power BI report. You cannot run these flows in Power Automate or elsewhere. 
 
-If your flow is data contextual, test how the filters selections in the report impact the outcome of the flow. To test the flow in edit mode of the report, select Back to report, and then hit Ctrl + click on the button to run the Flow in the context of the report.
+If your flow is data contextual, test how the filters selections in the report impact the outcome of the flow. To test the flow in edit mode of the report, select Back to report, and then press Ctrl + click on the button to run the Flow in the context of the report.
 
 You can navigate to the edit mode or to Power Automate to view the run history of the flow to ensure its running successfully.
 
@@ -96,6 +96,7 @@ To share, select edit next to the **Run only users** tile and then specify the u
 ### Format the button on the Power BI report
 Optionally, if you want to change the button text, font color, font size, or fill color of the button, you can find these options along with other settings in the **Format** pane. 
 
+![Screenshot of Format pane in Power BI](media/power-bi-flow/power-bi-flow-format.png)
 
 ## Known limitations 
 

@@ -255,7 +255,8 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
-  * There is no markdown support for approval email. 
+  * There is no markdown support for approval email.
+  * Approvals are not available in DoD tenants. 
 
 - [Submitting Templates](/flow/publish-a-template)
 
