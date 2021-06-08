@@ -30,7 +30,7 @@ The **Language abbreviation** field indicates to the engine which language to lo
 The **Language data path** field contains the language data files used to train the OCR engine.
 
 > [!NOTE]
-> You can download the Tesseract OCR data files from this GitHub repository or this page.
+> You can download the Tesseract OCR data files from [this GitHub repository](https://github.com/tesseract-ocr/tessdata/) or [this page](https://tesseract-ocr.github.io/tessdoc/Data-Files).
 
 ![The Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/language-abbreviation-extract-text-ocr-action.png)
 
