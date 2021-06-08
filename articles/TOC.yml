@@ -407,6 +407,8 @@
         href: ./desktop-flows/how-to/print-images.md  
       - name: Use image recognition on machines with different screen resolutions
         href: ./desktop-flows/how-to/image-recognition-screen-resolution.md  
+      - name: Perform OCR on multilingual documents
+        href: ./desktop-flows/how-to/ocr-multilingual-documents.md  
     - name: Automate Windows and desktop applications
       items:
       - name: Identify a window by its handle
