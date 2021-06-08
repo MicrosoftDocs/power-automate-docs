@@ -32,6 +32,8 @@ Automate sending, receiving, and managing emails of an Outlook account
 
 ## Getting started with Outlook actions
 
+For PCs with an installation of Outlook, users can manage the mailboxes of their accounts with the Outlook group of actions.
+
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. In the figure below, the action retrieves all the email messages from the folder **Tickets** which is in a subfolder of the Inbox. The filters have been configured to search for email messages from a specific address, further specifying the contents of the subject with a previously defined variable. Any attachments are also saved.
 
 ![Retrieve outlook emails action properties screenshot](\media\outlook\retrieve-messages-example.png)

@@ -29,6 +29,8 @@ Automate sending, receiving, and managing emails through Exchange
 
 ## Getting started with Exchange actions
 
+The Exchange group of actions allows users to connect to an exchange server of their choice, and manage their correspondence.
+
 Exchange actions require a connection to an Exchange server. Establish the connection by using the **Connect to Exchange server** action. In the following figure, the exchange server address has been entered manually, rather than using auto discovery. The credetials are set to user defined, so the domain, username and password are entered manually as well. In the **Advanced** section, a timeout has been set. This allows the action to return an error if a connection hasn't been established within the specified time frame.
 
 ![Connect to exchange server action properties screenshot](\media\exchange\connect-to-exchange-server-example.png)
