@@ -334,6 +334,8 @@
       href: ./desktop-flows/install.md
     - name: Governance in Power Automate Desktop
       href: ./desktop-flows/governance.md     
+    - name: Troubleshooting Power Automate Desktop
+      href: ./desktop-flows/troubleshoot.md    
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
   - name: Getting started with a Microsoft account
