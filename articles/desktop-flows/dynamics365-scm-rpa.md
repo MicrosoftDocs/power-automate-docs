@@ -95,7 +95,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 #### Install Power Automate Desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](https://docs.microsoft.com/en-us/power-automate/desktop-flows/setup#install-power-automate-desktop-on-your-device) 
+1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](setup#install-power-automate-desktop-on-your-device) 
 
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
 

@@ -170,7 +170,7 @@ Not supported by the migration tool.
 
 **Add Queue Item in Queue** 
 
-Not supported by migration tool. Review [Monitor desktop flow queues](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) where Cloud Flow monitors, schedules, or triggers can be used to load data. 
+Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) where Cloud Flow monitors, schedules, or triggers can be used to load data. 
 
 **Get Queue Item in Queue** 
 
