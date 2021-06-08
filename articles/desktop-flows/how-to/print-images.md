@@ -18,7 +18,7 @@ search.audienceType:
 
 Although Power Automate Desktop enables you to print documents using the **Print document** action, printing image files requires a different approach.
 
-To print an image file, create a batch script that launches Microsoft Paint and prints the selected image file through it.To develop the script, create a new .txt file, copy the following code, and save it as **Image-printing.bat**. 
+To print an image file, create a batch script that launches Microsoft Paint and prints the selected image file through it. To develop the script, create a new .txt file, copy the following code, and save it as **Image-printing.bat**. 
 
 > [!NOTE]
 > Before saving the script, replace the **Image_Path** placeholder with the file path of the image you want to print.
