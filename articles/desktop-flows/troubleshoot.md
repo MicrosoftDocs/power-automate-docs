@@ -49,4 +49,4 @@ In the Troubleshoot tool, select Exports logs link, as shown in the following im
 
 ![Machine logs](\media\troubleshoot\image003.png)
 
-This file is saved to the Power Automate Desktop 
+This file is saved to the desktop as a zip file.
