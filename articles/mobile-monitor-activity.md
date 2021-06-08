@@ -66,7 +66,7 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
     ![Example of push notification](./media/mobile-monitor-activity/activity-notification.png)
 3. If multiple push notifications were sent in a day, swipe left on the notification to view notifications from up to three previous runs. If more than four notifications were sent in a day, swipe left until **See more** appears, and then tap it to view a list of all notifications.
    
-    ![Example of push notification](./media/mobile-monitor-activity/activity-notification-list.png)
+    ![Another example of push notification](./media/mobile-monitor-activity/activity-notification-list.png)
 4. Tap **Back** to return to the activity summary.
 5. To filter the activity summary, tap the icon in the upper-right corner.
    
