@@ -283,7 +283,7 @@ Converts a list into a text value by separating its items with a specified delim
 ##### <a name="jointext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="splittext"></a> Split text
-Creates a list containing the substrings of a text that are separated by a specified delimeter or a regular expression
+Creates a list containing the substrings of a text that are separated by a specified delimiter or a regular expression
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
