@@ -404,7 +404,9 @@
     - name: Automate tasks in Excel
       items: 
       - name: Convert a CSV file into an Excel spreadsheet
-        href: ./desktop-flows/how-to/convert-csv-excel.md   
+        href: ./desktop-flows/how-to/convert-csv-excel.md  
+      - name: Automate Excel using keyboard shortcuts
+        href: ./desktop-flows/how-to/automate-excel-keyboard-shortcuts.md  
     - name: Use images, image recognition and OCR
       items:
       - name: Print images
