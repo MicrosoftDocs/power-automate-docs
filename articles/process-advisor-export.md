@@ -18,11 +18,11 @@ search.audienceType:
 
 You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to be able to export it.
 
- To learn more about solutions from Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md).
+To learn more about solutions from Microsoft Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md).
 
 ## Export a process
 
-1. Sign into [Power Automate](https://powerautomate.microsoft.com/). Make sure you have selected the environment where the process you want to export has been created.
+1. Sign in to [Power Automate](https://powerautomate.microsoft.com/). Make sure you have selected the environment where the process you want to export has been created.
 
 1. Select **Solutions** in the navigation pane on the left.
 

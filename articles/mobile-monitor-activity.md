@@ -27,8 +27,6 @@ View a summary of how many times each flow succeeded or failed today, yesterday,
 
 **Prerequisites**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vZuYZ64K3tI?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
-
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
 * If you don't already have a cloud flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
@@ -45,7 +43,6 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 **Note:** You can also [manage your flows](mobile-manage-flows.md) from the mobile app.
 
 ## Display a summary of activity
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 1. If your flow hasn't run before, trigger a run to generate data.
    
@@ -69,7 +66,7 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
     ![Example of push notification](./media/mobile-monitor-activity/activity-notification.png)
 3. If multiple push notifications were sent in a day, swipe left on the notification to view notifications from up to three previous runs. If more than four notifications were sent in a day, swipe left until **See more** appears, and then tap it to view a list of all notifications.
    
-    ![Example of push notification](./media/mobile-monitor-activity/activity-notification-list.png)
+    ![Another example of push notification](./media/mobile-monitor-activity/activity-notification-list.png)
 4. Tap **Back** to return to the activity summary.
 5. To filter the activity summary, tap the icon in the upper-right corner.
    

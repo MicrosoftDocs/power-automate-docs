@@ -23,10 +23,6 @@ search.audienceType:
 ---
 # Wait for approval in Power Automate
 
-
-> [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
->
-
 Create a cloud flow that, if you create an item in SharePoint, sends approval email and then notifies you whether the item was approved or rejected. To follow this tutorial exactly, create a simple SharePoint list as a trigger action, but you can use another data source such as Dropbox or OneDrive.
 
 ## Prerequisites
