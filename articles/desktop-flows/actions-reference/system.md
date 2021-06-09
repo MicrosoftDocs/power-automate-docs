@@ -38,9 +38,9 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Take screenshot](#takescreenshotbase)|
 |[Control screen saver](#controlscreensaver)|
 |[Ping](#ping)|
-|[Set Environment Variable](#setenvironmentvariable)|
-|[Get environment variable](#getenvironmentvariable)|
-|[Delete environment variable](#deleteenvironmentvariable)|
+|[Set Windows environment Variable](#setenvironmentvariable)|
+|[Get Windows environment variable](#getenvironmentvariable)|
+|[Delete Windows environment variable](#deleteenvironmentvariable)|
 |[Run JavaScript](#runjavascript)|
 |[Run PowerShell script](#runpowershellscript)|
 |[Get screen resolution](#getscreenresolution)|
@@ -358,7 +358,7 @@ Sends a message to determine whether a remote computer is accessible over the ne
 |-----|-----|
 |Can't complete ping action|Indicates a problem completing the ping action|
 
-### <a name="setenvironmentvariable"></a> Set Environment Variable
+### <a name="setenvironmentvariable"></a> Set Windows environment variable
 Sets an environment variable to a given value
 
 ##### Input Parameters
@@ -378,7 +378,7 @@ Sets an environment variable to a given value
 |Indicates a problem setting the environment variable's value|Indicates a problem setting the environment variable's value|
 |Insufficient permissions|Indicates that the user has insufficient permissions to perform this action|
 
-### <a name="getenvironmentvariable"></a> Get environment variable
+### <a name="getenvironmentvariable"></a> Get Windows environment variable
 Retrieves the value of an environment variable
 
 ##### Input Parameters
@@ -401,7 +401,7 @@ Retrieves the value of an environment variable
 |Environment variable doesn't exist|Indicates that the specified environment variable doesn't exist|
 |Insufficient permissions|Indicates that the user has insufficient permissions to perform this action|
 
-### <a name="deleteenvironmentvariable"></a> Delete environment variable
+### <a name="deleteenvironmentvariable"></a> Delete Windows environment variable
 Deletes an environment variable from a given scope
 
 ##### Input Parameters

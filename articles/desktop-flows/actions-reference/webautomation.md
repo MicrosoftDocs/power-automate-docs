@@ -187,6 +187,7 @@ Fill a text field in a web page with the specified text
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 
 
 ##### Variables Produced

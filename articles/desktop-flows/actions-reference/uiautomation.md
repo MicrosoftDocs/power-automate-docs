@@ -185,6 +185,8 @@ Fills a text box in a window with the specified text
 |-----|-----|-----|-----|-----|
 |Text box|No|UIControl||The text box to populate|
 |Text to fill-in|No|Encrypted value||The text to fill in the text field|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
+|Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
 
 ##### Variables Produced
