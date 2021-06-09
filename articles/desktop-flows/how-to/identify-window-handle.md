@@ -39,7 +39,7 @@ You can use handles to manipulate windows through the following Windows actions 
 - Set window visibility
 - Move window
 - Resize window
-- Close window).
+- Close window.
 
 
 
