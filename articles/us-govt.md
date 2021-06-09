@@ -243,7 +243,7 @@ focusing attention on AzureCloud.usgovtexas, and AzureCloud.usgovvirginia, and/o
 
 Install an [On-Premises Data Gateway](/flow/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
-If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization executed to enable that will also enable on-premises connectivity for Power Automate. However, if you are unable to connect to your tenant, then you may need to go through a “whitelisting” process, which enables this capability for your tenant. Should this occur, you can open a support ticket to address your needs. The support team follows an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization undertook to enable that will also enable on-premises connectivity for Power Automate. However, if you are unable to connect to your tenant, then you may need to create an "allow list", which enables this capability for your tenant. Should this occur, you can open a support ticket to address your needs. The support team follows an established process to address your request.
 
 ## Power Automate US Government feature limitations
 
