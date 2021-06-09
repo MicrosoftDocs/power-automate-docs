@@ -364,7 +364,7 @@ Sets an environment variable to a given value
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable|
+|Environment variable name|No|Text value|Own text|The name of the environment variable|
 |New environment variable value|No|Text value||The value that is set to the environment variable|
 |Type|N/A|User, System|User|The type of the environment variable|
 
@@ -384,7 +384,7 @@ Retrieves the value of an environment variable
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable whose value will be retrieved|
+|Environment variable name|No|Text value|Own text|The name of the environment variable whose value will be retrieved|
 |Search for variable only in scope|N/A|Boolean value|False|Specify whether to search for the variable only in a specific scope|
 |Scope|N/A|User, System|User|The scope from which the environment variable should be retrieved|
 
@@ -407,7 +407,7 @@ Deletes an environment variable from a given scope
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable to delete|
+|Environment variable name|No|Text value|Own text|The name of the environment variable to delete|
 |Type|N/A|User, System|User|The type of the environment variable to delete|
 
 
