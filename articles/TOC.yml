@@ -435,6 +435,8 @@
         href: ./desktop-flows/how-to/click-several-links-web-page.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
+    - name: Run SQL queries to Microsoft Access
+      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
