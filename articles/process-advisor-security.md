@@ -26,6 +26,7 @@ Some privileges are set by default in Dataverse. This allows built-in security r
 
 - Administrators and system customizers can access all processes created in the environment.
 
+
 These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create processes in process advisor if they have the following permissions:
 
 - Organization read permission on the Organization, User, and User Settings tables (Business management tab).
@@ -49,7 +50,7 @@ In Power Automate Desktop, users can:
 
 After you import the recording into process advisor, you can still remove sensitive information by doing the following:
 
-- Rename step names and/or description.
+- Rename step names or descriptions.
 
 - Delete screenshots.
 

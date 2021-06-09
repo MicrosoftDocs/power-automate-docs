@@ -43,7 +43,7 @@ The share action is also available on the process detail screen with the same co
 
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users and teams in your organization, and share your process with them.
 
-When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you've shared a process with them. As co-owners or contributors, they're asked to help you manage the process or add new recordings, respectively. There's a link in the email invitation that leads them to the process shared.
+When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you've shared a process with them. As co-owners or contributors, they're asked to help you manage the process or add new recordings, respectively. There's a link in the email invitation that leads them to the shared process.
 
 ## Share a process with a contributor
 
