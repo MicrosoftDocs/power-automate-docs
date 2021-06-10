@@ -483,7 +483,7 @@ Clicks on any UI element of a window
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|UIControl||The UI element to click on|
-|Click type|N/A|Left click, Right click, Double click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
+|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
 |Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
