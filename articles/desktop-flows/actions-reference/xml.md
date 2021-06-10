@@ -16,6 +16,23 @@ search.audienceType:
 
 # XML
 
+
+
+Manage and manipulate XML files
+
+| |
+|-----|
+|[Read XML from file](#readfromfile)|
+|[Write XML to file](#writexmltofile)|
+|[Execute XPath expression](#executexpathquery)|
+|[Get XML element attribute](#getxmlelementattribute)|
+|[Set XML element attribute](#setelementattribute)|
+|[Remove XML element attribute](#removeelementattribute)|
+|[Get XML element value](#getxmlelementvalue)|
+|[Set XML element value](#setelementvalue)|
+|[Insert XML element](#insertelement)|
+|[Remove XML element](#removeelement)|
+
 ## Getting started with XML actions
 
 Power Automate Desktop provides the capability to use flows to automate the management of XML attributes and elements through XML actions.
@@ -33,21 +50,6 @@ To retrieve an attribute from an XML file, use the **Get XML attribute** action.
 Similarly, to retrieve element values, use the **Get XML element value** action. Elements and attributes can be managed by using the respective action to get, set or remove XML attributes or elements.
 
 ## XML actions
-
-Manage and manipulate XML files
-
-| |
-|-----|
-|[Read XML from file](#readfromfile)|
-|[Write XML to file](#writexmltofile)|
-|[Execute XPath expression](#executexpathquery)|
-|[Get XML element attribute](#getxmlelementattribute)|
-|[Set XML element attribute](#setelementattribute)|
-|[Remove XML element attribute](#removeelementattribute)|
-|[Get XML element value](#getxmlelementvalue)|
-|[Set XML element value](#setelementvalue)|
-|[Insert XML element](#insertelement)|
-|[Remove XML element](#removeelement)|
 
 ### <a name="readfromfile"></a> Read XML from file
 Read the contents of an XML file into a variable
