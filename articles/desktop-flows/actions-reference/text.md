@@ -38,6 +38,28 @@ Control and manipulate text
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
 
+## Getting started with text actions
+
+To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items by using a delimiter. To separate a single text value into a list of items, use the **Split text** action. Specify a text value that has recognizable delimiters by which to separate the list items. 
+
+To find a string in a text and replace it with another string or character, use the **Replace text** action. The following figure demonstrates a replacement of the string "Product Characteristics" with "Characteristics".
+
+![Screenshot of replace text action](\media\text\replace-text-example.png)
+
+Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
+
+![Screenshot of parse text action](\media\text\parse-text-example.png)
+
+To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
+
+Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
+
+
+
+## Text actions
+
 ### <a name="appendline"></a> Append line to text
 Appends a new line of text to a text value
 
@@ -261,7 +283,7 @@ Converts a list into a text value by separating its items with a specified delim
 ##### <a name="jointext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 ### <a name="splittext"></a> Split text
-Creates a list containing the substrings of a text that are separated by a specified delimeter or a regular expression
+Creates a list containing the substrings of a text that are separated by a specified delimiter or a regular expression
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

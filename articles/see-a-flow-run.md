@@ -23,9 +23,6 @@ search.audienceType:
 ---
 # Watch your flows in action
 
-
->[!VIDEO https://www.youtube.com/embed/3wPoUCGm7Yg]
-
 To ensure that your flows run as you expect, perform the trigger, and then review the inputs and outputs that each step in your flow generates.
 
 1. Create or update a cloud flow, and then leave the designer open after you select **Create flow** or **Update flow**.

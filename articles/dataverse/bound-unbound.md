@@ -1,6 +1,6 @@
 ---
 title: Use a flow to perform bound and unbound actions in Dataverse | Microsoft Docs
-description: Learn how to use flows to perform bound and unbound actions in Dataverse.  
+description: "Learn how to use flows to perform bound and unbound actions in Microsoft Dataverse."  
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 5/20/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -22,70 +22,63 @@ search.audienceType:
   - maker
 ---
 
-# Perform bound action or unbound actions
+# Perform bound actions or unbound actions
 
 >[!IMPORTANT]
->In this acticle, the term "action" means a [Dataverse action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true). Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
+>In this acticle, the term "action" means a [Dataverse action](/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true).
+>Dataverse actions are not the same as Power Automate actions. In Dataverse, you use actions to extend out of the box operations on data. You can use these actions to define reusable custom business logic.
 
+Flows can call [Dataverse actions](/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
 
+Actions represent operations that might have side effects in the database, such as creating or updating rows.
 
-Flows can call [Dataverse actions](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/actions?view=dynamics-ce-odata-9&preserve-view=true) that are available in the Microsoft Dataverse connector. These actions include everything from fulfilling a sales order to exporting a solution. 
+There are two types of Dataverse actions that you can use in flows.
 
-Actions represent operations that might have side effects in the database, such as creating or updating rows. 
+- [Bound actions](#bound-action)
+- [Unbound actions](#unbound-action)
 
-There are two types of Dataverse actions you can use in flows.
+## Bound actions
 
-- [Bound actions](#bound-action).
-- [Unbound actions](#unbound-action).
+*Bound actions* target a single table or a set of rows from a single table.
 
-## Bound action
+To perform a bound action, add **Perform a bound action** to your flow.
 
-Bound actions target a single table or a set of rows from a single table.
-
-To perform a bound action, add the **Perform a bound action** action to your flow.
-
-Follow these steps in edit more of your flow to perform a bound action.
+Follow these steps to edit one of your flows to perform a bound action.
 
 1. After any step in your flow, select **Add new step**.
-1. Enter **bound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform bound action**
+1. Enter **bound** in the search box, select **Microsoft Dataverse** from the list of connectors, and then select **Perform a bound action**.
 
-   ![Bound action](../media/dataverse-how-tos/bound-1.png)
+   ![Add a bound action to your flow](../media/dataverse-how-tos/bound-1.png "Add a bound action to your flow")
 
-1. Select the **Table name** for the table you want to use.
-1. Select the **Action name** for the action you'll perform.
-1. Enter the **Row ID** for the row in the table on which you want to perform the bound action.
+1. In **Table name**, select the name of a table you want to use.
+1. In **Action name**, select the action you'll perform.
+1. In **Row ID**, enter the row in the table on which you want to perform the bound action.
 
-   ![Bound action card completed](../media/dataverse-how-tos/bound-complete.png)
+   ![Bound action card completed](../media/dataverse-how-tos/bound-complete.png "Bound action card completed")
 
 1. Save, and then run your flow.
-1. Confirm the bound action completes successfully on the table that you selected.
+1. Confirm that the bound action completes successfully on the table that you selected.
 
-## Unbound action
+## Unbound actions
 
-Unbound actions aren’t bound to a table and are called as static operations. Unbound actions are performed on the entire environment, not on specific tables or rows.
+*Unbound actions* aren’t bound to a table and are called as static operations. Unbound actions are performed on the entire environment, not on specific tables or rows.
 
-To perform a bound action in your flow, you must add **Perform an unbound action** to your flow.
+To perform an unbound action in your flow, add **Perform an unbound action** to your flow.
 
-Follow these steps in edit more of your flow to perform an unbound action.
+Follow these steps to edit one of your flows to perform an unbound action.
 
 1. After any step in your flow, select **Add new step**.
-1. Enter **unbound** into the search box, select **Dataverse** from the list of connectors, and then select **Perform unbound action**
 
-   ![Unbound action](../media/dataverse-how-tos/bound-2.png)
-   
-1. Select an **Action name**.
+1. Enter **unbound** in the search box, select **Microsoft Dataverse** from the list of connectors, and then select **Perform an unbound action**.
 
-   ![Action name](../media/dataverse-how-tos/bound-3.png)
+   ![Add an unbound action to your flow](../media/dataverse-how-tos/bound-2.png "Add an unbound action to your flow")
+
+1. In **Action name**, select an action.
+
+   ![Action name](../media/dataverse-how-tos/bound-3.png "Action name")
 
 1. Enter or select any of the optional details on the **Perform an unbound action** card.
 
 1. Save, and then run your flow.
-1. Confirm the unbound action completes successfully.
 
-
-
-
-
-
-
-
+1. Confirm that the unbound action completes successfully.
