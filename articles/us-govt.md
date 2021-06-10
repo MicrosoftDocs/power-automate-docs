@@ -247,6 +247,7 @@ If your organization (tenant) has configured and successfully connected the On-P
 
 Formerly, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "whitelist" the tenant for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
 
+
 ## Power Automate US Government feature limitations
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
