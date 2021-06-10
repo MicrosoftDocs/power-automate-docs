@@ -48,9 +48,13 @@ To simulate moving the mouse, use the **Move mouse** action. In the following ex
 
 ![Screenshot of move mouse action properties](\media\mousekeyboard\move-mouse-example.png)
 
-Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
+Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. 
 
 ![Screenshot of move mouse to image properties](\media\mousekeyboard\move-mouse-to-image-example.png)
+
+In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
+
+![Screenshot of move mouse to image advanced properties](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
 
 
 ## Mouse and keyboard actions
