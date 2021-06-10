@@ -41,7 +41,7 @@ Connections used in a cloud flow fall into two categories:
 - **Embedded**: These connections are used in the flow.
 - **Other**: These connections have been defined for a cloud flow, but aren't used in it.
 
-If you stop using a connection in a cloud flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
+If you stop using a connection in a cloud flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.
 
 The list of connections appears under the list of owners in a cloud flow's properties, as shown in the following image.
 
@@ -64,7 +64,7 @@ If you're the creator or an owner of a cloud flow, you'll find it listed on the 
 >[!NOTE]
 >Shared connections can be used *only* in the flow in which they were created.
 
-Owners can use services in a cloud flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a cloud flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a cloud flow and owning a connection within a cloud flow - will this be obvious to the reader? -->
+Owners can use services in a cloud flow but can't modify the credentials for a connection that another owner created.
 
 <!--markdownlint-disable MD036-->
 **To add more owners to a cloud flow**
