@@ -145,6 +145,11 @@ Runs a desktop flow which can receive input variables and may produce output var
 |-----|-----|
 |Run desktop flow failed|Indicates a problem while running the desktop flow|
 
+>[!NOTE]
+> * A flow's dependencies can't be more than 20 other flows.
+> * Two flows can't directly or indirectly call one-another as this causes a recursion.
+
+
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
 
