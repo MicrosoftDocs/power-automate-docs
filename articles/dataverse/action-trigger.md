@@ -1,13 +1,9 @@
 When an action is performed
 ---------------------------
 
-**Pre-requisite**: To create a flow that triggers based on execution of a
-Dataverse action, you must include it in a Catalog and a Category. To learn how
-to create and manage Catalog and include actions in them, see [Catalog and
-CatalogAssignment tables
-(Preview)](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/catalog-catalogassignment).
-Your role must also have the permissions to use *sdkmessage*, *customapi*,
-*workflows* and *catalogassignment* tables in Dataverse.
+**Initial setup**: To create a flow that triggers based on execution of a
+Dataverse action, the action must be included in a [Catalog and a Category](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/catalog-catalogassignment), and your role needs [permissions](https://docs.microsoft.com/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database) to read it, which may require read access to the *sdkmessage*, *customapi*,
+or *workflows* tables in Dataverse. 
 
 ![Graphical user interface Description automatically generated with low confidence](media/fda27fcf4067248e47b7efd3daed4511.png)
 
