@@ -110,9 +110,10 @@ To join a group silently with the service principal account, use the join group 
  
 ![groupresults](./media/machines-silent-registration/image009.png)
 
-    ```
-    .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-    ```
+```
+.\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+```
+
 ## Secure input 
 In the machine registration tool, you will have to provide secure inputs for registration and joining group.
 You have two options to provide a secure input:
