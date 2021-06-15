@@ -76,6 +76,9 @@ Select **Edit**, then **Go to line** and enter a line. The corresponding action 
 
 To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
 
+> [!NOTE]
+> The **Run from here** option isn't available for actions located in loops, conditionals, or the **On block error** action.
+
 ![run from here](\media\run-stop-pause\run-from-here.png)
 
 ## Making use of the recorders
