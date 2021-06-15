@@ -14,14 +14,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/05/2021
+ms.date: 06/15/2021
 search.app: 
   - Flow
   - Powerplatform
 search.audienceType: 
   - maker
 ---
-
 
 # Trigger flows when a row changes
 
@@ -48,6 +47,8 @@ The following information is required to use the **When a row is added, modified
 The trigger condition, **Change type**, precisely defines which combination of changes to a row would run the flow.
 
    ![Trigger conditions](../media/create-update-delete-trigger/2.png "Trigger conditions")
+
+When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, and `Delete`, respectively.
 
 ### Table name
 
