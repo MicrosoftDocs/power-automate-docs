@@ -82,7 +82,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
 1. In Power Automate Desktop, open the Variables pane, select **+** and select **Input** to add a new input variable.
 
-   ![add new input variable](\media\design-flow\add-new-input-variable.png)
+   ![add new input variable](media\design-flow\add-new-input-variable.png)
 
 1. Configure the variable as follows:
    * Variable type: **Input**
