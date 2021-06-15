@@ -153,7 +153,7 @@ Runs a desktop flow which can receive input variables and may produce output var
 
 
 ##### Variables Produced
-- This action doesn't produce any variables
+- This action produces the output variables of the selected flow
 
 ##### <a name="runflow_onerror"></a> Exceptions
 |Exception|Description|
@@ -163,6 +163,7 @@ Runs a desktop flow which can receive input variables and may produce output var
 >[!NOTE]
 > * A flow's dependencies can't be more than 20 other flows.
 > * Two flows can't directly or indirectly call one-another as this causes a recursion.
+> * In org tenants, the flows must be under the same environment.
 
 
 ### <a name="callfunction"></a> Run subflow
