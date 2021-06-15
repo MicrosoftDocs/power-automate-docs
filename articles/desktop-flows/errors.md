@@ -18,7 +18,7 @@ search.audienceType:
 
 
 
-While developing and executing flows, users may encounter two different kinds of errors: **design time** and **run time** errors.
+While developing and executing flows, users may encounter two different kinds of errors, **design time** and **run time** errors.
 
 The **design time** errors are associated with the configuration of the deployed actions. This kind of error appears while developing the flow and prevent it from running. An empty mandatory field or the use of an undefined variable may cause this kind of error.
 
