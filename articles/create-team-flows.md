@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/14/2021
+ms.date: 06/15/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -31,7 +31,7 @@ Share a cloud flow with others in your organization so they can also benefit fro
 
 ## Prerequisites
 
-- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a cloud flow.
+- You must have a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
