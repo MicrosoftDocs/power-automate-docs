@@ -44,9 +44,13 @@ To silently register your machine and join a group, we recommend you to use a se
 
     d.	Define a name and select **Single tenant** (or multi-tenant) then select **register**
 1.	Give your app the following permissions
+
     a.	Select **Add a permission**
+
     b.	Select **Flow Service**
+
     c.	Select **Flow.Read.All**
+
 1.	[Create an application user](https://docs.microsoft.com/power-platform/admin/manage-application-users#create-an-application-user).
 
 >[!NOTE]
