@@ -22,7 +22,7 @@ You can both register your machines to Power Automate and add them to machine gr
 
 
 ## Pre-requisites
-To silently register your machine(s), Power Automate Desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate Desktop silently](setup#install-power-automate-desktop-silently)
+To silently register your machine(s), Power Automate Desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate Desktop silently](/setup.md#install-power-automate-desktop-silently)
 
 To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
 
@@ -92,9 +92,9 @@ Machine registration arguments:
    1.	Machine name (optional): The name of the registered machine. 
 
    1.	Machine description (optional): The description of the registered machine
-
-    .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
-
+        ```
+        .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
+        ```
 >[!NOTE]
 >If you decide to use AAD account, you can specify the username: -username <UPN> instead of service principal account arguments
 
@@ -112,7 +112,7 @@ To join a group silently with the service principal account, use the join group 
 
 
     .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-
+    ```
 ## Secure input 
 In the machine registration tool, you will have to provide secure inputs for registration and joining group.
 You have two options to provide a secure input:
@@ -120,13 +120,14 @@ You have two options to provide a secure input:
 2.	redirect string/file to the silent registration application
 
     a.	redirect string (if you need to input multiple strings, you can do it easily in PowerShell): 
-        
+        ```
         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-
+        ```
     b.	redirect file: 
         i.	create a txt file that contains your password and save it in Power Automate Desktop folder (you will need to have admin privileges
         ii.	use the following: 
             1.	For cmd prompt: -grouppassword < pwd.txt
             2.	For Powershell:
-                
-            Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+                ```    
+                Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+                ```
