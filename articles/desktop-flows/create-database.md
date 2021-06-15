@@ -33,7 +33,11 @@ If you are an administrator or if you would like to provide information to the a
 
 ## Create a Microsoft Dataverse database in Power Automate Desktop
 
-Administrators can create a Microsoft Dataverse database in Power Automate Desktop. After installing Power Automate Desktop, log in with an administrator account and select **Create database**.
+Administrators can create a Microsoft Dataverse database in Power Automate Desktop. 
+
+If you're using a free work or school account, the provisioning will start automatically after logging in with your account.
+
+If the connected account is a premium account, select **Create database** to create a Microsoft Dataverse database.
 
    ![Create dataverse database admin](./media/create-database/freeorg-create-db.png)
 
