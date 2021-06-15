@@ -48,7 +48,7 @@ The trigger condition, **Change type**, precisely defines which combination of c
 
    ![Trigger conditions](../media/create-update-delete-trigger/2.png "Trigger conditions")
 
-When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, and `Delete`, respectively.
+When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
 ### Table name
 
