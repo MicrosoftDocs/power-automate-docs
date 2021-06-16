@@ -126,24 +126,20 @@ You have two options to provide a secure input:
     
     a. redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
 
-```
-echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-```
-<br>
+        `echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword`
+
     b. redirect file: 
-<br>
+
         i.	create a txt file that contains your password and save it in Power Automate Desktop folder (you will need to have admin privileges
-<br>
+
         ii.	use the following: 
-<br>
+
             1.	For cmd prompt: 
-<br>
-            ```
-            -grouppassword < pwd.txt
-            ```
-<br>
+
+            
+            `-grouppassword < pwd.txt`
+           
+
             2.	For Powershell: 
-<br>
-            ```
-            Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-            ```
+         
+            `Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword`
