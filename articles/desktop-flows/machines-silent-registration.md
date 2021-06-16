@@ -126,7 +126,8 @@ You have two options to provide a secure input:
     
     a. redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
 
-    ```echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+    ```
+echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
     ```
 
     b. redirect file: 
@@ -137,10 +138,11 @@ You have two options to provide a secure input:
 
             1.	For cmd prompt: 
 
-            ```-grouppassword < pwd.txt
-            ```
+    ```
+-grouppassword < pwd.txt
+    ```
 
             2.	For Powershell: 
 
-            ```Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-            ```
+    ```Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+    ```
