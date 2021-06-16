@@ -1,6 +1,6 @@
 ---
-title: Get position and size of a window | Microsoft Docs
-description: Get position and size of a window
+title: Get the position and size of a window | Microsoft Docs
+description: Get the position and size of a window
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Get position and size of a window
+# Get the position and size of a window
 
 
 When you automate windows and desktop applications, you may need to know the exact position and size of a window. 

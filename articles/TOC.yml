@@ -421,7 +421,7 @@
         href: ./desktop-flows/how-to/close-window-process-id.md 
       - name: Extract attributes from window elements
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
-      - name: Get position and size of a window
+      - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
@@ -429,7 +429,7 @@
       items:
       - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
-      - name: Get coordinates and size of a web element
+      - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   

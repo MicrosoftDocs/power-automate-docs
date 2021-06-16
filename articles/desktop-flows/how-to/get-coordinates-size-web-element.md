@@ -1,6 +1,6 @@
 ---
-title: Get coordinates and size of a web element | Microsoft Docs
-description: Get coordinates and size of a web element
+title: Get the coordinates and size of a web element | Microsoft Docs
+description: Get the coordinates and size of a web element
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Get coordinates and size of a web element
+# Get the coordinates and size of a web element
 
 When you automate web applications and web pages, you may need to know the exact location and size of a specific element. 
 
