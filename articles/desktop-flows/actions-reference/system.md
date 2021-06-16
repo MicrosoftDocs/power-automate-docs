@@ -194,7 +194,7 @@ Immediately stops a running process
 |-----|-----|-----|-----|-----|
 |Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate will be specified by its name, or by its ID|
 |Process ID|No|Numeric value||The ID of the process to terminate|
-|Process name|No|Text value||The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
+|Process name|No|Text value|Own text|The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
 
 
 ##### Variables Produced
