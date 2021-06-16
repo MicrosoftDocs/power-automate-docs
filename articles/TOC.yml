@@ -431,7 +431,7 @@
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
       - name: Get coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
-      - name:  Click all elements in a list of links
+      - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md

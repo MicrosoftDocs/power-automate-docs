@@ -1,6 +1,6 @@
 ---
-title: Click all elements in a list of links | Microsoft Docs
-description: Click all elements in a list of links
+title: Click all the elements in a list of links | Microsoft Docs
+description: Click all the elements in a list of links
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,9 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Click all elements in a list of links
+# Click all the elements in a list of links
 
-When automating web applications, you may meet scenarios that require you to click all the elemenets in a list of links.
+In web automation, it's common to meet scenarios that require you to click all the elements in a list of links.
 
 To automate these scenarios, use the **Extract data from web page** action and extract a random value from two consecutive links. Power Automate Desktop will automatically extract the respective value from all the links in the list.
 
