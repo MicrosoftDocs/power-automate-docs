@@ -395,11 +395,11 @@
       href: ./desktop-flows/desktop-automation.md
   - name: How to
     items:
-    - name: Handle email messages in automations
+    - name: Handle email messages in desktop flows
       items:
       - name: Add images to email messages
         href: ./desktop-flows/how-to/add-images-email-messages.md      
-      - name: Use a shared Outlook mailbox in email automation
+      - name: Use a shared Outlook mailbox in email automations
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
     - name: Automate tasks in Excel
       items: 
