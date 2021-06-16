@@ -34,12 +34,12 @@ Select to retrieve the attribute **parentwindowhandle** from a random element wi
 > The **Get details of a UI element in window** action requires a UI element that specifies the selected element in the window. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).
 
 You can use handles to manipulate windows through the following Windows actions of the UI automation group:
-- Focus window
-- Set window state
-- Set window visibility
-- Move window
-- Resize window
-- Close window.
+- [Focus window](actions-reference/uiautomation.md#focuswindowbase)
+- [Set window state](actions-reference/uiautomation.md#setwindowstatebase)
+- [Set window visibility](actions-reference/uiautomation.md#setwindowvisibilitybase)
+- [Move window](actions-reference/uiautomation.md#movewindowbase)
+- [Resize window](actions-reference/uiautomation.md#resizewindowbase)
+- [Close window](actions-reference/uiautomation.md#closewindowbase)
 
 
 
