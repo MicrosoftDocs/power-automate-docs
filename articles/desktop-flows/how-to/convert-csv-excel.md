@@ -29,12 +29,16 @@ To convert a CSV file of this type to XLSX, open the file and then save it as a 
 Although the **Launch Excel** action can handle the previously mentioned cases, semicolon-delimited CSV files may require a different approach. 
 
 > [!NOTE]
-> Excel uses the list separators defined in Windows regional settings. In some regions, the semicolon character isn't set as a separator by defaul
+> Excel uses the list separators defined in the Windows regional settings. In some regions, the semicolon character isn't set as a separator by default.
 
 To overcome this limitation, deploy the **Read from CSV file** action and set the semicolon character (**;**) as a custom separator in the advanced options.
 
 ![The custom separator option in the Read from CSV file action.](media/convert-csv-excel/read-csv-file-action.png)
 
-Next, launch a blank Excel document using the **Launch Excel** action and paste the CSV table into cell A1 using the **Write to Excel worksheet** action.
+Next, launch a blank Excel document using the **Launch Excel** action and paste the CSV table into cell A1 using the **Write to Excel worksheet** action. 
+
 
 ![The populated *Write to Excel worksheet action.](media/convert-csv-excel/write-excel-worksheet-action.png)
+
+Now, you can deploy the **Close Excel** action to save the Excel worksheet as a new XLSX file.
+
