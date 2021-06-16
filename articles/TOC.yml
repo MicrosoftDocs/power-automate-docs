@@ -405,8 +405,6 @@
       items: 
       - name: Convert a CSV file into an Excel spreadsheet
         href: ./desktop-flows/how-to/convert-csv-excel.md  
-      - name: Automate Excel using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-excel-keyboard-shortcuts.md  
     - name: Use images, image recognition and OCR
       items:
       - name: Print images
@@ -425,6 +423,8 @@
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
       - name: Get location and size of a window
         href: ./desktop-flows/how-to/get-location-size-window.md 
+      - name: Automate Excel using keyboard shortcuts
+        href: ./desktop-flows/how-to/automate-excel-keyboard-shortcuts.md  
     - name: Automate web applications and web pages
       items:
       - name: Deal with links that open new tabs
