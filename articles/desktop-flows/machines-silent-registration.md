@@ -126,9 +126,9 @@ You have two options to provide a secure input:
     
     a. redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
 
-    ```
+```
 echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-    ```
+```
 
     b. redirect file: 
 
