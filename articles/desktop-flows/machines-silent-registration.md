@@ -137,13 +137,13 @@ echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupi
         ii.	use the following: 
 
             1.	For cmd prompt: 
-
+<br>
     ```
 -grouppassword < pwd.txt
     ```
-
+<br>
             2.	For Powershell: 
-
+<br>
     ```
 Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
     ```
