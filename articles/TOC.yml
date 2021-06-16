@@ -393,6 +393,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    - name: Build a custom selector
+      href: ./desktop-flows/build-custom-selectors.md
   - name: How to
     items:
     - name: Handle email messages in desktop flows
@@ -433,8 +435,6 @@
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
-    - name: Build a custom selector
-      href: ./desktop-flows/how-to/build-custom-selectors.md
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
   - name: Desktop actions reference

@@ -35,7 +35,12 @@ To create a new selector, select the appropriate UI element and then the **New**
 
 ![The button to create a new selector.](media/build-custom-selectors/create-new-selector.png)
 
-Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left and displayed in the following form: **element[Attribute1=”Attribute1Name”][Attribute2=”Attribute2Name”]...[Attributen=”AttributenName”]**
+Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left and displayed in the following form: 
+
+**element[Attribute1=”Attribute1Name”][Attribute2=”Attribute2Name”]...[Attributen=”AttributenName”]**
+
+> [!NOTE]
+> Web and desktop selectors have the same structure and functionality. The main differences between them are the available attributes. Web selectors use HTML attributes, while desktop selectors represent UI elements.
 
 For example, the following selector pinpoints the **File** menu option in an untitled Notepad window. 
 
@@ -44,7 +49,7 @@ For example, the following selector pinpoints the **File** menu option in an unt
 
 ![A selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Now, assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: **:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
+Assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: **:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
 
 ![The updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
