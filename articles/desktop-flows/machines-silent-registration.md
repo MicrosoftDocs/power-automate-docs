@@ -131,11 +131,8 @@ echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupi
 ```
 <br>
     b. redirect file: 
-
         i.	create a txt file that contains your password and save it in Power Automate Desktop folder (you will need to have admin privileges
-
         ii.	use the following: 
-
             1.	For cmd prompt: 
 <br>
             ```
