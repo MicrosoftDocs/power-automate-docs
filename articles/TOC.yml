@@ -427,12 +427,12 @@
         href: ./desktop-flows/how-to/automate-excel-keyboard-shortcuts.md  
     - name: Automate web applications and web pages
       items:
-      - name: Deal with links that open new tabs
+      - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
       - name: Get coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
-      - name:  Click several links on a web page
-        href: ./desktop-flows/how-to/click-several-links-web-page.md   
+      - name:  Click all elements in a list of links
+        href: ./desktop-flows/how-to/click-elements-list-links.md   
     - name: Build a custom selector
       href: ./desktop-flows/how-to/build-custom-selectors.md
     - name: Run SQL queries to Microsoft Access

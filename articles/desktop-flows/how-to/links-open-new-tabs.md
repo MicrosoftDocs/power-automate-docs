@@ -1,6 +1,6 @@
 ---
-title: Deal with links that open new tabs | Microsoft Docs
-description: Deal with links that open new tabs
+title: Handle links that open new tabs | Microsoft Docs
+description: Handle links that open new tabs
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Deal with links that open new tabs
+# Handle links that open new tabs
 
 Power Automate Desktop uses browser instances to pinpoint specific web pages located in specific tabs on browser windows. 
 
@@ -29,13 +29,13 @@ The most straightforward approach is the use of the embedded automation browser 
 
 To navigate back to the previous page, you can use the **Go to web page** action.
 
-If your flow uses Edge, Internet Explorer, Chrome, or Firefox, there are also methods to deal with links that open new tabs.
+If your flow uses Edge, Internet Explorer, Chrome, or Firefox, there are also methods to handle links that open new tabs.
 
-You can grab the URL behind the link using the **HRef** option in the **Attribute name** field of the **Get details of element on web page** action. Then, you can navigate to the retrieved link in the same tab using the **Go to web page** action.
+You can retrieve the URL behind the link using the **HRef** option in the **Attribute name** field of the **Get details of element on web page** action. Then, you can navigate to the retrieved link in the same tab using the **Go to web page** action.
 
 ![The Attribute name filed in the Get details of element on web page action.](media/links-open-new-tabs/get-details-element-web-page-action.png)
 
-If the link is in JavaScript, you can grab the JavaScript function and run it as a URL in the **Go to web page** action. In this case, you should enter **JavaScript:** and the function to run.
+If the link is in JavaScript, you can retrieve the JavaScript function and run it as a URL in the **Go to web page** action. In this case, you should enter **JavaScript:** and the function to run.
 
 Another approach is to click the link and then use the **Attach to running instance** option of the previously mentioned browsers to attach your flow to the newly created tab.
 
