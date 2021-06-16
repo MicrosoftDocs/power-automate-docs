@@ -16,7 +16,7 @@ search.audienceType:
 
 # Build a custom selector
 
-Power Automate Desktop enables users to interact with web and desktop applications through UI elements. You can consider UI elements as application components, such as buttons and text fields.
+Power Automate Desktop enables users to interact with web and desktop applications through UI elements. Consider UI elements as application components, such as buttons and text fields.
 
 To specify a UI element, you have to create selectors that pinpoint the specific component you want to interact with.
 
