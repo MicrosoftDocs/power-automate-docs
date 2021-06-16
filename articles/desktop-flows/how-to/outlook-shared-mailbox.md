@@ -1,6 +1,6 @@
 ---
-title: Automate a shared Outlook mailbox | Microsoft Docs
-description: Automate a shared Outlook mailbox
+title: Use a shared Outlook mailbox in email automation | Microsoft Docs
+description: Use a shared Outlook mailbox in email automation
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate a shared Outlook mailbox
+# Use a shared Outlook mailbox in email automation
 
 Shared mailboxes allow groups of people to monitor and send emails from public email aliases. When a group user replies to messages sent to a shared mailbox, the email appears to be from the shared address, not from the individual user.
 
