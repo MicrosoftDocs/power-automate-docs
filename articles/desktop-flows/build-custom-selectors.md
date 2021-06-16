@@ -16,14 +16,14 @@ search.audienceType:
 
 # Build a custom selector
 
-Power Automate Desktop enables you to interact with web and desktop applications through UI elements. You can consider UI elements as application components, such as buttons and text fields.
+Power Automate Desktop enables users to interact with web and desktop applications through UI elements. You can consider UI elements as application components, such as buttons and text fields.
 
 To specify a UI element, you have to create selectors that pinpoint the specific component you want to interact with.
 
 > [!NOTE]
 > Power Automate Desktop supports the creation of multiple selectors for a UI element. If a selector fails to access the element, the following selector is used.
 
-Although Power Automate Desktop enables you to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
+Although Power Automate Desktop enables users to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
 
 When a custom selector is needed, you can modify an existing selector or build one from scratch.
 
@@ -55,7 +55,7 @@ Assume that you want to edit the selector to work with a Notepad window named **
 
 ## Use operators in a custom selector
 
-In the previous example, the selector located a Notepad window with a specific title. To make the selector more dynamic, you can replace the **Equals to** operator with other operators or regular expressions.
+In the previous example, the selector located a Notepad window with a specific title. To make the selector more dynamic, replace the **Equals to** operator with other operators or regular expressions.
 
 > [!Note]
 > Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
@@ -64,7 +64,7 @@ In the previous example, the selector located a Notepad window with a specific t
 
 The **Equals to** operator makes the selector search for a specific hard-coded value. Although this functionality is effective in static applications, hard-coded values can be a barrier in dynamic applications.
 
-You can use the **Contains** operator to locate elements that don't have fixed values but always contain a specific keyword. For example, you can apply the **Contains** operator in the Notepad selector to make it work with all Notepad windows.
+Use the **Contains** operator to locate elements that don't have fixed values but always contain a specific keyword. For example, apply the **Contains** operator in the Notepad selector to make it work with all Notepad windows.
 
 ![The Contains operator in the Notepad selector.](media/build-custom-selectors/contains-operator-notepad-selector.png)
 
@@ -72,7 +72,7 @@ You can use the **Contains** operator to locate elements that don't have fixed v
 
 Apart from various operators, Power Automate Desktop enables you to create dynamic selectors using variables.
 
-If the value of a selector's attribute depends on calculations and results of previous actions, you can replace the hard-coded value with a variable.
+If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
 To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](../variable-manipulation.md).
 
