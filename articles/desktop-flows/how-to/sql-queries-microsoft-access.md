@@ -38,6 +38,9 @@ The generated connection string must be similar to the following one:
 
 **Provider=Microsoft.ACE.OLEDB.12.0;Data Source=DatabasePath;Persist Security Info=False**
 
+> [!NOTE]
+> All the connection strings that establish connections with Microsoft Access databases consist of three main parts: the provider, the data source, and the security credentials (if applicable).
+
 ![A generated connection string.](media/sql-queries-microsoft-access/generated-connection-string.png)
 
 To run queries on the connected database, use the **Execute SQL statement** action. Power Automate Desktop supports all the essential queries, such as **SELECT**, **INSERT INTO**, and **UPDATE**.
