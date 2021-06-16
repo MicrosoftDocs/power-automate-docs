@@ -144,5 +144,6 @@ echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupi
 
             2.	For Powershell: 
 
-    ```Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+    ```
+Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
     ```
