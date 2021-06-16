@@ -129,7 +129,7 @@ You have two options to provide a secure input:
 ```
 echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
 ```
-
+<br>
     b. redirect file: 
 
         i.	create a txt file that contains your password and save it in Power Automate Desktop folder (you will need to have admin privileges
@@ -138,12 +138,12 @@ echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupi
 
             1.	For cmd prompt: 
 <br>
-    ```
--grouppassword < pwd.txt
-    ```
+            ```
+            -grouppassword < pwd.txt
+            ```
 <br>
             2.	For Powershell: 
 <br>
-    ```
-Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-    ```
+            ```
+            Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+            ```
