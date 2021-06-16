@@ -27,15 +27,15 @@ To perform OCR on these sources, use a Tesseract engine in the respective OCR ac
 When the **Use other languages** option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
 
 The **Language abbreviation** field indicates to the engine which language to look for during OCR. 
-The **Language data path** field contains the language data files used to train the OCR engine.
-
-> [!NOTE]
-> You can download the Tesseract OCR data files from [this GitHub repository](https://github.com/tesseract-ocr/tessdata/) or [this page](https://tesseract-ocr.github.io/tessdoc/Data-Files).
+The **Language data path** field contains the language data files (**.traineddata**) used to train the OCR engine.
 
 ![The Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/language-abbreviation-extract-text-ocr-action.png)
 
 After downloading the data files for the needed languages, move them to a common folder to make them available under the same path.
 
-Next, select the  created folder in the **Language data path** field, and populate the corresponding language codes in the **Language abbreviation** field. To separate the language codes, use the plus character (**+**).
+Next, select the created folder in the **Language data path** field, and populate the corresponding language codes in the **Language abbreviation** field. To separate the language codes, use the plus character (**+**).
+
+> [!NOTE]
+> You can find all the available language codes in the source of the language data files. In the following example, the used codes represent Telugu, Hindi, and English.
 
 ![The populated Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/populated-language-abbreviation-extract-text-ocr-action.png)

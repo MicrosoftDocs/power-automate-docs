@@ -24,11 +24,17 @@ To print an image file, create a batch script that launches Microsoft Paint and 
 > Before saving the script, replace the **Image_Path** placeholder with the file path of the image you want to print.
 
 ```
-@echo off
+@echo off+
 
 title Print Images
 
+
+rem The following command launches Microsoft Paint and prints the selected file using the default printer.
+
 mspaint /p "Image_Path"
+
+
+rem The following command ends the Microsoft Paint process. 
 
 taskkill /IM "mspaint.exe"
 ```
