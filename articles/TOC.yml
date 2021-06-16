@@ -423,8 +423,8 @@
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
       - name: Get position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
-      - name: Automate Excel using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-excel-keyboard-shortcuts.md  
+      - name: Automate applications using keyboard shortcuts
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
