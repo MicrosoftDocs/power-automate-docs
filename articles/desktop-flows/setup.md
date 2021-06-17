@@ -26,7 +26,8 @@ search.audienceType:
 
 ## Prerequisites
 
-- A work or school account to sign into your Windows device with administrator privileges and Power Automate.
+- A Microsoft work or school account to sign into Power Automate
+- An account with administrator privileges to sign in to your Windows device
 
 - System requirements:
 
@@ -39,6 +40,8 @@ search.audienceType:
         - Storage: 2GB
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
+> [!NOTE]
+> The minimum requirements do not include the resources required for the applications involved in the flows.
      
 > [!TIP]
 > If your device runs Windows 10 Home, you can use Power Automate Desktop to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
@@ -64,28 +67,10 @@ search.audienceType:
 
 - An active connection to the Internet.
 
-> [!IMPORTANT]
-> You must have the latest versions of each component to record, test, or run desktop flows.
 
 ## Set the display language for Power Automate Desktop
 
 The language used in the Power Automate Desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
-
-
-
-ptional)
-
-The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
-
-With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
-
-Follow these steps to install Selenium IDE:
-
-1. Make sure you already installed and enabled Windows recorder (v1) extension (see previous section)
-
-1. [Download and install](https://go.microsoft.com/fwlink/?linkid=2107665) the Selenium IDE for [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome.
-
-1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Supported languages
 
@@ -165,26 +150,13 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
 1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
 
-1. Windows Recorder v1 desktop flows does not support
-    -   Multiple monitors.
-    -   Double click, mouse hover, touch/pen input.
-    -   Interactions on Windows (File explorer, startup menu, task bar, etc.)
-
-1. Selenium desktop flows do not support
-    -   Right click.
-    -   User session information (for example: cookies) will not be reused during
-        playback. You will have to edit the script to embed sign in information when required by websites.
-
-You'll find feature-specific limitations included in the documentation for each feature.
 
 ## Learn more
 
 - Learn to [create Power Automate Desktop flows](create-flow.md).
-- Learn to [create Windows recorder (v1) flows](create-desktop.md).
-- Learn to [create Selenium IDE flows](create-web.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
-- Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

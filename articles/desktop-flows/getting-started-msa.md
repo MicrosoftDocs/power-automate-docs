@@ -18,7 +18,7 @@ search.audienceType:
 
 Power Automate Desktop enables regular and power users alike to create flows, which save time and eliminate human error. 
 
-Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from a website and save them in an Excel spreadsheet and email it as an attachment. Fill in web forms by supplying information dynamically from your files.  
+Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from a website and save them in an Excel spreadsheet then email it as an attachment. Fill in web forms by supplying information dynamically from your files.  
 
 Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or record your interactions as steps to be played back anytime. 
 
@@ -40,7 +40,7 @@ To create the flow:
     ![console new flow](media\getting-started-msa\console-new-flow.png)
 
 
-1. Populate a name for the flow and then select **Create**. In this example, the flow is named **Copy Folder to Desktop**.
+1. Enter a name for the flow and then select **Create**. In this example, the flow is named **Copy Folder to Desktop**.
 
     ![build flow dialog](media\getting-started-msa\build-flow-dialog.png)
 
