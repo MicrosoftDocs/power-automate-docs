@@ -91,7 +91,6 @@ Connect to a database and execute a SQL statement
 |-----|-----|-----|
 |QueryResult|Datatable|The result from the database in the form of a data table, with rows and columns|
 
-
 ##### <a name="executesqlstatement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
