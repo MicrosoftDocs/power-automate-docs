@@ -27,6 +27,25 @@ Automate PDF files and their content (text and images)
 |[Extract PDF pages to new PDF](#extractpages)|
 |[Merge PDF files](#mergefiles)|
 
+## Getting started with PDF actions
+
+Use the PDF action group to extract images and text from PDF files and arrange pages to create new documents.
+
+To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified, and the action is set to extract a range of pages. A password has been entered to access the secure file.
+
+![Screenshot of extract text from pdf action properties](media\pdf\extract-text-pdf-example.png)
+
+Similarly, extract images with the **Extract images from PDF** action. This action contains an additional option to specify a prefix for the image names.
+
+To create a new PDF document from an existing file, use the **Extract PDF file pages to new PDF file**. In the example below, the source document has been selected, and a file name for a new document has been specified. The pages have been entered as a combination of specific pages and a range.
+
+![Screenshot of extract pdf pages to new file action properties](media\pdf\extract-pdf-new-file-example.png)
+
+
+## PDF actions
+
+
+
 ### <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 Extract images from a PDF file
 
