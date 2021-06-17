@@ -47,6 +47,9 @@ To manually build a connection string, select **Build connections string** to op
 
 ![Screenshot of label in action](\media\database\data-link-properties.png)
 
+> [!NOTE]
+> Power Automate Desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
+
 ## Database actions
 
 ### <a name="connect"></a> Open SQL connection
@@ -87,7 +90,6 @@ Connect to a database and execute a SQL statement
 |Argument|Type|Description|
 |-----|-----|-----|
 |QueryResult|Datatable|The result from the database in the form of a data table, with rows and columns|
-
 
 ##### <a name="executesqlstatement_onerror"></a> Exceptions
 |Exception|Description|

@@ -17,7 +17,7 @@ search.audienceType:
 
 The flow console is the central interface of Power Automate Desktop.
 
-![The flow console](./media/console/flow-console.png)
+![The flow console](./media/console/pad-console.png)
 
 After signing in, your username will be displayed in the top-right corner, while a list of flows occupies the central pane. At the top right-hand side, a dropdown list allows you to switch environments in order to access different flows; alongside the environments are also the Settings and Help buttons, and a search bar for easily locating flows.
 
