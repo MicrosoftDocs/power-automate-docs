@@ -31,7 +31,7 @@ Automate PDF files and their content (text and images)
 
 Use the PDF action group to extract images and text from PDF files and arrange pages to create new documents.
 
-To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified, and the action is set to extract a range of pages. A password has been entered to access the secure file.
+To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified,\ and the action is set to extract a range of pages. A password has been entered to access the secure file.
 
 ![Screenshot of extract text from pdf action properties](media\pdf\extract-text-pdf-example.png)
 
