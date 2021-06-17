@@ -48,9 +48,13 @@ To simulate moving the mouse, use the **Move mouse** action. In the following ex
 
 ![Screenshot of move mouse action properties](\media\mousekeyboard\move-mouse-example.png)
 
-Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
+Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. 
 
 ![Screenshot of move mouse to image properties](\media\mousekeyboard\move-mouse-to-image-example.png)
+
+In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
+
+![Screenshot of move mouse to image advanced properties](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
 
 
 ## Mouse and keyboard actions
@@ -136,7 +140,7 @@ Moves the mouse over an image found on screen or on the foreground window
 |Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
 |Fail timeout|Yes|Numeric value|0|The fail timeout in seconds|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the image|
-|Click type|N/A|Left click, Right click, Middle click|Left click|The mouse click to send to the image|
+|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click to send to the image|
 |Seconds before click|Yes|Numeric value|0|The number of seconds to wait before sending the click|
 
 
@@ -183,7 +187,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Wait for text to appear|N/A|Boolean value|False|Specify whether to wait if the text isn't found on the screen or foreground window|
 |Fail if text doesn't appear within|Yes|Numeric value|10|The number of seconds to wait for the supplied text to appear|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
-|Click type|N/A|Left click, Right click, Middle click|Left click|The mouse click type to send to the text|
+|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click type to send to the text|
 |Wait before clicking for|Yes|Numeric value|1|The number of seconds to wait before clicking|
 |Mouse position relative to text|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|Specify which section of the text the mouse will be moved to|
 |Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
@@ -217,7 +221,7 @@ Sends a mouse click event
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Mouse event to send|N/A|Left click, Right click, Double click, Left button down, Left button up, Right button down, Right button up|Left click|Specify what form of mouse event to send|
+|Mouse event to send|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|Specify what form of mouse event to send|
 |Wait|Yes|Numeric value|0|The time to delay before sending the mouse event in 1/1000 of a second|
 |Move mouse|N/A|Boolean value|False|Move mouse|
 |X|No|Numeric value||The horizontal (X) position of the mouse in pixel coordinates|
