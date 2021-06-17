@@ -69,7 +69,7 @@ When an action throws an exception, the flow stops its execution by default. To 
 
 ![The on On error option in the action.](media/configuring-actions-exceptions/on-error-option-action.png)
 
-The dialog box first option is the **Retry action if an error occurs** checkbox, which makes the flow execute the action one more time after two seconds.
+The first option in the dialog box is the **Retry action if an error occurs** checkbox. This checkbox makes the flow execute the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
 ![The Retry action checkbox in the action.](media/configuring-actions-exceptions/retry-action.png)
 

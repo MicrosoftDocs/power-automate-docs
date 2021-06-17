@@ -249,11 +249,8 @@ You might not find the gateway in the list while creating the connection for the
 ## Learn more
 
 - Learn to [create Power Automate Desktop flows](create-flow.md).
-- Learn to [create Windows recorder (v1) flows](create-desktop.md).
-- Learn to [create Selenium IDE flows](create-web.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
-- Learn more about the [on-premises gateway](../gateway-reference.md#use-a-gateway).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
