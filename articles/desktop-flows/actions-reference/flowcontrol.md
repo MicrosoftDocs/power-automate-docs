@@ -29,6 +29,7 @@ Control the automation flow
 |[Go to](#goto)|
 |[Label](#label)|
 |[On block error](#block)|
+|[Run desktop flow](#runflow)|
 |[Run subflow](#callfunction)|
 |[Stop flow](#exit)|
 
@@ -141,6 +142,30 @@ Marks the beginning of a block to handle actions errors
 
 ##### <a name="block_onerror"></a> Exceptions
 - This action doesn't include any exceptions
+
+### <a name="runflow"></a> Run desktop flow
+Runs a desktop flow which can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Destop flow|No|Desktop flow||Select the desktop flow to run from within this flow|
+
+
+##### Variables Produced
+- This action produces the output variables of the selected flow
+
+##### <a name="runflow_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Run desktop flow failed|Indicates a problem while running the desktop flow|
+
+>[!NOTE]
+> * A flow's dependencies can't be more than 20 other flows.
+> * Two flows can't directly or indirectly call one-another as this causes a recursion.
+> * In org tenants, the flows must be under the same environment.
+
+
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
 
