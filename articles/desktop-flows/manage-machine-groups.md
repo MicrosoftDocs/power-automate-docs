@@ -48,7 +48,7 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Ensure that you are signed into the machine you want to set up. 
 
-1. Ensure you have the [latest version](/desktop-flows/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop installed. 
+1. Ensure you have the [latest version](/desktop-flows/install#install-power-automate-desktop) of Power Automate Desktop installed. 
 
 1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
 
@@ -75,7 +75,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 ## Trigger a desktop flow to run on your machine group 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+New step**. 
 
