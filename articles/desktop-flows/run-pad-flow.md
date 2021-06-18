@@ -24,7 +24,7 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
 
-- You need to [setup a desktop flow connection](setup.md)
+- If you use the on-premises data gateway to trigger desktop flows, you also need to [setup a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
 
 - A work or school account. 
 
