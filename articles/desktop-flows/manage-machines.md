@@ -83,7 +83,7 @@ You can update the running environment which your machine can run desktop flows 
 
 ## Trigger a desktop flow to run on your machine 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+ New step**. 
 
