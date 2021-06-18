@@ -48,7 +48,7 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Ensure that you are signed into the machine you want to set up. 
 
-1. Ensure you have the [latest version](/desktop-flows/install#install-power-automate-desktop) of Power Automate Desktop installed. 
+1. Ensure you have the [latest version](install#install-power-automate-desktop) of Power Automate Desktop installed. 
 
 1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
 
