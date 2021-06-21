@@ -63,15 +63,15 @@ In case a produced variable isn't needed for later use, unselect the checkbox un
 >[!NOTE]
 > Produced variable names, may not contain special characters, white spaces and non-latin characters and can't start with arithmetic characters.
 
-## Configuring action exceptions
+## Configuring action errors
 
-When an action throws an exception, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
+When an action throws an error, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
 
-![The on On error option in the action.](media/configuring-actions-exceptions/on-error-option-action.png)
+![The on On error option in the action.](media/configuring-actions-errors/on-error-option-action.png)
 
 The first option in the dialog box is the **Retry action if an error occurs** checkbox. This checkbox makes the flow execute the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
-![The Retry action checkbox in the action.](media/configuring-actions-exceptions/retry-action.png)
+![The Retry action checkbox in the action.](media/configuring-actions-errors/retry-action.png)
 
 To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
 
@@ -79,13 +79,13 @@ To continue the flow's execution, even if the retry option fails, select the **C
 - **Repeat action**: Repeats the action until it runs successfully. 
 - **Go to label**: Continues the execution from a point defined by a **Label** action.
 
-![The continue flow run option in the action.](media/configuring-actions-exceptions/continue-flow-run.png)
+![The continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
 
 Power Automate Desktop offers two additional error handling options. Select the **New rule** button to:
 - **Set variable**: Sets the desired value to a specified variable.
 - **Run subflow**: Executes a specified subflow. 
 
-![The New rule option in the action.](media/configuring-actions-exceptions/new-rule.png)
+![The New rule option in the action.](media/configuring-actions-errors/new-rule.png)
 
 If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 
 

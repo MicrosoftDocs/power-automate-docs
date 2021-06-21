@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can you can instantly start your desktop automation using any of the wide array of [available triggers](/triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
+Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can you can instantly start your desktop automation using any of the wide array of [available triggers](../triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
 
 Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate Desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
 
@@ -83,7 +83,7 @@ You can update the running environment which your machine can run desktop flows 
 
 ## Trigger a desktop flow to run on your machine 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+ New step**. 
 

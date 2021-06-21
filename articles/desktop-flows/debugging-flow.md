@@ -57,7 +57,7 @@ To run the flow starting from a specific action, right-click the action and sele
 
 ## Power Automate Desktop reserved keywords
 
-A certain amount of words are being used in the core of Power Automate Desktop and can't be used during development in the variable names.
+A certain amount of words are being used in the core of Power Automate Desktop and can't be used during development in the variable, subflow, label or error block names.
 The list of these words is displayed below.
 
 |<!-- --> |<!-- --> |<!-- --> |<!-- --> |

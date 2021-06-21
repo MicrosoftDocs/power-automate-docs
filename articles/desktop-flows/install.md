@@ -40,7 +40,7 @@ Follow these steps to install the Power Automate Desktop app:
 
 >[!IMPORTANT]
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
->It will also installs the Power Automate Desktop app and third-party components.
+>It will also install the Power Automate Desktop app and third-party components.
 
 ![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
 
@@ -62,7 +62,7 @@ Select one of the links displayed in the installer. For example, if you want to 
    The store for your browser opens directly to the public page for the extension.
 
 > [!IMPORTANT]
-> If you already install the Power Automate extension in the past, you don't need to reinstall it
+> If you have already installed the Power Automate extension in the past, you don't need to reinstall it
 
 #### Microsoft Edge: 
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
@@ -77,14 +77,14 @@ Select one of the links displayed in the installer. For example, if you want to 
 
 
 > [!TIP]
-> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not suppoted. 
+> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not supported. 
 
 ## Install Power Automate Desktop silently
 
 Follow these steps if you want to silently install Power Automate Desktop.
 
 >[!NOTE]
->The same installer is used for manual and silent installation of Power Automate Desktop.
+>The same installer is used for both manual and silent installation of Power Automate Desktop.
 
 ### Install Power Automate Desktop using the command line
 
@@ -96,12 +96,12 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
    ![A screenshot that displays the command prompt on the start menu](../media/desktop-flows-setup/command-prompt.png)
 
-1. Change the directory to downloads (or to the directory into which you downloaded Power Automate Desktop):
+1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate Desktop):
 
    For example, enter:
    
    ```
-    cd C:\Users\JohnDoe\Downloads\
+    cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
@@ -128,12 +128,12 @@ You can also retrieve the details of all the command line arguments from the hel
 | Command              | Description                                                                                                                                                                        |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
-| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to create it.                                                                 |
+| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to be created.                                                                 |
 | -DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
 | -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
-| -HELP               | This argument displays all details about the arguments for the installer. prompt                                                                                                                   |
+| -HELP               | This argument displays all details about the arguments for the installer prompt                                                                                                                   |
 
-Here's an example of a command line that installs Power Automate Desktop: 
+Here's an example of a command line argument that installs Power Automate Desktop: 
 
    ```
    Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
@@ -161,7 +161,7 @@ You will need the on-premises data gateway to trigger your desktop flows from a 
 You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
 
 >[!IMPORTANT]
->To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated session.
+>To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated access.
 
 
 ## Setup desktop flows connections and machine credentials
