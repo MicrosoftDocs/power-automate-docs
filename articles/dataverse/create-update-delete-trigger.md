@@ -64,10 +64,10 @@ The **Scope** list indicates whose rows should be monitored to determine if the 
 
 Here’s what each scope means:
 
-| **Scope**| **Row ownership level** |
-| ---------| --------------------------------- |
-| Business Unit               | Actions are taken on rows owned by anyone in your [business unit](/power-platform/admin/wp-security-cds#business-units).|                          |
-| Organization                | Actions are taken by anyone within the [environment](/power-platform/admin/environments-overview).|                                                    |
+|**Scope**| **Row ownership level** |
+|---------| ----------------------- |
+|Business Unit               | Actions are taken on rows owned by anyone in your [business unit](/power-platform/admin/wp-security-cds#business-units). |
+| Organization       | Actions are taken by anyone within the [environment](/power-platform/admin/environments-overview).  |
 | Parent: Child business unit | Actions are taken on rows that are owned by anyone in your [business unit or a child business unit](/power-platform/admin/wp-security-cds#business-units). |
 | User                        | Actions are taken on rows owned by you. |
 
