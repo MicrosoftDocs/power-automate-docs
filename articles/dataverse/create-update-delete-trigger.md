@@ -127,7 +127,7 @@ Follow these steps to impersonate a user:
 
    ![Run as the modifying user](../media/create-update-delete-trigger/run-as.png "Run as the modifying user")
 
-If nothing is specified, it defaults to the flow owner that created the flow&mdash;essentially, the author. Here are the other options:
+If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author. Here are the other options:
 
 - **Flow owner**: The user who created the flow.
 
