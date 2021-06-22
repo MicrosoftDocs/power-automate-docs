@@ -162,7 +162,10 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
 ## Runtime notifications
 
-A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error:
+A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
+
+> [!NOTE]
+> Runtime notifications are displayed when a flow is run directly from the console. When a flow is triggered from the portal, Power Automate Desktop doesn't display notifications.
 
 ![Notification window](\media\run-pad-flow\notification-window.png)
 
