@@ -45,7 +45,7 @@ To achieve that, launch the Excel file using the **Launch Excel** action. The fi
 
 Next, deploy the appropriate UI automation actions and navigate to **File** > **Info** > **Protect Workbook** > **Encrypt with Password**.
 
-> [!NOTE}
+> [!NOTE]
 > You can find more information about UI automation and how to use the respective actions in [Automate desktop flows](../desktop-automation.md).
 
 After selecting **Encrypt with Password**, populate an empty string in the popup dialog using the **Populate text field in windows** action. To notate the empty string, use the following expression: **%""%**.
@@ -54,8 +54,72 @@ To press the **OK** button and apply the change, deploy the **Press button in wi
 
 Lastly, deploy the **Close Excel** action to save the non-protected workbook as a new Excel file.
 
-After saving the file, follow the instructions in [Open an SQL connection to Excel files](sql-queries-excel.md) to open a connection to it.
+After saving the file, follow the instructions in [Open an SQL connection to Excel files](sql-queries-excel.md##open-an-sql-connection-to-an-excel-file) to open a connection to it.
 
 When the manipulation of the Excel file is completed, use the **Delete file(s)** action to delete the non-protected copy of the Excel file.
+
+## Read contents of an Excel spreadsheet
+
+Although the **Read from Excel worksheet** action can read the contents of an Excel worksheet, loops can take a significant time to iterate through the retrieved data.
+
+A more efficient way to retrieve specific values from spreadsheets is to treat Excel files as databases and execute SQL queries on them. This approach is faster and increases the performance of the flow.
+
+To retrieve all the contents of a spreadsheet, you can use the following SQL query in the **Execute SQL statements** action.
+
+```
+SELECT * FROM [SHEET$]
+```
+
+> [!NOTE]
+> To apply this SQL query in your flows, replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
+
+To retrieve the registries that contain a particular value in a specific column, use the following SQL query:
+
+```
+SELECT * FROM [SHEET$] WHERE [COLUMN NAME] = 'VALUE'
+```
+
+> [!NOTE] 
+> To apply this SQL query in your flows, replace:
+> - **SHEET** with the name of the spreadsheet you want to access
+> - **OLUMN NAME** with the column that contains the value you want to find.
+> - **VALUE** with the value you want to find.
+
+## Delete data from an Excel row
+
+Although Excel doesn't support the **DELETE** SQL query, you can use the **UPDATE** query to set all the cells of a specific row to null.
+
+More precisely, you can use the following SQL query:
+
+```
+UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
+```
+
+While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
+
+The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different.
+
+The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update. In your flow, use the column name and the value based on which combination describes the row uniquely.
+
+
+## Retrieve Excel data except for a specific row
+
+In some scenarios, you may need to retrieve all the contents of an Excel spreadsheet except for a specific row.
+
+A convenient way to achieve this result is to set values of the unwanted row to null and then retrieve all the values except for the null ones.
+
+To change the values of a specific row in the spreadsheet, you can use an **UPDATE** SQL query, as presented in [Delete data from an Excel row](sql-queries-excel.md):
+
+```
+UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
+```
+
+Next, run the following SQL query to retrieve all not null rows of the spreadsheet:
+
+```
+SELECT * FROM [SHEET$] WHERE [COLUMN1] IS NOT NULL OR [COLUMN2] IS NOT NULL
+```
+
+
 
 
