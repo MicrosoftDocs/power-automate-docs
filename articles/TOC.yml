@@ -407,6 +407,8 @@
       items: 
       - name: Convert a CSV file into an Excel spreadsheet
         href: ./desktop-flows/how-to/convert-csv-excel.md  
+      - name: Run SQL queries on Excel files
+        href: ./desktop-flows/how-to/sql-queries-excel.md 
     - name: Use images, image recognition and OCR
       items:
       - name: Use image recognition on machines with different screen resolutions
