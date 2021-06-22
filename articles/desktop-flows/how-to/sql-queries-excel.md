@@ -51,7 +51,7 @@ To press the **OK** button in the dialog and apply the changes, deploy the **Pre
 
 Lastly, deploy the **Close Excel** action to save the non-protected workbook as a new Excel file.
 
-After saving the file, follow the instructions in [Open an SQL connection to Excel files](sql-queries-excel.md##open-an-sql-connection-to-an-excel-file) to open a connection to it.
+After saving the file, follow the instructions in [Open an SQL connection to Excel files](sql-queries-excel.md#open-an-sql-connection-to-an-excel-file) to open a connection to it.
 
 When the manipulation of the Excel file is completed, use the **Delete file(s)** action to delete the non-protected copy of the Excel file.
 
@@ -105,7 +105,7 @@ In some scenarios, you may need to retrieve all the contents of an Excel spreads
 
 A convenient way to achieve this result is to set the values of the unwanted row to null and then retrieve all the values except for the null ones.
 
-To change the values of a specific row in the spreadsheet, you can use an **UPDATE** SQL query, as presented in [Delete data from an Excel row](sql-queries-excel.md##delete-data-from-an-excel-row):
+To change the values of a specific row in the spreadsheet, you can use an **UPDATE** SQL query, as presented in [Delete data from an Excel row](sql-queries-excel.md#delete-data-from-an-excel-row):
 
 ```
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
