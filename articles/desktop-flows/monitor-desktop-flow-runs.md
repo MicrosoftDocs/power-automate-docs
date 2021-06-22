@@ -71,7 +71,7 @@ You may have several desktop flow runs that were triggered by one flow run. Clic
 
 ## View the run queue for a queued run 
 
-The gateway your desktop flow run is using may be shared for running other desktop flows. To see its placement amongst the other upcoming desktop flow runs for that gateway, click the three dots next to the desktop flow name, then select See desktop flow in run queue. 
+Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
 
 ## Live updates 
 
