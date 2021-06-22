@@ -42,7 +42,7 @@ Expression|Description|Example
 
 ## Prerequisites
 * Access to Power Automate.
-* A spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
+* Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft Office 365 Outlook (While we use Office 365 Outlook, you can use any supported email service in your flows.)
 
 ## Use the or expression
