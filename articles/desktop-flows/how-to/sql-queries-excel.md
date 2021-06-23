@@ -28,10 +28,10 @@ Before running an SQL query, you have to open a connection with the Excel file y
 
 To establish the connection, deploy the **Open SQL connection** action and populate the following connection string in its properties.
 
-> [!NOTE]
-> To use the following connection string successfully, you have to download and install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255).
-
 **Provider=Microsoft.ACE.OLEDB.12.0;Data Source=%Excel_File_Path%;Extended Properties="Excel 12.0 Xml;HDR=YES";**
+
+> [!NOTE]
+> To use the presented connection string successfully, you have to download and install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255).
 
 ![The Open SQL connection action.](media/sql-queries-excel/open-sql-connection-action.png)
 
@@ -53,7 +53,7 @@ Next, deploy the appropriate UI automation actions and navigate to **File** > **
 
 ![The UI actions used to select the Encrypt with Password option.](media/sql-queries-excel/ui-actions.png)
 
-After selecting **Encrypt with Password**, populate an empty string in the popup dialog using the **Populate text field in windows** action. To notate the empty string, use the following expression: **%""%**.
+After selecting **Encrypt with Password**, populate an empty string in the popup dialog using the **Populate text field in windows** action. To populate an empty string, use the following expression: **%""%**.
 
 ![The opulate text field in windows action.](media/sql-queries-excel/populate-text-field-action.png)
 
@@ -114,9 +114,9 @@ UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 
 While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
 
-The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different.
+The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real scenario, the number of the columns may be different.
 
-The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update. In your flow, use the column name and the value based on which combination describes the row uniquely.
+The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update. In your flow, use the column name and the value based on which combination describes the rows uniquely.
 
 
 ## Retrieve Excel data except for a specific row
@@ -138,6 +138,5 @@ Next, run the following SQL query to retrieve all the rows of the spreadsheet th
 SELECT * FROM [SHEET$] WHERE [COLUMN1] IS NOT NULL OR [COLUMN2] IS NOT NULL
 ```
 
-
-
-
+> [!NOTE]
+> The COLUMN1 and COLUMN2 placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different.
