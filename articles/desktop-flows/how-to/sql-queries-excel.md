@@ -28,14 +28,18 @@ Before running an SQL query, you have to open a connection with the Excel file y
 
 To establish the connection, deploy the **Open SQL connection** action and populate the following connection string in its properties.
 
-**Provider=Microsoft.ACE.OLEDB.12.0;Data Source=%Excel_File_Path%;Extended Properties="Excel 12.0 Xml;HDR=YES";**
-
 > [!NOTE]
 > To use the following connection string successfully, you have to download and install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255).
+
+**Provider=Microsoft.ACE.OLEDB.12.0;Data Source=%Excel_File_Path%;Extended Properties="Excel 12.0 Xml;HDR=YES";**
+
+![The Open SQL connection action.](media/sql-queries-excel/open-sql-connection-action.png)
 
 The **%Excel_File_Path%** variable, located in the source part of the connection string, contains the path of the Excel file.
 
 You can initialize this variable using a **Set variable** action before the **Open SQL connection** action. Alternatively, you can replace it with the hardcoded path of the file.
+
+![The Set variable action populated with the Excel file path.](media/sql-queries-excel/set-variable-action.png)
 
 ## Open an SQL connection to a password-protected Excel file
 
@@ -43,17 +47,29 @@ A different approach is required in scenarios where you run SQL queries on passw
 
 To achieve that, launch the Excel file using the **Launch Excel** action. The file is password-protected, so populate the appropriate password in the **Password** field.
 
+![The Launch Excel action and the Password field.](media/sql-queries-excel/launch-excel-action.png)
+
 Next, deploy the appropriate UI automation actions and navigate to **File** > **Info** > **Protect Workbook** > **Encrypt with Password**. You can find more information about UI automation and how to use the respective actions in [Automate desktop flows](../desktop-automation.md).
+
+![The UI actions used to select the Encrypt with Password option.](media/sql-queries-excel/ui-actions.png)
 
 After selecting **Encrypt with Password**, populate an empty string in the popup dialog using the **Populate text field in windows** action. To notate the empty string, use the following expression: **%""%**.
 
+![The opulate text field in windows action.](media/sql-queries-excel/populate-text-field-action.png)
+
 To press the **OK** button in the dialog and apply the changes, deploy the **Press button in window** action.
 
+![The Press button in window action.](media/sql-queries-excel/press-button-action.png)
+
 Lastly, deploy the **Close Excel** action to save the non-protected workbook as a new Excel file.
+
+![The Close Excel with the Save document as option selected.](media/sql-queries-excel/close-excel-action.png)
 
 After saving the file, follow the instructions in [Open an SQL connection to Excel files](sql-queries-excel.md#open-an-sql-connection-to-an-excel-file) to open a connection to it.
 
 When the manipulation of the Excel file is completed, use the **Delete file(s)** action to delete the non-protected copy of the Excel file.
+
+![The Delete files action.](media/sql-queries-excel/delete-file-action.png)
 
 ## Read contents of an Excel spreadsheet
 
@@ -66,6 +82,8 @@ To retrieve all the contents of a spreadsheet, you can use the following SQL que
 ```
 SELECT * FROM [SHEET$]
 ```
+
+![The Execute SQL statements populated with a SELECT query.](media/sql-queries-excel/execute-sql-statement-action.png)
 
 > [!NOTE]
 > To apply this SQL query in your flows, replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
@@ -92,6 +110,8 @@ More precisely, you can use the following SQL query:
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 ```
 
+![The Execute SQL statements populated with a UPDATE query.](media/sql-queries-excel/execute-sql-statement-action-delete.png)
+
 While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
 
 The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different.
@@ -110,6 +130,7 @@ To change the values of a specific row in the spreadsheet, you can use an **UPDA
 ```
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 ```
+![The Execute SQL statements populated with a UPDATE query.](media/sql-queries-excel/execute-sql-statement-action-delete.png)
 
 Next, run the following SQL query to retrieve all the rows of the spreadsheet that don't contain null values:
 
