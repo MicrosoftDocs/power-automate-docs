@@ -18,9 +18,7 @@ search.audienceType:
 
 You may meet automation cases that require right-clicks, double-clicks, or other kinds of physical clicks on web elements.
 
-To send physical clicks on a web element, you need to know its exact coordinates on the screen.
-
-The first step to calculate the screen coordinates of the element is to retrieve its coordinates relative to the web page.
+To send physical clicks on a web element, you need to know its exact coordinates on the screen. The first step to calculate the screen coordinates of the element is to retrieve its coordinates relative to the web page.
 
 To get this information, follow the instructions in [Get the coordinates and size of a web element](get-coordinates-size-web-element.md). The instructions present the **waelementrectangle** property, but you can replace it with the **waelementcentercoords** property that specifies the center of a web element.
 
@@ -31,7 +29,7 @@ After completing this step, the flow must be similar to the following one:
 
 ![The current state of the flow that gets the coordinates of a web element.](media\send-physical-clicks-web-element\get-coordinates-web-element-flow.png)
 
-Now, you can use the **Send mouse click** action to send the wanted type of physical click to the web element.
+Now, you can use the **Send mouse click** action to send the wanted type of physical click on the web element.
 
 In the action's properties, enable the **Move mouse** option, and set the **X** and **Y** values to **%List[0] + Browser.DisplayRectangleX%** and **%List[1] + Browser.DisplayRectangleY%**, respectively.
 
