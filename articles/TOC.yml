@@ -435,6 +435,8 @@
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
       - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
+      - name: Send physical clicks on a web element
+        href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
       - name:  Scroll on a web page
