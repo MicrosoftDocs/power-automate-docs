@@ -23,7 +23,7 @@ To print an image file, create a batch script that launches Microsoft Paint and 
 > [!NOTE]
 > Before saving the script, replace the **Image_Path** placeholder with the file path of the image you want to print.
 
-```
+``` Batch script
 @echo off+
 
 title Print Images
@@ -48,6 +48,6 @@ Alternatively, you can print image files using the **Run DOS command** action wi
 > [!NOTE]
 > Before running the flow, replace the **Image_Path** and **Printer_Name** placeholders with the file path and the printer's name, respectively.
 
-```
+``` DOS command
 rundll32 C:\WINDOWS\system32\shimgvw.dll,ImageView_PrintTo "Image_Path" "Printer_Name"
 ```

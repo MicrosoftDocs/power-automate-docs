@@ -79,7 +79,7 @@ A more efficient way to retrieve specific values from spreadsheets is to treat E
 
 To retrieve all the contents of a spreadsheet, you can use the following SQL query in the **Execute SQL statements** action.
 
-```
+``` SQL
 SELECT * FROM [SHEET$]
 ```
 
@@ -90,7 +90,7 @@ SELECT * FROM [SHEET$]
 
 To retrieve the rows that contain a particular value in a specific column, use the following SQL query:
 
-```
+``` SQL
 SELECT * FROM [SHEET$] WHERE [COLUMN NAME] = 'VALUE'
 ```
 
@@ -106,7 +106,7 @@ Although Excel doesn't support the **DELETE** SQL query, you can use the **UPDAT
 
 More precisely, you can use the following SQL query:
 
-```
+``` SQL
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 ```
 
@@ -127,14 +127,14 @@ A convenient way to achieve this result is to set the values of the unwanted row
 
 To change the values of a specific row in the spreadsheet, you can use an **UPDATE** SQL query, as presented in [Delete data from an Excel row](sql-queries-excel.md#delete-data-from-an-excel-row):
 
-```
+``` SQL
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 ```
 ![The Execute SQL statements populated with a UPDATE query.](media/sql-queries-excel/execute-sql-statement-action-delete.png)
 
 Next, run the following SQL query to retrieve all the rows of the spreadsheet that don't contain null values:
 
-```
+``` SQL
 SELECT * FROM [SHEET$] WHERE [COLUMN1] IS NOT NULL OR [COLUMN2] IS NOT NULL
 ```
 

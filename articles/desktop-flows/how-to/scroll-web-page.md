@@ -39,7 +39,7 @@ Apart from the **Focus text field on web page** action, you can scroll on web pa
 
 JavaScript provides the **window.scrollTo(xpos, ypos)** function that scrolls to a specific part of a web page. The **xpos** placeholder indicates the horizontal scroll, while the **ypos** placeholder indicates the vertical scroll.
 
-```
+``` JavaScript
 function ExecuteScript() 
 {
 window.scrollTo(xpos, ypos);
@@ -52,7 +52,7 @@ You can replace both placeholders with hardcoded values, properties, or variable
 
 If you want to scroll to the bottom of a web page, you can replace the **ypos** placeholder with the **document.body.scrollHeight** property.
 
-```
+``` JavaScript
 function ExecuteScript() 
 {
 window.scrollTo(0, document.body.scrollHeight);
@@ -63,7 +63,7 @@ window.scrollTo(0, document.body.scrollHeight);
 
 If you want to scroll inside an element of a web page, not the page itself, you can use the HTML DOM property **scrollTop**. In the following example, the function locates the **divElem** and scrolls vertically 10 pixels down.
 
-```
+``` JavaScript
 function ExecuteScript() 
 {
 document.getElementById('divElem').scrollTop -= 10;

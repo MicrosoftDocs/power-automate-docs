@@ -35,7 +35,7 @@ To embed an image, check the **Body is HTML** option in the appropriate email ac
 > [!NOTE]
 > After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it.
 
-```
+``` HTML
 <html>
     <body>
         <h1>Title</h1>
