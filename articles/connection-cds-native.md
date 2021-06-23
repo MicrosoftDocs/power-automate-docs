@@ -76,7 +76,7 @@ Here are the details on each scope.
 Triggers that run when a row is updated can also use filtering columns. This ensures that the flow only runs when any of the defined columns are updated.
 
 > [!IMPORTANT]
-> Use filter columns to prevent your flow from unnecessarily running.
+> Use filter columns to prevent your flow from unnecessarily running. When you create filters, separate column names by commas. Don't insert spaces between the column names.
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
