@@ -437,6 +437,8 @@
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
+      - name:  Scroll on a web page
+        href: ./desktop-flows/how-to/scroll-web-page.md   
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
   - name: Desktop actions reference
