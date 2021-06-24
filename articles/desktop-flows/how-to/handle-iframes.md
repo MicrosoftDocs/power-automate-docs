@@ -22,7 +22,7 @@ When an iframe belongs to the same domain as the original page, you can use the 
 
 If the web automation actions don't work correctly with a particular iframe, you can use the UI automation actions to handle it. You can find more information about UI automation in [Automate desktop flows](..\desktop-automation).
 
-If an iframe is cross-domain, deploy the **Get details of element on web page** to retrieve the **source Link** attribute of the element.
+If an iframe is cross-domain, deploy the **Get details of element on web page** to retrieve the **Source Link** attribute of the element.
 
 ![The Get details of element on web page action.](media/handle-iframes/get-details-element-web=page-action.png)
 
