@@ -1,6 +1,6 @@
 ---
-title: Handle iframes in web automation | Microsoft Docs
-description: Handle iframes in web automation
+title: Handle iframes in a web page | Microsoft Docs
+description: Handle iframes in a web page
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Handle iframes in web automation
+# Handle iframes in a web page
 
 Iframes are HTML documents embedded inside other HTML documents. These elements are often used to insert content from external sources into web pages.
 
