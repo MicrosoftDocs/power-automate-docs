@@ -445,6 +445,8 @@
         href: ./desktop-flows/how-to/scroll-web-page.md   
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Extract text from a Word document using VBScript
+      href: ./desktop-flows/how-to/extract-text-word-document.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
