@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Read text from a Word document using VBScript
+# Extract text from a Word document using VBScript
 
 Although you can use optical character recognition (OCR) to extract text from Word documents, this approach can become complicated for multi-page documents that require scrolling.
 
@@ -52,6 +52,6 @@ The script contains a variable named **FilePath** that specifies the file path o
 
 ![The Set variable action.](media/extract-text-word-document/set-variable-action.png)
 
-The **Run VBScript** action stores the extracted text by default in a variable named **VBScriptOutput**. You can use this variable as an input in the available Text action to manipulate the retrieved text.
+The **Run VBScript** action stores the extracted text by default in a variable named **VBScriptOutput**. You can use this variable as an input in the available Text actions to manipulate the retrieved text.
 
 ![The Trim text action.](media/extract-text-word-document/trim-text-action.png)
