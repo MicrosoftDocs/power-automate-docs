@@ -11,7 +11,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/18/2020
+ms.date: 06/24/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -63,6 +63,8 @@ In this article, you will create a cloud flow that sends an email notification w
 ## Customize your flow template
 
 1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
+   
+   For more information on scope, see [Trigger flows&mdash;scope](/power-automate/dataverse/create-update-delete-trigger#scope).
    
     ![Specify the details for the table](./media/common-data-model-intro/specify-instance.png)
 
