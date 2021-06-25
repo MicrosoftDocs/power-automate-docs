@@ -58,7 +58,7 @@ The **Table name** list filters the rows to indicate precisely which kind of row
 
 ### Scope
 
-The **Scope** list indicates whose rows should be monitored to determine if the flow should be run.
+The **Scope** list indicates those rows should be monitored to determine if the flow should be run.
 
    ![Select scope for triggering flow](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
 
