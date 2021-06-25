@@ -90,13 +90,12 @@ to construct **Filter Query** expressions.
 >[!IMPORTANT]
 >Filter expressions cannot contain this string, **\$filter=**, because it only applies when you use the APIs directly.
 
-**Sort By**: Use to define an OData-style expression that defines the order in which items are returned. Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending. The following example shows how to retrieve a list of accounts in which the revenue is sorted in ascending order and the name is sorted in descending order.<!-- Edit note: Not sure if it matters but there is a comma before asc but not before desc. -->
+**Sort By**: Use to define an OData-style expression that defines the order in which items are returned. Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending. The following example shows how to retrieve a list of accounts in which the revenue is sorted in ascending order and the name is sorted in descending order.
 
 ![Sort by example](../media/list-rows/sort-by.png "Sort by example")
 
 **Expand Query**: Use to specify an OData-style expression that defines the data that Dataverse will return from related tables.
 
-<!--todo: I am not sure how talk about navigation properties is related here-->
 There are two types of navigation properties that you can use in **Expand Query**:
 
    1. *Single-valued* navigation properties correspond to lookup columns that support many-to-one relationships and allow you to set a reference to another table.
