@@ -4,7 +4,7 @@ description: Learn to use markdown to format Power Automate approval requests.
 services: ''
 suite: flow
 documentationcenter: na
-author: hamenon
+author: hamenon-ms
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/28/2021
-ms.author: hamenon-ms
+ms.author: hamenon
 search.app: 
   - Flow
 search.audienceType: 
@@ -213,7 +213,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 - To apply bold: surround the text with double asterisks `**`.    
 - To apply strikethrough: surround the text with double tilde characters `~~`.
 
-Combine these elements to apply multiple emphasis to text.    
+Combine these elements to apply multiple emphases to text.    
 
 **Example:**  
 ```Markdown
