@@ -144,7 +144,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
  
 
-1. If users have signed in with paid accounts or accounts with trial licenses and want to connect their free Microsoft accounts, they have to use Power Automate Desktop version 2.6.00158.21069 or above. Otherwise, they'll encounter the following error.  
+1. If users have signed in with paid accounts or accounts with trial licenses and want to connect their free Microsoft accounts, they have to use Power Automate Desktop version 2.6.48.21069 or above. Otherwise, they'll encounter the following error.  
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
