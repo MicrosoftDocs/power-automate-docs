@@ -167,7 +167,7 @@ A notification popup appears by default when a desktop flow is downloading or ru
 ![Notification window](\media\run-pad-flow\notification-window.png)
 
 > [!NOTE]
-> Runtime notifications are displayed when a flow is run directly from the console. When a flow is triggered from the portal, Power Automate Desktop doesn't display notifications.
+> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate Desktop doesn't display notifications.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
