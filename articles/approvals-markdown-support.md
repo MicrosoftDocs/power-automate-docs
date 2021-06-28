@@ -4,7 +4,7 @@ description: Learn to use markdown to format Power Automate approval requests.
 services: ''
 suite: flow
 documentationcenter: na
-author: gcorvera
+author: hamenon
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -12,8 +12,8 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/18/2020
-ms.author: gcorvera
+ms.date: 06/28/2021
+ms.author: hamenon-ms
 search.app: 
   - Flow
 search.audienceType: 
@@ -44,9 +44,11 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 | **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
 | **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 | **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Forced Line Breaks** | Yes | Yes | **_No_** (use a blank line instead) | Yes | Yes | Yes | **_No_** |
+| **Forced Line Breaks** | Yes* | Yes* | **_No_** (use a blank line instead) | Yes* | Yes* | Yes* | **_No_** |
 | **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
 | **Emphasis** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+
+*Forced line breaks *within table cells* are not supported for Power Automate, Power Automate mobile app, Outlook Web, Teams, and Teams mobile app.
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
@@ -185,7 +187,6 @@ Organize structured data with tables.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
-- To start a new line, use the HTML break tag (`<br/>`)
 - Make sure to end each row with a CR or LF. 
 
 **Example:**  
@@ -193,7 +194,7 @@ Organize structured data with tables.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:-----------:|-----------:|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br>second line of text |  
+| Cell B1 | Cell B2 | Cell B3 |  
 ```
 
 
