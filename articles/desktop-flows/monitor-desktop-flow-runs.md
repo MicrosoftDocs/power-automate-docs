@@ -38,7 +38,7 @@ From this page you can view all your desktop flow runs for the current environme
 
 In order to see runs in this list, one of the following must be true: 
 - You have [run an attended or unattended desktop flow](run-desktop-flow.md) in the current environment 
-- Another user has [shared their desktop flow](../create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
+- Another user has [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
 - You have [permission](/power-platform/admin/database-security) to view all data in the environment 
 
 > [!TIP]
@@ -71,7 +71,9 @@ You may have several desktop flow runs that were triggered by one flow run. Clic
 
 ## View the run queue for a queued run 
 
-The gateway your desktop flow run is using may be shared for running other desktop flows. To see its placement amongst the other upcoming desktop flow runs for that gateway, click the three dots next to the desktop flow name, then select See desktop flow in run queue. 
+Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
+
+![The See desktop flow in run queue option in Desktop flows run.](media\monitoring\monitor-desktop-see-desktop-flow-run-queue.png)
 
 ## Live updates 
 

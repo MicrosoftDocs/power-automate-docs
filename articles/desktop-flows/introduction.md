@@ -22,7 +22,7 @@ Leverage automation capabilities in Power Automate Desktop. Create flows, inte
 
 - Quickly organize your documents using dedicated files and folders actions 
 
-- Accurately extract data from websites and store them in excel files using Web and Excel automation  
+- Accurately extract data from websites and store them in excel files using Web and Excel automation
 
 - Apply desktop automation capabilities to put your work on autopilot  
 
