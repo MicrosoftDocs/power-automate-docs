@@ -83,7 +83,7 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 | ----------------- | -------------------------------------------------------- |
 | category          | The category of the flow. The different types are: 0 - classic Dataverse workflows,  1 - classic Dataverse dialogs, 2 - business rules, 3 - classic Dataverse actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
 | statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
-| workflowuniqueid  | The unique identifier for this installation of the flow. |
+| workflowidunique  | The unique identifier for this installation of the flow. |
 | workflowid        | The unique identifier for a cloud flow across all imports. |
 | createdon         | The date when the flow was created. |
 | _ownerid_value    | The unique identifier of the user or team who owns the flow. This is an id from the systemusers table in Dataverse. |
