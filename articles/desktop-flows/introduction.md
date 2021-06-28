@@ -20,9 +20,9 @@ Power Automate Desktop broadens the existing robotic process automation (RPA) ca
 
 Leverage automation capabilities in Power Automate Desktop. Create flows, interact with everyday tools such as email and excel or work with modern and legacy applications. Examples of simple and complex tasks you can automate are: 
 
-- Quickly organize your documents using dedicated [files](actions-reference/file.md) and [folders](actions-reference/folder.md) actions 
+- Quickly organize your documents using dedicated files and folders actions 
 
-- Accurately extract data from websites and store them in excel files using [Web](actions-reference/webautomation.md) and [Excel](actions-reference/excel.md) automation  
+- Accurately extract data from websites and store them in excel files using Web and Excel automation
 
 - Apply desktop automation capabilities to put your work on autopilot  
 
