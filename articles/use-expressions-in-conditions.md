@@ -42,7 +42,7 @@ Expression|Description|Example
 
 ## Prerequisites
 * Access to Power Automate.
-* A spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
+* Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft Office 365 Outlook (While we use Office 365 Outlook, you can use any supported email service in your flows.)
 
 ## Use the or expression
@@ -99,10 +99,10 @@ Let's create the flow.
 ### Check the status column of each row
 1. Select **New step** > **More** > **Add an apply to each**.
 
-    ![select table](includes/media/new-step/apply-to-each.png)
+    ![Add an apply to each](includes/media/new-step/apply-to-each.png)
 2. Add the **Value** token to the **Select an output from previous steps** box.
 
-    ![select table](includes/media/apply-to-each/add-value-token.png)
+    ![Add a value](includes/media/apply-to-each/add-value-token.png)
 3. Select **Add a condition** > **Edit in advanced mode**.
 4. Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
 
@@ -201,7 +201,7 @@ Use the **greater** expression to identify the employees who have paid less than
 
 Here's a view of the spreadsheet table:
 
-![view of spreadsheet](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png)
+![view of spreadsheet table](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png)
 
 Here's the implementation of the **and** expression that identifies all persons who have paid less than the amount due from them and the due date is less than one day away from the current date:
 
