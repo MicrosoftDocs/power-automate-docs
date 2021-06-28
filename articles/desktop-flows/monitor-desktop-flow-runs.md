@@ -73,6 +73,8 @@ You may have several desktop flow runs that were triggered by one flow run. Clic
 
 Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
 
+![The See desktop flow in run queue option in Desktop flows run.](media\monitoring\monitor-desktop-see-desktop-flow-run-queue.png)
+
 ## Live updates 
 
 To keep your desktop flow run information always up to date, you can activate the **Live updates** toggle switch at the top of the page. 
