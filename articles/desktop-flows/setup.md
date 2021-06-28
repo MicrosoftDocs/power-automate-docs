@@ -144,7 +144,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
  
 
-1. If the customer already installed Power Automate Desktop and has paid attended RPA license or trial license and wants to try ther free Microsoft account , they have to download the latest Power Automate Desktop version with March release to sign-in using their Microsoft Account. Otherwise, they see the below error.  
+1. If users have signed in with trial or paid accounts and want to connect their free Microsoft accounts, they have to use Power Automate Desktop version 2.6.48.21069 or above. Otherwise, they'll encounter the following error.  
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
