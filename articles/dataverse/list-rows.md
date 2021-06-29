@@ -75,11 +75,11 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 
 The advanced options for List Rows allow you to sort, filter, arrange, and extend the results that are returned. Here's an example of how they can be can be put together:
 
-![Advanced options example for List Rows action](https://user-images.githubusercontent.com/469480/123688353-be5b7400-d806-11eb-8f0b-e94ffaabe872.PNG)
+![Advanced options example for List Rows action](https://user-images.githubusercontent.com/469480/123717982-e4970900-d832-11eb-9dc5-420650eca6cb.png)
 
 **Select columns**: Enter a comma-separated list of columns to return, such as "name,createdon,preferredcontactmethodcode,emailaddress1,telephone1" for the Account table.
 
-**Filter rows**: Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdOn ge 2021-01-01T00:00:00-00:00" for rows with createdOn greater than or equal to the year 2021. 
+**Filter rows**: Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021. 
 
 >[!TIP]
 >Learn how to use [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#standard-filter-operators) and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#standard-query-functions)
