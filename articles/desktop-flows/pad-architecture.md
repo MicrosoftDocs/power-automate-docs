@@ -29,15 +29,15 @@ The **UIFlowService** is a Windows service that is installed with Power Automate
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it).
 
 The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over ports 443, 5671-5672, and 9350-9354. 
 
-Destination IP addresses for the Azure Relay can be found here for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
+Destination IP addresses for the Azure Relay can be found [here](https://www.microsoft.com/download/details.aspx?id=56519) for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
 ##  Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
 
-The **UIFlowService** is a Windows service that is installed with Power Automate Desktop on the desktop machine. The on-premises data gateway Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
+The **UIFlowService** is a Windows service that is installed with Power Automate Desktop on the desktop machine. The [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
 
 ![Desktop connectivity using the on-premises data gateway diagram](media/pad-architecture/pad-on-premises-data-gateway.png)
 
@@ -46,13 +46,13 @@ By default, the data gateway service is set to start automatically and runs as t
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it).
 
-The details about this data flow are documented in gateway communication. The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
+The details about this data flow are documented in [Adjust communication settings](https://docs.microsoft.com/data-integration/gateway/service-gateway-communication). The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
 
 ## Other Power Automate Desktop outgoing web requests 
 
-Power Automate Desktop makes some additional outgoing web requests at runtime, which are documented here. 
+Power Automate Desktop makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](https://docs.microsoft.com/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime). 
 
 The CRL endpoints use HTTP over port 80 and are initiated by the **UIFlowService**. 
 
