@@ -29,6 +29,8 @@ Azure Relay is a service that facilitates communication channels that are establ
 > [!NOTE]
 > The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
 
+![Desktop direct connectivity diagram](media/pad-architecture/pad-direct-connectivity.png)
+
 The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over ports 443, 5671-5672, and 9350-9354. 
 
 Destination IP addresses for the Azure Relay can be found here for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
@@ -43,6 +45,8 @@ Azure Relay is a service that facilitates communication channels that are establ
 
 > [!NOTE]
 > The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
+
+![Desktop connectivity using the on-premises data gateway diagram](media/pad-architecture/pad-on-premises-data-gateway.png)
 
 The details about this data flow are documented in gateway communication. The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
 
