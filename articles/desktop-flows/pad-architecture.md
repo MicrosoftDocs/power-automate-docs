@@ -1,6 +1,6 @@
 ---
-title: Power Automate Desktop Architecture | Microsoft Docs
-description: Power Automate Desktop Architecture
+title: Power Automate Desktop architecture | Microsoft Docs
+description: Power Automate Desktop architecture
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,11 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate Desktop Architecture
+# Power Automate Desktop architecture
 
-There are two different methods that Power Automate Desktop can use to connect to the cloud services to receive flow execution jobs. 
-
-The first option is direct connectivity, while the other option requires the on-premises data gateway to be installed.
+There are two different methods that Power Automate Desktop can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 
 The data flow between the desktop and the cloud is the same in both options, only the application and user account that initiates the web requests are different. 
 
@@ -29,7 +27,7 @@ The **UIFlowService** is a Windows service that is installed with Power Automate
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find information about Azure Relays here.
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
 
 The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over ports 443, 5671-5672, and 9350-9354. 
 
@@ -44,7 +42,7 @@ By default, the data gateway service is set to start automatically and runs as t
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find information about Azure Relays here.
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays here.
 
 The details about this data flow are documented in gateway communication. The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
 
@@ -62,13 +60,13 @@ The WebDriver endpoints are only required if you use Selenium IDE desktop flows 
 
 1. The machine registration request is sent by the desktop application to the Power Automate cloud services. The request contains the newly generated machine's public key. This key is stored along with the machine registration in the cloud. 
 
-1. When the request completes, the machine is successfully registered and appears in the Power Automate web portal as a resource that can be managed. However, the machine cannot be used by a flow until a connection to it's established. 
+1. When the request completes, the machine is successfully registered and appears in the Power Automate web portal as a resource that can be managed. However, the machine cannot be used by a flow until a connection to it is established. 
 
 1. To establish a Power Automate Desktop connection in the web portal, users must select an available machine and provide the username and password credentials of the account to use to run the desktop flow. 
 
-  Users can select any previously registered machine, including machines that have been shared with them. When a connection is saved, the credentials are encrypted using the public key associated with the machine and stored in this encrypted form. 
+    Users can select any previously registered machine, including machines that have been shared with them. When a connection is saved, the credentials are encrypted using the public key associated with the machine and stored in this encrypted form. 
 
-  The cloud service is storing the encrypted user credentials for the machine. However, it can't decrypt the credentials because the private key only exists on the desktop machine. The user can delete this connection at any point, and the stored encrypted credentials will also be deleted. 
+   The cloud service is storing the encrypted user credentials for the machine. However, it can't decrypt the credentials because the private key only exists on the desktop machine. The user can delete this connection at any point, and the stored encrypted credentials will also be deleted. 
 
 1. When a desktop flow is run from the cloud, it uses a previously established connection selected in the **Run a flow built with Power Automate Desktop**  action. 
 

@@ -336,7 +336,7 @@
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate Desktop
       href: ./desktop-flows/troubleshoot.md    
-  - name: Power Automate Desktop Architecture
+  - name: Power Automate Desktop architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
