@@ -90,7 +90,7 @@ to construct **Filter Query** expressions.
 
 **Sort By**: Use to define an OData-style expression that defines the order in which items are returned, such as "name desc". Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending. 
 
-**Expand Query**: Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select(contactid,fullname))" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response. 
+**Expand Query**: Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select=contactid,fullname)" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response. 
 
 There are two types of navigation properties that you can use in **Expand Query**:
 
