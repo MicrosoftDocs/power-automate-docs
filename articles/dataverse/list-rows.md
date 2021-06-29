@@ -75,7 +75,7 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 
 The advanced options for List Rows allow you to sort, filter, arrange, and extend the results that are returned. Here's an example of how they can be can be put together:
 
-![Advanced options example for List Rows action](https://user-images.githubusercontent.com/469480/123717982-e4970900-d832-11eb-9dc5-420650eca6cb.png)
+![Advanced options example for List Rows action](../media/list-rows/advanced-list-rows.png)
 
 **Select columns**: Enter a comma-separated list of columns to return, such as "name,createdon,preferredcontactmethodcode,emailaddress1,telephone1" for the Account table.
 
@@ -104,7 +104,7 @@ To use it in a flow step, enter an Odata expression as shown in the following im
 
 **Row count**: Use to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
 
-**Fetch Xml Query**: Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be especially useful when working with a table that has multiple related tables, or handling pagination. The below screenshot shows how to use FetchXML for the same the filters and sort conditions as the previous example: 
+**Fetch Xml Query**: Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be especially useful when working with a table that has multiple related tables, or handling pagination. The below screenshot shows how to use FetchXML for the same the filters and sort conditions as the previous example:
 
 ![List accounts example with FetchXML](https://user-images.githubusercontent.com/469480/123689706-6160bd80-d808-11eb-83e6-936e22850d9b.PNG)
 
