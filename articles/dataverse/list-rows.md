@@ -73,7 +73,7 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
    
    ![Advanced options](../media/list-rows/show-advanced-options.png) -->
 
-The advanced options for List Rows allow you to sort, filter, arrange, and extend the results that are returned. Here's an example of how they can be can be put together:
+The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query. Here's an example of how they can be can be put together:
 
 ![Advanced options example for List Rows action](../media/list-rows/advanced-list-rows.png)
 
