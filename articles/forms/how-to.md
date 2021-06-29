@@ -46,7 +46,7 @@ Go to your form. Copy the Form Id from the URL of the form and add it as a custo
 
 ## Send an email based on a conditional form response
 
-Once you choose the Microsoft Forms trigger and action, you can add a [condition](/add-condition.md#add-a-condition) based on a particular response in the form. The condition can include being equal to a text value or numerical value. Once the condition is created, you will see an “If yes” and “If no” statement for which you can add actions. For example, if someone responded that they would attend an event, you can send them the event details. Step by step instructions: [Create an automated workflow for Microsoft Forms](https://support.microsoft.com/office/create-an-automated-workflow-for-microsoft-forms-dee28c00-503a-48b3-89df-91a5084e6e43)
+Once you choose the Microsoft Forms trigger and action, you can add a [condition](/add-condition.md#add-a-condition) based on a particular response in the form. The condition can be equal to a text value or numerical value. After you create the condition, you will see an “If yes” and an “If no” statement for which you can add actions. For example, if someone responds that they would attend an event, you can send them the event details. Use the step by step instructions to [Create an automated workflow for Microsoft Forms](https://support.microsoft.com/office/create-an-automated-workflow-for-microsoft-forms-dee28c00-503a-48b3-89df-91a5084e6e43) to learn more.
 
 ## Convert an attachment in Microsoft Forms to PDF
 
