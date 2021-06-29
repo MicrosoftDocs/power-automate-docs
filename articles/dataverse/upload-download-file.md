@@ -26,9 +26,9 @@ search.audienceType:
 
 You can use flows to upload or download images and files in Microsoft Dataverse. There are two column data types for handling images and file content in Dataverse.
 
-- **File**: You can have a [column that stores arbitrary file data for your table](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/file-attributes).
+- **File**: You can have a [column that stores arbitrary file data for your table](https://docs.microsoft.com/powerapps/developer/data-platform/file-attributes).
 
-- **Image**: In addition to a column for storing the full size of an image as a file, the **Image** datatype can also include [thumbnail information](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/image-attributes).
+- **Image**: In addition to a column that stores the full size of an image as a file, the **Image** datatype can also include [thumbnail information](https://docs.microsoft.com/powerapps/developer/data-platform/image-attributes).
 
 You can use the Microsoft Dataverse connector to work with these data types in Power Automate.
 
