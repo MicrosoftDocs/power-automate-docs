@@ -37,7 +37,7 @@ This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Mar
 
 Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
-| Feature | Power Automate | Power Automate mobile app | Outlook desktop | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
+| Feature | Power Automate | Power Automate mobile app | Outlook | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
 |---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
 | **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 | **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
@@ -48,7 +48,7 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 | **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
 | **Emphasis** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 
-*Forced line breaks *within table cells* are not supported for Power Automate, Power Automate mobile app, Outlook Web, Teams, and Teams mobile app.
+*Forced line breaks *within table cells* are not supported for Power Automate, the Power Automate mobile app, Outlook Web, Teams, and the Teams mobile app.
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
