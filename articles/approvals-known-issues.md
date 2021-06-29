@@ -43,3 +43,7 @@ As part of the flow you can send an approval request to a user and wait for a re
 **Anchors**
 
 Anchor links are not supported. Unexpected results will occur if you use anchors.
+
+**Data Templating**
+
+Data templating isn't fully supported for adaptive cards in Power Automate. As a workaround, use actions like compose, filter, select, and apply to each to manually construct the card within your flows.
