@@ -104,7 +104,7 @@ To use it in a flow step, enter an Odata expression as shown in the following im
 
 **Row count**: Use to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
 
-**Fetch Xml Query**: Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be especially useful when working with a table that has multiple related tables, or handling pagination. The below screenshot shows how to use FetchXML for the same the filters and sort conditions as the previous example:
+**Fetch Xml Query**: Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
 ![List accounts example with FetchXML](https://user-images.githubusercontent.com/469480/123689706-6160bd80-d808-11eb-83e6-936e22850d9b.PNG)
 
@@ -127,9 +127,6 @@ Example FetchXML query for the Account table:
 	</entity>
 </fetch>
 ```
-
-
-<!--todo This section doesn't feel totally relevant to skip token-->
 
 **Skip token**: Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of tables returned](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#limits-on-number-of-tables-returned).
 
