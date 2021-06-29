@@ -31,7 +31,7 @@ Azure Relay is a service that facilitates communication channels that are establ
 > [!NOTE]
 > The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it).
 
-The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over ports 443, 5671-5672, and 9350-9354. 
+The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over port 443. 
 
 Destination IP addresses for the Azure Relay can be found [here](https://www.microsoft.com/download/details.aspx?id=56519) for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
@@ -54,7 +54,7 @@ The details about this data flow are documented in [Adjust communication setting
 
 Power Automate Desktop makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](https://docs.microsoft.com/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime). 
 
-The CRL endpoints use HTTP over port 80 and are initiated by the **UIFlowService**. 
+The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
 
 The WebDriver endpoints are only required if you use Selenium IDE desktop flows and have an automatically updating browser. These endpoints use HTTPS over port 443 and are initiated by the **Microsoft.Flow.RPA.Agent.exe** process using the user account that is running the desktop flow. 
 
