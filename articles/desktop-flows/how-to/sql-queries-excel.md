@@ -26,7 +26,11 @@ Oppositely, you can implement this functionality with SQL queries using only two
 
 Before running an SQL query, you have to open a connection with the Excel file you want to access. 
 
-To establish the connection, deploy the **Open SQL connection** action and populate the following connection string in its properties.
+To establish the connection, create a new variable named **%Excel_File_Path%** and initialize it with the Excel file path. Optionally, you can skip this step and use the hardcoded path of the file later in the flow.
+
+![The Set variable action populated with the Excel file path.](media/sql-queries-excel/set-variable-action.png)
+
+Now, deploy the **Open SQL connection** action and populate the following connection string in its properties.
 
 **Provider=Microsoft.ACE.OLEDB.12.0;Data Source=%Excel_File_Path%;Extended Properties="Excel 12.0 Xml;HDR=YES";**
 
@@ -34,12 +38,6 @@ To establish the connection, deploy the **Open SQL connection** action and popul
 > To use the presented connection string successfully, you have to download and install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255).
 
 ![The Open SQL connection action.](media/sql-queries-excel/open-sql-connection-action.png)
-
-The **%Excel_File_Path%** variable, located in the source part of the connection string, contains the path of the Excel file.
-
-You can initialize this variable using a **Set variable** action before the **Open SQL connection** action. Alternatively, you can replace it with the hardcoded path of the file.
-
-![The Set variable action populated with the Excel file path.](media/sql-queries-excel/set-variable-action.png)
 
 ## Open an SQL connection to a password-protected Excel file
 
