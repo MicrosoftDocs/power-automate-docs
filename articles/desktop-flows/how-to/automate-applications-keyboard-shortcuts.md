@@ -27,7 +27,7 @@ To select a specific element in the window, use the appropriate UI automation ac
 
 When the window is activated or the required element is selected, use the **Send keys** action to send the intended keystrokes.
 
-For example, you can use the **Ctrl + B** shortcut to appply bold formatting in the currently selected cell. To use this shortcut, populate the **Text to send** field of the **Send keys** action with the following expression: **{Control}({B})**
+For example, you can use the **Ctrl + B** shortcut to apply bold formatting in the currently selected cell. To use this shortcut, populate the **Text to send** field of the **Send keys** action with the following expression: **{Control}({B})**
 
 ![The Text to send field in the Send keys action.](media/automate-applications-keyboard-shortcuts/send-keys-action.png)
 
