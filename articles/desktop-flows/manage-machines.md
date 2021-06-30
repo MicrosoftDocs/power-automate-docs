@@ -4,7 +4,7 @@ description: Manage machines
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
-ms.date: 03/29/2021
+ms.date: 06/21/2021
 ms.author: getrantz
 ms.reviewer:
 search.app: 
@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can you can instantly start your desktop automation using any of the wide array of [available triggers](/triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
+Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the wide array of [available triggers](../triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
 
 Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate Desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
 
@@ -33,7 +33,7 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 Your machine will be automatically registered on the currently selected environment in the application. If you do not have permission to register your machine in that environment or want to use another environment, you will need to update the environment. 
 
-1. [Install the latest version](/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
+1. [Install the latest version](install.md) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
 
 1. When the installation has completed, select **Launch Power Automate Desktop**. 
 
@@ -83,7 +83,7 @@ You can update the running environment which your machine can run desktop flows 
 
 ## Trigger a desktop flow to run on your machine 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+ New step**. 
 
@@ -110,7 +110,7 @@ You can update the running environment which your machine can run desktop flows 
 Power Automate enables you to trigger desktop flows from cloud flows using events, schedules, and buttons. 
 
 > [!NOTE]
-> To apply this functionality, you have to own a [premium per-user plan with attended RPA](). 
+> To apply this functionality, you have to own a [premium per-user plan with attended RPA](https://flow.microsoft.com/pricing/). 
 
 
 ## View list of machines 
@@ -210,10 +210,9 @@ Environment admins can also restrict machine registration to a specific set of u
 
 |Name|Limit|
 |---|---| 
-|Maximum number of machines in a group |20| 
+|Maximum number of machines in a group |50| 
 |Maximum amount of time a desktop flow can run |24 hours| 
 |Maximum amount of time a desktop flow can be queued |3 hours| 
-|Maximum amount of time the next-to-run desktop flow in the run queue will wait for an available machine |15 minutes| 
 
 ## Other known limitations 
 

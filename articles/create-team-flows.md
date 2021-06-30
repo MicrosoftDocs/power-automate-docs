@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2020
+ms.date: 06/15/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -31,7 +31,7 @@ Share a cloud flow with others in your organization so they can also benefit fro
 
 ## Prerequisites
 
-- You must have a [paid Power Automate license](https://flow.microsoft.com/pricing/) to share a cloud flow.
+- You must have a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
@@ -41,7 +41,7 @@ Connections used in a cloud flow fall into two categories:
 - **Embedded**: These connections are used in the flow.
 - **Other**: These connections have been defined for a cloud flow, but aren't used in it.
 
-If you stop using a connection in a cloud flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.<!--What is the significance of this? Embedded versus other?  DH: Its described in this section-->
+If you stop using a connection in a cloud flow, that connection appears in the **Other connections** list, where it remains until an owner includes it in the flow again. To make changes to embedded connections, follow the steps in [Modify a connection](#modify-a-connection), later in this article.
 
 The list of connections appears under the list of owners in a cloud flow's properties, as shown in the following image.
 
@@ -64,7 +64,7 @@ If you're the creator or an owner of a cloud flow, you'll find it listed on the 
 >[!NOTE]
 >Shared connections can be used *only* in the flow in which they were created.
 
-Owners can use services in a cloud flow but can't modify the credentials for a connection that another owner created.<!--I'm confused by this. In line 42, you say that "any owner of a cloud flow can...update credentials for a connection." It seems that there's a difference between being added as an owner of a cloud flow and owning a connection within a cloud flow - will this be obvious to the reader? -->
+Owners can use services in a cloud flow but can't modify the credentials for a connection that another owner created.
 
 <!--markdownlint-disable MD036-->
 **To add more owners to a cloud flow**
@@ -192,5 +192,21 @@ If the shared flow still has an active owner, the flow will continue to run.
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
 
+### How can I change the owner of a solution flow?
+It is currently not possible to change the owner of a solution flow in the modern solution explorer. That capability will be added in the future.
+In the meantime, there is a workaround:
+
+1. Obtain the environment organization URL by selecting "Switch to classic" in the Solutions Explorer and copying the host name from the URL. This is an example: https://org123456.crm10.dynamics.com/.
+2. Open environment using organization URL
+3. Select **Settings** > **Advanced Settings**.
+4. Select **Advanced Find**.
+5. In the **Look for lookup**, select **Processes**.
+6. Select **Clear** to clear the existing filter.
+7. In the filter area, add a filter for Category Equals "Modern Flow"
+8. Select **Results** to see the list of flows that you own.
+9. Select the check box next to the desired flow and then select **Assign Processes**.
+10. Change **Assign to** to **User or team**.
+11. Use the **User or team** lookup to provide the new owner.
+12. Select **Assign**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

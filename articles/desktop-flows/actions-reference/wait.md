@@ -75,7 +75,7 @@ Suspends the execution until a process starts or stops
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Process name|No|Text value||The name of the process to check|
+|Process name|No|Text value|Own text|The name of the process to check|
 |Wait for process to|N/A|Start, Stop|Start|Whether to wait until a certain process starts or stops|
 
 
@@ -94,7 +94,7 @@ Suspend the execution of the automation until a service is running, paused or st
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for service to|N/A|Stop, Start, Pause|Start|Specifies whether the flow pauses until a certain service starts, stops or pauses|
-|Service name|No|Text value||The name of the service to check|
+|Service name|No|Text value|Own text|The name of the service to check|
 
 
 ##### Variables Produced

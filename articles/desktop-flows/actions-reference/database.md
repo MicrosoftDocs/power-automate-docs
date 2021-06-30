@@ -33,16 +33,22 @@ Connect to an Excel Database:
 
 Example of a connection string used to connect to an Excel database connection string that one can use is:
 
-    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myExcelFile.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES";
-
+```
+Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myExcelFile.xlsx;Extended Properties="Excel 12.0 Xml;HDR=YES";
+```
 
 Example of a connection string used to connect to an Access database:
 
-    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
+```
+Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
+```
 
 To manually build a connection string, select **Build connections string** to open the **Data Link Properties** window. The data link tool helps the user compose the required connection string step by step.
 
 ![Screenshot of label in action](\media\database\data-link-properties.png)
+
+> [!NOTE]
+> Power Automate Desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
 
 ## Database actions
 
@@ -84,7 +90,6 @@ Connect to a database and execute a SQL statement
 |Argument|Type|Description|
 |-----|-----|-----|
 |QueryResult|Datatable|The result from the database in the form of a data table, with rows and columns|
-
 
 ##### <a name="executesqlstatement_onerror"></a> Exceptions
 |Exception|Description|

@@ -20,10 +20,12 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 ## Prerequisites
 
-- You need the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409) for your device to have the desktop flow triggered by Power Automate.
-   
-   The gateway is an enterprise-grade secure connection between Power Automate and your device (where your desktop flows run). Power Automate uses the gateway to access your on-premises device so that it can trigger your desktop flows from an event, schedule, or button.
-- You need to [setup a desktop flow connection](setup.md)
+- To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
+
+   As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
+
+- If you use the on-premises data gateway to trigger desktop flows, you also need to [setup a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
+
 - A work or school account. 
 
    >[!IMPORTANT]
@@ -66,14 +68,14 @@ When an attended desktop flow starts on the target machine, we recommend that yo
 
 You can schedule multiple desktop flows to run on one or more devices. If more than one desktop flow is triggered to run on the same device, Power Automate follows these rules:
 
-1.  The first desktop flow runs on the target device based on [priority](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#setting-a-priority) and time requested.
+1.  The first desktop flow runs on the target device based on [priority](monitor-desktop-flow-queues.md#setting-a-priority) and time requested.
 
 1.  Queues other desktop flows and then displays them as **Queued**.
 
 1.  Picks the next desktop flow when each run completes based on priority and time requested, shown as **Next to run**.
 
 
-You can [view the real-time execution order](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#view-list-of-queued-desktop-flow-runs-for-a-specific-gateway) of a device by its run queue. You can also manually [change the order](https://docs.microsoft.com/power-automate/desktop-flows/monitor-desktop-flow-queues#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
+You can [view the real-time execution order](monitor-desktop-flow-queues.md#view-list-of-queued-desktop-flow-runs-for-a-specific-gateway) of a device by its run queue. You can also manually [change the order](monitor-desktop-flow-queues.md#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
 
 >[!NOTE]
 >These orchestration rules apply to desktop flows runs that are scheduled by any user on the same device.
@@ -160,9 +162,12 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
 ## Runtime notifications
 
-A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error:
+A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
 
 ![Notification window](\media\run-pad-flow\notification-window.png)
+
+> [!NOTE]
+> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate Desktop doesn't display notifications.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

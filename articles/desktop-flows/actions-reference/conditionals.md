@@ -86,7 +86,7 @@ Marks the beginning of a conditional block of actions depending on whether a pro
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If process|N/A|Is running, Isn't running|Is running|State of the process to check|
-|Process name|No|Text value||The name of the process to check|
+|Process name|No|Text value|Own text|The name of the process to check|
 
 
 ##### Variables Produced
@@ -104,7 +104,7 @@ Marks the beginning of a conditional block of actions depending on whether a ser
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If service|N/A|Is stopped, Is installed, Isn't installed, Is running, Is paused|Is running|The state of the service to check|
-|Service name|No|Text value||The name of the service to check|
+|Service name|No|Text value|Own text|The name of the service to check|
 
 
 ##### Variables Produced

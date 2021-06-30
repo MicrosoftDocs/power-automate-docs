@@ -25,6 +25,18 @@ Zip or unzip files from archives
 |[ZIP files](#zipfiles)|
 |[Unzip files](#unzipfiles)|
 
+## Getting started with compression actions
+
+To compress (or zip) a file, use the **ZIP files** action. Specify a path to the archive, or where it should be created. If the archive already exists, the specified files will be added to it. In the figure below, the path to the file is entered as a variable. **Best compression** ensures maximum file size reduction, and a password adds a layer of security to the archive. A comment is also added as a variable. 
+
+![zip files action properties screenshot](\media\compression\zip-example.png)
+
+**Unzip files** works similarly, and requires the path to the archive as well as the destination folder. In the figure below, **Include mask** has been set to **.xlsx;*.txt**, to only unzip files with the extensions .txt and .xlsx.
+
+![unzip files action properties screenshot](\media\compression\unzip-example.png)
+
+## Compression actions
+
 ### <a name="zipfiles"></a> ZIP files
 Compress one or more files or folders into a ZIP archive
 
