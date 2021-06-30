@@ -82,7 +82,7 @@ The advanced options for the **List Rows** action allow you to sort, filter, arr
 **Filter rows**: Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021. 
 
 >[!TIP]
->Learn how to use [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#standard-filter-operators) and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#standard-query-functions)
+>Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-query-functions)
 to construct **Filter Query** expressions.
 
 >[!IMPORTANT]
