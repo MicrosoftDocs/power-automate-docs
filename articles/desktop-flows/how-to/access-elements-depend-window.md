@@ -1,6 +1,6 @@
 ---
-title: Access elements that depend on how the window looks on the screen | Microsoft Docs
-description: Access elements that depend on how the window looks on the screen	
+title: Access elements that depend on how the window appears on the screen | Microsoft Docs
+description: Access elements that depend on how the window appears on the screen	
 author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Access elements that depend on how the window looks on the screen	
+# Access elements that depend on how the window appears on the screen	
 
 There are cases where Power Automate Desktop can't detect UI elements if they aren't visible on the computer screen.
 

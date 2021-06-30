@@ -431,7 +431,7 @@
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
-      - name: Access elements that depend on how the window looks on the screen	  
+      - name: Access elements that depend on how the window appears on the screen	  
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
     - name: Automate web applications and web pages
       items:
