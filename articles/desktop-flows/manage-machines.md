@@ -110,7 +110,7 @@ You can update the running environment which your machine can run desktop flows 
 Power Automate enables you to trigger desktop flows from cloud flows using events, schedules, and buttons. 
 
 > [!NOTE]
-> To apply this functionality, you have to own a [premium per-user plan with attended RPA](). 
+> To apply this functionality, you have to own a [premium per-user plan with attended RPA](https://flow.microsoft.com/pricing/). 
 
 
 ## View list of machines 
