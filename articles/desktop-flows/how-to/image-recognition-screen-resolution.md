@@ -25,7 +25,7 @@ To achieve this functionality, you can use the **Set screen resolution** action 
 The new resolution has to be the same as the source machine from which the image was captured. To find the resolution of the source machine, use a temporary **Get screen resolution** action or check the Windows display settings.
 
 > [!NOTE]
-> There isn't a direct way to adjust DPI scaling through Power Automate Dekstop, so ensure that the scaling stays the same among the screens.
+> Before using image recognition, ensure that DPI scaling stays the same among the screens. The use of varying DPI scalings may cause the flow to fail.
 
 ![The Set screen resolution action.](media/image-recognition-screen-resolution/set-screen-resolution.png)
 
