@@ -52,7 +52,7 @@ The details about this data flow are documented in [Adjust communication setting
 
 ## Other Power Automate Desktop outgoing web requests 
 
-Power Automate Desktop makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](https://docs.microsoft.com/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime). 
+Power Automate Desktop makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime). 
 
 The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
 
