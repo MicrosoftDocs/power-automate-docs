@@ -18,7 +18,7 @@ search.audienceType:
 
 Sending emails that contain images is common in many business procedures. Power Automate Desktop enables users to include images in their emails by attaching them or embedding them to the email body.
 
-## Attach images to email messages
+## Send images as email attachments
 
 To attach images to an email, use the **Attachment(s)** field in the **Send email**, **Send email message through Outlook**, **Respond to Outlook message**, and **Send Exchange email message** actions.
 
@@ -26,14 +26,14 @@ You can populate the **Attachment(s)** field with file paths or a variable conta
 
 ![Two example paths in the Attachment(s) field of the Send email action.](media/add-images-email-messages/attach-images-email.png)
 
-## Embed images to email messages
+## Embed images to email body
 
 Apart from attaching images to emails, Power Automate Desktop allows you to embed images to email bodies using HTML.
 
 To embed an image, check the **Body is HTML** option in the appropriate email action and populate the **Body** field with the following code:
 
 > [!NOTE]
-> After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it.
+> After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it. In the following example, the URL is defined by a variable named **ImageUrl**.
 
 ``` HTML
 <html>
