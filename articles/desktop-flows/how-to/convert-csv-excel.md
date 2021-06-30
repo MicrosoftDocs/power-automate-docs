@@ -29,9 +29,9 @@ To convert a CSV file of this type to XLSX, open the file and then save it as a 
 Although the **Launch Excel** action can handle the previously mentioned cases, semicolon-delimited CSV files may require a different approach. 
 
 > [!NOTE]
-> Excel uses the list separators defined in the Windows regional settings. In some regions, the semicolon character isn't set as a separator by default.
+> Excel uses the list separators defined in the Windows regional settings. In some regions, you have to manually set the semicolon character as a separator or apply the following workaround.
 
-To overcome this limitation, deploy the **Read from CSV file** action and set the semicolon character (**;**) as a custom separator in the advanced options.
+To overcome this limitation, deploy the **Read from CSV file** action and set the semicolon character (**;**) as a custom separator in the advanced options. If the first row of the CSV file contains headers, enable the **First line contains column names** option to use the respective headers at the retrieved datatable.
 
 ![The custom separator option in the Read from CSV file action.](media/convert-csv-excel/read-csv-file-action.png)
 
