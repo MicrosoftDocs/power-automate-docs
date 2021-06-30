@@ -33,7 +33,7 @@ Apart from attaching images to emails, Power Automate Desktop allows you to embe
 To embed an image, check the **Body is HTML** option in the appropriate email action and populate the **Body** field with the following code:
 
 > [!NOTE]
-> After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it. In the following example, the URL is defined by a variable named **ImageUrl**.
+> After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it.
 
 ``` HTML
 <html>
