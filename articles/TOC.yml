@@ -405,6 +405,64 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    - name: Build a custom selector
+      href: ./desktop-flows/build-custom-selectors.md
+  - name: How to
+    items:
+    - name: Handle email messages in desktop flows
+      items:
+      - name: Add images to email messages
+        href: ./desktop-flows/how-to/add-images-email-messages.md      
+      - name: Use a shared Outlook mailbox in email automations
+        href: ./desktop-flows/how-to/outlook-shared-mailbox.md
+    - name: Automate tasks in Excel
+      items: 
+      - name: Convert a CSV file into an Excel spreadsheet
+        href: ./desktop-flows/how-to/convert-csv-excel.md  
+      - name: Run macros on an Excel workbook
+        href: ./desktop-flows/how-to/run-macros-excel.md  
+      - name: Run SQL queries on Excel files
+        href: ./desktop-flows/how-to/sql-queries-excel.md 
+    - name: Use images, image recognition and OCR
+      items:
+      - name: Use image recognition on machines with different screen resolutions
+        href: ./desktop-flows/how-to/image-recognition-screen-resolution.md  
+      - name: Perform OCR on multilingual documents
+        href: ./desktop-flows/how-to/ocr-multilingual-documents.md  
+      - name: Print images
+        href: ./desktop-flows/how-to/print-images.md  
+    - name: Automate Windows and desktop applications
+      items:
+      - name: Identify a window by its handle
+        href: ./desktop-flows/how-to/identify-window-handle.md   
+      - name: Close any window through its process ID
+        href: ./desktop-flows/how-to/close-window-process-id.md 
+      - name: Extract attributes from window elements
+        href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
+      - name: Get the position and size of a window
+        href: ./desktop-flows/how-to/get-position-size-window.md 
+      - name: Automate applications using keyboard shortcuts
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
+      - name: Access elements that depend on how the window appears on the screen	  
+        href: ./desktop-flows/how-to/access-elements-depend-window.md  
+    - name: Automate web applications and web pages
+      items:
+      - name: Handle links that open new tabs
+        href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Get the coordinates and size of a web element
+        href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
+      - name: Send physical clicks on a web element
+        href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
+      - name:  Click all the elements in a list of links
+        href: ./desktop-flows/how-to/click-elements-list-links.md   
+      - name:  Scroll on a web page
+        href: ./desktop-flows/how-to/scroll-web-page.md   
+      - name: Handle iframes on a web page
+        href: ./desktop-flows/how-to/handle-iframes.md  
+    - name: Run SQL queries to Microsoft Access
+      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Extract text from a Word document using VBScript
+      href: ./desktop-flows/how-to/extract-text-word-document.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
