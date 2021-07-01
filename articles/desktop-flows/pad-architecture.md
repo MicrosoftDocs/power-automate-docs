@@ -35,7 +35,10 @@ The outgoing web requests from the **UIFlowService** on the desktop machine to t
 
 Destination IP addresses for the Azure Relay can be found [here](https://www.microsoft.com/download/details.aspx?id=56519) for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
-##  Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
+## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
+
+> [NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Attended/Unattended desktop direct connectivity to the cloud service]().
 
 The **UIFlowService** is a Windows service that is installed with Power Automate Desktop on the desktop machine. The [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
 
