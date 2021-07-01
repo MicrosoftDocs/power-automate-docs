@@ -48,7 +48,7 @@ To make it select a different link in each iteration, change the **tr:eq(0)** pa
 ![The modified selector n the Custom selector builder.](media/click-elements-list-links/modified-selector.png)
 
 > [!NOTE]
-> You can find more information regarding custom selectors in [Build a custom selector](build-custom-selectors.md).
+> You can find more information regarding custom selectors in [Build a custom selector](../build-custom-selectors.md).
 
 Lastly, use the **Go to web page** action to go back to the original page after each click. You can perform additional operations on each loaded page between the **Click link on web page** and **Go to web page** actions.
 

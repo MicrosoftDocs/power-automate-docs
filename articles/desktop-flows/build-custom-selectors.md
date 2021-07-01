@@ -74,7 +74,7 @@ Apart from various operators, Power Automate Desktop enables you to create dynam
 
 If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
-To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](../variable-manipulation.md).
+To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
 
 If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="notepad"]**.
 
