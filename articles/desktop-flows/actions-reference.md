@@ -22,6 +22,7 @@ In this section, you can find a reference to all actions of the Power Automate D
 
 Click on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
 
+|<!-- --> |
 |-----|
 |[Variables](actions-reference/variables.md)|
 |[Conditionals](actions-reference/conditionals.md)|
