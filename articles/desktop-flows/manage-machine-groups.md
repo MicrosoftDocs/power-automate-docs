@@ -100,7 +100,9 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. You can now trigger your desktop flow to run on your machine group from the cloud. 
 
- 
+ >[!IMPORTANT]
+>If you are using local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
+>If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
 
 ## View list of machine groups 
 
