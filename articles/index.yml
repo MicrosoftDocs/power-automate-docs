@@ -78,7 +78,7 @@ conceptualContent:
           url: ./desktop-flows/introduction.md
           itemType: overview
         - text: Set up Power Automate Desktop
-          url: ./desktop-flows/setup.md
+          url: ./desktop-flows/install.md
           itemType: how-to-guide
         - text: Create desktop flows
           url: ./desktop-flows/create-flow.md
