@@ -115,7 +115,7 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
    
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
->If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be use in the desktop flows connection can access all machines in the cluster.
+>If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
    
 ## Best practices to avoid timeouts and distribute load across machines
 
