@@ -1,5 +1,5 @@
 ---
-title: Create the cloud flow with the Power Automate | Microsoft Docs
+title: Create the cloud flow to update an address in SAP | Microsoft Docs
 description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, we'll create the cloud flow that employees use to request an updated address. This cloud flow passes the input variables to the desktop flow you created in the previous section.
 suite: flow
 documentationcenter: na

@@ -1,5 +1,5 @@
 ---
-title: RPA Playbook for SAP GUI Automation with Power Automate | Microsoft Docs
+title: RPA Playbook front page for SAP GUI automation with Power Automate | Microsoft Docs
 description: This playbook includes prerequisites, patterns and best practices for SAP GUI based automation leveraging Power Automate and Power Automate Desktop.
 suite: flow
 documentationcenter: na
@@ -48,7 +48,7 @@ Table of Contents
 
 [2.1 License requirements 2](./prerequisites.md#license-requirements)
 
-[2.2 Software prerequisites 2](./prerequisites.md#software-prerequisites)
+[2.2 Software prerequisites 2](./prerequisites.md#software-requirements)
 
 [2.3 SAP GUI scripting configurations 2](./prerequisites.md#sap-gui-scripting-configuration)
 
@@ -64,9 +64,9 @@ Table of Contents
 
 [3.4 On-premises data gateway 2](#on-premises-data-gateway)
 
-[4 Sample SAP scenario for this tutorial 2](#sample-sap-scenario-for-this-tutorial)
+[4 Sample SAP scenario for this tutorial 2](./sample-sap-scenario.md)
 
-[5 VBScript-based SAP GUI automation 2](#vbscript-based-sap-gui-automation)
+[5 VBScript-based SAP GUI automation 2](./vbscript-based-sap-gui-automation.md)
 
 [5.1 Reviewing the generated code 2](./reviewing-the-generated-code.md)
 
@@ -92,9 +92,9 @@ Table of Contents
 
 [8 Extracting information from SAP GUI UI 2](#extracting-information-from-sap-gui-ui)
 
-[8.1 Pro-code approach 2](#pro-code-approach)
+[8.1 Pro-code approach 2](./extracting-information-from-sap-gui-ui.md#pro-code-approach)
 
-[8.1 Low-code approach 2](#low-code-approach)
+[8.1 Low-code approach 2](extracting-information-from-sap-gui-ui.md#low-code-approach)
 
 [9 Feature highlights per approach 2](#feature-highlights-per-approach)
 
