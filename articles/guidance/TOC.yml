@@ -52,3 +52,7 @@
         href: planning/analyze-and-assess.md
       - name: Discovering performance issues
         href: planning/discover-performance-issues.md
+  - name: Use RPA with SAP
+    items:
+    - name: Introduction
+      href: rpa-sap-playbook/introduction.md

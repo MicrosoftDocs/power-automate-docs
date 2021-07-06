@@ -66,9 +66,9 @@ Table of Contents
 
 [4 Sample SAP scenario for this tutorial 2](./sample-sap-scenario.md)
 
-[5 VBScript-based SAP GUI automation 2](./vbscript-based-sap-gui-automation.md)
+[5 VBScript-based SAP GUI automation 2](./vbscript-based-sap-gui-automation-overview.md)
 
-[5.1 Reviewing the generated code 2](./reviewing-the-generated-code.md)
+[5.1 Reviewing the generated code 2](./reviewing-generated-code.md)
 
 [5.2 Adding variables to your VBScript 2](./adding-variables-to-your-vbscript.md)
 

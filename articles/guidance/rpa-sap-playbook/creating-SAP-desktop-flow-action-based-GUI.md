@@ -286,7 +286,7 @@ ms.reviewer: deonhe
 
 50. Select **UI element**, and then select **Street**.
 
-    ![Screenshot of the Populate text field in window dialog box with the Text box drop down open and the available UI elements showing ](media/populate-text-field-in-window-with-text-box-dropdown-with-UI-elements.png)
+    ![Screenshot of the Populate text field in window dialog box with the Text box drop down open and the available UI elements displayed ](media/populate-text-field-in-window-with-text-box-dropdown-with-UI-elements.png)
 
 51. On the **Text to fill-in** box, select the ***fx*** icon, and then double-click on the **Street** variable.
 
