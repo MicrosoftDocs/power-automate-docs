@@ -187,7 +187,7 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
  
    - To connect to a machine, select **Directly to machine** in the **Connect** field and choose a machine or a machine group in the **Machine or machine group** field.
 
-   ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-gateway.png)
+      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-gateway.png)
 
    - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field and choose a gateway in the **Choose a gateway** field.
 
