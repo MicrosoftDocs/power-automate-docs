@@ -41,12 +41,12 @@ ProcessRobot users:
 
  - The latest publicly available version of Power Automate Desktop installed 
  - Access to a Power Automate environment. Follow the get started documentation if you haven't already provisioned an environment 
- - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate Desktop. 
+ - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate Desktop 
 
 
 ## Installing Process migrator for Softomotive products (preview) 
 
-After successfully [downloading the setup file](https://go.microsoft.com/fwlink/?linkid=2151571) of the Process migrator for Softomotive products (preview), run it.  
+After successfully [downloading the setup file](https://go.microsoft.com/fwlink/?linkid=2151571) of the Process migrator for Softomotive products (preview), run it to install it on your machine.  
 
 > [!NOTE]
 > - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview).  
@@ -66,7 +66,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
 ## Running Process migrator for Softomotive products (preview) 
 
-1. After launching the Process migrator for Softomotive products (preview), you'll be prompted to populate your Power Automate account.
+1. After launching Process migrator for Softomotive products (preview), you'll be prompted to populate your Power Automate account.
 
     ![Process migrator for Softomotive products (preview) installer step 4](media/migrator/migrator_4.png)
 
@@ -91,7 +91,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
     > [!NOTE]
     > Some delay might be expected after this step, but the application is successfully operating in the background. 
 
-    When the process retrieving is completed, choose the processes to migrate, as well as the Power Automate environment that will store them. The default environment is pre-selected. 
+    When the process retrieving is completed, choose the processes to migrate and the Power Automate environment that will store them. The default environment is pre-selected. 
  
     ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/migrator_7.png)   
 
@@ -101,7 +101,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
 ### Migrating PorcessRobot processes to Power Automate Desktop
 
-1. If you chose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
+1. If you choose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
 
     ![Process migrator for Softomotive products (preview) installer step 7b](media/migrator/Browse_To_Folder.png)
 
