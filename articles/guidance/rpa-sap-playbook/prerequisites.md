@@ -85,6 +85,6 @@ Before you can use the SAP scripting engine, configure, or confirm the following
 
 ## Azure Key Vault credentials (optional)
 
-While this configuration step is not mandatory to create and run desktop flows, we highly recommend that you use [Azure Key Vault](https://azure.microsoft.com/services/key-vault) as a central cloud repository for your secure strings, such as SAP Passwords and SAP User Names. For this example scenario, we’vecreated four use-case-specific secrets on Key Vault. We'll use these secrets later to pass to our desktop flow as secure inputs.
+While this configuration step is not mandatory to create and run desktop flows, we highly recommend that you use [Azure Key Vault](https://azure.microsoft.com/services/key-vault) as a central cloud repository for your secure strings, such as SAP Passwords and SAP User Names. For this example scenario, we’ve created four use-case-specific secrets on Key Vault. We'll use these secrets later to pass to our desktop flow as secure inputs.
 
 ![Screenshot of the Azure Key Vault with the following secrets, SAP HCMClient, SAP HCM SystemId,  SAPPassword,  and SAPUser ](media/Azure-Key-Vault-window.png)  

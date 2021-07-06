@@ -37,7 +37,7 @@ In this section we'll create a new flow with Power Automate Desktop and use the 
 
 5. First, we'll create a few **technical SAP variables** which will be needed in almost all SAP based automation flows. For each variable, enter the **Variable name**, **External name** and **Description** and select **Update.**
 
-    Here's the list of techical SAP variables.
+    Here's the list of technical SAP variables.
 
     -   SAPPassword
 

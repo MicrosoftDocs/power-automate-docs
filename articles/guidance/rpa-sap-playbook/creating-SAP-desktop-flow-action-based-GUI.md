@@ -49,7 +49,7 @@ ms.reviewer: deonhe
 
     ![Screenshot of Add a new variable dialog box ](media/add-new-variable.png)
 
-6. Next, create the follwoing use-case-specific variables.
+6. Next, create the following use-case-specific variables.
 
    - EmployeeId
 

@@ -64,7 +64,7 @@ If you want to see the new desktop recording experience in action, please follow
 
     ![Screenshot of Power Automate Desktop that shows the recorded actions on its canvas ](media/PAD-showing-recorded-actions.png)
 
-12. During recording, you might have accidently clicked on windows or other UI elements that are not relevant to your flow. If this happens, you can remove duplicate or unnecessary action steps from the script.
+12. During recording, you might have accidentally clicked on windows or other UI elements that are not relevant to your flow. If this happens, you can remove duplicate or unnecessary action steps from the script.
 
     ![Screenshot of Power Automate Desktop that shows duplicate or accidentally captured actions.](media/PAD-showing-actions-to-be-removed.png)
 

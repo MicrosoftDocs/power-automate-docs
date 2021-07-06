@@ -30,6 +30,6 @@ Many of these of organizations use SAP to manage their finance, supply chain, pr
 
 Power Automate empowers everyone to automate while providing security, compliance, and control over the usage and execution of automation across the IT ecosystem, whether on-premises or in the cloud.
 
-This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions that span multiple legacy systems takes time. And, as shown in the follwoing drawing, most of this time is spent on production readiness, including advanced retry and exception handling.
+This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions that span multiple legacy systems takes time. And, as shown in the following drawing, most of this time is spent on production readiness, including advanced retry and exception handling.
 
 ![Diagram showing the total effort to develop a bot  increasing with how sophisticated it is  Make sure the effort is proportional to the bot's R O I ](media/bot-ROI.png)
