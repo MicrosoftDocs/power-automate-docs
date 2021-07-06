@@ -1,5 +1,5 @@
 ---
-title: VBScript vs Actions for SAP GUI automation with Power Automate | Microsoft Docs
+title: Summary of the benefits of VBScript vs Actions for SAP GUI automation | Microsoft Docs
 description: There are pros and cons for each approach. Depending on the type of developer you are, you might find that a certain approach fits better your intended use case and skillset.
 suite: flow
 documentationcenter: na
@@ -17,11 +17,13 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Feature highlights per approach
+# Summary of the benefits of VBScript vs Actions for SAP GUI automation
 
-As with many other technologies and techniques, there are pros and cons for each approach which are summarized in the table below. Depending on the type of developer you are, you might find that a certain approach fits better your intended use case and skillset.
+As with many other technologies and techniques, there are pros and cons for each approach. Depending on the type of developer you are, you might find that a certain approach fits better your intended use case and skillset.
 
-There will be occasions where combining both techniques will be highly beneficial, like adding a VBScript action with some Excel VBA code to support advanced formatting as part of your action-based automation.
+There will be occasions when combining both techniques will be beneficial, like adding a VBScript action with some Excel VBA code to support advanced formatting as part of your action-based automation.
+
+Here's a summary of the two approaches.
 
 | Feature | VBScript | Actions |
 |-------------------------|-------------------------|-------------------------|

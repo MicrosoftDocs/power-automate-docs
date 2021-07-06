@@ -1,6 +1,6 @@
 ---
-title: Example scenario for SAP GUI Automation with Power Automate | Microsoft Docs
-description: Explanation of the fictitious example used as the base for our RPA SAP automation tutorials.
+title: Automate SAP GUI with Power Automate | Microsoft Docs
+description: This is the initial example for the RPA SAP automation tutorials.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,30 +17,31 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Sample SAP scenario for this tutorial
+# Automate SAP GUI for this tutorial
 
-We've provided the following simplified fictitious example, which we'll use as the base for our automation tutorials.
+We've provided the following simplified example, which we'll use as the base for our automation tutorials.
 
-Let's say your organization doesn't have any employee self-service functionality today, but you want to allow employees to submit a secondary address through a manually triggered flow that will insert the respective address record in the employee's personnel record.
+Let's say your organization doesn't have an employee self-service functionality, but you want to allow employees to submit a secondary address through a flow that they manually trigger to add a second address to their personnel profile.
 
-![Diagram of the example automation where the employee triggers an cloud flow  the cloud flow gets the secrets from Azure Key Vault and starts the UI flow  the UI flow uses RPA to automate a new address in SAP  and the cloud flow emails a status message back to the employee ](media/diagram-example-automation.png)
+   ![A diagram of the sample automation where the employee triggers an cloud flow. The cloud flow gets the secrets from Azure Key Vault and then starts the desktop flow. The desktop flow uses RPA to add a new address in SAP. The cloud flow emails a status message to the employee after it completes. ](media/diagram-example-automation.png)
 
-Your HR department has provided you with the exact steps you would have to follow when processing the address addition in SAP manually.
+>[!NOTE]
+>Your HR department can provide you with the exact steps for you to follow to add the second address to SAP manually.
 
 These are the steps:
 
-1.  Enter transaction code **PA30** and press **Enter**.
+1.  Enter the transaction code **PA30**, and then select **Enter**.
 
-2.  Select or enter the **Personnel no.** of the employee.
+1.  Select or enter the **Personnel no .** for the employee.
 
-3.  In tab **Basic personal data** enter **0006** (= Addresses) as **Infotype, 2** (= Temporary Address) as **STy** and a date value into the Period **From** field.
+1.  In the **Basic personal data** tab, enter **0006** (= Addresses) as **Infotype, 2** (= Temporary Address) as **STy** and a date value into the Period **From** field.
 
-4.  Select **Create (F5)** button on the upper toolbar.
+1.  Select the **Create (F5)** button on the upper toolbar.
 
-5.  In the opened form **Create Addresses**, fill in all relevant address fields such as **Address line 1, City, ZipCode, State** etc.
+1.  In the opened **Create Addresses** form, provide all relevant address fields such as **Address line 1, City, ZipCode, State**, etc.
 
-6.  Select **Save (Ctrl+S)** in the upper toolbar.
+1.  Select **Save (Ctrl+S)** on the upper toolbar.
 
-7.  Back in the **Maintain HR Master Data** form, select **Back (F3)** to return to the starting point of your process recording.
+1.  On the **Maintain HR Master Data** form, select **Back (F3)** to return to the starting point of your process recording.
 
-8.  Optionally, log off from SAP and close all SAP windows.
+1.  Optionally, log off from SAP and close all SAP windows.

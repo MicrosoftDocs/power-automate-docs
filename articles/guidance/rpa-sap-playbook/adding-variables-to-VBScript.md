@@ -1,5 +1,5 @@
 ---
-title: Adding variables to your VBScript with Power Automate | Microsoft Docs
+title: Add variables to your VBScript with Power Automate | Microsoft Docs
 description: In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, before we switch over to Power Automate Desktop, let's review all hard-coded value references and decide which ones to replace with dynamic input variables.
 suite: flow
 documentationcenter: na
@@ -17,11 +17,16 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Adding variables to your VBScript
+# Add variables to your VBScript
+
+In this step of the RPA Playbook for SAP GUI Automation with Power Automate tutorial, before we switch over to Power Automate Desktop, let's review all hard-coded value references and decide which ones to replace with dynamic input variables.
+suite: flow
+
+## Identify hard-coded values
 
 Before we switch over to Power Automate Desktop, let's review all hard-coded value references and decide which ones to replace with dynamic input variables.
 
-Variables are used within Desktop flow processes to store data for further processing and their names are enclosed within percentage signs **%.** Almost every Action receives at least one variable as input or produces one as output. Every variable has a unique name. Variable names may contain letters, numbers, and underscore ('\_') characters, and are not case sensitive.
+Variables are used within desktop flow processes to store data for further processing and their names are enclosed within percentage signs, **%**. Almost every action receives at least one variable as input or produces variable as output. Every variable has a unique name. Variable names may contain letters, numbers, and underscore ( _ ) characters, and are not case sensitive.
 
 Some variable naming examples:
 

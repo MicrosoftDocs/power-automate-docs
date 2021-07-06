@@ -20,16 +20,16 @@ ms.reviewer: deonhe
 
 #  Introduction 
 
-Robotic process automation (RPA) enables you to automate mundane, rules-based tasks. With RPA you can automate legacy software without APIs, which opens the world of automation to include software that's old or new, on-premises or in the cloud.
+Robotic process automation (RPA) enables you to automate mundane, rules-based tasks. With RPA, you can automate legacy software without APIs, which opens the world of automation to include software that's old or new, on-premises, or in the cloud.
 
-Executives who have already implemented RPA in their organization have experienced the positive impact it can bring. Increasing the level of automation is a top strategic priority at most organizations.
+Executives who implemented RPA in their organizations have experienced the positive impact it brings. Increasing the level of automation is a top strategic priority at most organizations.
 
-Many of these of organizations use SAP to manage their finance, supply chain, production, and human resources processes, and are looking for ways to automate their most frequent, mundane, and rule-based tasks. That's exactly what we'll be focusing on in this playbook: SAP GUI automation patterns and best practices using Microsoft Power Automate, Power Automate Desktop, and Desktop flows.
+Many of these of organizations use SAP to manage their finance, supply chain, production, and human resources processes. They are looking for ways to automate their most frequent, mundane, and rules-based tasks. That's exactly what we'll be focusing on in this playbook: SAP GUI automation patterns and best practices using Microsoft Power Automate, Power Automate Desktop, and desktop flows.
 
 ## Lifecycle of a typical enterprise RPA bot 
 
 Power Automate empowers everyone to automate while providing security, compliance, and control over the usage and execution of automation across the IT ecosystem, whether on-premises or in the cloud.
 
-This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions spanning multiple legacy systems takes time. And, as shown in the drawing below, most of this time is spent on production readiness, including advanced retry and exception handling.
+This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions that span multiple legacy systems takes time. And, as shown in the follwoing drawing, most of this time is spent on production readiness, including advanced retry and exception handling.
 
 ![Diagram showing the total effort to develop a bot  increasing with how sophisticated it is  Make sure the effort is proportional to the bot's R O I ](media/bot-ROI.png)

@@ -1,6 +1,6 @@
 ---
-title: Recording VB script using the SAP GUI automation engine | Microsoft Docs
-description: In this step of the SAP GUI Automation with Power Automate tutorial, we'll use the proprietary SAP GUI automation engine to generate VBScript output based on user interactions captured during screen recording.
+title: Record VBScript with the SAP GUI automation engine | Microsoft Docs
+description: Use the proprietary SAP GUI automation engine to generate VBScript output from recorded user interactions.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -12,35 +12,36 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/01/2021
+ms.date: 06/25/2021
 ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Recording VB script using the SAP GUI automation engine
+# Record VBScript with the SAP GUI automation engine
 
-1.  Confirm that all [SAP GUI scripting configurations](#sap-gui-scripting-configurations) have been done.
+1.  Confirm that all [SAP GUI scripting configurations](#sap-gui-scripting-configurations) are done.
 
-2.  Open SAP Logon and select the desired SAP system to sign in to.
+1.  Open **SAP Logon**, and then select the SAP system to which you want to sign in.
 
-![Screenshot of SAP Login 760 ](media/SAP-login-760.png)
+   ![Screenshot of SAP Login 760 ](media/SAP-login-760.png)
 
-3.  Select **Customize Local Layout** (Alt F12) and then **Script Recording and Playback…**.
+1.  Select **Customize Local Layout (Alt F12) **, and then select **Script Recording and Playback…**.
 
-![Screenshot of the SAP Easy Access system ](media/SAP-easy-access-system.png)
+   ![Screenshot of the SAP Easy Access system ](media/SAP-easy-access-system.png)
 
-4.  Select **More.**
+1.  Select **More.**
 
-5.  Under **Save To** specify or select the file path and filename where the captured user interactions should be stored.
+1.  Under **Save To**, provide the file path and name where the captured user interactions should be stored.
 
-![Screenshot of saving the recording file in the Record and Playback dialog box ](media/saving-recording-file.png)
+   ![Screenshot of saving the recording file in the Record and Playback dialog box ](media/saving-recording-file.png)
 
-6.  Select the **Record Script** button to start the screen capturing process. Every interaction you do now in SAP will be captured as repeatable VBS commands. If you had previously recorded steps and saved to this file, a dialog box will pop up asking you to overwrite the file or not.
+1.  Select the **Record Script** button to start the screen capturing process. 
+   Every interaction you do in SAP is captured as repeatable VBScript commands. If you previously recorded steps and saved to this file, you’ll receive a prompt that asks if you’d like to overwrite the file. .
 
-7.  Next, follow the sample steps outlined in [4 Sample scenario](#_Sample_SAP_scenario) to produce a recording.
+1.  Follow the sample steps outlined in [4 Sample scenario](#_Sample_SAP_scenario) to produce a recording.
 
-8.  Once you're done, select the **Record and Playback** dialog box then **Stop Recording** and close the dialog box.
+1.  Select the **Record and Playback** dialog box, select **Stop Recording**, and then close the dialog box.
 
-9.  You can close all SAP windows now if you wish.
+1.  Close all SAP windows now if you wish.
 
-SAP's scripting engine has recorded each click as VBScript commands and has saved it to the output file you've provided. Open the file in your code editor of choice to examine its contents.
+SAP's scripting engine records each click as VBScript commands and has saves it to the output file you provide. Open the file in your code editor of choice to examine its contents.
