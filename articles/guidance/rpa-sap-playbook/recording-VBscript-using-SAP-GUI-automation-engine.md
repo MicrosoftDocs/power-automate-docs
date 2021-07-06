@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 # Record VBScript with the SAP GUI automation engine
 
-1.  Confirm that all [SAP GUI scripting configurations](#sap-gui-scripting-configurations) are done.
+1.  Confirm that all [SAP GUI scripting configurations](./prerequisites.md#sap-gui-scripting-configuration) are done.
 
 1.  Open **SAP Logon**, and then select the SAP system to which you want to sign in.
 
@@ -38,7 +38,7 @@ ms.reviewer: deonhe
 1.  Select the **Record Script** button to start the screen capturing process. 
    Every interaction you do in SAP is captured as repeatable VBScript commands. If you previously recorded steps and saved to this file, you’ll receive a prompt that asks if you’d like to overwrite the file. .
 
-1.  Follow the sample steps outlined in [4 Sample scenario](./sample-sap-scenario) to produce a recording.
+1.  Follow the sample steps outlined in [Four sample scenario](./sample-sap-scenario.md) to produce a recording.
 
 1.  Select the **Record and Playback** dialog box, select **Stop Recording**, and then close the dialog box.
 

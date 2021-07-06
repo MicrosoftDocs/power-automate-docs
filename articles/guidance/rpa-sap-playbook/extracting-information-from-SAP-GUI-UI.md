@@ -29,7 +29,7 @@ This status information might be useful for the  automation process steps later.
 
 We have multiple ways to achieve this and depending on your development approach. 
 
-The two approaches are [low-code](#low-code) or [pro-code](#pro-code) techniques.
+The two approaches are [low-code](#low-code-approach) or [pro-code](#pro-code-approach) techniques.
 
 ## Pro-code approach
 
@@ -50,7 +50,7 @@ In case you've never heard of SAP's PM Notification or you don't have access to 
 
 Here are the steps.
 
-1. Confirm that all [SAP GUI scripting configurations](#sap-gui-scripting-configurations) are done.
+1. Confirm that all [SAP GUI scripting configurations](./prerequisites.md#sap-gui-scripting-configuration) are done.
 
 1. Open **SAP Logon** and select the SAP system to which you want to sign in.
 

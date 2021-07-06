@@ -239,7 +239,7 @@ ms.reviewer: deonhe
     ![Screenshot of the Tracking session dialog box ](media/tracking-session-dialog.png)
 
     >[!IMPORTANT]
-    >For the following steps, you'll need valid SAP reference test data as outlined in point 5 of the [SAP GUI scripting configuration](#sap-gui-scripting-configurations) pre-requisites.
+    >For the following steps, you'll need valid SAP reference test data as outlined in point 5 of the [SAP GUI scripting configuration](prerequisites.md#sap-gui-scripting-configuration) pre-requisites.
 
 43. Enter values for **Personnel no**, **Period From**, **Infotype** (always provide 0006 as this is a standard type in SAP systems), **STy** (this is the Infotype subtype), and then select **Create (F5)**.
 
