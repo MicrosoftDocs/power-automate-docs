@@ -173,11 +173,11 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections**.
 
-   ![A screenshot of the connections tab](../media/desktop-flows-setup/connections-tab.png)
+   ![A screenshot of the connections tab](media/desktop-flows-setup/connections-tab.png)
 
 1. Select New connection.
 
-   ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
+   ![A screenshot of a connection](media/desktop-flows-setup/new-connection.png)
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
 
