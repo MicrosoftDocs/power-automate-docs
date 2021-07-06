@@ -29,7 +29,7 @@ This status information might be useful for the  automation process steps later.
 
 We have multiple ways to achieve this and depending on your development approach. 
 
-The two approaches are [low-code]() or [pro-code](#pro-code) techniques.
+The two approaches are [low-code](#low-code) or [pro-code](#pro-code) techniques.
 
 ## Pro-code approach
 

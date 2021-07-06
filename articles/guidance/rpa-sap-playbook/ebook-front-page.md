@@ -40,21 +40,21 @@ This document is provided "as-is." Information and views expressed in this docum
 
 Table of Contents
 
-[1 Introduction 2](introduction.md)
+[1 Introduction 2](./introduction.md)
 
 [1.1 Lifecycle of a typical enterprise RPA bot 2](#lifecycle-of-a-typical-enterprise-rpa-bot)
 
-[2 Prerequisites 2](#prerequisites)
+[2 Prerequisites 2](./prerequisites.md)
 
-[2.1 License requirements 2](#license-requirements)
+[2.1 License requirements 2](./prerequisites.md#license-requirements)
 
-[2.2 Software prerequisites 2](#software-prerequisites)
+[2.2 Software prerequisites 2](./prerequisites.md#software-prerequisites)
 
-[2.3 SAP GUI scripting configurations 2](#sap-gui-scripting-configurations)
+[2.3 SAP GUI scripting configurations 2](./prerequisites.md#sap-gui-scripting-configuration)
 
-[2.4 Azure Key Vault credentials (optional) 2](#azure-key-vault-credentials-optional)
+[2.4 Azure Key Vault credentials (optional) 2](./prerequisites.md#azure-key-vault-credentials-optional)
 
-[3 Core Components 2](#core-components)
+[3 Core Components 2](./core-components.md)
 
 [3.1 Power Automate 2](#power-automate)
 
@@ -68,9 +68,9 @@ Table of Contents
 
 [5 VBScript-based SAP GUI automation 2](#vbscript-based-sap-gui-automation)
 
-[5.1 Reviewing the generated code 2](#reviewing-the-generated-code)
+[5.1 Reviewing the generated code 2](./reviewing-the-generated-code.md)
 
-[5.2 Adding variables to your VBScript 2](#adding-variables-to-your-vbscript)
+[5.2 Adding variables to your VBScript 2](./adding-variables-to-your-vbscript.md)
 
 [5.3 Creating SAP Desktop flow with Power Automate Desktop 2](#creating-sap-desktop-flow-with-power-automate-desktop)
 
@@ -84,7 +84,7 @@ Table of Contents
 
 [6.2 A bit of flow refactoring 2](#a-bit-of-flow-refactoring)
 
-[6.3 Getting ready to debug 2](#getting-ready-to-debug)
+[6.3 Getting ready to debug 2](./getting-ready-to-debug.md)
 
 [6.4 Creating the cloud flow with Power Automate 2](#creating-the-api-flow-with-power-automate)
 
@@ -98,7 +98,7 @@ Table of Contents
 
 [9 Feature highlights per approach 2](#feature-highlights-per-approach)
 
-[10 Conclusion 2](#conclusion)
+[10 Conclusion 2](./conclusion.md)
 
 Version history
 

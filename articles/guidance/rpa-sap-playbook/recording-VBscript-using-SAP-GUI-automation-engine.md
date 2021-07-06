@@ -38,7 +38,7 @@ ms.reviewer: deonhe
 1.  Select the **Record Script** button to start the screen capturing process. 
    Every interaction you do in SAP is captured as repeatable VBScript commands. If you previously recorded steps and saved to this file, you’ll receive a prompt that asks if you’d like to overwrite the file. .
 
-1.  Follow the sample steps outlined in [4 Sample scenario](#_Sample_SAP_scenario) to produce a recording.
+1.  Follow the sample steps outlined in [4 Sample scenario](./sample-sap-scenario) to produce a recording.
 
 1.  Select the **Record and Playback** dialog box, select **Stop Recording**, and then close the dialog box.
 

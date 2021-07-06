@@ -45,7 +45,7 @@ You can close both Power Automate Desktop windows and go to the [Power Automate 
    ![Screenshot of the cloud flow authoring canvas in Power Automate Portal ](media/cloud-flow-canvas.png)
 
 >[!IMPORTANT]
->The next steps will involve action component configuration. To securely pass parameters into our desktop flow, we'll be following the [optional but recommended](#azure-key-vault-credentials-optional) approach of using Key Vault secrets. 
+>The next steps will involve action component configuration. To securely pass parameters into our desktop flow, we'll be following the optional but recommended, approach of using Key Vault secrets. 
 
 >[!NOTE]
 >If you don't have access to Key Vault, you can skip the next two steps and provide your credentials and other parameters later as clear text instead.
