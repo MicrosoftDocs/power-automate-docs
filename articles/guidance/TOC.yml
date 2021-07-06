@@ -61,13 +61,13 @@
     - name: Core components
       href: rpa-sap-playbook/core-components.md
     - name: Sample SAP scenario
-      href: rpa-sap-playbook/sample-sap-sceanrio.md
+      href: rpa-sap-playbook/sample-sap-sceanario.md
     - name: VBScript-based SAP GUI automation
-      href: rpa-sap-playbook/VBScript-based-sap-gui-automation.md
+      href: rpa-sap-playbook/VBScript-based-sap-gui-automation-overview.md
     - name: Action-based manual SAP GUI automation
-      href: rpa-sap-playbook/action-based=sap-gui-manually-overview.md
+      href: rpa-sap-playbook/action-based-sap-gui-manually-overview.md
     - name: Action-based SAP GUI automation with recorder
-      href: rpa-sap-playbook/action-based=sap-gui-recorder-overview.md.md
+      href: rpa-sap-playbook/action-based-sap-gui-recorder-overview.md.md
     - name: Extract information from SAP GUI
       href: rpa-sap-playbook/extracting-information-from-sap-gui-ui.md
     # - name: Feature hightlights
