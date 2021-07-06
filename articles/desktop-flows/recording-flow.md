@@ -127,6 +127,10 @@ To extract a text value while using image recording:
 
 - **Workarounds**: Send the right-click to another place on the screen.
 
+- **Issue**: Any keystrokes sent to a maximized RDP window through an Image recording are not being recorded.
+
+- **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
+
  ## Web recorder
 
  To record a flow that automates web applications:
