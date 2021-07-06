@@ -24,7 +24,7 @@ search.audienceType:
 
 # Install Power Automate Desktop on your device
 
-The installer contains all the components you need to record, edit, and test your automations. 
+The installer contains all the components you need to record, edit, and test your automations, as well as connect to the cloud.
 
 ## Install Power Automate Desktop
 
@@ -156,6 +156,9 @@ To update Power Automate Desktop, use the same command line arguments that you u
 
 ### Install the gateway with PowerShell Cmdlets
 
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+
 You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
 
 You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
@@ -180,13 +183,21 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 
    <!-- ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png) -->
 
-1. Provide the gateway information and device credentials: 
+1. Provide the machine or gateway information and device credentials: 
+ 
+   - To connect to a machine, select **Directly to machine** in the **Connect** field and choose a machine or a machine group in the **Machine or machine group** field.
 
-    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
-    - **Password**: Your account’s password.
-    - **Choose a gateway**: Select the gateway you want to use.
+      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
 
-      ![A screenshot that shows where to enter the credentials for the connection](../media/desktop-flows-setup/credentials-screen.png)
+   - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field and choose a gateway in the **Choose a gateway** field.
+
+      ![The Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
+
+   - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+
+   - **Password**: Your account’s password.
+
+      ![A screenshot that shows where to enter the credentials for the connection](media/desktop-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
 
@@ -206,7 +217,7 @@ Follow these steps to install Windows recorder (v1) extension:
 
 ## Install Selenium IDE to automate Web applications with desktop flows (optional)
 
-The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
+The Selenium IDE is an open source tool that lets you record and playback human interactions on websites.
 
 With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
@@ -219,6 +230,9 @@ Follow these steps to install Selenium IDE:
 1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
+
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
@@ -234,6 +248,9 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
 ## Troubleshoot missing gateway
+
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You might not find the gateway in the list while creating the connection for the following reasons:
 
