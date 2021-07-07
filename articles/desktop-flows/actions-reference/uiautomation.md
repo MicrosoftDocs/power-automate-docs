@@ -28,6 +28,7 @@ You can find more information on how to use the UI automation actions [here](../
 |[Get selected checkboxes in window](#getselectedcheckboxesinwindow)|
 |[Get selected radio button in window](#getselectedradiobuttoninwindow)|
 |[Extract data from window](#extractdatafromwindow)|
+|[Take screenshot of UI element](#takescreenshot)|
 |[Focus text field in window](#focustextfield)|
 |[Populate text field in window](#populatetextfield)|
 |[Press button in window](#pressbutton)|
@@ -157,6 +158,29 @@ Extracts data from specific parts of a window in the form of single values, list
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
+
+### <a name="takescreenshot"></a> Take screenshot of UI element
+Takes a screenshot of a UI element in window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|UI element|No|UIControl||The UI element in the window to capture as screenshot|
+|Save mode|N/A|Clipboard, File|Clipboard|Specify whether to save the image into a file or store it into the clipboard|
+|Image file path|No|File||Set the full path for the file to be saved|
+|File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|The file format of the image file|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ImageFile|File|The file path of the generated screenshot image file|
+
+##### <a name="takescreenshot_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to retrieve UI element|Indicates a problem retrieving the UI element|
+|Failed to save image|Indicates a problem saving the specified file|
+|Failed to take screenshot of UI element|Indicates a problem taking a screenshot of the UI element|
 
 ## Form filling
 Fill-in forms on desktop applications
