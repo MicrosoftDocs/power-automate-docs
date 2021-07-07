@@ -547,9 +547,11 @@ Drags and drops a UI element of a window
 |UI element to drag|No|UIControl||The UI element to drag|
 |UI element to drop over|No|UIControl||The UI element to drop over|
 |Click type|N/A|Left click, Right click|Left click|Specify which mouse button to use for clicking and holding down, while dragging the UI element over to its destination|
+|Mouse down position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to prior to clicking|
 |Mouse down offset X|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
 |Mouse down offset Y|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
 |Mouse down position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to prior to clicking|
+|Mouse up position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to prior to clicking|
 |Mouse up offset X|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels to the right|
 |Mouse up offset Y|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels downwards|
 |Mouse up position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to after clicking|
