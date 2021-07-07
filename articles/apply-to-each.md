@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Use the apply to each action in Power Automate to process a list of items periodically
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qNQm]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFQLQ]
 
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
