@@ -179,7 +179,7 @@ Takes a screenshot of a UI element in window
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve UI element|Indicates a problem retrieving the UI element|
-|Failed to save image|Indicates a problem saving the specified file|
+|Failed to save image|Indicates a problem saving the taken screenshot|
 |Failed to take screenshot of UI element|Indicates a problem taking a screenshot of the UI element|
 
 ## Form filling
