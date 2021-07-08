@@ -3,6 +3,7 @@ title: Power Automate Desktop architecture | Microsoft Docs
 description: Power Automate Desktop architecture
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/28/2020
 ms.author: getrantz

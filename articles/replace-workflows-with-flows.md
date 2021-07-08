@@ -5,6 +5,7 @@ author: MSFTMAN
 manager: KVIVEK
 ms.author: Deonhe
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 09/25/2020
 search.app: 

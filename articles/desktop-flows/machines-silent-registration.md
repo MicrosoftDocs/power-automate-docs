@@ -3,6 +3,7 @@ title: Silent registration for machines  | Microsoft Docs
 description: Silent registration for machines 
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/15/2021
 ms.author: marleon

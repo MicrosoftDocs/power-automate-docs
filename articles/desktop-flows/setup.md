@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
