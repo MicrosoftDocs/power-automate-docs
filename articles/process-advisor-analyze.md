@@ -3,6 +3,7 @@ title: Analyze processes | Microsoft Docs
 description: How to use the analyze processes feature in process advisor.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn

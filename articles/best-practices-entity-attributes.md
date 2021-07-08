@@ -7,6 +7,7 @@ ms.reviewer:
 ms.service: power-automate
 ms.suite: 
 ms.tgt_pltfrm: 
+ms.subservice: cloud-flow
 ms.topic: article
 applies_to: 
   - Business Process Flows

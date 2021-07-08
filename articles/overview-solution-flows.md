@@ -4,6 +4,7 @@ description: Learn the benefits of creating flows in solutions.
 author: msftman
 manager: kvivek
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 01/29/2021
 ms.author: deonhe

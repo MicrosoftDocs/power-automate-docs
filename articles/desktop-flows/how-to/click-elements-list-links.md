@@ -3,6 +3,7 @@ title: Click all the elements in a list of links | Microsoft Docs
 description: Click all the elements in a list of links
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/04/2021
 ms.author: getrantz

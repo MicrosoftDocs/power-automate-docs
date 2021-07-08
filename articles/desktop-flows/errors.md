@@ -3,6 +3,7 @@ title: Errors | Microsoft Docs
 description: Errors
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

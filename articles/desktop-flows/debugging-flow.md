@@ -3,6 +3,7 @@ title: Debugging a desktop flow | Microsoft Docs
 description: Use the flow designer's debugging options to debug flows.
 author: olegmelnykov
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: olmelnyk
