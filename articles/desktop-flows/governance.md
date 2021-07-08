@@ -35,7 +35,7 @@ Using the following registry entry you can prevent users to manually update Powe
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to manually update Power Automate Desktop.
+- **1**: Users will not be able to manually update Power Automate Desktop.
 
 
 ## Prevent users accessing Power Automate Desktop using their Microsoft accounts
@@ -50,7 +50,7 @@ Using the following registry entry you can prevent users to login on Power Autom
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to sign-in using their Microsoft account
+- **1**: Users will not be able to sign-in using their Microsoft account
 
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
@@ -65,7 +65,7 @@ You can use the following registry entry to prevent users from logging into Powe
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
+- **1**: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts or organization premium accounts
 
@@ -79,7 +79,7 @@ You can use the following registry entry to prevent users from logging into Powe
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to sign-in using their work or school account or organization premium account
+- **1**: Users will not be able to sign-in using their work or school account or organization premium account
 
 >[!Note]
 >- Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When all registry keys are set to 1, users will not be able to login to Power Automate Desktop with any type of account.
@@ -100,7 +100,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 |Type|String|
 
 ***Value***
-- ProxyAddress:Port (e.g.: myproxy.com:3128): The proxy server and port configured, will override the proxy server and port configured in Windows.
+- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured, will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate Desktop to bypass a corporate proxy server
 
@@ -112,7 +112,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 |Type|DWORD|
 
 ***Value***
-- 1: Power Automate Desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate Desktop’s traffic. 
+- **1**: Power Automate Desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate Desktop’s traffic. 
 
 ## Configure Power Automate Desktop to authenticate to a corporate proxy server using the current user's credentials
 
@@ -124,7 +124,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 |Type|DWORD|
 
 ***Value***
-- 1: Power Automate Desktop will authenticate to the corporate proxy server using the current user's credentials.
+- **1**: Power Automate Desktop will authenticate to the corporate proxy server using the current user's credentials.
  
  
 ## Learn more
