@@ -88,6 +88,45 @@ You can use the following registry entry to prevent users from logging into Powe
 
 In order to restrict access to Power Automate Desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
+## Configure Power Automate Desktop to interact with a corporate proxy server
+
+IT administrators, may set the following registry keys, to configure the Power Automate Desktop’s interaction with a corporate proxy server.
+
+| | |
+|---|---|
+|Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|ProxyServer|
+|Type|String|
+
+***Value***
+- ProxyAddress:Port (e.g.: myproxy.com:3128): The proxy server and port configured, will override the proxy server and port configured in Windows.
+
+## Configure Power Automate Desktop to bypass a corporate proxy server
+
+| | |
+|---|---|
+|Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|DisableWindowsProxy|
+|Type|DWORD|
+
+***Value***
+- 1: Power Automate Desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate Desktop’s traffic. 
+
+## Configure Power Automate Desktop to authenticate to a corporate proxy server using the current user's credentials
+
+| | |
+|---|---|
+|Hive|HKEY_LOCAL_MACHINE|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|UseDefaultProxyCredentials|
+|Type|DWORD|
+
+***Value***
+- 1: Power Automate Desktop will authenticate to the corporate proxy server using the current user's credentials.
+ 
+ 
 ## Learn more
 
 - Learn to [create Power Automate Desktop flows](create-flow.md).
