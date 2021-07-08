@@ -45,7 +45,7 @@ Follow these steps to install the Power Automate Desktop app:
 ![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!NOTE]
->For networks with a corporate proxy server, follow the settings described [here](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
+>Power Automate Desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate Desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
 
 ### Set data collection options
 
