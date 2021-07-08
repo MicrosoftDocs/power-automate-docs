@@ -38,7 +38,7 @@ To access the UI elements pane, select the **UI elements** tab on the right-hand
 
 ![Access the UI elements pane](./media/ui-elements/access-ui-elements-pane.png)
 
-Elements can be sorted alphabetically by selecting the **Sort** icon. To rename or delete UI elements, right-click on an item and select the appropriate function.
+Elements can be sorted alphabetically by selecting the **Sort** option. To rename or delete UI elements, right-click on an item and select the appropriate function.
 
 To use a captured element in an action, simply select it from the drop-down list:
 
