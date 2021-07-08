@@ -44,6 +44,9 @@ Follow these steps to install the Power Automate Desktop app:
 
 ![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
 
+>[!NOTE]
+>For networks with a corporate proxy server, follow the settings described [here](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
+
 ### Set data collection options
 
 During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
