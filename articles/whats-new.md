@@ -4,6 +4,7 @@ description: Learn about all the new features in Power Automate.
 author: msftman
 manager: kvivek
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/02/2021
 ms.author: deonhe

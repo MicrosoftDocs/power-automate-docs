@@ -4,6 +4,7 @@ description: Flows are now stored in Dataverse and use the rich Web API.
 author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
+ms.subservice: cloud-flow
 ms.topic: article
 ms.prod: 
 ms.service: power-automate

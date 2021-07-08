@@ -3,6 +3,7 @@ title: Work with processes and recordings | Microsoft Docs
 description: How to create and work with processes in process advisor.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn

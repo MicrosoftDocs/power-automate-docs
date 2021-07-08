@@ -3,6 +3,7 @@ title: Actions reference | Microsoft Docs
 description: This section describes all Power Automate Desktop actions
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: marleon

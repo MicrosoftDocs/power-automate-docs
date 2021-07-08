@@ -4,6 +4,7 @@ description: "Learn how to use branching in a business process flow"
 ms.custom: ""
 ms.date: 06/27/2018
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: "article"
 ms.service: power-automate
 author: "MSFTMAN"

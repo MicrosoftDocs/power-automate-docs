@@ -7,6 +7,7 @@ ms.service: power-automate
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: "article"
 ms.custom: intro-internal
 applies_to: 

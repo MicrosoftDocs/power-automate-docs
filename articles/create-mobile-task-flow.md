@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
