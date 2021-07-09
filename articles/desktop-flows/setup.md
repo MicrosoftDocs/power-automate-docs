@@ -75,7 +75,7 @@ The language used in the Power Automate Desktop is the display language selected
 
 ## Supported languages
 
-Here are the languages that desktop flows supports, in addition to English:
+Here are the languages that Power Automate Desktop supports, in addition to English:
 
 |||||
 ----|-----|-----|--------
@@ -90,9 +90,6 @@ Danish	|	Italian	|	Romanian	|	Vietnamese
 Dutch		|Japanese	|	Russian	
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
-
->[!NOTE]
->Power Automate Desktop is available only in English, French, German, Japanese, Spanish, Danish, Dutch, Finnish, Italian, Norwegian, Polish, Portuguese (Brazil), Chinese (Traditional), Chinese (Simplified), Swedish, and Turkish.
 
 ## Supported keyboard layouts
 
