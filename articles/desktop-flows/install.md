@@ -126,13 +126,13 @@ You can also retrieve the details of all the command line arguments from the hel
    Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
-| Command              | Description                                                                                                                                                                        |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
-| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to be created.                                                                 |
-| -DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
-| -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
-| -HELP               | This argument displays all details about the arguments for the installer prompt                                                                                                                   |
+|Command|Description|
+|----|----|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate Desktop`|
+|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate Desktop app is created on the desktop, use this<br /> argument to indicate that you do not want to be created.|
+|-DISABLETURNONRD|Use the argument if you do not want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
+|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate Desktop|
+|-HELP|This argument displays all details about the arguments for the installer prompt|
 
 Here's an example of a command line argument that installs Power Automate Desktop: 
 
