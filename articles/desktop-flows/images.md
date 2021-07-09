@@ -34,9 +34,7 @@ After capturing an image, specify a name for it in the dialog box and select **O
 
 ![image name](\media\images\image-name.png)
 
-Select **Add a new folder** and specify a name to create a folder in Images. Sort images into folders by capturing images while the specific folder is open. Navigate back by clicking on **Home**.
-
-To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**.
+To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folders by capturing them while the folder is open. 
 
 To rename or delete images or folders, right-click on an item and select the appropriate function. Select the image thumbnail to open and view it.
 
