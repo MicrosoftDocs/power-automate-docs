@@ -13,7 +13,7 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/02/2021
+ms.date: 07/09/2021
 ms.author: marleon
 search.app: 
   - Flow 
@@ -47,7 +47,7 @@ Follow these steps to install the Power Automate Desktop app:
 
 ### Set data collection options
 
-During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
+During installation, you can change the default settings if you don't want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
 >[!IMPORTANT]
 >Sharing usage data to Microsoft, will help the support department to solve a Power Automate Desktop issue.
@@ -126,13 +126,13 @@ You can also retrieve the details of all the command line arguments from the hel
    Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
-| Command              | Description                                                                                                                                                                        |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
-| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to be created.                                                                 |
-| -DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
-| -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
-| -HELP               | This argument displays all details about the arguments for the installer prompt                                                                                                                   |
+|Command|Description|
+|----|----|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate Desktop`.|
+|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate Desktop app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
+|-DISABLETURNONRD|Use the argument if you don't want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
+|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate Desktop.|
+|-HELP|This argument displays all details about the arguments for the installer prompt.|
 
 Here's an example of a command line argument that installs Power Automate Desktop: 
 
