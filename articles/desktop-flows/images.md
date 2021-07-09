@@ -36,6 +36,8 @@ After capturing an image, specify a name for it in the dialog box and select **O
 
 To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folders by capturing them while the folder is open. 
 
+![The Remove unused images and Add a new folder options.](\media\images\remove-unused-images.png)
+
 To rename or delete images or folders, right-click on an item and select the appropriate function. Select the image thumbnail to open and view it.
 
 ![rename delete images](\media\images\rename-delete-images.png)
