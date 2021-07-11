@@ -26,13 +26,11 @@ metadata:
 title: Frequently asked questions
 summary: |
 
+  ## Audience and strategy
+
 sections:
   - name: Ignored
     questions:
-      - question: |
-         Audience and strategy
-        answer: |
-
       - question: |
          What is Power Automate?
         answer: |
