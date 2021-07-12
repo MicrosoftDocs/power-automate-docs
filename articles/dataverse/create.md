@@ -34,19 +34,19 @@ Follow these steps to add a new account in Dataverse when you receive an email t
 1. Select **Microsoft Dataverse**.
 1. Select **Add a new row** action.
 
-   ![Select Add a new row action](../media/add-row/add-row-1.png "Select Add a new row action")
+   ![Select Add a new row action.](../media/add-row/add-row-1.png "Select Add a new row action")
 
 1. Select the **Accounts** table in the **Add a new row** card.
 
-   ![Select the Accounts table](../media/add-row/add-row-2.png "Select the Accounts table")
+   ![Select the Accounts table.](../media/add-row/add-row-2.png "Select the Accounts table")
 
    After you select a table, the card expands, displaying both optional and required items. All mandatory items display an asterisk (\*).
 
 1. Optional: If you don't see a column that you need, select **Show advanced options** at the bottom of the card to view all columns.
 
-   ![Card that shows all columns for the add a new row action except advanced options](../media/add-row/show-all-advanced.png "Card that shows all columns for the Add a new row action except advanced options")
+   ![Card that shows all columns for the add a new row action except advanced options.](../media/add-row/show-all-advanced.png "Card that shows all columns for the Add a new row action except advanced options")
 
 >[!TIP]
 >You can use outputs from previous triggers and actions in the **Dynamic content** selector, as shown in the following image, or modify them by building an expression as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).<!-- Edit note: Try to avoid use of en-us. -->
 
-   ![Dynamic content](../media/add-row/dynamic-content.png "Dynamic content")
+   ![Dynamic content.](../media/add-row/dynamic-content.png "Dynamic content")

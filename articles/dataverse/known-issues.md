@@ -34,7 +34,7 @@ Here's a list of known issues with Microsoft Dataverse and Microsoft Power Autom
 
 - **Adding a row with attachments to the Notes table**– When you use an attachment from the dynamic output of a non-Dataverse step, you must use an expression to convert it to a string. For example, when you add a row inside an **Apply to each** loop over the output from the **When a new email arrives** trigger, use *string(triggerOutputs()?['body/attachments'])* instead of *items('Apply_to_each')?['contentBytes']*, as shown in the following image. 
 
-   ![Screenshot that shows a string expression being used](../media/known-issues-dataverse/string-expression.png)
+   ![Screenshot that shows a string expression being used.](../media/known-issues-dataverse/string-expression.png)
  
 
  

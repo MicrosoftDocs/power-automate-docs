@@ -28,7 +28,7 @@ don't have a single automation that covers the entire process. There are several
 In the example below, one automation has been set up for an approval process, covering multiple
 processes with a single automation.
 
-:::image type="complex" source="media/flow-before-split.png" alt-text="Example of a very long process diagram set up for automation":::
+:::image type="complex" source="media/flow-before-split.png" alt-text="Example of a very long process diagram set up for automation.":::
    Diagram showing a business process where an expense report is created. The entire business process is set up as a single long automation with ten steps to complete.  
 :::image-end:::
 
@@ -38,7 +38,7 @@ banking details changes, the whole process will have to be suspended until the u
 
 Instead, you can separate the automation into modules, as shown in the following image.
 
-:::image type="complex" source="media/flow-after-split.png" alt-text="Example of process diagram split to three smaller processes":::
+:::image type="complex" source="media/flow-after-split.png" alt-text="Example of process diagram split to three smaller processes.":::
    Diagram showing automation split to three smaller automations so that each automation only includes three or four steps. First automation starts when an expense report is created and checks whether the created reports meet compliance. If compliant, the status is updated to Compliance check complete. If not, it will request for fixes.
    Second automation starts when status is updated to Compliance check complete. If approved, the result is emailed and status is set to approved. If the request is declined, it will request for fixes. Third automation starts when status is updated to approved. The system automatically will look up employee's banking details and reimburse cash to the employee, and also archive the expense report.
 :::image-end:::

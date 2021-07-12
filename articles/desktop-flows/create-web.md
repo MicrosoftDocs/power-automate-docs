@@ -35,21 +35,21 @@ Follow these steps to create a simple Selenium flow.
 
 1. Select **My flows** > **Desktop flows** > **New**.
 
-   ![Create new Selenium IDE flow](../media/create-windows-desktop-flow/create-new-windowsrecorder.png "Create new Selenium IDE flow")
+   ![Create new Selenium IDE flow.](../media/create-windows-desktop-flow/create-new-windowsrecorder.png "Create new Selenium IDE flow")
 
 1. Click **Additional desktop flow options**.
     
-   ![Additional desktop flow options](../media/create-windows-desktop-flow/click-Additional-desktop-flow-options.png "Additional desktop flow options")
+   ![Additional desktop flow options.](../media/create-windows-desktop-flow/click-Additional-desktop-flow-options.png "Additional desktop flow options")
 
 1. Select Selenium IDE, and then select **Next**.
     
-   ![Select Web app](../media/create-web-desktop-flow/select-seleniumIDE-flow.png "Select Web app")
+   ![Select Web app.](../media/create-web-desktop-flow/select-seleniumIDE-flow.png "Select Web app")
 
 1. Enter a name for your Selenium IDE flow into the **Flow name** field.
 
 1. Enter the URL for the Website you want to automate into the **Base URL** field, and then select **Launch recorder**.
 
-   ![Give a name and a URL](../media/create-web-desktop-flow/give-a-selenium-flow-name.png "Give a name and a URL") 
+   ![Give a name and a URL.](../media/create-web-desktop-flow/give-a-selenium-flow-name.png "Give a name and a URL") 
 
    The Selenium IDE launches.
 
@@ -61,22 +61,22 @@ Follow these steps to create a simple Selenium flow.
 
    The URL you chose in the previous step opens.
 
-   ![Select Rec](../media/create-web-desktop-flow/select-rec.png "Select Rec")
+   ![Select Rec.](../media/create-web-desktop-flow/select-rec.png "Select Rec")
 
 1.  Perform the actions that you want to record on the website. 
     
     >[!TIP]
     >At the bottom right, you can see the recording status.
 
-    ![Recording status](../media/create-web-desktop-flow/recording-status.png "Recording status")
+    ![Recording status.](../media/create-web-desktop-flow/recording-status.png "Recording status")
 
 1.  When you are finished recording, select on the red **Stop** button in the top right corner of the Selenium IDE.
 
-    ![Stop button](../media/create-web-desktop-flow/stop-button.png "Stop button" )
+    ![Stop button.](../media/create-web-desktop-flow/stop-button.png "Stop button" )
 
 1. Select the **Run current test** button from the top left side of the screen to see the Selenium IDE flow you just created run.
 
-    ![Run current test](../media/create-web-desktop-flow/run-test.png "Run current test")
+    ![Run current test.](../media/create-web-desktop-flow/run-test.png "Run current test")
 
    >[!TIP]
    >You can set the wait time between steps to slow the local playback for testing. This setting is for testing purposes only and has no impact when your Selenium IDE flow is deployed.  

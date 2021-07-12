@@ -32,7 +32,7 @@ The **When a row is added, modified or deleted** trigger runs a flow whenever a 
 
 - Additionally, depending on the scopes defined in the flow, you might need at least that level of read on the same table. You can get more information about [Environment security](/power-platform/admin/database-security).
 
-   ![Dataverse triggers](../media/create-update-delete-trigger/triggers.png "Dataverse triggers")
+   ![Dataverse triggers.](../media/create-update-delete-trigger/triggers.png "Dataverse triggers")
 
 The following information is required to use the **When a row is added, modified or deleted** trigger.
 
@@ -46,7 +46,7 @@ The following information is required to use the **When a row is added, modified
 
 The trigger condition, **Change type**, precisely defines which combination of changes to a row would run the flow.
 
-   ![Trigger conditions](../media/create-update-delete-trigger/2.png "Trigger conditions")
+   ![Trigger conditions.](../media/create-update-delete-trigger/2.png "Trigger conditions")
 
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
@@ -54,13 +54,13 @@ When the flow is triggered by the creation, update, or deletion of a row, the va
 
 The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
-   ![Select a table name](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+   ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
 
 ### Scope
 
 The **Scope** list indicates those rows should be monitored to determine if the flow should be run.
 
-   ![Select scope for triggering flow](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
+   ![Select scope for triggering flow.](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
 
 Here’s what each scope means:
 
@@ -79,13 +79,13 @@ You can set additional properties to define more granularly when the flow runs a
 
 Use filter conditions to set conditions for when to trigger flows.
 
-   ![Filter condition](../media/create-update-delete-trigger/filter-conditions.png "Filter condition")
+   ![Filter condition.](../media/create-update-delete-trigger/filter-conditions.png "Filter condition")
 
 ## Filtering columns
 
 Use the **Column filter** box to define a set of comma-separated, unique names for the table, as shown in the following image. The flow runs only when these columns change on the specific rows.
 
-   ![Filter columns by firstname.lastname](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
+   ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
 
 >[!NOTE]
 >This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
@@ -100,15 +100,15 @@ and [query functions](/powerapps/developer/common-data-service/webapi/query-data
 >[!NOTE]
 >Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
 
-   ![Row filter equal](../media/create-update-delete-trigger/row-filter.png)
+   ![Row filter equal.](../media/create-update-delete-trigger/row-filter.png)
 
-   ![Row filter contains](../media/create-update-delete-trigger/row-filter-contains.png)
+   ![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
 
 ### Wait condition using Postpone until
 
 Use an OData-style time stamp in the **Postpone until** property to delay the flow trigger until a specific UTC time. The key benefit of using this property instead of the standard **Delay until** action is that **Postpone Until** never expires, allowing the flow run to wait for long periods of time.
 
-   ![Delay until](../media/create-update-delete-trigger/delay-until.png "Delay until")
+   ![Delay until.](../media/create-update-delete-trigger/delay-until.png "Delay until")
 
 ### User impersonation using Run As
 
@@ -125,7 +125,7 @@ Follow these steps to impersonate a user:
 
 1. For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (...), as shown in the following image, and select the **Use invoker’s connection** setting. For the steps in which it is not selected, the default user is assumed. This would call the underlying APIs as per the selected user, and not as the flow owner.
 
-   ![Run as the modifying user](../media/create-update-delete-trigger/run-as.png "Run as the modifying user")
+   ![Run as the modifying user.](../media/create-update-delete-trigger/run-as.png "Run as the modifying user")
 
 If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author. Here are the other options:
 
@@ -135,7 +135,7 @@ If nothing is specified, it defaults to the flow owner who created the flow&mdas
 
 - **Modifying user**: The user that took the action on the Microsoft Dataverse row, causing the flow to get triggered or modified.
 
-    ![Run as options](../media/create-update-delete-trigger/11.png "Run as options")
+    ![Run as options.](../media/create-update-delete-trigger/11.png "Run as options")
 
 Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365
 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:

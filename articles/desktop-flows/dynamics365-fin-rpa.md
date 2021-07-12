@@ -59,7 +59,7 @@ Turn off the toggle “Ask me what to do with each download”
 
 Close your browser  
 
-   ![Image1](./media/dynamics365-fin-rpa/image001.png)
+   ![Image1.](./media/dynamics365-fin-rpa/image001.png)
 
 #### Log out of the Dynamics 365 app 
 
@@ -116,18 +116,18 @@ To get started with Dynamics 365 Finance and automate the end-of-cycle reporting
 
 1. Make sure you switch the machine setting from Power Automate Desktop to the correct environment that you will install the solution to  
 
-    ![Image2](./media/dynamics365-fin-rpa/image003.png)
+    ![Image2.](./media/dynamics365-fin-rpa/image003.png)
 
 1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
 
-    ![Image3](./media/dynamics365-fin-rpa/image005.png)
-    ![Image4](./media/dynamics365-fin-rpa/image007.png)
+    ![Image3.](./media/dynamics365-fin-rpa/image005.png)
+    ![Image4.](./media/dynamics365-fin-rpa/image007.png)
 
 1. Add a desktop flow connector. 
-    ![Image4](./media/dynamics365-fin-rpa/image009.png)
+    ![Image4.](./media/dynamics365-fin-rpa/image009.png)
  
 Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
-   ![Image5](./media/dynamics365-fin-rpa/image011.png)
+   ![Image5.](./media/dynamics365-fin-rpa/image011.png)
  
 #### Installing the Dynamics 365 RPA solution 
 
@@ -155,11 +155,11 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     a. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice.  
 
-   ![Image6](./media/dynamics365-fin-rpa/image013.png)
+   ![Image6.](./media/dynamics365-fin-rpa/image013.png)
       
     b. Come back to the tab from which you initiate the above step and click **Refresh** 
 
-    ![Image7](./media/dynamics365-fin-rpa/image015.png)
+    ![Image7.](./media/dynamics365-fin-rpa/image015.png)
 
     c. Click on **Import**. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
 
@@ -189,16 +189,16 @@ Now that prerequisites are set, we are on our way to get these free solutions th
     c. This will open the Power Automate Desktop  
     d. Under the **Subflows** dropdown, double click on **login_to_FnO**
     
-    ![Image8](./media/dynamics365-fin-rpa/image017.png)
+    ![Image8.](./media/dynamics365-fin-rpa/image017.png)
     e. In the **login_to_FnO** subflow, double click on action 11
     
     f. Fill in the **Text** textbox with the password of the account to use during automation 
     
-    ![Image9](./media/dynamics365-fin-rpa/image019.png)
+    ![Image9.](./media/dynamics365-fin-rpa/image019.png)
 1. Now you can test the desktop flow from Power Automate Desktop. 
 
 1. And then you can test the cloud flow from portal. The demo below shows how the end-to-end scenario works. You will get a Teams message at the end 
-   ![Image9](./media/dynamics365-fin-rpa/image021.gif)
+   ![Image9.](./media/dynamics365-fin-rpa/image021.gif)
 
 1. Last if you choose to run the you can  
 

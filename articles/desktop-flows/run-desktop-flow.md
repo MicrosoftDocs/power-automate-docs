@@ -52,11 +52,11 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 1. Give your flow a name in the **Flow name** box.
 1. Search for "new email", and then select **When a new email arrives (V3)** from the list of triggers. 
 
-   ![Select a trigger](../media/run-desktop-flow/select-email-trigger.png "Select a trigger")
+   ![Select a trigger.](../media/run-desktop-flow/select-email-trigger.png "Select a trigger")
 1. Select **Create**, and then select **New step**.
 1. Search for **UI flows**, and then select **Run a UI flow for desktop** from the list of **Actions**. 
 
-   ![Search action](../media/run-desktop-flow/search-action.png "Search action")
+   ![Search action.](../media/run-desktop-flow/search-action.png "Search action")
 
 1. Provide the gateway information and device credentials. 
 
@@ -68,7 +68,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
         >Make sure you can login to the device using these credentials.  
     - **Password**: Provide your work or school account’s password.
 
-      ![Connection settings](../media/run-desktop-flow/uiflow-connection-card.png "Connection settings")
+      ![Connection settings.](../media/run-desktop-flow/uiflow-connection-card.png "Connection settings")
 
       >[!TIP]
       >If you don't see your gateway, you might be in an environment whose region is different from the gateway region. Select **Troubleshoot a missing gateway** in the gateway name list to learn more. You can also confirm your gateway and Power Automate regions are [mapped correctly](../regions-overview.md).
@@ -77,11 +77,11 @@ In this example we will use an automated flow to trigger a UI flow when a new em
       >If you don't see your gateway, you might need to select a different connection. To do this, select **...** from the top right side of the **Run a UI flow for desktop** or **Run a UI flow for Web** card, and then select the connection from **My connections**.
 
 
-      ![Select a new connection](../media/run-desktop-flow/select-new-connection.png "Select a new connection")
+      ![Select a new connection.](../media/run-desktop-flow/select-new-connection.png "Select a new connection")
 
 1. Select the UI flow that you previously created.
 
-   ![Select UI flow](../media/run-desktop-flow/select-desktop-flow.png "Select UI flow")
+   ![Select UI flow.](../media/run-desktop-flow/select-desktop-flow.png "Select UI flow")
 
 1. Select **Save** to save your automated flow.
  
@@ -90,7 +90,7 @@ In this example we will use an automated flow to trigger a UI flow when a new em
 
 1. Test your flow by sending an email to trigger it. You will see your UI flow playing back the steps you recorded. 
 
-   ![Successful run that calls a UI flow](../media/run-desktop-flow/successful-run.png "Successful run that calls a UI flow")
+   ![Successful run that calls a UI flow.](../media/run-desktop-flow/successful-run.png "Successful run that calls a UI flow")
 
    >[!TIP]
    >Do not interact with your device while the flow runs.
@@ -101,7 +101,7 @@ When you define inputs and outputs within a UI flow, you can pass information fr
 
 1. When you add a UI flow to a cloud flow, you can see the list of inputs that were defined in the Windows recorder (V1) flow.
 
-   ![UI flow inputs](../media/run-desktop-flow/inputs.png "UI flow inputs")
+   ![UI flow inputs.](../media/run-desktop-flow/inputs.png "UI flow inputs")
 
 1. You can populate each input field in the UI flow with values from previous steps in the flow. To do this, select the input field, and then select an input from the token picker.
 
@@ -120,23 +120,23 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 1.	Select **…** on the top right corner of the action.
 1.	Select **Settings**.
 
-    ![The settings option ](../media/run-desktop-flow/settings.png "The settings option")
+    ![The settings option .](../media/run-desktop-flow/settings.png "The settings option")
 
 1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these settings from being shown in the logs.
 
-   ![Secure inputs and outputs](../media/run-desktop-flow/secure-outputs-secure-inputs.png "Secure inputs and outputs")
+   ![Secure inputs and outputs.](../media/run-desktop-flow/secure-outputs-secure-inputs.png "Secure inputs and outputs")
 
 1.	Select **Done**.
    
     You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
-      ![The lock icon](../media/run-desktop-flow/lock-icon.png "The lock icon")
+      ![The lock icon.](../media/run-desktop-flow/lock-icon.png "The lock icon")
 
    
       >[!TIP]
       >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a UI flow, and then turn on **Secure Text** in the **Settings**.
 
-      ![Pass outputs to UI flow ](../media/run-desktop-flow/pass-to-desktop-flow.png "UI flow inputs")
+      ![Pass outputs to UI flow .](../media/run-desktop-flow/pass-to-desktop-flow.png "UI flow inputs")
 
 
 ## Run UI flows unattended or attended
@@ -216,7 +216,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle Run on all gateways in cluster. This will distribute the UI flows runs on all the gateways within that cluster.
 
-   ![Distribute UI flow run on gateway cluster](../media/run-desktop-flow/gw_cluster.png "Distribute UI flow run on gateway cluster")
+   ![Distribute UI flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute UI flow run on gateway cluster")
    
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the UI flow connection.

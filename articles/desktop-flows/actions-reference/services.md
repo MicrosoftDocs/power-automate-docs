@@ -34,7 +34,7 @@ Power Automate Desktop allows users to handle Windows services through the servi
 
 To control services, use the services group of actions. These actions allow flows to start, stop, pause and resume Windows services.  In the figure below, the **Start service** action starts **UIFlowService**. For this group of actions, only the service name is required, and no output is returned.
 
-![screenshot of start service action properties](\media\services\start-service-example.png)
+![screenshot of start service action properties.](\media\services\start-service-example.png)
 
 > [!NOTE]
 > Please note that Windows services are essential to the smooth operation of the operating system. Managing Windows services incorrectly could adversely affect your PC. 

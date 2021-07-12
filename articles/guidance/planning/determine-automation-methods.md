@@ -78,7 +78,7 @@ Examples of automated triggers include:
 -   When a new row is created in Microsoft Dataverse
 -   When an item is modified in a custom SharePoint list
 
-![Automated triggers](media/automated-triggers.png "Automated triggers")
+![Automated triggers.](media/automated-triggers.png "Automated triggers")
 
 An example use case for the expense report might be to set an automated trigger
 to start an approval flow when a new row is created in the Expense Approvals
@@ -90,7 +90,7 @@ An *instant* or *manual* trigger is a type of trigger where either a user needs 
 start the automation or the trigger is instantaneously started. This can be
 triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.
 
-![Instant triggers](media/instant-triggers.png "Instant triggers")
+![Instant triggers.](media/instant-triggers.png "Instant triggers")
 
 ### Scheduled triggers
 
@@ -100,7 +100,7 @@ automate a task that occurs daily, weekly, or monthly.
 
 In the expense report example, the accounting team might use a scheduled trigger to send an automated email every Friday when the weekly BI report is ready.
 
-![Example of a scheduled trigger](media/scheduled-triggers.png "Example of a scheduled trigger")
+![Example of a scheduled trigger.](media/scheduled-triggers.png "Example of a scheduled trigger")
 
 > [!div class="nextstepaction"]
 > [Next step: Attended and unattended scenarios](attended-unattended.md)

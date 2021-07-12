@@ -93,7 +93,7 @@ Use the authenticated Flow SDK to allow users to create and manage flows directl
 
 Power Automate widgets work by embedding an iframe that references Power Automate into a host application. The host provides the access token that's required by the Power Automate widget. Power Automate's JS SDK enables the host application to initialize and manage the widget life cycle.
 
-![widget architecture](../media/embed-flow-dev/Architecture.png)
+![widget architecture.](../media/embed-flow-dev/Architecture.png)
 
 ### JS SDK details
 
@@ -389,14 +389,14 @@ Follow these steps to select one or more delegated permissions:
 3.  Select **App registrations** under **Manage**.
 4.  Enter the third-party application to be configured for Flow service scopes.
 5.  Select **Settings**.
-      ![widget architecture](../media/embed-flow-dev/AAD-App-Settings.png)
+      ![widget architecture.](../media/embed-flow-dev/AAD-App-Settings.png)
 6. Select **Required permissions** under **API access**/
 7. Select **Add**.
 8. Choose **Select an API**.
-      ![widget architecture](../media/embed-flow-dev/AAD-App-Select-an-API.png)
+      ![widget architecture.](../media/embed-flow-dev/AAD-App-Select-an-API.png)
 9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one AAD user signed into the Flow portal (<https://flow.microsoft.com>)
 10. Choose the required Flow scopes for your application then select **Save**.
-      ![widget architecture](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
+      ![widget architecture.](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
 Your application will now get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
 
@@ -422,7 +422,7 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 <!-- todo where should I download from? -->
 1.  Download the sample and copy it to a local folder on your device.
 2.  Open the index.html file under the FlowSDKSample folder and modify the `applicationConfig` to update the `clientID` to the application ID you registered earlier.
-    ![widget architecture](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
+    ![widget architecture.](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
 3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** You can configure additional scopes by updating the **flowScopes** property in **applicationConfig** object.
 4.  Run these commands to install the dependency and run the sample app:
     > \> npm install 
@@ -430,9 +430,9 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 5. Open the browser and then enter http://localhost:30662
 6. Select the **Sign in** button to authenticate to AAD and acquire a cloud flow access token.
 7. The **Access Token** text box contains the access token.
-    ![widget architecture](../media/embed-flow-dev/SampleApp-AccessToken.png)
+    ![widget architecture.](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
-    ![widget architecture](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
+    ![widget architecture.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
 Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 

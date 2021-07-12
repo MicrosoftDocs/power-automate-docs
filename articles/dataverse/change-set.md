@@ -36,11 +36,11 @@ Follow these steps to get started with change sets.
 
 1. Select the **Perform a changeset request** to add its scope to your flow.
 
-   ![Change set request action](../media/dataverse-how-tos/change-set-1.png "Change set request action")
+   ![Change set request action.](../media/dataverse-how-tos/change-set-1.png "Change set request action")
 
 1. Select **Add an action**.
 
-   ![Add an action](../media/dataverse-how-tos/change-set-2.png "Add an action")
+   ![Add an action.](../media/dataverse-how-tos/change-set-2.png "Add an action")
 
     You’ll notice that this approach is different from any other action you’ve added in the following ways:
 
@@ -54,10 +54,10 @@ Follow these steps to get started with change sets.
 
       - Update a row
 
-    ![The three actions available for Perform a changeset request](../media/dataverse-how-tos/change-set-3.png "The three actions available for Perform a changeset request")
+    ![The three actions available for Perform a changeset request.](../media/dataverse-how-tos/change-set-3.png "The three actions available for Perform a changeset request")
 
     You cannot have additional built-in actions inside of a change set scope because all actions are evaluated together in Dataverse. You will see that there are no arrows between each of the actions, indicating that there are no dependencies between these actions (they’ll all run at once).
 
 1. Add all of the actions that you want to perform.<!-- Edit note: This is the same image as above. Also, the ALT text does not seem to match well. -->
 
-   ![Executes a changeset scope](../media/dataverse-how-tos/change-set-3.png "Executes a changeset scope")
+   ![Executes a changeset scope.](../media/dataverse-how-tos/change-set-3.png "Executes a changeset scope")

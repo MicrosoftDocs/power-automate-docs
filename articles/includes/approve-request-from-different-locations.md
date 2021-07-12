@@ -21,7 +21,7 @@ To approve a request:
 1. On your mobile phone with the Power Automate app installed, select **Approve** from the request approval email.
 1. Select **Confirm** in the upper right corner of the screen.
 
-    ![select confirm](media/modern-approvals/mobile-approval.png)
+    ![select confirm.](media/modern-approvals/mobile-approval.png)
 1. The success page shows, indicating that your approval has been recorded.
 
 >[!Note]

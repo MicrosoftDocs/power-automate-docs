@@ -23,7 +23,7 @@ There are two main types of automation available in Power Automate:
 
 - UI-based robotic process automation (RPA): desktop flows
 
-![Power Automate bridges the gap between old apps without APIs and modern API-based systems](media/bridge-the-gap.png "Power Automate bridges the gap between old apps without APIs and modern API-based systems")
+![Power Automate bridges the gap between old apps without APIs and modern API-based systems.](media/bridge-the-gap.png "Power Automate bridges the gap between old apps without APIs and modern API-based systems")
 
 ## Cloud-based digital process automation (DPA)
 
@@ -40,7 +40,7 @@ a wide variety of application functionality in your automation. For example, you
 can use the connectors for SharePoint and your email program to automate the process of adding a new item to a SharePoint list when you receive an email
 that has a specific subject line.
 
-![Gallery of connectors](media/connector-list.png "Gallery of connectors")
+![Gallery of connectors.](media/connector-list.png "Gallery of connectors")
 
 ## Desktop-based RPA
 

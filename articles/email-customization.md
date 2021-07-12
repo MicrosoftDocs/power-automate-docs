@@ -45,7 +45,7 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 1. Select the **\</\>** button inside the rich text editor in the Power Automate designer. 
 
-   ![A screenshot of the button you can use to enter HTML into the body of the email](./media/email/html-button.png)
+   ![A screenshot of the button you can use to enter HTML into the body of the email.](./media/email/html-button.png)
 
 1. Enter any HTML content into the body of the email.
 
@@ -58,7 +58,7 @@ Alternatively, if you don't know HTML or don't feel like playing with HTML, foll
 1. Open the email you sent to yourself in Outlook. Be sure to use a new window; don't use the preview window in Outlook.
 1. Go to the **Message** tab > **More Actions** > **Other Actions** > **View Source**.
 
-   ![A screenshot that displays the steps to view the **other actions** menu in Outlook](./media/email/other-actions.png)
+   ![A screenshot that displays the steps to view the **other actions** menu in Outlook.](./media/email/other-actions.png)
 
    The HTML representation of the email opens in your text editor. 
 
@@ -91,7 +91,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
-   ![A screenshot of a cloud flow that gets all group members and then sends email to each member](./media/email/group-members-flow.png)
+   ![A screenshot of a cloud flow that gets all group members and then sends email to each member.](./media/email/group-members-flow.png)
 
 ## Send automatic replies from a shared mailbox
 

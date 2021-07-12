@@ -30,26 +30,26 @@ Follow these steps to create an approval from the approvals app in Teams.
 
 2. Select **More added apps (...)**, search for **approvals**, and then select the **approvals** app.
 
-   ![Search for the app in Teams](../media/native-approvals-in-teams/more-apps-approvals.png)
+   ![Search for the app in Teams.](../media/native-approvals-in-teams/more-apps-approvals.png)
 
 3. Select **New Approval request** on the top right of the app.
 
-   ![New Approval request](../media/native-approvals-in-teams/approval-app-create.png)
+   ![New Approval request.](../media/native-approvals-in-teams/approval-app-create.png)
 
 4. Enter the details of the approval.
 
-   ![Approvals form](../media/native-approvals-in-teams/approvals-dialog-box.png)
+   ![Approvals form.](../media/native-approvals-in-teams/approvals-dialog-box.png)
 
    >[!TIP]
    >If you are sending an approval to multiple users and you need everyone to respond, ensure that select the **Require a response from all approvers** option. If you only need one of the approvers to approve turn the option off.
 
-   ![Multiple approvers toggle](../media/native-approvals-in-teams/multiple-approvers-toggle.png)
+   ![Multiple approvers toggle.](../media/native-approvals-in-teams/multiple-approvers-toggle.png)
 
 5. Select **Send**. 
 
    The approval shows up in the **Sent** tab in the app.
 
-   ![Sent approvals](../media/native-approvals-in-teams/approvals-app-sent.png)
+   ![Sent approvals.](../media/native-approvals-in-teams/approvals-app-sent.png)
    
 ## Known issues
 

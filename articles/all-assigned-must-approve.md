@@ -98,7 +98,7 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
 
     The **Start and wait for an approval** card is a template for the approval request that's sent to approvers. Configure it in a way that's useful for your organization. Here's an example.
 
-    ![Start and wait for an approval](media/all-assigned-must-approve/start-an-approval-card.png)
+    ![Start and wait for an approval.](media/all-assigned-must-approve/start-an-approval-card.png)
 
     When a cloud flow with the **Start and wait for an approval** action is configured with **Approve/Reject - Everyone must approve**, it waits until all **Assigned to** approve or at least one **Assigned to** rejects the approval request.
 
@@ -111,7 +111,7 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
 
     Here's an example of what the **Send an email (V2)** card might look like.
 
-    ![send an email](media/all-assigned-must-approve/send-an-email-card.png)
+    ![send an email.](media/all-assigned-must-approve/send-an-email-card.png)
 
 > [!NOTE]
 > Any action that follows the **Start and wait for an approval** action runs based on your selection in the **Approval type** list on the **Start and wait for an approval** card. The following table lists the behavior based on your selection.
@@ -131,17 +131,17 @@ At the top of the screen, select **Save** to save your flow.
 
 Congratulations, your flow is complete! If you followed along, your flow resembles this image.
 
-![overall flow image](media/all-assigned-must-approve/overall-flow.png)
+![overall flow image.](media/all-assigned-must-approve/overall-flow.png)
 
 Now, whenever an item is added to your SharePoint list, or if an item changes, your flow triggers and sends approval requests to all approvers whom are listed in the **Assigned to** box of the **Start and wait for an approval** card. Your flow sends approval requests via the Power Automate mobile app and via email. The person who creates the item in SharePoint gets an email that summarizes the results, clearly indicating if the request was approved or rejected.
 
 Here's an example of the approval request that's sent to each approver.
 
-![approval request](media/all-assigned-must-approve/approval-request.png)
+![approval request.](media/all-assigned-must-approve/approval-request.png)
 
 Here's an example of what a response and a response summary may look like after your flow runs.
 
-![response tokens](media/all-assigned-must-approve/response-output.png)
+![response tokens.](media/all-assigned-must-approve/response-output.png)
 
 ## Learn more about approvals
 

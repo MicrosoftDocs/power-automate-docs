@@ -39,7 +39,7 @@ The Selenium IDE suggests different selectors and a default one when targeting a
 
 Here is an example of possible selectors that the Selenium IDE identified:
 
-![Possible selectors](../media/edit-web/possible-selectors.png "Possible selectors")
+![Possible selectors.](../media/edit-web/possible-selectors.png "Possible selectors")
 
 ## Accessing a property of an object variable or item of an array variable**
 

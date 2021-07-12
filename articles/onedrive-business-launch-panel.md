@@ -42,7 +42,7 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 1. Select the **Show actions** link (three dots).
 1. Select **Automate** > **Power Automate** > **Create a flow**.
 
-     ![Create flow](./media/onedrive-launch-panel/create-flow.png) 
+     ![Create flow.](./media/onedrive-launch-panel/create-flow.png) 
 
 1. Select one of the templates.
 
@@ -62,7 +62,7 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 1. Select **Flow**. You'll see the flow that you created earlier.
 1. Select the flow you created earlier.
 
-     ![Run your flow](./media/onedrive-launch-panel/run-flow.png)
+     ![Run your flow.](./media/onedrive-launch-panel/run-flow.png)
 
 
 >[!TIP]

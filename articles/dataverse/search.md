@@ -30,13 +30,13 @@ Use the **Search rows** action in flows to retrieve data from Microsoft Datavers
 
 Your admin must configure [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization) on your environment before you can use the search action on Microsoft Dataverse.
 
-![The search rows action](../media/search-row/3f253e0b3de8d320be884b3f503ba33c.png "The search rows action")
+![The search rows action.](../media/search-row/3f253e0b3de8d320be884b3f503ba33c.png "The search rows action")
 
 You can add the **Search rows** action to your flows, and then provide a keyword in **Search term** to search for that keyword across all the indexed rows in Dataverse.
 
 You can use dynamic content from a previous step in the flow to parameterize the **Search term** box. For example, you can use a keyword that's entered in a Power Virtual Agent bot and set the following options to initiate an automated search:
 
-![Power Virtual Agent calling a flow](../media/search-row/da5e692228bd41726bc5c1e03dc70b7c.png "Power Virtual Agent calling a flow")
+![Power Virtual Agent calling a flow.](../media/search-row/da5e692228bd41726bc5c1e03dc70b7c.png "Power Virtual Agent calling a flow")
 
 >[!NOTE]
 >It can take a few hours for newly added rows to be included in the search results.
@@ -84,7 +84,7 @@ You can specify whether any or all the search terms must be matched to count the
 
 Go to [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
 
-![Search mode example](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png "Search mode example")
+![Search mode example.](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png "Search mode example")
 
 ### Advanced Options
 
@@ -97,7 +97,7 @@ See [Search across table data using relevance search](https://docs.microsoft.com
 
 - **Sort by**: Use this option to sort by specifying a column name and adding *asc* or *desc* as the suffix, as shown in the following image.
 
-    ![Advanced options](../media/search-row/21831a3d3abca6833ef5801956faa3de.png "Advanced options")
+    ![Advanced options.](../media/search-row/21831a3d3abca6833ef5801956faa3de.png "Advanced options")
 
 ### Using dynamic content and Dataverse rows
 
@@ -116,9 +116,9 @@ Row object type code|The table name identifier for the row.
 
 When you are building your flow, the dynamic content might appear like this image:
 
-![Dynamic content for building a flow](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png "Dynamic content for building a flow")
+![Dynamic content for building a flow.](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png "Dynamic content for building a flow")
 
 The **Search rows** action returns many other columns for the matched rows in a variable schema, depending on [your relevance search configuration](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization).
 To use these columns, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image:<!-- Edit note: How about a See also for Lucene. -->
 
-![The JSON schema](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png "The JSON schema")
+![The JSON schema.](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png "The JSON schema")

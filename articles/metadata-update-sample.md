@@ -29,7 +29,7 @@ This card is comprised of three sections:
 1. The fact list area for relevant row metadata.
 1.  A column set which supports a table array of data
 
-![Metadata sample](media/adaptive-cards/metadata-sample.png) 
+![Metadata sample.](media/adaptive-cards/metadata-sample.png) 
 
 
 *Inputs/Outputs and notes*

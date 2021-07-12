@@ -28,11 +28,11 @@ in a day.
 
 3. Select **Analytics**.
 
-   ![Analytics for a flow](media/analytics-tab.png "Analytics for a flow")
+   ![Analytics for a flow.](media/analytics-tab.png "Analytics for a flow")
 
 4. Select the **Usage** tab.
 
-   ![Usage of a flow](media/usage-tab.png "Usage of a flow")
+   ![Usage of a flow.](media/usage-tab.png "Usage of a flow")
 
 ## Get the number of flow runs
 
@@ -47,7 +47,7 @@ particular business process.
 
 3. Select **Export data**.
 
-   ![Graph of flow runs](media/flow-runs-graph.png "Graph of flow runs")
+   ![Graph of flow runs.](media/flow-runs-graph.png "Graph of flow runs")
 
 4. Select the file format you want (Excel workbook or CSV).
 
@@ -65,7 +65,7 @@ particular business process.
 
 4. If you want to export the information, select **Get .csv file.**
 
-   ![List of run history](media/run-history-list.png "List of run history")
+   ![List of run history.](media/run-history-list.png "List of run history")
 
 The CSV file includes start time and end time of each run. You can use Excel to
 recalculate the duration and do additional analysis (such as finding the average duration).
@@ -73,7 +73,7 @@ To get the duration in seconds, use the following formula:
 
 &nbsp;&nbsp;&nbsp;(**Run end time** cell &minus; **Run start time** cell) &times; 24 &times; 60 &times; 60
 
-![Calculating duration with Excel](media/excel-calculation.png "Calculating duration with Excel")
+![Calculating duration with Excel.](media/excel-calculation.png "Calculating duration with Excel")
 
 To get the average duration, obtain the total the number of durations, and 
 divide it by number of runs (no. of rows).
@@ -86,7 +86,7 @@ previous manual process.
 
 Let's take the scenario from cash reimbursement as an example.
 
-![Example scenario of cash reimbursement](media/diagram-accounting-before.png "Example scenario of cash reimbursement")
+![Example scenario of cash reimbursement.](media/diagram-accounting-before.png "Example scenario of cash reimbursement")
 
 Previously, Abhay's accounting team had to key in accounting
 codes, enter transactions, and post transactions in the accounting system based on the
@@ -98,13 +98,13 @@ reimburse the applicant from the online banking website.
 Based on the flow run analytics, Abhay can see that the automation ran between 91 to
 110 times a day, for an average of 107 runs.
 
-![Trend graph of flow runs](media/flow-run-trends.png "Trend graph of flow runs")
+![Trend graph of flow runs.](media/flow-run-trends.png "Trend graph of flow runs")
 
 The [duration of the automation](#get-the-flow-run-duration) obtained is 40 seconds on average. Therefore, the time reduced per run is:
 
 &nbsp;&nbsp;&nbsp;Time before automation (3 minutes &plus; 5 minutes) &minus; time after automation (40 seconds) = 440 seconds
 
-![Comparison of before and after automation](media/before-after-automation.png "Comparison of before and after automation")
+![Comparison of before and after automation.](media/before-after-automation.png "Comparison of before and after automation")
 
 Because the automation ran 3,226 times in 30 days, total time saved is:
 

@@ -38,7 +38,7 @@ You can send the email to one or more recipients. You can use the rich text edit
 
 For example, if you have a cloud flow that sends you an email as soon as your item is approved, you can add the link of the approved item as an attachment.
 
-![A screenshot that displays an example of an email that uses dynamic content in the body of the email](./media/email/dynamic-content.png)
+![A screenshot that displays an example of an email that uses dynamic content in the body of the email.](./media/email/dynamic-content.png)
 
 ## Send email with voting options
 
@@ -49,7 +49,7 @@ Use the **Send email with options** action to send an email with voting options
 
 The recipients receive an email similar to the following image.
 
-   ![A screenshot of an email with voting buttons](./media/email/voting-buttons.png)
+   ![A screenshot of an email with voting buttons.](./media/email/voting-buttons.png)
 
 In your flow, you must capture that response and save it somewhere. You might email it to yourself, save it to Excel, or post it to Teams. Don't forget to save it, otherwise you won't know how people voted.<!--note from editor: Suggested.-->
 
@@ -59,7 +59,7 @@ Use the [Send an email from a shared mailbox (V2) ](/connectors/office365/) act
 
 The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
 
-![A screenshot that shows the Send an email from a shared mailbox (V2) card](./media/email/shared-mailbox.png)
+![A screenshot that shows the Send an email from a shared mailbox (V2) card.](./media/email/shared-mailbox.png)
 
 ## Build an approval process and send notifications via email 
 
@@ -76,7 +76,7 @@ Here are three ways you can send a daily digest email with a table:<!--note from
 - Use the [Data Operation – Select ](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to see in the email.
 You can further format the data by using expressions. In following example, the flow gets calendar events within a certain timeframe, converts the time zones, and then creates a table with the events.<!--note from editor: If the reader is going to learn how to do this by looking at the image, there needs to be descriptive alt text here.-->
 
-    ![A screenshot displays an example flow with a table](./media/email/table.png)
+    ![A screenshot displays an example flow with a table.](./media/email/table.png)
 
 - Add the [Create HTML Table](./data-operations.md#use-the-create-html-table-action) action, and then add the output from the select action to the HTML action.
 

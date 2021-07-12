@@ -49,13 +49,13 @@ These steps describe how to self-serve Account Close requests for GDPR.
     >
     >
 
-    ![Cancel subscriptions](./media/gdpr-dsr-delete-msa/accountclose.png)
+    ![Cancel subscriptions.](./media/gdpr-dsr-delete-msa/accountclose.png)
 
 1. Acknowledge that you understand the impact of closing your MSA, and then select **Mark account for closure**.
 
     A notification appears, indicating that your account will be closed in 30 days. You may reopen this account at any time during this 30-day period.
 
-    ![Account Closed](./media/gdpr-dsr-delete-msa/accountclosed.png)
+    ![Account Closed.](./media/gdpr-dsr-delete-msa/accountclosed.png)
 
     At the end of this 30-day window, the process to delete all Power Automate resources for this MSA begins.
 
