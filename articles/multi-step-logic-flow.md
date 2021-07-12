@@ -38,19 +38,19 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 2. In the list of flows, select the flow that you want to edit.
 3. Select **New step**, and then select **Add an action**.
    
-    ![Collapsed add](./media/multi-step-logic-flow/add-action.png)
+    ![Collapsed add.](./media/multi-step-logic-flow/add-action.png)
 4. In the list of possible actions, search for **Create file**, and then select **Dropbox - Create file**.
    
-    ![search create file](./media/multi-step-logic-flow/create-file-search.png)
+    ![search create file.](./media/multi-step-logic-flow/create-file-search.png)
 5. If prompted, provide your Dropbox credentials.
 6. Select the folder icon on the right side of the **Folder path** box.
 7. Find and then select the folder in which you want to place the new file.
    
-    ![search create file](./media/multi-step-logic-flow/create-file-folder.png)
+    ![search create file.](./media/multi-step-logic-flow/create-file-folder.png)
 8. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
 9. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
    
-    ![file name and contents](./media/multi-step-logic-flow/create-file-name-and-contents.png)
+    ![file name and contents.](./media/multi-step-logic-flow/create-file-name-and-contents.png)
    
    > [!IMPORTANT]
    > If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
@@ -69,10 +69,10 @@ In this procedure, you'll add an action in the middle of the flow. This action w
   > 
   > 
   
-    ![Delete the menu](./media/multi-step-logic-flow/draggingaction.png)
+    ![Delete the menu.](./media/multi-step-logic-flow/draggingaction.png)
 * To delete an action, select the ellipsis (...) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
   
-    ![Delete the menu](./media/multi-step-logic-flow/deletemenu.png)
+    ![Delete the menu.](./media/multi-step-logic-flow/deletemenu.png)
   
      **Note:** You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
 
@@ -97,7 +97,7 @@ Start with a cloud flow that has a **Send an email** action.
    
      You'll then see the advanced options for sending an email.
    
-    ![Sharepoint triggers](./media/multi-step-logic-flow/advanced.png)
+    ![Sharepoint triggers.](./media/multi-step-logic-flow/advanced.png)
 2. Select **High** from the **Importance** list, and then select **Hide advanced options** to hide the advanced options.
 3. Select **Update flow**, which is located on the menu at the top of the screen.
    

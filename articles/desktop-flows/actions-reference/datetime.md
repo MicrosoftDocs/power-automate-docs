@@ -35,7 +35,7 @@ Add any amount of a specified unit of time to a date with the **Add to datetime*
 
 To find the difference between two dates, use the **Subtract dates** action. The difference can be returned in seconds, minutes, hours or days.
 
-![screenshot of subtract dates action properties](\media\datetime\subtract-dates.png)
+![screenshot of subtract dates action properties.](\media\datetime\subtract-dates.png)
 
 ## Datetime actions
 

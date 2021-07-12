@@ -24,7 +24,7 @@ mistakes, rather than attempting to build the entire flow and then testing it.
 
 Let's take a look at the example shown in the following illustration.
 
-:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow":::
+:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow.":::
    From "Expense report created," an arrow leads to the decision "Check if report meets compliance." From "Check if report meets compliance," Yes leads to "Status updated to 'Compliance check complete'" and No leads to "Request fixes."
 :::image-end:::
 

@@ -21,21 +21,21 @@ search.audienceType:
 
 Upon opening the flow designer, the actions pane on the left side of the window shows all the action groups. 
 
-![View of the actions pane](\media\actions-pane\actions-pane.png)
+![View of the actions pane.](\media\actions-pane\actions-pane.png)
 
 To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
 
-![Search in the actions pane](\media\actions-pane\actions-search.png)
+![Search in the actions pane.](\media\actions-pane\actions-search.png)
 
 ## Adding an action to the workspace
 
 To begin developing a desktop flow, select an action and double-click on it, or drag it into the workspace. 
 
-![add action](\media\adding-actions\add-action.png)
+![add action.](\media\adding-actions\add-action.png)
 
 A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
 
-![action properties](\media\adding-actions\action-properties.png)
+![action properties.](\media\adding-actions\action-properties.png)
 
 ## Configuring an action
 

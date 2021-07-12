@@ -30,7 +30,7 @@ Use the **For a selected message** trigger in the Teams connector to trigger a c
 1. Enter a name for your flow.
 1. Select the **For a selected message** trigger.
 
-   ![For selected message trigger](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
+   ![For selected message trigger.](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
 
 1. Select **Create**.
 
@@ -43,11 +43,11 @@ The **For a selected message** trigger has an optional input in the form of an a
 
 To collect information from the user by using a form, users can select **Create Adaptive Card** in the trigger.
 
-![Create adaptive card](media/trigger-flow-teams-message/create-adaptive-card.png)
+![Create adaptive card.](media/trigger-flow-teams-message/create-adaptive-card.png)
 
 This displays an inline adaptive card editor, where you can drag card elements to construct your own form.
 
-![Adaptive card form designer](media/trigger-flow-teams-message/ac-card-designer.png)
+![Adaptive card form designer.](media/trigger-flow-teams-message/ac-card-designer.png)
 
 Each input within the adaptive card form has an ID. You can use the ID later in the flow through dynamic tokens to reference inputs that a user might have entered as part of running the flow.
 
@@ -61,7 +61,7 @@ Several message elements are available as a trigger output for use within the fl
 * **Sender display name, Sender ID**: The details about the user who sent the message.
 * **Originating user display name, originating user ID**: The details about the user who invoked the flow.
 
-![For selected message outputs](media/trigger-flow-teams-message/dynamic-outputs.png)
+![For selected message outputs.](media/trigger-flow-teams-message/dynamic-outputs.png)
 
 For more information, go to the [full list of trigger outputs](/connectors/teams/).
 
@@ -75,7 +75,7 @@ For more information, go to the [full list of trigger outputs](/connectors/teams
 
 Any flow that uses the **For a selected message** trigger shows up as a message action in the Teams message in the **More actions** menu for the flow.<!--note from editor: I assume Joni Sherman, Isaiah Langer, and Megan Bowen are names from sample data?-->
 
-![Trigger from Teams](media/trigger-flow-teams-message/more-actions-menu.png)
+![Trigger from Teams.](media/trigger-flow-teams-message/more-actions-menu.png)
 
 >[!IMPORTANT]
 >The name of the flow is used to reference the flow within Teams, so be sure to provide a descriptive name for it.
@@ -86,7 +86,7 @@ Be sure to include a form of a confirmation to the user after the flow is comple
 
 Here's an example of a cloud flow that creates a work item in Azure DevOps and then posts a confirmation to the originating user.<!--note from editor: This image needs more detailed alt text to describe what's going on. It probably will take more than 150 characters, so this might be a good place to use the new image extension.-->
 
-![Create a task flow](media/trigger-flow-teams-message/complete-flow.png)
+![Create a task flow.](media/trigger-flow-teams-message/complete-flow.png)
 
 ## Known issues and limitations
 

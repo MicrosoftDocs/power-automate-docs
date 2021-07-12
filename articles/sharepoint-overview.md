@@ -58,11 +58,11 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 
 You can use SharePoint triggers to start flows that monitor changes made to a SharePoint list or library. For a full list, go to [SharePoint triggers](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).
 
-![A screenshot that shows some SharePoint triggers such as "When an item is created"](./media/overview-sharepoint/sharepoint-triggers.png)
+![A screenshot that shows some SharePoint triggers such as "When an item is created."](./media/overview-sharepoint/sharepoint-triggers.png)
 
 As soon as your flow starts, you can use any of the more than [40 *actions*](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-actions) to manipulate your SharePoint lists.
 
-![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file"](./media/overview-sharepoint/sharepoint-actions.png)
+![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png)
 
 ## Migrate from workflows to Power Automate
 

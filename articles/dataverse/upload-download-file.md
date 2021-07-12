@@ -44,7 +44,7 @@ Follow these steps to add the **Download a file or an image** action to your flo
 
 1. Select the **Download a file or an image** *action*.
 
-   ![Filter to actions for file downloading](../media/upload-download-file/upload-download-file.png "Filter to actions for file downloading")
+   ![Filter to actions for file downloading.](../media/upload-download-file/upload-download-file.png "Filter to actions for file downloading")
 
 1. Select the table from which you want to download the file or image content or enter your own custom value for the table name.
 
@@ -57,21 +57,21 @@ Follow these steps to add the **Download a file or an image** action to your flo
 
 1. From **Column name**, select the column that holds the file or image content that you want to download.
 
-   ![Select a column name](../media/upload-download-file/upload-download-file-complete.png "Select a column name")
+   ![Select a column name.](../media/upload-download-file/upload-download-file-complete.png "Select a column name")
 
    You now can access the file or image content by using the **File or image content** variable in the **Dynamic content** list.
 
-      ![Use dynamic content in Create file action](../media/upload-download-file/dynamic-content.png "Use dynamic content in Create file action")
+      ![Use dynamic content in Create file action.](../media/upload-download-file/dynamic-content.png "Use dynamic content in Create file action")
 
    With the content output of the action, you can pass it to any action later in the flow. In the following example, the file contents are being passed to the **Create file** action.
 
-      ![Create file action](../media/upload-download-file/create-file.png "Create file action")
+      ![Create file action.](../media/upload-download-file/create-file.png "Create file action")
 
 ## Upload file or image content
 
 Follow these steps to add the **Upload a file or an image** action to your flow. This way, you can upload content to a corresponding file or image column in Microsoft Dataverse.
 
-   ![Filter to actions for uploading file content](../media/upload-download-file/upload-file.png "Filter to actions for uploading file content")
+   ![Filter to actions for uploading file content.](../media/upload-download-file/upload-file.png "Filter to actions for uploading file content")
 
 1. In **Table name**, select the table to which you want to upload the file or image content or enter a custom value.  
 
@@ -86,10 +86,10 @@ Follow these steps to add the **Upload a file or an image** action to your flow.
 
    Your **Upload a file or an image** action card might look like this now.
 
-   ![Column to upload to](../media/upload-download-file/upload-file-card.png "Column to upload to")
+   ![Column to upload to.](../media/upload-download-file/upload-file-card.png "Column to upload to")
 
 1. Enter the content you want to upload.
 
    In this example, the files to upload are the attachments content from an email captured earlier in the flow. You can select **Attachments Content** in the list of dynamic content that's displayed when you select **Add dynamic content** on the **Upload a file or an image** card.
 
-   ![Content to upload](../media/upload-download-file/upload-file-dynamic-content.png "Content to upload")
+   ![Content to upload.](../media/upload-download-file/upload-file-dynamic-content.png "Content to upload")

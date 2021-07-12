@@ -57,7 +57,7 @@ This sample demonstrates how to programmatically work with business process flow
 
      Here is the output of the sample:  
 
-    ![Sample output](media/work-with-bpf-sample-output.png "Sample output")  
+    ![Sample output.](media/work-with-bpf-sample-output.png "Sample output")  
 
 <a name="BKMK_runSample"></a>   
 ## Run the sample  

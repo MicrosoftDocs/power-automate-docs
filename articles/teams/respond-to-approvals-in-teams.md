@@ -34,27 +34,27 @@ Follow these steps to respond to an approval in a chat or channel in Microsoft T
 
    You should see a card with the approval.
 
-   ![Approval in a chat](../media/native-approvals-in-teams/approval-received.png)
+   ![Approval in a chat.](../media/native-approvals-in-teams/approval-received.png)
 
    Alternately, you can open the approvals app in Teams and go to the **Received** tab.
 
-   ![Approval in a chat](../media/native-approvals-in-teams/approval-app-received.png)
+   ![Approval in a chat.](../media/native-approvals-in-teams/approval-app-received.png)
 
 
 3. Select **View details** on the card or select the approval to open the approval form.
    
-   ![Approve or reject form](../media/native-approvals-in-teams/approval-respond.png)
+   ![Approve or reject form.](../media/native-approvals-in-teams/approval-respond.png)
 
 4. From here, you can approve or reject the approval. You can also include comments with your decision. Once approved, the state is updated in the card or the app.
 
-   ![Approval complete](../media/native-approvals-in-teams/approval-complete.png)
+   ![Approval complete.](../media/native-approvals-in-teams/approval-complete.png)
 
-   ![Approval complete app](../media/native-approvals-in-teams/approval-app-complete.png)
+   ![Approval complete app.](../media/native-approvals-in-teams/approval-app-complete.png)
 
 >[!TIP]
 >If the approver has chosen to send an approval with custom responses, the actions at the bottom can differ. For example:
 
-![Custom responses](../media/native-approvals-in-teams/custom-responses-respond.png)
+![Custom responses.](../media/native-approvals-in-teams/custom-responses-respond.png)
 
 
 ## Known issues

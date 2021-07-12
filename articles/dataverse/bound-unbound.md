@@ -48,13 +48,13 @@ Follow these steps to edit one of your flows to perform a bound action.
 1. After any step in your flow, select **Add new step**.
 1. Enter **bound** in the search box, select **Microsoft Dataverse** from the list of connectors, and then select **Perform a bound action**.
 
-   ![Add a bound action to your flow](../media/dataverse-how-tos/bound-1.png "Add a bound action to your flow")
+   ![Add a bound action to your flow.](../media/dataverse-how-tos/bound-1.png "Add a bound action to your flow")
 
 1. In **Table name**, select the name of a table you want to use.
 1. In **Action name**, select the action you'll perform.
 1. In **Row ID**, enter the row in the table on which you want to perform the bound action.
 
-   ![Bound action card completed](../media/dataverse-how-tos/bound-complete.png "Bound action card completed")
+   ![Bound action card completed.](../media/dataverse-how-tos/bound-complete.png "Bound action card completed")
 
 1. Save, and then run your flow.
 1. Confirm that the bound action completes successfully on the table that you selected.
@@ -71,11 +71,11 @@ Follow these steps to edit one of your flows to perform an unbound action.
 
 1. Enter **unbound** in the search box, select **Microsoft Dataverse** from the list of connectors, and then select **Perform an unbound action**.
 
-   ![Add an unbound action to your flow](../media/dataverse-how-tos/bound-2.png "Add an unbound action to your flow")
+   ![Add an unbound action to your flow.](../media/dataverse-how-tos/bound-2.png "Add an unbound action to your flow")
 
 1. In **Action name**, select an action.
 
-   ![Action name](../media/dataverse-how-tos/bound-3.png "Action name")
+   ![Action name.](../media/dataverse-how-tos/bound-3.png "Action name")
 
 1. Enter or select any of the optional details on the **Perform an unbound action** card.
 

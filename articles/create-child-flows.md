@@ -37,11 +37,11 @@ You will need a solution with two flows:
 1. Select **Add an input**.
    The input you define here will be passed in to the child flow from the parent flow.
 
-    ![The the input that will come from parent flows](./media/call-child-flow/add-trigger-input.png "The the input that will come from parent flows")
+    ![The the input that will come from parent flows.](./media/call-child-flow/add-trigger-input.png "The the input that will come from parent flows")
 
 1. For this walkthrough, the child flow creates a contact, so it needs the **Contact name** and **Contact email**.
 
-   ![Input for child flow](./media/call-child-flow/input-definition.png "Input for child flow")
+   ![Input for child flow.](./media/call-child-flow/input-definition.png "Input for child flow")
 
 1. Build the logic that you want the child flow to run. This logic can contain as many steps as you need. 
 
@@ -53,7 +53,7 @@ You will need a solution with two flows:
 
 1. As with the trigger, you can define as many outputs as you want to be returned from the child flow. In the following image, we can respond with the ID of the contact.
 
-   ![Child flow response](./media/call-child-flow/response-output.png "Child flow response")
+   ![Child flow response.](./media/call-child-flow/response-output.png "Child flow response")
 
 1. Give your flow a descriptive name and then save it. 
 
@@ -78,11 +78,11 @@ You will need a solution with two flows:
    >[!NOTE]
    >You will only see the flows to which you have access and are located in a solution. Child flows must also have one of the three triggers mentioned earlier.
 
-   ![Select the child flow to run](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
+   ![Select the child flow to run.](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
 
 1. After you select your child flow, you will see the _inputs_ that you defined. After the child flow action, you will be able to use any of the _outputs_ from that child flow.
 
-   ![Inputs](./media/call-child-flow/view-child-flow-input.png "Inputs")
+   ![Inputs.](./media/call-child-flow/view-child-flow-input.png "Inputs")
 
    When the parent flow runs, it waits for the child flow to complete for the lifetime of the flow (one year for flows that use built-in connections and Dataverse or 30 days for all other flows).
 

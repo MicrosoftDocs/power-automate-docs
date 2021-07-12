@@ -37,7 +37,7 @@ setting an action that runs only when the previous step has failed.
 In the example below, when the **Get manager (V2)** action fails to run, the
 **Send an email notification (V3)"**action is executed.
 
-![Setting up an action to run after the previous step has failed](media/custom-error-notifications.png "Setting up an action to run after the previous step has failed")
+![Setting up an action to run after the previous step has failed.](media/custom-error-notifications.png "Setting up an action to run after the previous step has failed")
 
 > [!div class="nextstepaction"]
 > [Next step: Deploying and refining phase](deploy-to-production.md)

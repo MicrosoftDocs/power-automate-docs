@@ -112,7 +112,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle Run on all gateways in cluster. This will distribute the desktop flows runs on all the gateways within that cluster.
 
-   ![Distribute desktop flow run on gateway cluster](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
+   ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
@@ -165,7 +165,7 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
 A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
 
-![Notification window](\media\run-pad-flow\notification-window.png)
+![Notification window.](\media\run-pad-flow\notification-window.png)
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate Desktop doesn't display notifications.

@@ -30,7 +30,7 @@ Business process flows provide a guided way to get work done in the form of stag
 
 Let’s say that you’d like to add a radial knob for the **Estimated Budget** step and a flip switch for the **Identify Decision Maker** step of the Lead to Opportunity Sales process. 
 
-![Overview of custom controls](./media/custom-controls/overview.png)
+![Overview of custom controls.](./media/custom-controls/overview.png)
 
 Here are the steps you must follow to add custom controls to a business process flow:
 

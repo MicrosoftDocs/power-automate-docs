@@ -37,11 +37,11 @@ Use **Open CMD session** to commence a command prompt session. Specify the worki
 
 The **Write to CMD session** action uses the CMD session variable. Specify a command, and select whether to send <Enter> immediately afterwards to run it. In the figure below, the command creates a new folder in the current working directory.
 
-![screenshot of write to cmd session action properties](media\cmd\write-to-cmd-example.png)
+![screenshot of write to cmd session action properties.](media\cmd\write-to-cmd-example.png)
 
 To ensure that specific output appears on the command prompt before proceeding with subsequent actions, use a **Wait for text on CMD session** action. Specify the text to expect, or enter a regular expression and check the corresponding option to enable regular expressions.
 
-![screenshot of wait for text on cmd session action properties](media\cmd\wait-for-text-cmd-example.png)
+![screenshot of wait for text on cmd session action properties.](media\cmd\wait-for-text-cmd-example.png)
 
 To conclude the CMD session, use the **Close CMD session** action.
 

@@ -32,7 +32,7 @@ These approvals are triggered directly with the Power Automate infrastructure an
 
 1. Select **More added apps (...)**, search for **Approvals**, and then select the **approvals** app
 
-   ![Search for the app in Teams](../media/native-approvals-in-teams/more-apps-approvals.png)
+   ![Search for the app in Teams.](../media/native-approvals-in-teams/more-apps-approvals.png)
 
 >[!TIP]
 >If you do not see the approvals app in the more apps menu, it is likely that your Teams Administrator has disabled the app in your tenant. Contact your Teams administrator to enable the approvals app from the Teams admin center.

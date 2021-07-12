@@ -43,7 +43,7 @@ Follow these steps to install the Power Automate Desktop app:
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate Desktop app and third-party components.
 
-![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
+![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
 
 ### Set data collection options
 
@@ -56,7 +56,7 @@ During installation, you can change the default settings if you don't want to se
 
 After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image](../media/desktop-flows-setup/screen.png)
+![Installation success image.](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -95,7 +95,7 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
 1. Search for **command prompt**, and then run it as the administrator.
 
-   ![A screenshot that displays the command prompt on the start menu](../media/desktop-flows-setup/command-prompt.png)
+   ![A screenshot that displays the command prompt on the start menu.](../media/desktop-flows-setup/command-prompt.png)
 
 1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate Desktop):
 
@@ -174,15 +174,15 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections**.
 
-   ![A screenshot of the connections tab](media/desktop-flows-setup/connections-tab.png)
+   ![A screenshot of the connections tab.](media/desktop-flows-setup/connections-tab.png)
 
 1. Select New connection.
 
-   ![A screenshot of a connection](media/desktop-flows-setup/new-connection.png)
+   ![A screenshot of a connection.](media/desktop-flows-setup/new-connection.png)
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
 
-   <!-- ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png) -->
+   <!-- ![A screenshot of the search box.](../media/desktop-flows-setup/search-desktop-flow.png) -->
 
 1. Provide the machine or gateway information and device credentials: 
  
@@ -198,7 +198,7 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 
    - **Password**: Your account’s password.
 
-      ![A screenshot that shows where to enter the credentials for the connection](media/desktop-flows-setup/credentials-screen.png)
+      ![A screenshot that shows where to enter the credentials for the connection.](media/desktop-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
 

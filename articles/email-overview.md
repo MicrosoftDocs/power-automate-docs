@@ -36,7 +36,7 @@ A **trigger** is an event that starts a cloud flow. For example, **When a new 
 
 The following image shows a partial list of Office 365 Outlook triggers. For the full list of triggers you can use to start a flow, go to [Office 365 Outlook triggers](/connectors/office365/#triggers).
 
-![A screenshot of some of the Office 365 Outlook triggers](./media/email/email-triggers.png)
+![A screenshot of some of the Office 365 Outlook triggers.](./media/email/email-triggers.png)
 
 ## Actions
 
@@ -44,7 +44,7 @@ The following image shows a partial list of Office 365 Outlook triggers. For the
 
 The following image shows a partial list of Office 365 Outlook actions. For the full list of actions you can use in your flows, go to [Office 365 Outlook actions](/connectors/office365/#actions).
 
-![A screenshot of some of the Office 365 Outlook actions](./media/email/email-actions.png)
+![A screenshot of some of the Office 365 Outlook actions.](./media/email/email-actions.png)
 
 ## More information
 

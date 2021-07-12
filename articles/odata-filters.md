@@ -70,7 +70,7 @@ Here are the detailed steps to create the flow.
    
     Provide the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
    
-    ![configure sharepoint trigger](media/odata-filters/configure-sharepoint-trigger.png)
+    ![configure sharepoint trigger.](media/odata-filters/configure-sharepoint-trigger.png)
 
 ## Search the destination for the new or changed item
 We use the **SQL Server - Get rows** action to search the destination for the new or changed item.
@@ -84,7 +84,7 @@ We use the **SQL Server - Get rows** action to search the destination for the ne
    
     The **Get rows** card should now look like this image:
    
-    ![try to get the item from the destination database](media/odata-filters/configure-sql-get-rows-action.png)
+    ![try to get the item from the destination database.](media/odata-filters/configure-sql-get-rows-action.png)
 
 ## Check if the new or changed item was found
 Select **New step** > **Add a condition** to open the **Condition** card.
@@ -105,14 +105,14 @@ On the condition card:
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition](media/odata-filters/configure-condition.png)
+    ![configure a condition.](media/odata-filters/configure-condition.png)
 5. Select **Edit in advanced mode**.
    
     When advanced mode opens, you see **\@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition](media/odata-filters/configure-condition-add-length.png)
+    ![configure a condition.](media/odata-filters/configure-condition-add-length.png)
    
    > [!TIP]
    > Adding the **length()** function allows the flow to check the **value** list and determine if it contains any items.
@@ -148,7 +148,7 @@ On the **If yes** branch of the **Condition**:
    
     The **Insert row** card now resembles this image:
    
-    ![configure a condition](media/odata-filters/insert-row.png)
+    ![configure a condition.](media/odata-filters/insert-row.png)
 
 ## Update the item in the destination
 If the item exists in the destination, update it with the changes.
@@ -156,10 +156,10 @@ If the item exists in the destination, update it with the changes.
 1. Add the **SQL Server - Update row** action to the **If no** branch of the **Condition**.
 2. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the columns of the table.
    
-    ![view environments](media/odata-filters/update-row.png)
+    ![view environments.](media/odata-filters/update-row.png)
 3. At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
    
-    ![name your flow](media/odata-filters/give-the-flow-a-name.png)
+    ![name your flow.](media/odata-filters/give-the-flow-a-name.png)
 
 Now, whenever an item in your SharePoint list (source) changes, your flow triggers and either inserts a new item or updates an existing item in your Azure SQL Database (destination).
 

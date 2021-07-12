@@ -45,19 +45,19 @@ You can share a button from the **Buttons** tab of the Power Automate mobile app
 
 1. Tap the small icon next to the button you want to share.
    
-    ![share button](./media/share-buttons/share-button-flows-buttons-tab.png)
+    ![share button.](./media/share-buttons/share-button-flows-buttons-tab.png)
 2. Tap **Invite others** from the **Button users** page.
    
-    ![share button](./media/share-buttons/share-button-flows-button-users.png)
+    ![share button.](./media/share-buttons/share-button-flows-button-users.png)
 3. Search for, and then select the group or person with whom you'd like to share the button.
    
-    ![share button](./media/share-buttons/share-button-flows-invite-others-select.png)
+    ![share button.](./media/share-buttons/share-button-flows-invite-others-select.png)
 4. Tap **SEND** on the **Invite others** page.
    
-    ![share button](./media/share-buttons/share-button-flows-invite-others-send.png)
+    ![share button.](./media/share-buttons/share-button-flows-invite-others-send.png)
 5. Tap **DONE** on the page that indicates the button sharing operation completed successfully.
    
-    ![share button](./media/share-buttons/share-button-flows-invite-others-done.png)
+    ![share button.](./media/share-buttons/share-button-flows-invite-others-done.png)
 
 ## Require users to use their own connections
 > [!NOTE]
@@ -73,11 +73,11 @@ Follow these steps to require persons with whom you've shared your buttons to us
    
     Your choice indicates whose connections must be used in the shared button.
    
-    ![share button](./media/share-buttons/share-button-select-connection-provided-by-user.png)
+    ![share button.](./media/share-buttons/share-button-select-connection-provided-by-user.png)
    
     You can view or change your choice any time. To do so, select the **Flows** tab > the flow you shared > **Users and connections** > the **CONNECTIONS** tab > **EDIT** on the button you want to manage.
    
-    ![share button](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
+    ![share button.](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
 ## View the list of button users
 You can view all groups or users with whom a button is shared by following these steps from the **Buttons** tab:
@@ -85,7 +85,7 @@ You can view all groups or users with whom a button is shared by following these
 1. Tap the small icon next to the button in which you're interested.
 2. On the **Button users** page, view all groups or users with whom the button is shared.
    
-    ![view button users](./media/share-buttons/share-button-flows-button-users-list.png)
+    ![view button users.](./media/share-buttons/share-button-flows-button-users-list.png)
 
 ## Stop sharing a button
 You can stop sharing a button by following these steps from the **Buttons** tab:
@@ -93,13 +93,13 @@ You can stop sharing a button by following these steps from the **Buttons** tab:
 1. Tap the small icon next to the button you no longer want to share.
 2. On the **Button users** page, tap the user or group with whom you want to stop sharing the button.
    
-    ![stop sharing button](./media/share-buttons/share-button-flows-remove-user-list.png)
+    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user-list.png)
 3. Tap **Remove user** when the user's page is displayed.
    
-    ![stop sharing button](./media/share-buttons/share-button-flows-remove-user.png)
+    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user.png)
 4. Wait for the remove operation to complete. Notice the **Button users** list refreshes, and the user or group you removed is no longer listed.
    
-    ![stop sharing button](./media/share-buttons/share-button-flows-remove-user-result.png)
+    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user-result.png)
 
 ## Monitor the run history
 All run history, including the runs initiated by a person with whom a button is shared, appear only on the **Activity** tab of the button creator's Power Automate mobile app.
@@ -109,12 +109,12 @@ Before you can run a button that someone has shared with you, you must add it to
 
 1. Tap **GET MORE** (or the **New buttons are available** banner if it appears) on the **Buttons** tab.
    
-    ![new button shared with me](./media/share-buttons/share-button-flows-banner.png)
+    ![new button shared with me.](./media/share-buttons/share-button-flows-banner.png)
 2. Tap the button you want to use.
    
     The tapped button is immediately added to the **Buttons** tab of the Power Automate app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
    
-    ![new button shared with me](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+    ![new button shared with me.](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
 ## Re-share a button
 You can share a link to a button that's been shared with you.
@@ -122,7 +122,7 @@ You can share a link to a button that's been shared with you.
 1. Select **...** next to the button you want to share.
 2. Select **Share button link**.
    
-    ![re-share button link](./media/share-buttons/re-share-button.png)
+    ![re-share button link.](./media/share-buttons/re-share-button.png)
 3. Select the app that you'd like to use to share the button, and then follow the steps to send the button to the person with whom you want to share.
 
 ## Stop using a shared button
@@ -130,7 +130,7 @@ If you no longer want to use a button that was shared with you, remove it from t
 
 1. On the **Buttons** tab, tap **...** next to the button you no longer want to use.
    
-    ![remove button](./media/share-buttons/share-button-flows-added-shared-button.png)
+    ![remove button.](./media/share-buttons/share-button-flows-added-shared-button.png)
 2. Tap **Remove** from the menu that appears.
 
 That's it. The button no longer appears on the **Buttons** tab of the Power Automate app.

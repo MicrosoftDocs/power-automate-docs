@@ -31,7 +31,7 @@ Power Automate Desktop enables users to read, extract, and manage data within an
 
 To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
 
-![extract text with ocr action properties screenshot](\media\ocr\extract-text-ocr-example.png)
+![extract text with ocr action properties screenshot.](\media\ocr\extract-text-ocr-example.png)
 
 The action wherein the OCR engine is created contains the engine settings. These include the language and the image width and height multipliers. The OCR engine variable can be used in any action containing OCR capabilities.
 
@@ -76,7 +76,7 @@ The **Create Tesseract OCR engine** action is planned for deprecation. To preven
 
 This OCR engine initialization method provides the same configuration options as before and eliminates the need for a produced **OCREngine** variable.
 
-![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
 
 ### <a name="createmodiengine"></a> Create MODI OCR engine
 Create a MODI OCR engine
@@ -109,7 +109,7 @@ The MODI OCR engine is planned for deprecation. To prevent flows from failing af
 
 You can perform the initialization directly through the actions that require the engines without using the **Create Tesseract OCR engine** action.
 
-![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
 
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine

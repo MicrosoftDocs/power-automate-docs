@@ -35,15 +35,15 @@ Follow these steps to use **Row ID** to get a row from the Accounts table.
 1. Enter **get row** into the **Search connectors and actions** search box on the **Choose an operation** card.
 1. Select **Microsoft Dataverse**.
 
-   ![Filter Microsoft Dataverse actions](../media/dataverse-how-tos/get-row-by-id-action.png "Filter Microsoft Dataverse actions")
+   ![Filter Microsoft Dataverse actions.](../media/dataverse-how-tos/get-row-by-id-action.png "Filter Microsoft Dataverse actions")
 
 1. Select the **Get a row by ID** action.
 
-   ![Select Get a row by ID action](../media/dataverse-how-tos/get-row-by-id-action-card.png "Select Get a row by ID action")
+   ![Select Get a row by ID action.](../media/dataverse-how-tos/get-row-by-id-action-card.png "Select Get a row by ID action")
 
 1. Select the **Accounts** table from the **Table name** list, and then enter the row ID in the **Row ID** box for the row that you want to get from the Accounts table.
 
-   ![Completed Get row by ID card](../media/dataverse-how-tos/get-row-by-id-action-complete.png "Completed Get row by ID card")
+   ![Completed Get row by ID card.](../media/dataverse-how-tos/get-row-by-id-action-complete.png "Completed Get row by ID card")
 
    >[!NOTE]
    >The **Item ID** column is the unique ID of the row that you are retrieving, as shown in the following image.<!-- Edit note: Please review this note. I am not sure about the image mentioned, and should it be Item ID or Row ID. -->
@@ -52,7 +52,7 @@ Follow these steps to use **Row ID** to get a row from the Accounts table.
 
 Select **Show advanced options** to set more properties that further define the information that should be returned.
 
-   ![Completed Get row by ID card with advanced options highlighted](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced.png "Completed Get row by ID card with advanced options highlighted")
+   ![Completed Get row by ID card with advanced options highlighted.](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced.png "Completed Get row by ID card with advanced options highlighted")
 
 The advanced options are:
 
@@ -60,7 +60,7 @@ The advanced options are:
 - Expand Query
 - Partition Id
 
-![Unique column names](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced-options.png "Unique column names")
+![Unique column names.](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced-options.png "Unique column names")
 
 ### Select columns
 
@@ -80,4 +80,4 @@ If you include only the name of the navigation property, you’ll receive all th
 
 To use the **Expand Query** box in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.
 
-![Example of Expand Query expression](../media/dataverse-how-tos/get-row-by-id-action-expand-query.png "Example of Expand Query expression")
+![Example of Expand Query expression.](../media/dataverse-how-tos/get-row-by-id-action-expand-query.png "Example of Expand Query expression")

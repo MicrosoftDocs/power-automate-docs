@@ -91,43 +91,43 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and then select the environment that contains flows that the deleted user owns.
 
-    ![View environments](./media/gdpr-dsr-delete/view-environments.png)
+    ![View environments.](./media/gdpr-dsr-delete/view-environments.png)
 
 1. Select **Resources**, > **Flows**, and then select the title for the flow that you want to reassign.
 
-    ![View flows](./media/gdpr-dsr-delete/admin-view-flows.png)
+    ![View flows.](./media/gdpr-dsr-delete/admin-view-flows.png)
 
 1. Select **Manage sharing**.
 
-    ![Manage sharing](./media/gdpr-dsr-delete/admin-manage-sharing.png)
+    ![Manage sharing.](./media/gdpr-dsr-delete/admin-manage-sharing.png)
 
 1. In the **Share** panel that appears near the right edge, add yourself as an owner, and then select **Save**.
 
-    ![Share flow](./media/gdpr-dsr-delete/flow-sharing-save.png)
+    ![Share flow.](./media/gdpr-dsr-delete/flow-sharing-save.png)
 
 1. Sign into [Power Automate](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
 
 1. Select the ellipsis **(… )** for the flow you want to copy, and then select **Save As**.
 
-    ![Flow save as](./media/gdpr-dsr-delete/flow-save-as.png)
+    ![Flow save as.](./media/gdpr-dsr-delete/flow-save-as.png)
 
 1. Configure connections as required, and then select **Continue**.
 
 1. Provide a new name, and then select **Save**.
 
-    ![Create copy of flow](./media/gdpr-dsr-delete/create-copy-flow.png)
+    ![Create copy of flow.](./media/gdpr-dsr-delete/create-copy-flow.png)
 
 1. This new version of the flow appears in **My flows**, where you can share it with additional users if you want.
 
-    ![Team flows](./media/gdpr-dsr-delete/team-flows.png)
+    ![Team flows.](./media/gdpr-dsr-delete/team-flows.png)
 
 1. Delete the original flow by selecting the ellipsis **(…)** for it, selecting **Delete**, and then select **Delete** again when prompted. This step will also remove underlying personal identifiers that are included in system dependencies between the user and Power Automate.
 
-    ![Delete flow confirmation](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
+    ![Delete flow confirmation.](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Enable the copy of the flow, by opening **My flows** and then turning the toggle control to **On**.
 
-    ![Enable flow](./media/gdpr-dsr-delete/toggle-on.png)
+    ![Enable flow.](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. The copy now performs the same workflow logic as the original version.
 
