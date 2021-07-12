@@ -32,7 +32,7 @@ A **trigger** is the event that starts a cloud flow. For example, if you want 
 Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
 
-   ![A screenshot of the Office 365 Outlook triggers](./media/triggers-introduction/12700a7ab29c81632d6c15024a9779e8.png)
+   ![A screenshot of the Office 365 Outlook triggers.](./media/triggers-introduction/12700a7ab29c81632d6c15024a9779e8.png)
 
 ## Choose the right trigger
 
@@ -51,7 +51,7 @@ If you'd like to run a cloud flow on a schedule, for example, to send a weekly p
 
 Learn more about [scheduled flows](./run-scheduled-tasks.md).
 
-![A screenshot showing the start page for a scheduled flow](./media/triggers-introduction//1270c8bd76f42e6531daa735a562502a.png)
+![A screenshot showing the start page for a scheduled flow.](./media/triggers-introduction//1270c8bd76f42e6531daa735a562502a.png)
 
 
 ### Triggers for automated flows
@@ -66,12 +66,12 @@ Learn more about [automated flows](./get-started-logic-flow.md)
 
 1. Search for the connector and select the app icon.
 
-   ![A screenshot that shows a seach for a connector](./media/triggers-introduction/da75261b15a79f891d38b4adbe9be3f3.png)
+   ![A screenshot that shows a seach for a connector.](./media/triggers-introduction/da75261b15a79f891d38b4adbe9be3f3.png)
 
 1. Once selected, the corresponding triggers and actions will be shown. Choose
     the trigger that best suits your need.
 
-   ![A screenshot that shows the triggers for a selected connector](./media/triggers-introduction/d869f08de1135874ed9f0dcbe6fa002d.png)
+   ![A screenshot that shows the triggers for a selected connector.](./media/triggers-introduction/d869f08de1135874ed9f0dcbe6fa002d.png)
 
 >[!IMPORTANT]
 >The trigger must be the first step of the flow.
@@ -79,7 +79,7 @@ Learn more about [automated flows](./get-started-logic-flow.md)
 
 ## Licensing for premium connectors
 
-![A screenshot that shows a few premium connectors](./media/triggers-introduction/premium-connectors.png)
+![A screenshot that shows a few premium connectors.](./media/triggers-introduction/premium-connectors.png)
 
 You need a standalone [Power Apps license](https://powerapps.microsoft.com/pricing/) or [Power Automate license](https://flow.microsoft.com/pricing/) to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
 

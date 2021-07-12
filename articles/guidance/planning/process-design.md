@@ -70,7 +70,7 @@ An example case for the expense reporting scenario is where Abhay needs to
 reimburse cash to the employee by looking up the employee banking details, then
 accessing the banking system.
 
-:::image type="complex" source="media/before-reminder-automation.png" alt-text="Possible areas of business process to automate for reducing human error":::
+:::image type="complex" source="media/before-reminder-automation.png" alt-text="Possible areas of business process to automate for reducing human error.":::
    Diagram showing a business process flow for Abhay the accountant. Two steps in the process ("Lookup employee banking details" and "Reimburse cash to applicant") are circled in red to indicate the potential areas where Power Automate can reduce human errors by automating these steps.
 :::image-end:::
 
@@ -84,7 +84,7 @@ responded to the approval request for some time. An automation can be set up to
 remind Nick to make a decision, and even provide a button to respond directly
 from the reminder.<!--note from editor: Should there be a "before reminder automation" image in this section? -->
 
-:::image type="complex" source="media/after-reminder-automation.png" alt-text="Possible areas of business process to automate for streamlining business process":::
+:::image type="complex" source="media/after-reminder-automation.png" alt-text="Possible areas of business process to automate for streamlining business process.":::
    Diagram showing a business process flow for Abhay the accountant. The approval process is altered so that a reminder for approvals is automated by setting up a trigger automation to check status. If approval is complete, the automation is ended; and if approval is not complete, a reminder is sent to the approver and the reminder automation will be run again to check until the approval is completed.
 :::image-end:::
 
@@ -106,7 +106,7 @@ talk to each other. In our expense reporting scenario,
 this is where Abhay inputs data into the accounting
 system by reentering values from the submitted expense report.
 
-![Example scenario to improve efficiency](media/gain-efficiency-sample-scenario.png "Example scenario to improve efficiency")
+![Example scenario to improve efficiency.](media/gain-efficiency-sample-scenario.png "Example scenario to improve efficiency")
 
 ## Maximize the use of available resources
 
@@ -122,7 +122,7 @@ day by processing orders that came in overnight, you might create
 automation that processes the orders as soon as they come in, so that your team can start
 fulfilling the orders first thing in the morning.
 
-![Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM](media/maximize-use-of-resources.png "Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM")
+![Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM.](media/maximize-use-of-resources.png "Diagram showing a person performing a process from 9 AM to 6 PM, and automation performing a related process from 6 PM to 9 AM")
 
 ## Increase throughput
 
@@ -135,14 +135,14 @@ reports and his standard work hours may be between 9 AM to 6 PM. By setting up a
 automation, you could also have Power Automate to process the expense reports as well, and therefore have both Abhay and the automation to process it, resulting
 in a higher throughput.
 
-![Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours](media/increasing-throughput.png "Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours")
+![Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours.](media/increasing-throughput.png "Diagram showing a person performing a process from 9 AM to 6 PM in parallel with automation that runs for 24 hours")
 
 ## Example scenario
 
 When all of the automation areas are applied, the example below shows how an
 expense reporting business process can be covered by Power Automate with improvements to throughput, maximizing the available resources, automating data entries as well as streamlining approvals.
 
-![Diagram of process after all of the automations are applied](media/process-after-automation-applied.png "Diagram of processall of the automations are applied")
+![Diagram of process after all of the automations are applied.](media/process-after-automation-applied.png "Diagram of processall of the automations are applied")
 
 > [!div class="nextstepaction"]
 > [Next step: Determining which automation method to use](determine-automation-methods.md)

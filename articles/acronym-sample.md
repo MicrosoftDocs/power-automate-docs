@@ -22,7 +22,7 @@ ms.author: deonhe
 
 The **acronym form** sample is an Adaptive Card input form that's designed to collect acronyms and storing them in Dataverse. These acronyms could be queried from anywhere due to this ongoing data collection.
 
-![Acronym logger](media/adaptive-cards/acronym-logger.png)
+![Acronym logger.](media/adaptive-cards/acronym-logger.png)
 
 *Inputs/Outputs and notes*
 

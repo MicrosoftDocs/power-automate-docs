@@ -38,7 +38,7 @@ Additionally, you can perform create, update, retrieve, and delete actions on ro
 
 Use the **When a row is created, updated or deleted** trigger to initiate your flow:
 
-   ![A screenshot that displays a trigger](./media/cds-connector-native/native-trigger.png)
+   ![A screenshot that displays a trigger.](./media/cds-connector-native/native-trigger.png)
 
 After you select a trigger, you'll need to configure:
 
@@ -50,19 +50,19 @@ After you select a trigger, you'll need to configure:
 
 You can add any of these conditions to determine precisely when your flow is triggered.
 
-   ![A screenshot that displays the trigger conditions](./media/cds-connector-native/trigger-conditions.png)
+   ![A screenshot that displays the trigger conditions.](./media/cds-connector-native/trigger-conditions.png)
 
 ### The table name
 
 Select any of the numerous tables that are available to indicate the table on which your trigger operates.
 
-   ![A screenshot that displays the table names](./media/cds-connector-native/entity-names.png)
+   ![A screenshot that displays the table names.](./media/cds-connector-native/entity-names.png)
 
 ### Scope
 
 Use scopes to determine if your flow runs when you, someone in your business unit, or any user in your organization creates a row.
 
-![Choose scope](./media/cds-connector-native/scopes.png)
+![Choose scope.](./media/cds-connector-native/scopes.png)
 
 Here are the details on each scope.
 
@@ -81,7 +81,7 @@ Triggers that run when a row is updated can also use filtering columns. This ens
 
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
-![A screenshot that displays the tilter columns](./media/cds-connector-native/filtering-attributes.png)
+![A screenshot that displays the tilter columns.](./media/cds-connector-native/filtering-attributes.png)
 
 ## Trigger privileges
 
@@ -91,11 +91,11 @@ To create a cloud flow that triggers based on create, update, or delete on a row
 
 Use any of the following actions to write data into Dataverse:
 
-![A screenshot that displays the actions](./media/cds-connector-native/actions.png)
+![A screenshot that displays the actions.](./media/cds-connector-native/actions.png)
 
 Here's an example of a cloud flow that sends a notification with the name and the annual revenue each time an **account** is **created** by anyone in the business unit **scope**.
 
-> ![Followup task](./media/cds-connector-native/example-flow.png)
+> ![Followup task.](./media/cds-connector-native/example-flow.png)
 
 ## Advanced concepts
 

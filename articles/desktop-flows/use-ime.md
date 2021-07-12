@@ -36,15 +36,15 @@ Follow these steps after you've started recording and you're ready to insert sta
 
 1. Select the control into which you want to enter the static text.
 
-   ![Select the control](../media/use-ime/select-control.png)
+   ![Select the control.](../media/use-ime/select-control.png)
 
 1. Select **Use Input** on the recorder, and then select **Add static text**.
 
-   ![Select Add static text](../media/use-ime/add-static-text.png)
+   ![Select Add static text.](../media/use-ime/add-static-text.png)
 
    You'll see an input box into which you'll enter the static text. You can use IME, English, or any international keyboard.
 
-   ![Enter static text](../media/use-ime/enter-static-text.png)
+   ![Enter static text.](../media/use-ime/enter-static-text.png)
 
 1. Enter the text.
 
@@ -53,12 +53,12 @@ inserted into the control.
 
    This text is entered automatically at playback time, even if the playback machines do not have the same keyboard layouts or IME that was used in the recording.
 
-   ![Playback text](../media/use-ime/playback-text.png)
+   ![Playback text.](../media/use-ime/playback-text.png)
 
    >[!TIP]
    >In the Web designer, expand the **Insert text input** action to review or edit the text.
 
-   ![Insert text input](../media/use-ime/insert-text-input.png)
+   ![Insert text input.](../media/use-ime/insert-text-input.png)
 
 
 ## Use the replay keystroke action
@@ -68,7 +68,7 @@ If you recorded any text input without using the **Add static text** option, eac
 In the designer, you can review and edit the recording information in the
 [virtual-key](/windows/win32/inputdev/virtual-key-codes) format under the **Replay keystroke** action. 
 
-![Virtual key](../media/use-ime/virtual-key.png)
+![Virtual key.](../media/use-ime/virtual-key.png)
 
 
 > [!NOTE]

@@ -46,18 +46,18 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 1. Sign into the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/) using your Microsoft Account (MSA).
 1. Select **Activity history**.
 
-    ![Activity History](./media/gdpr-dsr-export-msa/activityhistory.png)
+    ![Activity History.](./media/gdpr-dsr-export-msa/activityhistory.png)
     You can browse your activity history for the different Microsoft applications and services that you use.
 1. To export **Product and Service Activity** data select **Download your data**, and then select **CREATE NEW ARCHIVE**.
 
-    ![Download your data](./media/gdpr-dsr-export-msa/downloaddata.png)
+    ![Download your data.](./media/gdpr-dsr-export-msa/downloaddata.png)
 
 1. Select **App & service usage**, and then select **Create archive**.
 
-    ![Download your data](./media/gdpr-dsr-export-msa/create-archive.png)
+    ![Download your data.](./media/gdpr-dsr-export-msa/create-archive.png)
 1. A new archive is created. Select **Download** to obtain your exported product and service activity data.
 
-    ![Download](./media/gdpr-dsr-export-msa/download.png)
+    ![Download.](./media/gdpr-dsr-export-msa/download.png)
 
 ## Export a cloud flow
 
@@ -69,7 +69,7 @@ An end user who has access to a cloud flow, can export the flow by following the
 
 1. Select **… More**, and then select **Export**.
 
-    ![Export flow](./media/gdpr-dsr-export/export-flow.png)
+    ![Export flow.](./media/gdpr-dsr-export/export-flow.png)
 
 1. Select **Package (.zip)**.
 
@@ -85,11 +85,11 @@ An end user who has access to the flow can follow these steps to export this dat
 1. Select the **My flows** link, and then select the flow for which you want to export the run history.
 1. In the **RUN HISTORY** pane, select **See all**.
 
-    ![Run history](./media/gdpr-dsr-export/run-history.png)
+    ![Run history.](./media/gdpr-dsr-export/run-history.png)
 
 1. Select **Download CSV**.
 
-    ![Download CSV](./media/gdpr-dsr-export/download-csv.png)
+    ![Download CSV.](./media/gdpr-dsr-export/download-csv.png)
 
 The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor to analyze the results.
 
@@ -99,11 +99,11 @@ In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user
 
 1. Sign into [Power Automate](https://flow.microsoft.com/), select the bell icon near the upper-right corner, and then select **Show all activity**.
 
-    ![Show activity feed](./media/gdpr-dsr-export/show-activity-feed.png)
+    ![Show activity feed.](./media/gdpr-dsr-export/show-activity-feed.png)
 
 1. In the **Activity** screen, copy the results, and then paste them into a text editor such as Microsoft Word.
 
-    ![Show activity feed](./media/gdpr-dsr-export/export-activity-feed.png)
+    ![Show activity feed.](./media/gdpr-dsr-export/export-activity-feed.png)
 
 ## Export a user’s connections
 
@@ -111,7 +111,7 @@ Connections allow flows to connect to APIs, SaaS applications, and other third-p
 
 1. Sign into [Power Automate](https://flow.microsoft.com/), select the gear icon near the upper-right corner, and then select **Connections**.
 
-    ![Show Connections](./media/gdpr-dsr-export/show-connections.png)
+    ![Show Connections.](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
 
 

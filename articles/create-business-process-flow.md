@@ -32,7 +32,7 @@ This tutorial shows you how to create a business process flow with Power Apps. T
   
  When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
   
- ![Business process with stages](media/business-process-stages.png "Business process with stages")  
+ ![Business process with stages.](media/business-process-stages.png "Business process with stages")  
   
  > [!TIP]
  >  After you create a business process flow definition, you can provide control over who can create, read, update, or delete the business process flow instance. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so they can monitor post-sales activities for their customers. To set security for a business process flow definition you create, select **Enable Security Roles** on the action bar.  
@@ -62,24 +62,24 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
 1. Select **OK**.  
   
      The new process is created, and the business process flow designer opens with a single stage created for you.  
-     ![Business process flow window showing main elements](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
+     ![Business process flow window showing main elements.](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
 1. **Add stages.** If your users will progress from one business stage to another in the  process:
   
     1. Drag a **Stage** component from the **Components** tab and drop it on a + sign in the designer.  
   
-        ![Drag a business process stage](media/drag-business-process-stage.png "Drag a business process stage")  
+        ![Drag a business process stage.](media/drag-business-process-stage.png "Drag a business process stage")  
     1. To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
   
         - Enter a display name.  
         - If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**), appears as a chevron in the process bar.  
   
-            ![Business process bar chevron](media/business-process-bar-chevron.png "Business process bar chevron")  
+            ![Business process bar chevron.](media/business-process-bar-chevron.png "Business process bar chevron")  
         - When you're done changing properties, select the **Apply** button.  
 1. **Add steps to a stage.** To see the steps in a stage, select **Details** in the lower-right corner of the stage. To add more steps:  
   
     1. Drag the **Step** component to the stage from the **Components** tab.  
   
-        ![Add step to a stage in a business process](media/add-step-stage-business-process.png "Add step to a stage in a business process")  
+        ![Add step to a stage in a business process.](media/add-step-stage-business-process.png "Add step to a stage in a business process")  
   
     1. Select the step, and then set properties in the **Properties** tab:  
   
@@ -97,7 +97,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
   
      1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.
      
-        ![Add a Condition to a business process flow](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")
+        ![Add a Condition to a business process flow.](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")
      1. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
 1. **Add a workflow.** To invoke a workflow:  
   
@@ -129,7 +129,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
   > [!NOTE]
   > The System Administrator and System Customizer security roles have access to new business process flows by default.
 
-   ![Assign privileges to a business process flow](media/bpf-assign-privileges.png)
+   ![Assign privileges to a business process flow.](media/bpf-assign-privileges.png)
 
   Specify privileges by selecting the appropriate radio buttons, and click Save. For more information about privileges, see [Business process flow privileges](business-process-flows-overview.md#BKMK_MultipleBPF).
 
@@ -148,7 +148,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
   
  When you select the name  of the business process flow you want to edit from the list of processes, it opens in the designer, where you can make any updates you want. Expand **Details** under the name of the process to rename it or add a description, and view additional information.  
   
- ![Expanded details section of a business process flow](media/business-process-flow-details.png "Expanded details section of a business process flow")  
+ ![Expanded details section of a business process flow.](media/business-process-flow-details.png "Expanded details section of a business process flow")  
   
   
 ## Other things to know about business process flows
@@ -222,9 +222,9 @@ Now, members of Contoso’s salesforce can kick-off the action from the **Opport
 
 When you need to see the list of business process flows in which you're involved, check out the unified action center. 
 
-![Business process flows view of the unified action center](media/approvals-center.png "Business process flows vie of the unified action center")
+![Business process flows view of the unified action center.](media/approvals-center.png "Business process flows vie of the unified action center")
 
-![Approval flows view of the unified action center](media/action-center-bpf.png "Approval flows view of the unified action center")
+![Approval flows view of the unified action center.](media/action-center-bpf.png "Approval flows view of the unified action center")
 
 In the unified action center, you will see all business processes in which you're assigned at least one Microsoft Dataverse table row that the process uses. For example, if a business process uses the **Lead** and **Opportunity** tables in Dataverse, you will see all instances of this process where either the Lead or the Opportunity row is assigned to you.
 

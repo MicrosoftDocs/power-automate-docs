@@ -55,29 +55,29 @@ After successfully [downloading the setup file](https://go.microsoft.com/fwlink/
 > - Remove any previous installation residue (empty installation folders etc.) 
 > - Install the latest version of the application. 
  
-![Process migrator for Softomotive products (preview) installer step 1](media/migrator/migrator_1.png)
+![Process migrator for Softomotive products (preview) installer step 1.](media/migrator/migrator_1.png)
 
 In the displayed dialog, select an installation path and accept Microsoft's terms of use.
 
-![Process migrator for Softomotive products (preview) installer step 2](media/migrator/migrator_2.png)
+![Process migrator for Softomotive products (preview) installer step 2.](media/migrator/migrator_2.png)
 
 Now, you can run the Process migrator for Softomotive products (preview).
 
-![Process migrator for Softomotive products (preview) installer step 3](media/migrator/migrator_3.png)
+![Process migrator for Softomotive products (preview) installer step 3.](media/migrator/migrator_3.png)
 
 ## Running Process migrator for Softomotive products (preview) 
 
 1. After launching Process migrator for Softomotive products (preview), you'll be prompted to populate your Power Automate account.
 
-    ![Process migrator for Softomotive products (preview) installer step 4](media/migrator/migrator_4.png)
+    ![Process migrator for Softomotive products (preview) installer step 4.](media/migrator/migrator_4.png)
 
     The application might prompt you to connect to the account you use to access your environments in order to save the migrated processes as desktop flows.
 
-    ![Process migrator for Softomotive products (preview) installer step 5](media/migrator/migrator_6.png)
+    ![Process migrator for Softomotive products (preview) installer step 5.](media/migrator/migrator_6.png)
 
 1. Select the Softomotive product from which you want to migrate processes. 
 
-    ![Process migrator for Softomotive products (preview) installer step 6](media/migrator/Login_App_Selection_Screen_PR.png)
+    ![Process migrator for Softomotive products (preview) installer step 6.](media/migrator/Login_App_Selection_Screen_PR.png)
 
 ### Migrating WinAutomation processes to Power Automate Desktop
 
@@ -85,7 +85,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
     
     If you omit to enter your WinAutomation master key, the migration of the processes will proceed, but the password values won’t be migrated.
 
-   ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/Login_App_Selection_Screen.png)
+   ![Process migrator for Softomotive products (preview) installer step 7.](media/migrator/Login_App_Selection_Screen.png)
 
 1. After entering your master key, the application will retrieve all the processes located on your machine. 
 
@@ -94,53 +94,53 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     When the process retrieving is completed, choose the processes to migrate and the Power Automate environment that will store them. The default environment is pre-selected. 
  
-    ![Process migrator for Softomotive products (preview) installer step 7](media/migrator/migrator_7.png)   
+    ![Process migrator for Softomotive products (preview) installer step 7.](media/migrator/migrator_7.png)   
 
 1. If you choose to migrate a password-protected process, you'll be prompted to enter the password you used to encrypt it. If you choose to skip entering the requisite password, the migration of the respective process will be omitted.
 
-    ![Process migrator for Softomotive products (preview) installer step 7a](media/migrator/migrator_7a.png)    
+    ![Process migrator for Softomotive products (preview) installer step 7a.](media/migrator/migrator_7a.png)    
 
 ### Migrating PorcessRobot processes to Power Automate Desktop
 
 1. If you choose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
 
-    ![Process migrator for Softomotive products (preview) installer step 7b](media/migrator/Browse_To_Folder.png)
+    ![Process migrator for Softomotive products (preview) installer step 7b.](media/migrator/Browse_To_Folder.png)
 
 1. After selecting the folder, you'll be able to select the processes you want to convert.  
 
-    ![Process migrator for Softomotive products (preview) installer step 7C](media/migrator/PRP_Selection.png)
+    ![Process migrator for Softomotive products (preview) installer step 7C.](media/migrator/PRP_Selection.png)
 
 1. If you've exported the .prp files from the **History** tab in Process Designer and have chosen **Selected versions only**, the migrator will convert one version of the process. 
 
     Exporting the .prp files without limiting to a single version will result in all previous versions being migrated.
 
-    ![Process migrator for Softomotive products (preview) installer process selection](media/migrator/ExportSelectVersion.png)
+    ![Process migrator for Softomotive products (preview) installer process selection.](media/migrator/ExportSelectVersion.png)
 
 
 ### Completing migration and accessing the migrated processes
 
 1. During the migration, a dialog will display information about the current state of the migration and a progress bar.
 
-    ![Process migrator for Softomotive products (preview) installer step 8](media/migrator/migrator_8.png)
+    ![Process migrator for Softomotive products (preview) installer step 8.](media/migrator/migrator_8.png)
 
 1. When the migration is completed, an autogenerated log file will be displayed showing the migrated processes.
 
-    ![Process migrator for Softomotive products (preview) installer step 9](media/migrator/migrator_9.png)
+    ![Process migrator for Softomotive products (preview) installer step 9.](media/migrator/migrator_9.png)
  
 1. You can access the exported logs at **C:\Users\{username}\AppData\Local\Microsoft\Process migrator for Softomotive products\Logs**
 
-    ![Process migrator for Softomotive products (preview) installer step 10](media/migrator/migrator_11b.png)
+    ![Process migrator for Softomotive products (preview) installer step 10.](media/migrator/migrator_11b.png)
 
     > [!NOTE]
     > For the migrated desktop flows to be visible, some time is required. To instantly view the migrated desktop flows in Power Automate Desktop:
     >- Sign out and sign in again in Power Automate Desktop, or
     >- Restart the Power Automate Desktop service by exiting the service and re-running Power Automate Desktop.  
 
-   ![Process migrator for Softomotive products (preview) installer step 11](media/migrator/migrator_11.png)
+   ![Process migrator for Softomotive products (preview) installer step 11.](media/migrator/migrator_11.png)
 
 1. Now, you can modify the migrated processes (now desktop flows) through Power Automate Desktop.
 
-    ![Process migrator for Softomotive products (preview) installer step 12](media/migrator/migrator_12.png)
+    ![Process migrator for Softomotive products (preview) installer step 12.](media/migrator/migrator_12.png)
 
     > [!TIP]
     > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It's advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  

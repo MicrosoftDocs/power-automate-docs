@@ -29,7 +29,7 @@ search.audienceType:
 
 Repair tips are sent to flow owners via email whenever a cloud flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a cloud flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
 
-![Repair tips](media/fix-flow-failures/repair-tips-email-2.png)
+![Repair tips.](media/fix-flow-failures/repair-tips-email-2.png)
 
 The repair tips email contains the following sections:
 
@@ -57,7 +57,7 @@ If your flow fails, you can also troubleshoot it directly in Power Automate.  He
 
    On the right pane, you can see the **details** of the error and **How to fix** the error 
 
-   ![Error message](./media/fix-flow-failures/identify-error.png)
+   ![Error message.](./media/fix-flow-failures/identify-error.png)
 
 
 ## Authentication failures
@@ -68,7 +68,7 @@ In many cases, flows fail because of an authentication error. If you have this t
 1. Next to the connection, click or tap the **Fix connection** link in the message about the connection not being authenticated.
 1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
 
-   ![Error message](./media/fix-flow-failures/resubmit.png)
+   ![Error message.](./media/fix-flow-failures/resubmit.png)
    
  The flow should now run as expected.
 
@@ -102,7 +102,7 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 
 1. Notice that the **Solutions** section displays after you select **See solutions**. It contains a list of results that you can use to help address the issue you're facing. 
 
-    ![Integrated helper details](media/fix-flow-failures/support-request.png)
+    ![Integrated helper details.](media/fix-flow-failures/support-request.png)
 
 If you need help with an issue, help is available from our [community](https://go.microsoft.com/fwlink/?LinkID=787467) and Microsoft. 
 

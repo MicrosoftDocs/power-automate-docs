@@ -37,11 +37,11 @@ Use the **Data Operation - Compose** <!--note from editor: Here and throughout, 
 
 1. Search for **Compose**, and then select the **Data Operation - Compose** action.
 
-    ![Search for and select the compose action](./media/data-operations/search-select-compose-2.png)
+    ![Search for and select the compose action.](./media/data-operations/search-select-compose-2.png)
 
 2. In the **Inputs** box, enter the array that you want to reference later.
 
-    ![Configure the compose action](./media/data-operations/add-array-compose-2.png)
+    ![Configure the compose action.](./media/data-operations/add-array-compose-2.png)
 
 > [!TIP]
 > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
@@ -56,7 +56,7 @@ When you need to access the contents of the compose action, do so by following t
 
 1. On the **Dynamic content** tab, in the **Compose** section, select **Outputs**.
 
-    ![Use output from the compose action](./media/data-operations/use-compose-output-2.png)
+    ![Use output from the compose action.](./media/data-operations/use-compose-output-2.png)
 
 ## Use the join action
 
@@ -64,17 +64,17 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
-    ![Search for and select the join action](./media/data-operations/search-select-join-2.png)
+    ![Search for and select the join action.](./media/data-operations/search-select-join-2.png)
 
 2. In the **From** box, enter the array, and in the **Join with** box, enter a semicolon (**;**).
 
-    ![Configure the join action](./media/data-operations/add-array-join-2.png)
+    ![Configure the join action.](./media/data-operations/add-array-join-2.png)
 
 3. Save your flow, and then run it
 
 4. After your flow runs, the output of the **Data Operation – Join** action will be a string with the addresses joined by semicolons, as shown in the following image.
 
-    ![Input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons](./media/data-operations/join-output-2.png)
+    ![Input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.](./media/data-operations/join-output-2.png)
 
 ## Use the select action
 
@@ -101,13 +101,13 @@ To do this:
 
 2. Select **Use sample payload to generate schema**.
 
-   ![Select the sample payload](./media/data-operations/request-trigger.png)
+   ![Select the sample payload.](./media/data-operations/request-trigger.png)
 
 3. In the box that appears, paste a sample of your source data array, and then select **Done**.
 
 4. Add the **Data Operation – Select** action, and then configure it as shown in the following image.
 
-   :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action":::
+   :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
 
    > [!TIP]
@@ -135,7 +135,7 @@ Let's do this.
 1. Find, and then add, the **Filter array** action to your flow.
 2. Configure the filter array action as shown in the following image.
    
-    ![In the From section, the first line is set to Body. In the second line, first is set equal to Eugenia](./media/data-operations/add-configure-filter-array-2.png)
+    ![In the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.](./media/data-operations/add-configure-filter-array-2.png)
 3. Save, and then run your flow.
    
     You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
@@ -155,14 +155,14 @@ Use the **Data Operation - Create CSV table** action to change a JSON array inpu
 
 1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
    
-    ![Configure the create CSV table action. From is set to Body, and Columns is set to Automatic](./media/data-operations/create-csv-table-2.png)
+    ![Configure the create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png)
    
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
 2. Save, and then run, your flow.
 
 When your flow runs, the **Create CSV table** action displays the output shown in the following image.
 
-![Output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore"](./media/data-operations/create-csv-table-output-2.png)
+![Output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore."](./media/data-operations/create-csv-table-output-2.png)
 
 ## Use the create HTML table action
 

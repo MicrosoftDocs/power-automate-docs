@@ -41,7 +41,7 @@ Business process flows provide a guide for people to get work done. They provide
 ## What can business process flows do?  
  With business process flows, you define a set of *stages* and *steps* that are then displayed in a control at the top of the form.  
   
- ![Business process with stages](media/business-process-stages.png "Business process with stages")  
+ ![Business process with stages.](media/business-process-stages.png "Business process with stages")  
   
  Each stage contains a group of steps. Each step represents a column where data can be entered. You can advance to the next stage by using the **Next Stage** button. In the unified interface, you can work with a business process flow stage inside the stage flyout or you can pin it to the side pane. Business process flows doesn't support expanding the stage flyout to the side pane on mobile devices. 
  
@@ -162,13 +162,13 @@ With business processes flows available as an table, you can now use advanced fi
 
 Business process flows, such as **Lead To Opportunity Sales Process**, appear as a customizable table in solution explorer.
 
-![Solution Explorer with lead-to-opportunity process table](media/bpf-lead-solution-explorer.png)
+![Solution Explorer with lead-to-opportunity process table.](media/bpf-lead-solution-explorer.png)
 
 To access a default business process flow view, open solution explorer, expand **Tables** > expand the process that you want, such as **Lead To Opportunity Sales Process**, select **Views**, and then select the view that you want.
 
 Several default views are available that you can view as a chart, such as the **Active Opportunity Sales Process** view. 
 
-![Active Opportunity Sales Process view](media/bpf-default-view.png)
+![Active Opportunity Sales Process view.](media/bpf-default-view.png)
 
 ### Interact with the business process flow table from a workflow
 You can also interact with business process flow tables from a workflow. For example, you can create a workflow for the Business Process Flow table row to change the Active Stage when a column on the Opportunity table row is updated. For more information about how to do this, see [Automate business process flow stages using workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
@@ -193,12 +193,12 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 1. Open the [Power Apps maker portal](https://make.powerapps.com/home), and then select the correct environment from the top right of the screen. 
 1. Go to **Tables** under **Data**. Search for your business process flow table.
 
-   ![A screenshot of a business process flow table](./media/bpf-entity-table.png)
+   ![A screenshot of a business process flow table.](./media/bpf-entity-table.png)
 
 1. Select **Forms**, and select the **Information** editor.
 1. Select your lookup data step from the **Tree view**, and then check **Disable most recently used items**.
 
-   ![A screenshot how to disable the most recently used items](./media/bpf-disable-mru.png)
+   ![A screenshot how to disable the most recently used items.](./media/bpf-disable-mru.png)
 
 1. Save, and then publish. 
 

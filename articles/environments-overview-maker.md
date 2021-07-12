@@ -62,14 +62,14 @@ Follow these steps to switch environments:
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. In the top right corner, you see an image that represents your profile.
 
-   ![profile image](./media/environments-overview-maker/default-environment.png)
+   ![profile image.](./media/environments-overview-maker/default-environment.png)
 
 1. Select the image. A drop-down list displays all the environments available to you. The environment in which you're currently signed in is checked:
 
-   ![list of environments image](./media/environments-overview-maker/all-environments.png)
+   ![list of environments image.](./media/environments-overview-maker/all-environments.png)
 1. To switch to another environment, select that environment in the list:
 
-   ![select an environment to switch to](./media/environments-overview-maker/select-europe.png)
+   ![select an environment to switch to.](./media/environments-overview-maker/select-europe.png)
 1. Power Automate switches to the new environment.
 
 ## Create flows in the right environment

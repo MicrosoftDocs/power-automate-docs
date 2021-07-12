@@ -31,7 +31,7 @@ though you'll need to bring your own mailbox. This advice also applies to
 updating tickets, creating records, and so on, but the specifics will vary by
 connector.
 
-![Send an email from a shared mailbox](media/shared-mailbox.png "Send an email from a shared mailbox")
+![Send an email from a shared mailbox.](media/shared-mailbox.png "Send an email from a shared mailbox")
 
 ## Add a signature
 

@@ -38,18 +38,18 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
  
-   ![Create a cloud flow](..\media\overview-teams-flows\new-flow.png)
+   ![Create a cloud flow.](..\media\overview-teams-flows\new-flow.png)
 
 1. If this is your first time creating a cloud flow, you'll have to select your country/region, and then select **Get started**.
 
-   ![Select your location](..\media\overview-teams-flows\select-location.png)
+   ![Select your location.](..\media\overview-teams-flows\select-location.png)
 
 1. The **Build an automated flow** screen appears, where you can select a trigger, and create and save your flow.
 
    >[!NOTE]
    >The screen that appears here will be different depending on whether you selected **Instant** or **Scheduled** in step 2 earlier.
 
-   ![View of the designer](..\media\overview-teams-flows\build-automated-flow.png)
+   ![View of the designer.](..\media\overview-teams-flows\build-automated-flow.png)
 
 ## Work with your flows
 
@@ -59,11 +59,11 @@ To find your saved flows:
 
 1. On the left pane, select **Power Apps**.
 
-   ![Select Power Apps](..\media\overview-teams-flows\select-power-apps.png)
+   ![Select Power Apps.](..\media\overview-teams-flows\select-power-apps.png)
 
 1. On the **Build** tab, select the team in which you created your flow, and then select **See all** in the tree view. 
 
-   ![All flows](..\media\overview-teams-flows\all-flows.png)
+   ![All flows.](..\media\overview-teams-flows\all-flows.png)
 
 ## Customize a cloud flow
 
@@ -73,7 +73,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 1. Select the flow that you want to edit, and then select **Edit**.  
 
-   ![Select Edit](..\media\overview-teams-flows\customize-flow.png)
+   ![Select Edit.](..\media\overview-teams-flows\customize-flow.png)
 
 ## View details and run history
 
@@ -81,7 +81,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
 1. Select the flow for which you want to view the details, and then select **Details**.
 
-   ![View the details of flows](..\media\overview-teams-flows\view-details-history.png)
+   ![View the details of flows.](..\media\overview-teams-flows\view-details-history.png)
 
 ## Related articles
 

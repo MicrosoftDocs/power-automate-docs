@@ -38,7 +38,7 @@ The share action is available on the Processes screen in process advisor for the
 The share action is also available on the process detail screen with the same conditions. Sharing isn't needed at the recordings level. Once you share a process with a co-owner, they can manage the recordings associated to the process.
 
 > [!div class="mx-imgBorder"]
-> ![!Manage access](media/manage-access.png "Manage access")
+> ![!Manage access.](media/manage-access.png "Manage access")
 
 ## Share panel
 

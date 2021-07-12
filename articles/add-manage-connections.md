@@ -50,14 +50,14 @@ You can create a connection in multiple scenarios, including:
 
 1. On the left pane, select **Data** > **Connections**.
 
-   ![Screenshot showing the Connections option](media/add-manage-connections/data-connections-link.png)
+   ![Screenshot showing the Connections option.](media/add-manage-connections/data-connections-link.png)
 
 1. At the top of the page, select **New connection**.
 
 1. In the list of available connections, choose the connection that you want to
     set up (such as SharePoint) by selecting the plus sign (**+**).
 
-   ![List of connections that can be configured](media/add-manage-connections/new-connections-list.png)
+   ![List of connections that can be configured.](media/add-manage-connections/new-connections-list.png)
 
 1. Follow the steps to enter your credentials to configure the connection.
 
@@ -74,7 +74,7 @@ Some connectors, such as the SharePoint connector, support the on-premises data 
 
 1. Select the **Connect using on-premises data gateway** option.
 
-   ![Select the on-premises option](media/add-manage-connections/select-on-prem-option.png)
+   ![Select the on-premises option.](media/add-manage-connections/select-on-prem-option.png)
 
 1. Provide the connection's credentials, and then select the gateway that you want to use. More information: [Manage gateways](./gateway-manage.md) and [Understand gateways](./gateway-reference.md)
 
@@ -87,11 +87,11 @@ Some connectors, such as the SharePoint connector, support the on-premises data 
 
 1. Select **…** to view more commands, and then select **Delete**.
 
-   ![Select Delete to delete the connection](media/add-manage-connections/delete-connection.png)
+   ![Select Delete to delete the connection.](media/add-manage-connections/delete-connection.png)
 
 1. Select **Delete** to confirm that you would like to delete the connection.
 
-   ![Delete connection confirmation](media/add-manage-connections/delete-connection-confirmation.png)
+   ![Delete connection confirmation.](media/add-manage-connections/delete-connection-confirmation.png)
 
 When you delete a connection, it's removed from both Power Apps and Power Automate.
 
@@ -101,7 +101,7 @@ You can update a connection that isn't working because your account details or y
 
 1. Go to **Data** > **Connections**, and then select the **Fix connection** link for the connection that you want to update.
 
-   ![Select the link to fix the connection](media/add-manage-connections/fix-connection-link.png)
+   ![Select the link to fix the connection.](media/add-manage-connections/fix-connection-link.png)
 
 1. When prompted, update your connection with new credentials.
 

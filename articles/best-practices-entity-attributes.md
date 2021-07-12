@@ -47,11 +47,11 @@ In our example, follow these steps to go to the **Lead to Opportunity Sales Proc
 1. Set the filter to **All**.
 1. Search for, and then select the **Lead to Opportunity Sales Process** table.
 
-   ![lead to opportunity sales process table](media/best-practices-entity-attributes/lead-opportunity-process.png)
+   ![lead to opportunity sales process table.](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
 Here, you can define views and charts just as you do on any other table.
 
-![translation process table details](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+![translation process table details.](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 
 An advantage of this approach is that you can use a single view or chart to report on business process flows that span multiple tables.
 
@@ -107,7 +107,7 @@ To build a classic Dataverse workflow that creates activities for internal solut
 1. Define a condition to check if the **Active Stage** column equals **Propose**. 
 1. Create an appointment and phone call row for the internal review of the solution and the customer call to review the solution respectively.
 
-   ![close stage followup](media/best-practices-entity-attributes/close-stage-followup.png)
+   ![close stage followup.](media/best-practices-entity-attributes/close-stage-followup.png)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

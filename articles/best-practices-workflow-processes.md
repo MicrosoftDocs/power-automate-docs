@@ -48,7 +48,7 @@ If you apply the same logic in different workflows or in conditional branches, d
 ## Automatically delete completed background workflow jobs
 For background (asynchronous) workflows, we recommend selecting the **Automatically delete completed workflow jobs (to save disk space)** option in the background workflow definition. Selecting this check box allows the system to delete background workflow logs for successful executions to save space. Notice that logs from failed background workflow executions will always be saved for troubleshooting.  
 
-![Workflow job retention](media/workflow-job-retention.png)
+![Workflow job retention.](media/workflow-job-retention.png)
 
 ## Limit the number of workflows that update the same table
 Running more than one background workflow that updates the same table can cause resource lock issues. Imagine several workflows running where every opportunity update triggers an update to the associated account. Multiple instances of these workflows running and attempting to update the same account row at the same time can result in resource locking issues. Background workflow failures occur and an error message, such as **SQL Timeout: Cannot obtain lock on resource _resource name_**, is recorded. 

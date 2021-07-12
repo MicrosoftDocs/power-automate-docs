@@ -33,13 +33,13 @@ View a summary of how many times each flow succeeded or failed today, yesterday,
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
-![Trigger flow on receipt of mail from specific address](./media/mobile-monitor-activity/create-trigger.png)
+![Trigger flow on receipt of mail from specific address.](./media/mobile-monitor-activity/create-trigger.png)
 
 You could configure such a cloud flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
 When the flow runs, it sends a custom push notification, with this syntax, to your phone:
 
-![Send push notification](./media/mobile-monitor-activity/create-event.png)
+![Send push notification.](./media/mobile-monitor-activity/create-event.png)
 
 **Note:** You can also [manage your flows](mobile-manage-flows.md) from the mobile app.
 
@@ -52,38 +52,38 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
    
     This tab organizes data by day, with today's data at the top.
    
-    ![Activity organized by day](./media/mobile-monitor-activity/activity-day2.png)
+    ![Activity organized by day.](./media/mobile-monitor-activity/activity-day2.png)
    
     Each entry shows the name of a cloud flow with icons that correspond to its trigger events and actions.
    
-    ![Name and icons for each flow](./media/mobile-monitor-activity/activity-flow-name.png)
+    ![Name and icons for each flow.](./media/mobile-monitor-activity/activity-flow-name.png)
    
     If at least one run of a cloud flow has succeeded in a day, an entry shows the number of successes and the time when it succeeded most recently. A different entry shows similar information if a cloud flow has failed.
    
-    ![Summary of successes or failures](./media/mobile-monitor-activity/activity-summary.png)
+    ![Summary of successes or failures.](./media/mobile-monitor-activity/activity-summary.png)
    
     If a cloud flow sends a push notification, the text of the most recent notification appears at the bottom of the entry for successful runs.
    
-    ![Example of push notification](./media/mobile-monitor-activity/activity-notification.png)
+    ![Example of push notification.](./media/mobile-monitor-activity/activity-notification.png)
 3. If multiple push notifications were sent in a day, swipe left on the notification to view notifications from up to three previous runs. If more than four notifications were sent in a day, swipe left until **See more** appears, and then tap it to view a list of all notifications.
    
-    ![Another example of push notification](./media/mobile-monitor-activity/activity-notification-list.png)
+    ![Another example of push notification.](./media/mobile-monitor-activity/activity-notification-list.png)
 4. Tap **Back** to return to the activity summary.
 5. To filter the activity summary, tap the icon in the upper-right corner.
    
     You can show all entries, only the failure entries, or only the entries that include push notifications.
    
-    ![Show all runs, only failures, or only notifications](./media/mobile-monitor-activity/activity-filter.png)
+    ![Show all runs, only failures, or only notifications.](./media/mobile-monitor-activity/activity-filter.png)
 
 ## Show details of a run
 1. In the activity summary, tap an entry to show details for the most recent run.
    
      Each event and action appears with an icon that indicates whether the event or action succeeded or failed. If it succeeded, the amount of time it took (in seconds) also appears.
    
-    ![Details of a run](./media/mobile-monitor-activity/activity-icons.png)
+    ![Details of a run.](./media/mobile-monitor-activity/activity-icons.png)
 2. At the bottom of the screen, tap **See previous runs** to list all runs of the flow, and then tap a run to show its details.
    
-    ![Success/failure history](./media/mobile-monitor-activity/history-mixed.png)
+    ![Success/failure history.](./media/mobile-monitor-activity/history-mixed.png)
 
 
 

@@ -35,15 +35,15 @@ Follow these steps to delete a row from Dataverse.
 
 1. Select **Microsoft Dataverse**.
 
-   ![Filter to delete row actions](../media/dataverse-how-tos/delete-row-action.png "Filter to delete row actions")
+   ![Filter to delete row actions.](../media/dataverse-how-tos/delete-row-action.png "Filter to delete row actions")
 
 1. Select **Delete a new row** action.
 
-   ![Delete a row card](../media/dataverse-how-tos/delete-row-card.png "Delete a row card")
+   ![Delete a row card.](../media/dataverse-how-tos/delete-row-card.png "Delete a row card")
 
 1. Select the table name, and then enter an ID in **Row ID**.
 
-   ![Set the table name and row ID](../media/dataverse-how-tos/delete-row-card-complete.png "Set the table name and row ID")
+   ![Set the table name and row ID.](../media/dataverse-how-tos/delete-row-card-complete.png "Set the table name and row ID")
 
    The **Row ID** column is the unique ID of the row that you are deleting.
 

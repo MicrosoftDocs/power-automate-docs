@@ -32,7 +32,7 @@ For each issue the checker identifies, the checker points to specific occurrence
 
 The checker is always active, appearing in the command bar in the designer. The checker shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
 
-![Flow Checker](media/checker/checker-in-designer.png "Flow Checker")
+![Flow Checker.](media/checker/checker-in-designer.png "Flow Checker")
 
 
 ## View errors or warnings in the checker
@@ -45,7 +45,7 @@ The checker also opens automatically when you save the flow if there are errors 
 
 Expand each section to learn more about how to fix the errors or warnings.
 
-![Checker details](media/checker/checker-detail.png "Checker details")
+![Checker details.](media/checker/checker-detail.png "Checker details")
 
 ## Learn more
 

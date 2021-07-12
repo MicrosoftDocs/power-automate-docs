@@ -80,11 +80,11 @@ To create an input variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
-     ![The Add a new input variable dialog box](media\input-output-variables\Add-new-input-variable-dialog.png)
+     ![The Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
 If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
 
-   ![The Flow inputs dialog](media\input-output-variables\flow-input-dialog.png)
+   ![The Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
 
 ### Create an output variable
 
@@ -104,7 +104,7 @@ To create an output variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
 
-    ![The Add a new output variable dialog box](media\input-output-variables\Add-new-output-variable-dialog.png)
+    ![The Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
 
 ### Manage input and output variables
 
@@ -122,7 +122,7 @@ To update an input/output variable:
 
 2. In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
 
-    ![The Edit variable dialog box](media\renaming-variables\edit-variable-dialog.png)
+    ![The Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

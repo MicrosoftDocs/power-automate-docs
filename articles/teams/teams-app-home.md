@@ -25,7 +25,7 @@ The **Home** tab provides an overview of your flows from your organization's def
 
 By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
-![Home tab](../media/power-automate-teams-app-create/home-tab.png)
+![Home tab.](../media/power-automate-teams-app-create/home-tab.png)
 
 On the **Home** tab, you can view the information that's displayed in each of the following six columns to get an overview of your flows.
 
@@ -43,7 +43,7 @@ Column | Description
 >[!TIP]
 >You can select any flow to view more details about it. 
 
-![Flow details](../media/power-automate-teams-app-create/flow-details.png)
+![Flow details.](../media/power-automate-teams-app-create/flow-details.png)
 
 ## Known issues
 

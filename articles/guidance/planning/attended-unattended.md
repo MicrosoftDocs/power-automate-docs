@@ -17,7 +17,7 @@ ms.reviewer: kathyos
 With any of the automation methods you use, the automation is going to be either
 attended or unattended.
 
-:::image type="complex" source="media/unattended-attended.png" alt-text="Unattended and attended":::
+:::image type="complex" source="media/unattended-attended.png" alt-text="Unattended and attended.":::
    Diagram showing a person sitting at a computer unaware of the unattended automation running alongside, and another diagram showing several people sitting at computers that each have attended automation running on demand.
 :::image-end:::
 
@@ -54,7 +54,7 @@ unattended automation. The cash reimbursement process might be better suited to 
 automation, because Abhay might want to check the details of the bank transaction
 as a final confirmation.
 
-:::image type="complex" source="media/unattended-attended.png" alt-text="Business process that shows a combination of attended and unattended scenarios":::
+:::image type="complex" source="media/unattended-attended.png" alt-text="Business process that shows a combination of attended and unattended scenarios.":::
    Diagram showing a business process flow with multiple people involved, where emailing approval results and archiving expense reports are unattended automations, and looking up employees' banking details reimbursing cash are attended automations.
 :::image-end:::
 

@@ -28,15 +28,15 @@ From here you can either approve or reject an approval you have received, or can
 
 From the main approvals app in Teams, you can get a view of all the approvals you have sent or received.
 
-![Received approvals](../media/native-approvals-in-teams/approval-app-received.png)
+![Received approvals.](../media/native-approvals-in-teams/approval-app-received.png)
 
-![Sent approvals](../media/native-approvals-in-teams/approvals-app-sent.png)
+![Sent approvals.](../media/native-approvals-in-teams/approvals-app-sent.png)
 
 ## Cancel an approval request
 
 From the **Sent** tab, you can choose to cancel an approval that is still in progress. To do so, select the approval you want to cancel and then select the **Cancel** approval option.
 
-![Cancel approval](../media/native-approvals-in-teams/approval-cancel.png)
+![Cancel approval.](../media/native-approvals-in-teams/approval-cancel.png)
 
 >[!NOTE]
 >You can only cancel approvals that are in progress.

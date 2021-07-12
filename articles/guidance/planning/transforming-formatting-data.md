@@ -26,13 +26,13 @@ Here are some of the ways you can transform and format your data.
 
 You can use built-in actions to convert values and strings to different formats.
 
-![Built-in actions for text](media/text-function.png "Built-in actions for text")
+![Built-in actions for text.](media/text-function.png "Built-in actions for text")
 
 ## Expressions
 
 Expressions are Excel-like equations you can use to convert and manipulate data. 
 
-![Example of concatenating strings by using expression](media/using-expressions.png "Example of concatenating strings with expression")
+![Example of concatenating strings by using expression.](media/using-expressions.png "Example of concatenating strings with expression")
 
 The lists of different expressions are listed below:
 

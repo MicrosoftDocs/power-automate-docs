@@ -34,15 +34,15 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** on the left navigation pane.
 1. Select **New** and then **Scheduled-from blank**.
-    ![Create a cloud flow from blank](./media/run-scheduled-tasks/create-flow.png)
+    ![Create a cloud flow from blank.](./media/run-scheduled-tasks/create-flow.png)
 1. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes then select **Create**.
-    ![Set recurrence](./media/run-scheduled-tasks/select-recurrence.png)
+    ![Set recurrence.](./media/run-scheduled-tasks/select-recurrence.png)
 
 ## Configure advanced options
 
 1. Follow the steps in the previous section. and then select **Recurrence** > **Show advanced options**.
 
-    ![Show advanced recurrence options](./media/run-scheduled-tasks/select-recurrence1.png)
+    ![Show advanced recurrence options.](./media/run-scheduled-tasks/select-recurrence1.png)
 
    > [!NOTE]
    > These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
@@ -54,7 +54,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
     For example, configure the options as shown to start a cloud flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
 
-    ![Specify advanced options](./media/run-scheduled-tasks/advanced-options.png)
+    ![Specify advanced options.](./media/run-scheduled-tasks/advanced-options.png)
 1. Add the action or actions that you want the flow to take, as [Create a cloud flow from scratch](get-started-logic-flow.md) describes.
 
 ## Learn more

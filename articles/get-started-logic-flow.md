@@ -40,7 +40,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Select **New**, and then select **Automated-from blank**. 
 
-    <!-- ![Flows option in the left navigation bar](./media/get-started-logic-flow/create-logic-flow.png) -->
+    <!-- ![Flows option in the left navigation bar.](./media/get-started-logic-flow/create-logic-flow.png) -->
 
 1. Give your flow a name in the **Add a name or we'll generate one** field.
 
@@ -48,12 +48,12 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Select **Twitter - When a new tweet is posted**.
 
-   ![Name your flow and serch for the Twitter trigger](./media/get-started-logic-flow/name-search-trigger.png)
+   ![Name your flow and serch for the Twitter trigger.](./media/get-started-logic-flow/name-search-trigger.png)
 
 
 <!-- 1. Select the **Search hundreds of connectors and triggers** box at the bottom of the screen, enter **Twitter** in the box that says **Search all connectors and triggers**, and then select **Twitter - When a new tweet is posted**.
 
-    ![Twitter event](./media/get-started-logic-flow/twitter-search.png) -->
+    ![Twitter event.](./media/get-started-logic-flow/twitter-search.png) -->
 
 1. Select the **Create** button at the bottom of the screen.
 
@@ -65,17 +65,17 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In the **Search text** box, type the keyword that you want to find.
 
-    ![Twitter keyword](./media/get-started-logic-flow/twitter-keyword.png)
+    ![Twitter keyword.](./media/get-started-logic-flow/twitter-keyword.png)
 
 ## Specify an action
 
 1. Select **New step**.
 
-    <!-- ![Add action](./media/get-started-logic-flow/add-action-icon.png) -->
+    <!-- ![Add action.](./media/get-started-logic-flow/add-action-icon.png) -->
 
 1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)**.
 
-    ![List of actions](./media/get-started-logic-flow/send-email.png)
+    ![List of actions.](./media/get-started-logic-flow/send-email.png)
 
 1. If prompted, select the sign-in button, and then provide your credentials.
 
@@ -83,19 +83,19 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In the **Subject** box, enter **New tweet from:**, and then type a space.
 
-    ![Subject line with placeholder](./media/get-started-logic-flow/message-token.png)
+    ![Subject line with placeholder.](./media/get-started-logic-flow/message-token.png)
 1. In the list of tokens, select the **Tweeted by** token to add a placeholder for it.
 
-    ![Add parameter](./media/get-started-logic-flow/add-parameter.png)
+    ![Add parameter.](./media/get-started-logic-flow/add-parameter.png)
 1. Select the **Body** box, and then select the **Tweet text** token to add a placeholder for it.
 
    Optionally, you can add more tokens, other text, or both to the body of the email.
 1. Near the top of the screen, select **Save**.
 
-    <!-- ![Select the Create flow button](./media/get-started-logic-flow/create-button.png) -->
+    <!-- ![Select the Create flow button.](./media/get-started-logic-flow/create-button.png) -->
 <!-- 1. Select **Done** to update the list of flows.
 
-     ![Select the done button](./media/get-started-logic-flow/done-button.png) -->
+     ![Select the done button.](./media/get-started-logic-flow/done-button.png) -->
 
 ## Test your flow
 
@@ -106,7 +106,7 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 > [!TIP]
 > Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
 
-![Rich edit email](media/get-started-logic-flow/email-rich-text.png)
+![Rich edit email.](media/get-started-logic-flow/email-rich-text.png)
 
 ## Manage a cloud flow
 
@@ -115,19 +115,19 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
    * To pause a cloud flow, set its toggle to **Off**.
 
-       ![Pause flow](./media/get-started-logic-flow/pause-flow.png)
+       ![Pause flow.](./media/get-started-logic-flow/pause-flow.png)
    * To resume a cloud flow, set its toggle to **On**.
 
-       ![Resume flow](./media/get-started-logic-flow/resume-flow.png)
+       ![Resume flow.](./media/get-started-logic-flow/resume-flow.png)
    * To edit a cloud flow, select the pencil icon that corresponds to the flow you want to edit.
 
-       ![Select flow](./media/get-started-logic-flow/select-flow.png)
+       ![Select flow.](./media/get-started-logic-flow/select-flow.png)
    * To delete a cloud flow, select the **...** icon, select **Delete**, and then select **Delete** on the message box that appears.
 
-       ![Delete icon](./media/get-started-logic-flow/delete-icon.png)
+       ![Delete icon.](./media/get-started-logic-flow/delete-icon.png)
    * To view the run history of a cloud flow, select the flow from the **My flows** page, and then view the history under the **28 day run history** section of the page that opens.
 
-       ![run history](./media/get-started-logic-flow/run-history.png)
+       ![run history.](./media/get-started-logic-flow/run-history.png)
 
      Select a cloud flow run from the list of runs to see the inputs and outputs of each step.
 
