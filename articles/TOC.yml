@@ -427,6 +427,8 @@
         href: ./desktop-flows/how-to/run-macros-excel.md  
       - name: Run SQL queries on Excel files
         href: ./desktop-flows/how-to/sql-queries-excel.md 
+      - name: Autofit Excel columns using VBScript
+        href: ./desktop-flows/how-to/autofit-excel-coumns-vbscript.md 
     - name: Use images, image recognition and OCR
       items:
       - name: Use image recognition on machines with different screen resolutions
