@@ -36,19 +36,19 @@ Now, copy the last element of the selector located on the right side of the last
 > [!NOTE]
 > You can find more information about selectors in [Build a custom selector](../build-custom-selectors.md).
 
-To populate a text field, deploy the **Run JavaScript function on web page** action and populate the following code in the **JavaScript function** field. After pasting the code, replace the **CSS-Selector** placeholder with the previously copied selector.
+To populate a text field, deploy the **Run JavaScript function on web page** action and populate the following code in the **JavaScript function** field. After pasting the code, replace the **CSS-Selector** and **value-to-populate** placeholders with the previously copied selector and the value to populate, respectively.
 
 ``` JavaScript
 function ExecuteScript()
 {
-document.querySelectorAll('CSS-Selector')[0].value="test";
+document.querySelectorAll('CSS-Selector')[0].value="value-to-populate";
 }
 
 OR
 
 function ExecuteScript()
 {
-document.querySelectorAll('CSS-Selector')[0].innerText="test";
+document.querySelectorAll('CSS-Selector')[0].innerText="value-to-populate";
 }
 ```
 
@@ -62,5 +62,3 @@ function ExecuteScript()
 document.querySelectorAll('CSS-Selector')[0].click();
 }
 ```
-
-![The Run JavaScript function on web page action configured to press a button.](media/populate-text-fields-click-links-javascript/execute-javascript-function-action-press-button.png)
