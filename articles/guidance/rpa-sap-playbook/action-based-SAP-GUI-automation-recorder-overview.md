@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 You can use the [Power Automate Desktop recorder](../../desktop-flows/recording-flow.md) to record SAP GUI interactions. The desktop recorder translates each mouse click and key stroke into Power Automate Desktop actions and then adds these actions to your desktop flow.
 
-If you want to see the new desktop recording experience in action, please follow these steps to re-configure the action-based automation you built in steps 6.1-6.3. E
+If you want to see the new desktop recording experience in action, follow these steps to re-configure the action-based automation you built in steps 6.1-6.3. You can also follow along in the [no-code approach in espisode 6 of the video series.](https://www.youtube.com/watch?v=cijEDvayeVw)
 
 1.  Select the **ProcessHRMasterForm** subflow tab, and then select **Desktop recorder**.
    ![Screenshot of Power Automate Desktop showing the Desktop recorder button ](media/desktop-recorder-button.png)

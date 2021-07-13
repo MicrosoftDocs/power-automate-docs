@@ -18,7 +18,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-#  Introduction to SAP GUI based RPA in Power Automate Desktop  
+# Introduction to SAP GUI based RPA in Power Automate Desktop  
 
 Robotic process automation (RPA) enables you to automate mundane, rules-based tasks. With RPA, you can automate legacy software without APIs, which opens the world of automation to include software that's old or new, on-premises, or in the cloud.
 
@@ -26,7 +26,7 @@ Executives who implemented RPA in their organizations have experienced the posit
 
 Many of these of organizations use SAP to manage their finance, supply chain, production, and human resources processes. They are looking for ways to automate their most frequent, mundane, and rules-based tasks. That's exactly what we'll be focusing on in this playbook: SAP GUI automation patterns and best practices using Microsoft Power Automate, Power Automate Desktop, and desktop flows.
 
-[!VIDEO https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FAutomateItSAPSeriesVideo5&data=04%7C01%7Cdeonhe%40microsoft.com%7C5d9e1a1e90504e25f88208d941545de3%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637612652903834102%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=2%2BERZyg0CjjcnmT4OP76VDNL4%2F99t22WlxmPc7pT5qM%3D&reserved=0]
+Here's an [introductory video for the series of automating SAP GUI-based applications with Power Automate Desktop](https://www.youtube.com/watch?v=7u9TYcDShNA).
 
 ## Lifecycle of a typical enterprise RPA bot 
 
