@@ -1,6 +1,6 @@
 ---
 title: Check if a variable is numeric | Microsoft Docs
-description:  Check if a variable is numeric	
+description: Check if a variable is numeric	
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-#  Check if a variable is numeric
+# Check if a variable is numeric
 
 Power Automate Desktop enables users to insert data into flows using message boxes. In some scenarios, you may want to ensure that the entered data are numbers to make your flow robust to unexpected failures.
 
