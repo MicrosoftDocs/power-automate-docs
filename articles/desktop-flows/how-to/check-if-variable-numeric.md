@@ -21,7 +21,7 @@ Power Automate Desktop enables users to insert data into flows using message box
 
 To check whether a variable contains a number or not:
 
-1. Use the **Set variable** action to create a new variable that indicates whether the variable you want to check contains a number or not. Initialize this variable to **true**. In the following example, the created variable is named **IsNumber**.
+1. Use the **Set variable** action to create a new variable that indicates whether the variable you want to check contains a number. Initialize this variable to **true**. In the following example, the created variable is named **IsNumber**.
 
     ![The configured Set variable action.](media/check-if-variable-numeric/set-variable-action.png)
 
