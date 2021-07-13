@@ -1,5 +1,5 @@
 ---
-title: Overview of action-based SAP GUI automation with Power Automate | Microsoft Docs
+title: Low-code RPA with SAP GUI in Power Automate Desktop | Microsoft Docs
 description: Quickly develop delightful, timesaving low-code SAP GUI automations with Power Automate.
 suite: flow
 documentationcenter: na
@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Overview of action-based SAP GUI automation with manually defined actionsAction-based SAP GUI automation – using manually defined actions
+# Low-code RPA with SAP GUI in Power Automate Desktop
 
 <!--todo: there are no 4 samples in the linked doc-->
 

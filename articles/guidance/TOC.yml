@@ -54,7 +54,7 @@
         href: planning/discover-performance-issues.md
   - name: Use RPA with SAP
     items:
-    - name: Introduction
+    - name: Introduction to SAP GUI-based RPA 
       href: rpa-sap-playbook/introduction.md
     - name: Prerequisites
       href: rpa-sap-playbook/prerequisites.md
@@ -62,11 +62,11 @@
       href: rpa-sap-playbook/core-components.md
     - name: Sample SAP scenario
       href: rpa-sap-playbook/sample-sap-scenario.md
-    - name: VBScript-based SAP GUI automation
+    - name: Pro-Code RPA with SAP GUI
       href: rpa-sap-playbook/VBScript-based-sap-gui-automation-overview.md
-    - name: Action-based manual SAP GUI automation
+    - name: Low-code RPA with SAP GUI 
       href: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
-    - name: Action-based SAP GUI automation with recorder
+    - name: No-Code RPA with SAP GUI
       href: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
     - name: Extract information from SAP GUI
       href: rpa-sap-playbook/extracting-information-from-sap-gui-ui.md

@@ -1,5 +1,5 @@
 ---
-title: Record SAP GUI actions with the Power Automate Desktop recorder. | Microsoft Docs
+title: No-Code RPA with SAP GUI in Power Automate Desktop | Microsoft Docs
 description: The desktop recorder translates each mouse click and key stroke into Power Automate Desktop actions and adds them to your desktop flow. 
 suite: flow
 documentationcenter: na
@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Action-based SAP GUI automation – using the built-in desktop recorder 
+# No-Code RPA with SAP GUI in Power Automate Desktop  
 
 You can use the [Power Automate Desktop recorder](../../desktop-flows/recording-flow.md) to record SAP GUI interactions. The desktop recorder translates each mouse click and key stroke into Power Automate Desktop actions and then adds these actions to your desktop flow.
 
