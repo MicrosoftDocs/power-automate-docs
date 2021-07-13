@@ -17,7 +17,7 @@ search.audienceType:
 
 # Convert Excel to PDF using VBScript
 
-To convert an Excel worksheet to PDF:
+To convert an Excel file to PDF:
 
 1. Use the **Set variable** action to create a new variable containing the path of the Excel file you want to convert. In this example, the variable is named **ExcelFile**.
 
