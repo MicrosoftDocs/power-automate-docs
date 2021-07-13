@@ -34,7 +34,9 @@ After capturing an image, specify a name for it in the dialog box and select **O
 
 ![image name](\media\images\image-name.png)
 
-To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folders by capturing them while the folder is open. 
+To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. If you've navigated inside a specific folder, the **Remove unused images** option removes only the unused images located in this folder.
+
+To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folder by capturing them while the folder is open. 
 
 ![The Remove unused images and Add a new folder options.](\media\images\remove-unused-images.png)
 
@@ -45,15 +47,5 @@ To rename or delete images or folders, right-click on an item and select the app
 To find where the image is being used in the flow, right-click the image and select **Find usages**. The results will show the actions which use the image. Double-clicking on a result will highlight the action in the workspace.
 
 ![find usages results pane](\media\images\find-usages-results.png)
-
-### Known issues and limitations
-
-- **Issue**: In some cases, when you rename an image, actions that use the renamed image may no longer work as you might expect.
-
-
-- **Workarounds**: Open and save one of the actions that uses the image resolves the issue
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
