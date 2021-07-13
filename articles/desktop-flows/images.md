@@ -34,7 +34,7 @@ After capturing an image, specify a name for it in the dialog box and select **O
 
 ![image name](\media\images\image-name.png)
 
-To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. If you've navigated inside a specific folder, the **Remove unused images** option removes only the unused images located in this folder.
+To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option and then select **Remove unused images**. If you navigate inside a specific folder, the **Remove unused images** option will remove only the unused images located in this folder.
 
 To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folder by capturing them while the folder is open. 
 
