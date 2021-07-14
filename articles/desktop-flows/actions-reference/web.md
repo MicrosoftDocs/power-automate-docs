@@ -35,7 +35,7 @@ To send an API request, you can use the **Invoke web service** action that suppo
 
 In the action's properties, you have to populate the service's URL and the appropriate HTTP method. Additionally, you have to choose the request and response content type, such as XML and JSON.
 
-The **Custom headers** and *Request body** fields are optional, and you have to configure them as described in the API's documentation.
+The **Custom headers** and **Request body** fields are optional, and you have to configure them as described in the API's documentation.
 
 ![The Invoke web service action.](media\web\invoke-web-service-action.png)
 
