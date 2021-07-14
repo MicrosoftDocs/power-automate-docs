@@ -17,7 +17,29 @@ search.audienceType:
 
 # Web automation
 
+## Getting started with web automation
 
+The web automation group of action enables users to interact with web applications and components through UI elements. 
+
+UI elements are used in web automation actions to describe the web components you want to handle. 
+
+You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
+
+All UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page.
+
+Although selectors are created automatically when creating UI elements, some particular scenarios need manually created selectors. 
+
+When a custom selector is needed, you can modify an existing selector or build one from scratch. 
+
+Selectors use the > notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
+
+To develop more dynamic web flows, you can replace the **Equals to** operator in the selectors with other operators or regular expressions.
+
+The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, you can prefer other operators, like the **Contains** operator that locates values containing specific keywords. 
+
+If the value of a selector's attribute depends on calculations and results of previous actions, you can use variables instead of hard-coded values.
+
+## Web automation actions
 
 Start and manage web applications on browsers
 
