@@ -35,6 +35,10 @@ search.audienceType:
 
    ![my flows instant blank.](\media\link-pad-flow-portal\my-flows-instant-blank.png)
 
+   Alternatively, you can select **Automated cloud flow** to create a flow that is triggered by a specific event, like the creation of a new file in an OneDrive account.
+
+   ![Create an automated cloud flow.](\media\link-pad-flow-portal\automated-cloud-flow.png)
+
 1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Manually trigger a flow** and then select **Create**.
 
    ![manually trigger flow.](\media\link-pad-flow-portal\manually-trigger-flow.png)
