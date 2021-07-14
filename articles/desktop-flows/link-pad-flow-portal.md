@@ -35,7 +35,7 @@ search.audienceType:
 
    ![my flows instant blank.](\media\link-pad-flow-portal\my-flows-instant-blank.png)
 
-   Alternatively, you can select **Automated cloud flow** to create a flow that is triggered by a specific event, like the creation of a new file in an OneDrive account.
+   Alternatively, you can select **Automated cloud flow** to create a flow that is triggered by a specific event, like the creation of a new file in an OneDrive for Business account.
 
    ![Create an automated cloud flow.](\media\link-pad-flow-portal\automated-cloud-flow.png)
 
