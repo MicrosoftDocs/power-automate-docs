@@ -17,6 +17,34 @@ search.audienceType:
 
 # Web automation
 
+Start and manage web applications on browsers
+
+You can find more information on how to use the web automation actions [here](../automation-web.md)
+
+|<!-- --> |
+|-----|
+|[Extract data from web page](#extractdata)|
+|[Get details of web page](#getdetailsofwebpage)|
+|[Get details of element on web page](#getdetailsofelement)|
+|[Take screenshot of web page](#takescreenshotbase)|
+|[Focus text field on web page](#focusbase)|
+|[Populate text Field on web page](#populatetextfieldbase)|
+|[Set check box state on web page](#setcheckboxstatebase)|
+|[Select radio button on web page](#selectradiobuttonbase)|
+|[Set drop-down list value on web page](#setdropdownlistvaluebase)|
+|[Press button on web page](#pressbuttonbase)|
+|[Launch new Internet Explorer](#launchinternetexplorerbase)|
+|[Launch new Firefox](#launchfirefoxbase)|
+|[Launch new Chrome](#launchchromebase)|
+|[Launch new Edge](#launchedgebase)|
+|[Create new tab](#createnewtabbase)|
+|[Go to web page](#gotowebpagebase)|
+|[Click link on web page](#clickbase)|
+|[Click download link on web page](#clickdownloadlink)|
+|[Run JavaScript function on web page](#executejavascript)|
+|[Hover mouse over element on web page](#hoveroverelement)|
+|[Close web browser](#closewebbrowser)|
+
 ## Getting started with web automation
 
 The web automation group of action enables users to interact with web applications and components through UI elements. UI elements are used in web automation actions to describe the web components you want to handle. 
@@ -46,34 +74,6 @@ If the value of a selector's attribute depends on calculations and results of pr
 ![A variable in a selector.](\media\webautomation\selector-variables.png)
 
 ## Web automation actions
-
-Start and manage web applications on browsers
-
-You can find more information on how to use the web automation actions [here](../automation-web.md)
-
-|<!-- --> |
-|-----|
-|[Extract data from web page](#extractdata)|
-|[Get details of web page](#getdetailsofwebpage)|
-|[Get details of element on web page](#getdetailsofelement)|
-|[Take screenshot of web page](#takescreenshotbase)|
-|[Focus text field on web page](#focusbase)|
-|[Populate text Field on web page](#populatetextfieldbase)|
-|[Set check box state on web page](#setcheckboxstatebase)|
-|[Select radio button on web page](#selectradiobuttonbase)|
-|[Set drop-down list value on web page](#setdropdownlistvaluebase)|
-|[Press button on web page](#pressbuttonbase)|
-|[Launch new Internet Explorer](#launchinternetexplorerbase)|
-|[Launch new Firefox](#launchfirefoxbase)|
-|[Launch new Chrome](#launchchromebase)|
-|[Launch new Edge](#launchedgebase)|
-|[Create new tab](#createnewtabbase)|
-|[Go to web page](#gotowebpagebase)|
-|[Click link on web page](#clickbase)|
-|[Click download link on web page](#clickdownloadlink)|
-|[Run JavaScript function on web page](#executejavascript)|
-|[Hover mouse over element on web page](#hoveroverelement)|
-|[Close web browser](#closewebbrowser)|
 
 ## Web data extraction
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data
