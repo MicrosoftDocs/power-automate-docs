@@ -65,7 +65,7 @@ Selectors use the **>** notation to indicate the hierarchical structure of the s
 
 To develop more dynamic web flows, you can replace the **Equals to** operator in the selectors with other operators or regular expressions.
 
-The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, other operators may be more suitable, like τηε **Contains** operator that locates values containing specific keywords. 
+The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, other operators may be more suitable, like the **Contains** operator that locates values containing specific keywords. 
 
 ![The available operators in the selector builder.](\media\webautomation\selector-operators.png)
 
