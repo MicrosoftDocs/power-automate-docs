@@ -19,25 +19,31 @@ search.audienceType:
 
 ## Getting started with web automation
 
-The web automation group of action enables users to interact with web applications and components through UI elements. 
-
-UI elements are used in web automation actions to describe the web components you want to handle. 
+The web automation group of action enables users to interact with web applications and components through UI elements. UI elements are used in web automation actions to describe the web components you want to handle. 
 
 You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
 
+![The options to create a new UI element.](\media\webautomation\create-ui-element.png)
+
 All UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page.
 
-Although selectors are created automatically when creating UI elements, some particular scenarios need manually created selectors. 
+Although selectors are created automatically when creating UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you can modify an existing selector or build one from scratch. 
 
-When a custom selector is needed, you can modify an existing selector or build one from scratch. 
+![The options to edit and create selectors.](\media\webautomation\create-selector.png)
 
-Selectors use the > notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
+Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
+
+![The selector builder dialog.](\media\webautomation\selector-builder.png)
 
 To develop more dynamic web flows, you can replace the **Equals to** operator in the selectors with other operators or regular expressions.
 
-The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, you can prefer other operators, like the **Contains** operator that locates values containing specific keywords. 
+The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, you can prefer other operators, like **Contains** that locates values containing specific keywords. 
+
+![The available operators in the selector builder.](\media\webautomation\selector-operators.png)
 
 If the value of a selector's attribute depends on calculations and results of previous actions, you can use variables instead of hard-coded values.
+
+![A variable in a selector.](\media\webautomation\selector-variables.png)
 
 ## Web automation actions
 
