@@ -1,12 +1,12 @@
 ---
 title: Images | Microsoft Docs
 description: Use the images pane to manage images in a desktop flow.
-author: olegmelnykov
+author: georgiostrantzas
 ms.service: power-automate
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.author: v-gtrantzas
+ms.reviewer: v-gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -28,7 +28,7 @@ Alternatively, select the arrow on the **Capture image** button to capture image
 
 ![The Capture image with delay option in the images tab.](\media\images\delay-capture.png)
 
-After capturing the image, populate a name for it in the dialog box and select OK to add it to the flow.
+After capturing the image, populate a name for it in the dialog box and select **OK** to add it to the flow.
 
 ![The dialog prompting you to enter a name for the captured image.](\media\images\image-name.png)
 
@@ -54,7 +54,9 @@ After capturing images, you can use them as input in actions that require them, 
 
 ![The Move mouse to image action.](\media\images\move-mouse-image-action.png)
 
-In the advanced settings of these actions, you can select which image matching algorithm you want to use.
+In the advanced settings of these actions, you can select which image matching algorithm you want to use. The **Basic** algorithm achieves better results with images less than 200x200 pixels while, the **Advanced** algorithm is more effective with bigger images and more robust to color changes.
+
+The **Tolerance field** defines the acceptable ammount of differences between the provided image and the image is compared with. High tolerance values may affect the precision of image recognition.
 
 ![The advanced settings of the Move mouse to image action.](\media\images\move-mouse-image-action-advanced.png)
 
