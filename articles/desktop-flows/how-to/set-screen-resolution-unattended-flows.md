@@ -27,7 +27,7 @@ To change the resolution in which unattended flows are run:
 
    ![The appropriate keys in the UIFlowService.exe.config file.](media/set-screen-resolution-unattended-flows/ui-flow-service-file.png)
 
-1. Change the values of the following keys to the proper width, height, and scale, respectively:
+1. Change the values of the following keys to the proper screen resolution width, height, and scale, respectively:
 
     - **Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionWidth**
     - **Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionHeight**
