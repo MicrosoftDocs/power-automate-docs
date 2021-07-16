@@ -3,6 +3,7 @@ title: Manage machine groups | Microsoft Docs
 description: Manage machine groups
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 03/29/2021
 ms.author: getrantz
@@ -58,14 +59,14 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Select **Add to machine group**. 
 
-    ![The Add to machine group button](./media/manage-machine-groups/add-to-machine-group.png)
+    ![The Add to machine group button.](./media/manage-machine-groups/add-to-machine-group.png)
 
 1. In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
 
     > [!NOTE]
     > If the machine is deployed in a different environment than the machine group, you have to change its environment.
 
-    ![The displayed list with the available machines](./media/manage-machine-groups/machine-groups-list.png)
+    ![The displayed list with the available machines.](./media/manage-machine-groups/machine-groups-list.png)
 
 1. If this is the first time adding a machine to your group, you will need to create a password for your group. This password is used to limit access for those who can add machines to the group. Make sure you do not lose the password, as you will be unable to recover it. If you have already added a machine before, enter the password for the group. 
 
@@ -91,7 +92,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. Click **Create**. 
     
-   ![The Change machine group and Remove from group options](./media/manage-machine-groups/connect-directly-to-machine.png)
+   ![The Change machine group and Remove from group options.](./media/manage-machine-groups/connect-directly-to-machine.png)
 
 
 1. Select the desktop flow you want to run and the desired run mode. 
@@ -150,7 +151,7 @@ You can share a machine group with other users in your organization, giving thos
 
 1. Click **Save**. 
 
-   ![The Change machine group and Remove from group options](./media/manage-machine-groups/share-machine-group.png)
+   ![The Change machine group and Remove from group options.](./media/manage-machine-groups/share-machine-group.png)
 
 There are two levels of permissions that you can use when managing access to your machine group: 
 
@@ -183,25 +184,25 @@ If you want to change the machine group that contains your machine, select the *
 If you want to remove the machine from a group without adding it to a new one, select **Remove from group**.
 
 
-![The Change machine group and Remove from group options](./media/manage-machine-groups/change-remove-machine-group.png)
+![The Change machine group and Remove from group options.](./media/manage-machine-groups/change-remove-machine-group.png)
 
 
 ## Change machine group's password
 
 To change the password of the currently used machine group, select the **dots icon** next to the machine group and pick **Edit group password**.
 
-![The Edit group password option](./media/manage-machine-groups/edit-machine-group-password.png)
+![The Edit group password option.](./media/manage-machine-groups/edit-machine-group-password.png)
 
 Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
 
-![The fields for the new mahcine group password](./media/manage-machine-groups/machine-group-new-password.png)
+![The fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
 
 ## Update permissions based on security role 
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
 
 
-  ![Permissions based on security role](./media/manage-machine-groups/permissions-roles.png)
+  ![Permissions based on security role.](./media/manage-machine-groups/permissions-roles.png)
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management. 
 

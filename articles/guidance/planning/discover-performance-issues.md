@@ -3,6 +3,7 @@ title: Diagnosing performance issues in a Power Automate project | Microsoft Doc
 description: If you're experiencing delays or slowdowns during your flow execution, you might have hit your Power Automate limits for the day. This article explains how to uncover these issues.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -31,7 +32,7 @@ you're using your actions.
 
 4.  Select the **Actions** tab.
 
-![Chart of flow action requests](media/flow-action-runs.png "Chart of flow action requests")
+![Chart of flow action requests.](media/flow-action-runs.png "Chart of flow action requests")
 
 When your automation has slowed down, it's a good idea to revisit your flow
 design and check for additional efficiency that can help reduce the number of actions
@@ -43,7 +44,7 @@ tricks about how to keep flow run execution from being delayed.
 
 The following image shows an example of an email that was sent for a flow that was consistently running up against action limits.
 
-![Performance alert that a flow is running more actions than expected and will be turned off if it doesn't use fewer actions](media/performance-alert-email.png "Performance alert that a flow is running more actions than expected and will be turned off if it doesn't use fewer actions")
+![Performance alert that a flow is running more actions than expected and will be turned off if it doesn't use fewer actions.](media/performance-alert-email.png "Performance alert that a flow is running more actions than expected and will be turned off if it doesn't use fewer actions")
 
 ## Limits from connected services
 

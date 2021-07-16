@@ -3,6 +3,7 @@ title: Visualize processes in process advisor | Microsoft Docs
 description: How to visualize your processes in the process advisor feature.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -21,7 +22,7 @@ search.audienceType:
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select the **Analytics** > **Process** tab.
 
 > [!div class="mx-imgBorder"]
-> ![Process map](media/automation-reco-1.png "Process advisor process map")
+> ![Process map.](media/automation-reco-1.png "Process advisor process map")
 
 Activities describe tasks or actions that make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
 
@@ -62,7 +63,7 @@ Application analytics allows you to gain more insights from recordings by unders
 - App insights for each activity or recording.
 
 > [!div class="mx-imgBorder"]
-> ![Application analytics](media/application-analytics.png "Application analytics")
+> ![Application analytics.](media/application-analytics.png "Application analytics")
 
 ### Application analytics KPIs
 

@@ -3,6 +3,7 @@ title: Using browsers and managing extensions | Microsoft Docs
 description: Using browsers and managing extensions
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

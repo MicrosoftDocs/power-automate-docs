@@ -3,6 +3,7 @@ title: Share a process advisor process | Microsoft Docs
 description: How to share a process in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -37,7 +38,7 @@ The share action is available on the Processes screen in process advisor for the
 The share action is also available on the process detail screen with the same conditions. Sharing isn't needed at the recordings level. Once you share a process with a co-owner, they can manage the recordings associated to the process.
 
 > [!div class="mx-imgBorder"]
-> ![!Manage access](media/manage-access.png "Manage access")
+> ![!Manage access.](media/manage-access.png "Manage access")
 
 ## Share panel
 

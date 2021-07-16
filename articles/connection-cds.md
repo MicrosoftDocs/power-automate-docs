@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -42,17 +43,17 @@ You can use any of the following triggers to initiate your flow:
 
 
 > [!div class="mx-imgBorder"]
-> ![Select a trigger](./media/cds-connector/Triggers.png)
+> ![Select a trigger.](./media/cds-connector/Triggers.png)
 
 If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
 
 > [!div class="mx-imgBorder"]
-> ![Choose environment](./media/cds-connector/Environments.png)
+> ![Choose environment.](./media/cds-connector/Environments.png)
 
 You can use scopes to determine if your flow runs if you create a new row, if a new row is created by a user within your business unit, or if a new row is created by any user in your organization.
 
 > [!div class="mx-imgBorder"]
-> ![Choose scope](./media/cds-connector/Scopes.png)
+> ![Choose scope.](./media/cds-connector/Scopes.png)
 
 |Scope|Trigger timing|
 | --- | --- |
@@ -69,7 +70,7 @@ Triggers that run when a row is updated can also use filtering columns. This ens
 This flow triggers any time the first or last name of contact that the flow user owns is updated.
 
 > [!div class="mx-imgBorder"]
-> ![Filter columns](./media/cds-connector/FilterAttributes.png)
+> ![Filter columns.](./media/cds-connector/FilterAttributes.png)
 
 ## Trigger privileges
 
@@ -85,7 +86,7 @@ Use any of the following actions to write data into Dataverse:
 Here's an example of creating a follow-up task when the given user creates a new account row.  
 
 > [!div class="mx-imgBorder"]
-> ![Follow-up task](./media/cds-connector/Regarding.png)
+> ![Follow-up task.](./media/cds-connector/Regarding.png)
 
 ## Advanced concepts
 

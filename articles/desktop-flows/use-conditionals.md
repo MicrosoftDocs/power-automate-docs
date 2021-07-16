@@ -3,6 +3,7 @@ title: Using conditionals | Microsoft Docs
 description: Using conditionals
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz

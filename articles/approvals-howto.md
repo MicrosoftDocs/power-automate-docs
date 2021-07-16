@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -47,7 +48,7 @@ Here's an example.
 
 Salespeople in an organization can request an approver to give customers a discount for their purchases. These Salespeople enter the discount request into a SharePoint list, which is the trigger of the flow. The flow then uses custom responses with the **Start and wait for an approval** action.  
   
-   ![Start and wait for an approval](media/approvals-howto/start-wait.png)
+   ![Start and wait for an approval.](media/approvals-howto/start-wait.png)
 
 Select as approval type **Custom Responses – Wait for all responses** or **Custom Responses – Wait for one response**, depending on if you need multiple approvers or just one.  
   
@@ -55,17 +56,17 @@ Add as many **response options** as needed. In this case we are giving four ment
   
 Give a **Title** to the approval request, and then list the approvers in **Assigned to**.  
   
-   ![Assigned to](media/approvals-howto/assigned.png)
+   ![Assigned to.](media/approvals-howto/assigned.png)
 
 After the approval request is answered, the flow sends an email to the salesperson who requested the discount, informing them about the outcome of the request. 
 
 To get the response to the approval request, just use the **Outcome** output.  
   
-   ![Shows the outcome or response from the approver](media/approvals-howto/outcome.png)
+   ![Shows the outcome or response from the approver.](media/approvals-howto/outcome.png)
 
 The approver sees the approval request like this. 
   
-   ![Approval request via email](media/approvals-howto/email-request.png)
+   ![Approval request via email.](media/approvals-howto/email-request.png)
  
 ### Using markdown
 
@@ -75,25 +76,25 @@ You can learn more about how to use markdown and the supported apps in the [Use 
 
 Here is an example of its usage. 
   
-   ![Markdown usage](media/approvals-howto/markdown-request.png)
+   ![Markdown usage.](media/approvals-howto/markdown-request.png)
 
 And here's how the approvers see it in a nicely formatted email in Outlook.  
   
-   ![Approval request in Outlook](media/approvals-howto/outlook-request.png)
+   ![Approval request in Outlook.](media/approvals-howto/outlook-request.png)
 
 ## Display approval date in my timezone  
   
 By default, approval emails display the **Date Created** field in GMT. There no way to change this field.  
   
-   ![GMT time displayed by default](media/approvals-howto/gmt-time.png)
+   ![GMT time displayed by default.](media/approvals-howto/gmt-time.png)
 
 You can work around this by displaying the date the flow was run, in your desired timezone, in the **Details** field of the approval request. For example, to display the approval request date in Paris time, add two time actions like this.  
   
-   ![Convert the timezone](media/approvals-howto/convert-timezone.png)
+   ![Convert the timezone.](media/approvals-howto/convert-timezone.png)
 
 And the resulting approval email will look like this:  
   
-  ![Converted timezone](media/approvals-howto/converted-timezone.png)
+  ![Converted timezone.](media/approvals-howto/converted-timezone.png)
 
  
 ## Reassign an approval to another person 
@@ -106,9 +107,9 @@ If received an approval request, but you want somebody else to make the approval
 
 1. Hover your mouse over the approval you want to reassign, select the three dots > **Reassign**.
 
-   ![Reassign an approval request](media/approvals-howto/reassign-request.png)
+   ![Reassign an approval request.](media/approvals-howto/reassign-request.png)
 
-   ![Enter the assignee](media/approvals-howto/assignee.png)
+   ![Enter the assignee.](media/approvals-howto/assignee.png)
  
 
 On the other hand, if you are the requester, you cannot reassign the approval request. However, you can **Cancel** the approval request, and then edit the flow to change the **Assigned to** approver. 
@@ -123,14 +124,14 @@ To cancel an approval:
 
 1. Select **Cancel**.
 
-   ![Cancel an approval request flow](media/approvals-howto/cancel-request.png)
+   ![Cancel an approval request flow.](media/approvals-howto/cancel-request.png)
 
 ## Get a confirmation email once an approval has been answered  
   
 If you would like to be notified when an approver responds to an approval request, just send yourself an email after the approval step in the flow. Send the email on the **If yes** and on the **If no** branches of the approval outcome condition like this.
 
 
-   ![Send yourself an email](media/approvals-howto/send-self.png)
+   ![Send yourself an email.](media/approvals-howto/send-self.png)
 
 ## Cancel an approval  
   
@@ -144,7 +145,7 @@ If you are the maker of a flow that requests approvals, and the approval request
 
 1. Select **Cancel**.
 
-   ![Cancel an approval request](media/approvals-howto/cancel-request.png)
+   ![Cancel an approval request.](media/approvals-howto/cancel-request.png)
 
 ## Do sequential approvals  
   
@@ -164,11 +165,11 @@ You can assign an approval request to multiple persons. Here are the two options
 
    - If *Everybody* must respond to the approval request to continue with the flow run, select **Approve/Reject – Everybody must approve** or **Custom Responses – Wait for all responses**.  
       
-    ![Approval actions](media/approvals-howto/approval-actions.png)
+    ![Approval actions.](media/approvals-howto/approval-actions.png)
 
 2. In the **Assigned to** field, define the list of persons to whom the approval request should be sent. Separate each person with a semicolon (;).  
 
-   ![Assigned to field with multiple persons](media/approvals-howto/assigned-multiple.png)
+   ![Assigned to field with multiple persons.](media/approvals-howto/assigned-multiple.png)
 
 
 ## Next steps

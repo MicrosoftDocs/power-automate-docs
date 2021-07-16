@@ -3,6 +3,7 @@ title: Reducing risk and planning for error handling in a Power Automate project
 description: Always assume your automation can fail because no system is perfect. This article explains how you can reduce risk and plan for error handling.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -63,19 +64,19 @@ should consult your IT pro or development teams to help you set up [custom conne
 You can use this feature of Power Automate to set up policies that will
 automatically retry an action if it fails. By default, this is set to retry four times, but you can change it if you need.
 
-![Changing the retry policy](media/retry-policy.png "Changing the retry policy")
+![Changing the retry policy.](media/retry-policy.png "Changing the retry policy")
 
 ## Set up custom failure notifications
 
 If actions still fail, standard capabilities in Power Automate notify the owners of the
 automation with a message similar to the following image.
 
-![Example of a failed flow run notification that reads "The flow(s) listed had an unusual number of failures in the past week and may need your attention"](media/failure-notification-mail.png "Example of a failed flow run notification that reads 'The flow(s) listed had an unusual number of failures in the past week and may need your attention'")
+![Example of a failed flow run notification that reads "The flow(s) listed had an unusual number of failures in the past week and may need your attention."](media/failure-notification-mail.png "Example of a failed flow run notification that reads 'The flow(s) listed had an unusual number of failures in the past week and may need your attention'")
 
 However, if you'd like to send a custom notification, you can set it up by 
 adding actions that run only if the previous steps have failed.
 
-![Changing settings to run after failure](media/run-after-settings.png "Changing settings to run after failure")
+![Changing settings to run after failure.](media/run-after-settings.png "Changing settings to run after failure")
 
 Normally, by default, all actions that are set up will run only if the previous
 step was successful. You can change this behavior by setting the action to run only
@@ -97,7 +98,7 @@ to run the automation concurrently. This is particularly useful for unattended
 scenarios, where you have more than a single computer available to run your
 automation.
 
-![Distribution of automation among available computers](media/setting-up-cluster.png "Distribution of automation among available computers")
+![Distribution of automation among available computers.](media/setting-up-cluster.png "Distribution of automation among available computers")
 
 > [!div class="nextstepaction"]
 > [Next step: Adding analytical data to Microsoft Dataverse](adding-analytical-data.md)

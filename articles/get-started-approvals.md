@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -42,7 +43,7 @@ When you submit an approval in a flow, approvers are notified and can review and
 
 Here's the full list of [Approval actions](https://docs.microsoft.com/connectors/approvals/#actions) that you can use in your flows.  
   
-![List of approval actions](media/get-started-approvals/list-approval-actions.png)
+![List of approval actions.](media/get-started-approvals/list-approval-actions.png)
 
 If you want to quickly get started with approvals, use the **Start and wait for an approval** action. This action lets you provide the information that should be in the approval request and the approvers who will receive the request. 
 

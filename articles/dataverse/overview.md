@@ -57,4 +57,4 @@ The Microsoft Dataverse connector provides the following actions to help you man
 - Upload file or image content
 - Perform a bound action
 - Perform an unbound action
-   ![Partial list of Dataverse actions](../media/dataverse-overview/actions.png "Partial list of Dataverse actions")
+   ![Partial list of Dataverse actions.](../media/dataverse-overview/actions.png "Partial list of Dataverse actions")

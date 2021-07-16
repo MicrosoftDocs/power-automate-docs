@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -30,7 +31,7 @@ The **candidate feedback form** sample is an Adaptive Card input form that's des
 -   Facilitate aggregated data review after all responses are recorded.
 -   Notify the human resources representative with the hire/no hire vote count at the end of the process
 
-     ![Candidate feedback form](media/adaptive-cards/candidate-form.png)
+     ![Candidate feedback form.](media/adaptive-cards/candidate-form.png)
 
 *Inputs/Outputs and notes*
 

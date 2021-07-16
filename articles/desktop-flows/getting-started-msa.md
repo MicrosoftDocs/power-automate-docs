@@ -3,6 +3,7 @@ title: Getting started with a Microsoft account  | Microsoft Docs
 description: Getting started with a Microsoft account
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article 
 ms.date: 09/22/2020
 ms.author: marleon
@@ -37,47 +38,47 @@ To create the flow:
 
 1. Launch Power Automate Desktop and select the New flow button in the console.
 
-    ![console new flow](media\getting-started-msa\console-new-flow.png)
+    ![console new flow.](media\getting-started-msa\console-new-flow.png)
 
 
 1. Enter a name for the flow and then select **Create**. In this example, the flow is named **Copy Folder to Desktop**.
 
-    ![build flow dialog](media\getting-started-msa\build-flow-dialog.png)
+    ![build flow dialog.](media\getting-started-msa\build-flow-dialog.png)
 
 
 1. When the Flow Designer opens, go to the Actions pane, open the **Folders** group, and drag and drop the **Get special folder** action to the workspace to add it to the flow.
 
-    ![add action](media\getting-started-msa\add-action.png)
+    ![add action.](media\getting-started-msa\add-action.png)
 
 
 
 1. In the resulting action properties dialog, the desktop folder is selected by default. Select OK to add the action to the flow.
 
-    ![get special folder action properties](media\getting-started-msa\get-special-folder-action-properties.png)
+    ![get special folder action properties.](media\getting-started-msa\get-special-folder-action-properties.png)
 
 
 1. Similarly to step 3, go to the **Message boxes** group, and add the **Display select folder dialog** action to the flow. Set **Dialog description** to **Select a folder to back up:**.
 
-    ![display select folder dialog action properties](media\getting-started-msa\display-select-folder-dialog-action-properties.png)
+    ![display select folder dialog action properties.](media\getting-started-msa\display-select-folder-dialog-action-properties.png)
 
 
 1. In the **Folders** group, add **Create folder** to the flow. Set the **Create new folder into** field to **%SpecialFolderPath%** and **New folder name** to **backup**.
 
-    ![create folder action properties](media\getting-started-msa\create-folder-action-properties.png)
+    ![create folder action properties.](media\getting-started-msa\create-folder-action-properties.png)
 
 
 1. In the same group, select the **Copy folder** action. Set **Folder to copy** to **%SelectedFolder%**, **Destination folder** to **%SpecialFolderPath%\backup** and add the action to the flow.
 
-    ![copy folder action properties](media\getting-started-msa\copy-folder-action-properties.png)
+    ![copy folder action properties.](media\getting-started-msa\copy-folder-action-properties.png)
 
 
 1. Select run to run the flow.
 
-    ![run flow](media\getting-started-msa\run-flow.png)
+    ![run flow.](media\getting-started-msa\run-flow.png)
 
 1. Close flow designer and save the flow. Now you can run the flow from the console.
 
-    ![run flow console](media\getting-started-msa\run-flow-console.png)
+    ![run flow console.](media\getting-started-msa\run-flow-console.png)
 
 
 When prompted for a folder, select any folder you wish to copy. The flow will create a new folder on your desktop called **backup** with the selected folder inside.

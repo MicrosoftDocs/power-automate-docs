@@ -3,6 +3,7 @@ title: Automation recommendation in process advisor (preview) | Microsoft Docs
 description: Identify opportunities to automate your processes in the process advisor feature.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -24,12 +25,12 @@ Here's a short video on how to use the automation recommendation feature in proc
 The blue recommendation icons on the process map activity show the automation opportunities.
 
 > [!div class="mx-imgBorder"]
-> ![Automation recommendation](media/automation-reco-dot.png "Automation recommendation")
+> ![Automation recommendation.](media/automation-reco-dot.png "Automation recommendation")
 
 When you select **+Automate activities** above the process map, you'll be taken to Power Automate form designer. This is where you'll see the connector recommendations for the activities in your process map. You can select and add the connectors to your flow to automate your process.
 
 > [!div class="mx-imgBorder"]
-> ![Automate activities](media/automation-reco-2.png "Automate activities")
+> ![Automate activities.](media/automation-reco-2.png "Automate activities")
 
 ### See also
 

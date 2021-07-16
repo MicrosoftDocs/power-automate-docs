@@ -3,6 +3,7 @@ title: System | Microsoft Docs
 description: System Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -53,7 +54,7 @@ Use system actions to automate tasks which are fundamental to the Windows operat
 
 Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, Run application opens a specific document in Word in quiet mode:
 
-![screenshot of the run application action properties window](\media\system\run-application-example.png)
+![screenshot of the run application action properties window.](\media\system\run-application-example.png)
 
 Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
 
@@ -141,7 +142,7 @@ Executes an application or opens a document by executing the associated applicat
 >**"/q" "C:\Users\username\Desktop\InvoiceTemplate.docx"**
 
 ##### <a name="runapplicationbase_example"></a> Example
-![Run application action example](media\system\run-application-example.png)
+![Run application action example.](media\system\run-application-example.png)
 
 ### <a name="rundoscommand"></a> Run DOS command
 Executes a DOS command or console application in invisible mode and retrieves its output upon completion

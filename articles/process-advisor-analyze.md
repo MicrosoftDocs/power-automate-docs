@@ -3,6 +3,7 @@ title: Analyze processes | Microsoft Docs
 description: How to use the analyze processes feature in process advisor.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -42,7 +43,7 @@ Each recording can have one of the following statuses:
 
 Also, analyzed recordings might have one of the following icons next to it:
 
-- ![Not ready](media/process-advisor-analyze/icon-not-ready.png "This recording is not ready") Indicates that even though the recording was analyzed, it's been marked not ready to analyze, and won't be included if the process is analyzed again.
-- ![Modified](media/process-advisor-analyze/icon-modified.png "This recording has been modified") Indicates that the recording has been modified and might be out of sync with the previous analysis. Analyzing again will synchronize the recording with the analysis output and the process map. 
+- ![Not ready.](media/process-advisor-analyze/icon-not-ready.png "This recording is not ready") Indicates that even though the recording was analyzed, it's been marked not ready to analyze, and won't be included if the process is analyzed again.
+- ![Modified.](media/process-advisor-analyze/icon-modified.png "This recording has been modified") Indicates that the recording has been modified and might be out of sync with the previous analysis. Analyzing again will synchronize the recording with the analysis output and the process map. 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

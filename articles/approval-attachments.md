@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -34,11 +35,11 @@ In this article, you’ll learn how to create an approval flow that sends an att
 1. Sign into Power Automate.
 1. Select **My flows** > **New** > **Instant-from blank**.
 
-    ![New instant blank flow](./media/approval-attachments/new-instand-blank.png)
+    ![New instant blank flow.](./media/approval-attachments/new-instand-blank.png)
 
 1. Give your cloud flow a name > search for, and then select **Manually trigger a cloud flow**, and then select **Create**.
 
-    ![Name your flow and select a trigger](./media/approval-attachments/name-flow-trigger.png)
+    ![Name your flow and select a trigger.](./media/approval-attachments/name-flow-trigger.png)
 
 1. Select the **Manually trigger a cloud flow** trigger > **Add an input** > **File**.
 
@@ -53,7 +54,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
    - **Assigned to** - The person to whom the request is sent.
    - **Details** - This text shows up in the approval request.
 
-     ![THe approval request card](./media/approval-attachments/approval-request-card.png)
+     ![THe approval request card.](./media/approval-attachments/approval-request-card.png)
 
 1. Select **Show advanced options** to reveal the fields in which you'll provide information about the file attached to the request.
 1. Provide a file name in **Attachments Name - 1**
@@ -65,7 +66,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
    An easy way to do this is to use the **File Content** item from the list of dynamic content that's displayed when you select the **Attachments Content - 1** box.
 
-     ![Advanced options on approval request card](./media/approval-attachments/approval-request-card-advanced-options.png)
+     ![Advanced options on approval request card.](./media/approval-attachments/approval-request-card-advanced-options.png)
 
 1. Select **Save** to save your flow.
 
@@ -76,19 +77,19 @@ You can test your flow by selecting **Test** and then uploading an .xlsx file.
 1. Select **Test**.
 1. Select **I'll perform the trigger action**.
 
-     ![Test your flow](./media/approval-attachments/test-flow.png)
+     ![Test your flow.](./media/approval-attachments/test-flow.png)
 
 1. Select **Test** > **Continue** to start the test.
 1. Select **Import**.
 
-     ![Select the import button](./media/approval-attachments/import-file.png)
+     ![Select the import button.](./media/approval-attachments/import-file.png)
 1. Find the file, select it, and then select **Open** to upload the file or image you're sending for approval.
 
 1. Select **Run flow**.
 
    You'll see that the test run starts.
 
-     ![The test starts](./media/approval-attachments/test-started.png)
+     ![The test starts.](./media/approval-attachments/test-started.png)
 
 1. Select **Flow Runs Page** to monitor the status of the test.
 
@@ -96,7 +97,7 @@ You can test your flow by selecting **Test** and then uploading an .xlsx file.
 
 The person to whom you send the approval request receives an email, similar to this image, where they can view the attachment and then **Approve** or **Reject** the request:
 
-![View the request email](./media/approval-attachments/approval-request-mail.png)
+![View the request email.](./media/approval-attachments/approval-request-mail.png)
 
 >[!TIP]
 >Approvers can review requests in the approvals center as well.

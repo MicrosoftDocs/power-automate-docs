@@ -3,6 +3,7 @@ title: Defining inputs and outputs as you plan a Power Automate project | Micros
 description: This article explains how you can define inputs and outputs for a Power Automate project, and how to secure sensitive data.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -49,13 +50,13 @@ If you're handling sensitive data such as sign-in IDs, passwords, and banking
 information, you can use the secure inputs and outputs feature in
 Power Automate.
 
-![Secure inputs and secure outputs settings](media/secure-input-output.png "Secure inputs and secure outputs settings")
+![Secure inputs and secure outputs settings.](media/secure-input-output.png "Secure inputs and secure outputs settings")
 
 By default in Power Automate, you can see inputs and outputs in the run history for a flow. When you enable secure inputs and outputs, you can
 protect this data when someone tries to look into the inputs and outputs and instead display the message "Content not shown due to security
 configuration."
 
-![Sample run history with secure inputs and outputs enabled](media/sample-run-history.png "Sample run history with secure inputs and outputs enabled")
+![Sample run history with secure inputs and outputs enabled.](media/sample-run-history.png "Sample run history with secure inputs and outputs enabled")
 
 > [!div class="nextstepaction"]
 > [Next step: Handling sensitive text](../../desktop-flows/run-desktop-flow.md#use-sensitive-text-inputs)

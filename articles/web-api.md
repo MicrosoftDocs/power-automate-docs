@@ -4,6 +4,7 @@ description: Flows are now stored in Dataverse and use the rich Web API.
 author: msftman
 ms.reviewer: deonhe
 ms.date: 07/28/2020
+ms.subservice: cloud-flow
 ms.topic: article
 ms.prod: 
 ms.service: power-automate
@@ -31,11 +32,11 @@ To get these two parameters.
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select the environment you use to build your flows.
 
- ![Flow URL](media/web-api/power-platform-admin-center.png "Flow URL")
+ ![Flow URL.](media/web-api/power-platform-admin-center.png "Flow URL")
 
 3. Copy the organization id and region subdomain from the environment URL.
 
- ![Flow URL](media/web-api/power-platform-admin-center-environment-URL.png "Flow URL")
+ ![Flow URL.](media/web-api/power-platform-admin-center-environment-URL.png "Flow URL")
 
 
 You can also programmatically get the list of instances that are available to you via the [Get Instances](/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.

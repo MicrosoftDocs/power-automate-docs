@@ -35,8 +35,8 @@ The Microsoft Dataverse connector provides four ways to add wait conditions. Use
 - [Delay an action](https://docs.microsoft.com/power-automate/ui-flows/edit-desktop#add-a-delay)
     until a specific timestamp.
 
-    ![Delay actions](../media/wait-conditions/dff6f3bc845cae8be3c69632d6857767.png "Delay actions")
+    ![Delay actions.](../media/wait-conditions/dff6f3bc845cae8be3c69632d6857767.png "Delay actions")
 
 - Delay an action until a specific event occurs. You can use a trigger from the Microsoft Dataverse connector or any other connector as a step in the middle of the flow to delay subsequent steps until a specific event occurs. For example, you can define a flow that’s similar to the one in the following image to check for updates to **Account** rows in Dataverse, and then waits for an email confirmation from the **Account** manager before updating the change.
 
-    ![Flow to update rows](../media/wait-conditions/delay-actions-flow.png "Flow to update rows")
+    ![Flow to update rows.](../media/wait-conditions/delay-actions-flow.png "Flow to update rows")

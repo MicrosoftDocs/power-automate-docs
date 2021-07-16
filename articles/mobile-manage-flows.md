@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -32,13 +33,13 @@ View a list of all flows that you created and, for each flow, view its events an
 
 The flow in this tutorial runs when you receive mail from a specific address:
 
-![Trigger flow on receipt of mail from specific address](./media/mobile-manage-flows/create-trigger.png)
+![Trigger flow on receipt of mail from specific address.](./media/mobile-manage-flows/create-trigger.png)
 
 You could configure such a cloud flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
 When the flow runs, it sends a custom push notification, with this syntax, to your phone:
 
-![Send message to Slack](./media/mobile-manage-flows/create-event.png)
+![Send message to Slack.](./media/mobile-manage-flows/create-event.png)
 
 **Note**: You can also [monitor flow activity](mobile-monitor-activity.md) from the mobile app.
 
@@ -47,20 +48,20 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
    
     Each entry shows the name of the flow, icons for its events and actions, the time when it ran most recently, and an icon that indicates whether the most recent run succeeded.
    
-    ![List of flows](./media/mobile-manage-flows/flow-list.png)
+    ![List of flows.](./media/mobile-manage-flows/flow-list.png)
 2. Tap a cloud flow to show options for managing it.
    
-    ![Options to manage a cloud flow](./media/mobile-manage-flows/flow-details.png)
+    ![Options to manage a cloud flow.](./media/mobile-manage-flows/flow-details.png)
 3. Tap the **Enable flow** toggle to enable or disable the flow.
 4. Tap **See flow** to show the events and actions for that flow, tap each event or an action to expand it, and then tap **Back**.
    
-    ![Events and actions for a cloud flow](./media/mobile-manage-flows/flow-event-action.png)
+    ![Events and actions for a cloud flow.](./media/mobile-manage-flows/flow-event-action.png)
 5. Tap **Run history** to show the flow's successes, failures, or both.
    
-    ![List of runs](./media/mobile-manage-flows/history-mixed.png)
+    ![List of runs.](./media/mobile-manage-flows/history-mixed.png)
 6. Tap a run to show whether each event and action succeeded and, if so, how much time (in seconds) it took.
    
-    ![Run details](./media/mobile-manage-flows/flow-run.png)
+    ![Run details.](./media/mobile-manage-flows/flow-run.png)
 
 
 

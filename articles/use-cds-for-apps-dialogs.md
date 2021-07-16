@@ -4,6 +4,7 @@ description: "Dialogs are the synchronous or interactive processes that collect 
 ms.custom: ""
 ms.date: 10/31/2017
 ms.reviewer: ""
+ms.subservice: cloud-flow
 ms.topic: "article"
 ms.service: power-automate
 ms.assetid: d17f8ae2-854b-4f67-a115-5a03d4f0b8ce

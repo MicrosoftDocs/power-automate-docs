@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -34,7 +35,7 @@ Follow these steps to install the Power Automate app in Microsoft Teams.
 
 1. Select the **Power Automate** app. You might need to search for **Power Automate** if you don't see it.
 
-    ![Select Power Automate app](media/flows-teams/select-flow-app.png)
+    ![Select Power Automate app.](media/flows-teams/select-flow-app.png)
 
 1. Select **Add**.
 
@@ -83,9 +84,9 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 
 1. Select the create **Create** tab, and then select the **Approvals** category to find an approval template to create your approval flow in Teams. 
 
-    ![Create approvals tab](media/flows-teams/approvals-tab.png)
+    ![Create approvals tab.](media/flows-teams/approvals-tab.png)
 
-    ![Approvals templates menu](media/flows-teams/approvals-tab-2.png)
+    ![Approvals templates menu.](media/flows-teams/approvals-tab-2.png)
 
 ## Use the bot with flows
 
@@ -97,7 +98,7 @@ You can manage [approvals](modern-approvals.md) in Microsoft Teams, just like yo
 1. Sign in to Microsoft Teams.
 
 1. Select the **More added apps** link (...) on the navigation bar and then select the **Power Automate** app.
-    ![Select app screen](media/flows-teams/select-app.png)
+    ![Select app screen.](media/flows-teams/select-app.png)
 
 1. Select the **Chat** tab.
 

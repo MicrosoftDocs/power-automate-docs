@@ -6,6 +6,7 @@ suite: flow
 author: msftman
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 05/17/2021
 ms.author: deonhe

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -42,29 +43,29 @@ The Power Automate designer is a rich tool in which you can configure every deta
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **Templates** from the left side panel.
 
-     ![Select templates from the left panel](./media/visio-flows/templates-from-left-panel.png)
+     ![Select templates from the left panel.](./media/visio-flows/templates-from-left-panel.png)
 
 1. Select **Visio** from the list.
 
-     ![Filter to Visio templates](./media/visio-flows/select-visio.png) 
+     ![Filter to Visio templates.](./media/visio-flows/select-visio.png) 
 
 1. Select the **Basic Flow BPMN Diagram** template from the list of **Visio** templates that displays.
 
-     ![Select a Visio Template](./media/visio-flows/visio-templates.png) 
+     ![Select a Visio Template.](./media/visio-flows/visio-templates.png) 
 
      >[!IMPORTANT]
      >Visio warns you that files from the Internet could harm your device. If you are comfortable, select **YES** on the warning message.
 
-     ![Note warning about files from the Internet](./media/visio-flows/visio-warning.png)
+     ![Note warning about files from the Internet.](./media/visio-flows/visio-warning.png)
 
 1. The Visio designer launches.
 
-     ![View of the Visio designer](./media/visio-flows/visio-designer.png)
+     ![View of the Visio designer.](./media/visio-flows/visio-designer.png)
 
 
 1. Use the BPMN basic shapes to [design your workflow](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a).
 
-   ![BPMN basic shapes](./media/visio-flows/bpmn-basic-shapes.png)
+   ![BPMN basic shapes.](./media/visio-flows/bpmn-basic-shapes.png)
 
 ## Prepare to export your workflow to Power Automate
 
@@ -73,11 +74,11 @@ Follow these steps to prepare your workflow so that you can export it to Power A
 1. Select the **Process** tab.
 1. Select **Prepare to Export** from the **Power Automate** group of icons.
 
-   ![Select the prepare to export icon](./media/visio-flows/prepare-export-icon.png)
+   ![Select the prepare to export icon.](./media/visio-flows/prepare-export-icon.png)
    
    The **Prepare to Export** group opens.
 
-   ![Prepare export group](./media/visio-flows/prepare-export-group.png)
+   ![Prepare export group.](./media/visio-flows/prepare-export-group.png)
 
 1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate controls. 
 
@@ -85,17 +86,17 @@ Follow these steps to prepare your workflow so that you can export it to Power A
 
 Your workflow is ready to be exported when there are no issues remaining on the **Prepare to Export** control.
 
-![No issues](./media/visio-flows/prepare-export-no-issues.png) 
+![No issues.](./media/visio-flows/prepare-export-no-issues.png) 
 
 ## Export your workflow
 1. Select the **Export to Flow** button to export your workflow diagram to Power Automate.
 1. Name your flow and then select the **Create flow** button.
    
-   ![Create the flow](./media/visio-flows/export-create-flow.png)
+   ![Create the flow.](./media/visio-flows/export-create-flow.png)
 
 1. You should see a success report similar to this one.
 
-    ![Success](./media/visio-flows/export-create-flow-success.png)
+    ![Success.](./media/visio-flows/export-create-flow-success.png)
 
 You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 

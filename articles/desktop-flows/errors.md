@@ -3,6 +3,7 @@ title: Errors | Microsoft Docs
 description: Errors
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz
@@ -52,6 +53,6 @@ To find more information about a thrown exception, navigate to the **Errors** pa
 2. **Error message**: The error message.
 3. **Error details**: A long description of the error. These details give a clear message about why the error happened and what the cause is.
 
-![The Error details dialog box](media\error-detail-view\error-details.png)
+![The Error details dialog box.](media\error-detail-view\error-details.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

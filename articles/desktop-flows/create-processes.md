@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -70,7 +71,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
     also visit the [pricing page](https://flow.microsoft.com/pricing/) to learn
     more about this license or to get a trial license.
 
-      ![License error](../media/create-processes/license-error.png)
+      ![License error.](../media/create-processes/license-error.png)
 
       >[!IMPORTANT]
       > You will need your tenant administrator to grant consent to use
@@ -78,7 +79,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
     your admin needs to install WinAutomation, sign in with their tenant
     administrator account, and then grant consent.
 
-      ![Request for permissions](../media/create-processes/request-permissions.png)
+      ![Request for permissions.](../media/create-processes/request-permissions.png)
 
 1.  When you are asked to create a Master key during sign in, create one.
 
@@ -99,15 +100,15 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  Create a new desktop flow. Delete the default first step of “Record app”.
 
-      ![Delete record app step](../media/create-processes/delete-record-step.png)
+      ![Delete record app step.](../media/create-processes/delete-record-step.png)
 
 1.  Select **New step**, select **WinAutomation**, and then select the **Run WinAutomation ** action.
 
-      ![Select run WinAutomation](../media/create-processes/select-run-winautomation.png)
+      ![Select run WinAutomation.](../media/create-processes/select-run-winautomation.png)
 
 1.  In the **Run WinAutomation** card, fill in the Process Path and any optional command line arguments for the WinAutomation Process that you want to run.
 
-      ![WinAutomation card](../media/create-processes/winautomation-card.png)
+      ![WinAutomation card.](../media/create-processes/winautomation-card.png)
 
    >[!NOTE]
    >You must create and store WinAutomation Processes locally. *Process Path* is a case-sensitive path in the WinAutomation Console for the Process, from a base directory of My Processes in the Folders Pane on the left side. If you have put the Process in a subfolder, you will need to include that information in the ProcessPath. Don’t put quotes around the Process Path.
@@ -139,7 +140,7 @@ You can now create your own WinAutomation Processes and test them locally.
 
 1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-process-properties).
 
-    ![Process properties screen](../media/create-processes/process-properties.png)
+    ![Process properties screen.](../media/create-processes/process-properties.png)
 
 Currently you have to use certain WinAutomation steps to write results and outputs from the process into a file in the cloud share or email the results out. Then you can use connectors from Power Automate to access and use those
 results.
@@ -148,11 +149,11 @@ results.
 
 Log in to [Power Automate](https://flow.microsoft.com/) then select the **Desktop flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
 
-![Start a trial or buy a license](../media/create-processes/trial-buy.png)
+![Start a trial or buy a license.](../media/create-processes/trial-buy.png)
 
 If you already have a paid plan or you used a trial previously, you cannot start a new trial. In this case, you will need to ask your administrator to buy or start a trial of the Power Automate *Per user plan with attended RPA*. They can make the purchase by going to **Billing** \> **Purchase services** in the Microsoft 365 admin center, and then searching for the right plan.
 
-![Per user plan with attended RPA](../media/create-processes/per-user-rpa.png)
+![Per user plan with attended RPA.](../media/create-processes/per-user-rpa.png)
 
 Finally, once they have purchased a plan or gotten the free trial, they need to
 assign that plan to a user.

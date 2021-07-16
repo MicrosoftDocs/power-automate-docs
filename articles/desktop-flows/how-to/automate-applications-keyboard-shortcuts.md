@@ -3,6 +3,7 @@ title: Automate applications using keyboard shortcuts | Microsoft Docs
 description: Automate applications using keyboard shortcuts
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/09/2021
 ms.author: getrantz

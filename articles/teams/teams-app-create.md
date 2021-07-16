@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -30,7 +31,7 @@ To use the Power Automate app, you need an account with access to [Microsoft Tea
 >[!NOTE]
 >By default, the Power Automate app shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates, if desired.
  
-![Create tab filter](../media/power-automate-teams-app-create/create-filter.png)
+![Create tab filter.](../media/power-automate-teams-app-create/create-filter.png)
 
 Follow these steps to create a cloud flow from a Microsoft Teams template:
 
@@ -42,14 +43,14 @@ Follow these steps to create a cloud flow from a Microsoft Teams template:
 1. Select **Apps** on the right side on the screen.
 1. Search for, and then select the **Power Automate** app.
 
-   ![A screenshot that shows a search for the Power Automate app](../media/power-automate-teams-app-create/search-app.png)
+   ![A screenshot that shows a search for the Power Automate app.](../media/power-automate-teams-app-create/search-app.png)
 
 1. Select the **Create** tab, and then select the template on which you'd like to base your flow.
 
-   ![Create tab](../media/power-automate-teams-app-create/create-tab.png)
+   ![Create tab.](../media/power-automate-teams-app-create/create-tab.png)
 
 1. If the template that you selected is optimized for Microsoft Teams, a dialog that lets you rename the flow and authenticate with the apps necessary for the flow displays.
-   ![Setup connections](../media/power-automate-teams-app-create/template1.png)
+   ![Setup connections.](../media/power-automate-teams-app-create/template1.png)
 
    >[!NOTE]
    >You must login to all connectors so that your flow can run successfully. A green check indicates that you've authenticated.
@@ -58,15 +59,15 @@ Follow these steps to create a cloud flow from a Microsoft Teams template:
 
 1. Select **Continue** to get a list of parameters that are necessary for the flow to run successfully. Provide the parameters that are needed.
    
-   ![Setup parameters](../media/power-automate-teams-app-create/template2.png)
+   ![Setup parameters.](../media/power-automate-teams-app-create/template2.png)
 
    If you wish to see the full flow, select **Edit in advanced mode**.
    
-   ![Advanced mode](../media/power-automate-teams-app-create/template-advanced.png)
+   ![Advanced mode.](../media/power-automate-teams-app-create/template-advanced.png)
 
 1. You're all set! You will get a confirmation screen showing that your flow was successfully created. After you create your flow, you can find it on the **Home** tab.
 
-   ![Confirmation screen](../media/power-automate-teams-app-create/template3.png)
+   ![Confirmation screen.](../media/power-automate-teams-app-create/template3.png)
 
 >[!IMPORTANT]
 >When you create flows from within the Power Automate app in Microsoft Teams, they are always created in your organization's default environment. You can also access these flows from [Power Automate](https://flow.microsoft.com).
@@ -75,11 +76,11 @@ Follow these steps to create a cloud flow from a Microsoft Teams template:
 
 If you want full control over the flow that you create, select **Create from blank** from the top right side of the screen, instead of using a template.
 
-   ![Create from blank](../media/power-automate-teams-app-create/create-blank.png)
+   ![Create from blank.](../media/power-automate-teams-app-create/create-blank.png)
 
 This brings up the full Power Automate designer experience within Microsoft Teams where you can [create a fully customized flow](../get-started-logic-flow.md).
 
-   ![Create from blank](../media/power-automate-teams-app-create/full-editor.png)
+   ![Create from blank.](../media/power-automate-teams-app-create/full-editor.png)
 
 
 ## Known issues
