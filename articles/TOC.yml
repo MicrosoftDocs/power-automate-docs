@@ -473,6 +473,8 @@
         href: ./desktop-flows/how-to/populate-text-fields-click-links-javascript.md
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Set screen resolution on unattended flows
+      href: ./desktop-flows/how-to/set-screen-resolution-unattended-flows.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
     - name: Convert a file to Base64 string format
