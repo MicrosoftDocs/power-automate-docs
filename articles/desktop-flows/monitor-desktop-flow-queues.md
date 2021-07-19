@@ -25,7 +25,7 @@ search.audienceType:
 
 # Monitor desktop flow queues 
 
-As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor and manage all your queued desktop flow runs in just one location.
+As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
 
 ## Setting a priority
 
@@ -87,11 +87,14 @@ If you have permission to access the parent flow, you can use this action to vie
 ## Cancel parent flow run
 If you are the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow as well as all the other action that were used in the parent flow.
 
-## Using a gateway queue across multiple environments
+## Viewing the run queue for a gateway
 It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other.
-A message will be shown to indicate if the gateway is being used in another environment.
+A message will be shown to indicate if the gateway is being used in another environment. 1.	Users can view the desktop flow queues for their gateways in the Machines page, under the Gateways pivot. The gateways pivot is only available if you own or have access to a gateway. Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
+
+> [!NOTE]
+> Everyone accessing their Desktop flow queues through the **Monitor pivot**, should now navigate under **Machines page > Gateways pivot** to access them.
 
 ## Known issues
-- The gateway status of an offline gateway may still appear as available
+- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still view the desktop flow queue for your gateways by visiting the Desktop flow queues page under the Monitor section in the left navigation.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
