@@ -28,7 +28,7 @@ search.audienceType:
 As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
 
 > [!NOTE]
-> Everyone accessing their Desktop flow queues through the **Monitor pivot**, should now navigate under **Machines page > Gateways pivot** to access them.
+> Everyone accessing the run queues for their gateways from the **Desktop flow queues** page should now navigate to the **Gateways** pivot in the **Machines** page to access them.
 
 ## Setting a priority
 
