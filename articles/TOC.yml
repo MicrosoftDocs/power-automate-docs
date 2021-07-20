@@ -409,10 +409,12 @@
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
     items:
-    - name: Check if a variable is numeric
-      href: ./desktop-flows/how-to/check-if-variable-numeric.md 
-    - name: Delete a row/column from a datatable
-      href: ./desktop-flows/how-to/delete-row-column-datatable.md 
+    - name: Handle and manipulate variables
+      items:
+      - name: Check if a variable is numeric
+        href: ./desktop-flows/how-to/check-if-variable-numeric.md 
+      - name: Delete a row/column from a datatable
+        href: ./desktop-flows/how-to/delete-row-column-datatable.md 
     - name: Handle email messages in desktop flows
       items:
       - name: Add images to email messages
