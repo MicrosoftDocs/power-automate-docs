@@ -49,7 +49,7 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Ensure that you are signed into the machine you want to set up. 
 
-1. Ensure you have the [latest version](install#install-power-automate-desktop) of Power Automate Desktop installed. 
+1. Ensure you have the [latest version](install.md#install-power-automate-desktop) of Power Automate Desktop installed. 
 
 1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
 
@@ -228,6 +228,4 @@ Environment admins can also restrict machine registration to a specific set of u
 
 ## Other known limitations 
 
-- Creating a connection to the machine is not currently available in the Connections page. 
-
-- Editing a desktop flows connection in Power Apps will show the machine GUID. To retrieve the machine GUID, visit the Details page for the machine and copy the second GUID from the address bar.
+- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.
