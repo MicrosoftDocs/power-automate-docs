@@ -71,7 +71,7 @@ Four actions are available when clicking on the three dots next to the desktop f
 
 ## Change priority
 
-You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner or if you are a co-owner on the machine or machine group, or admin on the gateway.
+You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner, or if you are a co-owner on the machine/machine group or admin on the gateway.
 
 Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](#setting-a-priority), you need to change the priority in the connector action.
 
@@ -99,7 +99,9 @@ Users can view the desktop flow queues for their gateways under the **Machines p
 
 ## Using gateways with multiple environments
 
-It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
+It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. 
+
+With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
 
 ## Known issues
 - Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still view the desktop flow queue for your gateways by visiting the Desktop flow queues page under the Monitor section in the left navigation.
