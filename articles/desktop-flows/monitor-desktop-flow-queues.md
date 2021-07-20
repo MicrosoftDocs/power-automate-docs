@@ -88,7 +88,6 @@ If you have permission to access the parent flow, you can use this action to vie
 If you are the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow as well as all the other action that were used in the parent flow.
 
 ## View list of run queues for gateways
-
 1. Sign into Power Automate
 1. Select **Monitor** > **Desktop flow queues**
 
