@@ -54,7 +54,8 @@ In order to see runs in this list, one of the following must be true:
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
-> To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources.
+> To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
+
 
 ## Queue Status
 A run in a queue can have the following status:
@@ -88,14 +89,12 @@ If you have permission to access the parent flow, you can use this action to vie
 If you are the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow as well as all the other action that were used in the parent flow.
 
 ## View list of run queues for gateways
-1. Sign into Power Automate
-1. Select **Monitor** > **Desktop flow queues**
+
+Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
 
   ![List of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
 
 From this page you can view all the gateways to which you have access. Each gateway will have its own run queue when used to run desktop flows.
-
-Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
 
 ## Using gateways with multiple environments
 
