@@ -1,12 +1,12 @@
 ## What is an environment:
-An environment is a virtual space used to store, manage and share apps, flows, and business data in Common Data Service. Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
+An environment is a virtual space used to store, manage and share apps, flows, and business data in Microsoft Dataverse. Environments are geolocated so all apps and data stored within an environment's database are geolocated as well.  
 
 ## Terms you should get familiar with
 
 | **Term** | **Description** |
 | --- | --- |
 | **Admin center** |The admin center is a [Web portal](https://admin.powerplatform.microsoft.com/) for managing all your environments and data loss prevention policies. |
-| **Common Data Service** |Common Data Service allows you to add data storage and modeling capabilities to your apps. |
+| **Microsoft Dataverse** |Microsoft Dataverse allows you to add data storage and modeling capabilities to your apps. |
 | **Environment roles** |The two environment roles are Environment Admin and Environment Maker. |
 | **User roles** |The two default user roles are Organization User and Database Owner. You can add roles, and associate permissions with those roles. |
 

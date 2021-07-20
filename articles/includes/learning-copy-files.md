@@ -4,7 +4,7 @@ Today, it's very common to use a **file storage service**, such as **OneDrive** 
 
 You can **use a template**, like in the video above, or you can create a cloud flow **from scratch**.  Different services have different details and parameters in their **actions**.  In the video, we showed you copying a file from **OneDrive** to **OneDrive for Business**.  Here's another example we created from scratch to copy from **OneDrive to DropBox**.
 
-![OneDrive to DropBox](./media/learning-copy-files/onedrive-to-dropbox.png).
+![OneDrive to DropBox.](./media/learning-copy-files/onedrive-to-dropbox.png).
 
 ## Next steps
 

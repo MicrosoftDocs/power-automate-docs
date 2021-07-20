@@ -10,27 +10,28 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2020
+ms.date: 06/17/2021
 ms.author: hamenon
 ---
 
-# Trigger a cloud flow from any message in Power BI
+# Trigger a cloud flow from any Power BI report
 
 Empower your end-users to go from insight to action. With the Power Automate visual, end-users can run an automated flow all within a Power BI report. Furthermore, the executed flow can be data contextual, meaning that the inputs to the flow can be dynamic, based on the filters that the user sets. This article describes how to add visual into a Power BI report that lets you manually trigger a flow directly from the Power BI report
 
-![Power Automate Visual in Power BI on the main screen](media/power-bi-flow/power-bi-main.png)
+![Power Automate Visual in Power BI on the main screen.](media/power-bi-flow/power-bi-main.png)
 
 ## Add Power Automate visual to a Power BI report
 To get started, [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and then import it to your Power BI report. After it's imported, you’ll see the Power Automate icon in the **Visualization** pane. When you select this new visual, it's automatically added to your current report page.
 
-![Power Automate visual instructions](media/power-bi-flow/powerbi-default-state.png)
+![Power Automate visual instructions.](media/power-bi-flow/powerbi-default-state.png)
 
 The initial state of the widget shows you the getting started instructions for using flows in Power BI. Once you’ve reviewed the instructions, you can resize the button and place it where you’d like it on the report.
 
-![Power Automate Visual in Power BI](media/power-bi-flow/power-bi-report.png)
+![Power Automate Visual in Power BI.](media/power-bi-flow/power-bi-report.png)
 
 ## Using the Power Automate visual in Power BI
 
@@ -42,7 +43,7 @@ Follow these steps to trigger a flow from within a Power BI report.
 
    These fields can be used at flow design time as well to specify how you want to use the Power BI data.
 
-   ![Add data to the Power Automate visual](media/power-bi-flow/Powerbi-add-data.png)
+   ![Add data to the Power Automate visual.](media/power-bi-flow/Powerbi-add-data.png)
 
 ### Add an existing cloud flow to the Power BI report
 
@@ -52,7 +53,7 @@ Follow these steps to trigger a flow from within a Power BI report.
 
    Your existing cloud flow is now added to the Power BI report. 
 
-   ![Power Automate visual More options](media/power-bi-flow/power-bi-more-options.png)
+   ![Power Automate visual More options.](media/power-bi-flow/power-bi-more-options.png)
 
 ### Create a new flow
 
@@ -60,7 +61,7 @@ To create a flow, use **Instant from blank** or start with one of the built-in t
 
 When you select the **Instant from blank** option, Power Automate automatically adds the Power BI button clicked trigger.
 
-![Power BI trigger](media/power-bi-flow/power-bi-trigger.png)
+![Power BI trigger.](media/power-bi-flow/power-bi-trigger.png)
 
 ### Apply the flow to the Power BI report
 
@@ -68,18 +69,18 @@ When you select the **Instant from blank** option, Power Automate automatically 
 
 1. **Save**, and then select the back arrow to take you back to the details page. 
 
-   ![Create a flow](media/power-bi-flow/power-bi-create-flow.png)
+   ![Create a flow.](media/power-bi-flow/power-bi-create-flow.png)
 
-1. Hit the **Apply** button to attach the flow to your Power BI report button.
+1. Select the **Apply** button to attach the flow to your Power BI report button.
 
-   ![Apply flow](media/power-bi-flow/power-bi-apply.png)
+   ![Apply flow.](media/power-bi-flow/power-bi-apply.png)
 
-Once you have applied a flow to the button, you should testing the flow before you share the it. 
+Once you have applied a flow to the button, you should test the flow before you share it. 
 
 >[!IMPORTANT]
 >You can only run these Power BI flows in the context of a Power BI report. You cannot run these flows in Power Automate or elsewhere. 
 
-If your flow is data contextual, test how the filters selections in the report impact the outcome of the flow. To test the flow in edit mode of the report, select Back to report, and then hit Ctrl + click on the button to run the Flow in the context of the report.
+If your flow is data contextual, test how the filters selections in the report impact the outcome of the flow. To test the flow in edit mode of the report, select Back to report, and then press Ctrl + click on the button to run the Flow in the context of the report.
 
 You can navigate to the edit mode or to Power Automate to view the run history of the flow to ensure its running successfully.
 
@@ -87,15 +88,16 @@ You can navigate to the edit mode or to Power Automate to view the run history o
 
 In order for other viewers of your Power BI report to run the flow, you must explicitly share the flow with those users/Azure Active Directory groups. You can do so from the details page of your flow.
 
-![Edit run only permissions](media/power-bi-flow/powerbI-run-only1.png)
+![Edit run only permissions.](media/power-bi-flow/powerbI-run-only1.png)
 
 To share, select edit next to the **Run only users** tile and then specify the users or groups that you want to have access.
 
-![Add run only users ](media/power-bi-flow/powerbi-run-only2.png)
+![Add run only users .](media/power-bi-flow/powerbi-run-only2.png)
 
 ### Format the button on the Power BI report
 Optionally, if you want to change the button text, font color, font size, or fill color of the button, you can find these options along with other settings in the **Format** pane. 
 
+![Screenshot of Format pane in Power BI.](media/power-bi-flow/power-bi-flow-format.png)
 
 ## Known limitations 
 

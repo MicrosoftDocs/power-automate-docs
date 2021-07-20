@@ -3,6 +3,7 @@ title: Formalizing messages and alerts in a Power Automate project | Microsoft D
 description: When sending email notifications and Microsoft Teams messages, you might not want to send them as yourself but you still might want people to be able to reach you.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -30,7 +31,7 @@ though you'll need to bring your own mailbox. This advice also applies to
 updating tickets, creating records, and so on, but the specifics will vary by
 connector.
 
-![Send an email from a shared mailbox](media/shared-mailbox.png "Send an email from a shared mailbox")
+![Send an email from a shared mailbox.](media/shared-mailbox.png "Send an email from a shared mailbox")
 
 ## Add a signature
 

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -57,7 +58,7 @@ The Approval action attaches files to a notification email until the size of the
 
 **How to increase email attachment size limit for Power Automate?**
 
-A Common Data Service<!--note from editor: Is this mention of CDS okay, or should it be Microsoft Dataverse?--> administrator can change the limit by going into **Common Data Service** >  **Email Configuration** settings, and then setting the file size limit for attachments.
+A Microsoft Dataverse administrator can change the limit by going into **Microsoft Dataverse** >  **Email Configuration** settings, and then setting the file size limit for attachments.
 
 **Power Automate stopped working - "Item ID doesn't belong to current mailbox" error Power Automate when using actions with shared mailbox.**
 

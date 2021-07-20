@@ -1,11 +1,11 @@
 1. Select **New step**, and then select **Condition** in the list of actions.
-1. On the **Condition** card, select the **Choose a value** field on the left.
+1. On the **Condition** card, select **Choose a value** on the left.
 
    A list of dynamic values display.
    
 1. Select **Responses Approver response** from the list of dynamic values.
   
-    ![select response token](media/modern-approvals/search-for-response.png)
+    ![select response token.](media/modern-approvals/search-for-response.png)
 1. Select the **Choose a value** box on the right, and then enter **Approve** into the box.
 
    > [!NOTE]
@@ -13,4 +13,4 @@
 
 1. Your **Condition** card should now show:
 
-    ![View of the condition card](media/modern-approvals/response-condition-test.png "View of the condition card")
+    ![View of the condition card.](media/modern-approvals/response-condition-test.png "View of the condition card")

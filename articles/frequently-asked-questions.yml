@@ -11,6 +11,7 @@ metadata:
   tags: ''
   ms.service: power-automate
   ms.devlang: na
+  ms.subservice: cloud-flow
   ms.topic: article
   ms.tgt_pltfrm: na
   ms.workload: na
@@ -25,13 +26,11 @@ metadata:
 title: Frequently asked questions
 summary: |
 
+  ## Audience and strategy
+
 sections:
   - name: Ignored
     questions:
-      - question: |
-         Audience and strategy
-        answer: |
-
       - question: |
          What is Power Automate?
         answer: |
@@ -53,7 +52,7 @@ sections:
       - question: |
          How does Power Automate fit in Microsoft’s overall business application platform strategy?
         answer: |
-             Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Common Data Service, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Common Data Service make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
+             Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Microsoft Dataverse, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Microsoft Dataverse make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
       - question: |
          Functionality
@@ -126,7 +125,7 @@ sections:
       - question: |
          What data sources will I be able to connect to?
         answer: |
-             You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and Common Data Service.
+             You can connect to more than 100 standard services from Microsoft and third parties, such Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server, and more. You can also connect to premium services such as Salesforce and Microsoft Dataverse.
 
       - question: |
          How do I connect to a REST API in my flow?

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -61,19 +62,19 @@ Ok, let's get started.
    
      In this example, we're interested in any email that has the word "lottery" in the subject.
    
-    ![Advanced options](./media/email-triggers/email-triggers-subject-text.png)
+    ![Advanced options.](./media/email-triggers/email-triggers-subject-text.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
    
-    ![A screenshot that displays the details of a notification](./media/email-triggers/email-triggers-4.png)
+    ![A screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Select **Save** at the top of the page.
    
-    ![A screenshot that displays the save flow option](./media/email-triggers/email-triggers-subject-notification.png)
+    ![A screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png)
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
@@ -86,19 +87,19 @@ In this walkthrough, we create a cloud flow that sends a push notification to yo
    
      Your flow takes action on any emails that are sent from this address.
    
-    ![Email property](./media/email-triggers/email-triggers-from.png)
+    ![Email property.](./media/email-triggers/email-triggers-from.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
    
-    ![Mobile notification details](./media/email-triggers/email-triggers-sender-notification.png)
+    ![Mobile notification details.](./media/email-triggers/email-triggers-sender-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
    
-    ![Create flow](./media/email-triggers/email-triggers-sender-5.png)
+    ![Create flow.](./media/email-triggers/email-triggers-sender-5.png)
 
 ## Trigger a cloud flow when emails arrive in a specific folder
 
@@ -116,19 +117,19 @@ Let's get started.
 
 1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
 
-    ![Select folder](./media/email-triggers/email-triggers-2.png)
+    ![Select folder.](./media/email-triggers/email-triggers-2.png)
 
     [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
 
-    ![Notification details](./media/email-triggers/email-triggers-folder-notification.png)
+    ![Notification details.](./media/email-triggers/email-triggers-folder-notification.png)
 
     [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
    
-    ![A screenshot showing the option to save the cloud flow](./media/email-triggers/email-triggers-7.png)
+    ![A screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png)
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
 

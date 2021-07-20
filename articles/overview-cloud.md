@@ -5,11 +5,13 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
+ms.custom: intro-internal
 manager: kvivek
 editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

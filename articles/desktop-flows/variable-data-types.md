@@ -3,6 +3,7 @@ title: Variable data types | Microsoft Docs
 description: Variable data types
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz
@@ -68,10 +69,6 @@ Some of these data types are widely used throughout the application, such as **n
 
   [List data type properties](datatype-properties.md#lists)
 
-- **Datarow** - A data row contains the values of a single row of a datatable. 
-
-  [Datarow data type properties](datatype-properties.md#datarows) 
-
 - **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
   A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
@@ -84,7 +81,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
-  ![An example of a datatable variable.](media\data-tables\create-data-table-variable.png)
+  ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
 
   To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
@@ -97,9 +94,19 @@ Some of these data types are widely used throughout the application, such as **n
 
   If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
 
-  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a data row. 
+  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
   [Datatable data type properties](datatype-properties.md#datatables) 
+
+- **Datarow** - A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
+
+  To retrieve a specific item of a datarow, use the following notation: **%VariableName[ItemNumber]%**
+
+  Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the datarow.
+
+  [Datarow data type properties](datatype-properties.md#datarows)
+
+  ![An example of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 

@@ -10,10 +10,11 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2021
+ms.date: 06/07/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -209,8 +210,11 @@ Here are the limits for custom connectors that you can create from web APIs.
 
 | Name | Limit |  Notes |
 |------|-------|-------|
-| Number of custom connectors | 50 per user |  |
+| Number of custom connectors | 50 per user |Microsoft 365 users can run one flow with a custom connector.  |
 | Number of requests per minute for a custom connector | 500 requests per minute per connection |  |
+
+>[!NOTE]
+>To run any flow that has a custom connector, a premium license (or trial) is required.
 
 
 ## SharePoint limits

@@ -3,6 +3,7 @@ title: Active Directory | Microsoft Docs
 description: Active Directory Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -38,14 +39,36 @@ Connect to an Active Directory server and perform operations
 |[Connect to server](#connecttoserveraction)|
 |[Close connection](#closeconnection)|
 
+## Getting started with Active Directory actions
+
+Active Directory actions require a connection to an Active Directory server. Establish the connection by using the Connect to server action, which requires the LDAP path to specify the domain controllers. The LDAP Path field should specify the domain controllers and have the following format:  
+
+```
+LDAP://DC=contoso,DC=demo
+```
+
+When working with groups, objects or users, their location will be required. The Location field should specify the container as well as the domain controllers and have the following format:  
+
+```
+CN=Users,DC=contoso,DC=demo
+```
+
+After getting all the distinguished names using the **dsquery user** command, enter the distinguished name in the following format (nvarga being the username):  
+
+```
+CN=nvarga,CN=Users,DC=contoso,DC=demo
+```
+
+Note that if the container name contains a comma, the name should be contained within double quotes. e.g.: **CN=Varga, Norbert** should be formatted like so:  
+```
+CN="Varga, Norbert",DC=contoso,DC=com
+```
+
+## Active Directory actions
 
 ## Group
 Create, modify and get information about a group in an Active Directory server
 
->[!IMPORTANT]
->The Location field should specify the container as well as the domain controllers and have the following format:
->
->**CN=Users,DC=contoso,DC=demo**
 
 ### <a name="creategroup"></a> Create group
 Creates a group in the Active Directory
@@ -158,8 +181,9 @@ Modifies a group in the Active Directory
 |Active Directory error|General Active Directory error|
 
 ##### <a name="modifygroupaction_example"></a> Example
-In the following example, the Modify group action is used to add the user nvarga to the RPATest group.
-![Modify Group action example](media\activedirectory\modify-ad-group-properties-exercise.png)
+In the following example, the Modify group action is used to add the user nvarga to the RPATest group.  
+
+![Modify Group action example.](media\activedirectory\modify-ad-group-properties-exercise.png)
 
 ## Object
 Create or manipulate an object in an Active Directory server
@@ -269,18 +293,7 @@ Renames an object in the Active Directory
 ## User
 Create, modify and get information about a user in an Active Directory server
 
->[!IMPORTANT]
->All Active Directory user management actions require the user’s distinguished name. The Distinguished Name field should have the following format (nvarga being the username):
->
->**CN=nvarga,CN=Users,DC=contoso,DC=demo** 
->
->To list the distinguished names of all Active Directory users, run the following command:
->
->**dsquery user**
->
->If the container name contains a comma, the name should be contained within double quotes.
->
->e.g.: **CN=Varga, Norbert** should be formatted like so: **CN="Varga, Norbert",DC=contoso,DC=com**
+
 
 ### <a name="createuser"></a> Create user
 Creates a user in the Active Directory
@@ -314,11 +327,11 @@ Creates a user in the Active Directory
 |Couldn't set or update password|Indicates a problem setting or updating the user's password|
 |Active Directory error|General Active Directory error|
 
-##### <a name="createuser_example"></a> Example
+##### <a name="createuser_example"></a> Example  
 
 The following figure is an example of creating a user. The user's name is Norbert Varga and their username is nvarga. The user is created in the Users container, an the domain controllers contoso and demo are specified in the location as well.
   
-  ![Create User action example](media\activedirectory\create-ad-user-properties-exercise.png)
+  ![Create User action example.](media\activedirectory\create-ad-user-properties-exercise.png)
 
 ### <a name="getuserinfo"></a> Get user info
 Gets a user's information in the Active Directory
@@ -440,6 +453,7 @@ Updates a user's information in the Active Directory
 |Couldn't set or update password|Indicates a problem setting or updating the user's password|
 |Active Directory error|General Active Directory error|
 
+
 ### <a name="connecttoserveraction"></a> Connect to server
 Connects to an Active Directory server
 
@@ -468,10 +482,6 @@ Connects to an Active Directory server
 |Invalid operation|Indicates an invalid operation error|
 |Active Directory error|General Active Directory error|
 
->[!IMPORTANT]
->The LDAP path field should specify the domain controllers and have the following format:
->
->**LDAP://DC=contoso,DC=demo**
 
 
 ### <a name="closeconnection"></a> Close connection
@@ -488,7 +498,6 @@ Closes the connection with the Active Directory server
 
 ##### <a name="closeconnection_onerror"></a> Exceptions
 - This action doesn't include any exceptions
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

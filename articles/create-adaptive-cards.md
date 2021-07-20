@@ -1,6 +1,6 @@
 ---
 title: Create flows that post adaptive cards to Microsoft Teams | Microsoft Docs
-description: Learn to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
+description: Create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,10 +10,11 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/04/2020
+ms.date: 5/18/2021
 ms.author: deonhe
 ---
 
@@ -29,8 +30,7 @@ In either case you will need to sketch out which datasets you will share, and/or
 
 ## Prerequisites
 
-<!-- Is it still called Flow App? -->
-- Microsoft Teams with the Flow App installed.
+- Microsoft Teams with the Power Automate app installed.
 
 ## Add an action
 
@@ -38,7 +38,7 @@ In this procedure, you’ll add an action which will use the data from previous 
 
 1. Sign into Power Automate.
 1. Select **My flows** in the top navigation bar.
-1. Select **New** > **Instant from blank**.
+1. Select **New flow** > **Instant cloud flow**.
 1. Give your flow a name.
 1. Select **Manually trigger a flow** as the trigger.
 1. Select **Create**.
@@ -132,14 +132,14 @@ In this procedure, you’ll add an action which will use the data from previous 
     Header Tagline Text|Power Automate Poll
     Poll Header| Preferred Car Model
     | Poll Question   | Please vote on your preferred car model from the choices listed here. 
-    Replace the latin text with a reason, or business context, related to why you are conducting the poll.      |  We are polling our employees in order to determine if we should provide personalized parking places which are sized for the most popular cars. 
+    Replace the latin text with a reason, or business context, related to why you are conducting the poll.      |  We are polling our employees in order to determine if we should provide personalized parking places that are sized for the most popular cars. 
     | Choice 1 (replace in both places)  | Tesla   |
     | Choice 2 (replace in both places) | Lexus |
     | Choice 3 (replace in both places) | Honda |
 
 1. Select **New Step**, and then search for and select one of the **Send an email** actions to which you have access. 
 1. Provide the email recipient as the person who selected the instant button (use the **Email** tag from the dynamic content from the **trigger**).
-1. Configure the **Body** of the email as follows. Replace the words in swiggly parentheses "{}" with dynamic tokens:  
+1. Configure the **Body** of the email as follows. Replace the words in curly parentheses "{}" with dynamic tokens:  
     **Your poll response was {acPollChoices}** (acPollChoices is dynamic content from the wait for a response action).  **It was submitted by {User Name}** (User Name is dynamic content from the trigger)
 
 ## Test your adaptive card
@@ -158,13 +158,13 @@ To test your work, run the flow you created earlier and confirm the following:
 
 - Card replacement is relevant after submission if you have configured the **Update message** area at the bottom of the **wait for a response** actions (shown next with the corresponding replacement card). Otherwise, all submissions will simply reset the form.
 
-    ![Replacement card](./media/adaptive-cards/update-message-2.png)
+    ![Replacement card.](./media/adaptive-cards/update-message-2.png)
 
 - The email notification contains the body that shows who submitted the response and which car was selected.
 
 Congratulations! you’ve just made your first interactive adaptive card!
 
-![Finished first card](media/adaptive-cards/finished-first-card.png) 
+![Finished first card.](media/adaptive-cards/finished-first-card.png) 
 
 
 ## Troubleshooting tips for adaptive cards
@@ -177,7 +177,7 @@ The most common problems that you will encounter when creating adaptive cards ar
     
     In this case the error may resemble this screenshot:  
 
-    ![Error message](media/adaptive-cards/error-message.png)
+    ![Error message.](media/adaptive-cards/error-message.png)
 
     -  Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
 
@@ -189,21 +189,21 @@ The most common problems that you will encounter when creating adaptive cards ar
 
 - Adaptive Cards may not look like what’s expected during to styling and schema constraints:
 
-    - Check that placeholder values, text styles, and any markup language aligns with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
+    - Check that placeholder values, text styles, and any markup language align with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
 
     - Leverage the **Visual Studio Code** Adaptive Card validator. To install it from the Visual Studio  Code application, open the Extensions Marketplace, and search for  **Adaptive Card Viewer**.
 
-      ![Visual Studio Code extension](media/adaptive-cards/visual-studio-code-extension.png)
+      ![Visual Studio Code extension.](media/adaptive-cards/visual-studio-code-extension.png)
   
 Truncated screenshot of the Adaptive Card Viewer extension installed in Visual Studio Code (shortcut: Ctrl+V+A once enabled).
 
 - Errors following Adaptive Card submission are often due to:
 
-    - Using an action which does not include ‘wait for response’ in the name  
+    - Using an action, which does not include ‘wait for response’ in the name  
         
-        ![Try again](media/adaptive-cards/try-again.png)
+        ![Try again.](media/adaptive-cards/try-again.png)
 
-    - Attempting to submit the card more than once. Each Adaptive Card can only be submit once, after which all further submissions will be ignored.
+    - Attempting to submit the card more than once. Each Adaptive Card can be submitted only once, after which all further submissions will be ignored.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

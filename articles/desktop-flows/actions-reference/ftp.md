@@ -3,6 +3,7 @@ title: FTP | Microsoft Docs
 description: FTP Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -37,6 +38,23 @@ Manage files and folders on an FTP server
 |[Delete FTP directory](#deletedirectory)|
 |[Invoke FTP command](#invokecommand)|
 |[Synchronize directories](#synchronizedirectoryaction)|
+
+## Getting started with FTP actions
+
+Use the FTP action group to upload and download files and manipulate directories on FTP servers.
+
+To establish an FTP connection, use the **Open FTP connection** action. In the figure below, the host and port are specified, the user's credentials are entered and a timeout is set for the action to return an error if the connection fails.
+
+![screenshot of open ftp connection action properties.](media/ftp/open-ftp-connection-example.png)
+
+Download files using the **Download file(s) from FTP** action. The figure below shows the connection variable in use and the local folder which is the destination. The remote file has also been specified and set to overwrite existing any existing file in the same location.
+
+![screenshot of download files from ftp action properties.](media/ftp/download-files-ftp-example.png)
+
+Upload files by using the **Upload file(s) to FTP** action by specifying the file and the remote location.
+
+
+## FTP actions
 
 ### <a name="openconnection"></a> Open FTP connection
 This action establishes a specific connection to a remote FTP server, and stores that connection as a variable for later use.

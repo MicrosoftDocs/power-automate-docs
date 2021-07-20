@@ -24,7 +24,7 @@
     href: learning-catalog/learning-catalog-functional-consultant.md      
   - name: Partner presales roles
     href: learning-catalog/learning-catalog-sales.md
-- name: Process advisor (preview)
+- name: Process advisor
   items:
   - name: Overview    
     href: process-advisor-overview.md
@@ -35,6 +35,8 @@
     href: process-advisor-analyze.md
   - name: Visualize processes
     href: process-advisor-visualize.md
+  - name: Automation recommendation (preview)
+    href: process-advisor-automation.md 
   - name: Share processes
     href: process-advisor-share.md
   - name: Administration and security
@@ -44,6 +46,10 @@
       displayName: Security and privacy in process advisor
     - name: Protect your data
       href: process-advisor-protect.md
+      displayName: Protect your data in process advisor
+    - name: Export and import your process
+      href: process-advisor-export.md
+      displayName: Export and import your process in process advisor
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process advisor
@@ -250,7 +256,7 @@
       displayName: Use flows with Microsoft Dataverse
     # - name: Get started
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
-    - name: Trigger flows when a record changes
+    - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
     - name: Use a flow to add a row
       href: ./dataverse/create.md
@@ -276,6 +282,10 @@
       href: ./dataverse/change-set.md    
     - name: Upload or download image and file content
       href: ./dataverse/upload-download-file.md       
+    - name: Troubleshoot known issues with Dataverse
+      href: ./dataverse/known-issues.md
+    - name: Use Dataverse-based flows in Power Apps
+      href: ./dataverse/flows-power-apps.md      
     # - name: Troubleshoot known issues with Dataverse
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
@@ -316,8 +326,18 @@
   items: 
   - name: Introduction to Power Automate Desktop
     href: ./desktop-flows/introduction.md
-  - name: Set up Power Automate Desktop
-    href: ./desktop-flows/setup.md
+  - name: Setup Power Automate Desktop
+    items:
+    - name: Power Automate Desktop prerequisites & limitations 
+      href: ./desktop-flows/setup.md
+    - name: Install Power Automate Desktop
+      href: ./desktop-flows/install.md
+    - name: Governance in Power Automate Desktop
+      href: ./desktop-flows/governance.md     
+    - name: Troubleshooting Power Automate Desktop
+      href: ./desktop-flows/troubleshoot.md    
+  - name: Power Automate Desktop architecture
+    href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
   - name: Getting started with a Microsoft account
@@ -328,10 +348,18 @@
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
-  - name: Run a desktop flow
+  - name: Run desktop flows
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
+  - name: Manage machines and machine groups (preview)
+    items:
+    - name: Manage machines
+      href: ./desktop-flows/manage-machines.md
+    - name: Manage machine groups
+      href: ./desktop-flows/manage-machine-groups.md
+    - name: Silent registration for machines
+      href: ./desktop-flows/machines-silent-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -377,6 +405,64 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    - name: Build a custom selector
+      href: ./desktop-flows/build-custom-selectors.md
+  - name: How to
+    items:
+    - name: Handle email messages in desktop flows
+      items:
+      - name: Add images to email messages
+        href: ./desktop-flows/how-to/add-images-email-messages.md      
+      - name: Use a shared Outlook mailbox in email automations
+        href: ./desktop-flows/how-to/outlook-shared-mailbox.md
+    - name: Automate tasks in Excel
+      items: 
+      - name: Convert a CSV file into an Excel spreadsheet
+        href: ./desktop-flows/how-to/convert-csv-excel.md  
+      - name: Run macros on an Excel workbook
+        href: ./desktop-flows/how-to/run-macros-excel.md  
+      - name: Run SQL queries on Excel files
+        href: ./desktop-flows/how-to/sql-queries-excel.md 
+    - name: Use images, image recognition and OCR
+      items:
+      - name: Use image recognition on machines with different screen resolutions
+        href: ./desktop-flows/how-to/image-recognition-screen-resolution.md  
+      - name: Perform OCR on multilingual documents
+        href: ./desktop-flows/how-to/ocr-multilingual-documents.md  
+      - name: Print images
+        href: ./desktop-flows/how-to/print-images.md  
+    - name: Automate Windows and desktop applications
+      items:
+      - name: Identify a window by its handle
+        href: ./desktop-flows/how-to/identify-window-handle.md   
+      - name: Close any window through its process ID
+        href: ./desktop-flows/how-to/close-window-process-id.md 
+      - name: Extract attributes from window elements
+        href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
+      - name: Get the position and size of a window
+        href: ./desktop-flows/how-to/get-position-size-window.md 
+      - name: Automate applications using keyboard shortcuts
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
+      - name: Access elements that depend on how the window appears on the screen	  
+        href: ./desktop-flows/how-to/access-elements-depend-window.md  
+    - name: Automate web applications and web pages
+      items:
+      - name: Handle links that open new tabs
+        href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Get the coordinates and size of a web element
+        href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
+      - name: Send physical clicks on a web element
+        href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
+      - name:  Click all the elements in a list of links
+        href: ./desktop-flows/how-to/click-elements-list-links.md   
+      - name:  Scroll on a web page
+        href: ./desktop-flows/how-to/scroll-web-page.md   
+      - name: Handle iframes on a web page
+        href: ./desktop-flows/how-to/handle-iframes.md  
+    - name: Run SQL queries to Microsoft Access
+      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Extract text from a Word document using VBScript
+      href: ./desktop-flows/how-to/extract-text-word-document.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -452,6 +538,16 @@
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
+  - name: Use RPA with Dynamics 365 (preview)
+    items:
+    - name: Overview of RPA templates and Dynamics 365
+      href: ./desktop-flows/dynamics365-rpa-overview.md
+    - name: Create orders on Dynamics 365 Supply Chain Management
+      href: ./desktop-flows/dynamics365-scm-rpa.md
+    - name: Use RPA with Dynamics 365 Finance
+      href: ./desktop-flows/dynamics365-fin-rpa.md
+    - name: Use RPA with Dynamics 365 Customer Service
+      href: ./desktop-flows/dynamics365-cs-rpa.md   
 - name: Other types of desktop flows (Legacy)
   items:
   - name: Introduction to other types of desktop flows
@@ -479,13 +575,15 @@
   items:
   - name: Business process flows overview
     href: business-process-flows-overview.md
-  - name: Create a business process flow to standardize processes
+  - name: Create a business process flow
     href: create-business-process-flow.md
+  - name: Create instant flows in business process flows
+    href: create-instant-flows.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
-  - name: Best practices for business process flow attributes
+  - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Connect to data
   items:

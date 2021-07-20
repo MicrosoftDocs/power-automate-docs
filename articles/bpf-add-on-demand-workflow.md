@@ -5,6 +5,7 @@ author: MSFTMAN
 ms.author: Deonhe
 manager: kvivek
 ms.date: 07/12/2018
+ms.subservice: cloud-flow
 ms.topic: article
 ms.service: power-automate
 applies_to: 
@@ -29,8 +30,8 @@ A workflow becomes activated based on where you drop the workflow onto the busin
 - On-demand global processes. When the workflow is dropped  onto the **Global Workflows** area, the workflow is triggered on process activation or process archival (when the status transitions to an applied, completed, reactivated, or abandoned state). 
 
 Notice the following requirements when you add a workflow to a business process flow.
-- For workflows added to a stage: You can only use active, on-demand workflows created for the same entity of the stage where you add the workflow.  
-- For global workflows: You can only use active, on-demand workflows created for the primary entity of the business process flow.
+- For workflows added to a stage: You can only use active, on-demand workflows created for the same table of the stage where you add the workflow.  
+- For global workflows: You can only use active, on-demand workflows created for the primary table of the business process flow.
 
 ## Add an on-demand workflow to a business process flow stage
 
@@ -39,7 +40,7 @@ You add an on-demand  workflow from the business process flow designer by draggi
 On the [PowerApps](https://make.powerapps.com) site, select **Model-driven** (lower left of the navigation pane). 
 
 Open the business process flow designer. You can do this in one of two ways.
-- If the business process flow is already added to an app, go to **Apps**, next to the app you want select **…**, and then select **Edit**. In the app designer, select the business process flow, and then select ![Open business process flow designer](media/dynamics365-open-designer.PNG).  
+- If the business process flow is already added to an app, go to **Apps**, next to the app you want select **…**, and then select **Edit**. In the app designer, select the business process flow, and then select ![Open business process flow designer.](media/dynamics365-open-designer.PNG).  
 - Otherwise, open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), in the left navigation pane select **Processes**, and then select the business process flow that you want. 
 
 Decide whether you want the on-demand workflow to be triggered by one of the following business process flow events. 
@@ -50,13 +51,13 @@ In the example below, an on-demand workflow named **My on demand workflow** is a
 
 1. Expand stage 1 to reveal the **Triggered Process** section. 
 2. Select the **Components** tab and drag **Workflow** to the **Triggered Process** section.
-    ![Add workflow to a stage](media/add-workflow-to-bpf-1.png)
+    ![Add workflow to a stage.](media/add-workflow-to-bpf-1.png)
 Alternatively, you can drag **Workflow** to the **Global Workflows** section, which triggers the workflow either on process activation or process archival.
-    ![Add workflow to process activation or archival](media/add-workflow-to-bpf-global.png)
+    ![Add workflow to process activation or archival.](media/add-workflow-to-bpf-global.png)
 3. In the search box of the **Properties** tab, enter and search the name of the on-demand workflow you want to add to the business process flow stage, and then select **Apply**.
-    ![Enter name and select apply](media/add-workflow-to-bpf-2.png)
+    ![Enter name and select apply.](media/add-workflow-to-bpf-2.png)
 4. On the **Properties** tab under **Trigger** select either **Stage Entry** or **Stage Exit**.  
-    ![Select workflow trigger](media/workflow-trigger.png)
+    ![Select workflow trigger.](media/workflow-trigger.png)
    
     Alternatively, when you drop the workflow onto the **Global Workflows** section, the trigger options are **Process applied**, **Process reactivated**, **Process abandoned**, and **Process completed**.
 

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -42,14 +43,14 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 1. Sign into [Power Automate](https://powerautomate.com).
 1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
 
-![Help > Pricing](./media/billing-questions/help-pricing.png)
+![Help > Pricing.](./media/billing-questions/help-pricing.png)
 
 ## How do I know how much I've used?
 
 1. If you're on a free plan or a trial plan, sign into [Power Automate](https://powerautomate.com).
 1. Select the gear icon in the top right of the screen.
 
-![Settings button](./media/billing-questions/settings.png)
+![Settings button.](./media/billing-questions/settings.png)
 
 If you're on a paid plan, runs are pooled across all users in your organization. We're working on features to expose available quota and usage across an organization.
 

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -40,13 +41,13 @@ Let’s say you want to send an approval request each time an employee uploads a
 1. Select **My flows** from the left navigation bar.
 1. Select **New** > **Automated-from blank**.
 
-    ![Create from blank option](media/create-approval-response-options/create-approval-response-options.png)
+    ![Create from blank option.](media/create-approval-response-options/create-approval-response-options.png)
 
 1. On the screen that opens, provide a name for your flow in  **Flow name**. 
   
 1. Search for **SharePoint** in **Choose your flow's trigger**, select **When an item is created** from the list of triggers, and then select **Create**.
 
-   ![Select Create from blank](media/create-approval-response-options/create-from-blank.png)
+   ![Select Create from blank.](media/create-approval-response-options/create-from-blank.png)
 
 1. Provide the SharePoint **Site Address** and **List Name**. 
 
@@ -59,27 +60,27 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 1. Select **Custom Responses - Wait for one response**.
 
-    ![Approval type](media/create-approval-response-options/select-approval-type.png)
+    ![Approval type.](media/create-approval-response-options/select-approval-type.png)
 
     Next, you will create the custom responses that your approvers will use when they respond to an approval request for an employee expense.
 
 
 1. In the **Response options Item** box, enter **Accept** and then select **Add new item**. 
 
-    ![Custom response 1](media/create-approval-response-options/enter-response-1.png)
+    ![Custom response 1.](media/create-approval-response-options/enter-response-1.png)
 
 1. In the **Response options Item** box, enter **Reject** and then select **Add new item**.
 
 1. In the **Response options Item** box, enter **Need more info**.
 
-    ![Custom response 3](media/create-approval-response-options/enter-response-3.png)   
+    ![Custom response 3.](media/create-approval-response-options/enter-response-3.png)   
     
 
 1. Enter a **Title**, **Assigned to** (email for the approver), and **Details** (the details to be contained in the approval request).
 
     Here's an example of what you might include for your organization.
 
-    ![Custom responses details](media/create-approval-response-options/enter-title-assigned-to-details.png)
+    ![Custom responses details.](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
 
 Now that you've created your custom responses, you might want to do different things in your flow, depending on the response from the approver.
@@ -99,7 +100,7 @@ To do any of these in the flow, add a [**Condition**](add-condition.md) or a **S
 
 Approvers receive approval requests in email. The requests are also displayed in the approval center on Power Automate. 
 
-![Approval request email](media/create-approval-response-options/approval-request-email.png)
+![Approval request email.](media/create-approval-response-options/approval-request-email.png)
 
 ## Limitations
 

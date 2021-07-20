@@ -3,6 +3,7 @@ title: Using loops | Microsoft Docs
 description: Using loops
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: getrantz
@@ -64,7 +65,7 @@ The **For each** loop iterates through a list (or data table) and stores the cur
 
 ![The For each action.](media\for-each-loop\for-each-loop.png)
 
-You can use this kind of loops to search for specific names, contents, or attributes in all kinds of lists. For example, you can iterate through a list of retrieved files to find a file with a specific name. 
+You can use this kind of loop to search for specific names, contents, or attributes in all kinds of lists. For example, you can iterate through a list of retrieved files to find a file with a specific name. 
 
 ![An example flow with a For each action.](media\for-each-loop\for-each-loop-example.png)
 

@@ -3,6 +3,7 @@ title: Testing strategy for a Power Automate project | Microsoft Docs
 description: After you've completed your automation, the next step is for you to test it out. This article explains about the testing strategies you should consider.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -23,7 +24,7 @@ mistakes, rather than attempting to build the entire flow and then testing it.
 
 Let's take a look at the example shown in the following illustration.
 
-:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow":::
+:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow.":::
    From "Expense report created," an arrow leads to the decision "Check if report meets compliance." From "Check if report meets compliance," Yes leads to "Status updated to 'Compliance check complete'" and No leads to "Request fixes."
 :::image-end:::
 
@@ -44,10 +45,10 @@ possible combinations that might fail.
 ## Testing in "live only" environments
 
 Ideally, all tests should be done in test environments. However, there might be
-situations where you don't have an environment to test out separately from
+situations where you don't have an environment to test separately from
 live systems. In these cases, you can use the following methods:
 
-- **For lookups**: Use static text as the result to mimic a lookup
+- **For lookups**: Use static text as the result to mimic a lookup.
 
 - **For data entry**: Create a step to make new record, followed by another flow
 to delete the same record.

@@ -4,9 +4,10 @@ description: Power Automate webinars
 author: KumarVivek
 manager: annbe
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
-ms.date: 02/19/2021
+ms.date: 06/25/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -37,6 +38,10 @@ by Lokeshwar Reddy Vangala and Pranav Rastogi<br/>
 **Automate Time-Consuming Tasks with Robotic Process Automation**  
 by Stephanie Whitaker, Nicolas Pouhaer, and Yiannis Mavridis<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-AutomateTimeConsumingTaskswithRPA.html?LCID=EN-US)
+
+**Improve workflow efficiency with Process Advisor in Power Automate**  
+by Mrigankka Fotedar and Glendyll Fabe<br/>
+[Register and watch now](https://info.microsoft.com/ww-Landing-Workflow-Process-advisor-PowerAutomate.html?LCID=EN-US)
 
 ### See also
 

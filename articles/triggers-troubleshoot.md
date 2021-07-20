@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -67,14 +68,14 @@ To verify if your connections are broken:
 1. Find the connection that's used in your flow. 
 1. Select **Fix connections**, and then update the credentials for your connection if there is a **Fix connection** message next to the **Status** column.
 
-   ![A screenshot that displays a link to fix a broken connection](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
+   ![A screenshot that displays a link to fix a broken connection.](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
 
 ### Verify if the flow uses a premium connector trigger
 
 1. Edit your flow to find the connector name for the trigger. 
 1. Go to the [list of connectors](https://preview.flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
 
-   ![A screenshot of a premium connector](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
+   ![A screenshot of a premium connector.](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
 
 A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase new licenses](https://flow.microsoft.com/pricing) at any time.
 
@@ -92,7 +93,7 @@ You just completed an event (for example, added a new list item or sent an email
 
 Go to **My flows** in the navigation pane, and then select the flow. In the **28-day run history**, select **All runs**.
 
-![A screenshot showing all runs](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
+![A screenshot showing all runs.](./media/triggers-introduction/0b3aabbeee50e1f06e4a6003d5b2d976.png)
 
 If you are expecting the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
 
@@ -105,11 +106,11 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
 1. Select the ellipses (…) on the card
 
-   ![A screenshot that shows how to access the settings](./media/triggers-introduction/3b39950101ca05b737d04b77b38adec7.png)
+   ![A screenshot that shows how to access the settings.](./media/triggers-introduction/3b39950101ca05b737d04b77b38adec7.png)
 
 1. Select **Settings**.
 
-   ![A screenshot that shows settings](./media/triggers-introduction/e5f660f5a0340aac26f67fd2df8b8440.png)
+   ![A screenshot that shows settings.](./media/triggers-introduction/e5f660f5a0340aac26f67fd2df8b8440.png)
    
 1. Find **Trigger conditions**. 
 
@@ -117,7 +118,7 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
    
    If there are additional customizations in **Trigger conditions**, confirm that you are using the expected/correct inputs to trigger the flow.
 
-   ![A screenshot that shows trigger conditions](./media/triggers-introduction/eb624aa6e4c6da26f650c0f00628a7f9.png)
+   ![A screenshot that shows trigger conditions.](./media/triggers-introduction/eb624aa6e4c6da26f650c0f00628a7f9.png)
 
 ### Check permissions
 
@@ -170,11 +171,11 @@ To determine the type of trigger that's used in your flow:
 
 1. Select the …(ellipses) for your flow, and then select **Peek code**.
 
-   ![A screenshot of peekcode](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
+   ![A screenshot of peekcode.](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
 
 1. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
 
-   ![A screenshot of the recurrence section](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
+   ![A screenshot of the recurrence section.](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
 
 ## My recurrence trigger runs ahead of schedule
 
@@ -193,11 +194,11 @@ To check the trigger wake up frequency:
 1. Go to your flow trigger, and then select the …(ellipses).
 1. Select **Peek code**.
 
-   ![A screenshot of the peek code setting](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
+   ![A screenshot of the peek code setting.](./media/triggers-introduction/ce92dd95ccb32fbde3b6244f2d0fb7f7.png)
 
 1. Find the interval frequency.
 
-   ![A screenshot of the frequency element](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
+   ![A screenshot of the frequency element.](./media/triggers-introduction/eaf2f2a781a91fa960fce316b0773f3f.png)
 
 If it is taking much longer than expected for your flow to trigger, the two likeliest reasons are:
 
@@ -226,7 +227,7 @@ will process each one their own data. Since the quota is per flow, this can be u
 
 There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](/connectors/commondataservice/).
 
-My flow is not listed - The Power Automate menu only lists flows that begin with the **When a record is selected Common Data Service** trigger and contain at least one trigger or action that references that entity. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365. 
+My flow is not listed - The Power Automate menu only lists flows that begin with the **When a row is added, modified or deleted** trigger and contain at least one trigger or action that references that table. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365. 
 
 You can also access these flows in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments):
 

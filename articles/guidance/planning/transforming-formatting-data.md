@@ -3,6 +3,7 @@ title: Transforming and formatting data as part of a Power Automate project | Mi
 description: You might need to transform data you retrieved from a system to be usable by other systems later in the process. This article explains the different methods you can use.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -25,13 +26,13 @@ Here are some of the ways you can transform and format your data.
 
 You can use built-in actions to convert values and strings to different formats.
 
-![Built-in actions for text](media/text-function.png "Built-in actions for text")
+![Built-in actions for text.](media/text-function.png "Built-in actions for text")
 
 ## Expressions
 
 Expressions are Excel-like equations you can use to convert and manipulate data. 
 
-![Example of concatenating strings by using expression](media/using-expressions.png "Example of concatenating strings with expression")
+![Example of concatenating strings by using expression.](media/using-expressions.png "Example of concatenating strings with expression")
 
 The lists of different expressions are listed below:
 

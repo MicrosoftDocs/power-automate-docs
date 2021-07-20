@@ -10,10 +10,11 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/18/2020
+ms.date: 06/09/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -53,7 +54,7 @@ Finally, if your company wishes to restrict the use of organization-only data in
 
 Individuals can gain access to the paid features of Power Automate in three different ways:
 
-1. They can individually sign up for a Power Automate Free license for 90 days at no cost.
+1. They can individually sign up for a Power Automate Trial license for 90 days at no cost.
 2. You can assign a Power Automate license to them within the [Microsoft 365 admin center](https://admin.microsoft.com/).
 3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
 
@@ -153,7 +154,7 @@ If you want all users to be in the same tenant regardless of their email address
 
 Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-  ![Data loss prevention image](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+  ![Data loss prevention image.](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
 
   
 
@@ -164,16 +165,81 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
 
-   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+   ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
 
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
 
-   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+   ![manage unattended license.](./media/RPA-license/unattended-license-manage.png)
 
 1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
 
 > [!NOTE]
 > The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+
+### What are the prerequisites for using RPA?
+
+- An environment that has Dataverse enabled.
+- You must have a work or school account. You cannot start a trial with a personal account.
+- The admin needs a paid or trial attended plan or a per flow plan before they can turn on to start an unattended trial.
+
+   ![Work or school account required.](./media/RPA-license/no-personal-account.png)
+
+
+### How can I check which license I am currently using?
+
+A user can press CTRL+ALT+A from Power Automate to check their license status.
+
+>[!NOTE]
+>There's no user interface available to check license status.
+
+
+### Can trials be disabled for a tenant?
+Yes. Tenant admins can use PowerShell to disable all trials activations for a tenant.
+
+### How to start an unattended trial
+
+1. Select **Purchase services** in the Microsoft 365 admin center, and then select **Add-ons**.
+
+   ![Purchase add-on for licensing.](./media/rpa-license/purchase-services-add-ons.png)
+
+1. Select **Power Automate unattended RPA add-on Trial**. 
+
+   ![Add on trial selection.](./media/rpa-license/unattended-rpa-add-on-trial.png)
+
+1. Select **Get free trial**.
+
+   ![The free trial button.](./media/rpa-license/get-free-trial.png)
+
+You'll now see that the unattended trial is now active in your list of add-ons.
+
+   ![List of add-ons.](./media/rpa-license/list-add-ons.png)
+
+
+### Assign unattended RPA add-on capacity to an environment
+
+Before you can assign add-ons, such as trial licenses, you must [get the add-ons](#how-to-start-an-unattended-trial).
+
+1. Select **Action items** > **Admin center** in the Power Platform admin center.
+
+   ![Launch Power Platform admin center.](./media/rpa-license/admin-center.png)
+
+1. Select **Resources** > **Capacity** > **Manage**.
+
+   ![Display the manage add-ons screen.](./media/rpa-license/manage-add-ons.png)
+
+1. Select the environment to which you want to assign the unattended RPA licenses, assign the capacity, and then select **Save**. 
+
+   ![Assign unattended license to environment.](./media/rpa-license/assign-to-environment.png)
+
+>[!TIP]
+>You will need to assign add-on capacity to each environment that needs to run RPA unattended.
+
+>[!IMPORTANT]
+>You will need to ensure you assign enough capacity if you will run desktop flows in parallel.
+
+>[!NOTE]
+>Only admins can assign unattended trial capacity.
+
  
 [!INCLUDE[footer-include](includes/footer-banner.md)]

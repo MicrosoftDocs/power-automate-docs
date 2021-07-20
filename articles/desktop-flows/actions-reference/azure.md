@@ -3,6 +3,7 @@ title: Azure | Microsoft Docs
 description: Azure Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -15,8 +16,6 @@ search.audienceType:
 ---
 
 # Azure
-
-
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
 

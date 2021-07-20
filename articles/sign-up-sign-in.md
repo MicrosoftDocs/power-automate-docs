@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -24,8 +25,6 @@ search.audienceType:
 # Sign up and sign in for Power Automate
 
 Starting with Power Automate, as an individual, is easy! Before you can create a cloud flow, sign up by using any email address. If you've never used an online Microsoft product with that address, you'll need to take a few moments to register it.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
 ## Sign up free
 

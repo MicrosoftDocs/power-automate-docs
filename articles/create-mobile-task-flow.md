@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -27,7 +28,7 @@ search.audienceType:
 
 Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based on common tasks your users perform. For example, if they need to regularly perform a series of follow-up steps after client meetings, create a task flow. When users tap the new task in their mobile app, it will lead them through from start to finish so they don't forget an important step.  
   
- Task flows can use multi-entity forms and logic, and can have form logic that runs across the task flow pages.  
+ Task flows can use multi-table forms and logic, and can have form logic that runs across the task flow pages.  
   
 ## Create a task flow
   
@@ -43,7 +44,7 @@ Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based
   
     -   In the **Category** list, select **Business Process Flow**.  
   
-    -   In the **Entity** list, select the entity you want.  
+    -   In the **Table** list, select the table you want.  
   
 5.  Select the **Run process as a task flow (Mobile online)** option.  
   
@@ -51,7 +52,7 @@ Design a cloud flow in Dynamics 365 for phones or Dynamics 365 for tablets based
   
      The task flow designer opens in a new window.  
   
-     ![Task flow designer window](media/task-flow-designer-window.png "Task flow designer window") 
+     ![Task flow designer window.](media/task-flow-designer-window.png "Task flow designer window") 
   
 7.  If your users will progress from one page to another in order, drag the **Page** component from the **Components** tab on the right side of the screen and drop it on the + sign in the appropriate spot. To add a name for a page, select the page, select the **Properties** tab, type a new name, and then select **Apply**.  
   

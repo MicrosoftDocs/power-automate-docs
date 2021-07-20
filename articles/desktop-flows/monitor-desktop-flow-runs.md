@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -26,7 +27,7 @@ search.audienceType:
 
 As you scale the automations in your business, you may need an easy way to ensure all your desktop flows are running as expected. Monitor all your desktop flow runs in just one location to keep your automations running smoothly. 
 
- ![Desktop flow runs](media\monitoring\monitor-desktop-flow-queues-4.png)
+ ![Desktop flow runs.](media\monitoring\monitor-desktop-flow-queues-4.png)
 
 ## View list of all desktop flow runs 
 1. Sign into Power Automate 
@@ -38,8 +39,8 @@ From this page you can view all your desktop flow runs for the current environme
 
 In order to see runs in this list, one of the following must be true: 
 - You have [run an attended or unattended desktop flow](run-desktop-flow.md) in the current environment 
-- Another user has [shared their desktop flow](../create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
-- You have [permission](/power-platform/admin/database-security) to see view all data in the environment 
+- Another user has [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
+- You have [permission](/power-platform/admin/database-security) to view all data in the environment 
 
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
@@ -67,11 +68,13 @@ You can make changes to your view to narrow the list of runs to only those you a
 
 You may have several desktop flow runs that were triggered by one flow run. Click the three dots next to the desktop flow name, then select See all desktop flow runs in the parent flow. 
 
-  ![View flow runs from parent flow](media\monitoring\monitor-desktop-flow-queues-5.png)
+  ![View flow runs from parent flow.](media\monitoring\monitor-desktop-flow-queues-5.png)
 
 ## View the run queue for a queued run 
 
-The gateway your desktop flow run is using may be shared for running other desktop flows. To see its placement amongst the other upcoming desktop flow runs for that gateway, click the three dots next to the desktop flow name, then select See desktop flow in run queue. 
+Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
+
+![The See desktop flow in run queue option in Desktop flows run.](media\monitoring\monitor-desktop-see-desktop-flow-run-queue.png)
 
 ## Live updates 
 

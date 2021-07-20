@@ -4,9 +4,11 @@ description: Learn the benefits of creating flows in solutions.
 author: msftman
 manager: kvivek
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 01/29/2021
 ms.author: deonhe
+ms.custom: intro-internal
 search.app: 
   - Flow
 search.audienceType: 
@@ -14,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview
+# Overview of solution-aware flows
 
 
 When you host your flows in a [solution](/power-platform/alm/solution-concepts-alm), they become portable, making it effortless to move them and all their components from one environment to another. A typical use case is for an independent software vendor (ISV) to develop flows in a sandbox environment, and then move those flows to a test environment. After testing, the ISV would then move the flows to a production environment for clients who purchase these flows. This process is much easier when you create your flows in solutions, and then move the solutions and their contents.
@@ -41,11 +43,11 @@ Follow these steps to create a solution:
 1. Select **Solutions** from the navigation bar on the left side of the screen.
 1. Select **New solution**.
 
-   ![Select a new solution](./media/overview-solution-flows/select-new-solution.png "Screen showing select new solution")
+   ![Select a new solution.](./media/overview-solution-flows/select-new-solution.png "Screen showing select new solution")
 
 1. Provide all required information for your new solution, including the **Display Name**,  **Name**, **Publisher**, and **Version**. It's also a good idea to provide a description of your solution.
 
-   ![Select new solution](./media/overview-solution-flows/new-solution.png "new solution properties screen")
+   ![Select new solution.](./media/overview-solution-flows/new-solution.png "new solution properties screen")
 
 1. Select the **Create** button.
 
@@ -53,7 +55,7 @@ Follow these steps to create a solution:
    Your new solution might appear like this image:
 
 
-   ![Displays the new solution](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
+   ![Displays the new solution.](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
 
 ## Known limitations
 

@@ -10,11 +10,13 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/15/2019
 ms.author: deonhe
+ms.custom: intro-internal
 search.app: 
   - Flow
   - Powerplatform
@@ -30,7 +32,7 @@ AI Builder is a new Microsoft Power Platform capability that enables you to add 
 
 You can build AI models by using the **AI Builder** option from the left navigation pane of [Power Automate](https://flow.microsoft.com). More information: [AI model types](/ai-builder/model-types)
 
-![Use AI builder in Power Automate](./media/use-ai-builder/ai_builder.png "AI Builder in Power Automate")
+![Use AI builder in Power Automate.](./media/use-ai-builder/ai_builder.png "AI Builder in Power Automate")
 
 
 Use your AI Builder models in your flows to add intelligence to your organization. More information: [Use AI Builder in Power Automate](/ai-builder/use-in-flow-overview)

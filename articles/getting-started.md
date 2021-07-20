@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -36,7 +37,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/H4H_jPJWlxU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qNQm]
 
 ## Who is Power Automate for? 
 
@@ -71,15 +72,15 @@ Each template is designed for a specific purpose. For example, there are templat
 
 1. Select a template that's useful for you. A simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
-    ![daily reminder template](./media/getting-started/template-details.png)
+    ![daily reminder template.](./media/getting-started/template-details.png)
 
 1. Select **Continue**.
 
-    ![Create connection](./media/getting-started/create-connection.png)
+    ![Create connection.](./media/getting-started/create-connection.png)
 
 1. Enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, select **Create flow**, and then verify that your flow is running as expected.
 
-    ![Provide credentials for the connection](./media/getting-started/configure-email-details.png)
+    ![Provide credentials for the connection.](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
     > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
@@ -92,7 +93,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
-![Building a cloud flow](./media/getting-started/build-a-flow.png)
+![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 
 When you create a cloud flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
@@ -111,18 +112,18 @@ You don't need to be a developer to create flows; however, Power Automate does p
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**. 
 1. Select **Peek code**.
 
-    ![Peek code](media/getting-started/peek-code.png)
+    ![Peek code.](media/getting-started/peek-code.png)
 
 1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
 
-    ![Peek code details](media/getting-started/peek-code-details.png)
+    ![Peek code details.](media/getting-started/peek-code-details.png)
    
 
 ## Find your flows easily
 
 When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
 
-![Filter or search flows](media/getting-started/filter-search-box.png)
+![Filter or search flows.](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
 > The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
@@ -135,7 +136,7 @@ Visit the cloud flow activity page to see the list of cloud flows that recently 
 1. Select **Monitor** on the left side of the screen.
 1. Select **Cloud flow activity**.
 
-   ![Notification center](media/getting-started/cloud-flow-activity.png)
+   ![Notification center.](media/getting-started/cloud-flow-activity.png)
 
 ## Use the mobile app 
 

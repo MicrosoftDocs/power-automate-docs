@@ -3,6 +3,7 @@ title: Loops | Microsoft Docs
 description: Loops Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -16,10 +17,6 @@ search.audienceType:
 
 # Loops
 
-Repeat blocks of actions in a flow
-
-You can find more information on how to use the loop actions [here](../use-loops.md)
-
 |<!-- -->|
 |-----|
 |[Exit loop](#break)|
@@ -27,6 +24,20 @@ You can find more information on how to use the loop actions [here](../use-loops
 |[Loop](#loop)|
 |[Loop condition](#while)|
 |[Next loop](#continue)|
+
+## Getting started with loops
+
+Loops are used to automate repetitive sections of a flow by executing a block of actions multiple times.
+
+Useful applications and features:
+* Use simple loops to perform a given number of repetitions and iterate through data.
+* Deploy loop conditions in order to repeat actions until a condition is met.
+* Iterate through the items of a list using for each loops.
+* Explicitly end loops when required.
+
+You can find more information on how to use the loop actions [here](../use-loops.md)
+
+## Loops actions
 
 ### <a name="break"></a> Exit loop
 Terminates the loop and the flow resumes at the next action or statement following the loop

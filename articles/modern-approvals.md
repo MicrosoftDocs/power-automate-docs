@@ -10,10 +10,11 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/17/2021
+ms.date: 5/19/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,14 +26,14 @@ search.audienceType:
 
 With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 
-To create an approval workflow, add the **Approvals - Start an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
+To create an approval workflow, add the **Approvals - Start and wait for an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
 Approvers can respond to requests from their email inbox, [the approvals center](https://flow.microsoft.com/manage/approvals/received/) in Power Automate, or the Power Automate app.
 
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
 
-   ![Approval flow](./media/modern-approvals/create-flow-overview.png)
+   ![Approval flow.](./media/modern-approvals/create-flow-overview.png)
 
 The flow performs the following steps:
 
@@ -45,7 +46,7 @@ The flow performs the following steps:
 
 
 >[!IMPORTANT]
->Always follow the [best practices for SharePoint security](https://docs.microsoft.com/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
+>Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
@@ -75,7 +76,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
+![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## Add a profile action
 
@@ -84,7 +85,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Find, and then select the **Get my profile (V2)** action.
 
-    ![search for profile](./media/modern-approvals/search-for-profile.png)
+    ![search for profile.](./media/modern-approvals/search-for-profile.png)
 
 1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
@@ -95,7 +96,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 > [!NOTE]
 > This action sends the approval request to the email address in the **Assigned To** box.
 >
-> If your scenario requires it, you can attach files to your approval requests that use Common Data Service.
+> If your scenario requires it, you can attach files to your approval requests that use Microsoft Dataverse.
 
 ## Add a condition
 
@@ -107,7 +108,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure approved email template](./media/modern-approvals/yes-email-config.png)
+   ![configure approved email template.](./media/modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
 
@@ -116,13 +117,13 @@ Follow these steps to send an email if the vacation request is approved:
 > [!NOTE]
 > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-![update item configuration](./media/modern-approvals/configure-update-item.png)
+![update item configuration.](./media/modern-approvals/configure-update-item.png)
 
 ## Add an email action for rejections
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email.png)
 
 ## Add update action for rejected requests
 
@@ -131,13 +132,13 @@ Follow these steps to send an email if the vacation request is approved:
    > [!NOTE]
    > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item card](./media/modern-approvals/configure-update-item-no.png)
+   ![update item card.](./media/modern-approvals/configure-update-item-no.png)
 
 4. Select **Save** to save the work we've done.
 
 If you've followed along, your flow should resemble this screenshot:
 
-![Completed flow](./media/modern-approvals/completed-flow.png)
+![Completed flow.](./media/modern-approvals/completed-flow.png)
 
 Now that we've created the flow, it's time to test it!
 

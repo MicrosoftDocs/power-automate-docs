@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -25,10 +26,10 @@ The **Metadata Update** sample is an adaptive card designed to enable flow maker
 This card is comprised of three sections:
 
 1. The topic header area with header, sub-header, and description.
-1. The fact list area for relevant record metadata.
+1. The fact list area for relevant row metadata.
 1.  A column set which supports a table array of data
 
-![Metadata sample](media/adaptive-cards/metadata-sample.png) 
+![Metadata sample.](media/adaptive-cards/metadata-sample.png) 
 
 
 *Inputs/Outputs and notes*

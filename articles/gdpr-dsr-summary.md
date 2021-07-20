@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -24,7 +25,7 @@ search.audienceType:
 # Responding to GDPR Data Subject Requests for Power Automate
 
 
-This article prepares you and your organization for the European Union's General Data Protection Regulation (GDPR). This article not only describes what Microsoft is doing to prepare for the GDPR but also shares examples of steps you can take today to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service.
+This article prepares you and your organization for the European Union's General Data Protection Regulation (GDPR). This article not only describes what Microsoft is doing to prepare for the GDPR but also shares examples of steps you can take today to support GDPR compliance when using Power Apps, Power Automate, and Microsoft Dataverse.
 
 ## Prerequisites
 
@@ -61,7 +62,7 @@ This article discusses how to use Microsoft's products, services and administrat
 
     If a data subject asks you to rectify their personal data that resides in your organization, you and your organization must determine if it’s appropriate to honor the request.  Rectifying the data may include taking actions such as editing, redacting, or removing personal data.
 
-    You can use Azure Active Directory to manage Power Automate users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service.  As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.  [Learn more about DSR](/microsoft-365/compliance/gdpr-dsr-azure).
+    You can use Azure Active Directory to manage Power Automate users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service.  As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a the history of all events within Microsoft services.  [Learn more about DSR](/microsoft-365/compliance/gdpr-dsr-azure).
 
 1. Restrict: Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 

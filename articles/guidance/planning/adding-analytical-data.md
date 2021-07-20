@@ -3,6 +3,7 @@ title: Adding analytical data to Microsoft Dataverse for a Power Automate projec
 description: To identify bottlenecks in an automation, you can set up actions that log the start time of each activity or step.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -18,7 +19,7 @@ within the automation that log the start time of each activity or step. You
 can do this by creating a table that records the step name, start time, and
 end time.
 
-![Adding actions to store analytical data](media/store-analytical-data.png "Adding actions to store analytical data")
+![Adding actions to store analytical data.](media/store-analytical-data.png "Adding actions to store analytical data")
 
 This way, you can keep track of how long it took for each end-to-end run of
 automation to be completed, and possibly find ways to make your

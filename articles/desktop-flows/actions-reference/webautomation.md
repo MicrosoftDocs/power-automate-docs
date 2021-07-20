@@ -3,6 +3,7 @@ title: Web automation | Microsoft Docs
 description: Web automation Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -187,6 +188,7 @@ Fill a text field in a web page with the specified text
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 
 
 ##### Variables Produced
@@ -341,7 +343,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -372,7 +374,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -403,7 +405,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-
+|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|

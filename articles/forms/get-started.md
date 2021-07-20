@@ -27,7 +27,7 @@ search.audienceType:
 A good way to get started is to use a template that is suited to your business scenario. You can choose from our collection of templates to find the right one to accomplish your scenario. [Search our templates](https://preview.flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow steps in the template to create a flow from the template.
 
  > [!div class="mx-imgBorder"]
- > ![Templates screen](..\media\forms\templates-screen.png "Search for a template")
+ > ![Templates screen.](..\media\forms\templates-screen.png "Search for a template")
 
 Perhaps you found a template that is similar to what you are looking for, but isn't quite right for your scenario. No problem - just create your own flow from that template and tweak the it to your liking. You can extend a flow created from template by adding, editing, removing trigger and actions. You can [copy paste actions](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) in the same flow or across flows to speed up the process.
 
