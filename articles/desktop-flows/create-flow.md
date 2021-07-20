@@ -28,7 +28,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
 
-- To create a desktop flow in Power Automate Desktop, you need a Microsoft, work, or school account. To create and trigger a desktop flow through Power Automate, you need a work or school account.
+- To create a desktop flow in Power Automate Desktop, you need a Microsoft work, school or organization premium account. To create and trigger a desktop flow through Power Automate, you need an organization premium or trial premium account.
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
