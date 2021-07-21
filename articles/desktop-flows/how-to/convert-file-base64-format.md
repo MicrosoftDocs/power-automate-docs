@@ -25,8 +25,8 @@ To convert a file to this format, use the **Run PowerShell script** action and p
 [convert]::ToBase64String((Get-Content -path "%FilePath%" -Encoding byte))
 ```
 
->[!ΝΟΤΕ]
->You can find more information regarding PowerShell commands in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/?view=powershell-7.1).
+> [!ΝΟΤΕ]
+> You can find more information regarding PowerShell commands in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/?view=powershell-7.1).
 
 The action produces the **PowershellOutput** variable that stores a text value representing the contents of the specified file in Base64 format.
 

@@ -25,8 +25,8 @@ To convert the Base64 text to hexadecimal format, use the **Run PowerShell scrip
 [System.Convert]::FromBase64String("%Base64Text%") | Format-Hex
 ```
 
->[!ΝΟΤΕ]
->You can find more information regarding PowerShell commands in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/?view=powershell-7.1).
+> [!ΝΟΤΕ]
+> You can find more information regarding PowerShell commands in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/?view=powershell-7.1).
 
 The action produces the PowershellOutput variable that stores the encrypted or hashed value in hexadecimal format.
 
