@@ -29,13 +29,13 @@ You can find more information on how to use the web actions [here](../automation
 
 ## Getting started with web actions
 
-Web actions enable users to create automations that interact with APIs and download files and text from the web. 
+Web actions enable users to interact with APIs and send web requests that perform various operations, such as uploading and downloading data and files.
 
-To send an API request, you can use the **Invoke web service** action that supports most HTTP methods, like POST, GET, PUT, and DELETE.
+To send an API request, like POST, GET, PUT, or DELETE, you can use the **Invoke web service** action. 
 
 In the action's properties, you have to populate the service's URL and the appropriate HTTP method. Additionally, you have to choose the request and response content type, such as XML and JSON.
 
-The **Custom headers** and **Request body** fields are optional, and you have to configure them as described in the API's documentation.
+The **Custom headers** and **Request body** fields depend on the API, and you have to configure them as described in its documentation.
 
 ![The Invoke web service action.](media\web\invoke-web-service-action.png)
 
@@ -54,6 +54,9 @@ If the webserver requires authentication, you can populate your credentials in t
 ![The advanced settings of Download from web action action.](media\web\download-from-web-action-advanced.png)
 
 The downloaded text is stored in a variable named **WebPageText**. If you use the action to download files, you can select to save them locally on your desktop.
+
+> [!NOTE]
+> Apart from the web actions, Power Automate Desktop enables users to interact with web application through the web automation actions. You can find more information about web automation actions in [Web automation](webautomation.md).
 
 ## Web actions
 
