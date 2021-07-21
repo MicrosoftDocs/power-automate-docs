@@ -49,6 +49,31 @@ You can find more information on how to use the UI automation actions [here](../
 |[Drag and drop UI element in window](#draganddropelement)|
 |[Expand/collapse tree node in window](#expandcollapsetreenode)|
 
+## Getting started with UI automation
+
+Power Automate Desktop enables users to interact with desktop applications and Windows through the UI automation group of action. These actions require UI elements, that describe the components you want to handle. 
+
+You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
+
+![The options to create a new UI element.](\media\uiautomation\create-ui-element.png)
+
+All UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component in the application window.
+
+Although selectors are created automatically when creating UI elements, some scenarios may need manually created selectors. When a custom selector is needed, you can modify an existing selector or build one from scratch. 
+
+![The options to edit and create selectors.](\media\uiautomation\create-selector.png)
+
+Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
+
+To develop more dynamic flows, you can replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on results of previous actions, you can use variables instead of hard-coded values.
+
+![The available operators in the selector builder.](\media\uiautomation\selector-operators.png)
+
+>[!NOTE]
+> You can find more information about developing UI automation flows and creating custom selectors in [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
+
+## UI automation actions
+
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data
 ### <a name="getwindowdetails"></a> Get details of window

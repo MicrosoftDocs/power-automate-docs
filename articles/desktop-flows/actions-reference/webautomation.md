@@ -61,7 +61,7 @@ Although selectors are created automatically when creating UI elements, some par
 
 Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
 
-To develop more dynamic web flows, you can replace the **Equals to** operators in the selectors with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on results of previous actions, you can use variables instead of hard-coded values.
+To develop more dynamic web flows, you can replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on results of previous actions, you can use variables instead of hard-coded values.
 
 ![The available operators in the selector builder.](\media\webautomation\selector-operators.png)
 
