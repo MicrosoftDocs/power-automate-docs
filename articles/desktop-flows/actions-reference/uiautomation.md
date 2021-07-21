@@ -51,13 +51,13 @@ You can find more information on how to use the UI automation actions [here](../
 
 ## Getting started with UI automation
 
-Power Automate Desktop enables users to interact with desktop applications and Windows through the UI automation group of action. These actions require UI elements, that describe the components you want to handle. 
+Power Automate Desktop enables users to interact with Windows and desktop applications through the UI automation group of action. 
 
-You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
+These actions require UI elements, that describe the components you want to handle. You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
 
 ![The options to create a new UI element.](\media\uiautomation\create-ui-element.png)
 
-All UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component in the application window.
+All UI elements are specified by one or more UI selectors that pinpoint the hierarchical structure of the component in the application window.
 
 Although selectors are created automatically when creating UI elements, some scenarios may need manually created selectors. When a custom selector is needed, you can modify an existing selector or build one from scratch. 
 
