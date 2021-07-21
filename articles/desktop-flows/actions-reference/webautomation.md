@@ -53,7 +53,7 @@ You can create UI elements directly through the actions that require them or thr
 
 ![The options to create a new UI element.](\media\webautomation\create-ui-element.png)
 
-All UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page.
+All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page.
 
 Although selectors are created automatically when creating UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you can modify an existing selector or build one from scratch. 
 
@@ -61,17 +61,9 @@ Although selectors are created automatically when creating UI elements, some par
 
 Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
 
-![The selector builder dialog.](\media\webautomation\selector-builder.png)
-
-To develop more dynamic web flows, you can replace the **Equals to** operator in the selectors with other operators or regular expressions.
-
-The **Equals to** operator makes the selector search for a specific hard-coded value. Depending on the scenario, other operators may be more suitable, like the **Contains** operator that locates values containing specific keywords. 
+To develop more dynamic web flows, you can replace the **Equals to** operators in the selectors with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on results of previous actions, you can use variables instead of hard-coded values.
 
 ![The available operators in the selector builder.](\media\webautomation\selector-operators.png)
-
-If the value of a selector's attribute depends on calculations and results of previous actions, you can use variables instead of hard-coded values.
-
-![A variable in a selector.](\media\webautomation\selector-variables.png)
 
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
