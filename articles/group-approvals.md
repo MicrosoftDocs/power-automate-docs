@@ -24,7 +24,7 @@ search.audienceType:
 ---
 # Request approvals from Microsoft 365 groups
 
-You can send approvals to [Microsoft 365 groups](https://docs.microsoft.com/microsoftteams/office-365-groups) and to individuals. It's useful to send to groups in scenarios where you need an approval from **any one** person in the group. 
+You can send approvals to [Microsoft 365 groups](/microsoftteams/office-365-groups) and to individuals. It's useful to send to groups in scenarios where you need an approval from **any one** person in the group. 
 
 For instance:
 * You need the approval of a representative of the leadership team for a project.

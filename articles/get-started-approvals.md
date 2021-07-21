@@ -95,7 +95,7 @@ Use one of the following options to get started creating approval flows.
    >[!TIP]
    >You can [copy paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the editing process.   
 
-1. Create an approval flow from scratch - If you couldn't find a suitable template, you can create a flow from scratch and then connect it to the services and the approvals you need by using the approvals actions. Learn [how to create a flow from scratch](https://docs.microsoft.com/power-automate/get-started-logic-flow).  
+1. Create an approval flow from scratch - If you couldn't find a suitable template, you can create a flow from scratch and then connect it to the services and the approvals you need by using the approvals actions. Learn [how to create a flow from scratch](./get-started-logic-flow).  
 
 1. Consult the community for inspiration and help - Power Automate has a thriving community that can help if you are stuck or looking for some inspiration. Just head over to the [Power Automate forums](https://powerusers.microsoft.com/t5/Building-Flows/bd-p/BuildingFlows) to ask specific questions and get answers.
 
