@@ -41,7 +41,7 @@ When you submit an approval in a flow, approvers are notified and can review and
   
 *Actions* are the events you want your flow to perform after the trigger starts the flow. For example, when a new item is added to a SharePoint list, trigger an approval to have somebody review the new item. 
 
-Here's the full list of [Approval actions](https://docs.microsoft.com/connectors/approvals/#actions) that you can use in your flows.  
+Here's the full list of [Approval actions](./connectors/approvals/#actions) that you can use in your flows.  
   
 ![List of approval actions.](media/get-started-approvals/list-approval-actions.png)
 
