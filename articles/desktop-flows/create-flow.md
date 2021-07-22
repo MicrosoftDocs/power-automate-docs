@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/15/2021
-ms.author: olmelnyk
+ms.author: marleon
 ms.reviewer: deonhe
 search.app: 
   - Flow

@@ -47,7 +47,7 @@ You can find more information on how to use the web automation actions [here](..
 
 ## Getting started with web automation
 
-The web automation group of action enables users to interact with web applications and components through UI elements. UI elements are used in web automation actions to describe the web components you want to handle. 
+The web automation group of actions enables users to interact with web applications and components through UI elements. UI elements are used in web automation actions to describe the web components you want to handle. 
 
 You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
 
