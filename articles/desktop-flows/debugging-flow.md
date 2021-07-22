@@ -46,7 +46,13 @@ The **Run next action** button runs the flow action by action. After each action
 
 ## The status bar
 
-The status bar on the bottom of the Window shows the status of the flow and the number of selected actions. Additionally, it shows the total number of actions and subflows in the current flow. The Run delay shows the amount of time that the flow waits for after running each action in the flow designer. Select the delay and use the slider to adjust the value in milliseconds to change this value. The status bar also shows the number of Errors, if any are present. Select the Errors to pop up the Errors pane. Using **Search inside the flow** shows an additional element with the number of results. Select the number of results to pop up the Find in code pane.
+The status bar on the bottom of the window shows the status of the flow and the number of the selected actions. Additionally, it shows the total number of actions and subflows in the current flow. 
+
+The **Run delay** field defines the time that the flow waits after running each action in the flow designer. You can modify the default value to increase or decrease the milliseconds that the flow waits.
+
+The status bar also displays the number of errors, if any are present. Select the **Errors** option to pop up the **Errors pane**. 
+
+If you search inside the flow, the status bar shows an additional field containing the number of the results. Select this field to pop up the **Find in code** pane.
 
 ![status bar.](\media\status-bar\status-bar.png)
 

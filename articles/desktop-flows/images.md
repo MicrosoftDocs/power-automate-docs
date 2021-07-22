@@ -1,13 +1,12 @@
 ---
 title: Images | Microsoft Docs
 description: Use the images pane to manage images in a desktop flow.
-author: olegmelnykov
+author: georgiostrantzas
 ms.service: power-automate
-ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.author: v-gtrantzas
+ms.reviewer: v-gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -17,42 +16,48 @@ search.audienceType:
 
 # Automate using images
 
+To capture a new image in Power Automate Desktop, navigate to the **Images** tab on the right pane of the flow designer.
 
+![The Images tab in the flow designer.](\media\images\images-pane.png)
 
-On the right-hand side pane, select the **Images** tab.
+Select **Capture image**, and click and drag the cursor on the area you want to capture. A magnifying glass will help you to capture the image with high precision.
 
-![images pane.](\media\images\images-pane.png)
+![The Capture image option in the Images tab.](\media\images\capture-image.png)
 
-Select **Capture image**, and a crosshair with a magnifying glass will appear. Then, capture the image by clicking and dragging, while using the magnifying glass for pixel precision.
+Alternatively, select the arrow on the **Capture image** button to capture images on a timer. Select the number of seconds and press **Capture image with delay**.
 
-![capture image.](\media\images\capture-image.png)
+![The Capture image with delay option in the images tab.](\media\images\delay-capture.png)
 
-Additionally, select the arrow on the **Capture image** button to capture images on a timer. Select the number of seconds and enter a new value to adjust the timer.
+After capturing the image, populate a name for it in the dialog box and select **OK** to add it to the flow.
 
-![delay capture.](\media\images\delay-capture.png)
+![The dialog prompting you to enter a name for the captured image.](\media\images\image-name.png)
 
-After capturing an image, specify a name for it in the dialog box and select **OK** to add it to the flow.
+## Manage captured images
 
-![image name.](\media\images\image-name.png)
+To remove all the images that aren't used in any action, select the dots icon next to the **Capture image** option, and then select **Remove unused images**. If you navigate inside a specific folder, the **Remove unused images** option will remove only the unused images located in this folder.
 
-Select **Add a new folder** and specify a name to create a folder in Images. Sort images into folders by capturing images while the specific folder is open. Navigate back by clicking on **Home**.
+To create a new folder, select **Add a new folder** and specify a name for the created folder. You can store images into a specific folder by capturing them while the folder is open.
 
-To rename or delete images or folders, right-click on an item and select the appropriate function. Select the image thumbnail to open and view it.
+![The Remove unused images and Add a new folder options on the Images tab.](\media\images\remove-unused-images.png)
 
-![rename delete images.](\media\images\rename-delete-images.png)
+To rename or delete images and folders, right-click on the respective item and select the appropriate function. Select the image thumbnail to open and view it.
 
-To find where the image is being used in the flow, right-click the image and select **Find usages**. The results will show the actions which use the image. Double-clicking on a result will highlight the action in the workspace.
+![The rename and delete options of the images.](\media\images\rename-delete-images.png)
 
-![find usages results pane.](\media\images\find-usages-results.png)
+To find where an image is being used in the flow, right-click on it and select **Find usages**. The results will present the actions that use the specific image. Double-clicking on a result will highlight the action in the workspace.
 
-### Known issues and limitations
+![find usages results pane](\media\images\find-usages-results.png)
 
-- **Issue**: In some cases, when you rename an image, actions that use the renamed image may no longer work as you might expect.
+## Use images in actions
 
+After capturing images, you can use them as input in actions that require them, such as the **Move mouse to image** action.
 
-- **Workarounds**: Open and save one of the actions that uses the image resolves the issue
+![The Move mouse to image action.](\media\images\move-mouse-image-action.png)
 
+In the advanced settings of these actions, you can select which image matching algorithm you want to use. The **Basic** algorithm achieves better results with images less than 200x200 pixels, while the **Advanced** algorithm is more effective with bigger images and more robust to color changes.
 
+The **Tolerance field** defines the acceptable ammount of differences between the provided image and the image is compared with. High tolerance values may affect the precision of image recognition.
 
+![The advanced settings of the Move mouse to image action.](\media\images\move-mouse-image-action-advanced.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
