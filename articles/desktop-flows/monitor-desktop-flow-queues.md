@@ -25,7 +25,10 @@ search.audienceType:
 
 # Monitor desktop flow queues 
 
-As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor and manage all your queued desktop flow runs in just one location.
+As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
+
+> [!NOTE]
+> Everyone accessing the run queues for their gateways from the **Desktop flow queues** page should now navigate to the **Gateways** pivot in the **Machines** page to access them.
 
 ## Setting a priority
 
@@ -37,17 +40,10 @@ Available priorities are High and Normal (the default value). This value can als
 
 When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that have been enqueued first will be executed first.
 
-## View list of all desktop flow run queues
-1. Sign into Power Automate
-1. Select **Monitor** > **Desktop flow queues**
+## View run queue for a machine or machine group
 
-  ![List of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
 
-From this page you can view all the gateways to which you have access. Each gateway will have its own run queue when used to run desktop flows.
-
-## View list of queued desktop flow runs for a specific gateway
-Click on a gateway to see the details of the desktop flow runs that are being processed and queued.
-
+Visit the details page for your machine or machine group, then click on the **Run queue** tab to see the list of queued desktop flow runs.
 
   ![List of desktop flows on gateways.](media\monitoring\monitor-desktop-flow-queues-3.png)
 
@@ -58,7 +54,8 @@ In order to see runs in this list, one of the following must be true:
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
-> To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources.
+> To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
+
 
 ## Queue Status
 A run in a queue can have the following status:
@@ -74,11 +71,15 @@ Four actions are available when clicking on the three dots next to the desktop f
 - Cancel parent flow run
 
 ## Change priority
-You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner or if you are an admin on the gateway.
+
+You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner, or if you are a co-owner on the machine/machine group or admin on the gateway.
+
 Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](#setting-a-priority), you need to change the priority in the connector action.
 
 ## Move to top
-The owner of gateway or a user with administrator privileges for the gateway can override the queue priority by moving an item to the top of the queue. That item will be put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
+
+The owner of the device or a user with administrator privileges for the machine, machine group, or gateway can override the queue priority by moving an item to the top of the queue. That item will be put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
+
 You can cancel moving a run to top. It will revert the run back to its original priority and queued time.
 
 ## See parent flow run
@@ -87,11 +88,21 @@ If you have permission to access the parent flow, you can use this action to vie
 ## Cancel parent flow run
 If you are the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow as well as all the other action that were used in the parent flow.
 
-## Using a gateway queue across multiple environments
-It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other.
-A message will be shown to indicate if the gateway is being used in another environment.
+## View list of run queues for gateways
+
+Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
+
+  ![List of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
+
+From this page you can view all the gateways to which you have access. Each gateway will have its own run queue when used to run desktop flows.
+
+## Using gateways with multiple environments
+
+It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. 
+
+With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
 
 ## Known issues
-- The gateway status of an offline gateway may still appear as available
+- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still view the desktop flow queue for your gateways by visiting the Desktop flow queues page under the Monitor section in the left navigation.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
