@@ -1,7 +1,7 @@
 ---
 title: Flow designer | Microsoft Docs
 description: Introduction to Power Automate Desktop flow designer
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article

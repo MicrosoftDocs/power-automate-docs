@@ -1,7 +1,7 @@
 ---
 title: Run a Power Automate Desktop flow | Microsoft Docs
 description: Run a flow in the Power Automate Desktop console
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article

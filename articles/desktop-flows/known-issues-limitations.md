@@ -1,7 +1,7 @@
 ---
 title: Known issues and limitations with Power Automate Desktop  | Microsoft Docs
 description: This article describes the known issues and limitations with Power Automate Desktop .
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article

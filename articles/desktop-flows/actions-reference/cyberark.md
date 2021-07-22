@@ -1,7 +1,7 @@
 ---
 title: CyberArk | Microsoft Docs
 description: CyberArk Actions Reference
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
