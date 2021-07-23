@@ -23,10 +23,11 @@ Process advisor relies on environment security and Microsoft Dataverse security 
 
 Some privileges are set by default in Dataverse. This allows built-in security roles to use process advisor without further actions from system administrators. Specifically:
 
-- Environment makers can use process advisor to create and share processes.
+- Process Advisor User can create, share and contribute to processes. This role has a restricted set of privileges only meant for using Process advisor. If you need to provide access to other features from the Power Platform, make sure to assign to the users another less restrictive security role on top of the Process Advisor User one.
+
+- Environment makers can use process advisor to create, share and contribute to processes.
 
 - Administrators and system customizers can access all processes created in the environment.
-
 
 These security roles have privileges to the process advisor tables in Dataverse. Custom security roles can create processes in process advisor if they have the following permissions:
 
@@ -36,7 +37,7 @@ These security roles have privileges to the process advisor tables in Dataverse.
 - User create, read, write, delete, append, append to, assign, and share permissions on the PM inferred task, PM recording, and workflow binary tables (Custom tables tab).
 
 > [!IMPORTANT]
-> The Process Mining Application User is an **internal security role** that process advisor uses. Do no assign this security role to users.
+> The Process Advisor Application is an **internal security role** that process advisor uses. Do no assign this security role to users. We do not recommend to modify the Process Advisor Uer or Process Advisor Application security roles set of privileges.
 
 ## Privacy
 
