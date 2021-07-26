@@ -74,3 +74,5 @@ Following this example, it is possible to imagine a wide range of scenarios wher
 - Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).
+
+- Learn how to [apply unattended RPA licenses to yout flows](../organization-q-and-a.md#power-automate-rpa-license).
