@@ -15,9 +15,6 @@ search.audienceType:
   - enduser
 ---
 
-
-
-
 # Create a Power Automate Desktop flow
 
 Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
