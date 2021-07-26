@@ -37,7 +37,7 @@ These security roles have privileges to the process advisor tables in Dataverse.
 - User create, read, write, delete, append, append to, assign, and share permissions on the PM inferred task, PM recording, and workflow binary tables (Custom tables tab).
 
 > [!IMPORTANT]
-> The Process Advisor Application is an **internal security role** that process advisor uses. Do no assign this security role to users. We do not recommend to modify the Process Advisor Uer or Process Advisor Application security roles set of privileges.
+> The Process Advisor Application is an **internal security role** that process advisor uses. Do not assign this security role to users. Do not modify the set of privileges in the Process Advisor User or Process Advisor Application security roles.
 
 ## Privacy
 
