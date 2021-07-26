@@ -1,13 +1,13 @@
 ---
 title: Trigger a Power Automate Desktop flow from another flow | Microsoft Docs
 description: Link a Power Automate Desktop flow with a cloud flow in the Power Automate portal
-author: olegmelnykov
+author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.author: v-gtrantzas
+ms.reviewer: v-gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
