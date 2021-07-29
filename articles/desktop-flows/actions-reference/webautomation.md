@@ -47,17 +47,15 @@ You can find more information on how to use the web automation actions [here](..
 
 ## Getting started with web automation
 
-The web automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components you want to handle. 
+Web automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
 
-To add a UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
+To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
 
 ![The options to create a new UI element.](\media\webautomation\create-ui-element.png)
 
-All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page.
+All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Selectors use the **>** notation to indicate this structure. Each element in the selector is contained within the element on its left.
-
-Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the options to edit an existing selector or build one from scratch. 
+Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
 
 ![The options to edit and create selectors.](\media\webautomation\create-selector.png)
 
