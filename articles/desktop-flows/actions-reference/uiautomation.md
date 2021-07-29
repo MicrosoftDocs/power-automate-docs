@@ -51,21 +51,19 @@ You can find more information on how to use the UI automation actions [here](../
 
 ## Getting started with UI automation
 
-Power Automate Desktop enables users to interact with Windows and desktop applications through the UI automation group of action. 
+UI automation actions enable users to interact with Windows and desktop applications through UI elements. UI elements describe uniquely the application components that the action is going to handle.
 
-These actions require UI elements, that describe the components you want to handle. You can create UI elements directly through the actions that require them or through the **UI elements** tab of the flow designer.
+To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
 
 ![The options to create a new UI element.](\media\uiautomation\create-ui-element.png)
 
-All UI elements are specified by one or more UI selectors that pinpoint the hierarchical structure of the component in the application window.
+All UI elements are specified by one or more selectors that pinpoint the hierarchical structure of the component on the application window. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Although selectors are created automatically when creating UI elements, some scenarios may need manually created selectors. When a custom selector is needed, you can modify an existing selector or build one from scratch. 
+Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
 
 ![The options to edit and create selectors.](\media\uiautomation\create-selector.png)
 
-Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left.
-
-To develop more dynamic flows, you can replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on results of previous actions, you can use variables instead of hard-coded values.
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
 ![The available operators in the selector builder.](\media\uiautomation\selector-operators.png)
 
