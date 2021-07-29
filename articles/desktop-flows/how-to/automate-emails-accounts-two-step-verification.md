@@ -23,6 +23,6 @@ App passwords are randomly generated passwords that can be used only once when y
 
 To create app passwords for Microsoft personal or organizational accounts, follow the instructions in [Create new app passwords](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-new-app-passwords). To create app passwords for other webmail services, search for information on their help page or community site. 
 
-After creating an app password, populate it in the **Password** field of the **IMAP server** or **SMTP server** sections of the email actions.
+After creating an app password, populate it in the **Password** field of the **IMAP server** or **SMTP server** section of the email actions.
 
 ![The Password field in the Send email action.](media/automate-emails-accounts-two-step-verification/send-email-action.png)
