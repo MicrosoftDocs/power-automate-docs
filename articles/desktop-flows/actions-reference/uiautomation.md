@@ -50,6 +50,36 @@ You can find more information on how to use the UI automation actions [here](../
 |[Drag and drop UI element in window](#draganddropelement)|
 |[Expand/collapse tree node in window](#expandcollapsetreenode)|
 
+## Getting started with UI automation
+
+Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
+
+To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
+
+![Screenshot of the options to create a new UI element.](\media\uiautomation\create-ui-element.png)
+
+All UI elements consist of selectors that pinpoint the hierarchical structure of the components. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+
+When you create a UI element of an application window, its selector always has a root element named  **:desktop**.
+
+If you create a UI element that pinpoints a component inside an application window, two UI elements will be created automatically. The parent UI element pinpoints the application window, while the child shows the hierarchical structure of the specific component inside the window.
+
+
+![Screenshot of two UI elements with parent - child relationship.](\media\uiautomation\parent-child-ui-element.png)
+
+Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
+
+![Screenshot of the options to edit and create selectors.](\media\uiautomation\create-selector.png)
+
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+
+![Screenshot of the available operators in the selector builder.](\media\uiautomation\selector-operators.png)
+
+>[!NOTE]
+> You can find more information about developing UI automation flows and creating custom selectors in [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
+
+## UI automation actions
+
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data
 ### <a name="getwindowdetails"></a> Get details of window
