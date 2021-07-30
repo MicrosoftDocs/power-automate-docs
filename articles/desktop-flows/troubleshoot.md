@@ -42,7 +42,7 @@ Most environments wouldn't require to change the default configuration. If your 
 1. Provide the new account. Ex: DOMAIN\AlexJohnson  
 1. Provide the password of this account and select Configure
  
-![Power Automate Desktop troubleshoot.](\media\troubleshoot\image001.png)
+![Screenshot of the Power Automate Desktop troubleshoot dialog.](\media\troubleshoot\image001.png)
 
 
 ## Delete MSAL file to resolve sign out issues
@@ -55,11 +55,13 @@ To delete the file, [display hidden files](https://support.microsoft.com/windows
 
 If you have installed Power Automate Desktop in another drive, replace **C** with the letter of the respective disk. Also, replace **Username** with the name of the appropriate user.
 
+![Screenshot of the msalcache.bin3 file in the file explorer.](\media\troubleshoot\msal-file.png)
+
 
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 
 In the Troubleshoot tool, select Exports logs link, as shown in the following image.
 
-![Machine logs.](\media\troubleshoot\image003.png)
+![Screenshot of the Machine logs.](\media\troubleshoot\image003.png)
 
 This file is saved to the desktop as a zip file.
