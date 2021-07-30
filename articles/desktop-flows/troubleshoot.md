@@ -44,6 +44,18 @@ Most environments wouldn't require to change the default configuration. If your 
  
 ![Power Automate Desktop troubleshoot.](\media\troubleshoot\image001.png)
 
+
+## Delete MSAL file to resolve sign out issues
+
+Power Automate Desktop creates a file named **msalcache.bin3** to acquire tokens and authenticate users.
+
+If you encounter errors while trying to sign out, delete this file and restart the Power Automate Desktop service.
+
+To delete the file, [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) and navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop**. 
+
+If you have installed Power Automate Desktop in another drive, replace **C** with the letter of the respective disk. Also, replace **Username** with the name of the appropriate user.
+
+
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 
 In the Troubleshoot tool, select Exports logs link, as shown in the following image.
