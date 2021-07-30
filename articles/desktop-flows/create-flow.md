@@ -1,23 +1,19 @@
 ---
 title: Create a Power Automate Desktop flow | Microsoft Docs
 description: Use the Power Automate designer to create a desktop flow.
-author: mariosleon
+author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/15/2021
-ms.author: marleon
-ms.reviewer: deonhe
-ms.custom: intro-internal
+ms.author: v-gtrantzas
+ms.reviewer: v-gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-
-
-
 
 # Create a Power Automate Desktop flow
 
@@ -29,12 +25,12 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
 
-- A work or school account. 
+- To create a desktop flow in Power Automate Desktop, you need a Microsoft work, school or organization premium account. To create and trigger a desktop flow through Power Automate, you need an organization premium or trial premium account.
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
 
-## Trigger the console from the portal
+## Create a new flow in Power Automate Desktop
 
 
 1. To create a desktop flow in Power Automate Desktop, open the app and select **New Flow**.

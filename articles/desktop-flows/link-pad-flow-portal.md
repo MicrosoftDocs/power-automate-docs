@@ -1,13 +1,13 @@
 ---
 title: Trigger a Power Automate Desktop flow from another flow | Microsoft Docs
 description: Link a Power Automate Desktop flow with a cloud flow in the Power Automate portal
-author: mariosleon
+author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: v-gtrantzas
+ms.reviewer: v-gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -34,6 +34,10 @@ search.audienceType:
 1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **+ New flow**, and from the drop-down select **Instant cloud flow**.
 
    ![my flows instant blank.](\media\link-pad-flow-portal\my-flows-instant-blank.png)
+
+   Alternatively, you can select **Automated cloud flow** to create a flow that is triggered by a specific event, like the creation of a new file in an OneDrive for Business account.
+
+   ![Create an automated cloud flow.](\media\link-pad-flow-portal\automated-cloud-flow.png)
 
 1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Manually trigger a flow** and then select **Create**.
 
