@@ -51,7 +51,7 @@ You can find more information on how to use the UI automation actions [here](../
 
 ## Getting started with UI automation
 
-Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. The UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
+Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
 
 To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
 
