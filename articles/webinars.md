@@ -4,6 +4,7 @@ description: Power Automate webinars
 author: KumarVivek
 manager: annbe
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
 ms.date: 06/25/2021

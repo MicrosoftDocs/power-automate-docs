@@ -3,6 +3,7 @@ title: Silent registration for machines  | Microsoft Docs
 description: Silent registration for machines 
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/15/2021
 ms.author: marleon
@@ -36,11 +37,11 @@ To silently register your machine and join a group, we recommend you to use a se
     a.	Go to Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
     b.	Search **app registrations**
-    ![AppDynamics](./media/machines-silent-registration/image001.png)
+    ![AppDynamics.](./media/machines-silent-registration/image001.png)
     
 
     c.	Select **new registration**
-     ![AppRegistration](./media/machines-silent-registration/image003.png)
+     ![AppRegistration.](./media/machines-silent-registration/image003.png)
 
     d.	Define a name and select **Single tenant** (or multi-tenant) then select **register**
 1.	Give your app the following permissions
@@ -61,7 +62,7 @@ To silently register your machine and join a group, we recommend you to use a se
     b.	Directory (tenant) Id
     c.	Client credentials (certificate or thumbprint)
  
-    ![details](./media/machines-silent-registration/image005.png)
+    ![details.](./media/machines-silent-registration/image005.png)
 
 ## How to use the Machine registration App?
 1.	Open **Start** menu
@@ -75,7 +76,7 @@ To silently register your machine and join a group, we recommend you to use a se
     ```
     .\PAD.MachineRegistration.Silent.exe -help
     ```
-    ![PowerShellresults](./media/machines-silent-registration/image007.png)
+    ![PowerShellresults.](./media/machines-silent-registration/image007.png)
 
     
 ## Silently register a new machine
@@ -112,7 +113,7 @@ To join a group silently with the service principal account, use the join group 
 1.	Groupid: the id of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
 1.	Grouppassword: the password of your machine. If this is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. This input isn’t expected to be specified as an input of the command line. See “Secure input” section to see options you can choose to provide it
  
-![groupresults](./media/machines-silent-registration/image009.png)
+![groupresults.](./media/machines-silent-registration/image009.png)
 
 ```
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword

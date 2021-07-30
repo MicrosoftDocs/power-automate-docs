@@ -9,6 +9,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -69,7 +70,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 ```
 
 **Result:**  
-![Export flow](./media/approvals-markdown-support/mrkdown-headers.png)
+![Export flow.](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## Paragraphs and line breaks
 

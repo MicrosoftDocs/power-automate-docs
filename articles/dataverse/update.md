@@ -27,7 +27,7 @@ search.audienceType:
 
 Use the **Update a row** action to make changes to a row in Microsoft Dataverse.
 
-![Image that displays the Update a row action](../media/update-row/update-row-action.png)
+![Image that displays the Update a row action.](../media/update-row/update-row-action.png)
 
 For example, you can create a flow that updates an **Account** in Dataverse when you receive an email, as shown in the following image.
 

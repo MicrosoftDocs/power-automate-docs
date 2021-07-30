@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -181,7 +182,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 2. Open **Case entity session – default template** (or your current case entity session template), open **Agent scripts** tab, and then add **Case agent script with automation**.
 
-    ![Case agent script with automation](./media/dynamics365-cs-rpa/case-entity-session.png)
+    ![Case agent script with automation.](./media/dynamics365-cs-rpa/case-entity-session.png)
 
     Learn more about [session templates](https://docs.microsoft.com/dynamics365/app-profile-manager/session-templates).
 

@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -51,7 +52,7 @@ To complete this example, you'll need accounts with access to the following:
 
     Your flow appears, showing each action with an orange title bar.
 
-    ![Default events and actions from template](./media/get-started-logic-template/template-default.png)
+    ![Default events and actions from template.](./media/get-started-logic-template/template-default.png)
 
 ## Customize your flow
 

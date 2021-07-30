@@ -3,6 +3,7 @@ title: Authentication and security for planning a Power Automate project | Micro
 description: Different automation scenarios require Power Automate to use different authentication methods. This article explains them.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -22,7 +23,7 @@ sign in to the systems or computers to do the tasks manually. Below are some
 examples of different types of authentication (sign-ins) that can be used when
 automating with Power Automate.
 
-![Different types of automation](media/automation-types.png "Different types of automation")
+![Different types of automation.](media/automation-types.png "Different types of automation")
 
 To set up the automation, make sure you have the necessary authentication
 (sign-in) information ready. You'll need this information when you're [making a new connection](../../add-manage-connections.md) to set up your automation, setting up to [access data via an on-premises data gateway](../../add-manage-connections.md#connect-to-your-data-through-an-on-premises-data-gateway),
@@ -41,7 +42,7 @@ This is the authentication for any automation that you use with Microsoft
 services. When the automation is run, it runs on behalf of the user
 who's running the automation and not the user who set up the automation originally.
 
-![Azure AD sign-in screen](media/azure-ad-login.png "Azure AD sign-in screen")
+![Azure AD sign-in screen.](media/azure-ad-login.png "Azure AD sign-in screen")
 
 ## Authentication by using a username and password
 
@@ -50,7 +51,7 @@ independent system other than what's used with Microsoft 365 and Azure Active Di
 Twitter all have their own methods for authentication. Some enterprise systems provide
 [single sign-on (SSO)](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-![Browser sign-in pop-up window](media/browser-login.png "Browser sign-in popup window")
+![Browser sign-in pop-up window.](media/browser-login.png "Browser sign-in popup window")
 
 In the expense reporting example, the online banking system has its own
 sign-in ID and password.
@@ -62,7 +63,7 @@ with the Power Automate Desktop application or desktop flows. It's separate from
 Microsoft 365 or Azure AD. If a computer is connected to a corporate
 network, it's highly likely that it uses Windows Server Active Directory.
 
-![Windows sign-in screen](media/windows-login.jpg "Windows sign-in screen")
+![Windows sign-in screen.](media/windows-login.jpg "Windows sign-in screen")
 
 ## Authentication by using a shared key
 
@@ -71,7 +72,7 @@ system-to-system (API) automation where the services are shared across the
 company. This is typically provided and set up by your IT department, where the
 connector is shared with you.
 
-![API keys in the Azure portal](media/azure-api-key.png "API keys in the Azure portal")
+![API keys in the Azure portal.](media/azure-api-key.png "API keys in the Azure portal")
 
 > [!div class="nextstepaction"]
 > [Next step: Defining inputs and outputs](define-input-output.md)

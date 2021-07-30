@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -34,7 +35,7 @@ There are multiple ways in which you can notify an approver when a flow runs. By
 
 To avoid this, you can choose to disable the default notification email that is sent to the user as part of approval creation. 
 
-![Disable default email notification](./media/create-approval-response-options/disable-default-notification.png)
+![Disable default email notification.](./media/create-approval-response-options/disable-default-notification.png)
 
 **Abandoned approvals in the approval action center**
 

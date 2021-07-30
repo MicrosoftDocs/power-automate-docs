@@ -3,6 +3,7 @@ title: Get the coordinates and size of a web element | Microsoft Docs
 description: Get the coordinates and size of a web element
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/04/2021
 ms.author: getrantz

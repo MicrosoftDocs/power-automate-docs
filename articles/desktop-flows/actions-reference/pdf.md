@@ -3,6 +3,7 @@ title: PDF | Microsoft Docs
 description: PDF Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -33,13 +34,13 @@ Use the PDF action group to extract images and text from PDF files and arrange p
 
 To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified, and the action is configured to extract text from a range of pages. In the **Advanced** section, a password has been entered to access the secure file.
 
-![Screenshot of extract text from pdf action properties](media\pdf\extract-text-pdf-example.png)
+![Screenshot of extract text from pdf action properties.](media\pdf\extract-text-pdf-example.png)
 
 Similarly, extract images with the **Extract images from PDF** action. This action contains an additional option to specify a prefix for the image names.
 
 To create a new PDF document from an existing file, use the **Extract PDF file pages to new PDF file**. In the example below, the source document has been selected, and a file name for a new document has been specified. The pages have been entered as a combination of specific pages and a range.
 
-![Screenshot of extract pdf pages to new file action properties](media\pdf\extract-pdf-new-file-example.png)
+![Screenshot of extract pdf pages to new file action properties.](media\pdf\extract-pdf-new-file-example.png)
 
 
 ## PDF actions

@@ -3,6 +3,7 @@ title: Clipboard | Microsoft Docs
 description: Clipboard Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -34,7 +35,7 @@ To obtain the contents of the clipboard and store them in a variable, use the **
 
 To change the text of the clipboard, use the **Set clipboard text** action. In the example below, a variable with the current date and time has been set to the clipboard. The next paste command will paste the value of the variable.
 
-![screenshot of set clipboard text action properties](media\clipboard\set-clipboard-text-example.png)
+![screenshot of set clipboard text action properties.](media\clipboard\set-clipboard-text-example.png)
 
 To clear the clipboard, use the **Clear clipboard contents** action.
 

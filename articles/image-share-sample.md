@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -25,7 +26,7 @@ search.audienceType:
 
 The **Image Share Form** sample is an Adaptive Card designed for sharing photos that have been posted to SharePoint and which may be a dependency for a process to complete (such as processes related to inspection, compliance, and audits). This is a display only adaptive card.
 
-![Display only adaptive card](media/adaptive-cards/image-share.png)
+![Display only adaptive card.](media/adaptive-cards/image-share.png)
 
 *Inputs/Outputs and notes*
 

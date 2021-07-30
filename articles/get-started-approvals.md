@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -40,9 +41,9 @@ When you submit an approval in a flow, approvers are notified and can review and
   
 *Actions* are the events you want your flow to perform after the trigger starts the flow. For example, when a new item is added to a SharePoint list, trigger an approval to have somebody review the new item. 
 
-Here's the full list of [Approval actions](https://docs.microsoft.com/connectors/approvals/#actions) that you can use in your flows.  
+Here's the full list of [Approval actions](/connectors/approvals/#actions) that you can use in your flows.  
   
-![List of approval actions](media/get-started-approvals/list-approval-actions.png)
+![List of approval actions.](media/get-started-approvals/list-approval-actions.png)
 
 If you want to quickly get started with approvals, use the **Start and wait for an approval** action. This action lets you provide the information that should be in the approval request and the approvers who will receive the request. 
 
@@ -72,7 +73,7 @@ When you create approval flows, they are saved in Dataverse. Initially, when you
 It can take a few minutes for the database provisioning to complete, and you’ll notice this delay the first time that you run the flow. Other users who create approval flows do not need any elevated permissions in the environment.
 
 >[!NOTE]
->If you're using the default environment, you don't need to provision the Dataverse database. 
+>If you're using the default environment, you don't need to provision the Dataverse database. If you create approval flows, the Dataverse database is created for you automatically in the default environment.
 
 ## License to create flows
 
@@ -94,14 +95,14 @@ Use one of the following options to get started creating approval flows.
    >[!TIP]
    >You can [copy paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the editing process.   
 
-1. Create an approval flow from scratch - If you couldn't find a suitable template, you can create a flow from scratch and then connect it to the services and the approvals you need by using the approvals actions. Learn [how to create a flow from scratch](https://docs.microsoft.com/power-automate/get-started-logic-flow).  
+1. Create an approval flow from scratch - If you couldn't find a suitable template, you can create a flow from scratch and then connect it to the services and the approvals you need by using the approvals actions. Learn [how to create a flow from scratch](./get-started-logic-flow.md).  
 
 1. Consult the community for inspiration and help - Power Automate has a thriving community that can help if you are stuck or looking for some inspiration. Just head over to the [Power Automate forums](https://powerusers.microsoft.com/t5/Building-Flows/bd-p/BuildingFlows) to ask specific questions and get answers.
 
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant, including guest users. 
+You can assign approvals to users in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant, including guest users and Microsoft 365 groups. 
 
 When you assign an approval to users who are not in your environment, they are automatically added so that we can process their responses and persist them for approvals history. 
 

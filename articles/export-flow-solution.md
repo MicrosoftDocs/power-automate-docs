@@ -7,6 +7,7 @@ documentationcenter: na
 author: msftman
 manager: kvivek
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 10/06/2020
 ms.author: deonhe

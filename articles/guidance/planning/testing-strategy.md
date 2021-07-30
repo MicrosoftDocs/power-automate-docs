@@ -3,6 +3,7 @@ title: Testing strategy for a Power Automate project | Microsoft Docs
 description: After you've completed your automation, the next step is for you to test it out. This article explains about the testing strategies you should consider.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -23,7 +24,7 @@ mistakes, rather than attempting to build the entire flow and then testing it.
 
 Let's take a look at the example shown in the following illustration.
 
-:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow":::
+:::image type="complex" source="media/compliance-flow.png" alt-text="Example of a compliance check flow.":::
    From "Expense report created," an arrow leads to the decision "Check if report meets compliance." From "Check if report meets compliance," Yes leads to "Status updated to 'Compliance check complete'" and No leads to "Request fixes."
 :::image-end:::
 

@@ -3,6 +3,7 @@ title: Active Directory | Microsoft Docs
 description: Active Directory Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -182,7 +183,7 @@ Modifies a group in the Active Directory
 ##### <a name="modifygroupaction_example"></a> Example
 In the following example, the Modify group action is used to add the user nvarga to the RPATest group.  
 
-![Modify Group action example](media\activedirectory\modify-ad-group-properties-exercise.png)
+![Modify Group action example.](media\activedirectory\modify-ad-group-properties-exercise.png)
 
 ## Object
 Create or manipulate an object in an Active Directory server
@@ -330,7 +331,7 @@ Creates a user in the Active Directory
 
 The following figure is an example of creating a user. The user's name is Norbert Varga and their username is nvarga. The user is created in the Users container, an the domain controllers contoso and demo are specified in the location as well.
   
-  ![Create User action example](media\activedirectory\create-ad-user-properties-exercise.png)
+  ![Create User action example.](media\activedirectory\create-ad-user-properties-exercise.png)
 
 ### <a name="getuserinfo"></a> Get user info
 Gets a user's information in the Active Directory

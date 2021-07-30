@@ -3,6 +3,7 @@ title: Wait | Microsoft Docs
 description: Wait Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -41,11 +42,11 @@ To create a delay before the next action, use a **Wait** action. This action set
 
 To create a delay until a specific file appears, use the **Wait for file** action. This action requires the path, filename of the expected file. In the example below, the action is set to fail with a timeout error if the specified file does not appear in the specified directory for 300 seconds.
 
-![Screenshot of wait for file action properties](\media\wait\wait-for-file-example.png)
+![Screenshot of wait for file action properties.](\media\wait\wait-for-file-example.png)
 
 When working with UI elements, create a delay until a specific element appears with the **Wait for window content** action. In the figure below, the action waits until a selected UI element **Start button** appears in its disabled (inactive) state.
 
-![Screenshot of wait for window content action properties](\media\wait\wait-for-window-content-example.png)
+![Screenshot of wait for window content action properties.](\media\wait\wait-for-window-content-example.png)
 
 This action works similarly to the **Wait for web page content** action, where a UI element is expected to appear on or disappear from a webpage instead.
 

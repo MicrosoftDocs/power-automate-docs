@@ -3,6 +3,7 @@ title: Identify a window by its handle | Microsoft Docs
 description: Identify a window by its handle
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
 ms.author: getrantz

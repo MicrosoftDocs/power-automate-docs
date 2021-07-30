@@ -9,10 +9,11 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/02/2021
+ms.date: 07/09/2021
 ms.author: marleon
 search.app: 
   - Flow 
@@ -24,7 +25,7 @@ search.audienceType:
 
 # Install Power Automate Desktop on your device
 
-The installer contains all the components you need to record, edit, and test your automations. 
+The installer contains all the components you need to record, edit, and test your automations, as well as connect to the cloud.
 
 ## Install Power Automate Desktop
 
@@ -42,11 +43,14 @@ Follow these steps to install the Power Automate Desktop app:
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate Desktop app and third-party components.
 
-![Installation options image](../media/desktop-flows-setup/installer-checkboxes.png)
+![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
+
+>[!NOTE]
+>Power Automate Desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate Desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
 
 ### Set data collection options
 
-During installation, you can change the default settings if you do not want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
+During installation, you can change the default settings if you don't want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
 >[!IMPORTANT]
 >Sharing usage data to Microsoft, will help the support department to solve a Power Automate Desktop issue.
@@ -55,7 +59,7 @@ During installation, you can change the default settings if you do not want to s
 
 After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image](../media/desktop-flows-setup/screen.png)
+![Installation success image.](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -94,7 +98,7 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
 1. Search for **command prompt**, and then run it as the administrator.
 
-   ![A screenshot that displays the command prompt on the start menu](../media/desktop-flows-setup/command-prompt.png)
+   ![A screenshot that displays the command prompt on the start menu.](../media/desktop-flows-setup/command-prompt.png)
 
 1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate Desktop):
 
@@ -125,13 +129,13 @@ You can also retrieve the details of all the command line arguments from the hel
    Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
-| Command              | Description                                                                                                                                                                        |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| -INSTALLPATH:Value  | The full path of the installation folder that will be created. The default is `%PROGRAMFILES(X86)%\Power Automate Desktop`.                                                             |
-| -DISABLEPADSHORTCUT | By default, a shortcut of Power Automate Desktop app is created on the desktop, use this argument to indicate that you do not want to be created.                                                                 |
-| -DISABLETURNONRD   | Use the argument if you do not want the installer to turn on Remote Desktop on the device. You must turn on Remote Desktop if you want support for unattended runs. |
-| -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
-| -HELP               | This argument displays all details about the arguments for the installer prompt                                                                                                                   |
+|Command|Description|
+|----|----|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate Desktop`.|
+|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate Desktop app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
+|-DISABLETURNONRD|Use the argument if you don't want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
+|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate Desktop.|
+|-HELP|This argument displays all details about the arguments for the installer prompt.|
 
 Here's an example of a command line argument that installs Power Automate Desktop: 
 
@@ -156,6 +160,9 @@ To update Power Automate Desktop, use the same command line arguments that you u
 
 ### Install the gateway with PowerShell Cmdlets
 
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+
 You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
 
 You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
@@ -170,23 +177,31 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections**.
 
-   ![A screenshot of the connections tab](../media/desktop-flows-setup/connections-tab.png)
+   ![A screenshot of the connections tab.](media/desktop-flows-setup/connections-tab.png)
 
 1. Select New connection.
 
-   ![A screenshot of a connection](../media/desktop-flows-setup/new-connection.png)
+   ![A screenshot of a connection.](media/desktop-flows-setup/new-connection.png)
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
 
-   <!-- ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png) -->
+   <!-- ![A screenshot of the search box.](../media/desktop-flows-setup/search-desktop-flow.png) -->
 
-1. Provide the gateway information and device credentials: 
+1. Provide the machine or gateway information and device credentials: 
+ 
+   - To connect to a machine or a machine group, select **Directly to machine** in the **Connect** field, and choose the respective machine or machine group in the **Machine or machine group** field.
 
-    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
-    - **Password**: Your account’s password.
-    - **Choose a gateway**: Select the gateway you want to use.
+      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
 
-      ![A screenshot that shows where to enter the credentials for the connection](../media/desktop-flows-setup/credentials-screen.png)
+   - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field, and choose the respective gateway in the **Choose a gateway** field.
+
+      ![The Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
+
+   - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
+
+   - **Password**: Your account’s password.
+
+      ![A screenshot that shows where to enter the credentials for the connection.](media/desktop-flows-setup/credentials-screen.png)
 
 1. Select **Create**.
 
@@ -206,7 +221,7 @@ Follow these steps to install Windows recorder (v1) extension:
 
 ## Install Selenium IDE to automate Web applications with desktop flows (optional)
 
-The Selenium IDE is an open source tool that lets you record and playback human interactions on Websites.
+The Selenium IDE is an open source tool that lets you record and playback human interactions on websites.
 
 With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
@@ -219,6 +234,9 @@ Follow these steps to install Selenium IDE:
 1. On Microsoft Edge (version 80 or later), select **Allow extensions from other stores**, and then select **Add to Chrome**.
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
+
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
@@ -234,6 +252,9 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >When you install the gateway, it defaults to the region that Power Automate uses.
 
 ## Troubleshoot missing gateway
+
+> [!NOTE]
+> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You might not find the gateway in the list while creating the connection for the following reasons:
 

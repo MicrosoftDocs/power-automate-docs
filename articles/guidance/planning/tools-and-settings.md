@@ -3,6 +3,7 @@ title: Tools to test your Power Automate automation | Microsoft Docs
 description: This article introduces you to different tools you can use to check your flows and to detect errors that occur when the automation runs.
 author: taiki-yoshida
 ms.service: power-automate
+ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
 ms.date: 12/10/2020
@@ -36,7 +37,7 @@ setting an action that runs only when the previous step has failed.
 In the example below, when the **Get manager (V2)** action fails to run, the
 **Send an email notification (V3)"**action is executed.
 
-![Setting up an action to run after the previous step has failed](media/custom-error-notifications.png "Setting up an action to run after the previous step has failed")
+![Setting up an action to run after the previous step has failed.](media/custom-error-notifications.png "Setting up an action to run after the previous step has failed")
 
 > [!div class="nextstepaction"]
 > [Next step: Deploying and refining phase](deploy-to-production.md)

@@ -6,6 +6,7 @@ suite: flow
 author: msftman
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 05/17/2021
 ms.author: deonhe
@@ -252,7 +253,7 @@ Formerly, US Government customers needed to contact support before configuring t
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-- [AI Builder](/ai-builder/) is not yet available for GCC, GCC High, nor DoD tenants.
+- [AI Builder](/ai-builder/) is not yet available in DoD tenants.
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.

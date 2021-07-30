@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -33,26 +34,26 @@ Follow these steps to create a cloud flow that posts an adaptive card to the gen
 1. Sign in to Microsoft Teams.
 1. Select the **Teams** icon in the navigation bar on the left, and then select the **Strategy and Planning** team.
 
-    ![Select teams](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Select teams.](media/create-adaptive-cards-teams/select-teams-team.png)
 
 1. Select the **Flow** tab at the top of the screen.
 1. Select the **+** (Create from blank) icon.
 1. Search for **recurrence**, and then select the **Recurrence** trigger.
 
-    ![Recurrence card](media/create-adaptive-cards-teams/select-recurrence.png)
+    ![Recurrence card.](media/create-adaptive-cards-teams/select-recurrence.png)
 
 1. Set the schedule as follows to repeat every week, at a time and time zone of your choice:
     
-    ![Recurrence card](media/create-adaptive-cards-teams/recurrence-card.png)
+    ![Recurrence card.](media/create-adaptive-cards-teams/recurrence-card.png)
     
 1. Select **New step**.
 1. Search for **adaptive**, select **Microsoft Teams**, and then select the **Post your own adaptive card as the Flow bot to a channel (preview)** action.
 
-   ![Adaptive card](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
+   ![Adaptive card.](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
 1. Provide a **Team**, **Channel**, and **Message** on the **Post your own adaptive card as the Flow bot to a channel (Preview)** card to indicate the team and channel to which the adaptive card **Message** will be posted.
 
-   ![Adaptive card](media/create-adaptive-cards-teams/adaptive-card-message.png)
+   ![Adaptive card.](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
    You can use this sample JSON content for the **Message**:
 
@@ -133,7 +134,7 @@ Follow these steps to create a cloud flow that posts an adaptive card to the gen
 
 Notice, after the recurrence time elapses, the flow posts the adaptive card's content to the team channel that you defined.
 
-![Run the flow](media/create-adaptive-cards-teams/flow-run-result.png)
+![Run the flow.](media/create-adaptive-cards-teams/flow-run-result.png)
 
 ## Learn more
 

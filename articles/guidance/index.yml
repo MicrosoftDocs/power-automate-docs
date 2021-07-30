@@ -8,7 +8,7 @@ metadata:
   description: Provides best practice guidance information for Power Automate.
   services: service
   ms.service: power-automate 
-  ms.subservice: subservice
+  ms.subservice: guidance
   ms.topic: landing-page 
   ms.collection: collection
   author: taiki-yoshida

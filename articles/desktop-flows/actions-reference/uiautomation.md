@@ -3,6 +3,7 @@ title: UI automation | Microsoft Docs
 description: UI automation Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -28,6 +29,7 @@ You can find more information on how to use the UI automation actions [here](../
 |[Get selected checkboxes in window](#getselectedcheckboxesinwindow)|
 |[Get selected radio button in window](#getselectedradiobuttoninwindow)|
 |[Extract data from window](#extractdatafromwindow)|
+|[Take screenshot of UI element](#takescreenshot)|
 |[Focus text field in window](#focustextfield)|
 |[Populate text field in window](#populatetextfield)|
 |[Press button in window](#pressbutton)|
@@ -157,6 +159,29 @@ Extracts data from specific parts of a window in the form of single values, list
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
+
+### <a name="takescreenshot"></a> Take screenshot of UI element
+Takes a screenshot of a UI element in window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|UI element|No|UIControl||The UI element in the window to capture as screenshot|
+|Save mode|N/A|Clipboard, File|Clipboard|Specify whether to save the image into a file or store it into the clipboard|
+|Image file path|No|File||Set the full path for the file to be saved|
+|File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|The file format of the image file|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ImageFile|File|The file path of the generated screenshot image file|
+
+##### <a name="takescreenshot_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to retrieve UI element|Indicates a problem retrieving the UI element|
+|Failed to save image|Indicates a problem saving the taken screenshot|
+|Failed to take screenshot of UI element|Indicates a problem taking a screenshot of the UI element|
 
 ## Form filling
 Fill-in forms on desktop applications
@@ -485,8 +510,8 @@ Clicks on any UI element of a window
 |UI element|No|UIControl||The UI element to click on|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
-|Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
-|Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
+|Offset X|Yes|Text value|0|Offset the mouse from the position by this many pixels to the right|
+|Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
 
 
 ##### Variables Produced
@@ -523,12 +548,12 @@ Drags and drops a UI element of a window
 |UI element to drag|No|UIControl||The UI element to drag|
 |UI element to drop over|No|UIControl||The UI element to drop over|
 |Click type|N/A|Left click, Right click|Left click|Specify which mouse button to use for clicking and holding down, while dragging the UI element over to its destination|
-|Mouse down offset X|Yes|Numeric value|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
-|Mouse down offset Y|Yes|Numeric value|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
-|Mouse down position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to prior to clicking|
-|Mouse up offset X|Yes|Numeric value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels to the right|
-|Mouse up offset Y|Yes|Numeric value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels downwards|
-|Mouse up position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to after clicking|
+|Mouse down offset X|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
+|Mouse down offset Y|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
+|Mouse down position relative to drag-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drop the mouse onto prior to clicking|
+|Mouse up offset X|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels to the right|
+|Mouse up offset Y|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels downwards|
+|Mouse up position relative to drop-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drag the mouse onto after clicking|
 
 
 ##### Variables Produced

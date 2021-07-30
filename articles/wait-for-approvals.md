@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -29,7 +30,7 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
 
 * Create a simple SharePoint list that's named **Project Tracker**, add a column named **Title**, and then add a Person or Group column named **Assigned To**.
 
-   ![Image of Project Tracker SPO list](./media/wait-for-approvals/project-tracker.png)
+   ![Image of Project Tracker SPO list.](./media/wait-for-approvals/project-tracker.png)
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
@@ -44,7 +45,7 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
 
 1. Under **List Name**, select the list you created earlier. If you're following along, the name is **Project Tracker**.
 
-    ![Image of SPO list name](./media/wait-for-approvals/SPO-list-name.png)
+    ![Image of SPO list name.](./media/wait-for-approvals/SPO-list-name.png)
 
 ## Add the resulting action
 
@@ -61,17 +62,17 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
     > [!NOTE]
     > You can customize the **Subject** and **User Options** fields to suit your needs.
 
-    ![Image of send approval email to field](./media/wait-for-approvals/send-approval-email-to.png)
+    ![Image of send approval email to field.](./media/wait-for-approvals/send-approval-email-to.png)
 
 ## Add a condition
 
 1. Select the **New step** button, and then select **Add a condition**.
 
-    ![Image of add a condition](./media/wait-for-approvals/add-a-condition.png)
+    ![Image of add a condition.](./media/wait-for-approvals/add-a-condition.png)
 1. Select the first box, and then select the **SelectedOption** token.
 1. Select the last box, and then type **Approve**.
 
-    ![Image of the condition card](./media/wait-for-approvals/condition-card-2.png)
+    ![Image of the condition card.](./media/wait-for-approvals/condition-card-2.png)
 
 1. In the **If yes** area, select **Add an action**.
 
@@ -88,17 +89,17 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
     > [!NOTE]
     > The person who created the item in the SharePoint list will be notified whether the project was approved or rejected.
 
-    ![Image of yes-send-email](./media/wait-for-approvals/if-yes-send-email-card-3.png)
+    ![Image of yes-send-email.](./media/wait-for-approvals/if-yes-send-email-card-3.png)
 
 1. In the **If no** area, repeat the last five steps except change the **Subject** and **Body** to reflect that the project was rejected.
 
-     ![Image of no-send-email](./media/wait-for-approvals/no-send-email-2.png)
+     ![Image of no-send-email.](./media/wait-for-approvals/no-send-email-2.png)
 
 ## Finish and test your flow
 
 1. Give your flow a name, and then select **Create flow**.
 
-     ![Image of create-flow](./media/wait-for-approvals/create-flow.png)
+     ![Image of create-flow.](./media/wait-for-approvals/create-flow.png)
 1. Create an item in your SharePoint list.
 
     An approval email is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that email, you receive email that indicates the response.

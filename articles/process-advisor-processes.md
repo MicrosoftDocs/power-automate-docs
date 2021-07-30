@@ -3,6 +3,7 @@ title: Work with processes and recordings | Microsoft Docs
 description: How to create and work with processes in process advisor.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -88,7 +89,7 @@ After you create the process, you'll see a creation successful modal with a few 
 1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
 
    > [!div class="mx-imgBorder"]
-   > ![Launch recorder in Power Automate Desktop](./media/launch-recorder.png)
+   > ![Launch recorder in Power Automate Desktop.](./media/launch-recorder.png)
 
 ## Power Automate Desktop recorder
 
@@ -97,7 +98,7 @@ After you create the process, you'll see a creation successful modal with a few 
 1. Perform the actions that you want to record, and then select **Finish** at the bottom of the recorder screen.
 
    > [!div class="mx-imgBorder"]
-   > ![Record actions in Power Automate Desktop](./media/desktop-recorder.png)
+   > ![Record actions in Power Automate Desktop.](./media/desktop-recorder.png)
 
 1. Once the recording has saved successfully, select **Got it** to close the message.
 
@@ -136,7 +137,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 1. Name your activity on the right side of the screen. Use the dropdown menu to find activity names that already exist for the process or create your own.
 
    > [!div class="mx-imgBorder"]
-   > ![Group actions into](./media/group-actions.png)
+   > ![Group actions into.](./media/group-actions.png)
  
 1. If you made a mistake and want to delete an activity, use the **Delete activity** button in the command bar.
 

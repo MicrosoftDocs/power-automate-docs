@@ -5,6 +5,7 @@ ms.custom: ""
 ms.date: 04/19/2021
 ms.reviewer: ""
 ms.service: "flow"
+ms.subservice: developer
 ms.topic: "article"
 ms.assetid: 67d8cf80-9f77-4804-97a1-cf9f61417e83
 author: "msftman"
@@ -71,7 +72,7 @@ You can retrieve the name of your business process flow table using any of the f
 
 - **Using the UI**: Use the customization UI to browse to your business process flow table:
 
-    ![Browse to your business process flow table using UI](media/bpf-entity-name.png)
+    ![Browse to your business process flow table using UI.](media/bpf-entity-name.png)
 - **Using the Web API**: Use the following request:
 
     **Request**
@@ -128,7 +129,7 @@ The custom table that is automatically created on activating a business process 
 
 The custom business process flow table has organization scope. The regular create, retrieve, update and delete privileges on this table define the permission users would have based on their assigned roles. By default, when the business process flow custom table is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow table (for example, **My Custom BPF**) for other security roles as required.
 
-![Security Role management](media/bpf-privileges.png)
+![Security Role management.](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
 ## Create, retrieve, update, and delete business process flow table rows (process instances)  
@@ -139,7 +140,7 @@ The custom business process flow table has organization scope. The regular creat
 
  Lets consider the following example where we have a cross-table business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
 
- ![Custom business process flow](media/sample-bpf.png)
+ ![Custom business process flow.](media/sample-bpf.png)
  
 ### Retrieve all the rows (instances) for a business process flow table
  If the name of your business process flow table is "new_mycustombpf", use the following query to retrieve all the rows (process instances) for your business process flow table:  

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -25,7 +26,7 @@ search.audienceType:
 
 The **create a poll** sample is an Adaptive Card input form that's designed for submitting polls to Microsoft Teams. Replace the display text in this card to customize for the poll. This adaptive card enables you to take different decision paths based on the responses given in the poll values, or voting counts, of card consumers.
 
-![Poll sample](media/adaptive-cards/poll.png)
+![Poll sample.](media/adaptive-cards/poll.png)
 
 *Inputs/Outputs and notes*
 

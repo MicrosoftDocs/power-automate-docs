@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -34,10 +35,10 @@ To ensure that your flows run as you expect, perform the trigger, and then revie
 
     The starting action and each subsequent step indicates whether it succeeded and how long it took.
 
-    ![Image of a successful run](./media/see-a-flow-run/successful-flow-run.png)
+    ![Image of a successful run.](./media/see-a-flow-run/successful-flow-run.png)
 1. Select the trigger or action to see its inputs and outputs.
 
-    ![Image of a successful run with expanded cards](./media/see-a-flow-run/successful-flow-expanded-cards.png)
+    ![Image of a successful run with expanded cards.](./media/see-a-flow-run/successful-flow-expanded-cards.png)
 1. Select **Edit flow** to make more changes or select **Done** if the flow works as you expect.
 
 

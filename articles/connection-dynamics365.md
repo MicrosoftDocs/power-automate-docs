@@ -7,6 +7,7 @@ documentationcenter: na
 author: JimDaly
 ms.reviewer: deonhe
 ms.service: power-automate
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 05/31/2020
 ms.author: jdaly
@@ -64,7 +65,7 @@ If a template isn’t available for what you need, create a cloud flow from scra
    
      For this walkthrough, select **Leads**.
    
-    ![Flow details](./media/connection-dynamics365/flow-details.png)
+    ![Flow details.](./media/connection-dynamics365/flow-details.png)
     > [IMPORTANT]
     > In order for the flow to trigger on the Dynamics 365 table, the table definition must have **Change Tracking** enabled. See [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
@@ -81,7 +82,7 @@ If a template isn’t available for what you need, create a cloud flow from scra
     
     For this walkthrough, select **Topic**.
     
-    ![Flow add topic](./media/connection-dynamics365/flow-addtopic.png)
+    ![Flow add topic.](./media/connection-dynamics365/flow-addtopic.png)
     
     > **Tip:** On the dynamic content pane, click or tap **See more** to display more columns that are associated with the table. For example, you can also populate the **Subject** column of the task with the **Company Name**, **Customer**, **Description**, or **Email** column of the lead.
     > 
@@ -100,7 +101,7 @@ When you add a step to a cloud flow, you can click or tap **Show advanced option
 
 For example, you can use a filter query to retrieve only active contacts, and you can order them by last name. To do this, enter the OData filter query **statuscode eq 1** and select **Last Name** from the dynamic content pane. For more information about filter and order by queries, see [Query data > Filter results](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) and [Query data > Order results](/powerapps/developer/common-data-service/webapi/query-data-web-api#order-results).
 
-  ![Flow orderby query](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Flow orderby query.](./media/connection-dynamics365/flow-orderby-query.png)
 
 ### Best practices when using advanced options
 
@@ -133,11 +134,11 @@ Expanding on the previous table, here are more examples of columns that don't wo
 
 This example adds an account row that corresponds to the row ID, adding it to the **Regarding** column of the task.
 
-  ![Flow rowId and type account](./media/connection-dynamics365/flow-recordid-account.png)
+  ![Flow rowId and type account.](./media/connection-dynamics365/flow-recordid-account.png)
 
 This example also assigns the task to a specific user based on the user's row ID.
 
-  ![Flow rowId and type user](./media/connection-dynamics365/flow-recordid-user.png)
+  ![Flow rowId and type user.](./media/connection-dynamics365/flow-recordid-user.png)
 
 To find a row's ID, see [Find the row ID](#find-the-rows-id) later in this topic.
 
@@ -149,11 +150,11 @@ To find a row's ID, see [Find the row ID](#find-the-rows-id) later in this topic
 
 1. In the Dynamics 365 web application, open a row, such as an account row.
 2. On the actions toolbar, click or tap **Pop Out**
-   ![popout row](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
+   ![popout row.](./media/connection-dynamics365/popout.png) (or click or tap **EMAIL A LINK** to copy the full URL to your default email program).
    
     In the address bar of the web browser, the URL contains the row ID between the %7b and %7d encoding characters.
    
-   ![A screenshot that displays the rowId](./media/connection-dynamics365/recordid.png)
+   ![A screenshot that displays the rowId.](./media/connection-dynamics365/recordid.png)
 
 ## Related topics
 

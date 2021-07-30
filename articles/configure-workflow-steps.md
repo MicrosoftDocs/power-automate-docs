@@ -7,6 +7,7 @@ ms.reviewer: ""
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: "article"
 author: "Mattp123"
 ms.assetid: 0b47dfd5-76db-464f-90c0-c64a0173dcdd
@@ -78,7 +79,7 @@ The actions that you will apply often depend on conditions. Background workflow 
   
 The following screenshot contains an example of the background workflow process definition with the **Under** and **Not Under** hierarchical operators. In our example, we apply two different discounts to two groups of accounts. In **Add Step**, we selected the **Check Condition** to specify the **if-then** condition containing the **Under** or **Not Under** operators. The first **if-then** condition applies to all accounts that are **Under** the Alpine Ski House account. These accounts receive a 10 percent discount on purchased goods and services. The second **if-then** condition applies to all accounts that are **Not Under** the Alpine Ski House account and they receive a 5 percent discount. Then, we selected **Update row** to define the action to be performed based on the condition.  
   
-![Workflow process with Under&#47;Not Under operators](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")  
+![Workflow process with Under&#47;Not Under operators.](media/wfp-under-not-under.PNG "Workflow process with Under/Not Under operators")  
   
   
 ## Next steps  

@@ -3,6 +3,7 @@ title: Mouse and keyboard | Microsoft Docs
 description: Mouse and keyboard Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -38,7 +39,7 @@ Take control of the mouse and keyboard
 
 Simulate using the keyboard to enter text or other key commands with the **Send Keys** action. Use the **Insert special key** button to insert keys such as the arrow keys, Caps Lock or keys from the numeric keypad, and Insert modifier to send keys such as Shift and Control. In the example below, a signature is added to an email message, starting with two line breaks. At the end of the text, the action sends the Ctrl+A and Ctrl+C commands, to select all and copy, to use the contents of the entire email text from the clipboard in a subsequent action.
 
-![Screenshot of send keys action properties](\media\mousekeyboard\send-keys-example.png)
+![Screenshot of send keys action properties.](\media\mousekeyboard\send-keys-example.png)
 
 > [!NOTE]
 > To use a key as a modifier, use the curly brackets notation for both keys:
@@ -46,15 +47,15 @@ Simulate using the keyboard to enter text or other key commands with the **Send 
 
 To simulate moving the mouse, use the **Move mouse** action. In the following example, the mouse has been set to move to specific coordinates by moving the pointer there manually, and pressing Control+Shift to set its current coordinates for Position X & Y. The movement speed has been set to normal.
 
-![Screenshot of move mouse action properties](\media\mousekeyboard\move-mouse-example.png)
+![Screenshot of move mouse action properties.](\media\mousekeyboard\move-mouse-example.png)
 
 Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. 
 
-![Screenshot of move mouse to image properties](\media\mousekeyboard\move-mouse-to-image-example.png)
+![Screenshot of move mouse to image properties.](\media\mousekeyboard\move-mouse-to-image-example.png)
 
 In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
 
-![Screenshot of move mouse to image advanced properties](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
+![Screenshot of move mouse to image advanced properties.](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
 
 
 ## Mouse and keyboard actions
@@ -133,8 +134,8 @@ Moves the mouse over an image found on screen or on the foreground window
 |X2|Yes|Numeric value||The ending X of the subregion to search in|
 |Y2|Yes|Numeric value||The ending Y of the subregion to search in|
 |Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
-|Offset X|Yes|Numeric value|0|The pixels to offset the mouse from the position to the right|
-|Offset Y|Yes|Numeric value|0|The pixels to offset the mouse from the position down|
+|Offset X|Yes|Text value|0|The pixels to offset the mouse from the position to the right|
+|Offset Y|Yes|Text value|0|The pixels to offset the mouse from the position down|
 |Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
 |Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
 |Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
@@ -189,9 +190,9 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click type to send to the text|
 |Wait before clicking for|Yes|Numeric value|1|The number of seconds to wait before clicking|
-|Mouse position relative to text|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|Specify which section of the text the mouse will be moved to|
-|Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
-|Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
+|Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse will be moved to|
+|Offset X|Yes|Text value|0|Offset the mouse from the position by this many pixels to the right|
+|Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
 
 > [!NOTE]
 > Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
