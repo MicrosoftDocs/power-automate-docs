@@ -51,17 +51,17 @@ Web automation actions enable users to interact with web applications and compon
 
 To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
 
-![The options to create a new UI element.](\media\webautomation\create-ui-element.png)
+![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
 
 All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
 Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
 
-![The options to edit and create selectors.](\media\webautomation\create-selector.png)
+![Screenshot of the options to edit and create selectors.](\media\webautomation\create-selector.png)
 
 To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
-![The available operators in the selector builder.](\media\webautomation\selector-operators.png)
+![Screenshot of the available operators in the selector builder.](\media\webautomation\selector-operators.png)
 
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.

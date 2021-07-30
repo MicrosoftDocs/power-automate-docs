@@ -37,21 +37,21 @@ In the action's properties, you have to populate the service's URL and the appro
 
 The **Custom headers** and **Request body** fields depend on the API, and you have to configure them as described in its documentation.
 
-![The Invoke web service action.](media\web\invoke-web-service-action.png)
+![Screenshot of the Invoke web service action.](media\web\invoke-web-service-action.png)
 
 If the webserver requires authentication, you can populate your credentials in the appropriate fields of the action's **Advanced** settings.
 
-![The advanced settings of the Invoke web service action.](media\web\invoke-web-service-action-advanced.png)
+![Screenshot of the advanced settings of the Invoke web service action.](media\web\invoke-web-service-action-advanced.png)
 
 The results of the web service request are stored in a variable named **WebServiceResponse**. If the results are files, you can select to save them locally on your desktop.
 
 To download text or files from the web, you can use the **Download from web action**. This action requires you to populate the URL of the web page or the file and select the appropriate HTTP method.
 
-![The Download from web action action.](media\web\download-from-web-action.png)
+![Screenshot of the Download from web action action.](media\web\download-from-web-action.png)
 
 If the webserver requires authentication, you can populate your credentials in the appropriate fields of the action's **Advanced** settings.
 
-![The advanced settings of Download from web action action.](media\web\download-from-web-action-advanced.png)
+![Screenshot of the advanced settings of Download from web action action.](media\web\download-from-web-action-advanced.png)
 
 The downloaded text is stored in a variable named **WebPageText**. If you use the action to download files, you can select to save them locally on your desktop.
 
