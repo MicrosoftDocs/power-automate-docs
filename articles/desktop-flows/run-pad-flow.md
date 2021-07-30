@@ -76,7 +76,7 @@ You can schedule multiple desktop flows to run on one or more devices. If more t
 1.  Picks the next desktop flow when each run completes based on priority and time requested, shown as **Next to run**.
 
 
-You can [view the real-time execution order](monitor-desktop-flow-queues.md#view-list-of-queued-desktop-flow-runs-for-a-specific-gateway) of a device by its run queue. You can also manually [change the order](monitor-desktop-flow-queues.md#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
+You can [view the real-time execution order](monitor-desktop-flow-queues.md#view-run-queue-for-a-machine-or-machine-group) of a device by its run queue. You can also manually [change the order](monitor-desktop-flow-queues.md#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
 
 >[!NOTE]
 >These orchestration rules apply to desktop flows runs that are scheduled by any user on the same device.
