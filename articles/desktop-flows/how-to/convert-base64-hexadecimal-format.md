@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -26,7 +26,7 @@ To convert the Base64 text to hexadecimal format, use the **Run PowerShell scrip
 ```
 
 > [!NOTE]
-> You can find more information regarding PowerShell utility cmdlets in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/?view=powershell-7.1).
+> You can find more information regarding PowerShell utility cmdlets in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility).
 
 The action produces the PowershellOutput variable that stores the encrypted or hashed value in hexadecimal format.
 
