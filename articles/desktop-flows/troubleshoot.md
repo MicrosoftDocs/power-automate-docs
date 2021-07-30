@@ -33,18 +33,6 @@ To open the troubleshoot tool:
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate Desktop  
 
-## Change the on-premises Service account
-The UIFlowService uses the virtual account “NT SERVICE\UIFlowService”. This account needs the ability to “Logon as a service” in order to successfully startup.
-
-Most environments wouldn't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant “NT SERVICE\UIFlowService” the right to “Logon as a service” or change the account here with an allowed one.
-1. Select **Change account**
-1. Select **This account**
-1. Provide the new account. Ex: DOMAIN\AlexJohnson  
-1. Provide the password of this account and select Configure
- 
-![Screenshot of the Power Automate Desktop troubleshoot dialog.](\media\troubleshoot\image001.png)
-
-
 ## Resolve sign in and sign out issues
 
 Power Automate Desktop uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
@@ -62,6 +50,16 @@ If you have installed Power Automate Desktop in another drive, replace **C** wit
 
 After deleting the **msalcache.bin3** file, restart the Power Automate Desktop service and sing in to your account.
 
+## Change the on-premises Service account
+The UIFlowService uses the virtual account “NT SERVICE\UIFlowService”. This account needs the ability to “Logon as a service” in order to successfully startup.
+
+Most environments wouldn't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant “NT SERVICE\UIFlowService” the right to “Logon as a service” or change the account here with an allowed one.
+1. Select **Change account**
+1. Select **This account**
+1. Provide the new account. Ex: DOMAIN\AlexJohnson  
+1. Provide the password of this account and select Configure
+ 
+![Screenshot of the Power Automate Desktop troubleshoot dialog.](\media\troubleshoot\image001.png)
 
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 
