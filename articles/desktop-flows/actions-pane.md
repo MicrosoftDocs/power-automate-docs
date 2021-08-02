@@ -90,7 +90,7 @@ If different errors require different error handling behaviors, select the **Adv
 
 ## Enabling and disabling actions
 
-To disable or enable an action, right-click on it and select **Disable action** or **Enable Action**, respectively. 
+To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively. 
 
 ![The disable action option.](media\enabling-disabling-actions\enable-disable-action.png)
 
