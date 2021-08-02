@@ -103,7 +103,7 @@ To send a message as the user in a group chat select the **Post as** option as *
 >[!IMPORTANT]
 >By default Teams only lists the 50 most recent **named** group chats in the drop down. If you want to send a message to a new group chat use the option below.
 
-## Create a new group chat and post a message to it as the Flow bot
+## Create a new group chat and post a message
 
 The **Post message in a chat or channel** action can be combined with the **Create a chat** action to create a new group chat and post a message to it. This is useful in scenarios where a chat might not already exist for this topic and one needs to be created. 
 
