@@ -1,34 +1,27 @@
 ---
 title: Send a message in Teams using Power Automate | Microsoft Docs
 description: Learn the different ways in which you can send a message in Microsoft Teams
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-manager: kvivek
-editor: ''
-tags: ''
+author: hamenon-ms
 ms.service: power-automate
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 07/16/2020
+ms.date: 08/02/2021
 ms.author: hamenon
+ms.reviewer: deonhe
 ---
 
 # Send a message in Teams using Power Automate
 
 You can use Power Automate to setup a flow that sends messages to a Teams Channel or Group chat using the Microsoft Teams Connector. Messages can be posted either as the user who's signed into the connector in the flow or using the Flow bot. This document covers all the different ways in which you can send a message in Teams.
 
-## Flow Setup
+## Flow setup
 
-For the purposes of this document we're using a scenario where a flow is used to notify a Channel or a Group chat, but the same principles can be used to apply to any Flow where the **Post a message in a chat or channel** is used.
+For the purposes of this document, we're using a scenario where a flow is used to notify a Channel or a Group chat, but the same principles can be used to apply to any flow where the **Post a message in a chat or channel** is used.
 
-1. Sign in to Power Automate, and then select **My flows** > **New** > **Automated cloud flow**.
-1. Enter a name for your flow.
-1. Select the **When a file is created (properties only)** trigger.
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+2. Select **My flows** > **New** > **Automated cloud flow**.
+3. Enter a name for your flow.
+4. Select the **When a file is created (properties only)** trigger.
 
    ![When a new file is created in a folder trigger](../media/post-a-message/sharepoint-trigger.png)
 
@@ -48,7 +41,7 @@ The **Post a message in a chat or channel** action can send a message in the fol
 
 The **Post as** and **Post in** options within the action control all the different combinations of how messages can be posted in Teams.
 
-## Posting a message as the Flow bot in a Teams Channel
+## Posting a message as the flow bot in a Teams channel
 
 To send a message as the Flow bot in a Teams Channel select the **Post as** option as **Flow bot** and the **Post in** option as Channel. Once you do two additional dynamic inputs show up which allows you to specify the Team and Channel in which to send the message and add your message in the message field.
 
@@ -56,7 +49,7 @@ To send a message as the Flow bot in a Teams Channel select the **Post as** opti
 
 ![Message in Teams from the Flow bot](../media/post-a-message/flow-bot-channel-teams.png)
 
-## Posting a message as the Flow bot in an existing named group chat
+## Posting a message as the flow bot in an existing named group chat
 
 To send a message as the Flow bot in a group chat select the **Post as** option as **Flow bot** and the **Post in** option as **Group chat**. Once you do an additional option will show up that lets you select the Group chat to post in. Choose a group chat to post the message in and add your message in the message field.
 
@@ -64,10 +57,10 @@ To send a message as the Flow bot in a group chat select the **Post as** option 
 
 ![Message in Teams group chat from the Flow bot](../media/post-a-message/flow-bot-group-chat-teams.png)
 
->[!IMPORTANT]
->By default Teams only lists the 50 most recent **named** group chats in the drop down. If you want to send a message to a new group chat use the option below.
+> [!IMPORTANT]
+> By default Teams only lists the 50 most recent **named** group chats in the drop down. If you want to send a message to a new group chat use the option below.
 
-## Create a new group chat and post a message to it as the Flow bot
+## Create a new group chat and post a message to it as the flow bot
 
 The **Post message in a chat or channel** action can be combined with the **Create a chat** action to create a new group chat and post a message to it. This is useful in scenarios where a chat might not already exist for this topic and one needs to be greated. 
 
@@ -81,7 +74,7 @@ To send a message as the Flow bot in the new created group chat select the **Pos
 
 ![Message in Teams group chat from the Flow bot](../media/post-a-message/flow-bot-group-chat-new-teams.png)
 
-## Posting a message as the Flow bot directly to a user
+## Posting a message as the flow bot directly to a user
 
 When sending a message as the Flow bot you have the additional option of posting directly to a user. This is useful in notification scenarios where you want to reach out to an individual user using the Flow bot. For this select the **Chat with Flow bot** option and specify the user you want to message and the specific message you want to send.
 
@@ -108,7 +101,7 @@ To send a message as the user in a group chat select the **Post as** option as *
 >[!IMPORTANT]
 >By default Teams only lists the 50 most recent **named** group chats in the drop down. If you want to send a message to a new group chat use the option below.
 
-## Create a new group chat and post a message to it as the Flow bot
+## Create a new group chat and post a message to it as the fFlow bot
 
 The **Post message in a chat or channel** action can be combined with the **Create a chat** action to create a new group chat and post a message to it. This is useful in scenarios where a chat might not already exist for this topic and one needs to be greated. 
 
