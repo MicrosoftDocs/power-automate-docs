@@ -36,7 +36,7 @@ Here's a short video on how to view analytics using process advisor: [Analyze fe
 Each recording can have one of the following statuses:
 
 - **In progress**&mdash;Recording is in progress, but it's also possible that the recording hasn't yet started. Since recording happens in the desktop client, the web portal won't know about its status until it has been saved. It's also possible to see this status after recording has been saved since some processing is required after recording to make it ready to view.
-- **Failed**&mdash;An error occurred during recording processing. Please create a new recording.
+- **Failed**&mdash;An error occurred during recording processing. You need to create a new recording.
 - **Not analyzed**&mdash;The recording has been processed, and is available to view and edit, but it hasn't been marked as ready to analyze.
 - **Ready to analyze**&mdash;The recording has been marked as ready to analyze and will be considered the next time you analyze the process.
 - **Analyzed**&mdash;The recording has been analyzed and is part of the analyzed output that can be viewed through the **Analytics** screen.
