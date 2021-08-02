@@ -115,7 +115,7 @@ To send a message as the Flow bot in the new created group chat select the **Pos
 
 ![Post a message in group chat as the user](../media/post-a-message/user-group-chat-new.png)
 
-![Message in Teams from the user](../media/post-a-message/user-group-chat-teams.png)
+![Message in Teams](../media/post-a-message/user-group-chat-teams.png)
 
 ## Mention a user in any message
 
