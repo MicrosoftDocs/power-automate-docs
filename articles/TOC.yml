@@ -190,7 +190,9 @@
       - name: Create flows in Microsoft Teams
         href: ./teams/teams-app-create.md
       - name: Manage flows in Microsoft Teams
-        href: ./teams/teams-app-home.md    
+        href: ./teams/teams-app-home.md
+      - name: Post a message to Microsoft Teams
+        href: ./teams/send-a-message-in-teams.md    
       - name: Trigger flows from Teams messages
         href: trigger-flow-teams-message.md
       - name: Create flows using the Power Apps app
