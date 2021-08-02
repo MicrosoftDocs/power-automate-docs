@@ -3,7 +3,7 @@ title: Security and privacy | Microsoft Docs
 description: Security and privacy in process advisor.
 author: nijemcevic 
 ms.service: power-automate
-ms.subservice: cloud-flow
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
