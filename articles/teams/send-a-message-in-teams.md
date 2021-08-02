@@ -12,7 +12,9 @@ ms.reviewer: deonhe
 
 # Send a message in Teams using Power Automate
 
-You can use Power Automate to setup a flow that sends messages to a Teams Channel or Group chat using the Microsoft Teams Connector. Messages can be posted either as the user who's signed into the connector in the flow or using the Flow bot. This document covers all the different ways in which you can send a message in Teams.
+You can use Power Automate to set up a flow that sends messages to a Teams Channel or group chat using the Microsoft Teams connector. Messages can be posted either as the user who's signed into the connector in the flow or using the flow bot. 
+
+This article covers all the different ways in which you can send a message in Teams.
 
 ## Flow setup
 
