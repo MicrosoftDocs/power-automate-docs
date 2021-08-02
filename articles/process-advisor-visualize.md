@@ -3,7 +3,7 @@ title: Visualize processes in process advisor | Microsoft Docs
 description: How to visualize your processes in the process advisor feature.
 author: nijemcevic 
 ms.service: power-automate
-ms.subservice: cloud-flow
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -22,9 +22,9 @@ search.audienceType:
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select the **Analytics** > **Process** tab.
 
 > [!div class="mx-imgBorder"]
-> ![Process map.](media/automation-reco-1.png "Process advisor process map")
+> ![Screenshot of process map.](media/automation-reco-1.png "Process advisor process map")
 
-Activities describe tasks or actions that make up a business process. Activities can be performed by humans, or in the case of automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges.  Each process sequence will have a start and an end.
+Activities describe tasks or actions that make up a business process. Activities can be performed by humans, or where activities are performed by automation, by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence will have a start and an end.
 
 Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see more metrics, frequency of the activities, and throughput time, on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
 
@@ -63,13 +63,13 @@ Application analytics allows you to gain more insights from recordings by unders
 - App insights for each activity or recording.
 
 > [!div class="mx-imgBorder"]
-> ![Application analytics.](media/application-analytics.png "Application analytics")
+> ![Screenshot of application analytics showing KPIs and visualizations.](media/application-analytics.png "Application analytics screen showing KPIs and visualizations")
 
 ### Application analytics KPIs
 
 - **Apps used**&mdash;Total number of apps used in a process.
 
-- **Number (#) times accessed**&mdash;Number of accesses. An access is when an app comes back into focus.
+- **\# times accessed**&mdash;Number of accesses. Times accessed is when an app comes back into focus.
 
 - **Time spent**&mdash;Amount of time spent in using apps. This does not count time spent when not focused on an app—for example, desktop.
 
