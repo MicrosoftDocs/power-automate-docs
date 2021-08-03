@@ -31,11 +31,7 @@ Although Power Automate Desktop doesn't provide a direct way to delete rows and 
 
     ![The Delete row from Excel worksheet action.](media/delete-row-column-datatable/delete-row-excel-worksheet-action.png)
 
-1. Use the **Get first free column/row from Excel worksheet** action to retrieve the worksheet's first free row and column.
-
-    ![The Get first free column/row from Excel worksheet action.](media/delete-row-column-datatable/get-first-free-column-row-excel-worksheet-action.png)
-
-1. Deploy the **Read from Excel worksheet** and read all the data from the Excel worksheet. To find the last populated row and column, use the produced variables of the **Get first free column/row from Excel worksheet** action. The updated datatable is now stored in a variable named **ExcelData**.
+1. Deploy the **Read from Excel worksheet** action and read all the available values from the Excel worksheet. The updated datatable is now stored in a variable named **ExcelData**.
 
     ![The Read from Excel worksheet action.](media/delete-row-column-datatable/read-excel-worksheet-action.png)
 
