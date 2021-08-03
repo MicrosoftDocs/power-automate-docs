@@ -497,12 +497,12 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
-|Retrieve|N/A|Single Cell's Values, Values from a Range of Cells, Values from Selection|Single Cell's Values|Whether to retrieve the value of a single cell or a table from a range of cells|
+|Retrieve|N/A|The value of a single cell, Values from a range of cells, Values from selection, All available values from worksheet|The value of a single cell|Whether to retrieve the value of a single cell, a table from a range of cells or the entire worksheet|
 |Start column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
 |Start row|No|Numeric value||The cell row (single cell's Value) or first row number|
 |End column|No|Text value||The last column as a numeric value or a letter|
 |End row|No|Numeric value||The last row number|
-|Get Cell Contents as Text|N/A|Boolean value|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
+|Get cell contents as text|N/A|Boolean value|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
 |First line of range contains column names|N/A|Boolean value|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names|
 
 
