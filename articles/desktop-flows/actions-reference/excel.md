@@ -37,6 +37,7 @@ Automate any Excel related activity
 |[Delete row from Excel worksheet](#deleterow)|
 |[Insert column to Excel worksheet](#insertcolumn)|
 |[Delete column from Excel worksheet](#deletecolumn)|
+|[Find and replace cells in Excel worksheet](#findandreplaceaction)|
 |[Get first free row on column from Excel worksheet](#getfirstfreerowoncolumn)|
 |[Launch Excel](#launchexcel)|
 |[Attach to running Excel](#attach)|
@@ -370,6 +371,33 @@ Deletes a selected column from an Excel instance
 |-----|-----|
 |Can't find column|Indicates that a column with the specified name could not be found|
 |Failed to delete column|Indicates a problem deleting the specified column|
+
+### <a name="findandreplaceaction"></a> Find and replace cells in Excel worksheet
+Finds text and replaces it with another in the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+|Search mode|N/A|Find, Find and replace|Find|The mode to search with|
+|All matches|N/A|Boolean value|False|Whether to find/replace text in all the matching cells found or in the first matching cell only|
+|Text to find|No|Text value||The text to find in the worksheet|
+|Text to replace with|No|Text value||The text used to replace the matching cells|
+|Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
+|Match entire cell contents|N/A|Boolean value|False|Whether to search for cells that contain just the specified text|
+|Search by|N/A|Rows, Columns|Rows|The order in which to search for the text|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|FoundColumnIndex|Numeric value|The index of the column found|
+|FoundRowIndex|Numeric value|The index of the row found|
+|Cells|Datatable|The list of cells matching the criteria|
+
+##### <a name="findandreplaceaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to find and/or replace text|Indicates a problem finding and/or replacing the specified text|
 
 ### <a name="getfirstfreerowoncolumn"></a> Get first free row on column from Excel worksheet
 Retrieve the first free row, given the column of the active worksheet
