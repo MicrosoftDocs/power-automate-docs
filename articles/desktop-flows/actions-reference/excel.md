@@ -43,6 +43,7 @@ Automate any Excel related activity
 |[Launch Excel](#launchexcel)|
 |[Attach to running Excel](#attach)|
 |[Read from Excel worksheet](#readfromexcel)|
+|[Get active cell on Excel worksheet](#getactivecell)|
 |[Save Excel](#saveexcel)|
 |[Write to Excel worksheet](#writetoexcel)|
 |[Close Excel](#closeexcel)|
@@ -518,6 +519,25 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Exception|Description|
 |-----|-----|
 |Failed to read cell value(s)|Indicates a problem reading the value(s) of the specified Excel cell(s)|
+
+### <a name="getactivecell"></a> Get active cell on Excel worksheet
+Get the active cell in the active worksheet of the Excel document
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ActiveCellColumnIndex|Numeric value|The numeric value of the active cell's column|
+|ActiveCellRowIndex|Numeric value|The numeric value of the active cell's row|
+
+##### <a name="getactivecell_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to get active cell|Indicates a problem getting the active cell|
 
 ### <a name="saveexcel"></a> Save Excel
 Saves a previously launched Excel instance
