@@ -64,7 +64,7 @@ The advanced options are:
 
 ### Select columns
 
-Sometimes it is necessary to optimize the amount of data retrieved in a flow, especially if you are performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you would like to retrieve by entering unique names of those columns separated by commas.
+Sometimes it is necessary to optimize the amount of data retrieved in a flow, especially if you are performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you want to retrieve by entering unique names of those columns. Separate columns with a comma.
 
 ### Expand Query
 
