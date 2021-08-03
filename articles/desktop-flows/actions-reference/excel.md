@@ -33,6 +33,7 @@ Automate any Excel related activity
 |[Get selected cell range from Excel worksheet](#getselectedcellrange)|
 |[Copy cells from Excel worksheet](#copycellsfromexcel)|
 |[Paste cells to Excel worksheet](#pastecellstoexcel)|
+|[Delete from Excel worksheet](#deletecellsaction)|
 |[Insert row to Excel worksheet](#insertrow)|
 |[Delete row from Excel worksheet](#deleterow)|
 |[Insert column to Excel worksheet](#insertcolumn)|
@@ -295,6 +296,28 @@ Pastes a range of cells to the active worksheet of an Excel instance
 |Exception|Description|
 |-----|-----|
 |Failed to paste cells|Indicates a problem pasting the specified cells|
+
+### <a name="deletecellsaction"></a> Delete from Excel worksheet
+Deletes a cell or a range of cells from the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+|Retrieve|N/A|The value of a single cell, Values from a range of cells|The value of a single cell|Whether to delete a single cell or a table from a range of cells|
+|Start column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
+|Start row|No|Numeric value||The cell row (single cell's value) or first row number|
+|End column|No|Text value||The last column as a numeric value or a letter|
+|End row|No|Numeric value||The last row number|
+|Shift direction|N/A|Left, Up|Left|The shift direction|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="deletecellsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to delete cell(s)|Indicates a problem deleting the specified cell(s)|
 
 ### <a name="insertrow"></a> Insert row to Excel worksheet
 Inserts a row above a selected row of an Excel instance
