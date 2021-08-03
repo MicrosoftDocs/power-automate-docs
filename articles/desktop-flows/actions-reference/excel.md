@@ -49,6 +49,7 @@ Automate any Excel related activity
 |[Set active Excel worksheet](#setactiveworksheet)|
 |[Add new worksheet](#addworksheet)|
 |[Get first free column/row from Excel worksheet](#getfirstfreecolumnrow)|
+|[Get column name on Excel worksheet](#getcolumnname)|
 
 ## Getting started with Excel actions
 
@@ -642,7 +643,22 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 |-----|-----|
 |Failed to retrieve first free column/row|Indicates a problem retrieving the first free column/row of an Excel instance|
 
+### <a name="getcolumnname"></a> Get column name on Excel worksheet
+Gets the name of the column
 
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Column number|No|Numeric value||The column number|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ColumnName|Text value|The name of the column|
+
+##### <a name="getcolumnname_onerror"></a> Exceptions
+
+- This action doesn't include any exceptions
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
