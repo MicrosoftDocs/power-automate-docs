@@ -70,22 +70,9 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Create your first flow 
 
-1. Select a template that's useful for you. A simple template is [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
+<br/>
 
-    ![daily reminder template.](./media/getting-started/template-details.png)
-
-1. Select **Continue**.
-
-    ![Create connection.](./media/getting-started/create-connection.png)
-
-1. Enter the email addresses to which the daily reminder will be sent. Next, enter the reminder message. Finally, select **Create flow**, and then verify that your flow is running as expected.
-
-    ![Provide credentials for the connection.](./media/getting-started/configure-email-details.png)
-
-    > [!NOTE]
-    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
-
-1. Select **Done**.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGzyZ]
 
 [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
