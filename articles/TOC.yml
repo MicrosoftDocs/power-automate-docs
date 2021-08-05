@@ -458,9 +458,13 @@
       - name:  Scroll on a web page
         href: ./desktop-flows/how-to/scroll-web-page.md   
       - name: Handle iframes on a web page
-        href: ./desktop-flows/how-to/handle-iframes.md  
-    - name: Run SQL queries to Microsoft Access
-      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+        href: ./desktop-flows/how-to/handle-iframes.md
+    - name: Run and troubleshoot SQL queries
+      items:
+      - name: Run SQL queries to Microsoft Access
+        href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+      - name: Troubleshoot SQL queries
+        href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
   - name: Desktop actions reference
