@@ -483,8 +483,12 @@
         href: ./desktop-flows/how-to/convert-file-base64-format.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
-    - name: Run SQL queries to Microsoft Access
-      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Run and troubleshoot SQL queries    
+      items:
+      - name: Run SQL queries to Microsoft Access
+        href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+      - name: Troubleshoot SQL queries   
+        href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
