@@ -51,4 +51,7 @@ If you can't identify the source of the issue through the displayed error messag
     ``` SQL
     SELECT * FROM [Sheet1$] WHERE Value = "%value%"; 
     ```
+    
+    > [!NOTE]
+    > You can find more information regarding running SQL queries on Excel in [Run SQL queries on Excel files](sql-queries-excel.md).
 
