@@ -18,11 +18,11 @@ search.audienceType:
 
 # Getting started with an Organization premium account
 
-Power Automate Desktop enables regular and power users alike to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or record windows and web browser activity in real time.
+Power Automate Desktop enables regular and power users alike to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
 
-Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to run your flows automatically, detailed monitoring and many more. 
+Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](link-pad-flow-portal.md), [detailed monitoring](monitor-desktop-flow-runs.md) and many more. 
 
-Power Automate Desktop gives you the option to share your flows among your colleagues so that you can improve automations and build on top of them.
+Power Automate Desktop gives you the option to [share your flows](manage.md#share-desktop-flows) among your colleagues so that you can improve automations and build on top of them.
 
 Access your flows from anywhere, harnessing the power of the cloud to establish a robust and flexible RPA system. Take full advantage of multiple environments to organize and manage users’ flows. 
 
