@@ -17,7 +17,7 @@ search.audienceType:
 
 # Troubleshoot SQL queries
 
-While developing flows that run queries on databases, you may encounter errors in the deployed database actions. If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
+While developing flows that run queries on databases, you may encounter errors caused by the deployed database actions. If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
 
 1. Replace any single quote (**'**) characters with double quotes (**"**) or the other way around. 
 
@@ -34,7 +34,7 @@ While developing flows that run queries on databases, you may encounter errors i
 
 1. Escape percentage signs (**%**) that don't indicate variables.
 
-    Power Automate Desktops identifies percentage signs as characters that indicate variables. To use them as normal characters, escape them using an extra percentage sign (%%). 
+    Power Automate Desktops identifies percentage signs as characters that indicate variables. To use them as normal characters, escape them using an extra percentage sign. 
     
     > [!NOTE]
     > You can find more information about the percentage signs in [Use variables and the % notation](../variable-manipulation.md).
