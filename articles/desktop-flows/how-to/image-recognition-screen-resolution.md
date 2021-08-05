@@ -26,7 +26,7 @@ To achieve this functionality, you can use the **Set screen resolution** action 
 The new resolution has to be the same as the source machine from which the image was captured. To find the resolution of the source machine, use a temporary **Get screen resolution** action or check the Windows display settings.
 
 > [!Important]
->To use the **Set screen resolution** action in flows triggered through the portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. In remote sessions, such as unattended scenarios that use RDP, the action has no effect, as users cannot even manually change the resolution.
+>To use the **Set screen resolution** action in flows triggered through the Power Automate portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. In remote sessions, such as unattended scenarios that use remote desktop clients, the action has no effect, as users can't manually change the resolution.
 
 > [!NOTE]
 > Before using image recognition, ensure that DPI scaling stays the same among the screens. The use of varying DPI scalings may cause the flow to fail.
