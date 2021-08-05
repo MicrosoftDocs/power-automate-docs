@@ -17,9 +17,7 @@ search.audienceType:
 
 # Troubleshoot SQL queries
 
-While developing flows that run queries on databases, you may encounter errors in the deployed database actions.
-
-If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
+While developing flows that run queries on databases, you may encounter errors in the deployed database actions. If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
 
 1. Replace any single quote (**'**) characters with double quotes (**"**) or the other way around. 
 
@@ -51,7 +49,7 @@ If you can't identify the source of the issue through the displayed error messag
     ``` SQL
     SELECT * FROM [Sheet1$] WHERE Value = "%value%"; 
     ```
-    
+
     > [!NOTE]
     > You can find more information regarding running SQL queries on Excel in [Run SQL queries on Excel files](sql-queries-excel.md).
 
