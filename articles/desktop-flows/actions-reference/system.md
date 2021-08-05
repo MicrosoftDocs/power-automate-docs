@@ -543,6 +543,9 @@ Gets the width, height, bit count and frequency of a selected monitor
 ### <a name="setscreenresolution"></a> Set screen resolution
 Sets the width, height, bit count and frequency of a selected monitor during an attended desktop flow run. 
 
+> [!Important]
+>To use the **Set screen resolution** action in flows triggered through the portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. In remote sessions, such as unattended scenarios that use RDP, the action has no effect, as users cannot even manually change the resolution.
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
