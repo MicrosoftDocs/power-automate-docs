@@ -38,7 +38,7 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Give your process a name and description, and then select **Create**.
 
-Here's a short video on how to create a process using process advisor: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
+Here's a short video on how to create a process using process advisor: [Video: Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
 
 ## Record your process
 
