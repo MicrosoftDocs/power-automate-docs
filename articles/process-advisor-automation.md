@@ -20,7 +20,7 @@ search.audienceType:
 
 The process advisor automation recommendation feature helps you identify automation opportunities. It also guides you in automating your processes using Microsoft Power Automate.
 
-Here's a short video on how to use the automation recommendation feature in process advisor: [Automation recommendation feature](https://go.microsoft.com/fwlink/?linkid=2163924)
+Here's a short video on how to use the automation recommendation feature in process advisor: [Video: Automation recommendation feature](https://go.microsoft.com/fwlink/?linkid=2163924)
 
 The blue recommendation icons on the process map activity show the automation opportunities.
 
