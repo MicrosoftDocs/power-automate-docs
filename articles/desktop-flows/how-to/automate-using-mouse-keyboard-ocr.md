@@ -39,11 +39,9 @@ For example, deploy the **Send keys** action to use the available keyboard short
 
 ![Screenshot of the Move mouse to image action.](media/automate-using-mouse-keyboard-ocr/move-mouse-image-action.png)
 
-To retrieve text from the screen and store it into a variable, deploy either the clipboard actions or the **Extract text with OCR** action.
+To retrieve text from the screen and store it into a variable, deploy either the clipboard actions or the **Extract text with OCR** action. To store a text in the clipboard, highlight the text using either the **Send keys** or the **Send mouse click** action.
 
-To store a text in the clipboard, highlight the text using either the **Send keys** or the **Send mouse click** action.
-
-You can configure the **Send keys** action to send the **CTRL + A** keyboard shortcut that selects all the text on the page or application.
+You can configure the **Send keys** action to send the **CTRL + A** keyboard shortcut that selects all the text on the web page or application.
 
 ![Screenshot of the Send keys action.](media/automate-using-mouse-keyboard-ocr/send-keys-action.png)
 
