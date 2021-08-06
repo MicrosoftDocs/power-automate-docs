@@ -1,0 +1,31 @@
+---
+title: Ensure that application windows become focused | Microsoft Docs
+description: Ensure that application windows become focused 
+author: georgiostrantzas
+ms.service: power-automate
+ms.subservice: desktop-flow
+ms.topic: article
+ms.date: 08/06/2021
+ms.author: v-gtrantzas
+ms.reviewer:
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Ensure that application windows become focused 
+
+Although Power Automate Desktop provides the **Focus window** action, depending on the nature of the selected application, the action may not bring the window to focus.
+
+To verify that the **Focus window** action can't bring a specific window to focus, send some keystrokes using the **Send keys** action. If the window isn't focused, the keystrokes won't work as expected.
+
+![Screenshot of the Send keys action.](media/ensure-windows-become-focused/send-keys-action.png)
+
+To ensure that the window will become focused, send a click on it after deploying the **Focus window** action. Depending on the scenario, you can use either of the following actions to send a click on the window: 
+
+- [Click UI element in window](../actions-reference/uiautomation.md#click)
+- [Move mouse to image](../actions-reference/mouseandkeyboard.md#movemousetoimagebase) - Enable the **Send a click after moving mouse** option
+- [Send mouse click](../actions-reference/mouseandkeyboard.md#sendmouseclick)
+- [Move mouse to text on screen (OCR)](../actions-reference/mouseandkeyboard.md#movemousetotextonscreenwithocraction) - Enable the **Send a click after moving mouse** option
