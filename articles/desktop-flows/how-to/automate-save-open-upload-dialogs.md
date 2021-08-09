@@ -19,8 +19,8 @@ search.audienceType:
 
 Many web pages display **Save as**, **Open**, and **Upload** dialogs to prompt users to select destination folders and files, respectively.
 
-![Screenshot of a Save as dialog.](media/automate-save-open-upload-dialogs/save-as-dialog.png)
-
 These dialogs aren't part of the web page, but they're handled by the web browser application or Windows File Explorer. As a result, you can't use the web recorder or the web automation actions to automate them.
 
 To automate these dialogs, use either the [desktop recorder](../recording-flow.md#desktop-recorder) or the [UI automation group of actions](../actions-reference/uiautomation.md). 
+
+![Screenshot of a Save as dialog.](media/automate-save-open-upload-dialogs/save-as-dialog.png)
