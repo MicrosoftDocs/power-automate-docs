@@ -1,0 +1,35 @@
+---
+title: Share/export a desktop flow | Microsoft Docs
+description: Share/export a desktop flow
+author: georgiostrantzas
+ms.service: power-automate
+ms.subservice: desktop-flow
+ms.topic: article
+ms.date: 08/09/2021
+ms.author: v-gtrantzas
+ms.reviewer:
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Share/export a desktop flow
+
+To share a desktop flow with other users, choose one of the following methods:
+
+1. Share the desktop flow directly through the Power Automate portal
+
+    To share a desktop flow with other users in your organization, give them specific permissions to access the flow. You can find more information regarding sharing flows in [Share desktop flows](../manage.md#share-desktop-flows).
+
+1. Export a solution that contains the desktop flow
+
+    To move a desktop flow from one environment to another, host it in a solution. For more information about importing flows into solutions and building solution-aware flows, see [Overview of solution-aware flows](../../overview-solution-flows.md).
+
+1. Copy the actions of the desktop flow and paste them to a text editor
+
+    To replicate a desktop flow, edit it through the flow designer, copy the actions within a subflow, and paste them to a text editor. Next, save and share the text file with other users in your organization.
+
+    When copying actions, all their parameters, images, and UI elements are copied as well. Only one subflow can be copied at a time. If there are more than one subflows, repeat the procedure for each one individually and save the actions into separate text files.
+

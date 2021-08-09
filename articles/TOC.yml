@@ -495,6 +495,8 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Automate with mouse, keyboard, and OCR actions
       href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md
+    - name: Share/export a desktop flow
+      href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
