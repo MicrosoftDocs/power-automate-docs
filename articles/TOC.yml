@@ -473,6 +473,8 @@
         href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
+      - name: Automate Save as, Open and Upload dialogs
+        href: ./desktop-flows/how-to/automate-save-open-upload-dialogs.md  
       - name:  Scroll on a web page
         href: ./desktop-flows/how-to/scroll-web-page.md   
       - name: Handle iframes on a web page
