@@ -35,7 +35,7 @@ Power Automate Desktop provides integration with terminal emulators through the 
 
 Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > Before trying to connect to a terminal session, make sure that the actual terminal session is already open on your machine.
 
 If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action and populate the required configuration.
@@ -44,7 +44,7 @@ If you've installed Micro Focus Reflection on your desktop, choose the respectiv
 
 If you've installed another provider, select **HLLAPI** that theoretically works with any terminal emulation provider.
 
-Depending on the provider you're using, also select the appropriate HLLAPI DLL file located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
+Depending on the provider you're using, select the appropriate HLLAPI DLL file located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
 
 - RocketSoftware BlueZone: **ehlapi64.dll**
 - IBM Personal Communications: **EHLAPI32.dll**
