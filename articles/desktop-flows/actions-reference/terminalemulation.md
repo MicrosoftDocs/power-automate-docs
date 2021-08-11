@@ -37,6 +37,9 @@ These actions enable you to handle terminal sessions and perform various operati
 
 Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
 
+> [!NOTE]
+> Before trying to connect to a terminal session, make sure the actual terminal session is already open on your machine.
+
 If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action. 
 
 ![Screenshot of the Open terminal session action.](media/terminalemulation/open-terminal-session-action.png)
