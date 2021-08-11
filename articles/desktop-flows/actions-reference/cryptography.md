@@ -261,5 +261,4 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 
 
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
