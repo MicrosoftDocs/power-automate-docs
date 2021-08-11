@@ -17,8 +17,6 @@ search.audienceType:
 
 # Cryptography
 
-
-
 Encrypt and decrypt text and files
 
 |<!-- --> |
@@ -31,6 +29,28 @@ Encrypt and decrypt text and files
 |[Hash from file](#hashfromfile)|
 |[Hash text with key](#hashtextwithkey)|
 |[Hash from file with key](#hashfromfilewithkey)|
+
+## Getting started with cryptography actions
+
+The **Cryptography** actions enable users to encrypt and decrypt plain text and text from files providing a key and an encoding format.
+
+The **Encrypt text with AES** action encrypts a text using the AES algorithm and a user-specified encryption key. The encryption key can be provided directly or through a variable.
+
+To encrypt the text of a file directly, use the **Encrypt from file with AES** action. This action works similarly to the **Encrypt text with AES** action, but it requires a source file instead of a text value.
+
+![Screenshot of the Encrypt from file with AES action.](media/cryptography/encrypt-from-file-with-aes-action.png)
+
+To decrypt a text, use the **Decrypt text with AES** and populate the encrypted text and the encryption key previously used to encrypt it.
+
+To decrypt a text and store it in a file, use the **Decrypt to file with AES** and specify a destination path for the file. 
+
+![Screenshot of the Decrypt to file with AES action.](media/cryptography/decrypt-to-file-with-aes-action.png)
+
+Apart from encryption and decryption, the **Cryptography** group of actions provides actions to hash values with and without a key. Like the encryption actions, you can hash values from files using the **Hash from file** and **Hash from file with key** actions.
+
+![Screenshot of the Hash from file with key action.](media/cryptography/hash-from-file-with-key-action.png)
+
+## Cryptography actions
 
 ### <a name="encrypttextaction"></a> Encrypt text with AES
 Encrypt a string with AES, using a key and a specified encoding format
