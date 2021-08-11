@@ -31,22 +31,20 @@ Take control of terminal emulators for automating mainframes and legacy systems
 
 ## Getting started with terminal emulation actions
 
-Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions.
-
-These actions enable you to handle terminal sessions and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
+Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminal sessions and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
 
 Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
 
 > [!NOTE]
-> Before trying to connect to a terminal session, make sure the actual terminal session is already open on your machine.
+> Before trying to connect to a terminal session, make sure that the actual terminal session is already open on your machine.
 
-If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action. 
+If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action and populate the required configuration.
 
 ![Screenshot of the Open terminal session action.](media/terminalemulation/open-terminal-session-action.png)
 
 If you've installed another provider, select **HLLAPI** that theoretically works with any terminal emulation provider.
 
-Depending on the provider, you are using, also select the appropriate HLLAPI DLL path located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
+Depending on the provider you're using, also select the appropriate HLLAPI DLL file located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
 
 - RocketSoftware BlueZone: **ehlapi64.dll**
 - IBM Personal Communications: **EHLAPI32.dll**
@@ -55,9 +53,7 @@ Depending on the provider, you are using, also select the appropriate HLLAPI DLL
 
 ![Screenshot of the Open terminal session action with the HLLAPI option selected.](media/terminalemulation/open-terminal-session-action-hllapi.png)
 
-After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action.  
-
-If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
+After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action. If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
 
 ![Screenshot of the Close terminal sessionaction.](media/terminalemulation/close-terminal-session-action.png)
 
