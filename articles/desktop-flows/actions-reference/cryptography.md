@@ -40,9 +40,7 @@ To encrypt the text of a file directly, use the **Encrypt from file with AES** a
 
 ![Screenshot of the Encrypt from file with AES action.](media/cryptography/encrypt-from-file-with-aes-action.png)
 
-To decrypt a text, use the **Decrypt text with AES** and populate the encrypted text and the encryption key previously used to encrypt it.
-
-To decrypt a text and store it in a file, use the **Decrypt to file with AES** and specify a destination path for the file. 
+To decrypt a text, use the **Decrypt text with AES** and populate the encrypted text and the encryption key previously used to encrypt it. To decrypt a text and store it in a file, use the **Decrypt to file with AES** and specify a destination path for the file. 
 
 ![Screenshot of the Decrypt to file with AES action.](media/cryptography/decrypt-to-file-with-aes-action.png)
 
