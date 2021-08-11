@@ -17,8 +17,6 @@ search.audienceType:
 
 # Terminal emulation
 
-
-
 Take control of terminal emulators for automating mainframes and legacy systems
 
 |<!-- --> |
@@ -30,6 +28,37 @@ Take control of terminal emulators for automating mainframes and legacy systems
 |[Set text on terminal session](#settextonterminalsession)|
 |[Send key to terminal session](#sendkey)|
 |[Wait for text on terminal session](#waitfortextonterminalsession)|
+
+## Getting started with terminal emulation actions
+
+Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions.
+
+These actions enable you to handle terminal sessions and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
+
+Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
+
+If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action. 
+
+![Screenshot of the Open terminal session action.](media/terminalemulation/open-terminal-session-action.png)
+
+If you've installed another provider, select **HLLAPI** that theoretically works with any terminal emulation provider.
+
+Depending on the provider, you are using, also select the appropriate HLLAPI DLL path located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
+
+- RocketSoftware BlueZone: **ehlapi64.dll**
+- IBM Personal Communications: **EHLAPI32.dll**
+- MicroFocus Rumba: **System/ehlapi32.Dll**
+- Cybelesoft zScope: **zHllap32.dll**
+
+![Screenshot of the Open terminal session action with the HLLAPI option selected.](media/terminalemulation/open-terminal-session-action-hllapi.png)
+
+After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action.  
+
+If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
+
+![Screenshot of the Close terminal sessionaction.](media/terminalemulation/close-terminal-session-action.png)
+
+## Terminal emulation actions
 
 ### <a name="openterminalsession"></a> Open terminal session
 Open a new terminal session
