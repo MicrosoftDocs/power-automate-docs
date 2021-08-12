@@ -48,7 +48,7 @@ Start a stopped Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to start|No|Text value|Own text|The name of the service to start|
+|Service to start|No|Text value||The name of the service to start|
 
 
 ##### Variables Produced
@@ -67,7 +67,7 @@ Stop a running Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to stop|No|Text value|Own text|The name of the service to stop|
+|Service to stop|No|Text value||The name of the service to stop|
 
 
 ##### Variables Produced
@@ -86,7 +86,7 @@ Pause a running Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to pause|No|Text value|Own text|The name of the service to pause|
+|Service to pause|No|Text value||The name of the service to pause|
 
 
 ##### Variables Produced
@@ -105,7 +105,7 @@ Resume a paused Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to resume|No|Text value|Own text|The name of the service to resume|
+|Service to resume|No|Text value||The name of the service to resume|
 
 
 ##### Variables Produced

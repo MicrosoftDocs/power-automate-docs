@@ -33,20 +33,24 @@ Automate any Excel related activity
 |[Get selected cell range from Excel worksheet](#getselectedcellrange)|
 |[Copy cells from Excel worksheet](#copycellsfromexcel)|
 |[Paste cells to Excel worksheet](#pastecellstoexcel)|
+|[Delete from Excel worksheet](#deletecellsaction)|
 |[Insert row to Excel worksheet](#insertrow)|
 |[Delete row from Excel worksheet](#deleterow)|
 |[Insert column to Excel worksheet](#insertcolumn)|
 |[Delete column from Excel worksheet](#deletecolumn)|
+|[Find and replace cells in Excel worksheet](#findandreplaceaction)|
 |[Get first free row on column from Excel worksheet](#getfirstfreerowoncolumn)|
 |[Launch Excel](#launchexcel)|
 |[Attach to running Excel](#attach)|
 |[Read from Excel worksheet](#readfromexcel)|
+|[Get active cell on Excel worksheet](#getactivecell)|
 |[Save Excel](#saveexcel)|
 |[Write to Excel worksheet](#writetoexcel)|
 |[Close Excel](#closeexcel)|
 |[Set active Excel worksheet](#setactiveworksheet)|
 |[Add new worksheet](#addworksheet)|
 |[Get first free column/row from Excel worksheet](#getfirstfreecolumnrow)|
+|[Get column name on Excel worksheet](#getcolumnname)|
 
 ## Getting started with Excel actions
 
@@ -295,6 +299,28 @@ Pastes a range of cells to the active worksheet of an Excel instance
 |-----|-----|
 |Failed to paste cells|Indicates a problem pasting the specified cells|
 
+### <a name="deletecellsaction"></a> Delete from Excel worksheet
+Deletes a cell or a range of cells from the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+|Retrieve|N/A|The value of a single cell, Values from a range of cells|The value of a single cell|Whether to delete a single cell or a table from a range of cells|
+|Start column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
+|Start row|No|Numeric value||The cell row (single cell's value) or first row number|
+|End column|No|Text value||The last column as a numeric value or a letter|
+|End row|No|Numeric value||The last row number|
+|Shift direction|N/A|Left, Up|Left|The shift direction|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="deletecellsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to delete cell(s)|Indicates a problem deleting the specified cell(s)|
+
 ### <a name="insertrow"></a> Insert row to Excel worksheet
 Inserts a row above a selected row of an Excel instance
 
@@ -371,6 +397,33 @@ Deletes a selected column from an Excel instance
 |Can't find column|Indicates that a column with the specified name could not be found|
 |Failed to delete column|Indicates a problem deleting the specified column|
 
+### <a name="findandreplaceaction"></a> Find and replace cells in Excel worksheet
+Finds text and replaces it with another in the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+|Search mode|N/A|Find, Find and replace|Find|The mode to search with|
+|All matches|N/A|Boolean value|False|Whether to find/replace text in all the matching cells found or in the first matching cell only|
+|Text to find|No|Text value||The text to find in the worksheet|
+|Text to replace with|No|Text value||The text used to replace the matching cells|
+|Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
+|Match entire cell contents|N/A|Boolean value|False|Whether to search for cells that contain just the specified text|
+|Search by|N/A|Rows, Columns|Rows|The order in which to search for the text|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|FoundColumnIndex|Numeric value|The index of the column found|
+|FoundRowIndex|Numeric value|The index of the row found|
+|Cells|Datatable|The list of cells matching the criteria|
+
+##### <a name="findandreplaceaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to find and/or replace text|Indicates a problem finding and/or replacing the specified text|
+
 ### <a name="getfirstfreerowoncolumn"></a> Get first free row on column from Excel worksheet
 Retrieve the first free row, given the column of the active worksheet
 
@@ -446,12 +499,12 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
-|Retrieve|N/A|Single Cell's Values, Values from a Range of Cells, Values from Selection|Single Cell's Values|Whether to retrieve the value of a single cell or a table from a range of cells|
+|Retrieve|N/A|The value of a single cell, Values from a range of cells, Values from selection, All available values from worksheet|The value of a single cell|Whether to retrieve the value of a single cell, a table from a range of cells or the entire worksheet|
 |Start column|No|Text value||The cell column (single cell's value) or first column as a numeric value or a letter|
 |Start row|No|Numeric value||The cell row (single cell's Value) or first row number|
 |End column|No|Text value||The last column as a numeric value or a letter|
 |End row|No|Numeric value||The last row number|
-|Get Cell Contents as Text|N/A|Boolean value|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
+|Get cell contents as text|N/A|Boolean value|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
 |First line of range contains column names|N/A|Boolean value|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names|
 
 
@@ -466,6 +519,25 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Exception|Description|
 |-----|-----|
 |Failed to read cell value(s)|Indicates a problem reading the value(s) of the specified Excel cell(s)|
+
+### <a name="getactivecell"></a> Get active cell on Excel worksheet
+Get the active cell in the active worksheet of the Excel document
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|Excel instance||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ActiveCellColumnIndex|Numeric value|The numeric value of the active cell's column|
+|ActiveCellRowIndex|Numeric value|The numeric value of the active cell's row|
+
+##### <a name="getactivecell_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to get active cell|Indicates a problem getting the active cell|
 
 ### <a name="saveexcel"></a> Save Excel
 Saves a previously launched Excel instance
@@ -591,7 +663,22 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 |-----|-----|
 |Failed to retrieve first free column/row|Indicates a problem retrieving the first free column/row of an Excel instance|
 
+### <a name="getcolumnname"></a> Get column name on Excel worksheet
+Gets the name of the column
 
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Column number|No|Numeric value||The column number|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ColumnName|Text value|The name of the column|
+
+##### <a name="getcolumnname_onerror"></a> Exceptions
+
+- This action doesn't include any exceptions
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
