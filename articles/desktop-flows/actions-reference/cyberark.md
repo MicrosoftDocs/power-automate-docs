@@ -33,7 +33,7 @@ To deploy the action, configure the following fields:
 
 - **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.
 
-- **Safe**: Populate the name of the safe displayed in the PrivateArk Client. 
+- **Safe**: Populate the name of the safe displayed in PrivateArk Client. 
 
 - **Folder** and **Object**: Select a safe in PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
 
