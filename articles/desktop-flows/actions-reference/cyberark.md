@@ -25,9 +25,7 @@ Connect to CyberArk and retrieve passwords
 
 ## Getting started with CyberArk actions
 
-CyberArk offers an identity security platform that secures human and machine identities from end-to-end.
-
-Power Automate Desktop enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
+CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate Desktop enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
 
 To deploy the action, configure the following fields:
 
@@ -37,7 +35,7 @@ To deploy the action, configure the following fields:
 
 - **Safe**: Populate the name of the safe displayed in the PrivateArk Client. 
 
-- **Folder** and **Object**: Select a Safe in the PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
+- **Folder** and **Object**: Select a safe in PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
 
 - **Extra data**:  If you've configured your credentials in a way that requires the use of extra data, populate this field accordingly.
 
@@ -45,7 +43,7 @@ To deploy the action, configure the following fields:
 
 ![Screenshot of the Get password from CyberArk action.](media/cyberark/get-password-cyberark-action.png)
 
-# CyberArk actions
+## CyberArk actions
 
 ### <a name="getpasswordbase"></a> Get password from CyberArk
 Retrieves a password for a specific application from CyberArk
