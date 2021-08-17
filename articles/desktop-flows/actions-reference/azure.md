@@ -56,6 +56,8 @@ Lastly, choose the environment you want to use for authentication and populate t
 
 After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session. 
 
+![Screenshot of the End session action](media/azure/end-session-action.png)
+
 ## Azure actions
 
 ## Resource groups
