@@ -52,6 +52,8 @@ This action requires you to populate the **Client ID** that works as an authenti
 
 Lastly, choose the environment you want to use for authentication and populate the **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to  Azure services.
 
+Apart from manual configuration, you can select **With file** in **Authentication type** and use a file containing all the required information.
+
 ![Screenshot of the Create session action](media/azure/create-session-action.png)
 
 After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session. 
