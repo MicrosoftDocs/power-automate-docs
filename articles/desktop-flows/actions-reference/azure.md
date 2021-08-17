@@ -48,9 +48,7 @@ Power Automate Desktop allows you to manage Azure virtual machines through the A
 
 Before deploying any action to handle virtual machines, create a new Azure session using the **Create session** action.
 
-This action requires you to populate the **Client ID** that works as an authentication key for the specific application and the respective password.
-
-Additionally, populate the **Tenant ID** that is the Azure Active Directory in which you've created the application.
+This action requires you to populate the **Client ID** that works as an authentication key for the specific application and the respective password. Additionally, populate the **Tenant ID** that is the Azure Active Directory in which you've created the application.
 
 Lastly, choose the environment you want to use for authentication and populate the **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to  Azure services.
 
