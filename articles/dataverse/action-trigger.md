@@ -24,23 +24,14 @@ search.audienceType:
 
 # When an action is performed
 
-**Initial setup**: To create a flow that triggers based on execution of a
-Dataverse action, the action must be included in both a [Catalog and a Category](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/catalog-catalogassignment), and your role needs [permissions](https://docs.microsoft.com/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database) to read it, which may require read access to the *sdkmessage*, *customapi*,
-or *workflows* tables in Dataverse.
+**Initial setup**: To create a flow that triggers based on execution of a Dataverse action, the action must be included in both a [Catalog and a Category](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/catalog-catalogassignment), and your role needs [permissions](https://docs.microsoft.com/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database) to read it, which may require read access to the *sdkmessage*, *customapi*, or *workflows* tables in Dataverse.
 
 !["When an action is performed" trigger search result in the Power Automate cloud flow designer"](../media/dataverse-action-trigger/fda27fcf4067248e47b7efd3daed4511.png)
 
-As the name suggests, this trigger runs the flow whenever a Dataverse action is
-performed. A Dataverse action is     distinct from a Power Automate action. In
-Dataverse, custom process actions, or simply actions, are a way of extending out
-of the box operations on data. You can use them to define custom business logic
-that is reusable. To learn more, see [Work with
-actions](https://docs.microsoft.com/powerapps/maker/data-platform/actions)
-and [Use Custom Process Actions with
-code](https://docs.microsoft.com/powerapps/developer/data-platform/workflow-custom-actions).
+As the name suggests, this trigger runs the flow whenever a Dataverse action is performed. A Dataverse action is distinct from a Power Automate action. In Dataverse, custom process actions, or simply actions, are a way of extending out of the box operations on data. You can use them to define custom business logic that is reusable. To learn more, see [Work with actions](https://docs.microsoft.com/powerapps/maker/data-platform/actions) and [Use Custom Process Actions with code](https://docs.microsoft.com/powerapps/developer/data-platform/workflow-custom-actions).
 To learn how to invoke Dataverse actions from Power Automate, see [Perform bound or unbound actions](https://docs.microsoft.com/power-automate/dataverse/bound-unbound).
 
-The trigger uses the following input fields: 
+The trigger uses the following input fields:
 
 - **Catalog** – used to organize and manage Dataverse process actions, much
     like using folders to organize files.
