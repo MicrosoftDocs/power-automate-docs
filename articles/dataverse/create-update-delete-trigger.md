@@ -83,7 +83,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ## Filtering columns
 
-Use the **Column filter** box to define the specific columns of the row that should cause the flow the run when changed, as a comma-separated list of unique column names. 
+Use the **Column filter** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names. 
 
    ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
 
