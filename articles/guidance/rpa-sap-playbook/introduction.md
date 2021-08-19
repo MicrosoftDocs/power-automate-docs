@@ -1,5 +1,5 @@
 ﻿---
-title: SAP GUI–based RPA in Power Automate Desktop  | Microsoft Docs
+title: Introduction to SAP GUI–based RPA in Power Automate Desktop  | Microsoft Docs
 description: In this playbook, we'll focus on SAP GUI automation patterns and best practices using Microsoft Power Automate, Power Automate Desktop, and desktop flows.
 services: ''
 suite: flow
@@ -18,7 +18,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Introduction to SAP GUI–based RPA in Power Automate Desktop  
+# Introduction to SAP GUI–based RPA in Power Automate Desktop
 
 Robotic process automation (RPA) enables you to automate mundane, rules-based tasks. With RPA, you can automate legacy software without APIs, which opens the world of automation to include software that's old or new, on-premises or in the cloud.
 
@@ -30,13 +30,13 @@ Here's an introductory video for the series of automating SAP GUI-based applicat
 
 > [!VIDEO https://www.youtube.com/watch?v=7u9TYcDShNA]
 
-## Lifecycle of a typical enterprise RPA bot 
+## Lifecycle of a typical enterprise RPA bot
 
 Power Automate empowers everyone to automate while providing security, compliance, and control over the usage and execution of automation across the IT ecosystem, whether on-premises or in the cloud.
 
-This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions that span multiple legacy systems takes time. And, as shown in the following image, most of this time is spent on production readiness, including advanced retry and exception handling.<!--note from editor: Alt text could be more descriptive.-->
+This playbook takes you through prototyping the automation of an example SAP scenario. However, it's important to understand that building sophisticated, robust, and impactful RPA solutions that span multiple legacy systems takes time. And, as shown in the following image, most of this time is spent on production readiness, including advanced retry and exception handling.
 
-  ![Diagram showing the total effort to develop a bot increasing with how sophisticated it is. Make sure the effort is proportional to the bot's R O I.](media/bot-ROI.png)
+  ![Diagram showing the total effort to develop a bot increasing with how sophisticated it is. The effort should be proportional to the bot's ROI.](media/bot-ROI.png)
 
 > [!div class="nextstepaction"]
 > [Next step: Prerequisites for automating RPA SAP GUI](prerequisites.md)

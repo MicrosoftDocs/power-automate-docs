@@ -1,5 +1,5 @@
 ---
-title: Use SAP GUI automation to record VBScript | Microsoft Docs
+title: Use SAP GUI automation engine to record VBScript | Microsoft Docs
 description: Use the proprietary SAP GUI automation engine to generate VBScript output from recorded user interactions.
 suite: flow
 documentationcenter: na
@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Record VBScript with the SAP GUI automation engine
+# Use SAP GUI automation engine to record VBScript
 
 1. Confirm that all [SAP GUI scripting configurations](./prerequisites.md#sap-gui-scripting-configuration) are done.
 
@@ -36,7 +36,7 @@ ms.reviewer: deonhe
    ![Screenshot of saving the recording file in the Record and Playback dialog.](media/saving-recording-file.png)
 
 1. Select **Record Script** to start the screen capturing process.  
-    Every interaction you do in SAP will be captured as repeatable VBScript commands. <!--note from editor: Are you sure this is worth saying in a tutorial? If they're following along, they wouldn't have previously recorded steps and saved to this file, and it's not that confusing to be asked if you want to overwrite a file. If you previously recorded steps and saved to this file, you'll receive a prompt that asks if you'd like to overwrite the file.-->
+    Every interaction you do in SAP will be captured as repeatable VBScript commands.
 
 1. Follow the steps outlined in [Sample SAP GUI automation for this tutorial](sample-sap-scenario.md) to produce a recording.
 

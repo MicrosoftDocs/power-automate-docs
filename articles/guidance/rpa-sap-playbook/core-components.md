@@ -32,9 +32,9 @@ Let's start with the core platform service called Power Automate. Power Automate
 
 ![Screenshot of the Power Automate portal home page.](media/power-automate-website.png)
 
-The Power Automate designer is shown in the following image.<!--note from editor: Alt text could be more descriptive.-->
+The Power Automate designer is shown in the following image.
 
-![Screenshot of the Power Automate designer.](media/power-automate-flow-authoring.png)
+![Screenshot of the flow in the designer.](media/power-automate-flow-authoring.png)
 
 ## Desktop flows
 
@@ -48,17 +48,17 @@ A list of desktop flows is shown in the following image.
 
 It's quicker and easier than ever to automate with new, intuitive Power Automate Desktop. You can use Power Automate Desktop to automate legacy applications, such as terminal emulators, and interact with modern web and desktop applications, files, folders and many more.
 
-Power Automate Desktop broadens the existing RPA capabilities in Power Automate. In conjunction with desktop flows, all repetitive desktop processes can be automated. 
+Power Automate Desktop broadens the existing RPA capabilities in Power Automate. In conjunction with desktop flows, all repetitive desktop processes can be automated.
 
-You can use prebuilt drag-and-drop actions or record your own cloud flows to run later.<!--note from editor: I don't know what the following means: You can also with the machine using images or coordinates.-->
+You can use prebuilt drag-and-drop actions or record your own cloud flows to run later.
 
 The following image shows an example of the Power Automate Desktop console, showing desktop flows to which an individual has access.
 
 ![Screenshot of Power Automate Desktop console home screen.](media/power-automate-desktop-console.png)
 
-The following image shows an example of the Power Automate Desktop designer, from which you can create desktop flows.<!--note from editor: Alt text could be more descriptive.-->
+The following image shows an example of the Power Automate Desktop designer, from which you can create desktop flows.
 
-![Screenshot of Power Automate Desktop authoring experience.](media/power-automate-desktop-authoring.png)
+![Screenshot of Power Automate Desktop authoring experience that shows variables and the main tab.](media/power-automate-desktop-authoring.png)
 
 ## On-premises data gateway
 

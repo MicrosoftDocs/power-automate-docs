@@ -1,5 +1,5 @@
 ---
-title: No-code RPA using SAP GUI in Power Automate Desktop | Microsoft Docs
+title: Use no-code RPA with SAP GUI in Power Automate Desktop | Microsoft Docs
 description: The desktop recorder translates each mouse click and keystroke into Power Automate Desktop actions and adds them to your desktop flow. 
 suite: flow
 documentationcenter: na
@@ -17,25 +17,25 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# No-code RPA with SAP GUI in Power Automate Desktop  
+# Use no-code RPA with SAP GUI in Power Automate Desktop
 
 You can use the [Power Automate Desktop recorder](../../desktop-flows/recording-flow.md) to record SAP GUI interactions. The desktop recorder translates each mouse click and keystroke into Power Automate Desktop actions, and then adds these actions to your desktop flow.
 
-If you want to see the new desktop recording experience in action, follow these steps to reconfigure the action-based automation you built in the ![Low-code RPA with SAP GUI in Power Automate Desktop](action-based-SAP-GUI-automation-manually-overview.md).<!--note from editor: Please check that this link goes where it should.--> section of this playbook.
+If you want to see the new desktop recording experience in action, follow these steps to reconfigure the action-based automation you built in the ![Low-code RPA with SAP GUI in Power Automate Desktop](action-based-SAP-GUI-automation-manually-overview.md) section of this playbook.
 
 You can also follow along in the no-code approach in episode 6 of the video series:
 
 > [!VIDEO https://www.youtube.com/watch?v=cijEDvayeVw]
 
-1.  Select the **ProcessHRMasterForm** subflow tab, and then select **Desktop recorder**.
+1. Select the **ProcessHRMasterForm** subflow tab, and then select **Desktop recorder**.
 
    ![Screenshot of Power Automate Desktop showing the Desktop recorder button.](media/desktop-recorder-button.png)
 
-2.  Open SAP, bring the SAP **Easy Access** window to the foreground, and then in the Desktop recorder window, select **Start recording**. 
+2. Open SAP, bring the SAP **Easy Access** window to the foreground, and then in the Desktop recorder window, select **Start recording**.
 
    ![Screenshot of SAP GUI with Desktop recorder tracking window and instruction to start recording.](media/desktop-recorder-tracking-window-start-recording.png)
 
-3.  Enter **PA30** into the **Transaction** field, and then select **Enter**.
+3. Enter **PA30** into the **Transaction** field, and then select **Enter**.
  
   ![Screenshot of SAP GUI with Desktop recorder tracking window and SAP transaction code being marked for recording.](media/desktop-recorder-tracking-with-SAP-transaction-code.png)
 
@@ -77,7 +77,7 @@ You can also follow along in the no-code approach in episode 6 of the video seri
 
     ![Screenshot of more Power Automate Desktop showing duplicate or accidentally captured actions to be removed - continued.](media/PAD-showing-more-actions-to-be-removed.png)
 
-13. Highlight all actions that were manually defined in [Low-code RPA with SAP GUI in Power Automate Desktop](action-based-sap-gui-automation-manually-overview.md)<!--note from editor: Please check that this is the right link.-->, right-click, and then select **Delete selection** to remove them from the subflow.
+13. Highlight all actions that were manually defined in [Low-code RPA with SAP GUI in Power Automate Desktop](action-based-sap-gui-automation-manually-overview.md), right-click, and then select **Delete selection** to remove them from the subflow.
 
     ![Screenshot of Power Automate Desktop that shows added actions which should be deleted.](media/PAD-with-actions-to-be-deleted.png)
 

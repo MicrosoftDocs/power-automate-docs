@@ -17,19 +17,19 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Prerequisites for automating RPA SAP GUI
-<!--note from editor: The title could be better. -->
+# Prerequisites for automating SAP GUI-based workloads
+
 The following prerequisites need to be met before you can start automating your SAP GUI–based workloads.
 
 ## License requirements
 
 To build RPA solutions with Power Automate, you'll need one or more of the following licenses or add-ons:
 
--   Power Automate **per user plan** with **attended** RPA (or trial)
+- Power Automate **per user plan** with **attended** RPA (or trial)
 
--   Power Automate **per user plan** with **attended** RPA + **unattended** RPA add-on
+- Power Automate **per user plan** with **attended** RPA + **unattended** RPA add-on
 
--   Power Automate **per flow plan** + **unattended** RPA add-on
+- Power Automate **per flow plan** + **unattended** RPA add-on
 
 ## Software requirements
 
@@ -37,15 +37,15 @@ Before you can use your device to create desktop flows and Power Automate Deskto
 
 The following software components are required on Windows 10 Pro devices:
 
--   [The latest version of .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required)
+- [The latest version of .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required)
 
--   [The latest version of desktop flows](../../desktop-flows/setup.md#install-power-automate-desktop-on-your-device), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
+- [The latest version of desktop flows](../../desktop-flows/setup.md#install-power-automate-desktop-on-your-device), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
 
--   [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
+- [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
 
--   [On-premises data gateway](../../gateway-reference.md#use-a-gateway) (make sure the data gateway region matches your environment's region)
+- [On-premises data gateway](../../gateway-reference.md#use-a-gateway) (make sure the data gateway region matches your environment's region)
 
--   **SAP GUI for Windows** (ask your administrator for details).
+- **SAP GUI for Windows** (ask your administrator for details).
 
 ## SAP GUI scripting configuration
 

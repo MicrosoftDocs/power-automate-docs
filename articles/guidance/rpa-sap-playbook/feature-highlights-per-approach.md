@@ -23,7 +23,7 @@ As with many other technologies and techniques, there are pros and cons for each
 
 There will be occasions when combining both techniques will be beneficial, like adding a VBScript action with some Excel VBA code to support advanced formatting as part of your action-based automation.
 
-Here's a summary of the two approaches.<!--note from editor: I think the empty bulleted list would be puzzling to a screen reader, so I added check marks to convey information.-->
+Here's a summary of the two approaches.
 
 | Feature | VBScript | Actions |
 |-------------------------|-------------------------|-------------------------|
