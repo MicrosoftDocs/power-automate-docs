@@ -29,7 +29,7 @@ Imagine that you have a SharePoint list in which employees store requests for de
 
 To follow this guided walkthrough, create a list in a SharePoint site to which you have access. You can use the following example of a list:  
   
-   ![Sharepoint list.](media/trigger-sharepoint-list/sharepoint-list.png)
+   ![SharePoint list.](media/trigger-sharepoint-list/sharepoint-list.png)
 
 Once you have a SharePoint list for which you want to create an approval process:  
   
