@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Low-code RPA with SAP GUI in Power Automate Desktop
+# Quick, low-code RPA with SAP GUI in Power Automate Desktop
 
 <!--todo: there are no 4 samples in the linked doc-->
 <!--note from editor: The "4" referred to the chapter number in the e-book (which I renamed, so if you reject that change, be sure to change it here and elsewhere in the doc set).-->
