@@ -265,7 +265,7 @@ If a UI flow run fails, correct the issue, and then try the following steps to r
 ## Learn more
 
  - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](/flow/gateway-manage) documentation.
+ - [Use the on-premises data gateway app](/power-automate/gateway-manage) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 
