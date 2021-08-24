@@ -490,6 +490,11 @@
     "source_path": "articles/ui-flows/overview-analytics.md",
     "redirect_url": "/power-automate/desktop-flows/overview-analytics",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/connection-cds-native.md",
+    "redirect_url": "/power-automate/dataverse/overview",
+    "redirect_document_id": false
   }
 ]
 }

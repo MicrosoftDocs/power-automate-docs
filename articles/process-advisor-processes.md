@@ -3,7 +3,7 @@ title: Work with processes and recordings | Microsoft Docs
 description: How to create and work with processes in process advisor.
 author: nijemcevic 
 ms.service: power-automate
-ms.subservice: cloud-flow
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -38,7 +38,7 @@ In general, processes that you think might be inefficient or repetitive are good
 
 1. Give your process a name and description, and then select **Create**.
 
-Here's a short video on how to create a process using process advisor: [Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
+Here's a short video on how to create a process using process advisor: [Video: Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
 
 ## Record your process
 
@@ -123,10 +123,10 @@ After you create the process, you'll see a creation successful modal with a few 
 
 Once the recording has completed, you can view the recorded actions in the recording details screen. More importantly, you need to prepare the recording to be ready for analysis. What does this mean?
 
-- The actions recorded can be very granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
+- The actions recorded can be granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
 - Remove any sensitive information from the recording. For more information, go to [Protect your data in process advisor](process-advisor-protect.md).
 
-Here's a short video on how to prepare a recording for analysis using process advisor: [Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
+Here's a short video on how to prepare a recording for analysis using process advisor: [Video: Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
 
 ### Grouping actions into activities
 
@@ -137,7 +137,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 1. Name your activity on the right side of the screen. Use the dropdown menu to find activity names that already exist for the process or create your own.
 
    > [!div class="mx-imgBorder"]
-   > ![Group actions into.](./media/group-actions.png)
+   > ![Group actions into activities.](./media/group-actions.png "Group actions into activities")
  
 1. If you made a mistake and want to delete an activity, use the **Delete activity** button in the command bar.
 
@@ -152,6 +152,7 @@ Here's a short video on how to prepare a recording for analysis using process ad
 ### Grouping tips
 
 - As much as possible, use an existing activity name. This creates a more consistent and accurate process map.
+
 - Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the dropdown list after it was removed from all recordings that used that activity name, you need to analyze the recording.
 
 ### Manage activity names

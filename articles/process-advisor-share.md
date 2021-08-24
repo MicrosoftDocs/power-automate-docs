@@ -3,7 +3,7 @@ title: Share a process advisor process | Microsoft Docs
 description: How to share a process in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
-ms.subservice: cloud-flow
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn

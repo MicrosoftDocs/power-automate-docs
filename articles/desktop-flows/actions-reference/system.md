@@ -195,7 +195,7 @@ Immediately stops a running process
 |-----|-----|-----|-----|-----|
 |Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate will be specified by its name, or by its ID|
 |Process ID|No|Numeric value||The ID of the process to terminate|
-|Process name|No|Text value|Own text|The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
+|Process name|No|Text value||The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
 
 
 ##### Variables Produced
@@ -422,7 +422,7 @@ Sets an environment variable to a given value
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value|Own text|The name of the environment variable|
+|Environment variable name|No|Text value||The name of the environment variable|
 |New environment variable value|No|Text value||The value that is set to the environment variable|
 |Type|N/A|User, System|User|The type of the environment variable|
 
@@ -442,7 +442,7 @@ Retrieves the value of an environment variable
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value|Own text|The name of the environment variable whose value will be retrieved|
+|Environment variable name|No|Text value||The name of the environment variable whose value will be retrieved|
 |Search for variable only in scope|N/A|Boolean value|False|Specify whether to search for the variable only in a specific scope|
 |Scope|N/A|User, System|User|The scope from which the environment variable should be retrieved|
 
@@ -465,7 +465,7 @@ Deletes an environment variable from a given scope
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value|Own text|The name of the environment variable to delete|
+|Environment variable name|No|Text value||The name of the environment variable to delete|
 |Type|N/A|User, System|User|The type of the environment variable to delete|
 
 
@@ -542,6 +542,9 @@ Gets the width, height, bit count and frequency of a selected monitor
 
 ### <a name="setscreenresolution"></a> Set screen resolution
 Sets the width, height, bit count and frequency of a selected monitor during an attended desktop flow run. 
+
+> [!Important]
+>To use the **Set screen resolution** action in flows triggered through the Power Automate portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. For example, you can use your machine's physical screen to connect to the machine. In remote sessions, such as unattended scenarios that use remote desktop clients, the action has no effect, as users can't manually change the resolution.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
