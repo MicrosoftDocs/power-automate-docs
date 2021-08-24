@@ -104,8 +104,6 @@ adding conditions to the flow, the flow still runs and the calls are
 counted as an API request, causing you to reach your API request limits faster.
 To avoid it, you can write expressions in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
-Here's a [community article of how to use trigger conditions](https://www.timlinenterprises.com/microsoft-power-automate-flow-trigger-conditions/).
-
 You may also need to secure the trigger inputs/outputs in the run history of a cloud flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 
 

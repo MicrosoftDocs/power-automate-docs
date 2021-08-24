@@ -1,13 +1,13 @@
 ---
 title: Actions and the actions pane | Microsoft Docs
 description: This section describes the actions and the actions pane in flow designer.
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.author: marleon
+ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 
@@ -16,8 +16,6 @@ search.audienceType:
 ---
 
 # Configure actions and the actions pane
-
-
 
 Upon opening the flow designer, the actions pane on the left side of the window shows all the action groups. 
 
@@ -92,7 +90,7 @@ If different errors require different error handling behaviors, select the **Adv
 
 ## Enabling and disabling actions
 
-To disable or enable an action, right-click on it and select **Disable action** or **Enable Action**, respectively. 
+To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively. 
 
 ![The disable action option.](media\enabling-disabling-actions\enable-disable-action.png)
 
