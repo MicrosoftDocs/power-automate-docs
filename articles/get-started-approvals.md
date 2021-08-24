@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/01/2021
+ms.date: 08/24/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -79,7 +79,7 @@ It can take a few minutes for the database provisioning to be completed, and you
 
 Because the approvals connector is a standard connector, any license that grants access to Power Automate and the ability to use standard connectors is sufficient to create approval flows.
 
-This might be a Power Automate license, or an Office 365 or Dynamics 365 license with built-in Power Automate capabilities.<!--note from editor: Edit okay?--> You can find a list of these Office 365 and Dynamics 365 licenses in the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+This might be a Power Automate, Office 365, or Dynamics 365 license with built-in Power Automate capabilities. You can find a list of the Office 365 and Dynamics 365 licenses in the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 
 ## Get started
