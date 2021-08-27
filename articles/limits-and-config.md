@@ -38,7 +38,7 @@ Flows have different limits depending on their *performance profile*. There are 
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials | 
 | MediumLow1          | - Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br />- Dynamics 365 Team Member |
 | MediumLow2          | - Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses) |
-| Medium              | - All instant flows, such as flows with Button or Power Apps triggers, or child flows |
+| Medium              | - Power Apps triggered flows, or child flows |
 | High                | - Power Automate per flow plan |
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
