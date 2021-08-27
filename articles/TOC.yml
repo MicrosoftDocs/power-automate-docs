@@ -148,6 +148,8 @@
         href: parallel-modern-approvals.md
       - name: Everyone must approve
         href: all-assigned-must-approve.md
+      - name: Request approvals from groups
+        href: office-365-groups.md
       - name: Integrated approvals
         href: common-data-model-approve.md
       - name: Format approval requests
@@ -187,10 +189,12 @@
         displayName: Use flows with Microsoft Teams
       - name: Install the Power Automate app
         href: ./teams/install-teams-app.md
-      - name: Create flows in Microsoft Teams
+      - name: Create flows in Teams
         href: ./teams/teams-app-create.md
-      - name: Manage flows in Microsoft Teams
-        href: ./teams/teams-app-home.md    
+      - name: Manage flows in Teams
+        href: ./teams/teams-app-home.md
+      - name: Send a message in Teams
+        href: ./teams/send-a-message-in-teams.md    
       - name: Trigger flows from Teams messages
         href: trigger-flow-teams-message.md
       - name: Create flows using the Power Apps app
@@ -409,12 +413,20 @@
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
     items:
+    - name: Handle and manipulate variables
+      items:
+      - name: Check if a variable is numeric
+        href: ./desktop-flows/how-to/check-if-variable-numeric.md 
+      - name: Delete a row/column from a datatable
+        href: ./desktop-flows/how-to/delete-row-column-datatable.md 
     - name: Handle email messages in desktop flows
       items:
       - name: Add images to email messages
         href: ./desktop-flows/how-to/add-images-email-messages.md      
       - name: Use a shared Outlook mailbox in email automations
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
+      - name: Automate email accounts with two-step verification
+        href: ./desktop-flows/how-to/automate-emails-accounts-two-step-verification.md     
     - name: Automate tasks in Excel
       items: 
       - name: Convert a CSV file into an Excel spreadsheet
@@ -423,6 +435,12 @@
         href: ./desktop-flows/how-to/run-macros-excel.md  
       - name: Run SQL queries on Excel files
         href: ./desktop-flows/how-to/sql-queries-excel.md 
+      - name: Autofit Excel columns using VBScript
+        href: ./desktop-flows/how-to/autofit-excel-columns-vbscript.md 
+      - name: Unhide worksheets in Excel using VBScript
+        href: ./desktop-flows/how-to/unhide-excel-worksheets-vbscript.md 
+      - name: Convert Excel to PDF using VBScript
+        href: ./desktop-flows/how-to/convert-excel-pdf-vbscript.md 
     - name: Use images, image recognition and OCR
       items:
       - name: Use image recognition on machines with different screen resolutions
@@ -459,8 +477,18 @@
         href: ./desktop-flows/how-to/scroll-web-page.md   
       - name: Handle iframes on a web page
         href: ./desktop-flows/how-to/handle-iframes.md  
+      - name: Populate text fields and click on links using JavaScript
+        href: ./desktop-flows/how-to/populate-text-fields-click-links-javascript.md
+    - name: Convert data and files
+      items: 
+      - name: Convert a file to Base64 string format
+        href: ./desktop-flows/how-to/convert-file-base64-format.md
+      - name: Convert Base64 text to hexadecimal format
+        href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Set screen resolution on unattended mode
+      href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
   - name: Desktop actions reference

@@ -1,13 +1,13 @@
 ---
 title: Debugging a desktop flow | Microsoft Docs
 description: Use the flow designer's debugging options to debug flows.
-author: olegmelnykov
+author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: olmelnyk
-ms.reviewer: olmelnyk
+ms.author: marleon
+ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 
@@ -30,7 +30,7 @@ Debug a desktop flow using the following tools:
 
 ## Run, stop, and pause in flow designer
 
-Select **Run** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button runs the flow action by action and pauses it after each action completes. The **Stop** button stops the flow completely.
+Select **Run** or press **F5** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** or press **Ctrl + Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button and the **F10** shortcut run the flow action by action and pause it after each action completes. The **Stop** button and the **Shift + F5** shortcut stop the flow completely.
 
 ![View the toolbar.](\media\run-stop-pause\toolbar.png)
 
@@ -46,7 +46,13 @@ The **Run next action** button runs the flow action by action. After each action
 
 ## The status bar
 
-The status bar on the bottom of the Window shows the status of the flow and the number of selected actions. Additionally, it shows the total number of actions and subflows in the current flow. The Run delay shows the amount of time that the flow waits for after running each action in the flow designer. Select the delay and use the slider to adjust the value in milliseconds to change this value. The status bar also shows the number of Errors, if any are present. Select the Errors to pop up the Errors pane. Using **Search inside the flow** shows an additional element with the number of results. Select the number of results to pop up the Find in code pane.
+The status bar on the bottom of the window shows the status of the flow and the number of the selected actions. Additionally, it shows the total number of actions and subflows in the current flow. 
+
+The **Run delay** field defines the time that the flow waits after running each action in the flow designer. You can modify the default value to increase or decrease the milliseconds that the flow waits.
+
+The status bar also displays the number of errors, if any are present. Select the **Errors** option to pop up the **Errors pane**. 
+
+If you search inside the flow, the status bar shows an additional field containing the number of the results. Select this field to pop up the **Find in code** pane.
 
 ![status bar.](\media\status-bar\status-bar.png)
 

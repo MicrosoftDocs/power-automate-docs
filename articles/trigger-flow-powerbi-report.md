@@ -25,7 +25,15 @@ Empower your end-users to go from insight to action. With the Power Automate vis
 ![Power Automate Visual in Power BI on the main screen.](media/power-bi-flow/power-bi-main.png)
 
 ## Add Power Automate visual to a Power BI report
-To get started, [download the visual from AppSource](https://go.microsoft.com/fwlink/?linkid=2160902) and then import it to your Power BI report. After it's imported, you’ll see the Power Automate icon in the **Visualization** pane. When you select this new visual, it's automatically added to your current report page.
+To get started, launch either Power BI Desktop or Power BI Service and select the Power Automate icon from the **Visualizations** pane.
+
+![The Visualizations pane](media/power-bi-flow/visualization-pane.png)
+
+If you’re using Power BI Desktop, you can also access the visual from the ribbon by navigating to the Insert tab and selecting Power Automate (preview) within the Power Platform section
+
+![Desktop ribbon](media/power-bi-flow/desktop-ribbon.png)
+
+You can follow these steps to create button that triggers automated tasks.
 
 ![Power Automate visual instructions.](media/power-bi-flow/powerbi-default-state.png)
 
