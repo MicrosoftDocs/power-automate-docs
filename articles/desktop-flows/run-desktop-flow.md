@@ -250,7 +250,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 1.	Select **…** on the top right corner of the  desktop flows action.
 1.	Select **Settings**.
 
-    ![The settings option .](../media/run-desktop-flow/settings.png "The settings option")
+    ![The settings option .](media/run-pad-portal/timeout_settings.png "The settings option")
 
 1.  Select the **Timeout** property and update the duration to correctly handle your dekstop flow run. 
 1.	Select **Done**.
