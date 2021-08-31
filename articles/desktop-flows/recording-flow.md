@@ -50,13 +50,11 @@ To add a comment to the recorded actions, select **+ Comment**.
 
 To launch a web browser instance while recording web flows, select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
 
-After selecting the proper browser, the recorder will track automatically the loaded webpage in which the recording takes place. 
+After selecting the proper browser, the recorder will detect automatically the loaded webpage in which the recording takes place. 
 
 ### Add text using Input Method Editors (IMEs)
 
-Input Method Editors (IMEs) are software components that enable users to input text in languages that can't be represented easily on a standard QWERTY keyboard. 
-
-Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
+Input Method Editors (IMEs) are software components that enable users to input text in languages that can't be represented easily on a standard QWERTY keyboard. Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
 
 Power Automate Desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
 
@@ -124,7 +122,7 @@ To extract a text value while using image recording:
 You can edit manually any actions created through the recorder once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
 
 > [!NOTE]
-> Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals or loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.
+> Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing, however most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals and loops, cannot be recorded. Also, there may be redundant actions in a recording that should be removed.
 
 ## Known issues and limitations
 
@@ -132,9 +130,9 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Workarounds**: None.
 
-- **Issue**: While running a flow created through an image-based recording, the click may be sent to the wrong place. 
+- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place. 
 
-- **Workarounds**: Edit the auto-generated action “Move mouse to image” through the designer and decrease the Tolerance parameter in the Advanced settings.
+- **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
 
 - **Issue**: The “Extract text from image” popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
 
