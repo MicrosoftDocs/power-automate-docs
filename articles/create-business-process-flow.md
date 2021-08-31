@@ -235,8 +235,6 @@ View all instances that are currently being worked under the **Active** tab. Fro
 - The owner of the Dataverse row associated with the active stage.
 - The time since the instance was created.
 
-To see the
-
 Select an instance to open it in a new tab, or select it to copy a link, share a link via email, abandon, or delete the instance.
   
 ## Next steps
