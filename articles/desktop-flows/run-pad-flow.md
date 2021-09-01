@@ -140,6 +140,17 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
    1. Select the **Resubmit** button from the action menu.
 
+## Support long running desktop flows
+Some of your desktop flows might run for long durations (e.g. more than 24 hours). To ensure that those flows run successfully and don't fail due to the default timeout values:
+
+1.	Select **…** on the top right corner of the  desktop flows action.
+1.	Select **Settings**.
+
+    ![The settings option .](media/run-pad-portal/timeout_settings.png "The settings option")
+
+1.  Select the **Timeout** property and update the duration to correctly handle your dekstop flow run. 
+1.	Select **Done**.
+
 ## Troubleshoot failures
 
 1. If your unattended desktop flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
