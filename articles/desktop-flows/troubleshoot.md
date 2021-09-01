@@ -73,13 +73,13 @@ To identify whether another process is indeed the issue:
 
   ![Screenshot of the results of the handle net.pipe command.](media/troubleshoot/command-prompt.png)
 
-- Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** is running.
+- Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
 
 - If such a process exists, make sure that Power Automate Desktop is closed from the taskbar. Next, stop the process identified in the previous step and try again to launch Power Automate Desktop.
 
 As a permanent fix, you can stop the process causing the issue from running. Alternatively,  if it's an internal process, you can change it to use a more specific endpoint, such as **net.pipe://localhost/something**. 
 
-If none of the above is possible, specify Power Automate Desktop executables to run as administrator. However, this solution may not solve the issue in all cases, and it would cause a UAC prompt to appear each time.
+If none of the above is possible, specify Power Automate Desktop executables to run as administrator. However, this solution may not solve the issue in all cases, and it will cause a UAC prompt to appear each time.
 
 ## Change the on-premises Service account
 The UIFlowService uses the virtual account “NT SERVICE\UIFlowService”. This account needs the ability to “Logon as a service” in order to successfully startup.
