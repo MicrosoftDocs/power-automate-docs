@@ -62,7 +62,7 @@ To identify whether another process is indeed the issue:
 
 - Run a command prompt session as administrator.
 
-- Navigate to the folder in which you have extracted Sysinternals.
+- Navigate to the folder in which you've extracted Sysinternals.
 
 - Run the following command: 
 
