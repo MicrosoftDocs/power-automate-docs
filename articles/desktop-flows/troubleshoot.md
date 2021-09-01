@@ -56,6 +56,8 @@ The cause of this error can be another process running a named pipes server in t
 
 To identify whether another process is indeed the issue:
 
+- Close Power Automate Desktop and use the Windows Task Manager to ensure that its process isn't still running.
+
 - Download the [Sysinternals Suite](https://docs.microsoft.com/sysinternals/downloads/sysinternals-suite).
 
 - Extract the zip file to a folder on your desktop.
@@ -75,7 +77,7 @@ To identify whether another process is indeed the issue:
 
 - Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
 
-- If such a process exists, make sure that Power Automate Desktop is closed from the taskbar. Next, stop the process identified in the previous step and try again to launch Power Automate Desktop.
+- If such a process exists, stop the process identified in the previous step and try again to launch Power Automate Desktop.
 
 As a permanent fix, you can stop the process causing the issue from running. Alternatively,  if it's an internal process, you can change it to use a more specific endpoint, such as **net.pipe://localhost/something**. 
 
