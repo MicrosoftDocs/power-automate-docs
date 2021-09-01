@@ -26,7 +26,7 @@ search.audienceType:
 
 ## Prevent users manually updating Power Automate Desktop
 
-Using the following registry entry you can prevent users to manually update Power Automate Desktop on their machines.
+Using the following registry entry you can prevent users to manually update Power Automate Desktop on their machines and receive update notifications.
 
 | | |
 |---|---|
