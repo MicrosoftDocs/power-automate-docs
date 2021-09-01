@@ -27,7 +27,7 @@ search.audienceType:
 
 ## What is a trigger?
 
-A **trigger** is the event that starts a cloud flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
+A **trigger** is the event that starts a cloud flow. For example, if you want to get a notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
 
 Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
