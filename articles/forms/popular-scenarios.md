@@ -61,7 +61,7 @@ After adding the Microsoft Forms trigger and action, the third step is to add th
    > [!div class="mx-imgBorder"]
    > ![Start and wait for approval flow screen.](..\media\forms\flow-start-and-wait-for-approval.png "Screen showing the completed flow to start and wait for an approval")
 
-You can view more examples with approvals in the [documentation](/sequential-modern-approvals.md).
+You can view more examples with approvals in the [documentation](../sequential-modern-approvals.md).
 
 ## Upload Microsoft Forms responses to Excel
 
