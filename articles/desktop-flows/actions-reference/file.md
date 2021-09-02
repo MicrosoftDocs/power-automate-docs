@@ -3,6 +3,7 @@ title: File | Microsoft Docs
 description: File Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -14,9 +15,8 @@ search.audienceType:
   - enduser
 ---
 
+
 # File
-
-
 
 Manage and manipulate files
 
@@ -32,6 +32,29 @@ Manage and manipulate files
 |[Write to CSV file](#writetocsvfile)|
 |[Get file path part](#getpathpart)|
 |[Get temporary file](#gettemppath)|
+
+## Getting started with file actions
+
+Power Automate Desktop provides the files actions to automate managing files and manipulate their properties.
+
+To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
+
+  ![Screenshot of the get files in folder action properties window.](\media\file\get-files-in-folder-example.png)
+
+To copy or move files, use the Copy file(s) and Move file(s) actions, respectively. 
+
+Rename a file or multiple files with the **Rename file(s)** action. Select to either set a new name or add, replace or remove a string of text to the existing filename. In the figure below, a list of files has been selected and the string **backup_** will be appended to the beginning of each file.
+
+  ![Screenshot of the rename files action properties window.](\media\file\rename-files-example.png)
+
+The same action can be used to remove this string of text should the backed up files be restored.
+
+The **Read text from file** action stores text from a .txt file in a variable. Specify a .txt file, and the file contents are stored as a single text value or as a list. 
+
+The **Write text to file** action adds text to an existing .txt file or creates a new file with the specified text. 
+
+
+## File actions
 
 ### <a name="copy"></a> Copy file(s)
 Copy one or more files into a destination folder

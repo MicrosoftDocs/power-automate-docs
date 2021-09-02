@@ -1,10 +1,10 @@
 1. Select **Add an action** on the **If yes** branch of the condition.
 
-    ![add new step](media/modern-approvals/add-action-after-condition.png)
+    ![add new step.](media/modern-approvals/add-action-after-condition.png)
 1. Enter **send email** into the search box on the **Choose an action** card.
 1. Select the **Send an email (V2)** action.
 
-    ![select send an email action](media/modern-approvals/select-send-email-yes.png)
+    ![select send an email action.](media/modern-approvals/select-send-email-yes.png)
 1. Configure the email card to suit your needs.
 
      >[!NOTE]

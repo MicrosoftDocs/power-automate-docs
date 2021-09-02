@@ -3,6 +3,7 @@ title: Web automation | Microsoft Docs
 description: Web automation Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -15,8 +16,6 @@ search.audienceType:
 ---
 
 # Web automation
-
-
 
 Start and manage web applications on browsers
 
@@ -45,6 +44,29 @@ You can find more information on how to use the web automation actions [here](..
 |[Run JavaScript function on web page](#executejavascript)|
 |[Hover mouse over element on web page](#hoveroverelement)|
 |[Close web browser](#closewebbrowser)|
+
+## Getting started with web automation
+
+Web automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
+
+To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
+
+![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
+
+All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+
+Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
+
+![Screenshot of the options to edit and create selectors.](\media\webautomation\create-selector.png)
+
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+
+![Screenshot of the available operators in the selector builder.](\media\webautomation\selector-operators.png)
+
+>[!NOTE]
+> You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
+
+## Web automation actions
 
 ## Web data extraction
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data
@@ -187,6 +209,7 @@ Fill a text field in a web page with the specified text
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 
 
 ##### Variables Produced

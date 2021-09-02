@@ -3,6 +3,7 @@ title: Web | Microsoft Docs
 description: Web Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -16,8 +17,6 @@ search.audienceType:
 
 # Web
 
-
-
 Communicate with web applications and services directly
 
 You can find more information on how to use the web actions [here](../automation-web.md)
@@ -27,6 +26,39 @@ You can find more information on how to use the web actions [here](../automation
 |-----|
 |[Download from web](#downloadfromweb)|
 |[Invoke web service](#invokewebservicebase)|
+
+## Getting started with web actions
+
+Web actions enable users to interact with APIs and send web requests that perform various operations, such as uploading and downloading data and files.
+
+To send an API request, like POST, GET, PUT, or DELETE, you can use the **Invoke web service** action. 
+
+In the action's properties, you have to populate the service's URL and the appropriate HTTP method. Additionally, you have to choose the request and response content type, such as XML and JSON.
+
+The **Custom headers** and **Request body** fields depend on the API, and you have to configure them as described in its documentation.
+
+![Screenshot of the Invoke web service action.](media\web\invoke-web-service-action.png)
+
+If the webserver requires authentication, you can populate your credentials in the appropriate fields of the action's **Advanced** settings.
+
+![Screenshot of the advanced settings of the Invoke web service action.](media\web\invoke-web-service-action-advanced.png)
+
+The results of the web service request are stored in a variable named **WebServiceResponse**. If the results are files, you can select to save them locally on your desktop.
+
+To download text or files from the web, you can use the **Download from web action**. This action requires you to populate the URL of the web page or the file and select the appropriate HTTP method.
+
+![Screenshot of the Download from web action action.](media\web\download-from-web-action.png)
+
+If the webserver requires authentication, you can populate your credentials in the appropriate fields of the action's **Advanced** settings.
+
+![Screenshot of the advanced settings of Download from web action action.](media\web\download-from-web-action-advanced.png)
+
+The downloaded text is stored in a variable named **WebPageText**. If you use the action to download files, you can select to save them locally on your desktop.
+
+> [!NOTE]
+> Apart from the web actions, Power Automate Desktop enables users to interact with web application through the web automation actions. You can find more information about web automation actions in [Web automation](webautomation.md).
+
+## Web actions
 
 ### <a name="downloadfromweb"></a> Download from web
 Downloads text or a file from the web and stores it

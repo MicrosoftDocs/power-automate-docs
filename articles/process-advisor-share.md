@@ -3,6 +3,7 @@ title: Share a process advisor process | Microsoft Docs
 description: How to share a process in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -37,13 +38,13 @@ The share action is available on the Processes screen in process advisor for the
 The share action is also available on the process detail screen with the same conditions. Sharing isn't needed at the recordings level. Once you share a process with a co-owner, they can manage the recordings associated to the process.
 
 > [!div class="mx-imgBorder"]
-> ![!Manage access](media/manage-access.png "Manage access")
+> ![!Manage access.](media/manage-access.png "Manage access")
 
 ## Share panel
 
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users and teams in your organization, and share your process with them.
 
-When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you've shared a process with them. As co-owners or contributors, they're asked to help you manage the process or add new recordings, respectively. There's a link in the email invitation that leads them to the process shared.
+When sharing a process with others, the option to automatically send an email invitation is selected. This email invitation states that you've shared a process with them. As co-owners or contributors, they're asked to help you manage the process or add new recordings, respectively. There's a link in the email invitation that leads them to the shared process.
 
 ## Share a process with a contributor
 

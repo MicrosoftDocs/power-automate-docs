@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -32,7 +33,7 @@ Read on if you already have automation built using Windows recorder (V1) and Sel
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/bZrrdoytTH0]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE46bJm]
 
 
 You can jump right in:

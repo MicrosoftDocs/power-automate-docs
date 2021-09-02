@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -63,7 +64,7 @@ You can create a variable and declare its data type and initial value - all with
 
 1. Under **Choose an action**, in the search box, enter `variable` as your filter. From the actions list, select **Initialize variable**.
 
-   ![Select action](./media/create-variables-store-values/select-initialize-variable-action.png)
+   ![Select action.](./media/create-variables-store-values/select-initialize-variable-action.png)
 
 1. Provide this information about your variable:
 
@@ -76,7 +77,7 @@ You can create a variable and declare its data type and initial value - all with
 
    For example:
 
-   ![Initialize variable](./media/create-variables-store-values/initialize-variable.png)
+   ![Initialize variable.](./media/create-variables-store-values/initialize-variable.png)
 
 1. Now continue adding the actions you want. When you're done, select **Save**.
 
@@ -141,7 +142,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
    For example, this cloud flow already has a trigger and an action that created a variable. So, add a new action under these steps:
 
-   ![Add action](./media/create-variables-store-values/add-increment-variable-action.png)
+   ![Add action.](./media/create-variables-store-values/add-increment-variable-action.png)
 
    To add an action between existing steps, move your mouse over the connecting arrow so that the plus sign (+) appears. Select the plus sign, and then select **Add an action**.
 
@@ -159,7 +160,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
    For example:
 
-   ![Increment value example](./media/create-variables-store-values/increment-variable-action-information.png)
+   ![Increment value example.](./media/create-variables-store-values/increment-variable-action-information.png)
 
 1. When you're done, on the designer toolbar, select **Save**.
 
@@ -176,11 +177,11 @@ Variables are commonly used for counting the number of times that a loop runs. T
    * **Include Attachments**
    * **Only with Attachments**
 
-   ![Check for and include attachments](./media/create-variables-store-values/check-include-attachments.png)
+   ![Check for and include attachments.](./media/create-variables-store-values/check-include-attachments.png)
 
 1. Add the **Initialize variable** action. Create an integer variable named `Count` that has a zero start value.
 
-   ![Add action for "Initialize variable"](./media/create-variables-store-values/initialize-variable.png)
+   ![Add action for "Initialize variable."](./media/create-variables-store-values/initialize-variable.png)
 
 1. Add an *apply to each* loop to cycle through the attachments.
 
@@ -192,13 +193,13 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. In the loop, select inside the **Select an output from previous steps** box. When the dynamic content list appears, select **Attachments**.
 
-   ![Select "Attachments"](./media/create-variables-store-values/select-attachments.png)
+   ![Select "Attachments."](./media/create-variables-store-values/select-attachments.png)
 
    The **Attachments** property passes an array, which has all email attachments from the email, into your loop.
 
 1. In the **Apply to each** loop, select **Add an action**.
 
-   ![Select "Add an action"](./media/create-variables-store-values/add-action-2.png)
+   ![Select "Add an action."](./media/create-variables-store-values/add-action-2.png)
 
 1. In the search box, enter "increment variable" as your filter. From the actions list, select **Increment variable**.
 
@@ -209,7 +210,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable, for example:
 
-   ![Add an action that sends results](./media/create-variables-store-values/send-email-results.png)
+   ![Add an action that sends results.](./media/create-variables-store-values/send-email-results.png)
 
 1. On the designer toolbar, select **Save**.
 

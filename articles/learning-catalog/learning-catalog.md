@@ -11,11 +11,11 @@ ms.service: power-automate
 
 Find the right online training, in person workshops, and events for your role as a user of Power Apps.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### Business and Technical Decision Makers
 
@@ -35,6 +35,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get Started](learning-catalog-app-maker.md#get-started)
 
     [Create Flows](learning-catalog-app-maker.md#create-flows)
+    
+    [Process advisor](learning-catalog-app-maker.md#process-advisor)
 
     [Exam](learning-catalog-app-maker.md#exam)
 
@@ -81,6 +83,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get started](learning-catalog-functional-consultant.md#get-started)
 
     [Create Flows](learning-catalog-functional-consultant.md#create-flows)
+    
+    [Process advisor](learning-catalog-functional-consultant.md#process-advisor)
 
     [Administer](learning-catalog-functional-consultant.md#administer)
 

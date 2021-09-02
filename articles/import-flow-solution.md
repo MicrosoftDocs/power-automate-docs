@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -44,7 +45,7 @@ After you've exported your solution, you can import it into any environment that
 
    You should now see the **Select Solution Package** page similar to this image:
 
-   ![Screenshot of the Import a solution dialog box](./media/import-flow-solution/import-solution.png)
+   ![Screenshot of the Import a solution dialog box.](./media/import-flow-solution/import-solution.png)
 
 1. Select **Next**.
 

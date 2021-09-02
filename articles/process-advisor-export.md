@@ -3,6 +3,7 @@ title: Export and import a process advisor process | Microsoft Docs
 description: How to import and export a process in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
 ms.author: tatn
@@ -16,17 +17,17 @@ search.audienceType:
 
 # Export and import your process
 
-You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to be able to export it.
+You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
 
- To learn more about solutions from Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md).
+To learn more about solutions from Microsoft Power Platform, see [Overview of solution-aware flows](overview-solution-flows.md).
 
 ## Export a process
 
-1. Sign into [Power Automate](https://powerautomate.microsoft.com/). Make sure you have selected the environment where the process you want to export has been created.
+1. Sign in to [Power Automate](https://powerautomate.microsoft.com/). Make sure you've selected the environment where the process you want to export has been created.
 
 1. Select **Solutions** in the navigation pane on the left.
 
-1. In the list, select the solution you want to use to add your process, or create a new solution and select it.
+1. In the list, select the solution you want to use to add your process, or create a solution and select it.
 
 1. Select **Add existing** > **PM Inferred Task**.
 
@@ -40,7 +41,7 @@ For more information about solution export, see [Export a solution](export-flow-
 
 To import a process into another environment:
 
-1. Make sure you have exported your process with a solution.
+1. Make sure you've exported your process with a solution.
 
 1. Go to the environment where you want to import your process.
 

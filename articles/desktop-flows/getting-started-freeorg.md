@@ -3,10 +3,12 @@ title: Getting started with a work or school account  | Microsoft Docs
 description: Getting started with a work or school account
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: marleon
-ms.reviewer: marleon
+ms.custom: intro-internal
+ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 
@@ -18,7 +20,7 @@ search.audienceType:
 
 Power Automate Desktop enables users to automate repetitive desktop tasks through a collection of prebuilt drag-and-drop actions.
 
-Using the available actions and built-in recorders, you can automate any business procedure, such as filling forms, retrieving data from web or desktop applications, and sending standardized emails.
+Using the available actions and [built-in recorders](recording-flow.md), you can automate any business procedure, such as [filling forms](automation-web.md#data-population-on-the-web), [retrieving data from web](automation-web.md#web-data-extraction) or [desktop applications](desktop-automation.md), and [sending standardized emails](actions-reference/email.md).
 
 Combining these features allows the creation of powerful flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data across different systems are common in business environments, and Power Automate Desktop can entirely handle them.
 

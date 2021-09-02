@@ -7,6 +7,7 @@ ms.reviewer: "dean-haas"
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.subservice: cloud-flow
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -49,7 +50,7 @@ To do this, you'll need to do two things:
 1. Set **Environment** to **Default**, and then set **Table Name** to **Lead to Opportunity Sales Process**.
 1. Add a text input column for the user to enter the link to the proposal.
 
-   ![Instant flow trigger](media/instant-flow-trigger.png "Instant flow trigger")
+   ![Instant flow trigger.](media/instant-flow-trigger.png "Instant flow trigger")
 
    We'll need information from the business process flow instance to help provide context for the approval request so follow these steps to do this.
 
@@ -117,12 +118,12 @@ To do this, you'll need to do two things:
 
    Things should look like this now:
 
-   ![Parse JSON](media/instant-flow-json-date.png "Parse JSON")
+   ![Parse JSON.](media/instant-flow-json-date.png "Parse JSON")
 
   1. Add the **Get row by ID** action from the **Microsoft Dataverse** connector.
   1. Set **Table Name** to **Lead to Opportunity Sales Process**, and **Row ID** to **BPFFlowStageTableRowID**.
 
-     ![Add a row](media/instant-flow-add-record.png)
+     ![Add a row.](media/instant-flow-add-record.png)
 
      Now that we have the data, define the approval process by adding the **Start and wait for an approval (V2)** action, and then filling in the relevant information. Learn more about [approvals]( sequential-modern-approvals.md) if you are not familiar.
 
@@ -132,7 +133,7 @@ To do this, you'll need to do two things:
 
      Your **Start and wait for an approval (V2)** card might look similar to this one:
 
-      ![Approval card](media/instant-flow-add-approval-action.png)
+      ![Approval card.](media/instant-flow-add-approval-action.png)
 
 1. Finally, save the flow and then turn it on.
 

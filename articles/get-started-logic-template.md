@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -25,13 +26,9 @@ search.audienceType:
 
 A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
-[!div class="mx-imgBorder"] 
-
-
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
 Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Microsoft 365.
-
 
 >[!TIP]
 >[Create a cloud flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
@@ -55,7 +52,7 @@ To complete this example, you'll need accounts with access to the following:
 
     Your flow appears, showing each action with an orange title bar.
 
-    ![Default events and actions from template](./media/get-started-logic-template/template-default.png)
+    ![Default events and actions from template.](./media/get-started-logic-template/template-default.png)
 
 ## Customize your flow
 

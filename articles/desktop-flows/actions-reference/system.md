@@ -3,6 +3,7 @@ title: System | Microsoft Docs
 description: System Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -38,14 +39,71 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Take screenshot](#takescreenshotbase)|
 |[Control screen saver](#controlscreensaver)|
 |[Ping](#ping)|
-|[Set Environment Variable](#setenvironmentvariable)|
-|[Get environment variable](#getenvironmentvariable)|
-|[Delete environment variable](#deleteenvironmentvariable)|
+|[Set Windows environment Variable](#setenvironmentvariable)|
+|[Get Windows environment variable](#getenvironmentvariable)|
+|[Delete Windows environment variable](#deleteenvironmentvariable)|
 |[Run JavaScript](#runjavascript)|
 |[Run PowerShell script](#runpowershellscript)|
 |[Get screen resolution](#getscreenresolution)|
 |[Set screen resolution](#setscreenresolution)|
 |[Run Python script](#runpythonscript)|
+
+## Getting started with system actions
+
+Use system actions to automate tasks which are fundamental to the Windows operating system. 
+
+Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, Run application opens a specific document in Word in quiet mode:
+
+![screenshot of the run application action properties window.](\media\system\run-application-example.png)
+
+Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+
+The **Print document** action prints a specified document and requires the file path. 
+
+Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
+
+
+## Getting started with scripting actions
+
+Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
+
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
+
+To declare variables in scripting actions and return results in Power Automate Desktop, use the following commands:
+
+- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate Desktop, use the **Write-Output** command.
+
+  ```
+  $variableName = "variableValue"
+  Write-Output $variableName
+  ```
+
+- Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
+
+  ```
+  variableName = "variableValue"
+  print variableName
+  ```
+
+- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate Desktop.
+
+  ```
+  variableName = "variableValue"
+  WScript.Echo variableName
+  ```
+
+- In JavaScript scripts, use the **var** notation to declare new variables and the **WScript.Echo** function to return values from [Run JavaScript](#runjavascript) actions. 
+
+    ```
+    var variableName = "variableValue";
+    WScript.Echo(variableName);
+    ```
+
+To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
+
+![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
+
+## System actions
 
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
@@ -84,7 +142,7 @@ Executes an application or opens a document by executing the associated applicat
 >**"/q" "C:\Users\username\Desktop\InvoiceTemplate.docx"**
 
 ##### <a name="runapplicationbase_example"></a> Example
-![Run application action example](media\system\run-application-example.png)
+![Run application action example.](media\system\run-application-example.png)
 
 ### <a name="rundoscommand"></a> Run DOS command
 Executes a DOS command or console application in invisible mode and retrieves its output upon completion
@@ -358,7 +416,7 @@ Sends a message to determine whether a remote computer is accessible over the ne
 |-----|-----|
 |Can't complete ping action|Indicates a problem completing the ping action|
 
-### <a name="setenvironmentvariable"></a> Set Environment Variable
+### <a name="setenvironmentvariable"></a> Set Windows environment variable
 Sets an environment variable to a given value
 
 ##### Input Parameters
@@ -378,7 +436,7 @@ Sets an environment variable to a given value
 |Indicates a problem setting the environment variable's value|Indicates a problem setting the environment variable's value|
 |Insufficient permissions|Indicates that the user has insufficient permissions to perform this action|
 
-### <a name="getenvironmentvariable"></a> Get environment variable
+### <a name="getenvironmentvariable"></a> Get Windows environment variable
 Retrieves the value of an environment variable
 
 ##### Input Parameters
@@ -401,7 +459,7 @@ Retrieves the value of an environment variable
 |Environment variable doesn't exist|Indicates that the specified environment variable doesn't exist|
 |Insufficient permissions|Indicates that the user has insufficient permissions to perform this action|
 
-### <a name="deleteenvironmentvariable"></a> Delete environment variable
+### <a name="deleteenvironmentvariable"></a> Delete Windows environment variable
 Deletes an environment variable from a given scope
 
 ##### Input Parameters
@@ -484,6 +542,9 @@ Gets the width, height, bit count and frequency of a selected monitor
 
 ### <a name="setscreenresolution"></a> Set screen resolution
 Sets the width, height, bit count and frequency of a selected monitor during an attended desktop flow run. 
+
+> [!Important]
+>To use the **Set screen resolution** action in flows triggered through the Power Automate portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. For example, you can use your machine's physical screen to connect to the machine. In remote sessions, such as unattended scenarios that use remote desktop clients, the action has no effect, as users can't manually change the resolution.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

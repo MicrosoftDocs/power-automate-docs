@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -43,7 +44,7 @@ No action is required until you either update the UI flows app or the connection
     1. Enter your credentials for the connection, and then save it.
 
     >[!IMPORTANT]
-    >Be sure you use the right credentials as outlined in [Setup UI flows connections and machine credentials](setup.md#setup-desktop-flows-connections-and-machine-credentials). Using the correct credentials ensures that your connection updates and uses the code paths for the generally available UI flows.
+    >Be sure you use the right credentials as outlined in [Setup UI flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials). Using the correct credentials ensures that your connection updates and uses the code paths for the generally available UI flows.
 
 ## Next steps
 

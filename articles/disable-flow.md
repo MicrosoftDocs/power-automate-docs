@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -32,13 +33,13 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
 
 1. On the **My flows page**,  select the ellipsis (...) for the flow you want to turn off.
     
-    ![Power Automate ellipsis](./media/disable-flow/flows-collapsed-menu.png)
+    ![Power Automate ellipsis.](./media/disable-flow/flows-collapsed-menu.png)
     
 1. Select **Turn off** in the menu that appears.
 
 1. A message appears with the new flow status.
 
-    ![New flow status after being disabled on flow details page](./media/disable-flow/flow-details-page-new-status.png)
+    ![New flow status after being disabled on flow details page.](./media/disable-flow/flow-details-page-new-status.png)
 
 
 ## Turn flows on
@@ -51,7 +52,7 @@ If you've turned a cloud flow off, but want to turn it back on so that it will r
 
 1. Message appears with the new flow status.
 
-    ![New flow status after being disabled](./media/disable-flow/flow-new-status.png)
+    ![New flow status after being disabled.](./media/disable-flow/flow-new-status.png)
 
 
 

@@ -11,6 +11,7 @@ metadata:
   tags: ''
   ms.service: power-automate
   ms.devlang: na
+  ms.subservice: cloud-flow
   ms.topic: article
   ms.tgt_pltfrm: na
   ms.workload: na
@@ -25,13 +26,11 @@ metadata:
 title: Frequently asked questions
 summary: |
 
+  ## Audience and strategy
+
 sections:
   - name: Ignored
     questions:
-      - question: |
-         Audience and strategy
-        answer: |
-
       - question: |
          What is Power Automate?
         answer: |

@@ -3,6 +3,7 @@ title: Manage machine groups | Microsoft Docs
 description: Manage machine groups
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 03/29/2021
 ms.author: getrantz
@@ -48,7 +49,7 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Ensure that you are signed into the machine you want to set up. 
 
-1. Ensure you have the [latest version](/desktop-flows/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop installed. 
+1. Ensure you have the [latest version](install.md#install-power-automate-desktop) of Power Automate Desktop installed. 
 
 1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
 
@@ -58,14 +59,14 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Select **Add to machine group**. 
 
-    ![The Add to machine group button](./media/manage-machine-groups/add-to-machine-group.png)
+    ![The Add to machine group button.](./media/manage-machine-groups/add-to-machine-group.png)
 
 1. In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
 
     > [!NOTE]
     > If the machine is deployed in a different environment than the machine group, you have to change its environment.
 
-    ![The displayed list with the available machines](./media/manage-machine-groups/machine-groups-list.png)
+    ![The displayed list with the available machines.](./media/manage-machine-groups/machine-groups-list.png)
 
 1. If this is the first time adding a machine to your group, you will need to create a password for your group. This password is used to limit access for those who can add machines to the group. Make sure you do not lose the password, as you will be unable to recover it. If you have already added a machine before, enter the password for the group. 
 
@@ -75,7 +76,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 ## Trigger a desktop flow to run on your machine group 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+New step**. 
 
@@ -91,7 +92,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. Click **Create**. 
     
-   ![The Change machine group and Remove from group options](./media/manage-machine-groups/connect-directly-to-machine.png)
+   ![The Change machine group and Remove from group options.](./media/manage-machine-groups/connect-directly-to-machine.png)
 
 
 1. Select the desktop flow you want to run and the desired run mode. 
@@ -100,7 +101,9 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. You can now trigger your desktop flow to run on your machine group from the cloud. 
 
- 
+ >[!IMPORTANT]
+>If you are using local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
+>If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
 
 ## View list of machine groups 
 
@@ -148,7 +151,7 @@ You can share a machine group with other users in your organization, giving thos
 
 1. Click **Save**. 
 
-   ![The Change machine group and Remove from group options](./media/manage-machine-groups/share-machine-group.png)
+   ![The Change machine group and Remove from group options.](./media/manage-machine-groups/share-machine-group.png)
 
 There are two levels of permissions that you can use when managing access to your machine group: 
 
@@ -181,25 +184,25 @@ If you want to change the machine group that contains your machine, select the *
 If you want to remove the machine from a group without adding it to a new one, select **Remove from group**.
 
 
-![The Change machine group and Remove from group options](./media/manage-machine-groups/change-remove-machine-group.png)
+![The Change machine group and Remove from group options.](./media/manage-machine-groups/change-remove-machine-group.png)
 
 
 ## Change machine group's password
 
 To change the password of the currently used machine group, select the **dots icon** next to the machine group and pick **Edit group password**.
 
-![The Edit group password option](./media/manage-machine-groups/edit-machine-group-password.png)
+![The Edit group password option.](./media/manage-machine-groups/edit-machine-group-password.png)
 
 Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
 
-![The fields for the new mahcine group password](./media/manage-machine-groups/machine-group-new-password.png)
+![The fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
 
 ## Update permissions based on security role 
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
 
 
-  ![Permissions based on security role](./media/manage-machine-groups/permissions-roles.png)
+  ![Permissions based on security role.](./media/manage-machine-groups/permissions-roles.png)
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management. 
 
@@ -219,13 +222,10 @@ Environment admins can also restrict machine registration to a specific set of u
 
 |Name|Limit|
 |---|---| 
-|Maximum number of machines in a group |20| 
+|Maximum number of machines in a group |50| 
 |Maximum amount of time a desktop flow can run |24 hours| 
 |Maximum amount of time a desktop flow can be queued |3 hours| 
-|Maximum amount of time the next-to-run desktop flow in the run queue will wait for an available machine |15 minutes| 
 
 ## Other known limitations 
 
-- Creating a connection to the machine is not currently available in the Connections page. 
-
-- Editing a desktop flows connection in Power Apps will show the machine GUID. To retrieve the machine GUID, visit the Details page for the machine and copy the second GUID from the address bar.
+- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.

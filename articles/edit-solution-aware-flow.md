@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -33,12 +34,12 @@ Follow these steps to edit a solution-aware flow.
 1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
 1. Select the solution that contains the flow you want to edit.
 
-   ![Displays a new flow inside a solution](./media/edit-solution-aware-flow/new-flow-inside-solution.png "Displays a new flow inside a solution")
+   ![Displays a new flow inside a solution.](./media/edit-solution-aware-flow/new-flow-inside-solution.png "Displays a new flow inside a solution")
 
 1. Select **...** (More Commands) for your flow, and then select **Turn off**.
 1. Select **...** (More Commands) for your flow, and then select **Edit**.
 
-   ![Displays editing a cloud flow](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a cloud flow")
+   ![Displays editing a cloud flow.](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a cloud flow")
    
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.

@@ -3,8 +3,9 @@ title: Manage machines | Microsoft Docs
 description: Manage machines
 author: georgiostrantzas
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 03/29/2021
+ms.date: 06/21/2021
 ms.author: getrantz
 ms.reviewer:
 search.app: 
@@ -18,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can you can instantly start your desktop automation using any of the wide array of [available triggers](/triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
+Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the wide array of [available triggers](../triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
 
 Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate Desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
 
@@ -33,7 +34,7 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 Your machine will be automatically registered on the currently selected environment in the application. If you do not have permission to register your machine in that environment or want to use another environment, you will need to update the environment. 
 
-1. [Install the latest version](/setup#install-power-automate-desktop-on-your-device) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
+1. [Install the latest version](install.md) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
 
 1. When the installation has completed, select **Launch Power Automate Desktop**. 
 
@@ -42,11 +43,11 @@ Your machine will be automatically registered on the currently selected environm
 1. In Power Automate Desktop, select **Settings**. 
 
 1. Select **Machine (preview)**. 
-        ![The Machine tab in Settings](./media/register-machines/machine-settings.png)
+        ![The Machine tab in Settings.](./media/register-machines/machine-settings.png)
 
 1. If the machine hasn't been registered yet, a message will prompt you to select a **Machine running environment**. Power Automate will use this environment to run all the triggered desktop flows.
 
-    ![A message that prompts user to register the machine](./media/register-machines/register-machine.png)
+    ![A message that prompts user to register the machine.](./media/register-machines/register-machine.png)
 
 1. When the connection is established successfully, the pane will display the following fields regarding the machine:
     - **Machine name:** A unique name to identify the machine.
@@ -54,7 +55,7 @@ Your machine will be automatically registered on the currently selected environm
     - **Machine running environment:** The running environment of the machine.
     - **Machine group:** Through this option, you can add the machine to a machine group. You can find information about machine groups in [Manage machine groups](manage-machine-groups.md)
 
-    ![The details of a machine](./media/register-machines/machine-details.png)
+    ![The details of a machine.](./media/register-machines/machine-details.png)
 
 1. To save or discard any performed changes, select the **Save** or **Cancel** button, respectively.
 
@@ -83,7 +84,7 @@ You can update the running environment which your machine can run desktop flows 
 
 ## Trigger a desktop flow to run on your machine 
 
-1. Edit your cloud flow or [create a new cloud flow](/overview-cloud.md). 
+1. Edit your cloud flow or [create a new cloud flow](../overview-cloud.md). 
 
 1. Select **+ New step**. 
 
@@ -99,7 +100,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
-   ![Permissions based on security role](./media/register-machines/connect-directly-to-machine.png)
+   ![Permissions based on security role.](./media/register-machines/connect-directly-to-machine.png)
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -110,7 +111,7 @@ You can update the running environment which your machine can run desktop flows 
 Power Automate enables you to trigger desktop flows from cloud flows using events, schedules, and buttons. 
 
 > [!NOTE]
-> To apply this functionality, you have to own a [premium per-user plan with attended RPA](). 
+> To apply this functionality, you have to own a [premium per-user plan with attended RPA](https://flow.microsoft.com/pricing/). 
 
 
 ## View list of machines 
@@ -150,7 +151,7 @@ You can share a machine with other users in your organization, giving those user
 
 1. Click **Save**. 
 
-  ![Permissions based on security role](./media/register-machines/share-machine.png)
+  ![Permissions based on security role.](./media/register-machines/share-machine.png)
 
 There are two levels of permissions that you can use when managing access to your machine: 
 
@@ -190,7 +191,7 @@ You can also change the connections that are used by cloud flow in its details p
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
 
-  ![Permissions based on security role](./media/register-machines/permissions-roles.png)
+  ![Permissions based on security role.](./media/register-machines/permissions-roles.png)
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management. 
 
@@ -210,13 +211,10 @@ Environment admins can also restrict machine registration to a specific set of u
 
 |Name|Limit|
 |---|---| 
-|Maximum number of machines in a group |20| 
+|Maximum number of machines in a group |50| 
 |Maximum amount of time a desktop flow can run |24 hours| 
 |Maximum amount of time a desktop flow can be queued |3 hours| 
-|Maximum amount of time the next-to-run desktop flow in the run queue will wait for an available machine |15 minutes| 
 
 ## Other known limitations 
 
-- Creating a connection to the machine is not currently available in the Connections page. 
-
-- Editing a desktop flows connection in Power Apps will show the machine GUID. To retrieve the machine GUID, visit the Details page for the machine and copy the second GUID from the address bar.
+- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.

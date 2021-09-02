@@ -3,6 +3,7 @@ title: OCR | Microsoft Docs
 description: OCR Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -16,8 +17,6 @@ search.audienceType:
 
 # OCR
 
-
-
 Initiate OCR engines to perform OCR related activities
 
 |<!-- --> |
@@ -26,8 +25,27 @@ Initiate OCR engines to perform OCR related activities
 |[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
+## Getting started with OCR actions
+
+Power Automate Desktop enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
+
+To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
+
+![extract text with ocr action properties screenshot.](\media\ocr\extract-text-ocr-example.png)
+
+The action wherein the OCR engine is created contains the engine settings. These include the language and the image width and height multipliers. The OCR engine variable can be used in any action containing OCR capabilities.
+
+> [!WARNING]
+> Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
+
+
+## OCR actions
+
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine
+
+> [!NOTE]
+> The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -58,10 +76,13 @@ The **Create Tesseract OCR engine** action is planned for deprecation. To preven
 
 This OCR engine initialization method provides the same configuration options as before and eliminates the need for a produced **OCREngine** variable.
 
-![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
 
 ### <a name="createmodiengine"></a> Create MODI OCR engine
 Create a MODI OCR engine
+
+> [!NOTE]
+> The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -88,7 +109,7 @@ The MODI OCR engine is planned for deprecation. To prevent flows from failing af
 
 You can perform the initialization directly through the actions that require the engines without using the **Create Tesseract OCR engine** action.
 
-![The Tesseract OCR engine options in the Extract text with OCR action](media/ocr/initialize-tesseract-ocr-engine.png)
+![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
 
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine
@@ -96,7 +117,7 @@ Extract text from a given source using the given OCR engine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one.|
 |OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
 |Image file path|No|File||The path of the image to perform the OCR operation on|

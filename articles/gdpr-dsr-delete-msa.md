@@ -11,6 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -47,11 +48,11 @@ The steps below describe how to self-serve delete requests for GDPR.
 1. Sign into the [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy/) with your MSA.
 1. Select the **Activity history** link.
 
-    ![Activity History](./media/gdpr-dsr-export-msa/activityhistory.png)
+    ![Activity History.](./media/gdpr-dsr-export-msa/activityhistory.png)
 
 1. You can search or browse your activity history for the different Microsoft applications and services that you use, including Power Automate. Select **Delete** to remove specific product or service activity events.
 
-    ![Delete Event](./media/gdpr-dsr-delete-msa/deleteevent.png)
+    ![Delete Event.](./media/gdpr-dsr-delete-msa/deleteevent.png)
 
 1. Within a few moments, the item is deleted and removed from privacy dashboard.
 
@@ -63,7 +64,7 @@ A user can list and delete their flows from [Power Automate](https://flow.micros
 
 1. Select **...** beside the flow that you're deleting, and then select **Delete**.
 
-    ![Delete Event](./media/gdpr-dsr-delete-msa/deleteflow.png)
+    ![Delete Event.](./media/gdpr-dsr-delete-msa/deleteflow.png)
 
 ### Delete Connections
 
@@ -71,15 +72,15 @@ Connectors use connections to communicate with APIs and SaaS systems. Connection
 
 1. Sign into [Power Automate](https://flow.microsoft.com), select the gear icon, and then select **Connections**.
 
-    ![Delete Event](./media/gdpr-dsr-delete-msa/deleteconnections.png)
+    ![Delete Event.](./media/gdpr-dsr-delete-msa/deleteconnections.png)
 
 1. Select the connection that you'd like to delete, select **...**, and then select **Delete**.
 
-    ![Delete Event](./media/gdpr-dsr-delete-msa/delete-connection.png)
+    ![Delete Event.](./media/gdpr-dsr-delete-msa/delete-connection.png)
 
 1. Select the **Delete** icon on the confirmation prompt.
 
-    ![Delete Event](./media/gdpr-dsr-delete-msa/confirmdelete.png)
+    ![Delete Event.](./media/gdpr-dsr-delete-msa/confirmdelete.png)
 
 > [!NOTE]
 > If other flows use the connection you're deleting, you're notified that a new connection is required. Otherwise, select **Delete** to continue.

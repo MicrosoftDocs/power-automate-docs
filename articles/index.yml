@@ -9,6 +9,7 @@ metadata:
   title: Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: power-automate #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: cloud-flow
   ms.topic: hub-page # Required
   author: MSFTMAN #Required; your GitHub user alias, with correct capitalization.
   ms.author: deonhe #Required; microsoft alias of author; optional team alias.
@@ -78,7 +79,7 @@ conceptualContent:
           url: ./desktop-flows/introduction.md
           itemType: overview
         - text: Set up Power Automate Desktop
-          url: ./desktop-flows/setup.md
+          url: ./desktop-flows/install.md
           itemType: how-to-guide
         - text: Create desktop flows
           url: ./desktop-flows/create-flow.md

@@ -6,6 +6,7 @@ suite: flow
 author: msftman
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 05/17/2021
 ms.author: deonhe
@@ -243,17 +244,21 @@ focusing attention on AzureCloud.usgovtexas, and AzureCloud.usgovvirginia, and/o
 
 Install an [On-Premises Data Gateway](/flow/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
-If your organization (tenant) has already configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization executed to enable that will also enable on-premises connectivity for Power Automate. However, if you are unable to connect to your tenant, then you may need to go through a “whitelisting” process, which enables this capability for your tenant. Should this occur, you can open a support ticket to address your needs. The support team follows an established process to address your request.
+If your organization (tenant) has configured and successfully connected the On-Premises Data Gateway for PowerBI US Government, then the process your organization followed to enable that also enables on-premises connectivity for Power Automate. 
+
+Formerly, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "whitelist" the tenant for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
+
 
 ## Power Automate US Government feature limitations
 
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Flow team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-- [AI Builder](/ai-builder/) is not yet available for GCC, GCC High, nor DoD tenants.
+- [AI Builder](/ai-builder/) is not yet available in DoD tenants.
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
-  * There is no markdown support for approval email. 
+  * There is no markdown support for approval email.
+  * Approvals are not available in DoD tenants. 
 
 - [Submitting Templates](/flow/publish-a-template)
 

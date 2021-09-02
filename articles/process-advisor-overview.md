@@ -3,11 +3,12 @@ title: Overview of process advisor | Microsoft Docs
 description: Overview of the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
+ms.subservice: process-advisor
 ms.topic: article
+ms.custom: intro-internal
 ms.date: 5/25/2021
 ms.author: tatn
 ms.reviewer: v-aangie
-ms.custom: intro-internal
 search.app: 
   - Flow
 search.audienceType: 
@@ -17,7 +18,7 @@ search.audienceType:
 
 # Overview of process advisor
 
-Process advisor quickly captures detailed steps for each process in your organization to help you to better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
+Process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
 Process advisor helps you to:
 
@@ -46,12 +47,11 @@ For complete licensing details, see the [Microsoft Power Apps and Power Automate
 
 Before you start using process advisor, make sure you have the following prerequisites:
 
-- A Microsoft Power Platform environment with Microsoft Dataverse database.
-  - For information about how to create environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
-  - For information about how to add database to environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
+- A Microsoft Power Platform environment with a Microsoft Dataverse database.
+  - For information about how to create an environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+  - For information about how to add a database to an environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
-- [Power Automate Desktop](/ui-flows/desktop/introduction).
+- [Power Automate Desktop](desktop-flows/introduction.md)
 
-<!-- Add section on process catalog here or on Details page. Also, mention the first run experience. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -38,7 +39,7 @@ Specify that a cloud flow performs one or more tasks only if a condition is true
 
 1. Select one of the flows from **My flows**, and then select **More commands** (the three dots).
 
-   ![Select edit](./media/add-condition/select-edit.png)
+   ![Select edit.](./media/add-condition/select-edit.png)
 
     This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
@@ -56,14 +57,14 @@ Specify that a cloud flow performs one or more tasks only if a condition is true
 
 1. In the box on the right, enter **10**.
 
-    ![The OBJECT NAME box with a parameter in it](./media/add-condition/specify-condition.png)
+    ![The OBJECT NAME box with a parameter in it.](./media/add-condition/specify-condition.png)
 
     Now that you've configured the condition, continue with the following steps to send an email if the **Retweet count** is more than 10.
 
 1. Select **Add an action** on the **If yes** send of the condition. 
 1. Enter **Send an email** into the search box, and then select **Send an email (V2)**.
 
-   ![Search to send an email](./media/add-condition/if-yes-condition.png)
+   ![Search to send an email.](./media/add-condition/if-yes-condition.png)
 
 1. Configure the **Send an email (V2)** card to your liking, indicating the contents of the email that the flow sends if the **Retweet count** is greater than 10.
 
@@ -74,7 +75,7 @@ Specify that a cloud flow performs one or more tasks only if a condition is true
 >[!TIP]
 >You can create complex conditions by using the **Add** button on the condition card.
 
-![Add complex conditions](./media/add-condition/add-complex-condition.png)
+![Add complex conditions.](./media/add-condition/add-complex-condition.png)
 
 Learn about all the available [expressions](/azure/logic-apps/logic-apps-workflow-definition-language).
 

@@ -10,6 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
+ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -32,7 +33,7 @@ Approvers can respond to requests from their email inbox, [the approvals center]
 ## Create an approval flow
 Here's an overview of the flow we'll create and test:
 
-   ![Approval flow](./media/modern-approvals/create-flow-overview.png)
+   ![Approval flow.](./media/modern-approvals/create-flow-overview.png)
 
 The flow performs the following steps:
 
@@ -75,7 +76,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-![SharePoint info](./media/modern-approvals/select-sharepoint-site-info.png)
+![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## Add a profile action
 
@@ -84,7 +85,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Find, and then select the **Get my profile (V2)** action.
 
-    ![search for profile](./media/modern-approvals/search-for-profile.png)
+    ![search for profile.](./media/modern-approvals/search-for-profile.png)
 
 1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
@@ -107,7 +108,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   ![configure approved email template](./media/modern-approvals/yes-email-config.png)
+   ![configure approved email template.](./media/modern-approvals/yes-email-config.png)
 
 ## Add an update action for approved requests
 
@@ -116,13 +117,13 @@ Follow these steps to send an email if the vacation request is approved:
 > [!NOTE]
 > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-![update item configuration](./media/modern-approvals/configure-update-item.png)
+![update item configuration.](./media/modern-approvals/configure-update-item.png)
 
 ## Add an email action for rejections
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-![configuration for rejected requests](./media/modern-approvals/configure-rejected-email.png)
+![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email.png)
 
 ## Add update action for rejected requests
 
@@ -131,13 +132,13 @@ Follow these steps to send an email if the vacation request is approved:
    > [!NOTE]
    > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   ![update item card](./media/modern-approvals/configure-update-item-no.png)
+   ![update item card.](./media/modern-approvals/configure-update-item-no.png)
 
 4. Select **Save** to save the work we've done.
 
 If you've followed along, your flow should resemble this screenshot:
 
-![Completed flow](./media/modern-approvals/completed-flow.png)
+![Completed flow.](./media/modern-approvals/completed-flow.png)
 
 Now that we've created the flow, it's time to test it!
 

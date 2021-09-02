@@ -3,6 +3,7 @@ title: UI automation | Microsoft Docs
 description: UI automation Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -28,6 +29,7 @@ You can find more information on how to use the UI automation actions [here](../
 |[Get selected checkboxes in window](#getselectedcheckboxesinwindow)|
 |[Get selected radio button in window](#getselectedradiobuttoninwindow)|
 |[Extract data from window](#extractdatafromwindow)|
+|[Take screenshot of UI element](#takescreenshot)|
 |[Focus text field in window](#focustextfield)|
 |[Populate text field in window](#populatetextfield)|
 |[Press button in window](#pressbutton)|
@@ -47,6 +49,36 @@ You can find more information on how to use the UI automation actions [here](../
 |[Select menu option in window](#selectmenuoption)|
 |[Drag and drop UI element in window](#draganddropelement)|
 |[Expand/collapse tree node in window](#expandcollapsetreenode)|
+
+## Getting started with UI automation
+
+Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
+
+To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
+
+![Screenshot of the options to create a new UI element.](\media\uiautomation\create-ui-element.png)
+
+All UI elements consist of selectors that pinpoint the hierarchical structure of the components. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+
+When you create a UI element of an application window, its selector always has a root element named  **:desktop**.
+
+If you create a UI element that pinpoints a component inside an application window, two UI elements will be created automatically. The parent UI element pinpoints the application window, while the child shows the hierarchical structure of the specific component inside the window.
+
+
+![Screenshot of two UI elements with parent - child relationship.](\media\uiautomation\parent-child-ui-element.png)
+
+Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
+
+![Screenshot of the options to edit and create selectors.](\media\uiautomation\create-selector.png)
+
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+
+![Screenshot of the available operators in the selector builder.](\media\uiautomation\selector-operators.png)
+
+>[!NOTE]
+> You can find more information about developing UI automation flows and creating custom selectors in [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
+
+## UI automation actions
 
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data
@@ -158,6 +190,29 @@ Extracts data from specific parts of a window in the form of single values, list
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
 
+### <a name="takescreenshot"></a> Take screenshot of UI element
+Takes a screenshot of a UI element in window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|UI element|No|UIControl||The UI element in the window to capture as screenshot|
+|Save mode|N/A|Clipboard, File|Clipboard|Specify whether to save the image into a file or store it into the clipboard|
+|Image file path|No|File||Set the full path for the file to be saved|
+|File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|The file format of the image file|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ImageFile|File|The file path of the generated screenshot image file|
+
+##### <a name="takescreenshot_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to retrieve UI element|Indicates a problem retrieving the UI element|
+|Failed to save image|Indicates a problem saving the taken screenshot|
+|Failed to take screenshot of UI element|Indicates a problem taking a screenshot of the UI element|
+
 ## Form filling
 Fill-in forms on desktop applications
 ### <a name="focustextfield"></a> Focus text field in window
@@ -185,6 +240,8 @@ Fills a text box in a window with the specified text
 |-----|-----|-----|-----|-----|
 |Text box|No|UIControl||The text box to populate|
 |Text to fill-in|No|Encrypted value||The text to fill in the text field|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
+|Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
 
 ##### Variables Produced
@@ -481,10 +538,10 @@ Clicks on any UI element of a window
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|UIControl||The UI element to click on|
-|Click type|N/A|Left click, Right click, Double click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
+|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
-|Offset X|Yes|Numeric value|0|Offset the mouse from the position by this many pixels to the right|
-|Offset Y|Yes|Numeric value|0|Offset the mouse from the position by this many pixels down|
+|Offset X|Yes|Text value|0|Offset the mouse from the position by this many pixels to the right|
+|Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
 
 
 ##### Variables Produced
@@ -521,12 +578,12 @@ Drags and drops a UI element of a window
 |UI element to drag|No|UIControl||The UI element to drag|
 |UI element to drop over|No|UIControl||The UI element to drop over|
 |Click type|N/A|Left click, Right click|Left click|Specify which mouse button to use for clicking and holding down, while dragging the UI element over to its destination|
-|Mouse down offset X|Yes|Numeric value|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
-|Mouse down offset Y|Yes|Numeric value|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
-|Mouse down position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to prior to clicking|
-|Mouse up offset X|Yes|Numeric value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels to the right|
-|Mouse up offset Y|Yes|Numeric value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels downwards|
-|Mouse up position relative to UI element to drag|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the drop-target UI element the mouse will be moved to after clicking|
+|Mouse down offset X|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
+|Mouse down offset Y|Yes|Text value|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
+|Mouse down position relative to drag-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drop the mouse onto prior to clicking|
+|Mouse up offset X|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels to the right|
+|Mouse up offset Y|Yes|Text value|0|Offset the mouse-up click, that will be used to grab the UI element to drag, by this many pixels downwards|
+|Mouse up position relative to drop-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drag the mouse onto after clicking|
 
 
 ##### Variables Produced

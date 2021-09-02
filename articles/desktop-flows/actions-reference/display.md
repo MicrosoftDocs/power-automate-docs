@@ -3,6 +3,7 @@ title: Message boxes | Microsoft Docs
 description: Message boxes Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -28,6 +29,33 @@ Interact with users and request input through message boxes
 |[Display select from list dialog](#selectfromlistdialog)|
 |[Display select  file dialog](#selectfiledialog)|
 |[Display select folder dialog](#selectfolder)|
+
+## Getting started with message boxes
+
+Message boxes can be used in flows to interact with a user to either request input, or to provide output of flow data.
+
+
+To display a message to the user while the process runs, use the **Display message** action. In the figure below, this action will show a message box which informs the user that parsing is complete, and provide two options(**Yes/No**) whether to parse an additional file. The message box has been set to display the question icon, and to always be on top of other windows. The user's selection is stored in a variable.
+
+![Screenshot of display message action properties.](\media\display\display-message-example.png)
+
+The resulting message looks like the following figure:
+
+![Screenshot of message box.](\media\display\message-box-example.png)
+
+To display a dialog for the user to input data, use the **Display input dialog** action. The action requires a title for the input dialog window and a message as a prompt for the user. Optionally set a default value, and an input type (single line, multiline or password).
+
+Use the **Display select file dialog** to prompt a user to browse for a file. In the following figure, the action is set to prompt the user to select an image file. The initial folder has been set to a variable, and the file filter has been set to only allow specific file extensions.
+
+![Screenshot of display select file dialog action properties.](\media\display\display-select-file-example.png)
+
+The select file dialog looks like the following figure. Note the file filter in the bottom right of the figure which can switch between the formats specified in the action properties:
+
+![Screenshot of select file dialog example.](\media\display\select-file-example.png)
+
+
+## Message boxes actions
+
 
 ### <a name="showmessagedialog"></a> Display message
 Displays a message box

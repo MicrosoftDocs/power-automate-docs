@@ -3,6 +3,7 @@ title: Conditionals | Microsoft Docs
 description: Conditionals Actions Reference
 author: mariosleon
 ms.service: power-automate
+ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
 ms.author: marleon
@@ -16,10 +17,6 @@ search.audienceType:
 
 # Conditionals
 
-
-Set conditional statements and handle the flow based on rules
-
-You can find more information on how to use the conditional actions [here](../use-conditionals.md)
 
 |<!-- --> |
 |-----|
@@ -38,6 +35,20 @@ You can find more information on how to use the conditional actions [here](../us
 |[Else if](#elseif)|
 |[If](#if)|
 |[Switch](#switch)|
+
+## Getting started with conditionals
+
+Conditional actions allow you to modify which actions to run, based on the outcomes of conditional statements.
+
+Useful applications and features:
+* Use the If group of conditionals to evaluate any type of condition.
+* Use the Switch group of conditionals to compare a single variable with multiple possible values.
+* Cover multiple scenarios by employing nested conditionals.
+* Provide default and alternative behaviors to flows based on the available data.
+
+You can find more information on how to use the conditional actions [here](../use-conditionals.md)
+
+## Conditionals actions
 
 ### <a name="iffileaction"></a> If file exists
 Marks the beginning of a conditional block of actions depending on whether a file exists or not
