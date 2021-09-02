@@ -23,7 +23,7 @@ With the addition of Power Automate Desktop, it's quicker and easier to develop 
 
 Follow along in the low-code approach in the video series:
 
-> [!VIDEO https://www.youtube.com/watch?v=p9npROLFOqQ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJKYQ]
 
 > [!div class="nextstepaction"]
 > [Next step: Create an SAP desktop flow with Power Automate Desktop](creating-sap-desktop-flow-action-based-gui.md)
