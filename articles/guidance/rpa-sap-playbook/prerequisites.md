@@ -39,7 +39,7 @@ The following software components are required on Windows 10 Pro devices:
 
 - [The latest version of .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required)
 
-- [The latest version of desktop flows](../../desktop-flows/setup.md#install-power-automate-desktop-on-your-device), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
+- [The latest version of desktop flows](../../desktop-flows/setup.md), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
 
 - [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
 
