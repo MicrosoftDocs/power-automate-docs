@@ -54,23 +54,43 @@
         href: planning/discover-performance-issues.md
   - name: Use RPA with SAP
     items:
-    - name: Introduction to SAP GUI-based RPA 
+    - name: Introduction to SAP GUI based RPA in Power Automate Desktop
       href: rpa-sap-playbook/introduction.md
-    - name: Prerequisites
+    - name: Prerequisites for automating SAP GUI-based workloads
       href: rpa-sap-playbook/prerequisites.md
-    - name: Core components
+    - name: Core components for Power Automate RPA SAP GUI automation
       href: rpa-sap-playbook/core-components.md
-    - name: Sample SAP scenario
+    - name: Sample SAP GUI automation for this tutorial
       href: rpa-sap-playbook/sample-sap-scenario.md
-    - name: Pro-Code RPA with SAP GUI
-      href: rpa-sap-playbook/VBScript-based-sap-gui-automation-overview.md
-    - name: Low-code RPA with SAP GUI 
+    - name: Pro-code RPA with SAP GUI in Power Automate Desktop
+      href: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
+    - name: Use SAP GUI automation engine to record VBScript
+      href: rpa-sap-playbook/recording-vbscript-using-sap-gui-automation-engine.md
+    - name: Review the generated code
+      href: rpa-sap-playbook/reviewing-generated-code.md
+    - name: Add variables to your VBScript
+      href: rpa-sap-playbook/adding-variables-to-vbscript.md
+    - name: Create a desktop flow that connects to SAP
+      href: rpa-sap-playbook/creating-sap-desktop-flow-vbscript.md
+    - name: Create the cloud flow with the Power Automate portal
+      href: rpa-sap-playbook/creating-cloud-flow-to-launch-desktop-flow.md
+    - name: Validate data with the SAP ERP connector
+      href: rpa-sap-playbook/data-pre-validation-sap-erp.md
+    - name: Use low-code RPA with SAP GUI
       href: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
-    - name: No-Code RPA with SAP GUI
+    - name: Create an SAP desktop flow with Power Automate Desktop
+      href: rpa-sap-playbook/creating-sap-desktop-flow-action-based-gui.md
+    - name: Create a subflow for SAP GUI automation
+      href: rpa-sap-playbook/flow-refactoring.md
+    - name: Get ready to debug
+      href: rpa-sap-playbook/getting-ready-to-debug.md
+    - name: Create the cloud flow to update an address with Power Automate
+      href: rpa-sap-playbook/creating-cloud-flow-to-update-address.md
+    - name: Use no-code RPA with SAP GUI
       href: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
-    - name: Extract information from SAP GUI
+    - name: Extract data from the SAP GUI UI with Power Automate
       href: rpa-sap-playbook/extracting-information-from-sap-gui-ui.md
-    # - name: Feature hightlights
-    #   href: rpa-sap-playbook/feature-hightlights.md
-    - name: Conclusion
+    - name: Summary of the benefits of VBScript vs. actions for SAP GUI automation 
+      href: rpa-sap-playbook/feature-highlights-per-approach.md
+    - name: Conclusion of RPA Playbook for SAP GUI automation tutorial with Power Automate
       href: rpa-sap-playbook/conclusion.md

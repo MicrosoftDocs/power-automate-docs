@@ -1,6 +1,6 @@
 ---
-title: Conclusion of RPA Playbook for SAP GUI automation tutorial with Power Automate | Microsoft Docs
-description:  Conclusion of RPA Playbook for SAP GUI automation tutorial with Power Automate 
+title: Conclusion | Microsoft Docs
+description:  The RPA Playbook described how to build an SAP RPA prototype with Power Automate. Now go forth and automate! 
 services: ''
 suite: flow
 documentationcenter: na
