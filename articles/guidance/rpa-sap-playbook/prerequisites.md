@@ -51,28 +51,28 @@ The following software components are required on Windows 10 Pro devices:
 
 Before you can use the SAP scripting engine, configure or confirm the following:
 
-1.  Enable SAP scripting.
+1. Enable SAP scripting.
 
-    1.  Open SAP GUI.
+    1. Open SAP GUI.
 
-    1.  Open transaction **RZ11**.
+    1. Open transaction **RZ11**.
 
-    1.  Enter **sapgui/user\_scripting** into the **Parameter Name** field.
+    1. Enter **sapgui/user\_scripting** into the **Parameter Name** field.
 
-    1.  Select **Display**.
+    1. Select **Display**.
 
-    1.  Confirm that under **Value of Profile Parameter sapgui/user\_scripting**, **Current Value** is set to **TRUE**.  If it's **FALSE**, select **Change Value**, enter **TRUE** in the **New Value** field, and then select **Save**.
+    1. Confirm that under **Value of Profile Parameter sapgui/user\_scripting**, **Current Value** is set to **TRUE**.  If it's **FALSE**, select **Change Value**, enter **TRUE** in the **New Value** field, and then select **Save**.
 
-    1.  Confirm with the SAP team that **S\_SCR** authorization is assigned to all automating users.
+    1. Confirm with the SAP team that **S\_SCR** authorization is assigned to all automating users.
 
          >[!NOTE]
          >After you've changed the value, you might get a warning that says, "Change not permanent, will be lost at server restart." To avoid this issue, make the configuration permanent on the server side by using transaction **RZ10** instead. You'll need to restart the SAP server for these settings to take effect.
 
-2.  Open **SAP GUI Options**, go to **Accessibility & Scripting** > **Accessibility** > **Use accessibility mode**, and then select any other checkboxes that you need.
+2. Open **SAP GUI Options**, go to **Accessibility & Scripting** > **Accessibility** > **Use accessibility mode**, and then select any other checkboxes that you need.
 
-3.  Open **SAP GUI Options** > **Accessibility & Scripting** > **Scripting**, and under **User Settings**, select **Enable scripting**. Clear all other options.
+3. Open **SAP GUI Options** > **Accessibility & Scripting** > **Scripting**, and under **User Settings**, select **Enable scripting**. Clear all other options.
 
-4.  On the **SAP GUI Options** screen, go to **Security** > **Security Settings**, and under **Security Module**, select **Open Security Configuration**. Change the **Default Action** to meet your specific requirements, and then select **Ok**.
+4. On the **SAP GUI Options** screen, go to **Security** > **Security Settings**, and under **Security Module**, select **Open Security Configuration**. Change the **Default Action** to meet your specific requirements, and then select **Ok**.
 
      >[!TIP]
      >You can select **Allow** as **Default Action** to avoid a security dialog appearing during file save operations.
@@ -82,7 +82,7 @@ Before you can use the SAP scripting engine, configure or confirm the following:
    >[!NOTE]
    >The address format we're using in the sample use case is based on US requirements. Depending on your requirements, the field list and mandatory fields might be different, so make sure you select controls that are relevant to your setup.
 
-6.  Close all SAP sessions and windows.
+6. Close all SAP sessions and windows.
 
 ## Azure Key Vault credentials (optional)
 

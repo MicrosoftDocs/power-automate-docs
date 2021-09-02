@@ -74,7 +74,7 @@ Before you can use your device to create desktop flows, you'll need to ensure it
 
 ## Install Power Automate Desktop on your device
 
-The installer contains all the components you need to record, edit, and test your automations. 
+The installer contains all the components you need to record, edit, and test your automations.
 
 Follow these steps to install the Power Automate Desktop app:
 
@@ -84,7 +84,7 @@ Follow these steps to install the Power Automate Desktop app:
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
 1. Follow the instructions in the **Power Automate Desktop setup** installer to complete the installation. 
-1. Make your selections for each feature for the installation to complete. 
+1. Make your selections for each feature for the installation to complete.
 
 >[!IMPORTANT]
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
@@ -116,20 +116,22 @@ Select one of the links displayed in the installer. For example, if you want to 
 > [!IMPORTANT]
 > If you already install the Power Automate extension in the past, you don't need to reinstall it
 
-#### Microsoft Edge: 
+### Microsoft Edge
+
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
 - If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
 
-#### Google Chrome: 
+### Google Chrome
+
 - [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150929): select **Add to Chrome**, and then select **Enable extension** when prompted. 
 - If you see the message: *This item has been disabled in Chrome* on top of the page, select **Enable this item**.
 
-#### Mozilla Firefox:
-- [Install Firefox extension](https://go.microsoft.com/fwlink/?linkid=2151511): select **Add to Firefox**, and then select **Add** when prompted. 
+### Mozilla Firefox
 
+- [Install Firefox extension](https://go.microsoft.com/fwlink/?linkid=2151511): select **Add to Firefox**, and then select **Add** when prompted.
 
 > [!TIP]
-> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not suppoted. 
+> If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not supported.
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
@@ -145,7 +147,6 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 >You must install the on-premises gateway on each device from which you automate desktop flows.
 
 >When you install the gateway, it defaults to the region that Power Automate uses.
-
 
 ## Setup desktop flows connections and machine credentials
 
@@ -163,7 +164,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
    <!-- ![A screenshot of the search box](../media/desktop-flows-setup/search-desktop-flow.png) -->
 
-1. Provide the gateway information and device credentials: 
+1. Provide the gateway information and device credentials:
 
     - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
     - **Password**: Your account’s password.
@@ -227,7 +228,7 @@ You can also retrieve the details of all the command line arguments from the hel
 | -ACCEPTEULA  | Use this argument to indicate that you accept the terms of use for Power Automate Desktop                                                                                                                     |
 | -HELP               | This argument displays all details about the arguments for the installer. prompt                                                                                                                   |
 
-Here's an example of a command line that installs Power Automate Desktop: 
+Here's an example of a command line that installs Power Automate Desktop.
 
    ```
    Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
@@ -272,12 +273,13 @@ Follow these steps to install Windows recorder (v1) extension:
 
 1. Install the extension on Microsoft Edge and/or Google Chrome from the store (Firefox is not supported for Windows recorder (v1))
 
-#### Microsoft Edge: 
+#### Microsoft Edge
+
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
 
-#### Google Chrome: 
-- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150930): select **Add to Chrome**, and then select **Enable extension** when prompted. 
+#### Google Chrome
 
+- [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150930): select **Add to Chrome**, and then select **Enable extension** when prompted.
 
 ## Install Selenium IDE to automate Web applications with desktop flows (optional)
 
@@ -354,8 +356,8 @@ Using the following registry entry you can prevent users to manually update Powe
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to manually update Power Automate Desktop.
 
+- 1: Users will not be able to manually update Power Automate Desktop.
 
 ## Prevent users accessing Power Automate Desktop using their Microsoft accounts
 
@@ -369,8 +371,8 @@ Using the following registry entry you can prevent users to login on Power Autom
 |Type|DWORD|
 
 ***Value***
-- 1: Users will not be able to sign-in using their Microsoft account
 
+- 1: Users will not be able to sign-in using their Microsoft account
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts
 
@@ -383,7 +385,8 @@ You can use the following registry entry to prevent users from logging into Powe
 |Name|RestrictNoLicenseOrgIDAccountsSignIns|
 |Type|DWORD|
 
-***Value***
+***Value**
+
 - 1: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
 
 ## Prevent users accessing Power Automate Desktop using their work or school accounts or organization premium accounts
@@ -401,7 +404,7 @@ You can use the following registry entry to prevent users from logging into Powe
 - 1: Users will not be able to sign-in using their work or school account or organization premium account
 
 >[!Note]
->- Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When all registry keys are set to 1, users will not be able to login to Power Automate Desktop with any type of account.
+>Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When all registry keys are set to 1, users will not be able to login to Power Automate Desktop with any type of account.
 
 ## Restricting access to Power Automate Desktop
 
@@ -422,9 +425,9 @@ Below you can find detailed comparison on what each user will have access to. Yo
 |**Exception handling**: take advantage of exception handling to enable automation of complex cases that require validation (via action and scripts) and proactively manage flow settings to ensure a flow is completed without the need for human interaction.|Yes|Yes|Yes|
 |**Connectivity** with cloud flows (triggering/scheduling flows)|No|No|Yes|
 |**Dataverse storage**: Save new flows built with Power Automate Desktop centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
-|**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
+|**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes|
 |**Centralized management and reporting**: New flows and any execution logs are automatically saved to Power Automate Service to provide centralized management and reporting.|No|No|Yes|
-|**Additional capabilities** such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
+|**Additional capabilities** such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes|
 
 ## Known issues and limitations
 
@@ -438,7 +441,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
-1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
+1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.
 
 1. Windows Recorder v1 desktop flows does not support
     -   Multiple monitors.
