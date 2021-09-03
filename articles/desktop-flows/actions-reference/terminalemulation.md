@@ -31,7 +31,7 @@ Take control of terminal emulators for automating mainframes and legacy systems
 
 ## Getting started with terminal emulation actions
 
-Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminal sessions and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
+Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminals and mainframes and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
 
 Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
 
@@ -42,7 +42,7 @@ If you've installed Micro Focus Reflection on your desktop, choose the respectiv
 
 ![Screenshot of the Open terminal session action.](media/terminalemulation/open-terminal-session-action.png)
 
-If you've installed another provider, select **HLLAPI** that theoretically works with any terminal emulation provider.
+If you've installed another provider, select **HLLAPI** that works with most terminal emulation providers.
 
 Depending on the provider you're using, select the appropriate HLLAPI DLL file located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
 
