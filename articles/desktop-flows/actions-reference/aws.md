@@ -41,11 +41,14 @@ Connect to Amazon web services and automate a variety of tasks
 
 ## Getting started with AWS actions
 
+> [!NOTE]
+> To deploy AWS actions in your desktop flows, you need an active AWS subscription.
+
 Power Automate Desktop enables users to handle EC2 instances, volumes, and snapshots through the AWS group of actions.
 
 Before deploying any AWS action, create a new EC2 session using the **Create EC2 session** action.
 
-To use a credentials file for authentication, disable **Access keys** and populate **Profile name** and **Profile location**. If you don't want to reference a profile name explicitly, enter **default** to use the default profile. 
+To use a credentials file for authentication, disable **Access keys** and populate **Profile name** and **Profile location**. If you don't want to reference a profile name explicitly, choose **default** in the **Profile name** field to use the default profile. 
 
 ![Screenshot of the Create session action with the Access keys option disabled.](media/aws/create-ec2-session-action-credentials-file.png)
 
