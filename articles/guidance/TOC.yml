@@ -90,7 +90,7 @@
         href: rpa-sap-playbook/getting-ready-to-debug.md
       - name: Create the cloud flow to update an address
         href: rpa-sap-playbook/creating-cloud-flow-to-update-address.md
-    - name: No-code automation with SAP Gui
+    - name: No-code automation with SAP GUI
       items:
       - name: Use no-code RPA with SAP GUI
         href: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
