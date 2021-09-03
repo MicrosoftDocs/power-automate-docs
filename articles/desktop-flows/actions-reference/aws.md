@@ -41,7 +41,7 @@ Connect to Amazon web services and automate a variety of tasks
 
 ## Getting started with AWS actions
 
-> [!NOTE]
+> [!IMPORTANT]
 > To deploy AWS actions in your desktop flows, you need an active AWS subscription.
 
 Power Automate Desktop enables users to handle EC2 instances, volumes, and snapshots through the AWS group of actions.
