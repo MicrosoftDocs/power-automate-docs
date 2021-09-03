@@ -27,7 +27,7 @@ The good news is that you can use the VBScript that the SAP GUI automation engin
 
 Take a look at this video (episode 8 of the series) to learn more about the pro-code approach for automating SAP GUI-based applications:
 
-> [!VIDEO (https://www.microsoft.com/en-us/videoplayer/embed/RWJZLc)]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWJZLc]
 
 > [!div class="nextstepaction"]
 > [Next step: Record VBScript with the SAP GUI automation engine](recording-vbscript-using-sap-gui-automation-engine.md)

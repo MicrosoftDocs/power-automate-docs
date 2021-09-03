@@ -19,15 +19,15 @@ ms.reviewer: deonhe
 
 # Validate data with the SAP ERP connector
 
->[IMPORTANT]
+>[!IMPORTANT]
 >This is an optional step.
 
-<!--Todo what's BAPI-->
+
 This is an optional topic that covers the [certified](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?id=s:d0dcda07-de96-4870-bcad-dac797207da5) [SAP ERP connector](/connectors/saperp/) which allows automation developers to connect to SAP through Business API (BAPI) and remote function calls (RFCs). The prerequisites you'll need to meet before performing this check are [described in a blog post](https://powerapps.microsoft.com/blog/introducing-the-sap-erp-connector/).
 
 Let's extend our current scenario to include a validation check that uses the SAP ERP connector to check whether the personnel number supplied to the flow is valid and that the employee is in an active employment state. Depending on the results of this check, we'll decide whether the flow ends.
 
-Here's how the adjusted flow looks.<!--note from editor: Please fix the image where it "UI flow" and "API flow." Also it needs lowercase "portal" in "Power Automate Portal."-->
+Here's how the adjusted flow looks.
 
 :::image type="complex" source="media/diagram-of-example-automation.png" alt-text="Diagram of the flow that includes a validation check.":::
    Diagram of the example automation where the employee triggers a cloud flow, the cloud flow validates that the employee ID exists, and then gets the secrets from Azure Key Vault and starts the desktop flow. The desktop flow uses RPA to automate a new address in SAP, and the cloud flow emails a status message back to the employee.
@@ -46,9 +46,8 @@ There are several benefits to employing this approach:
 
 Follow these steps to adjust the existing flow to incorporate the validation check.
 
-<!--todo: check the numbered sections to confirm they are correct-->
 
-1. Edit the **SAP RPA Playbook Demo Flow** you created in [Create the cloud flow with the Power Automate portal](creating-cloud-flow-to-launch-desktop-flow.md).<!--note from editor: Please double-check that this is the correct link-->
+1. Edit the **SAP RPA Playbook Demo Flow** you created in [Create the cloud flow with the Power Automate portal](creating-cloud-flow-to-launch-desktop-flow.md).
 
 1. Under the **Get SAP Client** action, select **New step**.
 
@@ -80,7 +79,7 @@ Follow these steps to adjust the existing flow to incorporate the validation che
    - Enter **AS host**, **Client**, and **AS System Number**.
    - For **SAP function name**, select **BAPI_EMPLOYEE_GETDATA**.
    - For **Stateful Session**, select **No**.
-   - For **EMPLOYEE_ID**, enter a valid personnel number.<!--note from editor: The screenshot should be updated with "Check whether the personnel number exists" but even if you don't want to do that, the body text and alt text should use this grammatically correct and unconfusing wording. Using "no" for "number" is only for tables, and even then it must have a period after it.-->
+   - For **EMPLOYEE_ID**, enter a valid personnel number.
 
    ![Screenshot of the Check whether the personnel number exists action filled out and entering a valid personnel number into the employee ID field.](media/check-if-personnel-no-exists.png)
 
