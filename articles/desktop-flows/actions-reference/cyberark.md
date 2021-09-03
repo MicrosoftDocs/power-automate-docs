@@ -27,19 +27,13 @@ Connect to CyberArk and retrieve passwords
 
 CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate Desktop enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
 
-To deploy the action, configure the following fields:
-
-- **Server address**: Populate the address of the server where CyberArk Central Credential Provider is installed. 
+To find the required information to populate the action, see the following instructions:
 
 - **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.
 
 - **Safe**: Populate the name of the safe displayed in PrivateArk Client. 
 
 - **Folder** and **Object**: Select a safe in PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
-
-- **Extra data**:  If you've configured your credentials in a way that requires the use of extra data, populate this field accordingly.
-
-- If a certificate is required to retrieve your credentials, specify it in the **Certificate location** field. If you want to use untrusted certificates, enable **Accept untrusted certificates**. 
 
 ![Screenshot of the Get password from CyberArk action.](media/cyberark/get-password-cyberark-action.png)
 
