@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/06/2021
+ms.date: 09/06/2021
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -29,3 +29,6 @@ To ensure that the window will become focused, send a click on it after deployin
 - [Move mouse to image](../actions-reference/mouseandkeyboard.md#movemousetoimagebase) - Enable the **Send a click after moving mouse** option
 - [Send mouse click](../actions-reference/mouseandkeyboard.md#sendmouseclick)
 - [Move mouse to text on screen (OCR)](../actions-reference/mouseandkeyboard.md#movemousetotextonscreenwithocraction) - Enable the **Send a click after moving mouse** option
+
+> [!NOTE]
+> You can find more information regarding sending keystrokes in [Automate applications using keyboard shortcuts](automate-applications-keyboard-shortcuts.md).

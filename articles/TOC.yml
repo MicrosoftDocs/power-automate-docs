@@ -473,8 +473,8 @@
         href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
-      - name: Automate Save as, Open and Upload dialogs
-        href: ./desktop-flows/how-to/automate-save-open-upload-dialogs.md  
+      - name: Automate browser prompts
+        href: ./desktop-flows/how-to/automate-browser-prompts.md  
       - name:  Scroll on a web page
         href: ./desktop-flows/how-to/scroll-web-page.md   
       - name: Handle iframes on a web page
@@ -493,8 +493,6 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries   
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
-    - name: Automate with mouse, keyboard, and OCR actions
-      href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Set screen resolution on unattended mode

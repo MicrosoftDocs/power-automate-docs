@@ -1,11 +1,11 @@
 ---
-title: Automate Save as, Open and Upload dialogs | Microsoft Docs
-description: Automate Save as, Open and Upload dialogs
+title: Automate browser prompts | Microsoft Docs
+description: Automate browser prompts
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/09/2021
+ms.date: 09/06/2021
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate Save as, Open and Upload dialogs
+# Automate browser prompts
 
 Many web pages display **Save as**, **Open**, and **Upload** dialogs to prompt users to select destination folders and files, respectively.
 

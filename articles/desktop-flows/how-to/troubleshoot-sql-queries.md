@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/05/2021
+ms.date: 09/06/2021
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Troubleshoot SQL queries
 
-While developing flows that run queries on databases, you may encounter errors caused by the deployed database actions. If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
+While developing desktop flows, you may encounter errors caused by deployed database actions that run queries on databases. If you can't identify the source of the issue through the displayed error messages, perform the following troubleshooting steps:
 
 1. Replace any single quote (**'**) characters with double quotes (**"**) or the other way around. 
 
@@ -38,6 +38,8 @@ While developing flows that run queries on databases, you may encounter errors c
     
     > [!NOTE]
     > You can find more information about the percentage signs in [Use variables and the % notation](../variable-manipulation.md).
+
+1. Ensure that the same versions (32 bit or 64 bit) of database, database server, and Power Automate Desktop are installed on your desktop. 
 
 1. Verify that the firewall or any other network security system isn't blocking the connection between Power Automate Desktop and the database. 
 

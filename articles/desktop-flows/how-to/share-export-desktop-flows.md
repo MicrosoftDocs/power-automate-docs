@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/09/2021
+ms.date: 09/06/2021
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -17,7 +17,14 @@ search.audienceType:
 
 # Share/export a desktop flow
 
-To share a desktop flow with other users, choose one of the following methods:
+To replicate a desktop flow regardless of your account, edit it through the flow designer, and copy the actions within a subflow.
+
+The copied text can be sent directly to others users or saved to a text file for easier sharing. The receiver can paste the text to a flow designer and run it. 
+
+> [!NOTE]
+> When copying actions, all their parameters, images, and UI elements are copied as well. Only one subflow can be copied at a time. If there are more than one subflows, repeat the procedure for each one individually or save the actions into separate text files.
+
+If you've signed in with an organization premium account, you can also choose one of the following methods:
 
 1. Share the desktop flow directly through the Power Automate portal.
 
@@ -26,11 +33,4 @@ To share a desktop flow with other users, choose one of the following methods:
 1. Export a solution that contains the desktop flow.
 
     To move a desktop flow from one environment to another, host it in a solution. For more information about importing flows into solutions and building solution-aware flows, see [Overview of solution-aware flows](../../overview-solution-flows.md).
-
-1. Copy the actions of the desktop flow and paste them to a text editor.
-
-    To replicate a desktop flow, edit it through the flow designer, copy the actions within a subflow, and paste them to a text editor. Next, save and share the text file with other users in your organization.
-
-     > [!NOTE]
-     > When copying actions, all their parameters, images, and UI elements are copied as well. Only one subflow can be copied at a time. If there are more than one subflows, repeat the procedure for each one individually and save the actions into separate text files.
 
