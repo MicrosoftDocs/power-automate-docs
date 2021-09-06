@@ -29,7 +29,7 @@ Some key things to do here are to view the status of the recordings and analyze 
 - Analysis happens at the process level for all recordings that are ready to be analyzed.
 - Pay attention to the recording status, which you can find under the **Status** column of the **Recordings** pane. Only recordings with specific status will be considered for analysis.
 
-Here's a short video on how to view analytics using process advisor: [Analyze feature](https://go.microsoft.com/fwlink/?linkid=2147426)
+Here's a short video on how to view analytics using process advisor: [Video: Analyze feature](https://go.microsoft.com/fwlink/?linkid=2147426)
 
 ## Recording status
 
