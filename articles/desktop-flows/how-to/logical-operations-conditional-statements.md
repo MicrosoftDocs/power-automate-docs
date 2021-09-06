@@ -19,7 +19,7 @@ search.audienceType:
 
 Data validation is a typical requirement in most business tasks and allows the implementation of different behavior based on the available data. 
 
-Power Automate Desktop provides various conditionals that execute blocks of actions only if a given condition is met. If the condition is false, the actions are skipped.
+Power Automate Desktop provides various conditionals that run blocks of actions only if a given condition is met. If the condition is false, the actions are skipped.
 
 > [!NOTE]
 > You can find more information regarding conditionals in [Use conditionals](../use-conditionals.md).
@@ -34,7 +34,7 @@ To create a nested if statement, deploy an **If** action within the block of ano
 
 Although the implementation of nested if statements is convenient in some cases, it can lead to complicated flows when many checks are needed.
 
-A more efficient way to achieve the same results is the use of complex logical expressions. In the following example, you can see a single **If** action that offers the same result as the previously nested **If** actions.
+A more efficient way to achieve the same results is the use of logical expressions. In the following example, you can see a single **If** action that offers the same result as the previously nested **If** actions.
 
 The expression in the **First operand** field uses the **AND** operator to check whether the variables **A** and **B** contain the value **10** and **5**, respectively.
 
