@@ -66,5 +66,11 @@ The on-premises data gateway acts as a bridge. It provides quick and secure data
 
 By using a gateway, organizations can keep databases and other data sources on-premises, while securely using that on-premises data in cloud services.
 
+## Direct machine connectivity
+
+In addition to the on-premises data gateway, there is a new connectivity options allowing physical or virtual machine to directly connect to the Power Automate service. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the wide array of available triggers, such as when you receive an e-mail or on a pre-defined scheduled.
+
+Learn more about direct machine connectivity [here](../../desktop-flows/manage-machines.md).
+
 > [!div class="nextstepaction"]
 > [Next step: Sample SAP GUI automation for this tutorial](sample-sap-scenario.md)

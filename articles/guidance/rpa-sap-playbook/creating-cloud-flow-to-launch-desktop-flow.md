@@ -18,8 +18,9 @@ ms.reviewer: deonhe
 ---
 
 # Create the cloud flow with the Power Automate portal
+
 <!--note from editor: The title could be more specific.-->
-<!--todo: we need an intro for each of these documents that tells the customer that they must have compeleted other steps before this one-->
+<!--todo: we need an intro for each of these documents that tells the customer that they must have completed other steps before this one-->
 <!--note from editor: I agree, I think these topics still could use more connective tissue among them.-->
 You can close both Power Automate Desktop windows and go to the [Power Automate designer](https://flow.microsoft.com/). Here, we'll create a Power Automate cloud flow that calls our desktop flow by using secure input parameters from the cloud.
 
@@ -48,7 +49,7 @@ You can close both Power Automate Desktop windows and go to the [Power Automate 
    >The next steps will involve configuring action components. To securely pass parameters into our desktop flow, we'll be following the optional, but recommended, approach of using Azure Key Vault secrets. 
 
    >[!NOTE]
-   >If you don't have access to Key Vault, you can skip the next two steps<!--note from editor: For sure it's only two?--> and provide your credentials and other parameters later as clear text instead.
+   >If you don't have access to Key Vault, you can skip the next two steps<!--note from editor: For sure it's only two?--> and provide your credentials and other parameters later as clear text (which not certainly recommended) instead.
 
 1. Select **New step**.
 

@@ -23,14 +23,10 @@ We've provided the following simplified example, which we'll use as the base for
 
 Let's say your organization doesn't have employee self-service functionality, but you want to allow employees to add a second address to their personnel profile by using a flow that they manually trigger.
 
-:::image type="complex" source="media/diagram-example-automation.png" alt-text="Diagram showing the sample scenario":::
-   A diagram of the sample automation where the employee triggers a cloud flow. The cloud flow gets the secrets from Azure Key Vault and then starts the desktop flow. The desktop flow uses RPA to add a new address in SAP. After it's completed, the cloud flow emails a status message to the employee.
-:::image-end:::
-
 ![A diagram of the sample automation where the employee triggers a cloud flow. The cloud flow gets the secrets from Azure Key Vault and then starts the desktop flow. The desktop flow uses RPA to add a new address in SAP. After it's completed, the cloud flow emails a status message to the employee.](media/diagram-example-automation.png)
 
 >[!NOTE]
->The following procedure was developed as an example for this playbook. Your HR department can provide you with the exact steps for you to follow to add the second address to SAP manually.
+>The following procedure was developed as an example for this playbook. Your HR department can provide you with the exact steps for you to follow to add the second address to SAP.
 
 These are the steps:
 
