@@ -23,7 +23,7 @@ The flow designer includes the **UI automation** group of actions, which manipul
 
 Actions in the **Windows** subcategory directly manipulate entire UI windows, while **Form Filling** actions interact with more specific elements, such as text fields and buttons.
 
-Desktop automation can be performed by either manually adding the required actions, or using the recorder.
+Desktop automation can be performed by either manually adding the required actions, or using the Desktop recorder.
 
 ## Interacting with desktop applications
 

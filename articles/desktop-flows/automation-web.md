@@ -27,7 +27,7 @@ Four web browsers are currently supported:
 * Firefox
 * Chrome
 
-Web automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing web automation actions on them. Development may be performed manually, or through the use of the recorder.
+Web automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing web automation actions on them. Development may be performed manually, or through the use of the web recorder.
 
 ## Building a web automation flow
 
