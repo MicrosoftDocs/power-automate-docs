@@ -142,4 +142,8 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
 
+- **Issue**: When adding elements or capturing images from web applications, the console and the designer are visible, and they might obstruct the user.
+
+- **Workarounds**: None.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
