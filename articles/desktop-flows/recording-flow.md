@@ -30,7 +30,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![The start recording button.](./media/recording-flow/start-recording-button.png)
 
-    The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
+    The desktop recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
 
     ![Recording a desktop flow.](./media/recording-flow/recording-flow.png)
 
