@@ -37,6 +37,22 @@ landingContent:
             url: planning/testing-strategy.md
           - text: Deploying and refining phase
             url: planning/deploy-to-production.md
+  
+  # Card 
+  - title: Use Robotic Process Automation with SAP
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Introduction
+            url: rpa-sap-playbook/introduction.md       
+          - text: Use pro-code RPA with SAP GUI
+            url: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
+          - text: Use low-code RPA with SAP GUI
+            url: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
+          - text: Use no-code RPA with SAP GUI
+            url: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
+          - text: Conclusion
+            url: rpa-sap-playbook/conclusion.md
 
   # Card
   - title: Related content

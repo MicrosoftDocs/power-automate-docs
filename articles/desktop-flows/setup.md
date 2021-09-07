@@ -68,7 +68,6 @@ search.audienceType:
 
 - An active connection to the Internet.
 
-
 ## Set the display language for Power Automate Desktop
 
 The language used in the Power Automate Desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
@@ -113,8 +112,6 @@ Finnish		|Korean		|Serbian (Latin, Serbia)
 - Turkish Q keyboard – Turkish (Turkey)
 - India keyboard – English (India)
 
-
-
 ## Sign-in account comparison
 
 Below you can find detailed comparison on what each user will have access to. You can find more information on the versions in the [Power Platform license guide](https://aka.ms/Ignite21-Licensing).
@@ -146,7 +143,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
-1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
+1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.
 
 
 ## Learn more
