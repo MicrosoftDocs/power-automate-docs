@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/11/2021
+ms.date: 08/09/2021
 ms.author: deonhe
 ---
 
@@ -70,7 +70,7 @@ You can create a variable and declare its data type and initial value - all with
 
    | Property | Required | Value |  Description |
    |----------|----------|-------|--------------|
-   | **Name** | Yes | <*variable-name*> | The name for the variable to increment |
+   | **Name** | Yes | <*variable-name*> | The name for the variable to initialize |
    | **Type** | Yes | <*variable-type*> | The data type for the variable |
    | **Value** | No | <*start-value*> | The initial value for your variable <p><p>**Tip**: Although optional, set this value as a best practice so you always know the start value for your variable. |
    |||||
