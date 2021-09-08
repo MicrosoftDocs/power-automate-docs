@@ -2,8 +2,8 @@
 title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
-ms.date: 09/24/2020
-ms.reviewer: "dean-haas"
+ms.date: 09/08/2021
+ms.reviewer: "msftman"
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -137,7 +137,7 @@ You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order
 
 > [!TIP]
 >Here are a few tips to keep in mind as you work on your task flow in the designer window:  
->   
+>
 > - To take a snapshot of everything in the business process flow window, select **Snapshot** on the action bar. This is useful, for example, if you want to share and get comments on the process from a team member.  
 > - Use the mini-map to navigate quickly to different parts of the process. This is useful when you have a complicated process that scrolls off the screen.  
 > - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2000 characters.  
@@ -165,9 +165,9 @@ You can add or change the following properties of a stage:
   
 - **Relationship**. Enter a relationship when the preceding stage in the process is based on a different table. For the stage currently being defined, choose **Select relationships** to identify a relationship to use when moving between the two stages. It is recommended you select a relationship for the following benefits:  
   
-    - Relationships often have column maps defined that automatically carry over data between rows, minimizing data entry.  
+  - Relationships often have column maps defined that automatically carry over data between rows, minimizing data entry.  
   
-    - When you select **Next Stage** on the process bar for a row, any rows that use the relationship will be listed in the process flow, thereby promoting reuse of rows in the process. In addition, you can use workflows to automate creation of rows so that the user simply selects it instead of creating one to further streamline the process.  
+  - When you select **Next Stage** on the process bar for a row, any rows that use the relationship will be listed in the process flow, thereby promoting reuse of rows in the process. In addition, you can use workflows to automate creation of rows so that the user simply selects it instead of creating one to further streamline the process.  
   
 **Edit Steps**  
  Each stage can have up to 30 steps.
@@ -178,12 +178,12 @@ To learn about adding a branch to a stage, see [Enhance business process flows w
 To make a business process flow available for people to use, you must order the process flow, enable security roles, and activate it.  
   
 **Set Process Flow Order**  
- When you have more than one business process flow for a table (row type), you’ll need to set which process is automatically assigned to new rows.. In the command bar, select **Order Process Flow**. For new rows or rows that do not already have a process flow associated with them, the first business process flow that a user has access to is the one that will be used.  
+ When you have more than one business process flow for a table (row type), you’ll need to set which process is automatically assigned to new rows. In the command bar, select **Order Process Flow**. For new rows or rows that do not already have a process flow associated with them, the first business process flow that a user has access to is the one that will be used.  
   
 **Enable Security Roles**  
-Users have access to a business process flow depending on the privilege defined on the business process flow in the security role assigned to the user. 
+Users have access to a business process flow depending on the privilege defined on the business process flow in the security role assigned to the user.
 
-By default, only the **System Administrator** and **System Customizer** security roles can view a new business process flow. 
+By default, only the **System Administrator** and **System Customizer** security roles can view a new business process flow.
 
 To specify privileges on a business process flow, open the business process flow for edit, and then select **Edit Security Roles** on the command bar of the business process flow designer. See step 13 under [Create a business process flow](#create-a-business-process-flow) listed earlier in this topic.
   
@@ -198,9 +198,8 @@ The Dynamics 365 (online), version 9.0 update introduces a business process flow
 
 Suppose that, as part of the opportunity qualification process, the Contoso organization requires all opportunities to be reviewed by a designated reviewer. Subsequently, the Contoso organization created an action that:
 
-- Creates a task row that is assigned to the opportunity reviewer. 
-- Appends “Ready for review” to the opportunity topic. 
-
+- Creates a task row that is assigned to the opportunity reviewer.
+- Appends “Ready for review” to the opportunity topic.
 Additionally, Contoso needs to be able to run these actions on demand. To integrate these tasks into the opportunity qualification process, the actions must appear on the opportunity business process flow. To enable this functionality, select **As a Business Process Flow action step**.
 ![Available to run as a business process flow.](media/action-available-to-run.png)
 
@@ -241,11 +240,9 @@ Select an instance to open it in a new tab, or select it to copy a link, share a
   
 ## Next steps
 
- - [Business process flows overview](business-process-flows-overview.md)  
- - [Enhance business process flows with branching ](enhance-business-process-flows-branching.md)
- - [Overview of approvals](sequential-modern-approvals.md)
- - [Detailed steps for adding an instant flow to a business process flow](/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
-
+- [Business process flows overview](business-process-flows-overview.md)  
+- [Enhance business process flows with branching](enhance-business-process-flows-branching.md)
+- [Overview of approvals](sequential-modern-approvals.md)
+- [Detailed steps for adding an instant flow to a business process flow](/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
