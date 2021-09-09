@@ -39,7 +39,7 @@ landingContent:
             url: planning/deploy-to-production.md
   
   # Card 
-  - title: Use Robotic Process Automation with SAP
+  - title: Robotic Process Automation with SAP
     linkLists:
        - linkListType: overview
          links:
