@@ -36,7 +36,7 @@ Although the implementation of nested if statements is convenient in some cases,
 
 A more efficient way to achieve the same results is the use of logical expressions. In the following example, you can see a single **If** action that offers the same result as the previously nested **If** actions.
 
-The expression in the **First operand** field uses the **AND** operator to check whether the variables **A** and **B** contain the value **10** and **5**, respectively.
+The expression in the **First operand** field uses the **AND** operator to check whether the variables **A** and **B** contain the values **10** and **5**, respectively.
 
 ![Screenshot of a logical expression in an If action.](media/logical-operations-conditional-statements/logical-expression-if-action.png)
 
@@ -47,5 +47,12 @@ The **Second operand** field is populated with the value **TRUE**, while the sel
 > [!NOTE]
 > The logical expression must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables and expressions. You can find more information regarding percentage notation in [Use variables and the % notation](../variable-manipulation.md).
 
+To handle more demanded validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations to achieve the desired functionality.
 
+In the following example, a dialog prompts users to select one or more files. The **If** action checks whether the user has pressed **cancel** in the dialog or selected more than 100 files.
 
+![Screenshot of a flow that checks the limitations for file selection.](media/logical-operations-conditional-statements/file-selection-flow.png)
+
+If one of these conditions (or both) is valid, the flow will stop and display a dialog informing the user about the implemented limitations.
+
+![Screenshot of the logical expression in the If action.](media/logical-operations-conditional-statements/logical-expression.png)
