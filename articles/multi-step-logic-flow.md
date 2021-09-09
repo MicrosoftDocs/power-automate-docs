@@ -97,7 +97,7 @@ Start with a cloud flow that has a **Send an email** action.
    
      You'll then see the advanced options for sending an email.
    
-    ![Sharepoint triggers.](./media/multi-step-logic-flow/advanced.png)
+    ![SharePoint triggers.](./media/multi-step-logic-flow/advanced.png)
 2. Select **High** from the **Importance** list, and then select **Hide advanced options** to hide the advanced options.
 3. Select **Update flow**, which is located on the menu at the top of the screen.
    

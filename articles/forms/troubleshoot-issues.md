@@ -64,7 +64,7 @@ Go to your form. Copy the Form Id from the URL of the form and add it as a custo
 
 ### I don’t get an attachment for some of my approvals.
 
-Approval action will attach file in notification email till the size is 5 MB. Beyond that, approval action in Power automate won’t be able to attach the file in notification email. It will redirect user/approver to check the attachment in Microsoft Flow portal.
+Approval action will attach file in notification email till the size is 5 MB. Beyond that, approval action in Power Automate won’t be able to attach the file in notification email. It will redirect user/approver to check the attachment in Microsoft Flow portal.
 
 ### Send email action looks stuck in my flow.
 
