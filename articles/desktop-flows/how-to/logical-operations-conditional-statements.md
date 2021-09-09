@@ -47,7 +47,7 @@ The **Second operand** field is populated with the value **TRUE**, while the sel
 > [!NOTE]
 > The logical expression must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables and expressions. You can find more information regarding percentage notation in [Use variables and the % notation](../variable-manipulation.md).
 
-To handle more demanded validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations to achieve the desired functionality.
+To handle more demanding validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations to achieve the desired functionality.
 
 In the following example, a dialog prompts users to select one or more files. The **If** action checks whether the user has pressed **Cancel** in the dialog or selected more than 100 files.
 
