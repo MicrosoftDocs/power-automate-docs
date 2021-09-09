@@ -49,7 +49,7 @@ The **Second operand** field is populated with the value **TRUE**, while the sel
 
 To handle more demanded validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations to achieve the desired functionality.
 
-In the following example, a dialog prompts users to select one or more files. The **If** action checks whether the user has pressed **cancel** in the dialog or selected more than 100 files.
+In the following example, a dialog prompts users to select one or more files. The **If** action checks whether the user has pressed **Cancel** in the dialog or selected more than 100 files.
 
 ![Screenshot of a flow that checks the limitations for file selection.](media/logical-operations-conditional-statements/file-selection-flow.png)
 
