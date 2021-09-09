@@ -75,22 +75,19 @@ Each template is designed for a specific purpose. For example, there are templat
     ![daily reminder template.](./media/getting-started/template-details.png)
 
 1. Select **Continue**.
-   
-  >[!NOTE]
-  >You may have to connect to OneDrive if you haven't set up the OneDrive connection before.
 
-  ![Create connection.](./media/getting-started/create-connection.png)
+   ![Create connection.](./media/getting-started/create-connection.png)
 
 1. Select the OneDrive folder that you want to monitor.
-   
+
    ![OneDrive folder tree](./media/getting-started/select-ondrive-folder.png)
 
 1. Select **Save**.
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
-    > [!NOTE]
-    > You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+  >[!NOTE]
+  >You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
 
 >[!TIP]
 >[Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
