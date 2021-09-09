@@ -46,7 +46,7 @@ You can close both Power Automate Desktop windows and then go to the [Power Auto
    >The next steps will involve configuring action components. To securely pass parameters into our desktop flow, we'll be following the optional, but recommended, approach of using Azure Key Vault secrets. 
 
    >[!NOTE]
-   >If you don't have access to Key Vault, you can skip the follow steps that show you how to configure Key Vault and provide your credentials and other parameters later as clear text. Microsoft does not recommend that you use clear text credentials in production environments.
+   >If you don't have access to Key Vault, you can skip the following steps that show you how to configure Key Vault and provide your credentials and other parameters later as clear text. Microsoft does not recommend that you use clear text credentials in production environments.
 
 1. Select **New step**.
 
