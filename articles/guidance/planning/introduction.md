@@ -15,7 +15,7 @@ ms.reviewer: kathyos
 # Introduction: Planning a Power Automate project
 
 You can use Power Automate to automate your manual and repetitive
-processes so that you can focus on higher-value tasks. 
+processes so that you can focus on higher-value tasks. Test task
 It's a unique service that you can use to unify cloud services, desktop applications, and legacy systems.
 
 Do you have a process or task that you want to automate, but aren't quite sure
