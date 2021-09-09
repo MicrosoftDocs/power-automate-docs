@@ -4,8 +4,8 @@ description: Submit your flow as a template so that other organizations can find
 services: ''
 suite: flow
 documentationcenter: na
-author: sunaysv
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -15,7 +15,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/02/2019
-ms.author: sunayv
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
