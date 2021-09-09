@@ -41,7 +41,7 @@ This tutorial shows you how to create a business process flow with Power Apps. T
 
 ## Prerequisites
 
-You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order to create business process flows. Some Dynamics 365 license plans include the per user plan.
+You need a [per user plan](https://preview.flow.microsoft.com/pricing/) in order to create business process flows. Some Dynamics 365 license plans include the per user plan. Business process flows are currently not supported in Dataverse for Teams.
 
 ## Create a business process flow  
   
