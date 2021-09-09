@@ -17,11 +17,9 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Create the cloud flow with the Power Automate portal
-<!--note from editor: The title could be more specific.-->
-<!--todo: we need an intro for each of these documents that tells the customer that they must have compeleted other steps before this one-->
-<!--note from editor: I agree, I think these topics still could use more connective tissue among them.-->
-You can close both Power Automate Desktop windows and go to the [Power Automate designer](https://flow.microsoft.com/). Here, we'll create a Power Automate cloud flow that calls our desktop flow by using secure input parameters from the cloud.
+# Create the cloud flow with the Power Automate
+
+You can close both Power Automate Desktop windows and then go to the [Power Automate designer](https://flow.microsoft.com/). Here, we'll create a Power Automate cloud flow that calls our desktop flow by using secure input parameters from the cloud.
 
 >[!NOTE]
 >This cloud flow is designed as a "happy path," which means it has no exception handling, scoping, or try-catch-finally patterns. You can find a more resilient design approach in the [Low-code RPA with SAP GUI in Power Automate Desktop](action-based-sap-gui-automation-manually-overview.md) section.<!--note from editor: Please double-check this link. I think it should go to the "head" of the relevant section, just to set the stage for the reader.-->
@@ -30,25 +28,25 @@ You can close both Power Automate Desktop windows and go to the [Power Automate 
 
    ![Screenshot of the Power Automate Desktop home screen, with the current environment indicated.](media/power-automate-desktop-home-screen-with-current-environment.png)
 
-   ![Screenshot of the Power Automate portal home screen, with the current environment indicated.](media/power-automate-portal-with-current-environment.png)
+   ![Screenshot of the Power Automate home screen, with the current environment indicated.](media/power-automate-portal-with-current-environment.png)
 
 1. On the left pane, select **My flows**, select **New flow**, and then select **Instant cloud flow**.
 
-   ![Screenshot of a new flow dialog with instant cloud flow selection within the Power Automate portal.](media/new-flow-dialog-with-instant-cloud-flow.png)
+   ![Screenshot of a new flow dialog with instant cloud flow selection within Power Automate.](media/new-flow-dialog-with-instant-cloud-flow.png)
 
 1. In the **Build an instant flow** dialog, enter a flow name, select the **Manually trigger a flow** trigger from the list, and then select **Create**.
 
-   ![Screenshot of new cloud flow dialog wizard in the Power Automate portal.](media/new-cloud-flow-dialog-wizard.png)
+   ![Screenshot of new cloud flow dialog wizard in Power Automate.](media/new-cloud-flow-dialog-wizard.png)
 
 1. This opens the designer, and it should look similar to the following image.
 
-   ![Screenshot of the cloud flow authoring canvas in the Power Automate portal.](media/cloud-flow-canvas.png)
+   ![Screenshot of the cloud flow authoring canvas in Power Automate.](media/cloud-flow-canvas.png)
 
    >[!IMPORTANT]
    >The next steps will involve configuring action components. To securely pass parameters into our desktop flow, we'll be following the optional, but recommended, approach of using Azure Key Vault secrets. 
 
    >[!NOTE]
-   >If you don't have access to Key Vault, you can skip the next two steps<!--note from editor: For sure it's only two?--> and provide your credentials and other parameters later as clear text instead.
+   >If you don't have access to Key Vault, you can skip the following steps that show you how to configure Key Vault and provide your credentials and other parameters later as clear text. Microsoft does not recommend that you use clear text credentials in production environments.
 
 1. Select **New step**.
 
@@ -133,15 +131,15 @@ You can close both Power Automate Desktop windows and go to the [Power Automate 
 
 1. Select **Test**, and then under **Test Flow**, select **Test** again.
 
-   ![Screenshot of the Test Flow dialog in the Power Automate portal.](media/test-flow-dialog.png)
+   ![Screenshot of the Test Flow dialog in Power Automate.](media/test-flow-dialog.png)
 
 1. Authorize any connections, if needed, and then select **Continue**.
 
-   ![Screenshot of the Run flow connection dialog in the Power Automate portal.](media/run-flow-connection-dialog.png)
+   ![Screenshot of the Run flow connection dialog in Power Automate.](media/run-flow-connection-dialog.png)
 
 1. Select **Run flow**.
 
-   ![Screenshot of the Run flow dialog in the Power Automate portal.](media/run-flow-dialog.png)
+   ![Screenshot of the Run flow dialog in Power Automate.](media/run-flow-dialog.png)
 
 1. Select **Done**.
 
@@ -150,7 +148,7 @@ You can close both Power Automate Desktop windows and go to the [Power Automate 
 
 1. Watch the desktop flow execution.
 
-   ![Screenshot of the Run flow history in the Power Automate portal.](media/run-flow-history.png)
+   ![Screenshot of the Run flow history in Power Automate.](media/run-flow-history.png)
 
 Congratulations, you've just created and launched a secure desktop flow from the cloud and connected to your desktop flow to add an employee address to SAP.
 
