@@ -4,17 +4,16 @@ description: Links to content for creating, using, sharing, and certifying custo
 services: ''
 suite: flow
 documentationcenter: ''
-author: sunaysv
-manager: anneta
+author: msftman
+manager: KVivek
 editor: ''
 ms.service: power-automate
 ms.devlang: na
-ms.subservice: developer
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/29/2018
-ms.author: sunayv
+ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
