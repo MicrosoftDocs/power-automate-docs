@@ -37,7 +37,7 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
 
    You can only submit flows that have run successfully at least once since the last save:
 
-     ![Ellipsis button.](./media/publish-a-template/need-successful-run-warning.png)
+     ![No successful runs warning.](./media/publish-a-template/need-successful-run-warning.png)
 1. Specify a meaningful title, a clear description of the scenario that your template will help automate, the biggest benefit, the number of users, number of runs, and the categories that apply for the template.
 
     ![Template options.](./media/publish-a-template/template-options.png)

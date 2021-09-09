@@ -9,7 +9,6 @@ manager: KVivek
 editor: ''
 ms.service: power-automate
 ms.devlang: na
-ms.subservice: developer
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
