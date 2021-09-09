@@ -52,7 +52,7 @@
         href: planning/analyze-and-assess.md
       - name: Discovering performance issues
         href: planning/discover-performance-issues.md
-  - name: Use Robotic Process Automation (RPA) with SAP
+  - name: Robotic Process Automation (RPA) with SAP
     items:
     - name: Introduction to SAP GUI-based RPA in Power Automate Desktop
       href: rpa-sap-playbook/introduction.md

@@ -25,7 +25,7 @@ One of these techniques involves using VBScript to interact with the underlying 
 
 The good news is that you can use the VBScript that the SAP GUI automation engine generates in a Power Automate Desktop action. To use this VBScript, all you have to do is to replace the manually entered text that was captured during recording with dynamic inputs in Power Automate Desktop. 
 
-Take a look at this video (episode 8 of the series) to learn more about the pro-code approach for automating SAP GUI-based applications:
+Take a look at this video ([episode 8](https://www.youtube.com/watch?v=b9TUrVtcUhA&list=PLi9EhCY4z99W9D8zAMd0Ej5kNOI_4mfkC&index=8) of the series) to learn more about the pro-code approach for automating SAP GUI-based applications:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWJZLc]
 

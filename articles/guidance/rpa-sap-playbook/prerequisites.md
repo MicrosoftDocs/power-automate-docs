@@ -43,7 +43,7 @@ The following software components are required on Windows 10 Pro devices:
 
 - [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
 
-- [On-premises data gateway](../../gateway-reference.md#use-a-gateway) (make sure the data gateway region matches your environment's region)
+- [On-premises data gateway](../../gateway-reference.md#use-a-gateway) (make sure the data gateway region matches your environment's region) or use the latest [direct machine connectivity option](../../desktop-flows/manage-machines.md).
 
 - **SAP GUI for Windows** (ask your administrator for details).
 
