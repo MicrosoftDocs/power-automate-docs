@@ -4,8 +4,8 @@ description: Using, creating, and managing environments in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
-author: sunaysv
-manager: anneta
+author: msftman
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -15,7 +15,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/14/2020
-ms.author: sunayv
+ms.author: deonhe
 search.app: 
   - Flow
   - Powerplatform
