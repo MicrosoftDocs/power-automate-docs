@@ -148,6 +148,8 @@
         href: parallel-modern-approvals.md
       - name: Everyone must approve
         href: all-assigned-must-approve.md
+      - name: Request approvals from groups
+        href: group-approvals.md
       - name: Integrated approvals
         href: common-data-model-approve.md
       - name: Format approval requests

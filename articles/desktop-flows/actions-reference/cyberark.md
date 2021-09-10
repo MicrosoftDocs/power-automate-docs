@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
+ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -17,15 +17,27 @@ search.audienceType:
 
 # CyberArk
 
-
-
 Connect to CyberArk and retrieve passwords
 
 |<!-- --> |
 |-----|
 |[Get password from CyberArk](#getpasswordbase)|
 
+## Getting started with CyberArk actions
 
+CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate Desktop enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
+
+To find the required information to populate the action, see the following instructions:
+
+- **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.
+
+- **Safe**: Populate the name of the safe displayed in PrivateArk Client. 
+
+- **Folder** and **Object**: Select a safe in PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
+
+![Screenshot of the Get password from CyberArk action.](media/cyberark/get-password-cyberark-action.png)
+
+## CyberArk actions
 
 ### <a name="getpasswordbase"></a> Get password from CyberArk
 Retrieves a password for a specific application from CyberArk
