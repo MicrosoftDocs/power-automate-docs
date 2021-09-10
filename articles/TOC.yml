@@ -334,6 +334,8 @@
     items:
     - name: Power Automate Desktop prerequisites & limitations 
       href: ./desktop-flows/setup.md
+    - name: Getting started with Power Automate in Windows 11
+      href: ./desktop-flows/getting-started-windows-11.md
     - name: Install Power Automate Desktop
       href: ./desktop-flows/install.md
     - name: Governance in Power Automate Desktop
