@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/17/2020
+ms.date: 09/10/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -85,7 +85,7 @@ You need a standalone [Power Apps license](https://powerapps.microsoft.com/prici
 
 To find your license:
 
-1. Go to [flow.microsoft.com](https://preview.flow.microsoft.com/)
+1. Go to [flow.microsoft.com](https://flow.microsoft.com/)
 
 1. Select **My flows**.
 

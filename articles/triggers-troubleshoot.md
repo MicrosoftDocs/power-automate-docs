@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/19/2020
+ms.date: 09/10/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -65,15 +65,15 @@ To verify if your connections are broken:
 
 1. Sign into Power Automate.
 1. Go to **Data** > **Connections**.
-1. Find the connection that's used in your flow. 
+1. Find the connection that's used in your flow.
 1. Select **Fix connections**, and then update the credentials for your connection if there is a **Fix connection** message next to the **Status** column.
 
    ![A screenshot that displays a link to fix a broken connection.](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
 
 ### Verify if the flow uses a premium connector trigger
 
-1. Edit your flow to find the connector name for the trigger. 
-1. Go to the [list of connectors](https://preview.flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
+1. Edit your flow to find the connector name for the trigger.
+1. Go to the [list of connectors](https://flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
 
    ![A screenshot of a premium connector.](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
 

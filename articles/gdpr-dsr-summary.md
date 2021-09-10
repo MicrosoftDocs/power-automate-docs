@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/14/2020
+ms.date: 09/10/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -33,7 +33,7 @@ Users and administrators can perform the actions outlined in this article.
 
 ### Users
 
-A user needs to have an active Azure Active Directory account with a [Power Automate license](https://preview.flow.microsoft.com/pricing/). Users who do not meet this requirement need to ask an administrator to perform these actions.
+A user needs to have an active Azure Active Directory account with a [Power Automate license](https://flow.microsoft.com/pricing/). Users who do not meet this requirement need to ask an administrator to perform these actions.
 
 ### Administrators
 
