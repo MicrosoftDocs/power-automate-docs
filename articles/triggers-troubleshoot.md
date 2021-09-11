@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/19/2020
+ms.date: 09/10/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -51,10 +51,6 @@ Here are a few tips and tricks for troubleshooting issues with triggers.
 
    Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to know more about how to fix issues with triggers.
 
-   
-<!--todo, what's this about-->
-<!-- Make sure access to OData is enabled. -->
-
 Once the problem is resolved, modify the flow, save it, and then change it back and save again. The flow becomes aware that it's configuration changed, and tries to register its trigger again.
 
 ### Verify connections
@@ -65,15 +61,15 @@ To verify if your connections are broken:
 
 1. Sign into Power Automate.
 1. Go to **Data** > **Connections**.
-1. Find the connection that's used in your flow. 
+1. Find the connection that's used in your flow.
 1. Select **Fix connections**, and then update the credentials for your connection if there is a **Fix connection** message next to the **Status** column.
 
    ![A screenshot that displays a link to fix a broken connection.](./media/triggers-introduction/9de1dc46f08b7848f7080f4998f6b243.png)
 
 ### Verify if the flow uses a premium connector trigger
 
-1. Edit your flow to find the connector name for the trigger. 
-1. Go to the [list of connectors](https://preview.flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
+1. Edit your flow to find the connector name for the trigger.
+1. Go to the [list of connectors](https://flow.microsoft.com/connectors) and search for that connector. If the connector is a premium connector, it shows below the name of the connector.
 
    ![A screenshot of a premium connector.](./media/triggers-introduction/e6ebe2c0d4ad3426355413e3b3af20a9.png)
 
@@ -87,7 +83,7 @@ To view the type of license that you have:
 - Select any flow.
 - In the **Details** section, find **Plan**. Your current license plan is listed.
 
-### Verify if trigger check is skipped 
+### Verify if trigger check is skipped
 
 You just completed an event (for example, added a new list item or sent an email, etc.) that should have triggered the flow, but the flow didn’t run.
 
@@ -97,8 +93,7 @@ Go to **My flows** in the navigation pane, and then select the flow. In the **28
 
 If you are expecting the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, the trigger condition wasn’t met for the flow to trigger. Verify the inputs and trigger conditions of the flow to see you are using the latest configuration to trigger the flow.
 
-
-### Verify inputs and trigger conditions 
+### Verify inputs and trigger conditions
 
 Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verfiy your inputs and conditions.
 
@@ -112,7 +107,7 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 
    ![A screenshot that shows settings.](./media/triggers-introduction/e5f660f5a0340aac26f67fd2df8b8440.png)
    
-1. Find **Trigger conditions**. 
+1. Find **Trigger conditions**.
 
    If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **when an item is created or modified**) indicates when the trigger fires.
    
@@ -124,7 +119,7 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 
 Verify that you have access to the folders, sites, or mailboxes that are used in the trigger. For example, to be able to send email from a shared inbox via Power Automate, you need permissions to send an email via the shared inbox. Test sending an email from that shared mailbox in Outlook.
 
-### Verify if admin mode is turned on 
+### Verify if admin mode is turned on
 
 If an environment’s admin mode is turned on, all background processes, including flows will be turned off, causing the flow to not trigger.
 
@@ -138,7 +133,7 @@ Follow these steps to disable the admin mode.
 
 If everything looks good but your flow is still not triggering, verify if your flow triggers after every step.
 
-### Try these steps:
+### Try these steps
 
 1. Test the flow manually.
 1. Remove, and then re-add the trigger.
@@ -148,13 +143,12 @@ If everything looks good but your flow is still not triggering, verify if your f
 1. Create a copy of the flow.
 1. If the trigger uses special conditions, like when an email arrives in specific folder, remove the folder, and then add it again.
 
-
 ## My trigger is firing for old events
 
 There are two types of triggers&mdash;polling triggers
 or Webhook triggers.
 
-If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed. 
+If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed.
 
 A polling trigger periodically makes a call to your service to look for new data, whereas a Webhook trigger responds to a push of new data from the service. 
 
@@ -223,7 +217,7 @@ will process each one their own data. Since the quota is per flow, this can be u
 
 2. There was a communication issue preventing Power Automate from reacting to trigger events. Potentially because of a service outage, policy change, password expiry, and so on, that caused the delay. You can [check](https://admin.powerplatform.microsoft.com/support) to find out if there are any active outages. You can also clear the cache of the browser and then retry.
 
-## Dynamics 365 connector trigger issues 
+## Dynamics 365 connector trigger issues
 
 There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows to use [Microsoft Dataverse](/connectors/commondataservice/).
 
@@ -265,9 +259,7 @@ You can try one of the following:
 1. Confirm the user has the appropriate license for the connections in the flow.
 
    A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Office 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save/modify the flow, it's possible that their license has expired.
-   
+
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
