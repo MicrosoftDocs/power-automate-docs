@@ -103,13 +103,13 @@ Start with a cloud flow that has a **Send an email** action.
    
      This step saves your changes.
 
-## See all flow editors
+## Use co-presence to see all editors
 
 Power Automate displays the list of other makers who are editing a flow simultaneously. The list of editors is updated periodically.
 
 ![List of editors](./media/multi-step-logic-flow/editors-list.png)
 
-## Resolve conflicts from multiple edits
+## Address conflicts from multiple edits
 
 If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keeps their changes.
 
