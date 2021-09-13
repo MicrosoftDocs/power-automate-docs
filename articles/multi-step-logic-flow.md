@@ -46,7 +46,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 6. Select the folder icon on the right side of the **Folder path** box.
 7. Find and then select the folder in which you want to place the new file.
    
-    ![search create file.](./media/multi-step-logic-flow/create-file-folder.png)
+    ![search create folder.](./media/multi-step-logic-flow/create-file-folder.png)
 8. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
 9. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
    
@@ -62,6 +62,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
      Within a minute, a file is created in your Dropbox account.
 
 ## Reorder or delete an action
+
 * To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
   
   > [!NOTE]
@@ -69,13 +70,12 @@ In this procedure, you'll add an action in the middle of the flow. This action w
   > 
   > 
   
-    ![Delete the menu.](./media/multi-step-logic-flow/draggingaction.png)
+    ![Dragging action in the flow](./media/multi-step-logic-flow/draggingaction.png)
 * To delete an action, select the ellipsis (...) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
   
     ![Delete the menu.](./media/multi-step-logic-flow/deletemenu.png)
   
      **Note:** You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
-
 
 ## Copy and paste actions
 
