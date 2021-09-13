@@ -53,9 +53,9 @@ In the following example, the flow displays a dialog that prompts users to selec
 
 ![Screenshot of a flow that checks the limitations for file selection.](media/logical-operations-conditional-statements/file-selection-flow.png)
 
-The first part of the expression on the left of the **OR** operator returns **True** when users press **Cancel** in the dialog. In this case, there are no selected files to process, so the flow has to stop. 
+The first part of the expression on the left of the **OR** operator returns **True** when the user presses **Cancel** in the dialog. In this case, there are no selected files to process, so the flow has to stop. 
 
-The second part of the expression returns **True** when users select **Open**, but the files are more than 100. This condition ensures that users can't select too many files and prevents the flow from running too long. 
+The second part of the expression returns **True** when the user selects **Open**, but the selected files are more than 100. This condition ensures that the user can't select too many files and prevents the flow from running too long. 
 
 If one of these conditions (or both) is valid, the flow will stop and display a dialog informing the user about the implemented limitations.
 
