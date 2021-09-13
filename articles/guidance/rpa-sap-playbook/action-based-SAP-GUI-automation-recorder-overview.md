@@ -36,7 +36,7 @@ You can also follow along in the no-code approach in episode 6 of the video seri
    ![Screenshot of SAP GUI with Desktop recorder tracking window and instruction to start recording.](media/desktop-recorder-tracking-window-start-recording.png)
 
 3. Enter **PA30** into the **Transaction** field, and then select **Enter**.
- 
+
   ![Screenshot of SAP GUI with Desktop recorder tracking window and SAP transaction code being marked for recording.](media/desktop-recorder-tracking-with-SAP-transaction-code.png)
 
 4. Enter a **Personnel number**, and then select **Enter**.

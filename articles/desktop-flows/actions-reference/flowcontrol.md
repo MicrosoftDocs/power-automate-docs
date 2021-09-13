@@ -162,7 +162,7 @@ Runs a desktop flow which can receive input variables and may produce output var
 |Run desktop flow failed|Indicates a problem while running the desktop flow|
 
 >[!NOTE]
-> * A flow's dependencies can't be more than 20 other flows.
+> * A flow's dependencies can't be more than 30 other flows.
 > * Two flows can't directly or indirectly call one-another as this causes a recursion.
 > * In org tenants, the flows must be under the same environment.
 

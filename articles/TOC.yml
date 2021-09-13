@@ -499,6 +499,10 @@
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
+    - name: Run SQL queries to Microsoft Access
+      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Run desktop flow from other desktop flows
+      href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
