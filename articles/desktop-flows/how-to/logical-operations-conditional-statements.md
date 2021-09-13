@@ -34,7 +34,7 @@ To create a nested if statement, deploy an **If** action within the block of ano
 
 Although the implementation of nested if statements is convenient in some cases, it can lead to complicated flows when many checks are needed.
 
-A more efficient way to achieve the same results is the use of logical expressions. In the following example, you can see a single **If** action that offers the same result as the previously nested **If** actions.
+A more efficient way to achieve the same results is the use of logical expressions. In the following example, a single **If** action offers the same result as the previously nested **If** actions.
 
 The expression in the **First operand** field uses the **AND** operator to check whether the variables **A** and **B** contain the values **10** and **5**, respectively.
 
@@ -47,11 +47,15 @@ The **Second operand** field is populated with the value **TRUE**, while the sel
 > [!NOTE]
 > The logical expression must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables and expressions. You can find more information regarding percentage notation in [Use variables and the % notation](../variable-manipulation.md).
 
-To handle more demanding validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations to achieve the desired functionality.
+To handle more demanding validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations and work the same way as in algebra and programming languages.
 
-In the following example, a dialog prompts users to select one or more files. The **If** action checks whether the user has pressed **Cancel** in the dialog or selected more than 100 files.
+In the following example, the flow displays a dialog that prompts users to select one or more files from their desktop. The **If** action checks whether the user has pressed **Cancel** in the dialog or selected more than 100 files.
 
 ![Screenshot of a flow that checks the limitations for file selection.](media/logical-operations-conditional-statements/file-selection-flow.png)
+
+The first part of the expression on the left of the **OR** operator returns **True** when users press **Cancel** in the dialog. In this case, there are no selected files to process, so the flow has to stop. 
+
+The second part of the expression returns **True** when users select **Open**, but the files are more than 100. This condition ensures that users can't select too many files and prevents the flow from running too long. 
 
 If one of these conditions (or both) is valid, the flow will stop and display a dialog informing the user about the implemented limitations.
 
