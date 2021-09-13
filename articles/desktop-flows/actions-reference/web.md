@@ -119,7 +119,8 @@ Invokes a method from a SOAP web service
 |Password|No|Encrypted value||The password for the web server
 
 ##### <a name="invokesoapserviceaction_builder"></a> Request builder
-
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
 |WSDL|No|File||The Web Services Decription Language (WSDL) document to build the request with
 |Service|No|Text value||The service to invoke
 |Port|No|Text value||The port to invoke the service
