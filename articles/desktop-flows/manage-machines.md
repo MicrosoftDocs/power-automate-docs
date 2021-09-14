@@ -36,28 +36,26 @@ Your machine will be automatically registered on the currently selected environm
 
 1. [Install the latest version](install.md) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
 
-1. When the installation has completed, select **Launch Power Automate Desktop**. 
+1. Make sure you have checked **Install the machine-runtime app to connect to the Power Automate cloud portal**
+ ![Accept terms.](./media/register-machines/acceptterms.png)
 
-1. Sign into Power Automate Desktop. 
+1. When the installation completes, launch the **Power Automate machine-runtime app**
+ ![Run application.](./media/register-machines/runapp.png)
 
-1. In Power Automate Desktop, select **Settings**. 
+1.	Sign into Power Automate machine runtime. Your machine should be automatically registered in the currently selected environment 
 
-1. Select **Machine (preview)**. 
-        ![The Machine tab in Settings.](./media/register-machines/machine-settings.png)
+1.	If the machine hasn't been registered yet, a message will prompt you to select a Machine running environment. Power Automate will use this environment to run all the triggered desktop flows.
 
-1. If the machine hasn't been registered yet, a message will prompt you to select a **Machine running environment**. Power Automate will use this environment to run all the triggered desktop flows.
+ ![The Machine isnt registered.](./media/register-machines/machine-not-registered.png)
 
-    ![A message that prompts user to register the machine.](./media/register-machines/register-machine.png)
+When the connection is established successfully, the machine settings section will display the following fields regarding the machine:
+- **Machine name:** A unique name to identify the machine.
+- **Machine description:** An optional description of the machine.
+- **Machine running environment:** The running environment of the machine.
 
-1. When the connection is established successfully, the pane will display the following fields regarding the machine:
-    - **Machine name:** A unique name to identify the machine.
-    - **Machine description:** An optional description of the machine.
-    - **Machine running environment:** The running environment of the machine.
-    - **Machine group:** Through this option, you can add the machine to a machine group. You can find information about machine groups in [Manage machine groups](manage-machine-groups.md)
+ ![The Machine](./media/register-machines/registered-machine.png)
 
-    ![The details of a machine.](./media/register-machines/machine-details.png)
 
-1. To save or discard any performed changes, select the **Save** or **Cancel** button, respectively.
 
  
 > [!NOTE]
@@ -70,13 +68,11 @@ Your machine can only run desktop flows from the cloud in one environment at a t
 
 You can update the running environment which your machine can run desktop flows at any time from within Power Automate Desktop. 
 
-1. In Power Automate Desktop, select **Settings**. 
+1. In the machine-runtime app, select **Machine settings**. 
 
-1. Select **Machine (preview)**. 
+1. Under **Machine running environment**, select an environment in the dropdown list. 
 
-1. Under **Machine running environment**, select an environment in the dropdown list. 
-
-1. Click **Save**. 
+1. Click **Save**. 
 
 
 > [!NOTE]

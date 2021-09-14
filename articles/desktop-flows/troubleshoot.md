@@ -25,10 +25,10 @@ search.audienceType:
 
 # Troubleshooting Power Automate Desktop
 
-To open the troubleshoot tool:
-1. Open the Power Automate Desktop console
-1. Select Help
-1. Select Troubleshoot (Preview)
+To open the troubleshoot tool: 
+1. Open **Power Automate machine runtime**
+1. Select **Troubleshoot**
+1. Select **Launch Troubleshoot tool**  
 
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate Desktop  
@@ -46,7 +46,7 @@ If you have installed Power Automate Desktop in another drive, replace **C** wit
 
 After deleting the **msalcache.bin3** file, restart the Power Automate Desktop service and sing in to your account.
 
-![Screenshot of the msalcache.bin3 file in the file explorer.](\media\troubleshoot\msal-file.png)
+![Screenshot of the msalcache.bin3 file in the file explorer.](media/troubleshoot/msal-file.png)
 
 ## Resolve failed connection between Power Automate Desktop components
 
@@ -92,12 +92,12 @@ Most environments wouldn't require to change the default configuration. If your 
 1. Provide the new account. Ex: DOMAIN\AlexJohnson  
 1. Provide the password of this account and select Configure
  
-![Screenshot of the Power Automate Desktop troubleshoot dialog.](\media\troubleshoot\image001.png)
+![Screenshot of the Power Automate Desktop troubleshoot dialog.](media/troubleshoot/image001.png)
 
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 
 In the Troubleshoot tool, select Exports logs link, as shown in the following image.
 
-![Screenshot of the Machine logs.](\media\troubleshoot\image003.png)
+![Screenshot of the Machine logs.](media/troubleshoot/image003.png)
 
 This file is saved to the desktop as a zip file.
