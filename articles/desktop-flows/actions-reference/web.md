@@ -119,7 +119,7 @@ Invokes a method from a SOAP web service
 |User name|No|Text value||The user name for the web server
 |Password|No|Encrypted value||The password for the web server
 
-##### <a name="invokesoapserviceaction_builder"></a> Request builder
+##### <a name="invokesoapserviceaction_builder"></a> Request Builder Parameters
 |Argument|Accepts|Description|
 |-----|-----|-----|
 |WSDL|File|The Web Services Decription Language (WSDL) document to build the request with
