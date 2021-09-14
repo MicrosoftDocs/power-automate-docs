@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 09/10/2021
 ms.author: napienko
 search.app: 
   - Flow
@@ -61,7 +61,7 @@ After adding the Microsoft Forms trigger and action, the third step is to add th
    > [!div class="mx-imgBorder"]
    > ![Start and wait for approval flow screen.](..\media\forms\flow-start-and-wait-for-approval.png "Screen showing the completed flow to start and wait for an approval")
 
-You can view more examples with approvals in the [documentation](/sequential-modern-approvals.md).
+You can view more examples with approvals in the [documentation](../sequential-modern-approvals.md).
 
 ## Upload Microsoft Forms responses to Excel
 
@@ -73,7 +73,7 @@ Create a new Excel Online sheet and add a table to the sheet. Learn more about t
    > [!div class="mx-imgBorder"]
    > ![Excel flow screen.](..\media\forms\excel-flow.png "Screen showing the completed Excel flow")
 
-You can also add an approval to approve a response before it enters the Excel sheet. The [Approve a Microsoft Forms response to add a row to an Excel spreadsheet](https://preview.flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/) template can help you do this!
+You can also add an approval to approve a response before it enters the Excel sheet. The [Approve a Microsoft Forms response to add a row to an Excel spreadsheet](https://flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/) template can help you do this!
 
 ## Get an attachment from a form and send it in an email message
 

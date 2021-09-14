@@ -126,7 +126,9 @@ Once the recording has completed, you can view the recorded actions in the recor
 - The actions recorded can be granular. Group them into activities. These will be the building blocks for the process map that is created through analysis.
 - Remove any sensitive information from the recording. For more information, go to [Protect your data in process advisor](process-advisor-protect.md).
 
-Here's a short video on how to prepare a recording for analysis using process advisor: [Video: Prepare a recording for analysis](https://go.microsoft.com/fwlink/?linkid=2147425)
+Here's a short video on how to prepare a recording for analysis using process advisor: 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKx7r]
 
 ### Grouping actions into activities
 

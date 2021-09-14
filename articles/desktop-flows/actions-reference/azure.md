@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
+ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -41,6 +41,29 @@ Connect to Azure Cloud and automate the management of resources like virtual mac
 |[Create session](#createsessionaction)|
 |[Get subscriptions](#getsubscriptions)|
 |[End session](#endsession)|
+
+## Getting started with Azure actions
+
+> [!IMPORTANT]
+> To deploy Azure actions in your desktop flows, you need an active Azure subscription.
+
+Power Automate Desktop allows you to manage Azure virtual machines through the Azure group of actions.
+
+To implement Azure functionality in your desktop flows, create a new Azure session using the **Create session** action.
+
+This action requires you to populate the **Client ID** that works as an authentication key for the specific application and the respective password. Additionally, populate the **Tenant ID** that is the Azure Active Directory in which you've created the application.
+
+Lastly, choose the environment you want to use for authentication and populate the **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to  Azure services.
+
+Apart from manual configuration, you can select **With file** in **Authentication type** and use a file containing all the required information.
+
+![Screenshot of the Create session action](media/azure/create-session-action.png)
+
+After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session. 
+
+![Screenshot of the End session action](media/azure/end-session-action.png)
+
+## Azure actions
 
 ## Resource groups
 Connect to Azure Cloud and manage resource groups

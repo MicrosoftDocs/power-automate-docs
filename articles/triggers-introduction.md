@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/17/2020
+ms.date: 09/10/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -27,7 +27,7 @@ search.audienceType:
 
 ## What is a trigger?
 
-A **trigger** is the event that starts a cloud flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
+A **trigger** is the event that starts a cloud flow. For example, if you want to get a notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
 
 Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
@@ -85,7 +85,7 @@ You need a standalone [Power Apps license](https://powerapps.microsoft.com/prici
 
 To find your license:
 
-1. Go to [flow.microsoft.com](https://preview.flow.microsoft.com/)
+1. Go to [flow.microsoft.com](https://flow.microsoft.com/)
 
 1. Select **My flows**.
 

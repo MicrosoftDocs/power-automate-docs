@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
+ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -38,6 +38,29 @@ Connect to Amazon web services and automate a variety of tasks
 |[Delete volume](#deletevolume)|
 |[Create EC2 session](#createec2sessionaction)|
 |[End EC2 session](#endec2session)|
+
+## Getting started with AWS actions
+
+> [!IMPORTANT]
+> To deploy AWS actions in your desktop flows, you need an active AWS subscription.
+
+Power Automate Desktop enables users to handle EC2 instances, volumes, and snapshots through the AWS group of actions.
+
+Before deploying any AWS action, create a new EC2 session using the **Create EC2 session** action.
+
+To use a credentials file for authentication, disable **Access keys** and populate **Profile name** and **Profile location**. If you don't want to reference a profile name explicitly, choose **default** in the **Profile name** field to use the default profile. 
+
+![Screenshot of the Create session action with the Access keys option disabled.](media/aws/create-ec2-session-action-credentials-file.png)
+
+Alternatively, enable **Access keys** and populate the access key ID, the secret access key, and the region constraint specifying the endpoint. 
+
+![Screenshot of the Create session action with the Access keys option enabled.](media/aws/create-ec2-session-action-credential.png)
+
+After creating the session and deploying all the needed AWS actions, use the **End EC2 session** action to terminate the EC2 session. 
+
+![Screenshot of the End EC2 session action.](media/aws/end-ec2-session-action.png)
+
+## AWS actions
 
 ## EC2
 Connect to Amazon EC2 and manage instances, EBS volumes and EBS snapshots
