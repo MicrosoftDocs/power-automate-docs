@@ -7,7 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
-ms.date: 06/25/2021
+ms.date: 09/14/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -42,6 +42,18 @@ by Stephanie Whitaker, Nicolas Pouhaer, and Yiannis Mavridis<br/>
 **Improve workflow efficiency with Process Advisor in Power Automate**  
 by Mrigankka Fotedar and Glendyll Fabe<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-Workflow-Process-advisor-PowerAutomate.html?LCID=EN-US)
+
+**Automation 101 with Power Automate**  
+by Amina Bouabdallah, Priya Kodukula, and Jonathan Kendall<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-automation101powerautomate.html?LCID=EN-US)
+
+**Automate Document Processing with AI Builder**  
+by Gwenael Bego and Joe Fernandez<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-documentprocessingaibuilder.html?LCID=EN-US)
+
+**T-Mobile Developer Demos RPA with Power Automate**  
+by Brian Hodel and Pranav Rastogi<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-tmobiledevrpapowerautomate.html?LCID=EN-US)
 
 ### See also
 
