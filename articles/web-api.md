@@ -82,7 +82,7 @@ As shown above, you can get the list of workflows by calling `GET` on `workflows
 
 | Property name     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | The category of the flow. The different types are: 0 - classic Dataverse workflows,  1 - classic Dataverse dialogs, 2 - business rules, 3 - classic Dataverse actions, 4- business process flows and 5 - automated, instant or scheduled flows. |
+| category          | The category of the flow. The different types are: 0 - classic Dataverse workflows,  1 - classic Dataverse dialogs, 2 - business rules, 3 - classic Dataverse actions, 4 - business process flows, 5 - automated, instant or scheduled flows and 6 - desktop flows. |
 | statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
 | workflowidunique  | The unique identifier for this installation of the flow. |
 | workflowid        | The unique identifier for a cloud flow across all imports. |
