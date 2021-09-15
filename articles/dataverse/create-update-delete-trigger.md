@@ -104,7 +104,7 @@ and [query functions](/powerapps/developer/common-data-service/webapi/query-data
 
    ![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
 
-### Wait condition using Delay until
+### Wait condition using delay until
 
 Use an OData-style time stamp in the **Delay until** property to delay the flow trigger until a specific UTC time.
 
