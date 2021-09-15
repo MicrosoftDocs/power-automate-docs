@@ -47,7 +47,7 @@ You can also create a machine group directly from Power Automate:
 
 You will need at least one machine in your group to run desktop flows. 
 
-1.	In the Power Automate machine runtime, select **Machine groups**
+1.	In the Power Automate machine runtime, select **Machine group**
 1.	In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
 
     ![Add to machine group](./media/manage-machine-groups/add-machine-group.png)
@@ -58,6 +58,9 @@ You will need at least one machine in your group to run desktop flows.
 1.	Select **Add machine**.
 
 When you add your machine to a group, any connections currently targeting your machine will break. You will need to update those connections to target the machine group.
+
+>[!IMPORTANT]
+>In order to register your machine, you need to have an Organization premium account.
 
 ## Trigger a desktop flow to run on your machine group 
 
@@ -175,11 +178,11 @@ If you want to remove the machine from a group without adding it to a new one, s
 
 ## Change machine group's password
 
-To change the password of the currently used machine group, select the **dots icon** next to the machine group and pick **Edit group password**.
-
-![The Edit group password option.](./media/manage-machine-groups/edit-machine-group-password.png)
+To change the password of the currently used machine group, click on the ellipses next to the machine group and select **Edit group password**.
 
 Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
+
+
 
 ![The fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
 

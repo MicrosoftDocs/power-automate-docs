@@ -31,7 +31,7 @@ To open the troubleshoot tool:
 1. Select **Launch Troubleshoot tool**  
 
 >[!NOTE]
->You need to have admin privileges to open the troubleshoot tool from Power Automate Desktop  
+>You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
 
 ## Resolve sign in and sign out issues
 

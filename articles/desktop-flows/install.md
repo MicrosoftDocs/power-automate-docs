@@ -45,7 +45,7 @@ The installer allows you to install two different apps on your device:
 
 - Power Automate machine runtime app allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). Learn more about [machine management](https://docs.microsoft.com/power-automate/desktop-flows/manage-machines). 
 
-By default, both are installed on the  
+By default, both are installed on your device.  
 
 >[!IMPORTANT]
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
@@ -53,9 +53,13 @@ By default, both are installed on the
 
 ![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
 
+>[!IMPORTANT]
+>In order to register your machine, you need to have an Organization premium account.
+
 >[!NOTE]
 >Power Automate Desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate Desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
 
+<!--- TO BE ADDED AFTER Oct 5th---
 ## Install Power Automate desktop app from the Microsoft Store 
 
 There are a few ways to access the most recent version of Power Automate Desktop from the Microsoft Store. 
@@ -67,6 +71,7 @@ There are a few ways to access the most recent version of Power Automate Desktop
     - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/), and then select Download Free. 
 
 1. After you've landed on the Power Automate page of the Microsoft Store, select Install. 
+-->
 
 ### Set data collection options
 
