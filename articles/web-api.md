@@ -3,7 +3,7 @@ title: Flows are now stored in Dataverse and use the rich Web API
 description: Flows are now stored in Dataverse and use the rich Web API.
 author: msftman
 ms.reviewer: deonhe
-ms.date: 07/28/2020
+ms.date: 09/09/2021
 ms.subservice: cloud-flow
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,6 @@ audience: Power user
 
 # Power Automate Web API
 
-
 Going forward, all flows will be stored in Dataverse and leverage [the rich Web API](/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 This content covers the management of flows included on the **Solutions** tab in Power Automate. Currently, flows under **My Flows** are not supported by these APIs.
@@ -24,20 +23,20 @@ This content covers the management of flows included on the **Solutions** tab in
 
 To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Power Automate Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-- The **Organization ID** is a unique name for the environment that stores your flows. 
+- The **Organization ID** is a unique name for the environment that stores your flows.
 
 - The **Regional Subdomain** depends on the location of your environment.
 
 To get these two parameters.
+
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select the environment you use to build your flows.
+1. Select the environment you use to build your flows.
 
- ![Flow URL.](media/web-api/power-platform-admin-center.png "Flow URL")
+ ![Environment for your flows.](media/web-api/power-platform-admin-center.png "Environment for your flows")
 
-3. Copy the organization id and region subdomain from the environment URL.
+1. Copy the organization id and region subdomain from the environment URL.
 
- ![Flow URL.](media/web-api/power-platform-admin-center-environment-URL.png "Flow URL")
-
+ ![Organization id and region.](media/web-api/power-platform-admin-center-environment-URL.png "Organization id and region.")
 
 You can also programmatically get the list of instances that are available to you via the [Get Instances](/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.
 
@@ -78,11 +77,11 @@ The response contains the list of flows from within that environment:
 
 ## List flows
 
-As shown above, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are:
+As shown earlier, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are:
 
 | Property name     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | The category of the flow. The different types are: 0 - classic Dataverse workflows,  1 - classic Dataverse dialogs, 2 - business rules, 3 - classic Dataverse actions, 4 - business process flows, 5 - automated, instant or scheduled flows and 6 - desktop flows. |
+| category          | The category of the flow. Here are the different categories. <br>0 - Classic Dataverse workflows.<br>1 - Classic Dataverse dialogs. <br>2 - Business rules. <br>3 - Classic Dataverse actions. <br>4 - Business process flows. <br>5 - Automated, instant or scheduled flows.<br>6 - Desktop flows. |
 | statecode         | The status of the flow. The status can be **0** - off or **1** - on.|
 | workflowidunique  | The unique identifier for this installation of the flow. |
 | workflowid        | The unique identifier for a cloud flow across all imports. |
@@ -192,7 +191,7 @@ Accept: application/json
 Authorization: Bearer ey...
 ```
 
-The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the above example. It returns:
+The `Target` parameter is a JSON-like string with a single property called `@odata.id`. Replace the workflow ID in the previous example. It returns:
 
 ```http
 {
