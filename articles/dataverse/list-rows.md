@@ -86,7 +86,7 @@ Enter a comma-separated list of columns to return, such as "name,createdon,prefe
 Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021.
 
 >[!TIP]
->Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-query-functions)
+>Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
 to construct **Filter Query** expressions.
 
 >[!IMPORTANT]
@@ -142,7 +142,7 @@ Example FetchXML query for the Account table:
 
 ### Skip token
 
-Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of tables returned](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#limits-on-number-of-tables-returned).
+Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows (entities) returned](/powerapps/developer/common-data-service/webapi/query-data-web-apilimits-on-number-of-table-rows-entities-returned).
 
 The default page limit of 5,000 rows applies if you do not use pagination.
 
