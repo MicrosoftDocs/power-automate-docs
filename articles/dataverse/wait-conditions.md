@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2021
+ms.date: 09/15/2021
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -24,15 +24,15 @@ search.audienceType:
 
 # Use wait conditions to delay flows
 
-The Microsoft Dataverse connector provides four ways to add wait conditions. Use these wait conditions when you need to delay processing in your flows until a particular condition is met.<!-- Edit note: Using bullets since just listing similar items. -->
+The Microsoft Dataverse connector provides four ways to add wait conditions. Use these wait conditions when you need to delay processing in your flows until a particular condition is met.
 
 - Postpone triggering the flow and the first action until a specific time. To learn more, go to
-    [Wait condition using Postpone Until](./create-update-delete-trigger.md#wait-condition-using-postpone-until).
+    [Wait condition using Postpone Until](./create-update-delete-trigger.md#wait-condition-using-delay-until).
 
-- Add a [fixed delay](https://docs.microsoft.com/power-automate/ui-flows/edit-desktop#add-a-delay)
+- Add a [fixed delay](/power-automate/ui-flows/edit-desktop#add-a-delay)
     before the next step.
 
-- [Delay an action](https://docs.microsoft.com/power-automate/ui-flows/edit-desktop#add-a-delay)
+- [Delay an action](/power-automate/ui-flows/edit-desktop#add-a-delay)
     until a specific timestamp.
 
     ![Delay actions.](../media/wait-conditions/dff6f3bc845cae8be3c69632d6857767.png "Delay actions")
