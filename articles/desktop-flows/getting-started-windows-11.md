@@ -22,7 +22,9 @@ Windows 11 comes with the Power Automate desktop app, a low-code application tha
 
 Any Windows user can build flows without the need for coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 
-The Power Automate desktop app can automate tasks on Windows and any Microsoft or third-party application. Users can build flows that handle virtually any desktop task, such as populating forms, extracting data from desktop and web applications, interacting with Excel worksheets, and sending emails.
+The Power Automate desktop app can automate tasks on Windows and any Microsoft or third-party application. Users can build flows that handle virtually any desktop task, such as populating forms, extracting data from desktop and web applications, interacting with Excel worksheets, handling files, and sending emails.
+
+![Screenshot of the open backup flow in the flow designer.](media\getting-started-windows-11\backup-flow.png)
 
 A typical scenario that many users confront is the creation of large-scale reporting. With Power Automate, they can automate the consolidation of data across multiple sources, such as databases, webpages, Excel files, and PDF files,  and autogenerate reports. 
 
