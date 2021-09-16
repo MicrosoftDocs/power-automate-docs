@@ -21,7 +21,7 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate Desktop has been renamed to Power Automate desktop app. To find more information about the renaming, please visit the respective blog post. 
 
-Windows 11 provides RPA integration through the preinstalled Power Automate desktop app. Power Automate desktop app is a low-code application that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
+Windows 11 provides RPA integration through the preinstalled Power Automate desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
 Any Windows user can build flows without the need for coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 
