@@ -21,7 +21,7 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate Desktop has been renamed to Power Automate desktop app. To find more information about the renaming, please visit the respective blog post. 
 
-Windows 11 comes preinstalled with the Power Automate desktop app, a low-code application that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
+Windows 11 provides RPA integration through the preinstalled Power Automate desktop app. Power Automate desktop app is a low-code application that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
 Any Windows user can build flows without the need for coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 
@@ -30,7 +30,7 @@ Using the available actions, you can automate virtually any Microsoft and third-
 For example, you can extract prices from shopping websites, compare
 them, and store them to Excel spreadsheets by deploying some easy-to-configure actions. 
 
-Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can fully be automated with Power Automate.
+Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with Power Automate.
 
 ![Screenshot of the open backup flow in the flow designer.](media\getting-started-windows-11\backup-flow.png)
 
