@@ -21,9 +21,9 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate Desktop has been renamed to Power Automate desktop app. To find more information about the renaming, please visit the respective blog post. 
 
-Windows 11 provides RPA integration through the preinstalled Power Automate desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
+Windows 11 allow users to create automations through the preinstalled Power Automate desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
-Any Windows user can build flows without the need for coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
+Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 
 Using the available actions, you can automate virtually any Microsoft and third-party application on Windows and exchange data between different applications and web pages.
 
@@ -36,6 +36,6 @@ Using Power Automate, you can populate any form and reduce the time needed to en
 
 Apart from the pre-made actions, the Power Automate desktop app enables you to record your mouse and keyboard activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
 
-To start your journey with the Power Automate desktop app, follow our [getting started guide](getting-started-msa.md). Users with a work/school or organization premium account can follow the respective getting started guides [here](getting-started-freeorg.md) and [here](getting-started-org.md).
+To start your journey with the Power Automate desktop app, follow our [getting started guide](getting-started-msa.md). More technical starting guides are available for users with a [work or school account](getting-started-freeorg.md) and [organization premium account](getting-started-org.md).
 
 
