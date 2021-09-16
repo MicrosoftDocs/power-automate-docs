@@ -26,7 +26,7 @@ The Power Automate desktop app can automate tasks on Windows and any Microsoft o
 
 ![Screenshot of the open backup flow in the flow designer.](media\getting-started-windows-11\backup-flow.png)
 
-A typical scenario that many users confront is the creation of large-scale reporting. With Power Automate, they can automate the consolidation of data across multiple sources, such as databases, webpages, Excel files, and PDF files,  and autogenerate reports. 
+A typical scenario that many users confront is the creation of large-scale reporting. With Power Automate, they can automate the consolidation of data across multiple sources - such as databases, webpages, Excel files, and PDF files - and autogenerate reports. 
 
 Apart from the pre-made actions and the recorder, the Power Automate desktop app provides an extensive exception handling functionality to ensure that the flows are robust and reliable in every scenario.
 
