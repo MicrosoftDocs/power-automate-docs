@@ -16,10 +16,10 @@ search.audienceType:
   - enduser
 ---
 
+# Getting started with Power Automate in Windows 11
+
 > [!IMPORTANT]
 > Power Automate Desktop has been renamed to Power Automate desktop app. To find more information about the renaming, please visit the respective blog post. 
-
-# Getting started with Power Automate in Windows 11
 
 Windows 11 comes with the Power Automate desktop app, a low-code application that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
