@@ -36,7 +36,6 @@ Using Power Automate, you can populate any form and reduce the time needed to en
 
 Apart from the pre-made actions, the Power Automate desktop app enables you to record your mouse and keyboard activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
 
-To start your journey with the Power Automate desktop app, follow our getting started guide. Users with a work/school or organization premium account can follow the respective getting started guides here and here.
-
+To start your journey with the Power Automate desktop app, follow our [getting started guide](getting-started-msa.md). Users with a work/school or organization premium account can follow the respective getting started guides [here](getting-started-freeorg.md) and [here](getting-started-org.md).
 
 
