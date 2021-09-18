@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/24/2021
+ms.date: 09/16/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -55,8 +55,8 @@ There are four approval types you can use:
 |-------------------------------------------|-----------------------------------------------|
 | Approve/Reject - Everyone must approve    | All approvers are given two options: **Approve** or **Reject**. <br> A response is needed from *each* approver before the flow run is completed. The actions that follow the **Start and wait for an approval** action run after *all* the approvers respond, or when a single rejection occurs.   |
 | Approve/Reject - First to respond         | Assigned approvers are given two options: **Approve** or **Reject**. <br> Approval or rejection by any approver completes the request. The actions that follow the **Start and wait for an approval** action run after any one of the approvers gives approval. |
-| Custom Responses - Wait for all responses | You define the options the assigned approvers can choose from. <br>All approvers must respond to complete the process. | 
-| Custom Responses - Wait for one response  | You define the options the assigned approvers can choose from. <br> A response from any approver completes the process.| 
+| Custom Responses - Wait for all responses | You define the options the assigned approvers can choose from. <br>All approvers must respond to complete the process. |
+| Custom Responses - Wait for one response  | You define the options the assigned approvers can choose from. <br> A response from any approver completes the process.|
 
 ## Prerequisites
 
@@ -64,7 +64,6 @@ If it's the first time you're using approvals in your organization, ensure that 
 
 - [A Microsoft Dataverse database](#permissions-to-create-a-dataverse-database).
 - [A valid license to create flows](#license-to-create-flows).
-
 
 ## Permissions to create a Dataverse database
 
@@ -80,7 +79,6 @@ It can take a few minutes for the database provisioning to be completed, and you
 Because the approvals connector is a standard connector, any license that grants access to Power Automate and the ability to use standard connectors is sufficient to create approval flows.
 
 This might be a Power Automate, Office 365, or Dynamics 365 license with built-in Power Automate capabilities. You can find a list of the Office 365 and Dynamics 365 licenses in the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
 
 ## Get started
 
@@ -99,12 +97,11 @@ Use one of the following options to get started creating approval flows.
 
 - Consult the community for inspiration and help&mdash;Power Automate has a thriving community that can help if you're stuck or looking for some inspiration. Just head over to the [Power Automate forums](https://powerusers.microsoft.com/t5/Building-Flows/bd-p/BuildingFlows) to ask specific questions and get answers.
 
-
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant. 
+You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant.
 
-When you assign an approval to users who aren't in your environment, they're automatically added so that we can process their responses and persist them for approvals history. 
+When you assign an approval to users who aren't in your environment, they're automatically given the *Approvals User* Dataverse security role. Users need this role for their responses to be processed and persisted in their approvals history.
 
 The following tenant configurations don't allow this:
 
