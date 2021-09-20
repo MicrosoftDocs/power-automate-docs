@@ -64,6 +64,9 @@ Your machine will be automatically registered on the currently selected environm
 > Users will need either an Environment Maker or Desktop Flow Machine Owner role to register machines. Before registering a machine, make sure that you have the required
 permissions, and there is an available environment to register the new machine.
 
+> [!IMPORTANT]
+> To successfully register a machine, make sure that the services specified in [IP address configuration](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) are accessible.
+
 ## Update running environment for your machine 
 
 Your machine can only run desktop flows from the cloud in one environment at a time. 
