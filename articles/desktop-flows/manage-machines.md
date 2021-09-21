@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/21/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -43,11 +43,11 @@ Your machine will be automatically registered on the currently selected environm
 1. In Power Automate Desktop, select **Settings**. 
 
 1. Select **Machine (preview)**. 
-        ![The Machine tab in Settings.](./media/register-machines/machine-settings.png)
+        ![Screenshot of the Machine tab in Settings.](./media/register-machines/machine-settings.png)
 
 1. If the machine hasn't been registered yet, a message will prompt you to select a **Machine running environment**. Power Automate will use this environment to run all the triggered desktop flows.
 
-    ![A message that prompts user to register the machine.](./media/register-machines/register-machine.png)
+    ![Screenshot of a message that prompts user to register the machine.](./media/register-machines/register-machine.png)
 
 1. When the connection is established successfully, the pane will display the following fields regarding the machine:
     - **Machine name:** A unique name to identify the machine.
@@ -55,7 +55,7 @@ Your machine will be automatically registered on the currently selected environm
     - **Machine running environment:** The running environment of the machine.
     - **Machine group:** Through this option, you can add the machine to a machine group. You can find information about machine groups in [Manage machine groups](manage-machine-groups.md)
 
-    ![The details of a machine.](./media/register-machines/machine-details.png)
+    ![Screenshot of the details of a machine.](./media/register-machines/machine-details.png)
 
 1. To save or discard any performed changes, select the **Save** or **Cancel** button, respectively.
 
@@ -100,7 +100,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
-   ![Permissions based on security role.](./media/register-machines/connect-directly-to-machine.png)
+   ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/register-machines/connect-directly-to-machine.png)
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -151,7 +151,7 @@ You can share a machine with other users in your organization, giving those user
 
 1. Click **Save**. 
 
-  ![Permissions based on security role.](./media/register-machines/share-machine.png)
+  ![Screenshot of the Manage access dialog.](./media/register-machines/share-machine.png)
 
 There are two levels of permissions that you can use when managing access to your machine: 
 
@@ -191,7 +191,7 @@ You can also change the connections that are used by cloud flow in its details p
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
 
-  ![Permissions based on security role.](./media/register-machines/permissions-roles.png)
+  ![Screenshot of the permissions based on security role.](./media/register-machines/permissions-roles.png)
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management. 
 
