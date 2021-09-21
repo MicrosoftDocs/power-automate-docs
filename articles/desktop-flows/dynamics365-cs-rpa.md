@@ -117,17 +117,17 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Build a cloud flow 1](./media/dynamics365-cs-rpa/07e8395e96421fad5c15c3634fe5ec6b.png)
 
-    ![](./media/dynamics365-cs-rpa/869698e49b4dbbe35e2e9f568ac454f4.png)
+    ![Build a cloud flow 2](./media/dynamics365-cs-rpa/869698e49b4dbbe35e2e9f568ac454f4.png)
 
 1. Add a desktop flow connector.
 
-    ![Build a cloud flow 2](./media/dynamics365-cs-rpa/cd51a32dc52d3ef5751d570d762ba8ce.png)
+    ![Build a cloud flow 3](./media/dynamics365-cs-rpa/cd51a32dc52d3ef5751d570d762ba8ce.png)
 
 1. Select [**Directly to machine (preview)**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
 
 1. Select the machine onto which you installed Power Automate Desktop, and then enter the machine login credentials (the username and password that you used to log into this machine). 
 
-    ![Build a cloud flow 3](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
+    ![Build a cloud flow 4](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
 
 ## Install and configure Contoso CRM app
 
