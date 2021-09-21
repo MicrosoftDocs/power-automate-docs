@@ -41,9 +41,9 @@ Follow these steps to install the Power Automate Desktop app:
 
 The installer allows you to install two different apps on your device: 
 
-- Power Automate Desktop is the app to build your desktop flows. With it you can create, edit and run your automations. Learn more about the [desktop flows designer](https://docs.microsoft.com/power-automate/desktop-flows/flow-designer). 
+- Power Automate Desktop is the app to build your desktop flows. With it you can create, edit and run your automations. Learn more about the [desktop flows designer](./flow-designer.md). 
 
-- Power Automate machine runtime app allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). Learn more about [machine management](https://docs.microsoft.com/power-automate/desktop-flows/manage-machines). 
+- Power Automate machine runtime app allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). Learn more about [machine management](./manage-machines). 
 
 By default, both are installed on your device.  
 

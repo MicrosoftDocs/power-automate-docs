@@ -4,18 +4,18 @@ description: Use RPA with Dynamics 365 Customer Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: amina196
+author: msftman
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-automate
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2021
-ms.author: aminab
+ms.author: DeonHe
 search.app: 
   - Flow
 search.audienceType: 
@@ -77,7 +77,7 @@ Use these recommended security roles.
    1. Select **Start free trial now**.
 
 
-   To add a trial license for *Power Automate unattended add-on** to run processes in unattended mode, you must ask a tenant admin to get an *RPA unattended add-on* and assign it to your environment [Power Automate sign-up Q&A in your organization](https://docs.microsoft.com/power-automate/organization-q-and-a).
+   To add a trial license for *Power Automate unattended add-on** to run processes in unattended mode, you must ask a tenant admin to get an *RPA unattended add-on* and assign it to your environment [Power Automate sign-up Q&A in your organization](../organization-q-and-a.md).
 
 1. Get a trial license for the Dynamics 365 Customer Service app.
 
