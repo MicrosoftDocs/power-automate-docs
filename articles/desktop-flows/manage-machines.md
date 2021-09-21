@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/21/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -96,7 +96,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
-   ![Permissions based on security role.](./media/register-machines/connect-directly-to-machine.png)
+   ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/register-machines/connect-directly-to-machine.png)
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -147,7 +147,7 @@ You can share a machine with other users in your organization, giving those user
 
 1. Click **Save**. 
 
-  ![Permissions based on security role.](./media/register-machines/share-machine.png)
+  ![Screenshot of the Manage access dialog.](./media/register-machines/share-machine.png)
 
 There are two levels of permissions that you can use when managing access to your machine: 
 
@@ -187,7 +187,7 @@ You can also change the connections that are used by cloud flow in its details p
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
 
-  ![Permissions based on security role.](./media/register-machines/permissions-roles.png)
+  ![Screenshot of the permissions based on security role.](./media/register-machines/permissions-roles.png)
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management. 
 
