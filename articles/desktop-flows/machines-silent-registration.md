@@ -101,7 +101,7 @@ Machine registration arguments:
         .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
         ```
 >[!NOTE]
->If you decide to use AAD account, you can specify the username: -username <UPN> instead of service principal account arguments
+>If you decide to use AAD account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Join silently a machine group
 
@@ -129,9 +129,9 @@ You have two options to provide a secure input:
   
     a. redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
-
+    ```
         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-
+    ```
   
     b. redirect file: 
   

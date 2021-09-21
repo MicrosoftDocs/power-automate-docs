@@ -195,7 +195,7 @@ Perform the following steps to benefit from multiple desktop flows on a single d
 1. Setup a Windows Server 2016 or 2019 device with the on-premises gateway and the latest version of desktop flows installed.
 1. Use two or more user accounts to create desktop flows connections targeting the gateway on this device. 
 
-Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-desktop-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
+Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the additional runs  *wait* as [described here](./run-pad-flow.md#run-multiple-ui-flows-on-the-same-device-sequentially).
 
 >[!IMPORTANT]
 If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](/windows-server/remote/remote-desktop-services/rds-client-access-license).
