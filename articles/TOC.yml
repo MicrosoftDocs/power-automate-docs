@@ -340,7 +340,7 @@
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate Desktop
       href: ./desktop-flows/troubleshoot.md
-    - name: Diagnostic data
+    - name: Data Collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
   - name: Power Automate Desktop architecture
     href: ./desktop-flows/pad-architecture.md

@@ -1,6 +1,6 @@
 ---
-title: Diagnostic data | Microsoft Docs
-description: Diagnostic data
+title: Data Collection in Power Automate | Microsoft Docs
+description: Data Collection in Power Automate
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Diagnostic data
+# Data Collection in Power Automate
 
 ## Overview of Diagnostic Data in Power Automate
 
