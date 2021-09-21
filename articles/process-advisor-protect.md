@@ -17,7 +17,7 @@ search.audienceType:
 
 # Protect your data in process advisor
 
-You can use Power Automate Desktop features to remove screenshots and text entries stored during the recording session if they contain sensitive data. You can also remove any confidential information in the text or images from your recordings when preparing them.
+You can use Power Automate features to remove screenshots and text entries stored during the recording session if they contain sensitive data. You can also remove any confidential information in the text or images from your recordings when preparing them.
 
 ## Delete screenshots
 

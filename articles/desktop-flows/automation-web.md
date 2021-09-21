@@ -36,7 +36,7 @@ To begin a web automation flow, use one of the Launch web browser actions (**Lau
 ![Launch web browser.](.\media\web-automation\launch-web-browser-action.png)
 
 > [!NOTE]
-> Some browsers may require configuration before they can be used in Power Automate Desktop. Refer to the [relevant article](using-browsers.md) for more information.
+> Some browsers may require configuration before they can be used in Power Automate. Refer to the [relevant article](using-browsers.md) for more information.
 
 After the browser session is stored in a variable, add other web automation actions to interact with the browser's content. The **Web form filling** action group focuses on providing input to web pages, while **Web data extraction** actions draw data from web pages, to be used in the flow.
 

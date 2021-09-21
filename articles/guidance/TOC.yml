@@ -54,7 +54,7 @@
         href: planning/discover-performance-issues.md
   - name: Robotic Process Automation (RPA) with SAP
     items:
-    - name: Introduction to SAP GUI-based RPA in Power Automate Desktop
+    - name: Introduction to SAP GUI-based RPA in Power Automate
       href: rpa-sap-playbook/introduction.md
     - name: Prerequisites for automating SAP GUI-based workloads
       href: rpa-sap-playbook/prerequisites.md

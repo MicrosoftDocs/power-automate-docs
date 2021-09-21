@@ -51,7 +51,7 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to create an environment, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
   - For information about how to add a database to an environment, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
-- [Power Automate Desktop](desktop-flows/introduction.md)
+- [Power Automate for desktop](desktop-flows/introduction.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

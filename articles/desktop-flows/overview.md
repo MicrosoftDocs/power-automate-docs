@@ -26,7 +26,7 @@ search.audienceType:
 # Introduction to other types of desktop flows
 
 >[!IMPORTANT]
->This section covers legacy topics, including use of Windows recorder (V1) and Selenium IDE to create automation scripts. If you are just starting your RPA automation project, we recommend that you use [Power Automate Desktop](introduction.md))
+>This section covers legacy topics, including use of Windows recorder (V1) and Selenium IDE to create automation scripts. If you are just starting your RPA automation project, we recommend that you use [Power Automate](introduction.md))
 
 
 Read on if you already have automation built using Windows recorder (V1) and Selenium IDE.

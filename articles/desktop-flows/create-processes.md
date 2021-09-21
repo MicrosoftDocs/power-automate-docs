@@ -26,7 +26,7 @@ search.audienceType:
 # Use Softomotive's WinAutomation with desktop flows
 
 >[!IMPORTANT]
->See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.
+>See the [Power Automate](introduction.md) documentation to learn about the evolution of WinAutomation.
 
 Here are some tips before you start using WinAutomation with desktop flows.
 
@@ -46,11 +46,11 @@ To run WinAutomation as part of Power Automate, you will need to:
 2.  Install the [desktop flows](./setup.md) app, and then install and configure the on-premises data gateway.
 
 >[!IMPORTANT]
->You must have the latest version of WinAutomation and Power Automate Desktop to record, test, or run UI automation.
+>You must have the latest version of WinAutomation and Power Automate to record, test, or run UI automation.
 
 ## Licensing
 
-You need to have a Power Automate *Per user plan with attended RPA* to use Power Automate Desktop and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
+You need to have a Power Automate *Per user plan with attended RPA* to use Power Automate and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
 
  
 ## Install WinAutomation
@@ -134,7 +134,7 @@ You can now create your own WinAutomation Processes and test them locally.
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The Windows recorder (V1) flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
-    >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](./upgrade.md).
+    >If you get exceptions, you may not have the latest Power Automate installed. Install the [latest Power Automate](./upgrade.md).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 

@@ -326,23 +326,23 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate Desktop
+- name: Power Automate for desktop
   items: 
-  - name: Introduction to Power Automate Desktop
+  - name: Introduction to Power Automate for desktop
     href: ./desktop-flows/introduction.md
   - name: Getting started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
-  - name: Setup Power Automate Desktop
+  - name: Setup Power Automate
     items:
-    - name: Power Automate Desktop prerequisites & limitations 
+    - name: Power Automate prerequisites & limitations 
       href: ./desktop-flows/setup.md
-    - name: Install Power Automate Desktop
+    - name: Install Power Automate
       href: ./desktop-flows/install.md
-    - name: Governance in Power Automate Desktop
+    - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate Desktop
+    - name: Troubleshooting Power Automate
       href: ./desktop-flows/troubleshoot.md    
-  - name: Power Automate Desktop architecture
+  - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
@@ -374,7 +374,7 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Power Automate Desktop console
+  - name: Power Automate console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
@@ -399,7 +399,7 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Record flows in Power Automate Desktop
+    - name: Record flows in Power Automate
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
@@ -586,7 +586,7 @@
     href: ./desktop-flows/create-desktop.md
   - name: Edit desktop flows with Windows recorder (V1)
     href: ./desktop-flows/edit-desktop.md
-  - name: Migrate from Windows recorder (V1) to Power Automate Desktop
+  - name: Migrate from Windows recorder (V1) to Power Automate
     href: ./desktop-flows/migrate.md
   - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
     href: ./desktop-flows/inputs-outputs-desktop.md

@@ -56,8 +56,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1.	Select **Download package**.
 1.	Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1.	Follow the instructions in the Power Automate Desktop setup installer to complete the installation.
-1. Once the Power Automate Desktop installer completes, go to Microsoft Edge store or Google Chrome store depending on the browser you are using and install **Microsoft Windows recorder (V1)** and **Selenium IDE** browser extensions and **Enable extensions**.
+1.	Follow the instructions in the Power Automate setup installer to complete the installation.
+1. Once the Power Automate installer completes, go to Microsoft Edge store or Google Chrome store depending on the browser you are using and install **Microsoft Windows recorder (V1)** and **Selenium IDE** browser extensions and **Enable extensions**.
 
    Continue after you've installed the extension.
 

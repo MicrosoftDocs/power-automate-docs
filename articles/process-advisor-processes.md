@@ -20,7 +20,7 @@ search.audienceType:
 Before you can use process advisor to visualize and analyze your processes, you need to:
 
 - [Create your process](#create-a-process) in process advisor.
-- [Record the activities](#record-your-process) that make up the process using the Power Automate Desktop recorder.
+- [Record the activities](#record-your-process) that make up the process using the Power Automate recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
 - (Optional) [Manage activity names](#manage-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
@@ -77,28 +77,28 @@ After you create the process, you'll see a creation successful modal with a few 
 
 1. Select **Open recorder**.
 
-### Launching the recorder in Power Automate Desktop
+### Launching the recorder in Power Automate
 
-1. By using any of the methods described above, you should see a message that says **Launching the recorder in Power Automate Desktop**.
+1. By using any of the methods described above, you should see a message that says **Launching the recorder in Power Automate**.
 
     > [!NOTE]
-    > You should have [downloaded Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app** to install it.
+    > You should have [downloaded Power Automate](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can select **Get the app** to install it.
 
-1. If you have installed Power Automate Desktop, you should see an **Open Power Automate Desktop** browser pop-up window. Select it to open the app.
+1. If you have installed Power Automate, you should see an **Open Power Automate** browser pop-up window. Select it to open the app.
 
-1. If Power Automate Desktop is installed but didn’t open correctly, select **Open again**.
+1. If Power Automate is installed but didn’t open correctly, select **Open again**.
 
    > [!div class="mx-imgBorder"]
-   > ![Launch recorder in Power Automate Desktop.](./media/launch-recorder.png)
+   > ![Launch recorder in Power Automate.](./media/launch-recorder.png)
 
-## Power Automate Desktop recorder
+## Power Automate recorder
 
 1. On the Desktop recorder screen, select **Record**.
 
 1. Perform the actions that you want to record, and then select **Finish** at the bottom of the recorder screen.
 
    > [!div class="mx-imgBorder"]
-   > ![Record actions in Power Automate Desktop.](./media/desktop-recorder.png)
+   > ![Record actions in Power Automate.](./media/desktop-recorder.png)
 
 1. Once the recording has saved successfully, select **Got it** to close the message.
 
