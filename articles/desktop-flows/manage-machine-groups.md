@@ -23,56 +23,44 @@ search.audienceType:
 
 Machine groups allow you to organize multiple machines together to help distribute your automation workload and optimize productivity. 
 
-1. Sign into Power Automate. 
+1. Sign into **Power Automate machine runtime**
 
-1. Select **Monitor**, then select **Machines**. 
+1. Select **Machine group**
 
-1. Select **New machine**, then select **Group**. 
+1. Select **Create a new group** 
 
-1. Enter a name for your machine group, then optionally enter a description. 
+1. Enter a name for your machine group, then optionally enter a description.
 
-1. Click **Create**. 
+1. Click **Create** 
+
+ ![New machine group](./media/manage-machine-groups/new-machine-groups.png)
+
+You can also create a machine group directly from Power Automate:
+
+1.	Sign into Power Automate.
+1.	Select **Monitor**, then select **Machines**.
+1.	Select **New machine**, then select **Group**.
+1.	Enter a name for your machine group, then optionally enter a description.
+1.	Click **Create**.
 
 ## Add your machine to a group 
 
 You will need at least one machine in your group to run desktop flows. 
 
-1. Sign into Power Automate. 
+1.	In the Power Automate machine runtime, select **Machine group**
+1.	In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
 
-1. Select Monitor, then select **Machines**. 
+    ![Add to machine group](./media/manage-machine-groups/add-machine-group.png)
 
-1. Select **Machine groups (preview)**. 
 
-1. Select your machine group from the list. 
+1.	If this is the first time adding a machine to your group, you will need to create a password for your group. This password is used to limit access for those who can add machines to the group. Make sure you do not lose the password, as you will be unable to recover it. If you have already added a machine before, enter the password for the group.
 
-1. Select **Add machine**. 
+1.	Select **Add machine**.
 
-1. Ensure that you are signed into the machine you want to set up. 
+When you add your machine to a group, any connections currently targeting your machine will break. You will need to update those connections to target the machine group.
 
-1. Ensure you have the [latest version](install.md#install-power-automate-desktop) of Power Automate Desktop installed. 
-
-1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
-
-1. Select **Settings**. 
-
-1. Select **Machine (preview)**. 
-
-1. Select **Add to machine group**. 
-
-    ![The Add to machine group button.](./media/manage-machine-groups/add-to-machine-group.png)
-
-1. In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
-
-    > [!NOTE]
-    > If the machine is deployed in a different environment than the machine group, you have to change its environment.
-
-    ![The displayed list with the available machines.](./media/manage-machine-groups/machine-groups-list.png)
-
-1. If this is the first time adding a machine to your group, you will need to create a password for your group. This password is used to limit access for those who can add machines to the group. Make sure you do not lose the password, as you will be unable to recover it. If you have already added a machine before, enter the password for the group. 
-
-1. Select **Add machine**. 
-
-When you add your machine to a group, any connections currently targeting your machine will break. You will need to update those connections to target the machine group. 
+>[!IMPORTANT]
+>In order to register your machine, you need to have an Organization premium account.
 
 ## Trigger a desktop flow to run on your machine group 
 
@@ -179,21 +167,22 @@ Power Automate allows you to create groups of machines that can be accessed all 
 
 ## Change the machine group of a machine
 
-If you want to change the machine group that contains your machine, select the **dots icon** next to the machine group and pick **Change machine group**.
+If you want to change the machine group that contains your machine, select another group in the list of available machine groups and fill in the required credentials
 
-If you want to remove the machine from a group without adding it to a new one, select **Remove from group**.
+If you want to remove the machine from a group without adding it to a new one, select **Leave group**.
 
 
-![The Change machine group and Remove from group options.](./media/manage-machine-groups/change-remove-machine-group.png)
+
+![The Change machine group and Remove from group options.](./media/manage-machine-groups/change-machines.png)
 
 
 ## Change machine group's password
 
-To change the password of the currently used machine group, select the **dots icon** next to the machine group and pick **Edit group password**.
-
-![The Edit group password option.](./media/manage-machine-groups/edit-machine-group-password.png)
+To change the password of the currently used machine group, click on the ellipses next to the machine group and select **Edit group password**.
 
 Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
+
+
 
 ![The fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
 
