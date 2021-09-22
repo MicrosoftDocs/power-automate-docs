@@ -37,6 +37,9 @@ Follow these steps to move your solution and its dependencies to a new environme
 > [!NOTE]
 > To implement healthy application lifecycle management (ALM) in your organization, consider using a source control system to store and collaborate on your solutions, and automate the solution export process. More information: [ALM basics](/power-platform/alm/basics-alm) in the Power Platform ALM guide.
 
+> [!NOTE]
+> Once a flow is solution-aware and in Dataverse, then it must be exported in a solution as described above. Exporting a solution flow from the flow details page will no longer be possible. 
+
 ## Learn more
 
 
