@@ -1,6 +1,6 @@
 ---
-title: Use templates in Teams | Microsoft Docs
-description: Learn how to use templates in Teams.
+title: Use flows in teams created from templates | Microsoft Docs
+description: Use Power Automate flows in teams created from templates.
 author: msftman
 manager: kvivek
 ms.service: power-automate
@@ -15,16 +15,23 @@ search.audienceType:
   - enduser
 ---
 
-# Use Power Automate flow templates in teams created from templates
+# Use flows in teams created from templates
 
-Microsoft Teams templates are pre-built definitions of a team's structure that's designed around a specific business need or project.
+Microsoft Teams templates are pre-built definitions of a team's structure that are designed around a specific business need or project.
 
-Power Automate templates and Teams templates are
-meant to address similar business scenarios. When you create a team with a Microsoft-provided Teams template, you get a curated selection of cloud flow templates that are specific to your team scenario.
+Power Automate templates and team templates are meant to address similar business scenarios. When you create a team with a Microsoft-provided team template, you get a curated selection of flow templates that are specific to your team scenario.
 
-For example, if you created a team from a Manage a Project template, the recommended cloud flow templates on the Power Automate tab in the General channel is filtered to your Manage a Project scenario.
+Here are the five team templates that support scenario-specific flow templates.
 
-Follow these steps to use a template from within Microsoft Teams.
+- Manage a Project
+- Manage an Event
+- Organize a Help Desk
+- Incident Response
+- Onboard Employees
+
+For example, if you create a team from the **Manage a Project** template, the recommended flow templates on the Power Automate tab in the General channel is filtered to your Manage a Project scenario.
+
+For example, follow these steps to use the **Manage a Project** template from within Microsoft Teams.
 
 1. Open Microsoft Teams.
 1. Select **Teams** from the top of the panel on the left.
@@ -59,7 +66,10 @@ Follow these steps to use a template from within Microsoft Teams.
 
    ![List of templates](../media/teams-templates/power-automate-teams-templates.png)
 
-With Power Automate flow templates integrated into Teams templates, you’ll be able to get work done faster and effortlessly.
+You can now select any of the flow templates listed to customize your team.
+
+>![TIP]
+>You can use any of the five team templates listed earlier in the article to create a team that's right for your organization.
 
 ## Related links
 
