@@ -63,6 +63,6 @@ With Power Automate flow templates integrated into Teams templates, you’ll be 
 
 ## Related links
 
-[Use team templates in the admin center](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console)
+[Use team templates in the admin center](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console)
 
 [Create a team with a Teams templates](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
