@@ -191,6 +191,8 @@
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
+      - name: Use flow templates in teams
+        href: ./teams/introduction-teams-templates.md        
       - name: Manage flows in Teams
         href: ./teams/teams-app-home.md
       - name: Send a message in Teams
