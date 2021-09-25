@@ -68,7 +68,7 @@ For example, follow these steps to use the **Manage a Project** template from wi
 
 You can now select any of the flow templates listed to customize your team.
 
->![TIP]
+>[!TIP]
 >You can use any of the five team templates listed earlier in the article to create a team that's right for your organization.
 
 ## Related links
