@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/13/2021
+ms.date: 09/28/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -142,7 +142,7 @@ Example FetchXML query for the Account table:
 
 ### Skip token
 
-Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows (entities) returned](/powerapps/developer/common-data-service/webapi/query-data-web-apilimits-on-number-of-table-rows-entities-returned).
+Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/powerapps/developer/common-data-service/webapi/query-data-web-apilimits-on-number-of-table-rows-entities-returned).
 
 The default page limit of 5,000 rows applies if you do not use pagination.
 
