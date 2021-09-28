@@ -191,6 +191,8 @@
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
+      - name: Use flows in teams created from templates
+        href: ./teams/introduction-teams-templates.md        
       - name: Manage flows in Teams
         href: ./teams/teams-app-home.md
       - name: Send a message in Teams
@@ -339,7 +341,9 @@
     - name: Governance in Power Automate Desktop
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate Desktop
-      href: ./desktop-flows/troubleshoot.md    
+      href: ./desktop-flows/troubleshoot.md
+    - name: Data Collection in Power Automate
+      href: ./desktop-flows/diagnostic-data.md      
   - name: Power Automate Desktop architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database

@@ -23,19 +23,19 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of RPA templates and Dynamics 365 (preview)
+# Overview of RPA templates and Dynamics 365
 
 For many businesses, success increasingly depends on having the agility to innovate and adapt to rapid change, responding to customer needs, competitive pressure, and industry trends. But this is a difficult challenge when employees are buried in time-consuming busywork like repetitive tasks or complex processes.
 
 That’s why we are dedicated to helping organizations like yours automate manual business processes, across both legacy and modern applications, so you can focus on what’s most important for your business and customers. In March, we released robotic process automation (RPA) capabilities in Microsoft Power Automate Desktop for Windows 10 users.
 
-This month, we are introducing enhanced workplace automation capabilities for Microsoft Dynamics 365—a set of prebuilt RPA solution templates, now available for public preview, that seamlessly integrate with select Dynamics 365 applications.
+We are introducing enhanced workplace automation capabilities for Microsoft Dynamics 365—a set of prebuilt RPA solution templates, that seamlessly integrate with select Dynamics 365 applications.
 
 Initially available for Dynamics 365 Customer Service, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, the prebuilt automation templates enable teams to rapidly automate common business scenarios—freeing time from day-to-day manual, repetitive, and error-prone tasks.
 
 Developers can further extend any of those solutions by using custom actions, custom connectors, Microsoft Azure services, and APIs to take full advantage of Microsoft’s one cloud and data ecosystem.
 
-![](./media/dynamics365-rpa-overview/rpa-flow-chart.png)
+![RPA flow chart](./media/dynamics365-rpa-overview/rpa-flow-chart.png)
 
 
 ## Save time across customer service, finance, and supply chain roles

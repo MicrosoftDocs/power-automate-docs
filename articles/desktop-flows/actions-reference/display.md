@@ -67,7 +67,7 @@ Displays a message box
 |Message to display|Yes|Text value||The text to display as the actual message|
 |Message box icon|N/A|None, Information, Question, Warning, Error|None|The icon to display with the message box|
 |Message box buttons|N/A|OK, OK - Cancel, Yes - No, Yes - No - Cancel, Abort - Retry - Ignore, Retry - Cancel|OK|The buttons to display on the message box|
-|Default button|N/A|First button, Second button, Third button|First button|The button to highlight by default. If the user presses <Enter>, this button will be pressed|
+|Default button|N/A|First button, Second button, Third button|First button|The button to highlight by default. If the user presses **Enter**, this button will be pressed|
 |Keep message box always on top|N/A|Boolean value|False|Specify whether the message box should always remain on top of all other windows|
 |Close message box automatically|N/A|Boolean value|False|Specify whether the message box closes automatically after a preset time, as if the default button was pressed. Otherwise, the flow will wait until a button is pressed by the user|
 |Timeout|Yes|Numeric value|3|The seconds to pause the automation while waiting for input, until continuing automatically|
