@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -87,7 +87,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
-  ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+  ![An expression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.

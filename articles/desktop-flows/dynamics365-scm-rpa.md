@@ -80,11 +80,11 @@ An alternative consists in logging in to Power Automate Desktop and clicking on 
 
 *Add a trial license for Power Automate unattended add-on to run processes in unattended mode*
 
-As an admin, you can get an RPA unattended add-on and assign it to your environment ([Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](https://docs.microsoft.com/power-automate/organization-q-and-a))  
+As an admin, you can get an RPA unattended add-on and assign it to your environment [Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](../organization-q-and-a.md)  
 
 #### Get a trial license for Power Apps 
 
-Please follow the instructions in this PowerApps guide before moving on to the last step! ([https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)) 
+Please follow the instructions in this PowerApps guide before moving on to the last step! [https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) 
 
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
 
