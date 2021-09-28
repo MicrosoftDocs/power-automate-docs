@@ -94,7 +94,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Close the app that you recorded.
 
-1. Select the card that starts with "Run <app name> script" to view screenshots of the recorded steps.
+1. Select the card that starts with "Run [app name] script" to view screenshots of the recorded steps.
 
      >[!TIP]
      >Select **...** > **Delete** to remove any duplicate steps.

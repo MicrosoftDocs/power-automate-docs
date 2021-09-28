@@ -27,6 +27,9 @@ Connect to CyberArk and retrieve passwords
 
 CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
 
+> [!NOTE]
+> To retrieve credentials from CyberArk, Power Automate Desktop issues web requests to CyberArk’s Central Credential Provider web service (AIMWebService).
+
 To find the required information to populate the action, see the following instructions:
 
 - **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.

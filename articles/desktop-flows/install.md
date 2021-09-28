@@ -39,14 +39,39 @@ Follow these steps to install the Power Automate for desktop:
 1. Follow the instructions in the **Power Automate for desktop setup** installer to complete the installation. 
 1. Make your selections for each feature for the installation to complete. 
 
+The installer allows you to install two different apps on your device: 
+
+- Power Automate Desktop is the app to build your desktop flows. With it you can create, edit and run your automations. Learn more about the [desktop flows designer](./flow-designer.md). 
+
+- Power Automate machine runtime app allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). Learn more about [machine management](./manage-machines.md). 
+
+By default, both are installed on your device.  
+
 >[!IMPORTANT]
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
 ![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
 
+>[!IMPORTANT]
+>In order to register your machine, you need to have an Organization premium account.
+
 >[!NOTE]
 >Power Automate for desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
+
+<!--- TO BE ADDED AFTER Oct 5th---
+## Install Power Automate desktop app from the Microsoft Store 
+
+There are a few ways to access the most recent version of Power Automate Desktop from the Microsoft Store. 
+
+1. Use one of the following options to open the Power Automate page of the Microsoft Store: 
+
+    - Open a browser and go directly to the [Power Automate page](https://aka.ms/pbidesktopstore) of the Microsoft Store. 
+
+    - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/), and then select Download Free. 
+
+1. After you've landed on the Power Automate page of the Microsoft Store, select Install. 
+-->
 
 ### Set data collection options
 

@@ -265,8 +265,8 @@ Here are the steps to create a loop in a UI flow:
 ### Known Limitations:
 1.	Loops require static selectors. This means that the user interface (UX) element on which the repetitive action happens must not change. 
 1.	Output operations are not currently supported.
-1.	For complex array objects that need to be passed from a cloud flow, like a Sharepoint list, provide an example payload of that object. To get the payload, you can run the flow without the Windows recorder (V1) flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
-1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘<value>’]**, where <value> is name of the specific object within the input array.
+1.	For complex array objects that need to be passed from a cloud flow, like a SharePoint list, provide an example payload of that object. To get the payload, you can run the flow without the Windows recorder (V1) flow step, and then copy the output of the action into the middle (Add sample data) text box when you define the array.
+1.	You must use expressions for complex array object types. For example, use the expression **items(‘Apply to each’)[‘[value]’]**, where **value** is name of the specific object within the input array.
 
 ## Add a delay
 

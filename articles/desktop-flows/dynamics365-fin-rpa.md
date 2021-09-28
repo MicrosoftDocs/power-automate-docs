@@ -101,7 +101,7 @@ An alternative consists in logging in to Power Automate and clicking on the **St
 
 *Add a trial license for Power Automate unattended add-on to run processes in unattended mode*
 
-As an admin, you can get an RPA unattended add-on and assign it to your environment ([Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](https://docs.microsoft.com/power-automate/organization-q-and-a))  
+As an admin, you can get an RPA unattended add-on and assign it to your environment [Power Automate sign-up Q&A in your organization](../organization-q-and-a.md)
 
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
 To get started with Dynamics 365 Finance and automate the end-of-cycle reporting process, navigate [here](https://dynamics.microsoft.com/get-started/free-trial/?appname=finance).  

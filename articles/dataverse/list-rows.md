@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/25/2021
+ms.date: 09/13/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -77,9 +77,13 @@ The advanced options for the **List Rows** action allow you to sort, filter, arr
 
 ![Advanced options example for List Rows action.](../media/list-rows/advanced-list-rows.png)
 
-**Select columns**: Enter a comma-separated list of columns to return, such as "name,createdon,preferredcontactmethodcode,emailaddress1,telephone1" for the Account table.
+### Select columns
 
-**Filter rows**: Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021. 
+Enter a comma-separated list of columns to return, such as "name,createdon,preferredcontactmethodcode,emailaddress1,telephone1" for the Account table.
+
+### Filter rows
+
+Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021.
 
 >[!TIP]
 >Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api.md#standard-query-functions)
@@ -88,9 +92,13 @@ to construct **Filter Query** expressions.
 >[!IMPORTANT]
 >Filter expressions cannot contain this string, **\$filter=**, because it only applies when you use the APIs directly.
 
-**Sort By**: Use to define an OData-style expression that defines the order in which items are returned, such as "name desc". Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending. 
+### Sort By
 
-**Expand Query**: Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select=contactid,fullname)" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response. 
+Use to define an OData-style expression that defines the order in which items are returned, such as "name desc". Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending.
+
+### Expand Query
+
+Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select=contactid,fullname)" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response.
 
 There are two types of navigation properties that you can use in **Expand Query**:
 
@@ -102,9 +110,13 @@ If you include only the name of the navigation property, you’ll receive all th
 
 To use it in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
-**Row count**: Use to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
+### Row count
 
-**Fetch Xml Query**: Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
+Use to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
+
+### Fetch Xml Query
+
+Use to specify a [Dataverse-style FetchXML snippet](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
 ![List accounts example with FetchXML.](https://user-images.githubusercontent.com/469480/123689706-6160bd80-d808-11eb-83e6-936e22850d9b.PNG)
 
@@ -128,7 +140,9 @@ Example FetchXML query for the Account table:
 </fetch>
 ```
 
-**Skip token**: Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of tables returned](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#limits-on-number-of-tables-returned).
+### Skip token
+
+Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of tables returned](/powerapps/developer/common-data-service/webapi/query-data-web-api.md#limits-on-number-of-tables-returned).
 
 The default page limit of 5,000 rows applies if you do not use pagination.
 
@@ -165,5 +179,6 @@ Preference-Applied: odata.maxpagesize=3
 }
 ```
 
+### Partition ID
 
-**Partition ID**: An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
+An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
