@@ -26,7 +26,7 @@ search.audienceType:
 # Use Dataverse-based flows in Power Apps  
 
 Power Apps is a suite of apps, services, connectors, and data platform that provides a rapid application development environment to build custom apps for your business needs. Use Power Apps, to quickly build custom business apps that connect to your business data that’s stored *either* in the underlying data
-platform [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) *or* in various cloud and on-premises data sources, such as SharePoint, Microsoft 365,
+platform [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) *or* in various cloud and on-premises data sources, such as SharePoint, Microsoft 365,
 Dynamics 365, SQL Server, and so on. 
 
 ![Power Apps introduction.](../media/flows-power-apps/intro.png)
@@ -35,7 +35,7 @@ Dynamics 365, SQL Server, and so on. 
 
 Apps built using Power Apps provide rich business logic and workflow capabilities to transform your manual business processes to digital, automated processes. Further, apps built using Power Apps have a responsive design, and can run seamlessly in Web browsers or on mobile devices (phone or tablet). 
 
-With Power Apps, you can create [Canvas apps](./powerapps/maker/canvas-apps/) and [Model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/), and both types of apps support using data stored in Microsoft Dataverse. You can use the Microsoft Dataverse connector in Power Automate to integrate your apps with an automated flow, setting them off whenever users tap the associated button.
+With Power Apps, you can create [Canvas apps](/powerapps/maker/canvas-apps/) and [Model-driven apps](/powerapps/maker/model-driven-apps/), and both types of apps support using data stored in Microsoft Dataverse. You can use the Microsoft Dataverse connector in Power Automate to integrate your apps with an automated flow, setting them off whenever users tap the associated button.
 
 Get started with Power Apps: 
 
@@ -48,7 +48,7 @@ Get started with Power Apps: 
 
 You can associate any button in a canvas app with a cloud flow that uses the Microsoft Dataverse. Each time the canvas app user hits the button, the associated flow runs in the background. 
 
-1. Edit an existing canvas app, or create one by following the steps in [Create a canvas app from Microsoft Dataverse in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). Then go to the **Insert** menu and then add a **Button** as shown here. 
+1. Edit an existing canvas app, or create one by following the steps in [Create a canvas app from Microsoft Dataverse in Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app). Then go to the **Insert** menu and then add a **Button** as shown here. 
 
    ![Add a button to a canvas app.](../media/flows-power-apps/add-button.png)
  
