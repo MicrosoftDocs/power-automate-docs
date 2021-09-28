@@ -9,7 +9,7 @@ manager: kvivek
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/06/2020
+ms.date: 09/28/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -38,7 +38,7 @@ Follow these steps to move your solution and its dependencies to a new environme
 > To implement healthy application lifecycle management (ALM) in your organization, consider using a source control system to store and collaborate on your solutions, and automate the solution export process. More information: [ALM basics](/power-platform/alm/basics-alm) in the Power Platform ALM guide.
 
 > [!NOTE]
-> Once a flow is solution-aware and in Dataverse, then it must be exported in a solution as described above. Exporting a solution flow from the flow details page will no longer be possible. 
+> Once a flow is solution-aware and in Dataverse, then it must be exported in a solution as described earlier in this article. You cannot export a solution-aware flow from the flow details page. 
 
 ## Learn more
 
