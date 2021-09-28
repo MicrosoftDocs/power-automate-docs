@@ -57,7 +57,7 @@ By default, both are installed on your device.
 >In order to register your machine, you need to have an Organization premium account.
 
 >[!NOTE]
->Power Automate for desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
+>Power Automate for desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
 <!--- TO BE ADDED AFTER Oct 5th---
 ## Install Power Automate desktop app from the Microsoft Store 
