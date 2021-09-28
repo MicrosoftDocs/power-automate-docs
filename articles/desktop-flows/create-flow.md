@@ -1,5 +1,5 @@
 ---
-title: Create a Power Automate Desktop flow | Microsoft Docs
+title: Create a Power Automate desktop flow | Microsoft Docs
 description: Use the Power Automate designer to create a desktop flow.
 author: georgiostrantzas
 ms.service: power-automate
@@ -15,9 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create a Power Automate Desktop flow
+# Create a Power Automate desktop flow
 
-Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
+Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate](introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium ID](overview.md).
 
 ## Prerequisites
 
@@ -25,15 +25,15 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
 
-- To create a desktop flow in Power Automate Desktop, you need a Microsoft work, school or organization premium account. To create and trigger a desktop flow through Power Automate, you need an organization premium or trial premium account.
+- To create a desktop flow in Power Automate, you need a Microsoft work, school or organization premium account. To create and trigger a desktop flow through Power Automate, you need an organization premium or trial premium account.
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
 
-## Create a new flow in Power Automate Desktop
+## Create a new desktop flow in Power Automate
 
 
-1. To create a desktop flow in Power Automate Desktop, open the app and select **New Flow**.
+1. To create a desktop flow in Power Automate, open the app and select **New Flow**.
 
    ![New flow button.](media\create-flow-console\console.png)
 
@@ -46,7 +46,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
    ![console flow.](media\create-flow-console\console-flow.png)
 
 
-## Design a flow in Power Automate and Power Automate Desktop
+## Design a flow in Power Automate
 
 1. Create a new folder on the desktop, and name it **Countries**.
 
@@ -63,7 +63,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
    ![new step.](media\design-flow\new-step.png)
 
     <!--todo: Needs new screenshot and verify if action names are being updated-->
-1. Search for **power automate desktop**, and select the **Run a flow built with Power Automate Desktop** action.
+1. Search for **power automate**, and select the **Run a flow built with Power Automate for desktop** action.
 
    ![action search.](media\design-flow\action-search.png)
 
@@ -75,11 +75,11 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    ![Dialog box.](media\design-flow\build-desktop-flow-dialog.png)
 
-1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate Desktop.
+1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate for desktop.
 
    ![browser open application.](media\design-flow\browser-open-application.png)
 
-1. In Power Automate Desktop, open the Variables pane, select **+** and select **Input** to add a new input variable.
+1. In Power Automate for desktop, open the Variables pane, select **+** and select **Input** to add a new input variable.
 
    ![add new input variable.](media\design-flow\add-new-input-variable.png)
 
@@ -93,7 +93,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    ![edit variable input.](media\design-flow\edit-variable-input.png)
 
-1. Add the **Get current date and time** action and set **Retrieve** to **Current date only**. Select **Save** to add the action to the Power Automate Desktop workspace. This action retrieves only the current date, and stores it in a variable.
+1. Add the **Get current date and time** action and set **Retrieve** to **Current date only**. Select **Save** to add the action to the workspace. This action retrieves only the current date, and stores it in a variable.
 
    ![get current date and time action properties.](media\design-flow\get-current-date-and-time-action-properties.png)
 
@@ -119,7 +119,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
    > [!NOTE]
    > To use both hardcoded text and variables in the field, populate the hardcoded text manually, and use the variables pop-out to insert each variable in the currently selected part of the text.
 
-1. Set **Text to write** to **This text was written by Power Automate Desktop**. This action writes the specified text to a text file on the current user's desktop, and sets the filename to the current date.
+1. Set **Text to write** to **This text was written by Power Automate**. This action writes the specified text to a text file on the current user's desktop, and sets the filename to the current date.
 
    This action writes the specified text into a text file.
 
@@ -180,7 +180,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    ![test flow.](media\design-flow\test-flow.png)
 
-1. When Power Automate connects to Power Automate Desktop, select **Continue**, then **Run Flow** and then **Done**.
+1. When Power Automate connects to the desktop app, select **Continue**, then **Run Flow** and then **Done**.
 
    ![run flow pop out 3.](media\design-flow\run-flow-pop-out-3.png)
 
@@ -190,7 +190,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    <!--todo: Needs new screenshot and verify if action names are being updated-->
   
-1. Select the **Run a flow built with Power Automate Desktop** action to open its inputs and outputs. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate Desktop. Similarly, any output variables may be used elsewhere in the flow.
+1. Select the **Run a flow built with Power Automate for desktop** action to open its inputs and outputs. The values of the two variables, **FileCount** and **FilePath**, were returned from Power Automate. Similarly, any output variables may be used elsewhere in the flow.
 
    ![variables values.](media\design-flow\variables-values.png)
 

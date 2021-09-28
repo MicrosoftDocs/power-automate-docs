@@ -26,7 +26,7 @@ search.audienceType:
 
 # Use RPA with Dynamics 365 Customer Service
 
-Automate common activities on Dynamics 365 Customer Service with Robotic Process Automation using Power Automate Desktop.
+Automate common activities on Dynamics 365 Customer Service with Robotic Process Automation using Power Automate.
 
 [Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence, bringing delight to every customer. To make your use of Dynamics 365 even more productive, we are releasing the preview of free automation solutions that Dynamics 365 customers can use to automate common tasks.
 
@@ -42,7 +42,7 @@ Install the following:
 
 - Dynamics 365 Omnichannel for Customer Service.
 
-- Power Automate Desktop. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.
+- Power Automate for desktop. Power Automate for desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.
 
 - The Contoso CRM app from Microsoft. This app showcases how RPA works. You can use it as an example to build your own RPA action.
 
@@ -58,7 +58,7 @@ Use these recommended security roles.
 
 ### Licenses
 
-1. Get a trial license for Power Automate Desktop if you don't have a paid license.The Power Automate Desktop license you need depends on the mode in which your automations run. 
+1. Get a trial license for Power Automate if you don't have a paid license.The Power Automate license you need depends on the mode in which your automations run. 
 
    Here are the two modes to automate processes.
 
@@ -103,13 +103,13 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. If you see **Update available** for **Agent Productivity Tools** and **App profile manager**, select **Update available**.
 
-### Install and configure Power Automate Desktop
+### Install and configure Power Automate
 
-1. Download [Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613) onto the machine that will run the automation then follow the installation wizard.
+1. Download [Power Automate for desktop](https://go.microsoft.com/fwlink/?linkid=2102613) onto the machine that will run the automation then follow the installation wizard.
 
-1. Follow the steps in the [detailed guide to install Power Automate Desktop](install.md#install-power-automate-desktop) onto your device.
+1. Follow the steps in the [detailed guide to install Power Automate for desktop](install.md#install-power-automate-desktop) onto your device.
 
-1. Change the machine settings from Power Automate Desktop to the environment to which  you will install the solution.
+1. Change the machine settings from Power Automate to the environment to which  you will install the solution.
 
     ![](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
@@ -125,7 +125,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Select [**Directly to machine (preview)**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
 
-1. Select the machine onto which you installed Power Automate Desktop, and then enter the machine login credentials (the username and password that you used to log into this machine). 
+1. Select the machine onto which you installed Power Automate, and then enter the machine login credentials (the username and password that you used to log into this machine). 
 
     ![](./media/dynamics365-cs-rpa/6913b7d24177ed1b786a5bd39e381a27.png)
 
@@ -204,13 +204,13 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
    ![](./media/dynamics365-cs-rpa/run-validation.png)
 
-1. The automation starts on the machine where you have installed Power Automate Desktop. You can watch how the automation uses the case data, opens the Contoso CRM app, and then finishes the look up automatically. After the automation runs, refresh the timeline to view the logs regarding the run result. Here's a demo on how it runs.
+1. The automation starts on the machine where you have installed Power Automate. You can watch how the automation uses the case data, opens the Contoso CRM app, and then finishes the look up automatically. After the automation runs, refresh the timeline to view the logs regarding the run result. Here's a demo on how it runs.
 
    ![](./media/dynamics365-cs-rpa/bf728be4c965a04f9d199266accb06bd.gif)
 
 ## Customize the automation solution
 
-1. Now you can start customizing the automation to meet your unique requirements. To do this, open Power Automate Desktop and then select **Edit** on the **Legacy Contoso App Contact Lookup** desktop flow.
+1. Now you can start customizing the automation to meet your unique requirements. To do this, open Power Automate and then select **Edit** on the **Legacy Contoso App Contact Lookup** desktop flow.
 
    ![](./media/dynamics365-cs-rpa/a93f6fd5dd7cf00398816add4711c557.png)
 

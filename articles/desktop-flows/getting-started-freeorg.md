@@ -18,21 +18,21 @@ search.audienceType:
 
 # Getting started with a work or school account
 
-Power Automate Desktop enables users to automate repetitive desktop tasks through a collection of prebuilt drag-and-drop actions.
+Power Automate enables users to automate repetitive desktop tasks through a collection of prebuilt drag-and-drop actions.
 
 Using the available actions and [built-in recorders](recording-flow.md), you can automate any business procedure, such as [filling forms](automation-web.md#data-population-on-the-web), [retrieving data from web](automation-web.md#web-data-extraction) or [desktop applications](desktop-automation.md), and [sending standardized emails](actions-reference/email.md).
 
-Combining these features allows the creation of powerful flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data across different systems are common in business environments, and Power Automate Desktop can entirely handle them.
+Combining these features allows the creation of powerful flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data across different systems are common in business environments, and Power Automate can entirely handle them.
 
-Apart from third-party applications, Power Automate Desktop allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
+Apart from third-party applications, Power Automate allows the automation of integrated Windows applications and features. Creating backups of critical files and running diagnostics or custom scripts can be performed effectively through desktop flows.
 
-Using Power Automate Desktop with a work or school account is available at no additional cost. To use Power Automate Desktop, your default environment must contain a [Dataverse database](create-database.md). To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization premium account](getting-started-org.md).
+Using Power Automate with a work or school account is available at no additional cost. To use Power Automate for desktop, your default environment must contain a [Dataverse database](create-database.md). To unlock additional RPA features, such as running flows automatically, premium cloud connectors and flow sharing and monitoring, start a trial or upgrade to an [Organization premium account](getting-started-org.md).
 
-To start a trial, select **Go Premium** on the Power Automate Desktop console.
+To start a trial, select **Go Premium** on the Power Automate for desktop console.
 
 ## Flow example
 
-To become familiar with the available features of Power Automate Desktop, follow the steps below to create a flow.
+To become familiar with the available features of Power Automate, follow the steps below to create a flow.
 
 The presented flow copies all the files located in the Documents folder and creates a backup to a secondary drive. The original location of each file is appended to an existing log file.
 
@@ -41,7 +41,7 @@ The presented flow copies all the files located in the Documents folder and crea
 
 To create the flow:
 
-1. Launch Power Automate Desktop and select the **New flow** button in the **Console**.
+1. Launch Power Automate for desktop and select the **New flow** button in the **Console**.
 
     ![The New flow button in the console.](media\getting-started-freeorg\getting-started-freeorg-console.png)
 
@@ -90,10 +90,10 @@ To create the flow:
 
 ## Next Steps
 
-- Learn how to [set up Power Automate Desktop](setup.md).
+- Learn how to [set up Power Automate for desktop](setup.md).
 
-- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
+- Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md). 
 
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
+- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate. 
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).

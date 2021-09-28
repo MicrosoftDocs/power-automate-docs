@@ -1,6 +1,6 @@
 ---
-title: Governance in Power Automate Desktop | Microsoft Docs
-description: Governance in Power Automate Desktop.
+title: Governance in Power Automate | Microsoft Docs
+description: Governance in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,11 +22,11 @@ search.audienceType:
   - enduser
 ---
 
-# Governance in Power Automate Desktop
+# Governance in Power Automate
 
-## Prevent users manually updating Power Automate Desktop
+## Prevent users manually updating Power Automate for desktop 
 
-Using the following registry entry you can prevent users to manually update Power Automate Desktop on their machines and receive update notifications.
+Using the following registry entry you can prevent users to manually update Power Automate for desktop on their machines and receive update notifications.
 
 | | |
 |---|---|
@@ -36,12 +36,12 @@ Using the following registry entry you can prevent users to manually update Powe
 |Type|DWORD|
 
 ***Value***
-- **1**: Users will not be able to manually update Power Automate Desktop.
+- **1**: Users will not be able to manually update Power Automate for Desktop.
 
 
-## Prevent users accessing Power Automate Desktop using their Microsoft accounts
+## Prevent users accessing Power Automate for desktop using their Microsoft accounts
 
-Using the following registry entry you can prevent users to login on Power Automate Desktop on their machines using a Microsoft account.
+Using the following registry entry you can prevent users to login on Power Automate for desktop on their machines using a Microsoft account.
 
 | | |
 |---|---|
@@ -54,9 +54,9 @@ Using the following registry entry you can prevent users to login on Power Autom
 - **1**: Users will not be able to sign-in using their Microsoft account
 
 
-## Prevent users accessing Power Automate Desktop using their work or school accounts
+## Prevent users accessing Power Automate for desktop using their work or school accounts
 
-You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school account without a per user plan with attended RPA license.
+You can use the following registry entry to prevent users from logging into Power Automate for desktop with their work or school account without a per user plan with attended RPA license.
 
 | | |
 |---|---|
@@ -68,9 +68,9 @@ You can use the following registry entry to prevent users from logging into Powe
 ***Value***
 - **1**: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
 
-## Prevent users accessing Power Automate Desktop using their work or school accounts or organization premium accounts
+## Prevent users accessing Power Automate for desktop using their work or school accounts or organization premium accounts
 
-You can use the following registry entry to prevent users from logging into Power Automate Desktop with their work or school accounts or organization premium accounts.
+You can use the following registry entry to prevent users from logging into Power Automate for desktop with their work or school accounts or organization premium accounts.
 
 | | |
 |---|---|
@@ -83,15 +83,15 @@ You can use the following registry entry to prevent users from logging into Powe
 - **1**: Users will not be able to sign-in using their work or school account or organization premium account
 
 >[!Note]
->- Setting any value other than 1, or not setting a value at all will allow users to access Power Automate Desktop. When all registry keys are set to 1, users will not be able to login to Power Automate Desktop with any type of account.
+>- Setting any value other than 1, or not setting a value at all will allow users to access for desktop. When all registry keys are set to 1, users will not be able to login to Power Automate for desktop with any type of account.
 
-## Restricting access to Power Automate Desktop
+## Restricting access to Power Automate for desktop
 
-In order to restrict access to Power Automate Desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+In order to restrict access to Power Automate for desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
-## Configure Power Automate Desktop to interact with a corporate proxy server
+## Configure Power Automate for desktop to interact with a corporate proxy server
 
-IT administrators, may set the following registry keys, to configure the Power Automate Desktop’s interaction with a corporate proxy server.
+IT administrators, may set the following registry keys, to configure the Power Automate’s interaction with a corporate proxy server.
 
 | | |
 |---|---|
@@ -103,7 +103,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 ***Value***
 - **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured, will override the proxy server and port configured in Windows.
 
-## Configure Power Automate Desktop to bypass a corporate proxy server
+## Configure Power Automate for desktop to bypass a corporate proxy server
 
 | | |
 |---|---|
@@ -113,9 +113,9 @@ IT administrators, may set the following registry keys, to configure the Power A
 |Type|DWORD|
 
 ***Value***
-- **1**: Power Automate Desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate Desktop’s traffic. 
+- **1**: Power Automate for desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate's traffic. 
 
-## Configure Power Automate Desktop to authenticate to a corporate proxy server using the current user's credentials
+## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
 | | |
 |---|---|
@@ -125,12 +125,12 @@ IT administrators, may set the following registry keys, to configure the Power A
 |Type|DWORD|
 
 ***Value***
-- **1**: Power Automate Desktop will authenticate to the corporate proxy server using the current user's credentials.
+- **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
  
  
 ## Learn more
 
-- Learn to [create Power Automate Desktop flows](create-flow.md).
+- Learn to [create Power Automate desktop flows](create-flow.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
 
