@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-When you create variables in your flows, Power Automate Desktop converts them to a specific type based on their content.
+When you create variables in your flows, Power Automate converts them to a specific type based on their content.
 
 Some of these data types are widely used throughout the application, such as **numbers**, while others, such as **browser instances**, require explicit actions or groups of actions.
 
@@ -75,9 +75,9 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of a datatable variable.](media\data-tables\create-data-table.png)
 
-  Power Automate Desktop provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+  Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  Alternatively, while Power Automate Desktop doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+  Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 

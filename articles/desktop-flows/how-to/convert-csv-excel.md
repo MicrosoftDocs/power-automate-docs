@@ -19,7 +19,7 @@ search.audienceType:
 
 A comma-separated values file (CSV) is a delimited text file that uses a specific character to separate a series of values.
 
-Power Automate Desktop allows you to open comma-delimited and tab-delimited CSV files directly through the **Launch Excel** action.
+Power Automate allows you to open comma-delimited and tab-delimited CSV files directly through the **Launch Excel** action.
 
 ![The Launch Excel action configured to open a csv file.](media/convert-csv-excel/launch-excel-action.png)
 

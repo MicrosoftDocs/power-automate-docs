@@ -297,7 +297,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Is regular expression|N/A|Boolean value|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -324,7 +324,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Ignore case|N/A|Boolean value|False|Specify whether to find the specified text using case-sensitive or case-insensitive matching|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -354,7 +354,7 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Activate escape sequences|N/A|Boolean value|False|Specify whether to use special sequences. For example, '\t' in the replacement text will be interpreted as a tab|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|

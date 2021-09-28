@@ -27,7 +27,7 @@ Using conditionals, you can ensure certain elements have a wished value or state
 
 The **If** statement is one of the most commonly used conditionals in flow development and programming.  
 
-Power Automate Desktop provides the **If** action to check whether a given condition is valid. If the condition is true, the logic between the **If** and **End** is executed.
+Power Automate  provides the **If** action to check whether a given condition is valid. If the condition is true, the logic between the **If** and **End** is executed.
 
 An **If** action consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
@@ -46,7 +46,7 @@ In all cases, the variables and values used as operands must be of the same data
 
 ## If variations
 
-Apart from the standard **If** action, Power Automate Desktop provide some additional conditional actions:
+Apart from the standard **If** action, Power Automate provides some additional conditional actions:
 
 - **If file exists**: Checks if a file exists or not before executing a block of actions. This action can be used to ensure that a file exists before performing other operations on it.
 

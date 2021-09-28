@@ -49,9 +49,9 @@ You will need at least one machine in your group to run desktop flows.
 
 1. Ensure that you are signed into the machine you want to set up. 
 
-1. Ensure you have the [latest version](install.md#install-power-automate-desktop) of Power Automate Desktop installed. 
+1. Ensure you have the [latest version](install.md#install-power-automate-desktop) of Power Automate for desktop installed. 
 
-1. Select **Launch it now** then skip to step 13, or open Power Automate Desktop manually on your machine. 
+1. Select **Launch it now** then skip to step 13, or open Power Automate manually on your machine. 
 
 1. Select **Settings**. 
 
@@ -80,7 +80,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. Select **+New step**. 
 
-1. Select the **Run a flow built with Power Automate Desktop** action. 
+1. Select the **Run a flow built with Power Automate for desktop** action. 
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 

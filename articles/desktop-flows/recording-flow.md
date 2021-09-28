@@ -14,9 +14,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Record flows in Power Automate Desktop
+# Record flows in Power Automate
 
-Power Automate Desktop enables you to design flows automatically by replicating the task you wish to automate. 
+Power Automate enables you to design flows automatically by replicating the task you wish to automate. 
 
 ## Desktop recorder
 
@@ -34,7 +34,7 @@ To record a desktop flow:
 
     ![Recording a desktop flow.](./media/recording-flow/recording-flow.png)
 
-1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate Desktop actions.
+1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate actions.
 
     ![The actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
@@ -52,7 +52,7 @@ Input Method Editors (IMEs) are software components that enable users to input t
 
 Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
 
-Power Automate Desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
+Power Automate supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
 
 1. Right-click on the text field and select **Add text with IME** on the displayed menu.
 
@@ -70,7 +70,7 @@ Power Automate Desktop supports the use of IMEs during the flow recording proced
 
 In some cases, the desktop recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API, run on virtual desktop environments, or have other technical limitations that block the recording process.
 
-As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
+As an alternative way to record flows, Power Automate provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
 
 
 > [!NOTE]

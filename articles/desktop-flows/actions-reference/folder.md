@@ -33,7 +33,7 @@ Manage and manipulate folders
 
 ## Getting started with folder actions
 
-Manipulate and organize folders with the Power Automate Desktop folders actions.
+Manipulate and organize folders with the Power Automate folders actions.
 
 The **Get special folder** action retrieves the paths for commonly used directories which vary among different users and computers. In the figure below, the desktop directory is retrieved and stored into a variable. The variable **%SpecialFolderPath%** can now be used any time it is necessary to use the desktop path, regardless of the user who runs the flow or the computer which it runs on.
 

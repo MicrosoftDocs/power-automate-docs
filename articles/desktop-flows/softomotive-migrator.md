@@ -19,9 +19,9 @@ search.audienceType:
 
 <!-- ProcessRobot users are now able to export .prp files into folders and --> 
 
-Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate Desktop.
+Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate.
 
-This migration utility redefines automations to their equivalent Power Automate Desktop action definitions where such parity exists. 
+This migration utility redefines automations to their equivalent Power Automate desktop flow action definitions where such parity exists. 
 
 Some actions have been deprecated because they don't fit into the Power Platform ecosystem. However, workarounds should be applicable to overcome what appears to be missing functionality. 
 
@@ -34,15 +34,15 @@ For Process migrator for Softomotive products (preview) to be able to install an
 
 WinAutomation users: 
 
- - The latest publicly available version of Power Automate Desktop installed
+ - The latest publicly available version of Power Automate for desktop installed
  - WinAutomation installed (v6 and later) 
  - Access to a Power Automate environment 
 
 ProcessRobot users: 
 
- - The latest publicly available version of Power Automate Desktop installed 
+ - The latest publicly available version of Power Automate for desktop installed 
  - Access to a Power Automate environment. Follow the get started documentation if you haven't already provisioned an environment 
- - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate Desktop 
+ - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate for desktop 
 
 
 ## Installing Process migrator for Softomotive products (preview) 
@@ -79,7 +79,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     ![Process migrator for Softomotive products (preview) installer step 6.](media/migrator/Login_App_Selection_Screen_PR.png)
 
-### Migrating WinAutomation processes to Power Automate Desktop
+### Migrating WinAutomation processes to Power Automate
 
 1. If you use a WinAutomation version later than 9, you'll be prompted to enter your WinAutomation master key. This key is required for the migration of passwords inside encrypted processes. 
     
@@ -100,7 +100,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     ![Process migrator for Softomotive products (preview) installer step 7a.](media/migrator/migrator_7a.png)    
 
-### Migrating PorcessRobot processes to Power Automate Desktop
+### Migrating PorcessRobot processes to Power Automate
 
 1. If you choose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
 
@@ -132,13 +132,13 @@ Now, you can run the Process migrator for Softomotive products (preview).
     ![Process migrator for Softomotive products (preview) installer step 10.](media/migrator/migrator_11b.png)
 
     > [!NOTE]
-    > For the migrated desktop flows to be visible, some time is required. To instantly view the migrated desktop flows in Power Automate Desktop:
-    >- Sign out and sign in again in Power Automate Desktop, or
-    >- Restart the Power Automate Desktop service by exiting the service and re-running Power Automate Desktop.  
+    > For the migrated desktop flows to be visible, some time is required. To instantly view the migrated desktop flows in Power Automate:
+    >- Sign out and sign in again in Power Automate, or
+    >- Restart the Power Automate service by exiting the service and re-running Power Automate.  
 
    ![Process migrator for Softomotive products (preview) installer step 11.](media/migrator/migrator_11.png)
 
-1. Now, you can modify the migrated processes (now desktop flows) through Power Automate Desktop.
+1. Now, you can modify the migrated processes (now desktop flows) through Power Automate.
 
     ![Process migrator for Softomotive products (preview) installer step 12.](media/migrator/migrator_12.png)
 
@@ -166,7 +166,7 @@ Apart from the extensive set of features preconfigured into PPAC – the [CoE Po
 
 #### User Libraries: 
 
-User Libraries are not supported in Power Automate Desktop.  If your process contains a call to a user library, it is recommended the associated user library actions are copied into your desktop flow otherwise they will not be migrated using the Process Migrator for Softomotive Products.  The ‘Start Process’ action from ProcessRobot is on the roadmap to be reintroduced as ‘Run Flow’ in a future release.  This will simplify management of former User Libraries since the parent flow can call the child, wait for the child to complete its task, and send back supported variable types to the parent flow. 
+User Libraries are not supported in Power Automate desktop flows.  If your process contains a call to a user library, it is recommended the associated user library actions are copied into your desktop flow otherwise they will not be migrated using the Process Migrator for Softomotive Products.  The ‘Start Process’ action from ProcessRobot is on the roadmap to be reintroduced as ‘Run Flow’ in a future release.  This will simplify management of former User Libraries since the parent flow can call the child, wait for the child to complete its task, and send back supported variable types to the parent flow. 
 
 
 #### Process Robot Actions: 

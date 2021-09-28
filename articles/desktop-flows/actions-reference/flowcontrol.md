@@ -36,7 +36,7 @@ Control the automation flow
 
 ## Getting started with flow control
 
-Flow control refers to controlling the order in which actions and subflows run. Power Automate Desktop enables flow control through the flow control actions.
+Flow control refers to controlling the order in which actions and subflows run. Power Automate enables flow control through the flow control actions.
 
 **Labels** are used to create points of reference for the **Go to** action to direct the flow to. In the figure below, the flow is directed to a label earlier in the flow to repeat a series of actions.
 

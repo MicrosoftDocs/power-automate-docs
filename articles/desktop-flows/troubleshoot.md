@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Power Automate Desktop| Microsoft Docs
-description: Troubleshooting Power Automate Desktop
+title: Troubleshooting Power Automate | Microsoft Docs
+description: Troubleshooting Power Automate 
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,28 +23,28 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshooting Power Automate Desktop
+# Troubleshooting Power Automate
 
 To open the troubleshoot tool:
-1. Open the Power Automate Desktop console
+1. Open the Power Automate for desktop console
 1. Select Help
 1. Select Troubleshoot (Preview)
 
 >[!NOTE]
->You need to have admin privileges to open the troubleshoot tool from Power Automate Desktop  
+>You need to have admin privileges to open the troubleshoot tool from Power Automate  
 
 ## Resolve sign in and sign out issues
 
-Power Automate Desktop uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
+Power Automate uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
 
-If you encounter errors while signing in or signing out, try to delete this file to erase all the stored tokens. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop**. 
+If you encounter errors while signing in or signing out, try to delete this file to erase all the stored tokens. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate**. 
 
 > [!NOTE]
 > If the **AppData** folder isn't visible in your user folder, try to [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2).
 
-If you have installed Power Automate Desktop in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
+If you have installed Power Automate in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
 
-After deleting the **msalcache.bin3** file, restart the Power Automate Desktop service and sing in to your account.
+After deleting the **msalcache.bin3** file, restart the Power Automate service and sing in to your account.
 
 ![Screenshot of the msalcache.bin3 file in the file explorer.](\media\troubleshoot\msal-file.png)
 
@@ -57,7 +57,7 @@ Most environments wouldn't require to change the default configuration. If your 
 1. Provide the new account. Ex: DOMAIN\AlexJohnson  
 1. Provide the password of this account and select Configure
  
-![Screenshot of the Power Automate Desktop troubleshoot dialog.](\media\troubleshoot\image001.png)
+![Screenshot of the Power Automate troubleshoot dialog.](\media\troubleshoot\image001.png)
 
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 

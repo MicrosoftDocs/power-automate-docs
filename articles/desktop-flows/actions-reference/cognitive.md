@@ -50,7 +50,7 @@ Perform cognitive operations using Google, Microsoft or IBM services
 
 Cognitive services are machine learning algorithms that use artificial intelligence to perform complex operations, such as computer vision and visual recognition.
 
-Power Automate Desktop enables you to interact with various Microsoft, Google, and IBM cognitive services through the cognitive actions.
+Power Automate enables you to interact with various Microsoft, Google, and IBM cognitive services through the cognitive actions.
 
 All actions that use Microsoft services require a subscription key that validates your subscription for a service or group of services. The keys are available in the Azure portal for each resource that you've created. 
 

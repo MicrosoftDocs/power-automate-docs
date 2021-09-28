@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-The variables pane shows the input and output variables passed to and from Power Automate Desktop. It also displays all the variables used in the current flow under **Flow variables**. 
+The variables pane shows the input and output variables passed to and from Power Automate. It also displays all the variables used in the current flow under **Flow variables**. 
 
 ![The Variables pane.](media\variables-pane\variables-pane.png)
 
@@ -53,12 +53,12 @@ Although you can update variables' names manually through actions, the name will
 
 ## Input and output variables
 
-Power Automate Desktop enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate Desktop, allowing you to create sophisticated flows.
+Power Automate enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate for desktop, allowing you to create sophisticated flows.
 
 Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
 > [!NOTE]
-> You can find more information about passing data between Power Automate Desktop and Power Automate in [Trigger a Power Automate Desktop flow from another flow](link-pad-flow-portal.md).
+> You can find more information about passing data between Power Automate cloud flows and desktop flows in [Trigger a Power Automate flow from another flow](link-pad-flow-portal.md).
 
 ### Create an input variable
 
@@ -73,7 +73,7 @@ To create an input variable:
     - **Variable type**: Defines if the variable is input or output.
     - **Variable name**: The name of the variable in the flow.
     - **Data type**: The type of the variable, like number, text, or datetime.
-    - **Default value**: The default value when the flow runs from the Power Automate Desktop flow designer or the Power Automate Desktop console.
+    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
 

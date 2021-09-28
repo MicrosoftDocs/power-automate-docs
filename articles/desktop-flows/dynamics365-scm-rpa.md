@@ -1,6 +1,6 @@
 ---
 title: Create orders on Dynamics 365 Supply Chain Management | Microsoft Docs
-description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop.
+description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -36,7 +36,7 @@ Before starting, we need to prepare your environment with the adequate licenses 
 ### Software 
 
 You will need to: 
-- install the Power Automate Desktop application. Power Automate Desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
+- install the Power Automate for desktop application. Power Automate will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
 - Log out of the Dynamics 365 app you wish to automate 
 - Get the appropriate security role for the automation to run 
 
@@ -57,12 +57,12 @@ We recommend the following security roles:
 
 ### Licenses 
 
-If you already use Power Automate Desktop, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
+If you already use Power Automate, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
 
 Otherwise, you will need at least a trial license for these 3 products. This section shows you how to acquire these trial licenses.  
 
-#### Get a trial license for Power Automate Desktop  
-Power Automate Desktop can automate processes by doing what a human would do on a keyboard and screen.  
+#### Get a trial license for Power Automate  
+Power Automate can automate processes by doing what a human would do on a keyboard and screen.  
 
 There are two ways to automate processes: 
 1. Attended mode: someone is sitting in front of their computer and watching the process run as if they were doing it themselves manually 
@@ -76,7 +76,7 @@ To run unattended, users need to have acquire two licenses: **Power Automate per
 1. From the Power Automate portal, navigate to My Flows then on Desktop Flows 
 1. Click the fine print **Start free trial now**
 
-An alternative consists in logging in to Power Automate Desktop and clicking on the **Start free trial** button 
+An alternative consists in logging in to Power Automate for desktop and clicking on the **Start free trial** button 
 
 *Add a trial license for Power Automate unattended add-on to run processes in unattended mode*
 
@@ -94,9 +94,9 @@ To get started with Dynamics 365 Supply Chain Management and automate the qualit
 
 Now that prerequisites are set, we are on our way to get these free solutions that automate the processes. 
 
-#### Install Power Automate Desktop  
+#### Install Power Automate for desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate Desktop app on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate Desktop: [Set up Power Automate Desktop on your device - Power Automate | Microsoft Docs](install.md#install-power-automate-desktop) 
+1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate for desktop on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate : [Set up Power Automate for desktop on your device - Power Automate | Microsoft Docs](install.md#install-power-automate-desktop) 
 
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
 
@@ -110,7 +110,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 1. Add a desktop flow connector. 
     ![Image4.](./media/dynamics365-RPA/image007.png)
  
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate Desktop, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
+Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
     ![Image5.](./media/dynamics365-RPA/image009.png)
  
 ## Install the Dynamics 365 RPA solution 
@@ -168,7 +168,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     a. From the solution explorer, click on the line item called **QOrder – Desktop Flow**
     b. Click on **Edit** then **Launch App**
-    c. This will open the Power Automate Desktop  
+    c. This will open the Power Automate for desktop  
     d. Under the **Subflows** dropdown, double click on **LoginSCM**
     e. In the **LoginSCM** subflow, double click on action 8 
     f. Fill in the **Text** textbox with the password of the account to use during automation 

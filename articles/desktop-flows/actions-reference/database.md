@@ -49,7 +49,7 @@ To manually build a connection string, select **Build connections string** to op
 ![Screenshot of label in action.](\media\database\data-link-properties.png)
 
 > [!NOTE]
-> Power Automate Desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
+> Power Automate for desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
 
 ## Database actions
 

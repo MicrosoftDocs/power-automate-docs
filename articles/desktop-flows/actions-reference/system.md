@@ -65,13 +65,13 @@ Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown comput
 
 ## Getting started with scripting actions
 
-Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behaviour in Power Automate Desktop.
+Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behavior in Power Automate.
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
 
-To declare variables in scripting actions and return results in Power Automate Desktop, use the following commands:
+To declare variables in scripting actions and return results in Power Automate, use the following commands:
 
-- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate Desktop, use the **Write-Output** command.
+- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
 
   ```
   $variableName = "variableValue"
@@ -85,7 +85,7 @@ To declare variables in scripting actions and return results in Power Automate D
   print variableName
   ```
 
-- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate Desktop.
+- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate.
 
   ```
   variableName = "variableValue"
@@ -99,7 +99,7 @@ To declare variables in scripting actions and return results in Power Automate D
     WScript.Echo(variableName);
     ```
 
-To use Power Automate Desktop variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
+To use Power Automate variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
 
 ![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
 

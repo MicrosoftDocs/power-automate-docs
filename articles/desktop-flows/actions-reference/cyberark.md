@@ -25,7 +25,7 @@ Connect to CyberArk and retrieve passwords
 
 ## Getting started with CyberArk actions
 
-CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate Desktop enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
+CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
 
 To find the required information to populate the action, see the following instructions:
 
