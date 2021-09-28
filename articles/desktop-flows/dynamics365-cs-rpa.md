@@ -111,7 +111,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Change the machine settings from Power Automate to the environment to which  you will install the solution.
 
-    ![Power Automate Desktop Settings 1](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
+    ![Power Automate for desktop Settings 1](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
 1. [Log in](https://powerautomate.microsoft.com/manage/flows) and confirm you can create a test cloud flow with a manual trigger.
 
@@ -212,7 +212,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Now you can start customizing the automation to meet your unique requirements. To do this, open Power Automate and then select **Edit** on the **Legacy Contoso App Contact Lookup** desktop flow.
 
-   ![Power Automate Desktop 1](./media/dynamics365-cs-rpa/a93f6fd5dd7cf00398816add4711c557.png)
+   ![Power Automate for desktop 1](./media/dynamics365-cs-rpa/a93f6fd5dd7cf00398816add4711c557.png)
 
 1. You can save a copy to work on your customizations or work on the template directly.
 
@@ -220,7 +220,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. After you test the desktop flow, you can save it. Now open the cloud flow in <https://powerautomate.microsoft.com/manage/solutions> from within the solution tab -\> Customer Service RPA solution
 
-    ![Power Automate Desktop 2](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
+    ![Power Automate for desktop 2](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
 
 1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](link-pad-flow-portal.md) on how to use desktop flow in cloud flow.
 

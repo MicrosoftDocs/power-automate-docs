@@ -100,7 +100,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
-   ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/register-machines/connect-directly-to-machine.png)
+   ![Screenshot of the Run a flow built with Power Automate for desktop action.](./media/register-machines/connect-directly-to-machine.png)
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
