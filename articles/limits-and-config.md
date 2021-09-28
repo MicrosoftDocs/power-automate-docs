@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/07/2021
+ms.date: 09/28/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -199,7 +199,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 #### Retry setting limits
 
-To change the default settings, use the retry policy parameter. Limits for the retry settings are defined below.
+To change the default settings, use the retry policy parameter. Here are the limits for the retry settings.
 | Name | Limit |
 | ---- | ----- |
 | Retry attempts | 90 |
