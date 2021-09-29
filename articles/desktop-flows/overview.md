@@ -29,7 +29,7 @@ search.audienceType:
 >This section covers legacy topics, including use of Windows recorder (V1) and Selenium IDE to create automation scripts. If you are just starting your RPA automation project, we recommend that you use [Power Automate](introduction.md))
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported.**Migrate** your flows to Power Automate or **delete** them.  
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
 
 Read on if you already have automation built using Windows recorder (V1) and Selenium IDE.
 

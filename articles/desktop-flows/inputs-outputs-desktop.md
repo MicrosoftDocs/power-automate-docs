@@ -26,7 +26,7 @@ search.audienceType:
 # Use inputs and outputs in Windows recorder (V1) flows
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported.**Migrate** your flows to Power Automate or **delete** them.  
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
 
 Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that Windows recorder (V1) automates.
 

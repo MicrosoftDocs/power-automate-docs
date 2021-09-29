@@ -26,7 +26,7 @@ search.audienceType:
 # Use Input Method Editors (IMEs) in UI flows
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported.**Migrate** your flows to Power Automate or **delete** them.  
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**]() your flows to Power Automate or **delete** them.  
 
 You can use the **Add static text** feature to record text input, in any language, using IMEs or regular keyboards in your UI flows. Use **Add static text** if you want the automation to insert the same text each time your UI flow runs. 
 

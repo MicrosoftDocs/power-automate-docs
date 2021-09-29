@@ -26,7 +26,7 @@ search.audienceType:
 # Create and test Windows recorder (V1) flows
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported.**Migrate** your flows to Power Automate or **delete** them.  
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
