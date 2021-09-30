@@ -66,7 +66,7 @@ The **Recognize entities in text** action gets a text or a variable containing t
 
 The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
 
-|Entity      |Input text                                                            |Result                                                                             |
+|Entity      |Input text                                                            |Returned values                                                                    |
 |------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019          |
 |Date time   |Schedule a meeting tongiht at 7pm                                     |**DateTime:** 9/30/2021 7:00:00 PM </br> **Original text:** 7pm                    |
