@@ -57,7 +57,71 @@ To ensure that numbers are stored as numerical values, use the **Convert text to
 
 Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
 
+## Getting started with the Recognize entities in text action
 
+Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
+
+The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results.
+
+Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
+
+The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
+
+|Entity      |Input text                                                            |Result                                                               |
+|------------|----------------------------------------------------------------------|---------------------------------------------------------------------|
+|Date time   |I'll go back 04th Jan 2019                                            |DateTime: 1/4/2019 12:00:00 AM                                       |
+|            |                                                                      |Original text: 04th Jan 2019                                         |
+|            |Schedule a meeting tongiht at 7pm                                     |DateTime: 9/30/2021 7:00:00 PM                                       |
+|            |                                                                      |Original text: 7pm                                                   |
+|Dimension   |You weight 200lbs                                                     |Value: 200                                                           |
+|            |                                                                      |Unit: Pound                                                          |
+|            |                                                                      |Original text: 200lbs                                                |
+|            |Α twister roared through an area about ten miles long there           |Value: 10                                                            |
+|            |                                                                      |Unit: Mile                                                           |
+|            |                                                                      |Original text: ten miles                                             |
+|Temperature |Τhe temperature outside is 40 deg celsius                             |Value: 40                                                            |
+|            |                                                                      |Unit: C                                                              |
+|            |                                                                      |Original text: 40 deg celsius                                        |
+|Currency    |Νet interest income sank 27 percent in the quarter to $ 254 million   |Value: 254000000                                                     |
+|            |                                                                      |Unit: Dollar                                                         |
+|            |                                                                      |Original text: $ 254 million                                         |
+|Number range|This number is larger than twenty and less or equal than thirty five  |From: 20                                                             |
+|            |                                                                      |To: 35                                                               |
+|            |                                                                      |Original text: larger than twenty and less or equal than thirty five |
+|            |From 5 to 10                                                          |From: 5                                                              |
+|            |                                                                      |To: 10                                                               |
+|            |                                                                      |Original text: From 5 to 10                                          |
+|            |Less than 4.565                                                       |From: 0                                                              |
+|            |                                                                      |To: 4.565                                                            |
+|            |                                                                      |Original text: Less than 4.565                                       |
+|Number      |A dozen                                                               |Value: 12                                                            |
+|            |                                                                      |Original text: A dozen                                               |
+|            |Two thirds                                                            |Value: 0.666666666666667                                             |
+|            |                                                                      |Original text: Two thirds                                            |
+|Ordinal     |I like the first two books                                            |Value: 1                                                             |
+|            |                                                                      |Original text: first                                                 |
+|            |Eleventh                                                              |Value: 11                                                            |
+|            |                                                                      |Original text: Eleventh                                              |
+|Percentage  |100 percent                                                           |Value: 100                                                           |
+|            |                                                                      |Original text: 100 percent                                           |
+|Phone number|Tel: +1 209-555-0100                                                  |Value: +1 209-555-0100                                               |
+|            |                                                                      |Original text: +1 209-555-0100                                       |
+|Email       |felix@contoso.com                                                     |Value: felix@contoso.com                                             |
+|            |                                                                      |Original text: felix@contoso.com                                     |
+|IP address  |My PC IP address is 1.1.1.1                                           |Value: 1.1.1.1                                                       |
+|            |                                                                      |Original text: 1.1.1.1                                               |
+|Mention     |@Alice                                                                |Value: @Alice                                                        |
+|            |                                                                      |Original text: @Alice                                                |
+|Hashtag     |#News                                                                 |Value: #News                                                         |
+|            |                                                                      |Original text: #News                                                 |
+|URL         |www.microsoft.com                                                     |Value: www.microsoft.com                                             |
+|            |                                                                      |Original text: www.microsoft.com                                     |
+|GUID        |123e4567-e89b-12d3-a456-426655440000                                  |Value: 123e4567-e89b-12d3-a456-426655440000                          |
+|            |                                                                      |Original text: 123e4567-e89b-12d3-a456-426655440000                  |
+|Quoted text |Enter the value in the "value" field                                  |Value: "value"                                                       |
+|            |                                                                      |Original text: "value"                                               |
+
+The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
 
 ## Text actions
 
@@ -382,6 +446,23 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+### <a name="recognizeentitiesintext"></a> Recognize entities in text
+Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to recognize from|No|Text value||The text to recognize entities from|
+|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, Url etc.)|
+|Language|N/A|English (United States), Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English (United States)|Specify the language of the text|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|RecognizedEntities|Datatable|The recognized entities|
+
+##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
+- This action doesn't include any exceptions
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
