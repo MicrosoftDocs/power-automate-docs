@@ -144,9 +144,9 @@ To set a variable as sensitive, right-click on it in the variables pane and sele
 
 Apart from the context menus, you can use the dedicated icon next to each variable to mark it as sensitive or not sensitive.
 
-### Sensitive input variables
+### Sensitive inputand output variables
 
-When creating or editing an input variable, select **Mark as sensitive** in the respective dialog to make it sensitive.
+When creating or editing an input or output variable, select **Mark as sensitive** in the respective dialog to make it sensitive.
 
 The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This functionality is implemented because this value exists only for testing and debugging purposes. Each input has to be initialized in production runs from the portal. 
 
