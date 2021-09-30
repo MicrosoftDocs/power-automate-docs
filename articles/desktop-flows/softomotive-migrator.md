@@ -18,6 +18,9 @@ search.audienceType:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 <!-- ProcessRobot users are now able to export .prp files into folders and --> 
+> [!IMPORTANT]
+> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Migrate your flows to Power Automate or delete them.
+
 
 Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate Desktop.
 
