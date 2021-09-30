@@ -65,58 +65,30 @@ The **Recognize entities in text** action gets a text or a variable containing t
 
 The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
 
-|Entity      |Input text                                                            |Result                                                               |
-|------------|----------------------------------------------------------------------|---------------------------------------------------------------------|
-|Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019    |
-|            |Schedule a meeting tongiht at 7pm                                     |DateTime: 9/30/2021 7:00:00 PM                                       |
-|            |                                                                      |Original text: 7pm                                                   |
-|Dimension   |You weight 200lbs                                                     |Value: 200                                                           |
-|            |                                                                      |Unit: Pound                                                          |
-|            |                                                                      |Original text: 200lbs                                                |
-|            |Α twister roared through an area about ten miles long there           |Value: 10                                                            |
-|            |                                                                      |Unit: Mile                                                           |
-|            |                                                                      |Original text: ten miles                                             |
-|Temperature |Τhe temperature outside is 40 deg celsius                             |Value: 40                                                            |
-|            |                                                                      |Unit: C                                                              |
-|            |                                                                      |Original text: 40 deg celsius                                        |
-|Currency    |Νet interest income sank 27 percent in the quarter to $ 254 million   |Value: 254000000                                                     |
-|            |                                                                      |Unit: Dollar                                                         |
-|            |                                                                      |Original text: $ 254 million                                         |
-|Number range|This number is larger than twenty and less or equal than thirty five  |From: 20                                                             |
-|            |                                                                      |To: 35                                                               |
-|            |                                                                      |Original text: larger than twenty and less or equal than thirty five |
-|            |From 5 to 10                                                          |From: 5                                                              |
-|            |                                                                      |To: 10                                                               |
-|            |                                                                      |Original text: From 5 to 10                                          |
-|            |Less than 4.565                                                       |From: 0                                                              |
-|            |                                                                      |To: 4.565                                                            |
-|            |                                                                      |Original text: Less than 4.565                                       |
-|Number      |A dozen                                                               |Value: 12                                                            |
-|            |                                                                      |Original text: A dozen                                               |
-|            |Two thirds                                                            |Value: 0.666666666666667                                             |
-|            |                                                                      |Original text: Two thirds                                            |
-|Ordinal     |I like the first two books                                            |Value: 1                                                             |
-|            |                                                                      |Original text: first                                                 |
-|            |Eleventh                                                              |Value: 11                                                            |
-|            |                                                                      |Original text: Eleventh                                              |
-|Percentage  |100 percent                                                           |Value: 100                                                           |
-|            |                                                                      |Original text: 100 percent                                           |
-|Phone number|Tel: +1 209-555-0100                                                  |Value: +1 209-555-0100                                               |
-|            |                                                                      |Original text: +1 209-555-0100                                       |
-|Email       |felix@contoso.com                                                     |Value: felix@contoso.com                                             |
-|            |                                                                      |Original text: felix@contoso.com                                     |
-|IP address  |My PC IP address is 1.1.1.1                                           |Value: 1.1.1.1                                                       |
-|            |                                                                      |Original text: 1.1.1.1                                               |
-|Mention     |@Alice                                                                |Value: @Alice                                                        |
-|            |                                                                      |Original text: @Alice                                                |
-|Hashtag     |#News                                                                 |Value: #News                                                         |
-|            |                                                                      |Original text: #News                                                 |
-|URL         |www.microsoft.com                                                     |Value: www.microsoft.com                                             |
-|            |                                                                      |Original text: www.microsoft.com                                     |
-|GUID        |123e4567-e89b-12d3-a456-426655440000                                  |Value: 123e4567-e89b-12d3-a456-426655440000                          |
-|            |                                                                      |Original text: 123e4567-e89b-12d3-a456-426655440000                  |
-|Quoted text |Enter the value in the "value" field                                  |Value: "value"                                                       |
-|            |                                                                      |Original text: "value"                                               |
+|Entity      |Input text                                                            |Result                                                                             |
+|------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+|Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019          |
+|Date time   |Schedule a meeting tongiht at 7pm                                     |**DateTime:** 9/30/2021 7:00:00 PM </br> **Original text:** 7pm                    |
+|Dimension   |You weight 200lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200lbs               |
+|Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
+|Temperature |Τhe temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
+|Currency    |Νet interest income sank 27 percent in the quarter to /$ 254 million  |**Value:** 254000000 </br> **Unit:** Dollar </br> **Original text:** $ 254 million |
+|Number range|This number is larger than twenty and less or equal than thirty five  |**From:** 20 </br> **To:** 35 </br> **Original text:** larger than twenty and less or equal than thirty five |
+|Number range|From 5 to 10                                                          |**From:** 5 </br> **To:** 10 </br> **Original text:** From 5 to 10                 |
+|Number range|Less than 4.565                                                       |**From:** 0 </br> **To:** 4.565 </br> **Original text:** Less than 4.565           |
+|Number      |A dozen                                                               |**Value:** 12 </br> **Original text:** A dozen                                     |
+|Number      |Two thirds                                                            |**Value:** 0.666666666666667 </br> **Original text:** Two thirds                   |
+|Ordinal     |I like the first two books                                            |**Value:** 1 </br> **Original text:** first                                        |
+|Ordinal     |Eleventh                                                              |**Value:** 11 </br> **Original text:** Eleventh                                    |
+|Percentage  |100 percent                                                           |**Value:** 100 </br> **Original text:** 100 percent                                |
+|Phone number|Tel: +1 209-555-0100                                                  |**Value:** +1 209-555-0100 </br> **Original text:** +1 209-555-0100                |
+|Email       |felix@contoso.com                                                     |**Value:** felix@contoso.com </br> **Original text:** felix@contoso.com            |
+|IP address  |My PC IP address is 1.1.1.1                                           |**Value:** 1.1.1.1 </br> **Original text:** 1.1.1.1                                |
+|Mention     |@Alice                                                                |**Value:** @Alice </br> **Original text:** @Alice                                  |
+|Hashtag     |#News                                                                 |**Value:** #News </br> **Original text:** #News                                    |
+|URL         |www.microsoft.com                                                     |**Value:** www.microsoft.com </br> **Original text:** www.microsoft.com            |
+|GUID        |123e4567-e89b-12d3-a456-426655440000                                  |**Value:** 123e4567-e89b-12d3-a456-426655440000 </br> **Original text:** 123e4567-e89b-12d3-a456-426655440000 |
+|Quoted text |Enter the value in the "value" field                                  |**Value:** "value" </br> **Original text:** "value"                                |
 
 The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
 
