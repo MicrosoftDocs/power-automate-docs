@@ -124,8 +124,6 @@ To update an input/output variable:
 
     ![The Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
-
-<!---
 ## Sensitive variables
 
 > [!IMPORTANT]
@@ -165,8 +163,5 @@ The eye icon to reveal the value isn't available unless the user deletes the def
 - **Issue:** Hardcoded values aren't supported as sensitive. If you set a new variable with a hardcoded value and mark it as sensitive, it won't be logged when used in following actions. However, the hardcoded value will be visible in the logs of the original "Set variable" action.
 
 - **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. 
-
--->
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
