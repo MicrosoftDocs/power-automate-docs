@@ -426,7 +426,7 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to recognize from|No|Text value||The text to recognize entities from|
-|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, Url etc.)|
+|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, URL etc.)|
 |Language|N/A|English (United States), Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English (United States)|Specify the language of the text|
 
 ##### Variables Produced
