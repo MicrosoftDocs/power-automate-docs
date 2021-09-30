@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/07/2021
+ms.date: 09/28/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -190,12 +190,23 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ### Retry policy
 
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Retry attempts | 90 | The default is 2. To change the default, use the retry policy parameter. |
-| Retry max delay | 1 day | To change the default, use the retry policy parameter. |
-| Retry min delay | 5 seconds | To change the default, use the retry policy parameter. |
+#### Default retry policy
 
+| Performance profile | Description |
+| ------------------- | ----------- |
+| Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
+| MediumLow1, MediumLow2, Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
+
+#### Retry setting limits
+
+To change the default settings, use the retry policy parameter. Here are the limits for the retry settings.
+| Name | Limit |
+| ---- | ----- |
+| Retry attempts | 90 |
+| Retry max delay | 1 day |
+| Retry min delay | 5 seconds |
+
+For more information on other retry policies, see [Azure Logic Apps Retry Policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
 
 ## Turning off or deleting flows
 
