@@ -38,6 +38,7 @@ Control and manipulate text
 |[Parse text](#parsetext)|
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
+|[Recognize entities in text](#recognizeentitiesintext)|
 
 ## Getting started with text actions
 
