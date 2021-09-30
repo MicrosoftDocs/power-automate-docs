@@ -124,5 +124,48 @@ To update an input/output variable:
 
     ![The Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
+## Sensitive variables
+
+> [!IMPORTANT]
+> Flows developed in older versions of Power Automate for desktop remain unaffected from the sensitive variables functionality. Users can run existing flows from the console and the portal without editing them. Existing flows still have the old behavior and work in the same way as before. 
+
+There are scenarios where flows handle sensitive information that needs to be hidden while debugging and running the flow.
+
+Power Automate for desktop allows users to create sensitive variables that aren't visible when a flow runs from within the flow designer. 
+
+> [!NOTE]
+> If you have logged in with an organization premium account, the values of sensitive variables aren't logged in the Power Automate portal when the flow runs from the console or a cloud flow. 
+
+Users can set any variable as sensitive, independently of its type, via the variables pane. Sensitive variables can be manipulated, referenced, processed, and used in every action without any limitation, like every other variable. 
+
+In the flow designer, the sensitivity works as a mask that can be set on and off. Thus, users can unmask sensitive variables to see their values or mask them again to hide their values. 
+
+> [!NOTE]
+> The value of a sensitive variable is visible when the variable is sent to an application outside Power Automate for desktop or displayed through the **Display message**  action. 
+
+To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as no sensitive**. 
+
+Apart from the context menus, you can use the dedicated icon next to each variable to mark it as sensitive or not sensitive.
+
+### Sensitive input variables
+
+When creating or editing an input variable, select **Mark as sensitive** in the respective dialog to make it sensitive.
+
+The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. 
+
+This functionality is implemented because this value exists only for testing and debugging purposes. Each input has to be initialized in production runs from the portal. 
+
+But, on the other hand, the default value isn't visible in the variables pane. Additionally, the default value of a sensitive input variable is hidden in the **Flow input** dialog, which appears when a flow containing inputs variables is run through the console.
+
+The eye icon to reveal the value isn't available unless the user deletes the default value and provides a new one. 
+
+### Known issues and limitations
+
+- **Issue:** Hardcoded values aren't supported as sensitive. If you set a new variable with a hardcoded value and mark it as sensitive, it won't be logged when used in following actions. However, the hardcoded value will be visible in the logs of the original "Set variable" action.
+
+- **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. 
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
