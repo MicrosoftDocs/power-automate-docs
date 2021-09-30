@@ -62,6 +62,8 @@ Similarly, the actions **Convert text to datetime** and **Convert datetime to te
 
 Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
+![Screenshot of the Recognize entities in text action](\media\text\recognize-entities-text-action.png)
+
 The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results. Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
 
 The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
@@ -91,7 +93,8 @@ The following table displays various examples of entities that the **Recognize e
 |GUID        |123e4567-e89b-12d3-a456-426655440000                                  |**Value:** 123e4567-e89b-12d3-a456-426655440000 </br> **Original text:** 123e4567-e89b-12d3-a456-426655440000 |
 |Quoted text |Enter the value in the "value" field                                  |**Value:** "value" </br> **Original text:** "value"                                |
 
-The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
+>[!NOTE]
+> The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
 
 ## Text actions
 
