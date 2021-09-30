@@ -124,6 +124,8 @@ To update an input/output variable:
 
     ![The Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
+
+<!---
 ## Sensitive variables
 
 > [!IMPORTANT]
@@ -164,7 +166,7 @@ The eye icon to reveal the value isn't available unless the user deletes the def
 
 - **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. 
 
-
+-->
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
