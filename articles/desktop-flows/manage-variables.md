@@ -156,6 +156,10 @@ The eye icon to reveal the value isn't available unless the user deletes the def
 
 ### Known issues and limitations
 
+- **Issue:** Flows built or edited with Power Automate for desktop version 2.14 or above are incompatible with older versions of Power Automate for desktop. You can't use older versions of Power Automate for desktop to open or run these flows.
+
+- **Workarounds:** None.
+
 - **Issue:** Hardcoded values aren't supported as sensitive. If you set a new variable with a hardcoded value and mark it as sensitive, it won't be logged when used in following actions. However, the hardcoded value will be visible in the logs of the original "Set variable" action.
 
 - **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. 
