@@ -25,6 +25,9 @@ search.audienceType:
 
 # Migrate from Windows recorder (V1) to Power Automate desktop flows
 
+>[!IMPORTANT]
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. **Migrate** your flows to Power Automate or **delete** them.  
+
 You can migrate desktop flows you've created with the legacy Windows recorder
 (V1) into Power Automate desktop flows in just a few steps.
 

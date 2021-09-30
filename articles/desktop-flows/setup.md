@@ -50,7 +50,6 @@ search.audienceType:
 | Activity |  Description |Windows Home |  Windows Enterprise / Pro / Server  | 
 |---------|------|----------|-----------|
 | Authoring | Create with Power Automate for desktop |  Yes |  Yes  | 
-| Authoring | Create with Windows Recorder V1 |  No |  Yes  |
 | Authoring | Create with Selenium IDE |  No |  Yes  |
 | Runtime | Local runtime (Attended) |  Yes |  Yes  |
 | Runtime | Cloud runtime (Attended / Unattended) |  No |  Yes  |
