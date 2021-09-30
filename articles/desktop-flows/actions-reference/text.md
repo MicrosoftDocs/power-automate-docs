@@ -61,16 +61,13 @@ Similarly, the actions **Convert text to datetime** and **Convert datetime to te
 
 Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
-The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results.
-
-Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
+The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results. Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
 
 The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
 
 |Entity      |Input text                                                            |Result                                                               |
 |------------|----------------------------------------------------------------------|---------------------------------------------------------------------|
-|Date time   |I'll go back 04th Jan 2019                                            |DateTime: 1/4/2019 12:00:00 AM                                       |
-|            |                                                                      |Original text: 04th Jan 2019                                         |
+|Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019    |
 |            |Schedule a meeting tongiht at 7pm                                     |DateTime: 9/30/2021 7:00:00 PM                                       |
 |            |                                                                      |Original text: 7pm                                                   |
 |Dimension   |You weight 200lbs                                                     |Value: 200                                                           |
