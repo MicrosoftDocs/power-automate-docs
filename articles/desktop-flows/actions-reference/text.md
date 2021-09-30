@@ -82,11 +82,11 @@ The following table displays various examples of entities that the **Recognize e
 |Ordinal     |Eleventh                                                              |**Value:** 11 </br> **Original text:** Eleventh                                    |
 |Percentage  |100 percent                                                           |**Value:** 100 </br> **Original text:** 100 percent                                |
 |Phone number|Tel: +1 209-555-0100                                                  |**Value:** +1 209-555-0100 </br> **Original text:** +1 209-555-0100                |
-|Email       |felix@contoso.com                                                     |**Value:** felix@contoso.com </br> **Original text:** felix@contoso.com            |
+|Email       |felix<area>@contoso.<area>com                                         |**Value:** felix<area>@contoso.<area>com </br> **Original text:** felix<area>@contoso.<area>com |
 |IP address  |My PC IP address is 1.1.1.1                                           |**Value:** 1.1.1.1 </br> **Original text:** 1.1.1.1                                |
 |Mention     |@Alice                                                                |**Value:** @Alice </br> **Original text:** @Alice                                  |
 |Hashtag     |#News                                                                 |**Value:** #News </br> **Original text:** #News                                    |
-|URL         |www.microsoft.com                                                     |**Value:** www.microsoft.com </br> **Original text:** www.microsoft.com            |
+|URL         |www<area>.microsoft.<area>com                                         |**Value:** www.<area>microsoft.<area>com  </br> **Original text:** www<area>.microsoft.<area>com |
 |GUID        |123e4567-e89b-12d3-a456-426655440000                                  |**Value:** 123e4567-e89b-12d3-a456-426655440000 </br> **Original text:** 123e4567-e89b-12d3-a456-426655440000 |
 |Quoted text |Enter the value in the "value" field                                  |**Value:** "value" </br> **Original text:** "value"                                |
 
