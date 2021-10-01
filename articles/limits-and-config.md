@@ -200,11 +200,12 @@ Some connector operations make asynchronous calls or listen for webhook requests
 #### Retry setting limits
 
 To change the default settings, use the retry policy parameter. Here are the limits for the retry settings.
+
 | Name | Limit |
 | ---- | ----- |
 | Retry attempts | 90 |
-| Retry max delay | 1 day |
-| Retry min delay | 5 seconds |
+| Retry maximum delay | 1 day |
+| Retry minimum delay | 5 seconds |
 
 For more information on other retry policies, see [Azure Logic Apps Retry Policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
 
