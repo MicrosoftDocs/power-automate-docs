@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/3/2021
+ms.date: 09/30/2021
 ms.author: tatn
 search.app: 
   - Flow
@@ -49,13 +49,6 @@ The following terms are commonly used in Power Automate.
  [Business process flows overview](business-process-flows-overview.md)
 
 ## C
-
-**Microsoft Dataverse:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It's an abstraction on top of underlying Azure cloud data management services to make it easier to build business applications.
-
- [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
-
-
-**Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft Teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
 
 **Conditions:** Conditions tell flow to perform actions based on predetermined logic set in the flow. If certain conditions are true, then one or more tasks will be completed. For example, users can create conditions that specify that you'll get an email when a tweet that contains a keyword is retweeted at least 10 times.
 
@@ -96,6 +89,14 @@ The following terms are commonly used in Power Automate.
 **Item:** As a Power Automate trigger, an item represents a row in a Microsoft SharePoint list. What it actually is depends on the user's list. For example, it can be a row in Microsoft Excel, or a table in a Microsoft Word document.
 
 ## M
+
+**Microsoft Dataverse:** A cloud-scale database used to store data for business applications such as Power Automate and Power Apps. It's an abstraction on top of underlying Azure cloud data management services to make it easier to build business applications.
+
+ [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
+
+
+**Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft Teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
+
 
 **Multistep flows:** A multistep flow uses more than one action to accomplish a task.
 
