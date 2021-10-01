@@ -200,6 +200,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 #### Retry setting limits
 
 To change the default settings, use the retry policy parameter. Here are the limits for the retry settings.
+
 | Name | Limit |
 | ---- | ----- |
 | Retry attempts | 90 |
