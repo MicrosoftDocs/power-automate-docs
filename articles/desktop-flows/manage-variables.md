@@ -21,7 +21,7 @@ search.audienceType:
 
 The variables pane shows the input and output variables passed to and from Power Automate. It also displays all the variables used in the current flow under **Flow variables**. 
 
-![The Variables pane.](media\variables-pane\variables-pane.png)
+![Screenshot of the Variables pane.](media\variables-pane\variables-pane.png)
 
 Through the **Variables** pane, you can search for variables, rename them, find their usages and filter them by type. 
 
@@ -29,25 +29,25 @@ Through the **Variables** pane, you can search for variables, rename them, find 
 
 When the flow runs, the current value of each variable is shown next to its name. Variables of disabled actions are omitted. To clear the values of all variables, select the eraser icon at the bottom of the pane.
 
-![The current variables' values displayed in the variables pane.](media\variables-pane\current-variable-values.png)
+![Screenshot of the current variables' values displayed in the variables pane.](media\variables-pane\current-variable-values.png)
 
 To view the value of a variable in more detail, double-click on the variable. The **variable value viewer** shows the data type of the variable, and expands any datarows or datatables to show their contents.
 
-![The current variables' values displayed in detail in the variable value viewer.](media\variables-pane\variable-viewer.png)
+![Screenshot of the current variables' values displayed in detail in the variable value viewer.](media\variables-pane\variable-viewer.png)
 
 Certain data types may contain nested elements. For example, a custom object type variable may contain another custom object in its properties. The figure below shows the variable **CustomerObject** which contains **Company**, another custom object. To view the properties of the nested element, select **More**.
 
-![Parent custom object example.](media\variables-pane\custom-object-parent.png)
+![Screenshot of a parent custom object example.](media\variables-pane\custom-object-parent.png)
 
 The variable value viewer displays the properties of the child custom object. To go back to the parent custom object, select the arrow.
 
-![Child custom object example.](media\variables-pane\custom-object-child.png)
+![Screenshot of a child custom object example.](media\variables-pane\custom-object-child.png)
 
 ## Renaming a desktop variable
 
 To rename a desktop flow variable, make a right-click on its name in the **Variables** pane and select **Rename**. The name of the variable will be updated in all its occurrences.
 
-![The Rename option for flow variables.](media\renaming-variables\rename-flow-variable.png)
+![Screenshot of the Rename option for flow variables.](media\renaming-variables\rename-flow-variable.png)
 
 Although you can update variables' names manually through actions, the name will be changed only in these specific actions, not globally. 
 
@@ -66,7 +66,7 @@ To create an input variable:
 
 1. Select the (**+**) button in the variables pane and then **Input**.
 
-     ![The plus button in the variables pane to create a new input variable.](media\input-output-variables\create-input-variable.png)
+     ![Screenshot of the plus button in the variables pane that creates a new input variable.](media\input-output-variables\create-input-variable.png)
 
 1. When the **Add a new input variable** dialog is appeared, populate the following fields:
 
@@ -80,11 +80,11 @@ To create an input variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
-     ![The Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
+     ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
 If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
 
-   ![The Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
+   ![Screenshot of the Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
 
 ### Create an output variable
 
@@ -92,7 +92,7 @@ To create an output variable:
 
 1. Select the (**+**) button in the variables pane and then **Output**.
 
-    ![The plus button in the variables pane to create a new output variable.](media\input-output-variables\create-output-variable.png)
+    ![Screnshot of the plus button in the variables pane that creates a new output variable.](media\input-output-variables\create-output-variable.png)
 
 1. When the **Add a new output variable** dialog is appeared, populate the following fields:
 
@@ -104,13 +104,13 @@ To create an output variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
 
-    ![The Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
+    ![Screenshot of the Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
 
 ### Manage input and output variables
 
 All the created input and output variables are displayed in the appropriate section of the variables pane.
 
-![The input output variables section of the variables pane.](media\input-output-variables\variables-pane-input-output-variables.png)
+![Screenshot of the input output variables section of the variables pane.](media\input-output-variables\variables-pane-input-output-variables.png)
 
 Through this pane, you can rename, update, delete, and find the usages of each input/output variable.
 
@@ -118,11 +118,11 @@ To update an input/output variable:
 
 1.  Right-click on its name in the variables pane and select **Edit**.
 
-    ![The Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
+    ![Screenshot of the Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
 2. In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
 
-    ![The Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
+    ![Screenshot of the Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
 ## Sensitive variables
 
@@ -142,17 +142,25 @@ In the flow designer, the sensitivity works as a mask that can be set on and off
 
 To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as no sensitive**. 
 
+![Screenshot of the Mark as sensitive option.](media\sensitive-variables\mark-as-sensitive-option.png)
+
 Apart from the context menus, you can use the dedicated icon next to each variable to mark it as sensitive or not sensitive.
+
+![Screenshot of the Mark as sensitive icon.](media\sensitive-variables\mark-as-sensitive-icon.png)
 
 ### Sensitive inputand output variables
 
 When creating or editing an input or output variable, select **Mark as sensitive** in the respective dialog to make it sensitive.
+
+![Screenshot of the Add a new input variable dialog.](media\sensitive-variables\create-sensitive-input-variable.png)
 
 The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This functionality is implemented because this value exists only for testing and debugging purposes. Each input has to be initialized in production runs from the portal. 
 
 On the other hand, the default value isn't visible in the variables pane. Additionally, the default value of a sensitive input variable is hidden in the **Flow input** dialog, which appears when a flow containing inputs variables is run through the console.
 
 The eye icon to reveal the value isn't available unless the user deletes the default value and provides a new one. 
+
+![Screenshot of the Flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
 ### Known issues and limitations
 
