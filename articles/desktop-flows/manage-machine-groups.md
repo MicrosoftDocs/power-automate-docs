@@ -17,8 +17,6 @@ search.audienceType:
 
 # Manage machine groups
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 ## Create a machine group 
 
 Machine groups allow you to organize multiple machines together to help distribute your automation workload and optimize productivity. 
