@@ -19,7 +19,7 @@ search.audienceType:
 
 It's common in flow development to create flows that use several windows with the same title and class.
 
-Power Automate Desktop enables users to distinguish identical windows using handles. Handles are numbers that uniquely identify each window.
+Power Automate enables users to distinguish identical windows using handles. Handles are numbers that uniquely identify each window.
 
 To retrieve the handle of a window, launch the application with the **Run application** action and set the **After application launch** drop-down menu to **Wait for application to load**. The handle is stored by default in a variable named **WindowHandle**.
 

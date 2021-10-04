@@ -34,14 +34,14 @@ While developing desktop flows, you may encounter errors caused by deployed data
 
 1. Escape percentage signs (**%**) that don't indicate variables.
 
-    Power Automate Desktops identifies percentage signs as characters that indicate variables. To use them as normal characters, escape them using an extra percentage sign. 
+    Power Automate identifies percentage signs as characters that indicate variables. To use them as normal characters, escape them using an extra percentage sign. 
     
     > [!NOTE]
     > You can find more information about the percentage signs in [Use variables and the % notation](../variable-manipulation.md).
 
-1. Ensure that the same versions (32 bit or 64 bit) of database, database server, and Power Automate Desktop are installed on your desktop. 
+1. Ensure that the same versions (32 bit or 64 bit) of database, database server, and Power Automate for desktop are installed on your desktop. 
 
-1. Verify that the firewall or any other network security system isn't blocking the connection between Power Automate Desktop and the database. 
+1. Verify that the firewall or any other network security system isn't blocking the connection between Power Automate and the database. 
 
 1. If you're using database actions to run queries on Excel files, ensure that you've applied the following practices:
     

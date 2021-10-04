@@ -52,7 +52,7 @@ You can find more information on how to use the UI automation actions [here](../
 
 ## Getting started with UI automation
 
-Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
+Power Automate provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
 
 To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
 
@@ -608,7 +608,7 @@ Expands or collapses a node of a tree view residing in a window
 |Operation|N/A|Expand, Collapse|Expand|Specify whether to expand or collapse the tree node|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

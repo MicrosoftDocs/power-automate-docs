@@ -15,17 +15,15 @@ search.audienceType:
   - enduser
 ---
 
-# Manage machines (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Manage machines 
 
 Machines are the physical or virtual devices that are used to automate your desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the wide array of [available triggers](../triggers-introduction.md), such as when you receive an e-mail or on a pre-defined scheduled. 
 
-Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate Desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
+Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA). The easiest way to connect your machine to the cloud is with our direct connectivity. All you need to do is ensure that you are signed into the latest version of Power Automate for desktop, and your machine will be registered with Power Automate automatically. Once registered, you can create a connection right away in your cloud flows. 
 
 
 > [!IMPORTANT]
-> Direct connectivity is only available for versions of Power Automate Desktop  2.8.73.21119 or newer. If you are using an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
+> Direct connectivity is only available for versions of Power Automate  2.8.73.21119 or newer. If you are using an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 > [!IMPORTANT]
 > In order to register your machine and use the machine management features, your Power Platform environment must have a version of the MicrosoftFlowExtensionsCore solution that is greater than or equal to 1.2.4.1. 
@@ -34,7 +32,7 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 Your machine will be automatically registered on the currently selected environment in the application. If you do not have permission to register your machine in that environment or want to use another environment, you will need to update the environment. 
 
-1. [Install the latest version](install.md) of Power Automate Desktop on your device. If you already have the latest version, skip to step 3. 
+1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip to step 3. 
 
 1. Make sure you have checked **Install the machine-runtime app to connect to the Power Automate cloud portal**
  ![Accept terms.](./media/register-machines/acceptterms.png)
@@ -70,7 +68,7 @@ permissions, and there is an available environment to register the new machine.
 
 Your machine can only run desktop flows from the cloud in one environment at a time. 
 
-You can update the running environment which your machine can run desktop flows at any time from within Power Automate Desktop. 
+You can update the running environment which your machine can run desktop flows at any time from within Power Automate. 
 
 1. In the machine-runtime app, select **Machine settings**. 
 
@@ -88,11 +86,11 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Select **+ New step**. 
 
-1. Select the **Run a flow built with Power Automate Desktop** action. 
+1. Select the **Run a flow built with Power Automate for desktop** action. 
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine (preview)**. 
+1. Next to Connect, select **Direct to machine**. 
 
 1. Select the name of your machine. 
 
@@ -100,7 +98,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. Click **Create**. 
 
-   ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/register-machines/connect-directly-to-machine.png)
+   ![Screenshot of the Run a flow built with Power Automate for desktop action.](./media/register-machines/connect-directly-to-machine.png)
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -173,11 +171,11 @@ You can easily switch to using direct connectivity by changing the desktop flow 
 
 You can edit the flow and choose the new desktop flow connection for each of the desktop flow actions in your flow or create a new connection: 
 
-1. If you haven't done it yet, [update Power Automate Desktop to version 2.8.73.21119](https://go.microsoft.com/fwlink/?linkid=2102613) or newer.
+1. If you haven't done it yet, [update Power Automate to version 2.8.73.21119](https://go.microsoft.com/fwlink/?linkid=2102613) or newer.
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine (preview)**. 
+1. Next to Connect, select **Direct to machine**. 
 
 1. Select the name of your machine. 
 

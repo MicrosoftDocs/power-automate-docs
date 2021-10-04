@@ -39,6 +39,10 @@ Control and manipulate text
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
 
+<!--
+|[Recognize entities in text](#recognizeentitiesintext)|
+-->
+
 ## Getting started with text actions
 
 To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items by using a delimiter. To separate a single text value into a list of items, use the **Split text** action. Specify a text value that has recognizable delimiters by which to separate the list items. 
@@ -57,7 +61,46 @@ To ensure that numbers are stored as numerical values, use the **Convert text to
 
 Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
 
+<!---
+## Getting started with the Recognize entities in text action
 
+Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
+
+![Screenshot of the Recognize entities in text action](\media\text\recognize-entities-text-action.png)
+
+The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results. Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
+
+The following table displays various examples of entities that the **Recognize entities in text** action can recognize. 
+
+|Entity      |Input text                                                            |Returned values                                                                    |
+|------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+|Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019          |
+|Date time   |Schedule a meeting tongiht at 7pm                                     |**DateTime:** 9/30/2021 7:00:00 PM </br> **Original text:** 7pm                    |
+|Dimension   |You weight 200lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200lbs               |
+|Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
+|Temperature |Τhe temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
+|Currency    |Νet interest income sank 27 percent in the quarter to /$ 254 million  |**Value:** 254000000 </br> **Unit:** Dollar </br> **Original text:** $ 254 million |
+|Number range|This number is larger than twenty and less or equal than thirty five  |**From:** 20 </br> **To:** 35 </br> **Original text:** larger than twenty and less or equal than thirty five |
+|Number range|From 5 to 10                                                          |**From:** 5 </br> **To:** 10 </br> **Original text:** From 5 to 10                 |
+|Number range|Less than 4.565                                                       |**From:** 0 </br> **To:** 4.565 </br> **Original text:** Less than 4.565           |
+|Number      |A dozen                                                               |**Value:** 12 </br> **Original text:** A dozen                                     |
+|Number      |Two thirds                                                            |**Value:** 0.666666666666667 </br> **Original text:** Two thirds                   |
+|Ordinal     |I like the first two books                                            |**Value:** 1 </br> **Original text:** first                                        |
+|Ordinal     |Eleventh                                                              |**Value:** 11 </br> **Original text:** Eleventh                                    |
+|Percentage  |100 percent                                                           |**Value:** 100 </br> **Original text:** 100 percent                                |
+|Phone number|Tel: +1 209-555-0100                                                  |**Value:** +1 209-555-0100 </br> **Original text:** +1 209-555-0100                |
+|Email       |felix@contoso.com                                                     |**Value:** felix@contoso.com </br> **Original text:** felix@contoso.com            |
+|IP address  |My PC IP address is 1.1.1.1                                           |**Value:** 1.1.1.1 </br> **Original text:** 1.1.1.1                                |
+|Mention     |@Alice                                                                |**Value:** @Alice </br> **Original text:** @Alice                                  |
+|Hashtag     |#News                                                                 |**Value:** #News </br> **Original text:** #News                                    |
+|URL         |www.microsoft.com |**Value:** www.microsoft.com  </br> **Original text:** www.microsoft.com           |
+|GUID        |123e4567-e89b-12d3-a456-426655440000                                  |**Value:** 123e4567-e89b-12d3-a456-426655440000 </br> **Original text:** 123e4567-e89b-12d3-a456-426655440000 |
+|Quoted text |Enter the value in the "value" field                                  |**Value:** "value" </br> **Original text:** "value"                                |
+
+>[!NOTE]
+> The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
+
+-->
 
 ## Text actions
 
@@ -297,7 +340,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Is regular expression|N/A|Boolean value|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -324,7 +367,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Ignore case|N/A|Boolean value|False|Specify whether to find the specified text using case-sensitive or case-insensitive matching|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -354,7 +397,7 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Activate escape sequences|N/A|Boolean value|False|Specify whether to use special sequences. For example, '\t' in the replacement text will be interpreted as a tab|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -382,6 +425,27 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+<!---
+
+### <a name="recognizeentitiesintext"></a> Recognize entities in text
+Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to recognize from|No|Text value||The text to recognize entities from|
+|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, Url etc.)|
+|Language|N/A|English (United States), Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English (United States)|Specify the language of the text|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|RecognizedEntities|Datatable|The recognized entities|
+
+##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+-->
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

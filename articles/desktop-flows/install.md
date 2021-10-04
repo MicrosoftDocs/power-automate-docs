@@ -1,6 +1,6 @@
 ---
-title: Install Power Automate Desktop on your device | Microsoft Docs
-description: Install Power Automate Desktop on your device.
+title: Install Power Automate on your device | Microsoft Docs
+description: Install Power Automate on your device.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,25 +23,25 @@ search.audienceType:
 ---
 
 
-# Install Power Automate Desktop on your device
+# Install Power Automate on your device
 
 The installer contains all the components you need to record, edit, and test your automations, as well as connect to the cloud.
 
-## Install Power Automate Desktop
+## Install Power Automate
 
-Follow these steps to install the Power Automate Desktop app:
+Follow these steps to install the Power Automate for desktop:
 
-1. [Download the Power Automate Desktop installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
-1. Follow the instructions in the **Power Automate Desktop setup** installer to complete the installation. 
+1. Follow the instructions in the **Power Automate for desktop setup** installer to complete the installation. 
 1. Make your selections for each feature for the installation to complete. 
 
 The installer allows you to install two different apps on your device: 
 
-- Power Automate Desktop is the app to build your desktop flows. With it you can create, edit and run your automations. Learn more about the [desktop flows designer](./flow-designer.md). 
+- Power Automate for desktop is the app to build your desktop flows. With it you can create, edit and run your automations. Learn more about the [desktop flows designer](./flow-designer.md). 
 
 - Power Automate machine runtime app allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). Learn more about [machine management](./manage-machines.md). 
 
@@ -49,7 +49,7 @@ By default, both are installed on your device.
 
 >[!IMPORTANT]
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
->It will also install the Power Automate Desktop app and third-party components.
+>It will also install the Power Automate app and third-party components.
 
 ![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
 
@@ -57,12 +57,12 @@ By default, both are installed on your device.
 >In order to register your machine, you need to have an Organization premium account.
 
 >[!NOTE]
->Power Automate Desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate Desktop using a proxy server](governance.md#configure-power-automate-desktop-to-interact-with-a-corporate-proxy-server).
+>Power Automate for desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
 <!--- TO BE ADDED AFTER Oct 5th---
 ## Install Power Automate desktop app from the Microsoft Store 
 
-There are a few ways to access the most recent version of Power Automate Desktop from the Microsoft Store. 
+There are a few ways to access the most recent version of Power Automate from the Microsoft Store. 
 
 1. Use one of the following options to open the Power Automate page of the Microsoft Store: 
 
@@ -78,11 +78,11 @@ There are a few ways to access the most recent version of Power Automate Desktop
 During installation, you can change the default settings if you don't want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
 >[!IMPORTANT]
->Sharing usage data to Microsoft, will help the support department to solve a Power Automate Desktop issue.
+>Sharing usage data to Microsoft, will help the support department to solve a Power Automate issue.
 
 ## Install the Power Automate browser extension 
 
-After the installation completes, you will need to install and enable the extension for Power Automate Desktop. This extension will allow you to record and run web actions in your desktop flows.
+After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
 
 ![Installation success image.](../media/desktop-flows-setup/screen.png)
 
@@ -108,16 +108,16 @@ Select one of the links displayed in the installer. For example, if you want to 
 > [!TIP]
 > If you are not able to activate the extension(s) in your browser, you must use [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later) or Google Chrome or Firefox. Other browsers are not supported. 
 
-## Install Power Automate Desktop silently
+## Install Power Automate for desktop silently
 
-Follow these steps if you want to silently install Power Automate Desktop.
+Follow these steps if you want to silently install Power Automate.
 
 >[!NOTE]
->The same installer is used for both manual and silent installation of Power Automate Desktop.
+>The same installer is used for both manual and silent installation of Power Automate for desktop.
 
-### Install Power Automate Desktop using the command line
+### Install Power Automate for desktop using the command line
 
-1. Download [Download Power Automate Desktop](https://go.microsoft.com/fwlink/?linkid=2102613).
+1. Download [Power Automate for desktop](https://go.microsoft.com/fwlink/?linkid=2102613).
 
 1. Open **Start**.
 
@@ -125,7 +125,7 @@ Follow these steps if you want to silently install Power Automate Desktop.
 
    ![A screenshot that displays the command prompt on the start menu.](../media/desktop-flows-setup/command-prompt.png)
 
-1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate Desktop):
+1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate):
 
    For example, enter:
    
@@ -139,12 +139,12 @@ Follow these steps if you want to silently install Power Automate Desktop.
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
    ```
    
-   The installer runs and completes the setup of Power Automate Desktop.
+   The installer runs and completes the setup of Power Automate.
 
    >[!IMPORTANT]
-   > You must provide the `-ACCEPTEULA` argument to indicate that you accept the [terms and conditions](/dynamics365/legal/slt-power-automate-desktop) for Power Automate Desktop.
+   > You must provide the `-ACCEPTEULA` argument to indicate that you accept the [terms and conditions](/dynamics365/legal/slt-power-automate-desktop) for Power Automate.
 
-1.  You can now launch Power Automate Desktop from the Start menu.
+1.  You can now launch Power Automate from the Start menu.
 
 ### Command line argument details
 
@@ -156,37 +156,37 @@ You can also retrieve the details of all the command line arguments from the hel
 
 |Command|Description|
 |----|----|
-|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate Desktop`.|
-|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate Desktop app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
+|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate  app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
 |-DISABLETURNONRD|Use the argument if you don't want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
-|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate Desktop.|
+|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate.|
 |-HELP|This argument displays all details about the arguments for the installer prompt.|
 
-Here's an example of a command line argument that installs Power Automate Desktop: 
+Here's an example of a command line argument that installs Power Automate: 
 
    ```
    Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
-### Uninstall Power Automate Desktop using the command line
+### Uninstall Power Automate for desktop using the command line
 
-Use the following command to silently uninstall Power Automate Desktop:
+Use the following command to silently uninstall Power Automate:
    
    ```
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
    ```
 
-### Update your version of Power Automate Desktop
+### Update your version of Power Automate
 
-To update Power Automate Desktop, use the same command line arguments that you use to install it. 
+To update Power Automate for desktop, use the same command line arguments that you use to install it. 
 
 >[!NOTE]
->All your data and configuration, including telemetry, shortcuts, etc. are retained when you update Power Automate Desktop. If you want to enable parameters previously disabled, you will need to first uninstall Power Automate Desktop, and then reinstall it. 
+>All your data and configuration, including telemetry, shortcuts, etc. are retained when you update Power Automate. If you want to enable parameters previously disabled, you will need to first uninstall Power Automate for desktop, and then reinstall it. 
 
 ### Install the gateway with PowerShell Cmdlets
 
 > [!NOTE]
-> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
 
@@ -232,7 +232,7 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
 
 ## Install Windows recorder (v1) extension (optional)
 
-The Windows recorder (v1) is another option to record and playback your desktop automations. We recommand you to use Power Automate Desktop since this is the latest RPA solution.
+The Windows recorder (v1) is another option to record and playback your desktop automations. We recommend you to use Power Automate for desktop since this is the latest RPA solution.
 
 Follow these steps to install Windows recorder (v1) extension:
 
@@ -261,7 +261,7 @@ Follow these steps to install Selenium IDE:
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
 > [!NOTE]
-> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
@@ -279,22 +279,22 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 ## Troubleshoot missing gateway
 
 > [!NOTE]
-> Power Automate Desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
 You might not find the gateway in the list while creating the connection for the following reasons:
 
 - The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
 - The gateway was deleted by its owner.
 
-## Uninstall Power Automate Desktop
+## Uninstall Power Automate
 
 1. Open the **start** menu > **Settings** > **Apps**.
-1. Search for **Power Automate Desktop**, and then select it.
+1. Search for **Power Automate**, and then select it.
 1. Select **Uninstall**.
 
 ## Learn more
 
-- Learn to [create Power Automate Desktop flows](create-flow.md).
+- Learn to [create Power Automate desktop flows](create-flow.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
 

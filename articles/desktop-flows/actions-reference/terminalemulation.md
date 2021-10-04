@@ -31,7 +31,7 @@ Take control of terminal emulators for automating mainframes and legacy systems
 
 ## Getting started with terminal emulation actions
 
-Power Automate Desktop provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminals and mainframes and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
+Power Automate provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminals and mainframes and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
 
 Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
 
@@ -232,7 +232,7 @@ Wait for a specific text to appear on a terminal session
 |Timeout|Yes|Numeric value|0|The maximum amount of time to wait|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables
