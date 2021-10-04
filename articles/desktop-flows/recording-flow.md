@@ -116,10 +116,6 @@ To extract a text value while using image recording:
 
 ### Known issues and limitations
 
-- **Issue**: The Desktop recorder may not record all steps from the Start Menu or system tray.
-
-- **Workarounds**: None.
-
 - **Issue**: While running a flow created through an Image-based recording, the click may be sent to the wrong place. 
 
 - **Workarounds**: Edit the auto-generated action “Move mouse to image” through the Designer and decrease the Tolerance parameter in the Advanced settings.
