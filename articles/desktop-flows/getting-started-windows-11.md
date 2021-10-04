@@ -33,7 +33,7 @@ For example, you can extract prices from shopping websites, compare them, and st
 
 Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with Power Automate for desktop.
 
-![Screenshot of the open backup flow in the flow designer.](media\getting-started-windows-11\backup-flow.png)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLTqj]
 
 Apart from the pre-made actions, Power Automate for desktop enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
 
