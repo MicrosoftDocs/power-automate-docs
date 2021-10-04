@@ -1,6 +1,6 @@
 ---
 title: Actions reference | Microsoft Docs
-description: This section describes all Power Automate Desktop actions
+description: This section describes all Power Automate actions
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-In this section, you can find a reference to all actions of the Power Automate Desktop. 
+In this section, you can find a reference to all actions of the Power Automate. 
 
 Click on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
 

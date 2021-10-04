@@ -36,7 +36,7 @@ Manage and manipulate XML files
 
 ## Getting started with XML actions
 
-Power Automate Desktop provides the capability to use flows to automate the management of XML attributes and elements through XML actions.
+Power Automate provides the capability to use flows to automate the management of XML attributes and elements through XML actions.
 
 To read an XML file, use the **Read XML from file** action. Specify the path or browse for the file, and select one of the encoding options. 
 

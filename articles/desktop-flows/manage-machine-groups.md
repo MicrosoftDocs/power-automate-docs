@@ -15,9 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage machine groups (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Manage machine groups
 
 ## Create a machine group 
 
@@ -68,11 +66,11 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. Select **+New step**. 
 
-1. Select the **Run a flow built with Power Automate Desktop** action. 
+1. Select the **Run a flow built with Power Automate for desktop** action. 
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine (preview)**. 
+1. Next to Connect, select **Direct to machine**. 
 
 1. Select the name of your machine group. 
 
@@ -101,7 +99,7 @@ Once a machine group is created in an environment, you can view its details at a
 
 1. Select **Monitor > Machines**. 
 
-1. Select **Machine groups (preview)**. 
+1. Select **Machine groups**. 
 
 Within the list, for each machine you can view: 
 
@@ -127,7 +125,7 @@ You can share a machine group with other users in your organization, giving thos
 
 1. Select **Monitor**, then select **Machines**. 
 
-1. Select **Machine groups (preview)**. 
+1. Select **Machine groups**. 
 
 1. Select your machine group from the list. 
 

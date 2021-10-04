@@ -132,7 +132,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

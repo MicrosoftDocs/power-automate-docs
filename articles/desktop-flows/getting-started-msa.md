@@ -18,16 +18,16 @@ search.audienceType:
 
 # Getting started with a Microsoft account
 
-Power Automate Desktop enables regular and power users alike to create flows, which save time and eliminate human error. 
+Power Automate  enables regular and power users alike to create flows, which save time and eliminate human error. 
 
 Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from a website and save them in an Excel spreadsheet then [email it](actions-reference/email.md) as an attachment. [Fill in web forms](automation-web.md#data-population-on-the-web) by supplying information dynamically from your files.  
 
 Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or [record your interactions as steps](recording-flow.md) to be played back anytime. 
 
-Using Power Automate Desktop with a Microsoft account is available at no additional cost.
+Using Power Automate  with a Microsoft account is available at no additional cost.
 
 >[!Note]
->Flows built with Power Automate Desktop using a Microsoft account are stored automatically on the users' OneDrive.
+>Flows built with Power Automate using a Microsoft account are stored automatically on the users' OneDrive.
 
 ## Build your first flow
 
@@ -37,7 +37,7 @@ The following example demonstrates the creation of a short flow. The completed f
 
 To create the flow:
 
-1. Launch Power Automate Desktop and select the New flow button in the console.
+1. Launch Power Automate and select the New flow button in the console.
 
     ![console new flow.](media\getting-started-msa\console-new-flow.png)
 
@@ -93,10 +93,10 @@ Following this example, it is possible to imagine a wide range of scenarios wher
 
 ## Next Steps
 
-- Learn how to [set up Power Automate Desktop](setup.md).
+- Learn how to [set up Power Automate](setup.md).
 
-- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
+- Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md). 
 
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
+- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate for desktop. 
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).

@@ -1,6 +1,6 @@
 ---
-title: Run a Power Automate Desktop flow | Microsoft Docs
-description: Run a flow in the Power Automate Desktop console
+title: Run a Power Automate desktop flow | Microsoft Docs
+description: Run a flow in the Power Automate desktop console
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -178,7 +178,7 @@ A notification popup appears by default when a desktop flow is downloading or ru
 ![Notification window.](\media\run-pad-flow\notification-window.png)
 
 > [!NOTE]
-> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate Desktop doesn't display notifications.
+> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

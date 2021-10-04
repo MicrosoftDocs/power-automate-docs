@@ -27,7 +27,7 @@ Initiate OCR engines to perform OCR related activities
 
 ## Getting started with OCR actions
 
-Power Automate Desktop enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
+Power Automate enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
 
 To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
 

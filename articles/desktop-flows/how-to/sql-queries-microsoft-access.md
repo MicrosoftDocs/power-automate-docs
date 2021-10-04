@@ -17,7 +17,7 @@ search.audienceType:
 
 # Run SQL queries to Microsoft Access
 
-Apart from database servers, Power Automate Desktop supports the automation of Microsoft Access databases.
+Apart from database servers, Power Automate supports the automation of Microsoft Access databases.
 
 To establish a connection with a Microsoft Access database, use the **Open SQL connection** action, and open the connection string builder.
 
@@ -44,7 +44,7 @@ The generated connection string must be similar to the following one:
 
 ![A generated connection string.](media/sql-queries-microsoft-access/generated-connection-string.png)
 
-To run queries on the connected database, use the **Execute SQL statement** action. Power Automate Desktop supports all the essential queries, such as **SELECT**, **INSERT INTO**, and **UPDATE**.
+To run queries on the connected database, use the **Execute SQL statement** action. Power Automate supports all the essential queries, such as **SELECT**, **INSERT INTO**, and **UPDATE**.
 
 ![The Execute SQL statement action.](media/sql-queries-microsoft-access/execute-sql-statement-action.png)
 

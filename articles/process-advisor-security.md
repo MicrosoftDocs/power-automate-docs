@@ -44,11 +44,11 @@ These security roles have privileges to the process advisor tables in Dataverse.
 
 ## Privacy
 
-Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users can add recordings to a process. They can then use Power Automate Desktop to record processes and then import the processes into process advisor. Owners and contributors can see some data from the process and its recordings.
+Sharing processes and their recordings is essential to create rich analysis and insights in process advisor. Users can add recordings to a process. They can then use Power Automate to record processes and then import the processes into process advisor. Owners and contributors can see some data from the process and its recordings.
 
 While most of the information process recordings capture can be essential to the understanding of the process activities, some steps might contain sensitive information. You can modify and delete sensitive information such as Personal Identifiable Information (PII) from your recordings.
 
-In Power Automate Desktop, users can:
+In Power Automate, users can:
 
 - Delete sensitive steps or modify input data information.
 

@@ -35,7 +35,7 @@ Manage and manipulate files
 
 ## Getting started with file actions
 
-Power Automate Desktop provides the files actions to automate managing files and manipulate their properties.
+Power Automate provides the files actions to automate managing files and manipulate their properties.
 
 To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
 

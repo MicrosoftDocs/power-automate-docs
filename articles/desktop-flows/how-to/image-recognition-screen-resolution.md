@@ -17,7 +17,7 @@ search.audienceType:
 
 # Use image recognition on machines with different screen resolutions
 
-When you capture images in Power Automate Desktop, the stored images are affected by the source machine's screen resolution and DPI scaling.
+When you capture images in Power Automate, the stored images are affected by the source machine's screen resolution and DPI scaling.
 
 In cases where flows perform image recognition on different screens or machines, you must ensure that all the screens have the exact screen resolution.
 
