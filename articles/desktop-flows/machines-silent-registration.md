@@ -16,8 +16,6 @@ search.audienceType:
 ---
 # Silent registration for machines 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 This article describes how to use our mass deployment tool that allows you to easily install Power Automate Desktop on multiple machines.
 You can both register your machines to Power Automate and add them to machine groups. 
 
