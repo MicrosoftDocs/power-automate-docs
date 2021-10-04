@@ -92,7 +92,7 @@ You can update the running environment which your machine can run desktop flows 
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine (preview)**. 
+1. Next to Connect, select **Direct to machine**. 
 
 1. Select the name of your machine. 
 
