@@ -280,7 +280,7 @@
       href: ./dataverse/bound-unbound.md
     - name: Use relationships to update rows
       href: ./dataverse/relationships.md
-    - name: Use relevance search to retrieve rows
+    - name: Use Dataverse search to retrieve rows
       href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
