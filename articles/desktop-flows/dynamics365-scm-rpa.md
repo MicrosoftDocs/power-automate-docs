@@ -110,7 +110,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 1. Add a desktop flow connector. 
     ![Image4.](./media/dynamics365-RPA/image007.png)
  
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
+Select the Directly to machine connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
     ![Image5.](./media/dynamics365-RPA/image009.png)
  
 ## Install the Dynamics 365 RPA solution 

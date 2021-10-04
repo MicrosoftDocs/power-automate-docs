@@ -126,7 +126,7 @@ To get started with Dynamics 365 Finance and automate the end-of-cycle reporting
 1. Add a desktop flow connector. 
     ![Image4.](./media/dynamics365-fin-rpa/image009.png)
  
-Select the Directly to machine(preview) connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
+Select the Directly to machine connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View [here](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) to learn more about direct machine connectivity). Note this step will not be needed at a later date.
    ![Image5.](./media/dynamics365-fin-rpa/image011.png)
  
 #### Installing the Dynamics 365 RPA solution 

@@ -362,7 +362,7 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
-  - name: Manage machines and machine groups (preview)
+  - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md

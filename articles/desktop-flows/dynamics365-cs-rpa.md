@@ -123,7 +123,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Build a cloud flow 3](./media/dynamics365-cs-rpa/cd51a32dc52d3ef5751d570d762ba8ce.png)
 
-1. Select [**Directly to machine (preview)**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
+1. Select [**Directly to machine**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
 
 1. Select the machine onto which you installed Power Automate, and then enter the machine login credentials (the username and password that you used to log into this machine). 
 
