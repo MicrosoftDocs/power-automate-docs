@@ -131,6 +131,8 @@ By following these strategies, you can avoid having desktop flows competing to r
 >[!NOTE]
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
 
+>[!NOTE]
+>If your target machine or gateway becomes offline either through a restart or due to connectivity issues, desktop flows will wait for a maximum duration of 3h before failing. This allows for more tolerance to transient machine states and allow you to successfully run automations even even if your machines go through restart or update cycles. 
 
 ## Rerun failed desktop flows
 
