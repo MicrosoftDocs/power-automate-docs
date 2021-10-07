@@ -547,7 +547,7 @@ Saves a previously launched Excel instance
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to save. This variable must have been previously specified in a Launch Excel action|
 |Save mode|N/A|Save document, Save document as|Save document|How to save the document of this instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods)|Default (From Extension)|The format to save the document as|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml)|Default (From Extension)|The format to save the document as|
 |Document path|No|File||The full path to save the document as|
 
 
@@ -588,7 +588,7 @@ Closes an Excel instance
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to close. This variable must have been previously specified in a Launch Excel action|
 |Before closing Excel|N/A|Do not save document, Save document, Save document as|Do not save document|Whether and how to save the document of this instance before closing that instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods)|Default (From Extension)|The format of the document|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml)|Default (From Extension)|The format of the document|
 |Document path|No|File||The full path of the document|
 
 
