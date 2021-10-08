@@ -89,30 +89,6 @@ Dutch		|Japanese	|	Russian
 Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
 Finnish		|Korean		|Serbian (Latin, Serbia)
 
-## Supported keyboard layouts
-
-- US keyboard – English (United States)
-- US keyboard – English (Australia)
-- US keyboard – English (Canada)
-- Microsoft Pinyin – Chinese (Simplified Han, China)
-- German keyboard – German (Germany)
-- Microsoft IME – Japanese (Japan)
-- United Kingdom keyboard – English (United Kingdom)
-- French keyboard – French (France)
-- Russian keyboard – Russian (Russia)
-- Portuguese (Brazilian ABNT) keyboard – Portuguese (Brazil)
-- Portuguese (Brazilian ABNT2) keyboard – Portuguese (Brazil)
-- Microsoft IME – Korean (South Korea)
-- Spanish keyboard – Spanish (Spain)
-- Italian keyboard – Italian (Italy)
-- Latin American keyboard – Spanish (Mexico)
-- Polish (Programmers) keyboard – Polish (Poland)
-- United States-International keyboard – Dutch (Netherlands)
-- Turkish Q keyboard – Turkish (Turkey)
-- India keyboard – English (India)
-
-
-
 ## Sign-in account comparison
 
 Below you can find detailed comparison on what each user will have access to. You can find more information on the versions in the [Power Platform license guide](https://aka.ms/Ignite21-Licensing).
