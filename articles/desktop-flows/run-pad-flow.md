@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 10/11/2020
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -115,7 +115,7 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
    ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!NOTE]
->In some rare cases, it may take up to 10 minutes for this setting to be effective and for our services to start load balancing runs accross cluster members.
+>In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
 
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
