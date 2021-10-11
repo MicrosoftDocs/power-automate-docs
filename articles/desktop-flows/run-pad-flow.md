@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 10/11/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -114,6 +114,9 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
 
    ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
+>[!NOTE]
+>In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
+
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
 >If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
@@ -131,6 +134,8 @@ By following these strategies, you can avoid having desktop flows competing to r
 >[!NOTE]
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
 
+>[!NOTE]
+>If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles. 
 
 ## Rerun failed desktop flows
 
