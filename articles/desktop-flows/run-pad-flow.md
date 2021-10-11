@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/11/2020
+ms.date: 10/11/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -134,6 +134,8 @@ By following these strategies, you can avoid having desktop flows competing to r
 >[!NOTE]
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
 
+>[!NOTE]
+>If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles. 
 
 ## Rerun failed desktop flows
 
