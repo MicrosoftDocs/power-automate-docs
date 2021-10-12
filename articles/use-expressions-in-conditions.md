@@ -5,14 +5,14 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
+manager: kvivek
 ms.service: power-automate
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/15/2019
+ms.date: 10/11/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -42,11 +42,15 @@ Expression|Description|Example
 |if|Returns a specific value if the expression results in true or false.|This expression returns "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## Prerequisites
+
+Here's what you'll need to complete this walkthrough.
+
 * Access to Power Automate.
 * Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
-* Microsoft Office 365 Outlook (While we use Office 365 Outlook, you can use any supported email service in your flows.)
+* Microsoft 365 Outlook (While we use Outlook here, you can use any supported email service in your flows.)
 
 ## Use the or expression
+
 Sometimes your workflow needs to take an action if the value of an item is valueA **or** valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named *Status* and the possible values in the *Status* column are:
 
 * **completed**
@@ -63,71 +67,88 @@ Given the preceding spreadsheet, you want to use Power Automate to remove all ro
 Let's create the flow.
 
 ### Start with a blank flow
+
 1. Sign into [Power Automate](https://flow.microsoft.com).
 
     ![sign in.](includes/media/modern-approvals/sign-in.png)
+
 2. Select the **My flows** tab.
 
     ![select my flows.](includes/media/modern-approvals/select-my-flows.png)
-3. Select **Create from blank**.
+3. Select **New flow** > **Scheduled cloud flow**.
 
-    ![create from blank.](includes/media/modern-approvals/blank-template.png)
+    ![Create a scheduled cloud flow.](includes/media/modern-approvals/blank-template.png)
 
 ### Add a trigger to your flow
-1. Search for **Schedule**, and then select the **Schedule - Recurrence** trigger
 
-    ![schedule trigger.](includes/media/schedule-trigger/schedule-trigger.png)
-2. Set the schedule to run once daily.
+1. Give your flow a name.
 
-    ![set schedule.](includes/media/schedule-trigger/set-schedule.png)
+1. Set the schedule to run the flow once daily.
+
+    ![set schedule.](includes/media/modern-approvals/once-daily-schedule.png)
+
+1. Select the **Create** button to move on to the next step.
 
 ### Select the spreadsheet and get all rows
-1. Select **New step** > **Add an action**.
 
-    ![new step.](includes/media/new-step/action.png)
-2. Search for **rows**, and then select **Excel - Get rows**.
+1. Select **New step**.
 
-    Note: Select the "get rows" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+    ![Select new step.](includes/media/new-step/action.png)
+1. Search for **rows**, and then select **Excel Online**.
 
-    ![get Rows.](includes/media/new-step/get-excel-rows.png)
-3. Select the folder icon in the **File name** box, browse to, and then select the spreadsheet that contains your data.
+    Note: Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
-    ![select spreadsheet.](includes/media/new-step/select-spreadsheet.png)
-4. Select the table that contains your data from the **Table name** list.
+    ![Get a rows.](includes/media/new-step/get-excel-rows.png)
 
-    ![select table.](includes/media/new-step/select-table.png)
+1. Select the **List rows present in a table** action.
+
+1. Select the **Location**, **Document Library**, **File**, and **Table** that contains your data.
+
+    ![select spreadsheet.](includes/media/new-step/select-table-to-search.png)
 
 ### Check the status column of each row
-1. Select **New step** > **More** > **Add an apply to each**.
+
+1. Select **New step**.
+
+1. Search for **apply to each**, and then select the **Apply to each** control.
 
     ![Add an apply to each.](includes/media/new-step/apply-to-each.png)
-2. Add the **Value** token to the **Select an output from previous steps** box.
+
+1. Add the **Value** token to the **Select an output from previous steps** box.
+
+   This **value** token represents the spreadsheet table and all of its data.
 
     ![Add a value.](includes/media/apply-to-each/add-value-token.png)
-3. Select **Add a condition** > **Edit in advanced mode**.
-4. Add the following **or** expression. This **or** expression checks the value of each row in the table (a row is known as an item when accessed in a expression). If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
 
-    The **or** expression appears as shown here:
+1. Select **Add an action** on the **Apply to each** card.
 
-    ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
+   ![Add another action.](includes/media/apply-to-each/add-action.png)
+
+1. Search for **condition**, and then select the **Condition** control.
+
+1. Add the following **or** expression. This **or** expression checks the value of each row in the table. If the value of the **status** column is *completed* **or** *unnecessary*, the **or** expression evaluates to "true".
 
     Your **Condition** card resembles this image:
 
     ![or expression image.](./media/use-expressions-in-conditions/or-expression.png)
 
 ### Delete matching rows from the spreadsheet
-1. Select **Add an action** on the **IF YES, DO NOTHING** branch of the condition.
-2. Search for **Delete row**, and then select **Excel - Delete row**.
+
+1. Select **Add an action** on the **If yes** branch of the condition.
+
+1. Search for **Delete row**, select **Excel Online (Business)**, and then select **Delete a row**.
 
     ![delete row image.](includes/media/new-step/select-delete-excel-row.png)
-3. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
-4. In the **Table name** list, select the table that contains your data.
-5. Place the **Row id** token in the **Row id** box.
+
+1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
+1. In the **Table name** list, select the table that contains your data.
+1. Place the **Row id** token in the **Row id** box.
 
     ![spreadsheet file.](includes/media/new-step/delete-excel-row.png)
 
 ### Name the flow and save it
-1. Give your flow a name and then select the **Create flow** button.
+
+1. Be sure to save your flow!.
 
     ![save your flow.](./media/use-expressions-in-conditions/name-and-save.png)
 
