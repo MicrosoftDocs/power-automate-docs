@@ -93,7 +93,8 @@ You can add SharePoint lists as co-owners of a cloud flow so that everyone who h
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
 
 >[!IMPORTANT]
->SharePoint users must have **Edit** permission or be a member of the **Members** or **Owners** group to run flows in SharePoint.
+> - SharePoint users must have **Edit** permission or be a member of the **Members** or **Owners** group to run flows in SharePoint.
+> - Adding a list as a co-owner is not available in GCC High and DoD tenants.
 
 ## Remove an owner
 
