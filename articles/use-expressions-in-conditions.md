@@ -72,10 +72,10 @@ Let's create the flow.
 
     ![sign in.](includes/media/modern-approvals/sign-in.png)
 
-2. Select the **My flows** tab.
+1. Select **My flows**.
 
     ![select my flows.](includes/media/modern-approvals/select-my-flows.png)
-3. Select **New flow** > **Scheduled cloud flow**.
+1. Select **New flow** > **Scheduled cloud flow**.
 
     ![Create a scheduled cloud flow.](includes/media/modern-approvals/blank-template.png)
 
@@ -85,22 +85,23 @@ Let's create the flow.
 
 1. Set the schedule to run the flow once daily.
 
+1. Select the **Create** button to move on to the next step.
+
     ![set schedule.](includes/media/modern-approvals/once-daily-schedule.png)
 
-1. Select the **Create** button to move on to the next step.
 
 ### Select the spreadsheet and get all rows
 
 1. Select **New step**.
 
     ![Select new step.](includes/media/new-step/action.png)
-1. Search for **rows**, and then select **Excel Online**.
+1. Search for **rows**, and then select **Excel Online (Business)**.
 
     Note: Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
-    ![Get a rows.](includes/media/new-step/get-excel-rows.png)
-
 1. Select the **List rows present in a table** action.
+
+    ![Get a rows.](includes/media/new-step/get-excel-rows.png)
 
 1. Select the **Location**, **Document Library**, **File**, and **Table** that contains your data.
 
@@ -136,30 +137,30 @@ Let's create the flow.
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
-1. Search for **Delete row**, select **Excel Online (Business)**, and then select **Delete a row**.
+    The **If yes** branch runs if the **or** condition evaluates to **true**.
+
+1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
 
     ![delete row image.](includes/media/new-step/select-delete-excel-row.png)
 
-1. In the **File name** box, search for, and select the spreadsheet file that contains the data you want to delete.
-1. In the **Table name** list, select the table that contains your data.
-1. Place the **Row id** token in the **Row id** box.
+1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this walkthrough. 
+
+1. Select **_PowerAppsId_** in the **Key Column** list, and then insert the **_PowerAppsId_** dynamic value into the **Key Value** box.
 
     ![spreadsheet file.](includes/media/new-step/delete-excel-row.png)
 
-### Name the flow and save it
-
-1. Be sure to save your flow!.
-
-    ![save your flow.](./media/use-expressions-in-conditions/name-and-save.png)
+1. Be sure to save your flow!
 
 ### Run the flow with the or expression
+
 The flow runs after you save it. If you created the spreadsheet shown earlier in this walkthrough, here's what the it looks like after the run completes:
 
 ![or expression completes.](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
 
-Notice all data from rows that had "completed" or "unnecessary" in the Status column were deleted.
+Notice all data from rows that had "completed" or "unnecessary" in the **Status** column were deleted.
 
 ## Use the and expression
+
 Assume you have a spreadsheet table with two columns. The column names are Status and Assigned. Assume also that you want to delete all rows if the Status column's value is "blocked" and the Assigned column's value is "John Wonder".  To accomplish this task, follow all steps earlier in this walkthrough, however, when you edit the **Condition** card in advanced mode, use the **and** expression shown here:
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
