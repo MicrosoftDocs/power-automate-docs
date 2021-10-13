@@ -33,10 +33,12 @@ You can find more information on how to use the web automation actions [here](..
 |[Select radio button on web page](#selectradiobuttonbase)|
 |[Set drop-down list value on web page](#setdropdownlistvaluebase)|
 |[Press button on web page](#pressbuttonbase)|
+|[If web page contains](#ifwebpagecontainsaction)|
+|[Wait for web page content](#waitforwebpagecontentaction)|
 |[Launch new Internet Explorer](#launchinternetexplorerbase)|
 |[Launch new Firefox](#launchfirefoxbase)|
 |[Launch new Chrome](#launchchromebase)|
-|[Launch new Edge](#launchedgebase)|
+|[Launch new Microsoft Edge](#launchedgebase)|
 |[Create new tab](#createnewtabbase)|
 |[Go to web page](#gotowebpagebase)|
 |[Click link on web page](#clickbase)|
@@ -312,6 +314,49 @@ Press a web page button
 |-----|-----|
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to click on web page button|Indicates a problem clicking the specified web page button|
+
+
+### <a name="ifwebpagecontainsaction"></a> If web page contains
+Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a web page
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Check if web page|N/A|Contains element, Doesn't contain element, Contains text, Doesn't contain text|Contains element|Check whether a specific text or web page element exists in a web page|
+|UI element|No|WebControl||Select the UI element on web page to check for|
+|Text|No|Text value||Enter the text on web page to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifwebpagecontainsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to communicate with the browser|Indicates that an error with the browser occured|
+
+### <a name="waitforwebpagecontentaction"></a> Wait for web page content
+Suspend the flow until a specific piece of text or web page element appears or disappears from a web page
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Wait for web page to|N/A|Contain element, Not contain element, Contain text, Not contain text|Contain element|Specify whether to wait for a specific text or web page element to (dis)appear in a web page|
+|UI element|No|WebControl||Select the UI element on web page to check for|
+|Text|No|Text value||Enter the text on web page to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforwebpagecontentaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for web page content failed|Indicates that the wait operation failed|
+
+
 
 ### <a name="launchinternetexplorerbase"></a> Launch new Internet Explorer
 Launch a new instance or attach to a running instance of Internet Explorer for automating web sites and web applications

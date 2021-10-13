@@ -178,6 +178,24 @@ Removes all occurrences of white space characters (such as space, tab, or new li
 
 ##### <a name="trim_onerror"></a> Exceptions
 - This action doesn't include any exceptions
+
+### <a name="reverse"></a> Reverse text
+Reverses the order of letters in a text string
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to reverse|Yes|Text value||The text to reverse|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ReversedText|Text value|The new reversed text|
+
+
+##### <a name="reverse_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+ 
 ### <a name="changecase"></a> Change text case
 Changes the casing of a text to uppercase, lowercase, title case or sentence case
 

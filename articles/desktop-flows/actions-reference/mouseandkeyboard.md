@@ -32,6 +32,7 @@ Take control of the mouse and keyboard
 |[Send keys](#sendkeys)|
 |[Press/release key](#pressreleasekey)|
 |[Set key state](#setkeystate)|
+|[Wait for mouse](#waitformouseaction)|
 |[Get keyboard identifier](#getkeyboardlayout)|
 |[Wait for shortcut key](#waitforshortcutkeyaction)|
 
@@ -327,6 +328,25 @@ Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 |Exception|Description|
 |-----|-----|
 |Can't set key state in non interactive mode|Indicates a problem setting the key state in non interactive mode|
+
+### <a name="waitformouseaction"></a> Wait for mouse
+Suspends the execution of the flow until the mouse pointer changes, usually to or from the 'wait cursor' or hourglass
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for mouse pointer to|N/A|Become, Become not|Become|Choose what action of the mouse cursor to wait for.|
+|Mouse pointer|N/A|Arrow, App starting, Cross, Hand, Help, IBeam, Wait cursor|Arrow|Specify the mouse pointer state.|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitformouseaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+
+
 
 ### <a name="getkeyboardlayout"></a> Get keyboard identifier
 Retrieves the active keyboard identifier from the machine's registry

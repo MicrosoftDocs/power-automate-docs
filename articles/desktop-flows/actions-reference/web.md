@@ -1,6 +1,6 @@
 ---
-title: Web | Microsoft Docs
-description: Web Actions Reference
+title: HTTP | Microsoft Docs
+description: HTTP Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Web
+# HTTP
 
 Communicate with web applications and services directly
 
@@ -59,7 +59,7 @@ The downloaded text is stored in a variable named **WebPageText**. If you use th
 > [!NOTE]
 > Apart from the web actions, Power Automate enables users to interact with web application through the web automation actions. You can find more information about web automation actions in [Web automation](webautomation.md).
 
-## Web actions
+## HTTP actions
 
 ### <a name="downloadfromweb"></a> Download from web
 Downloads text or a file from the web and stores it

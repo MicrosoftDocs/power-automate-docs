@@ -22,6 +22,8 @@ Manage and manipulate files
 
 |<!-- --> |
 |-----|
+|[If file exists](#iffileaction)|
+|[Wait for file](#waitforfileaction)|
 |[Copy file(s)](#copy)|
 |[Move file(s)](#move)|
 |[Delete file(s)](#delete)|
@@ -55,6 +57,41 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 
 
 ## File actions
+
+
+### <a name="iffileaction"></a> If file exists
+Marks the beginning of a conditional block of actions depending on whether a file exists or not
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If file|N/A|Exists, Doesn't exist|Exists|The state of the file to check|
+|File path|No|File||The full path to look for the file|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="iffileaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+
+### <a name="waitforfileaction"></a> Wait for file
+Suspend the execution of the automation until a file is created or deleted
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for file to be|N/A|Created, Deleted|Created|Specifies whether to pause the flow on the creation or deletion of a certain file|
+|File path|No|File||The full path to look for the file|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforfileaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
 
 ### <a name="copy"></a> Copy file(s)
 Copy one or more files into a destination folder
