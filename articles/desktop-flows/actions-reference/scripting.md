@@ -17,18 +17,56 @@ search.audienceType:
 
 # Scripting
 
-
 |<!-- --> |
 |-----|
 |[Run DOS command](#rundoscommand)|
 |[Run VBScript](#runvbscript)|
-
 |[Run JavaScript](#runjavascript)|
 |[Run PowerShell script](#runpowershellscript)|
-
 |[Run Python script](#runpythonscript)|
 
-# Scripting actions
+
+## Getting started with scripting actions
+
+Scripting actions are a major part of the system actions group. These actions enable users to run blocks of code and implement custom behavior in Power Automate.
+
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
+
+To declare variables in scripting actions and return results in Power Automate, use the following commands:
+
+- To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
+
+  ```
+  $variableName = "variableValue"
+  Write-Output $variableName
+  ```
+
+- Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
+
+  ```
+  variableName = "variableValue"
+  print variableName
+  ```
+
+- VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate.
+
+  ```
+  variableName = "variableValue"
+  WScript.Echo variableName
+  ```
+
+- In JavaScript scripts, use the **var** notation to declare new variables and the **WScript.Echo** function to return values from [Run JavaScript](#runjavascript) actions. 
+
+    ```
+    var variableName = "variableValue";
+    WScript.Echo(variableName);
+    ```
+
+To use Power Automate variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
+
+![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
+
+## Scripting actions
 
 
 ### <a name="rundoscommand"></a> Run DOS command
