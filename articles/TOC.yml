@@ -469,7 +469,7 @@
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
-      - name: Access elements that depend on how the window appears on the screen	  
+      - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
     - name: Automate web applications and web pages
       items:
@@ -522,10 +522,16 @@
       href: ./desktop-flows/actions-reference/conditionals.md
     - name: Loops
       href: ./desktop-flows/actions-reference/loops.md
-    - name: Wait
-      href: ./desktop-flows/actions-reference/wait.md
+    - name: Flow control
+      href: ./desktop-flows/actions-reference/flowcontrol.md
+    - name: Run flow
+      href: ./desktop-flows/actions-reference/runflow.md
     - name: System
       href: ./desktop-flows/actions-reference/system.md
+    - name: Workstation
+      href: ./desktop-flows/actions-reference/workstation.md
+    - name: Scripting
+      href: ./desktop-flows/actions-reference/scripting.md
     - name: File
       href: ./desktop-flows/actions-reference/file.md
     - name: Folder
@@ -534,9 +540,9 @@
       href: ./desktop-flows/actions-reference/compression.md
     - name: UI automation
       href: ./desktop-flows/actions-reference/uiautomation.md
-    - name: Web
+    - name: HTTP
       href: ./desktop-flows/actions-reference/web.md
-    - name: Web automation
+    - name: Browser automation
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
@@ -556,7 +562,7 @@
       href: ./desktop-flows/actions-reference/clipboard.md
     - name: Text
       href: ./desktop-flows/actions-reference/text.md
-    - name: Datetime
+    - name: Date time
       href: ./desktop-flows/actions-reference/datetime.md
     - name: PDF
       href: ./desktop-flows/actions-reference/pdf.md
@@ -568,24 +574,26 @@
       href: ./desktop-flows/actions-reference/ocr.md
     - name: Cryptography
       href: ./desktop-flows/actions-reference/cryptography.md
-    - name: Services
+    - name: Windows services
       href: ./desktop-flows/actions-reference/services.md
     - name: XML
       href: ./desktop-flows/actions-reference/xml.md
+    - name: FTP
+      href: ./desktop-flows/actions-reference/ftp.md 
+    - name: CyberArk
+      href: ./desktop-flows/actions-reference/cyberark.md
     - name: Active Directory
       href: ./desktop-flows/actions-reference/activedirectory.md
     - name: AWS
       href: ./desktop-flows/actions-reference/aws.md
     - name: Azure
       href: ./desktop-flows/actions-reference/azure.md
-    - name: Cognitive
-      href: ./desktop-flows/actions-reference/cognitive.md
-    - name: CyberArk
-      href: ./desktop-flows/actions-reference/cyberark.md
-    - name: Flow control
-      href: ./desktop-flows/actions-reference/flowcontrol.md
-    - name: FTP
-      href: ./desktop-flows/actions-reference/ftp.md 
+    - name: Google cognitive
+      href: ./desktop-flows/actions-reference/googlecognitive.md
+    - name: IBM cognitive
+      href: ./desktop-flows/actions-reference/ibmcognitive.md
+    - name: Microsoft cognitive
+      href: ./desktop-flows/actions-reference/microsoftcognitive.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365 (preview)
