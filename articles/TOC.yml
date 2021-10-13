@@ -540,7 +540,7 @@
       href: ./desktop-flows/actions-reference/compression.md
     - name: UI automation
       href: ./desktop-flows/actions-reference/uiautomation.md
-    - name: HHTP
+    - name: HTTP
       href: ./desktop-flows/actions-reference/web.md
     - name: Browser automation
       href: ./desktop-flows/actions-reference/webautomation.md
