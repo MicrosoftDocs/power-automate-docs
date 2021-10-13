@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/18/2020
+ms.date: 10/08/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,6 +25,8 @@ search.audienceType:
 # Use data operations with Power Automate
 
 In this walkthrough, you'll learn about some common data operations in Power Automate&mdash;such as compose, join, select, filter arrays, create tables, and parse JSON&mdash;that are available to manipulate data when you create flows.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdo]
 
 ## Prerequisites
 

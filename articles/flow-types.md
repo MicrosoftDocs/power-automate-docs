@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2020
+ms.date: 10/08/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -27,6 +27,8 @@ search.audienceType:
 Power Automate is a service that you can use to automate repetitive tasks to bring efficiencies to any organizations.
 
 You can create [cloud flows](#cloud-flows), [desktop flows](#desktop-flows), or [business process flows](#business-process-flows).
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUwZ]
 
 ## Cloud flows
 

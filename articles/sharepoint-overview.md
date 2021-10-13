@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2020
+ms.date: 10/08/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,6 +25,8 @@ search.audienceType:
 # Use SharePoint and Power Automate to build workflows
 
 Power Automate is deeply integrated with SharePoint. You can start with any of the more than [100 SharePoint templates](https://flow.microsoft.com/templates/), or create your own flow that integrates with SharePoint from scratch.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7D9]
 
 ## Top SharePoint workflow scenarios
 
