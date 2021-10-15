@@ -23,6 +23,16 @@ Set your automation to trigger other flows
 |-----|
 |[Run desktop flow](#runflow)|
 
+## Getting started with the Run desktop flow action
+
+The **Run desktop flow** action enables you to call other desktop flows while running a specific desktop flow. To use the action, add it to the workspace and select the desktop flow you want to call. If the called flow contains input variables, the action will prompt you to enter their values.
+
+> [!NOTE]
+> You can find more information regarding the **Run desktop flow** action in [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
+
+![screenshot of the Run desktop flow action.](\media\runflow\run-desktop-flow-action.png)
+
+## Run flow action
 
 
 ### <a name="runflow"></a> Run desktop flow
