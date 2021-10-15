@@ -17,8 +17,6 @@ search.audienceType:
 
 # System
 
-
-
 Perform a variety of tasks in a Windows environment and retrieve information from the system
 
 |<!-- --> |

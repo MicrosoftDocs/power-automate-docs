@@ -17,6 +17,7 @@ search.audienceType:
 
 # Workstation
 
+Perform a variety of tasks on the workstation
 
 |<!-- --> |
 |-----|
@@ -36,13 +37,19 @@ search.audienceType:
 
 ## Getting started with workstation actions
 
+The workstation group of actions provides a collection of actions that automate some essential functionalities of your workstation. 
 
-Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+To print a document, deploy the **Print document** action and populate the path of the file you want to print.
 
-The **Print document** action prints a specified document and requires the file path. 
+![screenshot of the Print document action.](\media\workstation\print-document-action.png)
 
-Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
+To change the default printer of the workstation, use the **Set default printer** action. To check which is the current default printer, use the  **Get default printer** action.
 
+If you want to sign out of your Windows account, use the **Log off user** action. Additionally, you can use the **Shutdown computer** and **Lock workstation** actions to shut down or lock your workstation, respectively.
+
+To change the resolution of any of your screens, use the **Set screen resolution**. The action requires you to populate the ID number of the screen, the width and height, the bit count, and the frequency. You can retrieve the current values of the mentioned attributes with the **Get screen resolution** action. 
+
+![screenshot of the Set screen resolution action.](\media\workstation\set-screen-resolution-action.png)
 
 ## Workstation actions
 

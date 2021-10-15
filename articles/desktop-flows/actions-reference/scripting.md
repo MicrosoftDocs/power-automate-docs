@@ -17,6 +17,8 @@ search.audienceType:
 
 # Scripting
 
+Incorporate scripting languages code in you automation
+
 |<!-- --> |
 |-----|
 |[Run DOS command](#rundoscommand)|
