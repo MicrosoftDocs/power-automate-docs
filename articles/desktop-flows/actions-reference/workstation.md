@@ -44,7 +44,7 @@ The **Print document** action prints a specified document and requires the file 
 Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
 
 
-# Workstation actions
+## Workstation actions
 
 
 ### <a name="printdocument"></a> Print document
