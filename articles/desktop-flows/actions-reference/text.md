@@ -70,8 +70,8 @@ The following table displays various examples of entities that the **Recognize e
 
 |Entity      |Input text                                                            |Returned values                                                                    |
 |------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-|Date time   |I'll go back 04th Jan 2019                                            |**Value:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019          |
-|Date time   |Schedule a meeting tongiht at 7pm                                     |**Value:** 9/30/2021 7:00:00 PM </br> **Original text:** 7pm                    |
+|Date time   |I'll go back 04th Jan 2019                                            |**Value:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019             |
+|Date time   |Schedule a meeting tonight at 7pm                                     |**Value:** 9/30/2021 7:00:00 PM </br> **Original text:** tonight at 7pm            |
 |Dimension   |You weight 200lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200lbs               |
 |Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
 |Temperature |Τhe temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
