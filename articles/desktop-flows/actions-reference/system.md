@@ -28,7 +28,7 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 |[Run application](#runapplicationbase)|
 |[Terminate process](#terminateprocess)|
 |[Ping](#ping)|
-|[Set Windows environment Variable](#setenvironmentvariable)|
+|[Set Windows environment variable](#setenvironmentvariable)|
 |[Get Windows environment variable](#getenvironmentvariable)|
 |[Delete Windows environment variable](#deleteenvironmentvariable)|
 
@@ -36,17 +36,15 @@ Perform a variety of tasks in a Windows environment and retrieve information fro
 
 Use system actions to automate tasks which are fundamental to the Windows operating system. 
 
-Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, Run application opens a specific document in Word in quiet mode:
+Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, the **Run application** actions opens a specific document in Word in quiet mode:
 
-![screenshot of the run application action properties window.](\media\system\run-application-example.png)
+![screenshot of the Run application action properties window.](\media\system\run-application-example.png)
 
-Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+Apart from running applications, Power Automate for desktop enables you to terminate processes by name or ID through the **Terminate process** action and wait for processes to start or stop through the **Wait for process** action.
 
-The **Print document** action prints a specified document and requires the file path. 
+![screenshot of the Wait for process action properties window.](\media\system\wait-process-action.png)
 
-Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
-
-
+If you want to handle Windows environment variables, use the **Set Windows environment variable**, **Get Windows environment variable**, and **Delete Windows environment variable** actions for the respective tasks.
 
 ## System actions
 ### <a name="ifprocessaction"></a> If process

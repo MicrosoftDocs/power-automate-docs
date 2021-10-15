@@ -64,7 +64,7 @@ To declare variables in scripting actions and return results in Power Automate, 
 
 To use Power Automate variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
 
-![A Python script that contains the  percentage notation.](\media\system\run-python-script-action.png)
+![A Python script that contains the  percentage notation.](\media\scripting\run-python-script-action.png)
 
 ## Scripting actions
 

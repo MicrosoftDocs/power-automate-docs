@@ -1,6 +1,6 @@
 ---
-title: Web automation | Microsoft Docs
-description: Web automation Actions Reference
+title: Browser automation | Microsoft Docs
+description: Browser automation Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 Start and manage web applications on browsers
 
-You can find more information on how to use the web automation actions [here](../automation-web.md)
+You can find more information on how to use the browser automation actions [here](../automation-web.md)
 
 |<!-- --> |
 |-----|
@@ -49,7 +49,7 @@ You can find more information on how to use the web automation actions [here](..
 
 ## Getting started with web automation
 
-Web automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
+Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
 
 To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
 
@@ -68,7 +68,7 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
 
-## Web automation actions
+## Browser automation actions
 
 ## Web data extraction
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data

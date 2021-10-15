@@ -34,6 +34,16 @@ search.audienceType:
 |[Get screen resolution](#getscreenresolution)|
 |[Set screen resolution](#setscreenresolution)|
 
+## Getting started with workstation actions
+
+
+Take a screenshot of a screen, or a window only with the **Take screenshot** action. 
+
+The **Print document** action prints a specified document and requires the file path. 
+
+Shutdown, Restart, Suspend, or Hibernate the computer with the **Shutdown computer** action. 
+
+
 # Workstation actions
 
 
