@@ -47,7 +47,7 @@ To change the default printer of the workstation, use the **Set default printer*
 
 If you want to sign out of your Windows account, use the **Log off user** action. Additionally, you can use the **Shutdown computer** and **Lock workstation** actions to shut down or lock your workstation, respectively.
 
-To change the resolution of any of your screens, use the **Set screen resolution**. The action requires you to populate the ID number of the screen, the width and height, the bit count, and the frequency. You can retrieve the current values of the mentioned attributes with the **Get screen resolution** action. 
+To change the resolution of any of your screens, use the **Set screen resolution**. The action requires you to populate the ID number of the screen, the width and height, the bit count, and the frequency. You can click the **Available screen resolutions** button to see all the available resolutions for each screen. Also, you can retrieve the current values of the mentioned attributes with the **Get screen resolution** action. 
 
 ![screenshot of the Set screen resolution action.](\media\workstation\set-screen-resolution-action.png)
 
