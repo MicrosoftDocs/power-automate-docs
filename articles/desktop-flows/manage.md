@@ -37,7 +37,7 @@ After you've created desktop flows, you might need to view, edit, or just check 
 From this section, you can create a new desktop flow and then edit or delete your existing desktop flows.
 
 > [!NOTE]
-> If you choose to delete or rename a flow, press the refresh button in Power Automate Desktop to reflect the changes in the flows list.
+> If you choose to delete or rename a desktop flow, press the refresh button in Power Automate to reflect the changes in the flows list.
 
 
 ## Details page
@@ -85,7 +85,7 @@ These are the two permission levels you can use when you share desktop flows:
 Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting the **Manage access** link on the desktop flow details page.
 
 > [!NOTE]
-> If someone shares a flow with you, press the refresh button in Power Automate Desktop to see it in the **Shared with me** flows list.
+> If someone shares a desktop flow with you, press the refresh button in Power Automate to see it in the **Shared with me** flows list.
 
 ## Copy desktop flows
 

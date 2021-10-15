@@ -1,6 +1,6 @@
 ---
-title:  Migrate from Windows recorder (V1) to Power Automate Desktop | Microsoft Docs
-description:  Migrate from Windows recorder (V1) to Power Automate Desktop.
+title:  Migrate from Windows recorder (V1) to Power Automate for desktop | Microsoft Docs
+description:  Migrate from Windows recorder (V1) to Power Automate for desktop.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,16 +23,19 @@ search.audienceType:
   - enduser
 ---
 
-# Migrate from Windows recorder (V1) to Power Automate Desktop
+# Migrate from Windows recorder (V1) to Power Automate desktop flows
+
+>[!IMPORTANT]
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. **Migrate** your flows to Power Automate or **delete** them.  
 
 You can migrate desktop flows you've created with the legacy Windows recorder
-(V1) into Power Automate Desktop flows in just a few steps.
+(V1) into Power Automate desktop flows in just a few steps.
 
 Follow these steps to migrate a legacy desktop flow.
 
 1. Sign into Power Automate.
 1. Select **My flows** > **Desktop flows**.
-1. Select the desktop flow you'd like to migrate to Power Automate Desktop.
+1. Select the flow you'd like to migrate.
 1. Select **Migrate (preview)** on the desktop flow details page.
 
    ![A screenshot that displays the migrate option for a desktop flow.](media/migrate-win-recorder/migrate-button.png)
@@ -43,7 +46,7 @@ Follow these steps to migrate a legacy desktop flow.
 
    ![A screenshot that displays the migrate button.](media/migrate-win-recorder/migrate-wizard.png)
    
-   When the process completes, a copy of the desktop flow is saved in the current environment. The resulting desktop flow can then be edited using the Power Automate Desktop designer. The original Windows recorder desktop flow remains unchanged.
+   When the process completes, a copy of the desktop flow is saved in the current environment. The resulting desktop flow can then be edited using the Power Automate designer. The original Windows recorder desktop flow remains unchanged.
 
    ![A screenshot that displays the migrated desktop flow.](media/migrate-win-recorder/migrated-flow.png)
 
@@ -51,7 +54,7 @@ Follow these steps to migrate a legacy desktop flow.
    >Migration is available only for desktop flows that were built with Windows recorder (V1). It's not supported for desktop flows built with Selenium IDE.
 
 Once you test your new desktop flow, you may go to your existing cloud flows and
-replace the UI automation action. You need to use the **Run a desktop flow built with Power Automate Desktop** action and use the newly created desktop flow.
+replace the UI automation action. You need to use the **Run a desktop flow built with Power Automate** action and use the newly created desktop flow.
 
 ## Known issues and limitations
 

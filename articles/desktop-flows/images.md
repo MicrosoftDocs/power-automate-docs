@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate using images
 
-To capture a new image in Power Automate Desktop, navigate to the **Images** tab on the right pane of the flow designer.
+To capture a new image in Power Automate, navigate to the **Images** tab on the right pane of the flow designer.
 
 ![The Images tab in the flow designer.](\media\images\images-pane.png)
 

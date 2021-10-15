@@ -30,7 +30,7 @@ Debug a desktop flow using the following tools:
 
 ## Run, stop, and pause in flow designer
 
-Select **Run** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button runs the flow action by action and pauses it after each action completes. The **Stop** button stops the flow completely.
+Select **Run** or press **F5** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** or press **Ctrl + Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button and the **F10** shortcut run the flow action by action and pause it after each action completes. The **Stop** button and the **Shift + F5** shortcut stop the flow completely.
 
 ![View the toolbar.](\media\run-stop-pause\toolbar.png)
 
@@ -62,9 +62,9 @@ To run the flow starting from a specific action, right-click the action and sele
 
 ![run from here.](\media\run-stop-pause\run-from-here.png)
 
-## Power Automate Desktop reserved keywords
+## Power Automate reserved keywords
 
-A certain amount of words are being used in the core of Power Automate Desktop and can't be used during development in the variable, subflow, label or error block names.
+A certain amount of words are being used in the core of Power Automate and can't be used during development in the variable, subflow, label or error block names.
 The list of these words is displayed below.
 
 |<!-- --> |<!-- --> |<!-- --> |<!-- --> |

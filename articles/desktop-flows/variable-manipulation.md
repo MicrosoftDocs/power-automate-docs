@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -25,7 +25,7 @@ Variables are used within flows to store data for further processing. Every vari
 
 Occasionally, the percentage sign should be used as a simple character, instead of denoting a calculation. In those cases, it should be escaped using another percentage character (%%).
 
-​Power Automate Desktop enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
+​Power Automate enables you to create complex expressions containing hardcoded values, variable names, arithmetic and logical operations, comparisons and parentheses.
 
 ![Complex expression in a Set variable action's field.](media\variable-manipulation\expression.png)
 

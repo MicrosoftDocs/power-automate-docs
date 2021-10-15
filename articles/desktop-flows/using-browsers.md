@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-To automate web-related tasks, Microsoft Power Automate Desktop provides the **Automation browser** that is preconfigured and works out of the box. 
+To automate web-related tasks, Microsoft Power Automate provides the **Automation browser** that is preconfigured and works out of the box. 
 
 Besides the **Automation browser**, the platform supports the four most popular browsers: **Microsoft Edge**, **Internet Explorer**, **Google Chrome**, and **Mozilla Firefox**. These browsers need additional configuration or/and browser extensions to work.
 
@@ -30,9 +30,9 @@ Besides the **Automation browser**, the platform supports the four most popular 
 
 By default, **Internet Explorer** works in protected mode to prevent any external application from controlling it.
 
-While Power Automate Desktop can still work with this setting enabled, it will not be able to clear the browser's cache or cookies.
+While Power Automate can still work with this setting enabled, it will not be able to clear the browser's cache or cookies.
 
-To disable protected mode and allow Power Automate Desktop to clear the browser's cache and cookies:
+To disable protected mode and allow Power Automate to clear the browser's cache and cookies:
 
 1. Launch **Internet Explorer**, select the **gear icon**, and choose **Internet options** in the menu.
 
@@ -80,7 +80,7 @@ To install the extension:
 
    ![The Add extension option in the extensions page.](media/using-browsers/edge-add-extension.png)
 
-To ensure that **Microsoft Edge** works as expected with Power Automate Desktop, disable running background apps when Edge is closed. 
+To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Edge is closed. 
 
 To disable this option, navigate to **Settings** -> **System** and select the **slider** next to **Continue running background apps when Microsoft Edge is closed**.
 
@@ -88,7 +88,7 @@ To disable this option, navigate to **Settings** -> **System** and select the **
 
 ## Configuring Google Chrome
 
-To use **Google Chrome** in Power Automate Desktop flows, you have to install the respective browser extension.
+To use **Google Chrome** in Power Automate flows, you have to install the respective browser extension.
 
 To install the extension:
 
@@ -104,7 +104,7 @@ To install the extension:
 
    ![Extension installation options page.](media/using-browsers/chrome-add-extension-confirmation.png)
 
-To ensure that **Google Chrome** works as expected with Power Automate Desktop, disable running background apps when Chrome is closed. 
+To ensure that **Google Chrome** works as expected with Power Automate, disable running background apps when Chrome is closed. 
 
 To disable this option, navigate to **Settings** -> **Advanced** -> **System** and select the **slider** next to **Continue running background apps when Google Chrome is closed**.
 
@@ -112,7 +112,7 @@ To disable this option, navigate to **Settings** -> **Advanced** -> **System** a
 
 ## Configuring Mozilla Firefox
 
-To use **Mozilla Firefox** in Power Automate Desktop flows, you have to install the respective browser extension.
+To use **Mozilla Firefox** in Power Automate flows, you have to install the respective browser extension.
 
 To install the extension:
 

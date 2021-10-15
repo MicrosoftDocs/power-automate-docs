@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/17/2020
+ms.date: 09/10/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -27,7 +27,7 @@ search.audienceType:
 
 ## What is a trigger?
 
-A **trigger** is the event that starts a cloud flow. For example, if you want to get notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
+A **trigger** is the event that starts a cloud flow. For example, if you want to get a notification in Microsoft Teams when someone sends you an email, in this case you receiving an email is the **trigger** that starts this flow.
 
 Power Automate offers connectors (apps/services like SharePoint, Outlook, /.) and most connectors
 offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
@@ -85,7 +85,7 @@ You need a standalone [Power Apps license](https://powerapps.microsoft.com/prici
 
 To find your license:
 
-1. Go to [flow.microsoft.com](https://preview.flow.microsoft.com/)
+1. Go to [flow.microsoft.com](https://flow.microsoft.com/)
 
 1. Select **My flows**.
 
@@ -103,8 +103,6 @@ created or the status is marked as *Approved*. While you can filter other events
 adding conditions to the flow, the flow still runs and the calls are
 counted as an API request, causing you to reach your API request limits faster.
 To avoid it, you can write expressions in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
-
-Here's a [community article of how to use trigger conditions](https://www.timlinenterprises.com/microsoft-power-automate-flow-trigger-conditions/).
 
 You may also need to secure the trigger inputs/outputs in the run history of a cloud flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 

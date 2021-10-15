@@ -148,6 +148,8 @@
         href: parallel-modern-approvals.md
       - name: Everyone must approve
         href: all-assigned-must-approve.md
+      - name: Request approvals from groups
+        href: group-approvals.md
       - name: Integrated approvals
         href: common-data-model-approve.md
       - name: Format approval requests
@@ -187,10 +189,14 @@
         displayName: Use flows with Microsoft Teams
       - name: Install the Power Automate app
         href: ./teams/install-teams-app.md
-      - name: Create flows in Microsoft Teams
+      - name: Create flows in Teams
         href: ./teams/teams-app-create.md
-      - name: Manage flows in Microsoft Teams
-        href: ./teams/teams-app-home.md    
+      - name: Use flows in teams created from templates
+        href: ./teams/introduction-teams-templates.md        
+      - name: Manage flows in Teams
+        href: ./teams/teams-app-home.md
+      - name: Send a message in Teams
+        href: ./teams/send-a-message-in-teams.md    
       - name: Trigger flows from Teams messages
         href: trigger-flow-teams-message.md
       - name: Create flows using the Power Apps app
@@ -258,6 +264,8 @@
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
+    - name: Trigger flows with actions
+      href: ./dataverse/action-trigger.md
     - name: Use a flow to add a row
       href: ./dataverse/create.md
     - name: Use a flow to update a row
@@ -274,7 +282,7 @@
       href: ./dataverse/bound-unbound.md
     - name: Use relationships to update rows
       href: ./dataverse/relationships.md
-    - name: Use relevance search to retrieve rows
+    - name: Use Dataverse search to retrieve rows
       href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
@@ -322,21 +330,25 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate Desktop
+- name: Power Automate for desktop
   items: 
-  - name: Introduction to Power Automate Desktop
+  - name: Introduction to Power Automate for desktop
     href: ./desktop-flows/introduction.md
-  - name: Setup Power Automate Desktop
+  - name: Getting started with Power Automate in Windows 11
+    href: ./desktop-flows/getting-started-windows-11.md
+  - name: Setup Power Automate
     items:
-    - name: Power Automate Desktop prerequisites & limitations 
+    - name: Power Automate prerequisites & limitations 
       href: ./desktop-flows/setup.md
-    - name: Install Power Automate Desktop
+    - name: Install Power Automate
       href: ./desktop-flows/install.md
-    - name: Governance in Power Automate Desktop
+    - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate Desktop
-      href: ./desktop-flows/troubleshoot.md    
-  - name: Power Automate Desktop architecture
+    - name: Troubleshooting Power Automate
+      href: ./desktop-flows/troubleshoot.md
+    - name: Data Collection in Power Automate
+      href: ./desktop-flows/diagnostic-data.md      
+  - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
@@ -352,7 +364,7 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
-  - name: Manage machines and machine groups (preview)
+  - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
@@ -368,7 +380,7 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Power Automate Desktop console
+  - name: Power Automate console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
@@ -393,7 +405,7 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Record flows in Power Automate Desktop
+    - name: Record flows in Power Automate
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
@@ -453,6 +465,8 @@
         href: ./desktop-flows/how-to/close-window-process-id.md 
       - name: Extract attributes from window elements
         href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
+      - name: Ensure that application windows become focused 
+        href: ./desktop-flows/how-to/ensure-windows-become-focused.md 
       - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
@@ -469,6 +483,8 @@
         href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
       - name:  Click all the elements in a list of links
         href: ./desktop-flows/how-to/click-elements-list-links.md   
+      - name: Automate browser prompts
+        href: ./desktop-flows/how-to/automate-browser-prompts.md  
       - name:  Scroll on a web page
         href: ./desktop-flows/how-to/scroll-web-page.md   
       - name: Handle iframes on a web page
@@ -481,8 +497,20 @@
         href: ./desktop-flows/how-to/convert-file-base64-format.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
+    - name: Run and troubleshoot SQL queries    
+      items:
+      - name: Run SQL queries to Microsoft Access
+        href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+      - name: Troubleshoot SQL queries   
+        href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Use logical operations on conditional statements  
+      href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
+    - name: Share/export a desktop flow
+      href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run SQL queries to Microsoft Access
       href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
+    - name: Run desktop flow from other desktop flows
+      href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
@@ -562,7 +590,7 @@
       href: ./desktop-flows/actions-reference/ftp.md 
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
-  - name: Use RPA with Dynamics 365 (preview)
+  - name: Use RPA with Dynamics 365
     items:
     - name: Overview of RPA templates and Dynamics 365
       href: ./desktop-flows/dynamics365-rpa-overview.md
@@ -580,7 +608,7 @@
     href: ./desktop-flows/create-desktop.md
   - name: Edit desktop flows with Windows recorder (V1)
     href: ./desktop-flows/edit-desktop.md
-  - name: Migrate from Windows recorder (V1) to Power Automate Desktop
+  - name: Migrate from Windows recorder (V1) to Power Automate
     href: ./desktop-flows/migrate.md
   - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
     href: ./desktop-flows/inputs-outputs-desktop.md

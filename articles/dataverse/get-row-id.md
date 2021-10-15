@@ -64,7 +64,7 @@ The advanced options are:
 
 ### Select columns
 
-Sometimes it is necessary to optimize the amount of data retrieved in a flow, especially if you are performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you would like to retrieve by entering unique names of those columns separated by commas.
+Sometimes it's necessary to optimize the amount of data retrieved in a flow, especially if you're performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you want to retrieve by entering unique names of those columns. Separate columns with a comma.
 
 ### Expand Query
 
@@ -76,7 +76,7 @@ Use **Expand Query** to specify an OData-style expression that defines which dat
 - *Collection-valued* navigation properties correspond to one-to-many or
     many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-entities-with-query).
+If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-tables-with-query).
 
 To use the **Expand Query** box in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.
 

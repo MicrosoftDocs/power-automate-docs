@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Close any window through its process ID
 
-When you handle desktop application, you may meet scenarios in which applications don't have static titles or have the same title as other windows. Power Automate Desktop allows users to close these applications using their process ID. 
+When you handle desktop application, you may meet scenarios in which applications don't have static titles or have the same title as other windows. Power Automate allows users to close these applications using their process ID. 
 
 To get the process ID of a window, use the **Get details of a UI element in window** action and retrieve the attribute **processid** from a random element within the window. The retrieved attribute is stored by default in a variable named **AttributeValue**.
 

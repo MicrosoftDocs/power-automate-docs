@@ -14,7 +14,7 @@ ms.subservice: developer
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 09/10/2021
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -72,11 +72,11 @@ Once you have a connector, you should publish templates that demonstrate how to 
 
 ### 5. Deployment
 
-To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more]( https://docs.microsoft.com/powerapps/administrator/export-import-packages)
+To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more]( //powerapps/administrator/export-import-packages)
 
 ### 6. Licensing
 
-If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for them to use standard connectors. Your users will need one of the [Power Automate licenses](https://preview.flow.microsoft.com/pricing/) to use premium and custom connectors. If your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they are licensed to leverage those embedded components in your application.
+If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for them to use standard connectors. Your users will need one of the [Power Automate licenses](https://flow.microsoft.com/pricing/) to use premium and custom connectors. If your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they are licensed to leverage those embedded components in your application.
 
 We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Power Automate, which you should check for plan and feature details.
 

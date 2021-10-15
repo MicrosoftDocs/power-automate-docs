@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/24/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 Although you can use optical character recognition (OCR) to extract text from Word documents, this approach can become complicated for multi-page documents that require scrolling.
 
-A more efficient way to extract text from Word documents is the use of VBScript. Power Automate Desktop provides the **Run VBScript** action that enables you to run scripts on your desktop.
+A more efficient way to extract text from Word documents is the use of VBScript. Power Automate provides the **Run VBScript** action that enables you to run scripts on your desktop.
 
 To extract text from a Word document, deploy the **Run VBScript** action and paste the following code in the **VBScript to run** field.
 

@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Add images to email messages
 
-Sending emails that contain images is common in many business procedures. Power Automate Desktop enables users to include images in their emails by attaching them or embedding them to the email body.
+Sending emails that contain images is common in many business procedures. Power Automate enables users to include images in their emails by attaching them or embedding them to the email body.
 
 ## Send images as email attachments
 
@@ -29,7 +29,7 @@ You can populate the **Attachment(s)** field with file paths or a variable conta
 
 ## Embed images to email body
 
-Apart from attaching images to emails, Power Automate Desktop allows you to embed images to email bodies using HTML.
+Apart from attaching images to emails, Power Automate allows you to embed images to email bodies using HTML.
 
 To embed an image, check the **Body is HTML** option in the appropriate email action and populate the **Body** field with the following code:
 

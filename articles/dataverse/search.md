@@ -1,5 +1,5 @@
 ---
-title: Use relevance search to retrieve rows from Dataverse | Microsoft Docs
+title: Use Dataverse search to retrieve rows | Microsoft Docs
 description: "Learn how to find and retrieve rows in Microsoft Dataverse by using the search rows action with flows."
 services: ''
 suite: flow
@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 10/04/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -22,13 +22,13 @@ search.audienceType:
   - maker
 ---
 
-# Use relevance search to retrieve rows from Dataverse
+# Use Dataverse search to retrieve rows
 
-Use the **Search rows** action in flows to retrieve data from Microsoft Dataverse by using keywords and [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search), which delivers fast, intelligent, and comprehensive results across tables in Dataverse.
+Use the **Search rows** action in flows to retrieve data from Microsoft Dataverse by using keywords and [Dataverse search](/power-platform/admin/configure-relevance-search-organization#what-is-relevance-search), which delivers fast, intelligent, and comprehensive results across tables in Dataverse.
 
 ## Prerequisites
 
-Your admin must configure [relevance search](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization) on your environment before you can use the search action on Microsoft Dataverse.
+Your admin must configure [Dataverse search](/power-platform/admin/configure-relevance-search-organization) on your environment before you can use the search action on Microsoft Dataverse.
 
 ![The search rows action.](../media/search-row/3f253e0b3de8d320be884b3f503ba33c.png "The search rows action")
 
@@ -45,7 +45,7 @@ You can use dynamic content from a previous step in the flow to parameterize the
 
 Use the **Search type** option to provide the syntax for the search query. Use **simple** to indicate that you want to use the simple query syntax. Or, use **full** if you prefer to use the Lucene query syntax. The default query syntax is **simple**.
 
-Take a look at the following examples or review the full list of features at [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+Take a look at the following examples or review the full list of features at [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
 
 <!--Todo ![](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png) -->
 
@@ -82,14 +82,14 @@ You can specify whether any or all the search terms must be matched to count the
 
 - Using **all** for **Search mode** increases the precision of queries by including fewer results. By default, it is interpreted as "AND NOT". For example, "wifi -luxury" will match documents that contain the term "wifi" and don't contain the term "luxury".
 
-Go to [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
+Go to [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search#searchtype-simple--full-optional) for more details.
 
 ![Search mode example.](../media/search-row/5cf2cbc541a35bf55d424e7c39da8f58.png "Search mode example")
 
 ### Advanced Options
 
 You can optimize your search by using other advanced options as described is this section.
-See [Search across table data using relevance search](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
+See [Search across table data using Dataverse search](/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
 
 - **Row filter**: You can narrow your search by specifying filters as shown in the following image.
 
@@ -108,7 +108,7 @@ Parameter name|Description
 Body|The object that represents the entire response. It contains the list of rows, total row count, and facet results.
 List of rows|An object that represents all the rows returned.
 List of rows item|An individual row in the list of rows, when used inside a loop.
-Row search score|The relevance score of a row. This score indicates how closely it matched the search keywords and conditions.
+Row search score|The Dataverse score of a row. This score indicates how closely it matched the search keywords and conditions.
 Row search highlights|Highlights the specific keywords that matched the search keywords in the row.
 Row table name|The name of the table for a single row. This action aggregates rows from all searchable tables in the environment.
 Row object id|This is an identifier for each row. Use this identifier in conjunction with the table name in the **Get rows** action to read all the columns in a row.
@@ -118,7 +118,7 @@ When you are building your flow, the dynamic content might appear like this imag
 
 ![Dynamic content for building a flow.](../media/search-row/76ba9f15dd4b08b4c051621de4ea1451.png "Dynamic content for building a flow")
 
-The **Search rows** action returns many other columns for the matched rows in a variable schema, depending on [your relevance search configuration](https://docs.microsoft.com/power-platform/admin/configure-relevance-search-organization).
-To use these columns, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image:<!-- Edit note: How about a See also for Lucene. -->
+The **Search rows** action returns many other columns for the matched rows in a variable schema, depending on [your Dataverse search configuration](/power-platform/admin/configure-relevance-search-organization).
+To use these columns, parse the JSON response, and then use the dynamic outputs generated from it as shown in the following image.
 
 ![The JSON schema.](../media/search-row/ae83fc6dbb96a2300f3e9142bfc85586.png "The JSON schema")

@@ -38,7 +38,7 @@ To do this, you'll need to do two things:
 1. Add the instant flow as a step in the **Lead to Opportunity Sales Process**.
 
 > [!TIP]
-> Only [solution-aware flows](/flow/overview-solution-flows) can be added as a step in a business process. 
+> Only [solution-aware flows](/power-automate/overview-solution-flows) can be added as a step in a business process. 
 
 ## Build an instant flow
 

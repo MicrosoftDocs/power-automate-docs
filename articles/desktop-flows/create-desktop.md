@@ -25,6 +25,9 @@ search.audienceType:
 
 # Create and test Windows recorder (V1) flows
 
+>[!IMPORTANT]
+>From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
+
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
 ## Create a desktop Windows recorder (V1) flow
@@ -56,8 +59,8 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1.	Select **Download package**.
 1.	Open the **Setup.Microsoft.PowerAutomate.UIflow.exe** file. This file is likely in your **Downloads** folder after you downloaded it in the previous step.
-1.	Follow the instructions in the Power Automate Desktop setup installer to complete the installation.
-1. Once the Power Automate Desktop installer completes, go to Microsoft Edge store or Google Chrome store depending on the browser you are using and install **Microsoft Windows recorder (V1)** and **Selenium IDE** browser extensions and **Enable extensions**.
+1.	Follow the instructions in the Power Automate setup installer to complete the installation.
+1. Once the Power Automate installer completes, go to Microsoft Edge store or Google Chrome store depending on the browser you are using and install **Microsoft Windows recorder (V1)** and **Selenium IDE** browser extensions and **Enable extensions**.
 
    Continue after you've installed the extension.
 
@@ -94,7 +97,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Close the app that you recorded.
 
-1. Select the card that starts with "Run <app name> script" to view screenshots of the recorded steps.
+1. Select the card that starts with "Run [app name] script" to view screenshots of the recorded steps.
 
      >[!TIP]
      >Select **...** > **Delete** to remove any duplicate steps.

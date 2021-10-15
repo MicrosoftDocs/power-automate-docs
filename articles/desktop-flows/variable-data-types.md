@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-When you create variables in your flows, Power Automate Desktop converts them to a specific type based on their content.
+When you create variables in your flows, Power Automate converts them to a specific type based on their content.
 
 Some of these data types are widely used throughout the application, such as **numbers**, while others, such as **browser instances**, require explicit actions or groups of actions.
 
@@ -75,9 +75,9 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of a datatable variable.](media\data-tables\create-data-table.png)
 
-  Power Automate Desktop provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+  Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  Alternatively, while Power Automate Desktop doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+  Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
@@ -87,7 +87,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
-  ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+  ![An expression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.

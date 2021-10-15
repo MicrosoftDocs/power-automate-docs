@@ -1,6 +1,6 @@
 ---
-title: Power Automate Desktop prerequisites & limitations | Microsoft Docs
-description: Power Automate Desktop prerequisites & limitations
+title: Power Automate for desktop prerequisites & limitations | Microsoft Docs
+description: Power Automate prerequisites & limitations
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,7 +23,7 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate Desktop prerequisites & limitations
+# Power Automate for desktop prerequisites & limitations
 
 ## Prerequisites
 
@@ -45,12 +45,11 @@ search.audienceType:
 > The minimum requirements do not include the resources required for the applications involved in the flows.
      
 > [!TIP]
-> If your device runs Windows 10 Home, you can use Power Automate Desktop to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
+> If your device runs Windows 10 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
 
 | Activity |  Description |Windows Home |  Windows Enterprise / Pro / Server  | 
 |---------|------|----------|-----------|
-| Authoring | Create with Power Automate Desktop |  Yes |  Yes  | 
-| Authoring | Create with Windows Recorder V1 |  No |  Yes  |
+| Authoring | Create with Power Automate for desktop |  Yes |  Yes  | 
 | Authoring | Create with Selenium IDE |  No |  Yes  |
 | Runtime | Local runtime (Attended) |  Yes |  Yes  |
 | Runtime | Cloud runtime (Attended / Unattended) |  No |  Yes  |
@@ -68,14 +67,13 @@ search.audienceType:
 
 - An active connection to the Internet.
 
+## Set the display language for Power Automate for desktop
 
-## Set the display language for Power Automate Desktop
-
-The language used in the Power Automate Desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
+The language used in Power Automate for desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
 
 ## Supported languages
 
-Here are the languages that Power Automate Desktop supports, in addition to English:
+Here are the languages that Power Automate for desktop supports, in addition to English:
 
 |||||
 ----|-----|-----|--------
@@ -129,29 +127,33 @@ Below you can find detailed comparison on what each user will have access to. Yo
 |**Access to new actions**: Automate more non-API systems with new support for SAP, legacy terminals such as mainframes and AS/400, Java apps, Citrix, etc.|Yes|Yes|Yes|
 |**Exception handling**: take advantage of exception handling to enable automation of complex cases that require validation (via action and scripts) and proactively manage flow settings to ensure a flow is completed without the need for human interaction.|Yes|Yes|Yes|
 |**Connectivity** with cloud flows (triggering/scheduling flows)|No|No|Yes|
-|**Dataverse storage**: Save new flows built with Power Automate Desktop centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
+|**Dataverse storage**: Save new desktop flows built with Power Automate centrally in Dataverse, benefiting from Environment isolation and role-based access.|No|No|Yes| 
 |**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
 |**Centralized management and reporting**: New flows and any execution logs are automatically saved to Power Automate service to provide centralized management and reporting.|No|No|Yes|
 |**Additional capabilities** such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
 
 ## Known issues and limitations
 
-1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate Desktop flows. Power Automate Desktop flows will be stored in the default environment with the Dataverse database. If the Dataverse database doesn't exist in the default environment, the user will not be able to create Power Automate Desktop flows and be prompted to create a database. There will be no connectivity of Power Automate Desktop flows with cloud flows.  
+1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate desktop flows. Power Automate desktop flows will be stored in the default environment with the Dataverse database. 
 
-    - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate Desktop (exit from the system tray icon).
+    If the Dataverse database doesn't exist in the default environment, the user will not be able to create desktop flows and be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
+
+    - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate for desktop (exit from the system tray icon).
 
  
 
-1. If users have signed in with trial or paid accounts and want to connect their free Microsoft accounts, they have to use Power Automate Desktop version 2.6.48.21069 or above. Otherwise, they'll encounter the following error.  
+1. If users have signed in with trial or paid accounts and want to connect their free Microsoft accounts, they have to use Power Automate for desktop version 2.6.48.21069 or above. Otherwise, they'll encounter the following error.  
 
       ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
-1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate Desktop.    
+1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate for desktop.
+
+1. Power Automate applies the proxy configuration specified in Windows proxy settings. If the proxy server requires authentication, the administrator has to exclude Power Automate from using it or use another server that doesn't require authentication. You can find more information regarding bypassing proxy servers in [Configure Power Automate to bypass a corporate proxy server](governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server).
 
 
 ## Learn more
 
-- Learn to [create Power Automate Desktop flows](create-flow.md).
+- Learn to [create Power Automate desktop flows](create-flow.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
 

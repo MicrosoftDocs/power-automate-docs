@@ -120,8 +120,8 @@ You should now receive the push notification, indicating that the email has been
 You can monitor instant flows from the **Activity** tab of the flow app:   
 ![Activity tab image.](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
->[!TIP
->]Tap any activity to drill into the results of the run to learn about the run.  
+>[!TIP]
+>Tap any activity to drill into the results of the run to learn about the run.  
 
 ![Activity details image.](./media/introduction-to-button-flows/activity-details-1.png)  
 

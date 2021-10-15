@@ -104,7 +104,7 @@ To address this, the user needs to manually edit the script to insert the comman
 
 - These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
-- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate Desktop](introduction.md) instead.
+- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate](introduction.md) instead.
 
 - Right click is not supported. 
 

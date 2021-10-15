@@ -30,7 +30,7 @@ Control the workstation's installed services
 
 ## Getting started with services
 
-Power Automate Desktop allows users to handle Windows services through the services actions. With these actions, users can maintain full control of the operating system and limit the running services.
+Power Automate allows users to handle Windows services through the services actions. With these actions, users can maintain full control of the operating system and limit the running services.
 
 To control services, use the services group of actions. These actions allow flows to start, stop, pause and resume Windows services.  In the figure below, the **Start service** action starts **UIFlowService**. For this group of actions, only the service name is required, and no output is returned.
 
@@ -48,7 +48,7 @@ Start a stopped Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to start|No|Text value|Own text|The name of the service to start|
+|Service to start|No|Text value||The name of the service to start|
 
 
 ##### Variables Produced
@@ -67,7 +67,7 @@ Stop a running Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to stop|No|Text value|Own text|The name of the service to stop|
+|Service to stop|No|Text value||The name of the service to stop|
 
 
 ##### Variables Produced
@@ -86,7 +86,7 @@ Pause a running Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to pause|No|Text value|Own text|The name of the service to pause|
+|Service to pause|No|Text value||The name of the service to pause|
 
 
 ##### Variables Produced
@@ -105,7 +105,7 @@ Resume a paused Windows service
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Service to resume|No|Text value|Own text|The name of the service to resume|
+|Service to resume|No|Text value||The name of the service to resume|
 
 
 ##### Variables Produced

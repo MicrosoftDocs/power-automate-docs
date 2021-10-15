@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/15/2021
+ms.date: 09/13/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -83,7 +83,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ## Filtering columns
 
-Use the **Column filter** box to define a set of comma-separated, unique names for the table, as shown in the following image. The flow runs only when these columns change on the specific rows.
+Use the **Column filter** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
    ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
 
@@ -104,9 +104,11 @@ and [query functions](/powerapps/developer/common-data-service/webapi/query-data
 
    ![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
 
-### Wait condition using Postpone until
+### Wait condition using delay until
 
-Use an OData-style time stamp in the **Postpone until** property to delay the flow trigger until a specific UTC time. The key benefit of using this property instead of the standard **Delay until** action is that **Postpone Until** never expires, allowing the flow run to wait for long periods of time.
+Use an OData-style time stamp in the **Delay until** property to delay the flow trigger until a specific UTC time.
+
+The key benefit of using the Dataverse **Delay until** property instead of the standard **Delay until** *action* is the Dataverse **Delay until** property never expires, allowing the flow run to wait for long periods of time.
 
    ![Delay until.](../media/create-update-delete-trigger/delay-until.png "Delay until")
 

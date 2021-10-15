@@ -31,11 +31,11 @@ Automate a CMD session
 
 ## Getting started with CMD actions
 
-Use the CMD group of actions featured in Power Automate Desktop to automate Windows Command Prompt tasks.
+Use the CMD group of actions featured in Power Automate to automate Windows Command Prompt tasks.
 
 Use **Open CMD session** to commence a command prompt session. Specify the working folder, and optionally change the code page in the **Advanced** section.
 
-The **Write to CMD session** action uses the CMD session variable. Specify a command, and select whether to send <Enter> immediately afterwards to run it. In the figure below, the command creates a new folder in the current working directory.
+The **Write to CMD session** action uses the CMD session variable. Specify a command, and select whether to send **Enter** immediately afterwards to run it. In the figure below, the command creates a new folder in the current working directory.
 
 ![screenshot of write to cmd session action properties.](media\cmd\write-to-cmd-example.png)
 
@@ -100,7 +100,7 @@ Execute a command on an open CMD session
 |-----|-----|-----|-----|-----|
 |CMD session|No|CMD session||A previously opened CMD session variable|
 |Command|No|Text value||The name of the command to execute|
-|Send <Enter> after command|N/A|Boolean value|True|Specifies whether to send an <Enter> the command|
+|Send **Enter** after command|N/A|Boolean value|True|Specifies whether to send an **Enter** the command|
 
 
 ##### Variables Produced
@@ -125,7 +125,7 @@ Wait for a specific text on a previously opened CMD session
 |Timeout|Yes|Numeric value|0|Specifies whether to wait indefinitely for the text to appear or to fail if the text doesn't show up within a set time period|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables

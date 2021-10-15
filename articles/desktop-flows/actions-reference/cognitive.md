@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
+ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -45,6 +45,26 @@ Perform cognitive operations using Google, Microsoft or IBM services
 |[Detect language](#detectlanguage)|
 |[Key phrases](#keyphrases)|
 |[Sentiment](#sentiment)|
+
+## Getting started with cognitive actions
+
+Cognitive services are machine learning algorithms that use artificial intelligence to perform complex operations, such as computer vision and visual recognition.
+
+Power Automate enables you to interact with various Microsoft, Google, and IBM cognitive services through the cognitive actions.
+
+All actions that use Microsoft services require a subscription key that validates your subscription for a service or group of services. The keys are available in the Azure portal for each resource that you've created. 
+
+![Screnshot of the Spell check action.](media/cognitive/spell-check-action.png)
+
+IBM cognitive actions require an API key that can be created and managed through the IBM Cloud console. Additionally, the IBM cognitive actions require the release date of the used API and the service endpoint location.
+
+![Screenshot of the Translate action.](media/cognitive/translate-action.png)
+
+Like the other cognitive actions, Google cognitive actions require an API key that authorizes you to use the respective services. You can manage your API keys in the **APIs & services** section of the Cloud Console.
+
+![Screenshot of the Analyze entities action.](media/cognitive/analyze-entities-action.png)
+
+## Cognitive actions
 
 ## Google
 Google's cognitive actions

@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/23/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 In some web automation flows, you may need to scroll on web pages to make specific elements visible on the screen.
 
-Power Automate Desktop allows scrolling on web pages through two different approaches. The first one requires the **Focus text field on web page** action, while the second requires JavaScript scripting.
+Power Automate allows scrolling on web pages through two different approaches. The first one requires the **Focus text field on web page** action, while the second requires JavaScript scripting.
 
 ## Scroll on a web page using the Focus text field on web page action
 

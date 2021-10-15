@@ -1,11 +1,11 @@
 ---
-title: Run a Power Automate Desktop flow | Microsoft Docs
-description: Run a flow in the Power Automate Desktop console
+title: Run a Power Automate desktop flow | Microsoft Docs
+description: Run a flow in the Power Automate desktop console
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 10/11/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -114,6 +114,9 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
 
    ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
+>[!NOTE]
+>In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
+
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
 >If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
@@ -131,6 +134,8 @@ By following these strategies, you can avoid having desktop flows competing to r
 >[!NOTE]
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
 
+>[!NOTE]
+>If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles. 
 
 ## Rerun failed desktop flows
 
@@ -139,6 +144,16 @@ If a desktop flow run fails, correct the issue, and then try the following steps
    1. Go to the details page and identify the failed run.
 
    1. Select the **Resubmit** button from the action menu.
+
+## Support long running desktop flows
+Some of your desktop flows might run for long durations (e.g. more than 24 hours). To ensure that those flows run successfully and don't fail due to the default timeout values:
+
+1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
+
+    ![The settings option .](media/run-pad-portal/timeout_settings.png "The settings option")
+
+1.  Select the **Timeout** property and update the duration to correctly handle your dekstop flow run. 
+1.	Select **Done**.
 
 ## Troubleshoot failures
 
@@ -158,7 +173,7 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 ## Learn more
 
  - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](/flow/gateway-manage) documentation.
+ - [Use the on-premises data gateway app](/power-automate/gateway-manage) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 ## Runtime notifications
@@ -168,7 +183,7 @@ A notification popup appears by default when a desktop flow is downloading or ru
 ![Notification window.](\media\run-pad-flow\notification-window.png)
 
 > [!NOTE]
-> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate Desktop doesn't display notifications.
+> Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

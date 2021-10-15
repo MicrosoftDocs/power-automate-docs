@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
+ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -16,8 +16,6 @@ search.audienceType:
 ---
 
 # Terminal emulation
-
-
 
 Take control of terminal emulators for automating mainframes and legacy systems
 
@@ -30,6 +28,36 @@ Take control of terminal emulators for automating mainframes and legacy systems
 |[Set text on terminal session](#settextonterminalsession)|
 |[Send key to terminal session](#sendkey)|
 |[Wait for text on terminal session](#waitfortextonterminalsession)|
+
+## Getting started with terminal emulation actions
+
+Power Automate provides integration with terminal emulators through the **Terminal emulation** actions. These actions enable you to handle terminals and mainframes and perform various operations on them, such as moving the cursor, setting and getting text, and sending keys.
+
+Before deploying any terminal actions, use the **Open terminal session** action to open a new connection with the installed provider. 
+
+> [!IMPORTANT]
+> Before trying to connect to a terminal session, make sure that the actual terminal session is already open on your machine.
+
+If you've installed Micro Focus Reflection on your desktop, choose the respective option in the **Provider** property of the action and populate the required configuration.
+
+![Screenshot of the Open terminal session action.](media/terminalemulation/open-terminal-session-action.png)
+
+If you've installed another provider, select **HLLAPI** that works with most terminal emulation providers.
+
+Depending on the provider you're using, select the appropriate HLLAPI DLL file located in its installation folder. In the following list, you can see the HLLAPI DLL file names of some popular terminal emulation providers:
+
+- RocketSoftware BlueZone: **ehlapi64.dll**
+- IBM Personal Communications: **EHLAPI32.dll**
+- MicroFocus Rumba: **System/ehlapi32.Dll**
+- Cybelesoft zScope: **zHllap32.dll**
+
+![Screenshot of the Open terminal session action with the HLLAPI option selected.](media/terminalemulation/open-terminal-session-action-hllapi.png)
+
+After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action. If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
+
+![Screenshot of the Close terminal sessionaction.](media/terminalemulation/close-terminal-session-action.png)
+
+## Terminal emulation actions
 
 ### <a name="openterminalsession"></a> Open terminal session
 Open a new terminal session
@@ -204,7 +232,7 @@ Wait for a specific text to appear on a terminal session
 |Timeout|Yes|Numeric value|0|The maximum amount of time to wait|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables

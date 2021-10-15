@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2021
+ms.date: 10/11/2021
 ms.author: hamenon
 ---
 
@@ -110,11 +110,11 @@ Optionally, if you want to change the button text, font color, font size, or fil
 ## Known limitations 
 
 * The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to an Azure Active Directory group.
-* The PowerBI visual only functions with flows in a tenant's default environment. Any flow created with the visual is created in the users default environment.
+* The Power BI visual only functions with flows in a tenant's default environment. Any flow created with the visual is created in the users default environment.
 * Additional manual inputs to the button are not supported at this time.
-* The visual is not supported for PaaS embedded scenarios nor in Sovereign Cloud scenarios.
-* Create flows that you will use with the Power BI button trigger directly within the Power BI report. Do not go directly to Power automate to create these flows as the trigger will not have access to the data fields necessary for creating the flow.
-* Power BI data will be sent to and processed in a geography where the flow is deployed.
+* Create flows that you will use with the Power BI button trigger directly within the Power BI report. Do not go directly to Power Automate to create these flows as the trigger will not have access to the data fields necessary for creating the flow.
+* Power BI data is sent to, and processed in, a geography where the flow is deployed.
+* The Power Automate visual isn't supported for PaaS-embedded scenarios, nor in sovereign cloud scenarios.
 
 
 

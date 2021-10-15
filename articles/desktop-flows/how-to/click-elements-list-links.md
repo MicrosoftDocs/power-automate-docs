@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/04/2021
-ms.author: getrantz
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -19,7 +19,7 @@ search.audienceType:
 
 In web automation, it's common to meet scenarios that require you to click all the elements in a list of links.
 
-To automate these scenarios, use the **Extract data from web page** action and extract a random value from two consecutive links. Power Automate Desktop will automatically extract the respective value from all the links in the list.
+To automate these scenarios, use the **Extract data from web page** action and extract a random value from two consecutive links. Power Automate will automatically extract the respective value from all the links in the list.
 
 ![The Live web helper with the selected values.](media/click-elements-list-links/extract-data-web-page-action.png)
 
