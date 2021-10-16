@@ -36,7 +36,7 @@ The following terms are commonly used in Power Automate.
 
 **Approvals (approval requests):** Approvals refer to the actions in approving a cloud flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
- [Introducing the Unified Action Center](https://flow.microsoft.com/en-us/blog/introducing-the-unified-action-center/)
+ [Introducing the Unified Action Center](https://flow.microsoft.com/blog/introducing-the-unified-action-center/)
 
 **Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a row is created, deleted, or updated in Dataverse, the flow will run if that is the trigger you chose.
 
@@ -124,16 +124,15 @@ The following terms are commonly used in Power Automate.
 
 Flows can have one or more triggers.
 
+## U
+
+**UI Flows (RPA):** UI flows enable users to automate repetitive tasks in Windows and web applications. UI flows record and playback user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
+
+[Introduction to UI flows](desktop-flows/overview.md)
+
 ## W
 
 **Workflow:** A sequence of actions that takes a task from initiation to completion.
-
-## U
-
-**UI Flows (RPA):** UI flows enable users to automate repetitive tasks in
-Windows and web applications. UI flows record and playback user interface actions (clicks, keyboard input, etc.) for applications that don't have easy-to-use or complete APIs available.
-
-[Introduction to UI flows](desktop-flows/overview.md)
 
 ## Learn more
 
