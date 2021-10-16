@@ -24,7 +24,7 @@ search.audienceType:
 ---
 # Share a cloud flow
 
-Share a cloud flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a cloud flow in Power Automate:
+Share a cloud flow with others in your organization so they can also benefit from automation you've created. There are three primary ways to share a cloud flow in Power Automate:
 
 - Add an owner to a cloud flow.
 - Share a cloud flow with run-only privileges.
@@ -32,7 +32,7 @@ Share a cloud flow with others in your organization so they can also benefit fro
 
 ## Prerequisites
 
-- You must have a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) to share a cloud flow.
+- You must have either a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (grandfathered), Power Apps Plan 2 (grandfathered), Windows licenses) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
