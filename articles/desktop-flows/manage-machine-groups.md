@@ -216,3 +216,4 @@ Environment admins can also restrict machine registration to a specific set of u
 ## Other known limitations 
 
 - Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.
+- When triggering multiple desktop flows in parallel on a machine group, there are cases where machien selection will take up to 50 seconds before assigning the desktop flow to machien that is available. In these rare cases, desktop flow runs might seem to be running sequentially if they have very short run durations.
