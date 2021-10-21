@@ -1,6 +1,6 @@
 ---
-title: Visualize processes in process advisor | Microsoft Docs
-description: How to visualize your processes in the process advisor feature.
+title: Visualize processes with task mining in process advisor | Microsoft Docs
+description: This topic explains how to visualize your processes with task mining in process advisor.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize processes
+# Visualize processes with task mining in process advisor
 
 ## Process map
 

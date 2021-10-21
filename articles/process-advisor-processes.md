@@ -1,5 +1,5 @@
 ---
-title: Work with processes and recordings | Microsoft Docs
+title: Work with processes and recordings in process advisor | Microsoft Docs
 description: How to create and work with processes in process advisor.
 author: nijemcevic 
 ms.service: power-automate
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Work with processes and recordings
+# Work with processes and recordings in process advisor
 
 Before you can use process advisor to visualize and analyze your processes, you need to:
 

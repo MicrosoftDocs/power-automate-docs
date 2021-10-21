@@ -1,6 +1,6 @@
 ---
-title: Analyze processes | Microsoft Docs
-description: How to use the analyze processes feature in process advisor.
+title: Analyze processes with task mining in process advisor | Microsoft Docs
+description: This topic explains how to analyze processes with task mining in process advisor.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Analyze processes
+# Analyze processes with task mining in process advisor
 
 In the navigation pane on the left in Power Automate, select **Process advisor** > **Processes**, and then select your process to go to the **Details** screen. This is where you access most of your process management activities.
 
