@@ -32,7 +32,9 @@ To resolve a violation navigate to the designer and delete or disable the action
 
 The business vs non-business data loss prevention policy, prevents users to use actions from the two categories on the same flow. 
 
-For example, the user below receives an error as the Database group of actions are marked as business while the Excel group is marked as non-business.
+For example, the flow that appears below contains the **Open SQL connection**, **Execute SQL statement** and **Close SQL connection** actions which belong to the Database actions group and the **Launch Excel**, **Write to Excel** and **Close Excel** actions that belongs to the Excel actions group. Thus it receives an error as the Database group of actions are marked as business while the Excel group is marked as non-business. 
+
+To resolve this data loss prevention policy (DLP) violation, delete or disable actions from one of the two groups.
 
    ![DLP business - non business](./media/dlp/dlpbusiness-nonbusiness.png)
 
@@ -42,12 +44,14 @@ Apart from marking action groups as business and non-business, the administrator
 
 In the example shown below the Email group of actions and the Send email through Outlook actions are marked as blocked.
 
+To resolve this data loss prevention policy (DLP) violation, delete or disable all actions that are marked as blocked.
+
+
    ![DLP blocked](./media/dlp/dlpblocked.png)
 
-For cases that a desktop flow is used in a cloud flow, navigate to the cloud flows tab and ensure the cloud flows are turned-on.
 
 >[!NOTE]
->- The desktop flow dependencies are not being reviewed during the flow run.
+>- In case a flow calls other flows using the **Run desktop flow** action, the dependent flows are not being evaluated for data loss prevention (DLP) violations. 
 >- If the suspended desktop flow was used in a cloud flow, this cloud flow will be also marked as suspended. Once you have fixed the violations on your desktop flow, make sure that all your cloud flows appear on again.
 
 >[!IMPORTANT]
