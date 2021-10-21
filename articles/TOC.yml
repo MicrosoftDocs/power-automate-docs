@@ -380,6 +380,8 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
+    - name: Data loss prevention (DLP)
+    href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
@@ -471,8 +473,10 @@
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
-      - name: Access elements that depend on how the window appears on the screen	  
+      - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
+      - name: Automate java applications
+        href: ./desktop-flows/java.md   
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
