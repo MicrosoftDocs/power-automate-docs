@@ -127,7 +127,7 @@ To update an input/output variable:
 ## Sensitive variables
 
 > [!IMPORTANT]
-> Flows developed in older versions of Power Automate for desktop (v.2.13 or older) remain unaffected from the sensitive variables functionality. Users can run existing flows from the console and the portal without editing them. Existing flows still have the old behavior and work in the same way as before. To immigrate flows to the new functionality, edit and save them at least once with Power Automate Desktop v.2.14 or above. 
+> Flows developed in older versions of Power Automate for desktop (v.2.13 or older) remain unaffected from the sensitive variables functionality. Users can run existing flows from the console and the portal without editing them. Existing flows still have the old behavior and work in the same way as before. To immigrate flows to the new functionality, edit and save them at least once with Power Automate for desktop v.2.14 or above. 
 
 There are scenarios where flows handle sensitive information that needs to be hidden while debugging and running the flow. Power Automate for desktop allows users to create sensitive variables that aren't visible when a flow runs from within the flow designer. 
 
