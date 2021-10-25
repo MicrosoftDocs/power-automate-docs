@@ -18,36 +18,28 @@ search.audienceType:
 
 # Overview of task mining in process advisor
 
-Task mining in process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
+Task mining in process advisor is a technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do them better.
 
-Process advisor task mining helps you to:
+ In process advisor, task mining solutions are integrated with [process mining](process-mining-overview.md) to understand processes better. Together, these technologies help you to find ways to enhance your processes, and improve how employees perform specific tasks.
 
-- Gain insights about which parts of your processes would be best to automate.
+For a comprehensive experience, explore the sections in [Task mining](task-mining-overview.md) and [Process mining](process-mining-overview.md) in this documentation for:
 
-- Identify which activities take the most time.
+- Business scenarios
 
-- Discover which activities are repeated the most.
+- Videos
 
-- Improve efficiencies by understanding where the bottlenecks are.
-
-## Business example
-
-For example, in a healthcare facility, you can use task mining in the process advisor feature to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
-
-Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
-
-With insights and guided recommendations from task mining in process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
+- Walkthroughs
 
 ## Steps to task mining
 
-- Work with processes and recordings.
+- [Work with processes and recordings](process-advisor-processes.md).
 
-- Analyze processes.
+- [Analyze processes](process-advisor-analyze.md).
 
-- Visualize processes.
+- [Visualize processes](process-advisor-visualize.md).
 
-- Act on automation recommendations.
+- [Get automation recommendations](process-advisor-automation.md).
 
-- Share processes.
+- [Share processes](process-advisor-share.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

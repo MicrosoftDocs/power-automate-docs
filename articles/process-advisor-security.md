@@ -1,6 +1,6 @@
 ---
 title: Security and privacy | Microsoft Docs
-description: Security and privacy in process advisor.
+description: This topic explain security and privacy issues in process advisor.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -40,7 +40,7 @@ These security roles have privileges to the process advisor tables in Dataverse.
 - User create, read, write, delete, append, append to, assign, and share permissions on the PM inferred task, PM recording, and workflow binary tables (Custom tables tab).
 
 > [!IMPORTANT]
-> The Process Advisor Application is an **internal security role** that process advisor uses. Do not assign this security role to users. Do not modify the set of privileges in the Process Advisor User or Process Advisor Application security roles.
+> The Process Advisor Application is an *internal security role* that process advisor uses. Don't assign this security role to users. Don't modify the set of privileges in the Process Advisor User or Process Advisor Application security roles.
 
 ## Privacy
 

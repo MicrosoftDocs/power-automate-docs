@@ -1,6 +1,6 @@
 ---
-title: Edit your data source with process mining in process advisor | Microsoft Docs
-description: This topic describes how to edit your data source with process mining in process advisor.
+title: Edit your data source in process advisor (preview) | Microsoft Docs
+description: This topic describes how to edit your data source with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,29 +15,37 @@ search.audienceType:
   - enduser
 ---
 
-# Edit your data source with process mining in process advisor
+# Edit your data source in process advisor (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Some of the reasons why you might want to edit the query are:
+
+- Your data might have multiple ID columns that can be used as case ID. There often isn't a correct answer. You might discover more insights by changing what you use as case ID.
+
+- You have more than five additional columns with useful data. You want to try analyzing other columns to see if they're potentially useful in uncovering root causes of bottlenecks.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 
 ## Edit query
 
-There are many reasons why you want to edit the query:
+1. In the process details page, return to the query editor by selecting **Setup**.
 
-- Your data might have multiple ID columns that can be used as case ID. There often is not a right answer and you may discover additional insights by changing what you use as case ID.
+1. Select (or double-click) the corresponding steps in the **Applied steps** area under **Query settings** to edit those steps.
 
-- You have more than five additional columns with useful data, and you want to try analyzing other columns to see if they are potentially useful in uncovering root causes of bottlenecks.
+    *Don't* select the **Map to entity** or **Choose columns** buttons again.
 
-To edit the query:
-
-1. Click Setup in the process details page to return to the query editor. 
-
-1. Do not click the Map to entity or Choose columns buttons again. 
-
-1. Instead, double click on the corresponding steps in the Applied steps screen under Query settings to edit those steps.
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
 
 ## Refresh data
 
-If you have a data source that is a transactional data source, like Dataverse or SQL, or if you want to see the Analytics page updated with the latest data from that data source, simply click Refresh on the right side of the Data Source card in the Process details page. You need to click Analyze again after clicking Refresh.
+If you have a data source that's transactional, like Dataverse or SQL, select **Refresh** on the right side of the Data Source card in the Process details page. You need to select **Analyze** again after selecting **Refresh**. You also need to do this if you want to see the Analytics page updated with the latest data from that data source.
 
 ## Disconnect data
 
-If you want to change the data source for your process, maybe you were just using a CSV file before but now you want to connect to a transactional data source instead, you can do that easily by clicking Disconnect data on the right side of the Data Source card. In the Process details page, once you disconnect, click Setup again to connect to your new dat
+If you want to change the data source for your process, you can easily do this. For example, you might have been using a CSV file before but now you want to connect to a transactional data source instead. In this example, select **Disconnect data** on the right side of the Data Source card. In the Process details page, once you disconnect, select **Setup** again to connect to your new data source.

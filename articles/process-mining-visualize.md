@@ -1,11 +1,11 @@
 ---
-title: Visualize processes with process mining in process advisor | Microsoft Docs
-description: This topic explains how to visualize processes with process mining in process advisor.
+title: Visualize and analyze processes in process advisor (preview) | Microsoft Docs
+description: This topic explains how to visualize and analyze processes with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 5/25/2021
+ms.date: 11/02/2021
 ms.author: tatn
 ms.reviewer: v-aangie
 search.app: 
@@ -15,11 +15,20 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize processes with process mining in process advisor
+# Visualize and analyze processes in process advisor (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+This topic explains metrics and visuals, and what they could tell you about your process.
 
 <!-- AA compare with task visualize -->
 
-## Process map
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+## Visualize and analyze proccesses with the process map
 
 The process map empowers you to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
@@ -41,9 +50,16 @@ To drill down into the process, you have various filters available:
 
 Additionally, there are key performance indicators (KPIs) available to help you better understand your task. They are described in the following section.
 
-## Analytics
+## Use KPIs and visualizations for analytics
 
-Out-of-the-box, you'll get several KPIs and visualizations to help you to understand your process. The list of metrics and visuals, and what they could tell you about your process are:
+Out-of-the-box, you'll get several KPIs and visualizations to help you to understand your process.
+
+Here's a short video on process mining analytics including custom filters:<br>
+</br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNQx7]
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Analytics visual.](media/process-mining-visualize/analytics.png "Analytics visual")
 
 ### KPIs
 
@@ -76,8 +92,5 @@ Out-of-the-box, you'll get several KPIs and visualizations to help you to unders
 - **Start date filter**: Filters for the time range when recording has started and ended. For example, if your process changed over time, you want to see if there was any impact on your metrics after the process change by filtering for recordings that started after a certain time.
 
 - **Optional Filters**: If you imported Optional Columns during your data upload process, you will have additional filters to slice and dice the data by. In the image above we have examples of optional filers for Location, Role and Resource.
-
-20.	
-
  
 
