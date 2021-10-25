@@ -196,7 +196,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced

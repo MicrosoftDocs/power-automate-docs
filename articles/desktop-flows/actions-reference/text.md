@@ -48,7 +48,7 @@ To find a string in a text and replace it with another string or character, use 
 
 ![Screenshot of replace text action.](\media\text\replace-text-example.png)
 
-Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
 
@@ -352,7 +352,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Is regular expression|N/A|Boolean value|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -379,7 +379,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Ignore case|N/A|Boolean value|False|Specify whether to find the specified text using case-sensitive or case-insensitive matching|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -409,7 +409,7 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Activate escape sequences|N/A|Boolean value|False|Specify whether to use special sequences. For example, '\t' in the replacement text will be interpreted as a tab|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
