@@ -21,7 +21,7 @@ search.audienceType:
 This tutorial with sample data allows you to experience task mining in the process advisor feature. In this tutorial, you will:
 
 - [Import a solution](#import-a-solution).
-- [View your recordings](#view-your-recordings).
+- [View sample recordings](#view-sample-recordings).
 - [Analyze your process](#analyze-your-process).
 - [Gather insights with a process map](#gather-insights-with-a-process-map).
 - [View metrics with activity combinations and variants](#view-metrics-with-activity-combinations-and-variants).
@@ -79,7 +79,7 @@ For the task mining tutorial, go to [User recording demo data](https://go.micros
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Solutions screen with a message that the import was a success.](media/task-mining-walkthrough/import-success.png "Import was a success message")
 
-## View your recordings
+## View sample recordings
 
 1. Once you've successfully imported the zip file, on the navigation pane to the left, select **Process advisor** > **Processes**.
 
