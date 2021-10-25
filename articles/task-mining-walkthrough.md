@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# End-to-end walkthrough with task mining (preview)
+# End-to-end walkthrough with process advisor (preview)
 
 This end-to-end walkthrough allows you to experience process advisor with sample data. In this walkthrough, you will:
 
