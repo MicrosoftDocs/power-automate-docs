@@ -57,7 +57,7 @@ If the webserver requires authentication, you can populate your credentials in t
 The downloaded text is stored in a variable named **WebPageText**. If you use the action to download files, you can select to save them locally on your desktop.
 
 > [!NOTE]
-> Apart from the HTTP actions, Power Automate enables users to interact with web application through the browser automation actions. You can find more information about browser automation actions in [Web automation](webautomation.md).
+> Apart from the HTTP actions, Power Automate enables users to interact with web application through the browser automation actions. You can find more information about browser automation actions in [Browser automation](webautomation.md).
 
 ## HTTP actions
 

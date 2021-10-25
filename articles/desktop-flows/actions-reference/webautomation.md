@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Web automation
+# Browser automation
 
 Start and manage web applications on browsers
 
@@ -47,11 +47,11 @@ You can find more information on how to use the browser automation actions [here
 |[Hover mouse over element on web page](#hoveroverelement)|
 |[Close web browser](#closewebbrowser)|
 
-## Getting started with web automation
+## Getting started with browser automation
 
 Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
 
-To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
+To add a new UI element, select **Add UI element** through the deployed browser automation action or the **UI elements** tab of the flow designer.
 
 ![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
 
@@ -383,7 +383,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|InternetExplorer|Web browser instance|The Internet Explorer instance to use with web automation actions|
+|InternetExplorer|Web browser instance|The Internet Explorer instance to use with browser automation actions|
 
 
 ##### <a name="launchinternetexplorerbase_onerror"></a> Exceptions
@@ -414,7 +414,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Firefox instance to use with web automation actions|
+|Browser|Web browser instance|The Firefox instance to use with browser automation actions|
 
 
 ##### <a name="launchfirefoxbase_onerror"></a> Exceptions
@@ -445,7 +445,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Chrome instance to use with web automation actions|
+|Browser|Web browser instance|The Chrome instance to use with browser automation actions|
 
 
 ##### <a name="launchchromebase_onerror"></a> Exceptions
@@ -476,7 +476,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Edge instance to use with web automation actions|
+|Browser|Web browser instance|The Edge instance to use with browser automation actions|
 
 
 ##### <a name="launchedgebase_onerror"></a> Exceptions
@@ -501,7 +501,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewBrowser|Web browser instance|The new web browser instance to use with web automation actions|
+|NewBrowser|Web browser instance|The new web browser instance to use with browser automation actions|
 
 
 ##### <a name="createnewtabbase_onerror"></a> Exceptions
