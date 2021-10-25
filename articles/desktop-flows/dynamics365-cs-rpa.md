@@ -53,8 +53,8 @@ Use these recommended security roles.
 
 | **Application**                              | **Security role**                                                                                                                | **Link to documentation**                                                                                                                                                    |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Power Platform                               | Option 1: Environment admin Option 2: Environment maker (if the environment already has Dataverse and unattended license needed) |                                                                                                                                                                              |
-| Dynamics 365 for Customer Service | D365 Customer Service administrator                                                                                              | [Enable users for Customer Service and assign roles \| Microsoft Docs](https://docs.microsoft.com/dynamics365/customer-service/add-users-assign-roles) |
+| Power Platform                               | Option 1: Environment admin <br>Option 2: Environment maker (if the environment already has Dataverse and unattended license needed) |                                                                                                                                                                              |
+| Dynamics 365 for Customer Service | D365 Customer Service administrator                                                                                              | [Enable users for Customer Service and assign roles](/dynamics365/customer-service/add-users-assign-roles) |
 
 ### Licenses
 
@@ -180,7 +180,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Case agent script with automation.](./media/dynamics365-cs-rpa/case-entity-session.png)
 
-    Learn more about [session templates](https://docs.microsoft.com/dynamics365/app-profile-manager/session-templates).
+    Learn more about [session templates](/dynamics365/app-profile-manager/session-templates).
 
 3. From the Dynamics 365 Customer Service app, login to Power Automate.
 
@@ -222,7 +222,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
 
-1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow.md#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow.md#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
 
 ## Troubleshooting and known issues
 
