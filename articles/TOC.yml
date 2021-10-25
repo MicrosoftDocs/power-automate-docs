@@ -33,7 +33,7 @@
     href: task-mining-walkthrough.md    
   - name: Task mining
     items:
-    - name: Overview
+    - name: Overview 
       href: task-mining-overview.md      
     - name: Work with processes and recordings
       href: process-advisor-processes.md
