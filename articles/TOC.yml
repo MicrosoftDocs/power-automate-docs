@@ -33,7 +33,7 @@
     href: task-mining-walkthrough.md    
   - name: Task mining
     items:
-    - name: Overview 
+    - name: Overview
       href: task-mining-overview.md      
     - name: Work with processes and recordings
       href: process-advisor-processes.md
@@ -75,7 +75,7 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process advisor
-  - name: Glossary
+  - name: Glossary in process advisor
     href: process-advisor-glossary.md
     displayName: Process advisor glossary
 - name: Cloud flows
