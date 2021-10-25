@@ -35,7 +35,7 @@
     href: process-advisor-analyze.md
   - name: Visualize processes
     href: process-advisor-visualize.md
-  - name: Automation recommendation (preview)
+  - name: Automation recommendation
     href: process-advisor-automation.md 
   - name: Share processes
     href: process-advisor-share.md
@@ -264,6 +264,8 @@
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
+    - name: Trigger flows with actions
+      href: ./dataverse/action-trigger.md
     - name: Use a flow to add a row
       href: ./dataverse/create.md
     - name: Use a flow to update a row
@@ -280,7 +282,7 @@
       href: ./dataverse/bound-unbound.md
     - name: Use relationships to update rows
       href: ./dataverse/relationships.md
-    - name: Use relevance search to retrieve rows
+    - name: Use Dataverse search to retrieve rows
       href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
@@ -362,7 +364,7 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
-  - name: Manage machines and machine groups (preview)
+  - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
@@ -596,7 +598,7 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
-  - name: Use RPA with Dynamics 365 (preview)
+  - name: Use RPA with Dynamics 365
     items:
     - name: Overview of RPA templates and Dynamics 365
       href: ./desktop-flows/dynamics365-rpa-overview.md

@@ -1,5 +1,5 @@
 ---
-title: Automation recommendation in process advisor (preview) | Microsoft Docs
+title: Automation recommendation in process advisor | Microsoft Docs
 description: Identify opportunities to automate your processes in the process advisor feature.
 author: nijemcevic 
 ms.service: power-automate
@@ -14,9 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Automation recommendation in process advisor (preview)
-
-[This topic is pre-release documentation and is subject to change.]
+# Automation recommendation in process advisor
 
 The process advisor automation recommendation feature helps you identify automation opportunities. It also guides you in automating your processes using Microsoft Power Automate.
 

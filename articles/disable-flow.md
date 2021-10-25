@@ -41,6 +41,8 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
 
     ![New flow status after being disabled on flow details page.](./media/disable-flow/flow-details-page-new-status.png)
 
+>[!NOTE]
+>If you turn off a flow, its runs are queued and they'll run when you turn the flow on.
 
 ## Turn flows on
 

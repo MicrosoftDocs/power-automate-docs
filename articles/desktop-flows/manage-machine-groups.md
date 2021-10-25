@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 03/29/2021
+ms.date: 10/18/2021
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -15,9 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage machine groups (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Manage machine groups
 
 ## Create a machine group 
 
@@ -72,7 +70,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine (preview)**. 
+1. Next to Connect, select **Direct to machine**. 
 
 1. Select the name of your machine group. 
 
@@ -101,7 +99,7 @@ Once a machine group is created in an environment, you can view its details at a
 
 1. Select **Monitor > Machines**. 
 
-1. Select **Machine groups (preview)**. 
+1. Select **Machine groups**. 
 
 Within the list, for each machine you can view: 
 
@@ -127,7 +125,7 @@ You can share a machine group with other users in your organization, giving thos
 
 1. Select **Monitor**, then select **Machines**. 
 
-1. Select **Machine groups (preview)**. 
+1. Select **Machine groups**. 
 
 1. Select your machine group from the list. 
 
@@ -218,3 +216,4 @@ Environment admins can also restrict machine registration to a specific set of u
 ## Other known limitations 
 
 - Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.
+- When triggering multiple desktop flows in parallel on a machine group, there are cases where machine selection will take up to 50 seconds before assigning the desktop flow to machine that is available. In these rare cases, desktop flow runs might seem to be running sequentially if they have very short run durations.
