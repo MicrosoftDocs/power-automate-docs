@@ -5,7 +5,7 @@ author: nijemcevic
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 11/02/2021/2021
+ms.date: 11/02/2021
 ms.author: tatn
 ms.reviewer: v-aangie
 search.app: 

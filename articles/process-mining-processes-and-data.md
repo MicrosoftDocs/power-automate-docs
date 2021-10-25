@@ -53,13 +53,13 @@ Timestamps indicate the exact time that an event or activity took place. Event l
 
 ## Where to get log data from your application
 
-Regardless of your application, it's important note that process advisor needs log data. Many of the tables that exist in your application’s database will contain the current state of the data. It might not contain a historical record of the events that happened, which is what an event log is. Fortunately, in many larger applications, this historical record or log is often stored in a separate table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, also have similar concepts, but the name may be different.
+Regardless of your application, it's important to note that process advisor needs log data. Many of the tables that exist in your application’s database will contain the current state of the data. It might not contain a historical record of the events that happened, which is what an event log is. Fortunately, in many larger applications, this historical record or log is often stored in a separate table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, also have similar concepts, but the name may be different.
 
-While there may be tables that log historical records, the way that data is structured can be very complex. You might need to join the log table with other tables in the application database to get specific IDs or names. Also, not all events that you're interested in are logged. You may need to determine what events should be kept or filtered out. If you need help, you should contact the IT team that manages this application to understand more.
+While there may be tables that log historical records, the way that data is structured can be complex. You might need to join the log table with other tables in the application database to get specific IDs or names. Also, not all events that you're interested in are logged. You may need to determine what events should be kept or filtered out. If you need help, you should contact the IT team that manages this application to understand more.
 
 ## Connect to a data source
 
-The benefit of connecting to a database directly is the ability to keep process advisor up-to-date with the latest data from the data source.
+The benefit of connecting to a database directly is the ability to keep process advisor up to date with the latest data from the data source.
 
 [Power query](/power-query/power-query-what-is-power-query) supports a large variety of connectors. A connector provides a way for process advisor to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
 

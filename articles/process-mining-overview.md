@@ -53,12 +53,12 @@ You can easily filter for custom attributes such as location, department, and ot
 
 ## Steps to process mining
 
-- [Understand data requirements](process-mining-processes-and-data.md#data-requirements)
+- [Understand data requirements](process-mining-processes-and-data.md#data-requirements).
 
-- [Connect to a data source](process-mining-processes-and-data.md#connect-to-a-data-source)
+- [Connect to a data source](process-mining-processes-and-data.md#connect-to-a-data-source).
 
-- [Transform data](process-mining-transform.md)
+- [Transform data](process-mining-transform.md).
 
-- [Map data](process-mining-transform.md#map-data)
+- [Map data](process-mining-transform.md#map-data).
 
-- [Analyze process](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics)
+- [Analyze process](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).

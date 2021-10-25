@@ -18,7 +18,7 @@ search.audienceType:
 
 # End-to-end walkthrough with task mining (preview)
 
-This end-to-end walkthrough allows you to experience proccess advisor with sample data. In this walkthrough, you will:
+This end-to-end walkthrough allows you to experience process advisor with sample data. In this walkthrough, you will:
 
 - [Import a solution](#import-a-solution).
 - [View your recordings](#view-your-recordings).
@@ -113,18 +113,9 @@ You"ll see the following features:
 
 - **New Recording**: Create a new recording.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the New recording button.](media/task-mining-walkthrough/new-recording.png "New recording button")
-
 - **Analytics**: See the process map and insights.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Analytics button.](media/task-mining-walkthrough/analytics.png "Analytics button")
-
 - **Share**: Share your processes with your team members.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Share button.](media/task-mining-walkthrough/share.png "Share button")
 
     Process owners can pick two role options when sharing: contributor and co-owner. The contributor role would only give the user the ability to upload their own recording to the process. The co-owner role would give the user the ability to upload recordings and edit other recordings.
 
@@ -133,18 +124,9 @@ You"ll see the following features:
 
 - **Analyze**: Analyze your processes.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Analyze button.](media/task-mining-walkthrough/analyze.png "Analyze button")
- 
 - **Create activity names**: Create activity names for your process.
  
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Create activity names button.](media/task-mining-walkthrough/create-activity-names.png "Create activity names button")
-
 - **Delete process**: Delete your process.
-
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Delete button.](media/task-mining-walkthrough/delete.png "Delete button")
 
 ## Analyze your process
 
@@ -166,7 +148,7 @@ You"ll see the following features:
 1. Once it's done, you'll see the **Process analysis status**  change to **Analyzed**. Select **Analytics** to see the process map and insights. This step may take a couple minutes to complete after the analysis has been performed.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Analytics screen.](media/task-mining-walkthrough/analytics-screen.png "Analytics screen")
+    > ![Screenshot of the Analytics button.](media/task-mining-walkthrough/analytics-screen.png "Analytics button")
 
 ### Analytics page layout
 
@@ -175,7 +157,7 @@ This section explains what you can do on the Analytics screen.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Analytics screen.](media/task-mining-walkthrough/analytics-layout.png "Analytics screen")
 
-- **Automate activities (preview):** If during the recording process, a user used an application that has its Power Automate actions (for example Microsoft Outlook or Excel), then after selecting **Automate activities (preview)**, a draft Power Automate process would be opened containing the actions related to used applications which can be automated. The user would be then able to start building the final process using the proposed draft.
+- **Automate activities (preview):** If during the recording process, a user used an application that has its Power Automate actions (for example Microsoft Outlook or Excel), then after selecting **Automate activities (preview)**, a draft Power Automate process would be opened containing the actions related to used applications that can be automated. The user would be then able to start building the final process using the proposed draft.
 
 - **Legend:** Displays information about the report to let users better understand what they see.
 
@@ -203,7 +185,7 @@ In the previous example, you'll see the various steps in the business process an
 
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can gather insights about where improvement opportunities exist.
 
-To get to the process map, select **Analytics** > **Process map**.
+Go to the process map by selecting **Analytics** > **Process map**.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the process map.](media/task-mining-walkthrough/gather-insights.png "Process map")
@@ -244,7 +226,7 @@ You can see that people spend a lot of their time entering the information in th
 1. Look at the top analytics data. The average this process time is 1.78 mins out of five recordings.  
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of selecting a blank space.](media/task-mining-walkthrough/analytics-data.png "select a blank space")
+    > ![Screenshot of analytics data.](media/task-mining-walkthrough/analytics-data.png "Analytics data")
 
 1. Analyze other time-based metrics dashboards:
 

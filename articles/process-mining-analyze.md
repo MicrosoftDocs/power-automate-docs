@@ -61,7 +61,7 @@ To troubleshoot:
 1. Download the report by selecting the **Download** icon in the **Actions** column.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Warning icon.](media/process-mining-analyze/download.png "Warning icon")
+    > ![Screenshot of the Download icon.](media/process-mining-analyze/download.png "Download icon")
 
 9.	Open the report to see details of the issue.
 

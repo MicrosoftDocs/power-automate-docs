@@ -28,7 +28,7 @@ This topic explains metrics and visuals, and what they could tell you about your
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-## Visualize and analyze proccesses with the process map
+## Visualize and analyze processes with the process map
 
 The process map empowers you to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
