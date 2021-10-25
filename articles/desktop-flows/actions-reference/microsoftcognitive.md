@@ -43,6 +43,7 @@ All Microsoft cognitive actions require a subscription key that validates your s
 
 ## Bing spell check
 Correct spelling errors, recognize the difference among names, brand names, and slang, as well as understand homophones
+
 ### <a name="spellcheck"></a> Spell check
 Invokes the Microsoft Cognitive service named 'Bing Spell Check'
 
