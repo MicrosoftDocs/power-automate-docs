@@ -40,7 +40,7 @@ Here's what you need to prepare your environment.
 
 Install the following:
 
-- Dynamics 365 Omnichannel for Customer Service.
+- Dynamics 365 for Customer Service.
 
 - Power Automate for desktop. Power Automate for desktop will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.
 
@@ -54,7 +54,8 @@ Use these recommended security roles.
 | **Application**                              | **Security role**                                                                                                                | **Link to documentation**                                                                                                                                                    |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Power Platform                               | Option 1: Environment admin Option 2: Environment maker (if the environment already has Dataverse and unattended license needed) |                                                                                                                                                                              |
-| Dynamic 365 Omnichannel for Customer Service | D365 Customer Service administrator                                                                                              | [Enable users for Omnichannel for Customer Service and assign roles \| Microsoft Docs](/dynamics365/customer-service/add-users-assign-roles) |
+| Dynamics 365 for Customer Service | D365 Customer Service administrator                                                                                              | [Enable users for Customer Service and assign roles \| Microsoft Docs](https://docs.microsoft.com/dynamics365/customer-service/add-users-assign-roles) |
+
 
 ### Licenses
 
@@ -81,15 +82,11 @@ Use these recommended security roles.
 
 1. Get a trial license for the Dynamics 365 Customer Service app.
 
-1. To get started with [Dynamics 365 Omnichannel for Customer Service](https://dynamics.microsoft.com/get-started/free-trial/?appname=customerservice) and automate the customer validation process.
+1. To get started with [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/get-started/free-trial/?appname=customerservice) and automate the customer validation process.
 
 ## Set up your device
 
 Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.
-
-### Install OmniChannel
-
-1. Install [OmniChannel](/dynamics365/customer-service/omnichannel-provision-license) in your environment.
 
 ### Get the latest updates for your environment
 
@@ -232,7 +229,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 | Known issue                                                                                            | Workaround                                                                                                                                                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Did not see the productivity tools panel from D365 customer service                                    | Before 7/2/2021, you need to install Omni Channel to your environment. Productivity tools don’t show on home session. You need create a new session (Shift-click on case link) to see it. Producitivity tools runtime initialization is async. Please wait 1 – 2 seconds on home session before create new sessions. |
+| Did not see the productivity tools panel from D365 customer service                                    | Productivity tools don’t show on home session. You need create a new session (Shift-click on case link) to see it. Producitivity tools runtime initialization is async. Please wait 1 – 2 seconds on home session before create new sessions. |
 | Agent can’t see the flow                                                                               | Every agent needs to login flow from D365 widget for the first time                                                                                                                                                                                                                                             |
 | During install, you will be prompted multiple times for the same confirmation to install.              | Confirm with “yes I am sure to install” every time prompted                                                                                                                                                                                                                                                     |
 | The agent script isn’t added to current session template automatically after import the demo solution. | Manually add the agent script to case session template.                                                                                                                                                                                                                                                         |
