@@ -1,6 +1,6 @@
 ---
-title: End-to-end walkthrough with process advisor  | Microsoft Docs
-description: This topic provides an end-to-end walkthrough with demo data in the process advisor feature in Power Automate.
+title: Get started with task mining in process advisor  | Microsoft Docs
+description: This topic is a tutorial with demo data for task mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -16,9 +16,9 @@ search.audienceType:
   - enduser
 ---
 
-# End-to-end walkthrough with process advisor (preview)
+# Tutorial: Get started with task mining in process advisor
 
-This end-to-end walkthrough allows you to experience process advisor with sample data. In this walkthrough, you will:
+This tutorial with sample data allows you to experience task mining in the process advisor feature. In this tutorial, you will:
 
 - [Import a solution](#import-a-solution).
 - [View your recordings](#view-your-recordings).
@@ -27,7 +27,9 @@ This end-to-end walkthrough allows you to experience process advisor with sample
 - [View metrics with activity combinations and variants](#view-metrics-with-activity-combinations-and-variants).
 - [Identify automation opportunities](#identify-automation-opportunities).
 
-## Get started
+For the task mining tutorial, go to [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining (preview)](process-mining-walkthrough.md).
+
+## Get process advisor ready 
 
 1. Sign in to [Power Automate](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true).
 

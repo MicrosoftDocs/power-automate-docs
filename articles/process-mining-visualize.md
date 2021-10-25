@@ -21,8 +21,6 @@ search.audienceType:
 
 This topic explains metrics and visuals, and what they could tell you about your process.
 
-<!-- AA compare with task visualize -->
-
 > [!IMPORTANT]
 > - This is a preview feature.
 >

@@ -29,12 +29,12 @@
   - name: Overview    
     href: process-advisor-overview.md
     displayName: Overview of process advisor
-  - name: End-to-end walkthrough
-    href: task-mining-walkthrough.md    
   - name: Task mining
     items:
     - name: Overview
-      href: task-mining-overview.md      
+      href: task-mining-overview.md
+    - name: Get started with task mining
+      href: task-mining-walkthrough.md  
     - name: Work with processes and recordings
       href: process-advisor-processes.md
     - name: Analyze processes
@@ -49,7 +49,7 @@
     items:
     - name: Overview
       href: process-mining-overview.md
-    - name: End-to-end walkthrough
+    - name: Get started with process mining
       href: process-mining-walkthrough.md
     - name: Visualize and analyze processes
       href: process-mining-visualize.md

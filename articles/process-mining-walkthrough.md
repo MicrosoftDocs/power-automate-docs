@@ -1,6 +1,6 @@
 ---
-title: End-to-end walkthrough with process mining (preview) | Microsoft Docs
-description: This topic provides an end-to-end walkthrough with demo data in process mining in the process advisor feature in Power Automate.
+title: Get started with process mining in process advisor (preview) | Microsoft Docs
+description: This topic is a tutorial with demo data in process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -16,13 +16,13 @@ search.audienceType:
   - enduser
 ---
 
-# End-to-end walkthrough with process mining (preview)
+# Tutorial: Get started with process mining (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-This end-to-end walkthrough allows you to experience process mining with sample data. In this walkthrough, you'll create a process, import data, and then analyze it.
+This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
-Download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For task mining demo data, go to [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). <!-- Let's say when/why you need this. -->
+For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-walkthrough.md).
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -98,4 +98,4 @@ Download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go
     > [!div class="mx-imgBorder"]
     > ![Screenshot of an analyzed process.](media/process-mining-walkthrough/analytics.png "Process status is 'Analyzed'")
 
-1. For a description of the how to analyze the process map and a short video, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md).
+1. For a description of how to analyze the process map and a short video, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md).
