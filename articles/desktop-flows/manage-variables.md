@@ -127,7 +127,7 @@ To update an input/output variable:
 ## Sensitive variables
 
 > [!IMPORTANT]
-> Flows developed in older versions of Power Automate for desktop (v.2.13 or older) remain unaffected from the sensitive variables functionality, as long as they are not edited. If users run existing flows from the console and the portal without editing them, they will still have the old behavior and work in the same way as before. To migrate flows to the new functionality, edit and save them at least once with Power Automate for desktop v.2.14 or above. This will convert past encrypted type input variables, as well as encrypted type variables produced by the 'Get password from CyberArk' action, to text type variables marked as sensitive.
+> Flows developed in older versions of Power Automate for desktop (v.2.13 or older) remain unaffected from the sensitive variables functionality, as long as they aren't edited. If users run existing flows from the console and the portal without editing them, they will still have the old behavior and work in the same way as before. To migrate flows to the new functionality, edit and save them at least once with Power Automate for desktop v.2.14 or above. This will convert past encrypted type input variables, as well as encrypted type variables produced by the 'Get password from CyberArk' action, to text type variables marked as sensitive.
 
 There are scenarios where flows handle sensitive information that needs to be hidden while debugging and running the flow. Power Automate for desktop allows users to create sensitive variables that aren't visible when a flow runs from within the flow designer. 
 
@@ -139,7 +139,7 @@ In the flow designer, the sensitivity works as a mask that can be set on and off
 
 > [!NOTE]
 > - The value of a sensitive variable is visible when the variable is sent to an application outside Power Automate for desktop or displayed through the **Display message**  action. 
-> - Sensitivity is not inheritable in variables. This means that if a sensitive variable or expression is added or assigned to another variable, the latter will not be sensitive by default, unless explicitly marked otherwise by the user.
+> - Sensitivity isn't inheritable in variables. This means that if a sensitive variable or expression is added or assigned to another variable, the latter won't be sensitive by default, unless explicitly marked otherwise by the user.
 
 To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as no sensitive**. 
 
@@ -173,7 +173,7 @@ The eye icon to reveal the value isn't available unless the user deletes the def
 
 - **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. Furthermore, direct hardcoded values are only supported (and encrypted) in the actions where this was already possible, namely actions that include password fields or the actions **Send keys**, **Populate text field in window**, **Populate text field on web page** and **Set text on terminal session**.
 
-- **Issue:** Renaming a input or output variable that is marked as sensitive shows error 'Variable(s): [Variable name] are not defined'.
+- **Issue:** Renaming a input or output variable that is marked as sensitive shows error 'Variable(s): [Variable name] aren't defined'.
 
 - **Workarounds:** Mark the variable as not sensitive before renaming it.
 
