@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/14/2021
+ms.date: 10/06/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,7 +21,7 @@ This article provides resources that you can use to learn about the features tha
 
 ## Weekly releases
 
-For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate](/business-applications-release-notes/powerplatform/released-versions/flow).
+For information about the new features, fixes, and improvements that were released in the past few weeks, see [Released versions for Microsoft Power Automate](/power-platform/released-versions/power-automate).
 
 > [!NOTE]
 > Releases are rolled out over several days. New or updated functionality might not appear immediately.
