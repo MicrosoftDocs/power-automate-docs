@@ -141,7 +141,7 @@ In the flow designer, the sensitivity works as a mask that can be set on and off
 > - The value of a sensitive variable is visible when the variable is sent to an application outside Power Automate for desktop or displayed through the **Display message**  action. 
 > - Sensitivity isn't inheritable in variables. This means that if a sensitive variable or expression is added or assigned to another variable, the latter won't be sensitive by default, unless explicitly marked otherwise by the user.
 
-To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as no sensitive**. 
+To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as not sensitive**. 
 
 ![Screenshot of the Mark as sensitive option.](media\sensitive-variables\mark-as-sensitive-option.png)
 
@@ -157,7 +157,7 @@ When creating or editing an input or output variable, select **Mark as sensitive
 
 The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This functionality is implemented because this value exists only for testing and debugging purposes. Each input has to be initialized in production runs from the portal or the console.
 
-On the other hand, the default value isn't visible in the variables pane. Additionally, the default value of a sensitive input variable is hidden in the **Flow input** dialog, which appears when a flow containing inputs variables is run through the console.
+On the other hand, the default value isn't visible in the variables pane. Additionally, the default value of a sensitive input variable is hidden in the **Flow input** dialog, which appears when a flow containing input variables is run through the console.
 
 The eye icon to reveal the value isn't available unless the user deletes the default value and provides a new one. 
 
