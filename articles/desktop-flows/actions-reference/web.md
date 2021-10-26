@@ -1,6 +1,6 @@
 ---
-title: Web | Microsoft Docs
-description: Web Actions Reference
+title: HTTP | Microsoft Docs
+description: HTTP Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Web
+# HTTP
 
 Communicate with web applications and services directly
 
@@ -30,7 +30,7 @@ You can find more information on how to use the web actions [here](../automation
 
 ## Getting started with web actions
 
-Web actions enable users to interact with APIs and send web requests that perform various operations, such as uploading and downloading data and files.
+HTTP actions enable users to interact with APIs and send web requests that perform various operations, such as uploading and downloading data and files.
 
 To send an API request, like POST, GET, PUT, or DELETE, you can use the **Invoke web service** action. 
 
@@ -57,9 +57,9 @@ If the webserver requires authentication, you can populate your credentials in t
 The downloaded text is stored in a variable named **WebPageText**. If you use the action to download files, you can select to save them locally on your desktop.
 
 > [!NOTE]
-> Apart from the web actions, Power Automate enables users to interact with web application through the web automation actions. You can find more information about web automation actions in [Web automation](webautomation.md).
+> Apart from the HTTP actions, Power Automate enables users to interact with web application through the browser automation actions. You can find more information about browser automation actions in [Browser automation](webautomation.md).
 
-## Web actions
+## HTTP actions
 
 ### <a name="downloadfromweb"></a> Download from web
 Downloads text or a file from the web and stores it

@@ -53,7 +53,7 @@ To increase or decrease the numeric value of a variable, use the **Increase vari
 
 ![Screenshot of increase variable action properties.](\media\variables\increase-var-action-properties.png)
 
-Most actions output their result into a variable. For example, create a blank list-type variable with the **New list** action. The **Generate random number** action outputs the random number to a variable. Select **Generate multiple numbers** to create a list-type variable with multiple random numbers.
+Most actions output their result into a variable. For example, create a blank list-type variable with the **Create new list** action. The **Generate random number** action outputs the random number to a variable. Select **Generate multiple numbers** to create a list-type variable with multiple random numbers.
 
 ![Screenshot of generate random number action properties.](\media\variables\generate-random-num-action-properties.png)
 
