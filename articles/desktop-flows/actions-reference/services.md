@@ -1,6 +1,6 @@
 ---
-title: Services | Microsoft Docs
-description: Services Actions Reference
+title: Windows services | Microsoft Docs
+description: Windows services Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Services
+# Windows services
 
 
 
@@ -23,6 +23,8 @@ Control the workstation's installed services
 
 |<!-- --> |
 |-----|
+|[If service](#ifserviceaction)|
+|[Wait for service](#waitforserviceaction)|
 |[Start service](#start)|
 |[Stop service](#stop)|
 |[Pause service](#pause)|
@@ -30,9 +32,9 @@ Control the workstation's installed services
 
 ## Getting started with services
 
-Power Automate allows users to handle Windows services through the services actions. With these actions, users can maintain full control of the operating system and limit the running services.
+Power Automate allows users to handle Windows services through the Windows services group of actions. With these actions, users can maintain full control of the operating system and limit the running services.
 
-To control services, use the services group of actions. These actions allow flows to start, stop, pause and resume Windows services.  In the figure below, the **Start service** action starts **UIFlowService**. For this group of actions, only the service name is required, and no output is returned.
+To control services, use the Windows services group of actions. These actions allow flows to start, stop, pause and resume Windows services. In the figure below, the **Start service** action starts **UIFlowService**. For this group of actions, only the service name is required, and no output is returned.
 
 ![screenshot of start service action properties.](\media\services\start-service-example.png)
 
@@ -40,7 +42,46 @@ To control services, use the services group of actions. These actions allow flow
 > Please note that Windows services are essential to the smooth operation of the operating system. Managing Windows services incorrectly could adversely affect your PC. 
 
 
-## Services actions
+## Windows services actions
+
+### <a name="ifserviceaction"></a> If service
+Marks the beginning of a conditional block of actions depending on whether a service is running, paused, stopped or installed on the computer
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If service|N/A|Is stopped, Is installed, Isn't installed, Is running, Is paused|Is running|The state of the service to check|
+|Service name|No|Text value||The name of the service to check|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifserviceaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Service not found|Indicates that the service can't be found|
+|Can't retrieve status for service|Indicates that there is a problem retrieving the status of the service|
+
+
+### <a name="waitforserviceaction"></a> Wait for service
+Suspend the execution of the automation until a service is running, paused or stopped on the computer
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for service to|N/A|Stop, Start, Pause|Start|Specifies whether the flow pauses until a certain service starts, stops or pauses|
+|Service name|No|Text value||The name of the service to check|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforserviceaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Service not found|Indicates that the service can't be found|
+|Can't retrieve status for service|Indicates that there is a problem retrieving the status of the service|
 
 ### <a name="start"></a> Start service
 Start a stopped Windows service

@@ -59,7 +59,7 @@ Assume that you want to edit the selector to work with a Notepad window named **
 In the previous example, the selector located a Notepad window with a specific title. To make the selector more dynamic, replace the **Equals to** operator with other operators or regular expressions.
 
 > [!Note]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ![All the available selector operators.](media/build-custom-selectors/selector-operators.png)
 

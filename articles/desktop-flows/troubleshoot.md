@@ -58,7 +58,7 @@ To identify whether another process is indeed the issue:
 
 - Close Power Automate and use the Windows Task Manager to ensure that its process isn't still running.
 
-- Download the [Sysinternals Suite](https://docs.microsoft.com/sysinternals/downloads/sysinternals-suite).
+- Download the [Sysinternals Suite](/sysinternals/downloads/sysinternals-suite).
 
 - Extract the zip file to a folder on your desktop.
 

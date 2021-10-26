@@ -78,6 +78,7 @@ search.audienceType:
    * Data type—the type of the variable (integer, string, datetime, and so on.)
    * External name—the name used outside flow designer. This name appears in Power    Automate.
    * Description—a description of the variable. This mandatory field appears in Power Automate
+   * Mark as sensitive-enable this option to set the variable as sensitive and hide its content in the flow designer and the Power Automate logs.
 
    ![add new input var.](\media\link-pad-flow-portal\add-new-input-var.png)
 

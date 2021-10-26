@@ -50,7 +50,7 @@ To silently register your machine and join a group, we recommend you to use a se
 
     c.	Select **Flow.Read.All**
 
-1.	[Create an application user](https://docs.microsoft.com/power-platform/admin/manage-application-users#create-an-application-user).
+1.	[Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
 >[!NOTE]
 >Regarding their security roles, the user need to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
