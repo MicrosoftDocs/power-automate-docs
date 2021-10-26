@@ -380,8 +380,8 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-#  - name: Data loss prevention (DLP) (preview)
-#    href: ./desktop-flows/data-loss-prevention.md
+  - name: Data loss prevention (DLP) (preview)
+    href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
