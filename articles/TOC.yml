@@ -475,8 +475,8 @@
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
       - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
-      - name: Automate java applications
-        href: ./desktop-flows/java.md   
+#      - name: Automate java applications
+#        href: ./desktop-flows/java.md   
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
