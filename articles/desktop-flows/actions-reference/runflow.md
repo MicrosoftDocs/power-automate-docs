@@ -1,6 +1,6 @@
 ---
-title: Run flow | Microsoft Docs
-description: Run flow Actions Reference
+title: Run desktop flow | Microsoft Docs
+description: Run desktop flow Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run flow
+# Run desktop flow
 
 Set your automation to trigger other flows
 
@@ -32,7 +32,7 @@ The **Run desktop flow** action enables you to call other desktop flows while ru
 
 ![screenshot of the Run desktop flow action.](\media\runflow\run-desktop-flow-action.png)
 
-## Run flow action
+## Run desktop flow action
 
 
 ### <a name="runflow"></a> Run desktop flow
