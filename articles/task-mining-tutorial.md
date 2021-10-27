@@ -22,7 +22,7 @@ This tutorial with sample data allows you to experience task mining in the proce
 
 - [Import a solution](#import-a-solution).
 - [View sample recordings](#view-sample-recordings).
-- [Analyze a process](#analyze-your-process).
+- [Analyze a process](#analyze-a-process).
 - [Gather insights with a process map](#gather-insights-with-a-process-map).
 - [View metrics with activity combinations and variants](#view-metrics-with-activity-combinations-and-variants).
 - [Identify automation opportunities](#identify-automation-opportunities).
