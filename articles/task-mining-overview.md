@@ -18,17 +18,17 @@ search.audienceType:
 
 # Overview of task mining in process advisor
 
-Task mining in process advisor is a technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do them better.
+ In process advisor, task mining quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
- In process advisor, task mining solutions are integrated with [process mining](process-mining-overview.md) to understand processes better. Together, these technologies help you to find ways to enhance your processes, and improve how employees perform specific tasks.
+## Business example
 
-For a comprehensive experience, explore the sections in [Task mining](task-mining-overview.md) and [Process mining](process-mining-overview.md) in this documentation for:
+For example, in a healthcare facility, you can use task mining to record patient check-in procedures. Process mining automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
-- Business scenarios
+Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
-- Videos
+With insights and guided recommendations from process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
 
-- Walkthroughs
+
 
 ## Steps to task mining
 

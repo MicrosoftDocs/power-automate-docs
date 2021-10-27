@@ -18,34 +18,55 @@ search.audienceType:
 
 # Overview of process advisor
 
-Process advisor quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
+ The process advisor feature allows you gain a better understanding of your business processes so you can optimize them. Process advisor can also help you improve how you work by finding opportunities for automation. It does this with *task mining* and *process mining* capabilities.
 
-Process advisor helps you to:
+Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus:
 
-- Gain insights about which parts of your processes would be best to automate.
+- **Task mining:** Enables you to understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
 
-- Identify which activities take the most time.
+- **Process mining:** Enables you to gain a deep understanding of your processes using analytics like performance metrics and log files. Process mining displays maps of your processes with real-time data and metrics to recognize performance issues.
 
-- Discover which activities are repeated the most.
+## When to use task mining or process mining
 
-- Improve efficiencies by understanding where the bottlenecks are.
+Here are some reasons to help you decide to use task mining or process mining:
 
-## Business example
+### Use task mining to:
 
-For example, in a healthcare facility, you can use process advisor to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
+- Understand what employees actually do while performing each task.
 
-Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
+- Identify and eliminate unnecessary actions in process tasks.
 
-With insights and guided recommendations from process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
+- Identify the most common actions through user interactions.
 
+- Automate tasks that would accelerate processes and reduce human errors.
+
+
+### Use process mining to:
+
+- See the actual steps to perform a process.
+
+- Improve processes.
+
+- Detect non-compliant processes.
+
+- Reduce process total time.
+
+- Discover automation opportunities.
+
+Explore the sections in [Task mining](task-mining-overview.md) and [Process mining](process-mining-overview.md) in this documentation for:
+
+- Business scenarios
+- Tutorials
+-  Guides procedures
+- Videos
 
 ## Licensing
 
-Process advisor is licensed as part of Microsoft Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
+Process advisor is licensed as part of Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
 
-For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
+For more information about process advisor licensing, see [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
-For complete licensing details, go to [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
+For complete licensing details, see the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 
 ## Prerequisites
 

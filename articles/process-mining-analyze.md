@@ -89,6 +89,6 @@ To troubleshoot:
 
 ### "Analysis failed, please try again."
 
-## Troubleshoot issues with datetime conversion
+## Issues with datetime conversion
 
 (Complete or delete.)

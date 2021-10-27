@@ -1,6 +1,6 @@
 ---
-title: Get started with process mining in process advisor (preview) | Microsoft Docs
-description: This topic is a tutorial with demo data in process mining in the process advisor feature in Power Automate.
+title: Use process mining to analyze and improve your processes in process advisor (preview) | Microsoft Docs
+description: This topic is a tutorial with demo data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -16,13 +16,13 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with process mining (preview)
+# Tutorial: Get started with process mining in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
-For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-walkthrough.md).
+For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-quickstart.md).
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -43,7 +43,7 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1. Enter a process name, and then select **Data (preview)**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Data (preview) button.](media/process-mining-walkthrough/data-preview.png "Data (preview)")
+    > ![Screenshot of the Data (preview) button.](media/process-mining-tutorial/data-preview.png "Data (preview)")
 
 1. Select **Create**.
 
@@ -54,7 +54,7 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1.	Select **Blank table**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of blank table selection.](media/process-mining-walkthrough/blank-table.png "Blank table selection")
+    > ![Screenshot of blank table selection.](media/process-mining-tutorial/blank-table.png "Blank table selection")
 
 1. Open the sample event log CSV file that you downloaded in Microsoft Windows Notepad (or any text editor).
 
@@ -67,9 +67,9 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1. Select **Use first row as headers**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of first row as headers selection.](media/process-mining-walkthrough/headers.png "First row as headers selection")
+    > ![Screenshot of first row as headers selection.](media/process-mining-tutorial/headers.png "First row as headers selection")
 
-1. Upload your event log, select your file from the list, and choose **Select** to continue. <!-- We should say how you do this. -->
+1. Upload your event log, select your file from the list, and choose **Select** to continue.
 
 1. Select **Next** twice to open the Power Query editor.
 
@@ -78,7 +78,7 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1. On the toolbar, select **Map to entity**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of Map to entity button.](media/process-mining-walkthrough/map-to-entity.png "Map to entity button")
+    > ![Screenshot of Map to entity button.](media/process-mining-tutorial/map-to-entity.png "Map to entity button")
 
 1. On the left pane, select the **Event log** entity.
 
@@ -87,7 +87,7 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1. Return to the Power Query editor by selecting **OK**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of auto mapping.](media/process-mining-walkthrough/auto-map.png "Auto map")
+    > ![Screenshot of auto mapping.](media/process-mining-tutorial/auto-map.png "Auto map")
 
 1. Return to the process details page by selecting **Save**.
 
@@ -96,6 +96,6 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 1. Wait for the analysis to complete. After the process is analyzed, select **Analytics** in the toolbar to view the process map.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of an analyzed process.](media/process-mining-walkthrough/analytics.png "Process status is 'Analyzed'")
+    > ![Screenshot of an analyzed process.](media/process-mining-tutorial/analytics.png "Process status is 'Analyzed'")
 
 1. For a description of how to analyze the process map and a short video, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md).

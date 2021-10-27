@@ -34,7 +34,7 @@
     - name: Overview
       href: task-mining-overview.md
     - name: Get started with task mining
-      href: task-mining-walkthrough.md  
+      href: task-mining-tutorial.md  
     - name: Work with processes and recordings
       href: process-advisor-processes.md
     - name: Analyze processes
@@ -50,9 +50,7 @@
     - name: Overview
       href: process-mining-overview.md
     - name: Get started with process mining
-      href: process-mining-walkthrough.md
-    - name: Visualize and analyze processes
-      href: process-mining-visualize.md
+      href: process-mining-tutorial.md
     - name: Work with processes and data
       href: process-mining-processes-and-data.md
     - name: Edit your data source
@@ -61,6 +59,8 @@
       href: process-mining-transform.md      
     - name: Analyze and troubleshoot issues
       href: process-mining-analyze.md
+    - name: Visualize and analyze processes
+      href: process-mining-visualize.md      
   - name: Administration and security
     items: 
     - name: Security and privacy
@@ -75,7 +75,7 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process advisor
-  - name: Glossary in process advisor
+  - name: Glossary
     href: process-advisor-glossary.md
     displayName: Process advisor glossary
 - name: Cloud flows

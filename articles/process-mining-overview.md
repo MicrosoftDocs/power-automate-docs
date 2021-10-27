@@ -19,24 +19,12 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
+In process advisor, process mining allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
-Process mining in process advisor helps you to:
-
-- Identify which activities in your process take the most time.
-
-- Discover which process variations are repeated the most.
-
-- Gain insights about which activities in your processes are ripe for automation and prioritize by ROI.
-
-- Improve efficiencies by understanding where the bottlenecks are.
-
-- Detect uncompliant processes.
 
 ## Business example
 
