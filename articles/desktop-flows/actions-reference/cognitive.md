@@ -19,6 +19,6 @@ search.audienceType:
 
 The cognitive actions have been segregated into three new categories.
 
-- [Google cognitive](googlecognitive)
+- [Google cognitive](googlecognitive.md)
 - [IBM cognitive](ibmcognitive.md)
 - [Microsoft cognitive](microsoftcognitive.md)
