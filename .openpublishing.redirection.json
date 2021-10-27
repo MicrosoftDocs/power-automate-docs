@@ -497,7 +497,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "/power-automate/desktop-flows/actions-reference/cognitive#analyzesentimentgoogle",
+    "source_path": "https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/cognitive#analyzesentimentgoogle",
     "redirect_url": "/power-automate/desktop-flows/actions-reference/googlecognitive#analyzesentimentgoogle",
     "redirect_document_id": false
   }
