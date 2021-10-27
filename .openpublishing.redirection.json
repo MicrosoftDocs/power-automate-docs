@@ -497,7 +497,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "articles/desktop-flows/actions-reference/cognitive.md#analyzesentimentgoogle",
+    "source_path": "/power-automate/desktop-flows/actions-reference/cognitive#analyzesentimentgoogle",
     "redirect_url": "/power-automate/desktop-flows/actions-reference/googlecognitive#analyzesentimentgoogle",
     "redirect_document_id": false
   }
