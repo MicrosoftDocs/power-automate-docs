@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # System
+>[!NOTE]
+>The System group of actions has been segregated into some new categories. You can find details on the [Workstation](workstation.md) actions and [Scripting](scripting.md) actions in their respective pages.
 
 Perform a variety of tasks in a Windows environment and retrieve information from the system
 
