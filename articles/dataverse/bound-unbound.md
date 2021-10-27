@@ -35,7 +35,7 @@ Actions represent operations that might have side effects in the database, such 
 There are two types of Dataverse actions that you can use in flows.
 
 - [Bound actions](#bound-actions)
-- [Unbound actions](#unbound-actions
+- [Unbound actions](#unbound-actions)
 
 ## Bound actions
 
