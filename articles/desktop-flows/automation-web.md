@@ -18,7 +18,7 @@ search.audienceType:
 
 
 
-The flow designer includes a number of actions under the **Web automation** category, each of them corresponding to an interaction between a user and a web browser.
+The flow designer includes a number of actions under the **Browser automation** category, each of them corresponding to an interaction between a user and a web browser.
 
 Four web browsers are currently supported:
 
@@ -27,20 +27,20 @@ Four web browsers are currently supported:
 * Firefox
 * Chrome
 
-Web automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing web automation actions on them. Development may be performed manually, or through the use of the web recorder.
+Browser automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing browser automation actions on them. Development may be performed manually, or through the use of the web recorder.
 
-## Building a web automation flow
+## Building a browser automation flow
 
-To begin a web automation flow, use one of the Launch web browser actions (**Launch new Internet Explorer**, **Launch new Edge**, **Launch new Firefox**, or **Launch new Chrome**) to start a new browser session, or attach to an already existing one:
+To begin a browser automation flow, use one of the Launch web browser actions (**Launch new Internet Explorer**, **Launch new Edge**, **Launch new Firefox**, or **Launch new Chrome**) to start a new browser session, or attach to an already existing one:
 
 ![Launch web browser.](.\media\web-automation\launch-web-browser-action.png)
 
 > [!NOTE]
 > Some browsers may require configuration before they can be used in Power Automate. Refer to the [relevant article](using-browsers.md) for more information.
 
-After the browser session is stored in a variable, add other web automation actions to interact with the browser's content. The **Web form filling** action group focuses on providing input to web pages, while **Web data extraction** actions draw data from web pages, to be used in the flow.
+After the browser session is stored in a variable, add other browser automation actions to interact with the browser's content. The **Web form filling** action group focuses on providing input to web pages, while **Web data extraction** actions draw data from web pages, to be used in the flow.
 
-Most web automation actions require a browser instance as input, as well as a web element with which to interact:
+Most browser automation actions require a browser instance as input, as well as a web element with which to interact:
 
 ![Web action inputs.](.\media\web-automation\web-action-inputs.png)
 
@@ -79,7 +79,7 @@ To extract larger amounts of data, use the **Extract data from web page** action
 ![Extracting data table from web page.](.\media\web-automation\extracting-data-table-from-web-page.png)
 
 
-You'll find the list of web automation actions available in the [Actions reference](actions-reference/webautomation.md).
+You'll find the list of browser automation actions available in the [Actions reference](actions-reference/webautomation.md).
 
 
 ## Interacting with the web and web services
