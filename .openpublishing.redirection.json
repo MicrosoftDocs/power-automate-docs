@@ -495,11 +495,6 @@
     "source_path": "articles/connection-cds-native.md",
     "redirect_url": "/power-automate/dataverse/overview",
     "redirect_document_id": false
-  },
-  {
-    "source_path": "https://review.docs.microsoft.com/en-us/power-automate/desktop-flows/actions-reference/cognitive?branch=pad-moreinfolinkscorrection#analyzesentimentgoogle",
-    "redirect_url": "/power-automate/desktop-flows/actions-reference/googlecognitive#analyzesentimentgoogle",
-    "redirect_document_id": false
   }
 ]
 }
