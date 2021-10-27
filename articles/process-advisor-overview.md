@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of process advisor
 
- The process advisor feature allows you gain a better understanding of your business processes so you can optimize them. Process advisor can also help you improve how you work by finding opportunities for automation. It does this with *task mining* and *process mining* capabilities.
+ The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor can also help you improve how you work by finding opportunities for automation. It does this with *task mining* and *process mining* capabilities.
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus:
 
