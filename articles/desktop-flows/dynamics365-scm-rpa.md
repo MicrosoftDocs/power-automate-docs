@@ -84,7 +84,7 @@ As an admin, you can get an RPA unattended add-on and assign it to your environm
 
 #### Get a trial license for Power Apps 
 
-Please follow the instructions in this PowerApps guide before moving on to the last step! [https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) 
+Please follow the instructions in this PowerApps guide before moving on to the last step! [/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](/powerapps/maker/signup-for-powerapps) 
 
 #### Get a trial license for the Dynamics 365 applications you wish to automate 
 

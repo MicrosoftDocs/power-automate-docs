@@ -38,7 +38,7 @@ connectors&mdash;your next-best method is to use an HTTP connector. More informa
 
 - **Create a web browser automation**: If you can't find a connector, and if the system is a web browser&ndash;based
 application or a website, you should consider web browser automation.
-Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can [build a web automation](../../desktop-flows/actions-reference/webautomation.md) process with Power Automate Desktop.
+Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can [build a browser automation](../../desktop-flows/actions-reference/webautomation.md) process with Power Automate Desktop.
 
 - **Create a desktop application automation**: If you can't find a connector, and if the system is a desktop application on
 a PC, this is the automation method to use. Power Automate has capabilities that mimic human keyboard inputs and mouse movements. For desktop application automation, you [create a new Power Automate Desktop process](../../desktop-flows/create-flow.md) with Power Automate Desktop.

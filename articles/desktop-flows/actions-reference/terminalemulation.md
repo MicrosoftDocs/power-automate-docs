@@ -232,7 +232,7 @@ Wait for a specific text to appear on a terminal session
 |Timeout|Yes|Numeric value|0|The maximum amount of time to wait|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 - This action doesn't produce any variables

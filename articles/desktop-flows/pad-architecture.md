@@ -30,7 +30,7 @@ The **UIFlowService** is a Windows service that is installed with Power Automate
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it).
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
 
 The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over port 443. 
 
@@ -41,7 +41,7 @@ Destination IP addresses for the Azure Relay can be found [here](https://www.mic
 > [!NOTE]
 > Power Automate now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Attended/Unattended desktop direct connectivity to the cloud service](pad-architecture.md#attendedunattended-desktop-direct-connectivity-to-the-cloud-service).
 
-The **UIFlowService** is a Windows service that is installed with Power Automate on the desktop machine. The [on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
+The **UIFlowService** is a Windows service that is installed with Power Automate on the desktop machine. The [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
 
 ![Desktop connectivity using the on-premises data gateway diagram.](media/pad-architecture/pad-on-premises-data-gateway.png)
 
@@ -50,9 +50,9 @@ By default, the data gateway service is set to start automatically and runs as t
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it).
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
 
-The details about this data flow are documented in [Adjust communication settings](https://docs.microsoft.com/data-integration/gateway/service-gateway-communication). The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
+The details about this data flow are documented in [Adjust communication settings](/data-integration/gateway/service-gateway-communication). The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
 
 ## Other Power Automate outgoing web requests 
 

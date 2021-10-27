@@ -17,7 +17,7 @@ search.audienceType:
 
 # Scroll on a web page
 
-In some web automation flows, you may need to scroll on web pages to make specific elements visible on the screen.
+In some browser automation flows, you may need to scroll on web pages to make specific elements visible on the screen.
 
 Power Automate allows scrolling on web pages through two different approaches. The first one requires the **Focus text field on web page** action, while the second requires JavaScript scripting.
 
