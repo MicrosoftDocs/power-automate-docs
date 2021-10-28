@@ -40,7 +40,7 @@ In general, processes that you think might be inefficient or repetitive are good
 
 Here's a short video on how to create a process using process advisor: [Video: Create a process](https://go.microsoft.com/fwlink/?linkid=2147540).
 
-Note that [Power Automate for desktop](desktop-flows/introduction.md) latest version: 2.14.173.21294 isn't compatible with process advisor task mining. Please uninstall and install an earlier version [here](https://go.microsoft.com/fwlink/?linkid=2177308) to unblock.
+[Power Automate for desktop](desktop-flows/introduction.md) latest version: 2.14.173.21294 isn't compatible with process advisor. Uninstall and install an earlier version [here](https://go.microsoft.com/fwlink/?linkid=2177308) to unblock.
 
 ## Record your process
 
