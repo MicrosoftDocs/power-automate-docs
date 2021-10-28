@@ -220,7 +220,7 @@ on again.
     -   The Application user should at least have an Environment Maker role.
 
 > [!IMPORTANT]
-> : Make sure you follow these steps to create an application
+> Make sure you follow these steps to create an application
         user in the Power Platform Admin Center: [Manage application users in
         the Power Platform admin center - Power Platform \| Microsoft
         Docs](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user)
