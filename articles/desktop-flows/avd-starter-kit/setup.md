@@ -103,8 +103,7 @@ integration Starter Kit as it's included in the solution:
 
 ## Import the solution into a Production environment
 
-1.  Download the Power Automate AVD integration Starter Kit
-    (<https://go.microsoft.com/fwlink/?linkid=2174628> )
+1.  Download the Power Automate AVD integration Starter Kit from the [Github repository](https://go.microsoft.com/fwlink/?linkid=2174628)
 
 1.  Got to your environment:
 
@@ -146,7 +145,7 @@ Flow and navigate to its details page. Copy the Flow Id.**
 > [!NOTE]
 > You can find the flow Id by navigating to the details page of your flow and then
 copying the value in the address bar of your browser:
-https://flow.microsoft.com/manage/environments/*\<environmentId\>*/solutions/*\<solutionId\>*/flows/**\<flow-Id\>**
+https://<span></span>flow.<span></span>microsoft.<span></span>com/manage/environments/*\<environmentId\>*/solutions/*\<solutionId\>*/flows/**\<flow-Id\>**
 
 To update Environment Variables:
 

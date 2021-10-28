@@ -374,7 +374,7 @@
       href: ./desktop-flows/machines-silent-registration.md
     - name: Scale with AVD Starter Kit
       items:
-      - name: overview
+      - name: Overview
         href: ./desktop-flows/avd-starter-kit/overview.md 
       - name: Set up the AVD integration Starter Kit
         href: ./desktop-flows/avd-starter-kit/setup.md
