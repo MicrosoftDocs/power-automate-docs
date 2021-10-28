@@ -24,7 +24,7 @@ Task mining and process mining share the same goal of improving process efficien
 
 - **Task mining:** Enables you to understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
 
-- **Process mining:** Enables you to gain a deep understanding of your processes using analytics like performance metrics and log files. Process mining displays maps of your processes with real-time data and metrics to recognize performance issues.
+- **Process mining:** Enables you to gain a deep understanding of your processes using event log files that you can get from your system of record (apps you use in your processes). Process mining displays maps of your processes with data and metrics to recognize performance issues.
 
 ## When to use task mining or process mining
 
@@ -57,7 +57,7 @@ Explore the sections in [Task mining](task-mining-overview.md) and [Process mini
 
 - Business scenarios
 - Tutorials
--  Guides procedures
+-  Guided procedures
 - Videos
 
 ## Licensing

@@ -1,6 +1,6 @@
 ---
-title: Analyze and troubleshoot issues in process advisor (preview) | Microsoft Docs
-description: This topic explains how to analyze processes and troubleshoot issues with process mining in the process advisor feature in Power Automate.
+title: Troubleshoot issues in process advisor (preview) | Microsoft Docs
+description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Analyze and troubleshoot issues in process advisor (preview)
+# Troubleshoot issues in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -41,7 +41,7 @@ To troubleshoot:
 1.	Make a note of the environment in the environment display on the top-right of the page:
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the environment name.](media/process-mining-analyze/environment.png "Environment name")
+    > ![Screenshot of the environment name.](media/process-mining-troubleshoot/environment.png "Environment name")
 
 1. Make a note of the value of **Name** in the Data Source card below the Details card. <!--What screen are you on? -->
 
@@ -61,7 +61,7 @@ To troubleshoot:
 1. Download the report by selecting the **Download** icon in the **Actions** column.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Download icon.](media/process-mining-analyze/download.png "Download icon")
+    > ![Screenshot of the Download icon.](media/process-mining-troubleshoot/download.png "Download icon")
 
 9.	Open the report to see details of the issue.
 

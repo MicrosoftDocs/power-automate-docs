@@ -48,4 +48,4 @@ You can easily filter for custom attributes such as location, department, and ot
 
 - [Map data](process-mining-transform.md#map-data).
 
-- [Analyze process](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+- [Visualize and analyze processes](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).

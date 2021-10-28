@@ -57,8 +57,8 @@
       href: process-mining-data-source.md
     - name: Transform and map data
       href: process-mining-transform.md      
-    - name: Analyze and troubleshoot issues
-      href: process-mining-analyze.md
+    - name: Troubleshoot issues
+      href: process-mining-troubleshoot.md
     - name: Visualize and analyze processes
       href: process-mining-visualize.md      
   - name: Administration and security

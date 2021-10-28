@@ -22,7 +22,7 @@ search.audienceType:
 
 ## Business example
 
-For example, in a healthcare facility, you can use task mining to record patient check-in procedures. Process mining automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
+For example, in a healthcare facility, you can use task mining to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
 Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
