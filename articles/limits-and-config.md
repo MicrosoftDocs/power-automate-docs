@@ -243,6 +243,6 @@ See [IP address configuration](ip-address-configuration.md) for additional detai
 
 Requests from Power Automate use IP addresses that are associated with the region of the [environment](./environments-overview-maker.md) in which your flow exists.
 
-Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses.md#power-platform). Add them to your network's allow list to facilitate communications from Power Automate.
+Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allow list to facilitate communications from Power Automate.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
