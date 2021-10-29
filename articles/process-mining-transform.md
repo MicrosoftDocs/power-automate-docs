@@ -39,10 +39,6 @@ Here are some reasons why you might want to transform the data:
 
 - You might want to combine multiple ID columns to form the case ID. This is often done when the ID you want to use for process mining doesn't exist or is a combination of multiple IDs in the application. For example, when a customer files support tickets, the support ticket might be assigned to multiple customer service agents. If you want to analyze how each agent handles each ticket, you would combine the agent ID and the ticket ID into the case ID.
 
-Here's a short video on how to upload data for process mining:<br>
-</br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNG85]
-
 ## Filter activity names
 
 1. Select the carat next to the activity name column to bring up the sort and filter menu. 

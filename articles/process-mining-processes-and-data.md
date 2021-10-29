@@ -1,6 +1,6 @@
 ---
-title: Work with processes and data with process mining (preview) | Microsoft Docs
-description: This topic describes how to work with processes and data with process mining in the process advisor feature in Power Automate.
+title: Prepare processes and data with process mining (preview) | Microsoft Docs
+description: This topic explains how to prepare processes and data with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Work with processes and data in process advisor (preview)
+# Prepare processes and data in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -26,14 +26,17 @@ Before you can use process advisor process mining effectively, you need to:
 - [Where to get log data from your application](#where-to-get-log-data-from-your-application).
 
 - How to [connect to a data source](#connect-to-a-data-source).
- 
+
+Here's a short video on how to upload data for process mining:<br>
+</br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNG85]
+
 This topic explains these requirements detail.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 
 ## Data requirements
 

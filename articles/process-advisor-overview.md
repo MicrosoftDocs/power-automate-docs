@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of process advisor
 
- The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor can also help you improve how you work by finding opportunities for automation. It does this with *task mining* and *process mining* capabilities.
+ The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. It can also help you improve how you work by finding opportunities for automation. Process advisor offers *task mining* and *process mining* capabilities to do this.
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus:
 
@@ -64,9 +64,9 @@ Explore the sections in [Task mining](task-mining-overview.md) and [Process mini
 
 Process advisor is licensed as part of Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
 
-For more information about process advisor licensing, see [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
+For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
-For complete licensing details, see the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
+For complete licensing details, go to the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 
 ## Prerequisites
 

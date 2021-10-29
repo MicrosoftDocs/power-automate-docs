@@ -31,7 +31,7 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
 
 ## Get process advisor ready 
 
-1. Sign in to [Power Automate](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true).
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
 1. Select your environment.
 

@@ -32,7 +32,7 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 
 ## Create a process
 
-1. Sign in to [Power Automate](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true).
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
 1. Select your environment.
 

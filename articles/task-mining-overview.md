@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of task mining in process advisor
 
- In process advisor, task mining quickly captures detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
+With task mining in process advisor, you can quickly capture detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate.
 
 ## Business example
 

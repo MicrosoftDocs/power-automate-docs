@@ -1,6 +1,6 @@
 ---
-title: Edit your data source in process advisor (preview) | Microsoft Docs
-description: This topic describes how to edit your data source with process mining in the process advisor feature in Power Automate.
+title: Edit and refresh processes in process advisor (preview) | Microsoft Docs
+description: This topic describes how to edit and refresh processes with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Edit your data source in process advisor (preview)
+# Edit and refresh processes in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 

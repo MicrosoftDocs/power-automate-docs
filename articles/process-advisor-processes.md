@@ -1,6 +1,6 @@
 ---
-title: Work with processes and recordings in process advisor | Microsoft Docs
-description: How to create and work with processes with task mining in the process advisor feature in Power Automate.
+title: Prepare processes and recordings in process advisor | Microsoft Docs
+description: This topic explains how to prepare processes with task mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Work with processes and recordings in process advisor
+# Prepare processes and recordings in process advisor
 
 Before you can use process advisor task mining to visualize and analyze your processes, you need to:
 
@@ -28,7 +28,7 @@ Before you can use process advisor task mining to visualize and analyze your pro
 
 In general, processes that you think might be inefficient or repetitive are good candidates for analysis.
 
-1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
 1. Select **Process advisor** in the left-side navigation pane.
 
@@ -37,8 +37,6 @@ In general, processes that you think might be inefficient or repetitive are good
 1. Select the **Create a new process** tile.
 
 1. Give your process a name and description, and then select **Create**.
-
-Here's a short video on how to create a process using process advisor: [Video: Create a process](https://go.microsoft.com/fwlink/?linkid=2147540)
 
 ## Record your process
 

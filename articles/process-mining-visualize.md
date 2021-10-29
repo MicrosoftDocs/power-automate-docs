@@ -1,6 +1,6 @@
 ---
-title: Visualize and analyze processes in process advisor (preview) | Microsoft Docs
-description: This topic explains how to visualize and analyze processes with process mining in the process advisor feature in Power Automate.
+title: Visualize and gain insights from processes in process advisor (preview) | Microsoft Docs
+description: This topic explains how to visualize and gain insights from processes with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize and analyze processes in process advisor (preview)
+# Visualize and gain insights from processes in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -26,9 +26,9 @@ This topic explains metrics and visuals, and what they could tell you about your
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-## Visualize and analyze processes with the process map
+## Visualize and gain insights from processes with the process map
 
-The process map empowers you to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
+The process map empowers you to visualize and gain insights from processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
 Activities describe tasks or actions, the sequence of which makes up a business process. Activities can be performed by humans, or in the case of automation—by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence will have a start and an end.
 
