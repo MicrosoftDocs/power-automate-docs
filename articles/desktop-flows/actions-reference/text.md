@@ -38,10 +38,7 @@ Control and manipulate text
 |[Parse text](#parsetext)|
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
-
-<!--
 |[Recognize entities in text](#recognizeentitiesintext)|
--->
 
 ## Getting started with text actions
 
@@ -51,7 +48,7 @@ To find a string in a text and replace it with another string or character, use 
 
 ![Screenshot of replace text action.](\media\text\replace-text-example.png)
 
-Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
 
@@ -61,7 +58,6 @@ To ensure that numbers are stored as numerical values, use the **Convert text to
 
 Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
 
-<!---
 ## Getting started with the Recognize entities in text action
 
 Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
@@ -74,8 +70,8 @@ The following table displays various examples of entities that the **Recognize e
 
 |Entity      |Input text                                                            |Returned values                                                                    |
 |------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-|Date time   |I'll go back 04th Jan 2019                                            |**DateTime:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019          |
-|Date time   |Schedule a meeting tongiht at 7pm                                     |**DateTime:** 9/30/2021 7:00:00 PM </br> **Original text:** 7pm                    |
+|Date time   |I'll go back 04th Jan 2019                                            |**Value:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019             |
+|Date time   |Schedule a meeting tonight at 7pm                                     |**Value:** 9/30/2021 7:00:00 PM </br> **Original text:** tonight at 7pm            |
 |Dimension   |You weight 200lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200lbs               |
 |Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
 |Temperature |Τhe temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
@@ -99,8 +95,6 @@ The following table displays various examples of entities that the **Recognize e
 
 >[!NOTE]
 > The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
-
--->
 
 ## Text actions
 
@@ -184,6 +178,24 @@ Removes all occurrences of white space characters (such as space, tab, or new li
 
 ##### <a name="trim_onerror"></a> Exceptions
 - This action doesn't include any exceptions
+
+### <a name="reverse"></a> Reverse text
+Reverses the order of letters in a text string
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to reverse|Yes|Text value||The text to reverse|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ReversedText|Text value|The new reversed text|
+
+
+##### <a name="reverse_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+ 
 ### <a name="changecase"></a> Change text case
 Changes the casing of a text to uppercase, lowercase, title case or sentence case
 
@@ -340,7 +352,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Is regular expression|N/A|Boolean value|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -367,7 +379,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Ignore case|N/A|Boolean value|False|Specify whether to find the specified text using case-sensitive or case-insensitive matching|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -397,7 +409,7 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 |Activate escape sequences|N/A|Boolean value|False|Specify whether to use special sequences. For example, '\t' in the replacement text will be interpreted as a tab|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -425,8 +437,6 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
-<!---
-
 ### <a name="recognizeentitiesintext"></a> Recognize entities in text
 Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
 
@@ -434,8 +444,8 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to recognize from|No|Text value||The text to recognize entities from|
-|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, Url etc.)|
-|Language|N/A|English (United States), Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English (United States)|Specify the language of the text|
+|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, URL etc.)|
+|Language|N/A|English, Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English|Specify the language of the text|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -444,8 +454,5 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 
 ##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
-
--->
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

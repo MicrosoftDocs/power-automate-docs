@@ -23,7 +23,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run attended and unattended desktop flows
+# Run attended or unattended desktop flows
 
 After you've created and tested a Windows recorder (V1) flow, you can run it from an event, schedule, or button. To make this possible, add your Windows recorder (V1) flow to an [Automated flow](../get-started-logic-flow.md), a [Button flow](../introduction-to-button-flows.md), a [Scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
 

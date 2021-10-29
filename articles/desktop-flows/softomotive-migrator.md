@@ -160,9 +160,9 @@ Power Automate and ProcessRobot behave differently at their core, so there will 
 
 The Power Platform Admin Center (PPAC) by default contains information related to your RPA environment that admins are accustomed to seeing in Control Desk, including cloud flow activity, desktop flow run activity, desktop flow queue monitoring and more.  PPAC also enables users to create cloud flows that can incorporate schedules, triggers, run desktop flows and reach all other Power Automate components you have access to. 
 
-If you are new to the Power Platform, it is recommended that administrators complete the [Admin In A Day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) workshop to better understand PPAC in addition to the [ALM hands on lab](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tutorial-faq%20%20) since this is the current recommended approach to manage desktop flow versions and application lifecycle management.  Citizen Devs are encouraged to participate in the [RPA In a Day](https://flow.microsoft.com/blog/announcing-microsoft-rpa-in-a-day-version-2/) tutorials that help build a solid foundation across the entire stack. 
+If you are new to the Power Platform, it is recommended that administrators complete the [Admin In A Day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) workshop to better understand PPAC in addition to the [ALM hands on lab](/powerapps/developer/common-data-service/build-tools-tutorial-faq%20%20) since this is the current recommended approach to manage desktop flow versions and application lifecycle management.  Citizen Devs are encouraged to participate in the [RPA In a Day](https://flow.microsoft.com/blog/announcing-microsoft-rpa-in-a-day-version-2/) tutorials that help build a solid foundation across the entire stack. 
 
-Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](https://docs.microsoft.com/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](https://docs.microsoft.com/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users. The CoE starter kit provides a solid foundation to build insightful dashboards that can be modified to your organizations needs throughout their RPA journey.  
+Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users. The CoE starter kit provides a solid foundation to build insightful dashboards that can be modified to your organizations needs throughout their RPA journey.  
 
 ### Workarounds for unsupported ProcessRobot Process Studio features 
 
@@ -192,7 +192,7 @@ Not supported by the migration tool.  Administrators can apply a workaround in t
 
 **Get Global Variable / Set Global Variable** 
 
-Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
+Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
 
 **Enter Locked Region** 
 
@@ -204,11 +204,11 @@ Not supported by the migration tool.
 
 **Add Queue Item in Queue** 
 
-Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
+Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
 
 **Get Queue Item in Queue** 
 
-Not supported in migration. Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified, or deleted](https://docs.microsoft.com/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
+Not supported in migration. Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified, or deleted](/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
 
 **Get Credential** 
 
@@ -216,7 +216,7 @@ Not supported in migration.  Workarounds include [using sensitive text in power 
 
 **Update Credential** 
 
-Not supported in migration.  Workarounds include [updating a secret using an API](https://docs.microsoft.com/rest/api/keyvault/UpdateSecret/UpdateSecret). 
+Not supported in migration.  Workarounds include [updating a secret using an API](/rest/api/keyvault/UpdateSecret/UpdateSecret). 
 
 **Display Notification** 
 

@@ -86,7 +86,7 @@ After the installation completes, you will need to install and enable the extens
 
 ![Installation success image.](../media/desktop-flows-setup/screen.png)
 
-Select one of the links displayed in the installer. For example, if you want to record your web automations on Microsoft Edge, select the **Microsoft Edge** link.
+Select one of the links displayed in the installer. For example, if you want to record your browser automations on Microsoft Edge, select the **Microsoft Edge** link.
 
    The store for your browser opens directly to the public page for the extension.
 
