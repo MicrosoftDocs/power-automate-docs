@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/20/2017
+ms.date: 10/28/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -83,6 +83,7 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 
 
 ### To copy an action
+
 1. Select the action menu (the ... at the top-right of the action).
 1. Select **Copy to my clipboard**. 
 1. Select **New step** where you want your action to go. 
@@ -91,6 +92,7 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 1. Select the item you want to paste.
 
 ## Add advanced options
+
 Start with a cloud flow that has a **Send an email** action.
 
 1. Select **Show advanced options**, which is located at the bottom of the **Send an email** card.
@@ -108,6 +110,33 @@ Start with a cloud flow that has a **Send an email** action.
 Power Automate displays the list of other makers who are editing a flow simultaneously. The list of editors is updated periodically.
 
 ![List of editors](./media/multi-step-logic-flow/editors-list.png)
+
+## Add comments to actions and triggers
+
+Makers can have threaded comments with colleagues as they build their flows. They can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
+
+Follow these steps to add a comment to any action or trigger in your flow.
+
+1. Select the ellipsis on the trigger or action.
+1. Select **New Comment**.
+
+   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-actions-triggers.png)
+
+   The comments pane opens.
+
+1. Enter your comments in the **Start a conversation** box on the **Comments** pane.
+
+   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-pane.png)
+
+ <!-- The Power Automate designer provides visual cues on the action card to denote the number of comment threads contained within each.
+
+![]() -->
+
+### Limitations
+
+- Comments are supported for environments that have a Dataverse database.
+-	Makers must save the flow at least once before a comment could be added.
+- The comment thread count icons don't appear for control actions such as condition, switch, and scope.
 
 ## Address conflicts from multiple edits
 
