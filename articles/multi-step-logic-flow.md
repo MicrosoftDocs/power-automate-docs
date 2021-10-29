@@ -118,7 +118,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 1. Select the ellipsis on the trigger or action.
 1. Select **New Comment**.
 
-   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-actions-triggers.png)
+   ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
 
    The comments pane opens.
 
