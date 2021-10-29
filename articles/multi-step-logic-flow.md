@@ -113,6 +113,9 @@ Power Automate displays the list of other makers who are editing a flow simultan
 
 Makers can have threaded comments with colleagues as they build their flows. They can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
 
+>[!IMPORTANT]
+>Comments are supported for environments that have a Dataverse database.
+
 Follow these steps to add a comment to any action or trigger in your flow.
 
 1. Select the ellipsis on the trigger or action.
@@ -132,7 +135,6 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 ### Limitations
 
-- Comments are supported for environments that have a Dataverse database.
 - Makers must save the flow at least once before a comment could be added.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
 
