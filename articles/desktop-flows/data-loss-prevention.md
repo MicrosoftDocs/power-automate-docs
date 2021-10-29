@@ -17,8 +17,18 @@ search.audienceType:
 # Data loss prevention (DLP) policies (preview)
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy policy, visit the [respective topic](/power-platform/admin/create-dlp-policy) under the Administer Power Platform documentation.
+Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy policy, visit the [respective topic](/power-platform/prevent-data-loss.md) under the Administer Power Platform documentation.
  
+This feature will be rolling out to all cloud regions based on the following schedule.See when will the feature be fully enabled in your region in the table below. 
+
+|Date| Available in regions|
+|----|----|
+|11/1 |Switzerland , Brazil, Canada|
+|11/8 |Asia, UK, Australia, Japan |
+|11/16 |Europe |
+|11/18 |US(NAM) |
+|11/29 |GCC, GCCH, Mooncake, DoD |
+
 
 ## Troubleshoot data loss prevention (DLP) policies violations
 
@@ -56,3 +66,14 @@ To resolve this data loss prevention policy (DLP) violation, delete or disable a
 
 >[!IMPORTANT]
 >For cases that a desktop flow is suspended, it won't be able to run it. Similarly, a cloud flow using a suspend desktop flow won't be able to run either.
+
+## Making use of suspended desktop flows in cloud flows
+
+A suspended desktop flows due to data loss prevention (DLP) prevention policies violations won't be available to be selected. 
+
+   ![Cloud flow calling a DLP blocked desktop flow](./media/dlp/cloudcallsdesktopdlp.png)
+
+To be able to launch the desktop flow from a cloud flow, edit the desktop flow in the desktop designer and resolve the DLP violations.You will then be able to select again the desktop flow to run.
+
+>[!IMPORTANT]
+> In case a data loss prevention (DLP) policy rule is set to a desktop flow after it has been used in a cloud flow, there won't be any notification and the cloud flow will error out at that step. In case a desktop flow violates any rules and you correct it you will need to go back to the cloud flow and reselect it from the list.
