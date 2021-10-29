@@ -109,6 +109,33 @@ Power Automate displays the list of other makers who are editing a flow simultan
 
 ![List of editors](./media/multi-step-logic-flow/editors-list.png)
 
+## Add comments to actions and triggers
+
+Makers can have threaded comments with colleagues as they build their flows. They can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
+
+Follow these steps to add a comment to any action or trigger in your flow.
+
+1. Select the ellipsis on the trigger or action.
+1. Select **New Comment**.
+
+   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-actions-triggers.png)
+
+   The comments pane opens.
+
+1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
+
+   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-pane.png)
+
+ The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
+
+![Image that displays the count of comments on an action](./media/multi-step-logic-flow/comments-count-icon.png)
+
+### Limitations
+
+- Comments are supported for environments that have a Dataverse database.
+- Makers must save the flow at least once before a comment could be added.
+- The comment thread count icons don't appear for control actions such as condition, switch, and scope.
+
 ## Address conflicts from multiple edits
 
 If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keeps their changes.
