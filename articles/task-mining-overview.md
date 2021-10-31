@@ -28,17 +28,15 @@ Application analytics and analytics dashboards show you which applications teams
 
 With insights and guided recommendations from process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
 
-
-
 ## Steps to task mining
 
-- [Work with processes and recordings](process-advisor-processes.md).
+- [Prepare processes and recordings](process-advisor-processes.md).
 
 - [Analyze processes](process-advisor-analyze.md).
 
 - [Visualize processes](process-advisor-visualize.md).
 
-- [Get automation recommendations](process-advisor-automation.md).
+- [Identify automation recommendations](process-advisor-automation.md).
 
 - [Share processes](process-advisor-share.md).
 

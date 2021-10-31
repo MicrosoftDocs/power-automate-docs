@@ -1,6 +1,6 @@
 ---
 title: Security and privacy | Microsoft Docs
-description: This topic explain security and privacy issues in process advisor.
+description: This topic explains security and privacy issues in process advisor.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
