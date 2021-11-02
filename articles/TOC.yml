@@ -394,6 +394,14 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Silent registration for machines
       href: ./desktop-flows/machines-silent-registration.md
+    - name: Scale with AVD starter kit
+      items:
+      - name: Overview
+        href: ./desktop-flows/avd-overview.md 
+      - name: Set up the AVD integration starter kit
+        href: ./desktop-flows/avd-setup.md
+      - name: Use the starter kit
+        href: ./desktop-flows/avd-use-starter-kit.md 
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
