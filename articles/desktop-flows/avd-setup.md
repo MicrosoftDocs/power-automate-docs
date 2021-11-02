@@ -132,7 +132,7 @@ Flow, navigate to its details page and copy the Flow Id.
 
 > [!NOTE]
 > You can find the flow Id by navigating to the details page of your flow and then copying the value in the address bar of your browser:
-https://flow.microsoft.com/manage/environments/**\<environmentId\>**/solutions/**\<solutionId\>**/flows/**\<flow-Id\>**
+``https://flow.microsoft.com/manage/environments/<environmentId>/solutions/<solutionId>/flows/<flow-Id>``
 
 To update Environment Variables:
 
