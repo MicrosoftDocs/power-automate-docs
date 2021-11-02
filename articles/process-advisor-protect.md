@@ -1,6 +1,6 @@
 ---
 title: Protect your data | Microsoft Docs
-description: How to protect your data in process advisor.
+description: This topic explains how to protect your data in process advisor.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Protect your data in process advisor
 
-You can use Power Automate features to remove screenshots and text entries stored during the recording session if they contain sensitive data. You can also remove any confidential information in the text or images from your recordings when preparing them.
+You can use process advisor features to remove screenshots and text entries stored during the recording session if they contain sensitive data. You can also remove any confidential information in the text or images from your recordings when preparing them.
 
 ## Delete screenshots
 

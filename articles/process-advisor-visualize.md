@@ -1,6 +1,6 @@
 ---
-title: Visualize processes in process advisor | Microsoft Docs
-description: How to visualize your processes in the process advisor feature.
+title: Visualize processes in process advisor  | Microsoft Docs
+description: This topic explains how to visualize your processes with task mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -15,11 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize processes
+# Visualize processes in process advisor
 
 ## Process map
 
-The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select the **Analytics** > **Process** tab.
+The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist. To get to the process map, select **Analytics** > **Process** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of process map.](media/automation-reco-1.png "Process advisor process map")
@@ -31,7 +31,9 @@ Different activity combinations and variants are shown separately on the process
 There are various filters available to you to drill down into the process:
 
 - Variant selector allows you to select one variant, or a set of process variants to visualize in your process map.
+
 - Recording selector allows you to select one recording, or a set of recordings to visualize in your process map.
+
 - Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in this topic.
 
 ### Process KPIs
