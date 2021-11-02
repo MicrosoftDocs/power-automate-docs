@@ -77,7 +77,7 @@ integration starter kit as it's included in the solution:
 
 -   [An Azure Automation Account](/azure/automation/quickstarts/create-account-portal)
 
--   [An Azure Automation Credential](azure/automation/shared-resources/credentials?tabs=azure-powershell#create-a-new-credential-asset) which is needed to run the runbook automation and is used to authenticate to
+-   [An Azure Automation Credential](/azure/automation/shared-resources/credentials?tabs=azure-powershell#create-a-new-credential-asset) which is needed to run the runbook automation and is used to authenticate to
     Azure.
 
 -   [A service principal account to register your VMs](machines-silent-registration.md#using-a-service-principal-account)
@@ -196,8 +196,7 @@ on again.
 
 1.  Click **Create**. The new runbook appears in the list of runbooks for the Automation account.
 
-1.  You have to [publish the
-    runbook](https://docs.microsoft.com/en-us/azure/automation/manage-runbooks#publish-a-runbook)
+1.  You have to [publish the runbook](/azure/automation/manage-runbooks#publish-a-runbook)
     before you can run it.
 
 ### Create an Azure AD app registration to connect to Azure Service Management APIs and to the Power Platform
