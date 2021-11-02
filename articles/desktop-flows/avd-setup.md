@@ -82,8 +82,7 @@ integration starter kit as it's included in the solution:
 
 -   [A service principal account to register your VMs](machines-silent-registration.md#using-a-service-principal-account)
 
--   [An app registration with Azure Service Management permission]
-    ()/azure/active-directory/develop/quickstart-register-app)
+-   [An app registration with Azure Service Management permission](/azure/active-directory/develop/quickstart-register-app)
 
 -   An Azure Key Vault where you can store the secrets for your app
     registrations and machine group passwords.
