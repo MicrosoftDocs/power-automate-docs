@@ -42,7 +42,7 @@ capabilities in their organizations.
 >-   The core features in Microsoft Power Platform: Use your standard channel to
     contact Support.
 
-## Getting starterd
+## Getting started
 
-After following the [instructions](avd-setup.md) to install and configure the starter kit, start by launching the **AVD
+After following the [instructions to install and configure the starter kit](avd-setup.md), start by launching the **AVD
 integration configuration app** and creating a new scaling configuration.
