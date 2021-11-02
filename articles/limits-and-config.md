@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -35,10 +35,8 @@ Flows have different limits depending on their *performance profile*. There are 
 
 | Performance profile | Plans |
 |---------------------|-------|
-| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials | 
-| MediumLow1          | - Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br />- Dynamics 365 Team Member |
-| MediumLow2          | - Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses) |
-| Medium              | - Power Apps triggered flows, or child flows |
+| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>Dynamics 365 Team Member | 
+| Medium              | - Power Apps triggered flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | - Power Automate per flow plan |
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
@@ -121,11 +119,11 @@ If a cloud flow exceeds one of the limits, activity for the flow will be slowed 
 
 There are limits to the number of *actions* a cloud flow can run. These runs are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
 
-| Name | Plan limit | Interim limit | Notes |
-| ---- | ----- | ----- |----- |
-| Actions per 5 minutes | 100,000 |n/a| Distribute the workload across more than one flow as necessary. |
-| Actions per 24 hours | 2,000 for Low, 5,000 for MediumLow1, 20,000 for MediumLow2, 25,000 for Medium, and 15,000 for High|10,000 for Low, 25,000 for MediumLow1, 100,000 for MediumLow2, 125,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. These limits will change after the transition period ends. Distribute the workload across more than one flow as necessary. | 
-| Concurrent outbound calls | 500 for Low, 2,500 for all others |n/a| You can reduce the number of concurrent requests or reduce the duration as necessary. |
+| Name | Transition period limit | Notes |
+| ---- | ----- |----- |
+| Actions per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
+| Actions per 24 hours|10,000 for Low, 100,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. The documented limits were substantially increased in late 2021. Generally available reporting for Power Platform requests is expected in the first quarter of calendar year 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made available. Distribute the workload across more than one flow as necessary. | 
+| Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
@@ -149,7 +147,7 @@ The content throughput limits refer to the amount of data that is read from or w
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low, 10 GB for MediumLow1, MediumLow2 and Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 1 GB for Low, 10 GB for Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
@@ -195,7 +193,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 | Performance profile | Description |
 | ------------------- | ----------- |
 | Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
-| MediumLow1, MediumLow2, Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
+| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
 
 #### Retry setting limits
 
