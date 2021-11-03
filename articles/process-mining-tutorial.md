@@ -1,6 +1,6 @@
 ---
-title: Use process mining to analyze and improve your processes in process advisor (preview) | Microsoft Docs
-description: This topic is a tutorial with demo data in process mining using the process advisor feature in Power Automate.
+title: Get started with process mining in process advisor (preview) | Microsoft Docs
+description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
