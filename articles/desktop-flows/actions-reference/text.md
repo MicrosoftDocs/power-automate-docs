@@ -38,10 +38,7 @@ Control and manipulate text
 |[Parse text](#parsetext)|
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
-
-<!--
 |[Recognize entities in text](#recognizeentitiesintext)|
--->
 
 ## Getting started with text actions
 
@@ -61,8 +58,6 @@ To ensure that numbers are stored as numerical values, use the **Convert text to
 
 Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
 
-
-<!--
 ## Getting started with the Recognize entities in text action
 
 Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
@@ -100,8 +95,6 @@ The following table displays various examples of entities that the **Recognize e
 
 >[!NOTE]
 > The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
-
--->
 
 ## Text actions
 
@@ -444,8 +437,6 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
-<!--
-
 ### <a name="recognizeentitiesintext"></a> Recognize entities in text
 Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
 
@@ -463,7 +454,5 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 
 ##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
-
--->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
