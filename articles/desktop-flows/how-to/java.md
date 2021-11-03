@@ -20,7 +20,7 @@ search.audienceType:
 
 In order to automate Java applications, particular settings must be in place. 
 
-To install the Java configuration manually, after Power Automate has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate**) and run the **PAD.Java.Installer.exe** as an administrator. 
+To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate**) and run the **PAD.Java.Installer.exe** as an administrator. 
 
 To uninstall the Java configuration (revert all changes applied to the machine by the Java installer): 
 
