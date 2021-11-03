@@ -16,11 +16,15 @@ search.audienceType:
 ---
 # Automate Java applications
 
-## Installing and uninstalling Java configuration
+## Install Java configuration
 
 In order to automate Java applications, particular settings must be in place. 
 
 To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate**) and run the **PAD.Java.Installer.exe** as an administrator. 
+
+Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (e.g. **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
+
+## Uninstall Java configuration
 
 To uninstall the Java configuration (revert all changes applied to the machine by the Java installer): 
 
@@ -32,21 +36,19 @@ To uninstall the Java configuration (revert all changes applied to the machine b
   PAD.Java.Installer.exe -u 
   ```
 
-Logs for Java automation with Power Automate for desktop can be found at the **%temp%/ java_automation_log** folder (e.g. **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
-
 ## Troubleshooting 
 
 If you come across any issues while automating Java applications:
 
-1. Make sure that you have Java installed in your machine:
+1. Make sure that you have Java installed on your machine:
 
-    - Open a command window or terminal and run the following command: 
+    - Open the Command Line tool (cmd) and run the following command: 
 
       ``` CMD
       java –version
       ```
 
-    - If Java isn't installed in your machine, you'll receive an error message similar to: **'java' is not recognized as an internal or external command, operable program or batch file.**
+    - If Java isn't installed on your machine, you'll receive an error message similar to: **'java' is not recognized as an internal or external command, operable program or batch file.**
 
 1. The Java Access Bridge option from the Control Panel should be disabled: 
 
@@ -56,7 +58,7 @@ If you come across any issues while automating Java applications:
 
 1. Specific files have to exist in the Java folder(s) of the machine after the Power Automate for desktop installation.  
 
-    To check the installed Java version and installation path in your machine: 
+    To check the installed Java version and installation path on your machine: 
 
       1. Type **Configure Java** in the Search bar of Windows 
 
