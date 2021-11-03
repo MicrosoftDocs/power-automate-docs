@@ -24,6 +24,8 @@ This tutorial allows you to experience process mining with sample data. In this 
 
 For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-tutorial.md).
 
+The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
+
 > [!IMPORTANT]
 > - This is a preview feature.
 >
