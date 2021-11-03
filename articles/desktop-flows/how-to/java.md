@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate Java applications
 
-## Install Java configuration
+## Installing Java configuration
 
 In order to automate Java applications, particular settings must be in place. 
 
@@ -24,17 +24,17 @@ To install the Java configuration manually, after Power Automate for desktop has
 
 Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (e.g. **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
 
-## Uninstall Java configuration
+## Uninstalling Java configuration
 
 To uninstall the Java configuration (revert all changes applied to the machine by the Java installer): 
 
-- Launch the Command Line tool (cmd) 
+1. Launch the Command Line tool (cmd) 
 
-- Run the following command: 
+1. Run the following command: 
 
-  ``` CMD
-  PAD.Java.Installer.exe -u 
-  ```
+    ``` CMD
+    PAD.Java.Installer.exe -u 
+    ```
 
 ## Troubleshooting 
 
@@ -62,7 +62,7 @@ If you come across any issues while automating Java applications:
 
       1. Type **Configure Java** in the Search bar of Windows 
 
-      1. Launch the Java control panel 
+      1. Launch the Java Control Panel 
 
       1. Navigate to the **Java** tab and select **View**
 
