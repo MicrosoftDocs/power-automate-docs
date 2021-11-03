@@ -56,13 +56,13 @@ If you come across any issues while automating Java applications:
 
     To check the installed Java version and installation path in your machine: 
 
-    1. Type **Configure Java** in the Search bar of Windows 
+      1. Type **Configure Java** in the Search bar of Windows 
 
-    1. Launch the Java control panel 
+      1. Launch the Java control panel 
 
-    1. Navigate to the **Java** tab and select **View**
+      1. Navigate to the **Java** tab and select **View**
 
-    1. Check the values in the **Path** column. The row with **Architecture** equal to **x86** refers to a 32-bit Java installation, while the row with value **x86x64** refers to a 64-bit Java installation. 
+      1. Check the values in the **Path** column. The row with **Architecture** equal to **x86** refers to a 32-bit Java installation, while the row with value **x86x64** refers to a 64-bit Java installation. 
 
     Additionally, you can check the following files: 
 
