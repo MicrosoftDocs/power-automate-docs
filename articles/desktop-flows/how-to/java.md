@@ -38,12 +38,12 @@ Logs for Java automation with Power Automate for desktop can be found at the **%
 
 If you come across any issues while automating Java applications:
 
-1. Make sure that you've Java installed in your machine:
+1. Make sure that you have Java installed in your machine:
 
     - Open a command window or terminal and run the following command: 
 
       ``` CMD
-      > java –version
+      java –version
       ```
 
     - If Java isn't installed in your machine, you'll receive an error message similar to: **'java' is not recognized as an internal or external command, operable program or batch file.**
@@ -56,13 +56,13 @@ If you come across any issues while automating Java applications:
 
     To check the installed Java version and installation path in your machine: 
 
-    - Type **Configure Java** in the Search bar of Windows 
+    1. Type **Configure Java** in the Search bar of Windows 
 
-    - Launch the Java control panel 
+    1. Launch the Java control panel 
 
-    - Navigate to the **Java** tab and select **View**
+    1. Navigate to the **Java** tab and select **View**
 
-    - Check the values in the **Path** column. The row with **Architecture** equal to **x86** refers to a 32-bit Java installation, while the row with value **x86x64** refers to a 64-bit Java installation. 
+    1. Check the values in the **Path** column. The row with **Architecture** equal to **x86** refers to a 32-bit Java installation, while the row with value **x86x64** refers to a 64-bit Java installation. 
 
     Additionally, you can check the following files: 
 
@@ -78,10 +78,8 @@ If you come across any issues while automating Java applications:
 
     For 32-bit Java installation: 
 
-    - Same actions for the same files as above but in folder path **C:\Program Files (x86) \Java\…**. 
+    - Same actions for the same files as above but in the folder path **C:\Program Files (x86) \Java\…**. 
 
-1. Make sure that there isn't an **.accessibility.properties** file present in your user folder:  
-
-    Check if a file named **.accessibility.properties** is present in the **C:\Users\user** folder. If yes, then rename it. 
+1. Make sure that there isn't an **.accessibility.properties** file present in your user folder. Check if a file named **.accessibility.properties** is present in the **C:\Users\user** folder. If yes, then rename it. 
 
 1. Ensure that **VC_redist.x64.exe** and/or **VC_redist.x86.exe** have been run.  
