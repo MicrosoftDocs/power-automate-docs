@@ -52,6 +52,8 @@ If you come across any issues while automating Java applications:
 
     Navigate to **Control Panel -> Ease of Access -> Optimize visual display -> Java Access Bridge from Oracle, Inc. Providing Assistive Technology access to Java applications** and disable (uncheck) the **Enable Java Access Bridge** option. 
 
+    ![Screenshot of the Enable Java Access Bridge option in the Windows Control Panel.](media/java/enable-java-access-bridge-option.png)
+
 1. Specific files have to exist in the Java folder(s) of the machine after the Power Automate for desktop installation.  
 
     To check the installed Java version and installation path in your machine: 
@@ -62,7 +64,11 @@ If you come across any issues while automating Java applications:
 
       1. Navigate to the **Java** tab and select **View**
 
+          ![Screenshot of the Java Control Panel.](media/java/java-control-panel.png)
+
       1. Check the values in the **Path** column. The row with **Architecture** equal to **x86** refers to a 32-bit Java installation, while the row with value **x86x64** refers to a 64-bit Java installation. 
+
+           ![Screnshot of the Java Runtime Environment Settings.](media/java/java-runtime-environments-settings.png)     
 
     Additionally, you can check the following files: 
 
@@ -83,3 +89,5 @@ If you come across any issues while automating Java applications:
 1. Make sure that there isn't an **.accessibility.properties** file present in your user folder. Check if a file named **.accessibility.properties** is present in the **C:\Users\user** folder. If yes, then rename it. 
 
 1. Ensure that **VC_redist.x64.exe** and/or **VC_redist.x86.exe** have been run.  
+
+    ![Screenshot of the installed Microsoft Visual C++ Redistributable versions.](media/java/installed-microsoft-visual-c-plus-plus-redistributable-versions.png)   
