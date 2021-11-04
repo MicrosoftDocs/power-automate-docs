@@ -118,9 +118,17 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
-  To create a new **Custom object**, use the **Set variable** action and an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
+  To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
-  ![An example of a created custom object variable.](media\variable-data-types\create-custom-object-variable.png)
+  ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
+
+  To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field. 
+
+  ![Screenshot of a Set variable action that add a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
+
+  Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
+
+  ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
 
 ### Known issues and limitations
 
