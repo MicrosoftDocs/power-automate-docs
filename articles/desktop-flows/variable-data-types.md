@@ -83,11 +83,11 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
 
-  If you want to add column headers while creating a new datatable, use the **^['Column1', 'Column2']** expression for the first row. 
+  If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
 
   ![Screenshot of a Set variable action that create a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
-  To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (+), and the values you want to add in brackets.
+  To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
 
   ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
