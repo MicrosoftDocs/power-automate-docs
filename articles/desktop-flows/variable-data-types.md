@@ -29,25 +29,25 @@ Some of these data types are widely used throughout the application, such as **n
 
   [Text data type properties](datatype-properties.md#texts)
   
-  To create a **Text value** variable, use the **Set Variable action** and populate the input parameter with the desired text without any notation.
+  To create a **Text value** variable, use the **Set variable** action and populate the input parameter with the desired text without any notation.
 
-  ![An example of a created Text value variable.](media\variable-data-types\create-text-variable.png)
+  ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
 
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
-  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. 
+  Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
   
   Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
-  ![An example of a created Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
+  ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
 - **Boolean value** - The value can be either **True** or **False**. 
   
-  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%**. 
+  Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
   
   Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
-  ![An example of a created Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
+  ![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
 ## Advanced data types
 
@@ -55,7 +55,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
-  ![An example of a list.](media\lists\create-list.png)
+  ![Screenshot of a flow that creates a list.](media\lists\create-list.png)
 
   You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
@@ -63,7 +63,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
 
-  ![An expression to access the first item of a list.](media\lists\list-first-item.png)
+  ![Screenshot of an expression that accesses the first item of a list.](media\lists\list-first-item.png)
 
   A common practice is to use a **For each** action to iterate through the items of a list.
 
@@ -114,7 +114,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   [Datarow data type properties](datatype-properties.md#datarows)
 
-  ![An example of a datarow variable.](media\data-rows\data-row-data-type.png) 
+  ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
