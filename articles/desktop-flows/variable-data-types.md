@@ -83,6 +83,14 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
 
+  If you want to add column headers while creating a new datatable, use the **^['Column1', 'Column2']** expression for the first row. 
+
+  ![Screenshot of a Set variable action that create a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
+
+  To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (+), and the values you want to add in brackets.
+
+  ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
+
   To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
   For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
