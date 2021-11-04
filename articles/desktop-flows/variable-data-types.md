@@ -73,7 +73,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
 
-  ![An example of a datatable variable.](media\data-tables\create-data-table.png)
+  ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
   Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
@@ -81,11 +81,11 @@ Some of these data types are widely used throughout the application, such as **n
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
-  ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
+  ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
   If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
 
-  ![Screenshot of a Set variable action that create a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
+  ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
   To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
 
@@ -95,7 +95,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
-  ![An expression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+  ![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
