@@ -57,6 +57,9 @@ You will need at least one machine in your group to run desktop flows.
 
 When you add your machine to a group, any connections currently targeting your machine will break. You will need to update those connections to target the machine group.
 
+>[!NOTE]
+>In case of a virtual machines, make sure not to clone the virtual machine after installing the Power Automate machine runtime.
+
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
 

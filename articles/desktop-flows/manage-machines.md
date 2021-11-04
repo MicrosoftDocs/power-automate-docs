@@ -57,8 +57,9 @@ When the connection is established successfully, the machine settings section wi
 
  
 > [!NOTE]
-> Users will need either an Environment Maker or Desktop Flow Machine Owner role to register machines. Before registering a machine, make sure that you have the required
+> - Users will need either an Environment Maker or Desktop Flow Machine Owner role to register machines. Before registering a machine, make sure that you have the required
 permissions, and there is an available environment to register the new machine.
+> - In case of a virtual machines, make sure not to clone the virtual machine after installing the Power Automate machine runtime.
 
 > [!IMPORTANT]
 > To successfully register a machine, make sure that the services specified in [IP address configuration](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) are accessible.
