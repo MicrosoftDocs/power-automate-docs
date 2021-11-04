@@ -71,7 +71,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
-  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
+  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
 
   ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
