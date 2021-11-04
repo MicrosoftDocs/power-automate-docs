@@ -113,6 +113,8 @@ In this panel, you can:
 - Edit users' permissions
 - Remove users' permissions for this flow
 
+>[!NOTE]
+> Administrators of an environment are co-owners of all dekstop flows created in this environment and can't be removed.
 
 ## More information
 
