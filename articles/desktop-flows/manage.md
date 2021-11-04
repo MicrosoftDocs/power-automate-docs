@@ -108,6 +108,7 @@ To duplicate an existing flow:
 
 For each of your desktop flows, you can manage its access by selecting manage access in the desktop flows details page.
    ![Manage access](media/manage-desktop-flows/manage-access.png)
+
 In this panel, you can:
 - Share the desktop flow with another user
 - Edit users' permissions
