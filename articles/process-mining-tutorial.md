@@ -1,6 +1,6 @@
 ---
-title: Use process mining to analyze and improve your processes in process advisor (preview) | Microsoft Docs
-description: This topic is a tutorial with demo data in process mining using the process advisor feature in Power Automate.
+title: Get started with process mining in process advisor (preview) | Microsoft Docs
+description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -23,6 +23,8 @@ search.audienceType:
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
 For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-tutorial.md).
+
+The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
 > [!IMPORTANT]
 > - This is a preview feature.
