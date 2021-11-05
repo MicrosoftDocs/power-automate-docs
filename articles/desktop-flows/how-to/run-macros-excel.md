@@ -21,6 +21,9 @@ The **Run Excel macro** action enables you to run macros in open Excel instances
 
 To create an Excel instance, deploy the **Launch Excel** action and select to open the Excel file containing the needed macro.
 
+> [!IMPORTANT]
+> To run macros stored in the **PERSONAL.xlsb** file, enable the **Load add-ins and macros** option located in the advanced options of the **Launch Excel** action.
+
 ![The Launch Excel action action.](media/run-macros-excel/launch-excel-action.png)
 
 To run the macro, deploy the **Run Excel macro** action and populate its name in the **Macro** field.
