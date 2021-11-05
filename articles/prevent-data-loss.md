@@ -49,10 +49,11 @@ Power Automate provides the ability to create and enforce policies that classify
 Region|Date available
 ------|---------------
 Canada| 2021/11/1	
-Asia, UK, Australia, Japan, Switzerland, Brazil| 2021/11/8
-Europe| 2021/11/16
-US(NAM)| 2021/11/18
-Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/11/29	
+Switzerland, Brazil|2021/11/15
+Asia, UK, Australia, Japan| 2021/11/18
+Europe| 2021/11/24
+US(NAM)| 2021/11/29
+Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/12/2	
 
 >[!IMPORTANT]
 >This capability is available in preview at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
@@ -74,7 +75,7 @@ Admins can create data loss prevention policies from https://admin.powerplatform
  
 ### Background jobs
 - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, and then suspends the flows that violate the updated policy.
-- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to manually turn them on manually.
+- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to turn them on manually.
 
 ### Known limitations
 1.	We currently do not support cross checking all modules used between a desktop flows and all its child desktop flows. This feature is coming in general availability.
