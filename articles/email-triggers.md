@@ -103,8 +103,6 @@ In this walkthrough, we create a cloud flow that sends a push notification to yo
 
 ## Trigger a cloud flow when emails arrive in a specific folder
 
-If you have rules that route email to different folders based on certain properties, such as the address, you may want this type of flow.
-
 If you have rules that route emails to different folders based on certain properties, such as the address, you might want this type of flow.
 
 Let's get started.
