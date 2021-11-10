@@ -23,11 +23,12 @@ This feature will be rolling out to all cloud regions based on the following sch
 
 |Date| Available in regions|
 |----|----|
-|11/1 |Switzerland , Brazil, Canada|
-|11/18 |Asia, UK, Australia, Japan |
-|11/24 |Europe |
-|11/29 |US(NAM) |
-|12/02 |GCC, GCCH, Mooncake, DoD |
+|11/1|Canada|
+|12/9|Switzerland , Brazil, Canada|
+|12/13|Asia, UK, Australia, Japan |
+|12/16 |Europe |
+|12/20 |US(NAM) |
+|12/22 |GCC, GCCH, Mooncake, DoD |
 
 
 ## Troubleshoot data loss prevention (DLP) policies violations
