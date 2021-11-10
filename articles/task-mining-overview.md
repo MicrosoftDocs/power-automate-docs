@@ -1,6 +1,6 @@
 ---
 title: Overview of task mining in process advisor | Microsoft Docs
-description: This topic is an overview of task mining in the process advisor feature in Power Automate.
+description: Quickly capture detailed steps for each process in your organization to help you better understand workflows and begin automating to reclaim time.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -26,18 +26,18 @@ For example, in a healthcare facility, you can use task mining to record patient
 
 Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
-With insights and guided recommendations from process advisor, you're ready to begin automating, and reclaim the time you need for what matters most.
+With insights and guided recommendations from process advisor, you're ready to begin automating and reclaim the time you need for what matters most.
 
 ## Steps to task mining
 
-- [Prepare processes and recordings](process-advisor-processes.md).
+- [Prepare processes and recordings](process-advisor-processes.md)
 
-- [Analyze processes](process-advisor-analyze.md).
+- [Analyze processes](process-advisor-analyze.md)
 
-- [Visualize processes](process-advisor-visualize.md).
+- [Visualize processes](process-advisor-visualize.md)
 
-- [Identify automation recommendations](process-advisor-automation.md).
+- [Identify automation recommendations](process-advisor-automation.md)
 
-- [Share processes](process-advisor-share.md).
+- [Share processes](process-advisor-share.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
