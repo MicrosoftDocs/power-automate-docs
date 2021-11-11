@@ -51,7 +51,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 ## Import data and analyze
 
-1. In your process, select **Setup** in the toolbar. <!-- Is this correct? I added it. -->
+1. In your process, select **Setup** in the toolbar.
 
 1.	Select **Blank table**.
 
