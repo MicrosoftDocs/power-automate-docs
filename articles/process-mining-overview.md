@@ -26,13 +26,13 @@ Process mining in process advisor allows you to take the event data from your sy
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-Here's a short video on how to view analytics with process advisor:<br>
+Here's a short video that explains the concept of process mining in process advisor:<br>
 </br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWONpg]
 
 ## Business example
 
-As a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure to pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor will produce a process map. This map enables you to visualizes the activities in the procure to pay process to derive the following insights:
+As a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure to pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor will produce a process map. This map enables you to visualize the activities in the procure to pay process to derive the following insights:
 
 - Which activities in a process take the longest?
 
