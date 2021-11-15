@@ -5,8 +5,8 @@ Please follow below steps to turn on experimental features in your environment:<
 **•Click on Settings (gear icon) from top-right corner of the page and click 'View all Power Automate settings'**<br>
 ![Power Automate Settings](media/PowerAutomateSettings.png)
 
-**•	Turn On Experimental Features**<br>
-**•	Click Save
+**•	Turn On Experimental Features<br>
+•	Click Save
 ![Turn on experimental features](media/TurnOnExperimentalFeatures.png)
 
 Now, when you will create a new flow or edit any existing flow, you will be able to access all experimental features in Power Automate.<br>
