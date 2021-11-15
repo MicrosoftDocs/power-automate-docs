@@ -1,13 +1,13 @@
 ## Turning on Experimental features
 
-Please follow below steps to turn on experimental features in your environment:<br>
-**•	Go to flow.microsoft.com and login if you are not logged in already.** <br>
-**•	Click on Settings (gear icon) from top-right corner of the page. **<br>
-**•	Select View all Power Automate settings**
+Please follow below steps to turn on experimental features in your environment:<br><br>
+• Go to flow.microsoft.com and login if you are not logged in already. <br>
+•	Click on Settings (gear icon) from top-right corner of the page.<br>
+•	Select View all Power Automate settings
 ![Power Automate Settings](media/doc4.png)
 
-**•	Turn On Experimental Features** <br>
-**•	Click Save **
+•	Turn On Experimental Features<br>
+•	Click Save
 ![Turn on experimental features](media/doc4.png)
 
 Now, when you will create a new flow or edit any existing flow, you will be able to access all experimental features in Power Automate.
@@ -27,7 +27,7 @@ Do you struggle with writing expressions in your flow actions? Now, you can make
 
 ![Errored editor](media/doc3.png)
  
-**Note
- Some actions may not support the new expression editor.**
+**Note**
+Some actions may not support the new expression editor.
 
 
