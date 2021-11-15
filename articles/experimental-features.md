@@ -16,15 +16,14 @@ Experimental features might change, break, or disappear at any time. So, please 
 
 ## New Expression Editor in experimental features
 
-Do you struggle with writing expressions in your flow actions? Now, you can make use of the bigger and improved expression editor in experimental mode. Simply Turn on Experimental Mode and click on the ‘fx’ skittle on an action.
-
-![Skittles on an action editor](media/skittleEditor.png)
-![Expression editor](media/ExpressionEditor.png)
+Do you struggle with writing expressions in your flow actions? Now, you can make use of the bigger and improved expression editor in experimental mode. Simply Turn on Experimental Mode and click on the ‘fx’ skittle on an action.<br>
 
 **1.	The expression editor view is bigger to help you manage richer and complex expressions.** <br>
 **2.	Ability to choose dynamic content in the expressions without having to switch tabs.** <br>
 **3.	Ability to preserve errored expressions and unblock the view to parallelly work on other parts of flow.**
 
+![Skittles on an action editor](media/skittleEditor.png)
+![Expression editor](media/ExpressionEditor.png)
 ![Errored editor](media/ErroredExpression.png)
  
 **Note:**
