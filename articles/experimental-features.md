@@ -2,8 +2,9 @@
 
 Please follow below steps to turn on experimental features in your environment:<br><br>
 **• Go to flow.microsoft.com and login if you are not logged in already. <br>
-•	Click on Settings (gear icon) from top-right corner of the page.<br>
-•	Select View all Power Automate settings**![Power Automate Settings](media/PowerAutomateSettings.png)
+•	Click on Settings (gear icon) from top-right corner of the page.
+•	Select View all Power Automate settings**
+![Power Automate Settings](media/PowerAutomateSettings.png)
 
 **•	Turn On Experimental Features<br>
 •	Click Save**
