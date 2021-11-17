@@ -5,7 +5,7 @@ author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/26/2021
+ms.date: 11/10/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -23,11 +23,12 @@ This feature will be rolling out to all cloud regions based on the following sch
 
 |Date| Available in regions|
 |----|----|
-|11/1 |Switzerland , Brazil, Canada|
-|11/8 |Asia, UK, Australia, Japan |
-|11/16 |Europe |
-|11/18 |US(NAM) |
-|11/29 |GCC, GCCH, Mooncake, DoD |
+|11/1|Canada|
+|12/9|Switzerland , Brazil, Canada|
+|12/13|Asia, UK, Australia, Japan |
+|12/16 |Europe |
+|12/20 |US(NAM) |
+|12/22 |Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions |
 
 
 ## Troubleshoot data loss prevention (DLP) policies violations
