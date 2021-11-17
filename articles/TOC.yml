@@ -506,7 +506,7 @@
       - name: Automate applications using keyboard shortcuts
         href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
       - name: Automate with mouse, keyboard, and OCR actions
-        href: /desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
       - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
       - name: Automate Java applications
