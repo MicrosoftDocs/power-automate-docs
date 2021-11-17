@@ -17,7 +17,7 @@ search.audienceType:
 
 # Automate with mouse, keyboard, and OCR actions
 
-In some cases, certain web pages and applications don't allow external software to interact with them. As a result, you can't automate them using the web and UI automation actions or the recorders.
+In some cases, certain web pages and applications don't allow external software to interact with them. As a result, you can't automate them using the browser and UI automation actions or the recorders.
 
 Although you can use [image-based recording](../recording-flow.md#image-based-recording) to automate some of these applications, it may not be the best option in some scenarios. For example, some applications change their interface dynamically, while the texts remain the same.
 
