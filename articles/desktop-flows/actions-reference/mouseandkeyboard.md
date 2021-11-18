@@ -367,7 +367,7 @@ Retrieves the active keyboard identifier from the machine's registry
 |Keyboard identifier wasn’t found|Indicates an error while retrieving the keyboard identifier|
 
 ### <a name="waitforshortcutkeyaction"></a> Wait for shortcut key
-Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). To define multiple shortcut keys seperate them by comma.
+Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). Multiple shortcut keys can be defined
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
