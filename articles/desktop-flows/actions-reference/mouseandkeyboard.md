@@ -372,7 +372,7 @@ Pause the flow run until a specific shortcut key is pressed. Shortcut keys must 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Shortcut key|Yes|List of Text values|Ctrl + A|Specify the shortcut keys to wait for.  Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). In order to wait for one of multiple shortcut keys they must be in a list.|
+|Shortcut keys|No|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). To add more than one shortcut key, select 'New shortcut key'|
 |Continue flow run on timeout|N/A|Boolean value|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
 |Continue after|Yes|Numeric value|10|The time in seconds before continuing the flow run|
 
