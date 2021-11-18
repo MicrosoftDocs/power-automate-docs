@@ -38,28 +38,28 @@ To declare variables in scripting actions and return results in Power Automate, 
 
 - To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
 
-  ```
+  ```PowerShell
   $variableName = "variableValue"
   Write-Output $variableName
   ```
 
 - Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
 
-  ```
+  ```Python
   variableName = "variableValue"
   print variableName
   ```
 
 - VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate.
 
-  ```
+  ```VBScript
   variableName = "variableValue"
   WScript.Echo variableName
   ```
 
 - In JavaScript scripts, use the **var** notation to declare new variables and the **WScript.Echo** function to return values from [Run JavaScript](#runjavascript) actions. 
 
-    ```
+    ```JavaScript
     var variableName = "variableValue";
     WScript.Echo(variableName);
     ```
