@@ -93,7 +93,7 @@ Retrieves the last error that occured in the flow
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Clear error|N/A|Boolean value|False|Afer the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
+|Clear error|N/A|Boolean value|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
 
 ##### Variables Produced
 |Argument|Type|Description|
