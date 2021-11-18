@@ -40,7 +40,7 @@ Take control of the mouse and keyboard
 
 Simulate using the keyboard to enter text or other key commands with the **Send Keys** action. Use the **Insert special key** button to insert keys such as the arrow keys, Caps Lock or keys from the numeric keypad, and Insert modifier to send keys such as Shift and Control. In the example below, a signature is added to an email message, starting with two line breaks. At the end of the text, the action sends the Ctrl+A and Ctrl+C commands, to select all and copy, to use the contents of the entire email text from the clipboard in a subsequent action.
 
-![Screenshot of send keys action properties.](\media\mousekeyboard\send-keys-example.png)
+![Screenshot of send keys action properties.](media\mousekeyboard\send-keys-example.png)
 
 > [!NOTE]
 > To use a key as a modifier, use the curly brackets notation for both keys:
@@ -48,15 +48,15 @@ Simulate using the keyboard to enter text or other key commands with the **Send 
 
 To simulate moving the mouse, use the **Move mouse** action. In the following example, the mouse has been set to move to specific coordinates by moving the pointer there manually, and pressing Control+Shift to set its current coordinates for Position X & Y. The movement speed has been set to normal.
 
-![Screenshot of move mouse action properties.](\media\mousekeyboard\move-mouse-example.png)
+![Screenshot of move mouse action properties.](media\mousekeyboard\move-mouse-example.png)
 
 Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. 
 
-![Screenshot of move mouse to image properties.](\media\mousekeyboard\move-mouse-to-image-example.png)
+![Screenshot of move mouse to image properties.](media\mousekeyboard\move-mouse-to-image-example.png)
 
 In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
 
-![Screenshot of move mouse to image advanced properties.](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
+![Screenshot of move mouse to image advanced properties.](media\mousekeyboard\move-mouse-to-image-advanced-example.png)
 
 
 ## Mouse and keyboard actions
