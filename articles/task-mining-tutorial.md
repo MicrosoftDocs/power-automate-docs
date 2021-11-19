@@ -108,7 +108,7 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
 
 ### Explore the features
 
-You"ll see the following features:
+You'll see the following features:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the toolbar features.](media/task-mining-tutorial/features.png "Toolbar features")
