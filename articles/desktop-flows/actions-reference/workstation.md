@@ -127,7 +127,10 @@ Logs off the current user
 |Can't log off the current user|Indicates a problem logging off the current user|
 
 ### <a name="shutdowncomputer"></a> Shutdown computer
-Shuts down the computer
+Instructs the computer to shut down
+
+> [!NOTE]
+> The inability of the machine to terminate its execution is unrelated to the functionality of the action. Some factors unrelated to Power Automate for desktop may prevent the machine from shutting down, such as other running processes and failed transactions.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
