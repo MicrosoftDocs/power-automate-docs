@@ -96,6 +96,8 @@ As shown earlier, you can get the list of workflows by calling `GET` on `workflo
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
 
+[Documentation for the Dataverse workflow entity](/powerapps/developer/data-platform/reference/entities/workflow) has additional useful information about properties/fields and their usage.
+
 You can also request specific properties, filter the list of flows, and much more, as described in the [Dataverse API documentation for querying data](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
 ```http
