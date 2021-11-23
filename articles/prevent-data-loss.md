@@ -49,11 +49,11 @@ Power Automate provides the ability to create and enforce policies that classify
 Region|Date available
 ------|---------------
 Canada| 2021/11/1	
-Switzerland, Brazil|2021/12/09
-Asia, UK, Australia, Japan| 2021/12/13
-Europe| 2021/12/16
-US(NAM)| 2021/12/20
-Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/12/22	
+Switzerland, Brazil|2021/11/30
+Asia, UK, Australia, Japan| 2021/12/6
+Europe| 2021/12/9
+US(NAM)| 2021/12/15
+Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/1/4	
 
 >[!IMPORTANT]
 >This capability is available in preview at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
