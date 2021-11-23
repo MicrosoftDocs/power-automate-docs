@@ -33,14 +33,17 @@ Some of the reasons why you might want to edit the query are:
 
 ## Edit query
 
+<!-- "query editor" might need to be capitalized, based on this style guide entry: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=39531 -->
+
+
 1. In the process details page, return to the query editor by selecting **Setup**.
 
 1. Select (or double-click) the corresponding steps in the **Applied steps** area under **Query settings** to edit those steps.
 
-    *Don't* select the **Map to entity** or **Choose columns** buttons again.
+   *Don't* select **Map to entity** or **Choose columns** again.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
 
 ## Refresh data
 
