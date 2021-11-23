@@ -19,6 +19,12 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
+
+
+<!-- Question for writer: I'm wondering if "Power Query editor" and "query editor" are the same as the one mentioned here in the style guide: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=39531. If so, we should follow that capitalization. -->
+
+
+
 After you select the data source you want to use, you're taken to the Power Query editor. The query editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
 > [!IMPORTANT]
@@ -28,27 +34,27 @@ After you select the data source you want to use, you're taken to the Power Quer
 
 Here are some reasons why you might want to transform the data:
 
-- You might not be interested in all the activity names that are logged, and so you want to filter for specific activity names that are important to the process you are trying to mine.
+- You might not be interested in all the activity names that are logged, and so you want to filter for specific activity names that are important to the process you're trying to mine.
 
 - You might want to rename some of the activity names to be more descriptive and understandable. This is often not the case with names in a database.
 
 - You might be interested in only the most recent year's history, and not the entire history.
 
     > [!NOTE]
-    > For public preview, we only support up to 150K rows of data. Because of this, filtering to a specific period may be necessary.
+    > For public preview, we only support up to 150,000 rows of data. Because of this, filtering to a specific period may be necessary.
 
 - You might want to combine multiple ID columns to form the case ID. This is often done when the ID you want to use for process mining doesn't exist or is a combination of multiple IDs in the application. For example, when a customer files support tickets, the support ticket might be assigned to multiple customer service agents. If you want to analyze how each agent handles each ticket, you would combine the agent ID and the ticket ID into the case ID.
 
 ## Filter activity names
 
-1. Select the carat next to the activity name column to bring up the sort and filter menu. 
+1. Select the caret next to the activity name column to bring up the sort and filter menu. 
 
 1. If there's a message that says **List may be incomplete**, select **Load more**.
 
 1. Select only the activity names that you want to analyze. Uncheck any name you want to exclude.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of filtering activity names.](media/process-mining-transform/filter-activity.png "Filter activity names")
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of filtering activity names.](media/process-mining-transform/filter-activity.png "Filter activity names")
 
 4. Alternatively, you can use the **Text filter** menu for more advanced filtering. For more information on filtering by value, go to [Filter by values in a column](/power-query/filter-values).
 
@@ -73,7 +79,7 @@ Here are some reasons why you might want to transform the data:
 
 One strategy for reducing the total number of records is to use only the latest records. To do this, you need to first sort the data by time.
 
-1. Open the sort and filter menu by selecting the carat next to the **startTimestamp** column.
+1. Open the sort and filter menu by selecting the caret next to the **startTimestamp** column.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of reducing the number of total records.](media/process-mining-transform/reduce-records.png "Reduce the number of total records")
@@ -87,7 +93,7 @@ One strategy for reducing the total number of records is to use only the latest 
 
 1. Enter **150000** under **Number of rows**.
 
-1. Select **OK** to filter for the top 150K rows.
+1. Select **OK** to filter for the top 150,000 rows.
 
 ## Combine multiple IDs
 
@@ -98,9 +104,9 @@ You can use **Ctrl** + **click** to select multiple columns that you want to com
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Merge columns selection.](media/process-mining-transform/merge-columns.png "Merge columns selection")
 
-1. (Optional) Select a separator from the dropdown. Alternatively, you can select **none**.
+1. (Optional) Select a separator from the dropdown list. Alternatively, you can select **none**.
 
-1. Change the name (or make a note of the default name that's generated), so you can select it when mapping to case ID.
+1. Change the name (or make a note of the default name that's generated), so you can select it when mapping to a case ID.
 
 ## Map data
 
@@ -116,7 +122,7 @@ Mapping tells process advisor what columns represent case ID, activity name, or 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of mapping options.](media/process-mining-transform/map-cdm.png "Mapping options")
 
-1. Select each of the dropdowns under the **Query output column** heading, and select the corresponding column in your data that maps to:
+1. Select each of the dropdown lists under the **Query output column** heading, and select the corresponding column in your data that maps to:
     1. Activity name (activityName)
     1. Case ID (caseId)
     1. Start timestamp (startTimestamp)
@@ -140,4 +146,4 @@ If you have more than five columns:
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Choose columns dialog.](media/process-mining-transform/keep-columns.png "Choose columns dialog")
 
-Ensure that the mapped columns (activityName, caseId, startTimestamp, endTimestamp) from the previous procedure are selected. *The five additional columns are on top of the mapped columns*.
+Ensure that the mapped columns (activityName, caseId, startTimestamp, endTimestamp) from the previous procedure are selected. *The five additional columns are on top of the mapped columns.*
