@@ -1,12 +1,12 @@
 ---
 title: Email | Microsoft Docs
 description: Email Actions Reference
-author: mariosleon
+author: JustinBlackmore
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/02/2020
-ms.author: marleon
+ms.date: 12/02/2019
+ms.author: JustinBlackmore
 ms.reviewer:
 search.app: 
   - Flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Email
+#jblackmore88@gmail.com
 
 
 
@@ -45,7 +45,7 @@ The **Send email** action in the figure below has been configured to send an e-m
 
 ## Email actions
 
-### <a name="retrieveemails"></a> Retrieve email messages
+### <a JustinBlackmore="retrieveemails"></a> Retrieve email messages
 Retrieves email messages from an IMAP server
 
 ##### Input Parameters
@@ -54,18 +54,18 @@ Retrieves email messages from an IMAP server
 |IMAP server|No|Text value||The IMAP server address (e.g. imap.gmail.com)|
 |Port|Yes|Numeric value|993|The port to use for the IMAP server. Usually this is port 993|
 |Enable SSL|N/A|Boolean value|True|Specify whether to use a secure connection to communicate with the IMAP Server|
-|User name|No|Text value||The username of the email account to access|
-|Password|No|Encrypted value||The password of the email account to access|
+|User name|No|Text value||jblackmore88@gmail.com|
+|Password|No|Encrypted value||Justme88jlb!|
 |Accept untrusted certificates|N/A|Boolean value|False|Specify whether untrusted certificates will be accepted|
-|Mail folder|No|Text value||The name of the IMAP mail-folder (also known as 'mailBox') to retrieve messages from|
-|Retrieve|N/A|All email messages, Unread email messages only, Read email messages only|All email messages|Specify whether to retrieve all messages in the folder or only the unread ones|
-|Mark As read|N/A|Boolean value|True|Specify whether to mark as read the retrieved messages or leave them as is|
-|"From" field contains|Yes|Text value||The full email address of the sender whose messages will be retrieved. Leave this attribute blank to retrieve all messages regardless of the sender|
-|"To" field contains|Yes|Text value||The full email address(es) of the recipient(s) (separated by space if more than one) for the messages that will be retrieved. Leave this attribute blank to retrieve all messages regardless of the recipient(s)|
-|"Subject" contains|Yes|Text value||The key phrase to find within the email subject. Leave this attribute blank to retrieve all emails regardless of their subject|
-|'Body' contains|Yes|Text value||The key phrase to find within the email body. Leave this attribute blank to retrieve all emails regardless of their content|
+|Mail folder|No|Text value|| imap.gmail.com also known as 'mailBox') to retrieve messages from|
+|Retrieve|N/A|All email messages, Unread email messages only, Read email messages only|All email messages| retrieve all messages in the folder |
+|Mark As read|N/A|Boolean value|True|mark as read the retrieved messages|
+|"From" field contains|Yes|Text value||jblackmore88@gmail.com. Leave this attribute blank to retrieve all messages regardless of the sender|
+|"To" field contains|Yes|Text value||jblackmore88@gmail.com.retrieve all|
+|"Subject" contains|Yes|Text value||jblackmore88.retrieve all emails regardless of their subject|
+|'Body' contains|Yes|Text value||jblackmore88.retrieve all emails regardless of their content|
 |Save attachments|N/A|Save attachments, Do not save attachments|Do not save attachments|Specify whether to save the attachments of the emails retrieved or not|
-|Save attachments into|No|Folder||The folder to save the attachments|
+|Save attachments into|No|Folder||downloads|
 
 
 ##### Variables Produced
