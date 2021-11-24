@@ -449,6 +449,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    ## - name: Automate on virtual desktops
+    ##  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
@@ -502,11 +504,13 @@
       - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
+      - name: Automate with mouse, keyboard, and OCR actions
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
       - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
-#      - name: Automate java applications
-#        href: ./desktop-flows/java.md   
+      - name: Automate Java applications
+        href: ./desktop-flows/how-to/java.md   
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
