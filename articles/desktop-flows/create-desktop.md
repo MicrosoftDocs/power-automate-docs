@@ -26,7 +26,9 @@ search.audienceType:
 # Create and test Windows recorder (V1) flows
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
+>This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
