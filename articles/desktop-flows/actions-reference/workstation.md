@@ -130,7 +130,7 @@ Logs off the current user
 Instructs the computer to shut down
 
 > [!NOTE]
-> The inability of the machine to terminate its execution is unrelated to the functionality of the action. Some factors unrelated to Power Automate for desktop may prevent the machine from shutting down, such as other running processes and failed transactions.
+> Although a flow containing the **Shutdown computer** action is set to shut down the machine, some unrelated factors, such as other running Windows processes, may prevent it from achieving it.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
