@@ -45,7 +45,7 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 ![Screenshot of the UI elements pane.](./media/ui-elements/ui-elements-pane.png)
 
-## Element Types
+## UI elements types
 
 UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
 
@@ -59,7 +59,7 @@ To capture a UI element from a webpage, you need to install the appropriate brow
 
 When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, Power Automate for desktop tries to grab UI elements for a desktop application and not a web page.
 
-## Element properties
+## UI elements properties
 
 To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This option brings up the Selector builder, where the selector can be edited with a visual editor.
 
