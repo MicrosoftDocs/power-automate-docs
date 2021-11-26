@@ -29,7 +29,7 @@ Each one of these action groups accepts a different category of UI elements. UI 
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
-To add a UI element to your flow, select to add a new UI element, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
+To add a new UI element to your flow, select to add a new UI element, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
 
 ![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 
@@ -41,7 +41,7 @@ Elements can be sorted alphabetically through the **Sort** option of the  UI ele
 
 To rename or delete a UI element, right-click on the respective item and select the appropriate function.
 
-To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace.
+To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace. Additionally, the UI elements for web pages consists of HTML elements that can be easily identified. 
 
 ![Screenshot of the UI elements pane.](./media/ui-elements/ui-elements-pane.png)
 
@@ -57,7 +57,7 @@ To distinguish a UI element for a desktop application from a UI element for a we
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, Power Automate for desktop tries to grab UI elements for the desktop applications.
+When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, Power Automate for desktop tries to grab UI elements for a desktop application and not a web page.
 
 ## Element properties
 
@@ -65,7 +65,7 @@ To manage a UI element’s selectors, right-click on the element and select **Ed
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
-To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable:
+To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable. You can find more information about selectors in [Build a custom selector](build-custom-selectors.md).
 
 ![Screenshot of the manual selector builder.](./media/ui-elements/manual-selector-editor.png)
 
