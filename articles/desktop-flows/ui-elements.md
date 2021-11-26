@@ -25,11 +25,11 @@ When deploying a UI automation or browser automation action, you may be required
 Each one of these action groups accepts a different category of UI elements. UI automation actions accept UI elements captured from desktop applications, while browser automation actions accept UI  elements captured from web pages.
 
 > [!NOTE]
-> UI automation actions can use only UI elements for desktop applications, while the browser automation action can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
+> UI automation actions can use only UI elements for desktop applications, while the browser automation actions can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
-To add a new UI element to your flow, select to add a new UI element, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
+To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
 
 ![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 
