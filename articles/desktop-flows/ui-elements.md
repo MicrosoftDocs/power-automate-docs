@@ -41,7 +41,7 @@ Elements can be sorted alphabetically through the **Sort** option of the  UI ele
 
 To rename or delete a UI element, right-click on the respective item and select the appropriate function.
 
-To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace. Additionally, the UI elements for web pages consists of HTML elements that can be easily identified. 
+To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace.
 
 ![Screenshot of the UI elements pane.](./media/ui-elements/ui-elements-pane.png)
 
@@ -49,7 +49,7 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
 
-To distinguish a UI element for a desktop application from a UI element for a web page, check its root selector element. UI elements for desktop applications usually have the desktop as their root element, while the UI elements for web pages have a webpage as their root element. 
+To distinguish a UI element for a desktop application from a UI element for a web page, check its root selector element. UI elements for desktop applications usually have the desktop as their root element, while the UI elements for web pages have a webpage as their root element. Additionally, the UI elements for web pages consist of HTML elements that can be easily identified in the selector.
 
 ![Screenshot of a selector of a UI element for destop applications.](./media/ui-elements/ui-element-desktop-selector.png)
 
@@ -61,7 +61,7 @@ When the browser extension fails to communicate with Power Automate for desktop,
 
 ## Element properties
 
-To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
+To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This option brings up the Selector builder, where the selector can be edited with a visual editor.
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
