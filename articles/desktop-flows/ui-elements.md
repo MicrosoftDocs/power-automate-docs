@@ -27,13 +27,15 @@ Each one of these action groups accepts a different category of UI elements. UI 
 > [!NOTE]
 > UI automation actions can use only UI elements for desktop applications, while the browser automation action can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
 
-![The Press button in window action.](./media/ui-elements/ui-element-input.png)
+![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
 To add a UI element to your flow, select to add a new UI element, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
 
-![Capturing an UI element.](./media/ui-elements/capturing-ui-elements.png)
+![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 
 Any captured UI elements will be added to the UI elements pane. To access the UI elements pane, select the UI elements tab on the right-hand side of the flow designer.
+
+![Screenshot of the UI elements tab.](./media/ui-elements/ui-elements-tab.png)
 
 Elements can be sorted alphabetically through the **Sort** option of the  UI elements tab. To remove all the UI elements that aren't used in any action, select the dots icon next to the **Sort** option and then **Remove unused UI elements**.
 
@@ -41,15 +43,17 @@ To rename or delete a UI element, right-click on the respective item and select 
 
 To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace.
 
-![The UI elements pane.](./media/ui-elements/access-ui-elements-pane.png)
+![Screenshot of the UI elements pane.](./media/ui-elements/ui-elements-pane.png)
 
 ## Element Types
 
 UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
 
-To distinguish a UI element for a desktop application from a UI element for a web page, check its root element. UI elements for desktop applications usually have the desktop as their root element, while the UI elements for web pages have a webpage as their root element. 
+To distinguish a UI element for a desktop application from a UI element for a web page, check its root selector element. UI elements for desktop applications usually have the desktop as their root element, while the UI elements for web pages have a webpage as their root element. 
 
-## UI elements for web pages
+![Screenshot of a selector of a UI element for destop applications.](./media/ui-elements/ui-element-desktop-selector.png)
+
+### UI elements for web pages
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
@@ -59,11 +63,11 @@ When the browser extension fails to communicate with Power Automate for desktop,
 
 To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
 
-![The visual selector builder.](./media/ui-elements/visual-selector-editor.png)
+![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
 To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable:
 
-![The manual selector builder.](./media/ui-elements/manual-selector-editor.png)
+![Screenshot of the manual selector builder.](./media/ui-elements/manual-selector-editor.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
