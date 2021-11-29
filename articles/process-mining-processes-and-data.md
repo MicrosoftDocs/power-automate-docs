@@ -124,7 +124,7 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 
 1. Select **Next**.
 
-1. Expand the **OData** folder; you should see all the Dataverse tables in that environment. As an example, the **Activities** table is called *activitypointers*.
+1. Expand the **OData** folder. You should see all the Dataverse tables in that environment. As an example, the **Activities** table is called *activitypointers*.
 
 1. Select the checkbox next to the table you want to import, and then select **Next**.
 
