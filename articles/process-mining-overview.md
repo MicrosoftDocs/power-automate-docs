@@ -44,9 +44,6 @@ You can easily filter for custom attributes such as location, department, and ot
 
 ## Steps to process mining
 
-
-<!-- editor's note: I changed the link text of two of these to the headings they open to. -->
-
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
 - [Transform and map data](process-mining-transform.md)
