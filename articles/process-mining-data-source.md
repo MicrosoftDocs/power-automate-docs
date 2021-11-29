@@ -33,10 +33,7 @@ Some of the reasons why you might want to edit the query are:
 
 ## Edit query
 
-<!-- "query editor" might need to be capitalized, based on this style guide entry: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=39531 -->
-
-
-1. In the process details page, return to the query editor by selecting **Setup**.
+1. In the process details page, return to the Query Editor by selecting **Setup**.
 
 1. Select (or double-click) the corresponding steps in the **Applied steps** area under **Query settings** to edit those steps.
 
