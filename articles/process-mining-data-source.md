@@ -33,14 +33,14 @@ Some of the reasons why you might want to edit the query are:
 
 ## Edit query
 
-1. In the process details page, return to the query editor by selecting **Setup**.
+1. In the process details page, return to the Query Editor by selecting **Setup**.
 
 1. Select (or double-click) the corresponding steps in the **Applied steps** area under **Query settings** to edit those steps.
 
-    *Don't* select the **Map to entity** or **Choose columns** buttons again.
+   *Don't* select **Map to entity** or **Choose columns** again.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
 
 ## Refresh data
 
