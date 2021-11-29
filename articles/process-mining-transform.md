@@ -19,13 +19,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-
-
-<!-- Question for writer: I'm wondering if "Power Query editor" and "query editor" are the same as the one mentioned here in the style guide: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=39531. If so, we should follow that capitalization. -->
-
-
-
-After you select the data source you want to use, you're taken to the Power Query editor. The query editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
+After you select the data source you want to use, you're taken to the Power Query Editor. The Query Editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
 > [!IMPORTANT]
 > - This is a preview feature.
