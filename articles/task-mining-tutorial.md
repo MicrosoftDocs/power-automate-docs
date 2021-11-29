@@ -89,7 +89,7 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
 11.	Select the **Invoice submission process**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Processes screen.](media/task-mining-tutorial/invoice-submission.png "Processes screen")
+    > ![Screenshot of the invoice submission process.](media/task-mining-tutorial/invoice-submission.png "Invoice submission process")
 
     > [!NOTE]
     > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
