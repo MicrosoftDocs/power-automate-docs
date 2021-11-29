@@ -93,6 +93,6 @@ Here's a short video on process mining analytics including custom filters:<br>
 <!-- Question: Are you certain that "Filters" should be capitalized, below? "Filter" is not capitalized in the other names in this list. -->
 
 
-- **Optional Filters**: If you imported Optional Columns during your data upload process, you'll have additional filters to slice and dice the data by. In the image above, we have examples of optional filters for Location, Role, and Resource.
+- **Optional filters**: If you imported Optional Columns during your data upload process, you'll have additional filters to slice and dice the data by. In the previous image, we have examples of optional filters for Location, Role, and Resource.
  
 
