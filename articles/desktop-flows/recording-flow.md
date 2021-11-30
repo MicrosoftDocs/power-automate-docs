@@ -24,33 +24,31 @@ To record a flow that automates desktop or/and web applications:
 
 1. Create a new desktop flow and select **Recorder** in the toolbar of the flow designer.
 
-    ![The desktop recorder button.](./media/recording-flow/desktop-recorder-button.png)
+    ![Screenshot of the recorder button.](./media/recording-flow/recorder-button.png)
 
 1. Select **Record** in the desktop recorder window and start performing the desired actions in the appropriate application or web page.
 
-    ![The start recording button.](./media/recording-flow/start-recording-button.png)
+    ![Screenshot of the Record button.](./media/recording-flow/record-button.png)
 
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
 
-    ![Recording a desktop flow.](./media/recording-flow/recording-flow.png)
+    ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
 1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate Desktop actions.
 
-    ![The actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
+    ![Screenshot of the generated actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
-To pause the recording process temporarily, select **Pause**.
- 
-![The pause recording button.](./media/recording-flow/pause-recording-button.png)
- 
-To add a comment to the recorded actions, select **+ Comment**.
+To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **+ Comment**.
 
-![The comment button.](./media/recording-flow/comment-button.png)
+![Screenshot of the comment button.](./media/recording-flow/comment-button.png)
 
 ### Launch a web browser
 
 To launch a web browser instance while recording web flows, select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
 
 After selecting the proper browser, the recorder will detect automatically the loaded webpage in which the recording takes place. 
+
+![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
 
 ### Add text using Input Method Editors (IMEs)
 
@@ -60,15 +58,15 @@ Power Automate Desktop supports the use of IMEs during the flow recording proced
 
 1. Right-click on the text field and select **Add text with IME** on the displayed menu.
 
-    ![The Add text with IME menu option.](./media/recording-flow/add-text-with-ime-option.png)
+    ![Screenshot of the Add text with IME menu option.](./media/recording-flow/add-text-with-ime-option.png)
 
 1. Populate the popup dialog with the desired text using an IME.
 
-    ![The Add text with IME dialog.](./media/recording-flow/add-text-with-ime-dialog.png)
+    ![Screenshot of the Add text with IME dialog.](./media/recording-flow/add-text-with-ime-dialog.png)
 
 1. Select **Add text** to generate the respective step in the **Recorder** window.
 
-    ![The generated text from an Input Method Editor in the Desktop Recorder.](./media/recording-flow/ime-text-desktop-recorder.png)
+    ![Screenshot of the generated text from an Input Method Editor in the Desktop Recorder.](./media/recording-flow/ime-text-desktop-recorder.png)
 
 ## Image-based recording
 
@@ -83,15 +81,15 @@ To record flows using images:
 
 1. Create a new desktop flow and select **Recorder** in the toolbar of the flow designer.
 
-    ![The desktop recorder button.](./media/recording-flow/desktop-recorder-button.png)
+    ![Screenshot of the recorder button.](./media/recording-flow/recorder-button.png)
 
 1. Select the dots icon on the right side of the recorder dialog, and then enable **Image recording**. After enabling this option, select **Record** to start recording actions using image recognition.
 
-    ![The Image recording button.](./media/recording-flow/image-recording-button.png)
+    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png)
 
      Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
 
-    ![The preview image button.](./media/recording-flow/preview-image-button.png)
+    ![Screenshot of the preview image button.](./media/recording-flow/preview-image-button.png)
 
 ### Extract text with image-based recording
 
@@ -99,23 +97,23 @@ To extract a text value while using image recording:
 
 1. Perform a **right-click** on the screen and select **Extract text from image**.
 
-    ![The Extract text from image option.](./media/recording-flow/extract-text-from-image-option.png)
+    ![Screenshot of the Extract text from image option.](./media/recording-flow/extract-text-from-image-option.png)
 
 1. Wait for a popup message that will prompt you to select a text area.
 
-    ![The message that prompts user to select a text area.](./media/recording-flow/text-area-message.png)
+    ![Screenshot of the message that prompts user to select a text area.](./media/recording-flow/text-area-message.png)
 
 1. Select the **text area** from which text will be extracted using the Tesseract OCR engine.
 
-    ![A selected text area.](./media/recording-flow/text-area.png)
+    ![Screenshot of a selected text area.](./media/recording-flow/text-area.png)
 
 1. Wait for a popup message that will prompt you to select an anchor area.
 
-    ![The message that prompts user to select a anchor area.](./media/recording-flow/anchor-area-message.png)
+    ![Screenshot of the message that prompts user to select a anchor area.](./media/recording-flow/anchor-area-message.png)
 
 1. Select an **anchor area** that isn't expected to change, such as the label next to a field.
 
-    ![A anchor text area.](./media/recording-flow/anchor-area.png)
+    ![Screenshot of a anchor text area.](./media/recording-flow/anchor-area.png)
 
  ## Recording vs building a desktop flow
 
