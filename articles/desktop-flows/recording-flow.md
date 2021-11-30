@@ -30,7 +30,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of the Record button.](./media/recording-flow/record-button.png)
 
-    The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recorder session, the recorder can generate both UI and browser automation actions.
+    The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
