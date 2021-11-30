@@ -40,7 +40,7 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
     You might see a **Getting things ready** message. Allow this process to complete. It will take a few minutes.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot the Processes screen.](media/task-mining-tutorial/processes.png "Processes screen")
+    > ![Screenshot of the Processes screen.](media/task-mining-tutorial/processes.png "Processes screen")
 
     Once this process has completed, you should see the following screen:
 
@@ -89,10 +89,10 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
 11.	Select the **Invoice submission process**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Processes screen.](media/task-mining-tutorial/invoice-submission.png "Processes screen")
+    > ![Screenshot of the invoice submission process.](media/task-mining-tutorial/invoice-submission.png "Invoice submission process")
 
     > [!NOTE]
-    > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinadayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
+    > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
 
     You can see some of the existing recordings under **Recordings**.
 
@@ -108,12 +108,12 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
 
 ### Explore the features
 
-You"ll see the following features:
+You'll see the following features:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the toolbar features.](media/task-mining-tutorial/features.png "Toolbar features")
 
-- **New Recording**: Create a new recording.
+- **New recording**: Create a new recording.
 
 - **Analytics**: See the process map and insights.
 
@@ -159,13 +159,13 @@ This section explains what you can do on the Analytics screen.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Analytics screen.](media/task-mining-tutorial/analytics-layout.png "Analytics screen")
 
-- **Automate activities (preview):** If during the recording process, a user ran an application that has its Power Automate actions (for example Microsoft Outlook or Excel), then after selecting **Automate activities (preview)**, a draft Power Automate process would be opened containing the actions related to the used applications that can be automated. The user would then be able to start building the final process using the proposed draft.
+- **Automate activities (preview)**: If during the recording process, a user ran an application that has its Power Automate actions (for example, Microsoft Outlook or Excel), then after selecting **Automate activities (preview)**, a draft Power Automate process would be opened containing the actions related to the used applications that can be automated. The user would then be able to start building the final process using the proposed draft.
 
-- **Legend:** Displays information about the report to let users better understand what they see.
+- **Legend**: Displays information about the report to let users better understand what they see.
 
-- **Process:** Provides detailed information about the analyzed process. This is where users can find the process map and general information about the process (time analytics per variant and per the recording’s author).
+- **Process**: Provides detailed information about the analyzed process. This is where users can find the process map and general information about the process (time analytics per variant and per the recording’s author).
 
-- **Application (preview):** Provides information about the apps used in recordings. This includes what apps were used by authors, how often were they used, and what the transitions were between them. This report explains which connectors should be used when implementing automation for the process, and where potentially to use Power Automate for desktop as there’s no existing connector.
+- **Application (preview)**: Provides information about the apps used in recordings. This includes what apps were used by authors, how often were they used, and what the transitions were between them. This report explains which connectors should be used when implementing automation for the process, and where potentially to use Power Automate for desktop as there’s no existing connector.
 
 ### Business process step relationships
 
@@ -225,24 +225,24 @@ You can see that people spend a lot of their time entering the information in th
     > [!div class="mx-imgBorder"]
     > ![Screenshot of selecting a blank space.](media/task-mining-tutorial/variant-blank.png "Select a blank space")
   
-1. Look at the top analytics data. The average process time is 1.78 mins out of five recordings.  
+1. Look at the top analytics data. The average process time is 1.78 minutes out of five recordings.  
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of analytics data.](media/task-mining-tutorial/analytics-data.png "Analytics data")
 
 1. Analyze other time-based metrics dashboards:
 
-   - **Activity by average time in sec:** Notice that **Enter invoice details** and **Download invoice** are taking the most time.
+   - **Activity by average time in sec**: Notice that **Enter invoice details** and **Download invoice** are taking the most time.
 
         > [!div class="mx-imgBorder"]
         > ![Screenshot of activity by average time in seconds.](media/task-mining-tutorial/avg-time-sec.png "Activity by average time in seconds")
 
-    - **Recording by average time in min:** Notice that some people (**Preston Morales** and **Shakti Menon**) are taking more time than others.
+    - **Recording by average time in min**: Notice that some people (**Preston Morales** and **Shakti Menon**) are taking more time than others.
 
         > [!div class="mx-imgBorder"]
         > ![Screenshot of recording by average time in minutes.](media/task-mining-tutorial/avg-time-min.png "Recording by average time in minutes")
  
-1. Select **Application (preview)** tab to see details on which applications were used.
+1. Select the **Application (preview)** tab to see details on which applications were used.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Application (preview).](media/task-mining-tutorial/app-preview.png "Application (preview)")
@@ -268,7 +268,7 @@ You can see that people spend a lot of their time entering the information in th
     > [!div class="mx-imgBorder"]
     > ![Screenshot of process map with blue circles.](media/task-mining-tutorial/blue-circles.png "Process map with blue circles")
 
-1. Start creating a flow for automation by selecting **Automate activities (preview)** on the top.
+1. Start creating a flow for automation by selecting **Automate activities (preview)** at the top.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Automate activities (preview).](media/task-mining-tutorial/automate.png "Automate activities (preview)")
