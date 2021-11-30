@@ -144,22 +144,4 @@ If multiple users make changes to the flow simultaneously, Power Automate presen
 
 ![Options to resolve conflicts](./media/multi-step-logic-flow/address-conflits.png)
 
-
-## New expression editor for actions (experimental feature)
-
-Do you struggle with writing expressions in your flow actions? Now, you can make use of the improved expression editor in experimental mode. To use the improved expression editor, [enable the Experimental Features setting](experimental-features.md) and select **fx** on an action.<br>
-
-- The expression editor view is larger to help you manage richer and complex expressions.
-    ![Skittles on an action editor](media/skittleEditor.png)
-
-- Ability to choose dynamic content in the expressions without having to switch tabs.
-    ![Expression editor](media/ExpressionEditor.png)
-
-- Ability to preserve expressions with errors and unblock the view to work in parallel on other parts of flow.
-
-    ![Expression with error](media/ErroredExpression.png)
- 
-> [!NOTE]
-> Some actions may not support the new expression editor.
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]
