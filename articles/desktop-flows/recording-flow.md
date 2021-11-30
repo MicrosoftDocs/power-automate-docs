@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Record flows in Power Automate Desktop
 
-Power Automate Desktop enables you to design flows automatically by replicating the task you wish to automate. 
+Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate. 
 
 ## Record desktop and web flows
 
@@ -26,7 +26,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of the recorder button.](./media/recording-flow/recorder-button.png)
 
-1. Select **Record** in the desktop recorder window and start performing the desired actions in the appropriate application or web page.
+1. Select **Record** in the recorder window and start performing the desired actions in the appropriate application or web page.
 
     ![Screenshot of the Record button.](./media/recording-flow/record-button.png)
 
@@ -34,7 +34,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
-1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate Desktop actions.
+1. When the recording process is completed, select **Finish** to convert the recorded steps to Power Automate for desktop actions.
 
     ![Screenshot of the generated actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
@@ -54,7 +54,7 @@ After selecting the proper browser, the recorder will detect automatically the l
 
 Input Method Editors (IMEs) are software components that enable users to input text in languages that can't be represented easily on a standard QWERTY keyboard. Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
 
-Power Automate Desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
+Power Automate for desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
 
 1. Right-click on the text field and select **Add text with IME** on the displayed menu.
 
@@ -72,10 +72,10 @@ Power Automate Desktop supports the use of IMEs during the flow recording proced
 
 In some cases, the recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API, run on virtual desktop environments, or have other technical limitations that block the recording process.
 
-As an alternative way to record flows, Power Automate Desktop provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
+As an alternative way to record flows, Power Automate for desktop provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
 
 > [!NOTE]
-> The desktop recorder switches automatically to image recording mode when a Citrix or Remote Desktop Protocol (RDP) window is detected.
+> The recorder switches automatically to image recording mode when a Citrix or Remote Desktop Protocol (RDP) window is detected.
 
 To record flows using images:
 
