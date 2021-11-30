@@ -82,7 +82,7 @@ To run the flow starting from a specific action, right-click the action and sele
 
 ![run from here.](\media\run-stop-pause\run-from-here.png)
 
-## Making use of the recorder
+## Record desktop flows
 
 Power Automate for desktop enables you to record actions in real time through the built-in recorder. The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. The recorder can be used to automate desktop and web applications.
 
