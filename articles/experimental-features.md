@@ -13,7 +13,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-## Enable experimental features in Power Automate
+# Enable experimental features in Power Automate
 
 Experimental features provide you early access to functionalities and updates in Power Automate before they are available worldwide.
 
