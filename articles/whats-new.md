@@ -32,6 +32,6 @@ Get familiar with upcoming features and plan your deployments by reading [2021 r
 
 ## Preview and Experimental features
 
-Get early access to functionalities and updates before they are available worldwide through [Preview features](https://powerautomate.microsoft.com/en-us/blog/flow-preview-program/) and [Experimental features](articles/experimental-features.md).
+Get early access to functionalities and updates before they are available worldwide through [Preview features](https://powerautomate.microsoft.com/en-us/blog/flow-preview-program/) and [Experimental features](experimental-features.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
