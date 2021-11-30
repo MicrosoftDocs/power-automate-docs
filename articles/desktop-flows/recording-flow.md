@@ -30,7 +30,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of the Record button.](./media/recording-flow/record-button.png)
 
-    The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately.
+    The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recorder session, the recorder can generate both UI and browser automation actions.
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
@@ -44,11 +44,17 @@ To pause the recording process temporarily, select **Pause**. To add a comment t
 
 ### Launch a web browser
 
-To launch a web browser instance while recording web flows, select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
+To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario. 
 
-After selecting the proper browser, the recorder will detect automatically the loaded webpage in which the recording takes place. 
+The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
+
+After selecting the proper browser, the recorder will detect the loaded webpage automatically and configure the launching browsing step accordingly. 
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
+
+An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
+
+The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it. 
 
 ### Add text using Input Method Editors (IMEs)
 
