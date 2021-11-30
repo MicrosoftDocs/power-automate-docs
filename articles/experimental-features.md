@@ -26,7 +26,7 @@ To enable experimental features in Power Automate:
 
 1. Select your environment from the top-right corner.
 
-1. Select **Settings** (gear icon) > View all Power Automate settings.
+1. Select **Settings** (gear icon) > **View all Power Automate settings**.
 
     ![Power Automate Settings](media/pauto-settings.png)
 
