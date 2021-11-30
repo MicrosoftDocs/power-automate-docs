@@ -90,7 +90,7 @@ To record a flow, select **Recorder** in the toolbar of the flow designer. When 
 
 Select the bin icon to remove individual actions, or select **Reset** to delete all the actions recorded so far. When the recording is completed, select **Finish** to convert the recorded steps to Power Automate Desktop actions.
 
-![Screenshot of the recorder dialog.](\media\making-use-recorders\web-recorder.png)
+![Screenshot of the recorder dialog.](\media\making-use-recorders\recorder.png)
 
 > [!NOTE]
 > You can find more information regarding the built-in recorder in [Record flows in Power Automate Desktop](recording-flow.md).
