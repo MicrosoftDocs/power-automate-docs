@@ -27,6 +27,8 @@ search.audienceType:
 
 Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
 
+This video gives an overview of cloud flows.
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mo]
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |

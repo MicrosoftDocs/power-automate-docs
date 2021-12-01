@@ -26,6 +26,8 @@ search.audienceType:
 
 In this walkthrough, you'll learn about some common data operations in Power Automate&mdash;such as compose, join, select, filter arrays, create tables, and parse JSON&mdash;that are available to manipulate data when you create flows.
 
+Here's a quick video about data operations.
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdo]
 
 ## Prerequisites

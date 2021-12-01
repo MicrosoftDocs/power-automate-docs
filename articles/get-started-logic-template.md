@@ -26,6 +26,8 @@ search.audienceType:
 
 A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
+The following video gives insights into using templates to create your flows.
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQv]
 
 

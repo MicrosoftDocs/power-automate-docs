@@ -26,6 +26,9 @@ search.audienceType:
 
 Power Automate is deeply integrated with SharePoint. You can start with any of the more than [100 SharePoint templates](https://flow.microsoft.com/templates/), or create your own flow that integrates with SharePoint from scratch.
 
+
+Learn more about how to use Power Automate with SharePoint in the following video.
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7D9]
 
 ## Top SharePoint workflow scenarios

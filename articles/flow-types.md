@@ -28,6 +28,8 @@ Power Automate is a service that you can use to automate repetitive tasks to bri
 
 You can create [cloud flows](#cloud-flows), [desktop flows](#desktop-flows), or [business process flows](#business-process-flows).
 
+Check out this video about the different types of flows.
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUwZ]
 
 ## Cloud flows

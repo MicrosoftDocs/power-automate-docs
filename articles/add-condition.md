@@ -27,6 +27,7 @@ search.audienceType:
 
 Use a **Condition** to specify that a cloud flow performs one or more tasks only if a condition is true or false. For example, you can use a **Condition** that indicates that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
+Check out the following video tutorial to learn more about conditions.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWKUx0]
 ## Prerequisites
