@@ -142,7 +142,7 @@ In the flow designer, the sensitivity works as a mask that can be set on and off
 > [!NOTE]
 > - The value of a sensitive variable is visible when the variable is sent to an application outside Power Automate for desktop or displayed through the **Display message**  action. 
 > - Sensitivity isn't inheritable in variables. This means that if a sensitive variable or expression is added or assigned to another variable, the latter won't be sensitive by default, unless explicitly marked otherwise by the user.
-> - Marking a variable as sensitive hides its values from the summary of the **Set variable** action, if the variable contains a hardcoded value. 
+> - Marking a variable as sensitive hides its values from the summary of the **Set variable** action.
 > - The input details of the **Set variable** action aren't visible in the desktop flow logs when the contained variables have been marked as sensitive.
 
 
