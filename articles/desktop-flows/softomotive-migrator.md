@@ -18,10 +18,13 @@ search.audienceType:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 <!-- ProcessRobot users are now able to export .prp files into folders and --> 
+> [!IMPORTANT]
+> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](https://aka.ms/Softomotive-Instructions). You may migrate your flows to Power Automate.
 
-Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate Desktop.
 
-This migration utility redefines automations to their equivalent Power Automate Desktop action definitions where such parity exists. 
+Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate.
+
+This migration utility redefines automations to their equivalent Power Automate desktop flow action definitions where such parity exists. 
 
 Some actions have been deprecated because they don't fit into the Power Platform ecosystem. However, workarounds should be applicable to overcome what appears to be missing functionality. 
 
@@ -34,15 +37,15 @@ For Process migrator for Softomotive products (preview) to be able to install an
 
 WinAutomation users: 
 
- - The latest publicly available version of Power Automate Desktop installed
+ - The latest publicly available version of Power Automate for desktop installed
  - WinAutomation installed (v6 and later) 
  - Access to a Power Automate environment 
 
 ProcessRobot users: 
 
- - The latest publicly available version of Power Automate Desktop installed 
+ - The latest publicly available version of Power Automate for desktop installed 
  - Access to a Power Automate environment. Follow the get started documentation if you haven't already provisioned an environment 
- - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate Desktop 
+ - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate for desktop 
 
 
 ## Installing Process migrator for Softomotive products (preview) 
@@ -79,7 +82,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     ![Process migrator for Softomotive products (preview) installer step 6.](media/migrator/Login_App_Selection_Screen_PR.png)
 
-### Migrating WinAutomation processes to Power Automate Desktop
+### Migrating WinAutomation processes to Power Automate
 
 1. If you use a WinAutomation version later than 9, you'll be prompted to enter your WinAutomation master key. This key is required for the migration of passwords inside encrypted processes. 
     
@@ -100,7 +103,7 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     ![Process migrator for Softomotive products (preview) installer step 7a.](media/migrator/migrator_7a.png)    
 
-### Migrating PorcessRobot processes to Power Automate Desktop
+### Migrating PorcessRobot processes to Power Automate
 
 1. If you choose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
 
@@ -132,13 +135,13 @@ Now, you can run the Process migrator for Softomotive products (preview).
     ![Process migrator for Softomotive products (preview) installer step 10.](media/migrator/migrator_11b.png)
 
     > [!NOTE]
-    > For the migrated desktop flows to be visible, some time is required. To instantly view the migrated desktop flows in Power Automate Desktop:
-    >- Sign out and sign in again in Power Automate Desktop, or
-    >- Restart the Power Automate Desktop service by exiting the service and re-running Power Automate Desktop.  
+    > For the migrated desktop flows to be visible, some time is required. To instantly view the migrated desktop flows in Power Automate:
+    >- Sign out and sign in again in Power Automate, or
+    >- Restart the Power Automate service by exiting the service and re-running Power Automate.  
 
    ![Process migrator for Softomotive products (preview) installer step 11.](media/migrator/migrator_11.png)
 
-1. Now, you can modify the migrated processes (now desktop flows) through Power Automate Desktop.
+1. Now, you can modify the migrated processes (now desktop flows) through Power Automate.
 
     ![Process migrator for Softomotive products (preview) installer step 12.](media/migrator/migrator_12.png)
 
@@ -157,16 +160,16 @@ Power Automate and ProcessRobot behave differently at their core, so there will 
 
 The Power Platform Admin Center (PPAC) by default contains information related to your RPA environment that admins are accustomed to seeing in Control Desk, including cloud flow activity, desktop flow run activity, desktop flow queue monitoring and more.  PPAC also enables users to create cloud flows that can incorporate schedules, triggers, run desktop flows and reach all other Power Automate components you have access to. 
 
-If you are new to the Power Platform, it is recommended that administrators complete the [Admin In A Day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) workshop to better understand PPAC in addition to the [ALM hands on lab](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tutorial-faq%20%20) since this is the current recommended approach to manage desktop flow versions and application lifecycle management.  Citizen Devs are encouraged to participate in the [RPA In a Day](https://flow.microsoft.com/blog/announcing-microsoft-rpa-in-a-day-version-2/) tutorials that help build a solid foundation across the entire stack. 
+If you are new to the Power Platform, it is recommended that administrators complete the [Admin In A Day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) workshop to better understand PPAC in addition to the [ALM hands on lab](/powerapps/developer/common-data-service/build-tools-tutorial-faq%20%20) since this is the current recommended approach to manage desktop flow versions and application lifecycle management.  Citizen Devs are encouraged to participate in the [RPA In a Day](https://flow.microsoft.com/blog/announcing-microsoft-rpa-in-a-day-version-2/) tutorials that help build a solid foundation across the entire stack. 
 
-Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](https://docs.microsoft.com/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](https://docs.microsoft.com/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users. The CoE starter kit provides a solid foundation to build insightful dashboards that can be modified to your organizations needs throughout their RPA journey.  
+Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users. The CoE starter kit provides a solid foundation to build insightful dashboards that can be modified to your organizations needs throughout their RPA journey.  
 
 ### Workarounds for unsupported ProcessRobot Process Studio features 
 
 
 #### User Libraries: 
 
-User Libraries are not supported in Power Automate Desktop.  If your process contains a call to a user library, it is recommended the associated user library actions are copied into your desktop flow otherwise they will not be migrated using the Process Migrator for Softomotive Products.  The ‘Start Process’ action from ProcessRobot is on the roadmap to be reintroduced as ‘Run Flow’ in a future release.  This will simplify management of former User Libraries since the parent flow can call the child, wait for the child to complete its task, and send back supported variable types to the parent flow. 
+User Libraries are not supported in Power Automate desktop flows.  If your process contains a call to a user library, it is recommended the associated user library actions are copied into your desktop flow otherwise they will not be migrated using the Process Migrator for Softomotive Products.  The ‘Start Process’ action from ProcessRobot is on the roadmap to be reintroduced as ‘Run Flow’ in a future release.  This will simplify management of former User Libraries since the parent flow can call the child, wait for the child to complete its task, and send back supported variable types to the parent flow. 
 
 
 #### Process Robot Actions: 
@@ -189,7 +192,7 @@ Not supported by the migration tool.  Administrators can apply a workaround in t
 
 **Get Global Variable / Set Global Variable** 
 
-Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
+Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
 
 **Enter Locked Region** 
 
@@ -201,11 +204,11 @@ Not supported by the migration tool.
 
 **Add Queue Item in Queue** 
 
-Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
+Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
 
 **Get Queue Item in Queue** 
 
-Not supported in migration. Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified, or deleted](https://docs.microsoft.com/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
+Not supported in migration. Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified, or deleted](/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
 
 **Get Credential** 
 
@@ -213,7 +216,7 @@ Not supported in migration.  Workarounds include [using sensitive text in power 
 
 **Update Credential** 
 
-Not supported in migration.  Workarounds include [updating a secret using an API](https://docs.microsoft.com/rest/api/keyvault/UpdateSecret/UpdateSecret). 
+Not supported in migration.  Workarounds include [updating a secret using an API](/rest/api/keyvault/UpdateSecret/UpdateSecret). 
 
 **Display Notification** 
 

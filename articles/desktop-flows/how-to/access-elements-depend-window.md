@@ -17,7 +17,7 @@ search.audienceType:
 
 # Access elements that depend on how the window appears on the screen	
 
-There are cases where Power Automate Desktop can't detect UI elements if they aren't visible on the computer screen.
+There are cases where Power Automate can't detect UI elements if they aren't visible on the computer screen.
 
 These elements may be located in areas not directly visible on the screen or may not appear on the window at all. An element may be missing because the window's zoom level isn't suitable or the screen resolution is low.
 

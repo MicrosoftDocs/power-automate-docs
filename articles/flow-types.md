@@ -44,7 +44,7 @@ Create a cloud flow when you want your automation to be triggered either automat
 
 ## Desktop flows
     
-Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate Desktop](./desktop-flows/introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium IDE](./desktop-flows/overview.md).
+Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate for desktop](./desktop-flows/introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium IDE](./desktop-flows/overview.md).
 
 
 ## Business process flows

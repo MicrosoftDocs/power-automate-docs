@@ -17,11 +17,11 @@ search.audienceType:
 
 # Set screen resolution on unattended mode
 
-In some scenarios, Power Automate Desktop may run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail.
+In some scenarios, Power Automate may run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail.
 
 To change the resolution in which unattended flows are run:
 
-1. Navigate to **C:\Program Files (x86)\Power Automate Desktop** and open the **UIFlowService.exe.config** file.
+1. Navigate to **C:\Program Files (x86)\Power Automate** and open the **UIFlowService.exe.config** file.
 
 1. Set the value of the **Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionEnabled** key to **true**.
 
@@ -38,4 +38,4 @@ To change the resolution in which unattended flows are run:
     ```
    ![The appropriate keys in the UIFlowService.exe.config file.](media/set-screen-resolution-unattended-mode/ui-flow-service-file.png)
 
-1. Restart Power Automate Desktop.
+1. Restart Power Automate.

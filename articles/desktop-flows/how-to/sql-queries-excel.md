@@ -96,7 +96,7 @@ SELECT * FROM [SHEET$] WHERE [COLUMN NAME] = 'VALUE'
 > [!NOTE] 
 > To apply this SQL query in your flows, replace:
 > - **SHEET** with the name of the spreadsheet you want to access
-> - **COLUMN NAME** with the column that contains the value you want to find
+> - **COLUMN NAME** with the column that contains the value you want to find. The columns in the first row of the Excel worksheet are identified as the table's column names. 
 > - **VALUE** with the value you want to find
 
 ## Delete data from an Excel row
@@ -113,7 +113,7 @@ UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 
 While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
 
-The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real scenario, the number of the columns may be different.
+The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real scenario, the number of the columns may be different. The columns in the first row of the Excel worksheet are identified as the table's column names. 
 
 The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update. In your flow, use the column name and the value based on which combination describes the rows uniquely.
 
@@ -138,4 +138,4 @@ SELECT * FROM [SHEET$] WHERE [COLUMN1] IS NOT NULL OR [COLUMN2] IS NOT NULL
 ```
 
 > [!NOTE]
-> The COLUMN1 and COLUMN2 placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different.
+> The COLUMN1 and COLUMN2 placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different. All the columns in the first row of the Excel worksheet are identified as the table's column names. 

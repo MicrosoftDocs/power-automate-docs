@@ -19,7 +19,7 @@ search.audienceType:
 
 Data validation is a typical requirement in most business tasks and allows the implementation of different behavior based on the available data. 
 
-Power Automate Desktop provides various conditionals that run blocks of actions only if a given condition is met. If the condition is false, the actions are skipped.
+Power Automate provides various conditionals that run blocks of actions only if a given condition is met. If the condition is false, the actions are skipped.
 
 > [!NOTE]
 > You can find more information regarding conditionals in [Use conditionals](../use-conditionals.md).

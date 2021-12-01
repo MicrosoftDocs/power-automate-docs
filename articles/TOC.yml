@@ -8,6 +8,8 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: Experimental features
+    href: experimental-features.md
   - name: What's new
     href: whats-new.md
 - name: Learning catalog
@@ -29,16 +31,38 @@
   - name: Overview    
     href: process-advisor-overview.md
     displayName: Overview of process advisor
-  - name: Work with processes and recordings
-    href: process-advisor-processes.md
-  - name: Analyze processes
-    href: process-advisor-analyze.md
-  - name: Visualize processes
-    href: process-advisor-visualize.md
-  - name: Automation recommendation (preview)
-    href: process-advisor-automation.md 
-  - name: Share processes
-    href: process-advisor-share.md
+  - name: Task mining
+    items:
+    - name: Overview
+      href: task-mining-overview.md
+    - name: Get started with task mining
+      href: task-mining-tutorial.md  
+    - name: Prepare processes and recordings
+      href: process-advisor-processes.md
+    - name: Analyze processes
+      href: process-advisor-analyze.md
+    - name: Visualize processes
+      href: process-advisor-visualize.md
+    - name: Identify automation opportunities
+      href: process-advisor-automation.md 
+    - name: Share processes
+      href: process-advisor-share.md
+  - name: Process mining (preview)
+    items:
+    - name: Overview
+      href: process-mining-overview.md
+    - name: Get started with process mining
+      href: process-mining-tutorial.md
+    - name: Prepare processes and data
+      href: process-mining-processes-and-data.md
+    - name: Transform and map data
+      href: process-mining-transform.md      
+    - name: Troubleshoot issues
+      href: process-mining-troubleshoot.md
+    - name: Visualize and gain insights from processes
+      href: process-mining-visualize.md
+    - name: Edit and refresh processes
+      href: process-mining-data-source.md
   - name: Administration and security
     items: 
     - name: Security and privacy
@@ -264,6 +288,8 @@
     #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
+    - name: Trigger flows with actions
+      href: ./dataverse/action-trigger.md
     - name: Use a flow to add a row
       href: ./dataverse/create.md
     - name: Use a flow to update a row
@@ -280,7 +306,7 @@
       href: ./dataverse/bound-unbound.md
     - name: Use relationships to update rows
       href: ./dataverse/relationships.md
-    - name: Use relevance search to retrieve rows
+    - name: Use Dataverse search to retrieve rows
       href: ./dataverse/search.md     
     # - name: Relate rows or unrelate rows
     #   href: ./dataverse/relate-unrelate-rows.md
@@ -328,23 +354,25 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate Desktop
+- name: Power Automate for desktop
   items: 
-  - name: Introduction to Power Automate Desktop
+  - name: Introduction to Power Automate for desktop
     href: ./desktop-flows/introduction.md
-  - name: Setup Power Automate Desktop
+  - name: Getting started with Power Automate in Windows 11
+    href: ./desktop-flows/getting-started-windows-11.md
+  - name: Setup Power Automate
     items:
-    - name: Power Automate Desktop prerequisites & limitations 
+    - name: Power Automate prerequisites & limitations 
       href: ./desktop-flows/setup.md
-    - name: Install Power Automate Desktop
+    - name: Install Power Automate
       href: ./desktop-flows/install.md
-    - name: Governance in Power Automate Desktop
+    - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate Desktop
+    - name: Troubleshooting Power Automate
       href: ./desktop-flows/troubleshoot.md
     - name: Data Collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Power Automate Desktop architecture
+  - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
@@ -360,7 +388,7 @@
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
-  - name: Manage machines and machine groups (preview)
+  - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
@@ -368,6 +396,14 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Silent registration for machines
       href: ./desktop-flows/machines-silent-registration.md
+    - name: Scale with AVD starter kit
+      items:
+      - name: Overview
+        href: ./desktop-flows/avd-overview.md 
+      - name: Set up the AVD integration starter kit
+        href: ./desktop-flows/avd-setup.md
+      - name: Use the starter kit
+        href: ./desktop-flows/avd-use-starter-kit.md 
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -376,7 +412,9 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Power Automate Desktop console
+  - name: Data loss prevention (DLP) (preview)
+    href: ./desktop-flows/data-loss-prevention.md
+  - name: Power Automate console
     href: ./desktop-flows/console.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
@@ -401,7 +439,7 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Record flows in Power Automate Desktop
+    - name: Record flows in Power Automate
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
@@ -413,6 +451,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    ## - name: Automate on virtual desktops
+    ##  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
@@ -466,9 +506,13 @@
       - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
-      - name: Access elements that depend on how the window appears on the screen	  
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
+      - name: Automate with mouse, keyboard, and OCR actions
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
+      - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
+      - name: Automate Java applications
+        href: ./desktop-flows/how-to/java.md   
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
@@ -520,10 +564,16 @@
       href: ./desktop-flows/actions-reference/conditionals.md
     - name: Loops
       href: ./desktop-flows/actions-reference/loops.md
-    - name: Wait
-      href: ./desktop-flows/actions-reference/wait.md
+    - name: Flow control
+      href: ./desktop-flows/actions-reference/flowcontrol.md
+    - name: Run flow
+      href: ./desktop-flows/actions-reference/runflow.md
     - name: System
       href: ./desktop-flows/actions-reference/system.md
+    - name: Workstation
+      href: ./desktop-flows/actions-reference/workstation.md
+    - name: Scripting
+      href: ./desktop-flows/actions-reference/scripting.md
     - name: File
       href: ./desktop-flows/actions-reference/file.md
     - name: Folder
@@ -532,9 +582,9 @@
       href: ./desktop-flows/actions-reference/compression.md
     - name: UI automation
       href: ./desktop-flows/actions-reference/uiautomation.md
-    - name: Web
+    - name: HTTP
       href: ./desktop-flows/actions-reference/web.md
-    - name: Web automation
+    - name: Browser automation
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
@@ -554,7 +604,7 @@
       href: ./desktop-flows/actions-reference/clipboard.md
     - name: Text
       href: ./desktop-flows/actions-reference/text.md
-    - name: Datetime
+    - name: Date time
       href: ./desktop-flows/actions-reference/datetime.md
     - name: PDF
       href: ./desktop-flows/actions-reference/pdf.md
@@ -566,27 +616,29 @@
       href: ./desktop-flows/actions-reference/ocr.md
     - name: Cryptography
       href: ./desktop-flows/actions-reference/cryptography.md
-    - name: Services
+    - name: Windows services
       href: ./desktop-flows/actions-reference/services.md
     - name: XML
       href: ./desktop-flows/actions-reference/xml.md
+    - name: FTP
+      href: ./desktop-flows/actions-reference/ftp.md 
+    - name: CyberArk
+      href: ./desktop-flows/actions-reference/cyberark.md
     - name: Active Directory
       href: ./desktop-flows/actions-reference/activedirectory.md
     - name: AWS
       href: ./desktop-flows/actions-reference/aws.md
     - name: Azure
       href: ./desktop-flows/actions-reference/azure.md
-    - name: Cognitive
-      href: ./desktop-flows/actions-reference/cognitive.md
-    - name: CyberArk
-      href: ./desktop-flows/actions-reference/cyberark.md
-    - name: Flow control
-      href: ./desktop-flows/actions-reference/flowcontrol.md
-    - name: FTP
-      href: ./desktop-flows/actions-reference/ftp.md 
+    - name: Google cognitive
+      href: ./desktop-flows/actions-reference/googlecognitive.md
+    - name: IBM cognitive
+      href: ./desktop-flows/actions-reference/ibmcognitive.md
+    - name: Microsoft cognitive
+      href: ./desktop-flows/actions-reference/microsoftcognitive.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
-  - name: Use RPA with Dynamics 365 (preview)
+  - name: Use RPA with Dynamics 365
     items:
     - name: Overview of RPA templates and Dynamics 365
       href: ./desktop-flows/dynamics365-rpa-overview.md
@@ -604,7 +656,7 @@
     href: ./desktop-flows/create-desktop.md
   - name: Edit desktop flows with Windows recorder (V1)
     href: ./desktop-flows/edit-desktop.md
-  - name: Migrate from Windows recorder (V1) to Power Automate Desktop
+  - name: Migrate from Windows recorder (V1) to Power Automate
     href: ./desktop-flows/migrate.md
   - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
     href: ./desktop-flows/inputs-outputs-desktop.md

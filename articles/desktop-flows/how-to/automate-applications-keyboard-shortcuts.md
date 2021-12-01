@@ -17,7 +17,7 @@ search.audienceType:
 
 # Automate applications using keyboard shortcuts
 
-Many desktop application provides keyboard shortcuts that make multi-step tasks easy and fast to perform. Power Automate Desktop allows you to apply these shortcuts to create shorter and less complicated flows.
+Many desktop application provides keyboard shortcuts that make multi-step tasks easy and fast to perform. Power Automate allows you to apply these shortcuts to create shorter and less complicated flows.
 
 > [!IMPORTANT]
 > Before sending keystrokes to an open application, use the **Focus window** action to activate the respective window. 

@@ -24,6 +24,11 @@ search.audienceType:
 ---
 # Use inputs and outputs in Selenium IDE flows
 
+>[!IMPORTANT]
+>This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+
 You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 
 ## Define inputs for a Web UI flow

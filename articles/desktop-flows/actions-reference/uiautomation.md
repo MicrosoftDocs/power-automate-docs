@@ -43,16 +43,22 @@ You can find more information on how to use the UI automation actions [here](../
 |[Move window](#movewindowbase)|
 |[Resize window](#resizewindowbase)|
 |[Close window](#closewindowbase)|
+|[If window contains](#ifwindowcontainsaction)|
+|[Wait for window content](#waitforwindowcontentaction)|
+|[If image](#ifimageaction)|
 |[Use desktop](#usedesktop)|
 |[Select tab in window](#selecttab)|
+|[Wait for image](#waitforimageaction)|
 |[Click UI element in window](#click)|
 |[Select menu option in window](#selectmenuoption)|
 |[Drag and drop UI element in window](#draganddropelement)|
 |[Expand/collapse tree node in window](#expandcollapsetreenode)|
+|[If window](#ifwindowaction)|
+|[Wait for window](#waitforwindowaction)|
 
 ## Getting started with UI automation
 
-Power Automate Desktop provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
+Power Automate provides various UI automation actions to enable users to interact with Windows and desktop applications. Some UI automation actions require you to set UI elements in their properties to indicate the element you want to handle. 
 
 To add a new UI element, select **Add UI element** through the deployed UI automation action or the **UI elements** tab of the flow designer.
 
@@ -495,6 +501,79 @@ Closes a specific window
 |Can't close window|Indicates a problem closing the specified window|
 |Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
 
+
+### <a name="ifwindowcontainsaction"></a> If window contains
+Marks the beginning of a conditional block of actions depending on whether a specific piece of text or UI element exists in a window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Check if window|N/A|Contains UI element, Doesn't contain UI element, Contains text, Doesn't contain text|Contains UI element|Check whether a specific text or UI element exists in a window|
+|Check UI element state|N/A|Boolean value|False|Check whether a specific UI element is enabled or disabled|
+|Text|No|Text value||The text to check for|
+|UI element|No|UIControl||The UI element to check for|
+|Window|No|UIControl||The window to check if the text exists on|
+|State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifwindowcontainsaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+- 
+### <a name="waitforwindowcontentaction"></a> Wait for window content
+Suspends the execution of the automation until a specific piece of text or UI element appears or disappears from a Window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait until window|N/A|Contains UI element, Doesn't contain UI element, Contains text, Doesn't contain text|Contains UI element|Whether to wait for a specific text or UI element to appear in a window|
+|Check UI element state|N/A|Boolean value|False|Check whether a specific UI element is enabled or disabled|
+|Text|No|Text value||The text to check for|
+|UI element|No|UIControl||The UI element to check for|
+|Window|No|UIControl||The window to check if the text exists on|
+|State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforwindowcontentaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for window content failed|Indicates that the wait operation failed|
+### <a name="ifimageaction"></a> If image
+This action marks the beginning of a conditional block of actions depending on whether a selected image is found on the screen or not
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
+|Image to check|No|List of Image||The image/s that the action will check if it/they exist|
+|Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
+|Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
+|Find all images in the list|N/A|Boolean value|False|Check whether all images on the list exist or don't exist|
+|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|Numeric value|10|Specify how much the image(s) searched for can differ from the originally chosen image|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifimageaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
+|Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
+
+
+
+
+
 ### <a name="usedesktop"></a> Use desktop
 Performs desktop and taskbar related operations
 
@@ -530,6 +609,41 @@ Selects a tab from a group of tabs
 |Exception|Description|
 |-----|-----|
 |Selecting tab failed|Indicates a problem selecting the specified tab|
+
+
+### <a name="waitforimageaction"></a> Wait for image
+This action waits until a specific image appears on the screen or on the foreground window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for image to|N/A|Appear, Disappear|Appear|Check whether to wait for the image(s) to appear or disappear|
+|Image to wait for|No|List of Image||The image/s that the action will check if it/they exist|
+|Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
+|Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
+|Wait for all images|N/A|Boolean value|False|Whether to wait for all the images on the list to appear(disappear), or just one of them|
+|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|Numeric value|10|Specify how much the image(s) searched for can differ from the originally chosen image|
+
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|X|Numeric value|The X coordinate of the point where the text was found on the screen. If the text has been search in the foreground window this is relative to the top left corner of the window.|
+|Y|Numeric value|The Y coordinate of the point where the text was found on the screen. If the text has been search in the foreground window this is relative to the top left corner of the window.|
+
+
+##### <a name="waitforimageaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for image failed|Indicates that the wait operation failed|
+|Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
+|Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
+
+
 
 ### <a name="click"></a> Click UI element in window
 Clicks on any UI element of a window
@@ -608,7 +722,7 @@ Expands or collapses a node of a tree view residing in a window
 |Operation|N/A|Expand, Collapse|Expand|Specify whether to expand or collapse the tree node|
 
 > [!NOTE]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
 ##### Variables Produced
@@ -619,6 +733,52 @@ Expands or collapses a node of a tree view residing in a window
 |-----|-----|
 |Failed to set tree node to the specified state|Indicates a problem setting the tree node to the specified state|
 
+
+### <a name="ifwindowaction"></a> If window
+This action marks the beginning of a conditional block of actions depending on whether a window is open or not or whether a window is the focused (foreground) window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Get window|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the Window using a UI element or a combination of window title/class|
+|Window title|Yes|Text value||The window title. Wildcards can be used, like '?' or '*'.|
+|Window|No|UIControl||The window UI element|
+|Window instance|No|Numeric value||The instance or handle of the window to check|
+|Window class|Yes|Text value||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to be used.|
+|Check if window|N/A|Is open, Isn't open, Is focused, Isn't focused|Is open|The state of the window to be checked|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifwindowaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+
+### <a name="waitforwindowaction"></a> Wait for window
+Suspends the execution or the process until a specific window opens, closes, get or loses the focus
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Find window|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element  or a combination of window title/class|
+|Window title|Yes|Text value||The window title. Wildcards can be used, like '?' or '*'.|
+|Window|No|UIControl||The window UI element|
+|Window instance|No|Numeric value||The instance or handle of the window to check|
+|Window class|Yes|Text value||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to be used|
+|Wait for window to|N/A|Open, Close, Become focused, Lose focus|Open|Whether to wait for a specific window to open, close, become focused (i.e become the foreground window), or lose focus (i.e stop being the foreground window).|
+|Focus window after it opens|N/A|Boolean value|False|Bring the window to the front after it opens, so later actions are directed at this window|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforwindowaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Can't focus window|Indicates a problem focusing the specified window|
+|Wait for window failed|Indicates that the wait operation failed|
+|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 
 

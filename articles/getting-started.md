@@ -30,8 +30,8 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * Automate business processes
 * Send automatic reminders for past due tasks
 * Move business data between systems on a schedule
-* Connect to almost 300 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel.
+* Connect to more than 500 data sources or any publicly available API
+* You can even automate tasks on your local computer like computing data in Excel. 
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 

@@ -24,7 +24,7 @@ search.audienceType:
 ---
 # Share a cloud flow
 
-Share a cloud flow with others in your organization so they can also benefit from automations you've created. There are three primary ways to share a cloud flow in Power Automate:
+Share a cloud flow with others in your organization so they can also benefit from automation you've created. There are three primary ways to share a cloud flow in Power Automate:
 
 - Add an owner to a cloud flow.
 - Share a cloud flow with run-only privileges.
@@ -32,7 +32,7 @@ Share a cloud flow with others in your organization so they can also benefit fro
 
 ## Prerequisites
 
-- You must have a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) to share a cloud flow.
+- You must have either a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (grandfathered), Power Apps Plan 2 (grandfathered), Windows licenses) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
@@ -93,7 +93,8 @@ You can add SharePoint lists as co-owners of a cloud flow so that everyone who h
 > Use a list when the flow is connected to SharePoint, and use a group in all other cases.
 
 >[!IMPORTANT]
->SharePoint users must have **Edit** permission or be a member of the **Members** or **Owners** group to run flows in SharePoint.
+> - SharePoint users must have **Edit** permission or be a member of the **Members** or **Owners** group to run flows in SharePoint.
+> - Adding a list as a co-owner is not available in GCC High and DoD tenants.
 
 ## Remove an owner
 

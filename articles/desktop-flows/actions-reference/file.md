@@ -22,6 +22,8 @@ Manage and manipulate files
 
 |<!-- --> |
 |-----|
+|[If file exists](#iffileaction)|
+|[Wait for file](#waitforfileaction)|
 |[Copy file(s)](#copy)|
 |[Move file(s)](#move)|
 |[Delete file(s)](#delete)|
@@ -35,7 +37,7 @@ Manage and manipulate files
 
 ## Getting started with file actions
 
-Power Automate Desktop provides the files actions to automate managing files and manipulate their properties.
+Power Automate provides the files actions to automate managing files and manipulate their properties.
 
 To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
 
@@ -55,6 +57,41 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 
 
 ## File actions
+
+
+### <a name="iffileaction"></a> If file exists
+Marks the beginning of a conditional block of actions depending on whether a file exists or not
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If file|N/A|Exists, Doesn't exist|Exists|The state of the file to check|
+|File path|No|File||The full path to look for the file|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="iffileaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+
+### <a name="waitforfileaction"></a> Wait for file
+Suspend the execution of the automation until a file is created or deleted
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for file to be|N/A|Created, Deleted|Created|Specifies whether to pause the flow on the creation or deletion of a certain file|
+|File path|No|File||The full path to look for the file|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforfileaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
 
 ### <a name="copy"></a> Copy file(s)
 Copy one or more files into a destination folder

@@ -62,8 +62,6 @@ The SharePoint Online list you create must include the following columns:
 
 | Title                   | Single line of text    |
 |-------------------------|------------------------|
-| Modified                | Date and time          |
-| Created                 | Date and time          |
 | Vacation start date     | Date and time          |
 | Vacation end date       | Date and time          |
 | Comments                | Single line Of text    |

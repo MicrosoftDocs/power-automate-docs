@@ -17,7 +17,7 @@ search.audienceType:
 
 # Populate text fields and click on links using JavaScript
 
-Some web applications may have design constraints that don't allow web automation actions to populate text fields or click on links and buttons.
+Some web applications may have design constraints that don't allow browser automation actions to populate text fields or click on links and buttons.
 
 An alternative approach to automate these web applications is the use of the **Run JavaScript function on web page** action, which allows you to run JavaScript code on web pages.
 

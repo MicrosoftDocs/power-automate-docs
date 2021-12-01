@@ -30,13 +30,13 @@ Control the automation flow
 |[Go to](#goto)|
 |[Label](#label)|
 |[On block error](#block)|
-|[Run desktop flow](#runflow)|
 |[Run subflow](#callfunction)|
 |[Stop flow](#exit)|
+|[Wait](#wait)|
 
 ## Getting started with flow control
 
-Flow control refers to controlling the order in which actions and subflows run. Power Automate Desktop enables flow control through the flow control actions.
+Flow control refers to controlling the order in which actions and subflows run. Power Automate enables flow control through the flow control actions.
 
 **Labels** are used to create points of reference for the **Go to** action to direct the flow to. In the figure below, the flow is directed to a label earlier in the flow to repeat a series of actions.
 
@@ -144,29 +144,6 @@ Marks the beginning of a block to handle actions errors
 ##### <a name="block_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
-### <a name="runflow"></a> Run desktop flow
-Runs a desktop flow which can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
-
-##### Input Parameters
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Destop flow|No|Desktop flow||Select the desktop flow to run from within this flow|
-
-
-##### Variables Produced
-- This action produces the output variables of the selected flow
-
-##### <a name="runflow_onerror"></a> Exceptions
-|Exception|Description|
-|-----|-----|
-|Run desktop flow failed|Indicates a problem while running the desktop flow|
-
->[!NOTE]
-> * A flow's dependencies can't be more than 30 other flows.
-> * Two flows can't directly or indirectly call one-another as this causes a recursion.
-> * In org tenants, the flows must be under the same environment.
-
-
 ### <a name="callfunction"></a> Run subflow
 Run a subflow specifying any required arguments
 
@@ -196,6 +173,19 @@ Terminates the flow
 ##### <a name="exit_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
+### <a name="wait"></a> Wait
+Suspends the execution of the flow for a specified amount of seconds
 
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Duration|No|Numeric value||Time duration in seconds|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="wait_onerror"></a> Exceptions
+- This action doesn't include any exceptions
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

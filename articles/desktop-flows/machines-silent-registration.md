@@ -16,14 +16,12 @@ search.audienceType:
 ---
 # Silent registration for machines 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-This article describes how to use our mass deployment tool that allows you to easily install Power Automate Desktop on multiple machines.
+This article describes how to use our mass deployment tool that allows you to easily install Power Automate on multiple machines.
 You can both register your machines to Power Automate and add them to machine groups. 
 
 
 ## Pre-requisites
-To silently register your machine(s), Power Automate Desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate Desktop silently](/power-automate/desktop-flows/install#install-power-automate-desktop-silently)
+To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](/power-automate/desktop-flows/install#install-power-automate-desktop-silently)
 
 To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
 
@@ -52,7 +50,7 @@ To silently register your machine and join a group, we recommend you to use a se
 
     c.	Select **Flow.Read.All**
 
-1.	[Create an application user](https://docs.microsoft.com/power-platform/admin/manage-application-users#create-an-application-user).
+1.	[Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
 >[!NOTE]
 >Regarding their security roles, the user need to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
@@ -67,10 +65,10 @@ To silently register your machine and join a group, we recommend you to use a se
 ## How to use the Machine registration App?
 1.	Open **Start** menu
 1.	Search for command prompt (or PowerShell) and then run it as the administrator
-1.	Change the directory to the Power Automate Desktop install folder (by default: C:\Program Files (x86)\Power Automate Desktop)
+1.	Change the directory to the Power Automate install folder (by default: C:\Program Files (x86)\Power Automate)
 
     ```
-    cd C:\Program Files (x86)\Power Automate Desktop>
+    cd C:\Program Files (x86)\Power Automate
     ```
 1.	You can use the help menu to have an overview of what you can do with the silent app.
     ```
@@ -135,7 +133,7 @@ You have two options to provide a secure input:
   
     b. redirect file: 
   
-      i. create a txt file that contains your password and save it in Power Automate Desktop folder (you will need to have admin privileges
+      i. create a txt file that contains your password and save it in Power Automate folder (you will need to have admin privileges
 
       ii. use the following:
   
