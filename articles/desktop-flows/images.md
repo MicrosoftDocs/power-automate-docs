@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate using images
 
-To capture a new image in Power Automate Desktop, navigate to the **Images** tab on the right pane of the flow designer.
+To capture a new image in Power Automate, navigate to the **Images** tab on the right pane of the flow designer.
 
 ![The Images tab in the flow designer.](\media\images\images-pane.png)
 
@@ -24,7 +24,7 @@ Select **Capture image**, and click and drag the cursor on the area you want to 
 
 ![The Capture image option in the Images tab.](\media\images\capture-image.png)
 
-Alternatively, select the arrow on the **Capture image** button to capture images on a timer. Select the number of seconds and press **Capture image with delay**.
+Alternatively, select the arrow on the **Capture image** button to capture images on a timer. Then, choose one of the suggested time options or **Capture image with custom delay** to set a custom delay time.
 
 ![The Capture image with delay option in the images tab.](\media\images\delay-capture.png)
 

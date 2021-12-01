@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/20/2017
+ms.date: 10/28/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -109,10 +109,57 @@ Power Automate displays the list of other makers who are editing a flow simultan
 
 ![List of editors](./media/multi-step-logic-flow/editors-list.png)
 
+## Add comments to actions and triggers
+
+Makers can have threaded comments with colleagues as they build their flows. They can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
+
+>[!IMPORTANT]
+>Comments are supported for environments that have a Dataverse database.
+
+Follow these steps to add a comment to any action or trigger in your flow.
+
+1. Select the ellipsis on the trigger or action.
+1. Select **New Comment**.
+
+   ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
+
+   The comments pane opens.
+
+1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
+
+   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-pane.png)
+
+ The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
+
+![Image that displays the count of comments on an action](./media/multi-step-logic-flow/comments-count-icon.png)
+
+### Limitations
+
+- Makers must save the flow at least once before a comment could be added.
+- The comment thread count icons don't appear for control actions such as condition, switch, and scope.
+
 ## Address conflicts from multiple edits
 
 If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keeps their changes.
 
 ![Options to resolve conflicts](./media/multi-step-logic-flow/address-conflits.png)
+
+
+## New expression editor for actions (experimental feature)
+
+Do you struggle with writing expressions in your flow actions? Now, you can make use of the improved expression editor in experimental mode. To use the improved expression editor, [enable the Experimental Features setting](experimental-features.md) and select **fx** on an action.<br>
+
+- The expression editor view is larger to help you manage richer and complex expressions.
+    ![Skittles on an action editor](media/skittleEditor.png)
+
+- Ability to choose dynamic content in the expressions without having to switch tabs.
+    ![Expression editor](media/ExpressionEditor.png)
+
+- Ability to preserve expressions with errors and unblock the view to work in parallel on other parts of flow.
+
+    ![Expression with error](media/ErroredExpression.png)
+ 
+> [!NOTE]
+> Some actions may not support the new expression editor.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

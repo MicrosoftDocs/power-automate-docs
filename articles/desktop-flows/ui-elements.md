@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate using UI elements
 
-Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, Power Automate Desktop utilizes **UI elements** to identify windows and their elements.
+Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, Power Automate utilizes **UI elements** to identify windows and their elements.
 
 ## UI elements
 
@@ -51,7 +51,7 @@ To find where the element is being used in the flow, right-click the element and
 
 Captured elements are divided into two main categories, based on the type of application they were captured from: **UI controls** and **Web controls**.
 
-Any captured elements that are part of a web page displayed in a compatible web browser (Internet Explorer, Microsoft Edge, Firefox, Google Chrome) are automatically saved as web controls, and may be used as input to **Web automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
+Any captured elements that are part of a web page displayed in a compatible web browser (Internet Explorer, Microsoft Edge, Firefox, Google Chrome) are automatically saved as web controls, and may be used as input to **Browser automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
 
 ## Element properties
 

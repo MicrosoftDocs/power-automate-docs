@@ -17,7 +17,7 @@ search.audienceType:
 
 # Delete a row/column from a datatable
 
-Although Power Automate Desktop doesn't provide a direct way to delete rows and columns from datatables, this functionality is feasible with the following workaround:
+Although Power Automate doesn't provide a direct way to delete rows and columns from datatables, this functionality is feasible with the following workaround:
 
 1. Use the **Launch Excel** action to launch a new blank Excel worksheet.
 

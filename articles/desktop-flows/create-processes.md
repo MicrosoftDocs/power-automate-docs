@@ -25,8 +25,10 @@ search.audienceType:
 
 # Use Softomotive's WinAutomation with desktop flows
 
->[!IMPORTANT]
->See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.
+> [!IMPORTANT]
+> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](https://aka.ms/Softomotive-Instructions). You may [migrate](softomotive-migrator.md) your flows to Power Automate. See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.  
+
+You may migrate your flows to Power Automate. See the Power Automate Desktop documentation to learn about the evolution of WinAutomation.
 
 Here are some tips before you start using WinAutomation with desktop flows.
 
@@ -46,11 +48,11 @@ To run WinAutomation as part of Power Automate, you will need to:
 2.  Install the [desktop flows](./setup.md) app, and then install and configure the on-premises data gateway.
 
 >[!IMPORTANT]
->You must have the latest version of WinAutomation and Power Automate Desktop to record, test, or run UI automation.
+>You must have the latest version of WinAutomation and Power Automate to record, test, or run UI automation.
 
 ## Licensing
 
-You need to have a Power Automate *Per user plan with attended RPA* to use Power Automate Desktop and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
+You need to have a Power Automate *Per user plan with attended RPA* to use Power Automate and WinAutomation. If you don't have a paid plan, you can start a trial by going to Power Automate.
 
  
 ## Install WinAutomation
@@ -85,7 +87,7 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
 
 1.  Once signed in, you will see the WinAutomation console with a few example
     Processes. To get started, go to **Options** \> **Help** \> **Getting Started**, and then go through a few
-    examples of creating simple Processes or check out information from [WinAutomation docs: Building a Simple Process](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/building-a-simple-process/how-to-create-a-simple-process). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
+    examples of creating simple Processes or check out information from [WinAutomation docs: Building a Simple Process](/previous-versions/troubleshoot/winautomation/process-development-tips/building-a-simple-process/how-to-create-a-simple-process). You can learn more from [WinAutomation getting started tutorials](https://www.winautomation.com/support/tutorials/).
 
 You can now create your own WinAutomation Processes and test them locally.
 
@@ -134,11 +136,11 @@ You can now create your own WinAutomation Processes and test them locally.
 1.  You can save and then run the flow and see it launch the WinAutomation Process. The Windows recorder (V1) flow will return after the WinAutomation Process run completes. You can view the run results from Power Automate. If the Process fails, you can see the error messages as well.
 
     >[!TIP]
-    >If you get exceptions, you may not have the latest Power Automate Desktop installed. Install the [latest Power Automate Desktop](./upgrade.md).
+    >If you get exceptions, you may not have the latest Power Automate installed. Install the [latest Power Automate](./upgrade.md).
 
 1.  If you want WinAutomation to capture a screenshot when a Process fails, do the following:
 
-1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-process-properties).
+1.  From the WinAutomation Console, right click on a Process, select "Edit Process's Properties". Go to the "Error Handling" tab and choose "Override Default Options". Click "Add screenshot to logs" and save. Now if a Process fails, you can view the screenshot captured at runtime from the Windows recorder (V1) flow run details. For more information on Process properties, see [WinAutomation docs: Process Properties](/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-process-properties).
 
     ![Process properties screen.](../media/create-processes/process-properties.png)
 
@@ -188,28 +190,28 @@ To reset the license information stored by WinAutomation, you can delete the fol
 Follow the links in this section to troubleshooting issues you may experience.
 
 WinAutomation
-- [Installation errors](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/winautomation-installation-errors/how-to-uninstall-winautomation)
-- [Console](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/winautomation-console/backup-winautomation-processes-database)
-- [Process errors](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/winautomation-process-errors/additional-autologin-settings)
-- [Web automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/web-automation/browser-unavailable)
-- [UI automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/ui-automation/cannot-add-control-of-java-elements)
-- [Excel automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/excel-automation/excel-launch-error-800700c1-is-not-valid-win32-application)
-- [Image Processing](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/image-processing/capturefast-failed-to-upload-document)
-- [Email automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/email-automation/connect-to-exchange-server-using-exchange-server-address)
-- [Databases](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/databases/ace-oledb-12-0-provider-not-registered-on-local-machine)
+- [Installation errors](/previous-versions/troubleshoot/winautomation/support-tips/winautomation-installation-errors/how-to-uninstall-winautomation)
+- [Console](/previous-versions/troubleshoot/winautomation/support-tips/winautomation-console/backup-winautomation-processes-database)
+- [Process errors](/previous-versions/troubleshoot/winautomation/support-tips/winautomation-process-errors/additional-autologin-settings)
+- [Web automation](/previous-versions/troubleshoot/winautomation/support-tips/web-automation/browser-unavailable)
+- [UI automation](/previous-versions/troubleshoot/winautomation/support-tips/ui-automation/cannot-add-control-of-java-elements)
+- [Excel automation](/previous-versions/troubleshoot/winautomation/support-tips/excel-automation/excel-launch-error-800700c1-is-not-valid-win32-application)
+- [Image Processing](/previous-versions/troubleshoot/winautomation/support-tips/image-processing/capturefast-failed-to-upload-document)
+- [Email automation](/previous-versions/troubleshoot/winautomation/support-tips/email-automation/connect-to-exchange-server-using-exchange-server-address)
+- [Databases](/previous-versions/troubleshoot/winautomation/support-tips/databases/ace-oledb-12-0-provider-not-registered-on-local-machine)
 
 ProcessRobot
-- [Control Desk](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-control-desk/avconv-exe-has-stopped-working)
-- [Process Studio](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-process-studio/cannot-edit-import-export-compare-versions-of-process)
-- [ProcessRobot database](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-database/connect-processrobot-server-to-sql-database-with-windows-authentication)
-- [Robot errors](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-robot-errors/cjjc01-janitor-error)
-- [Process errors](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-process-errors/botstack-high-density-tips-and-problems)
-- [Web automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/web-automation/browser-unavailable)
-- [UI automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/ui-automation/cannot-add-control-of-java-elements)
-- [Excel automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/excel-automation/excel-launch-error-800700c1-is-not-valid-win32-application)
-- [Image Processing](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/image-processing/capturefast-failed-to-upload-document)
-- [Email automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/email-automation/connect-to-exchange-server-using-exchange-server-address)
-- [Databases](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/databases/ace-oledb-12-0-provider-not-registered-on-local-machine)
+- [Control Desk](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-control-desk/avconv-exe-has-stopped-working)
+- [Process Studio](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-process-studio/cannot-edit-import-export-compare-versions-of-process)
+- [ProcessRobot database](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-database/connect-processrobot-server-to-sql-database-with-windows-authentication)
+- [Robot errors](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-robot-errors/cjjc01-janitor-error)
+- [Process errors](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-process-errors/botstack-high-density-tips-and-problems)
+- [Web automation](/previous-versions/troubleshoot/winautomation/support-tips/web-automation/browser-unavailable)
+- [UI automation](/previous-versions/troubleshoot/winautomation/support-tips/ui-automation/cannot-add-control-of-java-elements)
+- [Excel automation](/previous-versions/troubleshoot/winautomation/support-tips/excel-automation/excel-launch-error-800700c1-is-not-valid-win32-application)
+- [Image Processing](/previous-versions/troubleshoot/winautomation/support-tips/image-processing/capturefast-failed-to-upload-document)
+- [Email automation](/previous-versions/troubleshoot/winautomation/support-tips/email-automation/connect-to-exchange-server-using-exchange-server-address)
+- [Databases](/previous-versions/troubleshoot/winautomation/support-tips/databases/ace-oledb-12-0-provider-not-registered-on-local-machine)
 
 
 ## Best practices for creating processes
@@ -219,38 +221,38 @@ Here are some tips for you to consider when you create processes.
 
 WinAutomation
 
-- [Triggers](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-triggers)
-- [Web Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/web-automation/alternative-way-to-extract-data-from-web)
-- [UI Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/ui-automation/active-directory-actions-and-dsquery-command)
-- [Excel Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/excel-automation/autofit-excel-columns-using-vbscript)
-- [Text Manipulation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/text-manipulation/convert-datetime-to-text-custom-date-formats)
-- [Image Processing](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/image-processing/how-to-print-images)
-- [Email Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/email-automation/how-to-embed-images-to-email-body)
-- [Databases](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/databases/connection-strings-and-drivers)
-- [Mathematical Operations](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/mathematical-operations/basic-calculations)
-- [Variables](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/variables/check-if-a-variable-is-null)
+- [Triggers](/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-triggers)
+- [Web Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/web-automation/alternative-way-to-extract-data-from-web)
+- [UI Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/ui-automation/active-directory-actions-and-dsquery-command)
+- [Excel Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/excel-automation/autofit-excel-columns-using-vbscript)
+- [Text Manipulation](/previous-versions/troubleshoot/winautomation/process-development-tips/text-manipulation/convert-datetime-to-text-custom-date-formats)
+- [Image Processing](/previous-versions/troubleshoot/winautomation/process-development-tips/image-processing/how-to-print-images)
+- [Email Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/email-automation/how-to-embed-images-to-email-body)
+- [Databases](/previous-versions/troubleshoot/winautomation/process-development-tips/databases/connection-strings-and-drivers)
+- [Mathematical Operations](/previous-versions/troubleshoot/winautomation/process-development-tips/mathematical-operations/basic-calculations)
+- [Variables](/previous-versions/troubleshoot/winautomation/process-development-tips/variables/check-if-a-variable-is-null)
 
 ProcessRobot
 
-- [Control Desk](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-control-desk/avconv-exe-has-stopped-working)
-- [Dashboards](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/support-tips/processrobot-dashboards/dashboard-designer-tips)
-- [Triggers](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-triggers)
-- [Web Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/web-automation/alternative-way-to-extract-data-from-web)
-- [UI Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/ui-automation/active-directory-actions-and-dsquery-command)
-- [Excel Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/excel-automation/autofit-excel-columns-using-vbscript)
-- [Text Manipulation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/text-manipulation/convert-datetime-to-text-custom-date-formats)
-- [Image Processing](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/image-processing/how-to-print-images)
-- [Email Automation](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/email-automation/how-to-embed-images-to-email-body)
-- [Databases](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/databases/connection-strings-and-drivers)
-- [Mathematical Operations](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/mathematical-operations/basic-calculations)
-- [Variables](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/process-development-tips/variables/check-if-a-variable-is-null)
+- [Control Desk](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-control-desk/avconv-exe-has-stopped-working)
+- [Dashboards](/previous-versions/troubleshoot/winautomation/support-tips/processrobot-dashboards/dashboard-designer-tips)
+- [Triggers](/previous-versions/troubleshoot/winautomation/product-documentation/winautomation-console/winautomation-triggers)
+- [Web Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/web-automation/alternative-way-to-extract-data-from-web)
+- [UI Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/ui-automation/active-directory-actions-and-dsquery-command)
+- [Excel Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/excel-automation/autofit-excel-columns-using-vbscript)
+- [Text Manipulation](/previous-versions/troubleshoot/winautomation/process-development-tips/text-manipulation/convert-datetime-to-text-custom-date-formats)
+- [Image Processing](/previous-versions/troubleshoot/winautomation/process-development-tips/image-processing/how-to-print-images)
+- [Email Automation](/previous-versions/troubleshoot/winautomation/process-development-tips/email-automation/how-to-embed-images-to-email-body)
+- [Databases](/previous-versions/troubleshoot/winautomation/process-development-tips/databases/connection-strings-and-drivers)
+- [Mathematical Operations](/previous-versions/troubleshoot/winautomation/process-development-tips/mathematical-operations/basic-calculations)
+- [Variables](/previous-versions/troubleshoot/winautomation/process-development-tips/variables/check-if-a-variable-is-null)
 
 
 ## Learn more
 
 -   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
--   Read more at [WinAutomation docs](https://docs.microsoft.com/previous-versions/troubleshoot/winautomation/).
--   Learn more at [WinAutomation Academy](https://docs.microsoft.com/learn/browse/?terms=WinAutomation).
+-   Read more at [WinAutomation docs](/previous-versions/troubleshoot/winautomation/).
+-   Learn more at [WinAutomation Academy](/learn/browse/?terms=WinAutomation).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create Windows recorder (V1) flows](./create-desktop.md).
 -   Learn how to [run desktop flows](./run-desktop-flow.md).

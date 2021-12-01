@@ -26,7 +26,7 @@ To convert a file to this format, use the **Run PowerShell script** action and p
 ```
 
 > [!NOTE]
-> You can find more information regarding PowerShell utility cmdlets in [this article](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility).
+> You can find more information regarding PowerShell utility cmdlets in [this article](/powershell/module/microsoft.powershell.utility).
 
 The action produces the **PowershellOutput** variable that stores a text value representing the contents of the specified file in Base64 format.
 

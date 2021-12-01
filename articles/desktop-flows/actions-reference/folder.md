@@ -21,6 +21,7 @@ Manage and manipulate folders
 
 |<!-- --> |
 |-----|
+|[If folder exists](#iffolderexistsaction)|
 |[Get files in folder](#getfiles)|
 |[Get subfolders in folder](#getsubfolders)|
 |[Create folder](#create)|
@@ -33,7 +34,7 @@ Manage and manipulate folders
 
 ## Getting started with folder actions
 
-Manipulate and organize folders with the Power Automate Desktop folders actions.
+Manipulate and organize folders with the Power Automate folders actions.
 
 The **Get special folder** action retrieves the paths for commonly used directories which vary among different users and computers. In the figure below, the desktop directory is retrieved and stored into a variable. The variable **%SpecialFolderPath%** can now be used any time it is necessary to use the desktop path, regardless of the user who runs the flow or the computer which it runs on.
 
@@ -49,6 +50,21 @@ To get a list of a folder's contents, use the **Get subfolders in folder** actio
 Copying, moving, renaming and deleting or emptying folders each has its respective action. 
 
 ## Folder actions
+### <a name="iffolderexistsaction"></a> If folder exists
+Mark the beginning of a conditional block of actions depending on whether a folder exists or not
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If folder|N/A|Exists, Doesn't exist|Exists|Choose the state of the folder to check|
+|Folder path|No|Folder||Enter or choose the full path of the folder, or a variable containing the folder, to check its state|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="iffolderexistsaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
 
 ### <a name="getfiles"></a> Get files in folder
 Retrieve the list of files in a folder

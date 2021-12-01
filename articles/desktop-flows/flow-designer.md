@@ -1,6 +1,6 @@
 ---
 title: Flow designer | Microsoft Docs
-description: Introduction to Power Automate Desktop flow designer
+description: Introduction to Power Automate flow designer
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,11 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate Desktop flow designer
+# Power Automate flow designer
 
 
 
-The flow designer contains all the tools required to design and debug a Power Automate Desktop flow. Additionally, any images, UI elements, or variables of a desktop flow can be accessed and managed here.
+The flow designer contains all the tools required to design and debug a Power Automate flow. Additionally, any images, UI elements, or variables of a desktop flow can be accessed and managed here.
 
 ![flow designer blank.](\media\flow-designer\flow-designer.png)
 

@@ -37,7 +37,7 @@ A dialog box opens with the parameters of the action. Actions have certain param
 
 ## Configuring an action
 
-Power Automate Desktop actions consist of two main segments:
+Power Automate actions consist of two main segments:
 - The input parameters - They have the form of text fields, drop-down menus, and  check boxes
 - The produced variables - Automatically created variables
 
@@ -80,7 +80,7 @@ To continue the flow's execution, even if the retry option fails, select the **C
 
 ![The continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
 
-Power Automate Desktop offers two additional error handling options. Select the **New rule** button to:
+Power Automate offers two additional error handling options. Select the **New rule** button to:
 - **Set variable**: Sets the desired value to a specified variable.
 - **Run subflow**: Executes a specified subflow. 
 

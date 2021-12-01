@@ -24,6 +24,11 @@ search.audienceType:
 ---
 # Edit Selenium IDE flows
 
+>[!IMPORTANT]
+>This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+
 Selenium IDE flows automate websites running in the [Microsoft Edge (version 80 or later)](https://www.microsoft.com/edge/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Selenium IDE flows.
 
 ## Edit in Selenium IDE

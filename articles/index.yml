@@ -78,7 +78,7 @@ conceptualContent:
         - text: What are desktop flows?
           url: ./desktop-flows/introduction.md
           itemType: overview
-        - text: Set up Power Automate Desktop
+        - text: Set up Power Automate
           url: ./desktop-flows/install.md
           itemType: how-to-guide
         - text: Create desktop flows

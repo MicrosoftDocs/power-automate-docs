@@ -1,6 +1,6 @@
 ---
-title: Web automation | Microsoft Docs
-description: Web automation Actions Reference
+title: Browser automation | Microsoft Docs
+description: Browser automation Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,11 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Web automation
+# Browser automation
 
 Start and manage web applications on browsers
 
-You can find more information on how to use the web automation actions [here](../automation-web.md)
+You can find more information on how to use the browser automation actions [here](../automation-web.md)
 
 |<!-- --> |
 |-----|
@@ -33,10 +33,12 @@ You can find more information on how to use the web automation actions [here](..
 |[Select radio button on web page](#selectradiobuttonbase)|
 |[Set drop-down list value on web page](#setdropdownlistvaluebase)|
 |[Press button on web page](#pressbuttonbase)|
+|[If web page contains](#ifwebpagecontainsaction)|
+|[Wait for web page content](#waitforwebpagecontentaction)|
 |[Launch new Internet Explorer](#launchinternetexplorerbase)|
 |[Launch new Firefox](#launchfirefoxbase)|
 |[Launch new Chrome](#launchchromebase)|
-|[Launch new Edge](#launchedgebase)|
+|[Launch new Microsoft Edge](#launchedgebase)|
 |[Create new tab](#createnewtabbase)|
 |[Go to web page](#gotowebpagebase)|
 |[Click link on web page](#clickbase)|
@@ -45,11 +47,11 @@ You can find more information on how to use the web automation actions [here](..
 |[Hover mouse over element on web page](#hoveroverelement)|
 |[Close web browser](#closewebbrowser)|
 
-## Getting started with web automation
+## Getting started with browser automation
 
-Web automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
+Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle. 
 
-To add a new UI element, select **Add UI element** through the deployed web automation action or the **UI elements** tab of the flow designer.
+To add a new UI element, select **Add UI element** through the deployed browser automation action or the **UI elements** tab of the flow designer.
 
 ![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
 
@@ -66,7 +68,7 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
 
-## Web automation actions
+## Browser automation actions
 
 ## Web data extraction
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data
@@ -313,6 +315,49 @@ Press a web page button
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to click on web page button|Indicates a problem clicking the specified web page button|
 
+
+### <a name="ifwebpagecontainsaction"></a> If web page contains
+Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a web page
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Check if web page|N/A|Contains element, Doesn't contain element, Contains text, Doesn't contain text|Contains element|Check whether a specific text or web page element exists in a web page|
+|UI element|No|WebControl||Select the UI element on web page to check for|
+|Text|No|Text value||Enter the text on web page to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="ifwebpagecontainsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to communicate with the browser|Indicates that an error with the browser occured|
+
+### <a name="waitforwebpagecontentaction"></a> Wait for web page content
+Suspend the flow until a specific piece of text or web page element appears or disappears from a web page
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Wait for web page to|N/A|Contain element, Not contain element, Contain text, Not contain text|Contain element|Specify whether to wait for a specific text or web page element to (dis)appear in a web page|
+|UI element|No|WebControl||Select the UI element on web page to check for|
+|Text|No|Text value||Enter the text on web page to check for|
+
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="waitforwebpagecontentaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Wait for web page content failed|Indicates that the wait operation failed|
+
+
+
 ### <a name="launchinternetexplorerbase"></a> Launch new Internet Explorer
 Launch a new instance or attach to a running instance of Internet Explorer for automating web sites and web applications
 
@@ -338,7 +383,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|InternetExplorer|Web browser instance|The Internet Explorer instance to use with web automation actions|
+|InternetExplorer|Web browser instance|The Internet Explorer instance to use with browser automation actions|
 
 
 ##### <a name="launchinternetexplorerbase_onerror"></a> Exceptions
@@ -369,7 +414,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Firefox instance to use with web automation actions|
+|Browser|Web browser instance|The Firefox instance to use with browser automation actions|
 
 
 ##### <a name="launchfirefoxbase_onerror"></a> Exceptions
@@ -400,7 +445,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Chrome instance to use with web automation actions|
+|Browser|Web browser instance|The Chrome instance to use with browser automation actions|
 
 
 ##### <a name="launchchromebase_onerror"></a> Exceptions
@@ -431,7 +476,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Edge instance to use with web automation actions|
+|Browser|Web browser instance|The Edge instance to use with browser automation actions|
 
 
 ##### <a name="launchedgebase_onerror"></a> Exceptions
@@ -456,7 +501,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewBrowser|Web browser instance|The new web browser instance to use with web automation actions|
+|NewBrowser|Web browser instance|The new web browser instance to use with browser automation actions|
 
 
 ##### <a name="createnewtabbase_onerror"></a> Exceptions

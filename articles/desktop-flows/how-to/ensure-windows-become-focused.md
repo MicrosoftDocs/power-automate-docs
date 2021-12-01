@@ -17,7 +17,7 @@ search.audienceType:
 
 # Ensure that application windows become focused 
 
-Although Power Automate Desktop provides the **Focus window** action, depending on the nature of the selected application, the action may not bring the window to focus.
+Although Power Automate provides the **Focus window** action, depending on the nature of the selected application, the action may not bring the window to focus.
 
 To verify that the **Focus window** action can't bring a specific window to focus, send some keystrokes using the **Send keys** action. If the window isn't focused, the keystrokes won't work as expected.
 

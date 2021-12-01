@@ -18,15 +18,15 @@ search.audienceType:
 
 # Getting started with an Organization premium account
 
-Power Automate Desktop enables regular and power users alike to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
+Power Automate enables regular and power users alike to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
 
 Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](link-pad-flow-portal.md), [detailed monitoring](monitor-desktop-flow-runs.md) and many more. 
 
-Power Automate Desktop gives you the option to [share your flows](manage.md#share-desktop-flows) among your colleagues so that you can improve automations and build on top of them.
+Power Automate gives you the option to [share your flows](manage.md#share-desktop-flows) among your colleagues so that you can improve automations and build on top of them.
 
 Access your flows from anywhere, harnessing the power of the cloud to establish a robust and flexible RPA system. Take full advantage of multiple environments to organize and manage users’ flows. 
 
-If you currently use Power Automate with a work or school account or your license does not include attended RPA, you can still use Power Automate Desktop for your desktop automation needs. Start a trial to preview all the features by selecting **Go Premium** on the Power Automate Desktop console.
+If you currently use Power Automate with a work or school account or your license does not include attended RPA, you can still use Power Automate for your desktop automation needs. Start a trial to preview all the features by selecting **Go Premium** on the Power Automate for desktop console.
 
 ## Creating a flow
 
@@ -34,7 +34,7 @@ If you currently use Power Automate with a work or school account or your licens
 
     ![create a new desktop flow.](media\getting-started-org\create-new-desktop-flow.png)
 
-1. After you assign a name to the flow, you will be prompted to launch Power Automate Desktop; select **Open** to do so.
+1. After you assign a name to the flow, you will be prompted to launch Power Automate for desktop; select **Open** to do so.
 
 1. In the flow designer, start building the flow by double-clicking on actions, or dragging them from the actions pane on the left, to the central workspace pane.
 
@@ -64,15 +64,15 @@ If you currently use Power Automate with a work or school account or your licens
 
     ![the finished flow.](media\getting-started-org\finished-flow.png)
 
-Following this example, it is possible to imagine a wide range of scenarios where Power Automate Desktop can be used to automate tasks. The abundance of actions, combined with cloud management capabilities, affords endless possibilities to individual users and organizations.
+Following this example, it is possible to imagine a wide range of scenarios where Power Automate can be used to automate tasks. The abundance of actions, combined with cloud management capabilities, affords endless possibilities to individual users and organizations.
 
 ## Next Steps
 
-- Learn how to [set up Power Automate Desktop](setup.md).
+- Learn how to [set up Power Automate](setup.md).
 
-- Begin your journey in Power Automate Desktop by [creating a Power Automate Desktop flow](create-flow.md). 
+- Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md). 
 
-- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate Desktop. 
+- Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate. 
 
 - You'll find the list of actions in the [Actions reference](actions-reference.md).
 

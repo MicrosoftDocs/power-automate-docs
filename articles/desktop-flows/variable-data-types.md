@@ -19,7 +19,7 @@ search.audienceType:
 
 
 
-When you create variables in your flows, Power Automate Desktop converts them to a specific type based on their content.
+When you create variables in your flows, Power Automate converts them to a specific type based on their content.
 
 Some of these data types are widely used throughout the application, such as **numbers**, while others, such as **browser instances**, require explicit actions or groups of actions.
 
@@ -29,25 +29,25 @@ Some of these data types are widely used throughout the application, such as **n
 
   [Text data type properties](datatype-properties.md#texts)
   
-  To create a **Text value** variable, use the **Set Variable action** and populate the input parameter with the desired text without any notation.
+  To create a **Text value** variable, use the **Set variable** action and populate the input parameter with the desired text without any notation.
 
-  ![An example of a created Text value variable.](media\variable-data-types\create-text-variable.png)
+  ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
 
 - **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
-  Τo create a **Numeric value** variable, use the **Set Variable action** and populate the input parameter with a number without any notation. 
+  Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
   
   Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
-  ![An example of a created Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
+  ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
 - **Boolean value** - The value can be either **True** or **False**. 
   
-  Τo create a **Boolean value** variable, use the **Set Variable action** and populate the input parameter with the expressions **%True%** or  **%False%**. 
+  Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
   
   Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
-  ![An example of a created Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
+  ![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
 ## Advanced data types
 
@@ -55,7 +55,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
-  ![An example of a list.](media\lists\create-list.png)
+  ![Screenshot of a flow that creates a list.](media\lists\create-list.png)
 
   You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
@@ -63,7 +63,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
 
-  ![An expression to access the first item of a list.](media\lists\list-first-item.png)
+  ![Screenshot of an expression that accesses the first item of a list.](media\lists\list-first-item.png)
 
   A common practice is to use a **For each** action to iterate through the items of a list.
 
@@ -71,23 +71,31 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
-  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain other datarows as items.
+  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
 
-  ![An example of a datatable variable.](media\data-tables\create-data-table.png)
+  ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
-  Power Automate Desktop provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+  Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  Alternatively, while Power Automate Desktop doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+  Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
   This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
-  ![An example of how to create datatables using the Set variable action.](media\data-tables\create-data-table-variable.png)
+  ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
+
+  If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
+
+  ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
+
+  To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
+
+  ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
   To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
   For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
-  ![An epxression to access the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+  ![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
@@ -106,13 +114,21 @@ Some of these data types are widely used throughout the application, such as **n
 
   [Datarow data type properties](datatype-properties.md#datarows)
 
-  ![An example of a datarow variable.](media\data-rows\data-row-data-type.png) 
+  ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
 - **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
 
-  To create a new **Custom object**, use the **Set variable** action and an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
+  To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
-  ![An example of a created custom object variable.](media\variable-data-types\create-custom-object-variable.png)
+  ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
+
+  To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field. 
+
+  ![Screenshot of a Set variable action that add a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
+
+  Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
+
+  ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
 
 ### Known issues and limitations
 

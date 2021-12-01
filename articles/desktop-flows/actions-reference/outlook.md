@@ -43,7 +43,7 @@ The **Process email messages in Outlook** action processes email messages retrie
 
 Store Outlook email messages locally by using the **Save Outlook email messages** action. Specify the Outlook instance, account, and messages to save via variables, as well as the format and location to save in.
 
-To close the instance of Outlook opened with Power Automate Desktop, use the **Close Outlook** action. 
+To close the instance of Outlook opened with Power Automate, use the **Close Outlook** action. 
 
 ## Outlook actions
 

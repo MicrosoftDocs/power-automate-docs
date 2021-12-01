@@ -17,7 +17,7 @@ search.audienceType:
 
 # Check if a variable is numeric
 
-Power Automate Desktop enables users to insert data into flows using message boxes. In some scenarios, you may want to ensure that the entered data are numbers to make your flow robust to unexpected failures.
+Power Automate enables users to insert data into flows using message boxes. In some scenarios, you may want to ensure that the entered data are numbers to make your flow robust to unexpected failures.
 
 To check whether a variable contains a number or not:
 

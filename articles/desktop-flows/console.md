@@ -1,6 +1,6 @@
 ---
-title: Power Automate Desktop console | Microsoft Docs
-description: Power Automate Desktop Flow console
+title: Power Automate for desktop console | Microsoft Docs
+description: Power Automate for desktop console
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -14,9 +14,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Power Automate Desktop console
+# Power Automate for desktop console
 
-The flow console is the central interface of Power Automate Desktop.
+The flow console is the central interface of Power Automate.
 
 ![The flow console.](./media/console/pad-console.png)
 
@@ -24,7 +24,7 @@ After signing in, your username will be displayed in the top-right corner, while
 
 ## Starting a desktop flow
 
-Users may run any Power Automate Desktop flows available to them through the console, by hovering the cursor over a desktop flow and pressing the "Start" button. The status of the flow is also displayed:
+Users may run any Power Automate desktop flows available to them through the console, by hovering the cursor over a desktop flow and pressing the "Start" button. The status of the flow is also displayed:
 
 ![Start a desktop flow.](./media/console/start-flow.png)
 
@@ -46,11 +46,11 @@ In both scenarios, the flow designer will be launched; this is where flow creati
 
 ## Console Settings
 
-Press the **Settings** button to configure Power Automate Desktop to your liking:
+Press the **Settings** button to configure Power Automate for desktop to your liking:
 
 ![The Console Settings panel.](./media/console/console-settings-panel.png)
 
-Under the **Application** category, select whether Power Automate Desktop should launch automatically, whether closing the console will close the application as well, and whether Power Automate Desktop should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
+Under the **Application** category, select whether Power Automate should launch automatically, whether closing the console will close the application as well, and whether Power Automate should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
 
 Decide whether Microsoft may collect diagnostic data to improve user experience under **Data collection**. 
 
@@ -58,8 +58,8 @@ Decide whether Microsoft may collect diagnostic data to improve user experience 
 >Only an admin may change Data collection settings.
 
 
-## Update Power Automate Desktop
+## Update Power Automate for desktop
 
-Power Automate Desktop will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
+Power Automate will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

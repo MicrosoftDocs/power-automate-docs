@@ -24,6 +24,11 @@ search.audienceType:
 ---
 # Create and test Selenium IDE flows
 
+> [!IMPORTANT]
+> This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+
 Follow these steps to create a simple Selenium flow.
 
 ## Create a Selenium IDE flow
@@ -104,7 +109,7 @@ To address this, the user needs to manually edit the script to insert the comman
 
 - These Selenium IDE commands are not supported: Run, AnswerOnNextPrompt, ChooseCancelOnNextConfirmation, ChooseCancelOnNextPrompt, ChooseOkOnNextConfirmation, Debugger, ClickAt, DoubleClickAt, Echo, MouseOut, MouseUpAt, and MouseDownAt.
 
-- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate Desktop](introduction.md) instead.
+- Selenium IDE actions or steps cannot exceed one minute to run.  Use [Power Automate](introduction.md) instead.
 
 - Right click is not supported. 
 

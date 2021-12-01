@@ -47,7 +47,7 @@ Connect to Azure Cloud and automate the management of resources like virtual mac
 > [!IMPORTANT]
 > To deploy Azure actions in your desktop flows, you need an active Azure subscription.
 
-Power Automate Desktop allows you to manage Azure virtual machines through the Azure group of actions.
+Power Automate allows you to manage Azure virtual machines through the Azure group of actions.
 
 To implement Azure functionality in your desktop flows, create a new Azure session using the **Create session** action.
 

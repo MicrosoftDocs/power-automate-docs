@@ -21,13 +21,15 @@ Initiate OCR engines to perform OCR related activities
 
 |<!-- --> |
 |-----|
+|[If text on screen (OCR)](#iftextonscreenaction)|
+|[Wait for text on screen (OCR)](#waittextonscreenaction)|
 |[Create Tesseract OCR engine](#createtesseractocrenginebase)|
 |[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
 ## Getting started with OCR actions
 
-Power Automate Desktop enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
+Power Automate enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
 
 To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
 
@@ -40,6 +42,94 @@ The action wherein the OCR engine is created contains the engine settings. These
 
 
 ## OCR actions
+
+### <a name="iftextonscreenaction"></a> If text on screen (OCR)
+Marks the beginning of a conditional block of actions depending on whether a given text appears on the screen or not, using OCR
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|If text|N/A|Exists, Doesn't exist|Exists|Specifies whether to check if the text exists or not on the given source to analyze|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
+|Text to find|No|Text value||The text to search for in the specified source|
+|Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
+|Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
+|Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
+|Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|Numeric value|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
+|X1|Yes|Numeric value||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+
+> [!NOTE]
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|LocationOfTextFoundX|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+
+
+##### <a name="iftextonscreenaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
+|Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
+|Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|OCR engine not alive|Indicates that the OCR engine isn't alive|
+
+
+### <a name="waittextonscreenaction"></a> Wait for text on screen (OCR)
+Wait until a specific text appears/disappears on the screen, on the foreground window, or relative to an image on the screen or foreground window using OCR
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Wait for text to|N/A|Appear, Disappear|Appear|Specifies whether to wait for the text to appear or disappear|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
+|Text to find|No|Text value||The text to search for in the specified source|
+|Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
+|Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
+|Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
+|Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|Numeric value|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
+|X1|Yes|Numeric value||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|Numeric value||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
+|X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+
+> [!NOTE]
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|LocationOfTextFoundX|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+
+
+##### <a name="waittextonscreenaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
+|Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
+|Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|OCR engine not alive|Indicates that the OCR engine isn't alive|
+
 
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine

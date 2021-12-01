@@ -17,14 +17,14 @@ search.audienceType:
 
 # Build a custom selector
 
-Power Automate Desktop enables users to interact with web and desktop applications through UI elements. Consider UI elements as application components, such as buttons and text fields.
+Power Automate enables users to interact with web and desktop applications through UI elements. Consider UI elements as application components, such as buttons and text fields.
 
 To specify a UI element, you have to create selectors that pinpoint the specific component you want to interact with.
 
 > [!NOTE]
-> Power Automate Desktop supports the creation of multiple selectors for a UI element. If a selector fails to access the element, the following selector is used.
+> Power Automate supports the creation of multiple selectors for a UI element. If a selector fails to access the element, the following selector is used.
 
-Although Power Automate Desktop enables users to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
+Although Power Automate enables users to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
 
 When a custom selector is needed, you can modify an existing selector or build one from scratch.
 
@@ -59,7 +59,7 @@ Assume that you want to edit the selector to work with a Notepad window named **
 In the previous example, the selector located a Notepad window with a specific title. To make the selector more dynamic, replace the **Equals to** operator with other operators or regular expressions.
 
 > [!Note]
-> Power Automate Desktop's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ![All the available selector operators.](media/build-custom-selectors/selector-operators.png)
 
@@ -71,7 +71,7 @@ Use the **Contains** operator to locate elements that don't have fixed values bu
 
 ## Use variables in a custom selector
 
-Apart from various operators, Power Automate Desktop enables you to create dynamic selectors using variables.
+Apart from various operators, Power Automate enables you to create dynamic selectors using variables.
 
 If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
