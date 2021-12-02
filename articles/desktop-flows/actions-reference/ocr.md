@@ -66,7 +66,8 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - The **OCR engine variable** option is planned for deprecation.
 
 
 ##### Variables Produced
@@ -110,7 +111,8 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - The **OCR engine variable** option is planned for deprecation.
 
 
 ##### Variables Produced
@@ -219,6 +221,8 @@ Extract text from a given source using the given OCR engine
 |Wait for image to appear|N/A|Boolean value|False|Whether to wait for the image to appear on the screen or foreground window|
 |Timeout|Yes|Numeric value|0|Specifies the time to wait for the operation to complete before the action fails|
 
+> [!NOTE]
+> The **OCR engine variable** option is planned for deprecation.
 
 ##### Variables Produced
 |Argument|Type|Description|
