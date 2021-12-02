@@ -23,8 +23,6 @@ Initiate OCR engines to perform OCR related activities
 |-----|
 |[If text on screen (OCR)](#iftextonscreenaction)|
 |[Wait for text on screen (OCR)](#waittextonscreenaction)|
-|[Create Tesseract OCR engine](#createtesseractocrenginebase)|
-|[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
 ## Getting started with OCR actions
@@ -130,7 +128,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
 
-
+<!--
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine
 
@@ -200,7 +198,7 @@ The MODI OCR engine is planned for deprecation. To prevent flows from failing af
 You can perform the initialization directly through the actions that require the engines without using the **Create Tesseract OCR engine** action.
 
 ![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
-
+--> 
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine
 
