@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/10/2021
+ms.date: 11/16/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -49,11 +49,11 @@ Power Automate provides the ability to create and enforce policies that classify
 Region|Date available
 ------|---------------
 Canada| 2021/11/1	
-Switzerland, Brazil|2021/12/09
-Asia, UK, Australia, Japan| 2021/12/13
-Europe| 2021/12/16
-US(NAM)| 2021/12/20
-Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/12/22	
+Switzerland, Brazil|2021/11/30
+Asia, UK, Australia, Japan| 2021/12/6
+Europe| 2021/12/9
+US(NAM)| 2021/12/15
+Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/1/4	
 
 >[!IMPORTANT]
 >This capability is available in preview at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
@@ -78,7 +78,7 @@ Admins can create data loss prevention policies from https://admin.powerplatform
 - After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to turn them on manually.
 
 ### Known limitations
-1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available after 12/7/2021.
+1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
 1. There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
 1. We do not run background jobs if the data loss prevention policy doesn't change. So, there's a potential that makers may have edited some desktop flows where there are existing cloud flows that have referenced those desktop flows, causing new violations. We plan to run the background job more frequently in general availability.
 

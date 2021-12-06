@@ -24,6 +24,11 @@ search.audienceType:
 ---
 # Create and test Selenium IDE flows
 
+> [!IMPORTANT]
+> This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+
 Follow these steps to create a simple Selenium flow.
 
 ## Create a Selenium IDE flow
