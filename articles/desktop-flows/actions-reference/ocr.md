@@ -39,7 +39,7 @@ The action wherein the OCR engine is created contains the engine settings. These
 > Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
 
 >[!NOTE]
-> To find information on how to extract text with OCR from multilingual documents, see [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents).
+> To find information on how to extract text with OCR from multilingual documents, see [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
 
 ## OCR actions
 
