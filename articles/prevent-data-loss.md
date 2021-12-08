@@ -80,6 +80,7 @@ Admins can create data loss prevention policies from https://admin.powerplatform
 ### Known limitations
 1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
 1. There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
+1. There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
 
 
 ## Next steps
