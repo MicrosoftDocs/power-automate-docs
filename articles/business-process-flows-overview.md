@@ -50,7 +50,7 @@ Business process flows provide a guide for people to get work done. They provide
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
 > [!NOTE]
-> If there are any required columns on any stage, including the current stage, you will need to fill in the columns on those stages *before* saving the form or moving to a new stage.
+> If there are any required columns on any stage, including the current stage, you will need to fill in the columns on those stages *before* saving the form or moving to a new stage. The only exception is if the column is hidden - disabled columns will still block stage navigation if they are empty and required.
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### Business process flows integrated with other customizations  
