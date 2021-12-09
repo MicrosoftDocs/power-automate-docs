@@ -29,7 +29,7 @@ Initiate OCR engines to perform OCR related activities
 
 Power Automate enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
 
-To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
+To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. Power Automate supports both Windows OCR engine and Tesseract engine. 
 
 ![extract text with ocr action properties screenshot.](\media\ocr\extract-text-ocr-example.png)
 
@@ -40,6 +40,14 @@ The action wherein the OCR engine is created contains the engine settings. These
 
 >[!NOTE]
 > To find information on how to extract text with OCR from multilingual documents, see [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
+
+### Using the Windows OCR engine
+
+The default engine of all OCR actions in Power Automate is the Windows OCR engine. To extract any text using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
+
+If the appropriate language pack hasn't been installed, Power Automate will throw a related error prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
+
+After installing the appropriate language pack, extend the **OCR engine settings** of the OCR action and select the desired language. The Windows OCR engine supports 25 languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovan, Spanish, Swedish, and Turkish.
 
 ## OCR actions
 
