@@ -21,7 +21,7 @@ In some scenarios, Power Automate may run unattended flows in a lower resolution
 
 To change the resolution in which unattended flows are run:
 
-1. Navigate to **C:\Program Files (x86)\Power Automate** and open the **UIFlowService.exe.config** file.
+1. Navigate to **C:\Program Files (x86)\Power Automate Desktop** and open the **UIFlowService.exe.config** file.
 
 1. Set the value of the **Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionEnabled** key to **true**.
 
@@ -36,6 +36,10 @@ To change the resolution in which unattended flows are run:
     <add key="Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionHeight" value="1080" />
     <add key="Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionScale" value="100" />
     ```
-   ![The appropriate keys in the UIFlowService.exe.config file.](media/set-screen-resolution-unattended-mode/ui-flow-service-file.png)
+   ![Screenshot of the appropriate keys in the UIFlowService.exe.config file.](media/set-screen-resolution-unattended-mode/ui-flow-service-file.png)
 
-1. Restart Power Automate.
+1. Restart your machine.
+
+    Alternatively to restarting your machine, you can restart the Power Automate service. To restart the Power Automate service, launch Windows Task Manager, right-click on the Power Automate process and select **End task**.
+
+    ![Screenshot of the Windows Task Manager.](media/set-screen-resolution-unattended-mode/task-manager.png)
