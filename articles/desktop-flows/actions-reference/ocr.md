@@ -38,9 +38,6 @@ The action wherein the OCR engine is created contains the engine settings. These
 > [!WARNING]
 > Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
 
->[!NOTE]
-> To find information on how to extract text with OCR from multilingual documents, see [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
-
 ### Using the Windows OCR engine
 
 The default engine of all OCR actions in Power Automate is the Windows OCR engine. To extract any text using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
@@ -48,6 +45,18 @@ The default engine of all OCR actions in Power Automate is the Windows OCR engin
 If the appropriate language pack hasn't been installed, Power Automate will throw an error prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
 
 After installing the appropriate language pack, extend the **OCR engine settings** of the OCR action and select the desired language. The Windows OCR engine supports 25 languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovak, Spanish, Swedish, and Turkish.
+
+## Using the Tesseract OCR engine
+
+Apart from the Windows OCR engine, Power Automate supports the Tesseract engine. This engine can extract text in five languages without further configuration: English, German, Spanish, French, and Italian.
+
+To extract text in a language outside the mentioned list, enable the **Use other languages** option in the **OCR engine settings** of the OCR action.
+
+When the option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
+
+The **Language abbreviation** field indicates to the engine which language to look for during OCR. The **Language data path** field contains the language data files (.traineddata) used to train the OCR engine. You can find the language data files for all the available languages in [this GitHub repository](https://github.com/tesseract-ocr/tessdata).
+
+The Tesseract engine can be also used to extract text from multilingual documents. You can find more information regarding extracting text from multilingual documents in [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
 
 ## OCR actions
 
