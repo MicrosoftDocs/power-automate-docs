@@ -127,15 +127,15 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
     ![At mention or comment.](./media/multi-step-logic-flow/mention.png)
 
-    If the person you want to @mention is not a co-owner of the flow, they'll see a prompt to do *Share and Notify*. This would automatically share the flow with the other user, and send a notification.
+    If the person you want to @mention is not a co-owner of the flow, they'll see a prompt to do *Share and notify*. This would automatically share the flow with the other user, and send a notification.
 
-   ![Image that displays the new comments button](./media/multi-step-logic-flow/grant.png)
+   ![Image that displays the @mention or comment dialog.](./media/multi-step-logic-flow/grant.png "@mention or comment dialog")
 
 1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
 
   The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
 
-![Image that displays the count of comments on an action](./media/multi-step-logic-flow/comments-count-icon.png)
+![Image that displays the Grant access dialog.](./media/multi-step-logic-flow/comments-count-icon.png "Grant access")
 
 ### Limitations
 
