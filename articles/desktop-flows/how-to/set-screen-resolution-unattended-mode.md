@@ -40,6 +40,6 @@ To change the resolution in which unattended flows are run:
 
 1. Restart your machine.
 
-    Alternatively to restarting your machine, you can restart the **UIFlowService** service. To restart the service, launch Windows Task Manager, navigate to the **Services** tab, right-click on the **UIFlowService** service and select **Restart**.
+    Alternatively to restarting your machine, you can restart the **UIFlowService** service. To restart the service, launch Windows Task Manager, navigate to the **Services** tab, right-click on the **UIFlowService** service, and select **Restart**.
 
     ![Screenshot of the Windows Task Manager.](media/set-screen-resolution-unattended-mode/task-manager.png)
