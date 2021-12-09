@@ -1,6 +1,6 @@
 ---
 title: Add an advanced option and multiple actions | Microsoft Docs
-description: Expand a cloud flow to include an advanced option, such as setting email to high priority, and add another action for the same event.
+description: Expand a cloud flow to include an advanced option, such as how to add comments to actions and triggers, set email to high priority, and add another action for the same event.
 services: ''
 suite: flow
 documentationcenter: na
@@ -54,8 +54,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
    
    > [!IMPORTANT]
    > If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
-   > 
-   > 
+ 
 10. Select **Update flow**, which is located on the menu at the top of the screen.
 11. Send a tweet that contains the keyword you specified.
     
@@ -124,12 +123,17 @@ Follow these steps to add a comment to any action or trigger in your flow.
    ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
 
    The comments pane opens.
+1. Enter a comment to your action with an @mention in a comment to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
+
+    ![At mention or comment.](./media/multi-step-logic-flow/mention.png)
+
+    If the person you want to @mention is not a co-owner of the flow, they'll see a prompt to do *Share and Notify*. This would automatically share the flow with the other user, and send a notification.
+
+   ![Image that displays the new comments button](./media/multi-step-logic-flow/grant.png)
 
 1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
 
-   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-pane.png)
-
- The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
+  The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
 
 ![Image that displays the count of comments on an action](./media/multi-step-logic-flow/comments-count-icon.png)
 
@@ -137,6 +141,8 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 - Makers must save the flow at least once before a comment could be added.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
+- Comments aren't allowed for managed solution flows
+- *Share and notify* is available only for non-solution aware flows. For solution aware flows, at mentioning is limited to users who are already co-owners of the flow.
 
 ## Address conflicts from multiple edits
 
