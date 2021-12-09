@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/28/2021
+ms.date: 12/9/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -123,7 +123,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
    ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
 
    The comments pane opens.
-1. Enter a comment to your action with an @mention in a comment to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
+1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
 
     ![At mention or comment.](./media/multi-step-logic-flow/mention.png)
 
