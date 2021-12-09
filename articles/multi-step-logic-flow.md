@@ -125,7 +125,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
    The comments pane opens.
 1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
 
-    ![At mention or comment.](./media/multi-step-logic-flow/mention.png)
+    ![@mention or comment.](./media/multi-step-logic-flow/mention.png)
 
     If the person you want to @mention is not a co-owner of the flow, they'll see a prompt to do *Share and notify*. This would automatically share the flow with the other user, and send a notification.
 
@@ -141,8 +141,8 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 - Makers must save the flow at least once before a comment could be added.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
-- Comments aren't allowed for managed solution flows
-- *Share and notify* is available only for non-solution aware flows. For solution aware flows, at mentioning is limited to users who are already co-owners of the flow.
+- Comments aren't allowed for managed solution flows.
+- *Share and notify* is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
 
 ## Address conflicts from multiple edits
 
