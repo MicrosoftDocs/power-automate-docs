@@ -46,13 +46,11 @@ If the appropriate language pack hasn't been installed, Power Automate will thro
 
 After installing the appropriate language pack, extend the **OCR engine settings** of the OCR action and select the desired language. The Windows OCR engine supports 25 languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovak, Spanish, Swedish, and Turkish.
 
-## Using the Tesseract OCR engine
+### Using the Tesseract OCR engine
 
 Apart from the Windows OCR engine, Power Automate supports the Tesseract engine. This engine can extract text in five languages without further configuration: English, German, Spanish, French, and Italian.
 
-To extract text in a language outside the mentioned list, enable the **Use other languages** option in the **OCR engine settings** of the OCR action.
-
-When the option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
+To extract text in a language outside the mentioned list, enable the **Use other languages** option in the **OCR engine settings** of the OCR action. When this option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
 
 The **Language abbreviation** field indicates to the engine which language to look for during OCR. The **Language data path** field contains the language data files (.traineddata) used to train the OCR engine. You can find the language data files for all the available languages in [this GitHub repository](https://github.com/tesseract-ocr/tessdata).
 
