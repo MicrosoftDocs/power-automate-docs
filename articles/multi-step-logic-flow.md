@@ -1,6 +1,6 @@
 ---
 title: Add an advanced option and multiple actions | Microsoft Docs
-description: Expand a cloud flow to include an advanced option, such as how to add comments to actions and triggers, set email to high priority, and add another action for the same event.
+description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 services: ''
 suite: flow
 documentationcenter: na
@@ -127,7 +127,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
     ![@mention or comment.](./media/multi-step-logic-flow/mention.png)
 
-    If the person you want to @mention is not a co-owner of the flow, they'll see a prompt to do *Share and notify*. This would automatically share the flow with the other user, and send a notification.
+    If the person you want to @mention is not a co-owner of the flow, they'll see the **Share and notify** option. This would automatically share the flow with the other user, and send an email notification.
 
    ![Image that displays the @mention or comment dialog.](./media/multi-step-logic-flow/grant.png "@mention or comment dialog")
 
@@ -142,7 +142,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 - Makers must save the flow at least once before a comment could be added.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
 - Comments aren't allowed for managed solution flows.
-- *Share and notify* is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
+- The **Share and notify** option is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
 
 ## Address conflicts from multiple edits
 
