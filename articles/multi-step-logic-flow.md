@@ -146,7 +146,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 ## Address conflicts from multiple edits
 
-If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keeps their changes.
+If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keep their changes.
 
 ![Options to resolve conflicts](./media/multi-step-logic-flow/address-conflits.png)
 
