@@ -186,6 +186,13 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovan, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 |Wait for text to appear|N/A|Boolean value|False|Specify whether to wait if the text isn't found on the screen or foreground window|
 |Fail if text doesn't appear within|Yes|Numeric value|10|The number of seconds to wait for the supplied text to appear|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
@@ -215,7 +222,10 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Can't move mouse in non interactive mode|Indicates a problem moving the mouse in non-interactive mode|
 |Failed to move mouse|Indicates a problem moving the mouse|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
-|OCR engine isn't alive|Indicates that the OCR engine specified isn't alive|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
+|OCR engine isn't alive|Indicates that the OCR engine isn't alive|
 
 ### <a name="sendmouseclick"></a> Send mouse click
 Sends a mouse click event

@@ -74,6 +74,13 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovan, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 
 > [!NOTE]
 > - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
@@ -93,6 +100,9 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
 |Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
 
 
@@ -119,6 +129,14 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovan, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
+|Fail with timeout error|N/A|Boolean value|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
 
 > [!NOTE]
 > - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
@@ -138,7 +156,11 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
 |Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
+|Timeout error|Indicates that the action failed after a set time period|
 
 <!--
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
@@ -228,8 +250,13 @@ Extract text from a given source using the given OCR engine
 |X2|Yes|Numeric value||The end X coordinate of the subregion to narrow down the scan|
 |Y1|Yes|Numeric value||The start Y coordinate of the subregion to narrow down the scan|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to narrow down the scan|
-|Wait for image to appear|N/A|Boolean value|False|Whether to wait for the image to appear on the screen or foreground window|
-|Timeout|Yes|Numeric value|0|Specifies the time to wait for the operation to complete before the action fails|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovan, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 
 > [!NOTE]
 > The **OCR engine variable** option is planned for deprecation.
@@ -246,10 +273,11 @@ Extract text from a given source using the given OCR engine
 |Failed to extract text with OCR|Indicates an error occurred while trying to extract text with OCR from the given source|
 |Image file not found|Indicates that the file doesn't exist on the given path|
 |Landmark image not found |Indicates that the landmark image doesn't exist|
-|OCR engine not alive|Indicates that the OCR engine isn't alive|
 |Can't get text from screen in non-interactive mode|Indicates that it isn't possible to get text from screen when in non-interactive mode|
-
-
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
+|OCR engine not alive|Indicates that the OCR engine isn't alive|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
