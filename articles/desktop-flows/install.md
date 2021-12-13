@@ -32,7 +32,7 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install the Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
+1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
@@ -129,14 +129,14 @@ Follow these steps if you want to silently install Power Automate.
 
    For example, enter:
    
-   ```
+   ```CMD
     cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
    ```
    
    The installer runs and completes the setup of Power Automate.
@@ -150,8 +150,8 @@ Follow these steps if you want to silently install Power Automate.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -HELP
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
 |Command|Description|
@@ -164,16 +164,16 @@ You can also retrieve the details of all the command line arguments from the hel
 
 Here's an example of a command line argument that installs Power Automate: 
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
 ### Uninstall Power Automate for desktop using the command line
 
 Use the following command to silently uninstall Power Automate:
    
-   ```
-   Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
    ```
 
 ### Update your version of Power Automate

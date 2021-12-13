@@ -48,7 +48,8 @@ When you add a desktop flow to a cloud flow, you can choose whether you want you
 To run unattended desktop flows, the target machine needs to be available with all users signed out. 
 
 >[!IMPORTANT]
->Locked Windows user sessions will prevent desktop flows from running.
+> - Locked Windows user sessions will prevent desktop flows from running.
+> - Flows run in unattended mode can't be launched with elevated privileges
 
 Power Automate performs the following:
 1. Power Automate creates, manages, and then releases the Windows user session on the target devices.

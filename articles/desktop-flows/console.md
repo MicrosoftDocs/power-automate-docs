@@ -62,4 +62,10 @@ Decide whether Microsoft may collect diagnostic data to improve user experience 
 
 Power Automate will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
 
+## Switch organization
+
+For cases that a user is member of more than one tenants, they can switch between them by selecting their alias at the top right of the console window and clicking on **Switch organization**.
+
+![Switch tenants.](./media/console/switch-tenant.png)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
