@@ -91,7 +91,9 @@ Exits current subflow and returns to the point it was called from
 Retrieves the last error that occured in the flow
 
 ##### Input Parameters
-- This action doesn't require any input
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Clear error|N/A|Boolean value|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -136,6 +138,7 @@ Marks the beginning of a block to handle actions errors
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Name|No|Text value||The name of the Exception Block for Visual purposes only.|
+|Capture unexpected logic errors|N/A|Boolean value|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, diving a number by zero or trying to access an item from an out of bounds position.|
 
 
 ##### Variables Produced

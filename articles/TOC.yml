@@ -8,8 +8,6 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: Experimental features
-    href: experimental-features.md
   - name: What's new
     href: whats-new.md
 - name: Learning catalog
@@ -451,8 +449,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
-    ## - name: Automate on virtual desktops
-    ##  href: ./desktop-flows/automate-virtual-desktops.md
+    # - name: Automate on virtual desktops
+    #  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
