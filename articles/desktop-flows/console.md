@@ -64,7 +64,7 @@ Power Automate will frequently check for updates and display a notification dial
 
 ## Switch organization
 
-For cases that a user is member of more than one tenants, they can switch between them by selecting their alias at the top right of the console window and clicking on **Switch organziation**.
+For cases that a user is member of more than one tenants, they can switch between them by selecting their alias at the top right of the console window and clicking on **Switch organization**.
 
 ![Switch tenants.](./media/console/switch-tenant.png)
 

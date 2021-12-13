@@ -59,7 +59,7 @@ When you add your machine to a group, any connections currently targeting your m
 
 >[!NOTE]
 > - In case of a virtual machine, make sure not to clone the virtual machine after installing the Power Automate machine runtime.
-> - Machines are not affected by a change in the Power Automate for desktop organization change.
+> - Machines are not affected by a change in the Power Automate for desktop organization.
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
