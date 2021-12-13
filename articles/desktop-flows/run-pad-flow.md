@@ -49,7 +49,7 @@ To run unattended desktop flows, the target machine needs to be available with a
 
 >[!IMPORTANT]
 > - Locked Windows user sessions will prevent desktop flows from running.
-> - Flows run in unattended mode can't perform with elevated privileges
+> - Flows run in unattended mode can't be launched with elevated privileges
 
 Power Automate performs the following:
 1. Power Automate creates, manages, and then releases the Windows user session on the target devices.
