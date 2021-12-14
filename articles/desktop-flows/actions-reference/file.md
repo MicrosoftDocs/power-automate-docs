@@ -328,7 +328,7 @@ Retrieve one or more parts (directory, filename, extension etc) from a text that
 ##### <a name="getpathpart_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|File path doesn't exist|Indicates that the file path doesn't exist|
+|File path contains invalid characters|Indicates that the file path doesn't exist|
 
 ### <a name="gettemppath"></a> Get temporary file
 Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information)

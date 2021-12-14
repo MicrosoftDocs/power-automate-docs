@@ -1,6 +1,6 @@
 ---
 title: Add an advanced option and multiple actions | Microsoft Docs
-description: Expand a cloud flow to include an advanced option, such as setting email to high priority, and add another action for the same event.
+description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/28/2021
+ms.date: 12/9/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -54,8 +54,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
    
    > [!IMPORTANT]
    > If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
-   > 
-   > 
+ 
 10. Select **Update flow**, which is located on the menu at the top of the screen.
 11. Send a tweet that contains the keyword you specified.
     
@@ -124,24 +123,49 @@ Follow these steps to add a comment to any action or trigger in your flow.
    ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
 
    The comments pane opens.
+1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
+
+    ![@mention or comment.](./media/multi-step-logic-flow/mention.png)
+
+    If the person you want to @mention is not a co-owner of the flow, they'll see the **Share and notify** option. This would automatically share the flow with the other user, and send an email notification.
+
+   ![Image that displays the @mention or comment dialog.](./media/multi-step-logic-flow/grant.png "@mention or comment dialog")
 
 1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
 
-   ![Image that displays comments pane](./media/multi-step-logic-flow/comments-pane.png)
+  The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
 
- The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
-
-![Image that displays the count of comments on an action](./media/multi-step-logic-flow/comments-count-icon.png)
+![Image that displays the Grant access dialog.](./media/multi-step-logic-flow/comments-count-icon.png "Grant access")
 
 ### Limitations
 
 - Makers must save the flow at least once before a comment could be added.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
+- Comments aren't allowed for managed solution flows.
+- The **Share and notify** option is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
 
 ## Address conflicts from multiple edits
 
-If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keeps their changes.
+If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keep their changes.
 
 ![Options to resolve conflicts](./media/multi-step-logic-flow/address-conflits.png)
+
+
+## New expression editor for actions (experimental feature)
+
+Do you struggle with writing expressions in your flow actions? Now, you can make use of the improved expression editor in experimental mode. To use the improved expression editor, [enable the Experimental Features setting](experimental-features.md) and select **fx** on an action.<br>
+
+- The expression editor view is larger to help you manage richer and complex expressions.
+    ![Skittles on an action editor](media/skittleEditor.png)
+
+- Ability to choose dynamic content in the expressions without having to switch tabs.
+    ![Expression editor](media/ExpressionEditor.png)
+
+- Ability to preserve expressions with errors and unblock the view to work in parallel on other parts of flow.
+
+    ![Expression with error](media/ErroredExpression.png)
+ 
+> [!NOTE]
+> Some actions may not support the new expression editor.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

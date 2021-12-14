@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/23/2020
+ms.date: 10/09/2021
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -25,6 +25,10 @@ search.audienceType:
 # Manage connections in Power Automate
 
 Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Microsoft 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
+
+Here's a quick video on managing connections.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQq]
 
 You can use connections to perform these tasks:
 

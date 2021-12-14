@@ -129,13 +129,13 @@ Follow these steps if you want to silently install Power Automate.
 
    For example, enter:
    
-   ```
+   ```CMD
     cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
    ```
    
@@ -150,7 +150,7 @@ Follow these steps if you want to silently install Power Automate.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
@@ -164,7 +164,7 @@ You can also retrieve the details of all the command line arguments from the hel
 
 Here's an example of a command line argument that installs Power Automate: 
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
@@ -172,7 +172,7 @@ Here's an example of a command line argument that installs Power Automate:
 
 Use the following command to silently uninstall Power Automate:
    
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
    ```
 

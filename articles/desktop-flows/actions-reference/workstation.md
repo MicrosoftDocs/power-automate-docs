@@ -111,6 +111,9 @@ Sets a printer as the default printer
 ### <a name="logoffuser"></a> Log off user
 Logs off the current user
 
+>[!NOTE]
+> When you run the **Log off user** action through the flow designer, the action prompts you to verify that you want to log off the current user. However, the action doesn't require confirmation when the flow is run through the console or the portal. In all cases, the action will terminate the flow. 
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -127,7 +130,13 @@ Logs off the current user
 |Can't log off the current user|Indicates a problem logging off the current user|
 
 ### <a name="shutdowncomputer"></a> Shutdown computer
-Shuts down the computer
+Instructs the computer to shut down
+
+> [!IMPORTANT]
+> Although a flow containing the **Shutdown computer** action is set to shut down the machine, some unrelated factors, such as other running Windows processes, may prevent it from achieving it.
+
+>[!NOTE]
+> When you run the **Shutdown computer** action through the flow designer, the action prompts you to verify that you want to shut down the computer. However, the action doesn't require confirmation when the flow is run through the console or the portal. In all cases, the action will terminate the flow. 
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

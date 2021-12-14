@@ -41,7 +41,11 @@ If the occurred error is a **design time** error, the platform also displays a s
 
 ![An error description inside an action.](media\errors\error-action.png)
 
-If you want to implement an error handling behavior, you can use the **Get last error** action to retrieve the latest occurred error and use it in other actions in the flow. 
+To implement an error handling behavior in your flow, you can use the **Get last error** action to retrieve the latest occurred error and use it in later actions.
+
+The **Get last error** action returns an error type variable that provides six different properties: the name, the location and the index of the action that failed, the subflow that contains this action, and the details and the message of the action.
+
+To avoid retrieving the same error value later in your flow, enable the **Clear error** option that clears the last error after storing it in the variable. 
 
 ![The Get last error action.](media\errors\get-last-error-action.png)
 

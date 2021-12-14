@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 10/09/2021
 ms.author: napienko
 search.app: 
   - Flow
@@ -25,6 +25,10 @@ search.audienceType:
 # Overview of flows with Microsoft Forms 
 
 Connectors serve as a way to connect to a service from Microsoft Power Platform. There are numerous types of form connectors available, including the [Microsoft Forms](/connectors/microsoftforms/) connector. Microsoft Forms is a new part of Office 365 Education that allows teachers and students to quickly and easily create custom quizzes, surveys, questionnaires, registrations, and more. You can follow these instructions to create a Microsoft Form.
+
+Check out this video about Microsoft Forms.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdv]
 
 ## Microsoft Forms trigger
 A trigger is the event that starts the flow. For example, Here is the full list of the Microsoft Forms triggers.
