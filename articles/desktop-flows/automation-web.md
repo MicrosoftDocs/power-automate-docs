@@ -41,7 +41,7 @@ After the browser instance is stored in a variable, you can deploy other browser
 Most browser automation actions require you to specify a browser instance and a UI element to interact with. 
 
 > [!NOTE]
-> You can find a list with all the available browser automation actions in [Browser automation actions reference](actions-reference/webautomation.md).
+> You can find a list with all the available browser automation actions in the [Browser automation actions reference](actions-reference/webautomation.md).
 
 ![Screenshot of the input of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
 
@@ -84,7 +84,7 @@ Any lists or tables of data will be automatically identified after two of their 
 Power Automate provides various HTTP actions to allow users to communicate directly with web resources, such as web pages, files, and APIs, without the need of a web browser.
 
 > [!NOTE]
-> You can find a list with all the available HTTP actions in [HTTTP actions reference](actions-reference/web.md).
+> You can find a list with all the available HTTP actions in the [HTTTP actions reference](actions-reference/web.md).
 
 ### Downloading web resources
 
