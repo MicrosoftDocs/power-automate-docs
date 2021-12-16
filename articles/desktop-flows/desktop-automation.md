@@ -42,7 +42,7 @@ To add a new UI element, highlight the appropriate element and press **Ctrl & le
 
 ![Screenshot of an application window while capturing a new UI element.](./media/ui-automation/capturing-new-ui-elements.png)
 
-To extract a piece of data from a UI window, such as its title, location, or size, use the **Get details of window** action.
+To extract a piece of data from an application window, such as its title, location, or size, use the **Get details of window** action.
 
 ![Screenshot of the Get details of window action.](./media/ui-automation/get-details-of-window-action.png)
 
