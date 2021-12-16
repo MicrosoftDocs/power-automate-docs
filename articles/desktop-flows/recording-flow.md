@@ -33,7 +33,7 @@ To record a flow that automates desktop or/and web applications:
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
     > [!NOTE]
-    > When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, the recorder tries to grab UI elements for a desktop application and not a web page.
+    > When the browser extension fails to communicate with Power Automate, the browser window is identified as a desktop application. As a result, the recorder tries to grab UI elements for a desktop application and not a web page.
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 

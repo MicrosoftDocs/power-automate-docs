@@ -57,7 +57,7 @@ To distinguish a UI element for a desktop application from a UI element for a we
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, Power Automate for desktop tries to grab UI elements for a desktop application and not a web page.
+When the browser extension fails to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
 
 ## UI elements properties
 

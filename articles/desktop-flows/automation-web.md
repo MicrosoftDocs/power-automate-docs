@@ -56,7 +56,7 @@ Existing UI elements are displayed in the UI element pane, while new ones can be
 To add a new UI element, highlight the appropriate web element and press **Ctrl & left-click**. After adding all the required elements, select **Done** to save them to the UI elements pane.
 
 > [!NOTE]
-> When the browser extension fails to communicate with Power Automate for desktop, the browser window is identified as a desktop application. As a result, Power Automate for desktop tries to grab UI elements for a desktop application and not a web page.
+> When the browser extension fails to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
 
 ![Screenshot of the highlighted UI elements to capture.](.\media\web-automation\capturing-new-elements.png)
 
