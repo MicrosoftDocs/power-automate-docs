@@ -1,5 +1,5 @@
 ---
-title: Get started from a template | Microsoft Docs
+title: Get started from a template (contains video) | Microsoft Docs
 description: Create a cloud flow from any of several built-in templates.
 services: ''
 suite: flow
