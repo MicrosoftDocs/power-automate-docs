@@ -49,7 +49,7 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
 
-To distinguish a UI element for a desktop application from a UI element for a web page, check its root selector element. UI elements for desktop applications usually have the desktop as their root element, while the UI elements for web pages have a webpage as their root element. Additionally, the UI elements for web pages consist of HTML elements that can be easily identified in the selector.
+To distinguish a UI element for a desktop application from a UI element for a web page, check its parent selector element. UI elements for desktop applications usually have the desktop as their parent element, while the UI elements for web pages have a webpage as their parent element.
 
 ![Screenshot of a selector of a UI element for destop applications.](./media/ui-elements/ui-element-desktop-selector.png)
 
@@ -57,7 +57,7 @@ To distinguish a UI element for a desktop application from a UI element for a we
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-When the browser extension fails to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
+When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
 
 ## UI elements properties
 
