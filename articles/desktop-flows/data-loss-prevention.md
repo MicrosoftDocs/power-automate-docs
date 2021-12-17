@@ -26,8 +26,8 @@ This feature will be rolling out to all cloud regions based on the following sch
 |11/1|Canada|
 |11/30|Switzerland , Brazil, Canada|
 |12/6|Asia, UK, Australia, Japan |
-|12/9 |Europe |
-|12/15 |US(NAM) |
+|12/20 |Europe |
+|12/20 |US(NAM) |
 |1/4 |Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions |
 
 
