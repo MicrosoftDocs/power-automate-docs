@@ -1,5 +1,5 @@
 ---
-title: Create an approval flow that requires everyone to approve(Video) | Microsoft Docs
+title: Create an approval flow that requires everyone to approve(contains video) | Microsoft Docs
 description: Create an approval flow that requires everyone to approve or one person to reject a request.
 services: ''
 suite: flow

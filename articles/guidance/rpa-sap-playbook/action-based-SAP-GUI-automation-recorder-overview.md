@@ -1,5 +1,5 @@
 ---
-title: Use no-code RPA with SAP GUI in Power Automate Desktop (Video) | Microsoft Docs
+title: Use no-code RPA with SAP GUI in Power Automate Desktop (contains video) | Microsoft Docs
 description: The desktop recorder translates each mouse click and keystroke into Power Automate Desktop actions and adds them to your desktop flow. 
 suite: flow
 documentationcenter: na

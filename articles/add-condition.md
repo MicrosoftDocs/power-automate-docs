@@ -1,5 +1,5 @@
 ---
-title: Add a condition to a cloud flow (Video) | Microsoft Docs
+title: Add a condition to a cloud flow (contains video) | Microsoft Docs
 description: Specify that a cloud flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow

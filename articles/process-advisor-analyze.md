@@ -1,5 +1,5 @@
 ---
-title: Analyze processes in process advisor (Video) | Microsoft Docs
+title: Analyze processes in process advisor (contains video) | Microsoft Docs
 description: Learn how to analyze processes with task mining in process advisor. The analyze feature adds a recording into the process map and associated analytics.
 author: nijemcevic 
 ms.service: power-automate
