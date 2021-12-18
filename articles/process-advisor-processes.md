@@ -1,5 +1,5 @@
 ---
-title: Prepare processes and recordings in process advisor | Microsoft Docs
+title: Prepare processes and recordings in process advisor (contains video) | Microsoft Docs
 description: Before you can use process advisor task mining, learn how to create a process, record the activities, and prepare the recording for analysis.
 author: nijemcevic 
 ms.service: power-automate
