@@ -49,7 +49,7 @@ To specify an application component precisely, Power Automate utilizes multiple 
 
 Selectors use a tree structure that describes the exact location of a component in the application or webpage. Each level is the child of the upper-level and the parent of the lower-level selector. The selector in the lower level describes the component you want to handle. 
 
-This functionality enables Power Automate to distinguish a component from components with similar attributes in the same application. Disabling or enabling levels of selectors allows you to change the location in which Power Automate will search for the component. In the case of dynamic applications, you can adapt the selectors accordingly by enabling and disabling different levels.
+This functionality enables Power Automate to distinguish a component from components with similar attributes in the same application. Disabling or enabling levels of selectors allows you to change the location in which Power Automate will search for the component.
 
 For example, the following selector pinpoints the **File** menu option in an untitled Notepad window. The first level of the selector describes the menu bar of the window, while the second level describes the **File** option.
 
