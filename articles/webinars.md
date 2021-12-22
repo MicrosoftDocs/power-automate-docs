@@ -7,7 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
-ms.date: 09/14/2021
+ms.date: 12/21/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -54,6 +54,15 @@ by Gwenael Bego and Joe Fernandez<br/>
 **T-Mobile Developer Demos RPA with Power Automate**  
 by Brian Hodel and Pranav Rastogi<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-tmobiledevrpapowerautomate.html?LCID=EN-US)
+
+**Mechanics video with Xerox - migrating and growing business with Power Automate**  
+by Debraj Ghosh, Stefan Buffner, and Shivani Agarwal<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-smbsprocessxeroxpowerauto.html?lcid=en-us)
+
+**Automate Mundane Tasks with Robotic Process Automation on Windows 11**  
+by John Anastasopoulos and Stephanie Whitaker<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-How-to-use-Power-Automate-in-Windows-11.html?lcid=en-us)
+
 
 ### See also
 
