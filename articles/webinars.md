@@ -2,7 +2,6 @@
 title: Power Automate webinars | Microsoft Docs
 description: Power Automate webinars
 author: KumarVivek
-manager: annbe
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
