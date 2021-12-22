@@ -64,3 +64,4 @@ Some automation scenarios require users to pass data in tabular form from a clou
 1. Optionally, use the **Delete file(s)** action to delete the **table.csv** file from your desktop. 
 
     ![Screenshot of the Delete files action.](media/passing-datatable/delete-files-action.png)
+    
