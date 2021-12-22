@@ -25,7 +25,7 @@ Some automation scenarios require users to pass data in tabular form from a clou
 
     This variable will be used in your cloud flow to pass data to Power Automate for desktop. The data must be in JSON format for this flow to run successfully.
 
-    To find more information regarding passing data from cloud flows to desktop flows, refere to [Trigger a Power Automate desktop flow from another flow](../link-pad-flow-portal.md).
+    To find more information regarding passing data from cloud flows to desktop flows, refer to [Trigger a Power Automate desktop flow from another flow](../link-pad-flow-portal.md).
 
     ![Screenshot of some JSON data.](media/passing-datatable/json-data.png)     
 
@@ -64,4 +64,3 @@ Some automation scenarios require users to pass data in tabular form from a clou
 1. Optionally, use the **Delete file(s)** action to delete the **table.csv** file from your desktop. 
 
     ![Screenshot of the Delete files action.](media/passing-datatable/delete-files-action.png)
-    
