@@ -25,10 +25,10 @@ Some automation scenarios require users to pass data in tabular form from a clou
 
     This variable will be used in your cloud flow to pass the data to Power Automate for desktop. The data must be in JSON format for this flow to run successfully.
 
-    ![Screenshot of some JSON data.](media/passing-datatable/json-data.png)     
-
     > ![NOTE]
     > To find more information regarding passing data from cloud flows to desktop flows, refere to [Trigger a Power Automate desktop flow from another flow](../link-pad-flow-portal.md).
+
+    ![Screenshot of some JSON data.](media/passing-datatable/json-data.png)     
 
 1. Use the **Convert JSON to custom object** action to convert the imported JSON data to a custom object. You can find more information regarding custom objects in [Advanced data types](../variable-data-types.md#advanced-data-types). 
 
