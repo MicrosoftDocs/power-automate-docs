@@ -1,5 +1,5 @@
 ---
-title: Understand data operations | Microsoft Docs
+title: Understand data operations (contains video) | Microsoft Docs
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
 services: ''
 suite: flow
