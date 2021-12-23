@@ -32,11 +32,11 @@ To edit an existing selector, select the appropriate UI element and choose the s
 
 ![Screenshot of the option to edit an existing selector.](media/build-custom-selectors/edit-selector.png)
 
-To create a new selector, select the appropriate UI element and then the **New** button.
+To add more selectors for a UI element, select the appropriate UI element and then the **New** button.
 
 ![Screenshot of the button to create a new selector.](media/build-custom-selectors/create-new-selector.png)
 
-Selectors use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left and displayed in the following form: 
+In selectors, use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left and displayed in the following form: 
 
 **element[Attribute1=”Attribute1Name”][Attribute2=”Attribute2Name”]...[Attributen=”AttributenName”]**
 
@@ -54,7 +54,7 @@ This functionality enables Power Automate to distinguish a component from compon
 For example, the following selector pinpoints the **File** menu option in an untitled Notepad window. The first level of the selector describes the menu bar of the window, while the second level describes the **File** option.
 
 > [!NOTE]
-> The menu option and the Notepad window are different UI elements, but they have a parent-child relationship. 
+> The Notepad window and the menu option are different UI elements, but they have a parent-child relationship. 
 
 ![Screenshot of a selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
