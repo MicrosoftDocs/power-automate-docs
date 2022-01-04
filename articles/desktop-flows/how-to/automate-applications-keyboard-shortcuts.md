@@ -26,7 +26,7 @@ Many desktop applications provide keyboard shortcuts that make multi-step tasks 
 
 When the window is activated or the required element is selected, use the **Send keys** action to send the intended keystrokes.
 
-To send a key, enclose its name inside curly brackets (**{}**). The curly brackets notation makes the action simulate the key's physical press. To populate hardcoded text values in a field using the **Send keys** action, enter the respective text without any notations.
+To send a key, enclose its name inside curly brackets (**{}**). The curly brackets notation makes the action simulate the key's physical press. To populate hardcoded text values in a field, enter the respective text without any notations.
 
 > [!NOTE]
 > To send a specific key multiple times, you can use the following expression instead of entering the key numerous times: **{Key:numberOfTimes}**.
