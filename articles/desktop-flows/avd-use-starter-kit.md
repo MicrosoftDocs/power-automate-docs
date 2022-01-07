@@ -37,7 +37,7 @@ To create a new scale configuration:
 
 4.  Select **New scaling configuration** in the home page.
 
-    ![New scaling configuration](media/avd-starter-kit/new-config.png)
+    ![Screenshot of the New scaling configuration](media/avd-starter-kit/new-config.png)
 
 5.  Enter the tenant domain name and tenant Id. Read the respective [documentation](/partner-center/find-ids-and-domain-names\#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name) to find more information 
 
@@ -57,7 +57,7 @@ To create a new scale configuration:
 
 12. Configure your scaling strategy:
 
-    ![Create new orchestration flow](media/avd-starter-kit/create-flow.png)
+    ![Screenshot of the dialog while creating a new orchestration flow](media/avd-starter-kit/create-flow.png)
 
 13. Select **Create Orchestration Flow**
 

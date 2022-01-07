@@ -120,7 +120,7 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
 1. If users have signed in with trial or paid accounts and want to connect their free Microsoft accounts, they have to use Power Automate for desktop version 2.6.48.21069 or above. Otherwise, they'll encounter the following error.  
 
-      ![The prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
+      ![Screenshot of the prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
 1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate for desktop.
 
