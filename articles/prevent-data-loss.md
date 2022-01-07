@@ -51,9 +51,9 @@ Region|Date available
 Canada| 2021/11/1	
 Switzerland, Brazil|2021/11/30
 Asia, UK, Australia, Japan| 2021/12/6
-Europe| 2021/12/9
-US(NAM)| 2021/12/15
-Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/1/4	
+Europe| 2022/02/17
+US(NAM)| 2022/02/17
+Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2022/2/17	
 
 >[!IMPORTANT]
 >This capability is available in preview at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
@@ -65,6 +65,9 @@ Government Community Cloud (GCC), Government Community Cloud - High (GCC High), 
 >If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
 
 ### Create a data loss prevention policy with desktop flows restrictions 
+
+>[!IMPORTANT]
+> When admins edit or create a policy, new Desktop flow connectors will be added to the default group and the policy will be applied once it is saved. If the default group is set to "Blocked" and have Desktop flows running in the target environment(s), these will get suspended.
 
 Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as “Variables” which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules.
 
