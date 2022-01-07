@@ -31,7 +31,7 @@ Power Automate enables users to read, extract, and manage data within an assortm
 
 To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. Power Automate supports both Windows OCR engine and Tesseract engine. 
 
-![extract text with ocr action properties screenshot.](\media\ocr\extract-text-ocr-example.png)
+![Screenshot of the Extract text with OCR action.](\media\ocr\extract-text-ocr-example.png)
 
 The action wherein the OCR engine is created contains the engine settings. These include the language and the image width and height multipliers. The OCR engine variable can be used in any action containing OCR capabilities.
 

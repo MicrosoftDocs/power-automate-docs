@@ -38,11 +38,11 @@ Use system actions to automate tasks which are fundamental to the Windows operat
 
 Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, the **Run application** actions opens a specific document in Word in quiet mode:
 
-![screenshot of the Run application action properties window.](\media\system\run-application-example.png)
+![Screenshot of the Run application action.](\media\system\run-application-example.png)
 
 Apart from running applications, Power Automate for desktop enables you to terminate processes by name or ID through the **Terminate process** action and wait for processes to start or stop through the **Wait for process** action.
 
-![screenshot of the Wait for process action properties window.](\media\system\wait-process-action.png)
+![Screenshot of the Wait for process action.](\media\system\wait-process-action.png)
 
 If you want to handle Windows environment variables, use the **Set Windows environment variable**, **Get Windows environment variable**, and **Delete Windows environment variable** actions for the respective tasks.
 
