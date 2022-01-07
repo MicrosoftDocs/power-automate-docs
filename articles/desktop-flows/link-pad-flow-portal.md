@@ -88,7 +88,7 @@ search.audienceType:
 
 1. Back in Power Automate, any input variables appear as fields in the UI action.
 
-   ![[Screenshot of the input variables in the Run a flow built with Power Automate Desktop action.](\media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
+   ![Screenshot of the input variables in the Run a flow built with Power Automate Desktop action.](\media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
 
 1. Output variables from Power Automate for desktop can be used in other Power Automate actions.
 
