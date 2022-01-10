@@ -43,7 +43,7 @@ Most browser automation actions require you to specify a browser instance and a 
 > [!NOTE]
 > You can find a list with all the available browser automation actions in the [Browser automation actions reference](actions-reference/webautomation.md).
 
-![Screenshot of the input of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
+![Screenshot of the inputs of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
 
 Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements nad their different types, refer to [Automate using UI elements](ui-elements.md).
 
@@ -69,6 +69,7 @@ To provide input to a web page, select the appropriate **Web form filling** acti
 ## Web data extraction
 
 To extract a piece of data from a web page, use the **Get details of web page** or the **Get details of element on web page** action, depending on whether the data in question concerns the entire web page or an element inside it.
+
 
 ![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
 
@@ -100,6 +101,9 @@ Both the **GET** and **POST** methods can be used with this action. The files ca
 ### Accessing web APIs
 
 Use the **Invoke web service** action to access web APIs. Various methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
+
+> [!NOTE]
+> Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The example presented in the following screenshot can't be applied to all scenarios, as each web service requires a different configuration and syntax. 
 
 ![Screenshot of the Invoke web service action.](./media/interacting-web-services/invoke-web-service-action.png)
 
