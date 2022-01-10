@@ -103,7 +103,7 @@ Both the **GET** and **POST** methods can be used with this action. The files ca
 Use the **Invoke web service** action to access web APIs. Various methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
 
 > [!NOTE]
-> Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The example presented in the following screenshot can't be applied in all scenarios, as each web service requires a different configuration and syntax. 
+> Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The example presented in the following screenshot can't be applied to all scenarios, as each web service requires a different configuration and syntax. 
 
 ![Screenshot of the Invoke web service action.](./media/interacting-web-services/invoke-web-service-action.png)
 
