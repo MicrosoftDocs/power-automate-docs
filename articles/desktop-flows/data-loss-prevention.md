@@ -35,7 +35,7 @@ This feature will be rolling out to all cloud regions based on the following sch
 
 While saving a desktop flow you will be notified about the data loss prevention violations the flow includes. The same will occur while attempting to run the flow from the designer and the console. A desktop flow that violates a data loss prevention (DLP) policy will be marked as suspended and the run option will be disabled.
 
-   ![Console with a suspended flow](./media/dlp/dlpsuspended.png)
+   ![Screenshot of the console with a suspended flow](./media/dlp/dlpsuspended.png)
 
 To resolve a violation navigate to the designer and delete or disable the actions causing this error.
 
@@ -47,7 +47,7 @@ For example, the flow that appears below contains the **Open SQL connection**, *
 
 To resolve this data loss prevention policy (DLP) violation, delete or disable actions from one of the two groups.
 
-   ![DLP business - non business](./media/dlp/dlpbusiness-nonbusiness.png)
+   ![Screenshot of the Data loss prevention policy violation message.](./media/dlp/dlpbusiness-nonbusiness.png)
 
 ## Blocked actions and action groups data loss prevention policy
 
@@ -58,7 +58,7 @@ In the example shown below the Email group of actions and the Send email through
 To resolve this data loss prevention policy (DLP) violation, delete or disable all actions that are marked as blocked.
 
 
-   ![DLP blocked](./media/dlp/dlpblocked.png)
+   ![Screenshot of the Data loss prevention policy violation dialog.](./media/dlp/dlpblocked.png)
 
 
 >[!NOTE]
@@ -72,7 +72,7 @@ To resolve this data loss prevention policy (DLP) violation, delete or disable a
 
 A suspended desktop flows due to data loss prevention (DLP) prevention policies violations won't be available to be selected. 
 
-   ![Cloud flow calling a DLP blocked desktop flow](./media/dlp/cloudcallsdesktopdlp.png)
+   ![Screenshot of a cloud flow calling a DLP blocked desktop flow.](./media/dlp/cloudcallsdesktopdlp.png)
 
 To be able to launch the desktop flow from a cloud flow, edit the desktop flow in the desktop designer and resolve the DLP violations.You will then be able to select again the desktop flow to run.
 

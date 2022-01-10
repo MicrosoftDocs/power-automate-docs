@@ -21,11 +21,11 @@ When you handle desktop application, you may meet scenarios in which application
 
 To get the process ID of a window, use the **Get details of a UI element in window** action and retrieve the attribute **processid** from a random element within the window. The retrieved attribute is stored by default in a variable named **AttributeValue**.
 
-![The configured Get details of a UI element in window action.](media/close-window-process-id/get-details-ui-element-action.png)
+![Screenshot of the configured Get details of a UI element in window action.](media/close-window-process-id/get-details-ui-element-action.png)
 
 > [!NOTE]
 > The **Get details of a UI element in window** action requires a UI element that specifies the selected element in the window. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).
 
 To close the window, use the **Terminate process** action and set it to stop the process with the previously retrieved ID.
 
-![The configured Terminate process action.](media/close-window-process-id/terminate-process-action.png)
+![Screenshot of the configured Terminate process action.](media/close-window-process-id/terminate-process-action.png)

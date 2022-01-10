@@ -30,7 +30,7 @@ The **Run desktop flow** action enables you to call other desktop flows while ru
 > [!NOTE]
 > You can find more information regarding the **Run desktop flow** action in [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
 
-![screenshot of the Run desktop flow action.](\media\runflow\run-desktop-flow-action.png)
+![Screenshot of the Run desktop flow action.](\media\runflow\run-desktop-flow-action.png)
 
 ## Run desktop flow action
 

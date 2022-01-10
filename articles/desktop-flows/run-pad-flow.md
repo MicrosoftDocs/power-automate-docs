@@ -113,7 +113,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle Run on all gateways in cluster. This will distribute the desktop flows runs on all the gateways within that cluster.
 
-   ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
+   ![Screenshot of the gateway details page.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!NOTE]
 >In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
@@ -151,7 +151,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
 1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
 
-    ![The settings option .](media/run-pad-portal/timeout_settings.png "The settings option")
+    ![Screenshot of the settings option.](media/run-pad-portal/timeout_settings.png "The settings option")
 
 1.  Select the **Timeout** property and update the duration to correctly handle your dekstop flow run. 
 1.	Select **Done**.
@@ -181,7 +181,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
 A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
 
-![Notification window.](\media\run-pad-flow\notification-window.png)
+![Screenshot of a notification window.](\media\run-pad-flow\notification-window.png)
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.

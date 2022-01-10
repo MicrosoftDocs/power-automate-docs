@@ -43,7 +43,7 @@ Most browser automation actions require you to specify a browser instance and a 
 > [!NOTE]
 > You can find a list with all the available browser automation actions in the [Browser automation actions reference](actions-reference/webautomation.md).
 
-![Screenshot of the input of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
+![Screenshot of the inputs of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
 
 Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements nad their different types, refer to [Automate using UI elements](ui-elements.md).
 

@@ -36,7 +36,7 @@ The desktop flows connector actions contains a new priority parameter under the 
 
 Available priorities are High and Normal (the default value). This value can also be passed dynamically using the custom value parameter. Every time the desktop flow is triggered, it will be executed with the priority that has been set.
 
-  ![Run a desktop flow.](media\monitoring\monitor-desktop-flow-queues-1.png)
+  ![Screenshot of a cloud flow using the Run a flow built with Power Automate Desktop action.](media\monitoring\monitor-desktop-flow-queues-1.png)
 
 When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that have been enqueued first will be executed first.
 
@@ -45,7 +45,7 @@ When multiple runs are queued, the execution ordering is based on the run priori
 
 Visit the details page for your machine or machine group, then click on the **Run queue** tab to see the list of queued desktop flow runs.
 
-  ![List of desktop flows on gateways.](media\monitoring\monitor-desktop-flow-queues-3.png)
+  ![Screenshot of a list of desktop flows on gateways.](media\monitoring\monitor-desktop-flow-queues-3.png)
 
 ## Prerequisites
 In order to see runs in this list, one of the following must be true:
@@ -92,7 +92,7 @@ If you are the owner of the flow, or have the role System Administrator or Envir
 
 Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
 
-  ![List of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
+  ![Screenshot of a list of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
 
 From this page you can view all the gateways to which you have access. Each gateway will have its own run queue when used to run desktop flows.
 
