@@ -515,6 +515,8 @@
       items:
       - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Retrieve details from a web page
+        href: ./desktop-flows/how-to/retrieve-details-web-page.md
       - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name: Send physical clicks on a web element
