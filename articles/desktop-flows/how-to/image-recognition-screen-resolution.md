@@ -32,10 +32,10 @@ The new resolution has to be the same as the source machine from which the image
 > [!NOTE]
 > Before using image recognition, ensure that DPI scaling stays the same among the screens. The use of varying DPI scalings may cause the flow to fail.
 
-![The Set screen resolution action.](media/image-recognition-screen-resolution/set-screen-resolution.png)
+![Screenshot of the Set screen resolution action.](media/image-recognition-screen-resolution/set-screen-resolution.png)
 
 If you want to roll back to the original resolution later in the flow, add a **Get screen resolution** before the **Set screen resolution** action.
 
 When all the image recognition procedures are completed, use the retrieved values and a second **Set screen resolution** action to set the screen back to the original resolution.
 
-![The Set screen resolution action configured to roll back to the original resolution.](media/image-recognition-screen-resolution/set-screen-resolution-roll-back.png)
+![Screenshot of the Set screen resolution action configured to roll back to the original resolution.](media/image-recognition-screen-resolution/set-screen-resolution-roll-back.png)

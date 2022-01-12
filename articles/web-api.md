@@ -151,7 +151,7 @@ Authorization: Bearer ey...
 Content-type: application/json
 {
 	"description" : "This flow will ensure consistency across systems.",
-	"ownerid@odata.bind": "systemusers(00000000-0000-0000-0000-000000000005)",
+	"ownerid@odata.bind": "systemusers(00000000-0000-0000-0000-000000000005)"
 }
 ```
 

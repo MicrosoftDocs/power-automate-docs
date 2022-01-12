@@ -23,7 +23,7 @@ search.audienceType:
 --->
 Windows 11 allow users to create automations through the preinstalled Power Automate for desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
-   ![Launching Windows 11](media\getting-started-windows-11\launching.png)
+   ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)
 
 Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 

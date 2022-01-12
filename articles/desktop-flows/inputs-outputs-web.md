@@ -41,7 +41,7 @@ You can use variables via string interpolation, for example, change the click co
 
 The command, **set window size** and the command, **type** in the following screenshots use uninitialized variables \${Width}, \${Height}, and \${search}. These variables will become input values.
 
-![Set window size and type.](../media/inputs-outputs-web/set-window-size.png "Set window size and type")
+![Screenshot of the set window size and type commands.](../media/inputs-outputs-web/set-window-size.png "Set window size and type")
 
 You can use variables directly in some commands, for example, forEach command's target/value fields are both variables, you don't need to surround it with "\${}".
 

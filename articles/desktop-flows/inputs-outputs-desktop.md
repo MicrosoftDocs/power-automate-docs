@@ -38,7 +38,7 @@ For example, you can use customer information from a SharePoint list as a source
 
 1. Select **Text** to define an input or select **Sensitive text** to define a sensitive text input. 
 
-   ![Select new.](../media/inputs-outputs-desktop/text-input.png)
+   ![Screenshot of the dialog to create new input variables.](../media/inputs-outputs-desktop/text-input.png)
 
 1. Add a name, a sample data, and a description to your input.
 
@@ -48,7 +48,7 @@ For example, you can use customer information from a SharePoint list as a source
 
     - For sensitive text inputs, the sample value will be obscured and will not be persisted after saving
 
-   ![Input fields.](../media/inputs-outputs-desktop/text-input.png)
+   ![Screenshot of the fields of the dialog to create new input variables.](../media/inputs-outputs-desktop/text-input.png)
 
 1.  Once your inputs are created, you can click on next to use them in a recording.
 
@@ -70,24 +70,24 @@ For example, you can use customer information from a SharePoint list as a source
 
     - Create a new text or sensitive text input as you are recording using the **New input** option. You will find it back in the **Set up input** step.
 
-   ![Select input type.](../media/inputs-outputs-desktop/select-input-type.png)
+   ![Screenshot of the New input option.](../media/inputs-outputs-desktop/select-input-type.png)
 
 1. Select the location where you want to use the input. The sample value you defined is automatically used. In the below example “WingTip Toys” is the sample value for the input name “Invoice Account” and is added to the application.  
     
-    ![Select location for input.](../media/inputs-outputs-desktop/select-location-for-input.png)
+    ![Screenshot of the selected location for input.](../media/inputs-outputs-desktop/select-location-for-input.png)
 
 1. In Power Automate **Record and edit steps**, expand actions that use inputs to view which one is selected.
 
     In example that follows, you will see that “Invoice Account” is used as the value.
 
-   ![Expand actions.](../media/inputs-outputs-desktop/expand-actions.png)
+   ![Screenshot of the expanded Insert text input action.](../media/inputs-outputs-desktop/expand-actions.png)
 
 
    >[!NOTE]
    >If you also used a sensitive text input, you would see an action with a lock icon on the top right to indicate that you used sensitive text input.
 
 
-   ![Expand actions.](../media/inputs-outputs-desktop/lock-action.png)
+   ![Screenshot of the expanded Insert text input 1 action.](../media/inputs-outputs-desktop/lock-action.png)
 
 1. When triggering your UI flow, you can change the input value at will.
 
@@ -101,15 +101,15 @@ Outputs can only be created as you record your Windows recorder (V1) flow.
 
 1. During a recording, select **Output**.
 
-   ![Get output.](../media/inputs-outputs-desktop/get-output.png)
+   ![Screenshot of the Get output option.](../media/inputs-outputs-desktop/get-output.png)
 
 1. Select **Select text**.
 
-   ![Select text.](../media/inputs-outputs-desktop/select-text.png)
+   ![Screenshot of the Select text on screen option.](../media/inputs-outputs-desktop/select-text.png)
 
 1. Select a user interface element to get its text for the output. The text value will be automatically captured. You can then provide a name and description for the output.
 
-   ![Select UI element.](../media/inputs-outputs-desktop/select-ui-element.png)
+   ![Screenshot of the Define output pane.](../media/inputs-outputs-desktop/select-ui-element.png)
 
 1. Provide a name and a description for the output.
 
@@ -117,7 +117,7 @@ Outputs can only be created as you record your Windows recorder (V1) flow.
 
 Your output is now available in the dedicated area of the wizard.
 
-   ![Output is available.](../media/inputs-outputs-desktop/output-available.png)
+   ![Screenshot of the available output in the wizard.](../media/inputs-outputs-desktop/output-available.png)
 
 Each output has:
 
@@ -133,11 +133,11 @@ During a recording, it is possible to copy a text in the clipboard of your compu
 
 1. Select **Get text from Clipboard**. The content of your clipboard is displayed in the **Sample value** field 
 
-   ![Clipboard output.](../media/inputs-outputs-desktop/get-output-clipboard.png)
+   ![Screenshot of the Get text from Clipboard option.](../media/inputs-outputs-desktop/get-output-clipboard.png)
 
 1. Define a name and a description for your output (as described above ) and select **Save.** 
 
-    ![Clipboard output.](../media/inputs-outputs-desktop/get-output-clipboard-2.png)
+    ![Screenshot of the fields of the Define output pane.](../media/inputs-outputs-desktop/get-output-clipboard-2.png)
 
 ## Delete an output from a UI flow
 
@@ -152,7 +152,7 @@ Testing Windows recorder (V1) flow lets you validate your changes and the approp
    >[!NOTE]
    >For any sensitive text inputs that are created in the recorder, the sample value will need to be specified again before testing.
     
-    ![New test value.](../media/inputs-outputs-desktop/new-test-value.png)
+    ![Screenshot of a new test value in the wizzard.](../media/inputs-outputs-desktop/new-test-value.png)
 
 1. Select **Test now** to see the legacy software being automated. You will see UI flow automation playing back the steps you recorded. **Please do not interact with your device for the duration of playback.**
 
@@ -160,15 +160,15 @@ Testing Windows recorder (V1) flow lets you validate your changes and the approp
 
     - For each action, a status indicator that shows that the test worked well, along with the associated inputs.
 
-      ![A successful run.](../media/inputs-outputs-desktop/successful-run.png)
+      ![Screenshot of the Insert text input 1 action after a successfull run.](../media/inputs-outputs-desktop/successful-run.png)
 
    - For each action that uses a **Sensitive text** input, the input value will not be displayed.
 
-      ![Another image.](../media/inputs-outputs-desktop/sensitive-text-not-displayed.png)
+      ![Screenshot of the Insert text input 2 action after a successfull run.](../media/inputs-outputs-desktop/sensitive-text-not-displayed.png)
 
    - You will also see the value of the outputs obtained for this test at the bottom of the designer. 
 
-      ![Another image.](../media/inputs-outputs-desktop/outputs-value.png)
+      ![Screenshot of the values of the output variables.](../media/inputs-outputs-desktop/outputs-value.png)
 
    - If an error occurs, you'll see which step caused the problem along with a screenshot at the moment the error occurred.
 
