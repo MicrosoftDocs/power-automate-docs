@@ -1,5 +1,5 @@
 ---
-title: Share processes in process advisor | Microsoft Docs
+title: Share processes in process advisor (contains video) | Microsoft Docs
 description: Share a process with others so that they can also offer input and additional insights. You can share a process with a co-owner or a contributor.
 author: nijemcevic 
 ms.service: power-automate

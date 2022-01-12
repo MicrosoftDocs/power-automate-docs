@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate | Microsoft Docs
+title: Get started with Power Automate (contains video) | Microsoft Docs
 description: Quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/09/2021
+ms.date: 10/01/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -33,11 +33,13 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * Connect to more than 500 data sources or any publicly available API
 * You can even automate tasks on your local computer like computing data in Excel. 
 
-Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation. 
+Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qNQm]
+The following video shows you how to get started building your first flow.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUx1]
 
 ## Who is Power Automate for?
 

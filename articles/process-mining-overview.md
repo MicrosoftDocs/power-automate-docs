@@ -1,5 +1,5 @@
 ---
-title: Overview of process mining in process advisor (preview) | Microsoft Docs
+title: Overview of process mining in process advisor (preview) (contains video) | Microsoft Docs
 description: This topic is an overview of process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
@@ -26,13 +26,13 @@ Process mining in process advisor allows you to take the event data from your sy
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-Here's a short video that explains the concept of process mining in process advisor:<br>
+This short video explains the concept of process mining in process advisor:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWONpg]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWONpg]
 
 ## Business example
 
-As a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure to pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor will produce a process map. This map enables you to visualize the activities in the procure to pay process to derive the following insights:
+For example, as a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
 
 - Which activities in a process take the longest?
 
@@ -44,12 +44,12 @@ You can easily filter for custom attributes such as location, department, and ot
 
 ## Steps to process mining
 
-- [Prepare processes and data](process-mining-processes-and-data.md#data-requirements).
+- [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
-- [Transform and map data](process-mining-transform.md).
+- [Transform and map data](process-mining-transform.md)
 
-- [Troubleshoot issues (if necessary)](process-mining-troubleshoot.md).
+- [Troubleshoot issues (if necessary)](process-mining-troubleshoot.md)
 
-- [Visualize and gain insights from processes](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+- [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics)
 
-- [Edit and refresh processes](process-mining-data-source.md).
+- [Edit and refresh processes](process-mining-data-source.md)

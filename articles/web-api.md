@@ -3,7 +3,7 @@ title: Flows are now stored in Dataverse and use the rich Web API
 description: Flows are now stored in Dataverse and use the rich Web API.
 author: msftman
 ms.reviewer: deonhe
-ms.date: 09/09/2021
+ms.date: 11/30/2021
 ms.subservice: cloud-flow
 ms.topic: article
 ms.prod: 
@@ -95,6 +95,8 @@ As shown earlier, you can get the list of workflows by calling `GET` on `workflo
 | type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
+
+The [documentation for the Dataverse workflow](/powerapps/developer/data-platform/reference/entities/workflow) has additional information about properties/fields and their usage.
 
 You can also request specific properties, filter the list of flows, and much more, as described in the [Dataverse API documentation for querying data](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 

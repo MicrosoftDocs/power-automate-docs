@@ -449,6 +449,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    # - name: Automate on virtual desktops
+    #  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
@@ -502,7 +504,9 @@
       - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
+      - name: Automate with mouse, keyboard, and OCR actions
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
       - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
       - name: Automate Java applications
@@ -511,6 +515,8 @@
       items:
       - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Retrieve details from a web page
+        href: ./desktop-flows/how-to/retrieve-details-web-page.md
       - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name: Send physical clicks on a web element
@@ -549,6 +555,8 @@
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
+    - name: Pass a datatable from a cloud flow to a desktop flow
+      href: ./desktop-flows/how-to/passing-datatable.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:

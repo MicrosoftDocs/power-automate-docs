@@ -23,7 +23,7 @@ To autofit Excel columns using Power Automate:
 
 1. Use the **Set variable** action to create a new variable containing the path of the Excel file you want to manipulate. In this example, the variable is named **ExcelFile**.
 
-    ![The configured Set variable action.](media/autofit-excel-columns-vbscript/set-variable-action.png)
+    ![Screenshot of the configured Set variable action.](media/autofit-excel-columns-vbscript/set-variable-action.png)
 
 1. Deploy the **Run VBScript** action and populate the following code. Before running the flow, replace the **SheetName** placeholder with the name of the sheet you want to autofit or a variable containing it.
 
@@ -46,5 +46,5 @@ To autofit Excel columns using Power Automate:
     objWorkbook.Close SaveChanges = True
     ```
 
-    ![The populated Run VBScript action.](media/autofit-excel-columns-vbscript/run-vbscript-action.png)
+    ![Screenshot of the populated Run VBScript action.](media/autofit-excel-columns-vbscript/run-vbscript-action.png)
 

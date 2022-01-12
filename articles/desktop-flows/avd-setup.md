@@ -213,7 +213,7 @@ on again.
 
 -   [Create an app registration with Azure Service Management permission](/azure/active-directory/develop/quickstart-register-app)
 
-    ![App Regsitration Screenshot](media/avd-starter-kit/AppRegistration.png)
+    ![Screenshot of the App Registration dialog.](media/avd-starter-kit/AppRegistration.png)
 
 > [!NOTE]
 >The AAD application needs to have read permission on the subscription.
