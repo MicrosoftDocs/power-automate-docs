@@ -4,7 +4,7 @@ description: File Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -41,13 +41,13 @@ Power Automate provides the files actions to automate managing files and manipul
 
 To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
 
-  ![Screenshot of the get files in folder action properties window.](\media\file\get-files-in-folder-example.png)
+  ![Screenshot of the Get files in folder action.](\media\file\get-files-in-folder-example.png)
 
 To copy or move files, use the Copy file(s) and Move file(s) actions, respectively. 
 
 Rename a file or multiple files with the **Rename file(s)** action. Select to either set a new name or add, replace or remove a string of text to the existing filename. In the figure below, a list of files has been selected and the string **backup_** will be appended to the beginning of each file.
 
-  ![Screenshot of the rename files action properties window.](\media\file\rename-files-example.png)
+  ![Screenshot of the Rename files action.](\media\file\rename-files-example.png)
 
 The same action can be used to remove this string of text should the backed up files be restored.
 
@@ -328,7 +328,7 @@ Retrieve one or more parts (directory, filename, extension etc) from a text that
 ##### <a name="getpathpart_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|File path doesn't exist|Indicates that the file path doesn't exist|
+|File path contains invalid characters|Indicates that the file path doesn't exist|
 
 ### <a name="gettemppath"></a> Get temporary file
 Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information)

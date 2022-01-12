@@ -4,7 +4,7 @@ description: OCR Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -23,23 +23,38 @@ Initiate OCR engines to perform OCR related activities
 |-----|
 |[If text on screen (OCR)](#iftextonscreenaction)|
 |[Wait for text on screen (OCR)](#waittextonscreenaction)|
-|[Create Tesseract OCR engine](#createtesseractocrenginebase)|
-|[Create MODI OCR engine](#createmodiengine)|
 |[Extract text with OCR](#extracttextwithocr)|
 
 ## Getting started with OCR actions
 
 Power Automate enables users to read, extract, and manage data within an assortment of files through optical character recognition (OCR).
 
-To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. 
+To create an OCR engine and extract text from images and documents with OCR, use the **Extract text with OCR** action. In the figure below, the engine is created for the purpose of this action alone, and the OCR source is a locally stored image. The action is set to extract text from the entire image. Power Automate supports both Windows OCR engine and Tesseract engine. 
 
-![extract text with ocr action properties screenshot.](\media\ocr\extract-text-ocr-example.png)
+![Screenshot of the Extract text with OCR action.](\media\ocr\extract-text-ocr-example.png)
 
 The action wherein the OCR engine is created contains the engine settings. These include the language and the image width and height multipliers. The OCR engine variable can be used in any action containing OCR capabilities.
 
 > [!WARNING]
 > Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
 
+### Using the Windows OCR engine
+
+The default engine of all OCR actions in Power Automate is the Windows OCR engine. To extract any text using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
+
+If the appropriate language pack hasn't been installed, Power Automate will throw an error prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
+
+After installing the appropriate language pack, extend the **OCR engine settings** of the OCR action and select the desired language. The Windows OCR engine supports 25 languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovak, Spanish, Swedish, and Turkish.
+
+### Using the Tesseract OCR engine
+
+Apart from the Windows OCR engine, Power Automate supports the Tesseract engine. This engine can extract text in five languages without further configuration: English, German, Spanish, French, and Italian.
+
+To extract text in a language outside the mentioned list, enable the **Use other languages** option in the **OCR engine settings** of the OCR action. When this option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
+
+The **Language abbreviation** field indicates to the engine which language to look for during OCR. The **Language data path** field contains the language data files (.traineddata) used to train the OCR engine. You can find the language data files for all the available languages in [this GitHub repository](https://github.com/tesseract-ocr/tessdata).
+
+The Tesseract engine can be also used to extract text from multilingual documents. You can find more information regarding extracting text from multilingual documents in [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
 
 ## OCR actions
 
@@ -50,7 +65,7 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If text|N/A|Exists, Doesn't exist|Exists|Specifies whether to check if the text exists or not on the given source to analyze|
-|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine type|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
 |OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |Text to find|No|Text value||The text to search for in the specified source|
 |Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
@@ -66,9 +81,17 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - The **OCR engine variable** option is planned for deprecation.
 
 
 ##### Variables Produced
@@ -84,6 +107,9 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
 |Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
 
 
@@ -94,7 +120,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for text to|N/A|Appear, Disappear|Appear|Specifies whether to wait for the text to appear or disappear|
-|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine type|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
 |OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |Text to find|No|Text value||The text to search for in the specified source|
 |Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
@@ -110,9 +136,18 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
+|Fail with timeout error|N/A|Boolean value|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> - The **OCR engine variable** option is planned for deprecation.
 
 
 ##### Variables Produced
@@ -128,9 +163,13 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Can't check if text exists in non interactive mode|Indicates that it isn't possible to check for the text on the screen when in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the specified subregion coordinates are invalid|
 |Failed to analyze text with OCR|Indicates an error occured while trying to analyze the text using OCR|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
 |OCR engine not alive|Indicates that the OCR engine isn't alive|
+|Timeout error|Indicates that the action failed after a set time period|
 
-
+<!--
 ### <a name="createtesseractocrenginebase"></a> Create Tesseract OCR engine
 Create a Tesseract OCR engine
 
@@ -200,14 +239,14 @@ The MODI OCR engine is planned for deprecation. To prevent flows from failing af
 You can perform the initialization directly through the actions that require the engines without using the **Create Tesseract OCR engine** action.
 
 ![The Tesseract OCR engine options in the Extract text with OCR action.](media/ocr/initialize-tesseract-ocr-engine.png)
-
+--> 
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one.|
+|OCR engine|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one.|
 |OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
 |Image file path|No|File||The path of the image to perform the OCR operation on|
@@ -218,9 +257,16 @@ Extract text from a given source using the given OCR engine
 |X2|Yes|Numeric value||The end X coordinate of the subregion to narrow down the scan|
 |Y1|Yes|Numeric value||The start Y coordinate of the subregion to narrow down the scan|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to narrow down the scan|
-|Wait for image to appear|N/A|Boolean value|False|Whether to wait for the image to appear on the screen or foreground window|
-|Timeout|Yes|Numeric value|0|Specifies the time to wait for the operation to complete before the action fails|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 
+> [!NOTE]
+> The **OCR engine variable** option is planned for deprecation.
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -234,10 +280,11 @@ Extract text from a given source using the given OCR engine
 |Failed to extract text with OCR|Indicates an error occurred while trying to extract text with OCR from the given source|
 |Image file not found|Indicates that the file doesn't exist on the given path|
 |Landmark image not found |Indicates that the landmark image doesn't exist|
-|OCR engine not alive|Indicates that the OCR engine isn't alive|
 |Can't get text from screen in non-interactive mode|Indicates that it isn't possible to get text from screen when in non-interactive mode|
-
-
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
+|OCR engine not alive|Indicates that the OCR engine isn't alive|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -25,4 +25,4 @@ To create app passwords for Microsoft personal or organizational accounts, follo
 
 After creating an app password, populate it in the **Password** field of the **IMAP server** or **SMTP server** section of the email actions.
 
-![The Password field in the Send email action.](media/automate-emails-accounts-two-step-verification/send-email-action.png)
+![Screenshot of the Password field in the Send email action.](media/automate-emails-accounts-two-step-verification/send-email-action.png)

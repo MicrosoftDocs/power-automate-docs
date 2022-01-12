@@ -30,5 +30,5 @@ To convert a file to this format, use the **Run PowerShell script** action and p
 
 The action produces the **PowershellOutput** variable that stores a text value representing the contents of the specified file in Base64 format.
 
-![The Run PowerShell script action.](media/convert-file-base64-format/run-powershell-scripti-action.png)
+![Screenshot of the Run PowerShell script action.](media/convert-file-base64-format/run-powershell-scripti-action.png)
 
