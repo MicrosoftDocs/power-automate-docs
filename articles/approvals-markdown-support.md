@@ -259,7 +259,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 </td>
 <td>Some examples on inserting special characters
 <p>Enter ```\\``` to get \\ </p>
-<p>Enter ```\_``` to get _ </p>
+<p>Enter ```\_``` to get \_ </p>
 <p>Enter ```\#``` to get \# </p>
 <p>Enter ```\(``` to get \( </p>
 <p>Enter ```\.``` to get \. </p>
