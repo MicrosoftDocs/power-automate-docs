@@ -46,7 +46,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
 | management.azure.com | https | Access to the Azure Resource Manager. |
-| login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to Active Directory Authentication Library (ADAL). |
+| login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
 | graph.microsoft.com <br />graph.windows.net<br /> | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
 | *.flow.microsoft.com | https | Access to the Power Automate site. |
