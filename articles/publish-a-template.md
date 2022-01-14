@@ -45,7 +45,7 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
 
      The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
 
->![NOTE]
+>[!NOTE]
 >Templates are for use in the public gallery only. They are not supported for private use.
 
 
