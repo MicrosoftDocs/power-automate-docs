@@ -7,7 +7,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: overview
 ms.date: 10/28/2021
 ms.author: marleon
 search.app: 

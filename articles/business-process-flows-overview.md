@@ -8,8 +8,8 @@ author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
-ms.topic: "article"
-ms.custom: intro-internal
+ms.topic: overview
+
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"

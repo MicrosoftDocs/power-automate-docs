@@ -4,8 +4,8 @@ description: This topic provides an overview of the process advisor feature in P
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: article
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 11/02/2021
 ms.author: tatn
 ms.reviewer: v-aangie
