@@ -51,7 +51,7 @@ By default, both are installed on your device.
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
-![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
+![Screenshot of the installation details.](../media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
@@ -84,7 +84,7 @@ During installation, you can change the default settings if you don't want to se
 
 After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image.](../media/desktop-flows-setup/screen.png)
+![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your browser automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -129,13 +129,13 @@ Follow these steps if you want to silently install Power Automate.
 
    For example, enter:
    
-   ```
+   ```CMD
     cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
    ```
    
@@ -150,7 +150,7 @@ Follow these steps if you want to silently install Power Automate.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
@@ -164,7 +164,7 @@ You can also retrieve the details of all the command line arguments from the hel
 
 Here's an example of a command line argument that installs Power Automate: 
 
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
@@ -172,7 +172,7 @@ Here's an example of a command line argument that installs Power Automate:
 
 Use the following command to silently uninstall Power Automate:
    
-   ```
+   ```CMD
    Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
    ```
 
@@ -216,11 +216,11 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
  
    - To connect to a machine or a machine group, select **Directly to machine** in the **Connect** field, and choose the respective machine or machine group in the **Machine or machine group** field.
 
-      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
+      ![Screenshot of the Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
 
    - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field, and choose the respective gateway in the **Choose a gateway** field.
 
-      ![The Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
+      ![Screenshot of the Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
 
    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
 

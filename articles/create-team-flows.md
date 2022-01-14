@@ -188,11 +188,13 @@ You can share a copy of a cloud flow with another user, who can then use the def
 
 ### What happens if the user who created a shared flow leaves the organization?
 
-If the shared flow still has an active owner, the flow will continue to run. 
+If the shared flow still has an active owner, the flow continues to run. 
 
 >[!NOTE]
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
+
+ If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
 ### How can I change the owner of a solution flow?
 It is currently not possible to change the owner of a solution flow in the modern solution explorer. That capability will be added in the future.

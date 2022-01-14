@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/01/2021
+ms.date: 11/16/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -49,10 +49,11 @@ Power Automate provides the ability to create and enforce policies that classify
 Region|Date available
 ------|---------------
 Canada| 2021/11/1	
-Asia, UK, Australia, Japan, Switzerland, Brazil| 2021/11/8
-Europe| 2021/11/16
-US(NAM)| 2021/11/18
-Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2021/11/29	
+Switzerland, Brazil|2021/11/30
+Asia, UK, Australia, Japan| 2021/12/6
+Europe| 2022/02/17
+US(NAM)| 2022/02/17
+Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions| 2022/2/17	
 
 >[!IMPORTANT]
 >This capability is available in preview at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
@@ -65,20 +66,25 @@ Government Community Cloud (GCC), Government Community Cloud - High (GCC High), 
 
 ### Create a data loss prevention policy with desktop flows restrictions 
 
+>[!IMPORTANT]
+> When admins edit or create a policy, new Desktop flow connectors will be added to the default group and the policy will be applied once it is saved. If the default group is set to "Blocked" and have Desktop flows running in the target environment(s), these will get suspended.
+
 Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as “Variables” which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules.
 
 ### After the policy is enabled
 -	Makers with the latest Power Automate Desktop will not be able to debug, run, or save desktop flows that have data loss prevention policy violations.
 - Makers will not be able to select a desktop flow that is in violation of a data loss prevention policy from a cloud flow step.
-- Makers will not be able to save a cloud flow with a desktop flow, if the cloud flow contains connectors that aren't in the same category as the modules used in the desktop flow.
+
  
 ### Background jobs
 - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, and then suspends the flows that violate the updated policy.
-- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to manually turn them on manually.
+- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to turn them on manually.
 
 ### Known limitations
-1.	We currently do not support cross checking all modules used between a desktop flows and all its child desktop flows. This feature is coming in general availability.
-2.	We do not run background jobs if there is no data loss prevention policy changes. So there's a potential that makers may have edited some desktop flows where there are existing cloud flows that have referenced those desktop flows, causing new violations. We plan to run the background job more frequently in general availability.
+1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
+1. There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
+1. There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
+
 
 ## Next steps
 

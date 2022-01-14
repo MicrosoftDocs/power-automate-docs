@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/13/2020
+ms.date: 11/10/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,7 +28,7 @@ search.audienceType:
 
 Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Power Automate.
 
-With a gateway, you can connect to on-premises data over these connections:
+With a gateway, you can connect to on-premises data over the following connections.
 
 * Apache Impala
 * Custom connectors that you create
@@ -41,7 +41,7 @@ With a gateway, you can connect to on-premises data over these connections:
 * PostgreSQL
 * SharePoint
 * SQL Server
-* Teradata (Preview)
+* Teradata
 
 > [!IMPORTANT]
 > Microsoft SharePoint data gateways now support both HTTP and HTTPS traffic.

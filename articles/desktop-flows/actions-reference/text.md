@@ -4,7 +4,7 @@ description: Text Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -38,10 +38,7 @@ Control and manipulate text
 |[Parse text](#parsetext)|
 |[Replace text](#replace)|
 |[Escape text for regular expression](#escapeforregularexpression)|
-
-<!--
 |[Recognize entities in text](#recognizeentitiesintext)|
--->
 
 ## Getting started with text actions
 
@@ -49,21 +46,19 @@ To combine a list of text values into a single text value, use the **Join text**
 
 To find a string in a text and replace it with another string or character, use the **Replace text** action. The following figure demonstrates a replacement of the string "Product Characteristics" with "Characteristics".
 
-![Screenshot of replace text action.](\media\text\replace-text-example.png)
+![Screenshot of the Replace text action.](\media\text\replace-text-example.png)
 
 Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
 
-![Screenshot of parse text action.](\media\text\parse-text-example.png)
+![Screenshot of Parse text action.](\media\text\parse-text-example.png)
 
 To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
 
 Similarly, the actions **Convert text to datetime** and **Convert datetime to text** are used to ensure that dates are correctly formatted.
 
-
-<!--
-## Getting started with the Recognize entities in text action
+### Use the Recognize entities in text action
 
 Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
@@ -100,8 +95,6 @@ The following table displays various examples of entities that the **Recognize e
 
 >[!NOTE]
 > The **Recognize entities in text** action supports 14 different languages. However, some entities may not be available for specific languages. You can find more information about language restrictions in [Microsoft Recognizers Text - Supported entities across cultures](https://github.com/microsoft/Recognizers-Text#supported-entities-across-cultures).
-
--->
 
 ## Text actions
 
@@ -444,8 +437,6 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
 - This action doesn't include any exceptions
 
-<!--
-
 ### <a name="recognizeentitiesintext"></a> Recognize entities in text
 Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
 
@@ -463,7 +454,5 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 
 ##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
 - This action doesn't include any exceptions
-
--->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Use process mining to analyze and improve your processes in process advisor (preview) | Microsoft Docs
-description: This topic is a tutorial with demo data in process mining using the process advisor feature in Power Automate.
+title: Get started with process mining in process advisor (preview) | Microsoft Docs
+description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
@@ -22,7 +22,11 @@ search.audienceType:
 
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
-For the process mining tutorial, download the sample event log CSV file: [ProcessMiningSampleData.csv](https://go.microsoft.com/fwlink/?linkid=2174463). For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-tutorial.md).
+- For the process mining tutorial, download the sample event log CSV file: [English version](https://go.microsoft.com/fwlink/?linkid=2181220) or [French version](https://go.microsoft.com/fwlink/?linkid=2181117). 
+
+- For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-tutorial.md).
+
+The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -49,14 +53,14 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
 
 ## Import data and analyze
 
-1. In your process, select **Setup** in the toolbar. <!-- Is this correct? I added it. -->
+1. In your process, select **Setup** in the toolbar.
 
 1.	Select **Blank table**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of blank table selection.](media/process-mining-tutorial/blank-table.png "Blank table selection")
 
-1. Open the sample event log CSV file that you downloaded in Microsoft Windows Notepad (or any text editor).
+1. Use Notepad or any other text editor to open the sample event log CSV file that you downloaded.
 
 1. Select all contents of the CSV file by pressing **Ctrl** + **A**.
 
@@ -98,4 +102,9 @@ For the process mining tutorial, download the sample event log CSV file: [Proces
     > [!div class="mx-imgBorder"]
     > ![Screenshot of an analyzed process.](media/process-mining-tutorial/analytics.png "Process status is 'Analyzed'")
 
-1. For a description of how to analyze the process map and a short video, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md).
+
+<!-- editor note: I changed the link text to match the title of the page it opens. -->
+
+For a description of how to analyze the process map and a short video, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
+
+

@@ -24,6 +24,11 @@ search.audienceType:
 ---
 # Use inputs and outputs in Selenium IDE flows
 
+>[!IMPORTANT]
+>This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+
 You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 
 ## Define inputs for a Web UI flow
@@ -36,7 +41,7 @@ You can use variables via string interpolation, for example, change the click co
 
 The command, **set window size** and the command, **type** in the following screenshots use uninitialized variables \${Width}, \${Height}, and \${search}. These variables will become input values.
 
-![Set window size and type.](../media/inputs-outputs-web/set-window-size.png "Set window size and type")
+![Screenshot of the set window size and type commands.](../media/inputs-outputs-web/set-window-size.png "Set window size and type")
 
 You can use variables directly in some commands, for example, forEach command's target/value fields are both variables, you don't need to surround it with "\${}".
 

@@ -4,7 +4,7 @@ description: Terminal emulation Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
@@ -55,7 +55,7 @@ Depending on the provider you're using, select the appropriate HLLAPI DLL file l
 
 After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action. If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
 
-![Screenshot of the Close terminal sessionaction.](media/terminalemulation/close-terminal-session-action.png)
+![Screenshot of the Close terminal session action.](media/terminalemulation/close-terminal-session-action.png)
 
 ## Terminal emulation actions
 
