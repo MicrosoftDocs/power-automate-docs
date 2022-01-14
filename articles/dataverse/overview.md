@@ -11,7 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2021

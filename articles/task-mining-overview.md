@@ -4,8 +4,8 @@ description: Quickly capture detailed steps for each process in your organizatio
 author: nijemcevic 
 ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: article
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 10/19/2021
 ms.author: tatn
 ms.reviewer: v-aangie
