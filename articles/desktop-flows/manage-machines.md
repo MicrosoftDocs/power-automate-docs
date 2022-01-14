@@ -113,6 +113,9 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > [!NOTE]
 > To apply this functionality, you have to own a [premium per-user plan with attended RPA](https://flow.microsoft.com/pricing/). 
 
+> [!IMPORTANT]
+> By creating a new desktop flows connection, you allow Power Automate to create a Windows session on your machine to execute your desktop flows. Make sure you trust co-owners of your flows before using your connection in a cloud flow.
+
 
 ## View list of machines 
 
@@ -166,6 +169,22 @@ There are two levels of permissions that you can use when managing access to you
 |Add machine to group|X|| 
 |Edit details|X|| 
 |Delete machine|X|| 
+
+
+## Delete a machine
+
+Machines cannot be deleted from the machine runtime app. 
+To delete your machine:
+
+1. Sign into Power Automate. 
+
+1. Select **Monitor**, then select **Machines**. 
+
+1. Select your machine from the list. 
+
+1. Select **Delete machine** from the command bar
+
+
 
 ## Switch from gateways to direct connectivity 
 
