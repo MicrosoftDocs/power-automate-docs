@@ -21,6 +21,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 # Create a cloud flow from a template in Power Automate
 

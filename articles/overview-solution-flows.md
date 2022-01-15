@@ -5,10 +5,10 @@ author: msftman
 manager: kvivek
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.date: 10/11/2021
 ms.author: deonhe
-ms.custom: intro-internal
+
 search.app: 
   - Flow
 search.audienceType: 
