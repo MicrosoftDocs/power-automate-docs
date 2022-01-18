@@ -23,16 +23,16 @@ To check whether a variable contains a number or not:
 
 1. Use the **Set variable** action to create a new variable that indicates whether the variable you want to check contains a number or not. Initialize this variable to **true**. In the following example, the created variable is named **IsNumber**.
 
-    ![The configured Set variable action.](media/check-if-variable-numeric/set-variable-action.png)
+    ![Screenshot of the configured Set variable action.](media/check-if-variable-numeric/set-variable-action.png)
 
 1. Deploy the **Convert text to number** action and configure it to convert the variable you want to check to number.
 
-    ![The configured Convert text to number action.](media/check-if-variable-numeric/convert-text-number-action.png)
+    ![Screenshot of the configured Convert text to number action.](media/check-if-variable-numeric/convert-text-number-action.png)
 
 1. Select the **On error** option in the action, and create a new rule that sets the **IsNumber** variable to false every time the action fails. Additionally, configure the flow to continue running when an error occurs.
 
-    ![The on error configuration of the Convert text to number action.](media/check-if-variable-numeric/convert-text-number-action-on-error.png)
+    ![Screenshot of the on error configuration of the Convert text to number action.](media/check-if-variable-numeric/convert-text-number-action-on-error.png)
 
 1. Now, you can use conditionals to implement different behavior depending on the value of the **IsNumber** variable.
 
-    ![An if - else block that checks the value of the IsNumber variable.](media/check-if-variable-numeric/conditionals.png)
+    ![Screenshot of the if - else block that checks the value of the IsNumber variable.](media/check-if-variable-numeric/conditionals.png)

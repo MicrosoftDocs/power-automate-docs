@@ -25,14 +25,14 @@ To resolve this issue, you can:
 
 - Increase the resolution of the screen manually or using the **Set screen resolution** action.
 
-    ![The Set screen resolution action.](media/access-elements-depend-window/set-screen-resolution-action.png)
+    ![Screenshot of the Set screen resolution action.](media/access-elements-depend-window/set-screen-resolution-action.png)
 
     > [!Important]
     >To use the **Set screen resolution** action in flows triggered through the Power Automate portal, you have to be connected to the console session of your machine, where you can manually change the screen resolution. For example, you can use your machine's physical screen to connect to the machine. In remote sessions, such as unattended scenarios that use remote desktop clients, the action has no effect, as users can't manually change the resolution.
 
 - Maximize the window of the application using the **Set window state** action.
 
-    ![The Set window state action.](media/access-elements-depend-window/set-window-state-action.png)
+    ![Screenshot of the Set window state action.](media/access-elements-depend-window/set-window-state-action.png)
 
 - Zoom in or out of the window.
 

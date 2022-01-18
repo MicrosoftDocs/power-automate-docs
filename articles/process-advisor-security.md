@@ -5,7 +5,7 @@ author: nijemcevic
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 5/25/2021
+ms.date: 12/17/2021
 ms.author: tatn
 ms.reviewer: v-aangie
 search.app: 
@@ -41,6 +41,13 @@ These security roles have privileges to the process advisor tables in Dataverse.
 
 > [!IMPORTANT]
 > The Process Advisor Application is an *internal security role* that process advisor uses. Don't assign this security role to users. Don't modify the set of privileges in the Process Advisor User or Process Advisor Application security roles.
+>
+> If you’re using Conditional Access polices to limit access to Power Automate and it’s features, the following apps must be included in **Cloud apps** policy application:
+> 
+> - Microsoft PowerApps
+> - Microsoft Flow
+> 
+> Currently, **having conditional access to only Microsoft Flow is not enough**. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
 
 ## Privacy
 

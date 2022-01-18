@@ -1,5 +1,5 @@
 ---
-title: Overview of the types of flows in Power Automate| Microsoft Docs
+title: Overview of the types of flows in Power Automate(contains video) | Microsoft Docs
 description: Provides an overview of cloud, dekstop, business process flows.
 services: ''
 suite: flow
@@ -11,7 +11,7 @@ tags: ''
 ms.service: power-automate
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/08/2021

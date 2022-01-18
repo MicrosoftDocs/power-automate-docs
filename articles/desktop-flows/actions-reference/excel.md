@@ -4,7 +4,7 @@ description: Excel Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -56,29 +56,29 @@ Automate any Excel related activity
 
 After setting an Excel instance, either with the **Launch Excel** or the **Attach to running Excel** action, you may read from or write to an Excel file.
 
-To read and extract data from an Excel document, use the **Read from Excel Worksheet** action. Retrieve the value of a single cell, or a table of data.
+To read and extract data from an Excel document, use the **Read from Excel worksheet** action. Retrieve the value of a single cell, or a table of data.
 
 In the following example, to read the cells A1 through E5 as seen in the selection below:
 
-![excel sample data.](\media\excel\excel-data.png)
+![Screenshot of some Excel sample data.](\media\excel\excel-data.png)
 
 The action has to have the following configuration:
 
-![read from excel action properties window.](\media\excel\read-from-excel-action-properties.png)
+![Screenshot of the Read from Excel worksheet action.](\media\excel\read-from-excel-action-properties.png)
 
 When the flow runs, the action stores the data in a datatable type variable:
 
-![datatable value viewer.](\media\excel\datatable-values.png)
+![Screenshot of the a datatable displayed in the value viewer.](\media\excel\datatable-values.png)
 
-Write data from the flow to Excel by using the **Write to Excel Worksheet** action. This action can write any static data or variable to a specified cell, or multiple cells in an Excel worksheet. 
+Write data from the flow to Excel by using the **Write to Excel worksheet** action. This action can write any static data or variable to a specified cell, or multiple cells in an Excel worksheet. 
 
 In the following example, the action writes the above mentioned datatable variable to cell A51.
 
-![write to excel action properties window.](\media\excel\write-to-excel-action-properties.png)
+![Screenshot of the Write to Excel worksheet action.](\media\excel\write-to-excel-action-properties.png)
 
 Each cell in the workbook is populated with its corresponding cell in the datatable. The result is that the A51 to E55 cell range is filled with the contents of the datatable.
 
-![excel data written.](\media\excel\excel-data-written.png)
+![Screenshot of written Excel data.](\media\excel\excel-data-written.png)
 
 ## Excel actions
 
@@ -547,7 +547,7 @@ Saves a previously launched Excel instance
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to save. This variable must have been previously specified in a Launch Excel action|
 |Save mode|N/A|Save document, Save document as|Save document|How to save the document of this instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml)|Default (From Extension)|The format to save the document as|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format to save the document as|
 |Document path|No|File||The full path to save the document as|
 
 
@@ -588,7 +588,7 @@ Closes an Excel instance
 |-----|-----|-----|-----|-----|
 |Excel instance|No|Excel instance||The Excel instance to close. This variable must have been previously specified in a Launch Excel action|
 |Before closing Excel|N/A|Do not save document, Save document, Save document as|Do not save document|Whether and how to save the document of this instance before closing that instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml)|Default (From Extension)|The format of the document|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format of the document|
 |Document path|No|File||The full path of the document|
 
 

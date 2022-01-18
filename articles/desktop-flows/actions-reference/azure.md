@@ -4,7 +4,7 @@ description: Azure Actions Reference
 author: mariosleon
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
@@ -57,11 +57,11 @@ Lastly, choose the environment you want to use for authentication and populate t
 
 Apart from manual configuration, you can select **With file** in **Authentication type** and use a file containing all the required information.
 
-![Screenshot of the Create session action](media/azure/create-session-action.png)
+![Screenshot of the Create session action.](media/azure/create-session-action.png)
 
 After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session. 
 
-![Screenshot of the End session action](media/azure/end-session-action.png)
+![Screenshot of the End session action.](media/azure/end-session-action.png)
 
 ## Azure actions
 

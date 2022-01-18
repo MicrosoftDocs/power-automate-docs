@@ -1,5 +1,5 @@
 ---
-title: Get started from a template | Microsoft Docs
+title: Get started from a template (contains video) | Microsoft Docs
 description: Create a cloud flow from any of several built-in templates.
 services: ''
 suite: flow
@@ -21,6 +21,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 # Create a cloud flow from a template in Power Automate
 

@@ -8,8 +8,6 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: Experimental features
-    href: experimental-features.md
   - name: What's new
     href: whats-new.md
 - name: Learning catalog
@@ -451,8 +449,8 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
-    ## - name: Automate on virtual desktops
-    ##  href: ./desktop-flows/automate-virtual-desktops.md
+    # - name: Automate on virtual desktops
+    #  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
@@ -517,6 +515,8 @@
       items:
       - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Retrieve details from a web page
+        href: ./desktop-flows/how-to/retrieve-details-web-page.md
       - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name: Send physical clicks on a web element
@@ -555,6 +555,8 @@
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
+    - name: Pass a datatable from a cloud flow to a desktop flow
+      href: ./desktop-flows/how-to/passing-datatable.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:

@@ -1,18 +1,18 @@
 ---
-title: Overview of the cloud flows| Microsoft Docs
+title: Overview of the cloud flows(contains video) | Microsoft Docs
 description: Provides an overview of cloud flows.
 services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-ms.custom: intro-internal
+
 manager: kvivek
 editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/09/2021

@@ -1,5 +1,5 @@
 ---
-title: Use low-code RPA with SAP GUI in Power Automate Desktop | Microsoft Docs
+title: Use low-code RPA with SAP GUI in Power Automate Desktop (contains video) | Microsoft Docs
 description: Quickly develop delightful, timesaving low-code SAP GUI automations with Power Automate.
 suite: flow
 documentationcenter: na
@@ -9,7 +9,7 @@ editor: ''
 ms.custom: guidance
 ms.service: power-automate
 ms.devlang: na
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021

@@ -2,14 +2,14 @@
 title: Setup the Power Automate Azure Virtual Desktop integration starter kit | Microsoft Docs
 description: Setup instructions
 services: ''
-author: raaourik
+author: mariosleon
 editor: ''
 tags: ''
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/28/2021
-ms.author: raaourik
+ms.author: marleon
 search.app: 
   - Flow
 search.audienceType: 
@@ -213,7 +213,7 @@ on again.
 
 -   [Create an app registration with Azure Service Management permission](/azure/active-directory/develop/quickstart-register-app)
 
-    ![App Regsitration Screenshot](media/avd-starter-kit/AppRegistration.png)
+    ![Screenshot of the App Registration dialog.](media/avd-starter-kit/AppRegistration.png)
 
 > [!NOTE]
 >The AAD application needs to have read permission on the subscription.

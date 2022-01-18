@@ -21,11 +21,11 @@ To convert an Excel file to PDF:
 
 1. Use the **Set variable** action to create a new variable containing the path of the Excel file you want to convert. In this example, the variable is named **ExcelFile**.
 
-    ![The Set variable action containing the Excel file path.](media/convert-excel-pdf-vbscript/set-variable-action-excel-file.png)
+    ![Screenshot of the Set variable action containing the Excel file path.](media/convert-excel-pdf-vbscript/set-variable-action-excel-file.png)
 
 1. Use a second **Set variable** action to create a variable containing the path of the PDF file you want to create. In this example, the variable is named **PdfFile**.
 
-    ![The Set variable action containing the pdf file path.](media/convert-excel-pdf-vbscript/set-variable-action-pdf-file.png)
+    ![Screenshot of the Set variable action containing the pdf file path.](media/convert-excel-pdf-vbscript/set-variable-action-pdf-file.png)
 
 1. Deploy the **Run VBScript** action and populate the following code. 
 
@@ -45,4 +45,4 @@ To convert an Excel file to PDF:
     Excel.Application.Quit
     ```
 
-    ![The configured Run VBScript action.](media/convert-excel-pdf-vbscript/run-vbscript-action.png)
+    ![Screenshot of the configured Run VBScript action.](media/convert-excel-pdf-vbscript/run-vbscript-action.png)

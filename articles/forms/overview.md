@@ -1,5 +1,5 @@
 ---
-title: Overview of Forms triggers and actions within flows | Microsoft Docs
+title: Overview of Forms triggers and actions within flows (contains video) | Microsoft Docs
 description: Use Forms within flows-Get response details, when a new response is submitted
 services: ''
 suite: flow
@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.devlang: na
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/09/2021

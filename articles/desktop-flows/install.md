@@ -32,7 +32,7 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install the Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
+1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
@@ -51,7 +51,7 @@ By default, both are installed on your device.
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
-![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
+![Screenshot of the installation details.](../media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
@@ -84,7 +84,7 @@ During installation, you can change the default settings if you don't want to se
 
 After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image.](../media/desktop-flows-setup/screen.png)
+![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your browser automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -129,14 +129,14 @@ Follow these steps if you want to silently install Power Automate.
 
    For example, enter:
    
-   ```
+   ```CMD
     cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
    ```
    
    The installer runs and completes the setup of Power Automate.
@@ -150,8 +150,8 @@ Follow these steps if you want to silently install Power Automate.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -HELP
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -HELP
    ```
 
 |Command|Description|
@@ -164,16 +164,16 @@ You can also retrieve the details of all the command line arguments from the hel
 
 Here's an example of a command line argument that installs Power Automate: 
 
-   ```
-   Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
 ### Uninstall Power Automate for desktop using the command line
 
 Use the following command to silently uninstall Power Automate:
    
-   ```
-   Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
+   ```CMD
+   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
    ```
 
 ### Update your version of Power Automate
@@ -216,11 +216,11 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
  
    - To connect to a machine or a machine group, select **Directly to machine** in the **Connect** field, and choose the respective machine or machine group in the **Machine or machine group** field.
 
-      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
+      ![Screenshot of the Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
 
    - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field, and choose the respective gateway in the **Choose a gateway** field.
 
-      ![The Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
+      ![Screenshot of the Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
 
    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
 
