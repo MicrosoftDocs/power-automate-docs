@@ -67,7 +67,9 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    ![Screenshot of the field to search for actions.](media\design-flow\action-search.png)
 
-1. In the action, under Run mode select **Attended - Runs when you're signed in** and under Desktop flow select **Create a new desktop flow**.
+1. If there isn't an existing connection to your machine, the action will prompt you to create a new one. You can find more information regarding triggering flows on machines in [Manage machines](manage-machines.md).
+
+1. In the action, under Run mode select **Attended (runs when you're signed in)** and under Desktop flow select **Create a new desktop flow**.
 
    ![Screenshot of the properties of the Run a flow built with Power Automate Desktop action.](media\design-flow\run-desktop-flow-v2-action-properties.png)
 
