@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/15/2021
+ms.date: 01/15/2022
 ms.author: v-gtrantzas
 ms.reviewer: v-gtrantzas
 search.app: 
@@ -184,7 +184,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
    ![Screenshot of the option to perform the trigger action.](media\design-flow\test-flow.png)
 
-1. When Power Automate connects to the desktop app, select **Run flow** and then **Done**.
+1. When Power Automate connects to the desktop app, select **Run flow**, and then **Done**.
 
    ![Screenshot of a dialog showing that the flow ran successfully.](media\design-flow\run-flow-pop-out-3.png)
 
