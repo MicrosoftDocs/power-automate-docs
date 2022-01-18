@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2021
+ms.date: 01/18/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -61,7 +61,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | --------|  ---------| ---- |
 | management.azure.com | https | Access to the Azure Resource Manager. |
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to Active Directory Authentication Library (ADAL). |
-| graph.microsoft.com <br />graph.windows.net<br /> | https | Access to Microsoft graph - for getting user information such as a profile photo. |
+| graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
 | *.flow.microsoft.com | https | Access to the Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
