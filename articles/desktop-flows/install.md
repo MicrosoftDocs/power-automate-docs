@@ -185,12 +185,10 @@ To update Power Automate for desktop, use the same command line arguments that y
 
 ### Install the gateway with PowerShell Cmdlets
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
-You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
-
-You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
+Apart from direct connectivity, you can establish communication with a  machine using on-premises data gateways. To install, configure, and manage a gateway, use [PowerShell Cmdlets](/powershell/gateway/overview).
 
 >[!IMPORTANT]
 >To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated access.
