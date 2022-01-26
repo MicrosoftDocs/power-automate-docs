@@ -22,7 +22,7 @@ search.audienceType:
 ---
 # Create a cloud flow that uses Microsoft Dataverse
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/).
 

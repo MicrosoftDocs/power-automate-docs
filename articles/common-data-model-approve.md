@@ -24,7 +24,7 @@ search.audienceType:
 ---
 # Build an approval loop by using Power Automate and Dataverse
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 Dataverse can give you a way to build flows that have information stored in a database independent of a cloud flow. The best example of this is with approvals. If you store the status of the approval in an table, your flow can work on top of it.
 
