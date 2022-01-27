@@ -95,7 +95,7 @@ Extract tables from a PDF file
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ExtractedPDFTables|List of datatables|The extracted tables|
+|ExtractedPDFTables|List of PDF table information|The extracted tables|
 
 ##### <a name="extracttablesfrompdfaction_onerror"></a> Exceptions
 |Exception|Description|
