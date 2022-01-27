@@ -97,7 +97,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [500 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 
