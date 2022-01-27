@@ -58,6 +58,8 @@ search.audienceType:
 
 - Access as described in the [IP Address configuration](../ip-address-configuration.md)
 
+-  TLS 1.2 is required for accessing the required services
+
 - The [Microsoft Edge](https://www.microsoft.com/edge/) (version 80 or later)
     or Google Chrome browser.
 

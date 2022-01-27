@@ -1,15 +1,15 @@
 ---
 title: "Business process flows overview | MicrosoftDocs"
 description: "An overview of business process flows in Power Automate."
-ms.date: 05/06/2019
+ms.date: 01/14/2022
 ms.reviewer: ""
 ms.service: power-automate
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
-ms.topic: "article"
-ms.custom: intro-internal
+ms.topic: overview
+
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
@@ -50,7 +50,7 @@ Business process flows provide a guide for people to get work done. They provide
  Business process flows appear relatively simple compared to other types of processes because they do not provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
  
 > [!NOTE]
-> If there are any required columns on any stage, including the current stage, you will need to fill in the columns on those stages *before* saving the form or moving to a new stage.
+> If any stage, including the current stage, has required columns (except hidden columns), you must fill in the columns on those stages *before* you save the form or move to a new stage. Disabled columns will still block stage navigation if they are empty and required.
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
 ### Business process flows integrated with other customizations  

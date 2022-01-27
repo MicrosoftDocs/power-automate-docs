@@ -135,7 +135,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 |Outlook instance|No|Outlook instance||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|Text value||The name of the Outlook account (data file name) to work with|
 |Email messages to process|No|List of Outlook mail messages||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
-|Operation|N/A|Delete email messages, Move email messages to mail fodler, Mark as unread|Move email messages to mail fodler|Specifies which operation to perform on the specified email messages|
+|Operation|N/A|Delete email messages, Move email messages to mail folder, Mark as unread|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
 |Mail folder|No|Text value||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
 
 
