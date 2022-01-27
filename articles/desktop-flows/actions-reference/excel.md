@@ -454,6 +454,7 @@ Launches a new Excel instance or opens an Excel document
 |Launch Excel|N/A|with a blank document, and open the following document|with a blank document|Specify whether to open a New Excel document, or an existing one|
 |Document path|No|File||The full path of the existing Excel document to open|
 |Make instance visible|N/A|Boolean value|True|Specify whether to make the Excel window visible or hide it|
+|Nest under a new Excel process|N/A|Boolean value|False|Specify whether the Excel spreadsheet should be under a unique Excel process. Macros and add-ins from other spreadsheets won't be accesible.|
 |Password|Yes|Encrypted value||The password on the Excel document, if it is password protected|
 |Open as ReadOnly|N/A|Boolean value|False|Specify whether to open the stored document in read-only mode or not|
 |Load add-ins and macros|N/A|Boolean value|False|Specify whether to load add-ins and macros into the new Excel instance|
