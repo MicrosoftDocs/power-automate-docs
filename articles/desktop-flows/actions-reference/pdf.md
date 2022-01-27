@@ -24,7 +24,9 @@ Automate PDF files and their content (text and images)
 |<!-- --> |
 |-----|
 |[Extract text from PDF](#extracttextfrompdfaction)|
+<!--
 |[Extract tables from PDF](#extracttablesfrompdfaction)|
+-->
 |[Extract images from PDF](#extractimagesfrompdfaction)|
 |[Extract PDF pages to new PDF](#extractpages)|
 |[Merge PDF files](#mergefiles)|
@@ -73,6 +75,8 @@ Extract text from a PDF file
 |Invalid password|The given password is invalid|
 |Failed to extract text|Error while trying to extract text|
 
+<!--
+
 ### <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
 Extract tables from a PDF file
 
@@ -99,6 +103,8 @@ Extract tables from a PDF file
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
 |Failed to extract tables|Error while trying to extract tables|
+
+-->
 
 ### <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 Extract images from a PDF file
