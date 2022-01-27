@@ -28,7 +28,7 @@ For information about the new features, fixes, and improvements that were releas
 
 ## Release plans
 
-Get familiar with upcoming features and plan your deployments by reading the [2021 release wave 2 plan](/power-platform-release-plan/2021wave2/power-automate/planned-features) or the [2022 release wave 1 plan](/power-platform-release-plan/2022wave1/).
+Get familiar with upcoming features and plan your deployments by reading the [2021 release wave 2 plan](/power-platform-release-plan/2021wave2/power-automate/planned-features) or the [2022 release wave 1 plan](/power-platform-release-plan/2022wave1/power-automate/planned-features).
 
 ## Preview and Experimental features
 
