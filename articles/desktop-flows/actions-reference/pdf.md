@@ -24,12 +24,13 @@ Automate PDF files and their content (text and images)
 |<!-- --> |
 |-----|
 |[Extract text from PDF](#extracttextfrompdfaction)|
-<!--
-|[Extract tables from PDF](#extracttablesfrompdfaction)|
--->
 |[Extract images from PDF](#extractimagesfrompdfaction)|
 |[Extract PDF pages to new PDF](#extractpages)|
 |[Merge PDF files](#mergefiles)|
+
+<!--
+|[Extract tables from PDF](#extracttablesfrompdfaction)|
+-->
 
 ## Getting started with PDF actions
 
