@@ -336,10 +336,6 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
-  - name: AI Builder
-    items:
-    - name: Use AI Builder in Power Automate
-      href: use-ai-builder.md
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -721,6 +717,8 @@
       href: use-cds-for-apps-dialogs.md
     - name: Replace classic Dataverse dialogs
       href: replace-dialogs.md
+- name: AI Builder
+  href: use-ai-builder.md
 - name: For developers
   items:
   - name: Enterprise developers, partners, and ISVs
