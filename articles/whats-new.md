@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 01/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,10 +28,10 @@ For information about the new features, fixes, and improvements that were releas
 
 ## Release plans
 
-Get familiar with upcoming features and plan your deployments by reading [2021 release wave 1 plan](/power-platform-release-plan/2021wave1/power-automate/planned-features) or the [2021 release wave 2 plan](/power-platform-release-plan/2021wave2/power-automate/planned-features).
+Get familiar with upcoming features and plan your deployments by reading [2021 release wave 1 plan](/power-platform-release-plan/2021wave1/power-automate/planned-features), the [2021 release wave 2 plan](/power-platform-release-plan/2021wave2/power-automate/planned-features), the [2022 release wave 1 plan](https://docs.microsoft.com/power-platform-release-plan/2022wave1/).
 
 ## Preview and Experimental features
 
-Get early access to functionalities and updates before they are available worldwide through [Preview features](https://powerautomate.microsoft.com/en-us/blog/flow-preview-program/) and [Experimental features](experimental-features.md).
+Get early access to functionalities and updates before they are available worldwide through [Preview features](https://powerautomate.microsoft.com/blog/flow-preview-program/) and [Experimental features](experimental-features.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
