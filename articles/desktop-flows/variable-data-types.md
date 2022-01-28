@@ -143,7 +143,7 @@ Some of these data types are widely used throughout the application, such as **n
   - **TableEndingPage** - Returns the index of the file page that contains the end of the table.
   - **TableOrderInPage** - Returns the order of the table on the page. 
 
-  You can find more information regarding the properties of this data type in [Variables datatype properties]().
+  You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#lists-of-pdf-table-info).
 
   ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
 
