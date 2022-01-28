@@ -26,21 +26,29 @@ Automate PDF files and their content (text and images)
 |[Extract text from PDF](#extracttextfrompdfaction)|
 |[Extract tables from PDF](#extracttablesfrompdfaction)|
 |[Extract images from PDF](#extractimagesfrompdfaction)|
-|[Extract PDF pages to new PDF](#extractpages)|
+|[Extract PDF file pages to new PDF file](#extractpages)|
 |[Merge PDF files](#mergefiles)|
 
 
 ## Getting started with PDF actions
 
-Use the PDF action group to extract images and text from PDF files and arrange pages to create new documents.
+The PDF group of actions enables you to extract images, text, and tables from PDF files and arrange pages to create new documents.
 
-To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified, and the action is configured to extract text from a range of pages. In the **Advanced** section, a password has been entered to access the secure file.
+To extract text from a PDF file, use the **Extract text from PDF** action. In the following example, the action has been configured to extract text from a specific range of pages. The file is password-protected, so a password has been populated in the **Advanced** settings. 
 
 ![Screenshot of the Extract text from PDF action.](media\pdf\extract-text-pdf-example.png)
 
-Similarly, extract images with the **Extract images from PDF** action. This action contains an additional option to specify a prefix for the image names.
+To extract images, deploy the **Extract images from PDF** action. This action has a similar structure as the previous one, but it contains an additional option to specify a prefix for the image names.
 
-To create a new PDF document from an existing file, use the **Extract PDF file pages to new PDF file**. In the example below, the source document has been selected, and a file name for a new document has been specified. The pages have been entered as a combination of specific pages and a range.
+To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. 
+
+The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types]().
+
+![Screenshot of the Extract tables from PDF action.](media\pdf\extract-tables-pdf-example.png)
+
+Apart from extracting information from PDF files, you can create a new PDF document from an existing file using the **Extract PDF file pages to new PDF file** action. 
+
+In the following example, the source document and the file name of the new document have been specified. In addition, the pages have been selected as a combination of specific pages and a range.
 
 ![Screenshot of the Extract PDF file pages to new PDF file action.](media\pdf\extract-pdf-new-file-example.png)
 
@@ -92,7 +100,7 @@ Extract tables from a PDF file
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ExtractedPDFTables|List of PDF table information|The extracted tables|
+|ExtractedPDFTables|List of PDF table info|The extracted tables|
 
 ##### <a name="extracttablesfrompdfaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -129,7 +137,7 @@ Extract images from a PDF file
 |PDF file doesn't exist|File doesn't exist on the given path|
 
 
-### <a name="extractpages"></a> Extract PDF pages to new PDF
+### <a name="extractpages"></a> Extract PDF file pages to new PDF file
 Extract pages from a PDF file to a new PDF file
 
 ##### Input Parameters
