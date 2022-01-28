@@ -1,17 +1,13 @@
 ---
-title: "Monitor and manage background workflow processes with Power Apps | MicrosoftDocs"
+title: "Monitor and manage background workflow processes | MicrosoftDocs"
 ms.custom: "To monitor and manage processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
-ms.date: 07/27/2020
+ms.date: 01/28/2022
 ms.reviewer: ""
 ms.service: power-automate
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "Power Apps"
 author: "Mattp123"
 ms.assetid: a987a803-4674-4eb0-87de-caefa003b1eb
 caps.latest.revision: 12
@@ -98,7 +94,7 @@ The synchronous bulk delete will only delete AsyncOperation rows in the complete
 
 ### Workflow run failure after change in owner
 
-When a workflow owner user is deactivated, no longer has permissions to run workflows, or is changed by an administrator, runs that were previously started and are still in **Waiting** state will fail to run as they belong to the previous owner. In this situation, it is recommended to **Cancel** the waiting runs that belong to the previous owner. If you have runs that cannot be cancelled and need to be updated to the new owner, please (contact support)[/power-platform/admin/get-help-support] for assistance.
+When a workflow owner user is deactivated, no longer has permissions to run workflows, or is changed by an administrator, runs that were previously started and are still in **Waiting** state will fail to run as they belong to the previous owner. In this situation, it is recommended to **Cancel** the waiting runs that belong to the previous owner. If you have runs that cannot be cancelled and need to be updated to the new owner, (contact support)[/power-platform/admin/get-help-support] for assistance.
 
 ## Next step   
 [Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
