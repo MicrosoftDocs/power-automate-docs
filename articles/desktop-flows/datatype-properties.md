@@ -60,6 +60,15 @@ The data types that have properties are displayed in the following lists.
 |----------|-----------------------------------------|
 |Count     |The number of items stored into the list.|
 
+## Lists of PDF table info
+
+|Property          |Description                              |
+|------------------|-----------------------------------------|
+|DataTable         |The extracted data table of the specified item.|
+|TableStartingPage |The index of the file page that contains the start of the table.|
+|TableEndingPage   |the index of the file page that contains the end of the table.|
+|TableOrderInPage  |The order of the table on the page. |
+
 ## Files
 
 | Property            |Description                                                                  |

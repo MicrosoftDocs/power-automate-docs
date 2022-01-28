@@ -138,7 +138,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
 
-  - **DataTable** - Returns the extracted table
+  - **DataTable** - Returns the extracted table.
   - **TableStartingPage** - Returns the index of the file page that contains the start of the table.
   - **TableEndingPage** - Returns the index of the file page that contains the end of the table.
   - **TableOrderInPage** - Returns the order of the table on the page. 
