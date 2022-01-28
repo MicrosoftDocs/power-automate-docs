@@ -40,9 +40,7 @@ To extract text from a PDF file, use the **Extract text from PDF** action. In th
 
 To extract images, deploy the **Extract images from PDF** action. This action has a similar structure as the previous one, but it contains an additional option to specify a prefix for the image names.
 
-To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. 
-
-The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types]().
+To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types]().
 
 ![Screenshot of the Extract tables from PDF action.](media\pdf\extract-tables-pdf-example.png)
 
