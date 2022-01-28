@@ -98,7 +98,7 @@ The synchronous bulk delete will only delete AsyncOperation rows in the complete
 
 ### Workflow run failure after change in owner
 
-When a workflow owner user is deactivated, no longer has permissions to run workflows, or is changed by an administrator, runs that were previously started and are still in **Waiting** state will fail to the run as they belong to the previous owner will fail to run. In this situation, it is recommended to **Cancel** the waiting runs that belong to the previous owner. If you have runs that cannot be cancelled and need to be updated to the new owner, please (contact support)[/power-platform/admin/get-help-support] for assistance.
+When a workflow owner user is deactivated, no longer has permissions to run workflows, or is changed by an administrator, runs that were previously started and are still in **Waiting** state will fail to run as they belong to the previous owner. In this situation, it is recommended to **Cancel** the waiting runs that belong to the previous owner. If you have runs that cannot be cancelled and need to be updated to the new owner, please (contact support)[/power-platform/admin/get-help-support] for assistance.
 
 ## Next step   
 [Best practices for background workflow processes](best-practices-workflow-processes.md) <br />
