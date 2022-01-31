@@ -132,7 +132,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **List of PDF table info** - A variable of this data type can be produced only through the **Extract tables from PDF** action.
 
-  Each item on the list describes an extracted table and provides all the essential information about it. To access the extracted data of a specific table, use the **%VariableName[ItemNumber]%** notation.
+  Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item,, use the **%VariableName[ItemNumber]%** notation.
 
   ![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
 
@@ -147,7 +147,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
 
-  To extract the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. 
+  To access the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. For example, the following expression returns the datatable value of the first item of the **ExtractedPDFTables** variable.
 
   ![Screenshot of the data table contained in a list of PDF table info vatiable.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
 
