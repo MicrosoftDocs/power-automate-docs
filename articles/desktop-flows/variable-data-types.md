@@ -153,7 +153,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ### Known issues and limitations
 
-- **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
+- **Issue**: When a datatable cell contains a multi-line entry, the variable viewer displays only the first line of it. 
 - **Workarounds**: None.
 
 ## Instances
