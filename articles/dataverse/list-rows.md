@@ -1,20 +1,12 @@
 ---
 title: Use lists of rows in flows| Microsoft Docs
 description: "Learn how to use flows to work with lists of rows from Microsoft Dataverse."
-services: ''
-suite: flow
-documentationcenter: na
 author: MSFTMAN
 manager: KVIVEK
 ms.author: Deonhe
-editor: ''
-tags: ''
 ms.service: power-automate
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/28/2021
+ms.date: 01/31/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -116,10 +108,10 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 
 ### Fetch Xml Query
 
-[!IMPORTANT]
-The distinct operator and [aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) are not currently supported in FetchXML queries from the List rows connector. 
+> [!IMPORTANT]
+> The distinct operator and [aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) are not currently supported in FetchXML queries from the List rows connector. 
 
-Use to specify a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query) which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
+Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
 ![List accounts example with FetchXML.](https://user-images.githubusercontent.com/469480/123689706-6160bd80-d808-11eb-83e6-936e22850d9b.PNG)
 
