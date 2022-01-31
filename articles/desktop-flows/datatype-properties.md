@@ -185,15 +185,6 @@ The data types that have properties are displayed in the following lists.
 |Columns   |A list that contains the names of the columns of the data table.                      | 
 |IsEmpty   |This property is true if the datatable is empty or false if it is contains elements. | 
 
-## PDF table info
-
-|Property          |Description                              |
-|------------------|-----------------------------------------|
-|DataTable         |The extracted data table of the specified item.|
-|TableStartingPage |The index of the file page that contains the start of the table.|
-|TableEndingPage   |the index of the file page that contains the end of the table.|
-|TableOrderInPage  |The order of the table on the page. |
-
 ## Datarows
 
 |Property     |Description                                                      |
@@ -229,6 +220,15 @@ The data types that have properties are displayed in the following lists.
 |------------------------|------------------------------------------------------------------------------|
 |ConnectionString        |The connection string used for the database connection.                       |
 |IsClosed                |This property is true if the browser window is closed or false if it is open. |
+
+## PDF table info
+
+|Property          |Description                              |
+|------------------|-----------------------------------------|
+|DataTable         |The extracted data table of the specified item.|
+|TableStartingPage |The index of the file page that contains the start of the table.|
+|TableEndingPage   |the index of the file page that contains the end of the table.|
+|TableOrderInPage  |The order of the table on the page. |
 
 ## CMD session
 

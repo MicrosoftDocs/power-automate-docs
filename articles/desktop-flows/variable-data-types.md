@@ -132,7 +132,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 - **List of PDF table info** - A variable of this data type can be produced only through the **Extract tables from PDF** action.
 
-  Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item,, use the **%VariableName[ItemNumber]%** notation.
+  Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item, use the **%VariableName[ItemNumber]%** notation.
 
   ![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
 
@@ -143,7 +143,7 @@ Some of these data types are widely used throughout the application, such as **n
   - **TableEndingPage** - Returns the index of the file page that contains the end of the table.
   - **TableOrderInPage** - Returns the order of the table on the page. 
 
-  You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#lists-of-pdf-table-info).
+  You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
 
   ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
 
