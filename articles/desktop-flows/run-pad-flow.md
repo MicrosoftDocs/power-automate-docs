@@ -179,14 +179,14 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
 ## Runtime notifications
 
-Power Automate provides two different types of notifications while running a desktop flow depending on the user's preferences. 
+Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences. 
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
 Through the **Monitoring/Notifications** option of the console settings, you can choose between the integrated Windows notifications, the flow monitoring window, or disabling the notifications.
 
-The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification popup enables users to pause or stop the flow through the respective buttons. 
+The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification pop-up enables users to pause or stop the flow through the respective buttons. 
 
 ![Screenshot of a notification window.](media\run-pad-flow\notification-window.png)
 
