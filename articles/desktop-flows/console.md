@@ -50,9 +50,11 @@ Press the **Settings** button to configure Power Automate for desktop to your li
 
 ![Screenshot of the console settings panel.](./media/console/console-settings-panel.png)
 
-Under the **Application** category, select whether Power Automate should launch automatically, whether closing the console will close the application as well, and whether Power Automate should be able to display Windows notifications. You may also set a hotkey combination to instantly stop a running flow.
+Under the **Application** category, select whether Power Automate should launch automatically, whether closing the console will close the application as well. You may also set a hotkey combination to instantly stop a running flow.
 
-Decide whether Microsoft may collect diagnostic data to improve user experience under **Data collection**. 
+Using the **Monitoring/Notifications** drop-down menu, you can choose whether Power Automate will display integrated windows notification, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
+
+To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab. 
 
 >[!NOTE]
 >Only an admin may change Data collection settings.
