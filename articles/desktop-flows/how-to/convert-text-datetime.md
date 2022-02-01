@@ -19,9 +19,9 @@ search.audienceType:
 
 When a desktop flow reads entries from files or extracts values from applications, the returned values usually are texts.
 
-It's common to convert these values to other datatypes to perform additional operations. For example, you could convert a text value that represents a date to a datetime variable for later use in datetime actions.
+It's common in flow development to convert these values to other datatypes to perform additional operations. For example, you could convert a text value that represents a date to a datetime variable for later use in datetime actions.
 
-Power Automate provides the **Convert text to datetime** action to perform this conversion. This action enables you to convert a date represented in your default format of your system or custom format. 
+Power Automate provides the **Convert text to datetime** action to perform the conversion. This action enables you to convert a date represented in the default format of your system or a custom format. 
 
 The default format is specified by the region and language settings of your machine. For example, the default date format for the United States is **MM-dd-yyyy**. The time part, if it exists, can be represented in both 12-hour and 24-hour formats. 
 
