@@ -1,6 +1,6 @@
 ---
-title: Convert a text variable to datetime | Microsoft Docs
-description: Convert a text variable to datetime
+title: Convert a text value to datetime | Microsoft Docs
+description: Convert a text value to datetime
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Convert a text variable to datetime
+# Convert a text value to datetime
 
 When a desktop flow reads entries from files or extracts values from applications, the returned values usually are texts.
 
