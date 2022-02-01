@@ -32,7 +32,7 @@ search.audienceType:
 
 - System requirements:
 
-   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
@@ -41,6 +41,9 @@ search.audienceType:
         - Storage: 2GB
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
+> [!NOTE]
+> To make use of the Tesseract OCR engine, make sure the machine's CPU supports AVX2 instruction set.
+
 > [!NOTE]
 > The minimum requirements do not include the resources required for the applications involved in the flows.
      
