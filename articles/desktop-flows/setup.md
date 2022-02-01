@@ -124,7 +124,6 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
       ![Screenshot of the prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
-1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate for desktop.
 
 1. Power Automate applies the proxy configuration specified in Windows proxy settings. If the proxy server requires authentication, the administrator has to exclude Power Automate from using it or use another server that doesn't require authentication. You can find more information regarding bypassing proxy servers in [Configure Power Automate to bypass a corporate proxy server](governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server).
 
