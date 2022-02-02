@@ -18,8 +18,8 @@ search.audienceType:
 Experimental features provide you early access to functionalities and updates in Power Automate before they are available worldwide.
 
 > [!CAUTION]
-> Experimental features might change, break, or disappear at any time, and shouldn't be enabled in production environments.
->Microsoft doesn't provide support for experimental features. Microsoft Power Platform technical support team won’t be able to help you with issues or questions. Use the [Power Automate community forums](https://aka.ms/fl_comm_forums) for feedback and help with experimental features.
+> - Experimental features might change, break, or disappear at any time, and shouldn't be enabled in production environments.
+> - Microsoft doesn't provide support for experimental features. Microsoft Power Platform technical support team won’t be able to help you with issues or questions. Use the [Power Automate community forums](https://aka.ms/fl_comm_forums) for feedback and help with experimental features.
 
 To enable experimental features in Power Automate:
 

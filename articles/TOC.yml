@@ -742,6 +742,8 @@
   items:
   - name: Flows in your organization Q&A
     href: organization-q-and-a.md
+  - name: Enable experimental features
+    href: experimental-features.md
   - name: Pricing
     href: billing-questions.md
   - name: Admin center
