@@ -156,6 +156,9 @@ Some of these data types are widely used throughout the application, such as **n
 - **Issue**: When a datatable or datarow cell contains a multi-line entry, the variable viewer displays only the first line of it. 
 - **Workarounds**: None.
 
+- **Issue**: When a datatable or datarow cell contains a multi-line entry, the variable viewer displays only the first line of it. 
+- **Workarounds**: None.
+
 ## Instances
 
 - **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
