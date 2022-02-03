@@ -128,6 +128,8 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
 1. Power Automate applies the proxy configuration specified in Windows proxy settings. If the proxy server requires authentication, the administrator has to exclude Power Automate from using it or use another server that doesn't require authentication. You can find more information regarding bypassing proxy servers in [Configure Power Automate to bypass a corporate proxy server](governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server).
 
+1. The number of actions that can be logged in a single desktop flow run is limited to 10 000. Additional actions will be performed but it will not be logged.
+
 
 ## Learn more
 
