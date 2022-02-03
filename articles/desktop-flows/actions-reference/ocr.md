@@ -56,6 +56,10 @@ The **Language abbreviation** field indicates to the engine which language to lo
 
 The Tesseract engine can be also used to extract text from multilingual documents. You can find more information regarding extracting text from multilingual documents in [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
 
+> [!NOTE]
+> To make use of the Tesseract OCR engine, make sure the machine's CPU supports AVX2 instruction set.
+
+
 ## OCR actions
 
 ### <a name="iftextonscreenaction"></a> If text on screen (OCR)

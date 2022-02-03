@@ -41,11 +41,9 @@ search.audienceType:
         - Storage: 2GB
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
-> [!NOTE]
-> To make use of the Tesseract OCR engine, make sure the machine's CPU supports AVX2 instruction set.
 
 > [!NOTE]
-> The minimum requirements do not include the resources required for the applications involved in the flows.
+> The minimum hardware requirements do not include the resources required for the applications involved in the flows.
      
 > [!TIP]
 > If your device runs Windows 10 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
