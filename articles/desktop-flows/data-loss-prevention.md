@@ -17,18 +17,7 @@ search.audienceType:
 # Data loss prevention (DLP) policies (preview)
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy policy, visit the [respective topic](../prevent-data-loss.md) under the Administer Power Platform documentation.
- 
-This feature will be rolling out to all cloud regions based on the following schedule.See when will the feature be fully enabled in your region in the table below. 
-
-|Date| Available in regions|
-|----|----|
-|11/1|Canada|
-|11/30|Switzerland , Brazil, Canada|
-|12/6|Asia, UK, Australia, Japan |
-|12/20 |Europe |
-|12/20 |US(NAM) |
-|1/4 |Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions |
+Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy, visit the [respective topic](../prevent-data-loss.md) under the Administer Power Platform documentation.
 
 
 ## Troubleshoot data loss prevention (DLP) policies violations
