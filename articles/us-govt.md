@@ -8,7 +8,7 @@ ms.service: power-automate
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/27/2021
+ms.date: 02/04/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -256,7 +256,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
-    * As a result of this, and because guest users cannot access the approvals center, guest users cannot serve as approvers.
+    * Guest users cannot access the approvals center so they cannot serve as approvers.
   * There is no markdown support for approval email.
   * Approvals are not available in DoD tenants. 
 
