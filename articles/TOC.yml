@@ -336,10 +336,6 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
-  - name: AI Builder
-    items:
-    - name: Use AI Builder in Power Automate
-      href: use-ai-builder.md
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -458,7 +454,7 @@
     - name: Handle and manipulate variables
       items:
       - name: Check if a variable is numeric
-        href: ./desktop-flows/how-to/check-if-variable-numeric.md 
+        href: ./desktop-flows/how-to/check-if-variable-numeric.md        
       - name: Delete a row/column from a datatable
         href: ./desktop-flows/how-to/delete-row-column-datatable.md 
     - name: Handle email messages in desktop flows
@@ -533,6 +529,8 @@
         href: ./desktop-flows/how-to/populate-text-fields-click-links-javascript.md
     - name: Convert data and files
       items: 
+      - name: Convert a text variable to datetime
+        href: ./desktop-flows/how-to/convert-text-datetime.md        
       - name: Convert a file to Base64 string format
         href: ./desktop-flows/how-to/convert-file-base64-format.md
       - name: Convert Base64 text to hexadecimal format
@@ -721,6 +719,8 @@
       href: use-cds-for-apps-dialogs.md
     - name: Replace classic Dataverse dialogs
       href: replace-dialogs.md
+- name: AI Builder
+  href: use-ai-builder.md
 - name: For developers
   items:
   - name: Enterprise developers, partners, and ISVs
@@ -742,6 +742,8 @@
   items:
   - name: Flows in your organization Q&A
     href: organization-q-and-a.md
+  - name: Enable experimental features
+    href: experimental-features.md
   - name: Pricing
     href: billing-questions.md
   - name: Admin center

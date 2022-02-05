@@ -2,14 +2,14 @@
 title: Setup the Power Automate Azure Virtual Desktop integration starter kit | Microsoft Docs
 description: Setup instructions
 services: ''
-author: raaourik
+author: mariosleon
 editor: ''
 tags: ''
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/28/2021
-ms.author: raaourik
+ms.author: marleon
 search.app: 
   - Flow
 search.audienceType: 

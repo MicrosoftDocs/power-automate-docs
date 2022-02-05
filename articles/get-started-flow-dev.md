@@ -21,6 +21,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 # Start to build with Power Automate
 

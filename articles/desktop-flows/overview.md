@@ -11,7 +11,7 @@ tags: ''
 ms.service: power-automate
 ms.devlang: na
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2020

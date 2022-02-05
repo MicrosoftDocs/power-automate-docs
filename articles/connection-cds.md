@@ -25,7 +25,7 @@ search.audienceType:
 
 # Create an automated flow with Microsoft Dataverse
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 >[!IMPORTANT]
 >There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./connection-cds-native.md). The **Microsoft Dataverse (legacy)** connector, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
