@@ -272,7 +272,7 @@ Microsoft is investigating the data loss prevention (DLP) feature, considering t
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateay**. 
+- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
 ### See also
 
