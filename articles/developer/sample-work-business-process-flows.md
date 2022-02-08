@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: "flow"
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.subservice: Developer
+ms.subservice: ""
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
