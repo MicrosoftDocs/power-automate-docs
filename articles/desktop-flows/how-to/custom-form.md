@@ -29,7 +29,7 @@ After deploying the action, press the **Custom form designer** button to open th
 
 On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs. All the inputs provided by the users are stored in the **CustomFormData** variable. Apart from the input elements, you can also add non-interactive elements, such as texts and images.
 
-> [!MOTE]
+> [!NOTE]
 > The **CustomFormData** variable is a custom object. You can find more information regarding custom objects and how to handle them in [Advanced data types](../variable-data-types.md#advanced-data-types)
 
 ![Screenshot of the available form elements.](media/custom-form/form-elements.png)
@@ -73,7 +73,7 @@ To implement this behaviour:
 
     All the form inputs are stored in the **CustomFormData** custom object variable. To access the value of a specific element of the custom object, use the following notation: **CustomFormData['ElementID']**.
 
-    > [!MOTE]
+    > [!NOTE]
     > You can find more information regarding custom objects in [Advanced data types](../variable-data-types.md#advanced-data-types)
 
     ![Screenshot of Write to Excel worksheet action that writes the customer's name.](media/custom-form/example-write-excel-customer-name.png)
