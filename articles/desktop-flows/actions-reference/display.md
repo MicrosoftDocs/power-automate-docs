@@ -51,7 +51,7 @@ Use the **Display select file dialog** to prompt users to browse for a file. In 
 
 ![Screenshot of the Display select file dialog action.](\media\display\display-select-file-example.png)
 
-The select file dialog looks like the following figure. Note that the file filter in the bottom right of the figure is specified in the action properties. 
+The select file dialog looks like the following figure. Note that the file filter in the bottom right cornoner of the dialog is specified in the action properties. 
 
 ![Screenshot of a Select file dialog example.](\media\display\select-file-example.png)
 
