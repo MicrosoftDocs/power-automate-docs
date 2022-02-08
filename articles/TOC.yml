@@ -150,6 +150,8 @@
       href: publish-a-template.md
     - name: Turn a cloud flow on or off
       href: disable-flow.md
+    - name: Use Power Automate pane in Power Apps 
+      href: /powerapps/maker/canvas-apps/working-with-flows 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
