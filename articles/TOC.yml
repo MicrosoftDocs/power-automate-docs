@@ -545,6 +545,8 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Use logical operations on conditional statements  
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
+    - name: Create and use custom forms
+      href: ./desktop-flows/how-to/custom-form.md  
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run SQL queries to Microsoft Access
