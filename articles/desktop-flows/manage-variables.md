@@ -51,6 +51,9 @@ To rename a desktop flow variable, make a right-click on its name in the **Varia
 
 Although you can update variables' names manually through actions, the name will be changed only in these specific actions, not globally. 
 
+> [!NOTE]
+> If you try to rename a variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+
 ## Input and output variables
 
 Power Automate enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate for desktop, allowing you to create sophisticated flows.
