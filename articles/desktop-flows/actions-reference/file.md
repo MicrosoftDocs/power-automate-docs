@@ -374,7 +374,7 @@ Convert a Base64 encoded text to file
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Base64 encoded text|No|Text value|The Base64 encoded text|
+|Base64 encoded text|No|Text value||The Base64 encoded text|
 |File path|No|File||The file to write to|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
