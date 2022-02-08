@@ -179,11 +179,12 @@ The data types that have properties are displayed in the following lists.
 
 ## Datatables
 
-|Property  |Description                                                                           |
-|----------|--------------------------------------------------------------------------------------|
-|RowsCount |The number of rows of the data table.                                                 |
-|Columns   |A list that contains the names of the columns of the data table.                      | 
-|IsEmpty   |This property is true if the datatable is empty or false if it is contains elements. | 
+|Property         |Description                                                                           |
+|-----------------|--------------------------------------------------------------------------------------|
+|RowsCount        |The number of rows of the data table.                                                 |
+|Columns          |A list that contains the names of the columns of the data table.                      | 
+|IsEmpty          |This property is true if the datatable is empty or false if it is contains elements.  | 
+|ColumnHeadersRow |A datarow that contains the table headers.                                            |
 
 ## Datarows
 
