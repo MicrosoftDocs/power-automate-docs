@@ -126,6 +126,23 @@ IT administrators, may set the following registry keys, to configure the Power A
 
 ***Value***
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
+
+## Configure Power Automate for desktop notification settings 
+
+You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information. 
+
+| | |
+|---|---|
+|Hive|HKEY_CURRENT_USER|
+|Key|SOFTWARE\Microsoft\Power Automate Desktop|
+|Name|NotificationsType|
+|Type|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop will display notifications through the flow monitoring window.
+- **2**: Power Automate for desktop will use the integrated Windows notifications.
+- **3**: Power Automate for desktop won't display notifications.
  
  
 ## Learn more
