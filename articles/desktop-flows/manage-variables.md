@@ -84,7 +84,7 @@ To create an input variable:
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
     > [!NOTE]
-    > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, You can't use the name of an existing input or output.
+    > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
