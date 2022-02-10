@@ -84,7 +84,7 @@ To create an input variable:
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
     > [!NOTE]
-    > If you choose an existing name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+    > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, You can't use the name of an existing input or output.
 
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
@@ -111,7 +111,7 @@ To create an output variable:
     > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
 
     > [!NOTE]
-    > If you choose an existing name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+    > If you choose an existing flow variable name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
     ![Screenshot of the Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
 
@@ -128,7 +128,7 @@ To update an input/output variable:
 1.  Right-click on its name in the variables pane and select **Edit**.
 
     > [!NOTE]
-    > If you try to rename an input or output variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+    > If you try to rename an input or output variable to an existing flow variable name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
     ![Screenshot of the Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
