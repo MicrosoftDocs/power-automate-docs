@@ -28,7 +28,7 @@ search.audienceType:
 Your Power Automate license also gives you rights to create and manage flows in Power Apps. Here are the ways you can do this in Power Apps.
 
 - Through [Power Apps](https://make.powerapps.com).
-- Through Power Automate pane in Power Apps.
+- Through [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) in Power Apps.
 
 Check out the Power Automate [Get started guide](getting-started.md) to create your first flow.
 
