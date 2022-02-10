@@ -83,6 +83,9 @@ To create an input variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
 
+    > [!NOTE]
+    > If you try to rename an input variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
 If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
@@ -107,6 +110,9 @@ To create an output variable:
     > [!NOTE]
     > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
 
+    > [!NOTE]
+    > If you try to rename an output variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.   
+
     ![Screenshot of the Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
 
 ### Manage input and output variables
@@ -120,6 +126,9 @@ Through this pane, you can rename, update, delete, and find the usages of each i
 To update an input/output variable:
 
 1.  Right-click on its name in the variables pane and select **Edit**.
+
+    > [!NOTE]
+    > If you try to rename an input or output variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
 
     ![Screenshot of the Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
