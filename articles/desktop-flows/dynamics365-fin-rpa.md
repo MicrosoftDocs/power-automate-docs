@@ -118,7 +118,7 @@ To get started with Dynamics 365 Finance and automate the end-of-cycle reporting
 
     ![Screenshot of the option to select a running environment.](./media/dynamics365-fin-rpa/image003.png)
 
-1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
+1. Log in https://flow.microsoft.com/manage to create a test cloud flow with manual trigger 
 
     ![Screenshot of the option to create a cloud flow in the Power Automate portal.](./media/dynamics365-fin-rpa/image005.png)
     ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-fin-rpa/image007.png)
