@@ -79,6 +79,7 @@ To create an input variable:
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
+    - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
