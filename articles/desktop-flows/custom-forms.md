@@ -25,15 +25,15 @@ To create a custom form, deploy the **Display custom form** action and select th
 
 ![Screenshot of the Display custom form action.](media/custom-forms/display-custom-form-action.png)
 
-On the left side of the designer, there's a list with all the [available input elements]() you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as texts and images. 
+On the left side of the designer, there's a list with all the [available input elements](#custom-form-elements) you can add to the form, such as text, date, and file inputs, and some non-interactive elements, such as texts and images. 
 
 To add an element to the custom form,  double-click it or drag and drop it in the designer's workspace area. 
 
-After adding an element, you can handle all the [available specifications]() on the right side of the form designer. The available specifications may differ depending on the nature of the selected element. 
+After adding an element, you can handle all the [available specifications](#custom-form-element-specifications) on the right side of the form designer. The available specifications may differ depending on the nature of the selected element. 
 
 ![Screenshot of the available form elements.](media/custom-forms/form-elements.png)
 
-When a user populates a custom form, the provided data are stored in the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **CustomFormData['ElementID']**.
+When a user populates a custom form, the provided data are stored into the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **CustomFormData['ElementID']**.
 
 > [!NOTE]
 > You can find more information regarding custom objects and how to handle them in [Advanced data types](variable-data-types.md#advanced-data-types).
@@ -48,7 +48,7 @@ Like the other elements, each action has an ID that describes it uniquely. When 
 
 ![Screenshot of an configured custom form action.](media/custom-forms/configured-action.png)
 
-When a form contains multiple actions, use this variable and conditionals to check which one is pressed and implement different functionality for each scenario. To find more information on implementing this behavior, refer to Create and handle custom forms.  
+When a form contains multiple actions, use this variable and conditionals to check which one is pressed and implement different functionality for each scenario. To find more information on implementing this behavior, refer to [Create and handle custom forms]().  
 
 The following screenshot shows how the previously configured custom form looks when the flow runs. 
 
