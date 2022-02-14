@@ -432,7 +432,7 @@
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
     - name: Create custom forms
-      href: ./desktop-flows/custom.forms.md
+      href: ./desktop-flows/custom-forms.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
     - name: Automate using images

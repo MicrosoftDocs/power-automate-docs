@@ -36,7 +36,7 @@ After adding an element, you can handle all the [available specifications]() on 
 When a user populates a custom form, the provided data are stored in the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **CustomFormData['ElementID']**.
 
 > [!NOTE]
-> You can find more information regarding custom objects and how to handle them in [Advanced data types](../variable-data-types.md#advanced-data-types).
+> You can find more information regarding custom objects and how to handle them in [Advanced data types](variable-data-types.md#advanced-data-types).
 
 ![Screenshot of the contents of a custom object.](media/custom-forms/custom-object.png)
 
