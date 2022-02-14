@@ -64,3 +64,7 @@ To implement this behaviour:
 1. Add an **Else** action inside the if block and use a **Stop flow** action to stop the flow when the if statement is false. 
 
     ![Screenshot of the else block that stopes the flow.](media/custom-form/example-stop-flow.png)
+
+1. When running the desktop flow, the displayed form will be similar to the one presented in the following screenshot:
+
+    ![Screenshot of the displayed custom form.](media/custom-form/example-custom-form.png)
