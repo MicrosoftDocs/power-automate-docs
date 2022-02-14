@@ -1,11 +1,11 @@
 ---
-title: Create and use custom forms | Microsoft Docs
-description: Create and use custom forms	
+title: Handle custom forms | Microsoft Docs
+description: Handle custom forms	
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/08/2022
+ms.date: 02/14/2022
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -15,34 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create and use custom forms
+# Handle custom forms
 
-## The Display custom form action
-
-Power Automate offers a wide variety of message boxes actions that prompt users to enter various types of elements, such as text, dates, and files.
-
-Although these actions can handle scenarios where a single input is required, they aren't practical when multiple inputs are needed. The best approach to address these scenarios is the **Display custom form** action. 
-
-After deploying the action, press the **Custom form designer** button to open the designer of the custom form.
-
-![Screenshot of the Display custom form action.](media/custom-form/display-custom-form-action.png)
-
-On the left side of the designer, there's a list with all the available input elements you can add to the form, such as text, date, and file inputs. All the inputs provided by the users are stored in the **CustomFormData** variable. Apart from the input elements, you can also add non-interactive elements, such as texts and images.
-
-> [!NOTE]
-> The **CustomFormData** variable is a custom object. You can find more information regarding custom objects and how to handle them in [Advanced data types](../variable-data-types.md#advanced-data-types)
-
-![Screenshot of the available form elements.](media/custom-form/form-elements.png)
-
-To gather and store the provided data for later use in your flow, you must add a **Submit** action. Each action has a unique ID, while the ID of the last pressed action is stored into the **ButtonPressed** variable. When a form contains multiple actions, use this variable to check which one is pressed and implement different functionality for each scenario.
-
-After adding an element to the form, you can see all the available configurations on the right side of the form designer. The available options may differ depending on the nature of the selected element. For example, all input elements offer specification, layout, and validation options.
-
-![Screenshot of the configuration option of the text input.](media/custom-form/text-input-configuration-options.png)
-
-## Handle custom form data
-
-After creating a custom form, it's typical to check which button is pressed and handle the gathered data accordingly.
+After [creating a custom form](../custom-forms.md), it's typical to check which button is pressed and handle the gathered data accordingly.
 
 To become familiar with this functionality, create a new custom form  containing the following elements:
 
@@ -53,7 +28,7 @@ To become familiar with this functionality, create a new custom form  containing
 
 ![Screenshot of the added elements in the custom form designer.](media/custom-form/example-custom-form.png)
 
-The purpose of the flow is to check which form action is pressed. When the **Save** action is pressed, the flow stores the gathered data in an Excel spreadsheet. When the **Cancel** action is pressed, the flow stops and returns an error. 
+The purpose of the flow is to check which form action is pressed. When the **Save** action is pressed, the flow stores the gathered data into an Excel spreadsheet. When the **Cancel** action is pressed, the flow stops and returns an error. 
 
 To implement this behaviour:
 

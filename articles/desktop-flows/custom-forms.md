@@ -48,7 +48,7 @@ Like the other elements, each action has an ID that describes it uniquely. When 
 
 ![Screenshot of an configured custom form action.](media/custom-forms/configured-action.png)
 
-When a form contains multiple actions, use this variable and [conditionals](use-conditionals.md) to check which one is pressed and implement different functionality for each scenario. To find more information on implementing this behavior, refer to [Create and handle custom forms]().  
+When a form contains multiple actions, use this variable and [conditionals](use-conditionals.md) to check which one is pressed and implement different functionality for each scenario. To find more information on implementing this behavior, refer to [Handle custom forms](how-to/handle-custom-forms.md).  
 
 The following screenshot shows how the previously configured custom form looks when the flow runs. 
 
