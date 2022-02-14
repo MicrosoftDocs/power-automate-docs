@@ -55,7 +55,7 @@ The select file dialog looks like the following figure. Note that the file filte
 
 ![Screenshot of a Select file dialog example.](\media\display\select-file-example.png)
 
-To create a custom form that accepts multiple elements, use the **Display custom form** action. Using this action, you can create custom forms that contain various input types and buttons. You can find more information regarding custom forms in [Create and use custom forms](../how-to/custom-form.md).
+To create a custom form that accepts multiple elements, use the **Display custom form** action. Using this action, you can create custom forms that contain various input types and buttons. You can find more information regarding custom forms in [Create custom forms](../custom-forms.md).
 
 ![Screenshot of the custom form designer.](\media\display\custom-form-designer.png)
 
@@ -235,6 +235,8 @@ Displays the select folder dialog and prompts the user to select a folder
 Display a customized form that can include multiple types of elements, like text, number or file inputs etc.
 
 ##### Input Parameters
+
+Input parameters are configured through the [custom form designer](../custom-forms.md).
 
 ##### Variables Produced
 |Argument|Type|Description|
