@@ -2,7 +2,7 @@
 title: Close any window through its process ID | Microsoft Docs
 description: Close any window through its process ID
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021

@@ -2,7 +2,7 @@
 title: The flow designer workspace | Microsoft Docs
 description: The flow designer workspace
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020

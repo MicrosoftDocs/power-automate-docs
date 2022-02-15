@@ -2,7 +2,7 @@
 title: Getting started with a Microsoft account  | Microsoft Docs
 description: Getting started with a Microsoft account
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article 
 ms.date: 09/22/2020

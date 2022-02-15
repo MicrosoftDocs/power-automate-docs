@@ -3,7 +3,7 @@ title: "Create a mobile task flow with Power Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/11/2018
 ms.reviewer: ""
-ms.service: power-automate
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow

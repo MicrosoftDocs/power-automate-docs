@@ -2,7 +2,7 @@
 title: Overview of process advisor | Microsoft Docs
 description: This topic provides an overview of the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: overview
 

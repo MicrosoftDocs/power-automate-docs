@@ -3,7 +3,7 @@ title: What's new in Power Automate | Microsoft Docs
 description: Learn about all the new features in Power Automate.
 author: msftman
 manager: kvivek
-ms.service: power-automate
+
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 01/27/2022

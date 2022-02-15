@@ -3,7 +3,7 @@ title: Overview of solution-aware flows | Microsoft Docs
 description: Learn the benefits of creating flows in solutions.
 author: msftman
 manager: kvivek
-ms.service: power-automate
+
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 10/11/2021

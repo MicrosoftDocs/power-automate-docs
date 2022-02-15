@@ -2,7 +2,7 @@
 title: Troubleshoot SQL queries | Microsoft Docs
 description: Troubleshoot SQL queries
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021

@@ -2,7 +2,7 @@
 title: Get started with task mining in process advisor  | Microsoft Docs
 description: Walk through a tutorial with demo data to experience task mining in the process advisor feature of Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.custom: intro-internal

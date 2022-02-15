@@ -4,7 +4,7 @@ description: "Learn how to create a business process flow"
 ms.custom: ""
 ms.date: 09/10/2021
 ms.reviewer: "msftman"
-ms.service: power-automate
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow

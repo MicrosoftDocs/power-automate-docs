@@ -4,7 +4,7 @@ description: "The sample demonstrates how to programmatically work with business
 ms.custom: ""
 ms.date: 04/05/2018
 ms.reviewer: ""
-ms.service: "flow"
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: ""
