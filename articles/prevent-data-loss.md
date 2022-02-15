@@ -143,17 +143,16 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
 
-<!---> 
+
 >[!Note]
 >If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
-<--->
 
 ### Creating a data loss prevention (DLP) policy with desktop flows restrictions in the Power Platform admin center
 
-<!---> 
+
 >[!IMPORTANT]
 > When admins edit or create a policy, new Desktop flow connectors will be added to the default group and the policy will be applied once it is saved. If the default group is set to "Blocked" and have Desktop flows running in the target environment(s), these will get suspended.
-<--->
+
 
 Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as “Variables” which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) section.
 
