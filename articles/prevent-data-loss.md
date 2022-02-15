@@ -52,7 +52,7 @@ Data loss prevention (DLP) for desktop flows is now available to all customers i
 
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
->- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the original release schedule and who have created or updated a DLP policy with desktop flow modules since. 
+>- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the [original release schedule](#original-release-schedule") and who have created or updated a DLP policy with desktop flow modules since. 
 
 ### PowerShell support 
 
@@ -178,6 +178,9 @@ When your tenant is opted into the user experience in the Power Platform, your a
 1. There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
 
 ### Original release schedule
+
+> [!NOTE]
+> Below is the original release schedule that was first published on November 2nd, 2022. It is no longer applicable.
 
 |Region|Date Available|
 |---|---|
