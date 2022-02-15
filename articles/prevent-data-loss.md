@@ -52,7 +52,7 @@ Data loss prevention (DLP) for desktop flows is now available to all customers i
 
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
->- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the [original release schedule](#original-release-schedule") and who have created or updated a DLP policy with desktop flow modules since. 
+>- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the [original release schedule](#original-release-schedule) and who have created or updated a DLP policy with desktop flow modules since. 
 
 ### PowerShell support 
 
@@ -142,11 +142,14 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
+
 <!---> 
 >[!Note]
 >If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
 <--->
+
 ### Creating a data loss prevention (DLP) policy with desktop flows restrictions in the Power Platform admin center
+
 <!---> 
 >[!IMPORTANT]
 > When admins edit or create a policy, new Desktop flow connectors will be added to the default group and the policy will be applied once it is saved. If the default group is set to "Blocked" and have Desktop flows running in the target environment(s), these will get suspended.
