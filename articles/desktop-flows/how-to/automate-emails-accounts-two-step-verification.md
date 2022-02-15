@@ -2,7 +2,7 @@
 title: Automate email accounts with two-step verification | Microsoft Docs
 description: Automate email accounts with two-step verification
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/22/2021

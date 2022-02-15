@@ -2,7 +2,7 @@
 title: Message boxes | Microsoft Docs
 description: Message boxes Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020

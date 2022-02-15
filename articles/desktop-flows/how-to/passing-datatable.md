@@ -2,7 +2,7 @@
 title: Pass a datatable from a cloud flow to a desktop flow | Microsoft Docs
 description: Pass a datatable from a cloud flow to a desktop flow
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/22/2021

@@ -2,7 +2,7 @@
 title: Getting started with an organization premium account  | Microsoft Docs
 description: Getting started with an Organization premium account
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020

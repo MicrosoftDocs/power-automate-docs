@@ -6,7 +6,7 @@ ms.date: 06/27/2018
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
 ms.topic: "article"
-ms.service: power-automate
+
 author: "MSFTMAN"
 ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9

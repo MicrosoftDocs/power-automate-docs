@@ -3,7 +3,7 @@ title: Use the Power Automate Azure Virtual Desktop Integration starter kit | Mi
 description: Making use of the Power Automate Azure Virtual Desktop Integration starter kit
 services: ''
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/28/2021

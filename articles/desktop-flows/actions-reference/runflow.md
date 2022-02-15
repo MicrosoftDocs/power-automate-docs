@@ -2,7 +2,7 @@
 title: Run desktop flow | Microsoft Docs
 description: Run desktop flow Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/13/2021

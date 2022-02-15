@@ -2,7 +2,7 @@
 title: Manage machine groups | Microsoft Docs
 description: Manage machine groups
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/18/2021

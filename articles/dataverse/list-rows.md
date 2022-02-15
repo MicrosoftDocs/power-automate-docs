@@ -4,7 +4,7 @@ description: "Learn how to use flows to work with lists of rows from Microsoft D
 author: MSFTMAN
 manager: KVIVEK
 ms.author: Deonhe
-ms.service: power-automate
+
 ms.topic: article
 ms.date: 01/31/2022
 search.app: 

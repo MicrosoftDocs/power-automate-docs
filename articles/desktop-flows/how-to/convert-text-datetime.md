@@ -2,7 +2,7 @@
 title: Convert a text value to datetime | Microsoft Docs
 description: Convert a text value to datetime
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 02/01/2022

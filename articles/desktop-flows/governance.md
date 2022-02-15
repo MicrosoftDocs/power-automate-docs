@@ -7,7 +7,7 @@ documentationcenter: na
 author: mariosleon
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article

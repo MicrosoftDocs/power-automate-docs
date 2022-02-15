@@ -8,7 +8,7 @@ author: Dean-Haas
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: overview
 ms.tgt_pltfrm: na

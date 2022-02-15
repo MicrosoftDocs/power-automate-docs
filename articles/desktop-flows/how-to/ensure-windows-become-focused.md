@@ -2,7 +2,7 @@
 title: Ensure that application windows become focused | Microsoft Docs
 description: Ensure that application windows become focused 
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021

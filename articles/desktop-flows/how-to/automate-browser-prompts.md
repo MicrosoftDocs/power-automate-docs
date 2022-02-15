@@ -2,7 +2,7 @@
 title: Automate browser prompts | Microsoft Docs
 description: Automate browser prompts
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021

@@ -2,7 +2,7 @@
 title: Retrieve details from a web page | Microsoft Docs
 description: Retrieve details from a web page 
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/11/2022
