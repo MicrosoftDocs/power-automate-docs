@@ -42,6 +42,12 @@ To extract images, deploy the **Extract images from PDF** action. This action ha
 
 To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types](../variable-data-types.md#advanced-data-types).
 
+> [!IMPORTANT]
+> The **Extract tables from PDF** action doesn't use Optical Character Recognition (OCR), so you can't extract non-copyable text from scanned PDFs. 
+
+> [!NOTE]
+> The library behind the action occasionally extracts additional PDF data that aren't tables. This functionality minimizes the risk of accidentally omitting a real table. 
+
 ![Screenshot of the Extract tables from PDF action.](media\pdf\extract-tables-pdf-example.png)
 
 Apart from extracting information from PDF files, you can create a new PDF document from an existing file using the **Extract PDF file pages to new PDF file** action. 
