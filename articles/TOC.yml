@@ -431,8 +431,6 @@
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
-    - name: Create custom forms
-      href: ./desktop-flows/custom-forms.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
     - name: Automate using images
@@ -447,6 +445,8 @@
       href: ./desktop-flows/use-conditionals.md
     - name: Automate web flows
       href: ./desktop-flows/automation-web.md
+    - name: Create custom forms
+      href: ./desktop-flows/custom-forms.md     
     - name: Use browsers and manage extensions
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
