@@ -46,7 +46,7 @@ To implement this behaviour:
 
 1. Deploy a **Write to Excel worksheet** action and write the customer's name in the first column of the first available spreadsheet row. 
 
-    All the form inputs are stored in the **CustomFormData** custom object variable. To access the value of a specific element of the custom object, use the following notation: **CustomFormData['ElementID']**.
+    All the form inputs are stored in the **CustomFormData** custom object variable. To access the value of a specific element of the custom object, use the following notation: **%CustomFormData['ElementID']%**.
 
     > [!NOTE]
     > You can find more information regarding custom objects in [Advanced data types](../variable-data-types.md#advanced-data-types)

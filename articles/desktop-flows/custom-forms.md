@@ -29,11 +29,14 @@ On the left side of the designer, there's a list with all the [available input e
 
 To add an element to the custom form,  double-click it or drag and drop it in the designer's workspace area. 
 
-After adding an element, you can handle all the [available specifications](#custom-form-element-specifications) on the right side of the form designer. The available specifications may differ depending on the nature of the selected element. 
+After adding an element, you can handle all the [available properties](#custom-form-element-properties) on the right side of the form designer. The available properties may differ depending on the nature of the selected element. 
 
 ![Screenshot of the available form elements.](media/custom-forms/form-elements.png)
 
-When a user populates a custom form, the provided data are stored into the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **CustomFormData['ElementID']**.
+When a user populates a custom form, the provided data are stored into the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **%CustomFormData['ElementID']%**.
+
+> [!IMPORTANT]
+> The ID of each element must be unique and can't be empty. Also, it must start with a letter and can contain Latin letters, numbers and spaces. If an invalid ID is provided, the last used valid ID will be automatically restored after closing and saving the form designer.
 
 > [!NOTE]
 > You can find more information regarding custom objects and how to handle them in [Advanced data types](variable-data-types.md#advanced-data-types).
@@ -43,6 +46,9 @@ When a user populates a custom form, the provided data are stored into the **Cus
 Apart from input and non-interactive elements, the form designer provides some actions to implement additional functionality in your forms.
 
 Consider actions as buttons that allow you to run different functions based on which button was pressed. For example, use a **Submit** action as a save button to gather and store the provided user data for later use in your flow.
+
+> [!NOTE]
+> Actions can be added only at the end of the form structure, after any other type of form element. 
 
 Like the other elements, each action has an ID that describes it uniquely. When an action is selected, its ID is stored into the **ButtonPressed** variable. 
 
@@ -56,24 +62,24 @@ The following screenshot shows how the previously configured custom form looks w
 
 ## Custom form elements
 
-| Element name     | Type    | Specifications
-| -----------------| --------| -----------------------------------------------------------------------------------------------------------------------------------------|
-| Text input       | Input   | ID, Label, Default value, Multiline, Style, Maximum length, Spacing, Separator, Height, Validation required, Error message, Pattern      |
-| Number input     | Input   | ID, Label, Default value, Minimum value, Maximum value, Spacing, Separator, Height, Validation required, Error message                   |
-| Date input       | Input   | ID, Label, Default value, Minimum value, Maximum value, Spacing, Separator, Height, Validation required, Error message                   |
-| Time input       | Input   | ID, Label, Default value, Minimum value, Maximum value, Spacing, Separator, Height, Validation required, Error message                   |
-| Toggle input     | Input   | ID, Label, Title, Default value, Value when on, Value when off, Spacing, Separator, Height, Wrap, Validation required, Error message     |
-| Choice set input | Input   | ID, Label, Default value, Allow multiple selection, Style, Choices, Spacing, Separator, Height, Wrap, Validation required, Error message |
-| File input       | Input   | ID, Label, Default value, Spacing, Separator, Height, Validation required, Error message                                                |
-| Text block       | Element | ID, Text, Spacing, Separator, Horizontal alignment, Height, Wrap, Maximum lines, Maximum width, Font type, Size, Weight, Color, Subtle, Italic, Strikethrough |
-| Image            | Element | ID, URL, Alternative text, Spacing, Separator, Horizontal alignment, Height, Height in pixels, Width in pixels, Size, Style, Background color |
-| Submit           | Action  | ID, Title, Ignore provided inputs                                                                                                        |
-| Open URL         | Action  | ID, Title, URL                                                                                                                           |
+| Element name     | Type    | Specifications                                                 | Layout properties               | Validaiton properties              | Style properties |
+| -----------------| ------- | -------------------------------------------------------------- | ------------------------------- | ---------------------------------- | ---|
+| Text input       | Input   | ID, Label, Default value, Multiline, Style, Maximum length     | Spacing, Separator, Height      | Validation required, Error message, Pattern | |
+| Number input     | Input   | ID, Label, Default value, Minimum value, Maximum value         | Spacing, Separator, Height      | Validation required, Error message | |
+| Date input       | Input   | ID, Label, Default value, Minimum value, Maximum value         | Spacing, Separator, Height      | Validation required, Error message | |
+| Time input       | Input   | ID, Label, Default value, Minimum value, Maximum value         | Spacing, Separator, Height      | Validation required, Error message | |
+| Toggle input     | Input   | ID, Label, Title, Default value, Value when on, Value when off | Spacing, Separator, Height Wrap | Validation required, Error message | |
+| Choice set input | Input   | ID, Label, Default value, Allow multiple selection, Style, Choices | Spacing, Separator, Height, Wrap | Validation required, Error message | |
+| File input       | Input   | ID, Label, Default value                                       | Spacing, Separator, Height | Validation required, Error message      | |
+| Text block       | Element | ID, Text | Spacing, Separator, Horizontal alignment, Height, Wrap, Maximum lines, Maximum width | | Font type, Size, Weight, Color, Subtle, Italic, Strikethrough |
+| Image            | Element | ID, URL, Alternative text | Spacing, Separator, Horizontal alignment, Height, Height in pixels, Width in pixels, Size | | Style, Background color |
+| Submit           | Action  | ID, Title, Ignore provided inputs | | | |
+| Open URL         | Action  | ID, Title, URL | | | |
 
 
-## Custom form element specifications
+## Custom form element properties
 
-| Specification name | Optional | Accepts | Default | Description |
+| Property name | Optional | Accepts | Default | Description |
 | -------------------| -------- | --------| ------- | ------------|
 | Allow multiple selection | N/A | Boolean value | False | Allows multiple choices to be selected |
 | Alternative text | Yes | Text value || Alternative text describing the image |
@@ -112,3 +118,11 @@ The following screenshot shows how the previously configured custom form looks w
 | Weight | N/A | Default, Lighter, Bolder | Default | Controls the weight of text |
 | Width in pixels | No | Numeric value | 0 | The desired on-screen width of the image. This overrides the 'Size' property |
 | Wrap | N/A | Boolean value | False | If enabled, allows text to wrap. Otherwise, text is clipped |
+
+## Known issues and limitations 
+
+- **Issue:** The preview pane seems to work as expected when the URL property contains percentage characters, but an **Invalid value** validation error occurs. 
+
+ - **Workaround:** This issue happens because Power Automate attempts to resolve the percentage characters as variables or expressions. 
+ 
+    To resolve this case, store the URL in a variable earlier in the flow, [escape the percentage characters](variable-manipulation.md), and then use that variable in the URL property. The preview won't show the image, but it will be shown during runtime. 
