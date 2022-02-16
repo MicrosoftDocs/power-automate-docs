@@ -2,7 +2,7 @@
 title: Delete a row/column from a datatable | Microsoft Docs
 description: Delete a row/column from a datatable
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021

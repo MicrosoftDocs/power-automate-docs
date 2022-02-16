@@ -2,7 +2,7 @@
 title: Getting started with Power Automate in Windows 11 (contains video) | Microsoft Docs
 description: Getting started with Power Automate in Windows 11
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article 
 ms.date: 09/10/2021

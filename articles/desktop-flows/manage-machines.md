@@ -2,7 +2,7 @@
 title: Manage machines | Microsoft Docs
 description: Manage machines
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/18/2022

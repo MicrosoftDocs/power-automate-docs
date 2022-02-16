@@ -2,7 +2,7 @@
 title: Datatype properties | Microsoft Docs
 description: Datatype properties
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020

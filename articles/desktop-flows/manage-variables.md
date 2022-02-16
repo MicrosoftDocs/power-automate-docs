@@ -2,7 +2,7 @@
 title: Manage the Variables pane | Microsoft Docs
 description: Manage the Variables pane
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020

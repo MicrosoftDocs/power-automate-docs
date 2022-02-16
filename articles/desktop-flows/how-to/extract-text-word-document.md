@@ -2,7 +2,7 @@
 title: Extract text from a Word document using VBScript | Microsoft Docs
 description: Extract text from a Word document using VBScript
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/24/2021

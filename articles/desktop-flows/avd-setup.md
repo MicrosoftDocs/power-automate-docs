@@ -5,7 +5,7 @@ services: ''
 author: mariosleon
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/28/2021

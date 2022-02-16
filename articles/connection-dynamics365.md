@@ -6,7 +6,7 @@ suite: flow
 documentationcenter: na
 author: JimDaly
 ms.reviewer: deonhe
-ms.service: power-automate
+
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 05/31/2020
