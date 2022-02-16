@@ -123,6 +123,4 @@ The following screenshot shows how the previously configured custom form looks w
 
 - **Issue:** The preview pane seems to work as expected when the URL property contains percentage characters, but an **Invalid value** validation error occurs. 
 
- - **Workaround:** This issue happens because Power Automate attempts to resolve the percentage characters as variables or expressions. 
- 
-    To resolve this case, store the URL in a variable earlier in the flow, [escape the percentage characters](variable-manipulation.md), and then use that variable in the URL property. The preview won't show the image, but it will be shown during runtime. 
+ - **Workaround:** This issue happens because Power Automate attempts to resolve the percentage characters as variables or expressions. To resolve this case, store the URL in a variable earlier in the flow, [escape the percentage characters](variable-manipulation.md), and then use that variable in the URL property. The preview won't show the image, but it will be shown during runtime. 
