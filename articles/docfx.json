@@ -70,6 +70,9 @@
       },
       "searchScope": {
         "**.*": [ "Power Platform", "Power Automate" ]
+      },
+      "ms.service": {
+        "**.*": "power-automate"
       }
     },
     "template": [],

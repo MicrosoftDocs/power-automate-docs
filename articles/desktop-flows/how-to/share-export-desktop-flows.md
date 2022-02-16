@@ -2,7 +2,7 @@
 title: Share/export a desktop flow | Microsoft Docs
 description: Share/export a desktop flow
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021

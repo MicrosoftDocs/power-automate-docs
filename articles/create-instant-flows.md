@@ -4,7 +4,7 @@ description: "Learn how to create instant flows in business process flows"
 ms.custom: ""
 ms.date: 09/24/2020
 ms.reviewer: "dean-haas"
-ms.service: power-automate
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow

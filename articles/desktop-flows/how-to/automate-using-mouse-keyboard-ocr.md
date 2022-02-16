@@ -2,7 +2,7 @@
 title: Automate with mouse, keyboard, and OCR actions | Microsoft Docs
 description: Automate with mouse, keyboard, and OCR actions
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 11/17/2021

@@ -3,7 +3,7 @@ title: "Overview of classic Dataverse background workflows | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "matp"
-ms.service: power-automate
+
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5

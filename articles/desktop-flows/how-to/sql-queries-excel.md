@@ -2,7 +2,7 @@
 title: Run SQL queries on Excel files | Microsoft Docs
 description: Run SQL queries on Excel files
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/22/2021

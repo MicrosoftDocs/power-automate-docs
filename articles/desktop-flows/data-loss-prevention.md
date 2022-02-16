@@ -2,7 +2,7 @@
 title: Data loss prevention (DLP) policies (preview) | Microsoft Docs
 description: Data loss prevention (DLP) policies (preview)
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 11/10/2021

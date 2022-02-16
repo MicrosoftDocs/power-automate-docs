@@ -2,7 +2,7 @@
 title: Convert a file to Base64 string format | Microsoft Docs
 description: Convert a file to Base64 string format
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021

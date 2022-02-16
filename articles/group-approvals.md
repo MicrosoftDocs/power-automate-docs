@@ -8,7 +8,7 @@ author: hamenon-ms
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
