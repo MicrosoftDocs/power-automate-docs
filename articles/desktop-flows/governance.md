@@ -127,7 +127,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 ***Value***
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to clean up run files
+## Configure Power Automate for desktop to prevent clean up of run files
 
 | | |
 |---|---|
