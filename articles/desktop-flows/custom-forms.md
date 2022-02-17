@@ -42,7 +42,7 @@ After adding an element, you can handle all the [available properties](#custom-f
 When a user populates a custom form, the provided data are stored into the **CustomFormData** custom object variable. To access the value of a specific input element stored in the custom object, use the following notation: **%CustomFormData['ElementID']%**.
 
 > [!IMPORTANT]
-> The ID of each element must be unique and can't be empty. Also, it must start with a letter and can contain Latin letters, numbers and spaces. If an invalid ID is provided, the last used valid ID will be automatically restored after closing and saving the form designer.
+> The ID of each element must be unique and can't be empty. Also, it must start with a letter and can contain Latin letters, numbers and spaces. You can't use variables in ID fields. If an invalid ID is provided, the last used valid ID will be automatically restored after closing and saving the form designer.
 
 > [!NOTE]
 > You can find more information regarding custom objects and how to handle them in [Advanced data types](variable-data-types.md#advanced-data-types).
