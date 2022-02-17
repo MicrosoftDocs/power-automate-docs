@@ -1,11 +1,11 @@
 ---
-title: Convert a file to Base64 string format | Microsoft Docs
-description: Convert a file to Base64 string format
+title: Convert data using PowerShell | Microsoft Docs
+description: Convert data using PowerShell
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 07/13/2021
+ms.date: 02/17/2022
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
@@ -15,20 +15,22 @@ search.audienceType:
   - enduser
 ---
 
-# Convert a file to Base64 string format
+# Convert data using PowerShell
 
-In some web services, you can upload files via the POST method only if the files are in Base64 string format. 
+Data conversion is an essential functionality in desktop flows, as different actions and applications may require data in specific formats.
 
-To convert a file to this format, use the **Run PowerShell script** action and populate the following command. Before deploying the **Run PowerShell script** action, use a **Set variable** action to store the path of the file you want to convert into a variable. In this example, the script converts a file specified by the **FilePath** variable.
+Power Automate offers various actions to direct convert data formats, such as the ****Convert text to number** and **Convert file to Base64** actions. 
 
-``` PowerShell
-[convert]::ToBase64String((Get-Content -path "%FilePath%" -Encoding byte))
-```
+However, there are conversion scenarios that can't be handled by the available actions. To address these cases, run a PowerShell script that performs the desired conversion.
+
+To run a PowerShell script, use the **Run PowerShell script** action and populate the appropriate command for the conversion you want to do.
+
+For example, the following PowerShell script converts a binary number stored in the **BinaryNumber** variable to decimal. 
+
+The action produces the **PowershellOutput** variable that stores the result of the conversion as a text. 
+
+![Screenshot of the Run PowerShell script action.](media/convert-file-base64-format/run-powershell-script-action.png)
 
 > [!NOTE]
-> You can find more information regarding PowerShell utility cmdlets in [this article](/powershell/module/microsoft.powershell.utility).
-
-The action produces the **PowershellOutput** variable that stores a text value representing the contents of the specified file in Base64 format.
-
-![Screenshot of the Run PowerShell script action.](media/convert-file-base64-format/run-powershell-scripti-action.png)
+> You can find more information regarding PowerShell conversion methods in [this article](/powershell/module/https://docs.microsoft.com/en-us/dotnet/api/system.convert.toint32?view=net-6.0).
 
