@@ -536,7 +536,7 @@
     - name: Convert data and files
       items: 
       - name: Convert data using PowerShell
-        href: ./desktop-flows/how-to/convert-file-base64-format.md
+        href: ./desktop-flows/how-to/convert-data-powershell.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
     - name: Run and troubleshoot SQL queries    
