@@ -2,7 +2,7 @@
 title: Images | Microsoft Docs
 description: Use the images pane to manage images in a desktop flow.
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: v-gtrantzas

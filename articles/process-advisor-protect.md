@@ -2,7 +2,7 @@
 title: Protect your data | Microsoft Docs
 description: This topic explains how to protect your data in process advisor.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021

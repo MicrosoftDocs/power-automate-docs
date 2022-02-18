@@ -2,7 +2,7 @@
 title: Build a custom selector | Microsoft Docs
 description: Build a custom selector
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/02/2021

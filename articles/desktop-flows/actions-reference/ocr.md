@@ -2,7 +2,7 @@
 title: OCR | Microsoft Docs
 description: OCR Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
@@ -55,6 +55,10 @@ To extract text in a language outside the mentioned list, enable the **Use other
 The **Language abbreviation** field indicates to the engine which language to look for during OCR. The **Language data path** field contains the language data files (.traineddata) used to train the OCR engine. You can find the language data files for all the available languages in [this GitHub repository](https://github.com/tesseract-ocr/tessdata).
 
 The Tesseract engine can be also used to extract text from multilingual documents. You can find more information regarding extracting text from multilingual documents in [Perform OCR on multilingual documents](../how-to/ocr-multilingual-documents.md).
+
+> [!NOTE]
+> To make use of the Tesseract OCR engine, make sure the machine's CPU supports AVX2 instruction set.
+
 
 ## OCR actions
 

@@ -2,7 +2,7 @@
 title: Prepare processes and data with process mining (preview) (contains video) | Microsoft Docs
 description: This topic explains how to prepare processes and data with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021

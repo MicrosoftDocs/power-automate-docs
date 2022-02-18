@@ -8,7 +8,7 @@ author: MSFTMan
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article

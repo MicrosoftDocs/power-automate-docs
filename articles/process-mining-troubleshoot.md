@@ -2,7 +2,7 @@
 title: Troubleshoot issues in process advisor (preview) | Microsoft Docs
 description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021

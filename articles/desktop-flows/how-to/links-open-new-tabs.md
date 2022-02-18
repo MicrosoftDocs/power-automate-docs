@@ -2,7 +2,7 @@
 title: Handle links that open new tabs | Microsoft Docs
 description: Handle links that open new tabs
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/04/2021

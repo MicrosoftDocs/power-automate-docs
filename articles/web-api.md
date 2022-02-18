@@ -7,7 +7,7 @@ ms.date: 11/30/2021
 ms.subservice: cloud-flow
 ms.topic: article
 ms.prod: 
-ms.service: power-automate
+
 ms.technology: 
 ms.author: deonhe
 audience: Power user

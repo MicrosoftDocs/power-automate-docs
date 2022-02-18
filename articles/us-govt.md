@@ -4,11 +4,11 @@ description: Provides information about Power Automate US Government service des
 services: ''
 suite: flow
 author: msftman
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/27/2021
+ms.date: 02/04/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -256,6 +256,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
+    * Guest users cannot access the approvals center so they cannot serve as approvers.
   * There is no markdown support for approval email.
   * Approvals are not available in DoD tenants. 
 
@@ -271,7 +272,7 @@ Microsoft is investigating the data loss prevention (DLP) feature, considering t
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateay**. 
+- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
 ### See also
 

@@ -8,7 +8,7 @@ author: mariosleon
 manager: ''
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
@@ -32,7 +32,7 @@ search.audienceType:
 
 - System requirements:
 
-   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
@@ -41,8 +41,9 @@ search.audienceType:
         - Storage: 2GB
 	     - RAM: 4GB
      - .NET Framework 4.7.2 or later 
+
 > [!NOTE]
-> The minimum requirements do not include the resources required for the applications involved in the flows.
+> The system requirements do not include the resources required for the applications involved in the flows.
      
 > [!TIP]
 > If your device runs Windows 10 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
@@ -124,9 +125,10 @@ Below you can find detailed comparison on what each user will have access to. Yo
 
       ![Screenshot of the prompted sign-in dialog with the respective error.](media\known-issues\pad-sign-in.png)
 
-1. Microsoft Account and Work account without a paid license are not supported in Sovereign clouds. GCC, GCCH, China sovereign clouds need paid license to sign-in to Power Automate and paid attended RPA license to use Power Automate for desktop.
 
 1. Power Automate applies the proxy configuration specified in Windows proxy settings. If the proxy server requires authentication, the administrator has to exclude Power Automate from using it or use another server that doesn't require authentication. You can find more information regarding bypassing proxy servers in [Configure Power Automate to bypass a corporate proxy server](governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server).
+
+1. The number of actions that can be logged in a single desktop flow run is limited to 10 000. Additional actions will be performed but won't be logged.
 
 
 ## Learn more

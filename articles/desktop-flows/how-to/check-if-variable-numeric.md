@@ -2,7 +2,7 @@
 title: Check if a variable is numeric | Microsoft Docs
 description: Check if a variable is numeric	
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021

@@ -2,7 +2,7 @@
 title: Manage machines | Microsoft Docs
 description: Manage machines
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/18/2022
@@ -23,10 +23,8 @@ Connecting your machine directly to Power Automate and the cloud allows you to h
 
 
 > [!IMPORTANT]
-> Direct connectivity is only available for versions of Power Automate  2.8.73.21119 or newer. If you are using an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
-
-> [!IMPORTANT]
-> In order to register your machine and use the machine management features, your Power Platform environment must have a version of the MicrosoftFlowExtensionsCore solution that is greater than or equal to 1.2.4.1. 
+> - Direct connectivity is only available for versions of Power Automate  2.8.73.21119 or newer. If you are using an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
+> - To register your machine and use the machine management features, your Power Platform environment must have a version of the MicrosoftFlowExtensionsCore solution that is greater than or equal to 1.2.4.1. 
 
 ## Register a new machine 
 
@@ -236,4 +234,4 @@ Environment admins can also restrict machine registration to a specific set of u
 
 ## Other known limitations 
 
-- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.
+- Machines and machine groups are not available in China regions (Mooncake). You can still run desktop flows from the cloud using an on-premises data gateway.

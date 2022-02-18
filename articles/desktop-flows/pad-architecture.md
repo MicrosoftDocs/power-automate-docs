@@ -2,7 +2,7 @@
 title: Power Automate for desktop architecture | Microsoft Docs
 description: Power Automate for desktop architecture
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/28/2020
