@@ -26,7 +26,7 @@ To run a PowerShell script, use the **Run PowerShell script** action and populat
 The action produces the **PowershellOutput** variable that stores the result of the conversion as a text. 
 
 > [!NOTE]
-> You can find more information regarding PowerShell conversion methods in [this article](https://docs.microsoft.com/en-us/dotnet/api/system.convert.toint32?view=net-6.0).
+> You can find more information regarding PowerShell conversion methods in [this article](https://docs.microsoft.com/dotnet/api/system.convert.toint32?view=net-6.0).
 
 ![Screenshot of the Run PowerShell script action.](media/convert-data-powershell/run-powershell-script-action.png)
 
