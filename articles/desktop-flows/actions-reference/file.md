@@ -34,6 +34,8 @@ Manage and manipulate files
 |[Write to CSV file](#writetocsvfile)|
 |[Get file path part](#getpathpart)|
 |[Get temporary file](#gettemppath)|
+|[Convert file to Base64](#convertfiletobase64action)|
+|[Convert Base64 to file](#convertbase64tofileaction)|
 
 ## Getting started with file actions
 
@@ -347,7 +349,43 @@ Create a uniquely named, empty temporary file on disk, and get the file object (
 |-----|-----|
 |Failed to create temporary file|Indicates a problem creating a temporary file|
 
+### <a name="convertfiletobase64action"></a> Convert file to Base64
+Convert a file to Base64 encoded text
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|File path|No|File||The file path to read from|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|Base64Text|Text value|The Base64 encoded text|
+
+##### <a name="gettemppath_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|File not found|Indicates that the file doesn't exist|
+|Can't convert file to Base64|Indicates that the provided file can't be converted into Base64 encoded text|
+
+### <a name="convertbase64tofileaction"></a> Convert Base64 to file
+Convert a Base64 encoded text to file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Base64 encoded text|No|Text value||The Base64 encoded text|
+|File path|No|File||The file to write to|
+|If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
+
+##### Variables Produced
+- This action doesn't produce any variables
 
 
+##### <a name="gettemppath_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Invalid directory for file|Indicates that the directory is invalid|
+|Can't convert Base64 to file|Indicates that the provided Base64 encoded text can't be converted into a file|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
