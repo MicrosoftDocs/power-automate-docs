@@ -179,12 +179,24 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
 ## Runtime notifications
 
-A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
-
-![Screenshot of a notification window.](\media\run-pad-flow\notification-window.png)
+Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences. 
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
+Through the **Monitoring/Notifications** option of the console settings, you can choose between the integrated Windows notifications, the flow monitoring window, or disabling the notifications.
+
+The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification pop-up enables users to pause or stop the flow through the respective buttons. 
+
+![Screenshot of a notification window.](media\run-pad-flow\notification-window.png)
+
+The **Flow monitoring window** option provides the same functionality as the windows notifications, while it offers some additional functionality.
+
+Instead of displaying separate notifications for each desktop flow, the monitoring window displays the state of all running flows in a single window. Further, it shows which subflow and action are running at any given time for each desktop flow. If an error occurs, you can copy the error details directly through the monitoring window for easier debugging.
+
+> [!NOTE]
+> When Power Automate pop-up dialogs appear, like input variable dialogs or update notifications, users can't interact with the flow monitoring window until they close the displayed dialog.
+
+![Screenshot of the flow monitoring window.](media\run-pad-flow\flow-monitoring-window.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
