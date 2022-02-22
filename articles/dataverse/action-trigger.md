@@ -31,7 +31,7 @@ Additionally, your role needs [permissions](/power-platform/admin/database-secur
 !["When an action is performed" trigger search result in the Power Automate designer"](../media/dataverse-action-trigger/fda27fcf4067248e47b7efd3daed4511.png)
 
 As the name suggests, this trigger runs the flow whenever a specific Dataverse action is performed. A Dataverse action is distinct from a Power Automate action. In Dataverse, custom process actions, or simply actions, are a way of extending out of the box operations on data. You can use them to define reusable custom business logic. To learn more, see [Work with actions](/powerapps/maker/data-platform/actions) and [Use Custom Process Actions with code](/powerapps/developer/data-platform/workflow-custom-actions).
-To learn how to run Dataverse actions from Power Automate, see [Perform bound or unbound actions](/power-automate/dataverse/bound-unbound).
+To learn how to run Dataverse actions from Power Automate, see [Perform bound or unbound actions](./bound-unbound.md).
 
 Here are the input fields for the trigger.
 

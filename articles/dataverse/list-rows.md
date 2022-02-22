@@ -135,7 +135,7 @@ Example FetchXML query for the Account table:
 </fetch>
 ```
 
-As the distinct operator is not currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](/power-automate/data-operations#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](/power-automate/create-variable-store-values#initialize-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
+As the distinct operator is not currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
 
 ### Skip token
 

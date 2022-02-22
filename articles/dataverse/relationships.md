@@ -43,7 +43,7 @@ If the lookup column is *polymorphic* (meaning it can have more than one possibl
 
 ## Activity party relationships
 
-*[Activity parties](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/activityparty)* are
+*[Activity parties](/dynamics365/customer-engagement/web-api/activityparty)* are
 a special type of relationship in Dataverse. For example, when you create an appointment, the values for **Required Attendees** and **Optional Attendees** are related to the System users table.
 
 ![Activity party attributes.](../media/relationships/activity.png "Activity party attributes")
