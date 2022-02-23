@@ -120,7 +120,7 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 1.	Select **…** on the top right corner of the action.
 1.	Select **Settings**.
 
-    ![The settings option .](../media/run-desktop-flow/settings.png "The settings option")
+    ![The settings option](../media/run-desktop-flow/settings.png "The settings option")
 
 1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these settings from being shown in the logs.
 
