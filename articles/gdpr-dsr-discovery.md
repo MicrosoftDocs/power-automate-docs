@@ -36,7 +36,7 @@ Below is a summary of the types of Power Automate resources that contain persona
 |Activity feed| Provides a recap of flow activities, including run status, failures, and notifications.|
 |User jobs|Not seen to the user, system jobs that run on behalf of a user in order for flows to execute.|
 |Flows|The workflow logic that exists for a cloud flow. [Learn more](./get-started-logic-flow.md)|
-|Flow permissions|Flows can be shared and re-assigned to other users. Permissions lists exist for all flows. [Learn more](./frequently-asked-questions.yml#can-i-share-the-flows-i-create)|
+|Flow permissions|Flows can be shared and re-assigned to other users. Permissions lists exist for all flows. [Learn more](./frequently-asked-questions.yml#can-i-share-the-flows-i-create-)|
 |User details|Details, which are not seen by user, that support flow execution.|
 |Connections|Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](./add-manage-connections.md)|
 |Connection permissions|Permissions for a specific connection. [Learn more](./add-manage-connections.md)|
