@@ -45,6 +45,9 @@ In order to see runs in this list, one of the following must be true:
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
 
+> [!NOTE]
+> In the actions logs of a run, there is a limit of 10.000 actions for a desktop flow. If there is more than 10.000 actions in your desktop flow, you should divide it in two separated flows if you want to see all action logs online.
+
  
 
 ## Desktop flow run information 
