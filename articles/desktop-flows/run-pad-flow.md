@@ -174,7 +174,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 ## Learn more
 
  - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](/power-automate/gateway-manage) documentation.
+ - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 ## Runtime notifications
