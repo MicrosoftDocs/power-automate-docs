@@ -206,7 +206,7 @@ Power Automate provides an extensive collection of examples to introduce users t
 
 To copy an example to your flows, right-click on it and select **Create a copy**. The copied flow will be stored under the **My flows** tab.
 
-If you've opened and edited an example in the flow designer, select the **Save as** button** to copy the edited example to your flows. The changes can't be saved to the original example flow. 
+If you've opened and edited an example in the flow designer, select the **Save as** button to copy the edited example to your flows. The changes can't be saved to the original example flow. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
