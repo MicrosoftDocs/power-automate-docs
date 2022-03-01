@@ -65,7 +65,7 @@ In this article, you will create a cloud flow that sends an email notification w
 
 1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
    
-   For more information on scope, see [Trigger flows&mdash;scope](/power-automate/dataverse/create-update-delete-trigger#scope).
+   For more information on scope, see [Trigger flows&mdash;scope](./dataverse/create-update-delete-trigger.md#scope).
    
     ![Specify the details for the table.](./media/common-data-model-intro/specify-instance.png)
 

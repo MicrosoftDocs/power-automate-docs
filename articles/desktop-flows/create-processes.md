@@ -26,7 +26,7 @@ search.audienceType:
 # Use Softomotive's WinAutomation with desktop flows
 
 > [!IMPORTANT]
-> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](https://aka.ms/Softomotive-Instructions). You may [migrate](softomotive-migrator.md) your flows to Power Automate. See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.  
+> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). You may [migrate](softomotive-migrator.md) your flows to Power Automate. See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.  
 
 You may migrate your flows to Power Automate. See the Power Automate Desktop documentation to learn about the evolution of WinAutomation.
 
