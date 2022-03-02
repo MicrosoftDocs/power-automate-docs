@@ -180,7 +180,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ### Character limits
 
-| Name | Notes |
+|Name|Notes|
 |------|-------|
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, `@string()` expressions can't be longer than this limit. |
 | Request URL character limit | 16,384 characters |
