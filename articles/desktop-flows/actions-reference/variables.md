@@ -21,8 +21,7 @@ search.audienceType:
 
 All variable-related actions for different datatypes
 
-|<!-- --> |
-|-----|
+
 [Truncate number](#truncatenumber)  
 [Generate random number](#generaterandomnumber)  
 [Clear list](#clearlist)  
