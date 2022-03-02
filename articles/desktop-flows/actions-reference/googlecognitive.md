@@ -19,17 +19,15 @@ search.audienceType:
 
 Google's cognitive actions
 
-|<!-- --> |
-|-----|
-|[Analyze sentiment](#analyzesentimentgoogle)|
-|[Analyze entities](#analyzeentitiesgoogle)|
-|[Analyze syntax](#analyzesyntaxgoogle)|
-|[Label detection](#labeldetectiongoogle)|
-|[Landmark detection](#landmarkdetectiongoogle)|
-|[Text Detection](#textdetectiongoogle)|
-|[Logo detection](#logodetectiongoogle)|
-|[Image properties detection](#imagepropertiesdetectiongoogle)|
-|[Safe search detection](#safesearchdetectiongoogle)|
+[Analyze sentiment](#analyzesentimentgoogle)  
+[Analyze entities](#analyzeentitiesgoogle)  
+[Analyze syntax](#analyzesyntaxgoogle)  
+[Label detection](#labeldetectiongoogle)  
+[Landmark detection](#landmarkdetectiongoogle)  
+[Text Detection](#textdetectiongoogle)  
+[Logo detection](#logodetectiongoogle)  
+[Image properties detection](#imagepropertiesdetectiongoogle)  
+[Safe search detection](#safesearchdetectiongoogle)  
 
 ## Getting started with Google cognitive actions
 

@@ -19,18 +19,16 @@ search.audienceType:
 
 Manage and manipulate folders
 
-|<!-- --> |
-|-----|
-|[If folder exists](#iffolderexistsaction)|
-|[Get files in folder](#getfiles)|
-|[Get subfolders in folder](#getsubfolders)|
-|[Create folder](#create)|
-|[Delete folder](#delete)|
-|[Empty folder](#empty)|
-|[Copy folder](#copy)|
-|[Move folder](#move)|
-|[Rename folder](#rename)|
-|[Get special folder](#getspecialfolder)|
+[If folder exists](#iffolderexistsaction)  
+[Get files in folder](#getfiles)  
+[Get subfolders in folder](#getsubfolders)  
+[Create folder](#create)  
+[Delete folder](#delete)  
+[Empty folder](#empty)  
+[Copy folder](#copy)  
+[Move folder](#move)  
+[Rename folder](#rename)  
+[Get special folder](#getspecialfolder)  
 
 ## Getting started with folder actions
 

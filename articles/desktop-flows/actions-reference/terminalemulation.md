@@ -19,15 +19,13 @@ search.audienceType:
 
 Take control of terminal emulators for automating mainframes and legacy systems
 
-|<!-- --> |
-|-----|
-|[Open terminal session](#openterminalsession)|
-|[Close terminal session](#closesession)|
-|[Move cursor on terminal session](#movecursor)|
-|[Get text from terminal session](#gettextfromterminalsession)|
-|[Set text on terminal session](#settextonterminalsession)|
-|[Send key to terminal session](#sendkey)|
-|[Wait for text on terminal session](#waitfortextonterminalsession)|
+[Open terminal session](#openterminalsession)  
+[Close terminal session](#closesession)  
+[Move cursor on terminal session](#movecursor)  
+[Get text from terminal session](#gettextfromterminalsession)  
+[Set text on terminal session](#settextonterminalsession)  
+[Send key to terminal session](#sendkey)  
+[Wait for text on terminal session](#waitfortextonterminalsession)  
 
 ## Getting started with terminal emulation actions
 

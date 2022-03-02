@@ -21,11 +21,9 @@ search.audienceType:
 
 Set or get data from the clipboard
 
-|<!-- --> |
-|-----|
-|[Get clipboard text](#gettext)|
-|[Set clipboard Text](#settext)|
-|[Clear clipboard contents](#clear)|
+[Get clipboard text](#gettext)  
+[Set clipboard Text](#settext)  
+[Clear clipboard contents](#clear)  
 
 ## Getting started with clipboard actions
 

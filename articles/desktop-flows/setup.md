@@ -78,19 +78,19 @@ The language used in Power Automate for desktop is the display language selected
 
 Here are the languages that Power Automate for desktop supports, in addition to English:
 
-|||||
-----|-----|-----|--------
-Basque	| French	| Latvian	| Slovak
-Bulgarian	|	Galician	|	Lithuanian	|	Slovenian
-Catalan	|	German		|Malay	|	Spanish
-Chinese (Simplified)	|	Greek	|	Norwegian	|	Swedish
-Chinese (Traditional)	|	Hindi	|	Polish	|	Thai
-Croatian	|	Hungarian	|	Portuguese (Brazil)	|	Turkish
-Czech	|	Indonesian	|	Portuguese (Portugal)		|Ukrainian
-Danish	|	Italian	|	Romanian	|	Vietnamese
-Dutch		|Japanese	|	Russian	
-Estonian 	|Kazakh	|	Serbian (Cyrillic, Serbia)	
-Finnish		|Korean		|Serbian (Latin, Serbia)
+A - E|F - J|K - Q|R - T|U - Z
+----|-----|-----|-----|-----
+Basque | Finnish | Kazakh | Romanian | Ukrainian
+Bulgarian | French | Korean | Russian | Vietnamese
+Catalan | Galician | Latvian | Serbian (Cyrillic, Serbia)
+Chinese (Simplified) | German | Lithuanian | Serbian (Latin, Serbia)
+Chinese (Traditional) | Greek | Malay | Slovak
+Croatian | Hindi | Norwegian | Slovenian
+Czech | Hungarian | Polish | Spanish
+Danish | Indonesian | Portuguese (Brazil) | Swedish
+Dutch | Italian | Portuguese (Portugal) | Thai
+Estonian | Japanese |  | Turkish
+
 
 ## Sign-in account comparison
 

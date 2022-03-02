@@ -21,12 +21,10 @@ search.audienceType:
 
 Automate sending, receiving, and managing emails through Exchange
 
-|<!-- --> |
-|-----|
-|[Connect to Exchange server](#connecttoexchangeserver)|
-|[Retrieve Exchange email messages](#retrieveexchangemessages)|
-|[Send Exchange email message](#sendmessage)|
-|[Process Exchange email messages](#processexchangemessages)|
+[Connect to Exchange server](#connecttoexchangeserver)  
+[Retrieve Exchange email messages](#retrieveexchangemessages)  
+[Send Exchange email message](#sendmessage)  
+[Process Exchange email messages](#processexchangemessages)
 
 ## Getting started with Exchange actions
 

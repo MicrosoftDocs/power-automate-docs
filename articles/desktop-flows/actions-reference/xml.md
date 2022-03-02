@@ -21,18 +21,16 @@ search.audienceType:
 
 Manage and manipulate XML files
 
-| |
-|-----|
-|[Read XML from file](#readfromfile)|
-|[Write XML to file](#writexmltofile)|
-|[Execute XPath expression](#executexpathquery)|
-|[Get XML element attribute](#getxmlelementattribute)|
-|[Set XML element attribute](#setelementattribute)|
-|[Remove XML element attribute](#removeelementattribute)|
-|[Get XML element value](#getxmlelementvalue)|
-|[Set XML element value](#setelementvalue)|
-|[Insert XML element](#insertelement)|
-|[Remove XML element](#removeelement)|
+[Read XML from file](#readfromfile)  
+[Write XML to file](#writexmltofile)  
+[Execute XPath expression](#executexpathquery)  
+[Get XML element attribute](#getxmlelementattribute)  
+[Set XML element attribute](#setelementattribute)  
+[Remove XML element attribute](#removeelementattribute)  
+[Get XML element value](#getxmlelementvalue)  
+[Set XML element value](#setelementvalue)  
+[Insert XML element](#insertelement)  
+[Remove XML element](#removeelement)  
 
 ## Getting started with XML actions
 

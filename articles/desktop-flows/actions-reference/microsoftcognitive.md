@@ -18,16 +18,14 @@ search.audienceType:
 
 Microsoft's cognitive actions
 
-|<!-- --> |
-|-----|
-|[Spell check](#spellcheck)|
-|[Analyze image](#analyzeimagemicrosoft)|
-|[Describe image](#describeimagemicrosoft)|
-|[OCR](#ocrmicrosoft)|
-|[Tag image](#tagimagemicrosoft)|
-|[Detect language](#detectlanguage)|
-|[Key phrases](#keyphrases)|
-|[Sentiment](#sentiment)|
+[Spell check](#spellcheck)  
+[Analyze image](#analyzeimagemicrosoft)  
+[Describe image](#describeimagemicrosoft)  
+[OCR](#ocrmicrosoft)  
+[Tag image](#tagimagemicrosoft)  
+[Detect language](#detectlanguage)  
+[Key phrases](#keyphrases)  
+[Sentiment](#sentiment)  
 
 ## Getting started with Microsoft cognitive actions
 

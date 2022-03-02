@@ -17,13 +17,11 @@ search.audienceType:
 
 # Loops
 
-|<!-- -->|
-|-----|
-|[Exit loop](#break)|
-|[For each](#foreach)|
-|[Loop](#loop)|
-|[Loop condition](#while)|
-|[Next loop](#continue)|
+[Exit loop](#break)  
+[For each](#foreach)  
+[Loop](#loop)  
+[Loop condition](#while)  
+[Next loop](#continue)  
 
 ## Getting started with loops
 
