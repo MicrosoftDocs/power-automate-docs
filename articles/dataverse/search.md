@@ -53,16 +53,17 @@ The simple query syntax supports the following functionality:
 
 |Operator|Description|
 |---------|-----------|
-Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
+|Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
 | Precedence operators | A search term "hotel+(wifi \| luxury)" will search for results containing the term "hotel" and either "wifi" or "luxury" (or both). |
 | Wildcards            | Trailing wildcards are supported; for example, "Alp\*" searches for "alpine".                                                        |
 | Exact matches        | A query enclosed in quotation marks " ".                                                                                            |
 
 The Lucene query syntax supports the following functionality:<!-- Edit note: Can you confirm that the Proximity search example below is correct. Expected quotes after the 5. -->
 
+
 |Operator|Description|
 |---------|-----------|
-Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
+|Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
 | Precedence operators              | The same functionality as simple query syntax.                       |
 | Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
 | Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |         |
