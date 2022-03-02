@@ -19,9 +19,7 @@ search.audienceType:
 
 Connect to CyberArk and retrieve passwords
 
-|<!-- --> |
-|-----|
-|[Get password from CyberArk](#getpasswordbase)|
+[Get password from CyberArk](#getpasswordbase)  
 
 ## Getting started with CyberArk actions
 

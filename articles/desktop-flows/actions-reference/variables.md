@@ -23,25 +23,25 @@ All variable-related actions for different datatypes
 
 |<!-- --> |
 |-----|
-|[Truncate number](#truncatenumber)|
-|[Generate random number](#generaterandomnumber)|
-|[Clear list](#clearlist)|
-|[Remove item from list](#removeitemfromlist)|
-|[Sort list](#sortlistbase)|
-|[Shuffle list](#shufflelist)|
-|[Merge lists](#mergelists)|
-|[Reverse list](#reverselist)|
-|[Remove duplicate items from list](#removeduplicateitemsfromlist)|
-|[Find common list items](#findcommonlistitems)|
-|[Subtract lists](#subtractlists)|
-|[Retrieve data table column into list](#retrievedatatablecolumnintolist)|
-|[Convert JSON to custom object](#convertjsontocustomobject)|
-|[Convert custom object to JSON](#convertcustomobjecttojson)|
-|[Add item to list](#additemtolist)|
-|[Create new list](#createnewlist)|
-|[Increase variable](#increasevariable)|
-|[Decrease variable](#decreasevariable)|
-|[Set variable](#assign)|
+[Truncate number](#truncatenumber)  
+[Generate random number](#generaterandomnumber)  
+[Clear list](#clearlist)  
+[Remove item from list](#removeitemfromlist)  
+[Sort list](#sortlistbase)  
+[Shuffle list](#shufflelist)  
+[Merge lists](#mergelists)  
+[Reverse list](#reverselist)  
+[Remove duplicate items from list](#removeduplicateitemsfromlist)  
+[Find common list items](#findcommonlistitems)  
+[Subtract lists](#subtractlists)  
+[Retrieve data table column into list](#retrievedatatablecolumnintolist)  
+[Convert JSON to custom object](#convertjsontocustomobject)  
+[Convert custom object to JSON](#convertcustomobjecttojson)  
+[Add item to list](#additemtolist)  
+[Create new list](#createnewlist)  
+[Increase variable](#increasevariable)  
+[Decrease variable](#decreasevariable)  
+[Set variable](#assign)  
 
 ## Getting started with variable actions
 

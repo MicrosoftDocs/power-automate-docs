@@ -21,23 +21,21 @@ search.audienceType:
 
 Connect to an Active Directory server and perform operations
 
-|<!-- --> |
-|-----|
-|[Create group](#creategroup)|
-|[Get group info](#getgroupinfo)|
-|[Get group members](#getgroupmembers)|
-|[Modify group](#modifygroupaction)|
-|[Create object](#createobject)|
-|[Delete object](#deleteobject)|
-|[Move object](#moveobject)|
-|[Rename object](#renameobject)|
-|[Create user](#createuser)|
-|[Get user info](#getuserinfo)|
-|[Modify user](#modifyuseraction)|
-|[Unlock user](#unlockuser)|
-|[Update user info](#updateuserinfo)|
-|[Connect to server](#connecttoserveraction)|
-|[Close connection](#closeconnection)|
+[Create group](#creategroup)  
+[Get group info](#getgroupinfo)  
+[Get group members](#getgroupmembers)  
+[Modify group](#modifygroupaction)  
+[Create object](#createobject)  
+[Delete object](#deleteobject)  
+[Move object](#moveobject)  
+[Rename object](#renameobject)  
+[Create user](#createuser)  
+[Get user info](#getuserinfo)  
+[Modify user](#modifyuseraction)  
+[Unlock user](#unlockuser)  
+[Update user info](#updateuserinfo)  
+[Connect to server](#connecttoserveraction)  
+[Close connection](#closeconnection)  
 
 ## Getting started with Active Directory actions
 

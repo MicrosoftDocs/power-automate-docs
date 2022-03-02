@@ -19,11 +19,9 @@ search.audienceType:
 
 Connect to databases and execute SQL statements
 
-|<!-- --> |
-|-----|
-|[Open SQL connection](#connect)|
-|[Execute SQL statement](#executesqlstatement)|
-|[Close SQL connection](#close)|
+[Open SQL connection](#connect)  
+[Execute SQL statement](#executesqlstatement)  
+[Close SQL connection](#close)  
 
 ## Getting started with database actions
 

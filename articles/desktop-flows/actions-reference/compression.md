@@ -21,10 +21,8 @@ search.audienceType:
 
 Zip or unzip files from archives
 
-|<!-- --> |
-|-----|
-|[ZIP files](#zipfiles)|
-|[Unzip files](#unzipfiles)|
+[ZIP files](#zipfiles)  
+[Unzip files](#unzipfiles)  
 
 ## Getting started with compression actions
 
