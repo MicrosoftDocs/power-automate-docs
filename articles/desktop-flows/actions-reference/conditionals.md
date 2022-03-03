@@ -17,15 +17,12 @@ search.audienceType:
 
 # Conditionals
 
-
-|<!-- --> |
-|-----|
-|[Case](#case)|
-|[Default case](#casedefault)|
-|[Else](#else)|
-|[Else if](#elseif)|
-|[If](#if)|
-|[Switch](#switch)|
+[Case](#case)  
+[Default case](#casedefault)  
+[Else](#else)  
+[Else if](#elseif)  
+[If](#if)  
+[Switch](#switch)  
 
 ## Getting started with conditionals
 

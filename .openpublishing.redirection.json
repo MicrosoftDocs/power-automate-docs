@@ -126,16 +126,16 @@
             "redirect_url": "/learn/paths/automate-process-using-flow",
             "redirect_document_id": false
         },
-      {
-        "source_path": "https://docs.microsoft.com/power-automate/guided-learning",
-        "redirect_url": "/learn/paths/automate-process-power-automate/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "articles/ui-flows/overview.md",
-        "redirect_url": "/power-automate/desktop-flows/overview",
-        "redirect_document_id": false
-      },
+        {
+            "source_path": "https://docs.microsoft.com/power-automate/guided-learning",
+            "redirect_url": "/learn/paths/automate-process-power-automate/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "articles/ui-flows/overview.md",
+            "redirect_url": "/power-automate/desktop-flows/overview",
+            "redirect_document_id": false
+        },
   {
     "source_path": "articles/ui-flows/upgrade.md",
     "redirect_url": "/power-automate/desktop-flows/upgrade",

@@ -19,21 +19,19 @@ search.audienceType:
 
 Perform a variety of tasks on the workstation
 
-|<!-- --> |
-|-----|
-|[Print document](#printdocument)|
-|[Get default printer](#getdefaultprinter)|
-|[Set default printer](#setdefaultprinter)|
-|[Log off user](#logoffuser)|
-|[Shutdown computer](#shutdowncomputer)|
-|[Show desktop](#showdesktop)|
-|[Lock workstation](#lockworkstation)|
-|[Play sound](#playsoundbase)|
-|[Empty recycle bin](#emptyrecyclebin)|
-|[Take screenshot](#takescreenshotbase)|
-|[Control screen saver](#controlscreensaver)|
-|[Get screen resolution](#getscreenresolution)|
-|[Set screen resolution](#setscreenresolution)|
+[Print document](#printdocument)  
+[Get default printer](#getdefaultprinter)  
+[Set default printer](#setdefaultprinter)  
+[Log off user](#logoffuser)  
+[Shutdown computer](#shutdowncomputer)  
+[Show desktop](#showdesktop)  
+[Lock workstation](#lockworkstation)  
+[Play sound](#playsoundbase)  
+[Empty recycle bin](#emptyrecyclebin)  
+[Take screenshot](#takescreenshotbase)  
+[Control screen saver](#controlscreensaver)  
+[Get screen resolution](#getscreenresolution)  
+[Set screen resolution](#setscreenresolution)  
 
 ## Getting started with workstation actions
 
