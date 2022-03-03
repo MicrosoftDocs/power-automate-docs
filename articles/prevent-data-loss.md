@@ -39,7 +39,7 @@ To learn more about protecting your data, see [Data loss prevention policies](/p
 ## Data loss prevention (DLP) for desktop flows (preview)
 
 >[!IMPORTANT]
->Data loss prevention for desktop flows is a preview feature and it's subject to change.
+>Data loss prevention for desktop flows is a preview feature at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
 
 Power Automate provides the ability to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
@@ -49,6 +49,8 @@ Power Automate provides the ability to create and enforce DLP policies that clas
 ### Availability 
 
 Data loss prevention (DLP) for desktop flows is now available to all customers in Public Preview at no cost. Administrators can configure their DLP policies and enforce them on desktop flows with PowerShell. 
+
+
 
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
