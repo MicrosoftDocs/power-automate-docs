@@ -50,7 +50,7 @@ Make sure you are not using a base64() function as this may corrupt the files.
 
 One reason that this may be happening is that some users may inputting more than 255 characters in the single line of text field in the form. Enable long answer in the text field .  
 
-### Form created by another team doesn’t isn’t listed as an option in Form Id.
+### Form created by another team isn’t listed as an option in Form Id
 
 Double check that the form is listed in the Microsoft Forms “Shared with me” tab. You may also want to [transfer ownership of the form](https://support.microsoft.com/office/transfer-ownership-of-a-form-921a6361-a4e5-44ea-bce9-c4ed63aa54b4), especially if members of the team will be leaving the company.
 
