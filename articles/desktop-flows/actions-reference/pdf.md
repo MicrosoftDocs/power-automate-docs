@@ -2,9 +2,9 @@
 title: PDF | Microsoft Docs
 description: PDF Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,31 +21,95 @@ search.audienceType:
 
 Automate PDF files and their content (text and images)
 
-|<!-- --> |
-|-----|
-|[Extract images from PDF](#extractimagesfrompdfaction)|
-|[Extract text from PDF](#extracttextfrompdfaction)|
-|[Extract PDF pages to new PDF](#extractpages)|
-|[Merge PDF files](#mergefiles)|
+[Extract text from PDF](#extracttextfrompdfaction)  
+[Extract tables from PDF](#extracttablesfrompdfaction)  
+[Extract images from PDF](#extractimagesfrompdfaction)  
+[Extract PDF file pages to new PDF file](#extractpages)  
+[Merge PDF files](#mergefiles)  
+
 
 ## Getting started with PDF actions
 
-Use the PDF action group to extract images and text from PDF files and arrange pages to create new documents.
+The PDF group of actions enables you to extract images, text, and tables from PDF files and arrange pages to create new documents.
 
-To extract text from a PDF file, use the **Extract text from PDF** action. In the example below, a file has been specified, and the action is configured to extract text from a range of pages. In the **Advanced** section, a password has been entered to access the secure file.
+To extract text from a PDF file, use the **Extract text from PDF** action. In the following example, the action has been configured to extract text from a specific range of pages. The file is password-protected, so a password has been populated in the **Advanced** settings. 
 
-![Screenshot of extract text from pdf action properties.](media\pdf\extract-text-pdf-example.png)
+![Screenshot of the Extract text from PDF action.](media\pdf\extract-text-pdf-example.png)
 
-Similarly, extract images with the **Extract images from PDF** action. This action contains an additional option to specify a prefix for the image names.
+To extract images, deploy the **Extract images from PDF** action. This action has a similar structure as the previous one, but it contains an additional option to specify a prefix for the image names.
 
-To create a new PDF document from an existing file, use the **Extract PDF file pages to new PDF file**. In the example below, the source document has been selected, and a file name for a new document has been specified. The pages have been entered as a combination of specific pages and a range.
+To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types](../variable-data-types.md#advanced-data-types).
 
-![Screenshot of extract pdf pages to new file action properties.](media\pdf\extract-pdf-new-file-example.png)
+> [!IMPORTANT]
+> The **Extract tables from PDF** action doesn't use Optical Character Recognition (OCR), so you can't extract non-copyable text from scanned PDFs. 
+
+> [!NOTE]
+> The library behind the action occasionally extracts additional PDF data that aren't tables. This functionality minimizes the risk of accidentally omitting a real table. 
+
+![Screenshot of the Extract tables from PDF action.](media\pdf\extract-tables-pdf-example.png)
+
+Apart from extracting information from PDF files, you can create a new PDF document from an existing file using the **Extract PDF file pages to new PDF file** action. 
+
+In the following example, the source document and the file name of the new document have been specified. In addition, the pages have been selected as a combination of specific pages and a range.
+
+![Screenshot of the Extract PDF file pages to new PDF file action.](media\pdf\extract-pdf-new-file-example.png)
 
 
 ## PDF actions
 
 
+### <a name="extracttextfrompdfaction"></a> Extract text from PDF
+Extract text from a PDF file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|PDF file|No|File||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
+|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
+|Page(s) to extract|N/A|All, Single, Range|All|Specifies how many pages to extract: All pages, a single page or a range of pages|
+|Single page number|No|Numeric value||The number of the single page to extract text from|
+|From page number|No|Numeric value||The first page number from the range of pages to extract text from|
+|To page number|No|Numeric value||The last page number from the range of pages to extract text from|
+
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ExtractedPDFText|Text value|The extracted text|
+
+##### <a name="extracttextfrompdfaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|PDF file doesn't exist|File doesn't exist on the given path|
+|Invalid password|The given password is invalid|
+|Failed to extract text|Error while trying to extract text|
+
+### <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
+Extract tables from a PDF file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|PDF file|No|File||The PDF file to extract tables from. Enter a file path, a variable containing a file or a text path|
+|Page(s) to extract|N/A|All, Single, Range|All|Specifies how many pages to extract tables from: all pages, a single page or a range of pages|
+|Single page number|No|Numeric value||The number of the single page to extract tables from|
+|From page number|No|Numeric value||The first page number from the range of pages to extract tables from|
+|To page number|No|Numeric value||The last page number from the range of pages to extract tables from|
+|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
+|Merge tables that cross page margins|N/A|Boolean value|True|Specifies whether to merge tables that cross page margins in the specified page range|
+|First line contains column names|N/A|Boolean value|True|Specifies whether the first line of table contains column names|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|ExtractedPDFTables|List of PDF table info|The extracted tables with their info as a list|
+
+##### <a name="extracttablesfrompdfaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|PDF file doesn't exist|File doesn't exist on the given path|
+|Invalid password|The given password is invalid|
+|Failed to extract tables|Error while trying to extract tables|
 
 ### <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 Extract images from a PDF file
@@ -74,34 +138,8 @@ Extract images from a PDF file
 |Folder doesn't exist|Indicates that the folder doesn't exist|
 |PDF file doesn't exist|File doesn't exist on the given path|
 
-### <a name="extracttextfrompdfaction"></a> Extract text from PDF
-Extract text from a PDF file
 
-##### Input Parameters
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|PDF file|No|File||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
-|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
-|Page(s) to extract|N/A|All, Single, Range|All|Specifies how many pages to extract: All pages, a single page or a range of pages|
-|Single page number|No|Numeric value||The number of the single page to extract text from|
-|From page number|No|Numeric value||The first page number from the range of pages to extract text from|
-|To page number|No|Numeric value||The last page number from the range of pages to extract text from|
-
-
-##### Variables Produced
-|Argument|Type|Description|
-|-----|-----|-----|
-|ExtractedPDFText|Text value|The extracted text|
-
-
-##### <a name="extracttextfrompdfaction_onerror"></a> Exceptions
-|Exception|Description|
-|-----|-----|
-|PDF file doesn't exist|File doesn't exist on the given path|
-|Invalid password|The given password is invalid|
-|Failed to extract text|Error while trying to extract text|
-
-### <a name="extractpages"></a> Extract PDF pages to new PDF
+### <a name="extractpages"></a> Extract PDF file pages to new PDF file
 Extract pages from a PDF file to a new PDF file
 
 ##### Input Parameters

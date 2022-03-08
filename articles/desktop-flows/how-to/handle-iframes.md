@@ -2,7 +2,7 @@
 title: Handle iframes on a web page | Microsoft Docs
 description: Handle iframes on a web page
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/24/2021
@@ -25,8 +25,8 @@ If the browser automation actions don't work correctly with a particular iframe,
 
 If an iframe is cross-domain, deploy the **Get details of element on web page** to retrieve the **Source Link** attribute of the element.
 
-![The Get details of element on web page action.](media/handle-iframes/get-details-element-web=page-action.png)
+![Screenshot of the Get details of element on web page action.](media/handle-iframes/get-details-element-web=page-action.png)
 
 Next, use the **Go to web page** action or the **Create new tab** action to navigate to the retrieved source. Now, you can use the browser automation actions to interact with the iframe.
 
-![The Go to web page action.](media/handle-iframes/go-web-page-action.png)
+![Screenshot of the Go to web page action.](media/handle-iframes/go-web-page-action.png)

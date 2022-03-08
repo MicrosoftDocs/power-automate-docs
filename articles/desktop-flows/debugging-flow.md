@@ -2,7 +2,7 @@
 title: Debugging a desktop flow | Microsoft Docs
 description: Use the flow designer's debugging options to debug flows.
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -32,13 +32,13 @@ Debug a desktop flow using the following tools:
 
 Select **Run** or press **F5** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** or press **Ctrl + Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button and the **F10** shortcut run the flow action by action and pause it after each action completes. The **Stop** button and the **Shift + F5** shortcut stop the flow completely.
 
-![View the toolbar.](\media\run-stop-pause\toolbar.png)
+![Screenshot of the toolbar.](\media\run-stop-pause\toolbar.png)
 
 ## Adding breakpoints
 
 Click to the left of the running order number in the workspace to place a breakpoint in the flow, which appears as a red dot. Add a breakpoint to specify at which action to pause the flow. Resume running the flow by selecting **Run** or **Run next action**. Select the breakpoint to remove it.
 
-![add breakpoint.](\media\adding-breakpoints\add-breakpoint.png)
+![Screenshot of an added breakpoint.](\media\adding-breakpoints\add-breakpoint.png)
 
 ## Run a desktop flow by action
 
@@ -54,32 +54,35 @@ The status bar also displays the number of errors, if any are present. Select th
 
 If you search inside the flow, the status bar shows an additional field containing the number of the results. Select this field to pop up the **Find in code** pane.
 
-![status bar.](\media\status-bar\status-bar.png)
+![Screenshot of the status bar.](\media\status-bar\status-bar.png)
 
 ## Run from here
 
 To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
 
-![run from here.](\media\run-stop-pause\run-from-here.png)
+![Screenshot of the Run from here option.](\media\run-stop-pause\run-from-here.png)
 
 ## Power Automate reserved keywords
 
 A certain amount of words are being used in the core of Power Automate and can't be used during development in the variable, subflow, label or error block names.
 The list of these words is displayed below.
 
-|<!-- --> |<!-- --> |<!-- --> |<!-- --> |
-|----|----|----|----|
-|action|false|loop|step|
-|and|for|main|switch|
-|block|foreach|mod|then|
-|call|from|next|throw|
-|case|function|no|times|
-|default|global|not|to|
-|disable|goto|on|true|
-|else|if|or|wait|
-|end|in|output|while|
-|error|input|repeat|xor|
-|exit|label|set|yes|
+A - E|F - J|K - R|S - Z
+----|-----|-----|-----
+action | FALSE | label | set
+and | for | loop | step
+block | foreach | main | switch
+call | from | mod | then
+case | function | next | throw
+default | global | no | times
+disable | goto | not | to
+else | if | on | TRUE
+end | in | or | wait
+error | input | output | while
+exit |  | repeat | xor
+|  |  |  | yes
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

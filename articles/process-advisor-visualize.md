@@ -2,7 +2,7 @@
 title: Visualize processes in process advisor  | Microsoft Docs
 description: Learn how to use the process map and application analytics to gain understanding of app usage and insight into where opportunities for improvement exist.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021

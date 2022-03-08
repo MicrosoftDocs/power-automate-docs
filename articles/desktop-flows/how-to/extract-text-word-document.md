@@ -2,7 +2,7 @@
 title: Extract text from a Word document using VBScript | Microsoft Docs
 description: Extract text from a Word document using VBScript
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/24/2021
@@ -47,12 +47,12 @@ Set WordDoc = Nothing
 Set Word = Nothing
 ```
 
-![The populated Run VBScript action.](media/extract-text-word-document/run-vbscript-action.png)
+![Screenshot of the populated Run VBScript action.](media/extract-text-word-document/run-vbscript-action.png)
 
 The script contains a variable named **FilePath** that specifies the file path of the Word document. You can initialize this variable using a **Set variable** action before the **Run VBScript** action or replace it with a hardcoded value.
 
-![The Set variable action.](media/extract-text-word-document/set-variable-action.png)
+![Screenshot of the Set variable action.](media/extract-text-word-document/set-variable-action.png)
 
 The **Run VBScript** action stores the extracted text by default in a variable named **VBScriptOutput**. You can use this variable as an input in the available Text actions to manipulate the retrieved text.
 
-![The Trim text action.](media/extract-text-word-document/trim-text-action.png)
+![Screenshot of the Trim text action.](media/extract-text-word-document/trim-text-action.png)

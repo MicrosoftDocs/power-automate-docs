@@ -2,9 +2,9 @@
 title: Conditionals | Microsoft Docs
 description: Conditionals Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -17,15 +17,12 @@ search.audienceType:
 
 # Conditionals
 
-
-|<!-- --> |
-|-----|
-|[Case](#case)|
-|[Default case](#casedefault)|
-|[Else](#else)|
-|[Else if](#elseif)|
-|[If](#if)|
-|[Switch](#switch)|
+[Case](#case)  
+[Default case](#casedefault)  
+[Else](#else)  
+[Else if](#elseif)  
+[If](#if)  
+[Switch](#switch)  
 
 ## Getting started with conditionals
 

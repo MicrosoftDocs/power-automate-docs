@@ -2,9 +2,9 @@
 title: Loops | Microsoft Docs
 description: Loops Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -17,13 +17,11 @@ search.audienceType:
 
 # Loops
 
-|<!-- -->|
-|-----|
-|[Exit loop](#break)|
-|[For each](#foreach)|
-|[Loop](#loop)|
-|[Loop condition](#while)|
-|[Next loop](#continue)|
+[Exit loop](#break)  
+[For each](#foreach)  
+[Loop](#loop)  
+[Loop condition](#while)  
+[Next loop](#continue)  
 
 ## Getting started with loops
 

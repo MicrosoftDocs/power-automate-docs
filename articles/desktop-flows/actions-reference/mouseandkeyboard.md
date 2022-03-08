@@ -2,9 +2,9 @@
 title: Mouse and keyboard | Microsoft Docs
 description: Mouse and keyboard Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,26 +21,24 @@ search.audienceType:
 
 Take control of the mouse and keyboard
 
-|<!-- --> |
-|-----|
-|[Block Input](#blockinput)|
-|[Get mouse position](#getmouseposition)|
-|[Move mouse](#movemouse)|
-|[Move mouse to image](#movemousetoimagebase)|
-|[Move mouse to text on screen (OCR)](#movemousetotextonscreenwithocraction)|
-|[Send mouse click](#sendmouseclick)|
-|[Send keys](#sendkeys)|
-|[Press/release key](#pressreleasekey)|
-|[Set key state](#setkeystate)|
-|[Wait for mouse](#waitformouseaction)|
-|[Get keyboard identifier](#getkeyboardlayout)|
-|[Wait for shortcut key](#waitforshortcutkeyaction)|
+[Block Input](#blockinput)  
+[Get mouse position](#getmouseposition)  
+[Move mouse](#movemouse)  
+[Move mouse to image](#movemousetoimagebase)  
+[Move mouse to text on screen (OCR)](#movemousetotextonscreenwithocraction)  
+[Send mouse click](#sendmouseclick)  
+[Send keys](#sendkeys)  
+[Press/release key](#pressreleasekey)  
+[Set key state](#setkeystate)  
+[Wait for mouse](#waitformouseaction)  
+[Get keyboard identifier](#getkeyboardlayout)  
+[Wait for shortcut key](#waitforshortcutkeyaction)  
 
 ## Getting started with mouse and keyboard actions
 
 Simulate using the keyboard to enter text or other key commands with the **Send Keys** action. Use the **Insert special key** button to insert keys such as the arrow keys, Caps Lock or keys from the numeric keypad, and Insert modifier to send keys such as Shift and Control. In the example below, a signature is added to an email message, starting with two line breaks. At the end of the text, the action sends the Ctrl+A and Ctrl+C commands, to select all and copy, to use the contents of the entire email text from the clipboard in a subsequent action.
 
-![Screenshot of send keys action properties.](\media\mousekeyboard\send-keys-example.png)
+![Screenshot of the Send keys action.](media\mousekeyboard\send-keys-example.png)
 
 > [!NOTE]
 > To use a key as a modifier, use the curly brackets notation for both keys:
@@ -48,15 +46,15 @@ Simulate using the keyboard to enter text or other key commands with the **Send 
 
 To simulate moving the mouse, use the **Move mouse** action. In the following example, the mouse has been set to move to specific coordinates by moving the pointer there manually, and pressing Control+Shift to set its current coordinates for Position X & Y. The movement speed has been set to normal.
 
-![Screenshot of move mouse action properties.](\media\mousekeyboard\move-mouse-example.png)
+![Screenshot of the Move mouse action.](media\mousekeyboard\move-mouse-example.png)
 
 Move the mouse to a specific image on the screen with the **Move mouse to image** action. In the figure below, the mouse is set to move to the first occurence of the search icon from the captured images, and to left click. 
 
-![Screenshot of move mouse to image properties.](\media\mousekeyboard\move-mouse-to-image-example.png)
+![Screenshot of the Move mouse to image action.](media\mousekeyboard\move-mouse-to-image-example.png)
 
 In the **Advanced** section, the action has been set to wait 30 seconds for the image to appear in the foreground window, and the mouse position has to be in the center of the image.
 
-![Screenshot of move mouse to image advanced properties.](\media\mousekeyboard\move-mouse-to-image-advanced-example.png)
+![Screenshot of the Move mouse to image action advanced properties.](media\mousekeyboard\move-mouse-to-image-advanced-example.png)
 
 
 ## Mouse and keyboard actions
@@ -186,6 +184,13 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
+|Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
+|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
+|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
+|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
 |Wait for text to appear|N/A|Boolean value|False|Specify whether to wait if the text isn't found on the screen or foreground window|
 |Fail if text doesn't appear within|Yes|Numeric value|10|The number of seconds to wait for the supplied text to appear|
 |Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
@@ -215,7 +220,10 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Can't move mouse in non interactive mode|Indicates a problem moving the mouse in non-interactive mode|
 |Failed to move mouse|Indicates a problem moving the mouse|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
-|OCR engine isn't alive|Indicates that the OCR engine specified isn't alive|
+|Failed to create the OCR engine|Indicates an error occurred while trying to create the OCR engine|
+|Data path folder doesn't exist|Indicates that the folder specified for the language data doesn't exist|
+|The selected Windows language pack isn't installed on the machine|Indicates that the selected Windows language pack hasn't been installed on the machine|
+|OCR engine isn't alive|Indicates that the OCR engine isn't alive|
 
 ### <a name="sendmouseclick"></a> Send mouse click
 Sends a mouse click event
@@ -248,6 +256,7 @@ Sends keys to the application that is currently active
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
+|Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class|
 |Text to send|No|Encrypted value||The text to send to the application|
 |Delay between keystrokes|Yes|Numeric value|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
 |Send Text as hardware keys|N/A|Boolean value|False|Emulate the actual keystrokes on keyboard when sending whole Text|
@@ -366,12 +375,12 @@ Retrieves the active keyboard identifier from the machine's registry
 |Keyboard identifier wasn’t found|Indicates an error while retrieving the keyboard identifier|
 
 ### <a name="waitforshortcutkeyaction"></a> Wait for shortcut key
-Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). To define multiple shortcut keys seperate them by comma.
+Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). Multiple shortcut keys can be defined
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Shortcut key|Yes|List of Text values|Ctrl + A|Specify the shortcut keys to wait for.  Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). In order to wait for one of multiple shortcut keys they must be in a list.|
+|Shortcut keys|N/A|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). To add more than one shortcut key, select 'New shortcut key'|
 |Continue flow run on timeout|N/A|Boolean value|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
 |Continue after|Yes|Numeric value|10|The time in seconds before continuing the flow run|
 

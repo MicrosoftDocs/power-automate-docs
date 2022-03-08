@@ -4,7 +4,7 @@ description: "Learn how to create a business process flow"
 ms.custom: ""
 ms.date: 09/10/2021
 ms.reviewer: "msftman"
-ms.service: power-automate
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -26,7 +26,7 @@ search.audienceType:
 ---
 # Tutorial: Create a business process flow
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   

@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
@@ -100,18 +100,18 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
 
-    ![Image1.](./media/dynamics365-RPA/image001.png)
+    ![Screenshot of the Power Automate for desktop machine settings.](./media/dynamics365-RPA/image001.png)
 
 1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
 
-    ![Image2.](./media/dynamics365-RPA/image003.png)
-    ![Image3.](./media/dynamics365-RPA/image005.png)
+    ![Screenshot of the option to create a new cloud flow.](./media/dynamics365-RPA/image003.png)
+    ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-RPA/image005.png)
 
 1. Add a desktop flow connector. 
-    ![Image4.](./media/dynamics365-RPA/image007.png)
+    ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/dynamics365-RPA/image007.png)
  
 Select the Directly to machine connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
-    ![Image5.](./media/dynamics365-RPA/image009.png)
+    ![Screenshot of the desktop flow connector.](./media/dynamics365-RPA/image009.png)
  
 ## Install the Dynamics 365 RPA solution 
 
@@ -134,11 +134,11 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     a. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice.  
 
-   ![Image6.](./media/dynamics365-RPA/image011.png)
+   ![Screenshot of the connections that need to be configured to be used by the solution.](./media/dynamics365-RPA/image011.png)
       
     b. Come back to the tab from which you initiate the above step and click **Refresh** 
 
-    ![Image7.](./media/dynamics365-RPA/image013.png)
+    ![Screenshot of the Refresh option.](./media/dynamics365-RPA/image013.png)
 
     c. Click on Import. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
 
@@ -157,7 +157,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
     |QOrder Parameter – Test Group|Configure the Testgroup for the quality order creation|
     |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation| 
 
-    ![Image8.](./media/dynamics365-RPA/image015.png)
+    ![Screenshot of the Edit QOrder Parameter pane.](./media/dynamics365-RPA/image015.png)
 
 1. Turn on the cloud flow in the solution 
 
@@ -173,13 +173,13 @@ Now that prerequisites are set, we are on our way to get these free solutions th
     e. In the **LoginSCM** subflow, double click on action 8 
     f. Fill in the **Text** textbox with the password of the account to use during automation 
     
-    ![Image9.](./media/dynamics365-RPA/image017.png)
+    ![Screenshot of the Populate text field on web page action.](./media/dynamics365-RPA/image017.png)
  
 1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
 
 1. Have the user launch the “QOrder-Application" Power App from their phone and start using it. Watch this video for the scenario demo 
 
-    ![Image10.](./media/dynamics365-RPA/image019.png)
+    ![Video of a demo.](./media/dynamics365-RPA/image019.png)
 
  
 

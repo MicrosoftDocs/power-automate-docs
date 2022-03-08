@@ -7,7 +7,7 @@ author: kathyos
 manager: kvivek
 editor: ''
 ms.custom: guidance
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na

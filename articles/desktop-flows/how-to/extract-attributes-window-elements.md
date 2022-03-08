@@ -2,7 +2,7 @@
 title: Extract attributes from window elements | Microsoft Docs
 description: Extract attributes from window elements
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
@@ -21,7 +21,7 @@ The **Get details of a UI element in window** action enables users to retrieve t
 
 These values can be used in various operations, such as [managing windows by their handles](identify-window-handle.md) and [closing windows through their process IDs](close-window-process-id.md).
 
-![The Get details of a UI element in window action.](media/extract-attributes-window-elements/get-details-ui-element-action.png)
+![Screenshot of the Get details of a UI element in window action.](media/extract-attributes-window-elements/get-details-ui-element-action.png)
 
 Apart from the four predefined attributes that the action provides, you also retrieve the following attributes:
 

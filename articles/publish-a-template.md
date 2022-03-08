@@ -8,13 +8,13 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/02/2019
+ms.date: 01/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -44,6 +44,9 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
 1. Select **Submit**.
 
      The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
+
+>[!NOTE]
+>Templates are for use in the public gallery only. They are not supported for private use.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

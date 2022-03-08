@@ -2,7 +2,7 @@
 title: Using loops | Microsoft Docs
 description: Using loops
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -33,7 +33,7 @@ The idea behind a loop is to make a desktop flow repeat one or more actions mult
 
 This loop repeats the actions between the **Loop** and **End** actions for a set number of times. A loop index variable is created automatically to track the current iteration’s number.
 
-![The Loop action.](media\simple-loops\loop-action.png)
+![Screenshot of the Loop action.](media\simple-loops\loop-action.png)
 
 A simple loop is ideal to use in two cases:
 
@@ -41,7 +41,7 @@ A simple loop is ideal to use in two cases:
 
 1. The loop index variable must be used somewhere inside the loop.
 
-![An example flow with a Loop action .](media\simple-loops\loop-example.png)
+![Screenshot of an example flow with a Loop action.](media\simple-loops\loop-example.png)
 
 In case you need to exit the loop before the specified iterations are completed, use the **Exit loop** action. To skip the current iteration, use the **Next loop** action.
 
@@ -49,13 +49,13 @@ In case you need to exit the loop before the specified iterations are completed,
 
 Unlike simple loops, the **Loop condition** makes a desktop flow repeat one or more actions as long as a condition is true.
 
-![The Loop condition action.](media\loop-condition\loop-condition.png)
+![Screenshot of the Loop condition action.](media\loop-condition\loop-condition.png)
 
 If the condition is always true, the loop will never end. This situation is called an endless loop.
 
 The condition consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
-![An example flow with a Loop condition action.](media\loop-condition\loop-condition-example.png)
+![Screenshot of an example flow with a Loop condition action.](media\loop-condition\loop-condition-example.png)
 
 In case you need to exit the loop before the specified iterations are completed, use the **Exit loop** action. To skip the current iteration, use the **Next loop** action.
 
@@ -63,11 +63,11 @@ In case you need to exit the loop before the specified iterations are completed,
 
 The **For each** loop iterates through a list (or data table) and stores the current item in a variable. Its primary purpose is to get each item of a list (or row of a data table) and use it in other actions.
 
-![The For each action.](media\for-each-loop\for-each-loop.png)
+![Screenshot of the For each action.](media\for-each-loop\for-each-loop.png)
 
 You can use this kind of loop to search for specific names, contents, or attributes in all kinds of lists. For example, you can iterate through a list of retrieved files to find a file with a specific name. 
 
-![An example flow with a For each action.](media\for-each-loop\for-each-loop-example.png)
+![Screenshot of an example flow with a For each action.](media\for-each-loop\for-each-loop-example.png)
 
 In case you need to exit the loop before the specified iterations are completed, use the **Exit** loop action. To skip the current iteration, use the **Next loop** action.
 

@@ -2,7 +2,7 @@
 title: Manage the Variables pane | Microsoft Docs
 description: Manage the Variables pane
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -51,6 +51,9 @@ To rename a desktop flow variable, make a right-click on its name in the **Varia
 
 Although you can update variables' names manually through actions, the name will be changed only in these specific actions, not globally. 
 
+> [!NOTE]
+> If you try to rename a variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+
 ## Input and output variables
 
 Power Automate enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate for desktop, allowing you to create sophisticated flows.
@@ -76,9 +79,13 @@ To create an input variable:
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
+    - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
     > The **Variable type**, **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
+
+    > [!NOTE]
+    > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
@@ -100,9 +107,13 @@ To create an output variable:
     - **Variable name**: The name of the variable in the flow.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate.
+    - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
     > The **Variable type**, **Variable name**, and **External name** fields are required to create an output variable.
+
+    > [!NOTE]
+    > If you choose an existing flow variable name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
     ![Screenshot of the Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
 
@@ -117,6 +128,9 @@ Through this pane, you can rename, update, delete, and find the usages of each i
 To update an input/output variable:
 
 1.  Right-click on its name in the variables pane and select **Edit**.
+
+    > [!NOTE]
+    > If you try to rename an input or output variable to an existing flow variable name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
     ![Screenshot of the Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
@@ -133,13 +147,18 @@ There are scenarios where flows handle sensitive information that needs to be hi
 
 If you have logged in with an organization premium account, the values of sensitive variables aren't logged in the desktop flow logs of the Power Automate portal when the flow runs from the console or a cloud flow. 
 
-Users can set any variable as sensitive, independently of its type, via the variables pane. Sensitivity is marked at the variable level, so variable types that are structures of data, like lists, datarows, datatables or custom objects, will be sensitive as a whole. There is no way to mark only a list item or a datatable column or a variable property as sensitive in an otherwise non-sensitive variable. Sensitive variables can be manipulated, referenced, processed, and used in every action without any limitation, like every other variable. Additionally, they can be combined with other variables and included in expressions. In this case, for the logs' purposes, such expressions would be considered sensitive as a whole.
+Users can set any variable as sensitive, independently of its type, via the variables pane. Sensitivity is marked at the variable level, so variable types that are structures of data, like lists, datarows, datatables or custom objects, will be sensitive as a whole. There is no way to mark only a list item or a datatable column or a variable property as sensitive in an otherwise non-sensitive variable. 
+
+Sensitive variables can be manipulated, referenced, processed, and used in every action without any limitation, like every other variable. Additionally, they can be combined with other variables and included in expressions. In this case, for the logs' purposes, such expressions would be considered sensitive as a whole.
 
 In the flow designer, the sensitivity works as a mask that can be set on and off. Thus, users can unmask sensitive variables to see their values or mask them again to hide their values. 
 
 > [!NOTE]
 > - The value of a sensitive variable is visible when the variable is sent to an application outside Power Automate for desktop or displayed through the **Display message**  action. 
 > - Sensitivity isn't inheritable in variables. This means that if a sensitive variable or expression is added or assigned to another variable, the latter won't be sensitive by default, unless explicitly marked otherwise by the user.
+> - Marking a variable as sensitive hides its values from the summary of the **Set variable** action.
+> - The input details of the **Set variable** action aren't visible in the desktop flow logs when the contained variables have been marked as sensitive.
+
 
 To set a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as not sensitive**. 
 
@@ -168,13 +187,5 @@ The eye icon to reveal the value isn't available unless the user deletes the def
 - **Issue:** Flows built or edited with Power Automate for desktop version 2.14 or above are incompatible with older versions of Power Automate for desktop. You can't use older versions of Power Automate for desktop to open or run these flows.
 
 - **Workarounds:** None.
-
-- **Issue:** Hardcoded values aren't supported as sensitive. If you set a new variable with a hardcoded value and mark it as sensitive, it won't be logged when used in following actions. However, the hardcoded value will be visible in the logs of the original "Set variable" action.
-
-- **Workarounds:** Users are expected to follow the RPA best practices and retrieve values from external sources in variables that can then be marked as sensitive. This way, the value won't be persisted during runtime. Furthermore, direct hardcoded values are only supported (and encrypted) in the actions where this was already possible, namely actions that include password fields or the actions **Send keys**, **Populate text field in window**, **Populate text field on web page** and **Set text on terminal session**.
-
-- **Issue:** Renaming a input or output variable that is marked as sensitive shows error 'Variable(s): [Variable name] aren't defined'.
-
-- **Workarounds:** Mark the variable as not sensitive before renaming it.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

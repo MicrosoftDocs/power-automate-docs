@@ -2,7 +2,7 @@
 title: Silent registration for machines  | Microsoft Docs
 description: Silent registration for machines 
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/15/2021
@@ -21,7 +21,7 @@ You can both register your machines to Power Automate and add them to machine gr
 
 
 ## Pre-requisites
-To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](/power-automate/desktop-flows/install#install-power-automate-desktop-silently)
+To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](./install.md#install-power-automate-for-desktop-silently)
 
 To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
 
@@ -35,11 +35,11 @@ To silently register your machine and join a group, we recommend you to use a se
     a.	Go to Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
     b.	Search **app registrations**
-    ![AppDynamics.](./media/machines-silent-registration/image001.png)
+    ![Screenshot of the Azure portal.](./media/machines-silent-registration/image001.png)
     
 
     c.	Select **new registration**
-     ![AppRegistration.](./media/machines-silent-registration/image003.png)
+     ![Screenshot of the New registration option.](./media/machines-silent-registration/image003.png)
 
     d.	Define a name and select **Single tenant** (or multi-tenant) then select **register**
 1.	Give your app the following permissions
@@ -50,7 +50,7 @@ To silently register your machine and join a group, we recommend you to use a se
 
     c.	Select **Flow.Read.All**
 
-1.	[Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+1.	[Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user).
 
 >[!NOTE]
 >Regarding their security roles, the user need to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
@@ -60,7 +60,7 @@ To silently register your machine and join a group, we recommend you to use a se
     b.	Directory (tenant) Id
     c.	Client credentials (certificate or thumbprint)
  
-    ![details.](./media/machines-silent-registration/image005.png)
+    ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/image005.png)
 
 ## How to use the Machine registration App?
 1.	Open **Start** menu
@@ -74,7 +74,7 @@ To silently register your machine and join a group, we recommend you to use a se
     ```
     .\PAD.MachineRegistration.Silent.exe -help
     ```
-    ![PowerShellresults.](./media/machines-silent-registration/image007.png)
+    ![Screenshot of the PowerShell window.](./media/machines-silent-registration/image007.png)
 
     
 ## Silently register a new machine

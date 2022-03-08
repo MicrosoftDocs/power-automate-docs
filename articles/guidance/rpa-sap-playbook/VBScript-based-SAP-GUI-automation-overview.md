@@ -1,5 +1,5 @@
 ---
-title: VBScript-based SAP GUI automation | Microsoft Docs
+title: VBScript-based SAP GUI automation (contains video) | Microsoft Docs
 description: Use the VBScript that the SAP GUI automation engine generates in Power Automate Desktop actions.
 suite: flow
 documentationcenter: na
@@ -7,9 +7,9 @@ author: kathyos
 manager: kvivek
 editor: ''
 ms.custom: guidance
-ms.service: power-automate
+
 ms.devlang: na
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021

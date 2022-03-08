@@ -2,7 +2,7 @@
 title: Edit and refresh processes in process advisor (preview) | Microsoft Docs
 description: This topic describes how to edit and refresh processes with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021
@@ -33,14 +33,14 @@ Some of the reasons why you might want to edit the query are:
 
 ## Edit query
 
-1. In the process details page, return to the query editor by selecting **Setup**.
+1. In the process details page, return to the Query Editor by selecting **Setup**.
 
 1. Select (or double-click) the corresponding steps in the **Applied steps** area under **Query settings** to edit those steps.
 
-    *Don't* select the **Map to entity** or **Choose columns** buttons again.
+   *Don't* select **Map to entity** or **Choose columns** again.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Query settings dialog.](media/process-mining-data-source/applied-steps.png "Query settings dialog")
 
 ## Refresh data
 

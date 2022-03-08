@@ -2,7 +2,7 @@
 title: Using conditionals | Microsoft Docs
 description: Using conditionals
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -31,16 +31,16 @@ Power Automate  provides the **If** action to check whether a given condition is
 
 An **If** action consists of two operands and an operator. The platform supports the most significant logical operations, such as **equal**, **not equal**, and **greater than**.
 
-![An example flow containing an If block.](media\if-else\if-block.png)
+![Screenshot of an example flow containing an If block.](media\if-else\if-block.png)
 
 An **If** may optionally contain an **Else** action. The **Else** action defines the logic to be executed when the **If** condition is invalid. It should be placed between the **If** and the **End** actions.
 
-![An example flow containing an If-else block.](media\if-else\else-block.png)
+![Screenshot of an example flow containing an If-else block.](media\if-else\else-block.png)
 
  
 To set multiple conditions for which different logic is executed, deploy the **Else if** action. This action is executed when the previous **If** and **Else if** conditions are invalid. It should be placed within the **If/End** block and always before the **Else** action.
 
-![An example flow containing an If-else block with two additional Else-if blocks.](media\if-else\else-if-block.png)
+![Screenshot of an example flow containing an If-else block with two additional Else-if blocks.](media\if-else\else-if-block.png)
 
 In all cases, the variables and values used as operands must be of the same data type. Comparing variables of different data types makes the condition always false.
 
@@ -78,7 +78,7 @@ A switch block consists of three main parts:
 
 3. In case all conditions are invalid, the flow will execute the actions in the **Default case** block, if exists.
 
-![A example with an switch block.](media\switch-case-model\switch.png)
+![Screenshot of an example flow containing a switch block.](media\switch-case-model\switch.png)
 
 You'll find the list of conditional actions available in the [Actions reference](actions-reference/conditionals.md).
 

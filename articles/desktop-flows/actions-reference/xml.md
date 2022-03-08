@@ -2,9 +2,9 @@
 title: XML | Microsoft Docs
 description: XML Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,18 +21,16 @@ search.audienceType:
 
 Manage and manipulate XML files
 
-| |
-|-----|
-|[Read XML from file](#readfromfile)|
-|[Write XML to file](#writexmltofile)|
-|[Execute XPath expression](#executexpathquery)|
-|[Get XML element attribute](#getxmlelementattribute)|
-|[Set XML element attribute](#setelementattribute)|
-|[Remove XML element attribute](#removeelementattribute)|
-|[Get XML element value](#getxmlelementvalue)|
-|[Set XML element value](#setelementvalue)|
-|[Insert XML element](#insertelement)|
-|[Remove XML element](#removeelement)|
+[Read XML from file](#readfromfile)  
+[Write XML to file](#writexmltofile)  
+[Execute XPath expression](#executexpathquery)  
+[Get XML element attribute](#getxmlelementattribute)  
+[Set XML element attribute](#setelementattribute)  
+[Remove XML element attribute](#removeelementattribute)  
+[Get XML element value](#getxmlelementvalue)  
+[Set XML element value](#setelementvalue)  
+[Insert XML element](#insertelement)  
+[Remove XML element](#removeelement)  
 
 ## Getting started with XML actions
 
@@ -42,11 +40,11 @@ To read an XML file, use the **Read XML from file** action. Specify the path or 
 
 After selecting a file, to run an Xpath query, select the **Execute XPath expression** action. In the example that follows, the document is specified as a variable from the **Read XML from file** action, and an XPath query is entered.
 
-![screenshot of execute xpath expression action properties.](\media\xml\xpath-expression-example.png)
+![Screenshot of the Execute XPath expression action.](\media\xml\xpath-expression-example.png)
 
 To retrieve an attribute from an XML file, use the **Get XML attribute** action. Note the example that follows and the format of the XPath query. In the XML file, **status** is an attribute of **client**, which is an element of **clientlist**. The value will be obtained as a text value.
 
-![screenshot of execute xpath expression action properties.](\media\xml\get-xml-attribute-example.png)
+![Screenshot of the Get XML attribute action.](\media\xml\get-xml-attribute-example.png)
 
 Similarly, to retrieve element values, use the **Get XML element value** action. Elements and attributes can be managed by using the respective action to get, set or remove XML attributes or elements.
 

@@ -2,9 +2,9 @@
 title: Scripting | Microsoft Docs
 description: Scripting Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -19,13 +19,11 @@ search.audienceType:
 
 Incorporate scripting languages code in you automation
 
-|<!-- --> |
-|-----|
-|[Run DOS command](#rundoscommand)|
-|[Run VBScript](#runvbscript)|
-|[Run JavaScript](#runjavascript)|
-|[Run PowerShell script](#runpowershellscript)|
-|[Run Python script](#runpythonscript)|
+[Run DOS command](#rundoscommand)  
+[Run VBScript](#runvbscript)  
+[Run JavaScript](#runjavascript)  
+[Run PowerShell script](#runpowershellscript)  
+[Run Python script](#runpythonscript)  
 
 
 ## Getting started with scripting actions
@@ -38,35 +36,35 @@ To declare variables in scripting actions and return results in Power Automate, 
 
 - To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
 
-  ```
+  ```PowerShell
   $variableName = "variableValue"
   Write-Output $variableName
   ```
 
 - Python scripts don't require any special notation to declare new variables. To return values from [Run Python script](#runpythonscript) actions, use the **print** function.
 
-  ```
+  ```Python
   variableName = "variableValue"
   print variableName
   ```
 
 - VBScript doesn't require any special notation to declare new variables. Use the **WScript.Echo** function to return values from [Run VBScript](#runvbscript) actions to Power Automate.
 
-  ```
+  ```VBScript
   variableName = "variableValue"
   WScript.Echo variableName
   ```
 
 - In JavaScript scripts, use the **var** notation to declare new variables and the **WScript.Echo** function to return values from [Run JavaScript](#runjavascript) actions. 
 
-    ```
+    ```JavaScript
     var variableName = "variableValue";
     WScript.Echo(variableName);
     ```
 
 To use Power Automate variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
 
-![A Python script that contains the  percentage notation.](\media\scripting\run-python-script-action.png)
+![Screenshot of a Python script that contains the percentage notation.](media\scripting\run-python-script-action.png)
 
 ## Scripting actions
 
