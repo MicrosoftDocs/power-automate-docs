@@ -19,9 +19,7 @@ search.audienceType:
 
 Set your automation to trigger other flows
 
-|<!-- --> |
-|-----|
-|[Run desktop flow](#runflow)|
+[Run desktop flow](#runflow)  
 
 ## Getting started with the Run desktop flow action
 

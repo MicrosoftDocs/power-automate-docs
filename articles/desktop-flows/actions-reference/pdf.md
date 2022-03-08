@@ -21,13 +21,11 @@ search.audienceType:
 
 Automate PDF files and their content (text and images)
 
-|<!-- --> |
-|-----|
-|[Extract text from PDF](#extracttextfrompdfaction)|
-|[Extract tables from PDF](#extracttablesfrompdfaction)|
-|[Extract images from PDF](#extractimagesfrompdfaction)|
-|[Extract PDF file pages to new PDF file](#extractpages)|
-|[Merge PDF files](#mergefiles)|
+[Extract text from PDF](#extracttextfrompdfaction)  
+[Extract tables from PDF](#extracttablesfrompdfaction)  
+[Extract images from PDF](#extractimagesfrompdfaction)  
+[Extract PDF file pages to new PDF file](#extractpages)  
+[Merge PDF files](#mergefiles)  
 
 
 ## Getting started with PDF actions

@@ -21,15 +21,13 @@ search.audienceType:
 
 Interact with users and request input through message boxes
 
-|<!-- --> |
-|-----|
-|[Display message](#showmessagedialog)|
-|[Display input dialog](#inputdialog)|
-|[Display select date dialog](#selectdatedialog)|
-|[Display select from list dialog](#selectfromlistdialog)|
-|[Display select  file dialog](#selectfiledialog)|
-|[Display select folder dialog](#selectfolder)|
-|[Display custom form](#showcustomdialog)|
+[Display message](#showmessagedialog)  
+[Display input dialog](#inputdialog)  
+[Display select date dialog](#selectdatedialog)  
+[Display select from list dialog](#selectfromlistdialog)  
+[Display select  file dialog](#selectfiledialog)  
+[Display select folder dialog](#selectfolder)  
+[Display custom form](#showcustomdialog)  
 
 ## Getting started with message boxes
 

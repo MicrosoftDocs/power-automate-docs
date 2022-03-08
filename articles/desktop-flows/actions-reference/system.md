@@ -21,16 +21,14 @@ search.audienceType:
 
 Perform a variety of tasks in a Windows environment and retrieve information from the system
 
-|<!-- --> |
-|-----|
-|[If process](#ifprocessaction)|
-|[Wait for process](#waitprocessaction)|
-|[Run application](#runapplicationbase)|
-|[Terminate process](#terminateprocess)|
-|[Ping](#ping)|
-|[Set Windows environment variable](#setenvironmentvariable)|
-|[Get Windows environment variable](#getenvironmentvariable)|
-|[Delete Windows environment variable](#deleteenvironmentvariable)|
+[If process](#ifprocessaction)  
+[Wait for process](#waitprocessaction)  
+[Run application](#runapplicationbase)  
+[Terminate process](#terminateprocess)  
+[Ping](#ping)  
+[Set Windows environment variable](#setenvironmentvariable)  
+[Get Windows environment variable](#getenvironmentvariable)  
+[Delete Windows environment variable](#deleteenvironmentvariable)  
 
 ## Getting started with system actions
 

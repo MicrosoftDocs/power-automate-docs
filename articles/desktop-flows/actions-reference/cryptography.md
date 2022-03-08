@@ -19,16 +19,14 @@ search.audienceType:
 
 Encrypt and decrypt text and files
 
-|<!-- --> |
-|-----|
-|[Encrypt text with AES](#encrypttextaction)|
-|[Decrypt text with AES](#decrypttextaction)|
-|[Encrypt from file with AES](#encryptfromfileaction)|
-|[Decrypt to file with AES](#decrypttofileaction)|
-|[Hash text](#hashtext)|
-|[Hash from file](#hashfromfile)|
-|[Hash text with key](#hashtextwithkey)|
-|[Hash from file with key](#hashfromfilewithkey)|
+[Encrypt text with AES](#encrypttextaction)  
+[Decrypt text with AES](#decrypttextaction)  
+[Encrypt from file with AES](#encryptfromfileaction)  
+[Decrypt to file with AES](#decrypttofileaction)  
+[Hash text](#hashtext)  
+[Hash from file](#hashfromfile)  
+[Hash text with key](#hashtextwithkey)  
+[Hash from file with key](#hashfromfilewithkey)  
 
 ## Getting started with cryptography actions
 

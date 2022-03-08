@@ -21,11 +21,9 @@ search.audienceType:
 
 Get the date and time and perform time related functions
 
-|<!-- --> |
-|-----|
-|[Add to datetime](#add)|
-|[Subtract dates](#subtract)|
-|[Get current date and time](#getcurrentdatetime)|
+[Add to datetime](#add)  
+[Subtract dates](#subtract)  
+[Get current date and time](#getcurrentdatetime)  
 
 ## Getting started with datetime actions
 

@@ -14,7 +14,7 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2020
+ms.date: 03/07/2021
 ms.author: marleon
 search.app: 
   - Flow
@@ -44,6 +44,9 @@ In order to see runs in this list, one of the following must be true:
 
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
+
+> [!NOTE]
+> There is a limit of 10,000 actions in the actions log for a desktop flow. If there are more than 10,000 actions in your desktop flow, divide it into multiple flows if you want to see all actions in the logs.
 
  
 

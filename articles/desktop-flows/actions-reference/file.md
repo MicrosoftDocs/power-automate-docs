@@ -20,22 +20,20 @@ search.audienceType:
 
 Manage and manipulate files
 
-|<!-- --> |
-|-----|
-|[If file exists](#iffileaction)|
-|[Wait for file](#waitforfileaction)|
-|[Copy file(s)](#copy)|
-|[Move file(s)](#move)|
-|[Delete file(s)](#delete)|
-|[Rename file(s)](#renamefiles)|
-|[Read text from file](#readtextfromfile)|
-|[Write text to file](#writetext)|
-|[Read from CSV file](#readfromcsvfile)|
-|[Write to CSV file](#writetocsvfile)|
-|[Get file path part](#getpathpart)|
-|[Get temporary file](#gettemppath)|
-|[Convert file to Base64](#convertfiletobase64action)|
-|[Convert Base64 to file](#convertbase64tofileaction)|
+[If file exists](#iffileaction)  
+[Wait for file](#waitforfileaction)  
+[Copy file(s)](#copy)  
+[Move file(s)](#move)  
+[Delete file(s)](#delete)  
+[Rename file(s)](#renamefiles)  
+[Read text from file](#readtextfromfile)  
+[Write text to file](#writetext)  
+[Read from CSV file](#readfromcsvfile)  
+[Write to CSV file](#writetocsvfile)  
+[Get file path part](#getpathpart)  
+[Get temporary file](#gettemppath)  
+[Convert file to Base64](#convertfiletobase64action)  
+[Convert Base64 to file](#convertbase64tofileaction)
 
 ## Getting started with file actions
 

@@ -154,9 +154,9 @@ A polling trigger periodically makes a call to your service to look for new data
 
 See the following table to understand how your flow responds when it's turned back on.
 
-|    |                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Trigger type                            | Description                                                                                                                                  |
+
+| Trigger type|Description|
+|---|---|
 | Polling, such as the **recurrence** trigger | When the flow is turned on again, all unprocessed/pending events are processed. Delete, and then recreate your flow if you don't want to process pending items when you turn your flow back on. |
 | Webhook                                 | When the flow is turned on again, it processes new events that are generated after the flow is turned on.                               |
 

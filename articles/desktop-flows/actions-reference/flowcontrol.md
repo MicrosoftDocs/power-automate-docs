@@ -21,18 +21,16 @@ search.audienceType:
 
 Control the automation flow
 
-|<!-- --> |
-|-----|
-|[Comment](#comment)|
-|[End](#end)|
-|[Exit subflow](#exitfunction)|
-|[Get last error](#getlasterror)|
-|[Go to](#goto)|
-|[Label](#label)|
-|[On block error](#block)|
-|[Run subflow](#callfunction)|
-|[Stop flow](#exit)|
-|[Wait](#wait)|
+[Comment](#comment)  
+[End](#end)  
+[Exit subflow](#exitfunction)  
+[Get last error](#getlasterror)  
+[Go to](#goto)  
+[Label](#label)  
+[On block error](#block)  
+[Run subflow](#callfunction)  
+[Stop flow](#exit)  
+[Wait](#wait)  
 
 ## Getting started with flow control
 

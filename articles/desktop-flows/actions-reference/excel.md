@@ -21,36 +21,34 @@ search.audienceType:
 
 Automate any Excel related activity
 
-|<!-- --> |
-|-----|
-|[Run Excel Macro](#runmacro)|
-|[Get active Excel worksheet](#getactiveworksheet)|
-|[Get all Excel worksheets](#getallworksheets)|
-|[Delete Excel worksheet](#deleteworksheet)|
-|[Rename Excel worksheet](#renameworksheet)|
-|[Activate Cell in Excel Worksheet](#activatecellinexcel)|
-|[Select cells in Excel worksheet](#selectcellsfromexcel)|
-|[Get selected cell range from Excel worksheet](#getselectedcellrange)|
-|[Copy cells from Excel worksheet](#copycellsfromexcel)|
-|[Paste cells to Excel worksheet](#pastecellstoexcel)|
-|[Delete from Excel worksheet](#deletecellsaction)|
-|[Insert row to Excel worksheet](#insertrow)|
-|[Delete row from Excel worksheet](#deleterow)|
-|[Insert column to Excel worksheet](#insertcolumn)|
-|[Delete column from Excel worksheet](#deletecolumn)|
-|[Find and replace cells in Excel worksheet](#findandreplaceaction)|
-|[Get first free row on column from Excel worksheet](#getfirstfreerowoncolumn)|
-|[Launch Excel](#launchexcel)|
-|[Attach to running Excel](#attach)|
-|[Read from Excel worksheet](#readfromexcel)|
-|[Get active cell on Excel worksheet](#getactivecell)|
-|[Save Excel](#saveexcel)|
-|[Write to Excel worksheet](#writetoexcel)|
-|[Close Excel](#closeexcel)|
-|[Set active Excel worksheet](#setactiveworksheet)|
-|[Add new worksheet](#addworksheet)|
-|[Get first free column/row from Excel worksheet](#getfirstfreecolumnrow)|
-|[Get column name on Excel worksheet](#getcolumnname)|
+[Run Excel Macro](#runmacro)  
+[Get active Excel worksheet](#getactiveworksheet)  
+[Get all Excel worksheets](#getallworksheets)  
+[Delete Excel worksheet](#deleteworksheet)  
+[Rename Excel worksheet](#renameworksheet)  
+[Activate Cell in Excel Worksheet](#activatecellinexcel)  
+[Select cells in Excel worksheet](#selectcellsfromexcel)  
+[Get selected cell range from Excel worksheet](#getselectedcellrange)  
+[Copy cells from Excel worksheet](#copycellsfromexcel)  
+[Paste cells to Excel worksheet](#pastecellstoexcel)  
+[Delete from Excel worksheet](#deletecellsaction)  
+[Insert row to Excel worksheet](#insertrow)  
+[Delete row from Excel worksheet](#deleterow)  
+[Insert column to Excel worksheet](#insertcolumn)  
+[Delete column from Excel worksheet](#deletecolumn)  
+[Find and replace cells in Excel worksheet](#findandreplaceaction)  
+[Get first free row on column from Excel worksheet](#getfirstfreerowoncolumn)  
+[Launch Excel](#launchexcel)  
+[Attach to running Excel](#attach)  
+[Read from Excel worksheet](#readfromexcel)  
+[Get active cell on Excel worksheet](#getactivecell)   
+[Save Excel](#saveexcel)  
+[Write to Excel worksheet](#writetoexcel)  
+[Close Excel](#closeexcel)  
+[Set active Excel worksheet](#setactiveworksheet)  
+[Add new worksheet](#addworksheet)  
+[Get first free column/row from Excel worksheet](#getfirstfreecolumnrow)  
+[Get column name on Excel worksheet](#getcolumnname)  
 
 ## Getting started with Excel actions
 

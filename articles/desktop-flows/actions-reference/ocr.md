@@ -19,11 +19,9 @@ search.audienceType:
 
 Initiate OCR engines to perform OCR related activities
 
-|<!-- --> |
-|-----|
-|[If text on screen (OCR)](#iftextonscreenaction)|
-|[Wait for text on screen (OCR)](#waittextonscreenaction)|
-|[Extract text with OCR](#extracttextwithocr)|
+[If text on screen (OCR)](#iftextonscreenaction)  
+[Wait for text on screen (OCR)](#waittextonscreenaction)  
+[Extract text with OCR](#extracttextwithocr)  
 
 ## Getting started with OCR actions
 

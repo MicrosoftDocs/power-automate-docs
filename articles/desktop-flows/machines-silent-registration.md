@@ -21,7 +21,7 @@ You can both register your machines to Power Automate and add them to machine gr
 
 
 ## Pre-requisites
-To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](/power-automate/desktop-flows/install#install-power-automate-desktop-silently)
+To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](./install.md#install-power-automate-for-desktop-silently)
 
 To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
 
